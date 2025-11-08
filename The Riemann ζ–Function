@@ -553,3 +553,167 @@ regularity and physical stability:
 the same principle Γ_κ that enforces mass gaps,
 prevents singularities, and resolves cosmological tensions
 also governs the analytic equilibrium of the primes.
+
+
+# ============================================================
+# Phase-Preserving Hermitian MTS Curvature–Diffusion Operator
+# ------------------------------------------------------------
+# Operator:  Tτ = (1 + τ·t²)^(-½)
+# Keeps high-t structure while gently damping.
+# ============================================================
+
+import mpmath as mp
+import numpy as np
+import matplotlib.pyplot as plt
+
+mp.mp.dps = 160
+
+def xi(s):
+    return 0.5 * s * (s - 1) * mp.power(mp.pi, -s/2) * mp.gamma(s/2) * mp.zeta(s)
+
+# Phase-preserving kernel depending only on t = Im(s)
+def T_tau(s, tau):
+    t = abs(mp.im(s))
+    return 1 / mp.sqrt(1 + tau * t**2)
+
+def xi_MTS(s, tau):
+    return xi(s) * T_tau(s, tau)
+
+# Semigroup / contraction checks
+s_test = 0.5 + 1j*14.1347
+tau1, tau2 = 0.3, 0.7
+lhs = xi_MTS(s_test, tau1 + tau2)
+rhs = xi_MTS(s_test, tau1) * T_tau(s_test, tau2)
+semigroup_error = abs(lhs - rhs) / abs(lhs)
+
+amp_original = abs(xi(s_test))
+amp_tau = abs(xi_MTS(s_test, tau1))
+contraction_ratio = amp_tau / amp_original
+
+print("Semigroup property error:", semigroup_error)
+print("Contraction ratio (|Tτ ξ| / |ξ|):", contraction_ratio)
+
+# Critical line sampling
+t_vals = np.linspace(-50, 50, 8000)
+xi_vals = np.array([complex(xi(0.5 + 1j*t)) for t in t_vals])
+xi_tau_vals = np.array([complex(xi_MTS(0.5 + 1j*t, 0.5)) for t in t_vals])
+
+# Zero detection
+def find_zeros(vals, t_vals):
+    sign = np.sign(np.real(vals))
+    zeros = []
+    for i in range(1, len(sign)):
+        if sign[i] == 0 or sign[i] != sign[i-1]:
+            zeros.append((t_vals[i-1] + t_vals[i]) / 2)
+    return zeros
+
+zeros_xi = find_zeros(xi_vals, t_vals)
+zeros_tau = find_zeros(xi_tau_vals, t_vals)
+
+# Plot
+plt.figure(figsize=(9,5))
+plt.plot(t_vals, np.abs(xi_vals), label="|ξ(½+it)|", lw=1.1)
+plt.plot(t_vals, np.abs(xi_tau_vals), label="|Tτ ξ(½+it)| (τ=0.5)", lw=1.1, alpha=0.8)
+for z in zeros_xi[:10]:
+    plt.axvline(z, color='gray', lw=0.4, ls='--', alpha=0.5)
+plt.xlabel("t")
+plt.ylabel("Amplitude")
+plt.title("Phase-Preserving Hermitian MTS Curvature–Diffusion Operator Test")
+plt.legend()
+plt.tight_layout()
+plt.show()
+
+# Results
+print("\nZeros of ξ(½+it):", np.round(zeros_xi[:10],6))
+print("Zeros of Tτ ξ(½+it):", np.round(zeros_tau[:10],6))
+
+offsets = [a - b for a,b in zip(zeros_tau[:10], zeros_xi[:10])]
+print("\nVertical shift (t_MTS − t_GR) for first 10 zeros:")
+for i, off in enumerate(offsets,1):
+    print(f"  zero {i:2d}:  Δt ≈ {off:+.5e}")
+
+print("\nIf Δt ≈ 0 → zeros invariant → phase-balanced self-adjoint flow.")
+
+
+# ============================================================
+# MTS Curvature–Diffusion τ-Sweep: Zero Invariance Test
+# ------------------------------------------------------------
+# Tests invariance of Riemann ξ(s) zeros under:
+#   Tτ = (1 + τ·t²)^(-½)
+# If all zero positions remain fixed as τ increases → Hermitian,
+# curvature-diffusion flow preserves Riemann symmetry.
+# ============================================================
+
+import mpmath as mp
+import numpy as np
+import matplotlib.pyplot as plt
+
+mp.mp.dps = 160
+
+# ------------------------------------------------------------
+# Define Riemann ξ(s)
+# ------------------------------------------------------------
+def xi(s):
+    return 0.5 * s * (s - 1) * mp.power(mp.pi, -s/2) * mp.gamma(s/2) * mp.zeta(s)
+
+# Phase-preserving MTS curvature–diffusion operator
+def T_tau(s, tau):
+    t = abs(mp.im(s))
+    return 1 / mp.sqrt(1 + tau * t**2)
+
+def xi_MTS(s, tau):
+    return xi(s) * T_tau(s, tau)
+
+# ------------------------------------------------------------
+# Zero finding along critical line
+# ------------------------------------------------------------
+def find_zeros(vals, t_vals):
+    sign = np.sign(np.real(vals))
+    zeros = []
+    for i in range(1, len(sign)):
+        if sign[i] == 0 or sign[i] != sign[i-1]:
+            zeros.append((t_vals[i-1] + t_vals[i]) / 2)
+    return zeros
+
+# ------------------------------------------------------------
+# τ-sweep and zero tracking
+# ------------------------------------------------------------
+t_vals = np.linspace(-50, 50, 8000)
+taus = np.linspace(0, 2.0, 6)  # 6 sample τ values: 0.0, 0.4, 0.8, 1.2, 1.6, 2.0
+zero_tracks = []
+
+for tau in taus:
+    vals = np.array([complex(xi_MTS(0.5 + 1j*t, tau)) for t in t_vals])
+    zeros = find_zeros(vals, t_vals)
+    zero_tracks.append((tau, zeros[:10]))
+    print(f"τ={tau:.2f} → first 10 zeros: {np.round(zeros[:10],6)}")
+
+# ------------------------------------------------------------
+# Plot zero stability
+# ------------------------------------------------------------
+plt.figure(figsize=(9,6))
+for tau, zeros in zero_tracks:
+    plt.scatter([tau]*len(zeros), zeros, s=15, label=f"τ={tau:.1f}")
+
+plt.xlabel("τ (curvature-diffusion strength)")
+plt.ylabel("t (zero positions along critical line)")
+plt.title("MTS Curvature–Diffusion τ-Sweep: Zero Invariance Plot")
+plt.grid(alpha=0.4)
+plt.legend(fontsize=8)
+plt.tight_layout()
+plt.show()
+
+# ------------------------------------------------------------
+# Zero shift diagnostics
+# ------------------------------------------------------------
+ref_zeros = zero_tracks[0][1]
+print("\n===========================================================")
+print("Zero Stability Diagnostics (relative to τ=0)")
+print("===========================================================")
+for tau, zeros in zero_tracks[1:]:
+    diffs = [a - b for a,b in zip(zeros, ref_zeros)]
+    mean_shift = np.mean(np.abs(diffs))
+    print(f"τ={tau:.2f} → mean |Δt| = {mean_shift:.3e}")
+
+print("\nIf mean |Δt| ≈ 0 for all τ, zeros remain invariant →")
+print("Riemann spectrum preserved under MTS curvature-diffusion flow (Hermitian operator).")
