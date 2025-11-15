@@ -27,6 +27,35 @@ Rather than starting with a theory and fitting data to it, this project follows 
 
 ---
 
+                      ┌──────────────────────────┐
+                      │      TOTAL CURVATURE      │
+                      │         (K ≡ √(M²+T²))    │
+                      │   “shape of the universe” │
+                      └────────────┬──────────────┘
+                                   │
+                                   │ Γκ (curvature persistence)
+                                   │ α (fine-structure ratio)
+                                   │ m≈1.88 (galactic exponent)
+                                   │ 1/2  (Riemann critical line)
+                                   │
+     ┌─────────────────────────────┼─────────────────────────────┐
+     │                             │                             │
+     │                             │                             │
+     │                             │                             │
+ MOTION (M)                    RESISTANCE (T)                 BALANCE (M/T)
+“mass”, velocity,           damping, tension,              gives all constants:
+ inertia, wave flow         curvature resistance       α ≈ 1/137 ─ fine structure
+                                                       Γκ ─ orbital decay curvature
+                                                       m≈1.88 ─ galaxy structure
+                                                       1/2 ─ Riemann symmetry
+                                                       mass gap Δ > 0
+     │                             │                             │
+     └─────────────────────────────┴─────────────────────────────┘
+                                   │
+                                   ▼
+           UNIVERSAL GEOMETRIC EQUILIBRIUM MANIFOLD
+                           (the critical line)
+                  “the only place stability actually happens”
 
 
 ### What I AM Showing
