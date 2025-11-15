@@ -57,6 +57,8 @@ Rather than starting with a theory and fitting data to it, this project follows 
                            (the critical line)
                   “the only place stability actually happens”
 
+                  
+
 
 ### What I AM Showing
 
