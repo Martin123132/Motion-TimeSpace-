@@ -1889,6 +1889,214 @@ plt.show()
 
 
 
+import numpy as np
+import matplotlib.pyplot as plt
+
+# ============================================================
+# MTS–REGULARISED KERR-INSPIRED INSPIRAL (TOY MODEL)
+# GR vs MTS: r(t), curvature, waveform, phase, ringdown
+# ============================================================
+
+# ------------------------------------------------------------
+# PHYSICAL / MODEL PARAMETERS (GEOMETRIC UNITS)
+# ------------------------------------------------------------
+M1 = 30.0          # primary BH mass
+M2 = 3.0           # secondary BH mass
+M  = M1 + M2
+mu = M1 * M2 / M
+
+G = 1.0
+c = 1.0
+
+# MTS curvature-regularisation strength
+alpha = 0.01       # controls finite curvature scale
+gamma_rr = 1e-4    # radiation-reaction damping
+
+# Initial separation and integration setup
+r0    = 40.0
+dt    = 0.001
+steps = 60000
+
+# ------------------------------------------------------------
+# STORAGE ARRAYS
+# ------------------------------------------------------------
+t_vals   = np.zeros(steps)
+r_GR     = np.zeros(steps)
+r_MTS    = np.zeros(steps)
+K_GR     = np.zeros(steps)
+K_MTS    = np.zeros(steps)
+h_GR     = np.zeros(steps)
+h_MTS    = np.zeros(steps)
+phi_GR   = np.zeros(steps)
+phi_MTS  = np.zeros(steps)
+
+# ------------------------------------------------------------
+# INITIAL CONDITIONS (RADIAL DEGREE ONLY, QUASI-CIRCULAR ORBIT)
+# ------------------------------------------------------------
+r1 = r0   # GR radius
+r2 = r0   # MTS radius
+v1 = 0.0  # GR radial velocity
+v2 = 0.0  # MTS radial velocity
+
+phase1 = 0.0  # GW phase (GR)
+phase2 = 0.0  # GW phase (MTS)
+
+merged = False
+
+# ------------------------------------------------------------
+# MAIN INTEGRATION LOOP
+# ------------------------------------------------------------
+for i in range(steps):
+    t = i * dt
+    t_vals[i] = t
+
+    # Store radii
+    r_GR[i] = r1
+    r_MTS[i] = r2
+
+    # Curvature proxies ~ 1 / r^3
+    K1 = 1.0 / max(r1**3, 1e-12)
+    K_raw2 = 1.0 / max(r2**3, 1e-12)
+    K2 = K_raw2 / (1.0 + alpha * K_raw2)  # MTS saturating curvature
+
+    K_GR[i] = K1
+    K_MTS[i] = K2
+
+    # Orbital angular frequencies (Keplerian approximation)
+    omega1 = np.sqrt(G * M / max(r1**3, 1e-12))
+    omega2 = np.sqrt(G * M / max(r2**3, 1e-12))
+
+    # Phase evolution
+    phase1 += omega1 * dt
+    phase2 += omega2 * dt
+
+    phi_GR[i] = phase1
+    phi_MTS[i] = phase2
+
+    # Quadrupole-like waveform amplitude ~ mu / r
+    A1 = 4.0 * mu / (r1 + 1e-6)
+    A2 = 4.0 * mu / (r2 + 1e-6)
+
+    h_GR[i]  = A1 * np.cos(2.0 * phase1)
+    h_MTS[i] = A2 * np.cos(2.0 * phase2)
+
+    # Once "merged" we freeze the dynamics but keep waveform / phase output
+    if merged:
+        continue
+
+    # --------------------------------------------------------
+    # GR RADIAL EVOLUTION (SINGULAR FORCE + RADIATION REACTION)
+    # --------------------------------------------------------
+    a1 = -G * M / max(r1**2, 1e-12)  # Newtonian core
+    a1 -= gamma_rr * v1              # simple inspiral damping
+
+    v1 += a1 * dt
+    r1 += v1 * dt
+
+    # --------------------------------------------------------
+    # MTS RADIAL EVOLUTION (REGULARISED FORCE + SAME DAMPING)
+    # --------------------------------------------------------
+    # Regularise only the strong-field part via K_raw2
+    a2 = -G * M / max(r2**2, 1e-12)
+    a2 /= (1.0 + alpha * K_raw2)     # curvature-regularised force
+    a2 -= gamma_rr * v2
+
+    v2 += a2 * dt
+    r2 += v2 * dt
+
+    # --------------------------------------------------------
+    # MERGER CONDITION: STOP RADIUS AT EFFECTIVE HORIZON SCALE
+    # --------------------------------------------------------
+    r_horizon = 2.0  # crude effective horizon / throat scale
+    if (r1 <= r_horizon) or (r2 <= r_horizon):
+        r1 = max(r1, r_horizon)
+        r2 = max(r2, r_horizon)
+        v1 = 0.0
+        v2 = 0.0
+        merged = True
+
+# ------------------------------------------------------------
+# APPEND SIMPLE KERR-LIKE RINGDOWN TO THE WAVEFORM
+# ------------------------------------------------------------
+N_rd   = 8000
+t_rd   = t_vals[-1] + dt * np.arange(1, N_rd + 1)
+omega_QNM = 0.4             # “Kerr-like” ringdown frequency (toy)
+tau_QNM   = 50.0 * dt * N_rd
+
+ring = np.exp(-(t_rd - t_rd[0]) / tau_QNM) * np.cos(omega_QNM * (t_rd - t_rd[0]))
+
+# Attach the same QNM tail to both GR and MTS for comparison
+t_full   = np.concatenate([t_vals, t_rd])
+h_GR_full  = np.concatenate([h_GR, 0.02 * ring])
+h_MTS_full = np.concatenate([h_MTS, 0.02 * ring])
+
+# ------------------------------------------------------------
+# DERIVED QUANTITIES: PHASE DIFFERENCE Δφ(t)
+# ------------------------------------------------------------
+phase_diff = phi_MTS - phi_GR
+
+# ============================================================
+# PLOTS
+# ============================================================
+
+# 1. RADIAL INSPIRAL
+plt.figure(figsize=(10, 4))
+plt.plot(t_vals, r_GR, 'r--', label='GR r(t)')
+plt.plot(t_vals, r_MTS, 'g-',  label='MTS r(t)')
+plt.xlabel('Time')
+plt.ylabel('Separation r(t)')
+plt.title('Radial Inspiral: GR vs MTS-Regularised')
+plt.legend()
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+
+# 2. CURVATURE COMPARISON
+plt.figure(figsize=(10, 4))
+plt.semilogy(t_vals, K_GR, 'r--', label='GR curvature ∝ 1/r³')
+plt.semilogy(t_vals, K_MTS, 'g-',  label='MTS curvature (saturating)')
+plt.xlabel('Time')
+plt.ylabel('Curvature proxy K(t)')
+plt.title('Curvature Growth: GR Blow-Up vs MTS Regularisation')
+plt.legend()
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+
+# 3. WAVEFORM h+(t)
+plt.figure(figsize=(10, 4))
+plt.plot(t_full, h_GR_full, 'r--', label='GR h₊(t)')
+plt.plot(t_full, h_MTS_full, 'g-',  label='MTS h₊(t)')
+plt.xlabel('Time')
+plt.ylabel('Strain (arbitrary units)')
+plt.title('Gravitational Waveform h₊(t): GR vs MTS + Ringdown')
+plt.legend()
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+
+# 4. PHASE EVOLUTION
+plt.figure(figsize=(10, 4))
+plt.plot(t_vals, phi_GR, 'r--', label='GR phase φ_GR(t)')
+plt.plot(t_vals, phi_MTS, 'g-',  label='MTS phase φ_MTS(t)')
+plt.xlabel('Time')
+plt.ylabel('Phase')
+plt.title('Phase Evolution φ(t): GR vs MTS')
+plt.legend()
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+
+# 5. PHASE DIFFERENCE Δφ(t)
+plt.figure(figsize=(10, 4))
+plt.plot(t_vals, phase_diff)
+plt.xlabel('Time')
+plt.ylabel('Δφ(t)')
+plt.title('Phase Difference Δφ(t) = φ_MTS − φ_GR')
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+
 
 
 
