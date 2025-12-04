@@ -1,5 +1,6 @@
 # Motion-Timespace (MTS) Framework
 
+
 **Exploring gravitational phenomena through motion-based dynamics and information persistence**
 
 ## What This Is
