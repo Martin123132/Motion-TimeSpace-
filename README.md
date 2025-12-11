@@ -175,9 +175,7 @@ Again — **these are hypotheses, not conclusions**.
   author = {Martin Ollett},
   title = {Motion–TimeSpace Research Program: Empirical Patterns, Computational Models, and Geometric Hypotheses},
   year = {2025},
-  publisher = {GitHub},
-  url = {https://github.com/yourusername/motion-timespace}
-}
+ 
 ```
 
 ---
