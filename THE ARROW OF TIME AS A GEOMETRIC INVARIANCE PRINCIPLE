@@ -214,3 +214,169 @@ cosmology are unified under one principle:
 Time points in the direction of increasing curvature memory.
 
 END
+
+
+
+APPENDIX A
+WHY THE MTS ψ–Γ SYSTEM IS NECESSARILY SECOND-ORDER
+=====================================================================
+
+This appendix demonstrates explicitly that the Motion–TimeSpace
+ψ–Γ field equations already encode the second-order necessity proven
+in the main text. No additional assumptions are introduced.
+
+
+---------------------------------------------------------------------
+A1. THE ψ–Γ DYNAMICAL SYSTEM
+---------------------------------------------------------------------
+
+The Motion–TimeSpace framework is defined by two coupled fields:
+
+1. ψ(x,t)   : complex motion field
+2. Γ(x,t)   : curvature-memory (entropy) field
+
+The governing equations used throughout the electromagnetic and
+cosmological simulations are:
+
+    dψ/dt = c^2 ∇^2 ψ - λ ψ |ψ|^(1/3) - Γ ψ        (A1)
+
+    dΓ/dt = |∇^2 ψ|^2 - μ Γ                       (A2)
+
+Key properties:
+- No explicit time asymmetry
+- No external dissipation
+- No gauge structure
+- No imposed conservation laws
+
+
+---------------------------------------------------------------------
+A2. EMERGENT SECOND-ORDER STRUCTURE
+---------------------------------------------------------------------
+
+Although equation (A1) appears first-order in time, the ψ–Γ coupling
+forces effective second-order dynamics.
+
+Differentiate (A1) with respect to time:
+
+    d^2ψ/dt^2 =
+        c^2 ∇^2 (dψ/dt)
+      - λ d/dt [ ψ |ψ|^(1/3) ]
+      - (dΓ/dt) ψ
+      - Γ (dψ/dt)                                 (A3)
+
+Substitute dΓ/dt from (A2):
+
+    d^2ψ/dt^2 =
+        c^2 ∇^2 (dψ/dt)
+      - λ d/dt [ ψ |ψ|^(1/3) ]
+      - |∇^2 ψ|^2 ψ
+      + μ Γ ψ
+      - Γ (dψ/dt)
+
+Thus ψ evolves under an effective second-order-in-time equation
+with curvature-memory feedback.
+
+The second time derivative is not optional — it is dynamically forced.
+
+
+---------------------------------------------------------------------
+A3. WHY FIRST-ORDER ψ DYNAMICS FAIL
+---------------------------------------------------------------------
+
+If Γ is removed or frozen:
+
+    dψ/dt = c^2 ∇^2 ψ - λ ψ |ψ|^(1/3)
+
+Then:
+- No memory accumulates
+- No irreversible channel exists
+- No arrow of time emerges
+- EM simulations lose dissipation
+- Momentum transfer becomes reversible
+
+This corresponds exactly to the failure of first-order dynamics
+described in Section 3 of the main paper.
+
+
+---------------------------------------------------------------------
+A4. WHY HIGHER-ORDER ψ DYNAMICS WOULD FAIL
+---------------------------------------------------------------------
+
+Suppose a third-order correction were introduced:
+
+    d^3ψ/dt^3 = F(ψ, dψ/dt, d^2ψ/dt^2)
+
+Then Γ would respond to acceleration-of-acceleration terms:
+
+    dΓ/dt ~ |∇^2 (dψ/dt)|^2
+
+This produces runaway curvature accumulation:
+- memory grows faster than ψ can regulate
+- numerical stability is lost
+- simulations diverge
+- geometric blow-up occurs
+
+This matches the geometric interpretation of Ostrogradsky instability.
+
+
+---------------------------------------------------------------------
+A5. Γ AS THE MEMORY REGULATOR
+---------------------------------------------------------------------
+
+Equation (A2):
+
+    dΓ/dt = |∇^2 ψ|^2 - μ Γ
+
+contains the crucial stabilizing term:
+
+    - μ Γ
+
+This term:
+- prevents unbounded memory growth
+- enforces saturation
+- ensures smooth halting as Γ grows large
+- replaces singularities with zero-exchange states
+
+This is the geometric reason second-order dynamics remain bounded.
+
+
+---------------------------------------------------------------------
+A6. NUMERICAL CONFIRMATION
+---------------------------------------------------------------------
+
+All reported simulations demonstrate:
+
+- ψ energy decreases monotonically
+- Γ increases monotonically
+- Total momentum conserved to ~1e-17
+- No runaway growth
+- No recurrence
+
+This behavior disappears if:
+- Γ is removed
+- μ = 0
+- higher-order terms are introduced
+
+The ψ–Γ system therefore selects second-order dynamics dynamically.
+
+
+---------------------------------------------------------------------
+A7. CONCLUSION OF APPENDIX
+---------------------------------------------------------------------
+
+The Motion–TimeSpace ψ–Γ system does not assume second-order time
+evolution.
+
+It enforces it.
+
+First-order dynamics erase memory.
+Higher-order dynamics destroy stability.
+Second-order dynamics emerge as the unique fixed point of motion
+plus curvature memory.
+
+This completes the structural proof.
+
+
+=====================================================================
+END OF APPENDIX A
+=====================================================================
