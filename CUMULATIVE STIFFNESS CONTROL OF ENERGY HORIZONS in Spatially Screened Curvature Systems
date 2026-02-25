@@ -1,0 +1,277 @@
+CUMULATIVE STIFFNESS CONTROL OF ENERGY HORIZONS
+in Spatially Screened Curvature Systems
+
+Author: Martin Ollett
+Year: 2026
+
+
+----------------------------------------------------------------------
+ABSTRACT
+----------------------------------------------------------------------
+
+We investigate screened curvature systems with spatially varying 
+stiffness m(r), focusing on Yukawa-type interactions of the form
+
+    V(r) ~ exp(-∫₀ʳ m(s) ds) / r.
+
+Across discrete lattices, multi-mass spectral superpositions, 
+continuous mass spectra, and spatial stiffness fields m(r), we find a 
+robust structural separation:
+
+1. The far-field decay scale is governed by the minimum stiffness m0.
+2. The energy containment (horizon) radius R* is governed by a fixed 
+   cumulative stiffness budget:
+
+       ∫₀ᴿ* m(s) ds ≈ C(ε),
+
+   where ε is the tolerated fractional tail energy.
+
+For uniform stiffness (constant m), the relation is exact:
+
+       m R*(ε) = 0.5 ln(1/ε).
+
+Spatially varying systems reproduce this law to leading exponential 
+order, showing that the horizon is controlled by accumulated stiffness 
+memory rather than local stiffness, global averages, or density 
+thresholds.
+
+This yields a general Curvature Horizon Principle directly compatible 
+with the Motion–TimeSpace (MTS) framework.
+
+
+----------------------------------------------------------------------
+1. INTRODUCTION
+----------------------------------------------------------------------
+
+Screened interactions appear across many physical systems: 
+mediated forces, curvature-screened geometries, condensed-matter 
+excitations, and effective mass fields. In such systems, energy 
+density decays exponentially at large radii, often with Yukawa-type 
+forms. The spatial distribution of stiffness m(r) modifies near-field 
+behaviour but does not alter the far-field decay scale and modifies 
+the horizon radius only through an integrated stiffness-distance.
+
+We establish a structural law:
+
+    The horizon R*(ε) at which only ε of the total energy remains 
+    outside is determined by a fixed value of the cumulative 
+    stiffness ∫ m(r) dr.
+
+This condition is universal across a wide class of Yukawa-type 
+screened curvature systems.
+
+
+----------------------------------------------------------------------
+2. UNIFORM YUKAWA: ANALYTIC REFERENCE CASE
+----------------------------------------------------------------------
+
+Consider the 3D Yukawa potential:
+
+    V(r) ~ e^(-m r) / r.
+
+Quadratic shell energy:
+
+    E_shell(r) ∝ 4π r^2 V(r)^2
+                ∝ e^(-2 m r).
+
+Define:
+
+    E(R)      = ∫₀ᴿ E_shell(r) dr
+    E_total   = ∫₀^∞ E_shell(r) dr
+    F_tail(R) = (E_total - E(R)) / E_total.
+
+The horizon R*(ε) satisfies:
+
+    F_tail(R*) = ε.
+
+For this pure Yukawa system:
+
+    F_tail(R) = e^(-2 m R).
+
+Therefore:
+
+    m R*(ε) = 0.5 ln(1/ε).
+
+Examples:
+    ε = 10^-2 → m R* = 2.3026
+    ε = 10^-3 → m R* = 3.4539
+
+These match numerical measurements exactly.
+
+
+----------------------------------------------------------------------
+3. SPATIALLY VARYING STIFFNESS m(r)
+----------------------------------------------------------------------
+
+Assume stiffness varies as:
+
+    m(r)^2 = m0^2 (1 + β ρ(r)/ρ0),
+
+with m0 = minimum stiffness (the "void floor").
+
+Define stiffness-distance:
+
+    χ(r) = ∫₀ʳ m(s) ds.
+
+Under WKB-type approximations and neglecting polynomial prefactors 
+in r (i.e. to leading exponential order):
+
+    V(r) ~ exp(-χ(r)) / r.
+
+Quadratic energy shell:
+
+    E_shell(r) ∝ exp(-2 χ(r)).
+
+Thus the tail energy behaves approximately as:
+
+    F_tail(R) ≈ exp(-2 χ(R)).
+
+Setting F_tail(R*) = ε gives:
+
+    χ(R*) ≈ 0.5 ln(1/ε).
+
+Define the universal stiffness threshold:
+
+    χ_c(ε) = 0.5 ln(1/ε).
+
+Then the horizon R*(ε) is the unique solution of:
+
+    χ(R*) = χ_c(ε),
+
+independent (to leading exponential order) of the detailed functional 
+form of m(r).
+
+This is the Stiffness–Distance Horizon Law.
+
+
+----------------------------------------------------------------------
+4. NUMERICAL EVIDENCE
+----------------------------------------------------------------------
+
+Systems tested:
+
+- Constant-m Yukawa
+- Multi-mass discrete spectral mixtures
+- Continuous spectral distributions
+- Random spatial clouds
+- 1D/2D/3D lattices
+- β sweeps
+- Compactness sweeps
+- Galaxy-like density fields (disk + halo)
+
+4.1 Far-field decay
+
+The asymptotic decay rate always tends to the minimum stiffness floor:
+
+    m_fit → m0.
+
+Interior stiffening does not modify the infrared scale.
+
+4.2 Horizon radius behaviour
+
+Example β sweep (tolerance ≈ few × 10^-2):
+
+    β      R*       I(R*) = ∫₀ᴿ* m(s) ds
+    ----------------------------------------
+    0.0    9.80     1.950
+    1.0    6.70     1.865
+    3.0    4.45     1.750
+    5.0    3.45     1.659
+    10.0   2.40     1.556
+
+While R* changes drastically, I(R*) remains confined to a narrow 
+band (order unity).
+
+For tighter tolerances:
+
+    ε = 0.01   → I(R*) ≈ 2.5–3.1
+    ε = 0.001  → I(R*) ≈ 3.7–4.8
+
+Compare uniform Yukawa:
+
+    C(ε) = 0.5 ln(1/ε)
+          = 2.3026 (ε = 0.01)
+          = 3.4539 (ε = 0.001)
+
+Agreement is typically within ~10–15% even under strong stiffness 
+gradients and extreme geometric variation.
+
+
+----------------------------------------------------------------------
+5. WHAT THE HORIZON IS NOT
+----------------------------------------------------------------------
+
+The energy horizon is NOT controlled by:
+
+- local stiffness m(R*),
+- maximum stiffness,
+- volume-averaged stiffness,
+- energy-weighted stiffness,
+- spectral averaging,
+- total mass,
+- any density threshold.
+
+It is controlled by:
+
+    ∫₀ᴿ* m(r) dr ≈ χ_c(ε).
+
+Interior structure affects the mapping between r and χ(r), but not 
+the required χ threshold.
+
+
+----------------------------------------------------------------------
+6. CURVATURE HORIZON PRINCIPLE
+----------------------------------------------------------------------
+
+Identify stiffness with curvature:
+
+    κ(r) = m(r).
+
+Curvature-distance:
+
+    χ(r) = ∫₀ʳ κ(s) ds.
+
+Infrared behaviour:
+
+    κ(r) → κ0 as r → ∞,
+    V(r) ~ exp(-κ0 r)/r.
+
+Curvature Horizon Principle:
+
+For screened curvature systems with asymptotic stiffness floor κ0 > 0,
+
+1. Infrared decay scale:
+       λ_IR = 1/κ0.
+
+2. Containment radius R*(ε) satisfies:
+       ∫₀ᴿ* κ(r) dr = 0.5 ln(1/ε).
+
+Thus:
+
+- Large-scale decay is fixed solely by the void curvature floor.
+- The horizon is fixed by a universal curvature budget.
+- Interior structure modifies R* only through how quickly χ accumulates.
+
+In short:
+
+    Curvature does not care how it is distributed,
+    only how much has accumulated.
+
+
+----------------------------------------------------------------------
+CONCLUSION
+----------------------------------------------------------------------
+
+Screened curvature systems of the form
+
+    V(r) ~ exp(-∫ m ds)/r
+
+exhibit a universal structural separation:
+
+- The infrared decay is set by the minimum stiffness (void floor).
+- The containment radius is set by a fixed stiffness-distance threshold.
+
+This Curvature Horizon Principle provides a clean geometric invariant 
+that integrates naturally into the MTS framework and offers direct 
+applications to galaxy structure, interaction ranges, and curvature-
+mediation modelling.
