@@ -1,0 +1,411 @@
+import os, glob, zipfile, math
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from scipy.optimize import curve_fit
+
+# =========================
+# USER SETTINGS
+# =========================
+ZIP_PATH = "/content/Rotmod_LTG (3).zip"   # change if needed
+DATA_DIR = "/content/SPARC_rotmod"
+OUT_DIR  = "/content/mts_mastercurve_results"
+
+MIN_POINTS = 10
+
+# Universal mastercurve parameters (paper)
+X0_UNIV = 0.966
+NU_UNIV = 0.942
+
+# Choose fit mode:
+#   "A" = fit only (Vinf, Rs) with (x0, nu) fixed universal
+#   "B" = fit (Vinf, Rs, nu) with x0 fixed universal (nu varies per galaxy)
+FIT_MODE = "A"
+
+# Bounds (keep sane, avoid corner nonsense)
+VINF_BOUNDS = (5.0, 600.0)     # km/s
+RS_BOUNDS   = (0.05, 80.0)     # kpc
+NU_BOUNDS   = (0.3, 3.0)
+
+# =========================
+# SETUP
+# =========================
+os.makedirs(DATA_DIR, exist_ok=True)
+os.makedirs(OUT_DIR, exist_ok=True)
+
+# Unzip if no rotmod files present
+if len(glob.glob(os.path.join(DATA_DIR, "*_rotmod.dat"))) < 10:
+    with zipfile.ZipFile(ZIP_PATH, "r") as z:
+        z.extractall(DATA_DIR)
+
+files = sorted(glob.glob(os.path.join(DATA_DIR, "*_rotmod.dat")))
+print("Files found:", len(files))
+
+# =========================
+# MODEL
+# =========================
+def y_master(x, x0=X0_UNIV, nu=NU_UNIV):
+    x = np.maximum(x, 0.0)
+    return 1.0 - np.exp(- (x/x0)**nu )
+
+def model_A(r, Vinf, Rs):
+    x = r / np.maximum(Rs, 1e-6)
+    return Vinf * y_master(x, X0_UNIV, NU_UNIV)
+
+def model_B(r, Vinf, Rs, nu):
+    x = r / np.maximum(Rs, 1e-6)
+    return Vinf * y_master(x, X0_UNIV, nu)
+
+def load_rotmod(fp):
+    try:
+        data = np.loadtxt(fp)
+        if data.ndim != 2 or data.shape[0] < MIN_POINTS or data.shape[1] < 3:
+            return None
+        r = data[:,0].astype(float)
+        v = data[:,1].astype(float)
+        e = data[:,2].astype(float)
+        m = (r>0) & (v>0) & np.isfinite(r) & np.isfinite(v) & np.isfinite(e)
+        # If errors are missing/zero, replace with median nonzero or 5 km/s fallback
+        if np.any(e[m] <= 0):
+            e2 = e.copy()
+            good_e = e2[m] > 0
+            fallback = np.median(e2[good_e]) if np.any(good_e) else 5.0
+            e2[(m) & (e2<=0)] = fallback
+            e = e2
+        if m.sum() < MIN_POINTS:
+            return None
+        return r[m], v[m], e[m]
+    except Exception:
+        return None
+
+# =========================
+# FIT LOOP
+# =========================
+rows = []
+all_residuals = []   # y - y_master(x) using fitted params
+curves_for_plot = [] # (x,y) for QC-pass curves
+
+n_total = 0
+n_loaded = 0
+n_fit_ok = 0
+n_qc_ok  = 0
+
+for fp in files:
+    n_total += 1
+    name = os.path.basename(fp).replace("_rotmod.dat","")
+    dat = load_rotmod(fp)
+    if dat is None:
+        rows.append({"Galaxy": name, "status":"load_fail"})
+        continue
+
+    n_loaded += 1
+    r, v, e = dat
+
+    # Initial guesses
+    V0 = np.percentile(v, 95)  # robust "almost flat" guess
+    V0 = float(np.clip(V0, VINF_BOUNDS[0], VINF_BOUNDS[1]))
+    # Rs guess: radius where velocity reaches half of V0 (if exists), else r_median
+    try:
+        idx = np.where(v >= 0.5*V0)[0]
+        Rs0 = r[idx[0]] if len(idx)>0 else np.median(r)
+    except Exception:
+        Rs0 = np.median(r)
+    Rs0 = float(np.clip(Rs0, RS_BOUNDS[0], RS_BOUNDS[1]))
+
+    fit_status = "fit_fail"
+    Vinf_fit = np.nan
+    Rs_fit   = np.nan
+    nu_fit   = np.nan
+    rmse     = np.nan
+    chi2red  = np.nan
+
+    try:
+        if FIT_MODE == "A":
+            popt, pcov = curve_fit(
+                model_A, r, v,
+                p0=[V0, Rs0],
+                sigma=e, absolute_sigma=True,
+                bounds=([VINF_BOUNDS[0], RS_BOUNDS[0]],
+                        [VINF_BOUNDS[1], RS_BOUNDS[1]]),
+                maxfev=20000
+            )
+            Vinf_fit, Rs_fit = map(float, popt)
+            nu_fit = NU_UNIV
+            vpred = model_A(r, Vinf_fit, Rs_fit)
+
+        else:
+            popt, pcov = curve_fit(
+                model_B, r, v,
+                p0=[V0, Rs0, NU_UNIV],
+                sigma=e, absolute_sigma=True,
+                bounds=([VINF_BOUNDS[0], RS_BOUNDS[0], NU_BOUNDS[0]],
+                        [VINF_BOUNDS[1], RS_BOUNDS[1], NU_BOUNDS[1]]),
+                maxfev=30000
+            )
+            Vinf_fit, Rs_fit, nu_fit = map(float, popt)
+            vpred = model_B(r, Vinf_fit, Rs_fit, nu_fit)
+
+        n_fit_ok += 1
+        fit_status = "fit_ok"
+        rmse = float(np.sqrt(np.mean((v - vpred)**2)))
+
+        # Reduced chi^2
+        dof = max(len(r) - (2 if FIT_MODE=="A" else 3), 1)
+        chi2 = float(np.sum(((v - vpred)/e)**2))
+        chi2red = chi2 / dof
+
+        # QC: reject if hugging bounds (means unconstrained / pathological)
+        bound_hit = False
+        if abs(Vinf_fit - VINF_BOUNDS[0]) < 1e-6 or abs(Vinf_fit - VINF_BOUNDS[1]) < 1e-6: bound_hit = True
+        if abs(Rs_fit   - RS_BOUNDS[0])   < 1e-6 or abs(Rs_fit   - RS_BOUNDS[1])   < 1e-6: bound_hit = True
+        if FIT_MODE=="B":
+            if abs(nu_fit - NU_BOUNDS[0]) < 1e-6 or abs(nu_fit - NU_BOUNDS[1]) < 1e-6: bound_hit = True
+
+        # Additional QC: need some tail leverage: r_max / Rs_fit
+        tail = float(np.max(r) / max(Rs_fit, 1e-6))
+        tail_ok = tail >= 2.0
+
+        qc_ok = (not bound_hit) and tail_ok and np.isfinite(rmse) and np.isfinite(chi2red)
+
+        if qc_ok:
+            n_qc_ok += 1
+            # Build collapse data
+            x = r / Rs_fit
+            y = v / Vinf_fit
+            y_m = y_master(x, X0_UNIV, nu_fit)
+            all_residuals.extend((y - y_m).tolist())
+            curves_for_plot.append((x, y))
+
+    except Exception:
+        pass
+
+    rows.append({
+        "Galaxy": name,
+        "status": fit_status,
+        "N": len(r),
+        "Vinf_fit": Vinf_fit,
+        "Rs_fit": Rs_fit,
+        "nu_fit": nu_fit,
+        "rmse_kms": rmse,
+        "chi2red": chi2red,
+        "rmax_over_Rs": float(np.max(r) / max(Rs_fit, 1e-6)) if np.isfinite(Rs_fit) else np.nan
+    })
+
+df = pd.DataFrame(rows)
+csv_path = os.path.join(OUT_DIR, "mastercurve_fit_results.csv")
+df.to_csv(csv_path, index=False)
+
+print("\nLoaded galaxies:", n_loaded)
+print("Fit OK:", n_fit_ok)
+print("QC-pass:", n_qc_ok)
+print("CSV saved:", csv_path)
+
+# =========================
+# MASTER CURVE STATS + PLOT
+# =========================
+res = np.array(all_residuals, dtype=float)
+if res.size == 0:
+    print("\nNo QC-pass residuals produced. Loosen QC or check data.")
+else:
+    rms = float(np.sqrt(np.mean(res**2)))
+    mean_abs = float(np.mean(np.abs(res)))
+    print("\nMastercurve collapse (QC-pass only):")
+    print("RMS scatter:", rms)
+    print("Mean |Δ|:", mean_abs)
+
+    # Plot
+    plt.figure(figsize=(7,5))
+    for x,y in curves_for_plot:
+        plt.plot(x, y, alpha=0.08, lw=0.6)
+    xx = np.linspace(0, 4, 400)
+    plt.plot(xx, y_master(xx, X0_UNIV, NU_UNIV if FIT_MODE=="A" else np.median(df.loc[df.status=="fit_ok","nu_fit"].dropna())),
+             lw=3)
+    plt.xlim(0,4)
+    plt.ylim(0,1.4)
+    plt.xlabel("x = r / Rs_fit")
+    plt.ylabel("y = V / Vinf_fit")
+    plt.title(f"SPARC Mastercurve Collapse | mode {FIT_MODE} | QC-pass={n_qc_ok}")
+    plot_path = os.path.join(OUT_DIR, "mastercurve_collapse.png")
+    plt.savefig(plot_path, dpi=160, bbox_inches="tight")
+    plt.show()
+    print("Plot saved:", plot_path)
+
+Galaxy	status	N	Vinf_fit	Rs_fit	nu_fit	rmse_kms	chi2red	rmax_over_Rs
+CamB	load_fail							
+D512-2	load_fail							
+D564-8	load_fail							
+D631-7	fit_ok	16	69.44525585	3.396737714	0.942	1.33286114	0.25467038	2.116736883
+DDO064	fit_ok	14	70.37964979	2.066636699	0.942	3.281325808	0.430618938	1.441956393
+DDO154	fit_ok	12	52.54249074	1.865814303	0.942	1.539123864	3.301647056	3.172877382
+DDO161	fit_ok	31	69.75698424	3.821077337	0.942	1.967118989	0.63034276	3.49901319
+DDO168	fit_ok	10	70.33551759	2.211545189	0.942	2.998453789	3.305406153	1.862950855
+DDO170	load_fail							
+ESO079-G014	fit_ok	15	192.9898998	5.768392348	0.942	7.503252644	1.504636566	2.889886643
+ESO116-G012	fit_ok	15	114.0437992	2.228398711	0.942	2.983808583	0.902973385	4.424701895
+ESO444-G084	load_fail							
+ESO563-G021	fit_ok	30	330.9049623	5.613503489	0.942	17.13043633	11.77753011	7.554996641
+F561-1	load_fail							
+F563-1	fit_ok	17	110.2311157	3.165032668	0.942	7.458357208	0.590728988	6.350645352
+F563-V1	load_fail							
+F563-V2	fit_ok	10	124.8877471	2.377492002	0.942	6.117655709	0.3114986	4.403800304
+F565-V2	load_fail							
+F567-2	load_fail							
+F568-1	fit_ok	12	140.671645	3.332750412	0.942	3.512747406	0.118856808	3.969694206
+F568-3	fit_ok	18	125.0205667	5.739616524	0.942	6.577706809	1.199459442	3.132613464
+F568-V1	fit_ok	15	117.9498005	2.183430104	0.942	3.125335356	0.052732852	8.074451282
+F571-8	fit_ok	13	145.1870972	3.620443504	0.942	4.3499506	0.927656861	4.295053903
+F571-V1	load_fail							
+F574-1	fit_ok	14	100.905585	2.682090503	0.942	1.548656115	0.127721382	4.69782805
+F574-2	load_fail							
+F579-V1	fit_ok	14	111.0013289	1.184567942	0.942	2.917100822	0.103055964	12.79791514
+F583-1	fit_ok	25	92.39128505	4.017948043	0.942	2.822453701	0.233258041	4.046841777
+F583-4	fit_ok	12	66.63984382	1.834061226	0.942	2.562683817	0.329671485	3.974785517
+IC2574	fit_ok	34	94.66260316	8.982534063	0.942	2.075006166	2.626485295	1.138876839
+IC4202	fit_ok	32	251.8155937	3.198389335	0.942	10.28135631	4.862146766	8.097825901
+KK98-251	fit_ok	15	57.02231127	3.03813851	0.942	1.651864446	0.78711235	1.03023611
+NGC0024	fit_ok	29	107.7485737	0.868246907	0.942	3.737172961	0.30674391	12.98017869
+NGC0055	fit_ok	21	94.68465864	3.987944267	0.942	2.212725894	0.628374267	3.385202775
+NGC0100	fit_ok	21	92.62322642	2.735732806	0.942	1.627490701	0.137114524	3.516425281
+NGC0247	fit_ok	26	94.75804645	2.718979373	0.942	7.601902524	3.744610029	5.347594816
+NGC0289	fit_ok	28	173.8009868	0.435706064	0.942	9.43869666	2.598934001	163.2293095
+NGC0300	fit_ok	25	96.44437657	2.408646976	0.942	3.008727128	0.441925693	4.899015968
+NGC0801	fit_ok	13	221.5693863	1.128506797	0.942	15.94594797	8.405830972	53.00809898
+NGC0891	fit_ok	18	221.4229478	0.05	0.942	9.466037531	2.926788624	342.2
+NGC1003	fit_ok	36	106.3320355	3.323792324	0.942	5.505827676	6.771683273	9.09804135
+NGC1090	fit_ok	24	164.8759352	2.392278781	0.942	6.177152731	2.020996664	12.57796551
+NGC1705	fit_ok	14	72.09473578	0.207146202	0.942	1.979564827	0.104085743	28.96504946
+NGC2366	fit_ok	26	58.26966805	1.875206743	0.942	3.019804432	1.250074386	3.231643669
+NGC2403	fit_ok	73	127.4807138	1.332935604	0.942	7.487099288	21.20887785	15.65717048
+NGC2683	fit_ok	11	191.366461	0.518111872	0.942	25.65636222	9.747323498	66.81954585
+NGC2841	fit_ok	50	290.4906849	0.061266104	0.942	20.00333793	9.586943705	1038.747299
+NGC2903	fit_ok	34	199.3016977	0.786121102	0.942	16.3800855	17.96815052	31.75083322
+NGC2915	fit_ok	30	83.46383986	1.223540097	0.942	4.722570031	0.314722207	8.20569757
+NGC2955	fit_ok	24	257.6963833	0.823319473	0.942	12.50602076	2.788850496	43.03311308
+NGC2976	fit_ok	27	206.5335716	3.834028108	0.942	3.251331744	0.72666537	0.592066604
+NGC2998	fit_ok	13	212.1042015	1.282020431	0.942	12.2173018	1.494128553	32.97919361
+NGC3109	fit_ok	25	89.18353451	4.353856295	0.942	1.503571042	0.306439168	1.481445313
+NGC3198	fit_ok	43	151.886326	2.431589803	0.942	5.75052634	2.508897469	18.1280576
+NGC3521	fit_ok	41	213.338572	0.511544683	0.942	4.34088918	0.219865887	34.6792775
+NGC3726	fit_ok	12	161.6046933	3.018525378	0.942	7.758382979	2.642741938	10.77347245
+NGC3741	fit_ok	21	50.44612263	1.802704931	0.942	2.99143832	1.956719942	3.883053672
+NGC3769	fit_ok	12	121.3183108	1.462796299	0.942	4.152423966	0.49310062	25.40340034
+NGC3877	fit_ok	13	176.3153757	2.403985743	0.942	7.466514006	0.960815957	4.721325836
+NGC3893	fit_ok	10	187.2519138	1.165313984	0.942	8.466896248	0.802344743	16.34752545
+NGC3917	fit_ok	17	145.4585905	3.505780362	0.942	5.302246123	1.863788234	4.238713913
+NGC3949	load_fail							
+NGC3953	load_fail							
+NGC3972	fit_ok	10	140.007391	2.744829593	0.942	2.242777247	0.256536236	3.1768821
+NGC3992	load_fail							
+NGC4010	fit_ok	12	136.4525496	3.542470752	0.942	5.494065415	1.323781165	2.955564275
+NGC4013	fit_ok	36	180.6649159	0.074421696	0.942	10.82270824	5.506578509	416.679564
+NGC4051	load_fail							
+NGC4068	load_fail							
+NGC4085	load_fail							
+NGC4088	fit_ok	12	174.4819815	2.085454283	0.942	7.912832004	1.384272477	10.29991411
+NGC4100	fit_ok	24	184.1720792	1.642126332	0.942	14.36032115	4.684190213	13.86007858
+NGC4138	load_fail							
+NGC4157	fit_ok	17	188.8089444	1.760163456	0.942	9.580270853	1.454460921	16.82230131
+NGC4183	fit_ok	23	110.8040892	2.131726607	0.942	2.841727665	0.227394845	9.860551506
+NGC4214	fit_ok	14	77.21111825	0.253293603	0.942	5.15199792	0.761174917	22.2271701
+NGC4217	fit_ok	19	188.302841	1.963727756	0.942	8.874038404	1.458194892	8.514418534
+NGC4389	load_fail							
+NGC4559	fit_ok	32	121.7753322	2.324549412	0.942	3.369887619	0.311076553	9.021103141
+NGC5005	fit_ok	18	252.8187102	0.479722581	0.942	14.78720444	0.46083202	23.90965209
+NGC5033	fit_ok	22	213.1739704	0.215033662	0.942	11.61182836	14.13555418	207.362883
+NGC5055	fit_ok	28	197.1126786	0.769097176	0.942	12.06075736	119.3924041	70.97932708
+NGC5371	fit_ok	19	224.6685789	0.474197084	0.942	12.42489061	14.66257723	97.51219802
+NGC5585	fit_ok	24	89.75109057	1.877600781	0.942	5.522368586	22.59937917	5.8372366
+NGC5907	fit_ok	19	221.6106058	1.280788263	0.942	7.75172407	10.87166706	39.29611277
+NGC5985	fit_ok	33	291.9758917	2.512309313	0.942	7.258771547	1.171698111	13.81995435
+NGC6015	fit_ok	44	156.8668389	1.363600625	0.942	5.728673285	4.973564253	21.43589514
+NGC6195	fit_ok	23	244.9872963	0.733064548	0.942	9.204536807	1.537164723	49.6954874
+NGC6503	fit_ok	31	116.2930206	0.674407932	0.942	1.986926994	1.119391353	34.84537899
+NGC6674	fit_ok	15	244.7653742	0.747170776	0.942	20.49865387	17.50946645	96.91224862
+NGC6789	load_fail							
+NGC6946	fit_ok	58	173.4802056	1.137117304	0.942	20.79946095	13.30550199	17.94010164
+NGC7331	fit_ok	36	240.0307331	0.394719166	0.942	8.276496667	2.764288974	91.98945267
+NGC7793	fit_ok	46	101.4463719	0.91635097	0.942	7.81189045	1.549755769	8.588412363
+NGC7814	fit_ok	18	218.7888545	0.05	0.942	14.74358619	3.034476474	390.6
+PGC51017	load_fail							
+UGC00128	fit_ok	22	130.6687459	5.592146361	0.942	4.057273585	4.865037639	9.611694067
+UGC00191	load_fail							
+UGC00634	load_fail							
+UGC00731	fit_ok	12	73.731889	2.229237951	0.942	2.132893959	0.748960136	4.894049105
+UGC00891	load_fail							
+UGC01230	fit_ok	11	107.9279185	2.655989554	0.942	6.56305673	0.450350154	13.75758423
+UGC01281	fit_ok	25	75.05994223	3.044536952	0.942	2.383867263	0.292847612	1.639001292
+UGC02023	load_fail							
+UGC02259	load_fail							
+UGC02455	load_fail							
+UGC02487	fit_ok	17	344.4697512	0.053161331	0.942	23.2823145	40.20028384	1512.001281
+UGC02885	fit_ok	19	285.8411173	0.051633056	0.942	13.31110801	1.980309608	1434.54613
+UGC02916	fit_ok	43	212.5632511	0.194270026	0.942	9.322051969	2.367086551	195.6040297
+UGC02953	fit_ok	115	293.0282219	0.435220526	0.942	34.87829776	62.61642464	143.3526137
+UGC03205	fit_ok	48	217.4918124	0.825126288	0.942	12.66049638	3.945004651	48.52590516
+UGC03546	fit_ok	30	201.2236488	0.05	0.942	21.60573479	3.368581136	584.5999993
+UGC03580	fit_ok	47	115.5653395	1.751290294	0.942	16.75178399	11.09561552	15.45146461
+UGC04278	fit_ok	25	124.8918739	5.475611208	0.942	4.518521936	1.101655162	1.221781413
+UGC04305	fit_ok	22	34.83055139	0.877744482	0.942	3.340606575	0.967231861	6.288846142
+UGC04325	load_fail							
+UGC04483	load_fail							
+UGC04499	load_fail							
+UGC05005	fit_ok	11	103.5258748	6.932129565	0.942	1.499752192	0.025706797	4.127158867
+UGC05253	fit_ok	73	244.0436347	0.053796755	0.942	9.629131987	4.852140273	990.5801915
+UGC05414	load_fail							
+UGC05716	fit_ok	12	74.08363407	2.452708805	0.942	4.016313329	4.755355342	5.043403431
+UGC05721	fit_ok	23	80.13464037	0.539569319	0.942	3.61122178	0.552062325	12.49144413
+UGC05750	fit_ok	11	88.54512855	6.138905686	0.942	3.682011904	0.204130927	3.722161761
+UGC05764	fit_ok	10	57.27457368	0.808372956	0.942	3.118864319	3.340124891	4.47813101
+UGC05829	fit_ok	11	81.382832	4.094912042	0.942	2.03296427	0.197291618	1.687459933
+UGC05918	load_fail							
+UGC05986	fit_ok	15	122.0590478	2.176051739	0.942	5.899639332	2.445004298	4.324345709
+UGC05999	load_fail							
+UGC06399	load_fail							
+UGC06446	fit_ok	17	82.01328764	1.454576867	0.942	3.000058049	0.433563761	7.026098263
+UGC06614	fit_ok	13	180.7170572	0.050771805	0.942	15.24438569	2.043278174	1272.162765
+UGC06628	load_fail							
+UGC06667	load_fail							
+UGC06786	fit_ok	45	224.2213619	1.134576059	0.942	32.40022678	4.18022204	30.01120968
+UGC06787	fit_ok	71	240.7295545	0.085543221	0.942	14.62052855	25.2148735	434.750991
+UGC06818	load_fail							
+UGC06917	fit_ok	11	109.4906755	2.418255317	0.942	1.870173421	0.208334212	4.329567655
+UGC06923	load_fail							
+UGC06930	fit_ok	10	108.3852697	2.535320014	0.942	1.635005993	0.089931892	6.551441202
+UGC06973	load_fail							
+UGC06983	fit_ok	17	109.3460859	2.055222547	0.942	3.322392637	0.504741589	7.629344094
+UGC07089	fit_ok	12	84.3227021	3.645802869	0.942	1.514180405	0.106674135	2.512478137
+UGC07125	fit_ok	13	65.82300154	3.386308353	0.942	1.629210871	0.421626747	5.516331666
+UGC07151	fit_ok	11	74.95441401	1.165121884	0.942	2.329194034	1.196534356	4.720536175
+UGC07232	load_fail							
+UGC07261	load_fail							
+UGC07323	fit_ok	10	105.9523374	3.51939403	0.942	2.466934287	0.507929276	1.653693775
+UGC07399	fit_ok	10	99.85997266	1.0412589	0.942	2.66741342	0.520127178	5.887104542
+UGC07524	fit_ok	31	84.12104063	3.083679609	0.942	1.869351724	0.34131128	3.466637704
+UGC07559	load_fail							
+UGC07577	load_fail							
+UGC07603	fit_ok	12	65.23677126	0.960413764	0.942	1.624407677	0.379119067	4.279405558
+UGC07608	load_fail							
+UGC07690	load_fail							
+UGC07866	load_fail							
+UGC08286	fit_ok	17	83.5574557	1.2405397	0.942	2.142085868	0.830989862	6.481050142
+UGC08490	fit_ok	30	78.93093057	0.650660518	0.942	1.373705099	0.148490104	15.59953266
+UGC08550	fit_ok	11	56.05011694	0.842680309	0.942	1.957461042	0.944833075	6.360656522
+UGC08699	fit_ok	41	186.7453322	0.137074873	0.942	8.270811442	4.451689499	187.4887751
+UGC08837	load_fail							
+UGC09037	fit_ok	22	158.8119508	4.76451972	0.942	5.235608373	0.473871608	5.868377432
+UGC09133	fit_ok	68	243.4589749	0.05	0.942	31.43977595	68.67156881	2166.2
+UGC09992	load_fail							
+UGC10310	load_fail							
+UGC11455	fit_ok	36	279.8956263	4.660664104	0.942	11.90173742	2.972541047	8.996571961
+UGC11557	fit_ok	12	93.91784675	3.786897471	0.942	4.624934328	0.410504792	2.788562427
+UGC11820	fit_ok	10	85.66207437	4.453558537	0.942	11.79948088	8.375210054	3.552215576
+UGC11914	fit_ok	65	288.1858071	0.375485268	0.942	4.851676819	1.176748683	26.17945589
+UGC12506	fit_ok	31	240.7834437	2.770847065	0.942	11.08555875	0.554362798	18.04141435
+UGC12632	fit_ok	15	73.73203545	2.348075871	0.942	1.210374892	0.099908736	4.539887375
+UGC12732	fit_ok	16	90.71631547	3.11568098	0.942	4.383239489	1.854098822	4.942739677
+UGCA281	load_fail							
+UGCA442	load_fail							
+UGCA444	fit_ok	36	39.15116687	1.047037429	0.942	1.062126955	0.078032287	2.502298319
+
+
+
