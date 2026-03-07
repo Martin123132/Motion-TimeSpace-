@@ -1,0 +1,370 @@
+CURVATURE–MEMORY COSMOLOGY
+A Cumulative Stiffness Framework for Late-Time Expansion
+
+Martin Ollett
+2026
+
+
+Abstract
+--------
+
+We present a cosmological framework in which the late-time expansion of the Universe is governed by the cumulative response of the matter–radiation sector to curvature history. The model introduces a stiffness-memory variable that accumulates curvature information across cosmic time and modulates the effective participation of matter in the Friedmann equation.
+
+The background expansion emerges through a nonlinear saturation map applied to the accumulated memory field. The resulting cosmology admits a compact autonomous formulation, a curvature-history identity relating the memory field to the Ricci scalar of the source background, and a localized auxiliary-field representation on FLRW spacetimes.
+
+We derive the low-redshift cosmographic structure of the model and show that the observable parameters (q₀, j₀) and the effective equation-of-state parameter w_eff,0 obey exact algebraic relations. The parameter-to-observable map becomes singular only along a single curve in parameter space and remains regular within the physically admissible late-time corridor.
+
+The framework therefore defines a constrained cosmographic surface rather than a generic two-parameter expansion history and provides a mathematically compact description of curvature-memory driven cosmic acceleration.
+
+
+---------------------------------------------------------------------
+
+1. Introduction
+---------------
+
+Standard ΛCDM cosmology attributes the late-time acceleration of the Universe to a constant vacuum energy density. While the model successfully reproduces a wide range of observations, it leaves open the question of whether the accelerated expansion could arise from dynamical properties of the gravitational sector itself.
+
+The curvature-memory framework explores the possibility that the expansion rate responds not only to instantaneous matter density but also to accumulated curvature history. In such a picture the effective gravitational participation of matter evolves with cosmic time as curvature information is integrated along the expansion trajectory.
+
+The goal of this work is to formulate a minimal realization of this idea at the background level and to derive its observable consequences.
+
+
+---------------------------------------------------------------------
+
+2. Cumulative Stiffness Variable
+--------------------------------
+
+In the spatial Motion–TimeSpace formulation the observable gravitational response is governed by accumulated stiffness distance
+
+    χ(r) = ∫₀ʳ m(s) ds.
+
+Across spatial tests including Yukawa systems, stochastic density fields, and disk–halo models, the observable response appears as a saturating function of this cumulative variable.
+
+Motivated by this structure we introduce a cosmological analogue
+
+    Ξ(z) = ∫₀ᶻ μ(ζ) dζ,
+
+where μ(z) is an effective cosmological stiffness kernel.
+
+The quantity Ξ(z) represents the accumulated stiffness memory between the present epoch and redshift z.
+
+
+---------------------------------------------------------------------
+
+3. Saturating Response Law
+--------------------------
+
+Spatial analyses of the stiffness framework exhibit exponential saturation
+
+    R(χ) = 1 − e^(−χ).
+
+We adopt the same structure for the cosmological response
+
+    g(z) = 1 − e^(−Ξ(z)).
+
+The background expansion becomes
+
+    H²(z) =
+        H₀² [
+            Ω_m (1+z)³ g(z)
+            + Ω_r (1+z)⁴
+            + Ω_Λ
+        ].
+
+Thus the matter contribution to the Friedmann equation is modulated by the participation factor g(z).
+
+
+---------------------------------------------------------------------
+
+4. Self-Similar Stiffness Kernel
+--------------------------------
+
+A minimal closure for the stiffness kernel is a power-law accumulation
+
+    μ(z) ∝ z^(ν−1).
+
+Integrating gives
+
+    Ξ(z) = (z / z_t)^ν.
+
+The participation function becomes
+
+    g(z) = 1 − exp[ − (z / z_t)^ν ].
+
+
+---------------------------------------------------------------------
+
+5. Source Background and Memory Field
+-------------------------------------
+
+Define the source background
+
+    E_src²(z) =
+        Ω_m (1+z)³
+        + Ω_r (1+z)⁴
+        + Ω_Λ.
+
+Introduce the logarithmic expansion variable
+
+    N = ln a.
+
+The memory field is defined as
+
+    M(N) = A ln E_src(N).
+
+The response function becomes
+
+    g(N) = 1 − e^(−M(N)).
+
+The observable expansion branch is
+
+    E²(N) =
+        [m(N) + r(N)] g(N)
+        + Ω_Λ.
+
+
+---------------------------------------------------------------------
+
+6. Curvature-History Identity
+-----------------------------
+
+For a flat FLRW spacetime
+
+    R / H² = 6 (2 + d ln E / dN).
+
+Applying this to the source background gives
+
+    M' =
+        (A/6) [ R_src / H_src² − 12 ].
+
+Thus the memory field evolves linearly with the curvature history of the source expansion.
+
+
+---------------------------------------------------------------------
+
+7. Autonomous System
+--------------------
+
+Define
+
+    u = m / (m + r + Ω_Λ)
+    v = r / (m + r + Ω_Λ).
+
+The system reduces to
+
+    u' = u[ −3 + (3u + 4v) ]
+
+    v' = v[ −4 + (3u + 4v) ]
+
+    M' = − (A/2)(3u + 4v)
+
+    g = 1 − e^(−M).
+
+
+---------------------------------------------------------------------
+
+8. Late-Time Reduction
+----------------------
+
+When radiation becomes negligible (v << 1)
+
+    u' ≈ 3u(u − 1)
+
+    M' ≈ − (3A/2) u.
+
+Integrating gives
+
+    M(u) ≈ − (A/2) ln(1 − u) + C.
+
+The response law becomes
+
+    g(u) ≈ 1 − B (1 − u)^(A/2).
+
+
+---------------------------------------------------------------------
+
+9. Linear Growth of Structure
+-----------------------------
+
+The linear density perturbation equation becomes
+
+    δ'' +
+    (2 + d ln H / d ln a) δ'
+    − (3/2) Ω_m(a) g(z) δ
+    = 0.
+
+At early times
+
+    g(z) → 1
+
+recovering standard growth.
+
+At late times
+
+    g(z) < 1
+
+suppressing gravitational clustering.
+
+
+---------------------------------------------------------------------
+
+10. Cosmographic Expansion
+--------------------------
+
+Expanding around z = 0 gives
+
+    E²(z) =
+        Ω_Λ
+        + (3A Ω_m² / 2) z
+        + [ 6A Ω_m²
+            − (9A Ω_m³)/4
+            − (9A² Ω_m³)/8 ] z²
+        + O(z³).
+
+The present deceleration parameter becomes
+
+    q₀ = −1 + (3A Ω_m²)/(4(1 − Ω_m)).
+
+The jerk parameter is
+
+    j₀ =
+        1 +
+        (9A Ω_m² / [8(1 − Ω_m)])
+        [4 − (A + 2) Ω_m].
+
+
+---------------------------------------------------------------------
+
+11. Inverse Cosmographic Map
+----------------------------
+
+The memory parameter can be reconstructed from q₀:
+
+    A =
+        [4(1 − Ω_m) / (3 Ω_m²)] (q₀ + 1).
+
+Substituting into the jerk relation yields
+
+    j₀ =
+        1
+        + 3(2 − Ω_m)(q₀ + 1)
+        − 2[(1 − Ω_m)/Ω_m](q₀ + 1)².
+
+Thus for fixed Ω_m the model traces a quadratic curve in the (q₀, j₀) plane.
+
+
+---------------------------------------------------------------------
+
+12. Effective Equation of State
+-------------------------------
+
+Eliminating A yields
+
+    w_eff,0 =
+        (1 − Ω_m)(2q₀ − 1) / [3(1 − 2Ω_m)].
+
+Thus the present effective equation of state is algebraically tied to q₀.
+
+
+---------------------------------------------------------------------
+
+13. Jacobian and Degeneracy
+---------------------------
+
+The Jacobian of the map (A, Ω_m) → (q₀, j₀) has determinant
+
+    det =
+        [27 A Ω_m⁴ / (32 (1 − Ω_m)³)]
+        [A − 2(1 − Ω_m)].
+
+The map becomes singular on
+
+    A = 2(1 − Ω_m).
+
+
+---------------------------------------------------------------------
+
+14. Physical Corridor
+---------------------
+
+If the admissibility conditions
+
+    0 < Ω_m < 1/2
+    A > 2
+
+are imposed, then
+
+    det > 0
+
+and the observable map remains locally invertible.
+
+
+---------------------------------------------------------------------
+
+15. Cumulative Stiffness–Memory Equivalence
+-------------------------------------------
+
+The cumulative stiffness variable
+
+    Ξ(z) = ∫ μ(z) dz
+
+is equivalent to the logarithmic memory field.
+
+Differentiating
+
+    M(z) = A ln E_src(z)
+
+gives
+
+    dM/dz =
+        A (1 / E_src) dE_src/dz.
+
+Define
+
+    μ(z) =
+        A (1 / E_src) dE_src/dz.
+
+Then
+
+    M(z) = ∫ μ(z) dz.
+
+Thus
+
+    Ξ(z) = M(z) = A ln E_src(z).
+
+The response function becomes
+
+    g(z) = 1 − e^(−Ξ(z))
+         = 1 − E_src^(−A).
+
+The observable expansion branch therefore becomes
+
+    E²(z) =
+        Ω_m (1+z)³ [1 − E_src^(−A)]
+        + Ω_Λ.
+
+
+---------------------------------------------------------------------
+
+16. Interpretation
+------------------
+
+The curvature-memory cosmology can be summarized as a three-stage system
+
+    source expansion
+        → curvature-history memory
+        → nonlinear response
+        → modified expansion branch
+
+        E_src
+            → Ξ = A ln E_src
+            → g = 1 − e^(−Ξ)
+            → E(z).
+
+Thus the cumulative stiffness kernel and the sourced-memory formulation
+represent the same dynamical structure expressed in different variables.
+
+
+---------------------------------------------------------------------
+
+End of draft
