@@ -1,0 +1,378 @@
+# Expansion–History Activated Matter Coupling  
+## Tested Against Pantheon+ SH0ES, DESI DR1 BAO, Gold-2017 Growth Data, and a CMB Shift-Parameter Prior
+
+Author: Martin Ollett  
+Year: 2026
+
+---
+
+# Abstract
+
+We investigate a phenomenological cosmological framework in which the effective contribution of the matter sector to the expansion history is modulated by an activation function derived from accumulated expansion history. The model modifies the standard Friedmann background through a multiplicative activation factor (g(z)) applied to the matter density term,
+
+[
+H(z)^2 = H_0^2 \left[\Omega_m (1+z)^3 g(z) + (1-\Omega_m)\right].
+]
+
+We test three representations of the activation behaviour using the Pantheon+ SH0ES Type Ia supernova sample, DESI DR1 baryon acoustic oscillation measurements, and the Gold-2017 compilation of growth-rate measurements (f\sigma_8).
+
+These are:
+
+1. Empirical redshift activation  
+2. Expansion-history activation using (u=\ln(1+z))  
+3. Equality-tied activation where the activation scale is linked to the matter–(\Lambda) equality epoch  
+
+Using Pantheon+ and DESI data, the activation framework improves the late-time fit relative to the recovered (\Lambda)CDM baseline by
+
+[
+\Delta\chi^2 \approx -13.
+]
+
+When combined with the Gold-2017 growth dataset and a CMB shift-parameter prior, the equality-tied activation branch yields the lowest total (\chi^2) among the models tested, with optimized parameters
+
+[
+H_0 \approx 73.65,\text{km s}^{-1}\text{Mpc}^{-1}, \quad
+\Omega_m \approx 0.256, \quad
+\alpha \approx 0.522, \quad
+r_d \approx 148.95,\text{Mpc}.
+]
+
+The preferred activation scale corresponds to a transition occurring after matter–(\Lambda) equality at
+
+[
+z_s \approx 0.21.
+]
+
+These results indicate that late-time expansion behaviour may be describable through a delayed response to accumulated expansion history rather than through a strictly constant dark-energy component.
+
+---
+
+# 1. Introduction
+
+The standard (\Lambda)CDM cosmological model describes the late-time expansion of the Universe through a pressureless matter component and a constant dark-energy density. Despite its empirical success, the physical origin of the cosmological constant remains uncertain.
+
+This motivates exploration of alternative phenomenological descriptions of late-time expansion that preserve the successful structure of standard cosmology while modifying the way in which matter contributes to the background dynamics.
+
+In this work we investigate a framework in which the effective gravitational contribution of the matter sector evolves through a delayed activation function.
+
+The modified background expansion is written as
+
+[
+H(z)^2 = H_0^2 \left[\Omega_m (1+z)^3 g(z) + (1-\Omega_m)\right].
+]
+
+When (g(z)=1), the model reduces to the standard (\Lambda)CDM background.
+
+The goal of this work is not to claim a complete replacement for standard cosmology, but to test whether a compact activation-law description can reproduce late-time expansion data at least as well as the recovered (\Lambda)CDM baseline.
+
+---
+
+# 2. Activation Framework
+
+We consider activation functions of the form
+
+[
+g(z) = 1 - \exp[-u(z)^\nu]
+]
+
+where (u(z)) is a loading variable describing accumulated expansion history.
+
+---
+
+## 2.1 Empirical Redshift Activation
+
+The empirical activation law is
+
+[
+g(z) = 1 - \exp\left[-\left(\frac{z}{z_s x_0}\right)^\nu\right].
+]
+
+---
+
+## 2.2 Expansion-History Activation
+
+A more physically motivated loading variable is
+
+[
+u(z) = \ln(1+z).
+]
+
+The activation law becomes
+
+[
+g(z) = 1 - \exp\left[-\left(\frac{\ln(1+z)}{u_s}\right)^\nu\right].
+]
+
+---
+
+## 2.3 Equality-Tied Activation Scale
+
+Matter–(\Lambda) equality satisfies
+
+[
+\Omega_m (1+z_{eq})^3 = 1 - \Omega_m
+]
+
+which gives
+
+[
+u_{eq} = \frac{1}{3}\ln\left(\frac{1-\Omega_m}{\Omega_m}\right).
+]
+
+The activation scale is parameterized as
+
+[
+u_s = \alpha u_{eq}.
+]
+
+---
+
+# 3. Observational Datasets
+
+Three late-time probes are used.
+
+Pantheon+ SH0ES supernova sample
+
+1701 Type Ia supernovae providing distance moduli (\mu(z)).
+
+DESI DR1 BAO measurements
+
+Anisotropic BAO constraints on (D_M/r_d) and (D_H/r_d).
+
+Gold-2017 growth dataset
+
+18 measurements of (f\sigma_8(z)).
+
+The growth equation used is
+
+[
+D'' + \left[2 + \frac{d\ln H}{d\ln a}\right]D'
+- \frac{3}{2}\Omega_m(a)D = 0.
+]
+
+---
+
+# 4. Expansion History Results
+
+Pantheon+ and DESI datasets are fitted simultaneously.
+
+Recovered (\Lambda)CDM baseline:
+
+[
+\chi^2 \approx 834.07.
+]
+
+Empirical activation model:
+
+[
+\chi^2 \approx 820.98.
+]
+
+giving
+
+[
+\Delta\chi^2 \approx -13.
+]
+
+The expansion-history activation model produces a nearly identical fit
+
+[
+\chi^2 \approx 821.10.
+]
+
+---
+
+# 5. Equality-Tied Results
+
+For
+
+[
+u_s = \alpha u_{eq}
+]
+
+the best-fit parameters are
+
+[
+H_0 \approx 74.57,
+]
+
+[
+\Omega_m \approx 0.229,
+]
+
+[
+\alpha \approx 0.48.
+]
+
+This corresponds to
+
+[
+z_{eq} \approx 0.50
+]
+
+and
+
+[
+z_s \approx 0.21.
+]
+
+---
+
+# 6. Joint Cosmological Constraints
+
+The joint likelihood uses
+
+[
+\chi^2 = \chi^2_{SN} + \chi^2_{DESI} + \chi^2_{growth} + \chi^2_{CMB}.
+]
+
+The optimized equality-tied activation model gives
+
+[
+H_0 \approx 73.65
+]
+
+[
+\Omega_m \approx 0.256
+]
+
+[
+\alpha \approx 0.522
+]
+
+[
+r_d \approx 148.95.
+]
+
+Total fit:
+
+[
+\chi^2 \approx 853.30.
+]
+
+Relative to the recovered (\Lambda)CDM baseline:
+
+[
+\Delta\chi^2 \approx -26.67.
+]
+
+---
+
+# 7. Physical Interpretation
+
+The activation function
+
+[
+g(\mathcal L) = 1 - \exp\left[-\left(\frac{\mathcal L}{\mathcal L_s}\right)^\nu\right]
+]
+
+is the complement of a Weibull survival law.
+
+The inactive fraction is
+
+[
+S(\mathcal L) = 1 - g(\mathcal L)
+              = \exp\left[-\left(\frac{\mathcal L}{\mathcal L_s}\right)^\nu\right].
+]
+
+For cosmology
+
+[
+\mathcal L = \frac{\ln(1+z)}{u_s}.
+]
+
+The activation factor therefore represents the fraction of curvature-memory domains that have become dynamically active as cumulative expansion history increases.
+
+---
+
+# 8. Limiting Regimes
+
+At high redshift
+
+[
+g(z) \rightarrow 1.
+]
+
+Thus the expansion history approaches the standard matter-dominated behaviour.
+
+At low redshift
+
+[
+g(z) \approx \left(\frac{z}{u_s}\right)^\nu.
+]
+
+This produces a small suppression of the effective matter contribution near the present epoch.
+
+---
+
+# 9. Mathematical Structure of the Activation Law
+
+Define
+
+[
+M(\mathcal L) = -\ln(1-g).
+]
+
+Then
+
+[
+M(\mathcal L) = \left(\frac{\mathcal L}{\mathcal L_s}\right)^\nu.
+]
+
+Differentiating gives the scale-flow equation
+
+[
+\frac{dM}{d\ln \mathcal L} = \nu M.
+]
+
+The observable activation law therefore satisfies
+
+[
+\frac{dg}{d\mathcal L} = \nu \mathcal L^{\nu-1}(1-g).
+]
+
+---
+
+# 10. Conclusions
+
+We investigated a cosmological model in which the matter-sector contribution to the expansion rate is modulated by an activation function depending on accumulated expansion history.
+
+Key results:
+
+• Pantheon+ and DESI data favour the activation framework over the recovered (\Lambda)CDM baseline by (\Delta\chi^2 \approx -13)
+
+• Equality-tied activation provides a compact parametrization with
+
+[
+\alpha \approx 0.48 - 0.52
+]
+
+• The model remains consistent with Gold-2017 growth measurements.
+
+• The optimized equality-tied activation solution yields the lowest total (\chi^2) among the models tested.
+
+The preferred activation scale corresponds to a redshift
+
+[
+z_s \approx 0.21
+]
+
+occurring after matter–(\Lambda) equality near
+
+[
+z_{eq} \approx 0.50.
+]
+
+Further work is required to investigate the theoretical origin of the activation law and to test its consistency with full early-universe constraints.
+
+---
+
+# Acknowledgements
+
+The author thanks the open cosmological data releases used in this work, including Pantheon+, DESI, and the Gold-2017 growth compilation.
+
+---
+
+# Data and Code
+
+All numerical tests described in this work were performed using single-cell reproducible pipelines combining Pantheon+ SH0ES, DESI DR1 BAO measurements, Gold-2017 growth data, and the CMB shift-parameter prior used in the joint likelihood construction.
