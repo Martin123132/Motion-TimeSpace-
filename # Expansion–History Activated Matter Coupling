@@ -1,378 +1,375 @@
-# Expansion–History Activated Matter Coupling  
-## Tested Against Pantheon+ SH0ES, DESI DR1 BAO, Gold-2017 Growth Data, and a CMB Shift-Parameter Prior
+EXPANSION-HISTORY ACTIVATED MATTER COUPLING  
+Tested Against Pantheon+ SH0ES, DESI DR1 BAO, Gold-2017 Growth Data,  
+and a CMB Acoustic-Scale Constraint
 
 Author: Martin Ollett  
 Year: 2026
 
----
+============================================================
+ABSTRACT
+============================================================
 
-# Abstract
+We investigate a phenomenological cosmological framework in which the
+effective contribution of the matter sector to the late-time expansion
+history is modulated by an activation function derived from accumulated
+cosmological expansion history.
 
-We investigate a phenomenological cosmological framework in which the effective contribution of the matter sector to the expansion history is modulated by an activation function derived from accumulated expansion history. The model modifies the standard Friedmann background through a multiplicative activation factor (g(z)) applied to the matter density term,
+The Friedmann background is modified through a multiplicative
+activation factor g(z) applied to the matter density,
 
-[
-H(z)^2 = H_0^2 \left[\Omega_m (1+z)^3 g(z) + (1-\Omega_m)\right].
-]
+    H(z)^2 = H0^2 [ Ωm (1+z)^3 g(z) + (1 − Ωm) ].
 
-We test three representations of the activation behaviour using the Pantheon+ SH0ES Type Ia supernova sample, DESI DR1 baryon acoustic oscillation measurements, and the Gold-2017 compilation of growth-rate measurements (f\sigma_8).
+Three closely related representations of the activation law are
+considered:
 
-These are:
+1. empirical redshift activation  
+2. expansion-history activation using u = ln(1+z)  
+3. equality-tied activation linking the activation scale to the
+   matter–Λ equality epoch.
 
-1. Empirical redshift activation  
-2. Expansion-history activation using (u=\ln(1+z))  
-3. Equality-tied activation where the activation scale is linked to the matter–(\Lambda) equality epoch  
+The models are tested against the Pantheon+ SH0ES Type Ia supernova
+sample, DESI DR1 baryon acoustic oscillation measurements, the
+Gold-2017 growth-rate compilation, and a CMB acoustic-scale constraint.
 
-Using Pantheon+ and DESI data, the activation framework improves the late-time fit relative to the recovered (\Lambda)CDM baseline by
+A full joint inference over the parameter set
 
-[
-\Delta\chi^2 \approx -13.
-]
+    {H0, Ωm, α, ν, rd}
 
-When combined with the Gold-2017 growth dataset and a CMB shift-parameter prior, the equality-tied activation branch yields the lowest total (\chi^2) among the models tested, with optimized parameters
+yields the best-fit activation cosmology
 
-[
-H_0 \approx 73.65,\text{km s}^{-1}\text{Mpc}^{-1}, \quad
-\Omega_m \approx 0.256, \quad
-\alpha \approx 0.522, \quad
-r_d \approx 148.95,\text{Mpc}.
-]
+    H0 ≈ 72.32 km s⁻¹ Mpc⁻¹  
+    Ωm ≈ 0.231  
+    α  ≈ 0.482  
+    ν  ≈ 0.886  
+    rd ≈ 154.31 Mpc  
 
-The preferred activation scale corresponds to a transition occurring after matter–(\Lambda) equality at
+with total likelihood
 
-[
-z_s \approx 0.21.
-]
+    χ²_total ≈ 832.83.
 
-These results indicate that late-time expansion behaviour may be describable through a delayed response to accumulated expansion history rather than through a strictly constant dark-energy component.
+The activation transition occurs at
 
----
+    z_s ≈ 0.21,
 
-# 1. Introduction
+following matter–Λ equality at
 
-The standard (\Lambda)CDM cosmological model describes the late-time expansion of the Universe through a pressureless matter component and a constant dark-energy density. Despite its empirical success, the physical origin of the cosmological constant remains uncertain.
+    z_eq ≈ 0.49.
 
-This motivates exploration of alternative phenomenological descriptions of late-time expansion that preserve the successful structure of standard cosmology while modifying the way in which matter contributes to the background dynamics.
+The activation cosmology remains compatible with current growth-rate
+measurements and can be rewritten as an effective dynamical
+dark-energy sector with redshift-dependent equation of state determined
+entirely by the activation function.
 
-In this work we investigate a framework in which the effective gravitational contribution of the matter sector evolves through a delayed activation function.
+These results suggest that late-time cosmic expansion may be describable
+as a delayed response to accumulated expansion history rather than as
+the consequence of a strictly constant dark-energy component.
 
-The modified background expansion is written as
+============================================================
+1. INTRODUCTION
+============================================================
 
-[
-H(z)^2 = H_0^2 \left[\Omega_m (1+z)^3 g(z) + (1-\Omega_m)\right].
-]
+The standard ΛCDM cosmological model describes the late-time expansion
+of the Universe through cold matter and a constant vacuum-energy
+density.
 
-When (g(z)=1), the model reduces to the standard (\Lambda)CDM background.
+Although ΛCDM provides an excellent phenomenological description of a
+wide range of observations, the physical origin of the cosmological
+constant remains uncertain.
 
-The goal of this work is not to claim a complete replacement for standard cosmology, but to test whether a compact activation-law description can reproduce late-time expansion data at least as well as the recovered (\Lambda)CDM baseline.
+In this work we investigate an alternative phenomenological framework
+in which the effective gravitational contribution of the matter sector
+is modulated by a delayed activation process governed by accumulated
+expansion history.
 
----
+The modified Friedmann equation is
 
-# 2. Activation Framework
+    H(z)^2 = H0^2 [ Ωm (1+z)^3 g(z) + (1 − Ωm) ].
 
-We consider activation functions of the form
+When
 
-[
-g(z) = 1 - \exp[-u(z)^\nu]
-]
+    g(z) = 1,
 
-where (u(z)) is a loading variable describing accumulated expansion history.
+the model reduces to the standard ΛCDM background.
 
----
+============================================================
+2. ACTIVATION FRAMEWORK
+============================================================
 
-## 2.1 Empirical Redshift Activation
+We consider a stretched-exponential activation law
 
-The empirical activation law is
+    g(z) = 1 − exp[ −u(z)^ν ],
 
-[
-g(z) = 1 - \exp\left[-\left(\frac{z}{z_s x_0}\right)^\nu\right].
-]
+where ν is a shape parameter and u(z) is a dimensionless loading
+variable describing accumulated expansion history.
 
----
+------------------------------------------------------------
+2.1 Empirical redshift activation
+------------------------------------------------------------
 
-## 2.2 Expansion-History Activation
+The phenomenological form
 
-A more physically motivated loading variable is
+    g(z) = 1 − exp[ −( z / (z_s x0) )^ν ]
 
-[
-u(z) = \ln(1+z).
-]
+introduces an activation scale z_s.
 
-The activation law becomes
+------------------------------------------------------------
+2.2 Expansion-history activation
+------------------------------------------------------------
 
-[
-g(z) = 1 - \exp\left[-\left(\frac{\ln(1+z)}{u_s}\right)^\nu\right].
-]
+A physically motivated loading variable is
 
----
-
-## 2.3 Equality-Tied Activation Scale
-
-Matter–(\Lambda) equality satisfies
-
-[
-\Omega_m (1+z_{eq})^3 = 1 - \Omega_m
-]
-
-which gives
-
-[
-u_{eq} = \frac{1}{3}\ln\left(\frac{1-\Omega_m}{\Omega_m}\right).
-]
-
-The activation scale is parameterized as
-
-[
-u_s = \alpha u_{eq}.
-]
-
----
-
-# 3. Observational Datasets
-
-Three late-time probes are used.
-
-Pantheon+ SH0ES supernova sample
-
-1701 Type Ia supernovae providing distance moduli (\mu(z)).
-
-DESI DR1 BAO measurements
-
-Anisotropic BAO constraints on (D_M/r_d) and (D_H/r_d).
-
-Gold-2017 growth dataset
-
-18 measurements of (f\sigma_8(z)).
-
-The growth equation used is
-
-[
-D'' + \left[2 + \frac{d\ln H}{d\ln a}\right]D'
-- \frac{3}{2}\Omega_m(a)D = 0.
-]
-
----
-
-# 4. Expansion History Results
-
-Pantheon+ and DESI datasets are fitted simultaneously.
-
-Recovered (\Lambda)CDM baseline:
-
-[
-\chi^2 \approx 834.07.
-]
-
-Empirical activation model:
-
-[
-\chi^2 \approx 820.98.
-]
+    u(z) = ln(1+z) / u_s
 
 giving
 
-[
-\Delta\chi^2 \approx -13.
-]
+    g(z) = 1 − exp[ −( ln(1+z) / u_s )^ν ].
 
-The expansion-history activation model produces a nearly identical fit
+------------------------------------------------------------
+2.3 Equality-tied activation
+------------------------------------------------------------
 
-[
-\chi^2 \approx 821.10.
-]
+Matter–Λ equality satisfies
 
----
+    Ωm (1+z_eq)^3 = 1 − Ωm.
 
-# 5. Equality-Tied Results
+This implies
+
+    u_eq = (1/3) ln[(1 − Ωm)/Ωm].
+
+The activation scale is parameterized as
+
+    u_s = α u_eq.
+
+============================================================
+3. CONSTITUTIVE FORM OF THE ACTIVATION LAW
+============================================================
+
+Define the inactive fraction
+
+    S(u) = 1 − g(u)
+
+and introduce the hidden memory amplitude
+
+    M(u) = −ln[1 − g(u)].
+
+If the hidden load obeys
+
+    M(u) = u^ν
+
+then
+
+    g(u) = 1 − exp(−u^ν).
+
+Differentiating yields
+
+    dg/du = ν u^(ν−1) (1 − g).
+
+This is a first-order saturating activation equation.
+
+The same functional form appears if activation thresholds follow a
+Weibull survival distribution
+
+    P(λ > u) = exp(−u^ν).
+
+============================================================
+4. OBSERVATIONAL DATASETS
+============================================================
+
+The analysis uses four late-time probes.
+
+Pantheon+ SH0ES  
+    1701 Type Ia supernovae providing distance moduli μ(z).
+
+DESI DR1 BAO  
+    measurements of DM/rd, DH/rd and DV/rd.
+
+Gold-2017 growth  
+    18 measurements of fσ8(z).
+
+CMB acoustic-scale constraint  
+    ℓ_A ≈ 301.47.
+
+The combined likelihood is
+
+    χ²_total = χ²_SN + χ²_BAO + χ²_growth + χ²_CMB.
+
+============================================================
+5. EXPANSION-HISTORY FITS
+============================================================
+
+Joint Pantheon+ and DESI analysis gives
+
+    ΛCDM baseline          χ² ≈ 834.07  
+    empirical activation   χ² ≈ 820.98  
+    expansion-history      χ² ≈ 821.10
+
+corresponding to
+
+    Δχ² ≈ −13.
+
+============================================================
+6. EQUALITY-TIED ACTIVATION RESULTS
+============================================================
 
 For
 
-[
-u_s = \alpha u_{eq}
-]
+    u_s = α u_eq
 
-the best-fit parameters are
+the preferred parameters are
 
-[
-H_0 \approx 74.57,
-]
+    H0 ≈ 74.57 km s⁻¹ Mpc⁻¹  
+    Ωm ≈ 0.229  
+    α  ≈ 0.48
 
-[
-\Omega_m \approx 0.229,
-]
+implying
 
-[
-\alpha \approx 0.48.
-]
+    z_eq ≈ 0.49  
+    z_s ≈ 0.21.
 
-This corresponds to
+============================================================
+7. LINEAR GROWTH TEST
+============================================================
 
-[
-z_{eq} \approx 0.50
-]
+Linear growth obeys
 
-and
+    D'' + [2 + d ln H / d ln a] D'
+       − (3/2) Ωm(a) D = 0.
 
-[
-z_s \approx 0.21.
-]
+Observed
 
----
+    fσ8(z) = σ8,0 f(z) D(z).
 
-# 6. Joint Cosmological Constraints
+Fits give
 
-The joint likelihood uses
+    ΛCDM           χ² ≈ 14.21  
+    MTS baseline   χ² ≈ 12.52  
+    equality-tied  χ² ≈ 12.63.
 
-[
-\chi^2 = \chi^2_{SN} + \chi^2_{DESI} + \chi^2_{growth} + \chi^2_{CMB}.
-]
+============================================================
+8. JOINT COSMOLOGICAL CONSTRAINTS
+============================================================
 
-The optimized equality-tied activation model gives
+Joint inference combining supernovae, BAO, growth, and CMB acoustic
+scale explores the parameter set
 
-[
-H_0 \approx 73.65
-]
+    {H0, Ωm, α, ν, rd}.
 
-[
-\Omega_m \approx 0.256
-]
+Optimization converges to
 
-[
-\alpha \approx 0.522
-]
+    H0   = 72.32  
+    Ωm   = 0.231  
+    α    = 0.482  
+    ν    = 0.886  
+    rd   = 154.31 Mpc.
 
-[
-r_d \approx 148.95.
-]
+Likelihood decomposition:
 
-Total fit:
+                SN        BAO       Growth      CMB      Total
+----------------------------------------------------------------
+Best-fit MTS  809.15     11.91      11.76       0.00     832.83
 
-[
-\chi^2 \approx 853.30.
-]
+The acoustic scale is reproduced accurately
 
-Relative to the recovered (\Lambda)CDM baseline:
+    ℓ_A ≈ 301.47.
 
-[
-\Delta\chi^2 \approx -26.67.
-]
+============================================================
+8.4 Sensitivity to the activation exponent
+============================================================
 
----
+Exploratory scans previously suggested values between
 
-# 7. Physical Interpretation
+    ν ≈ 0.82 – 0.94.
+
+Allowing ν to vary freely in the full joint inference yields
+
+    ν ≈ 0.886.
+
+This value lies between the galactic mastercurve estimate
+(ν ≈ 0.942) and the cosmology-only minimum (ν ≈ 0.82).
+
+============================================================
+9. EFFECTIVE DARK-ENERGY INTERPRETATION
+============================================================
+
+The model can be written
+
+    H^2(z) = H0^2 [ Ωm (1+z)^3 + ρ_DE^eff(z) ]
+
+with
+
+    ρ_DE^eff(z)
+      = (1 − Ωm) − Ωm (1+z)^3 [1 − g(z)].
+
+Equation of state
+
+    w_eff(z)
+      = -1 + (1+z)/(3ρ_DE^eff) dρ_DE^eff/dz.
+
+============================================================
+10. LIMITING REGIMES
+============================================================
+
+Early time
+
+    g(z) → 1.
+
+Present epoch
+
+    g(0) = 0.
+
+Small redshift
+
+    g(z) ≈ (z/u_s)^ν.
+
+============================================================
+11. PHYSICAL INTERPRETATION
+============================================================
 
 The activation function
 
-[
-g(\mathcal L) = 1 - \exp\left[-\left(\frac{\mathcal L}{\mathcal L_s}\right)^\nu\right]
-]
+    g(u) = 1 − exp(−u^ν)
 
-is the complement of a Weibull survival law.
+is equivalent to the cumulative response of a Weibull threshold
+ensemble.
 
-The inactive fraction is
+The loading variable
 
-[
-S(\mathcal L) = 1 - g(\mathcal L)
-              = \exp\left[-\left(\frac{\mathcal L}{\mathcal L_s}\right)^\nu\right].
-]
+    u(z) = ln(1+z)/u_s
 
-For cosmology
+represents accumulated expansion history.
 
-[
-\mathcal L = \frac{\ln(1+z)}{u_s}.
-]
+The activation factor therefore corresponds to the fraction of
+curvature-memory domains activated by cumulative cosmological exposure.
 
-The activation factor therefore represents the fraction of curvature-memory domains that have become dynamically active as cumulative expansion history increases.
+============================================================
+12. CONCLUSIONS
+============================================================
 
----
+We have investigated a cosmological model in which the effective
+contribution of the matter sector to the expansion history is
+modulated by a stretched-exponential activation law.
 
-# 8. Limiting Regimes
+Main results:
 
-At high redshift
+• Pantheon+ and DESI favour the activation model by Δχ² ≈ −13.
 
-[
-g(z) \rightarrow 1.
-]
+• Activation transition  
+      z_s ≈ 0.21.
 
-Thus the expansion history approaches the standard matter-dominated behaviour.
+• Full joint inference yields
 
-At low redshift
+      H0 ≈ 72.32  
+      Ωm ≈ 0.231  
+      α  ≈ 0.482  
+      ν  ≈ 0.886  
+      rd ≈ 154.31 Mpc.
 
-[
-g(z) \approx \left(\frac{z}{u_s}\right)^\nu.
-]
+• Total likelihood
 
-This produces a small suppression of the effective matter contribution near the present epoch.
+      χ²_total ≈ 832.83.
 
----
-
-# 9. Mathematical Structure of the Activation Law
-
-Define
-
-[
-M(\mathcal L) = -\ln(1-g).
-]
-
-Then
-
-[
-M(\mathcal L) = \left(\frac{\mathcal L}{\mathcal L_s}\right)^\nu.
-]
-
-Differentiating gives the scale-flow equation
-
-[
-\frac{dM}{d\ln \mathcal L} = \nu M.
-]
-
-The observable activation law therefore satisfies
-
-[
-\frac{dg}{d\mathcal L} = \nu \mathcal L^{\nu-1}(1-g).
-]
-
----
-
-# 10. Conclusions
-
-We investigated a cosmological model in which the matter-sector contribution to the expansion rate is modulated by an activation function depending on accumulated expansion history.
-
-Key results:
-
-• Pantheon+ and DESI data favour the activation framework over the recovered (\Lambda)CDM baseline by (\Delta\chi^2 \approx -13)
-
-• Equality-tied activation provides a compact parametrization with
-
-[
-\alpha \approx 0.48 - 0.52
-]
-
-• The model remains consistent with Gold-2017 growth measurements.
-
-• The optimized equality-tied activation solution yields the lowest total (\chi^2) among the models tested.
-
-The preferred activation scale corresponds to a redshift
-
-[
-z_s \approx 0.21
-]
-
-occurring after matter–(\Lambda) equality near
-
-[
-z_{eq} \approx 0.50.
-]
-
-Further work is required to investigate the theoretical origin of the activation law and to test its consistency with full early-universe constraints.
-
----
-
-# Acknowledgements
-
-The author thanks the open cosmological data releases used in this work, including Pantheon+, DESI, and the Gold-2017 growth compilation.
-
----
-
-# Data and Code
-
-All numerical tests described in this work were performed using single-cell reproducible pipelines combining Pantheon+ SH0ES, DESI DR1 BAO measurements, Gold-2017 growth data, and the CMB shift-parameter prior used in the joint likelihood construction.
+The activation cosmology therefore provides a compact description of
+late-time expansion in which the effective gravitational influence of
+the matter sector evolves in response to accumulated expansion history.
+Further work will explore the deeper theoretical origin of the
+activation law and its implications for early-universe physics.
