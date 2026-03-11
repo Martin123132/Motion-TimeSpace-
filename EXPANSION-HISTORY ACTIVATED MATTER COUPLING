@@ -355,13 +355,147 @@ This modification reduces the predicted clustering amplitude to
 
 while leaving the background expansion history essentially unchanged.
 
+
 ============================================================
-13. CONCLUSIONS
+13. DERIVATION OF THE ACTIVATION LAW FROM A THRESHOLD ENSEMBLE
 ============================================================
 
-We have investigated a cosmological model in which the effective
-contribution of the matter sector to the expansion history is modulated
-by a stretched-exponential activation law.
+The activation function used throughout this work,
+
+    g(u) = 1 − exp(−u^ν),
+
+can be interpreted as the cumulative response of an ensemble of
+domains that activate once a cumulative loading variable exceeds a
+local threshold.
+
+------------------------------------------------------------
+13.1 Threshold ensemble description
+------------------------------------------------------------
+
+Consider a population of curvature-response domains indexed by i,
+each characterized by an activation threshold λ_i.
+
+Activation occurs when the cumulative loading variable u exceeds the
+local threshold,
+
+    u ≥ λ_i.
+
+The macroscopic activated fraction of domains is therefore
+
+    g(u) = P(λ ≤ u),
+
+where P is the cumulative distribution function of the threshold
+ensemble.
+
+Equivalently, the inactive fraction is
+
+    1 − g(u) = P(λ > u).
+
+------------------------------------------------------------
+13.2 Weibull threshold distribution
+------------------------------------------------------------
+
+If the activation thresholds follow a Weibull distribution, the
+survival probability of the threshold ensemble is
+
+    P(λ > u) = exp(−u^ν),
+
+where ν is the shape parameter describing the breadth of the threshold
+distribution.
+
+The cumulative activated fraction becomes
+
+    g(u) = 1 − exp(−u^ν).
+
+Thus the stretched-exponential activation law arises naturally as the
+cumulative response of a heterogeneous threshold ensemble.
+
+------------------------------------------------------------
+13.3 Interpretation of the exponent
+------------------------------------------------------------
+
+The exponent ν characterizes the distribution of activation
+thresholds.
+
+For
+
+    ν = 1
+
+the activation law reduces to a simple exponential response with a
+single characteristic activation scale.
+
+For
+
+    ν < 1
+
+the activation becomes stretched exponential, indicating a broad
+distribution of thresholds and a delayed cumulative activation
+process.
+
+The cosmological fits obtained in this work give
+
+    ν ≈ 0.886,
+
+placing the system within the stretched-exponential regime.
+
+------------------------------------------------------------
+13.4 Cosmological loading variable
+------------------------------------------------------------
+
+To apply the threshold ensemble framework to cosmology we introduce a
+loading variable measuring accumulated expansion history,
+
+    u(z) = ln(1+z) / u_s.
+
+The parameter u_s sets the characteristic loading scale.
+
+In the equality-tied formulation used here the scale is related to
+the matter–Λ equality epoch,
+
+    u_s = α u_eq
+
+with
+
+    u_eq = (1/3) ln[(1 − Ω_m)/Ω_m].
+
+------------------------------------------------------------
+13.5 Activated curvature-domain fraction
+------------------------------------------------------------
+
+Combining the threshold ensemble with the cosmological loading
+variable yields
+
+    g(z) = 1 − exp[−( ln(1+z) / u_s )^ν].
+
+The activation fraction therefore describes the proportion of
+curvature-response domains participating in the effective matter
+sector at redshift z.
+
+------------------------------------------------------------
+13.6 Background interpretation
+------------------------------------------------------------
+
+The Friedmann equation becomes
+
+    H^2(z) = H0^2 [ Ω_m (1+z)^3 g(z) + (1 − Ω_m) ].
+
+At high redshift
+
+    u → ∞
+    g → 1
+
+and the standard matter-dominated behaviour is recovered.
+
+At late times the activated fraction decreases, producing a reduced
+effective matter contribution and an apparent dark-energy component.
+
+============================================================
+14. CONCLUSIONS
+============================================================
+
+We have investigated a cosmological framework in which the effective
+contribution of the matter sector to the expansion history is
+modulated by a stretched-exponential activation law.
 
 Main results:
 
@@ -371,9 +505,9 @@ Main results:
 
       z_s ≈ 0.21.
 
-• Full joint inference yields
+• Joint inference yields
 
-      Ωm ≈ 0.231
+      Ω_m ≈ 0.231
       α  ≈ 0.483
       ν  ≈ 0.886.
 
@@ -386,11 +520,13 @@ Main results:
       ε ≈ 0.065–0.09
 
   resolves the clustering-amplitude excess while leaving the
-  expansion history stable.
+  background expansion essentially unchanged.
 
 The activation cosmology therefore provides a compact description of
 late-time expansion in which the effective gravitational influence of
-the matter sector evolves in response to accumulated expansion history.
+the matter sector evolves in response to accumulated expansion
+history.
 
-Further work will explore the deeper theoretical origin of the
-activation law and its implications for early-universe physics.
+Further work will investigate the deeper theoretical origin of the
+activation mechanism and its implications for early-universe physics.
+
