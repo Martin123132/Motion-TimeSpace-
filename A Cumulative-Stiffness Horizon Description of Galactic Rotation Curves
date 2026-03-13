@@ -1,0 +1,344 @@
+# A Cumulative-Stiffness Horizon Description of Galactic Rotation Curves
+
+Author: Martin Ollett
+Year: 2026
+
+
+------------------------------------------------------------
+ABSTRACT
+------------------------------------------------------------
+
+We investigate galactic rotation curves using a cumulative-stiffness
+framework motivated by Motion–TimeSpace (MTS). In this approach the
+relevant structural quantity is not an added halo profile, but the
+cumulative radial loading of a baryonic stiffness field.
+
+Across a resolved SPARC sample, rotation curves collapse onto a
+universal mastercurve when written in scaled variables
+
+    x = r / R_s
+    y = V / V_inf
+
+The characteristic turnover radius R_s is then found to obey a
+cumulative horizon law governed by the baryonic stiffness budget.
+
+The leading empirical result is that the turnover condition is well
+described by
+
+    S(R_s) = f_h0 S_tot exp[a (μ_S − μ_S0)]
+
+where
+
+    S(r)   = ∫ m(s) ds
+    S_tot  = S(r_max)
+    μ_S    = d ln S / d ln r
+
+measured near the turnover region.
+
+The data support characteristic values
+
+    f_h0 ≈ 0.16–0.20
+    a    ≈ −0.6
+
+The coefficient a is not inserted ad hoc. It follows from the measured
+stiffness span across the turnover band of the mastercurve
+
+    0.67 R_s  ≲  r  ≲  1.5 R_s
+
+giving
+
+    a ≈ − Δ ln S_turn / μ_S0
+
+The horizon fraction f_h0 is also naturally linked to the exponential
+turnover structure of the mastercurve, corresponding to the
+unsaturated fraction
+
+    exp(−z*)
+
+with
+
+    z* ≈ 1.6–1.8
+
+which yields
+
+    f_h0 ≈ 0.16–0.20.
+
+These results support the interpretation that galactic turnover radii
+behave as cumulative-stiffness horizons set by baryonic structure.
+
+
+------------------------------------------------------------
+1. INTRODUCTION
+------------------------------------------------------------
+
+Standard interpretations of galaxy rotation curves introduce a dark
+matter halo whose structural parameters are adjusted to reproduce the
+observed velocity profile.
+
+An alternative possibility is that the organizing variable is the
+cumulative baryonic structure itself.
+
+The working hypothesis explored here is that galaxies admit a
+cumulative-stiffness description: baryonic structure loads an
+effective stiffness field and the observed turnover radius corresponds
+to a horizon in the accumulated stiffness rather than a separate halo
+component.
+
+The central task is therefore to identify the structural law that
+determines the turnover scale R_s.
+
+
+------------------------------------------------------------
+2. BARYONIC STIFFNESS FIELD
+------------------------------------------------------------
+
+We define a baryonic stiffness kernel
+
+    m(r) = V_b(r) / (r + r_c)^α
+
+where the baryonic velocity contribution is
+
+    V_b²(r) =
+        V_gas²(r)
+      + V_disk²(r)
+      + V_bulge²(r)
+
+The cumulative stiffness profile is
+
+    S(r) = ∫_0^r m(s) ds
+
+and the total stiffness budget
+
+    S_tot = S(r_max)
+
+This construction uses only observed baryonic structure and produces a
+monotonic cumulative field.
+
+
+------------------------------------------------------------
+3. UNIVERSAL ROTATION-CURVE MASTERCURVE
+------------------------------------------------------------
+
+Across the resolved sample rotation curves collapse when expressed in
+normalized variables
+
+    x = r / R_s
+    y = V(r) / V_inf
+
+The universal shape is well described by
+
+    y(x) = 1 − exp[ − (x / x0)^ν ]
+
+with fitted parameters approximately
+
+    x0 ≈ 0.97
+    ν  ≈ 0.94
+
+This mastercurve provides the operational definition of the turnover
+scale R_s.
+
+
+------------------------------------------------------------
+4. FIXED-FRACTION HORIZON TEST
+------------------------------------------------------------
+
+A natural first test is whether the turnover occurs at a fixed
+fraction of the total cumulative stiffness budget
+
+    S(R_s) = f S_tot
+
+Across the resolved sample
+
+    S(R_s) / S_tot
+
+clusters around
+
+    f_h0 ≈ 0.16
+
+However the fraction is not perfectly constant. Residuals correlate
+with both the total stiffness scale and the local stiffness slope.
+
+This indicates that the fixed-fraction law is only the leading
+approximation but that R_s still behaves as a cumulative horizon of
+the baryonic stiffness field.
+
+
+------------------------------------------------------------
+5. LOCAL STIFFNESS SLOPE
+------------------------------------------------------------
+
+Define the logarithmic slope of the cumulative stiffness field
+
+    μ_S = d ln S / d ln r
+
+measured near the turnover region.
+
+Empirically residuals from the fixed-fraction model correlate with
+μ_S, indicating that the horizon location depends not only on the
+total stiffness budget but also on the rate at which stiffness
+accumulates near the turnover.
+
+
+------------------------------------------------------------
+6. TWO-VARIABLE HORIZON LAW
+------------------------------------------------------------
+
+The resolved sample is well described by
+
+    S(R_s) = f_h0 S_tot exp[a (μ_S − μ_S0)]
+
+where μ_S0 is the median slope of the sample.
+
+Typical values are
+
+    μ_S0 ≈ 1.32–1.40
+    a    ≈ −0.6
+
+This correction removes the residual bias with μ_S and significantly
+improves prediction of the turnover radius.
+
+
+------------------------------------------------------------
+7. TURNOVER-WIDTH ORIGIN OF a
+------------------------------------------------------------
+
+Near the turnover radius the cumulative field may be written locally
+
+    S(r) ≈ S(R_s) (r / R_s)^μ_S
+
+A change in μ_S alters the rate at which the cumulative field reaches
+the same horizon level.
+
+Requiring the same geometric turnover state yields the first-order
+correction
+
+    a ≈ − Δ ln S_turn / μ_S0
+
+where Δ ln S_turn is the cumulative stiffness span across the active
+turnover zone.
+
+The turnover-width scan identifies the effective window
+
+    0.67 R_s  ≲  r  ≲  1.5 R_s
+
+Across this window
+
+    Δ ln S_turn ≈ 0.87
+    μ_S0        ≈ 1.32
+
+giving
+
+    a_pred ≈ −0.66
+
+consistent with the fitted value
+
+    a ≈ −0.60
+
+
+------------------------------------------------------------
+8. ORIGIN OF THE HORIZON FRACTION
+------------------------------------------------------------
+
+The mastercurve
+
+    y = 1 − exp(−z)
+
+implies that the unsaturated remainder is
+
+    1 − y = exp(−z)
+
+At the upper end of the active turnover region
+
+    z* ≈ 1.6–1.8
+
+so
+
+    exp(−z*) ≈ 0.16–0.20
+
+This matches the observed cumulative horizon fraction
+
+    S(R_s) / S_tot ≈ 0.16–0.20
+
+Thus the stiffness horizon fraction naturally reflects the exponential
+turnover structure of the universal rotation-curve mastercurve.
+
+
+------------------------------------------------------------
+9. PREDICTIVE INTERPRETATION
+------------------------------------------------------------
+
+The current structural interpretation is:
+
+1. Galaxies possess a cumulative baryonic stiffness field S(r).
+2. The turnover radius occurs when this field reaches a horizon level.
+3. The horizon level is a fraction of the total stiffness budget.
+4. The fraction is modulated by the local stiffness slope μ_S.
+5. The modulation amplitude follows from the turnover width of the
+   universal mastercurve.
+
+The resulting structural law is
+
+    S(R_s) = f_h0 S_tot exp[a (μ_S − μ_S0)]
+
+with
+
+    f_h0 ≈ 0.16–0.20
+    a    ≈ −0.6
+
+
+------------------------------------------------------------
+10. CURRENT STATUS
+------------------------------------------------------------
+
+Established results:
+
+• rotation curves collapse to a universal mastercurve  
+• turnover radii behave as cumulative-stiffness horizons  
+• the leading horizon fraction is ≈0.16–0.20  
+• residual drift is controlled by the local stiffness slope  
+• the correction coefficient follows from turnover-width geometry  
+
+Open problems:
+
+• remaining dependence on global stiffness scale  
+• first-principles origin of the stiffness kernel  
+• embedding into the full MTS motion-field framework
+
+
+------------------------------------------------------------
+11. REPRODUCIBILITY
+------------------------------------------------------------
+
+Pipeline:
+
+1. Fit each galaxy with the universal mastercurve to obtain R_s and V_inf
+2. Construct the baryonic stiffness kernel m(r)
+3. Integrate to obtain S(r)
+4. Evaluate S(R_s), S_tot, and μ_S
+5. Test the fixed-fraction horizon law
+6. Add the slope correction
+7. Compare analytic coefficient from turnover-width scan
+
+
+------------------------------------------------------------
+12. CHECKPOINT CONCLUSION
+------------------------------------------------------------
+
+Galactic turnover radii are organized by a cumulative-stiffness
+horizon law rather than by an independent halo profile.
+
+The present checkpoint relation is
+
+    S(R_s) = f_h0 S_tot exp[a (μ_S − μ_S0)]
+
+with
+
+    f_h0 ≈ 0.2
+    a    ≈ −0.6
+
+Both numbers arise from the geometry of the universal rotation-curve
+mastercurve.
+
+This provides a coherent intermediate result for the galaxy branch of
+the MTS cumulative-stiffness framework.
+
