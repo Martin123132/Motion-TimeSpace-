@@ -1,0 +1,461 @@
+A Cumulative-Stiffness Description of Galactic Rotation Curves
+===============================================================
+
+Author: Martin Ollett
+Year: 2026
+
+
+------------------------------------------------------------
+ABSTRACT
+------------------------------------------------------------
+
+We investigate a geometric description of galactic rotation curves
+based on a spatial stiffness field m(r) whose cumulative integral
+determines the gravitational response. In this framework the
+physically relevant quantity is the cumulative stiffness
+
+    S(r) = ∫₀ʳ m(s) ds
+
+which represents the integrated curvature-memory load of the
+gravitational field.
+
+We show that if the normalized rotational velocity follows an
+exponential saturation in cumulative stiffness
+
+    V(r)/V_inf = 1 − exp[−S(r)/S_c],
+
+then the empirically observed master curve of galaxy rotation curves
+
+    V(r)/V_inf = 1 − exp[−(r/(R_s x₀))^ν]
+
+arises when the cumulative stiffness behaves approximately as a power
+law S(r) ∝ r^ν across the observed radial window.
+
+Testing this hypothesis against SPARC galaxy radii shows that the
+observed exponent ν ≈ 0.94 corresponds to a nearly constant stiffness
+field with a mild outward decline m(r) ∝ r^−0.06. Exponential-core and
+density-coupled stiffness profiles derived from the Motion–TimeSpace
+(MTS) framework produce similar effective exponents over finite radial
+ranges.
+
+These results show that the stretched-exponential master curve of
+galaxy rotation curves can arise directly from cumulative geometric
+stiffness rather than requiring additional dynamical mass components.
+
+
+
+------------------------------------------------------------
+1. INTRODUCTION
+------------------------------------------------------------
+
+Galaxy rotation curves exhibit a characteristic universal structure
+when scaled by the asymptotic velocity V_inf and turnover radius R_s.
+
+Empirically, normalized rotation curves collapse onto a stretched
+exponential master curve
+
+    V(r)/V_inf = 1 − exp[−(r/(R_s x₀))^ν].
+
+The origin of this functional form is usually treated as empirical.
+
+In this work we show that the same structure emerges naturally from a
+cumulative-stiffness description of gravity in which the physically
+relevant quantity is the integrated curvature stiffness
+
+    S(r) = ∫₀ʳ m(s) ds.
+
+Within this framework the stretched-exponential master curve arises
+when orbital velocity saturates exponentially with accumulated
+stiffness and when cumulative stiffness grows approximately as a
+power law across the observed radial range.
+
+
+
+------------------------------------------------------------
+2. THEORY
+------------------------------------------------------------
+
+2.1 The stiffness field
+
+In the MTS curvature-memory framework gravitational dynamics are
+governed by a spatial stiffness field
+
+    m(r)
+
+which determines how curvature accumulates with distance.
+
+The cumulative stiffness is
+
+    S(r) = ∫₀ʳ m(s) ds.
+
+This quantity measures the integrated geometric load experienced by
+the curvature field.
+
+
+2.2 Saturation response
+
+We assume the normalized rotational velocity responds to cumulative
+stiffness through exponential saturation
+
+    V(r)/V_inf = 1 − exp[−S(r)/S_c].
+
+This expresses the idea that orbital velocity approaches an asymptotic
+limit once sufficient cumulative curvature stiffness has accumulated.
+
+
+2.3 Emergence of the master curve
+
+If cumulative stiffness behaves approximately as
+
+    S(r) ∝ r^ν
+
+over the observational radial window, then the saturation law becomes
+
+    V(r)/V_inf = 1 − exp[−(r/(R_s x₀))^ν].
+
+This is exactly the stretched-exponential master curve observed in
+rotation-curve analyses.
+
+
+2.4 Relation between stiffness and exponent
+
+From
+
+    S(r) = ∫₀ʳ m(s) ds
+
+the local stiffness is
+
+    m(r) = dS/dr.
+
+If
+
+    S(r) ∝ r^ν
+
+then
+
+    m(r) ∝ r^(ν−1).
+
+Equivalently
+
+    ν_eff(r) = d ln S / d ln r
+             = r m(r) / S(r).
+
+For the observed exponent
+
+    ν ≈ 0.94
+
+the implied stiffness slope is
+
+    m(r) ∝ r^−0.06.
+
+Thus the observed master-curve exponent corresponds to a nearly
+constant stiffness field with a shallow outward decline.
+
+
+
+------------------------------------------------------------
+3. CANDIDATE STIFFNESS PROFILES
+------------------------------------------------------------
+
+Three stiffness families arise naturally within the MTS framework.
+
+
+3.1 Power-law stiffness
+
+    m(r) = m₀ r^−p
+
+giving
+
+    S(r) ∝ r^(1−p)
+
+and therefore
+
+    ν = 1 − p.
+
+Matching
+
+    ν ≈ 0.94
+
+implies
+
+    p ≈ 0.06.
+
+
+
+3.2 Exponential-core stiffness
+
+    m(r) = m_inf + Δm exp(−r/R_s)
+
+with cumulative stiffness
+
+    S(r) = m_inf r + Δm R_s (1 − exp(−r/R_s)).
+
+Across finite radial ranges this profile generates effective exponents
+slightly below unity.
+
+
+
+3.3 Density-coupled stiffness
+
+Screened-curvature dynamics suggest
+
+    m(ρ) = m₀ √(1 + β ρ/ρ_ref).
+
+For an exponential baryonic density
+
+    ρ(r) = ρ₀ exp(−r/R_d)
+
+this produces
+
+    m(r) ≈ m₀ [1 + (B/2) exp(−r/R_d)]
+
+and cumulative stiffness
+
+    S(r) ≈ m₀ r + (m₀ B R_d /2)(1 − exp(−r/R_d)).
+
+
+
+------------------------------------------------------------
+4. DATA
+------------------------------------------------------------
+
+The analysis uses the SPARC galaxy database containing high-quality
+rotation curves and baryonic mass models.
+
+For each galaxy we use
+
+    • measured radii
+    • baryonic velocity components
+    • fitted turnover radius R_s.
+
+Galaxies with insufficient sampling were excluded, leaving
+
+    N = 70 galaxies.
+
+
+
+------------------------------------------------------------
+5. EMPIRICAL TESTS
+------------------------------------------------------------
+
+For each candidate stiffness profile we compute
+
+    S(r) = ∫₀ʳ m(s) ds
+
+and fit
+
+    log S = A + ν log r
+
+across the observed radial window.
+
+The fitted exponent ν determines whether cumulative stiffness follows
+the scaling required to produce the master curve.
+
+
+
+------------------------------------------------------------
+6. RESULTS
+------------------------------------------------------------
+
+Fitted exponents for the three stiffness models:
+
+    Model                               Median ν
+    ------------------------------------------------
+    power-law stiffness                  0.940
+    density-coupled stiffness            0.947
+    exponential-core stiffness           0.950
+
+The power-law stiffness reproduces the observed exponent exactly,
+while the other physically motivated profiles generate similar
+effective exponents across the SPARC radial window.
+
+
+
+------------------------------------------------------------
+7. DISCUSSION
+------------------------------------------------------------
+
+7.1 Interpretation of the exponent
+
+The observed master-curve exponent
+
+    ν ≈ 0.94
+
+implies
+
+    S(r) ∼ r^0.94
+
+and therefore
+
+    m(r) ∼ r^−0.06.
+
+Thus the stiffness field is nearly constant with radius with a mild
+outward decline.
+
+
+7.2 Physical interpretation
+
+This behaviour is consistent with
+
+    • shallow background stiffness
+    • finite inner stiffness excess
+    • density-coupled curvature stiffness.
+
+All three mechanisms produce cumulative stiffness growth that is
+close to linear but slightly sublinear.
+
+
+7.3 Connection to baryonic loading
+
+The empirical local stiffness field recovered in the Colab tests is
+
+    m(r) ∝ g_b(r)^γ
+
+with
+
+    γ ≈ 0.296.
+
+If baryonic acceleration behaves approximately as
+
+    g_b(r) ∝ r^−q
+
+then
+
+    m(r) ∝ r^(−γ q).
+
+Thus
+
+    ν = 1 − γ q.
+
+
+
+------------------------------------------------------------
+8. TESTABLE PREDICTIONS
+------------------------------------------------------------
+
+The cumulative-stiffness framework predicts
+
+    ν = 1 − γ q
+
+linking the master-curve exponent to the baryonic acceleration slope.
+
+Consequences:
+
+1. galaxies with steeper baryonic acceleration profiles should exhibit
+   smaller ν
+
+2. galaxies with extended baryonic disks should produce ν closer to 1
+
+3. deviations from the master curve correspond to local variations in
+
+       ν_eff(r) = r m(r) / S(r).
+
+
+
+------------------------------------------------------------
+9. CONCLUSION
+------------------------------------------------------------
+
+A cumulative-stiffness description of gravity naturally generates the
+empirical master curve of galactic rotation curves.
+
+The chain
+
+    m(r)
+      ↓
+    S(r) = ∫₀ʳ m(s) ds
+      ↓
+    V(r)/V_inf
+
+produces the observed stretched-exponential velocity profile when
+cumulative stiffness behaves approximately as
+
+    S(r) ∼ r^0.94.
+
+This corresponds to a nearly constant gravitational stiffness field
+with a mild outward decline.
+
+
+
+------------------------------------------------------------
+APPENDIX A — METHODS AND COLAB TESTS
+------------------------------------------------------------
+
+Numerical tests were performed using SPARC galaxy data within Google
+Colab.
+
+Key results:
+
+local stiffness field
+
+    m(r) ∝ g_b(r)^0.296
+
+preferred cumulative map
+
+    S(r) = ∫₀ʳ m(s) ds
+
+corrected master-curve exponents
+
+    power-law stiffness         ν = 0.940
+    density-coupled stiffness   ν = 0.947
+    exponential-core stiffness  ν = 0.950
+
+These results show that the stretched-exponential master curve can be
+understood as exponential saturation in cumulative stiffness rather
+than an independent fitting ansatz.
+
+
+------------------------------------------------------------
+REFERENCES
+------------------------------------------------------------
+
+McGaugh, S. S., Lelli, F., & Schombert, J. M. (2016).
+Radial Acceleration Relation in Rotationally Supported Galaxies.
+Physical Review Letters, 117, 201101.
+
+https://doi.org/10.1103/PhysRevLett.117.201101
+
+
+Lelli, F., McGaugh, S. S., & Schombert, J. M. (2016).
+SPARC: Mass Models for 175 Disk Galaxies with Spitzer Photometry
+and Accurate Rotation Curves.
+Astronomical Journal, 152, 157.
+
+https://doi.org/10.3847/0004-6256/152/6/157
+
+
+Lelli, F., McGaugh, S. S., & Schombert, J. M. (2017).
+SPARC: The Spitzer Photometry and Accurate Rotation Curves
+Database.
+Astronomy & Astrophysics, 598, A76.
+
+https://doi.org/10.1051/0004-6361/201629748
+
+
+Persic, M., Salucci, P., & Stel, F. (1996).
+The Universal Rotation Curve of Spiral Galaxies.
+Monthly Notices of the Royal Astronomical Society, 281, 27–47.
+
+https://doi.org/10.1093/mnras/281.1.27
+
+
+Salucci, P., Lapi, A., Tonini, C., Gentile, G., Yegorova, I., &
+Klein, U. (2007).
+The Universal Rotation Curve of Spiral Galaxies II.
+Monthly Notices of the Royal Astronomical Society, 378, 41–47.
+
+https://doi.org/10.1111/j.1365-2966.2007.11696.x
+
+
+Freeman, K. C. (1970).
+On the Disks of Spiral and S0 Galaxies.
+Astrophysical Journal, 160, 811.
+
+https://doi.org/10.1086/150474
+
+
+Binney, J., & Tremaine, S. (2008).
+Galactic Dynamics (2nd Edition).
+Princeton University Press.
+
+
