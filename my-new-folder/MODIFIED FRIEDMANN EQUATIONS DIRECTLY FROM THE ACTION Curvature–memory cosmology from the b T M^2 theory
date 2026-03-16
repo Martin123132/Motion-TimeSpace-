@@ -1,0 +1,259 @@
+==============================================================
+MODIFIED FRIEDMANN EQUATIONS DIRECTLY FROM THE ACTION
+Curvature–memory cosmology from the b T M^2 theory
+==============================================================
+
+Start from the covariant action
+
+    S = ∫ d^4x √(-g) [
+            R/(16πG)
+          - 1/2 g^{μν} ∂_μ M ∂_ν M
+          - a M^4 / 4
+          + b T M^2
+          + L_b
+        ].
+
+For pressureless matter (dust),
+
+    T = -ρ_b.
+
+We consider a spatially flat FRW metric
+
+    ds^2 = -dt^2 + A(t)^2 δ_{ij} dx^i dx^j
+
+with Hubble rate
+
+    H = Ȧ / A,
+
+and homogeneous scalar
+
+    M = M(t).
+
+
+--------------------------------------------------------------
+1. HOMOGENEOUS SCALAR EQUATION
+--------------------------------------------------------------
+
+Varying the action with respect to M gives
+
+    □M + a M^3 - 2 b T M = 0.
+
+For dust, T = -ρ_b, so
+
+    □M + a M^3 + 2 b ρ_b M = 0.
+
+In FRW,
+
+    □M = M̈ + 3H Ṁ,
+
+hence the homogeneous field equation is
+
+    M̈ + 3H Ṁ + a M^3 + 2 b ρ_b M = 0.
+
+
+--------------------------------------------------------------
+2. EFFECTIVE ENERGY DENSITY AND PRESSURE
+--------------------------------------------------------------
+
+For a homogeneous field, the scalar-sector energy density and pressure are
+
+    ρ_M = 1/2 Ṁ^2 + a M^4/4 - b T M^2
+
+    p_M = 1/2 Ṁ^2 - a M^4/4 + b T M^2.
+
+For dust, T = -ρ_b, so
+
+    ρ_M = 1/2 Ṁ^2 + a M^4/4 + b ρ_b M^2
+
+    p_M = 1/2 Ṁ^2 - a M^4/4 - b ρ_b M^2.
+
+Thus the interaction contributes directly to the background energy
+budget.
+
+
+--------------------------------------------------------------
+3. FRIEDMANN EQUATIONS
+--------------------------------------------------------------
+
+The Einstein equations give
+
+    3H^2 = 8πG ( ρ_b + ρ_M )
+
+    2Ḣ + 3H^2 = -8πG ( p_b + p_M ).
+
+For dust, p_b = 0. Therefore
+
+    3H^2
+      = 8πG [ ρ_b + 1/2 Ṁ^2 + a M^4/4 + b ρ_b M^2 ]
+
+and
+
+    2Ḣ + 3H^2
+      = -8πG [ 1/2 Ṁ^2 - a M^4/4 - b ρ_b M^2 ].
+
+Equivalently,
+
+    H^2
+      = (8πG/3)
+        [ ρ_b (1 + b M^2) + 1/2 Ṁ^2 + a M^4/4 ].
+
+This is the modified Friedmann equation directly from the action.
+
+
+--------------------------------------------------------------
+4. EFFECTIVE MATTER ACTIVATION
+--------------------------------------------------------------
+
+The matter density appears multiplied by
+
+    1 + b M^2.
+
+So the action-derived theory naturally gives an effective matter coupling
+
+    ρ_b  →  ρ_b^eff = ρ_b (1 + b M^2).
+
+This is the direct analog of the phenomenological activation factor g(z).
+
+Hence the background theory predicts
+
+    g_eff(z) = 1 + b M(z)^2.
+
+This is the key bridge.
+
+The phenomenological activation law
+
+    H^2 = H0^2 [ Ω_m (1+z)^3 g(z) + ... ]
+
+is therefore recovered if
+
+    g(z) = 1 + b M(z)^2.
+
+So the activation factor is not fundamental; it is the square of the
+background memory field.
+
+
+--------------------------------------------------------------
+5. RELATION TO THE ACTIVATION COSMOLOGY
+--------------------------------------------------------------
+
+In the phenomenological activation model, the effective matter term was
+
+    Ω_m (1+z)^3 g(z).
+
+In the action-derived model, the corresponding term is
+
+    Ω_m (1+z)^3 [1 + b M(z)^2].
+
+Therefore
+
+    g(z) ↔ 1 + b M(z)^2.
+
+This means the phenomenological activation function can be interpreted
+as an effective reconstruction of the background memory field.
+
+
+--------------------------------------------------------------
+6. SIGN OF b AND COSMOLOGICAL BEHAVIOUR
+--------------------------------------------------------------
+
+For the viable branch
+
+    b < 0,
+
+the factor
+
+    1 + b M^2 = 1 - |b| M^2
+
+reduces the effective matter contribution.
+
+So late-time weakening of the matter sector happens automatically if
+the background field grows away from zero or remains non-negligible.
+
+That is exactly the direction needed to mimic dark-energy-like
+acceleration without inserting a separate ad hoc activation law.
+
+
+--------------------------------------------------------------
+7. MATTER-SUPPORTED MINIMUM INSERTED INTO THE BACKGROUND
+--------------------------------------------------------------
+
+On the b < 0 branch, the matter-supported minimum is
+
+    M_*^2 = 2 |b| ρ_b / a.
+
+Substitute this into
+
+    g_eff = 1 + b M^2 = 1 - |b| M^2.
+
+Then
+
+    g_eff
+      = 1 - |b| (2 |b| ρ_b / a)
+      = 1 - 2 |b|^2 ρ_b / a.
+
+So on the minimum branch the effective matter coupling becomes
+
+    ρ_b^eff = ρ_b [ 1 - 2 |b|^2 ρ_b / a ].
+
+Thus the matter sector self-suppresses at high enough density through
+the memory field.
+
+This is a direct action-level origin for matter activation/suppression.
+
+
+--------------------------------------------------------------
+8. LEADING MODIFIED FRIEDMANN FORM
+--------------------------------------------------------------
+
+Keeping only the dominant background terms, the modified Friedmann
+equation becomes
+
+    H^2
+      = (8πG/3)
+        [ ρ_b (1 + b M^2) + 1/2 Ṁ^2 + a M^4/4 ].
+
+In terms of redshift,
+
+    ρ_b(z) = ρ_b0 (1+z)^3
+
+so
+
+    H^2(z)
+      = (8πG/3)
+        [ ρ_b0 (1+z)^3 (1 + b M(z)^2)
+          + 1/2 Ṁ(z)^2
+          + a M(z)^4/4 ].
+
+This is the full action-derived background equation.
+
+
+--------------------------------------------------------------
+9. COMPARISON WITH THE PHENOMENOLOGICAL ACTIVATION MODEL
+--------------------------------------------------------------
+
+Earlier, the phenomenological model had
+
+    H^2(z) = H0^2 [ Ω_m (1+z)^3 g(z) + (1 - Ω_m) ].
+
+The action-derived theory instead gives
+
+    H^2(z) = H0^2 [
+        Ω_m (1+z)^3 (1 + b M(z)^2)
+        + Ω_M,kin(z)
+        + Ω_M,pot(z)
+    ].
+
+So the phenomenological activation function g(z) is replaced by
+
+    1 + b M(z)^2,
+
+and the scalar also contributes explicit kinetic and quartic-potential
+terms.
+
+Therefore the action-derived theory is richer than the activation fit:
+it contains both
+
+    • effective matter activation/suppression
+    • an independent scalar background energy component.
+
+
