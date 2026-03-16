@@ -1,0 +1,221 @@
+==============================================================
+LINEAR GROWTH EQUATION IN N = ln(a) FORM
+==============================================================
+
+We start from the modified growth equation derived earlier
+
+    δ̈_b + 2H δ̇_b
+      = 4π G [1 + β_*(k,a)] ρ_b δ_b.
+
+Here
+
+    β_*(k,a) ≈ - B(a) [ κ_M^2(a) / (k^2 + κ_M^2(a)) ]
+
+with
+
+    B(a)      = (2 |b|^2 / a_const) ρ_b(a)
+    κ_M^2(a)  = 4 |b| ρ_b(a) A^2.
+
+
+--------------------------------------------------------------
+1. CHANGE OF TIME VARIABLE
+--------------------------------------------------------------
+
+Define
+
+    N = ln a.
+
+Then
+
+    d/dt = H d/dN.
+
+Thus
+
+    δ̇ = H δ'
+
+    δ̈ = H² δ'' + Ḣ δ'.
+
+(prime = derivative with respect to N)
+
+
+--------------------------------------------------------------
+2. SUBSTITUTE INTO THE GROWTH EQUATION
+--------------------------------------------------------------
+
+Insert the derivatives:
+
+    H² δ'' + Ḣ δ'
+    + 2H (H δ')
+    =
+    4π G (1 + β_*) ρ_b δ.
+
+Simplify:
+
+    H² δ'' + (Ḣ + 2H²) δ'
+    =
+    4π G (1 + β_*) ρ_b δ.
+
+
+--------------------------------------------------------------
+3. DIVIDE BY H²
+--------------------------------------------------------------
+
+We obtain
+
+    δ'' + ( Ḣ/H² + 2 ) δ'
+    =
+    (4πG ρ_b / H²) (1 + β_*) δ.
+
+
+--------------------------------------------------------------
+4. USE FRIEDMANN RELATION
+--------------------------------------------------------------
+
+In standard cosmology
+
+    4πG ρ_b / H² = (3/2) Ω_b(a).
+
+So the equation becomes
+
+    δ'' + ( 2 + Ḣ/H² ) δ'
+    =
+    (3/2) Ω_b(a) (1 + β_*) δ.
+
+
+--------------------------------------------------------------
+5. EXPRESS Ḣ/H²
+--------------------------------------------------------------
+
+Using
+
+    d ln H / dN = Ḣ/H²
+
+the equation becomes
+
+    δ'' + [ 2 + d ln H / dN ] δ'
+      =
+      (3/2) Ω_b(a) (1 + β_*) δ.
+
+
+--------------------------------------------------------------
+6. FINAL MODIFIED GROWTH EQUATION
+--------------------------------------------------------------
+
+The linear growth equation in e-fold form is
+
+    δ'' + [ 2 + d ln H / dN ] δ'
+      =
+      (3/2) Ω_b(a)
+      [ 1 + β_*(k,a) ]
+      δ.
+
+with
+
+    β_*(k,a)
+      ≈ - B(a) [ κ_M^2(a) / (k^2 + κ_M^2(a)) ].
+
+and
+
+    B(a) = (2 |b|^2 / a_const) ρ_b(a)
+
+    κ_M^2(a) = 4 |b| ρ_b(a) A^2.
+
+
+--------------------------------------------------------------
+7. REDSHIFT DEPENDENCE
+--------------------------------------------------------------
+
+Matter density
+
+    ρ_b(a) = ρ_b0 a^-3.
+
+Thus
+
+    B(a) ∝ a^-3
+
+    κ_M^2(a) ∝ a^-3.
+
+So the modification naturally evolves with cosmic expansion.
+
+
+--------------------------------------------------------------
+8. LARGE AND SMALL SCALE LIMITS
+--------------------------------------------------------------
+
+Large scales  (k << κ_M):
+
+    β_* ≈ -B(a)
+
+so
+
+    G_eff ≈ G [1 - B(a)].
+
+
+Small scales  (k >> κ_M):
+
+    β_* ≈ -B(a) κ_M² / k²
+
+so
+
+    β_* → 0
+
+and GR is recovered.
+
+
+--------------------------------------------------------------
+9. STANDARD GR LIMIT
+--------------------------------------------------------------
+
+If
+
+    b → 0
+
+then
+
+    B(a) → 0
+
+    κ_M → 0
+
+and the equation reduces to
+
+    δ'' + [2 + d ln H/dN] δ'
+      =
+      (3/2) Ω_b(a) δ.
+
+This is the usual ΛCDM growth equation.
+
+
+--------------------------------------------------------------
+10. GROWTH OBSERVABLES
+--------------------------------------------------------------
+
+Once δ(a,k) is solved, the observable quantities are
+
+Growth rate
+
+    f(a,k) = d ln δ / d ln a = δ'/δ.
+
+Observable
+
+    fσ8(z) = σ8,0 f(z,k) δ(z)/δ(0).
+
+This is what is compared to DESI / Gold-2017 data.
+
+
+--------------------------------------------------------------
+11. STRUCTURE OF THE PREDICTION
+--------------------------------------------------------------
+
+The theory predicts
+
+    • suppressed growth (β_* < 0)
+    • scale-dependent growth
+    • GR recovery on small scales
+    • stronger modification at low redshift
+
+all emerging directly from the action without inserting an ad-hoc
+phenomenological term.
+
+==============================================================
+END
+==============================================================
