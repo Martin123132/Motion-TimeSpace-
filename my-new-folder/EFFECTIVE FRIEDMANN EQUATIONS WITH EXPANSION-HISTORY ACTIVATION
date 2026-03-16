@@ -1,0 +1,170 @@
+============================================================
+EFFECTIVE FRIEDMANN EQUATIONS WITH EXPANSION-HISTORY ACTIVATION
+============================================================
+
+1. Standard Friedmann background
+------------------------------------------------------------
+
+For a spatially flat FRW universe the Friedmann equation is
+
+    H² = (8πG/3) (ρ_m + ρ_Λ)
+
+with
+
+    ρ_m ∝ a⁻³
+    ρ_Λ = constant.
+
+
+------------------------------------------------------------
+2. Activated matter sector
+------------------------------------------------------------
+
+In the curvature–memory framework the gravitational contribution
+of the matter sector is modulated by an activation fraction
+
+    g(z) ∈ [0,1].
+
+The effective matter density becomes
+
+    ρ_m^eff(z) = g(z) ρ_m(z).
+
+Thus
+
+    ρ_m^eff = g(z) ρ_m0 (1+z)³.
+
+
+------------------------------------------------------------
+3. Modified Friedmann equation
+------------------------------------------------------------
+
+Substituting the activated matter density gives
+
+    H²(z) =
+        (8πG/3)
+        [ g(z) ρ_m0 (1+z)³ + ρ_Λ ].
+
+Writing in terms of density parameters
+
+    Ω_m = ρ_m0 / ρ_crit
+    Ω_Λ = ρ_Λ / ρ_crit
+
+yields
+
+    H²(z) =
+        H₀² [ Ω_m (1+z)³ g(z) + Ω_Λ ].
+
+
+------------------------------------------------------------
+4. Activation law
+------------------------------------------------------------
+
+From the geometric derivation
+
+    U(z) = ln(1+z).
+
+The activated fraction is
+
+    g(z) = 1 − exp[ − (U(z)/u_s)^ν ].
+
+Therefore
+
+    g(z) =
+        1 − exp[ − ( ln(1+z) / u_s )^ν ].
+
+
+------------------------------------------------------------
+5. Equality-normalised scale
+------------------------------------------------------------
+
+If the activation scale is tied to matter–Λ equality,
+
+    u_s = α u_eq
+
+with
+
+    u_eq = (1/3) ln((1−Ω_m)/Ω_m),
+
+then
+
+    g(z) =
+        1 − exp[
+            − ( ln(1+z) / (α u_eq) )^ν
+          ].
+
+
+------------------------------------------------------------
+6. Limiting behaviour
+------------------------------------------------------------
+
+Early universe (z ≫ 1):
+
+    ln(1+z) → large
+    g(z) → 1
+
+so
+
+    H² ≈ H₀² [ Ω_m (1+z)³ + Ω_Λ ]
+
+recovering the standard matter-dominated behaviour.
+
+
+Present epoch (z → 0):
+
+    ln(1+z) → 0
+    g(z) → 0
+
+so the effective matter contribution is suppressed.
+
+
+------------------------------------------------------------
+7. Effective dark-energy interpretation
+------------------------------------------------------------
+
+The Friedmann equation can be written in standard form
+
+    H² = H₀² [ Ω_m (1+z)³ + ρ_DE^eff(z) ].
+
+where
+
+    ρ_DE^eff(z) =
+        Ω_Λ − Ω_m (1+z)³ [1 − g(z)].
+
+Thus the activation mechanism produces an evolving
+effective dark-energy density.
+
+
+------------------------------------------------------------
+8. Equation of state
+------------------------------------------------------------
+
+The effective equation of state is
+
+    w_eff(z)
+      = −1
+        + (1+z)/(3 ρ_DE^eff)
+          dρ_DE^eff/dz.
+
+Because g(z) evolves smoothly with redshift,
+the model produces a time-dependent dark-energy behaviour.
+
+
+------------------------------------------------------------
+9. Summary
+------------------------------------------------------------
+
+The activated Friedmann equation is
+
+    H²(z) =
+        H₀² [
+            Ω_m (1+z)³
+            (1 − exp[−( ln(1+z) / u_s )^ν])
+            + Ω_Λ
+        ].
+
+This equation contains only two activation parameters:
+
+    u_s  (activation scale)
+    ν    (threshold distribution shape).
+
+The cosmological dynamics therefore follow directly from the
+geometric activation law derived from integrated expansion history.
