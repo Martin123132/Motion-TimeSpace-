@@ -1,0 +1,231 @@
+============================================================
+LINEAR GROWTH EQUATION IN THE ACTIVATED FRW COSMOLOGY
+============================================================
+
+1. Activated background
+------------------------------------------------------------
+
+The modified Friedmann equation is
+
+    H²(z) = H₀² [ Ω_m (1+z)³ g(z) + Ω_Λ ]
+
+with activation function
+
+    g(z) = 1 − exp[ − ( ln(1+z) / u_s )^ν ].
+
+Define the effective clustered matter density
+
+    ρ_m^eff(z) = g(z) ρ_m(z)
+
+where
+
+    ρ_m(z) = ρ_m0 (1+z)³.
+
+
+------------------------------------------------------------
+2. Linear scalar perturbations
+------------------------------------------------------------
+
+Consider scalar perturbations in Newtonian gauge
+
+    ds² = -(1+2Ψ)dt² + a(t)²(1-2Φ)δ_ij dx^i dx^j.
+
+Assume pressureless matter and negligible anisotropic stress, so
+
+    Φ = Ψ.
+
+Let the density contrast be
+
+    δ = δρ_m / ρ_m.
+
+The velocity divergence is
+
+    θ = ∇·v.
+
+
+------------------------------------------------------------
+3. Continuity and Euler equations
+------------------------------------------------------------
+
+For pressureless matter the linear perturbation equations are
+
+    δ̇ = - θ + 3 Φ̇
+
+    θ̇ + H θ - (k²/a²) Ψ = 0.
+
+In the subhorizon regime,
+
+    k²/a² >> H²,
+
+and for slowly varying potentials we neglect Φ̇. Then
+
+    δ̇ ≈ - θ
+
+and therefore
+
+    δ̈ + 2H δ̇ - (k²/a²) Ψ = 0.
+
+
+------------------------------------------------------------
+4. Poisson equation with activated clustering source
+------------------------------------------------------------
+
+The Poisson equation is sourced by the effective clustered matter
+density. Therefore
+
+    (k²/a²) Ψ = 4πG ρ_m^eff δ.
+
+Using
+
+    ρ_m^eff = g(z) ρ_m
+
+gives
+
+    (k²/a²) Ψ = 4πG g(z) ρ_m δ.
+
+Substitute into the perturbation equation:
+
+    δ̈ + 2H δ̇ - 4πG g(z) ρ_m δ = 0.
+
+
+------------------------------------------------------------
+5. Growth equation in standard form
+------------------------------------------------------------
+
+Using
+
+    4πG ρ_m = (3/2) H² Ω_m(a)
+
+where
+
+    Ω_m(a) = Ω_m0 a^(-3) / E(a)²
+
+and
+
+    E(a)² = Ω_m0 a^(-3) g(a) + Ω_Λ,
+
+the growth equation becomes
+
+    δ̈ + 2H δ̇
+      - (3/2) H² Ω_m(a) g(a) δ
+      = 0.
+
+This is the linear growth equation in cosmic time.
+
+
+------------------------------------------------------------
+6. Growth equation in N = ln a
+------------------------------------------------------------
+
+Let
+
+    N = ln a
+
+and denote d/dN by a prime.
+
+Then
+
+    δ̇ = H δ'
+
+    δ̈ = H² δ'' + Ḣ δ'.
+
+Substituting into the growth equation and dividing by H² gives
+
+    δ'' + (2 + Ḣ/H²) δ'
+      - (3/2) Ω_m(a) g(a) δ
+      = 0.
+
+Since
+
+    Ḣ/H² = d ln H / d ln a,
+
+the final growth equation is
+
+    δ'' + [ 2 + d ln H / d ln a ] δ'
+      - (3/2) Ω_m(a) g(a) δ
+      = 0.
+
+
+------------------------------------------------------------
+7. Explicit activated form
+------------------------------------------------------------
+
+Using
+
+    g(a) = 1 − exp[ − ( ln(1/a) / u_s )^ν ]
+
+the equation becomes
+
+    δ'' + [ 2 + d ln H / d ln a ] δ'
+      - (3/2) Ω_m(a)
+        [ 1 − exp( − ( ln(1/a) / u_s )^ν ) ]
+        δ
+      = 0.
+
+Equivalently, in redshift form,
+
+    g(z) = 1 − exp[ − ( ln(1+z) / u_s )^ν ].
+
+
+------------------------------------------------------------
+8. Limiting regimes
+------------------------------------------------------------
+
+Early universe:
+
+    g(z) → 1
+
+so the equation reduces to the standard ΛCDM-like growth law
+
+    δ'' + [2 + d ln H/d ln a] δ'
+      - (3/2) Ω_m(a) δ = 0.
+
+
+Late times:
+
+    g(z) → 0
+
+so the clustering source weakens and growth slows.
+
+
+------------------------------------------------------------
+9. Physical interpretation
+------------------------------------------------------------
+
+The activation factor enters growth in two places:
+
+    (i) through H(a), because it modifies the background expansion
+
+    (ii) through the source term, because only the activated fraction
+         of the matter sector contributes to clustering.
+
+Thus the same activation law simultaneously controls
+
+    • the expansion history
+    • the linear growth history.
+
+
+------------------------------------------------------------
+10. Final result
+------------------------------------------------------------
+
+The linear growth equation for the activated cosmology is
+
+    δ'' + [ 2 + d ln H / d ln a ] δ'
+      - (3/2) Ω_m(a) g(a) δ
+      = 0
+
+with
+
+    H²(a) = H₀² [ Ω_m a^(-3) g(a) + Ω_Λ ]
+
+and
+
+    g(a) = 1 − exp[ − ( ln(1/a) / u_s )^ν ].
+
+This is the clean perturbation equation associated with the
+expansion-history activation model.
+
+============================================================
+END
+============================================================
