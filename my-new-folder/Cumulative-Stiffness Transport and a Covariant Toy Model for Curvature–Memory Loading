@@ -1,0 +1,377 @@
+Cumulative-Stiffness Transport and a Covariant Toy Model for Curvature–Memory Loading
+
+
+Theorem (Marginal Accumulation of the Cumulative Coordinate)
+
+Consider a cumulative response system in which the loading density obeys a p-Laplacian transport functional such that
+
+    m(r) = |∇S| ∝ [ g_b(r) g_obs(r) ]^(1/(p-1)).
+
+Assume outer-galaxy asymptotics
+
+    g_b(r) ~ GM_b / r^2
+    g_obs(r) ~ V_∞^2 / r.
+
+Define the cumulative stiffness coordinate
+
+    u(r) = ∫_0^r m(s) ds.
+
+Then u(r) grows logarithmically in the outer galaxy if and only if
+
+    p = 4.
+
+
+Proof
+
+Under the assumed asymptotics
+
+    g_b g_obs ~ r^(-3).
+
+Hence
+
+    m(r) ~ r^(-3/(p-1)).
+
+Therefore
+
+    u(r) ~ ∫^r s^(-3/(p-1)) ds.
+
+The integral becomes logarithmic exactly when
+
+    3/(p-1) = 1
+
+which implies
+
+    p = 4.
+
+For p < 4 the cumulative integral converges, while for p > 4 it grows as a power law.
+
+Thus p = 4 is the unique marginal accumulation case. ∎
+
+
+
+X. Minimal Covariant Toy Model
+
+We now construct a minimal covariant dynamical model whose weak-field limit reproduces the empirically preferred galaxy loading law
+
+    m(r) ∝ [ g_b(r) g_obs(r) ]^(1/3)
+
+together with the cumulative response structure
+
+    u(r) = ∫_0^r m(s) ds
+    dS/du ≈ const.
+
+The goal is not a full relativistic completion but a minimal dynamical embedding of the phenomenology.
+
+
+
+X.1 Curvature–Memory Field
+
+Introduce a scalar memory field
+
+    M(x)
+
+representing the local amplitude of retained geometric loading.
+
+In the galaxy weak-field regime
+
+    m(r) ~ M(r).
+
+
+
+X.2 Source–Response Overlap Invariant
+
+Memory loading is assumed to depend on the overlap between sourced curvature and realised curvature.
+
+Define a scalar invariant
+
+    Π(x)
+
+satisfying the weak-field condition
+
+    Π → g_b g_obs.
+
+
+
+X.3 Covariant Lagrangian
+
+The minimal toy Lagrangian is
+
+    L =
+    √(-g) [
+        1/2 ∇_μ M ∇^μ M
+        − a/4 M^4
+        + b Π M
+    ].
+
+Terms
+
+    kinetic     → transport of memory
+    quartic     → nonlinear self-energy
+    source      → curvature-overlap forcing
+
+
+
+X.4 Field Equation
+
+Variation gives
+
+    □M + a M^3 = b Π
+
+where
+
+    □ = ∇_μ ∇^μ.
+
+
+
+X.5 Weak-Field Constitutive Balance
+
+In quasi-static galaxies
+
+    □M << a M^3
+
+so
+
+    a M^3 ≈ b Π.
+
+Hence
+
+    M ∝ Π^(1/3).
+
+Using the weak-field reduction
+
+    Π → g_b g_obs
+
+we obtain
+
+    M ∝ (g_b g_obs)^(1/3).
+
+
+
+X.6 Cumulative Stiffness Coordinate
+
+Define
+
+    u(r) = ∫_0^r M(s) ds.
+
+Empirically
+
+    dS/du ≈ σ₀
+
+so
+
+    S = σ₀ u.
+
+Normalising at the turnover radius R_s
+
+    S = u / u(R_s).
+
+The velocity relation becomes
+
+    V / V_∞ = 1 − exp[ −u(r) / u(R_s) ].
+
+
+
+X.7 Outer Galaxy Behaviour
+
+Outer asymptotics give
+
+    g_b g_obs ~ r^(-3).
+
+Thus
+
+    M(r) ~ r^(-1)
+
+and
+
+    u(r) ~ ln r.
+
+This reproduces the marginal accumulation predicted by the theorem.
+
+
+
+X.8 Covariant Construction of the Overlap Invariant
+
+Define the four-acceleration of static observers
+
+    a_μ = u^ν ∇_ν u_μ.
+
+In the weak-field limit
+
+    (a_μ a^μ)^(1/2) → g_obs.
+
+Define a baryonic potential
+
+    ∇² Φ_b = 4π G ρ_b.
+
+Then
+
+    |∇Φ_b| → g_b.
+
+The simplest scalar overlap invariant is
+
+    Π =
+        sqrt[
+            (∇_μ Φ_b ∇^μ Φ_b)
+            (a_ν a^ν)
+        ].
+
+Thus
+
+    Π → g_b g_obs.
+
+
+
+X.9 Weak-Field Radial Equation
+
+In spherical symmetry the field equation reduces to
+
+    (1/r²) (r² M')'
+    + a M³
+    = b g_b(r) g_obs(r).
+
+This is a nonlinear reaction–diffusion equation.
+
+term                meaning
+diffusion           transport of memory
+reaction            nonlinear constitutive response
+source              baryonic–response overlap
+
+
+
+X.10 Dimensionless Form
+
+Let
+
+    x = r / R_s
+    M = M_s y(x).
+
+Then
+
+    ε (1/x²)(x² y')' + y³ = Γ(x)
+
+where
+
+    ε = 1 / (a M_s² R_s²)
+    Γ(x) = (b / (a M_s³)) g_b g_obs.
+
+
+
+X.11 Local Constitutive Regime
+
+For
+
+    ε << 1
+
+the diffusion term is negligible and
+
+    y³ = Γ(x)
+
+so
+
+    M ∝ (g_b g_obs)^(1/3).
+
+
+
+X.12 Radial Acceleration Relation (RAR)
+
+The acceleration is
+
+    g_obs =
+        V_∞² / r
+        (1 − e^(−S))².
+
+For weak response
+
+    S << 1
+
+we obtain
+
+    g_obs ≈
+        V_∞² / r
+        (u(r) / u(R_s))².
+
+With
+
+    u'(r) ~ (g_b g_obs)^(1/3)
+
+the theory predicts a nonlocal RAR.
+
+
+
+X.13 Local Power-Law Approximation
+
+Assume locally
+
+    g_b(r) ~ r^(−q).
+
+Then the predicted RAR slope becomes
+
+    β_RAR = 2 − 3/q.
+
+Examples
+
+    baryonic falloff      predicted slope
+
+    q = 2                 g_obs ~ g_b^(1/2)
+    q ≈ 1.9               slope ≈ 0.42
+
+
+
+X.14 Structure of the Theory
+
+    □M + a M³ = b Π
+
+            ↓
+
+    Π = sqrt[(∇Φ_b)² (a_μ a^μ)]
+
+            ↓
+
+    M³ ∝ g_b g_obs
+
+            ↓
+
+    m(r) ∝ (g_b g_obs)^(1/3)
+
+            ↓
+
+    u(r) = ∫ M dr
+
+            ↓
+
+    S = u / u(R_s)
+
+            ↓
+
+    V / V_∞ = 1 − e^(−S)
+
+
+
+Proposition.
+In the local-balance regime of cumulative cube-root transport,
+
+    M^3 ∝ g_b g_obs,
+
+with
+
+    g_b(r) = G M_b(r) / r^2,
+    g_obs(r) = V(r)^2 / r.
+
+At large radius, where V(r) → V_∞, the loading field scales as
+
+    M(r) ∼ (G M_b V_∞^2)^(1/3) r^(-1).
+
+Hence the cumulative stiffness coordinate at the turnover radius obeys
+
+    u(R_s) ∼ (G M_b V_∞^2)^(1/3) Λ_s,
+
+where Λ_s is a weakly varying logarithmic structural factor. If the
+turnover threshold corresponds to a common normalized saturation
+condition across galaxies, then Λ_s is approximately universal and the
+family-level scaling becomes
+
+    V_∞^4 ∝ G M_b.
+
+Thus the baryonic Tully–Fisher relation is the global saturation
+condition of the same cumulative transport law that generates the
+master curve and the radial acceleration relation.
