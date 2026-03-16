@@ -1,0 +1,430 @@
+================================================================
+CUMULATIVE CURVATURE–MEMORY TRANSPORT
+A Covariant Toy Model Linking Cosmology and Galaxy Dynamics
+================================================================
+
+Author: Martin Ollett
+Year: 2026
+
+
+----------------------------------------------------------------
+1. TRANSPORT PRINCIPLE
+----------------------------------------------------------------
+
+Consider a cumulative response system in which the loading density
+m(r) depends on the overlap between baryonic and realised gravity:
+
+    m(r) ∝ [ g_b(r) g_obs(r) ]^(1/(p-1))
+
+Define the cumulative stiffness coordinate
+
+    u(r) = ∫_0^r m(s) ds.
+
+In galaxy outer regions
+
+    g_b(r) ~ r^(-2)
+    g_obs(r) ~ r^(-1)
+
+so
+
+    g_b g_obs ~ r^(-3)
+
+and
+
+    m(r) ~ r^(-3/(p-1)).
+
+Thus
+
+    u(r) ~ ∫ r^(-3/(p-1)) dr.
+
+----------------------------------------------------------------
+Theorem (Marginal Cumulative Transport)
+
+The cumulative coordinate grows logarithmically
+
+    u(r) ~ log r
+
+if and only if
+
+    3/(p-1) = 1  →  p = 4.
+
+Thus quartic transport uniquely produces marginal accumulation:
+
+    m(r) ∝ (g_b g_obs)^(1/3).
+
+For p < 4 loading converges; for p > 4 it diverges as a power law.
+Hence p = 4 is the unique marginal case. ∎
+
+
+----------------------------------------------------------------
+2. COVARIANT CURVATURE–MEMORY FIELD
+----------------------------------------------------------------
+
+Introduce a scalar memory field
+
+    M(x)
+
+representing the local amplitude of retained curvature loading.
+
+In the galaxy regime
+
+    m(r) ~ M(r).
+
+
+----------------------------------------------------------------
+2.1 Covariant Action
+
+The minimal toy Lagrangian is
+
+    L = √(-g) [
+        1/2 ∇_μ M ∇^μ M
+        − (a/4) M^4
+        + b Π M
+    ].
+
+where
+
+    a = quartic self-interaction
+    b = source coupling
+    Π = curvature overlap invariant.
+
+
+----------------------------------------------------------------
+2.2 Source–Response Overlap
+
+Define
+
+    Π = sqrt[(∇_μ Φ_b ∇^μ Φ_b)(a_ν a^ν)]
+
+where
+
+    Φ_b = baryonic gravitational potential
+    a_μ = four-acceleration of static observers.
+
+In the weak-field limit
+
+    |∇Φ_b| → g_b
+    sqrt(a_μ a^μ) → g_obs
+
+so
+
+    Π → g_b g_obs.
+
+
+----------------------------------------------------------------
+2.3 Field Equation
+
+Variation gives
+
+    □M + a M^3 = b Π.
+
+In quasi-static galaxies
+
+    □M << a M^3
+
+so
+
+    M^3 ≈ (b/a) Π.
+
+Thus
+
+    M ∝ (g_b g_obs)^(1/3).
+
+
+----------------------------------------------------------------
+3. STATIC SPHERICAL GALAXY EQUATION
+----------------------------------------------------------------
+
+For M = M(r)
+
+    (1/r²)(r² M')' + a M³ = b Π(r)
+
+and in galaxies
+
+    Π(r) ≈ g_b(r) g_obs(r).
+
+
+----------------------------------------------------------------
+3.1 Outer-Galaxy Solution
+
+With
+
+    g_b ~ GM_b / r²
+    g_obs ~ V∞² / r
+
+we obtain
+
+    Π ~ r^(-3).
+
+The asymptotic solution becomes
+
+    M(r) = K / r
+
+with
+
+    K = [(b/a) GM_b V∞²]^(1/3).
+
+This profile exactly satisfies the field equation since
+
+    (r² M')' = 0.
+
+
+----------------------------------------------------------------
+4. CUMULATIVE STIFFNESS COORDINATE
+----------------------------------------------------------------
+
+Define
+
+    u(r) = ∫_0^r M(s) ds.
+
+Using the outer solution
+
+    M ~ 1/r
+
+gives
+
+    u(r) ~ K log r.
+
+Thus galaxy dynamics occur in a logarithmically expanding
+source coordinate.
+
+
+----------------------------------------------------------------
+5. RESPONSE LAW
+----------------------------------------------------------------
+
+Define the normalized response field
+
+    S(r) = u(r) / u(R_s).
+
+The rotation curve follows
+
+    V(r)/V∞ = 1 − exp[−S(r)].
+
+This produces the observed stretched master curve.
+
+
+----------------------------------------------------------------
+6. IMPLICIT RADIAL ACCELERATION RELATION
+----------------------------------------------------------------
+
+Transport implies
+
+    u'(r) = C [g_b(r) g_obs(r)]^(1/3).
+
+With
+
+    S = u/u_s
+
+and
+
+    g_obs(r) = V∞² / r (1 − e^{-S})²
+
+the differential equation becomes
+
+    dS/dr =
+    A V∞^(2/3) r^(-1/3) g_b(r)^(1/3) (1 − e^{-S})^(2/3)
+
+where
+
+    A = C/u_s.
+
+Separating variables yields
+
+    F(S(r)) =
+    A V∞^(2/3) ∫_0^r s^(-1/3) g_b(s)^(1/3) ds
+
+with
+
+    F(S) = ∫_0^S dσ / (1 − e^{-σ})^(2/3).
+
+Observed acceleration is
+
+    g_obs = V∞² / r (1 − e^{-S})².
+
+
+----------------------------------------------------------------
+6.1 Weak-Response Limit
+
+For
+
+    S << 1
+
+    F(S) ≈ 3 S^(1/3)
+
+which gives locally
+
+    g_obs ∝ g_b^(2 − 3/q)
+
+if
+
+    g_b ~ r^(-q).
+
+
+----------------------------------------------------------------
+7. BARYONIC TULLY–FISHER RELATION
+----------------------------------------------------------------
+
+At large radius
+
+    M(r) ~ (GM_b V∞²)^(1/3) / r.
+
+The cumulative coordinate at the turnover radius becomes
+
+    u(R_s) ~ (GM_b V∞²)^(1/3) Λ_s
+
+where Λ_s is a weak logarithmic structural factor.
+
+If galaxies reach a common saturation condition
+
+    S(R_s) = 1
+
+then
+
+    u(R_s) ≈ const.
+
+Hence
+
+    (GM_b V∞²)^(1/3) ≈ const
+
+which implies
+
+    V∞⁴ ∝ GM_b.
+
+Thus the BTFR emerges from saturation of cumulative transport.
+
+
+----------------------------------------------------------------
+8. FRW COSMOLOGY OF THE MEMORY FIELD
+----------------------------------------------------------------
+
+In a homogeneous universe
+
+    M = M(t)
+
+and the field equation becomes
+
+    M̈ + 3H Ṁ + a M³ = b Π.
+
+In FRW the overlap vanishes to leading order
+
+    Π ≈ 0
+
+so
+
+    M̈ + 3H Ṁ + a M³ = 0.
+
+
+----------------------------------------------------------------
+8.1 Energy Density
+
+The scalar contributes
+
+    ρ_M = ½ Ṁ² + aM⁴/4
+    p_M = ½ Ṁ² − aM⁴/4.
+
+
+----------------------------------------------------------------
+8.2 Friedmann Equations
+
+    H² = (8πG/3)(ρ_b + ρ_M)
+
+    Ḣ = −4πG(ρ_b + p_b + ρ_M + p_M).
+
+
+----------------------------------------------------------------
+8.3 Scaling Behaviour
+
+For quartic potential
+
+    V(M) = aM⁴/4
+
+the oscillatory equation of state is
+
+    w = 1/3.
+
+Thus
+
+    ρ_M ∝ a^{-4}
+
+and the field behaves like radiation.
+
+
+----------------------------------------------------------------
+9. COSMOLOGY–GALAXY MATCHING
+----------------------------------------------------------------
+
+Let the homogeneous cosmological amplitude be
+
+    M_bg.
+
+Galaxy transport becomes nonlinear when
+
+    g_b g_obs ~ (a/b) M_bg³.
+
+Define the galaxy acceleration scale
+
+    g†² ~ (a/b) M_bg³.
+
+Thus
+
+    g† ~ (a/b)^{1/2} M_bg^{3/2}.
+
+
+----------------------------------------------------------------
+9.1 Cosmological Scale of the Field
+
+Balancing Hubble damping and the quartic potential gives
+
+    M_bg² ~ H²/a
+
+so
+
+    M_bg ~ H / √a.
+
+
+----------------------------------------------------------------
+9.2 Resulting Acceleration Scale
+
+Substituting gives
+
+    g†² ~ H³ / (b √a)
+
+or approximately
+
+    g† ~ c H / √(b √a).
+
+Thus the galaxy acceleration scale is naturally of order
+
+    g† ~ c H₀.
+
+This connects galaxy dynamics to the cosmological expansion rate.
+
+
+----------------------------------------------------------------
+10. FINAL STRUCTURE OF THE THEORY
+----------------------------------------------------------------
+
+The complete dynamical chain is
+
+    □M + aM³ = bΠ
+            ↓
+    Π → g_b g_obs
+            ↓
+    M³ ∝ g_b g_obs
+            ↓
+    u(r) = ∫ M dr
+            ↓
+    S = u/u(R_s)
+            ↓
+    V/V∞ = 1 − e^{−S}
+            ↓
+    implicit RAR
+            ↓
+    BTFR from saturation
+            ↓
+    cosmological origin of g†.
+
+----------------------------------------------------------------
+END
+----------------------------------------------------------------
