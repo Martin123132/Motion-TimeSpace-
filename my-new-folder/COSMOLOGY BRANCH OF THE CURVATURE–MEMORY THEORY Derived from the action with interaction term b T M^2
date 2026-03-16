@@ -1,0 +1,488 @@
+==============================================================
+COSMOLOGY BRANCH OF THE CURVATURE–MEMORY THEORY
+Derived from the action with interaction term b T M^2
+==============================================================
+
+Author: Martin Ollett
+Year: 2026
+
+
+--------------------------------------------------------------
+1. ACTION
+--------------------------------------------------------------
+
+We begin with the covariant action
+
+    S = ∫ d^4x √(-g) [
+            R/(16πG)
+          - 1/2 g^{μν} ∂_μ M ∂_ν M
+          - a M^4 / 4
+          + b T M^2
+          + L_b
+        ].
+
+Here
+
+    M(x)   = curvature–memory scalar
+    a      = quartic self-interaction
+    b      = coupling to the matter trace
+    T      = T^μ_μ of the baryonic matter sector
+    L_b    = baryonic matter Lagrangian.
+
+For pressureless dust,
+
+    T = -ρ_b.
+
+So the interaction term becomes
+
+    b T M^2 = - b ρ_b M^2.
+
+
+--------------------------------------------------------------
+2. FRW BACKGROUND
+--------------------------------------------------------------
+
+Take a spatially flat FRW spacetime
+
+    ds^2 = -dt^2 + A(t)^2 δ_{ij} dx^i dx^j
+
+with Hubble rate
+
+    H = Ȧ / A.
+
+Assume homogeneous background fields
+
+    M(t,x) = M̄(t)
+    ρ_b(t,x) = ρ̄_b(t).
+
+The background scalar-field equation is
+
+    M̈̄ + 3H Ṁ̄ + a M̄^3 + 2 b ρ̄_b M̄ = 0.
+
+For dust,
+
+    ρ̄_b(a_cos) = ρ_b0 a_cos^(-3).
+
+
+--------------------------------------------------------------
+3. EFFECTIVE POTENTIAL
+--------------------------------------------------------------
+
+The homogeneous scalar evolves in the effective potential
+
+    V_eff(M) = a M^4 / 4 - b T M^2.
+
+For dust,
+
+    T = -ρ_b
+
+so
+
+    V_eff(M) = a M^4 / 4 + b ρ_b M^2.
+
+
+--------------------------------------------------------------
+4. PHYSICALLY VIABLE SIGN CHOICE
+--------------------------------------------------------------
+
+The cosmologically interesting branch is
+
+    b < 0.
+
+Write
+
+    b = - |b|.
+
+Then
+
+    V_eff(M) = a M^4 / 4 - |b| ρ_b M^2.
+
+This has matter-supported minima rather than a stable origin.
+
+
+--------------------------------------------------------------
+5. MATTER-SUPPORTED MINIMUM
+--------------------------------------------------------------
+
+The extrema satisfy
+
+    dV_eff/dM = a M^3 - 2 |b| ρ_b M = 0.
+
+Thus either
+
+    M = 0
+
+or
+
+    a M^2 = 2 |b| ρ_b.
+
+The nonzero minima are
+
+    M_*^2 = 2 |b| ρ_b / a.
+
+Hence the physically relevant background branch is
+
+    M_*(a_cos) = ± sqrt( 2 |b| ρ_b(a_cos) / a ).
+
+Since
+
+    ρ_b ∝ a_cos^(-3),
+
+the minimum drifts as
+
+    M_* ∝ a_cos^(-3/2).
+
+
+--------------------------------------------------------------
+6. CURVATURE OF THE POTENTIAL AT THE MINIMUM
+--------------------------------------------------------------
+
+The second derivative of the effective potential is
+
+    d²V_eff/dM² = 3 a M^2 - 2 |b| ρ_b.
+
+Evaluated at the minimum,
+
+    M = M_*,
+
+one finds
+
+    m_*^2 = 4 |b| ρ_b.
+
+Thus perturbations around the matter-supported minimum are stable and
+have a positive matter-dependent mass.
+
+
+--------------------------------------------------------------
+7. BACKGROUND ENERGY DENSITY AND PRESSURE
+--------------------------------------------------------------
+
+The scalar energy density and pressure are
+
+    ρ̄_M = 1/2 Ṁ̄^2 + a M̄^4 / 4 + b ρ̄_b M̄^2
+
+    p̄_M = 1/2 Ṁ̄^2 - a M̄^4 / 4 - b ρ̄_b M̄^2.
+
+On the b < 0 branch this means the matter coupling contributes
+nontrivially to both background density and pressure.
+
+
+--------------------------------------------------------------
+8. FRIEDMANN EQUATIONS
+--------------------------------------------------------------
+
+The background expansion is governed by
+
+    3H^2 = 8πG ( ρ̄_b + ρ̄_M )
+
+    2Ḣ + 3H^2 = -8πG ( p̄_b + p̄_M ).
+
+For dust,
+
+    p̄_b = 0.
+
+
+--------------------------------------------------------------
+9. ANALYTIC BACKGROUND SOLUTIONS
+--------------------------------------------------------------
+
+9.1 Matter-dominated era
+
+Using N = ln a_cos, the homogeneous field equation becomes
+
+    M'' + (3/2) M'
+        + (a/H^2) M^3
+        + (3b/(4πG)) M
+        = 0.
+
+In the weak-amplitude linearized regime this reduces to
+
+    M'' + (3/2) M' + μ^2 M = 0
+
+with
+
+    μ^2 = 3b/(4πG).
+
+This gives
+
+    M(a_cos) = C_+ a_cos^(r_+) + C_- a_cos^(r_-)
+
+where
+
+    r_± = -3/4 ± sqrt(9/16 - μ^2).
+
+For weak coupling one mode decays rapidly, while one mode decays
+very slowly.
+
+
+9.2 Quartic-dominated regime
+
+If the quartic term dominates,
+
+    a M^2 >> 2 |b| ρ_b,
+
+then the field obeys approximately
+
+    M̈ + 3H Ṁ + a M^3 = 0.
+
+In the oscillatory quartic regime,
+
+    ρ_M ∝ a_cos^(-4)
+    M_amp ∝ a_cos^(-1).
+
+So the quartic branch behaves like radiation.
+
+
+9.3 Late-time Hubble-frozen regime
+
+At late times, if Hubble friction dominates,
+
+    3H Ṁ >> a M^3,
+
+then
+
+    3H Ṁ + a M^3 ≈ 0
+
+which integrates to the slow decay law
+
+    M(t) ∝ t^(-1/2).
+
+Thus a nonzero background field can survive and evolve only very
+slowly at late times.
+
+
+--------------------------------------------------------------
+10. LINEAR PERTURBATIONS
+--------------------------------------------------------------
+
+Perturb in Newtonian gauge:
+
+    ds^2 = -(1+2Ψ) dt^2 + A(t)^2 (1-2Φ) δ_{ij} dx^i dx^j.
+
+Expand
+
+    M(t,x) = M̄(t) + δM(t,x)
+
+    ρ_b(t,x) = ρ̄_b(t) + δρ_b(t,x).
+
+The linearized scalar equation is
+
+    δM̈ + 3H δṀ
+    + (k^2/A^2 + 3 a M̄^2 + 2 b ρ̄_b) δM
+    =
+    Ṁ̄ ( Ψ̇ + 3 Φ̇ )
+    - 2 a M̄^3 Ψ
+    - 2 b ρ̄_b M̄ Ψ
+    - 2 b M̄ δρ_b.
+
+Unlike the earlier higher-order overlap choice, the matter density
+perturbation now sources δM directly at linear order.
+
+
+--------------------------------------------------------------
+11. PERTURBATIONS ABOUT THE MATTER-SUPPORTED MINIMUM
+--------------------------------------------------------------
+
+For b < 0, the physically relevant expansion is
+
+    M = M_* + χ
+
+where M_* is the matter-supported minimum.
+
+The minimum shifts under a density perturbation as
+
+    δM_* = (M_*/2) δ_b
+
+where
+
+    δ_b = δρ_b / ρ̄_b.
+
+The fluctuation mass on this branch is
+
+    m_*^2 = 4 |b| ρ̄_b.
+
+In the subhorizon quasi-static regime,
+
+    χ ≈ [ m_*^2 / (k^2/A^2 + m_*^2) ] δM_*.
+
+Thus the scalar perturbation tracks matter perturbations with a
+Yukawa-like screening factor.
+
+
+--------------------------------------------------------------
+12. LEADING-ORDER GROWTH MODIFICATION
+--------------------------------------------------------------
+
+On the minimum branch, the leading effective memory-density
+perturbation is
+
+    δρ_M = β_*(k,a_cos) δρ_b
+
+with
+
+    β_*(k,a_cos)
+      ≈ - (8 |b|^3 / a)
+          ρ̄_b(a_cos)^2
+          / (k^2/A^2 + 4 |b| ρ̄_b(a_cos)).
+
+Equivalently,
+
+    β_*(k,a_cos)
+      ≈ - B(a_cos)
+          [ κ_M^2(a_cos) / (k^2 + κ_M^2(a_cos)) ]
+
+where
+
+    B(a_cos)    = (2 |b|^2 / a) ρ̄_b(a_cos)
+
+    κ_M^2(a_cos) = 4 |b| ρ̄_b(a_cos) A^2.
+
+This is negative for all positive a and |b|, so the theory predicts
+
+    G_eff < G
+
+and therefore suppressed growth.
+
+
+--------------------------------------------------------------
+13. MODIFIED POISSON EQUATION
+--------------------------------------------------------------
+
+The subhorizon Poisson equation becomes
+
+    (k^2/A^2) Φ = 4πG ( δρ_b + δρ_M )
+                = 4πG [1 + β_*(k,a_cos)] δρ_b.
+
+Thus
+
+    G_eff(k,a_cos) = G [ 1 + β_*(k,a_cos) ].
+
+
+--------------------------------------------------------------
+14. LINEAR GROWTH EQUATION
+--------------------------------------------------------------
+
+The baryon growth equation in cosmic time is
+
+    δ̈_b + 2H δ̇_b
+      = 4π G_eff(k,a_cos) ρ̄_b δ_b.
+
+Using N = ln a_cos and primes for d/dN, this becomes
+
+    δ'' + [ 2 + d ln H / dN ] δ'
+      =
+      (3/2) Ω_b(a_cos)
+      [ 1 + β_*(k,a_cos) ]
+      δ.
+
+This is the first directly testable linear-growth prediction of the
+theory.
+
+
+--------------------------------------------------------------
+15. LIMITING REGIMES OF GROWTH
+--------------------------------------------------------------
+
+15.1 Large scales
+
+If
+
+    k^2/A^2 << 4 |b| ρ̄_b
+
+then
+
+    β_* ≈ - (2 |b|^2 / a) ρ̄_b.
+
+So large-scale growth experiences maximal suppression.
+
+
+15.2 Small scales
+
+If
+
+    k^2/A^2 >> 4 |b| ρ̄_b
+
+then
+
+    β_* ≈ - (8 |b|^3 / a) ρ̄_b^2 / (k^2/A^2)
+
+so
+
+    β_* → 0.
+
+Thus GR is recovered on sufficiently small scales.
+
+
+15.3 Redshift dependence
+
+Since
+
+    ρ̄_b ∝ a_cos^(-3),
+
+the suppression evolves with time:
+
+    • earlier times: stronger raw coupling but stronger screening
+    • later times: weaker raw coupling but less screening
+
+Qualitatively this gives a late-time, scale-dependent growth
+suppression.
+
+
+--------------------------------------------------------------
+16. GROWTH INDEX
+--------------------------------------------------------------
+
+Define the growth rate
+
+    f = d ln δ / d ln a = δ'/δ.
+
+Then
+
+    f' + f^2 + [ 2 + d ln H/dN ] f
+      =
+      (3/2) Ω_b(a_cos) [ 1 + β_*(k,a_cos) ].
+
+Using the usual ansatz
+
+    f ≈ Ω_m(a_cos)^γ
+
+the theory predicts
+
+    γ(k,a_cos) > γ_LCDM ≈ 0.55
+
+on the b < 0 branch, with the largest deviation on large scales
+where β_* is most negative.
+
+So the memory theory predicts a scale-dependent increase in the
+growth index and therefore a suppression of clustering.
+
+
+--------------------------------------------------------------
+17. COSMOLOGY–GALAXY LINK
+--------------------------------------------------------------
+
+The same background field that controls cosmological growth also
+controls the galaxy transition scale.
+
+The effective galaxy acceleration scale satisfies
+
+    g_†^2 ∼ (a/|b|) M̄^3
+
+schematically, so the slowly evolving background memory amplitude
+feeds directly into
+
+    • the RAR transition scale
+    • the BTFR normalization
+    • the late-time growth suppression.
+
+Thus the theory has a coherent multiscale structure:
+
+    cosmological background M̄(a)
+        ↓
+    linear growth modification G_eff(k,a)
+        ↓
+    nonlinear galaxy transport
+        M^3 ∝ g_b g_obs.
+
+
+--------------------------------------------------------------
