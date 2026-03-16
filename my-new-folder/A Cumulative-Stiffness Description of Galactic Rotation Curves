@@ -1,0 +1,1111 @@
+A Cumulative-Stiffness Description of Galactic Rotation Curves
+===============================================================
+
+Author: Martin Ollett
+Year: 2026
+
+
+------------------------------------------------------------
+ABSTRACT
+------------------------------------------------------------
+
+We investigate a geometric description of galactic rotation curves
+based on a spatial stiffness field m(r) whose cumulative integral
+determines the gravitational response. In this framework the
+physically relevant quantity is the cumulative stiffness budget
+
+    S(r) = ∫_0^r s^κ m(s) ds
+
+which represents the integrated curvature-memory load of the
+gravitational field in an effective radial measure dμ_r = r^κ dr.
+
+We show that if the normalized rotational velocity follows an
+exponential saturation in cumulative stiffness,
+
+    V(r)/V_inf = 1 − exp[−S(r)/S_c],
+
+then the empirically observed master curve of galaxy rotation curves
+
+    V(r)/V_inf = 1 − exp[−(r/(R_s x_0))^ν]
+
+arises when cumulative stiffness behaves approximately as a power
+law across the observed radial window.
+
+Testing this hypothesis against SPARC galaxy radii shows that the
+observed exponent ν ≈ 0.94 is reproduced by a weighted cumulative
+stiffness law with baryonic loading exponent
+
+    γ ≈ 0.34
+
+and radial accumulation exponent
+
+    κ ≈ −0.2.
+
+The same weighted operator also yields a strong two-variable weighted
+horizon law across the SPARC working sample. These results show that
+the stretched-exponential master curve can arise directly from
+cumulative geometric stiffness rather than requiring additional
+dynamical mass components.
+
+A more accurate interpretation of the field structure is not that
+baryons generate the full gravitational response field from nothing,
+but that they modulate or load an ambient response field already
+present in the gravitational sector.
+
+
+
+------------------------------------------------------------
+1. INTRODUCTION
+------------------------------------------------------------
+
+Galaxy rotation curves exhibit a characteristic universal structure
+when scaled by the asymptotic velocity V_inf and turnover radius R_s.
+
+Empirically, normalized rotation curves collapse onto a stretched
+exponential master curve
+
+    V(r)/V_inf = 1 − exp[−(r/(R_s x_0))^ν].
+
+The origin of this functional form is usually treated as empirical.
+
+In this work we show that the same structure emerges naturally from a
+cumulative-stiffness description of gravity in which the physically
+relevant quantity is the integrated curvature stiffness budget
+
+    S(r) = ∫_0^r s^κ m(s) ds.
+
+Within this framework the stretched-exponential master curve arises
+when orbital velocity saturates exponentially with accumulated
+stiffness and when cumulative stiffness grows approximately as a
+power law across the observed radial range.
+
+
+
+------------------------------------------------------------
+2. THEORY
+------------------------------------------------------------
+
+2.1 The stiffness field
+
+In the MTS curvature-memory framework gravitational dynamics are
+governed by a spatial stiffness field
+
+    m(r)
+
+which determines how curvature accumulates with distance.
+
+In the unweighted description the cumulative stiffness is
+
+    S(r) = ∫_0^r m(s) ds.
+
+In the empirically preferred weighted description introduced below,
+stiffness is accumulated in an effective radial measure
+
+    dμ_r = r^κ dr
+
+so that
+
+    S(r) = ∫_0^r s^κ m(s) ds.
+
+This quantity measures the integrated geometric load experienced by
+the curvature field.
+
+
+2.2 Saturation response
+
+We assume the normalized rotational velocity responds to cumulative
+stiffness through exponential saturation
+
+    V(r)/V_inf = 1 − exp[−S(r)/S_c].
+
+This expresses the idea that orbital velocity approaches an asymptotic
+limit once sufficient cumulative curvature stiffness has accumulated.
+
+
+2.3 Emergence of the master curve
+
+If cumulative stiffness behaves approximately as
+
+    S(r) ∝ r^ν
+
+over the observational radial window, then the saturation law becomes
+
+    V(r)/V_inf = 1 − exp[−(r/(R_s x_0))^ν].
+
+This is exactly the stretched-exponential master curve observed in
+rotation-curve analyses.
+
+
+2.4 Relation between stiffness and exponent
+
+From
+
+    S(r) = ∫_0^r m(s) ds
+
+the local stiffness is
+
+    m(r) = dS/dr.
+
+In the weighted description,
+
+    dS/dr = r^κ m(r).
+
+If
+
+    S(r) ∝ r^ν
+
+then the effective local stiffness slope determines the observed
+master-curve exponent. In the unweighted case,
+
+    m(r) ∝ r^(ν−1).
+
+Equivalently,
+
+    ν_eff(r) = d ln S / d ln r
+             = r m(r) / S(r)
+
+for the unweighted description, while in the weighted description the
+accumulation law modifies the effective local ratio.
+
+For the observed exponent
+
+    ν ≈ 0.94
+
+the implied unweighted stiffness slope is
+
+    m(r) ∝ r^−0.06.
+
+Thus the observed master-curve exponent corresponds to a nearly
+constant stiffness field with a shallow outward decline in the simple
+line-integral picture.
+
+
+
+------------------------------------------------------------
+3. CANDIDATE STIFFNESS PROFILES
+------------------------------------------------------------
+
+Three stiffness families arise naturally within the MTS framework.
+
+
+3.1 Power-law stiffness
+
+    m(r) = m_0 r^−p
+
+giving
+
+    S(r) ∝ r^(1−p)
+
+and therefore
+
+    ν = 1 − p.
+
+Matching
+
+    ν ≈ 0.94
+
+implies
+
+    p ≈ 0.06.
+
+
+3.2 Exponential-core stiffness
+
+    m(r) = m_inf + Δm exp(−r/R_s)
+
+with cumulative stiffness
+
+    S(r) = m_inf r + Δm R_s (1 − exp(−r/R_s)).
+
+Across finite radial ranges this profile generates effective exponents
+slightly below unity.
+
+
+3.3 Density-coupled stiffness
+
+Screened-curvature dynamics suggest
+
+    m(ρ) = m_0 √(1 + β ρ/ρ_ref).
+
+For an exponential baryonic density
+
+    ρ(r) = ρ_0 exp(−r/R_d)
+
+this produces
+
+    m(r) ≈ m_0 [1 + (B/2) exp(−r/R_d)]
+
+and cumulative stiffness
+
+    S(r) ≈ m_0 r + (m_0 B R_d /2)(1 − exp(−r/R_d)).
+
+
+
+------------------------------------------------------------
+4. DATA
+------------------------------------------------------------
+
+The analysis uses the SPARC galaxy database containing high-quality
+rotation curves and baryonic mass models.
+
+For each galaxy we use
+
+    • measured radii
+    • baryonic velocity components
+    • fitted turnover radius R_s.
+
+Galaxies with insufficient sampling were excluded, leaving
+
+    N = 70 galaxies.
+
+
+
+------------------------------------------------------------
+5. EMPIRICAL TESTS
+------------------------------------------------------------
+
+For each candidate stiffness profile we compute
+
+    S(r) = ∫_0^r m(s) ds
+
+or, in the weighted case,
+
+    S(r) = ∫_0^r s^κ m(s) ds
+
+and fit
+
+    log S = A + ν log r
+
+across the observed radial window.
+
+The fitted exponent ν determines whether cumulative stiffness follows
+the scaling required to produce the master curve.
+
+The later SPARC tests also evaluated:
+
+    1. local baryonic stiffness loading
+    2. weighted cumulative accumulation
+    3. master-curve generation from the cumulative field
+    4. weighted horizon relations
+    5. global stiffness-threshold consistency at R_s.
+
+
+
+------------------------------------------------------------
+6. RESULTS
+------------------------------------------------------------
+
+6.1 Unweighted candidate-profile tests
+
+Fitted exponents for the three baseline stiffness models:
+
+    Model                               Median ν
+    ------------------------------------------------
+    power-law stiffness                  0.940
+    density-coupled stiffness            0.947
+    exponential-core stiffness           0.950
+
+The power-law stiffness reproduces the observed exponent exactly,
+while the other physically motivated profiles generate similar
+effective exponents across the SPARC radial window.
+
+
+6.2 Weighted cumulative SPARC result
+
+The later weighted cumulative tests identify an empirically preferred
+local loading law
+
+    m(r) ∝ g_b(r)^γ
+
+with
+
+    γ ≈ 0.34
+
+and a preferred radial accumulation measure
+
+    dμ_r = r^κ dr
+
+with
+
+    κ ≈ −0.2.
+
+The resulting cumulative equation is
+
+    dS/dr = r^κ ( g_b(r) / g_* )^γ.
+
+Across the SPARC working sample this weighted cumulative law produces
+a pooled master-curve exponent close to the observed value,
+
+    ν_pooled ≈ 0.95.
+
+The preferred weighted operator therefore reproduces the observed
+master-curve exponent to good accuracy.
+
+
+6.3 Weighted horizon law
+
+Using the same values
+
+    γ ≈ 0.34,
+    κ ≈ −0.2,
+
+the weighted cumulative field yields the weighted horizon fraction
+
+    f_k = S_k(R_s) / S_{k,tot}
+
+with
+
+    S_k(r) = ∫_0^r s^κ m(s) ds.
+
+Defining
+
+    τ = r_max / R_s
+
+and the weighted local horizon diagnostic
+
+    μ_k = R_s^(1+κ) m(R_s) / S_k(R_s),
+
+the SPARC working sample satisfies the two-variable weighted horizon
+law
+
+    log f_k = A + b log τ + c ( μ_k − μ_0 )
+
+with fitted coefficients
+
+    A   ≈ −0.424
+    b   ≈ −0.586
+    c   ≈ −0.619
+    μ_0 ≈ 1.148
+
+and goodness of fit
+
+    R^2 ≈ 0.941.
+
+This is substantially stronger than the corresponding one-variable
+projection law.
+
+
+6.4 Global stiffness-threshold fit
+
+A single global stiffness coupling constant
+
+    A_stiff ≈ 0.0489
+
+was fitted so that the weighted cumulative field satisfies
+
+    S(R_s) ≈ S_c
+
+across the SPARC sample.
+
+With this single global normalization, the distribution of stiffness
+at the observed turnover radius is
+
+    median S(R_s) = 1.00
+    25–75% range  ≈ 0.63 – 1.33.
+
+This indicates that the turnover radius corresponds to a nearly
+universal cumulative stiffness threshold.
+
+
+
+------------------------------------------------------------
+7. DISCUSSION
+------------------------------------------------------------
+
+7.1 Interpretation of the exponent
+
+The observed master-curve exponent
+
+    ν ≈ 0.94
+
+implies in the simple unweighted case
+
+    S(r) ∼ r^0.94
+
+and therefore
+
+    m(r) ∼ r^−0.06.
+
+Thus the stiffness field is nearly constant with radius with a mild
+outward decline.
+
+
+7.2 Physical interpretation
+
+This behaviour is consistent with
+
+    • shallow background stiffness
+    • finite inner stiffness excess
+    • density-coupled curvature stiffness.
+
+All three mechanisms produce cumulative stiffness growth that is
+close to linear but slightly sublinear.
+
+
+7.3 Connection to baryonic loading
+
+The empirical local stiffness field recovered in the Colab tests is
+
+    m(r) ∝ g_b(r)^γ
+
+with
+
+    γ ≈ 0.34.
+
+If baryonic acceleration behaves approximately as
+
+    g_b(r) ∝ r^−q
+
+then
+
+    m(r) ∝ r^(−γ q).
+
+In the weighted model the cumulative budget becomes
+
+    S(r) = ∫_0^r s^κ g_b(s)^γ ds.
+
+Thus the master-curve exponent reflects both baryonic loading and the
+effective radial accumulation measure.
+
+
+7.4 Background response field interpretation
+
+The empirical results do not require baryons to generate the full
+gravitational response field from nothing. A more accurate
+interpretation is that an ambient response or stiffness field already
+exists in the galactic gravitational sector, and that baryonic
+structure modulates how strongly this field is locally loaded and
+cumulatively activated.
+
+Accordingly, the local stiffness is written as
+
+    m(r) = m_bg(r) + δm_b(r),
+
+where
+
+    m_bg(r)
+
+is the background response field and
+
+    δm_b(r)
+
+is the baryonic modulation.
+
+The simplest tested modulation law is
+
+    m(r) = m_0 + B ( g_b(r) / g_* )^γ,
+
+where
+
+    m_0
+
+is the background stiffness floor,
+
+    B
+
+is the baryonic coupling amplitude,
+
+and
+
+    γ ≈ 0.34
+
+is the fitted baryonic response exponent.
+
+In this form, baryons do not create the field itself; rather, they
+increase the local stiffness above a background level.
+
+
+
+------------------------------------------------------------
+8. TESTABLE PREDICTIONS
+------------------------------------------------------------
+
+The cumulative-stiffness framework predicts that the master-curve
+exponent is controlled by the baryonic loading field together with the
+effective accumulation measure.
+
+Consequences:
+
+1. galaxies with steeper baryonic acceleration profiles should exhibit
+   smaller effective cumulative exponents
+
+2. galaxies with extended baryonic disks should produce ν closer to 1
+
+3. deviations from the master curve correspond to local variations in
+   the effective cumulative-stiffness structure
+
+4. the same weighted operator that generates the master curve should
+   also organize the weighted horizon relation across galaxies
+
+5. the turnover radius should correspond to a nearly universal
+   cumulative stiffness threshold
+
+       S(R_s) ≈ S_c.
+
+
+
+------------------------------------------------------------
+9. CONCLUSION
+------------------------------------------------------------
+
+A cumulative-stiffness description of gravity naturally generates the
+empirical master curve of galactic rotation curves.
+
+The chain
+
+    m(r)
+      ↓
+    S(r) = ∫ cumulative stiffness budget
+      ↓
+    V(r)/V_inf
+
+produces the observed stretched-exponential velocity profile when
+cumulative stiffness behaves approximately as a power law across the
+observed radial interval.
+
+The original unweighted interpretation corresponds to a nearly
+constant gravitational stiffness field with a mild outward decline.
+The later weighted cumulative analysis shows that the SPARC data favour
+a more specific operator-based description in which
+
+    m(r) ∝ g_b(r)^0.34
+
+and
+
+    dS/dr = r^(−0.2) m(r).
+
+This same weighted cumulative law reproduces the master-curve exponent
+and yields a strong weighted two-variable horizon relation across the
+SPARC working sample.
+
+The preferred physical interpretation is not that baryons generate the
+entire gravitational response field, but that they modulate an ambient
+response field already present in the gravitational sector. The central
+remaining first-principles problem is therefore the origin of the
+effective radial accumulation measure
+
+    dμ_r = r^(−0.2) dr
+
+or equivalently the effective radial metric coefficient
+
+    g_rr = r^(−0.4).
+
+
+
+------------------------------------------------------------
+APPENDIX A — METHODS AND COLAB TESTS
+------------------------------------------------------------
+
+Numerical tests were performed using SPARC galaxy data within Google
+Colab.
+
+A.1 Baseline unweighted master-curve tests
+
+The early cumulative-stiffness tests used the unweighted map
+
+    S(r) = ∫_0^r m(s) ds
+
+and recovered the corrected master-curve exponents
+
+    power-law stiffness         ν = 0.940
+    density-coupled stiffness   ν = 0.947
+    exponential-core stiffness  ν = 0.950.
+
+
+A.2 Local baryonic loading field
+
+The later SPARC tests found an empirical local stiffness loading law
+
+    m(r) ∝ g_b(r)^γ
+
+with best-fit value
+
+    γ ≈ 0.34.
+
+
+A.3 Weighted cumulative operator
+
+The cumulative operator preferred by the SPARC master-curve test is
+
+    S(r) = ∫_0^r s^κ m(s) ds
+
+with best-fit radial weighting exponent
+
+    κ ≈ −0.2.
+
+This implies the differential field equation
+
+    dS/dr = r^κ m(r).
+
+For the preferred fitted values,
+
+    dS/dr = r^(−0.2) ( g_b(r) / g_* )^0.34.
+
+
+A.4 Weighted master-curve result
+
+Using the weighted cumulative field with
+
+    γ ≈ 0.34
+    κ ≈ −0.2
+
+the pooled SPARC master-curve exponent is recovered to good accuracy,
+
+    ν_pooled ≈ 0.95.
+
+
+A.5 Weighted horizon law
+
+Defining
+
+    S_k(r) = ∫_0^r s^κ m(s) ds
+    f_k    = S_k(R_s) / S_{k,tot}
+    τ      = r_max / R_s
+    μ_k    = R_s^(1+κ) m(R_s) / S_k(R_s),
+
+the weighted two-variable horizon law takes the form
+
+    log f_k = A + b log τ + c ( μ_k − μ_0 )
+
+with fitted values
+
+    A   ≈ −0.424
+    b   ≈ −0.586
+    c   ≈ −0.619
+    μ_0 ≈ 1.148
+
+and
+
+    R^2 ≈ 0.941.
+
+This is substantially stronger than the corresponding one-variable
+projection law.
+
+
+A.6 Global stiffness-threshold calibration
+
+A single global stiffness coupling constant
+
+    A_stiff ≈ 0.0489
+
+brings the cumulative stiffness at the fitted turnover radius close to
+a universal saturation threshold:
+
+    median S(R_s) = 1.00
+    interquartile range ≈ 0.63 – 1.33.
+
+This indicates that the turnover radius corresponds to the point at
+which the cumulative stiffness budget reaches order unity.
+
+
+A.7 Effective field and geometric interpretations
+
+Several effective-theory interpretations were explored during the
+Colab sequence.
+
+A weighted cumulative operator may be written as
+
+    D_κ = r^(−κ) d/dr
+
+so that
+
+    D_κ S = m.
+
+Its inverse kernel is
+
+    G_κ(r,s) = H(r−s) s^κ.
+
+The effective accumulation coordinate is
+
+    u(r) = ∫_0^r s^κ ds = r^(1+κ)/(1+κ),
+
+and the corresponding minimal effective spatial metric is
+
+    dℓ^2 = r^(2κ) dr^2 + r^2 dΩ^2.
+
+For κ ≈ −0.2 this gives
+
+    g_rr = r^(−0.4).
+
+A minimal one-dimensional variational formulation in the effective
+proper radial coordinate u is
+
+    I[m,S,λ]
+      = ∫ du [
+            α/2 ( m - m_bg(u) )^2
+          - β Ψ(g_b(u)) m
+          + λ(u) ( dS/du - m )
+        ]
+
+with
+
+    Ψ(g_b) = ( g_b / g_* )^γ.
+
+This yields the background-plus-modulation law
+
+    m(u) = m_bg*(u) + B ( g_b(u) / g_* )^γ
+
+together with the cumulative relation
+
+    dS/du = m.
+
+These constructions show that the weighted cumulative law may be
+embedded in a minimal effective geometric theory, although the origin
+of the preferred radial measure exponent κ remains unresolved.
+
+
+
+------------------------------------------------------------
+REFERENCES
+------------------------------------------------------------
+
+McGaugh, S. S., Lelli, F., & Schombert, J. M. (2016).
+Radial Acceleration Relation in Rotationally Supported Galaxies.
+Physical Review Letters, 117, 201101.
+
+https://doi.org/10.1103/PhysRevLett.117.201101
+
+Lelli, F., McGaugh, S. S., & Schombert, J. M. (2016).
+SPARC: Mass Models for 175 Disk Galaxies with Spitzer Photometry
+and Accurate Rotation Curves.
+Astronomical Journal, 152, 157.
+
+https://doi.org/10.3847/0004-6256/152/6/157
+
+Lelli, F., McGaugh, S. S., & Schombert, J. M. (2017).
+SPARC: The Spitzer Photometry and Accurate Rotation Curves
+Database.
+Astronomy & Astrophysics, 598, A76.
+
+https://doi.org/10.1051/0004-6361/201629748
+
+Persic, M., Salucci, P., & Stel, F. (1996).
+The Universal Rotation Curve of Spiral Galaxies.
+Monthly Notices of the Royal Astronomical Society, 281, 27–47.
+
+https://doi.org/10.1093/mnras/281.1.27
+
+Salucci, P., Lapi, A., Tonini, C., Gentile, G., Yegorova, I., &
+Klein, U. (2007).
+The Universal Rotation Curve of Spiral Galaxies II.
+Monthly Notices of the Royal Astronomical Society, 378, 41–47.
+
+https://doi.org/10.1111/j.1365-2966.2007.11696.x
+
+Freeman, K. C. (1970).
+On the Disks of Spiral and S0 Galaxies.
+Astrophysical Journal, 160, 811.
+
+https://doi.org/10.1086/150474
+
+Binney, J., & Tremaine, S. (2008).
+Galactic Dynamics (2nd Edition).
+Princeton University Press.
+
+------------------------------------------------------------
+2.X SELF-CONSISTENT METRIC CLOSURE
+------------------------------------------------------------
+
+The empirical weighted cumulative law can be embedded in a coupled
+metric-stiffness system rather than imposed directly as a fitted
+one-dimensional operator.
+
+We write the effective radial metric in the form
+
+    dℓ^2 = exp[2ψ(r)] dr^2 + r^2 dΩ^2,
+
+so that the proper radial measure is
+
+    du = exp[ψ(r)] dr.
+
+The cumulative stiffness field then obeys
+
+    dS/dr = exp[ψ(r)] m(r).
+
+For the baryonic loading law identified from the SPARC tests we take
+
+    m(r) = B ( g_b(r) / g_* )^γ,
+
+with
+
+    γ ≈ 0.34.
+
+The cumulative field equation is therefore
+
+    dS/dr = exp[ψ(r)] B ( g_b(r) / g_* )^0.34.
+
+
+2.X.1 Saturated metric response
+
+The simplest successful nontrivial metric closure found in the Colab
+tests was a normalized saturated response of the radial metric to the
+cumulative stiffness field. Defining
+
+    q(r) = r ψ'(r),
+
+the metric sector is taken to satisfy
+
+    d/dr [ r ψ'(r) ]
+      = η [ 1 - exp(−S(r)/S_c) ] / S(R_s),
+
+where S(R_s) is the self-consistently determined cumulative stiffness
+at the fitted turnover radius.
+
+This gives the coupled system
+
+    dS/dr = exp[ψ(r)] B ( g_b(r) / g_* )^0.34
+
+    d/dr [ r ψ'(r) ] = η [ 1 - exp(−S/S_c) ] / S(R_s).
+
+The effective weighted exponent is then not inserted by hand, but is
+generated dynamically as
+
+    κ_eff(r) = r ψ'(r).
+
+
+2.X.2 Local horizon-state stabilization
+
+Direct tests of the saturated metric response reproduce the observed
+weighted exponent in the sample median, but leave substantial
+galaxy-to-galaxy scatter. Scatter diagnostics show that the remaining
+dispersion correlates with the local horizon-state variable
+
+    μ_k(r) = r m(r) / S(r),
+
+where
+
+    m(r) = exp[−ψ(r)] dS/dr.
+
+The most successful refined closure therefore introduces a local
+stabilizer centered on the sample horizon state μ_0:
+
+    d/dr [ r ψ'(r) ]
+      = η [ 1 - exp(−S/S_c) ] / S(R_s)
+        × 1 / [ 1 + λ ( μ_k(r) - μ_0 )^2 ].
+
+The full best-tested system is thus
+
+    dS/dr = exp[ψ(r)] B ( g_b(r) / g_* )^0.34
+
+    d/dr [ r ψ'(r) ]
+      = η [ 1 - exp(−S/S_c) ] / S(R_s)
+        × 1 / [ 1 + λ ( μ_k(r) - μ_0 )^2 ]
+
+    V(r)/V_inf = 1 - exp[−S(r)/S_c].
+
+The best-performing parameter values found in the working sample are
+
+    B     ≈ 0.048905
+    γ     ≈ 0.34
+    η     ≈ −0.05
+    λ     ≈ 0.5
+    μ_0   ≈ 1.2995
+    S_c   = 1
+    m_0   = 0.
+
+
+2.X.3 Interpretation
+
+This closure has three important features.
+
+First, the observed weighted radial exponent is no longer imposed as an
+external fit. Instead it is generated dynamically through the metric
+field variable
+
+    κ_eff(r) = r ψ'(r).
+
+Second, the geometry responds not to raw cumulative stiffness alone but
+to a saturated stiffness activation,
+
+    1 - exp(−S/S_c),
+
+which prevents the strongest runaway behaviour found in unsaturated
+closures.
+
+Third, the local horizon-state stabilizer suppresses excessive radial
+compression in galaxies whose local stiffness ratio deviates strongly
+from the sample horizon state μ_0.
+
+In this formulation the weighted operator
+
+    dS/dr = r^κ m(r)
+
+is replaced by a dynamically generated effective measure
+
+    dS/dr = exp[ψ(r)] m(r),
+
+with
+
+    exp[ψ(r)] ≈ r^κ_eff(r)
+
+over the observed galaxy window.
+
+
+
+------------------------------------------------------------
+6.X RESULTS FOR THE SELF-CONSISTENT METRIC CLOSURE
+------------------------------------------------------------
+
+The self-consistent metric closure was tested across the SPARC working
+sample of 70 galaxies.
+
+For the normalized saturated metric response without local
+stabilization, the best closure produced
+
+    median S(R_s)        ≈ 1.068
+    median κ_eff         ≈ −0.211
+    median κ scatter     ≈ 0.148
+    pooled ν             ≈ 0.9449
+    weighted horizon R^2 ≈ 0.9422.
+
+Thus the weighted radial exponent was generated dynamically in the
+median sense while preserving both the master-curve and weighted
+horizon relations.
+
+Introducing the local horizon-state stabilizer and scanning the
+stabilization strength λ gave the best result at
+
+    λ = 0.5.
+
+For this refined closure the sample statistics become
+
+    median S(R_s)        ≈ 1.068
+    median κ_eff         ≈ −0.1997
+    median κ scatter     ≈ 0.135
+    pooled ν             ≈ 0.9474
+    pooled x_0           ≈ 1.0005
+    weighted horizon R^2 ≈ 0.9478.
+
+Thus the μ_k-stabilized metric closure improves the effective-exponent
+scatter while preserving the two principal empirical successes of the
+framework: the pooled stretched-exponential master curve and the
+weighted two-variable horizon law.
+
+
+6.X.1 Interpretation of the closure test
+
+These results show that the empirically preferred weighted exponent is
+not merely a static fitting artifact. A coupled metric-stiffness system
+with a saturated metric response can generate
+
+    κ_eff ≈ −0.2
+
+self-consistently in the sample median, and the addition of a mild
+local horizon-state stabilizer improves the internal consistency of the
+closure.
+
+The data therefore support the following hierarchy of descriptions:
+
+1. the original weighted operator
+       dS/dr = r^(−0.2) m(r)
+   is an excellent effective summary of the galaxy-scale behaviour;
+
+2. this operator can be generated approximately by a coupled metric
+   field through
+       exp[ψ(r)] ≈ r^κ_eff(r);
+
+3. the most successful current first-principles candidate is the
+   self-consistent μ_k-stabilized saturated metric closure written
+   above.
+
+
+6.X.2 Remaining limitation
+
+The closure is not yet a final universal derivation. Although the
+median effective exponent is reproduced accurately and the scatter is
+reduced, substantial galaxy-to-galaxy variation remains in κ_eff(r).
+
+Accordingly, the current status of the theory is:
+
+    the weighted operator has been elevated from a fitted one-dimensional
+    law to a dynamically generated effective metric response, but the
+    local stabilization of κ_eff remains incomplete.
+
+This is the remaining gap between the present effective-geometric
+description and a fully derived first-principles galaxy-scale theory.
+
+
+
+------------------------------------------------------------
+7.X UPDATED PHYSICAL INTERPRETATION
+------------------------------------------------------------
+
+The cumulative-stiffness framework is therefore best interpreted as a
+background gravitational response field modulated by baryonic loading
+and accumulated in an emergent effective radial geometry.
+
+In its strongest current form the framework consists of:
+
+    baryonic loading:
+        m(r) = B ( g_b(r) / g_* )^0.34
+
+    cumulative field:
+        dS/dr = exp[ψ(r)] m(r)
+
+    metric response:
+        d/dr [ r ψ'(r) ]
+          = η [ 1 - exp(−S/S_c) ] / S(R_s)
+            × 1 / [ 1 + λ ( μ_k(r) - μ_0 )^2 ]
+
+    velocity response:
+        V(r)/V_inf = 1 - exp[−S/S_c].
+
+This chain generates the observed galaxy master curve while also
+producing the effective weighted radial exponent dynamically in the
+sample median.
+
+The remaining first-principles problem is now sharply defined:
+
+    what fundamental geometric or dynamical principle fixes the local
+    horizon-state stabilization and thereby collapses the residual
+    galaxy-to-galaxy scatter in κ_eff ?
+
+
+
+------------------------------------------------------------
+9.X UPDATED CONCLUSION
+------------------------------------------------------------
+
+The cumulative-stiffness program has progressed beyond a purely
+phenomenological weighted operator.
+
+The SPARC working sample supports a baryon-loaded cumulative stiffness
+law with
+
+    γ ≈ 0.34
+
+and an effective weighted exponent near
+
+    κ ≈ −0.2.
+
+The weighted operator itself is reproduced empirically with high
+accuracy, and the most successful tested metric closure now generates
+this exponent dynamically in the sample median while preserving both
+
+    the pooled stretched-exponential master curve
+
+and
+
+    the weighted two-variable horizon law.
+
+The strongest current closure is the self-consistent μ_k-stabilized
+saturated metric response,
+
+    d/dr [ r ψ'(r) ]
+      = η [ 1 - exp(−S/S_c) ] / S(R_s)
+        × 1 / [ 1 + λ ( μ_k(r) - μ_0 )^2 ],
+
+coupled to
+
+    dS/dr = exp[ψ(r)] B ( g_b(r) / g_* )^0.34.
+
+For the best tested parameters this gives
+
+    median κ_eff         ≈ −0.200
+    pooled ν             ≈ 0.947
+    weighted horizon R^2 ≈ 0.948.
+
+Thus the weighted cumulative law is no longer merely an inserted fit:
+it can be generated approximately from a coupled metric-stiffness
+system.
+
