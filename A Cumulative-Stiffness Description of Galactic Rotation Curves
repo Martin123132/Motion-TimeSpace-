@@ -1,5 +1,5 @@
 A Cumulative-Stiffness Description of Galactic Rotation Curves
-==============================================================
+=============================================================
 
 Author: Martin Ollett
 Year: 2026
@@ -11,15 +11,10 @@ ABSTRACT
 
 We investigate a cumulative-stiffness description of galactic
 rotation curves in which the gravitational response is governed not
-primarily by Euclidean radius, but by an accumulated baryonic
-stiffness coordinate
+primarily by Euclidean radius, but by an accumulated stiffness
+coordinate
 
-    u(r) = ∫_0^r m_b(s) ds,
-
-with baryonic loading field
-
-    m_b(r) = ( g_b(r) / g_* )^γ,
-    g_b(r) = V_b(r)^2 / r.
+    u(r) = ∫_0^r m(s) ds.
 
 The normalized rotational velocity is taken to follow exponential
 saturation in a cumulative response field S(r),
@@ -27,7 +22,7 @@ saturation in a cumulative response field S(r),
     V(r)/V_inf = 1 − exp[−S(r)].
 
 The central empirical result of the SPARC tests is that when the
-response is expressed in the baryonic stiffness coordinate u, the
+response is expressed in the cumulative stiffness coordinate u, the
 field becomes nearly linear:
 
     S(u) ≈ C + A u,
@@ -36,12 +31,14 @@ with median linear-fit goodness
 
     R^2 ≈ 0.999
 
-across the working sample.
+across the working sample. Equivalently,
 
-This implies that the previously inferred weighted radial operators
-and nonlocal kernel reconstructions are effective r-space
-representations of a simpler underlying accumulation law in source
-coordinate.
+    dS/du ≈ const.
+
+This implies that the weighted radial operators and nonlocal kernel
+reconstructions explored earlier are best interpreted as effective
+r-space representations of a simpler underlying accumulation law in
+source coordinate.
 
 Normalizing by the turnover-scale stiffness budget u(R_s) yields the
 zero-free-parameter response law
@@ -64,11 +61,26 @@ close to the empirical target values
     ν ≈ 0.953,
     x_0 ≈ 1.003.
 
-These results indicate that the observed master curve can be
-understood as linear accumulation in cumulative baryonic stiffness
-coordinate followed by exponential saturation, without requiring a
-fundamental weighted radial operator or additional dynamical mass
-components.
+Two source constructions were explored for the local loading field.
+The first uses baryonic loading alone,
+
+    m_b(r) = ( g_b(r) / g_* )^γ,
+    g_b(r) = V_b(r)^2 / r,
+
+with empirically preferred exponent
+
+    γ ≈ 0.34.
+
+The second uses a symmetric hybrid loading law,
+
+    m(r) ∝ [ g_b(r) g_obs(r) ]^(1/3),
+
+which also reproduces the observed master-curve structure and yields
+forward radial-acceleration slopes close to those measured directly in
+the working sample. In this sense, the observed galaxy master curve is
+consistent with linear accumulation in cumulative stiffness coordinate
+followed by exponential saturation, while the remaining theoretical
+question concerns the origin of the local loading law itself.
 
 
 
@@ -77,9 +89,8 @@ components.
 ------------------------------------------------------------
 
 Galaxy rotation curves exhibit a characteristic universal structure
-when scaled by the asymptotic velocity V_inf and turnover radius R_s.
-
-Empirically, normalized rotation curves collapse onto a stretched
+when scaled by asymptotic velocity V_inf and turnover radius R_s.
+Empirically, normalized rotation curves collapse onto a stretched-
 exponential master curve
 
     V(r)/V_inf = 1 − exp[−(r/(R_s x_0))^ν].
@@ -87,15 +98,26 @@ exponential master curve
 The origin of this functional form is usually treated as empirical.
 
 In this work we show that the same structure emerges naturally from a
-cumulative-stiffness description of gravity in which the relevant
-coordinate is not radius alone, but the accumulated baryonic loading
-budget
+cumulative-stiffness description in which the relevant coordinate is
+not radius alone, but an accumulated loading budget
 
-    u(r) = ∫_0^r m_b(s) ds.
+    u(r) = ∫_0^r m(s) ds.
 
 Within this framework the galaxy response field S is found to be
 approximately linear in u, and the observed rotation-curve master
-curve follows from exponential saturation of that accumulated response.
+curve follows from exponential saturation of that accumulated
+response.
+
+The main empirical claim of the paper is therefore not a new fitted
+radial formula, but a reduction of the problem:
+
+    the observed stretched-exponential curve in r-space is the
+    projection of a simpler near-linear accumulation law in
+    cumulative stiffness coordinate.
+
+Earlier weighted operators and kernel interpretations are retained as
+useful effective descriptions, but are no longer treated as
+fundamental once the source coordinate u is used.
 
 
 
@@ -103,10 +125,31 @@ curve follows from exponential saturation of that accumulated response.
 2. THEORY
 ------------------------------------------------------------
 
-2.1 Baryonic stiffness loading
+2.1 Cumulative response framework
 
-In the MTS curvature-memory framework we describe the galaxy-scale
-source loading by an effective baryonic stiffness field
+We introduce a cumulative stiffness coordinate
+
+    u(r) = ∫_0^r m(s) ds,
+
+where m(r) is the local loading or response-density field. The
+normalized cumulative response field is written
+
+    S(r) = u(r) / u(R_s),
+
+and the observable velocity response is assumed to saturate
+exponentially:
+
+    V(r)/V_inf = 1 − exp[−S(r)].
+
+Thus the complete dynamical content of the model is carried by the
+loading field m(r), while the mapping from radius to observable
+velocity is fixed by cumulative normalization and exponential
+saturation.
+
+
+2.2 Baryonic loading form
+
+The first local source law considered is baryonic loading,
 
     m_b(r) = ( g_b(r) / g_* )^γ,
 
@@ -115,30 +158,23 @@ where
     g_b(r) = V_b(r)^2 / r
 
 is the baryonic acceleration profile, g_* is a reference acceleration,
-and γ is the baryonic loading exponent.
+and γ is a loading exponent.
 
-The cumulative baryonic stiffness coordinate is then
+This gives the cumulative baryonic stiffness coordinate
 
-    u(r) = ∫_0^r m_b(s) ds
-         = ∫_0^r ( g_b(s) / g_* )^γ ds.
+    u_b(r) = ∫_0^r ( g_b(s) / g_* )^γ ds.
 
+When this construction is used, the SPARC tests identify a preferred
+effective exponent
 
-2.2 Response field
-
-We introduce a cumulative response field S(r) and assume that the
-normalized orbital velocity saturates exponentially in S:
-
-    V(r)/V_inf = 1 − exp[−S(r)].
-
-This expresses the idea that orbital motion approaches its asymptotic
-state once sufficient cumulative baryonic stiffness has been loaded.
+    γ ≈ 0.34.
 
 
-2.3 First-principles reduction
+2.3 Source-coordinate reduction
 
-The central empirical reduction found in the SPARC tests is that the
-response field becomes nearly linear when written in the source
-coordinate u:
+The decisive empirical reduction found in the SPARC tests is that the
+response field becomes nearly linear when written in cumulative source
+coordinate:
 
     S(u) ≈ C + A u.
 
@@ -146,16 +182,16 @@ Equivalently,
 
     dS/du ≈ const.
 
-This means that the complicated weighted operators and kernel
+This means that the more complicated weighted operators and kernel
 descriptions explored earlier are not fundamental. They are effective
-representations of a much simpler law written in the wrong variable.
+descriptions of a simpler law written in the wrong variable.
 
-The natural normalized form is obtained by using the turnover-scale
-source budget u(R_s) as the response normalization:
+Using the turnover-scale stiffness budget u(R_s) for normalization
+gives the natural zero-free-parameter law
 
-    S(r) = u(r) / u(R_s).
+    S(r) = u(r) / u(R_s),
 
-This yields the parameter-free law
+hence
 
     V(r)/V_inf = 1 − exp[−u(r)/u(R_s)].
 
@@ -169,7 +205,7 @@ observed galaxy window:
     V(r)/V_inf = 1 − exp[−(r/(R_s x_0))^ν].
 
 Thus the observed master-curve parameters (x_0, ν) arise as the
-r-space projection of a simpler linear accumulation law in baryonic
+r-space projection of a simpler linear accumulation law in cumulative
 stiffness coordinate.
 
 
@@ -179,13 +215,53 @@ The normalized response law
 
     S(r) = u(r) / u(R_s)
 
-implies the direct field equation
+implies
 
-    dS/dr = ( g_b(r) / g_* )^γ / u(R_s).
+    dS/dr = m(r) / u(R_s).
 
-Hence the galaxy response at each radius is set by local baryonic
-loading, while the normalization is determined by the total baryonic
-stiffness budget accumulated up to the turnover radius.
+Thus the response gradient at each radius is set by the local loading
+field, while the overall normalization is set by the total stiffness
+budget accumulated up to the turnover radius.
+
+
+2.6 Hybrid cube-root loading law
+
+A later extension replaces purely baryonic loading by a symmetric
+hybrid law involving both baryonic and realized accelerations:
+
+    m(r) ∝ [ g_b(r) g_obs(r) ]^(1/3),
+
+where
+
+    g_obs(r) = V_obs(r)^2 / r.
+
+This form is motivated empirically by the later SPARC tests and
+structurally by the requirement of marginal cumulative transport in
+the outer galaxy. Under the outer asymptotics
+
+    g_b(r) ~ G M_b / r^2,
+    g_obs(r) ~ V_inf^2 / r,
+
+the product scales as
+
+    g_b g_obs ~ r^(-3),
+
+so the cube-root law gives
+
+    m(r) ~ r^(-1),
+
+hence
+
+    u(r) ~ ln r.
+
+This logarithmic accumulation is the marginal case between divergent
+outer accumulation and overly localized inner accumulation, making the
+cube-root law the natural symmetric scale-free transport law in this
+class of cumulative response systems.
+
+The hybrid law does not replace the u-space reduction; rather, it
+provides a candidate local loading field for the same cumulative
+response framework.
 
 
 
@@ -198,8 +274,7 @@ r-space descriptions were explored.
 
 3.1 Unweighted candidate stiffness profiles
 
-The initial tests considered unweighted cumulative stiffness laws of
-the form
+The initial tests considered cumulative laws of the form
 
     S(r) = ∫_0^r m(s) ds
 
@@ -235,7 +310,7 @@ two-variable horizon relation across the working sample.
 
 Subsequent tests showed that neither a universal nonlocal kernel nor a
 fundamental weighted radial measure is required once the response is
-written in baryonic stiffness coordinate u.
+written in cumulative stiffness coordinate u.
 
 The weighted operator is therefore best interpreted as an effective
 r-space approximation to the simpler source-coordinate law
@@ -255,6 +330,7 @@ For each galaxy we use
 
     • measured radii
     • baryonic velocity components
+    • observed rotation curves
     • fitted turnover radius R_s.
 
 Galaxies with insufficient sampling were excluded, leaving
@@ -269,7 +345,7 @@ in the working sample used for the cumulative-stiffness tests.
 5. EMPIRICAL TESTS
 ------------------------------------------------------------
 
-The Colab analysis proceeded in four stages.
+The Colab analysis proceeded in several stages.
 
 5.1 Baseline cumulative-stiffness tests
 
@@ -295,12 +371,20 @@ An effective weighted cumulative operator of the form
 was tested and found to reproduce the pooled master curve and weighted
 horizon law with κ near −0.2.
 
-5.4 Source-coordinate reduction
+5.4 Kernel and metric-closure tests
 
-The decisive later tests introduced the cumulative baryonic stiffness
+Kernel reconstructions, smoothed anchor models, and self-consistent
+metric closures were explored as possible first-principles origins of
+the weighted operator. These descriptions proved useful as effective
+intermediate models but did not isolate a universal underlying kernel
+or exact metric law.
+
+5.5 Source-coordinate reduction
+
+The decisive later tests introduced the cumulative stiffness
 coordinate
 
-    u(r) = ∫_0^r ( g_b(s) / g_* )^γ ds
+    u(r) = ∫_0^r m(s) ds
 
 and examined the reconstructed response S(u).
 
@@ -309,7 +393,21 @@ These tests showed:
     1. S(u) is nearly linear galaxy by galaxy
     2. dS/du is nearly constant
     3. the parameter-free normalization S = u/u(R_s) reproduces the
-       validated pooled master curve to good accuracy.
+       validated pooled master curve to good accuracy
+
+for the baryonic-loading construction.
+
+5.6 Hybrid loading tests
+
+The local source law was then generalized to the symmetric hybrid form
+
+    m(r) ∝ [ g_b(r) g_obs(r) ]^(1/3),
+
+and tested against both the pooled master curve and the radial-
+acceleration relation. These tests showed that the same cumulative
+framework continues to reproduce the observed rotation-curve collapse,
+while the forward-predicted RAR slopes closely match those measured
+directly from the working sample.
 
 
 
@@ -343,11 +441,10 @@ with best-fit value
     γ ≈ 0.34.
 
 
-6.3 Linear response in baryonic stiffness coordinate
+6.3 Linear response in cumulative stiffness coordinate
 
 The central first-principles result is that the reconstructed response
-field becomes nearly linear in cumulative baryonic stiffness
-coordinate:
+field becomes nearly linear in cumulative stiffness coordinate:
 
     S(u) ≈ C + A u.
 
@@ -358,9 +455,7 @@ Across the working sample the linear fit gives
 
 while the derivative test gives
 
-    median CV(dS/du)    ≈ 0.053
-
-after trimming outliers.
+    trimmed median CV(dS/du) ≈ 0.053.
 
 Thus the response density in u-space is nearly constant:
 
@@ -375,28 +470,26 @@ The same tests show that a nontrivial power-law response
 
 is not preferred. The fitted exponents are very small,
 
-    trimmed median α ≈ 0.029
+    trimmed median α ≈ 0.029,
 
 and the power-law fits are poor compared with the linear model.
 
-This shows that the natural first-principles structure is not a power
-law in u, but linear accumulation.
+This indicates that the natural first-principles structure is not a
+power law in u, but linear accumulation.
 
 
 6.5 Zero-free-parameter response law
 
-Normalizing the response by the turnover-scale baryonic stiffness
-budget yields
+Normalizing the response by the turnover-scale stiffness budget gives
 
-    S(r) = u(r) / u(R_s)
+    S(r) = u(r) / u(R_s),
 
-and therefore
+hence
 
     V(r)/V_inf = 1 − exp[−u(r)/u(R_s)].
 
-This model contains no additional fitted normalization constants.
-
-Direct comparison against the validated pooled master curve gives
+For the baryonic-loading construction, direct comparison against the
+validated pooled master curve gives
 
     median RMSE         ≈ 0.044
     mean RMSE           ≈ 0.053
@@ -415,7 +508,46 @@ close to the empirical reference values
     x_0_ref             ≈ 1.003.
 
 
-6.6 Reinterpretation of earlier weighted descriptions
+6.6 Hybrid cube-root loading
+
+The best symmetric hybrid loading family was found to be close to
+
+    m(r) ∝ [ g_b(r) g_obs(r) ]^(1/3).
+
+For the exact cube-root law, the cumulative response model gives
+
+    median galaxy RMSE to target   ≈ 0.054
+    pooled RMSE to target          ≈ 0.063
+    pooled ν                       ≈ 1.080
+    pooled x_0                     ≈ 0.985.
+
+Thus the cube-root law reproduces the validated master-curve shape at
+comparable accuracy while using a structurally distinguished exponent.
+
+
+6.7 Forward RAR test
+
+Using the exact cube-root loading law in the cumulative response
+model and forward-computing the implied observed acceleration gives
+
+    global slope (predicted)       ≈ 0.666
+    global slope (observed)        ≈ 0.656
+
+and in the low-acceleration subset
+
+    low-g_b slope (predicted)      ≈ 0.399
+    low-g_b slope (observed)       ≈ 0.409
+
+with
+
+    log RMSE(predicted vs observed) ≈ 0.171.
+
+Thus the same cumulative cube-root loading law that reproduces the
+rotation-curve master-curve structure also generates radial-
+acceleration slopes close to those measured directly from the data.
+
+
+6.8 Reinterpretation of earlier weighted descriptions
 
 The earlier effective weighted operator with κ ≈ −0.2 reproduced the
 data well, but subsequent kernel and coordinate tests showed that it
@@ -424,7 +556,10 @@ is not a universal underlying kernel law.
 Instead, the weighted radial description is best interpreted as an
 effective r-space representation of the simpler first-principles law
 
-    S(r) = u(r) / u(R_s).
+    S(r) = u(r) / u(R_s),
+
+with the remaining open issue shifted to the origin of the loading
+field m(r) itself.
 
 
 
@@ -434,13 +569,13 @@ effective r-space representation of the simpler first-principles law
 
 7.1 What is fundamental
 
-The data support the following hierarchy:
+The tests support the following hierarchy:
 
-    baryonic loading:
-        m_b(r) = ( g_b(r) / g_* )^γ
+    local loading:
+        m(r)
 
     source coordinate:
-        u(r) = ∫_0^r m_b(s) ds
+        u(r) = ∫_0^r m(s) ds
 
     linear response:
         dS/du ≈ const
@@ -454,15 +589,24 @@ The data support the following hierarchy:
 This is the most compact first-principles form isolated by the SPARC
 tests.
 
+For a baryonic-only construction one may take
+
+    m(r) = ( g_b(r) / g_* )^γ,
+    γ ≈ 0.34.
+
+For a symmetric source-response construction one may instead take
+
+    m(r) ∝ [ g_b(r) g_obs(r) ]^(1/3).
+
 
 7.2 What is effective
 
 The weighted radial operator
 
-    S(r) = ∫_0^r s^κ m_b(s) ds
+    S(r) = ∫_0^r s^κ m(s) ds
 
 and the associated metric-closure constructions are not required as
-fundamental laws once the source coordinate u is used.
+fundamental laws once the cumulative source coordinate u is used.
 
 They remain useful as effective summaries in Euclidean radius, but the
 tests indicate that the simpler linear u-space law is the underlying
@@ -472,31 +616,46 @@ structure.
 7.3 Physical interpretation
 
 The preferred interpretation is not that baryons create the entire
-gravitational response field from nothing. Rather, baryonic structure
-loads a response channel whose natural accumulation variable is the
-cumulative baryonic stiffness budget.
+gravitational response field from nothing. Rather, local fields load a
+response channel whose natural accumulation variable is cumulative
+stiffness budget u.
 
 In this picture the observed radial master curve appears because the
 mapping from Euclidean radius r to source coordinate u is nonlinear,
 while the response in u itself is simple.
 
+The baryonic-only loading law gives an effective empirical
+description. The hybrid cube-root law is of special structural
+interest because it is the unique symmetric homogeneous local power
+law that yields marginal outer transport:
+
+    g_b g_obs ~ r^(-3)    =>    [g_b g_obs]^(1/3) ~ r^(-1),
+
+hence
+
+    u(r) ~ ln r.
+
+This logarithmic growth is the scale-free boundary between divergent
+outer accumulation and overly localized inner accumulation.
+
 
 7.4 Remaining open problem
 
-The present work isolates the first-principles galaxy-scale reduction,
-but does not yet derive the baryonic loading law itself from a deeper
-field theory.
+The present work isolates the first-principles galaxy-scale
+reduction, but does not yet derive uniquely which local loading law
+must hold in a deeper field theory.
 
-The remaining open question is therefore:
+The sharply defined remaining questions are therefore:
 
-    why does the galaxy response accumulate linearly in the source
-    coordinate
+    1. why does the response accumulate linearly in cumulative
+       stiffness coordinate u?
 
-        u(r) = ∫_0^r ( g_b(s) / g_* )^γ ds
+    2. what deeper field principle selects the local loading law?
 
-    with γ ≈ 0.34 ?
+    3. is the baryonic-loading exponent γ ≈ 0.34 fundamental, or is
+       it an effective approximation to the symmetric cube-root law
 
-This is now the sharply defined next theoretical problem.
+           m(r) ∝ [ g_b(r) g_obs(r) ]^(1/3) ?
 
 
 
@@ -507,7 +666,7 @@ This is now the sharply defined next theoretical problem.
 The source-coordinate formulation makes several direct predictions.
 
 1. rotation curves should be organized primarily by the normalized
-   cumulative baryonic stiffness budget
+   cumulative stiffness budget
 
        u(r) / u(R_s)
 
@@ -517,13 +676,18 @@ The source-coordinate formulation makes several direct predictions.
    u(r) structure should collapse onto the same response curve
 
 3. deviations from the universal master curve should correspond to
-   deviations from simple linearity in S(u)
+   deviations from linearity in S(u)
 
 4. apparent weighted radial operators inferred in r-space should vary
    across samples, because they are effective Jacobian descriptions of
    the transformation r → u, not universal kernel laws
 
-5. any deeper relativistic completion of the framework should recover
+5. if the hybrid cube-root loading law is correct, then the same
+   cumulative framework should reproduce both the rotation-curve
+   master curve and the observed RAR slopes from a single transport
+   construction
+
+6. any deeper relativistic completion of the framework should recover
    approximately constant response density in source coordinate,
 
        dS/du ≈ const.
@@ -537,15 +701,11 @@ The source-coordinate formulation makes several direct predictions.
 A cumulative-stiffness description of gravity naturally generates the
 empirical master curve of galactic rotation curves, but the decisive
 simplification is obtained only after passing from Euclidean radius to
-cumulative baryonic stiffness coordinate.
+cumulative stiffness coordinate.
 
 Defining
 
-    g_b(r) = V_b(r)^2 / r
-
-    m_b(r) = ( g_b(r) / g_* )^γ
-
-    u(r)   = ∫_0^r m_b(s) ds
+    u(r) = ∫_0^r m(s) ds
 
 the SPARC working sample shows that the reconstructed response field is
 nearly linear in u:
@@ -556,7 +716,7 @@ or equivalently
 
     dS/du ≈ const.
 
-Normalizing by the turnover-scale source budget yields the
+Normalizing by the turnover-scale stiffness budget yields the
 zero-free-parameter law
 
     S(r) = u(r) / u(R_s)
@@ -565,8 +725,8 @@ and hence
 
     V(r)/V_inf = 1 − exp[−u(r)/u(R_s)].
 
-This reproduces the validated pooled master-curve behaviour with good
-accuracy:
+For the baryonic-loading construction this reproduces the validated
+pooled master-curve behaviour with good accuracy:
 
     ν_pred ≈ 0.961,
     x_0_pred ≈ 0.979,
@@ -576,11 +736,21 @@ close to the empirical target values
     ν ≈ 0.953,
     x_0 ≈ 1.003.
 
+A later symmetric extension shows that the cube-root loading law
+
+    m(r) ∝ [ g_b(r) g_obs(r) ]^(1/3)
+
+also reproduces the master-curve structure and yields forward RAR
+slopes close to those measured directly from the sample. This makes
+the cube-root law a plausible candidate local transport law within the
+same cumulative response framework.
+
 The central conclusion is therefore that the galaxy master curve is
-consistent with linear accumulation in cumulative baryonic stiffness
-coordinate followed by exponential saturation. Earlier weighted radial
-operators are best interpreted as effective r-space approximations to
-this simpler underlying source-coordinate law.
+consistent with linear accumulation in cumulative stiffness coordinate
+followed by exponential saturation. Earlier weighted radial operators
+are best interpreted as effective r-space approximations to this
+simpler underlying source-coordinate law, while the remaining open
+problem is the origin of the local loading field itself.
 
 
 
@@ -604,9 +774,9 @@ and recovered corrected master-curve exponents
     exponential-core stiffness  ν = 0.950.
 
 
-A.2 Local baryonic loading field
+A.2 Baryonic loading field
 
-The later SPARC tests found an empirical baryonic loading law
+Later SPARC tests found an empirical baryonic loading law
 
     m_b(r) = ( g_b(r) / g_* )^γ
 
@@ -648,18 +818,14 @@ weighted-kernel interpretation as fundamental.
 
 A.5 Source-coordinate reduction
 
-The decisive later tests introduced the cumulative baryonic stiffness
-coordinate
+The decisive later tests examined the response field as a function of
+cumulative stiffness coordinate u.
 
-    u(r) = ∫_0^r ( g_b(s) / g_* )^γ ds
-
-and examined the response field as a function of u.
-
-The principal results were:
+For the baryonic-loading construction, the principal results were
 
     median linear R^2(S vs u)      ≈ 0.9993
     mean linear R^2(S vs u)        ≈ 0.9957
-    trimmed median CV(dS/du)       ≈ 0.053
+    trimmed median CV(dS/du)       ≈ 0.053,
 
 showing that the response is nearly linear in u.
 
@@ -668,7 +834,7 @@ A.6 Zero-free-parameter response law
 
 Using the normalized law
 
-    S(r) = u(r) / u(R_s)
+    S(r) = u(r) / u(R_s),
 
 the parameter-free prediction
 
@@ -676,18 +842,39 @@ the parameter-free prediction
 
 was tested directly against the validated pooled master-curve target.
 
-The results were
+For the baryonic-loading construction the results were
 
     median RMSE                    ≈ 0.044
     mean RMSE                      ≈ 0.053
     pooled ν_pred                  ≈ 0.961
     pooled x_0_pred                ≈ 0.979.
 
-This is the strongest direct empirical support for the source-
-coordinate formulation.
+
+A.7 Hybrid cube-root loading tests
+
+The hybrid law
+
+    m(r) ∝ [ g_b(r) g_obs(r) ]^(1/3)
+
+was tested directly within the same cumulative response framework.
+
+The principal master-curve results were
+
+    median galaxy RMSE             ≈ 0.054
+    pooled RMSE                    ≈ 0.063
+    pooled ν                       ≈ 1.080
+    pooled x_0                     ≈ 0.985.
+
+Forward RAR tests using this same law yielded
+
+    global slope (predicted)       ≈ 0.666
+    global slope (observed)        ≈ 0.656
+    low-g_b slope (predicted)      ≈ 0.399
+    low-g_b slope (observed)       ≈ 0.409
+    log RMSE(pred vs obs)          ≈ 0.171.
 
 
-A.7 Interpretation of earlier metric and weighted formulations
+A.8 Interpretation of earlier metric and weighted formulations
 
 Several effective-theory and metric-closure constructions were also
 explored during the Colab sequence, including weighted operators,
@@ -695,8 +882,8 @@ effective kernels, and self-consistent metric-response closures.
 
 These constructions were useful intermediate descriptions, but the
 later source-coordinate reduction showed that they are not required as
-fundamental laws once the natural cumulative baryonic stiffness
-coordinate u is used.
+fundamental laws once the natural cumulative stiffness coordinate u is
+used.
 
 
 
