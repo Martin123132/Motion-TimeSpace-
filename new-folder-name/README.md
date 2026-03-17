@@ -283,11 +283,6 @@ This repository:
 * Keeps comparisons at the level of **measurable quantities**
 * Avoids introducing external phenomenological corrections
 
-This does **not** claim:
-
-* Final cosmological model completeness
-* Resolution of all observational tensions
-* Replacement of existing frameworks without empirical validation
 
 ---
 
