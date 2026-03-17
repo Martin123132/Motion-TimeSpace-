@@ -1,20 +1,317 @@
-Galaxy Work Overview
-This folder contains a suite of cleaned and organised documents derived from a research session exploring cumulative stiffness in galactic rotation curves and curvature–memory cosmology. Each document is self‑contained and corresponds to a specific aspect of the research.
-Contents
-Document	Description
-galaxy_paper_rotation_curves.docx	Presents the cumulative‑stiffness description of galactic rotation curves. It introduces a baryonic stiffness field and a cumulative coordinate u(r)=∫_0^r▒m_b  (s) ds, showing that exponential saturation in u reproduces the observed stretched‑exponential master curve. The paper details SPARC data tests, compares power‑law, exponential‑core and density‑coupled stiffness profiles, and discusses the linear response in the stiffness coordinate.
-galaxy_paper_effective_field_eq.docx	Derives an effective Poisson‑type equation for the stiffness field. By defining a baryonic target stiffness m_"targ"  (x)=m_0 [g_b (x)/g_* ]^γ and minimizing a relaxation functional, the resulting equation l^2 ∇^2 m-m+m_"targ" =0 shows how the smoothed stiffness field relaxes towards the baryon‑determined target.
-galaxy_paper_toy_model.docx	Gives a minimal covariant toy model for curvature‑memory loading. A curvature‑memory scalar field M interacts through a quartic self‑interaction and a linear source–response overlap. In the weak‑field limit the field obeys a cube‑root law M∝(g_b g_"obs"  )^(1/3), leading to the cumulative coordinate u(r)=∫_0^r▒M (s) ds and the exponential velocity law V/V_∞=1-exp[-u/u(R_s )].
-galaxy_paper_cos1_linear_perturbations.docx	Discusses linear perturbations of the curvature‑memory field around a flat FRW background. It derives the perturbed field equation from the action and shows that, without additional couplings, first‑order source terms vanish so the usual growth equation is recovered.
-galaxy_paper_cos2_covariant_invariants.docx	Searches for covariant overlap invariants that could source linear cosmological growth. It constructs candidate invariants built from the memory field, metric and baryon fields and shows that none produce a non‑vanishing linear perturbation term, meaning the minimal quartic model does not modify growth at linear order.
-galaxy_paper_cos3_frw_background.docx	Examines the FRW background and linear perturbations when the memory field couples to the baryon stress‑energy trace T via a term bTM^2. It derives the background equation M ̈+3HM ̇+aM^3+2bρ_b M=0 and the corresponding perturbation equations.
-galaxy_paper_cos4_growth_eq.docx	Reduces the coupled perturbation system {δM,Φ,δ_b} with the bTM^2 coupling to an effective growth equation for the baryonic density contrast δ_b. It shows how the modified Poisson equation introduces a scale‑ and time‑dependent effective Newton constant.
-galaxy_paper_cos5_analytic_solutions.docx	Provides analytic background solutions for the homogeneous memory field in the bTM^2 model. It introduces an effective potential, derives conditions for critical points, and classifies solutions for different signs of b.
-galaxy_paper_cos6_sign_of_b.docx	Discusses how the sign of the coupling b affects stability and growth. For positive b the effective potential is positive definite and growth is slightly enhanced, whereas negative b creates a matter‑supported minimum that suppresses growth.
-galaxy_paper_cos8_perturbations_minimum.docx	Studies perturbations around the matter‑supported minimum when b<0. It expands the action about the non‑zero vacuum expectation value of the memory field, derives the mass of fluctuations, and examines the resulting growth suppression.
-galaxy_paper_cos9_cosmology_branch.docx	Summarises the cosmology branch of the curvature‑memory theory. It outlines the action, discusses the homogeneous background and perturbations, and integrates the results of the previous cosmology papers into a coherent picture of how curvature‑memory affects structure formation.
-Background
-The research investigates how a cumulative curvature–memory transport process can explain the universal stretched‑exponential structure of galactic rotation curves. It posits a cumulative stiffness coordinate u(r) and shows that quartic transport yields logarithmic accumulation, leading to a near‑constant stiffness profile and the observed master curve. The same framework is extended to cosmological scales, exploring perturbations of a curvature‑memory scalar field in an FRW background and demonstrating that the minimal quartic model does not modify linear growth. Variations in the coupling sign produce either enhanced or suppressed growth, leading to distinct cosmological branches.
-Usage
-Each .docx file in this folder corresponds to a self‑contained report. Open them in a word processor to read the cleaned and formatted papers. The README provides a high‑level overview; for detailed derivations, figures and equations, consult the individual documents.
-________________________________________
+# Curvature–Memory Theory (MTS Framework)
+
+### A Unified Description of Galactic Dynamics and Cosmological Growth
+
+**Author:** Martin Ollett
+**Year:** 2026
+
+---
+
+## Overview
+
+This repository contains a structured research programme developing a **curvature–memory field theory** in which gravitational response is governed not purely by instantaneous mass distribution, but by a dynamically evolving scalar field ( M ) coupled to matter.
+
+The framework aims to provide a **single, continuous description** across:
+
+* Galactic rotation curves
+* Intermediate-scale transport behaviour
+* Cosmological background evolution
+* Linear perturbations and structure growth
+
+The central objective is to test whether observed phenomena typically attributed to additional matter components can instead emerge from **field–matter coupling and cumulative response dynamics**.
+
+---
+
+## Core Idea
+
+The theory introduces a scalar field ( M(x) ) governed by the action:
+
+```
+S = ∫ d^4x √(-g) [
+
+        R/(16πG)
+      - 1/2 (∇M)^2
+      - a M^4 / 4
+      + b T M^2
+      + L_b
+
+    ]
+```
+
+Where:
+
+* ( M ): curvature–memory field
+* ( a ): self-interaction strength
+* ( b ): coupling to matter trace
+* ( T ): trace of baryonic stress-energy
+
+For pressureless matter:
+
+```
+T = -ρ_b
+```
+
+This induces an **effective potential**:
+
+```
+V_eff(M) = a M^4/4 + b ρ_b M^2
+```
+
+---
+
+## Physical Structure of the Theory
+
+The framework naturally separates into three regimes:
+
+### 1. Cosmological Background
+
+* Field evolves under FRW expansion:
+
+  ```
+  M̈ + 3H Ṁ + a M^3 + 2 b ρ_b M = 0
+  ```
+
+* For the physically relevant branch:
+
+  ```
+  b < 0
+  ```
+
+* The field sits in a **matter-supported minimum**:
+
+  ```
+  M_*^2 = 2 |b| ρ_b / a
+  ```
+
+* This produces a **slowly evolving background field**:
+
+  ```
+  M_* ∝ a^(-3/2)
+  ```
+
+---
+
+### 2. Linear Cosmological Perturbations
+
+Perturbations around the minimum:
+
+```
+M = M_* + χ
+```
+
+* Fluctuation mass:
+
+```
+m_*^2 = 4 |b| ρ_b
+```
+
+* Quasi-static response:
+
+```
+χ ≈ [ m_*^2 / (k^2/A^2 + m_*^2) ] δM_*
+```
+
+* Leads to a modified Poisson equation:
+
+```
+(k^2/A^2) Φ = 4πG [1 + β_*(k,a)] δρ_b
+```
+
+* Effective gravitational strength:
+
+```
+G_eff = G [1 + β_*(k,a)]
+```
+
+With leading-order form:
+
+```
+β_*(k,a)
+  ≈ - (8 |b|^3 / a)
+      ρ_b^2
+      / (k^2/A^2 + 4 |b| ρ_b)
+```
+
+Key properties:
+
+* β_* < 0 → suppressed growth
+* Scale dependence (Yukawa-type)
+* GR recovered on small scales
+
+---
+
+### 3. Galaxy Regime (Nonlinear Transport)
+
+At galactic scales, the field departs from the cosmological minimum and enters a nonlinear transport regime:
+
+```
+M^3 ∝ g_b g_obs
+```
+
+This produces:
+
+* Emergent rotation curve behaviour
+* Linearisation in cumulative stiffness coordinate
+* Direct connection to observed scaling relations
+
+---
+
+## Unified Chain
+
+The theory forms a continuous pipeline:
+
+```
+Cosmological background M̄(a)
+        ↓
+Linear growth modification G_eff(k,a)
+        ↓
+Nonlinear galaxy response
+        ↓
+Observed rotation curves
+```
+
+---
+
+## Repository Structure
+
+Suggested organisation:
+
+```
+/papers
+    01_galaxy_cumulative_stiffness.txt
+    02_transport_theorem.txt
+    03_effective_field_equation.txt
+    04_covariant_invariant.txt
+    05_frw_background.txt
+    06_growth_equation.txt
+    07_analytic_solutions.txt
+    08_sign_of_b.txt
+    09_minimum_branch_perturbations.txt
+    10_cosmology_branch.txt
+
+/code
+    growth_solver.py
+    background_evolution.py
+
+/data
+    sparc/
+    growth_data/
+
+/results
+    plots/
+    fits/
+```
+
+---
+
+## Key Results
+
+From the current derivations:
+
+* A **matter-supported scalar field background** emerges naturally
+* Linear perturbations produce a **scale-dependent modification of growth**
+* The modification has the sign:
+
+```
+G_eff < G
+```
+
+→ Suppressed clustering
+
+* The theory predicts:
+
+```
+γ > 0.55
+```
+
+with scale dependence
+
+* Galaxy dynamics emerge from a **nonlinear transport relation**, not a fixed force law
+
+---
+
+## Scientific Status
+
+This repository contains:
+
+* Fully specified action
+* Background evolution equations
+* Linear perturbation system
+* Closed-form approximation for growth modification
+* Analytic solutions in key regimes
+
+Not yet included:
+
+* Full numerical integration of growth across datasets
+* Joint cosmology + galaxy parameter constraints
+* High-precision likelihood comparisons
+
+---
+
+## Next Steps
+
+The immediate testable pipeline is:
+
+1. Choose background expansion ( H(a) )
+2. Solve growth equation:
+
+```
+δ'' + [2 + d ln H/dN] δ'
+  = (3/2) Ω_b(a) [1 + β_*(k,a)] δ
+```
+
+3. Compute:
+
+```
+f(a,k) = δ'/δ
+fσ8(z)
+```
+
+4. Compare against:
+
+* DESI growth measurements
+* Gold-2017 dataset
+* Weak lensing constraints
+
+---
+
+## Interpretation Boundaries
+
+This repository:
+
+* Derives equations directly from the action
+* Keeps comparisons at the level of **measurable quantities**
+* Avoids introducing external phenomenological corrections
+
+This does **not** claim:
+
+* Final cosmological model completeness
+* Resolution of all observational tensions
+* Replacement of existing frameworks without empirical validation
+
+---
+
+## Purpose
+
+The aim of this work is to establish a **testable, internally consistent framework** linking:
+
+* matter distribution
+* dynamical field response
+* gravitational behaviour across scales
+
+All conclusions should be evaluated through direct comparison with data.
+
+---
+
+## License
+
+MIT License (recommended)
+
+---
+
+## Contact / Attribution
+
+Martin Ollett
+Independent Researcher
+
+---
