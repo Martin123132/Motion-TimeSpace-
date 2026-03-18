@@ -1,3 +1,25 @@
+STATUS NOTE
+
+This repo is an active research workspace and currently a bit of a live battlefield.
+
+There are multiple branches being explored in parallel to figure out:
+- what is actually driving the galaxy rotation-curve master curve
+- which cumulative-stiffness formulation is correct
+- how (or if) the framework extends consistently
+
+Not everything here is final. Some parts are exploratory, some overlap, and some may get thrown out entirely as the work progresses.
+
+This is intentional — the goal is to test things properly and see what survives.
+
+If you have ideas, feedback, or want to get involved, I’d genuinely appreciate it.
+
+Contact:
+ollett123123@outlook.com
+
+(Currently juggling about a million moving parts solo, so outside input is very welcome.)
+
+
+
 # Curvature–Memory Theory (MTS Framework)
 
 ### A Unified Description of Galactic Dynamics and Cosmological Growth
