@@ -32,6 +32,3 @@
 - `current-drafts/mts-galaxy-law-v13.docx`
 - `current-drafts/mts-galaxy-law-v14.docx`
 - `current-drafts/mts-galaxy-law-v15.docx`
-
-## Draft placement note
-- `v10`, `v11`, `v12`, `v13`, `v14`, and `v15` are currently kept together in `current-drafts/` for version continuity.

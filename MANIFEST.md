@@ -153,14 +153,3 @@
 | `laser-bending-test-setup` | `tools-and-infrastructure/visualisations/laser-bending-test-setup.md` | `tools-and-infrastructure` | renamed and relocated |
 | `Random 3D Yukawa.ipynb` | `tools-and-infrastructure/visualisations/random-3d-yukawa.ipynb` | `tools-and-infrastructure` | renamed and relocated |
 | `TEST candidate cumulative-memory variables.ipynb` | `tools-and-infrastructure/visualisations/test-candidate-cumulative-memory-variables.ipynb` | `tools-and-infrastructure` | renamed and relocated |
-
-## Post-v3 cleanup
-
-| Old path | New path | Category | Notes |
-|---|---|---|---|
-| `mathematics/riemann-zeta/impossible-galaxies.md` | `cosmology/jwst/impossible-galaxies.md` | `cosmology` | corrected misclassification |
-| `mathematics/riemann-zeta/a-transport-response-framework-for-disk-galaxies.md` | `galaxy-work/sparc-analysis/a-transport-response-framework-for-disk-galaxies.md` | `galaxy-work` | corrected misclassification |
-| `mathematics/riemann-zeta/axiom-anchors-preventing-narrative-coercive-epistemic-collapse-in-large-language-models-via-physical-grounding.md` | `ai-ethics-and-governance/epistemic-anchors/axiom-anchors-preventing-narrative-coercive-epistemic-collapse-in-large-language-models-via-physical-grounding.md` | `ai-ethics-and-governance` | corrected misclassification |
-| `archive/uncategorised/computational-boundaries-for-artificial-intelligence-in-relation-to-physical-laws.md` | `ai-ethics-and-governance/ai-limits/computational-boundaries-for-artificial-intelligence-in-relation-to-physical-laws.md` | `ai-ethics-and-governance` | grouped with AI governance docs |
-| `archive/old-drafts/2.x effective field equation for the stiffness field` | `archive/uncategorised/2-x-effective-field-equation-for-the-stiffness-field.md` | `archive` | extension + filename normalization; plaintext-like file |
-| `archive/old-drafts/readme.md` | `archive/old-drafts/readme.md` | `archive` | retained in archive; includes useful historical project index/context from old `new-folder-name` |

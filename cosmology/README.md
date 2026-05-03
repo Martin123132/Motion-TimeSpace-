@@ -33,4 +33,3 @@
 - `jwst/generate-testable-predictions-for-jwst-observations-using-geometric-time-model.md`
 - `jwst/jwst-cycle-4-proposal-framework.md`
 - `jwst/jwst-reality-check-geometric-time-model-vs-observations.md`
-- `jwst/impossible-galaxies.md`
