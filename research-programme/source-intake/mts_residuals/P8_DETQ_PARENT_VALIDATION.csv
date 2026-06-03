@@ -1,0 +1,7 @@
+﻿rule_id,rule,result,evidence,claim_effect
+V478_0_sources,all cited source paths exist,pass,missing_sources=0,traceability only
+V478_1_shape_vs_ownership,theorem attempt separates determinant shape support from parent ownership,pass,theorem_rows=8,no hidden promotion
+V478_2_blocking_gates,ownership gates record all blockers,fail_for_claim,blocking_gates=6,det(Q_coh) cannot be accepted as theorem-zero
+V478_3_alpha3_impact,alpha3 impact rows remain unpromoted,fail_for_claim,valid_for_claim_true=0,no alpha3/PPN/local-GR pass
+V478_4_route_update,det(Q_coh) route update explicitly rejects theorem-zero status,pass,route_rows=2,closure/theorem-target only
+V478_5_R11_dependency,R11 source-normalization remains separate blocker,fail_for_claim,R11_claimable_rows=0,next target is R11 zero-or-fill

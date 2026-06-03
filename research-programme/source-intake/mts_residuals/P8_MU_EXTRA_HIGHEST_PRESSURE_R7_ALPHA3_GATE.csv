@@ -1,0 +1,8 @@
+﻿gate_id,result,evidence,required_for_pass,current_decision
+HP0_sources_exist,pass,all cited 429/435/467/468 and scorecard paths exist,every cited source path exists,usable_input_set
+HP1_highest_pressure_group_identified,pass,2 R7_alpha3 rows at bound 4e-20: boundary_monopole_shift;domain_projector_mass,tightest numeric lock selected from scorecard,R7_alpha3 is the active pressure lock
+HP2_tied_group_not_singleton,pass,boundary_monopole_shift and domain_projector_mass both hit alpha3=4e-20,all tied channels remain active unless theorem-zero or scored,must close both channels; no tuned cancellation allowed
+HP3_operational_first_row,pass,P8_mu_extra_boundary_coefficients.csv is priority 1 and does not require R11 operator vector,choose tractable first row without dropping tied domain row,start with boundary_monopole_shift -> R7_alpha3
+HP4_zero_theorem_attempt,fail,Ward/Bianchi ownership plus no-hair routing does not prove zero boundary or domain momentum flux,derive F_alpha3[epsilon_boundary]=0 and F_alpha3[epsilon_domain_projector]=0 from parent action,theorem-zero unavailable
+HP5_bound_product_skeleton,pass,explicit product bounds and missing coefficient inputs written,write numeric/theorem-zero acceptance route without placeholder promotion,score path exists but has no numeric prediction
+HP6_promotion_guard,pass,score_ready_rows=0 and both alpha3 predictions remain missing,no Newton/PPN/local-GR claim from target-only rows,no promotion

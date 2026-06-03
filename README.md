@@ -1,214 +1,57 @@
-# Motion–TimeSpace Research Repository
+# Motion-TimeSpace Research Programme
 
-Empirical patterns • computational models • geometric hypotheses
+Motion-TimeSpace (MTS) is an open, work-in-progress research programme exploring whether motion, time, space, memory, and observed gravitational/cosmological structure can be organized into a disciplined field-theoretic framework.
 
-This repository is an open research program built around one guiding question:
+This repository is not presented as a completed theory of physics. It is a public research workbench: derivation attempts, claim ceilings, empirical scorecards, red-team ledgers, and scripts for checking whether parts of the framework survive contact with data and known limits.
 
-> Do recurring geometric and dynamical patterns appear across gravitational, cosmological, orbital, quantum, and mathematical systems — and can they be organised into a testable Motion–TimeSpace framework?
+## Current Status
 
-The emphasis is:
+The project currently has three active layers:
 
-1. empirical results first  
-2. computational reproduction second  
-3. theoretical interpretation last  
+1. **Empirical closure branch** — a late-time SN+BAO cosmology branch that remains competitive under initial robustness checks.
+2. **GR/Newton derivation programme** — a finite theorem-stack route toward source-normalized Newtonian recovery and local GR/PPN silence.
+3. **Parent-action formalization** — ongoing attempts to replace closure assumptions with parent-derived variational, projector, domain, source, and conservation identities.
 
-This is not presented as a finished theory. It is a version-controlled research workspace containing papers, drafts, notebooks, experiments, tools, and archived development history.
+The strongest honest claim is:
 
----
+> MTS has a live empirical closure branch and a coherent derivation programme toward GR/Newton, but it does not yet derive local GR, PPN recovery, or a completed unified field theory.
 
-## Start here
+## Start Here
 
-### Galaxy work
+- `CLAIM_CEILING.md` — what the repository does and does not currently claim.
+- `PROJECT_MAP.md` — guide to the public structure.
+- `docs/status/STATUS-2026-06-03.md` — current project status snapshot.
+- `docs/theory-gates/LOCAL-GR-NEWTON-GATES.md` — the key GR/Newton/PPN promotion gates.
+- `research-programme/checkpoints/106-canonical-R-cosmology-robustness-summary.md` — cosmology robustness summary.
+- `research-programme/checkpoints/399-local-GR-status-for-human-review.md` — local GR/Newton status memo.
+- `research-programme/checkpoints/460-source-normalized-Newton-branch-theorem-stack.md` — finite Newton theorem stack.
+- `research-programme/checkpoints/478-determinant-current-parent-ownership-or-demotion.md` — current determinant-current/domain-alpha3 gate.
 
-The most active and developed branch of the repository.
-
-- [Galaxy work](galaxy-work/)
-- SPARC rotation-curve analysis
-- MTS Galaxy Law drafts
-- transport-response framework
-- galaxy notebooks and experiments
-- current and legacy draft history
-
-Start here if you want the strongest empirical entry point.
-
----
-
-### Cosmology
-
-Cosmological expansion, activation-history modelling, CMB cold-spot work, JWST-related analyses, and Hubble-tension material.
-
-- [Cosmology](cosmology/)
-- activation cosmology
-- Pantheon / BAO / DESI / SH0ES related work
-- CMB Cold Spot and Great Attractor material
-- JWST observational checks
-- cosmology notebooks and audit documents
-
----
-
-### Core MTS framework
-
-Foundational Motion–TimeSpace documents, including gravity, action-principle, field-theory, relativity, and thermodynamic formulations.
-
-- [Core MTS framework](core-mts-framework/)
-- action principle
-- gravity formulation
-- effective field theory
-- relativity extensions
-- thermodynamic exchange model
-
-Use this section for the conceptual and mathematical framework behind the applied analyses.
-
----
-
-### Tools and infrastructure
-
-Reusable computational tools, visualisations, compression/archive experiments, and utility notebooks.
-
-- [Tools and infrastructure](tools-and-infrastructure/)
-- Geometric Motion Wrapper
-- universe mapper
-- GRB prediction kit
-- visualisation notebooks
-- computational utilities
-
----
-
-## Repository structure
+## Repository Layout
 
 ```text
 .
-├── galaxy-work/              # Galaxy-law drafts, SPARC analysis, notebooks, experiments
-├── cosmology/                # Activation cosmology, CMB, JWST, Hubble-tension work
-├── core-mts-framework/       # Foundational MTS gravity, action, field, relativity, thermodynamics
-├── orbital-dynamics/         # Orbital decay, hierarchy, local-dynamics work
-├── quantum-particle-field/   # Leptons, neutrinos, quarks, protons, Yang–Mills, fusion, measurement
-├── mathematics/              # Riemann/zeta, prime curvature, Navier–Stokes, stability/regularity
-├── tools-and-infrastructure/ # GMW, mappers, prediction kits, visualisations, utilities
-├── ai-ethics-and-governance/ # AI limits, liability, epistemic anchors, human-impact essays
-├── documents/                # DOCX/PDF/uploaded supporting files
-├── archive/                  # Old drafts, duplicate titles, uncategorised legacy material
-├── MANIFEST.md               # Migration map from the previous flat repo structure
-├── README.md                 # This file
-└── licence
-Main research areas
-1. Galaxy dynamics
+├── CLAIM_CEILING.md
+├── PROJECT_MAP.md
+├── docs/
+│   ├── status/
+│   └── theory-gates/
+├── research-programme/
+│   ├── checkpoints/
+│   ├── scripts/
+│   └── source-intake/
+├── data/
+└── archive/
+    └── legacy-pre-formalization-2026-06/
+```
 
-This is the main empirical branch of the project.
+## Reproducibility Notes
 
-It includes work on:
+The repository includes scripts and compact residual/register artifacts, but not large third-party datasets, virtual environments, or raw generated run folders.
 
-galaxy rotation curves
-SPARC data analysis
-transport-response modelling
-curvature-memory and stiffness descriptions
-MTS Galaxy Law drafts
-current and legacy experiment notebooks
+Large data products should be downloaded from their original public sources where licensing permits. Local machine paths appearing in historical artifacts have been sanitized where practical.
 
-See: galaxy-work/
+## Research Ethos
 
-2. Cosmology
+This work is deliberately conservative about claims. A branch can be useful, promising, or competitive without being promoted to a completed theory. Promotion requires derivation, consistency with known limits, and empirical robustness.
 
-This section contains exploratory models and tests involving:
-
-expansion-history activated coupling
-Pantheon / BAO / DESI / SH0ES comparisons
-Hubble-tension modelling
-CMB Cold Spot and Great Attractor analyses
-JWST observational checks
-
-See: cosmology/
-
-3. Core Motion–TimeSpace framework
-
-This section contains the higher-level framework documents.
-
-Topics include:
-
-MTS gravity
-action-principle formulations
-field-theory extensions
-thermodynamic exchange
-relativity-related material
-stiffness and memory-field descriptions
-
-See: core-mts-framework/
-
-4. Orbital dynamics
-
-This section contains local and orbital-scale work, including:
-
-orbital decay
-orbital hierarchy
-local-dynamics scaling
-eccentricity-related problems
-
-See: orbital-dynamics/
-
-5. Quantum, particle, and field work
-
-This section contains exploratory particle and field-level applications, including:
-
-lepton and neutrino mass/mixing work
-quark and proton structure
-Yang–Mills mass-gap material
-curvature-driven fusion simulations
-quantum measurement geometry
-
-See: quantum-particle-field/
-
-6. Mathematics
-
-This section contains mathematical and numerical investigations connected to:
-
-Riemann zeta / xi-function stability
-prime-curvature visualisation
-Navier–Stokes regularity
-stability and geometric regularity
-arrow-of-time models
-
-See: mathematics/
-
-7. AI ethics and governance
-
-This section contains essays and analysis on:
-
-computational boundaries of AI
-liability and generative AI
-epistemic anchoring
-human impact of AI dismissal
-governance and accountability
-
-See: ai-ethics-and-governance/
-
-Manifest
-
-The repository was reorganised from a flatter structure into research-area folders.
-
-For the full migration map, see:
-
-MANIFEST.md
-
-The manifest records old paths, new paths, categories, and notes for moved files.
-
-This repository is organised around iterative research.
-
-This repository contains work at different stages of maturity.
-
-Some files are current drafts.
-Some are older exploratory documents.
-Some are notebooks or computational experiments.
-Some are archived development material kept for provenance.
-
-The folder structure is intended to make that history easier to inspect without flattening the research into a single narrative.
-
-Citation
-@misc{mts_framework,
-  author = {Martin Ollett},
-  title = {Motion-TimeSpace Research Repository},
-  year = {2025},
-  note = {Empirical patterns, computational models, and geometric hypotheses}
-}
-Contact
-
-Use GitHub Issues for questions, corrections, contradictions, replication attempts, or suggested tests.

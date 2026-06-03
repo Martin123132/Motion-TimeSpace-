@@ -1,0 +1,7 @@
+﻿rule_id,rule,result,evidence,claim_effect
+V475_0_sources,all cited source paths exist,pass,missing_sources=0,traceability only
+V475_1_clause,"parent-action clause has selector, scalar source, local zero, double-zero memory, topological projector, and R11 rows",pass,clause_rows=6,contract completeness only
+V475_2_variation,variation chain shows why double-zero is needed,pass,variation_rows=5,"sufficient theorem attempt, not promotion"
+V475_3_forks,bad routes are explicitly rejected or demoted,pass,fork_rows=5,no smuggled closure
+V475_4_coefficients,coefficient fallback covers R5/R6/R7/R8/R11 and stays unpromoted,pass,targets=R11_EH_operator_ledger;R5_alpha1;R6_alpha2;R7_alpha3;R8_xi; valid_for_claim_true=0,no PPN/Newton/local-GR pass
+V475_5_gates,"promotion gates include parent derivation, local zero, double-zero origin, and R11 silence",pass,gate_rows=6,next blockers are explicit

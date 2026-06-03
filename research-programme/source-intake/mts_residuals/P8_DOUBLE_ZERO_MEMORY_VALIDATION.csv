@@ -1,0 +1,7 @@
+﻿rule_id,rule,result,evidence,claim_effect
+V476_0_sources,all cited source paths exist,pass,missing_sources=0,traceability only
+V476_1_requirement,"p>=2 double-zero is derived as a requirement, not as a parent theorem",pass,origin_rows=7 variation_tests=5,prevents linear gate promotion
+V476_2_power_gate,"power gates track origin, local zero, FLRW normalization, R11, and coefficient fallback",pass,power_gate_rows=6,no hidden theorem upgrade
+V476_3_runner_targets,coefficient runner covers R5/R6/R7/R8/R11,pass,R11_EH_operator_ledger;R5_alpha1;R6_alpha2;R7_alpha3;R8_xi,fallback is machine-readable
+V476_4_coefficients,domain coefficient files are updated and unpromoted,pass,coefficient_rows=5 valid_for_claim_true=0,no PPN/Newton/local-GR pass
+V476_5_runner_claim,runner results do not claim evidence with missing inputs,fail_for_claim,pass_bound_true=0,runner wired only

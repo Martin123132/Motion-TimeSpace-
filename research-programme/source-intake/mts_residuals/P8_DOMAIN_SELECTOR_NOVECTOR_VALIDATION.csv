@@ -1,0 +1,7 @@
+﻿rule_id,rule,result,evidence,claim_effect
+V474_0_sources,all cited source paths exist,pass,missing_sources=0,traceability only
+V474_1_theorem_attempt,no-vector theorem attempt separates conditional lemma from parent-derived theorem,pass,conditional_or_definition_rows=2 fail_or_rejected_rows=3,prevents closure from being counted as derivation
+V474_2_targets,coefficient rows cover R5/R6/R7/R8/R11,pass,R11_EH_operator_ledger;R5_alpha1;R6_alpha2;R7_alpha3;R8_xi,domain vector channel is fully exposed
+V474_3_bounds,R5/R6/R7/R8 rows carry source-locked bounds,pass,R5_alpha1=1e-04;R6_alpha2=2e-09;R7_alpha3=4e-20;R8_xi=4e-09;R11_EH_operator_ledger=symbolic,numeric fallback is evaluable only after products exist
+V474_4_claim_rows,no coefficient row is promoted,fail_for_claim,valid_for_claim_true=0,no PPN/Newton/local-GR pass
+V474_5_gate_rows,gate rows include theorem route and R11 route,pass,gate_rows=6,next work has explicit options

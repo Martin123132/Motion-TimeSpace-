@@ -1,0 +1,5 @@
+﻿guard_id,rule,current_result,evidence,claim_effect
+G_total_no_cancellation_by_fit,alpha3 total can pass only if each active channel passes individually or a parent cancellation identity is derived before fitting,fail_for_claim,individual_pass=False; total_pass=False,no total alpha3 or mu_extra-zero promotion
+G_boundary_channel,boundary alpha3 must be theorem-zero or abs(W_boundary_alpha3 epsilon_boundary_flux)<=4e-20,not_scoreable_inputs_missing,MISSING_NUMERIC_PRODUCT_OR_THEOREM_ZERO,boundary alpha3 retained
+G_domain_channel,domain alpha3 must be theorem-zero or abs(W_domain_alpha3 epsilon_domain_flux)<=4e-20,not_scoreable_inputs_missing,MISSING_NUMERIC_PRODUCT_OR_THEOREM_ZERO,domain alpha3 retained
+G_R11_dependency,domain channel also needs R11 source-normalization/operator rows claim-valid or theorem-zero,fail_for_claim,R11_claimable_rows=0,R11 blocks domain alpha3 promotion

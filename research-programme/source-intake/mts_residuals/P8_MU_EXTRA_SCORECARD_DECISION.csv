@@ -1,0 +1,8 @@
+﻿decision_item,status,evidence,next_action
+source_paths,pass,missing source paths = 0,continue with cited input artifacts
+scorecard_written,pass,scorecard rows = 21; channel summaries = 8,use scorecard as local-bound target table
+numeric_predictions_available,fail,score-ready rows = 0; blocked rows = 21,"fill epsilon coefficients, curves, operator vectors, or theorem-zero sources"
+curve_rows_ready,fail,curve-required rows = 3; curve file not loaded,build R10_alpha_lambda_curve_MTS_source_normalization.csv
+operator_rows_ready,fail,operator-vector-required rows = 2; executable R11 vector not loaded,build R11_nonEH_operator_vector_executable.csv or EH-only theorem
+mu_extra_score_passed,fail,no scorecard row has a numeric/theorem-zero prediction,469-fill-or-zero-highest-pressure-mu-extra-row.md
+Newton_or_local_GR_promoted,fail,"mu_extra scorecard is target-only, not passed",keep no-claim ceiling
