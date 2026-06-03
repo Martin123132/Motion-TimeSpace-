@@ -1,0 +1,7 @@
+﻿rule_id,rule,result,evidence,claim_effect
+V473_0_schema,R11 vector uses canonical 19-column schema,pass,rows=10 columns=19,"schema only, no physics claim"
+V473_1_family_completeness,All 10 global R11 families appear once in executable-path vector file,pass,unique_families=10,wiring only
+V473_2_no_generic_fill_placeholders,No generic fill_ placeholders remain,pass,generic_fill_count=0,explicit missing markers are allowed but block claims
+V473_3_actual_executable_rows,Rows are executable only if valid_for_claim=true and no missing/conditional coefficient fields remain,fail_for_claim,claimable_rows=0 domain_claimable_rows=0,R11_domain_vector_supplied=false
+V473_4_domain_rows_present,"Domain minimum rows exist for vector, projector-domain stress, and source-normalization operator",pass,vector_preferred_frame;source_normalization_operator;projector_domain_stress,domain R11 wiring exists but not scoreable
+V473_5_domain_alpha3_still_blocked,R7 alpha3 remains blocked until W_domain_alpha3 epsilon_domain_flux is theorem-zero or numeric below 4e-20,fail_for_claim,projector_domain_stress and source_normalization_operator rows are conditional/missing,no PPN alpha3 or local-GR pass

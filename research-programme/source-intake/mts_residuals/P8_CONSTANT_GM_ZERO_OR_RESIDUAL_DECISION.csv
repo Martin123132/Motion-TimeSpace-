@@ -1,0 +1,8 @@
+﻿decision_item,status,evidence,next_action
+source_paths,pass,missing source paths = 0,continue only with existing source paths
+derivative_gate_loaded,pass,derivative rows loaded = 8,use CGM rows as local runner backbone
+P8_template_loaded,pass,P8 source-normalization template rows loaded = 8,copy bound targets into runner input
+zero_theorem_currently_closes,fail,non-identity theorem premises still open/failed/deferred = 8,do not promote constant GM; use residual runner
+runner_predictions_scoreable,fail,runner rows with missing predictions = 8,fill theorem-zero or numeric prediction source for each row
+constant_GM_promoted,fail,Z1-Z7 do not all pass and runner rows are not numerically scoreable,467-mu-extra-zero-owner-or-source-normalization-coefficient-vector.md
+local_GR_promoted,fail,constant GM not promoted and second-order beta/gamma row deferred,wait for first-order rows plus PPN vector

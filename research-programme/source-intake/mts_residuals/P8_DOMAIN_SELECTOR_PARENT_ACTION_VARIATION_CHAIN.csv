@@ -1,0 +1,6 @@
+﻿step_id,variation,equation,local_consequence,proof_status,claim_effect
+V0_lambda_variation,delta S_D over delta lambda_D,chi_D - Sigma_D = 0,chi_local = Sigma_local,formal_pass_if_clause_allowed,constraint only
+V1_chi_variation,delta S_D over delta chi_D,"lambda_D + 2 chi_D L_mem,D + chi_D^2 partial_chi L_mem,D = 0",if chi_local=0 then lambda_local=0,formal_pass_for_double_zero_clause,kills hidden constraint stress locally only under C2 and C3
+V2_metric_variation,delta S_D over delta g_munu,"T_D includes lambda_D delta_g Sigma_D plus chi_D^2 T_mem,D plus topological projector terms",lambda_local=0 and chi_local=0 remove bulk selector/memory stress,conditional_pass_if_C2_C3_C4_hold,no local STF/vector stress only if parent owns the clause
+V3_Ward_force,diffeomorphism Ward identity,F_domain^nu = E_chi nabla^nu chi_D + E_lambda nabla^nu lambda_D + divergence of T_D terms,"on shell with chi_local=lambda_local=0 and no boundary flux, F_domain^nu=0",conditional_pass_if_local_boundary_terms_zero,"would set epsilon_vector, epsilon_flux, and epsilon_anisotropy to zero"
+V4_failure_mode,linear memory coupling or kinetic selector,"S_mem proportional chi_D L_mem,D or K_chi(g,nabla chi) not equal zero",lambda_local or gradient stress can survive even when chi_local=0,rejected_route,requires explicit PPN coefficients

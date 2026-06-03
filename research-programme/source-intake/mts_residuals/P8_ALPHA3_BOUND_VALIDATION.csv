@@ -1,0 +1,7 @@
+﻿rule_id,rule,result,evidence,claim_effect
+V477_0_sources,all cited source paths exist,pass,missing_sources=0,traceability only
+V477_1_inputs,"boundary, domain, and total alpha3 inputs are present",pass,boundary_monopole_shift;combined_mu_extra_alpha3;domain_projector_mass,evaluator is complete for current alpha3 channels
+V477_2_bound,individual alpha3 rows use 4e-20 bound,pass,boundary_monopole_shift=4e-20;domain_projector_mass=4e-20;combined_mu_extra_alpha3=4e-20,source lock carried into evaluator
+V477_3_theorem_zero,theorem-zero gates are explicit and not accepted without parent premises,pass,theorem_rows=3 accepted=0,no hidden zero claim
+V477_4_claim_rows,no alpha3 evaluation row is claim-valid with missing products,fail_for_claim,valid_for_claim_true=0,no alpha3/PPN/local-GR pass
+V477_5_total_guard,total alpha3 cannot pass by cancellation-by-fit,pass,guard_rows=4,total alpha3 retained

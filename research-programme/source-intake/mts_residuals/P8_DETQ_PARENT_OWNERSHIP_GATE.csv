@@ -1,0 +1,8 @@
+﻿gate_id,requirement,current_status,evidence,blocks_claim,repair_or_next
+G0_fixed_D_shape,fixed-domain det(Q_coh) current has p>=2/p=3 shape,conditional_pass,275 determinant/current construction,false,keep as mathematical clue
+G1_raw_detQ_shear_safe,raw det(Q) has no tracefree-shear leakage,fail,det(XI+S)=X^3-(X/2)Tr(S^2)+det(S),true,must use parent-owned coherent projection
+G2_Qcoh_projection_parent_owned,P_coh/Q_coh is derived from parent variables before scoring,not_derived,276 fixed-D projection only; 309 projector ownership conditional,true,derive projector algebra/ownership or demote closure
+G3_physical_domain_selected,physical D/representative is selected by parent Euler/topological law,not_derived,277 degenerate free-boundary route; 279 no-go for representative selection,true,derive class-selection law or retain explicit domain coefficient
+G4_local_zero_class,local branch has N_D=0/trivial relative class while FLRW remains active,not_parent_derived,416 retains C_exp/chi_D route as contract,true,derive local zero/FLRW active split
+G5_Ward_stress_accounting,"det-current/projector/domain stress is varied, zero, or retained",conditional_open,309 and 477 require parent-premise gates before theorem-zero,true,write stress ledger or keep coefficient runner
+G6_R11_silence,domain source-normalization/R11 rows are claim-valid or theorem-zero,fail_for_claim,R11_claimable_rows=0,true,479-R11-domain-source-normalization-zero-or-fill.md

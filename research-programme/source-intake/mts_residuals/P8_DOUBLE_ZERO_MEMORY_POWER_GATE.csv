@@ -1,0 +1,7 @@
+﻿gate_id,requirement,status,evidence,blocks_claim_if_missing
+P0_power_condition,memory activation has Taylor order p>=2 at chi_D=0,derived_as_requirement,variation test demands f(0)=f_prime(0)=0,true
+P1_origin_symmetry,"p>=2 follows from parent symmetry, norm-square, determinant, or topological pairing",not_parent_derived,275 determinant route conditional; no Z2/norm-square/topological action derived,true
+P2_local_zero,parent proves chi_local=0 by projected spectral gap or relative triviality,not_parent_derived,308/416 keep local zero as selector contract,true
+P3_FLRW_normalization,same f(chi_D) leaves FLRW/cosmology branch active with derived amplitude normalization,not_parent_derived,p=2 or p=3 changes activation amplitude unless normalized by parent variables,true
+P4_R11_silence,domain source-normalization R11 row is zero or executable,fail_for_claim,R11_claimable_rows=0,true
+P5_coefficient_runner,"if p>=2 is not parent-derived, run explicit residual products against PPN bounds",required_fallback,coefficient runner inputs remain missing,true

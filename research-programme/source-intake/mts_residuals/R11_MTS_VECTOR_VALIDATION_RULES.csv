@@ -1,0 +1,8 @@
+﻿rule_id,rule,pass_condition,current_status,failure_action
+V11_0_schema,Skeleton rows must match the canonical 19-column R11 schema.,all schema columns present and parseable by csv.DictReader,pass_skeleton,reject vector file
+V11_1_family_completeness,Every retained operator family from 463 must appear exactly once.,10 family rows present,pass_skeleton,reject vector file
+V11_2_no_generic_fill_placeholders,Generic fill_* placeholders are replaced by explicit MISSING_* fields.,no field starts with fill_,pass_skeleton_no_claim,replace generic placeholder with explicit missing-field marker
+V11_3_missing_markers_block_claims,Any MISSING_* value forces valid_for_claim=false.,all current skeleton rows have valid_for_claim=false,pass_no_claim,block row from evaluator claim credit
+V11_4_R10_link_required,Any family inducing finite-range/range rows must cite a valid R10 curve or theorem-zero source.,R10 link artifact exists and no required link is omitted,links_declared_no_curves_loaded,keep alpha(lambda)/R10 rows retained
+V11_5_source_path_required,A claimable row needs a real source_file path and formula_reference.,source path exists and formula reference is not missing,fail_for_claim,valid_for_claim remains false
+V11_6_units_required,A nonzero or bounded coefficient must declare units and normalization.,"coefficient_units and normalization are concrete, not MISSING_*",fail_for_claim,valid_for_claim remains false

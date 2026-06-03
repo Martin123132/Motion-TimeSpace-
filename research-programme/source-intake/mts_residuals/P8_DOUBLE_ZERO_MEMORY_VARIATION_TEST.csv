@@ -1,0 +1,6 @@
+﻿gate_power_p,coupling,f_at_zero,f_prime_at_zero,memory_stress_at_local_zero,lambda_at_local_zero,verdict
+0,f(chi_D)=1,1,0,nonzero,0_if_no_chi_dependence,fail_memory_not_silenced
+1,f(chi_D)=chi_D,0,1,zero,-L_mem,fail_hidden_selector_exchange
+2,f(chi_D)=chi_D^2,0,0,zero,0,pass_as_sufficient_contract
+3,f(chi_D)=chi_D^3 or det(Q_coh),0,0,zero,0,pass_stronger_but_amplitude_normalization_needed
+>=2,any smooth f with Taylor coefficients a0=a1=0,0,0,zero,0,required_general_condition
