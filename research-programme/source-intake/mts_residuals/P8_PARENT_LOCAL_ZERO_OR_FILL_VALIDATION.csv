@@ -1,0 +1,7 @@
+rule_id,rule,result,evidence,claim_effect
+V483_0_sources,all cited source paths exist,pass,missing_sources=0,traceability only
+V483_1_residual_vector_loaded,482 local residual vector is loaded and still has no passing claim rows,pass,local_vector_rows=11; failed_components=11,fork is based on active residual evidence
+V483_2_parent_not_promoted,Qcoh parent contract has no local-GR claim-valid rows,pass,parent_claim_rows=0,no hidden derivation claim
+V483_3_derivation_first_selected,exactly one fork is selected and it is parent local-zero,pass,F0_parent_local_zero,next route is aligned with GR/Newton derivation objective
+V483_4_fill_labelled_fallback,numeric fill route is retained but labelled closure-only,pass,F1_numeric_fill=fallback_only; NF rows claim_ceiling closure,no closure mistaken for derivation
+V483_5_no_promotion,fork decision grants no Newton/PPN/local-GR promotion,pass,parent_action_local_zero_or_fill_decision_written_derivation_first_fill_fallback_closure_only_no_Newton_PPN_or_local_GR_pass,decision gate only

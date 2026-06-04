@@ -4,7 +4,7 @@
 
 - `README.md` gives the public overview.
 - `CLAIM_CEILING.md` states the current claim boundary.
-- `docs/status/STATUS-2026-06-03.md` gives the current status snapshot.
+- `docs/status/STATUS-2026-06-04.md` gives the current status snapshot.
 - `docs/theory-gates/LOCAL-GR-NEWTON-GATES.md` gives the main route from MTS toward GR/Newton.
 
 ## Research Programme
@@ -29,4 +29,3 @@ archive/legacy-pre-formalization-2026-06/
 ```
 
 This archive is kept for provenance. It should not be read as the current claim state of the project.
-

@@ -8,6 +8,7 @@ This repository is a public work-in-progress research programme.
 - The current SN+BAO closure branch is competitive enough to justify further study.
 - The project now has explicit theorem gates for Newtonian recovery, local GR, PPN residuals, source normalization, and parent-action ownership.
 - Several candidate structures have been sharpened into theorem targets or labelled closure assumptions.
+- The local-zero parent-action route now has a conditional trace-projector clause: stationary compact comoving domains can set the coherent expansion average `X_D=0` under stated assumptions.
 - The work is suitable for public technical inspection as an evolving research programme.
 
 ## What Cannot Be Claimed Yet
@@ -19,6 +20,7 @@ This repository is a public work-in-progress research programme.
 - MTS does not yet derive all closure constants, including `B_mem=2/27`.
 - The cosmology branch does not by itself prove the field theory.
 - The determinant-current route does not yet prove domain-alpha3 silence.
+- The local-zero route does not yet prove boundary no-flux, R11/source-normalization silence, or full stress/Bianchi closure.
 
 ## Promotion Rule
 
@@ -29,4 +31,3 @@ A result may only be promoted when it has at least one of:
 3. a clearly labelled empirical closure status with no stronger theoretical claim attached.
 
 If a condition is assumed, fitted, closure-level, or post-fit, it must remain visibly labelled.
-
