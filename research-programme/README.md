@@ -16,7 +16,7 @@ Start with:
 2. `checkpoints/346-GR-and-derivation-north-star-spine.md`
 3. `checkpoints/399-local-GR-status-for-human-review.md`
 4. `checkpoints/460-source-normalized-Newton-branch-theorem-stack.md`
-5. `checkpoints/478-determinant-current-parent-ownership-or-demotion.md`
+5. `checkpoints/482-local-residual-vector-from-domain-source-fill.md`
+6. `checkpoints/484-parent-local-zero-action-clause-attempt.md`
 
 The numbered files are internal research artifacts. They deliberately include failed derivation attempts and red-team gates because those failures are part of the audit trail.
-

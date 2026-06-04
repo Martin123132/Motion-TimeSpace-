@@ -42,3 +42,10 @@ The parent action must own the structures used in the reduction:
 
 Closure assumptions are allowed as research scaffolding, but they cannot be promoted as derived physics.
 
+## Latest Local-Zero Route
+
+The current best parent-action clue is checkpoint `484-parent-local-zero-action-clause-attempt.md`.
+
+It gives a conditional route in which the coherent trace load is represented by `Qcoh_mu_nu = (1/3) h_mu_nu X`, with `X = nabla_mu u^mu`. For stationary compact comoving local domains, the domain average can impose `X_D=0`, which removes the coherent trace-load exposure without adding a plateau axiom.
+
+This is progress, but not a local-GR proof. The remaining local-GR blockers are boundary no-flux/preferred-frame silence, R11/source-normalization silence, and the full projector stress/Bianchi accounting.

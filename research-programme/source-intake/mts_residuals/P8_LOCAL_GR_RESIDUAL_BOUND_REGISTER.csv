@@ -1,0 +1,12 @@
+component_id,target_row,observable,bound_or_gate,current_status,passes_required_gate,valid_for_local_GR_claim,source_artifact
+LRV_BOUNDARY_R7_ALPHA3,R7_alpha3,alpha3,abs(alpha3_boundary) <= 4e-20 dimensionless,template_unfilled,false,false,source-intake\mts_residuals\P8_ALPHA3_NUMERIC_PRODUCT_INPUT_TEMPLATE.csv
+LRV_DOMAIN_R5_ALPHA1,R5_alpha1,alpha1,abs(alpha1_domain) <= 1e-04,template_unfilled,false,false,source-intake\mts_residuals\P8_ALPHA3_DOMAIN_SIBLING_INPUT_TEMPLATE.csv
+LRV_DOMAIN_R6_ALPHA2,R6_alpha2,alpha2,abs(alpha2_domain) <= 2e-09,template_unfilled,false,false,source-intake\mts_residuals\P8_ALPHA3_DOMAIN_SIBLING_INPUT_TEMPLATE.csv
+LRV_DOMAIN_R7_ALPHA3,R7_alpha3,alpha3,abs(alpha3_domain) <= 4e-20 dimensionless,template_unfilled,false,false,source-intake\mts_residuals\P8_ALPHA3_NUMERIC_PRODUCT_INPUT_TEMPLATE.csv
+LRV_DOMAIN_R8_XI,R8_xi,xi,abs(xi_domain) <= 4e-09,template_unfilled,false,false,source-intake\mts_residuals\P8_ALPHA3_DOMAIN_SIBLING_INPUT_TEMPLATE.csv
+LRV_DOMAIN_R11_SOURCE_NORMALIZATION,R11_EH_operator_ledger,non_EH_operator_coefficients,symbolic,template_unfilled,false,false,source-intake\mts_residuals\P8_ALPHA3_DOMAIN_SIBLING_INPUT_TEMPLATE.csv
+LRV_QCOH_PARENT_VARIABLE,parent_action_Q,Q_mu_nu_owner,Q_mu_nu must be variational/Noether-owned before local residuals can pass as derivation,missing_explicit_parent_variable,false,false,source-intake\mts_residuals\P8_QCOH_PARENT_ACTION_CONTRACT.csv
+LRV_QCOH_PROJECTOR_OWNERSHIP,P_coh_owner,projector_ownership,trace projector must be forced by parent local symmetry/Ward/Euler equation,algebra_known_parent_ownership_missing,false,false,source-intake\mts_residuals\P8_QCOH_PARENT_ACTION_CONTRACT.csv
+LRV_QCOH_DOMAIN_SELECTOR,chi_D_owner,local_zero_class,compact local vacuum must force X_D=Tr_h Q_D=0 through PPN order,not_derived,false,false,source-intake\mts_residuals\P8_QCOH_PARENT_ACTION_CONTRACT.csv
+LRV_PROJECTOR_STRESS_ACCOUNTING,projector_domain_stress,Bianchi_PPN_stress,projector/domain metric stress must vanish/topologically cancel or be retained in residual vector,retained_debt,false,false,source-intake\mts_residuals\P8_QCOH_PARENT_ACTION_CONTRACT.csv
+LRV_TOTAL_ALPHA3_GUARD,R7_alpha3,alpha3,total and every active channel pass unless parent identity enforces exact cancellation,guard_only,false,false,source-intake\mts_residuals\P8_ALPHA3_NUMERIC_PRODUCT_INPUT_TEMPLATE.csv

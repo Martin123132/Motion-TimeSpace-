@@ -1,0 +1,9 @@
+step_id,variation,result,clears_identity,status,claim_effect
+V0_delta_lambda_u,delta_{lambda_u} S=0,u^mu u_mu=-1,normalizes local observer flow,formal_pass,sets coframe variable only
+V1_delta_Lambda_X,delta_{Lambda_X} S=0,X=nabla_mu u^mu,LZ0_Q_owner partial: coherent scalar load defined before FLRW,formal_pass_partial,Q owner improves but full parent action still missing
+V2_delta_Lambda_Q,delta_{Lambda_Q} S=0,Qcoh_mu_nu=(1/3)h_mu_nu X,LZ1_trace_projector_owner partial: trace projector owned by definition of coherent scalar load,formal_pass_partial,removes arbitrary smoothing; not full PPN pass
+V3_stationary_branch,local stationary/Killing branch condition,"X=0, Qcoh=0, det_h(Qcoh)=0",LZ3 local zero conditional,conditional_pass,"local zero is a conditional theorem target, not global derivation"
+V4_delta_chi_D_or_D,delta_chi_D S=0 and delta_D S=0,domain/boundary selection remains open,LZ2 not cleared,fail_for_claim,domain selector still blocks promotion
+V5_delta_g_stress,delta_g S=0,"multiplier, projector, and boundary stress must be shown zero/topological or retained",LZ6 not cleared,retained_debt,Bianchi/local-GR claim still forbidden
+V6_boundary_flux,boundary variation / Noether current,"volume flux zero under comoving stationary branch, but alpha3 preferred momentum flux is not proven zero",LZ5 not cleared,fail_for_claim,boundary alpha3 still blocks
+V7_R11_source,source-normalization / non-EH operator sector,EH-only/R11 silence does not follow from X=0 alone,LZ4 not cleared,fail_for_claim,source-normalized Newton still blocked
