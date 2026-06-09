@@ -322,7 +322,7 @@ All conclusions should be evaluated through direct comparison with data.
 
 ## License
 
-MIT License (recommended)
+Motion-TimeSpace Non-Commercial License (MTNSL-1.0)
 
 ---
 
