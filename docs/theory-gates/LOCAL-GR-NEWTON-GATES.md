@@ -53,7 +53,7 @@ This remains useful, but it does not close local GR.
 
 ## Latest Shell / Quotient-Kernel Route
 
-Checkpoint `513-nonlocal-owner-kernel-theorem-or-shell-projection-arena-transfer-matrix.md` gives the latest local shell gate.
+Checkpoints `513` through `516` give the latest local shell gate.
 
 The exact conditional theorem is:
 
@@ -64,7 +64,19 @@ and boundary/exact-current terms are silent,
 then P_metric_loc(DeltaKTF_shell) = 0.
 ```
 
-This is a real theorem shape, but not yet a project claim. The parent action has not yet signed generic shell verticality or generic boundary silence. Until it does, the fallback is an arena transfer matrix. The PPN row has a numeric imported suppression requirement; J2, clocks, orbital systems, R10/fifth-force rows, and EM/Poynting stress still need source-normalized transfer operators.
+This is a real theorem shape, but not yet a project claim. The parent action has not yet signed generic shell verticality or generic boundary silence. Until it does, the fallback is an arena transfer matrix. The PPN row has a numeric imported suppression requirement. The J2 row now has a public transfer law,
+
+```text
+DeltaJ2_shell = s_J2 * A_shell_surface * rho^3 / two_epsilon_surface,
+```
+
+and the shell amplitude has been decomposed into Hilbert, residual, boundary, and readout pieces:
+
+```text
+A_shell_surface = A_H + A_E + A_B + A_R.
+```
+
+That is progress, but not promotion: the four amplitude components still need a parent zero theorem or finite source rows below the bound. Clocks, orbital systems, R10/fifth-force rows, and EM/Poynting stress still need their own source-normalized transfer operators.
 
 ## Current Promotion Status
 

@@ -9,19 +9,22 @@
 
 ## Research Programme
 
-- `research-programme/checkpoints/` contains numbered derivation attempts, scorecards, red-team ledgers, and promotion gates. The public sequence currently runs through checkpoint `513`.
+- `research-programme/checkpoints/` contains numbered derivation attempts, scorecards, red-team ledgers, and promotion gates. The public sequence currently runs through checkpoint `516`.
 - `research-programme/scripts/` contains the scripts used to generate many checkpoint artifacts.
 - `research-programme/source-intake/mts_residuals/` contains compact CSV/register artifacts used by the residual and theorem-gate workflow.
 
 ## Current Local-GR Thread
 
-The July 2026 update publishes the PPC4161 local-GR/Newton work from checkpoint `485` through `513`. Start with:
+The July 2026 update publishes the PPC4161 local-GR/Newton work from checkpoint `485` through `516`. Start with:
 
 - `research-programme/checkpoints/485-second-curvature-channel-forbidden-or-finite-cR2-parent-coefficient-pack.md`
 - `research-programme/checkpoints/500-parent-EH-weak-field-operator-signature-or-PiJ2metric-transfer-row.md`
 - `research-programme/checkpoints/508-DeltaKTF-bound-or-coupling-product-parent-signature.md`
 - `research-programme/checkpoints/511-Ward-cohomology-public-projection-theorem-or-CDeltaKTF-closure-comparator.md`
 - `research-programme/checkpoints/513-nonlocal-owner-kernel-theorem-or-shell-projection-arena-transfer-matrix.md`
+- `research-programme/checkpoints/514-shell-projection-arena-operator-source-fill-or-owner-kernel-parent-signature.md`
+- `research-programme/checkpoints/515-J2-shell-transfer-operator-first-source-row-or-parent-kernel-signature.md`
+- `research-programme/checkpoints/516-J2-shell-surface-amplitude-source-row-or-parent-kernel-zero.md`
 
 ## Data Policy
 

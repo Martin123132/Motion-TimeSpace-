@@ -18,5 +18,7 @@ Start with:
 4. `checkpoints/460-source-normalized-Newton-branch-theorem-stack.md`
 5. `checkpoints/482-local-residual-vector-from-domain-source-fill.md`
 6. `checkpoints/484-parent-local-zero-action-clause-attempt.md`
+7. `checkpoints/513-nonlocal-owner-kernel-theorem-or-shell-projection-arena-transfer-matrix.md`
+8. `checkpoints/516-J2-shell-surface-amplitude-source-row-or-parent-kernel-zero.md`
 
 The numbered files are internal research artifacts. They deliberately include failed derivation attempts and red-team gates because those failures are part of the audit trail.

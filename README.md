@@ -12,11 +12,11 @@ The project currently has three active layers:
 2. **GR/Newton derivation programme** - a finite theorem-stack route toward source-normalized Newtonian recovery and local GR/PPN silence.
 3. **Parent-action formalization** - ongoing attempts to replace closure assumptions with parent-derived variational, projector, domain, source, conservation, and quotient-kernel identities.
 
-The latest public update advances the local-GR/Newton branch from checkpoint `484` to checkpoint `513`. The strongest new result is an exact conditional quotient-kernel theorem: if public local response descends through a parent quotient `q`, the generic `DeltaKTF` transition-shell variation is vertical in `ker(Dq)`, and boundary/exact-current terms are silent, then the local shell projection vanishes. Those parent signatures are not yet proven.
+The latest public update advances the local-GR/Newton branch from checkpoint `484` to checkpoint `516`. The strongest new results are an exact conditional quotient-kernel theorem and a sharper J2/shell-amplitude ledger: if public local response descends through a parent quotient `q`, the generic `DeltaKTF` transition-shell variation is vertical in `ker(Dq)`, and boundary/exact-current terms are silent, then the local shell projection vanishes; separately, the public J2 shell transfer now has an explicit amplitude law and a finite bound on the allowed shell surface amplitude. Those parent signatures and amplitude components are not yet proven zero.
 
 The strongest honest claim is:
 
-> MTS has a live empirical closure branch and a coherent derivation programme toward GR/Newton, including a conditional quotient-kernel route for local shell silence, but it does not yet derive local GR, PPN recovery, Newtonian mechanics, or a completed unified field theory.
+> MTS has a live empirical closure branch and a coherent derivation programme toward GR/Newton, including a conditional quotient-kernel route for local shell silence and a source-ready J2 shell-amplitude bound, but it does not yet derive local GR, PPN recovery, Newtonian mechanics, or a completed unified field theory.
 
 ## Start Here
 
@@ -28,7 +28,8 @@ The strongest honest claim is:
 - `research-programme/checkpoints/399-local-GR-status-for-human-review.md` - local GR/Newton status memo.
 - `research-programme/checkpoints/460-source-normalized-Newton-branch-theorem-stack.md` - finite Newton theorem stack.
 - `research-programme/checkpoints/484-parent-local-zero-action-clause-attempt.md` - earlier parent-local-zero clause attempt.
-- `research-programme/checkpoints/513-nonlocal-owner-kernel-theorem-or-shell-projection-arena-transfer-matrix.md` - latest local shell/kernel gate.
+- `research-programme/checkpoints/513-nonlocal-owner-kernel-theorem-or-shell-projection-arena-transfer-matrix.md` - local shell/kernel gate.
+- `research-programme/checkpoints/516-J2-shell-surface-amplitude-source-row-or-parent-kernel-zero.md` - latest J2 shell-amplitude source gate.
 
 ## Repository Layout
 

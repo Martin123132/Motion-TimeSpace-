@@ -1,0 +1,7 @@
+gate_id,gate,passed,evidence,blocking_rows,claim_allowed,valid_for_claim
+G4498_0_parent_kernel_signed,"parent signs Dq_shell=0, boundary silence and no representative coefficients",False,parent signature audit remains unsigned,PS4498_1_shell_verticality;PS4498_2_boundary_silence;PS4498_3_no_rep_coefficients,False,False
+G4498_1_ppn_operator_numeric,PPN shell projection requirements are numeric and source-backed,True,4496 comparator rows imported into 4498 numeric PPN operator rows,,False,False
+G4498_2_all_arena_operators_source_normalized,"J2, clocks, orbital, R10 and EM have source-backed contracts",True,operator source contract rows include source paths for every local arena,numeric matrices still absent for non-PPN arenas,False,False
+G4498_3_all_arena_operators_numeric,all local arenas have numeric transfer matrices or parent zero signatures,False,PPN is numeric; other arenas are contract-ready but not numeric,OP4498_0_universal_law;OP4498_2_J2;OP4498_3_clock;OP4498_4_orbital;OP4498_5_R10;OP4498_6_EM_Poynting,False,False
+G4498_4_em_poynting_double_count_guard,Poynting vector is treated as EM Hilbert flux rather than extra source,True,"4312/4313/4314/4315/4329 source rows define same-Hodge, same-current and no-flux branches",EM zero branch still conditional; not a local-GR claim,False,False
+G4498_5_local_GR_promotion,local GR/Newton/PPN/R10 promotion,False,parent kernel unsigned and non-PPN numeric transfer matrices absent,G4498_0_parent_kernel_signed;G4498_3_all_arena_operators_numeric,False,False
