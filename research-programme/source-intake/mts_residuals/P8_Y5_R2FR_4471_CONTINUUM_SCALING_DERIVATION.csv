@@ -1,0 +1,6 @@
+scaling_id,term,cell_estimate,continuum_limit,operator,verdict,valid_for_claim
+SCL4471_0_linear_EH,sum_h A_h delta_h,"A_h~ell^2, delta_h~R ell^2, N~V/ell^4",sum_h A_h delta_h -> xi_EH integral sqrt(-g) R,EH/EC principal block,REFINEMENT_STABLE,False
+SCL4471_1_quadratic_visible,sum_h A_h delta_h^2,"A_h delta_h^2~R^2 ell^6, N~V/ell^4",sum_h A_h delta_h^2 -> xi_shape ell^2 integral sqrt(-g) R^2,visible c_R2_cell,VANISHES_ONLY_IF_ELL_IS_GAUGE_AND_C2_SMOOTH,False
+SCL4471_2_physical_grain,finite ell_cell retained,ell_cell is a physical parent length/cutoff/grain,c_R2_cell = xi_shape*c2_visible*ell_cell^2/N_EH,finite R2/fR scalar branch,SOURCE_AND_BOUND_REQUIRED,False
+SCL4471_3_singular_counterterm,c2_visible(ell)~ell^-2 or c_bare finite,renormalized coefficient cancels ell^2 suppression,finite c_R2 residue survives,bare/measure/boundary/hidden c_R2_eff,NOT_A_NO_GRAIN_PROOF_FINITE_INTAKE,False
+SCL4471_4_full_zero_condition,total c_R2_eff,c_R2_cell + c_bare + 0.5 B^T L^-1 B + c_measure + c_boundary,zero only when every term is parent-zero/topological/boundary-routed,complete local scalar/tensor curvature-square channel,FULL_ZERO_NOT_SIGNED,False

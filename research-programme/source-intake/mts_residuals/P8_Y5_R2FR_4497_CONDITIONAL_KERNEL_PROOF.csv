@@ -1,0 +1,6 @@
+proof_id,step,equation,depends_on,conclusion,signed_by_parent,valid_for_claim
+P4497_0_define_public_response,Define the local observable response,O_loc[Phi] = F_loc[Phi] = Fbar_loc(q(Phi)) + B_boundary[Phi],K4497_0_parent_quotient_owner;K4497_2_boundary_silence,public response can only see quotient data plus boundary re-entry,False,False
+P4497_1_take_shell_variation,Vary in the transition-shell direction,delta_shell O_loc = D Fbar_loc|q(Phi) [Dq(Delta Phi_shell)] + delta_shell B_boundary,chain rule on quotient map,all possible leakage is kernel failure or boundary failure,False,False
+P4497_2_apply_verticality,Apply verticality,Dq(Delta Phi_shell)=0,K4497_1_shell_verticality,bulk public response vanishes,False,False
+P4497_3_apply_boundary_silence,Apply boundary silence,delta_shell B_boundary=0,K4497_2_boundary_silence,no exact-current or shell-edge term returns to the public metric,False,False
+P4497_4_conditional_kernel_theorem,Conditional theorem,K4497_0 & K4497_1 & K4497_2 & K4497_3 => P_metric_loc(DeltaKTF_shell)=0,all kernel clauses,"epsilon_shell=0 would follow without tuning, but only if the parent signs the clauses",False,False

@@ -1,0 +1,5 @@
+interface_id,object,formula,result,status,valid_for_claim
+IF4489_0_natural_momenta,quadratic profile interface momenta,Pi_1=(4/5)u; Pi_0=4u/x-(4/5)u'; u=x^4D2[F],natural joins without interface action require [Pi_1]=0 and [Pi_0]=0,INTERFACE_CONDITIONS_DERIVED,False
+IF4489_1_natural_no_go,pure natural interface route,exterior join forces u_tr(b)=0 and u'_tr(b)=0 -> A=B=0 -> F_tr=C/x+D/x^3; exterior matching forces F_tr=x^-3,cannot also match core F=x^2 and F'=2x,PURE_NATURAL_INTERFACE_REJECTED,False
+IF4489_2_gluing_multiplier_action,C1 constrained gluing,S_glue=sum(lambda_0[F]+lambda_1[F']); variation gives [F]=[F']=0 and [Pi_i]+lambda_i=0,lambda_i=-[Pi_i] closes interface equations exactly if parent allows gluing multipliers,MECHANISM_CONSTRUCTED_PARENT_SIGNATURE_REQUIRED,False
+IF4489_3_rejected_penalty,source-neutral quadratic C1 penalty,S_bl=(1/2)k0[F]^2+(1/2)k1[F']^2+k01[F][F'],fails on C1 matched exact branch because penalty gradient vanishes where nonzero momentum is required,QUADRATIC_PENALTY_REJECTED,False

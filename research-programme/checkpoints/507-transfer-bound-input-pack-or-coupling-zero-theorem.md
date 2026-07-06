@@ -1,0 +1,139 @@
+# 507 PPC4161 - Transfer Bound Input Pack Or Coupling Zero Theorem
+
+Private checkpoint: `4491`
+Marker: `PPC4161_TRANSFER_BOUND_INPUT_PACK_OR_COUPLING_ZERO_THEOREM_4491`
+Decision: `FIRST_NO_CANCELLATION_TRANSFER_BOUND_PACK_BUILT_MODERATE_COUPLING_SURVIVES_HUGE_COUPLING_FAILS_NONCLAIM`
+Generated UTC: `2026-07-05T22:49:35+00:00`
+
+## Result
+
+4491 does not find a parent-owned exact zero for `s_K2*kappa_STF` or `A_DeltaKTF_surface`. So the route moves to the fallback properly: a numeric no-cancellation transfer-bound scorer.
+
+The scoring rule is:
+
+```text
+A_total_l2 <= |A_slip_surface| + |A_DeltaKTF_surface|
+pass only if |A_slip_surface| + |A_DeltaKTF_surface| <= arena_bound
+```
+
+This forbids hiding one lane behind another by cancellation. Under the first beta=1, surface-normalized smoke scorer, the smoothstep `|s_K2*kappa_STF|=1e9` row survives all proxy rows, but `1e11` fails the tight J2 surface proxy. That is useful: the scorer now rejects too-large coupling products instead of merely listing missing inputs.
+
+This is still not a local-GR claim. It assumes `A_DeltaKTF=0` for the slip-only smoke pass, and it still needs parent-owned coupling, `DeltaKTF` projection, and arena beta/path coefficients.
+
+## Transfer Bound Input Pack
+
+| bound_id | arena | observable | bound_on_A_total_l2 | units | transfer_assumption | source_anchor | claim_scope | valid_for_claim |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| TB4491_0_J2_surface_half_range | solar_orbital_J2 | surface_l2_metric_amplitude | 1.400851696295935e-13 | dimensionless | beta_g00=1; rho=1; A_total_l2 directly compared to public J2 surface P2 amplitude | PHB4487_solar_J2_half_range_proxy; J2T4482_2_corrected_J2eff | tight pressure proxy; not a public J2 pass | False |
+| TB4491_1_PPN_gamma_surface_proxy | PPN_gamma_STF | gamma_like_anisotropic_slip_at_solar_surface | 4.881755911334321e-11 | dimensionless | delta_gamma_eff~A_total_l2/U_N_surface with U_N_surface=GM/(c^2R) | B4173_00_gamma; BND4085_0_gamma_cassini | surface normalization proxy; experiment geometry still needed | False |
+| TB4491_2_light_time_surface_proxy | light_time_lensing | Cassini_gamma_like_light_time_slip | 4.881755911334321e-11 | dimensionless | same surface gamma proxy before path integral factor; beta_light=1 | B4173_00_gamma; Cassini Shapiro source row | line-of-sight integral not yet evaluated | False |
+| TB4491_3_clock_redshift_unit_proxy | clock_redshift | redshift_violation_alpha_unit_potential | 5.150000000000000e-05 | dimensionless | unit beta_clock and unit normalized P2 potential coefficient; physical clock path factor still required | B4173_13_clock | unit-transfer proxy only | False |
+| TB4491_4_orbital_combo_surface_proxy | orbital_dynamics | perihelion_combo_surface_proxy | 9.905011994011667e-11 | dimensionless | ((2+2gamma-beta)/3)-1 surface proxy multiplied by U_N_surface | B4173_14_orbit_combo | orbital element/ephemeris transfer not yet integrated | False |
+
+## No-Cancellation Scorer Rows
+
+First 20 rows shown here; full table is in `D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_4491_NO_CANCELLATION_SCORER.csv`.
+
+| score_id | profile_id | arena | abs_sK2_kappaSTF | A_slip_surface_envelope | bound_on_A_total_l2 | fraction_of_bound_slip_only | remaining_A_DeltaKTF_allowance_no_cancellation | pass_if_A_DeltaKTF_zero_and_beta_proxy_one | no_cancellation_rule | status | valid_for_claim |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| NC4491_PSEL4489_0_smoothstep_minN4_candidate_1.000000000000000e+00_TB4491_0_J2_surface_half_range | PSEL4489_0_smoothstep_minN4_candidate | solar_orbital_J2 | 1.000000000000000e+00 | 2.438452097736016e-24 | 1.400851696295935e-13 | 1.740692540247947e-11 | 1.400851696271550e-13 | True | \|A_slip\|+\|A_DeltaKTF\| <= bound; destructive cancellation forbidden | SLIP_ONLY_SMOKE_PASS | False |
+| NC4491_PSEL4489_0_smoothstep_minN4_candidate_1.000000000000000e+00_TB4491_1_PPN_gamma_surface_proxy | PSEL4489_0_smoothstep_minN4_candidate | PPN_gamma_STF | 1.000000000000000e+00 | 2.438452097736016e-24 | 4.881755911334321e-11 | 4.995030767668019e-14 | 4.881755911334077e-11 | True | \|A_slip\|+\|A_DeltaKTF\| <= bound; destructive cancellation forbidden | SLIP_ONLY_SMOKE_PASS | False |
+| NC4491_PSEL4489_0_smoothstep_minN4_candidate_1.000000000000000e+00_TB4491_2_light_time_surface_proxy | PSEL4489_0_smoothstep_minN4_candidate | light_time_lensing | 1.000000000000000e+00 | 2.438452097736016e-24 | 4.881755911334321e-11 | 4.995030767668019e-14 | 4.881755911334077e-11 | True | \|A_slip\|+\|A_DeltaKTF\| <= bound; destructive cancellation forbidden | SLIP_ONLY_SMOKE_PASS | False |
+| NC4491_PSEL4489_0_smoothstep_minN4_candidate_1.000000000000000e+00_TB4491_3_clock_redshift_unit_proxy | PSEL4489_0_smoothstep_minN4_candidate | clock_redshift | 1.000000000000000e+00 | 2.438452097736016e-24 | 5.150000000000000e-05 | 4.734858442205857e-20 | 5.150000000000000e-05 | True | \|A_slip\|+\|A_DeltaKTF\| <= bound; destructive cancellation forbidden | SLIP_ONLY_SMOKE_PASS | False |
+| NC4491_PSEL4489_0_smoothstep_minN4_candidate_1.000000000000000e+00_TB4491_4_orbital_combo_surface_proxy | PSEL4489_0_smoothstep_minN4_candidate | orbital_dynamics | 1.000000000000000e+00 | 2.438452097736016e-24 | 9.905011994011667e-11 | 2.461836592636380e-14 | 9.905011994011423e-11 | True | \|A_slip\|+\|A_DeltaKTF\| <= bound; destructive cancellation forbidden | SLIP_ONLY_SMOKE_PASS | False |
+| NC4491_PSEL4489_0_smoothstep_minN4_candidate_1.000000000000000e+09_TB4491_0_J2_surface_half_range | PSEL4489_0_smoothstep_minN4_candidate | solar_orbital_J2 | 1.000000000000000e+09 | 2.438452097736017e-15 | 1.400851696295935e-13 | 1.740692540247947e-02 | 1.376467175318575e-13 | True | \|A_slip\|+\|A_DeltaKTF\| <= bound; destructive cancellation forbidden | SLIP_ONLY_SMOKE_PASS | False |
+| NC4491_PSEL4489_0_smoothstep_minN4_candidate_1.000000000000000e+09_TB4491_1_PPN_gamma_surface_proxy | PSEL4489_0_smoothstep_minN4_candidate | PPN_gamma_STF | 1.000000000000000e+09 | 2.438452097736017e-15 | 4.881755911334321e-11 | 4.995030767668020e-05 | 4.881512066124547e-11 | True | \|A_slip\|+\|A_DeltaKTF\| <= bound; destructive cancellation forbidden | SLIP_ONLY_SMOKE_PASS | False |
+| NC4491_PSEL4489_0_smoothstep_minN4_candidate_1.000000000000000e+09_TB4491_2_light_time_surface_proxy | PSEL4489_0_smoothstep_minN4_candidate | light_time_lensing | 1.000000000000000e+09 | 2.438452097736017e-15 | 4.881755911334321e-11 | 4.995030767668020e-05 | 4.881512066124547e-11 | True | \|A_slip\|+\|A_DeltaKTF\| <= bound; destructive cancellation forbidden | SLIP_ONLY_SMOKE_PASS | False |
+| NC4491_PSEL4489_0_smoothstep_minN4_candidate_1.000000000000000e+09_TB4491_3_clock_redshift_unit_proxy | PSEL4489_0_smoothstep_minN4_candidate | clock_redshift | 1.000000000000000e+09 | 2.438452097736017e-15 | 5.150000000000000e-05 | 4.734858442205858e-11 | 5.149999999756155e-05 | True | \|A_slip\|+\|A_DeltaKTF\| <= bound; destructive cancellation forbidden | SLIP_ONLY_SMOKE_PASS | False |
+| NC4491_PSEL4489_0_smoothstep_minN4_candidate_1.000000000000000e+09_TB4491_4_orbital_combo_surface_proxy | PSEL4489_0_smoothstep_minN4_candidate | orbital_dynamics | 1.000000000000000e+09 | 2.438452097736017e-15 | 9.905011994011667e-11 | 2.461836592636381e-05 | 9.904768148801894e-11 | True | \|A_slip\|+\|A_DeltaKTF\| <= bound; destructive cancellation forbidden | SLIP_ONLY_SMOKE_PASS | False |
+| NC4491_PSEL4489_0_smoothstep_minN4_candidate_1.000000000000000e+11_TB4491_0_J2_surface_half_range | PSEL4489_0_smoothstep_minN4_candidate | solar_orbital_J2 | 1.000000000000000e+11 | 2.438452097736016e-13 | 1.400851696295935e-13 | 1.740692540247947e+00 | 0.000000000000000e+00 | False | \|A_slip\|+\|A_DeltaKTF\| <= bound; destructive cancellation forbidden | SLIP_ONLY_SMOKE_FAIL | False |
+| NC4491_PSEL4489_0_smoothstep_minN4_candidate_1.000000000000000e+11_TB4491_1_PPN_gamma_surface_proxy | PSEL4489_0_smoothstep_minN4_candidate | PPN_gamma_STF | 1.000000000000000e+11 | 2.438452097736016e-13 | 4.881755911334321e-11 | 4.995030767668019e-03 | 4.857371390356960e-11 | True | \|A_slip\|+\|A_DeltaKTF\| <= bound; destructive cancellation forbidden | SLIP_ONLY_SMOKE_PASS | False |
+| NC4491_PSEL4489_0_smoothstep_minN4_candidate_1.000000000000000e+11_TB4491_2_light_time_surface_proxy | PSEL4489_0_smoothstep_minN4_candidate | light_time_lensing | 1.000000000000000e+11 | 2.438452097736016e-13 | 4.881755911334321e-11 | 4.995030767668019e-03 | 4.857371390356960e-11 | True | \|A_slip\|+\|A_DeltaKTF\| <= bound; destructive cancellation forbidden | SLIP_ONLY_SMOKE_PASS | False |
+| NC4491_PSEL4489_0_smoothstep_minN4_candidate_1.000000000000000e+11_TB4491_3_clock_redshift_unit_proxy | PSEL4489_0_smoothstep_minN4_candidate | clock_redshift | 1.000000000000000e+11 | 2.438452097736016e-13 | 5.150000000000000e-05 | 4.734858442205857e-09 | 5.149999975615479e-05 | True | \|A_slip\|+\|A_DeltaKTF\| <= bound; destructive cancellation forbidden | SLIP_ONLY_SMOKE_PASS | False |
+| NC4491_PSEL4489_0_smoothstep_minN4_candidate_1.000000000000000e+11_TB4491_4_orbital_combo_surface_proxy | PSEL4489_0_smoothstep_minN4_candidate | orbital_dynamics | 1.000000000000000e+11 | 2.438452097736016e-13 | 9.905011994011667e-11 | 2.461836592636380e-03 | 9.880627473034307e-11 | True | \|A_slip\|+\|A_DeltaKTF\| <= bound; destructive cancellation forbidden | SLIP_ONLY_SMOKE_PASS | False |
+| NC4491_PSEL4489_1_min_N4_exact_EL_scan_1.000000000000000e+00_TB4491_0_J2_surface_half_range | PSEL4489_1_min_N4_exact_EL_scan | solar_orbital_J2 | 1.000000000000000e+00 | 6.969240878100605e-25 | 1.400851696295935e-13 | 4.975002633418183e-12 | 1.400851696288966e-13 | True | \|A_slip\|+\|A_DeltaKTF\| <= bound; destructive cancellation forbidden | SLIP_ONLY_SMOKE_PASS | False |
+| NC4491_PSEL4489_1_min_N4_exact_EL_scan_1.000000000000000e+00_TB4491_1_PPN_gamma_surface_proxy | PSEL4489_1_min_N4_exact_EL_scan | PPN_gamma_STF | 1.000000000000000e+00 | 6.969240878100605e-25 | 4.881755911334321e-11 | 1.427609451328695e-14 | 4.881755911334251e-11 | True | \|A_slip\|+\|A_DeltaKTF\| <= bound; destructive cancellation forbidden | SLIP_ONLY_SMOKE_PASS | False |
+| NC4491_PSEL4489_1_min_N4_exact_EL_scan_1.000000000000000e+00_TB4491_2_light_time_surface_proxy | PSEL4489_1_min_N4_exact_EL_scan | light_time_lensing | 1.000000000000000e+00 | 6.969240878100605e-25 | 4.881755911334321e-11 | 1.427609451328695e-14 | 4.881755911334251e-11 | True | \|A_slip\|+\|A_DeltaKTF\| <= bound; destructive cancellation forbidden | SLIP_ONLY_SMOKE_PASS | False |
+| NC4491_PSEL4489_1_min_N4_exact_EL_scan_1.000000000000000e+00_TB4491_3_clock_redshift_unit_proxy | PSEL4489_1_min_N4_exact_EL_scan | clock_redshift | 1.000000000000000e+00 | 6.969240878100605e-25 | 5.150000000000000e-05 | 1.353250655941865e-20 | 5.150000000000000e-05 | True | \|A_slip\|+\|A_DeltaKTF\| <= bound; destructive cancellation forbidden | SLIP_ONLY_SMOKE_PASS | False |
+| NC4491_PSEL4489_1_min_N4_exact_EL_scan_1.000000000000000e+00_TB4491_4_orbital_combo_surface_proxy | PSEL4489_1_min_N4_exact_EL_scan | orbital_dynamics | 1.000000000000000e+00 | 6.969240878100605e-25 | 9.905011994011667e-11 | 7.036075152977140e-15 | 9.905011994011598e-11 | True | \|A_slip\|+\|A_DeltaKTF\| <= bound; destructive cancellation forbidden | SLIP_ONLY_SMOKE_PASS | False |
+
+## DeltaKTF Allowance Summary
+
+| allowance_id | profile_id | abs_sK2_kappaSTF | hardest_arena | max_fraction_of_bound | min_remaining_A_DeltaKTF_allowance | all_slip_only_smoke_rows_pass | interpretation | valid_for_claim |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| DA4491_PSEL4489_0_smoothstep_minN4_candidate_1.000000000000000e+00 | PSEL4489_0_smoothstep_minN4_candidate | 1.000000000000000e+00 | solar_orbital_J2 | 1.740692540247947e-11 | 1.400851696271550e-13 | True | positive allowance means finite DeltaKTF leakage can still be bounded; zero allowance means this coupling/profile already fails the tightest proxy unless a zero theorem or smaller beta coefficient exists | False |
+| DA4491_PSEL4489_0_smoothstep_minN4_candidate_1.000000000000000e+09 | PSEL4489_0_smoothstep_minN4_candidate | 1.000000000000000e+09 | solar_orbital_J2 | 1.740692540247947e-02 | 1.376467175318575e-13 | True | positive allowance means finite DeltaKTF leakage can still be bounded; zero allowance means this coupling/profile already fails the tightest proxy unless a zero theorem or smaller beta coefficient exists | False |
+| DA4491_PSEL4489_0_smoothstep_minN4_candidate_1.000000000000000e+11 | PSEL4489_0_smoothstep_minN4_candidate | 1.000000000000000e+11 | solar_orbital_J2 | 1.740692540247947e+00 | 0.000000000000000e+00 | False | positive allowance means finite DeltaKTF leakage can still be bounded; zero allowance means this coupling/profile already fails the tightest proxy unless a zero theorem or smaller beta coefficient exists | False |
+| DA4491_PSEL4489_1_min_N4_exact_EL_scan_1.000000000000000e+00 | PSEL4489_1_min_N4_exact_EL_scan | 1.000000000000000e+00 | solar_orbital_J2 | 4.975002633418183e-12 | 1.400851696288966e-13 | True | positive allowance means finite DeltaKTF leakage can still be bounded; zero allowance means this coupling/profile already fails the tightest proxy unless a zero theorem or smaller beta coefficient exists | False |
+| DA4491_PSEL4489_1_min_N4_exact_EL_scan_1.000000000000000e+09 | PSEL4489_1_min_N4_exact_EL_scan | 1.000000000000000e+09 | solar_orbital_J2 | 4.975002633418183e-03 | 1.393882455417834e-13 | True | positive allowance means finite DeltaKTF leakage can still be bounded; zero allowance means this coupling/profile already fails the tightest proxy unless a zero theorem or smaller beta coefficient exists | False |
+| DA4491_PSEL4489_1_min_N4_exact_EL_scan_1.000000000000000e+11 | PSEL4489_1_min_N4_exact_EL_scan | 1.000000000000000e+11 | solar_orbital_J2 | 4.975002633418183e-01 | 7.039276084858744e-14 | True | positive allowance means finite DeltaKTF leakage can still be bounded; zero allowance means this coupling/profile already fails the tightest proxy unless a zero theorem or smaller beta coefficient exists | False |
+| DA4491_PSEL4489_1_balanced_Fpp_jump_1.000000000000000e+00 | PSEL4489_1_balanced_Fpp_jump | 1.000000000000000e+00 | solar_orbital_J2 | 5.610422832576240e-12 | 1.400851696288076e-13 | True | positive allowance means finite DeltaKTF leakage can still be bounded; zero allowance means this coupling/profile already fails the tightest proxy unless a zero theorem or smaller beta coefficient exists | False |
+| DA4491_PSEL4489_1_balanced_Fpp_jump_1.000000000000000e+09 | PSEL4489_1_balanced_Fpp_jump | 1.000000000000000e+09 | solar_orbital_J2 | 5.610422832576240e-03 | 1.392992325953983e-13 | True | positive allowance means finite DeltaKTF leakage can still be bounded; zero allowance means this coupling/profile already fails the tightest proxy unless a zero theorem or smaller beta coefficient exists | False |
+| DA4491_PSEL4489_1_balanced_Fpp_jump_1.000000000000000e+11 | PSEL4489_1_balanced_Fpp_jump | 1.000000000000000e+11 | solar_orbital_J2 | 5.610422832576240e-01 | 6.149146621007479e-14 | True | positive allowance means finite DeltaKTF leakage can still be bounded; zero allowance means this coupling/profile already fails the tightest proxy unless a zero theorem or smaller beta coefficient exists | False |
+
+## Coupling / Zero Audit
+
+| zero_id | quantity | zero_condition | current_status | effect_if_zero | fallback_if_not_zero | valid_for_claim |
+| --- | --- | --- | --- | --- | --- | --- |
+| Z4491_0_sK2 | s_K2 | parent variation makes the Hessian source coefficient vanish | UNSIGNED | P_H=0 and the slip lane closes independent of profile | use no-cancellation bound rows for each sourced coupling product | False |
+| Z4491_1_kappa_STF | kappa_STF | source profile has no tracefree Hessian projection in the public metric channel | UNSIGNED | P_H=0 and l2 slip branch closes | derive/source numeric kappa_STF or keep envelope scorer | False |
+| Z4491_2_I4_D2 | I4_D2 | profile cancellation gives I4_D2=0 while preserving exterior matching | REJECTED_FOR_CURRENT_MATCHED_EXTERIOR_BRANCH | P_H=0 | finite N4_D2 envelope controls magnitude | False |
+| Z4491_3_DeltaKTF | A_DeltaKTF_surface | DeltaK_TF is quotient-vertical, same-source silent, or killed by parent metric projection | UNSIGNED | slip-only smoke rows become the active transfer test | must satisfy remaining_A_DeltaKTF_allowance_no_cancellation in every arena | False |
+| Z4491_4_beta_coefficients | beta_g00,beta_space,beta_clock,beta_light | readout split suppresses a given arena coefficient | UNSIGNED | corresponding arena transfer row relaxes or closes | beta=1 proxy is retained as conservative first smoke row | False |
+
+## Decision Ledger
+
+| decision_id | finding | reason | effect | next_action | valid_for_claim |
+| --- | --- | --- | --- | --- | --- |
+| DEC4491_0_numeric_pack | first no-cancellation numeric transfer-bound pack is built | source-backed/local bound rows now map to A_total_l2 thresholds | DeltaKTF allowance can be scored instead of hand-waved | 4492-Y5-R2FR-DeltaKTF-bound-or-coupling-product-parent-signature.md | False |
+| DEC4491_1_moderate_coupling | smoothstep 1e9 coupling survives the tight J2 surface proxy if DeltaKTF is zero | max_fraction=1.740692540247947e-02 | moderate finite branch is not instantly killed by the first no-cancellation scorer | 4492-Y5-R2FR-DeltaKTF-bound-or-coupling-product-parent-signature.md | False |
+| DEC4491_2_huge_coupling | smoothstep 1e11 coupling fails the tight J2 surface proxy under beta=1 and DeltaKTF=0 | max_fraction=1.740692540247947e+00 | large coupling products require zero theorem, smaller beta coefficient, or a different sourced profile | 4492-Y5-R2FR-DeltaKTF-bound-or-coupling-product-parent-signature.md | False |
+| DEC4491_3_no_claim | local-GR remains unclaimed | parent D2 selection, coupling product, DeltaKTF and arena beta/path coefficients are still unsigned | 4492 must target DeltaKTF/coupling ownership or source-backed coefficient rows | 4492-Y5-R2FR-DeltaKTF-bound-or-coupling-product-parent-signature.md | False |
+
+## Claim Gates
+
+| gate_id | requirement | passed | claim_allowed | reason | valid_for_claim |
+| --- | --- | --- | --- | --- | --- |
+| CG4491_0_sources | all cited source paths exist and needles are found | True | False | source-backed private scorer only | False |
+| CG4491_1_bound_rows_numeric | all bound rows have positive numeric A_total_l2 thresholds | True | False | numeric proxies are not full arena integrations | False |
+| CG4491_2_no_cancellation_scores | no-cancellation scorer rows exist | True | False | DeltaKTF and beta coefficients not sourced | False |
+| CG4491_3_1e9_smoke_survives | smoothstep 1e9 slip-only smoke survives every proxy row | True | False | smoke pass assumes A_DeltaKTF=0 and beta=1 proxy normalization | False |
+| CG4491_4_1e11_failure_demonstrator | smoothstep 1e11 exhibits a failure in the tight proxy | True | False | shows scorer can reject oversized coupling products | False |
+| CG4491_5_zero_audit | coupling and DeltaKTF zero routes are explicitly audited | True | False | zero theorem not yet signed | False |
+| CG4491_6_local_GR | local-GR/J2/PPN claim | False | False | numeric scorer is smoke-only until parent coefficients and arena transfer factors are sourced | False |
+
+## Status
+
+| checkpoint | marker | claim_id | decision | bound_rows | score_rows | smoothstep_1e9_max_fraction | smoothstep_1e9_all_pass | smoothstep_1e11_max_fraction | smoothstep_1e11_all_pass | local_GR_claim | sharpest_open_clause | next_target | valid_for_claim | generated_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 4491 | PPC4161_TRANSFER_BOUND_INPUT_PACK_OR_COUPLING_ZERO_THEOREM_4491 | L-333 | FIRST_NO_CANCELLATION_TRANSFER_BOUND_PACK_BUILT_MODERATE_COUPLING_SURVIVES_HUGE_COUPLING_FAILS_NONCLAIM | 5 | 45 | 1.740692540247947e-02 | True | 1.740692540247947e+00 | False | False | A_DeltaKTF_surface_or_coupling_product_parent_signature | 4492-Y5-R2FR-DeltaKTF-bound-or-coupling-product-parent-signature.md | False | 2026-07-05T22:49:35+00:00 |
+
+## Next Target
+
+| next_id | target | objective | derive_first | fallback | risk | valid_for_claim |
+| --- | --- | --- | --- | --- | --- | --- |
+| NT4491_0 | 4492-Y5-R2FR-DeltaKTF-bound-or-coupling-product-parent-signature.md | Either prove/bound A_DeltaKTF_surface in the same public metric lane, or parent-sign the coupling product s_K2*kappa_STF so the no-cancellation scorer becomes source-owned. | DeltaKTF zero theorem from quotient/same-source projection, or s_K2*kappa_STF parent-signature/scale law | fill numeric beta_g00, beta_clock, beta_light and arena path/integration coefficients | using slip-only smoke rows as a local-GR pass while DeltaKTF or beta/path coefficients remain live | False |
+
+## Source Register
+
+| checkpoint | source_id | source_kind | source_ref | local_path_exists | needle | needle_found | line_number | role | valid_for_claim |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 4491 | SRC4491_00_formal506 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\formalization-workbench\506-PPC4161-gluing-multiplier-parent-origin-or-PPN-transfer-matrix.md | True | A_total_l2 <= | True | 69 | 4490 transfer matrix handoff. | False |
+| 4491 | SRC4491_01_status4490 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_4490_STATUS.csv | True | PPC4161_GLUING_MULTIPLIER_PARENT_ORIGIN_OR_PPN_TRANSFER_MATRIX_4490 | True | 2 | 4490 status and next target. | False |
+| 4491 | SRC4491_02_amp4490 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_4490_SLIP_AMPLITUDE_ENVELOPES.csv | True | SA4490_PSEL4489_0_smoothstep_minN4_candidate_c1e+09 | True | 4 | 4490 slip amplitude rows. | False |
+| 4491 | SRC4491_03_transfer4490 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_4490_OBSERVABLE_TRANSFER_MATRIX.csv | True | TM4490_1_J2_equivalent | True | 3 | 4490 transfer matrix rows. | False |
+| 4491 | SRC4491_04_bound4173 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_4173_SOURCE_BACKED_BOUND_TABLE.csv | True | B4173_14_orbit_combo | True | 16 | 4173 source-backed local bound table. | False |
+| 4491 | SRC4491_05_source4173 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_4173_SOURCE_REGISTER.csv | True | SRC4173_WEB_01_Cassini_gamma | True | 7 | 4173 web source strings. | False |
+| 4491 | SRC4491_06_ppn4085 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_4085_PPN_BOUND_TABLE.csv | True | BND4085_0_gamma_cassini | True | 2 | 4085 PPN bound table. | False |
+| 4491 | SRC4491_07_bound2230 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2230_LOCAL_BOUND_LINKS.csv | True | BL2230_R3_gamma | True | 5 | 2230 local bound links. | False |
+| 4491 | SRC4491_08_phb4487 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_4487_PH_SLIP_BOUND_ROWS.csv | True | PHB4487_solar_J2_half_range_proxy | True | 4 | 4487 tight P2 pressure row. | False |
+| 4491 | SRC4491_09_j24482 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_4482_UPSILON_J2_TRANSFER_SCORER.csv | True | J2T4482_2_corrected_J2eff | True | 4 | 4482 J2 transfer formula. | False |
+| 4491 | SRC4491_10_green4483 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_4483_RADIAL_GREEN_THEOREM.csv | True | RGT4483_2_l2_profile_selection | True | 4 | 4483 public r^-3 Green theorem. | False |
+| 4491 | SRC4491_11_gate | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\transfer_bound_pack_gate.py | True | def no_cancellation_scorer_rows | True | 117 | 4491 scorer helper. | False |
+| 4491 | SRC4491_12_generator | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\Y5_R2FR_4491_transfer_bound_input_pack_or_coupling_zero_theorem.py | True | CHECKPOINT = "4491" | True | 31 | 4491 generator script. | False |
+
+## Decision Row
+
+| checkpoint | marker | claim_id | decision | proof_result | fallback_result | claim_status | next_target | valid_for_claim | generated_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 4491 | PPC4161_TRANSFER_BOUND_INPUT_PACK_OR_COUPLING_ZERO_THEOREM_4491 | L-333 | FIRST_NO_CANCELLATION_TRANSFER_BOUND_PACK_BUILT_MODERATE_COUPLING_SURVIVES_HUGE_COUPLING_FAILS_NONCLAIM | no exact coupling or DeltaKTF zero theorem was found in this pass | first numeric no-cancellation transfer-bound pack computes A_DeltaKTF allowance for J2, PPN-gamma, light-time, clock and orbital proxy rows | private_nonclaim | 4492-Y5-R2FR-DeltaKTF-bound-or-coupling-product-parent-signature.md | False | 2026-07-05T22:49:35+00:00 |

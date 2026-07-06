@@ -1,0 +1,128 @@
+# 494 PPC4161 - Marker Profile Support Zero Certificate Or First Moment Input Row
+
+Private checkpoint: `4478`
+Marker: `PPC4161_MARKER_PROFILE_SUPPORT_ZERO_CERTIFICATE_OR_FIRST_MOMENT_INPUT_ROW_4478`
+Decision: `MARKER_SUPPORT_ZERO_PARENT_UNSIGNED_FIRST_MOMENT_INPUT_LAWS_DERIVED_NONCLAIM`
+Generated UTC: `2026-07-05T21:01:44+00:00`
+
+## Result
+
+4478 attacks the support/profile throat.
+
+The clean zero route is now:
+
+```text
+Z_support=True
+iff no support carrier exists in S_bulk,
+and readout is not support,
+and ordinary Hilbert source worldtubes are not double-counted as marker support,
+and boundary support is fixed/routed/no-flux.
+```
+
+If `Z_support` signs, then:
+
+```text
+F_M absent,
+mu0_M = mu2_M = 0,
+lambda_M*mu0_M = lambda_M*mu2_M = 0.
+```
+
+If support survives, the finite branch is canonically normalized:
+
+```text
+F_M(y)=Q_M f_M(y),  int f_M d^d y=1,
+mu0_M=Q_M,
+mu2_M=Q_M ell_rms^2,
+ell_rms <= ell_sup.
+```
+
+The local support branch is conditionally `d_eff=3`; a covariant spacetime-smearing branch is not forbidden, but it carries clock/Lorentz/locality residual debt. Profile symmetry is also not assumed: non-centering gives a dipole row `D_M^i`, and anisotropy gives a tracefree quadrupole row `Q_M_TF^{ij}`.
+
+## Support Zero Certificate
+
+| certificate_id | clause | formal_test | derivation | if_signed | current_status | parent_signed | valid_for_claim |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| SZC4478_0_support_carrier_absence | no marker support carrier exists in the parent bulk alphabet | F_M, support set Sigma_M, density rho_M, indicator 1_M, worldtube marker W_M, and boundary marker B_M are absent from S_bulk field variables and backgrounds | A profile is not a number; it requires a carrier. If the parent bulk alphabet has no carrier for marker support, then the functional F_M cannot be formed inside S_bulk. | F_M is absent and mu0_M=mu2_M=lambda_M*mu0_M=lambda_M*mu2_M=0 | SUPPORT_CARRIER_ABSENCE_UNSIGNED | False | False |
+| SZC4478_1_external_readout_not_support | external readout coordinates do not define physical support | R_obs only labels O_read or J=0 diagnostic insertion; it does not define a body, density, support set, or material marker in S_bulk | Readout can choose where an observation is reported, but it cannot create a support density that enters the variational problem. | readout branch has no F_M and no marker moments | CONDITIONAL_READOUT_SUPPORT_ZERO | False | False |
+| SZC4478_2_worldtube_support_firewall | source worldtube support is not automatically marker support | Hilbert matter/EM worldtube W_H may exist, but no extra marker profile F_M multiplies local operators unless declared as a new material/source field | Ordinary source support belongs to T_H or T_EM. It becomes a marker support only if a separate profile couples through lambda_M F_M O_a. | do not double-count ordinary matter support as marker support | WORLDLINE_WORLDTUBE_SEPARATION_UNSIGNED | False | False |
+| SZC4478_3_boundary_support_separation | boundary/reference support is fixed, topological, no-flux, or Hamiltonian-routed | Pi_loc(delta S_boundary/delta support_marker)=0, otherwise boundary_marker is a separate finite support row | Boundary support can feed local matching even when no bulk profile exists. It must be routed or bounded separately. | boundary support does not induce mu0_M or mu2_M in the bulk branch | BOUNDARY_SUPPORT_SEPARATION_UNSIGNED | False | False |
+| SZC4478_4_finite_support_fallback | if support survives, canonical moment inputs are mandatory | F_M = Q_M f_M with int f_M=1 for positive profiles, or absolute/signed split for signed profiles; declare support dimension, centre, second moment and support radius | A finite profile can be normalized without loss of generality by moving its amplitude into Q_M or lambda_M; the shape then has moments that feed the 4477 projection law. | finite branch becomes moment-scoreable rather than verbal | DERIVED_FALLBACK_LAW | True | False |
+| SZC4478_5_verdict | profile/support zero is exact but parent-conditional | SZC4478_0 through SZC4478_3 sign together, or SZC4478_4 finite support branch is used | 4478 shows what would make F_M absent. Current MTS has not signed support-carrier absence or boundary separation, so first moment input rows remain live. | marker moments vanish and lambda_M projection vector closes on the zero branch | SUPPORT_ZERO_PARENT_UNSIGNED_FIRST_MOMENT_INPUTS_STAGED | False | False |
+
+## First Moment Input Laws
+
+| law_id | branch | derivation | derived_inputs | projection_use | current_status | valid_for_claim |
+| --- | --- | --- | --- | --- | --- | --- |
+| MIL4478_0_canonical_normalization | positive finite profile | Write F_M(y)=Q_M f_M(y), with int d^d y f_M(y)=1 and f_M>=0. Then mu0_M=Q_M and mu2_M=Q_M ell_rms^2. | Q_M; f_M; ell_rms^2=int r^2 f_M | C_a^M=lambda_M Q_M*(zeta_a + zeta_grad_a ell_rms^2/(2 d_eff L_loc^2))/N_a | DERIVED_CANONICAL_PROFILE_LAW | False |
+| MIL4478_1_signed_profile_guard | signed or oscillatory profile | Use mu0_M=int F_M, mu0_abs=int \|F_M\|, mu2_abs=int r^2 \|F_M\|. No claim may use cancellation in mu0_M unless mu0_abs and componentwise residuals are also bounded. | mu0_M; mu0_abs; mu2_abs | abs(C_a^M) <= abs(lambda_M)*(abs(zeta_a)*mu0_abs + abs(zeta_grad_a)*mu2_abs/(2 d_eff L_loc^2))/abs(N_a) | DERIVED_NO_CANCELLATION_PROFILE_GUARD | False |
+| MIL4478_2_support_dimension_branch | local static tests | For local PPN/R10/clock/orbital tests after Hamiltonian/worldtube split, the marker profile is a spatial profile on Sigma_t, so d_eff=3 if no time-smearing marker is retained. | d_eff=3 conditional branch | gradient coefficient becomes mu2_M/(6 L_loc^2) | CONDITIONAL_LOCAL_SPATIAL_BRANCH | False |
+| MIL4478_3_covariant_smearing_branch | covariant spacetime support | If the marker is a spacetime smearing profile, d_eff=4 may be used, but finite temporal support is then a clock/Lorentz/locality residual that must be bounded separately. | d_eff=4 fallback plus temporal-support residual | gradient coefficient becomes mu2_M/(8 L_loc^2) only after temporal support is physically justified | COVARIANT_BRANCH_REQUIRES_EXTRA_BOUND | False |
+| MIL4478_4_centering_choice | finite support with chosen centre | Choose x_M by the profile centroid when mu0_M is nonzero: int y^i F_M=0. For signed profiles use absolute-centre or keep the dipole row D_M^i=int y^i F_M. | centred=True, or D_M^i finite dipole row | if centred, the first derivative term vanishes; if not, lambda_M zeta_dip D_M^i partial_i O_a/N_a is a new residual | DERIVED_CENTERING_OR_DIPOLE_FALLBACK | False |
+| MIL4478_5_isotropy_or_quadrupole | second moment tensor | Decompose mu2_M^{ij}=(mu2_M/d_eff) h^{ij}+Q_M^{ij,TF}. Isotropy is Q_M^{ij,TF}=0; otherwise the tracefree quadrupole is a finite anisotropic local residual. | mu2_M trace; Q_M_TF anisotropy row | isotropic branch gives Laplacian correction; anisotropic branch adds lambda_M Q_M_TF^{ij} partial_i partial_j O_a/(2 N_a) | DERIVED_ISOTROPY_OR_QUADRUPOLE_FALLBACK | False |
+| MIL4478_6_support_radius_bound | compact support | If supp(f_M) lies inside radius ell_sup, then ell_rms^2<=ell_sup^2 and mu2_abs<=ell_sup^2 mu0_abs. | ell_sup; ell_rms bound; mu2_abs bound | abs(gradient leakage) <= abs(lambda_M)*abs(zeta_grad_a)*mu0_abs*ell_sup^2/(2 d_eff abs(N_a) L_loc^2) | DERIVED_SUPPORT_BOUND | False |
+
+## First Moment Input Rows
+
+| row_id | quantity | definition | formula_or_test | needed_inputs | current_value | units | target | status | valid_for_claim |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| FMI4478_0_support_zero_certificate | Z_support | certificate that no physical marker profile/support exists | Z_support=True iff no support carrier, no readout-as-support, no marker worldtube double count and no boundary support residue | parent support carrier inventory; readout/support split; worldtube separation; boundary support routing | MISSING_SUPPORT_ZERO_CERTIFICATE | boolean_certificate | F_M_absent;mu0_M_zero;mu2_M_zero | BLOCKED_SOURCE_READY | False |
+| FMI4478_1_Q_M | Q_M | profile amplitude after canonical normalization F_M=Q_M f_M | Q_M=mu0_M for positive normalized profiles; use mu0_abs guard for signed profiles | profile normalization; sign branch; parent source path | MISSING_MARKER_PROFILE_AMPLITUDE | profile_integral_units | mu0_M;C_a^M | BLOCKED_SOURCE_READY | False |
+| FMI4478_2_d_eff | d_eff | effective support dimension in the moment expansion | d_eff=3 for local spatial worldtube branch; d_eff=4 for covariant spacetime smearing with clock/Lorentz residual | support branch; Hamiltonian split; temporal smearing status | MISSING_SUPPORT_DIMENSION_SELECTION | dimensionless | mu2_gradient_coefficient | BLOCKED_SOURCE_READY | False |
+| FMI4478_3_ell_rms | ell_rms | root-mean-square marker support radius | ell_rms^2=mu2_M/mu0_M for positive profiles; absolute version for signed profiles | mu0_M;mu2_M;sign branch | MISSING_MARKER_RMS_SUPPORT_RADIUS | m | mu2_M;gradient_leakage | BLOCKED_SOURCE_READY | False |
+| FMI4478_4_ell_sup | ell_sup | upper radius of marker support | supp(f_M) subset B_h(x_M,ell_sup), giving ell_rms<=ell_sup | parent support law or worldtube geometry; non-circular source; uncertainty | MISSING_NONCIRCULAR_SUPPORT_RADIUS | m | bounded_projection_envelope | BLOCKED_SOURCE_READY | False |
+| FMI4478_5_dipole_or_centering | D_M^i | first moment/dipole if profile is not centred | D_M^i=int y^i F_M; centred branch requires D_M^i=0 | centroid choice; profile symmetry; signed-profile guard | MISSING_CENTERING_OR_DIPOLE_VALUE | m_times_profile_units | first_derivative_marker_residual | BLOCKED_SOURCE_READY | False |
+| FMI4478_6_quadrupole_TF | Q_M_TF^{ij} | tracefree second-moment anisotropy | mu2_M^{ij}=(mu2_M/d_eff)h^{ij}+Q_M_TF^{ij}; isotropy requires Q_M_TF=0 | profile tensor moment; isotropy proof or bound | MISSING_ISOTROPY_OR_QUADRUPOLE_BOUND | m^2_times_profile_units | anisotropic_PPN_clock_orbital_residual | BLOCKED_SOURCE_READY | False |
+
+## Decision Ledger
+
+| decision_id | finding | consequence | next_action | valid_for_claim |
+| --- | --- | --- | --- | --- |
+| DEC4478_0_support_zero_attempt | profile/support zero reduces to absence of a support carrier plus readout/worldtube/boundary separation | the clean branch is precise but not parent-signed yet | 4479-Y5-R2FR-profile-symmetry-dimension-branch-or-anisotropic-quadrupole-bound.md | False |
+| DEC4478_1_first_moment_inputs | finite support branch now has canonical inputs Q_M, d_eff, ell_rms, ell_sup, dipole and quadrupole anisotropy | finite profile scoring can proceed without pretending symmetry or support radius is known | 4479-Y5-R2FR-profile-symmetry-dimension-branch-or-anisotropic-quadrupole-bound.md | False |
+| DEC4478_2_next_target | the next sharp target is profile symmetry/dimension branch, especially d_eff=3 local support versus covariant time-smearing and quadrupole leakage | next work should prove the local spatial branch and isotropy, or bound dipole/quadrupole residuals | 4479-Y5-R2FR-profile-symmetry-dimension-branch-or-anisotropic-quadrupole-bound.md | False |
+
+## Claim Gates
+
+| gate_id | claim | gate_pass | claim_allowed | detail | valid_for_claim |
+| --- | --- | --- | --- | --- | --- |
+| CG4478_0_sources | all cited local sources exist and needles are found | True | False | source register validates 4477 handoff and moment/support rows | False |
+| CG4478_1_support_zero_written | marker support zero certificate is explicit | True | False | support carrier, readout, worldtube and boundary separation clauses are written | False |
+| CG4478_2_support_zero_parent_signed | MTS parent proves no marker support/profile exists | False | False | support-carrier absence and separation firewalls remain unsigned | False |
+| CG4478_3_first_input_laws_written | first moment input laws are derived | True | False | canonical normalization, dimension branch, centering, isotropy/quadrupole and support bound are written | False |
+| CG4478_4_first_inputs_ready | first moment inputs are numeric/source ready | False | False | input rows still need support zero, Q_M, d_eff, support radius, centering and quadrupole values | False |
+| CG4478_5_no_generated_claim_rows | no generated row is promoted to public/local-GR evidence | True | False | 4478 is a support-zero certificate attempt plus first moment input law | False |
+
+## Status
+
+| checkpoint | marker | claim_id | decision | support_zero_certificate | first_moment_laws | sharpest_open_clause | first_input_status | public_local_GR_claim | next_target | valid_for_claim | generated_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 4478 | PPC4161_MARKER_PROFILE_SUPPORT_ZERO_CERTIFICATE_OR_FIRST_MOMENT_INPUT_ROW_4478 | L-320 | MARKER_SUPPORT_ZERO_PARENT_UNSIGNED_FIRST_MOMENT_INPUT_LAWS_DERIVED_NONCLAIM | written_parent_unsigned | derived | profile_symmetry_dimension_branch_or_anisotropic_quadrupole_bound | staged_missing_values | False | 4479-Y5-R2FR-profile-symmetry-dimension-branch-or-anisotropic-quadrupole-bound.md | False | 2026-07-05T21:01:44+00:00 |
+
+## Next Target
+
+| next_id | target | objective | derive_first | fallback | risk | valid_for_claim |
+| --- | --- | --- | --- | --- | --- | --- |
+| NT4478_0 | 4479-Y5-R2FR-profile-symmetry-dimension-branch-or-anisotropic-quadrupole-bound.md | Prove the local spatial support/isotropy branch or retain finite dipole and quadrupole anisotropy residual bounds. | show local tests use d_eff=3 spatial worldtube support, centred profile and isotropic second moment | derive bounds for temporal smearing, D_M^i dipole and Q_M_TF^{ij} quadrupole residuals | assuming profile symmetry or d_eff=3 without a support branch proof | False |
+
+## Source Register
+
+| checkpoint | source_id | source_kind | source_ref | local_path_exists | needle | needle_found | line_number | role | valid_for_claim |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 4478 | SRC4478_00_next4477 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_4477_NEXT_TARGET.csv | True | 4478-Y5-R2FR-marker-profile-support-zero-certificate-or-first-moment-input-row.md | True | 2 | 4477 selected marker profile/support zero certificate or first moment input row. | False |
+| 4478 | SRC4478_01_formal493_absent | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\formalization-workbench\493-PPC4161-parent-inventory-zero-proof-or-marker-profile-moment-derivation.md | True | show F_M is absent because the parent action alphabet has no marker support carrier | True | 109 | formal 4477 next target derive-first route. | False |
+| 4478 | SRC4478_02_formal493_bound | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\formalization-workbench\493-PPC4161-parent-inventory-zero-proof-or-marker-profile-moment-derivation.md | True | mu2_abs <= ell_sup^2 mu0_abs | True | 76 | formal 4477 compact support bound. | False |
+| 4478 | SRC4478_03_zero4477_verdict | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_4477_PARENT_INVENTORY_ZERO_PROOF.csv | True | PIZ4477_5_verdict | True | 7 | 4477 parent inventory zero verdict. | False |
+| 4478 | SRC4478_04_moment4477_bound | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_4477_MARKER_PROFILE_MOMENT_DERIVATION.csv | True | MPM4477_3_compact_support_bound | True | 5 | 4477 compact-support moment derivation. | False |
+| 4478 | SRC4478_05_moment4477_projection | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_4477_MARKER_PROFILE_MOMENT_DERIVATION.csv | True | MPM4477_5_projection_vector_update | True | 7 | 4477 moment projection vector update. | False |
+| 4478 | SRC4478_06_intake4477_deff | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_4477_MARKER_MOMENT_INTAKE_ROWS.csv | True | MIR4477_1_d_eff | True | 3 | 4477 support-dimension intake row. | False |
+| 4478 | SRC4478_07_intake4477_ellsup | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_4477_MARKER_MOMENT_INTAKE_ROWS.csv | True | MIR4477_4_ell_sup | True | 6 | 4477 support-radius intake row. | False |
+| 4478 | SRC4478_08_intake4477_symmetry | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_4477_MARKER_MOMENT_INTAKE_ROWS.csv | True | MIR4477_5_profile_symmetry | True | 7 | 4477 profile-symmetry intake row. | False |
+| 4478 | SRC4478_09_gates4477_zero | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_4477_CLAIM_GATES.csv | True | CG4477_2_zero_theorem_parent_signed | True | 4 | 4477 gate blocking parent zero overclaim. | False |
+| 4478 | SRC4478_10_gate | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\marker_profile_support_gate.py | True | def support_zero_certificate_rows | True | 25 | 4478 marker profile support gate. | False |
+| 4478 | SRC4478_11_generator | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\Y5_R2FR_4478_marker_profile_support_zero_certificate_or_first_moment_input_row.py | True | CHECKPOINT = "4478" | True | 30 | 4478 generator script. | False |
+
+## Decision Row
+
+| checkpoint | marker | claim_id | decision | proof_result | fallback_result | claim_status | next_target | valid_for_claim | generated_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 4478 | PPC4161_MARKER_PROFILE_SUPPORT_ZERO_CERTIFICATE_OR_FIRST_MOMENT_INPUT_ROW_4478 | L-320 | MARKER_SUPPORT_ZERO_PARENT_UNSIGNED_FIRST_MOMENT_INPUT_LAWS_DERIVED_NONCLAIM | support zero certificate written but not parent-signed | first moment input laws derived for Q_M, d_eff, ell_rms, ell_sup, dipole and quadrupole branches | private_nonclaim | 4479-Y5-R2FR-profile-symmetry-dimension-branch-or-anisotropic-quadrupole-bound.md | False | 2026-07-05T21:01:44+00:00 |

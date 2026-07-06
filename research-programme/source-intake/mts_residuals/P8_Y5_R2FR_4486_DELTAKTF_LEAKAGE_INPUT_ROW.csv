@@ -1,0 +1,4 @@
+leak_id,quantity,definition,derived_condition,current_status,needed_for,valid_for_claim
+DTF4486_0_definition,DeltaK_TF,DeltaK_TF^{ij}:=K_L^{<ij>}-P_Y[K_L]^{ij},DeltaK_TF=0 only if the parent projects out all non-Y_a tensor harmonics or the Hessian carrier is metric-null,MISSING_ZERO_OR_BOUND,promote projected M2_K2 branch from symbolic to testable,False
+DTF4486_1_Bprime_condition,K_perp_layer,B(r):=(3/2)F(r)/r^2; non-pure tensor pieces are driven by B'(r),pure Y_a Hessian branch requires B'(r)=0; compact core/exterior matching generally violates this,FINITE_LAYER_LEAKAGE_LIVE,boundary or smooth profile leakage envelope,False
+DTF4486_2_metric_response_bound,DeltaA_surface_TF,"DeltaA_surface_TF=P_surf,l2 G_EH[DeltaK_TF plus any induced boundary/readout terms]",local safety needs DeltaA_surface_TF=0 or a no-cancellation bound against J2/PPN/clock/orbital thresholds,BOUND_ROW_REQUIRED,finite local comparator if Hessian carrier survives,False

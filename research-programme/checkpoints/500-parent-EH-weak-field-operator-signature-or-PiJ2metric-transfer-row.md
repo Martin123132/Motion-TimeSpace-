@@ -1,0 +1,159 @@
+# 500 PPC4161 - Parent EH Weak-Field Operator Signature Or PiJ2metric Transfer Row
+
+Private checkpoint: `4484`
+Marker: `PPC4161_PARENT_EH_WEAK_FIELD_OPERATOR_SIGNATURE_OR_PIJ2METRIC_TRANSFER_ROW_4484`
+Decision: `EH_WEAK_FIELD_OPERATOR_CONDITIONAL_PIJ2_ZERO_OR_SOURCE_FUNCTIONAL_NONCLAIM`
+Generated UTC: `2026-07-05T21:53:35+00:00`
+
+## Result
+
+4484 takes the leap that 4483 set up.
+
+The operator part is no longer foggy. On the existing conditional EH branch:
+
+```text
+G_munu[g_obs] + Lambda_eff g_munu
+= kappa_eff T_H_munu + E_res_munu.
+```
+
+Linearizing around the local exterior and using harmonic gauge gives:
+
+```text
+Box hbar_munu = -2 kappa_eff T_H_munu - 2 E_res_munu.
+```
+
+In the static exterior region, if Hilbert source, residual support and boundary/readout l=2 leaks are silent:
+
+```text
+nabla^2 hbar_munu^ext = 0,
+```
+
+so the 4483 public `r^-3` theorem is inherited exactly.
+
+The coupling conclusion is the important bit:
+
+```text
+partial_sigma G_munu
+= kappa_eff partial_sigma T_H_munu
+ + partial_sigma E_res_munu
+ + boundary/readout pieces.
+```
+
+where `sigma_K2 = K2*C_K2_unit`.
+
+So `K2` has only two honest branches:
+
+```text
+source-silent branch: Pi_J2_metric*K2 = 0;
+finite-source branch: A_surface_K2 = P_surf,l2 G_EH[kappa_eff deltaT_H_K2 + deltaE_res_K2 + deltaB_l2 + deltaReadout_l2].
+```
+
+That means the EH operator can be conditionally right while `Pi_J2_metric=1` is still wrong. The next target is therefore not another Green theorem; it is the K2 source derivative.
+
+No local-GR, J2, PPN, R10, clock, orbital or EM claim is promoted.
+
+## EH Weak-Field Operator Signature
+
+| row_id | object | derivation | formula | result | status | valid_for_claim |
+| --- | --- | --- | --- | --- | --- | --- |
+| EHW4484_0_selector_to_metric_equation | conditional_EH_public_metric_equation | Use the existing Lovelock/Palatini selector chain: if the observed branch is same-coframe, local, four-dimensional, diffeomorphism invariant, metric/coframe-only after constraints, second order through 2PN, and same-source, the left-hand equation is EH plus explicit residuals. | G_munu[g_obs]+Lambda_eff g_munu = kappa_eff T_H_munu + E_res_munu | The EH weak-field operator is conditionally available as a theorem chain, not as an unconditional parent signature. | CONDITIONAL_EH_OPERATOR_AVAILABLE_WITH_RESIDUALS | False |
+| EHW4484_1_linearized_operator | linearized_EH_operator | Linearize g_obs=eta+h about the local asymptotically flat exterior branch and impose harmonic gauge on the trace-reversed perturbation. | partial^mu hbar_munu=0; Box hbar_munu = -2 kappa_eff T_H_munu - 2 E_res_munu | Every non-EH or MTS extra contribution is a right-hand residual/source for the public metric equation, not a hidden change of the operator. | DERIVED_CONDITIONAL_LINEARIZED_EH_OPERATOR | False |
+| EHW4484_2_static_exterior_l2 | exterior_l2_metric_operator | Outside compact Hilbert source, outside retained residual support, and after boundary silence, the static equation becomes source-free. | nabla^2 hbar_munu^ext = 0; P_l2 gives r^2 R_2''+2r R_2'-6R_2=0 | The 4483 r^-3 Green theorem is inherited by the EH branch exactly under these support/silence conditions. | CONDITIONAL_MATCH_TO_4483_PUBLIC_GREEN_OPERATOR | False |
+| EHW4484_3_metric_readout_identity | E_metric_on_EH_branch | If the observed coframe/metric is the one varied in S_EH and the same one used by matter, clocks, EM and PPN readouts, the parent-to-public metric readout is identity on g_obs perturbations. | delta g_public = delta g_obs + delta g_readout_extra | E_metric=I only on the same-coframe branch and only if delta g_readout_extra=0 or bounded. | CONDITIONAL_IDENTITY_READOUT_WITH_REACTIVATION_GUARD | False |
+| EHW4484_4_K2_source_fork | K2_lane_in_EH_equation | Differentiate the conditional EH/residual equation with respect to sigma_K2=K2*C_K2_unit. | partial_sigma G_munu[g_obs] = kappa_eff partial_sigma T_H_munu + partial_sigma E_res_munu | If K2 is not in T_H, E_res, boundary data or readout, the public metric response is zero; if it is present, Pi_J2_metric is an EH Green functional of that sourced l=2 content. | ZERO_OR_SOURCE_FUNCTIONAL_FORK_DERIVED | False |
+| EHW4484_5_verdict | parent_EH_operator_signature | Combine 4086/4278 with 4483 and 3173. | operator_match_l2 closes only on the conditional EH branch; Pi_J2_metric closes only after partial_sigma(T_H,E_res,boundary,readout) is known | 4484 promotes the operator part to a conditional theorem and narrows Pi_J2_metric to a zero-or-sourced functional, but does not claim local GR. | OPERATOR_CONDITIONALLY_DERIVED_PIJ2_SOURCE_OWNER_UNSIGNED | False |
+
+## PiJ2metric Transfer Rows
+
+| transfer_id | quantity | branch | formula | meaning | required_owner | status | valid_for_claim |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| PI4484_0_sigma_definition | sigma_K2 | shared | sigma_K2 = K2*C_K2_unit = K2*3.593766357482964e-24 | The finite l=2 lane amplitude that may or may not enter the parent EH/residual equation. | parent source/boundary/readout variation with respect to sigma_K2 | DEFINED_AS_LANE_NOT_SOURCE | False |
+| PI4484_1_clean_EH_silent_branch | Pi_J2_metric_zero | K2_source_silent | partial_sigma T_H_munu = partial_sigma E_res_munu = partial_sigma B_l2 = partial_sigma g_readout_extra = 0 => A_surface_K2 = 0 | On the strict same-source EH branch, an internal K2 bookkeeping lane that never enters the variational equation produces no public J2 metric amplitude. | prove K2 source silence in Hilbert stress, residual tensor, boundary data and readout | CONDITIONAL_ZERO_THEOREM_AVAILABLE_NOT_PARENT_SIGNED | False |
+| PI4484_2_finite_source_functional | Pi_J2_metric_source | K2_sources_public_metric | A_surface_K2 = P_surf,l2 G_EH[ kappa_eff deltaT_H_K2 + deltaE_res_K2 + deltaB_l2 + deltaReadout_l2 ] | If K2 survives as a real source/residual, its public quadrupole amplitude is not a free constant; it is the EH Green projection of the sourced tracefree l=2 content. | deltaT_H_K2, deltaE_res_K2, boundary l2 data, readout l2 data and same radius/coframe normalization | EXACT_FUNCTIONAL_FORM_AVAILABLE_INPUTS_MISSING | False |
+| PI4484_3_Upsilon_factorization | Upsilon_J2 | finite_source | Upsilon_J2 = Pi_J2_metric*T_source*G_ext_l2_surface = A_surface_K2/(K2*C_K2_unit) | At rho=1, the 4483 Green factor is one after A_surface is owned; the remaining transfer is source/projection ownership. | nonzero A_surface_K2 or a signed zero theorem | FACTOR_REDUCED_NOT_NUMERIC | False |
+| PI4484_4_J2_pressure_row | K2_bound_half_range | finite_source | K2 <= 3.898004369090586e+10/\|Pi_J2_metric*T_source*G_ext_l2_surface\| | The previous J2 pressure row remains usable only after the transfer functional has a source-backed value or bound. | A_surface_K2 compared with 2 epsilon J2 using two_epsilon=4.245005140290714e-06 | CONDITIONAL_PRESSURE_ROW_NO_CLAIM | False |
+| PI4484_5_no_identity_shortcut | Pi_J2_metric_not_one_by_default | guardrail | Pi_J2_metric=1 is allowed only if P_surf,l2 G_EH[...] = K2*C_K2_unit in the same solar/coframe/radius convention | The EH operator being correct does not normalize the K2 lane into a unit public metric source. | explicit equality proof or measured/source-backed transfer row | IDENTITY_SHORTCUT_REJECTED | False |
+
+## K2 Source Owner Rows
+
+| owner_id | object | definition | zero_condition | finite_condition | needed_for | status | valid_for_claim |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| KSO4484_0_Hilbert_source_derivative | deltaT_H_K2 | Hilbert/coframe stress response of the same-frame matter/EM/source action to sigma_K2 | partial_sigma T_H_munu = 0 | source-backed tracefree l=2 stress derivative exists with units and support | decide whether K2 is source-silent or finite-sourced | MISSING_PARENT_SOURCE_DERIVATIVE | False |
+| KSO4484_1_residual_equation_derivative | deltaE_res_K2 | extra MTS local field-equation residual response to sigma_K2 after EH baseline subtraction | partial_sigma E_res_munu = 0 | operator coefficients and l=2 projection are sourced and bounded | finite Pi_J2_metric functional or residual-l2 scorer | MISSING_RESIDUAL_DERIVATIVE | False |
+| KSO4484_2_boundary_l2_derivative | deltaB_l2_K2 | l=2 boundary or matching-data response of the parent exterior problem to sigma_K2 | fixed/asymptotically flat/no-flux boundary data independent of sigma_K2 | boundary l=2 amplitude and radius normalization are source-backed | exclude hidden growing/incoming/tidal l=2 pieces | MISSING_BOUNDARY_DERIVATIVE | False |
+| KSO4484_3_readout_l2_derivative | deltaReadout_l2_K2 | public metric/readout deformation response to sigma_K2 not already in g_obs | same observed metric readout with no K2-dependent shadow/disformal term | readout l=2 projector coefficient is source-backed and bounded | prevent Pi_J2_metric from being hidden in the observer map | MISSING_READOUT_DERIVATIVE | False |
+| KSO4484_4_source_domain_transfer | T_source | solar-domain construction or universality map for sigma_K2 | the local K2 lane is not a solar exterior source variable | direct solar K2 construction or source-domain theorem | use solar J2/Shapiro/orbital bounds against K2 | MISSING_SOLAR_SOURCE_DOMAIN_TRANSFER | False |
+| KSO4484_5_verdict | K2_metric_source_status | all four derivative channels plus source-domain transfer decide Pi_J2_metric | KSO4484_0 through KSO4484_4 all sign the zero/silent branch | at least one finite derivative channel has a source-backed amplitude and no-cancellation scorer | local-GR/J2/PPN claim gate | ZERO_OR_FINITE_SOURCE_NOT_DECIDED | False |
+
+## Residual Interface Rows
+
+| interface_id | residual | formula | projection | test_route | status | valid_for_claim |
+| --- | --- | --- | --- | --- | --- | --- |
+| RIF4484_0_master_equation | DeltaE_nonEH_plus_K2 | DeltaE_total = E_res + kappa_eff deltaT_H_K2 + deltaB_l2 + deltaReadout_l2 | P_surf,l2 G_EH[DeltaE_total] | J2/Shapiro/PPN/clock/orbital residual-l2 scorer | SYMBOLIC_INTERFACE_WRITTEN | False |
+| RIF4484_1_gamma_beta | tracefree_spatial_and_2PN_00 | delta_gamma, delta_beta = Pi_PPN[DeltaE_total] | use 4086 nonEH PPN projection formulas | Cassini/gamma, beta, preferred-frame and conservation gates | BOUND_ROUTE_IMPORTED_NOT_NUMERIC | False |
+| RIF4484_2_local_R10_tail | finite_range_or_unscreened_tail | alpha_X(lambda_X) only if a non-EH/K2 mode has q_X != 0 and finite range | R10 alpha(lambda) runner after source charges exist | R10/WEP/fifth-force | ROUTE_RETAINED_IF_MODE_SURVIVES | False |
+
+## Decision Ledger
+
+| decision_id | finding | reason | effect | next_action | valid_for_claim |
+| --- | --- | --- | --- | --- | --- |
+| DEC4484_0_operator | the EH weak-field exterior operator is conditionally derived | 4086/4278 give EH plus residuals; linearization gives the public Laplace l=2 operator when residual/source support is silent | 4483 r^-3 theorem is inherited by the conditional EH branch | 4485-Y5-R2FR-K2-Hilbert-residual-source-zero-theorem-or-finite-quadrupole-amplitude.md | False |
+| DEC4484_1_K2_fork | K2 cannot be assumed to source the public metric | differentiating the EH/residual equation with respect to sigma_K2 gives zero if K2 is absent from Hilbert stress, residual tensor, boundary and readout | clean branch gives Pi response zero; finite branch needs sourced quadrupole derivatives | 4485-Y5-R2FR-K2-Hilbert-residual-source-zero-theorem-or-finite-quadrupole-amplitude.md | False |
+| DEC4484_2_best_next | the next target is K2 Hilbert/residual source ownership | the operator is no longer the main fog; the source derivative decides whether Upsilon_J2 is zero, finite, or bounded | derive source-silence theorem first; if it fails, fill finite A_surface_K2 rows | 4485-Y5-R2FR-K2-Hilbert-residual-source-zero-theorem-or-finite-quadrupole-amplitude.md | False |
+
+## Claim Gates
+
+| gate_id | gate | gate_pass | claim_allowed | detail | valid_for_claim |
+| --- | --- | --- | --- | --- | --- |
+| CG4484_0_sources | all cited source paths and needles exist | True | False | source hygiene only | False |
+| CG4484_1_EH_operator_conditional | EH weak-field exterior operator is derived conditionally | True | False | conditional on selector, same coframe, residual silence and boundary support | False |
+| CG4484_2_parent_signature_unconditional | full MTS parent signs the EH selector premises | False | False | existing evidence is a conditional chain, not a fully parent-signed local-GR theorem | False |
+| CG4484_3_PiJ2_identity | Pi_J2_metric equals one or any numeric value | False | False | identity shortcut rejected; exact source functional written but inputs are missing | False |
+| CG4484_4_K2_zero_or_source_decided | K2 is proven source-silent or given a sourced finite quadrupole amplitude | False | False | deltaT_H_K2, deltaE_res_K2, boundary/readout and T_source remain missing | False |
+| CG4484_5_no_generated_claim_rows | generated rows remain private nonclaim | True | False | no local-GR, J2, PPN, R10, clock, orbital or EM claim is promoted | False |
+
+## Status
+
+| checkpoint | marker | claim_id | decision | EH_operator_match | Pi_J2_metric | K2_source_status | T_source | local_GR_claim | sharpest_open_clause | next_target | valid_for_claim | generated_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 4484 | PPC4161_PARENT_EH_WEAK_FIELD_OPERATOR_SIGNATURE_OR_PIJ2METRIC_TRANSFER_ROW_4484 | L-326 | EH_WEAK_FIELD_OPERATOR_CONDITIONAL_PIJ2_ZERO_OR_SOURCE_FUNCTIONAL_NONCLAIM | conditional_on_selector_and_residual_silence | zero_or_source_functional_not_numeric | undecided | missing | False | K2_Hilbert_residual_source_zero_or_finite_quadrupole_amplitude | 4485-Y5-R2FR-K2-Hilbert-residual-source-zero-theorem-or-finite-quadrupole-amplitude.md | False | 2026-07-05T21:53:35+00:00 |
+
+## Next Target
+
+| next_id | target | objective | derive_first | fallback | risk | valid_for_claim |
+| --- | --- | --- | --- | --- | --- | --- |
+| NT4484_0 | 4485-Y5-R2FR-K2-Hilbert-residual-source-zero-theorem-or-finite-quadrupole-amplitude.md | Decide whether the K2 lane is source-silent in the same-frame EH equation or compute its finite public quadrupole amplitude. | prove partial_sigma(T_H,E_res,B_l2,g_readout_extra)=0 from the parent action/source grammar | fill source-backed rows for deltaT_H_K2, deltaE_res_K2, boundary/readout l2 and T_source, then score A_surface_K2 | assuming K2*C_K2_unit is a public metric amplitude just because the EH operator is conditionally available | False |
+
+## Source Register
+
+| checkpoint | source_id | source_kind | source_ref | local_path_exists | needle | needle_found | line_number | role | valid_for_claim |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 4484 | SRC4484_00_next4483 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_4483_NEXT_TARGET.csv | True | 4484-Y5-R2FR-parent-EH-weak-field-operator-signature-or-PiJ2metric-transfer-row.md | True | 2 | 4483 selected parent weak-field operator or PiJ2 transfer row. | False |
+| 4484 | SRC4484_01_formal4483 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\formalization-workbench\499-PPC4161-public-metric-radial-Green-owner-or-finite-l2-scorer-input-fill.md | True | Upsilon_J2 = Pi_J2_metric * T_source * G_ext_l2_surface | True | 32 | 4483 hard coupling split. | False |
+| 4484 | SRC4484_02_green4483 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_4483_RADIAL_GREEN_THEOREM.csv | True | RGT4483_5_verdict | True | 7 | 4483 public Green theorem verdict. | False |
+| 4484 | SRC4484_03_owner4483 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_4483_PI_J2_METRIC_OWNER_CLAUSES.csv | True | MOC4483_0_parent_EH_operator | True | 2 | 4483 parent operator owner clause. | False |
+| 4484 | SRC4484_04_scorer4483 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_4483_FINITE_SCORER_INPUT_FILL.csv | True | FSI4483_3_Upsilon_J2 | True | 5 | 4483 Upsilon factorization row. | False |
+| 4484 | SRC4484_05_doc3173 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\3173-Y5-R2FR-parent-exterior-operator-match-or-PiJ2metric-source-row-under-AX1090.md | True | Upsilon_J2 = - P_surf,l2 E_metric L_parent^-1 S_K2 | True | 87 | 3173 exact extractor formula. | False |
+| 4484 | SRC4484_06_op3173 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_3173_OPERATOR_MATCH_DERIVATION.csv | True | OP3173_3_exact_Upsilon_formula | True | 5 | 3173 machine-readable Upsilon operator extractor. | False |
+| 4484 | SRC4484_07_ex3173 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_3173_PIJ2_EXTRACTOR_CONTRACT.csv | True | EX3173_4_compute_kernel | True | 6 | 3173 PiJ2 extractor contract. | False |
+| 4484 | SRC4484_08_srcrow3173 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_3173_SOURCE_READY_NONCLAIM_ROWS.csv | True | SRCROW3173_0_Pi_J2_metric | True | 2 | 3173 source-ready Pi row. | False |
+| 4484 | SRC4484_09_eh4086 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_4086_EH_SIGNATURE_THEOREM.csv | True | EH4086_0_lovelock_selector | True | 2 | 4086 EH operator selector theorem. | False |
+| 4484 | SRC4484_10_proj4086 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_4086_NONEH_PPN_PROJECTION_FORMULAS.csv | True | PROJ4086_0_total | True | 2 | 4086 non-EH residual projection interface. | False |
+| 4484 | SRC4484_11_chain4070 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_4070_EH_REDUCTION_CHAIN.csv | True | CHAIN4070_2 | True | 4 | 4070 EH reduction chain. | False |
+| 4484 | SRC4484_12_red4072 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_4072_EH_NEWTON_PPN_REDUCTION_CONTRACT.csv | True | RED4072_3_Newton | True | 5 | 4072 Newton/PPN reduction contract. | False |
+| 4484 | SRC4484_13_ehp3818 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_3818_EH_METRIC_EQUATION_TEMPLATE.csv | True | EHP3818_0_public_metric_equation | True | 2 | 3818 public metric equation template. | False |
+| 4484 | SRC4484_14_newton4151 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_4151_EH_ONLY_NEWTON_THEOREM.csv | True | EHN4151_1_poisson_reduction | True | 3 | 4151 EH-only Poisson source normalization theorem. | False |
+| 4484 | SRC4484_15_lhd4278 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_4278_LEFT_HAND_EH_NEWTON_DERIVATION.csv | True | LHD4278_2_metric_equation | True | 4 | 4278 left-hand EH/Newton derivation. | False |
+| 4484 | SRC4484_16_formal294 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\formalization-workbench\294-PPC4161-left-hand-EH-Newton-limit-or-residual-EFT-bound-gate.md | True | G_mu_nu[g_obs] + Lambda_eff g_mu_nu | True | 51 | formal 4278 left-hand EH/Newton gate. | False |
+| 4484 | SRC4484_17_ck2 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_3165_K2_UNIT_RESIDUAL_COEFFICIENT.csv | True | KU3165_0_definition | True | 2 | C_K2_unit value. | False |
+| 4484 | SRC4484_18_norm3170 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_3170_SOLAR_J2_NORMALIZATION_DERIVATION.csv | True | JN3170_1_corrected_J2eff_map | True | 3 | public J2 metric normalization. | False |
+| 4484 | SRC4484_19_bounds3170 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_3170_CORRECTED_J2EFF_K2_BOUNDS.csv | True | CJ3170_2_Rozelot_half_range_proxy | True | 4 | J2 half-range pressure row. | False |
+| 4484 | SRC4484_20_residual1955 | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_1955_RESIDUAL_L2_BOUND_LEDGER.csv | True | RB1955_0_residual_bound_formula | True | 2 | fair residual-l2 scorer. | False |
+| 4484 | SRC4484_21_gate | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\parent_eh_weak_field_operator_gate.py | True | def eh_weak_field_rows | True | 30 | 4484 helper gate. | False |
+| 4484 | SRC4484_22_generator | local | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\Y5_R2FR_4484_parent_EH_weak_field_operator_signature_or_PiJ2metric_transfer_row.py | True | CHECKPOINT = "4484" | True | 30 | 4484 generator script. | False |
+
+## Decision Row
+
+| checkpoint | marker | claim_id | decision | proof_result | fallback_result | claim_status | next_target | valid_for_claim | generated_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 4484 | PPC4161_PARENT_EH_WEAK_FIELD_OPERATOR_SIGNATURE_OR_PIJ2METRIC_TRANSFER_ROW_4484 | L-326 | EH_WEAK_FIELD_OPERATOR_CONDITIONAL_PIJ2_ZERO_OR_SOURCE_FUNCTIONAL_NONCLAIM | conditional EH weak-field operator gives the public exterior l2 Laplace equation under selector/residual silence | Pi_J2_metric becomes a zero-or-source EH Green functional of K2 Hilbert/residual/boundary/readout derivatives | private_nonclaim | 4485-Y5-R2FR-K2-Hilbert-residual-source-zero-theorem-or-finite-quadrupole-amplitude.md | False | 2026-07-05T21:53:35+00:00 |
