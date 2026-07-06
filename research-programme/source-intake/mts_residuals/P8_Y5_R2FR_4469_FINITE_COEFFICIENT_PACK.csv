@@ -1,0 +1,7 @@
+coefficient_id,quantity,formula,needed_for,current_value,units,claim_status,valid_for_claim
+FC4469_0_D0_scalar_basis,D0,D0 = 12*c_R2 + c_Ric - 6*c_W - 8*c_Riem,scalar-sector mass/range and pure-R2 guard,MISSING_PARENT_BASIS_COEFFICIENTS,m^2_or_action_normalized_length_squared,BLOCKED,False
+FC4469_1_D2_spin2_basis,D2,D2 = -c_Ric - 2*c_W - 4*c_Riem,spin-2/tensor contamination guard; pure f(R) scalar map requires D2=0,MISSING_PARENT_BASIS_COEFFICIENTS,m^2_or_action_normalized_length_squared,BLOCKED,False
+FC4469_2_cR2_eff,c_R2_eff,c_R2_eff = xi_shape*c2_visible*ell_cell^2/N_EH; pure-R2 lambda_R2=sqrt(6*c_R2_eff)=sqrt(D0/2),finite scalar range lambda_R2,MISSING_c2_VISIBLE_ELL_CELL_SHAPE_FACTOR_N_EH_OR_D0,m^2,BLOCKED,False
+FC4469_3_C_total,C_total,C_total = C_explicit_Achi + C_metric_pole + C_hidden_source,alpha_eff=C_total^2/3,C_explicit_Achi_PRIVATE_ZERO; C_metric_pole_MISSING; C_hidden_source_MISSING,dimensionless,BLOCKED,False
+FC4469_4_live_alpha_curve,alpha_bound(lambda),abs(C_total^2/3) <= alpha_bound(lambda_R2),R10 finite scalar claim gate,LIVE_CLAIM_CURVE_PLACEHOLDER_REVIEW_CANDIDATE_NONCLAIM_ONLY,dimensionless_vs_m,BLOCKED,False
+FC4469_5_lightcone_PPN_projection,gamma(r)-1,gamma(r)-1 = -2*alpha_eff*exp(-r/lambda_R2)/(1+alpha_eff*exp(-r/lambda_R2)),PPN/local-light branch if scalar range reaches solar-system scales,MISSING_LIGHTCONE_AND_C_TOTAL_PROJECTION,dimensionless,BLOCKED,False
