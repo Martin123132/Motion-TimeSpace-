@@ -10,6 +10,7 @@ This repository is a public work-in-progress research programme.
 - Several candidate structures have been sharpened into theorem targets or labelled closure assumptions.
 - The local-zero parent-action route has a conditional trace-projector clause: stationary compact comoving domains can set the coherent expansion average `X_D=0` under stated assumptions.
 - The latest local shell route has an exact conditional quotient-kernel theorem: if public response descends through `q`, the generic `DeltaKTF` shell is in `ker(Dq)`, and boundary/exact-current terms are silent, then `P_metric_loc(DeltaKTF_shell)=0`.
+- The J2 branch now has a source-ready shell transfer law and shell-amplitude decomposition, including an explicit finite amplitude bound for the public J2 surface row.
 - The work is suitable for public technical inspection as an evolving research programme.
 
 ## What Cannot Be Claimed Yet
@@ -23,7 +24,8 @@ This repository is a public work-in-progress research programme.
 - The determinant-current route does not yet prove domain-alpha3 silence.
 - The local-zero route does not yet prove boundary no-flux, R11/source-normalization silence, or full stress/Bianchi closure.
 - The generic `DeltaKTF` transition shell is not yet parent-signed as quotient-vertical or boundary silent.
-- The shell projection transfer operators for J2, clocks, orbital systems, R10/fifth-force rows, and EM/Poynting stress are not yet source-normalized.
+- The shell projection transfer operators for clocks, orbital systems, R10/fifth-force rows, and EM/Poynting stress are not yet source-normalized.
+- The J2 shell row is source-ready, but its surface amplitude components are not yet parent-signed zero or numerically filled below bound.
 
 ## Promotion Rule
 
