@@ -1,0 +1,7 @@
+gate_id,gate,status,meaning,valid_for_claim,timestamp_utc
+CG4838_0_no_G_claim,no decimal value of G derived,PASS_POLICY_GUARD,"GR also calibrates coupling; MTS must derive ownership/universality, not invent a dimensionful number",False,2026-07-08T12:30:39+00:00
+CG4838_1_no_GM_launder,measured GM cannot close source denominator,PASS_GUARD,M_H and G_ref must be independent before readout,False,2026-07-08T12:30:39+00:00
+CG4838_2_live_zero,live Newton zero route,BLOCKED_UNSIGNED,same-branch source denominator/PPN clauses are not signed,False,2026-07-08T12:30:39+00:00
+CG4838_3_live_bound,live source-bound route,BLOCKED_MISSING_NUMERIC_INPUTS,finite residual coefficients are not source-backed,False,2026-07-08T12:30:39+00:00
+CG4838_4_smoke,runner arithmetic,PASS_NONCLAIM,direct and coefficient smoke rows compute as expected,False,2026-07-08T12:30:39+00:00
+CG4838_5_local_GR,local GR/Newton claim,NOT_ALLOWED,no model pass while zero or live source-bound rows are blocked,False,2026-07-08T12:30:39+00:00

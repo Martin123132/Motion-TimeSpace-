@@ -1,0 +1,10 @@
+clause_id,claim_piece,math_form,current_result,finite_fallback,valid_for_claim,timestamp_utc
+REFZ4830_0_parent_variation,"MTS owns L, Theta, Q_tau and constraints",delta L = E delta Phi + dTheta; J_tau = Theta(L_tau Phi)-i_tau L; J_tau=dQ_tau+C_tau,CONTRACT_ONLY,delta_H_tau_nonintegrable row,False,2026-07-08T11:13:25+00:00
+REFZ4830_1_covariant_phase_space,Hamiltonian variation has zero curl,delta H_tau = int_S(delta Q_tau-i_tau Theta)-delta H_ref and delta_1 delta_2 H_tau-delta_2 delta_1 H_tau=0,NOT_DERIVED,integrability_curl row,False,2026-07-08T11:13:25+00:00
+REFZ4830_2_reference_lock,H_ref is branch-selected and derivative-silent,"partial_source,r,t,frame,lambda H_ref = 0 after parent reference selection",FAIL_OPEN,H_ref_shift/Delta_ref row,False,2026-07-08T11:13:25+00:00
+REFZ4830_3_boundary_class,exact/improvement boundary flux is fixed or zero,int_boundary(delta Q_extra-i_tau Theta_extra)+delta B_class=0,FAIL_OPEN,B_zero/symplectic_boundary row,False,2026-07-08T11:13:25+00:00
+REFZ4830_4_Delta_symp,reference plus symplectic/projector transfer obstruction vanishes,Delta_symp=0 only if reference lock and projector/boundary silence are parent-owned,KEY_BLOCKER,Delta_symp row,False,2026-07-08T11:13:25+00:00
+REFZ4830_5_projector_silence,Pi_M^H is not carrying hidden boundary/symplectic hair,delta(Pi_M J_H)=Pi_M delta J_H and projector/domain flux is zero or retained,NOT_PARENT_SIGNED,projector_boundary_flux row,False,2026-07-08T11:13:25+00:00
+REFZ4830_6_tau_lock,same observed time generator is used,tau_source=tau_charge=tau_clock=tau_readout and delta tau=0,NOT_PARENT_SIGNED,tau_mismatch row,False,2026-07-08T11:13:25+00:00
+REFZ4830_7_denominator_guard,M_H_ref is positive and source-backed,"M_H_ref cannot be bare mass, reference-only one, or orbital GM",GUARD_PASS_NO_VALUE,M_H_ref source row,False,2026-07-08T11:13:25+00:00
+REFZ4830_8_anti_circularity,"no GR import, measured GM, reference-only zero, or cancellation","conditional EH route is a guide, not a proof for MTS",POLICY_GUARD,forbidden-source guard,False,2026-07-08T11:13:25+00:00

@@ -2,86 +2,76 @@
 
 The central theory goal is not merely to fit cosmological data. The central gate is whether MTS can reduce to Newtonian gravity and local GR in the same disciplined sense that GR reduces to Newtonian gravity in the weak-field limit.
 
+## Current Weak-Local Result
+
+Checkpoint `976` states the strongest current result. In the declared integrated metric-density `H`, exact-Diff/BRST parent, under the standard one-positive-massless-spin-2 and local two-derivative infrared premises:
+
+- the `H`-to-Hilbert source map is exact and invertible;
+- the soft-spin-2 species-coupling kernel is one-dimensional, so the leading gravitational residue is universal;
+- field normalization cancels from conserved-source exchange;
+- the selected reflection-even `psi=0` branch has no classical one-scalar source charge;
+- the Einstein equation reduces to Poisson's equation and the inverse-square force;
+- neutral matter follows the same metric geodesics and the leading weak branch has `PPN gamma=beta=1`;
+- Maxwell propagation, Lorentz force, Hilbert stress, and Poynting momentum come from one action and one leading electromagnetic normalization.
+
+This promotes the leading weak-local source chain inside the declared parent. It does not derive that parent field content from motion alone and does not close strong-field or all-state MTS.
+
 ## Newtonian Gate
 
-To claim first-order Newtonian recovery, the branch must supply a valid source-normalized certificate for all required Newton rungs:
+The derived chain is
 
-- a single physical source measure;
-- measured `GM` calibration;
-- constant universal effective coupling;
-- no extra local source charge;
-- no derivative hair;
-- no frame/species leakage;
-- a valid Poisson/Gauss law reduction.
+```text
+M_R^2 (G_mn + Lambda g_mn) = T_mn,
+G_N = 1/(8 pi M_R^2),
+nabla^2 Phi = 4 pi G_N rho,
+Phi = -G_N M/r,
+d^2x/dt^2 = -G_N M rhat/r^2.
+```
 
-Until those are derived or residual-scored to zero, the Newton branch is a theorem target, not a claim.
-
-## Local GR / PPN Gate
-
-Newtonian recovery is not enough. Local GR promotion additionally requires:
-
-- the same physical geometry for matter, clocks, rulers, and light;
-- Einstein-Hilbert exterior operator or an exactly equivalent local weak-field operator;
-- `gamma = 1`;
-- `beta = 1`;
-- preferred-frame terms zero or below bound;
-- no fifth force;
-- no `Gdot/G`;
-- no hidden clock/ruler calibration branch doing the work;
-- no generic transition-shell leakage into the public local metric.
+The numerical value of `G_N` remains one measured calibration, as in GR. The nontrivial result is that the same massless-pole residue must be reused for Einstein dynamics, exchange, Newtonian gravity, orbits, lensing, and waves; no arena-specific `G` survives.
 
 ## Parent-Action Gate
 
-The parent action must own the structures used in the reduction:
+The current parent boundary is explicit rather than hidden:
 
-- projector selection;
-- domain selection;
-- coherent representative selection;
-- source current;
-- Ward/Bianchi conservation;
-- local silence or no-hair mechanism;
-- quotient ownership of the public response map;
-- boundary/exact-current silence for the local shell sector.
+- integrated nondegenerate Lorentzian `H` is parent field data;
+- Diff/BRST quotient, measure, and regulator are parent gauge data;
+- visible fields and gauge representations are parent field data;
+- the positive massless spin-2 pole and its universal leading source residue are derived/selected by the spectral and soft-theorem gates;
+- `M_R^2`, `Lambda`, and higher Wilson coefficients are induced or renormalized infrared coordinates.
 
-Closure assumptions are allowed as research scaffolding, but they cannot be promoted as derived physics.
+The remaining foundational challenge is to derive this parent content from a simpler motion/time/space construction or retain it honestly as fundamental. A fixed-background scalar-only composite-graviton route is not used.
 
-## Latest Local-Zero Route
+## Residual and Strong-Field Gates
 
-Checkpoint `484-parent-local-zero-action-clause-attempt.md` gives an earlier conditional route in which the coherent trace load is represented by `Qcoh_mu_nu = (1/3) h_mu_nu X`, with `X = nabla_mu u^mu`. For stationary compact comoving local domains, the domain average can impose `X_D=0`, which removes the coherent trace-load exposure without adding a plateau axiom.
+The following remain outside the promoted weak-local theorem:
 
-This remains useful, but it does not close local GR.
+- strong-field compact-body sensitivities and radiation/back-reaction matching;
+- all-state preferred-flow/disformal silence;
+- complete finite matching of `R^2` and `C^2` terms;
+- the nonzero higher-gradient `C^3` residual;
+- the curvature-photon coefficient and its complete phenomenology;
+- hidden-visible re-entry beyond the selected-vacuum local quarantine;
+- a global theorem that every nonvacuum motion state reduces to GR locally.
 
-## Latest Shell / Quotient-Kernel Route
+Earlier quotient-kernel, shell, J2, R10, clock, and orbital ledgers remain valuable diagnostics, but they are historical rungs rather than the strongest current route.
 
-Checkpoints `513` through `516` give the latest local shell gate.
+## Large-Scale Compatibility Gate
 
-The exact conditional theorem is:
-
-```text
-if public local response descends through q,
-and DeltaPhi_shell is in ker(Dq),
-and boundary/exact-current terms are silent,
-then P_metric_loc(DeltaKTF_shell) = 0.
-```
-
-This is a real theorem shape, but not yet a project claim. The parent action has not yet signed generic shell verticality or generic boundary silence. Until it does, the fallback is an arena transfer matrix. The PPN row has a numeric imported suppression requirement. The J2 row now has a public transfer law,
+Checkpoint `1164` constructs a same-parent response target using the physical Hessian block
 
 ```text
-DeltaJ2_shell = s_J2 * A_shell_surface * rho^3 / two_epsilon_surface,
+Gamma2 = 1/2 (h,chi) [[K_h,B],[B_dagger,K_chi]] (h,chi)^T + h.T/2,
+K_eff = K_h - B K_chi^-1 B_dagger.
 ```
 
-and the shell amplitude has been decomposed into Hilbert, residual, boundary, and readout pieces:
-
-```text
-A_shell_surface = A_H + A_E + A_B + A_R.
-```
-
-That is progress, but not promotion: the four amplitude components still need a parent zero theorem or finite source rows below the bound. Clocks, orbital systems, R10/fifth-force rows, and EM/Poynting stress still need their own source-normalized transfer operators.
+`B=0` on the selected local branch leaves GR unchanged. A nonzero occupied motion state can modify long-distance response without introducing a second gravitational source normalization. The candidate response has the necessary ultraviolet suppression, but the actual retarded parent self-energy, state law, lensing/slip response, and paired empirical validation remain open.
 
 ## Current Promotion Status
 
-- Newtonian recovery: theorem target, not claimed.
-- Local GR: theorem target, not claimed.
-- PPN pass: blocked until shell/kernel or arena-transfer gates close.
-- R10/local fifth-force safety: blocked until source-normalized transfer rows or theorem-zero identities close.
-- EM/Poynting route: explicitly included as a source-ready arena, not yet derived.
+- Newtonian recovery: derived inside the selected weak local parent branch; `G_N` measured once, not predicted.
+- Leading local GR source chain: derived conditionally on the declared integrated-`H`/Diff parent and standard spin-2 premises.
+- Standard weak `PPN gamma=beta=1`: derived on the reflection-even `psi=0` branch; higher-gradient and strong-field completion remain open.
+- Maxwell/Lorentz/stress/Poynting chain: structurally derived; higher curvature-photon matching remains open.
+- Large-scale MTS response: concrete target and smoke evidence only; parent retarded kernel and state law are not yet derived.
+- Completed unified theory or empirical replacement claim: not allowed.

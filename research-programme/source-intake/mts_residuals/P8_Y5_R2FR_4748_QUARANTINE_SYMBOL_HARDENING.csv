@@ -1,0 +1,7 @@
+checkpoint,quar_id,formula,meaning,status,valid_for_claim,timestamp_utc
+4748,QUAR4748_0_parent_operator,"D_quar[K,q]^nu := q_tr^nu + nabla_mu K_own^{mu nu}",The quarantine owner block is algebraic in q_tr and first order in K_own.,PARENT_OPERATOR_IDENTIFIED,False,2026-07-08T00:45:18+00:00
+4748,QUAR4748_1_adjoint_symbol_K,"sigma_quar,K^dagger(p)chi_{mu nu} = -i p_mu chi_nu",Adjoint principal symbol for the K_own channel.,HARDENED_SYMBOL,False,2026-07-08T00:45:18+00:00
+4748,QUAR4748_2_adjoint_symbol_q,"sigma_quar,q^dagger(p)chi_nu = chi_nu",Algebraic q_tr channel can directly control the chi multiplier if q_tr is parent-independent.,ALGEBRAIC_CONTROL_CANDIDATE,False,2026-07-08T00:45:18+00:00
+4748,QUAR4748_3_coercivity_candidate,||sigma_quar^dagger(p)chi||^2 >= (w_q^2 + w_K^2 |p|_h^2)||chi||^2 minus map-kernel leakage,"Quarantine is the better positive c_DN candidate, provided q_tr/K_own maps are parent-owned and nondegenerate.",COERCIVE_CANDIDATE,False,2026-07-08T00:45:18+00:00
+4748,QUAR4748_4_blocker,"if q_tr is derived with a kernel or K_own has gauge-null directions, carry C_quar_kernel","The algebraic channel must be real, not a notation trick.",PARENT_MAP_SOURCE_REQUIRED,False,2026-07-08T00:45:18+00:00
+4748,QUAR4748_5_static_constant,c_quar >= inf(w_q^2 + w_K^2 |p|_h^2) - C_quar_kernel,Source-ready lower-bound form for the quarantine contribution to c_DN.,SOURCE_READY_SYMBOLIC_BOUND,False,2026-07-08T00:45:18+00:00

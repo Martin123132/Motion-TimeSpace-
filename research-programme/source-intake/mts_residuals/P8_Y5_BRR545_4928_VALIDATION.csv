@@ -1,0 +1,36 @@
+validation_id,description,expected,actual,passed,checkpoint_marker,valid_for_claim,source_checked_date
+VAL4928_00_compile,research and validation scripts compile in memory,no syntax errors,no syntax errors,True,MTS_INTEGRATED_H_C3_FUNCTIONAL_FLOW_VALIDATION_4928,False,2026-07-12
+VAL4928_01_research_run,research generator reruns successfully,return 0 and PASS marker,"return=0; stdout=P8_Y5_R2FR_4928_INTEGRATED_H_C3_FUNCTIONAL_FLOW_PASS
+natural_g_star=5.8904862254808621e-01
+natural_g_C3_star=-3.2424842753194084e-07
+critical_exponents=2.78260869565,-7.75000535537
+IR_G_C3_over_G_N=3.0240983893406237e-06
+IR_log_coefficient=3.0662421129447266e-06
+article_log_sign_discrepancy=True
+conditional_ell_plus_m=1.7946358168426453e-36
+MTS_dynamic_flow_inherited=False
+independent_IR_I1_test_parameters=1
+compact_GR_promoted=False",True,MTS_INTEGRATED_H_C3_FUNCTIONAL_FLOW_VALIDATION_4928,False,2026-07-12
+VAL4928_02_outputs,all expected evidence tables exist,11,11,True,MTS_INTEGRATED_H_C3_FUNCTIONAL_FLOW_VALIDATION_4928,False,2026-07-12
+VAL4928_03_csv_shape,all evidence CSVs parse without malformed rows,no malformed rows,no malformed rows,True,MTS_INTEGRATED_H_C3_FUNCTIONAL_FLOW_VALIDATION_4928,False,2026-07-12
+VAL4928_04_markers,all generated evidence rows carry the checkpoint marker,0,0,True,MTS_INTEGRATED_H_C3_FUNCTIONAL_FLOW_VALIDATION_4928,False,2026-07-12
+VAL4928_05_nonclaim,all checkpoint evidence remains private nonclaim,0,0,True,MTS_INTEGRATED_H_C3_FUNCTIONAL_FLOW_VALIDATION_4928,False,2026-07-12
+VAL4928_06_no_placeholders,no generated row contains a MISSING placeholder token,0,0,True,MTS_INTEGRATED_H_C3_FUNCTIONAL_FLOW_VALIDATION_4928,False,2026-07-12
+VAL4928_07_source_hashes,all four primary PDF and source archives match locked SHA-256 values,0,0,True,MTS_INTEGRATED_H_C3_FUNCTIONAL_FLOW_VALIDATION_4928,False,2026-07-12
+VAL4928_08_source_register,primary archives extracted equations prior checkpoints registers and URLs are verified,26 rows; zero failures,26 rows; failures=[],True,MTS_INTEGRATED_H_C3_FUNCTIONAL_FLOW_VALIDATION_4928,False,2026-07-12
+VAL4928_09_beta_expansion,natural beta system has the canonical IR terms and exact positive log coefficient,3.0662421129447266e-06,3.0662421129447266e-06,True,MTS_INTEGRATED_H_C3_FUNCTIONAL_FLOW_VALIDATION_4928,False,2026-07-12
+VAL4928_10_fixed_point,natural non-Gaussian fixed point solves both beta functions,g*=3pi/16; h*=-3.242484275319408e-7; beta norm near zero,g=0.5890486225480862; h=-3.2424842753194084e-07; norm=3.5805119079491664e-22,True,MTS_INTEGRATED_H_C3_FUNCTIONAL_FLOW_VALIDATION_4928,False,2026-07-12
+VAL4928_11_critical_exponents,stability matrix has one relevant and one irrelevant direction,"theta=(64/23,-7.75000535537)","theta=(2.782608695652174,-7.750005355365195)",True,MTS_INTEGRATED_H_C3_FUNCTIONAL_FLOW_VALIDATION_4928,False,2026-07-12
+VAL4928_12_independent_flow,alternate-start independent integration reproduces the fixed point log slope and IR constant,h*=-3.24248e-7; theta_h=-7.75001; c=3.06624e-6; A=3.02410e-6,h=-3.2424842753194084e-07; theta=-7.750005355371216; c=3.0662421129447266e-06; A=3.024098389313532e-06,True,MTS_INTEGRATED_H_C3_FUNCTIONAL_FLOW_VALIDATION_4928,False,2026-07-12
+VAL4928_13_separatrix_convergence,121-row unique separatrix converges to a stable log-subtracted infrared constant,A=3.02409838934e-6 and IR spread below 1e-12,rows=121; A=3.0240983893406237e-06; spread=1.8512752095189988e-17,True,MTS_INTEGRATED_H_C3_FUNCTIONAL_FLOW_VALIDATION_4928,False,2026-07-12
+VAL4928_14_log_sign_audit,attached beta sign article-text sign and reference-scale crossing are kept distinct,notebook positive; prose negative; xi zero near 0.373,notebook=positive; prose=negative; xi=0.3729706388575948,True,MTS_INTEGRATED_H_C3_FUNCTIONAL_FLOW_VALIDATION_4928,False,2026-07-12
+VAL4928_15_operator_map,external G_C3 and MTS zeta_plus map to a_plus without a normalization gap,zeta_+=G_C3 and a_+/lP^4=16pi r_C3,"['SAME_ESSENTIAL_SIX_DERIVATIVE_OPERATOR', '0.00015200776453896367', 'POSITIVE_CONDITIONAL_BRANCH']",True,MTS_INTEGRATED_H_C3_FUNCTIONAL_FLOW_VALIDATION_4928,False,2026-07-12
+VAL4928_16_reference_scale,reference-scale scan reproduces the sign crossing and keeps it conditional,eight rows and zero at xi=0.372970638857598,rows=8; xi=0.3729706388575948; r=0.0,True,MTS_INTEGRATED_H_C3_FUNCTIONAL_FLOW_VALIDATION_4928,False,2026-07-12
+VAL4928_17_conditional_prediction,natural pure-gravity branch maps to the calculated sub-Planckian MTS cubic length,ell=1.794635816842645e-36 m and compact ratio below 1e-150,ell=1.7946358168426453e-36; ratio=7.1265917135053654e-158,True,MTS_INTEGRATED_H_C3_FUNCTIONAL_FLOW_VALIDATION_4928,False,2026-07-12
+VAL4928_18_inheritance_gate,three kinematic clauses close while six dynamic or scale clauses block an MTS prediction,3 of 9 base clauses satisfied; all_dynamic false,satisfied=3; all=False,True,MTS_INTEGRATED_H_C3_FUNCTIONAL_FLOW_VALIDATION_4928,False,2026-07-12
+VAL4928_19_Wilson_freeze,one signed RG-invariant observational parameter is retained with separate QNM branches,six rows; robust bound +/-5.873319830123418e18 m^4; one parameter,"rows=6; interval=(-5.873319830123418e+18,5.873319830123418e+18)",True,MTS_INTEGRATED_H_C3_FUNCTIONAL_FLOW_VALIDATION_4928,False,2026-07-12
+VAL4928_20_gate_state,conditional flow is calculated but MTS inheritance and compact/full promotion remain false,kinematic derived; dynamic not derived; one Wilson; weak retained; compact/full false,kinematic=DERIVED; dynamic=NOT_DERIVED; compact=NOT_PROMOTED,True,MTS_INTEGRATED_H_C3_FUNCTIONAL_FLOW_VALIDATION_4928,False,2026-07-12
+VAL4928_21_registers,checkpoint formal note provenance resume and five registers carry their markers,0,0,True,MTS_INTEGRATED_H_C3_FUNCTIONAL_FLOW_VALIDATION_4928,False,2026-07-12
+VAL4928_22_variables,all thirteen canonical checkpoint variables are registered,13,13,True,MTS_INTEGRATED_H_C3_FUNCTIONAL_FLOW_VALIDATION_4928,False,2026-07-12
+VAL4928_23_pycache,scripts tree contains no Python bytecode cache directories,0,0,True,MTS_INTEGRATED_H_C3_FUNCTIONAL_FLOW_VALIDATION_4928,False,2026-07-12
+VAL4928_OVERALL,checkpoint 4928 functional-flow derivation and claim-discipline validation,all checks pass,24/24 pre-overall checks pass,True,MTS_INTEGRATED_H_C3_FUNCTIONAL_FLOW_VALIDATION_4928,False,2026-07-12

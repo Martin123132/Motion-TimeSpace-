@@ -1,0 +1,9 @@
+row_id,equation,meaning,status,valid_for_claim,timestamp_utc
+MODE4861_0_tensor,qT_hat=1; cT_hat^2=1,two luminal positive-energy tensor modes,PASS,False,2026-07-10T02:15:00+01:00
+MODE4861_1_vector,qV_hat=2*d*p/(d + p); cV_hat^2=-(d + p)*(d*p - d - p)/(4*d*p),two transverse flow modes,PASS,False,2026-07-10T02:15:00+01:00
+MODE4861_2_scalar,qS_hat=-3*(d*p - d - p)/p**2; cS_hat^2=p/(3*d),one scalar flow mode,PASS,False,2026-07-10T02:15:00+01:00
+MODE4861_3_positive,"0<p<1 and 0<d<=p/3 imply qT,qV,qS>0",no linear ghost in the public frame,PASS,False,2026-07-10T02:15:00+01:00
+MODE4861_4_scalar_speed,cS_hat^2=p/(3d)>=1,no scalar vacuum Cherenkov channel,PASS,False,2026-07-10T02:15:00+01:00
+MODE4861_5_vector_speed,cV_hat^2=(1+r)(1+r-rp)/(4r)>=1 for r=d/p<=1/3,no vector vacuum Cherenkov channel,PASS,False,2026-07-10T02:15:00+01:00
+MODE4861_6_finite,"c13_hat=0 does not force c14_hat or c123_hat to zero at finite p,d",removes the false identification of luminal tensor with the singular endpoint,PASS,False,2026-07-10T02:15:00+01:00
+MODE4861_7_endpoint,"p,d->0 still removes canonical normalization and requires cutoff/gauge-restoration analysis",finite public branch is healthy but exact-GR endpoint remains open,GUARD,False,2026-07-10T02:15:00+01:00

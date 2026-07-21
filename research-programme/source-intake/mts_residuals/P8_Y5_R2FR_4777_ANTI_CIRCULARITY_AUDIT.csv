@@ -1,0 +1,5 @@
+checkpoint,audit_id,rule,effect,status,valid_for_claim,timestamp_utc
+4777,AC4777_0_no_GM_definition,M_GM_sun_cal=mu_sun/G_cal is a comparator only; M_H^dress remains H_tau-H_ref.,prevents defining the source mass from the orbital quantity being tested,PASS_COMPARATOR_ONLY,False,2026-07-08T04:00:27+00:00
+4777,AC4777_1_G_uncertainty,"Solar nominal GM is exact as a conversion constant, but converting it to kg inherits CODATA G uncertainty.",prevents false precision in M_GM_sun_cal,PASS_UNCERTAINTY_ATTACHED,False,2026-07-08T04:00:27+00:00
+4777,AC4777_2_E00_not_zeroed,E_00 is not set to zero in open arenas; it is integrated into Delta_mu_E00.,prevents private branch zero from being smuggled into real/open systems,PASS_OPEN_RESIDUAL_RETAINED,False,2026-07-08T04:00:27+00:00
+4777,AC4777_3_boundary_profile_readout,"Boundary, profile and readout residuals remain separate from E_00 and from M_H^dress.",prevents cancellation bookkeeping from hiding source leakage,PASS_NO_CANCELLATION,False,2026-07-08T04:00:27+00:00

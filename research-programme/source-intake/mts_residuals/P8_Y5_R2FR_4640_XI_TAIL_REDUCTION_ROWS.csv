@@ -1,0 +1,6 @@
+checkpoint,row_id,definition,status,valid_for_claim,claim_allowed,timestamp_utc
+4640,XR4640_0_input_from_4639,"if Xi_src_hidden=0 and Xi_nonHilbert=0, then Xi_tail := Xi_boundary_history + Xi_transition_inner",INPUT_FROM_4639,False,False,2026-07-06T19:45:34.931348+00:00
+4640,XR4640_1_pair_definition,Xi_BT := Xi_boundary_history + Xi_transition_inner,PAIR_DEFINED,False,False,2026-07-06T19:45:34.931348+00:00
+4640,XR4640_2_pair_zero_branch,"if Q_edge=0 and epsilon_tr_hair=0 on the same branch, then Xi_BT=0",CONDITIONAL_PAIR_ZERO,False,False,2026-07-06T19:45:34.931348+00:00
+4640,XR4640_3_full_tail_zero_branch,"if Xi_src_hidden=Xi_nonHilbert=Xi_boundary_history=Xi_transition_inner=0 on one branch, then Xi_tail=0",FULL_XI_TAIL_ZERO_CONDITIONAL_NEXT_ASSEMBLY,False,False,2026-07-06T19:45:34.931348+00:00
+4640,XR4640_4_R10_gate,|Xi_BT| <= alpha_bound(lambda_mem) after Xi_src_hidden=Xi_nonHilbert=0; otherwise add all four absolute components,R10_GATE_RETAINS_NONCANCELLATION,False,False,2026-07-06T19:45:34.931348+00:00

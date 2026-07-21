@@ -1,0 +1,9 @@
+row_id,route,required_clause,result,decision,valid_for_claim,timestamp_utc
+CMP4850_0_minimal,independent varied unit flow,impose u Euler and unit constraint,cuscuton-equivalent on g!=0 timelike-gradient patches; no extra scalar,RETAIN_PRIVATE_BRANCH,False,2026-07-09T23:30:00+00:00
+CMP4850_1_elliptic,longitudinal principal symbol,-G_theta_theta>0,positive H-load has -g=2f_K/3>0,PASS_AT_Z0_FOR_ALL_FITS,False,2026-07-09T23:30:00+00:00
+CMP4850_2_homogeneous,background constraint Jacobian,6+9G_theta_theta=6(1-f_K)>0,invertible for f_K<1 and degenerates as f_K approaches 1,EDGE_MARGIN_REQUIRED,False,2026-07-09T23:30:00+00:00
+CMP4850_3_legendre,Legendre chart,G_theta_theta!=0 and nabla phi timelike,valid on evolving cosmological patches; not valid at the stationary local g=0 endpoint,PATCHWISE_ONLY,False,2026-07-09T23:30:00+00:00
+CMP4850_4_local,stationary local branch,"use original u,Q,Lambda variables",memory stress and tau force vanish exactly at theta=0,LOCAL_ZERO_RETAINED,False,2026-07-09T23:30:00+00:00
+CMP4850_5_shared_tau,shared propagating parent tau/coframe,add parent Hessian before eliminating constraints,may introduce new scalar/vector modes and is not certified by the minimal cuscuton result,SEPARATE_BRANCH_MATRIX_REQUIRED,False,2026-07-09T23:30:00+00:00
+CMP4850_6_matter,matter-coupled perturbations,derive lapse/shift/delta-phi constraints and effective growth kernel,"required before CMB, growth or chronometer promotion",NEXT_TARGET,False,2026-07-09T23:30:00+00:00
+CMP4850_7_naive_ghost,ADM lambda-only diagnosis,forbid eliminating shift while omitting u Euler/lapse/phi constraints,"Q_naive<0 is an incomplete off-shell Schur complement, not a physical ghost eigenvalue",REJECT_SHORTCUT,False,2026-07-09T23:30:00+00:00

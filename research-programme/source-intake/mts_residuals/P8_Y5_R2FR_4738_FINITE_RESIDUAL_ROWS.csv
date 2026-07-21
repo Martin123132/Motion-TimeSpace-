@@ -1,0 +1,6 @@
+checkpoint,row_id,quantity,formula,required_inputs,status,valid_for_claim,timestamp_utc
+4738,FIN4738_0_qtr_reduction,q_tr^nu,q_tr^nu=-nabla_mu Delta_K^{mu nu}+C_TF_RI^nu+C_conn^nu+B_boundary^nu+Q_quarantine_leak^nu,Delta_K profile; trace-free right-inverse commutator; same-geometry connection; boundary/domain; quarantine leakage,DERIVED_FORMULA_INPUTS_OPEN,False,2026-07-07T23:35:58+00:00
+4738,FIN4738_1_CDeltaKdiv,C_DeltaK_div,C_DeltaK_div=||P_loc nabla_mu D_v Delta_K^{mu nu}||_obs/a_ref,local profile and arena projection norm,FIRST_PROFILE_ROW_TO_FILL_OR_ZERO,False,2026-07-07T23:35:58+00:00
+4738,FIN4738_2_CTFRI,C_TF_RI,"C_TF_RI=||P_loc[D_v,nabla_mu R_T]Gamma_eff||_obs/a_ref","right-inverse operator, Green data, boundary/domain variation",COMMUTATOR_ZERO_OR_BOUND_REQUIRED,False,2026-07-07T23:35:58+00:00
+4738,FIN4738_3_Ckernel,C_kernel,C_kernel=||R_loc q_tr||_obs/a_ref,metric response operator and proof q_tr in Ker(R_loc),KERNEL_THEOREM_OR_BOUND_REQUIRED,False,2026-07-07T23:35:58+00:00
+4738,FIN4738_4_arena_vector,Y_a^transition,Y_a <= Pi_Delta C_DeltaK_div + Pi_RI C_TF_RI + Pi_conn C_conn + Pi_bdry C_boundary + Pi_kernel C_kernel,"PPN, R10, clocks, orbital and WEP arena projection constants",SOURCE_BACKED_PROJECTIONS_OPEN,False,2026-07-07T23:35:58+00:00

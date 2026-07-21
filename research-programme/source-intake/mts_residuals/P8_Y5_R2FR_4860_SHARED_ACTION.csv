@@ -1,0 +1,10 @@
+row_id,equation,meaning,status,valid_for_claim,timestamp_utc
+SA4860_0_metric,gHat^{mu nu}=g^{mu nu}+p u^mu u^nu,spin-2 characteristic inverse metric,EXACT_FROM_C13_PRINCIPAL_SYMBOL,False,2026-07-10T02:00:00+01:00
+SA4860_1_inverse,gHat_mu_nu=g_mu_nu-p u_mu u_nu/(1-p),Sherman-Morrison inverse,EXACT,False,2026-07-10T02:00:00+01:00
+SA4860_2_measure,sqrt(-gHat)=sqrt(-g)/sqrt(1-p),matrix determinant lemma,EXACT,False,2026-07-10T02:00:00+01:00
+SA4860_3_Maxwell,S_A^hat=-Z_star/4 int sqrt(-gHat) gHat^mu_rho gHat^nu_sigma F_mu_nu F_rho_sigma,minimal Maxwell block on the shared characteristic metric,CONSTRUCTIVE_PARENT_CANDIDATE,False,2026-07-10T02:00:00+01:00
+SA4860_4_expand,L_A^hat=-Z_star/[4sqrt(1-p)] [F^2+2p u^mu u^nu F_mu_alpha F_nu^alpha],exact covariant expansion,EXACT,False,2026-07-10T02:00:00+01:00
+SA4860_5_match,Z_A=Z_star/sqrt(1 - p); eta_u=-Z_star*p/sqrt(1 - p),match to the 4854 operator basis,PASS,False,2026-07-10T02:00:00+01:00
+SA4860_6_law,beta_u=eta_u/Z_A=-p; zeta=-1,no independent constitutive coefficient,EXACT_ON_SHARED_CONE_CANDIDATE,False,2026-07-10T02:00:00+01:00
+SA4860_7_stability,lambda_E=Z_A(1-p)>0; lambda_B=Z_A>0 for 0<p<1,photon Hamiltonian remains positive,PASS,False,2026-07-10T02:00:00+01:00
+SA4860_8_speed,c_gamma^2=lambda_B/lambda_E=1/(1-p)=c_T^2,exact common characteristic cone,PASS,False,2026-07-10T02:00:00+01:00

@@ -1,0 +1,10 @@
+row_id,equation,meaning,status,valid_for_claim,timestamp_utc
+PPN4859_0_gauge,"h_0i,i=-3 dot(U)+theta0 n_i,i; theta0=-(c1+2c3-c4)/(2-c14)",Foster-Jacobson standard gauge,PRIMARY_MAP,False,2026-07-10T01:10:00+01:00
+PPN4859_1_identity,(Gae/GN)theta0/c123=-3/2,safe-surface cancellation,PASS,False,2026-07-10T01:10:00+01:00
+PPN4859_2_chi,"delta g_0i^L=Cchi chi_,0i; Cchi=-3*beta/2",separately conserved EM subsource,EXACT_WEAK_SOURCE,False,2026-07-10T01:10:00+01:00
+PPN4859_3_basis,"delta g_0i=alpha1 V_i/2-alpha2 chi_,0i/2; chi_,0i=2V_i^L",standard PPN basis,PRIMARY_MAP,False,2026-07-10T01:10:00+01:00
+PPN4859_4_alpha1,alpha1_EM=-8*beta*d/(d + p),transverse coefficient inherited from 4858,EXACT_SOURCE_SPECIFIC,False,2026-07-10T01:10:00+01:00
+PPN4859_5_alpha2,alpha2_EM=beta*(-d + 3*p)/(d + p),longitudinal weak-source coefficient,EXACT_SOURCE_SPECIFIC,False,2026-07-10T01:10:00+01:00
+PPN4859_6_bound,abs(alpha2_EM)<=1.8E-14,uses 0<d/p<=1/3 and abs(beta_u)<=6e-15,PASS,False,2026-07-10T01:10:00+01:00
+PPN4859_7_margin,R6_bound/prediction>=111111.111111111111111111111111111111111111111111111111111111,weak preferred-frame pressure only,PASS_WEAK_SOURCE_ONLY,False,2026-07-10T01:10:00+01:00
+PPN4859_8_scope,composite alpha2 response is weighted by its conserved EM potential fraction,not a universal promoted PPN constant,GUARD,False,2026-07-10T01:10:00+01:00

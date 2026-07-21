@@ -1,0 +1,6 @@
+requirement_id,needed_for,requirement,current_status,effect_if_missing,valid_for_claim
+PR4565_0_cGamma_normalization,standalone profile/coupling separation,parent normalization and natural-size/sign convention for c_Gamma,MISSING_PARENT_NORMALIZATION,only product bound C_Gamma_Gdot is claimable as nonclaim evidence; no standalone c_Gamma or D_t Xi_0 bound,False
+PR4565_1_projection_jacobian,non-unit runner,J_Gdot^Gamma mapping P_loc Gamma_mem profile into measured Gdot/G,UNIT_NORMALIZED_PLACEHOLDER_ONLY,"bound remains |c_Gamma*D_t Xi_0| <= B, not a score-ready prediction",False
+PR4565_2_stationarity_zero,derivation branch,D_t Xi_0=0 from memory stationarity/no-hair on the compact local collar,OPEN_NEXT_DERIVATION,Gdot product row remains active,False
+PR4565_3_no_cancellation,arena comparison,"channelwise comparison; no cancellation with delta_kappa, c_D, PPN vector, boundary or tensor rows",GUARD_INSTALLED,local-GR pass could be faked by trading residuals,False
+PR4565_4_source_path_units,usable nonclaim row,"bound row has source id, observable, arena, numeric bound and units",PASS_FOR_PRODUCT_ROW,row would be schema-only,False

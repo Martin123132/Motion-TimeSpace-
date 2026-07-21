@@ -1,0 +1,8 @@
+checkpoint,dryrun_id,case,predicted_response,threshold,result,next_action,score_ready,valid_for_claim,timestamp_utc
+4741,DRY4741_0_zero_certificate,all_zero_multiplier_boundary_zero_mode_clauses_signed,0,4.212667126774669e-17,PASS_CONDITIONAL_ONLY,requires ADJ4741_3 plus all BND/ZM clauses,False,False,2026-07-07T23:59:27+00:00
+4741,DRY4741_1_missing_CDeltaKdiv,missing_C_DeltaK_div,MISSING_SOURCE_VALUE,4.212667126774669e-17,FAIL_CLOSED,source FSV4741_0 or prove C_DeltaK_div=0,False,False,2026-07-07T23:59:27+00:00
+4741,DRY4741_2_missing_CTFRI,missing_C_TF_RI,MISSING_SOURCE_VALUE,4.212667126774669e-17,FAIL_CLOSED,source FSV4741_1 or prove C_TF_RI=0,False,False,2026-07-07T23:59:27+00:00
+4741,DRY4741_3_missing_boundary,missing_C_boundary,MISSING_SOURCE_VALUE,4.212667126774669e-17,FAIL_CLOSED,sign B_adj=0 or source a bound,False,False,2026-07-07T23:59:27+00:00
+4741,DRY4741_4_missing_zero_mode,missing_C_zeroMode,MISSING_SOURCE_VALUE,4.212667126774669e-17,FAIL_CLOSED,prove Pi_zero m=0 or source a bound,False,False,2026-07-07T23:59:27+00:00
+4741,DRY4741_5_missing_projection,missing_Pi_arena,MISSING_ARENA_PROJECTION,4.212667126774669e-17,FAIL_CLOSED,source arena projection normalization,False,False,2026-07-07T23:59:27+00:00
+4741,DRY4741_6_symbolic_vector,symbolic_transition_residual,Pi_Delta*C_DeltaK_div+Pi_RI*C_TF_RI+Pi_conn*C_conn+Pi_bdry*C_boundary+Pi_kernel*C_kernel+Pi_zero*C_zeroMode+Pi_domain*C_domain+Pi_readout*C_readout,4.212667126774669e-17,NOT_SCORE_READY,requires all finite values and projections,False,False,2026-07-07T23:59:27+00:00

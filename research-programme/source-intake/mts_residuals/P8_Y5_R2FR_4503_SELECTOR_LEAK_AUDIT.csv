@@ -1,0 +1,7 @@
+audit_id,operator_form,selector_condition,variation_result,verdict,usable_for_zero,claim_allowed,valid_for_claim
+SLA4503_K0_constant_coefficient,c O[g],c independent of Z,c delta O survives,fails_local_EH_selector,False,False,False
+SLA4503_K1_single_zero,Z O[g],F(0)=0 but F_prime(0)=1,O delta Z survives at Z=0,fails_unless_deltaZ_also_parent_zero,False,False,False
+SLA4503_K2_double_zero,Z^2 O[g],F(0)=0 and F_prime(0)=0,2Z O delta Z + Z^2 delta O = 0 at Z=0,passes_as_conditional_sufficient_class,True,False,False
+SLA4503_K3_constraint_multiplier,lambda Z,Z=0 on shell,lambda delta Z can survive unless lambda=0 or eliminated,fails_without_multiplier_silence,False,False,False
+SLA4503_K4_topological,S_top,delta_g S_top=0 in local collar,no bulk local operator if boundary variation is closed,passes_only_with_boundary_nohair,True,False,False
+SLA4503_selector_contract,F_A(Z) O_A,F_A(0)=0 and F_A'(0)=0 for every retained non-EH family A,delta(F_A O_A)=F_A delta O_A + F_A' O_A delta Z = 0 on Z=0 branch,conditional_sufficient_contract_not_parent_signed_for_actual_rows,True,False,False

@@ -1,0 +1,11 @@
+checkpoint,row_id,symbol,definition,required_law,source_or_value,status,valid_for_claim,timestamp_utc
+4712,RCP4712_0_ZRQ,Z_RQ_min,positive kinetic/inner-product lower bound of the R_Q residual complex,Z_RQ >= Z_RQ_min > 0,MISSING,MISSING_PARENT_KINETIC_OR_INNER_PRODUCT_CERTIFICATE,False,2026-07-07T20:52:45+00:00
+4712,RCP4712_1_lambda1,lambda_1_RQ,first positive domain eigenvalue/singular gap after gauge and cokernel projection,||D_RQ r||^2 >= lambda_1_RQ ||r||^2 on the projected local domain,MISSING,MISSING_DOMAIN_SPECTRAL_GAP_OR_PROJECTOR,False,2026-07-07T20:52:45+00:00
+4712,RCP4712_2_M2,M_RQ_min^2,mass/Hessian floor controlling residual zero modes,M_RQ^2 >= M_RQ_min^2,MISSING,MISSING_MASS_OR_HESSIAN_FLOOR,False,2026-07-07T20:52:45+00:00
+4712,RCP4712_3_Eta,Eta_RQ,"negative correction budget from hidden, boundary, stress/readout and nonlinear terms",|negative correction| <= Eta_RQ ||R_Q||^2,MISSING,MISSING_CORRECTION_BOUND,False,2026-07-07T20:52:45+00:00
+4712,RCP4712_4_lambdaRQ,lambda_RQ,coercive root gap,lambda_RQ = Z_RQ_min*lambda_1_RQ + M_RQ_min^2 - Eta_RQ > 0,FORMULA_DERIVED_VALUE_MISSING,SYMBOLIC_GAP_DERIVED_UNSOURCED,False,2026-07-07T20:52:45+00:00
+4712,RCP4712_5_Croot,C_root,inverse coercive constant for the projected residual,C_root <= 1/lambda_RQ if lambda_RQ>0,FORMULA_DERIVED_VALUE_MISSING,SYMBOLIC_INVERSE_DERIVED_UNSOURCED,False,2026-07-07T20:52:45+00:00
+4712,RCP4712_6_Jroot,J_root,linear/source forcing in the root normal equation,J_root=0 by parent no-linear-source theorem or finite norm source row,MISSING,MISSING_NO_LINEAR_SOURCE_THEOREM_OR_NORM,False,2026-07-07T20:52:45+00:00
+4712,RCP4712_7_Broot,B_root,boundary forcing term in the root normal equation,"B_root=0 under fixed compact no-flux collar, otherwise finite boundary norm",CONDITIONAL_NOFLUX_AVAILABLE_NOT_ADOPTED_FOR_RQ,BOUNDARY_BRANCH_CONDITIONAL_NEEDS_RQ_DOMAIN_MATCH,False,2026-07-07T20:52:45+00:00
+4712,RCP4712_8_Picoker,Pi_coker R_Q,harmonic/cokernel residual invisible to the normal equation,Pi_coker R_Q=0 or finite norm retained,MISSING,MISSING_NO_COKERNEL_PROOF,False,2026-07-07T20:52:45+00:00
+4712,RCP4712_9_Llinear,L_linear,linear EM kinetic owner leakage,L_linear=0 via even-residual symmetry/operator-domain exhaustion or finite derivative bound,MISSING,DEFERRED_TO_4713_NO_LINEAR_OWNER,False,2026-07-07T20:52:45+00:00

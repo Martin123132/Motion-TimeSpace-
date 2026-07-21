@@ -1,0 +1,5 @@
+checkpoint,branch,generated_utc,control_id,input_case,expected,verdict,claim_allowed,valid_for_claim
+4578,MTS_R2FR_Y5_LAPSE_TEST_PARENT_SIGNATURE_OR_FIRST_REAL_SOURCE_LEAK_ROW_4578,2026-07-06T11:45:34.116152+00:00,CTRL4578_commuting_readout,"[O_lapse,Pi_readout]=0","rho_readout_shift=0, E_readout_profile=0",CONTROL_PASS_NONCLAIM,False,False
+4578,MTS_R2FR_Y5_LAPSE_TEST_PARENT_SIGNATURE_OR_FIRST_REAL_SOURCE_LEAK_ROW_4578,2026-07-06T11:45:34.116152+00:00,CTRL4578_noncommuting_readout,"Delta_readout[f_1]=2e-6 c^2, M_H_ref=1",||rho_readout_shift||_TV/M_H_ref >= 2e-6,SCHEMA_LEAK_NONZERO_NONCLAIM,False,False
+4578,MTS_R2FR_Y5_LAPSE_TEST_PARENT_SIGNATURE_OR_FIRST_REAL_SOURCE_LEAK_ROW_4578,2026-07-06T11:45:34.116152+00:00,CTRL4578_monopole_readout_trap,Delta_readout[1]=0 but Delta_readout[f_2]!=0,total mass unchanged but E_readout_profile active,COUNTERMODEL_CAUGHT,False,False
+4578,MTS_R2FR_Y5_LAPSE_TEST_PARENT_SIGNATURE_OR_FIRST_REAL_SOURCE_LEAK_ROW_4578,2026-07-06T11:45:34.116152+00:00,CTRL4578_large_leak_fail,||rho_readout_shift||_TV/M_H_ref=2e-3 with target tolerance 1e-5,Delta_Wtr branch fails smoke tolerance,SCHEMA_FAIL_NONCLAIM,False,False

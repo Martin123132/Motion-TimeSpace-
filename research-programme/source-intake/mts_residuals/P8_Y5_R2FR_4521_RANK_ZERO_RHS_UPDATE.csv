@@ -1,0 +1,6 @@
+rhs_id,component,before_4521,after_4521,status,next_gate,valid_for_claim
+RHU4521_0_input,post-4520 rank-zero RHS,M_AB Z^B = J_retained + B_A + CDB + R_A,"same expression, but B_A/CDB/R_A now have exact conditional zero laws and finite fallback rows",STRUCTURE_DERIVED,same-branch signing plus rank/M lock,False
+RHU4521_1_boundary,B_A,live boundary/corner/reference source charge,zero under fixed/q-owned no-flux Hamiltonian boundary; otherwise retained as B_rad+B_corner+B_ref,CONDITIONAL_ZERO_OR_FINITE,proper boundary/topological class proof in the active branch,False
+RHU4521_2_cdb,C_A^CDB,live derivative/commutator tails,"zero if K_conn,K_domain,K_boundary,K_comm all zero; otherwise bounded by CDB component envelope",CONDITIONAL_ZERO_OR_BOUND,component-by-component CDB signature,False
+RHU4521_3_readout,R_A,live source/readout/projector reentry,"zero for pure postprocess/variation-before-readout; retained for reduced-action, projector, calibration, marker, apparatus branches",CONDITIONAL_ZERO_OR_RETAINED,readout firewall and source-worldtube fixedness,False
+RHU4521_4_combined,full RHS,J_retained+B+CDB+R,J_retained remains the main live source channel; B/CDB/R can be silenced only under same-branch selector clauses,PARTIAL_REDUCTION_NOT_CLAIM,4522-Y5-R2FR-rank-M-lock-and-retained-current-firewall-or-alpha-runner.md,False

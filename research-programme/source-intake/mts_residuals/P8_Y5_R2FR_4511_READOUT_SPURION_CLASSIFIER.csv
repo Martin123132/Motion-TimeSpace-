@@ -1,0 +1,8 @@
+class_id,readout_or_object,classification,reason,finite_fallback_if_unsigned,valid_for_claim
+RSC4511_0_allowed_scalar,"q,m,F,V and scalar parent densities",ALLOWED_UNDER_NO_SPURION_GRAMMAR,scalar factors do not carry Weyl indices,B_qWeyl parent coefficient,False
+RSC4511_1_allowed_metric_epsilon,"g_ab, e^A_mu, epsilon_abcd, volume form",ALLOWED_LINEAR_WEYL_ZERO,single-Weyl metric/epsilon contractions vanish,P_Weyl_spurion if extra tensor exists,False
+RSC4511_2_allowed_monopole,"same-worldtube Hilbert monopole, isotropic clock/source mass, scalar tau",ALLOWED_IF_POST_VARIATION_AND_ISOTROPIC,monopole/timelike data cannot contract trace-free E_ab into a scalar,Q_TF_readout or projector-stress row,False
+RSC4511_3_forbidden_quadrupole,trace-free source/detector quadrupole Q_TF^{ab},WEYL_SPURION,Q_TF^{ab}E_ab is a nonzero scalar linear in Weyl,Q_TF_norm*C_Weyl*tau_arena,False
+RSC4511_4_forbidden_projector,"field-dependent projector, worldtube/domain selector, fitted mask",READOUT_REENTRY_SPURION,delta(Pi J)=Pi delta J+(delta Pi)J can create an effective P^{abcd},epsilon_chainmap_readout_abs or E_projector_stress,False
+RSC4511_5_forbidden_reduced_action,varied readout-reduced S_eff or radiative cutoff action,RETAINED_EFT_BRANCH,"once varied, readout is no longer postprocessing and can carry real source coefficients",B_readout_m plus B_qWeyl coefficient row,False
+RSC4511_6_separate_tower,"q C_abcd C^abcd, q C*Cdual, nonlocal Weyl kernels",NOT_KILLED_BY_LINEAR_THEOREM,quadratic/higher-curvature terms are legal even when linear Weyl is absent,D_qWeyl2/no-tower row,False

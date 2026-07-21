@@ -1,0 +1,9 @@
+row_id,condition,meaning,result_or_bound,status,valid_for_claim,timestamp_utc
+PFP4856_0_zero,F_ext=0 and G=f=dot f=0,"T_uF=0 and E_uF,u=0, so this sector generates no preferred-frame metric source",alpha1_uF=alpha2_uF=0,EXACT_NO_FIELD_LOCAL_ZERO,False,2026-07-09T22:52:54+00:00
+PFP4856_1_general_covariance,diffeomorphism covariance with dynamical u,does not by itself remove preferred-frame solutions,parent u kinetic sector must be solved,GUARD,False,2026-07-09T22:52:54+00:00
+PFP4856_2_EM_fraction,epsilon_EM=E_EM/(M_ADM c^2),electric/magnetic source fraction for nonzero-field systems,abs(alpha1_uF)<=C1 abs(eta/lambda_E) epsilon_EM; same for alpha2 with C2,FINITE_BOUND_FORM,False,2026-07-09T22:52:54+00:00
+PFP4856_3_kappa,abs(eta/lambda_E)=abs(kappa_u/(1+kappa_u)),propagation bound imported without setting the PPN Green coefficients,6.00000000000000899999999999989199999999999910899999999999757E-15,SOURCE_BACKED_COEFFICIENT,False,2026-07-09T22:52:54+00:00
+PFP4856_4_alpha1_pressure,existing alpha1 envelope,enhancement needed to reach bound,C1*epsilon_EM >= 16666666666.6666416666666666670041666666666681854166666666735,COMPARATOR_PRESSURE_ONLY,False,2026-07-09T22:52:54+00:00
+PFP4856_5_alpha2_pressure,existing alpha2 envelope,enhancement needed to reach bound,C2*epsilon_EM >= 333333.333333332833333333333340083333333333363708333333333470,COMPARATOR_PRESSURE_STRONG_FIELD_CAVEAT,False,2026-07-09T22:52:54+00:00
+PFP4856_6_direct_benchmark,C1=C2=1 and epsilon_EM<=1 benchmark,direct constitutive source would be <= propagation coefficient,<= 6.00000000000000899999999999989199999999999910899999999999757E-15,NONCLAIM_ORDER_ONE_BENCHMARK,False,2026-07-09T22:52:54+00:00
+PFP4856_7_parent,parent time/coframe kinetic sector,can generate alpha1/alpha2 even when F=0,map parent derivative coefficients or prove coframe gauge ownership,OPEN_HARD,False,2026-07-09T22:52:54+00:00

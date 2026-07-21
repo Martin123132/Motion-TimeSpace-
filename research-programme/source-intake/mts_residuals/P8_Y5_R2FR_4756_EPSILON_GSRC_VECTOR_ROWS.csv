@@ -1,0 +1,10 @@
+checkpoint,epsilon_id,formula,meaning,status,score_ready,valid_for_claim,timestamp_utc
+4756,EG4756_0_kappa,epsilon_kappa_A <= |D_A ln kappa_*| + |D_A delta_ZH|,effective coupling/source-measure drift,ZERO_IF_COUPLING_LOCKS_CLOSE,False,False,2026-07-08T01:35:39+00:00
+4756,EG4756_1_integrability,delta_H_tau_nonintegrable/M_H = |I_MTS|/M_H_ref,Hamiltonian source-charge curl obstruction,ZERO_IF_FULL_HTAU_CURL_CLOSES,False,False,2026-07-08T01:35:39+00:00
+4756,EG4756_2_reference,Delta_ref/M_H = sum |R_ref_*|/M_H_ref,fixed-reference or post-fit leakage,ZERO_IF_HREF_LOCKS,False,False,2026-07-08T01:35:39+00:00
+4756,EG4756_3_tau_frame,Delta_tau_frame_surface/M_H = sum |R_tau/frame/readout|/M_H_ref,time/coframe/readout mismatch,ZERO_IF_TAU_FRAME_LOCKS,False,False,2026-07-08T01:35:39+00:00
+4756,EG4756_4_boundary,Delta_boundary_flux/M_H = sum |R_boundary/rad/memory|/M_H_ref,boundary/radiative/open-memory leakage,ZERO_IF_NO_FLUX_CLOSES,False,False,2026-07-08T01:35:39+00:00
+4756,EG4756_5_PiH,epsilon_PiH = |ell_M(Pi_M^H J_H_total)-(H_tau-H_ref)|/|M_H^dress|,private Hamiltonian glue mismatch outside the selector,ZERO_INSIDE_PRIVATE_SELECTOR_ONLY,False,False,2026-07-08T01:35:39+00:00
+4756,EG4756_6_MHref,Delta_MHref_normalizer = BLOCKED_NO_NORMALIZER or |delta_MHref|/M_H_ref,positive denominator/source-frame stability,OPEN_DENOMINATOR_GATE,False,False,2026-07-08T01:35:39+00:00
+4756,EG4756_7_transition,epsilon_tr_hair,transition source hair from 4355/4356,ZERO_IF_COMMON_MODE_KERNEL_CLOSES,False,False,2026-07-08T01:35:39+00:00
+4756,EG4756_8_total,epsilon_Gsrc <= epsilon_kappa + delta_H + Delta_ref + Delta_tau + Delta_boundary + epsilon_PiH + Delta_MHref + epsilon_tr_hair,complete no-cancellation source/coupling residual vector.,FINITE_VECTOR_RETAINED,False,False,2026-07-08T01:35:39+00:00

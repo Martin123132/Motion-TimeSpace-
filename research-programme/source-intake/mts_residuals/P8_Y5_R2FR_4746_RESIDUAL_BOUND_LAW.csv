@@ -1,0 +1,5 @@
+checkpoint,bound_id,formula,meaning,status,score_ready,valid_for_claim,timestamp_utc
+4746,RB4746_0_static,C_res_static <= Pi_owner^stat sqrt(CzeroMode_stat^2 + (C_Dstat^2+C_boundary_stat)/lambda_1^stat),Static local-test residual law.,DERIVED_SYMBOLIC_NONNUMERIC,False,False,2026-07-08T00:24:12+00:00
+4746,RB4746_1_gap_insert,lambda_1^stat >= c_DN/(C_P L_loc^2),Turns the residual law into a geometry/domain/source problem.,DERIVED_SYMBOLIC_NONNUMERIC,False,False,2026-07-08T00:24:12+00:00
+4746,RB4746_2_lorentzian,C_res_dyn <= Pi_owner^dyn(C_hyp_energy+C_TT_kernel+C_quar_kernel+C_boundary_dyn),Dynamical residual law.,DERIVED_SYMBOLIC_NONNUMERIC,False,False,2026-07-08T00:24:12+00:00
+4746,RB4746_3_score_gate,"score_ready=false until c_DN,C_P,L_loc,Pi_owner,C_phys_kernel,sigma_TT,sigma_quar are sourced",No local-test claim is made from symbolic bounds.,NOT_SCORE_READY,False,False,2026-07-08T00:24:12+00:00

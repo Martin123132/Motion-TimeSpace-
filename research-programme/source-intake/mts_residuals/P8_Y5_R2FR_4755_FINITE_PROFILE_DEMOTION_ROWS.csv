@@ -1,0 +1,6 @@
+checkpoint,profile_id,formula,meaning,status,score_ready,valid_for_claim,timestamp_utc
+4755,FP4755_0_owner_tail,Y_owner_a <= |Pi_a^RI| C_Lambda |R_Lambda|/lambda_4350 + |Pi_a^BRI||B_RI| + |Pi_a^I||I_RI|,used if Lambda/boundary/incoming/residual clauses are unsigned,VALUES_MISSING,False,False,2026-07-08T01:30:20+00:00
+4755,FP4755_1_Kperp,Y_Kperp_i = |W_i^K| C_T(|S_T|+|B_T|+|I_T|+|Z_T|),used if Kperp clean sector placement is unsigned,VALUES_MISSING,False,False,2026-07-08T01:30:20+00:00
+4755,FP4755_2_total_owner,epsilon_owner_tail_Kperp <= Y_owner_a + Y_Kperp_a,finite owner-channel demotion if clean branch not signed,NONCLAIM_PROFILE_ROW_READY,False,False,2026-07-08T01:30:20+00:00
+4755,FP4755_3_profile_demotion,"if any packet clause is unsigned and no source value exists, demote KGamma rescue to finite profile/closure-only",prevents clean private branch from being treated as public theorem,FAIL_CLOSED_RULE,False,False,2026-07-08T01:30:20+00:00
+4755,FP4755_4_no_cancellation,finite owner profile cannot be canceled against nonowner residuals,keeps empirical scoring honest,ANTI_CANCELLATION_RULE,False,False,2026-07-08T01:30:20+00:00

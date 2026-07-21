@@ -1,0 +1,5 @@
+interface_id,statement,formula,status,valid_for_claim
+BI4568_0_scalar_bulk_not_boundary,A_J_eff owns only the U_B^2 bulk source and m_L terms; it does not absorb static boundary hair.,"B_static,a <= epsilon_U^2 A_J_eff + B_boundary,a + R_higher,a",SEPARATION_ENFORCED,False
+BI4568_1_private_compact_zero,"In the private compact no-flux/no-incoming selector, B_boundary,a may be set to zero only if the same collar theorem covers the arena projection.",K_a P_loc boundary_in_static=0,CONDITIONAL_PRIVATE_ROUTE,False
+BI4568_2_open_sector_bound,"For open, radiative, rotating or off-centre systems, B_boundary,a must be carried as a separate finite product row.","|B_boundary,a| <= B_a - epsilon_U^2 |K_a A_J_eff| - |R_higher,a|",BOUND_ROW_REQUIRED,False
+BI4568_3_no_retuning,"The same A_src/A_lap/worldtube profile must feed PPN, R10, clocks and orbital tests; no per-arena retuning of A_J_eff.","A_J_eff is shared; only K_a and B_boundary,a are arena-specific projections",NO_RETUNING_CONTRACT,False

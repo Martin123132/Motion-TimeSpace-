@@ -1,0 +1,5 @@
+requirement_id,requirement,why,status,claim_allowed,valid_for_claim
+CR4542_0_formula,define C_Gamma_Gdot = J_Gdot^Gamma * c_Gamma * ||P_Gdot Gamma_mem|| + tensor_perp_piece,"without the Jacobian and profile norm, the product bound cannot be divided into a bound on c_Gamma",missing,False,False
+CR4542_1_units,state units for J_Gdot^Gamma and the memory profile so C_Gamma_Gdot has units yr^-1,prevents dimensionless/product confusion,missing,False,False
+CR4542_2_no_cancellation,"do not cancel C_Gamma_Gdot against kappa drift, metric fit, or ephemeris nuisance terms",the bound is channelwise and must remain a robustness guard,active_guard,False,False
+CR4542_3_parent_operator,"if a parent memory equation L_Gamma Gamma_mem=J_Gamma is later found, use it to compute or zero the profile before empirical scoring",derivation-first route remains preferred,open_parent_route,False,False

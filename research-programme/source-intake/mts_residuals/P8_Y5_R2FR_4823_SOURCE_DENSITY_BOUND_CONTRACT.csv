@@ -1,0 +1,5 @@
+contract_id,quantity,formula,required_inputs,status,valid_for_claim,timestamp_utc
+RSC4823_0_zero,rho_mem=q_boundary_mem=0,all rho channels and boundary channels zero in the same branch,"six source zero clauses, three boundary zero clauses, source/units/same-branch/object-language signed",conditional_only,False,2026-07-08T10:03:28+00:00
+RSC4823_1_rho_norm,rho_mem_norm_abs,"sum |beta_i| |source_i| + |J_hidden|, with Poynting assigned to volume or boundary but not both",beta/source norms and Poynting mode,runner_ready_values_missing,False,2026-07-08T10:03:28+00:00
+RSC4823_2_q_boundary,q_boundary_mem_norm_abs,Q_boundary_mem_abs plus converted beta_S_abs S_boundary_flux_abs when Poynting is boundary-mode,Q_boundary value/zero and boundary flux value/zero,runner_ready_values_missing,False,2026-07-08T10:03:28+00:00
+RSC4823_3_feed_4822,Delta_v_m_mem_bound_abs,"C_omega (rho_mem_norm_abs + q_boundary_mem_norm_abs)/min(Z_mem_min,M2_mem_min)","RSC4823_1, RSC4823_2, Z_mem_min, M2_mem_min, C_omega",feed_ready_values_missing,False,2026-07-08T10:03:28+00:00

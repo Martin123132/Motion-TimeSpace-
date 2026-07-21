@@ -1,0 +1,12 @@
+row_id,quantity,derived,expected_or_role,status,valid_for_claim,timestamp_utc
+WARD4869_00_matter,perfect-fluid shift coefficient,16*pi*G times sqrt(h)(rho+P)beta^2/(2N),unique coefficient preserving the time-gauge zero mode,DERIVED_EXACT,False,2026-07-10T15:05:00+01:00
+WARD4869_01_Z,gauge-invariant shift,Z=k-R*s'-s+2R(N'/N)s,"zero for k=N^2 H', s=N^2 H/R",DERIVED_EXACT,False,2026-07-10T15:05:00+01:00
+WARD4869_02_radial,radial GR+matter Euler equation,-8*pi*Z/(3*A_value*N_value),-8*pi*Z/(3*A*N),PASS,False,2026-07-10T15:05:00+01:00
+WARD4869_03_angular,angular GR+matter Ward equation,-8*pi*(4*pi*A_value**2*P_value*R**2*Z - 4*pi*A_value**2*R**2*Z*rho_value + A_value**2*Z + R*Z_prime - Z)/(3*A_value*N_value),-8*pi*[R*Z'+(A^2-1+4*pi*G*R^2*A^2*(P-rho))*Z]/(3*A*N),DERIVED_EXACT,False,2026-07-10T15:05:00+01:00
+WARD4869_04_source,aether radial metric source operation count,106,106,PASS,False,2026-07-10T15:05:00+01:00
+WARD4869_05_metric_tail,Z infinity coefficient,-4*(A_infinity - 2*B_infinity - C)/(3*C*(r + 1)),-4(Ainf-2Binf-C)/[3C(1+r)],PASS,False,2026-07-10T15:05:00+01:00
+WARD4869_06_fmetric,metric first response,(-A_infinity + 2*B_infinity + 3*C*r + C)/(3*C*(r + 1)),[-Ainf+2Binf+C(1+3r)]/[3C(1+r)],PASS,False,2026-07-10T15:05:00+01:00
+WARD4869_07_fbulk,bulk boundary first response,(3*A_infinity*r**2 + 6*A_infinity*r + A_infinity + 4*B_infinity + 6*C*r**2 + 18*C*r + 8*C)/(18*C*(r + 1)),on-shell L2 boundary,DERIVED_EXACT,False,2026-07-10T15:05:00+01:00
+WARD4869_08_difference,bulk minus metric response,(3*A_infinity*r**2 + 6*A_infinity*r + 7*A_infinity - 8*B_infinity + 6*C*r**2 + 2*C)/(18*C*(r + 1)),exterior_relation/[18C(1+r)],PASS,False,2026-07-10T15:05:00+01:00
+WARD4869_09_exterior,exterior flow relation,3*A_infinity*r**2 + 6*A_infinity*r + 7*A_infinity - 8*B_infinity + 6*C*r**2 + 2*C,zero on the exterior Euler solution,DERIVED_EXACT,False,2026-07-10T15:05:00+01:00
+WARD4869_10_completion,independent D2,0 after the parent-action Ward and exterior equations,nonzero checkpoint-4868 calibration withdrawn,CORRECTED,False,2026-07-10T15:05:00+01:00

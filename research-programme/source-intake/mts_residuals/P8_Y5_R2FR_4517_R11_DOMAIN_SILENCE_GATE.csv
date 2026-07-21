@@ -1,0 +1,4 @@
+gate_id,condition,mathematical_test,status,valid_for_claim
+R11D4517_0_factorized_operator_zero,every domain source-normalization R11 operator is multiplied by Sigma_loc=G_AB Y^A Y^B,delta[Sigma_loc O_A]=0 on Y_loc=0 for all retained O_A,CONDITIONAL_NOT_INVENTORIED,False
+R11D4517_1_executable_vector,"if any retained operator is not factorized, it has coefficient, units, map and source path",R11_nonEH_operator_vector_executable.csv has claim-valid rows for domain_projector_mass,MISSING_EXECUTABLE_VECTOR,False
+R11D4517_2_no_absorption,domain R11 operator cannot be absorbed into fitted G or cancelled against another source tail,componentwise absolute bound or parent Ward identity only,NO_CANCELLATION_GUARD,False

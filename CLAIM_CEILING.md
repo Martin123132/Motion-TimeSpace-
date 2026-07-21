@@ -6,26 +6,26 @@ This repository is a public work-in-progress research programme.
 
 - MTS has a live, disciplined empirical closure branch for late-time cosmology.
 - The current SN+BAO closure branch is competitive enough to justify further study.
-- The project has explicit theorem gates for Newtonian recovery, local GR, PPN residuals, source normalization, parent-action ownership, and local shell silence.
-- Several candidate structures have been sharpened into theorem targets or labelled closure assumptions.
-- The local-zero parent-action route has a conditional trace-projector clause: stationary compact comoving domains can set the coherent expansion average `X_D=0` under stated assumptions.
-- The latest local shell route has an exact conditional quotient-kernel theorem: if public response descends through `q`, the generic `DeltaKTF` shell is in `ker(Dq)`, and boundary/exact-current terms are silent, then `P_metric_loc(DeltaKTF_shell)=0`.
-- The J2 branch now has a source-ready shell transfer law and shell-amplitude decomposition, including an explicit finite amplitude bound for the public J2 surface row.
+- A source-complete minimal gravity-photon-curvature truncation has a numerically constructed regular Gaussian/GR infrared separatrix within its declared scheme and truncation.
+- In the declared integrated-`H`, exact-Diff/BRST parent, the leading massless spin-2 coupling to connected matter sectors is rank one and universal.
+- On the selected reflection-even `psi=0` weak local branch, the same residue gives the Einstein equation, Poisson equation, inverse-square Newton force, neutral geodesics, and standard leading `PPN gamma=beta=1`.
+- The same local action gives the Maxwell equation, Lorentz force, electromagnetic Hilbert stress, Poynting momentum, and their shared conservation law without arena-specific source normalizations.
+- A concrete Schur-complement candidate exists for preserving the local GR branch while producing a distinct long-distance response; its short-distance suppression and a read-only 175-galaxy interface smoke have been calculated.
+- Failed derivations, adverse numerical outcomes, and resolution reversals are retained as part of the audit trail.
 - The work is suitable for public technical inspection as an evolving research programme.
 
 ## What Cannot Be Claimed Yet
 
 - MTS is not currently a completed unified field theory.
-- MTS does not yet derive local GR.
-- MTS does not yet pass PPN as a derived theorem.
-- MTS does not yet derive Newtonian mechanics from a complete parent action.
+- The integrated metric-density, Diff/BRST structure, visible field spectrum, and gauge representations are declared parent content; they are not yet derived from motion, time, and space alone.
+- The weak local theorem is not a proof of strong-field compact-body equivalence, radiation/back-reaction completeness, or a global all-state reduction to GR.
+- The numerical value of `G_N` is calibrated once rather than predicted. What is derived is its relation to the massless-pole residue and its universal reuse across local gravitational arenas.
+- Higher-derivative `R^2`, `C^2`, `C^3`, curvature-photon, and hidden-visible residuals remain bounded, matched, or open according to their individual ledgers.
+- The candidate galactic response is not yet the retarded self-energy of the occupied parent motion state. Its amplitude, transition scale, and exponent are not yet derived without source-history input.
+- The latest matched MTS/CDM formation calculation is one resolved realization, not a model-preference result. A frozen paired multi-seed ensemble is required.
 - MTS does not yet derive all closure constants, including `B_mem=2/27`.
 - The cosmology branch does not by itself prove the field theory.
-- The determinant-current route does not yet prove domain-alpha3 silence.
-- The local-zero route does not yet prove boundary no-flux, R11/source-normalization silence, or full stress/Bianchi closure.
-- The generic `DeltaKTF` transition shell is not yet parent-signed as quotient-vertical or boundary silent.
-- The shell projection transfer operators for clocks, orbital systems, R10/fifth-force rows, and EM/Poynting stress are not yet source-normalized.
-- The J2 shell row is source-ready, but its surface amplitude components are not yet parent-signed zero or numerically filled below bound.
+- No claim of ultraviolet completeness, uniqueness of the parent action, or empirical replacement of GR, dark matter, or Lambda-CDM is made.
 
 ## Promotion Rule
 

@@ -1,0 +1,5 @@
+test_id,profile,quantity,formula,result,implication,valid_for_claim
+YH4504_0_1946_zero_ode,generic radial scalar f(r),P_TF[partial_i partial_j f],(f''-f'/r)(n_i n_j-delta_ij/3),"zero iff f''=f'/r, so f=a r^2+b",bounded/decaying local scalar is silent only if constant or zero-charge/common-mode,False
+YH4504_1_yukawa_derivative,f(r)=A exp(-m r)/r,f''-f'/r,A exp(-m r)(m^2/r + 3m/r^2 + 3/r^3),nonzero for finite A and finite r,a live scalaron tail fails the Hessian silence route; it must be absent/source-silent/short-ranged/bounded,False
+YH4504_2_infinite_mass,m_R -> infinity at fixed exterior r,A exp(-m_R r)/r,lim_{m_R r -> infinity} exp(-m_R r)=0,scalar tail exponentially suppressed,"short-range bound is an empirical substitute for parent-zero, not a derivation of mu=0",False
+YH4504_3_source_charge_zero,A_body=0,R_exterior,R=A_body exp(-m_R r)/r,R_exterior=0 for the scalaron branch,source/body-charge silence is as important as coefficient silence,False

@@ -1,0 +1,11 @@
+row_id,equation,meaning,status,valid_for_claim,timestamp_utc
+HIL4856_0_preonshell,kappa T_Glambda=[nabla_alpha(f u^alpha)-G]g_mu_nu-2 lambda_u u_mu u_nu,4847 stress before substituting the multiplier,EXACT,False,2026-07-09T22:52:54+00:00
+HIL4856_1_eta_fixed_u,T_eta=-eta_u V_mu V_nu+(eta_u/2)g_mu_nu I,direct metric variation of eta_u I/2 at fixed contravariant u,EXACT,False,2026-07-09T22:52:54+00:00
+HIL4856_2_total,kappa T_flow+uF=[nabla(fu)-G]g+dot f uu+kappa eta_u[I uu-VV+g I/2],full on-shell multiplier contribution included,EXACT,False,2026-07-09T22:52:54+00:00
+HIL4856_3_local,T_uF=eta_u[I uu-VV+g I/2],stationary memory fixed point G=f=dot f=0,EXACT_LOCAL_BRANCH,False,2026-07-09T22:52:54+00:00
+HIL4856_4_density,rho_uF=eta_u I/2; q_uF_mu=0,direct constitutive contribution has positive electric energy for eta_u>0 and no separate heat flux,EXACT,False,2026-07-09T22:52:54+00:00
+HIL4856_5_stress,p_uF=eta_u I/6; pi_mu_nu=-eta_u[V_mu V_nu-h_mu_nu I/3],anisotropic electric stress is retained rather than replaced by pressure only,EXACT,False,2026-07-09T22:52:54+00:00
+HIL4856_6_trace,T_uF^mu_mu=0,the on-shell direct normalized-flow constitutive stress is traceless,EXACT,False,2026-07-09T22:52:54+00:00
+HIL4856_7_electric_match,"T_Z,Max(E)+T_uF(E)=T_Max(E) with coefficient lambda_E=Z_A+eta_u",aligned pure electric branch is exactly canonical Maxwell after static normalization,C_uT_DIRECT_EQUALS_ONE,False,2026-07-09T22:52:54+00:00
+HIL4856_8_RN,Q_c^2=g_J^2 N_Q^2/lambda_E,4855 Reissner-Nordstrom result remains exact on the aligned no-Poynting branch even when eta_u is nonzero,DIRECT_STATIC_RESIDUAL_CLOSED,False,2026-07-09T22:52:54+00:00
+HIL4856_smoke,rho=1.75; spatial_trace=1.75; trace4=0.00,rest-frame electric tensor trace smoke,PASS,False,2026-07-09T22:52:54+00:00

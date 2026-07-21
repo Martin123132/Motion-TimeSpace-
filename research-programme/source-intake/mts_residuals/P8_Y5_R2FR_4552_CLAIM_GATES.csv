@@ -1,0 +1,6 @@
+gate_id,requirement,status,claim_effect,valid_for_claim
+G4552_0_source_projection_zero,scalar source projection zero imported from 4551,PASS_CONDITIONAL_SOURCE_MODEL,removes scalar source product from alpha3 split only inside selected branch,False
+G4552_1_marker_zero_or_bound,M_alpha3=0 parent-signed or numeric |M_alpha3| bound row filled,BLOCKED,blocks alpha3 PPN promotion,False
+G4552_2_boundary_flux_zero_or_bound,F_alpha3=0 parent-signed or numeric |F_alpha3| bound row filled,BLOCKED,blocks alpha3 PPN promotion,False
+G4552_3_cubic_residue_zero_or_bound,C3_alpha3 representation-zero or coefficient bound,PENDING_AFTER_VECTOR_CHANNELS,needed after marker/boundary channels close,False
+G4552_4_no_public_or_ppn_claim,No alpha3/local-GR claim promoted while G4552_1 or G4552_2 is blocked.,PASS_NONCLAIM_GUARD,keeps checkpoint as private derivation/fallback plumbing,False

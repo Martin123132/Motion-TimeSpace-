@@ -1,0 +1,5 @@
+checkpoint,gap_id,formula,meaning,status,score_ready,valid_for_claim,timestamp_utc
+4752,DGB4752_0_symbol_constant,"c_GK := inf_{|p|=1, X perp kernel} |p^nu D_Gamma[X]-p_mu D_K[X]^{mu nu}|^2/||X||^2",Derivative symbol constant replacing the failed algebraic s_q^2 route.,SOURCE_READY_VALUE_MISSING,False,False,2026-07-08T01:14:36+00:00
+4752,DGB4752_1_gap_bound,c_quar^deriv >= p_min^2 c_GK - C_lower - C_boundary - C_zero,"Derivative quarantine gap after lower-order, boundary and zero-mode losses.",DERIVED_SOURCE_READY_BOUND,False,False,2026-07-08T01:14:36+00:00
+4752,DGB4752_2_static_insert,"lambda_1^stat >= [min(c_TFRI,c_quar^deriv)-C_mix_eff-C_TT_kernel]/(C_P L_loc^2)",Static local-test gap can be scored only after c_GK and all losses are sourced.,NONCLAIM_INSERTION,False,False,2026-07-08T01:14:36+00:00
+4752,DGB4752_3_failure_condition,if p_min=0 or C_zero >= p_min^2 c_GK - C_lower - C_boundary then derivative gap does not prove local quiet,Derivative route fails without zero-mode and boundary ownership.,FAIL_CLOSED_RULE,False,False,2026-07-08T01:14:36+00:00

@@ -1,0 +1,7 @@
+checkpoint,control_id,case,expected_result,status,generated_utc,claim_allowed,valid_for_claim
+4583,CTRL4583_rescale,field rescaling A->lambda A only moves normalization,do not treat convention as physical zero,CONTROL_PASS,2026-07-06T12:28:50.995887+00:00,False,False
+4583,CTRL4583_no_alpha_prediction,fixed calibrated alpha_EM branch,no numerical alpha_EM prediction is claimed,FIREWALL_PASS,2026-07-06T12:28:50.995887+00:00,False,False
+4583,CTRL4583_dynamic_current,g_J(Phi) or lambda_A(Phi) before variation,C_JQ_dyn retained,COUNTERMODEL_CAUGHT,2026-07-06T12:28:50.995887+00:00,False,False
+4583,CTRL4583_hidden_readout,S_eff or readout map has hidden-field argument,C_EM_readout_eff retained,COUNTERMODEL_CAUGHT,2026-07-06T12:28:50.995887+00:00,False,False
+4583,CTRL4583_open_flux,nonzero Poynting flux crosses collar,Phi_EM_rad routed as boundary/Hamiltonian flux,FIREWALL_PASS,2026-07-06T12:28:50.995887+00:00,False,False
+4583,CTRL4583_nonEM_residuals,EM tail zero alone,"does not close parent material tensor, apparatus, active kernel, EFT, tau tails",FIREWALL_PASS,2026-07-06T12:28:50.995887+00:00,False,False

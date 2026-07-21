@@ -1,0 +1,11 @@
+runner_id,case,required_inputs,bound_formula,current_status,valid_for_claim
+FBA4522_0_rank_zero_bound,rank-zero with nonzero finite RHS,"m_min(M_AB), norms for J_retained,B,CDB,R and projection K_obs",||E_local|| <= K_obs m_min^-1 (||J_ret||+||B||+||CDB||+||R||)+direct_tails,SYMBOLIC_READY_INPUTS_MISSING,False
+FBA4522_1_finite_rank_alpha,rank(Z_AB)>0,"Z eigenvalues,M eigenvalues,Q_source,q_test,calibration,bound curve",alpha_X(lambda_X)=[Q_X^S q_X^T/(4*pi Z_X)]/[G_N M_S m_T],CONTRACT_READY_INPUTS_MISSING,False
+FBA4522_2_spectral,spectral/nonlocal memory,"spectral measure d rho(mu), source/test charges, arena transfer",alpha envelope = integral d rho(mu) alpha(mu) exp(-mu r)(1+mu r),NOT_SELECTED,False
+FBA4522_0_Z,alpha input inherited from 4521,parent action/principal symbol with units,Z_X or Z_AB eigenvalue,MISSING_PARENT_Z,False
+FBA4522_1_M,alpha input inherited from 4521,parent Hessian/operator mass on same quotient domain,M_X^2 or M_AB eigenvalue,MISSING_PARENT_M,False
+FBA4522_2_Qsource,alpha input inherited from 4521,"same-frame source-normalized charge integral, not inferred from bound",Q_X^S,MISSING_SOURCE_CHARGE_ZERO_OR_VALUE,False
+FBA4522_3_qtest,alpha input inherited from 4521,test-body response/source charge theorem or value,q_X^T,MISSING_TEST_CHARGE_ZERO_OR_VALUE,False
+FBA4522_4_calibration,alpha input inherited from 4521,pre-readout Hilbert mass/current calibration,G_N^obs M_S m_T,CONDITIONAL_CALIBRATION_NOT_FULLY_SIGNED,False
+FBA4522_5_bound_curve,alpha input inherited from 4521,full digitized/source-backed curve or official table,alpha_bound(lambda),FULL_CURVE_MISSING_VISUAL_POINTS_NONCLAIM,False
+FBA4522_6_interpolation,alpha input inherited from 4521,declared log-log or official interpolation over in-domain lambda,interpolation rule,PRIVATE_CANDIDATE_ONLY,False

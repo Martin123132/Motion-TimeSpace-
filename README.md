@@ -1,60 +1,61 @@
 # Motion-TimeSpace Research Programme
 
-Motion-TimeSpace (MTS) is an open, work-in-progress research programme exploring whether motion, time, space, memory, and observed gravitational/cosmological structure can be organized into a disciplined field-theoretic framework.
+Motion-TimeSpace (MTS) is an open, work-in-progress research programme exploring whether motion, time, space, memory, and observed gravitational and cosmological structure can be organized into one disciplined field-theoretic framework.
 
-This repository is not presented as a completed theory of physics. It is a public research workbench: derivation attempts, claim ceilings, empirical scorecards, red-team ledgers, and scripts for checking whether parts of the framework survive contact with data and known limits.
+This repository is not presented as a completed theory of physics. It is a public research workbench containing derivation attempts, failed routes, claim ceilings, numerical gates, empirical scorecards, and reproducible scripts.
 
 ## Current Status
 
-The project currently has three active layers:
+The project now has four connected layers:
 
-1. **Empirical closure branch** - a late-time SN+BAO cosmology branch that remains competitive under initial robustness checks.
-2. **GR/Newton derivation programme** - a finite theorem-stack route toward source-normalized Newtonian recovery and local GR/PPN silence.
-3. **Parent-action formalization** - ongoing attempts to replace closure assumptions with parent-derived variational, projector, domain, source, conservation, and quotient-kernel identities.
+1. **Parent and infrared branch** - a declared integrated metric-density/Diff parent and a source-complete minimal gravity-photon-curvature truncation with a numerically constructed GR-connected infrared trajectory.
+2. **Local GR/Newton/Maxwell branch** - within the selected reflection-even weak local branch, one universal massless spin-2 residue gives the Einstein equation, Poisson equation, inverse-square force, geodesics, and standard leading `PPN gamma=beta=1`; the same parent action gives the Maxwell, Lorentz-force, stress, and Poynting chain.
+3. **Large-scale motion response** - a state-dependent Schur-complement route can leave the local GR branch unchanged while producing a long-distance response, but its retarded motion self-energy and source-history state law are not yet derived.
+4. **Empirical branches** - late-time cosmology remains a labelled closure branch, while the current galaxy-formation comparison is explicitly nonclaim and requires a predeclared paired multi-seed ensemble.
 
-The latest public update advances the local-GR/Newton branch from checkpoint `484` to checkpoint `516`. The strongest new results are an exact conditional quotient-kernel theorem and a sharper J2/shell-amplitude ledger: if public local response descends through a parent quotient `q`, the generic `DeltaKTF` transition-shell variation is vertical in `ker(Dq)`, and boundary/exact-current terms are silent, then the local shell projection vanishes; separately, the public J2 shell transfer now has an explicit amplitude law and a finite bound on the allowed shell surface amplitude. Those parent signatures and amplitude components are not yet proven zero.
+The July 21 update advances the public audit from checkpoint `516` to checkpoint `1191`. It publishes the full compact record of private checkpoints `4501` through `5175`: `658` checkpoint documents, `851` scripts, and `5,404` compact CSV/JSON artifacts. Large run products and third-party/source caches remain excluded.
 
 The strongest honest claim is:
 
-> MTS has a live empirical closure branch and a coherent derivation programme toward GR/Newton, including a conditional quotient-kernel route for local shell silence and a source-ready J2 shell-amplitude bound, but it does not yet derive local GR, PPN recovery, Newtonian mechanics, or a completed unified field theory.
+> MTS now contains a conditional but explicit weak-local route from one declared parent action to GR, Newtonian gravity, and the Maxwell/Lorentz/Poynting source chain, together with a concrete candidate bridge to distinct large-scale motion response. It does not yet derive the full parent ontology from motion, time, and space alone, establish strong-field completeness, derive the galactic retarded state law, or demonstrate empirical preference over standard baselines.
 
 ## Start Here
 
-- `CLAIM_CEILING.md` - what the repository does and does not currently claim.
-- `PROJECT_MAP.md` - guide to the public structure.
-- `docs/status/STATUS-2026-07-06.md` - current project status snapshot.
-- `docs/theory-gates/LOCAL-GR-NEWTON-GATES.md` - the key GR/Newton/PPN promotion gates.
-- `research-programme/checkpoints/106-canonical-R-cosmology-robustness-summary.md` - cosmology robustness summary.
-- `research-programme/checkpoints/399-local-GR-status-for-human-review.md` - local GR/Newton status memo.
-- `research-programme/checkpoints/460-source-normalized-Newton-branch-theorem-stack.md` - finite Newton theorem stack.
-- `research-programme/checkpoints/484-parent-local-zero-action-clause-attempt.md` - earlier parent-local-zero clause attempt.
-- `research-programme/checkpoints/513-nonlocal-owner-kernel-theorem-or-shell-projection-arena-transfer-matrix.md` - local shell/kernel gate.
-- `research-programme/checkpoints/516-J2-shell-surface-amplitude-source-row-or-parent-kernel-zero.md` - latest J2 shell-amplitude source gate.
+- `CLAIM_CEILING.md` - the current claim boundary.
+- `docs/status/STATUS-2026-07-21.md` - concise current status and open problems.
+- `docs/status/PUBLICATION-NOTES-2026-07-21.md` - exact publication scope and exclusions.
+- `docs/theory-gates/LOCAL-GR-NEWTON-GATES.md` - the updated local-limit gate map.
+- `research-programme/checkpoints/951-Y5-R2FR-completed-fixed-point-GR-connected-trajectory-and-motion-sector-entry.md` - GR-connected trajectory and motion-sector entry.
+- `research-programme/checkpoints/963-Y5-R2FR-local-GR-Newton-Maxwell-calibration-count-and-universal-source-residue-certificate.md` - local source-residue and calibration theorem.
+- `research-programme/checkpoints/976-Y5-R2FR-integrated-H-soft-BRST-universal-source-theorem-and-local-GR-Newton-Maxwell-promotion-or-parent-field-content-boundary.md` - strongest local GR/Newton/Maxwell theorem boundary.
+- `research-programme/checkpoints/1164-Y5-R2FR-one-parent-local-GR-galaxy-spectral-response-cog-theorem.md` - local-GR/galaxy response bridge.
+- `research-programme/checkpoints/1191-Y5-R2FR-exact-low-mode-shared-isotropic-resolution-discrimination-gate.md` - latest matched MTS/CDM formation gate.
 
 ## Repository Layout
 
 ```text
 .
-├── CLAIM_CEILING.md
-├── PROJECT_MAP.md
-├── docs/
-│   ├── status/
-│   └── theory-gates/
-├── research-programme/
-│   ├── checkpoints/
-│   ├── scripts/
-│   └── source-intake/
-├── data/
-└── archive/
-    └── legacy-pre-formalization-2026-06/
+|-- CLAIM_CEILING.md
+|-- PROJECT_MAP.md
+|-- docs/
+|   |-- status/
+|   `-- theory-gates/
+|-- research-programme/
+|   |-- checkpoints/
+|   |-- scripts/
+|   `-- source-intake/
+|-- tools/
+|-- data/
+`-- archive/
+    `-- legacy-pre-formalization-2026-06/
 ```
 
 ## Reproducibility Notes
 
-The repository includes scripts and compact residual/register artifacts, but not large third-party datasets, virtual environments, or raw generated run folders.
+Public checkpoint filenames use a compact sequence, while document titles and generated artifact names retain their original private checkpoint IDs for provenance. For this update, private checkpoint `4501` maps to public checkpoint `517`, and private checkpoint `5175` maps to public checkpoint `1191`.
 
-Large data products should be downloaded from their original public sources where licensing permits. Local machine paths appearing in historical artifacts are retained where they help provenance, but should not be read as portable execution paths.
+The repository includes source scripts and compact residual/register artifacts, but not large third-party datasets, virtual environments, raw generated run folders, or the local `functional_rg` source cache. Local machine paths retained in historical artifacts are provenance records, not portable execution paths.
 
 ## Research Ethos
 
-This work is deliberately conservative about claims. A branch can be useful, promising, or competitive without being promoted to a completed theory. Promotion requires derivation, consistency with known limits, and empirical robustness.
+This work is deliberately conservative about claims. A branch can be useful, promising, or competitive without being promoted to a completed theory. Promotion requires derivation, consistency with known limits, and empirical robustness against matched baselines.

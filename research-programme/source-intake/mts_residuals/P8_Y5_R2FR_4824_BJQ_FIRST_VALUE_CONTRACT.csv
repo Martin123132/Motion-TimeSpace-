@@ -1,0 +1,6 @@
+contract_id,quantity,formula,required_inputs,status,valid_for_claim,timestamp_utc
+BVC4824_0_zero,B_mem_eff=J_mem_live=Q_boundary_mem=0,"all B/J/Q components zero in the same branch, with absolute no-cancellation guard","component zero certificates, same branch, parent object language, units, source paths",conditional_only,False,2026-07-08T10:10:10+00:00
+BVC4824_1_Bmem,B_mem_eff_abs,|B826|+|BWeyl|+|BY5|+|BY6|+|Bsrc_boundary|+|Bsrc_readout|,six B component values or zeros,runner_ready_values_missing,False,2026-07-08T10:10:10+00:00
+BVC4824_2_Jmem,J_mem_live_abs,|J_source_kernel|+|J_EM_open|+|J_nonHilbert|+|J_dyn_exchange|+|J_boundary_readout|,five J current values or zeros,runner_ready_values_missing,False,2026-07-08T10:10:10+00:00
+BVC4824_3_Qboundary,Q_boundary_mem_abs,"absolute Green-function boundary charge, separate from closed Cmem boundary bookkeeping",zero-flux/topological theorem or finite boundary integral,runner_ready_values_missing,False,2026-07-08T10:10:10+00:00
+BVC4824_4_rho_feed,rho_mem_reduced_abs,B_mem_eff_abs R_obs_norm + Cmem_final_abs T_obs_norm + J_mem_live_abs,"BVC4824_1, BVC4824_2, R/T profiles, and Cmem_final zero/value",feed_ready_values_missing,False,2026-07-08T10:10:10+00:00

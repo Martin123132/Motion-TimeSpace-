@@ -1,0 +1,7 @@
+cdb_id,component,zero_route,bound_if_not_zero,status,valid_for_claim
+CDB4521_0_total,C_A^CDB,all component norms vanish in same branch,||CDB|| <= A_ref^-1 N_div(K_conn+K_domain+K_boundary+K_comm+DeltaK_live),CONDITIONAL_ZERO_OR_BOUND,False
+CDB4521_1_Kconn,K_conn,LC[g_obs] or Palatini EH-only connection with zero hypermomentum/projective source,K_LC_mismatch + torsion/nonmetricity/source trace terms,CONDITIONAL,False
+CDB4521_2_Kdomain,K_domain,domain/window/support/projector descends from q or is fixed/topological,C_chi||delta_g chi_D|| + C_sup||delta_g support|| + C_read||delta_g R_readout||,CONDITIONAL,False
+CDB4521_3_Kboundary,K_boundary,"proper compact collar, fixed reference and routed/no flux",|b_C|+|outer_flux|+|corner|+|h_edge|+|Pi_R_tot|,CONDITIONAL,False
+CDB4521_4_Kcomm,K_comm,pure postprocess readout and commuting local projector/source measure,"||(delta P_loc)J|| + ||[P_loc,nabla]K_res|| + ||[delta_parent,R_pre]T_H||",CONDITIONAL,False
+CDB4521_5_policy,no cancellation,each component zero independently,absolute sum; no inter-component cancellation credit,GUARD,False

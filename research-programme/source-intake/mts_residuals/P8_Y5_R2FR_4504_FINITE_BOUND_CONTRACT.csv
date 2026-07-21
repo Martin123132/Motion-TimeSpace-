@@ -1,0 +1,5 @@
+contract_id,target,formula,needed_inputs,status,valid_for_claim
+FB4504_0_local_AE_gate,4502 A_E equal budget,||W_STF||_1 ||K_2^X|| |c_R2_eff_total| N_R2_fR_scalar_mode <= 3.502129240739837e-14,W_STF; K_2^X; N_R2_fR_scalar_mode; c_R2_eff_total or zero certificate,FORMULA_READY_VALUES_UNSIGNED,False
+FB4504_1_standard_mu_bound,PPN scalar range template,"if mu=N_MTS_to_fR*c_R2_eff_total in standard units, mu <= 1.443476e+15 m^2",N_MTS_to_fR; c_R2_eff_total; screening/body-charge branch,STANDARD_BOUND_READY_MTS_MAP_UNSIGNED,False
+FB4504_2_R10_curve,R10 finite-range alpha(lambda),"lambda_R=sqrt(6 mu), alpha_eff=1/3*C_body^2 or declared screened/body-charge value",valid full alpha_bound(lambda); mu; C_body/screening; source path,CURVE_BRANCH_READY_INPUTS_UNSIGNED,False
+FB4504_3_yukawa_hessian,Hessian/DeltaE_R11 scalar tail,|A_body| exp(-m r)(m^2/r+3m/r^2+3/r^3) times projector/normalization <= residual budget,A_body; m_R; support radius r; projector normalization; no-cancellation convention,HESSIAN_BOUND_FORMULA_DERIVED_INPUTS_UNSIGNED,False

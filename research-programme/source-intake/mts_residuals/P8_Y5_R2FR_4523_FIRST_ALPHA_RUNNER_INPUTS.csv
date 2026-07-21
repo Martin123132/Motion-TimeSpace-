@@ -1,0 +1,14 @@
+input_id,runner,quantity,required_evidence,current_status,valid_for_claim
+AIR4523_0_mmin,rank_zero_bound,m_min(M_AB),parent action Hessian/eigenvalue or constraint Schur complement,MISSING,False
+AIR4523_1_Jretained_norm,rank_zero_bound,||J_retained||,zero theorem or source-backed retained-current profile,MISSING,False
+AIR4523_2_B_norm,rank_zero_bound,||B_A||,boundary no-flux theorem in same branch or boundary flux profile,MISSING_SAME_BRANCH,False
+AIR4523_3_CDB_norm,rank_zero_bound,||C_A^CDB||,component zeros or K_conn/K_domain/K_boundary/K_comm norms,MISSING,False
+AIR4523_4_R_norm,rank_zero_bound,||R_A||,pure postprocess/readout theorem in same branch or readout reentry bound,MISSING_SAME_BRANCH,False
+AIR4523_5_Kobs,rank_zero_bound,K_obs projection to PPN/R10/clock/orbit,arena transfer operator,MISSING,False
+AIR4523_0_Z,finite_alpha,Z_X or Z_AB eigenvalue,parent action/principal symbol with units,MISSING_PARENT_Z,False
+AIR4523_1_M,finite_alpha,M_X^2 or M_AB eigenvalue,parent Hessian/operator mass on same quotient domain,MISSING_PARENT_M,False
+AIR4523_2_Qsource,finite_alpha,Q_X^S,"same-frame source-normalized charge integral, not inferred from bound",MISSING_SOURCE_CHARGE_ZERO_OR_VALUE,False
+AIR4523_3_qtest,finite_alpha,q_X^T,test-body response/source charge theorem or value,MISSING_TEST_CHARGE_ZERO_OR_VALUE,False
+AIR4523_4_calibration,finite_alpha,G_N^obs M_S m_T,pre-readout Hilbert mass/current calibration,CONDITIONAL_CALIBRATION_NOT_FULLY_SIGNED,False
+AIR4523_5_bound_curve,finite_alpha,alpha_bound(lambda),full digitized/source-backed curve or official table,FULL_CURVE_MISSING_VISUAL_POINTS_NONCLAIM,False
+AIR4523_6_interpolation,finite_alpha,interpolation rule,declared log-log or official interpolation over in-domain lambda,PRIVATE_CANDIDATE_ONLY,False

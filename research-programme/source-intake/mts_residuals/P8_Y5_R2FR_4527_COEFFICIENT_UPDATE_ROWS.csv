@@ -1,0 +1,7 @@
+coefficient_id,quantity,definition,formula,source_needed,status,valid_for_claim
+COF4527_0_A_odd_force,A_A,vertical action-odd force vector,A_A=delta S_odd/delta z^A|_0,existing parent action in vertical collar and I_q action,FORMULA_FILLED_VALUE_MISSING,False
+COF4527_1_CI_over_ellz,C_I/ell_z,collar constant converting epsilon_I action defect to force norm,||A|| <= (C_I/ell_z) epsilon_I,local collar diameter/norm and action regularity constant,BOUND_FORM_FILLED_VALUE_MISSING,False
+COF4527_2_Kvert,K_AB^{mu nu},vertical kinetic/principal coefficient,partial^2 L / partial(nabla_mu z^A) partial(nabla_nu z^B),parent quadratic action expansion,PRINCIPAL_SYMBOL_ROW_READY_VALUE_MISSING,False
+COF4527_3_rankZ,rank Z_AB,rank of physical vertical principal symbol after gauge/constraint reduction,rank[K_AB^{mu nu} xi_mu xi_nu] on Q_phys,Kvert plus constraint/gauge reduction,CLASSIFIER_READY_VALUE_MISSING,False
+COF4527_4_mu_lambda,"mu_i, lambda_i",finite-range generalized eigenvalues if rankZ>0,M v_i=mu_i^2 Z v_i; lambda_i=1/mu_i,Z/M eigenpair with units,FINITE_RANGE_ROW_READY_IF_RANK_POSITIVE,False
+COF4527_5_alpha_projection,alpha_i(lambda_i),observable finite-range or algebraic residual projection,rankZ>0: alpha_i=K_i Qbar_iS qbar_iT/(G_N M_S m_T M_i^2); rankZ=0: |delta O|<=K_obs m_min^{-1} sum_abs RHS,"source/test charges, calibration, K_obs/K_i, m_min or M_i, bound curve",RUNNER_LINK_READY_VALUES_MISSING,False

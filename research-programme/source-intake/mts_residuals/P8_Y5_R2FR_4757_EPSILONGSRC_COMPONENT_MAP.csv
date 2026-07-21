@@ -1,0 +1,9 @@
+checkpoint,component_id,component,formula,meaning,current_status,zero_claim_allowed,valid_for_claim,timestamp_utc
+4757,EG4757_0_total,epsilon_Gsrc,epsilon_Gsrc <= epsilon_kappa + delta_H + Delta_ref + Delta_tau + Delta_boundary + epsilon_PiH + Delta_MHref + epsilon_tr_hair + C_src_open,overall local source/coupling residual vector,NO_CANCELLATION_SUM,False,False,2026-07-08T01:45:09+00:00
+4757,EG4757_1_kappa,epsilon_kappa,|D_A ln kappa_*| + |D_A delta_ZH|,coupling/source-measure drift,FINITE_IF_OWNER_NOT_SIGNED,False,False,2026-07-08T01:45:09+00:00
+4757,EG4757_2_Htau,delta_H,|I_MTS|/M_H_ref,Hamiltonian integrability defect,FINITE_IF_INTEGRABILITY_NOT_SIGNED,False,False,2026-07-08T01:45:09+00:00
+4757,EG4757_3_reference_tau_boundary,Delta_ref + Delta_tau + Delta_boundary,sum reference/time-frame/boundary flux residual ratios,readout/source-charge closure residue,FINITE_INPUTS_REQUIRED,False,False,2026-07-08T01:45:09+00:00
+4757,EG4757_4_PiH_MHref,epsilon_PiH + Delta_MHref,|ell_M(Pi_M^H J_H_total)-(H_tau-H_ref)|/|M_H^dress| + |delta_MHref|/M_H_ref,Hamiltonian-selector and normalizer defects,PRIVATE_ZERO_OR_FINITE_BOUND,False,False,2026-07-08T01:45:09+00:00
+4757,EG4757_5_transition_hair,epsilon_tr_hair,Y_nonHilbert + Delta_Wtr + Y_tau + Y_l>=1 + Y_species_frame_source + Y_lambda + Y_nonEH + Y_boundary,transition hair if not pure q_0^H,COMMON_MODE_OR_FINITE_HAIR,False,False,2026-07-08T01:45:09+00:00
+4757,EG4757_6_Csrc_open,C_src_open,Delta_w vector + Xi_open + source/readout hidden coupling,explicit failure branch for unsigned owner/no-wA theorem,ZERO_ONLY_IF_PARENT_OWNER_THEOREM_SIGNED,False,False,2026-07-08T01:45:09+00:00
+4757,EG4757_7_perp_gate,epsilon_Gsrc_perp,zero-monopole residual with Newton gate E_perp <= delta_N/K_N(s),coefficient-bound version of source-normalization hair,BOUND_GATE_READY_INPUTS_MISSING,False,False,2026-07-08T01:45:09+00:00

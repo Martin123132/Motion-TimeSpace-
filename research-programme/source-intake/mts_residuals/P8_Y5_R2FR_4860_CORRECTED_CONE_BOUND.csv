@@ -1,0 +1,8 @@
+row_id,equation,meaning,status,valid_for_claim,timestamp_utc
+CB4860_0_delta,delta_c=c_T/c_gamma-1,quantity constrained by GW170817/GRB170817A,DEFINITION,False,2026-07-10T02:00:00+01:00
+CB4860_1_exact,delta_c=sqrt[(1+beta_u)/(1-p)]-1,corrects the p=0 specialization used at 4854,EXACT,False,2026-07-10T02:00:00+01:00
+CB4860_2_epsilon,epsilon_cone=beta_u+p=(1-p)(2delta_c+delta_c^2),source-backed combination,EXACT,False,2026-07-10T02:00:00+01:00
+CB4860_3_lower,epsilon_cone>=-5.999999999999985000000000000009E-15,using delta_c>=-3e-15 at p=1e-15,PASS,False,2026-07-10T02:00:00+01:00
+CB4860_4_upper,epsilon_cone<=1.39999999999999908999999999999951E-15,using delta_c<=7e-16 at p=1e-15,PASS,False,2026-07-10T02:00:00+01:00
+CB4860_5_scope,the old beta_u interval is recovered only at p=0,after 4857 the data do not separately measure beta_u and p,CORRECTION,False,2026-07-10T02:00:00+01:00
+CB4860_6_shared,epsilon_cone=0 -> beta_u=-p,shared-cone branch is centered exactly inside the source-backed interval,PASS,False,2026-07-10T02:00:00+01:00
