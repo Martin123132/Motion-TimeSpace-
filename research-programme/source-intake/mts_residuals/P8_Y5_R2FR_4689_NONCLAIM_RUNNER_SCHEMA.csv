@@ -1,0 +1,21 @@
+checkpoint,column_id,column_name,type,meaning,required_before_claim,schema_status,valid_for_claim,timestamp_utc
+4689,RS4689_00,run_id,string,unique run tag,True,REQUIRED_COLUMN,False,2026-07-07T18:56:01+00:00
+4689,RS4689_01,sector,"enum(memory,fibre)",which X sector is scored,True,REQUIRED_COLUMN,False,2026-07-07T18:56:01+00:00
+4689,RS4689_02,arena,"enum(R10,PPN,clock_WEP,orbital_GM,EM_Poynting)",test arena,True,REQUIRED_COLUMN,False,2026-07-07T18:56:01+00:00
+4689,RS4689_03,Z_X,numeric_or_THEOREM_ZERO,operator normalization,True,REQUIRED_COLUMN,False,2026-07-07T18:56:01+00:00
+4689,RS4689_04,M2_X,numeric_or_THEOREM_ZERO,operator mass gap,True,REQUIRED_COLUMN,False,2026-07-07T18:56:01+00:00
+4689,RS4689_05,lambda_X,numeric,range in declared units,True,REQUIRED_COLUMN,False,2026-07-07T18:56:01+00:00
+4689,RS4689_06,B_X_norm,numeric_or_zero_certificate,curvature/source vector norm,True,REQUIRED_COLUMN,False,2026-07-07T18:56:01+00:00
+4689,RS4689_07,C_X_final_norm,numeric_or_zero_certificate,final matter-trace coupling norm,True,REQUIRED_COLUMN,False,2026-07-07T18:56:01+00:00
+4689,RS4689_08,J_X_live_norm,numeric_or_zero_certificate,live current norm,True,REQUIRED_COLUMN,False,2026-07-07T18:56:01+00:00
+4689,RS4689_09,Q_boundary_X_norm,numeric_or_zero_certificate,Green boundary charge norm,True,REQUIRED_COLUMN,False,2026-07-07T18:56:01+00:00
+4689,RS4689_10,K_arena,numeric_or_matrix,arena transfer kernel,True,REQUIRED_COLUMN,False,2026-07-07T18:56:01+00:00
+4689,RS4689_11,source_charge,numeric_or_zero_certificate,source body charge,True,REQUIRED_COLUMN,False,2026-07-07T18:56:01+00:00
+4689,RS4689_12,test_charge,numeric_or_zero_certificate,test body charge,True,REQUIRED_COLUMN,False,2026-07-07T18:56:01+00:00
+4689,RS4689_13,calibration,string_with_units,G_N/GM/source convention,True,REQUIRED_COLUMN,False,2026-07-07T18:56:01+00:00
+4689,RS4689_14,bound_reference,source_path_or_url,empirical bound source,True,REQUIRED_COLUMN,False,2026-07-07T18:56:01+00:00
+4689,RS4689_15,predicted_value,numeric,computed residual or alpha,True,REQUIRED_COLUMN,False,2026-07-07T18:56:01+00:00
+4689,RS4689_16,units,string,units for every numeric input,True,REQUIRED_COLUMN,False,2026-07-07T18:56:01+00:00
+4689,RS4689_17,source_paths,semicolon_paths,local/web provenance,True,REQUIRED_COLUMN,False,2026-07-07T18:56:01+00:00
+4689,RS4689_18,valid_for_claim,boolean,true only when all numeric/theorem/source conditions pass,True,REQUIRED_COLUMN,False,2026-07-07T18:56:01+00:00
+4689,RS4689_19,blockers,semicolon_strings,missing fields if invalid,True,REQUIRED_COLUMN,False,2026-07-07T18:56:01+00:00

@@ -1,0 +1,7 @@
+checkpoint,bound_id,quantity,bound_or_contract,meaning,source,claim_allowed,valid_for_claim,timestamp_utc
+4665,DRB4665_0_envelope,Delta_support_mem,|E_rho_qbasic|+|E_boundary_birth|+|R_W|+|C_shape|+|C_domain|+|E_readout_mask|+|E_EM_flux|,off-branch no-cancellation support envelope,SWT3560_4; HWT4011_5,False,False,2026-07-07T16:17:05.270863+00:00
+4665,DRB4665_1_reynolds_shell,E_boundary_birth,Phi_A*(rho_H_trace_norm*V_n_bound + mu_birth_TV)/|M_H_ref|,finite Reynolds shell row if zero trace/no-shell fails,RSB4588_5_total,False,False,2026-07-07T16:17:05.270863+00:00
+4665,DRB4665_2_threshold_mask,E_readout_mask,finite row for post-fit support threshold/domain mask,blocks tautological source-domain choice,CTRL4588_threshold_mask,False,False,2026-07-07T16:17:05.270863+00:00
+4665,DRB4665_3_side_flux,E_EM_flux,"|int_{partial W} T_EM(tau,n_boundary)dSigma dt|/|M_H_ref|",radiative/nonminimal Poynting side flux is bounded separately,POY4587_2,False,False,2026-07-07T16:17:05.270863+00:00
+4665,DRB4665_4_shape_domain,R_W+C_shape+C_domain,|R_W|+|C_shape|+|C_domain|,"support selector, shape, or linked-domain failure row",HWT4011_5,False,False,2026-07-07T16:17:05.270863+00:00
+4665,DRB4665_5_source_contract,C_mem_support_dynamic_source_row,system_id;branch;rho_trace;V_n;mu_birth;Phi_A;M_H_ref;threshold_mask;side_flux;shape_domain;projection;units;source_path;valid_for_claim,future source-backed support row contract,SOURCE_ROW_TEMPLATE_READY_VALUES_MISSING,False,False,2026-07-07T16:17:05.270863+00:00

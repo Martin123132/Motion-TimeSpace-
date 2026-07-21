@@ -1,0 +1,6 @@
+checkpoint,control_id,input_branch,expected,status,valid_for_claim,claim_allowed,generated_utc
+4600,CTRL4600_imposed_boundary,Dirichlet/Neumann boundary condition imposed as a closure rather than derived from parent action,C_X^boundary may be conditionally zero but remains nonclaim unless parent-selected,COUNTERMODEL_CAUGHT,False,False,2026-07-06T14:39:14.700759+00:00
+4600,CTRL4600_boundary_hair,"boundary primitive, wall stress, endpoint or domain selector carries local source hair",C_X^boundary and/or Q_boundary_X remains live,COUNTERMODEL_CAUGHT,False,False,2026-07-06T14:39:14.700759+00:00
+4600,CTRL4600_exact_improvement_flux,exact dmu improvement exists but compact flux/corner/readout dependence is not zero,"non-Hilbert improvement contribution remains bounded, not erased",COUNTERMODEL_CAUGHT,False,False,2026-07-06T14:39:14.700759+00:00
+4600,CTRL4600_decoupled_shadow_block,decoupled conserved block or source-shadow/projector tail survives Hilbert extraction,C_X^nonHilbert remains live through absolute envelope,COUNTERMODEL_CAUGHT,False,False,2026-07-06T14:39:14.700759+00:00
+4600,CTRL4600_no_cancellation,boundary and non-Hilbert components have opposite signs in one fitted calibration,absolute-sum envelope used unless parent signs cancellation,GUARD_ACTIVE,False,False,2026-07-06T14:39:14.700759+00:00

@@ -1,0 +1,5 @@
+checkpoint,amplitude_id,formula,meaning,status,claim_allowed,valid_for_claim,timestamp_utc
+4657,AMP4657_0_imported,|A_mem| <= [exp(R/lambda_mem) int_body(|B_mem_eff||R_obs|+|C_mem^final_live||T|+|J_mem_live|)dV + |Q_boundary_mem|]/(4*pi Z_min),4656/4601 finite Green-function envelope,BOUND_IMPORTED_VALUES_MISSING,False,False,2026-07-07T15:09:15.560448+00:00
+4657,AMP4657_1_Cmem_inserted,|C_mem^final_live||T| <= (|C_mem^std_weight_live|+|C_mem^LHRS_live|+|C_mem^boundary|+|C_mem^nonHilbert|)|T|,4657 inserts the final C_mem split into A_mem,INSERTION_DERIVED_VALUES_MISSING,False,False,2026-07-07T15:09:15.560448+00:00
+4657,AMP4657_2_exact_zero_branch,C_mem^final_live=0 removes the trace-source term from A_mem,only if all component zeros are same-branch signed,CONDITIONAL_ZERO_BRANCH,False,False,2026-07-07T15:09:15.560448+00:00
+4657,AMP4657_3_live_branch,C_mem^final_live remains in A_mem as an explicit absolute-sum source term,"current branch has no source-backed values, so no local-GR/R10/PPN pass",FAIL_CLOSED_NONCLAIM,False,False,2026-07-07T15:09:15.560448+00:00

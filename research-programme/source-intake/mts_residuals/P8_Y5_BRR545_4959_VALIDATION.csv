@@ -1,0 +1,21 @@
+check_id,requirement,expected,actual,passed,validation_marker
+VAL4959_00_research,full 4x32768-event research runner completes,0,0,True,MTS_4959_INDEPENDENT_VALIDATION
+VAL4959_01_paths,all outputs and synchronized documents exist,[],[],True,MTS_4959_INDEPENDENT_VALIDATION
+VAL4959_02_compile,research and validator compile,[],[],True,MTS_4959_INDEPENDENT_VALIDATION
+VAL4959_03_deterministic,full rerun reproduces every generated output byte for byte,True,True,True,MTS_4959_INDEPENDENT_VALIDATION
+VAL4959_04_csv,all CSV files parse with marker and nonclaim flags,True,True,True,MTS_4959_INDEPENDENT_VALIDATION
+VAL4959_05_identities,all analytic projector identities pass,[],[],True,MTS_4959_INDEPENDENT_VALIDATION
+VAL4959_06_witness,two-event X3/O2 determinant is 175/41472,0.004219714506172839,0.004219714506172877,True,MTS_4959_INDEPENDENT_VALIDATION
+VAL4959_07_ward,gauge-complete O2 Ward residual is below 1e-13,<1e-13,2.3852447794681098e-18,True,MTS_4959_INDEPENDENT_VALIDATION
+VAL4959_08_replicas,four finite positive-definite full-statistics replicas pass,True,True,True,MTS_4959_INDEPENDENT_VALIDATION
+VAL4959_09_gram,five-projector Gram matrix is symmetric positive definite,symmetric and min eigenvalue >0,sym=0.0;eigmin=1.683210889814806e-05,True,MTS_4959_INDEPENDENT_VALIDATION
+VAL4959_10_schur,arbitrary O2 leaves a positive X3 rate floor,0.84<fraction<0.88,0.8613294289995401,True,MTS_4959_INDEPENDENT_VALIDATION
+VAL4959_11_scalar_calibration,new scalar Gram block reproduces 4954 below 1e-3,<1e-3,0.0003006382877533409,True,MTS_4959_INDEPENDENT_VALIDATION
+VAL4959_12_normalization,all trajectory rows apply the exact factor-256 correction,True,True,True,MTS_4959_INDEPENDENT_VALIDATION
+VAL4959_13_trajectory,all four trajectory endpoints retain the bounded positive rate,True,True,True,MTS_4959_INDEPENDENT_VALIDATION
+VAL4959_14_scaling,all five p6 amplitude sources have scoped IR power counting,True,True,True,MTS_4959_INDEPENDENT_VALIDATION
+VAL4959_15_gates,claim boundary and retained local branch are explicit,True,True,True,MTS_4959_INDEPENDENT_VALIDATION
+VAL4959_16_documents,formal registers contain all 4959 markers,[],[],True,MTS_4959_INDEPENDENT_VALIDATION
+VAL4959_17_registers,L-801 is unique and both CSV registers are well formed,True,True,True,MTS_4959_INDEPENDENT_VALIDATION
+VAL4959_18_pycache,project scripts contain no Python cache directories,[],[],True,MTS_4959_INDEPENDENT_VALIDATION
+VAL4959_19_final,all independent 4959 checks pass,True,True,True,MTS_4959_INDEPENDENT_VALIDATION

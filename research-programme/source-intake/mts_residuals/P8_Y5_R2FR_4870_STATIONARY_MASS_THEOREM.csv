@@ -1,0 +1,12 @@
+row_id,quantity,derived,expected_or_role,status,valid_for_claim,timestamp_utc
+THM4870_00_mass,stationary total mass,Mtot=-integral(Lg+Lae+Lm)d3x,Yagi stationary mass identity,SOURCE_BACKED,False,2026-07-10T16:10:00+01:00
+THM4870_01_envelope,small-p stationary envelope,"M(v,p)=M_GR-p*Iae_bar_on(v)+O(p2)",metric and matter first variations multiply p=0 equations,DERIVED_PARENT,False,2026-07-10T16:10:00+01:00
+THM4870_02_assumptions,theorem domain,smooth gauge-fixed stationary branch; fixed couplings and baryon number; compact matter support; asymptotically Cartesian gauge,all assumptions explicit,RECORDED,False,2026-07-10T16:10:00+01:00
+THM4870_03_expansion,normalized flow hierarchy,q=q1+v2*q3+O(v4); Iae_bar=v2*I2[q]+v4*I4[q]+O(v6),exact gamma*v boundary normalization removed,DERIVED_PARENT,False,2026-07-10T16:10:00+01:00
+THM4870_04_scalar,abstract stationary variation,0,H*q1+J=0 implies delta I2=0,PASS,False,2026-07-10T16:10:00+01:00
+THM4870_05_boundary,q3 residual boundary,q3 regular at R=0 and q3(infinity)=0,inner and outer canonical boundary terms vanish,DERIVED_CONDITIONAL,False,2026-07-10T16:10:00+01:00
+THM4870_06_cancel,third-order-profile cancellation,delta I2[q1;q3]=integral(q3*E[q1])+[Pi1*q3]_0^infinity=0,no fitted q3 closure enters the mass coefficient,DERIVED_PARENT,False,2026-07-10T16:10:00+01:00
+THM4870_07_f,first response normalization,f_parent=-I2[q1]/(8*pi*C),Rstar=1 and M=C/G at p=0,DERIVED_PARENT,False,2026-07-10T16:10:00+01:00
+THM4870_08_kappa,quartic response normalization,kappa4_parent=I4[q1]/(16*pi*C),physical first-order-p v4 coefficient,DERIVED_PARENT,False,2026-07-10T16:10:00+01:00
+THM4870_09_g,second response relation,g_parent=3*f_parent+8*kappa4_parent,Gupta response convention,DERIVED_PARENT,False,2026-07-10T16:10:00+01:00
+THM4870_10_scope,ownership gate,"selected Einstein-aether correspondence action at O(p), not primitive MTS scalar ownership",C3 and direct v3-tail checks remain open,PRIVATE_NONCLAIM,False,2026-07-10T16:10:00+01:00

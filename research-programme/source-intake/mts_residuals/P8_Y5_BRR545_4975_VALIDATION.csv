@@ -1,0 +1,23 @@
+validation_id,check,observed,required,status,checkpoint_marker,valid_for_full_MTS_claim,source_checked_date
+VAL4975_00,runner checkpoint formal note and generated outputs are hash locked,True,True,PASS,MTS_4975_SCALAR_FINITE_MOMENTUM_GERM_VALIDATION,False,2026-07-13
+VAL4975_01,generated CSV row counts,"{""C3_scalar_PT_m3_q6_q8_kernel.csv"": 13, ""C3_scalar_finite_momentum_germ_gate.csv"": 8, ""C3_scalar_mass_homogeneity.csv"": 6, ""C3_scalar_q6_q8_Taylor_responses.csv"": 24, ""C3_scalar_q6_q8_quotient_projection.csv"": 2, ""C3_scalar_q8_leave_one_geometry.csv"": 12}","{""C3_scalar_PT_m3_q6_q8_kernel.csv"": 13, ""C3_scalar_finite_momentum_germ_gate.csv"": 8, ""C3_scalar_mass_homogeneity.csv"": 6, ""C3_scalar_q6_q8_Taylor_responses.csv"": 24, ""C3_scalar_q6_q8_quotient_projection.csv"": 2, ""C3_scalar_q8_leave_one_geometry.csv"": 12}",PASS,MTS_4975_SCALAR_FINITE_MOMENTUM_GERM_VALIDATION,False,2026-07-13
+VAL4975_02,all generated and canonical CSV files have constant widths,True,True,PASS,MTS_4975_SCALAR_FINITE_MOMENTUM_GERM_VALIDATION,False,2026-07-13
+VAL4975_03,all scientific rows remain private nonclaim,True,True,PASS,MTS_4975_SCALAR_FINITE_MOMENTUM_GERM_VALIDATION,False,2026-07-13
+VAL4975_04,q6 baseline quotient recovery,image=9.073324633292171e-16;target=2.4706903190008234e-12,both <1e-8,PASS,MTS_4975_SCALAR_FINITE_MOMENTUM_GERM_VALIDATION,False,2026-07-13
+VAL4975_05,q8 leakage is nonzero and quadrature converged,"values=[0.030214084796217643, 0.030214084796217903];difference=2.6020852139652106e-16",minimum >1e-6 and difference <1e-12,PASS,MTS_4975_SCALAR_FINITE_MOMENTUM_GERM_VALIDATION,False,2026-07-13
+VAL4975_06,independent q8 convergence summaries,vector=4.4542864898843055e-15;estimator=2.4951415406568398e-13,both <1e-8,PASS,MTS_4975_SCALAR_FINITE_MOMENTUM_GERM_VALIDATION,False,2026-07-13
+VAL4975_07,leave-one diagnostic estimator changes sign,minimum=-2.2660076373437794e-06;maximum=1.3421671685426887e-06,minimum <0 and maximum >0,PASS,MTS_4975_SCALAR_FINITE_MOMENTUM_GERM_VALIDATION,False,2026-07-13
+VAL4975_08,leave-one instability blocks coefficient promotion,5.214728699881652,>1 diagnostic rejection,PASS,MTS_4975_SCALAR_FINITE_MOMENTUM_GERM_VALIDATION,False,2026-07-13
+VAL4975_09,q6 and q8 mass homogeneity,"max=0.0;powers=[(6, -2), (8, -4)]","max <1e-12 and powers [(6,-2),(8,-4)]",PASS,MTS_4975_SCALAR_FINITE_MOMENTUM_GERM_VALIDATION,False,2026-07-13
+VAL4975_10,independent proper-time kernel integrals,q6=0.99999999999999989;q8=1,both equal one within 1e-12,PASS,MTS_4975_SCALAR_FINITE_MOMENTUM_GERM_VALIDATION,False,2026-07-13
+VAL4975_11,q8 cumulative profile is monotone with correct endpoints,first=3.9999998500000049e-24;last=0.99999999999999944,monotone first~0 last~1,PASS,MTS_4975_SCALAR_FINITE_MOMENTUM_GERM_VALIDATION,False,2026-07-13
+VAL4975_12,restricted quotient rank and C3 nullspace invariance,"{""q6_C3_null_map_residual"": 7.771561172376096e-16, ""q6_rank"": 8, ""q8_C3_null_map_residual"": 1.2490009027033011e-15, ""q8_sigma1_dressed_rank"": 8}",ranks 8 and residuals <1e-10,PASS,MTS_4975_SCALAR_FINITE_MOMENTUM_GERM_VALIDATION,False,2026-07-13
+VAL4975_13,result enforces C3 and massless-limit claim ceilings,True,True,PASS,MTS_4975_SCALAR_FINITE_MOMENTUM_GERM_VALIDATION,False,2026-07-13
+VAL4975_14,runner internal gates,8/8,8/8,PASS,MTS_4975_SCALAR_FINITE_MOMENTUM_GERM_VALIDATION,False,2026-07-13
+VAL4975_15,generated checkpoint contains no placeholder sentinel,0,0,PASS,MTS_4975_SCALAR_FINITE_MOMENTUM_GERM_VALIDATION,False,2026-07-13
+VAL4975_16,checkpoint marker propagated through handoff documents,True,True,PASS,MTS_4975_SCALAR_FINITE_MOMENTUM_GERM_VALIDATION,False,2026-07-13
+VAL4975_17,canonical variable audit contains six 4975 entries,"['C3Q8Estimator4975_MTS', 'PTQ8Kernel4975_MTS', 'PredictivityStatus4975_MTS', 'ScalarTaylorQ6_4975_MTS', 'ScalarTaylorQ8Vector_4975_MTS', 'Sigma1_4975_MTS']","['C3Q8Estimator4975_MTS', 'PTQ8Kernel4975_MTS', 'PredictivityStatus4975_MTS', 'ScalarTaylorQ6_4975_MTS', 'ScalarTaylorQ8Vector_4975_MTS', 'Sigma1_4975_MTS']",PASS,MTS_4975_SCALAR_FINITE_MOMENTUM_GERM_VALIDATION,False,2026-07-13
+VAL4975_18,claims register contains bounded L-817 exactly once,1,1,PASS,MTS_4975_SCALAR_FINITE_MOMENTUM_GERM_VALIDATION,False,2026-07-13
+VAL4975_19,provenance records generated hashes and no GitHub action,True,True,PASS,MTS_4975_SCALAR_FINITE_MOMENTUM_GERM_VALIDATION,False,2026-07-13
+VAL4975_20,first cited source path for each new variable exists,True,True,PASS,MTS_4975_SCALAR_FINITE_MOMENTUM_GERM_VALIDATION,False,2026-07-13
+VAL4975_21,overall checkpoint 4975 validation,21/21 pre-overall,21/21 pre-overall,PASS,MTS_4975_SCALAR_FINITE_MOMENTUM_GERM_VALIDATION,False,2026-07-13

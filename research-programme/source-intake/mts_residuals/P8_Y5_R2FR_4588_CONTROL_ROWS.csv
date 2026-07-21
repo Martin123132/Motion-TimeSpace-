@@ -1,0 +1,7 @@
+checkpoint,control_id,case,expected_result,status,generated_utc,claim_allowed,valid_for_claim
+4588,CTRL4588_smooth_zero_trace,smooth compact source with rho trace zero and no shell,E_boundary_birth=0,SYMBOLIC_CONTROL_PASS,2026-07-06T13:04:10.899761+00:00,False,False
+4588,CTRL4588_hard_surface_jump,sharp boundary with nonzero trace density or shell layer,retain Reynolds shell bound,COUNTERMODEL_CAUGHT,2026-07-06T13:04:10.899761+00:00,False,False
+4588,CTRL4588_threshold_mask,support defined by fitted cutoff after residual inspection,reject zero; retain mask/shell row,FIREWALL_PASS,2026-07-06T13:04:10.899761+00:00,False,False
+4588,CTRL4588_radiative_sidewall,nonzero sidewall/radiative flux through collar,"route as boundary flux, not hidden bulk zero",FIREWALL_PASS,2026-07-06T13:04:10.899761+00:00,False,False
+4588,CTRL4588_unbounded_test,arena test function unbounded at boundary,bound not score-ready,COUNTERMODEL_CAUGHT,2026-07-06T13:04:10.899761+00:00,False,False
+4588,CTRL4588_no_claim,Reynolds theorem exists but values/signatures missing,no local-GR/R10/PPN claim,FIREWALL_PASS,2026-07-06T13:04:10.899761+00:00,False,False

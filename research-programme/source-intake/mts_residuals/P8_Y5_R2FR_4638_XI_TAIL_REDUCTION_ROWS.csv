@@ -1,0 +1,6 @@
+checkpoint,row_id,definition,status,valid_for_claim,claim_allowed,timestamp_utc
+4638,XR4638_0_4637_tail,Xi_tail := Xi_hidden_coeff + Xi_nonHilbert + Xi_boundary_history + Xi_transition_inner + Xi_source_weight,INPUT_FROM_4637,False,False,2026-07-06T19:34:46.521483+00:00
+4638,XR4638_1_first_component_rollup,Xi_src_hidden := Xi_hidden_coeff + Xi_source_weight plus the 4332 marker/source-normalization/EM/inner/environment subcomponents,CANONICALIZED_FIRST_COMPONENT,False,False,2026-07-06T19:34:46.521483+00:00
+4638,XR4638_2_reduced_tail,Xi_tail := Xi_src_hidden + Xi_nonHilbert + Xi_boundary_history + Xi_transition_inner,NO_CANCELLATION_REDUCTION,False,False,2026-07-06T19:34:46.521483+00:00
+4638,XR4638_3_source_label_zero_branch,"if source-label-forgetting Hilbert-owner branch is signed, Xi_tail := Xi_nonHilbert + Xi_boundary_history + Xi_transition_inner",CONDITIONAL_REDUCTION_ONLY,False,False,2026-07-06T19:34:46.521483+00:00
+4638,XR4638_4_R10_gate,|Xi_src_hidden| + |Xi_nonHilbert| + |Xi_boundary_history| + |Xi_transition_inner| <= alpha_bound(lambda_mem),R10_GATE_REDUCED_TO_FOUR_COMPONENTS,False,False,2026-07-06T19:34:46.521483+00:00

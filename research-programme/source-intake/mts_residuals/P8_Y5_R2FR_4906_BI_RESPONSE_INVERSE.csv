@@ -1,0 +1,7 @@
+quantity,inverse_map,derivation_residual,positivity_condition,valid_for_claim,timestamp_utc
+A2,A2=1/mu_lens,0,mu_lens>0,False,2026-07-11T22:34:36.707441+00:00
+A0,A0=1/(4 mu_lens-3 mu_dyn),0,4 mu_lens-3 mu_dyn>0,False,2026-07-11T22:34:36.707441+00:00
+F_R,(-4*mu_L + 3*mu_d + 1)/(12*k2*lP2*(4*mu_L - 3*mu_d)),0,inherits A0 pole condition,False,2026-07-11T22:34:36.707441+00:00
+F_C,(mu_L - 1)/(4*k2*lP2*mu_L),0,inherits A2 pole condition,False,2026-07-11T22:34:36.707441+00:00
+no_slip,mu_lens=mu_dyn implies A0=A2 and F_C=-3F_R,0,mu_dyn>0,False,2026-07-11T22:34:36.707441+00:00
+conformal_scalar,mu_lens=1; eta=2/mu_dyn-1,0,metric-only scalar equivalent requires mu_dyn<4/3,False,2026-07-11T22:34:36.707441+00:00

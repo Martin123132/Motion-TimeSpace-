@@ -1,0 +1,12 @@
+row_id,identity,meaning,status,valid_for_claim,timestamp_utc
+MSC4855_0_energy_density,rho_EM=Q_c^2/(32 pi^2 r^4),canonical radial electric energy density,EXACT_MINIMAL_EINSTEIN_MAXWELL,False,2026-07-09T22:36:08+00:00
+MSC4855_1_exterior_energy,"E_EM,out(R)/c^2=Q_c^2/(8 pi c^2 R)=c^2 q^2/(2 G_cal R)",energy mass outside a sphere,EXACT_MINIMAL_EINSTEIN_MAXWELL,False,2026-07-09T22:36:08+00:00
+MSC4855_2_MS,M_MS(R)=M_ADM-c^2 q^2/(2 G_cal R),Misner-Sharp mass excludes the exterior field energy,EXACT_MINIMAL_EINSTEIN_MAXWELL,False,2026-07-09T22:36:08+00:00
+MSC4855_3_Komar,M_K(R)=M_ADM-c^2 q^2/(G_cal R),finite-radius Komar mass carries twice the exterior Maxwell energy because T_EM=0 and stress gravitates,EXACT_MINIMAL_EINSTEIN_MAXWELL,False,2026-07-09T22:36:08+00:00
+MSC4855_4_infinity,lim_R->infinity M_MS(R)=lim_R->infinity M_K(R)=M_ADM,all definitions agree at the asymptotic charge,EXACT_MINIMAL_EINSTEIN_MAXWELL,False,2026-07-09T22:36:08+00:00
+MSC4855_5_no_double_count,M_ADM already contains matter+internal EM+exterior EM+binding+support,"adding E_EM,out again after fixing the 1/r ADM coefficient double counts field energy",EXACT_MINIMAL_EINSTEIN_MAXWELL,False,2026-07-09T22:36:08+00:00
+MSC4855_6_closed_neutral,spherical nonrotating Q_c=0 exterior has F=0; internal EM/binding remains inside M_ADM,neutral no-exterior-multipole branch is Schwarzschild without erasing internal electromagnetic mass,EXACT_MINIMAL_EINSTEIN_MAXWELL,False,2026-07-09T22:36:08+00:00
+MSC4855_7_inner_boundary,horizon or excised inner boundaries add their own Noether/Komar term,the volume formula is not used across an omitted horizon without its boundary charge,EXACT_MINIMAL_EINSTEIN_MAXWELL,False,2026-07-09T22:36:08+00:00
+MSC4855_smoke_R5,R=5; M_MS=0.998; M_K=0.996,M-M_MS=0.002; M-M_K=0.004=2 E_out; M_K=2 M_MS-M,PASS,False,2026-07-09T22:36:08+00:00
+MSC4855_smoke_R10,R=10; M_MS=0.999; M_K=0.998,M-M_MS=0.001; M-M_K=0.002=2 E_out; M_K=2 M_MS-M,PASS,False,2026-07-09T22:36:08+00:00
+MSC4855_smoke_R50,R=50; M_MS=0.9998; M_K=0.9996,M-M_MS=0.0002; M-M_K=0.0004=2 E_out; M_K=2 M_MS-M,PASS,False,2026-07-09T22:36:08+00:00

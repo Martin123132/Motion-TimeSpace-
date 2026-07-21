@@ -1,0 +1,7 @@
+checkpoint,pack_id,quantity,formula_or_role,required_inputs,current_status,valid_for_claim,timestamp_utc
+4764,DB4764_0_M0,M_0,baseline same-frame Hamiltonian/Hilbert denominator,H_tau[S_outer]; H_ref; tau_*; e_*; surface family; units,MISSING_SOURCE_BACKED_BASELINE_DENOMINATOR,False,2026-07-08T02:37:33+00:00
+4764,DB4764_1_epsilon_abs,epsilon_abs,(|D_vH_tau|+|D_vH_ref|+|E_symp|+|E_ref|+|E_frame|+|E_mask|)/M_0,drift components and M_0,MISSING_DENOMINATOR_DRIFT_COMPONENT_VALUES,False,2026-07-08T02:37:33+00:00
+4764,DB4764_2_Mlower,M_lower,M_0(1-epsilon_abs),"M_0>0, 0<=epsilon_abs<1, same-frame units",MISSING_POSITIVE_LOWER_BOUND,False,2026-07-08T02:37:33+00:00
+4764,DB4764_3_PiM_norm,P_M_bound=||Pi_M^H||,operator norm of fixed mass/source projector,"source vector norm, projector definition, units ledger",MISSING_PROJECTOR_OPERATOR_NORM,False,2026-07-08T02:37:33+00:00
+4764,DB4764_4_Ecomm,E_PiM_comm,"bound for [D_v,Pi_M]Q_tot or [d,Pi_M]J_H",commutator theorem-zero or numeric residual,MISSING_PROJECTOR_COMMUTATOR_ZERO_OR_BOUND,False,2026-07-08T02:37:33+00:00
+4764,DB4764_5_score_gate,Qbar_denominator_gate,"score-ready iff M_lower>0, P_M_bound finite, E_PiM_comm zero/bounded, source paths exist",all DB4764 rows,CLAIM_BLOCKED,False,2026-07-08T02:37:33+00:00

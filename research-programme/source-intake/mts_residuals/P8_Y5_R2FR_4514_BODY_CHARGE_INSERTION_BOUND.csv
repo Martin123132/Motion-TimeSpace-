@@ -1,0 +1,7 @@
+bound_id,quantity,formula,required_inputs,current_status,valid_for_claim
+BCB4514_0_density,rho_mem,rho_mem = B_mem_eff R_obs + C_mem T + J_mem,B_mem_eff vector; R_obs profile; C_mem; T profile; J_mem; units; source paths,STRUCTURE_READY_VALUES_MISSING,False
+BCB4514_1_density_abs,|rho_mem|,|rho_mem| <= |B_mem_eff||R_obs| + |C_mem||T| + |J_mem|,component absolute bounds and no-cancellation policy,NO_CANCELLATION_BOUND_DERIVED,False
+BCB4514_2_body_charge,Q_mem0,Q_mem0=4*pi int_0^R dr r^2 rho_mem(r) sinh(r/lambda_mem)/(r/lambda_mem)+Q_boundary_mem,lambda_mem=sqrt(Z_mem/M2_mem); body profile; Q_boundary_mem,IMPORTED_FROM_4506_VALUES_MISSING,False
+BCB4514_3_amplitude,A_mem,|A_mem| <= [exp(R_body/lambda_mem) int_body (|B_mem_eff||R_obs|+|C_mem||T|+|J_mem|) dV + |Q_boundary_mem|]/(4*pi |Z_mem|),Z_mem; M2_mem; lambda_mem; R_body; R_obs/T/J profiles; Q_boundary_mem; screening,FINITE_BODY_CHARGE_BOUND_DERIVED_INPUTS_MISSING,False
+BCB4514_4_nohair,delta_m local silence,positive L_mem plus B_mem_eff=C_mem=J_mem=Q_boundary_mem=0 => delta_m=0 and A_mem=0,positive Z_mem/M2_mem; zero-mode removal; all source components zero in same branch,EXACT_CONDITIONAL_THEOREM_NOT_LIVE_SIGNED,False
+BCB4514_5_arena,E_mem[arena],E_mem[arena] <= tau_mem_arena |A_mem| + source-normalization transfer terms,tau_R10; tau_PPN; tau_clock; tau_orbital; same-frame normalization,MISSING_ARENA_PROJECTION,False

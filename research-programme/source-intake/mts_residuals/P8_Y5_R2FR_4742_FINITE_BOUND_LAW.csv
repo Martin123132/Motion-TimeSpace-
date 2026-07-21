@@ -1,0 +1,6 @@
+checkpoint,bound_id,formula,units,meaning,source_status,score_ready,valid_for_claim,timestamp_utc
+4742,FB4742_0_multiplier_amplitude,A_m := ||m||/a_ref <= sqrt(C_zeroMode^2 + (C_Dadj^2 + C_boundary)/lambda_1^adj),dimensionless,Derived source-amplitude law for owner multipliers.,DERIVED_SYMBOLIC_NONNUMERIC,False,False,2026-07-08T00:05:07+00:00
+4742,FB4742_1_exact_constraint_case,if C_Dadj=0 and C_boundary=0 then A_m <= C_zeroMode,dimensionless,"If the equations and boundary are exact, only the kernel projection remains.",DERIVED_SYMBOLIC_NONNUMERIC,False,False,2026-07-08T00:05:07+00:00
+4742,FB4742_2_zero_kernel_case,if C_zeroMode=0 also then A_m=0,dimensionless,This is the clean local-suppression theorem.,DERIVED_SYMBOLIC_NONNUMERIC,False,False,2026-07-08T00:05:07+00:00
+4742,FB4742_3_response_vector,C_res <= Pi_owner*A_m + Pi_Delta*C_DeltaK_div + Pi_RI*C_TF_RI + Pi_domain*C_domain + Pi_readout*C_readout,dimensionless,Residual response is now bounded through the multiplier amplitude plus already named finite terms.,DERIVED_SYMBOLIC_NONNUMERIC,False,False,2026-07-08T00:05:07+00:00
+4742,FB4742_4_threshold_gate,C_res <= 4.212667126774669e-17,dimensionless,Source-backed transition threshold remains the scoring gate; current rows are not score-ready.,DERIVED_SYMBOLIC_NONNUMERIC,False,False,2026-07-08T00:05:07+00:00

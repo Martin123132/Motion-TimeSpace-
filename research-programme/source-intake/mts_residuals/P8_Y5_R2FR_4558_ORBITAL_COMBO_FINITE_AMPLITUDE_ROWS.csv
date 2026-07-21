@@ -1,0 +1,7 @@
+row_id,channel,exact_requirement,numeric_value,units,status,valid_for_claim
+OF4558_0_master_no_cancellation,orbital gamma-beta combo total retained channel,"|P_((2+2gamma-beta)/3)-1 := K_((2+2gamma-beta)/3)-1 S_static|*epsilon_U^2 + |Q_((2+2gamma-beta)/3)-1 := K_((2+2gamma-beta)/3)-1 B_boundary,((2+2gamma-beta)/3)-1| + |R_higher_((2+2gamma-beta)/3)-1| <= 4.6666666666666672e-05 dimensionless",4.6666666666666672e-05,dimensionless,fallback_if_private_zero_scope_fails,False
+OF4558_1_component_combo_bound,gamma/beta residual components,2|gamma-1| + |beta-1| <= 3 B_orb if no cancellation is allowed,1.4000000000000001e-04,dimensionless,finite_component_budget_nonclaim,False
+OF4558_2_delta_gamma_if_beta_zero,gamma-1,|gamma-1| <= 3 B_orb/2 if beta-1 and all other terms are zero,7.0000000000000007e-05,dimensionless,finite_gamma_budget_nonclaim,False
+OF4558_3_delta_beta_if_gamma_zero,beta-1,|beta-1| <= 3 B_orb if gamma-1 and all other terms are zero,1.4000000000000001e-04,dimensionless,finite_beta_budget_nonclaim,False
+OF4558_4_source_product_if_boundary_zero,P_((2+2gamma-beta)/3)-1,|P_orb| <= B_orb/epsilon_U^2 if boundary and higher terms are zero,7.5346165570953197e+09,dimensionless effective product,finite_source_product_budget_nonclaim,False
+OF4558_5_boundary_plus_higher_half_budget,Q_orb + R_higher_orb,|Q_orb| + |R_higher_orb| <= B_orb/2 under equal split,2.3333333333333336e-05,dimensionless,finite_boundary_higher_budget_nonclaim,False

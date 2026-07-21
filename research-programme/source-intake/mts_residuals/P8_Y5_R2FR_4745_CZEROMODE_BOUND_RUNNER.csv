@@ -1,0 +1,5 @@
+checkpoint,bound_id,formula,meaning,status,score_ready,valid_for_claim,timestamp_utc
+4745,CZG4745_0_static_exact_case,if STATIC_PPN_ELLIPTIC_SLICE_ONLY and DN gate passes and C_phys_kernel=0 then C_zeroMode=0,Exact static/local-test kernel kill condition.,CONDITIONAL_EXACT,False,False,2026-07-08T00:19:28+00:00
+4745,CZG4745_1_full_dynamic_case,"if Lorentzian branch only then C_zeroMode_dynamic is bounded by hyperbolic energy data, not set to zero",Prevents smuggling elliptic logic into dynamical spacetime.,BOUND_REQUIRED,False,False,2026-07-08T00:19:28+00:00
+4745,CZG4745_2_finite_runner,C_zeroMode <= C_static_fail + C_phys_kernel + C_TT_kernel + C_quar_kernel + C_hyp_energy,Finite fallback if any gate remains unsigned.,NOT_SCORE_READY,False,False,2026-07-08T00:19:28+00:00
+4745,CZG4745_3_amplitude_insert,A_m <= sqrt(C_zeroMode^2 + (C_Dadj^2 + C_boundary)/lambda_1^adj),Carries the 4745 result back into the 4742 multiplier amplitude law.,SYMBOLIC_NONCLAIM,False,False,2026-07-08T00:19:28+00:00

@@ -1,0 +1,10 @@
+row_id,equation,meaning,status,valid_for_claim,timestamp_utc
+VAR4861_0_public,"S_m=S_m[Psi,A,gHat]; gHat^{mu nu}=g^{mu nu}+p u^mu u^nu","all rods, clocks, photons, free fall and source readout use one metric",SELECTED_PRIVATE_PUBLIC_FRAME,False,2026-07-10T02:15:00+01:00
+VAR4861_1_chain,delta gHat^{mu nu}=delta g^{mu nu}+p(u^mu delta u^nu+u^nu delta u^mu),constant-p chain rule,EXACT,False,2026-07-10T02:15:00+01:00
+VAR4861_2_action,delta S_m=-1/2 int sqrt(-gHat) T_hat_munu delta gHat^{mu nu},definition of public Hilbert stress,EXACT,False,2026-07-10T02:15:00+01:00
+VAR4861_3_base_metric,T_base_munu=(sqrt(-gHat)/sqrt(-g)) T_hat_munu=T_hat_munu/sqrt(1-p),base-variable metric source,EXACT_CHAIN_RULE,False,2026-07-10T02:15:00+01:00
+VAR4861_4_flow,"J_u,nu=p T_hat_munu u^mu/sqrt(1-p)",base-variable induced universal flow source before unit projection,EXACT_CHAIN_RULE,False,2026-07-10T02:15:00+01:00
+VAR4861_5_project,"J_u,nu^perp=p h_nu^lambda T_hat_mulambda u^mu/sqrt(1-p)",normalization multiplier removes the parallel component,EXACT_UNIT_PROJECTOR,False,2026-07-10T02:15:00+01:00
+VAR4861_6_EM,"local EM momentum has T_hat_0i=-P_i, so J_u,i^perp=-p P_i/sqrt(1-p)",reproduces beta_u=-p after common normalization,PASS,False,2026-07-10T02:15:00+01:00
+VAR4861_7_universal,the same J_u^perp applies to every matter momentum flux,apparent EM direct coupling is one component of universal frame variation,SOURCE_UNIVERSALITY,False,2026-07-10T02:15:00+01:00
+VAR4861_8_Ward,nabla_hat_mu T_hat^{mu nu}=0 on matter shell; base metric/flow sources obey the chain-rule diffeomorphism identity,no external source nonconservation is introduced,EXACT_WARD_ROUTE,False,2026-07-10T02:15:00+01:00

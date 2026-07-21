@@ -1,0 +1,11 @@
+clause_id,claim_piece,math_form,current_result,finite_fallback,valid_for_claim,timestamp_utc
+MHZ4829_0_parent_action,parent action owns the source current and observed time flow,"delta L gives J_H[tau], theta, Q_tau, and the same tau before readout",CONTRACT_WRITTEN_NOT_PARENT_SIGNED,parent action covariant source row,False,2026-07-08T11:06:11+00:00
+MHZ4829_1_worldtube_selector,compact source worldtube is selected by Hilbert support,W_source := closure(supp J_H[tau]) with S_outer linking W_source,FORMAL_SELECTOR_ONLY,Delta_worldtube_domain row,False,2026-07-08T11:06:11+00:00
+MHZ4829_2_same_frame_measure,"source, charge, clock, and readout share one observed frame",tau_source=tau_charge=tau_clock=tau_readout and e_obs is fixed once,FAIL_OPEN,Delta_frame_source row,False,2026-07-08T11:06:11+00:00
+MHZ4829_3_Htau_integrable,Hamiltonian variation is integrable on the selected branch,delta H_tau = integral_S(delta Q_tau - i_tau theta) has zero field-space curl,NOT_DERIVED,delta_H_tau_nonintegrable row,False,2026-07-08T11:06:11+00:00
+MHZ4829_4_Href_lock,reference subtraction cannot absorb source calibration,H_ref is branch-selected and derivative-silent,NOT_DERIVED,H_ref_shift row,False,2026-07-08T11:06:11+00:00
+MHZ4829_5_MHref_denominator,positive source denominator is parent-owned,"M_H_ref := H_tau[S_outer] - H_ref > 0, not bare mass or orbital GM",KEY_BLOCKER,first M_H_ref row,False,2026-07-08T11:06:11+00:00
+MHZ4829_6_PiM_Hamiltonian_map,Pi_M is the Hamiltonian mass-charge map,Pi_M J_H matches the same Q_tau source channel,NOT_PARENT_SIGNED,PiM/Hamiltonian map certificate,False,2026-07-08T11:06:11+00:00
+MHZ4829_7_boundary_reference_lock,exact/boundary/symplectic terms are zero or retained,"B_zero_flux, Delta_symp and H_ref_shift are owned before residual scoring",FAIL_OPEN,boundary/reference residual rows,False,2026-07-08T11:06:11+00:00
+MHZ4829_8_coupling_descent,matter coupling descends without hidden readout coefficients,"S_matter = Sbar[q(Phi), Psi, theta] with no representative leakage",NOT_SIGNED,coupling_residual row,False,2026-07-08T11:06:11+00:00
+MHZ4829_9_anti_circularity,"no bare mass, measured GM, reference-only zero, or cancellation",denominator and numerator must be source-backed before claims,POLICY_GUARD,forbidden-source guard,False,2026-07-08T11:06:11+00:00

@@ -1,0 +1,6 @@
+checkpoint,product_id,formula,units,status,valid_for_claim,timestamp_utc
+4761,IP4761_0_product_definition,"I_mem^ST(lambda_mem)=Qbar_mem,H qbar_mem,T/(4*pi Z_mem G_N M_H_ref m_T)",dimensionless,DERIVED_CONDITIONAL,False,2026-07-08T02:18:48+00:00
+4761,IP4761_1_zero_gate,"Qbar_mem,H=0 or qbar_mem,T=0 => I_mem^ST=0",dimensionless,EXACT_IF_SAME_BRANCH,False,2026-07-08T02:18:48+00:00
+4761,IP4761_2_abs_bound,"|I_mem^ST| <= |Qbar_mem,H|_abs |qbar_mem,T|_abs/(4*pi |Z_mem| G_N M_H_ref m_T)",dimensionless,BOUND_LAW_DERIVED_VALUES_MISSING,False,2026-07-08T02:18:48+00:00
+4761,IP4761_3_EGamma_insert,"|E_Gamma| <= |J_00^Gamma c_Gamma| A_mem + |tensor_perp|, with A_mem sourced by I_mem^ST/profile rows",E00_profile_units,PROFILE_INSERT_READY_NONCLAIM,False,2026-07-08T02:18:48+00:00
+4761,IP4761_4_no_G_absorption,do not absorb I_mem^ST or E_Gamma into fitted G_N/GM,control,GUARD_ACTIVE,False,2026-07-08T02:18:48+00:00

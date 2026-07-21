@@ -1,0 +1,7 @@
+blocker_id,symbol,needed_for,status,next_action,valid_for_claim
+BLOCK4548_0_Dloc,D_loc,epsilon_U = sup_Dloc U_B,MISSING_NAMED_TEST_DOMAIN,"define the exact local exterior domain for R10/PPN/clocks/orbits, with transition shell handling",False
+BLOCK4548_1_Bmin,B_min,epsilon_U <= 1/(1+exp[(B_min-B_*)/Delta_B]),MISSING_DOMAIN_INFIMUM,"source or compute inf_Dloc B_env from the selected domain, not a single point",False
+BLOCK4548_2_Bstar_DeltaB,"B_*, Delta_B",logistic range numeric value,EXAMPLE_VALUES_ONLY_NOT_PARENT_DERIVED,derive threshold/width from parent coarse-graining law or freeze as explicit EFT inputs,False
+BLOCK4548_3_Sstatic,S_static,B_static = S_static epsilon_U^2 + B_boundary + O(epsilon_U^3),MISSING_COEFFICIENT_PRODUCTS,source C_H A_1 and D_m C_lap_m/L_B^2 or replace with parent zero theorem,False
+BLOCK4548_4_Kernels,K_a,Delta O_a = K_a B_static,MISSING_ARENA_PROJECTION_KERNELS,derive or source first real PPN/R10 projection kernel row,False
+BLOCK4548_5_Boundary,"B_boundary,a",static PPN vector/shear and R10/channel residuals,MISSING_BOUNDARY_ZERO_OR_BOUND,prove boundary no-hair for retained static channels or add numeric amplitude rows,False

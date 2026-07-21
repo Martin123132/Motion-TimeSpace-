@@ -1,0 +1,11 @@
+validation_id,status,detail
+VAL4524_00_sources,PASS,all source paths exist and source needles are found
+VAL4524_01_live_runner,PASS,"{""R10_pass_for_claim"": false, ""blocked_or_failed_rows"": 1, ""bound_curve"": ""source-intake/local_bounds/R10_alpha_lambda_bound_curve_DIGITIZED.csv"", ""bound_rows"": 2, ""claim_allowed"": false, ""comparison_rows"": 1, ""generated_at_utc"": ""2026-07-06T10:13:06.299093+00:00"", ""mts_curve"": ""source-intake/mts_residuals/R10_alpha_lambda_curve_MTS_source_normalization.csv"", ""mts_rows"": 2, ""output_dir"": ""runs/4524-first-finite-residual-alpha-smoke-runner/live_placeholder_results"", ""passed_rows"": 0, ""valid_bound_rows"": 0, ""valid_mts_rows"": 0}"
+VAL4524_02_toy_runner,PASS,"{""R10_pass_for_claim"": false, ""blocked_or_failed_rows"": 1, ""bound_curve"": ""runs/4524-first-finite-residual-alpha-smoke-runner/inputs/toy_R10_alpha_bound_curve_interpolation_fail_NONCLAIM.csv"", ""bound_rows"": 2, ""claim_allowed"": false, ""comparison_rows"": 1, ""generated_at_utc"": ""2026-07-06T10:13:06.352491+00:00"", ""mts_curve"": ""runs/4524-first-finite-residual-alpha-smoke-runner/inputs/toy_MTS_alpha_curve_interpolation_fail_NONCLAIM.csv"", ""mts_rows"": 1, ""output_dir"": ""runs/4524-first-finite-residual-alpha-smoke-runner/toy_interpolation_fail_results"", ""passed_rows"": 0, ""valid_bound_rows"": 2, ""valid_mts_rows"": 1}"
+VAL4524_03_law,PASS,finite residual alpha bridge row present
+VAL4524_04_parent_Z,PASS,parent Z action signature hunt row present
+VAL4524_05_claims_blocked,PASS,all claim gates remain blocked
+VAL4524_06_csv_parse,PASS,all generated CSV files parse and have rows
+VAL4524_07_next_target,PASS,4525-Y5-R2FR-parent-Z-algebraic-action-derivation-or-source-normalized-first-coefficient-fill.md
+VAL4524_08_pycache_absent,PASS,scripts __pycache__ absent after cleanup
+VAL4524_OVERALL,PASS,4524 finite residual alpha smoke runner

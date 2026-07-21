@@ -1,0 +1,6 @@
+checkpoint,law_id,rule,meaning,claim_allowed,valid_for_claim,timestamp_utc
+4786,ZPL4786_0_same_branch,all zero components must live in the same parent/source-profile branch,prevents mixing private EM zero with unrelated boundary assumptions,False,False,2026-07-08T05:13:19+00:00
+4786,ZPL4786_1_exact_or_bound,"each residual component is either zero-certified, numerically bounded, or explicitly missing",no silent closure of the residual radius,False,False,2026-07-08T05:13:19+00:00
+4786,ZPL4786_2_partial_blocks,a partial zero certificate does not unlock rho_H/M_lower,profile integral plus missing residual components still blocks,False,False,2026-07-08T05:13:19+00:00
+4786,ZPL4786_3_openEM_kappa,fixed EM/Poynting and private kappa drift can zero their own components only inside their signed branch,keeps useful partial progress without overclaiming,False,False,2026-07-08T05:13:19+00:00
+4786,ZPL4786_4_firewall,post-fit residual cancellation cannot be used as a zero certificate,blocks fitted-GM/readout laundering,False,False,2026-07-08T05:13:19+00:00

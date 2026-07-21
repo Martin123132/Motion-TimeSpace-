@@ -1,0 +1,6 @@
+checkpoint,law_id,rule,meaning,claim_allowed,valid_for_claim,timestamp_utc
+4787,CTL4787_0_Ttotal,"T_total(n,n)=rho_rest c^2+u_internal+u_EM+u_rad",minimal controlled profile source density,False,False,2026-07-08T05:19:39+00:00
+4787,CTL4787_1_volume,"rho_H(W)=int_W T_total(n,n)dV/c^2",turns controlled local energy density into the profile integral,False,False,2026-07-08T05:19:39+00:00
+4787,CTL4787_2_pressure,"pressure/stress is reported but not hidden inside rho_H unless it enters T(n,n)",keeps PPN pressure/stress effects separate,False,False,2026-07-08T05:19:39+00:00
+4787,CTL4787_3_poynting,u_EM is Hilbert Maxwell energy; radiative Poynting is boundary/open_EM residual,prevents double-counting EM flow,False,False,2026-07-08T05:19:39+00:00
+4787,CTL4787_4_firewall,"GM/PPN/clock/R10 readouts cannot set rho_rest, u_EM, volume, or normalization",keeps controlled source upstream of tests,False,False,2026-07-08T05:19:39+00:00

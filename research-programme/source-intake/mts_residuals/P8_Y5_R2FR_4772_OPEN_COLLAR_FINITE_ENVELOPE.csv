@@ -1,0 +1,6 @@
+checkpoint,envelope_id,quantity,formula,meaning,status,valid_for_claim,timestamp_utc
+4772,OCE4772_0_lift,E_lift_boundary,|int_partialW Theta_m(delta_v psi)|,matter lift symplectic boundary flux,VALUE_NEEDED_IF_OPEN,False,2026-07-08T03:28:35+00:00
+4772,OCE4772_1_poynting,E_Poynting_wall,|dU_EM/dt|+|int_W J.E dV|+|Phi_incoming|+|Phi_apparatus|,open/radiative/nonstationary EM wall flux,VALUE_NEEDED_IF_OPEN,False,2026-07-08T03:28:35+00:00
+4772,OCE4772_2_hamiltonian_corner,E_boundary_flux,|F_rad|+|B_Ham_corner|+|B_normal_momentum|+|B_app_support|,Hamiltonian/corner/radiative/non-scalar normal flux,VALUE_NEEDED_IF_OPEN,False,2026-07-08T03:28:35+00:00
+4772,OCE4772_3_total,E_boundary_total_4772,|int_partialW Theta_m(delta_v psi)|+|dU_EM/dt|+|int_W J.E dV|+|Phi_incoming|+|Phi_apparatus|+|F_rad|+|B_Ham_corner|+|B_normal_momentum|+|B_app_support|,no-cancellation finite open-collar envelope,FINITE_FALLBACK_TEMPLATE,False,2026-07-08T03:28:35+00:00
+4772,OCE4772_4_score_policy,boundary score policy,zero candidate can be used only after a source collar instance signs CCT4772_0; otherwise use OCE4772_3,prevents branch smuggling,POLICY_ROW,False,2026-07-08T03:28:35+00:00

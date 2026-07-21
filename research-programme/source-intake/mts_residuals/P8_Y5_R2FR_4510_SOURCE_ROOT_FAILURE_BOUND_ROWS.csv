@@ -1,0 +1,4 @@
+bound_id,quantity,formula,required_inputs,status,valid_for_claim
+SRB4510_0_offroot_F,F(m_L),|F(m_L)| <= |F(m_*)| + |F_m(m_*)| Delta_m + 1/2 |F_2| Delta_m^2 + O(Delta_m^3),F(m_*);F_m(m_*);F_2;Delta_m;remainder bound,FINITE_FALLBACK_IF_SOURCE_ROOT_UNSIGNED,False
+SRB4510_1_offroot_Fm,F_m(m_L),|F_m(m_L)| <= |F_m(m_*)| + |F_2| Delta_m + 1/2 |F_3| Delta_m^2 + O(Delta_m^3),F_m(m_*);F_2;F_3;Delta_m;remainder bound,FINITE_FALLBACK_IF_BRANCH_LOCK_IS_ONLY_APPROXIMATE,False
+SRB4510_2_Lcg_chain,B_Weyl_Lcg_chain,"|B_Weyl_Lcg| <= 1/2 L_cg^-3 (|F_m(m_L)||W_L| + |F(m_L)||W_L,m|)","L_cg;F/F_m offroot bounds;W_L;W_L,m",INSERTABLE_IN_4509_BWEYL_BOUND,False

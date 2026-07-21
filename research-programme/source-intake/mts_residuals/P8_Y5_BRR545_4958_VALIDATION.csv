@@ -1,0 +1,32 @@
+check_id,requirement,expected,actual,passed,validation_marker
+VAL4958_00_research,research runner completes,0,0,True,MTS_4958_INDEPENDENT_VALIDATION
+VAL4958_01_paths,all output and synchronized document paths exist,[],[],True,MTS_4958_INDEPENDENT_VALIDATION
+VAL4958_02_compile,research and validator compile without bytecode output,[],[],True,MTS_4958_INDEPENDENT_VALIDATION
+VAL4958_03_marker,all evidence uses one checkpoint marker,MTS_4958_ESSENTIAL_PX_SIXPOINT_TRAJECTORY,MTS_4958_ESSENTIAL_PX_SIXPOINT_TRAJECTORY,True,MTS_4958_INDEPENDENT_VALIDATION
+VAL4958_04_nonclaim,all generated rows remain private nonclaim,True,True,True,MTS_4958_INDEPENDENT_VALIDATION
+VAL4958_05_source_hashes,all locked parent hashes independently recompute,[],[],True,MTS_4958_INDEPENDENT_VALIDATION
+VAL4958_06_source_clauses,all seven source interpretation clauses pass,7 true,"{'4957_trajectory': True, 'O1_unique_six_scalar': True, 'basis_nonredundant': True, 'lower_quotient': True, 'standard_beta_ctilde': True, 'standard_beta_d': True, 'threshold_definition': True}",True,MTS_4958_INDEPENDENT_VALIDATION
+VAL4958_07_quotient_rows,all six quotient derivation rows pass,6 passing rows,6,True,MTS_4958_INDEPENDENT_VALIDATION
+VAL4958_08_symbolic_contract,symbolic quotient and minimal-essential contract are exact,True,True,True,MTS_4958_INDEPENDENT_VALIDATION
+VAL4958_09_calibration_shape,four gravity values calibrate c and e essential sources,8 passing rows,8,True,MTS_4958_INDEPENDENT_VALIDATION
+VAL4958_10_lower_source,minimal-essential flow reproduces 16g^2 and the X3 origin source,relative error <3e-15,2.1175823681357508e-16,True,MTS_4958_INDEPENDENT_VALIDATION
+VAL4958_11_fixed_shape,essential combined roots exist at N=2 through N=8 in both schemes,14 roots,14,True,MTS_4958_INDEPENDENT_VALIDATION
+VAL4958_12_fixed_residual,every essential fixed-point scaled residual is below 1e-8,<1e-8,9.905286023387187e-14,True,MTS_4958_INDEPENDENT_VALIDATION
+VAL4958_13_fixed_coordinates,both N8 essential fixed points reproduce,[],[],True,MTS_4958_INDEPENDENT_VALIDATION
+VAL4958_14_stability,N6 and N8 in both schemes have one GR-connected relevant mode,4 unique modes,[],True,MTS_4958_INDEPENDENT_VALIDATION
+VAL4958_15_trajectory_shape,four essential trajectories each contain 121 samples,484,484,True,MTS_4958_INDEPENDENT_VALIDATION
+VAL4958_16_trajectory_endpoint,all essential trajectories monotonically reach g=1e-10 in the local chart,[],[],True,MTS_4958_INDEPENDENT_VALIDATION
+VAL4958_17_order_convergence,all five essential infrared coordinates converge in both schemes,10 rows below 1e-3,3.091929210098844e-07,True,MTS_4958_INDEPENDENT_VALIDATION
+VAL4958_18_amplitude_shape,four invariant scalar subamplitudes retain the full-gravity block,4 scoped rows,4,True,MTS_4958_INDEPENDENT_VALIDATION
+VAL4958_19_scalar_kernel,essential scalar six-point kernel is finite and scheme/order stable,5.8e-64 to 5.9e-64; spread<1e-6,"{'minimum': 5.81182279137253e-64, 'maximum': 5.811822875698726e-64}",True,MTS_4958_INDEPENDENT_VALIDATION
+VAL4958_20_residual_gate,O2 O3 O4 remain explicit blockers while O1 and O5 are scoped,"['O2', 'O3', 'O4']","['O2=X(nabla_nabla_psi)^2', 'O3=C^3', 'O4=C^2 X']",True,MTS_4958_INDEPENDENT_VALIDATION
+VAL4958_21_decisions,all nine essential-amplitude decisions are present,"['4947_LOCAL_GR_NEWTON_MAXWELL_RETAINED', 'ESSENTIAL_COMBINED_FIXED_POINTS_RETAINED', 'ESSENTIAL_GR_CONNECTED_TRAJECTORY_RETAINED', 'ESSENTIAL_SCALAR_SIXPOINT_SUBAMPLITUDE_DERIVED', 'FULL_GRAVITY_SIXPOINT_PROJECTOR_OPEN', 'FULL_MTS_AND_GALAXY_RATE_BLOCKED', 'FUNCTIONAL_MINIMAL_ESSENTIAL_KERNEL_DERIVED', 'LOWER_ESSENTIAL_SOURCE_REPRODUCED', 'SIX_DERIVATIVE_ESSENTIAL_QUOTIENT_DERIVED']","['4947_LOCAL_GR_NEWTON_MAXWELL_RETAINED', 'ESSENTIAL_COMBINED_FIXED_POINTS_RETAINED', 'ESSENTIAL_GR_CONNECTED_TRAJECTORY_RETAINED', 'ESSENTIAL_SCALAR_SIXPOINT_SUBAMPLITUDE_DERIVED', 'FULL_GRAVITY_SIXPOINT_PROJECTOR_OPEN', 'FULL_MTS_AND_GALAXY_RATE_BLOCKED', 'FUNCTIONAL_MINIMAL_ESSENTIAL_KERNEL_DERIVED', 'LOWER_ESSENTIAL_SOURCE_REPRODUCED', 'SIX_DERIVATIVE_ESSENTIAL_QUOTIENT_DERIVED']",True,MTS_4958_INDEPENDENT_VALIDATION
+VAL4958_22_result_gates,result retains local success and blocks complete-amplitude promotion,True,"{'all_essential_trajectories_reach_IR': True, 'essential_IR_order_convergence': True, 'essential_combined_fixed_points': True, 'essential_scalar_24_subamplitude': 'DERIVED', 'full_MTS': False, 'full_gravity_sixpoint': 'OPEN_O2_O3_O4_PROJECTORS', 'galaxy_rate': False, 'local_GR_Newton_Maxwell_4947': 'RETAINED', 'lower_essential_source_16g2': 'REPRODUCED', 'minimal_essential_functional_kernel': 'DERIVED', 'one_GR_connected_relevant_direction': True, 'six_derivative_essential_quotient': 'DERIVED'}",True,MTS_4958_INDEPENDENT_VALIDATION
+VAL4958_23_documents,checkpoint 4958 is synchronized across every register,True,True,True,MTS_4958_INDEPENDENT_VALIDATION
+VAL4958_24_registry_csv,claim and variable registers parse with unique 4958 rows,True,True,True,MTS_4958_INDEPENDENT_VALIDATION
+VAL4958_25_prohibitions,synchronized prose contains no false promotion marker,[],[],True,MTS_4958_INDEPENDENT_VALIDATION
+VAL4958_26_provenance,provenance records every locked source hash,True,True,True,MTS_4958_INDEPENDENT_VALIDATION
+VAL4958_27_determinism,one full rerun reproduces every evidence-file hash,True,True,True,MTS_4958_INDEPENDENT_VALIDATION
+VAL4958_28_pycache,no script bytecode cache remains,[],[],True,MTS_4958_INDEPENDENT_VALIDATION
+VAL4958_29_hash_report,reproducibility hashes are valid SHA-256 values,three 64-character hashes,"{'research_sha256': '521ffed6f208cf4c0db3fd596643fc0970f34e1050de71ab65e37c44906ff77f', 'result_sha256': '383e13cd13c3e90be22dbf8ad589c756a26cad002f01da4ce151ad262e48ae67', 'checkpoint_sha256': 'd08b8a0ab6a5317c77a23accd34dc46c5ad6a0bc5aa73e0767c8e0aa0edd5f1c'}",True,MTS_4958_INDEPENDENT_VALIDATION
+VAL4958_30_complete,all preceding independent checks pass,True,True,True,MTS_4958_INDEPENDENT_VALIDATION

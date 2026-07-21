@@ -1,0 +1,8 @@
+row_id,equation,meaning,status,valid_for_claim,timestamp_utc
+QV4858_0_variable,W_i=B_i+v_i=u_i^(1),gauge-invariant covariant spatial flow tilt,DERIVED_VARIABLE,False,2026-07-10T00:45:00+01:00
+QV4858_1_action,16piGae L_V=c14 dot(W)^2-c1(partial W)^2+p partial(B)partial(W)+(1-p)(partial B)^2/2,unintegrated transverse quadratic owner in E_i=0 gauge,DERIVED_BY_SECOND_VARIATION,False,2026-07-10T00:45:00+01:00
+QV4858_2_sources,L_source=B_i P_i^T+eta_u S_i^T v_i; P_i^T=Z_A S_i^T; beta_u=eta_u/Z_A,metric and flow sources kept distinct before solving,EXACT_SOURCE_OWNERSHIP,False,2026-07-10T00:45:00+01:00
+QV4858_3_original,L_static=(1-d)(partial B)^2/2-d partial(B)partial(v)-c1(partial v)^2,same action in contravariant-flow variables,EXACT_CHANGE_OF_VARIABLES,False,2026-07-10T00:45:00+01:00
+QV4858_4_matrix,"[-(1-d),d;d,2c1] [Delta B,Delta v]^T=-16piGae[P,beta_u P]^T",stationary transverse source system,EXACT_LINEAR_SYSTEM,False,2026-07-10T00:45:00+01:00
+QV4858_5_det,det=d*p - d - p,finite corridor determinant,PASS,False,2026-07-10T00:45:00+01:00
+QV4858_6_gradient,A_V=(d*p - d - p)/(2*(p - 1))=D/[2(1-p)],matches the published reduced vector gradient coefficient,PASS,False,2026-07-10T00:45:00+01:00

@@ -1,0 +1,5 @@
+contract_id,quantity,formula,required_inputs,claim_status,valid_for_claim,timestamp_utc
+EFB4820_0_lambdaF2,lambdaF2_bound_abs,H_XF2_abs + delta_lambda_rad_abs + delta_lambda_readout_abs,H_XF2_abs; delta_lambda_rad_abs; delta_lambda_readout_abs; source_signed; units_signed; same_branch_signed,missing_live_values,False,2026-07-08T09:39:16+00:00
+EFB4820_1_balpha,b_alpha_bound_abs,2*z_g_abs + lambdaF2_bound_abs,z_g_abs plus EFB4820_0,missing_live_values,False,2026-07-08T09:39:16+00:00
+EFB4820_2_qbarEM,qbar_EM_bound_abs,K_qbar_EM_abs*(b_alpha_bound_abs + C_JQ_abs + C_Hodge_readout_abs + Phi_EM_rad_abs),K_qbar_EM_abs; C_JQ_abs; C_Hodge_readout_abs; Phi_EM_rad_abs; source/units/branch signs,first executable qbar_EM component row staged,False,2026-07-08T09:39:16+00:00
+EFB4820_3_forbidden_shortcuts,anti_circularity_guard,"reject alpha_obs_as_zero, calibration_as_derivation, Poynting double count, bound_as_source, measured-G absorption, GR import",source path and notes must avoid forbidden tokens,active_runner_guard,False,2026-07-08T09:39:16+00:00

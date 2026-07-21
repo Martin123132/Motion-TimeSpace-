@@ -1,0 +1,7 @@
+row_id,equation,meaning,status,valid_for_claim,timestamp_utc
+NORM4863_0_sign_c4,c4<=0 because c1>=c14 in the no-Cherenkov corridor,turns abs(c4) into c1-c14,PROVED_CORRIDOR_SIGN,False,2026-07-10T02:45:00+01:00
+NORM4863_1_sign_c2c4,c2+c4>=0 because c2>=p/2 and c1-c14<=p/2,fixes the quartic first-term norm,PROVED_CORRIDOR_SIGN,False,2026-07-10T02:45:00+01:00
+NORM4863_2_C3,C3=abs(c2)+abs(c3)+abs(c4)=c2+D-c14,sum norm of independent cubic tensor structures,EXACT_OPERATOR_NORM,False,2026-07-10T02:45:00+01:00
+NORM4863_3_C4,C4=abs(c123+c4)+2abs(c4)+c1=c2+D-c14=C3,sum norm of quartic tensor structures,EXACT_OPERATOR_NORM,False,2026-07-10T02:45:00+01:00
+NORM4863_4_bound,C3=C4<=Cbar_op=p(5-3p)/[3(1-p)],uses c2<=2p/[3(1-p)] and D-c14<=p,PROVED_GLOBAL_CEILING,False,2026-07-10T02:45:00+01:00
+NORM4863_5_correction,4862 Lambda_safe used one coefficient ceiling; 4863 uses the sum norm of all independent vertices,multi-operator hard floor supersedes the single-coefficient diagnostic,DISCIPLINE_CORRECTION,False,2026-07-10T02:45:00+01:00

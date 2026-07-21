@@ -1,0 +1,5 @@
+checkpoint,row_id,quantity,formula_or_zero_condition,role,status,valid_for_claim,timestamp_utc
+4766,PWF4766_0_owner,Poynting stress ownership,"S_i=-T_EM(n,e_i) on the public observed-Hodge Maxwell branch",ordinary Poynting flow is counted once inside T_total,EXACT_IDENTITY_CONDITIONAL,False,2026-07-08T02:51:41+00:00
+4766,PWF4766_1_stationary_zero,Phi_wall_Poynting=0,"stationary isolated source collar, time_avg(dU_EM/dt)=0, time_avg(int_W J.E dV)=0, no incoming/background/apparatus flux",no independent Poynting boundary residual,CONDITIONAL_LOCAL_ZERO_NOT_GLOBAL,False,2026-07-08T02:51:41+00:00
+4766,PWF4766_2_wall_flux_bound,Phi_wall_Poynting_abs,|Phi_wall_Poynting| <= |dU_EM/dt| + |int_W J.E dV| + |Phi_incoming| + |Phi_apparatus|,finite open/radiative collar fallback,BOUND_TEMPLATE_READY_VALUES_MISSING,False,2026-07-08T02:51:41+00:00
+4766,PWF4766_3_Qedge_boundary_insert,Q_edge_boundary_abs,|Q_edge_boundary| includes |F_rad| and Phi_wall_Poynting_abs where EM radiation crosses the collar,prevents hiding waves/Poynting in a false shell zero,BOUNDARY_INSERT_READY_NONNUMERIC,False,2026-07-08T02:51:41+00:00

@@ -1,0 +1,10 @@
+row_id,equation,meaning,status,valid_for_claim,timestamp_utc
+GR4858_0_flow_poisson,Delta W_i=16piGae(p-beta_u)P_i^T/D,exact stationary transverse flow equation,EXACT,False,2026-07-10T00:45:00+01:00
+GR4858_1_metric_poisson,Delta B_i=16piGae[1+d(p-beta_u)/D]P_i^T,exact metric shift equation,EXACT,False,2026-07-10T00:45:00+01:00
+GR4858_2_flow_green,W_i(x)=-4Gae(p-beta_u)/D int P_i^T(x')/|x-x'| d3x',Poisson Green solution with isolated boundary condition,EXACT_STATIONARY_GREEN,False,2026-07-10T00:45:00+01:00
+GR4858_3_metric_green,B_i(x)=-4Gae[1+d(p-beta_u)/D]int P_i^T(x')/|x-x'| d3x',metric Green solution,EXACT_STATIONARY_GREEN,False,2026-07-10T00:45:00+01:00
+GR4858_4_calibration,Gae/GN=-(d*p - d - p)/(d + p)=D/(d+p),same Newton calibration derived at 4857,EXACT,False,2026-07-10T00:45:00+01:00
+GR4858_5_metric_ratio,R_B=B/B_GR=(-beta*d + d + p)/(d + p),all inverse kinetic enhancement cancels from the observable metric,PASS,False,2026-07-10T00:45:00+01:00
+GR4858_6_flow_ratio,R_W=W/B_GR=(-beta + p)/(d + p),internal flow can remain enhanced while metric matter response stays finite,PASS,False,2026-07-10T00:45:00+01:00
+GR4858_7_zero_beta,beta_u=0 -> R_B=1 and R_W=p/(d+p),ordinary universally coupled momentum reproduces GR exactly on the PPN-safe surface,EXACT,False,2026-07-10T00:45:00+01:00
+GR4858_8_matching,beta_u=p -> W=0 but R_B=Gae/GN,flow-source cancellation is not the calibrated metric-GR condition,EXACT,False,2026-07-10T00:45:00+01:00

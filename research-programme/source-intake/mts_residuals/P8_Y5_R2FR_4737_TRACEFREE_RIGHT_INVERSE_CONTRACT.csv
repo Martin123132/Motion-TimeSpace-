@@ -1,0 +1,6 @@
+checkpoint,contract_id,condition,meaning,status,valid_for_claim,timestamp_utc
+4737,RINV4737_0_decomposition,K_hat^{mu nu}=R_T^{mu nu}[Gamma_eff]+Delta_K^{mu nu},g_mu_nu R_T^{mu nu}=0 and g_mu_nu Delta_K^{mu nu}=0,required,False,2026-07-07T23:27:10+00:00
+4737,RINV4737_1_divergence_identity,nabla_mu R_T^{mu nu}=nabla^nu Gamma_eff,"must hold as parent identity, not by fitting a local shell profile",required,False,2026-07-07T23:27:10+00:00
+4737,RINV4737_2_residual_bound,"|nabla_mu Delta_K^{mu nu}| <= q_budget or P_metric,loc div Delta_K=0",needed after the right-inverse split,required,False,2026-07-07T23:27:10+00:00
+4737,RINV4737_3_nonlocal_warning,A trace-free right-inverse normally requires an inverse differential operator or boundary/superpotential data.,closure unless parent action supplies it,warning,False,2026-07-07T23:27:10+00:00
+4737,RINV4737_4_source_signature,"Parent action must contain the multiplier, Ward identity, superpotential, or boundary term that generates R_T.",source contract for 4738,next_target,False,2026-07-07T23:27:10+00:00
