@@ -22,7 +22,7 @@ This repository is a public work-in-progress research programme.
 - The numerical value of `G_N` is calibrated once rather than predicted. What is derived is its relation to the massless-pole residue and its universal reuse across local gravitational arenas.
 - Higher-derivative `R^2`, `C^2`, `C^3`, curvature-photon, and hidden-visible residuals remain bounded, matched, or open according to their individual ledgers.
 - The candidate galactic response is not yet the retarded self-energy of the occupied parent motion state. Its amplitude, transition scale, and exponent are not yet derived without source-history input.
-- The latest matched MTS/CDM formation calculation is one resolved realization, not a model-preference result. A frozen paired multi-seed ensemble is required.
+- A frozen 12-seed paired MTS/CDM protocol now exists, with the earlier seed explicitly excluded as a pilot. Only one confirmatory seed is complete; its in-band `q` tie and modest MTS RMSE advantage are a metric split, not a model-preference result. The locked rule forbids preference until all 12 seeds finish.
 - MTS does not yet derive all closure constants, including `B_mem=2/27`.
 - The cosmology branch does not by itself prove the field theory.
 - No claim of ultraviolet completeness, uniqueness of the parent action, or empirical replacement of GR, dark matter, or Lambda-CDM is made.
