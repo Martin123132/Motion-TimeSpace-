@@ -4,13 +4,14 @@
 
 - `README.md` gives the public overview.
 - `CLAIM_CEILING.md` states the current claim boundary.
-- `docs/status/STATUS-2026-07-21.md` gives the current status snapshot.
-- `docs/status/PUBLICATION-NOTES-2026-07-21.md` records the exact update scope and exclusions.
+- `docs/status/STATUS-2026-07-22.md` gives the current status snapshot.
+- `docs/status/PUBLICATION-NOTES-2026-07-22.md` records the exact follow-up scope and exclusions.
 - `docs/theory-gates/LOCAL-GR-NEWTON-GATES.md` gives the main route from MTS toward GR/Newton.
 
 ## Research Programme
 
-- `research-programme/checkpoints/` contains numbered derivation attempts, scorecards, red-team ledgers, and promotion gates. The public sequence currently runs through checkpoint `1191`.
+- `research-programme/checkpoints/` contains numbered derivation attempts, scorecards, red-team ledgers, and promotion gates. The public sequence currently runs through checkpoint `1192`.
+- `research-programme/protocols/1192/` contains the machine-readable checkpoint-1192 freeze record, seed schedule, source hashes, aggregate tables, and compact seed-1 outputs.
 - `research-programme/scripts/` contains the scripts used to generate many checkpoint artifacts.
 - `research-programme/source-intake/mts_residuals/` contains compact CSV/register artifacts used by the residual and theorem-gate workflow.
 
@@ -26,8 +27,9 @@ The July 21 update extends the public record from checkpoint `517` through `1191
 - `research-programme/checkpoints/1189-Y5-R2FR-matched-CDM-formation-baseline-discrimination-gate.md` - matched baseline comparison.
 - `research-programme/checkpoints/1190-Y5-R2FR-mass-gap-continuation-and-spherical-cutoff-discrimination-gate.md` - resolution reversal and cutoff audit.
 - `research-programme/checkpoints/1191-Y5-R2FR-exact-low-mode-shared-isotropic-resolution-discrimination-gate.md` - latest resolved one-seed result.
+- `research-programme/checkpoints/1192-Y5-R2FR-predeclared-paired-high-mode-seed-ensemble.md` - frozen 12-seed protocol and current 1-of-12 nonclaim result.
 
-Public checkpoint filenames use an offset sequence; document titles and generated artifact names retain their original private IDs. The current update maps private `4501–5175` to public `517–1191`.
+Public checkpoint filenames use an offset sequence; document titles and generated artifact names retain their original private IDs. The current published range maps private `4501-5176` to public `517-1192`.
 
 ## Data Policy
 
