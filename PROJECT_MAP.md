@@ -4,32 +4,40 @@
 
 - `README.md` gives the public overview.
 - `CLAIM_CEILING.md` states the current claim boundary.
-- `docs/status/STATUS-2026-07-22.md` gives the current status snapshot.
-- `docs/status/PUBLICATION-NOTES-2026-07-22.md` records the exact follow-up scope and exclusions.
+- `docs/status/STATUS-2026-07-24.md` gives the current status snapshot.
+- `docs/status/PUBLICATION-NOTES-2026-07-24.md` records the exact update scope and exclusions.
 - `docs/theory-gates/LOCAL-GR-NEWTON-GATES.md` gives the main route from MTS toward GR/Newton.
 
 ## Research Programme
 
-- `research-programme/checkpoints/` contains numbered derivation attempts, scorecards, red-team ledgers, and promotion gates. The public sequence currently runs through checkpoint `1192`.
-- `research-programme/protocols/1192/` contains the machine-readable checkpoint-1192 freeze record, seed schedule, source hashes, aggregate tables, and compact seed-1 outputs.
+- `research-programme/checkpoints/` contains numbered derivation attempts, scorecards, red-team ledgers, and promotion gates. The public sequence currently runs through checkpoint `1230`.
+- `research-programme/protocols/1192/` preserves the machine-readable freeze record and now contains the complete compact 12-seed outcome.
 - `research-programme/scripts/` contains the scripts used to generate many checkpoint artifacts.
 - `research-programme/source-intake/mts_residuals/` contains compact CSV/register artifacts used by the residual and theorem-gate workflow.
 
 ## Current Derivation Thread
 
-The July 21 update extends the public record from checkpoint `517` through `1191`. The most useful milestones are:
+The July 24 update refreshes checkpoint `1192` and extends the public record
+through checkpoint `1230`. The most useful new milestones are:
 
-- `research-programme/checkpoints/951-Y5-R2FR-completed-fixed-point-GR-connected-trajectory-and-motion-sector-entry.md` - minimal fixed-point trajectory and actual motion Hessian entry.
-- `research-programme/checkpoints/963-Y5-R2FR-local-GR-Newton-Maxwell-calibration-count-and-universal-source-residue-certificate.md` - one-residue local source theorem.
-- `research-programme/checkpoints/976-Y5-R2FR-integrated-H-soft-BRST-universal-source-theorem-and-local-GR-Newton-Maxwell-promotion-or-parent-field-content-boundary.md` - current weak-local theorem boundary.
-- `research-programme/checkpoints/1164-Y5-R2FR-one-parent-local-GR-galaxy-spectral-response-cog-theorem.md` - one-parent local/galaxy response bridge.
-- `research-programme/checkpoints/1181-Y5-R2FR-baryon-Maxwell-Poynting-assembly-clock-identifiability-and-energy-bound-gate.md` - Poynting/assembly-clock result.
-- `research-programme/checkpoints/1189-Y5-R2FR-matched-CDM-formation-baseline-discrimination-gate.md` - matched baseline comparison.
-- `research-programme/checkpoints/1190-Y5-R2FR-mass-gap-continuation-and-spherical-cutoff-discrimination-gate.md` - resolution reversal and cutoff audit.
-- `research-programme/checkpoints/1191-Y5-R2FR-exact-low-mode-shared-isotropic-resolution-discrimination-gate.md` - latest resolved one-seed result.
-- `research-programme/checkpoints/1192-Y5-R2FR-predeclared-paired-high-mode-seed-ensemble.md` - frozen 12-seed protocol and current 1-of-12 nonclaim result.
+- `research-programme/checkpoints/1192-Y5-R2FR-predeclared-paired-high-mode-seed-ensemble.md` - completed frozen 12-seed metric-split result.
+- `research-programme/checkpoints/1194-Y5-R2FR-exact-2PI-Schur-Ward-Vlasov-subtraction-and-Gaussian-residual-stress-no-go.md` - exact Schur/Ward reduction and Gaussian residual-stress no-go.
+- `research-programme/checkpoints/1203-Y5-R2FR-canonical-local-parent-action-Hessian-source-residue-and-scale-setting-theorem.md` - canonical local action and scale-setting theorem.
+- `research-programme/checkpoints/1204-Y5-R2FR-relational-clock-scalar-no-go-minimal-coframe-parent-and-Fierz-Pauli-selection-theorem.md` - scalar-clock no-go and minimal coframe route.
+- `research-programme/checkpoints/1207-Y5-R2FR-O4-FLRW-tensor-nondegeneracy-order-reduction-and-cosmological-safety-theorem.md` - higher-derivative tensor gate.
+- `research-programme/checkpoints/1211-Y5-R2FR-matched-joint-CMB-informed-parent-refit-and-physical-sound-horizon-gate.md` - matched parent-scalar cosmology robustness fit.
+- `research-programme/checkpoints/1213-Y5-R2FR-universal-gap-cross-arena-compatibility-and-route-separation-theorem.md` - cosmology/galaxy mass-scale route separation.
+- `research-programme/checkpoints/1217-Y5-R2FR-source-complete-coframe-variation-full-PPN-calibration-and-local-state-silence-theorem.md` - source-complete coframe and full PPN result.
+- `research-programme/checkpoints/1219-Y5-R2FR-one-canonical-translation-gauge-parent-action-cross-coupling-and-branch-reduction-theorem.md` - one common parent functional.
+- `research-programme/checkpoints/1224-Y5-R2FR-common-minimal-motion-trajectory-canonical-Z-quotient-absolute-scale-covariance-and-local-GR-selection.md` - common selected motion trajectory.
+- `research-programme/checkpoints/1227-Y5-R2FR-selected-trajectory-exact-GR-Maxwell-consistent-truncation-universal-source-and-matched-GRSM-excess-theorem.md` - exact selected two-derivative GR+SM+Maxwell branch.
+- `research-programme/checkpoints/1228-Y5-R2FR-fresh-crossed-hhh-two-stratum-pilot.md` - first fresh nonclaim crossed-`hhh` coefficient pilot.
+- `research-programme/checkpoints/1229-Y5-R2FR-source-separated-additive-cluster-Cauchy-zero-theorem.md` - exact guarded residue-zero theorem.
+- `research-programme/checkpoints/1230-Y5-R2FR-A00-identical-graviton-permutation-control-variate.md` - current coefficient-free variance-control theorem.
 
-Public checkpoint filenames use an offset sequence; document titles and generated artifact names retain their original private IDs. The current published range maps private `4501-5176` to public `517-1192`.
+Public checkpoint filenames use an offset sequence; document titles and
+generated artifact names retain their original private IDs. The established
+offset is `3984`, so private `5176-5214` maps to public `1192-1230`.
 
 ## Data Policy
 

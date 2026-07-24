@@ -22,6 +22,13 @@ VALIDATION = (
     / "mts_residuals"
     / "P8_Y5_BRR545_5176_VALIDATION.csv"
 )
+SEED_ARTIFACTS = (
+    "COMPLETE.marker",
+    "forward_scores.csv",
+    "phase_diagnostics.csv",
+    "seed_result.json",
+    "status.json",
+)
 
 
 def file_digest(path: Path) -> str:
@@ -95,13 +102,96 @@ def main() -> None:
     )
     record(
         checks,
-        "ensemble_is_incomplete_nonclaim",
-        result["completed_confirmatory_seeds"] == 1
+        "ensemble_is_complete_nonclaim_metric_split",
+        result["completed_confirmatory_seeds"] == 12
         and result["final_confirmatory_seed_count"] == 12
         and result["valid_for_claim"] is False
         and result["verdict"]
-        == "INCOMPLETE_PREDECLARED_ENSEMBLE_NO_PREFERENCE_ALLOWED",
+        == "STATISTICAL_DRAW_OR_METRIC_SPLIT_WITHIN_THIS_LOCKED_FORMATION_GATE",
         result["verdict"],
+    )
+    q_statistics = result["q_statistics"]
+    rmse_statistics = result["RMSE_statistics"]
+    record(
+        checks,
+        "q_metric_has_MTS_directed_nonzero_component",
+        q_statistics["mean"] < 0.0
+        and q_statistics["bootstrap_95_upper"] < 0.0
+        and q_statistics["exact_two_sided_sign_flip_p"] <= 0.05,
+        q_statistics,
+    )
+    record(
+        checks,
+        "RMSE_metric_does_not_select_either_model",
+        rmse_statistics["bootstrap_95_lower"] < 0.0
+        < rmse_statistics["bootstrap_95_upper"]
+        and rmse_statistics["exact_two_sided_sign_flip_p"] > 0.05,
+        rmse_statistics,
+    )
+    record(
+        checks,
+        "joint_outcome_remains_nonpreference",
+        result["MTS_joint_wins"] == 3
+        and result["CDM_joint_wins"] == 0
+        and result["joint_ties_or_splits"] == 9
+        and result["joint_exact_two_sided_sign_p"] > 0.05,
+        {
+            "MTS": result["MTS_joint_wins"],
+            "CDM": result["CDM_joint_wins"],
+            "tie_or_split": result["joint_ties_or_splits"],
+            "p": result["joint_exact_two_sided_sign_p"],
+        },
+    )
+
+    execution_rows = read_csv(PROTOCOL / "seed_execution_status.csv")
+    record(
+        checks,
+        "all_12_seed_status_rows_are_complete_nonclaim",
+        len(execution_rows) == 12
+        and all(
+            row["state"] == "COMPLETE"
+            and row["complete_marker_exists"].lower() == "true"
+            and row["valid_for_claim"].lower() == "false"
+            for row in execution_rows
+        ),
+        len(execution_rows),
+    )
+    score_rows = read_csv(PROTOCOL / "paired_seed_scores.csv")
+    confirmatory_rows = [
+        row
+        for row in score_rows
+        if row["included_in_confirmatory_statistics"].lower() == "true"
+    ]
+    record(
+        checks,
+        "paired_score_table_contains_pilot_plus_12_confirmatory_rows",
+        len(score_rows) == 13
+        and len(confirmatory_rows) == 12
+        and all(row["valid_for_claim"].lower() == "false" for row in score_rows),
+        {"all": len(score_rows), "confirmatory": len(confirmatory_rows)},
+    )
+
+    compact_seed_failures: list[str] = []
+    for row in execution_rows:
+        seed_directory = (
+            PROTOCOL
+            / "seeds"
+            / f"seed_{int(row['seed_index']):02d}_{row['high_mode_seed']}"
+        )
+        for name in SEED_ARTIFACTS:
+            path = seed_directory / name
+            if not path.is_file():
+                compact_seed_failures.append(str(path))
+        result_path = seed_directory / "seed_result.json"
+        if result_path.is_file():
+            seed_result = json.loads(result_path.read_text(encoding="utf-8"))
+            if seed_result.get("valid_for_claim") is not False:
+                compact_seed_failures.append(f"{result_path}:claim")
+    record(
+        checks,
+        "all_12_compact_seed_snapshots_are_present_nonclaim",
+        not compact_seed_failures,
+        compact_seed_failures,
     )
 
     validation_rows = read_csv(VALIDATION)
@@ -117,6 +207,7 @@ def main() -> None:
     report = {
         "checkpoint": 1192,
         "private_checkpoint": 5176,
+        "snapshot_state": "FINAL_12_OF_12_NONCLAIM",
         "passed": not failures,
         "checks": checks,
     }

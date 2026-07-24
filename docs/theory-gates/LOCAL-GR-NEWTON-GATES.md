@@ -2,19 +2,43 @@
 
 The central theory goal is not merely to fit cosmological data. The central gate is whether MTS can reduce to Newtonian gravity and local GR in the same disciplined sense that GR reduces to Newtonian gravity in the weak-field limit.
 
-## Current Weak-Local Result
+## Current Selected Local Result
 
-Checkpoint `976` states the strongest current result. In the declared integrated metric-density `H`, exact-Diff/BRST parent, under the standard one-positive-massless-spin-2 and local two-derivative infrared premises:
+Checkpoint `1227` is the strongest current result. Checkpoints `1204`, `1217`,
+`1219`, and `1224` first make the parent boundary and selected trajectory
+explicit. On
 
-- the `H`-to-Hilbert source map is exact and invertible;
-- the soft-spin-2 species-coupling kernel is one-dimensional, so the leading gravitational residue is universal;
-- field normalization cancels from conserved-source exchange;
-- the selected reflection-even `psi=0` branch has no classical one-scalar source charge;
-- the Einstein equation reduces to Poisson's equation and the inverse-square force;
-- neutral matter follows the same metric geodesics and the leading weak branch has `PPN gamma=beta=1`;
-- Maxwell propagation, Lorentz force, Hilbert stress, and Poynting momentum come from one action and one leading electromagnetic normalization.
+```text
+chi=0,
+nabla chi=0,
+rho_local=rho_0,
+```
 
-This promotes the leading weak-local source chain inside the declared parent. It does not derive that parent field content from motion alone and does not close strong-field or all-state MTS.
+the motion equation, motion stress, and all linear
+metric/photon/visible-motion cross blocks vanish. The complete nonlinear
+two-derivative restriction of the same parent action is therefore
+
+```text
+Gamma_2der =
+ integral d4x e [
+   M_R^2 (R-2 Lambda_cal)/2
+  -F_mn F^mn/4
+ ] + S_visible[e,omega_LC[e],A,Phi_SM].
+```
+
+This is an exact classical consistent truncation at two-derivative order, not
+only a weak-field analogy. It gives:
+
+- Einstein gravity and one universal Hilbert source;
+- Poisson's equation and the inverse-square Newton force;
+- neutral and null geodesics, lensing, and charged Lorentz motion;
+- Maxwell equations, Hilbert stress, and Poynting flux;
+- the full GR PPN vector
+  `(gamma,beta,xi,alpha1,alpha2,alpha3,zeta1,zeta2,zeta3,zeta4)
+  =(1,1,0,0,0,0,0,0,0,0)`.
+
+This does not erase higher operators or derive the parent coframe and visible
+field content from motion alone.
 
 ## Newtonian Gate
 
@@ -32,46 +56,71 @@ The numerical value of `G_N` remains one measured calibration, as in GR. The non
 
 ## Parent-Action Gate
 
-The current parent boundary is explicit rather than hidden:
+Checkpoint `1219` assembles one common CTP parent packet:
 
-- integrated nondegenerate Lorentzian `H` is parent field data;
-- Diff/BRST quotient, measure, and regulator are parent gauge data;
-- visible fields and gauge representations are parent field data;
-- the positive massless spin-2 pole and its universal leading source residue are derived/selected by the spectral and soft-theorem gates;
-- `M_R^2`, `Lambda`, and higher Wilson coefficients are induced or renormalized infrared coordinates.
+```text
+X^A, B^A_mu, omega^A_Bmu(inertial), A_mu, chi, Phi_visible, rho_i,
+e^A_mu=D_mu X^A+B^A_mu,
+g_mu_nu=eta_AB e^A_mu e^B_nu.
+```
 
-The remaining foundational challenge is to derive this parent content from a simpler motion/time/space construction or retain it honestly as fundamental. A fixed-background scalar-only composite-graviton route is not used.
+Checkpoint `1204` proves that four scalar clocks with a fixed internal metric
+produce only a flat pullback metric when nondegenerate, or a degenerate metric
+otherwise. Generic GR therefore requires genuine non-scalar coframe
+distortion. The current coframe, local translation/Lorentz gauge structure,
+visible spectrum, and representations are explicit parent premises. They are
+not disguised as derived from one scalar.
+
+The remaining foundational challenge is to derive this parent content from a
+simpler motion/time/space construction or retain it honestly as fundamental.
 
 ## Residual and Strong-Field Gates
 
 The following remain outside the promoted weak-local theorem:
 
-- strong-field compact-body sensitivities and radiation/back-reaction matching;
+- strong-field compact-body sensitivities, horizons, and
+  radiation/back-reaction matching;
 - all-state preferred-flow/disformal silence;
-- complete finite matching of `R^2` and `C^2` terms;
-- the nonzero higher-gradient `C^3` residual;
+- complete finite matching of `R^2`, `C^2`, and `C^3` terms;
 - the curvature-photon coefficient and its complete phenomenology;
 - hidden-visible re-entry beyond the selected-vacuum local quarantine;
+- the first canonical MTS-specific `p8` on-shell coefficient;
 - a global theorem that every nonvacuum motion state reduces to GR locally.
 
 Earlier quotient-kernel, shell, J2, R10, clock, and orbital ledgers remain valuable diagnostics, but they are historical rungs rather than the strongest current route.
 
 ## Large-Scale Compatibility Gate
 
-Checkpoint `1164` constructs a same-parent response target using the physical Hessian block
+The same-parent response target still uses the physical Hessian block
 
 ```text
 Gamma2 = 1/2 (h,chi) [[K_h,B],[B_dagger,K_chi]] (h,chi)^T + h.T/2,
 K_eff = K_h - B K_chi^-1 B_dagger.
 ```
 
-`B=0` on the selected local branch leaves GR unchanged. A nonzero occupied motion state can modify long-distance response without introducing a second gravitational source normalization. The candidate response has the necessary ultraviolet suppression, but the actual retarded parent self-energy, state law, lensing/slip response, and paired empirical validation remain open.
+`B=0` on the selected local branch leaves GR unchanged. Checkpoints
+`1194-1216` test Gaussian, pair, FLRW-production, collective, and state
+routes. Several are exact no-go results. The surviving large-scale route
+requires a parent-owned occupied/composite retarded response rather than an
+extra Newton constant or replayed Vlasov stress.
+
+The preregistered checkpoint-`1192` formation comparison is complete: its
+`q` component is MTS-directed, its RMSE component is unresolved, and the
+joint result is a statistical draw/metric split. It does not derive the
+retarded response law.
 
 ## Current Promotion Status
 
-- Newtonian recovery: derived inside the selected weak local parent branch; `G_N` measured once, not predicted.
-- Leading local GR source chain: derived conditionally on the declared integrated-`H`/Diff parent and standard spin-2 premises.
-- Standard weak `PPN gamma=beta=1`: derived on the reflection-even `psi=0` branch; higher-gradient and strong-field completion remain open.
-- Maxwell/Lorentz/stress/Poynting chain: structurally derived; higher curvature-photon matching remains open.
-- Large-scale MTS response: concrete target and smoke evidence only; parent retarded kernel and state law are not yet derived.
+- Newtonian recovery: derived inside the exact selected two-derivative branch;
+  `G_N` is measured once, not predicted.
+- Nonlinear local GR+SM+Maxwell action: exact at two-derivative order on the
+  selected consistent truncation.
+- Full constant PPN vector: exactly GR on that branch; higher-gradient and
+  strong-field completion remain open.
+- Maxwell/Lorentz/stress/Poynting chain: exact in the restricted action;
+  higher curvature-photon matching remains open.
+- Large-scale MTS response: conditional target plus mixed empirical evidence;
+  the parent retarded kernel and state law are not yet derived.
+- First MTS-specific `p8` coefficient: unresolved; checkpoint `1230`
+  authorizes only a fresh estimator pilot.
 - Completed unified theory or empirical replacement claim: not allowed.

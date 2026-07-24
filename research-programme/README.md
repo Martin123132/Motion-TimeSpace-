@@ -1,6 +1,7 @@
 # Research Programme Artifacts
 
-This directory contains the post-checkpoint formalization workbench prepared for public review.
+This directory contains the post-checkpoint formalization workbench prepared
+for public review.
 
 ## Contents
 
@@ -25,7 +26,22 @@ Start with:
 11. `checkpoints/1189-Y5-R2FR-matched-CDM-formation-baseline-discrimination-gate.md`
 12. `checkpoints/1190-Y5-R2FR-mass-gap-continuation-and-spherical-cutoff-discrimination-gate.md`
 13. `checkpoints/1191-Y5-R2FR-exact-low-mode-shared-isotropic-resolution-discrimination-gate.md`
+14. `checkpoints/1192-Y5-R2FR-predeclared-paired-high-mode-seed-ensemble.md`
+15. `checkpoints/1203-Y5-R2FR-canonical-local-parent-action-Hessian-source-residue-and-scale-setting-theorem.md`
+16. `checkpoints/1204-Y5-R2FR-relational-clock-scalar-no-go-minimal-coframe-parent-and-Fierz-Pauli-selection-theorem.md`
+17. `checkpoints/1217-Y5-R2FR-source-complete-coframe-variation-full-PPN-calibration-and-local-state-silence-theorem.md`
+18. `checkpoints/1219-Y5-R2FR-one-canonical-translation-gauge-parent-action-cross-coupling-and-branch-reduction-theorem.md`
+19. `checkpoints/1224-Y5-R2FR-common-minimal-motion-trajectory-canonical-Z-quotient-absolute-scale-covariance-and-local-GR-selection.md`
+20. `checkpoints/1227-Y5-R2FR-selected-trajectory-exact-GR-Maxwell-consistent-truncation-universal-source-and-matched-GRSM-excess-theorem.md`
+21. `checkpoints/1228-Y5-R2FR-fresh-crossed-hhh-two-stratum-pilot.md`
+22. `checkpoints/1229-Y5-R2FR-source-separated-additive-cluster-Cauchy-zero-theorem.md`
+23. `checkpoints/1230-Y5-R2FR-A00-identical-graviton-permutation-control-variate.md`
 
-The numbered files are internal research artifacts. They deliberately include failed derivation attempts and red-team gates because those failures are part of the audit trail.
+The numbered files are internal research artifacts. They deliberately include
+failed derivation attempts and red-team gates because those failures are part
+of the audit trail.
 
-Public filenames use the compact public checkpoint sequence. Document titles, script names, and residual artifacts retain the original private checkpoint IDs for provenance. The July 21 update maps private `4501–5175` to public `517–1191`.
+Public filenames use the compact public checkpoint sequence. Document titles,
+script names, and residual artifacts retain the original private checkpoint
+IDs for provenance. The established offset is `3984`; the July 24 update maps
+private `5176-5214` to public `1192-1230`.
