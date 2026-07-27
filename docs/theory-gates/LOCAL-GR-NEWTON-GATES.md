@@ -121,6 +121,8 @@ retarded response law.
   higher curvature-photon matching remains open.
 - Large-scale MTS response: conditional target plus mixed empirical evidence;
   the parent retarded kernel and state law are not yet derived.
-- First MTS-specific `p8` coefficient: unresolved; checkpoint `1230`
-  authorizes only a fresh estimator pilot.
+- First MTS-specific `p8` coefficient: unresolved; checkpoints `1231-1266`
+  replace failed control assumptions and fixed-source topology, but checkpoint
+  `1266` still holds the partially corrected outer value pending a complete
+  paired-transport rebuild.
 - Completed unified theory or empirical replacement claim: not allowed.

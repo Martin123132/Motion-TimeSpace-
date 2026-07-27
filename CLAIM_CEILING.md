@@ -21,9 +21,10 @@ This repository is a public work-in-progress research programme.
 - The completed frozen 12-seed formation gate has an MTS-directed `q`
   component but no RMSE or joint model preference; the correct result is a
   statistical draw/metric split.
-- A symmetry-fixed, zero-mean control variate reduces the dominant
-  retrospective crossed-`hhh` estimator variance enough to authorize a fresh
-  independent pilot.
+- Exact residue/classification, physical-chart, outer-pole-subtraction, and
+  reciprocal-projective topology results now constrain the crossed-`hhh`
+  estimator. They identify material fixed-topology errors without promoting a
+  coefficient value.
 - Failed derivations, corrected sign errors, adverse outcomes, and
   superseded routes remain in the public audit trail.
 
@@ -43,8 +44,10 @@ This repository is a public work-in-progress research programme.
 - Higher-derivative `R^2`, `C^2`, `C^3`, curvature-photon, nonlocal, hidden
   visible, and `p8+` contributions remain bounded, matched, or open according
   to their individual ledgers.
-- The first canonical MTS-specific crossed-`hhh` UV coefficient is unresolved;
-  checkpoint `1230` validates only a retrospective estimator design.
+- The first canonical MTS-specific crossed-`hhh` UV coefficient remains
+  unresolved. The fresh control route did not close it, and checkpoint `1266`
+  holds a partially corrected outer value until all order-5 backbone nodes are
+  rebuilt with paired reciprocal-projective transport.
 - The occupied galactic response is not yet the retarded self-energy of the
   parent motion state. Its amplitude, transition scale, exponent, preparation
   law, and Hilbert stress remain under derivation.
