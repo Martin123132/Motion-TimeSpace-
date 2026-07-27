@@ -82,6 +82,18 @@ GitHub can cap the visible entries in very large flat folders and pull-request
 file lists. The generated catalogue and SHA-256 publication inventory provide
 direct access and completeness checks without changing historical paths.
 
+### Windows Checkout
+
+The preserved legacy archive contains relative paths up to 232 characters.
+A clone into a long Windows parent path can therefore hit the older 260-
+character checkout limit even though every Git object was downloaded. Use a
+short destination such as `D:\MTS`, or enable Git's long-path handling for
+that clone:
+
+```powershell
+git -c core.longpaths=true clone https://github.com/Martin123132/Motion-TimeSpace-.git D:\MTS
+```
+
 ## Research Ethos
 
 This work is deliberately conservative about claims. A branch can be useful, promising, or competitive without being promoted to a completed theory. Promotion requires derivation, consistency with known limits, and empirical robustness against matched baselines.

@@ -37,6 +37,12 @@ and pull-request file listings. The repository already had more than 1,000
 entries in each of several flat artifact folders, and the pull-request file
 view exposed only its first bounded page.
 
+A fresh Windows clone also identified six legacy archive paths that can exceed
+the older 260-character checkout limit when the destination directory is long.
+This is a Windows working-tree restriction, not Git-object loss. The root
+README now gives a one-command `core.longpaths=true` clone route and recommends
+a short destination such as `D:\MTS`.
+
 This update adds:
 
 - `research-programme/catalogue/README.md`, with bounded direct-link shards;
