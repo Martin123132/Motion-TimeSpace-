@@ -1,0 +1,6 @@
+gate_id,claim,passed,reason,valid_for_claim
+GATE3350_0_material_arena_split,ordinary Ti/Pt material arena is separated from parent field-equation arena,true,3350 explicitly distinguishes ordinary material constituents from ambient/parent residual sources,false
+GATE3350_1_hidden_material_constituent_excluded,hidden/decoupled blocks are excluded from ordinary Ti/Pt material inventory unless explicitly listed,true,ordinary material inventory uses atomic/nuclear/binding components; hidden blocks are moved to residual rows,false
+GATE3350_2_parent_decoupled_field_excluded,decoupled/hidden blocks are excluded from the local parent field-equation arena,false,material composition does not prove parent field equation has no T_D or boundary/source-shadow residual,false
+GATE3350_3_RAB_zero_promoted,R_AB=0 no-independent-slot route is promoted,false,"ordinary material branch is cleaner, but parent no-projector and decoupled field residuals remain open",false
+GATE3350_4_local_GR_claim,local GR/Newton source-coupling branch is claim-ready,false,explicit residual rows remain without parent zeros or numeric bounds,false

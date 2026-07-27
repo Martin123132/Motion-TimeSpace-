@@ -1,0 +1,12 @@
+acquisition_id,parameter,definition,units,required_for,current_value,source_path,source_status,valid_for_claim
+ACQ627_0_Z_cg,Z_cg,true iff the local geometry zero proof is parent-signed,boolean,all local geometry zero claims,false,this_checkpoint,not_signed,false
+ACQ627_1_c_g,c_g,d ln A_g/dXhat for representative Weyl common-frame coupling,dimensionless,"R10,PPN,clock,orbital if Z_cg=false",MISSING_PARENT_INPUT,MISSING_PARENT_SOURCE,needed_numeric_bound_or_theorem_zero,false
+ACQ627_2_tau_R10,tau_R10,R10 material/source-test projection of stress trace/common-frame response,dimensionless,R10,MISSING_ARENA_PROJECTION,MISSING_ARENA_SOURCE,needed_projection,false
+ACQ627_3_tau_PPN,tau_PPN,PPN/local-gravity projection of common-frame response,dimensionless,PPN,MISSING_ARENA_PROJECTION,MISSING_ARENA_SOURCE,needed_projection,false
+ACQ627_4_tau_clock,tau_clock,clock/redshift/environment projection of common-frame response,dimensionless,clock,MISSING_ARENA_PROJECTION,MISSING_ARENA_SOURCE,needed_projection,false
+ACQ627_5_tau_orbital,tau_orbital,orbital/binary projection of common-frame response,dimensionless,orbital,MISSING_ARENA_PROJECTION,MISSING_ARENA_SOURCE,needed_projection,false
+ACQ627_6_K_X,K_X,local exchange/kernel factor for common-frame geometry source branch,schema_required,"R10,PPN,orbital if exchange branch used",MISSING_PARENT_INPUT,MISSING_PARENT_SOURCE,needed_parent_kernel,false
+ACQ627_7_Qbar_XH,Qbar_XH,source/edge/Hamiltonian projection for X-channel coupling,schema_required,R10 and local source coupling,MISSING_PARENT_INPUT,MISSING_PARENT_SOURCE,needed_parent_projection,false
+ACQ627_8_lambda_X,lambda_X,range of local X/common-frame exchange branch,length,"R10,PPN,orbital range suppression",MISSING_PARENT_INPUT,MISSING_PARENT_SOURCE,needed_parent_range,false
+ACQ627_9_alpha_bound_lambda,alpha_bound_lambda,experimental R10/Yukawa alpha_bound(lambda) curve or source-backed nonclaim anchor,dimensionless,R10,MISSING_ARENA_SOURCE,MISSING_ARENA_SOURCE,needed_real_bound_curve_before_R10_scoring,false
+ACQ627_10_d_g_Pi_disformal,d_g_Pi_disformal,combined disformal coefficient/projection stub pending fuller schema,dimensionless_after_schema_fix,disformal branch,MISSING_PARENT_INPUT,MISSING_PARENT_SOURCE,stub_blocks_disformal_scoring,false

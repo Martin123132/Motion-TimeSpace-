@@ -1,0 +1,14 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1229_0_sources_exist,all cited local sources exist,PASS,10/10 sources exist,False,False
+VAL1229_1_needles_found,all cited local needles found,PASS,10/10 needles found,False,False
+VAL1229_2_theorem_not_promoted,source-coupling theorem remains conditional,PASS,contracts written but not parent-signed,False,False
+VAL1229_3_verdict_blocked,universal source-coupling verdict remains blocked,PASS,CLC1229_8_verdict=NOT_CLOSED,False,False
+VAL1229_4_counterexamples_active,active counterexamples are explicit,PASS,active_counterexamples=5,False,False
+VAL1229_5_finite_branch_present,finite residual branch retained,PASS,FR1229_3_WEP_product present,False,False
+VAL1229_6_data_branch_parked,MICROSCOPE data branch remains parked and nonclaim,PASS,DATA1229_0_MICROSCOPE_pending present,False,False
+VAL1229_7_claim_gates_blocked,all claim gates remain blocked,PASS,blocked_gates=5/5,False,False
+VAL1229_8_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables,False,False
+VAL1229_9_next_target_1230,next target attacks action-scale/measure owner,PASS,1230-Y5-R10-universal-action-scale-measure-owner-theorem-or-finite-delta-w-prior.md,False,False
+VAL1229_10_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1229_SOURCE_REGISTER.csv:10; P8_Y5_R10_1229_LOCAL_GR_SOURCE_COUPLING_THEOREM_CONTRACT.csv:4; P8_Y5_R10_1229_UNIVERSAL_SOURCE_COUPLING_CLAUSE_AUDIT.csv:9; P8_Y5_R10_1229_SOURCE_COUPLING_COUNTEREXAMPLE_LEDGER.csv:5; P8_Y5_R10_1229_FINITE_SOURCE_RESIDUAL_CONTRACT.csv:6; P8_Y5_R10_1229_DATA_PENDING_BRIDGE.csv:3; P8_Y5_R10_1229_RUNNER_FEED_UPDATE.csv:3; P8_Y5_R10_1229_DECISION_LEDGER.csv:3; P8_Y5_R10_1229_CLAIM_GATES.csv:5; P8_Y5_R10_1229_NEXT_TARGET.csv:1,False,False
+VAL1229_11_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_write_count_since_run_start=0,False,False
+VAL1229_12_overall,overall 1229 validation,PASS,1229 sharpens universal source-coupling into exact theorem clauses and finite residual fallback without claims,False,False

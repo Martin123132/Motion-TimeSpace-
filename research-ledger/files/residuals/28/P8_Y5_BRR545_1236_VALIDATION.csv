@@ -1,0 +1,16 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1236_0_sources_exist,all cited local sources exist,PASS,17/17 sources exist,False,False
+VAL1236_1_needles_found,all cited local needles found,PASS,17/17 needles found,False,False
+VAL1236_2_certificate_written,typed certificate clauses are written,PASS,CERT1236_0 through CERT1236_6 generated,False,False
+VAL1236_3_certificate_not_derived,certificate is not promoted as parent-derived,PASS,CERT1236_6 status=CERTIFICATE_SCHEMA_VALID_NOT_PARENT_DERIVED,False,False
+VAL1236_4_meta_theorem_conditional,no-hidden-visible theorem remains conditional,PASS,meta theorem rows do not permit claim promotion,False,False
+VAL1236_5_unique_F2_blocked,unique-F2 remains blocked,PASS,UF2S1236_3 status=UNIQUE_F2_REMAINS_BLOCKED,False,False
+VAL1236_6_QCD_deepened_not_signed,QCD route is deepened but not signed,PASS,QCD1236_4 status=DEEPENED_BUT_NOT_SIGNED,False,False
+VAL1236_7_finite_backstop,finite EM/QCD residuals remain active,PASS,finite_residual_rows=6,False,False
+VAL1236_8_no_edges_signed,no graph edge is counted as parent-signed,PASS,counts_for_connected_graph=false for all updated edges,False,False
+VAL1236_9_claim_gates_blocked,all claim gates remain blocked,PASS,blocked_gates=8/8,False,False
+VAL1236_10_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables,False,False
+VAL1236_11_next_target_1237,next target derives grammar from MTS primitives or demotes closure,PASS,1237-Y5-R10-MTS-primitives-to-sorted-parent-action-derivation-or-closure-demotion.md,False,False
+VAL1236_12_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1236_SOURCE_REGISTER.csv:17; P8_Y5_R10_1236_PARENT_TYPED_OBJECT_LANGUAGE_CERTIFICATE_ATTEMPT.csv:7; P8_Y5_R10_1236_NO_HIDDEN_VISIBLE_COEFFICIENT_META_THEOREM.csv:4; P8_Y5_R10_1236_UNIQUE_F2_STATUS_AFTER_CERTIFICATE.csv:4; P8_Y5_R10_1236_QCD_COLOR_OWNER_DEEPENING.csv:5; P8_Y5_R10_1236_FINITE_EM_QCD_RESIDUAL_BACKSTOP.csv:6; P8_Y5_R10_1236_GRAPH_EDGE_STATUS_UPDATE.csv:3; P8_Y5_R10_1236_DECISION_LEDGER.csv:4; P8_Y5_R10_1236_CLAIM_GATES.csv:8; P8_Y5_R10_1236_NEXT_TARGET.csv:1,False,False
+VAL1236_13_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_write_count_since_run_start=0,False,False
+VAL1236_14_overall,overall 1236 validation,PASS,"1236 writes the exact typed certificate, refuses to promote it without derivation, deepens QCD owner requirements, and keeps local-GR gates blocked",False,False

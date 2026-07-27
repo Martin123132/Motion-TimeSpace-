@@ -1,0 +1,7 @@
+projection_id,needed_object,required_form,current_status,what_3364_derives,blocks_score,valid_for_claim
+WEP3364_0_parent_coefficient,C_parent or Delta_w_AB,parent-owned coefficient/theorem-zero source-weight residual with units and branch id,MISSING_PARENT_COEFFICIENT,only the slot that must be filled,true,false
+WEP3364_1_source_worldtube,Earth/source vector and worldtube weighting,R_source_Earth in the same parent response basis and observed frame,MISSING_REQUIRED_LIVE_FILE,point-source shortcut is not legal for relative source channels,true,false
+WEP3364_2_material_tensor,TA6V-PtRh10 material response tensor,R_material_TA6V_minus_PtRh10_full_tensor in MTS parent basis,MISSING_REQUIRED_LIVE_FILE,MICROSCOPE material labels alone are not an MTS parent response basis,true,false
+WEP3364_3_readout_kernel,official MICROSCOPE readout kernel,"K_CMSM/readout matrix with masks, orbit, axes, timing, units and provenance",OFFICIAL_ARRAYS_NOT_IMPORTED,tau_WEP=1 shortcut remains forbidden,true,false
+WEP3364_4_tau_product,tau_WEP contraction normalization,tau_WEP = branch_locked_orbit_average(K_CMSM * R_source * R_material) with sign/units/masks,PARTIAL_FORMULA_ONLY,formal projection law exists but cannot be evaluated,true,false
+WEP3364_5_no_cancellation,componentwise absolute envelope,|eta_MTS| <= |tau_WEP Delta_w| + |eta_EM| + |eta_scalar| + |eta_frame| + |eta_readout| + ...,POLICY_PRESENT_VALUES_MISSING,3363 bound is legal only as a componentwise target,true,false

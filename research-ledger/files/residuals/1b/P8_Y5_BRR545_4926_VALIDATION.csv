@@ -1,0 +1,33 @@
+validation_id,description,expected,actual,passed,checkpoint_marker,valid_for_claim,source_checked_date
+VAL4926_00_compile,research and validation scripts compile in memory,no syntax errors,no syntax errors,True,MTS_KNOWN_THRESHOLD_MOTION_SCALE_VALIDATION_4926,False,2026-07-12
+VAL4926_01_research_run,research generator reruns successfully,return 0 and PASS marker,"return=0; stdout=P8_Y5_R2FR_4926_KNOWN_THRESHOLD_MOTION_SCALE_PASS
+max_colorless_threshold_length_m=1.5576594346003402e-21
+minimal_motion_threshold_length_m=6.3498282326428973e-37
+independent_IR_I1_test_parameters=1
+compact_GR_promoted=False",True,MTS_KNOWN_THRESHOLD_MOTION_SCALE_VALIDATION_4926,False,2026-07-12
+VAL4926_02_outputs,all expected evidence tables exist,11,11,True,MTS_KNOWN_THRESHOLD_MOTION_SCALE_VALIDATION_4926,False,2026-07-12
+VAL4926_03_csv_shape,all evidence CSVs parse with no overflow columns,no malformed rows,no malformed rows,True,MTS_KNOWN_THRESHOLD_MOTION_SCALE_VALIDATION_4926,False,2026-07-12
+VAL4926_04_markers,all generated evidence rows carry the checkpoint marker,0,0,True,MTS_KNOWN_THRESHOLD_MOTION_SCALE_VALIDATION_4926,False,2026-07-12
+VAL4926_05_nonclaim,all checkpoint evidence remains nonclaim,0,0,True,MTS_KNOWN_THRESHOLD_MOTION_SCALE_VALIDATION_4926,False,2026-07-12
+VAL4926_06_no_placeholder_tokens,no generated row contains a MISSING placeholder token,0,0,True,MTS_KNOWN_THRESHOLD_MOTION_SCALE_VALIDATION_4926,False,2026-07-12
+VAL4926_07_source_hashes,PDG NuFIT and heavy-field files match locked SHA-256 values,0,0,True,MTS_KNOWN_THRESHOLD_MOTION_SCALE_VALIDATION_4926,False,2026-07-12
+VAL4926_08_source_register,all local markers hashes and external primary URLs are recorded,0,0,True,MTS_KNOWN_THRESHOLD_MOTION_SCALE_VALIDATION_4926,False,2026-07-12
+VAL4926_09_PDG_snapshot,eight PDG records are API-extracted and the electron mass is locked,8 rows; 510998.95069 eV; package 2026.0,8 rows; 510998.9506900001 eV; package 2026.0,True,MTS_KNOWN_THRESHOLD_MOTION_SCALE_VALIDATION_4926,False,2026-07-12
+VAL4926_10_visible_sum,signed non-neutrino colorless sum matches the independent target,-1.640178869062048e-99,-1.6401788690620482e-99,True,MTS_KNOWN_THRESHOLD_MOTION_SCALE_VALIDATION_4926,False,2026-07-12
+VAL4926_11_visible_locality,all six source-locked colorless free fields pass m greater than 10Q,0,0,True,MTS_KNOWN_THRESHOLD_MOTION_SCALE_VALIDATION_4926,False,2026-07-12
+VAL4926_12_neutrino_scenarios,four lightest-zero scenarios retain one nonlocal eigenstate,4 rows; one nonlocal state each,"4 rows; counts=['1', '1', '1', '1']",True,MTS_KNOWN_THRESHOLD_MOTION_SCALE_VALIDATION_4926,False,2026-07-12
+VAL4926_13_max_colorless,largest colorless threshold length matches the normal-Dirac benchmark,1.5576594346003402e-21,1.5576594346003402e-21,True,MTS_KNOWN_THRESHOLD_MOTION_SCALE_VALIDATION_4926,False,2026-07-12
+VAL4926_14_colorless_compact,all displayed colorless scenarios are over ninety coefficient orders below compact target,less than 1e-90,4.0445163378877045e-98,True,MTS_KNOWN_THRESHOLD_MOTION_SCALE_VALIDATION_4926,False,2026-07-12
+VAL4926_15_locality_envelope,strict per-Dirac locality envelope is compact negligible,ell=3.273337966535713e-17 m and ratio below 1e-80,ell=3.273337966535713e-17; ratio=7.887510411996691e-81,True,MTS_KNOWN_THRESHOLD_MOTION_SCALE_VALIDATION_4926,False,2026-07-12
+VAL4926_16_dimension_repair,dimension audit derives Delta=3/2 and canonical 8/3 coupling,all six checks pass,6/6,True,MTS_KNOWN_THRESHOLD_MOTION_SCALE_VALIDATION_4926,False,2026-07-12
+VAL4926_17_motion_benchmark,minimal branch numerical transform matches the Planck-scale calculation,6.349828232642897e-37,6.349828232642897e-37,True,MTS_KNOWN_THRESHOLD_MOTION_SCALE_VALIDATION_4926,False,2026-07-12
+VAL4926_18_CN_nonclaim,every normalization row refuses parent ownership,0,0,True,MTS_KNOWN_THRESHOLD_MOTION_SCALE_VALIDATION_4926,False,2026-07-12
+VAL4926_19_normalization_bounds,one-pole CN and canonical-coupling compact transforms are reproduced,log10 CNmax=634.6308; Cpsi_min=1.96038e-211,log10 CNmax=634.6308338490828; Cpsi_min=1.960375552989088e-211,True,MTS_KNOWN_THRESHOLD_MOTION_SCALE_VALIDATION_4926,False,2026-07-12
+VAL4926_20_QCD_firewall,QCD compact coefficient firewall is numeric while exact matching stays open,C_required>1e118 and status absorbed in one remainder,C=2.4767423827118726e+118; status=ABSORBED_IN_ONE_IR_WILSON_REMAINDER,True,MTS_KNOWN_THRESHOLD_MOTION_SCALE_VALIDATION_4926,False,2026-07-12
+VAL4926_21_one_Wilson,every spectrum scenario retains one low-energy I1 parameter,one in every row,"['1', '1', '1', '1']",True,MTS_KNOWN_THRESHOLD_MOTION_SCALE_VALIDATION_4926,False,2026-07-12
+VAL4926_22_offset_size,known offsets are negligible relative to the current GW envelope,less than 1e-100,1.0023199828586632e-102,True,MTS_KNOWN_THRESHOLD_MOTION_SCALE_VALIDATION_4926,False,2026-07-12
+VAL4926_23_gate_state,weak GR is retained while compact and full claims remain unpromoted,weak retained; compact false; full false,weak=RETAINED; compact=NOT_PROMOTED; full=NOT_PROMOTED,True,MTS_KNOWN_THRESHOLD_MOTION_SCALE_VALIDATION_4926,False,2026-07-12
+VAL4926_24_registers,checkpoint formal note provenance resume and five registers carry their markers,0,0,True,MTS_KNOWN_THRESHOLD_MOTION_SCALE_VALIDATION_4926,False,2026-07-12
+VAL4926_25_variables,all eleven canonical variables are registered,11,11,True,MTS_KNOWN_THRESHOLD_MOTION_SCALE_VALIDATION_4926,False,2026-07-12
+VAL4926_26_pycache,scripts tree contains no Python bytecode cache directories,0,0,True,MTS_KNOWN_THRESHOLD_MOTION_SCALE_VALIDATION_4926,False,2026-07-12
+VAL4926_OVERALL,checkpoint 4926 evidence and claim-discipline validation,all checks pass,27/27 pre-overall checks pass,True,MTS_KNOWN_THRESHOLD_MOTION_SCALE_VALIDATION_4926,False,2026-07-12

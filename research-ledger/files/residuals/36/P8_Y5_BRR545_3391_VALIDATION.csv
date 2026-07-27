@@ -1,0 +1,14 @@
+check_id,check,passed,detail
+VAL3391_0_sources_exist_parse,all cited 3391 local source paths exist and parse,true,
+VAL3391_1_outputs_parse,all generated CSV outputs parse cleanly,true,parsed=10 expected=10
+VAL3391_2_external_sources,"external source pack records URLs, values and units",true,rows=4
+VAL3391_3_geometry_positive,Cassini geometry rows are positive finite rows,true,rows=8
+VAL3391_4_projector_theorem,projector theorem includes exact and finite branches,true,
+VAL3391_5_projector_bounds,projector bound rows cover target summary,true,rows=8
+VAL3391_6_branch_comparison,"branch comparison covers exact, finite, adaptive, and boundary branches",true,
+VAL3391_7_runner,"runner records source pack, geometry, theorem, finite bound and firewall",true,
+VAL3391_8_gates,"gates source pack but block exact projector, finite projector and local PPN claims",true,
+VAL3391_9_no_overclaim_flags,all generated rows with valid_for_claim remain false,true,
+VAL3391_10_write_scope_outside_formalization,no 3391 files were written under formalization-workbench,true,hits=0
+VAL3391_11_next_target,next target moves to fixed PPN readout parent-clause audit,true,
+VAL3391_12_overall,3391 validation overall,true,all required checks passed

@@ -1,0 +1,6 @@
+audit_id,term,chain_rule_piece,identity_branch_value,open_branch_value,status,valid_for_claim
+CR3437_0_explicit_X,explicit matter vertex,partial L_m / partial X_i,0,"nonzero if matter constants, masses, EM coupling, class variables, or source labels depend on X_i",ZERO_IN_IDENTITY_BRANCH_RETAIN_OTHERWISE,False
+CR3437_1_coframe_pullback,observed coframe pullback,(delta S_m/delta e_obs) (delta e_obs/delta X_i),0,active common trace/stress current if ehat=e_obs(X_i),ZERO_ONLY_IF_IDENTITY_COFRAME_SELECTED,False
+CR3437_2_connection_pullback,spin/connection pullback,(delta S_m/delta omega_obs) (delta omega_obs/delta X_i),0 for Levi-Civita omega[e_obs] independent of X_i,hypermomentum/projective source current if independent connection contains X_i,ZERO_IN_MINIMAL_METRIC_BRANCH_RETAIN_IF_CONNECTION_INDEPENDENT,False
+CR3437_3_species_constants,matter constants and representation labels,sum_A (partial L_A/partial theta_A) partial_X theta_A,0 if theta_A are representation data,species/source charge if masses/couplings/constants run with X_i,ZERO_IN_SUPERSELECTION_BRANCH_RETAIN_OTHERWISE,False
+CR3437_4_readout_source_norm,source-normalization/readout mask,"delta S_source_norm/delta X_i, Pi_M(X_i), M_eff(X_i), or tau_R10(X_i)",not killed by direct S_matter zero,radial/range/source-normalization residual,RETAINED,False

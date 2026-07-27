@@ -1,0 +1,7 @@
+gate_id,requirement,current_status,failure_action,valid_for_claim,claim_allowed
+ACC1416_0_no_missing_values,finite R_source rows require real values before valid_for_claim=true,VALUES_MISSING,all rows remain nonclaim,False,False
+ACC1416_1_units,units and parent-coordinate dimension basis must be declared,PARENT_BASIS_MISSING,no comparison to WEP/Newton/R10/PPN,False,False
+ACC1416_2_source_paths,source path and source anchor must support any numeric coefficient,TEMPLATE_SOURCES_ONLY,no claim-ready coefficient,False,False
+ACC1416_3_arena_projection,R_source cannot transfer across WEP/Newton/R10/PPN without arena projection theorem,ARENA_PROJECTION_MISSING,retain arena isolation,False,False
+ACC1416_4_no_cancellation,do not accept source residual only because it cancels a material pair or measured-G convention,NO_CANCELLATION_POLICY_ACTIVE,require theorem-zero or source-backed bounds,False,False
+ACC1416_5_verdict,first R_source row acceptance,ROW_SCHEMA_READY_VALUES_MISSING_NO_PASS,continue derivation/source acquisition,False,False

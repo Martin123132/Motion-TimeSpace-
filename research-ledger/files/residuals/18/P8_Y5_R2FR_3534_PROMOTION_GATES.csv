@@ -1,0 +1,6 @@
+gate_id,requirement,failure_mode,next_action_if_failed,passed_now
+G3534_0_variable_ownership,"Every Y_loc component is an action variable, constrained auxiliary, or derived Noether/load tensor.",post-fit projector/smoother/selector masquerades as a field,keep coefficient/bound branch,False
+G3534_1_no_linear_singlet,"No local scalar singlet linear in Y_loc appears in S_matter, S_EM, S_R11, source normalization, or boundary flux.",linear scalar selector or hidden source weight creates WEP/PPN/R10 residuals,bound the corresponding coefficient directly,False
+G3534_2_positive_norm_square,Sigma_loc=G_AB Y^A Y^B has parent-positive G_AB and compact local branch Y=0.,double-zero factor is a named closure switch rather than a derived invariant,derive Hessian/mass-gap or demote Sigma_loc to closure,False
+G3534_3_universal_factorization,All local non-EH/source-normalization operators factor by Sigma_loc or are topological/exact.,one unfactored q-basic operator reopens R11/PPN/fifth-force rows,build R11 coefficient vector with no missing rows,False
+G3534_4_same_visible_stack,"Matter, clocks, EM, Hilbert stress and Hamiltonian charge use the same g_obs/coframe and tau.",same-looking GR limit hides frame/source/readout mismatch,retain R_frame/R_units/Delta_Hodge_EM rows,False

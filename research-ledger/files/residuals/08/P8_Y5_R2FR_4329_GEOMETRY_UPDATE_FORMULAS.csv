@@ -1,0 +1,7 @@
+formula_id,name,formula,status
+F4329_0_same_hodge_zero,same-Hodge zero,"fixed(g_obs,e_obs,orientation,vol_obs) and S_EM=-(4 mu0)^-1 int F wedge *_obs F with no chi_EM => Delta_Hodge_EM=0",CONDITIONAL_ZERO_DERIVED
+F4329_1_Dq_EM_closed_collar,Dq_EM closed-collar zero,F4329_0 + q-basic EM constants + pure readout + Phi_EM_rad=0_or_boundary_routed => Dq_EM[Hperp]=Dq_EM_C1=0,CONDITIONAL_ZERO_IMPORTED
+F4329_2_no_poynting_double_count,Poynting owner,"S_i=-T_EM(n,e_i)=(E cross B)_i, so Poynting contributes through Hilbert EM stress and not as a second source force",OWNER_RULE
+F4329_3_constitutive_bound,open/deformed EM no-cancellation envelope,||Delta_Hodge_EM|| <= ||Delta_chi_principal|| + ||Delta_chi_skewon|| + L||dtheta_EM|| + |C_Hodge_hidden| + |C_Hodge_readout| + |Delta_orientation_flux|,BOUND_RETAINED_OUTSIDE_BRANCH
+F4329_4_geometry_core_update,4328 geometry core after EM-Hodge branch import,epsilon_geom_core <= C_coeff epsilon_coeff + C_readout epsilon_readout_frame + C_terminal epsilon_terminal + C_EMopen epsilon_EM_open_boundary + tail_guard_sum,REDUCED_BUT_OPEN
+F4329_5_source_readout_update,source-readout after EM-Hodge reduction,epsilon_source_readout <= (L_T L_mg + L_g) epsilon_geom_core_after_EM + Xi_src_hidden,NONCLAIM_HANDOFF

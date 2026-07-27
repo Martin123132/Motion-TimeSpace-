@@ -1,0 +1,8 @@
+schema_id,field,owner,meaning,requirement,current_status,promotion_rule,valid_for_claim,timestamp_utc
+SCHEMA3867_0,external_bound,external experiment/source,numeric bound in same arena,required for scoring,clock and WEP partial; R10 curve not promoted,positive numeric value plus source row,False,2026-07-01T05:55:30+00:00
+SCHEMA3867_1,tau_A,MTS projection/readout,same-domain projection scale,required for scoring,missing except absorbed clock product form,source-backed or parent-derived,False,2026-07-01T05:55:30+00:00
+SCHEMA3867_2,b_alpha_tau,MTS alpha drift/source coefficient,arena product b_alpha_X*tau_A,required for scoring,template only,numeric/theorem-zero with source path,False,2026-07-01T05:55:30+00:00
+SCHEMA3867_3,z_g_tau,MTS current normalization,arena product z_g*tau_A,required for scoring,missing and not zero-proved,numeric/theorem-zero with source path,False,2026-07-01T05:55:30+00:00
+SCHEMA3867_4,s_XF2_tau,MTS F2 coefficient,direct prediction or projection product,optional if inferred from identity; required for direct score,missing,numeric/theorem-zero with source path,False,2026-07-01T05:55:30+00:00
+SCHEMA3867_5,projection_consistency,domain matching,same Xhat/material/profile/readout convention,required for scoring,missing,explicit row tying all factors to one arena,False,2026-07-01T05:55:30+00:00
+SCHEMA3867_6,image_constructor_certificate,parent action,A_vis=Image(ParentGenerate) proof,alternative to numeric scoring,conditional only,parent-signed exactness/fullness/no-Hom/radiative/readout clauses,False,2026-07-01T05:55:30+00:00

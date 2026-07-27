@@ -1,0 +1,5 @@
+bound_id,quantity,formula,required_inputs,current_status,valid_for_claim,claim_allowed
+SB4515_0_Sigma_B,Sigma_B,Sigma_B=|B_826|+|B_Weyl_vec|+|B_Y5_trace|+|B_Y6_trace|+|B_src_boundary|+|B_src_readout|,4514 Bmem vector plus Y5/Y6/source boundary/readout theorem-zero or finite values,DERIVED_ABSOLUTE_SUM_VALUES_MISSING,False,False
+SB4515_1_density,|rho_mem|,|rho_mem| <= |R_obs| Sigma_B + |C_mem||T| + |J_mem|,"R_obs,T profiles; source vector values; units; source paths",DERIVED_VALUES_MISSING,False,False
+SB4515_2_amplitude,|A_mem|,|A_mem| <= [exp(R_body/lambda_mem) int_body (|R_obs|Sigma_B+|C_mem||T|+|J_mem|) dV + |Q_boundary_mem|]/(4*pi |Z_mem|),"Z_mem,M2_mem,lambda_mem,R_body,R_obs,T,J_mem,Q_boundary_mem,screening",DERIVED_VALUES_MISSING,False,False
+SB4515_3_nohair,local memory silence,positive L_mem plus Sigma_B=C_mem=J_mem=Q_boundary_mem=0 => delta_m=0 and A_mem=0,"positive operator, zero-mode removal and same-branch source-functor theorem",EXACT_CONDITIONAL_THEOREM_NOT_LIVE_SIGNED,False,False

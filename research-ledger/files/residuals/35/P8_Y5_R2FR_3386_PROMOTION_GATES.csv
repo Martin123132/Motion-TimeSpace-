@@ -1,0 +1,8 @@
+gate_id,claim,gate_pass,reason,claim_allowed,valid_for_claim
+GATE3386_0_sources,all 3386 source paths exist and parse,true,source register validates 3320/3321/3332/3335/3336/3384/3385 inputs,false,false
+GATE3386_1_background_zero,epsilon_bg_PPN=0 is parent-signed,false,3320 exact first-gradient silence remains conditional/not signed,false,false
+GATE3386_2_boundary_zero,epsilon_boundary_PPN=0 is parent-signed,false,local collar/source-worldtube boundary silence not yet owned by parent action,false,false
+GATE3386_3_kernel_zero,epsilon_kernel_aniso_PPN=0 is parent-signed,false,"Gaussian model isotropy exists, but projector commutator zero is not parent-signed",false,false
+GATE3386_4_finite_values,finite component values are sourced,false,missing=T_grad(lambda_PPN);epsilon_bg_PPN;epsilon_boundary_PPN;epsilon_kernel_aniso_PPN;epsilon_eff_PPN,false,false
+GATE3386_5_epsilon_eff,epsilon_eff_PPN is zero or bounded for local PPN use,false,zero proof fails and finite values remain missing; threshold targets only,false,false
+GATE3386_6_local_ppn,local PPN gamma/local-GR branch passes,false,epsilon_eff is still nonclaim and A_gamma/Cmetric/floors remain live,false,false

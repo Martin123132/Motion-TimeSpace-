@@ -1,0 +1,8 @@
+schema_field,required,allowed_values,claim_rule
+parameter,true,"common_frame_log_derivative,d_ln_alpha_EM_dXhat,d_ln_mass_ratio_dXhat,marker_coupling_projection,species_source_weight_splitting,nonHilbert_current_projection,post_readout_counterterm_projection,P_A_qbarXT_vec",must match a known prior parameter
+component,true,"b_g,b_theta,b_m,b_kappa,b_NH,b_EFT,qbarXT_vec",must map to a known residual component
+status,true,"derive_zero,numeric_bound,symbolic_placeholder,absent_from_parent_branch,phenomenology_only",claim-ready only for derive_zero or numeric_bound with source_path and no MISSING markers
+value,true,0 for derive_zero; finite numeric for numeric_bound; MISSING_PARENT_INPUT for placeholder; absent_from_parent_branch for branch exclusion,MISSING_PARENT_INPUT blocks every arena claim
+units,true,dimensionless unless a later schema explicitly introduces units,units must be recognized before numeric scoring
+source_path,true,"local source path for theorem/numeric bound, N/A only for absent_from_parent_branch",source path must exist for claim-ready theorem or numeric row
+valid_for_claim,true,false until all schema and arena gates pass,runner never promotes valid_for_claim from placeholders

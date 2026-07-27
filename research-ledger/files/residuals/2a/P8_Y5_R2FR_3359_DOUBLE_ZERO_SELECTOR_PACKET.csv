@@ -1,0 +1,5 @@
+packet_id,statement,math_effect,status,valid_for_claim
+DZ3359_0_selector_definition,Let Sigma_loc = G_AB Y_loc^A Y_loc^B with positive G_AB and parent-owned local-silence variables Y_loc^A.,Sigma_loc = 0 and delta Sigma_loc = 0 when Y_loc^A = 0,SUFFICIENT_MECHANISM,false
+DZ3359_1_double_zero_variation,"If S_nonEH contains F_A(Sigma_loc) O_A with F_A(0)=F_A'(0)=0, then delta(F_A O_A)=0 on the local branch.",non-EH operator contributes no first variation to the left-hand local field equation,EXACT_CONDITIONAL,false
+DZ3359_2_single_zero_rejected,F_A(0)=0 alone is insufficient because F_A'(0) O_A delta Sigma can leak if the selector is not double-zero.,blocks a fake closure route,GUARDRAIL,false
+DZ3359_3_current_gap,The corpus has the double-zero mechanism but not the parent Euler equations forcing every Y_loc^A=0 nor the actual factorization of every R11 row.,R11 remains unpromoted,OPEN,false

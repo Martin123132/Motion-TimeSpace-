@@ -1,0 +1,12 @@
+check_id,check,status,details
+VAL1348_0_sources_exist,registered source paths exist and anchors are found,PASS,10/10 source anchors found
+VAL1348_1_F1_calculus_passes,conditional F1/B_mem calculus passes under the ansatz,PASS,"Gamma_eff=L_cg^-2[F_L+a_F(R(m;X_B)-R(m_L;X_B))], partial_m R(m_L;X_B)=0 implies partial_m Gamma_eff|m_L=0"
+VAL1348_2_Bmem_not_owned,B_mem zero is not parent-owned,PASS,projection owner and R/m_L branch owner are missing
+VAL1348_3_operator_scaffold_present,memory operator scaffold is present,PASS,L_m=-1/2 Z_m(X_B) nabla m nabla m - V_R(m;X_B) plus source/bath/boundary terms
+VAL1348_4_operator_not_owned,Z_mem/M2_mem operator signature is not parent-owned,PASS,owner scaffold present; values/signs/units and parent adoption missing
+VAL1348_5_closure_contract_written,memory closure and finite-residual contracts are explicit,PASS,closure_rows=4
+VAL1348_6_claims_blocked,"B_mem, operator, and memory no-hair claims remain blocked",PASS,GATE1348_0_Bmem_zero=BLOCKED;GATE1348_1_operator_owned=BLOCKED;GATE1348_2_memory_nohair=BLOCKED
+VAL1348_7_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false where present
+VAL1348_8_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1348_9_next_target_1349,next target routes to K_MTS trace projection owner or closure declaration,PASS,1349-Y5-R10-RAB-KMTS-trace-projection-owner-or-memory-closure-declaration.md
+VAL1348_10_overall,overall 1348 validation,PASS,"1348 proves only conditional F1 calculus, not parent-owned B_mem=0, and keeps memory closure explicit"

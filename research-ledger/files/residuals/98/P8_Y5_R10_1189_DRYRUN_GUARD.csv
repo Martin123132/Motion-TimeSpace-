@@ -1,0 +1,6 @@
+dryrun_id,check,result,detail,score_ready,valid_for_claim,generated_utc
+DR1189_0_schema_columns,component pack contains required 750/756 columns,PASS,sample/domain/measure/frame/q-components/boundary/source/theorem-zero columns are present,False,False,2026-06-15T02:51:06.969626+00:00
+DR1189_1_missing_rows_guard,rows with MISSING fields cannot score,PASS,5 rows contain MISSING fields and remain nonclaim,False,False,2026-06-15T02:51:06.969626+00:00
+DR1189_2_no_qproxy_only_pass,q_proxy scalar is not used as a component pass,PASS,pack requires q0..q3/q_T/q_x/q_y/q_z or theorem-zero certificate; prior q_proxy is only a guard/anchor,False,False,2026-06-15T02:51:06.969626+00:00
+DR1189_3_theorem_zero_gate,theorem-zero certificate is all-or-nothing,PASS,"certificate rows are present but none pass now, so q_loc zero remains unclaimed",False,False,2026-06-15T02:51:06.969626+00:00
+DR1189_4_arena_score,PPN/R10/clock/orbital rows are queued but not executable,PASS,all arena projection rows require response operators and source-backed q_loc/profile inputs,False,False,2026-06-15T02:51:06.969626+00:00

@@ -1,0 +1,8 @@
+component_id,component,formal_role,required_input,current_status,valid_for_claim
+TWF2774_0_definition,tau_WEP functional,tau_WEP maps a parent source residual to MICROSCOPE eta_AB in the selected observed frame,"tau_WEP = F_WEP[T_source^Earth, orbit, e_obs, material tensor, force readout, Xhat normalization]",definition_only,False
+TWF2774_1_source_worldtube,Earth/source worldtube,normalizes the source leg of the relative source-weight field,"source stress profile, Earth composition/source convention, same Hilbert source used for G calibration",missing,False
+TWF2774_2_orbit_average,MICROSCOPE orbit/environment average,projects the source residual onto the measured differential acceleration channel,time/orbit averaging kernel and environmental/readout convention,missing,False
+TWF2774_3_material_tensor,Ti/Pt material/source response,turns source-weight residual into a differential test-body response,full material tensor or theorem reducing it to Delta_w_TiPt convention,material_pair_only,False
+TWF2774_4_force_readout,eta_AB force/readout map,"sets dimensions, sign convention, and absolute-value scoring","observed coframe force law, calibration convention, no-cancellation rule",missing,False
+TWF2774_5_Xhat_normalization,parent Xhat/chi_X normalization,keeps tau_WEP compatible with clock/R10 branches,shared parent normalization or declared separate finite branch,missing,False
+TWF2774_6_verdict,tau_WEP projection,scoreable WEP projection factor,all components TWF2774_1 through TWF2774_5,NOT_DERIVED_DO_NOT_SET_TO_ONE,False

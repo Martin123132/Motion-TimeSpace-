@@ -1,0 +1,4 @@
+step_id,derivation_step,formula,result,status,valid_for_claim
+RH3408_0_readout,Use the observed metric readout candidate.,g_pub = g_obs + O((Phi-Phi0)^2),delta g_pub/delta h = identity at first order,CANDIDATE_FROM_A511_6,False
+RH3408_1_public_map,Insert the metric readout into the public propagator.,"R_{mn,h}=I_{mn}^{ab}; R_h H_hh^{-1} R_h^T = H_hh^{-1}",the EH pole is visible to public metric observables if the readout theorem is signed,EXACT_IF_READOUT_SIGNED,False
+RH3408_2_guard,Retain a guard against disformal/Weyl/source-slot readout leakage.,"R_x=0 at first order for extra fields, or residue B_x must be evaluated",R_h identity does not silence extra modes by itself,GUARD_ACTIVE,False

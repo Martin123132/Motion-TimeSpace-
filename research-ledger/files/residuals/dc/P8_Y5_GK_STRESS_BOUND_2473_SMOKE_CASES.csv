@@ -1,0 +1,6 @@
+timestamp_utc,branch_id,checkpoint_id,valid_for_claim,claim_allowed,smoke_id,case,expected_status,purpose
+2026-06-22T07:37:50.085851+00:00,MTS_R2FR_GK_STRESS_BOUND_LOCAL_ARENA_PROJECTION_RUNNER_2473,2473,False,False,SMOKE2473_0_all_missing,all arenas with placeholder coefficients,BLOCKED,runner must report missing inputs and claim_allowed=false
+2026-06-22T07:37:50.085865+00:00,MTS_R2FR_GK_STRESS_BOUND_LOCAL_ARENA_PROJECTION_RUNNER_2473,2473,False,False,SMOKE2473_1_numeric_nonclaim,toy numeric coefficients with valid_for_claim=false,COMPUTE_BUT_NONCLAIM,schema arithmetic works but no evidence claim
+2026-06-22T07:37:50.085875+00:00,MTS_R2FR_GK_STRESS_BOUND_LOCAL_ARENA_PROJECTION_RUNNER_2473,2473,False,False,SMOKE2473_2_bad_units,positive numeric values but unrecognized units,BLOCKED,unit parser must reject
+2026-06-22T07:37:50.085882+00:00,MTS_R2FR_GK_STRESS_BOUND_LOCAL_ARENA_PROJECTION_RUNNER_2473,2473,False,False,SMOKE2473_3_fitted_GM_flag,orbital row uses fitted GM as source,REJECTED,anti-circularity guardrail
+2026-06-22T07:37:50.085888+00:00,MTS_R2FR_GK_STRESS_BOUND_LOCAL_ARENA_PROJECTION_RUNNER_2473,2473,False,False,SMOKE2473_4_future_claim,"all coefficients numeric, sourced, units valid, valid_for_claim=true",FUTURE_ONLY,not expected in 2473

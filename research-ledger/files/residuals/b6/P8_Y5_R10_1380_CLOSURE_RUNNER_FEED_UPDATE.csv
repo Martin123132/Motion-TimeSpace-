@@ -1,0 +1,7 @@
+feed_id,runner_field,update,status,runner_expression,blocks_numeric,valid_for_claim,claim_allowed
+CFU1380_0_kappa_field,kappa_m,set symbolic origin kappa_m := Z_m,SOURCE_BACKED_SYMBOLIC_SLOT_READY,kappa_m=Z_m,Z_m sign/value/units and parent field status missing,False,False
+CFU1380_1_length_field,ell_tr,replace kappa_m with Z_m in transition length,SYMBOLIC_FORMULA_READY,ell_tr=sqrt(Z_m*L0^2/F2),"Z_m, F2, L0 not source-backed numerically",False,False
+CFU1380_2_stability_gate,sign_condition,require Z_m*F2>0 for real static relaxation length,SIGN_GATE_READY_VALUE_MISSING,Z_m*F2>0,signs missing,False,False
+CFU1380_3_stress_retention,Q_trans/Q_mem stress,retain scalar gradient stress after using Z_m to generate the profile,STRESS_GUARD_READY_BOUND_MISSING,retain |Z_m| grad_m^2 and related stress terms unless separately bounded,stress bounds and units missing,False,False
+CFU1380_4_shell_gate,shell_status,no finite shell bound found; shell gate remains required,SHELL_BOUND_BLOCKED,shell_status=MISSING_EXPLICIT_FINITE_BOUND,projector theorem or finite shell bound missing,False,False
+CFU1380_5_verdict,closure_runner_status,1380 can improve symbolic runner wiring but cannot score local claims,SYMBOLIC_RUNNER_IMPROVED_NONCLAIM,allow symbolic dry-run; block numeric/local-GR pass,"missing coefficient values, shell bound, and arena projection",False,False

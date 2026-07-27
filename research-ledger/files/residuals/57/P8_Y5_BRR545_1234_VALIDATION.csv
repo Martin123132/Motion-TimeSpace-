@@ -1,0 +1,14 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1234_0_sources_exist,all cited local sources exist,PASS,10/10 sources exist,False,False
+VAL1234_1_needles_found,all cited local needles found,PASS,10/10 needles found,False,False
+VAL1234_2_em_not_closed,EM owner uniqueness is not promoted,PASS,EMU1234_6 verdict=EM_OWNER_UNIQUENESS_NOT_CLOSED,False,False
+VAL1234_3_unique_F2_active,unique-F2 counterexample remains active,PASS,EMB1234_0 status=ACTIVE,False,False
+VAL1234_4_qcd_staged,quark-gluon fallback route is staged,PASS,QGE1234_1 exact conditional route,False,False
+VAL1234_5_no_edges_signed,no graph edge is counted as parent-signed,PASS,counts_for_connected_graph=false for all updated edges,False,False
+VAL1234_6_finite_backstop,finite EM residual backstop remains active,PASS,finite_em_rows=3,False,False
+VAL1234_7_claim_gates_blocked,all claim gates remain blocked,PASS,blocked_gates=5/5,False,False
+VAL1234_8_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables,False,False
+VAL1234_9_next_target_1235,next target attacks unique-F2 typed domain or QCD edge,PASS,1235-Y5-R10-unique-F2-typed-coefficient-domain-or-QCD-color-edge-owner.md,False,False
+VAL1234_10_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1234_SOURCE_REGISTER.csv:10; P8_Y5_R10_1234_EM_OWNER_UNIQUENESS_PROOF_ATTEMPT.csv:7; P8_Y5_R10_1234_EM_OWNER_BLOCKER_LEDGER.csv:4; P8_Y5_R10_1234_QUARK_GLUON_EDGE_OWNER_FALLBACK.csv:3; P8_Y5_R10_1234_GRAPH_EDGE_STATUS_UPDATE.csv:3; P8_Y5_R10_1234_FINITE_EM_RESIDUAL_BACKSTOP.csv:3; P8_Y5_R10_1234_DECISION_LEDGER.csv:3; P8_Y5_R10_1234_CLAIM_GATES.csv:5; P8_Y5_R10_1234_NEXT_TARGET.csv:1,False,False
+VAL1234_11_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_write_count_since_run_start=0,False,False
+VAL1234_12_overall,overall 1234 validation,PASS,"1234 refuses EM-owner promotion, identifies unique-F2 as the sharp blocker, and stages QCD edge fallback",False,False

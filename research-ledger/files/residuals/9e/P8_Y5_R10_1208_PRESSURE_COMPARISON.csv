@@ -1,0 +1,5 @@
+comparison_id,object,formula,target,derived_requirement,current_status,valid_for_claim,claim_allowed
+CMP1208_0_preserved_projector_target,q_projector,epsilon_geom*G_res_norm <= target,1.1723321502596888e-05,target preserved from 1207,TARGET_PRESERVED_VALUES_MISSING,False,False
+CMP1208_1_isolated_nabla_requirement,nabla_P_loc_Linf,"if coframe/domain/stress terms vanish, C_P*nabla_P_loc_Linf*G_res_norm <= target",1.1723321502596888e-05,nabla_P_loc_Linf <= target/(C_P*G_res_norm),SYMBOLIC_REQUIREMENT_VALUES_MISSING,False,False
+CMP1208_2_fermi_curvature_requirement,Fermi curvature smallness,C_P*(C_Fermi*L_D*Riemann_norm + C_Fermi2*L_D^2*nabla_Riemann_norm)*G_res_norm <= target,1.1723321502596888e-05,local domain radius and curvature must make projector drift below R10 harsh split,BEST_NEXT_NUMERIC_GATE_VALUES_MISSING,False,False
+CMP1208_3_absorption_requirement,projector perturbation absorption,C_CK*C_P*(nabla_P_loc_Linf + coframe_lock_Linf + domain_motion_Linf + projector_stress_Linf) < 1,<1,same geometry source rows must also satisfy the CK absorption gate,SYMBOLIC_REQUIREMENT_VALUES_MISSING,False,False

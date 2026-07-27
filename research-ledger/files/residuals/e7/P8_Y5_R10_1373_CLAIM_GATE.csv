@@ -1,0 +1,7 @@
+gate_id,gate,status,reason,valid_for_claim,claim_allowed
+GATE1373_0_cdb_no_flux,K_cdb no-flux/domain theorem closes,BLOCKED_THEOREM_NOT_DERIVED,fixed L0 does not silence connection/projector/boundary response; domain and boundary shortcuts fail or remain conditional.,False,False
+GATE1373_1_Q_components_contracts,all Q_norm components have first-fill contracts,PASS_CONTRACTS_READY,"Q_alg,Q_cdb,Q_mem,Q_bdy,Q_trans,Q_proj rows now have formulas, units, source paths, and acceptance status.",False,False
+GATE1373_2_Q_components_numeric,all Q_norm components are numeric or theorem-zero,BLOCKED_VALUES_MISSING,"contracts are ready, but values/operator norms/amplitude laws remain missing.",False,False
+GATE1373_3_proxy_import,old compact-shell proxy can be used as Q_norm,BLOCKED_PROXY_NOT_IMPORTED,proxy lacks PPN/source-normalization mapping.,False,False
+GATE1373_4_runner_executable,Q_norm/Cassini runner can execute a score,BLOCKED_INPUTS_MISSING,"Q components, U_min, N_G, and N_D remain unfilled.",False,False
+GATE1373_5_local_claim,local GR / PPN / R10 pass can be claimed,BLOCKED_NO_CLAIM,no CDB theorem and no numeric Q_norm bound pass.,False,False

@@ -1,0 +1,6 @@
+gate_id,gate,status,reason,valid_for_claim,claim_allowed
+GATE1383_0_sources,all cited sources exist and anchors are present,PASS,source register validates against local corpus,False,False
+GATE1383_1_validator,strict symbolic prior validator exists,PASS_SYMBOLIC_VALIDATOR,validator rows identify the missing priors and keep pass_for_numeric=false,False,False
+GATE1383_2_algebra,transition inequalities may be used algebraically,PASS_ALGEBRA_ONLY,"ell_tr, U_B, Delta_m, gradient, Q_alg, and stress target inequalities are written as dry-run rows",False,False
+GATE1383_3_numeric,numeric scoring can run,BLOCKED_NUMERIC_INPUTS_MISSING,"all validator rows would need source-backed, claim-grade inputs before scoring",False,False
+GATE1383_4_local_claim,local GR / PPN / R10 pass can be claimed,BLOCKED_NO_CLAIM,"1383 is a refusal-aware algebraic dry-run, not a parent-signed local reduction",False,False

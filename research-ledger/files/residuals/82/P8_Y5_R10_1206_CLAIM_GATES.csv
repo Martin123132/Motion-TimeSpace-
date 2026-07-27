@@ -1,0 +1,5 @@
+gate_id,gate,status,reason,valid_for_claim,claim_allowed
+GATE1206_0_lowered_boundary_not_numeric,q_boundary numeric score,BLOCKED,"normal-trace law is derived, but C_pair, C_NT, K_T_L2, G_res_norm, and R_perp are missing",False,False
+GATE1206_1_lowered_projector_not_numeric,q_projector numeric score,BLOCKED,"epsilon_geom formula is derived, but geometric leakage norms, C_CK, and G_res_norm are missing",False,False
+GATE1206_2_no_placeholder_rhs,lowered formulas avoid B_T/eps_P placeholders,ACTIVE_GUARD,RHS uses lower-level geometric/source constants rather than undefined B_T or eps_P rows,False,False
+GATE1206_3_R10_local_GR,R10/local-GR branch,BLOCKED,lowered contracts are not yet numeric/source-backed and official W_R10 remains nonclaim,False,False

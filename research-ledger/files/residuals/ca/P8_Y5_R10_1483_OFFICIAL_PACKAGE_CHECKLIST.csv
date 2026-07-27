@@ -1,0 +1,14 @@
+same_parent_branch_id,check_id,required_item,target_bucket,current_status,why_required,claim_ready,valid_prediction_row,valid_for_claim,claim_allowed
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,PKG1483_0_package_id,official package id / module id,metadata,MISSING,required before any download is treated as official,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,PKG1483_1_filelist,portal file list with filenames and product categories,metadata,MISSING,needed to distinguish raw/calibrated/aux/orbit products,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,PKG1483_2_checksums,checksums or reproducible hash manifest,metadata,MISSING,guards against silent file mutation,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,PKG1483_3_license_access,license/access terms and citation requirement,docs,MISSING,needed for source provenance,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,PKG1483_4_data_dictionary,official data dictionary/schema,docs,MISSING,needed before parser can read arrays,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,PKG1483_5_readout_arrays,accelerometer/readout arrays with timestamps and masks,official_readout,MISSING_LIVE_FILE,needed for K_CMSM,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,PKG1483_6_attitude_orbit,"attitude, angular velocity/acceleration, orbit position/velocity",official_readout,MISSING_LIVE_FILE,needed for projection and orbit average,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,PKG1483_7_session_masks,"science session, calibration, glitch/onboard masks",official_readout,MISSING_LIVE_FILE,needed for final-analysis weighting,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,PKG1483_8_source_worldtube,Earth/source profile or source projection model,source_worldtube,MISSING_LIVE_FILE,needed for R_source,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,PKG1483_9_units_axes,"axis orientation, units, sign/body-order convention",product_convention,PARTIAL_PENDING,needed to lock tau sign and compare to eta,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,PKG1483_10_branch_lock,same-parent-branch id across all inputs,branch_classifier,GUARD_ONLY_NONCLAIM,prevents mixed-basis claims,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,PKG1483_11_C_parent,theorem-zero or sourced finite parent coefficient,coefficients,MISSING_LIVE_FILE,needed for a real MTS prediction,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,PKG1483_12_material_tensor,full TA6V-minus-PtRh10 parent-basis material tensor,derived,MISSING_LIVE_FILE,needed for R_material,False,False,False,False

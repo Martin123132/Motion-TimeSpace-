@@ -1,0 +1,5 @@
+case_id,branch_type,value_mode,q_R_hat,gamma_minus_1_QR,abs_gamma_minus_1_QR,N_sigma,sigma_gamma,pass_rule_evaluated,raw_numeric_pass,runner_status,runner_reason,valid_for_claim,claim_allowed
+CASE1245_0_policy_fed_missing_qR,finite_residual,missing_source,MISSING_QR_VALUE,,,1,2.3e-5,False,False,REFUSED_MISSING_QR,policy and GM convention are now present; finite q_R_hat or zero theorem is still missing,False,False
+CASE1245_1_policy_fed_comparator_only,finite_residual,comparator_only,MISSING_QR_VALUE,,,1,2.3e-5,False,False,REFUSED_COMPARATOR_ONLY,"comparator and policy exist, but no MTS q_R_hat prediction/value is supplied",False,False
+CASE1245_2_policy_fed_hypothetical_pass,finite_residual,numeric_value,1.0e-5,-5e-06,5e-06,1,2.3e-5,True,True,SCHEMA_MATH_ONLY_NOT_EVIDENCE,synthetic value proves the policy-fed arithmetic only; it is not sourced MTS evidence,False,False
+CASE1245_3_policy_fed_hypothetical_fail,finite_residual,numeric_value,5.0e-5,-2.5e-05,2.5e-05,1,2.3e-5,True,False,SCHEMA_MATH_ONLY_NOT_EVIDENCE,synthetic value proves the policy-fed arithmetic only; it is not sourced MTS evidence,False,False

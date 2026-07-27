@@ -1,0 +1,13 @@
+check_id,check,status,details
+VAL1291_0_sources_exist,registered source paths exist and anchors are found,PASS,16/16 source anchors found
+VAL1291_1_strict_clause_written,strict F=(m-m*)^2H parent clause is written as nonclaim,PASS,SDZ1291_1_strict_F_form
+VAL1291_2_variation_zero_conditional,metric-chain variation zero is shown conditionally,PASS,VP1291_1_metric_variation
+VAL1291_3_adoption_gates_blocked,adoption gates keep the sufficient clause from becoming a claim,PASS,adoption_gate_rows=6
+VAL1291_4_residual_bound_ledger_retained,chain residual bound ledger is retained as nonclaim fallback,PASS,KRB1291_3_residual_verdict
+VAL1291_5_DeltaK_still_blocked,DeltaK00 remains not computable,PASS,DKS1291_2_DeltaK00
+VAL1291_6_claim_gates_blocked,claim gates block local GR/PPN promotion,PASS,claim_gate_rows=5
+VAL1291_7_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1291_SOURCE_REGISTER.csv:16; P8_Y5_R10_1291_STRICT_DOUBLE_ZERO_PARENT_CLAUSE.csv:6; P8_Y5_R10_1291_VARIATION_PROOF_NONCLAIM.csv:5; P8_Y5_R10_1291_ADOPTION_GATES.csv:6; P8_Y5_R10_1291_CHAIN_KERNEL_RESIDUAL_BOUND_LEDGER.csv:4; P8_Y5_R10_1291_DELTAK_STATUS_UPDATE.csv:3; P8_Y5_R10_1291_CLAIM_GATES.csv:5; P8_Y5_R10_1291_DECISION_LEDGER.csv:3; P8_Y5_R10_1291_NEXT_TARGET.csv:1
+VAL1291_8_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1291_9_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1291_10_next_target_1292,next target routes to source-match or residual runner input,PASS,1292-Y5-R10-RAB-F-form-and-m-Lcg-parent-source-match-or-residual-runner-input.md
+VAL1291_11_overall,overall 1291 validation,PASS,"1291 writes the strict double-zero parent clause, proves its conditional chain-kernel silence, blocks adoption until source match, and stages residual bounds"

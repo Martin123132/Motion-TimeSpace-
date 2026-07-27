@@ -1,0 +1,139 @@
+# 1461 - Parent source factorization/no-relative-source-label proof or CMSM inventory
+
+**Current verdict:** the clean proof route is now reduced to one sharp parent-action statement: the active source functor must forget species/material labels before coupling, and the parent matter grammar must contain no source-only `w_A`, `J_A`, `kappa_A`, marker, or non-Hilbert bypass. The math is clean, but the current corpus has not signed those clauses, so `delta_q(x)=0` is not imported.
+
+**Useful progress:** this is not a mushy failure. We know exactly what must be proved next: common measure/current normalization and no relative source slot. Because that proof is still open, 1461 also writes fail-closed CMSM inventory/checksum/extraction templates for the official data route.
+
+## Source register
+
+| source_id | source_path | exists | role | valid_prediction_row | valid_for_claim | claim_allowed |
+| --- | --- | --- | --- | --- | --- | --- |
+| SRC1461_0_prev_next | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_1460_NEXT_TARGET.csv | True | 1460 handoff | False | False | False |
+| SRC1461_1_prev_validation | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_BRR545_1460_VALIDATION.csv | True | 1460 validation | False | False | False |
+| SRC1461_2_prev_source_decomp | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_1460_SOURCE_DECOMPOSITION_AND_ZERO_CONDITIONS.csv | True | 1460 source decomposition | False | False | False |
+| SRC1461_3_prev_point_theorem | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_1460_CALIBRATED_POINT_SOURCE_THEOREM_REOPEN.csv | True | 1460 calibrated point-source theorem | False | False | False |
+| SRC1461_4_prev_acq_route | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_1460_OFFICIAL_DATA_ACQUISITION_ROUTE.csv | True | 1460 official acquisition route | False | False | False |
+| SRC1461_5_prev_signing | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_1460_PARENT_SIGNING_DECISION.csv | True | 1460 signing decision | False | False | False |
+| SRC1461_6_label_stack_1231 | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_1231_SOURCE_LABEL_FORGETTING_PROOF_STACK.csv | True | source-label forgetting proof stack | False | False | False |
+| SRC1461_7_common_mode_1332 | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_1332_COMMON_MODE_SOURCE_THEOREM.csv | True | common-mode source theorem | False | False | False |
+| SRC1461_8_common_mode_reduction_1337 | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_1337_COMMON_MODE_PREMISE_REDUCTION.csv | True | common-mode premise reduction | False | False | False |
+| SRC1461_9_common_mode_status_1338 | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_1338_COMMON_MODE_THEOREM_STATUS.csv | True | common-mode theorem status | False | False | False |
+| SRC1461_10_source_label_1450 | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_1450_HILBERT_SOURCE_LABEL_FORGETTING_THEOREM_ATTEMPT.csv | True | Hilbert source-label forgetting attempt | False | False | False |
+| SRC1461_11_common_G_guard_1450 | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_1450_COMMON_MODE_ABSORPTION_GUARD.csv | True | common G absorption guard | False | False | False |
+| SRC1461_12_no_slot_1451 | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\microscope\branch_locked_wep\coefficients\no_source_only_slot_operator_grammar_theorem_attempt_1451.csv | True | no-source-only-slot grammar attempt | False | False | False |
+| SRC1461_13_no_slot_signing_1451 | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\microscope\branch_locked_wep\coefficients\C_parent_WEP_no_source_slot_signing_decision_1451.csv | True | no-source-only-slot signing decision | False | False | False |
+| SRC1461_14_countermodel_1449 | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\microscope\branch_locked_wep\coefficients\source_only_countermodel_retention_1449.csv | True | source-only countermodel retention | False | False | False |
+| SRC1461_15_source_world_1456 | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\microscope\branch_locked_wep\coefficients\source_worldtube_projection_theorem_attempt_1456.csv | True | source-worldtube theorem attempt | False | False | False |
+| SRC1461_16_external_1070 | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_1070_EXTERNAL_MICROSCOPE_READOUT_SOURCE_LEDGER.csv | True | MICROSCOPE external source ledger | False | False | False |
+| SRC1461_17_orbit_req_1068 | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_1068_MICROSCOPE_ORBIT_READOUT_REQUIREMENTS.csv | True | MICROSCOPE orbit/readout requirements | False | False | False |
+
+## Parent source factorization proof attempt
+
+| same_parent_branch_id | proof_id | claim_piece | formal_statement | proof_move | status | if_signed | current_blocker | parent_signed | valid_prediction_row | valid_for_claim | claim_allowed |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | PSF1461_0_target | parent source factorization | rho_q(x)=q0 rho_m(x) for every ordinary Earth-source component, hence delta_q(x)=0 | make the active source functor factor through total Hilbert/coframe stress before any species/material label can enter | TARGET_SHARPENED | 1460 relative source-worldtube residual vanishes except ordinary common GM calibration and bounded metric multipoles | source functor label-forgetting and no-source-only-slot grammar are not parent-signed | False | False | False | False |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | PSF1461_1_Hilbert_total_source | single matter action gives one total active source | T_H^{mu nu}=2/sqrt(-g) delta S_matter/delta g_obs_munu = sum_A T_A^{mu nu} | vary the summed action once, then couple geometry to T_H rather than to labelled pairs (T_A,A) | EXACT_CONDITIONAL_MATH | species labels become bookkeeping after variation | constant per-sector weights w_A inside S_matter still survive unless the parent grammar forbids them | False | False | False | False |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | PSF1461_2_natural_additive_uniqueness | label-forgotten local source map has one scalar normalization | F_src(phi_*T)=phi_*F_src(T), F_src(T+U)=F_src(T)+F_src(U) -> F_src(T)=kappa0 T in the local GR branch | after label forgetting, covariance and additivity leave only one measured-G normalization | CONDITIONAL_UNIQUENESS | q0 can be calibrated as common G/GM and cannot form WEP source contrast | the theorem assumes labels have already been forgotten; it does not prove that | False | False | False | False |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | PSF1461_3_no_relative_slot_clause | no source-only coefficient slot | Allowed[S_matter] has no independent w_A, J_A, kappa_A, marker_A, or source-owner argument distinct from observed matter dynamics | ban Hom(species/material label, active-source coefficient semiring) at parent action grammar level | REQUIRED_CLAUSE_NOT_REDUCED | delta_q(x)=0 follows for ordinary matter source labels | AX1090/no-hidden-visible-hom and common measure/current clauses remain unsigned | False | False | False | False |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | PSF1461_4_countermodel | legal relative source label obstruction | S_matter=sum_A w_A S_A remains covariant/additive and gives T_src=sum_A w_A T_A | exhibits the exact object that must be forbidden, not merely disliked | COUNTERMODEL_SURVIVES | nothing; this blocks promotion until the no-slot clause is signed | current corpus has not excluded constant relative action/source weights | False | False | False | False |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | PSF1461_5_delta_q_verdict | delta_q(x)=0 proof status | delta_q(x)=0 is derivable iff PSF1461_1, PSF1461_2, PSF1461_3, and non-Hilbert/readout silence all parent-sign | reduce the zero to a precise parent grammar contract | PROOF_NOT_CLOSED | source-worldtube burden collapses to ordinary metric source/readout plus finite metric multipoles | relative w_A / J_A / marker / non-Hilbert current countermodels remain live | False | False | False | False |
+
+## No-relative-source-label audit
+
+| same_parent_branch_id | audit_id | needed_clause | exact_condition | current_evidence | status | blocks_delta_q_zero | next_action | valid_for_claim | claim_allowed |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | NRS1461_0_source_functor_domain | source functor domain is total stress, not labelled stress pairs | F_src: Stress_total -> Geometry_source, not F_src: {(T_A,A)} -> Geometry_source | 1450/1231 conditional source-label forgetting stack | CONDITIONAL_NOT_PARENT_SIGNED | True | derive source quotient q_src from parent action/category, or retain delta_q(x) | False | False |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | NRS1461_1_common_measure_current | one measure/action/current normalization for all ordinary matter sectors | no species Jacobian J_A and no independent action scale hbar_A/w_A in the active source channel | 1451/1452 common-measure/current still unsigned | MISSING_AXIOM_NOT_REDUCED | True | prove common measure/current from parent matter descent, or bound the induced residual | False | False |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | NRS1461_2_no_hidden_marker_hom | hidden/MTS marker cannot feed source coefficients | Hom(C_hidden or marker, Coeff_source)=0 in the local matter branch | AX1090/no-hidden-visible-hom not reduced | MISSING_PARENT_SIGNATURE | True | derive no-hidden-visible-hom or keep qbar_marker/source rows live | False | False |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | NRS1461_3_nonHilbert_current_silence | no non-Hilbert current bypasses the total stress source | J_NH=0, exact/projected-silent, or bounded in the WEP readout | 1450 keeps non-Hilbert parallel gate open | OPEN_PARALLEL_GATE | True | derive non-Hilbert silence or add residual coefficient rows | False | False |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | NRS1461_4_readout_no_reentry | downstream readout/source-worldtube kernels cannot recreate species labels | K_eta and K_X act on the already-varied parent source and have no material/species selector argument | 1454/1456 conditional downstream-order theorem | CONDITIONAL_SOURCE_FILES_MISSING | True | import official K_CMSM/source-worldtube or prove readout label silence | False | False |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | NRS1461_5_delta_q_zero_decision | all no-relative-source-label clauses close together | NRS1461_0..4 parent-signed | multiple clauses remain conditional/open | DELTA_Q_ZERO_NOT_PROMOTED | True | build CMSM inventory/checksum scaffold while continuing the parent grammar derivation | False | False |
+
+## Source-label countermodel audit
+
+| same_parent_branch_id | countermodel_id | countermodel | why_survives | effect_on_delta_q | retention_decision | valid_prediction_row | valid_for_claim | claim_allowed |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | CM1461_0_relative_wA | S_matter=sum_A w_A S_A | covariant/additive and not excluded by current parent grammar | delta_q(x) becomes composition/source-profile dependent | RETAIN_LIVE_NONCLAIM | False | False | False |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | CM1461_1_species_measure_jacobian | species-dependent measure/current normalization J_A | common measure/current owner not parent-derived | bypasses Hilbert total-source uniqueness | RETAIN_LIVE_NONCLAIM | False | False | False |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | CM1461_2_hidden_marker_source_weight | w_A(Xhat, marker, material) source coefficient | no-hidden-visible-hom and no-marker extension are unsigned | source charge varies with hidden/material profile | RETAIN_LIVE_NONCLAIM | False | False | False |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | CM1461_3_nonHilbert_source_current | J_src = kappa T_Hilbert + J_NH | non-Hilbert current silence is not proven | source residual can survive without appearing as species stress label | RETAIN_LIVE_NONCLAIM | False | False | False |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | CM1461_4_readout_selector_reentry | source-worldtube/readout kernel selects material/source profile after variation | official downstream kernel not imported and readout no-reentry not source-signed | pipeline can manufacture or hide an apparent source residual | RETAIN_LIVE_NONCLAIM | False | False | False |
+
+## CMSM inventory scaffold
+
+| same_parent_branch_id | inventory_id | object | source_url_or_path | needed_action | local_quarantine_target | current_status | checksum_required | live_import_allowed | valid_for_claim | claim_allowed |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | CMSM1461_0_portal | CMSM/ONERA data portal | https://cmsm-ds.onera.fr/ | open portal in browser, record dataset names, file URLs, access/licence notes, and metadata dictionary | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\microscope\quarantine\1461\CMSM_OFFICIAL_INVENTORY_TEMPLATE_QUARANTINE_NONCLAIM.csv | SCAFFOLD_ONLY_NOT_INVENTORIED | True | False | False | False |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | CMSM1461_1_readout_arrays | K_CMSM official readout arrays | https://cmsm-ds.onera.fr/ | identify files containing time/session/orbit, sensitive-axis readout, gx/gz, Sxx/Sxz, masks and calibration flags | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\microscope\quarantine\1461\CMSM_OFFICIAL_INVENTORY_TEMPLATE_QUARANTINE_NONCLAIM.csv | MISSING_OFFICIAL_ARRAYS | True | False | False | False |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | CMSM1461_2_orbit_attitude | orbit/attitude/mask kernel inputs | https://cmsm-ds.onera.fr/ | identify ephemeris, attitude/quaternion or axis convention, segment windows, and flags needed for K_eta | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\microscope\quarantine\1461\CMSM_OFFICIAL_INVENTORY_TEMPLATE_QUARANTINE_NONCLAIM.csv | MISSING_KERNEL_INPUTS | True | False | False | False |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | CMSM1461_3_extraction_schema | reproducible extractor schema | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\microscope\quarantine\1461\CMSM_EXTRACTION_SCHEMA_TEMPLATE_QUARANTINE_NONCLAIM.csv | map raw columns to official_readout/source_worldtube/material tensor schemas with units and sign conventions | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\microscope\quarantine\1461\CMSM_EXTRACTION_SCHEMA_TEMPLATE_QUARANTINE_NONCLAIM.csv | TEMPLATE_WRITTEN_NONCLAIM | False | False | False | False |
+
+## CMSM checksum and extraction scaffold
+
+| same_parent_branch_id | checksum_id | field | purpose | template_path | current_status | valid_for_claim | claim_allowed |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | CHK1461_0_manifest_template | dataset_id,file_name,source_url,local_quarantine_path,sha256,row_count,byte_count,downloaded_utc,source_note,valid_for_claim | prevent portal files or manual exports from becoming evidence without hash and provenance | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\microscope\quarantine\1461\CMSM_DOWNLOAD_CHECKSUM_MANIFEST_TEMPLATE_QUARANTINE_NONCLAIM.csv | TEMPLATE_WRITTEN_EMPTY_NONCLAIM | False | False |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | CHK1461_1_extractor_template | raw_dataset_id,target_schema,column_map,unit_map,sign_convention,mask_rule,source_path,valid_for_claim | force a declared column/unit/sign map before any live official row can be produced | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\microscope\quarantine\1461\CMSM_EXTRACTION_SCHEMA_TEMPLATE_QUARANTINE_NONCLAIM.csv | TEMPLATE_WRITTEN_EMPTY_NONCLAIM | False | False |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | CHK1461_2_claim_guard | promotion requires hash, source URL/path, no placeholders, schema parse, branch lock, and validation pass | keep data plumbing useful while preserving no-claim discipline | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\microscope\quarantine\1461\CMSM_OFFICIAL_INVENTORY_TEMPLATE_QUARANTINE_NONCLAIM.csv | PROMOTION_BLOCKED_BY_DEFAULT | False | False |
+
+## Live import guard
+
+| same_parent_branch_id | live_guard_id | object | live_path | exists_now | would_write_in_1461 | reason | valid_prediction_row | valid_for_claim | claim_allowed |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | LIVE1461_0_official_readout | official_readout | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\microscope\official_readout\P_WEP_K_CMSM_readout.csv | False | False | 1461 writes only nonclaim ledgers and quarantine templates | False | False | False |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | LIVE1461_1_source_worldtube | source_worldtube | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\microscope\source_worldtube\P_WEP_R_source_Earth_worldtube.csv | False | False | 1461 writes only nonclaim ledgers and quarantine templates | False | False | False |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | LIVE1461_2_material_tensor | material_tensor | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\microscope\derived\P_WEP_R_material_TA6V_minus_PtRh10_full_tensor.csv | False | False | 1461 writes only nonclaim ledgers and quarantine templates | False | False | False |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | LIVE1461_3_C_parent | C_parent_WEP | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\microscope\branch_locked_wep\coefficients\C_parent_WEP_slot_import.csv | False | False | 1461 writes only nonclaim ledgers and quarantine templates | False | False | False |
+
+## Reduction gates
+
+| same_parent_branch_id | gate_id | gate | gate_pass | blocking_reason | valid_prediction_row | valid_for_claim | claim_allowed |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | GATE1461_0_conditional_factorization_written | conditional theorem reducing delta_q=0 to no-relative-source-label clauses is written | True | none; reduction is exact but conditional | False | False | False |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | GATE1461_1_source_label_forgetting_signed | source functor forgets species/material labels before coupling | False | label-forgetting remains a parent contract, not a signed theorem | False | False | False |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | GATE1461_2_no_source_only_slot_signed | no w_A/J_A/kappa_A/marker_A source-only slot in parent action | False | relative source-weight countermodel survives | False | False | False |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | GATE1461_3_nonHilbert_readout_silence | non-Hilbert/readout re-entry channels are silent | False | parallel current/readout selector gates remain open | False | False | False |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | GATE1461_4_delta_q_zero | delta_q(x)=0 promoted | False | requires gates 1-3; not parent-signed | False | False | False |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | GATE1461_5_CMSM_scaffold | CMSM inventory/checksum scaffold written | True | scaffold only; no data acquired or imported | False | False | False |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | GATE1461_6_local_claim | local WEP/local-GR claim allowed | False | delta_q zero, official source pack, material tensor, and C_parent remain absent | False | False | False |
+
+## Parent signing decision
+
+| same_parent_branch_id | decision_id | target | conditional_reduction_written | source_label_forgetting_signed | no_source_only_slot_signed | common_measure_current_signed | nonHilbert_readout_silence_signed | CMSM_scaffold_written | delta_q_zero_import_allowed | C_parent_WEP_import_allowed | tau_WEP_numeric_allowed | local_claim_allowed | decision | reason | valid_prediction_row | valid_for_claim | claim_allowed |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | SIGN1461_0_source_factorization | delta_q(x)=0 from parent source factorization/no-relative-source-label theorem | True | False | False | False | False | True | False | False | False | False | REFUSE_DELTA_Q_ZERO_IMPORT_WRITE_CMSM_SCAFFOLD | the proof reduces to exact parent grammar clauses, but surviving countermodels show the current corpus has not signed those clauses | False | False | False |
+
+## Decision ledger
+
+| decision_id | decision | why | consequence | valid_for_claim |
+| --- | --- | --- | --- | --- |
+| DEC1461_0_derivation | delta_q(x)=0 is not assumed; it is reduced to a no-relative-source-label parent grammar theorem | this is the least hand-wavy route to collapsing the source-worldtube problem | MTS local-GR route gets a precise missing parent action clause rather than a vague coupling gap | False |
+| DEC1461_1_countermodels | retain relative source-weight, measure-current, hidden-marker, non-Hilbert, and readout-selector countermodels | each remains legal under the current signed corpus | no theorem-zero import and no tau_WEP numeric row | False |
+| DEC1461_2_CMSM | write CMSM inventory/checksum/extraction quarantine templates | if the proof path does not close soon, the data path must be reproducible and fail-closed | future official files can be acquired without touching live claim paths | False |
+
+## Validation
+
+| check_id | result | detail | generated_utc |
+| --- | --- | --- | --- |
+| VAL1461_0_sources | PASS | all cited local source paths exist | 2026-06-16T09:22:29.861920+00:00 |
+| VAL1461_1_proof_reduced_not_closed | PASS | delta_q zero proof reduced to parent clauses but not closed | 2026-06-16T09:22:29.861935+00:00 |
+| VAL1461_2_no_relative_blocks | PASS | no-relative-source-label clauses remain blocking and nonclaim | 2026-06-16T09:22:29.861938+00:00 |
+| VAL1461_3_countermodels_live | PASS | source-label countermodels remain live | 2026-06-16T09:22:29.861941+00:00 |
+| VAL1461_4_CMSM_scaffold_nonclaim | PASS | CMSM inventory scaffold is nonclaim and no live import is allowed | 2026-06-16T09:22:29.861943+00:00 |
+| VAL1461_5_checksum_scaffold_nonclaim | PASS | checksum/extraction scaffold is nonclaim | 2026-06-16T09:22:29.861946+00:00 |
+| VAL1461_6_quarantine_templates_parse | PASS | CMSM quarantine templates parse cleanly | 2026-06-16T09:22:29.861948+00:00 |
+| VAL1461_7_live_paths_untouched | PASS | critical live official/source/material/Cparent files remain absent | 2026-06-16T09:22:29.861950+00:00 |
+| VAL1461_8_gate_pattern_safe | PASS | only conditional reduction and scaffold gates pass; claim gates remain false | 2026-06-16T09:22:29.861953+00:00 |
+| VAL1461_9_signing_refuses | PASS | parent signing decision refuses delta_q/Cparent/tau/local claim | 2026-06-16T09:22:29.861955+00:00 |
+| VAL1461_10_generated_csv_parse | PASS | all generated 1461 CSVs parse cleanly | 2026-06-16T09:22:29.861957+00:00 |
+| VAL1461_11_branch_copies | PASS | nonclaim branch copies written | 2026-06-16T09:22:29.861960+00:00 |
+| VAL1461_12_pycache_absent | PASS | scripts __pycache__ absent after run | 2026-06-16T09:22:29.861962+00:00 |
+| VAL1461_13_formalization_untouched | PASS | formalization modified-file count since start=0 | 2026-06-16T09:22:29.861965+00:00 |
+| VAL1461_14_overall | PASS | 1461 reduces delta_q=0 to exact parent clauses and writes CMSM quarantine scaffolds without claim promotion | 2026-06-16T09:22:29.861967+00:00 |
+
+## Next target
+
+| next_id | next_target | script | objective | include | exclude | valid_for_claim | claim_allowed |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| NEXT1461_0_1462 | 1462-Y5-R10-RAB-common-measure-current-parent-signature-or-first-CMSM-inventory-fill.md | scripts/Y5_R10_RAB_common_measure_current_parent_signature_or_first_CMSM_inventory_fill.py | attack the sharpest remaining proof clause: common measure/current normalization; if it fails, fill the first CMSM quarantine inventory rows from official portal evidence | common measure/current theorem; species Jacobian countermodel; first CMSM inventory fill; checksum discipline; no live claim | numeric tau_WEP; local-GR pass; C_parent promotion; formalization-workbench edits; GitHub action | False | False |
+

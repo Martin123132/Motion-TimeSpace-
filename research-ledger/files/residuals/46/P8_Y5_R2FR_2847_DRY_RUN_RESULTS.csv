@@ -1,0 +1,6 @@
+dry_run_id,object,result,reason,control_only,score_ready,valid_prediction_row,valid_for_claim,claim_allowed,generated_utc
+DRY2847_0_schema,bound-map schema,PASS_SCHEMA_ONLY,comparator rows and prediction slots are present,True,False,False,False,False,2026-06-24T11:59:15.148752+00:00
+DRY2847_1_predictions,MTS finite prediction rows,FAIL_MISSING_INPUTS,"A_total, delta_p/q_R_hat, b_R, beta vector, preferred-frame, endpoint/readout and q_loc inputs are missing",True,False,False,False,False,2026-06-24T11:59:15.148755+00:00
+DRY2847_2_scoring,numeric score,NOT_RUN,dry run refuses scoring while prediction rows are missing,True,False,False,False,False,2026-06-24T11:59:15.148758+00:00
+DRY2847_3_claim,local GR/Newton/PPN claim,BLOCKED,full-vector gates are open and parent owner theorem is not signed,True,False,False,False,False,2026-06-24T11:59:15.148761+00:00
+DRY2847_4_next,first finite/theorem row target,SELECTED,next step should fill the first real A_total/delta_p/q_R_hat row or parent theorem-zero certificate,True,False,False,False,False,2026-06-24T11:59:15.148764+00:00

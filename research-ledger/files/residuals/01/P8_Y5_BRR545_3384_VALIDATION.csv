@@ -1,0 +1,12 @@
+check_id,check,passed,detail
+VAL3384_0_sources_exist_parse,all cited 3384 source paths exist and parse,true,
+VAL3384_1_outputs_parse,all generated CSV outputs parse cleanly,true,parsed=10 expected=10
+VAL3384_2_gamma_attempt,Gamma attempt conditionally zeros pole but blocks full floor,true,
+VAL3384_3_cmetric_attempt,Cmetric attempt blocks zero claim and stages bound formula,true,
+VAL3384_4_gamma_bound_rows,first gamma PPN bound row and Gamma proxy smoke row exist,true,
+VAL3384_5_runner,"runner records conditional pole zero, full Gamma failure, missing Cmetric product, external bound and firewall",true,
+VAL3384_6_gates,"gates pass gamma pole and external bound but block full Gamma, Cmetric product and local GR",true,
+VAL3384_7_no_overclaim_flags,all generated rows with valid_for_claim remain false,true,
+VAL3384_8_next_target,next target moves to A_gamma/Cmetric/epsilon_eff runner,true,
+VAL3384_9_write_scope_outside_formalization,no 3384 files were written under formalization-workbench,true,hits=0
+VAL3384_10_overall,3384 validation overall,true,all required checks passed

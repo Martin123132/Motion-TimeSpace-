@@ -1,0 +1,6 @@
+gate_id,condition,current_status,source_anchor,gate_pass,valid_for_claim
+CG1910_0_functional_shape,parent material response functional shape is exact,PASS_CONDITIONAL_ALGEBRA_ONLY,MRF1910_2_common_mode_zero; MRF1910_3_sector_response_law,False,False
+CG1910_1_parent_zero,all nonuniversal material coefficients are parent-zero or absent before readout,FAIL_NONUNIVERSAL_COEFFICIENT_ZERO_THEOREM_MISSING,CMZ1910_2_nonuniversal_residual; CP1080_0_definition,False,False
+CG1910_2_tensor_contract,exact mass-defect/material tensor rows are filled or theorem-zero,FAIL_EXACT_TENSOR_CONTRACT_UNFILLED,P8_Y5_PARENT_QLOC_1910_EXACT_MASS_DEFECT_TENSOR_CONTRACT_NONCLAIM.csv,False,False
+CG1910_3_source_readout,source-worldtube/readout/tau product is sourced or theorem-reduced,FAIL_SOURCE_READOUT_TAU_KERNEL_MISSING,MDT1910_7_source_readout_product,False,False
+CG1910_4_claim,1910 supports WEP/local-GR claim-grade reduction,CLAIM_BLOCKED,CG1910_0_functional_shape through CG1910_3_source_readout,False,False

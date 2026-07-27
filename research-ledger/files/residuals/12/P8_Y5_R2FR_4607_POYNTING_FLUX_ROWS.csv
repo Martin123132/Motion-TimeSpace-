@@ -1,0 +1,4 @@
+checkpoint,row_id,quantity,zero_condition,bound_formula,current_status,valid_for_claim,generated_utc
+4607,FX4607_0_stationary_zero,Phi_wall_Poynting_zero,"stationary isolated source collar, time_avg(dU_EM/dt)=0, time_avg(int J.E dV)=0, no external radiation/current crossing wall",Phi_wall_Poynting=0,CONDITIONAL_LOCAL_ZERO_NOT_GLOBAL,False,2026-07-06T15:34:21.454556+00:00
+4607,FX4607_1_wall_flux_bound,Phi_wall_Poynting_abs,not zeroed on open/radiative/nonstationary source collars,|Phi_wall_Poynting| <= |dU_EM/dt| + |int_W J.E dV| + |Phi_incoming| + |Phi_apparatus|,FINITE_FLUX_BOUND_TEMPLATE_VALUE_MISSING,False,2026-07-06T15:34:21.454556+00:00
+4607,FX4607_2_closed_domain_wall,epsilon_Poynting_flux,closed stationary wall or finite measured/modelled wall-flux bound,epsilon_Poynting_flux=|int_wall S_EM dot dA dt|/E_pos,MISSING_POYNTING_FLUX_BOUND,False,2026-07-06T15:34:21.454556+00:00

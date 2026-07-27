@@ -1,0 +1,13 @@
+check_id,check,status,details
+VAL1290_0_sources_exist,registered source paths exist and anchors are found,PASS,12/12 source anchors found
+VAL1290_1_fixed_field_kernel_zero_written,fixed-field scalar kernel-zero lemma is written as conditional nonclaim,PASS,MKA1290_0_fixed_field_scalar_branch
+VAL1290_2_strict_double_zero_identified,strict double-zero route is identified but not claimed,PASS,MKA1290_3_strict_double_zero_branch
+VAL1290_3_chain_zero_not_claimed,chain zero attempt remains conditional and blocked,PASS,FCZ1290_4_chain_zero_verdict
+VAL1290_4_residual_rows_retained,"m, Lcg, and connection/domain/boundary residual rows are retained",PASS,residual_rows=3
+VAL1290_5_DeltaK_narrower_not_computable,DeltaK00 status is narrowed but still not computable,PASS,DKU1290_2_DeltaK00_verdict
+VAL1290_6_claim_gates_blocked,claim gates block local GR/PPN promotion,PASS,claim_gate_rows=5
+VAL1290_7_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1290_SOURCE_REGISTER.csv:12; P8_Y5_R10_1290_METRIC_KERNEL_AUDIT.csv:5; P8_Y5_R10_1290_FIXED_POINT_CHAIN_ZERO_ATTEMPT.csv:5; P8_Y5_R10_1290_KERNEL_RESIDUAL_ROWS_NONCLAIM.csv:3; P8_Y5_R10_1290_DELTAK_STATUS_UPDATE.csv:3; P8_Y5_R10_1290_CLAIM_GATES.csv:5; P8_Y5_R10_1290_DECISION_LEDGER.csv:3; P8_Y5_R10_1290_NEXT_TARGET.csv:1
+VAL1290_8_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1290_9_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1290_10_next_target_1291,next target routes to strict double-zero parent clause or residual bounds,PASS,1291-Y5-R10-RAB-strict-double-zero-parent-clause-or-chain-kernel-residual-bound.md
+VAL1290_11_overall,overall 1290 validation,PASS,"1290 identifies the conditional fixed-field scalar kernel-zero lemma and the stricter F=Fprime=0 route, retains residual rows, and keeps DeltaK/local-GR nonclaim"

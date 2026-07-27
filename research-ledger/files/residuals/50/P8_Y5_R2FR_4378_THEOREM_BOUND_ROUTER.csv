@@ -1,0 +1,5 @@
+route_id,input,action,output,current_status,valid_for_claim
+ROUTE4378_0_parent_harmonic_null,delta rho_top=Delta u_top with boundary-silent u_top,set all E_l^top=0 for exterior Newton/local orbital scoring,topological exterior profile residual zero,CONDITIONAL_NOT_PARENT_SIGNED,False
+ROUTE4378_1_distributional_equality,rho_top=rho_H as distributions,"set E_top_profile=0, stronger than exterior moment silence",topological profile component closed,NOT_PROVED,False
+ROUTE4378_2_multipole_bound,"source-backed M_1m, M_2m or E_l^top values",score through |deltaa_l|/|a_N| <= E_l^top s^l,finite nonclaim topological multipole row,SCHEMA_READY_VALUES_MISSING,False
+ROUTE4378_3_coarse_KN,only coarse E_top_profile norm known,use |deltaa_top|/|a_N| <= K_N(s) E_top_profile,safe but usually weaker profile-norm bound,FALLBACK_AVAILABLE_VALUE_MISSING,False

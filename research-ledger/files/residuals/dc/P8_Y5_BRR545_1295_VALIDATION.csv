@@ -1,0 +1,12 @@
+check_id,check,status,details
+VAL1295_0_sources_exist,registered source paths exist and anchors are found,PASS,9/9 source anchors found
+VAL1295_1_promotion_split_recorded,promotion test splits absolute-bound pass from oriented-sign blockers,PASS,pass_rows=3;blocked_rows=3
+VAL1295_2_abs_Csign_bound_row,absolute Csign row is usable only for nonclaim bound previews,PASS,PROMOTED_FOR_ABSOLUTE_BOUND_PREVIEW_ONLY
+VAL1295_3_runner_preview_updates_two_rows,runner preview replaces MISSING_C_SIGN in exactly the m and Lcg rows,PASS,RRI1292_0_m_chain;RRI1292_1_Lcg_chain
+VAL1295_4_runner_still_rejected,all runner preview rows remain no-score with missing inputs,PASS,RRI1292_0_m_chain=5;RRI1292_1_Lcg_chain=6;RRI1292_2_cdb_chain=5;RRI1292_3_chain_vector=3
+VAL1295_5_response_operator_not_claimed,response operator remains unacquired and routed to next target,PASS,1295 produced a legitimate bound-only Csign input; response operator remains the next scoring bottleneck and needs a dedicated source acquisition pass
+VAL1295_6_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1295_SOURCE_REGISTER.csv:9; P8_Y5_R10_1295_CSIGN_PROMOTION_TEST.csv:6; P8_Y5_R10_1295_ABS_CSIGN_BOUND_INPUT_ROW.csv:1; P8_Y5_R10_1295_RUNNER_INPUT_PREVIEW_NONCLAIM.csv:4; P8_Y5_R10_1295_RESPONSE_OPERATOR_SOURCE_ATTEMPT.csv:1; P8_Y5_R10_1295_CLAIM_GATES.csv:5; P8_Y5_R10_1295_DECISION_LEDGER.csv:3; P8_Y5_R10_1295_NEXT_TARGET.csv:1
+VAL1295_7_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1295_8_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1295_9_next_target_1296,next target routes to linearized GR response operator acquisition,PASS,1296-Y5-R10-RAB-linearized-GR-response-operator-source-or-hard-blocker.md
+VAL1295_10_overall,overall 1295 validation,PASS,"1295 promotes |C_sign|=1 for absolute bound previews only, keeps oriented sign/claims blocked, preserves no-score status, and routes to response-operator sourcing"

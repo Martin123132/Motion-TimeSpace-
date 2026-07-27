@@ -1,0 +1,7 @@
+residual_id,if_theorem_missing,symbol,observable_lock,target_bound,required_artifact,valid_for_claim
+KR508_0_time_drift,dln_Geff_dt is retained,dln_Geff_dt,Gdot_over_G,9.6e-15 yr^-1 or derived_zero,"P8_time_drift_residual_or_zero.csv with separated G_eff, M_eff, and epsilon_mu terms",false
+KR508_1_radial_hair,partial_r ln G_eff is retained,partial_r_ln_Geff,beta/gamma/radial source hair,zero radial hair or mapped local profile bound,P8_radial_mu_profile_or_zero.csv,false
+KR508_2_range_dependence,alpha(lambda) from kappa running is retained,alpha_kappa(lambda),R10_fifth_force,executable alpha(lambda) curve below inverse-square bounds,R10_alpha_lambda_curve_MTS_source_normalization.csv,false
+KR508_3_species_source_charge,species/source dependence of kappa is retained,eta_source_AB or partial_A ln G_eff,R1_WEP_source_charge,2.8e-15 or derived source universality,P8_species_source_charge_residual_or_zero.csv,false
+KR508_4_frame_domain_split,frame/domain dependence of kappa is retained,delta_frame_source; partial_D ln G_eff,WEP/clock/R11/domain rows,one observed source frame or explicit residual below locks,P8_frame_source_split_residual_or_zero.csv,false
+KR508_5_Bianchi_exchange,T_obs grad kappa exchange term is retained,delta_kappa_source,R4;R7;R9;R10;R11,same-frame arbitrary-source conservation theorem or explicit exchange coefficient,P8_delta_kappa_source_exchange_residual.csv,false

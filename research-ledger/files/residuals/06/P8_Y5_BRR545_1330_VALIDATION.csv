@@ -1,0 +1,15 @@
+check_id,check,status,details
+VAL1330_0_sources_exist,registered local source paths exist and anchors are found,PASS,6/6 source anchors found
+VAL1330_1_fetches_cached,NIST source pages fetch live or use existing cache and snapshots exist,PASS,electron_mass_u=LIVE_FETCH_OK;atomic_weight_Ti=LIVE_FETCH_OK;atomic_weight_Al=LIVE_FETCH_OK;atomic_weight_V=LIVE_FETCH_OK;atomic_weight_Pt=LIVE_FETCH_OK;atomic_weight_Rh=LIVE_FETCH_OK
+VAL1330_2_electron_mass_parsed,NIST CODATA electron mass in u parsed with uncertainty,PASS,value=5.485799090441e-04;uncertainty=9.700000000000e-15;source=NIST CODATA page
+VAL1330_3_atomic_weights_parsed,"NIST standard atomic weights parsed for Ti, Al, V, Pt, Rh",PASS,Ti=47.867;Al=26.9815385;V=50.9415;Pt=195.084;Rh=102.9055
+VAL1330_4_raw_candidate_schema,raw audited electron candidate file exists with 1233 schema fields,PASS,raw_path=D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\component-fractions\raw\P8_Y5_R10_1330_AUDITED_ELECTRON_FRACTION_CANDIDATE_NONCLAIM.csv;raw_rows=2
+VAL1330_5_numeric_nonclaim_rows,audited electron rows are finite numeric and nonclaim,PASS,delta=3.129116287420e-05;delta_uncertainty=3.359523482977e-07
+VAL1330_6_diff_expected_small,1330 audited extraction differs only tiny amount from 1329 manual dry-run,PASS,TA6V rel_diff=3.799217362801e-11;PtRh10 rel_diff=3.794157227453e-11
+VAL1330_7_parent_DD_map_blocked,parent DD/source-basis map remains blocked,PASS,DDG1330_0_map_target=NOT_DERIVED;DDG1330_1_normalization=NUMERIC_COMPONENT_AVAILABLE_PARENT_SIGNATURE_MISSING;DDG1330_2_QCD_residual=MISSING_NO_DOUBLE_COUNT_RULE
+VAL1330_8_runner_not_scoreable,Delta_w/WEP/local-GR runners are not score-ready,PASS,RUN1330_0_audited_electron_component=PARTIAL_COMPONENT_READY_NOT_SCOREABLE;RUN1330_1_parent_DD_map=REFUSED_NO_PARENT_MAP;RUN1330_2_full_Delta_w=REFUSED_NOT_SCOREABLE
+VAL1330_9_shortcuts_enforced,anti-shortcut gates are enforced,PASS,SHORT1330_0_no_audited_electron_only_WEP;SHORT1330_1_no_raw_nonclaim_as_claim;SHORT1330_2_no_DD_import_as_derivation;SHORT1330_3_no_local_GR_claim
+VAL1330_10_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false where present
+VAL1330_11_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1330_12_next_target_1331,next target routes to parent source-basis map theorem or DD demotion,PASS,1331-Y5-R10-RAB-parent-source-basis-map-theorem-or-light-quark-DD-demotion.md
+VAL1330_13_overall,overall 1330 validation,PASS,1330 upgrades electron source extraction and keeps DD/full Delta_w/local-GR blocked

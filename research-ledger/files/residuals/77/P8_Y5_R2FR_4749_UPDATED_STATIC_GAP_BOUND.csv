@@ -1,0 +1,6 @@
+checkpoint,gap_id,formula,meaning,status,valid_for_claim,timestamp_utc
+4749,GAP4749_0_effective_DN,"c_DN_eff >= min(c_TFRI,c_quar)-C_mix_eff-C_TT_kernel",Updated static gap from 4748.,CARRIED_FORWARD,False,2026-07-08T00:50:51+00:00
+4749,GAP4749_1_quar_insert,c_quar >= s_q^2 + p_min^2 s_K^2 - C_cross - C_quar_kernel,Quarantine rank test inserted into the static gap route.,UPDATED_SYMBOLIC_BOUND,False,2026-07-08T00:50:51+00:00
+4749,GAP4749_2_static_gap,"lambda_1^stat >= [min(c_TFRI,c_quar)-C_mix_eff-C_TT_kernel]/(C_P L_loc^2)",Static gap law after quarantine/TT split.,DERIVED_SOURCE_READY_FORMULA,False,2026-07-08T00:50:51+00:00
+4749,GAP4749_3_residual,C_res_static <= Pi_owner^stat sqrt(CzeroMode_stat^2+(C_Dstat^2+C_boundary_stat) C_P L_loc^2 / c_DN_eff),Static local-test residual bound.,SYMBOLIC_NONCLAIM,False,2026-07-08T00:50:51+00:00
+4749,GAP4749_4_claim_gate,score_ready only if c_DN_eff>0 and all constants/projections/kernel bounds are source-backed,No local-test claim from symbolic gap law.,FAIL_CLOSED,False,2026-07-08T00:50:51+00:00

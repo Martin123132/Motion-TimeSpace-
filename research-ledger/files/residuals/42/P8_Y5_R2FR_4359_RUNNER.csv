@@ -1,0 +1,6 @@
+runner_id,input,action,result,current_result,valid_for_claim
+RUN4359_0_tau_min,"k_min,s_min,m_min,c_min,N_max all source-backed",COMPUTE_TAU_MIN,tau_min=k_min*s_min*m_min*c_min/N_max and Delta_w bound follows,WAITING_FOR_INPUTS,False
+RUN4359_1_nonzero_factors,nonzero K/source/material without alignment,TEST_SHORTCUT,reject tau_min claim by null-space countermodel,REJECT_SHORTCUT,False
+RUN4359_2_owner_axiom,AX4359 candidate package,TEST_ZERO_ROUTE,candidate exact but unsigned; no Delta_w zero claim,REJECT_ZERO_CLAIM_NOW,False
+RUN4359_3_product_branch,MICROSCOPE product anchor only,KEEP_PRODUCT_BOUND,abs(Delta_w_TiPt*tau_WEP)<=2.8e-15 remains the only source-backed statement,NONCLAIM_BOUND_ONLY,False
+RUN4359_4_next,"no tau_min, no owner theorem",SELECT_OFFICIAL_READOUT_OR_PARENT_NONDEGENERACY,4360-Y5-R2FR-transition-official-MICROSCOPE-readout-or-parent-nondegeneracy.md,NEXT_TARGET_SELECTED,False

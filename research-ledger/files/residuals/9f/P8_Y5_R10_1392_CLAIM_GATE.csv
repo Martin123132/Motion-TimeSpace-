@@ -1,0 +1,7 @@
+gate_id,gate,status,reason,valid_for_claim,claim_allowed
+GATE1392_0_sources,all cited local sources exist and anchors are present,PASS,source register validates against local corpus,False,False
+GATE1392_1_zero_proof,beta/kernel/tail zero proof closes,BLOCKED_PARENT_UNSIGNED,conditional zero is exact but beta source/test and tail-zero premises are unsigned,False,False
+GATE1392_2_template,bulk alpha template is runner-compatible,PASS_NONCLAIM_TEMPLATE,candidate rows include required runner columns plus beta/K/tail factor handles,False,False
+GATE1392_3_runner,existing R10 runner accepts the template for scoring,BLOCKED_RUNNER_REJECTS_NONCLAIM_ROWS,runner smoke returns R10_pass_for_claim=false for anchor and live placeholder comparisons,False,False
+GATE1392_4_R10_score,R10 score may be reported,BLOCKED_NO_NUMERIC_ALPHA_OR_CLAIM_CURVE,"alpha_predicted is symbolic, valid_for_claim=false, and full bound curve is absent",False,False
+GATE1392_5_local_claim,local GR/Newton reduction can be claimed,BLOCKED_NO_CLAIM,"1392 is a strict template/runner-smoke checkpoint, not a derived local GR limit",False,False

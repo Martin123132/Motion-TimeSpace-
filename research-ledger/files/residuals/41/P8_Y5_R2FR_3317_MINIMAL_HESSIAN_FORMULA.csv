@@ -1,0 +1,7 @@
+formula_id,object,formula,meaning,status,valid_for_claim
+MH3317_0_ansatz,minimal two-channel local Hessian,"Phi=(h,x), H(p)=[[a p, b0+b1 p],[b0+b1 p, M2+z p]], R=(1,u), p=k^2",h is the massless GR metric channel; x is the least extra finite/local MTS channel; u is public readout overlap,SYMBOLIC_TEST_BED,false
+MH3317_1_propagator,public exchange propagator,G_pub(p)=N(p)/D(p),N and D decide whether local tests see a finite pole,DERIVED,false
+MH3317_2_denominator,D(p)=det H,D(p)=a p (M2+z p)-(b0+b1 p)^2,the zeros of D are the massless and finite pole candidates,DERIVED,false
+MH3317_3_numerator,N(p)=R adj(H) R^T,N(p)=M2+z p-2u(b0+b1 p)+u^2 a p,a pole is observable only if N is nonzero at that pole,DERIVED,false
+MH3317_4_GR_massless_condition,massless Newton pole,"D(0)=-b0^2, so a GR-like massless pole at p=0 requires b0=0",constant h-x mixing gives the graviton a mass/deformation unless removed by symmetry/constraint,DERIVED_GATE,false
+MH3317_5_finite_pole,finite pole location after b0=0,"D(p)=p[a M2+(a z-b1^2)p], so p_f=-a M2/(a z-b1^2)",generic derivative kinetic/mixing creates a finite pole unless the second factor is absent or unobserved,DERIVED_GATE,false

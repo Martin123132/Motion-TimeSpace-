@@ -1,0 +1,8 @@
+gate_id,requirement,passed,claim_allowed,reason,valid_for_claim
+CG4493_0_sources,all cited source paths exist and needles are found,True,False,private derivation/numeric-gate checkpoint only,False
+CG4493_1_norm_rows,Bprime leakage norms are computed for active profiles,True,False,"norm rows are profile-scale inputs, not local-GR closure",False
+CG4493_2_balanced_order_unity,balanced profile has order-unity leakage rather than a zero,True,False,profile helps but does not zero DeltaKTF,False
+CG4493_3_smoothstep_1e9_Cdelta_bound,smoothstep 1e9 C_DeltaKTF maximum is computed and tiny,True,False,finite route needs parent coefficient suppression,False
+CG4493_4_unit_Cdelta_fails,no active finite row passes with C_DeltaKTF=1,True,False,profile-only local safety is rejected,False
+CG4493_5_parent_projection_audit,parent projection route is classified,True,False,C_DeltaKTF=0 theorem is still the priority but not claimed,False
+CG4493_6_local_GR,local-GR/J2/PPN claim,False,False,C_DeltaKTF zero/suppression and full arena transfer remain unclosed,False

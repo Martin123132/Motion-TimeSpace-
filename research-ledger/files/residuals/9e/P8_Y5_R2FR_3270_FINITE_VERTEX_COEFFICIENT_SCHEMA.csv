@@ -1,0 +1,11 @@
+field,type,required,meaning,valid_for_claim
+coefficient_id,string,true,stable coefficient row id,false
+vertex_id,string,true,visible vertex class from P8_Y5_R2FR_3270_VISIBLE_VERTEX_CLASSIFICATION.csv,false
+coefficient_symbol,string,true,local derivative or source-weight coefficient,false
+maps_to_C_g,float_or_MISSING,if DD projected,contribution to C_g=L_X ln Lambda_3,false
+maps_to_C_hatm,float_or_MISSING,if DD projected,contribution to C_hatm=L_X ln hatm,false
+maps_to_C_e,float_or_MISSING,if DD projected,contribution to C_e=L_X ln alpha_EM,false
+epsilon_MICROSCOPE,float_or_MISSING,if source/readout residual,absolute residual eta budget in MICROSCOPE row,false
+epsilon_EOTWASH,float_or_MISSING,if source/readout residual,absolute residual eta budget in Eot-Wash row,false
+source_path,path_or_MISSING,true for claim,parent theorem or coefficient source path,false
+claim_status,enum,true,NONCLAIM unless parent theorem and numeric/source rows are real,false

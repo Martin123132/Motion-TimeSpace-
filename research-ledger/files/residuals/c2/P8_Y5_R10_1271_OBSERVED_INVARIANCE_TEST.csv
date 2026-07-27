@@ -1,0 +1,5 @@
+test_id,criterion,result,evidence,noncircular,valid_for_claim,claim_allowed
+INV1271_0_all_observed_fields,"Dq_RAB[v_R]=0 for A, B, clocks, radial rulers, matter coframe, null cone, and boundary data",FAIL,A/B/clock/ruler rows fail unless q excludes them or auxiliary elimination runs first,False,False,False
+INV1271_1_split_tuning,choose a split parameter a to hide all observed changes,FAIL,"a can cancel one composite such as T/sqrt(S), but not A and B simultaneously when both are observed",False,False,False
+INV1271_2_class_quotient,"declare q_RAB=[A,B]/R_AB so Dq[v_R]=0",CIRCULAR,works by definition only; needs parent primitive proof before readout,False,False,False
+INV1271_3_auxiliary_elimination,remove R_AB before observed readout by parent-owned compatibility equation,PASS_CONDITIONAL,1268 action candidate gives exact variational mechanism if parent necessity/source silence closes,True,False,False

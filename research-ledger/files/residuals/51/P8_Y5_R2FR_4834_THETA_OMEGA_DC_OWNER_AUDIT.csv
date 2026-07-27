@@ -1,0 +1,10 @@
+clause_id,object,formula,current_result,needed_signature_or_input,valid_for_claim,timestamp_utc
+TOD4834_0_theta,parent symplectic potential,delta L_parent=E_A deltaY^A+d theta_Y(deltaY),UNSIGNED,theta_Y_signed,False,2026-07-08T11:46:00+00:00
+TOD4834_1_omega,parent presymplectic form,Omega_Y=delta theta_Y with controlled boundary terms,UNSIGNED,omega_Y_signed,False,2026-07-08T11:46:00+00:00
+TOD4834_2_DC,linearized constraint operator,DC_X[deltaY] from C_X=-nabla P+J_eff including connection/volume terms,FORMULA_ONLY,DC_X_operator_signed,False,2026-07-08T11:46:00+00:00
+TOD4834_3_DCadjoint,adjoint covector,"<eta,DC_X[deltaY]>=<DC_X^dagger eta,deltaY>+B_DC",FORMULA_ONLY,DCdagger_formula_signed,False,2026-07-08T11:46:00+00:00
+TOD4834_4_match,Hamiltonian generator identity,DC_X^dagger eta=Omega_Y^flat(v_eta) field-by-field,NOT_CLOSED,omega_flat_match_signed,False,2026-07-08T11:46:00+00:00
+TOD4834_5_vertical,vertical action on every field,"v_eta[g,Pi,Gamma,Khat,q_loc,memory,matter,boundary] declared and quotient-compatible",PARTIAL,vertical_action_all_fields_signed,False,2026-07-08T11:46:00+00:00
+TOD4834_6_boundary,differentiable boundary generator,delta Q_X + delta B_ct cancels B_DC and leaves zero/proper/exact boundary charge,NOT_DERIVED,boundary_differentiability_signed;Bct_cancels_boundary_covector_signed,False,2026-07-08T11:46:00+00:00
+TOD4834_7_matter,ordinary matter/source descent,"delta_v S_matter=0 and delta_v theta_A=0, else qbar_XT is retained",CONDITIONAL_ONLY,matter_quotient_signed;constant_sector_descends_signed,False,2026-07-08T11:46:00+00:00
+TOD4834_8_guard,no category/circular shortcut,"DCdagger is a covector, measured GM is not a source, constants cannot be silent by assertion",GUARD_ACTIVE,no_cancellation_guard,False,2026-07-08T11:46:00+00:00

@@ -1,0 +1,9 @@
+component_id,quantity,definition,required_input,units,claim_gate,valid_for_claim,claim_allowed
+BRC1885_0_delta_beta_source,delta_beta_source,B_source/A_source^2 - 1 after measured-GM normalization,parent proof B_source=A_source^2 or source-backed A_source/B_source row,dimensionless,must be zero or finite and source-backed,False,False
+BRC1885_1_delta_beta_operator,delta_beta_operator,second-order local field/operator correction not captured by the EH one-parameter family,operator theorem-zero or coefficient row with units and source path,dimensionless,cannot be inferred from gamma,False,False
+BRC1885_2_delta_beta_q_loc,delta_beta_q_loc,physical U2 projection of P_loc(nabla Gamma_eff-div Khat),Ward-zero through O(U2) or beta-normalized q_loc profile,dimensionless,same PPN arena and source normalization required,False,False
+BRC1885_3_delta_beta_boundary_domain,delta_beta_boundary_domain,boundary/domain/projector quadratic stress beta projection,no-flux/no-hair theorem or coefficient map with units,dimensionless,boundary silence must be parent-signed or bounded,False,False
+BRC1885_4_delta_beta_readout,delta_beta_readout,second-order mismatch between source metric and observed isotropic PPN readout,same observed coframe/readout theorem through O(U2),dimensionless,common matter/coframe descent required,False,False
+BRC1885_5_epsilon_SN,epsilon_SN,(mu_obs-G_eff M_H)/(G_eff M_H),Gauss/orbital/source-current scorecard,dimensionless,measured-GM denominator cannot absorb relative source weights,False,False
+BRC1885_6_delta_beta_total_abs,Delta_beta_total_abs,sum of absolute active beta residual components with no cancellation credit,all components theorem-zero or numeric/source-backed,dimensionless,Delta_beta_total_abs <= 7.80e-05,False,False
+BRC1885_7_flags,valid_for_claim;claim_allowed;score_ready,row eligibility flags,"may become true only after source path, convention, arena and component gates all pass",boolean,False throughout 1885,False,False

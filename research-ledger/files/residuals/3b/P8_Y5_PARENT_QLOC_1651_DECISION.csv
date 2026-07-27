@@ -1,0 +1,5 @@
+branch_id,decision_id,decision,reason,next_action,valid_for_claim,claim_allowed
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,DEC1651_0_no_live_rows,NO_RAW_OR_ACCEPTED_BOBS_SOURCE_ROWS,source-intake/rab-sector/raw and accepted contain no live CSV candidates,do not score; keep all Bobs source rows nonclaim,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,DEC1651_1_runner,BOBS_PRIORITY_RUNNER_REFUSES_ALL_ROWS,"every row lacks source path, units, numeric/theorem-zero value, parent signature, M_H_ref, or no-cancellation budget",use refusal output as the handrail for 1652,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,DEC1651_2_first_target,MHREF_DENOMINATOR_FIRST_WITH_SOURCE_MEASURE_COUPLING_LANE,M_H_ref is global denominator; source-measure/Y5 flux is the highest coupling-facing numerator,1652 should attempt M_H_ref first row and source-measure flux contract together,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,DEC1651_3_no_claim,NO_LOCAL_GR_OR_PPN_PROMOTION,a refusal runner is not evidence,keep local branch private/nonclaim,False,False

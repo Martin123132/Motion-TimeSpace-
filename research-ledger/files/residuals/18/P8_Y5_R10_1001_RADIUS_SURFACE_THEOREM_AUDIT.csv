@@ -1,0 +1,7 @@
+audit_id,object,needed_for_zero,current_evidence,status,valid_for_claim
+RSA1001_0_quantity,partial_r Delta_ref,Delta_ref[S_r] must be independent of allowed radial deformations of the comparison surface S_r,997 flags MISSING_SURFACE_CLASS_OR_RADIAL_PROFILE,blocked_nonclaim,false
+RSA1001_1_surface_class,radial surface family S_r,parent action supplies a fixed homology/cohomology class with fixed corners and no leakage through the radial annulus,MISSING_PARENT_SURFACE_CLASS,unsigned,false
+RSA1001_2_stokes_route,integral_S_r B_ref,"dB_ref=0 on the annulus and corner terms vanish, so d/dr integral_S_r B_ref = integral_boundary_annulus B_ref + integral_annulus dB_ref = 0",MISSING_CLOSED_BREF_AND_CORNER_CERTIFICATE,conditional_only,false
+RSA1001_3_surface_deformation,Lie_n B_ref,radial deformation vector n maps to gauge/exact variation or a proven zero physical flux,MISSING_RADIAL_DEFORMATION_RULE,unsigned,false
+RSA1001_4_reference_charge,reference charge between linked surfaces,no source charge is crossed and B_ref is not retuned as r changes,MISSING_NO_CROSSED_SOURCE_AND_NO_RETUNE_CERTIFICATE,unsigned,false
+RSA1001_5_theorem_verdict,partial_r Delta_ref = 0,"all surface-class, closed-form, corner, deformation, and no-retune clauses parent-signed",not enough parent geometry to promote zero,fail_current_claim,false

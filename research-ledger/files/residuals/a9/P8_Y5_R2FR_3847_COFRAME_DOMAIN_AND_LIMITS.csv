@@ -1,0 +1,6 @@
+domain_id,domain_clause,condition,reason,if_missing,valid_for_claim,timestamp_utc
+OCD3847_0_static,static exterior branch,"T=T(r), S=S(r), no g_ti shift, no explicit time dependence",needed for the old radial observer-cell map to be the relevant branch,retain B_shift_time and do not use spherical coframe as full local metric,False,2026-07-01T03:44:08+00:00
+OCD3847_1_area_radius,area-radius angular gauge,"theta^2=r dtheta, theta^3=r sin(theta)dphi are parent/geometry-owned rather than fitted",otherwise angular completion can hide an extra radial gauge function,retain B_area_radius_owner,False,2026-07-01T03:44:08+00:00
+OCD3847_2_positivity,Lorentzian exterior signs,"T>0, S>0, r>0, 0<theta<pi",ensures theta^0 timelike and spatial triad positive,retain B_signature_domain,False,2026-07-01T03:44:08+00:00
+OCD3847_3_parent_owner,"T,S are parent fields/readouts before local fitting","T and S are supplied by the MTS parent branch, not chosen to fit PPN coefficients",prevents copying Schwarzschild/GR metric after the fact,retain B_TS_parent_owner,False,2026-07-01T03:44:08+00:00
+OCD3847_4_scope,not full arbitrary local metric,branch is static spherical exterior only,"enough for first Newton/PPN exterior route, not enough for general local GR",do not overclaim global/local-GR completeness,False,2026-07-01T03:44:08+00:00

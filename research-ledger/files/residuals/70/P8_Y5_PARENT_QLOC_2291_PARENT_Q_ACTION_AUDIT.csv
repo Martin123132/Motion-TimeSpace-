@@ -1,0 +1,8 @@
+audit_id,required_parent_object,candidate_formula,result,if_missing,valid_for_claim
+PQ2291_0_branch_extremum,E_q|0=0,delta S_parent/delta q evaluated on the local GR/Newton branch,MISSING_PARENT_EULER_ZERO,q=0 is not stationary by theorem; finite residual branch remains live,False
+PQ2291_1_quadratic_residue,Z_q,"Z_q is the coefficient of the projected local derivative term <D q,D q> in delta^2 S_parent",MISSING_PARENT_KINETIC_RESIDUE,K_q cannot be numeric and ghost/anti-elliptic branches are not excluded by theorem,False
+PQ2291_2_mass_gap_range,M_q^2 and lambda_q,lambda_q=sqrt(Z_q/M_q^2) with M_q^2 from the same parent Hessian normalization,RELATION_DERIVED_VALUES_MISSING,"finite-range prediction is closure-only, not a parent prediction",False
+PQ2291_3_source_current,J_q,"J_q=-delta_q S_matter plus hidden/source/domain currents, projected into the q slot",MISSING_SOURCE_ZERO_OR_SOURCE_LAW,ordinary matter may source a finite local q mode; R10/PPN/clock/orbital rows stay active,False
+PQ2291_4_source_test_betas,beta_source and beta_test,beta_i is the parent-normalized derivative of each body's effective source/readout mass with respect to the finite q channel,MISSING_BETA_SOURCE_TEST_SPLIT,alpha(lambda) cannot be scored and c_g cannot be treated as a single linear coefficient,False
+PQ2291_5_no_pole_alternative,physical q pole absent,q is quotient/gauge/constraint-only before local inversion; no propagating Green kernel exists,NO_POLE_ROUTE_NOT_SIGNED,retain the finite pole template and bound it,False
+PQ2291_6_verdict,single parent finite-q row,"parent_signed(E_q=0, Z_q>0, M_q^2>0, J_q/beta law, boundary/tails)",FAIL_CURRENT_CLAIM_PARENT_ROW_NOT_OWNED,demote finite-q R10/local branch to explicit closure/nonclaim template,False

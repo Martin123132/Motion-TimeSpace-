@@ -1,0 +1,5 @@
+requirement_id,target,required_fields,acceptance_rule,why_needed,priority,valid_for_claim
+LBR4358_0_tau_min_source,P_WEP_tau_min_lower_bound.csv,tau_min; confidence; source_path; extraction_method; sign/absolute convention; assumptions; branch_id,strictly positive numeric tau_min fixed before Delta_w scoring,turn product anchor into Delta_w amplitude bound,highest,False
+LBR4358_1_official_readout,K_MICROSCOPE / K_CMSM arrays,time; segment/session id; gx/gz/Sxx/Sxz or equivalent; masks; calibration flags; attitude/orbit convention,official export or validated exact equivalent with units,evaluate or bound tau_WEP,highest,False
+LBR4358_2_source_worldtube,T_source^Earth(x),profile/stress-current convention; observed coframe; orbit weighting; source path,same branch and same normalization as readout kernel,source-weight residual projection,high,False
+LBR4358_3_action_measure_zero,parent_action_measure_owner_theorem,single action scale/measure; ordinary matter sector ownership; no w_A slot; boundary/readout order,"parent-signed theorem, not a convention or post-variation redefinition",kill Delta_w_TiPt without finite WEP projection,highest_parallel,False

@@ -1,0 +1,6 @@
+update_id,runner_field,rule,status,valid_for_claim,timestamp_utc
+RUNU3893_0_memory,memory_zero_guard,"do not set K_history or X to zero unless owner, sign/gap, J_X and boundary gates all pass",NO_MEMORY_SHORTCUT,False,2026-07-01T08:36:56+00:00
+RUNU3893_1_R11,R11_sigma_guard,"R11 operators are candidate Sigma-selected, but they vanish only on the proven Y_loc=0 branch",NO_R11_WITHOUT_YLOC,False,2026-07-01T08:36:56+00:00
+RUNU3893_2_fill,source_fill,"if memory/R11/boundary/projector certificates fail, fill emitted numeric inputs with source paths",QUEUE_READY,False,2026-07-01T08:36:56+00:00
+RUNU3893_3_claim,local_GR_claim,false until all remaining gates pass or bounded residuals beat local locks,NO_LOCAL_GR_CLAIM,False,2026-07-01T08:36:56+00:00
+RUNU3893_4_next,next_attack,attempt parent ownership/sign/gap/JX closure for memory; otherwise start numeric source acquisition,NEXT_3894,False,2026-07-01T08:36:56+00:00

@@ -1,0 +1,7 @@
+bound_id,statement,value,derivation,status,valid_for_claim
+QDEL3486_0_baseline_sum,Baseline Earth DD proxy has positive Q_delta_m_Earth.,4.448443445187e-05,sum over normalized composition rows of f_i * 0.0017*(A_i-2Z_i)/A_i,POSITIVE_IN_DD_PROXY_NONCLAIM_PARENT_MAP_MISSING,False
+QDEL3486_1_fe_dominance,Iron alone dominates the positive neutron-excess contribution.,3.750760958797e-05,f_Fe=3.204486280793e-01 times q_delta_Fe=1.170471841705e-04,DOMINANT_ANCHOR,False
+QDEL3486_2_negative_rows,The negative H/O correction is much smaller than the Fe contribution.,-5.342108795250e-07,sum of negative weighted Q_delta_m rows in the current target table,NEGATIVE_CORRECTION_SMALL,False
+QDEL3486_3_fe_only_lower_bound,A conservative Fe-only-minus-negative correction lower bound remains positive.,3.697339870845e-05,"weighted_Fe_Qdelta + all negative weighted rows, dropping every other positive support row",STRICTLY_POSITIVE_WITH_CURRENT_TARGET_ROWS,False
+QDEL3486_4_critical_fe_fraction,Minimum Fe fraction required to beat all current negative corrections even if all other positive rows are dropped.,4.564064341324e-03,|negative_total| / q_delta_Fe,ACTUAL_FE_FRACTION_EXCEEDS_CRITICAL_BY_FACTOR_7.021124246166e+01,False
+QDEL3486_5_positive_total,Total positive support excluding sign cancellations.,4.501864533139e-05,sum positive weighted rows,POSITIVE_SUPPORT_LEDGER,False

@@ -1,0 +1,5 @@
+tau_id,definition,units,projection_law,status,what_clocks_bound,standalone_kappa_bound_ready,valid_for_claim
+TAU647_0_time_drift,tau_clock_time = d chi_X / dt,yr^-1,d ln(alpha_EM)/dt = kappa_alpha * tau_clock_time,defined_product_map,|kappa_alpha * tau_clock_time|,false,false
+TAU647_1_H0_normalized_drift,tau_clock_time = H0 * d chi_X/dN with nominal H0=7.16e-11 yr^-1,yr^-1,d ln(alpha_EM)/dt = kappa_alpha * H0 * dchi_X/dN,diagnostic_only,|kappa_alpha * dchi_X/dN| after dividing by nominal H0,false,false
+TAU647_2_potential_map,tau_clock_Phi = d chi_X / d(Phi/c^2),dimensionless,d ln(alpha_EM) = kappa_alpha * tau_clock_Phi * d(Phi/c^2),source_missing,potential-coupled alpha variation if annual/potential source rows are added,false,false
+TAU647_3_local_silence,tau_clock_local = 0 in a parent-proved closed/gapped strict-local coframe domain,yr^-1_or_dimensionless_depending_on_probe,d ln(alpha_EM)=0 locally if local silence theorem is parent-signed,conditional_not_active,nothing until local silence is proved; cannot be used to evade clock bounds,false,false

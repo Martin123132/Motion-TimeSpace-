@@ -1,0 +1,8 @@
+clause_id,required_clause,status,if_missing,valid_for_claim
+CLA3247_0_q_boundary,boundary/collar/worldtube is q-basic and chosen before source/readout,MISSING_PARENT_BOUNDARY_FUNCTION,boundary_id and surface_class remain missing,false
+CLA3247_1_coframe,observed coframe descends from q and all ordinary matter/readout uses it,CONDITIONAL_NOT_PARENT_SIGNED,frame_u remains a frame-profile residual,false
+CLA3247_2_normal,"boundary is non-null, oriented and has a q-owned normal n",DOMAIN_GUARD_NOT_SOURCED,normal_n and C_flux cannot be computed,false
+CLA3247_3_tau_support,"same tau/coframe/support is used for clock, source, charge, orbit and boundary",2600_UNSIGNED,tau/support mismatch enters epsilon_frame_leak and epsilon_Bv,false
+CLA3247_4_source_worldtube,"source worldtube, if used, is declared by the parent arena rather than chosen after flux",SOURCE_WORLDTUBE_NOT_OWNED,finite Poynting row remains arena-only nonclaim,false
+CLA3247_5_compact_proper,proper compact collar sublemma applies only to representative/gauge transformations,NARROW_ZERO_ONLY,cannot use compact-proper result to erase physical source boundary flux,false
+CLA3247_6_stress_descent,T_EM is standard/parent-derived in the same observed frame,CONDITIONAL_EM_STRESS_NOT_PARENT_DERIVED,"Poynting row is a target stress channel, not an MTS Maxwell claim",false

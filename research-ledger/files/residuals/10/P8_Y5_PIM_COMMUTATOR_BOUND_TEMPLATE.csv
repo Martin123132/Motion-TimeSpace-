@@ -1,0 +1,6 @@
+input_id,quantity,formula,required_columns,maps_to,current_status,valid_for_claim
+PCB534_0_equality_residual,R_eq_integral,int_A_ext (Pi_M J_H - J_M_top - dB_zero),system_id;r1;r2;R_eq_integral;M_H_ref;units;norm_convention;source_file;assumptions,epsilon_PiM_equality=R_eq_integral/M_H_ref,not_filled,false
+PCB534_1_commutator_integral,I_commutator,"int_A_ext [d,Pi_M]J_H",system_id;r1;r2;projector_type;metric_dependence_flag;I_commutator;M_H_ref;units;source_file;assumptions,epsilon_commutator=I_commutator/M_H_ref; epsilon_radial_Meff; projector stress rows,not_filled,false
+PCB534_2_projector_stress,T_PiM_munu,-2/sqrt(-g) delta S_PiM/delta g_munu,operator_family;coefficient;units;weak_field_map;affected_rows;source_file;assumptions,gamma;beta;alpha_i;xi;R11;source-normalization,not_filled,false
+PCB534_3_exact_boundary_term,B_zero_flux,int_boundary dB_zero,system_id;boundary_type;B_zero_flux;M_H_ref;units;source_file;assumptions,boundary monopole shift; epsilon_PiM_equality; radial source hair,not_filled,false
+PCB534_4_decision,PiM_equality_commutator_decision,sum_abs(|epsilon_PiM_equality|+|epsilon_commutator|+|epsilon_projector_stress_map|+|epsilon_boundary_exact|),all_components_filled;no_cancellation_flag;pass_fail;bound_source;notes,SRC523_0 epsilon_charge and SRC523_6/SRC523_8 source/radial rows,not_run,false

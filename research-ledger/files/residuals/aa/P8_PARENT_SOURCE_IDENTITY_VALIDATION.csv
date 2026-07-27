@@ -1,0 +1,7 @@
+rule_id,rule,result,evidence,claim_effect
+V499_0_sources,all cited source paths exist,pass,missing_sources=0,traceability only
+V499_1_prior_contracts_loaded,498 radial rows and PiM/Hamiltonian/PG contracts are loaded,pass,radial_rows=6;radial_gates=6;FC=9;PV=9;HC=10;PG=11,499 tied to prior gates
+V499_2_identity_decomposition,"identity attempt includes total Ward, split, product rule, obstruction identity, zero conditions, and radial integral",pass,identity_rows=6,decomposition concrete
+V499_3_residual_coverage,"residual decomposition covers commutator, boundary, domain, bulk, nonEH, coupling, frame/species, and anomaly channels",pass,S499_0_projector_commutator;S499_1_boundary_improvement;S499_2_domain_projector;S499_3_bulk_memory_or_X;S499_4_nonEH_operator;S499_5_coupling_drift;S499_6_frame_species_source;S499_7_parent_anomaly_or_multiplier,no hidden source channel
+V499_4_radial_template,"fallback radial template contains identity integral, commutator profile, extra-channel integrals, and observable bound rows",pass,template_rows=4,test branch ready but unfilled
+V499_5_no_false_claims,"no identity, residual, route, or template row is claim-valid",pass,identity_claims=0;residual_claims=0;route_claims=0;template_claims=0,no Newton/local-GR promotion

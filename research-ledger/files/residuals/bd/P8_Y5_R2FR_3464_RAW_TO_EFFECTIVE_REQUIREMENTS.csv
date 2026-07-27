@@ -1,0 +1,6 @@
+req_id,raw_component,needed_map,current_status,acceptance,claim_allowed,valid_for_claim
+RTE3464_0_tau_w,Delta_w_raw_TiPt,tau_w from parent source coefficient to Eotvos acceleration contrast,MISSING_PARENT_TO_EOTVOS_PROJECTION,derived tau_w with units/convention or theorem-zero Delta_w_raw,False,False
+RTE3464_1_b_alpha,b_alpha,S_E^q b_alpha Delta_Q_alpha contribution,PARTIAL_DD_MAP_SOURCE_LEG_MISSING,"q normalization, Earth/source leg, material charge tensor, readout closure",False,False
+RTE3464_2_b_mhat,b_mhat or nuclear-binding mass coefficient,dominant nuclear/mass material response,MTS_COMPONENT_NOT_IN_CURRENT_BASIS,parent mass/quark/nuclear-binding coefficient row or theorem-zero,False,False
+RTE3464_3_shadow_readout,Delta_shadow + Delta_readout,projection of hidden/source-shadow/readout currents into Ti/Pt/Earth material contrast,RETAINED_UNMAPPED,"source-shadow basis, material projection, no-cancellation envelope",False,False
+RTE3464_4_no_cancellation,sum of retained source channels,absolute envelope before any signed cancellation,REQUIRED_GUARD,sum_abs_components <= 2.8e-15 or theorem-zero for every component,False,False

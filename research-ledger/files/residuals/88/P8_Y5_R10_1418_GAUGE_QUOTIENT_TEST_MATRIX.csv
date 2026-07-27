@@ -1,0 +1,7 @@
+test_id,candidate_redundancy,test,result,residual_if_failed,valid_for_claim,claim_allowed
+GQT1418_0_common_weight,w_A = w_common for all ordinary species,can be absorbed only as universal calibration if measured-G/common-mode guards pass,POSSIBLE_COMMON_MODE_ONLY,"none for relative WEP, but common calibration cannot hide relative weights",False,False
+GQT1418_1_relative_weight,w_A = w_common(1+epsilon_A),"must be removable from Hilbert source, quantum measure, interactions, and readout simultaneously",NOT_GAUGE_PROVED,qbar_source_weight / Delta_w_AB,False,False
+GQT1418_2_field_rescaling,Psi_A -> Z_A^(1/2) Psi_A,"canonical kinetic terms, measured masses/charges, composite material parameters, Hilbert source, and measure remain unchanged",INSUFFICIENT_WITHOUT_CURRENT_MEASURE_OWNER,current_rescaling_residual and qbar_source_weight,False,False
+GQT1418_3_current_rescaling,J_A -> c_A J_A,same T_Q/Noether owner fixes current normalization before source/readout projection,NOT_GAUGE_PROVED,current_rescaling_residual,False,False
+GQT1418_4_measure_jacobian,species-dependent measure/coframe Jacobian,measure and coframe descent are species blind and boundary silent,PARALLEL_OPEN_GATE,measure_source_weight,False,False
+GQT1418_5_verdict,all source weights are gauge/quotient artifacts,GQT1418_0 through GQT1418_4 close,GAUGE_QUOTIENT_NOT_PROVED,qbar_source_weight arena acquisition remains mandatory,False,False

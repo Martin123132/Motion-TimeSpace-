@@ -1,0 +1,14 @@
+check_id,check,status,details
+VAL1267_0_sources_exist,all cited local sources exist,PASS,12/12 sources exist
+VAL1267_1_needles_found,all cited local needles found,PASS,12/12 needles found
+VAL1267_2_first_class_verdict,first-class route is explicitly not constructed,PASS,FCS1267_5_verdict=FIRST_CLASS_ROUTE_NOT_CONSTRUCTED
+VAL1267_3_dirac_second_class,Dirac audit identifies hard C_R=0 as second-class/holonomic unless new gauge readout exists,PASS,DIR1267_0_variables classification contains SECOND_CLASS
+VAL1267_4_auxiliary_route_selected,best derivation route is refocused to auxiliary compatibility,PASS,SEL1267_1_second_class_auxiliary selected_now=True
+VAL1267_5_ap_clause_coverage,all AP1265 clauses have a 1267 update,PASS,covered=5; missing=[]
+VAL1267_6_finite_acquisition_nonclaim,finite-ZR acquisition rows exist but are not scoreable,PASS,finite_rows=8; raw_rows=0; accepted_rows=0; docs_rows=3
+VAL1267_7_claim_gates,claim gates block first-class and local-test claims,PASS,claim_gate_rows=4
+VAL1267_8_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1267_9_next_target_1268,next target routes to auxiliary compatibility action or finite-ZR source row,PASS,1268-Y5-R10-RAB-second-class-auxiliary-compatibility-action-or-finite-ZR-source-row.md
+VAL1267_10_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1267_SOURCE_REGISTER.csv:12; P8_Y5_R10_1267_FIRST_CLASS_SYNTHESIS_ATTEMPT.csv:6; P8_Y5_R10_1267_DIRAC_CLASSIFICATION_AUDIT.csv:5; P8_Y5_R10_1267_AUXILIARY_VS_FIRST_CLASS_SELECTOR.csv:3; P8_Y5_R10_1267_AP1265_CLOSURE_UPDATE.csv:5; P8_Y5_R10_1267_FINITE_ZR_ACQUISITION_START.csv:8; P8_Y5_R10_1267_CLAIM_GATES.csv:4; P8_Y5_R10_1267_DECISION_LEDGER.csv:3; P8_Y5_R10_1267_NEXT_TARGET.csv:1
+VAL1267_11_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1267_12_overall,overall 1267 validation,PASS,"1267 rejects the first-class label for the hard R_AB constraint, refocuses the derivation route to parent-signed second-class auxiliary compatibility, and starts finite-ZR acquisition as a nonclaim fallback"

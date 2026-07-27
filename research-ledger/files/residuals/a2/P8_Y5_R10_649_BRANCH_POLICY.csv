@@ -1,0 +1,5 @@
+policy_id,rule,reason,status,valid_for_claim
+BP649_0_no_silence_claim,Do not use tau_clock=0 unless all local silence clauses are parent-signed.,otherwise clocks are evaded by assumption,active,false
+BP649_1_product_not_standalone,"Clock rows constrain kappa_alpha*tau_clock, not kappa_alpha alone.",tau dynamics are not derived,active,false
+BP649_2_ultra_screened_fallback,"If silence is not proved, finite alpha branch must carry explicit ultra-screening prior from Yb clocks.",order-one kappa requires |dchi_X/dN| <= 2.93e-8 H0-normalized,selected_fallback,false
+BP649_3_cross_arena_warning,"Ultra-screening must later be checked against WEP/R10/EM spectra, not only clocks.",clock-only survival may fail in other local arenas,next_contract,false

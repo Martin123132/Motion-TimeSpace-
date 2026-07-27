@@ -1,0 +1,7 @@
+rule_id,rule,result,evidence,claim_effect
+V487_0_sources,all cited source paths exist,pass,missing_sources=0,traceability only
+V487_1_R11_rows_loaded,all ten R11 operator families are loaded,pass,operator_family_rows=10,selector audit covers the R11 ledger
+V487_2_double_zero_lemma_written,single-zero leak and double-zero sufficiency are both explicit,pass,L1_single_zero_fails;L2_double_zero_sufficient,derivation condition is sharp
+V487_3_actual_rows_unselected,actual R11 rows are not treated as selected by the lemma,pass,unselected_rows=10 of 10,no hidden R11 pass
+V487_4_no_claim_valid_rows,no selector-audit row is claim-valid,pass,claim_valid_audit_rows=0,no EH/R11/local-GR promotion
+V487_5_next_contract,"next target is a parent clause that forces double-zero selectors, not a prose claim",pass,488-double-zero-R11-selector-parent-clause-or-demotion.md,derivation-first route preserved

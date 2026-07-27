@@ -1,0 +1,13 @@
+check_id,check,status,details
+VAL1251_0_sources_exist,all cited local sources exist,PASS,6/6 sources exist
+VAL1251_1_needles_found,all cited local needles found,PASS,6/6 needles found
+VAL1251_2_formal_map,formal Q_R -> q_Rhat map is present,PASS,FORMAL_MAP_ONLY
+VAL1251_3_Hcore_blocked,H_core coefficient derivation remains blocked,PASS,CMAP1251_0_required_chain -> BLOCKED
+VAL1251_4_QR_waiting,normalization waits for Q_R,PASS,CMAP1251_2_normalization -> WAITING_FOR_QR
+VAL1251_5_pheno_unfilled,phenomenological row remains unfilled,PASS,PHENO1251_0_first_row_status -> NOT_FILLED
+VAL1251_6_claim_gates,claim gates remain blocked/nonclaim,PASS,claim_gate_rows=5
+VAL1251_7_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1251_8_next_target_1252,next target is local branch status ledger,PASS,1252-Y5-R10-local-branch-status-ledger-and-decision-tree.md
+VAL1251_9_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1251_SOURCE_REGISTER.csv:6; P8_Y5_R10_1251_HCORE_TO_QRHAT_MAP_ATTEMPT.csv:4; P8_Y5_R10_1251_FORMAL_CHAIN_NONCLAIM.csv:2; P8_Y5_R10_1251_PHENOMENOLOGICAL_ROW_STATUS.csv:1; P8_Y5_R10_1251_BLOCKER_LEDGER.csv:4; P8_Y5_R10_1251_CLAIM_GATES.csv:5; P8_Y5_R10_1251_DECISION_LEDGER.csv:2; P8_Y5_R10_1251_NEXT_TARGET.csv:1
+VAL1251_10_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_write_count_since_run_start=0
+VAL1251_11_overall,overall 1251 validation,PASS,"1251 derives only a formal Q_R->q_Rhat map, keeps H_core coefficient and phenomenological rows unfilled, and sends the local branch to a status decision tree"

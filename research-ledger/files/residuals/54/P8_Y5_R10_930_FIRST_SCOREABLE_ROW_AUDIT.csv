@@ -1,0 +1,6 @@
+audit_id,local_bound_row,decision,reason,bound_form,next_needed,valid_for_claim,generated_utc
+FS930_0_R3_gamma,R3_gamma,selected,direct metric PPN coefficient; numeric bound; avoids species-composition WEP map and R10 curve digitization,|K_BF_H| <= 2.3e-05/(|C_R3_gamma_FM| X_FM),derive C_gamma_FM and X_FM,false,2026-06-13T18:06:41.894726+00:00
+FS930_1_R4_beta,R4_beta,backup,also direct metric PPN but second order/nonlinear source terms make it slightly harder,|K_BF_H| <= 7.8e-05/(|C_R4_beta_FM| X_FM),not selected first,false,2026-06-13T18:06:41.894730+00:00
+FS930_2_R2_clock_redshift,R2_clock_redshift,backup,clock readout is valuable but coframe/frequency projection adds an extra layer,|K_BF_H| <= 2.48e-05/(|C_R2_clock_redshift_FM| X_FM),not selected first,false,2026-06-13T18:06:41.894733+00:00
+FS930_3_R1_WEP_source_charge,R1_WEP_source_charge,defer,strongest bound but needs differential source-charge map between materials,|K_BF_H| <= 2.8e-15/(|C_R1_WEP_source_charge_FM| X_FM),not selected first,false,2026-06-13T18:06:41.894736+00:00
+FS930_4_R10_fifth_force,R10_fifth_force,defer,"needs alpha(lambda), range law, and real curve before even symbolic scoring is clean",|K_BF_H(lambda)| <= alpha_bound(lambda)/(|C_R10_FM(lambda)| X_FM(lambda)),not selected first,false,2026-06-13T18:06:41.894739+00:00

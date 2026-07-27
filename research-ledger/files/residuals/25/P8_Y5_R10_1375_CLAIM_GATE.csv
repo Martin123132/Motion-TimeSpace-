@@ -1,0 +1,6 @@
+gate_id,gate,status,reason,valid_for_claim,claim_allowed
+GATE1375_0_transition_validator,strict transition input validator exists,PASS_VALIDATOR_READY,"missing-parent, toy, shell, and claim-flag refusal rules are explicit.",False,False
+GATE1375_1_source_ready_transition_row,current transition rows include a source-ready input row,BLOCKED_NO_SOURCE_READY_ROW,available rows are missing-parent template or toy/nonclaim rows.,False,False
+GATE1375_2_Kconn_bound,K_conn receives sharper first bound contract,PASS_SYMBOLIC_OPERATOR_BOUND,K_conn is decomposed into derivative/star/IBP/edge operator-norm pieces.,False,False
+GATE1375_3_Kconn_numeric,K_conn bound can be evaluated numerically,BLOCKED_OPERATOR_VALUES_MISSING,"operator norms, source tensors, edge term, and domain/gauge are missing.",False,False
+GATE1375_4_local_claim,local GR / PPN / R10 pass can be claimed,BLOCKED_NO_CLAIM,no source-ready transition row and no numeric/theorem-zero K_conn bound.,False,False

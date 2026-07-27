@@ -1,0 +1,7 @@
+formula_id,name,formula,status
+F4336_0_Topen_to_q,source-kernel definition,q_loc^nu(x)=S_q^nu[T_open](x),DERIVED_INTERFACE_NUMERIC_KERNEL_OPEN
+F4336_1_longitudinal_green,owner-field equation,Box A_loc^nu=q_loc^nu; A_loc^nu=G_Box^bc q_loc^nu,SOURCE_BACKED_FROM_61
+F4336_2_K_identity,longitudinal tensor identity,K_L^{mu nu}=-(partial^mu A^nu+partial^nu A^mu)+eta^{mu nu}partial_alpha A^alpha => partial_mu K_L^{mu nu}=-q_loc^nu,ALGEBRAIC_IDENTITY
+F4336_3_metric_response,metric-response coupling slot,h_MTS=G_metric^bc C_gK P_E[K_L+Kperp],DERIVED_SLOT_PARENT_COUPLING_OPEN
+F4336_4_PiPPN,combined open-tail PPN transfer,Pi_PPN=P_PPN G_metric^bc C_gK P_E[(K_L G_Box^bc S_q)+S_perp],SYMBOLIC_FACTORISATION_DERIVED_NUMERIC_MATRIX_BLOCKED
+F4336_5_RPPN,open-tail residual,R_PPN_open=Pi_PPN T_open,NONCLAIM_OPERATOR_STATEMENT

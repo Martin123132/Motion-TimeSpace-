@@ -1,0 +1,7 @@
+gate_id,claim,gate_pass,reason,claim_allowed,valid_for_claim
+GATE3382_0_sources,all 3382 source paths exist and parse,true,"source register validates UOC, Newton, PPN and EM stress inputs",false,false
+GATE3382_1_source_side,source-prefactor ambiguity is closed in UOC branch,true,"closed by explicit UOC, not by pure derivation",false,false
+GATE3382_2_newton,Newton/Poisson source normalization follows under UOC,true,same kappa_MTS and same Hilbert source give 3377 algebra,false,false
+GATE3382_3_em_stress,EM/Poynting source stress is consistently placed under public Maxwell branch,true,3343/3375 public-Hodge route includes T_EM and Poynting in Hilbert/Hamiltonian source,false,false
+GATE3382_4_full_ppn,full PPN vector passes,false,extra MTS_IR tensor/local response and beta/preferred-frame/nonconservative components remain open,false,false
+GATE3382_5_derived_local_gr,local GR is fully derived from MTS without extra axiom,false,UOC is explicit axiom branch and full PPN remains open,false,false

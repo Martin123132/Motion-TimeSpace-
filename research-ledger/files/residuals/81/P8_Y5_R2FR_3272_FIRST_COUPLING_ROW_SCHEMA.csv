@@ -1,0 +1,7 @@
+field,required,type,meaning,valid_for_claim
+row_id,true,string,stable row identifier,false
+coefficient,true,string,MTS coefficient being tested,false
+bound_value,true,positive_float,absolute allowed coefficient under stated assumptions,false
+prediction_value,true for claim,float_or_MISSING,MTS parent-predicted coefficient,false
+prediction_source,true for claim,path_or_theorem_id,source of the parent prediction or theorem-zero,false
+claim_rule,true,string,non-negotiable promotion rule,false

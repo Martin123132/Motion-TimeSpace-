@@ -1,0 +1,7 @@
+rule_id,rule,result,evidence,claim_effect
+V500_0_sources,all cited source paths exist,pass,missing_sources=0,traceability only
+V500_1_prior_identity_loaded,499 identity/residual/template rows and PiM contracts are loaded,pass,identity=6;residual=8;template=4;PV=9;FC=9,500 tied to 499 and PiM gates
+V500_2_clause_written,"topological PiM parent clause attempt includes data, closed current, skeleton, Hilbert equality, extra projection, unification, and calibration rows",pass,clause_rows=7,topological route concrete
+V500_3_condition_coverage,"closure conditions cover metric independence, commutator, closed charge, Hilbert equality, extra projection, multiplier, FLRW, and calibration",pass,TC500_0_metric_independence;TC500_1_commutator_zero;TC500_2_closed_top_charge;TC500_3_Hilbert_equality;TC500_4_no_extra_projection;TC500_5_no_multiplier_cheat;TC500_6_FLRW_unification;TC500_7_calibration,no hidden promotion condition
+V500_4_bound_runner_spec,"radial bound fallback has input, output, no-cancellation, and acceptance rows",pass,bound_spec_rows=4,test branch explicit but unfilled
+V500_5_no_false_claims,"no clause, condition, or bound row is claim-valid",pass,clause_claims=0;condition_claims=0;bound_claims=0,no Newton/local-GR promotion

@@ -1,0 +1,6 @@
+timestamp_utc,branch_id,checkpoint_id,power_id,term,assumptions,derived_order,jres_power,status,claim_allowed,valid_for_claim
+2026-07-03T04:33:34+00:00,MTS_R2FR_Y5_SOURCE_SUPPORT_POWERS_FOR_JRES_4194,4194,JPOW4194_0_source_term,U_B S_cg,"S_cg=O(D_L), D_L<=C_D U_B",O(U_B^2),nJ_source = 2,conditional,False,False
+2026-07-03T04:33:34+00:00,MTS_R2FR_Y5_SOURCE_SUPPORT_POWERS_FOR_JRES_4194,4194,JPOW4194_1_attractor_laplacian,D_m Delta_h m_L,"m_L-m_*=O(D_L^2), D_L<=C_D U_B, derivative powers preserved",O(D_m U_B^2/L_B^2),nJ_laplacian = 2,conditional,False,False
+2026-07-03T04:33:34+00:00,MTS_R2FR_Y5_SOURCE_SUPPORT_POWERS_FOR_JRES_4194,4194,JPOW4194_2_attractor_drift,-D_t m_L,"m_L-m_*=O(D_L^2), D_L<=C_D U_B, time derivative powers preserved",O(U_B^2/T_B),nJ_drift = 2,conditional,False,False
+2026-07-03T04:33:34+00:00,MTS_R2FR_Y5_SOURCE_SUPPORT_POWERS_FOR_JRES_4194,4194,JPOW4194_3_boundary,boundary_in,boundary zero/routed or O(U_B^2),0 or O(U_B^2 A_bdy),nJ_boundary >= 2 required,open,False,False
+2026-07-03T04:33:34+00:00,MTS_R2FR_Y5_SOURCE_SUPPORT_POWERS_FOR_JRES_4194,4194,JPOW4194_4_total,J_res,all above clauses plus no cross-term cancellation,||J_res|| <= U_B^2 A_J + A_bdy_open,nJ_total = 2 if boundary suppressed,conditional_not_parent_claim,False,False

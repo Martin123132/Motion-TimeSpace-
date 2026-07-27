@@ -1,0 +1,6 @@
+rule_id,if_condition,then_action,reason,implemented_by,valid_for_claim,claim_allowed
+LRR1278_0_closure_promotion,closure_only=true and derived_local_GR requested,REFUSE_PROMOTION,"closure baseline is an internal control, not derivation evidence",branch firewall and output claim flags,False,False
+LRR1278_1_mixed_branch,closure_only=true with finite_residual_scored=true or inherited_EH=true,REFUSE_MIXED_SCORE,"closure, finite residual, and inherited-EH lanes answer different questions",BR1278_3_mixed_branch always disabled,False,False
+LRR1278_2_finite_placeholders,"finite residual branch uses docs templates, MISSING markers, or unaccepted rows",REFUSE_FINITE_SCORE,finite local residual claims require source-backed accepted coefficients,ZR validator rescan and accepted_ready=0,False,False
+LRR1278_3_EH_anchor,EH anchor-only block is treated as inherited EH,REFUSE_EH_INHERITANCE,1277 blocks A511 local EH fixed point inheritance,BR1278_2_inherited_EH disabled,False,False
+LRR1278_4_public_claim,any local Newton/PPN/R10/clock/orbital/local-GR pass_for_claim=true,REFUSE_PUBLIC_CLAIM,no active branch is claim-valid,closure runner output pass_for_claim=false across all tests,False,False

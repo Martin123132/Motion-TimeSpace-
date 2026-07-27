@@ -1,0 +1,5 @@
+carrier_id,object,formula,role,minimum_needed,parent_status,valid_for_claim
+MCI2275_0_covariance_ensemble,phase/carrier covariance inventory,"C_mn=sum_I s_I W_I k_I,m k_I,n with k_I=dS_I",replaces arbitrary one-form deformations with exact phase gradients plus weights/amplitudes,at least one t-dominant carrier and one r-dominant carrier for the local radial block,NOT_IN_CURRENT_SCALAR_ACTION_AS_SIGNED_INVENTORY,False
+MCI2275_1_time_carrier,t-channel carrier,C_tt=s_T W_T Omega_T^2,supplies independent variation of the temporal covariance channel,"W_T>0, Omega_T nonzero, sign convention s_T sourced",UNSOURCED,False
+MCI2275_2_radial_carrier,r-channel carrier,C_rr=s_R W_R K_R^2,supplies independent variation of the radial covariance channel,"W_R>0, K_R nonzero, sign convention s_R sourced",UNSOURCED,False
+MCI2275_3_offdiag_guard,off-diagonal silence,"C_tr=sum_I s_I W_I k_I,t k_I,r=0",keeps the static local radial block diagonal,"phase pairing, parity averaging, or orthogonal carrier design",UNSOURCED,False

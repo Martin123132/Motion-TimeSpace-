@@ -1,0 +1,5 @@
+bound_id,quantity,formula,numeric_bound,units,source,status,claim_allowed,valid_for_claim
+CGB1852_0_alpha_proxy,alpha_PPN_proxy,sqrt(delta_gamma/(2-delta_gamma)),0.005788015401465051,dimensionless,Cassini gamma_minus_1 conservative 2sigma envelope,SOURCE_BACKED_PROXY,False,False
+CGB1852_1_cg_conditional,c_g,abs(c_g) <= alpha_PPN_proxy / abs(N_X tau_PPN),MISSING_NX_TAU_PPN,dimensionless_per_normalized_Xhat,DER1852_4_cg_translation,CONDITIONAL_FORMULA_READY_COMPONENT_BOUND_MISSING,False,False
+CGB1852_2_long_range_branch,c_g_long_range,"if lambda_X >> solar impact scale and N_X=tau_PPN=1, abs(c_g)<=alpha_PPN_proxy",0.005788015401465051,dimensionless,conditional scalar-tensor limit only,ILLUSTRATIVE_NOT_MTS_CLAIM,False,False
+CGB1852_3_finite_range_branch,c_g_finite_range,"Cassini response multiplied by range/screening transfer S_PPN(lambda_X, environment)",MISSING_RANGE_TRANSFER,dimensionless,range gate required,BLOCKED_BY_RANGE_SCREENING,False,False

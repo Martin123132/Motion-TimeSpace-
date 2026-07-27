@@ -1,0 +1,5 @@
+same_parent_branch_id,decision_id,decision,result,rationale,kernel_proved,finite_value_present,score_ready,valid_prediction_row,valid_for_claim,claim_allowed
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,DEC1541_0_kernel_result,Do not claim Dq[v_m]=0.,KERNEL_NOT_PROVED,the old q_loc contracts are conditional and do not define the current memory/cg vertical action,False,False,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,DEC1541_1_finite_fallback,Retain a finite Dq[v_m] coupling envelope.,C_QM_ROW_STAGED,"if q-kernel proof fails, S_cg_norm must be bounded through C_qm and direct/boundary source terms",False,False,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,DEC1541_2_best_next,Try one final q-definition/source-pack split.,NEXT_1542_Q_DEFINITION_OR_CQM_BOUND,either define q/v_m from MTS primitives as a parent object or move to finite coefficient acquisition,False,False,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,DEC1541_3_no_claim,No source-silence or local-GR promotion.,CLAIM_BLOCKED,"Dq[v_m], S_cg_norm, and Q_m^H remain unclosed",False,False,False,False,False,False

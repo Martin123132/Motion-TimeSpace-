@@ -1,0 +1,7 @@
+field_id,required_column,acceptance_rule,current_status,valid_for_claim,claim_allowed
+LQS1283_0_source_identity,source_path;source_anchor;equation_ref,source exists and anchor/equation is found in the cited file,MISSING_FOR_LIVE_QLOC_PROFILE,False,False
+LQS1283_1_domain_frame,domain_id;boundary_condition;frame_convention;P_loc_definition,"same local domain/frame used in q_loc, PPN, clock, and orbital projections",MISSING_FOR_LIVE_QLOC_PROFILE,False,False
+LQS1283_2_profiles,Gamma_eff_formula;K_hat_formula;Delta_K_status;q_loc_profile_formula,Gamma/Khat profiles are explicit and Delta_K is zero or separately bounded,MISSING_FOR_LIVE_QLOC_PROFILE,False,False
+LQS1283_3_units_norm,q_loc_units;norm_definition;normalization_reference;weight_measure,dimensionless A_loc or arena-specific norm can be reproduced,MISSING_FOR_LIVE_QLOC_PROFILE,False,False
+LQS1283_4_observable_map,arena;response_operator_id;arena_bound_threshold;bound_units,q_loc-to-observable map is sourced before any comparison to PPN/clock/orbital/R10,MISSING_FOR_LIVE_QLOC_PROFILE,False,False
+LQS1283_5_claim_flags,valid_for_claim;claim_allowed;no_cancellation_guard,claim flags can only change after all prior fields close and no cancellation is used,FORCED_FALSE_IN_PRIVATE_CHECKPOINT,False,False

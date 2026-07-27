@@ -1,0 +1,6 @@
+contract_id,object,requirement,current_evidence,status,valid_for_claim,claim_allowed
+SNP1215_0_WEP_formula,same-norm WEP B_species product,"B_species,WEP <= |K_MICROSCOPE| * sum_I |C_parent^I| |R_source_I^Earth| |DeltaR_TA6V-PtRh10_I|","DD material deltas numeric; eta bound numeric; C_parent, R_source, K_MICROSCOPE missing",FORMULA_READY_NUMERIC_SUBCOMPONENTS_PRODUCT_MISSING,False,False
+SNP1215_1_basis_lock,basis/norm lock,"C_parent, R_source, R_material, and K_readout must share the same basis, branch id, range convention, and units",DD smoke basis is external; MTS-to-DD map missing in PDD1081_1,MISSING_SAME_BASIS_OWNER,False,False
+SNP1215_2_no_unit_proxy,source/readout normalization,"unit source/readout proxies may debug algebra but cannot be tau_WEP, measured G, or physical readout",DDS1081 rows are numeric only under nonphysical unit proxies,UNIT_PROXY_BLOCKS_CLAIM,False,False
+SNP1215_3_no_cancellation,absolute-sum rule,component signs cannot be tuned against each other; use absolute products unless a full sourced covariance model exists,1213/1214 no-cancellation policy,NO_CANCELLATION_GUARD_ACTIVE,False,False
+SNP1215_4_claim_verdict,first B_species component,claim-valid row needs numeric same-basis product or theorem-zero certificate,"numeric subcomponents exist, but product factors and parent basis are missing",NOT_CLAIM_VALID,False,False

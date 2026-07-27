@@ -1,0 +1,6 @@
+formula_id,name,formula,status
+F4335_0_standard_zero_ppn,closed-branch PPN residual,gamma=1 and beta=1 in the closed private packet => delta_gamma=0 and delta_beta=0,SOURCE_BACKED_NONCLAIM_SMOKE
+F4335_1_gamma_score,gamma dry score,abs(delta_gamma)=0 <= 1e-5,PASS_NONCLAIM_ZERO_BRANCH_ONLY
+F4335_2_beta_score,beta dry score,abs(delta_beta)=0 <= 1e-4,PASS_NONCLAIM_ZERO_BRANCH_ONLY
+F4335_3_open_tail_PiPPN,open-tail PPN requirement,R_PPN_open=Pi_PPN T_open requires Pi_PPN from metric-transfer/Green-function data before scoring,BLOCKED
+F4335_4_R10_requirement,R10 alpha(lambda) requirement,score_R10 requires numeric alpha_pred(lambda)=K_X Qbar_XH(lambda) qbar_XT/(4*pi*Z_X*G_obs) and claim-valid alpha_bound(lambda),BLOCKED

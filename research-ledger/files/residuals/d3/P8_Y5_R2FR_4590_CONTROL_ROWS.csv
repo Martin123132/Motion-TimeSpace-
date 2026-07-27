@@ -1,0 +1,7 @@
+checkpoint,control_id,scenario,expected_result,status,generated_utc,claim_allowed,valid_for_claim
+4590,CTRL4590_clean_vertical_fixed_mask,Dq(v_X)=0 and Pi_mask fixed q-basic before variation,E_Dq_source=0; E_readout_mask=0,SYMBOLIC_CONTROL_PASS,2026-07-06T13:16:46.582719+00:00,False,False
+4590,CTRL4590_named_vertical_only,v_X is called vertical but Dq(v_X) not computed,reject zero; retain E_Dq_source operator row,COUNTERMODEL_CAUGHT,2026-07-06T13:16:46.582719+00:00,False,False
+4590,CTRL4590_postfit_threshold,support/readout window chosen after residual inspection,reject zero; retain E_readout_mask,COUNTERMODEL_CAUGHT,2026-07-06T13:16:46.582719+00:00,False,False
+4590,CTRL4590_active_green_hodge,Pi_mask includes moving Green/Hodge/domain operator,product-rule term survives,COUNTERMODEL_CAUGHT,2026-07-06T13:16:46.582719+00:00,False,False
+4590,CTRL4590_fixed_protocol_tau_open,mask fixed but same tau/e_obs not yet signed,Dq/mask branch can close but E_tau_eobs remains,PARTIAL_REDUCTION_ONLY,2026-07-06T13:16:46.582719+00:00,False,False
+4590,CTRL4590_orbital_GM_mask,domain/mass mask defined by fitted orbital GM or comparison residual,reject as circular readout selector,FIREWALL_PASS,2026-07-06T13:16:46.582719+00:00,False,False

@@ -1,0 +1,156 @@
+# 2690 - Y5/R2FR Source-Domain Quotient, No-Prefactor, No-Shadow Package or Delta-w First Value Row
+
+## Private Verdict
+
+`q_src` itself is clean: quotient labelled Hilbert-source families by their total stress and relative labels disappear. But `q_src` alone is not enough, because labels can enter before variation through `w_A S_A` or return after variation through source-shadow/projector/non-Hilbert channels.
+
+So 2690 does not close source universality. It does something useful instead: it makes the required package finite and explicit, and it creates first nonclaim value rows for `Delta_w_species` and `Delta_w_shadow` rather than pretending the rows are zero.
+
+No source-label, WEP, R10, PPN, clock, orbital, Newton, local-GR, GitHub, or public claim is allowed from this checkpoint.
+
+## Source Register
+
+| source_id | relative_path | absolute_path | exists | required_needles | found_needles | missing_needles | purpose | valid_for_claim | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| SRC2690_2689_NEXT | source-intake/mts_residuals/P8_Y5_R2FR_2689_NEXT_TARGET.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_2689_NEXT_TARGET.csv | true | NEXT2689_0_selected;q_src maps labelled ordinary Hilbert source family;no w_A/kappa_A/source-shadow bypass | NEXT2689_0_selected;q_src maps labelled ordinary Hilbert source family;no w_A/kappa_A/source-shadow bypass |  | confirms selected 2690 q_src/no-prefactor/no-shadow target | false | 2026-06-23T07:19:45.134315+00:00 |
+| SRC2690_2689_OWNER | source-intake/mts_residuals/P8_Y5_R2FR_2689_PARENT_ACTION_OWNER_GATE.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_2689_PARENT_ACTION_OWNER_GATE.csv | true | POG2689_1_q_src;POG2689_2_no_prefactor;POG2689_3_shadow_current | POG2689_1_q_src;POG2689_2_no_prefactor;POG2689_3_shadow_current |  | imports owner gates from 2689 | false | 2026-06-23T07:19:45.134722+00:00 |
+| SRC2690_2689_DELTW | source-intake/mts_residuals/P8_Y5_R2FR_2689_DELTAW_COMPONENT_VALUE_ROWS_NONCLAIM.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_2689_DELTAW_COMPONENT_VALUE_ROWS_NONCLAIM.csv | true | DWV2689_0_delta_w_species;MISSING_PARENT_VALUE_OR_ZERO_THEOREM;DWV2689_9_acceptance | DWV2689_0_delta_w_species;MISSING_PARENT_VALUE_OR_ZERO_THEOREM;DWV2689_9_acceptance |  | imports first Delta_w value-row requirements | false | 2026-06-23T07:19:45.135109+00:00 |
+| SRC2690_2649_QSRC | source-intake/mts_residuals/P8_Y5_SOURCE_DOMAIN_QUOTIENT_2649_QSRC_CONSTRUCTOR_ATTEMPT.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_SOURCE_DOMAIN_QUOTIENT_2649_QSRC_CONSTRUCTOR_ATTEMPT.csv | true | QSRC2649_0_definition;PREACTION_WEIGHT_BYPASS_SURVIVES;SOURCE_DOMAIN_QUOTIENT_CONSTRUCTOR_NOT_PARENT_DERIVED | QSRC2649_0_definition;PREACTION_WEIGHT_BYPASS_SURVIVES;SOURCE_DOMAIN_QUOTIENT_CONSTRUCTOR_NOT_PARENT_DERIVED |  | imports q_src constructor attempt and bypass | false | 2026-06-23T07:19:45.135495+00:00 |
+| SRC2690_2649_GATE | source-intake/mts_residuals/P8_Y5_SOURCE_DOMAIN_QUOTIENT_2649_QSRC_CLAUSE_GATE.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_SOURCE_DOMAIN_QUOTIENT_2649_QSRC_CLAUSE_GATE.csv | true | QG2649_0_parent_category;QG2649_2_no_source_prefactors;QSRC_CLAIM_BLOCKED | QG2649_0_parent_category;QG2649_2_no_source_prefactors;QSRC_CLAIM_BLOCKED |  | imports q_src clause gate | false | 2026-06-23T07:19:45.135878+00:00 |
+| SRC2690_2646_OWNER | source-intake/mts_residuals/P8_Y5_MATTER_NORMALIZATION_OWNER_2646_OWNER_THEOREM_ATTEMPT.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_MATTER_NORMALIZATION_OWNER_2646_OWNER_THEOREM_ATTEMPT.csv | true | MNO2646_1_conditional_owner_lemma;MNO2646_5_countermodel;MATTER_NORMALIZATION_OWNER_NOT_DERIVED | MNO2646_1_conditional_owner_lemma;MNO2646_5_countermodel;MATTER_NORMALIZATION_OWNER_NOT_DERIVED |  | imports no-source-prefactor/matter-normalization theorem attempt | false | 2026-06-23T07:19:45.136274+00:00 |
+| SRC2690_2646_VALUE | source-intake/mts_residuals/P8_Y5_MATTER_NORMALIZATION_OWNER_2646_DELTAW_SPECIES_COEFFICIENT_ROWS_NONCLAIM.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_MATTER_NORMALIZATION_OWNER_2646_DELTAW_SPECIES_COEFFICIENT_ROWS_NONCLAIM.csv | true | DWS2646_0_delta_w_species;SYMBOLIC_FREE_COEFFICIENT_NO_PARENT_VALUE;SOURCE_PROJECTORS_NOT_DERIVED | DWS2646_0_delta_w_species;SYMBOLIC_FREE_COEFFICIENT_NO_PARENT_VALUE;SOURCE_PROJECTORS_NOT_DERIVED |  | imports symbolic Delta_w_species first coefficient row | false | 2026-06-23T07:19:45.136819+00:00 |
+| SRC2690_2617_IDENTITY | source-intake/mts_residuals/P8_Y5_SINGLE_SOURCE_MAP_GATE_2617_SINGLE_SOURCE_MAP_IDENTITY_THEOREM.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_SINGLE_SOURCE_MAP_GATE_2617_SINGLE_SOURCE_MAP_IDENTITY_THEOREM.csv | true | SMI2617_1_identity_source_map;THEOREM_CONTRACT_READY_PARENT_UNSIGNED;SMI2617_5_current_verdict | SMI2617_1_identity_source_map;THEOREM_CONTRACT_READY_PARENT_UNSIGNED;SMI2617_5_current_verdict |  | imports single-source-map theorem and gap | false | 2026-06-23T07:19:45.137510+00:00 |
+| SRC2690_2617_SHADOW | source-intake/mts_residuals/P8_Y5_SINGLE_SOURCE_MAP_GATE_2617_SOURCE_SHADOW_ZERO_ATTEMPT.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_SINGLE_SOURCE_MAP_GATE_2617_SOURCE_SHADOW_ZERO_ATTEMPT.csv | true | SSZ2617_1_shadow_as_action_term;SSZ2617_3_shadow_as_projector;PARTIAL_THEOREM_NOT_FULL_PARENT_PROOF | SSZ2617_1_shadow_as_action_term;SSZ2617_3_shadow_as_projector;PARTIAL_THEOREM_NOT_FULL_PARENT_PROOF |  | imports source-shadow zero attempt | false | 2026-06-23T07:19:45.138150+00:00 |
+| SRC2690_2617_INVENTORY | source-intake/mts_residuals/P8_Y5_SINGLE_SOURCE_MAP_GATE_2617_NONHILBERT_BOUNDARY_PROJECTOR_AUDIT.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_SINGLE_SOURCE_MAP_GATE_2617_NONHILBERT_BOUNDARY_PROJECTOR_AUDIT.csv | true | NHB2617_0_boundary_improvement;NHB2617_4_post_variation_projector;INVENTORY_READY_NONCLAIM | NHB2617_0_boundary_improvement;NHB2617_4_post_variation_projector;INVENTORY_READY_NONCLAIM |  | imports non-Hilbert/boundary/projector bypass inventory | false | 2026-06-23T07:19:45.138805+00:00 |
+| SRC2690_1889_WARD | source-intake/mts_residuals/P8_Y5_PARENT_QLOC_1889_SOURCE_CURRENT_WARD_OWNER_ATTEMPT.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_1889_SOURCE_CURRENT_WARD_OWNER_ATTEMPT.csv | true | SWO1889_3_no_species_label_conditional;SWO1889_5_pre_action_weight_leak;SOURCE_CURRENT_WARD_OWNER_NOT_DERIVED | SWO1889_3_no_species_label_conditional;SWO1889_5_pre_action_weight_leak;SOURCE_CURRENT_WARD_OWNER_NOT_DERIVED |  | imports Ward/source-current owner limitations | false | 2026-06-23T07:19:45.139250+00:00 |
+| SRC2690_1905_LINE | source-intake/mts_residuals/P8_Y5_PARENT_QLOC_1905_ACTION_DENSITY_LINE_OWNER_GATE.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_1905_ACTION_DENSITY_LINE_OWNER_GATE.csv | true | ADL1905_0_line_owner;ADL1905_4_eom_shortcut;ACTION_DENSITY_LINE_OWNER_NOT_DERIVED | ADL1905_0_line_owner;ADL1905_4_eom_shortcut;ACTION_DENSITY_LINE_OWNER_NOT_DERIVED |  | imports action-density line owner gap | false | 2026-06-23T07:19:45.139660+00:00 |
+
+## q_src / No-Prefactor / No-Shadow Package Audit
+
+| package_id | claim_piece | formal_statement | current_status | derivation_or_obstruction | source_anchor | parent_signed | valid_for_claim | claim_allowed | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| QPK2690_0_target | q_src/no-prefactor/no-shadow package | Construct q_src(J_lab)=T_total and prove every ordinary source coupling factors through it with no pre-action prefactor or post-Hilbert shadow bypass. | TARGET_SHARP | This is the minimum package that could make source-label forgetting theorem-grade. | 2689:NEXT2689_0_selected | false | false | false | 2026-06-23T07:19:45.139672+00:00 |
+| QPK2690_1_qsrc_definition | source-domain quotient | J_lab={(T_A,A)} ~ J'_lab iff sum_A T_A=sum_B T'_B; q_src(J_lab)=T_total. | MATHEMATICAL_CONSTRUCTOR_WRITTEN | The quotient map is clean as mathematics, but parent physics must force all source couplings to factor through it. | 2649:QSRC2649_0_definition | false | false | false | 2026-06-23T07:19:45.139677+00:00 |
+| QPK2690_2_factorization | unique source map after quotient | If F_src is local/covariant/additive/natural on Im(q_src), then F_src(T_total)=kappa_univ T_total up to one common scale. | EXACT_CONDITIONAL_THEOREM | Relative weights cannot be formed after labels are removed; this clause is good but conditional. | 2649:QSRC2649_1_factorization_theorem;1889:SWO1889_3_no_species_label_conditional | false | false | false | 2026-06-23T07:19:45.139680+00:00 |
+| QPK2690_3_parent_adoption | parent action/category adopts q_src before coupling | C_parent -> C_source quotients labelled current families by total Hilbert current before any coupling coefficient is chosen. | PARENT_ADOPTION_NOT_DERIVED | Current evidence states the clause but does not derive it from MTS primitives or normal-form action grammar. | 2649:QSRC2649_2_parent_adoption_gap;2690:QPK2690_1_qsrc_definition | false | false | false | 2026-06-23T07:19:45.139683+00:00 |
+| QPK2690_4_no_prefactor | no pre-action source prefactor | S_matter=sum_A S_A is the parent ordinary-matter action; w_A S_A and kappa_A T_A are not legal active-source-only objects before variation. | NO_PREFACTOR_THEOREM_NOT_DERIVED | q_src alone fails if it receives an already weighted Hilbert source sum_A w_A T_A. | 2649:QSRC2649_3_no_prefactor_bypass;2646:MNO2646_5_countermodel | false | false | false | 2026-06-23T07:19:45.139686+00:00 |
+| QPK2690_5_no_shadow | no post-Hilbert source-shadow/projector bypass | T_active=T_H; any J_shadow is action content, boundary/improvement, nonvariational inconsistency, or a retained residual block. | SHADOW_PACKAGE_CLASSIFIED_NOT_ZEROED | The trichotomy is useful, but parent normal-form classification and boundary/projector silence are still unsigned. | 2617:SMI2617_2_shadow_trichotomy;2617:SSZ2617_4_current_verdict | false | false | false | 2026-06-23T07:19:45.139689+00:00 |
+| QPK2690_6_nonhilbert_inventory | non-Hilbert/boundary/projector residual inventory | J_shadow may include spin/torsion, boundary, nonminimal, projector, or decoupled conserved blocks. | INVENTORY_READY_NONCLAIM | All channels are named and must be zeroed or bounded rather than hidden inside source universality. | 2617:NHB2617_5_verdict | false | false | false | 2026-06-23T07:19:45.139692+00:00 |
+| QPK2690_7_action_line | one action-density line support | One parent action-density/measure/current line would prevent species-only Jacobians and collapse ordinary relative weights to common mode. | ACTION_DENSITY_LINE_OWNER_UNSIGNED | This is the cleanest no-prefactor route, but it is not parent-signed. | 1905:ADL1905_0_line_owner;2646:MNO2646_4_measure_action_density_line | false | false | false | 2026-06-23T07:19:45.139694+00:00 |
+| QPK2690_8_projected_mass | Newton/GM projection after source quotient | Measured-GM requires d(Pi_M J_H)=0 with no exchange, boundary, anomaly, range or time-drift leakage. | PROJECTED_MASS_SEPARATE_OPEN_GATE | q_src helps source labels, not the whole Newtonian calibration problem. | 2649:QSRC2649_5_projected_mass_gap;1889:SWO1889_6_projected_mass_flux | false | false | false | 2026-06-23T07:19:45.139697+00:00 |
+| QPK2690_9_verdict | promote q_src/no-prefactor/no-shadow package | Current MTS parent theory forces ordinary source coupling through q_src, forbids pre-action weights, and eliminates shadow/projector label reentry. | PACKAGE_NOT_PARENT_DERIVED | q_src is exact conditionally, but parent adoption, no-prefactor/action-line owner, shadow zero and projected mass remain unsigned. | QPK2690_0_target through QPK2690_8_projected_mass | false | false | false | 2026-06-23T07:19:45.139700+00:00 |
+
+## Closure Gate
+
+| gate_id | required_clause | current_status | if_signed | if_unsigned | source_anchor | gate_pass | valid_for_claim | claim_allowed | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| QG2690_0_qsrc_map | q_src mathematical quotient is written | PASS_CONDITIONAL_NONCLAIM | relative labels absent from Im(q_src) | not enough without parent adoption | 2649:QSRC2649_0_definition | true | false | false | 2026-06-23T07:19:45.139704+00:00 |
+| QG2690_1_parent_adoption | parent action/category requires all source maps factor through q_src | FAIL_PARENT_ADOPTION_NOT_DERIVED | source labels cannot enter F_src | q_src remains closure contract | 2649:QG2649_0_parent_category | false | false | false | 2026-06-23T07:19:45.139708+00:00 |
+| QG2690_2_no_prefactor | pre-action w_A/kappa_A/source-only multipliers are illegal | FAIL_NO_PREFACTOR_NOT_DERIVED | weighted-source countermodel killed | q_src may receive weighted T_source | 2649:QG2649_2_no_source_prefactors | false | false | false | 2026-06-23T07:19:45.139710+00:00 |
+| QG2690_3_no_shadow | post-Hilbert source-shadow/projector/non-Hilbert label reentry is zero or bounded | FAIL_SHADOW_ZERO_NOT_DERIVED | T_active=T_H reaches arenas | delta_w_shadow/J_NH/projector rows remain live | 2617:SMI2617_5_current_verdict | false | false | false | 2026-06-23T07:19:45.139713+00:00 |
+| QG2690_4_action_line | one action-density line/measure/current owner is parent-signed | FAIL_ACTION_LINE_UNSIGNED | ordinary relative weights collapse to common mode | Delta_w_species remains live | 1905:ADL1905_5_verdict | false | false | false | 2026-06-23T07:19:45.139716+00:00 |
+| QG2690_5_projected_mass | measured-GM/source projector calibration is closed | FAIL_PROJECTED_MASS_OPEN | Newton source normalization can use q_src result | Newton/GM remains separate residual gate | 2649:QG2649_4_projected_mass | false | false | false | 2026-06-23T07:19:45.139719+00:00 |
+| QG2690_6_ward_guard | Ward conservation is not accepted as source-domain proof | PASS_GUARD_ONLY | prevents false promotion | none; guard only | 1889:SWO1889_2_Ward_homogeneity | true | false | false | 2026-06-23T07:19:45.139722+00:00 |
+| QG2690_7_no_cancellation | finite values cannot pass by fitted cancellation | PASS_GUARD_ONLY | keeps empirical branch honest | none; guard only | 2689:DWV2689_8_no_cancellation | true | false | false | 2026-06-23T07:19:45.139724+00:00 |
+| QG2690_8_verdict | source-label/source-shadow package can be claimed | CLAIM_BLOCKED | Delta_w_species/shadow theorem-zero promotable | package remains derivation target | QG2690_0 through QG2690_7 | false | false | false | 2026-06-23T07:19:45.139727+00:00 |
+
+## Bypass and Countermodel Ledger
+
+| bypass_id | bypass | why_it_matters | residual_owner | needed_to_close | status | valid_for_claim | claim_allowed | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| BYP2690_0_preaction_weight | S_matter=sum_A w_A S_A | survives q_src if inserted before variation | Delta_w_species | no-prefactor/action-density-line theorem or numeric epsilon_A row | LIVE_COUNTERMODEL | false | false | 2026-06-23T07:19:45.139735+00:00 |
+| BYP2690_1_source_shadow_action | J_shadow=delta DeltaS/delta e_obs | is real action content, not a harmless RHS knob | Delta_w_shadow or classified residual operator | parent normal-form classifier | RECLASSIFY_OR_BOUND | false | false | 2026-06-23T07:19:45.139739+00:00 |
+| BYP2690_2_nonvariational_shadow | J_shadow inserted without action | Bianchi rejects unless separately conserved real block | J_decoupled residual | arena exclusion or bound | FILTERED_NOT_ZEROED | false | false | 2026-06-23T07:19:45.139742+00:00 |
+| BYP2690_3_boundary_improvement | J_boundary=nabla U or delta S_boundary/delta e_obs | silent only with falloff/local boundary theorem | boundary source residual | boundary silence theorem or bound | LIVE_BOUNDARY_GATE | false | false | 2026-06-23T07:19:45.139745+00:00 |
+| BYP2690_4_postvariation_projector | T_active=P_material(T_H) | direct label reentry after clean Hilbert source | projector/source-shadow residual | P_material=identity theorem or bound | LIVE_PROJECTOR_GATE | false | false | 2026-06-23T07:19:45.139747+00:00 |
+| BYP2690_5_projected_mass | Pi_M J_H versus measured GM | not solved by source-label quotient alone | Delta_mu_projector/Newton source residual | closed calibrated mass projector | SEPARATE_NEWTON_GATE | false | false | 2026-06-23T07:19:45.139750+00:00 |
+
+## Delta-w First Value Rows
+
+| value_row_id | component | coefficient_symbol | definition | basis_formula | current_value | value_type | units | source_path | source_anchor | zero_route_status | missing_for_claim | arena_links | numeric_value_present | source_path_present | projection_ready | score_ready | valid_prediction_row | valid_for_claim | claim_allowed | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| DWFV2690_0_delta_w_species | Delta_w_species | epsilon_A | relative active-source/action normalization after projecting out the universal common mode | w_A=w_common*(1+epsilon_A), sum_A p_A epsilon_A=0; Delta_w_species=P_perp epsilon | MISSING_PARENT_NUMERIC_VALUE_OR_THEOREM_ZERO | symbolic_nonclaim_placeholder | dimensionless | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_MATTER_NORMALIZATION_OWNER_2646_DELTAW_SPECIES_COEFFICIENT_ROWS_NONCLAIM.csv | DWS2646_0_delta_w_species;DWS2646_1_common_mode_projector;DWS2646_2_Xi_injection_rule | QSRC_NO_PREFACTOR_NO_SHADOW_PACKAGE_NOT_DERIVED | parent epsilon_A vector or theorem-zero; material/source composition vector p_A; P_perp convention; source path for value; no-cancellation norm; WEP/R10/PPN/clock/orbital K/tau/projection kernels | WEP;R10;PPN;clock;orbital;Newton | false | true | false | false | false | false | false | 2026-06-23T07:19:45.139913+00:00 |
+| DWFV2690_1_delta_w_shadow | Delta_w_shadow | delta_w_shadow | coefficient multiplying source-shadow/non-Hilbert/projector residual after Hilbert variation | T_active=T_H + delta_w_shadow J_shadow | MISSING_PARENT_NORMAL_FORM_OR_NUMERIC_BOUND | shadow_bound_interface_nonclaim | dimensionless_or_arena_normalized | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_SINGLE_SOURCE_MAP_GATE_2617_DELTAW_SHADOW_BOUND_INTERFACE.csv | DSH2617_0_delta_w_shadow;DSH2617_5_nonclaim_lock | SOURCE_SHADOW_ZERO_NOT_DERIVED | shadow basis source paths; parent normal-form classification; arena projection; numeric bound table or theorem-zero | WEP;R10;PPN;clock;orbital;Newton | false | true | false | false | false | false | false | 2026-06-23T07:19:45.140056+00:00 |
+
+## Dry-Run Cases
+
+| case_id | qsrc_written | parent_adoption_signed | no_prefactor_signed | no_shadow_signed | value_rows_present | cancellation_only | ward_only | expected_status | valid_for_claim | claim_allowed | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| DRY2690_0_all_signed | true | true | true | true | true | false | false | THEOREM_READY_IF_PARENT_SIGNED | false | false | 2026-06-23T07:19:45.140064+00:00 |
+| DRY2690_1_qsrc_only | true | false | false | false | false | false | false | REJECT_QSRC_ONLY | false | false | 2026-06-23T07:19:45.140069+00:00 |
+| DRY2690_2_prefactor_open | true | true | false | true | false | false | false | REJECT_PREACTION_WEIGHT_BYPASS | false | false | 2026-06-23T07:19:45.140072+00:00 |
+| DRY2690_3_shadow_open | true | true | true | false | false | false | false | REJECT_SOURCE_SHADOW_BYPASS | false | false | 2026-06-23T07:19:45.140075+00:00 |
+| DRY2690_4_values_missing | false | false | false | false | false | false | false | REJECT_VALUE_ROWS_MISSING | false | false | 2026-06-23T07:19:45.140084+00:00 |
+| DRY2690_5_values_without_projection | false | false | false | false | true | false | false | REJECT_VALUES_WITHOUT_PROJECTIONS | false | false | 2026-06-23T07:19:45.140087+00:00 |
+| DRY2690_6_ward_only | false | false | false | false | false | false | true | REJECT_WARD_ONLY | false | false | 2026-06-23T07:19:45.140090+00:00 |
+| DRY2690_7_cancellation_only | false | false | false | false | true | true | false | REJECT_CANCELLATION_ONLY_PASS | false | false | 2026-06-23T07:19:45.140092+00:00 |
+
+## Dry-Run Results
+
+| case_id | computed_status | expected_status | status_match | claim_allowed | valid_for_claim | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- |
+| DRY2690_0_all_signed | THEOREM_READY_IF_PARENT_SIGNED | THEOREM_READY_IF_PARENT_SIGNED | true | false | false | 2026-06-23T07:19:45.140098+00:00 |
+| DRY2690_1_qsrc_only | REJECT_QSRC_ONLY | REJECT_QSRC_ONLY | true | false | false | 2026-06-23T07:19:45.140103+00:00 |
+| DRY2690_2_prefactor_open | REJECT_PREACTION_WEIGHT_BYPASS | REJECT_PREACTION_WEIGHT_BYPASS | true | false | false | 2026-06-23T07:19:45.140107+00:00 |
+| DRY2690_3_shadow_open | REJECT_SOURCE_SHADOW_BYPASS | REJECT_SOURCE_SHADOW_BYPASS | true | false | false | 2026-06-23T07:19:45.140110+00:00 |
+| DRY2690_4_values_missing | REJECT_VALUE_ROWS_MISSING | REJECT_VALUE_ROWS_MISSING | true | false | false | 2026-06-23T07:19:45.140113+00:00 |
+| DRY2690_5_values_without_projection | REJECT_VALUES_WITHOUT_PROJECTIONS | REJECT_VALUES_WITHOUT_PROJECTIONS | true | false | false | 2026-06-23T07:19:45.140118+00:00 |
+| DRY2690_6_ward_only | REJECT_WARD_ONLY | REJECT_WARD_ONLY | true | false | false | 2026-06-23T07:19:45.140121+00:00 |
+| DRY2690_7_cancellation_only | REJECT_CANCELLATION_ONLY_PASS | REJECT_CANCELLATION_ONLY_PASS | true | false | false | 2026-06-23T07:19:45.140124+00:00 |
+
+## Claim Gates
+
+| gate_id | condition | current_status | source_anchor | gate_pass | valid_for_claim | claim_allowed | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| CG2690_0_qsrc | q_src is written and parent-adopted before coupling | FAIL_PARENT_ADOPTION_NOT_DERIVED | QPK2690_3_parent_adoption | false | false | false | 2026-06-23T07:19:45.140128+00:00 |
+| CG2690_1_no_prefactor | pre-action source prefactors are impossible | FAIL_NO_PREFACTOR_THEOREM_NOT_DERIVED | QPK2690_4_no_prefactor | false | false | false | 2026-06-23T07:19:45.140131+00:00 |
+| CG2690_2_no_shadow | source-shadow/projector/non-Hilbert bypass is zero or bounded | FAIL_SHADOW_PACKAGE_NOT_ZEROED | QPK2690_5_no_shadow | false | false | false | 2026-06-23T07:19:45.140134+00:00 |
+| CG2690_3_action_line | action-density line/measure owner is signed | FAIL_ACTION_DENSITY_LINE_OWNER_UNSIGNED | QPK2690_7_action_line | false | false | false | 2026-06-23T07:19:45.140136+00:00 |
+| CG2690_4_projected_mass | Newton/GM projected source calibration is closed | FAIL_PROJECTED_MASS_OPEN | QPK2690_8_projected_mass | false | false | false | 2026-06-23T07:19:45.140139+00:00 |
+| CG2690_5_value_rows | finite Delta_w first rows are numeric/theorem-zero and projected | FAIL_FIRST_VALUE_ROWS_NONCLAIM | DWFV2690_0_delta_w_species;DWFV2690_1_delta_w_shadow | false | false | false | 2026-06-23T07:19:45.140142+00:00 |
+| CG2690_6_guards | Ward-only and cancellation-only shortcuts are refused | PASS_GUARD_ONLY | QG2690_6_ward_guard;QG2690_7_no_cancellation | true | false | false | 2026-06-23T07:19:45.140144+00:00 |
+| CG2690_7_verdict | source-coupling/local-GR branch can claim pass | CLAIM_BLOCKED | CG2690_0_qsrc through CG2690_6_guards | false | false | false | 2026-06-23T07:19:45.140147+00:00 |
+
+## Decisions
+
+| decision_id | decision | reason | status | next_dependency | valid_for_claim | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- |
+| DEC2690_0_qsrc | DO_NOT_PROMOTE_QSRC_PACKAGE | q_src is mathematically clean, but parent adoption, no-prefactor, source-shadow zero and projected-mass calibration are not derived together. | QSRC_PACKAGE_NOT_PARENT_DERIVED | parent action normal-form/source-map classifier | false | 2026-06-23T07:19:45.140150+00:00 |
+| DEC2690_1_prefactor_shadow | COMBINE_PREFACTOR_AND_SHADOW_AS_ONE OWNER DEBT | A clean quotient still fails if labels enter before variation or return after Hilbert extraction. | BYPASSES_UNIFIED | classify allowed parent action source maps and residual channels | false | 2026-06-23T07:19:45.140153+00:00 |
+| DEC2690_2_value_rows | CREATE_FIRST_DELTAW_VALUE_ROWS_AS_NONCLAIM | Delta_w_species and Delta_w_shadow now have explicit source paths, units and blockers, but no numeric value or theorem-zero. | FIRST_VALUE_ROWS_STAGED_NONCLAIM | parent epsilon/shadow values or theorem-zero plus arena kernels | false | 2026-06-23T07:19:45.140156+00:00 |
+| DEC2690_3_next | ATTACK_PARENT_ACTION_NORMAL_FORM_CLASSIFIER_NEXT | The next leap is not more q_src algebra; it is a normal-form classifier saying where every source-like term lives. | NEXT_TARGET_SELECTED | 2691 parent action normal-form source-map classifier or Delta_w value acquisition | false | 2026-06-23T07:19:45.140159+00:00 |
+
+## Next Target
+
+| target_id | kind | target_doc | target_script | purpose | acceptance_gate | forbidden_shortcuts | ready_to_run | valid_for_claim | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| NEXT2690_0_selected | selected | 2691-Y5-R2FR-parent-action-normal-form-source-map-classifier-or-delta-w-value-acquisition.md | scripts/Y5_R2FR_parent_action_normal_form_source_map_classifier_or_delta_w_value_acquisition_2691.py | classify every source-like parent term as Hilbert matter, left-hand geometry, boundary/improvement, nonvariational inconsistency, decoupled residual, or explicit finite Delta_w row | all pre-action prefactor and source-shadow/projector channels are either forbidden by parent normal form, reclassified as non-source geometry/boundary, or retained as finite sourced Delta_w/J_NH/projector rows | q_src as theorem by definition; Ward-only proof; EOM division; action schema as derivation; source labels forgotten by preference; cancellation-only pass; GitHub action; formalization-workbench edits | true | false | 2026-06-23T07:19:45.140162+00:00 |
+
+## Project Status Snapshot
+
+| status_id | sector | status | meaning | claim_allowed | next_action | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- |
+| STATUS2690_0_qsrc | source quotient | MATHEMATICAL_QSRC_CLEAN_PARENT_ADOPTION_OPEN | q_src exists as an exact quotient, but not as a parent-forced source domain | false | run 2691 parent action normal-form source-map classifier | 2026-06-23T07:19:45.140166+00:00 |
+| STATUS2690_1_prefactor | pre-action weights | NO_PREFACTOR_THEOREM_NOT_DERIVED | this is still the sharpest source-weight countermodel | false | run 2691 parent action normal-form source-map classifier | 2026-06-23T07:19:45.140169+00:00 |
+| STATUS2690_2_shadow | source-shadow bypass | SHADOW_CLASSIFIED_NOT_ZEROED | shadow is no longer vague, but needs normal-form classification or finite bounds | false | run 2691 parent action normal-form source-map classifier | 2026-06-23T07:19:45.140172+00:00 |
+| STATUS2690_3_values | Delta_w finite route | FIRST_VALUE_ROWS_NONCLAIM | Delta_w_species and Delta_w_shadow have explicit first value rows but no claim values | false | run 2691 parent action normal-form source-map classifier | 2026-06-23T07:19:45.140174+00:00 |
+| STATUS2690_4_local_gr | local GR/Newton | SOURCE_SIDE_NOT_CLOSED | source coupling is sharper, but Newton/GM projection and GR field-equation gates remain open | false | run 2691 parent action normal-form source-map classifier | 2026-06-23T07:19:45.140177+00:00 |
+
+## Validation
+
+| check_id | passed | detail | timestamp_utc |
+| --- | --- | --- | --- |
+| VAL2690_sources_exist_and_needles_found | true | all cited source paths exist and required needles were found | 2026-06-23T07:19:45.267574+00:00 |
+| VAL2690_qsrc_constructor_written | true | q_src mathematical constructor is retained | 2026-06-23T07:19:45.267604+00:00 |
+| VAL2690_package_not_promoted | true | q_src/no-prefactor/no-shadow package is not promoted | 2026-06-23T07:19:45.267609+00:00 |
+| VAL2690_closure_gates_block | true | closure gates block claims | 2026-06-23T07:19:45.267613+00:00 |
+| VAL2690_bypasses_retained | true | pre-action and post-variation bypasses are retained | 2026-06-23T07:19:45.267616+00:00 |
+| VAL2690_first_value_rows_nonclaim | true | first Delta_w value rows are sourced as nonclaim and not score-ready | 2026-06-23T07:19:45.267620+00:00 |
+| VAL2690_dryrun_refusals | true | dry-run refuses q_src-only, prefactor, shadow, Ward-only, missing values/projections and cancellation-only cases | 2026-06-23T07:19:45.267623+00:00 |
+| VAL2690_claim_gates_block_claims | true | all claim gates block promotion | 2026-06-23T07:19:45.267627+00:00 |
+| VAL2690_csv_parse | true | parsed 12 output CSVs | 2026-06-23T07:19:45.267630+00:00 |
+| VAL2690_branch_copies_parse | true | parsed 5 branch-copy CSVs | 2026-06-23T07:19:45.267633+00:00 |
+| VAL2690_formalization_write_guard | true | no output path targets formalization-workbench | 2026-06-23T07:19:45.267637+00:00 |
+| VAL2690_pycache_absent_at_validation_time | true | scripts/__pycache__ absent when validation rows were built | 2026-06-23T07:19:45.267640+00:00 |
+| VAL2690_next_target_selected | true | 2691 parent action normal-form source-map classifier target selected | 2026-06-23T07:19:45.267644+00:00 |
+| VAL2690_OVERALL | true | 2690 keeps q_src as a clean conditional, refuses package promotion, retains prefactor/shadow bypasses, and stages first Delta_w value rows | 2026-06-23T07:19:45.267648+00:00 |

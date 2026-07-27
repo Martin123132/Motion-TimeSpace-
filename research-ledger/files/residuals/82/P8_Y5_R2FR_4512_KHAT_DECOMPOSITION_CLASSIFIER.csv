@@ -1,0 +1,7 @@
+class_id,branch,trace_result,why,live_status,finite_fallback,valid_for_claim
+KDC4512_0_canonical_metric_response,K_hat=K_metric[Gamma_eff],ZERO_IF_LIVE_MAP_SIGNED,no residual tensor exists in the canonical branch,PRIVATE_CANONICAL_BRANCH_NOT_PUBLIC_MAP,legacy DeltaK trace row,False
+KDC4512_1_tracefree_residual,K_hat=K_metric+Pi_TF[U],ZERO_IF_PROJECTOR_PARENT_OWNED,tracefree identity holds pointwise for all m,FORMAL_SHAPE_EXISTS_LIVE_ADOPTION_UNSIGNED,A_TF/L_TF bound from 4138 does not affect trace but adoption tails do,False
+KDC4512_2_scalar_trace_reentry,K_hat=K_metric+S_trace g,LIVE_TRACE_RESIDUAL,any independent scalar trace creates D_m Tr(R_K)=4 D_m S_trace in four dimensions,FORBIDDEN_UNLESS_PARENT_ZERO_OR_BOUND,"C_scalar_trace,m",False
+KDC4512_3_boundary_improvement,K_hat=K_metric+div B_imp,ZERO_ONLY_WITH_FIXED_BOUNDARY_OR_TOTAL-DERIVATIVE_HANDOFF,bulk trace can be an exact divergence but local collars/readouts can still see a boundary trace,UNSIGNED,"C_boundary_trace,m + C_improvement_trace,m",False
+KDC4512_4_flux_or_Poynting,physical wave/EM flux stress,NOT_A_FREE_LOCAL_GR_ZERO,"Maxwell-like stress is a valid action branch but must be counted as physical stress/current exchange, not hidden in Khat closure",ROUTE_RETAINED_FOR_EM_BRANCH,R_flux/current/source-normalization row,False
+KDC4512_5_legacy_Khat,old K_hat symbol without canonical equality,RESIDUAL_RETAINED,3689 quarantines legacy Khat until mapped into K_can,CURRENT_PUBLIC_SAFE_STATUS,D_m Tr(Delta_K_legacy),False

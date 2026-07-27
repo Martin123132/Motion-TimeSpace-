@@ -1,0 +1,13 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1213_0_sources_exist,all cited local sources exist,PASS,14/14 sources exist,False,False
+VAL1213_1_needles_found,all cited source needles found,PASS,14/14 needles found,False,False
+VAL1213_2_source_zero_blocked,source-side zero is not overclaimed,PASS,SSA1213_4 source-side total blocked,False,False
+VAL1213_3_absolute_bound,absolute source-side bound is present,PASS,SSB1213_0 present,False,False
+VAL1213_4_obstruction_row,source-side obstruction row is staged,PASS,SSR1213_0 present,False,False
+VAL1213_5_profile_feed,1212 Gres profile feed is staged,PASS,GUP1213_0 present,False,False
+VAL1213_6_no_missing_claim_rows,no row with MISSING is valid for claim,PASS,source-side rows remain nonclaim,False,False
+VAL1213_7_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout,False,False
+VAL1213_8_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1213_SOURCE_REGISTER.csv:14; P8_Y5_R10_1213_SOURCE_SIDE_ZERO_AUDIT.csv:5; P8_Y5_R10_1213_SOURCE_SIDE_BOUND_DECOMPOSITION.csv:4; P8_Y5_R10_1213_SOURCE_SIDE_OBSTRUCTION_ROWS.csv:3; P8_Y5_R10_1213_GRES_PROFILE_FEED_UPDATE.csv:1; P8_Y5_R10_1213_DECISION_LEDGER.csv:2; P8_Y5_R10_1213_CLAIM_GATES.csv:5; P8_Y5_R10_1213_NEXT_TARGET.csv:1,False,False
+VAL1213_9_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_after_run_start_count=0,False,False
+VAL1213_10_next_target,next target is staged,PASS,1214-Y5-R10-no-source-only-slot-parent-signature-or-Delta-species-bound-fill.md,False,False
+VAL1213_11_overall,overall 1213 validation,PASS,1213 source-side obstruction bound pack is reproducible and nonclaim,False,False

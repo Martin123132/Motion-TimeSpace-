@@ -1,0 +1,6 @@
+residual_id,equation_slot,zero_or_bound_needed,source_anchors,test_arenas,status,valid_for_claim
+RV2633_0_public_equation,a1*G_mn + a0*g_mn + DeltaE_MTS_mn + DeltaE_boundary_mn = 1/2*T_H_mn + J_shadow_mn,DeltaE_MTS=0/bound; DeltaE_boundary=0/bound; J_shadow=0/bound,2485;2486;2632,Newton;PPN;orbital;R10,SCHEMA_READY_VALUES_MISSING,False
+RV2633_1_source_normalization,G_parent*rho_H transfer into nabla^2 U,e_kappaG=0/bound; E_norm=0/bound; no fitted GM,2483;2485;2486,Newton;orbital;local_GR,PARENT_COUPLING_OWNER_MISSING,False
+RV2633_2_readout_shadow,DObs_e[v_X] and common-frame transfer into metric/clock/source readouts,DObs_e_R=0/bound; epsilon_common_frame_abs=0/bound,2486;2487;2488,PPN;clocks;WEP;orbital,DOBS_E_KERNEL_NOT_SIGNED,False
+RV2633_3_PPN_abs,Delta_PPN_abs = |delta_p|+|b_R|+|delta_beta|+|d_R|+|w_R|+|endpoint|+|readout|+...,all components theorem-zero or source-backed finite rows; no cancellations,2489;2631,Cassini;Mercury;LLR;pulsar;preferred_frame,FULL_VECTOR_OPEN,False
+RV2633_4_effective_GR_branch,effective leading GR plus explicit residual vector,declare effective status if parent action generator fails; source every residual row before tests,2484;2632,"same tests as local GR, but as residual-bounded EFT branch",BACKUP_ROUTE_ONLY,False

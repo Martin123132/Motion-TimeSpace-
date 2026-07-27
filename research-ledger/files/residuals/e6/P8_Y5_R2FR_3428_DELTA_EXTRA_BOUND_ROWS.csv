@@ -1,0 +1,8 @@
+bound_id,quantity,definition,bound_formula,status,valid_for_claim
+DEX3428_0_public_double_count,epsilon_public_double_count,ordinary Hilbert/EM/Poynting stress counted again as extra source,0 if all public Hilbert stress is included once in M_H; else source-backed double-count residual,CONDITIONAL_ZERO,False
+DEX3428_1_Lambda_local,epsilon_Lambda_local,local compact-source contribution from vacuum trace gradients or source dependence,|partial_source rho_Lambda|/rho_H + local-gradient envelope,THEOREM_OR_VALUE_MISSING,False
+DEX3428_2_topological_boundary,epsilon_topological_boundary,topological/improvement compact monopole charge,|B_zero_flux^top|/M_H_ref + |R_eq_integral|/M_H_ref,OLD_TOPOLOGICAL_BRANCH_VALUES_MISSING,False
+DEX3428_3_gapped_auxiliary,epsilon_gapped_auxiliary,massive/gapped Z/Y6 auxiliary monopole charge,0 if lambda_*>0 and J=B=0; else C_aux*(||J||+||B||+||R||)/lambda_*,MISSING_LAMBDA_STAR_SOURCE_FREE_INPUTS,False
+DEX3428_4_hidden_projector,epsilon_hidden_projector,hidden/projector/domain/memory/range/constitutive monopole source charge,sum_abs(channelwise Delta_hidden_i/M_H_ref),MISSING_CHANNELWISE_BOUNDS,False
+DEX3428_5_q_loc_TGK,epsilon_q_loc_TGK_mass,q_loc/Gamma-Khat effective stress monopole contribution,0 if metric-response/Euler/boundary/projector/vector gates close; else source-backed T_GK mass bound,PENDING_QLOC_RESPONSE_GATES,False
+DEX3428_6_total,Delta_extra_mass_over_MH,absolute no-cancellation extra monopole mass envelope,epsilon_public_double_count+epsilon_Lambda_local+epsilon_topological_boundary+epsilon_gapped_auxiliary+epsilon_hidden_projector+epsilon_q_loc_TGK_mass,FORMULA_READY_VALUES_MISSING,False

@@ -1,0 +1,4 @@
+update_id,runner_field,rule,status,valid_for_claim,timestamp_utc
+RUNU3895_0_zero,zero_gate,"accept exact memory zero only if domain q-basic, wall Sigma/Yloc selected, boundary no-flux/Dirichlet parent-signed, and no incoming history are all true",STRICT_EXACT_ZERO_GATE,False,2026-07-01T08:47:50+00:00
+RUNU3895_1_bound,bound_gate,otherwise compute X_bound=(J_open+B_lift)/(a_min C_P/L_D^2+m_min^2) plus exp(-gamma_mem Delta t) history tail,SUPPRESSION_RUNNER_READY,False,2026-07-01T08:47:50+00:00
+RUNU3895_2_score,score_gate,arena pass only if K_i X_bound and K_i_grad grad_bound are below sourced bounds with no cancellation credit,NO_SCORE_WITHOUT_KI,False,2026-07-01T08:47:50+00:00

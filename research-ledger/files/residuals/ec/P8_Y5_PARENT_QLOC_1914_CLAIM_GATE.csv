@@ -1,0 +1,6 @@
+gate_id,condition,current_status,source_anchor,gate_pass,valid_for_claim
+CG1914_0_vector_schema,finite residual vector v0 exists with all retained components,PASS_SCHEMA_ONLY_NONCLAIM,P8_Y5_PARENT_QLOC_1914_FINITE_RESIDUAL_VECTOR_V0_NONCLAIM.csv,False,False
+CG1914_1_values_or_zero,each residual row has theorem-zero proof or finite sourced value,FAIL_RESIDUAL_VALUES_MISSING,DPR1897_0_parent_zero_or_values,False,False
+CG1914_2_arena_kernels,arena-specific K/tau/material/source/readout kernels are sourced,FAIL_ARENA_KERNELS_MISSING,P8_Y5_PARENT_QLOC_1914_ARENA_PROJECTION_INTERFACE_V0_NONCLAIM.csv,False,False
+CG1914_3_no_cancellation,no-cancellation policy is enforced by dry-run gates,PASS_POLICY_ENFORCED_NONCLAIM,P8_Y5_PARENT_QLOC_1914_RESIDUAL_VECTOR_DRYRUN_RESULTS.csv,False,False
+CG1914_4_claim,1914 supports local-GR/WEP/PPN/R10 claim-grade scoring,CLAIM_BLOCKED,CG1914_0_vector_schema through CG1914_3_no_cancellation,False,False

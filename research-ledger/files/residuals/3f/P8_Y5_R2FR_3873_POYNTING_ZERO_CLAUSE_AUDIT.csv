@@ -1,0 +1,8 @@
+clause_id,required_clause,why_needed,current_status,failure_residual,passes_as_current_claim,valid_for_claim,timestamp_utc
+CL3873_0_observed_Hodge,observed Maxwell stress descends to same g_obs/coframe,needed for S_EM as component of Hilbert stress,CONDITIONAL_STANDARD_FORM_NOT_PARENT_DERIVED,Delta_Hodge_EM,False,False,2026-07-01T06:33:48+00:00
+CL3873_1_total_worldtube,worldtube contains matter plus bound EM field/interactions/apparatus stress,prevents matter-only source domain error,PREFERRED_CONDITIONAL_DOMAIN,epsilon_domain,False,False,2026-07-01T06:33:48+00:00
+CL3873_2_stationary_generator,L_tau fields=0 up to fixed EM gauge on the local branch,turns time-energy storage term into zero,BRANCH_CONDITION_REQUIRED,d_t E_EM,False,False,2026-07-01T06:33:48+00:00
+CL3873_3_no_crossing_current,no charge/current crosses the selected boundary,"keeps J·E as internal exchange, not external leakage",BRANCH_CONDITION_REQUIRED,J_cross,False,False,2026-07-01T06:33:48+00:00
+CL3873_4_no_radiative_leakage,"no outgoing/background radiation crosses boundary, or it is explicitly bounded",sets Phi_EM_rad=0 only in stationary isolated branch,CONDITIONAL_ZERO_ELSE_BOUND,Phi_EM_rad,False,False,2026-07-01T06:33:48+00:00
+CL3873_5_boundary_reference,boundary/reference/improvement terms are silent on the annulus,prevents corner/improvement flux from replacing Poynting flux,BOUNDARY_THEOREM_CONDITIONAL,C_EM_surface_gauge,False,False,2026-07-01T06:33:48+00:00
+CL3873_6_same_owner_guard,same current/Hilbert source owner handles matter+EM exchange,prevents double count or zero count of EM binding/Poynting,OWNER_STILL_UNSIGNED,epsilon_EM_once,False,False,2026-07-01T06:33:48+00:00

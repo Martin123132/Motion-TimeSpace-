@@ -1,0 +1,8 @@
+row_id,case,C_R_prediction,C_R_abs_bound,C_e_prediction,required_inputs,result,valid_for_claim
+CRP3284_0_product_formula_ready_missing,general C_R product law,MISSING_NUMERIC_SUM_NS_CS,1.389797711495e-12,MISSING,factor list; exponents n_s; numeric slopes C_s; source paths; no double counting with C_J/C_Z,FORMULA_READY_NUMERIC_INPUTS_MISSING,false
+CRP3284_1_qbasic_readout_zero_conditional,all readout factors q-basic,0,1.389797711495e-12,0_if_CJ_CZ_zero_else_MISSING,parent-signed q-basic readout functor for clocks/charge/Hodge/Poynting/material/kernel,THEOREM_ZERO_CONDITIONAL_NONCLAIM,false
+CRP3284_2_poynting_public_stress_conditional,Poynting is public T_EM flux,0_if_public_Hodge_and_flux_standard_qbasic,1.389797711495e-12,0_if_CJ_CZ_zero_else_MISSING,metric Hodge/impedance route plus public flux standard,THEOREM_ZERO_CONDITIONAL_NONCLAIM,false
+CRP3284_3_constitutive_medium_symbolic,nonmetric constitutive or impedance readout,n_H*C_H + n_S*C_S + n_mat*C_mat + ...,1.389797711495e-12,-C_R_if_CJ_CZ_zero_else_MISSING,Delta_chi/impedance/Poynting/material slopes,SYMBOLIC_ONLY_NONCLAIM,false
+CRP3284_4_clock_direct_product_waitstate,clock/spectroscopy alpha readout,MISSING_DIRECT_P_CLOCK_ALPHA_OR_FACTOR_SLOPES,1.389797711495e-12,MISSING,clock sensitivity plus MTS local alpha/readout slope in same units,REFUSE_OR_FAIL,false
+CRP3284_5_half_bound_smoke,numeric smoke C_R inside pure-readout envelope,6.948988557475e-13,1.389797711495e-12,-6.948988557475e-13,SMOKE_NUMERIC_NONCLAIM,SMOKE,false
+CRP3284_6_twice_bound_smoke,numeric smoke C_R outside pure-readout envelope,2.779595422990e-12,1.389797711495e-12,-2.779595422990e-12,SMOKE_NUMERIC_NONCLAIM,SMOKE,false

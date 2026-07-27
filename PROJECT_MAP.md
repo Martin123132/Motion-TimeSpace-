@@ -5,21 +5,24 @@
 - `README.md` gives the public overview.
 - `CLAIM_CEILING.md` states the current claim boundary.
 - `docs/status/STATUS-2026-07-27.md` gives the current status snapshot.
+- `docs/status/PUBLICATION-NOTES-2026-07-27-LOSSLESS-LEDGER.md` records the complete sharded-ledger publication and verification.
 - `docs/status/PUBLICATION-NOTES-2026-07-27.md` records the exact update scope, integrity checks, and exclusions.
+- `research-ledger/README.md` is the byte-exact local ledger through private checkpoint `5252`.
 - `research-programme/catalogue/README.md` provides bounded direct-link indexes when GitHub caps large folder listings.
 - `docs/theory-gates/LOCAL-GR-NEWTON-GATES.md` gives the main route from MTS toward GR/Newton.
 
 ## Research Programme
 
-- `research-programme/checkpoints/` contains numbered derivation attempts, scorecards, red-team ledgers, and promotion gates. The public sequence currently runs through checkpoint `1266`.
+- `research-programme/checkpoints/` contains the curated numbered derivation sequence, which currently runs through checkpoint `1268`.
+- `research-ledger/` contains all selected private-sequence checkpoint files, scripts, compact residuals, and latest run evidence in bounded hash buckets.
 - `research-programme/protocols/1192/` preserves the machine-readable freeze record and now contains the complete compact 12-seed outcome.
 - `research-programme/scripts/` contains the scripts used to generate many checkpoint artifacts.
 - `research-programme/source-intake/mts_residuals/` contains compact CSV/register artifacts used by the residual and theorem-gate workflow.
 
 ## Current Derivation Thread
 
-The July 27 update preserves checkpoint `1192` and extends the public record
-through checkpoint `1266`. The most useful milestones are:
+The July 27 update preserves checkpoint `1192` and extends the curated public
+record through checkpoint `1268`. The most useful milestones are:
 
 - `research-programme/checkpoints/1192-Y5-R2FR-predeclared-paired-high-mode-seed-ensemble.md` - completed frozen 12-seed metric-split result.
 - `research-programme/checkpoints/1194-Y5-R2FR-exact-2PI-Schur-Ward-Vlasov-subtraction-and-Gaussian-residual-stress-no-go.md` - exact Schur/Ward reduction and Gaussian residual-stress no-go.
@@ -46,10 +49,12 @@ through checkpoint `1266`. The most useful milestones are:
 - `research-programme/checkpoints/1263-Y5-R2FR-Q03-reciprocal-projective-corrected-inner-slice.md` - corrected Q03 inner slice.
 - `research-programme/checkpoints/1265-Y5-R2FR-Q05-reciprocal-projective-corrected-inner-slice.md` - corrected Q05 inner slice.
 - `research-programme/checkpoints/1266-Y5-R2FR-Q03-Q05-partial-outer-impact-and-remaining-node-gate.md` - partial outer impact and current hold decision.
+- `research-programme/checkpoints/1267-Y5-R2FR-order5-backbone-paired-transport-rebuild.md` - complete corrected order-5 backbone.
+- `research-programme/checkpoints/1268-Y5-R2FR-Q01-Q07-full-order9-paired-transport-and-outer-gate.md` - full corrected order-9 cubature and restored failed convergence gates.
 
 Public checkpoint filenames use an offset sequence; document titles and
 generated artifact names retain their original private IDs. The established
-offset is `3984`, so private `5176-5250` maps to public `1192-1266`.
+offset is `3984`, so private `5176-5252` maps to public `1192-1268`.
 
 ## Data Policy
 

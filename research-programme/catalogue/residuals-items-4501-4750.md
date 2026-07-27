@@ -3,6 +3,8 @@
 Direct links for 250 files. Item numbers are catalogue
 ordinals, not scientific checkpoint identifiers.
 
+- [`P8_Y5_R2FR_4803_FIREWALL_ROWS.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4803_FIREWALL_ROWS.csv) (577 bytes)
+- [`P8_Y5_R2FR_4803_NEXT_TARGET.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4803_NEXT_TARGET.csv) (324 bytes)
 - [`P8_Y5_R2FR_4803_NOCHARGE_INPUT.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4803_NOCHARGE_INPUT.csv) (1576 bytes)
 - [`P8_Y5_R2FR_4803_NOCHARGE_OUTPUT.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4803_NOCHARGE_OUTPUT.csv) (1653 bytes)
 - [`P8_Y5_R2FR_4803_OBSTRUCTION_UPDATE.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4803_OBSTRUCTION_UPDATE.csv) (665 bytes)
@@ -251,5 +253,3 @@ ordinals, not scientific checkpoint identifiers.
 - [`P8_Y5_R2FR_4824_BJQ_COMPONENT_ZERO_AUDIT.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4824_BJQ_COMPONENT_ZERO_AUDIT.csv) (1494 bytes)
 - [`P8_Y5_R2FR_4824_BJQ_FIRST_VALUE_CONTRACT.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4824_BJQ_FIRST_VALUE_CONTRACT.csv) (1223 bytes)
 - [`P8_Y5_R2FR_4824_CLAIM_GATES.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4824_CLAIM_GATES.csv) (740 bytes)
-- [`P8_Y5_R2FR_4824_DECISION_LEDGER.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4824_DECISION_LEDGER.csv) (429 bytes)
-- [`P8_Y5_R2FR_4824_NEXT_TARGET.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4824_NEXT_TARGET.csv) (448 bytes)

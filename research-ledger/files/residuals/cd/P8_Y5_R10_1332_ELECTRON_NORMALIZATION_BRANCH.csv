@@ -1,0 +1,4 @@
+branch_id,input,condition,result,status,valid_for_claim,claim_allowed
+ELEC1332_0_common_mode_if_signed,CFI1330_TA6V_electron;CFI1330_PtRh10_electron,PREM1332_0..PREM1332_6 parent-signed,electron fraction contrast is not a WEP/source residual because electron coefficient equals common matter coefficient,CONDITIONAL_ZERO_ROUTE,False,False
+ELEC1332_1_finite_residual_if_unsigned,DELTA1330_0_TA6V_minus_PtRh10_electron,relative source prefactor or constant marker survives,"finite electron residual must be bounded as |delta_w_e| times audited electron contrast, not claimed zero",FINITE_NONCLAIM_RESIDUAL_RETAINED,False,False
+ELEC1332_2_no_electron_only_score,audited electron contrast only,non-electron components and parent map unresolved,electron row cannot score WEP or local GR alone,SCORING_REFUSED,False,False

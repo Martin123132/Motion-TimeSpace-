@@ -1,0 +1,4 @@
+command_id,command,mode,dry_run_only,long_fit_allowed,requires_847,expected_runtime,valid_for_claim,generated_utc
+CMD846_0_schema_only,python post-checkpoint-work\scripts\Y5_R10_strict_cosmology_branch_dry_run_spec.py,schema_generation_only,true,false,false,seconds,false,2026-06-13T00:00:22+00:00
+CMD846_1_future_input_check,python post-checkpoint-work\scripts\strict_cosmology_branch_runner.py --candidates source-intake\mts_residuals\P8_Y5_R10_847_STRICT_COSMOLOGY_CANDIDATES.csv --dry-run --no-fit,future_candidate_input_check,true,false,true,seconds_to_minutes,false,2026-06-13T00:00:22+00:00
+CMD846_2_future_scoring_run,python post-checkpoint-work\scripts\strict_cosmology_branch_runner.py --candidates source-intake\mts_residuals\P8_Y5_R10_847_STRICT_COSMOLOGY_CANDIDATES.csv --run-score --write-run-dir,future_explicit_execution_only,false,only_after_user_go_ahead,true,unknown_may_be_long,false,2026-06-13T00:00:22+00:00

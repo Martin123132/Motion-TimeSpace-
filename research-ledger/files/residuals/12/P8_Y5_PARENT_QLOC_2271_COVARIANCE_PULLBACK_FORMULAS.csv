@@ -1,0 +1,6 @@
+formula_id,object,formula,use,status,valid_for_claim
+PBF2271_0_inverse_map,Phi/q to covariance-channel map,"A=exp(2Phi+q/2), B=exp(-2Phi+q/2), C_tt=1-A, C_rr=B-1",turns a proposed Phi/q history into the covariance components the psi map must realize,EXACT_FORMULA,False
+PBF2271_1_q_tangent,q-direction at fixed Phi,"partial_q C_tt=-A/2, partial_q C_rr=B/2; at q=0 this is (-exp(2Phi)/2, exp(-2Phi)/2)",defines the covariance tangent whose Hessian would be M_R^2,EXACT_TANGENT,False
+PBF2271_2_phi_tangent,Phi-direction at fixed q,"partial_Phi C_tt=-2A, partial_Phi C_rr=-2B",separates Newton-potential motion from reciprocal-strain motion in covariance space,EXACT_TANGENT,False
+PBF2271_3_q_zero_channel_relation,reduced branch relation,q=0 iff (1-C_tt)(1+C_rr)=1; equivalently C_rr=C_tt/(1-C_tt),the exact relation a parent psi covariance theorem must prove,EXACT_CONDITIONAL,False
+PBF2271_4_weak_channel,linear weak-field channel,q=(C_rr-C_tt)+O(C^2),first diagnostic for any psi covariance model or numerical backstop,DERIVED_LINEAR_TEST,False

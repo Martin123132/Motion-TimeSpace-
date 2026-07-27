@@ -1,0 +1,7 @@
+row_id,quantity,prediction_value,units,source_or_status,bound_value,result_status,valid_for_claim
+SSR3276_0_minimal_domain_zero_conditional,C_J_effective,0,dimensionless local logarithmic coefficient,conditional exact U1/minimal-domain theorem; parent signature unsigned,6.948988557475e-13,PASS_IF_PARENT_SIGNED_NONCLAIM,false
+SSR3276_1_live_source_shadow_missing,epsilon_shadow,MISSING_SOURCE_BACKED_SHADOW_BLOCK,dimensionless relative current/source block,separately conserved shadow block retained as finite row,6.948988557475e-13,REFUSE_MISSING,false
+SSR3276_2_magnetization_exact_no_flux_zero,epsilon_mag_boundary,0,dimensionless current-normalization leakage,F-only magnetization current is identically conserved; assumes compact no-flux support,6.948988557475e-13,PASS_IF_NO_FLUX_NONCLAIM,false
+SSR3276_3_nonconserved_compensator_forbidden_smoke,epsilon_nonconserved_compensator,FORBIDDEN_BY_U1_UNLESS_REAL_SECTOR,not_a_numeric_prediction,silent route rejected; real sector must use SSR3276_1,6.948988557475e-13,REFUSE_OR_ROUTE_TO_SHADOW,false
+SSR3276_4_half_bound_smoke,C_J_effective,3.474494278738e-13,dimensionless local logarithmic coefficient,SMOKE_NUMERIC_NONCLAIM,6.948988557475e-13,SMOKE,false
+SSR3276_5_twice_bound_smoke,C_J_effective,1.389797711495e-12,dimensionless local logarithmic coefficient,SMOKE_NUMERIC_NONCLAIM,6.948988557475e-13,SMOKE,false

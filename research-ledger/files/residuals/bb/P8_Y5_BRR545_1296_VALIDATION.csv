@@ -1,0 +1,11 @@
+check_id,check,status,details
+VAL1296_0_sources_recorded,local source anchors and external web sources are recorded,PASS,7/7 source records validated
+VAL1296_1_response_operator_rows,formal response operator rows exist with domains and units,PASS,RGO1296_0_linearized_trace_reversed_metric_response;RGO1296_1_static_Poisson_Newton_response
+VAL1296_2_runner_bridge_applies_formal_operator,formal response operator fills the component-row response token in preview only,PASS,RRI1292_0_m_chain;RRI1292_1_Lcg_chain;RRI1292_2_cdb_chain
+VAL1296_3_runner_still_no_score,all bridge rows remain no-score with missing or non-score blockers,PASS,RRI1292_0_m_chain=4;RRI1292_1_Lcg_chain=5;RRI1292_2_cdb_chain=4;RRI1292_3_chain_vector=3
+VAL1296_4_observable_gaps_explicit,observable/source-normalization gaps remain explicit,PASS,OG1296_0_source_normalization;OG1296_1_observable_projection;OG1296_2_gauge_domain_boundary;OG1296_3_numeric_inputs
+VAL1296_5_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1296_SOURCE_REGISTER.csv:7; P8_Y5_R10_1296_RESPONSE_OPERATOR_ROWS_NONCLAIM.csv:2; P8_Y5_R10_1296_OPERATOR_TO_RUNNER_BRIDGE_PREVIEW.csv:4; P8_Y5_R10_1296_OBSERVABLE_GAP_LEDGER.csv:4; P8_Y5_R10_1296_CLAIM_GATES.csv:5; P8_Y5_R10_1296_DECISION_LEDGER.csv:3; P8_Y5_R10_1296_NEXT_TARGET.csv:1
+VAL1296_6_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1296_7_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1296_8_next_target_1297,next target routes to source-normalization bridge,PASS,1297-Y5-R10-RAB-MTS-source-normalization-bridge-to-linearized-GR-operator.md
+VAL1296_9_overall,overall 1296 validation,PASS,"1296 acquires formal source-backed linearized-GR/Poisson response operators, keeps scoring blocked by MTS source normalization and observable projections, and routes to the source bridge"

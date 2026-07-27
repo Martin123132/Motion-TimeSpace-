@@ -3,6 +3,8 @@
 Direct links for 250 files. Item numbers are catalogue
 ordinals, not scientific checkpoint identifiers.
 
+- [`P8_Y5_R2FR_4505_POSITIVE_MATRIX_LEMMA.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4505_POSITIVE_MATRIX_LEMMA.csv) (1101 bytes)
+- [`P8_Y5_R2FR_4505_SCALARON_BOUND_CONTRACT.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4505_SCALARON_BOUND_CONTRACT.csv) (1242 bytes)
 - [`P8_Y5_R2FR_4505_SOURCE_REGISTER.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4505_SOURCE_REGISTER.csv) (5515 bytes)
 - [`P8_Y5_R2FR_4505_STATUS.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4505_STATUS.csv) (582 bytes)
 - [`P8_Y5_R2FR_4506_BODY_CHARGE_INPUT_ROW.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4506_BODY_CHARGE_INPUT_ROW.csv) (1510 bytes)
@@ -251,5 +253,3 @@ ordinals, not scientific checkpoint identifiers.
 - [`P8_Y5_R2FR_4529_SOURCE_REGISTER.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4529_SOURCE_REGISTER.csv) (7650 bytes)
 - [`P8_Y5_R2FR_4530_BOUNDARY_POYNTING_SPLIT.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4530_BOUNDARY_POYNTING_SPLIT.csv) (3039 bytes)
 - [`P8_Y5_R2FR_4530_CLAIM_GATES.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4530_CLAIM_GATES.csv) (1046 bytes)
-- [`P8_Y5_R2FR_4530_DECISION.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4530_DECISION.csv) (635 bytes)
-- [`P8_Y5_R2FR_4530_FIRST_KVERT_EIGENMODE_BOUND_CONTRACT.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4530_FIRST_KVERT_EIGENMODE_BOUND_CONTRACT.csv) (1719 bytes)

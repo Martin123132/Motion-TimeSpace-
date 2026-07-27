@@ -1,0 +1,5 @@
+decision_id,decision,because,next_action,valid_for_claim
+DEC4816_0_scalar_result,Scalar no-hair cannot be claimed from current inputs.,"operator/domain, Z_X, M_X2, source zero, and boundary flux are not signed.",derive parent Hessian signs and source/boundary rows,False
+DEC4816_1_runner_result,Residual alpha runner is staged but refuses live claims.,"operator/range, source current, boundary flux, and projection coefficients are missing.",fill the first parent Hessian/range row before alpha scoring,False
+DEC4816_2_coupling,The coupling gap is now concrete.,"J_X, qbar_XT, Qbar_XH, and edge projection are explicit inputs rather than vague blockers.","attack Z_X and M_X2 first, then source/projection rows",False
+DEC4816_3_next_target,Next target is parent Hessian signs and range.,Z_X and M_X2 are the first shared inputs for both scalar no-hair and alpha(lambda).,4817-Y5-R2FR-parent-Hessian-ZX-MX2-range-or-alpha-source-row.md,False

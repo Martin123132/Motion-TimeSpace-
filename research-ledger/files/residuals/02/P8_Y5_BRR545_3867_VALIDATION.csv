@@ -1,0 +1,22 @@
+check_id,check,status,detail,timestamp_utc
+VAL3867_0_sources,all cited source paths exist and needles are found,PASS,14/14 sources resolved,2026-07-01T05:55:30+00:00
+VAL3867_1_schema,schema separates external bounds from MTS prediction inputs,PASS,external_bound and z_g_tau fields present,2026-07-01T05:55:30+00:00
+VAL3867_2_clock_bound,clock source row imports a positive numeric product bound,PASS,clock bound=2.1e-18 yr^-1,2026-07-01T05:55:30+00:00
+VAL3867_3_wep_bound,WEP source row imports a positive numeric eta bound,PASS,WEP bound=2.8e-15 dimensionless_eta,2026-07-01T05:55:30+00:00
+VAL3867_4_r10_nonclaim,R10 remains blocked without a valid alpha(lambda) curve,PASS,BLOCKED_R10_PROFILE_BETA_BOUND_CURVE_AND_ZG_SXF2_MISSING,2026-07-01T05:55:30+00:00
+VAL3867_5_runner_blocks_missing_mts,runner reevaluation blocks rows with missing MTS joint inputs,PASS,source-backed external rows do not become claims,2026-07-01T05:55:30+00:00
+VAL3867_6_zg_next,z_g is selected as the next derivation bottleneck,PASS,3868 z_g target recorded,2026-07-01T05:55:30+00:00
+VAL3867_7_no_claim,all generated rows remain nonclaim,PASS,valid_for_claim/claim_allowed false throughout,2026-07-01T05:55:30+00:00
+VAL3867_8_parse_sources,sources CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3867_SOURCE_REGISTER.csv rows=14,2026-07-01T05:55:30+00:00
+VAL3867_8_parse_schema,schema CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3867_SOURCE_BACKED_INPUT_SCHEMA.csv rows=7,2026-07-01T05:55:30+00:00
+VAL3867_8_parse_acquisition,acquisition CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3867_INPUT_ACQUISITION_STATUS.csv rows=5,2026-07-01T05:55:30+00:00
+VAL3867_8_parse_candidates,candidates CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3867_SOURCE_BACKED_CANDIDATE_ROWS.csv rows=6,2026-07-01T05:55:30+00:00
+VAL3867_8_parse_runner,runner CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3867_JOINT_RUNNER_REEVALUATION.csv rows=6,2026-07-01T05:55:30+00:00
+VAL3867_8_parse_image,image CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3867_IMAGE_CONSTRUCTOR_AUDIT.csv rows=7,2026-07-01T05:55:30+00:00
+VAL3867_8_parse_gates,gates CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3867_CLAIM_GATES.csv rows=8,2026-07-01T05:55:30+00:00
+VAL3867_8_parse_decisions,decisions CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3867_DECISION_ROWS.csv rows=4,2026-07-01T05:55:30+00:00
+VAL3867_8_parse_next,next CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3867_NEXT_TARGET.csv rows=1,2026-07-01T05:55:30+00:00
+VAL3867_8_parse_status,status CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3867_STATUS.csv rows=1,2026-07-01T05:55:30+00:00
+VAL3867_9_doc,markdown checkpoint document exists,PASS,3867-Y5-R2FR-source-backed-joint-alpha-current-F2-input-acquisition-or-image-constructor.md,2026-07-01T05:55:30+00:00
+VAL3867_10_formalization_clean,formalization-workbench has no generated 3867 project files,PASS,no generated 3867 project file hits under formalization-workbench,2026-07-01T05:55:30+00:00
+VAL3867_11_pycache_removed,scripts __pycache__ removed,PASS,no __pycache__ directories,2026-07-01T05:55:30+00:00

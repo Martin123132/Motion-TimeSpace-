@@ -1,0 +1,15 @@
+check_id,check,status,details
+VAL1261_0_sources_exist,all cited local sources exist,PASS,10/10 sources exist
+VAL1261_1_needles_found,all cited local needles found,PASS,10/10 needles found
+VAL1261_2_intake_scan,rab-sector raw/accepted/docs scan is well formed,PASS,scan_rows=3
+VAL1261_3_raw_accepted_empty,raw and accepted live intake folders contain no candidate rows,PASS,live_rows=0
+VAL1261_4_docs_nonclaim,docs rows remain nonclaim,PASS,docs_rows=1
+VAL1261_5_live_review_nonclaim,live row review remains nonclaim,PASS,review_rows=1
+VAL1261_6_no_runner_rows,no coefficient row is runner eligible,PASS,runner_eligible_rows=0
+VAL1261_7_operator_zero_not_closed,operator-exhaustion zero proof remains unclosed,PASS,ZERO_PROOF_NOT_CLOSED_RETAIN_ZR_BRANCH
+VAL1261_8_blockers_nonclaim,blocker ledger keeps all local branches blocked,PASS,blocker_rows=5
+VAL1261_9_claim_gates,claim gates reject local/R10/PPN promotion,PASS,claim_gate_rows=4
+VAL1261_10_next_target_1262,next target is 1262 derivation-first reentry,PASS,1262-Y5-R10-RAB-operator-exhaustion-minimal-assumption-audit-or-ZR-prior-envelope.md
+VAL1261_11_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1261_SOURCE_REGISTER.csv:10; P8_Y5_R10_1261_INTAKE_SCAN_SNAPSHOT.csv:3; P8_Y5_R10_1261_COEFFICIENT_SOURCE_HUNT_LEDGER.csv:4; P8_Y5_R10_1261_LIVE_ROW_REVIEW.csv:1; P8_Y5_R10_1261_CORPUS_MENTION_SCAN.csv:4; P8_Y5_R10_1261_OPERATOR_EXHAUSTION_REENTRY_AUDIT.csv:5; P8_Y5_R10_1261_BLOCKER_LEDGER.csv:5; P8_Y5_R10_1261_CLAIM_GATES.csv:4; P8_Y5_R10_1261_DECISION_LEDGER.csv:2; P8_Y5_R10_1261_NEXT_TARGET.csv:1
+VAL1261_12_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_write_count_since_run_start=0
+VAL1261_13_overall,overall 1261 validation,PASS,"1261 performs a source hunt, rejects docs/mentions as evidence, re-enters operator-exhaustion audit, and keeps R_AB local claims blocked"

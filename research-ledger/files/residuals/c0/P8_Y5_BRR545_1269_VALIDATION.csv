@@ -1,0 +1,15 @@
+check_id,check,status,details
+VAL1269_0_sources_exist,all cited local sources exist,PASS,10/10 sources exist
+VAL1269_1_needles_found,all cited local needles found,PASS,10/10 needles found
+VAL1269_2_operator_proof_blocked,"operator exclusion proof remains exact conditional, not promoted",PASS,OP1269_4_theorem_candidate=BLOCKED_EXACT_CONDITIONAL
+VAL1269_3_ap1265_1_blocked,AP1265_1 subclauses remain blocked,PASS,subgate_rows=4
+VAL1269_4_validator_rules,finite-ZR intake validator has hard refusal rules,PASS,validator_rule_rows=6
+VAL1269_5_docs_rejected,docs template rows are rejected by validator,PASS,docs_rows=11; rejected_docs=11
+VAL1269_6_no_live_rows,no raw/accepted finite-ZR rows are currently score-ready or invalid,PASS,raw_rows=0; accepted_rows=0; accepted_ready=0; invalid_live=0
+VAL1269_7_validator_nonclaim,validator results remain nonclaim,PASS,intake_scan_rows=11
+VAL1269_8_claim_gates,claim gates block AP1265_1/Z_R/local tests while validator passes nonclaim,PASS,claim_gate_rows=4
+VAL1269_9_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1269_10_next_target_1270,next target routes to quotient-map parent sort or source-backed finite row,PASS,1270-Y5-R10-RAB-quotient-map-parent-sort-derivation-or-finite-ZR-first-source-row.md
+VAL1269_11_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1269_SOURCE_REGISTER.csv:10; P8_Y5_R10_1269_OPERATOR_EXCLUSION_PARENT_SORT_ATTEMPT.csv:5; P8_Y5_R10_1269_AP1265_1_OPERATOR_EXCLUSION_GATE.csv:4; P8_Y5_R10_1269_ZR_INTAKE_VALIDATOR_RULES.csv:6; P8_Y5_R10_1269_ZR_INTAKE_VALIDATOR_RESULTS.csv:11; P8_Y5_R10_1269_ZR_INTAKE_VALIDATOR_SUMMARY.csv:2; P8_Y5_R10_1269_CLAIM_GATES.csv:4; P8_Y5_R10_1269_DECISION_LEDGER.csv:3; P8_Y5_R10_1269_NEXT_TARGET.csv:1
+VAL1269_12_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1269_13_overall,overall 1269 validation,PASS,"1269 keeps AP1265_1/operator exclusion conditional, implements a hard finite-ZR intake validator, rejects all docs templates, and routes next to the R_AB quotient-map parent sort derivation"

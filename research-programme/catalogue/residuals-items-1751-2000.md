@@ -3,6 +3,8 @@
 Direct links for 250 files. Item numbers are catalogue
 ordinals, not scientific checkpoint identifiers.
 
+- [`P8_Y5_R2FR_4556_SOURCE_REGISTER.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4556_SOURCE_REGISTER.csv) (4022 bytes)
+- [`P8_Y5_R2FR_4556_STATUS.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4556_STATUS.csv) (974 bytes)
 - [`P8_Y5_R2FR_4556_XI_CARRIER_CLASSIFICATION.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4556_XI_CARRIER_CLASSIFICATION.csv) (1611 bytes)
 - [`P8_Y5_R2FR_4556_XI_CHANNEL_SPLIT.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4556_XI_CHANNEL_SPLIT.csv) (1408 bytes)
 - [`P8_Y5_R2FR_4556_XI_FINITE_AMPLITUDE_ROWS.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4556_XI_FINITE_AMPLITUDE_ROWS.csv) (747 bytes)
@@ -251,5 +253,3 @@ ordinals, not scientific checkpoint identifiers.
 - [`P8_Y5_R2FR_4581_SOURCE_REGISTER.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4581_SOURCE_REGISTER.csv) (7819 bytes)
 - [`P8_Y5_R2FR_4581_STATUS.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4581_STATUS.csv) (450 bytes)
 - [`P8_Y5_R2FR_4581_STRICT_ZERO_CONTRACT.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4581_STRICT_ZERO_CONTRACT.csv) (676 bytes)
-- [`P8_Y5_R2FR_4581_TAU_RESIDUAL_TAIL_ROWS.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4581_TAU_RESIDUAL_TAIL_ROWS.csv) (2733 bytes)
-- [`P8_Y5_R2FR_4582_ACTIVE_KERNEL_BOUND_INTERFACE.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4582_ACTIVE_KERNEL_BOUND_INTERFACE.csv) (3045 bytes)

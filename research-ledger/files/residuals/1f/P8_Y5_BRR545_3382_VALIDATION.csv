@@ -1,0 +1,15 @@
+check_id,check,passed,detail
+VAL3382_0_sources_exist_parse,all cited 3382 source paths exist and parse,true,
+VAL3382_1_outputs_parse,all generated CSV outputs parse cleanly,true,parsed=12 expected=12
+VAL3382_2_uoc_activation,"UOC activation covers branch label, geometry, measure, kappa and variation-before-readout",true,
+VAL3382_3_action_block,"action block covers effective action, metric variation, Maxwell variation and boundary source",true,
+VAL3382_4_newton_chain,"Newton chain covers kappa, Hilbert source, Poisson and Gauss charge",true,
+VAL3382_5_ppn_map_blocks_full_claim,PPN map distinguishes source-side cleanup from remaining full-vector blocker,true,
+VAL3382_6_em_stress,"EM stress covers public Maxwell action, Hilbert stress, Poynting worldtube, double-count guard and EM-origin gap",true,
+VAL3382_7_no_smuggling,"firewall covers UOC label, extra tensor split, EM public/residual and full PPN vector",true,
+VAL3382_8_runner,runner passes UOC/Newton/EM conditionally but fails full PPN vector,true,
+VAL3382_9_gates,gates pass source/Newton/EM and block full PPN/derived local GR,true,
+VAL3382_10_no_overclaim_flags,all generated rows with valid_for_claim remain false,true,
+VAL3382_11_next_target,next target moves to UOC extra-MTSIR local PPN residual vector or zero theorem,true,
+VAL3382_12_write_scope_outside_formalization,no 3382 files were written under formalization-workbench,true,hits=0
+VAL3382_13_overall,3382 validation overall,true,all required checks passed

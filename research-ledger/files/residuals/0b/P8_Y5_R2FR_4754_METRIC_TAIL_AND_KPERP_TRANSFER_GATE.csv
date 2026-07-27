@@ -1,0 +1,6 @@
+checkpoint,tail_id,formula,condition_or_meaning,status,score_ready,valid_for_claim,timestamp_utc
+4754,MT4754_0_clean_zero,Y_owner=0,"if S_RI adopted, constraint=0, Lambda=0, B_RI=0, I_RI=0",CONDITIONAL_ZERO_BRANCH,False,False,2026-07-08T01:24:28+00:00
+4754,MT4754_1_owner_tail,Y_owner_a <= Pi_a^RI C_Lambda R_Lambda/lambda_RI + Pi_a^BRI B_RI + Pi_a^I I_RI,finite owner stress tail if adjoint/boundary/incoming rows fail,BOUND_FORMULA_READY_VALUES_MISSING,False,False,2026-07-08T01:24:28+00:00
+4754,MT4754_2_Kperp_clean,R_i^K=0,"if K_perp is GR TT/radiative, quotient vertical, or routed boundary with parent-signed projection zero",CLEAN_SECTOR_UNSIGNED,False,False,2026-07-08T01:24:28+00:00
+4754,MT4754_3_Kperp_finite,|R_i^K| <= |W_i^K| C_T(|S_T|+|B_T|+|I_T|+|Z_T|),finite Kperp score branch,VALUES_MISSING,False,False,2026-07-08T01:24:28+00:00
+4754,MT4754_4_total,Y_a^4754 <= Y_owner_a + |W_a^K| C_T(|S_T|+|B_T|+|I_T|+|Z_T|),combined local residual vector for PPN/R10/clock/orbital/WEP,NONCLAIM_VECTOR_READY_VALUES_MISSING,False,False,2026-07-08T01:24:28+00:00

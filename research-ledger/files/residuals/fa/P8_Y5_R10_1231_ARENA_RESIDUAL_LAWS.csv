@@ -1,0 +1,5 @@
+arena_id,residual_law,status,missing_inputs,claim_allowed,valid_for_claim
+ARENA1231_0_WEP_MICROSCOPE,"abs((sum_c DeltaF_TiPt,c delta w_c + DeltaK_TiPt) * tau_WEP) <= 2.8e-15",NOT_SCOREABLE,"DeltaF_TiPt,c; delta w_c priors; DeltaK_TiPt; official tau_WEP",False,False
+ARENA1231_1_PPN,abs(tau_PPN[source profile] * source_component_projection(delta w_c)) <= B_PPN,PLACEHOLDER_CONTRACT_ONLY,tau_PPN; source profile; PPN bound; metric residual map,False,False
+ARENA1231_2_clocks,abs(tau_clock * clock/material_projection(delta w_c)) <= B_clock,PLACEHOLDER_CONTRACT_ONLY,clock kernel; material projection; bound source,False,False
+ARENA1231_3_orbital,abs(tau_orbital * source_body_projection(delta w_c)) <= B_orbital,PLACEHOLDER_CONTRACT_ONLY,orbital source profile; bound source; residual-to-orbit map,False,False

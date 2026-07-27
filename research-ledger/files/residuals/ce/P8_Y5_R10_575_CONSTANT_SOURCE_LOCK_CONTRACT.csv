@@ -1,0 +1,7 @@
+clause_id,required_clause,mathematical_form,current_status,blocks_if_missing,valid_for_claim
+CL575_0_representation_data,"Matter constants are ordinary species representation data, not MTS fields.","theta_A in Rep_A, not theta_A=theta_A[X,I_Q,m,h]",definition_guardrail,constants become local MTS marker channels,false
+CL575_1_trivial_MTS_action,"MTS selectors, quotient invariants, material markers, memory, and fibre directions act trivially on constants.",L_X theta_A=L_IQ theta_A=L_m theta_A=L_h theta_A=0,not_parent_derived,"theta_A(I_Q), theta_A(m), theta_A(h) counterexamples remain legal",false
+CL575_2_no_direct_constant_vertices,No direct MTS-dependent matter vertices at fixed observed geometry.,"no alpha_EM(X)F^2, no m_A(X), no q_A X_mu J_A^mu",forbidden_vertex_policy_only,"clock, WEP, and fifth-force residuals return",false
+CL575_3_Hilbert_source_current,Active ordinary matter source is the common Hilbert/coframe current.,tau_a^mu=det(e)^-1 delta S_m/delta e_mu^a,conditional_standard_identity,source current can be fitted/readout-defined,false
+CL575_4_universal_coupling,Field equation uses one universal coupling for the Hilbert current.,"E_munu=kappa_univ T_munu, not sum_A kappa_A T_A_munu",not_parent_derived,species-weighted active source charge remains,false
+CL575_5_measured_monopole_separate,Measured GM calibration is kept separate from ordinary qbar_XT lock.,Hilbert source universality != mu_obs=G_eff M_eff proof,guardrail_pass,R1/R4/R9/R11 overclaim,false

@@ -1,0 +1,114 @@
+# 2452 Y5 R2FR Delta-ref q/source Strict Provenance Runner
+
+**Status:** strict q/source provenance runner installed; no Delta_ref, RCS2446_0, S_E^q, R10, PPN, or local-GR pass is claimed.
+
+**Private reading:** 2452 does not solve the coupling. It makes the coupling hole harder to paper over. The only clean exits are now a parent-signed q/source zero theorem or fully sourced finite q/source coefficients.
+
+## Source Register
+| source_id | source_path | role | exists | missing_needles | source_pass |
+| --- | --- | --- | --- | --- | --- |
+| SRC2452_00_2451_doc | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\2451-Y5-R2FR-Bref-fixed-branch-selector-or-Delta-ref-q-source-provenance-pack.md | 2451 handoff selecting a strict q/source provenance runner | True |  | True |
+| SRC2452_01_2451_provenance | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2451_DELTA_REF_Q_SOURCE_PROVENANCE_PACK.csv | live q/source Delta_ref provenance requirements | True |  | True |
+| SRC2452_02_2451_readiness | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2451_PROVENANCE_RUNNER_READINESS.csv | schema-ready but value-blocked runner state | True |  | True |
+| SRC2452_03_2451_claim_gates | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2451_CLAIM_GATES.csv | current claim gates that must remain blocked | True |  | True |
+| SRC2452_04_2451_selector | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2451_BREF_FIXED_BRANCH_SELECTOR_ATTEMPT.csv | failed current fixed-branch selector theorem | True |  | True |
+| SRC2452_05_2451_parent_contract | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2451_PARENT_SELECTOR_CONTRACT.csv | future parent selector contract slots | True |  | True |
+| SRC2452_06_R10_runner_precedent | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\1000-Y5-R10-Delta-ref-source-coefficient-strict-provenance-runner.md | older source-only strict runner precedent | True |  | True |
+
+## Strict Input Schema
+| schema_id | field | required_input | rejects |
+| --- | --- | --- | --- |
+| SIS2452_0_partial_q_Delta_ref | partial_q_Delta_ref | finite numeric derivative or theorem_zero_q=True with theorem_zero_authority=PARENT_SIGNED_TRUE | MISSING_NUMERIC_DERIVATIVE_OR_THEOREM_ZERO; closure-zero; notation-zero |
+| SIS2452_1_Delta_q_scale | Delta_q_scale | finite positive q-variation scale | unity placeholder; chosen-to-shrink residual; MISSING_Q_SOURCE_SCALE |
+| SIS2452_2_partial_source_Delta_ref | partial_source_Delta_ref | finite numeric derivative or theorem_zero_source=True with theorem_zero_authority=PARENT_SIGNED_TRUE | MISSING_NUMERIC_DERIVATIVE_OR_THEOREM_ZERO; closure-zero; notation-zero |
+| SIS2452_3_Delta_source_scale | Delta_source_scale | finite positive source-variation scale | unity placeholder; chosen-to-shrink residual; MISSING_Q_SOURCE_SCALE |
+| SIS2452_4_Bref_rule | B_ref_rule | fixed parent-owned formula for B_ref before q/source/readout | hidden observed-GM labels; source labels; post-fit branch selection |
+| SIS2452_5_N_E | N_E | finite positive same-frame Hamiltonian/source normalization | orbital-GM import; fitted denominator; MISSING_SAME_FRAME_N_E |
+| SIS2452_6_theorem_zero_authority | theorem_zero_authority | PARENT_SIGNED_TRUE if either q/source theorem_zero switch is True | zero-by-closure; boundary-projector silence; desire for local-GR pass |
+| SIS2452_7_no_cancellation_guard | no_cancellation_guard | ABS_COMPONENT_SUM_NO_SIGN_CANCELLATION | opposite-sign cancellation; tuned cancellation; branch cancellation |
+
+## Candidate Inputs
+| candidate_id | purpose | origin_row | component_kind | partial_q_Delta_ref | Delta_q_scale | partial_source_Delta_ref | Delta_source_scale | N_E | B_ref_rule | theorem_zero_q | theorem_zero_source | theorem_zero_authority | no_cancellation_guard | valid_for_claim |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| CIR2452_live_DCP2451_0_partial_q_derivative | live 2451 row import: partial_q_Delta_ref | DCP2451_0_partial_q_derivative | q | MISSING_NUMERIC_DERIVATIVE_OR_THEOREM_ZERO | MISSING_Q_SOURCE_SCALE | MISSING_NUMERIC_DERIVATIVE_OR_THEOREM_ZERO | MISSING_Q_SOURCE_SCALE | MISSING_SAME_FRAME_N_E | MISSING_PARENT_BREF_RULE | False | False | MISSING_PARENT_SIGNATURE | MISSING_ABSOLUTE_PRODUCT_GUARD | False |
+| CIR2452_live_DCP2451_1_partial_source_derivative | live 2451 row import: partial_source_Delta_ref | DCP2451_1_partial_source_derivative | source | MISSING_NUMERIC_DERIVATIVE_OR_THEOREM_ZERO | MISSING_Q_SOURCE_SCALE | MISSING_NUMERIC_DERIVATIVE_OR_THEOREM_ZERO | MISSING_Q_SOURCE_SCALE | MISSING_SAME_FRAME_N_E | MISSING_PARENT_BREF_RULE | False | False | MISSING_PARENT_SIGNATURE | MISSING_ABSOLUTE_PRODUCT_GUARD | False |
+| CIR2452_live_DCP2451_5_component_bound | live 2451 row import: Delta_ref_q_source_component_over_N_E | DCP2451_5_component_bound | combined | MISSING_NUMERIC_DERIVATIVE_OR_THEOREM_ZERO | MISSING_Q_SOURCE_SCALE | MISSING_NUMERIC_DERIVATIVE_OR_THEOREM_ZERO | MISSING_Q_SOURCE_SCALE | MISSING_SAME_FRAME_N_E | MISSING_PARENT_BREF_RULE | False | False | MISSING_PARENT_SIGNATURE | MISSING_ABSOLUTE_PRODUCT_GUARD | False |
+| CIR2452_3_theorem_zero_without_parent_signature | prove zero switches are rejected without parent signature | 2452_adversarial_policy_test | combined | MISSING_NUMERIC_DERIVATIVE_OR_THEOREM_ZERO | 0.20 | 1.5 | 0.10 | 10.0 | parent_selector_fixed_before_readout_smoke_only | True | False | MISSING_PARENT_SIGNATURE | ABS_COMPONENT_SUM_NO_SIGN_CANCELLATION | False |
+| CIR2452_4_hidden_orbital_GM_import | prove hidden orbital-GM denominator import is rejected | 2452_adversarial_policy_test | combined | 2.5 | 0.20 | 1.5 | 0.10 | 1.0 | B_ref fixed by observed GM calibration | False | False | NOT_USED | ABS_COMPONENT_SUM_NO_SIGN_CANCELLATION | False |
+| CIR2452_5_cancellation_guard_missing | prove sign-cancellation rows are rejected | 2452_adversarial_policy_test | combined | 2.5 | 0.20 | 1.5 | 0.10 | 10.0 | parent_selector_fixed_before_readout_smoke_only | False | False | NOT_USED | SIGNED_SUM_CANCELLATION_ALLOWED | False |
+| CIR2452_6_numeric_smoke_nonclaim | prove the numeric absolute-value path computes while staying nonclaim | 2452_adversarial_policy_test | combined | 2.5 | 0.20 | 1.5 | 0.10 | 10.0 | parent_selector_fixed_before_readout_smoke_only | False | False | NOT_USED | ABS_COMPONENT_SUM_NO_SIGN_CANCELLATION | False |
+
+## Strict Provenance Runner
+| runner_id | candidate_id | verdict | score_ready | component_row_allowed | downstream_claim_allowed | computed_abs_component_over_N_E | data_failure_reasons | claim_failure_reasons |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| RUN2452_live_DCP2451_0_partial_q_derivative | CIR2452_live_DCP2451_0_partial_q_derivative | REFUSED_CURRENT_ROW_MISSING_PROVENANCE_OR_PARENT_SELECTOR | False | False | False | NOT_SCORED | MISSING_NUMERIC_PARTIAL_Q_DELTA_REF_OR_PARENT_SIGNED_ZERO;MISSING_NUMERIC_PARTIAL_SOURCE_DELTA_REF_OR_PARENT_SIGNED_ZERO;MISSING_POSITIVE_DELTA_Q_SCALE;MISSING_POSITIVE_DELTA_SOURCE_SCALE;MISSING_POSITIVE_N_E;MISSING_Q_PARAMETER;MISSING_PARTIAL_Q_UNITS;MISSING_DELTA_Q_SCALE_UNITS;MISSING_SOURCE_PARAMETER;MISSING_PARTIAL_SOURCE_UNITS;MISSING_DELTA_SOURCE_SCALE_UNITS;MISSING_DELTA_REF_UNITS;MISSING_N_E_UNITS;MISSING_DENOMINATOR_ORIGIN;MISSING_FIXED_BRANCH_ID;MISSING_EQUATION_REF;MISSING_PARENT_BREF_RULE;MISSING_EXISTING_SOURCE_PATH;MISSING_NO_CANCELLATION_GUARD | VALID_FOR_CLAIM_FALSE_NONCLAIM_OR_SMOKE |
+| RUN2452_live_DCP2451_1_partial_source_derivative | CIR2452_live_DCP2451_1_partial_source_derivative | REFUSED_CURRENT_ROW_MISSING_PROVENANCE_OR_PARENT_SELECTOR | False | False | False | NOT_SCORED | MISSING_NUMERIC_PARTIAL_Q_DELTA_REF_OR_PARENT_SIGNED_ZERO;MISSING_NUMERIC_PARTIAL_SOURCE_DELTA_REF_OR_PARENT_SIGNED_ZERO;MISSING_POSITIVE_DELTA_Q_SCALE;MISSING_POSITIVE_DELTA_SOURCE_SCALE;MISSING_POSITIVE_N_E;MISSING_Q_PARAMETER;MISSING_PARTIAL_Q_UNITS;MISSING_DELTA_Q_SCALE_UNITS;MISSING_SOURCE_PARAMETER;MISSING_PARTIAL_SOURCE_UNITS;MISSING_DELTA_SOURCE_SCALE_UNITS;MISSING_DELTA_REF_UNITS;MISSING_N_E_UNITS;MISSING_DENOMINATOR_ORIGIN;MISSING_FIXED_BRANCH_ID;MISSING_EQUATION_REF;MISSING_PARENT_BREF_RULE;MISSING_EXISTING_SOURCE_PATH;MISSING_NO_CANCELLATION_GUARD | VALID_FOR_CLAIM_FALSE_NONCLAIM_OR_SMOKE |
+| RUN2452_live_DCP2451_5_component_bound | CIR2452_live_DCP2451_5_component_bound | REFUSED_CURRENT_ROW_MISSING_PROVENANCE_OR_PARENT_SELECTOR | False | False | False | NOT_SCORED | MISSING_NUMERIC_PARTIAL_Q_DELTA_REF_OR_PARENT_SIGNED_ZERO;MISSING_NUMERIC_PARTIAL_SOURCE_DELTA_REF_OR_PARENT_SIGNED_ZERO;MISSING_POSITIVE_DELTA_Q_SCALE;MISSING_POSITIVE_DELTA_SOURCE_SCALE;MISSING_POSITIVE_N_E;MISSING_Q_PARAMETER;MISSING_PARTIAL_Q_UNITS;MISSING_DELTA_Q_SCALE_UNITS;MISSING_SOURCE_PARAMETER;MISSING_PARTIAL_SOURCE_UNITS;MISSING_DELTA_SOURCE_SCALE_UNITS;MISSING_DELTA_REF_UNITS;MISSING_N_E_UNITS;MISSING_DENOMINATOR_ORIGIN;MISSING_FIXED_BRANCH_ID;MISSING_EQUATION_REF;MISSING_PARENT_BREF_RULE;MISSING_EXISTING_SOURCE_PATH;MISSING_NO_CANCELLATION_GUARD | VALID_FOR_CLAIM_FALSE_NONCLAIM_OR_SMOKE |
+| RUN2452_3_theorem_zero_without_parent_signature | CIR2452_3_theorem_zero_without_parent_signature | REFUSED_CURRENT_ROW_MISSING_PROVENANCE_OR_PARENT_SELECTOR | False | False | False | NOT_SCORED | THEOREM_ZERO_Q_REJECTED_WITHOUT_PARENT_SIGNED_TRUE;MISSING_NUMERIC_PARTIAL_Q_DELTA_REF_OR_PARENT_SIGNED_ZERO | VALID_FOR_CLAIM_FALSE_NONCLAIM_OR_SMOKE |
+| RUN2452_4_hidden_orbital_GM_import | CIR2452_4_hidden_orbital_GM_import | REFUSED_CURRENT_ROW_MISSING_PROVENANCE_OR_PARENT_SELECTOR | False | False | False | NOT_SCORED | BREF_RULE_CONTAINS_FORBIDDEN_OBSERVED_OR_CALIBRATION_LABEL;DENOMINATOR_ORIGIN_FORBIDDEN_ORBITAL_GM_OR_FIT | VALID_FOR_CLAIM_FALSE_NONCLAIM_OR_SMOKE |
+| RUN2452_5_cancellation_guard_missing | CIR2452_5_cancellation_guard_missing | REFUSED_CURRENT_ROW_MISSING_PROVENANCE_OR_PARENT_SELECTOR | False | False | False | NOT_SCORED | MISSING_NO_CANCELLATION_GUARD | VALID_FOR_CLAIM_FALSE_NONCLAIM_OR_SMOKE |
+| RUN2452_6_numeric_smoke_nonclaim | CIR2452_6_numeric_smoke_nonclaim | SMOKE_COMPUTED_NONCLAIM | True | False | False | 6.5000000000000002e-02 | none | VALID_FOR_CLAIM_FALSE_NONCLAIM_OR_SMOKE |
+
+## Refusal Ledger
+| refusal_id | candidate_id | refusal | why | required_exit | claim_allowed |
+| --- | --- | --- | --- | --- | --- |
+| REF2452_live_DCP2451_0_partial_q_derivative | CIR2452_live_DCP2451_0_partial_q_derivative | refused | MISSING_NUMERIC_PARTIAL_Q_DELTA_REF_OR_PARENT_SIGNED_ZERO;MISSING_NUMERIC_PARTIAL_SOURCE_DELTA_REF_OR_PARENT_SIGNED_ZERO;MISSING_POSITIVE_DELTA_Q_SCALE;MISSING_POSITIVE_DELTA_SOURCE_SCALE;MISSING_POSITIVE_N_E;MISSING_Q_PARAMETER;MISSING_PARTIAL_Q_UNITS;MISSING_DELTA_Q_SCALE_UNITS;MISSING_SOURCE_PARAMETER;MISSING_PARTIAL_SOURCE_UNITS;MISSING_DELTA_SOURCE_SCALE_UNITS;MISSING_DELTA_REF_UNITS;MISSING_N_E_UNITS;MISSING_DENOMINATOR_ORIGIN;MISSING_FIXED_BRANCH_ID;MISSING_EQUATION_REF;MISSING_PARENT_BREF_RULE;MISSING_EXISTING_SOURCE_PATH;MISSING_NO_CANCELLATION_GUARD | finite sourced coefficients or parent-signed theorem-zero selector | False |
+| REF2452_live_DCP2451_1_partial_source_derivative | CIR2452_live_DCP2451_1_partial_source_derivative | refused | MISSING_NUMERIC_PARTIAL_Q_DELTA_REF_OR_PARENT_SIGNED_ZERO;MISSING_NUMERIC_PARTIAL_SOURCE_DELTA_REF_OR_PARENT_SIGNED_ZERO;MISSING_POSITIVE_DELTA_Q_SCALE;MISSING_POSITIVE_DELTA_SOURCE_SCALE;MISSING_POSITIVE_N_E;MISSING_Q_PARAMETER;MISSING_PARTIAL_Q_UNITS;MISSING_DELTA_Q_SCALE_UNITS;MISSING_SOURCE_PARAMETER;MISSING_PARTIAL_SOURCE_UNITS;MISSING_DELTA_SOURCE_SCALE_UNITS;MISSING_DELTA_REF_UNITS;MISSING_N_E_UNITS;MISSING_DENOMINATOR_ORIGIN;MISSING_FIXED_BRANCH_ID;MISSING_EQUATION_REF;MISSING_PARENT_BREF_RULE;MISSING_EXISTING_SOURCE_PATH;MISSING_NO_CANCELLATION_GUARD | finite sourced coefficients or parent-signed theorem-zero selector | False |
+| REF2452_live_DCP2451_5_component_bound | CIR2452_live_DCP2451_5_component_bound | refused | MISSING_NUMERIC_PARTIAL_Q_DELTA_REF_OR_PARENT_SIGNED_ZERO;MISSING_NUMERIC_PARTIAL_SOURCE_DELTA_REF_OR_PARENT_SIGNED_ZERO;MISSING_POSITIVE_DELTA_Q_SCALE;MISSING_POSITIVE_DELTA_SOURCE_SCALE;MISSING_POSITIVE_N_E;MISSING_Q_PARAMETER;MISSING_PARTIAL_Q_UNITS;MISSING_DELTA_Q_SCALE_UNITS;MISSING_SOURCE_PARAMETER;MISSING_PARTIAL_SOURCE_UNITS;MISSING_DELTA_SOURCE_SCALE_UNITS;MISSING_DELTA_REF_UNITS;MISSING_N_E_UNITS;MISSING_DENOMINATOR_ORIGIN;MISSING_FIXED_BRANCH_ID;MISSING_EQUATION_REF;MISSING_PARENT_BREF_RULE;MISSING_EXISTING_SOURCE_PATH;MISSING_NO_CANCELLATION_GUARD | finite sourced coefficients or parent-signed theorem-zero selector | False |
+| REF2452_3_theorem_zero_without_parent_signature | CIR2452_3_theorem_zero_without_parent_signature | refused | THEOREM_ZERO_Q_REJECTED_WITHOUT_PARENT_SIGNED_TRUE;MISSING_NUMERIC_PARTIAL_Q_DELTA_REF_OR_PARENT_SIGNED_ZERO | finite sourced coefficients or parent-signed theorem-zero selector | False |
+| REF2452_4_hidden_orbital_GM_import | CIR2452_4_hidden_orbital_GM_import | refused | BREF_RULE_CONTAINS_FORBIDDEN_OBSERVED_OR_CALIBRATION_LABEL;DENOMINATOR_ORIGIN_FORBIDDEN_ORBITAL_GM_OR_FIT | finite sourced coefficients or parent-signed theorem-zero selector | False |
+| REF2452_5_cancellation_guard_missing | CIR2452_5_cancellation_guard_missing | refused | MISSING_NO_CANCELLATION_GUARD | finite sourced coefficients or parent-signed theorem-zero selector | False |
+| REF2452_6_numeric_smoke_nonclaim | CIR2452_6_numeric_smoke_nonclaim | computed_but_nonclaim_smoke | VALID_FOR_CLAIM_FALSE_NONCLAIM_OR_SMOKE | replace smoke row with real sourced coefficients and valid_for_claim=True | False |
+
+## Claim Gates
+| gate_id | claim | gate_status | reason | gate_pass | claim_allowed |
+| --- | --- | --- | --- | --- | --- |
+| GATE2452_0_live_Delta_ref_q_source_rows | current 2451 Delta_ref q/source rows are usable | BLOCKED | live rows are placeholders and strict runner refuses them | False | False |
+| GATE2452_1_theorem_zero_switch | q/source theorem-zero can be used without parent selector | BLOCKED | theorem-zero requires theorem_zero_authority=PARENT_SIGNED_TRUE | False | False |
+| GATE2452_2_numeric_path_smoke | runner arithmetic path works | SMOKE_ONLY | numeric smoke computes but remains nonclaim | True | False |
+| GATE2452_3_downstream_local_GR | Delta_ref/RCS2446_0/S_Eq/local-GR branch passes | BLOCKED | component provenance is guarded but not supplied; downstream residual envelope remains open | False | False |
+
+## Decision Ledger
+| decision_id | decision | reason | effect |
+| --- | --- | --- | --- |
+| DEC2452_0_runner_installed | install strict q/source provenance runner | 2451 made the required rows explicit but did not supply coefficients or a parent selector theorem | future q/source rows can be tested without accidental promotion |
+| DEC2452_1_current_rows_refused | keep current 2451 Delta_ref q/source component rows nonclaim | missing derivative/scale/B_ref/N_E/source/equation evidence remains | no Delta_ref, RCS2446_0, S_Eq, R10, PPN, or local-GR pass is claimed |
+| DEC2452_2_no_fake_zero | zero-by-closure is rejected | theorem-zero switches require a parent-signed selector or component certificate | the route must be derived, not smuggled in as a plateau axiom |
+| DEC2452_3_next_parent_selector | move to parent B_ref selector variational equation | the strict runner is now in place; the next real physics gap is the owner equation for Sigma_ref/B_ref | 2453 should try the derivation first and only then stage finite coefficient rows |
+
+## Next Target
+| route_id | selection_status | target_file | target_script | task | acceptance_target | guardrails |
+| --- | --- | --- | --- | --- | --- | --- |
+| NEXT2452_0_selected | selected | 2453-Y5-R2FR-parent-Bref-selector-variational-equation-or-finite-coefficient-row.md | scripts/Y5_R2FR_parent_Bref_selector_variational_equation_or_finite_coefficient_row_2453.py | derive a parent-owned Sigma_ref/B_ref selector equation that fixes B_ref before q/source/readout, or stage finite q/source coefficient rows through the 2452 strict runner | parent selector theorem must satisfy no-marker, no-observed-GM, no-post-fit-source, same-frame N_E, and counterterm convention clauses; otherwise remain nonclaim | do not claim Delta_ref/RCS2446_0/S_Eq/local-GR; do not edit formalization-workbench; do not push GitHub |
+
+## Branch Copies
+| copy_id | source_path | target_path | source_exists | target_exists |
+| --- | --- | --- | --- | --- |
+| queue_runner | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2452_STRICT_PROVENANCE_RUNNER.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\rab-sector\acquisition-queue\JR2452_DELTA_REF_Q_SOURCE_STRICT_PROVENANCE_RUNNER_NONCLAIM.csv | True | True |
+| queue_schema | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2452_STRICT_INPUT_SCHEMA.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\rab-sector\acquisition-queue\JR2452_DELTA_REF_Q_SOURCE_STRICT_SCHEMA_NONCLAIM.csv | True | True |
+| local_runner | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2452_STRICT_PROVENANCE_RUNNER.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\local_bounds\Delta_ref_q_source_strict_runner_2452_NONCLAIM.csv | True | True |
+
+## Validation
+| check_id | status | notes | detail |
+| --- | --- | --- | --- |
+| VAL2452_00_sources_exist | PASS | all cited source paths exist and needles are present |  |
+| VAL2452_01_schema_core_fields | PASS | strict schema covers q derivative, source derivative, scales, B_ref, N_E, theorem-zero, and no-cancellation |  |
+| VAL2452_02_live_rows_refused | PASS | current 2451 q/source rows are refused |  |
+| VAL2452_03_theorem_zero_guard | PASS | theorem-zero switch is rejected without parent signature |  |
+| VAL2452_04_hidden_GM_rejected | PASS | hidden orbital-GM/fitted denominator route is rejected |  |
+| VAL2452_05_cancellation_rejected | PASS | sign-cancellation route is rejected |  |
+| VAL2452_06_numeric_smoke_computes_nonclaim | PASS | numeric arithmetic path computes but remains nonclaim | 6.5000000000000002e-02 |
+| VAL2452_07_claim_gates_blocked | PASS | downstream Delta_ref/RCS2446_0/S_Eq/local-GR claims remain blocked |  |
+| VAL2452_08_next_target_written | PASS | 2453 parent selector target selected |  |
+| VAL2452_09_branch_copies | PASS | strict runner/schema nonclaim copies exist |  |
+| VAL2452_10_no_formalization_artifacts | PASS | no 2452 artifacts were written to formalization-workbench |  |
+| VAL2452_CSV_P8_Y5_PARENT_QLOC_2452_SOURCE_REGISTER | PASS | CSV parses with 7 rows | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2452_SOURCE_REGISTER.csv |
+| VAL2452_CSV_P8_Y5_PARENT_QLOC_2452_STRICT_INPUT_SCHEMA | PASS | CSV parses with 8 rows | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2452_STRICT_INPUT_SCHEMA.csv |
+| VAL2452_CSV_P8_Y5_PARENT_QLOC_2452_CANDIDATE_INPUT_TEMPLATE | PASS | CSV parses with 7 rows | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2452_CANDIDATE_INPUT_TEMPLATE.csv |
+| VAL2452_CSV_P8_Y5_PARENT_QLOC_2452_STRICT_PROVENANCE_RUNNER | PASS | CSV parses with 7 rows | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2452_STRICT_PROVENANCE_RUNNER.csv |
+| VAL2452_CSV_P8_Y5_PARENT_QLOC_2452_REFUSAL_LEDGER | PASS | CSV parses with 7 rows | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2452_REFUSAL_LEDGER.csv |
+| VAL2452_CSV_P8_Y5_PARENT_QLOC_2452_CLAIM_GATES | PASS | CSV parses with 4 rows | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2452_CLAIM_GATES.csv |
+| VAL2452_CSV_P8_Y5_PARENT_QLOC_2452_DECISION_LEDGER | PASS | CSV parses with 4 rows | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2452_DECISION_LEDGER.csv |
+| VAL2452_CSV_P8_Y5_PARENT_QLOC_2452_NEXT_TARGET | PASS | CSV parses with 1 rows | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2452_NEXT_TARGET.csv |
+| VAL2452_CSV_P8_Y5_PARENT_QLOC_2452_BRANCH_COPIES | PASS | CSV parses with 3 rows | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2452_BRANCH_COPIES.csv |
+| VAL2452_OVERALL | PASS | 2452 strict q/source provenance runner installed and claims remain blocked |  |

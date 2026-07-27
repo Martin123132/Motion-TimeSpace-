@@ -1,0 +1,12 @@
+input_id,symbol,definition,required_for,current_status,claim_status,valid_for_claim
+IN3397_delta_kappa,delta_kappa,kappa_MTS c^4/(8*pi*G_ref)-1 or branch variation of kappa_MTS,source-normalized Newton/PPN vector,OPEN_PARENT_SIGNATURE,NONCLAIM_INPUT_REQUIRED,false
+IN3397_delta_ellJ,delta_ellJ,hidden source-current scale drift relative to Hilbert source normalization,source-normalized Newton/PPN vector,OPEN_MATTER_DESCENT_SIGNATURE,NONCLAIM_INPUT_REQUIRED,false
+IN3397_epsilon_Gref_match,epsilon_Gref_match,|G_Htau/G_Poisson-1|+|G_PPN/G_Poisson-1|,source-normalized Newton/PPN vector,OPEN_HTAU_PPN_MATCH,NONCLAIM_INPUT_REQUIRED,false
+IN3397_delta_KC,delta_KC,v-action kinetic/source coefficient mismatch,source-normalized Newton/PPN vector,OPEN_V_ACTION_RATIO,NONCLAIM_INPUT_REQUIRED,false
+IN3397_Delta_Newton_v_coupled,Delta_Newton_v_coupled,(1+delta_KC)(1+epsilon_M)(1+delta_kappa)(1+delta_ellJ)-1 without cancellation credit,source-normalized Newton/PPN vector,OPEN_NO_CANCELLATION_LEDGER,NONCLAIM_INPUT_REQUIRED,false
+IN3397_kappa_v,kappa_v,"second-order PPN beta-source ledger including source, PiM, boundary, readout, operator and coupling terms",source-normalized Newton/PPN vector,OPEN_SECOND_ORDER_PPN,NONCLAIM_INPUT_REQUIRED,false
+IN3397_R_alpha_pref_frame,R_alpha_pref_frame,preferred-frame residual vector feeding alpha_i,alpha1;alpha2;alpha3,MISSING_FINITE_BOUND_OR_PARENT_ZERO,NONCLAIM_INPUT_REQUIRED,false
+IN3397_R_zeta_conservation,R_zeta_conservation,stress-energy/source-current nonconservation residual vector feeding zeta_i,zeta1;zeta2;zeta3;zeta4,MISSING_FINITE_BOUND_OR_PARENT_ZERO,NONCLAIM_INPUT_REQUIRED,false
+IN3397_R_xi_location,R_xi_location,preferred-location / anisotropic external-potential residual,xi,MISSING_FINITE_BOUND_OR_PARENT_ZERO,NONCLAIM_INPUT_REQUIRED,false
+IN3397_R_boundary_reference_PPN,R_boundary_reference_PPN,B_zero_flux/Delta_symp/reference drift as PPN stress/source residual,beta;zeta3,MISSING_FINITE_BOUND_OR_PARENT_ZERO,NONCLAIM_INPUT_REQUIRED,false
+IN3397_R_local_package,R_local_package,finite replacement if 3394 local package is not parent-adopted,gamma;xi;alpha_i,MISSING_FINITE_BOUND_OR_PARENT_ZERO,NONCLAIM_INPUT_REQUIRED,false

@@ -1,0 +1,7 @@
+residual_id,arena,quantity,bound_or_anchor,units,missing_mts_input,row_status,valid_for_claim
+RBP2627_0_lambda_gap,all local,lambda_gap or m_X/range lower bound,formula only: lambda_gap >= a_min lambda_1(D)+m_min^2,1/length^2,MISSING_A_MIN;MISSING_LAMBDA1_D;MISSING_MX2,TEMPLATE_NOT_SCOREABLE,False
+RBP2627_1_JX_norm,all local,||J_X|| <= sum component norms,component decomposition only,operator-normalized source units,MISSING_J_KIN_AFFINE;MISSING_J_MATTER;MISSING_J_CHID;MISSING_J_BOUNDARY;MISSING_J_HISTORY,TEMPLATE_NOT_SCOREABLE,False
+RBP2627_2_boundary_lift,PPN/Gdot/R10/local flux,boundary_lift_norm,"417 pressure anchors only: alpha3 4e-20, Gdot 9.6e-15/yr, alpha2 2e-9, xi 4e-9, gamma-scale 2.3e-5",mixed arena units,MISSING_BOUNDARY_FLUX_PROJECTION_COEFFICIENT;MISSING_BOUNDARY_NORM,SOURCE_BACKED_ANCHORS_NOT_MTS_SCORE,False
+RBP2627_3_X_amplitude,all local,||X||_L2,||X||_L2 <= (||J_X|| + boundary_lift_norm)/lambda_gap,X units times sqrt(volume),MISSING_NUMERIC_JX;MISSING_BOUNDARY_LIFT;MISSING_LAMBDA_GAP,TEMPLATE_NOT_SCOREABLE,False
+RBP2627_4_local_projection,R10/PPN/clock/Gdot/orbital/WEP,Delta O_i <= K_i ||X|| + K_i_grad ||grad X||,projection formula only,arena-specific,MISSING_K_R10;MISSING_K_PPN;MISSING_K_CLOCK;MISSING_K_GDOT;MISSING_K_ORBITAL;MISSING_K_WEP,TEMPLATE_NOT_SCOREABLE,False
+RBP2627_5_score_gate,all local,valid_for_claim,false until theorem-zero or numeric sourced MTS coefficients with bound comparisons exist,boolean,REQUIRES_ALL_PREVIOUS_ROWS,FORCED_FALSE,False

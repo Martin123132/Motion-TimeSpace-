@@ -1,0 +1,4 @@
+decision_id,decision,reason,next_action,valid_for_claim,claim_allowed
+DEC1422_0_schema_verdict,CMSM schema/file inventory not acquired from current run,public ONERA page reachable; CMSM browser/API endpoints unreachable or do not yield schema,use browser/manual export or provide exact CMSM files/API response,False,False
+DEC1422_1_pilot_verdict,gx/gz/Sxx/Sxz pilot remains blocked,"dry-run and surrogate previews exist but exact timestamps, ephemeris, attitude/rates, gravity model, masks, and material map are missing",fill export contract or choose explicitly nonclaim smoke-runner path,False,False
+DEC1422_2_best_next,target user/browser CMSM export import or nonclaim smoke runner next,automated portal access is not providing schema; a local export would unblock official pilot arrays fastest,"if export is available, ingest it; otherwise run a labelled surrogate-only smoke runner that cannot be cited as evidence",False,False

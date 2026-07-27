@@ -1,0 +1,12 @@
+field_name,required,type,allowed_values_or_format,purpose
+input_id,True,string,unique row id,stable row identity for future local residual runner
+branch_type,True,enum,closure_benchmark | finite_residual | source_required | derived_target,prevents closure rows being treated as finite evidence or theorem rows
+arena,True,enum,PPN_QR | PPN_beta | WEP_R10 | clock_alpha | readout_transfer | QCD_component | cosmology_separate,routes rows to the correct future evaluator
+symbol,True,string,declared residual symbol,connects runner row to residual-vector map
+value_mode,True,enum,closure_value | numeric_value | bound_interval | source_kernel | missing_source | derived_zero_candidate,"states whether a value is closure-only, numeric, sourced, or missing"
+value,False,number_or_symbolic,"numeric finite value, interval, kernel id, or MISSING_SOURCE",future runner payload; closure zeros are explicitly labelled by branch_type/value_mode
+units,True,string,dimensionless | declared_physical_units | source_kernel,blocks silent unit mixing
+source_requirement,True,string,"derivation path, source table path, external source id, or closure label",makes missing evidence visible before scoring
+validation_gate,True,enum,blocked | schema_only | source_required | closure_only | ready_nonclaim,future runner acceptance gate
+valid_for_claim,True,boolean,False for all 1239 rows,no public/local-GR claim promotion
+claim_allowed,True,boolean,False for all 1239 rows,hard stop against closure-as-evidence

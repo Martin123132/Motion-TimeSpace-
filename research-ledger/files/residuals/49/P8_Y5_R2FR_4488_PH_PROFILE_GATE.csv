@@ -1,0 +1,5 @@
+gate_id,object,derived_law,meaning,current_status,valid_for_claim
+PG4488_0_signed_estimator,P_H,P_H=-(5/4)*s_K2*kappa_STF*I4_D2,signed source-profile estimator inherited from the Hessian branch,DERIVED_SYMBOLIC_SOURCE_PROFILE_GATE,False
+PG4488_1_absolute_envelope,absolute profile norm,|P_H| <= (5/4)*|s_K2*kappa_STF|*N4_D2,conservative bound using N4_D2=int |D2[F]| x^4 dx,EXECUTABLE_ENVELOPE_DERIVED,False
+PG4488_2_tight_pressure_condition,tight half-range pressure gate,|s_K2*kappa_STF|*N4_D2 <= 1.949002184545292e+11,sufficient condition for the smooth-profile branch under the current tight pressure proxy,PRESSURE_GATE_READY_NONCLAIM,False
+PG4488_3_zero_routes,P_H zero branch,P_H=0 if s_K2*kappa_STF=0 or I4_D2=0,zero routes remain parent-theorem tasks; profile cancellation cannot hide a fixed exterior c_ext,ZERO_ROUTES_IDENTIFIED_NOT_PROVEN,False

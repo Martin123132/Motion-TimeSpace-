@@ -1,0 +1,6 @@
+map_id,quantity,schema_relation,normalization,status,blocker,valid_for_claim,claim_allowed
+QMAP1240_0_weak_field_identity,R_AB,R_AB = ln(T^2 S) approximately 2(gamma-1) U/c^2 in weak-field areal-radial PPN matching,U=GM/r and |R_AB|<<1,SCHEMA_RELATION_NONCLAIM,requires exact metric/coordinate convention before scoring,False,False
+QMAP1240_1_cell_hair_solution,Q_R,cell-current exterior gives R_AB = -Q_R/r after R_infinity=0,Q_R has length-like units unless normalized by GM/c^2,SOURCE_BACKED_INTERNAL_RELATION,Q_R normalization must be declared in any runner,False,False
+QMAP1240_2_dimensionless_qR,q_R_hat,q_R_hat = Q_R c^2/(GM),dimensionless; source mass convention must be specified,RUNNER_NORMALIZATION_PROPOSED,GM must be same measured source used in PPN comparator,False,False
+QMAP1240_3_gamma_projection,gamma_minus_1_QR,gamma_minus_1_QR approximately -q_R_hat/2 under QMAP1240_0 and QMAP1240_1,linear weak field only,NONCLAIM_PROJECTION_SCHEMA,not a derived MTS prediction; only a scoring map for finite Q_R residual,False,False
+QMAP1240_4_other_PPN_channels,light_bending_Shapiro_orbital,light-bending and Shapiro rows can inherit gamma projection; orbital rows need beta/source field equations too,channel-specific comparator required,PARTIAL_SCHEMA_ONLY,primary numeric rows for light-bending/orbital not filled here,False,False

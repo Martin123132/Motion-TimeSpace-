@@ -1,0 +1,12 @@
+validation_id,passed,requirement,evidence
+VAL3011_00_sources_exist,True,every cited local source path exists,P8_Y5_R2FR_3011_SOURCE_REGISTER.csv
+VAL3011_01_csv_parse,True,generated CSV rows parse cleanly,all generated CSV artifacts import with csv.DictReader
+VAL3011_02_r10_anchors_positive,True,anchor smoke rows have positive numeric lambda and alpha values,FNR3011_0 and FNR3011_1
+VAL3011_03_no_claim_rows,True,no 3011 row is valid for claim or claim allowed,base() claim fields
+VAL3011_04_anchor_only_not_curve,True,R10 threshold anchors remain noncurve nonclaim rows,FNR3011_0 and FNR3011_1
+VAL3011_05_missing_markers_nonclaim,True,rows with MISSING markers are never valid_for_claim=true,first nonclaim row ledger
+VAL3011_06_local_claims_blocked,True,local GR/Newton/PPN/WEP/R10 claim remains blocked,claim flags false across ledgers
+VAL3011_07_outputs_scoped,True,no generated file is outside post-checkpoint-work,generated path scope check
+VAL3011_08_formalization_not_targeted,True,formalization-workbench is not modified by this checkpoint,output target list excludes formalization-workbench
+VAL3011_09_next_target_selected,True,next target selects R10 first source-backed acquisition,P8_Y5_R2FR_3011_NEXT_TARGET.csv
+VAL3011_99_overall,True,all 3011 validation checks pass,aggregate of VAL3011_00 through VAL3011_09

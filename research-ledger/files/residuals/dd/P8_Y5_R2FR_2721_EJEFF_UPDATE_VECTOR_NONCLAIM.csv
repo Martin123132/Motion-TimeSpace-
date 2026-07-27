@@ -1,0 +1,6 @@
+update_id,formula,status,claim_allowed
+EJ2721_0_previous,E_nonmatter = E_boundary + E_harmonic + E_readout + E_shadow + E_norm,INHERITED_FROM_2718,false
+EJ2721_1_norm_split,E_norm := E_norm_kappa + E_norm_source_charge + E_norm_surface_drift + E_norm_reference + E_norm_absorption + E_norm_extra_stress,REFINED_NONCLAIM_VECTOR,false
+EJ2721_2_shadow_split,E_shadow := E_shadow_species + any retained non-Hilbert source-current tail,REFINED_NONCLAIM_VECTOR,false
+EJ2721_3_green_feed,||R_AB|| <= ||G_R||*(E_matter + E_boundary_hair + E_readout + E_shadow + E_norm),FORMAL_GREEN_INTERFACE_ONLY,false
+EJ2721_4_zero_condition,"E_norm=E_shadow=0 only if source charge, kappa/G_ref, reference, surface-independence, no-absorption and species-shadow clauses all close",ZERO_CONDITION_NOT_MET,false

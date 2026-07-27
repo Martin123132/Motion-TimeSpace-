@@ -1,0 +1,6 @@
+leakage_id,quantity,formula,status,missing_inputs,maps_to,score_ready,valid_prediction_row,valid_for_claim,claim_allowed
+DLP2735_0_F_bound,F_bar,F_bar <= 1/2 V2_max Delta_m^2 + 1/6 V3_max Delta_m^3,DOUBLE_ZERO_SOURCE_LEAKAGE_BOUND,V2_max;V3_max;Delta_m,M_L coefficient and volume/source leakage,False,False,False,False
+DLP2735_1_Fprime_bound,F1_bar,F1_bar <= V2_max Delta_m + 1/2 V3_max Delta_m^2,DERIVATIVE_LEAKAGE_BOUND,V2_max;V3_max;Delta_m,M_m coefficient and gradient-source leakage,False,False,False,False
+DLP2735_2_ML_residual,||R_L||,||R_L|| <= 2 |C_sign| L_min^-3 F_bar M_L_bar,ROLLED_FROM_2734,C_sign;L_min;M_L_bar;units/index convention,DeltaK/q_loc algebraic L_cg channel,False,False,False,False
+DLP2735_3_Mm_residual,||R_m||,||R_m|| <= |C_sign| L_min^-2 F1_bar M_m_bar,PAIR_BOUND_WITH_ML_CHANNEL,C_sign;L_min;M_m_bar;units/index convention,DeltaK/q_loc algebraic m channel,False,False,False,False
+DLP2735_4_Qalg_feed,Q_alg,"Q_alg receives no-cancellation sum of R_m, R_L, volume leakage, and Delta_grad_m source terms before CDB/memory/projection pieces.",QLOC_FEED_SYMBOLIC_ONLY,A_ref;Delta_grad_m;q_loc projection;CDB/memory residuals,1372 Q_norm decomposition and future PPN/R10 lanes,False,False,False,False

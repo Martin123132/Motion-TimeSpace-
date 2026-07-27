@@ -1,0 +1,5 @@
+fallback_id,quantity,bound_formula,required_inputs,trigger,status,valid_for_claim
+BF3407_spin0,B_0(lambda_0),"|B_0| <= min(PPN_gamma_scalar, beta_scalar, R10_alpha(lambda_0), clock/WEP if sourced)","scalar pole mass, residue sign, source/readout overlap, screening/local profile",activate if corresponding H_AB/R/J source rows remain unavailable,NOT_SCORE_READY,False
+BF3407_spin2,B_2(lambda_2),"|B_2| <= min(PPN_gamma_beta, finite-range spin2, stability/ghost exclusion)","Weyl/Ricci coefficient, massive spin2 pole, residue, sign/stability rule",activate if corresponding H_AB/R/J source rows remain unavailable,NOT_SCORE_READY,False
+BF3407_connection,B_conn,"|B_conn| <= min(clock, WEP, lightcone, spin, PPN connection projections)","torsion/nonmetricity Hessian, hypermomentum/source coupling, readout overlap",activate if corresponding H_AB/R/J source rows remain unavailable,NOT_SCORE_READY,False
+BF3407_bulk,B_X(lambda_X),|B_X| <= |R_X H_X^{-1} J_X| / |R_h H_h^{-1} J_h| and arena-specific locks,"H_X, R_X, J_X, boundary flux, local profile and arena projection",activate if corresponding H_AB/R/J source rows remain unavailable,NOT_SCORE_READY,False

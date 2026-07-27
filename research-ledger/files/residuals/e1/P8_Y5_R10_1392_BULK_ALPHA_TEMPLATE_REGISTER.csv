@@ -1,0 +1,5 @@
+register_id,artifact,requirement,current_status,claim_allowed,valid_for_claim
+ATR1392_0_schema,source-intake/mts_residuals/R10_alpha_lambda_curve_MTS_1392_BULK_ALPHA_TEMPLATE_NONCLAIM.csv,contains every MTS_REQUIRED_COLUMNS field expected by R10_alpha_lambda_bound_prediction_runner.py,RUNNER_COMPATIBLE_SCHEMA,False,False
+ATR1392_1_factor_exposure,source-intake/mts_residuals/R10_alpha_lambda_curve_MTS_1392_BULK_ALPHA_TEMPLATE_NONCLAIM.csv,"exposes beta source, beta test, K(lambda), epsilon_tail, material pair, and blocking inputs",FACTORS_EXPOSED_SYMBOLIC,False,False
+ATR1392_2_claim_flags,source-intake/mts_residuals/R10_alpha_lambda_curve_MTS_1392_BULK_ALPHA_TEMPLATE_NONCLAIM.csv,all rows keep valid_for_claim=false until values and provenance are real,ALL_ROWS_NONCLAIM,False,False
+ATR1392_3_runner_expectation,source-intake/mts_residuals/R10_alpha_lambda_curve_MTS_1392_BULK_ALPHA_TEMPLATE_NONCLAIM.csv,existing runner must reject the rows because alpha_predicted is symbolic and claim flag is false,RUNNER_MUST_BLOCK,False,False

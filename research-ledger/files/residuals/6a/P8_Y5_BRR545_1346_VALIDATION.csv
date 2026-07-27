@@ -1,0 +1,11 @@
+check_id,check,status,details
+VAL1346_0_sources_exist,registered source paths exist and anchors are found,PASS,8/8 source anchors found
+VAL1346_1_memory_not_zero,memory vertex zero theorem is not promoted,PASS,MEMORY_VERTEX_ZERO_NOT_DERIVED_SYMBOLIC_PACK_SELECTED
+VAL1346_2_fibre_not_zero,fibre vertex zero theorem is not promoted,PASS,FIBRE_VERTEX_ZERO_NOT_DERIVED_SYMBOLIC_PACK_SELECTED
+VAL1346_3_coefficient_pack_complete,memory and fibre symbolic coefficient packs include required symbols,PASS,B_h;B_mem;C_h;C_mem;J_h;J_mem;M2_h;M2_mem;Q_boundary_h;Q_boundary_mem;Z_h;Z_mem;lambda_h;alpha_h;lambda_mem;alpha_mem
+VAL1346_4_runner_rejects,runner contract rejects symbolic-only packs,PASS,DIRECT_SCALAR_PRESSURE_PACKS_COMPLETE_BUT_NONEXECUTABLE
+VAL1346_5_claims_blocked,"memory zero, fibre zero, and R10/PPN runner claims remain blocked",PASS,GATE1346_0_memory_zero=BLOCKED;GATE1346_1_fibre_zero=BLOCKED;GATE1346_2_R10_PPN_runner=BLOCKED
+VAL1346_6_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false where present
+VAL1346_7_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1346_8_next_target_1347,next target routes to memory/fibre coefficient owner search,PASS,1347-Y5-R10-RAB-memory-fibre-coefficient-owner-search-or-explicit-closure.md
+VAL1346_9_overall,overall 1346 validation,PASS,1346 keeps memory/fibre zero unclaimed and creates complete symbolic nonclaim coefficient packs

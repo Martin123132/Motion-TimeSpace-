@@ -1,0 +1,7 @@
+checkpoint,control_id,case,expected_result,status,generated_utc,claim_allowed,valid_for_claim
+4586,CTRL4586_clean_parent,all q-basic support/profile/source clauses true,C_K_source_worldtube=0,SYMBOLIC_CONTROL_PASS,2026-07-06T12:52:41.502623+00:00,False,False
+4586,CTRL4586_moving_boundary,rho_H support boundary moves under source probe,retain E_boundary_birth,COUNTERMODEL_CAUGHT,2026-07-06T12:52:41.502623+00:00,False,False
+4586,CTRL4586_wrong_profile,same monopole but wrong density profile,retain E_rho_qbasic/E_profile style row,COUNTERMODEL_CAUGHT,2026-07-06T12:52:41.502623+00:00,False,False
+4586,CTRL4586_fitted_mask,worldtube support chosen from residual/GM fit,retain E_readout_mask and block claim,FIREWALL_PASS,2026-07-06T12:52:41.502623+00:00,False,False
+4586,CTRL4586_hidden_poynting,EM/Poynting flux crosses source boundary outside public Hilbert stress,retain E_EM_flux,FIREWALL_PASS,2026-07-06T12:52:41.502623+00:00,False,False
+4586,CTRL4586_no_local_claim,operator vector exists but values are missing,no R10/PPN/local-GR claim,FIREWALL_PASS,2026-07-06T12:52:41.502623+00:00,False,False

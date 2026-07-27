@@ -1,0 +1,12 @@
+check_id,check,status,details
+VAL1327_0_sources_exist,registered source paths exist and anchors are found,PASS,13/13 source anchors found
+VAL1327_1_graph_refused,parent interaction graph certificate remains refused,PASS,GRAPH1327_0_connected_graph=GRAPH_CERTIFICATE_NOT_CLOSED;GRAPH1327_1_edge_rollup=NO_EDGE_COUNTS_FOR_CONNECTED_GRAPH;GRAPH1327_2_fallback_intake=SOURCE_READY_MATRIX_REQUIRED
+VAL1327_2_no_edges_count,latest graph edge rollup has no parent-signed connected edges,PASS,EDGE1232_0_electron_photon=BLOCKED_BY_CERTIFICATE_NOT_DERIVED;EDGE1232_1_quark_photon=PENDING;EDGE1232_2_quark_gluon=DEEPENED_BUT_NOT_SIGNED
+VAL1327_3_component_intake_matrix,component intake matrix covers six components for TA6V and PtRh10,PASS,component_intake_rows=12
+VAL1327_4_validator_handoff_nonclaim,validator handoff keeps accepted rows at zero and proxy rows quarantined,PASS,dryrun_status=NO_CANDIDATE_FILES_PRESENT;accepted_rows=0
+VAL1327_5_runner_refuses,graph and component intake runners remain refused,PASS,RUN1327_0_graph_certificate=REFUSED_NO_ZERO_PROMOTION;RUN1327_1_component_intake=REFUSED_NOT_SCOREABLE
+VAL1327_6_shortcuts_enforced,anti-shortcut gates are enforced,PASS,SHORT1327_0_no_template_edge_count;SHORT1327_1_no_proxy_fractions;SHORT1327_2_no_DD_smoke_as_parent_basis;SHORT1327_3_no_threshold_prior;SHORT1327_4_no_local_GR_claim
+VAL1327_7_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1327_8_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1327_9_next_target_1328,next target routes to component source acquisition or EM/QCD edge owner reentry,PASS,1328-Y5-R10-RAB-component-fraction-source-acquisition-or-EM-QCD-edge-owner-reentry.md
+VAL1327_10_overall,overall 1327 validation,PASS,"1327 refuses graph zero, stages source-ready component intake matrix, and preserves nonclaim gates"

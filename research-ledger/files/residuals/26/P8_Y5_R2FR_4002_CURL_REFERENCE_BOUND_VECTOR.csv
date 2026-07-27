@@ -1,0 +1,9 @@
+bound_id,target,formula,numeric_value,units,status,valid_for_claim,timestamp_utc
+HRB4002_0_master,Delta_Htau_Href_4002,|I_X|+|I_projector|+|I_boundary|+|I_ref|+|I_tau|+|I_surface|+|I_Dq|+|Delta_ref|+|C_frame|+|C_units|,MISSING_PARENT_SIGNED_COMPONENTS,dimensionless,EXECUTABLE_VECTOR_READY,False,2026-07-01T19:25:51+00:00
+HRB4002_1_I_X,I_X,|d_field alpha_tau^X|/M_H_ref,MISSING_EXTRA_SECTOR_THETA_QTAU_OR_ZERO,dimensionless,OPEN_PARENT_CURRENT_CHAIN,False,2026-07-01T19:25:51+00:00
+HRB4002_2_I_projector,I_projector,|d_field alpha_tau^projector|/M_H_ref,ZERO_IF_4001_CHAINMAP_AND_PROJECTOR_STRESS_CLOSE_ELSE_BOUND_REQUIRED,dimensionless,LINKS_TO_4001_PROJECTOR_GATE,False,2026-07-01T19:25:51+00:00
+HRB4002_3_I_boundary,I_boundary,|d_field alpha_tau^boundary|/M_H_ref,MISSING_BOUNDARY_REFERENCE_OWNER,dimensionless,OPEN_BOUNDARY_REFERENCE,False,2026-07-01T19:25:51+00:00
+HRB4002_4_I_ref_Delta_ref,I_ref + Delta_ref,|curl(delta H_ref)|/M_H_ref + |H_ref_shift_or_unfixed_counterterm|/M_H_ref,MISSING_FIXED_REFERENCE_SELECTOR_OR_BOUND,dimensionless,OPEN_REFERENCE_SELECTOR,False,2026-07-01T19:25:51+00:00
+HRB4002_5_I_tau_surface,I_tau + I_surface + C_frame,"|curl_tau alpha_tau|/M_H_ref + |curl_surface alpha_tau|/M_H_ref + |D_X ln(tau,e_obs,Sigma,frame)|",MISSING_SAME_FRAME_TAU_SURFACE_LOCK,dimensionless,OPEN_FRAME_SURFACE_LOCK,False,2026-07-01T19:25:51+00:00
+HRB4002_6_I_Dq,I_Dq,|Dq_current_leak + source_readout_Dq_leak + coupling_marker_leak|/M_H_ref,MISSING_Q_DQ_DESCENT_OR_BOUND,dimensionless,OPEN_QUOTIENT_CURRENT_LEAK,False,2026-07-01T19:25:51+00:00
+HRB4002_7_C_units,C_units,D_X ln(Pi_M H_tau denominator units) plus M_H_ref positivity/source/unit sidecar,MISSING_POSITIVE_SAME_FRAME_MHREF,dimensionless,OPEN_DENOMINATOR_SIDECAR,False,2026-07-01T19:25:51+00:00

@@ -1,0 +1,13 @@
+check_id,check,status,details
+VAL1247_0_sources_exist,all cited local sources exist,PASS,12/12 sources exist
+VAL1247_1_needles_found,all cited local needles found,PASS,12/12 needles found
+VAL1247_2_variation_conditional,lambda_R variation passes only conditionally,PASS,delta_lambda_R gives R_AB=0 only if lambda_R is legitimate
+VAL1247_3_parent_origin_blocked,lambda_R parent origin remains blocked,PASS,GATE1247_1_parent_origin -> BLOCKED
+VAL1247_4_dirac_contract,Dirac parent contract is explicit,PASS,dirac_contract_rows=6 all missing current evidence
+VAL1247_5_closure_demotion,lambda_R route is demoted to closure until parent-signed,PASS,DEM1247_0_lambdaR_closure_status
+VAL1247_6_claim_gates,claim gates remain blocked/nonclaim,PASS,claim_gate_rows=5
+VAL1247_7_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1247_8_next_target_1248,next target is minimal parent-action ansatz,PASS,1248-Y5-R10-minimal-lambdaR-parent-action-ansatz-and-Dirac-check.md
+VAL1247_9_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1247_SOURCE_REGISTER.csv:12; P8_Y5_R10_1247_LAMBDAR_LEGITIMACY_TEST.csv:6; P8_Y5_R10_1247_DIRAC_PARENT_CONTRACT.csv:6; P8_Y5_R10_1247_ROUTE_VERDICT.csv:3; P8_Y5_R10_1247_CLOSURE_DEMOTION_LEDGER.csv:2; P8_Y5_R10_1247_CLAIM_GATES.csv:5; P8_Y5_R10_1247_DECISION_LEDGER.csv:3; P8_Y5_R10_1247_NEXT_TARGET.csv:1
+VAL1247_10_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_write_count_since_run_start=0
+VAL1247_11_overall,overall 1247 validation,PASS,1247 proves lambda_R is algebraically useful but not parent-legitimate in the current corpus; it supplies the exact Dirac contract for the next derivation attempt

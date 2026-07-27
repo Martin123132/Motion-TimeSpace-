@@ -1,0 +1,15 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1225_0_sources_exist,all cited local sources exist,PASS,10/10 sources exist,False,False
+VAL1225_1_needles_found,all cited source needles found,PASS,10/10 needles found,False,False
+VAL1225_2_tau_verdict_nonclaim,tau_WEP is not falsely promoted,PASS,TAU_WEP_PROJECTION_NOT_DERIVED,False,False
+VAL1225_3_symbolic_formula_written,symbolic tau_WEP formula is written,PASS,FORM1225_0_tau_WEP_functional,False,False
+VAL1225_4_acquisition_table_complete,source acquisition table includes required objects,PASS,ACQ1225_0_official_readout_arrays; ACQ1225_1_product_convention; ACQ1225_2_source_worldtube; ACQ1225_3_orbit_average; ACQ1225_4_material_tensor; ACQ1225_5_delta_w,False,False
+VAL1225_5_missing_sources_nonclaim,missing source rows are not valid for claim,PASS,all ACQ1225 rows nonclaim,False,False
+VAL1225_6_product_feed_refuses,product feed keeps zero valid predictions,PASS,valid_prediction_rows_delta=0 for all product feed rows,False,False
+VAL1225_7_anti_shortcuts_enforced,anti-shortcut gates enforce no unity/surrogate/G-absorption/cancellation,PASS,SHORT1225_0_no_tau_unity; SHORT1225_1_no_surrogate_claim; SHORT1225_2_no_G_absorption; SHORT1225_3_no_cancellation,False,False
+VAL1225_8_next_target_readout_acquisition,next target stages MICROSCOPE readout/source acquisition,PASS,1226-Y5-R10-MICROSCOPE-readout-source-acquisition-ledger.md,False,False
+VAL1225_9_claim_gates_blocked,claim gates keep physical claims blocked,PASS,tau/source/product/local claim gates blocked,False,False
+VAL1225_10_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout claim-bearing tables,False,False
+VAL1225_11_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1225_SOURCE_REGISTER.csv:10; P8_Y5_R10_1225_TAU_WEP_PROJECTION_ATTEMPT.csv:7; P8_Y5_R10_1225_SYMBOLIC_TAU_WEP_FORMULA.csv:2; P8_Y5_R10_1225_TAU_WEP_SOURCE_ACQUISITION_TABLE.csv:6; P8_Y5_R10_1225_SOURCE_WEIGHT_PRODUCT_FEED.csv:2; P8_Y5_R10_1225_TAU_WEP_ANTI_SHORTCUT_GATES.csv:4; P8_Y5_R10_1225_LOCAL_GR_WEP_FEED_UPDATE.csv:2; P8_Y5_R10_1225_DECISION_LEDGER.csv:3; P8_Y5_R10_1225_CLAIM_GATES.csv:6; P8_Y5_R10_1225_NEXT_TARGET.csv:1,False,False
+VAL1225_12_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_after_run_start_count=0,False,False
+VAL1225_13_overall,overall 1225 validation,PASS,1225 writes symbolic tau_WEP projection and exact readout/source acquisition table without claim promotion,False,False

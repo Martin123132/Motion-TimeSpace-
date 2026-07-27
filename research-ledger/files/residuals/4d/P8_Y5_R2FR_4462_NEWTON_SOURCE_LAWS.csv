@@ -1,0 +1,7 @@
+law_id,equation,requires,result,status,valid_for_claim
+NSL4462_0_EH_source,G_munu[g_obs] = kappa_eff T_H_munu,same-coframe Hilbert source and EH/Palatini principal block,"source side is one T_H, not galaxy/cosmology/orbit-specific fitted source",PRIVATE_SELECTOR_CONDITIONAL,False
+NSL4462_1_G_cal,G_cal = c^4 kappa_eff/(8*pi),topological kappa lock and source-measure normalization,calibrated Newton coupling; numerical G not predicted unless parent fixes kappa_eff,STRUCTURAL_NOT_NUMERIC_PREDICTION,False
+NSL4462_2_Poisson,nabla^2 Phi_N = 4*pi G_cal rho_H,G_00^lin=2 nabla^2 Phi_N/c^2 and T_00=rho_H c^2,Newtonian Poisson equation from the same Hilbert source,CONDITIONAL_DERIVED,False
+NSL4462_3_Gauss_orbit,Phi_N=-G_cal M_H^dress/r; a_r=-G_cal M_H^dress/r^2,worldtube Hamiltonian mass and exterior monopole/far-field readout,orbital acceleration tests the charge instead of defining it,CONDITIONAL_DERIVED,False
+NSL4462_4_EM_stress,"T_EM^{mu nu}=F^{mu alpha}F^nu_alpha - 1/4 g_obs^{mu nu}F^2; S_i=-T_EM(n,e_i)",Maxwell-Hodge owner on g_obs,"Poynting flux is a Hilbert-stress component, not a separate background force",PRIVATE_SELECTOR_CONDITIONAL,False
+NSL4462_5_WEP_yukawa,eta_AB ~= (C_A-C_B) C_S alpha_0(1+r/lambda) exp(-r/lambda),linear finite-range source coupling and common source-frame normalization,universal coupling gives eta_AB=0; species coupling becomes testable,SYMBOLIC_RESPONSE_OPERATOR,False

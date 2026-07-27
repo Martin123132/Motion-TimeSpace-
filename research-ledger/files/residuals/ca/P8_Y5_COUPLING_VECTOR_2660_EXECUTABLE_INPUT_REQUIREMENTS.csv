@@ -1,0 +1,8 @@
+branch_id,requirement_id,requirement,applies_to_fields,status,valid_for_claim,timestamp_utc
+Y5_R2FR_COUPLING_RESIDUAL_VECTOR_RUNNER_2660,REQ2660_0_numeric_or_zero,each coefficient must be either parent theorem-zero or numeric source-backed,coefficient_value;theorem_zero_status;source_path;source_row,ACTIVE_REQUIREMENT,False,2026-06-23T04:10:31.858545+00:00
+Y5_R2FR_COUPLING_RESIDUAL_VECTOR_RUNNER_2660,REQ2660_1_units,every numeric coefficient and projection must declare units and normalization,units;projection_required;arena convention,ACTIVE_REQUIREMENT,False,2026-06-23T04:10:31.858545+00:00
+Y5_R2FR_COUPLING_RESIDUAL_VECTOR_RUNNER_2660,REQ2660_2_projection,"each arena must have a derived/source projection factor, never tau=1 by default",tau_R10;tau_PPN;tau_WEP;tau_clock;tau_orbital,ACTIVE_REQUIREMENT,False,2026-06-23T04:10:31.858545+00:00
+Y5_R2FR_COUPLING_RESIDUAL_VECTOR_RUNNER_2660,REQ2660_3_source_paths,all claim-valid rows need existing source paths and row ids,source_path;source_row,ACTIVE_REQUIREMENT,False,2026-06-23T04:10:31.858545+00:00
+Y5_R2FR_COUPLING_RESIDUAL_VECTOR_RUNNER_2660,REQ2660_4_no_missing,no MISSING/PENDING/PLACEHOLDER markers may survive in score rows,all fields,ACTIVE_REQUIREMENT,False,2026-06-23T04:10:31.858545+00:00
+Y5_R2FR_COUPLING_RESIDUAL_VECTOR_RUNNER_2660,REQ2660_5_no_cancellation,"total residual must be an absolute envelope, not cancellation between unknown signs",score_envelope,ACTIVE_REQUIREMENT,False,2026-06-23T04:10:31.858545+00:00
+Y5_R2FR_COUPLING_RESIDUAL_VECTOR_RUNNER_2660,REQ2660_6_branch_separation,"SPM closure, theorem-zero and finite-vector branches must be reported separately",branch_id;theorem_zero_status,ACTIVE_REQUIREMENT,False,2026-06-23T04:10:31.858545+00:00

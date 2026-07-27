@@ -1,0 +1,7 @@
+gate_id,gate,result,consequence,valid_for_claim
+NG650_0_same_screen_variable,"same S_lab_alpha is used in clocks, WEP, R10, and local EM",pass_contract_written,future rows that use arena-specific alpha screens fail validation,false
+NG650_1_no_clock_only_silence,clock-only silence or screen is forbidden,pass_policy,"the branch must survive cross-arena, not just clocks",false
+NG650_2_parent_domain_classifier,lab/bound versus FLRW/galaxy domain classifier is parent-derived before fitting data,fail_missing,"screened lab plus unscreened cosmology remains a contract, not a claim",false
+NG650_3_WEP_R10_EM_projection,"WEP, R10, and EM spectra have numeric projections using the shared screen",fail_missing,no local-alpha evidence score is allowed,false
+NG650_4_PPN_not_fixed_by_alpha,metric/PPN residuals are not repaired by alpha screening alone,pass_blocker,local GR reduction stays a separate derivation target,false
+NG650_5_public_claim,public local alpha or local GR pass claim,fail_policy,private robustness contract only,false

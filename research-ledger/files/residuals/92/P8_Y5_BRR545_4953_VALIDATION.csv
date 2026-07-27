@@ -1,0 +1,37 @@
+check_id,requirement,expected,actual,passed,validation_marker
+VAL4953_00_paths,"all source, script, document and output paths exist",[],[],True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_01_marker,result and every row use the 4953 marker,MTS_4953_FORMATION_X2_CASCADE_AND_INJECTION_GATE,MTS_4953_FORMATION_X2_CASCADE_AND_INJECTION_GATE,True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_02_nonclaim,every generated evidence row remains nonclaim,True,True,True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_03_hashes,all locked source hashes independently recompute,True,True,True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_04_source_clauses,all parent and primary-source clauses were located,True,"{'4941_essential_coordinate': True, '4941_gravity_generates_X2': True, '4949_2PI_occupation_framework': True, '4952_formation_cascade_open': True, '4952_pair_rate_kernel': True, 'Berges_nonzero_chemical_potential': True, 'Berges_off_shell_number_change': True, 'Berges_only_22_on_shell': True}",True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_05_planck_source,Planck source hash and conservative stretch are locked,8e172730...;1090.92,8e172730faf0;1090.92,True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_06_amplitude,CM X2 amplitude independently reconstructs,c*s**2*(x**2 + 3)/4,c_ess*s**2*(x**2 + 3)/4,True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_07_sigma,identical-final cross section independently integrates,7c2s3/(320pi),7*c**2*s**3/(320*pi),True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_08_a0,s-wave independently integrates,5cs2/(96pi),5*c*s**2/(96*pi),True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_09_number_invariant,Delta W vanishes for W=1,0,0,True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_10_momentum_invariant,Delta W vanishes for W=pnu,0,0,True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_11_kernel_rows,all six exact scattering rows pass,6 pass,6 rows,True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_12_invariant_rows,all nine kinetic classification rows pass,9 pass,9 rows,True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_13_public_input,public occupation and harmonic inputs have 175 matched rows,175;175,175;175,True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_14_positive_targets,positive outer-residual count is explicit,173,173,True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_15_injection_shape,six injection cases exist for every public row,1050,1050,True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_16_injection_formulas,all number and redshift ceilings independently recompute,0,0,True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_17_high_frequency,all positive high-frequency rows fail maximal redshift,692/692,692/692,True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_18_direct_profile,all direct profile rows pass number accounting only,173,173,True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_19_supported_harmonic,4952 minimum supported pair is profile-energy scale but amplitude-unsolved,1<=ratio<1.001,1.0000001403201084..1.0004821404377773,True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_20_nonlinear_rows,all 175 phase-scale rows independently recompute,0,0,True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_21_natural_galaxy,natural galaxy phase maximum matches result and is tiny,4.312294350879912e-108,4.312294350879912e-108,True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_22_local_rows,both maximal compact comparators independently recompute with no equal-efficiency window,0,0,True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_23_natural_compact,natural compact phase maximum matches result and is tiny,2.325820748117073e-58,2.325820748117073e-58,True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_24_number_change,all five high-precision natural scaling rows recompute without underflow,0,0,True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_25_UHE,UHE natural comparator reproduces declared values,True,True,True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_26_decisions,route decision distinguishes exact rejection from open off-shell work,True,"['4947_LOCAL_BRANCH_RETAINED', 'CONDITIONAL_NO_WINDOW_SOURCE_COUPLING_NEXT', 'DERIVED', 'EXECUTED_ROUTE_REJECTED', 'FULL_2PI_NUMBER_CHANGE_KERNEL_REQUIRED', 'FULL_MTS_PROMOTION_BLOCKED', 'NATURAL_COMPARATOR_FAILS_NOT_PARENT_COEFFICIENT_PROOF', 'OPEN_SOURCE_SPECTRUM_NOT_A_CASCADE', 'ROUTE_REJECTED_EXACTLY']",True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_27_documents,"checkpoint, formal decision and provenance carry required markers and nonclaim boundary",True,True,True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_28_claim,claim L-795 is unique and preserves off-shell/full-MTS boundary,True,1,True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_29_variables,all nine canonical 4953 variables are registered,"['FormationSpectralNumberBound4953_MTS', 'GalaxyFormationInjectionGate4953_MTS', 'LocalInjectionEfficiencyCeiling4953_MTS', 'MaxPostRecombinationStretch4953_MTS', 'NaturalX2Comparator4953_MTS', 'PredictivityStatus4953_MTS', 'X2CollisionInvariant4953_MTS', 'X2NumberChangeScaling4953_MTS', 'X2ScatteringKernel4953_MTS']","['FormationSpectralNumberBound4953_MTS', 'GalaxyFormationInjectionGate4953_MTS', 'LocalInjectionEfficiencyCeiling4953_MTS', 'MaxPostRecombinationStretch4953_MTS', 'NaturalX2Comparator4953_MTS', 'PredictivityStatus4953_MTS', 'X2CollisionInvariant4953_MTS', 'X2NumberChangeScaling4953_MTS', 'X2ScatteringKernel4953_MTS']",True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_30_equation,equation register contains 1.246,True,True,True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_31_red_team,red-team register contains item 197,True,True,True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_32_spine,unification spine contains the 4953 decision,True,True,True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_33_resume,resume advances to the finite-time number-changing target,True,True,True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_34_determinism,research script reruns successfully with byte-identical outputs,return 0 and identical,return 0; identical=True,True,MTS_4953_INDEPENDENT_VALIDATION
+VAL4953_35_final_nonclaim,deterministic rerun still records full_MTS=false,False,False,True,MTS_4953_INDEPENDENT_VALIDATION

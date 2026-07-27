@@ -1,0 +1,7 @@
+residual_id,symbol,formula,required_input,bound_or_target,current_status,valid_for_claim
+BD527_0_delta_beta_source,delta_beta_source,B_source/A_source^2 - 1,A_source;B_source;source equation path,beta_minus_1<=7.8e-5 or derived zero,retained_missing_A_B,false
+BD527_1_delta_beta_R11,delta_beta_R11,beta projection of non-EH operator coefficient vector,R11 executable vector or EH-only theorem,operator contribution below beta/gamma/preferred-frame locks,retained_R11_template_only,false
+BD527_2_delta_beta_q_loc,delta_beta_q_loc,beta-equivalent O(U2) projection of q_loc force/source residual,q_loc Ward-zero or U2 conversion/profile,below beta lock and separately checked against alpha_i/xi locks,retained_provisional_budget_only,false
+BD527_3_delta_beta_boundary_domain,delta_beta_boundary_domain,quadratic beta leak from boundary/domain/projector stress,scalar/topological no-flux theorem or coefficient map,below beta and alpha3/xi locks,retained_unfilled,false
+BD527_4_delta_beta_readout,delta_beta_readout,second-order mismatch between source metric and orbital/clock readout metric,same observed coframe/readout theorem through O(U2),WEP/clock/gamma/beta locks,retained_unfilled,false
+BD527_5_total_beta_envelope,Delta_beta_total_abs,sum_i |BD527_i| with no cancellation credit,all beta component rows filled or theorem-zero,Delta_beta_total_abs <= 7.8e-5,not_run_components_missing,false

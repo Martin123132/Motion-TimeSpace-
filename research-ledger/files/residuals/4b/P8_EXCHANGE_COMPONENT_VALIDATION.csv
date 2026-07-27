@@ -1,0 +1,7 @@
+rule_id,rule,result,evidence,claim_effect
+V494_0_sources,all cited source paths exist,pass,missing_sources=0,traceability only
+V494_1_inputs_loaded,"493 component map, local residual vector, domain coefficients, and R11 vector are loaded",pass,odd_rows=7;local_vector_rows=11;domain_coeff_rows=5;r11_rows=10,component map tied to active local gates
+V494_2_component_coverage,all seven Yloc components are scored,pass,Y0_trace_expansion;Y1_coherent_projector;Y2_boundary_flux;Y3_domain_vector;Y4_domain_STF_stress;Y5_source_normalization;Y6_stress_Bianchi,no skipped residual
+V494_3_coefficient_coverage,"coefficient branch covers boundary alpha3, domain alpha1/alpha2/alpha3/xi, R11 source normalization, and stress",pass,LRV_BOUNDARY_R7_ALPHA3;LRV_DOMAIN_R11_SOURCE_NORMALIZATION;LRV_DOMAIN_R5_ALPHA1;LRV_DOMAIN_R6_ALPHA2;LRV_DOMAIN_R7_ALPHA3;LRV_DOMAIN_R8_XI;LRV_PROJECTOR_STRESS_ACCOUNTING,failed theorem rows remain testable
+V494_4_hard_rows_identified,source-normalization and extra-stress hard rows are explicit,pass,Y5_source_normalization;Y6_stress_Bianchi;C2_even_matter_readout;C3_boundary_odd_charge,next blocker is concrete
+V494_5_no_claim_rows,no component or coefficient row is claim-valid,pass,claim_component_rows=0;claim_coefficient_rows=0,no local-GR promotion

@@ -1,0 +1,5 @@
+artifact,claim_status,contract_id,current_status,requirement
+source-intake/local_bounds/R10_alpha_lambda_bound_curve_DIGITIZED.csv,false,BDC559_0_required_columns,placeholder_schema_written,bound_id;dataset_id;lambda_value;lambda_units;alpha_bound;alpha_bound_source;digitization_method;source_file;valid_for_claim;notes
+source-intake/local_bounds/R10_alpha_lambda_bound_curve_DIGITIZED.csv,false,BDC559_1_numeric_rows,missing_numeric_values,lambda_value and alpha_bound must be positive numeric values with units convertible to meters
+source-intake/local_bounds/R10_alpha_lambda_bound_curve_DIGITIZED.csv,false,BDC559_2_source_provenance,source_named_for_first_placeholder_only_not_digitized,each row must cite a bound source and digitization/extraction method
+scripts/R10_alpha_lambda_bound_prediction_runner.py,false,BDC559_3_interpolation_policy,runner_implemented,compare exact matching lambda or log-log interpolate positive bound rows inside sampled range

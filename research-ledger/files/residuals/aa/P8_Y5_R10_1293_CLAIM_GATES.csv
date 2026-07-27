@@ -1,0 +1,6 @@
+gate_id,claim,current_status,reason,valid_for_claim,claim_allowed
+CG1293_0_sources,private runner provenance,SATISFIED_FOR_PRIVATE_CHECKPOINT,registered runner source paths and anchors are validated,False,False
+CG1293_1_structural_runner,runner schema can parse current input,PASS_STRUCTURE_ONLY,"input rows have required schema columns, but remain rejected by missing inputs",False,False
+CG1293_2_current_scoring,current rows can be scored,BLOCKED_REJECTED_NONCLAIM,all rows contain MISSING inputs and nonclaim flags,False,False
+CG1293_3_response_matrix,local response matrix exists,BLOCKED_MISSING_RESPONSE_OPERATOR,response operator requirements remain missing across Newton/PPN/clock/orbital/R10,False,False
+CG1293_4_local_GR,local GR/Newton/PPN recovery,BLOCKED_NO_SCORE_EMITTED,runner emits no score and rejects every current row,False,False

@@ -1,0 +1,5 @@
+zeta_id,quantity,candidate_value_or_formula,required_condition,status,claim_allowed,valid_for_claim,generated_utc
+ZQ2808_0_conditional_zeta,zeta_q,"if q_loc is defined as P_loc(nabla_mu T_GK^{mu nu}) in physical stress-divergence units, zeta_q=1","only under accepted S_GK, K_hat=K_metric, and dimensionless/unit-fixed P_loc",CONDITIONAL_VALUE_NOT_ADOPTED,False,False,2026-06-24T02:44:12.703755+00:00
+ZQ2808_1_model_to_physical_conversion,zeta_q,"if Gamma_eff/K_hat are model-normalized rather than physical stress-normalized, zeta_q converts model q_loc to force density",conversion requires parent normalization constants,MISSING_PARENT_NORMALIZATION,False,False,2026-06-24T02:44:12.703759+00:00
+ZQ2808_2_force_runner_effect,delta a_A,delta a_A=(zeta_q/M_A) int q_loc^i dV + boundary/M_A,not score-ready because zeta_q remains conditional and body measures are missing,RUNNER_BLOCKED,False,False,2026-06-24T02:44:12.703762+00:00
+ZQ2808_3_verdict,zeta_q extraction,zeta_q=1 can be used only after metric-response/unit certificates close,current run records conditional extraction but does not promote it,FAIL_CURRENT_CLAIM,False,False,2026-06-24T02:44:12.703765+00:00

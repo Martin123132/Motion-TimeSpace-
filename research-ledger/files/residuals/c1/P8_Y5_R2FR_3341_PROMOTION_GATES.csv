@@ -1,0 +1,6 @@
+gate_id,claim,passed,reason,valid_for_claim
+GATE3341_0_runner_contract,runner contract exists for every FRV3340 component,true,component contracts cover theorem-zero and finite numeric modes,false
+GATE3341_1_unsigned_zero_refused,unsigned theorem-zero switches are refused,true,PARENT_SIGNED_HSC3340 is required,false
+GATE3341_2_missing_rows_refused,missing placeholder rows are refused,true,"finite values, units, sources, equations, arenas, and no-cancellation guards are mandatory",false
+GATE3341_3_smoke_arithmetic,nonclaim smoke vector computes an absolute sum,true,arithmetic path works but remains nonclaim,false
+GATE3341_4_local_GR_claim,MTS local-GR source-coupling branch is claim-ready,false,no theorem-zero bundle or source-backed finite residual vector is currently score-ready,false

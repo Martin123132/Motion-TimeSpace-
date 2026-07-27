@@ -1,0 +1,14 @@
+check_id,check,status,details
+VAL1271_0_sources_exist,all cited local sources exist,PASS,10/10 sources exist
+VAL1271_1_needles_found,all cited local needles found,PASS,10/10 needles found
+VAL1271_2_field_map_failures,field-by-field q_RAB/v_R map records observed readout failures,PASS,field_map_rows=10
+VAL1271_3_no_noncircular_quotient,non-circular quotient invariance does not pass,PASS,all direct quotient tests fail or are circular; auxiliary route is conditional
+VAL1271_4_aux_target_ready,auxiliary parent-necessity theorem target is explicit,PASS,AUXN1271_4_theorem_target=EXACT_TARGET_NOT_CLOSED
+VAL1271_5_route_selected,auxiliary route is selected as next derivation target,PASS,RD1271_1_auxiliary_route selected=True
+VAL1271_6_validator_rescan,finite-ZR validator still rejects docs and has no live rows,PASS,docs_rows=11; raw_rows=0; accepted_rows=0; accepted_ready=0
+VAL1271_7_claim_gates,all claim gates remain blocked,PASS,claim_gate_rows=4
+VAL1271_8_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1271_9_next_target_1272,next target routes to auxiliary parent necessity or finite source row,PASS,1272-Y5-R10-RAB-auxiliary-parent-necessity-from-radial-cell-variational-principle-or-finite-source-row.md
+VAL1271_10_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1271_SOURCE_REGISTER.csv:10; P8_Y5_R10_1271_FIELD_BY_FIELD_QRAB_VR_MAP.csv:10; P8_Y5_R10_1271_OBSERVED_INVARIANCE_TEST.csv:4; P8_Y5_R10_1271_AUXILIARY_PARENT_NECESSITY_TARGET.csv:5; P8_Y5_R10_1271_ROUTE_DECISION_AFTER_FIELD_MAP.csv:3; P8_Y5_R10_1271_ZR_VALIDATOR_RESCAN.csv:11; P8_Y5_R10_1271_CLAIM_GATES.csv:4; P8_Y5_R10_1271_DECISION_LEDGER.csv:3; P8_Y5_R10_1271_NEXT_TARGET.csv:1
+VAL1271_11_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1271_12_overall,overall 1271 validation,PASS,"1271 rejects the non-circular field-by-field q_RAB/v_R route, selects auxiliary parent necessity as the next derivation target, and keeps finite-ZR rows locked behind the validator"

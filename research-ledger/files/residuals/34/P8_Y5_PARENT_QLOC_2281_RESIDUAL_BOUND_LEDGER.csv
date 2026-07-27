@@ -1,0 +1,5 @@
+bound_id,operator,bound,claim_status,blocked_by,valid_for_claim
+RBL2281_0_elliptic,L_q=-nabla_i(Z_q nabla^i)+M_q^2,||q|| <= ||L_q^{-1}|| ||S_q|| <= ||S_q||/lambda_min(L_q),CONDITIONAL_BOUND,lambda_min not sourced; boundary domain missing,False
+RBL2281_1_mass_gap,uniform mass gap,if Z_q>=0 and M_q^2>=M_min^2>0 then lambda_min(L_q)>=M_min^2,CONDITIONAL_BOUND,M_min^2 not parent-derived,False
+RBL2281_2_onsager_decay,Dq=-mu_q L_q q + S_q,||q(t)|| <= exp(-mu_min lambda_min t)||q(0)|| + convolution(source),CONDITIONAL_BOUND,mu_q and entropy production law not parent-derived,False
+RBL2281_3_local_observable,R_local=P_obs q,||R_local|| <= ||P_obs|| ||L_q^{-1}|| ||S_q||,NONCLAIM_TEMPLATE,P_obs and experimental arena maps missing,False

@@ -1,0 +1,33 @@
+check_id,requirement,expected,actual,passed,validation_marker
+VAL4956_00_research,research runner completes,0,0,True,MTS_4956_INDEPENDENT_VALIDATION
+VAL4956_01_paths,all output and synchronized document paths exist,[],[],True,MTS_4956_INDEPENDENT_VALIDATION
+VAL4956_02_compile,research and validator compile without bytecode output,[],[],True,MTS_4956_INDEPENDENT_VALIDATION
+VAL4956_03_marker,all evidence uses one checkpoint marker,MTS_4956_FUNCTIONAL_PX_FIXED_FUNCTION_GATE,MTS_4956_FUNCTIONAL_PX_FIXED_FUNCTION_GATE,True,MTS_4956_INDEPENDENT_VALIDATION
+VAL4956_04_nonclaim,all generated rows remain private nonclaim,True,True,True,MTS_4956_INDEPENDENT_VALIDATION
+VAL4956_05_source_hashes,all source hashes independently recompute,[],[],True,MTS_4956_INDEPENDENT_VALIDATION
+VAL4956_06_source_clauses,all nine source clauses pass,9 true,"{'4955_nonclosure': True, 'eight_derivative_X4': True, 'essential_X2_source': True, 'parent_GR_branch': True, 'parent_fixed_point_residual': True, 'scalar_Wetterich_equation': True, 'scalar_harmonic_gauge': True, 'scalar_kinetic_vertices': True, 'six_derivative_basis': True}",True,MTS_4956_INDEPENDENT_VALIDATION
+VAL4956_07_hessian,all six functional Hessian and flow clauses exist,"['H4956_01_metric_block', 'H4956_02_mixed_block', 'H4956_03_scalar_block', 'H4956_04_regulator_insertion', 'H4956_05_functional_flow', 'H4956_06_normalization']","['H4956_01_metric_block', 'H4956_02_mixed_block', 'H4956_03_scalar_block', 'H4956_04_regulator_insertion', 'H4956_05_functional_flow', 'H4956_06_normalization']",True,MTS_4956_INDEPENDENT_VALIDATION
+VAL4956_08_calibration,two scalar and eight gravity calibration rows independently match,10 exact targets,[],True,MTS_4956_INDEPENDENT_VALIDATION
+VAL4956_09_calibration_error,maximum calibration relative error is below 1e-12,<1e-12,3.044633541230033e-15,True,MTS_4956_INDEPENDENT_VALIDATION
+VAL4956_10_homotopy_shape,both three-stage homotopies contain 34 passing rows,"{'reference_etaN0': 34, 'fixed_point_etaNminus2': 34}","{'reference_etaN0': 34, 'fixed_point_etaNminus2': 34}",True,MTS_4956_INDEPENDENT_VALIDATION
+VAL4956_11_gaussian_endpoint,both N12 trajectories return to the Gaussian coefficient origin,[],[],True,MTS_4956_INDEPENDENT_VALIDATION
+VAL4956_12_fixed_shape,orders N=2 through N=12 exist in both schemes,22 rows,22,True,MTS_4956_INDEPENDENT_VALIDATION
+VAL4956_13_endpoint_norm,N12 output records zero Gaussian endpoint norm,<1e-12,"{'reference_etaN0': '0.0', 'fixed_point_etaNminus2': '0.0'}",True,MTS_4956_INDEPENDENT_VALIDATION
+VAL4956_14_N12_coordinates,both N12 low-coordinate solutions reproduce,[],[],True,MTS_4956_INDEPENDENT_VALIDATION
+VAL4956_15_low_convergence,a2 a3 eta_psi and r3 converge in both schemes,8 rows below 1e-4,7.982635195010485e-09,True,MTS_4956_INDEPENDENT_VALIDATION
+VAL4956_16_r3_bracket,UV fixed-germ r3 bracket is finite and ordered,"[3.8441,4.3507]","[3.8441357677763572, 4.350637889249325]",True,MTS_4956_INDEPENDENT_VALIDATION
+VAL4956_17_local_regularity,both schemes are convex and Hessian-regular on x<=0.1,True,True,True,MTS_4956_INDEPENDENT_VALIDATION
+VAL4956_18_global_block,neither N12 scheme establishes regularity on x<=0.25,True,True,True,MTS_4956_INDEPENDENT_VALIDATION
+VAL4956_19_longitudinal_zero,both first longitudinal zeros lie outside local and inside global domain,0.1<zero<0.25,"{'reference_etaN0': '0.14756978948669439', 'fixed_point_etaNminus2': '0.13343205182743212'}",True,MTS_4956_INDEPENDENT_VALIDATION
+VAL4956_20_high_order_warning,large alternating tail and finite-radius warning remain explicit,True,True,True,MTS_4956_INDEPENDENT_VALIDATION
+VAL4956_21_decisions,all ten route decisions are present,"['4947_LOCAL_GR_NEWTON_MAXWELL_RETAINED', 'FULL_MOTION_HESSIAN_NOT_COMPLETE', 'FULL_MTS_PROMOTION_BLOCKED', 'FUNCTIONAL_PROJECTOR_EXACTLY_CALIBRATED', 'FUNCTIONAL_PX_HESSIAN_DERIVED', 'GAUSSIAN_CONNECTED_POLYNOMIAL_ROOTS_THROUGH_N12', 'GLOBAL_FIXED_FUNCTION_NOT_ESTABLISHED', 'LOCAL_FIXED_FUNCTION_GERM_RETAINED', 'LOW_FUNCTIONAL_COORDINATES_CONVERGED', 'UV_R3_GERM_DERIVED_IR_R3_OPEN']","['4947_LOCAL_GR_NEWTON_MAXWELL_RETAINED', 'FULL_MOTION_HESSIAN_NOT_COMPLETE', 'FULL_MTS_PROMOTION_BLOCKED', 'FUNCTIONAL_PROJECTOR_EXACTLY_CALIBRATED', 'FUNCTIONAL_PX_HESSIAN_DERIVED', 'GAUSSIAN_CONNECTED_POLYNOMIAL_ROOTS_THROUGH_N12', 'GLOBAL_FIXED_FUNCTION_NOT_ESTABLISHED', 'LOCAL_FIXED_FUNCTION_GERM_RETAINED', 'LOW_FUNCTIONAL_COORDINATES_CONVERGED', 'UV_R3_GERM_DERIVED_IR_R3_OPEN']",True,MTS_4956_INDEPENDENT_VALIDATION
+VAL4956_22_result_gates,result preserves local success and global/full-theory blocks,True,"{'IR_r3_trajectory': 'OPEN', 'UV_r3_germ': 'DERIVED_SCHEME_BRACKETED', 'all_N12_homotopies_pass': True, 'full_MTS': False, 'full_motion_Hessian': False, 'global_x_le_0p25_fixed_function': False, 'local_GR_Newton_Maxwell_4947': 'RETAINED', 'local_x_le_0p1_fixed_function_germ': True, 'low_coordinates_converged': True}",True,MTS_4956_INDEPENDENT_VALIDATION
+VAL4956_23_projection_orders,result records every executed polynomial order,"[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]","[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]",True,MTS_4956_INDEPENDENT_VALIDATION
+VAL4956_24_documents,checkpoint 4956 is synchronized across every register,True,True,True,MTS_4956_INDEPENDENT_VALIDATION
+VAL4956_25_registry_csv,claim and variable registers parse with unique 4956 rows,True,True,True,MTS_4956_INDEPENDENT_VALIDATION
+VAL4956_26_prohibitions,synchronized prose contains no false promotion marker,[],[],True,MTS_4956_INDEPENDENT_VALIDATION
+VAL4956_27_provenance,provenance records every locked source hash,True,True,True,MTS_4956_INDEPENDENT_VALIDATION
+VAL4956_28_determinism,one full rerun reproduces every evidence-file hash,True,True,True,MTS_4956_INDEPENDENT_VALIDATION
+VAL4956_29_pycache,no script bytecode cache remains,[],[],True,MTS_4956_INDEPENDENT_VALIDATION
+VAL4956_30_hash_report,reproducibility hashes are valid SHA-256 values,three 64-character hashes,"{'research_sha256': 'b72f494961a83171520098dedd166c0af66f187060f9be52aafde3befb126333', 'result_sha256': '06ee62bfba50e5b1411e59e5cc707110a52f893c556331ba178032748d7563fb', 'checkpoint_sha256': 'c3cdc970258583882c13d6544e17c8cef2620d89002ee7998825566ce6630367'}",True,MTS_4956_INDEPENDENT_VALIDATION
+VAL4956_31_complete,all preceding independent checks pass,True,True,True,MTS_4956_INDEPENDENT_VALIDATION

@@ -1,0 +1,104 @@
+# 2456 Y5 R2FR Boundary Data Leak Zero Certificate Or First Delta-ref Bound Row
+
+**Status:** zero proof attempted. The useful result is a sharpened Dirichlet/fixed-boundary route: if the parent action fixes `beta_ref=(S,sigma_AB,tau,C_top,B_ct)` before local q/source/readout variations, then the 2455 boundary-reference leak law gives `D_a B_ref=0`. Current MTS does not yet sign that parent boundary contract, so no `Delta_ref`, `RCS2446_0`, `S_E^q`, PPN, Newton, or local-GR pass is claimed.
+
+**Private reading:** this is not a dead end and not a victory lap. It is the clean boxing-footwork version: the local branch can win on derivation if we can show the parent action owns a fixed boundary ensemble. Without that, the honest fallback is a finite residual vector, not a theorem-zero switch.
+
+## Source Register
+| source_id | source_path | exists | missing_needles | source_pass | role |
+| --- | --- | --- | --- | --- | --- |
+| SRC2456_00_2455_doc | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\2455-Y5-R2FR-source-blind-boundary-reference-embedding-or-finite-Delta-ref-row.md | True |  | True | handoff deriving exact B_ref boundary leak law and selecting 2456 |
+| SRC2456_01_2455_zero_csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2455_BOUNDARY_DATA_ZERO_CERTIFICATE.csv | True |  | True | machine-readable missing zero certificates from 2455 |
+| SRC2456_02_2455_bound_csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2455_DELTA_REF_BOUND_ROW_TEMPLATE.csv | True |  | True | finite Delta_ref bound template that 2456 sharpens |
+| SRC2456_03_tau_status | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\1002-Y5-R10-Bref-stationary-tau-theorem-or-Delta-ref-time-profile-row.md | True |  | True | tau identity and stationary-reference blocker |
+| SRC2456_04_frame_status | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\1003-Y5-R10-Bref-covariant-frame-theorem-or-Delta-ref-frame-profile-row.md | True |  | True | coframe/reference covariance blocker |
+| SRC2456_05_MHref_denominator | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\1006-Y5-R10-MHref-positive-same-frame-denominator-or-Htau-source-row.md | True |  | True | same-frame denominator and anti-circularity guardrail |
+| SRC2456_06_reference_lock | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\1017-Y5-R10-Hamiltonian-PiM-reference-lock-or-MHref-first-row.md | True |  | True | Hamiltonian reference/tau lock and Delta_ref blocker |
+| SRC2456_07_boundary_exactness | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\1843-Y5-R2FR-boundary-exactness-projector-orthogonality-or-source-pack.md | True |  | True | boundary-domain/cohomology precedent and no-Stokes-shortcut guard |
+
+## Boundary Data Leak Zero Audit
+| audit_id | component | zero_condition | attempted_derivation | current_evidence | blocking_input | status |
+| --- | --- | --- | --- | --- | --- | --- |
+| ZL2456_0_boundary_data_map | beta_ref=(S,sigma_AB,tau,C_top,B_ct) | D_q beta_ref=D_source beta_ref=0 | If parent reference data beta_ref descends from a fixed boundary class before q/source/readout, the chain rule gives D_a beta_ref=0 for a in {q,source}. | 2455 gives exact leak law, but no parent beta_ref descent theorem is signed. | MISSING_PARENT_BOUNDARY_DATA_DESCENT | BLOCKED_NONCLAIM |
+| ZL2456_1_surface_domain | S/domain | D_q S=D_source S=0 | Choose the linking/worldtube boundary as part of the variational problem, not as a post-fit observed-GM surface. | 1843 warns that boundary-domain exactness needs a signed domain/cohomology certificate; 2455 marks the surface rule missing. | MISSING_SOURCE_BLIND_SURFACE_DOMAIN_RULE | BLOCKED_NONCLAIM |
+| ZL2456_2_boundary_metric | sigma_AB | D_q sigma_AB=D_source sigma_AB=0 | Dirichlet boundary ensemble imposes delta sigma_AB=0 on the reference boundary, so B_ref cannot inherit q/source leakage through intrinsic geometry. | This is a valid conditional route, but current MTS has not parent-signed the Dirichlet ensemble or its embedding Hessian. | MISSING_BOUNDARY_METRIC_ZERO_CERTIFICATE | BLOCKED_NONCLAIM |
+| ZL2456_3_tau | tau | D_q tau=D_source tau=0 | Use one parent-selected time generator for reference charge, clocks, source and readout. | 1002 and 1017 keep tau identity/lock conditional and unsigned. | MISSING_TAU_REFERENCE_ZERO_CERTIFICATE | BLOCKED_NONCLAIM |
+| ZL2456_4_topological_class | C_top | D_q C_top=D_source C_top=0 | Treat C_top as a superselected boundary class fixed before source/readout variations. | This is compatible with the boundary-class strategy, but no parent topology/superselection certificate is present in the active chain. | MISSING_CTOP_SUPERSELECTION_CERTIFICATE | BLOCKED_NONCLAIM |
+| ZL2456_5_counterterm | B_ct | D_q B_ct=D_source B_ct=0 | Counterterm convention must be fixed by the boundary variational principle and cannot be tuned to cancel source leakage. | 2455 identifies B_ct as a leak channel; no counterterm rule/covariance proof is signed. | MISSING_COUNTERTERM_ZERO_CERTIFICATE | BLOCKED_NONCLAIM |
+| ZL2456_6_embedding_Hessian | L_embed and C_sigma | kernel(L_embed)=rigid isometries only, or finite C_sigma bound supplied | If delta sigma_AB=0, embedding drift is pure rigid reference gauge; otherwise bound response by C_sigma \|\|D_a sigma\|\|. | 2455 stages the Hessian/operator norm need, but no convex/regular embedding class or numeric norm is sourced. | MISSING_EMBEDDING_HESSIAN_OR_OPERATOR_NORM | BLOCKED_NONCLAIM |
+| ZL2456_7_same_frame_denominator | N_E or M_H_ref | positive same-frame normalization in the same tau/coframe | Normalize Delta_ref leakage only after parent supplies a positive source charge denominator, not by orbital GM or fitted readout. | 1006 and 1017 explicitly block same-frame M_H_ref and reject orbital-GM denominator laundering. | MISSING_SAME_FRAME_N_E_OR_MHREF | BLOCKED_NONCLAIM |
+
+## Dirichlet Reference Branch Contract
+| branch_id_local | statement | formula | proof_role | conditional_proof_status | promotion_status |
+| --- | --- | --- | --- | --- | --- |
+| DIR2456_0_definition | Define beta_ref(Phi)=(S,sigma_AB,tau,C_top,B_ct) as the parent reference-boundary data. | B_ref=B_ref[beta_ref(Phi)] | turns the reference problem into a boundary-data map problem | FORMAL_SETUP | NONCLAIM |
+| DIR2456_1_fixed_boundary_ensemble | A Dirichlet/fixed-boundary ensemble restricts allowed local readout/source variations to ker(D beta_ref). | T_D={delta Phi : D beta_ref(delta Phi)=0} | prevents smuggling an observed-GM surface or fitted mass into the reference subtraction | CONDITIONAL_PARENT_CONTRACT | NONCLAIM |
+| DIR2456_2_component_zero | Inside T_D, the component leak vector vanishes. | D_a S=D_a sigma_AB=D_a tau=D_a C_top=D_a B_ct=0 for a in {q,source} | componentwise zero certificate for 2455 leak law | CONDITIONAL_THEOREM | NONCLAIM |
+| DIR2456_3_chain_rule_zero | The 2455 variation law then gives exact reference silence. | D_a B_ref=<dB/dsigma,D_a sigma>+<dB/dtau,D_a tau>+<dB/dC_top,D_a C_top>+D_a B_ct=0 | would close partial_q Delta_ref=partial_source Delta_ref=0 if the parent action signs DIR2456_1 | PASS_AS_CONTRACT | NONCLAIM |
+| DIR2456_4_current_verdict | Current MTS does not yet prove it is in the Dirichlet/fixed-boundary ensemble. | parent action must supply beta_ref descent, tau/coframe lock, C_top superselection, B_ct rule, embedding Hessian, and same-frame denominator | prevents promoting the branch to local-GR evidence | FAIL_CURRENT_CLAIM_BUT_ROUTE_IS_SHARPENED | BLOCKED |
+
+## First Delta-ref Boundary Leak Bound Rows
+| row_id | quantity | bound_formula | required_inputs | current_value | units | claim_blocker | score_ready |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| DBR2456_0_partial_q_Bref_bound | partial_q_Bref_over_N_E | (C_sigma*norm_Dq_sigma + C_tau*norm_Dq_tau + C_top*abs_Dq_Ctop + abs_Dq_Bct)/N_E | C_sigma;norm_Dq_sigma;C_tau;norm_Dq_tau;C_top;abs_Dq_Ctop;abs_Dq_Bct;N_E;units;source_path;equation_ref | MISSING_BOUND_INPUTS | dimensionless_after_N_E_normalization | MISSING_NUMERIC_OR_THEOREM_ZERO_COMPONENTS | False |
+| DBR2456_1_partial_source_Bref_bound | partial_source_Bref_over_N_E | (C_sigma*norm_Dsource_sigma + C_tau*norm_Dsource_tau + C_top*abs_Dsource_Ctop + abs_Dsource_Bct)/N_E | C_sigma;norm_Dsource_sigma;C_tau;norm_Dsource_tau;C_top;abs_Dsource_Ctop;abs_Dsource_Bct;N_E;units;source_path;equation_ref | MISSING_BOUND_INPUTS | dimensionless_after_N_E_normalization | MISSING_NUMERIC_OR_THEOREM_ZERO_COMPONENTS | False |
+| DBR2456_2_boundary_metric_leak_norm | C_sigma*norm_Da_sigma/N_E | max_a C_sigma \|\|D_a sigma_AB\|\|/N_E for a in {q,source} | regular_embedding_class;C_sigma;norm_Dq_sigma;norm_Dsource_sigma;N_E;source_path | MISSING_EMBEDDING_OPERATOR_NORM_AND_DSIGMA_PROFILE | dimensionless_after_N_E_normalization | MISSING_BOUNDARY_METRIC_PROFILE | False |
+| DBR2456_3_tau_leak_norm | C_tau*norm_Da_tau/N_E | max_a C_tau \|\|D_a tau\|\|/N_E for a in {q,source} | tau_frame_id;C_tau;norm_Dq_tau;norm_Dsource_tau;N_E;source_path | MISSING_TAU_LOCK_OR_TAU_PROFILE | dimensionless_after_N_E_normalization | MISSING_TAU_REFERENCE_ZERO_OR_BOUND | False |
+| DBR2456_4_Ctop_and_counterterm_leak_norm | (C_top*abs_Da_Ctop+abs_Da_Bct)/N_E | max_a (C_top \|D_a C_top\|+\|D_a B_ct\|)/N_E for a in {q,source} | C_top_superselection_rule;B_ct_rule;Dq_Ctop;Dsource_Ctop;Dq_Bct;Dsource_Bct;N_E;source_path | MISSING_TOPOLOGY_AND_COUNTERTERM_PROFILES | dimensionless_after_N_E_normalization | MISSING_CTOP_OR_COUNTERTERM_CERTIFICATE | False |
+| DBR2456_5_total_Delta_ref_bound | Delta_ref_q_source_component_over_N_E | abs(partial_q_Bref*Delta_q)+abs(partial_source_Bref*Delta_source) over N_E with no cancellation | DBR2456_0;DBR2456_1;Delta_q_scale;Delta_source_scale;same_frame_N_E;source_path | NOT_COMPUTED_COMPONENTS_MISSING | dimensionless | MISSING_COMPONENTS_AND_DENOMINATOR | False |
+
+## Claim Gates
+| gate_id | claim | gate_status | reason | gate_pass | claim_allowed |
+| --- | --- | --- | --- | --- | --- |
+| GATE2456_0_dirichlet_contract | Dirichlet/fixed-boundary contract would make B_ref q/source silent | PASS_AS_CONTRACT | 2456 proves the chain-rule implication from fixed beta_ref to D_a B_ref=0 | True | False |
+| GATE2456_1_parent_signed_zero | Current parent action signs D_q/source beta_ref=0 | BLOCKED | surface, sigma_AB, tau, C_top, B_ct, embedding Hessian and same-frame denominator remain unsigned | False | False |
+| GATE2456_2_first_bound_row | Delta_ref boundary leak has a source-backed finite numerical bound | BLOCKED | 2456 writes schema rows but no numeric/source-backed norms or denominator exist | False | False |
+| GATE2456_3_no_shortcuts | Observed-GM surface, orbital GM denominator, or counterterm cancellation can substitute for the parent proof | REFUSED | that would launder the readout into the theorem and break the local-GR derivation standard | True | False |
+| GATE2456_4_local_GR | RCS2446_0, S_E^q, PPN, Newton or local-GR branch passes | BLOCKED | Delta_ref/reference-lock pieces are now sharper but not closed | False | False |
+
+## Decision Ledger
+| decision_id | decision | reason | effect |
+| --- | --- | --- | --- |
+| DEC2456_0_zero_proof_attempted | Do not claim componentwise boundary-data zero from current MTS. | the zero proof reduces exactly to parent-signed beta_ref descent/fixed-boundary ensemble, which is not present yet | Delta_ref theorem-zero stays blocked |
+| DEC2456_1_route_retained | Retain the Dirichlet/fixed-boundary reference route as the least-smuggled proof path. | it derives D_a B_ref=0 by variational boundary conditions rather than by plateau axiom or numerical cancellation | next work should construct the parent action boundary contract |
+| DEC2456_2_bound_rows_staged | Stage the first Delta_ref boundary leak bound rows as nonclaim. | if the parent zero route fails, the exact 2455 law already supplies the honest residual vector | source acquisition can fill norms without changing claims |
+| DEC2456_3_no_github | Keep this checkpoint private and do not update GitHub. | the active branch is still proof-gate scaffolding and would be easy to misread publicly | all outputs stay in post-checkpoint-work |
+
+## Next Target
+| route_id | selection_status | target_file | target_script | task | acceptance_target | guardrails |
+| --- | --- | --- | --- | --- | --- | --- |
+| NEXT2456_0_selected | selected | 2457-Y5-R2FR-parent-Dirichlet-boundary-action-contract-or-Delta-ref-bound-values.md | scripts/Y5_R2FR_parent_Dirichlet_boundary_action_contract_or_Delta_ref_bound_values_2457.py | construct the parent action boundary contract that fixes beta_ref=(S,sigma_AB,tau,C_top,B_ct) before q/source/readout, or fill first real Delta_ref leak norms and same-frame denominator rows | parent-signed fixed-boundary ensemble with tau/coframe/C_top/B_ct/embedding clauses, or numeric/source-backed nonclaim bound rows | no plateau axiom; no observed-GM/fitted-mass boundary; no orbital-GM denominator; no counterterm cancellation; no local-GR claim; no GitHub |
+
+## Branch Copies
+| copy_id | source_path | target_path | source_exists | target_exists |
+| --- | --- | --- | --- | --- |
+| queue_zero_audit | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2456_BOUNDARY_LEAK_ZERO_AUDIT.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\rab-sector\acquisition-queue\JR2456_BOUNDARY_LEAK_ZERO_AUDIT_NONCLAIM.csv | True | True |
+| queue_bound_rows | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2456_FIRST_DELTA_REF_BOUND_ROWS.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\rab-sector\acquisition-queue\JR2456_FIRST_DELTA_REF_BOUND_ROWS_NONCLAIM.csv | True | True |
+| hamiltonian_bound | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2456_FIRST_DELTA_REF_BOUND_ROWS.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\hamiltonian-source\Delta_ref_boundary_leak_bound_rows_2456_NONCLAIM.csv | True | True |
+| local_bound | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2456_FIRST_DELTA_REF_BOUND_ROWS.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\local_bounds\Delta_ref_boundary_leak_bound_rows_2456_NONCLAIM.csv | True | True |
+
+## Validation
+| check_id | status | notes | detail |
+| --- | --- | --- | --- |
+| VAL2456_00_sources_exist | PASS | all cited source paths exist and needles are present |  |
+| VAL2456_01_zero_audit_componentwise | PASS | all boundary-data leak components are audited and remain nonclaim |  |
+| VAL2456_02_dirichlet_contract_written | PASS | Dirichlet/fixed-boundary chain-rule zero is written as a contract |  |
+| VAL2456_03_current_zero_not_promoted | PASS | current parent action does not promote the zero proof |  |
+| VAL2456_04_bound_rows_nonclaim | PASS | first Delta_ref boundary leak rows are schema-only/nonclaim |  |
+| VAL2456_05_claim_gates_safe | PASS | no local-GR/PPN/Newton claim is allowed from 2456 |  |
+| VAL2456_06_next_target_written | PASS | 2457 parent Dirichlet boundary-action contract target selected |  |
+| VAL2456_07_branch_copies | PASS | nonclaim branch copies exist |  |
+| VAL2456_08_no_formalization_artifacts | PASS | no 2456 artifacts were written to formalization-workbench |  |
+| VAL2456_CSV_P8_Y5_PARENT_QLOC_2456_SOURCE_REGISTER | PASS | CSV parses with 8 rows | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2456_SOURCE_REGISTER.csv |
+| VAL2456_CSV_P8_Y5_PARENT_QLOC_2456_BOUNDARY_LEAK_ZERO_AUDIT | PASS | CSV parses with 8 rows | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2456_BOUNDARY_LEAK_ZERO_AUDIT.csv |
+| VAL2456_CSV_P8_Y5_PARENT_QLOC_2456_DIRICHLET_REFERENCE_BRANCH | PASS | CSV parses with 5 rows | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2456_DIRICHLET_REFERENCE_BRANCH.csv |
+| VAL2456_CSV_P8_Y5_PARENT_QLOC_2456_FIRST_DELTA_REF_BOUND_ROWS | PASS | CSV parses with 6 rows | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2456_FIRST_DELTA_REF_BOUND_ROWS.csv |
+| VAL2456_CSV_P8_Y5_PARENT_QLOC_2456_CLAIM_GATES | PASS | CSV parses with 5 rows | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2456_CLAIM_GATES.csv |
+| VAL2456_CSV_P8_Y5_PARENT_QLOC_2456_DECISION_LEDGER | PASS | CSV parses with 4 rows | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2456_DECISION_LEDGER.csv |
+| VAL2456_CSV_P8_Y5_PARENT_QLOC_2456_NEXT_TARGET | PASS | CSV parses with 1 rows | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2456_NEXT_TARGET.csv |
+| VAL2456_CSV_P8_Y5_PARENT_QLOC_2456_BRANCH_COPIES | PASS | CSV parses with 4 rows | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_2456_BRANCH_COPIES.csv |
+| VAL2456_COPY_CSV_queue_zero_audit | PASS | copy CSV parses with 8 rows | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\rab-sector\acquisition-queue\JR2456_BOUNDARY_LEAK_ZERO_AUDIT_NONCLAIM.csv |
+| VAL2456_COPY_CSV_queue_bound_rows | PASS | copy CSV parses with 6 rows | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\rab-sector\acquisition-queue\JR2456_FIRST_DELTA_REF_BOUND_ROWS_NONCLAIM.csv |
+| VAL2456_COPY_CSV_hamiltonian_bound | PASS | copy CSV parses with 6 rows | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\hamiltonian-source\Delta_ref_boundary_leak_bound_rows_2456_NONCLAIM.csv |
+| VAL2456_COPY_CSV_local_bound | PASS | copy CSV parses with 6 rows | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\local_bounds\Delta_ref_boundary_leak_bound_rows_2456_NONCLAIM.csv |
+| VAL2456_OVERALL | PASS | 2456 proves the fixed-boundary route as a conditional contract and stages nonclaim Delta_ref bound rows while keeping local-GR blocked |  |

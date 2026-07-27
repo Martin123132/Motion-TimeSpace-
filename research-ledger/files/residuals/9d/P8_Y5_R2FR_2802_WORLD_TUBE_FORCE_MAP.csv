@@ -1,0 +1,7 @@
+worldtube_id,step,formula,result,open_condition,claim_allowed,valid_for_claim,generated_utc
+WT2802_0_local_balance,Start from local balance law,nabla_mu T_m^{mu nu} = f_q^nu,f_q^nu := zeta_q q_loc^nu + nabla_mu B_q^{mu nu},identity form only; zeta_q not sourced,False,False,2026-06-24T02:09:53.187917+00:00
+WT2802_1_integrate_body,Integrate spatial component over compact body,F_A^i = int_{Sigma_A} f_q^i sqrt(gamma)d^3x,delta a_A^i = F_A^i/M_A,body measure and M_A owner must be same parent source,False,False,2026-06-24T02:09:53.187920+00:00
+WT2802_2_boundary_split,Separate bulk q_loc from boundary flux,F_A^i = zeta_q I_A^i + Phi_A^i,I_A^i=int q_loc^i; Phi_A^i=oint B_q^{ij}dS_j,no-boundary theorem must kill Phi_A^i,False,False,2026-06-24T02:09:53.187923+00:00
+WT2802_3_wep_condition,Compare two bodies in same external field,eta_AB = |delta a_A-delta a_B|/g_N,species-universal I_A/M_A gives no differential WEP signal,universality/zero body-moment theorem missing,False,False,2026-06-24T02:09:53.187929+00:00
+WT2802_4_orbital_condition,Single-source orbital residual,delta a_orbit^i = (zeta_q/M_source)I_source^i + Phi_source^i/M_source,feeds orbital residual if source body moment nonzero,cannot absorb into measured GM without no-cancellation score,False,False,2026-06-24T02:09:53.187931+00:00
+WT2802_5_units_condition,Physical units required,[zeta_q q_loc] = force density,K_force units are acceleration per q_loc norm,q_loc norm convention missing,False,False,2026-06-24T02:09:53.187934+00:00

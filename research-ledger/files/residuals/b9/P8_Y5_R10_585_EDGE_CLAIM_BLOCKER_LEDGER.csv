@@ -1,0 +1,7 @@
+blocker_id,blocker,required_repair,claim_blocked
+CB585_0_edge_coefficients,"K_edge, Qbar_edge_XH, and qbar_XT are not source-backed",derive owner zero or fill numeric/source-backed coefficients,true
+CB585_1_edge_support,lambda_edge/support envelope is not parent-derived,derive edge kernel support or bounded range grid,true
+CB585_2_bound_curve,live claim bound curve still has placeholder rows and review curve is nonclaim,QA-promote/supplement alpha_bound(lambda) before public scoring,true
+CB585_3_no_double_count,bulk-edge source split is not orthogonalized,derive Q_X=Q_bulk+Q_edge decomposition and projection rules,true
+CB585_runner_R10_EDGE_SMOKE_LIVE_PLACEHOLDER,runner claim_allowed=False valid_mts_rows=0 valid_bound_rows=0,"all MTS and bound rows must be valid_for_claim=true, numeric, sourced, and non-placeholder",true
+CB585_runner_R10_EDGE_SMOKE_REVIEW_CANDIDATE,runner claim_allowed=False valid_mts_rows=0 valid_bound_rows=0,"all MTS and bound rows must be valid_for_claim=true, numeric, sourced, and non-placeholder",true

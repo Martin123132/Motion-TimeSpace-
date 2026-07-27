@@ -1,0 +1,7 @@
+input_id,quantity,definition,bound_relation,current_value,source_needed,valid_for_claim,claim_allowed,generated_utc
+QRI1185_0_Rq_operator,R_q,linear response operator mapping q_loc^nu to metric/scalar residual delta g_ij^(q),needed before q_trace or q_TF are physical quantities,MISSING_RESPONSE_OPERATOR,parent metric response or gauge-fixed Green operator,False,False,2026-06-15T02:27:07.649536+00:00
+QRI1185_1_Rq_scalar_norm,||P_scalar R_q||,operator norm from q_loc vector residual to scalar PPN gamma leakage,|q_trace| <= ||P_scalar R_q|| ||q_loc||,MISSING_SCALAR_RESPONSE_NORM,response-operator bound,False,False,2026-06-15T02:27:07.649536+00:00
+QRI1185_2_Rq_TF_norm,||P_TF R_q||,operator norm from q_loc vector residual to STF/tidal PPN leakage,||q_TF|| <= ||P_TF R_q|| ||q_loc||,MISSING_TF_RESPONSE_NORM,response-operator bound,False,False,2026-06-15T02:27:07.649536+00:00
+QRI1185_3_q_loc_norm,||q_loc||_PPN,arena norm of P_loc(nabla Gamma_eff - nabla_mu K_hat^{mu nu}),feeds both q_trace and q_TF,MISSING_QLOC_NORM,"Gamma_eff/K_hat profiles, action residual, or empirical nonclaim bound",False,False,2026-06-15T02:27:07.649536+00:00
+QRI1185_4_q_trace,q_trace,"P_scalar(R_q q_loc), not a trace of q_loc itself",|q_trace| <= ||P_scalar R_q|| ||q_loc||,MISSING_RESPONSE_SPLIT,QRI1185_1 and QRI1185_3,False,False,2026-06-15T02:27:07.649536+00:00
+QRI1185_5_q_TF,q_TF,P_TF(R_q q_loc),||q_TF|| <= ||P_TF R_q|| ||q_loc||,MISSING_RESPONSE_SPLIT,QRI1185_2 and QRI1185_3,False,False,2026-06-15T02:27:07.649536+00:00

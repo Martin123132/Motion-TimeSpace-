@@ -1,0 +1,8 @@
+row_id,piece,formula_or_statement,meaning,status,valid_for_claim,timestamp_utc
+EXT3921_0_source_equation,source equation,C_0 nabla^2 Xi_N = -kappa_R P00[R11],inherits 3920 scalar common-mode equation,DERIVED_SYMBOLIC,False,2026-07-01T10:56:29+00:00
+EXT3921_1_zero_source,P00 zero exterior,P00[R11]=0 => nabla^2 Xi_N=0 in the source-free exterior,EH absence or double-zero R11 stress gives the strongest route; otherwise P00 must be bounded,CONDITIONAL_ZERO_ROUTE,False,2026-07-01T10:56:29+00:00
+EXT3921_2_harmonic_solution,harmonic exterior solution,"Xi_N = xi_0 U_N + const + sum_{l>=1,m} a_l r^{-(l+1)}Y_lm",standard source-free exterior decomposition for the common mode,DERIVED_EXTERIOR_FORM,False,2026-07-01T10:56:29+00:00
+EXT3921_3_monopole_calibration,monopole calibration,const is gauge; xi_0 U_N is measured-GM calibration if xi_0 is time/source/frame independent,the only harmless harmonic common mode is a universal constant monopole rescaling,CONDITIONAL_CALIBRATION_ONLY,False,2026-07-01T10:56:29+00:00
+EXT3921_4_residual_definition,residual common mode,Xi_N^res := Xi_N - xi_0 U_N - const,"multipoles, radial shape, time drift, source dependence and frame dependence are not calibration",RESIDUAL_VECTOR_DEFINED,False,2026-07-01T10:56:29+00:00
+EXT3921_5_beta_square,beta closure condition,xi_2=2xi_0+xi_0^2 and Xi_N^res=0 => delta_beta_common=0,monopole calibration still needs the second-order EH square law,CONDITIONAL_BETA_ZERO,False,2026-07-01T10:56:29+00:00
+EXT3921_6_escape_channels,escape channels,"boundary/projector/domain/nonlocal terms can feed P00, multipoles, or derivative hair unless zeroed or bounded",uses 3892/3893 escape ledgers,BOUND_OR_CERTIFICATE_REQUIRED,False,2026-07-01T10:56:29+00:00

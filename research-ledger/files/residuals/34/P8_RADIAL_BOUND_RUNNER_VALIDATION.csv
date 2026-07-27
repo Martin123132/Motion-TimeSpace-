@@ -1,0 +1,7 @@
+rule_id,rule,result,evidence,claim_effect
+V502_0_sources,all cited source paths exist,pass,missing_sources=0,traceability only
+V502_1_prior_inputs_loaded,"501 template, local bounds, P8 template, equality rows, and obstruction rows are loaded",pass,equality_template=4;local_bounds=12;p8_template=8;equality_rows=6;obstructions=6,runner tied to prior gates
+V502_2_formula_map_written,"formula map contains parent integral, epsilon, radial profile, and no-cancellation rows",pass,formula_rows=4,runner equations explicit
+V502_3_input_template_written,"numeric input template contains equality, boundary, extra-channel, and observed-profile rows",pass,input_template_rows=4,future source inputs structured
+V502_4_local_bound_mapping_available,local bound table contains R4/R10/R11 rows needed for radial/source-normalization mapping,pass,R10_fifth_force;R11_EH_operator_ledger;R4_beta,mapping available but not scored
+V502_5_no_false_claims,"no formula, input, or dry-run row is claim-valid",pass,formula_claims=0;input_claims=0;dryrun_claims=0,no Newton/local-GR promotion

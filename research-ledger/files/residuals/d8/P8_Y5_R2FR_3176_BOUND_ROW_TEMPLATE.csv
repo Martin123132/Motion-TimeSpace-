@@ -1,0 +1,4 @@
+row_id,arena,prediction_form,bound_form,required_inputs,current_status,valid_for_claim,generated_utc
+BT3176_0_signed_prediction_template,solar_J2_or_STF_metric,Upsilon_J2_pred = s_K2*C_K2_unit*M2_K2,|s_K2| <= bound_J2 / (C_K2_unit*|M2_K2|),signed s_K2; numeric C_K2_unit; sourced M2_K2; public J2 bound/readout convention,MISSING_M2_K2_AND_SIGNED_OWNER,false,2026-06-26T12:19:09.532520+00:00
+BT3176_1_abs_envelope_template,nonclaim_upper_bound,|Upsilon_J2_pred| <= K2*C_K2_unit*|M2_K2|,K2 <= bound_J2 / (C_K2_unit*|M2_K2|),numeric M2_K2 or conservative source-moment bound,MISSING_SOURCE_MOMENT_BOUND,false,2026-06-26T12:19:09.532520+00:00
+BT3176_2_direct_STF_comparator,PPN_clock_orbital_STF,"Delta_i = Pi_i,STF * s_K2*C_K2_unit*M2_K2 + exchange terms",|Delta_i| <= empirical_bound_i,"Pi_i,STF kernel, source moment, conservation/exchange residual, empirical convention",MISSING_PROJECTION_KERNELS_AND_BALANCE,false,2026-06-26T12:19:09.532520+00:00

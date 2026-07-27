@@ -1,0 +1,7 @@
+update_id,runner_field,rule,source_logic,status,valid_for_claim,timestamp_utc
+RUNU3879_0_previous,"z_g_active,cal","|z_g_active,cal| <= b_Qstar + b_Noether + b_tail_rel + b_common_drift",imports 3878,previous calibrated form,False,2026-07-01T07:09:52+00:00
+RUNU3879_1_common_pack,b_Gcommon,b_Gcommon := b_common_drift + b_delta_kappa + b_MHref_lock + b_PiM_JH_flux + b_GM_anti_circular + b_PPN_readout,3879 common G/source calibration residual,COMMON_BRANCH_REFINED,False,2026-07-01T07:09:52+00:00
+RUNU3879_2_updated_runner,"z_g_active,cal","|z_g_active,cal| <= b_Qstar + b_Noether + b_tail_rel + b_Gcommon",no-cancellation calibrated-GN runner,RUNNER_SCHEMA_REFINED,False,2026-07-01T07:09:52+00:00
+RUNU3879_3_G_policy,G0,numeric G0 may be empirical; G0 must be one universal derivative-silent parent/calibrated constant,GR-style reduction policy,POLICY_NOT_CLAIM,False,2026-07-01T07:09:52+00:00
+RUNU3879_4_Newton_guard,Newton pass,"false until EH owner, same Hilbert source, b_Gcommon=0/bounded, and Gauss/source lock close in one domain",acceptance policy,NO_NEWTON_CLAIM,False,2026-07-01T07:09:52+00:00
+RUNU3879_5_localGR_guard,local_GR pass,false even if first-order Poisson closes; PPN/readout vector remains separate,scope guard,NO_LOCAL_GR_CLAIM,False,2026-07-01T07:09:52+00:00

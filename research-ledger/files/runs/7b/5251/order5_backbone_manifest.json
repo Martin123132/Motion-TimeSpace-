@@ -1,0 +1,231 @@
+{
+  "base_resolution_ladder": [
+    2048,
+    4096,
+    8192,
+    16384,
+    32768,
+    65536,
+    131072,
+    262144,
+    524288
+  ],
+  "boundary_refinement_target": 0.025,
+  "claim_boundary": {
+    "reason": "This rebuild closes only the nested order-5 backbone. Q01 and Q07 remain before a fully corrected order-9 cubature or coefficient statement.",
+    "valid_for_full_MTS_claim": false,
+    "valid_for_local_GR_claim": false,
+    "valid_for_numeric_UV_claim": false
+  },
+  "formalization_workbench_start_digest": "89f535ef559666daaed08800b22c96e3db109e505b1458bf0a09d77ca5bc6e8e",
+  "formalization_workbench_start_file_count": 8760,
+  "historic_formalization_digest_matches_start": false,
+  "historic_formalization_workbench_digest": "b0f45c104b5d1ab4762e3f96f23c6e2b2a7afec8c70612879bda90c90308a758",
+  "manifest_hash": "8c64fdab857359713d0b9d1012eede2823e9d021b16d77ee4ec0f90640434b85",
+  "marker": "MTS_5251_ORDER5_BACKBONE_PAIRED_TRANSPORT_REBUILD",
+  "maximum_batch_runtime_seconds": 43200.0,
+  "maximum_boundary_refinement_depth": 12,
+  "maximum_node_runtime_seconds": 14400.0,
+  "maximum_projective_step": 0.05,
+  "maximum_reciprocal_residual": 2e-08,
+  "minimum_accepted_base_resolution": 4096,
+  "order5_rule_rows": [
+    {
+      "angular_unit_cube_jacobian": 0.25,
+      "decay_cosine": -0.995,
+      "master_node_mismatch": 0.0,
+      "maximum_monomial_moment_residual": 6.661338147750939e-16,
+      "order9_node_id": "Q00",
+      "outer_rule_order": 5,
+      "valid_for_full_MTS_claim": false,
+      "valid_for_local_GR_claim": false,
+      "valid_for_numeric_UV_claim": false,
+      "weight_d_decay_cosine": 0.0663333333333332
+    },
+    {
+      "angular_unit_cube_jacobian": 0.25,
+      "decay_cosine": -0.7035712472806147,
+      "master_node_mismatch": 0.0,
+      "maximum_monomial_moment_residual": 6.661338147750939e-16,
+      "order9_node_id": "Q02",
+      "outer_rule_order": 5,
+      "valid_for_full_MTS_claim": false,
+      "valid_for_local_GR_claim": false,
+      "valid_for_numeric_UV_claim": false,
+      "weight_d_decay_cosine": 0.5306666666666662
+    },
+    {
+      "angular_unit_cube_jacobian": 0.25,
+      "decay_cosine": 6.092617825758082e-17,
+      "master_node_mismatch": 0.0,
+      "maximum_monomial_moment_residual": 6.661338147750939e-16,
+      "order9_node_id": "Q04",
+      "outer_rule_order": 5,
+      "valid_for_full_MTS_claim": false,
+      "valid_for_local_GR_claim": false,
+      "valid_for_numeric_UV_claim": false,
+      "weight_d_decay_cosine": 0.7960000000000009
+    },
+    {
+      "angular_unit_cube_jacobian": 0.25,
+      "decay_cosine": 0.7035712472806148,
+      "master_node_mismatch": 0.0,
+      "maximum_monomial_moment_residual": 6.661338147750939e-16,
+      "order9_node_id": "Q06",
+      "outer_rule_order": 5,
+      "valid_for_full_MTS_claim": false,
+      "valid_for_local_GR_claim": false,
+      "valid_for_numeric_UV_claim": false,
+      "weight_d_decay_cosine": 0.5306666666666661
+    },
+    {
+      "angular_unit_cube_jacobian": 0.25,
+      "decay_cosine": 0.995,
+      "master_node_mismatch": 0.0,
+      "maximum_monomial_moment_residual": 6.661338147750939e-16,
+      "order9_node_id": "Q08",
+      "outer_rule_order": 5,
+      "valid_for_full_MTS_claim": false,
+      "valid_for_local_GR_claim": false,
+      "valid_for_numeric_UV_claim": false,
+      "weight_d_decay_cosine": 0.06633333333333345
+    }
+  ],
+  "parent_checkpoint": 5250,
+  "parent_decision": "HOLD_HYBRID_OUTER_VALUE__REBUILD_ORDER5_BACKBONE_WITH_PAIRED_TRANSPORT",
+  "resolution_escalation_contract": {
+    "acceptance_threshold_relaxed": false,
+    "derivation": "The observed asymptotic step ratios were approximately 0.597 and 0.599 per doubling. Four further doublings predict a step near 0.030, so the ladder is extended without relaxing any acceptance threshold.",
+    "maximum_base_resolution": 524288,
+    "trigger": "Q00 Y00_E040_MC07 at soft cosine -0.995 retained stable winding (-1,+1) from 8192 upward but its maximum paired-projective step was 0.232171479257 at 32768, above the locked 0.05 gate."
+  },
+  "revision": "order5-backbone-paired-transport-rebuild-v2",
+  "source_files": [
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\Y5_R2FR_5251_order5_backbone_paired_transport_rebuild.py",
+      "sha256": "f4a8b4f0b1a690ddf1a6538937ccacca0ff2662b20534439435ff0793e5f1a52"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\Y5_R2FR_5246_Q03_reciprocal_projective_interval_topology_rebuild.py",
+      "sha256": "2083102993a4a498df53c8d318f906a3cd798f81cb171182e4157a438f27ced1"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\Y5_R2FR_5247_Q03_reciprocal_projective_corrected_inner_slice.py",
+      "sha256": "c837a0b58db0fd44d034431d5fd2992f2698506313e1e7b5ef4b9f5269235c43"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\source-intake\\functional_rg\\5245\\reciprocal_projective_boundary_result.json",
+      "sha256": "252ec4d82b278c4183054c0a15916a6583ff0ad4a42df1c1c64a8996abcf8a74"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\source-intake\\mts_residuals\\P8_Y5_BRR545_5245_VALIDATION.csv",
+      "sha256": "85402a14a1f2b3045c0df6a043840397270313d88fe41ade8c3e9acf62d530ba"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\source-intake\\functional_rg\\5241\\decay_angle_order9_manifest.json",
+      "sha256": "9b0ccbcd07292c78ec9794f00bcf31a0d0c991f2afe882adb05c5a5283606b1a"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\source-intake\\functional_rg\\5241\\decay_angle_order9_result.json",
+      "sha256": "adceaef1fd87c8c73a45d912531f33b655e5c44dfba77fd45fe3c57e780059ac"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\source-intake\\functional_rg\\5241\\decay_angle_order9_node_summary.csv",
+      "sha256": "902be71d7d77f5c908d338edab99f4add60fc1c37336de1ce8375d8e601a5f86"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\source-intake\\functional_rg\\5241\\decay_angle_order9_winding_intervals.csv",
+      "sha256": "49ada7d312ee615912fed1c371ac927732835b6dd7f50b25143d59194b90a194"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\source-intake\\functional_rg\\5247\\Q03_corrected_inner_slice_result.json",
+      "sha256": "9ccac01be1b660820372b65f4011addde286b7667c4aa5e0d5b44b4beeea62b4"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\source-intake\\functional_rg\\5247\\Q03_corrected_regulator_extrapolation.csv",
+      "sha256": "ae13fe962e4d12a852a796fe05270ff93e3cf0ade1dbf63a882eaaf4ae7b7092"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\source-intake\\functional_rg\\5249\\Q05_corrected_inner_slice_result.json",
+      "sha256": "226104c3168f22245f76fed2e769c8f7591f8b5851e8a316cdeccb9d1e4a517d"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\source-intake\\functional_rg\\5249\\Q05_corrected_regulator_extrapolation.csv",
+      "sha256": "a7036cd329eb57ac99958e5d86253060b011fcee09cf8777c2c43539c6380327"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\source-intake\\functional_rg\\5250\\partial_outer_impact_result.json",
+      "sha256": "3fd4bfac1f274b4823c6ad98049111cdb3305f2dc699c5cd7d5f502fee3c3425"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\source-intake\\mts_residuals\\P8_Y5_BRR545_5250_VALIDATION.csv",
+      "sha256": "7331f3adfca554df3c256359182e0001490a161ea7f45fe21334266a6d723048"
+    }
+  ],
+  "target_node_ids": [
+    "Q00",
+    "Q02",
+    "Q04",
+    "Q06",
+    "Q08"
+  ],
+  "target_nodes": [
+    {
+      "decay_cosine": -0.995,
+      "execution_node_id": "Y00",
+      "master_index": 0,
+      "order9_node_id": "Q00",
+      "reused_from_5240": true,
+      "source_cache": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\source-intake\\functional_rg\\5240\\node-cache\\Y00.json",
+      "valid_for_full_MTS_claim": false,
+      "valid_for_local_GR_claim": false,
+      "valid_for_numeric_UV_claim": false
+    },
+    {
+      "decay_cosine": -0.7035712472806147,
+      "execution_node_id": "Y01",
+      "master_index": 2,
+      "order9_node_id": "Q02",
+      "reused_from_5240": true,
+      "source_cache": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\source-intake\\functional_rg\\5240\\node-cache\\Y01.json",
+      "valid_for_full_MTS_claim": false,
+      "valid_for_local_GR_claim": false,
+      "valid_for_numeric_UV_claim": false
+    },
+    {
+      "decay_cosine": 6.092617825758082e-17,
+      "execution_node_id": "Y02",
+      "master_index": 4,
+      "order9_node_id": "Q04",
+      "reused_from_5240": true,
+      "source_cache": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\source-intake\\functional_rg\\5240\\node-cache\\Y02.json",
+      "valid_for_full_MTS_claim": false,
+      "valid_for_local_GR_claim": false,
+      "valid_for_numeric_UV_claim": false
+    },
+    {
+      "decay_cosine": 0.7035712472806148,
+      "execution_node_id": "Y03",
+      "master_index": 6,
+      "order9_node_id": "Q06",
+      "reused_from_5240": true,
+      "source_cache": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\source-intake\\functional_rg\\5240\\node-cache\\Y03.json",
+      "valid_for_full_MTS_claim": false,
+      "valid_for_local_GR_claim": false,
+      "valid_for_numeric_UV_claim": false
+    },
+    {
+      "decay_cosine": 0.995,
+      "execution_node_id": "Y04",
+      "master_index": 8,
+      "order9_node_id": "Q08",
+      "reused_from_5240": true,
+      "source_cache": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\source-intake\\functional_rg\\5240\\node-cache\\Y04.json",
+      "valid_for_full_MTS_claim": false,
+      "valid_for_local_GR_claim": false,
+      "valid_for_numeric_UV_claim": false
+    }
+  ],
+  "transport_checkpoint": 5245,
+  "transport_decision": "SUPERSEDE_Q03_LEGACY_WINDING_CACHE__REBUILD_WITH_RECIPROCAL_PROJECTIVE_BOUNDARIES"
+}

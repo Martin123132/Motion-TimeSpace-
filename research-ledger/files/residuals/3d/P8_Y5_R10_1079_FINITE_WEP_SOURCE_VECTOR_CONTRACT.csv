@@ -1,0 +1,6 @@
+contract_id,object,required_content,current_status,missing_for_claim,valid_for_claim,generated_utc
+FSV1079_0_formula,finite WEP product formula,"P_WEP = C_parent * <K_MICROSCOPE, R_source^Earth dot (R_TA6V - R_PtRh10)> with declared basis and units",FORMULA_CONTRACT_ONLY,numeric C_parent; numeric source vector; numeric material vector; official readout kernel,false,2026-06-14T12:16:00.323269+00:00
+FSV1079_1_C_parent,C_parent coupling owner,"parent coefficient, units, sign convention, normalization, and source path",MISSING_PARENT_COEFFICIENT,signed current/action owner or sourced finite coefficient,false,2026-06-14T12:16:00.323271+00:00
+FSV1079_2_material_vector,R_TA6V - R_PtRh10,source-backed material response vector for test-mass compositions in the same basis as C_parent,TOY_VECTOR_ONLY,composition/material tensor source and uncertainty convention,false,2026-06-14T12:16:00.323274+00:00
+FSV1079_3_source_vector,R_source^Earth,Earth/source worldtube response vector in the same basis as material vector,MISSING_SOURCE_VECTOR,source composition/profile or common-mode theorem,false,2026-06-14T12:16:00.323276+00:00
+FSV1079_4_readout_kernel,K_MICROSCOPE,official CMSM arrays/masks or accepted reconstruction with projection units,SURROGATE_ONLY,official arrays or validated replacement,false,2026-06-14T12:16:00.323279+00:00

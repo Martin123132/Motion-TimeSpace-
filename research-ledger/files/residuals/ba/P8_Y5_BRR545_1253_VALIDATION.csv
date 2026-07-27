@@ -1,0 +1,13 @@
+check_id,check,status,details
+VAL1253_0_sources_exist,all cited local sources exist,PASS,12/12 sources exist
+VAL1253_1_needles_found,all cited local needles found,PASS,12/12 needles found
+VAL1253_2_hcore_source_not_claimed,H_core source equation remains blocked unless explicit source appears,PASS,attempt_rows=4; derived_rows=0
+VAL1253_3_boundary_no_charge_not_accepted,no-charge theorem candidates are not accepted,PASS,candidate_rows=5; accepted_rows=0
+VAL1253_4_finite_handoff_nonclaim,finite q_Rhat handoff remains nonclaim,PASS,zero/value/pheno rows are all valid_for_claim=false and claim_allowed=false
+VAL1253_5_closure_separated,closure zero is not reused as derivation,PASS,lambda_R/R_AB=0 remains algebraic/closure unless parent-signed
+VAL1253_6_claim_gates,claim gates block local GR and finite q_Rhat claims,PASS,claim_gate_rows=5
+VAL1253_7_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1253_8_next_target_1254,next target is strict boundary-flux/q_Rhat source handoff,PASS,1254-Y5-R10-boundary-flux-source-template-or-phenomenological-qRhat-row.md
+VAL1253_9_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1253_SOURCE_REGISTER.csv:12; P8_Y5_R10_1253_RECIPROCAL_HCORE_SOURCE_EQUATION_ATTEMPT.csv:4; P8_Y5_R10_1253_BOUNDARY_CHARGE_CLASS_ATTEMPT.csv:4; P8_Y5_R10_1253_NO_CHARGE_THEOREM_CANDIDATE.csv:5; P8_Y5_R10_1253_FINITE_QR_HANDOFF_STATUS.csv:3; P8_Y5_R10_1253_CLAIM_GATES.csv:5; P8_Y5_R10_1253_DECISION_LEDGER.csv:2; P8_Y5_R10_1253_NEXT_TARGET.csv:1
+VAL1253_10_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_write_count_since_run_start=0
+VAL1253_11_overall,overall 1253 validation,PASS,"1253 names the exact reciprocal H_core/boundary charge proof contract, rejects current zero/value promotion, and hands off to nonclaim finite sourcing"

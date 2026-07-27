@@ -1,0 +1,6 @@
+route_id,route,status,requires,result,fallback,valid_for_claim,generated_utc
+RVT1019_0_boundary_exactness,derive Q_edge=0 from exact boundary form,conditional_not_promoted,BE1019_0 through BE1019_5 parent-signed,fail_current_claim,retain edge source-pack rows,false,2026-06-14T05:17:44.164696+00:00
+RVT1019_1_projector_orthogonality,derive Qbar_edge_XH=0 from mass-projector orthogonality,conditional_not_promoted,PO1019_0 through PO1019_4 parent-signed,fail_current_claim,source or bound Pi_M^H[Q_edge],false,2026-06-14T05:17:44.164699+00:00
+RVT1019_2_no_double_count,orthogonal source split prevents duplicate scoring,guard_written_not_derived,bulk/edge/FB5540/R11 projectors and source currents,blocks_current_claim,absolute no-cancellation envelope,false,2026-06-14T05:17:44.164702+00:00
+RVT1019_3_source_pack,complete source-backed coefficient pack if theorem-zero fails,schema_ready_no_values,SP1019_0 through SP1019_7 numeric/source-backed rows,not_ready,next target obtains boundary certificate or first source row,false,2026-06-14T05:17:44.164704+00:00
+RVT1019_4_verdict,1019 branch closure,fail_current_claim,theorem-zero route or complete source pack,no R10/R11/local-GR pass,1020 boundary cohomology/domain certificate or source-pack first row,false,2026-06-14T05:17:44.164707+00:00

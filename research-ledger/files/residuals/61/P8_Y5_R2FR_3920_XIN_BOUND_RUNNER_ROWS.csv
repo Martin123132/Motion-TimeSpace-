@@ -1,0 +1,9 @@
+row_id,quantity,formula,observable_role,required_inputs_or_rule,score_ready,valid_for_claim,timestamp_utc
+RUN3920_0_Delta_sq,Delta_sq,xi_2-2xi_1-xi_1^2,square-law error,zero by EH completion or compare with beta bound,False,False,2026-07-01T10:53:05+00:00
+RUN3920_1_beta_common,delta_beta_common,(xi_2-2xi_1-xi_1^2)/(1+xi_1)^2,exact beta residual,requires xi_1 != -1 and sourced xi rows,False,False,2026-07-01T10:53:05+00:00
+RUN3920_2_beta_acceptance,beta acceptance,|Delta_sq| <= 7.8e-05*(1+xi_1)^2,PPN beta gate,use absolute no-cancellation rule,False,False,2026-07-01T10:53:05+00:00
+RUN3920_3_Xi_source,Xi_N source,Xi_N = -(kappa_R/C_0) nabla^{-2} P00[R11],derive xi_1 from P00,"requires kappa_R,C_0,P00,boundary domain",False,False,2026-07-01T10:53:05+00:00
+RUN3920_4_radial_shape,Newton radial residual,epsilon_r(r)=|((1+xi_1)-r partial_r xi_1)/(1+xi_ref)-1|,inverse-square/ephemeris residual,constant xi_ref may calibrate GM; gradients cannot,False,False,2026-07-01T10:53:05+00:00
+RUN3920_5_time_drift,Gdot residual,|partial_t ln(1+xi_1)| <= 9.6e-15 yr^-1,dotG/G channel,uses 3908 bound if xi_1 is time-dependent,False,False,2026-07-01T10:53:05+00:00
+RUN3920_6_source_dependence,source dependence,Delta_AB xi_1 and Delta_AB Delta_sq,WEP/source-shadow channel,composition/source dependence cannot be hidden in GM,False,False,2026-07-01T10:53:05+00:00
+RUN3920_7_no_absorption,guard,constant square-law Xi_N is calibration; radial/time/source-dependent Xi_N is residual,policy gate,prevents fake local-GR pass,False,False,2026-07-01T10:53:05+00:00

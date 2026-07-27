@@ -1,0 +1,5 @@
+norm_id,kernel_family,assumption,dimensionless_moment,M2_formula,claim_status,valid_for_claim,generated_utc
+MOM3178_0_general,general_parent_kernel,"R_K2(r)=R_b^-2 hat_R_K2(x), x=r/R_b, eta=R_src/R_b",I4[hat_R] := integral_0^eta hat_R_K2(x) x^4 dx,M2_K2 = -(kappa_STF/5) I4[hat_R],DERIVED_NORMALIZATION_INPUTS_MISSING,false,2026-06-26T12:33:42.855706+00:00
+MOM3178_1_unit_moment,unit_fourth_moment_kernel,I4[hat_R]=1 by normalization convention only,I4=1,M2_K2 = -kappa_STF/5,CONVENTION_ONLY_NOT_PARENT_PROOF,false,2026-06-26T12:33:42.855706+00:00
+MOM3178_2_surface_normalized,surface_amplitude_normalized_kernel,choose I4[hat_R]=-5/kappa_STF so M2_K2=1,I4=-5/kappa_STF,M2_K2 = 1,REJECT_AS_PHYSICS_CLAIM_NORMALIZATION_ONLY,false,2026-06-26T12:33:42.855706+00:00
+MOM3178_3_constant_compact,constant_inside_eta,hat_R_K2(x)=A0 for 0<=x<=eta and 0 outside,I4=A0*eta^5/5,M2_K2 = -kappa_STF*A0*eta^5/25,TOY_KERNEL_ONLY_NOT_PARENT_OWNED,false,2026-06-26T12:33:42.855706+00:00

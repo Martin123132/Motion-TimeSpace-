@@ -1,0 +1,6 @@
+branch,id,valid_for_claim,public_claim,created_at_utc,check,result,claim_ready,reason
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,RUN1986_0_components,false,false,2026-06-20T02:17:16.348967+00:00,all residual components present,PASS_SCHEMA,false,component catalog has all seven 1985 residual families plus projection kernels
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,RUN1986_1_values,false,false,2026-06-20T02:17:16.348967+00:00,all components theorem-zero or bounded,FAIL_VALUES_MISSING,false,every component still requires source-backed zero/bound rows
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,RUN1986_2_no_cancellation,false,false,2026-06-20T02:17:16.348967+00:00,absolute norm guard,PASS_GUARD,false,"L1 absolute norm written, but values missing"
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,RUN1986_3_observable_projection,false,false,2026-06-20T02:17:16.348967+00:00,arena kernels supplied,FAIL_KERNELS_MISSING,false,K_alpha/K_PPN/K_clock/K_orbital/cosmology kernels are not sourced
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,RUN1986_4_verdict,false,false,2026-06-20T02:17:16.348967+00:00,memory route local-GR/test pass,BLOCKED_NONCLAIM_VECTOR_READY,false,"residual vector is ready for filling, not scoring"

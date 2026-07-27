@@ -1,0 +1,14 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1210_0_sources_exist,all cited local sources exist,PASS,8/8 sources exist,False,False
+VAL1210_1_needles_found,all cited source needles found,PASS,8/8 needles found,False,False
+VAL1210_2_grid_count,Fermi bracket grid has expected row count,PASS,rows=84,False,False
+VAL1210_3_radius_grid_count,radius requirement grid has expected row count,PASS,rows=60,False,False
+VAL1210_4_numeric_positive,grid numeric values are positive,PASS,"positive drift, allowed product, and max radius values",False,False
+VAL1210_5_target_preserved,1209 projector target is preserved,PASS,target=1.17233215026e-05,False,False
+VAL1210_6_omitted_terms_visible,domain/stress omitted terms are visible,PASS,domain_motion_Linf and projector_stress_Linf retained in grid rows,False,False
+VAL1210_7_gres_gap_visible,G_res_norm source gap remains explicit,PASS,GAP1210_1_Gres present,False,False
+VAL1210_8_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout,False,False
+VAL1210_9_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1210_SOURCE_REGISTER.csv:8; P8_Y5_R10_1210_BRACKET_ASSUMPTIONS.csv:4; P8_Y5_R10_1210_FERMI_BRACKET_GRID.csv:84; P8_Y5_R10_1210_REQUIRED_RADIUS_GRID.csv:60; P8_Y5_R10_1210_INTERPRETATION_LEDGER.csv:3; P8_Y5_R10_1210_SOURCE_GAPS.csv:4; P8_Y5_R10_1210_CLAIM_GATES.csv:3; P8_Y5_R10_1210_NEXT_TARGET.csv:1,False,False
+VAL1210_10_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_after_run_start_count=0,False,False
+VAL1210_11_next_target,next target is staged,PASS,1211-Y5-R10-Gres-norm-source-or-local-residual-zero-theorem.md,False,False
+VAL1210_12_overall,overall 1210 validation,PASS,1210 bracket smoke map is reproducible and nonclaim,False,False

@@ -1,0 +1,19 @@
+check_id,result,detail,valid_for_claim,claim_allowed
+VAL1685_0_sources_exist,PASS,all cited 1685 source paths exist and required needles are present,False,False
+VAL1685_1_connectedness_not_closed,PASS,matter-category connectedness/source-label forgetting remains unsigned,False,False
+VAL1685_2_validator_module_ok,PASS,qbar intake validator module exposes evaluate and require functions,False,False
+VAL1685_3_required_fields_covered,PASS,validator rules cover every required intake field,False,False
+VAL1685_4_candidate_template_missing,PASS,candidate template is exactly qbar_source_weight and remains missing-field nonclaim,False,False
+VAL1685_5_dry_run_rejects,PASS,validator rejects the current qbar template,False,False
+VAL1685_6_claim_safety,PASS,rejected dry-run row has no unsafe true claim flags,False,False
+VAL1685_7_gate_locked,PASS,source gates remain locked,False,False
+VAL1685_8_decision_safe,PASS,decision records validator built but nonclaim,False,False
+VAL1685_9_claim_gate_safe,PASS,all claim gates remain false,False,False
+VAL1685_10_no_claim_flags,PASS,all generated rows keep claim flags false,False,False
+VAL1685_11_blocked_not_ready,PASS,no blocked/missing row is marked claim/scoring ready,False,False
+VAL1685_12_next_target_selected,PASS,next target selects parent label quotient or first real qbar row,False,False
+VAL1685_13_csv_parse,PASS,all generated 1685 CSVs parse,False,False
+VAL1685_14_branch_copies,PASS,branch/quarantine/queue copies exist,False,False
+VAL1685_15_pycache_absent,PASS,scripts __pycache__ absent,False,False
+VAL1685_16_formalization_untouched,PASS,no 1685 outputs found under formalization-workbench,False,False
+VAL1685_OVERALL,PASS,1685 qbar intake runner or matter-category connectedness proof validation,False,False

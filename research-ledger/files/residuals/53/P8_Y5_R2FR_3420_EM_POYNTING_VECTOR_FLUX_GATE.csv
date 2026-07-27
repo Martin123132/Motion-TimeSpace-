@@ -1,0 +1,5 @@
+gate_id,statement,condition,effect_on_q_loc,current_status,valid_for_claim
+EPF3420_0_public_Hilbert,Public Maxwell/EM/Poynting stress is allowed on the ordinary Hilbert source side.,same g_obs/coframe action and same kappa_MTS; no hidden current/source weighting,not hidden stress by itself,SAFE_CLASS_CONDITIONAL,False
+EPF3420_1_vector_flux,A nonzero net Poynting vector is still a vector spurion for alpha_i/alpha3.,int_dOmega P_V S_EM^i n_i dS = 0 or source-backed bound,otherwise contributes epsilon_EM_Poynting_alpha,FLUX_ZERO_NOT_SIGNED,False
+EPF3420_2_wave_average,"High-frequency or wave EM/gravitational flux must be averaged or bounded, not ignored.",time average has zero preferred-frame projection or residual bound enters alpha-vector envelope,prevents waves/Poynting from being silently dropped,BOUND_IF_WAVE_BRANCH_USED,False
+EPF3420_3_verdict,"Poynting vector is a useful place to look, but it is a gate not a free rescue.",public Hilbert ownership plus zero net transverse flux,"if passed, EM does not spoil q_loc vector silence",NONCLAIM_GATE_WRITTEN,False

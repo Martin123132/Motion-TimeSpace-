@@ -1,0 +1,5 @@
+step_id,derivation_step,formula,result,status,valid_for_claim
+HHH3408_0_action,Start from the candidate EH metric block.,S_EH[g_obs]=(2*kappa0)^-1 int sqrt(-g_obs)(R[g_obs]-2 Lambda0),the second variation defines the metric Hessian H_hh,CANDIDATE_PARENT_BLOCK,False
+HHH3408_1_linearize,Expand g_obs=bar_g+h around the local branch with Lambda background-subtracted or negligible.,"delta^2 S_EH = (1/(2*kappa0)) <h, E_FP[bar_g] h> + boundary",H_hh=(1/kappa0) E_FP up to convention and fixed boundary terms,MATH_DERIVED_IF_EH_BLOCK_OWNED,False
+HHH3408_2_spin_projector,"In local flat/high-frequency principal symbol, gauge-fixed E_FP carries the massless spin-2 projector.",H_hh(k) -> (k^2/kappa0) P^(2) + gauge/constraint/contact pieces,positive massless TT pole after gauge fixing if kappa0>0,CONDITIONAL_SPIN2_HESSIAN_ROW,False
+HHH3408_3_residue,Invert on conserved Hilbert sources after quotienting gauge modes.,H_hh^{-1} -> kappa0 P^(2)/k^2 + gauge/contact terms that vanish against conserved T,massless public spin-2 pole exists conditionally,FORMULA_READY_NOT_PARENT_CLAIM,False

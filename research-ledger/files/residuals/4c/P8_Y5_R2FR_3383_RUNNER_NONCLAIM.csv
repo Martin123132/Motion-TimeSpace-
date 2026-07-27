@@ -1,0 +1,5 @@
+run_id,test,result,detail,claim_allowed,valid_for_claim
+RUN3383_0_reduce_budget,reduce PPN budget after UOC,PASS_REDUCED_VECTOR_DEFINED,source-prefactor fog is removed and live MTS_IR terms are named,false,false
+RUN3383_1_zero_theorem,prove all live residuals zero through PPN order,FAILS_CURRENT_PROOF,"transfer tail, metric response, Gamma/composite and Bianchi components remain unsigned",false,false
+RUN3383_2_bound_rows,stage finite bound fallback,PASS_NONCLAIM_BOUND_SCHEMA,"C_metric, Gamma, transfer, nonEH and Bianchi rows have formulas and missing inputs",false,false
+RUN3383_3_firewall,prevent local-GR overclaim,PASS_CLAIM_FIREWALL,full PPN pass remains false despite UOC/Newton/EM progress,false,false

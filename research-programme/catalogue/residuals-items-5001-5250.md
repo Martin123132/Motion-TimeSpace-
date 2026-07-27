@@ -3,6 +3,8 @@
 Direct links for 250 files. Item numbers are catalogue
 ordinals, not scientific checkpoint identifiers.
 
+- [`P8_Y5_R2FR_4855_DECISION.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4855_DECISION.csv) (1258 bytes)
+- [`P8_Y5_R2FR_4855_EINSTEIN_MAXWELL_FIELD_EQUATIONS.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4855_EINSTEIN_MAXWELL_FIELD_EQUATIONS.csv) (1263 bytes)
 - [`P8_Y5_R2FR_4855_ETA_STRESS_BOUND.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4855_ETA_STRESS_BOUND.csv) (1649 bytes)
 - [`P8_Y5_R2FR_4855_ISOTROPIC_PPN_EXPANSION.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4855_ISOTROPIC_PPN_EXPANSION.csv) (1385 bytes)
 - [`P8_Y5_R2FR_4855_RESIDUAL_REBASE.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4855_RESIDUAL_REBASE.csv) (2260 bytes)
@@ -127,7 +129,7 @@ ordinals, not scientific checkpoint identifiers.
 - [`P8_Y5_R2FR_4868_AETHER_SURFACE_CHARGE.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4868_AETHER_SURFACE_CHARGE.csv) (1429 bytes)
 - [`P8_Y5_R2FR_4868_BRANCH_DECISION.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4868_BRANCH_DECISION.csv) (1384 bytes)
 - [`P8_Y5_R2FR_4868_FINITE_C_BVP_SCAN.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4868_FINITE_C_BVP_SCAN.csv) (2611 bytes)
-- [`P8_Y5_R2FR_4868_REDUCED_FUNCTIONAL.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4868_REDUCED_FUNCTIONAL.csv) (1384 bytes)
+- [`P8_Y5_R2FR_4868_REDUCED_FUNCTIONAL.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4868_REDUCED_FUNCTIONAL.csv) (1388 bytes)
 - [`P8_Y5_R2FR_4868_RESIDUAL_REBASE.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4868_RESIDUAL_REBASE.csv) (1400 bytes)
 - [`P8_Y5_R2FR_4868_SOURCE_REGISTER.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4868_SOURCE_REGISTER.csv) (5610 bytes)
 - [`P8_Y5_R2FR_4868_VARIATIONAL_CROSSCHECK.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4868_VARIATIONAL_CROSSCHECK.csv) (797 bytes)
@@ -251,5 +253,3 @@ ordinals, not scientific checkpoint identifiers.
 - [`P8_Y5_R2FR_4882_EOS_CONTRACT.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4882_EOS_CONTRACT.csv) (372 bytes)
 - [`P8_Y5_R2FR_4882_FINITE_DIFFERENCE.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4882_FINITE_DIFFERENCE.csv) (2535 bytes)
 - [`P8_Y5_R2FR_4882_MAXIMUM_MODEL.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4882_MAXIMUM_MODEL.csv) (334 bytes)
-- [`P8_Y5_R2FR_4882_RESPONSE_BENCHMARKS.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4882_RESPONSE_BENCHMARKS.csv) (1510 bytes)
-- [`P8_Y5_R2FR_4882_SOURCE_REGISTER.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4882_SOURCE_REGISTER.csv) (5858 bytes)

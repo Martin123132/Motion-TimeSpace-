@@ -1,0 +1,4 @@
+bound_id,component,formula,units_required,current_numeric_status,score_ready,valid_for_claim,timestamp_utc
+BND4028_0_tracefree_master,D_TF,A_TF/L_TF <= |1-sigma_resp*c_I|A_KL/L_KL + 2|sigma_resp*c_I|A_phiG/L_phiG + A_owner/L_owner + A_boundary/L_boundary + A_adoption/L_adoption,stress-divergence units relative to EH/source normalization,symbolic_only,False,False,2026-07-01T22:35:14+00:00
+BND4028_1_zero_limit,D_TF_zero_conditions,"D_TF=0 if sigma_resp*c_I=1, Pi_TF(phi G)=0/channel-routed, D_owner=0, D_boundary=0, and live Khat adoption is signed",not numeric; theorem certificate,conditional_theorem_not_signed,False,False,2026-07-01T22:35:14+00:00
+BND4028_2_first_numeric_need,first numeric fallback,"if theorem signing fails, first number needed is max(A_KL/L_KL, A_phiG/L_phiG) plus C_beta_qloc",PPN beta projector or R10 alpha(lambda) projector,projector_missing,False,False,2026-07-01T22:35:14+00:00

@@ -1,0 +1,5 @@
+shell_id,transition,formula,projected_source,moment_contribution,status,valid_for_claim,generated_utc
+SHELL3180_0_sharp_jump,sharp value-matched core/exterior,[F']=-5A R_b produces F''_shell=[F']delta(r-R_b),D2_shell=(2/5)[F']delta(r-R_b)=-2A R_b delta(r-R_b),integral D2_shell r^4dr = -2A R_b^5,SHELL_SOURCE_REQUIRED_IF_SHARP,false,2026-06-26T12:46:14.316335+00:00
+SHELL3180_1_core_contribution,quadratic core,D2[A r^2]=6A,core pure Y source,integral_0^Rb 6A r^4dr = 6A R_b^5/5,CORE_MOMENT,false,2026-06-26T12:46:14.316335+00:00
+SHELL3180_2_total_check,sharp core plus shell,6A R_b^5/5 - 2A R_b^5 = -4A R_b^5/5 = -4C/5,matches boundary identity,-4C/5,PROJECTED_MOMENT_CONSISTENT,false,2026-06-26T12:46:14.316335+00:00
+SHELL3180_3_smooth_layer,finite thickness smoothing,"shell delta is replaced by layer D2[F] plus K_perp terms controlled by B'(r),B''(r)",projected moment remains -4C/5 if origin/exterior data are unchanged,same projected total; leakage norm still profile-dependent,SMOOTH_LAYER_REQUIRES_LEAKAGE_BOUND,false,2026-06-26T12:46:14.316335+00:00

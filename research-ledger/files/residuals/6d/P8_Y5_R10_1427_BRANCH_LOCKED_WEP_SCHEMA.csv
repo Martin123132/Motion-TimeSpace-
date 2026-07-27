@@ -1,0 +1,5 @@
+schema_id,object,required_in_files,rule,claim_allowed,valid_for_claim
+SCHEMA1427_0_branch_lock,same_parent_branch_id,all branch_locked_wep CSVs,all finite product rows must share one branch id or be refused,False,False
+SCHEMA1427_1_units,units/sign convention,C_parent; R_source; R_material; K_CMSM; product convention,no dimensionless product unless every factor declares units and conversion to eta,False,False
+SCHEMA1427_2_provenance,source_path,all claim-input files,every numeric row needs a local source path or URL/DOI provenance string,False,False
+SCHEMA1427_3_no_shortcut,shortcut guards,measured_G_guard; product convention; branch_id,"forbid tau=1, DD-as-MTS, unit source proxy, surrogate arrays as official, and measured-G absorption",False,False

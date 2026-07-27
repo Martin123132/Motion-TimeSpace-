@@ -1,0 +1,6 @@
+trigger_id,condition,bound_action,priority
+BT517_0_owner_match_fails,Gamma_eff owner or K_hat metric-response identity cannot be constructed,run q_loc residual-bound branch using P8_QLOC_BOUND_RUNNER_SPEC.csv,immediate
+BT517_1_Y5_unsolved,source-normalization even scalar theorem fails,fill c_domain_source_normalization_operator / measured-GM residual vector,high
+BT517_2_Y6_unsolved,extra stress invisibility theorem fails,retain T_extra residual vector and score PPN/operator rows,high
+BT517_3_boundary_no_flux_fails,boundary/domain metric-response flux survives,use compact-shell worst budget 7.432631961576971e-06 plus alpha3/PPN mapping,high
+BT517_4_PPN_lock_missing,Z variables cannot be proven equal to physical residual vector,do not use response-doublet theorem for local GR; score residual components directly,gate

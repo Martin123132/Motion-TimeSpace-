@@ -1,0 +1,5 @@
+timestamp_utc,branch_id,checkpoint_id,implication_id,statement,effect,current_status,claim_allowed,valid_for_claim
+2026-07-03T04:15:53+00:00,MTS_R2FR_Y5_MEMORY_FIXED_POINT_MINIMIZER_CONTRACT_4191,4191,IMP4191_0_exact_zero_branch,"If SIG4191_0 through SIG4191_7 are all parent-signed, then D_t Xi_0=0 and grad_perp Xi_0=0.",exact local scalar-memory silence,not currently active,False,False
+2026-07-03T04:15:53+00:00,MTS_R2FR_Y5_MEMORY_FIXED_POINT_MINIMIZER_CONTRACT_4191,4191,IMP4191_1_Gdot_channel,"C_Gamma_Gdot = c_Gamma D_t Xi_0, so exact D_t Xi_0=0 kills this residual.",local Gdot safety,conditional only,False,False
+2026-07-03T04:15:53+00:00,MTS_R2FR_Y5_MEMORY_FIXED_POINT_MINIMIZER_CONTRACT_4191,4191,IMP4191_2_preferred_location_channel,"C_Gamma_xi = c_Gamma L_loc |grad_perp Xi_0|, so exact grad_perp Xi_0=0 kills this residual.",preferred-location metric safety,conditional only,False,False
+2026-07-03T04:15:53+00:00,MTS_R2FR_Y5_MEMORY_FIXED_POINT_MINIMIZER_CONTRACT_4191,4191,IMP4191_3_current_branch,"Because the parent signature is unsigned, the 4190 finite profile bounds remain the operative local branch.",nonclaim fallback,active,False,False

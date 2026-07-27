@@ -1,0 +1,5 @@
+guard_id,risk,condition,bound_or_test,status,valid_for_claim
+SCH3245_0_full_matrix,single-mode truncation hides negative or flat orthogonal direction,full response Hessian block matrix is self-adjoint on V_Z,"compute Rayleigh lower bound on full M_AB, not just a preferred X direction",REQUIRED_GUARD,false
+SCH3245_1_schur,cross-coupling makes a positive diagonal block unstable,M_YY >= y0 I and Schur(M_X)=M_XX-M_XY M_YY^{-1} M_YX >= x0>0,"m0 >= min(y0,x0) under same norm; otherwise retain cross-block residual",FORMAL_TEST_DERIVED_INPUTS_MISSING,false
+SCH3245_2_source_projection,J_tot projects onto a kernel even if non-kernel modes are positive,Pi_kernel J_tot=0 or kernel sector is gauge/topological and not physical,"if not, amplitude bound has an unbounded kernel term",KERNEL_SOURCE_PROJECTION_OPEN,false
+SCH3245_3_boundary_domain,operator positive under one boundary/domain but evaluated under another,"same local collar/worldtube/domain used for M_AB, J_tot and q_loc arena",domain mismatch becomes eps_MAB_domain + eps_boundary_projector,DOMAIN_LOCK_OPEN,false

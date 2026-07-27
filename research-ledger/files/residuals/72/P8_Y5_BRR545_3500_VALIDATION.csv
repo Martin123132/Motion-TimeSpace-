@@ -1,0 +1,12 @@
+check_id,passed,detail,valid_for_claim
+VAL3500_0_sources_exist,True,all cited local source-register paths exist,False
+VAL3500_1_csv_parse,True,P8_Y5_R2FR_3500_SOURCE_REGISTER.csv:10; P8_Y5_R2FR_3500_CONSTANT_GREF_SIGNATURE.csv:4; P8_Y5_R2FR_3500_MUOBS_DERIVATIVE_IDENTITY.csv:4; P8_Y5_R2FR_3500_DERIVATIVE_CHANNEL_GATE.csv:7; P8_Y5_R2FR_3500_RESIDUAL_FILL_ROWS.csv:6; P8_Y5_R2FR_3500_DECISION_LEDGER.csv:4; P8_Y5_R2FR_3500_NEXT_TARGET.csv:1,False
+VAL3500_2_gref_candidate_zero,True,G_ref derivative silence is isolated as candidate zero only,False
+VAL3500_3_muobs_identity,True,master mu_obs derivative identity present,False
+VAL3500_4_channel_gates,True,channel_rows=7; blocking_rows=6,False
+VAL3500_5_residual_fill_nonclaim,True,fill_rows=6; all nonclaim,False
+VAL3500_6_missing_mu_extra_vector_recorded,True,primary epsilon_mu vector is recorded as absent instead of assumed,False
+VAL3500_7_no_claim,True,all generated rows valid_for_claim=false,False
+VAL3500_8_no_formalization_outputs,True,outputs stay under post-checkpoint-work/source-intake,False
+VAL3500_9_next_target,True,3501-Y5-R2FR-mu-extra-over-Gref-MH-vector-zero-or-coefficient-fill.md,False
+VAL3500_SUMMARY,True,PASS,False

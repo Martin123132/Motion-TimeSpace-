@@ -1,0 +1,6 @@
+row_id,component,formula,required_if_not_reset,numeric_value,status,valid_for_claim,timestamp_utc
+HSB3931_0_static,static memory amplitude,||X_mem|| <= (||J_open|| + B_lift)/lambda_gap,"source ||J_open||, B_lift, lambda_gap",,HELD_IN_RESERVE_IF_RESET_BRANCH_REJECTED_OR_NONLOCAL_ARENA,False,2026-07-01T11:42:02+00:00
+HSB3931_1_decay,dynamic history tail,||X_mem(t)|| <= exp(-gamma_mem Delta t)||X_mem(t0)|| + (1-exp(-gamma_mem Delta t))sup||J_open+B_lift||/lambda_gap,"source gamma_mem, Delta t, X_mem(t0), J_open+B_lift, lambda_gap",,HELD_IN_RESERVE_IF_RESET_BRANCH_REJECTED_OR_NONLOCAL_ARENA,False,2026-07-01T11:42:02+00:00
+HSB3931_2_kernel,nonlocal kernel tail,B_nonlocal_kernel,source compact-kernel norm or zero theorem,,HELD_IN_RESERVE_IF_RESET_BRANCH_REJECTED_OR_NONLOCAL_ARENA,False,2026-07-01T11:42:02+00:00
+HSB3931_3_observable,arena projection,|Delta O_i| <= K_i||X_mem|| + K_i_grad||grad X_mem||,source K_i and K_i_grad for R10/PPN/clock/orbital/WEP,,HELD_IN_RESERVE_IF_RESET_BRANCH_REJECTED_OR_NONLOCAL_ARENA,False,2026-07-01T11:42:02+00:00
+HSB3931_4_total,B_history,B_history := K_hist[exp(-gamma_mem Delta t)||X_mem(t0)|| + (1-exp(-gamma_mem Delta t))sup||J_open+B_lift||/lambda_gap] + B_nonlocal_kernel,absolute-sum no-cancellation if reset branch is rejected,,HELD_IN_RESERVE_IF_RESET_BRANCH_REJECTED_OR_NONLOCAL_ARENA,False,2026-07-01T11:42:02+00:00

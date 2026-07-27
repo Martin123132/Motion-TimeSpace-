@@ -1,0 +1,4 @@
+map_id,observable,formula,maps_to,assumptions,valid_for_claim
+WEP3342_0_eotvos_definition,eta_AB,eta_AB = 2(a_A-a_B)/(a_A+a_B),differential source/test response after common G_N calibration,weak-field local comparison branch; common environmental acceleration cancels in the differential ratio,false
+WEP3342_1_eta_species_channel,"eta_species(A,B)","|eta_species(A,B)| <= |eta_AB|/|R_AB|",FRV3340_1_eta_species component under a material response factor R_AB,no cancellation; R_AB derived from material charge/composition response or set to private unit response for smoke only,false
+WEP3342_2_no_cancellation,absolute source residual,component_contribution = abs(component_value * response_factor),3341 runner contract,ABS_SUM_NO_CANCELLATION; do not let opposite species channels cancel unless a parent theorem proves cancellation,false

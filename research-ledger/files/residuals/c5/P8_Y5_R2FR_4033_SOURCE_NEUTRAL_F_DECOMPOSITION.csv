@@ -1,0 +1,6 @@
+decomp_id,object,formula,meaning,status,valid_for_claim,timestamp_utc
+F4033_0_definition,phi source F,F:=Gamma_eff+C,the scalar charge is sourced by the integrated response part of Gamma_eff after subtraction,F_OBJECT_FIXED,False,2026-07-01T22:58:16+00:00
+F4033_1_vacuum_subtraction,fixed subtraction,"choose C=-Gamma_0, with Gamma_0 fixed by the vacuum/cosmology branch, not by the local source",then F=Gamma_eff-Gamma_0=gamma plus exact/topological remainder,BEST_SOURCE_NEUTRAL_ROUTE,False,2026-07-01T22:58:16+00:00
+F4033_2_response_field,response mode,gamma:=Gamma_eff-Gamma_0; local fixed branch requires gamma=0 and A_mu=0,"if the response fields are positive/no-source/no-flux, int_W F dV=0 follows",CONDITIONAL_RESPONSE_ZERO_ROUTE,False,2026-07-01T22:58:16+00:00
+F4033_3_exact_remainder,exact/topological pieces,F = gamma + div J_F + F_top + F_source_leak,divergence/topological terms are neutral only with fixed/no-flux boundary data,REMAINDER_SPLIT_WRITTEN,False,2026-07-01T22:58:16+00:00
+F4033_4_failure,source leakage,F_source_leak := F - gamma - div J_F - F_top,"any unneutralized matter-trace, boundary, or class charge sources Q_phi and activates alpha(lambda)",FAILURE_TERM_RETAINED,False,2026-07-01T22:58:16+00:00

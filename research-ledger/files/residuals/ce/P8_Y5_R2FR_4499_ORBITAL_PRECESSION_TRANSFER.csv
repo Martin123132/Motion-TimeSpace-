@@ -1,0 +1,4 @@
+orbital_id,observable,formula,substitution,numeric_j2_coefficient,source_status,numeric_ready,valid_for_claim
+ORB4499_0_nodal_precession,nodal precession,DeltaOmega_dot = -(3/2)*n*(R_source/[a*(1-e^2)])^2*cos(i)*DeltaJ2_shell,DeltaJ2_shell=s_J2*A_shell_surface*rho^3/two_epsilon_surface,"requires orbit n,a,e,i,R_source",STANDARD_J2_ORBIT_AVERAGE_FORMULA_STAGED,False,False
+ORB4499_1_pericenter_precession,argument of pericenter precession,Deltaomega_dot = (3/4)*n*(R_source/[a*(1-e^2)])^2*(5*cos(i)^2-1)*DeltaJ2_shell,DeltaJ2_shell=s_J2*A_shell_surface*rho^3/two_epsilon_surface,"requires orbit n,a,e,i,R_source",STANDARD_J2_ORBIT_AVERAGE_FORMULA_STAGED,False,False
+ORB4499_2_bound_inversion,orbit-specific shell amplitude bound,|A_shell_surface| <= two_epsilon_surface*|tau_orbital_Q|/|C_orbit_J2|,C_orbit_J2 is the nodal/pericenter coefficient multiplying DeltaJ2_shell,two_epsilon_surface=4.245005140290714e-06,INVERSION_DERIVED_ALLOWANCE_MISSING,False,False

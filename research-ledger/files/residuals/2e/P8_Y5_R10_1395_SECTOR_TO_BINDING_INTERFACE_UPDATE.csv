@@ -1,0 +1,6 @@
+interface_id,target,dependency,effect,current_status,claim_allowed,valid_for_claim
+STB1395_0_to_composition,MCM1394 composition rows,"beta_e, beta_nuc, beta_EM",composition rows cannot become scoreable until sector betas are zero/source-backed,COMPOSITION_PROMOTION_BLOCKED,False,False
+STB1395_1_to_binding,"BBR1394 beta_bind,S/T rows",sector beta vector and source/test fractions,"beta_bind,A=sum_i f_i,A beta_i remains formula-only",BINDING_PROMOTION_BLOCKED,False,False
+STB1395_2_to_beta_bulk,"BBS1393 beta_bulk,S/T rows","beta_bind,S/T plus common/action-weight beta pieces",beta_bulk rows remain missing and cannot promote the R10 template,BETA_BULK_PROMOTION_BLOCKED,False,False
+STB1395_3_to_EM_lock,EM-lock route,beta_EM,"if EM-lock closes, beta_EM can be zero-certified; until then EM/clock/WEP gates remain active",EM_LOCK_ROUTE_RETAINED_UNSIGNED,False,False
+STB1395_4_verdict,sector beta to binding interface,all sector beta rows,sector pack must close before binding/bulk/R10/local promotion,SECTOR_TO_BINDING_INTERFACE_READY_SCORING_BLOCKED,False,False

@@ -1,0 +1,7 @@
+input_id,input,definition,needed_for,current_value,source_requirement,valid_for_claim
+IN3255_0_Q_eff,Q_eff,effective charge or EM binding/source envelope feeding the Coulomb shell,CSE3255_0 through CSE3255_4,MISSING_Q_EFF_OR_MATERIAL_BINDING_MAP,"source profile, material EM binding model, or explicit neutralization/screening map",false
+IN3255_1_R_in,R_in,inner cutoff radius of static Coulomb shell,"finite U_EM_shell and finite G_J[EM,EM]",MISSING_R_IN_POSITIVE,"source worldtube radius, material cutoff, or q-basic collar inner radius",false
+IN3255_2_R_out,R_out,outer cutoff radius of static Coulomb shell,finite arena support and score comparability,MISSING_R_OUT_GT_R_IN,arena/collar outer radius or decay/truncation rule,false
+IN3255_3_epsilon0_or_unit_lock,epsilon0/kappa_EM/unit convention,unit and Maxwell normalization used by the observed EM stress,dimensionally meaningful CSE3255 formulas,MISSING_UNIT_LOCK,parent EM owner theorem or explicit SI/natural-unit scoring convention,false
+IN3255_4_tau_eobs,tau and e_obs frame,unit static observer and observed coframe defining J_EM and dV,C_frame and current norm,MISSING_TAU_EOBS_ARENA_LOCK,same-frame package from 3250 signed or specified as finite arena convention,false
+IN3255_5_screening_neutrality,screening/neutralization/material map,map from real material EM binding to the idealized Q_eff shell envelope,applying the envelope to WEP/local matter rather than a toy charged shell,MISSING_SCREENING_OR_BINDING_SOURCE,material composition/binding model or no-claim toy-envelope label,false

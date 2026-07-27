@@ -1,0 +1,9 @@
+component_id,symbol,score_term,zero_or_bound_condition,status,feeds,score_ready,claim_allowed,valid_for_claim,timestamp_utc
+EMV3962_0_visible_minimal,epsilon_EM_extra_hidden_source,0,ordinary Maxwell stress included in T_total/M_H with same *_obs,CLOSED_CONDITIONAL_ZERO,source stress,True,False,False,2026-07-01T15:07:23+00:00
+EMV3962_1_internal_exchange,epsilon_internal_exchange,0,matter-EM Lorentz exchange cancels inside total stress,CLOSED_BOOKKEEPING_ZERO,Bianchi/source conservation,True,False,False,2026-07-01T15:07:23+00:00
+EMV3962_2_hidden_F2,C_XF2_effective,|f_A| ||F^2|| + |g_A| ||F*F||,zero if Sigma-factor/no-Hom; otherwise coefficient and field norms required,BOUND_OR_ZERO,alpha; EM clocks; source leakage,True,False,False,2026-07-01T15:07:23+00:00
+EMV3962_3_Hodge,Delta_Hodge_EM,|*_EM-*_obs| or constitutive tensor difference,zero if EM Hodge is exactly observed coframe Hodge,HODGE_OWNER_LOCK_CONDITIONAL,Maxwell stress/source coupling,True,False,False,2026-07-01T15:07:23+00:00
+EMV3962_4_Poynting,Phi_EM_rad,|dU_EM/dt| + |int J.E dV|,zero on stationary isolated no-flux branch; otherwise energy/work bound,BOUND_OR_ZERO,boundary current; clocks/orbits,True,False,False,2026-07-01T15:07:23+00:00
+EMV3962_5_wEM,w_EM-1,|w_EM-1|,zero if unique Maxwell normalization owner fixes common F^2 coefficient,OWNER_LOCK_OPEN,alpha/charge normalization,False,False,False,2026-07-01T15:07:23+00:00
+EMV3962_6_CJQ,C_JQ,charge/current normalization ambiguity,"zero if A,J,current normalization and alpha readout are fixed together",OWNER_LOCK_OPEN,charge/current normalization,False,False,False,2026-07-01T15:07:23+00:00
+EMV3962_7_readout,C_EM_readout,readout/loop/spectroscopy regeneration,zero if readout closure preserves visible pullback and unique EM owner,READOUT_LOCK_OPEN,EM clocks; alpha,False,False,False,2026-07-01T15:07:23+00:00

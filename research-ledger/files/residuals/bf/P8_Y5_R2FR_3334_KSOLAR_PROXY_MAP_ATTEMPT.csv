@@ -1,0 +1,5 @@
+map_id,claim,map_condition,formula,status,valid_for_claim
+KMAP3334_0_core_statement,"core gravity says PPN gamma,beta = 1 + O(K^m) with K_solar~1e-61 and m>=2",the local Gamma residual entering PPN must be the same curvature-saturation response S(K),K_solar^m <= 1.000e-122,SOURCE_STATEMENT_IMPORTED,false
+KMAP3334_1_required_parent_map,Gamma_local -> S(K_local)=K_local^m/(1+K_local^m),Gamma_G functional and local PPN readout must reduce to the same saturation scalar in the weak-field solar patch,R_Gamma_PPN <= A_K S(K_solar) <= A_K K_solar^m,MAP_NOT_SIGNED,false
+KMAP3334_2_proxy_guard,K_solar^m cannot bound psi tree or composite tails,"proxy applies only to the Gamma/saturation channel after a Gamma->K map, not to public psi residues",epsilon_eff_PPN and epsilon_composite_PPN remain separate floors,NO_CROSS_APPLICATION_GUARD,false
+KMAP3334_3_partial_result,K_solar path is promising but not enough to remove Gamma floor,no parent-owned equality Gamma_residual = S(K_solar) found in current source sweep,"retain min-style fork: R_Gamma <= min_if_signed(A_Gamma Gamma_local L^2, A_K K_solar^m), otherwise keep explicit R_Gamma",NONCLAIM_PROMISING_FORK,false

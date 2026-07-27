@@ -1,0 +1,6 @@
+sign_id,quantity,signing,residual_if_failed,status,valid_for_claim
+CEN3327_0_mean_zero,delta_mean_i,signed zero at smoothing-kernel level if pi=psi-S_ell psi and arena uses the same local kernel,kernel mismatch or boundary leakage moves leftover into epsilon_boundary_i,SIGNED_CONDITIONAL_ON_KERNEL_MATCH,false
+CEN3327_1_skew_suppression,delta_skew_i,delta_skew_i <= C3_i/sqrt(N_eff_i)+delta_bias_i,non-Gaussian local skew enters epsilon_1p_i,BOUND_SIGNED_NOT_NUMERIC,false
+CEN3327_2_projection_leak,rho_P1_i,rho_P1_i=0 if P1_i respects pi->-pi parity; otherwise retain rho_P1_i as an arena projection defect,quadratic operator leaks into one-particle arena,CONDITIONAL_ZERO_OR_NUISANCE,false
+CEN3327_3_two_particle_branch,epsilon_2p_i(lambda),"requires spectral envelope dmu_2(s) or gap m_gap_2pi; absent gap, do not claim long-range silence",two-particle composite tail remains explicit,SPECTRAL_INPUT_REQUIRED,false
+CEN3327_4_contact_boundary,epsilon_contact_i + epsilon_boundary_i + epsilon_kernel_aniso_i,"zero only with source-support absorption, boundary silence, and isotropic kernel",carry as absolute no-cancellation envelope,EXPLICIT_TAIL_ENVELOPE,false

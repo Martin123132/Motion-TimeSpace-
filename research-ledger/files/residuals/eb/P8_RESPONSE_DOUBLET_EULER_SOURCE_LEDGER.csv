@@ -1,0 +1,8 @@
+component_id,source_problem,variation_status,required_theorem,fallback
+Y0_trace_expansion,matter trace can be exchange-even and source scalar response,not_zeroed,matter sees only even quotient and trace residual is truly odd parent variable,trace-load/source-current residual
+Y1_coherent_projector,projector stress/ownership and trace-STF split are open,not_zeroed,topological/projector parent ownership and metric-stress accounting,retained projector stress ledger
+Y2_boundary_flux,boundary/collar odd charge can survive,conditional_route,local compact boundary odd charge zero and no-flux boundary response,W_boundary_alpha3_epsilon_boundary_flux
+Y3_domain_vector,domain vector can be covariant and still PPN-visible,conditional_best,scalar/topological domain selector and local odd vector class zero,W_domain_alpha1/alpha2/alpha3 products
+Y4_domain_STF_stress,STF/tidal stress can be conserved and nonzero,not_zeroed,topological/isotropic invisible STF stress theorem,W_domain_xi_epsilon_domain_anisotropy plus T_extra
+Y5_source_normalization,measured GM/source normalization is naturally exchange-even,hard_fail_current,even EH source only plus all non-EH normalization offsets odd/local-zero or coefficient-bounded,c_domain_source_normalization_operator or measured-GM residual vector
+Y6_stress_Bianchi,Bianchi-owned extra stress can be exchange-even and nonzero,retained_debt,extra stress topological/invisible or explicitly below PPN bounds,retained T_extra residual vector

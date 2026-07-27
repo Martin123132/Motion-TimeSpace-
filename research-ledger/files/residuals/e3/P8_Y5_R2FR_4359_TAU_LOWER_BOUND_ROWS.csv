@@ -1,0 +1,5 @@
+tau_id,statement,definitions,result,status,valid_for_claim
+TLB4359_0_pairing_definition,"tau_WEP = N_eta^-1 <K_CMSM, V_ST>","V_ST := S_Earth x M_TiPt after source-worldtube, material-response and orbit/readout conventions are fixed",formal pairing only,DEFINITION_SHARPENED_NOT_EVALUATED,False
+TLB4359_1_sufficient_lower_bound,"if ||K_CMSM|| >= k_min, ||S_Earth|| >= s_min, ||M_TiPt|| >= m_min, |cos(theta)| >= c_min > 0, and N_eta <= N_max, then |tau_WEP| >= k_min*s_min*m_min*c_min/N_max",cos(theta) is the branch-locked alignment between the readout functional and the source-material vector,tau_min := k_min*s_min*m_min*c_min/N_max,CONDITIONAL_THEOREM_DERIVED,False
+TLB4359_2_nonzero_not_enough,"nonzero readout, source and material norms alone do not imply tau_WEP != 0",V_ST can lie in ker(K_CMSM) or cancel under signed orbit/readout averaging,alignment/non-null proof is mandatory,NO_SHORTCUT_LEMMA,False
+TLB4359_3_current_verdict,"current corpus lacks official K_CMSM, source worldtube, material tensor, normalization and c_min proof",all must be fixed before WEP scoring,NO_NUMERIC_TAU_MIN,TAU_MIN_NOT_DERIVED,False

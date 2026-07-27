@@ -1,0 +1,7 @@
+same_parent_branch_id,gate_id,forbidden_shortcut,reason,status,valid_prediction_row,valid_for_claim,claim_allowed
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,TAUG1456_0_no_tau_unity,set tau_WEP=1,"tau_WEP is a source/orbit/readout functional, not a unit convention",ENFORCED,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,TAUG1456_1_no_surrogate_claim,use surrogate gx/gz/Sxx/Sxz as official arrays,surrogates are plumbing diagnostics only,ENFORCED,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,TAUG1456_2_no_G_absorption,absorb relative source-weight residual into measured GM/G,common-mode calibration cannot hide composition/source-dependent residuals,ENFORCED,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,TAUG1456_3_no_mask_domain,let masks/worldtube support define parent variation domain,masks/worldtubes must be downstream windows unless parent-signed otherwise,ENFORCED,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,TAUG1456_4_no_cancellation,cancel signs/material terms by hand,absolute-product guard applies without signed material model,ENFORCED,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,TAUG1456_5_no_branch_mixing,"mix tau_WEP, Delta_w, and C_parent rows from different branches",same_parent_branch_id and branch classifier required,ENFORCED,False,False,False

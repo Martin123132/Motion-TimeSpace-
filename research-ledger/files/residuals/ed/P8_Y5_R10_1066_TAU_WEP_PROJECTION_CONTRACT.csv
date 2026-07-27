@@ -1,0 +1,9 @@
+contract_id,input,required_form,current_status,blocks,valid_for_claim,generated_utc
+TWP1066_0_source_worldtube,Earth/source worldtube and source stress profile,"T_source^Earth(x) in observed local frame, with composition/source-weight convention",missing,tau_WEP normalization,false,2026-06-14T10:37:12.951504+00:00
+TWP1066_1_orbit_average,MICROSCOPE orbit and averaging convention,time/orbit average of differential acceleration channel in the same convention as eta_AB,missing,projection from local source profile to observed eta_AB,false,2026-06-14T10:37:12.951507+00:00
+TWP1066_2_observed_coframe,observed coframe/readout frame,"same e_obs for force law, clocks, source variation, and readout",conditional_from_prior_spine,frame consistency of tau_WEP,false,2026-06-14T10:37:12.951509+00:00
+TWP1066_3_material_response,test-body material/source tensor,"Ti/Pt material response to relative source-weight channel, not just alpha/Coulomb charge",material_pair_only,full Delta_w_TiPt mapping,false,2026-06-14T10:37:12.951512+00:00
+TWP1066_4_force_readout,differential acceleration readout map,map from parent source residual to eta_AB with units and sign/absolute convention,missing,scoreable WEP product,false,2026-06-14T10:37:12.951514+00:00
+TWP1066_5_no_unity_shortcut,tau_WEP value,"numeric sourced value, theorem-zero, or explicit retained nuisance with prior",unity_forbidden,cannot set tau_WEP=1,false,2026-06-14T10:37:12.951516+00:00
+TWP1066_6_no_cancellation,sign/material cancellation,absolute product bound unless a signed material model is fully derived and sourced,absolute_guard_enforced,cannot hide product by cancellation,false,2026-06-14T10:37:12.951519+00:00
+TWP1066_7_verdict,tau_WEP projection,"tau_WEP = functional[source worldtube, orbit average, e_obs, material tensor, force readout]",PROJECTION_CONTRACT_WRITTEN_NOT_DERIVED,finite Delta_w prior width and WEP runner scoring,false,2026-06-14T10:37:12.951521+00:00

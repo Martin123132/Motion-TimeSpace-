@@ -1,0 +1,6 @@
+update_id,runner_field,rule,source_logic,status,valid_for_claim,timestamp_utc
+RUNU3876_0_zg_previous,z_g_active,z_Qstar+z_Noether+z_readout+z_measure/source_slot+z_rad,from 3875,previous active current law,False,2026-07-01T06:47:57+00:00
+RUNU3876_1_zqstar_insert,z_Qstar,z_Qstar=0 only under QNT3876_0; otherwise |z_Qstar|<=b_Qstar,3876,insert b_Qstar into runner,False,2026-07-01T06:47:57+00:00
+RUNU3876_2_updated_runner,z_g_active,|z_g_active| <= b_Qstar+b_Noether+b_readout+b_source_slot+b_rad,no-cancellation finite runner branch,RUNNER_SCHEMA_REFINED,False,2026-07-01T06:47:57+00:00
+RUNU3876_3_alpha_guard,b_alpha_active,b_alpha_active=2 z_g_active-s_XF2_active,unchanged identity,F2 cannot be isolated until b_Qstar and z_g components close,False,2026-07-01T06:47:57+00:00
+RUNU3876_4_no_claim,claim_allowed,false until b_Qstar and every z_g/s_XF2/b_alpha domain row is parent-zero or source-backed,acceptance policy,NO_CLAIM,False,2026-07-01T06:47:57+00:00

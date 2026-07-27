@@ -1,0 +1,11 @@
+row_id,symbol,units,definition_or_bound,source_or_zero_rule,numeric_value,status,valid_for_claim,timestamp_utc
+ESC3922_0_boundary_P00,P00_boundary,scalar_source_norm,boundary scalar/vector/shear feed into Xi_N,zero by BOUNDARY_CERT or numeric boundary integral,,ZERO_OR_BOUND_REQUIRED,False,2026-07-01T11:01:12+00:00
+ESC3922_1_projector_P00,P00_projector,scalar_source_norm,projector variation source,"zero by PROJECTOR_CERT or bound delta Pi_M/[d,Pi_M] terms",,ZERO_OR_BOUND_REQUIRED,False,2026-07-01T11:01:12+00:00
+ESC3922_2_domain_P00,P00_domain,scalar_source_norm,domain/support selector source,zero by q-basic fixed domain or operator norm bound,,ZERO_OR_BOUND_REQUIRED,False,2026-07-01T11:01:12+00:00
+ESC3922_3_history_P00,P00_history,scalar_source_norm,memory/history tail source,zero only with no incoming tail; otherwise 3895 suppression law,,ZERO_OR_BOUND_REQUIRED,False,2026-07-01T11:01:12+00:00
+ESC3922_4_nonlocal_P00,P00_nonlocal,scalar_source_norm,nonlocal kernel/common-mode tail,zero by compact-local kernel silence or numeric norm,,ZERO_OR_BOUND_REQUIRED,False,2026-07-01T11:01:12+00:00
+ESC3922_5_harmonic_boundary,B_harmonic_boundary,potential_multipole_norm,free exterior harmonic boundary data,zero by fixed/silent boundary data or bounded amplitude,,ZERO_OR_BOUND_REQUIRED,False,2026-07-01T11:01:12+00:00
+ESC3922_6_multipole_total,A_multi,potential_multipole_norm,"A_multi := sum_{l>=1,m}|a_l| <= G_ext*(|P00_boundary|+|P00_projector|+|P00_domain|+|P00_history|+|P00_nonlocal|)+B_harmonic_boundary",absolute-sum guard,,ZERO_OR_BOUND_REQUIRED,False,2026-07-01T11:01:12+00:00
+ESC3922_7_derivative_hair,B_deriv,mixed_derivative_norm,B_deriv := |partial_t xi_1| + |partial_r xi_1| + |Delta_AB xi_1| + |delta_frame xi_1|,time/radial/source/frame derivative guard,,ZERO_OR_BOUND_REQUIRED,False,2026-07-01T11:01:12+00:00
+ESC3922_8_projector_domain_total,epsilon_domain_projector_abs,dimensionless,epsilon_domain_projector_abs <= sum(abs(DPOB3431_0..DPOB3431_3)),3431 fallback bound,,ZERO_OR_BOUND_REQUIRED,False,2026-07-01T11:01:12+00:00
+ESC3922_9_total,B_escape,dimensionless_or_normalized_vector,B_escape := |Delta_sq|/(1+xi_1)^2 + |epsilon_r| + A_multi + B_deriv + epsilon_domain_projector_abs,local-GR escape envelope; no cancellation,,ZERO_OR_BOUND_REQUIRED,False,2026-07-01T11:01:12+00:00

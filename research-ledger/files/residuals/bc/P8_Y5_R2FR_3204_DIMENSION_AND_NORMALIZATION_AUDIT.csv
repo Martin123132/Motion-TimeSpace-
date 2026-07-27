@@ -1,0 +1,7 @@
+dim_id,quantity,dimension_L_power,source_or_reason,gate_status,valid_for_claim,generated_utc
+DIM3204_00_Kperp,K_perp,-2,inherits [K_hat]=L^-2 from parent-equations v1,source_backed_dimension,false,2026-06-26T19:49:10.820091+00:00
+DIM3204_01_ellT,ell_T,1,new tensor smoothing/coarse-graining length in private extension candidate,new_parameter_needs_parent_or_empirical_bound,false,2026-06-26T19:49:10.820091+00:00
+DIM3204_02_DT,D_T = 1 - ell_T^2 Delta_perp,0,"Delta_perp has L^-2, so ell_T^2 Delta_perp is dimensionless",dimensionally_consistent,false,2026-06-26T19:49:10.820091+00:00
+DIM3204_03_action_bracket,"eta_T ell_T^2 <D_T K_perp,D_T K_perp>",-2,"ell_T^2 gives L^2 and <K,K> gives L^-4; bracket matches curvature dimension L^-2 before 1/kappa_GR",dimensionally_consistent,false,2026-06-26T19:49:10.820091+00:00
+DIM3204_04_sigma,Sigma_perp,-2,"D_T^dagger D_T K_perp has L^-2, so source must match",dimensionally_consistent_but_unsourced,false,2026-06-26T19:49:10.820091+00:00
+DIM3204_05_eta,eta_T,0,dimensionless positive stiffness weight,new_parameter_needs_parent_normalization,false,2026-06-26T19:49:10.820091+00:00

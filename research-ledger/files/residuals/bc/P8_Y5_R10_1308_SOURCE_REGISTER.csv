@@ -1,0 +1,15 @@
+source_id,local_path,needle,role,valid_for_claim,claim_allowed,exists,needle_found
+SRC1308_0_1307_next,source-intake/mts_residuals/P8_Y5_R10_1307_NEXT_TARGET.csv,NEXT1307_0_1308,handoff into source/test charge zero-or-bound,False,False,True,True
+SRC1308_1_1307_transfer,source-intake/mts_residuals/P8_Y5_R10_1307_TRANSFER_RESIDUAL_LEDGER_NONCLAIM.csv,TRL1307_2_Qc_source_charge,canonical transferred source/test/projection residuals,False,False,True,True
+SRC1308_2_1307_alpha,source-intake/mts_residuals/P8_Y5_R10_1307_ALPHA_TRANSFER_AUDIT.csv,ZERO_ROUTE_UNCHANGED_BY_CANONICALIZATION,alpha zero route after Z_m canonicalization,False,False,True,True
+SRC1308_3_alpha_inputs,source-intake/mts_residuals/P8_Y5_R10_ALPHA_LAW_PARENT_INPUTS.csv,PI560_4_qtest,"parent alpha inputs for J, Q, q, PiM, measured GM",False,False,True,True
+SRC1308_4_alpha_derivation,source-intake/mts_residuals/P8_Y5_R10_SOURCE_NORMALIZED_ALPHA_DERIVATION_ATTEMPT.csv,alpha_X=0 if Pi_M^H Q_X^H=0 or q_X^T=0,exact alpha zero conditions,False,False,True,True
+SRC1308_5_1042_source_zero,source-intake/mts_residuals/P8_Y5_R10_1042_SOURCE_ZERO_CLAUSE_AUDIT.csv,FAIL_CURRENT_CLAIM_JX_ZERO_NOT_SIGNED,source zero route is not parent signed,False,False,True,True
+SRC1308_6_618_source_zero,source-intake/mts_residuals/P8_Y5_R10_618_SOURCE_ZERO_CERTIFICATE_AUDIT.csv,SZ618_0_qbar_XT_chain_rule,conditional qbar_XT zero route and source zero certificate audit,False,False,True,True
+SRC1308_7_670_no_pole,source-intake/mts_residuals/P8_Y5_R10_670_NO_POLE_QUOTIENT_PROOF_CHAIN.csv,NQ670_5_matter_descent,matter descent route for qbar_XT=0 remains constants-open,False,False,True,True
+SRC1308_8_670_effect,source-intake/mts_residuals/P8_Y5_R10_670_R10_R11_ZERO_OR_RESIDUAL_EFFECT.csv,MISSING_MATTER_CONSTANT_OWNERSHIP,test charge zero is blocked by material/constant ownership,False,False,True,True
+SRC1308_9_source_norm_stack,source-intake/mts_residuals/P8_SOURCE_NORMALIZATION_THEOREM_STACK.csv,S5_Newton_gate,source-normalized Newton gate fails current corpus,False,False,True,True
+SRC1308_10_source_norm_950,source-intake/mts_residuals/P8_Y5_R10_950_SOURCE_NORMALIZATION_LEMMA_ATTEMPT.csv,species-weighted source current,countermodel blocks covariance-only source universality,False,False,True,True
+SRC1308_11_newton_norm,source-intake/mts_residuals/P8_Y5_R10_868_NEWTON_SOURCE_NORMALIZATION_CONTRACT.csv,NS868_2_source_charge_universality,Newton source charge universality remains open,False,False,True,True
+SRC1308_12_boundary_gate,source-intake/mts_residuals/P8_Y5_R10_671_BOUNDARY_CHARGE_OWNER_GATE.csv,BCG671_7_verdict,boundary source charge zero not passed,False,False,True,True
+SRC1308_13_projection_gate,source-intake/mts_residuals/P8_Y5_R10_672_PROJECTOR_ORTHOGONALITY_ATTEMPT.csv,PO672_6_verdict,projector orthogonality route not passed,False,False,True,True

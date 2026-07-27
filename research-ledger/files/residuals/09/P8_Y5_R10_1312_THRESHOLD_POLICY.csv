@@ -1,0 +1,4 @@
+policy_id,threshold,source_family,allowed_use,forbidden_use,status,valid_for_claim,claim_allowed
+TP1312_0_DD_alpha,abs(c_alpha_DD) <= 8.3202449332435330e-10,1096/1097/1098/1110/1218 threshold rows,private acceptance fence after MTS coefficient exists,do not treat as b_alpha/c_alpha prediction or prior selected by theory,THRESHOLD_ONLY_NONCLAIM,False,False
+TP1312_1_clock_product,abs(b_alpha*tau_clock_time) <= 2.1e-18 yr^-1,1051/1052/1102 clock product rows,nonclaim product pressure on a future clock product prediction,do not divide by guessed tau_clock or transfer to WEP/R10,PRODUCT_BOUND_NONCLAIM,False,False
+TP1312_2_WEP_product,abs(P_WEP_alpha) <= 4.7977805227320001e-05,1052/1102 WEP alpha/Coulomb target rows,nonclaim pressure target for future source-backed WEP product,"do not set beta_source_alpha=1, tau_WEP=1, or use pair tuning",PRODUCT_TARGET_NONCLAIM,False,False

@@ -1,0 +1,6 @@
+decision_id,condition,mathematical_consequence,route,current_status,valid_for_claim
+RZD4522_0_finite_rank,rank(Z_AB)>0 with positive generalized eigenvalues,finite-range/spectral field exists,run alpha(lambda)/residual scorer,NOT_SELECTED,False
+RZD4522_1_rank_zero_locked,rank(Z_AB)=0 and M_AB invertible/coercive or constraint-owned,algebraic rank-zero route exists,prove RHS zero termwise,CONDITIONAL_NOT_SIGNED,False
+RZD4522_2_rhs_zero,J_retained=B=CDB=R=0 in same branch,Z=0 if M lock holds,local residual zero theorem,CONDITIONAL_NOT_SIGNED,False
+RZD4522_3_null_M,M_AB has null/wrong-sign directions not gauge/constraint-owned,rank-zero route fails or becomes unstable/underdetermined,reject branch or score finite residuals,NOT_EXCLUDED,False
+RZD4522_4_current_verdict,current corpus,conditional theorem complete but parent signature absent,4523-Y5-R2FR-same-branch-parent-signature-audit-or-first-alpha-runner.md,NO_CLAIM,False

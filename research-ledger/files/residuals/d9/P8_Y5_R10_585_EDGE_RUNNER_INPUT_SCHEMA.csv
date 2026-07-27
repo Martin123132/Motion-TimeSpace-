@@ -1,0 +1,16 @@
+column,purpose,edge_branch_status
+model_id,names the theory branch,required
+branch_id,names the residual/zero route,required
+curve_id,groups rows into a sampled alpha(lambda) curve,required
+lambda_value,edge support/range ordinate,required
+lambda_units,units convertible to meters,required
+alpha_predicted,numeric alpha for runner validation; symbolic rows must stay nonclaim,required
+alpha_bound,optional row-level bound annotation; runner interpolates external bound file,required
+alpha_bound_source,bound provenance,required
+force_law_form,Yukawa/edge/envelope form,required
+derivation_status,must distinguish source-backed from smoke/template,required
+formula_reference,checkpoint formula source,required
+source_file,local source for coefficients,required
+assumptions,same-frame and no-double-count assumptions,required
+valid_for_claim,must be true only after all inputs are numeric/source-backed,required
+notes,blockers and provenance caveats,required

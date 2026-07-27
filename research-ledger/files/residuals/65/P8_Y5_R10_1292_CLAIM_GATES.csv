@@ -1,0 +1,6 @@
+gate_id,claim,current_status,reason,valid_for_claim,claim_allowed
+CG1292_0_sources,private source-match provenance,SATISFIED_FOR_PRIVATE_CHECKPOINT,registered local source paths and anchors are validated,False,False
+CG1292_1_strict_F_adoption,strict F=(m-m*)^2H source-matched,BLOCKED_GENERIC_F_ONLY,"actual generic Gamma source exists, but strict F form is not sourced as current MTS",False,False
+CG1292_2_m_Lcg_parent,m and L_cg parent definitions are sourced,BLOCKED_PARENT_DEFINITIONS_MISSING,m lock/profile and L_cg transition-scale ownership are still open,False,False
+CG1292_3_residual_runner,residual runner can score local tests,BLOCKED_INPUT_TEMPLATES_ONLY,runner rows are schema-ready but still contain MISSING inputs and no response matrix,False,False
+CG1292_4_local_GR,local GR/Newton/PPN recovery,BLOCKED_NONCLAIM,strict adoption failed and residual runner inputs are not numeric/theorem complete,False,False

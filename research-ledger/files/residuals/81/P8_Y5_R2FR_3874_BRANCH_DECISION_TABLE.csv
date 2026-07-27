@@ -1,0 +1,5 @@
+branch_id,branch,condition,consequence,status,valid_for_claim,timestamp_utc
+BRD3874_0_derived_parent,derived-parent EM branch,parent image/fullness + fixed T_Q norm + same-current + readout stability,sets active EM normalization residuals to zero,BEST_BUT_UNSIGNED,False,2026-07-01T06:39:05+00:00
+BRD3874_1_calibrated_local,calibrated local Maxwell branch,measured alpha/mu0 are universal q-basic inputs; retain active residuals only,lets local GR reduction proceed without absolute-alpha overclaim,DEFAULT_WORKING_BRANCH,False,2026-07-01T06:39:05+00:00
+BRD3874_2_active_bound,finite active-residual branch,"use clock/WEP/R10/PPN/orbital source rows for s_XF2_active,z_g_active,C_XF2_active,CJQ",empirical robustness path if theorem route stalls,BOUND_BRANCH_READY,False,2026-07-01T06:39:05+00:00
+BRD3874_3_reject_shortcut,reject alpha-only shortcut,b_alpha_active=2z_g_active-s_XF2_active,alpha data cannot bound F2 unless z_g/current normalization is also zeroed or bounded,GUARD_ACTIVE,False,2026-07-01T06:39:05+00:00

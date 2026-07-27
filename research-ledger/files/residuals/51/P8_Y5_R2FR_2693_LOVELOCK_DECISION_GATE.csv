@@ -1,0 +1,6 @@
+gate_id,condition,current_status,source_anchor,decision,gate_pass,valid_for_claim,claim_allowed,timestamp_utc
+LDG2693_0_lovelock_proof,all LHP2693 hypotheses parent-signed,FAIL,LHP2693_7_verdict,Lovelock theorem cannot be promoted as MTS derivation,false,false,false,2026-06-23T07:40:09.356000+00:00
+LDG2693_1_positive_operator_repair,all extra sectors have positive/no-source/zero-flux or topology certificates,FAIL,POS2693_5_verdict;SCR2693_9_verdict,metric-only/local/second-order repair not complete,false,false,false,2026-06-23T07:40:09.356005+00:00
+LDG2693_2_residual_acquisition,every failed sector has explicit acquisition row,PASS_NONCLAIM,ACQ2693_0 through ACQ2693_9,fallback route is well-defined but not score-ready,true,false,false,2026-06-23T07:40:09.356008+00:00
+LDG2693_3_no_shortcuts,"no EH axiom, cancellation, or fitted-GM backfill",PASS_GUARD_ONLY,DRY2693_*,guardrails remain active,true,false,false,2026-06-23T07:40:09.356011+00:00
+LDG2693_4_verdict,Lovelock hypothesis prover can claim local GR,CLAIM_BLOCKED,LDG2693_0 through LDG2693_3,move to sector-specific certificate proof or fill residual rows,false,false,false,2026-06-23T07:40:09.356014+00:00

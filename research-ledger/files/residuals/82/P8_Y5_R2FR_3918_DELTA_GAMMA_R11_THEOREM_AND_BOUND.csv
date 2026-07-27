@@ -1,0 +1,7 @@
+row_id,piece,formula_or_statement,meaning,status,numeric_value,score_ready,valid_for_claim,timestamp_utc
+GAM3918_0_slip_equation,traceless slip equation,C_TF nabla^2(Psi_R11-Phi_R11) = -kappa_R P_TF[R11_ij],derived symbolic reduction from 1944,DERIVED_INPUT,,False,False,2026-07-01T10:42:35+00:00
+GAM3918_1_slip_solution,formal slip solution,Psi_R11-Phi_R11 = -(kappa_R/C_TF) nabla^{-2} P_TF[R11_ij],inverse-Laplacian domain remains an explicit bound input,FORMAL_SOLUTION,,False,False,2026-07-01T10:42:35+00:00
+GAM3918_2_source_law,gamma source law,delta_gamma_R11 ~= -(kappa_R/(C_TF*U)) nabla^{-2} P_TF[R11_ij],maps P_TF source directly to Cassini-style gamma residual,SYMBOLIC_BOUND_READY,,False,False,2026-07-01T10:42:35+00:00
+GAM3918_3_theorem_zero,gamma theorem-zero consequence,P_TF[R11_ij]=0 => Psi_R11-Phi_R11=0 => delta_gamma_R11=0,"valid in EH-absence, double-zero, or strict-isotropy/no-shear route",CONDITIONAL_ZERO_FOR_GAMMA_R11,,True,False,2026-07-01T10:42:35+00:00
+GAM3918_4_bound,fallback absolute bound,|delta_gamma_R11| <= |kappa_R|/(|C_TF| |U_min|) ||nabla^{-2} P_TF[R11_ij]||,used when P_TF is not theorem-zero,BOUND_FORMULA_TIGHTENED,,False,False,2026-07-01T10:42:35+00:00
+GAM3918_5_common_mode_guard,not a full local-GR proof,Phi_R11=Psi_R11 may survive as common mode even when delta_gamma_R11=0,send common mode to Newton/ephemeris/beta gates,NO_FULL_CLAIM,,False,False,2026-07-01T10:42:35+00:00

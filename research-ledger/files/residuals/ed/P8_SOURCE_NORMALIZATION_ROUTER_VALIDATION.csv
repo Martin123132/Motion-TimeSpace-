@@ -1,0 +1,7 @@
+rule_id,rule,result,evidence,claim_effect
+V497_0_sources,all cited source paths exist,pass,missing_sources=0,traceability only
+V497_1_inputs_loaded,"496 minimum rows, missing ledger, and acceptance gates are loaded",pass,minimum_rows=8;missing_rows=16;gate_rows=6,router tied to 496
+V497_2_route_coverage,all eight channels have route classifications,pass,absolute_calibration_offset;boundary_monopole_shift;bulk_X_Yukawa_tail;domain_projector_mass;nonEH_operator_potential;radial_Meff_hair;species_source_charge;time_drift,no hidden channel
+V497_3_zero_target_coverage,all eight channels have derived-zero theorem targets,pass,absolute_calibration_offset;boundary_monopole_shift;bulk_X_Yukawa_tail;domain_projector_mass;nonEH_operator_potential;radial_Meff_hair;species_source_charge;time_drift,derivation targets explicit
+V497_4_numeric_template_coverage,all eight channels have numeric/input templates,pass,absolute_calibration_offset;boundary_monopole_shift;bulk_X_Yukawa_tail;domain_projector_mass;nonEH_operator_potential;radial_Meff_hair;species_source_charge;time_drift,test branch explicit
+V497_5_no_claim_rows,"no route, theorem, or numeric row is claim-valid",pass,claim_route_rows=0;claim_zero_rows=0;claim_numeric_rows=0,no Newton/local-GR promotion

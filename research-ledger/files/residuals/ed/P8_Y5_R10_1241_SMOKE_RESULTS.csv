@@ -1,0 +1,6 @@
+case_id,branch_type,q_R_hat,gamma_minus_1_QR,abs_gamma_minus_1_QR,N_sigma,sigma_gamma,pass_rule_evaluated,raw_numeric_pass,runner_status,refusal_or_status_reason,valid_for_claim,claim_allowed
+CASE1241_0_closure_zero,closure_benchmark,0,-0.0,0.0,MISSING_STATISTICAL_POLICY,2.3e-5,False,False,REFUSED_CLOSURE_NOT_EVIDENCE,closure q_R=0 may be displayed as private baseline but cannot pass as evidence,False,False
+CASE1241_1_finite_missing_qR,finite_residual,MISSING_QR_VALUE,,,MISSING_STATISTICAL_POLICY,2.3e-5,False,False,REFUSED_MISSING_QR,finite residual row lacks numeric q_R_hat or derived zero theorem,False,False
+CASE1241_2_comparator_only,finite_residual,MISSING_QR_VALUE,,,1,2.3e-5,False,False,REFUSED_COMPARATOR_ONLY,Cassini comparator exists but no MTS q_R_hat prediction/value is supplied,False,False
+CASE1241_3_numeric_no_policy,finite_residual,1.0e-5,-5e-06,5e-06,MISSING_STATISTICAL_POLICY,2.3e-5,False,False,REFUSED_MISSING_STATISTICAL_POLICY,numeric q_R_hat exists but no N_sigma/sigma_gamma pass policy is supplied,False,False
+CASE1241_4_hypothetical_numeric,finite_residual,1.0e-5,-5e-06,5e-06,1,2.3e-5,True,True,SCHEMA_MATH_ONLY_NOT_EVIDENCE,synthetic value exercises arithmetic only; it is not a sourced MTS prediction,False,False

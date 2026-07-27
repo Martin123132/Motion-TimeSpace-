@@ -1,0 +1,9 @@
+checkpoint,formula_id,formula,basis,status,valid_for_claim,claim_allowed,timestamp_utc
+4640,F4640_0_pair,Xi_BT := Xi_boundary_history + Xi_transition_inner,4639 two-component remaining tail,DEFINED,False,False,2026-07-06T19:45:34.931348+00:00
+4640,F4640_1_Qedge_shell,|Q_edge_shell| <= W_lambda_edge_max Phi_edge (rho_H_trace_norm V_n_bound + mu_birth_TV),4609 Reynolds shell row,BOUND_READY_VALUES_MISSING,False,False,2026-07-06T19:45:34.931348+00:00
+4640,F4640_2_Qedge_boundary,|Q_edge_boundary| <= |B_X_flux|+|C_corner|+|E_reference_edge|+|F_side_source|+|F_rad|+|E_projector_edge|,4609 Hamiltonian boundary part,BOUND_READY_VALUES_MISSING,False,False,2026-07-06T19:45:34.931348+00:00
+4640,F4640_3_boundary_bound,|Xi_boundary_history| <= K_edge(|Q_edge_shell| + |Q_edge_boundary|),Q_edge projected into current R10 Xi_tail normalization,BOUND_READY_KEDGE_AND_COMPONENT_VALUES_MISSING,False,False,2026-07-06T19:45:34.931348+00:00
+4640,F4640_4_transition_hair,epsilon_tr_hair <= Y_nonHilbert + Delta_Wtr + Y_time_l + Y_species_frame + Y_range + Y_nonEH + Y_boundary_nonlocal,4355 finite source-hair vector,BOUND_READY_VALUES_MISSING,False,False,2026-07-06T19:45:34.931348+00:00
+4640,F4640_5_transition_bound,|Xi_transition_inner| <= K_tr epsilon_tr_hair,transition source-kernel/hair projected into current R10 Xi_tail normalization,BOUND_READY_KTR_AND_COMPONENT_VALUES_MISSING,False,False,2026-07-06T19:45:34.931348+00:00
+4640,F4640_6_pair_bound,|Xi_BT| <= K_edge(|Q_edge_shell|+|Q_edge_boundary|) + K_tr epsilon_tr_hair,no-cancellation boundary plus transition pair,FINAL_PAIR_BOUND_NONCLAIM,False,False,2026-07-06T19:45:34.931348+00:00
+4640,F4640_7_full_tail_zero,"if Xi_src_hidden=Xi_nonHilbert=Xi_boundary_history=Xi_transition_inner=0 on one branch, then Xi_tail=0","4638, 4639 and 4640 conditional zero branches assembled without cancellation",SAME_BRANCH_ASSEMBLY_REQUIRED_NEXT,False,False,2026-07-06T19:45:34.931348+00:00

@@ -1,0 +1,6 @@
+component_id,component,clean_branch_value,reason,fallback_if_open,status,valid_for_claim
+OC4353_0_Kperp,private Kperp independent static channel,0,"4346 private compact selector routes metric TT, vertical, boundary and extra-source Kperp pieces out of the independent local force budget.",|W_i^K| C_T(|S_T|+|B_T|+|I_T|+|Z_T|),ZERO_PRIVATE_PUBLIC_FALLBACK_RETAINED,False
+OC4353_1_Lambda,RI adjoint multiplier leg,0,4350 lambda_4350>0 kills homogeneous Lambda in the compact anchored RI domain.,|Pi_a^RI| C_Lambda |R_Lambda|/lambda_4350,ZERO_ON_CLEAN_BRANCH,False
+OC4353_2_BRI,RI boundary/corner leg,0,4352 boundary theorem kills multiplier-owned/fixed/routed RI boundary terms inside the same branch.,|Pi_a^BRI||B_RI_bound|,ZERO_ON_CLEAN_BRANCH,False
+OC4353_3_IRI,RI incoming/open homogeneous leg,0,4352 stationary isolated no-incoming selector removes independent incoming RI data.,|Pi_a^I||I_RI_bound|,ZERO_ON_CLEAN_BRANCH,False
+OC4353_4_owner_total,owner-tail/Kperp private channel,0,OC4353_0 through OC4353_3 vanish in the same compact static branch.,owner_tail_bound + Kperp_bound,CHANNEL_DELETED_FROM_CLEAN_PRIVATE_VECTOR,False

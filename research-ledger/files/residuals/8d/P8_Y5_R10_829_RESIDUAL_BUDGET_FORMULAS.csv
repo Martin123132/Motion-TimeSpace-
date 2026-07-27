@@ -1,0 +1,7 @@
+term_id,residual_term,formula,dimension,status,needed_source,valid_for_claim,generated_utc
+RB829_0_exact_removed_linear_trace,baseline trace drift,q_baseline = 0 after parent-derived baseline lock Gamma_L=Lambda_loc,L^-3,exact_zero_conditional,derive Gamma_L=Lambda_loc from parent local branch,false,2026-06-12T18:55:44+00:00
+RB829_1_quadratic_memory,quadratic memory source,q_quad <= abs(a_F R_mm) U_B^(2 pS)/(L_cg^2 L_tr),L^-3,conditional_scaling,"U_B profile, pS, a_F, R_mm, L_cg, L_tr",false,2026-06-12T18:55:44+00:00
+RB829_2_second_order_XB,second-order X_B drift,q_X2 <= C_X U_B^(2 pS)/(L_cg^2 L_X),L^-3,conditional_scaling,"C_X, L_X, U_B profile, pS, moving-extremum theorem",false,2026-06-12T18:55:44+00:00
+RB829_3_boundary_measure,boundary/source-measure residue,q_boundary <= A_B U_B^pB/(L_cg^2 L_tr),L^-3,open,"pB, A_B, boundary silence theorem or local response bound",false,2026-06-12T18:55:44+00:00
+RB829_4_Khat_divergence,K_hat response,"q_K = -P_loc div K_hat, bounded by parent tensor operator and boundary data",L^-3,open,"K_hat owner, tensor boundary data, no-zero-mode or residual response bound",false,2026-06-12T18:55:44+00:00
+RB829_5_total_source_scale,total local exchange source,q_total <= q_quad + q_X2 + q_boundary + q_K,L^-3,budget_formula_only,all prior terms plus observable response matrices,false,2026-06-12T18:55:44+00:00

@@ -1,0 +1,5 @@
+gate_id,target,formula,current_status,needed_next,claim_allowed,valid_for_claim
+KTG4509_0_response_definition,K_metric[Gamma_eff],K_metric^{mn}:= -2 delta Gamma_eff/delta g_mn - convention_terms; equivalently T_GK^{mn}=Gamma_eff g^{mn}-K_metric^{mn},DEFINITION_AVAILABLE_FROM_3627,declare one sign/volume/derivative convention and map current K_hat to it,False,False
+KTG4509_1_current_match,K_hat=K_metric,K_hat^{mn}=K_metric^{mn}+R_K^{mn},R_K_RETAINED_BY_3628_AND_4115,"explicit tensor equality or sourced residual norm R_K_trace,m",False,False
+KTG4509_2_trace_zero,"R_K_trace,m",partial_m Tr(R_K)=0 if R_K is tracefree or absent in the active branch,ZERO_ROUTE_UNSIGNED,parent tensor decomposition K_hat=K_metric+K_TF with Tr(K_TF)=0 before readout,False,False
+KTG4509_3_finite_fallback,"R_K_trace,m bound","|B_Weyl| receives 1/4 |R_K_trace,m|",NUMERIC_ROW_MISSING,"R_K trace derivative coefficient, units, local arena projection, source path",False,False

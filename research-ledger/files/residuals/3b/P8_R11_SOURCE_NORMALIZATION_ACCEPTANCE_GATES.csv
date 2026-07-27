@@ -1,0 +1,7 @@
+gate_id,rule,pass_condition,claim_effect
+G0_schema,minimum source-normalization vector has one row for each mu_extra channel,"8 rows, all with coefficient symbol, normalization, map, affected rows, and required artifact",wiring only
+G1_no_missing_for_claim,a row cannot be claim-valid while coefficient_value_or_theorem starts with MISSING or status is conditional/retained,valid_for_claim=true only after concrete theorem-zero or numeric coefficient with source path,prevents fake Newton pass
+G2_domain_sibling_rows,domain_projector_mass row must propagate to R5/R6/R7/R8/R11,all sibling rows named and no tuned cancellation credit,alpha3 cannot be scored alone
+G3_even_scalar_guard,even measured-GM offsets are not killed by exchange oddness,absolute/even source offsets require independent theorem or coefficient,prevents oddness overclaim
+G4_no_absorption_cheat,range/time/species/radial dependence cannot be absorbed into measured GM,derivative hair is zero or explicitly mapped to residual rows,protects Newton gate
+G5_no_promotion,no R11/source-normalization row promotes local GR without all source and stress rows closed,local_GR_claim_allowed=false until all rows pass,claim ceiling

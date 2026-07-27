@@ -1,0 +1,14 @@
+check_id,check,status,details
+VAL1256_0_sources_exist,all cited local sources exist,PASS,8/8 sources exist
+VAL1256_1_needles_found,all cited local needles found,PASS,8/8 needles found
+VAL1256_2_contract_ER,minimal H_core contract defines E_R,PASS,E_R := delta H_R/delta R_AB present
+VAL1256_3_contract_boundary,minimal H_core contract defines boundary momentum,PASS,Pi_R^n boundary term present
+VAL1256_4_branches_complete,all reciprocal variational branches are separated,PASS,branch_rows=4
+VAL1256_5_coefficients_missing_visible,missing coefficient owners remain explicit,PASS,coefficient_rows=5
+VAL1256_6_ceiling_nonclaim,Cassini q_Rhat ceiling is nonclaim only,PASS,ceiling applies only to future finite residual branch
+VAL1256_7_claim_gates,claim gates keep local GR and finite prediction blocked,PASS,claim_gate_rows=4
+VAL1256_8_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1256_9_next_target_1257,next target is Z_R/lambda_R selector,PASS,1257-Y5-R10-ZR-lambdaR-selector-from-parent-primitives.md
+VAL1256_10_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1256_SOURCE_REGISTER.csv:8; P8_Y5_R10_1256_MINIMAL_HCORE_SOURCE_EQUATION_CONTRACT.csv:2; P8_Y5_R10_1256_VARIATIONAL_BRANCH_AUDIT.csv:4; P8_Y5_R10_1256_BOUNDARY_TERM_AUDIT.csv:3; P8_Y5_R10_1256_COEFFICIENT_REQUIREMENTS.csv:5; P8_Y5_R10_1256_CASSINI_CEILING_COMPATIBILITY.csv:2; P8_Y5_R10_1256_CLAIM_GATES.csv:4; P8_Y5_R10_1256_DECISION_LEDGER.csv:2; P8_Y5_R10_1256_NEXT_TARGET.csv:1
+VAL1256_11_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_write_count_since_run_start=0
+VAL1256_12_overall,overall 1256 validation,PASS,"1256 writes the minimal reciprocal H_core source-equation contract, separates zero/finite/suppressed/boundary branches, and keeps claims blocked"

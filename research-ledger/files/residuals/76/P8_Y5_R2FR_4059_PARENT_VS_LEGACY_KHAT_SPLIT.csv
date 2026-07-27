@@ -1,0 +1,4 @@
+split_id,symbol,definition,use,claim_status,fallback,timestamp_utc
+SPL4059_0_parent_branch,Khat_parent,Khat_parent:=K_Gamma,4056 candidate local parent action packet,private_candidate_nonclaim,"not needed inside this branch, because D_GK_parent=0 by definition",2026-07-02T01:13:16+00:00
+SPL4059_1_legacy_branch,Khat_legacy,the earlier MTS K_hat appearing in older route/equation-register docs,compatibility with earlier corpus and any old empirical rows,not_matched_to_parent_metric_response,Delta_K_legacy:=K_Gamma-Khat_legacy,2026-07-02T01:13:16+00:00
+SPL4059_2_translation_rule,translation,old K_hat references are not automatically upgraded; they either point to Khat_parent after explicit adoption or remain Khat_legacy,prevents accidental proof by notation,guardrail,score Delta_K_legacy for every unadopted old-row dependency,2026-07-02T01:13:16+00:00

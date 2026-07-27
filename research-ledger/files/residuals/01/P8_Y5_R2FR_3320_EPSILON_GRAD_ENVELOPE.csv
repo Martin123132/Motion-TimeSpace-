@@ -1,0 +1,5 @@
+row_id,quantity,definition,formula,status,valid_for_claim
+EGR3320_0_definition,epsilon_grad[system],"operator norm of the first-gradient readout R_pi[psi_bar] after smoothing, normalized to the massless public metric readout scale",epsilon_grad = || S[partial_(mu) psi_bar partial_(nu) .] ||_{H_pi->g_pub} / ||R_EH||,DEFINED,false
+EGR3320_1_cauchy_bound,B_i^psi envelope,finite public residue induced by nonzero local first-gradient readout,"|B_i^psi| <= C_i(lambda,S,H_pi) epsilon_grad^2 + epsilon_composite",NORM_BOUND_DERIVED,false
+EGR3320_2_zero_gate,epsilon_grad=0,parent-signed local first-gradient silence,epsilon_grad=0 => B_i^psi_tree=0,CLAIM_GATE_READY_NOT_PASSED,false
+EGR3320_3_data_gate,epsilon_grad bound,empirical/theory upper bound if exact silence fails,epsilon_grad <= sqrt((B_i^max-epsilon_composite)/C_i),TEST_GATE_READY_VALUES_MISSING,false

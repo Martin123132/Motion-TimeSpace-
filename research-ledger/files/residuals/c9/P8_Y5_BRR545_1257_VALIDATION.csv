@@ -1,0 +1,13 @@
+check_id,check,status,details
+VAL1257_0_sources_exist,all cited local sources exist,PASS,10/10 sources exist
+VAL1257_1_needles_found,all cited local needles found,PASS,10/10 needles found
+VAL1257_2_selector_complete,selector clauses cover field-exclusion/multiplier/generic/mass-gap cases,PASS,selector_rows=4
+VAL1257_3_theorem_not_derived,"selector theorem is conditional, not claimed",PASS,CONDITIONAL_NOT_DERIVED
+VAL1257_4_routes_complete,zero/finite/massive/boundary routes are retained,PASS,route_rows=4
+VAL1257_5_obligations_visible,missing proof obligations are explicit,PASS,obligation_rows=4
+VAL1257_6_claim_gates,claim gates block Z_R selection and local GR,PASS,claim_gate_rows=4
+VAL1257_7_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1257_8_next_target_1258,next target tests R_AB independent-field exclusion,PASS,1258-Y5-R10-RAB-independent-field-exclusion-or-ZR-positive-bound.md
+VAL1257_9_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1257_SOURCE_REGISTER.csv:10; P8_Y5_R10_1257_PARENT_PRIMITIVE_SELECTOR_AUDIT.csv:5; P8_Y5_R10_1257_ZR_LAMBDAR_SELECTOR_CLAUSES.csv:4; P8_Y5_R10_1257_SELECTOR_THEOREM_CANDIDATE.csv:1; P8_Y5_R10_1257_BRANCH_ROUTING_LEDGER.csv:4; P8_Y5_R10_1257_MISSING_PROOF_OBLIGATIONS.csv:4; P8_Y5_R10_1257_CLAIM_GATES.csv:4; P8_Y5_R10_1257_DECISION_LEDGER.csv:2; P8_Y5_R10_1257_NEXT_TARGET.csv:1
+VAL1257_10_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_write_count_since_run_start=0
+VAL1257_11_overall,overall 1257 validation,PASS,"1257 writes the Z_R/lambda_R selector, keeps the theorem conditional, and routes next to R_AB field-status proof"

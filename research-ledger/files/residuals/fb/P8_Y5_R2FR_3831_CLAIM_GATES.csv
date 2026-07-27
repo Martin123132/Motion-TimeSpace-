@@ -1,0 +1,6 @@
+gate_id,gate,status,claim_allowed,reason,timestamp_utc
+GATE3831_0_trace_guard,trace/virial does not imply no-slip,PASS_GUARD,False,3831 separates trace cancellation from traceless anisotropic stress silence,2026-07-01T02:07:26+00:00
+GATE3831_1_SigmaTF_zero,Sigma_TF_matter zero claim,BLOCKED_TENSOR_VIRIAL_AND_EM_BOUND_REQUIRED,False,"tensor virial, quadrupole, EM/Poynting, and apparatus TF rows are not signed",2026-07-01T02:07:26+00:00
+GATE3831_2_gamma_bound,gamma matter-source bound,PASS_FORMULA_ONLY_NONCLAIM,False,first Sigma_TF_matter bound formula exists but lacks numeric/source-backed rows,2026-07-01T02:07:26+00:00
+GATE3831_3_local_GR,local GR/no-slip claim,BLOCKED,False,"matter TF, parent extra, boundary, readout, and beta residuals remain open",2026-07-01T02:07:26+00:00
+GATE3831_4_next_target,next target attacks EM/Poynting and tensor-virial TF separation,PASS_ACTIONABLE_NEXT,False,EM/Poynting stress is the highest-risk TF source and matches the framework's EM route,2026-07-01T02:07:26+00:00

@@ -1,0 +1,6 @@
+field_id,required_field,description,acceptance_rule,valid_for_claim,claim_allowed
+PROV1228_0_source_url,source_url,exact CMSM/official URL or portal package location used to obtain the file,must be nonempty and official before parser acceptance,False,False
+PROV1228_1_package_id,package_id_or_aip_id,"CMSM package name, AIP id, product id, or official export identifier",must link local file to portal metadata,False,False
+PROV1228_2_checksum,sha256,local file checksum computed after download,must be recorded before parsing and preserved unchanged,False,False
+PROV1228_3_license_access,license_or_access_status,public/open/license accepted/login required/manual acquisition status,must be known before derived products are shared or claimed,False,False
+PROV1228_4_schema_doc,schema_document_path,"local official documentation defining columns, units, frames, and product convention",readout arrays cannot be parsed for tau_WEP without it,False,False

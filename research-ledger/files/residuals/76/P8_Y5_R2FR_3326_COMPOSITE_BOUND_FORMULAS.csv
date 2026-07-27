@@ -1,0 +1,6 @@
+bound_id,formula,conditions,status,valid_for_claim
+CB3326_0_one_particle_exact_zero,epsilon_1p_i = ||P1_i S_ell[D pi D pi]|| = 0,E_eff[psi_bar]=0; <pi>=0; odd cumulants vanish or pi -> -pi selection rule; P1_i respects the same symmetry,CONDITIONAL_PROOF,false
+CB3326_1_one_particle_defect_bound,epsilon_1p_i <= A_i delta_mean_i sigma_Dpi + B_i delta_skew_i sigma_Dpi^2 + rho_P1_i ||S_ell[D pi D pi]||,used when exact centered/even selection is not parent-signed,FALLBACK_BOUND_FORMULA,false
+CB3326_2_two_particle_tail,"epsilon_2p_i(lambda) <= C_2i int dmu_2(s) W_i(s,lambda), with Yukawa suppression exp[-2 m_gap r] if m_gap>0",two-pi branch has a spectral measure or conservative envelope,SPECTRAL_BOUND_FORMULA,false
+CB3326_3_contact_tail,epsilon_contact_i <= C_contact_i Theta(source support) or is absorbed into universal mass/G calibration,contact term is delta-supported and does not produce a finite external force,CONTACT_ROUTING_FORMULA,false
+CB3326_4_total_composite,epsilon_composite_i <= epsilon_1p_i + epsilon_2p_i(lambda) + epsilon_contact_i + epsilon_boundary_i + epsilon_kernel_aniso_i,no cancellation allowed; every tail is added as an absolute upper envelope,NO_CANCELLATION_TOTAL_BOUND,false

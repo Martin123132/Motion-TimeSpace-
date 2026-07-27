@@ -1,0 +1,6 @@
+step_id,statement,math_form,result,valid_for_claim
+N0_positive_operator,Each Y component has a positive local quadratic action on the compact local branch.,S_Y=1/2 int_D sqrt(h)[(nabla Y)^2 + m_Y^2 Y^2] plus controlled boundary term,sufficient_condition,false
+N1_Euler_equation,Variation gives a local elliptic equation with source and boundary terms.,"(-Delta_D + m_Y^2)Y = J_Y, with boundary n.grad Y = B_Y",formal_candidate,false
+N2_integral_identity,Multiply by Y and integrate over D.,int_D[(nabla Y)^2+m_Y^2Y^2]=int_D Y J_Y + int_boundary Y B_Y,energy_identity,false
+N3_zero_theorem,"If J_Y=0 and B_Y=0 and the operator is positive, then Y=0.","left side nonnegative and equals zero, so Y=0 componentwise",conditional_no_source_theorem,false
+N4_current_corpus,The current corpus does not yet derive J_Y=0 and B_Y=0 for every component.,boundary/domain/R11/stress source currents remain open,fails_for_claim,false

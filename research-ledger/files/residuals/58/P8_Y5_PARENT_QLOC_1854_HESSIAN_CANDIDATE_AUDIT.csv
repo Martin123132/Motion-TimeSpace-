@@ -1,0 +1,8 @@
+candidate_id,object,best_evidence,claim_grade_evidence_found,why_not_claim,status,valid_for_claim
+HCA1854_0_ZX_formula,Z_X,many formula/template rows define Z_X as kinetic Hessian coefficient,False,no parent-signed positive numeric/symbolic coefficient with units and same Xhat normalization,FORMULA_ONLY_NOT_PARENT_SIGNED,False
+HCA1854_1_MX2_formula,M_X^2,many formula/template rows define M_X^2 as local Hessian curvature/mass gap,False,"no parent-signed mass gap, zero-mass theorem, or eigenvalue extraction with units",FORMULA_ONLY_NOT_PARENT_SIGNED,False
+HCA1854_2_lambda_relation,lambda_X,lambda_X=sqrt(Z_X/M_X^2) is repeatedly derived,False,"relation is exact, but values and units for Z_X/M_X^2 are missing",RELATION_DERIVED_VALUES_MISSING,False
+HCA1854_3_massless_theorem,M_X^2=0 protected branch,massless/long-range route appears as a possible branch,False,no symmetry/no-pole theorem protects a zero mass while keeping local tests safe,MASSLESS_THEOREM_NOT_SIGNED,False
+HCA1854_4_same_branch_lock,same-branch normalization,"multiple ledgers demand one branch supplies Z_X, M_X^2, lambda_X, K_X and source charges",False,current rows still mix formula templates and missing source/coupling rows,SAME_BRANCH_LOCK_MISSING,False
+HCA1854_5_cross_Hessian,mixed Hessian/residual vector,cross-Hessian silence is listed as required,False,no block diagonalization or multi-component residual vector is parent-signed,MISSING_CROSS_HESSIAN_BLOCK,False
+HCA1854_6_verdict,Z_X/M_X^2 extraction,corpus contains the right contracts but no claim-grade inputs,False,"extraction finds formulas and blockers, not owned coefficients",FAIL_CURRENT_CLAIM_PARENT_HESSIAN_INPUTS_NOT_EXTRACTED,False

@@ -1,0 +1,6 @@
+checkpoint,dn_update_id,formula,meaning,status,valid_for_claim,timestamp_utc
+4748,DNU4748_0_previous,"c_DN >= min(c_TFRI,c_TT,c_quar)-C_mix",4747 symbolic full-constant formula.,PREVIOUS_FORM,False,2026-07-08T00:45:18+00:00
+4748,DNU4748_1_TT_revision,exact TT divergence gives c_TT=0 and should be projected into C_TT_kernel/topological sector,TT is removed from the positive-gap minimum unless parent changes the TT owner map.,REVISION,False,2026-07-08T00:45:18+00:00
+4748,DNU4748_2_effective_gap,"c_DN_eff >= min(c_TFRI,c_quar)-C_mix_eff-C_TT_kernel",Static gap source should use TFRI+quarantine coercive blocks and carry TT as kernel leakage.,UPDATED_BOUND,False,2026-07-08T00:45:18+00:00
+4748,DNU4748_3_live_blockers,"numeric c_DN_eff needs c_TFRI,c_quar,C_mix_eff,C_TT_kernel and boundary complementing data",This is the updated source list after TT hardening.,MISSING_SOURCE_VALUES,False,2026-07-08T00:45:18+00:00
+4748,DNU4748_4_claim_gate,claim requires C_TT_kernel=0 or sourced below threshold plus c_DN_eff>0,No claim is opened by a schematic symbol.,CLOSED_NONCLAIM,False,2026-07-08T00:45:18+00:00

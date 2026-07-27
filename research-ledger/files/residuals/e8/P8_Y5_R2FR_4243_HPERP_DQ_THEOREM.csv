@@ -1,0 +1,7 @@
+timestamp_utc,branch_id,checkpoint_id,theorem_id,formula,meaning,status,claim_allowed,valid_for_claim
+2026-07-03T09:35:15+00:00,MTS_R2FR_Y5_HPERP_DQ_DEFECT_BOUND_4243,4243,HT4243_0_definition,Hperp := (1 - Pi_kerDq) H_L,Hperp is the part of the leakage profile not certified as q-basic.,definition,False,False
+2026-07-03T09:35:15+00:00,MTS_R2FR_Y5_HPERP_DQ_DEFECT_BOUND_4243,4243,HT4243_1_zero_condition,all_i Dq_i[H_L]=0 => Hperp=0,Componentwise q-basic ownership kills the non-q leakage defect.,conditional theorem,False,False
+2026-07-03T09:35:15+00:00,MTS_R2FR_Y5_HPERP_DQ_DEFECT_BOUND_4243,4243,HT4243_2_source_zero,Hperp=0 => S_A Hperp^A=0,The live source-current contraction vanishes only after Hperp is killed.,conditional theorem,False,False
+2026-07-03T09:35:15+00:00,MTS_R2FR_Y5_HPERP_DQ_DEFECT_BOUND_4243,4243,HT4243_3_defect_norm,"E_Dq,H^2 := sum_i w_i ||Dq_i[H_L]||^2",Positive component norm measuring how far H_L is from q-basic.,derived bound owner,False,False
+2026-07-03T09:35:15+00:00,MTS_R2FR_Y5_HPERP_DQ_DEFECT_BOUND_4243,4243,HT4243_4_Hperp_bound,"||Hperp|| <= C_perp E_Dq,H",Source defect is bounded by quotient-defect norm if Pi_kerDq is stable.,conditional bound,False,False
+2026-07-03T09:35:15+00:00,MTS_R2FR_Y5_HPERP_DQ_DEFECT_BOUND_4243,4243,HT4243_5_source_bound,"|S_A Hperp^A| <= C_S C_perp E_Dq,H",First real source-defect bound row: Hperp is no longer vague.,symbolic nonclaim,False,False

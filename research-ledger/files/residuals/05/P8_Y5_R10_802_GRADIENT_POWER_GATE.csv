@@ -1,0 +1,5 @@
+gradient_id,assumptions,derivation,result,status,valid_for_claim,generated_utc
+GR802_0_Z_gradient,"Z_L=U_B H_L, |nabla U_B|=O(U_B/L_B), H_L bounded, nabla H_L=O(1/L_B)",nabla Z_L=(nabla U_B)H_L+U_B nabla H_L=O(U_B/L_B),far-local leakage-gradient is linearly screened,conditional_far_local_pass,false,2026-06-12T13:16:20+00:00
+GR802_1_quadratic_readout_gradient,"f=O(Z_L^2), nabla Z_L=O(U_B/L_B), Z_L=O(U_B)",nabla f=O(Z_L nabla Z_L)=O(U_B^2/L_B),far-local scalar q_loc channel gains U_B^2 suppression,conditional_far_local_pass,false,2026-06-12T13:16:20+00:00
+GR802_2_coefficient_budget,"M_2,T_2,S_smooth and log-gradients finite and universal",bounded coefficients keep quadratic power counting from being eaten by large prefactors,requires explicit coefficient/source bounds,open_parent_bound,false,2026-06-12T13:16:20+00:00
+GR802_3_transition_shell,U_B=O(1) in shell near B_env~B_*,"the U_B^2 small factor is no longer small, so direct local projection can exceed PPN budgets","transition shell must be exactly cancelled, projected away, or quarantined from local metric readout",blocks_derived_local_GR,false,2026-06-12T13:16:20+00:00

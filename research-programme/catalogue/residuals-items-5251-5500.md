@@ -3,6 +3,8 @@
 Direct links for 250 files. Item numbers are catalogue
 ordinals, not scientific checkpoint identifiers.
 
+- [`P8_Y5_R2FR_4882_RESPONSE_BENCHMARKS.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4882_RESPONSE_BENCHMARKS.csv) (1510 bytes)
+- [`P8_Y5_R2FR_4882_SOURCE_REGISTER.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4882_SOURCE_REGISTER.csv) (5858 bytes)
 - [`P8_Y5_R2FR_4882_TARGET_LOCATIONS.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4882_TARGET_LOCATIONS.csv) (342 bytes)
 - [`P8_Y5_R2FR_4883_ARBITRATION.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4883_ARBITRATION.csv) (805 bytes)
 - [`P8_Y5_R2FR_4883_COMPOSE_ARCHIVE_AUDIT.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4883_COMPOSE_ARCHIVE_AUDIT.csv) (2060 bytes)
@@ -251,5 +253,3 @@ ordinals, not scientific checkpoint identifiers.
 - [`P8_Y5_R2FR_4899_CODATA_ALPHA.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4899_CODATA_ALPHA.csv) (738 bytes)
 - [`P8_Y5_R2FR_4899_CODATA_ALPHA_SUMMARY.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4899_CODATA_ALPHA_SUMMARY.csv) (478 bytes)
 - [`P8_Y5_R2FR_4899_DECISION.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4899_DECISION.csv) (555 bytes)
-- [`P8_Y5_R2FR_4899_EM_OWNER_AUDIT.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4899_EM_OWNER_AUDIT.csv) (2629 bytes)
-- [`P8_Y5_R2FR_4899_EM_OWNER_SUMMARY.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4899_EM_OWNER_SUMMARY.csv) (225 bytes)

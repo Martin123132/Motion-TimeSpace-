@@ -1,0 +1,7 @@
+checkpoint,packet_id,formula,purpose,status,score_ready,valid_for_claim,timestamp_utc
+4754,ADJPK4754_0_lambda_RI,"lambda_RI = Z_RI,min lambda_1(D_RI)+M_RI,min^2-Eta_RI > 0",kills homogeneous Lambda on static collar,FORMULA_READY_VALUE_UNSOURCED,False,False,2026-07-08T01:24:28+00:00
+4754,ADJPK4754_1_boundary,"B_Lambda=0 and B_RI=0, or routed boundary flux ledger",prevents owner stress through boundary/corner,MISSING_ZERO_OR_BOUND,False,False,2026-07-08T01:24:28+00:00
+4754,ADJPK4754_2_incoming,I_RI=0 or finite incoming/hyperbolic mode bound,guards against using static proof in dynamic branch,MISSING_ZERO_OR_BOUND,False,False,2026-07-08T01:24:28+00:00
+4754,ADJPK4754_3_residual,R_Lambda=0 or ||Lambda|| <= C_RI_adj R_Lambda/lambda_RI,finite owner-tail branch if exact adjoint zero fails,MISSING_IF_NONZERO_BRANCH,False,False,2026-07-08T01:24:28+00:00
+4754,ADJPK4754_4_Kperp,Y_Kperp_i=|W_i^K| C_T(|S_T|+|B_T|+|I_T|+|Z_T|),first Kperp transfer row into local arenas,VALUES_MISSING,False,False,2026-07-08T01:24:28+00:00
+4754,ADJPK4754_5_combined,Y_a <= Pi_a^RI C_Lambda R_Lambda/lambda_RI + Pi_a^BRI B_RI + Pi_a^I I_RI + Y_Kperp_a,complete nonclaim owner-tail vector,SOURCE_PACKET_REQUIRED,False,False,2026-07-08T01:24:28+00:00

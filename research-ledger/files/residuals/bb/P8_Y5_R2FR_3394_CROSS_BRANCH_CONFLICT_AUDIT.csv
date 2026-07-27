@@ -1,0 +1,5 @@
+conflict_id,branch,possible_conflict,audit_result,reason,valid_for_claim
+X3394_0_cosmology,FLRW/cosmology,fixed local PPN readout could accidentally freeze cosmological readouts,NO_CONFLICT_IF_SCOPED_LOCAL,package is explicitly local Cassini/Fermi/PPN; it does not set FLRW memory projection or Gamma_G readout,false
+X3394_1_galaxy,galaxy/rotation,radial/even local kernel might overwrite galaxy-scale smoothing,NO_CONFLICT_IF_SCALE_LOCAL,package selects local PPN smoothing support only; galaxy branch may keep its empirical smoothing/memory scale separately,false
+X3394_2_EM,EM/Maxwell stress,placing Poynting flux in Hilbert stress could erase emergent EM residuals,NO_CONFLICT_IF_PUBLIC_STRESS_ONLY,public EM radiation remains physical T_mu_nu; only hidden second-counted boundary leakage is zeroed,false
+X3394_3_quantum_particle,quantum/particle,fixed readout could forbid microscopic adaptive variables,NO_CONFLICT_IF_READOUT_ONLY,"package fixes local PPN observable extraction, not microscopic psi dynamics or particle-sector variables",false

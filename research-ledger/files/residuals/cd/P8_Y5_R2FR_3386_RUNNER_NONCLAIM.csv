@@ -1,0 +1,6 @@
+run_id,test,result,detail,claim_allowed,valid_for_claim
+RUN3386_0_zero_attempt,try exact epsilon_eff_PPN=0 theorem,FAIL_CURRENT_ZERO_NOT_PARENT_SIGNED,"background, boundary and kernel-anisotropy zero clauses do not close together in the current corpus",false,false
+RUN3386_1_component_schema,decompose epsilon_eff into positive no-cancellation components,PASS_SCHEMA,epsilon_eff = epsilon_bg*T_grad + epsilon_boundary + epsilon_kernel_aniso,false,false
+RUN3386_2_finite_inputs,stage finite input rows for all live components,PASS_NONCLAIM_INPUT_ROWS,missing_component_values=5,false,false
+RUN3386_3_threshold_backsolve,convert Cassini/tree thresholds into component target ceilings,PASS_BACKSOLVE_NONCLAIM,rows=32; equal thirds; transfer samples imported from 3321,false,false
+RUN3386_4_firewall,prevent local PPN/local-GR overclaim,PASS_CLAIM_FIREWALL,all component and threshold rows are nonclaim until zero theorems or source-backed values exist,false,false

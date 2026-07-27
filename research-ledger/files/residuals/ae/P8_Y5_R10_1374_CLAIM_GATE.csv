@@ -1,0 +1,7 @@
+gate_id,gate,status,reason,valid_for_claim,claim_allowed
+GATE1374_0_Qalg_symbolic_fill,Q_alg has source-ready parent-parameter formula,PASS_SYMBOLIC_FILL,Q_alg reduced to A_ref^-1 |F2| A_S^2 U_B^(2pS)/(L0^2 L_tr).,False,False
+GATE1374_1_Qtrans_symbolic_fill,Q_trans has source-ready parent-parameter formula,PASS_SYMBOLIC_FILL,Q_trans now maps mL/trace/boundary/bmem transition terms to one formula.,False,False
+GATE1374_2_numeric_transition_fill,Q_alg/Q_trans can be scored numerically,BLOCKED_PARENT_VALUES_MISSING,"U_B, support powers, amplitudes, L0, L_tr, and A_ref are not source-filled.",False,False
+GATE1374_3_toy_rows,toy transition calculator row may be used as evidence,BLOCKED_TOY_NOT_IMPORTED,toy row is valid_for_claim=false and passes_symbolic_gate=false.,False,False
+GATE1374_4_Qcdb_subchannels,Q_cdb is split into runner-ready subchannels,PASS_SUBCHANNEL_SPLIT,"K_conn, K_domain, K_boundary, K_comm, trace, and index gates are explicit.",False,False
+GATE1374_5_local_claim,local GR / PPN / R10 pass can be claimed,BLOCKED_NO_CLAIM,"all fills are symbolic/refusal-ready, not numeric/theorem-zero.",False,False

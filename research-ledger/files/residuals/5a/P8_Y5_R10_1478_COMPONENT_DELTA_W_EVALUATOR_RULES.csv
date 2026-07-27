@@ -1,0 +1,5 @@
+same_parent_branch_id,rule_id,rule,current_status,effect,valid_for_claim,claim_allowed
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,EV1478_0_theorem_zero,accept delta_w theorem-zero only if every syntax clause in SYN1478 passes parent-signed and every no-go countermodel is killed,FAIL_UNSIGNED_SYNTAX,CI1474_1 remains failing,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,EV1478_1_component_vector_numeric,"accept numeric scoring only if delta_w_vec, component fractions, arena projection, units, sign convention, covariance/no-cancellation, and source paths are present",FAIL_MISSING_COMPONENT_INPUTS,component rows are templates only,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,EV1478_2_common_mode_guard,one common derivative-silent mode may calibrate G_N/GM; relative component modes cannot be hidden in common calibration,PASS_GUARD_ACTIVE,prevents measured-G absorption cheat,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,EV1478_3_cross_arena_basis_lock,"the same component vector basis must feed WEP, R10, PPN, clock, orbital, and local_GR rows",PASS_SCHEMA_GUARD,prevents one-off coupling choices per test,False,False

@@ -1,0 +1,5 @@
+solver_id,target,formula,condition,status,valid_for_claim
+RXS2278_0_free_source_split,split free transport plus exchange,D C_tt=F_T+E_T; D C_rr=F_R+E_R,S_q=( -F_T/(1-C_tt)+F_R/(1+C_rr) ) + ( -E_T/(1-C_tt)+E_R/(1+C_rr) ),DEFINITION,False
+RXS2278_1_exchange_condition,exchange needed for S_q=0,-E_T/(1-C_tt)+E_R/(1+C_rr) = -S_q_free,S_q_free=-F_T/(1-C_tt)+F_R/(1+C_rr),EXACT_REQUIRED_EXCHANGE,False
+RXS2278_2_one_parameter_family,general exchange family,"choose E_T arbitrary, then E_R=(1+C_rr)*(E_T/(1-C_tt)-S_q_free)","without an additional conservation/detailed-balance law, exchange is underdetermined",UNDERDETERMINED_WITHOUT_PARENT_LAW,False
+RXS2278_3_conservative_exchange_example,if weighted exchange conservation is imposed,"with a_T E_T + a_R E_R=0, solve E_T=a_R(1+C_rr)S_q_free/[a_T(1-C_tt)+a_R(1+C_rr)]","a_T,a_R and the conserved exchange budget must be parent-signed",CONDITIONAL_CLOSURE_NOT_PARENT_DERIVED,False

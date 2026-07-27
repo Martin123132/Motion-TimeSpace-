@@ -1,0 +1,22 @@
+schema_id,field,type,meaning,required_for_claim,current_status,valid_for_claim,timestamp_utc
+SPS3978_00_source_id,source_id,string,stable row id for the source/profile,True,SCHEMA_READY_VALUE_MISSING,False,2026-07-01T16:40:29+00:00
+SPS3978_01_arena,arena,string,R10/PPN/clock/orbital/lab source context,True,SCHEMA_READY_VALUE_MISSING,False,2026-07-01T16:40:29+00:00
+SPS3978_02_l,l,integer,"spherical harmonic degree, l>=1 for active residual rows",True,SCHEMA_READY_VALUE_MISSING,False,2026-07-01T16:40:29+00:00
+SPS3978_03_m,m,integer,spherical harmonic order,True,SCHEMA_READY_VALUE_MISSING,False,2026-07-01T16:40:29+00:00
+SPS3978_04_Q_lm_total,Q_lm_total,numeric_or_symbolic,total source multipole before GR subtraction,True,SCHEMA_READY_VALUE_MISSING,False,2026-07-01T16:40:29+00:00
+SPS3978_05_Q_lm_GR_baseline,Q_lm_GR_baseline,numeric_or_symbolic,same-source GR comparator multipole,True,SCHEMA_READY_VALUE_MISSING,False,2026-07-01T16:40:29+00:00
+SPS3978_06_Q_lm_residual,Q_lm_residual,numeric_or_symbolic,P_residual(Q_lm_total-Q_lm_GR_baseline),True,SCHEMA_READY_VALUE_MISSING,False,2026-07-01T16:40:29+00:00
+SPS3978_07_M_H_ref,M_H_ref,numeric,normalizing source/Hilbert mass scale,True,SCHEMA_READY_VALUE_MISSING,False,2026-07-01T16:40:29+00:00
+SPS3978_08_r_eval,r_eval,numeric,readout/evaluation radius if needed by bound,True,SCHEMA_READY_VALUE_MISSING,False,2026-07-01T16:40:29+00:00
+SPS3978_09_worldtube_definition,worldtube_definition,string,what is included in W,True,SCHEMA_READY_VALUE_MISSING,False,2026-07-01T16:40:29+00:00
+SPS3978_10_includes_matter,includes_matter,bool,matter included in total source,True,SCHEMA_READY_VALUE_MISSING,False,2026-07-01T16:40:29+00:00
+SPS3978_11_includes_EM,includes_EM,bool,EM field/Poynting included in total source,True,SCHEMA_READY_VALUE_MISSING,False,2026-07-01T16:40:29+00:00
+SPS3978_12_includes_binding,includes_binding,bool,binding/internal stress included,True,SCHEMA_READY_VALUE_MISSING,False,2026-07-01T16:40:29+00:00
+SPS3978_13_includes_apparatus,includes_apparatus,bool,apparatus/exchange stress included or excluded by projection,True,SCHEMA_READY_VALUE_MISSING,False,2026-07-01T16:40:29+00:00
+SPS3978_14_boundary_flux_TF,boundary_flux_TF,numeric_or_symbolic,surface/exchange/radiative TF boundary term,True,SCHEMA_READY_VALUE_MISSING,False,2026-07-01T16:40:29+00:00
+SPS3978_15_d2I_TF_dt2,d2I_TF_dt2,numeric_or_symbolic,stationary/time-averaged TF inertia term,True,SCHEMA_READY_VALUE_MISSING,False,2026-07-01T16:40:29+00:00
+SPS3978_16_GR_routing_flag,GR_routing_flag,bool,ordinary GR multipole routed before residual test,True,SCHEMA_READY_VALUE_MISSING,False,2026-07-01T16:40:29+00:00
+SPS3978_17_units,units,string,units of multipole and normalizer,True,SCHEMA_READY_VALUE_MISSING,False,2026-07-01T16:40:29+00:00
+SPS3978_18_frame_or_coframe,frame_or_coframe,string,declared frame/coframe used by profile,True,SCHEMA_READY_VALUE_MISSING,False,2026-07-01T16:40:29+00:00
+SPS3978_19_source_path,source_path,path,local/web source for numeric/profile row,True,SCHEMA_READY_VALUE_MISSING,False,2026-07-01T16:40:29+00:00
+SPS3978_20_valid_for_claim,valid_for_claim,bool,false unless all numeric/source/certificate checks pass,True,SCHEMA_READY_VALUE_MISSING,False,2026-07-01T16:40:29+00:00

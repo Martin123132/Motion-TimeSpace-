@@ -1,0 +1,6 @@
+gate_id,gate,status,reason,valid_for_claim,claim_allowed
+GATE1377_0_source_hunt,source hunt ran over local CSV intake,PASS_HUNT_RAN,transition and K_conn terms were scanned and summarized with strict nonclaim status.,False,False
+GATE1377_1_transition_candidate,source-backed transition parent row exists,BLOCKED_NO_SOURCE_BACKED_ROW,available transition rows fail missing/provenance/toy gates.,False,False
+GATE1377_2_Kconn_operator_source,exact K_conn operator source/convention row exists,BLOCKED_NO_EXACT_OPERATOR_SOURCE,"matches are symbolic contexts, not source-backed operator norm rows.",False,False
+GATE1377_3_local_claim,local GR / PPN / R10 pass can be claimed,BLOCKED_NO_CLAIM,no source-backed transition row and no exact K_conn operator row.,False,False
+GATE1377_4_next_route,next route is selected,PASS_DERIVATION_ROUTE_SELECTED,attempt parent transition law derivation before any local observable scoring.,False,False

@@ -3,6 +3,8 @@
 Direct links for 250 files. Item numbers are catalogue
 ordinals, not scientific checkpoint identifiers.
 
+- [`P8_Y5_R2FR_4698_CONTROL_ROWS.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4698_CONTROL_ROWS.csv) (744 bytes)
+- [`P8_Y5_R2FR_4698_DECISION.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4698_DECISION.csv) (406 bytes)
 - [`P8_Y5_R2FR_4698_NEXT_TARGET.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4698_NEXT_TARGET.csv) (506 bytes)
 - [`P8_Y5_R2FR_4698_QSHADOW_ACTION_ROWS.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4698_QSHADOW_ACTION_ROWS.csv) (1637 bytes)
 - [`P8_Y5_R2FR_4698_QSHADOW_CURRENT_BRANCH_INSERTION_ROWS.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4698_QSHADOW_CURRENT_BRANCH_INSERTION_ROWS.csv) (1114 bytes)
@@ -251,5 +253,3 @@ ordinals, not scientific checkpoint identifiers.
 - [`P8_Y5_R2FR_4723_DECISION.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4723_DECISION.csv) (597 bytes)
 - [`P8_Y5_R2FR_4723_EH_SIGNATURE_VERDICT_MATRIX.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4723_EH_SIGNATURE_VERDICT_MATRIX.csv) (2109 bytes)
 - [`P8_Y5_R2FR_4723_FIREWALL_ROWS.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4723_FIREWALL_ROWS.csv) (1065 bytes)
-- [`P8_Y5_R2FR_4723_NEXT_TARGET.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4723_NEXT_TARGET.csv) (602 bytes)
-- [`P8_Y5_R2FR_4723_PARENT_EH_EVIDENCE_HUNT_ROWS.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4723_PARENT_EH_EVIDENCE_HUNT_ROWS.csv) (5931 bytes)

@@ -1,0 +1,5 @@
+bridge_id,quantity,formula,value_or_range,interpretation,valid_for_claim,claim_allowed
+CPG1211_0_1210_range,allowed_CpGres_product,S_allowed = target/(C_eff*L_D*Riemann_norm),"[117233215026, 1.17233215026e+28]",1210 clean branch can only be evaluated once C_P*G_res_norm has units/norm-compatible value,False,False
+CPG1211_1_if_CP_sourced,G_res_norm_allowed,G_res_norm <= S_allowed/C_P,symbolic_until_C_P_sourced,C_P source row turns the 1210 bracket into an allowed G_res_norm envelope,False,False
+CPG1211_2_if_Gres_sourced,C_P_allowed,C_P <= S_allowed/G_res_norm,symbolic_until_G_res_norm_sourced,G_res source row turns the 1210 bracket into an operator-constant target,False,False
+CPG1211_3_units_guard,claim policy,"valid_for_claim=false unless C_P and G_res_norm share the exact same D_L,w,norm convention as the projector bracket",guard_active,large allowed-product values in 1210 are not evidence until units/norms are locked,False,False

@@ -45,9 +45,10 @@ This repository is a public work-in-progress research programme.
   visible, and `p8+` contributions remain bounded, matched, or open according
   to their individual ledgers.
 - The first canonical MTS-specific crossed-`hhh` UV coefficient remains
-  unresolved. The fresh control route did not close it, and checkpoint `1266`
-  holds a partially corrected outer value until all order-5 backbone nodes are
-  rebuilt with paired reciprocal-projective transport.
+  unresolved. All nine order-9 nodes have now been rebuilt with paired
+  reciprocal-projective transport, but checkpoint `1268` fails the locked
+  order-convergence and Chebyshev-tail gates. The stable inner calculations
+  therefore do not justify a completed outer coefficient.
 - The occupied galactic response is not yet the retarded self-energy of the
   parent motion state. Its amplitude, transition scale, exponent, preparation
   law, and Hilbert stress remain under derivation.

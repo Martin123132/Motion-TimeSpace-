@@ -1,0 +1,6 @@
+floor_id,floor,formula,status,reason,valid_for_claim
+FLOOR3330_0_Gamma_proxy,R_Gamma_PPN,R_Gamma_PPN_proxy <= K_solar^m <= 1.000e-122 for K_solar≈1e-61 and m>=2,ENCOURAGING_PROXY_NOT_FULL_BOUND,"core gravity file states PPN corrections O(K^m), but this only signs the curvature-saturation/Gamma proxy if local Gamma maps to that proxy",false
+FLOOR3330_1_Gamma_general,R_Gamma_PPN,R_Gamma_PPN <= A_Gamma_PPN |Gamma_local| L_PPN^2,GENERAL_BOUND_FORMULA,a local cosmological-constant-like term contributes through a dimensionless curvature scale Gamma_local times the squared PPN length scale,false
+FLOOR3330_2_epsilon_eff,epsilon_eff_PPN,epsilon_eff_PPN = epsilon_bg_PPN T_grad(lambda_PPN)+epsilon_boundary_PPN+epsilon_kernel_aniso_PPN,FORMULA_READY_NOT_NUMERIC,"needs epsilon_bg_PPN, ell_s/lambda_PPN, boundary silence, and kernel isotropy",false
+FLOOR3330_3_composite,epsilon_composite_PPN,epsilon_composite_PPN <= epsilon_1p_PPN + epsilon_2p_PPN + epsilon_contact_PPN + epsilon_boundary_PPN + epsilon_kernel_aniso_PPN,FORMULA_READY_NOT_NUMERIC,needs 3327 CLT/spectral/contact inputs specialized to PPN,false
+FLOOR3330_4_direct,epsilon_direct_PPN,"epsilon_direct_PPN=0 only if Delta S_direct[psi,matter,EM]=0 in the local branch",BRANCH_SIGNATURE_ZERO_NOT_MICRO_DERIVED,3325 excludes direct vertices for clean closure but does not derive microscopic matter descent,false

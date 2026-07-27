@@ -1,0 +1,11 @@
+clause_id,component,required_clause,status,failure_mode,valid_for_claim
+CCA4521_0_same_branch,all,"4520 source-current, 4521 boundary, CDB and readout clauses hold in the same parent branch",NOT_SIGNED,separate private closures cannot be multiplied into a public local-GR theorem,False
+CCA4521_1_boundary_fixed,B_A,fixed/q-owned boundary data before variation,CONDITIONAL,source-dependent reference/corner charge,False
+CCA4521_2_boundary_flux,B_A,no side flux; radiative flux is zero or explicitly routed to Hamiltonian boundary charge,CONDITIONAL,nonzero radiative or transition flux becomes finite B_A,False
+CCA4521_3_cdb_connection,CDB,connection is LC[g_obs] or Palatini-silent with zero hypermomentum/projective source,CONDITIONAL,connection mismatch K_conn,False
+CCA4521_4_cdb_domain,CDB,domain/support/projector q-basic and fixed before readout,CONDITIONAL,moving support/domain K_domain,False
+CCA4521_5_cdb_boundary,CDB,proper compact boundary/collar with vanishing finite jets or exact routed charge,CONDITIONAL,edge/corner/boundary K_boundary,False
+CCA4521_6_cdb_comm,CDB,P_loc/readout/source projection commutes with variation and divergence,CONDITIONAL,projector/readout commutator K_comm,False
+CCA4521_7_readout_post,R_A,readout is pure postprocessing on solution space after variation,CONDITIONAL,pre-variation readout reentry,False
+CCA4521_8_readout_firewall,R_A,"no reduced action, calibration feedback, hidden material marker, source-worldtube projector or apparatus stress disguised as readout",LIVE_FIREWALL,R_A retained,False
+CCA4521_9_rank_M,Z,M_AB invertible/first-class lock on the same rank-zero quotient,NEXT_TARGET,even zero RHS does not imply physical Z=0 until rank/M branch is signed,False

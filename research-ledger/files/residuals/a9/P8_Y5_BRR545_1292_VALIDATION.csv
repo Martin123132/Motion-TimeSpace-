@@ -1,0 +1,13 @@
+check_id,check,status,details
+VAL1292_0_sources_exist,registered source paths exist and anchors are found,PASS,13/13 source anchors found
+VAL1292_1_strict_F_not_found_as_actual_source,strict F pattern is not found outside theorem-target generated rows,PASS,match_count=0
+VAL1292_2_F_match_failed_nonclaim,F form source-match fails and remains nonclaim,PASS,FSM1292_3_strict_F_verdict
+VAL1292_3_m_Lcg_match_failed_nonclaim,m and Lcg parent source-match fails and remains nonclaim,PASS,MLM1292_4_m_Lcg_verdict
+VAL1292_4_adoption_rejected_to_runner,strict double-zero adoption is rejected into residual runner input,PASS,SDA1292_4_overall
+VAL1292_5_runner_inputs_nonclaim_missing,all residual runner input rows are nonclaim and missing required inputs,PASS,runner_rows=4
+VAL1292_6_claim_gates_blocked,claim gates block local GR/PPN promotion,PASS,claim_gate_rows=5
+VAL1292_7_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1292_SOURCE_REGISTER.csv:13; P8_Y5_R10_1292_SOURCE_MATCH_SCAN_SUMMARY.csv:3; P8_Y5_R10_1292_F_FORM_SOURCE_MATCH_AUDIT.csv:4; P8_Y5_R10_1292_M_LCG_PARENT_SOURCE_MATCH_AUDIT.csv:5; P8_Y5_R10_1292_STRICT_DOUBLE_ZERO_ADOPTION_VERDICT.csv:5; P8_Y5_R10_1292_CHAIN_KERNEL_RESIDUAL_RUNNER_INPUT_NONCLAIM.csv:4; P8_Y5_R10_1292_CLAIM_GATES.csv:5; P8_Y5_R10_1292_DECISION_LEDGER.csv:3; P8_Y5_R10_1292_NEXT_TARGET.csv:1
+VAL1292_8_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1292_9_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1292_10_next_target_1293,next target routes to residual runner schema and rejection smoke,PASS,1293-Y5-R10-RAB-chain-kernel-residual-runner-schema-and-rejection-smoke.md
+VAL1292_11_overall,overall 1292 validation,PASS,"1292 fails current-corpus source-match for strict F/m/Lcg adoption, emits nonclaim residual runner inputs, and routes to a rejection-smoke runner"

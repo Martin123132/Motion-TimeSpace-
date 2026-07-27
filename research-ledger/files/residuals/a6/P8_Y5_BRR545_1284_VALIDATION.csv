@@ -1,0 +1,12 @@
+check_id,check,status,details
+VAL1284_0_sources_exist,all cited local sources exist,PASS,10/10 sources exist
+VAL1284_1_needles_found,all cited local needles found,PASS,10/10 needles found
+VAL1284_2_owner_not_closed,Gamma_eff/Khat owner extraction remains not closed,PASS,GKO1284_5_verdict=OWNER_EXTRACTION_NOT_CLOSED
+VAL1284_3_DeltaK_retained,Delta_K is retained as symbolic residual,PASS,DK1284_4_verdict=DELTAK_RETAINED_SYMBOLIC_RESIDUAL
+VAL1284_4_requirements_block_claim,live Gamma/Khat requirements remain missing or symbolic,PASS,requirements_rows=5
+VAL1284_5_claim_gates_blocked,all claim gates remain blocked,PASS,claim_gate_rows=4
+VAL1284_6_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1284_SOURCE_REGISTER.csv:10; P8_Y5_R10_1284_GAMMA_KHAT_OWNER_EXTRACTION_AUDIT.csv:6; P8_Y5_R10_1284_DELTAK_DECOMPOSITION_LEDGER.csv:5; P8_Y5_R10_1284_LIVE_GAMMA_KHAT_REQUIREMENTS.csv:5; P8_Y5_R10_1284_CLAIM_GATES.csv:4; P8_Y5_R10_1284_DECISION_LEDGER.csv:3; P8_Y5_R10_1284_NEXT_TARGET.csv:1
+VAL1284_7_next_target_1285,next target routes to response/displacement conjugacy or DeltaK bound row,PASS,1285-Y5-R10-RAB-parent-response-displacement-conjugacy-or-DeltaK-bound-row.md
+VAL1284_8_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1284_9_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1284_10_overall,overall 1284 validation,PASS,"1284 fails live Gamma/Khat owner extraction, derives the Ward-plus-DeltaK split, retains Delta_K, and routes to parent response/displacement conjugacy next"

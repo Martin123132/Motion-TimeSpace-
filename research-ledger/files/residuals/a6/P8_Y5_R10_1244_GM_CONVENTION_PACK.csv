@@ -1,0 +1,5 @@
+convention_id,quantity,convention,required_future_row,status,valid_for_claim,claim_allowed
+GM1244_0_qR_definition,q_R_hat,q_R_hat = Q_R c^2/(G M_source),finite q_R_hat candidates must declare whether they supply q_R_hat directly or raw Q_R plus G M_source,CONVENTION_DECLARED_NONCLAIM,False,False
+GM1244_1_source_body,M_source,"for Cassini gamma comparator rows, the default source body is the solar-system central mass used by the cited gamma analysis; future rows must name the source body explicitly",source_body=Sun or explicit alternative with reason,CONVENTION_DECLARED_NONCLAIM,False,False
+GM1244_2_measured_GM,G M_source,use measured/dynamical GM from the same weak-field comparator convention; do not infer GM from MTS q_R fitting,GM_source_value or directly_dimensionless_q_R_hat plus provenance,CONVENTION_DECLARED_SOURCE_STILL_REQUIRED_FOR_RAW_QR,False,False
+GM1244_3_coordinate,r and U,weak-field map assumes areal-radial matching and U=GM/r in the same convention used by QMAP1240,coordinate_convention=areal_radial_weak_field or explicit mapping correction,CONVENTION_DECLARED_NONCLAIM,False,False

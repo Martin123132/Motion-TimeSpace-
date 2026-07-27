@@ -1,0 +1,11 @@
+check_id,check,status,details
+VAL1349_0_sources_exist,registered source paths exist and anchors are found,PASS,11/11 source anchors found
+VAL1349_1_KMTS_owner_not_derived,K_MTS trace projection owner is not promoted,PASS,KMTS_TRACE_PROJECTION_OWNER_NOT_DERIVED
+VAL1349_2_response_match_missing,Gamma/Khat metric-response match remains missing,PASS,PF515/MA515/GKO1284 fail owner extraction
+VAL1349_3_closure_declared,B_mem=0 private closure declaration is explicit,PASS,"theorem, private closure, and finite residual branches separated"
+VAL1349_4_residual_retained,finite B_mem residual branch is retained as default nonclaim discipline,PASS,SYMBOLIC_NONCLAIM_RETAINED
+VAL1349_5_claims_blocked,"K_MTS owner, B_mem zero, and local-GR claims remain blocked",PASS,GATE1349_0_KMTS_owner=BLOCKED;GATE1349_1_Bmem_zero=BLOCKED;GATE1349_2_local_GR=BLOCKED
+VAL1349_6_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false where present
+VAL1349_7_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1349_8_next_target_1350,next target routes to finite Bmem/q_loc residual runner contract,PASS,1350-Y5-R10-RAB-finite-Bmem-and-qloc-residual-runner-contract.md
+VAL1349_9_overall,overall 1349 validation,PASS,1349 demotes B_mem=0 to private closure unless K_MTS owner is later derived and retains finite B_mem residual by default

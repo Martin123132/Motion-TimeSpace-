@@ -1,0 +1,7 @@
+residual_id,component,formula,zero_condition,fallback,valid_for_claim
+RZR4519_0_normal_form,algebraic rank-zero equation,M_AB Z^B = J_A + B_A + C_A^CDB + R_A^src/readout/projector,M_AB invertible/first-class and RHS=0,Z_alg = M^{-1}(J+B+CDB+R),False
+RZR4519_1_J,J_A source current,ordinary/source/memory/readout source projection into eliminated direction,"Dq[v_Z]=0, matter/source descent, no marker/current-owner theorem",|M^{-1}J|,False
+RZR4519_2_B,B_A boundary/corner,"worldtube, corner, reference and projector flux terms",proper/no-flux boundary with no source-reference charge,|M^{-1}B|,False
+RZR4519_3_CDB,C_A^CDB connection/domain/boundary derivative tails,hidden derivative/principal-symbol or lower-order tails,CDB terms zero/topological or included in owned constraint algebra,|M^{-1}CDB|,False
+RZR4519_4_R,R_A source/readout/projector residual,"readout, projector, source-normalization reentry",observed descent and fixed readout protocol,|M^{-1}R|,False
+RZR4519_5_observable,local observable residual,E_local <= K_obs ||Z_alg|| + direct source-tail terms,Z_alg=0 and direct source tails zero,finite local residual vector for PPN/R10/clocks/orbits,False

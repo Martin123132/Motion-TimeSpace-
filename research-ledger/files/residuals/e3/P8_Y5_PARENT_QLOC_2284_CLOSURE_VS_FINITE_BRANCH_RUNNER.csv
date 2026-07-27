@@ -1,0 +1,5 @@
+runner_id,branch,inputs,allowed_output,blocked_output,current_status,score_ready,valid_for_claim
+RUN2284_0_closure_branch,explicit_q_zero_closure_benchmark,q=0/R_AB=0 imposed as closure; no finite q coefficients required,GR-lane control values and regression benchmarks only,derived local-GR/Newton claim,RUNNABLE_BENCHMARK_NONCLAIM,False,False
+RUN2284_1_algebraic_finite_q,finite_nonpropagating_q_residual,"M_q^2, j_q, units, q_R=j_q/M_q^2, P_obs, source normalization",arena residual predictions after all parent inputs are sourced,any local pass/fail score before parent coefficients and projection matrix exist,BLOCKED_INPUTS_MISSING,False,False
+RUN2284_2_gradient_or_hair_q,finite_range_or_boundary_hair_q,"Z_q, M_q^2, j_q, boundary charge, range/hair projection",R10/PPN/orbital residual envelope once operator inventory is sourced,hiding Q_R/r hair inside q=0 closure,BLOCKED_OPERATOR_BOUNDARY_INVENTORY_MISSING,False,False
+RUN2284_3_comparator_bounds,external_local_bounds,published local bounds plus sourced parent predictions,screen abs(prediction) <= bound after coefficients exist,"using bounds to define M_q^2, j_q, or q_R",COMPARATOR_ONLY,False,False

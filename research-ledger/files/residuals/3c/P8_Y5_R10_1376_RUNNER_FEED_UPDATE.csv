@@ -1,0 +1,5 @@
+feed_id,runner_field,feed_update,status,blocks_claim_because,valid_for_claim,claim_allowed
+RUF1376_0_Kconn,Q_conn,retain Q_conn <= A_ref^-1 N_div K_conn_norm with K_conn_norm decomposed into nabla/star/IBP/edge pieces,SYMBOLIC_OPERATOR_BOUND_ONLY,"K_conn operator norms, source tensors, edge term, A_ref, and N_div are not source-filled",False,False
+RUF1376_1_transition_acquisition,Q_alg_Q_trans_parent_inputs,"use the acquisition table as the required source checklist for U_B, powers, amplitudes, L0, L_tr, A_ref, and shell gates",ACQUISITION_LEDGER_READY_NO_NUMERIC_ROW,"the table is a shopping list, not evidence; no row is valid_for_claim",False,False
+RUF1376_2_validator_next,transition_input_validator,"next runner should build a candidate row only if every required parent source, unit, and anchor is present; otherwise keep refusing",NEXT_VALIDATOR_CONTRACT_READY,toy/missing/acquisition-only rows remain blocked,False,False
+RUF1376_3_claim_status,local_GR_PPN_R10_status,"do not claim local-GR, PPN, R10, q_loc=0, or GitHub-ready result from 1376",BLOCKED_NO_CLAIM,K_conn is not sourced and transition parent inputs are not sourced,False,False

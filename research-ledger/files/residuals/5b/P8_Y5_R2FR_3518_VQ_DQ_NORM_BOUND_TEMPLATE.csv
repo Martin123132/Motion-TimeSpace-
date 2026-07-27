@@ -1,0 +1,6 @@
+bound_id,term,bound_formula,required_inputs,prediction_value,bound_value,status,valid_for_claim
+DQB3518_0_vq_master,master_Dq_vq,||Dq[v_q]||_q <= C_FC|delta H_vq| + C_M|C_qT| ||T|| + C_W|B_qWeyl| ||W|| + E_boundary + E_readout + E_tail + E_const_weight_shadow,"C_FC,C_M,C_W; sourced delta H_vq; C_qT; B_qWeyl; local T and W profiles; boundary/readout/tail norms",MISSING_VQ_MASTER_DQ_NORM,MISSING_LOCAL_DQ_BOUND,NONCLAIM_TEMPLATE,False
+DQB3518_1_source_coordinate,D_vq_Y,||D_vq Y|| <= L_Y ||Dq[v_q]||_q + ||Delta_Y_nonbasic||,source-coordinate descent Y=Ybar(q(Phi)); Lipschitz L_Y; nonbasic leakage norm,MISSING_DVQY_NORM,MISSING_SOURCE_COORDINATE_BOUND,NONCLAIM_TEMPLATE,False
+DQB3518_2_local_amplitude,A_loc_vq,|A_loc[v_q]| <= C_A (L_Y ||Dq[v_q]||_q + ||Delta_Y_nonbasic||),local amplitude normalization C_A and source-coordinate bound,MISSING_A_LOC_VQ,MISSING_PPN_OR_R10_TOLERANCE,NONCLAIM_TEMPLATE,False
+DQB3518_3_BqWeyl,B_qWeyl_tail,E_W <= C_W |B_qWeyl| ||P_W W||,"B_qWeyl coefficient, Weyl projection operator, local Weyl profile",MISSING_BQWEYL_COEFFICIENT,MISSING_Weyl_PROFILE_BOUND,NONCLAIM_TEMPLATE,False
+DQB3518_4_CqT,C_qT_matter_tail,E_T <= C_T |C_qT| ||P_T T||,"C_qT coefficient, source stress projection, matter support normalization",MISSING_CQT_COEFFICIENT,MISSING_STRESS_PROFILE_BOUND,NONCLAIM_TEMPLATE,False

@@ -1,0 +1,6 @@
+factor_id,quantity,definition,bound_or_formula,status,valid_for_claim
+FAC3261_0_product,B_alpha^MTS,B_alpha^MTS := beta_source_alpha * b_alpha_EM * tau_WEP,|B_alpha^MTS| <= 1.362001757454e-12 from MICROSCOPE/DD isolated EM branch,PRODUCT_BOUND_REAL_FACTORS_UNSEPARATED,false
+FAC3261_1_b_alpha_EM,b_alpha_EM,canonical parent alpha pullback/drift,b_alpha_EM = -partial_phi ln(C_P N_Q + lambda_A) - rho_readout,MISSING_DERIVATIVE_MAP_OR_FIXED_EM_ZERO,false
+FAC3261_2_beta_source_alpha,beta_source_alpha,same-owner source/force normalization multiplying finite alpha WEP branch,eta_AB_alpha = DeltaQ_alpha_AB beta_source_alpha b_alpha_EM tau_WEP,MISSING_SAME_OWNER_SOURCE_THEOREM_OR_NUMERIC_MAP,false
+FAC3261_3_tau_WEP,tau_WEP,projection/readout/orbit kernel that maps source residual to measured MICROSCOPE differential acceleration,tau_WEP must come from official/source-equivalent readout arrays or parent reduction theorem; tau_WEP=1 shortcut forbidden,MISSING_ACCEPTED_TAU_INPUT,false
+FAC3261_4_inversion,single-factor bound,"if any two factors are supplied, the third is bounded","|b_alpha_EM| <= B_bound/(|beta_source_alpha tau_WEP|), and cyclic permutations",EXACT_FACTOR_INVERSION_LAW_READY,false

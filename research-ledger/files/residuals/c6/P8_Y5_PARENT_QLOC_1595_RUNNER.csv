@@ -1,0 +1,6 @@
+same_parent_branch_id,runner_id,acceptance_rule,input_state,runner_result,effect,score_ready,valid_prediction_row,valid_for_claim,claim_allowed
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,RUN1595_0_action_measure,accept action-measure theorem only if parent owner is signed,AMR1595 verdict still not derived,REJECT_ACTION_MEASURE_THEOREM_CLAIM,finite route stays active,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,RUN1595_1_validator_compat,accept source-backed candidate only as schema/provenance bound input,VCOMP1595 has one schema/provenance pass,ACCEPT_BOUND_ANCHOR_ONLY,no prediction score,False,False,True,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,RUN1595_2_delta_w_score,score Delta_w only if tau_WEP and source projection are supplied,tau_WEP and source/readout kernels missing,REJECT_DELTA_W_NUMERIC_SCORE,no WEP score,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,RUN1595_3_local_GR,accept local GR only after source/coupling/conservation/Newton gates close,source-weight channel remains finite,REJECT_LOCAL_GR_REENTRY,keep local GR blocked,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,RUN1595_4_next,next run should acquire tau_WEP/readout or derive action-measure owner,bound anchor exists but not enough,WAIT_FOR_TAU_OR_THEOREM,1596 target selected,False,False,False,False

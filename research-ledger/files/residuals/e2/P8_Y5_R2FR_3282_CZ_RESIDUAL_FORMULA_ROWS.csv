@@ -1,0 +1,8 @@
+formula_id,object,formula,derivation_status,claim_use,valid_for_claim
+FORM3282_0_ZQ_decomposition,observed Maxwell kinetic coefficient,"Z_Q = Z_0 + lambda_A0 + sum_a f_a(I^a_hid) + delta_lambda_rad(mu,I_hid) + delta_Z_readout",DECOMPOSITION_FROM_3281_COUNTERTERM_LEDGER,identifies every place hidden/radiative/readout drift can enter,false
+FORM3282_1_general_CZ_law,local Maxwell kinetic residual,"C_Z = L_v ln Z_Q = [sum_a f_a,_b L_v I^b_hid + L_v delta_lambda_rad + L_v delta_Z_readout] / Z_Q",EXACT_VERTICAL_DERIVATIVE,turns the vague missing coupling into concrete numeric inputs,false
+FORM3282_2_single_hidden_scalar_law,single scalar hidden F2 leak,C_Z = f'_X(I_hid) L_v I_hid / [Z_0 + lambda_A0 + f_X(I_hid)],EXACT_SPECIAL_CASE,"first numeric C_Z row needs f'_X, L_v I_hid, and denominator Z_Q",false
+FORM3282_3_qbasic_zero_limit,q-basic visible coefficient,Z_Q=q^*Zbar_Q and v in ker(Dq) => C_Z=0,EXACT_ZERO_LIMIT,cleanest local-GR route if parent signs q-basic action/readout,false
+FORM3282_4_exact_shift_zero_limit,exact hidden shift,L_v f_X=0 and L_v delta_lambda_rad=0 => C_Z=0 up to constant alpha-value debt,EXACT_ZERO_LIMIT_IF_WARD_PRESERVED,second clean route if the vertical generator is an exact symmetry,false
+FORM3282_5_pure_CZ_bound_map,alpha residual under signed C_J=C_R=0,C_e = -C_Z and |C_Z| <= 1.389797711495e-12,BOUND_MAP_FROM_3273_AND_3281,scores any future single C_Z prediction without cancellation games,false
+FORM3282_6_numeric_input_contract,first real prediction row requirements,"required: source-backed Z_Q, f_a,_b, L_v I^b_hid, L_v delta_lambda_rad, L_v delta_Z_readout, units/normalization, and source paths",FINITE_ROW_CONTRACT,prevents symbolic placeholders from being scored as evidence,false

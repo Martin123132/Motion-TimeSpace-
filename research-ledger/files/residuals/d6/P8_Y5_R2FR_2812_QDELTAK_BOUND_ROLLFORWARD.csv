@@ -1,0 +1,5 @@
+rollforward_id,branch,bound,meaning,status,claim_allowed,valid_for_claim,generated_utc
+QBR2812_0_operator_zero_branch,if OPS2812 and CME2812 close,"C_Ploc=1 and C_comm=0, so ||q_DeltaK|| <= D_Delta",conditional only; premises fail in current corpus,ZERO_BRANCH_NOT_CLAIMED,False,False,2026-06-24T03:06:58.808397+00:00
+QBR2812_1_finite_bound_branch,current honest branch,||q_DeltaK|| <= C_Ploc D_Delta + (C_comm_parallel+C_comm_domain+C_comm_boundary)||Delta_K||,source-ready but nonnumeric,ROLLED_FORWARD_BOUND_INTERFACE,False,False,2026-06-24T03:06:58.808400+00:00
+QBR2812_2_no_cancellation,absolute envelope,no negative/canceling credit between D_Delta and C_comm||Delta_K|| without a parent identity,prevents fitted cancellation or measured-G absorption,NO_CANCELLATION_GUARD,False,False,2026-06-24T03:06:58.808402+00:00
+QBR2812_3_score_gate,arena score gate,"requires numeric/source-backed C_Ploc, C_comm pieces, Delta_K component norm, zeta/body measure and arena projection",not ready for PPN/WEP/orbital/clock claims,NOT_SCORE_READY,False,False,2026-06-24T03:06:58.808405+00:00

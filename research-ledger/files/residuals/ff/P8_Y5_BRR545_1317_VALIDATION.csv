@@ -1,0 +1,12 @@
+check_id,check,status,details
+VAL1317_0_sources_exist,registered source paths exist and anchors are found,PASS,6/6 source anchors found
+VAL1317_1_template_covers_requirements,every 1316 P0 requirement has a fillable template row,PASS,template_rows=17 requirements=17
+VAL1317_2_validation_rules_cover_template,every template row has a matching validation rule,PASS,rules=17 template_rule_ids=17
+VAL1317_3_theorem_certificates_blank,theorem-zero certificate templates exist but are unsigned,PASS,CERT1317_0_parent_object_language;CERT1317_1_alpha_F2_zero;CERT1317_2_clock_readout;CERT1317_3_source_weight_zero;CERT1317_4_r10_product_vector;CERT1317_5_cross_arena_functor
+VAL1317_4_runner_refuses_all,priority runner refuses all current product rows,PASS,RUN1314_0_alpha:4;RUN1314_1_clock:4;RUN1314_2_wep:5;RUN1314_3_r10:9;RUN1314_4_cross_arena:1
+VAL1317_5_no_threshold_or_unity_shortcuts,anti-shortcut gates are enforced,PASS,SHORT1317_0_no_unity_defaults;SHORT1317_1_no_threshold_as_prediction;SHORT1317_2_no_blank_source_path;SHORT1317_3_no_partial_theorem_certificate;SHORT1317_4_no_anchor_curve_claim;SHORT1317_5_no_cross_arena_transfer
+VAL1317_6_promotion_queue_nonclaim,promotion queue remains source/certificate work only,PASS,PROMQ1317_0_parent_first;PROMQ1317_1_r10_bound;PROMQ1317_2_clock_direct
+VAL1317_7_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1317_8_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1317_9_next_target_1318,next target routes to parent theorem certificate first fill/reject,PASS,1318-Y5-R10-RAB-parent-theorem-certificate-first-fill-or-reject.md
+VAL1317_10_overall,overall 1317 validation,PASS,"1317 creates fillable P0 source/certificate templates, a refusing priority runner, and a parent-certificate-first next target"

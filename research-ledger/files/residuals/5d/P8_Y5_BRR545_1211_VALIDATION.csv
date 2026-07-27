@@ -1,0 +1,15 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1211_0_sources_exist,all cited local sources exist,PASS,10/10 sources exist,False,False
+VAL1211_1_needles_found,all cited source needles found,PASS,10/10 needles found,False,False
+VAL1211_2_definition_present,G_res live object is defined,PASS,GDEF1211_0 present,False,False
+VAL1211_3_decomposition_present,G_res decomposition is present,PASS,GDEF1211_1 present,False,False
+VAL1211_4_total_zero_blocked,G_res zero is not overclaimed,PASS,ZG1211_5 total zero blocked,False,False
+VAL1211_5_component_rows,source-ready component rows are staged,PASS,"G_res_profile,G_scalar_exactness,G_source_side,G_parent_LHS,G_boundary_harmonic,C_P",False,False
+VAL1211_6_pressure_bridge,1210 C_P*G_res product bridge is staged,PASS,"allowed=[117233215026, 1.17233215026e+28]",False,False
+VAL1211_7_target_preserved,1210 projector target is preserved,PASS,target=1.17233215026e-05,False,False
+VAL1211_8_no_missing_claim_rows,no row with MISSING is valid for claim,PASS,all source-ready rows nonclaim,False,False
+VAL1211_9_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout,False,False
+VAL1211_10_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1211_SOURCE_REGISTER.csv:10; P8_Y5_R10_1211_GRES_DEFINITION_AND_DECOMPOSITION.csv:4; P8_Y5_R10_1211_GRES_ZERO_THEOREM_AUDIT.csv:6; P8_Y5_R10_1211_GRES_BOUND_DECOMPOSITION.csv:6; P8_Y5_R10_1211_SOURCE_READY_GRES_ROWS.csv:6; P8_Y5_R10_1211_CP_GRES_PRESSURE_BRIDGE.csv:4; P8_Y5_R10_1211_DECISION_LEDGER.csv:2; P8_Y5_R10_1211_CLAIM_GATES.csv:4; P8_Y5_R10_1211_NEXT_TARGET.csv:1,False,False
+VAL1211_11_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_after_run_start_count=0,False,False
+VAL1211_12_next_target,next target is staged,PASS,1212-Y5-R10-Gres-zero-source-side-EH-limit-or-first-profile-row.md,False,False
+VAL1211_13_overall,overall 1211 validation,PASS,1211 G_res decomposition/source pack is reproducible and nonclaim,False,False

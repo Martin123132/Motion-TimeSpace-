@@ -1,0 +1,15 @@
+validation_id,passed,requirement,evidence
+VAL3029_00_sources_exist,True,every cited local source path exists,P8_Y5_R2FR_3029_SOURCE_REGISTER.csv
+VAL3029_01_csv_parse,True,generated CSV rows parse cleanly,all generated CSV artifacts import with csv.DictReader
+VAL3029_02_lift_candidate,True,covariant lift candidate is recorded,P8_Y5_R2FR_3029_COVARIANT_LHCORE_LIFT_CANDIDATE.csv
+VAL3029_03_lift_rejected,True,covariant lift fails closed,P8_Y5_R2FR_3029_COVARIANT_LIFT_CLAUSE_AUDIT.csv
+VAL3029_04_static_map,True,static reduction map exists,P8_Y5_R2FR_3029_STATIC_REDUCTION_MAP.csv
+VAL3029_05_K0_nonclaim,True,K0 normalization is explicitly nonclaim,P8_Y5_R2FR_3029_FIRST_COMPONENT_VALUE_ATTEMPT.csv
+VAL3029_06_risks_present,True,clock-lift preferred-frame risk is recorded,P8_Y5_R2FR_3029_CLOCK_LIFT_RISK_LEDGER.csv
+VAL3029_07_claims_blocked,True,all rows remain nonclaim/private-control rows,all 3029 generated ledgers
+VAL3029_08_missing_markers_nonclaim,True,rows with MISSING markers are never valid_for_claim=true,all 3029 generated ledgers
+VAL3029_09_branch_copies_exist,True,branch copies and acquisition queue exist,P8_Y5_R2FR_3029_BRANCH_COPIES.csv
+VAL3029_10_outputs_scoped,True,no generated file is outside post-checkpoint-work,generated path scope check
+VAL3029_11_formalization_not_targeted,True,formalization-workbench is not modified by this checkpoint,output target list excludes formalization-workbench
+VAL3029_12_next_target_selected,True,next target selects clock-lapse package or first A_source row,P8_Y5_R2FR_3029_NEXT_TARGET.csv
+VAL3029_99_overall,True,all 3029 validation checks pass,aggregate of VAL3029_00 through VAL3029_12

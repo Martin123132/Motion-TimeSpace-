@@ -1,0 +1,6 @@
+same_parent_branch_id,gate_id,gate,current_status,rule,valid_for_claim,claim_allowed
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,CG1491_0_common_mode,common w_star calibration,guarded,w_star is not a WEP signal only if species/time/range/frame/source-body silent,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,CG1491_1_delta_definition,delta_w_A = w_A - w_star,locked,"all arena rows compare relative source weights, not common calibration",False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,CG1491_2_no_cancellation,no tuned vector cancellation,active_block,"component products must pass by norm/covariance or parent identity, not cherry-picked cancellation",False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,CG1491_3_same_branch,same branch product,active_block,"do not mix DD smoke, MICROSCOPE surrogate, and parent basis rows as one claim",False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,CG1491_4_cross_arena,no cross-arena transfer,active_block,clock product bound cannot become WEP/R10 bound without a projection theorem,False,False

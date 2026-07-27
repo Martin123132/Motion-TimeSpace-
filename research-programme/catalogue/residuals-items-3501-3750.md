@@ -3,6 +3,8 @@
 Direct links for 250 files. Item numbers are catalogue
 ordinals, not scientific checkpoint identifiers.
 
+- [`P8_Y5_R2FR_4723_NEXT_TARGET.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4723_NEXT_TARGET.csv) (602 bytes)
+- [`P8_Y5_R2FR_4723_PARENT_EH_EVIDENCE_HUNT_ROWS.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4723_PARENT_EH_EVIDENCE_HUNT_ROWS.csv) (5931 bytes)
 - [`P8_Y5_R2FR_4723_PROMOTION_GATES.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4723_PROMOTION_GATES.csv) (1423 bytes)
 - [`P8_Y5_R2FR_4723_R2_MR_ALPHA_FIRST_SOURCE_ROW.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4723_R2_MR_ALPHA_FIRST_SOURCE_ROW.csv) (3536 bytes)
 - [`P8_Y5_R2FR_4723_R2_SOURCE_HUNT_STATUS.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4723_R2_SOURCE_HUNT_STATUS.csv) (1313 bytes)
@@ -251,5 +253,3 @@ ordinals, not scientific checkpoint identifiers.
 - [`P8_Y5_R2FR_4746_FIREWALL_ROWS.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4746_FIREWALL_ROWS.csv) (763 bytes)
 - [`P8_Y5_R2FR_4746_LORENTZIAN_ENERGY_BOUND.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4746_LORENTZIAN_ENERGY_BOUND.csv) (1202 bytes)
 - [`P8_Y5_R2FR_4746_NEXT_TARGET.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4746_NEXT_TARGET.csv) (460 bytes)
-- [`P8_Y5_R2FR_4746_OWNER_SYMBOL_COMPLETION_LEDGER.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4746_OWNER_SYMBOL_COMPLETION_LEDGER.csv) (959 bytes)
-- [`P8_Y5_R2FR_4746_PROMOTION_GATES.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4746_PROMOTION_GATES.csv) (1090 bytes)

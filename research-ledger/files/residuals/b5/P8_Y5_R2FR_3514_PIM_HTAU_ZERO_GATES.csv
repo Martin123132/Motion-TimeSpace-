@@ -1,0 +1,6 @@
+gate_id,condition,meaning,current_status,blocks_claim,next_action,valid_for_claim
+PHCG3514_0_mass_flat_connection,partial_M A_X^M=0 and partial_M A_X^a=0,residual direction X does not reparameterize mass or leak mass into source-shape coordinates,NOT_PARENT_DERIVED,True,derive A_X from q(Phi) source-branch geometry,False
+PHCG3514_1_integrable_Htau,curl(delta H_tau)=0 up to exact/proper boundary terms,H_tau is a real charge rather than path-dependent bookkeeping,HTAU_CURL_GATE_OPEN,True,derive theta_MTS/omega_MTS owner,False
+PHCG3514_2_fixed_support,D_X W_source = 0 at fixed source-current support class,Pi_M is not secretly moving the source domain after seeing data,WORLDTUBE_SELECTOR_UNSIGNED,True,prove W_source=closure(supp J_H[tau]),False
+PHCG3514_3_source_blind_reference,"D_X H_ref=0 and [D_X,Pi_M]H_ref=0",reference subtraction cannot launder the mass-current normalization,REFERENCE_SELECTOR_UNSIGNED,True,derive Sigma_ref selector,False
+PHCG3514_4_same_frame,"tau, e_obs, surfaces and readout frame are the same branch data",the commutator is not being changed by clock/frame normalization,RFRAME_PARALLEL_GATE_OPEN,True,keep with R_frame product-lock branch,False

@@ -1,0 +1,4 @@
+decision_id,decision,because,next_action,valid_for_claim,claim_allowed
+DEC1226_0_portal_found_not_claim,"record CMSM portal as the official acquisition target, not as acquired data",the run found public provenance but did not enumerate or download official packages,build a portal/package map or access-blocker probe,False,False
+DEC1226_1_no_surrogate,forbid surrogate arrays for tau_WEP claim,tau_WEP depends on official readout/source/orbit conventions,only use surrogate data for smoke tests with valid_for_claim=false,False,False
+DEC1226_2_data_plumbing_bottleneck,treat readout/source acquisition as the next bottleneck,the local-GR source-weight branch is now theory-contracted but not empirically scoreable,attempt a safe package-map/download dry run into D-drive staging paths,False,False

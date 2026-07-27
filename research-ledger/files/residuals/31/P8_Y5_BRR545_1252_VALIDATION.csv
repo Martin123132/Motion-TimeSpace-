@@ -1,0 +1,13 @@
+check_id,check,status,details
+VAL1252_0_sources_exist,all cited local sources exist,PASS,9/9 sources exist
+VAL1252_1_needles_found,all cited local needles found,PASS,9/9 needles found
+VAL1252_2_branches_complete,local branch status covers all active routes,PASS,branch_rows=5
+VAL1252_3_decision_tree,decision tree separates theorem/finite/pheno/closure routes,PASS,decision_tree_rows=4
+VAL1252_4_matrix_separates,derived-vs-closure matrix keeps Q_R and finite q_Rhat distinct,PASS,Q_R=0 closure/underived and finite q_Rhat missing
+VAL1252_5_next_action,best next action targets H_core boundary charge,PASS,derive reciprocal H_core/boundary charge class
+VAL1252_6_claim_gates,claim gates remain blocked/nonclaim,PASS,claim_gate_rows=5
+VAL1252_7_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1252_8_next_target_1253,next target is reciprocal H_core boundary charge derivation,PASS,1253-Y5-R10-reciprocal-Hcore-boundary-charge-derivation-attempt.md
+VAL1252_9_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1252_SOURCE_REGISTER.csv:9; P8_Y5_R10_1252_LOCAL_BRANCH_STATUS_LEDGER.csv:5; P8_Y5_R10_1252_LOCAL_BRANCH_DECISION_TREE.csv:4; P8_Y5_R10_1252_DERIVED_VS_CLOSURE_MATRIX.csv:5; P8_Y5_R10_1252_NEXT_ACTION_LEDGER.csv:3; P8_Y5_R10_1252_CLAIM_GATES.csv:5; P8_Y5_R10_1252_DECISION_LEDGER.csv:1; P8_Y5_R10_1252_NEXT_TARGET.csv:1
+VAL1252_10_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_write_count_since_run_start=0
+VAL1252_11_overall,overall 1252 validation,PASS,"1252 creates the authoritative local branch status ledger and decision tree without merging closure, theorem, finite, or phenomenological routes"

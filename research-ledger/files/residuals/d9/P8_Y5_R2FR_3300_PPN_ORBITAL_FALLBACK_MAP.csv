@@ -1,0 +1,5 @@
+map_id,branch,condition,local_effect,test_handle,current_status,valid_for_claim
+PO3300_0_Newtonian_limit,curvature_squared_zero,CZ3300_0..4 parent-signed,standard Poisson equation with G_cal and no quadratic-curvature residual source,local GR/Newton branch can proceed to remaining delta_A/c_mem/c_phi/c_VT/c_top checks,CONDITIONAL_ONLY,false
+PO3300_1_R2_PPN,finite_c_R2,alpha_0/lambda_0 derived or sourced,metric slip and PPN gamma/beta shift as a function of range and environment,Cassini/light-bending/ephemerides plus R10 if lambda_0 is short-range,SYMBOLIC_NONCLAIM,false
+PO3300_2_Ricci_Weyl_PPN,finite_c_Ric,alpha_2/lambda_2 and stable sign convention derived or sourced,"spin-2 metric slip, light-bending change, and perihelion/precession residuals",PPN/orbital first; R10/Yukawa only if a finite range is obtained,SYMBOLIC_NONCLAIM,false
+PO3300_3_no_single_arena_claim,finite_quadratic_curvature,all nonzero modes must clear their own strongest local arenas,a pass in one Yukawa window does not erase PPN/orbital/light-bending constraints,multi-arena consistency gate,GUARDRAIL,false

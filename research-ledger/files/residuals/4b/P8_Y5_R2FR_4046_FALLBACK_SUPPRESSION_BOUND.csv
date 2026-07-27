@@ -1,0 +1,4 @@
+fallback_id,used_if,formula,required_inputs,claim_status,valid_for_public_claim,timestamp_utc
+FSB4046_0_static,no-reset branch or open source is allowed,||X_mem|| <= (||J_open|| + B_lift)/lambda_gap,"a_min, C_P/L_D^2, m_min^2, ||J_open||, B_lift",NONCLAIM_VALUES_MISSING,False,2026-07-02T00:06:53+00:00
+FSB4046_1_dynamic,incoming memory or finite relaxation interval is allowed,||X_mem(t)|| <= exp(-gamma_mem Delta t)||X_mem(t0)|| + (1-exp(-gamma_mem Delta t))sup||J_open+B_lift||/lambda_gap,"gamma_mem, Delta t, X_mem(t0), source supremum, lambda_gap",NONCLAIM_VALUES_MISSING,False,2026-07-02T00:06:53+00:00
+FSB4046_2_observable,tail amplitude is finite not zero,|Delta O_i| <= K_i||X_mem|| + K_i_grad||grad X_mem||,"arena-specific K_i, K_i_grad, and gradient bound",NONCLAIM_VALUES_MISSING,False,2026-07-02T00:06:53+00:00

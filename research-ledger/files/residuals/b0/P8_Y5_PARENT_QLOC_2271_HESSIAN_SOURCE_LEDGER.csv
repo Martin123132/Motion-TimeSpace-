@@ -1,0 +1,5 @@
+ledger_id,target,definition,needed_inputs,current_status,score_ready,valid_for_claim
+HSL2271_0_MR2_definition,M_R^2,"M_R^2 := second derivative of Gamma[Phi,q] with respect to q at q=0, normalized to L_q=-1/2 M_R^2 q^2",effective action Gamma; psi lift delta_q psi; units; background Phi; density convention,MISSING_EFFECTIVE_ACTION_AND_LIFT,False,False
+HSL2271_1_jR_definition,j_R,"J_R=j_R L+O(L^2), where J_R is the q-directed matter/readout source",matter/readout action in Phi/q variables; source normalization; L=2GM/(rc^2) convention,MISSING_MATTER_READOUT_PULLBACK,False,False
+HSL2271_2_qR_ratio,q_R,q_R=j_R/M_R^2 for the algebraic finite branch,HSL2271_0 and HSL2271_1 with compatible units and no-gradient guard,MISSING_RATIO_INPUTS,False,False
+HSL2271_3_absence_switch,q=0 theorem,q theorem-zero can replace q_R only if q is absent/vertical before variation,q absence/vertical proof plus matter/readout descent,THEOREM_ZERO_FALSE_CURRENT_CORPUS,False,False

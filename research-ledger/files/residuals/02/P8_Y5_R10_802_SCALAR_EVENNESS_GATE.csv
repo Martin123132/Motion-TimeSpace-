@@ -1,0 +1,5 @@
+gate_id,input_form,power,gate_result,reason,replacement_or_requirement,valid_for_claim,generated_utc
+EV802_0_bad_abs_value,E_theta=|theta|/(3H_bg) or any |z| source term,O(|z|),fail_for_double_zero,absolute-value classifiers are fine for routing but unsafe as local metric/source readouts,use smooth signed coordinates and source only through z^2 or stationary coefficients,false,2026-06-12T13:16:20+00:00
+EV802_1_smooth_quadratic_scalar,"Q_theta=z_theta^2, Q_dotB=z_dotB^2",O(D_L^2),closure_pass_not_parent_signed,smooth quadratic readouts remove scalar linear leakage,derive why parent action/readout uses Q terms rather than |z| terms,false,2026-06-12T13:16:20+00:00
+EV802_2_norm_only_readout,"m_L-m_*=M(Q_theta,Q_dotB,R_vec,R_tensor)",O(D_L^2),conditional_theorem,all arguments vanish quadratically or are killed by symmetry,"parent-sign smoothness, stationarity, and no odd scalar terms",false,2026-06-12T13:16:20+00:00
+EV802_3_trace_readout,"L_cg^-2 F_L-Lambda_loc=T(Q_theta,Q_dotB,R_vec,R_tensor)",O(D_L^2),conditional_theorem,same scalar smoothness condition gives pT=2,parent-sign trace baseline stationarity and coefficient boundedness,false,2026-06-12T13:16:20+00:00

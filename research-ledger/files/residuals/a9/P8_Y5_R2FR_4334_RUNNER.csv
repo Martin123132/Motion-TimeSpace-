@@ -1,0 +1,5 @@
+runner_id,branch_input,action,output,claim_policy
+RUN4334_0_source_backed_matrix,all required Pi_arena rows numeric and source-backed before scoring,ALLOW_NONCLAIM_NUMERIC_SMOKE,compute R_arena and compare to sourced bound,still nonclaim until full arena validation passes
+RUN4334_1_current_placeholders,current Pi rows contain MISSING_* or source_path=MISSING_SOURCE_PATH,BLOCK_SCORE,blocked_missing_projection_matrix,no local claim
+RUN4334_2_identity_projection,identity Pi assumed for debugging,DEBUG_ONLY_REJECT_CLAIM,identity bounds allowed only as sanity rows,valid_for_claim=false
+RUN4334_3_postfit_matrix,Pi chosen after residual inspection,REJECT_POSTFIT_PROJECTION,projection invalid,firewall

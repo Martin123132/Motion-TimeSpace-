@@ -1,0 +1,7 @@
+gate_id,gate,status,reason,valid_for_claim,claim_allowed
+GATE1368_0_Mm_fixed_field_relative_branch,M_m chain response has a clean fixed-field relative zero branch,PASS_RELATIVE_ONLY,"1301 derives delta_g m=0 at fixed independent scalar fields, but parent clauses are unsigned.",False,False
+GATE1368_1_Mm_live_kernel_resolved,Live parent route either signs fixed-field m or supplies M_m response coefficients,BLOCKED,metric-composite/readout/domain/projector counterbranch remains retained.,False,False
+GATE1368_2_ML_kernel_resolved,L_cg metric response is zero-derived or bounded,BLOCKED,no parent L_cg definition or metric-silence theorem is present.,False,False
+GATE1368_3_connection_domain_boundary_resolved,"K_conn, K_domain, and K_boundary are zero-derived or bounded",BLOCKED,1367 retained all three as open response kernels.,False,False
+GATE1368_4_q_loc_to_gamma_projection,q_loc residual maps to PPN gamma under a signed weak-field convention,BLOCKED,"Cassini comparator exists, but q_loc-specific projection map does not.",False,False
+GATE1368_5_local_GR_reopen,local GR / q_loc=0 branch can be reopened,BLOCKED_NO_LOCAL_GR_CLAIM,M_L and projection-map blockers remain after the M_m conditional progress.,False,False

@@ -1,0 +1,7 @@
+case_id,description,C_g,C_hatm,C_e,epsilon_MICROSCOPE,epsilon_EOTWASH,dd_projection_status,input_status,valid_for_claim
+VCASE3270_0_no_vertex_zero,signed no-direct-vertex branch smoke: all DD visible coefficients and source residuals zero,0,0,0,0,0,DD_PROJECTED,CONDITIONAL_ZERO_SMOKE_NOT_PARENT_SIGNED,false
+VCASE3270_1_tiny_alpha_vertex,small hidden EM vertex smoke with C_e=b_alpha=1e-13,0,0,1e-13,0,0,DD_PROJECTED,NUMERIC_SMOKE_NONCLAIM,false
+VCASE3270_2_tiny_mass_vertex,small hidden mass-spectrum vertex smoke with C_hatm-C_g=1e-13,0,1e-13,0,0,0,DD_PROJECTED,NUMERIC_SMOKE_NONCLAIM,false
+VCASE3270_3_large_alpha_vertex_fail,large hidden EM vertex smoke proving the runner catches an over-bound alpha leak,0,0,1e-9,0,0,DD_PROJECTED,FAILURE_SMOKE_NONCLAIM,false
+VCASE3270_4_source_weight_epsilon,source-only weight is not hidden in C_parent; it is an explicit epsilon residual,0,0,0,3.030612244898e-15,0,DD_PROJECTED_WITH_EXPLICIT_EPSILON,SOURCE_WEIGHT_EPSILON_SMOKE_NONCLAIM,false
+VCASE3270_5_hidden_frame_refusal,hidden conformal/disformal frame is outside the two-channel DD basis and must route to PPN/clock vector,0,0,0,0,0,REFUSE_OUTSIDE_DD_BASIS,REFUSAL_CASE_FRAME_NOT_DD,false

@@ -1,0 +1,8 @@
+kernel_id,gate,requirement,current_status,blocks_if_missing,claim_allowed,valid_for_claim
+R10K1391_0_force_law,force law convention,"bulk residual must be expressed as a Yukawa/inverse-square strength ratio alpha_bulk,ST(lambda)",SCHEMA_READY,R10 comparator cannot read the prediction,False,False
+R10K1391_1_source_leg,bulk source leg,"beta_bulk,S or theorem-zero certificate, with material/source geometry",MISSING_SOURCE_LEG,no R10 alpha prediction,False,False
+R10K1391_2_test_leg,bulk test leg,"beta_bulk,T or theorem-zero certificate, with test-body material composition",MISSING_TEST_LEG,no WEP/R10 test response,False,False
+R10K1391_3_profile_kernel,"K_bulk,ST(lambda) profile factor",finite-size/source-test geometry kernel in the same lambda convention as the bound curve,MISSING_PROFILE_KERNEL,no comparison at a physical lambda,False,False
+R10K1391_4_bound_curve,external alpha(lambda) bound,dense positive numeric alpha_bound(lambda) curve or official machine-readable table,ANCHOR_ONLY_NOT_CLAIM_READY,anchor-only threshold cannot support R10 score,False,False
+R10K1391_5_comparator,strict comparator,"abs(alpha_bulk,ST(lambda)) <= alpha_bound(lambda) for all valid rows, with both sides valid_for_claim=true",COMPARATOR_AVAILABLE_BUT_NO_VALID_ROWS,runner must keep R10_pass_for_claim=false,False,False
+R10K1391_6_verdict,R10 kernel gate verdict,all source/test/kernel/bound/comparator gates close before any R10 claim,R10_KERNEL_GATE_READY_SCORING_BLOCKED,"R10, Newton, PPN, WEP, and local-GR promotion remain blocked",False,False

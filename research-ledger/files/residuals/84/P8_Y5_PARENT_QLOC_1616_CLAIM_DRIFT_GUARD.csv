@@ -1,0 +1,7 @@
+same_parent_branch_id,guard_id,guard_rule,failure_mode,guard_active,valid_for_claim,claim_allowed
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,CDG1616_0_label,any local-GR statement must state closure/source-data/derivation status,BLOCK_IF_UNLABELLED,True,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,CDG1616_1_closure,closure models may be discussed only as closure benchmarks,BLOCK_IF_CALLED_DERIVED,True,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,CDG1616_2_data,official source data may be imported only as nonclaim quarantine rows,BLOCK_IF_PROMOTED_FROM_POINTER_OR_TEMPLATE,True,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,CDG1616_3_q_loc,derived local GR requires q_loc zero or bounded residual from parent route,BLOCK_IF_QLOC_RETAINED,True,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,CDG1616_4_source_measure,Newton/GM normalization requires parent source-measure bridge,BLOCK_IF_MEASURED_G_BORROWED,True,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,CDG1616_5_public,public claim MTS reduces to GR requires all reopen conditions pass,BLOCK_UNTIL_ALL_GATES_PASS,True,False,False

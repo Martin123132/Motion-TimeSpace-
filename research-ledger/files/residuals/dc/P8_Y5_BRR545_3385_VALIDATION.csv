@@ -1,0 +1,11 @@
+check_id,check,passed,detail
+VAL3385_0_sources_exist_parse,all cited 3385 source paths exist and parse,true,
+VAL3385_1_outputs_parse,all generated CSV outputs parse cleanly,true,parsed=9 expected=9
+VAL3385_2_rescore_rows,Cassini rescore has at least one scenario,true,rows=9
+VAL3385_3_thresholds,epsilon thresholds cover four response products,true,
+VAL3385_4_runner,runner executes and blocks source-ready claim,true,
+VAL3385_5_gates,gates pass execution/external bound and block MTS/local PPN claim,true,
+VAL3385_6_no_overclaim_flags,all generated rows with valid_for_claim remain false,true,
+VAL3385_7_next_target,next target moves to epsilon_eff parent silence,true,
+VAL3385_8_write_scope_outside_formalization,no 3385 files were written under formalization-workbench,true,hits=0
+VAL3385_9_overall,3385 validation overall,true,all required checks passed

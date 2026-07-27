@@ -1,0 +1,5 @@
+law_id,field_equation,source_density,exterior_profile,charge_formula,zero_condition,valid_for_claim
+BC4505_0_generic_field,(-Z_X nabla^2 + M_X^2) X = rho_X,rho_X=B_X R_obs + C_X T + J_X,"X(r,n)=A_X(n) exp(-r/lambda_X)/r + higher multipoles","A_X(n)=Q_X(n)/(4*pi*Z_X)+A_boundary, Q_X(n)=int_body exp(n.x'/lambda_X) rho_X(x') dV'",Q_X(n)=0 for all directions plus A_boundary=0,False
+BC4505_1_spherical_monopole,static spherical massive scalar,rho_X(r),X(r)=A_X exp(-r/lambda_X)/r,Q_X0=4*pi int_0^R dr' r'^2 rho_X(r') sinh(r'/lambda_X)/(r'/lambda_X),weighted monopole Q_X0 plus boundary charge vanishes,False
+BC4505_2_absolute_bound,same generic branch,rho_X with support radius R_body,|A_X| bound,|A_X| <= [exp(R_body/lambda_X) int_body |rho_X| dV + |Q_boundary|]/(4*pi |Z_X|),finite bound route if zero theorem fails,False
+BC4505_3_scalaron_mapping,(nabla^2-m_R^2)R=S_R,"S_R is the MTS-mapped scalaron source, conventionally kappa T/(6 mu) only in standard f(R)",R=A_body exp(-m_R r)/r,A_body is the corresponding weighted Green-function charge after MTS source/frame/screening normalization,A_body=0 or short-range/finite bound,False

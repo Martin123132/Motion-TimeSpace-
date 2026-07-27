@@ -1,0 +1,117 @@
+# 3362 - Source-Current Gauge Lock And Gref Owner Under AX1090
+
+Generated: `2026-06-28T04:30:51.690789+00:00`
+
+## Summary
+- This checkpoint takes the coupling seriously instead of circling the old Yloc parity route.
+- Real derivation: Bianchi/Noether identities conditionally force variable source coupling to be constant: `T_H^{mu nu} partial_mu kappa_g=0` or `J^mu partial_mu kappa_J=0`, and current/stress richness then gives `partial kappa=0`.
+- Important correction: that does not derive the numerical value of Newton's constant. GR does not derive that either. Local GR recovery needs one universal source-blind `G_ref`, not a computed SI number.
+- Remaining live pieces are now split cleanly: species/source prefactors, extra mass projection, compensator/source-shadow currents, same-frame readout, and optional topological `G_ref` ownership.
+- No local GR/Newton claim is promoted; the next step should be quantitative if the no-prefactor/source-mass theorem does not close.
+
+## Local Source Register
+| source_id | path | exists | parseable | usage | valid_for_claim |
+| --- | --- | --- | --- | --- | --- |
+| LSRC3362_0_3361_doc | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\3361-Y5-R2FR-odd-residual-parentization-and-physical-lock-under-AX1090.md | true | true | 3361 handoff | false |
+| LSRC3362_1_3361_next | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_3361_NEXT_TARGET.csv | true | true | 3361 next target | false |
+| LSRC3362_2_3361_y5_obstruction | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_3361_Y5_ZERO_MODE_OBSTRUCTION.csv | true | true | Y5 zero-mode obstruction | false |
+| LSRC3362_3_current_gauge_lock | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_3274_CURRENT_NORMALIZATION_GAUGE_LOCK_LEMMA.csv | true | true | current normalization gauge lock lemma | false |
+| LSRC3362_4_compensator_trichotomy | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_3275_COMPENSATOR_CURRENT_TRICHOTOMY.csv | true | true | compensator current trichotomy | false |
+| LSRC3362_5_rep_current | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_3277_REPRESENTATION_CURRENT_THEOREM.csv | true | true | representation current theorem | false |
+| LSRC3362_6_source_universality | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_3290_SOURCE_CURRENT_UNIVERSALITY_THEOREM.csv | true | true | source-current universality theorem | false |
+| LSRC3362_7_weight_class | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_3291_CURRENT_WEIGHT_CLASSIFICATION.csv | true | true | current weight classification | false |
+| LSRC3362_8_coupling_decomp | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_3339_COUPLING_DECOMPOSITION_THEOREM.csv | true | true | coupling decomposition theorem | false |
+| LSRC3362_9_current_verdict | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_3342_CURRENT_CORPUS_VERDICT.csv | true | true | current corpus verdict | false |
+| LSRC3362_10_source_owner | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_SOURCE_NORMALIZATION_OWNER_THEOREM.csv | true | true | Y5 source normalization owner theorem | false |
+| LSRC3362_11_source_stack | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_SOURCE_NORMALIZATION_THEOREM_STACK.csv | true | true | source normalization theorem stack | false |
+| LSRC3362_12_min_source_readout | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_3037_MINIMUM_SOURCE_READOUT_LOCK_PARENT_CLAUSE.csv | true | true | minimum source-readout parent clause | false |
+| LSRC3362_13_gref_lock | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_3050_GREF_LOCK_AND_AW_NORMALIZATION_AUDIT.csv | true | true | G_ref lock and A_W normalization audit | false |
+| LSRC3362_14_wphi_lock | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_3052_GREF_WPHI_SOURCE_READOUT_LOCK_CANDIDATE.csv | true | true | G_ref/W/Phi source-readout candidate | false |
+| LSRC3362_15_source_mass | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_3109_SOURCE_MASS_LOCK_DELTA_GM_ROWS.csv | true | true | source mass lock and DeltaGM rows | false |
+| LSRC3362_16_r11_source_norm | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_R11_SOURCE_NORMALIZATION_OPERATOR_MINIMUM_FILL.csv | true | true | R11 source normalization operator rows | false |
+| LSRC3362_17_ppn_vector | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_3110_LOCAL_PPN_RESIDUAL_VECTOR.csv | true | true | local PPN residual vector | false |
+| LSRC3362_18_3357_scope | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_3357_CLAIM_SCOPE_SEPARATION.csv | true | true | AX1090 source-side theorem scope | false |
+| LSRC3362_19_3358_surface | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_3358_EPSILON_SURFACE_SOURCE_UPDATE.csv | true | true | surface/source residual update | false |
+
+## Current Gauge Theorem Packet
+| theorem_id | statement | math_form | proof_status | proof_sketch | what_it_derives | what_it_does_not_derive | valid_for_claim |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| CG3362_0_Maxwell_current_lock | For an exact gauge current, a spacetime-dependent current normalization is forbidden unless the ordinary current is tangent to its level sets or a compensating current carries the mismatch. | nabla_mu(kappa_J J_Q^mu)=0 and nabla_mu J_Q^mu=0 imply J_Q^mu nabla_mu ln(kappa_J)=0 | EXACT_CONDITIONAL_CURRENT_LOCK | Take the divergence of the Maxwell source equation. Antisymmetry/gauge identity kills the left side. Subtract the Noether conservation law for the parent-owned current. | no local time/range/material variation in kappa_J if current richness and no compensator are parent-signed | the absolute numerical value of the coupling constant | false |
+| CG3362_1_gravitational_Bianchi_lock | The same logic applies to the gravitational Hilbert source coupling: Bianchi plus matter Ward conservation kills variable gravitational coupling if no extra source current remains. | E^{mu nu}=kappa_g(x) T_H^{mu nu}+Delta J^{mu nu}; nabla_mu E^{mu nu}=0; nabla_mu T_H^{mu nu}=0; Delta J=0 => T_H^{mu nu} nabla_mu kappa_g=0 | EXACT_CONDITIONAL_GRAVITATIONAL_LOCK | Use diffeomorphism invariance of the left-hand side and the matter Ward identity of the same observed metric/coframe. If allowed local stress tensors are rich enough, the only branch-safe solution is nabla_mu kappa_g=0. | constant local G_eff / kappa_g under source-richness, same-frame Hilbert source, and no extra source projection | one universal value across all source classes unless source-only prefactors are grammatically excluded | false |
+| CG3362_2_universality_requires_no_prefactor_grammar | Bianchi/current conservation can force each allowed coupling weight to be constant, but equality of constants requires a separate no-source-prefactor or common-representation theorem. | E=sum_A kappa_A T_A; independent Ward identities give T_A^{mu nu} partial_mu kappa_A=0, not automatically kappa_A=kappa_B | EXACT_LIMIT_OF_CURRENT_LOCK | A theory with two constant species weights is still conserved and covariant. Therefore universality is not implied by conservation alone; it comes from the parent grammar having only one Hilbert source slot. | the precise extra premise needed for WEP/source universality | species-blind source coupling in current MTS without adopting the parent no-prefactor clause | false |
+| CG3362_3_Gref_parameter_distinction | Local GR/Newton needs one universal constant G_ref; deriving the numerical value of G_ref is a stronger parent-theory problem, not something GR itself supplies. | G_ref = kappa_g c^4/(8*pi), with partial G_ref=0 and no source/range/frame dependence | EXACT_SCOPE_DISTINCTION | Once kappa_g is a universal constant, the weak-field limit gives the Newtonian coefficient. The number can be measured or fixed by a deeper topological/superselection sector; it is not derived by the local Bianchi argument. | why a universal constant is acceptable for local-GR reduction while variable/source-dependent coupling is not | the observed SI value of Newton's constant | false |
+| CG3362_4_Y5_closure_condition | Y5 closes only if current/Bianchi lock, one Hilbert source slot, no compensator/source-shadow, same observed frame, G_ref owner, and no extra mass projection all hold in one branch. | epsilon_mu = DeltaG_derivative + DeltaG_species + DeltaG_frame + DeltaM_extra + DeltaG_absolute; all but allowed G_ref constant must vanish or be bounded | CLOSURE_CONTRACT_DERIVED_NOT_SATISFIED | Collect the necessary consequences of CG3362_0 through CG3362_3 and the 3361 Gauss-flux obstruction. A single missing clause leaves a source-normalization residual. | a non-circular pass/fail contract for calibrated source coupling | current MTS satisfaction of every clause | false |
+
+## Gravitational Source Coupling Lock
+| lock_id | condition | math_form | current_status | if_true | if_false | passed | valid_for_claim |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| GLOCK3362_0_same_Hilbert_source | The source current in the field equation is the Hilbert stress of the same observed matter action. | T_H^{mu nu}=2/sqrt(-g_obs) delta S_matter[g_obs,Psi]/delta g_obs_{mu nu} | CONDITIONAL_NOT_PARENT_SIGNED | Bianchi can act on the same object measured by clocks/orbits/source readout | source-only selectors and non-Hilbert currents survive as Y5 residuals | false | false |
+| GLOCK3362_1_no_extra_source_projection | No boundary/domain/non-EH/projector/memory/source-shadow current contributes an independent mass projection. | Delta J^{mu nu}=0 or Pi_M Delta J=0/topological/bounded | NOT_PROVED | Bianchi lock applies to the complete source side | a conserved extra source can shift GM without violating Bianchi | false | false |
+| GLOCK3362_2_stress_richness | Allowed compact matter configurations span enough local stress/current directions. | T_H^{mu nu} partial_mu kappa_g=0 for all allowed T_H => partial_mu kappa_g=0 | PHYSICAL_PLAUSIBLE_NOT_PARENT_SIGNED | local time/radial/frame drift of G_eff is killed | coupling gradients can hide in untested current-orthogonal directions | false | false |
+| GLOCK3362_3_no_source_prefactor_grammar | The parent action has one ordinary matter source slot, not species/source/readout prefactors. | S_ord=sum_A S_A[Psi_A,g_obs,theta_A] and field equation sees T_total, not sum_A w_A T_A | CONDITIONAL_CLAUSE_EXISTS_NOT_ADOPTED | constant species/source coupling weights are structurally absent | WEP/source-composition residual rows remain live | false | false |
+| GLOCK3362_4_same_branch_readout | Field equation, source charge, clocks, photons, and orbital readout use the same observed coframe and time. | g_field=g_matter=g_source=g_clock=g_orbit and tau_source=tau_clock=tau_orbit | NOT_SIGNED | G_ref cannot be hidden in a frame/readout conversion | DeltaGM can re-enter through source time, clock time, or orbital denominator | false | false |
+
+## Gref Owner And Newton Limit
+| owner_id | statement | math_form | result | claim_impact | valid_for_claim |
+| --- | --- | --- | --- | --- | --- |
+| GREF3362_0_universal_constant_allowed | A single universal constant G_ref is allowed as the local GR/Newton reduction constant. | G_ref=kappa_g c^4/(8*pi), partial_t G_ref=partial_r G_ref=partial_A G_ref=0 | SCOPE_CLARIFIED | MTS does not need to derive the numerical value of G to reduce to GR; it must prevent hidden dependence and extra source projection | false |
+| GREF3362_1_Newton_limit_if_same_frame | With EH left-hand side, same observed frame, and Hilbert source, the weak-field coefficient becomes the Newtonian inverse-square coefficient. | G_00^(1)=kappa_g T_00 => nabla^2 Phi=4*pi G_ref rho when W=Phi and T_00=rho c^2 | EXACT_CONDITIONAL_NEWTON_COEFFICIENT_MAP | turns calibrated Newtonian mechanics into a derived limit once G_ref and source mass are owned | false |
+| GREF3362_2_absolute_value_not_derived | The local current/Bianchi route does not compute the observed numerical value of G_ref. | partial_mu G_ref=0 does not imply G_ref=6.674...e-11 SI | ABSOLUTE_G_REMAINS_PARENT_PARAMETER_OR_TOPOLOGICAL_TARGET | prevents a false demand: GR does not derive G either, but MTS may later try to own it topologically | false |
+| GREF3362_3_extra_mass_projection_survives | Even with universal G_ref, measured GM can shift if the source mass charge has extra boundary/non-EH/projector pieces. | mu_obs=G_ref(M_H+R_nonEH+R_symp+R_extra+R_boundary+R_time_frame) | DELTA_MASS_ROWS_RETAINED | Y5 is not closed until source mass lock rows zero or bound the extra charge pieces | false |
+| GREF3362_4_topological_superselection_future | A deeper MTS parent action could in principle derive/fix G_ref as a zero-form/topological/superselection datum. | d kappa=0 plus boundary/topological quantization or fixed parent normalization | FUTURE_STRONGER_ROUTE_NOT_CURRENT_PROOF | separates competitive local-GR reduction from the harder numerical-constant derivation programme | false |
+
+## Compensator And Universality Audit
+| audit_id | survivor | can_hide_variable_coupling | reason | status | next_action | valid_for_claim |
+| --- | --- | --- | --- | --- | --- | --- |
+| COMP3362_0_exact_improvement | antisymmetric improvement / magnetization current | false_if_no_boundary_flux | its divergence vanishes identically, so it cannot cancel J dot grad(kappa); it can still affect boundary/Poynting bookkeeping | PARTIAL_ZERO_FOR_COUPLING_DRIFT | route boundary flux to EM stress/boundary residual rows | false |
+| COMP3362_1_separately_conserved_shadow | separately conserved shadow/source current | false_for_gradient_true_for_source_normalization | it cannot cancel variable kappa divergence but can add an independent source charge block | FINITE_RESIDUAL_RETAINED | needs no-shadow theorem or source-backed WEP/R10/PPN bound | false |
+| COMP3362_2_nonconserved_compensator | nonconserved compensator current | true | it can be chosen so nabla J_comp = -J dot grad(kappa) | DANGEROUS_ESCAPE_RETAINED_UNLESS_GAUGE_REJECTED | exclude by exact parent gauge representation or keep explicit residual | false |
+| COMP3362_3_constant_species_weight | constant source/species prefactor | not_variable_but_breaks_universality | Bianchi permits constant w_A unless the parent grammar has only one Hilbert source slot | UNIVERSALITY_GAP_RETAINED | prove no-source-prefactor grammar or use WEP/source-composition bounds | false |
+
+## Y5 Result Rows
+| result_id | quantity | result | current_value | remaining_inputs | valid_for_component_bound | valid_for_claim |
+| --- | --- | --- | --- | --- | --- | --- |
+| Y5R3362_0_derivative_coupling | partial_mu G_eff / G_eff | DERIVED_ZERO_IF_BIANCHI_WARD_RICHNESS_NO_EXTRA_SOURCE | CONDITIONAL_NOT_PARENT_SIGNED | same Hilbert source, no DeltaJ, stress richness, same observed branch | false | false |
+| Y5R3362_1_species_source_weight | kappa_A/kappa_B - 1 | NOT_DERIVED_BY_CURRENT_LOCK_ALONE | RETAIN_WEP_SOURCE_COMPOSITION_RESIDUAL | no-source-prefactor parent grammar or source-backed WEP/composition bound | false | false |
+| Y5R3362_2_absolute_Gref | G_ref numerical value | NOT_REQUIRED_FOR_LOCAL_GR_REDUCTION_BUT_NOT_NUMERICALLY_DERIVED | UNIVERSAL_CONSTANT_OR_TOPOLOGICAL_TARGET | parent superselection/topological normalization if the stronger programme wants to compute G | false | false |
+| Y5R3362_3_DeltaGM_total | extra measured-GM/source mass projection | NOT_ZEROED | RETAIN_R_NON_EH_R_SYMP_R_EXTRA_R_BOUNDARY_R_TIME_FRAME | source mass lock, boundary/symplectic/reference integrability, no extra mass projection | false | false |
+| Y5R3362_4_Y5_status | Y5_source_normalization | PARTIALLY_ADVANCED_NOT_CLOSED | variable coupling route is theorem-reduced; absolute/source-mass/universality rows remain | 3363 should fill a first quantitative bound row if no parent proof closes the remaining rows | false | false |
+
+## Promotion Gates
+| gate_id | claim | passed | reason | valid_for_claim |
+| --- | --- | --- | --- | --- |
+| GATE3362_0_current_lock_theorem | current/Bianchi lock theorem for variable coupling is mathematically derived conditionally | true | divergence identity gives J dot grad(kappa)=0 or T dot grad(kappa)=0 under Noether/Ward conservation | false |
+| GATE3362_1_parent_assumptions_signed | same Hilbert source, stress richness, no compensator, and same branch are signed in current MTS | false | source owner/readout/gref files remain conditional contracts | false |
+| GATE3362_2_universal_species_blind_source | species/source prefactors are excluded | false | current lock alone permits constant source weights unless no-prefactor grammar is adopted | false |
+| GATE3362_3_absolute_Gref_derived | numerical Newton constant is derived | false | 3362 only separates universal constant ownership from hidden local/source dependence | false |
+| GATE3362_4_DeltaGM_extra_mass_zero | extra source mass projections are zero | false | R_nonEH/R_symp/R_extra/R_boundary/R_time_frame rows remain retained | false |
+| GATE3362_5_local_GR_Newton_claim | source-normalized local GR/Newton is claim-ready | false | the variable-coupling theorem is useful but the parent assumptions and extra source-mass rows are not closed | false |
+
+## Decision Ledger
+| decision_id | question | answer | reason | next_action | valid_for_claim |
+| --- | --- | --- | --- | --- | --- |
+| DEC3362_0 | Did 3362 close the coupling? | not fully | it conditionally derives zero local variation of the coupling, but does not prove parent assumptions, species universality, absolute G_ref, or extra mass projection zero | either prove no-prefactor/source-mass lock clauses or move to first quantitative source-normalization bound row | false |
+| DEC3362_1 | What actual progress happened? | the coupling gap split into derivative drift, species/source weights, absolute G_ref, and extra mass projection | Bianchi/current locks attack derivative drift; no-prefactor grammar attacks weights; source mass lock attacks DeltaGM; topological/superselection may attack absolute G | do not conflate those rows again | false |
+| DEC3362_2 | Is deriving the numerical value of G mandatory for local GR recovery? | no | GR itself uses a universal constant; local recovery needs one source-blind constant and no hidden residuals, while numerical derivation of G is a stronger later theory target | treat G_ref as allowed parent constant unless the stronger topological route is explicitly pursued | false |
+
+## Next Target
+| target_id | target_script | objective | why_next | valid_for_claim |
+| --- | --- | --- | --- | --- |
+| 3363-Y5-R2FR-first-source-normalization-bound-row-under-AX1090.md | scripts/Y5_R2FR_3363_first_source_normalization_bound_row.py | turn the remaining Y5 source-normalization pieces into the first quantitative nonclaim bound row: species/source weight, DeltaGM extra mass projection, or Gdot/range coupling, with units, weak-field map, and arena source path | 3362 gives a theorem route for derivative coupling but leaves unproved parent assumptions; the fallback must become numeric/source-backed rather than another qualitative ledger | false |
+| 3364-Y5-R2FR-no-source-prefactor-grammar-or-WEP-bound-under-AX1090.md | scripts/Y5_R2FR_3364_no_source_prefactor_grammar_or_WEP_bound.py | prove the parent action has no species/source prefactor grammar; if not, bind the constant source-weight residual to WEP/source-composition data | current/Bianchi lock cannot force kappa_A=kappa_B; this row is the universality gap | false |
+
+## Validation
+| check_id | check | passed | detail |
+| --- | --- | --- | --- |
+| VAL3362_0_local_sources_exist | all cited local source paths exist | true |  |
+| VAL3362_1_local_sources_parse | all cited local source paths parse | true |  |
+| VAL3362_2_outputs_parse | all 3362 non-validation outputs parse | true |  |
+| VAL3362_3_theorem_packet_contains_locks | the theorem packet contains Maxwell lock, gravitational Bianchi lock, universality limit, and Gref distinction | true |  |
+| VAL3362_4_grav_lock_not_overpromoted | gravitational lock rows keep parent assumptions unsigned | true |  |
+| VAL3362_5_Gref_scope_separated | Gref rows distinguish universal constant from numerical derivation and extra mass projection | true |  |
+| VAL3362_6_compensators_classified | compensator audit classifies exact improvements, shadows, nonconserved compensators, and constant species weights | true |  |
+| VAL3362_7_Y5_split | Y5 result splits derivative coupling, species weight, absolute Gref, and extra mass projection | true |  |
+| VAL3362_8_no_overclaim | local GR/Newton, parent assumptions, universality, absolute G, and DeltaGM zero remain unpromoted | true |  |
+| VAL3362_9_next_target_quantitative | next target moves to first quantitative source-normalization bound row | true |  |
+| VAL3362_10_write_scope_outside_formalization | all 3362 write targets are outside formalization-workbench | true | write_targets=11 |
+| VAL3362_11_overall | 3362 validation overall | true | all required checks passed |

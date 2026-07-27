@@ -1,0 +1,7 @@
+gate_id,channel,bound_or_target,required_input,current_status,verdict,valid_for_claim,claim_allowed
+VPG1404_0_alpha_projection,alpha/Coulomb one-component projection,4.797780522732e-05,P_alpha parent coefficient and tau_WEP source kernel,MISSING_PARENT_INPUTS,TARGET_ONLY_NOT_PASS,False,False
+VPG1404_1_surface_projection,surface/binding one-component projection,2.887280314062e-05,P_surface parent coefficient and binding normalization,MISSING_BINDING_INPUTS,TARGET_ONLY_NOT_PASS,False,False
+VPG1404_2_vector_inequality,full WEP material vector,|DeltaQ^I P_I| <= 2.800000e-15,DeltaQ_AB^I full material tensor and P_I parent vector,MISSING_FULL_TENSOR_AND_PARENT_VECTOR,BLOCKED_VECTOR_NOT_SCORED,False,False
+VPG1404_3_cancellation_guard,one-pair alpha/surface cancellation,-6.017949967452794e-01,all-material invariant theorem or multi-material evidence,FORBIDDEN_BY_POLICY,CANNOT_USE_PAIR_CANCELLATION,False,False
+VPG1404_4_local_transfer,WEP to PPN/Newton/local GR,not_applicable,local projection coefficients A_i plus EM/local residual closure,MISSING_LOCAL_PROJECTION,LOCAL_TRANSFER_BLOCKED,False,False
+VPG1404_5_verdict,WEP composition/binding branch,pressure ledger only,CBN1404_0..4 closure,NORMALIZATION_NOT_DERIVED,WEP_VECTOR_GATE_WRITTEN_NO_PASS,False,False

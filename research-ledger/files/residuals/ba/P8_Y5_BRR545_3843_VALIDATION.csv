@@ -1,0 +1,19 @@
+check_id,check,status,detail,timestamp_utc
+VAL3843_0_sources,all cited source paths exist and needles are found,PASS,20/20 sources resolved,2026-07-01T03:23:10+00:00
+VAL3843_1_families,all five beta families are represented,PASS,EH2/scalar2/boundary2/readout2/eps_temporal4 family tokens present,2026-07-01T03:23:10+00:00
+VAL3843_2_terms,integrated beta formula contains all top terms,PASS,top beta terms visible in dashboard text,2026-07-01T03:23:10+00:00
+VAL3843_3_threshold_blocked,empirical beta threshold remains blocked until sourced,PASS,tau_beta empirical row is explicitly missing/source-blocked,2026-07-01T03:23:10+00:00
+VAL3843_4_nonclaim,all 3843 rows remain nonclaim,PASS,valid_for_claim/claim_allowed false throughout,2026-07-01T03:23:10+00:00
+VAL3843_5_p0_next,P0 next target is parent EH second variation,PASS,source-fill queue selects EH2 as next derivation target,2026-07-01T03:23:10+00:00
+VAL3843_6_no_budget_smuggle,component budgets are not assigned before tau_beta is sourced,PASS,budget guard present,2026-07-01T03:23:10+00:00
+VAL3843_7_parse_sources,sources CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3843_SOURCE_REGISTER.csv rows=20,2026-07-01T03:23:10+00:00
+VAL3843_7_parse_ledger,ledger CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3843_INTEGRATED_BETA_LEDGER.csv rows=36,2026-07-01T03:23:10+00:00
+VAL3843_7_parse_threshold,threshold CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3843_BETA_THRESHOLD_CONTRACT.csv rows=5,2026-07-01T03:23:10+00:00
+VAL3843_7_parse_queue,queue CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3843_SOURCE_FILL_QUEUE.csv rows=6,2026-07-01T03:23:10+00:00
+VAL3843_7_parse_gates,gates CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3843_CLAIM_GATES.csv rows=7,2026-07-01T03:23:10+00:00
+VAL3843_7_parse_decisions,decisions CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3843_DECISION_ROWS.csv rows=3,2026-07-01T03:23:10+00:00
+VAL3843_7_parse_next,next CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3843_NEXT_TARGET.csv rows=1,2026-07-01T03:23:10+00:00
+VAL3843_7_parse_status,status CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3843_STATUS.csv rows=1,2026-07-01T03:23:10+00:00
+VAL3843_8_doc,markdown checkpoint document exists,PASS,3843-Y5-R2FR-integrated-beta-ledger-threshold-dashboard-and-source-fill-queue.md,2026-07-01T03:23:10+00:00
+VAL3843_9_formalization_clean,formalization-workbench has no 3843 files,PASS,no 3843 file hits under formalization-workbench,2026-07-01T03:23:10+00:00
+VAL3843_10_pycache_removed,scripts __pycache__ removed,PASS,no __pycache__ directories,2026-07-01T03:23:10+00:00

@@ -1,0 +1,8 @@
+source_id,role,source_file,source_row_id,row_id_column,required,valid_for_claim,notes
+SRC3129_0,source_calibration_interface,source-intake/mts_residuals/P8_Y5_R2FR_3128_SOURCE_CAL_KERNEL_INTERFACE_OUTPUT.csv,SCK3128_PRE,kernel_id,true,false,DeltaC_Scal definition from 3128.
+SRC3129_1,WEP_threshold,source-intake/mts_residuals/P8_Y5_R2FR_3128_SOURCE_CAL_KERNEL_INTERFACE_OUTPUT.csv,SCK3128_0,kernel_id,true,false,WEP-set source/calibration unit threshold.
+SRC3129_2,deltaJ_bound,source-intake/mts_residuals/P8_Y5_R2FR_3125_DELTAJ_BOUND_INTERFACE_OUTPUT.csv,ROLL3125_STRICT_NONCLAIM,interface_id,true,false,Strict nonclaim delta_J envelope.
+SRC3129_3,Earth_bulk_DD_context,source-intake/source-weight/docs/AFRAME_GM_SOURCE_DESCENT_2125_NONCLAIM.csv,EPB2125_0_bulk_DD_context,row_id,true,false,Existing finite Earth bulk DD vector; explicitly not profile/worldtube-weighted.
+SRC3129_4,Earth_profile_missing,source-intake/source-weight/docs/AFRAME_GM_SOURCE_DESCENT_2125_NONCLAIM.csv,EPB2125_1_profile_weighted_target,row_id,true,false,Records missing MICROSCOPE/orbit/profile weighting.
+SRC3129_5,calibration_guard,source-intake/source-weight/docs/AFRAME_GM_SOURCE_DESCENT_2125_NONCLAIM.csv,CMD2125_3_measured_G_guard,descent_id,true,false,Common mode can be calibrated once; relative residuals cannot.
+SRC3129_6,local_bounds,source-intake/local_bounds/local_bound_claims.csv,R0_identity_coframe_direct,row_id,true,false,Local WEP anchor for sensitivity comparison.

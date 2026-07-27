@@ -1,0 +1,8 @@
+certificate_id,factor,requirement,role,current_status,feeds_or_blocks,claim_allowed,valid_for_claim,timestamp_utc
+ZANG3977_0_closed_source,Z_closed_total_source,source worldtube includes matter + fields + binding + apparatus/exchange or proves they are outside projection,required,UNSIGNED,epsilon_source_l_ge_1,False,False,2026-07-01T16:33:31+00:00
+ZANG3977_1_tensor_virial,Z_tensor_virial,d2I_TF/dt2=0 and surface_TF=exchange_TF=0 on the claimed timescale,required,UNSIGNED,epsilon_tensor_virial_TF,False,False,2026-07-01T16:33:31+00:00
+ZANG3977_2_poynting,Z_Poynting_total_source,EM/radiative/Poynting stress is included in closed Hilbert/Maxwell source or separately bounded,required,UNSIGNED,epsilon_EM_Poynting_TF,False,False,2026-07-01T16:33:31+00:00
+ZANG3977_3_boundary,Z_boundary_isolated,"no B_lm boundary harmonic, no Phi_B total flux, no tau_wall_TF, no corner/history/domain leakage",required,CONDITIONAL_PRIVATE_BRANCH_ONLY,epsilon_boundary_scalar_l_ge_1,False,False,2026-07-01T16:33:31+00:00
+ZANG3977_4_external,Z_external_tide_silence,no unresolved external STF/tidal multipole in the residual channel,required,UNSIGNED,epsilon_external_tidal_l_ge_1,False,False,2026-07-01T16:33:31+00:00
+ZANG3977_5_GR_route,Z_GR_multipole_routing,ordinary GR multipoles are routed into the comparator metric before residual extraction,required,DEFINED_NOT_SIGNED,epsilon_extra_MTS_l_ge_1,False,False,2026-07-01T16:33:31+00:00
+ZANG3977_6_total,Z_ang_silence,"product of closed-source, tensor-virial, Poynting, boundary, external, and GR-routing certificates",total,FALSE_UNTIL_ALL_FACTORS_SIGNED,Z_SO3_boundary,False,False,2026-07-01T16:33:31+00:00

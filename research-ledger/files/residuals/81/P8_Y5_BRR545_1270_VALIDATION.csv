@@ -1,0 +1,15 @@
+check_id,check,status,details
+VAL1270_0_sources_exist,all cited local sources exist,PASS,12/12 sources exist
+VAL1270_1_needles_found,all cited local needles found,PASS,12/12 needles found
+VAL1270_2_quotient_not_signed,R_AB quotient sort is not parent-signed,PASS,QSR1270_5_verdict=RAB_QUOTIENT_SORT_NOT_PARENT_SIGNED
+VAL1270_3_dq_countermodel,Dq kernel matrix includes full metric readout countermodel,PASS,DQ1270_0_full_metric_readout fails verticality
+VAL1270_4_aux_route_retained,auxiliary compatibility remains selected best route,PASS,ROUTE1270_1_auxiliary_compatibility selected_now=True
+VAL1270_5_no_finite_row_created,no raw finite-ZR row is created without source-backed validator acceptance,PASS,raw_rows=0; accepted_rows=0; accepted_ready=0
+VAL1270_6_docs_rejected,docs templates remain rejected by validator rescan,PASS,docs_rows=11; rejected_docs=11
+VAL1270_7_validator_nonclaim,validator rescan remains nonclaim,PASS,validator_rescan_rows=11
+VAL1270_8_claim_gates,all claim gates remain blocked,PASS,claim_gate_rows=4
+VAL1270_9_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1270_10_next_target_1271,next target routes to field-by-field q_RAB/v_R map or auxiliary parent necessity,PASS,1271-Y5-R10-RAB-field-by-field-qRAB-vR-map-or-auxiliary-parent-necessity.md
+VAL1270_11_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1270_SOURCE_REGISTER.csv:12; P8_Y5_R10_1270_RAB_QUOTIENT_SORT_DERIVATION_ATTEMPT.csv:6; P8_Y5_R10_1270_DQ_KERNEL_TEST_MATRIX.csv:4; P8_Y5_R10_1270_RAB_ROUTE_SELECTION_AFTER_QUOTIENT_TEST.csv:3; P8_Y5_R10_1270_FINITE_ZR_FIRST_SOURCE_ROW_ATTEMPT.csv:1; P8_Y5_R10_1270_ZR_VALIDATOR_RESCAN.csv:11; P8_Y5_R10_1270_CLAIM_GATES.csv:4; P8_Y5_R10_1270_DECISION_LEDGER.csv:3; P8_Y5_R10_1270_NEXT_TARGET.csv:1
+VAL1270_12_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1270_13_overall,overall 1270 validation,PASS,"1270 rejects a non-specific quotient shortcut for R_AB, records the full-metric Dq countermodel, retains auxiliary compatibility as best route, and refuses to create a finite-ZR row without source-backed validator acceptance"

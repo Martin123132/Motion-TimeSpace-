@@ -1,0 +1,6 @@
+gate_id,claim,status,blocking_rows,is_evidence,keep_private,valid_for_claim,timestamp_utc
+CG2676_0_parent_owner_zero,parent action-scale/measure/current owner is derived,FAIL_PARENT_OWNER_NOT_SIGNED,OWN2676_0_parent_owner_target;OWN2676_1_common_measure_route;OWN2676_4_verdict,false,true,false,2026-06-23T05:47:05.046651+00:00
+CG2676_1_countermodel_bounds,species countermodels are source-bounded,FAIL_COUNTERMODEL_ROWS_NONCLAIM,CM2676_0_species_action_weight;CM2676_1_species_measure_jacobian;CM2676_2_pre_variation_source_rescaling;CM2676_3_nonHilbert_current_bypass;CM2676_6_absolute_no_cancellation_envelope,false,true,false,2026-06-23T05:47:05.046655+00:00
+CG2676_2_species_zero,epsilon_species_A=0 is now derived,FAIL_OWNER_AND_COUNTERMODEL_GATES,CG2676_0_parent_owner_zero;CG2676_1_countermodel_bounds,false,true,false,2026-06-23T05:47:05.046658+00:00
+CG2676_3_no_bound_inversion,finite C_parent rows are not imported from MICROSCOPE bounds,PASS_GUARDRAIL,none,false,true,false,2026-06-23T05:47:05.046661+00:00
+CG2676_4_local_GR,local GR/PPN recovery can use species channel silence,CLAIM_BLOCKED,OWN2676_4_verdict;CG2676_0_parent_owner_zero;CG2676_1_countermodel_bounds,false,true,false,2026-06-23T05:47:05.046664+00:00

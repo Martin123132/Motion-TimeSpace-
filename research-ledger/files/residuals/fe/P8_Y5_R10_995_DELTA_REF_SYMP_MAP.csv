@@ -1,0 +1,5 @@
+map_id,source_piece,mapped_residual,expression,current_status,blocks,valid_for_claim
+MAP995_0_reference,delta B_ref + reference subtraction,Delta_ref,"Delta_ref[S2,S1]=Delta_Bref[S2]-Delta_Bref[S1]",MISSING_BREF_LOCK,"RC994_0, DeltaH envelope, FB554_0",false
+MAP995_1_symplectic,boundary symplectic/reference flux,Delta_symp_boundary,Delta_symp_boundary=int_A omega_boundary+omega_ref+omega_projector_tail,MISSING_THETA_BREF_PROJECTOR_SILENCE,"RC994_0, Hamiltonian integrability",false
+MAP995_2_boundary_flux,exact/cohomology boundary improvement,B_zero_flux,B_zero_flux=int_S2 B_imp-int_S1 B_imp,MISSING_RELATIVE_CLASS_OR_FLUX_BOUND,boundary alpha3/xi/beta/Gdot/R11 rows,false
+MAP995_3_no_cancellation_total,RC994_0 boundary/reference total,RC994_0_reference_boundary_over_MH,abs(Delta_ref)/M_H_ref+abs(Delta_symp_boundary)/M_H_ref+abs(B_zero_flux)/M_H_ref+abs(hair/projector terms)/M_H_ref,MISSING_COMPONENT_VALUES,deltaH curl bound and local-GR reduction,false

@@ -1,0 +1,13 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1203_0_sources_exist,all cited local sources exist,PASS,8/8 sources exist,False,False
+VAL1203_1_needles_found,all cited source needles found,PASS,8/8 needles found,False,False
+VAL1203_2_thresholds_positive,scenario thresholds are positive,PASS,scenario_threshold_count=3,False,False
+VAL1203_3_global_threshold,global tight threshold inherited from 1202,PASS,global_tight=2.34466430052e-05;source=QAE1202_0351_WR10F1202_2_brutal_100x,False,False
+VAL1203_4_components_blocked,component amplitudes remain explicitly blocked,PASS,blocked_components=4/4,False,False
+VAL1203_5_current_comparison_blocked,current comparison does not claim a pass,PASS,BLOCKED_MISSING_COMPONENT_AMPLITUDES,False,False
+VAL1203_6_zero_branch_nonclaim,zero branch is only conditional nonclaim,PASS,CONDITIONAL_PASS_IF_ALL_ZERO_THEOREMS_PARENT_SIGNED,False,False
+VAL1203_7_allocations_positive,component allocation targets are positive,PASS,allocation_rows=12,False,False
+VAL1203_8_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout,False,False
+VAL1203_9_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1203_SOURCE_REGISTER.csv:8; P8_Y5_R10_1203_AMPLITUDE_LAW.csv:6; P8_Y5_R10_1203_SCENARIO_PRESSURE_THRESHOLDS.csv:3; P8_Y5_R10_1203_COMPONENT_BOUND_STATUS.csv:4; P8_Y5_R10_1203_COMPONENT_ALLOCATION_TARGETS.csv:12; P8_Y5_R10_1203_SYMBOLIC_COMPARISON.csv:2; P8_Y5_R10_1203_CLAIM_GATES.csv:4; P8_Y5_R10_1203_DECISION_LEDGER.csv:1; P8_Y5_R10_1203_NEXT_TARGET.csv:1,False,False
+VAL1203_10_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_after_run_start_count=0,False,False
+VAL1203_11_overall,overall 1203 validation,PASS,1203 amplitude law and component pressure targets are reproducible,False,False

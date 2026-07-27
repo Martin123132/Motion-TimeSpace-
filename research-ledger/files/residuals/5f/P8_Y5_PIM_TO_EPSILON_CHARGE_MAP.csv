@@ -1,0 +1,6 @@
+map_id,condition,epsilon_charge_effect,remaining_debt,current_status,valid_for_claim
+PECM534_0_if_certificate_passes,PTEC534_0..PTEC534_7 all source-backed and valid_for_claim,sets epsilon_PiM_equality=0 and epsilon_commutator=0 for the Pi_M part of SRC523_0,"observed-time Hamiltonian normalization, extra projection, G_eff normalization, Poisson/Gauss/orbital calibration",not_available,false
+PECM534_1_if_equality_missing,Pi_M J_H != J_M_top or R_eq unfilled,epsilon_PiM_equality remains in epsilon_charge_abs_envelope,fill R_eq_integral or derive worldtube Hilbert glue,active,false
+PECM534_2_if_commutator_missing,"[d,Pi_M]J_H unfilled or nonzero",epsilon_commutator feeds source-current/radial residual rows,fill I_commutator and projector stress map,active,false
+PECM534_3_if_Hodge_route_used,Pi_M uses Hodge/DeWitt/boundary metric projector,claim blocked unless delta_g Pi_M stress is retained and below local locks,T_PiM weak-field map to R3/R4/R7/R8/R10/R11,retained_if_used,false
+PECM534_4_if_readout_or_multiplier_used,Pi_M chosen post-readout or equality imposed by unowned multiplier,no derivation credit; row demotes to closure/residual branch,must label as closure or supply independent gauge/topological origin,forbidden_as_derivation,false

@@ -1,0 +1,7 @@
+gate_id,gate,status,reason,valid_for_claim,claim_allowed
+GATE1217_0_sources,source path and needle audit,PASS,all local inputs used by 1217 are traceable,False,False
+GATE1217_1_Cparent_map,C_parent -> DD coefficient map,BLOCKED,CMAP1217_5_verdict=CPARENT_MAP_NOT_DERIVED,False,False
+GATE1217_2_coefficient_zero,C_parent coefficient vector theorem-zero,BLOCKED,ZERO1217_3_vector=COEFFICIENT_ZERO_NOT_DERIVED,False,False
+GATE1217_3_finite_prior,claim-valid finite coefficient prior,BLOCKED,"thresholds exist, but coefficient values and provenance remain missing",False,False
+GATE1217_4_no_cancellation,no pair-tuned cancellation,PASS_NONCLAIM,forbidden cancellation line is explicitly quarantined,False,False
+GATE1217_5_WEP_product,claim-valid WEP/local-GR product,BLOCKED,valid_prediction_rows=0 and same-branch packet is missing,False,False

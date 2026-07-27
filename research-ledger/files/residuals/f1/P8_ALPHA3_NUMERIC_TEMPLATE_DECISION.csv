@@ -1,0 +1,6 @@
+decision_id,status,meaning,next_action
+D0_template,written,alpha3 has a fill-ready numeric/theorem-zero input template,source-intake\mts_residuals\P8_ALPHA3_NUMERIC_PRODUCT_INPUT_TEMPLATE.csv
+D1_boundary,unfilled,boundary product requires numeric W_boundary_alpha3 epsilon_boundary_flux or a parent no-flux certificate,derive boundary no-flux or fill A3_BOUNDARY_NUMERIC_OR_ZERO
+D2_domain,unfilled_highest_pressure,domain product requires W_domain_alpha3 epsilon_domain_flux plus R11/domain sibling rows,derive parent no-leak/R11 silence or fill A3_DOMAIN_NUMERIC_OR_ZERO
+D3_total,guard_only,total alpha3 cannot be used for cancellation-by-fit,score individual channels first
+D4_promotion,forbidden,"no alpha3 pass, mu_extra zero, PPN, Newtonian-limit, or local-GR pass is earned",481-Qcoh-parent-projector-algebra-or-closure.md

@@ -1,0 +1,6 @@
+checkpoint,row_id,target,formula,derivation,numeric_status,valid_for_claim,claim_allowed,timestamp_utc
+4703,LBU4703_0_canonical_identity,s_XF2,|s_XF2| <= 2|z_g| + |b_alpha_X|,from b_alpha_X=2z_g-s_XF2; no cancellation credit,MISSING_ALPHA_AND_ZG_SOURCE_ROWS,False,False,2026-07-07T19:55:14+00:00
+4703,LBU4703_1_zg_zero_branch,s_XF2 if z_g=0,|s_XF2|=|b_alpha_X|,same-current owner special branch,MISSING_ZG_ZERO_THEOREM_AND_ALPHA_BOUND,False,False,2026-07-07T19:55:14+00:00
+4703,LBU4703_2_active_lambdaF2,B_lambdaF2_4703,B_lambdaF2 <= |s_XF2|+|C_XF2|+|delta_lambda_rad|+|delta_lambda_readout|,active local F2 residual excludes pure constant calibration,SYMBOLIC_ONLY,False,False,2026-07-07T19:55:14+00:00
+4703,LBU4703_3_F2perp,C_F2_perp,C_F2_perp <= (C_Q_leak+C_lambda_leak+C_hidden_leak+C_readout_leak)/Z_min,finite F2-perpendicular source bound form,MISSING_Z_MIN_AND_LEAK_NUMERATORS,False,False,2026-07-07T19:55:14+00:00
+4703,LBU4703_4_source_scale,B_EM_scale,B_EM_scale <= B_EM_scale_without_F2 + B_lambdaF2,substitutes explicit no-extra-F2 residual into source-scale gate,SYMBOLIC_ONLY,False,False,2026-07-07T19:55:14+00:00

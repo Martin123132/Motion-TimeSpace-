@@ -1,0 +1,8 @@
+audit_id,object,needed_for_zero,current_evidence,status,valid_for_claim
+RIA1004_0_quantity,partial_lambda Delta_ref,"B_ref and H_ref must not depend on R10 range, memory, domain, or sector-scale parameters",997 flags MISSING_RANGE_INDEPENDENCE_RULE,blocked_nonclaim,false
+RIA1004_1_predeclared_reference,B_ref lambda-independence,"reference branch is fixed before any alpha(lambda), R10 bound, or lambda-window comparison",MISSING_PARENT_BREF_RANGE_INDEPENDENCE_CERTIFICATE,unsigned,false
+RIA1004_2_no_range_kernel,finite-range source kernel,q_loc has no local compact finite-range source kernel in the GR branch,746 marks c_q_alpha(lambda)=0 as not derived,fail_current_claim,false
+RIA1004_3_cokernel_obstruction,range/cokernel residual,P_coker(D_T)G=0 with no boundary or regularizer obstruction,"831 reduces the problem to a theorem, but the runner output is blocked by missing inputs",conditional_only,false
+RIA1004_4_memory_domain_sector_scales,memory/domain/sector scale dependence,"lambda, memory scale, domain selector scale, and sector scale are not hidden arguments of B_ref/H_ref",MISSING_SCALE_SEPARATION_AND_DOMAIN_SELECTOR_CERTIFICATE,unsigned,false
+RIA1004_5_review_windows_nonclaim,lambda windows and C_X ceilings,empirical windows may pressure a branch but cannot derive range independence,611/612 are review-candidate nonclaim pressure rows,evidence_mapping_only,false
+RIA1004_6_theorem_verdict,partial_lambda Delta_ref = 0,"predeclared B_ref/H_ref, no-range-kernel, cokernel-zero, boundary silence, regularizer silence, and scale-separation clauses parent-signed",not enough parent range/domain-scale geometry to promote zero,fail_current_claim,false

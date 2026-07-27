@@ -1,0 +1,7 @@
+component_id,component,before_4045,after_4045,formula,status,valid_for_public_claim,timestamp_utc
+CZR4045_0_direct,J_Z^direct_source,zero by source-clean packet,zero carried,J_Z^direct_source=0,ZERO_CARRIED,False,2026-07-02T00:01:07+00:00
+CZR4045_1_boundary,J_Z^boundary_flux,zero by stationary no-flux plus fixed source-blind reference,zero carried,J_Z^boundary_flux=0,ZERO_CARRIED,False,2026-07-02T00:01:07+00:00
+CZR4045_2_gamma,J_Z^Gamma,zero by even/quadratic Gamma owner at Z=0,zero carried,delta_Z I_Gamma|Z=0=0,ZERO_CARRIED,False,2026-07-02T00:01:07+00:00
+CZR4045_3_selector_wall,J_Z^selector_wall,active if fixed selector/no-wall branch rejected,zero in selected private branch by 4043 projector/domain wall silence,"A_wall_projector=0 when Phi_D=0, tau_wall_TF=0, delta_g P_D=0, D_D P_D=0, delta_g chi_D=0",ZERO_IN_PRIVATE_SELECTED_BRANCH_ELSE_FALLBACK,False,2026-07-02T00:01:07+00:00
+CZR4045_4_history_tail,J_Z^history_tail,live memory/nonlocal kernel tail,still live tail-only residual,"A_tail <= C_G(D_Z,M_Z,L_collar)*|c_Z|*C_mem*exp(-L_collar/ell_mem)*||H||_1",LIVE_TAIL_ENVELOPE,False,2026-07-02T00:01:07+00:00
+CZR4045_5_total,Delta_cZ_envelope,A_Z_remaining <= A_tail + A_wall,A_Z_remaining_selected <= A_tail; fallback remains A_tail + A_wall if 4043 signature rejected,Delta_cZ_selected = A_tail,REDUCED_TO_TAIL_ONLY_IN_PRIVATE_BRANCH,False,2026-07-02T00:01:07+00:00

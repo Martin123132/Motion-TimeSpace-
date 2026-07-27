@@ -1,0 +1,6 @@
+bound_id,quantity,definition,bound_formula,status,valid_for_claim
+DNB3429_0_X_norm,||X||,gapped/Y6 residual field norm in compact local exterior,0 if nohair activated; else 2 lambda_X^-1 (||J_X||+||B_X||+||R_X||),MISSING_LAMBDA_AND_SOURCE_NORMS,False
+DNB3429_1_charge,Delta_H_X_over_MH,Hamiltonian/source-charge leakage from gapped/Y6 residual,C_HX ||X||/M_H_ref + C_TX ||X||^2/M_H_ref + epsilon_boundary_X,MISSING_RESPONSE_CONSTANTS_AND_MHREF,False
+DNB3429_2_force,alpha_X(lambda_X),finite-range fifth-force equivalent if source coupling survives,alpha_X ~ C_source_X C_test_X/(4 pi G_ref M_H m_test); lambda_X = m_X^-1,MISSING_SOURCE_TEST_COUPLINGS,False
+DNB3429_3_PPN,PPN_extra_X,PPN/source-normalization residual from nonzero gapped/Y6 field,"{gamma-1,beta-1,alpha_i,xi,zeta_i}_X <= C_PPNX ||X|| + C_stressX ||X||^2",MISSING_PPN_RESPONSE_MAP,False
+DNB3429_4_total,epsilon_gapped_auxiliary,no-cancellation envelope for all gapped/Y6 auxiliary sectors,"sum_abs(Delta_H_X_over_MH, alpha_X-window penalties, PPN_extra_X)",FORMULA_READY_VALUES_MISSING,False

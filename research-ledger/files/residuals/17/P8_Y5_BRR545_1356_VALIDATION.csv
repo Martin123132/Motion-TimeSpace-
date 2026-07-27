@@ -1,0 +1,11 @@
+check_id,check,status,details
+VAL1356_0_sources_exist,registered source paths exist and anchors are found,PASS,SRC1356_0_1355_doc=True/True;SRC1356_1_1355_next=True/True;SRC1356_2_1355_links=True/True;SRC1356_3_parent_worldtube_clauses=True/True;SRC1356_4_1013_flux_doc=True/True;SRC1356_5_1013_vector=True/True;SRC1356_6_1014_commutator_doc=True/True;SRC1356_7_1014_coeffs=True/True;SRC1356_8_1015_gate=True/True
+VAL1356_1_equality_not_promoted,worldtube-Hilbert equality theorem is not promoted,PASS,"retain R_eq, I_commutator, B_zero_flux, projector stress, parent anomaly, and calibration rows as nonclaim"
+VAL1356_2_required_residuals_present,R_eq and I_commutator residual rows are present,PASS,residual_rows=8
+VAL1356_3_residuals_nonclaim,residual rows remain missing/unscored/nonclaim,PASS,all residual rows reject scoring
+VAL1356_4_closed_wrong_charge_guard,closed-wrong-charge guardrail is installed,PASS,GUARD1356_0_closed_wrong_charge;GUARD1356_1_no_fitted_G_absorption;GUARD1356_2_no_post_readout_projector;GUARD1356_3_no_reference_zero
+VAL1356_5_claim_gates_blocked,all claim gates remain blocked,PASS,GATE1356_0_worldtube_Hilbert_equality=False;GATE1356_1_R_eq_Icomm_bound_ready=False;GATE1356_2_Newton_GR_recovery=False;GATE1356_3_no_closed_wrong_charge_claim=False
+VAL1356_6_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false across generated rows
+VAL1356_7_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1356_8_next_target_1357,next target routes to PiM commutator/fixed-topology route,PASS,1357-Y5-R10-RAB-PiM-commutator-fixed-topology-or-Icommutator-source-profile.md
+VAL1356_9_overall,overall 1356 validation,PASS,1356 blocks worldtube-Hilbert equality claim and retains R_eq/I_commutator residuals

@@ -1,0 +1,7 @@
+attempt_id,route,test_result,why,next_needed,valid_for_claim
+BKA588_0_use_HZZ_zero,use affine Vdef / H_ZZ=0,necessary_but_insufficient,removes a kinetic X pole but leaves (DC)^dagger X in the Y equations,adjoint zero-mode or first-class gauge proof,false
+BKA588_1_use_CX_on_shell,set C_X=0 from X equation,insufficient,C_X=0 does not imply X=0 and does not remove X delta_Y C_X,solve/kill adjoint equation for X,false
+BKA588_2_noether_identity_route,make C_X a Noether identity of S0,best_theorem_route,then the multiplier enforces redundancy rather than new physics,"construct theta_Y, Omega_Y, v_X, and G[epsilon]",false
+BKA588_3_adjoint_coercivity_route,prove ||(DC)^dagger X||^2 >= m_adj^2 ||X||^2 with proper/reference boundary conditions,clean_kill_if_proved,the Y equation then forces X=0 on the local branch,explicit DC operator and boundary domain,false
+BKA588_4_boundary_counterterm_route,cancel or exactify all boundary pairings,required_not_optional,bulk silence still fails if Q_edge survives,B_X exact/pure-gauge/proper-gauge certificate,false
+BKA588_5_current_corpus_verdict,promote local no-pole now,fail_for_current_claim,"DC, adjoint domain, Noether identity, matter quotient, and boundary primitive are not explicit",589 certificate or fallback edge row,false

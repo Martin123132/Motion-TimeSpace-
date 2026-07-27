@@ -1,0 +1,5 @@
+law_id,object,assumptions,derivation,result,status,valid_for_claim
+LAW4548_0_exact_UB,U_B,Pi_B=(1+exp[-(B_env-B_*)/Delta_B])^-1; U_B=1-Pi_B; Delta_B>0.,U_B=1-Pi_B=(1+exp[(B_env-B_*)/Delta_B])^-1.,U_B(B_env) = 1/(1 + exp[(B_env-B_*)/Delta_B]),derived_from_existing_logistic_switch,False
+LAW4548_1_domain_sup,epsilon_U(D_loc),D_loc has B_env(x)>=B_min for every x in D_loc; Delta_B>0.,"U_B is monotone decreasing in B_env, so sup_Dloc U_B occurs at the smallest allowed B_env.",epsilon_U(D_loc) := sup_Dloc U_B <= 1/(1 + exp[(B_min-B_*)/Delta_B]),derived_but_numeric_domain_inputs_missing,False
+LAW4548_2_large_margin_tail,far-local exponential tail,B_min>B_* and Delta_B>0.,"For y=(B_min-B_*)/Delta_B>0, 1/(1+e^y) <= e^-y.",epsilon_U(D_loc) <= exp[-(B_min-B_*)/Delta_B],derived_useful_for_fast_screening_bounds,False
+LAW4548_3_gradient_tail,gradient leakage,Delta_B>0 and |nabla B_env| <= 1/L_B on D_loc.,nabla U_B = -U_B(1-U_B)nabla B_env/Delta_B.,|nabla U_B| <= epsilon_U/(Delta_B L_B),derived_for_static_bound_runner_inputs,False

@@ -1,0 +1,8 @@
+formula_id,quantity,formula,meaning,status
+GO523_0_observed_orbital_monopole,mu_obs,"mu_obs(r,A,t,lambda)=r^2 |a_r|=v^2 r for a slow nearly circular test body in the observed frame","the actual Newtonian observable is orbital GM, not an arbitrary conserved current",definition_for_gate
+GO523_1_parent_source_monopole,mu_parent,mu_parent=G_eff M_H[Pi_M J_H],the candidate parent-derived source side after same-frame Hilbert current and Pi_M projection,conditional_candidate_not_calibrated
+GO523_2_Gauss_residual,Delta_mu_Gauss,surface_int_S grad Phi dot dS = 4 pi (G_eff M_H + Delta_mu_Gauss),"volume, boundary, non-EH, projector, and domain terms enter Gauss mass unless theorem-zero",residual_active_until_zero_or_scored
+GO523_3_extra_source_residual,mu_extra,mu_obs=G_eff M_H + mu_extra + Delta_mu_Gauss + Delta_mu_readout,"extra mass channels from 522 are physical residuals, not notation",channelwise_inputs_written_not_filled
+GO523_4_source_normalization_error,epsilon_SN,epsilon_SN=(mu_obs-G_eff M_H)/(G_eff M_H),dimensionless score target for source-normalization mismatch,score_target_defined_not_evaluated
+GO523_5_no_cancellation_bound,epsilon_SN_bound,|epsilon_SN| <= |epsilon_charge|+|epsilon_Poisson|+|epsilon_Gauss|+|epsilon_orbit|+sum_i|epsilon_extra_i|+|epsilon_derivative|+|epsilon_PPN|,open residuals cannot be hidden by tuned signs,policy_active_unscored
+GO523_6_PPN_residual_vector,Delta_PPN_source,"Delta_PPN_source=(gamma-1, beta-1, alpha1, alpha2, alpha3, xi)_source after measured-GM normalization",first-order Newton is not local GR until second-order source/operator residues vanish,next_gate_not_derived

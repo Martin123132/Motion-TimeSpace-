@@ -1,0 +1,5 @@
+readiness_id,target_input,observable_projection,has_numeric_bound,has_tau_map,has_sensitivity_coefficients,has_chi_X_unit,score_state,next_missing_input,valid_for_claim
+PR645_0_clock,BI645_0,alpha_clock ~ tau_clock (K_a_alpha - K_b_alpha) kappa_alpha,true,false,false,false,blocked_but_first_target,"clock sensitivity pair K_a_alpha,K_b_alpha plus tau_clock",false
+PR645_1_WEP,BI645_1;BI645_2,eta_AB ~ tau_WEP beta_source sum_i[(S_Ai-S_Bi) kappa_i],true,false,false,false,blocked,material composition alpha sensitivities and source normalization beta_source,false
+PR645_2_R10,BI645_3,alpha_R10(lambda) ~ tau_R10 beta_source beta_test c_eff(lambda),range_dependent_bound_source_exists_but_projection_missing,false,false,false,blocked,"body EM binding/source response, tau_R10(lambda), Z/lambda normalization",false
+PR645_3_EM_spectra,BI645_4,delta_alpha/alpha ~ tau_EM kappa_alpha Delta chi_X,false,false,false,false,source_missing,source-backed spectra/clock alpha-stability bound and sensitivity coefficients,false

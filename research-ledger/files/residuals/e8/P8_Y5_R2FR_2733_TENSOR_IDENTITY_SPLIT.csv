@@ -1,0 +1,5 @@
+identity_id,statement,formula,derivation_status,source_anchor,valid_for_claim
+ID2733_0_q_definition,q_loc is the projected mismatch between scalar gradient and Khat divergence,q_loc^nu=P_loc(nabla^nu Gamma_eff-nabla_mu Khat^{mu nu}),IMPORTED_EXACT_DEFINITION,2712 QDK2712_0; 2699 WID2699_0,False
+ID2733_1_Khat_split,split current Khat into parent metric response plus mismatch,Khat^{mu nu}=Kmetric^{mu nu}[Gamma_eff]+Delta_K^{mu nu},STRUCTURAL_SPLIT_WRITTEN,2712 QDK2712_1/QDK2712_2,False
+ID2733_2_q_split,separate Ward-owned q source from current-symbol Khat mismatch,"q_loc^nu=P_loc(W_metric^nu-nabla_mu Delta_K^{mu nu}), W_metric^nu:=nabla^nu Gamma_eff-nabla_mu Kmetric^{mu nu}[Gamma_eff]",DERIVED_ALGEBRAIC_SPLIT,2699 Ward identity plus 2712 DeltaK split,False
+ID2733_3_zero_condition,q_loc theorem-zero requires both parent Ward silence and DeltaK silence,q_loc=0 if P_loc W_metric=0 and P_loc nabla_mu Delta_K^{mu nu}=0,EXACT_CONDITION_NOT_SATISFIED,2699 PSG2699_8; 2714 KAG2714_2,False

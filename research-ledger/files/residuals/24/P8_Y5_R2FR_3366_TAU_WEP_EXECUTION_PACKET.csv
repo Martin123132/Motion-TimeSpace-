@@ -1,0 +1,5 @@
+packet_id,object,formula,status,required_inputs,valid_prediction_row,valid_for_claim
+TAU3366_0_executable_formula,eta_MTS_TiPt,"eta_MTS(Ti,Pt)=sum_I K_CMSM^I * C_parent^I * R_source_Earth^I * (R_material_TA6V^I - R_material_PtRh10^I) + residual_channels",FORMULA_READY_INPUTS_MISSING,C_parent;K_CMSM;R_source_Earth;R_material_TA6V_minus_PtRh10;eta_product_convention;no_cancellation_policy,false,false
+TAU3366_1_external_bound,eta_MICROSCOPE_TiPt_bound,|eta_TiPt| <= 2.8e-15 component target from source-backed 3363 row,EXTERNAL_BOUND_ACQUIRED_NONCLAIM,none for external comparator; MTS projection still needs tau packet,false,false
+TAU3366_2_readout_factor,tau_readout_X,tau_readout_X = a_tilde_c11 with 0.98 <= tau_readout_X <= 1.02 from MICROSCOPE evidence,PARTIAL_FACTOR_SOURCE_BACKED,source_profile and channel_projection factors still missing,false,false
+TAU3366_3_no_tau_one_shortcut,tau_WEP,"tau_WEP != 1 unless K_CMSM, R_source, R_material, sign, mask and same-branch normalization are all signed",SHORTCUT_FORBIDDEN,full live projection packet or parent theorem-zero,false,false

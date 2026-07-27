@@ -1,0 +1,6 @@
+rule_id,rule,reject_status,valid_for_claim,claim_allowed
+RCR1260_0_schema,live coefficient rows must contain every required field,REJECT_MISSING_REQUIRED_FIELD,False,False
+RCR1260_1_no_placeholders,"coefficient_value, units, sign_domain, source_path, parent_action_block, normalization, and qRhat link must contain no MISSING/TBD markers",REJECT_PLACEHOLDER_ROW,False,False
+RCR1260_2_allowed_symbols,"coefficient_symbol must be one of Z_R, M_R^2, J_R, B_R",REJECT_UNKNOWN_COEFFICIENT,False,False
+RCR1260_3_branch_map,"rows must declare whether they feed finite q_Rhat, massive suppression ell_R, boundary no-hair, or theorem-zero",REJECT_NO_BRANCH_LINK,False,False
+RCR1260_4_nonclaim,valid_for_claim and claim_allowed must remain false in this checkpoint,REJECT_CLAIM_FLAG,False,False

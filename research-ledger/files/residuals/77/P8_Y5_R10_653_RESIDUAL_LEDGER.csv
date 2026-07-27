@@ -1,0 +1,5 @@
+residual_id,residual,control_if_closure_adopted,control_if_closure_not_adopted,claim_status,valid_for_claim
+RL653_0_direct_alpha_WEP,eta_AB^alpha ~ beta_source_alpha * DeltaQ_AB * |kappa_alpha*S_lab_alpha|,zero if WCL653_2 is assumed,requires |beta_source_alpha| <= 2.887e-05,blocked,false
+RL653_1_species_metric_split,eta_AB^F ~ Delta F_AB,zero if WCL653_1 is assumed,active WEP residual; no numeric score without parent coefficients,blocked,false
+RL653_2_representative_leakage,eta_AB^rep ~ epsilon_rep * c_AB,conditional zero if quotient descent is parent-owned,active representative-force residual,conditional_only,false
+RL653_3_universal_metric_force,universal scalar/metric pullback can affect PPN/R10 even if WEP differential channel is closed,not solved by WEP closure,active local-GR/PPN/R10 target,separate_derivation_required,false

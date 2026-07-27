@@ -1,0 +1,6 @@
+test_id,same_parent_branch_id,test,pass_condition,current_result,valid_for_claim,claim_allowed
+PROM1431_0_branch_match,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,all imported C_parent rows carry the exact branch id,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,SCHEMA_ONLY_NO_IMPORTED_ROWS,False,False
+PROM1431_1_no_missing_markers,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,claim rows contain no MISSING/PENDING/PLACEHOLDER/NOT_SCOREABLE values,all required fields concrete,FAILED_FOR_EXISTING_C_PARENT_PLACEHOLDERS,False,False
+PROM1431_2_zero_or_numeric,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,each component is either DERIVED_ZERO with certificate or numeric/source-backed,QT_ZERO_CLOSED or SOURCE_BACKED_NUMERIC,FAILED_ZERO_PREMISES_UNSIGNED,False,False
+PROM1431_3_not_DD_only,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,DD comparator rows cannot be promoted as MTS coefficients without parent pullback,basis != DD-only or parent pullback source present,GUARD_WRITTEN,False,False
+PROM1431_4_full_scorepack,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,"C_parent, R_source, R_material, K_CMSM, product convention, and measured-G guard all pass together",full branch scorepack complete,FAILED_SOURCE_MATERIAL_READOUT_STILL_MISSING,False,False

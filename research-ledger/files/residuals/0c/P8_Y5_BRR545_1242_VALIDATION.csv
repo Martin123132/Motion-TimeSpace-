@@ -1,0 +1,14 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1242_0_sources_exist,all cited local sources exist,PASS,6/6 sources exist,False,False
+VAL1242_1_needles_found,all cited local needles found,PASS,6/6 needles found,False,False
+VAL1242_2_directories,q_R_hat intake directories exist,PASS,directories=5,False,False
+VAL1242_3_contract_fields,input contract has required fields,PASS,contract_fields=14,False,False
+VAL1242_4_acceptance_gates,acceptance gates cover known failure modes,PASS,acceptance_gates=6,False,False
+VAL1242_5_templates_nonclaim,templates remain nonclaim and contain missing markers,PASS,finite and zero-theorem templates valid_for_claim=false,False,False
+VAL1242_6_no_fabrication,dry-run does not fabricate q_R_hat,PASS,NO_CANDIDATE_FILES_FOUND,False,False
+VAL1242_7_claim_gates,claim gates remain blocked/nonclaim,PASS,claim_gate_rows=4,False,False
+VAL1242_8_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables,False,False
+VAL1242_9_next_target_1243,next target is q_R_hat intake validator or source hunt,PASS,1243-Y5-R10-QR-hat-candidate-intake-validator-or-source-hunt-ledger.md,False,False
+VAL1242_10_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1242_SOURCE_REGISTER.csv:6; P8_Y5_R10_1242_QR_HAT_DIRECTORY_CONTRACT.csv:5; P8_Y5_R10_1242_QR_HAT_INPUT_CONTRACT.csv:14; P8_Y5_R10_1242_QR_HAT_ACCEPTANCE_GATES.csv:6; P8_Y5_R10_1242_QR_HAT_CANDIDATE_TEMPLATE_NONCLAIM.csv:1; P8_Y5_R10_1242_ZERO_THEOREM_TEMPLATE_NONCLAIM.csv:1; P8_Y5_R10_1242_QR_HAT_CANDIDATE_VALIDATOR_DRYRUN.csv:1; P8_Y5_R10_1242_DECISION_LEDGER.csv:3; P8_Y5_R10_1242_CLAIM_GATES.csv:4; P8_Y5_R10_1242_NEXT_TARGET.csv:1,False,False
+VAL1242_11_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_write_count_since_run_start=0,False,False
+VAL1242_12_overall,overall 1242 validation,PASS,1242 defines the exact q_R_hat/zero-theorem input contract without fabricating a value or promoting a claim,False,False

@@ -1,0 +1,9 @@
+template_id,p8_channel,coefficient_symbol,required_columns,bound_or_gate,template_status,valid_for_claim
+NI0_radial_profile,radial_Meff_hair,epsilon_radial_Meff,r;epsilon_radial_Meff(r);dln_mu_dr;units;source_file;assumptions,mapped R4/R10 bounds or theorem-zero radial hair,not_filled,false
+NI1_boundary,boundary_monopole_shift,epsilon_boundary,epsilon_boundary;boundary_flux_vector;alpha3_map;xi_map;Gdot_map;units;source_file,R4/R7/R8/R9 locks; alpha3 <= 4e-20 where applicable,not_filled,false
+NI2_domain_products,domain_projector_mass,epsilon_domain_projector,W_domain_alpha1;epsilon_domain_vector;W_domain_alpha2;W_domain_alpha3;epsilon_domain_flux;W_domain_xi;epsilon_domain_anisotropy;source_file,alpha1<=1e-4; alpha2<=2e-9; alpha3<=4e-20; xi<=4e-9,not_filled,false
+NI3_bulk_curve,bulk_X_Yukawa_tail,epsilon_bulk_X,lambda_X;alpha_X;epsilon_bulk_X;range_units;alpha_lambda_bound;source_file;assumptions,R10 alpha(lambda) curve below bounds,not_filled,false
+NI4_nonEH_vector,nonEH_operator_potential,epsilon_nonEH_source,operator_family;coefficient_value;units;normalization;weak_field_map;affected_rows;source_file,R3/R4/R10/R11 row-specific bounds,not_filled,false
+NI5_species,species_source_charge,epsilon_species_A,species_pair;epsilon_species_A;eta_source_AB;clock_residual;source_file;assumptions,eta_source_AB <= 2.8e-15 or theorem-zero,not_filled,false
+NI6_time,time_drift,epsilon_time_drift,time_window;epsilon_time_drift;dln_mu_dt;Gdot_over_G;units;source_file,Gdot/G <= 9.6e-15 yr^-1 or theorem-zero,not_filled,false
+NI7_calibration,absolute_calibration_offset,epsilon_calibration,lambda0;universality_certificate;range_derivative;time_derivative;species_derivative;source_file,all derivatives zero and parent-fixed universal calibration,retained_until_parent_fixed,false

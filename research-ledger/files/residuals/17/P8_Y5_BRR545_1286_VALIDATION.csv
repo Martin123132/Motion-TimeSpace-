@@ -1,0 +1,11 @@
+check_id,check,status,details
+VAL1286_0_sources_exist,all cited local sources exist,PASS,9/9 sources exist
+VAL1286_1_needles_found,all cited local needles found,PASS,9/9 needles found
+VAL1286_2_response_field_row_filled,first response-field component row is filled from source-backed formula shape,PASS,RFR1286_0_Gamma_memory_scalar_projection present and nonclaim
+VAL1286_3_DeltaK_component_blocked,first DeltaK component remains blocked,PASS,DKC1286_3_verdict=DELTAK_COMPONENT_NOT_FILLABLE_YET
+VAL1286_4_claim_gates_blocked,all claim gates remain nonclaim or blocked,PASS,claim_gate_rows=4
+VAL1286_5_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1286_SOURCE_REGISTER.csv:9; P8_Y5_R10_1286_COMPONENT_SOURCE_SEARCH_AUDIT.csv:6; P8_Y5_R10_1286_FIRST_RESPONSE_FIELD_COMPONENT_ROW_NONCLAIM.csv:1; P8_Y5_R10_1286_FIRST_DELTAK_COMPONENT_BLOCKER_LEDGER.csv:4; P8_Y5_R10_1286_CLAIM_GATES.csv:4; P8_Y5_R10_1286_DECISION_LEDGER.csv:3; P8_Y5_R10_1286_NEXT_TARGET.csv:1
+VAL1286_6_next_target_1287,next target routes to Khat tracefree-longitudinal or Kmetric variation,PASS,1287-Y5-R10-RAB-Khat-tracefree-longitudinal-first-component-or-Kmetric-variation.md
+VAL1286_7_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1286_8_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1286_9_overall,overall 1286 validation,PASS,"1286 fills a first nonclaim Gamma_eff response-field scalar row, blocks DeltaK component fill for missing Khat/Kmetric tensors, and routes to Khat tensor component next"

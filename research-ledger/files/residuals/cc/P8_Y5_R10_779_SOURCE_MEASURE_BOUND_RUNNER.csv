@@ -1,0 +1,4 @@
+runner_id,bound_expression,required_inputs,computed_status,bound_value,claim_effect,valid_for_claim,generated_utc
+SMR779_0_zero_route,"If descent switch ready and all vertical matter/readout variations vanish, set B_SM/M_H = 0.",BCS779_0 ready plus parent boundary/source silence,blocked_missing_inputs,MISSING_PARENT_SIGNATURE,no_zero_claim,false,2026-06-12T03:41:17+00:00
+SMR779_1_no_cancellation_bound,|B_SM|/M_H <= sum_i |C_qmu_i| |F_i|/M_H + sum_A |r_A| |O_A| + sum_I |W_I| |DeltaPPN_I|,"C_qmu rows, flux rows, readout coefficients, PPN responses, units, M_H references",blocked_missing_inputs,MISSING_NUMERIC_INPUTS,no_bound_claim,false,2026-06-12T03:41:17+00:00
+SMR779_2_local_branch_rule,Local-GR recovery cannot use the coupling block unless SMR779_0 proves zero or SMR779_1 computes a sourced finite bound.,zero certificate or numeric no-cancellation bound,local_branch_blocked,NOT_APPLICABLE,keeps_R10_PPN_Newton_R11_claims_blocked,false,2026-06-12T03:41:17+00:00

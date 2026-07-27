@@ -1,0 +1,11 @@
+bound_id,target,formula,numeric_value,units,status,valid_for_claim,timestamp_utc
+PMB4001_0_master,Delta_PiM_4001,|C_M|+|C_shape|+|C_curl|+|C_domain|+|C_ref|+|C_frame|+|C_units|+|I_commutator_abs|+|projector_stress|+|R_eq_guard|,MISSING_PARENT_SIGNED_COMPONENTS,dimensionless,EXECUTABLE_VECTOR_READY,False,2026-07-01T19:19:44+00:00
+PMB4001_1_C_M,C_M,-(partial_M A_X^M) partial_M(H_tau-H_ref)/(Pi_M H_tau),ZERO_IF_Q_BASIC_SOURCE_COORDINATE_DESCENT_ELSE_BOUND_REQUIRED,dimensionless,CONDITIONAL_QUOTIENT_ZERO_OR_BOUND,False,2026-07-01T19:19:44+00:00
+PMB4001_2_C_shape,C_shape,-(partial_M A_X^a) partial_a(H_tau-H_ref)/(Pi_M H_tau),ZERO_IF_Q_BASIC_SHAPE_DESCENT_OR_MASS_SHAPE_ORTHOGONALITY_ELSE_BOUND_REQUIRED,dimensionless,CONDITIONAL_QUOTIENT_ZERO_OR_BOUND,False,2026-07-01T19:19:44+00:00
+PMB4001_3_C_curl,C_curl,Pi_M^H(curl(delta H_tau))/(Pi_M H_tau),MISSING_HTAU_INTEGRABILITY_CURL_ZERO_OR_BOUND,dimensionless,NEXT_TARGET,False,2026-07-01T19:19:44+00:00
+PMB4001_4_C_domain,C_domain,"normalized D_X(W_source,Sigma,Hodge,linked surfaces)",MISSING_DOMAIN_WORLDTUBE_LOCK_OR_OPERATOR_BOUND,dimensionless_or_operator_norm,OPEN_DOMAIN_BOUND,False,2026-07-01T19:19:44+00:00
+PMB4001_5_C_ref,C_ref,"-([D_X,Pi_M]H_ref + Pi_M D_X H_ref)/(Pi_M H_tau)",MISSING_REFERENCE_SELECTOR_ZERO_OR_BOUND,dimensionless,NEXT_TARGET,False,2026-07-01T19:19:44+00:00
+PMB4001_6_C_frame_units,C_frame + C_units,"D_X ln(tau,e_obs,Sigma,readout frame) + D_X ln(Pi_M H_tau denominator units)",MISSING_SAME_FRAME_AND_DENOMINATOR_LOCK,dimensionless,OPEN_FRAME_DENOMINATOR_BOUND,False,2026-07-01T19:19:44+00:00
+PMB4001_7_I_commutator,I_commutator_abs,"M_H_ref^-1 |int_A [d,Pi_M]J_H|",MISSING_CHAINMAP_ZERO_OR_SOURCE_ROW,dimensionless_after_MHref_normalization,OPEN_CHAINMAP_OR_SOURCE_ROW,False,2026-07-01T19:19:44+00:00
+PMB4001_8_projector_stress,projector_stress,T_PiM^{mu nu}:=-(2/sqrt(-g)) delta_g[Pi_M J_H]/delta g_mu_nu,ZERO_IF_TOPOLOGICAL_METRIC_INDEPENDENT_ELSE_PPN_SOURCE_BOUND_REQUIRED,PPN_or_operator_units,OPEN_PROJECTOR_STRESS_MAP,False,2026-07-01T19:19:44+00:00
+PMB4001_9_R_eq_guard,R_eq_guard,Pi_M J_H - J_M_top - dB_zero on the same M_H_ref denominator,MISSING_TOPOLOGICAL_HILBERT_EQUALITY_OR_VALUE,dimensionless,CLOSED_WRONG_CURRENT_GUARD,False,2026-07-01T19:19:44+00:00

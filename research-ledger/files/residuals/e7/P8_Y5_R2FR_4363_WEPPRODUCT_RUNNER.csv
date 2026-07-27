@@ -1,0 +1,4 @@
+run_id,input_case,projection_id,computed_quantity,bound,comparison,runner_status,what_it_does_not_prove,valid_for_claim,claim_allowed
+RUN4363_0_schema_zero,future theorem gives p_WEP_TiPt=0,PI4363_WEP_product,0,2.8e-15,0 <= bound,WOULD_PASS_PRODUCT_ROW_ONLY,"Delta_w amplitude, tau_WEP nonzero, WEP full-vector pass, local GR",False,False
+RUN4363_1_symbolic_current,current corpus p_WEP_TiPt is symbolic,PI4363_WEP_product,MISSING_PARENT_PRODUCT_VALUE,2.8e-15,not scored,BLOCKED_NO_MTS_PRODUCT_VALUE,"the row is a comparator/projection input, not a prediction",False,False
+RUN4363_2_future_numeric,future candidate supplies numeric p_WEP_TiPt before looking at residuals,PI4363_WEP_product,abs(candidate_p_WEP_TiPt),2.8e-15,accept product row only if abs(candidate_p_WEP_TiPt) <= 2.8e-15,READY_FOR_FUTURE_PARTIAL_NUMERIC_PRODUCT_CHECK,full local branch still needs source-charge projection and tau inversion or zero theorem,False,False

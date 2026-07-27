@@ -1,0 +1,6 @@
+fill_id,current_or_boundary,theorem_zero_needed,fallback_fill,target_bound,source_artifact_needed,valid_for_claim
+CF0_boundary_flux,J_B^i;B_B^i,scalar stationary boundary no-flux or Y-boundary no-linear-source symmetry,W_boundary_alpha3_epsilon_boundary_flux,abs(alpha3_boundary) <= 4e-20,theorem certificate or numeric product with units/source path,false
+CF1_domain_vector,J_V^i,domain no-vector selector symmetry,W_domain_alpha1/alpha2/alpha3 times epsilon_domain_vector/flux,alpha1<=1e-4; alpha2<=2e-9; alpha3<=4e-20,theorem certificate or numeric coefficient products,false
+CF2_domain_STF_stress,J_S^{ij},projector/domain STF stress topological or trace-only theorem,W_domain_xi_epsilon_domain_anisotropy plus T_extra residual,xi<=4e-9 or declared local residual gate,stress ledger and numeric/theorem source,false
+CF3_source_normalization,J_mu,constant measured-GM/source-normalization Noether theorem,c_domain_source_normalization_operator,"operator row has source path, units, weak-field map, no MISSING fields",R11 executable vector or zero theorem,false
+CF4_extra_stress_Bianchi,nabla_mu T_extra^{mu nu},extra stress vanishes/topological or conserved below PPN bounds,retained T_extra residual vector,PPN residual bounds by channel,Bianchi stress ledger and residual score,false

@@ -1,0 +1,6 @@
+gate_id,gate,status,blocks_claim,needed_for_claim,claim_allowed,valid_for_claim
+G3455_0_sources_exist,all cited 3455 source paths exist,PRIVATE_CHECK_PASS,False,provenance only,False,False
+G3455_1_component_ledger,Delta_K components are split,PASS_LEDGER,False,active components need zero/bound inputs,False,False
+G3455_2_first_component_zero,volume/sign component filled,PASS_CONVENTION_ZERO,True,remaining components must close,False,False
+G3455_3_total_DeltaK,Delta_K=0 or Q_DeltaK bound,FAIL_INPUTS_MISSING,True,Q_metric/Q_derivative/Q_boundary/Q_functional or zero theorems,False,False
+G3455_4_no_claim,no local-GR/Newton/R10/PPN/clock/orbital pass from this checkpoint,ENFORCED,True,DeltaK/q_loc closure plus arena response,False,False

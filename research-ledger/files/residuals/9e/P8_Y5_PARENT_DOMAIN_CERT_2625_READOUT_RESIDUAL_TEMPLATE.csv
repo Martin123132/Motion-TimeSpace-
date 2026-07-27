@@ -1,0 +1,5 @@
+residual_id,symbol,definition,status,needed_inputs,observable_links,valid_for_claim
+RRT2625_0_E_readout_total,E_readout_total,"delta S_red[g,P_read]/delta g or any equivalent readout-backreaction operator",RETAINED_IF_CLOSURE_FAILS,"S_red form, P_read definition, variation path, source/readout provenance",PPN; R10; WEP/source; clocks; orbital mass readout,False
+RRT2625_1_projector_norm,"||[nabla,P_read]||",local projection/commutator leakage if projector is promoted to branch operator,MISSING_PROJECTOR_NORM,"projector definition, local domain, derivative operator, norm",WEP; clocks; R10; source normalization,False
+RRT2625_2_marker_readout,E_marker_readout,pre-variation marker hidden as readout label,BLOCKED_BY_NO_MARKER_THEOREM_MISSING,primitive no-marker theorem or marker coupling coefficients,WEP; PPN; clocks; R10,False
+RRT2625_3_nonclaim_lock,claim_allowed,readout generator removal requires closed parent-domain certificate,NONCLAIM_LOCK,FDC2625_1..4 all parent-signed,all local arenas,False

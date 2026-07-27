@@ -3,6 +3,8 @@
 Direct links for 250 files. Item numbers are catalogue
 ordinals, not scientific checkpoint identifiers.
 
+- [`P8_Y5_R2FR_4650_CONTROL_ROWS.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4650_CONTROL_ROWS.csv) (876 bytes)
+- [`P8_Y5_R2FR_4650_DECISION.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4650_DECISION.csv) (618 bytes)
 - [`P8_Y5_R2FR_4650_GR_RESIDUAL_VECTOR.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4650_GR_RESIDUAL_VECTOR.csv) (2959 bytes)
 - [`P8_Y5_R2FR_4650_NEXT_TARGET.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4650_NEXT_TARGET.csv) (483 bytes)
 - [`P8_Y5_R2FR_4650_RUNNER_RESULTS.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4650_RUNNER_RESULTS.csv) (945 bytes)
@@ -251,5 +253,3 @@ ordinals, not scientific checkpoint identifiers.
 - [`P8_Y5_R2FR_4675_JM_SURVIVOR_VECTOR.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4675_JM_SURVIVOR_VECTOR.csv) (1616 bytes)
 - [`P8_Y5_R2FR_4675_JM_UNOWNED_COMPONENT_REDUCTION.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4675_JM_UNOWNED_COMPONENT_REDUCTION.csv) (1860 bytes)
 - [`P8_Y5_R2FR_4675_NEXT_TARGET.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4675_NEXT_TARGET.csv) (651 bytes)
-- [`P8_Y5_R2FR_4675_RUNNER_RESULTS.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4675_RUNNER_RESULTS.csv) (858 bytes)
-- [`P8_Y5_R2FR_4675_SOURCE_REGISTER.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4675_SOURCE_REGISTER.csv) (7546 bytes)

@@ -1,0 +1,12 @@
+check_id,result,detail,claim_allowed,generated_utc
+V1199_0_sources_exist,pass,all cited local source paths exist and needles are found,False,2026-06-15T03:57:32.677218+00:00
+V1199_1_projection_contract_present,pass,"W_R10 definition, alpha envelope, and curve join rule are present",False,2026-06-15T03:57:32.677218+00:00
+V1199_2_Gres_profile_schema_present,pass,"G_res, P_coker, boundary/leakage, and W_R10 schema rows are present",False,2026-06-15T03:57:32.677218+00:00
+V1199_3_curve_join_samples_numeric_nonclaim,pass,R10 curve join samples have numeric lambda/alpha bound values and remain nonclaim,False,2026-06-15T03:57:32.677218+00:00
+V1199_4_runner_inputs_nonclaim,pass,R10 qDT runner input row remains nonclaim with missing W/q inputs,False,2026-06-15T03:57:32.677218+00:00
+V1199_5_runner_outputs_blocked,pass,R10 join dry-run blocks because MTS-side projection/profile inputs are missing,False,2026-06-15T03:57:32.677218+00:00
+V1199_6_claim_gates_blocked,pass,all 1199 claim gates and next target remain blocked/nonclaim,False,2026-06-15T03:57:32.677218+00:00
+V1199_7_decisions_nonclaim,pass,decision ledger remains private/nonclaim,False,2026-06-15T03:57:32.677218+00:00
+V1199_8_generated_under_post_checkpoint,pass,all generated outputs are under post-checkpoint-work,False,2026-06-15T03:57:32.677218+00:00
+V1199_9_formalization_untouched,pass,generator writes no outputs under formalization-workbench,False,2026-06-15T03:57:32.677218+00:00
+V1199_SUMMARY,pass,"1199 derives the q_DT-to-R10 projection contract W_R10(lambda), stages the G_res/P_coker/B_T/eps_P profile schema, joins nonclaim curve samples, and keeps R10/local-GR scoring blocked until MTS-side inputs are sourced",False,2026-06-15T03:57:32.677218+00:00

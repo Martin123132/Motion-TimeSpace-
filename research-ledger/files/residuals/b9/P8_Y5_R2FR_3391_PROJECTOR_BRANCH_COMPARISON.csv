@@ -1,0 +1,5 @@
+branch_id,branch,mathematical_result,strictest_ell_s_ceiling_m,what_still_blocks_claim,current_status,valid_for_claim
+BR3391_0_exact_fixed_projector,fixed PPN readout projector,"nabla P_PPN=0 and [P,S]=0",not_applicable_for_projector_channel,parent must explicitly define P_PPN as fixed readout and close moment/gauge/flux channels,BEST_ROUTE_IF_PARENT_SIGNED,false
+BR3391_1_finite_curvature_projector,curvature-scale projector drift,epsilon_projector <= C1*C_P*ell_s/L_curv + C2*C_PP*(ell_s/L_curv)^2,8.0425248504e-01,"need parent values for ell_s, C1, C_P, C2, C_PP",FINITE_BUT_PRESSURED,false
+BR3391_2_adaptive_ray_projector,adaptive ray-local projector drift,epsilon_projector <= C1*C_ray*ell_s/b_min + ...,2.4376564800e-03,this branch is very harsh and should be avoided unless forced by parent readout,DANGEROUS_BRANCH,false
+BR3391_3_boundary_collar,Gaussian boundary collar,epsilon_boundary_tail <= C_boundary exp[-(d_collar/ell_s)^2/2],5.8520133810e+07,C_boundary and physical flux still need parent/source rows,NOT_LIKELY_BOTTLENECK_IN_SOLAR_EXTERIOR,false

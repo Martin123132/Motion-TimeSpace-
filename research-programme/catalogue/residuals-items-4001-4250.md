@@ -3,6 +3,8 @@
 Direct links for 250 files. Item numbers are catalogue
 ordinals, not scientific checkpoint identifiers.
 
+- [`P8_Y5_R2FR_4768_FIREWALL_ROWS.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4768_FIREWALL_ROWS.csv) (796 bytes)
+- [`P8_Y5_R2FR_4768_NEXT_TARGET.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4768_NEXT_TARGET.csv) (494 bytes)
 - [`P8_Y5_R2FR_4768_NO_SOURCE_PREFACTOR_IMPORT_AUDIT.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4768_NO_SOURCE_PREFACTOR_IMPORT_AUDIT.csv) (1411 bytes)
 - [`P8_Y5_R2FR_4768_POYNTING_WALL_FIRST_VALUE_CANDIDATE.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4768_POYNTING_WALL_FIRST_VALUE_CANDIDATE.csv) (1311 bytes)
 - [`P8_Y5_R2FR_4768_PRIVATE_SOURCE_QBASIC_ROLLUP.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4768_PRIVATE_SOURCE_QBASIC_ROLLUP.csv) (1466 bytes)
@@ -251,5 +253,3 @@ ordinals, not scientific checkpoint identifiers.
 - [`P8_Y5_R2FR_4785_SOURCE_REGISTER.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4785_SOURCE_REGISTER.csv) (3245 bytes)
 - [`P8_Y5_R2FR_4785_STATUS.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4785_STATUS.csv) (246 bytes)
 - [`P8_Y5_R2FR_4786_DECISION.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4786_DECISION.csv) (426 bytes)
-- [`P8_Y5_R2FR_4786_DENSITY_INPUT_FROM_ZERO_PROFILE.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4786_DENSITY_INPUT_FROM_ZERO_PROFILE.csv) (2901 bytes)
-- [`P8_Y5_R2FR_4786_DENSITY_OUTPUT_FROM_ZERO_PROFILE.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4786_DENSITY_OUTPUT_FROM_ZERO_PROFILE.csv) (2094 bytes)

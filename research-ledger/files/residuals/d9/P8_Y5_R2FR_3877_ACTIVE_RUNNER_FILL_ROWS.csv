@@ -1,0 +1,7 @@
+fill_id,runner_field,rule,source_logic,status,valid_for_claim,timestamp_utc
+RUNF3877_0_previous,z_g_active,z_Qstar+z_Noether+z_readout+z_measure/source_slot+z_rad,imports 3875/3876,previous expanded form,False,2026-07-01T06:55:42+00:00
+RUNF3877_1_tail_pack,z_tail,z_tail=z_readout+z_measure/source_slot+z_rad,3877,pack remaining current tails,False,2026-07-01T06:55:42+00:00
+RUNF3877_2_tail_bound,b_tail,"b_tail,A := b_readout,A + b_source_slot,A + b_rad,A",3877,finite nonclaim input,False,2026-07-01T06:55:42+00:00
+RUNF3877_3_updated_runner,z_g_active,|z_g_active| <= b_Qstar + b_Noether + b_tail,no-cancellation finite runner branch,RUNNER_SCHEMA_REFINED,False,2026-07-01T06:55:42+00:00
+RUNF3877_4_claim_guard,claim_allowed,"false until b_Qstar,b_Noether,b_tail and s_XF2_active are zero-proved or source-backed in one domain",acceptance policy,NO_CLAIM,False,2026-07-01T06:55:42+00:00
+RUNF3877_5_next_use,local arenas,fill b_tail rows for clock/WEP/R10/PPN/orbital only after K_arena and readout convention are locked,projection consistency guard,NO_ARENA_SCORE_YET,False,2026-07-01T06:55:42+00:00

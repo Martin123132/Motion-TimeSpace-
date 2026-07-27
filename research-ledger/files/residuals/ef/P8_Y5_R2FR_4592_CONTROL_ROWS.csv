@@ -1,0 +1,7 @@
+checkpoint,control_id,scenario,expected_result,status,claim_allowed,valid_for_claim,generated_utc
+4592,CTRL4592_clean_strict_chain,all 4587-4591 source-kernel clauses active,Delta_PPN^source_kernel=0 but Delta_PPN full vector remains gated by survivors,SYMBOLIC_CONTROL_PASS,False,False,2026-07-06T13:29:45.483821+00:00
+4592,CTRL4592_gamma_smuggling,claim gamma=1 solely from source-kernel zero,reject; EH principal/spatial curvature and EFT rows still required,COUNTERMODEL_CAUGHT,False,False,2026-07-06T13:29:45.483821+00:00
+4592,CTRL4592_cGamma_survives,c_Gamma profile row finite or unsigned,retain Gdot/xi/alpha3/R10/clock/orbital survivor channels,COUNTERMODEL_CAUGHT,False,False,2026-07-06T13:29:45.483821+00:00
+4592,CTRL4592_torsion_survives,c_T_spin finite or unsigned,retain preferred-frame/spin-clock/contact rows,COUNTERMODEL_CAUGHT,False,False,2026-07-06T13:29:45.483821+00:00
+4592,CTRL4592_open_source_kernel,any source-kernel clause reopens,use ||Pi_PPN^K|| L_K_source sum(E_i) fallback,BOUND_BRANCH_PASS,False,False,2026-07-06T13:29:45.483821+00:00
+4592,CTRL4592_calibrated_G,numeric Newton G not derived,allowed as calibrated universal coupling but not as source-kernel/PPN proof,FIREWALL_PASS,False,False,2026-07-06T13:29:45.483821+00:00

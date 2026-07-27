@@ -1,0 +1,14 @@
+check_id,check,status,details
+VAL1281_0_sources_exist,all cited local sources exist,PASS,10/10 sources exist
+VAL1281_1_needles_found,all cited local needles found,PASS,10/10 needles found
+VAL1281_2_symbol_match,Gamma/Khat metric-response symbol match remains not closed,PASS,GKM1281_4_verdict=SYMBOL_MATCH_NOT_CLOSED
+VAL1281_3_tensor_contract,Ward consequence remains blocked by metric-response and Euler gaps,PASS,MRT1281_1_Ward_consequence=BLOCKED_BY_METRIC_RESPONSE_AND_EULER
+VAL1281_4_profile_template,epsilon_GK_q_loc profile template is written and invalid by design,PASS,template contains MISSING markers and valid_for_claim=false
+VAL1281_5_profile_rules,"profile intake rules block templates, missing sources, missing bounds, and cancellation",PASS,profile_rule_rows=4
+VAL1281_6_finite_fallback_locked,finite branch has no source-backed accepted rows,PASS,docs_rows=11; raw_rows=0; accepted_rows=0; accepted_ready=0
+VAL1281_7_claim_gates_blocked,all claim gates remain blocked,PASS,claim_gate_rows=5
+VAL1281_8_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1281_9_next_target_1282,next target routes to response-doublet component map or q_loc profile fill,PASS,1282-Y5-R10-RAB-response-doublet-component-map-F1-zero-or-q_loc-profile-fill.md
+VAL1281_10_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1281_SOURCE_REGISTER.csv:10; P8_Y5_R10_1281_GAMMA_KHAT_SYMBOL_MATCH_AUDIT.csv:5; P8_Y5_R10_1281_METRIC_RESPONSE_TENSOR_CONTRACT.csv:3; P8_Y5_R10_1281_EPSILON_GK_QLOC_PROFILE_TEMPLATE_NONCLAIM.csv:1; P8_Y5_R10_1281_PROFILE_INTAKE_RULES.csv:4; P8_Y5_R10_1281_ZR_VALIDATOR_RESCAN.csv:11; P8_Y5_R10_1281_CLAIM_GATES.csv:5; P8_Y5_R10_1281_DECISION_LEDGER.csv:3; P8_Y5_R10_1281_NEXT_TARGET.csv:1
+VAL1281_11_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1281_12_overall,overall 1281 validation,PASS,"1281 attempts Gamma/Khat metric-response symbol matching, blocks it for missing formulas/tensor variation, writes an invalid-by-design epsilon_GK_q_loc profile template, and routes to response-doublet component-map/F1-zero next"

@@ -1,0 +1,14 @@
+check_id,check,status,details
+VAL1278_0_sources_exist,all cited local sources exist,PASS,10/10 sources exist
+VAL1278_1_needles_found,all cited local needles found,PASS,10/10 needles found
+VAL1278_2_branch_firewall,only closure branch is enabled and it is nonclaim,PASS,enabled_branches=local_closure_baseline
+VAL1278_3_pass_flags_false,all local pass_for_claim flags remain false,PASS,closure_output_rows=4
+VAL1278_4_refusal_rules,"strict local branch refusal rules cover promotion, mixing, placeholders, EH anchor, and public claims",PASS,refusal_rule_rows=5
+VAL1278_5_A511_priority,A511_3 extra-sector silence is selected as next derivation target,PASS,APL1278_0_extra_silence=SELECTED_NEXT_DERIVATION_TARGET
+VAL1278_6_finite_fallback_locked,finite branch has no source-backed accepted rows,PASS,docs_rows=11; raw_rows=0; accepted_rows=0; accepted_ready=0
+VAL1278_7_claim_gates_safe,claim gates remain blocked except nonclaim runner/priority gates,PASS,claim_gate_rows=5
+VAL1278_8_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1278_9_next_target_1279,next target routes to A511 extra-sector silence or residual vector,PASS,1279-Y5-R10-RAB-A511-extra-sector-silence-double-zero-or-residual-vector.md
+VAL1278_10_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1278_SOURCE_REGISTER.csv:10; P8_Y5_R10_1278_LOCAL_BRANCH_FIREWALL_MATRIX.csv:4; P8_Y5_R10_1278_LOCAL_CLOSURE_RUNNER_OUTPUT.csv:4; P8_Y5_R10_1278_STRICT_LOCAL_BRANCH_REFUSAL_RULES.csv:5; P8_Y5_R10_1278_A511_ORIGIN_PRIORITY_LADDER.csv:5; P8_Y5_R10_1278_ZR_VALIDATOR_RESCAN.csv:11; P8_Y5_R10_1278_CLAIM_GATES.csv:5; P8_Y5_R10_1278_DECISION_LEDGER.csv:3; P8_Y5_R10_1278_NEXT_TARGET.csv:1
+VAL1278_11_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1278_12_overall,overall 1278 validation,PASS,"1278 installs an explicit local branch firewall, keeps closure-only outputs nonclaim, locks finite/EH lanes, and selects A511_3 extra-sector silence as the next derivation target"

@@ -1,0 +1,5 @@
+bound_id,quantity,formula,q_proxy,bound,derived_limit,interpretation,valid_for_claim
+AVP3410_0_product_law,alpha3_q,alpha3_q = W_q_alpha3 * f_qV * q_proxy,7.432631961576971e-06,3.999999999999999e-20,5.381673706808059e-15,only the product W_q_alpha3*f_qV matters; order-one vector leakage is excluded,False
+AVP3410_1_if_response_order_one,f_qV_limit_if_W_order_one,f_qV <= alpha3_bound/q_proxy,7.432631961576971e-06,3.999999999999999e-20,5.381673706808059e-15,the vector/momentum fraction must be effectively zero unless the response weight is itself tiny,False
+AVP3410_2_if_vector_fraction_order_one,W_q_alpha3_limit_if_f_order_one,W_q_alpha3 <= alpha3_bound/q_proxy,7.432631961576971e-06,3.999999999999999e-20,5.381673706808059e-15,"a mostly vector q_loc would need an unnatural response suppression, so theorem-zero is preferred",False
+AVP3410_3_verdict,alpha_vector_status,pass iff f_qV=0 by parent theorem or abs(W_q_alpha3*f_qV)<=limit with sourced rows,7.432631961576971e-06,3.999999999999999e-20,5.381673706808059e-15,not passed; this is a pressure bound and next-proof target,False

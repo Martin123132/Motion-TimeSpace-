@@ -1,0 +1,6 @@
+trigger_id,condition,required_response,formula,claim_status
+QE576_0_qbar_retained,qbar_XT=0 not parent-derived,"keep qbar_XT as finite coefficient, not theorem-zero",alpha_X(lambda)=K_X Qbar_XH(lambda) qbar_XT,finite_envelope_required
+QE576_1_coefficient_inputs,R10 finite branch is used,"source or derive K_X, Qbar_XH(lambda), qbar_XT, Z_X, M_X^2, and numerator normalization",abs(alpha_X(lambda)) <= alpha_bound(lambda),blocked_until_numeric
+QE576_2_bound_curve,R10 comparator is invoked,use source-backed alpha_bound(lambda) curve or non-claim anchors only,valid_for_claim requires numeric positive lambda and alpha_bound with provenance,data_gate_retained
+QE576_3_zero_return,future parent theorem closes P576_0...P576_6,only then may qbar_XT be moved from finite envelope to theorem-zero row,P_parent => L_X S_T=0 => qbar_XT=0,allowed_future_route
+QE576_4_no_local_GR_promotion,finite branch passes R10 numerically,"do not call it local GR unless measured-GM, PPN beta/gamma, conservation, and frame gates also pass",R10 pass != R0-R11 pass,overclaim_blocked

@@ -1,0 +1,7 @@
+update_id,runner_field,rule,source_logic,status,valid_for_claim,timestamp_utc
+RUNU3878_0_previous,z_g_active,|z_g_active| <= b_Qstar + b_Noether + b_tail,imports 3877,previous packed form,False,2026-07-01T07:02:36+00:00
+RUNU3878_1_split,b_tail,b_tail -> b_tail_rel + b_common_drift after one calibrated common scale is separated,3878 common-relative theorem,COMMON_RELATIVE_SPLIT,False,2026-07-01T07:02:36+00:00
+RUNU3878_2_calibrated_runner,"z_g_active,cal","|z_g_active,cal| <= b_Qstar + b_Noether + b_tail_rel + b_common_drift",no-cancellation calibrated-source runner,RUNNER_SCHEMA_REFINED,False,2026-07-01T07:02:36+00:00
+RUNU3878_3_WEP_guard,composition tests,relative material/source tails use b_tail_rel; common C_* alone is not a WEP source charge,common-mode theorem,RELATIVE_ONLY_FOR_COMPOSITION,False,2026-07-01T07:02:36+00:00
+RUNU3878_4_Newton_guard,Newton/PPN/source normalization,common C_* still needs b_common_drift=0 or explicit source-backed drift bound,anti-backfill guard,COMMON_DRIFT_LIVE,False,2026-07-01T07:02:36+00:00
+RUNU3878_5_no_claim,claim_allowed,"false until b_Qstar,b_Noether,b_tail_rel,b_common_drift and s_XF2_active are zero-proved or sourced in one domain",acceptance policy,NO_CLAIM,False,2026-07-01T07:02:36+00:00

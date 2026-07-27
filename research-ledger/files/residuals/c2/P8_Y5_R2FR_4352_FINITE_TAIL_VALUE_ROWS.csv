@@ -1,0 +1,5 @@
+tail_id,branch,B_RI,I_RI,R_Lambda,tail_value,status,valid_for_claim
+TAIL4352_0_full_clean,stationary compact anchored RI clean branch,0,0,0,Y_owner_a=0,ZERO_IF_PARENT_BRANCH_SIGNED,False
+TAIL4352_1_boundary_open,lambda_4350 positive but boundary/corner open,B_trace+B_move+B_corner+B_source_cross+B_rad+B_improvement,"0 if stationary no-incoming signed, otherwise I_bound",R_Lambda,|Pi_RI|C_Lambda|R_Lambda|/lambda_4350 + |Pi_BRI||B_RI| + |Pi_I||I_RI|,FINITE_BOUND_VALUES_MISSING,False
+TAIL4352_2_incoming_open,lambda_4350 positive but incoming/open-memory/radiative branch,"0 if boundary signed, otherwise B_bound","C_in sqrt(E_RI,in)+C_flux|Phi_RI,in|+C_mem|M_open|",R_Lambda,|Pi_RI|C_Lambda|R_Lambda|/lambda_4350 + |Pi_BRI||B_RI| + |Pi_I||I_RI|,FINITE_BOUND_VALUES_MISSING,False
+TAIL4352_3_denominator_open,lambda_4350 not positive/source-backed,unscored,unscored,unscored,owner-tail runner blocked until lambda_4350>0 or finite inverse row exists,CLAIM_BLOCKED,False

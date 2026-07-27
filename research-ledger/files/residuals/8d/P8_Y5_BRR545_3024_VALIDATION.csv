@@ -1,0 +1,16 @@
+validation_id,passed,requirement,evidence
+VAL3024_00_sources_exist,True,every cited local source path exists,P8_Y5_R2FR_3024_SOURCE_REGISTER.csv
+VAL3024_01_csv_parse,True,generated CSV rows parse cleanly,all generated CSV artifacts import with csv.DictReader
+VAL3024_02_ansatz_complete,True,"minimal Hcore ansatz records field, readout, kinetic density, coefficient expansion and vacuum silence",P8_Y5_R2FR_3024_MINIMAL_HCORE_ANSATZ.csv
+VAL3024_03_variation_formula,True,variation produces the second-order coefficient equation,P8_Y5_R2FR_3024_VARIATION_DERIVATION.csv
+VAL3024_04_lambda_map,True,lambda_N_core map is recorded,P8_Y5_R2FR_3024_LAMBDAN_CORE_COEFFICIENT_MAP.csv
+VAL3024_05_zero_condition,True,zero condition is explicit,P8_Y5_R2FR_3024_LAMBDAN_CORE_COEFFICIENT_MAP.csv
+VAL3024_06_bound_translation,True,beta comparator bound translates to the kinetic/coframe coefficient combination,P8_Y5_R2FR_3024_KINETIC_SLOPE_BOUND_TRANSLATION.csv
+VAL3024_07_parent_values_missing,True,parent coefficients remain unsigned,P8_Y5_R2FR_3024_CLOSURE_GATES.csv
+VAL3024_08_claims_blocked,True,all rows remain nonclaim/private-control rows,all 3024 generated ledgers
+VAL3024_09_missing_markers_nonclaim,True,rows with MISSING markers are never valid_for_claim=true,all 3024 generated ledgers
+VAL3024_10_branch_copies_exist,True,branch copies and acquisition queue exist,P8_Y5_R2FR_3024_BRANCH_COPIES.csv
+VAL3024_11_outputs_scoped,True,no generated file is outside post-checkpoint-work,generated path scope check
+VAL3024_12_formalization_not_targeted,True,formalization-workbench is not modified by this checkpoint,output target list excludes formalization-workbench
+VAL3024_13_next_target_selected,True,next target selects parent signing of sigma_H/f_psi cancellation or bound rows,P8_Y5_R2FR_3024_NEXT_TARGET.csv
+VAL3024_99_overall,True,all 3024 validation checks pass,aggregate of VAL3024_00 through VAL3024_13

@@ -1,0 +1,30 @@
+check_id,requirement,expected,actual,passed,validation_marker
+VAL4957_00_research,research runner completes,0,0,True,MTS_4957_INDEPENDENT_VALIDATION
+VAL4957_01_paths,all output and synchronized document paths exist,[],[],True,MTS_4957_INDEPENDENT_VALIDATION
+VAL4957_02_compile,research and validator compile without bytecode output,[],[],True,MTS_4957_INDEPENDENT_VALIDATION
+VAL4957_03_marker,all evidence uses one checkpoint marker,MTS_4957_FUNCTIONAL_PX_O4_GR_TRAJECTORY,MTS_4957_FUNCTIONAL_PX_O4_GR_TRAJECTORY,True,MTS_4957_INDEPENDENT_VALIDATION
+VAL4957_04_nonclaim,all generated rows remain private nonclaim,True,True,True,MTS_4957_INDEPENDENT_VALIDATION
+VAL4957_05_source_hashes,all locked parent hashes independently recompute,[],[],True,MTS_4957_INDEPENDENT_VALIDATION
+VAL4957_06_source_clauses,all seven parent interpretation clauses pass,7 true,"{'4956_functional_germ': True, 'O2_degree_four': True, 'O4_local_zero_branch': True, 'O5_reflection_forbidden': True, 'local_GR_Newton_chain': True, 'local_Maxwell_stress_chain': True, 'matter_tadpole_zero': True}",True,MTS_4957_INDEPENDENT_VALIDATION
+VAL4957_07_fixed_shape,combined roots exist at N=2 through N=8 in both schemes,14 roots,14,True,MTS_4957_INDEPENDENT_VALIDATION
+VAL4957_08_fixed_coordinates,both N8 combined fixed points reproduce,[],[],True,MTS_4957_INDEPENDENT_VALIDATION
+VAL4957_09_fixed_residual,every combined fixed-point scaled residual is below 1e-8,<1e-8,1.5550697609444268e-13,True,MTS_4957_INDEPENDENT_VALIDATION
+VAL4957_10_stability,N6 and N8 in both schemes have exactly one GR-connected relevant mode,4 unique modes,[],True,MTS_4957_INDEPENDENT_VALIDATION
+VAL4957_11_trajectory_shape,four functional trajectories each contain 121 samples,484,484,True,MTS_4957_INDEPENDENT_VALIDATION
+VAL4957_12_trajectory_endpoint,all trajectories monotonically reach g=1e-10 and remain locally convex,[],[],True,MTS_4957_INDEPENDENT_VALIDATION
+VAL4957_13_order_convergence,all five infrared coordinates converge from N6 to N8 in both schemes,10 rows below 1e-3,4.845217232557038e-07,True,MTS_4957_INDEPENDENT_VALIDATION
+VAL4957_14_regularity,both N8 trajectories pass five direct full-Hessian local scans,10 regular rows and min>0.3,0.33637208449902206,True,MTS_4957_INDEPENDENT_VALIDATION
+VAL4957_15_operator_residuals,O2 O4 O5 and essential-map statuses preserve the local/full-theory firewall,True,True,True,MTS_4957_INDEPENDENT_VALIDATION
+VAL4957_16_decisions,all ten trajectory decisions are present,"['4947_LOCAL_GR_NEWTON_MAXWELL_RETAINED', 'FULL_MTS_PROMOTION_BLOCKED', 'FUNCTIONAL_GR_CONNECTED_TRAJECTORY_RETAINED', 'O2_LOCAL_LINEAR_RESIDUAL_EXACT_ZERO', 'O4_ETA_WEIGHTED_TRAJECTORY_INCLUDED', 'O5_REFLECTION_FORBIDDEN', 'ONE_GR_CONNECTED_RELEVANT_DIRECTION_RETAINED', 'RAW_IR_RATIO_DERIVED_ESSENTIAL_RATE_MAP_OPEN', 'SELF_CONSISTENT_COMBINED_FIXED_POINTS_RETAINED', 'TRAJECTORY_LOCAL_REGULARITY_RETAINED']","['4947_LOCAL_GR_NEWTON_MAXWELL_RETAINED', 'FULL_MTS_PROMOTION_BLOCKED', 'FUNCTIONAL_GR_CONNECTED_TRAJECTORY_RETAINED', 'O2_LOCAL_LINEAR_RESIDUAL_EXACT_ZERO', 'O4_ETA_WEIGHTED_TRAJECTORY_INCLUDED', 'O5_REFLECTION_FORBIDDEN', 'ONE_GR_CONNECTED_RELEVANT_DIRECTION_RETAINED', 'RAW_IR_RATIO_DERIVED_ESSENTIAL_RATE_MAP_OPEN', 'SELF_CONSISTENT_COMBINED_FIXED_POINTS_RETAINED', 'TRAJECTORY_LOCAL_REGULARITY_RETAINED']",True,MTS_4957_INDEPENDENT_VALIDATION
+VAL4957_17_endpoint_coordinates,both N8 infrared low-coordinate endpoints reproduce,[],[],True,MTS_4957_INDEPENDENT_VALIDATION
+VAL4957_18_raw_ratio_scaling,g times raw r3 is finite and order converged while raw r3 scales as 1/g,8.0e-4 to 8.2e-4,"{'dynamic_etaN_N6': 0.0008003921164950233, 'dynamic_etaN_N8': 0.0008003921167284239, 'reference_etaN0_N6': 0.0008152905003099392, 'reference_etaN0_N8': 0.0008152905004451519}",True,MTS_4957_INDEPENDENT_VALIDATION
+VAL4957_19_raw_kernel,"raw infrared six-point kernel is finite, decaying and scheme stable",5.8e-64 to 5.9e-64; spread<1e-6,"{'dynamic': 5.811822565542439e-64, 'reference': 5.811822488399362e-64, 'spread': 1.327347420727351e-08}",True,MTS_4957_INDEPENDENT_VALIDATION
+VAL4957_20_result_gates,result retains local success and blocks essential/full-theory promotion,True,"{'O2_local_linear_residual': 'EXACT_ZERO_BY_FIELD_DEGREE', 'O4_functional_eta_trajectory': 'INCLUDED', 'O5': 'FORBIDDEN_BY_REFLECTION', 'all_functional_trajectories_reach_IR': True, 'combined_fixed_points_through_N8': True, 'full_MTS': False, 'local_GR_Newton_Maxwell_4947': 'RETAINED', 'low_IR_coordinates_order_converged': True, 'minimum_trajectory_Hessian_singular_value': 0.33637208449902206, 'one_GR_connected_relevant_direction': True, 'physical_essential_IR_r3': 'OPEN', 'raw_IR_r3': 'DERIVED', 'trajectory_local_x_le_0p1_regular': True}",True,MTS_4957_INDEPENDENT_VALIDATION
+VAL4957_21_documents,checkpoint 4957 is synchronized across every register,True,True,True,MTS_4957_INDEPENDENT_VALIDATION
+VAL4957_22_registry_csv,claim and variable registers parse with unique 4957 rows,True,True,True,MTS_4957_INDEPENDENT_VALIDATION
+VAL4957_23_prohibitions,synchronized prose contains no false promotion marker,[],[],True,MTS_4957_INDEPENDENT_VALIDATION
+VAL4957_24_provenance,provenance records every locked source hash,True,True,True,MTS_4957_INDEPENDENT_VALIDATION
+VAL4957_25_determinism,one full rerun reproduces every evidence-file hash,True,True,True,MTS_4957_INDEPENDENT_VALIDATION
+VAL4957_26_pycache,no script bytecode cache remains,[],[],True,MTS_4957_INDEPENDENT_VALIDATION
+VAL4957_27_hash_report,reproducibility hashes are valid SHA-256 values,three 64-character hashes,"{'research_sha256': 'a39ad530184afe84db76417134f4f1f09a666fc5753f0d09b4f952d13e43c13e', 'result_sha256': '8d8c7e416706d116492e3539a0541e6e64174c59a460714325251656b1477cc6', 'checkpoint_sha256': '235b2e640428814bbcc3f0af1b2ebef020573314eaae1cb0b793be9122db0cb4'}",True,MTS_4957_INDEPENDENT_VALIDATION
+VAL4957_28_complete,all preceding independent checks pass,True,True,True,MTS_4957_INDEPENDENT_VALIDATION

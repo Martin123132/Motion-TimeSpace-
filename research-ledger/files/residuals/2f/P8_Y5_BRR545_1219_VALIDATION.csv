@@ -1,0 +1,18 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1219_0_sources_exist,all cited local sources exist,PASS,21/21 sources exist,False,False
+VAL1219_1_needles_found,all cited source needles found,PASS,21/21 needles found,False,False
+VAL1219_2_target_sharp,typed functor target is sharp,PASS,TVC1219_0_target=TARGET_SHARP,False,False
+VAL1219_3_conditionals_present,conditional theorems are recorded,PASS,type/product/triviality/readout conditional rules present,False,False
+VAL1219_4_functor_not_overclaimed,typed functor not overclaimed,PASS,TVC1219_6_verdict=TYPED_VISIBLE_COEFFICIENT_FUNCTOR_NOT_DERIVED,False,False
+VAL1219_5_covariance_rejected,covariance/gauge shortcut rejected,PASS,TVC1219_4 result=FALSE,False,False
+VAL1219_6_counterexamples_locked,hidden scalar counterexamples locked,PASS,HSC1219_0_generic_scalar; HSC1219_1_alpha; HSC1219_2_surface_binding; HSC1219_3_clock; HSC1219_4_source_weight,False,False
+VAL1219_7_finite_debts_retained,finite coupling debts retained,PASS,FC1219_0_alpha; FC1219_1_surface; FC1219_2_common_norm; FC1219_3_tail; FC1219_4_readout,False,False
+VAL1219_8_thresholds_positive,carried numeric thresholds are positive,PASS,FC1219_0_alpha=8.320244933243531978e-10; FC1219_1_surface=6.987501646143863402e-11; FC1219_2_common_norm=6.446142229433907306e-11,False,False
+VAL1219_9_missing_rows_nonclaim,no MISSING row is valid for claim,PASS,tail/readout missing rows remain nonclaim,False,False
+VAL1219_10_runner_refuses,runner stub refuses missing product,PASS,valid_prediction_rows=0 and claim_allowed=false,False,False
+VAL1219_11_claim_locks_blocked,claim locks remain blocked,PASS,"typed functor, hidden scalar, finite debt, local-GR, and product gates blocked",False,False
+VAL1219_12_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout,False,False
+VAL1219_13_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1219_SOURCE_REGISTER.csv:21; P8_Y5_R10_1219_TYPED_VISIBLE_COEFFICIENT_FUNCTOR_ATTEMPT.csv:7; P8_Y5_R10_1219_NO_HIDDEN_ARGUMENT_CONDITIONAL_THEOREM.csv:4; P8_Y5_R10_1219_HIDDEN_SCALAR_COUNTEREXAMPLE_LOCK.csv:5; P8_Y5_R10_1219_CROSS_CHANNEL_COUPLING_IMPACT_LEDGER.csv:5; P8_Y5_R10_1219_FINITE_COUPLING_CLOSURE_DEBT_ROWS.csv:5; P8_Y5_R10_1219_FEED_UPDATE.csv:3; P8_Y5_R10_1219_PRODUCT_RUNNER_STUB.csv:1; P8_Y5_R10_1219_DECISION_LEDGER.csv:3; P8_Y5_R10_1219_CLAIM_GATES.csv:6; P8_Y5_R10_1219_NEXT_TARGET.csv:1,False,False
+VAL1219_14_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_after_run_start_count=0,False,False
+VAL1219_15_next_target,next target is staged,PASS,1220-Y5-R10-parent-typed-object-language-signature-or-finite-coupling-closure.md,False,False
+VAL1219_16_overall,overall 1219 validation,PASS,"1219 typed visible coefficient functor pack is reproducible, nonclaim, and counterexample-locked",False,False

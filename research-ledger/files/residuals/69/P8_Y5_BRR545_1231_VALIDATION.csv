@@ -1,0 +1,15 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1231_0_sources_exist,all cited local sources exist,PASS,10/10 sources exist,False,False
+VAL1231_1_needles_found,all cited local needles found,PASS,10/10 needles found,False,False
+VAL1231_2_conditional_graph_theorem,interaction-graph connectedness theorem is exact conditional,PASS,CMC1231_1 result=EXACT_CONDITIONAL_THEOREM,False,False
+VAL1231_3_connectedness_not_claimed,connectedness/source-label theorem is not promoted,PASS,CMC1231_5 requires residual map,False,False
+VAL1231_4_source_forgetting_open,source-label forgetting stack remains open,PASS,SFL1231_4_verdict=NOT_CLOSED,False,False
+VAL1231_5_residual_basis_present,disconnected-component residual basis exists,PASS,basis_rows=7,False,False
+VAL1231_6_delta_map_present,Ti/Pt Delta_w component map exists,PASS,DWM1231_1_TiPt_difference present,False,False
+VAL1231_7_arena_laws_blocked,arena laws remain blocked/nonclaim,PASS,all arena laws not scoreable or placeholder-only,False,False
+VAL1231_8_claim_gates_blocked,all claim gates remain blocked,PASS,blocked_gates=5/5,False,False
+VAL1231_9_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables,False,False
+VAL1231_10_next_target_1232,next target attacks interaction graph or component fractions,PASS,1232-Y5-R10-parent-interaction-graph-certificate-or-component-fraction-source-pack.md,False,False
+VAL1231_11_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1231_SOURCE_REGISTER.csv:10; P8_Y5_R10_1231_MATTER_CATEGORY_CONNECTEDNESS_ATTEMPT.csv:6; P8_Y5_R10_1231_SOURCE_LABEL_FORGETTING_PROOF_STACK.csv:5; P8_Y5_R10_1231_DISCONNECTED_COMPONENT_RESIDUAL_BASIS.csv:7; P8_Y5_R10_1231_DELTA_W_COMPONENT_MAP.csv:4; P8_Y5_R10_1231_ARENA_RESIDUAL_LAWS.csv:4; P8_Y5_R10_1231_DECISION_LEDGER.csv:3; P8_Y5_R10_1231_CLAIM_GATES.csv:5; P8_Y5_R10_1231_NEXT_TARGET.csv:1,False,False
+VAL1231_12_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_write_count_since_run_start=0,False,False
+VAL1231_13_overall,overall 1231 validation,PASS,1231 writes the connected matter-category theorem conditionally and supplies a nonclaim disconnected-component residual map,False,False

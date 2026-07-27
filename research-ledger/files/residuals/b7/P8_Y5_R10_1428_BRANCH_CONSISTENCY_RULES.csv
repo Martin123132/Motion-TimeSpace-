@@ -1,0 +1,6 @@
+rule_id,object,rule,failure_status,valid_for_claim,claim_allowed
+BCR1428_0_same_id_required,same_parent_branch_id,future WEP source rows must carry MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 exactly or be refused,BRANCH_MISMATCH_REFUSE_SCORE,False,False
+BCR1428_1_no_tau_one_shortcut,tau_eff,tau_eff must be sourced from product/readout/source projection; tau_eff=1 as a convenience shortcut is invalid,TAU_SHORTCUT_REFUSE_SCORE,False,False
+BCR1428_2_no_DD_ontology_swap,DD comparator coefficients,DD alpha-surface rows may be comparator/proxy rows only unless an MTS parent-to-DD map is sourced and signed,DD_AS_MTS_REFUSE_CLAIM,False,False
+BCR1428_3_no_measured_G_absorption,measured-G guard,common-mode calibration may not absorb a relative Ti/Pt signal or erase an active-source residual,MEASURED_G_ABSORPTION_REFUSE_CLAIM,False,False
+BCR1428_4_no_surrogate_readout_promotion,MICROSCOPE/CMSM readout,surrogate readout arrays can test schema only; official or reproducible mission-design readout is required for claim rows,SURROGATE_READOUT_REFUSE_CLAIM,False,False

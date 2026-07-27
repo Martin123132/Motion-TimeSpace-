@@ -1,0 +1,9 @@
+checkpoint,bridge_id,object,condition_or_formula,source_basis,status,claim_allowed,valid_for_claim,timestamp_utc
+4668,BRG4668_0_body_charge,memory body charge,A_mem=0 iff reduced body charge and Green boundary charge vanish with positive operator,INS4668_5,BODY_CHARGE_ZERO_CONTRACT,False,False,2026-07-07T16:39:49.152692+00:00
+4668,BRG4668_1_same_source_object,body charge feeds same source charge,Pi_M^C J_H = J_M_top + dB_zero and M_H[Pi_M^C J_H]=H_tau[S]-H_ref,CHG4012_4; SC4354_2,SOURCE_CHARGE_EQUALITY_CONTRACT,False,False,2026-07-07T16:39:49.152692+00:00
+4668,BRG4668_2_positive_denominator,M_H_ref,"M_H_ref=H_tau-H_ref is positive, same-frame, fixed and not orbital-GM-defined",SC4354_7; FW4171_1,DENOMINATOR_GATE,False,False,2026-07-07T16:39:49.152692+00:00
+4668,BRG4668_3_integrability,H_tau,"Hamiltonian one-form exactness: I_tau,S=0 for all allowed local variations",TH4212_2; IC4212_9,INTEGRABILITY_GATE,False,False,2026-07-07T16:39:49.152692+00:00
+4668,BRG4668_4_Poisson,Newton/Poisson readout,G_00^lin=kappa_eff T_00 -> nabla^2 Phi_N=4*pi G_cal rho_H,PG4171_2; LHD4278_4,POISSON_PRIVATE_BRANCH,False,False,2026-07-07T16:39:49.152692+00:00
+4668,BRG4668_5_universal_G,calibrated G,G_cal=c^4 kappa_eff/(8*pi); numerical G_N is empirical calibration unless parent scale is derived,PG4171_1; FW4171_3,NO_NUMERIC_G_CLAIM,False,False,2026-07-07T16:39:49.152692+00:00
+4668,BRG4668_6_common_mode_guard,WEP is not enough,composition-universal charge can pass WEP while common-mode fifth-force/source-normalization survives,DER4465_4,COMMON_MODE_FIREWALL,False,False,2026-07-07T16:39:49.152692+00:00
+4668,BRG4668_7_claim_gate,local GR/Newton/PPN/R10,requires INS4668_5 plus BRG4668_1..6 and residual EFT/PPN gates in the same branch,4278;4012;4354,NONCLAIM_GATE,False,False,2026-07-07T16:39:49.152692+00:00

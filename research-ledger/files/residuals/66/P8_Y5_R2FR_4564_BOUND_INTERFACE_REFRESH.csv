@@ -1,0 +1,5 @@
+bound_id,coefficient,arena,required_inputs,use_condition,status,valid_for_claim
+BI4564_0_cD,c_D,WEP; clocks; EM propagation; Poynting,"finite same-coframe leak coefficient, projection Jacobian, units and source path",only if same-coframe parent functor is rejected,dormant_nonclaim_interface,False
+BI4564_1_deltaKappa,delta_kappa,orbital; LLR/Gdot; clock; local G,"finite kappa/source drift function, time/range units, calibration convention and source path",only if kappa/source lock is rejected globally,dormant_nonclaim_interface,False
+BI4564_2_cGamma_PPN,c_Gamma,PPN,"c_Gamma, Gamma_mem profile, J_PPN^Gamma, Gamma_perp/K_perp contribution, residual vector thresholds",active unless c_Gamma zero theorem closes,active_nonclaim_interface,False
+BI4564_3_cGamma_clock_orbital_R10,c_Gamma,clock; orbital/LLR/Gdot; R10,"local time projection, radial acceleration/Gdot projection, lambda_Gamma, alpha_Gamma(lambda), reviewed bound rows",first empirical fallback if parent memory projector proof fails,active_nonclaim_interface,False

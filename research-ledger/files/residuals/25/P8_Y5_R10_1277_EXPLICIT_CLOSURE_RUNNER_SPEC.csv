@@ -1,0 +1,5 @@
+runner_id,branch,required_inputs,runner_behavior,claim_status,do_not,valid_for_claim,claim_allowed
+ECR1277_0_inputs,local_closure_baseline,C_R=0; Q_R=0; S_R=0; C_R_boundary=0,label outputs closure_only=true and derived_local_GR=false,NONCLAIM_CONTROL_BRANCH,do not compare as parent-derived MTS local-GR pass,False,False
+ECR1277_1_allowed_outputs,local_closure_baseline,explicit closure flags from 1275/1276,may produce benchmark residual vector for Newton/PPN/R10/clocks/orbits,INTERNAL_BENCHMARK_ONLY,do not mix closure rows with finite residual rows in one score,False,False
+ECR1277_2_finite_branch,finite_residual,source-backed Z_R/W/J_R/Q_R/tau rows passing validator,score finite residual only after rows are accepted,LOCKED_NO_ROWS,do not use placeholder templates as data,False,False
+ECR1277_3_inheritance_branch,EH_inheritance,CEH1277_0 and CEH1277_1 pass,only then mark inherited_local_EH=true and attempt derived local-GR claim gates,BLOCKED,do not treat EH anchor-only block as inheritance,False,False

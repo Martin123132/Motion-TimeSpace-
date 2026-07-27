@@ -1,0 +1,8 @@
+theorem_id,statement,formula,status,valid_for_claim,generated_utc
+THM3197_0_domain_map,Let parent domain geometry define a covariant mismatch/constraint map C^A(Phi) whose zero set is the allowed C1 interface.,C^A(Phi)=0,DOMAIN_CONSTRAINT_TARGET,false,2026-06-26T19:07:03.651338+00:00
+THM3197_1_linearization,"Near a matched interface, expand the constraint map in mismatch slots z.",C=J z + O(z^2),DERIVED_LOCAL_LINEARIZATION,false,2026-06-26T19:07:03.651338+00:00
+THM3197_2_normal_metric,"If the parent supplies a positive normal metric G_N on the constraint codomain, the domain-distance action is positive before pullback.","S_domain=(1/(2 delta)) C^T G_N C, G_N>0",POSITIVE_NORMAL_METRIC_CONDITION,false,2026-06-26T19:07:03.651338+00:00
+THM3197_3_pullback_stiffness,The induced direct layer stiffness on C1 mismatch slots is the pullback of the normal metric.,K0=J^T G_N J,PARENT_DOMAIN_STIFFNESS_FORMULA,false,2026-06-26T19:07:03.651338+00:00
+THM3197_4_positivity_condition,K0 is positive definite iff G_N is positive definite and J has full column rank on the mismatch slots.,v^T K0 v=(Jv)^T G_N (Jv)>0 for all v!=0,POSITIVITY_THEOREM_DERIVED,false,2026-06-26T19:07:03.651338+00:00
+THM3197_5_failure_modes,Rank-deficient J leaves unpenalized mismatch modes; indefinite G_N creates ghost/negative stiffness modes.,rank(J)<dim(z) or minEig(G_N)<=0 -> no parent-owned positive K0,FAILURE_MODES_DERIVED,false,2026-06-26T19:07:03.651338+00:00
+THM3197_6_parent_gate,"The current corpus still must identify C, J, and G_N from MTS parent variables; otherwise K0 remains an effective closure.","S_parent -> C(Phi), G_N(Phi), J=dC/dz",PARENT_SIGNATURE_REQUIRED,false,2026-06-26T19:07:03.651338+00:00

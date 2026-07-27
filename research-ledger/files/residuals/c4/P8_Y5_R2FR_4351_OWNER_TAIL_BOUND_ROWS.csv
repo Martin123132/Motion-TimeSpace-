@@ -1,0 +1,5 @@
+bound_id,case,formula,denominator,status,valid_for_claim
+BND4351_0_clean_zero,full clean owner-tail branch,"C_RI=0, lambda_4350>0, R_Lambda=0, B_RI=0, I_RI=0 => Y_owner_a=0",lambda_4350=pi^2/ell_RI^2,EXACT_ZERO_IF_ALL_BRANCH_CLAUSES_SIGNED,False
+BND4351_1_finite_denominator,positive but imperfect branch,|Y_a| <= |Pi_a^RI| C_Lambda |R_Lambda|/lambda_4350 + |Pi_a^BRI||B_RI| + |Pi_a^I||I_RI|,"lambda_4350 := pi^2/ell_RI^2 - Eta_RI,total_bound",FORMULA_READY_VALUES_MISSING,False
+BND4351_2_denominator_fail,lambda_4350 <= 0 or unsourced,owner-tail zero/bound runner cannot score the RI inverse term,"lambda_4350 := pi^2/ell_RI^2 - Eta_RI,total_bound",CLAIM_BLOCKED_REQUIRES_ETA_ELL_ROWS,False
+BND4351_3_incoming_fail,I_RI not zero or not bounded,|Pi_a^I||I_RI| survives even when Lambda=0,not controlled by static elliptic gap,NEXT_LIVE_CLAUSE,False

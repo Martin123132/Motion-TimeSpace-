@@ -1,0 +1,8 @@
+gate_id,source_term,zero_condition,current_status,if_fail,valid_for_claim
+SCZ3421_0_exchange_symmetry,linear odd source J_A Z^A,"exact parent exchange symmetry E:Z->-Z covers the action, matter/source/readout and boundary terms",CONDITIONAL_TEMPLATE_ONLY,J_Z_exchange,False
+SCZ3421_1_even_matter_readout,matter/clocks/rods/source readout variation with respect to Z,"S_matter=S_matter[psi,e_obs(R_even)] so delta_Z S_matter=0",NOT_DERIVED_HARD_FOR_Y5,J_Z_matter_readout,False
+SCZ3421_2_Y5_source,measured-GM/source-normalization current,all source-normalization offsets are either even universal calibration already absorbed into GR kappa or odd residuals killed by Z=0,FAIL_CURRENT_Y5,J_Z_Y5_source_normalization,False
+SCZ3421_3_Y6_stress,extra stress/Bianchi-conserved current,"extra stress is public Hilbert source, topological exact, gapped no-hair, or Z-generated and zero at branch",RETAINED_Y6_DEBT,J_Z_Y6_extra_stress,False
+SCZ3421_4_boundary_work,boundary/collar/source work B_A,3420 no-flux and fixed boundary reference pass,CONDITIONAL_ON_3420_NOT_PARENT_SIGNED,B_Z_boundary_work,False
+SCZ3421_5_operator_kernel,zero modes/gauge kernel and non-coercive directions,gauge/constraint quotient removes nulls and lambda_*>0 on physical residual space,MISSING_COERCIVITY_CERTIFICATE,Z_kernel_residual,False
+SCZ3421_6_verdict,total Z source work,SCZ3421_0 through SCZ3421_5 pass,SOURCE_FREE_EULER_BRANCH_NOT_CLOSED,J_Z_total_plus_B_Z,False

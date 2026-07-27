@@ -1,0 +1,13 @@
+column,definition,required,valid_for_claim
+prediction_id,stable row id,True,False
+arena,"clock, MICROSCOPE_WEP, R10_short_range, or cross_arena",True,False
+product_symbol,exact product being predicted; runner may not algebraically split it,True,False
+product_value,numeric predicted product value only; no placeholders or derived-by-division values,True,False
+product_units,"yr^-1, dimensionless, or dimensionless alpha(lambda) convention",True,False
+product_source,local source path for the prediction derivation,True,False
+inputs_present,semicolon-separated concrete input names that are numeric/sourced,True,False
+required_inputs,semicolon-separated input names required for this product,True,False
+derivation_status,"DERIVED_NUMERIC, SYMBOLIC_ONLY, or MISSING_* status",True,False
+comparison_allowed,"true only for rows with numeric product_value, source path, and all required inputs",True,False
+valid_for_claim,"true only after all required inputs, numeric values, and source paths are real",True,False
+notes,nonclaim caveats and refusal reasons,True,False

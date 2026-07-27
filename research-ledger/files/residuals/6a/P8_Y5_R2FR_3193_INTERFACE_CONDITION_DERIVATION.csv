@@ -1,0 +1,7 @@
+condition_id,object,statement,formula,status,valid_for_claim,generated_utc
+IC3193_0_quadratic_density,action_density,Use the 3191/3192 toy quadratic projected-source functional.,"L=x^4 Q^2, Q=D2[F]",CANDIDATE_PARENT_FUNCTIONAL_NOT_PARENT_SIGNED,false,2026-06-26T18:20:08.951409+00:00
+IC3193_1_boundary_u,boundary_variable,Define the compact source momentum variable.,u=x^4 Q=x^4D2[F],DERIVED,false,2026-06-26T18:20:08.951409+00:00
+IC3193_2_boundary_variation,variation_boundary_term,Varying a second-derivative functional gives boundary terms multiplying deltaF and deltaFprime.,deltaJ_boundary=[Pi_1 deltaFprime + Pi_0 deltaF],DERIVED,false,2026-06-26T18:20:08.951409+00:00
+IC3193_3_Pi1,momentum_conjugate_to_Fprime,The momentum multiplying deltaFprime is proportional to u.,Pi_1=dL/dF''=(4/5)u,DERIVED,false,2026-06-26T18:20:08.951409+00:00
+IC3193_4_Pi0,momentum_conjugate_to_F,The momentum multiplying deltaF is dL/dFprime minus the derivative of dL/dF''.,Pi_0=dL/dF' - d(Pi_1)/dx = 4u/x-(4/5)u',DERIVED,false,2026-06-26T18:20:08.951409+00:00
+IC3193_5_interface_condition,natural_interface_matching,"With no localized interface action and no fixed representative boundary data, both boundary momenta must be continuous across each join.",[Pi_1]=0 and [Pi_0]=0,INTERFACE_CONDITION_DERIVED,false,2026-06-26T18:20:08.951409+00:00

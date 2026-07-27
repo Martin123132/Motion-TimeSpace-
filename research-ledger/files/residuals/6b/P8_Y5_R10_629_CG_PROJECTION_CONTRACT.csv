@@ -1,0 +1,7 @@
+contract_id,object,required_value,status,formula_or_condition,source_requirement,valid_for_claim
+CG629_0_effective_alpha,alpha_MTS_R10(lambda),numeric_or_theorem_zero,blocked_symbolic,alpha_MTS_R10(lambda)=abs(c_g*tau_R10(lambda)*K_X*Qbar_XH(lambda;lambda_X)*qbar_XT/Z_eff),"parent action must define c_g, Z_eff, source/test charges, and R10 projection map",false
+CG629_1_zero_route,Z_cg or c_g,"Z_cg=true with c_g=0, or sourced numeric c_g",not_signed,"if c_g=0 by parent geometry, alpha_MTS_R10(lambda)=0 for all lambda",quotient-invariant matter action plus no representative Weyl/disformal residue,false
+CG629_2_projection,tau_R10(lambda),dimensionless apparatus projection,missing_arena_projection,tau_R10 must map parent local mode into Yukawa-alpha observable for the Eot-Wash source/detector geometry,"derive from local profile, material coupling, and experimental source geometry",false
+CG629_3_range,lambda_X,positive numeric meters or no-range theorem,missing_parent_hessian,lambda_X=sqrt(Z_X/M_X^2),parent Hessian/eigenvalue block for the local residual mode,false
+CG629_4_profile,Qbar_XH(lambda;lambda_X),source/profile response,missing_profile_map,Qbar_XH must be evaluated on the R10 source geometry and local transition profile,derive from local compact-shell/profile solution or demote to explicit empirical closure,false
+CG629_5_claim_gate,R10 pass,all valid physical rows satisfy bound,blocked,abs(alpha_MTS_R10(lambda_i))<=alpha_bound(lambda_i) for all source-backed curve rows,valid physical MTS alpha rows plus promoted source-backed bound curve,false

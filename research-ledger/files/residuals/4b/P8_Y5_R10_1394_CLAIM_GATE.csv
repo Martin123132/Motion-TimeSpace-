@@ -1,0 +1,7 @@
+gate_id,gate,status,reason,valid_for_claim,claim_allowed
+GATE1394_0_sources,all cited local sources exist and anchors are present,PASS,source register validates against local corpus,False,False
+GATE1394_1_binding_inheritance,binding sectors inherit common owner or vanish,BLOCKED_PARENT_UNSIGNED,binding sector ownership and inherited beta zero are not parent-signed,False,False
+GATE1394_2_composition_map,material composition rows exist,PASS_NONCLAIM_MAP,"source/test electronic, nuclear, and EM composition factors are explicit but missing",False,False
+GATE1394_3_binding_beta,"binding beta rows can fill beta_bulk,S/T",BLOCKED_VALUES_MISSING,sector betas and composition fractions are missing or not theorem-zero,False,False
+GATE1394_4_R10_WEP_score,R10/WEP/clock scores may be reported,BLOCKED_NO_BINDING_INPUTS,composition-dependent binding terms remain unresolved,False,False
+GATE1394_5_local_claim,local GR/Newton reduction can be claimed,BLOCKED_NO_CLAIM,"1394 is a binding/composition checkpoint, not a derived local GR limit",False,False

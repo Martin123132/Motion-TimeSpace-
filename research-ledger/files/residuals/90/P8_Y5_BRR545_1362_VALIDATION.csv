@@ -1,0 +1,11 @@
+check_id,check,status,details
+VAL1362_0_sources_exist,registered source paths exist and anchors are found,PASS,SRC1362_0_1361_doc=True/True;SRC1362_1_1361_next=True/True;SRC1362_2_1361_MHref_schema=True/True;SRC1362_3_410_functor=True/True;SRC1362_4_623_theorem=True/True;SRC1362_5_623_gate=True/True;SRC1362_6_624_doc=True/True;SRC1362_7_944_doc=True/True;SRC1362_8_944_claims=True/True;SRC1362_9_1006_doc=True/True;SRC1362_10_1006_template=True/True;SRC1362_11_1008_doc=True/True
+VAL1362_1_qObs_not_promoted,q/Obs_e parent certificate is not promoted,PASS,"the descent theorem remains a strong conditional route, not a current MTS derivation."
+VAL1362_2_obstructions_open,"qObs obstruction ledger has q, Obs_e, constants, shadow frame, tau/support, and denominator rows",PASS,obstruction_rows=6
+VAL1362_3_denominator_pack_complete,"denominator source pack covers H_tau, H_ref, M_H_ref, Q_tau, theta, frame/tau ids, anti-circularity, and acceptance",PASS,pack_rows=8
+VAL1362_4_denominator_pack_nonclaim,denominator pack rows remain missing/guardrail/blocked/nonclaim,PASS,no denominator row can score
+VAL1362_5_claim_gates_block_claim,"qObs, frame-leak, denominator, and local-GR claims remain blocked",PASS,GATE1362_0_conditional_descent=True;GATE1362_1_parent_qObs=False;GATE1362_2_frame_leak_zero=False;GATE1362_3_MHref_pack_ready=False;GATE1362_4_Newton_local_GR=False
+VAL1362_6_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false across generated rows
+VAL1362_7_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1362_8_next_target_1363,next target routes to parent qObs-current-chain bridge or Htau/Href first row,PASS,1363-Y5-R10-RAB-parent-qObs-current-chain-bridge-or-Htau-Href-first-source-row.md
+VAL1362_9_overall,overall 1362 validation,PASS,1362 blocks qObs parent certificate and stages denominator source pack

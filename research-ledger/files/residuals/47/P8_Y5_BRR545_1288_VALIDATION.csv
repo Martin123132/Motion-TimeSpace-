@@ -1,0 +1,11 @@
+check_id,check,status,details
+VAL1288_0_sources_exist,registered source paths exist and anchors are found,PASS,9/9 source anchors found
+VAL1288_1_KL00_amplitude_row_nonclaim,"KL00 Newton amplitude row exists, contains MISSING markers, and remains nonclaim",PASS,KAR1288_0_KL00_Newton_source_fraction
+VAL1288_2_response_matrix_requirements_blocked,all response matrix rows are blocked/nonclaim,PASS,response_requirement_rows=8
+VAL1288_3_Kmetric_derivative_blocked,Kmetric derivative/full component route is explicitly blocked,PASS,KMR1288_6_full_Kmetric_verdict
+VAL1288_4_claim_gates_blocked,claim gates prevent local GR/PPN promotion,PASS,claim_gate_rows=6
+VAL1288_5_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1288_SOURCE_REGISTER.csv:9; P8_Y5_R10_1288_KL00_AMPLITUDE_RESPONSE_ROW_NONCLAIM.csv:3; P8_Y5_R10_1288_RESPONSE_MATRIX_REQUIREMENTS.csv:8; P8_Y5_R10_1288_KMETRIC_DERIVATIVE_TERM_BLOCKER.csv:7; P8_Y5_R10_1288_CLAIM_GATES.csv:6; P8_Y5_R10_1288_DECISION_LEDGER.csv:4; P8_Y5_R10_1288_NEXT_TARGET.csv:1
+VAL1288_6_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1288_7_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1288_8_next_target_1289,next target routes to response matrix source or Kmetric derivative expansion,PASS,1289-Y5-R10-RAB-KL00-response-matrix-source-or-Kmetric-derivative-expansion.md
+VAL1288_9_overall,overall 1288 validation,PASS,"1288 stages a source-backed nonclaim KL00 amplitude-response row, blocks response-matrix and Kmetric-derivative claims, and routes to 1289"

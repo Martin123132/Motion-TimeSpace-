@@ -1,0 +1,106 @@
+# 3524 - Observed Stack And Charge Lattice Parent Owner Or Local Source Kernel Values
+
+## Summary
+- **Composite theorem target:** the local GR/Newton/Maxwell source route now reduces to one shared parent owner: `Omega_local=(Q_pub,*_obs,T_Q,J_H_total)`.
+- **Derived conditional:** if this owner is signed before readout/calibration, matter plus EM source coupling is the total Hilbert stress on the observed geometry; Poynting is included as Maxwell stress flux.
+- **No shortcut:** Hodge/light-cone matching does not fix source normalization, and compact charge labels do not fix alpha/gauge norm without a parent norm/no-extra-`F²` owner.
+- **Current verdict:** the composite theorem is exact conditionally but not live-claimable; the current corpus has all pieces as conditional clauses, not one parent-signed object.
+- **Backstop progress:** the failure branch now has explicit kernel value requirements, including the existing nonclaim alpha-only WEP ceiling.
+
+## Composite Owner Equation
+`Omega_local = (Q_pub=q(Phi), *_obs[e_obs(q)], T_Q/N_Q/Z_EM, J_H_total)`
+
+`S_local = S_geom[Q_pub] + S_matter[psi;Q_pub,theta] - 1/4 int mu(Q_pub) Z_EM(T_Q,N_Q) F_Q^2 + S_boundary[Q_pub]`
+
+If every term factors through `Omega_local` before readout, then the local source is `T_total = T_matter + T_EM`, with `T_EM` carrying the Poynting flux. If any component is independently labelled, it becomes a kernel rather than a derivation.
+
+## Source Register
+| source_id | path | exists | role | valid_for_claim |
+| --- | --- | --- | --- | --- |
+| script_3524 | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\Y5_R2FR_3524_observed_stack_and_charge_lattice_parent_owner_or_local_source_kernel_values.py | True | 3524 generator | False |
+| doc_3523 | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\3523-Y5-R2FR-source-label-forgetting-functor-and-EM-Hodge-owner-or-marker-kernel-bound.md | True | source-label forgetting and EM-Hodge handoff | False |
+| next_3523 | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_3523_NEXT_TARGET.csv | True | 3523-selected observed-stack/charge owner target | False |
+| observed_stack_2588 | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\2588-Y5-R2FR-observed-stack-q-eobs-tau-parent-owner-or-source-leak-fill.md | True | q/e_obs/tau/ell_J observed-stack conditional descent | False |
+| observed_stack_cert_2588 | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_OBS_STACK_2588_OWNER_CERTIFICATE.csv | True | 2588 owner certificate gates | False |
+| observed_stack_audit_2588 | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_OBS_STACK_2588_Q_OBSE_TAU_DESCENT_AUDIT.csv | True | 2588 q/e_obs/tau descent audit | False |
+| charge_owner_1100 | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\1100-Y5-R10-parent-TQ-owner-fixed-charge-lattice-and-gauge-norm-signature.md | True | T_Q fixed charge-lattice/gauge-norm signature | False |
+| charge_signature_1100 | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_1100_TQ_GAUGE_NORM_SIGNATURE.csv | True | 1100 T_Q/gauge-norm signature clauses | False |
+| charge_theorem_1100 | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_1100_TQ_THEOREM_ATTEMPT.csv | True | 1100 conditional T_Q theorem and countermodels | False |
+| hodge_owner_3503 | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\3503-Y5-R2FR-observed-Hodge-Maxwell-owner-and-total-Hilbert-current-closure-or-EM-bound.md | True | observed Hodge/Maxwell/Hilbert current owner chain | False |
+| hodge_rule_3504 | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\3504-Y5-R2FR-observed-Hodge-flow-rule-from-q-eobs-or-DeltaHodge-bound.md | True | Hodge uniqueness and q/e_obs chain rule | False |
+| em_domain_3505 | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\3505-Y5-R2FR-visible-EM-action-domain-exhaustion-no-chiEM-no-hidden-Hodge-or-bound.md | True | visible EM action-domain exhaustion target | False |
+| em_owner_3465 | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\3465-Y5-R2FR-EM-alpha-Hodge-charge-owner-or-WEP-raw-to-effective-map.md | True | EM owner audit plus alpha-only WEP bound | False |
+| em_owner_audit_3465 | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_3465_EM_OWNER_PACKAGE_AUDIT.csv | True | 3465 EM owner package audit | False |
+| alpha_bound_3465 | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_3465_ALPHA_ONLY_BOUND_CALCULATION.csv | True | 3465 alpha-only effective WEP ceiling | False |
+
+## Owner Synthesis
+| owner_id | parent_object | required_components | conditional_gain | current_evidence | current_status | source_path | valid_for_claim |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| OWN3524_0_Qpub | Q_pub=q(Phi) | regular q map; parent-null kernel; basic e_obs; same-frame readout; tau identity; ell_J source scale; no shadow frame | matter, clocks, rods, photons, orbital support and source current use one observed geometry/time/scale stack | 2588 writes exact conditional descent and all certificate gates | CONTRACT_EXACT_BUT_OWNER_NOT_SIGNED | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\2588-Y5-R2FR-observed-stack-q-eobs-tau-parent-owner-or-source-leak-fill.md | False |
+| OWN3524_1_Hodge | *_obs[e_obs(q)] | e_obs q-basic; orientation fixed; EM action uses *_obs; no independent chi_EM/f_H/readout Hodge map | Maxwell stress, light cone and Poynting flow use the same observed geometry as local source coupling | 3504 proves Hodge uniqueness and q/e_obs chain rule conditionally | CONDITIONAL_ZERO_ROUTE_ACTION_DOMAIN_OPEN | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\3504-Y5-R2FR-observed-Hodge-flow-rule-from-q-eobs-or-DeltaHodge-bound.md | False |
+| OWN3524_2_TQ | T_Q, charge lattice and gauge norm | parent T_Q object; fixed compact charge lattice/base unit; nonrescalable norm; unique F_Q^2; same current owner; readout/radiative closure | b_alpha=0, Maxwell normalization fixed, Lorentz force/current and EM source stress share one owner | 1100 gives exact conditional theorem but keeps norm/no-extra-F2/current/readout unsigned | TQ_GAUGE_NORM_SIGNATURE_NOT_DERIVED | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\1100-Y5-R10-parent-TQ-owner-fixed-charge-lattice-and-gauge-norm-signature.md | False |
+| OWN3524_3_total_Hilbert_current | J_H_total = J_H_matter + J_H_EM + permitted boundary/radiative pieces | same Q_pub variation; same EM owner; matter-EM exchange cancellation; stationary exterior flux bound; natural Pi_M projector | Poynting is source bookkeeping inside total Hilbert stress, while external flux becomes an explicit boundary kernel | 3503 writes the exact total-current chain and bound vector | CONDITIONAL_TOTAL_CURRENT_CLOSURE_NOT_SIGNED | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\3503-Y5-R2FR-observed-Hodge-Maxwell-owner-and-total-Hilbert-current-closure-or-EM-bound.md | False |
+| OWN3524_4_composite_owner | Omega_local = (Q_pub,*_obs,T_Q,J_H_total) | OWN3524_0 through OWN3524_3 close together before readout/calibration | local GR/Newton/Maxwell source coupling can be derived as one parent Hilbert-source branch rather than fitted sector weights | no inspected source signs all components together | COMPOSITE_OWNER_NOT_PARENT_DERIVED | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\3523-Y5-R2FR-source-label-forgetting-functor-and-EM-Hodge-owner-or-marker-kernel-bound.md | False |
+
+## Composite Theorems
+| theorem_id | claim | formal_statement | derivation | current_status | effect_if_signed | fires_for_live_mts | valid_for_claim |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| COT3524_0_shared_owner_theorem | Shared observed-stack plus charge/gauge owner derives universal local source coupling. | If Omega_local=(Q_pub,*_obs,T_Q,J_H_total) is parent-owned, all matter and EM actions factor through it before readout, and independent source/EM marker slots are absent, then the local source is the total Hilbert stress on the observed geometry. | Variation of S_matter[psi;Q_pub,theta] and S_EM[A_Q,*_obs(Q_pub),Z_EM(T_Q)] with respect to Q_pub gives T_total. Matter-EM Lorentz exchange cancels inside nabla_mu T_total^{mu nu}; Poynting is T_EM^{0i}; source labels and EM normalizations cannot vary independently because they are fixed representation/parent data. | EXACT_CONDITIONAL_COMPOSITE_THEOREM | J_H=q^*Jbar_H, Delta_w_label=0, epsilon_J=0, b_alpha=0, Delta_Hodge=0 and Poynting source projection becomes ordinary Hilbert stress modulo external flux bounds. | False | False |
+| COT3524_1_hodge_not_scale_owner | Hodge uniqueness alone does not fix Newton/source normalization. | In 4D, Maxwell two-form Hodge agreement can preserve light cones while leaving conformal/source/charge-current scale open. | 3504's conformal caveat: g->Omega^2 g leaves * on 2-forms invariant, so e_obs/Hodge success must be paired with tau, ell_J, T_Q and current normalization owners. | NO_OVERCLAIM_GUARD_ACTIVE | prevents claiming local GR/Newton from EM light-cone/Hodge matching alone | True | False |
+| COT3524_2_charge_norm_countermodel | Compact U(1) labels alone do not fix alpha/source coupling. | Integer charge labels do not determine the absolute base charge/gauge norm unless T_Q's norm and unique F_Q^2 owner are parent-fixed. | 1100 retains T_Q->sT_Q and independent lambda_A F_Q^2 countermodels; both leave formal gauge structure intact while changing physical normalization. | COUNTERMODEL_RETAINED | forces charge/gauge norm ownership rather than unit-rescaling alpha away | True | False |
+| COT3524_3_value_backstop | If the composite owner does not close, local tests require kernel values not broad prose. | Retained channels must be represented by Delta_w_label, epsilon_J, b_alpha, Delta_Hodge, epsilon_Poynting and their arena kernels with units, source paths and no-cancellation policy. | Each missing owner component has a measurable transfer: WEP/R10/PPN/clock/orbital/source-normalization/Maxwell light-cone/Poynting flux. | FINITE_VALUE_REQUIREMENTS_STAGED | turns the failure branch into empirical plumbing rather than another closure paragraph | True | False |
+
+## Promotion Gates
+| gate_id | gate | pass_condition | current_status | blocking_source | if_failed | valid_for_claim |
+| --- | --- | --- | --- | --- | --- | --- |
+| G3524_0_q_stack_owner | Q_pub owner | q map, kernel, e_obs, tau, ell_J and no-shadow frame close together | False | 2588: OSA2588_7 / OSC2588_0..7 | epsilon_q_owner, epsilon_DObs_e, epsilon_tau_selector, epsilon_ellJ_scale, shadow/readout residuals | False |
+| G3524_1_hodge_owner | observed Hodge owner | e_obs q-basic plus fixed orientation plus EM action-domain excludes independent chi_EM/hidden Hodge/readout Hodge | False | 3504: HFR3504_6 / HSG3504 gates | Delta_Hodge_EM, Delta_chi, hidden/disformal Hodge, readout Hodge | False |
+| G3524_2_charge_gauge_owner | T_Q/charge/gauge norm owner | T_Q object, fixed lattice/base unit, fixed norm, unique F2, same current owner and readout/radiative guard close | False | 1100: TQS1100_6 | b_alpha, w_EM, C_XF2, C_JQ, current rescale | False |
+| G3524_3_total_hilbert_current | total Hilbert source current | matter plus EM total current closes; Pi_M natural; no external/radiative Poynting leakage or it is bounded | False | 3503: THC3503_4..6 | Delta_J_total, Delta_PiM_metric, Phi_EM_rad | False |
+| G3524_4_total | composite local source owner | G3524_0 through G3524_3 pass together before readout/calibration | False | 3524 synthesis | no derived local-GR/Newton/Maxwell/source-coupling claim; use kernel values | False |
+
+## Kernel Value Requirements
+| kernel_id | channel | required_value | formula | units | source_or_owner_needed | projection_needed | current_status | valid_for_claim |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| KV3524_0_Delta_w_label | source-label/material weight | Delta_w_label or theorem-zero | Delta_w_label=P_perp w_source; use sum_abs envelope until covariance source exists | dimensionless | F_src / source-label forgetting theorem or material/source weight prior | WEP/R10/PPN/clock/orbital arena kernels | MISSING_VALUE_OR_THEOREM_ZERO | False |
+| KV3524_1_epsilon_J | Hilbert current/source normalization | epsilon_J or theorem-zero | epsilon_J <= \|\|c_A-c_common\|\| \|\|J_A\|\| + support/boundary/jump/source-current scale terms | source_current_norm_or_dimensionless_after_MHref | ell_J owner, same-frame M_H_ref, source-current owner and support ledger | Newton/PPN/orbital/source-normalization map | MISSING_CURRENT_OWNER_OR_NUMERIC_BOUND | False |
+| KV3524_2_b_alpha | EM gauge normalization | b_alpha standalone or theorem-zero | b_alpha=L_v log Z_EM; zero if T_Q/gauge norm/no-extra-F2/readout guard closes | dimensionless_vertical_derivative | T_Q owner, fixed norm, unique F2, current owner, radiative/readout closure | clock/WEP/R10/spectroscopy tau and material maps | MISSING_STANDALONE_VALUE;ALPHA_ONLY_WEP_EFFECTIVE_BOUND_EXISTS_NONCLAIM | False |
+| KV3524_3_Delta_Hodge_EM | EM Hodge/constitutive | Delta_Hodge_EM components or theorem-zero | *_EM-*_obs[e_obs(q)] plus chi_principal/skewon/axion/hidden/readout/conformal/orientation components | tensor_dimensionless_or_component_declared | visible EM action-domain exhaustion and no independent constitutive/Hodge/background/readout map | Maxwell limit, light-cone, birefringence, Poynting, clock, PPN | CONDITIONAL_ZERO_ROUTE_NOT_CLAIMED;COMPONENT_BOUNDS_REQUIRED | False |
+| KV3524_4_epsilon_Poynting | Poynting/source projection | epsilon_Poynting or theorem-zero | epsilon_Poynting=\|\|D[-h^a_mu T_EM^{mu nu}u_nu][v]\|\| plus boundary flux Phi_EM_rad/(G_ref M_H) | stress_flux_norm_or_dimensionless_after_MHref | observed Hodge owner, charge/current owner, stationary exterior/source support, boundary flux convention | Gdot/clock/local source drift/orbital source normalization | MISSING_POYNTING_PROJECTION_AND_FLUX_VALUE | False |
+| KV3524_5_alpha_only_WEP_bound_import | existing nonclaim numeric bound | \|D_e_eff\| <= 1.407170315973e-12 | D_e_eff_abs_bound = eta_TiPt_bound / Delta_Q_alpha_Coulomb_abs | dimensionless | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R2FR_3465_ALPHA_ONLY_BOUND_CALCULATION.csv | alpha-only isolated WEP source-leg assumption; full material tensor still deferred | NUMERIC_NONCLAIM_BOUND_AVAILABLE_NOT_MTS_PREDICTION | False |
+
+## Canonical Status
+| status_id | quantity | value | meaning | claim_effect | valid_for_claim |
+| --- | --- | --- | --- | --- | --- |
+| STAT3524_0_composite_theorem | shared_owner_derives_local_source_coupling | exact_conditional | if Q_pub, observed Hodge, T_Q/gauge norm and total Hilbert current are one parent owner, matter+EM source coupling reduces to total Hilbert stress | strongest current derivation route to local GR/Newton/Maxwell source coupling | False |
+| STAT3524_1_live_owner | composite_owner_parent_signed_by_current_MTS | False | 2588, 1100, 3503 and 3504 each provide conditional clauses, but no source signs all together | no derived local-GR/Newton/Maxwell/source-coupling claim | False |
+| STAT3524_2_value_branch | local_kernel_value_requirements | staged | Delta_w, epsilon_J, b_alpha, Delta_Hodge and Poynting kernels now have explicit value/source/unit/projection requirements | failure branch is test-plumbed rather than left as broad missing prose | False |
+| STAT3524_3_next_best | next_best_attack | visible_EM_action_domain_or_q_stack_owner_first | the tightest derivation fork is either forbid independent EM constitutive/F2 slots or prove q/e_obs/tau/ell_J parent ownership | continue by trying one parent owner clause rather than recircling the full ladder | False |
+
+## Decision Ledger
+| decision_id | decision | rationale | effect | claim_allowed |
+| --- | --- | --- | --- | --- |
+| DEC3524_0_synthesis | promote the composite owner as the next theorem target, not as a claim | 2588/1100/3503/3504 fit together into one parent-object throat | the route to GR/Newton/Maxwell source coupling is now one shared owner problem | False |
+| DEC3524_1_guard | do not infer source normalization from Hodge/light-cone or compact charge labels alone | 3504 conformal caveat and 1100 rescaling countermodel both block that shortcut | prevents fake victory from mathematically pretty but under-owned pieces | False |
+| DEC3524_2_backstop | stage kernel value rows if the owner remains unsigned | the empirical route needs values/projections, not another missing paragraph | sets up future R10/WEP/PPN/clock/orbital/Maxwell tests without claim leakage | False |
+
+## Next Target
+| next_doc | next_script | objective | success_gate | why_next | claim_allowed |
+| --- | --- | --- | --- | --- | --- |
+| 3525-Y5-R2FR-visible-EM-action-domain-exhaustion-or-q-stack-owner-first-branch.md | scripts/Y5_R2FR_3525_visible_EM_action_domain_exhaustion_or_q_stack_owner_first_branch.py | Choose and execute the tighter first owner proof: either visible EM action-domain exhaustion forbids independent chi_EM/f_H/lambda F2/readout Hodge slots, or q/e_obs/tau/ell_J parent ownership closes the observed stack first. | One owner clause is parent-signed or the corresponding residual component row gains explicit numeric/source/unit/projection requirements. | 3524 shows the whole branch cannot close at once; the least circular next step is to close one owner clause cleanly. | False |
+
+## Validation
+| check_id | passed | detail | valid_for_claim |
+| --- | --- | --- | --- |
+| VAL3524_0_sources_exist | True | all cited local source paths exist | False |
+| VAL3524_1_composite_owner_written | True | composite owner and conditional theorem are present | False |
+| VAL3524_2_uses_2588_1100_3504_chain | True | observed stack, charge/gauge owner and Hodge chain-rule sources are all used | False |
+| VAL3524_3_live_owner_not_promoted | True | composite owner remains nonclaim | False |
+| VAL3524_4_kernel_requirements_complete | True | Delta_w, epsilon_J, b_alpha, Delta_Hodge and Poynting kernel requirements present | False |
+| VAL3524_5_numeric_nonclaim_bound_imported | True | existing alpha-only WEP nonclaim bound imported as value evidence | False |
+| VAL3524_6_no_claim_flags_true | True | no local-GR/Newton/Maxwell/source-coupling claim is promoted | False |
+| VAL3524_7_next_target_selected | True | 3525 owner-clause-first branch selected | False |
+| VAL3524_8_csvs_parse | True | source_register; owner_synthesis; composite_theorems; promotion_gates; kernel_value_requirements; status; canonical_status; decision_ledger; next_target | False |
+| VAL3524_9_outputs_stay_in_post_checkpoint_work | True | root=D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work | False |
+| VAL3524_10_formalization_workbench_not_targeted | True | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\formalization-workbench | False |
+| VAL3524_SUMMARY | True | PASS | False |

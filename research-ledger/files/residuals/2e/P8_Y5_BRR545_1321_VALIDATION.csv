@@ -1,0 +1,11 @@
+check_id,check,status,details
+VAL1321_0_sources_exist,registered source paths exist and anchors are found,PASS,8/8 source anchors found
+VAL1321_1_best_clock_bound_imported,best current clock product bound is imported as comparison-only,PASS,171Yb+ E3 / 171Yb+ E2 bound=2.1e-18 yr^-1
+VAL1321_2_fill_template_complete,"clock first-fill template covers direct product, factorized product, tau, and clock model",PASS,CLK1321_0_direct_product;CLK1321_1_factorized_product;CLK1321_2_tau_readout;CLK1321_3_clock_model
+VAL1321_3_product_schema_blocks_standalone_balpha,product schema explicitly forbids standalone b_alpha inference,PASS,standalone b_alpha route forbidden
+VAL1321_4_runner_refuses_current_clock_row,runner refuses current clock row until direct product or tau/readout is filled,PASS,no_numeric_predicted_product;missing_tau_or_direct_product;missing_readout_model;standalone_balpha_forbidden
+VAL1321_5_shortcuts_enforced,anti-shortcut gates are enforced,PASS,SHORT1321_0_no_standalone_balpha;SHORT1321_1_no_tau_h0_assumption;SHORT1321_2_no_threshold_prediction;SHORT1321_3_no_cross_arena_transfer;SHORT1321_4_no_parent_reopen
+VAL1321_6_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1321_7_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1321_8_next_target_1322,next target routes to clock tau/readout map derivation or source rejection,PASS,1322-Y5-R10-RAB-clock-tau-readout-map-derivation-or-source-rejection.md
+VAL1321_9_overall,overall 1321 validation,PASS,"1321 creates clock first-fill runner, imports product bound, refuses standalone b_alpha, and routes to tau/readout derivation"

@@ -1,0 +1,11 @@
+check_id,check,passed,detail
+VAL3276_0_sources_exist,all cited source paths exist,true,
+VAL3276_1_sources_parse,all cited source paths parse,true,
+VAL3276_2_outputs_parse,all 3276 output CSVs parse,true,non-validation outputs parsed before validation write
+VAL3276_3_domain_split_complete,"A_Q domain split contains minimal, F-only, shadow, and forbidden/non-silent cases",true,ADS3276_0_minimal_representation_current;ADS3276_1_F_only_magnetization;ADS3276_2_bare_AJ_shadow;ADS3276_3_nonconserved_AJ_compensator
+VAL3276_4_magnetization_identity_present,F-only magnetization current is identically conserved,true,nabla_nu nabla_mu H^{mu nu}=0
+VAL3276_5_silent_compensator_rejected,nonconserved silent compensator is rejected or routed to real sector,true,exact U1 requires conservation or real charged sector
+VAL3276_6_runner_expectations,source-shadow runner expectations all match,true,SSR3276_0_minimal_domain_zero_conditional=PASS_NUMERIC_NONCLAIM;SSR3276_1_live_source_shadow_missing=REFUSE_OR_FAIL;SSR3276_2_magnetization_exact_no_flux_zero=PASS_NUMERIC_NONCLAIM;SSR3276_3_nonconserved_compensator_forbidden_smoke=REFUSE_OR_FAIL;SSR3276_4_half_bound_smoke=PASS_NUMERIC_NONCLAIM;SSR3276_5_twice_bound_smoke=FAIL_BOUND
+VAL3276_7_claim_gates_false,no 3276 gate allows local-GR/WEP/Maxwell claim,true,all claim_allowed=false
+VAL3276_8_formalization_untouched,formalization-workbench modified-file count remains zero by this script,true,formalization_changed_count=0
+VAL3276_9_overall,3276 validation overall,true,all required checks passed

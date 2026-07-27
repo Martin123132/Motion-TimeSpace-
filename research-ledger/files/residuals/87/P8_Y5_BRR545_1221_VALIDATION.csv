@@ -1,0 +1,17 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1221_0_sources_exist,all cited local sources exist,PASS,16/16 sources exist,False,False
+VAL1221_1_needles_found,all cited source needles found,PASS,16/16 needles found,False,False
+VAL1221_2_closure_register_imported,1220 closure register imported,PASS,FCCR1220_0_alpha; FCCR1220_1_surface; FCCR1220_2_common_norm; FCCR1220_3_tail; FCCR1220_4_readout,False,False
+VAL1221_3_acquisition_coverage,alpha/surface/readout/source-weight acquisition rows exist,PASS,ACQ1221_0_alpha; ACQ1221_1_surface; ACQ1221_2_source_weight; ACQ1221_3_readout; ACQ1221_4_common_norm; ACQ1221_5_tail,False,False
+VAL1221_4_runner_rows_nonclaim,runner rows remain nonclaim,PASS,6 runner rows are score_ready=false and valid_for_claim=false,False,False
+VAL1221_5_positive_numeric_thresholds,known numeric thresholds are positive,PASS,alpha/surface/source_weight/common_norm thresholds are positive,False,False
+VAL1221_6_missing_rows_nonclaim,rows with MISSING markers are not valid for claim,PASS,every MISSING runner row remains nonclaim,False,False
+VAL1221_7_parent_primitive_not_found,no escape-hatch primitive is falsely promoted,PASS,PESC1221_0_parent_grammar=NOT_FOUND_IN_CURRENT_CORPUS; PESC1221_1_alpha_F2_domain=COUNTEREXAMPLE_ACTIVE; PESC1221_2_matter_constant_superselection=NOT_PARENT_SIGNED; PESC1221_3_source_weight_owner=CONDITIONAL_NOT_PARENT_SIGNED; PESC1221_4_readout_functor=UNSIGNED,False,False
+VAL1221_8_scorepack_refuses,scorepack decision rows refuse claims,PASS,6 scorepack rows refused,False,False
+VAL1221_9_runner_stub_refuses,runner stub has zero valid prediction rows,PASS,valid_prediction_rows=0; score_ready_rows=0; claim_allowed=false,False,False
+VAL1221_10_claim_gates_blocked,claim gates keep physical claims blocked,PASS,source/import gates pass; primitive/source/runner/local claim gates blocked,False,False
+VAL1221_11_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout claim-bearing tables,False,False
+VAL1221_12_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1221_SOURCE_REGISTER.csv:16; P8_Y5_R10_1221_FINITE_CLOSURE_INPUT_SCHEMA.csv:6; P8_Y5_R10_1221_SOURCE_ACQUISITION_LEDGER.csv:6; P8_Y5_R10_1221_RUNNER_READY_NONCLAIM_ROWS.csv:6; P8_Y5_R10_1221_PARENT_PRIMITIVE_ESCAPE_HATCH.csv:5; P8_Y5_R10_1221_EMPIRICAL_ARENA_MAP.csv:5; P8_Y5_R10_1221_SCOREPACK_DECISION_MATRIX.csv:6; P8_Y5_R10_1221_FEED_UPDATE.csv:3; P8_Y5_R10_1221_PRODUCT_RUNNER_STUB.csv:1; P8_Y5_R10_1221_DECISION_LEDGER.csv:3; P8_Y5_R10_1221_CLAIM_GATES.csv:6; P8_Y5_R10_1221_NEXT_TARGET.csv:1,False,False
+VAL1221_13_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_after_run_start_count=0,False,False
+VAL1221_14_next_target,next target is staged,PASS,1222-Y5-R10-closure-scorepack-runner-first-nonclaim-table.md,False,False
+VAL1221_15_overall,overall 1221 validation,PASS,"1221 scorepack/acquisition checkpoint is reproducible, nonclaim, and formalization-safe",False,False

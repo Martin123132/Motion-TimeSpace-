@@ -1,0 +1,8 @@
+gate_id,gate,current_result,promotes_if,valid_for_claim
+PG3419_0_old_match,old/live K_hat is matched to K_metric[Gamma_eff],FAIL_CURRENT_CORPUS,component formulas and boundary convention are source-signed,False
+PG3419_1_parent_response_adoption,future parent branch defines K_hat as K_metric[Gamma_eff],PASS_CONDITIONAL_EXTENSION_POLICY,all old Khat uses are mapped or residualized and sign/volume convention is fixed,False
+PG3419_2_bulk_Helmholtz,bulk Helmholtz/integrability for Khat response,PASS_IN_ADOPTED_PARENT_BRANCH,S_GK differentiable scalar density with fixed field domain,False
+PG3419_3_boundary_projector,boundary/projector/harmonic terms do not reintroduce q_loc vector leakage,BLOCKED_DEFER_TO_3420,"no-flux, q-basic projector, trivial cohomology or explicit bounds",False
+PG3419_4_Zbasis_Euler,Z residual basis is physical and Euler/source-free on local branch,BLOCKED_COMPONENT_AND_EULER_LOCK_NEEDED,Z=0 branch covers q_loc/source/stress residuals and E_A=0 through O(U^2),False
+PG3419_5_q_loc_vector_zero,q_loc vector projection is theorem-zero,NOT_YET_PROMOTED,PG3419_1 through PG3419_4 pass,False
+PG3419_6_local_GR,local GR/Newton/PPN branch is derived,BLOCKED,q_loc vector-zero plus retained beta/source/stress/nonEH envelopes close,False

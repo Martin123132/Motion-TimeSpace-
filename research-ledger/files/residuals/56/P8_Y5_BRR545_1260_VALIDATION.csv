@@ -1,0 +1,14 @@
+check_id,check,status,details
+VAL1260_0_sources_exist,all cited local sources exist,PASS,6/6 sources exist
+VAL1260_1_needles_found,all cited local needles found,PASS,6/6 needles found
+VAL1260_2_scan_well_formed,rab-sector intake scan is well formed,PASS,scan_rows=3
+VAL1260_3_docs_template_present,docs template exists but is not live evidence,PASS,docs template parsed
+VAL1260_4_no_live_rows,no live coefficient rows are present,PASS,live_candidate_rows=0
+VAL1260_5_rules_complete,validation rules are complete,PASS,rule_rows=5
+VAL1260_6_maps_complete,coefficient branch maps are complete,PASS,map_rows=4
+VAL1260_7_claim_gates,claim gates block qRhat/suppression/local-GR claims,PASS,claim_gate_rows=4
+VAL1260_8_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1260_9_next_target_1261,next target is coefficient source hunt or operator-exhaustion reentry,PASS,1261-Y5-R10-ZR-coefficient-source-hunt-or-operator-exhaustion-reentry.md
+VAL1260_10_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1260_SOURCE_REGISTER.csv:6; P8_Y5_R10_1260_RAB_COEFFICIENT_INTAKE_SCAN.csv:3; P8_Y5_R10_1260_RAB_COEFFICIENT_VALIDATION_RULES.csv:5; P8_Y5_R10_1260_COEFFICIENT_TO_QRHAT_OR_SUPPRESSION_MAP.csv:4; P8_Y5_R10_1260_COEFFICIENT_RUNNER_STATUS.csv:1; P8_Y5_R10_1260_CLAIM_GATES.csv:4; P8_Y5_R10_1260_DECISION_LEDGER.csv:2; P8_Y5_R10_1260_NEXT_TARGET.csv:1
+VAL1260_11_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_write_count_since_run_start=0
+VAL1260_12_overall,overall 1260 validation,PASS,"1260 builds strict Z_R-positive coefficient intake, qRhat/suppression mapping, and keeps all claims blocked with no live coefficient rows"

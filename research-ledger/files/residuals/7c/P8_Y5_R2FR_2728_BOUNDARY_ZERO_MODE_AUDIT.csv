@@ -1,0 +1,7 @@
+boundary_id,gate,condition,current_status,gap,valid_for_claim
+BZ2728_0_variational_term,identify X boundary term,"boundary contribution from integration by parts is fixed, cancelled, nonnegative, or zero",TERM_IDENTIFIED_NOT_SELECTED,parent boundary condition for X is not selected,False
+BZ2728_1_dirichlet,Dirichlet/local calibration,X|partialD=0 or fixed universal value,CONDITIONAL_ROUTE,could be imposed as closure; not parent-derived,False
+BZ2728_2_neumann_zero_mean,zero flux plus zero mean,n_i A^ij grad_j X=0 and constant mode removed or universal,CONDITIONAL_ROUTE,zero-mode class and parent-selected mean condition unsigned,False
+BZ2728_3_exact_topological,exact/topological primitive,boundary current is exact/pure bookkeeping with zero local representative,CONDITIONAL_NOT_DERIVED,boundary primitive and Bianchi/no-secular-drift lock remain unsigned,False
+BZ2728_4_wall_stress,no selector wall stress,metric/domain selector variation creates no local stress or is Ward-owned,NOT_DERIVED,domain wall stress could source local geometry,False
+BZ2728_5_verdict,boundary zero package,"one boundary route passes from parent action, or finite boundary_lift_norm is retained",BOUNDARY_ZERO_NOT_PARENT_DERIVED,no memory zero/local-GR claim,False

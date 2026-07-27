@@ -1,0 +1,7 @@
+checkpoint,proof_id,formula,meaning,status,valid_for_claim,timestamp_utc
+4742,PROOF4742_0_decompose,"m = Pi_0 m + m_perp, with m_perp in (ker D_adj)^perp",Orthogonal decomposition separates the only exact obstruction from the controlled component.,DERIVED,False,2026-07-08T00:05:07+00:00
+4742,PROOF4742_1_spectral_gap,"<m_perp,L_adj m_perp> >= lambda_1^adj ||m_perp||^2",This is the coercive core. It is true once L_adj has compact resolvent and positive first nonzero eigenvalue.,DERIVED_CONDITIONALLY,False,2026-07-08T00:05:07+00:00
+4742,PROOF4742_2_energy_identity,"<m_perp,L_adj m_perp> = ||D_adj m||^2 + B_adj[m]",Boundary integration-by-parts terms are carried explicitly rather than silently dropped.,DERIVED_WITH_BOUNDARY_TERM,False,2026-07-08T00:05:07+00:00
+4742,PROOF4742_3_master_bound,||m||^2 <= ||Pi_0 m||^2 + (1/lambda_1^adj)(||D_adj m||^2 + |B_adj[m]|),This is the usable local multiplier amplitude law.,DERIVED_BOUND_LAW,False,2026-07-08T00:05:07+00:00
+4742,PROOF4742_4_exact_zero,"D_adj m=0, B_adj[m]=0, Pi_0 m=0, lambda_1^adj>0 => m=0",This proves lambda=eta=rho=xi=chi=0 without a plateau axiom.,EXACT_ZERO_PROOF_CONDITIONAL,False,2026-07-08T00:05:07+00:00
+4742,PROOF4742_5_metric_null,m=0 and fixed readout/domain => Sigma_metric[S_owner]_loc=0,The owner block becomes locally silent only after the multiplier theorem and readout/domain clauses are signed.,CONSEQUENCE_CONDITIONAL,False,2026-07-08T00:05:07+00:00

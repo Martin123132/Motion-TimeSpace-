@@ -1,0 +1,6 @@
+bound_id,object,symbol,bound_formula,needed_inputs,status,valid_for_claim
+DPOB3431_0_projector_derivative,metric derivative of domain projector,C_Pi_g||delta_g P_D||op,epsilon_Pi_g <= C_Pi_g||delta_g P_D||op||J_H||*/M_H_ref,operator norm of delta_g P_D; dual source norm ||J_H||*; M_H_ref,SOURCE_BACKED_FORMULA_VALUES_MISSING,False
+DPOB3431_1_domain_motion,domain/support/linking surface motion,C_Pi_D||D_D P_D||op||delta D||,epsilon_Pi_D <= C_Pi_D||D_D P_D||op||delta D||||J_H||*/M_H_ref,domain derivative norm; support motion amplitude; source norm; M_H_ref,SOURCE_BACKED_FORMULA_VALUES_MISSING,False
+DPOB3431_2_selector_metric_stress,selector/coframe metric stress,C_chi||delta_g chi_D||,epsilon_chi <= C_chi||delta_g chi_D|| + |tau_wall_anisotropic|/M_H_ref,selector action; wall stress; isotropy certificate; M_H_ref,SOURCE_BACKED_FORMULA_VALUES_MISSING,False
+DPOB3431_3_boundary_flux,domain boundary/collar flux,Phi_D/M_H_ref,epsilon_D_boundary <= |Phi_D|/M_H_ref,no-flux theorem or boundary flux integral; same linking surface; M_H_ref,SOURCE_BACKED_FORMULA_VALUES_MISSING,False
+DPOB3431_4_total_domain_projector,domain/projector total,epsilon_domain_projector_abs,epsilon_domain_projector_abs <= sum(abs(DPOB3431_0..DPOB3431_3)),all sub-bounds or zero certificates,ABSOLUTE_SUM_GUARD,False

@@ -1,0 +1,4 @@
+guard_id,rule,status,failure_mode,valid_for_claim
+XAG3344_0_same_alpha_branch,"The same Z_Q_eff/readout branch must feed clocks, WEP, R10, EM stress, and local PPN if b_alpha is used across arenas.",REQUIRED,clock-only screening or readout-only alpha drift can fake a pass in one arena and fail another,false
+XAG3344_1_product_only,"Clock bounds constrain b_alpha*tau_clock_time, not standalone b_alpha.",ENFORCED,setting tau=1 or H0 without derivation creates a false source-coupling bound,false
+XAG3344_2_R10_WEP_projection,WEP/R10 alpha products require material/source/test charge projections and tau_WEP/tau_R10.,OPEN,directly transferring clock products to WEP/R10 ignores source/test legs,false

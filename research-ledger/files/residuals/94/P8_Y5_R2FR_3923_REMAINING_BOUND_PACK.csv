@@ -1,0 +1,10 @@
+row_id,residual,source_gate,bound_or_rule,numeric_value,status,valid_for_claim,timestamp_utc
+BND3923_0_gamma,delta_gamma_R11,3918 source/STF bound,abs(delta_gamma_R11) <= gamma bound if P_TF not zero,,ZERO_OR_BOUND_REQUIRED,False,2026-07-01T11:05:22+00:00
+BND3923_1_beta_source,delta_beta_source,3919 source square-law fallback,abs(B_source/A_source^2-1) <= beta bound,,ZERO_OR_BOUND_REQUIRED,False,2026-07-01T11:05:22+00:00
+BND3923_2_beta_common,delta_beta_common,3920 Delta_sq fallback,|Delta_sq|/(1+xi_1)^2 <= beta bound,,ZERO_OR_BOUND_REQUIRED,False,2026-07-01T11:05:22+00:00
+BND3923_3_Xi,Xi_N/P00/common mode,3921 Xi_N fill rows,"bound P00, xi0, multipoles, radial/time/source dependence",,ZERO_OR_BOUND_REQUIRED,False,2026-07-01T11:05:22+00:00
+BND3923_4_escape,B_escape,3922 boundary/projector/domain/history envelope,absolute-sum escape bound,,ZERO_OR_BOUND_REQUIRED,False,2026-07-01T11:05:22+00:00
+BND3923_5_Gdot,Gdot/G,3908/3914/3920 time common-mode gate,zero or <= 9.6e-15 yr^-1,,ZERO_OR_BOUND_REQUIRED,False,2026-07-01T11:05:22+00:00
+BND3923_6_alpha,alpha1/alpha2/alpha3/xi,3915/3922 PPN map,zero by no-vector/no-flux/no-multipole or numeric bound,,ZERO_OR_BOUND_REQUIRED,False,2026-07-01T11:05:22+00:00
+BND3923_7_zeta,zeta_i,same-frame Hilbert/Bianchi stress,zero by Hilbert source conservation or non-Hilbert stress bound,,ZERO_OR_BOUND_REQUIRED,False,2026-07-01T11:05:22+00:00
+BND3923_8_total,B_local,B_local := |delta_gamma_R11| + |delta_beta_source| + |delta_beta_common| + B_escape + |Gdot/G| + |alpha1|+|alpha2|+|alpha3|+|xi|+sum|zeta_i|,all components absolute-summed; no fitted cancellation,,ZERO_OR_BOUND_REQUIRED,False,2026-07-01T11:05:22+00:00

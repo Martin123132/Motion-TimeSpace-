@@ -1,0 +1,8 @@
+gate_id,gate,result,detail,valid_for_claim
+E561_0_numerator_factorization,factor R10 alpha numerator,pass_contract,N_X(lambda)=Pi_M^H[Q_X^H(lambda)] q_X^T,false
+E561_1_test_charge_zero,derive q_X^T=0,fail_current_claim,matter/source selector-blindness and no bulk/boundary composition charge are not parent-derived,false
+E561_2_projected_source_zero,derive Pi_M^H[Q_X^H]=0,fail_current_claim,PiM algebra/flux closure/integrability/reference terms remain open,false
+E561_3_source_absence,derive Q_X^H(lambda)=0,fail_current_claim,source-owner decomposition and boundary/projector/memory/domain sources remain open,false
+E561_4_coefficient_fallback,write numerator coefficient vector,pass_template,"N_X, Qbar_XH, qbar_XT, species split, projector leak, boundary/memory source, range derivative, and K_X rows written",false
+E561_5_R10_status,R10/fifth-force pass,fail_current_claim,numerator is not zeroed or numeric; runner still blocks placeholder rows,false
+E561_6_local_GR_status,Newton/PPN/local-GR promotion,fail_current_claim,R10 numerator plus Z_X/lambda/bound curve and remaining Cextra/radial gates remain open,false

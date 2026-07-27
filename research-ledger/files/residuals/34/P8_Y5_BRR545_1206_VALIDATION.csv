@@ -1,0 +1,13 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1206_0_sources_exist,all cited local sources exist,PASS,8/8 sources exist,False,False
+VAL1206_1_needles_found,all cited source needles found,PASS,8/8 needles found,False,False
+VAL1206_2_boundary_lowered,boundary component is lowered to trace/source constants,PASS,DRV1206_0 present,False,False
+VAL1206_3_projector_lowered,projector component is lowered to epsilon_geom constants,PASS,DRV1206_1 present,False,False
+VAL1206_4_no_placeholder_rhs,lowered RHS avoids B_T and eps_P primitive placeholders,PASS,forbidden_rhs=,False,False
+VAL1206_5_lower_inputs_present,lower-level inputs to fill are enumerated,PASS,"C_CK,C_NT(D,gamma),C_pair,G_res_norm,K_T_L2_norm,R_perp_div_norm,epsilon_geom",False,False
+VAL1206_6_pressure_targets_match,1205 harsh split targets are preserved,PASS,boundary=1.17233215026e-05;projector=1.17233215026e-05,False,False
+VAL1206_7_next_projector_route,next route selects quotient/coframe projector attack,PASS,projector route selected,False,False
+VAL1206_8_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout,False,False
+VAL1206_9_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1206_SOURCE_REGISTER.csv:8; P8_Y5_R10_1206_LOWERED_COMPONENT_DERIVATIONS.csv:3; P8_Y5_R10_1206_LOWER_LEVEL_INPUTS_TO_FILL.csv:7; P8_Y5_R10_1206_PRESSURE_COMPARISON.csv:3; P8_Y5_R10_1206_BRANCH_SELECTION.csv:3; P8_Y5_R10_1206_CLAIM_GATES.csv:4; P8_Y5_R10_1206_DECISION_LEDGER.csv:1; P8_Y5_R10_1206_NEXT_TARGET.csv:1,False,False
+VAL1206_10_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_after_run_start_count=0,False,False
+VAL1206_11_overall,overall 1206 validation,PASS,1206 lowered trace/leakage contracts are reproducible and nonclaim,False,False

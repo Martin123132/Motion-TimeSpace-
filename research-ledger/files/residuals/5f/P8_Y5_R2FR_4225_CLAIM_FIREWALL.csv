@@ -1,0 +1,6 @@
+timestamp_utc,branch_id,checkpoint_id,firewall_id,forbidden_move,status,reason,claim_allowed,valid_for_claim
+2026-07-03T07:42:06+00:00,MTS_R2FR_Y5_GAMMA_DAMPING_REPAIR_4225,4225,GDF4225_0_no_magic_damping,derive damping from fixed gamma total derivative,blocked,fixed-boundary total derivative cannot supply bulk damping,False,False
+2026-07-03T07:42:06+00:00,MTS_R2FR_Y5_GAMMA_DAMPING_REPAIR_4225,4225,GDF4225_1_no_free_boundary_adoption,use boundary route while keeping damping claims,blocked,boundary route is energy-safe only by not claiming damping from gamma,False,False
+2026-07-03T07:42:06+00:00,MTS_R2FR_Y5_GAMMA_DAMPING_REPAIR_4225,4225,GDF4225_2_no_bath_without_stress,add bath/doubled variables without stress/current rows,blocked,open-system route requires q_gamma and K_bath guards,False,False
+2026-07-03T07:42:06+00:00,MTS_R2FR_Y5_GAMMA_DAMPING_REPAIR_4225,4225,GDF4225_3_no_metric_dumping,hide local residuals in an unobservable bath,blocked,"bath projection must be PPN-null, boundary, gauge, or bounded",False,False
+2026-07-03T07:42:06+00:00,MTS_R2FR_Y5_GAMMA_DAMPING_REPAIR_4225,4225,GDF4225_4_no_local_GR_claim,promote gamma repair to M_EH/local-GR pass,blocked,"branch choice, bath/stress rows, binding and remaining epsilon_E inputs are still open",False,False

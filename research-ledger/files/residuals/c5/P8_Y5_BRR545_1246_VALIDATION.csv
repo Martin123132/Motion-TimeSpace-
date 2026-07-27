@@ -1,0 +1,15 @@
+check_id,check,status,details
+VAL1246_0_sources_exist,all cited local sources exist,PASS,13/13 sources exist
+VAL1246_1_needles_found,all cited local needles found,PASS,13/13 needles found
+VAL1246_2_theorem_not_promoted,parent Q_R=0 theorem is not overclaimed,PASS,NOT_DERIVED_CURRENT_CORPUS
+VAL1246_3_conditional_route,clean lambda_R route is identified as conditional,PASS,QZT1246_3_nonprop_constraint -> WORKS_ONLY_IF_PARENT_SIGNED
+VAL1246_4_failure_modes,failed zero-proof routes are explicitly recorded,PASS,"current, boundary, Noether, topological, and first-class routes audited"
+VAL1246_5_finite_hunt_ready,finite q_R_hat source hunt is staged,PASS,finite_source_hunt_rows=4
+VAL1246_6_runner_feed,runner feed still refuses missing q_R,PASS,RFEED1246_0_policy_GM_ready -> REFUSED_MISSING_QR
+VAL1246_7_policy_guardrail,1244 strict q_R_hat guardrail preserved,PASS,q_R_hat_abs_guardrail=4.6e-05
+VAL1246_8_claim_gates,claim gates remain nonclaim/blocked,PASS,claim_gate_rows=5
+VAL1246_9_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1246_10_next_target_1247,next target is lambda_R legitimacy gate,PASS,1247-Y5-R10-parent-lambdaR-constraint-legitimacy-gate.md
+VAL1246_11_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1246_SOURCE_REGISTER.csv:13; P8_Y5_R10_1246_PARENT_QR_ZERO_THEOREM_CLAUSES.csv:7; P8_Y5_R10_1246_PARENT_QR_ZERO_THEOREM_ATTEMPT.csv:3; P8_Y5_R10_1246_FINITE_QR_SOURCE_HUNT.csv:4; P8_Y5_R10_1246_RUNNER_FEED_STATUS.csv:2; P8_Y5_R10_1246_DECISION_LEDGER.csv:3; P8_Y5_R10_1246_CLAIM_GATES.csv:5; P8_Y5_R10_1246_NEXT_TARGET.csv:1
+VAL1246_12_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_write_count_since_run_start=0
+VAL1246_13_overall,overall 1246 validation,PASS,"1246 attempts the parent Q_R=0 theorem, refuses to promote it, and stages finite q_R_hat source acquisition with the runner still blocked honestly"

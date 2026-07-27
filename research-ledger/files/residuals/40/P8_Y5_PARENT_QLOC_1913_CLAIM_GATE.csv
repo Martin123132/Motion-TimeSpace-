@@ -1,0 +1,5 @@
+gate_id,condition,current_status,source_anchor,gate_pass,valid_for_claim
+CG1913_0_typed_composite,parent action/q typed composite is internally coherent,PASS_CONTRACT_COMPOSED_NONCLAIM,PAQ1913_1_typed_composite,False,False
+CG1913_1_parent_certification,"S_parent owner, q functor, matter functor and operator domain are parent-derived",FAIL_PARENT_CERTIFICATION_MISSING,PAQ1913_5_verdict; QTM1913_8_verdict,False,False
+CG1913_2_finite_residuals,all retained residual rows have derived zeros or finite sourced values,FAIL_FINITE_RESIDUAL_BRANCH_UNFILLED,P8_Y5_PARENT_QLOC_1913_FINITE_RESIDUAL_BRANCH_NONCLAIM.csv,False,False
+CG1913_3_claim,1913 supports local-GR/Newton/WEP claim,CLAIM_BLOCKED,CG1913_0_typed_composite through CG1913_2_finite_residuals,False,False

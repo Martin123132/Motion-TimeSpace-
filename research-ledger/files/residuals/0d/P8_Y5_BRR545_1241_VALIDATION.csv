@@ -1,0 +1,14 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1241_0_sources_exist,all cited local sources exist,PASS,7/7 sources exist,False,False
+VAL1241_1_needles_found,all cited local needles found,PASS,7/7 needles found,False,False
+VAL1241_2_refusal_gates,all refusal gates pass,PASS,refusal_gates=5/5,False,False
+VAL1241_3_closure_refused,closure Q_R=0 is refused as evidence,PASS,REFUSED_CLOSURE_NOT_EVIDENCE present,False,False
+VAL1241_4_missing_qR_refused,finite row missing q_R_hat is refused,PASS,REFUSED_MISSING_QR present,False,False
+VAL1241_5_comparator_refused,comparator-only row is refused,PASS,REFUSED_COMPARATOR_ONLY present,False,False
+VAL1241_6_hypothetical_nonclaim,hypothetical arithmetic row remains nonclaim,PASS,SCHEMA_MATH_ONLY_NOT_EVIDENCE present,False,False
+VAL1241_7_claim_gates,claim gates remain blocked/nonclaim,PASS,claim_gate_rows=4,False,False
+VAL1241_8_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables,False,False
+VAL1241_9_next_target_1242,next target is q_R_hat input contract,PASS,1242-Y5-R10-QR-hat-source-or-zero-theorem-input-contract.md,False,False
+VAL1241_10_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1241_SOURCE_REGISTER.csv:7; P8_Y5_R10_1241_NONCLAIM_RUNNER_RULES.csv:4; P8_Y5_R10_1241_SMOKE_CASES.csv:5; P8_Y5_R10_1241_SMOKE_RESULTS.csv:5; P8_Y5_R10_1241_REFUSAL_GATES.csv:5; P8_Y5_R10_1241_DECISION_LEDGER.csv:2; P8_Y5_R10_1241_CLAIM_GATES.csv:4; P8_Y5_R10_1241_NEXT_TARGET.csv:1,False,False
+VAL1241_11_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_write_count_since_run_start=0,False,False
+VAL1241_12_overall,overall 1241 validation,PASS,1241 builds a refusal-first nonclaim Q_R smoke runner and proves closure/comparator/missing-source rows cannot pass as evidence,False,False

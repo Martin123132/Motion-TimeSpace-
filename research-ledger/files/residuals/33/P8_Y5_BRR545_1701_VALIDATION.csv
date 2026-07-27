@@ -1,0 +1,19 @@
+check_id,result,detail,valid_for_claim,claim_allowed
+VAL1701_0_sources_exist,PASS,all cited local source paths exist and required needles are present,False,False
+VAL1701_1_commutator_defined,PASS,readout reentry commutator/residual is defined,False,False
+VAL1701_2_pure_postprocessing_safe,PASS,pure postprocessing readout theorem is conditional-safe,False,False
+VAL1701_3_general_no_reentry_blocked,PASS,general readout/effective no-reentry is not promoted,False,False
+VAL1701_4_preaction_counterexample,PASS,pre-action weights remain active counterexample,False,False
+VAL1701_5_arena_guardrail,PASS,no cross-arena bound transfer is enforced,False,False
+VAL1701_6_finite_products_complete,PASS,"finite product maps cover WEP, clock, R10, PPN, orbital, and EM arenas",False,False
+VAL1701_7_finite_products_nonclaim,PASS,finite product maps remain missing-input nonclaim rows,False,False
+VAL1701_8_queue_complete,PASS,"readout residual queue includes commutator, tau, source-weight, and branch-map rows",False,False
+VAL1701_9_runner_blocks,PASS,"runner blocks no-reentry, product scoring, arena transfer, and local-GR claims",False,False
+VAL1701_10_next_selected,PASS,next target selects commutator ledger and first arena product runner,False,False
+VAL1701_11_local_gr_blocked,PASS,local GR/Newton claim remains blocked,False,False
+VAL1701_12_no_claim_flags,PASS,all generated scoring and claim flags remain false,False,False
+VAL1701_13_csv_parse,PASS,all generated 1701 CSVs parse,False,False
+VAL1701_14_branch_copies,PASS,branch/quarantine/queue copies exist,False,False
+VAL1701_15_pycache_absent,PASS,scripts __pycache__ absent,False,False
+VAL1701_16_formalization_untouched,PASS,no MTS 1701 outputs found under formalization-workbench outside vendor/env folders,False,False
+VAL1701_OVERALL,PASS,1701 readout no-reentry theorem attempt and finite product map validation,False,False

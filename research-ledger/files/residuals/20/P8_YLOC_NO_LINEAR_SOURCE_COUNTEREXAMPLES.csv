@@ -1,0 +1,5 @@
+counterexample_id,toy_action,why_allowed_without_contract,failure,forbidden_by
+CE0_conserved_scalar_source,S = integral sqrt(h)[1/2 m^2 y^2 + epsilon y],epsilon can be a scalar source owned by the Ward ledger,"Euler equation gives y = -epsilon/m^2, not y=0",C1_exact_Z2_or_selection_rule;C2_matter_neutrality
+CE1_boundary_marker_vector,S_boundary = integral_boundary epsilon_i Phi^i,boundary/collar data can carry a preferred vector marker,B_Y is nonzero and can feed alpha3,C3_boundary_even_or_no_flux
+CE2_tidal_STF_source,S = integral sqrt(h) E_ij S_TF^ij,E_ij S_TF^ij is a scalar and can respect covariance,STF stress is sourced even though Bianchi accounting can close,C2_matter_neutrality;C6_extra_stress_accounting
+CE3_source_normalization_offset,S = integral sqrt(h) epsilon Delta_mu_source,a scalar source offset can be conserved and still nonzero,mu_extra or R11 normalization hair remains,C2_matter_neutrality;C5_composite_residual_lock

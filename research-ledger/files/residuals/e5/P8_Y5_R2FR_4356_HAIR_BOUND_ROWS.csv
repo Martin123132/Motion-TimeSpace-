@@ -1,0 +1,9 @@
+bound_id,hair_component,formula,zero_if,feeds,valid_for_claim
+HB4356_0_tau,Y_tau,Y_tau := ||Lie_tau q_tr||/M_H_ref,same stationary Hamiltonian collar gives Lie_tau q_tr=0,clock_Gdot; PPN preferred-frame; orbital secular drift,False
+HB4356_1_multipole,Y_l>=1,"Y_l>=1 := sum_l>=1 |Q_l,tr|/M_H_ref",static exterior transition response has only the source-kernel l=0 Hilbert monopole,PPN anisotropy; orbital precession; local Newton residual,False
+HB4356_2_species_frame_source,Y_species_frame_source,Y_species_frame_source := |D_species q_tr| + |D_frame q_tr| + |Delta_source_weight_tr|,source-label forgetting and same-frame descent are parent-signed,WEP; preferred-frame PPN; source normalization,False
+HB4356_3_range,Y_lambda,Y_lambda := |D_lambda q_tr| + |q_range_tail|,transition source operator is range-free/common massless Hilbert monopole only,R10 alpha(lambda); orbital range tests,False
+HB4356_4_nonEH,Y_nonEH,Y_nonEH := ||Pi_arena Sigma_nonEH[q_tr]||,"same EH coframe/metric readout owns all local matter, EM, clock, rod and orbital response",PPN gamma/beta; clock; local GR bridge,False
+HB4356_5_boundary,Y_boundary,Y_boundary := |B_tr_nonlocal|/M_H_ref,"boundary/nonlocal term is exact, fixed, projection-null or Hamiltonian-routed",PPN; clock; orbital; transition closure,False
+HB4356_6_total_remaining,epsilon_tr_hair_remaining,epsilon_tr_hair_remaining <= Y_tau + Y_l>=1 + Y_species_frame_source + Y_lambda + Y_nonEH + Y_boundary,all ZC4356 zero clauses close on one selector branch,epsilon_tr_hair; epsilon_Gsrc; all local arenas,False
+HB4356_7_total_with_4355,epsilon_tr_hair,epsilon_tr_hair <= Y_nonHilbert + Delta_Wtr + epsilon_tr_hair_remaining,4355 owner/worldtube legs plus all 4356 common-mode hair legs close,epsilon_Gsrc <- epsilon_Gsrc + epsilon_tr_hair if open,False

@@ -1,0 +1,17 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1222_0_sources_exist,all cited local sources exist,PASS,10/10 sources exist,False,False
+VAL1222_1_needles_found,all cited source needles found,PASS,10/10 needles found,False,False
+VAL1222_2_runner_rows_imported,1221 runner rows imported,PASS,runner_rows=6,False,False
+VAL1222_3_score_table_complete,one score row per runner row,PASS,score_rows=6 runner_rows=6,False,False
+VAL1222_4_known_thresholds_positive,known numeric thresholds are positive,PASS,numeric_threshold_rows=4; nonnumeric_threshold_rows=2,False,False
+VAL1222_5_blockers_materialized,missing inputs and counterexamples become blocker rows,PASS,blocker_rows=23,False,False
+VAL1222_6_all_rows_refused,all score rows are refused,PASS,all score rows claim_status=REFUSED and valid_prediction_row=false,False,False
+VAL1222_7_zero_valid_predictions,runner status has zero valid prediction rows,PASS,valid_prediction_rows=0; score_ready_rows=0; claim_allowed=false,False,False
+VAL1222_8_anti_shortcuts_enforced,anti-shortcut gates enforce no unity/cancellation/source-fill,PASS,SHORT1222_0_no_unity; SHORT1222_1_no_source_fill; SHORT1222_2_no_cancellation; SHORT1222_3_no_measured_G_absorption,False,False
+VAL1222_9_parent_primitive_still_absent,no parent primitive source is treated as found,PASS,PESC1221_0_parent_grammar=NOT_FOUND_IN_CURRENT_CORPUS; PESC1221_1_alpha_F2_domain=COUNTEREXAMPLE_ACTIVE; PESC1221_2_matter_constant_superselection=NOT_PARENT_SIGNED; PESC1221_3_source_weight_owner=CONDITIONAL_NOT_PARENT_SIGNED; PESC1221_4_readout_functor=UNSIGNED,False,False
+VAL1222_10_claim_gates_blocked,claim gates keep physical claims blocked,PASS,prediction/counterexample/claim gates remain blocked,False,False
+VAL1222_11_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout claim-bearing tables,False,False
+VAL1222_12_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1222_SOURCE_REGISTER.csv:10; P8_Y5_R10_1222_RUNNER_INPUT_AUDIT.csv:6; P8_Y5_R10_1222_THRESHOLD_AUDIT.csv:6; P8_Y5_R10_1222_MISSING_INPUT_BLOCKER_LEDGER.csv:23; P8_Y5_R10_1222_PROMOTION_CHECKLIST.csv:6; P8_Y5_R10_1222_FIRST_NONCLAIM_SCORE_TABLE.csv:6; P8_Y5_R10_1222_CLAIM_REFUSAL_LEDGER.csv:6; P8_Y5_R10_1222_SOURCE_ACQUISITION_QUEUE.csv:6; P8_Y5_R10_1222_ANTI_SHORTCUT_GATES.csv:4; P8_Y5_R10_1222_RUNNER_STATUS.csv:1; P8_Y5_R10_1222_DECISION_LEDGER.csv:3; P8_Y5_R10_1222_CLAIM_GATES.csv:6; P8_Y5_R10_1222_NEXT_TARGET.csv:1,False,False
+VAL1222_13_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_after_run_start_count=0,False,False
+VAL1222_14_next_target,next target is staged,PASS,1223-Y5-R10-P0-coupling-input-source-or-derivation-attack.md,False,False
+VAL1222_15_overall,overall 1222 validation,PASS,1222 runner creates the first mechanical nonclaim score table and refuses all rows,False,False

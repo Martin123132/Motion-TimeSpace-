@@ -1,0 +1,8 @@
+bound_id,quantity,definition,bound_formula,status,valid_for_claim
+HBR3425_0_tau_lock,epsilon_tau_lock,mismatch among source/charge/clock/readout time generators,0 if tau is parent-selected by e_obs and fixed boundary data; else source-backed mismatch norm,THEOREM_OR_VALUE_MISSING,False
+HBR3425_1_reference,epsilon_reference,reference subtraction shift normalized by M_H_ref,|H_ref_shift|/M_H_ref + |partial_source H_ref|/M_H_ref,REFERENCE_RULE_MISSING,False
+HBR3425_2_PiM_commutator,epsilon_PiM_comm,PiM chain-map/commutator and projector-stress leakage,|I_commutator|/M_H_ref + |T_PiM|_PPN,PIM_CHAIN_MAP_OR_VALUE_MISSING,False
+HBR3425_3_Z_charge,epsilon_Z_charge,residual Z-sector Hamiltonian charge after fixed-point branch,0 if Z=0 source-free fixed point is signed; else C_HZ ||Z||,PENDING_SOURCE_CURRENT_AND_LAMBDA_STAR,False
+HBR3425_4_boundary_flux,epsilon_boundary_flux,boundary/symplectic flux through compact linked surfaces,(|B_zero_flux|+|Delta_symp|)/M_H_ref,BOUNDARY_NO_FLUX_NOT_PARENT_SIGNED,False
+HBR3425_5_extra_mass,epsilon_extra_mass,extra/Y6/domain/memory/projector monopole source charge,|Delta_extra_mass|/M_H_ref,NO_EXTRA_MASS_THEOREM_MISSING,False
+HBR3425_6_total,epsilon_HPiM_after_EH_lock,no-cancellation Hamiltonian/PiM residual after EH subtheorem,epsilon_tau_lock+epsilon_reference+epsilon_PiM_comm+epsilon_Z_charge+epsilon_boundary_flux+epsilon_extra_mass,FORMULA_READY_VALUES_MISSING,False

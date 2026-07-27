@@ -1,0 +1,8 @@
+component_id,Y_component,symmetry_result,reason,needed_contract_clauses,blocks,valid_for_claim
+Y0_trace_expansion,X_D,conditional_only,a scalar trace residual can have a linear matter-trace source unless matter neutrality and branch stationarity are derived,C1;C2;C4;C5,coherent trace-load source,false
+Y1_coherent_projector,Qcoh_D - h X_D/3,conditional_only,projector stress can be linearly sourced by anisotropic or domain data unless composite lock and stress accounting are proved,C1;C5;C6,LRV_QCOH_PROJECTOR_OWNERSHIP;LRV_PROJECTOR_STRESS_ACCOUNTING,false
+Y2_boundary_flux,Phi_boundary^i,not_zeroed,"boundary/collar markers can source a vector flux unless the boundary action is scalar, even, and no-flux",C1;C3;C5,LRV_BOUNDARY_R7_ALPHA3,false
+Y3_domain_vector,V_domain^i,not_zeroed,a covariant domain vector is allowed if the domain carries a marker vector; Z2 must be backed by no-vector domain selection,C1;C2;C5,LRV_DOMAIN_R5_ALPHA1;LRV_DOMAIN_R6_ALPHA2;LRV_DOMAIN_R7_ALPHA3,false
+Y4_domain_STF_stress,S_TF_domain^{ij},not_zeroed,STF stress can couple linearly to a tidal STF tensor unless isotropy/topological stress is derived,C1;C2;C5;C6,LRV_DOMAIN_R8_XI;LRV_PROJECTOR_STRESS_ACCOUNTING,false
+Y5_source_normalization,Delta_mu_source,not_zeroed,a scalar source-normalization offset is not killed by parity unless measured-GM neutrality and composite lock are proved,C1;C2;C5,LRV_DOMAIN_R11_SOURCE_NORMALIZATION,false
+Y6_stress_Bianchi,nabla_mu T_extra^{mu nu},retained_not_zeroed,a divergence identity is not an independent odd field; extra stress can be conserved but nonzero,C5;C6,LRV_PROJECTOR_STRESS_ACCOUNTING;LRV_TOTAL_ALPHA3_GUARD,false

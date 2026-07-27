@@ -1,0 +1,6 @@
+law_id,quantity,formula,source_basis,current_status,promotion_need,valid_for_claim
+CL4504_0_total_effective,c_R2_eff_total,c_R2_eff_total = c_cell + c_bare + 0.5 B^T L^-1 B + c_measure + c_boundary + c_marker,1343 plus 4471-4476,SYMBOLIC_LAW_DERIVED_VALUES_UNSIGNED,each term zero/topological/boundary-routed or numeric with units/source path,False
+CL4504_1_visible_cell,c_cell,c_cell = xi_shape*c2_visible*ell_cell^2/N_EH,4471/4472,VISIBLE_SCALING_DERIVED_ELL_GAUGE_UNSIGNED,"prove ell is gauge and no singular residue, or source ell_cell/c2_visible/xi_shape/N_EH",False
+CL4504_2_hidden_mode,0.5 B^T L^-1 B,hidden X with B_X X R gives R L_X^-1 R after elimination,1343,CURVATURE_VERTEX_BLOCKER_IDENTIFIED,"prove B_X=0/no XR vertex and no source/frame transfer, or source Z_X,M_X^2,B_X,C_X",False
+CL4504_3_marker,c_marker,c_R2_marker=lambda_M*(zeta_R2*mu0_M+zeta_R2_grad*mu2_M/L_loc^2)/N_EH + c_marker_aux + c_marker_boundary,4476/4479,PROJECTION_LAW_DERIVED_MOMENTS_UNSIGNED,"prove marker ideal empty or source lambda_M, moments, projectors and anisotropy bounds",False
+CL4504_4_standard_mu_map,mu,mu = N_MTS_to_fR * c_R2_eff_total,4088 map audit,CONVERSION_FACTOR_NOT_PARENT_OWNED,declare and source the exact action normalization converting MTS c_R2_eff into standard f(R) mu,False

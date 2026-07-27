@@ -1,0 +1,4 @@
+row_id,observable,formula,new_detail,status,valid_for_claim,timestamp_utc
+GUP3836_0_readout_update,B_gamma_readout,B_gamma_readout <= B_metric_projection + B_arena_readout_tail + B_clock_or_PPN_projection,direct gamma readout placeholder from 3835 is now decomposed,UPDATED_NONCLAIM_BOUND,False,2026-07-01T02:29:50+00:00
+GUP3836_1_eps_update,abs(eps_spatial/Phi),abs(eps_spatial/Phi) <= B_eps_multipole + B_eps_gauge + B_eps_domain + B_eps_nonlinear,spatial residual placeholder from 3828/3835 is now decomposed,UPDATED_NONCLAIM_BOUND,False,2026-07-01T02:29:50+00:00
+GUP3836_2_gamma_total_update,gamma-1,abs(gamma-1) <= B_gamma_matter_TF + B_gamma_parent_extra + B_gamma_boundary + B_gamma_readout + abs(eps_spatial/Phi),all five top-level gamma terms now have decomposition rows; numeric/source validity still missing,STRUCTURALLY_COMPLETE_NONCLAIM_GAMMA_LEDGER,False,2026-07-01T02:29:50+00:00

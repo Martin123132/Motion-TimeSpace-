@@ -1,0 +1,4 @@
+sign_id,issue,condition,impact,status,valid_for_claim
+LSC2275_0_positive_weights,weight positivity,W_I>=0 and W_I+deltaW_I>=0 for finite variations,small tangent variations are allowed only inside the covariance cone,CONE_GUARD_REQUIRED,False
+LSC2275_1_lorentzian_signature,signature source,eta_mn+C_mn must keep Lorentzian signature,carrier weights cannot be chosen freely if they flip A or B signs,SIGNATURE_GUARD_REQUIRED,False
+LSC2275_2_deltaC_tt_negative,negative temporal q tangent,deltaC_tt=-(A/2)deltaq may require decreasing W_T for positive s_T Omega_T^2,"fine for infinitesimal tangents if W_T>0, not automatically fine for finite residuals",FINITE_CONE_MARGIN_MISSING,False

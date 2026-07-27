@@ -1,0 +1,5 @@
+algebra_id,statement,result,surviving_term,why_it_matters,status,valid_for_claim
+ALG1901_0_decomposition,w_A = w_common * (1 + epsilon_A),calibration may choose G_meas = G_ref * w_common,epsilon_A,one scalar calibration cannot remove a material/source vector,ALGEBRA_ACCEPTED_GUARD,False
+ALG1901_1_contrast,Delta_AB ln a = epsilon_A - epsilon_B + higher order,relative WEP/source contrast survives measured GM,Delta_AB epsilon,"WEP tests are contrast tests; common mode cancels, relative mode does not",ALGEBRA_ACCEPTED_GUARD,False
+ALG1901_2_range,"w(lambda,r,t,frame) cannot be represented by one constant G_meas",range/time/frame hair must be retained,D_lambda w; D_r w; D_t w; Delta_frame w,prevents transfer of one local calibration across R10/orbit/PPN,ALGEBRA_ACCEPTED_GUARD,False
+ALG1901_3_claim_limit,guard != zero theorem,guard blocks cheating but does not prove epsilon_A=0,source-vector or no-source-slot theorem,"this is a discipline theorem, not a local-GR pass",NO_CLAIM_PROMOTION,False

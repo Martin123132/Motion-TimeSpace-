@@ -1,0 +1,10 @@
+row_id,residual,required_inputs,use_when,numeric_value,status,valid_for_claim,timestamp_utc
+NUM3924_0_gamma,delta_gamma_R11,"needs kappa_R,C_TF,U_min,||nabla^-2 P_TF||",first if R11 STF zero not adopted,,SOURCE_BACKED_NUMERIC_FILL_IF_PARENT_CLAUSE_NOT_ADOPTED,False,2026-07-01T11:10:01+00:00
+NUM3924_1_beta_source,delta_beta_source,"needs A_source,B_source",first if EH/source square law not adopted,,SOURCE_BACKED_NUMERIC_FILL_IF_PARENT_CLAUSE_NOT_ADOPTED,False,2026-07-01T11:10:01+00:00
+NUM3924_2_beta_common,delta_beta_common,"needs xi_1,xi_2,Delta_sq",first if common-mode square law not adopted,,SOURCE_BACKED_NUMERIC_FILL_IF_PARENT_CLAUSE_NOT_ADOPTED,False,2026-07-01T11:10:01+00:00
+NUM3924_3_Xi,Xi_N/P00,"needs P00_norm,C0,kappa_R,Green0,xi0,multipoles",first if P00 harmonic monopole route not adopted,,SOURCE_BACKED_NUMERIC_FILL_IF_PARENT_CLAUSE_NOT_ADOPTED,False,2026-07-01T11:10:01+00:00
+NUM3924_4_escape,B_escape,"needs P00_boundary/projector/domain/history/nonlocal,B_harmonic_boundary,B_deriv",first if escape certificates not adopted,,SOURCE_BACKED_NUMERIC_FILL_IF_PARENT_CLAUSE_NOT_ADOPTED,False,2026-07-01T11:10:01+00:00
+NUM3924_5_Gdot,Gdot/G,needs partial_t xi_1 and remaining Gdot components,first if time derivative silence not adopted,,SOURCE_BACKED_NUMERIC_FILL_IF_PARENT_CLAUSE_NOT_ADOPTED,False,2026-07-01T11:10:01+00:00
+NUM3924_6_alpha_xi,alpha_i/xi,needs domain/projector/vector/multipole weights and epsilon_domain_projector_abs,first if no-vector/no-multipole clauses not adopted,,SOURCE_BACKED_NUMERIC_FILL_IF_PARENT_CLAUSE_NOT_ADOPTED,False,2026-07-01T11:10:01+00:00
+NUM3924_7_zeta,zeta_i,needs non-Hilbert/projector stress leakage vector,first if Hilbert/Bianchi closure not adopted,,SOURCE_BACKED_NUMERIC_FILL_IF_PARENT_CLAUSE_NOT_ADOPTED,False,2026-07-01T11:10:01+00:00
+NUM3924_8_total,B_local,"first_bound_pack := {delta_gamma_R11, delta_beta_source, delta_beta_common, P00/Xi_N, B_escape, Gdot/G, alpha_i/xi, zeta_i}",absolute-sum no-cancellation scoring pack,,SOURCE_BACKED_NUMERIC_FILL_IF_PARENT_CLAUSE_NOT_ADOPTED,False,2026-07-01T11:10:01+00:00

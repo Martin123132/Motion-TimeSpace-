@@ -1,0 +1,4 @@
+guard_id,policy,observed,status,score_emitted,valid_for_claim,claim_allowed
+NSG1293_0_rows_rejected,all current input rows must be rejected because they contain MISSING inputs and nonclaim flags,rejected_rows=4;total_rows=4,PASS,False,False,False
+NSG1293_1_no_numeric_invention,"runner must not invent numeric m, L_cg, kernel, or response values",score_value blank for every rejection row,PASS,False,False,False
+NSG1293_2_no_local_GR_score,no local-GR/Newton/PPN/R10 score can be emitted from current rows,strict adoption failed and response matrix remains missing,PASS,False,False,False

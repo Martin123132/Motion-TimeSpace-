@@ -1,0 +1,7 @@
+checkpoint,control_id,case,expected_result,status,generated_utc,claim_allowed,valid_for_claim
+4589,CTRL4589_clean_qbasic,H_tau and H_ref both q-basic same branch,D_v M_H_ref=0,SYMBOLIC_CONTROL_PASS,2026-07-06T13:08:57.465298+00:00,False,False
+4589,CTRL4589_fitted_reference,H_ref chosen to cancel a residual after readout,reject zero; retain D_v H_ref/delta_Gfit,COUNTERMODEL_CAUGHT,2026-07-06T13:08:57.465298+00:00,False,False
+4589,CTRL4589_orbital_GM,orbital GM or measured G used as denominator input,reject denominator branch,FIREWALL_PASS,2026-07-06T13:08:57.465298+00:00,False,False
+4589,CTRL4589_nonintegrable_Htau,Hamiltonian charge has curl/symplectic leakage,retain D_v H_tau bound,FIREWALL_PASS,2026-07-06T13:08:57.465298+00:00,False,False
+4589,CTRL4589_zero_denominator,M_lower missing or nonpositive,block normalized claims,COUNTERMODEL_CAUGHT,2026-07-06T13:08:57.465298+00:00,False,False
+4589,CTRL4589_no_claim,theorem exists but parent adoption/values missing,no local-GR/R10/PPN claim,FIREWALL_PASS,2026-07-06T13:08:57.465298+00:00,False,False

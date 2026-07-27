@@ -1,0 +1,7 @@
+rule_id,rule,result,evidence,claim_effect
+V484_0_sources,all cited source paths exist,pass,missing_sources=0,traceability only
+V484_1_clause_written,candidate parent local-zero clause explicitly defines X and Qcoh,pass,A1_parent_clause;V1_delta_Lambda_X;V2_delta_Lambda_Q,Q/Pcoh route sharpened
+V484_2_no_plateau_axiom,local zero is tied to stationarity/volume conservation rather than an inserted penalty forcing X=0,pass,A3_local_zero_theorem;A4_forbidden_rescue,conditional theorem target is clean
+V484_3_blockers_retained,"domain selector, boundary no-flux, R11 silence, and stress/Bianchi closure remain unpromoted",pass,fail_for_claim_identities=4,no hidden local-GR pass
+V484_4_no_claim_valid_rows,no identity row is claim-valid,pass,claim_valid_identity_rows=0,no Newton/PPN/local-GR promotion
+V484_5_partial_progress_recorded,partial/conditional wins are separated from failures,pass,partial_or_conditional_rows=4,next route can target remaining blockers

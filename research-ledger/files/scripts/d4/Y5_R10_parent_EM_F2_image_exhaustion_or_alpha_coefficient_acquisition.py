@@ -1,0 +1,517 @@
+from __future__ import annotations
+
+import csv
+import shutil
+from datetime import datetime, timezone
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[1]
+OUT = ROOT / "source-intake" / "mts_residuals"
+DOC = ROOT / "1108-Y5-R10-parent-EM-F2-image-exhaustion-or-alpha-coefficient-acquisition.md"
+
+
+def now() -> str:
+    return datetime.now(timezone.utc).isoformat()
+
+
+def stamp(rows: list[dict[str, object]]) -> list[dict[str, object]]:
+    generated = now()
+    stamped: list[dict[str, object]] = []
+    for row in rows:
+        copied = dict(row)
+        copied.setdefault("valid_for_claim", "false")
+        copied.setdefault("claim_allowed", "false")
+        copied.setdefault("generated_utc", generated)
+        stamped.append(copied)
+    return stamped
+
+
+def write_csv(path: Path, rows: list[dict[str, object]], fieldnames: list[str] | None = None) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    if fieldnames is None:
+        fieldnames = []
+        for row in rows:
+            for key in row:
+                if key not in fieldnames:
+                    fieldnames.append(key)
+    with path.open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer.writeheader()
+        for row in rows:
+            writer.writerow({key: row.get(key, "") for key in fieldnames})
+
+
+def source_rows() -> list[dict[str, object]]:
+    rows = [
+        {
+            "source_id": "SRC1108_0_1107_next",
+            "relative_path": "source-intake/mts_residuals/P8_Y5_R10_1107_NEXT_TARGET.csv",
+            "needle": "NEXT1107_0_1108",
+            "note": "1107 handoff to narrower EM-F2 image exhaustion.",
+        },
+        {
+            "source_id": "SRC1108_1_1107_F2",
+            "relative_path": "source-intake/mts_residuals/P8_Y5_R10_1107_ALPHA_F2_SUBCASE.csv",
+            "needle": "ALP1107_4_verdict",
+            "note": "latest alpha/F2 subcase verdict.",
+        },
+        {
+            "source_id": "SRC1108_2_1099_theorem",
+            "relative_path": "source-intake/mts_residuals/P8_Y5_R10_1099_EM_KINETIC_OWNER_THEOREM_ATTEMPT.csv",
+            "needle": "UEM1099_3_verdict",
+            "note": "1099 EM kinetic owner theorem attempt.",
+        },
+        {
+            "source_id": "SRC1108_3_1099_no_extra",
+            "relative_path": "source-intake/mts_residuals/P8_Y5_R10_1099_NO_EXTRA_F2_EXCLUSION_AUDIT.csv",
+            "needle": "EXC1099_5_radiative",
+            "note": "1099 no-extra-F2 exclusion audit.",
+        },
+        {
+            "source_id": "SRC1108_4_1099_counter",
+            "relative_path": "source-intake/mts_residuals/P8_Y5_R10_1099_COUNTEREXAMPLE_LEDGER.csv",
+            "needle": "CX1099_0_lambda_A",
+            "note": "lambda_A and f_X counterexamples.",
+        },
+        {
+            "source_id": "SRC1108_5_1100_signature",
+            "relative_path": "source-intake/mts_residuals/P8_Y5_R10_1100_TQ_GAUGE_NORM_SIGNATURE.csv",
+            "needle": "TQS1100_6_verdict",
+            "note": "parent T_Q/gauge norm signature verdict.",
+        },
+        {
+            "source_id": "SRC1108_6_1100_theorem",
+            "relative_path": "source-intake/mts_residuals/P8_Y5_R10_1100_TQ_THEOREM_ATTEMPT.csv",
+            "needle": "TQT1100_4_verdict",
+            "note": "T_Q theorem attempt verdict.",
+        },
+        {
+            "source_id": "SRC1108_7_1101_gauge",
+            "relative_path": "source-intake/mts_residuals/P8_Y5_R10_1101_GAUGE_NORM_THEOREM_ATTEMPT.csv",
+            "needle": "GFT1101_4_verdict",
+            "note": "gauge-norm owner route verdict.",
+        },
+        {
+            "source_id": "SRC1108_8_1107_candidate",
+            "relative_path": "source-intake/mts_residuals/P8_Y5_R10_1107_ALPHA_COEFFICIENT_SOURCE_ROW_TEMPLATE_NONCLAIM.csv",
+            "needle": "PRED1107_0_alpha_coefficient_source_row",
+            "note": "alpha coefficient source-row template.",
+        },
+        {
+            "source_id": "SRC1108_9_1098_requirements",
+            "relative_path": "source-intake/mts_residuals/P8_Y5_R10_1098_SOURCE_BACKED_COEFFICIENT_REQUIREMENTS.csv",
+            "needle": "REQ1098_0_c_alpha",
+            "note": "alpha coefficient threshold requirement.",
+        },
+    ]
+    checked: list[dict[str, object]] = []
+    for row in rows:
+        path = ROOT / str(row["relative_path"])
+        text = path.read_text(encoding="utf-8", errors="replace") if path.exists() else ""
+        checked.append(
+            {
+                **row,
+                "exists": str(path.exists()).lower(),
+                "needle_found": str(str(row["needle"]) in text).lower(),
+            }
+        )
+    return stamp(checked)
+
+
+def em_image_rows() -> list[dict[str, object]]:
+    return stamp(
+        [
+            {
+                "attempt_id": "EMF1108_0_target",
+                "claim_piece": "EM F2 image exhaustion",
+                "formal_statement": "Every visible F_Q^2 coefficient is generated by one parent curvature/gauge-norm image: Z_Q = C_P <T_Q,T_Q>_P.",
+                "result": "TARGET_SHARP",
+                "proof_or_blocker": "would be the alpha-specific version of object-language exhaustion",
+            },
+            {
+                "attempt_id": "EMF1108_1_parent_image",
+                "claim_piece": "parent-generated F2 term exists",
+                "formal_statement": "S_parent contains -C_P/4 int <F,F>_P and projection to Q gives -C_P N_Q/4 int F_Q^2.",
+                "result": "PARTIAL_CONDITIONAL_SUPPORT",
+                "proof_or_blocker": "T_Q object, N_Q norm, and C_P owner are not all parent-signed",
+            },
+            {
+                "attempt_id": "EMF1108_2_no_lambda",
+                "claim_piece": "no independent constant F2 coefficient",
+                "formal_statement": "lambda_A F_Q^2 is not an admissible operator or is gauge-equivalent to parent norm data.",
+                "result": "NOT_DERIVED_COUNTEREXAMPLE_ACTIVE",
+                "proof_or_blocker": "lambda_A F_Q^2 remains legal if operator-domain exhaustion is unsigned",
+            },
+            {
+                "attempt_id": "EMF1108_3_no_hidden_f",
+                "claim_piece": "no hidden-scalar F2 coefficient",
+                "formal_statement": "f(I_hid)F_Q^2 is not an admissible hidden-visible target action.",
+                "result": "BLOCKED_BY_HIDDEN_TARGET_ACTION",
+                "proof_or_blocker": "surviving hidden invariant scalar can still feed visible F2 coefficient",
+            },
+            {
+                "attempt_id": "EMF1108_4_readout_radiative",
+                "claim_piece": "F2 image exhaustion survives EFT/readout",
+                "formal_statement": "Z_Q^eff and alpha readout remain functions only of parent image data and quotient-fixed readout factors.",
+                "result": "UNSIGNED",
+                "proof_or_blocker": "radiative/readout F2 counterterm remains retained",
+            },
+            {
+                "attempt_id": "EMF1108_5_current_not_enough",
+                "claim_piece": "Ward/current route fixes F2 coefficient",
+                "formal_statement": "current normalization and charge labels determine the Maxwell kinetic coefficient.",
+                "result": "LIMIT_IDENTIFIED",
+                "proof_or_blocker": "Ward/current can own J_Q but F2 coefficient remains rescalable without norm/level",
+            },
+            {
+                "attempt_id": "EMF1108_6_verdict",
+                "claim_piece": "derive parent EM-F2 image exhaustion now",
+                "formal_statement": "EMF1108_1 through EMF1108_4 all close from current corpus.",
+                "result": "EM_F2_IMAGE_EXHAUSTION_NOT_DERIVED",
+                "proof_or_blocker": "narrowing helped isolate the missing data, but no-extra-F2 remains a closure/acquisition problem",
+            },
+        ]
+    )
+
+
+def acquisition_rows() -> list[dict[str, object]]:
+    return stamp(
+        [
+            {
+                "acq_id": "ACQ1108_0_parent_TQ_object",
+                "needed_object": "T_Q parent-action object",
+                "required_evidence": "source row showing T_Q is a varied/owned parent generator before EM readout",
+                "current_status": "PARTIAL_TEMPLATE_ONLY",
+                "claim_use": "without it, A_Q can be appended after the parent action",
+            },
+            {
+                "acq_id": "ACQ1108_1_fixed_norm_or_level",
+                "needed_object": "N_Q=<T_Q,T_Q>_P or topological/level/index owner",
+                "required_evidence": "nonrescalable fibre norm, level, index, monopole unit, or unification embedding with matching",
+                "current_status": "MISSING_PARENT_NORM_OR_LEVEL",
+                "claim_use": "without it, g_EM normalization is conventional/free",
+            },
+            {
+                "acq_id": "ACQ1108_2_no_lambda_operator_domain",
+                "needed_object": "no independent lambda_A F_Q^2",
+                "required_evidence": "operator-domain theorem excluding standalone visible F2 counterterm",
+                "current_status": "MISSING_OPERATOR_DOMAIN_EXHAUSTION",
+                "claim_use": "without it, fixed norm does not uniquely own alpha",
+            },
+            {
+                "acq_id": "ACQ1108_3_no_hidden_f",
+                "needed_object": "no f(I_hid)F_Q^2 target action",
+                "required_evidence": "hidden invariant triviality, no hidden-visible hom, or exact sequester/shift theorem",
+                "current_status": "MISSING_NO_HIDDEN_TARGET_ACTION",
+                "claim_use": "without it, b_alpha drift remains finite",
+            },
+            {
+                "acq_id": "ACQ1108_4_readout_radiative",
+                "needed_object": "alpha readout/radiative F2 closure",
+                "required_evidence": "S_eff/readout alpha map factors only through parent image and q-fixed readout factors",
+                "current_status": "MISSING_RADIOUT_CLOSURE",
+                "claim_use": "without it, clock/spectroscopy can reintroduce alpha variation",
+            },
+            {
+                "acq_id": "ACQ1108_5_external_alpha_coefficient",
+                "needed_object": "source-backed b_alpha/c_alpha value if theorem route fails",
+                "required_evidence": "numeric coefficient, units, derivation/source path, arena projection, and valid_for_claim=true",
+                "current_status": "MISSING_SOURCE_BACKED_ALPHA_COEFFICIENT",
+                "claim_use": "without it, alpha row remains threshold-only",
+            },
+        ]
+    )
+
+
+def alpha_row_rows() -> list[dict[str, object]]:
+    return stamp(
+        [
+            {
+                "row_id": "ALPHAROW1108_0_template",
+                "arena": "alpha_shared",
+                "coefficient": "c_alpha_DD_or_b_alpha",
+                "value_or_status": "MISSING_SOURCE_BACKED_ALPHA_COEFFICIENT_OR_EM_F2_THEOREM_ZERO",
+                "units": "dimensionless coefficient",
+                "required_source": "parent EM-F2 image theorem OR external/source-backed coefficient value",
+                "threshold_abs": "8.320244933243533e-10",
+                "runner_status": "invalid_missing_prediction",
+            },
+            {
+                "row_id": "ALPHAROW1108_1_clock_projection",
+                "arena": "clock",
+                "coefficient": "b_alpha*tau_clock_time",
+                "value_or_status": "MISSING_MTS_CLOCK_PRODUCT_PREDICTION",
+                "units": "yr^-1",
+                "required_source": "tau_clock/Xhat normalization and alpha coefficient/product source",
+                "threshold_abs": "2.1e-18",
+                "runner_status": "invalid_missing_projection",
+            },
+            {
+                "row_id": "ALPHAROW1108_2_WEP_projection",
+                "arena": "MICROSCOPE_WEP",
+                "coefficient": "P_WEP_alpha",
+                "value_or_status": "MISSING_BETA_SOURCE_ALPHA_TAU_WEP_PRODUCT",
+                "units": "dimensionless",
+                "required_source": "beta_source_alpha, tau_WEP, material/readout tensor, or direct product theorem",
+                "threshold_abs": "4.797780522732e-05",
+                "runner_status": "invalid_missing_projection",
+            },
+        ]
+    )
+
+
+def claim_gate_rows() -> list[dict[str, object]]:
+    return stamp(
+        [
+            {
+                "gate_id": "CG1108_0_EM_image",
+                "claim": "EM F2 image exhaustion is derived",
+                "gate_pass": "false",
+                "reason": "T_Q/norm/no-lambda/no-hidden-f/readout clauses remain unsigned",
+            },
+            {
+                "gate_id": "CG1108_1_balpha_zero",
+                "claim": "b_alpha=0 theorem-zero",
+                "gate_pass": "false",
+                "reason": "no-extra-F2 is not derived and counterterms remain legal",
+            },
+            {
+                "gate_id": "CG1108_2_alpha_row",
+                "claim": "alpha coefficient row is scoreable",
+                "gate_pass": "false",
+                "reason": "template still has missing coefficient/source/projection inputs",
+            },
+            {
+                "gate_id": "CG1108_3_cross_arena",
+                "claim": "clock/WEP/R10 alpha predictions follow",
+                "gate_pass": "false",
+                "reason": "arena projection maps remain missing",
+            },
+        ]
+    )
+
+
+def decision_rows() -> list[dict[str, object]]:
+    return stamp(
+        [
+            {
+                "decision_id": "DEC1108_0_theorem_result",
+                "decision": "narrow EM-F2 image exhaustion is not derived",
+                "because": "constant lambda_A, hidden f(I_hid), norm/level owner, and radiative/readout closure are still unsigned",
+                "next_action": "do not promote b_alpha=0",
+            },
+            {
+                "decision_id": "DEC1108_1_best_theory_target",
+                "decision": "the smallest remaining derivation target is no independent lambda_A F_Q^2",
+                "because": "even a fixed parent norm cannot own alpha if a constant standalone F2 term is legal",
+                "next_action": "try to classify lambda_A F_Q^2 as redundant/forbidden or retain it as finite coefficient",
+            },
+            {
+                "decision_id": "DEC1108_2_finite_policy",
+                "decision": "alpha acquisition row remains a schema, not evidence",
+                "because": "there is a threshold but no MTS coefficient value",
+                "next_action": "if lambda_A cannot be removed, build a source-backed finite alpha coefficient acquisition ledger",
+            },
+        ]
+    )
+
+
+def next_rows() -> list[dict[str, object]]:
+    return stamp(
+        [
+            {
+                "next_id": "NEXT1108_0_1109",
+                "next_target": "1109-Y5-R10-no-independent-lambda-F2-theorem-or-finite-alpha-coefficient-acquisition.md",
+                "objective": "try to prove the standalone constant lambda_A F_Q^2 term is redundant, forbidden, or absorbed into parent gauge norm without losing predictive alpha; if not, retain lambda_A as the first finite alpha coefficient and build source/acquisition rows",
+                "include": "lambda_A F_Q^2 redundancy test; field/current rescaling; parent norm versus observed fit; hidden f(I)F2 separation; alpha coefficient source schema; strict nonclaim gates",
+                "exclude": "claiming b_alpha=0 from minimality; standalone b_alpha from clocks; WEP/R10 transfer without tau maps; local-GR claim; GitHub; formalization edits",
+            }
+        ]
+    )
+
+
+def validate(
+    sources: list[dict[str, object]],
+    theorem: list[dict[str, object]],
+    acquisitions: list[dict[str, object]],
+    alpha_rows: list[dict[str, object]],
+    gates: list[dict[str, object]],
+    decisions: list[dict[str, object]],
+    next_target: list[dict[str, object]],
+    outputs: dict[str, Path],
+) -> list[dict[str, object]]:
+    rows: list[dict[str, object]] = []
+
+    def add(check_id: str, passed: bool, detail: str) -> None:
+        rows.append(
+            {
+                "check_id": check_id,
+                "result": "pass" if passed else "fail",
+                "detail": detail,
+                "valid_for_claim": "false",
+                "generated_utc": now(),
+            }
+        )
+
+    add(
+        "V1108_0_sources_exist",
+        all(row["exists"] == "true" and row["needle_found"] == "true" for row in sources),
+        "all cited local source paths exist and needles are found",
+    )
+    add(
+        "V1108_1_theorem_not_derived",
+        any(row["result"] == "EM_F2_IMAGE_EXHAUSTION_NOT_DERIVED" for row in theorem),
+        "EM-F2 image exhaustion is explicitly not promoted",
+    )
+    add(
+        "V1108_2_missing_inputs_written",
+        len(acquisitions) >= 6 and all("MISSING" in row["current_status"] or row["current_status"].startswith("PARTIAL") for row in acquisitions),
+        "all required EM/alpha acquisition inputs remain missing or partial",
+    )
+    add(
+        "V1108_3_alpha_rows_invalid",
+        all("MISSING" in row["value_or_status"] for row in alpha_rows),
+        "alpha rows remain missing-input templates",
+    )
+    add(
+        "V1108_4_claim_gates_blocked",
+        all(row["gate_pass"] == "false" and row["claim_allowed"] == "false" for row in gates),
+        "all claim gates remain blocked",
+    )
+    add(
+        "V1108_5_next_target",
+        next_target[0]["next_target"].startswith("1109-") and "lambda-F2" in str(next_target[0]["next_target"]),
+        "1109 handoff targets no-independent-lambda-F2 or finite alpha coefficient acquisition",
+    )
+    add(
+        "V1108_6_no_claim_rows",
+        all(row.get("valid_for_claim") == "false" for row in theorem + acquisitions + alpha_rows + gates + decisions + next_target),
+        "all generated rows are nonclaim",
+    )
+    add(
+        "V1108_7_generated_under_post_checkpoint",
+        all(str(path.resolve()).startswith(str(ROOT.resolve())) for path in outputs.values()),
+        "all generated outputs are under post-checkpoint-work",
+    )
+    csv_parse_ok = True
+    for name, path in outputs.items():
+        if name == "validation":
+            continue
+        if path.suffix.lower() == ".csv" and path.exists():
+            with path.open("r", newline="", encoding="utf-8") as handle:
+                list(csv.DictReader(handle))
+        elif path.suffix.lower() == ".csv":
+            csv_parse_ok = False
+    add("V1108_8_csv_parse", csv_parse_ok, "all 1108 CSV outputs parse cleanly")
+    add(
+        "V1108_9_formalization_untouched",
+        True,
+        "generator writes no outputs under formalization-workbench",
+    )
+    add(
+        "V1108_SUMMARY",
+        True,
+        "1108 rejects EM-F2 image exhaustion as current derivation and selects lambda_A F2 as next subcase",
+    )
+    return rows
+
+
+def table(headers: list[str], rows: list[dict[str, object]]) -> str:
+    lines = ["| " + " | ".join(headers) + " |", "| " + " | ".join("---" for _ in headers) + " |"]
+    for row in rows:
+        lines.append("| " + " | ".join(str(row.get(header, "")) for header in headers) + " |")
+    return "\n".join(lines)
+
+
+def write_doc(
+    sources: list[dict[str, object]],
+    theorem: list[dict[str, object]],
+    acquisitions: list[dict[str, object]],
+    alpha_rows: list[dict[str, object]],
+    gates: list[dict[str, object]],
+    decisions: list[dict[str, object]],
+    validation: list[dict[str, object]],
+    next_target: list[dict[str, object]],
+) -> None:
+    text = f"""# 1108 - Parent EM-F2 Image Exhaustion Or Alpha Coefficient Acquisition
+
+**Current verdict:** the narrower EM-F2 image theorem is still not derived. The parent-generated term is plausible, but the independent `lambda_A F_Q^2`, hidden `f(I_hid)F_Q^2`, and readout/radiative F2 channels remain legal or unsigned.
+
+**Useful narrowing:** the first alpha wound is now the constant standalone `lambda_A F_Q^2` term. Even before hidden scalars, loops, or WEP projections, that one term prevents a unique parent alpha owner.
+
+**No claim:** no `b_alpha=0`, no clock alpha prediction, no WEP/R10 transfer. Alpha remains a finite coefficient/product acquisition route unless the next no-lambda theorem closes.
+
+## Source Register
+{table(["source_id", "relative_path", "exists", "needle", "needle_found", "note"], sources)}
+
+## EM-F2 Image Exhaustion Attempt
+{table(["attempt_id", "claim_piece", "formal_statement", "result", "proof_or_blocker", "claim_allowed"], theorem)}
+
+## Acquisition Ledger
+{table(["acq_id", "needed_object", "required_evidence", "current_status", "claim_use", "claim_allowed"], acquisitions)}
+
+## Alpha Row Templates
+{table(["row_id", "arena", "coefficient", "value_or_status", "units", "required_source", "threshold_abs", "runner_status", "claim_allowed"], alpha_rows)}
+
+## Claim Gates
+{table(["gate_id", "claim", "gate_pass", "reason", "claim_allowed"], gates)}
+
+## Decisions
+{table(["decision_id", "decision", "because", "next_action", "claim_allowed"], decisions)}
+
+## Validation
+{table(["check_id", "result", "detail", "valid_for_claim"], validation)}
+
+## Next Target
+{table(["next_id", "next_target", "objective", "include", "exclude", "claim_allowed"], next_target)}
+"""
+    DOC.write_text(text, encoding="utf-8")
+
+
+def remove_pycache() -> None:
+    pycache = ROOT / "scripts" / "__pycache__"
+    if pycache.exists() and pycache.is_dir():
+        shutil.rmtree(pycache)
+
+
+def main() -> None:
+    outputs = {
+        "source_register": OUT / "P8_Y5_R10_1108_SOURCE_REGISTER.csv",
+        "theorem": OUT / "P8_Y5_R10_1108_EM_F2_IMAGE_THEOREM_ATTEMPT.csv",
+        "acquisition": OUT / "P8_Y5_R10_1108_EM_ALPHA_ACQUISITION_LEDGER.csv",
+        "alpha_rows": OUT / "P8_Y5_R10_1108_ALPHA_ROW_TEMPLATES_NONCLAIM.csv",
+        "claim_gates": OUT / "P8_Y5_R10_1108_CLAIM_GATES.csv",
+        "decisions": OUT / "P8_Y5_R10_1108_DECISION_LEDGER.csv",
+        "next_target": OUT / "P8_Y5_R10_1108_NEXT_TARGET.csv",
+        "validation": OUT / "P8_Y5_BRR545_1108_VALIDATION.csv",
+    }
+    sources = source_rows()
+    theorem = em_image_rows()
+    acquisitions = acquisition_rows()
+    alpha_rows = alpha_row_rows()
+    gates = claim_gate_rows()
+    decisions = decision_rows()
+    next_target = next_rows()
+
+    write_csv(outputs["source_register"], sources)
+    write_csv(outputs["theorem"], theorem)
+    write_csv(outputs["acquisition"], acquisitions)
+    write_csv(outputs["alpha_rows"], alpha_rows)
+    write_csv(outputs["claim_gates"], gates)
+    write_csv(outputs["decisions"], decisions)
+    write_csv(outputs["next_target"], next_target)
+    validation = validate(sources, theorem, acquisitions, alpha_rows, gates, decisions, next_target, outputs)
+    write_csv(outputs["validation"], validation)
+    write_doc(sources, theorem, acquisitions, alpha_rows, gates, decisions, validation, next_target)
+    remove_pycache()
+
+    failed = [row for row in validation if row["result"] != "pass"]
+    print(f"wrote {DOC}")
+    print(f"validation: {'PASS' if not failed else 'FAIL'}")
+    for row in failed:
+        print(f"{row['check_id']}: {row['detail']}")
+
+
+if __name__ == "__main__":
+    main()

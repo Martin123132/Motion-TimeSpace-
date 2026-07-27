@@ -1,0 +1,8 @@
+channel_id,bound_component,derivative_or_residual,zero_condition,required_artifact_if_not_zero,current_status,valid_for_claim,timestamp_utc
+DCA3880_0_time,b_t,D_t ln C_*,zero if global/topological C_* and closed Pi_M/M_eff flux; otherwise Gdot row,P8_time_drift_residual_or_zero.csv,OPEN_NOT_PARENT_SIGNED,False,2026-07-01T07:16:29+00:00
+DCA3880_1_radial,b_r,D_r ln C_*,zero if source-free exterior no-hair/Gauss charge is radius-independent; otherwise radial profile,P8_radial_mu_profile_or_zero.csv,OPEN_NOT_PARENT_SIGNED,False,2026-07-01T07:16:29+00:00
+DCA3880_2_range,b_lambda,D_lambda ln C_* or finite-range alpha(lambda),zero if no sourced finite-range pole/no-range theorem; otherwise executable alpha(lambda) curve,R10_alpha_lambda_curve_MTS_source_normalization.csv,OPEN_CURVE_REQUIRED,False,2026-07-01T07:16:29+00:00
+DCA3880_3_frame,b_frame,D_frame ln C_*,zero if source variation and matter/readout use one parent observed coframe,P8_frame_source_split_residual_or_zero.csv,OPEN_NOT_PARENT_SIGNED,False,2026-07-01T07:16:29+00:00
+DCA3880_4_domain,b_domain,Delta_domain(C_*),zero if support/domain/readout selector is q-basic and parent fixed,P8_frame_source_split_residual_or_zero.csv;P8_DOMAIN_SELECTOR_*,OPEN_NOT_PARENT_SIGNED,False,2026-07-01T07:16:29+00:00
+DCA3880_5_Bianchi,b_Bianchi,T_obs nabla ln C_* exchange,zero if D C_*=0; otherwise source-exchange coefficient row,P8_delta_kappa_source_exchange_residual.csv,OPEN_NO_SOURCE_ROW,False,2026-07-01T07:16:29+00:00
+DCA3880_6_mu_extra,b_epsilon_mu,D_X ln(1+epsilon_mu),zero if mu_extra=0 or universal derivative-silent calibration,P8_mu_extra_over_Geff_Meff_vector.csv,PARALLEL_HAIR_VECTOR_RETAINED,False,2026-07-01T07:16:29+00:00

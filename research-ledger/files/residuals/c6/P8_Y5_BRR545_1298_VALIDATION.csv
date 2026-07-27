@@ -1,0 +1,11 @@
+check_id,check,status,details
+VAL1298_0_sources_exist,registered source paths exist and anchors are found,PASS,8/8 source anchors found
+VAL1298_1_projection_formula_present,trace-reversed Kbar projection formula is present,PASS,Kbar_00 local flat branch derived
+VAL1298_2_spatial_trace_requirements,spatial trace requirements are explicit,PASS,STR1298_0_m_spatial_trace;STR1298_1_Lcg_spatial_trace;STR1298_2_cdb_spatial_trace;STR1298_3_projector_domain;STR1298_4_index_convention
+VAL1298_3_bound_preview_non_scoreable,Kbar and Newton-budget bounds remain non-scoreable,PASS,KBP1298_0_abs_Kbar_bound;KBP1298_1_Newton_budget_after_projection
+VAL1298_4_runner_still_no_score,runner preview rows remain no-score,PASS,RRI1292_0_m_chain;RRI1292_1_Lcg_chain;RRI1292_2_cdb_chain;RRI1292_3_chain_vector
+VAL1298_5_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1298_SOURCE_REGISTER.csv:8; P8_Y5_R10_1298_KBAR_PROJECTION_FORMULA_NONCLAIM.csv:3; P8_Y5_R10_1298_SPATIAL_TRACE_REQUIREMENTS.csv:5; P8_Y5_R10_1298_KBAR_BOUND_PREVIEW_NONCLAIM.csv:2; P8_Y5_R10_1298_RUNNER_PROJECTION_PREVIEW.csv:4; P8_Y5_R10_1298_CLAIM_GATES.csv:4; P8_Y5_R10_1298_DECISION_LEDGER.csv:2; P8_Y5_R10_1298_NEXT_TARGET.csv:1
+VAL1298_6_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1298_7_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1298_8_next_target_1299,next target routes to spatial trace bound or trace theorem,PASS,1299-Y5-R10-RAB-spatial-trace-kernel-bound-or-trace-theorem.md
+VAL1298_9_overall,overall 1298 validation,PASS,"1298 derives the Kbar_00 projection formula, proves the 00 component alone is insufficient, keeps scoring blocked, and routes to spatial-trace bounds/theorem"

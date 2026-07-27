@@ -1,0 +1,16 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1227_0_local_sources_exist,all cited local sources exist,PASS,4/4 local sources exist,False,False
+VAL1227_1_local_needles_found,all cited local needles found,PASS,4/4 local needles found,False,False
+VAL1227_2_web_sources_recorded,web/API documentation sources recorded,PASS,SRC1227_4_REGARDS_overview; SRC1227_5_REGARDS_catalog_api; SRC1227_6_REGARDS_services; SRC1227_7_CMSM_portal,False,False
+VAL1227_3_endpoint_candidates_staged,REGARDS endpoint candidates are staged,PASS,END1227_0_landing; END1227_1_user_project; END1227_2_complex_search; END1227_3_opensearch_datasets; END1227_4_opensearch_dataobjects; END1227_5_stac_collections; END1227_6_api_docs; END1227_7_service_apply; END1227_8_download_file,False,False
+VAL1227_4_no_package_names_claimed,no package names or URLs are fabricated,PASS,all package rows remain MISSING_PACKAGE_NAME/MISSING_PACKAGE_URL,False,False
+VAL1227_5_downloads_blocked,download plan is dry-run only,PASS,DRY1227_0_do_not_execute; DRY1227_1_checksum; DRY1227_2_manifest,False,False
+VAL1227_6_blockers_recorded,access blockers are recorded,PASS,ABLOCK1227_0_local_tcp; ABLOCK1227_1_api_auth_unknown; ABLOCK1227_2_no_package_identifiers; ABLOCK1227_3_no_data_dictionary,False,False
+VAL1227_7_parser_contract_nonclaim,future parser contract remains nonclaim,PASS,PARSE1227_0_required_columns; PARSE1227_1_metadata; PARSE1227_2_tau_output,False,False
+VAL1227_8_tau_feed_nonclaim,tau_WEP feed remains nonclaim,PASS,valid_prediction_rows_delta=0 for tau feeds,False,False
+VAL1227_9_claim_gates_blocked,claim gates keep physical claims blocked,PASS,connectivity/package/download/parser/tau claim gates blocked,False,False
+VAL1227_10_next_target_intake,next target stages user-assisted intake contract,PASS,1228-Y5-R10-MICROSCOPE-user-assisted-package-intake-contract.md,False,False
+VAL1227_11_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout claim-bearing tables,False,False
+VAL1227_12_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1227_SOURCE_REGISTER.csv:8; P8_Y5_R10_1227_NETWORK_PROBE.csv:2; P8_Y5_R10_1227_REGARDS_ENDPOINT_CANDIDATES.csv:9; P8_Y5_R10_1227_PACKAGE_MAP_STATUS.csv:4; P8_Y5_R10_1227_ACCESS_BLOCKER_LEDGER.csv:4; P8_Y5_R10_1227_DOWNLOAD_DRY_RUN_PLAN.csv:3; P8_Y5_R10_1227_MANUAL_ACQUISITION_INSTRUCTIONS.csv:4; P8_Y5_R10_1227_FUTURE_PARSER_CONTRACT.csv:3; P8_Y5_R10_1227_TAU_WEP_FEED_UPDATE.csv:2; P8_Y5_R10_1227_DECISION_LEDGER.csv:3; P8_Y5_R10_1227_CLAIM_GATES.csv:6; P8_Y5_R10_1227_NEXT_TARGET.csv:1,False,False
+VAL1227_13_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_after_run_start_count=0,False,False
+VAL1227_14_overall,overall 1227 validation,PASS,"1227 maps REGARDS/CMSM route candidates, records access blockers, and refuses fabricated package rows",False,False

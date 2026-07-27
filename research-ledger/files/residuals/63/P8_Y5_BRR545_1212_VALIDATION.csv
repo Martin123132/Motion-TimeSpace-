@@ -1,0 +1,14 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1212_0_sources_exist,all cited local sources exist,PASS,13/13 sources exist,False,False
+VAL1212_1_needles_found,all cited source needles found,PASS,13/13 needles found,False,False
+VAL1212_2_source_side_blocked,source-side zero is not overclaimed,PASS,SSZ1212_4 source-side zero blocked,False,False
+VAL1212_3_parent_lhs_blocked,parent-LHS EH/Newton zero is not overclaimed,PASS,LHS1212_4 parent-LHS zero blocked,False,False
+VAL1212_4_zero_failure,G_res zero theorem failure is recorded,PASS,GZS1212_1 actual verdict,False,False
+VAL1212_5_profile_row,first Gres_bound profile row is staged,PASS,GRB1212_0 present,False,False
+VAL1212_6_cp_feed,C_P*Gres feed row is staged,PASS,CGF1212_0 present,False,False
+VAL1212_7_no_missing_claim_rows,no row with MISSING is valid for claim,PASS,profile row remains nonclaim,False,False
+VAL1212_8_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout,False,False
+VAL1212_9_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1212_SOURCE_REGISTER.csv:13; P8_Y5_R10_1212_SOURCE_SIDE_ZERO_ATTEMPT.csv:5; P8_Y5_R10_1212_PARENT_LHS_EH_NEWTON_ATTEMPT.csv:5; P8_Y5_R10_1212_GRES_ZERO_ATTEMPT_SUMMARY.csv:3; P8_Y5_R10_1212_FIRST_GRES_BOUND_PROFILE_ROW.csv:1; P8_Y5_R10_1212_CP_GRES_FEED_ROW.csv:1; P8_Y5_R10_1212_DECISION_LEDGER.csv:2; P8_Y5_R10_1212_CLAIM_GATES.csv:5; P8_Y5_R10_1212_NEXT_TARGET.csv:1,False,False
+VAL1212_10_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_after_run_start_count=0,False,False
+VAL1212_11_next_target,next target is staged,PASS,1213-Y5-R10-Gres-source-side-obstruction-bound-or-hidden-species-zero.md,False,False
+VAL1212_12_overall,overall 1212 validation,PASS,1212 G_res zero attempt and first profile row are reproducible and nonclaim,False,False

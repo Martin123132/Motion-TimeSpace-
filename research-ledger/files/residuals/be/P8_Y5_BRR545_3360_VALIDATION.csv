@@ -1,0 +1,12 @@
+check_id,check,passed,detail
+VAL3360_0_local_sources_exist,all cited local source paths exist,true,
+VAL3360_1_local_sources_parse,all cited local source paths parse,true,
+VAL3360_2_outputs_parse,all 3360 non-validation outputs parse,true,
+VAL3360_3_euler_packet_complete,"Euler packet includes positivity, zero source/boundary, no-linear-source, physical lock, and AX1090 update",true,
+VAL3360_4_component_coverage,component audit covers Y0 through Y6,true,
+VAL3360_5_R11_family_coverage,R11 link audit covers ten operator families,true,r11_rows=10
+VAL3360_6_no_fake_numeric_bound,first R11 bound attempts remain nonclaim and not numerically filled,true,
+VAL3360_7_no_overclaim,"Yloc, physical lock, R11, numeric bound, and local GR claims remain false",true,
+VAL3360_8_next_targets_physical_lock_and_Y5,next targets attack physical lock and Y5 source normalization,true,
+VAL3360_9_write_scope_outside_formalization,all 3360 write targets are outside formalization-workbench,true,write_targets=9
+VAL3360_10_overall,3360 validation overall,true,all required checks passed

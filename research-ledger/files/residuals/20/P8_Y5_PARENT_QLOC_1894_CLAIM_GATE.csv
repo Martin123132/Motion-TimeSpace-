@@ -1,0 +1,5 @@
+gate_id,condition,current_status,source_anchor,gate_pass,valid_for_claim
+CG1894_0_qsrc,parent action/category forces all ordinary source coupling maps to factor through q_src,FAIL_SOURCE_DOMAIN_QUOTIENT_CONSTRUCTOR_NOT_PARENT_DERIVED,P8_Y5_PARENT_QLOC_1894_SOURCE_DOMAIN_QUOTIENT_CONSTRUCTOR_ATTEMPT.csv:QSRC1894_5_verdict,False,False
+CG1894_1_no_prefactor,no source-only pre-action species prefactor can enter before q_src,FAIL_PREACTION_WEIGHT_BYPASS_SURVIVES,P8_Y5_PARENT_QLOC_1894_SOURCE_DOMAIN_QUOTIENT_CONSTRUCTOR_ATTEMPT.csv:QSRC1894_3_no_prefactor_obstruction,False,False
+CG1894_2_material_tensor,"WEP material tensor is full parent-basis tensor, not proxy context",FAIL_MISSING_FULL_PARENT_MATERIAL_TENSOR,P8_Y5_PARENT_QLOC_1894_WEP_MATERIAL_TENSOR_INTAKE_NONCLAIM.csv:WMI1894_3_full_parent_tensor,False,False
+CG1894_3_verdict,local source/WEP branch can claim derived or scored pass,CLAIM_BLOCKED,CG1894_0_qsrc through CG1894_2_material_tensor,False,False

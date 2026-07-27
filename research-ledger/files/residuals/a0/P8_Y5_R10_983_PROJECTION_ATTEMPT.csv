@@ -1,0 +1,5 @@
+projection_id,formula,known_inputs,missing_inputs,result,valid_for_claim
+WEP983_0_vector_projection,eta_TiPt ~= DeltaY_e*C_e + Deltaq_N*C_N + Deltaq_C*C_C + DeltaAbar*C_A + S_marker*b_m + S_theta*b_theta + S_source*b_kappa,"DeltaY_e,Deltaq_N,Deltaq_C,DeltaAbar,eta_screening_envelope","C_e,C_N,C_C,C_A,S_marker,S_theta,S_source,MTS_source_charge_basis",PROJECTION_SKELETON_READY,false
+WEP983_1_bkappa_path,b_kappa contribution enters through source-normalization/composition sensitivity S_source,eta_envelope=6.992e-15,"S_source(TiAlloy,PtRh10),universal-Hilbert-source deviation definition",MISSING_SOURCE_CHARGE_PROJECTION,false
+WEP983_2_btheta_path,b_theta contribution enters through material constants/EM/mass-ratio sensitivities,composition proxies,clock/EM/mass sensitivity model linking theta_A to Ti/Pt free-fall contrast,MISSING_CONSTANT_SENSITIVITY_PROJECTION,false
+WEP983_3_identity_debug_bounds,"if one proxy coefficient dominates, |C_i| <= eta_envelope/|DeltaQ_i|",DeltaY_e=5.678e-02;Deltaq_N=-1.136e-01;Deltaq_C=-2.575e+00,proof that the chosen proxy coefficient equals an MTS residual slot,IDENTITY_DEBUG_ONLY,false

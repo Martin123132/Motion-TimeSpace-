@@ -1,0 +1,6 @@
+gate_id,gate,required_for_claim,current_result,claim_effect
+G502_0_units,every numeric integral has declared compatible units and normalization,true,fail_no_numeric_inputs,runner dry-run only
+G502_1_source_paths,every numeric value has a source path or theorem certificate,true,fail_no_numeric_inputs,no bound score
+G502_2_channelwise_no_cancellation,each open residual channel is individually below its mapped bound or theorem-zero,true,not_evaluated,prevents cancellation cheat
+G502_3_local_bound_mapping,epsilon_radial_Meff maps to R4/R10/R11 and any boundary/domain rows map to their locks,true,schema_written_not_scored,bound runner ready but no pass
+G502_4_no_promotion,dry-run cannot promote source-normalized Newton or local GR,true,pass_policy,local_GR_claim_allowed=false

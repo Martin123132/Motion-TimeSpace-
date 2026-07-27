@@ -1,0 +1,5 @@
+rule_id,scope,lambda_threshold_um,mass_threshold_eV,derivation,claim_status,valid_for_claim
+MR4456_0_official_alpha1_anchor,alpha_abs_equals_1_only,38.6,0.005112097937823834,M = hbar*c/lambda using the source 38.6 micrometer gravitational-strength anchor,SOURCE_BACKED_ANCHOR_NOT_FULL_CHANNEL_SCORE,False
+MR4456_1_scalar_candidate,standard_scalar_alpha_abs_1_over_3_candidate_curve,54.0180069885898,0.0036529852062420825,"solve candidate alpha_bound(lambda)=1/3 by log-log interpolation, then M_0>=hbar*c/lambda_threshold",PRIVATE_SMOKE_ONLY,False
+MR4456_2_spin2_candidate,standard_massive_spin2_alpha_abs_4_over_3_candidate_curve,35.75301326795065,0.005519170619861734,"solve candidate alpha_bound(lambda)=4/3 by log-log interpolation, then M_2>=hbar*c/lambda_threshold",PRIVATE_SMOKE_ONLY,False
+MR4456_3_common_parent_mass_candidate,if_M0_equals_M2_or_single_MR_controls_both_standard_modes,35.75301326795065,0.005519170619861734,"single parent scale must satisfy the strictest channel threshold, currently the spin-2 alpha_abs=4/3 candidate threshold",PRIVATE_SMOKE_ONLY_REQUIRES_PARENT_EQUALITY_THEOREM,False

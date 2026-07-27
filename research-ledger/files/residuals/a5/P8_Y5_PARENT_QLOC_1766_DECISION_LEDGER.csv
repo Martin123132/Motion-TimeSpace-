@@ -1,0 +1,5 @@
+branch_id,decision_id,decision,reason,next_action,valid_for_claim
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,DEC1766_0_connectivity_gain,ORDINARY_GRAPH_CONNECTIVITY_CONDITIONALLY_CLOSES_DELTA_W_BLOCK,connected exchange graph turns all ordinary weights into one common calibration,source the graph before any claim,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,DEC1766_1_residual_refinement,DELTA_W_BLOCK_REFINED_TO_SHADOW_OR_DECOUPLED,ordinary connected matter no longer needs species/block weights except via source-shadow or genuinely decoupled sectors,track delta_w_shadow and delta_w_decoupled explicitly,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,DEC1766_2_no_claim,NO_LOCAL_SOURCE_CLAIM,source-backed graph certificate and source-shadow ban are not parent-signed,keep all local/empirical claim gates closed,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,DEC1766_3_best_next,SINGLE_SOURCE_MAP_GRAMMAR_AND_SHADOW_BAN_IS_NEXT,source-shadow is now the strongest remaining way to bypass the connected ordinary graph theorem,build 1767 single-action source-map identity theorem or shadow residual bound,False

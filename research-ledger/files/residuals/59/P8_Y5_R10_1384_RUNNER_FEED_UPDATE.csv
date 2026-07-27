@@ -1,0 +1,6 @@
+feed_id,old_formula,new_formula,status,required_to_score,claim_allowed
+RUF1384_0_replace_transition_length,ell_tr=sqrt(Z_m L0^2/F2),ell_tr=1/sqrt(mu_m^2),CANONICAL_FORMULA_READY_SYMBOLIC,source-backed mu_m^2(X_B)>0 in local branch,False
+RUF1384_1_replace_amplitude,Delta_m=A_S exp(-d/ell_tr),Delta_phi=Phi_S exp(-d sqrt(mu_m^2)),CANONICAL_AMPLITUDE_FORMULA_READY_VALUES_MISSING,Phi_S or source/boundary amplitude plus mu_m^2,False
+RUF1384_2_replace_Q_alg,Q_alg <= A_ref^-1 /F2/ A_S^2 U_B^2/(L0^2 ell_tr),Q_alg_canon <= A_ref^-1 mu_m^2 Phi_S^2 exp(-2d sqrt(mu_m^2))/ell_tr plus residual_Xgrad/source/boundary terms,CANONICAL_Q_FORMULA_SKETCH_NONCLAIM,"normalization of A_ref, canonical stress convention, Phi_S, mu_m^2, residual bounds",False
+RUF1384_3_coupling_gate,implicit coupling hidden in source rows,local observable amplitude requires g_c(X_B) times canonical profile/residual,COUPLING_GATE_INSERTED,parent matter descent/source map in canonical variables,False
+RUF1384_4_runner_verdict,Z_m/F2 prior validator,canonical gap-coupling validator should supersede separate Z_m/F2 scoring,RUNNER_PIVOT_READY_NO_NUMERIC_SCORE,1385 canonical mass-gap/coupling derivation or source rows,False

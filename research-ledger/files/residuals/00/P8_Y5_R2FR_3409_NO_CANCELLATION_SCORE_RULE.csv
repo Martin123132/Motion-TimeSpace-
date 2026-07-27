@@ -1,0 +1,4 @@
+rule_id,rule,formula,claim_effect,valid_for_claim
+NCR3409_0_absolute_residue_envelope,Do not score local GR by cancellation between unrelated non-EH channels.,Delta_local_abs <= sum_i abs(B_i projected_to_arena),"A local-GR pass requires every active B_i to be zero, source-silent, gapped/screened, or individually below the relevant lock.",False
+NCR3409_1_beta_not_enough,A small beta projection does not promote a branch if alpha_i/xi/source/readout projections are unsigned.,score_ready_i = numeric_residue_i and sourced_i and same_readout_i and all_active_locks_pass_i,q_loc remains blocked even though its stored beta-only number is below the beta bound.,False
+NCR3409_2_GR_pole_denominator_only,The conditional EH/GR pole is used only as a denominator for residue ratios.,B_i=lambda -> abs(R_i H_i^{-1} J_i)/D_GR,"3409 does not claim EH parent ownership, Newtonian reduction, PPN pass, WEP pass, or R10 pass.",False

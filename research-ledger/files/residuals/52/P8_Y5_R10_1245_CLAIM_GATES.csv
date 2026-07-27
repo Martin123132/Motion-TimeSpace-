@@ -1,0 +1,5 @@
+gate_id,claim,status,reason,valid_for_claim,claim_allowed
+GATE1245_0_policy_fed_runner,policy-fed Q_R smoke runner is available,PASS_NONCLAIM,1244 policy and GM convention feed into 1245 cases,False,False
+GATE1245_1_missing_policy_blocker,missing statistical policy is still the blocker,CLEARED_NONCLAIM,1245 cases carry N_sigma=1 and sigma_gamma=2.3e-5; no 1245 row returns REFUSED_MISSING_STATISTICAL_POLICY,False,False
+GATE1245_2_qR_value_or_theorem,q_R_hat value or Q_R=0 theorem exists,BLOCKED,CASE1245_0 returns REFUSED_MISSING_QR and feed says MISSING_QR_VALUE_UNCHANGED,False,False
+GATE1245_3_local_GR,derived local GR/Newton/PPN pass,BLOCKED,"policy plumbing is not a parent source theorem, finite residual value, beta map, or conservation proof",False,False

@@ -1,0 +1,3 @@
+probe_id,target,method,dns_status,addresses,tcp_status,error,package_map_effect,valid_for_claim,claim_allowed
+NET1227_0_CMSM_tcp,https://cmsm-ds.onera.fr/,socket.getaddrinfo plus socket.create_connection timeout=5s,RESOLVED,144.204.32.18,CONNECT_FAILED,"ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None)",BLOCK_PACKAGE_ENUMERATION,False,False
+NET1227_1_prior_curl_probe,https://cmsm-ds.onera.fr/* candidate routes,PowerShell curl.exe -I -L --max-time 15,NOT_RECORDED_SEPARATELY,,CONNECT_FAILED,curl: (7) Failed to connect to cmsm-ds.onera.fr port 443 after about 2.2s,BLOCK_PACKAGE_ENUMERATION,False,False

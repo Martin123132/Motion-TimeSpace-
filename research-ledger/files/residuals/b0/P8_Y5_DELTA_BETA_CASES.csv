@@ -1,0 +1,7 @@
+case_id,A,B,beta_eff,meaning,current_status,valid_for_local_GR_claim
+CASE525_0_exact_GR_silence,1,1,1,no source-normalization or operator leakage,target_only_not_current_MTS_derived,false
+CASE525_1_GR_like_mass_renormalization,1+a epsilon,(1+a epsilon)^2,1,constant mass/coupling renormalization is safe only if the quadratic response comes along as the square,conditional_safe_pattern_not_derived,false
+CASE525_2_linear_only_source_leak,1+a epsilon,1,1-2a epsilon+O(epsilon^2),first-order calibration without nonlinear completion creates beta residual,guard_required,false
+CASE525_3_wrong_quadratic_completion,1+a epsilon,1+b epsilon with b != 2a,1+(b-2a)epsilon+O(epsilon^2),beta residual directly measures mismatch between first and second order source response,input_required,false
+CASE525_4_scalar_boundary_owner,monopole/common-mode only,requires exterior vacuum-Einstein response,safe only if exterior branch gives B=A^2,"scalar boundary symmetry can help gamma/slip, but beta still needs the nonlinear exterior equation",reduced_not_solved_from_229,false
+CASE525_5_R11_template_only,unknown,unknown plus c_nonEH contributions,not computable,symbolic non-EH operator ledger cannot pass beta,R11_vector_missing,false

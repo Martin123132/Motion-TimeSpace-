@@ -1,0 +1,5 @@
+test_id,candidate_q,candidate_vR,Dq_result,status,lesson,valid_for_claim,claim_allowed
+DQ1270_0_full_metric_readout,"q_full=(A=T^2,B=S,r,theta,...)",delta R_AB=delta ln A + delta ln B,Dq_full[v_R] != 0 for generic delta R_AB,FAILS_VERTICALITY,full metric/coframe readout makes R_AB observable,False,False
+DQ1270_1_fixed_reciprocity_readout,"q_GRlocal=(A,B with AB=1 already imposed)",delta R_AB removed by constraint,no independent v_R exists after elimination,AUXILIARY_ELIMINATION_NOT_QUOTIENT_KERNEL,"good if parent-signed, but it is not proof that R_AB was vertical before the constraint",False,False
+DQ1270_2_representative_class_readout,"q_class=[A,B]/R_AB representative equivalence",delta R_AB tangent to equivalence class,Dq_class[v_R]=0 by definition,CIRCULAR_UNLESS_PARENT_PRIMITIVE_PROVES_EQUIVALENCE,cannot define away a PPN-relevant component after seeing the problem,False,False
+DQ1270_3_generic_hidden_X,q_X from 637/581 quotient vertical chain,identify v_R with generic v_X,conditional only if R_AB is proven to be that null representative,MISSING_IDENTIFICATION,generic quotient success does not transfer automatically to R_AB,False,False

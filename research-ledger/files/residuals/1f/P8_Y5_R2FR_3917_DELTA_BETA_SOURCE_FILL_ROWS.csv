@@ -1,0 +1,5 @@
+row_id,piece,formula,required_inputs,status,numeric_value,score_ready,valid_for_claim,timestamp_utc
+BET3917_0_definition,source beta law,delta_beta_source = B_source/A_source^2 - 1,requires A_source and B_source from second-order source response,FORMULA_READY_INPUTS_MISSING,,False,False,2026-07-01T10:33:48+00:00
+BET3917_1_branch_zero,3914 branch zero,A_source=1 and B_source=1 inside B_loc => delta_beta_source=0,requires 3914 source-coupling stack plus EH nonlinear completion,CONDITIONAL_ZERO_IN_BRANCH,,False,False,2026-07-01T10:33:48+00:00
+BET3917_2_fallback,fill row,abs(B_source/A_source^2 - 1) <= 7.8e-05 or theorem-zero via A_source=1 and B_source=1 in the branch,requires numeric/source-backed A_source and B_source if source residual-lock fails,NONCLAIM_PASS_RULE,,False,False,2026-07-01T10:33:48+00:00
+BET3917_3_R11_split,R11 beta split,beta_minus_1 = delta_beta_source + delta_beta_R11 + delta_beta_q_loc + delta_beta_boundary_domain + delta_beta_readout,requires each component theorem-zero or bounded,NO_CANCELLATION_ENVELOPE,,False,False,2026-07-01T10:33:48+00:00
