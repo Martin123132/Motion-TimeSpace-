@@ -51,15 +51,15 @@ win by a large information-criterion margin.
 
 ## Current execution state
 
-Completed confirmatory seeds: 1 of
+Completed confirmatory seeds: 12 of
 12.
 
-- q-band-distance statistic: mean=0.0, median=0.0, bootstrap95=[None,None], exact sign-flip p=None
-- RMSE statistic: mean=-0.0053882279920328124, median=-0.0053882279920328124, bootstrap95=[None,None], exact sign-flip p=None
+- q-band-distance statistic: mean=-0.0392272547258426, median=-0.03964545922346341, bootstrap95=[-0.06256573517896083,-0.01672942342481484], exact sign-flip p=0.01171875
+- RMSE statistic: mean=0.0006039774233205624, median=-8.450172003944545e-05, bootstrap95=[-0.0012737960786308275,0.002521414183604568], exact sign-flip p=0.560546875
 - joint outcomes: CDM 0, MTS
-  0, tie/split 1
-- current verdict: INCOMPLETE_PREDECLARED_ENSEMBLE_NO_PREFERENCE_ALLOWED
-- route decision: LOCKED_CONFIRMATORY_ENSEMBLE_IN_PROGRESS_1_OF_12_PILOT_EXCLUDED_NO_MODEL_PREFERENCE_ALLOWED
+  3, tie/split 9
+- current verdict: STATISTICAL_DRAW_OR_METRIC_SPLIT_WITHIN_THIS_LOCKED_FORMATION_GATE
+- route decision: STATISTICAL_DRAW_OR_METRIC_SPLIT_WITHIN_THIS_LOCKED_FORMATION_GATE
 
 Until all twelve seeds complete, no model-preference statement is allowed.
 Even a final preference would apply only to this locked UGC09133 formation

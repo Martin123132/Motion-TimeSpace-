@@ -6,34 +6,47 @@ This repository is not presented as a completed theory of physics. It is a publi
 
 ## Current Status
 
-The project now has four connected layers:
+The project now has five connected layers:
 
-1. **Parent and infrared branch** - a declared integrated metric-density/Diff parent and a source-complete minimal gravity-photon-curvature truncation with a numerically constructed GR-connected infrared trajectory.
-2. **Local GR/Newton/Maxwell branch** - within the selected reflection-even weak local branch, one universal massless spin-2 residue gives the Einstein equation, Poisson equation, inverse-square force, geodesics, and standard leading `PPN gamma=beta=1`; the same parent action gives the Maxwell, Lorentz-force, stress, and Poynting chain.
-3. **Large-scale motion response** - a state-dependent Schur-complement route can leave the local GR branch unchanged while producing a long-distance response, but its retarded motion self-energy and source-history state law are not yet derived.
-4. **Empirical branches** - late-time cosmology remains a labelled closure branch. The galaxy-formation comparison now has a frozen 12-seed paired protocol; one confirmatory seed is complete, so model preference remains forbidden.
+1. **Parent and infrared branch** - one explicit CTP translation-gauge/coframe parent action contains the metric/coframe, visible matter, canonical `U(1)`, and reflection-even motion sector. The coframe is an honest parent premise rather than something falsely derived from four scalar clocks.
+2. **Local GR/Newton/Maxwell branch** - on the source-selected `chi=0`, locally silent state, the complete nonlinear two-derivative restriction is exactly GR + Lambda + Standard Model + Maxwell. The same action yields Newtonian mechanics, geodesics, lensing, Lorentz force, Maxwell stress, Poynting flux, and the full ten-parameter GR PPN vector without arena retuning.
+3. **Higher-operator branch** - calculated scalar, curvature-photon, nonlocal, and propagation residuals are separated from the exact two-derivative theorem. The first canonical MTS-specific `p8` coefficient remains unresolved; its outer integration now uses a reciprocal-projective topology contract after fixed-source continuation produced material Q03/Q05 errors.
+4. **Cosmology and large-scale motion** - a direct parent-scalar SN+BAO+growth+compressed-CMB programme has been executed, while mass/state selection and the occupied retarded response remain open. A single elementary mass cannot simultaneously be the fitted homogeneous cosmology pole and the conditional galactic collective scale.
+5. **Empirical branches** - the preregistered 12-seed galaxy-formation comparison is complete. Its `q` component is MTS-directed, its RMSE component is unresolved, and the locked result is a statistical draw/metric split rather than model preference.
 
-The July 21 update advances the public audit from checkpoint `516` to checkpoint `1191`. It publishes the full compact record of private checkpoints `4501` through `5175`: `658` checkpoint documents, `851` scripts, and `5,404` compact CSV/JSON artifacts. Large run products and third-party/source caches remain excluded.
-
-The July 22 follow-up adds public checkpoint `1192` (private checkpoint `5176`) as a public preregistration of the paired high-mode ensemble before seeds 2-12 are inspected. Seed 1 ties on distance to the inherited `q` band and gives a slightly lower RMSE for MTS, but it is a metric split and the frozen rule permits no preference statement before all 12 seeds finish.
+The July 27 update completes the previously unmerged publication branch and
+extends the contiguous public record through checkpoint `1266`, corresponding
+to private checkpoint `5250`. It includes negative results, corrected sign and
+topology errors, parent-action derivations, cosmological robustness tests, the
+exact selected local-GR truncation, and the current nonclaim two-loop
+estimator work. Large run products and third-party/source caches remain
+excluded.
 
 The strongest honest claim is:
 
-> MTS now contains a conditional but explicit weak-local route from one declared parent action to GR, Newtonian gravity, and the Maxwell/Lorentz/Poynting source chain, together with a concrete candidate bridge to distinct large-scale motion response. It does not yet derive the full parent ontology from motion, time, and space alone, establish strong-field completeness, derive the galactic retarded state law, or demonstrate empirical preference over standard baselines.
+> MTS now contains an explicit parent action with an exact selected nonlinear
+> two-derivative reduction to GR + Lambda + Standard Model + Maxwell, including
+> Newtonian mechanics and all ten GR PPN values. It does not yet derive the
+> parent coframe/visible ontology from motion, time, and space alone, establish
+> all-operator or strong-field completeness, derive the occupied galactic
+> response law, fix the absolute gravitational/vacuum scales internally, or
+> demonstrate overall empirical preference over standard baselines.
 
 ## Start Here
 
 - `CLAIM_CEILING.md` - the current claim boundary.
-- `docs/status/STATUS-2026-07-22.md` - concise current status and open problems.
-- `docs/status/PUBLICATION-NOTES-2026-07-22.md` - exact follow-up scope and exclusions.
+- `docs/status/STATUS-2026-07-27.md` - concise current status and open problems.
+- `docs/status/PUBLICATION-NOTES-2026-07-27.md` - exact update scope, integrity checks, and exclusions.
+- `research-programme/catalogue/README.md` - bounded direct-link catalogues for large artifact folders.
 - `docs/theory-gates/LOCAL-GR-NEWTON-GATES.md` - the updated local-limit gate map.
-- `research-programme/checkpoints/951-Y5-R2FR-completed-fixed-point-GR-connected-trajectory-and-motion-sector-entry.md` - GR-connected trajectory and motion-sector entry.
-- `research-programme/checkpoints/963-Y5-R2FR-local-GR-Newton-Maxwell-calibration-count-and-universal-source-residue-certificate.md` - local source-residue and calibration theorem.
-- `research-programme/checkpoints/976-Y5-R2FR-integrated-H-soft-BRST-universal-source-theorem-and-local-GR-Newton-Maxwell-promotion-or-parent-field-content-boundary.md` - strongest local GR/Newton/Maxwell theorem boundary.
-- `research-programme/checkpoints/1164-Y5-R2FR-one-parent-local-GR-galaxy-spectral-response-cog-theorem.md` - local-GR/galaxy response bridge.
-- `research-programme/checkpoints/1191-Y5-R2FR-exact-low-mode-shared-isotropic-resolution-discrimination-gate.md` - latest matched MTS/CDM formation gate.
-- `research-programme/checkpoints/1192-Y5-R2FR-predeclared-paired-high-mode-seed-ensemble.md` - frozen paired protocol and current 1-of-12 nonclaim state.
-- `research-programme/protocols/1192/README.md` - machine-readable freeze record, schedule, provenance hashes, and compact seed-1 outputs.
+- `research-programme/checkpoints/1203-Y5-R2FR-canonical-local-parent-action-Hessian-source-residue-and-scale-setting-theorem.md` - consolidated local action and scale-setting theorem.
+- `research-programme/checkpoints/1217-Y5-R2FR-source-complete-coframe-variation-full-PPN-calibration-and-local-state-silence-theorem.md` - source-complete coframe variation and full PPN gate.
+- `research-programme/checkpoints/1219-Y5-R2FR-one-canonical-translation-gauge-parent-action-cross-coupling-and-branch-reduction-theorem.md` - common parent action.
+- `research-programme/checkpoints/1224-Y5-R2FR-common-minimal-motion-trajectory-canonical-Z-quotient-absolute-scale-covariance-and-local-GR-selection.md` - selected common motion trajectory.
+- `research-programme/checkpoints/1227-Y5-R2FR-selected-trajectory-exact-GR-Maxwell-consistent-truncation-universal-source-and-matched-GRSM-excess-theorem.md` - strongest current local GR/Newton/Maxwell theorem.
+- `research-programme/checkpoints/1261-Y5-R2FR-reciprocal-projective-chamber-boundary-tracker.md` - replacement topology contract.
+- `research-programme/checkpoints/1266-Y5-R2FR-Q03-Q05-partial-outer-impact-and-remaining-node-gate.md` - latest partial correction and explicit hold gate.
+- `research-programme/protocols/1192/README.md` - frozen protocol and complete compact 12-seed outcome.
 
 ## Repository Layout
 
@@ -45,6 +58,7 @@ The strongest honest claim is:
 |   |-- status/
 |   `-- theory-gates/
 |-- research-programme/
+|   |-- catalogue/
 |   |-- checkpoints/
 |   |-- protocols/
 |   |-- scripts/
@@ -57,9 +71,28 @@ The strongest honest claim is:
 
 ## Reproducibility Notes
 
-Public checkpoint filenames use a compact sequence, while document titles and generated artifact names retain their original private checkpoint IDs for provenance. For this update, private checkpoint `4501` maps to public checkpoint `517`, and private checkpoint `5175` maps to public checkpoint `1191`.
+Public checkpoint filenames use a compact sequence, while document titles and
+generated artifact names retain their original private checkpoint IDs for
+provenance. The established offset is `3984`; this update maps private
+checkpoints `5176-5250` to public checkpoints `1192-1266`.
 
 The repository includes source scripts and compact residual/register artifacts, but not large third-party datasets, virtual environments, raw generated run folders, or the local `functional_rg` source cache. Local machine paths retained in historical artifacts are provenance records, not portable execution paths.
+
+GitHub can cap the visible entries in very large flat folders and pull-request
+file lists. The generated catalogue and SHA-256 publication inventory provide
+direct access and completeness checks without changing historical paths.
+
+### Windows Checkout
+
+The preserved legacy archive contains relative paths up to 232 characters.
+A clone into a long Windows parent path can therefore hit the older 260-
+character checkout limit even though every Git object was downloaded. Use a
+short destination such as `D:\MTS`, or enable Git's long-path handling for
+that clone:
+
+```powershell
+git -c core.longpaths=true clone https://github.com/Martin123132/Motion-TimeSpace-.git D:\MTS
+```
 
 ## Research Ethos
 
