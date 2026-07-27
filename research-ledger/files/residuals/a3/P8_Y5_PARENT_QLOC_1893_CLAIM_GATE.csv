@@ -1,0 +1,5 @@
+gate_id,condition,current_status,source_anchor,gate_pass,valid_for_claim
+CG1893_0_label_forgetting,source functor forgets species labels before coupling selection,FAIL_SOURCE_FUNCTOR_LABEL_FORGETTING_NOT_PARENT_DERIVED,P8_Y5_PARENT_QLOC_1893_SOURCE_FUNCTOR_LABEL_FORGETTING_ATTEMPT.csv:SFL1893_5_verdict,False,False
+CG1893_1_no_prefactors,no pre-action source-only species prefactor is legal,FAIL_PREACTION_WEIGHT_COUNTERMODEL_SURVIVES,P8_Y5_PARENT_QLOC_1893_LABEL_FORGETTING_CLAUSE_AUDIT.csv:LFA1893_2_no_prefactors,False,False
+CG1893_2_wep_kernel,"WEP kernel has parent coefficient, material tensor, tau/readout/source map, and branch guards",FAIL_WEP_KERNEL_V0_BLOCKED_NONCLAIM,P8_Y5_PARENT_QLOC_1893_DELTAW_WEP_KERNEL_V0_NONCLAIM.csv:WEPK1893_5_acceptance,False,False
+CG1893_3_verdict,source-coupling local GR/WEP branch can claim pass,CLAIM_BLOCKED,CG1893_0_label_forgetting through CG1893_2_wep_kernel,False,False

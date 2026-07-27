@@ -1,0 +1,5 @@
+gate_id,target,condition,transport_test,result,valid_for_claim
+QSG2277_0_q_definition,q=ln[(1-C_tt)(1+C_rr)],q=0 iff (1-C_tt)(1+C_rr)=1,Dq=-D C_tt/(1-C_tt)+D C_rr/(1+C_rr),SELECTION_REQUIRES_Dq=0_ON_Q0,False
+QSG2277_1_weight_form,carrier weights,C_tt=s_T W_T Omega_T^2; C_rr=s_R W_R K_R^2,insert W_T and W_R transport laws into Dq,INDEPENDENT_TRANSPORT_DOES_NOT_LOCK_WEIGHT_RATIO,False
+QSG2277_2_exchange_needed,local GR q-zero preservation,"R_W,T and R_W,R must obey a reciprocal exchange law making Dq=0 when q=0",S_q := -D C_tt/(1-C_tt)+D C_rr/(1+C_rr),MISSING_CARRIER_EXCHANGE_LAW,False
+QSG2277_3_residual_route,finite q_R,"if S_q != 0, local residual satisfies transport/stiffness balance such as L_q q_R = S_q","requires operator L_q, boundary conditions, and source projection",RESIDUAL_SOURCE_TEMPLATE_ONLY,False

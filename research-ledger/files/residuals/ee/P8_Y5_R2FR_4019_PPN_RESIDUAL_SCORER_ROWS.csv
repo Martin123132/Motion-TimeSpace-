@@ -1,0 +1,10 @@
+scorer_id,quantity,formula,pass_rule,role,score_ready,valid_for_claim,timestamp_utc
+PPS4019_0_master,Delta_PPN_abs_4019,|delta_gamma_R11|+|delta_gamma_readout|+|delta_gamma_frame|+|delta_gamma_source|+|delta_beta_source|+|delta_beta_R11|+|delta_beta_q_loc|+|delta_beta_boundary_domain|+|delta_beta_readout|+|alpha1|+|alpha2|+|alpha3|+|xi|+sum_i|zeta_i|+|Gdot/G|,every term zero or independently bounded,full local-GR scorer,False,False,2026-07-01T21:34:20+00:00
+PPS4019_1_delta_gamma_R11,delta_gamma_R11,Pi_gamma[DeltaE_R11^{(1)}],abs(delta_gamma_R11)<=2.3e-05 or theorem-zero,gamma scorer,False,False,2026-07-01T21:34:20+00:00
+PPS4019_2_delta_beta_R11,delta_beta_R11,Pi_beta[DeltaE_R11^{(2)}],abs(delta_beta_R11)<=7.8e-05 or theorem-zero,beta operator scorer,False,False,2026-07-01T21:34:20+00:00
+PPS4019_3_delta_beta_q_loc,delta_beta_q_loc,Pi_beta[q_loc_Khat^{(2)}],zero by projector-kernel theorem or bounded,q_loc beta scorer,False,False,2026-07-01T21:34:20+00:00
+PPS4019_4_delta_beta_source,delta_beta_source,B_source/A_source^2 - 1 + epsilon_SN,abs(delta_beta_source)<=7.8e-05 or B_source=A_source^2 theorem,source beta scorer,False,False,2026-07-01T21:34:20+00:00
+PPS4019_5_readout_frame,delta_readout_frame,gamma/beta readout + frame mismatch terms,same-readout theorem-zero or bounded,readout scorer,False,False,2026-07-01T21:34:20+00:00
+PPS4019_6_preferred_frame,alpha_i_xi,alpha1+alpha2+alpha3+xi from vector/domain/coframe/memory selectors,each component below its own lock or theorem-zero,preferred-frame scorer,False,False,2026-07-01T21:34:20+00:00
+PPS4019_7_conservation,zeta_i,non-Hilbert stress/nonconservation projection,zeta_i=0 or bounded with total stress closure,conservation scorer,False,False,2026-07-01T21:34:20+00:00
+PPS4019_8_Gdot,Gdot_over_G,D_t lnG in local branch,4017 K_G theorem-zero or Gdot bound,coupling drift scorer,False,False,2026-07-01T21:34:20+00:00

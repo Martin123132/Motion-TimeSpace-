@@ -1,0 +1,6 @@
+certificate_id,quantity,condition,result,status,missing_for_claim,valid_for_claim,generated_utc
+F1C1178_0_tracefree_definition,S_Q,S_Q := Q_flow - (1/3)Tr(Q_flow)I,Tr(S_Q)=0,ALGEBRAICALLY_DEFINED,parent-owned Q_flow domain/frame,False,2026-06-15T01:55:22.239059+00:00
+F1C1178_1_scalar_C_first_variation,F1_C_S,"C_local = C(log det Q, Tr Q, scalar domain data) at the local branch",delta C_local[S_Q] = 0 at first order,CONDITIONAL_ZERO,parent action term proving scalar-only C dependence,False,2026-06-15T01:55:22.239059+00:00
+F1C1178_2_metric_retention,S_Q retention,delta g_TF = Dg_Q[S_Q] with nonzero parent transfer coefficient K_S_to_metric,tracefree shear is retained in metric channel,MISSING_PARENT_TRANSFER,Dg_Q/K_S_to_metric source or derivation,False,2026-06-15T01:55:22.239059+00:00
+F1C1178_3_second_order_residual,Delta_C2,log det(I+A)=Tr(A)-1/2 Tr(A^2)+O(A^3),abs(Delta_C2) <= C_det2 ||S_Q||_D^2 + R3,BOUND_REQUIRED,"C_det2, ||S_Q||_D, and R3 source rows",False,2026-06-15T01:55:22.239059+00:00
+F1C1178_4_certificate_verdict,local extremum/amplitude law,F1_C_S=0 plus finite Delta_C2 bound plus metric retention,conditional local C extremum route is mathematically viable but not parent-signed,VIABLE_CONTRACT_NOT_CLAIM,"parent scalar C owner, metric owner, and numeric/source-backed amplitude bound",False,2026-06-15T01:55:22.239059+00:00

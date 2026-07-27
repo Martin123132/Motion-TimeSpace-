@@ -1,0 +1,16 @@
+check_id,check,status,details
+VAL1245_0_sources_exist,all cited local sources exist,PASS,8/8 sources exist
+VAL1245_1_needles_found,all cited local needles found,PASS,8/8 needles found
+VAL1245_2_policy_numbers,1244 policy feed numbers are loaded,PASS,N_sigma=1 sigma_gamma=2.3e-5 q_guardrail=4.6e-05
+VAL1245_3_missing_policy_absent,policy-fed cases no longer fail missing-policy gate,PASS,no 1245 runner_status is REFUSED_MISSING_STATISTICAL_POLICY
+VAL1245_4_missing_qR_refused,remaining finite MTS row refuses missing q_R,PASS,CASE1245_0_policy_fed_missing_qR -> REFUSED_MISSING_QR
+VAL1245_5_comparator_refused,comparator-only branch still cannot count as prediction,PASS,CASE1245_1_policy_fed_comparator_only -> REFUSED_COMPARATOR_ONLY
+VAL1245_6_hypothetical_nonclaim,hypothetical arithmetic remains nonclaim,PASS,synthetic pass/fail cases return SCHEMA_MATH_ONLY_NOT_EVIDENCE
+VAL1245_7_hunt_update,source-hunt ledger updates policy/GM while keeping q_R missing,PASS,GM/stat policy filled; parent zero and finite q_R targets remain missing
+VAL1245_8_qR_still_missing,q_R theorem/value remains the dominant blocker,PASS,MISSING_QR_VALUE_UNCHANGED and blocker delta STILL_BLOCKED
+VAL1245_9_claim_gates,claim gates remain nonclaim/blocked,PASS,claim_gate_rows=4
+VAL1245_10_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1245_11_next_target_1246,next target attacks Q_R theorem/value bottleneck,PASS,1246-Y5-R10-parent-QR-zero-theorem-or-finite-residual-source-hunt.md
+VAL1245_12_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1245_SOURCE_REGISTER.csv:8; P8_Y5_R10_1245_POLICY_FED_CASES.csv:4; P8_Y5_R10_1245_POLICY_FED_RESULTS.csv:4; P8_Y5_R10_1245_BLOCKER_DELTA.csv:4; P8_Y5_R10_1245_SOURCE_HUNT_UPDATE.csv:4; P8_Y5_R10_1245_DECISION_LEDGER.csv:3; P8_Y5_R10_1245_CLAIM_GATES.csv:4; P8_Y5_R10_1245_NEXT_TARGET.csv:1
+VAL1245_13_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_write_count_since_run_start=0
+VAL1245_14_overall,overall 1245 validation,PASS,1245 proves policy/GM plumbing is no longer the live runner blocker; q_R theorem/value remains missing and no claim is promoted

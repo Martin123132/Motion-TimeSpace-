@@ -1,0 +1,4 @@
+profile_id,quantity,template,required_inputs,use,status,score_ready,valid_for_claim
+QRP2272_0_ratio,q_R,q_R(r)=j_R(r)/M_R^2(r),parent Hessian M_R^2(r); parent source j_R(r); local projection convention; units; source paths,minimal finite-stiffness backstop if exact q=0 protection fails,TEMPLATE_ONLY_PARENT_INPUTS_MISSING,False,False
+QRP2272_1_residual_vector,local residual vector,"R_loc=[q_R, partial_r q_R, partial_r^2 q_R, DeltaPhi_induced(q_R), gamma_PPN-1, beta_PPN-1]",map from q_R to metric potentials; PPN readout; arena scales,future PPN/clock/orbital scoring once q_R is sourced,READOUT_TEMPLATE_ONLY,False,False
+QRP2272_2_safe_model_family,nonclaim profile family,"q_R(r)=q0/(1+(r/ell_q)^p) or q0 exp[-(r/ell_q)^p], with p>0 and all parameters sourced before scoring","q0, ell_q, p from parent coefficients or explicit empirical fit protocol",numerical smoke tests only; cannot replace derivation,SMOKE_TEMPLATE_ONLY,False,False

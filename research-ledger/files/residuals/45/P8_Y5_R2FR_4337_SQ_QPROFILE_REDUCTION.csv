@@ -1,0 +1,5 @@
+sq_id,source_kernel,formula,reduction,status,valid_for_claim
+SQ4337_0_profile_kernel_definition,S_q^Gamma[T_open],q_loc^nu=P_loc[nabla^nu Gamma_eff-nabla_mu K_hat^{mu nu}],kernel acts only on the Gamma/Khat/local-memory open-tail channel after the coupling split,FORMULA_SOURCE_BACKED_PROFILE_INPUTS_OPEN,False
+SQ4337_1_trace_memory_part,S_Gamma,Gamma_eff=L_cg^-2 F(m); abs(nabla Gamma_eff)<=L_cg^-2[abs(F1)M_tr/ell_tr+0.5abs(F2)M_tr^2/ell_tr],linear term is fatal unless F1=0 or |c_Gamma| is very small,BOUND_SOURCE_BACKED_PARENT_DOUBLE_ZERO_OPEN,False
+SQ4337_2_Khat_part,S_Khat,abs(nabla_mu K_hat^{mu nu})<=C_K abs(b_mem)M_tr^2/ell_tr^3,survives as quadratic gradient-stress source unless fixed-point/profile bounds suppress it,BOUND_SOURCE_BACKED_PROFILE_INPUTS_OPEN,False
+SQ4337_3_PiPPN_cGamma_reduction,Pi_PPN^Gamma,Pi_PPN^Gamma=P_PPN G_EH^bc kappa_eff c_Gamma P_E[(K_L G_Box^bc S_q^Gamma)+S_perp],"4336 open-tail matrix now depends on c_Gamma times profile coefficients, not an arbitrary C_gK",OPERATOR_REDUCED_NUMERIC_PROFILE_ROWS_OPEN,False

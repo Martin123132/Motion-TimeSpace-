@@ -1,0 +1,13 @@
+check_id,check,status,details
+VAL1272_0_sources_exist,all cited local sources exist,PASS,12/12 sources exist
+VAL1272_1_needles_found,all cited local needles found,PASS,12/12 needles found
+VAL1272_2_derivation_not_claimed,radial-cell derivation result remains nonclaim,PASS,RCD1272_7_verdict=PARENT_NECESSITY_NOT_DERIVED
+VAL1272_3_cell_principle_matrix,cell-principle matrix separates failing and conditional routes,PASS,configuration-cell normalization works only if parent-owned; canonical Liouville rejected
+VAL1272_4_parent_contract,parent necessity contract is explicit and not closed,PASS,parent_contract_rows=8
+VAL1272_5_finite_fallback_locked,finite branch has no source-backed accepted rows,PASS,docs_rows=11; raw_rows=0; accepted_rows=0; accepted_ready=0
+VAL1272_6_claim_gates_safe,claim gates remain blocked except contract-written nonclaim gate,PASS,claim_gate_rows=6
+VAL1272_7_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1272_8_next_target_1273,next target routes to parent H_core/radial-cell owner,PASS,1273-Y5-R10-RAB-parent-Hcore-radial-cell-owner-or-finite-residual-source-acquisition.md
+VAL1272_9_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1272_SOURCE_REGISTER.csv:12; P8_Y5_R10_1272_RADIAL_CELL_VARIATIONAL_DERIVATION_ATTEMPT.csv:8; P8_Y5_R10_1272_CELL_PRINCIPLE_TEST_MATRIX.csv:7; P8_Y5_R10_1272_PARENT_NECESSITY_CONTRACT.csv:8; P8_Y5_R10_1272_FINITE_SOURCE_FALLBACK_STATUS.csv:4; P8_Y5_R10_1272_ZR_VALIDATOR_RESCAN.csv:11; P8_Y5_R10_1272_CLAIM_GATES.csv:6; P8_Y5_R10_1272_DECISION_LEDGER.csv:4; P8_Y5_R10_1272_NEXT_TARGET.csv:1
+VAL1272_10_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1272_11_overall,overall 1272 validation,PASS,"1272 tries the radial-cell variational derivation, rejects generic Liouville as insufficient, keeps J_q=1 as a parent-owned contract rather than a proof, and routes to H_core/radial-cell owner next"

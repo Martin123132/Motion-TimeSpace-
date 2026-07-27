@@ -1,0 +1,12 @@
+check_id,check,status,details
+VAL1274_0_sources_exist,all cited local sources exist,PASS,10/10 sources exist
+VAL1274_1_needles_found,all cited local needles found,PASS,10/10 needles found
+VAL1274_2_unimodular_not_derived,unimodular radial-cell route is not promoted as derived,PASS,URO1274_5_verdict=CLOSURE_ONLY_NOT_DERIVED
+VAL1274_3_gr_route_selected,GR-style equation-difference route is selected next,PASS,GED1274_4_best_next_test selected; RC1274_2 selected=True
+VAL1274_4_finite_fallback_locked,finite branch has no source-backed accepted rows,PASS,docs_rows=11; raw_rows=0; accepted_rows=0; accepted_ready=0
+VAL1274_5_claim_gates_safe,claim gates remain blocked/open-next-target except route-selection nonclaim gate,PASS,claim_gate_rows=6
+VAL1274_6_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1274_7_next_target_1275,next target routes to GR-style field-equation difference,PASS,1275-Y5-R10-RAB-GR-style-radial-field-equation-difference-or-local-closure-baseline.md
+VAL1274_8_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1274_SOURCE_REGISTER.csv:10; P8_Y5_R10_1274_UNIMODULAR_CELL_ORIGIN_AUDIT.csv:7; P8_Y5_R10_1274_GR_STYLE_EQUATION_DIFFERENCE_ROUTE.csv:5; P8_Y5_R10_1274_ROUTE_COMPARISON.csv:4; P8_Y5_R10_1274_FINITE_RESIDUAL_DECISION.csv:2; P8_Y5_R10_1274_ZR_VALIDATOR_RESCAN.csv:11; P8_Y5_R10_1274_CLAIM_GATES.csv:6; P8_Y5_R10_1274_DECISION_LEDGER.csv:3; P8_Y5_R10_1274_NEXT_TARGET.csv:1
+VAL1274_9_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1274_10_overall,overall 1274 validation,PASS,"1274 rejects unimodular radial-cell imposition as a derived theorem, keeps finite rows locked, and selects the GR-style time-radial equation-difference route as the next best derivation target"

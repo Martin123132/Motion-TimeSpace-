@@ -1,0 +1,94 @@
+# 3808 - Visible Coefficient Type System From Representation/Superselection Or Finite Bounds
+
+## Status
+
+`PASS_NONCLAIM_OBSREP_TYPE_SYSTEM_THEOREM_DERIVED_QSTAR_PARTIAL_ONLY_FINITE_ROWS_RETAINED`.
+
+3808 makes the next important distinction: local-GR safety does not require deriving the numerical value of every constant today. It requires deriving that visible coefficients are universal, parent-owned, and vertically silent under local hidden/X_Q variations.
+
+The exact theorem is: if visible coefficient slots are `ObsRep` objects and `X_Q` only enters through the declared `B_Q -> A_Q,F_Q` construction, then `c_J=cbar_J(ObsRep)` and `Lie_v c_J=0` for admissible local vertical variations. This is the clean route to `CSA3806`.
+
+Current status is still nonclaim. `q_star` has a real conditional superselection route, but `Z_EM/alpha`, matter masses/binding, source weights, kappa, clock readout, and boundary/domain coefficients remain unsigned or finite-bound branches.
+
+## Human Read
+
+This is the GR/Newton-constant style move: a constant can be empirical without being post-hoc garbage, provided the theory owns why it is universal and not secretly a local hidden-field function. For MTS the next fight is not 'derive the number 1/137 immediately'; it is 'prove alpha's coefficient slot cannot be f(X_Q)'.
+
+## Source Register
+- `SRC3808_0_3807_type_split`: source_path: D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\3807-Y5-R2FR-CSA3806-parent-signature-or-effective-readout-closure-audit.md; exists: true; needle: PST3807_1_sufficient_type_split; needle_found: true; role: 3807 sufficient ObsRep type theorem; valid_for_claim: false
+- `SRC3808_1_3806_action_clause`: source_path: D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\3806-Y5-R2FR-qX-coefficient-subquotient-action-clause-or-balpha-tau-normalization.md; exists: true; needle: CSA3806_1_action_clause; needle_found: true; role: 3806 action grammar; valid_for_claim: false
+- `SRC3808_2_3790_qstar`: source_path: D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\3790-Y5-R2FR-charge-unit-superselection-or-betaq-bound.md; exists: true; needle: QST3790_1_compact_lattice_route; needle_found: true; role: charge-unit superselection theorem; valid_for_claim: false
+- `SRC3808_3_3791_ZEM`: source_path: D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\3791-Y5-R2FR-ZEM-fixed-normalization-or-betaZ-bound.md; exists: true; needle: ZFT3791_1_conditional_zero; needle_found: true; role: Z_EM fixed-normalization theorem; valid_for_claim: false
+- `SRC3808_4_1097_constant`: source_path: D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\1097-Y5-R10-constant-sector-universality-theorem-or-finite-coefficient-source-prior.md; exists: true; needle: CSU1097_1_descent_superselection; needle_found: true; role: constant-sector descent/superselection theorem; valid_for_claim: false
+- `SRC3808_5_1098_owner`: source_path: D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\1098-Y5-R10-ordinary-constant-owner-action-signature-or-source-backed-coefficient-prior.md; exists: true; needle: OCS1098_0_parent_domain; needle_found: true; role: ordinary-constant owner action signature; valid_for_claim: false
+- `SRC3808_6_1050_product`: source_path: D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\1050-Y5-R10-visible-hidden-product-functor-derivation-or-prior-width-source-pack.md; exists: true; needle: PFT1050_1_visible_action_pullback; needle_found: true; role: visible action pullback theorem; valid_for_claim: false
+- `SRC3808_7_1058_exhaustion`: source_path: D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\1058-Y5-R10-visible-operator-domain-exhaustion-or-alpha-counterterm-prior.md; exists: true; needle: VOE1058_0_target; needle_found: true; role: visible operator-domain exhaustion target; valid_for_claim: false
+- `SRC3808_8_spine`: source_path: D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\LOCAL_GR_COUPLING_SPINE_CURRENT_STATE.md; exists: true; needle: 3808-Y5-R2FR-visible-coefficient-type-system-from-representation-superselection-or-finite-bounds.md; needle_found: true; role: live spine target; valid_for_claim: false
+
+## ObsRep Type-System Theorem
+- `ORT3808_0_domain` `ObsRep coefficient domain`: mathematical_statement: Define ObsRep_U=(q_obs|_U,theta_rep,rho_vis,q_star,kappa_star,C_P,N_Q,boundary_class,source_domain_class) with theta_rep, rho_vis, q_star, kappa_star, C_P, and N_Q either q_obs-owned or superselected before local arena fitting.; status: DEFINITION_SHARP; consequence: This separates universal visible coefficient data from local X_Q geometry.; missing_for_claim: strict current corpus has not signed the full ObsRep object; valid_for_claim: false
+- `ORT3808_1_constant_value_vs_variation` `constant value need not be numerically derived to be locally safe`: mathematical_statement: For a visible coefficient c_J, local-GR coupling tests require Lie_v c_J=0 for admissible local vertical variations v, not a derivation of the numerical value of c_J. A parent universal parameter or superselection label is acceptable only if it is fixed before source/readout selection and has no X_Q dependence.; status: EXACT_DISTINCTION; consequence: This is the GR/Newton-style constant route: the number can be empirical, but its universality and vertical silence must be derived.; missing_for_claim: does not by itself prove any MTS coefficient is universal; valid_for_claim: false
+- `ORT3808_2_chain_rule` `ObsRep chain-rule zero`: mathematical_statement: If c_J(Phi)=cbar_J(ObsRep_U(Phi)) and D ObsRep_U[v]=0 for v in ker(Dq_obs) at fixed representation/superselection labels, then Lie_v c_J = D cbar_J[D ObsRep_U[v]]=0.; status: EXACT_CONDITIONAL_THEOREM; consequence: This derives CSA3806 coefficient silence without deriving each coefficient's numerical value.; missing_for_claim: requires parent-signed ObsRep vertical silence and no hidden-visible coefficient morphisms; valid_for_claim: false
+- `ORT3808_3_XQ_exception` `X_Q may build fields but not coefficients`: mathematical_statement: The allowed X_Q path is X_Q -> Y_Q=Pi4(X_Q) -> B_Q[Y_Q] -> A_Q,F_Q. This path changes the EM field object and its Hilbert stress; it does not create c_J(X_Q) multiplying independent visible operators.; status: EXACT_CONDITIONAL_ROUTE_SPLIT; consequence: Keeps the MTS EM construction alive while forbidding hidden coefficient tuning.; missing_for_claim: requires same-current stress, unique Maxwell normalization, and readout closure; valid_for_claim: false
+- `ORT3808_4_partial_promotion` `charge-unit q_star is the closest current partial win`: mathematical_statement: 3790 gives an exact conditional theorem: if q_star is a compact U(1) charge-lattice/superselection datum, beta_q,A=0 and d beta_q,A=0.; status: PARTIAL_CONDITIONAL_WIN_UNSIGNED; consequence: The representation/superselection strategy is mathematically viable for charge units.; missing_for_claim: current parent U(1) bundle/generator/lattice owner is still unsigned; valid_for_claim: false
+- `ORT3808_5_ZEM_guard` `q_star does not derive Z_EM or alpha`: mathematical_statement: Even if q_star is superselected, Z_EM and alpha require fixed C_P/N_Q or generator norm, no independent F^2 slot, same-current normalization, and readout closure.; status: OVERCLAIM_GUARD; consequence: Do not use q_star to claim alpha, clock, WEP, R10, or local-GR closure.; missing_for_claim: Z_EM/alpha remains finite or theorem-zero pending 3809; valid_for_claim: false
+- `ORT3808_6_verdict` `CSA3806 from representation/superselection`: mathematical_statement: ObsRep vertical silence plus B_Q-only X_Q bridge plus effective/readout stability implies CSA3806. The strict current corpus supports the theorem shape but not the full signature.; status: PASS_CONDITIONAL_FAIL_STRICT_CURRENT; consequence: The route is not dead; it is now a type-system/signature problem rather than a vague coupling problem.; missing_for_claim: MISSING_OBSREP_SIGNATURE;MISSING_ZEM_OWNER;MISSING_MATTER_SPECTRUM_OWNER;MISSING_SOURCE_WEIGHT_OWNER;MISSING_READOUT_CLOSURE; valid_for_claim: false
+
+## Visible Coefficient Classification
+- `VCC3808_0_qstar` `q_star`: role: charge unit / compact U(1) lattice scale; proposed_type_owner: representation/superselection label if parent U(1) lattice is signed; current_status: CONDITIONAL_ZERO_ROUTE_AVAILABLE; zero_condition: beta_q,A=0 if signed; missing_for_claim: parent U(1) bundle/generator/lattice owner; valid_for_claim: false
+- `VCC3808_1_ZEM` `Z_EM or g_EM^{-2}`: role: Maxwell kinetic normalization; proposed_type_owner: not fixed by charge lattice alone; needs parent inner product/generator norm and no extra F2; current_status: UNSIGNED_RETAINS_FINITE_BRANCH; zero_condition: beta_Z,A=0 only after unique Maxwell owner and readout closure; missing_for_claim: fixed C_P/N_Q; no lambda_A; no f(X_Q)F2; readout/current owner; valid_for_claim: false
+- `VCC3808_2_alpha` `alpha_EM readout`: role: dimensionless spectroscopy/readout coefficient; proposed_type_owner: observed readout, Hodge/coframe, hbar*c, current normalization; current_status: UNSIGNED_RETAINS_PRODUCT_BRANCH; zero_condition: b_alpha=0 only after Z_EM plus readout descent; missing_for_claim: tau_clock and readout closure; no radiative alpha counterterm; valid_for_claim: false
+- `VCC3808_3_masses` `m_A,y_A,Lambda_QCD,binding fractions`: role: matter spectrum and composition coefficients; proposed_type_owner: fixed representation/matter-sector data if parent matter functor is signed; current_status: UNSIGNED_RETAINS_FINITE_BRANCH; zero_condition: b_mu,b_mA,b_nuc=0 only under matter spectrum owner; missing_for_claim: no m_A(X_Q), no y_A(X_Q), no binding-response X_Q slots; valid_for_claim: false
+- `VCC3808_4_source_weights` `w_A,kappa_A,source normalization`: role: source and WEP/Newton coupling weights; proposed_type_owner: single Hilbert/coframe source owner if source functor forgets species labels before coupling selection; current_status: UNSIGNED_RETAINS_FINITE_BRANCH; zero_condition: source-label leakage zero only under same-source owner; missing_for_claim: source-label forgetting and no source-only material multiplier; valid_for_claim: false
+- `VCC3808_5_kappa` `kappa_star or G_eff coefficient`: role: gravity/EH coupling coefficient; proposed_type_owner: q_obs-owned or global/superselected coupling; current_status: UNSIGNED_RETAINS_GDOT_PPN_BRANCH; zero_condition: Lie_v kappa=0 if global/superselected and calibration co-descends; missing_for_claim: absolute G value may be empirical, but local variation/source normalization must be controlled; valid_for_claim: false
+- `VCC3808_6_clocks` `nu_i and clock/readout markers`: role: clock transition/readout coefficients; proposed_type_owner: readout functor from q_obs plus owned constants; current_status: UNSIGNED_RETAINS_CLOCK_BRANCH; zero_condition: clock coefficient silence only after readout naturality; missing_for_claim: no nu_i(X_Q), no clock-frame hidden marker, tau_clock normalization; valid_for_claim: false
+- `VCC3808_7_boundary` `D_boundary and source-domain weights`: role: boundary/support/domain coefficients; proposed_type_owner: fixed boundary_class/source_domain_class in ObsRep; current_status: UNSIGNED_RETAINS_BOUNDARY_BRANCH; zero_condition: boundary coefficient silence only if support/domain classes are fixed before readout; missing_for_claim: no X_Q-dependent source tubes or boundary weights; valid_for_claim: false
+
+## Superselection Promotion Audit
+- `SPA3808_0_qstar` `q_star charge unit`: evidence: 3790 exact conditional superselection theorem; status: PARTIAL_TYPE_ROUTE_AVAILABLE; action: do not promote strict current; parent U(1) owner unsigned; valid_for_claim: false
+- `SPA3808_1_ZEM` `Z_EM/Maxwell normalization`: evidence: 3791 exact conditional theorem but no independent F2 ban missing; status: BLOCKED; action: next sharp target: fixed parent inner product/generator norm plus no extra F2; valid_for_claim: false
+- `SPA3808_2_constants` `ordinary constants and material coefficients`: evidence: 1097/1098 exact chain-rule theorem but owner signature not derived; status: BLOCKED; action: need parent matter spectrum and source-weight exclusion; valid_for_claim: false
+- `SPA3808_3_readout` `clock/material/source readout`: evidence: 1050/1058 keep radiative/readout closure unsigned; status: BLOCKED; action: need readout-after-variation/naturality theorem; valid_for_claim: false
+- `SPA3808_4_strict_verdict` `strict current CSA3806`: evidence: the theorem shape is exact but full type signature is not signed; status: NONCLAIM; action: retain finite bound rows for all unsigned components; valid_for_claim: false
+
+## Finite Bound Requirements
+- `FBR3808_0_beta_ZA` `beta_Z,A or lambda_A`: role: alpha/EM kinetic leakage; required_input: MISSING_ZEM_OWNER_OR_ALPHA_COUNTERTERM_BOUND; arenas: clock;WEP;R10;EM spectra;PPN; priority: highest; valid_for_claim: false
+- `FBR3808_1_b_alpha` `b_alpha*tau_clock_time product`: role: clock alpha readout leakage; required_input: PRODUCT_ONLY_2.1e-18_PER_YEAR_NO_STANDALONE_BALPHA; arenas: clock;WEP;R10; priority: highest; valid_for_claim: false
+- `FBR3808_2_mass_binding` `b_mu,b_mA,b_nuc,b_binding`: role: matter spectrum/composition leakage; required_input: MISSING_MATTER_SPECTRUM_OWNER_OR_SOURCE_BACKED_COEFFICIENTS; arenas: WEP;clock;R10;composition; priority: high; valid_for_claim: false
+- `FBR3808_3_source_weight` `qbar_source_label,w_A,kappa_A`: role: source normalization/WEP/Newton leakage; required_input: MISSING_SOURCE_LABEL_FORGETTING_OR_RELATIVE_SOURCE_WEIGHT_BOUND; arenas: WEP;Newton_GM;R10;PPN; priority: high; valid_for_claim: false
+- `FBR3808_4_kappa` `beta_kappa,A`: role: gravitational coupling drift; required_input: MISSING_KAPPA_SUPERSELECTION_OR_GDOT_PPN_PROJECTION; arenas: Gdot;PPN;orbital; priority: medium; valid_for_claim: false
+- `FBR3808_5_clock_readout` `b_clock_i`: role: direct clock/readout residual; required_input: MISSING_READOUT_NATURALITY_OR_CLOCK_MODEL; arenas: clock;redshift;alpha spectra; priority: medium; valid_for_claim: false
+- `FBR3808_6_boundary` `epsilon_boundary_XQ`: role: source-domain/boundary leakage; required_input: MISSING_BOUNDARY_CLASS_OWNER_OR_FLUX_BOUND; arenas: R10;orbital;Newton_GM;PPN; priority: medium; valid_for_claim: false
+
+## Claim Gates
+- `CG3808_0_sources`: pass: true; claim_allowed: false; details: all source needles found; valid_for_claim: false
+- `CG3808_1_type_theorem`: pass: true; claim_allowed: false; details: ObsRep chain-rule theorem emitted; valid_for_claim: false
+- `CG3808_2_constant_distinction`: pass: true; claim_allowed: false; details: constant-value versus vertical-silence distinction emitted; valid_for_claim: false
+- `CG3808_3_qstar_partial`: pass: true; claim_allowed: false; details: q_star has exact conditional superselection route but remains unsigned; valid_for_claim: false
+- `CG3808_4_ZEM_alpha_closed`: pass: false; claim_allowed: false; details: Z_EM/alpha owner remains unsigned; valid_for_claim: false
+- `CG3808_5_matter_source_closed`: pass: false; claim_allowed: false; details: matter/source/clock owners remain unsigned; valid_for_claim: false
+- `CG3808_6_effective_readout_closed`: pass: false; claim_allowed: false; details: effective/readout closure remains unsigned; valid_for_claim: false
+- `CG3808_7_claims_closed`: pass: true; claim_allowed: false; details: no local-GR/EM/WEP/R10/clock claim allowed; valid_for_claim: false
+
+## Decision Rows
+- `DEC3808_0_real_progress`: decision: The coupling problem is now a type/signature problem.; because: 3808 proves exact vertical silence if visible coefficients are ObsRep/superselection data and X_Q only constructs B_Q.; next_action: Stop treating every missing number as fatal; require universality/vertical-silence first, numerical values second.; valid_for_claim: false
+- `DEC3808_1_partial_win`: decision: q_star is the closest legitimate superselection win.; because: 3790 already proves the conditional compact charge-lattice theorem.; next_action: Try to parent-sign U(1) lattice/generator ownership, but do not promote alpha from it.; valid_for_claim: false
+- `DEC3808_2_next`: decision: Attack Maxwell normalization next.; because: Z_EM/alpha is the first high-leverage coefficient after q_star and controls clock/WEP/R10/EM leakage.; next_action: Derive fixed parent inner product/generator norm plus no extra F2, or retain finite beta_Z/lambda_A rows.; valid_for_claim: false
+
+## Next Target
+- `3809-Y5-R2FR-Maxwell-normalization-from-parent-inner-product-or-alpha-finite-branch.md`: target_script: scripts/Y5_R2FR_3809_Maxwell_normalization_from_parent_inner_product_or_alpha_finite_branch.py; objective: Try to derive Z_EM/alpha vertical silence from a parent fixed inner product/generator norm, compact charge lattice, unique Maxwell subblock, no independent F2 operator, and readout/current closure; if it fails, keep beta_Z/lambda_A/b_alpha finite rows explicit.; avoid: do not claim q_star derives alpha; do not use unit rescaling to hide dimensionless alpha drift; do not edit formalization-workbench; valid_for_claim: false
+
+## Validation
+- `sources_exist` `PASS`: detail: every cited source path exists
+- `needles_found` `PASS`: detail: every cited source needle was found
+- `csv_outputs_parse` `PASS`: detail: all generated CSV outputs exist and parse
+- `doc_written` `PASS`: detail: 3808 markdown document written
+- `obsrep_theorem_present` `PASS`: detail: ObsRep chain-rule theorem emitted
+- `constant_distinction_present` `PASS`: detail: constant-value versus vertical-silence distinction emitted
+- `qstar_partial_only` `PASS`: detail: q_star partial conditional route recorded
+- `ZEM_not_promoted` `PASS`: detail: Z_EM remains unsigned
+- `finite_rows_retained` `PASS`: detail: finite bound requirement rows retained
+- `claims_closed` `PASS`: detail: no claim gate allows a claim
+- `formalization_clean` `PASS`: detail: no 3808 files written under formalization-workbench
+- `pycache_removed` `PASS`: detail: scripts __pycache__ removed
+- `bad_chars_clean` `PASS`: detail: new doc/script contain no mojibake replacement characters

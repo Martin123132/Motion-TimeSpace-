@@ -1,0 +1,6 @@
+gate_id,requirement,passed,evidence,valid_for_claim
+CG3471_0_bme_zero_theorem,"b_me=0 must be parent signed, not only conditional on visible q-basic ownership",False,NO_THEOREM_ZERO_USE_SOURCED_MATERIAL_ROW,False
+CG3471_1_dd_qme_formula,Damour-Donoghue Q_m_e formula must be found in local source,True,Q_m_e = 5.500000e-04 * Z/A,False
+CG3471_2_numeric_patch_row,b_me row must have positive numeric sensitivity and product bound with no missing markers,True,Delta_Q_m_e_abs=3.137218797625e-05,False
+CG3471_3_full_wep_vector,No missing live WEP components and no known absolute-envelope excess,False,FAIL_BLOCKED_MISSING_LIVE_COMPONENTS_AND_KNOWN_ABS_SUM_EXCEEDS_BOUND; contribution=8.400000000000e-15; blockers=b_bind:MISSING_EXACT_BINDING_TENSOR;MISSING_SEPARATE_D_BIND_EFF_BOUND;b_readout:MISSING_READOUT_SENSITIVITY;MISSING_D_READOUT_EFF_BOUND;direct_shadow_projector:MISSING_DIRECT_SHADOW_PROJECTOR_BOUND,False
+CG3471_4_no_public_claim,Patch remains internal and nonclaim until parent coefficients and all live rows are signed,True,all 3471 rows valid_for_claim=false,False

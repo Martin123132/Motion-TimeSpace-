@@ -1,0 +1,6 @@
+pack_id,required_input,minimum_claim_grade_form,current_status,nonclaim_hint,valid_for_claim,claim_allowed
+PACK1425_0_C_parent,C_parent coefficient/operator map,"parent-derived coefficient vector or source-backed finite priors with units, sign, branch, and uncertainty",MISSING_PARENT_COEFFICIENT,electron-only unit-kernel pressure scale exists but is not a coefficient source,False,False
+PACK1425_1_electron_prefactor_pressure,epsilon_e_or_delta_w_e,same-branch WEP/readout/source coefficient; not DD import and not unit-kernel assumption,PROXY_BOUND_ONLY_abs_epsilon_less_than_8.948213306283e-11,"useful scale for future finite branch, not a WEP pass",False,False
+PACK1425_2_R_source,R_source^Earth,source worldtube/composition/profile or signed theorem that source leg is common mode,MISSING_SOURCE_VECTOR,must be in same basis as C_parent and material vector,False,False
+PACK1425_3_R_material,R_TA6V - R_PtRh10,"full material response tensor, not isolated component numbers",PARTIAL_COMPONENT_ROWS_ONLY,1424 component rows can seed schema tests only,False,False
+PACK1425_4_K_readout,K_CMSM,official CMSM arrays/masks/orbit/attitude or validated reconstruction,MISSING_OFFICIAL_EXPORT_SURROGATE_ONLY,data-side input cannot replace parent coefficient map,False,False

@@ -1,0 +1,7 @@
+criterion_id,criterion,result,claim_impact
+E563_0_real_source_anchor_started,Real Eot-Wash source hierarchy is recorded with DOI/URL/year/provenance.,pass,source plumbing improved; no R10 claim
+E563_1_full_curve_missing,Full alpha(lambda) curve must be digitized or table-sourced before claim scoring.,blocked,anchor-only rows are not enough for R10/local-GR pass
+E563_2_mts_parent_coefficients_missing,"MTS alpha rows require Z_X, M_X^2, numerator coefficients, and source-backed formula paths.",blocked,symbolic smoke rows remain non-claim
+E563_3_live_runner_blocks,Existing comparator must keep live placeholder files blocked.,pass,guardrail intact
+E563_4_smoke_runner_blocks,Candidate/smoke files must validate failure modes and still block claims.,pass,guardrail intact
+E563_5_nonclaim_interpolation_smoke,Positive numeric anchors can be log-interpolated only as a non-claim plumbing dry check.,pass,interpolation plumbing checked without promoting anchors

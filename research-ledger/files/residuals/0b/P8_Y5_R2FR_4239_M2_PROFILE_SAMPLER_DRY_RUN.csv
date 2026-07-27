@@ -1,0 +1,9 @@
+timestamp_utc,branch_id,checkpoint_id,sampler_id,quantity,kind,role,status,claim_allowed,valid_for_claim
+2026-07-03T09:12:30+00:00,MTS_R2FR_Y5_PARENT_SOURCE_ORTHOGONALITY_4239,4239,MS4239_0_Hq,"H_q^A(x,t)",q-basic input,available only after Pi_kerDq is defined,MISSING_PROJECTOR,False,False
+2026-07-03T09:12:30+00:00,MTS_R2FR_Y5_PARENT_SOURCE_ORTHOGONALITY_4239,4239,MS4239_1_Hperp,"H_perp^A(x,t)",non-q defect input,needed for residual A_src,MISSING_DEFECT_PROFILE,False,False
+2026-07-03T09:12:30+00:00,MTS_R2FR_Y5_PARENT_SOURCE_ORTHOGONALITY_4239,4239,MS4239_2_HAB,"H_AB(x,t)",shape Hessian,needed for M_2,MISSING_PARENT_SHAPE,False,False
+2026-07-03T09:12:30+00:00,MTS_R2FR_Y5_PARENT_SOURCE_ORTHOGONALITY_4239,4239,MS4239_3_M2,M_2=1/2 H_AB H_L^A H_L^B,derived shape profile,computed after H/HAB inputs,DRY_RUN_ONLY,False,False
+2026-07-03T09:12:30+00:00,MTS_R2FR_Y5_PARENT_SOURCE_ORTHOGONALITY_4239,4239,MS4239_4_source,SAH_perp=S_A H_perp^A,derived source residual,computed after S_A and Hperp,MISSING_SOURCE_JACOBIAN,False,False
+2026-07-03T09:12:30+00:00,MTS_R2FR_Y5_PARENT_SOURCE_ORTHOGONALITY_4239,4239,MS4239_5_lap,Delta_h M_2,derived Laplacian residual,computed from M2 and local geometry,DRY_RUN_ONLY,False,False
+2026-07-03T09:12:30+00:00,MTS_R2FR_Y5_PARENT_SOURCE_ORTHOGONALITY_4239,4239,MS4239_6_drift,D_t M_2,derived drift residual,computed from time/profile data,DRY_RUN_ONLY,False,False
+2026-07-03T09:12:30+00:00,MTS_R2FR_Y5_PARENT_SOURCE_ORTHOGONALITY_4239,4239,MS4239_7_budget,|SAH_perp|+|D_m Delta_h M_2|+|D_t M_2|,non-cancelled local budget,compare to 4236 Gdot gate,BLOCKED_UNTIL_INPUTS,False,False

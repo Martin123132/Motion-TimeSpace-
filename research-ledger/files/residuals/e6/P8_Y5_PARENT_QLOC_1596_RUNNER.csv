@@ -1,0 +1,5 @@
+same_parent_branch_id,runner_id,acceptance_rule,input_state,runner_result,effect,claim_allowed
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,RUN1596_0_product_anchor,accept 1595 MICROSCOPE product bound as source-backed bound input,abs(Delta_w_TiPt*tau_WEP) <= 2.8e-15,ACCEPT_PRODUCT_BOUND_ONLY,kept as private nonclaim bound anchor,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,RUN1596_1_delta_w_score,numeric Delta_w bound requires tau_WEP or tau_min,tau_WEP not evaluated; no tau_min,REJECT_NUMERIC_DELTA_W_SCORE,no WEP/local-GR score produced,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,RUN1596_2_action_measure_zero,Delta_w=0 requires parent-signed action-measure owner,last gate not closed,REJECT_ZERO_THEOREM_CLAIM,finite source-weight route remains open,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,RUN1596_3_local_gr,local GR requires zero theorem or all finite residuals bounded below test thresholds,tau source projection incomplete,BLOCK_LOCAL_GR_CLAIM,continue derivation/source acquisition,False

@@ -1,0 +1,5 @@
+lemma_id,premise,derivation,C_R_payoff,status,valid_for_claim
+PLEM3285_0_public_flux_formula,H=Z_Q *_{g_pub}F and T_EM is varied from the same public EM action,T_EM^{mu nu}=Z_Q(F^{mu alpha}F^nu_alpha-1/4 g_pub^{mu nu}F^2); S_EM^a=-h^a_mu T_EM^{mu nu}u_nu,"Poynting readout factor is q-basic if Z_Q,g_pub,u,h are q-basic",EXACT_CONDITIONAL,false
+PLEM3285_1_vertical_derivative,L_v Z_Q=L_v g_pub=L_v u=L_v h=0,L_v S_EM^a=0 by Leibniz rule because every public factor is vertical-constant,C_S=L_v ln R_Poynting_flux=0,EXACT_CONDITIONAL,false
+PLEM3285_2_constitutive_medium_escape,chi has non-q-basic hidden/domain dependence,L_v chi != 0 can create Hodge/impedance/Poynting readout drift even if ordinary F is public,finite C_H/C_S slope row required,RETAINED_RESIDUAL_ROUTE,false
+PLEM3285_3_no_double_count,same EM flux is claimed as both T_EM and background E_res,energy flux is counted twice in the local source equation,route forbidden; must choose public EM stress or separate named residual,FORBIDDEN,false

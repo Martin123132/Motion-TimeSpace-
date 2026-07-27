@@ -1,0 +1,16 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1216_0_sources_exist,all cited local sources exist,PASS,12/12 sources exist,False,False
+VAL1216_1_needles_found,all cited source needles found,PASS,12/12 needles found,False,False
+VAL1216_2_source_vector_numeric,bulk Earth DD source factor is numeric,PASS,Q_alpha=1.691260686750872e-03;Q_surface=-1.211918219995745e-02,False,False
+VAL1216_3_pressure_rows_numeric,source-material pressure rows numeric,PASS,DDP1216_0_alpha=3.365285544434638e-06; DDP1216_1_surface=4.007154691040701e-05; DDP1216_2_combined_abs=4.343683245484165e-05,False,False
+VAL1216_4_coefficient_bounds_positive,derived coefficient pressure bounds positive,PASS,DDP1216_0_alpha=8.320244933243532e-10; DDP1216_1_surface=6.987501646143863e-11; DDP1216_2_combined_abs=6.446142229433907e-11,False,False
+VAL1216_5_zero_not_overclaimed,factor zero is not overclaimed,PASS,source factor filled nonclaim rather than theorem-zero,False,False
+VAL1216_6_runner_refuses,runner stub refuses missing full product,PASS,valid_prediction_rows=0 and claim_allowed=false,False,False
+VAL1216_7_source_gate_nonclaim,source factor gate passes only as nonclaim,PASS,GATE1216_0 status PASS_NONCLAIM,False,False
+VAL1216_8_claim_locks_blocked,remaining claim locks blocked,PASS,"profile/source, Cparent, Kreadout, product gates blocked",False,False
+VAL1216_9_no_missing_claim_rows,no row with MISSING is valid for claim,PASS,missing profile/feed rows remain nonclaim,False,False
+VAL1216_10_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout,False,False
+VAL1216_11_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1216_SOURCE_REGISTER.csv:12; P8_Y5_R10_1216_SAME_NORM_FACTOR_ZERO_AUDIT.csv:5; P8_Y5_R10_1216_EARTH_SOURCE_FACTOR_IMPORT.csv:2; P8_Y5_R10_1216_DD_SOURCE_MATERIAL_PRODUCT_PRESSURE.csv:3; P8_Y5_R10_1216_SAME_NORM_PRODUCT_UPDATE.csv:2; P8_Y5_R10_1216_WEP_FACTOR_FEED_UPDATE.csv:3; P8_Y5_R10_1216_PRODUCT_RUNNER_STUB.csv:1; P8_Y5_R10_1216_DECISION_LEDGER.csv:3; P8_Y5_R10_1216_CLAIM_GATES.csv:5; P8_Y5_R10_1216_NEXT_TARGET.csv:1,False,False
+VAL1216_12_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_after_run_start_count=0,False,False
+VAL1216_13_next_target,next target is staged,PASS,1217-Y5-R10-WEP-Cparent-coefficient-map-or-finite-prior-row.md,False,False
+VAL1216_14_overall,overall 1216 validation,PASS,"1216 WEP same-norm source-factor pack is reproducible, numeric-source-backed, and nonclaim",False,False

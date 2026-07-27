@@ -1,0 +1,8 @@
+validation_id,check,status,details
+VAL1394_0_sources,every cited local source path exists and anchor is found,PASS,SRC1394_0_1393_doc exists=True anchor=True; SRC1394_1_1393_next exists=True anchor=True; SRC1394_2_1393_proof exists=True anchor=True; SRC1394_3_1393_beta_rows exists=True anchor=True; SRC1394_4_1393_interface exists=True anchor=True; SRC1394_5_1389_material_map exists=True anchor=True; SRC1394_6_1389_convention exists=True anchor=True; SRC1394_7_1392_template exists=True anchor=True; SRC1394_8_1392_runner exists=True anchor=True; SRC1394_9_this_script exists=True anchor=True
+VAL1394_1_inheritance,binding inheritance zero is exact conditional but unsigned,PASS,BIH1394_4 records conditional binding zero; BIH1394_5 keeps inheritance unsigned.
+VAL1394_2_composition_map,source/test material composition map is explicit and nonclaim,PASS,composition_rows=7; binding_rows=6; all_values_missing=True
+VAL1394_3_interface,binding rows cannot promote beta_bulk yet,PASS,BTB1394_4 blocks beta_bulk/R10 promotion until binding rows are real or zero-certified.
+VAL1394_4_claim_refusal,R10/WEP/local claims remain blocked,PASS,GATE1394_5 and prior GATE1393_5 both block local GR/Newton promotion.
+VAL1394_5_scope,generated outputs stay inside post-checkpoint-work and outside formalization-workbench,PASS,ROOT=D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work; output_count=11; formalization_touched=False
+VAL1394_6_overall,overall 1394 validation,PASS,1394 writes binding inheritance conditions and nonclaim material composition rows without enabling beta/R10/local scoring.

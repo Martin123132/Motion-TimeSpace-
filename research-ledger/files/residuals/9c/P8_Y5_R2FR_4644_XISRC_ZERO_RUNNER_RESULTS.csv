@@ -1,0 +1,6 @@
+checkpoint,run_id,branch,alpha_src_hidden,alpha_nonHilbert,alpha_boundary_history,alpha_transition_inner,result,reason,claim_allowed,timestamp_utc
+4644,RUN4644_0_current_live_full_tail,current live full local-GR/R10 tail,,,,,FAIL_CLOSED,"alpha_src_hidden has an exact-zero certificate branch, but the full same-branch Xi_tail and lambda_mem are not yet closed",False,2026-07-06T20:13:25.132148+00:00
+4644,RUN4644_1_source_label_certificate,source-label-forgetting Hilbert-owner branch,0.0,,,,FIRST_COMPONENT_EXACT_ZERO_PASS_NONCLAIM,source-label gauge/descent certificate gives alpha_src_hidden(lambda)=0,False,2026-07-06T20:13:25.132148+00:00
+4644,RUN4644_2_hidden_weight_present,"w_A, N_src, theta_src, sigma_env, O_hidden, delta_w_EM or Q_m^H survives",,,,,USE_OPEN_TAIL_BOUND,failed certificate must use TAIL4332_6_Xi_open and cannot be silently zeroed,False,2026-07-06T20:13:25.132148+00:00
+4644,RUN4644_3_source_label_only_full_tail,source-label component zero only,0.0,,,,REJECT_FULL_TAIL_ZERO,"Xi_nonHilbert, boundary/history and transition-inner components remain live",False,2026-07-06T20:13:25.132148+00:00
+4644,RUN4644_4_hide_source_norm_in_G,source normalization hidden in calibrated constants,,,,,REJECT_BRANCH,source normalization reentry violates the source-label gauge certificate and returns to open tail,False,2026-07-06T20:13:25.132148+00:00

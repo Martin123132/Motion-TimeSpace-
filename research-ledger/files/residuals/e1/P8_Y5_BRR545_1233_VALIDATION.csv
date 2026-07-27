@@ -1,0 +1,14 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1233_0_sources_exist,all cited local sources exist,PASS,10/10 sources exist,False,False
+VAL1233_1_needles_found,all cited local needles found,PASS,10/10 needles found,False,False
+VAL1233_2_directories_exist,component-fraction intake directories exist,PASS,CFD1233_0_raw; CFD1233_1_docs; CFD1233_2_accepted; CFD1233_3_rejected,False,False
+VAL1233_3_schema_blocks,schema fields block acceptance if missing,PASS,schema_rows=9,False,False
+VAL1233_4_templates_blocked,candidate templates are nonclaim and missing-gated,PASS,template_rows=4,False,False
+VAL1233_5_dryrun_blocks,dry-run accepts no rows,PASS,candidate_csv_count=0; accepted_rows=0,False,False
+VAL1233_6_edge_demoted,electron-photon edge proof is explicit and demoted,PASS,EME1233_4 result=EDGE_DEMOTED_TO_CONDITIONAL_NOT_SIGNED,False,False
+VAL1233_7_claim_gates_blocked,all claim gates remain blocked,PASS,blocked_gates=5/5,False,False
+VAL1233_8_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables,False,False
+VAL1233_9_next_target_1234,next target attacks EM owner uniqueness or quark-gluon edge,PASS,1234-Y5-R10-EM-owner-uniqueness-or-quark-gluon-edge-owner-proof.md,False,False
+VAL1233_10_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1233_SOURCE_REGISTER.csv:10; P8_Y5_R10_1233_COMPONENT_FRACTION_DIRECTORY_CONTRACT.csv:4; P8_Y5_R10_1233_COMPONENT_FRACTION_SCHEMA.csv:9; P8_Y5_R10_1233_COMPONENT_FRACTION_ACCEPTANCE_GATES.csv:6; P8_Y5_R10_1233_COMPONENT_FRACTION_CANDIDATE_TEMPLATE_NONCLAIM.csv:4; P8_Y5_R10_1233_COMPONENT_FRACTION_VALIDATOR_DRYRUN.csv:1; P8_Y5_R10_1233_EM_CURRENT_EDGE_OWNER_PROOF_ATTEMPT.csv:5; P8_Y5_R10_1233_GRAPH_EDGE_DEMOTION_LEDGER.csv:3; P8_Y5_R10_1233_RUNNER_FEED_UPDATE.csv:3; P8_Y5_R10_1233_DECISION_LEDGER.csv:3; P8_Y5_R10_1233_CLAIM_GATES.csv:5; P8_Y5_R10_1233_NEXT_TARGET.csv:1,False,False
+VAL1233_11_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_write_count_since_run_start=0,False,False
+VAL1233_12_overall,overall 1233 validation,PASS,1233 builds component-fraction intake gates and demotes the electron-photon edge to conditional math without claims,False,False

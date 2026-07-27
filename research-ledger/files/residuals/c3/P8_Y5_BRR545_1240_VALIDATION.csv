@@ -1,0 +1,14 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1240_0_sources_exist,all cited local sources exist,PASS,9/9 sources exist,False,False
+VAL1240_1_needles_found,all cited local needles found,PASS,9/9 needles found,False,False
+VAL1240_2_zero_not_derived,Q_R zero-charge theorem is not promoted,PASS,ZQR1240_5 result=ZERO_CHARGE_THEOREM_NOT_DERIVED,False,False
+VAL1240_3_gamma_map,Q_R to gamma projection schema exists,PASS,QMAP1240_3 gamma projection row exists,False,False
+VAL1240_4_bound_schema,q_R bound input schema exists,PASS,QB1240_0 q_R input row exists,False,False
+VAL1240_5_comparator_available,Cassini gamma comparator is available but prediction missing,PASS,COMP1240_0 status=COMPARATOR_AVAILABLE_PREDICTION_MISSING,False,False
+VAL1240_6_closure_not_evidence,closure q_R=0 is not evidence,PASS,QB1240_4 validation_gate=closure_only_not_evidence,False,False
+VAL1240_7_claim_gates,claim gates remain blocked/nonclaim,PASS,claim_gate_rows=4,False,False
+VAL1240_8_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables,False,False
+VAL1240_9_next_target_1241,next target is Q_R nonclaim smoke runner,PASS,1241-Y5-R10-PPN-QR-nonclaim-smoke-runner-and-refusal-gates.md,False,False
+VAL1240_10_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1240_SOURCE_REGISTER.csv:9; P8_Y5_R10_1240_QR_ZERO_CHARGE_THEOREM_ATTEMPT.csv:6; P8_Y5_R10_1240_QR_TO_PPN_MAPPING_SCHEMA.csv:5; P8_Y5_R10_1240_QR_BOUND_INPUT_SCHEMA.csv:5; P8_Y5_R10_1240_PPN_COMPARATOR_LEDGER.csv:4; P8_Y5_R10_1240_DECISION_LEDGER.csv:3; P8_Y5_R10_1240_CLAIM_GATES.csv:4; P8_Y5_R10_1240_NEXT_TARGET.csv:1,False,False
+VAL1240_11_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_write_count_since_run_start=0,False,False
+VAL1240_12_overall,overall 1240 validation,PASS,1240 refuses Q_R=0 theorem promotion and builds a nonclaim Q_R-to-PPN gamma bound schema,False,False

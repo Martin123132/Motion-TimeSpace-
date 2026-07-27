@@ -1,0 +1,7 @@
+formula_id,target,formula,status,blocks_numeric,valid_for_claim,claim_allowed
+CFF1379_0_transition_length,L_tr,L_tr := ell_tr = sqrt(kappa_m L0^2/F2),CONDITIONAL_SYMBOLIC_FEED,"kappa_m, F2, and L0 are not all source-backed",False,False
+CFF1379_1_support,U_B and pS,U_B=exp(-d/ell_tr); pS=1; Delta_m=A_S U_B; Delta_grad_m<=A_S U_B/ell_tr,CONDITIONAL_SYMBOLIC_FEED,d and A_S are not source-backed,False,False
+CFF1379_2_fixed_L_chain,A_L,A_L=0 only if fixed-L0 anti-smuggling clauses are parent-signed,CONDITIONAL_ZERO_GUARD,fixed-L0 branch remains closure-admissible but not live parent-signed,False,False
+CFF1379_3_Q_alg,Q_alg,Q_alg <= A_ref^-1 |F2| A_S^2 U_B^2/(L0^2 ell_tr),CONDITIONAL_SYMBOLIC_FEED,normalization and parent coefficients are missing,False,False
+CFF1379_4_Q_trans,Q_trans,"Q_trans retains gradient-stress, memory, boundary, and shell terms until separately zeroed or bounded",PARTIAL_FEED_SHELL_BLOCKED,A_T/A_B/b_mem/pB/shell bound missing,False,False
+CFF1379_5_local_claim,local_GR_PPN_R10,"no claim if any closure runner field is missing, toy, unsourced, or shell-blocked",REFUSAL_FORMULA,keeps branch disciplined before empirical scoring,False,False

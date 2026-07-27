@@ -3,6 +3,8 @@
 Direct links for 250 files. Item numbers are catalogue
 ordinals, not scientific checkpoint identifiers.
 
+- [`P8_Y5_R2FR_4824_DECISION_LEDGER.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4824_DECISION_LEDGER.csv) (429 bytes)
+- [`P8_Y5_R2FR_4824_NEXT_TARGET.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4824_NEXT_TARGET.csv) (448 bytes)
 - [`P8_Y5_R2FR_4824_SOURCE_REGISTER.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4824_SOURCE_REGISTER.csv) (5457 bytes)
 - [`P8_Y5_R2FR_4824_STATUS.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4824_STATUS.csv) (303 bytes)
 - [`P8_Y5_R2FR_4825_BY5_FIRST_SOURCE_NORMALIZATION_CONTRACT.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4825_BY5_FIRST_SOURCE_NORMALIZATION_CONTRACT.csv) (828 bytes)
@@ -251,5 +253,3 @@ ordinals, not scientific checkpoint identifiers.
 - [`P8_Y5_R2FR_4854_SOURCE_REGISTER.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4854_SOURCE_REGISTER.csv) (4311 bytes)
 - [`P8_Y5_R2FR_4854_U1_ARCHITECTURE_FORK.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4854_U1_ARCHITECTURE_FORK.csv) (1113 bytes)
 - [`P8_Y5_R2FR_4855_BETA_CHARGE_PROJECTION.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4855_BETA_CHARGE_PROJECTION.csv) (1064 bytes)
-- [`P8_Y5_R2FR_4855_DECISION.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4855_DECISION.csv) (1258 bytes)
-- [`P8_Y5_R2FR_4855_EINSTEIN_MAXWELL_FIELD_EQUATIONS.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4855_EINSTEIN_MAXWELL_FIELD_EQUATIONS.csv) (1263 bytes)

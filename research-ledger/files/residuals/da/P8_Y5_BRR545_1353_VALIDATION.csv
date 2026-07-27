@@ -1,0 +1,11 @@
+check_id,check,status,details
+VAL1353_0_sources_exist,registered source paths exist and anchors are found,PASS,SRC1353_0_1352_doc=True/True;SRC1353_1_1352_blockers=True/True;SRC1353_2_response_contract=True/True;SRC1353_3_response_variation=True/True;SRC1353_4_1011_qbound=True/True;SRC1353_5_1012_y5=True/True;SRC1353_6_1345_source_charge=True/True;SRC1353_7_1352_profile=True/True
+VAL1353_1_component_lock_not_proved,component lock theorem is not promoted,PASS,cannot use formal F1=0 as physical q_loc/local-GR zero
+VAL1353_2_no_linear_source_not_proved,no-linear-source theorem is not promoted,PASS,NLS1353_0..4 all pass with source paths
+VAL1353_3_Y5_Y6_rows_present,JZ source pack includes Y5 and Y6 rows,PASS,missing=[]
+VAL1353_4_source_pack_nonclaim,all source-pack rows are rejected for scoring,PASS,rows=6
+VAL1353_5_claim_gates_blocked,all claim gates remain blocked,PASS,GATE1353_0_component_lock=BLOCKED;GATE1353_1_no_linear_source=BLOCKED;GATE1353_2_response_doublet_local_GR=BLOCKED
+VAL1353_6_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false across generated rows
+VAL1353_7_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1353_8_next_target_1354,next target routes to source-functional evenness theorem,PASS,1354-Y5-R10-RAB-source-functional-evenness-theorem-or-Y5Y6-JZ-coefficient-fill.md
+VAL1353_9_overall,overall 1353 validation,PASS,1353 identifies coupling/source evenness as root response-doublet obstruction

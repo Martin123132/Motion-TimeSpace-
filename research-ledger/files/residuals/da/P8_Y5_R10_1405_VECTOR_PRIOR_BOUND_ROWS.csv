@@ -1,0 +1,7 @@
+bound_id,object,inequality,basis,status,valid_for_claim,claim_allowed
+VPB1405_0_alpha_single_component,P_alpha,abs(P_alpha) <= 4.797780522732e-05 if all other P_s=0,single-component diagnostic only,TARGET_ONLY_NOT_PASS,False,False
+VPB1405_1_surface_single_component,P_surface,abs(P_surface) <= 2.887280314062e-05 if all other P_s=0,single-component diagnostic only,TARGET_ONLY_NOT_PASS,False,False
+VPB1405_2_two_component_pair,"P_alpha,P_surface",abs((-1.989808886825000e-03)*P_alpha + (-3.306456347405000e-03)*P_surface) <= 2.800000e-15,Ti/Pt proxy-pair two-component pressure,PAIR_PRESSURE_ONLY_NOT_PARENT_COMPLETE,False,False
+VPB1405_3_no_cancellation,P_surface/P_alpha,P_surface/P_alpha = -6.017949967452794e-01 is forbidden as a theory claim,one-pair cancellation guard,CANCELLATION_FORBIDDEN,False,False
+VPB1405_4_full_vector,P_s full vector,"abs(sum_s Delta f_s,AB P_s) <= 2.800000e-15 for every relevant material pair",requires full Delta f tensor and all-material/multi-pair evidence,FULL_VECTOR_BOUND_NOT_ACQUIRED,False,False
+VPB1405_5_verdict,WEP vector prior,identity derived; bounds remain pressure-only,parent values and full material tensor missing,VECTOR_PRIOR_BOUNDS_WRITTEN_NO_PASS,False,False

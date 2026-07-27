@@ -1,0 +1,8 @@
+audit_id,object,needed_for_claim,current_evidence,status,valid_for_claim
+MHA1006_0_definition,M_H_ref,M_H_ref := H_tau[S_link] - H_ref is a finite source charge in one observed frame,683 defines the target but marks it blocked/nonclaim,definition_only,false
+MHA1006_1_integrability,H_tau,delta H_tau = integral_S(delta Q_tau - i_tau theta) is integrable with fixed reference,664/HSM541 mark integrability and parent theta/Q_tau as not derived,fail_current_claim,false
+MHA1006_2_tau_frame_lock,tau_obs and e_obs,"same observed tau/coframe controls source, clocks, boundary charge, and orbital readout",684/685 write contracts but keep parent signature missing,unsigned,false
+MHA1006_3_fixed_reference,H_ref and boundary/counterterm convention,H_ref is fixed once and cannot absorb source/radius/time/frame/lambda readout changes,boundary/reference first-row status has zero claim-valid M_H_ref rows,unsigned,false
+MHA1006_4_positivity,M_H_ref > 0,positive source energy after reference subtraction with no boundary/extra-sector contamination,683 positivity gate is not signed; reference shift and extra-sector channels remain open,unsigned,false
+MHA1006_5_anti_circularity,GM_orbit/G_ref,orbital GM can be used only after M_H_ref -> Poisson/Gauss -> orbital readout is derived,683 explicitly forbids backfilling the denominator from observed GM alone,guardrail_pass_nonclaim,false
+MHA1006_6_theorem_verdict,positive same-frame M_H_ref,"integrability, tau/coframe lock, fixed reference, positivity, no orbital-GM import, Poisson/Gauss bridge, universal G, and extra-sector silence all signed",not enough parent Hamiltonian/source geometry to promote denominator,fail_current_claim,false

@@ -1,0 +1,185 @@
+# 2696 - Y5/R2FR Source-Measure M_eff Flux Closure After Conditional Kappa Gate
+
+## Private Verdict
+
+This checkpoint takes the next load-bearing beam after kappa: what makes the `M_eff` in `G_eff M_eff` the actual parent source charge rather than fitted orbital `GM`?
+
+The less-scrutinized route is not to start with a bespoke projector. It is to define source mass by the parent Hamiltonian/Noether charge first, then allow `Pi_M` only as a derived projection of that charge:
+
+`delta L = E_A delta phi^A + d theta`,
+
+`J_tau = theta(phi, L_tau phi) - i_tau L`,
+
+`J_tau = dQ_tau + C_tau`,
+
+and in a source-free exterior annulus with controlled constraints and boundary flux, `integral_S2 Q_tau = integral_S1 Q_tau`.
+
+That is a real GR/EH-style theorem route. Current MTS has not yet inherited it: the parent action has not signed the observed generator, charge descent, `Pi_M` variation, flux closure, worldtube glue, extra-sector silence, Gauss/orbital readout, or PPN stability. So 2696 makes progress but no measured-GM, Newton, PPN, local-GR, GitHub, or public claim.
+
+The next leap is now sharply defined: build the minimal local parent-action fixed point that signs kappa, EH charge, source measure, extra-sector silence, and PPN handoff together, or demote the local branch to explicit residual closure-only.
+
+## Source Register
+
+| source_id | relative_path | absolute_path | exists | required_needles | found_needles | missing_needles | purpose | valid_for_claim | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| SRC2696_2695_DOC | 2695-Y5-R2FR-kappa-topological-superselection-parent-adoption-or-drift-residual-values.md | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\2695-Y5-R2FR-kappa-topological-superselection-parent-adoption-or-drift-residual-values.md | true | NEXT2695_0_selected;VAL2695_OVERALL;CARRY_CANDIDATE_KAPPA_CLAUSE_AND_ATTACK_SOURCE_MEASURE | NEXT2695_0_selected;VAL2695_OVERALL;CARRY_CANDIDATE_KAPPA_CLAUSE_AND_ATTACK_SOURCE_MEASURE |  | imports conditional kappa status and selected source-measure target | false | 2026-06-23T08:03:52.325778+00:00 |
+| SRC2696_509_SOURCE_MEASURE | 509-source-measure-Meff-flux-closure-after-kappa-gate.md | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\509-source-measure-Meff-flux-closure-after-kappa-gate.md | true | T509_0_charge_identity_needed;SM509_3_flux_closure;SMR509_0_Delta_flux | T509_0_charge_identity_needed;SM509_3_flux_closure;SMR509_0_Delta_flux |  | imports earlier source-measure flux theorem and residual map | false | 2026-06-23T08:03:52.326449+00:00 |
+| SRC2696_510_WORLDTUBE_GLUE | 510-worldtube-source-measure-glue-or-Meff-residual-runner.md | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\510-worldtube-source-measure-glue-or-Meff-residual-runner.md | true | T510_0_EH_reference_glue;WG510_7_dressed_source_definition;MR510_0_flux_leak | T510_0_EH_reference_glue;WG510_7_dressed_source_definition;MR510_0_flux_leak |  | imports covariant phase-space/worldtube glue reference theorem | false | 2026-06-23T08:03:52.327304+00:00 |
+| SRC2696_505_NOETHER | 505-parent-Noether-mass-charge-closure-theorem-or-closure-demotion.md | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\505-parent-Noether-mass-charge-closure-theorem-or-closure-demotion.md | true | T505_conditional_Noether_mass_charge_closure;EH505_2_projector_constancy;DEC505_1_MTS_status | T505_conditional_Noether_mass_charge_closure;EH505_2_projector_constancy;DEC505_1_MTS_status |  | imports parent Noether mass-charge closure theorem and open premises | false | 2026-06-23T08:03:52.327936+00:00 |
+| SRC2696_504_WORLDTUBE | 504-parent-Hilbert-worldtube-glue-or-external-radial-input-plan.md | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\504-parent-Hilbert-worldtube-glue-or-external-radial-input-plan.md | true | W504_2_mass_charge_form;W504_4_worldtube_source_measure_glue;W504_5_calibration_and_limits | W504_2_mass_charge_form;W504_4_worldtube_source_measure_glue;W504_5_calibration_and_limits |  | imports worldtube glue clauses | false | 2026-06-23T08:03:52.328443+00:00 |
+| SRC2696_454_PIM | 454-PiM-parent-symplectic-projector-algebra-attempt.md | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\454-PiM-parent-symplectic-projector-algebra-attempt.md | true | conditional_symplectic_projector_theorem;flux_closure_not_from_projector;PM6_flux_closure_requires_Ward_or_Euler | conditional_symplectic_projector_theorem;flux_closure_not_from_projector;PM6_flux_closure_requires_Ward_or_Euler |  | imports Pi_M algebra and warning that projector algebra is not flux closure | false | 2026-06-23T08:03:52.328907+00:00 |
+| SRC2696_451_MASS_FLUX | 451-mass-flux-projector-Euler-calibration-attempt.md | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\451-mass-flux-projector-Euler-calibration-attempt.md | true | conditional_Euler_flux_closure;MF2_Euler_flux_closure;MF8_retained_residual_fallback | conditional_Euler_flux_closure;MF2_Euler_flux_closure;MF8_retained_residual_fallback |  | imports mass-flux Euler closure contract | false | 2026-06-23T08:03:52.329333+00:00 |
+| SRC2696_MF_CONTRACT | source-intake/mts_residuals/P8_mass_flux_projector_Euler_calibration_CONTRACT.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_mass_flux_projector_Euler_calibration_CONTRACT.csv | true | MF2_Euler_flux_closure;MF5_absolute_calibration;MF8_retained_residual_fallback | MF2_Euler_flux_closure;MF5_absolute_calibration;MF8_retained_residual_fallback |  | imports machine-readable mass-flux/source calibration blockers | false | 2026-06-23T08:03:52.329748+00:00 |
+| SRC2696_CC_ATTEMPT | source-intake/mts_residuals/P8_charge_current_equality_DIRECT_ATTEMPT.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_charge_current_equality_DIRECT_ATTEMPT.csv | true | CC3_projected_mass_current;CC7_closed_flux_and_Gauss_calibration;CC8_second_order_limit | CC3_projected_mass_current;CC7_closed_flux_and_Gauss_calibration;CC8_second_order_limit |  | imports direct charge-current equality attempt | false | 2026-06-23T08:03:52.330143+00:00 |
+| SRC2696_CC_RESIDUALS | source-intake/mts_residuals/P8_charge_current_equality_RESIDUAL_DECOMPOSITION.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_charge_current_equality_RESIDUAL_DECOMPOSITION.csv | true | Delta_flux;Delta_PiM;Delta_PPN | Delta_flux;Delta_PiM;Delta_PPN |  | imports source-measure residual decomposition | false | 2026-06-23T08:03:52.330549+00:00 |
+| SRC2696_NEWTON_STACK | source-intake/mts_residuals/P8_source_normalized_Newton_branch_STACK.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_source_normalized_Newton_branch_STACK.csv | true | SN4_closed_Meff_flux;SN8_Gauss_surface_integral;SN11_second_order_PPN_source_stability | SN4_closed_Meff_flux;SN8_Gauss_surface_integral;SN11_second_order_PPN_source_stability |  | imports Newton/source-normalization stack rungs | false | 2026-06-23T08:03:52.330976+00:00 |
+| SRC2696_WORLDTUBE_CONTRACT | source-intake/mts_residuals/P8_PARENT_WORLDTUBE_GLUE_THEOREM_CLAUSES.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_PARENT_WORLDTUBE_GLUE_THEOREM_CLAUSES.csv | true | W504_0_worldtube_setup;W504_3_exterior_closure_equation;W504_4_worldtube_source_measure_glue | W504_0_worldtube_setup;W504_3_exterior_closure_equation;W504_4_worldtube_source_measure_glue |  | imports parent worldtube glue theorem clauses | false | 2026-06-23T08:03:52.331374+00:00 |
+| SRC2696_LOCAL_RESIDUAL_INPUT | source-intake/mts_residuals/P8_CONSTANT_GM_LOCAL_RESIDUAL_RUNNER_INPUT.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_CONSTANT_GM_LOCAL_RESIDUAL_RUNNER_INPUT.csv | true | P8_Meff_conservation;P8_radial_source_hair;P8_nonlinear_beta_source_residue | P8_Meff_conservation;P8_radial_source_hair;P8_nonlinear_beta_source_residue |  | imports local residual runner rows for M_eff and source-normalized PPN | false | 2026-06-23T08:03:52.331780+00:00 |
+
+## Source-Measure Theorem Audit
+
+| audit_id | clause | required_identity | pass_condition | current_status | blocks_if_missing | residual_if_missing | parent_signed | valid_for_claim | claim_allowed | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| SMA2696_0_kappa_import | conditional kappa | G_eff=kappa_eff c^4/(8 pi) is carried only as conditional/topological candidate from 2695 | kappa derivative/source/range hair is not promoted | CONDITIONAL_INPUT_ONLY | G_eff drift can still contaminate measured GM | KRR2695 rows stay active unless parent-signed | false | false | false | 2026-06-23T08:03:52.331791+00:00 |
+| SMA2696_1_parent_phase_space | covariant parent phase space | delta L = E_A delta phi^A + d theta(phi,delta phi) | well-defined symplectic potential and boundary terms before readout | NOT_SIGNED_FOR_FULL_MTS_PARENT | Hamiltonian/source charge is not defined by the action | Delta_symp;Delta_frame | false | false | false | 2026-06-23T08:03:52.331795+00:00 |
+| SMA2696_2_observed_generator | single time/source generator | tau_source = tau_charge = tau_orbit = tau_clock in the observed branch | one generator is used for source variation, charge, and orbital readout | OPEN | time choice can absorb M_eff drift or frame split | Delta_frame;dln_Meff_dt | false | false | false | 2026-06-23T08:03:52.331798+00:00 |
+| SMA2696_3_Hamiltonian_mass_charge | mass from parent Hamiltonian/Noether charge | H_tau[S] = integral_S (delta Q_tau - tau dot theta) integrated with fixed reference | M_eff is defined by the parent charge rather than a fitted orbital mask | CONDITIONAL_REFERENCE_ROUTE | measured mass remains a calibration/readout input | Delta_cal;Delta_symp | false | false | false | 2026-06-23T08:03:52.331801+00:00 |
+| SMA2696_4_PiM_descent | Pi_M as derived projection, not primitive patch | Pi_M J_H must equal the parent mass charge channel Q_M[tau] before data scoring | Pi_M is legal only if parent-derived, variation-owned, and charge-preserving | NOT_PARENT_DERIVED | projector freedom can hide source-normalization failure | Delta_PiM;projector stress | false | false | false | 2026-06-23T08:03:52.331808+00:00 |
+| SMA2696_5_flux_closure | exterior charge closure | M_eff(S2)-M_eff(S1)=int_A d(Pi_M J_H)=0 or int_A dQ_M[tau]=0 | source-free exterior constraints and boundary flux terms vanish | NOT_PARENT_DERIVED | M_eff can drift with time/radius | Delta_flux;P8_Meff_conservation;P8_radial_source_hair | false | false | false | 2026-06-23T08:03:52.331813+00:00 |
+| SMA2696_6_worldtube_glue | source measure equals exterior charge | M_source[W] = M_eff[S] = H_tau[S]-H_tau[reference] | the worldtube source measure is dressed Hamiltonian/Noether charge, not bare rest mass | CORE_GLUE_NOT_DERIVED | closed charge may be the wrong object | Delta_cal;Delta_nonEH;Delta_extra | false | false | false | 2026-06-23T08:03:52.331816+00:00 |
+| SMA2696_7_no_extra_mass_channel | extra-sector mass silence | Delta_nonEH=Delta_symp=Delta_PiM=Delta_extra=Delta_frame=0 | non-EH, boundary, memory, domain, range, connection, and frame sectors carry no independent mass charge | NOT_PARENT_DERIVED | mu_extra survives as hidden source normalization | P8_boundary_bulk_domain_mu_extra;R11;R10 | false | false | false | 2026-06-23T08:03:52.331819+00:00 |
+| SMA2696_8_Gauss_orbital_readout | charge to Newton readout | surface_integral grad Phi dot dS = 4 pi G_eff M_eff and a_r=-G_eff M_eff/r^2 | the same charge controls the weak-field metric and slow-particle orbit | NOT_PARENT_DERIVED | orbital GM is used as premise instead of conclusion | Delta_cal;partial_r_ln_mu_obs;alpha(lambda) | false | false | false | 2026-06-23T08:03:52.331821+00:00 |
+| SMA2696_9_PPN_stability | second-order source stability | gamma-1=0 and delta_beta_source=0 after measured-GM normalization | Newton-looking first order survives local-GR/PPN order | NOT_DERIVED | Newton pass would not be a GR pass | Delta_PPN;R3;R4;R11 | false | false | false | 2026-06-23T08:03:52.331824+00:00 |
+| SMA2696_10_verdict | source-measure verdict | the least-cheatable path is parent Hamiltonian source charge -> Pi_M descent -> flux closure -> Gauss/PPN readout | current MTS has the conditional route but not the parent proof | SOURCE_MEASURE_CLAIM_BLOCKED | no measured-GM, Newton, PPN, local-GR, GitHub, or public claim | next build minimal local parent fixed-point contract | false | false | false | 2026-06-23T08:03:52.331827+00:00 |
+
+## Covariant Phase-Space Charge Derivation Check
+
+| step_id | operation | expression | requirement | result_if_requirement_met | current_result | mathematical_valid | parent_signed | valid_for_claim | notes | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| CPS2696_0_action_variation | start from parent local action | delta L = E_A delta phi^A + d theta(phi,delta phi) | parent has a local diffeo-covariant action and a controlled boundary variational principle | covariant phase-space machinery exists | STANDARD_REFERENCE_STEP | true | false | false | this is the less-scrutinized source-measure language | 2026-06-23T08:03:52.331831+00:00 |
+| CPS2696_1_Noether_current | define observed-time Noether current | J_tau = theta(phi,L_tau phi) - i_tau L | tau is the observed source/orbital/clock generator | mass charge candidate is action-defined | STANDARD_REFERENCE_STEP | true | false | false | generator normalization cannot be chosen after fitting orbits | 2026-06-23T08:03:52.331835+00:00 |
+| CPS2696_2_on_shell_closure | use field equations in source-free exterior | dJ_tau = -E_A L_tau phi -> 0 in A, up to constraints and explicit residual currents | exterior equations and residual sectors are zero or explicitly retained | charge is closed in compact exterior | CONDITIONAL_STEP | true | false | false | this is where non-EH/domain/memory/boundary sectors can enter | 2026-06-23T08:03:52.331838+00:00 |
+| CPS2696_3_surface_charge | write current as surface charge plus constraints | J_tau = dQ_tau + C_tau | constraint and side-flux terms vanish in the exterior annulus | integral_S2 Q_tau - integral_S1 Q_tau = 0 | CONDITIONAL_STEP | true | false | false | closure is not projector idempotence; it is a current equation | 2026-06-23T08:03:52.331842+00:00 |
+| CPS2696_4_mass_definition | define dressed source mass | M_source[W] := G_ref^-1(H_tau[S]-H_tau[reference]) with fixed reference | worldtube source measure is the dressed parent charge, not bare rest matter mass | avoids bare-mass overclaim | DEFINITION_LOCK_REQUIRED | true | false | false | this is the right definition if the theory wants GR-like source mass | 2026-06-23T08:03:52.331845+00:00 |
+| CPS2696_5_PiM_descent | derive Pi_M from the parent charge | Pi_M J_H = Q_M[tau] or H_tau mass channel before readout | Pi_M is parent-owned, variation-owned, and not fit-defined | Pi_M becomes a derived bookkeeping map | UNSIGNED | false | false | false | current corpus has Pi_M algebra candidates but not full descent | 2026-06-23T08:03:52.331848+00:00 |
+| CPS2696_6_MTS_transfer | compare MTS charge to EH charge | Q_MTS_tau = Q_EH_tau + Delta_nonEH + Delta_symp + Delta_PiM + Delta_extra + Delta_frame + Delta_G | all Delta terms vanish by theorem or are bounded as residuals | MTS inherits the GR/EH source-measure theorem | UNSIGNED | false | false | false | this row is the actual bridge into local GR | 2026-06-23T08:03:52.331851+00:00 |
+| CPS2696_7_Gauss_PPN_readout | read charge in weak-field metric | g_00=-1+2G_ref M_source/r+... and gamma,beta residuals controlled | same charge controls slow-particle Newton and PPN light/clock tests | local Newton/GR would become derivable | NOT_REACHED | false | false | false | first-order source closure still is not full local GR | 2026-06-23T08:03:52.331853+00:00 |
+| CPS2696_8_verdict | derive-or-reject result | standard charge route is available; MTS transfer clauses remain unsigned | parent action must sign CPS2696_5-CPS2696_7 before promotion | conditional theorem built, claim blocked | ROUTE_BUILT_NOT_PROMOTED | true | false | false | good footwork, no haymaker yet | 2026-06-23T08:03:52.331856+00:00 |
+
+## M_eff Residual Value Requirements
+
+| residual_id | component_id | symbol | derivative_or_projection_channel | observable_link | target_bound_or_zero | units | required_artifact | current_status | source_anchor | numeric_value_present | score_ready | valid_for_claim | claim_allowed | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| MRR2696_0_flux_leak | P8_Meff_conservation | Delta_flux;dln_Meff_dt;epsilon_radial_Meff | D_t;D_r;annulus | Gdot/GMdot;orbital radial mass drift | zero d(Pi_M J_H) or numeric time/radial profile | yr^-1;dimensionless | P8_time_drift_residual_or_zero.csv;P8_radial_mu_profile_or_zero.csv | MISSING_PARENT_FLUX_CLOSURE_OR_VALUES | MR510_0_flux_leak;SMR509_0_Delta_flux;SN4_closed_Meff_flux | false | false | false | false | 2026-06-23T08:03:52.331860+00:00 |
+| MRR2696_1_PiM_projector | P8_projector_source_hair | Delta_PiM | projector_variation | source-normalized Newton;PPN projector hair | Pi_M parent descent/variation zero or coefficient bound | dimensionless_or_charge_units | PiM_parent_variation_or_residual_coefficients.csv | MISSING_PIM_DESCENT_OR_PROJECTOR_COEFFICIENT | MR510_3_projector_hair;PM5;PM6 | false | false | false | false | 2026-06-23T08:03:52.331863+00:00 |
+| MRR2696_2_symplectic_boundary | P8_boundary_bulk_domain_mu_extra | Delta_symp | boundary_reference | absolute mass calibration;radial closure | fixed reference zero and no boundary symplectic leakage | dimensionless_or_mass_units | boundary_charge_reference_zero_or_bound.csv | MISSING_BOUNDARY_REFERENCE_ZERO_OR_BOUND | MR510_2_symplectic_boundary;CC4;CC5 | false | false | false | false | 2026-06-23T08:03:52.331866+00:00 |
+| MRR2696_3_extra_sector_mass | P8_boundary_bulk_domain_mu_extra | Delta_extra;mu_extra | sector_mass_projection | fifth-force;WEP;clocks;PPN | field-specific zero theorem or residual coefficient matrix | dimensionless | extra_sector_mass_charge_vector.csv | MISSING_EXTRA_SECTOR_MASS_SILENCE_OR_VALUES | MR510_4_extra_sector_mass;CC6;SN6 | false | false | false | false | 2026-06-23T08:03:52.331869+00:00 |
+| MRR2696_4_frame_split | P8_frame_calibration_split | Delta_frame_source | Delta_frame | WEP;clock;preferred-frame PPN | one observed source/readout frame or residual bound | dimensionless | frame_source_split_residual_or_zero.csv | MISSING_SAME_FRAME_SOURCE_CHARGE_OR_VALUE | MR510_5_frame_split;SN0 | false | false | false | false | 2026-06-23T08:03:52.331873+00:00 |
+| MRR2696_5_nonEH_charge | R11_EH_operator_ledger | Delta_nonEH;c_nonEH_operator_vector | operator_charge | gamma;beta;fifth-force;light bending | EH charge fixed point or complete R11 vector | operator_family_units | R11_nonEH_charge_residual_vector.csv | MISSING_EH_CHARGE_FIXED_POINT_OR_R11_VECTOR | MR510_1_nonEH_charge;SN1 | false | false | false | false | 2026-06-23T08:03:52.331876+00:00 |
+| MRR2696_6_calibration_mismatch | P8_Gauss_orbital_calibration | Delta_cal | Gauss_orbit_readout | Kepler/Newton measured GM | Gauss surface integral and slow-particle readout theorem or calibration ledger | dimensionless_or_mass_units | Gauss_orbital_calibration_or_residual.csv | MISSING_GAUSS_ORBITAL_READOUT_OR_BOUND | MR510_6_calibration_mismatch;SN8;SN9 | false | false | false | false | 2026-06-23T08:03:52.331879+00:00 |
+| MRR2696_7_PPN_tail | P8_nonlinear_beta_source_residue | Delta_PPN;delta_beta_source;gamma_minus_1 | second_order | Cassini gamma;PPN beta;perihelion;Shapiro | second-order source/operator calculation or explicit PPN vector | dimensionless | second_order_source_normalized_PPN_vector.csv | MISSING_SECOND_ORDER_PPN_SOURCE_VECTOR | MR510_7_PPN_tail;SN11 | false | false | false | false | 2026-06-23T08:03:52.331881+00:00 |
+| MRR2696_8_kappa_coupling_import | P8_Geff_time_drift | Delta_G;dln_Geff_dt;alpha_kappa(lambda);eta_source_AB | D_t;D_lambda;D_A | Gdot;R10;source WEP | 2695 parent-signed kappa or residual values | yr^-1;dimensionless;range-dependent | kappa_residual_value_requirements_2695_NONCLAIM.csv | IMPORTED_CONDITIONAL_KAPPA_NOT_SCOREABLE | KRR2695_0-KRR2695_5;SN7 | false | false | false | false | 2026-06-23T08:03:52.331884+00:00 |
+
+## Pi_M Replacement Decision Map
+
+| map_id | route | statement | why_it_matters | decision | valid_for_claim | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- |
+| PIM2696_0_old_risk | primitive Pi_M | Pi_M selected as the mass-flux projector before a parent charge is derived | high-scrutiny route because it can look like a fitted mask | demote primitive Pi_M to conditional bookkeeping only | false | 2026-06-23T08:03:52.331888+00:00 |
+| PIM2696_1_safer_route | parent Hamiltonian charge first | define M_eff from H_tau/Q_tau using the parent covariant phase-space charge | standard GR/EH-style route; easier to defend | make Pi_M descend from Q_M[tau], not the other way round | false | 2026-06-23T08:03:52.331891+00:00 |
+| PIM2696_2_descent_condition | Pi_M equals charge-channel projection | Pi_M J_H = Q_M[tau] plus constraints with fixed units and reference | projector becomes parent-owned if equality and variation are proved | open not parent-derived | false | 2026-06-23T08:03:52.331893+00:00 |
+| PIM2696_3_flux_condition | closure is differential/current identity | d(Pi_M J_H)=0 must follow from Ward/topology/Euler or dQ_M[tau]=0 | blocks idempotence-equals-closure overclaim | open not parent-derived | false | 2026-06-23T08:03:52.331896+00:00 |
+| PIM2696_4_residual_condition | failed descent becomes residual vector | Delta_PiM, Delta_flux, Delta_symp, Delta_extra, Delta_cal, Delta_frame, Delta_nonEH, Delta_PPN | keeps the branch testable if the theorem route fails | nonclaim residual branch active | false | 2026-06-23T08:03:52.331898+00:00 |
+| PIM2696_5_verdict | best source-measure language | MTS should present local source mass as a parent Hamiltonian/Noether charge; Pi_M is allowed only as a derived projection of that charge | less vulnerable than a bespoke projector axiom | adopt for next parent-action fixed-point attempt | false | 2026-06-23T08:03:52.331901+00:00 |
+
+## Dry-Run Cases
+
+| case_id | conditional_kappa_carried | parent_phase_space_signed | PiM_parent_derived | flux_closed | worldtube_glue_signed | extra_mass_silent | Gauss_orbital_readout | PPN_stability | bare_mass_equated | residual_values_present | orbital_GM_backfill | expected_status | expected_claim_allowed | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| DRY2696_0_full_source_charge_parent | true | true | true | true | true | true | true | true | false | false | false | CONDITIONAL_SOURCE_MEASURE_ONLY_PPN_STILL_SEPARATE | false | 2026-06-23T08:03:52.331905+00:00 |
+| DRY2696_1_formula_only | true | false | true | true | true | true | true | true | false | false | false | REJECT_PARENT_PHASE_SPACE_UNSIGNED | false | 2026-06-23T08:03:52.331911+00:00 |
+| DRY2696_2_bare_mass_equated | true | true | true | true | true | true | true | true | true | false | false | REJECT_BARE_MASS_EQUALS_SOURCE_CHARGE | false | 2026-06-23T08:03:52.331914+00:00 |
+| DRY2696_3_PiM_fitted | true | true | false | true | true | true | true | true | false | false | false | REJECT_PIM_NOT_PARENT_DERIVED | false | 2026-06-23T08:03:52.331917+00:00 |
+| DRY2696_4_flux_open | true | true | true | false | true | true | true | true | false | false | false | REJECT_FLUX_CLOSURE_MISSING | false | 2026-06-23T08:03:52.331920+00:00 |
+| DRY2696_5_worldtube_open | true | true | true | true | false | true | true | true | false | false | false | REJECT_WORLDTUBE_GLUE_MISSING | false | 2026-06-23T08:03:52.331925+00:00 |
+| DRY2696_6_extra_mass_open | true | true | true | true | true | false | true | true | false | false | false | REJECT_EXTRA_MASS_CHANNEL_OPEN | false | 2026-06-23T08:03:52.331928+00:00 |
+| DRY2696_7_Gauss_readout_open | true | true | true | true | true | true | false | true | false | false | false | REJECT_GAUSS_ORBITAL_READOUT_MISSING | false | 2026-06-23T08:03:52.331931+00:00 |
+| DRY2696_8_PPN_missing | true | true | true | true | true | true | true | false | false | false | false | CONDITIONAL_NEWTON_SOURCE_ONLY_NO_LOCAL_GR | false | 2026-06-23T08:03:52.331933+00:00 |
+| DRY2696_9_residual_values_present | false | false | false | false | false | false | false | false | false | true | false | NONCLAIM_SCOREABLE_RESIDUAL_BRANCH_ONLY | false | 2026-06-23T08:03:52.331937+00:00 |
+| DRY2696_10_orbital_GM_backfill | true | true | true | true | false | true | true | false | false | false | true | REJECT_ORBITAL_GM_BACKFILL | false | 2026-06-23T08:03:52.331940+00:00 |
+
+## Dry-Run Results
+
+| case_id | expected_status | actual_status | status_match | claim_allowed | valid_for_claim | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- |
+| DRY2696_0_full_source_charge_parent | CONDITIONAL_SOURCE_MEASURE_ONLY_PPN_STILL_SEPARATE | CONDITIONAL_SOURCE_MEASURE_ONLY_PPN_STILL_SEPARATE | true | false | false | 2026-06-23T08:03:52.331945+00:00 |
+| DRY2696_1_formula_only | REJECT_PARENT_PHASE_SPACE_UNSIGNED | REJECT_PARENT_PHASE_SPACE_UNSIGNED | true | false | false | 2026-06-23T08:03:52.331949+00:00 |
+| DRY2696_2_bare_mass_equated | REJECT_BARE_MASS_EQUALS_SOURCE_CHARGE | REJECT_BARE_MASS_EQUALS_SOURCE_CHARGE | true | false | false | 2026-06-23T08:03:52.331952+00:00 |
+| DRY2696_3_PiM_fitted | REJECT_PIM_NOT_PARENT_DERIVED | REJECT_PIM_NOT_PARENT_DERIVED | true | false | false | 2026-06-23T08:03:52.331955+00:00 |
+| DRY2696_4_flux_open | REJECT_FLUX_CLOSURE_MISSING | REJECT_FLUX_CLOSURE_MISSING | true | false | false | 2026-06-23T08:03:52.331958+00:00 |
+| DRY2696_5_worldtube_open | REJECT_WORLDTUBE_GLUE_MISSING | REJECT_WORLDTUBE_GLUE_MISSING | true | false | false | 2026-06-23T08:03:52.331960+00:00 |
+| DRY2696_6_extra_mass_open | REJECT_EXTRA_MASS_CHANNEL_OPEN | REJECT_EXTRA_MASS_CHANNEL_OPEN | true | false | false | 2026-06-23T08:03:52.331963+00:00 |
+| DRY2696_7_Gauss_readout_open | REJECT_GAUSS_ORBITAL_READOUT_MISSING | REJECT_GAUSS_ORBITAL_READOUT_MISSING | true | false | false | 2026-06-23T08:03:52.331966+00:00 |
+| DRY2696_8_PPN_missing | CONDITIONAL_NEWTON_SOURCE_ONLY_NO_LOCAL_GR | CONDITIONAL_NEWTON_SOURCE_ONLY_NO_LOCAL_GR | true | false | false | 2026-06-23T08:03:52.331969+00:00 |
+| DRY2696_9_residual_values_present | NONCLAIM_SCOREABLE_RESIDUAL_BRANCH_ONLY | NONCLAIM_SCOREABLE_RESIDUAL_BRANCH_ONLY | true | false | false | 2026-06-23T08:03:52.331971+00:00 |
+| DRY2696_10_orbital_GM_backfill | REJECT_ORBITAL_GM_BACKFILL | REJECT_ORBITAL_GM_BACKFILL | true | false | false | 2026-06-23T08:03:52.331974+00:00 |
+
+## Claim Gates
+
+| gate_id | pass_condition | current_status | evidence | valid_for_claim | claim_allowed | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- |
+| CG2696_0_kappa_import | kappa/G_eff is parent-owned or explicitly conditional | PASS_CONDITIONAL_NOT_PROMOTED | 2695 imported as conditional | false | false | 2026-06-23T08:03:52.331977+00:00 |
+| CG2696_1_parent_charge | source mass is defined by parent Hamiltonian/Noether charge before readout | FAIL_PARENT_PHASE_SPACE_UNSIGNED | SMA2696_1;CPS2696_0-CPS2696_3 | false | false | 2026-06-23T08:03:52.331980+00:00 |
+| CG2696_2_PiM_descent | Pi_M descends from parent charge and owns variation terms | FAIL_PIM_DESCENT_UNSIGNED | SMA2696_4;PIM2696_2 | false | false | 2026-06-23T08:03:52.331982+00:00 |
+| CG2696_3_flux_closure | d(Pi_M J_H)=0 or dQ_M[tau]=0 in source-free exterior | FAIL_FLUX_CLOSURE_UNSIGNED | SMA2696_5;MRR2696_0 | false | false | 2026-06-23T08:03:52.331985+00:00 |
+| CG2696_4_worldtube_glue | worldtube source measure equals exterior charge, not bare mass | FAIL_WORLDTUBE_GLUE_UNSIGNED | SMA2696_6;CPS2696_4 | false | false | 2026-06-23T08:03:52.331987+00:00 |
+| CG2696_5_extra_channels | all non-EH/projector/boundary/domain/memory/range/frame mass channels vanish or are bounded | FAIL_EXTRA_CHANNEL_SILENCE_UNSIGNED | SMA2696_7;MRR2696_1-MRR2696_5 | false | false | 2026-06-23T08:03:52.331990+00:00 |
+| CG2696_6_Gauss_readout | same charge gives Poisson/Gauss/orbital inverse-square coefficient | FAIL_GAUSS_READOUT_UNSIGNED | SMA2696_8;MRR2696_6 | false | false | 2026-06-23T08:03:52.331992+00:00 |
+| CG2696_7_PPN_stability | source measure survives beta/gamma/PPN order | FAIL_PPN_SOURCE_STABILITY_UNSIGNED | SMA2696_9;MRR2696_7 | false | false | 2026-06-23T08:03:52.331995+00:00 |
+| CG2696_8_verdict | source-measure branch proves local GR/Newton now | CLAIM_BLOCKED | all gates above | false | false | 2026-06-23T08:03:52.331997+00:00 |
+
+## Decisions
+
+| decision_id | decision | rationale | status | next_action | claim_allowed | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- |
+| DEC2696_0_best_language | USE_PARENT_HAMILTONIAN_CHARGE_FIRST | The defensible mass route is standard covariant phase-space/Noether charge language; Pi_M should descend from that charge, not substitute for it. | REAL_REFINEMENT | write next parent action fixed-point with Q_tau/H_tau as the mass owner | false | 2026-06-23T08:03:52.332000+00:00 |
+| DEC2696_1_source_measure_not_earned | MEFF_SOURCE_GLUE_NOT_DERIVED | Current MTS has not parent-signed charge descent, Pi_M variation, flux closure, worldtube glue, extra-sector silence, Gauss readout, or PPN stability. | NO_CLAIM | keep residual rows active | false | 2026-06-23T08:03:52.332003+00:00 |
+| DEC2696_2_bare_mass_guard | BARE_MATTER_MASS_IS_NOT_ENOUGH | The source mass in the local GR/Newton bridge must be dressed parent charge including binding/field/boundary ownership, not raw rest-matter mass. | ANTI_OVERCLAIM | state M_source as Hamiltonian/Noether charge in future spine | false | 2026-06-23T08:03:52.332007+00:00 |
+| DEC2696_3_orbital_backfill_guard | ORBITAL_GM_CANNOT_BE_THE_PROOF | The weak-field/orbital coefficient must be derived from the source charge; using fitted GM as the premise reverses the theorem. | ANTI_CHEAT_GUARD | derive Gauss/orbital readout or retain Delta_cal | false | 2026-06-23T08:03:52.332010+00:00 |
+| DEC2696_4_next_route | BUILD_MINIMAL_LOCAL_PARENT_FIXED_POINT | The next leap is not another overview; it is the smallest parent-action local branch that simultaneously owns kappa, EH charge, source measure, extra-sector silence, and PPN readout. | NEXT_ROUTE_SELECTED | run 2697 minimal local parent-action fixed-point ansatz | false | 2026-06-23T08:03:52.332012+00:00 |
+
+## Next Target
+
+| target_id | selection_status | target_doc | target_script | purpose | acceptance_gate | forbidden_shortcuts | private_only | claim_allowed | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| NEXT2696_0_selected | selected_leap_forward | 2697-Y5-R2FR-minimal-local-parent-action-fixed-point-ansatz-kappa-source-measure-EH.md | scripts/Y5_R2FR_minimal_local_parent_action_fixed_point_ansatz_kappa_source_measure_EH_2697.py | construct the smallest local parent-action branch that can sign the kappa topological sector, EH/covariant phase-space charge, source-measure glue, extra-sector silence, Gauss/Newton readout, and PPN residual handoff | either a coherent fixed-point contract exists with every local-GR prerequisite named, or the local branch is explicitly demoted to residual closure-only | another broad recap; treating Pi_M as fitted mask; treating bare mass as source charge; using orbital GM as premise; public/GitHub action; formalization-workbench edits | true | false | 2026-06-23T08:03:52.332016+00:00 |
+| NEXT2696_1_fallback | fallback_if_fixed_point_fails | 2697b-Y5-R2FR-Meff-residual-values-and-local-bound-runner.md | scripts/Y5_R2FR_Meff_residual_values_and_local_bound_runner_2697b.py | fill Delta_flux, Delta_PiM, Delta_symp, Delta_extra, Delta_frame, Delta_nonEH, Delta_cal, and Delta_PPN as nonclaim residual inputs | all residual rows numeric/sourced/units-clean and still nonclaim | pretending missing residuals are zero | true | false | 2026-06-23T08:03:52.332019+00:00 |
+
+## Project Status Snapshot
+
+| status_id | area | current_state | meaning | claim_ready | next_action | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- |
+| STATUS2696_0_kappa | kappa/G_eff | CARRIED_CONDITIONAL_NOT_CLAIMED | 2695 topological kappa is a candidate parent clause only | false | needs parent fixed-point adoption | 2026-06-23T08:03:52.332022+00:00 |
+| STATUS2696_1_source_measure | M_eff/source mass | STANDARD_CHARGE_ROUTE_SELECTED_NOT_DERIVED | source mass should be parent Hamiltonian/Noether charge; Pi_M must descend from it | false | build minimal local parent fixed point | 2026-06-23T08:03:52.332025+00:00 |
+| STATUS2696_2_Newton | Newton source normalization | BLOCKED_BY_SOURCE_GLUE_AND_GAUSS_READOUT | closed M_eff flux and Gauss/orbital coefficient are not parent-derived | false | derive or retain Delta_flux/Delta_cal | 2026-06-23T08:03:52.332027+00:00 |
+| STATUS2696_3_local_GR | PPN/local GR | BLOCKED_BY_PPN_AND_R11 | first-order source charge would still need gamma/beta/operator stability | false | carry PPN residual handoff into 2697 | 2026-06-23T08:03:52.332030+00:00 |
+| STATUS2696_4_public | publication/GitHub | NO_ACTION | private checkpoint only | false | no push | 2026-06-23T08:03:52.332032+00:00 |
+
+## Validation
+
+| check_id | passed | detail | timestamp_utc |
+| --- | --- | --- | --- |
+| VAL2696_sources_exist_and_needles_found | true | all cited source paths exist and required needles were found | 2026-06-23T08:03:52.464537+00:00 |
+| VAL2696_source_measure_claim_blocked | true | source-measure/M_eff claim remains blocked for current MTS | 2026-06-23T08:03:52.464548+00:00 |
+| VAL2696_charge_route_math_valid | true | standard covariant phase-space charge route is mathematically valid as a conditional reference | 2026-06-23T08:03:52.464552+00:00 |
+| VAL2696_MTS_transfer_unsigned | true | MTS transfer to EH/source charge remains unsigned | 2026-06-23T08:03:52.464554+00:00 |
+| VAL2696_residual_requirements_nonclaim | true | M_eff residual rows remain nonclaim, nonnumeric, and not score-ready | 2026-06-23T08:03:52.464557+00:00 |
+| VAL2696_PiM_safer_route_selected | true | Pi_M is demoted to derived projection of parent Hamiltonian/Noether charge | 2026-06-23T08:03:52.464559+00:00 |
+| VAL2696_dryrun_refusals | true | dry-run refuses formula-only, bare-mass, fitted-PiM, open-flux, open-worldtube, extra-mass, missing-Gauss, and orbital-GM backfill cases | 2026-06-23T08:03:52.464562+00:00 |
+| VAL2696_claim_gates_block_claims | true | claim gates block source-measure/local-GR/Newton promotion | 2026-06-23T08:03:52.464564+00:00 |
+| VAL2696_csv_parse | true | parsed 12 output CSVs | 2026-06-23T08:03:52.464566+00:00 |
+| VAL2696_branch_copies_parse | true | parsed 5 branch-copy CSVs | 2026-06-23T08:03:52.464569+00:00 |
+| VAL2696_formalization_write_guard | true | no output path targets formalization-workbench | 2026-06-23T08:03:52.464571+00:00 |
+| VAL2696_pycache_absent_at_validation_time | true | scripts/__pycache__ absent when validation rows were built | 2026-06-23T08:03:52.464573+00:00 |
+| VAL2696_next_target_selected | true | 2697 minimal local parent-action fixed point selected | 2026-06-23T08:03:52.464575+00:00 |
+| VAL2696_no_public_claim | true | no row allows a public or GitHub claim | 2026-06-23T08:03:52.464578+00:00 |
+| VAL2696_OVERALL | true | 2696 selects the parent Hamiltonian/Noether charge route for M_eff, blocks source-measure promotion, stages residuals, and selects the minimal local parent-action fixed point as the next leap | 2026-06-23T08:03:52.464580+00:00 |

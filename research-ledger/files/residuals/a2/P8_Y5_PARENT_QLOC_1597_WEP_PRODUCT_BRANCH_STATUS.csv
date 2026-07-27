@@ -1,0 +1,4 @@
+same_parent_branch_id,status_id,quantity,status,value_or_formula,what_it_allows,what_it_does_not_allow,valid_for_claim,claim_allowed
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,WPS1597_0_product_bound,abs(Delta_w_TiPt*tau_WEP),SOURCE_BACKED_BOUND_ANCHOR_RETAINED,<= 2.8e-15,private bound-only bookkeeping,"no Delta_w number, no WEP pass, no local-GR claim",False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,WPS1597_1_delta_w,abs(Delta_w_TiPt),BLOCKED_BY_NO_TAU_MIN,if tau_min>0 then <=2.8e-15/tau_min,conditional amplitude law only,no numeric Delta_w bound,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,WPS1597_2_zero_route,Delta_w_TiPt=0,BLOCKED_BY_NO_PARENT_COUPLING_ZERO_PROOF,not derived,target for parent action work,no zero theorem claim,False,False

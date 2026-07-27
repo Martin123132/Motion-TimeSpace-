@@ -1,0 +1,6 @@
+update_id,runner_field,rule,status,valid_for_claim,timestamp_utc
+RUNU3881_0_bt_gate,b_t,b_t := 0 if the 3881 C_*/A_3 mechanism is inserted and parent-signed; otherwise b_t := |d_t ln C_*| + |d_t ln M_eff| + |d_t epsilon_mu/(1+epsilon_mu)| + |d_t ln Z_Poisson| + |d_t ln Z_frame|,CONDITIONAL_ZERO_OR_GDOT_FALLBACK,False,2026-07-01T07:24:58+00:00
+RUNU3881_1_common_drift,b_common_drift,b_common_drift=b_t+b_r+b_lambda+b_frame+b_domain+b_Bianchi,CARRIED_FROM_3880_WITH_BT_REFINED,False,2026-07-01T07:24:58+00:00
+RUNU3881_2_bGcommon,b_Gcommon,b_Gcommon := b_t+b_r+b_lambda+b_frame+b_domain+b_Bianchi+b_MHref_lock+b_PiM_JH_flux+b_GM_anti_circular+b_PPN_readout,RUNNER_RETAINED_NO_CLAIM,False,2026-07-01T07:24:58+00:00
+RUNU3881_3_top_level,"z_g_active,cal","|z_g_active,cal| <= b_Qstar + b_Noether + b_tail_rel + b_Gcommon",NO_CANCELLATION_RUNNER,False,2026-07-01T07:24:58+00:00
+RUNU3881_4_claim_guard,claim_allowed,false unless C_*/A_3 parent action is adopted or every Gdot/radial/range/frame/domain/Bianchi component is source-bounded,NO_LOCAL_GR_CLAIM,False,2026-07-01T07:24:58+00:00

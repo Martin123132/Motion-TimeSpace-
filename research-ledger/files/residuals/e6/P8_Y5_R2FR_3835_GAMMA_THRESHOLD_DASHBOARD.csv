@@ -1,0 +1,5 @@
+dashboard_id,item,current_value,threshold_symbol,threshold_source,test_status,claim_allowed,timestamp_utc
+GDASH3835_0_threshold,gamma threshold,MISSING_NUMERIC_THRESHOLD,theta_gamma_local,MISSING_SOURCE_ROW_FOR_LOCAL_PPN_GAMMA_LIMIT,BLOCKED_THRESHOLD_SOURCE_REQUIRED,False,2026-07-01T02:25:55+00:00
+GDASH3835_1_total_bound,B_gamma_total,FORMULA_ONLY,theta_gamma_local,requires numeric component bounds and sourced gamma limit,BLOCKED_NUMERIC_COMPONENTS_REQUIRED,False,2026-07-01T02:25:55+00:00
+GDASH3835_2_pass_rule,local gamma pass rule,PASS iff B_gamma_total <= theta_gamma_local with all component rows valid_for_claim=true,theta_gamma_local,not yet sourced,RULE_DEFINED_NONCLAIM,False,2026-07-01T02:25:55+00:00
+GDASH3835_3_current_verdict,current gamma verdict,BLOCKED_NONCLAIM,theta_gamma_local,missing threshold and missing numeric component rows,BLOCKED,False,2026-07-01T02:25:55+00:00

@@ -1,0 +1,8 @@
+audit_id,clause,current_status,risk_if_open,next_action,valid_for_claim,timestamp_utc
+PPA4018_0_first_order_normalization,A_source fixed by 4015 Newton/Gauss/Hilbert source before beta readout,CONDITIONAL_4015_4012,beta can be backfilled by measured GM,retain delta_beta_source if source equality is not signed,False,2026-07-01T21:28:21+00:00
+PPA4018_1_EH_only_second_order,no extra O(U^2) operator beyond EH nonlinear completion,CONDITIONAL_NOT_FINAL,beta/gamma shifted by R11/q_loc/operator tails,prove EH-only/R11 no-extra operator or retain residuals,False,2026-07-01T21:28:21+00:00
+PPA4018_2_same_readout_frame,same observed coframe/frame/gauge used for temporal and spatial potentials,CONDITIONAL,gamma/readout mismatch,retain gamma_readout/frame rows,False,2026-07-01T21:28:21+00:00
+PPA4018_3_source_current_origin,Hilbert source current comes from descended matter+EM action with no source prefactors,CONDITIONAL_3988,source-normalized beta and WEP/source charge leak,retain source-current origin vector,False,2026-07-01T21:28:21+00:00
+PPA4018_4_boundary_domain,boundary/domain/projector/preferred-frame sectors vanish or are bounded,OPEN,"alpha_i, xi, zeta_i and beta boundary residuals survive",keep full PPN vector live,False,2026-07-01T21:28:21+00:00
+PPA4018_5_KG_packet,4017 K_G packet is same-branch and does not re-enter at O(U^2),CANDIDATE_PACKET_ONLY,constant coupling not enough for local GR,feed C_Gref_kappa/Gdot rows into PPN vector if unsigned,False,2026-07-01T21:28:21+00:00
+PPA4018_6_claim_firewall,Newton/gamma/beta partial success is not local-GR promotion,LOCKED,public/local-GR overclaim,require all PPN vector components zero/bounded independently,False,2026-07-01T21:28:21+00:00

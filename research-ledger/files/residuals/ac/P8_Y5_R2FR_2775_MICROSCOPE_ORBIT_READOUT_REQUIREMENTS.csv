@@ -1,0 +1,7 @@
+orbit_id,required_input,purpose,accepted_form,current_status,blocks,valid_for_claim
+ORB2775_0_orbit_ephemeris,MICROSCOPE orbit/altitude/time sampling or averaged equivalent,turn Earth/source residual into instrument-frame acceleration,source-backed orbit parameters or official averaged kernel,MISSING,tau_WEP,False
+ORB2775_1_attitude_axis,instrument sensitive axis/attitude convention,project residual acceleration into measured channel,axis convention or theorem that scalar residual is orientation independent,MISSING,sign/readout convention,False
+ORB2775_2_eta_convention,eta_AB normalization/sign convention,define comparison to 2.8e-15 bound,eta_AB formula and absolute-value claim convention,BOUND_IMPORTED_BUT_FORMULA_NOT_PARENT_MAPPED,direct P_WEP row,False
+ORB2775_3_environmental_model,known systematics/environment subtraction convention,avoid mixing MTS residual with experimental nuisance subtraction,official readout/systematics convention or conservative envelope,MISSING,claim-grade tau,False
+ORB2775_4_average_kernel,time/orbit averaging kernel,"define tau_WEP as an averaged projection, not an instantaneous guess",kernel K_orb(t) or stated averaged scalar convention,MISSING,numeric tau_WEP,False
+ORB2775_5_verdict,orbit/readout pack,experiment-side of tau_WEP,all ORB2775_0..4 real or theorem-reduced,ORBIT_READOUT_NOT_ACQUIRED,tau_WEP and WEP product scoring,False

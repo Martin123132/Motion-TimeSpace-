@@ -1,0 +1,7 @@
+gate_id,claim,gate_pass,reason,claim_allowed,valid_for_claim
+CG1005_0_components_guarded,all five Delta_ref derivative components have strict guardrails,true,1000-1004 produce refused nonclaim runners for source/radius/time/frame/lambda,false,false
+CG1005_1_vector_norm_bound,||D_ref Delta_ref||_1/M_H_ref is bounded,false,component values and positive same-frame M_H_ref are missing,false,false
+CG1005_2_no_component_cancellation,component cancellation can be used to pass the vector gate,false,L1 absolute sum is required; signed cancellation rows are refused,false,false
+CG1005_3_RC994_0,RC994_0 residual current passes,false,Delta_ref derivative vector norm and M_H_ref denominator remain nonclaim,false,false
+CG1005_4_FB554_0_local_GR,FB554_0/local-GR branch passes,false,local R10 residual vector is scaffolded but not zero or source-bounded,false,false
+CG1005_5_guardrail,derivative-vector norm guardrail is installed,true,all component placeholders are refused and vector norm runner blocks promotion,false,false

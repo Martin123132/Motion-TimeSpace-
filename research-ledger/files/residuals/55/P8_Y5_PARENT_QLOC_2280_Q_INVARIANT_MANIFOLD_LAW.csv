@@ -1,0 +1,5 @@
+law_id,object,formula,derived_condition,status,valid_for_claim
+QIM2280_0_definition,local residual coordinate,"q := C_R - F(C_T), with F(C_T)=C_T/(1-C_T)",Dq = DC_R - DC_T/(1-C_T)^2,DERIVED_FROM_2278_EXACT_EXCHANGE_CONDITION,False
+QIM2280_1_invariant_manifold,q=0 local-GR manifold,q=0 is preserved iff Dq|_{q=0}=0,E_R - F'(C_T) E_T + B_q = 0 on q=0,NECESSARY_AND_SUFFICIENT_TANGENCY_CONDITION,False
+QIM2280_2_stable_manifold,finite residual branch,Dq = -kappa_q q + S_q + higher_order(q^2),if kappa_q>=K>0 then q decays up to sourced residuals,CONDITIONAL_STABILITY_LAW,False
+QIM2280_3_score_rule,local-GR claim gate,local_GR_score_allowed only if tangency or coercive residual operator is parent-signed,phase exchange alone is insufficient unless it proves QIM2280_1,CLAIM_DISCIPLINE_RULE,False

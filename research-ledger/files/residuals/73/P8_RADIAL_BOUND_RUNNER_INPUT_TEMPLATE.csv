@@ -1,0 +1,5 @@
+template_id,quantity,definition,required_columns,maps_to,template_status,valid_for_claim
+BR501_0_equality_residual,R_eq,Pi_M J_H - J_M_top - dB_zero,system_id;r1;r2;R_eq_integral;norm_convention;units;source_file;assumptions,epsilon_radial_Meff equality residual contribution,not_filled,false
+BR501_1_boundary_term,B_zero_flux,integral_boundary dB_zero or improvement flux,system_id;boundary_type;B_zero_flux;units;source_file;assumptions,boundary_monopole_shift and radial source hair,not_filled,false
+BR501_2_channelwise_extra,I_extra_channel,Pi_M dJ_extra by boundary/domain/bulk/nonEH/kappa/frame/species channel,system_id;channel;r1;r2;I_extra_channel;units;affected_rows;source_file;assumptions,mu_extra vector and R4/R9/R10/R11 residuals,not_filled,false
+BR501_3_bound_decision,epsilon_radial_bound_decision,epsilon_radial_Meff and dln_mu_dlnr compared against local-bound rows,system_id;epsilon_radial_Meff;dln_mu_dlnr;bound_source;pass_fail;no_cancellation_flag;notes,source-normalization local bound decision,not_run,false

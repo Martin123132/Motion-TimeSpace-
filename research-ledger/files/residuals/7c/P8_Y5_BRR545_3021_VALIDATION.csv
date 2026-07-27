@@ -1,0 +1,14 @@
+validation_id,passed,requirement,evidence
+VAL3021_00_sources_exist,True,every cited local source path exists,P8_Y5_R2FR_3021_SOURCE_REGISTER.csv
+VAL3021_01_csv_parse,True,generated CSV rows parse cleanly,all generated CSV artifacts import with csv.DictReader
+VAL3021_02_theorem_contract,True,log-lapse linearity theorem contract is written,P8_Y5_R2FR_3021_LOG_LAPSE_LINEARITY_THEOREM_ATTEMPT.csv
+VAL3021_03_parent_not_signed,True,lambda_N=0 is not promoted to parent-signed proof,P8_Y5_R2FR_3021_LOG_LAPSE_LINEARITY_THEOREM_ATTEMPT.csv; P8_Y5_R2FR_3021_PROMOTION_GATES.csv
+VAL3021_04_operator_map_present,True,parent operator residual map includes core and total rows,P8_Y5_R2FR_3021_PARENT_OPERATOR_RESIDUAL_MAP.csv
+VAL3021_05_lambda_ledger_present,True,lambda_N residual ledger includes core and total rows,P8_Y5_R2FR_3021_LAMBDA_N_RESIDUAL_LEDGER.csv
+VAL3021_06_claims_blocked,True,all rows remain nonclaim/private-control rows,all 3021 generated ledgers
+VAL3021_07_missing_markers_nonclaim,True,rows with MISSING markers are never valid_for_claim=true,all 3021 generated ledgers
+VAL3021_08_branch_copies_exist,True,branch copies and acquisition queue exist,P8_Y5_R2FR_3021_BRANCH_COPIES.csv
+VAL3021_09_outputs_scoped,True,no generated file is outside post-checkpoint-work,generated path scope check
+VAL3021_10_formalization_not_targeted,True,formalization-workbench is not modified by this checkpoint,output target list excludes formalization-workbench
+VAL3021_11_next_target_selected,True,next target selects psiN Hamiltonian owner or lambdaN bound input,P8_Y5_R2FR_3021_NEXT_TARGET.csv
+VAL3021_99_overall,True,all 3021 validation checks pass,aggregate of VAL3021_00 through VAL3021_11

@@ -1,0 +1,7 @@
+step_id,statement,math_form,result,valid_for_claim
+T0_local_expansion,Expand the parent local action around the compact local branch in variables y^A that map to Y_loc^A.,S = S_0 + integral sqrt(h)[L_A y^A + 1/2 y^A L_AB y^B + ...] + boundary terms,linear coefficients L_A are the source currents J_Y and boundary B_Y,false
+T1_exact_reflection,"If an exact parent branch symmetry sends y^A -> -y^A while holding physical local observables fixed, the action is even in y.","S[y,g,psi] = S[-y,g,psi]","all odd terms vanish, so L_A = 0 at y=0",false
+T2_boundary_evenness,"If the boundary/collar action is also even or stationary with no marker sources, the linear boundary variation vanishes.",delta S_boundary/delta y^A at y=0 = 0,B_Y=0,false
+T3_positive_operator,"With positive local Hessian, the 489 energy identity forces y^A=0.",integral[(nabla y)^2 + m^2 y^2] = 0,conditional Y_loc zero theorem,false
+T4_composite_lock,The auxiliary variables must be locked to the actual composite local residuals through PPN order.,y^A = Y_loc^A + O(PPN beyond gate),"needed before the theorem clears alpha3, mu_extra, R11, or local GR",false
+T5_current_corpus,"The current corpus does not yet derive the exact reflection, matter neutrality, boundary evenness, and composite lock.",missing C0/C1/C2/C3/C4/C5 parent certificates,conditional theorem only; no promotion,false

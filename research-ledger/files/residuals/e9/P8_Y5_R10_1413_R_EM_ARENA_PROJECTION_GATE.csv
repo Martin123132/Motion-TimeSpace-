@@ -1,0 +1,6 @@
+arena_id,arena,dependency,current_status,reason,valid_for_claim,claim_allowed
+RAG1413_0_alpha_clock,clock/alpha_EM,b_alpha_EM and readout descent,BLOCKED_PRODUCT_ONLY,"clock product bound exists, but standalone b_alpha and tau_clock dynamics are not parent-derived",False,False
+RAG1413_1_WEP,WEP/Coulomb,beta_source_alpha * b_alpha * tau_WEP and U_a/material tensor,BLOCKED_SOURCE_NORMALIZATION_AND_Ua,source normalization owner is missing and 1409 blocks U_a official readout/source kernel,False,False
+RAG1413_2_R10,R10/local force range,"f_EM,S/T beta_EM, K(lambda), tail, and bound curve",BLOCKED_MATERIAL_AND_BOUND_CURVE,R10 material leg and bound curve projection are not filled for R_EM,False,False
+RAG1413_3_local_GR,local GR/Newton,R_EM_local=0 or below local bounds plus common matter owner and EH/PPN gates,BLOCKED_NO_LOCAL_GR_CLAIM,EM-lock not signed and finite local EM residual vector is missing,False,False
+RAG1413_4_transfer_policy,cross-arena transfer,"same parent screen/domain/source normalization for clock, WEP, R10, and local EM",ARENA_ISOLATION_ACTIVE,clock-screening cannot be used as a WEP or R10 pass without a parent map,False,False

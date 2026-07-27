@@ -1,0 +1,7 @@
+gate_id,gate,status,reason,valid_for_claim,claim_allowed
+GATE1396_0_sources,all cited local sources exist and anchors are present,PASS,source register validates against 987/988/989 and current beta-sector corpus,False,False
+GATE1396_1_EM_lock,EM-lock closes beta_EM=0,BLOCKED_CURRENT_CORPUS_FAILS_UNIQUE_F2,unique Maxwell F2 fails current corpus and other EM-lock clauses are unsigned,False,False
+GATE1396_2_finite_template,finite beta_EM source-bound template exists,PASS_NONCLAIM_TEMPLATE,"beta_EM, b_alpha, beta_source_alpha, clock/WEP split, R10 material leg, and residual vector are explicit",False,False
+GATE1396_3_empirical_scores,alphaEM/WEP/clock/R10 scores may be reported,BLOCKED_VALUES_AND_PARENT_MAPS_MISSING,finite rows are targets/templates only; no standalone beta_EM or cross-arena map exists,False,False
+GATE1396_4_R10_score,R10 alpha(lambda) score may be reported,BLOCKED_R10_MATERIAL_INPUTS_MISSING,beta_EM contribution cannot fill beta_bulk or runner alpha rows,False,False
+GATE1396_5_local_claim,local GR/Newton reduction can be claimed,BLOCKED_NO_CLAIM,"1396 is an EM-lock repair/source-bound checkpoint, not a derived local GR limit",False,False

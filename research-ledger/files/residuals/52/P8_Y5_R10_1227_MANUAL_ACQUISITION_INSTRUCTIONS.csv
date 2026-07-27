@@ -1,0 +1,5 @@
+manual_step_id,instruction,success_evidence,do_not_do,valid_for_claim,claim_allowed
+MAN1227_0_open_portal,Open https://cmsm-ds.onera.fr/ in a normal browser and enter the MICROSCOPE project area.,screenshot or copied package list showing CMSM/MICROSCOPE package names,do not rename or reinterpret files before provenance is recorded,False,False
+MAN1227_1_search_terms,"Search for SUEP, SUREF, science sessions, accelerometer, readout, documentation, orbit, attitude, masks, gx, gz, Sxx, and Sxz.","package names, metadata fields, access/license status, and any data dictionary URLs",do not substitute paper equations for arrays,False,False
+MAN1227_2_download_raw,"If official downloads are available, save unmodified packages under source-intake/microscope/raw/ and docs under source-intake/microscope/docs/.",local file paths plus checksums and source URLs,do not mark valid_for_claim=true until parser verifies schema/units,False,False
+MAN1227_3_report_blocker,"If login/manual acceptance is required, record the exact screen text and whether account/request access is needed.",access-blocker note or portal export instructions,do not bypass access controls,False,False

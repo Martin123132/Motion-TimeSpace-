@@ -1,0 +1,7 @@
+prior_id,quantity,value_or_status,units,formula_or_requirement,status,valid_for_claim
+DWP2773_0_WEP_bound,eta_TiPt_bound,2.8e-15,dimensionless,abs(P_WEP_relative_source_weight) <= eta_TiPt_bound,bound_anchor_available,False
+DWP2773_1_material_pair,AB,TA6V_minus_PtRh10,convention,Delta_w_TiPt := w_Ti_source - w_Pt_source in the MICROSCOPE convention,context_available,False
+DWP2773_2_theorem_zero_option,Delta_w_TiPt,MISSING_PARENT_SOURCE_SCALAR_EXCLUSION,dimensionless,Delta_w_TiPt=0 only if SSE2773_5 is parent signed,not_available,False
+DWP2773_3_finite_prior_width,abs(Delta_w_TiPt),MISSING_NUMERIC_PRIOR_WIDTH,dimensionless,"if tau_WEP is numeric and nonzero, require abs(Delta_w_TiPt) <= 2.8e-15/abs(tau_WEP)",blocked_by_tau_WEP,False
+DWP2773_4_tau_WEP,tau_WEP,MISSING_LAB_SOURCE_ORBIT_PROJECTION,dimensionless,"derive from Earth/source worldtube, spacecraft orbit, observed coframe, and force readout",not_available,False
+DWP2773_5_product,P_WEP_relative_source_weight,MISSING_ABS_DELTA_W_TiPt_TIMES_TAU_WEP,dimensionless,P = abs(Delta_w_TiPt * tau_WEP); no cancellation/sign trick accepted,not_scoreable,False

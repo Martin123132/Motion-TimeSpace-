@@ -1,0 +1,6 @@
+contract_id,object,required_input,current_status,failure_mode,valid_for_claim
+ARC3436_0_kernel_convention,published Yukawa convention,V(r)=V_N(r)[1+alpha exp(-r/lambda)] and a_Y/a_N=alpha(1+r/lambda)exp(-r/lambda),CONDITIONALLY_DERIVED_IN_3013,"none for convention, but convention alone is not a prediction",False
+ARC3436_1_bound_curve,real alpha_bound(lambda) curve,"positive numeric lambda/alpha rows, source URL/DOI, digitization/table method, no MISSING markers, valid_for_claim=true",BLOCKED_FULL_CURVE_MISSING,anchors and internal trace candidate cannot replace a source-backed full curve,False
+ARC3436_2_mts_prediction,MTS alpha_predicted(lambda),numeric lambda_i and alpha_i or theorem-zero certificate sourced to parent action,BLOCKED_SOURCE_MAP_MISSING,symbolic K_X Qbar_XH qbar_XT rows cannot be scored,False
+ARC3436_3_no_extrapolation,comparison rule,lambda_i must lie inside source-backed curve support; log interpolation only between valid rows,RUNNER_GUARD_PRESENT,lambda outside bound support blocks comparison,False
+ARC3436_4_no_calibration_escape,G0/M_H_ref protection,"finite-range and radial residuals must appear as alpha(lambda), not be absorbed into Newtonian source calibration",GUARD_ACTIVE,would otherwise hide a local fifth force inside G0,False

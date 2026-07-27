@@ -1,0 +1,6 @@
+collar_id,object,candidate_formula,qbasic_condition,current_status,valid_for_claim
+COL3248_0_worldtube_selector,source worldtube,W_source := closure(supp J_H[tau]),"J_H, tau, e_obs and support topology are parent-owned q-basic objects",CONDITIONAL_SELECTOR_FROM_1016_NOT_PARENT_SIGNED,false
+COL3248_1_distance_function,public metric distance to W_source,"rho_pub(x) := dist_{g_pub(q)}(x,W_source)",g_pub and W_source descend through q; use a normal tubular neighbourhood avoiding cut locus/caustics,CONDITIONAL_GEOMETRIC_CONSTRUCTION,false
+COL3248_2_boundary_levels,boundary level functions,"s_i(x) := rho_pub(x)^2-r_i^2, S_i := {s_i=0}, A_ext[r1,r2] := {r1<=rho_pub<=r2}","r1,r2 fixed before readout; grad s_i non-null/spacelike as required; orientation fixed",FORMULA_FILLED_INPUTS_UNSIGNED,false
+COL3248_3_smooth_collar,collar cutoff,chi_B(x) := eta((rho_pub(x)-r1)/(r2-r1)) with eta fixed once,"eta,r1,r2 fixed constants and rho_pub q-basic",FORMULA_FILLED_INPUTS_UNSIGNED,false
+COL3248_4_frame_normal,observed frame and normal,u := clock leg of e_obs(q); n_i := grad_i s_i / sqrt(|g_pub^{ab} grad_a s_i grad_b s_i|),"e_obs=Obs_e(q), g_pub=q-owned, non-null boundary, common orientation",FORMULA_FILLED_INPUTS_UNSIGNED,false

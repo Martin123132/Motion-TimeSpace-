@@ -1,0 +1,6 @@
+interface_id,target,dependency,effect,current_status,claim_allowed,valid_for_claim
+BEI1396_0_to_sector_pack,SBP1395_2_beta_EM,EM-lock repair or finite beta_EM template,beta_EM remains missing/nonclaim until EM-lock signs or finite bound map is real,SECTOR_BETA_EM_PROMOTION_BLOCKED,False,False
+BEI1396_1_to_binding,"BBR1394 beta_bind,S/T","f_EM,S/T beta_EM",EM binding part of beta_bind cannot be filled,BINDING_EM_COMPONENT_BLOCKED,False,False
+BEI1396_2_to_beta_bulk,"BBS1393 beta_bulk,S/T","beta_bind,S/T including beta_EM",bulk beta legs remain blocked,BULK_BETA_PROMOTION_BLOCKED,False,False
+BEI1396_3_to_R10_template,R10_alpha_lambda_curve_MTS_1392_BULK_ALPHA_TEMPLATE_NONCLAIM.csv,"beta_bulk,S/T and EM material contribution",R10 alpha remains symbolic/nonclaim,R10_TEMPLATE_PROMOTION_BLOCKED,False,False
+BEI1396_4_verdict,beta_EM to all local gates,EM-lock or finite beta_EM source-bound pack,all alphaEM/WEP/clock/R10/local gates remain blocked,BETA_EM_INTERFACE_READY_SCORING_BLOCKED,False,False

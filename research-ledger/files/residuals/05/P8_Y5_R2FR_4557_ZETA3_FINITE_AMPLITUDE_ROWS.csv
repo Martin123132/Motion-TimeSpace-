@@ -1,0 +1,5 @@
+row_id,channel,exact_requirement,numeric_value,units,status,valid_for_claim
+ZF4557_0_master_no_cancellation,zeta3 total retained channel,"|P_zeta3 := K_zeta3 S_static|*epsilon_U^2 + |Q_zeta3 := K_zeta3 B_boundary,zeta3| + |R_higher_zeta3| <= 1.0000000000000000e-08 dimensionless",1.0000000000000000e-08,dimensionless,fallback_if_private_zero_scope_fails,False
+ZF4557_1_source_product_if_boundary_zero,P_zeta3,|P_zeta3| <= B_zeta3/epsilon_U^2 if boundary and higher terms are zero,1.6145606908061400e+06,dimensionless effective product,finite_source_product_budget_nonclaim,False
+ZF4557_2_source_product_equal_half_budget,P_zeta3,|P_zeta3| <= (B_zeta3/2)/epsilon_U^2 under equal source/boundary+higher split,8.0728034540306998e+05,dimensionless effective product,finite_source_product_half_budget_nonclaim,False
+ZF4557_3_boundary_plus_higher_half_budget,Q_zeta3 + R_higher_zeta3,|Q_zeta3| + |R_higher_zeta3| <= B_zeta3/2 under equal split,5.0000000000000001e-09,dimensionless,finite_boundary_higher_budget_nonclaim,False

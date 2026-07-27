@@ -1,0 +1,7 @@
+piece_id,Q_piece,status,role,not_enough_because,valid_for_claim
+QDEC993_0_EH,"Q_tau^EH[g_obs,tau]",conditional_GR_reference,baseline Hamiltonian charge shape,"does not include MTS extra, projector, boundary/reference, or coupling sectors",false
+QDEC993_1_boundary_reference,Q_tau^boundary + delta B_ref,not_parent_fixed,finite charge and reference subtraction,reference can absorb source normalization unless fixed before readout,false
+QDEC993_2_extra,Q_tau^extra + C_extra,not_extracted,motion/time/domain/memory/range charge leakage,extra-sector theta/Q and no-source operators are missing,false
+QDEC993_3_projector,"Q_tau^projector + C_projector + [d,Pi_M]J_H",not_extracted,mass projector/source-current channel,Pi_M chain map and variation terms remain retained residuals,false
+QDEC993_4_matter_source,C_tau^matter[J_H] and worldtube source glue,conditional_not_glued,links charge to observed source mass,Hilbert current equality and worldtube denominator glue are downstream and unsigned,false
+QDEC993_5_total,Q_tau^MTS=sum pieces above,not_promoted,candidate physical Hamiltonian mass charge,only Q_EH is conditionally available; total Q_tau cannot be evaluated,false

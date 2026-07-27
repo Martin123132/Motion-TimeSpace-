@@ -1,0 +1,7 @@
+pilot_id,object,status,evidence,usable_for_claim,next_requirement,valid_for_claim,claim_allowed
+GXP1422_0_official_kernel_skeleton,official kernel basis,FORM_ACQUIRED_NOT_NUMERIC,KER1071_1_fit_basis;KER1071_2_source_gravity_leg;KER1071_6_verdict,False,"numeric gx,gz,Sxx,Sxz arrays or exact reconstruction inputs",False,False
+GXP1422_1_dry_run_preview,1072 unit-shape preview,DRY_RUN_SHAPE_ONLY,DRY1072_0_segment210_kernel_preview,False,replace zero-phase/unit-amplitude columns with official or source-reconstructed arrays,False,False
+GXP1422_2_surrogate_preview,1074 circular monopole surrogate,NONCLAIM_PIPELINE_TEST_ONLY,GRID1074_0_segment210_surrogate,False,only use as smoke runner after explicit nonclaim flag; never as MICROSCOPE tau,False,False
+GXP1422_3_segment210_window,SUEP segment 210 metadata,SEGMENT_METADATA_AVAILABLE_MASKS_MISSING,SUEP1071_210,False,exact timestamps and glitch masks,False,False
+GXP1422_4_pilot_arrays,pilot gx/gz/Sxx/Sxz source-leg arrays,NOT_ACQUIRED_OR_RECONSTRUCTED,CSS1422_4_verdict; EBL1422 blockers,False,"CMSM export, data schema, or reconstruction inputs",False,False
+GXP1422_5_numeric_tau,"numeric tau_WEP / M_WEP,q",NOT_ACQUIRED,GXP1422_4_pilot_arrays plus missing residual/material map,False,arrays plus MTS material/source residual map,False,False

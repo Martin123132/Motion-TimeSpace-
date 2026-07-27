@@ -1,0 +1,4 @@
+update_id,formula,status,claim_allowed
+EJ2724_0_Poisson_residual_decomposition,E_Poisson_residual := E_operator_metric_only + E_second_order_HD + E_connection_LC + E_linearization_gauge + E_domain_boundary + E_extra_sector_LHS + E_inverse_divergence,FORMAL_VECTOR_NONCLAIM,false
+EJ2724_1_gauge_domain_refinement,E_gauge_domain := E_linearization_gauge + E_domain_boundary + E_inverse_divergence,FORMAL_VECTOR_NONCLAIM,false
+EJ2724_2_Newton_bridge_dependency,Newton_bridge_claim requires E_Poisson_residual=0 or sourced arena bounds plus kappa0/G_ref/source ownership,DEPENDENCY_LEDGER_NONCLAIM,false

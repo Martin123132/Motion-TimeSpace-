@@ -1,0 +1,5 @@
+rule_id,requirement,refusal_if,status,valid_for_claim,claim_allowed
+GKR1281_0_template_invalid,template rows are not live finite rows,template_id contains DO_NOT_SCORE or any MISSING_* marker remains,ACTIVE_REFUSAL_RULE,False,False
+GKR1281_1_source_path_anchor,source path and source anchor must exist and contain the equation/definition,"missing source path, missing anchor, or anchor not found",REQUIRED_FOR_LIVE_ROW,False,False
+GKR1281_2_metric_response_or_bound,either metric-response identity closes or q_loc profile/bound is explicit,neither theorem_zero_certificate nor source-backed numeric/symbolic bound exists,REQUIRED_FOR_CLAIM_REOPEN,False,False
+GKR1281_3_no_cancellation,epsilon_GK_q_loc is scored as an absolute component,cancellation with closure baseline or another residual is used,ACTIVE_REFUSAL_RULE,False,False

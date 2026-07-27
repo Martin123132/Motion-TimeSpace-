@@ -1,0 +1,7 @@
+rule_id,rule,result,evidence,claim_effect
+V498_0_sources,all cited source paths exist,pass,missing_sources=0,traceability only
+V498_1_prior_router_loaded,497 router and 496 minimum rows expose radial and calibration channels,pass,routes=absolute_calibration_offset;radial_Meff_hair;zero=absolute_calibration_offset;radial_Meff_hair;numeric=absolute_calibration_offset;radial_Meff_hair;minimum=absolute_calibration_offset;radial_Meff_hair,ties 498 to 497 and 496
+V498_2_radial_identity_written,"radial theorem attempt contains flux-difference, zero-law, bound-law, and no-leakage rows",pass,radial_rows=6,theorem attempt is concrete
+V498_3_calibration_contract_written,"calibration lock has same-frame, flux-mass, kappa, range, species, and lambda0 gates",pass,calibration_rows=6,calibration debt explicit
+V498_4_numeric_fallback_written,"numeric fallback templates exist for radial current, radial profile, calibration owner, and derivative hair",pass,numeric_template_rows=4,test branch ready but unfilled
+V498_5_no_false_claims,no theorem or numeric row is claim-valid while parent source identity and calibration lock are open,pass,radial_claim_rows=0;cal_claim_rows=0;numeric_claim_rows=0;hidden_gate_rows=0,no Newton/local-GR promotion

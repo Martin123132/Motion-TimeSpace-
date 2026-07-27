@@ -1,0 +1,4 @@
+pressure_id,formula,target,gate,absorption_gate,current_status,valid_for_claim,claim_allowed
+PGA1207_0_total_formula,epsilon_geom=C_P*(nabla_P_loc_Linf+coframe_lock_Linf+domain_motion_Linf+projector_stress_Linf),1.1723321502596888e-05,epsilon_geom*G_res_norm <= target,C_CK*epsilon_geom < 1,FORMULA_READY_VALUES_MISSING,False,False
+PGA1207_1_if_chain_rule_only,epsilon_geom=C_P*(nabla_P_loc_Linf+domain_motion_Linf+projector_stress_Linf) if coframe_lock_Linf=0 only,1.1723321502596888e-05,still blocked because chain-rule coframe zero does not kill nabla_P_loc/domain/stress,C_CK*C_P*(remaining components)<1,PARTIAL_ZERO_NOT_ENOUGH,False,False
+PGA1207_2_total_zero_condition,epsilon_geom=0,1.1723321502596888e-05,requires every component source row theorem-zero in one domain,automatic if epsilon_geom=0,BLOCKED_BY_NABLA_PLOC_DOMAIN_PROJECTOR_STRESS,False,False

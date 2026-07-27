@@ -1,0 +1,7 @@
+rule_id,rule,result,evidence,claim_effect
+V485_0_sources,all cited source paths exist,pass,missing_sources=0,traceability only
+V485_1_local_zero_loaded,checkpoint 484 conditional local-zero row is loaded,pass,LZ3_conditional_rows=1,confirms input to implication audit
+V485_2_blockers_present,"boundary, R11, and stress blockers exist in the local residual vector",pass,LRV_BOUNDARY_R7_ALPHA3;LRV_DOMAIN_R11_SOURCE_NORMALIZATION;LRV_PROJECTOR_STRESS_ACCOUNTING,audit targets the active local-GR blockers
+V485_3_implication_rejected,local-zero is not treated as sufficient for boundary/R11/stress silence,pass,I2_boundary_alpha3_preferred_momentum=not_implied;I4_R11_source_normalization=not_implied;I5_projector_stress_Bianchi=not_implied,no hidden local-GR promotion
+V485_4_no_claim_valid_rows,no implication row is valid for claim,pass,claim_valid_implication_rows=0,no Newton/PPN/local-GR pass
+V485_5_counterexamples_written,explicit counterexamples show why trace zero does not imply the missing tensor/operator/stress zeros,pass,counterexample_rows=3,shortcut rejected rather than hand-waved

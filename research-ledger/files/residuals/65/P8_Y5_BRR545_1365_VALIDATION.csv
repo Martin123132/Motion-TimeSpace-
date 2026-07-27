@@ -1,0 +1,13 @@
+check_id,check,status,details
+VAL1365_0_sources_exist,registered source paths exist and anchors are found,PASS,SRC1365_0_1364_doc=True/True;SRC1365_1_1364_next=True/True;SRC1365_2_1364_sector_audit=True/True;SRC1365_3_1010_doc=True/True;SRC1365_4_1010_residuals=True/True;SRC1365_5_metric_response_contract=True/True;SRC1365_6_metric_response_audit=True/True;SRC1365_7_stress_candidates=True/True;SRC1365_8_fixed_point_gates=True/True;SRC1365_9_1280_action_gate=True/True;SRC1365_10_1280_bound_contract=True/True;SRC1365_11_1281_profile_template=True/True;SRC1365_12_733_reduced_owner=True/True
+VAL1365_1_qzero_not_promoted,q_loc zero is not promoted for current MTS,PASS,"metric-response scalar density remains the best route, but no current MTS formula matches it."
+VAL1365_2_conditional_theorem_complete,"conditional theorem has action, metric-response, Helmholtz, Ward, Euler/double-zero, and verdict steps",PASS,theorem_steps=6
+VAL1365_3_shortcuts_refused,plateau/bookkeeping shortcut route is refused,PASS,plateau and bookkeeping stress are not accepted routes
+VAL1365_4_bound_rows_complete,"q_loc bound/source rows cover profile, metric gap, Helmholtz gap, source/boundary gap, and acceptance",PASS,bound_rows=5
+VAL1365_5_bounds_nonclaim_missing,q_loc bound rows remain missing or blocked rather than scored,PASS,QBR1365_0_q_loc_profile=CLAIM_BLOCKED_PROFILE_TEMPLATE;QBR1365_1_metric_response_gap=MISSING_SOURCE_INPUT;QBR1365_2_Helmholtz_gap=MISSING_SOURCE_INPUT;QBR1365_3_source_boundary_gap=MISSING_SOURCE_INPUT;QBR1365_4_acceptance_gate=CLAIM_BLOCKED
+VAL1365_6_no_cancellation_guard,all q_loc residual rows keep no-cancellation guard true,PASS,component residuals cannot cancel each other to pass
+VAL1365_7_claim_gates_block_claim,"claim gates block current S_GK, q_loc zero, scoring, shortcuts, and local-GR claims",PASS,GATE1365_0_conditional_qzero_theorem=True;GATE1365_1_current_S_GK_match=False;GATE1365_2_current_q_loc_zero=False;GATE1365_3_q_loc_bound_score_ready=False;GATE1365_4_shortcuts_rejected=False;GATE1365_5_local_GR_reopen=False
+VAL1365_8_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false across generated rows
+VAL1365_9_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1365_10_next_target_1366,next target routes to Gamma_eff scalar-density hunt or q_loc envelope,PASS,1366-Y5-R10-RAB-Gamma-eff-scalar-density-definition-hunt-or-q_loc-envelope.md
+VAL1365_11_overall,overall 1365 validation,PASS,1365 keeps q_loc zero conditional and stages source-facing bound rows

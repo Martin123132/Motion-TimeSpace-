@@ -1,0 +1,6 @@
+gate_id,claim,test,current_result,if_fail,valid_for_claim
+Y5G3422_0_common_mode,Universal calibrated G/kappa common mode is allowed.,"same kappa_MTS for all ordinary Hilbert sources, fixed once before local tests",PASS_AS_CALIBRATION_POLICY,epsilon_absolute_calibration_offset,False
+Y5G3422_1_Hilbert_charge,Measured GM equals one parent Hilbert/source worldtube charge.,"mu_obs = Q_H[W_source,e_obs,tau] with W_source fixed before readout",BLOCKED_SOURCE_WORLDTUBE_NOT_SIGNED,epsilon_source_charge,False
+Y5G3422_2_no_relative_weights,No species/material/readout relative source weights survive.,delta w_A=0 and no source-only slot after quotient descent,OPEN_SPECIES_SOURCE_CHARGE,epsilon_species_source,False
+Y5G3422_3_no_domain_mass_hair,No radial/time/frame/range/domain/projector source-normalization hair survives.,all mu_extra components theorem-zero or bounded,OPEN_MULTI_CHANNEL_Y5_RESIDUAL,epsilon_mu_extra,False
+Y5G3422_4_verdict,Y5 source current is zero.,Y5G3422_0 through Y5G3422_3 pass,FAIL_CURRENT_Y5_ZERO,J_Z_Y5_source_normalization,False

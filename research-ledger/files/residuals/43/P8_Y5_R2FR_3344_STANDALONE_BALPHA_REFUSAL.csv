@@ -1,0 +1,4 @@
+refusal_id,claim,refused,reason,required_exit,valid_for_claim
+REF3344_0_clock_product_not_standalone,clock rows give a standalone b_alpha bound,true,"clock rows bound b_alpha*tau_clock_time only; tau_clock_time, Xhat/chi_X normalization, and clock domain map are not derived",derive tau_clock_time from MTS local state or derive direct theorem-zero for b_alpha,false
+REF3344_1_no_tau_unity_shortcut,set tau_clock_time=1 or H0 by convention,true,"tau is a physical readout/projection coefficient, not a gauge choice; dividing product bounds by an assumed tau smuggles closure",parent-owned clock readout map and normalization convention,false
+REF3344_2_no_clock_to_R10_transfer,transfer clock product bound directly to WEP/R10,true,"WEP and R10 require beta_source_alpha, beta_test, material charges, tau_WEP/tau_R10, and the same branch/domain map",cross-arena alpha product vector with source-backed arena projections,false

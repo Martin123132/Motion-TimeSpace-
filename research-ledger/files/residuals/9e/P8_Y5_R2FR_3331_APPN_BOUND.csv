@@ -1,0 +1,6 @@
+bound_id,coefficient,formula,meaning,status,valid_for_claim
+APPN3331_0_gamma,"A_gamma(q_U,gauge)",A_gamma <= a_gamma/q_U + a_gauge + a_readout + a_source,linear first-order metric residuals are amplified by the inverse weak potential in gamma-like observables,SYMBOLIC_BOUND_DERIVED,false
+APPN3331_1_beta,"A_beta(q_U,gauge)",A_beta <= a_beta2/q_U^2 + a_beta1/q_U + a_gauge + a_readout + a_source,"second-order time residuals carry a q_U^-2 denominator, with q_U^-1 contamination if first-order source calibration is not closed",SYMBOLIC_BOUND_DERIVED,false
+APPN3331_2_vector_tensor,"A_vector_tensor(q_U,gauge)","A_vector_tensor <= max(a_PF/q_U, a_aniso/q_U) + a_gauge + a_frame","anisotropic, vector, or frame-dependent metric residuals must be projected into the standard PPN gauge before comparison",BOUND_TEMPLATE,false
+APPN3331_3_master,"A_PPN(q_U,gauge)","A_PPN(q_U,gauge) := max(A_gamma, A_beta, A_vector_tensor, A_gauge_residual)",the worst normalized PPN slot sets the safe response multiplier for C_metric,MASTER_APPN_BOUND,false
+APPN3331_4_clean_branch,A_PPN_clean,"if H_00^(1) is fully absorbed into measured GM and gauge/readout residuals vanish, A_gamma~O(q_U^-1) and beta is controlled only by genuine H_00^(2)/q_U^2",this is the least-scrutinized clean route: do not count mass calibration or gauge artifacts as MTS physics,CONDITIONAL_CLEAN_BRANCH,false

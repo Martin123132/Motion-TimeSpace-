@@ -1,0 +1,5 @@
+row_id,gate,requirement,status,claim_allowed,valid_for_claim,timestamp_utc
+CG3939_0_reducer,component reducer,every 3938 Delta_cal component maps to a parent clause or bound route,PASS_REDUCER_BUILT,False,False,2026-07-01T12:27:03+00:00
+CG3939_1_parent_signatures,parent signatures,PC0-PC5 are all parent-signed in one local branch,FAIL_PARENT_SIGNATURES_UNSIGNED,False,False,2026-07-01T12:27:03+00:00
+CG3939_2_bound_branch,fallback bound branch,"if parent clause fails, component has numeric/source-backed bound and MTS prediction",FAIL_MTS_COMPONENT_VALUES_MISSING,False,False,2026-07-01T12:27:03+00:00
+CG3939_3_public_claim,public Newton/local-GR claim,"reducer closed or all fallback rows scored below bounds, plus PPN stability",BLOCKED_NONCLAIM,False,False,2026-07-01T12:27:03+00:00

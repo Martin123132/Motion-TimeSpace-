@@ -1,0 +1,5 @@
+branch_id,branch_name,required_inputs,branch_enabled,closure_only,derived_local_GR,inherited_EH,finite_residual_scored,allowed_output,hard_refusal,valid_for_claim,claim_allowed
+BR1278_0_local_closure_baseline,local_closure_baseline,C_R=0; Q_R=0; S_R=0; boundary normalization from explicit closure rows,True,True,False,False,False,nonclaim benchmark/control residual vector only,if promoted as derived_local_GR or mixed with finite rows,False,False
+BR1278_1_finite_residual,finite_residual,validator-accepted source-backed Z_R/W/J_R/Q_R/tau rows,False,False,False,False,False,none until accepted rows exist,if docs templates or placeholders are used as finite data,False,False
+BR1278_2_inherited_EH,inherited_EH,A511_0..A511_6 parent-signed; CEH1277_0 and CEH1277_1 pass,False,False,False,False,False,none until EH inheritance passes,if EH anchor-only block is treated as inherited EH,False,False
+BR1278_3_mixed_branch,mixed_closure_finite_or_EH,not allowed,False,False,False,False,False,none,always reject branch mixing; rerun one branch at a time,False,False

@@ -1,0 +1,7 @@
+gate_id,gate,current_result,promotes_if,valid_for_claim
+PG3418_0_vector_theorem_shape,q_loc vector-zero theorem has a concrete derivation chain,PASS_CONDITIONAL_CONTRACT,not sufficient alone; requires parent contract clauses,False
+PG3418_1_Khat_response,K_hat is the Hilbert metric response of Gamma_eff,FAIL_CURRENT_SYMBOL_MATCH_UNSIGNED,Delta_K=0 and Helmholtz symmetry hold for live MTS symbols,False
+PG3418_2_Euler_boundary,"Euler, boundary, harmonic and projector leaks are zero through O(U^2)",FAIL_BOUNDARY_PROJECTOR_UNSIGNED,PC3418_3 through PC3418_6 pass or are explicitly bounded,False
+PG3418_3_no_vector_spurion,No hidden/rest-frame/domain vector spurion survives,FAIL_SPURION_AUDIT_MISSING,PC3418_7 passes or alpha-vector coefficients are sourced below bounds,False
+PG3418_4_alpha3_safety,alpha3 q_loc lane is safe,BLOCKED_UNTIL_VECTOR_ZERO_OR_PRODUCT_BOUND,f_qV=0 theorem or |W_q_alpha3 f_qV|<=5.381673706808059e-15 with sourced coefficients,False
+PG3418_5_local_GR,q_loc no longer blocks local GR/Newton/PPN,BLOCKED,PG3418_1 through PG3418_4 pass plus retained beta/stress lanes are bounded,False

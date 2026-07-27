@@ -1,0 +1,5 @@
+gate_id,formula,numeric_value,interpretation,pass_condition,current_status,valid_for_claim,generated_utc
+A3P748_0_product_definition,alpha3_q = W_q_alpha3 * f_qV * q_proxy,symbolic,observable alpha3 needs both a vector fraction and a response weight,abs(W_q_alpha3 * f_qV) <= 5.38167370680806e-15,not_scoreable,false,2026-06-11T18:23:39+00:00
+A3P748_1_pressure_scale,q_proxy / alpha3_bound,185815799039424,unit vector fraction and unit response would exceed alpha3 by this factor,do not use unit projection as evidence; use only as pressure scale,danger_scale_only,false,2026-06-11T18:23:39+00:00
+A3P748_2_parity_zero_route,VPZ clauses close => f_qV=0 or W_q_alpha3 f_qV=0,not_available,best natural route is a structural zero,parent-signed theorem source,failed_current_corpus,false,2026-06-11T18:23:39+00:00
+A3P748_3_numeric_source_route,"real W_q_alpha3, real f_qV, source path, units, no cancellation",not_loaded,fallback if theorem-zero fails,abs(W_q_alpha3 * f_qV * q_proxy) <= 4e-20,template_only,false,2026-06-11T18:23:39+00:00

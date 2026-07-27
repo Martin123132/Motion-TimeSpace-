@@ -1,0 +1,4 @@
+guard_id,statement,allowed_inference,forbidden_inference,valid_for_claim
+PZG3255_0_static_flux_zero,"For the static Coulomb envelope B=0, S_EM=(1/mu0)E x B=0 and normal Poynting flux vanishes.",boundary Poynting flux component can be zero in this idealized static branch,"do not infer T_EM=0, u_EM=0, J_EM=0, or G_J[EM,EM]=0",false
+PZG3255_1_static_stress_nonzero,"For Q_eff != 0 and finite R_in<R_out, u_EM(r)=Q_eff^2/(32*pi^2*epsilon0*r^4)>0 and G_J[EM,EM]_shell>0.",static Coulomb stress can contribute to source/current Gram rows,do not erase EM/Coulomb source coupling by citing quiet/static Poynting alone,false
+PZG3255_2_neutral_material_warning,"For neutral matter, Q_eff may be zero externally while internal Coulomb/binding stress remains material-model dependent.",external shell formula is an envelope/toy source until mapped to material binding,do not use Q_eff=0 external neutrality as proof that EM binding stress vanishes,false

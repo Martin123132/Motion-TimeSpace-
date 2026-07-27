@@ -1,0 +1,6 @@
+checkpoint,gate_id,quantity,formula_or_condition,current_status,status,valid_for_claim,timestamp_utc
+4773,DG4773_0_projector_comm,E_PiM_comm,0_private_if Pi_M is fixed/q-basic and selected before readout,"conditional theorem from 4764 DL4764_3, not yet an empirical/source-backed row",CONDITIONAL_PROJECTOR_LOCK,False,2026-07-08T03:34:20+00:00
+4773,DG4773_1_projector_norm,P_M_bound,finite if Pi_M is a fixed bounded projector on the chosen source norm,operator norm/value still not supplied,VALUE_OR_NORM_MISSING,False,2026-07-08T03:34:20+00:00
+4773,DG4773_2_denominator,M_lower,M_0(1-epsilon_abs)>0,requires M_0>0 and 0<=epsilon_abs<1 with same-frame units; source-backed values still missing,POSITIVE_LOCK_MISSING,False,2026-07-08T03:34:20+00:00
+4773,DG4773_3_qbar_private,Qbar_XH,(P_M Q_tot + E_PiM_comm)/M_lower,"with Q_tot=0 and E_PiM_comm=0, Qbar=0 only after M_lower>0 is certified",BLOCKED_BY_DENOMINATOR_POSITIVITY,False,2026-07-08T03:34:20+00:00
+4773,DG4773_4_score_policy,local-GR/Newton score,do not score from numerator collapse alone,must next certify denominator/projector positivity or fill first source-backed values,PRODUCT_STILL_BLOCKED,False,2026-07-08T03:34:20+00:00

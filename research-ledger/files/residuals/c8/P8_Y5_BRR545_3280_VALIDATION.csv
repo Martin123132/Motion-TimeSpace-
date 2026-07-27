@@ -1,0 +1,11 @@
+check_id,check,passed,detail
+VAL3280_0_sources_exist,all cited source paths exist,true,
+VAL3280_1_sources_parse,all cited source paths parse,true,
+VAL3280_2_outputs_parse,all 3280 output CSVs parse,true,non-validation outputs parsed before validation write
+VAL3280_3_qEM_residual_present,q_EM residual route is explicitly derived,true,DER3280_5_qEM_residual
+VAL3280_4_CZ_CR_not_falsely_signed,C_Z and C_R gates remain unsigned/nonclaim,true,CZCR3280_0_unique_Z_owner=NOT_SIGNED;CZCR3280_1_no_extra_F2=COUNTERTERM_RETAINED;CZCR3280_2_F_only_response=SOURCE_BACKED_PLACEMENT;CZCR3280_3_readout_owner=UNSIGNED;CZCR3280_4_CJ_not_reopened=DEMOTED_TO_CLOSURE_ONLY
+VAL3280_5_bound_rows_nonclaim,all CZ/CR source-bound rows remain nonclaim,true,
+VAL3280_6_runner_expectations,bound runner expectations all match,true,ZRB3280_0_CZ_zero_if_unique_owner_signed=REFUSE_OR_FAIL;ZRB3280_1_CR_zero_if_readout_signed=REFUSE_OR_FAIL;ZRB3280_2_hidden_F2_CZ_missing=REFUSE_OR_FAIL;ZRB3280_3_readout_CR_missing=REFUSE_OR_FAIL;ZRB3280_4_combined_ZR_bound_contract=REFUSE_OR_FAIL;ZRB3280_5_half_bound_CZ_smoke=PASS_NUMERIC_NONCLAIM;ZRB3280_6_twice_bound_CZ_smoke=FAIL_BOUND
+VAL3280_7_claim_gates_false,no 3280 gate allows alpha/Maxwell/local-GR claim,true,all claim_allowed=false
+VAL3280_8_formalization_untouched,formalization-workbench modified-file count remains zero by this script,true,formalization_changed_count=0
+VAL3280_9_overall,3280 validation overall,true,all required checks passed

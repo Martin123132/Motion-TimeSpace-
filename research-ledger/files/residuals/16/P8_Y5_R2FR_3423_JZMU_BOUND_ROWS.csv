@@ -1,0 +1,11 @@
+bound_id,quantity,definition,bound_formula,status,valid_for_claim
+JZMU3423_0_kappa,epsilon_kappa_Z,|partial_Z ln kappa_MTS| after common calibration,0 if MPA3423_1 signed; otherwise source-backed absolute value,THEOREM_OR_VALUE_MISSING,False
+JZMU3423_1_source_measure,epsilon_ellJ_Z,|partial_Z ln ell_J| for Hilbert/source/readout conversion,0 if MPA3423_2 signed; otherwise source-backed absolute value,THEOREM_OR_VALUE_MISSING,False
+JZMU3423_2_HPiM,epsilon_HPiM_Z,fractional mismatch between H_tau-H_ref and Pi_M J_H under Z variation,|partial_Z ln(M_H/(Pi_M J_H))| + |I_commutator|/M_H_ref,M_H_REF_AND_COMMUTATOR_INPUTS_MISSING,False
+JZMU3423_3_boundary_domain,epsilon_boundary_domain_Z,fractional source-charge shift from boundary/reference/worldtube-domain choices,(|B_zero_flux|+|Delta_symp|+|Delta_worldtube_domain|)/M_H_ref,BOUNDARY_REFERENCE_WORLD_TUBE_INPUTS_MISSING,False
+JZMU3423_4_v_ratio,delta_KC_Z,source/kinetic coefficient mismatch in the local v Poisson reduction,|(B_v/A_v)/(16 pi G_ref/c^4)-1|,PARENT_COEFFICIENTS_MISSING,False
+JZMU3423_5_second_order,epsilon_beta_source_Z,second-order source-square mismatch after first-order measured-GM calibration,|B_source/A_source^2 - 1| + |a_v|/2 + ||kappa_v||_abs,SECOND_ORDER_INPUTS_MISSING,False
+JZMU3423_6_hidden_drift,epsilon_hidden_source_Z,hidden range/time/memory/species/frame source drift,"sum_abs(epsilon_range,epsilon_time,epsilon_memory,epsilon_species,epsilon_frame)",HIDDEN_DRIFT_EXCLUSION_OR_VALUES_MISSING,False
+JZMU3423_7_total,||J_Z_mu_Y5||,absolute no-cancellation Y5 source-current norm,epsilon_kappa_Z+epsilon_ellJ_Z+epsilon_HPiM_Z+epsilon_boundary_domain_Z+delta_KC_Z+epsilon_beta_source_Z+epsilon_hidden_source_Z,FORMULA_READY_VALUES_MISSING,False
+JZMU3423_8_fixed_point_feed,||Z||_Y5,Y5-driven contribution to the 3421 fixed-point residual amplitude,||Z||_Y5 <= 2 lambda_*^-1 ||J_Z_mu_Y5||,MISSING_LAMBDA_STAR_AND_JZMU_VALUES,False
+JZMU3423_9_observable_feed,Delta_Newton_Y5 and PPN residual vector,observable leakage from nonzero Y5 source-current residual,"|Delta_Newton_Y5|, |gamma-1|, |beta-1|, |alpha_i| <= C_response ||Z||_Y5 plus explicit source-square terms",MISSING_RESPONSE_OPERATOR_AND_VALUES,False

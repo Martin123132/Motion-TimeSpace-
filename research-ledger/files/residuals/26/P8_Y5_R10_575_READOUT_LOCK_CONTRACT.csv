@@ -1,0 +1,5 @@
+clause_id,required_clause,mathematical_form,current_status,blocks_if_missing,valid_for_claim
+RL575_0_parent_domain,Parent action is defined before observation/readout.,S_parent=S[Phi in C_parent],formal_clause_written,post-readout EFT can act as source,false
+RL575_1_solution_space_readout,"Readout is a map on the solution space, not a variational argument.",R_read:Sol(S_parent)/G->Obs,conditional_no_cheat_lock,P_read or P_active can generate reduced-action marker terms,false
+RL575_2_no_backreaction,No readout-selected reduced block is fed back into S_parent.,"delta S_parent/delta R_read = 0 by absence, not by equation of motion",contract_not_full_parent_audit,closure-zero rows can become hidden theorem-zero claims,false
+RL575_3_qbar_effect,Readout/projector cannot contribute to delta_X S_T.,partial_X P_read terms absent from S_T and S_parent,conditional_pass_if_RL575_0_to_2,qbar_XT returns through projector/readout marker,false

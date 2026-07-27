@@ -1,0 +1,9 @@
+case_id,complete_classifier,source_identity_signed,boundary_silent,lhs_gr_signed,value_rows_present,cancellation_only,ward_only,expected_status,valid_for_claim,claim_allowed,timestamp_utc
+DRY2691_0_all_classified_and_lhs,true,true,true,true,true,false,false,THEOREM_READY_IF_PARENT_SIGNED,false,false,2026-06-23T07:25:03.003412+00:00
+DRY2691_1_classifier_only,true,false,false,false,false,false,false,REJECT_CLASSIFIER_ONLY,false,false,2026-06-23T07:25:03.003415+00:00
+DRY2691_2_unclassified_shadow,false,false,false,false,false,false,false,REJECT_UNCLASSIFIED_SOURCE_TERM,false,false,2026-06-23T07:25:03.003418+00:00
+DRY2691_3_source_without_lhs,true,true,true,false,false,false,false,REJECT_SOURCE_WITHOUT_LHS_GR,false,false,2026-06-23T07:25:03.003421+00:00
+DRY2691_4_boundary_open,true,true,false,true,false,false,false,REJECT_BOUNDARY_OPEN,false,false,2026-06-23T07:25:03.003423+00:00
+DRY2691_5_values_without_kernels,false,false,false,false,true,false,false,REJECT_VALUES_WITHOUT_PROJECTIONS,false,false,2026-06-23T07:25:03.003426+00:00
+DRY2691_6_ward_only,false,false,false,false,false,false,true,REJECT_WARD_ONLY,false,false,2026-06-23T07:25:03.003428+00:00
+DRY2691_7_cancellation_only,false,false,false,false,true,true,false,REJECT_CANCELLATION_ONLY_PASS,false,false,2026-06-23T07:25:03.003431+00:00

@@ -1,0 +1,11 @@
+same_parent_branch_id,column_name,expected_type,role,acceptance_rule,score_ready,valid_prediction_row,valid_for_claim,claim_allowed
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,certificate_id,string,groups certificate rows,must match across rows,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,component_id,string,component/basis label,must map to K and V basis,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,K_abs_lower,positive float,lower bound on |K_i|,must be parent-signed or official-array certified,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,V_abs_lower,positive float,lower bound on |V_i|,must be parent-signed or official-array certified,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,K_norm_upper,positive float,upper bound on ||K||,shared certificate denominator,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,V_norm_upper,positive float,upper bound on ||V||,shared certificate denominator,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,sign_compatible,boolean,K_i V_i terms have certified nonnegative contribution,false blocks certificate,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,parent_signed,boolean,row is sourced to parent theorem or official files,false blocks certificate,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,source_path,path/url,provenance for coefficient/bound,must not be placeholder,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,units,string,declared units/basis,must be compatible across rows,False,False,False,False

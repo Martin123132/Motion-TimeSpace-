@@ -1,0 +1,5 @@
+map_id,basis_terms,weak_field_template,interpretation,next_input,valid_for_claim
+MAP3297_0_quadratic_gravity_template,"c_R2,c_Ric",Phi(r)=-(G_cal*M/r)*(1+alpha_0*exp(-r/lambda_0)+alpha_2*exp(-r/lambda_2)),alpha_0/lambda_0 and alpha_2/lambda_2 are placeholders until parent coefficient normalization fixes signs and amplitudes,"derive c_R2,c_Ric normalization or use this as Yukawa/R10/orbital basis",false
+MAP3297_1_PPN_scalar_vector,"c_phi,c_VT","gamma-1, beta-1, alpha_1, alpha_2, alpha_3 = linear projections of c_phi,c_VT after solving local field equations",PPN mapping is symbolic until source coupling and gauge are fixed,linearized operator and gauge/source convention,false
+MAP3297_2_memory_Geff,"c_mem,delta_A","G_eff(t,r,env)=G_cal*(1+delta_A+Pi_mem[K_memory*source_history])",memory branch becomes local drift/range/environment residual,kernel and local silence theorem or Gdot/range bounds,false
+MAP3297_3_topological_orbit,c_top,"delta precession/parity/spin signal = Pi_top[c_top, boundary/domain/spin data]",topological branch is harmless only if coefficient is constant and uncoupled,domain/boundary coefficient and spin/orbit projection,false

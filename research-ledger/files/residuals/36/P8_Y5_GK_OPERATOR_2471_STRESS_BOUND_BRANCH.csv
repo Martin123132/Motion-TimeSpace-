@@ -1,0 +1,6 @@
+timestamp_utc,branch_id,checkpoint_id,valid_for_claim,claim_allowed,bound_branch_id,bound_clause,basis,status
+2026-06-22T07:30:41.733483+00:00,MTS_R2FR_EXPLICIT_GK_QUADRATIC_OPERATOR_SIGN_AUDIT_2471,2471,False,False,SBB2471_0_defect,"negative_mode_defect=max(0,c_AG^2-m_A2 Z_G) plus unsigned boundary/topology defects",quantifies failure of coercivity,BOUND_INPUT
+2026-06-22T07:30:41.733493+00:00,MTS_R2FR_EXPLICIT_GK_QUADRATIC_OPERATOR_SIGN_AUDIT_2471,2471,False,False,SBB2471_1_energy_bound,E_GK <= C_B boundary_flux + C_S source_tail + C_X negative_mode_defect,fallback if exact no-hair fails,BOUND_FORM_ONLY
+2026-06-22T07:30:41.733499+00:00,MTS_R2FR_EXPLICIT_GK_QUADRATIC_OPERATOR_SIGN_AUDIT_2471,2471,False,False,SBB2471_2_metric_bound,delta_PPN <= C_metric C_T E_GK plus vacuum and retained-sector terms,links stress energy to local tests,BOUND_FORM_ONLY
+2026-06-22T07:30:41.733506+00:00,MTS_R2FR_EXPLICIT_GK_QUADRATIC_OPERATOR_SIGN_AUDIT_2471,2471,False,False,SBB2471_3_data_gate,"R10/PPN/clock/orbital tests need numeric C_B,C_S,C_X,C_metric and arena projections",future empirical pass,MISSING_NUMERIC_INPUTS
+2026-06-22T07:30:41.733515+00:00,MTS_R2FR_EXPLICIT_GK_QUADRATIC_OPERATOR_SIGN_AUDIT_2471,2471,False,False,SBB2471_4_claim,stress-bound branch is not local GR unless all bounds sit below local arenas,claim discipline,NONCLAIM

@@ -3,6 +3,8 @@
 Direct links for 250 files. Item numbers are catalogue
 ordinals, not scientific checkpoint identifiers.
 
+- [`P8_Y5_R2FR_4786_DENSITY_INPUT_FROM_ZERO_PROFILE.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4786_DENSITY_INPUT_FROM_ZERO_PROFILE.csv) (2901 bytes)
+- [`P8_Y5_R2FR_4786_DENSITY_OUTPUT_FROM_ZERO_PROFILE.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4786_DENSITY_OUTPUT_FROM_ZERO_PROFILE.csv) (2094 bytes)
 - [`P8_Y5_R2FR_4786_FIREWALL_ROWS.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4786_FIREWALL_ROWS.csv) (461 bytes)
 - [`P8_Y5_R2FR_4786_HTAU_HREF_SOURCE_INPUT.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4786_HTAU_HREF_SOURCE_INPUT.csv) (1454 bytes)
 - [`P8_Y5_R2FR_4786_HTAU_HREF_SOURCE_OUTPUT.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4786_HTAU_HREF_SOURCE_OUTPUT.csv) (1259 bytes)
@@ -251,5 +253,3 @@ ordinals, not scientific checkpoint identifiers.
 - [`P8_Y5_R2FR_4803_CTR_PRIOR_OUTPUT.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4803_CTR_PRIOR_OUTPUT.csv) (1434 bytes)
 - [`P8_Y5_R2FR_4803_CTR_TARGET_AUDIT.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4803_CTR_TARGET_AUDIT.csv) (458 bytes)
 - [`P8_Y5_R2FR_4803_DECISION.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4803_DECISION.csv) (459 bytes)
-- [`P8_Y5_R2FR_4803_FIREWALL_ROWS.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4803_FIREWALL_ROWS.csv) (577 bytes)
-- [`P8_Y5_R2FR_4803_NEXT_TARGET.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4803_NEXT_TARGET.csv) (324 bytes)

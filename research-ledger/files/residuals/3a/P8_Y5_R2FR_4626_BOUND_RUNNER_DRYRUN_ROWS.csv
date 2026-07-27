@@ -1,0 +1,4 @@
+checkpoint,runner_id,input_case,acceptance,failure_mode,ready_to_execute,valid_for_claim,claim_allowed,timestamp_utc
+4626,RUN4626_0_anchor_smoke,lambda_mem=38.6e-6 m; alpha_Y numeric supplied,"if alpha_Y<=1 at this anchor, R10 anchor smoke passes only at anchor point",does not prove full curve or other lambda values,True,False,False,2026-07-06T18:01:33.530347+00:00
+4626,RUN4626_1_missing_mts_inputs,current MTS rows with Q_eff/lambda/alpha_A missing,must fail closed with MISSING_MTS_NUMERIC_INPUT,any pass without Q_eff/lambda/sensitivity is invalid,True,False,False,2026-07-06T18:01:33.530347+00:00
+4626,RUN4626_2_full_claim,full source-backed curves plus MTS numeric rows,all relevant arenas pass across the claimed lambda/profile domain,blocked until full curves or defensible anchors for the claimed domain exist,False,False,False,2026-07-06T18:01:33.530347+00:00

@@ -1,0 +1,5 @@
+requirement_id,needed_source,minimum_contents,current_status,blocks,next_action,valid_for_claim,generated_utc
+REQ752_0_component_input,real q_loc component input,"sample/domain, weights, frame, q0..q3, boundary data, source file",missing,P_Hodge; f_qV,supply parent-derived field/profile or keep branch blocked,false,2026-06-11T19:24:56+00:00
+REQ752_1_flux_projector,P_flux,map from q_loc vector/harmonic/boundary component to epsilon_q_momentum,missing,f_qV; W_q_alpha3 product,derive from Noether/momentum map or source a weak-field projector,false,2026-06-11T19:24:56+00:00
+REQ752_2_green_operator,G_PPN,gauge-fixed linearized response from q_loc source to g_0i,missing,W_q_alpha3,derive local weak-field equations or source a PPN-normalized response map,false,2026-06-11T19:24:56+00:00
+REQ752_3_ppn_projection,Pi_alpha3^PPN,formula extracting alpha3 from g_0i/vector/self-acceleration terms,missing,alpha3_q; W_q_alpha3,source PPN convention and encode as response projector,false,2026-06-11T19:24:56+00:00

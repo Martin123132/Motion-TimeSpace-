@@ -1,0 +1,15 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1214_0_sources_exist,all cited local sources exist,PASS,14/14 sources exist,False,False
+VAL1214_1_needles_found,all cited source needles found,PASS,14/14 needles found,False,False
+VAL1214_2_zero_not_promoted,no-source-only-slot zero is not promoted,PASS,NSS1214_5 verdict keeps zero unsigned,False,False
+VAL1214_3_bound_total_present,B_species total bound row exists,PASS,DSB1214_0 feeds SSR1213_1,False,False
+VAL1214_4_feed_present,SSR1213 feed row exists,PASS,FEED1214_0_to_SSR1213_1 present,False,False
+VAL1214_5_arena_projection_blocked,arena projections remain blocked,PASS,WEP/PPN/R10/Gdot/clock/orbital rows require source-backed maps,False,False
+VAL1214_6_local_bounds_present,local bound anchors present,PASS,R1_WEP_source_charge;R3_gamma;R4_beta;R9_Gdot;R10_fifth_force,False,False
+VAL1214_7_numeric_bounds_positive,numeric bound anchors positive,PASS,"2.8e-15,2.3e-05,7.8e-05,9.6e-15",False,False
+VAL1214_8_no_missing_claim_rows,no row with MISSING is valid for claim,PASS,all missing rows remain nonclaim,False,False
+VAL1214_9_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout,False,False
+VAL1214_10_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1214_SOURCE_REGISTER.csv:14; P8_Y5_R10_1214_NO_SOURCE_ONLY_SLOT_SIGNATURE_AUDIT.csv:6; P8_Y5_R10_1214_DELTA_SPECIES_BOUND_FILL.csv:6; P8_Y5_R10_1214_ARENA_PROJECTION_LEDGER.csv:6; P8_Y5_R10_1214_SSR1213_FEED_UPDATE.csv:2; P8_Y5_R10_1214_DECISION_LEDGER.csv:3; P8_Y5_R10_1214_CLAIM_GATES.csv:5; P8_Y5_R10_1214_NEXT_TARGET.csv:1,False,False
+VAL1214_11_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_after_run_start_count=0,False,False
+VAL1214_12_next_target,next target is staged,PASS,1215-Y5-R10-Bspecies-finite-projection-input-pack-or-component-zero.md,False,False
+VAL1214_13_overall,overall 1214 validation,PASS,1214 no-source-only-slot audit and Delta_species bound-fill pack is reproducible and nonclaim,False,False

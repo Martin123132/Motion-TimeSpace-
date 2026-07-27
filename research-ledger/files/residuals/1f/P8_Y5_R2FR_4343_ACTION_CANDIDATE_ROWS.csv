@@ -1,0 +1,5 @@
+action_id,name,action_block,fields,purpose,status,valid_for_claim
+ACT4343_0_multiplier_owner,KGamma constrained auxiliary owner,S_RI=int_U sqrt(-g) Lambda_nu [L_RI A_Gamma^nu + nabla^nu Gamma_eff],"A_Gamma^nu, Lambda_nu, Gamma_eff, g_mu_nu",parent-own the K_L/KGamma right-inverse equation before local scoring,CANDIDATE_PARENT_EXTENSION_DERIVED,False
+ACT4343_1_flat_reduction,fixed flat reduction,S_RI^flat=int_U Lambda_nu [Box A_Gamma^nu + partial^nu Gamma_eff],"A_Gamma^nu, Lambda_nu",recover Box A_Gamma=-grad Gamma and KGamma=K_L[A_Gamma] in fixed weak-field patch,DERIVED_LOCAL_FLAT_ACTION_SHAPE,False
+ACT4343_2_covariant_operator,Ricci-corrected covariant owner,L_RI A^nu=(Box delta^nu_sigma+Ric^nu_sigma)A^sigma,"A_Gamma^nu, Lambda_nu, g_mu_nu",make the KGamma generator covariant instead of a post-hoc flat inverse,DERIVED_OPERATOR_FORM_KERNEL_AND_BOUNDARY_OPEN,False
+ACT4343_3_metric_null_condition,adjoint multiplier kill condition,delta_A S_RI -> L_RI^dagger Lambda=0 plus boundary terms,Lambda_nu,"if Lambda=0 by adjoint no-kernel and boundary data, on-shell S_RI stress vanishes with the constraint",METRIC_NULL_ROUTE_DERIVED_CONDITIONAL,False

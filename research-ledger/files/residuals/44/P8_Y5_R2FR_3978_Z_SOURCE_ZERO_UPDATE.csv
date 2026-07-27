@@ -1,0 +1,9 @@
+certificate_id,factor,requirement,role,current_status,feeds_or_blocks,claim_allowed,valid_for_claim,timestamp_utc
+ZSRC3978_0_worldtube,Z_closed_worldtube,one worldtube includes every stress/field/exchange component relevant to the source residual,required,UNSIGNED,epsilon_closed_source_failure,False,False,2026-07-01T16:40:29+00:00
+ZSRC3978_1_balance,Z_total_balance,total stress balance or conservation law has no unaccounted boundary/exchange flux,required,UNSIGNED,epsilon_closed_source_failure,False,False,2026-07-01T16:40:29+00:00
+ZSRC3978_2_virial,Z_stationary_TF_virial,d2I_TF/dt2=0 after declared averaging and surface/exchange terms vanish,required,UNSIGNED,epsilon_tensor_virial_TF,False,False,2026-07-01T16:40:29+00:00
+ZSRC3978_3_surface,Z_surface_exchange_zero,surface_TF=exchange_TF=boundary_flux_TF=0 in the same branch,required,PARTIAL_PRIVATE_BOUNDARY_BRANCH_ONLY,epsilon_closed_source_failure,False,False,2026-07-01T16:40:29+00:00
+ZSRC3978_4_poynting,Z_Poynting_included,T_EM and S_EM are included in T_tot or a sourced Poynting bound is supplied,required,UNSIGNED,epsilon_EM_Poynting_TF,False,False,2026-07-01T16:40:29+00:00
+ZSRC3978_5_GR,Z_GR_multipole_routing,ordinary GR multipoles are subtracted/routed before residual MTS hair is tested,required,DEFINED_NOT_IMPLEMENTED,epsilon_quad_residual_TF,False,False,2026-07-01T16:40:29+00:00
+ZSRC3978_6_exterior,Z_exterior_vacuum_annulus,readout annulus excludes ordinary matter/apparatus/radiative support or bounds it,required,UNSIGNED,epsilon_ext_TF,False,False,2026-07-01T16:40:29+00:00
+ZSRC3978_7_total,Z_source_Q_zero,"product of closed worldtube, total balance, virial, surface, Poynting, GR routing, and exterior-vacuum certificates",total,FALSE_UNTIL_ALL_FACTORS_SIGNED,epsilon_source_l_ge_1,False,False,2026-07-01T16:40:29+00:00

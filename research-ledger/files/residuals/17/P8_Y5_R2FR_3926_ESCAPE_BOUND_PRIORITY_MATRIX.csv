@@ -1,0 +1,8 @@
+row_id,priority_rank,target,component,why_priority,zero_or_bound_route,numeric_value,valid_for_claim,timestamp_utc
+PRI3926_0_projector_domain,1,epsilon_domain_projector_abs,projector/domain stress,"feeds Xi_N, alpha_i, xi, zeta_i, source normalization",zero via fixed topological/readout-only projector or bound DPOB3431 components,,False,2026-07-01T11:17:02+00:00
+PRI3926_1_boundary_harmonic,2,B_harmonic_boundary + P00_boundary,boundary/harmonic multipoles,"feeds Xi_N, ephemeris, xi, alpha3/Gdot through boundary flux",zero via boundary certificate or bound boundary amplitudes,,False,2026-07-01T11:17:02+00:00
+PRI3926_2_history_nonlocal,3,P00_history + P00_nonlocal,history/nonlocal tail,feeds Xi_N and time/radial drift; not globally zero,local reset/no-tail certificate or 3895 suppression-law values,,False,2026-07-01T11:17:02+00:00
+PRI3926_3_derivative_hair,4,B_deriv,time/radial/source/frame derivative hair,"feeds Gdot, WEP/source dependence, inverse-square residuals",derive derivative silence or fill derivative bounds,,False,2026-07-01T11:17:02+00:00
+PRI3926_4_beta_common,5,Delta_sq,common-mode square-law error,feeds beta after Xi_N survives,EH one-metric square law or numeric xi_1/xi_2,,False,2026-07-01T11:17:02+00:00
+PRI3926_5_gamma_STF,6,P_TF/R11 slip,STF anisotropic leakage,feeds gamma; lower priority if core/DZ retained,derive zero or fill 3918 bound inputs,,False,2026-07-01T11:17:02+00:00
+PRI3926_6_total,7,B_local,absolute local residual,final no-cancellation local-GR gate,sum all nonzero/unbounded components,,False,2026-07-01T11:17:02+00:00

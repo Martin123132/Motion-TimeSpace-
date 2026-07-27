@@ -1,0 +1,7 @@
+row_id,quantity,symbol,value_or_status,units,source_row,runner_role,refusal_gate,valid_for_claim
+WEP2772_0_bound_anchor,eta_AB source-charge bound,eta_TiPt_bound,2.8e-15,dimensionless,R1_WEP_source_charge,bound,bound alone is not an MTS prediction,False
+WEP2772_1_material_pair,MICROSCOPE Ti/Pt material convention,AB,TA6V_minus_PtRh10,dimensionless convention,MCON1061_0_test_pair; WEP1065_1_material_pair,context,material convention does not supply Delta_w_AB,False
+WEP2772_2_delta_w,relative source-weight difference for Ti/Pt,Delta_w_TiPt,MISSING_PARENT_GRAMMAR_ZERO_OR_NUMERIC_PRIOR,dimensionless,WTZ2772_4_verdict,required_prediction_input,no unity shortcut and no absorption into measured G,False
+WEP2772_3_tau_WEP,local lab/source/orbit/readout projection,tau_WEP,MISSING_LAB_SOURCE_ORBIT_PROJECTION,dimensionless,REQ2771_0_WEP_species; WEP1065_3_tau_WEP,required_prediction_input,tau_WEP cannot be set to one,False
+WEP2772_4_product,first scoreable WEP relative source product,P_WEP_relative_source_weight = abs(Delta_w_TiPt * tau_WEP),MISSING_DELTA_W_TiPt_TIMES_TAU_WEP_PRODUCT,dimensionless,WEP2772_2_delta_w; WEP2772_3_tau_WEP,prediction,"must be numeric, sourced, unit-matched, and <= 2.8e-15",False
+WEP2772_5_no_cancellation,absolute-value no-cancellation guard,abs(Delta_w_TiPt * tau_WEP),ENFORCED_AS_SCHEMA,dimensionless,WEP2772_4_product,guard,no signed-material cancellation accepted as evidence,False

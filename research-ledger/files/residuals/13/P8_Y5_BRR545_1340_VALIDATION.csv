@@ -1,0 +1,13 @@
+check_id,check,status,details
+VAL1340_0_sources_exist,registered local source paths exist and anchors are found,PASS,14/14 source anchors found
+VAL1340_1_EH_not_derived,EH core selection is not promoted,PASS,EH1340_4_verdict=NOT_DERIVED_CURRENT_CORPUS
+VAL1340_2_schema_present,R11 executable schema and templates are present,PASS,schema_rows=3;template_rows=4
+VAL1340_3_runner_rejects_placeholders,R11 dry-run rejects placeholders and unsigned zero switches,PASS,R11RUN1340_0_R2FR_prediction_required=REJECTED_MISSING_EXECUTABLE_INPUTS;R11RUN1340_1_R2FR_zero_theorem_switch=REJECTED_ZERO_THEOREM_NOT_PARENT_SIGNED;R11RUN1340_2_connection_prediction_required=REJECTED_MISSING_EXECUTABLE_INPUTS;R11RUN1340_3_connection_zero_theorem_switch=REJECTED_ZERO_THEOREM_NOT_PARENT_SIGNED;R11RUN1340_VERDICT=R11_BRANCH_BLOCKED_NONCLAIM
+VAL1340_4_zero_routes_unsigned,zero routes remain unsigned,PASS,ZERO1340_0_R2FR=NOT_PARENT_SIGNED;ZERO1340_1_connection=NOT_PARENT_SIGNED
+VAL1340_5_bound_routes_missing,finite bound routes remain missing executable numeric inputs,PASS,BOUND1340_0_R2FR=MISSING_EXECUTABLE_NUMERIC_INPUTS;BOUND1340_1_connection=MISSING_EXECUTABLE_NUMERIC_INPUTS
+VAL1340_6_claims_blocked,EH/R11/local-GR claims remain blocked,PASS,CLAIM1340_0_EH_core=BLOCKED;CLAIM1340_1_R11_score=BLOCKED;CLAIM1340_2_local_GR_Newton=BLOCKED
+VAL1340_7_runners_not_scoreable,runners refuse EH/local-GR scoring,PASS,RUN1340_0_EH_core_selection=EH_CORE_NOT_DERIVED;RUN1340_1_R11_interface=EXECUTABLE_INTERFACE_NONCLAIM_READY
+VAL1340_8_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false where present
+VAL1340_9_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1340_10_next_target_1341,next target routes to R2/fR scalar-mode zero theorem or source-backed bound row,PASS,1341-Y5-R10-RAB-R2FR-scalar-mode-zero-theorem-or-source-backed-bound-row.md
+VAL1340_11_overall,overall 1340 validation,PASS,"1340 does not derive EH core, but creates a strict first executable nonclaim R11 interface for R2/fR and torsion/nonmetricity"

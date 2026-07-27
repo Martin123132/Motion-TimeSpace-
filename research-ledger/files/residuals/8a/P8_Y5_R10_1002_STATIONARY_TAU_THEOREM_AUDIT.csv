@@ -1,0 +1,8 @@
+audit_id,object,needed_for_zero,current_evidence,status,valid_for_claim
+STA1002_0_quantity,partial_t Delta_ref,"the reference subtraction must be invariant along the same tau used by charge, clocks, and readout",997 flags MISSING_STATIONARY_TAU_BREF_RULE,blocked_nonclaim,false
+STA1002_1_tau_identity,tau_source=tau_charge=tau_clock=tau_boundary=tau_orbit,"one parent-selected observed time-flow, not separate post-readout labels",684/685 keep tau identity conditional and unsigned,unsigned,false
+STA1002_2_stationary_generator,L_tau g_obs=0 and nabla_(mu tau_nu)=0,a stationary/Killing observed generator locks the time evolution of the local reference branch,687 verdict says selector silence is weaker than full observed stationarity,fail_current_claim,false
+STA1002_3_Bref_invariance,L_tau B_ref=0,B_ref and its counterterm/reference branch must not drift under tau,MISSING_PARENT_BREF_TAU_INVARIANCE_CERTIFICATE,unsigned,false
+STA1002_4_hamiltonian_clock_lock,"H_tau, H_ref, and clock normalization","Hamiltonian integrability, fixed reference, and clock normalization must use the same tau",685 marks Hamiltonian boundary route and clock normalization route as not signed,unsigned,false
+STA1002_5_nonstationary_residual,epsilon_nonstationary_tau,T_H^{mu nu} nabla_(mu tau_nu) and related time drift terms vanish or are source bounded,686/688 stage nonstationary-tau and symgrad-tau residuals,fallback_required,false
+STA1002_6_theorem_verdict,partial_t Delta_ref = 0,"tau identity, stationary generator, L_tau B_ref, Hamiltonian integrability, clock lock, fixed reference, and no-exchange clauses parent-signed",not enough parent tau geometry to promote zero,fail_current_claim,false

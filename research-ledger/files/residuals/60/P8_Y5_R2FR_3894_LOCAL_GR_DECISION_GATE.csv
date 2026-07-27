@@ -1,0 +1,8 @@
+gate_id,gate,requirement,status,claim_allowed,valid_for_claim,timestamp_utc
+LGG3894_0_owner,parent memory owner,"X_mem := y^memory is a parent auxiliary component of Y_loc^A in S_y, with Sigma_loc including G_mem X_mem^2 and K_history := K[X_mem]",PASS_CANDIDATE_BRANCH_NONCLAIM,False,False,2026-07-01T08:43:13+00:00
+LGG3894_1_action,memory operator action,S_mem = -1/2 int_D sqrt(h) [A^ij_mem D_i X_mem D_j X_mem + m_mem^2 X_mem^2] + int_D sqrt(h) J_X X_mem + boundary_X,PASS_CANDIDATE_BRANCH_NONCLAIM,False,False,2026-07-01T08:43:13+00:00
+LGG3894_2_sign_gap,positive sign/gap,a_min>0 and lambda_gap=a_min lambda_1(D)+m_min^2>0,FAIL_INPUTS_MISSING,False,False,2026-07-01T08:43:13+00:00
+LGG3894_3_JX,J_X source zero,all J_X components zero or bounded,PARTIAL_FAIL_BOUNDARY_HISTORY_OPEN,False,False,2026-07-01T08:43:13+00:00
+LGG3894_4_boundary,boundary/zero-mode silence,boundary_X=0 and constant mode removed/universal,FAIL_UNSIGNED,False,False,2026-07-01T08:43:13+00:00
+LGG3894_5_projection,observable projections,K_i maps to R10/PPN/clock/Gdot/orbital/WEP sourced,FAIL_MISSING,False,False,2026-07-01T08:43:13+00:00
+LGG3894_6_local_GR,local-GR promotion,memory plus boundary/projector/R11/residual-lock close,BLOCKED_NO_CLAIM,False,False,2026-07-01T08:43:13+00:00

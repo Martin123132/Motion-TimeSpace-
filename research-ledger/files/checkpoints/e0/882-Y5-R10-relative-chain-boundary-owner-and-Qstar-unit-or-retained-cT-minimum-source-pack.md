@@ -1,0 +1,113 @@
+# 882 - Y5/R10 Relative-Chain Boundary Owner and Qstar Unit or Retained cT Minimum Source Pack
+
+Status: `Y5_R10_882_relative_chain_action_shape_written_Qstar_endpoint_variation_obstruction_found_retained_cT_minimum_pack_staged_nonclaim`  
+Claim ceiling: `relative_chain_action_shape_and_retained_source_pack_only_no_Qstar_unit_no_DeltaR_prediction_no_Ptr_Htr_no_R10_PPN_or_local_GR_claim`  
+Generated UTC: `2026-06-13T12:18:50.159136+00:00`
+
+Current result: **the relative-chain action shape is useful, but it rejects an endpoint-only `Q_*` derivation**. The clean formal owner is `S_rel=Q_*^2 int_{partial C_rel} U(Q_trace/Q_*)`, giving `Q_*^2[U(R_early)-U(R_today)]` when the oriented boundary is `Sigma_early-Sigma_today`. That owns the sign shape from 880, but varying `Q_*` in the same endpoint action gives `dS/dQ_*=-8 Q_*/81` at `R_early=1/3`, `R_today=1/9`. So the endpoint action cannot derive a nonzero `Q_*`; the unit must be fixed by a separate Ward norm, charge quantum, or superselection sector. Since the zero route remains unsigned, the minimum retained `c_T` source pack is staged, but every row remains nonclaim until real parent coefficients or source-backed inputs exist.
+
+## Nonclaim Summary
+| status | claim_ceiling | what_changed | best_partial_result | hard_blockers | what_is_not_claimed | next_target | valid_for_claim | generated_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Y5_R10_882_relative_chain_action_shape_written_Qstar_endpoint_variation_obstruction_found_retained_cT_minimum_pack_staged_nonclaim | relative_chain_action_shape_and_retained_source_pack_only_no_Qstar_unit_no_DeltaR_prediction_no_Ptr_Htr_no_R10_PPN_or_local_GR_claim | wrote the relative-chain endpoint action owner shape, tested whether varying Q_* derives the unit, and staged the minimum retained c_T source pack | the oriented relative-chain action cleanly owns the sign pattern, but direct Q_* variation gives dS/dQ_*=-8 Q_*/81 at the target roots, so the endpoint action cannot derive a nonzero charge unit by itself | separate Q_* superselection/Ward norm sector, parent relative-chain action owner, physical endpoint arrow, full K_parent extension, local no-hair/source-cokernel, numeric retained c_T inputs | Q_* derivation, DeltaR prediction, P_tr/H_tr promotion, c_T zero/pass, R10/PPN/WEP/clock/orbital pass, local GR/Newton | 883-Y5-R10-Qstar-superselection-or-Ward-norm-sector-and-cT-source-pack-prioritization.md | false | 2026-06-13T12:18:50.159136+00:00 |
+
+## Source Register
+| source_id | path | exists | needle_check | role | valid_for_claim | generated_utc |
+| --- | --- | --- | --- | --- | --- | --- |
+| 881_doc | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\881-Y5-R10-Qstar-Ward-normalization-and-oriented-boundary-signature-or-retained-cT-bound-runner.md | true | pass | immediate relative-chain/Qstar handoff | false | 2026-06-13T12:18:50.159136+00:00 |
+| 881_validation | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_BRR545_881_VALIDATION.csv | true | pass | prior checkpoint validation | false | 2026-06-13T12:18:50.159136+00:00 |
+| 109_boundary_charge | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\109-boundary-charge-two-ninth-theorem-attempt.md | true | pass | relative boundary language and Qstar failure | false | 2026-06-13T12:18:50.159136+00:00 |
+| 111_variational_owner | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\111-endpoint-quadratic-variational-owner-attempt.md | true | pass | formal potential, Qstar metric, and endpoint arrow blockers | false | 2026-06-13T12:18:50.159136+00:00 |
+| 862_trace_lift | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\862-Y5-R10-trace-lift-endpoint-equation-and-coframe-pullback-closure.md | true | pass | trace-lift/Qstar bridge | false | 2026-06-13T12:18:50.159136+00:00 |
+| 863_Ward_trace | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\863-Y5-R10-Ward-trace-lift-current-and-coframe-pullback-zero-theorem.md | true | pass | Qstar unit theorem target | false | 2026-06-13T12:18:50.159136+00:00 |
+| 864_split | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\864-Y5-R10-local-global-quotient-split-and-endpoint-stationarity-parent-clause.md | true | pass | local/global split and Qstar normalization blocker | false | 2026-06-13T12:18:50.159136+00:00 |
+| 875_schema | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_875_CT_INPUT_SCHEMA.csv | true | pass | retained cT coefficient schema | false | 2026-06-13T12:18:50.159136+00:00 |
+| 880_queue | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_880_RETAINED_CT_BOUND_QUEUE.csv | true | pass | retained cT/Ztr/lambdatr/Jtr queue | false | 2026-06-13T12:18:50.159136+00:00 |
+| 97_canonical_R | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\97-canonical-R-theorem-attempt.md | true | pass | canonical Qstar/R theorem blocker | false | 2026-06-13T12:18:50.159136+00:00 |
+| 337_exact_readout | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\337-exact-parent-pullback-selection-rule-gate.md | true | pass | conditional trace readout | false | 2026-06-13T12:18:50.159136+00:00 |
+| 338_readout_gate | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\338-action-level-exact-readout-gate.md | true | pass | readout/spurion guard | false | 2026-06-13T12:18:50.159136+00:00 |
+
+## Relative Chain Owner
+| owner_id | required_object | formal_clause | if_signed | current_status | blocker | valid_for_claim | generated_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| RCO882_0_relative_chain_domain | oriented relative chain C_rel=(M;Sigma_early,Sigma_today) | partial C_rel = Sigma_early - Sigma_today, up to the chosen parent orientation convention | boundary evaluations enter with the sign needed by the 880 endpoint action | shape_available_parent_owner_missing | relative boundary language exists, but no parent action declares C_rel as the fundamental boundary object | false | 2026-06-13T12:18:50.159136+00:00 |
+| RCO882_1_trace_charge_map | Q_trace[Sigma] | Q_trace[Sigma]=int_Sigma star J_trace, with R_Sigma=Q_trace[Sigma]/Q_* | endpoint variables become boundary charges rather than free roots | conditional_current_not_parent_owned | J_trace and its local no-hair class are still theorem targets | false | 2026-06-13T12:18:50.159136+00:00 |
+| RCO882_2_endpoint_action | S_rel endpoint term | S_rel=Q_*^2 int_{partial C_rel} U(Q_trace/Q_*) = Q_*^2[U(R_early)-U(R_today)] | stationarity gives U'(R_early)=U'(R_today)=0 with the oriented sign pattern | formal_owner_shape_written | U coefficients and Q_* unit are not derived from the parent action | false | 2026-06-13T12:18:50.159136+00:00 |
+| RCO882_3_boundary_variation | endpoint Euler equations | delta_Q S_rel = Q_* U'(R_early) delta Q_early - Q_* U'(R_today) delta Q_today | both endpoints solve 27R^2-12R+1=0 without flipping the Hessian sign | conditional_variation_ok_if_Qstar_fixed | requires Q_* to be fixed/superselected during endpoint variation | false | 2026-06-13T12:18:50.159136+00:00 |
+| RCO882_4_arrow | physical endpoint arrow | R_early=1/3 and R_today=1/9 selected by relaxation/expansion/entropy orientation, not by post-fit choice | DeltaR=+2/9 becomes an oriented prediction candidate | not_derived | orientation gives subtraction order but does not assign high root to early by itself | false | 2026-06-13T12:18:50.159136+00:00 |
+| RCO882_5_verdict | relative-chain owner | parent action must own C_rel, J_trace, Q_*, U, and arrow jointly | endpoint route could re-enter P_tr/H_tr construction | partial_shape_only_nonclaim | Q_* and arrow remain missing; no promotion to local GR | false | 2026-06-13T12:18:50.159136+00:00 |
+
+## Qstar Variation Obstruction
+| obstruction_id | test | calculation | result | status | consequence | valid_for_claim | generated_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| QVO882_0_action | vary Q_* inside the same endpoint action | S_rel=Q_*^2[U(R_early)-U(R_today)], R_i=Q_i/Q_* | dS/dQ_*=2Q_*[U_e-U_t]-Q_*[R_e U'_e-R_t U'_t] | formula_ready | Q_* variation adds an extra Euler equation unless Q_* is fixed by another sector | false | 2026-06-13T12:18:50.159136+00:00 |
+| QVO882_1_at_stationary_roots | evaluate at R_early=1/3, R_today=1/9 and U'=0 | U(1/3)=0, U(1/9)=4/81, so U_e-U_t=-4/81 | dS/dQ_*=-8/81 Q_* = -8 Q_*/81 | nonzero_for_Qstar_nonzero | the endpoint action alone would force Q_*=0 or require an extra counter-sector; neither is a valid charge unit derivation | false | 2026-06-13T12:18:50.159136+00:00 |
+| QVO882_2_fixed_unit_rule | hold Q_* fixed during endpoint variation | delta Q_* = 0 removes the extra equation and leaves U'(R_early)=U'(R_today)=0 | endpoint roots are consistent only if Q_* is a parent-fixed unit/superselection parameter | requires_external_Qstar_owner | Q_* must come from Ward norm, charge quantum, or superselection sector outside S_rel | false | 2026-06-13T12:18:50.159136+00:00 |
+| QVO882_3_counterterm_warning | add W(Q_*) to repair dS/dQ_* | W'(Q_*)=+8Q_*/81 at the selected roots would cancel the obstruction | possible but would be a new parent sector requiring independent derivation | allowed_future_route_not_inserted | do not add a Q_* counterterm merely to save the endpoint route | false | 2026-06-13T12:18:50.159136+00:00 |
+| QVO882_4_verdict | can S_rel derive Q_*? | direct endpoint-action variation fails for nonzero Q_* | Q_* is not derivable from the 880/882 endpoint action alone | reject_endpoint_only_Qstar_derivation | next derivation must be Q_* superselection/Ward norm sector or switch to retained c_T inputs | false | 2026-06-13T12:18:50.159136+00:00 |
+
+## Qstar Owner Options
+| option_id | candidate_owner | required_formula | status | risk | valid_for_claim | generated_utc |
+| --- | --- | --- | --- | --- | --- | --- |
+| QOO882_0_Ward_norm | Q_* from parent Ward-current norm | Q_*^2=<J_trace,J_trace>_parent or equivalent charge metric fixed before endpoint variation | best_next_derivation_target | requires a parent inner product/measure and no calibration leakage | false | 2026-06-13T12:18:50.159136+00:00 |
+| QOO882_1_charge_quantum | Q_* as trace charge quantum/superselection unit | allowed boundary charges are integer/rational multiples of Q_*; q_trace=2/27 is a normalized exact readout | plausible_but_unsigned | needs quantization/topological class theorem rather than chosen units | false | 2026-06-13T12:18:50.159136+00:00 |
+| QOO882_2_fixed_cell_trace | Q_* from full-cell trace normalization | full trace average and active readout fix a unit cell current before endpoint charge is formed | conditional_on_exact_readout | 337/338 still leave exact readout versus EFT/spurion proof open | false | 2026-06-13T12:18:50.159136+00:00 |
+| QOO882_3_Qstar_countersector | new W(Q_*) normalization sector | W'(Q_*) cancels endpoint obstruction and has independent parent justification | last_resort | looks like a target-fitted counterterm unless independently derived | false | 2026-06-13T12:18:50.159136+00:00 |
+| QOO882_4_no_owner | no Q_* theorem found | demote DeltaR amplitude route to closure/retained branch | fallback_if_883_fails | cosmology amplitude remains useful but not derived | false | 2026-06-13T12:18:50.159136+00:00 |
+
+## Retained cT Minimum Source Pack
+| pack_id | quantity | minimum_required_value | units | needed_for | current_value | source_path | status | valid_for_claim | generated_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| MCP882_0_Ztr | Z_tr | numeric positive or zero-return certificate | parent_defined_kinetic_normalization | R10 amplitude, orbital profile, ghost/no-pole decision | MISSING_PARENT_HESSIAN | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_880_RETAINED_CT_BOUND_QUEUE.csv | missing_blocks_claim | false | 2026-06-13T12:18:50.159136+00:00 |
+| MCP882_1_lambdatr | lambda_tr_or_m_tr | numeric range/mass or proof of no physical pole | length_or_mass | R10 alpha(lambda), orbital finite-range tests | MISSING_PARENT_HESSIAN_OR_NOPOLE | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_880_RETAINED_CT_BOUND_QUEUE.csv | missing_blocks_claim | false | 2026-06-13T12:18:50.159136+00:00 |
+| MCP882_2_universal_charge | Q_tr_over_m_universal | numeric universal charge per inertial mass or theorem zero | charge_per_mass_parent_defined | R10/orbital common-force score | MISSING_SOURCE_PROJECTION | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_880_RETAINED_CT_BOUND_QUEUE.csv | missing_blocks_claim | false | 2026-06-13T12:18:50.159136+00:00 |
+| MCP882_3_species_charge | Delta_Q_tr_over_m_AB | numeric material/species differential charge or no-marker theorem | differential_charge_per_mass | WEP and clock/material tests | MISSING_NO_MARKER_RESULT | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_880_RETAINED_CT_BOUND_QUEUE.csv | missing_blocks_claim | false | 2026-06-13T12:18:50.159136+00:00 |
+| MCP882_4_metric_response | C_T_gamma,C_T_beta,C_T_source | numeric response operator or EH/same-frame absorption theorem | dimensionless_response | PPN gamma/beta and Newtonian source normalization | MISSING_RESPONSE_OPERATOR | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_880_RETAINED_CT_BOUND_QUEUE.csv | missing_blocks_claim | false | 2026-06-13T12:18:50.159136+00:00 |
+| MCP882_5_clock_response | C_T_clock | numeric clock response or proof matter constants factor through q_loc | fractional_clock_response | clock/redshift/local constants tests | MISSING_CLOCK_RESPONSE | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_880_RETAINED_CT_BOUND_QUEUE.csv | missing_blocks_claim | false | 2026-06-13T12:18:50.159136+00:00 |
+| MCP882_6_R10_bound_curve | alpha_bound(lambda)_R10 | full source-backed curve or explicitly nonclaim anchor-only rows | dimensionless_alpha_vs_length | R10 claim comparison | MISSING_FULL_CURVE_FOR_CLAIM | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_880_RETAINED_CT_BOUND_QUEUE.csv | missing_blocks_claim | false | 2026-06-13T12:18:50.159136+00:00 |
+| MCP882_7_arena_projection | tau_R10,tau_PPN,tau_clock_WEP,tau_orbital | arena projection maps from c_T/Z_tr/lambda_tr/J_tr to observables | arena_dependent | any retained c_T score | MISSING_ARENA_PROJECTION | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_880_RETAINED_CT_BOUND_QUEUE.csv | missing_blocks_claim | false | 2026-06-13T12:18:50.159136+00:00 |
+| MCP882_8_source_provenance | source_path_and_units_for_every_numeric_input | local path/DOI/URL, extraction method, confidence, units, valid_for_claim flag | metadata | claim hygiene | MISSING_NUMERIC_INPUTS | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_880_RETAINED_CT_BOUND_QUEUE.csv | schema_ready_no_claim | false | 2026-06-13T12:18:50.159136+00:00 |
+
+## Route Choice
+| route_id | route | status | reason | include | exclude | valid_for_claim | generated_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| RC882_0_selected | Qstar_superselection_or_Ward_norm_sector_and_cT_source_pack_prioritization | selected | direct Q_* variation inside the endpoint action fails, so the only derivation route is a separate parent-fixed Ward norm/superselection sector; retained c_T source pack is staged if that fails | Q_* Ward norm, charge quantum/superselection, exact readout unit, relative-chain owner, retained c_T source priority | DeltaR claim, local-GR/Newton pass, R10/PPN pass, fitted counterterm, formalization-workbench edits, GitHub action | false | 2026-06-13T12:18:50.159136+00:00 |
+
+## Claim Guard
+| guard_id | claim | status | reason | valid_for_claim | generated_utc |
+| --- | --- | --- | --- | --- | --- |
+| CG882_0_no_Qstar_claim | Q_* is derived by the endpoint action | forbidden | Q_* variation gives -8 Q_*/81 at the selected roots and does not allow a nonzero unit | false | 2026-06-13T12:18:50.159136+00:00 |
+| CG882_1_no_DeltaR_claim | DeltaR=2/9 is parent predicted | forbidden | Q_*, endpoint arrow, and parent relative-chain owner remain unsigned | false | 2026-06-13T12:18:50.159136+00:00 |
+| CG882_2_no_Kparent_claim | full K_parent/P_tr/H_tr are promoted | forbidden | relative endpoint block does not supply full quotient tangent pairing or local no-hair | false | 2026-06-13T12:18:50.159136+00:00 |
+| CG882_3_no_retained_cT_claim | retained c_T is scored or passes bounds | forbidden | minimum source pack has schema rows only and every numeric input is missing | false | 2026-06-13T12:18:50.159136+00:00 |
+| CG882_4_no_local_GR_claim | local GR/Newton follows | forbidden | trace branch plus other local residual channels remain unclosed | false | 2026-06-13T12:18:50.159136+00:00 |
+| CG882_5_allowed_private_result | endpoint-only Q_* derivation is rejected and next route is sharper | allowed_private_nonclaim | this prevents an invalid unit derivation and focuses 883 on superselection/Ward norm or retained source inputs | false | 2026-06-13T12:18:50.159136+00:00 |
+
+## Decision
+| decision_id | finding | reason | status | claim_allowed | next_target | valid_for_claim | generated_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| D882_0 | relative_chain_action_shape_written | oriented relative boundary action provides a coherent sign owner shape for U(R_early)-U(R_today) | Y5_R10_882_relative_chain_action_shape_written_Qstar_endpoint_variation_obstruction_found_retained_cT_minimum_pack_staged_nonclaim | false | 883-Y5-R10-Qstar-superselection-or-Ward-norm-sector-and-cT-source-pack-prioritization.md | false | 2026-06-13T12:18:50.159136+00:00 |
+| D882_1 | endpoint_only_Qstar_derivation_rejected | varying Q_* gives a nonzero residual -8 Q_*/81 at the target roots | Y5_R10_882_relative_chain_action_shape_written_Qstar_endpoint_variation_obstruction_found_retained_cT_minimum_pack_staged_nonclaim | false | 883-Y5-R10-Qstar-superselection-or-Ward-norm-sector-and-cT-source-pack-prioritization.md | false | 2026-06-13T12:18:50.159136+00:00 |
+| D882_2 | retained_cT_minimum_pack_staged | if Q_* superselection/Ward norm fails, the trace branch must be source-packed before any local bound scoring | Y5_R10_882_relative_chain_action_shape_written_Qstar_endpoint_variation_obstruction_found_retained_cT_minimum_pack_staged_nonclaim | false | 883-Y5-R10-Qstar-superselection-or-Ward-norm-sector-and-cT-source-pack-prioritization.md | false | 2026-06-13T12:18:50.159136+00:00 |
+
+## Next Target
+| next_target | objective | include | exclude | valid_for_claim | generated_utc |
+| --- | --- | --- | --- | --- | --- |
+| 883-Y5-R10-Qstar-superselection-or-Ward-norm-sector-and-cT-source-pack-prioritization.md | try to derive Q_* as a parent-fixed Ward norm or charge superselection sector; if not, prioritize the retained c_T source-pack inputs needed for real local-bound scoring | Q_* superselection, Ward-current inner product, exact readout unit, relative-chain owner, retained c_T source priority order | endpoint-only Q_* derivation, fitted Q_* counterterm, R10/local-GR pass, public claim, formalization-workbench edits, GitHub action | false | 2026-06-13T12:18:50.159136+00:00 |
+
+## Validation
+| check_id | result | detail |
+| --- | --- | --- |
+| V882_0_sources_exist_and_needles | pass | all source paths exist and needles are present |
+| V882_1_prior_881_clean | pass | P8_Y5_BRR545_881_VALIDATION.csv clean |
+| V882_2_relative_action_shape_written | pass | relative-chain endpoint action shape recorded |
+| V882_3_Qstar_variation_obstruction_recorded | pass | dS/dQ_*=-8 Q_*/81 at selected roots recorded |
+| V882_4_endpoint_only_Qstar_rejected | pass | endpoint-only Q_* derivation rejected |
+| V882_5_external_Qstar_owner_required | pass | Ward norm/superselection selected as next Q_* route |
+| V882_6_retained_pack_ready | pass | minimum retained c_T source pack staged |
+| V882_7_retained_pack_missing_inputs | pass | retained pack rows remain missing and nonclaim |
+| V882_8_claim_allowed_false | pass | claim guards and decision rows keep claim_allowed=false |
+| V882_9_all_rows_nonclaim | pass | all generated rows valid_for_claim=false |
+| V882_10_formalization_workbench_untouched | pass | formalization_changed_after_cutoff=0 |
+| V882_11_route_selected | pass | 883-Y5-R10-Qstar-superselection-or-Ward-norm-sector-and-cT-source-pack-prioritization.md |
+| V882_12_validation_rows_ready | pass | validation table constructed |

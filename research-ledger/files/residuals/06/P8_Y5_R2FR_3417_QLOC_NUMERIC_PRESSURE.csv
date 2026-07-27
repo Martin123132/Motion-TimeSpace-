@@ -1,0 +1,6 @@
+pressure_id,quantity,formula,value,bound_or_target,ratio_to_bound,interpretation,valid_for_claim
+QNP3417_0_beta_if_unit,delta_beta_q_if_Wf_eq_1,delta_beta_q=q_proxy,7.432631961576971e-06,7.8e-05,0.09529015335355091,"below beta target in this provisional normalization, but not claim-ready",False
+QNP3417_1_kappav_if_unit,kappa_q_if_Wf_eq_1,kappa_q=2*q_proxy,1.4865263923153942e-05,0.000156,0.09529015335355091,uses about 9.53 percent of the kappa_v beta envelope if scalar-only and unit-weight,False
+QNP3417_2_alpha3_product_limit,|W_q_alpha3 f_qV|,alpha3_bound/q_proxy,5.381673706808059e-15,3.999999999999999e-20,1.0,vector response product must be <=5.38e-15; structural zero is the natural route,False
+QNP3417_3_alpha3_if_order_one,alpha3_q_if_Wf_eq_1,alpha3_q=q_proxy,7.432631961576971e-06,3.999999999999999e-20,185815799039424.3,order-one vector leakage misses alpha3 by about 1.86e14,False
+QNP3417_4_verdict,q_loc_score_status,scalar beta may be small; vector/preferred-frame must be zero or bounded independently,NOT_SCORE_READY,requires U2 scalar normalization and alpha-vector projection,n/a,q_loc cannot be accepted as a retained local-GR pass,False

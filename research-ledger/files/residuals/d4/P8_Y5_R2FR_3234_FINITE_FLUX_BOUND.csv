@@ -1,0 +1,5 @@
+bound_id,quantity,formula,required_inputs,status,valid_for_claim,generated_utc
+PB3234_0_boundary_flux,Phi_Poynting_bound,Phi_Poynting_bound := C_flux ||S_EM dot n||_B + B_corner_flux,"C_flux; boundary/collar/worldtube B; observed u,n; flux norm; corner/worldtube remainder; units",FINITE_BOUND_FORMULA_READY_INPUTS_MISSING,false,2026-06-26T22:50:59.503467+00:00
+PB3234_1_collar_source,J_Poynting_bound,"J_Poynting_bound := C_coll ||T_EM(u,n)||_collar",C_coll; collar support; stress-flux norm; projector norm; units,FINITE_BOUND_FORMULA_READY_INPUTS_MISSING,false,2026-06-26T22:50:59.503467+00:00
+PB3234_2_total_phi,Phi_perp_bound update,|Phi_perp^tau| <= Phi_other_bound + Phi_EM_F2_boundary + C_flux ||S_EM dot n||_B + B_corner_flux,Phi_other_bound; Phi_EM_F2_boundary; C_flux; flux norm; corner flux,FEEDS_LOCAL_RESIDUAL_VECTOR,false,2026-06-26T22:50:59.503467+00:00
+PB3234_3_total_jperp,J_perp_bound update,"||J_perp^tau||_2 <= J_other_bound + (1/4) C_F2_perp ||F^2||_2 + C_coll ||T_EM(u,n)||_collar",J_other_bound; C_F2_perp; F2 norm; C_coll; collar stress flux norm,FEEDS_TRANSVERSE_AMPLITUDE_LAW,false,2026-06-26T22:50:59.503467+00:00

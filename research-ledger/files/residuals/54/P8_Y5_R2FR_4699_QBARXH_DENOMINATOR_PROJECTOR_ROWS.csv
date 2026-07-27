@@ -1,0 +1,5 @@
+checkpoint,row_id,quantity,formula,required_inputs,current_status,source_anchor,valid_for_claim,claim_allowed,timestamp_utc
+4699,DPROJ4699_0_M_lower,M_lower,"M_lower = M_0(1-epsilon_abs), with M_0>0 and 0<=epsilon_abs<1",M_0;epsilon_abs;same-frame source units,MISSING_POSITIVE_LOWER_BOUND,MD4604_2_M_lower,False,False,2026-07-07T19:40:16+00:00
+4699,DPROJ4699_1_PiM_norm,||Pi_M^H||,operator norm of fixed mass/source projector on Q_tot vector space,source vector norm;projector definition;units ledger,MISSING_PROJECTOR_OPERATOR_NORM,PM4604_1_operator_norm,False,False,2026-07-07T19:40:16+00:00
+4699,DPROJ4699_2_commutator,E_PiM_comm,"E_PiM_comm bounds [D_v,Pi_M]Q_tot or [d,Pi_M]J_H",commutator zero certificate or numeric residual bound,MISSING_PROJECTOR_COMMUTATOR_ZERO_OR_BOUND,PM4604_2_commutator,False,False,2026-07-07T19:40:16+00:00
+4699,DPROJ4699_3_firewall,Qbar_XH_claim_firewall,no division by symbolic M_lower; no measured-G absorption of relative/projector/source residuals,all DPROJ4699 rows source-backed or exact-zero signed,FIREWALL_ACTIVE,QF4604_1_absolute_Qbar_bound,False,False,2026-07-07T19:40:16+00:00

@@ -1,0 +1,8 @@
+gate_id,gate,status,reason,valid_for_claim,claim_allowed
+GATE1372_0_algebraic_closure,fixed-L0 double-zero closes algebraic volume/m/L sector,PASS_CLOSURE_ONLY,strict 1371 branch closes algebraic pieces but requires parent adoption.,False,False
+GATE1372_1_cdb_zero,K_conn/K_domain/K_boundary vanish,BLOCKED,"connection, domain, and boundary no-flux theorems remain unsigned or failed generally.",False,False
+GATE1372_2_memory_source_zero,memory kinetic/source/bath stress vanishes,BLOCKED,local no-hair/source-current/boundary zero theorem is not derived.,False,False
+GATE1372_3_local_zero_theorem,q_loc/local residual theorem proves zero,BLOCKED_ZERO_THEOREM_NOT_DERIVED,algebraic branch is not enough; residual channels remain live.,False,False
+GATE1372_4_Qnorm_bound,Q_norm receives usable source-ready symbolic decomposition,PASS_SYMBOLIC_BOUND,Q_norm decomposition and Cassini feed are now explicit.,False,False
+GATE1372_5_numeric_runner,C_qgamma/PPN runner can score numerically,BLOCKED_NUMERIC_INPUTS_MISSING,"Q_i, U_min, N_G, and N_D remain unfilled.",False,False
+GATE1372_6_local_GR_claim,local GR / PPN / R10 pass can be claimed,BLOCKED_NO_CLAIM,no zero theorem and no numeric bound pass.,False,False

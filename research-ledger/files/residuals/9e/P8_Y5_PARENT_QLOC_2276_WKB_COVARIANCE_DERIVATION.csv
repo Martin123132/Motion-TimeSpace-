@@ -1,0 +1,6 @@
+step_id,object,formula,derivation,status,valid_for_claim
+WKB2276_0_ansatz,multimode scalar ansatz,psi_epsilon(x)=sum_I a_I(x) cos(S_I(x)/epsilon+theta_I),one scalar field carries several local phases S_I and amplitudes a_I,ASYMPTOTIC_ANSATZ,False
+WKB2276_1_gradient,leading gradient,"partial_m psi_epsilon=sum_I[-a_I k_I,m sin(phi_I)/epsilon + partial_m a_I cos(phi_I)]","k_I,m=partial_m S_I and phi_I=S_I/epsilon+theta_I",DERIVED,False
+WKB2276_2_smoothed_covariance,phase-averaged covariance,"<partial_m psi partial_n psi>_smooth=sum_I (a_I^2/(2 epsilon^2)) k_I,m k_I,n + R_mn",phase averaging kills I!=J cross terms and averages sin^2 to 1/2; R_mn contains amplitude-gradient and imperfect-averaging residuals,CARRIER_INVENTORY_RECOVERED_CONDITIONALLY,False
+WKB2276_3_weight_identification,carrier weights,"W_I=a_I^2/(2 epsilon^2), C_mn=sum_I W_I k_I,m k_I,n + R_mn",this matches the 2275 carrier inventory up to signs/cone conventions and residual terms,MATCHES_2275_INVENTORY_WITH_RESIDUAL,False
+WKB2276_4_residual_size,amplitude/smoothing leakage,||R||/||C|| = O(epsilon/L_amp) + O(kernel_cross_phase_leakage),slow amplitude variation and many-phase smoothing suppress non-carrier terms,BOUND_TEMPLATE_NOT_NUMERIC,False

@@ -1,0 +1,5 @@
+attempt_id,target,zero_route,result,why_not_full,valid_for_claim
+CMZ3384_0_Cmetric_zero,C_metric,residual MTS metric operator response vanishes in the local PPN patch,NOT_DERIVED,3331 defines C_metric as operator norm; no source-backed zero norm certificate exists,false
+CMZ3384_1_epsilon_eff_zero,epsilon_eff_PPN,epsilon_bg_PPN=epsilon_boundary_PPN=epsilon_kernel_aniso_PPN=0,CONDITIONAL_ZERO_BRANCH_NOT_SIGNED,"local first-gradient silence, boundary silence and kernel isotropy are not all parent-signed",false
+CMZ3384_2_bound_product,A_PPN C_metric epsilon_eff_PPN^2,"if not zero, compare product to a sourced PPN budget with no cancellation",FORMULA_READY_NUMERIC_MISSING,A_PPN and C_metric are symbolic; epsilon_eff components are missing source-backed values,false
+CMZ3384_3_verdict,metric-response PPN product,C_metric=0 or epsilon_eff=0 or product below bound,FIRST_BOUND_ROW_STAGED_NONCLAIM,"Cassini provides a gamma bound, but MTS prediction row remains symbolic/nonclaim",false

@@ -1,0 +1,6 @@
+factor_id,operator_factor,mathematical_form,needed_input,current_status,output_if_filled,valid_for_claim,generated_utc
+PA3751_0_domain,P_Hodge,"q_loc -> (q_T, D sigma_q, q_V, q_H)","component-resolved q_loc field, observed frame, domain weights, boundary conditions",schema_only_no_input,component norms and q_V/q_H flux candidates,false,2026-06-11T18:59:27+00:00
+PA3751_1_flux,P_flux,"(q_V,q_H,boundary flux) -> epsilon_q_momentum",preferred-frame/momentum-flux projection and same-frame normalization,missing,epsilon_q_momentum and f_qV,false,2026-06-11T18:59:27+00:00
+PA3751_2_green,G_PPN,source flux -> delta g_0i in the observed matter frame,gauge-fixed weak-field linearized equations and boundary/source normalization,missing,vector metric response,false,2026-06-11T18:59:27+00:00
+PA3751_3_ppn_projection,Pi_alpha3^PPN,delta g_0i/vector momentum terms -> alpha3_q,"PPN alpha3 extraction convention, frame/velocity normalization, sign convention",missing,alpha3_q,false,2026-06-11T18:59:27+00:00
+PA3751_4_minimal_composition,P_alpha3_min,P_alpha3_min := Pi_alpha3^PPN o G_PPN o P_flux o P_Hodge,all previous factors plus source paths and units,abstract_operator_contract_only,W_q_alpha3 and/or theorem-zero certificate,false,2026-06-11T18:59:27+00:00

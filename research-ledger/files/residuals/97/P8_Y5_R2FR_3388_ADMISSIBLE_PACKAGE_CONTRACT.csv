@@ -1,0 +1,7 @@
+clause_id,clause,mathematical_content,forbidden_shortcut,current_status,valid_for_claim
+PKG3388_0_branch_selector,choose one smoothing branch before tests,K_ell is either compact bump with support rho_K ell_s or Gaussian/heat-kernel with known tail,switch kernels after seeing local bound pressure,NOT_PARENT_DECLARED,false
+PKG3388_1_normalized_isotropic_kernel,kernel normalization and isotropy,int K_ell dV_h=1; int z^i K_ell(z)dV_h=0; K_ell(z)=k(|z|_h/ell_s),anisotropic readout hidden inside an isotropic Poisson source,MODEL_READY_PARENT_SIGNATURE_MISSING,false
+PKG3388_2_variation_order,smoothing/readout fixed before source projection,delta S_ell and delta P_PPN are either included in stress/residuals or theorem-zero; no post-readout mask,choose smoothing/projector after varying matter/source,REQUIRED_GUARD_ACTIVE,false
+PKG3388_3_local_collar,source-free collar scale,d_collar/ell_s is declared in the same observed frame; compact branch requires d_collar >= rho_K ell_s,call boundary zero without proving kernel support stays inside the collar,FINITE_SCALE_INPUT_MISSING,false
+PKG3388_4_projector_constancy,PPN projector is constant or bounded across the smoothing cell,P_PPN(x)=P0+DeltaP; ||DeltaP|| <= ell_s||nabla P|| + ell_s^2||nabla^2 P||/2 + ...,spend tangent-frame commutation as a real-patch theorem,BOUND_READY_NUMERIC_INPUTS_MISSING,false
+PKG3388_5_gauge_readout_lock,PPN gauge/readout does not drift under smoothing,epsilon_gauge_readout=0 or is included additively in epsilon_kernel_aniso_PPN,hide gauge drift inside Cmetric,FINITE_INPUT_MISSING,false

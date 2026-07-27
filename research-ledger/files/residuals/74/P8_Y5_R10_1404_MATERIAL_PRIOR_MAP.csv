@@ -1,0 +1,11 @@
+prior_id,object,formula_or_value,basis_status,source,status,valid_for_claim,claim_allowed
+MPM1404_0_vector_definition,P_WEP^I := tau_WEP * beta_source^I * b_I,eta_AB = sum_I DeltaQ_AB^I P_WEP^I,MISSING_PARENT_COMPLETE_BASIS,1403 plus 1079/1081/1394/1395,VECTOR_PRIOR_DEFINITION_NONCLAIM,False,False
+MPM1404_1_pair,MICROSCOPE-like smoke pair,TA6V_minus_PtRh10,PAIR_CONVENTION_AVAILABLE,P8_Y5_R10_1061_WEP_MATERIAL_CONVENTION.csv::MCON1061_0_test_pair,PAIR_ONLY_NONCLAIM,False,False
+MPM1404_2_delta_alpha,DeltaQ_alpha_Coulomb,-1.989808886825000e-03,SMOKE_COMPONENT,P8_Y5_R10_1086_COMPOSITION_DELTA_OBSTRUCTION.csv::CDO1086_0_alpha_delta,NUMERIC_PROXY_NOT_PARENT_BASIS,False,False
+MPM1404_3_delta_surface,DeltaQ_surface_binding,-3.306456347405000e-03,SMOKE_COMPONENT,P8_Y5_R10_1086_COMPOSITION_DELTA_OBSTRUCTION.csv::CDO1086_1_surface_delta,NUMERIC_PROXY_NOT_PARENT_BASIS,False,False
+MPM1404_4_alpha_only_pressure,|P_alpha| max if only alpha/Coulomb channel is active,4.797780522732e-05,ONE_COMPONENT_PROJECTION_ONLY,P8_Y5_R10_1403_WEP_PRESSURE_GATE.csv::WPG1403_0_alpha_only,TARGET_ONLY_NOT_PASS,False,False
+MPM1404_5_surface_pressure,|P_surface| max if surface/binding channel is retained as unit stress,2.887280314062e-05,ONE_COMPONENT_SURFACE_PROJECTION_ONLY,P8_Y5_R10_1403_WEP_PRESSURE_GATE.csv::WPG1403_1_robust_surface,TARGET_ONLY_NOT_PASS,False,False
+MPM1404_6_full_material_tensor,DeltaQ_AB^I for all relevant ordinary-matter sectors,MISSING_FULL_MATERIAL_TENSOR,MISSING,P8_Y5_R10_1068_MATERIAL_RESPONSE_REQUIREMENTS.csv::MAT1068_2_full_tensor,BLOCKED,False,False
+MPM1404_7_parent_coefficient_vector,P_WEP^I parent coefficient vector,MISSING_P_alpha;MISSING_P_surface;MISSING_P_e;MISSING_P_nuc;MISSING_P_EM;MISSING_P_other,MISSING,P8_Y5_R10_1395_BINDING_SECTOR_BETA_SOURCE_PACK.csv::SBP1395_5_pack_verdict,BLOCKED,False,False
+MPM1404_8_vector_bound_inequality,finite material prior pressure inequality,|(-1.989808886825000e-03)P_alpha + (-3.306456347405000e-03)P_surface + ...| <= 2.800000e-15,INEQUALITY_ONLY,1404 checkpoint,MATERIAL_PRIOR_MAP_WRITTEN_NO_PASS,False,False
+MPM1404_9_verdict,composition/binding normalization status,material vector prior exists; parent normalization does not,NONCLAIM_PRIOR_MAP,1404 checkpoint,READY_AS_MATERIAL_PRIOR_NOT_EVIDENCE,False,False

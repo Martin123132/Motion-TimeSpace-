@@ -1,0 +1,13 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1238_0_sources_exist,all cited local sources exist,PASS,10/10 sources exist,False,False
+VAL1238_1_needles_found,all cited local needles found,PASS,10/10 needles found,False,False
+VAL1238_2_first_class_failed,first-class R_AB route is not constructed,PASS,FCR1238_5 result=FIRST_CLASS_ROUTE_NOT_CONSTRUCTED,False,False
+VAL1238_3_benchmark_ready,closure benchmark scorecard is available,PASS,BGR1238_1 current_score=USEFUL_PRIVATE_BASELINE_ONLY,False,False
+VAL1238_4_residual_vector_ready,local residual vector is mapped,PASS,residual_rows=6 including Q_R,False,False
+VAL1238_5_priority_ready,empirical test priority is written,PASS,rank 1 target=Q_R / gamma residual,False,False
+VAL1238_6_claim_gates_blocked,all claim gates remain blocked,PASS,blocked_gates=4/4,False,False
+VAL1238_7_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables,False,False
+VAL1238_8_next_target_1239,next target is residual-vector runner input schema,PASS,1239-Y5-R10-local-residual-vector-runner-input-schema-and-source-priority.md,False,False
+VAL1238_9_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1238_SOURCE_REGISTER.csv:10; P8_Y5_R10_1238_FIRST_CLASS_RAB_CONSTRAINT_ATTEMPT.csv:6; P8_Y5_R10_1238_LOCAL_GR_CLOSURE_BENCHMARK_SCORECARD.csv:4; P8_Y5_R10_1238_LOCAL_RESIDUAL_VECTOR_MAP.csv:6; P8_Y5_R10_1238_EMPIRICAL_TEST_PRIORITY_LEDGER.csv:5; P8_Y5_R10_1238_DECISION_LEDGER.csv:3; P8_Y5_R10_1238_CLAIM_GATES.csv:4; P8_Y5_R10_1238_NEXT_TARGET.csv:1,False,False
+VAL1238_10_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_write_count_since_run_start=0,False,False
+VAL1238_11_overall,overall 1238 validation,PASS,"1238 fails the first-class R_AB derivation honestly, writes the local-GR closure benchmark, and maps the finite residual vector for testing",False,False

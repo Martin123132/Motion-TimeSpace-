@@ -1,0 +1,5 @@
+row_id,owner_piece,formula,derived_effect,status,valid_for_claim,timestamp_utc
+HOL3962_0_lock_condition,EM Hodge owner,*_EM := *_obs[e_obs(q)],Delta_Hodge_EM=0 and visible Maxwell stress varies with the same observed metric/coframe as matter,LOCK_CONDITIONAL_NOT_GLOBAL_PARENT_SIGNED,False,2026-07-01T15:07:23+00:00
+HOL3962_1_counter_branch,independent constitutive tensor,*_EM = *_obs + Delta_* or chi_EM != chi_obs,Delta_Hodge_EM remains in the EM residual vector and feeds C_A_total/alpha/clock bounds,BOUND_BRANCH_RETAINED,False,2026-07-01T15:07:23+00:00
+HOL3962_2_readout_owner,EM readout/spectroscopy owner,"S_eff/readout contains no regenerated f_X F^2, alpha_X, or EM binding response beyond visible pullback",C_EM_readout=0 if readout is a pullback of the same EM owner; otherwise retained,READOUT_LOCK_OPEN,False,2026-07-01T15:07:23+00:00
+HOL3962_3_normalization_owner,Maxwell coefficient/current normalization,"w_EM, A_Q, J_Q, and alpha readout share one representation/normalization owner",w_EM-1 and C_JQ vanish if the owner is unique; otherwise alpha/charge normalization remains bounded,NORMALIZATION_LOCK_OPEN,False,2026-07-01T15:07:23+00:00

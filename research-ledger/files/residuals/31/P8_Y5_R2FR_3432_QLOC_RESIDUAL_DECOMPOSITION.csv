@@ -1,0 +1,8 @@
+residual_id,defect,meaning,bound_route,test_arenas,valid_for_claim
+QRD3432_0_action_owner,q_action_owner_defect,Gamma/Khat are not proven to come from one scalar parent density,treat T_GK as retained effective stress and bound its divergence,PPN/source-normalization/R10,False
+QRD3432_1_metric_response,q_metric_response_defect,live K_hat may not equal K_metric from Gamma_eff variation,Delta_K^{mu nu}:=K_hat^{mu nu}-K_metric^{mu nu}; bound P_loc nabla_mu Delta_K^{mu nu},PPN beta/gamma/alpha; fifth-force,False
+QRD3432_2_euler_source,q_euler_source_defect,fields in T_GK are not source-free/on-shell in local compact vacuum,sum_A ||E_A nabla Phi^A||_* or positive-operator no-hair input,Newtonian source exchange; R10/Yukawa; clocks,False
+QRD3432_3_first_order,q_F1_defect,T_GK or first variation is nonzero at fixed point,linear response coefficient beta_qloc or F1_GK residual,PPN first-order and preferred-frame rows,False
+QRD3432_4_projector,q_projection_defect,P_loc can hide or create residual components if not parent-owned,"||[P_loc,nabla]T_GK||_* plus 3431 domain/projector operator-bound rows",PPN alpha/xi; source calibration,False
+QRD3432_5_boundary,q_boundary_flux_defect,bulk q_loc silence does not imply boundary/symplectic silence,|Phi_GK|/M_H_ref plus boundary/reference flux rows,orbital GM; clocks/Gdot; alpha3,False
+QRD3432_6_total,epsilon_q_loc_TGK_mass,absolute total q_loc hidden residual,"absolute sum of QRD3432_0..5, no cancellation unless parent Ward identity is signed",local GR/Newton/PPN/R10/clocks/orbital,False

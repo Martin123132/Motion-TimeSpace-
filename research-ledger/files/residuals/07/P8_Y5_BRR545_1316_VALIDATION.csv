@@ -1,0 +1,13 @@
+check_id,check,status,details
+VAL1316_0_sources_exist,registered source paths exist and anchors are found,PASS,9/9 source anchors found
+VAL1316_1_blockers_imported,1315 blockers imported and P0 subset identified,PASS,blocker_rows=15 p0_rows=12
+VAL1316_2_derivation_attempts_cover_p0,"derivation attacks cover alpha, clock, WEP, R10, cross-arena, and parent primitive",PASS,NOT_PROMOTED;NOT_PROMOTED;NOT_PROMOTED;NOT_PROMOTED;NOT_PROMOTED;NOT_PROMOTED
+VAL1316_3_no_derivation_promoted,no P0 derivation is promoted as a claim,PASS,all derivation rows remain exact conditionals or source requirements
+VAL1316_4_product_formulas_written,canonical product formulas exist for all scorepack rows,PASS,FORM1316_0_alpha;FORM1316_1_clock;FORM1316_2_wep;FORM1316_3_r10;FORM1316_4_cross_arena
+VAL1316_5_source_requirements_exact,source requirements enumerate P0 missing inputs,PASS,requirements=17
+VAL1316_6_counterexamples_active,counterexample locks remain active,PASS,HSC1313_1_alpha;HSC1313_3_clock_readout;HSC1313_4_source_weight;R10REF1315_product_bound_source
+VAL1316_7_promotion_gates_block,promotion gates block claims until proof/source inputs exist,PASS,GATE1316_0_parent_theorem;GATE1316_1_numeric_prediction;GATE1316_2_clock;GATE1316_3_wep_source;GATE1316_4_r10;GATE1316_5_cross_arena
+VAL1316_8_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1316_9_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1316_10_next_target_1317,next target routes to source-intake template and priority runner,PASS,1317-Y5-R10-RAB-P0-alpha-source-intake-template-and-priority-runner.md
+VAL1316_11_overall,overall 1316 validation,PASS,"1316 attacks P0 coupling derivations, promotes none, writes exact product/source contract, and routes to fillable source-intake runner"

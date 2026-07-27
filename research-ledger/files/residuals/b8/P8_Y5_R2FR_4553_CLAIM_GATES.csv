@@ -1,0 +1,6 @@
+gate_id,requirement,status,claim_effect,valid_for_claim
+G4553_0_private_marker_zero,M_alpha3=0 inside private selector branch,PASS_PRIVATE_SELECTOR,marker vector channel can be set to zero only in the private compact branch,False
+G4553_1_private_boundary_zero,F_alpha3=0 inside compact stationary non-radiative private selector branch,PASS_PRIVATE_SELECTOR,boundary flux channel can be set to zero only in branch scope,False
+G4553_2_global_parent_promotion,parent action globally signs A_MF/rho-span/quotient/no-flux selector clauses,FAIL_UNSIGNED,blocks public/global alpha3 or local-GR claim,False
+G4553_3_cubic_residue,C3_alpha3 zero/classification or source-backed coefficient bound,NEXT_BLOCKER,blocks even private alpha3 score closure until classified/bounded,False
+G4553_4_no_smuggling,private selector zero certificate cannot be used for radiative/global/open-sector cases,PASS_FIREWALL,keeps sector interfaces honest,False

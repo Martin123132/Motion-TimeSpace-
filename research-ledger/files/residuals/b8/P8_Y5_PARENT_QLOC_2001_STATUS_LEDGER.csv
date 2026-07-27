@@ -1,0 +1,6 @@
+branch_id,valid_for_claim,claim_allowed,generated_utc,status_id,object,status,next_action
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,false,false,2026-06-20T03:42:33.096726+00:00,STAT2001_0_CMSM_export,user/browser CMSM export,NOT_FOUND_LOCALLY,drop official export into source-intake/microscope_cmsm if obtained
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,false,false,2026-06-20T03:42:33.096755+00:00,STAT2001_1_surrogate_reconstruction,segment 210 thin surrogate gx/gz/Sxx/Sxz/gxS,BUILT_NONCLAIM,use for design-matrix/code plumbing only
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,false,false,2026-06-20T03:42:33.096766+00:00,STAT2001_2_official_arrays,official CMSM gx/gz/Sxx/Sxz arrays,NOT_ACQUIRED,replace surrogate columns with official export or source-backed reconstruction
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,false,false,2026-06-20T03:42:33.096776+00:00,STAT2001_3_tau_WEP,numeric tau_WEP,NOT_ACQUIRED,derive after official arrays and source-weight/material map exist
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,false,false,2026-06-20T03:42:33.096783+00:00,STAT2001_4_local_GR_WEP,local-GR/WEP pass,BLOCKED,do not promote until tau_WEP and product gates pass

@@ -1,0 +1,6 @@
+repair_id,target,required_equation,success_criterion,current_status,fallback,valid_for_claim
+VOR585_0_parent_action_variation,derive theta_Y and Omega_Y from one parent action,delta L_parent = E_Y delta Y + d theta_Y(delta Y),C_X appears from i_vX Omega_Y=delta G_X,not_derived,edge runner inputs,false
+VOR585_1_Vdef_P_owner,derive P[Y] from V_def,P^{mu nu}=partial V_def/partial Z_{mu nu},P is not independent and source identity is parent-owned,promising_but_unfilled,P-owner blocker,false
+VOR585_2_J_eff_owner,derive J_eff from same variation,J_eff^nu=S_L^nu+d_rel(P_mem J_rel)^nu from parent Noether/current identity,C_X=-nabla_mu P^{mu nu}+J_eff^nu is one Noether identity,not_derived,source residual,false
+VOR585_3_boundary_exactness,zero edge charge,B_X=n_mu P^{mu nu}=d_boundary b_X or pure gauge on compact shell,Q_edge=0 and K_boundary=0,not_derived,Qbar_edge_XH(lambda),false
+VOR585_4_decision,choose owner repair or numeric edge priors,either owner certificate zeros edge branch or runner inputs become numeric/source-backed,no-pole certificate or executable alpha_edge curve,open,586-Y5-R10-Vdef-owner-action-sketch-or-edge-runner-numeric-priors.md,false

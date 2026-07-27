@@ -1,0 +1,6 @@
+row_id,observable,formula,3431_effect,target_bound,status,valid_for_claim
+DPPN3431_0_alpha1,alpha1,alpha1_domain = W_domain_alpha1 * epsilon_domain_vector,zero only if scalar/topological no-vector domain selector is parent signed; otherwise bound by DPOB3431,1e-4,NOT_SCOREABLE_VALUES_MISSING,False
+DPPN3431_1_alpha2,alpha2,alpha2_domain = W_domain_alpha2 * epsilon_domain_vector,"same no-vector gate as alpha1, but tighter target",2e-9,NOT_SCOREABLE_VALUES_MISSING,False
+DPPN3431_2_alpha3,alpha3,alpha3_domain = W_domain_alpha3 * epsilon_domain_flux,"requires no vector, no flux, topological projector, and R11 silence; scalar selector alone is insufficient",4e-20,CONDITIONAL_NOT_SCOREABLE,False
+DPPN3431_3_xi,xi,xi_domain = W_domain_xi * epsilon_domain_anisotropy,trace projector removes STF only as algebra/diagnostic; action-level STF stress needs parent no-stress theorem,4e-9,NOT_SCOREABLE_VALUES_MISSING,False
+DPPN3431_4_R11_source_norm,non_EH_operator_coefficients,c_domain_source_normalization_operator,domain source-normalization is not killed by vector/STF symmetry and remains the Newtonian source-calibration blocker,symbolic,HARD_NEXT_INPUT,False

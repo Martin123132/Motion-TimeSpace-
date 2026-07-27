@@ -1,0 +1,5 @@
+reason,rejection_id,repair,row_or_artifact,valid_for_claim
+alpha_predicted is missing or nonnumeric,PR558_0_missing_MTS_alpha,derive alpha_predicted(lambda) from MTS source-normalized force law,R10_alpha_lambda_curve_MTS_source_normalization.csv,false
+"upper_bound is symbolic alpha(lambda), not digitized lambda/alpha rows",PR558_1_missing_bound_curve,digitize/source an external bound curve with units and provenance,local_bound_claims.csv::R10_fifth_force,false
+theorem-zero certificate is missing,PR558_2_missing_theorem_zero,"derive absent/gauge/topological/screened/nohair branch with zero source, flux, projection, and range derivatives",no_range_theorem_zero_template,false
+valid_for_claim=false and derivation_status is template_invalid,PR558_3_placeholder_claim_flag,replace placeholders with source-backed values and rerun evaluator,all 558 placeholder rows,false

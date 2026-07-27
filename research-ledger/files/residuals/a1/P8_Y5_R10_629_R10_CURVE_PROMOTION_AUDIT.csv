@@ -1,0 +1,6 @@
+audit_id,check,result,detail,valid_for_claim
+PA629_0_candidate_numeric,review candidate has positive numeric lambda/alpha rows,pass,numeric_rows=390,false
+PA629_1_candidate_nonclaim,review candidate has no claim rows,pass,claim_rows=0,false
+PA629_2_anchor_qa,570 anchor QA remains review-only,pass,QA570_0_prior_validation=pass;QA570_1_anchor_recovery=pass_review_candidate;QA570_2_promotion_gate=pass;QA570_3_candidate_nonclaim=pass;QA570_4_live_placeholder_retained=pass,false
+PA629_3_promotion_blocker,supplement/human QA and live-file promotion remain blocked,pass,blocked_rows=2,false
+PA629_4_live_claim_file,live digitized bound file remains placeholder,pass,live_rows=2;contains_missing_marker=true,false

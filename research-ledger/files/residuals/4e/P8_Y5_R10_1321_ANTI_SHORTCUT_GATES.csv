@@ -1,0 +1,6 @@
+gate_id,shortcut,enforcement,status,valid_for_claim,claim_allowed
+SHORT1321_0_no_standalone_balpha,infer standalone b_alpha by dividing clock product bound by assumed tau,REFUSED; clock bound constrains product only unless tau is independently sourced,ENFORCED,False,False
+SHORT1321_1_no_tau_h0_assumption,use H0-normalized diagnostic as tau_clock_time,REFUSED; H0 diagnostic is not a readout derivation,ENFORCED,False,False
+SHORT1321_2_no_threshold_prediction,use clock bound as predicted product,REFUSED; bound is comparison fence only,ENFORCED,False,False
+SHORT1321_3_no_cross_arena_transfer,transfer clock product into WEP/R10/local rows,REFUSED until shared parent branch/readout functor is signed,ENFORCED,False,False
+SHORT1321_4_no_parent_reopen,reopen closure-only parent theorem route from clock bound,REFUSED; clock product data cannot sign parent object-language clauses,ENFORCED,False,False

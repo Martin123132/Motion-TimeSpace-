@@ -1,0 +1,4 @@
+schema_id,required_columns,schema_pass,claim_rule,valid_for_claim
+APS1469_0_required_columns,product_id; arena; predicted_product_value; predicted_product_units; comparison_bound_value; comparison_bound_units; source_path; equation_ref; sign_or_abs_policy; all_factor_status,True,"valid_for_claim=true only if numeric predicted value, units, source path, equation ref, sign policy, and bound source all exist",False
+APS1469_1_missing_marker_rule,no MISSING_* marker in any claim-critical field,True,any MISSING_* marker forces score_ready=false,False
+APS1469_2_bound_rule,comparison bound must be source-backed and not target-only unless explicitly smoke/nonclaim,True,target-only and review-candidate bounds remain nonclaim,False

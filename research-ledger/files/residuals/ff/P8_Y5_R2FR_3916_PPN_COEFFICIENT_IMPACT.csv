@@ -1,0 +1,7 @@
+row_id,coefficient,conditional_impact,fallback_impact,status,valid_for_claim,timestamp_utc
+PPNI3916_0_gamma,delta_gamma_R11,0 if all active R11 families close by EH/DZ route,otherwise fill weak-field anisotropic/spatial-temporal potential split,CONDITIONAL_ZERO_OR_FILL,False,2026-07-01T10:29:54+00:00
+PPNI3916_1_beta,delta_beta_R11,0 if all second-order R11/source families close by EH/DZ route,otherwise fill second-order non-EH operator contributions,CONDITIONAL_ZERO_OR_FILL,False,2026-07-01T10:29:54+00:00
+PPNI3916_2_alpha_i,"alpha1,alpha2,alpha3",0 if vector/domain/boundary/fux/nonconservation families close,otherwise fill preferred-frame and alpha3 product rows individually,CONDITIONAL_ZERO_OR_FILL,False,2026-07-01T10:29:54+00:00
+PPNI3916_3_xi,xi,0 if anisotropic/STF/nonlocal families close,otherwise fill preferred-location coefficient row,CONDITIONAL_ZERO_OR_FILL,False,2026-07-01T10:29:54+00:00
+PPNI3916_4_zeta,zeta_i,0 if projector/stress/non-Hilbert leakage closes,otherwise fill stress vector,CONDITIONAL_ZERO_OR_FILL,False,2026-07-01T10:29:54+00:00
+PPNI3916_5_total,DeltaE_R11_munu,DeltaE_R11^{mu nu}=0 and all R11-fed PPN coefficients vanish inside B_loc if either EH_ROUTE or DZ_ROUTE is parent-owned,otherwise use PPNR3915_8 envelope plus COEF3886 rows,CONDITIONAL_ZERO_OR_FILL,False,2026-07-01T10:29:54+00:00

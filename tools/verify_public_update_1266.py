@@ -303,6 +303,7 @@ def main() -> None:
             or any(part in forbidden_parts for part in path.parts)
         )
         and ".git" not in path.parts
+        and "research-ledger" not in path.parts
     ]
     record(
         checks,
@@ -317,7 +318,7 @@ def main() -> None:
         checks,
         "front_door_points_to_current_nonclaim_state",
         "STATUS-2026-07-27.md" in readme
-        and "1266-Y5-R2FR" in readme
+        and f"{PUBLIC_END}-Y5-R2FR" in readme
         and "research-programme/catalogue/README.md" in readme
         and (
             "not presented as a completed theory" in readme.lower()

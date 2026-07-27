@@ -1,0 +1,5 @@
+feed_id,runner_field,feed_update,status,blocks_claim_because,valid_for_claim,claim_allowed
+RUF1375_0_transition_validator,transition_input_rows,validator refuses missing-parent and toy rows before Q_alg/Q_trans scoring,VALIDATOR_READY_NO_SOURCE_READY_ROW,current rows are template_missing_parent_values or toy_strong_support_nonclaim,False,False
+RUF1375_1_Q_alg_Q_trans,Q_alg_Q_trans,retain 1374 symbolic formulas; do not evaluate numeric values,SYMBOLIC_ONLY,"A_ref, U_B, powers, amplitudes, L0, and L_tr are not source-filled",False,False
+RUF1375_2_K_conn,Q_conn,"Q_conn <= A_ref^-1 N_div [N_conn,nabla||S_der||+N_conn,star||S_star||+N_conn,ibp||S_ibp||+N_conn,edge||B_der||]",SYMBOLIC_OPERATOR_BOUND_READY,operator norms and source tensors are missing,False,False
+RUF1375_3_refusal,refusal_gates,"refuse toy rows, proxy rows, missing operator norms, missing source anchors, or claim flags on symbolic rows",REFUSAL_GATES_READY,prevents fake numeric/local-GR pass,False,False

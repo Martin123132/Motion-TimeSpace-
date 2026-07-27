@@ -1,0 +1,7 @@
+step_id,operation,equation,result,claim_status
+VD519_0_action_split,write the local parent action in one-coframe form,"S_parent = S_grav[e_obs,Phi] + S_silent[Phi,e_obs] + sum_A S_A[psi_A,e_obs] + S_readout[e_obs]",all source/readout variations reference e_obs,conditional_formal
+VD519_1_source_variation,define source stress before fitting measured GM,delta S_m = 1/2 int sqrt(-g_obs) T_m^{mu nu} delta g_obs_mu_nu + E_psi delta psi,T_m is not a phenomenological orbital mass,conditional_formal
+VD519_2_same_frame_identity,"compare source, clock, photon, and orbit frame variations",delta_frame_source := delta ln(e_source/e_orbit) = 0 if all functionals use e_obs,Y5B_6 frame split becomes a conditional zero under UOC519,conditional_zero_not_current_MTS_claim
+VD519_3_species_direct_charge,differentiate the matter pullback with respect to non-metric MTS fields,"partial_{Phi,D} ln m_A = 0 and partial_{Phi,D} S_A|e_obs fixed = 0",direct species-specific MTS source charge is absent if universal pullback holds,partial_conditional_zero_not_binding_or_dressed_charge
+VD519_4_Ward_identity,apply diffeomorphism invariance of S_m,delta_xi S_m = 0 => nabla_mu T_m^{mu nu} = 0 on matter EOM,"same-frame matter conservation follows, but not exterior mass-charge equality",conditional_standard_identity
+VD519_5_limit_of_clause,separate what same-coframe proves from what it cannot prove,"delta_frame_source=0 does not imply d(Pi_M J_H)=0, mu_extra=0, or Delta_PPN_source=0",Y5O_1 gets a clean conditional owner; Y5O_3-Y5O_7 remain open,no_Y5_promotion

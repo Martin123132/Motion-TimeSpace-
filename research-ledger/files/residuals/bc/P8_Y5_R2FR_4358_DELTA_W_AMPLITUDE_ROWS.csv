@@ -1,0 +1,5 @@
+delta_id,quantity,value_or_law,evidence,numeric_status,claim_status,valid_for_claim
+DW4358_0_product_anchor,abs(Delta_w_TiPt * tau_WEP),<= 2.8e-15,MICROSCOPE R1_WEP_source_charge source-backed bound anchor,AVAILABLE_PRODUCT_ONLY,NONCLAIM_BOUND_INPUT,False
+DW4358_1_tau_min,tau_min,need abs(tau_WEP) >= tau_min > 0,not sourced in current corpus,MISSING_POSITIVE_LOWER_BOUND,BLOCKS_DELTA_W_BOUND,False
+DW4358_2_delta_w_bound,abs(Delta_w_TiPt),"if tau_min exists, abs(Delta_w_TiPt) <= 2.8e-15/tau_min",exact amplitude law from product bound,SYMBOLIC_ONLY,NO_NUMERIC_DELTA_W_YET,False
+DW4358_3_transition_hair,Y_species_frame_source projection,P_WEP[Y_species_frame_source] <= 2.8e-15 as a product-channel bound only,WEP anchor plus tau bridge,PRODUCT_CHANNEL_BOUND_ONLY,NO_LOCAL_GR_REENTRY,False

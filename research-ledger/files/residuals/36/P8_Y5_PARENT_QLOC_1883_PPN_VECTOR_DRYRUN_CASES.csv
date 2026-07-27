@@ -1,0 +1,6 @@
+case_id,description,branch_type,value_mode,expected_status,valid_for_claim,claim_allowed
+CASE1883_0_closure_GR,explicit closure benchmark sets delta_p=b_R=beta=d_R=w_R=endpoint=0,closure_benchmark,closure_value,REFUSED_CLOSURE_NOT_EVIDENCE,False,False
+CASE1883_1_missing_finite,finite branch has no delta_p/q_R_hat and no b_R value,finite_residual,missing_source,REFUSED_MISSING_VECTOR_INPUTS,False,False
+CASE1883_2_gamma_only,gamma combo appears bounded but beta/preferred/source rows are missing,finite_residual,partial_gamma_only,REFUSED_INCOMPLETE_VECTOR,False,False
+CASE1883_3_cancellation_only,delta_p(1+4b_R) is tuned small without parent identity,finite_residual,cancellation_tuned,REFUSED_CANCELLATION_ONLY,False,False
+CASE1883_4_hypothetical_full_vector,all vector components are numeric and below bounds but source provenance is hypothetical,finite_residual,hypothetical_numeric,SCHEMA_MATH_ONLY_NOT_EVIDENCE,False,False

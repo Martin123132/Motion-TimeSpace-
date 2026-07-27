@@ -1,0 +1,6 @@
+gate_id,gate,status,blocks_claim,needed_for_claim,claim_allowed,valid_for_claim
+G3451_0_sources_exist,all cited 3451 source paths exist,PRIVATE_CHECK_PASS,False,provenance only,False,False
+G3451_1_public_core_silence,delta_vXrep S_pub=0,PASS_FOR_RESTRICTED_PUBLIC_CORE,False,parent action must contain only the public core plus silent allowed pieces,False,False
+G3451_2_total_action_descent,delta_vXrep S_parent=0,FAIL_NOT_PARENT_SIGNED,True,prove no explicit Xrep/rejected-slot action terms or bound them,False,False
+G3451_3_lx_split,non-descended action terms are named,PASS_RESIDUAL_OWNER_SPLIT,True,each LXR3451 residual zero or bounded,False,False
+G3451_4_no_claim,no local-GR/Newton/R10/PPN/clock/orbital pass from this checkpoint,ENFORCED,True,full residual closure and empirical gates,False,False

@@ -1,0 +1,6 @@
+step_id,variation,result,status,claim_gap,valid_for_claim,claim_allowed
+VAR1268_0_E_Lambda,delta_{Lambda_R} S_R,"R_AB - C_AB[q(Phi),theta,top] = 0",FORMAL_PASS_WITHIN_CANDIDATE,constraint action must be parent-owned,False,False
+VAR1268_1_E_R,delta_{R_AB} S_total,Lambda_R + J_R + delta B_R/delta R_AB + readout_regen_terms = 0,PASS_ONLY_IF_SOURCES_ZERO,"need J_R=0, boundary zero, and readout-regeneration zero",False,False
+VAR1268_2_aux_elimination,solve E_Lambda and E_R together,R_AB=C_AB and Lambda_R=0 only if no direct R_AB source exists,EXACT_CONDITIONAL,otherwise Lambda_R or finite residual remains,False,False
+VAR1268_3_no_symplectic_sector,canonical/Dirac classification after algebraic elimination,no physical Pi_R or Q_R hair remains if the auxiliary block is complete and boundary-silent,EXACT_CONDITIONAL,boundary silence still not signed,False,False
+VAR1268_4_operator_ban,test legality of adding 1/2 Z_R h^{ij}D_iR_ABD_jR_AB,operator is forbidden only if R_AB is purely auxiliary/vertical and no vertical metric/connection exists,BLOCKED_BY_UNSIGNED_OPERATOR_EXCLUSION,finite-ZR template remains required,False,False

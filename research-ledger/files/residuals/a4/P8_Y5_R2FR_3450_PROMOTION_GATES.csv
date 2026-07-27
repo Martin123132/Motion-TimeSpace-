@@ -1,0 +1,7 @@
+gate_id,gate,status,blocks_claim,needed_for_claim,claim_allowed,valid_for_claim
+G3450_0_sources_exist,all cited 3450 source paths exist,PRIVATE_CHECK_PASS,False,provenance only,False,False
+G3450_1_qvx_constructed,candidate q and restricted v_X^rep are explicit,PASS_RESTRICTED_BRANCH,False,parent action must adopt this field split,False,False
+G3450_2_kernel_rows,Dq[v_X^rep]=0 proven slot-by-slot,PASS_FOR_SAFE_SLOTS,False,active rejected slots must not be smuggled into v_X^rep,False,False
+G3450_3_rejected_slots,visible active hazards are retained as residuals,PASS_GUARD,True,R_AB/frame/source/boundary/tau hazards must be zeroed or bounded separately,False,False
+G3450_4_action_descent,S_parent descends along q for v_X^rep,NEXT_GATE_NOT_CLOSED,True,3451 must prove delta_vX S_parent=0 or retain L_X residual,False,False
+G3450_5_no_claim,no local-GR/Newton/R10/PPN/clock/orbital pass from this checkpoint,ENFORCED,True,full action descent and residual vector closure,False,False

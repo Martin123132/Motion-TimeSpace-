@@ -1,0 +1,5 @@
+test_id,channel,toy_quantity,state_value,relabelled_value,residual,expected_result,meaning,valid_for_claim
+TK3523_0_common_source_weight,matter_source_weight,sum_A w_common h_A^2,30,30,0,zero_if_common_mode,common source normalization forgets labels in the toy model,False
+TK3523_1_source_label_weight,matter_source_weight,sum_A w_A h_A^2 with fixed source weights,32.5,30.1,2.4,nonzero_if_fixed_source_label_survives,source-label coefficients reopen representative dependence,False
+TK3523_2_EM_gauge_norm_marker,EM_gauge_normalization,delta log Z_EM = beta deltaX,0,0.006,0.006,nonzero_if_hidden_EM_marker_survives,a hidden marker in Z_EM creates alpha/Hodge/Poynting residual pressure,False
+TK3523_3_public_Poynting_Hilbert_route,EM_Hilbert_stress,S^a=-h^a_mu T_EM^{mu nu} u_nu,defined_from_T_EM,same_if_T_EM_q_owned,0_if_Hodge_ZEM_q_owned_else_epsilon_EM,Poynting_is_not_extra_source,Poynting belongs to public Maxwell Hilbert stress when Hodge and Z_EM descend through q,False

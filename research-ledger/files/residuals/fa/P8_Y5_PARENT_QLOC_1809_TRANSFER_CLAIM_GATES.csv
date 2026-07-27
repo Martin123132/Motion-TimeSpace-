@@ -1,0 +1,5 @@
+branch_id,gate_id,claim,gate_status,reason,promotion_blocker,valid_for_claim
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,TG1809_0_clock_product_retained,clock b_alpha product bound is usable as a nonclaim constraint row,true_nonclaim_only,source-backed product rows exist and are numerically populated,not standalone b_alpha,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,TG1809_1_standalone_balpha,derive standalone b_alpha from clock product,false,tau_clock_time and Xhat/chi_X normalization are not parent-derived,TCN1809_4_verdict,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,TG1809_2_WEP_transfer,transfer clock b_alpha product to WEP,false,"requires alpha composition charges, beta_source_alpha, tau_WEP and shared domain; stress-test rows show pressure but not pass",AWP1809 rows nonclaim,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,TG1809_3_R10_transfer,transfer clock b_alpha product to R10 alpha(lambda),false,"requires beta_s beta_t product, tau_R10, K_X/Z_X, lambda_X and promoted bound curve",RAP1809 rows nonclaim,False

@@ -1,0 +1,6 @@
+gauss_id,piece,statement,status,effect,valid_for_claim,timestamp_utc
+GMC3884_0_Poisson,Poisson source,nabla^2 Phi=4*pi*G0*rho_H from 3882/3883,INPUT_LOCKED_IN_CANDIDATE,source density is Hilbert density,False,2026-07-01T07:43:35+00:00
+GMC3884_1_Gauss,Gauss theorem,"From nabla^2 Phi=4*pi*G0*rho_H, integration over a compact source volume gives oint grad Phi.n dA = 4*pi*G0 M_H, where M_H=int rho_H dV = int Pi_M J_H.",EXACT_CONDITIONAL_GAUSS_BRIDGE,converts source density into a surface monopole,False,2026-07-01T07:43:35+00:00
+GMC3884_2_surface_independence,surface independence,"If d(Pi_M J_H)=0 in the exterior annulus, M_H[S2]=M_H[S1] for linked surfaces around the same worldtube.",CANDIDATE_SURFACE_INDEPENDENCE,kills radial source hair from mass-flux drift,False,2026-07-01T07:43:35+00:00
+GMC3884_3_multipoles,multipole guard,"Non-spherical compact sources add multipoles but not a different monopole; multipoles are readout/PPN corrections, not GM calibration freedom.",MONOPOLE_ONLY_GUARD,prevents hiding source normalization in shape terms,False,2026-07-01T07:43:35+00:00
+GMC3884_4_residual,if failed,Delta_Gauss = M_eff[Pi_M J_H] - (4*pi*G0)^-1 oint grad Phi.n dA stays as an explicit residual.,RESIDUAL_IF_PREMISES_FAIL,no orbital backfill,False,2026-07-01T07:43:35+00:00

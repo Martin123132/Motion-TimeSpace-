@@ -1,0 +1,8 @@
+branch_id,vertex_id,sector,operator_or_slot,classification,coefficient,claim_effect,current_status,valid_for_claim
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,VT1805_0_parent_curvature_F2,EM,"<F_Q T_Q,F_Q T_Q>_P",allowed_if_parent_owned,"C_P<T_Q,T_Q>_P",can support b_alpha=0 only if no extra F2/current/readout re-entry,conditional,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,VT1805_1_scalar_F2,EM,f_X(Xhat)F_Q^2 or lambda_A F_Q^2,forbidden_required_but_currently_legal,b_alpha,finite alpha drift and Coulomb/source pressure,blocks_claim,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,VT1805_2_current_rescaling,EM/source,beta_source_alpha(Xhat) A_Q J_A or current/source normalization marker,forbidden_required_or_bounded,beta_source_alpha,WEP/R10 source charge can float even if alpha clock row is small,blocks_claim,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,VT1805_3_mass_X,matter,m_A(Xhat) psi_bar_A psi_A,forbidden_required_but_currently_legal,b_mA,"composition, clocks and source mass drift",blocks_claim,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,VT1805_4_yukawa_X,matter,y_A(Xhat) psi_A H psi_B,forbidden_required_but_currently_legal,b_mu;b_mA,dimensionless mass-ratio drift,blocks_claim,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,VT1805_5_binding_X,composite_matter,"B_A(Xhat), Lambda_QCD(Xhat), nuclear/EM binding response",forbidden_required_or_bounded,b_nuc;beta_A;b_mA,WEP/R10 composition pressure even if point-particle masses are fixed,blocks_claim,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,VT1805_6_clock_readout_X,readout,"nu_i(Xhat), clock-frame normalization, or detector readout map",forbidden_required_or_bounded,b_clock_i;tau_clock,clock/redshift residual independent of WEP silence,blocks_claim,False

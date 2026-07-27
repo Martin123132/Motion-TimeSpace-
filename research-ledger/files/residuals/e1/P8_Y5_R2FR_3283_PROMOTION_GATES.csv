@@ -1,0 +1,6 @@
+gate_id,passed,claim_allowed,detail
+GATE3283_0_numeric_CZ_pack_found,false,false,"complete pack requires numeric Z_Q, f'_X, L_v I_hid, radiative slope, and readout slope with source paths"
+GATE3283_1_finite_CZ_demoted_if_pack_missing,true,false,finite unzeroed C_Z branch is closure-only until numeric pack appears
+GATE3283_2_CZ_zero_route_retained,true,false,"q-basic/exact-shift C_Z=0 route remains a derivation target, not a current claim"
+GATE3283_3_CR_branch_imported,true,false,"previous C_R/readout branch imported, including CR-zero failure and readout bound contract"
+GATE3283_4_no_public_claim,true,false,no R10/PPN/clock/local-GR claim is allowed from a missing numeric pack or closure demotion

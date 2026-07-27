@@ -1,0 +1,9 @@
+bound_id,hair_component,formula,zero_if,feeds,valid_for_claim
+HB4355_0_nonHilbert,Y_nonHilbert,Y_nonHilbert <= C_NH(C_DeltaKdiv + C_RI + C_conn + C_boundary),Hilbert action-domain ownership plus imported Khat/KGamma/Kperp clean branch closes,epsilon_tr_hair; epsilon_Gsrc; PPN/R10/clock/orbital/WEP projections,False
+HB4355_1_worldtube,Delta_Wtr,Delta_Wtr <= N_inner/M_H_ref <= (||mu_tr||+||B_src^A||)/M_H_ref,same W_H full-domain-before-readout branch is parent-signed,Delta_worldtube_species; source normalization,False
+HB4355_2_time_multipole,Y_time_l,"Y_time_l >= |partial_tau q_tr|/M_H_ref + sum_l>=1 |Q_l,tr|/M_H_ref",q_tr is static l=0 in the local source kernel,"PPN preferred-frame, clock, orbital, radiation/source hair",False
+HB4355_3_species_frame_source,Y_species_frame,Y_species_frame >= |D_species q_tr| + |D_frame q_tr| + |Delta_source_weight_tr|,transition current forgets species/frame/source labels before variation,"WEP, PPN preferred-frame, source normalization",False
+HB4355_4_range,Y_range,Y_range >= |D_lambda q_tr| + |q_range_tail|,transition source is range-free/common-monopole rather than finite-range,"R10 alpha(lambda), orbital range tests",False
+HB4355_5_nonEH_metric,Y_nonEH,Y_nonEH >= ||Pi_arena Sigma_nonEH[q_tr]||,same EH/same-metric readout branch owns the transition response,PPN gamma/beta/preferred-frame and local Newton metric residuals,False
+HB4355_6_boundary_nonlocal,Y_boundary_nonlocal,Y_boundary_nonlocal >= |B_tr_nonlocal|/M_H_ref,boundary/nonlocal owner is routed to Hamiltonian boundary charge or projection-null,"clocks, orbital, PPN, local closure",False
+HB4355_7_total,epsilon_tr_hair,epsilon_tr_hair <= Y_nonHilbert + Delta_Wtr + Y_time_l + Y_species_frame + Y_range + Y_nonEH + Y_boundary_nonlocal,q_tr=P_kernel q_tr and imported owner/readout branches close on one selector,epsilon_Gsrc <- epsilon_Gsrc + epsilon_tr_hair,False

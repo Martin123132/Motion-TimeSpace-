@@ -1,0 +1,9 @@
+bound_id,target,formula,numeric_value,units,status,valid_for_claim,timestamp_utc
+MHF3999_0_master,epsilon_MH_flux_3999,|Delta_Ward|+|Delta_tau|+|Delta_PiM|+|Delta_boundary|+|Delta_rad_Poynting|+|Delta_nonEH|+|Delta_source_crossing|,MISSING_PARENT_SIGNED_COMPONENTS,dimensionless,EXECUTABLE_VECTOR_READY,False,2026-07-01T19:06:35+00:00
+MHF3999_1_Ward,Delta_Ward,M_ref^-1 |N_G int_A Pi_M dJ_H|,ZERO_IF_PARENT_EOM_WARD_SIGNED_ELSE_BOUND_REQUIRED,dimensionless,CONDITIONAL_ZERO_OR_BOUND,False,2026-07-01T19:06:35+00:00
+MHF3999_2_tau,Delta_tau,M_ref^-1 |N_G int_A Pi_M star(T_H^{mu nu} nabla_(mu tau_{nu)})|,ZERO_FOR_STATIONARY_KILLING_TAU_ELSE_BOUND_REQUIRED,dimensionless,LOCAL_STATIONARY_BRANCH,False,2026-07-01T19:06:35+00:00
+MHF3999_3_projector,Delta_PiM,"M_ref^-1 |N_G int_A ((D Pi_M) wedge J_H + [d,Pi_M]_ref J_H)|",MISSING_PARENT_PROJECTOR_CONSTANCY,dimensionless,OPEN_PARENT_PROJECTOR_SIGNATURE,False,2026-07-01T19:06:35+00:00
+MHF3999_4_boundary,Delta_boundary,M_ref^-1 |N_G int_A dB_ref|,MISSING_REFERENCE_BOUNDARY_ZERO_OR_BOUND,dimensionless,OPEN_BOUNDARY_REFERENCE_SIGNATURE,False,2026-07-01T19:06:35+00:00
+MHF3999_5_radiation_Poynting,Delta_rad_Poynting,"M_ref^-1 |N_G int_A J_rad/Poynting|, with stationary EM stress included in J_H rather than dropped",ZERO_STATIC_SILENT_BRANCH_ELSE_SOURCE_BACKED_FLUX_BOUND_REQUIRED,dimensionless,EXPLICIT_EM_WAVE_FLUX_GATE,False,2026-07-01T19:06:35+00:00
+MHF3999_6_nonEH,Delta_nonEH,M_ref^-1 |N_G int_A J_nonEH/memory/range/direct|,MISSING_EXTRA_MONOPOLE_ZERO_OR_BOUND,dimensionless,OPEN_EXTRA_CHANNEL_SIGNATURE,False,2026-07-01T19:06:35+00:00
+MHF3999_7_source_crossing,Delta_source_crossing,M_ref^-1 |N_G int_A J_matter_crossing|,ZERO_FOR_CLOSED_WORLDTUBE_ELSE_BOUND_REQUIRED,dimensionless,CLOSED_SOURCE_WORLDTUBE_GATE,False,2026-07-01T19:06:35+00:00

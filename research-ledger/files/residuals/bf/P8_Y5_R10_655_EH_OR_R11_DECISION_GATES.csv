@@ -1,0 +1,9 @@
+gate_id,branch,required_evidence,current_evidence,decision,claim_credit,next_action,valid_for_claim
+EHG655_0_WEP_closure_guard,both,WEP/common matter frame closure is visible and not counted as EH proof,653/654 closure import,pass_guard,none,continue,false
+EHG655_1_EH_only_ladder_closed,EH_only,"P1-P9 parent-derived, especially P3/P4/P6/P8 and PPN completion","439/440/443/654 report closure, open, and retained rungs",fail,none,do_not_claim_EH_only,false
+EHG655_2_metric_only_second_order,EH_only,all extra sectors eliminated and second-order metric operator derived,440 reports scalar/vector/bulk/boundary/connection/higher-curvature/nonlocal/source sectors retained,fail,none,retain_R11_families,false
+EHG655_3_connection_compatibility,EH_only,Levi-Civita connection parent-derived or no independent connection in parent branch,443 reports P4 not parent-derived and P4 template only,fail,none,retain_P4_connection_rows,false
+EHG655_4_R11_template_present,R11_vector,canonical R11 vector schema exists,R11_nonEH_operator_vector_TEMPLATE.csv exists,pass_scaffold,none,build branch-specific skeleton,false
+EHG655_5_R11_actual_vector_supplied,R11_vector,real coefficients/units/operator forms/weak-field maps/source paths and no placeholders,template-only rows; valid_for_claim=false,fail,none,656-Y5-R10-R11-executable-vector-minimum-skeleton-under-WEP-closure.md,false
+EHG655_6_observable_score_ready,both,R3-R11 predictions numeric or theorem-zero with source paths,639 and 654 rollup keep prediction_numeric_ready=false,fail,none,no PPN/local-bound score,false
+EHG655_7_local_GR_claim,both,"EH/R11 gate, source-normalization, extra-sector silence, and PPN vector all pass",none pass,fail_policy,none,continue private derivation,false

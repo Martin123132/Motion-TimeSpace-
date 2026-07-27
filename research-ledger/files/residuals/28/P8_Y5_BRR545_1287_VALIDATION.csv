@@ -1,0 +1,12 @@
+check_id,check,status,details
+VAL1287_0_sources_exist,all cited local sources exist,PASS,12/12 sources exist
+VAL1287_1_needles_found,all cited local needles found,PASS,12/12 needles found
+VAL1287_2_Khat_component_filled,first Khat formal tensor component row is filled and nonclaim,PASS,KTC1287_0_flat_Ricci_scalar_KL00
+VAL1287_3_Kmetric_volume_filled,first Kmetric volume subpiece row is filled and nonclaim,PASS,KMC1287_0_volume_metric_response
+VAL1287_4_DeltaK_still_blocked,Delta_K^{00} remains not computable,PASS,DKS1287_2_component_comparison=DELTAK_00_NOT_COMPUTABLE_YET
+VAL1287_5_claim_gates_blocked,all claim gates remain nonclaim or blocked,PASS,claim_gate_rows=4
+VAL1287_6_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1287_SOURCE_REGISTER.csv:12; P8_Y5_R10_1287_TENSOR_SOURCE_AUDIT.csv:5; P8_Y5_R10_1287_FIRST_KHAT_COMPONENT_ROW_NONCLAIM.csv:1; P8_Y5_R10_1287_FIRST_KMETRIC_VOLUME_ROW_NONCLAIM.csv:1; P8_Y5_R10_1287_DELTAK_COMPONENT_STATUS_LEDGER.csv:4; P8_Y5_R10_1287_CLAIM_GATES.csv:4; P8_Y5_R10_1287_DECISION_LEDGER.csv:3; P8_Y5_R10_1287_NEXT_TARGET.csv:1
+VAL1287_7_next_target_1288,next target routes to KL00 amplitude response or Kmetric derivative term,PASS,1288-Y5-R10-RAB-KL00-amplitude-response-row-or-Kmetric-derivative-term.md
+VAL1287_8_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1287_9_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1287_10_overall,overall 1287 validation,PASS,"1287 fills a formal nonclaim K_L^{00} tensor component and Kmetric volume subpiece, keeps Delta_K^{00} blocked, and routes to amplitude/response or Kmetric derivative next"

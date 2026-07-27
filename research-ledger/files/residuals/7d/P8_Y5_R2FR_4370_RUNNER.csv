@@ -1,0 +1,5 @@
+runner_id,step,formula,status,valid_for_claim
+RUN4370_0_inputs,input collection,"delta_N_obs, R, r, E_perp_bound",WAITING_FOR_SOURCE_WORLD_TUBE_INPUT,False
+RUN4370_1_geometry,geometry factor,"s=R/r; K_N(s)=min((1-s)^-2, 2s(1-s)^-3)",DERIVED_READY,False
+RUN4370_2_acceptance,Newton acceleration acceptance,pass if E_perp_bound <= delta_N_obs/K_N(s),SCHEMA_READY_NONCLAIM,False
+RUN4370_3_owner_zero,zero route,if full owner package signed then E_perp_bound=0,BLOCKED_UNSIGNED,False

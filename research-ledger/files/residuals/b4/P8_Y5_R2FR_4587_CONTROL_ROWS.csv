@@ -1,0 +1,7 @@
+checkpoint,control_id,case,expected_result,status,generated_utc,claim_allowed,valid_for_claim
+4587,CTRL4587_public_Hilbert_EM,public Maxwell-Hodge EM inside T_total,"Poynting is Hilbert flux, not extra source",SYMBOLIC_CONTROL_PASS,2026-07-06T12:58:12.153936+00:00,False,False
+4587,CTRL4587_double_count,add Poynting source after including T_EM,reject; c_Poynt_extra=0,COUNTERMODEL_CAUGHT,2026-07-06T12:58:12.153936+00:00,False,False
+4587,CTRL4587_hidden_Hodge,EM Hodge/constitutive law uses hidden frame,retain E_Hodge_EM/E_EM_flux,FIREWALL_PASS,2026-07-06T12:58:12.153936+00:00,False,False
+4587,CTRL4587_bare_mass,bare rest mass used as active source,reject; use rho_H/H_tau dressed source,COUNTERMODEL_CAUGHT,2026-07-06T12:58:12.153936+00:00,False,False
+4587,CTRL4587_radiative_flux,nonzero EM flux exits collar,retain boundary flux row,FIREWALL_PASS,2026-07-06T12:58:12.153936+00:00,False,False
+4587,CTRL4587_no_claim,conditional density theorem exists,no R10/PPN/local-GR claim,FIREWALL_PASS,2026-07-06T12:58:12.153936+00:00,False,False

@@ -1,0 +1,14 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1230_0_sources_exist,all cited local sources exist,PASS,10/10 sources exist,False,False
+VAL1230_1_needles_found,all cited local needles found,PASS,10/10 needles found,False,False
+VAL1230_2_conditional_theorem,connected-naturality theorem is written exactly as conditional,PASS,UAS1230_1 result=EXACT_CONDITIONAL_THEOREM,False,False
+VAL1230_3_verdict_not_claimable,Delta_w theorem-zero is not promoted,PASS,UAS1230_5 verdict blocks claim,False,False
+VAL1230_4_measure_not_closed,measure descent remains open,PASS,MDS1230_4_verdict=NOT_CLOSED,False,False
+VAL1230_5_failure_modes_active,counterexamples/failure modes remain explicit,PASS,active_failures=5,False,False
+VAL1230_6_finite_inputs_blocked,finite Delta_w rows remain blocked/nonclaim,PASS,"all FDW1230 rows are missing, pending, placeholder, or guard-only",False,False
+VAL1230_7_claim_gates_blocked,all claim gates remain blocked,PASS,blocked_gates=5/5,False,False
+VAL1230_8_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables,False,False
+VAL1230_9_next_target_1231,next target attacks matter-category connectedness,PASS,1231-Y5-R10-parent-matter-category-connectedness-or-source-label-residual-map.md,False,False
+VAL1230_10_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1230_SOURCE_REGISTER.csv:10; P8_Y5_R10_1230_ACTION_SCALE_OWNER_THEOREM_ATTEMPT.csv:6; P8_Y5_R10_1230_MEASURE_DESCENT_PROOF_STACK.csv:5; P8_Y5_R10_1230_OWNER_FAILURE_MODE_LEDGER.csv:5; P8_Y5_R10_1230_FINITE_DELTA_W_PRIOR_CONTRACT.csv:5; P8_Y5_R10_1230_LOCAL_GR_SOURCE_COUPLING_GATE_UPDATE.csv:4; P8_Y5_R10_1230_DECISION_LEDGER.csv:3; P8_Y5_R10_1230_CLAIM_GATES.csv:5; P8_Y5_R10_1230_NEXT_TARGET.csv:1,False,False
+VAL1230_11_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_write_count_since_run_start=0,False,False
+VAL1230_12_overall,overall 1230 validation,PASS,1230 converts the coupling root into an exact conditional connected-naturality theorem plus nonclaim finite Delta_w fallback,False,False

@@ -1,0 +1,5 @@
+claim_status,envelope_id,formula,rule,timestamp_utc,valid_for_claim
+ACTIVE_GUARD,ENV3787_0_no_cancellation,E_BQ_abs=sum_i |epsilon_i|,All B_Q residual components enter with absolute values unless a parent theorem signs a protected cancellation.,2026-06-30T18:22:41.486858+00:00,False
+ACTIVE_GUARD,ENV3787_1_zero_or_bound,"component_status in {THEOREM_ZERO, SOURCE_BOUND}; otherwise MISSING_COMPONENT_INPUT","A component may be removed only by a zero theorem with source path, or by a numeric/source-backed bound with units and arena projection.",2026-06-30T18:22:41.486858+00:00,False
+ACTIVE_GUARD,ENV3787_2_no_fit_backfill,projection_coeff_source != fitted_to_target_observable,Do not infer B_Q coefficients from successful local-GR/EM tests; coefficients must come before comparison.,2026-06-30T18:22:41.486858+00:00,False
+ACTIVE_GUARD,ENV3787_3_claim_block,claim_allowed=false unless all component_values and all G_arena coefficients are source-backed or theorem-zero,No local-GR/EM claim if any official residual component or arena projection coefficient is missing.,2026-06-30T18:22:41.486858+00:00,False

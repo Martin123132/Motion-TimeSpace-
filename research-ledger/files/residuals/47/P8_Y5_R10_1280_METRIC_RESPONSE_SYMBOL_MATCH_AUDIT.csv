@@ -1,0 +1,5 @@
+match_id,target,pass_condition,current_status,evidence,next_required_artifact,valid_for_claim,claim_allowed
+MRM1280_0_scalar_density,Gamma_eff,"declared covariant scalar density/function of parent fields, not data-fit readout function",UNSIGNED,MR514_0 requires declaration; symbol map says Gamma_eff not action-placed,"Gamma_eff formula, units, parent field content, source path",False,False
+MRM1280_1_Khat_response,K_hat^{mu nu},exact metric response of sqrt(-g)Gamma_eff including derivative and boundary terms,FAIL_CURRENT_MATCH,G514_2_current_MTS_match=fail_for_current_claim,K_metric formula and tensor-term comparison to existing K_hat,False,False
+MRM1280_2_response_doublet,Gamma_eff double-zero candidate,exchange doublets cover physical q_loc/PPN residual vector and forbid linear source terms,CONDITIONAL_NOT_COMPONENT_DERIVED,"RD516 and AV517 are candidates, not matched to current symbols",component map Z^A -> physical local residuals and source-zero proof,False,False
+MRM1280_3_verdict,metric-response route,MRM1280_0..2 pass,NOT_MATCHED,current MTS not matched to metric-response identity,1281 symbol-match contract or residual profile row,False,False

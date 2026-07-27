@@ -1,0 +1,15 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1228_0_sources_exist,all cited local sources exist,PASS,7/7 sources exist,False,False
+VAL1228_1_needles_found,all cited local needles found,PASS,7/7 needles found,False,False
+VAL1228_2_directories_exist,all intake directories exist,PASS,DIR1228_0_raw; DIR1228_1_docs; DIR1228_2_metadata; DIR1228_3_derived; DIR1228_4_quarantine,False,False
+VAL1228_3_inventory_nonclaim,local inventory rows are nonclaim,PASS,inventory_rows=1,False,False
+VAL1228_4_no_claim_checksums,checksum manifest has no claimable rows,PASS,checksum_rows=1,False,False
+VAL1228_5_acceptance_blocks_parser,parser and tau gates remain blocked,PASS,parser/tau acceptance gates blocked,False,False
+VAL1228_6_refusal_present,refusal ledger exists,PASS,REF1228_0_no_files; REF1228_1_tau_WEP,False,False
+VAL1228_7_tau_feed_nonclaim,tau_WEP feed remains nonclaim,PASS,valid_prediction_rows_delta=0 for tau feeds,False,False
+VAL1228_8_claim_gates_blocked,claim gates keep physical claims blocked,PASS,file/parser/tau claim gates blocked,False,False
+VAL1228_9_next_target_local_GR,next target returns to analytic local-GR source coupling,PASS,1229-Y5-R10-data-pending-local-GR-source-coupling-contract.md,False,False
+VAL1228_10_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout claim-bearing tables,False,False
+VAL1228_11_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1228_SOURCE_REGISTER.csv:7; P8_Y5_R10_1228_INTAKE_DIRECTORY_CONTRACT.csv:5; P8_Y5_R10_1228_EXPECTED_PACKAGE_CLASSES.csv:4; P8_Y5_R10_1228_LOCAL_FILE_INVENTORY.csv:1; P8_Y5_R10_1228_CHECKSUM_MANIFEST.csv:1; P8_Y5_R10_1228_PROVENANCE_SCHEMA.csv:5; P8_Y5_R10_1228_FILE_VALIDATION_RULES.csv:5; P8_Y5_R10_1228_ACCEPTANCE_GATE_MATRIX.csv:5; P8_Y5_R10_1228_REFUSAL_LEDGER.csv:2; P8_Y5_R10_1228_PARSER_PRECHECK.csv:3; P8_Y5_R10_1228_TAU_WEP_FEED_UPDATE.csv:2; P8_Y5_R10_1228_DECISION_LEDGER.csv:3; P8_Y5_R10_1228_CLAIM_GATES.csv:5; P8_Y5_R10_1228_NEXT_TARGET.csv:1,False,False
+VAL1228_12_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_after_run_start_count=0,False,False
+VAL1228_13_overall,overall 1228 validation,PASS,1228 creates strict CMSM intake drop-zone and refuses parser/tau claims until official files and metadata pass gates,False,False

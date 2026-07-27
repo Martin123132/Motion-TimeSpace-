@@ -1,0 +1,6 @@
+envelope_id,formula,meaning,claim_status,valid_for_claim
+ENV3327_0_Neff,N_eff_i = (ell_s/ell_c_i)^d_eff / C_mix_i,effective number of independent microscopic cells in the local smoothing patch,SYMBOLIC_READY,false
+ENV3327_1_skew,delta_skew_i <= C3_i/sqrt(N_eff_i) + delta_bias_i,CLT/mixing odd-cumulant leakage,SYMBOLIC_READY,false
+ENV3327_2_one_particle,epsilon_1p_i <= A_i delta_mean_i sigma_Dpi_i + B_i (C3_i/sqrt(N_eff_i)+delta_bias_i) sigma_Dpi_i^2 + rho_P1_i Q2_norm_i,one-particle composite leakage after mean-centering and skew suppression,SYMBOLIC_READY,false
+ENV3327_3_two_particle,"epsilon_2p_i(lambda) <= C_2i E_2p_i(lambda; dmu_2, m_gap_2pi), with E_2p including exp[-2 m_gap_2pi r] when gapped",longer-range loop/composite branch,REQUIRES_SPECTRAL_INPUT,false
+ENV3327_4_total,epsilon_composite_i <= epsilon_1p_i + epsilon_2p_i(lambda) + epsilon_contact_i + epsilon_boundary_i + epsilon_kernel_aniso_i,no-cancellation composite envelope suitable for PPN/R10/WEP/clock/orbital routing,SYMBOLIC_READY,false

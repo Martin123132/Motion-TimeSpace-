@@ -1,0 +1,7 @@
+gate_id,gate,status,reason,valid_for_claim,claim_allowed
+GATE1386_0_sources,all cited sources exist and anchors are present,PASS,source register validates against local corpus,False,False
+GATE1386_1_conditional_theorem,conditional g_c=0 theorem is written,PASS_CONDITIONAL_THEOREM,chain-rule theorem and sufficient parent package are explicit,False,False
+GATE1386_2_parent_zero,g_c=0 theorem is parent-signed,BLOCKED_PARENT_PACKAGE_UNSIGNED,action-weight/source-current/coframe/matter package clauses remain unsigned,False,False
+GATE1386_3_beta_runner,finite beta acquisition runner exists,PASS_SCHEMA_ONLY,BAR1386 rows define finite acquisition inputs with valid_for_claim=false,False,False
+GATE1386_4_numeric,finite beta/R10/PPN/WEP scoring can run,BLOCKED_VALUES_MISSING,"mu_m^2, beta_s, beta_t, convention, species matrix, tail envelope and arena kernels are missing",False,False
+GATE1386_5_local_claim,local GR / Newton / PPN / R10 / WEP pass can be claimed,BLOCKED_NO_CLAIM,"1386 is a theorem attempt plus fallback schema, not a derived local GR limit",False,False

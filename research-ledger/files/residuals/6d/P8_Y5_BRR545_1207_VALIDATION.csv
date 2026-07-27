@@ -1,0 +1,14 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1207_0_sources_exist,all cited local sources exist,PASS,10/10 sources exist,False,False
+VAL1207_1_needles_found,all cited source needles found,PASS,10/10 needles found,False,False
+VAL1207_2_chain_rule_present,chain-rule coframe zero route is represented,PASS,ZEA1207_0 present,False,False
+VAL1207_3_nabla_not_claimed,nabla_P_loc is not falsely zeroed by quotient descent,PASS,nabla_P_loc remains not-derived-by-chain-rule,False,False
+VAL1207_4_total_zero_blocked,total epsilon zero remains blocked,PASS,epsilon_geom total zero blocked,False,False
+VAL1207_5_source_pack_complete,epsilon_geom component source pack is complete,PASS,"nabla_P_loc_Linf,coframe_lock_Linf,domain_motion_Linf,projector_stress_Linf,C_P,C_CK_and_G_res_norm",False,False
+VAL1207_6_pressure_preserved,1206 projector pressure target is preserved,PASS,target=1.17233215026e-05,False,False
+VAL1207_7_no_total_zero_claim,no total zero claim is made,PASS,all zero rows nonclaim,False,False
+VAL1207_8_next_nabla_route,next route targets nabla_P_loc,PASS,1208-Y5-R10-Ploc-parallel-projector-or-nablaPloc-bound.md,False,False
+VAL1207_9_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout,False,False
+VAL1207_10_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1207_SOURCE_REGISTER.csv:10; P8_Y5_R10_1207_EPSILON_GEOM_ZERO_AUDIT.csv:5; P8_Y5_R10_1207_EPSILON_GEOM_COMPONENT_SOURCE_PACK.csv:6; P8_Y5_R10_1207_PRESSURE_AND_ABSORPTION_GATE.csv:3; P8_Y5_R10_1207_DECISION_LEDGER.csv:1; P8_Y5_R10_1207_CLAIM_GATES.csv:4; P8_Y5_R10_1207_NEXT_TARGET.csv:1,False,False
+VAL1207_11_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_after_run_start_count=0,False,False
+VAL1207_12_overall,overall 1207 validation,PASS,1207 quotient/coframe epsilon_geom audit is reproducible and nonclaim,False,False

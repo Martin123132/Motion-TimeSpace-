@@ -1,0 +1,9 @@
+template_id,quantity,formula_or_requirement,units,source_requirement,placeholder_status,valid_for_claim
+MRI2626_0_lambda_gap,lambda_gap,lambda_gap >= a_min*lambda_1(D)+m_min^2 after zero-mode removal,1/length^2,"a_min, lambda_1(D), m_X^2, boundary class",MISSING_PARENT_INPUT,False
+MRI2626_1_source_norm,||J_X||,"component source norm for matter, chi_D wall, boundary, readout, and history",operator-normalized source units,parent source map with units and zero/nonzero status,MISSING_SOURCE_MAP,False
+MRI2626_2_boundary_lift,boundary_lift_norm,norm of nonzero boundary data or explicit zero certificate,same norm as X or boundary flux units,parent-selected D and no-hair/current source path,MISSING_BOUNDARY_PACKAGE,False
+MRI2626_3_L2_amplitude,||X||_L2,||X||_L2 <= (||J_X||_L2 + boundary_lift_norm)/lambda_gap,X units times sqrt(volume),lambda_gap plus source and boundary inputs,MISSING_NUMERIC_BOUND_INPUTS,False
+MRI2626_4_gradient,||grad X||_L2,a_min||grad X||_L2^2 + m_min^2||X||_L2^2 <= ||J_X||_L2||X||_L2 plus boundary terms,X units / length times sqrt(volume),operator signs and source/boundary norms,MISSING_NUMERIC_BOUND_INPUTS,False
+MRI2626_5_pointwise,||X||_infty,"||X||_infty <= C_ell(D,A,m)(||J_X||_Lp + boundary_norm)",X units,"elliptic regularity constant, p-norm source, domain regularity",MISSING_REGULARITY_CONSTANT,False
+MRI2626_6_observable_vector,Delta O_i,Delta O_i <= K_i||X|| + K_i_grad||grad X||,arena-specific,K_i and K_i_grad for each local arena with bound source,MISSING_ARENA_PROJECTION,False
+MRI2626_7_claim_policy,valid_for_claim,"false until lambda_gap, J_X, boundary data, K_i, units, and bound links are numeric and sourced",boolean,all previous rows pass and comparisons are run,FORCED_FALSE_THIS_CHECKPOINT,False

@@ -1,0 +1,7 @@
+gate_id,claim,status,why,passed,valid_for_claim,claim_allowed
+CG2633_0_internal_checkpoint,2633 may be used as a private local-GR synthesis gate,ALLOW_INTERNAL_NONCLAIM,all rows are guarded and no local test is promoted,True,False,False
+CG2633_1_EH_derived,MTS derives the EH/kappa local operator,BLOCKED,parent normal-form hypotheses and coefficient owner are unsigned,False,False,False
+CG2633_2_Newton_limit,MTS derives Newtonian gravity,BLOCKED,"needs EH/kappa owner, source normalization, residual silence and boundary class",False,False,False
+CG2633_3_no_shadow,"private/residual variables are locally invisible to rods, clocks, photons and sources",BLOCKED,DObs_e kernel and terminal public coframe/action-domain clause are not parent-signed,False,False,False
+CG2633_4_full_PPN,MTS passes local PPN as GR,BLOCKED,full PPN vector values/theorem-zeros are missing,False,False,False
+CG2633_5_effective_residual_branch,MTS can be tested as an effective GR-plus-residual framework,POSSIBLE_ONLY_AFTER_SOURCE_BACKED_RESIDUAL_ROWS,effective fallback needs numeric/theorem-zero residual rows and baselines,False,False,False

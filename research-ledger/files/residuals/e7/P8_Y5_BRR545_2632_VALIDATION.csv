@@ -1,0 +1,17 @@
+check_id,status,detail,valid_for_claim
+VAL2632_00_sources,PASS,all cited source paths exist and required needles are present,False
+VAL2632_01_rollforward,PASS,source-prefactor chain and matter-source gain are imported,False
+VAL2632_02_source_not_promoted,PASS,source-coupling rows remain nonclaim,False
+VAL2632_03_gr_frontier,PASS,EH operator and DObs/no-shadow are explicit current blockers,False
+VAL2632_04_residual_owners,PASS,"residual owner ledger includes source, EH, coupling, operator, DObs and R11 residuals",False
+VAL2632_05_no_restart_guard,PASS,w_A rerun loop is guarded against,False
+VAL2632_06_claim_gates,PASS,no claim gate promotes local GR/PPN/WEP,False
+VAL2632_07_decision,PASS,decision selects parent normal form and DObs as current GR frontier,False
+VAL2632_08_next_target,PASS,2633 parent-normal-form/DObs/EH synthesis selected,False
+VAL2632_09_no_claim_flags,PASS,no generated claim-sensitive row is promoted,False
+VAL2632_10_blocked_not_ready,PASS,no blocked/unsigned/nonclaim row is marked claim-ready,False
+VAL2632_11_branch_copies,PASS,branch/local/queue copies exist and parse,False
+VAL2632_12_formalization_untouched,PASS,no 2632 outputs are written under formalization-workbench,False
+VAL2632_13_csv_parse,PASS,all generated 2632 CSVs parse,False
+VAL2632_14_pycache_absent,PASS,scripts __pycache__ absent,False
+VAL2632_OVERALL,PASS,2632 source-prefactor rollforward to parent-normal-form/DObs/EH frontier,False

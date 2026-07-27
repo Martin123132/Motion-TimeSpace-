@@ -1,0 +1,7 @@
+operator_id,stage,operator_statement,derived_from,numeric_status,blocking_input,valid_for_claim
+OP4336_0_tail_to_q,open tail to local current,q_loc^nu(x)=S_q^nu[T_open](x),4334 T_open vector plus 63 q_loc profile definition,symbolic_only,MISSING_SQ_QLOC_KERNEL,False
+OP4336_1_q_to_A,local current to longitudinal owner field,"A_loc^nu=G_Box^bc q_loc^nu, with Box A_loc^nu=q_loc^nu",61 longitudinal tensor ansatz,operator_derived_boundary_constants_missing,MISSING_BOX_GREEN_BOUNDARY_CONSTANT,False
+OP4336_2_A_to_KL,owner field to longitudinal tensor,K_L^{mu nu}[A]=-(partial^mu A^nu+partial^nu A^mu)+eta^{mu nu}partial_alpha A^alpha; partial_mu K_L^{mu nu}=-q_loc^nu,61 algebraic divergence identity,algebraic_operator_derived,NONE_FOR_LONGITUDINAL_IDENTITY,False
+OP4336_3_K_to_metric,local tensor to metric perturbation,"h_MTS,mu nu=G_metric^bc C_gK P_E[K_L+K_perp]_mu nu",59 metric-observable contract plus 61 Green-function warning,parent_coupling_and_metric_green_open,MISSING_METRIC_GREEN_OPERATOR_AND_CgK_COUPLING,False
+OP4336_4_metric_to_PPN,metric perturbation to PPN residual vector,"R_PPN=P_PPN[h_MTS;U,frame,clock,rods]",59 PPN metric contract,projection_defined_normalization_missing,MISSING_PPN_PROJECTION_NORMALIZATION,False
+OP4336_5_combined_PiPPN,combined open-tail transfer matrix,Pi_PPN=P_PPN G_metric^bc C_gK P_E[(K_L G_Box^bc S_q)+S_perp],composition of OP4336_0 through OP4336_4,symbolic_factorisation_derived_numeric_matrix_blocked,MISSING_SQ_QLOC_KERNEL;MISSING_METRIC_GREEN_OPERATOR_AND_CgK_COUPLING;MISSING_KPERP_SOURCE_OR_ZERO,False

@@ -1,0 +1,8 @@
+fallback_id,source_quantity,required_if,formula_role,required_evidence,current_status,valid_for_claim
+AFA4520_0_Z,Z_X or Z_AB eigenvalue,rank-zero source/current/boundary/CDB/readout silence fails or rank(Z_AB)>0,normalizes kinetic operator and alpha denominator,parent action/principal symbol with units,MISSING_PARENT_Z,False
+AFA4520_1_M,M_X^2 or M_AB eigenvalue,rank-zero source/current/boundary/CDB/readout silence fails or rank(Z_AB)>0,sets mu^2 and lambda=sqrt(Z/M^2),parent Hessian/operator mass on same quotient domain,MISSING_PARENT_M,False
+AFA4520_2_Qsource,Q_X^S,rank-zero source/current/boundary/CDB/readout silence fails or rank(Z_AB)>0,source charge in alpha numerator,"same-frame source-normalized charge integral, not inferred from bound",MISSING_SOURCE_CHARGE_ZERO_OR_VALUE,False
+AFA4520_3_qtest,q_X^T,rank-zero source/current/boundary/CDB/readout silence fails or rank(Z_AB)>0,test charge in alpha numerator,test-body response/source charge theorem or value,MISSING_TEST_CHARGE_ZERO_OR_VALUE,False
+AFA4520_4_calibration,G_N^obs M_S m_T,rank-zero source/current/boundary/CDB/readout silence fails or rank(Z_AB)>0,Newton denominator and same-frame calibration,pre-readout Hilbert mass/current calibration,CONDITIONAL_CALIBRATION_NOT_FULLY_SIGNED,False
+AFA4520_5_bound_curve,alpha_bound(lambda),rank-zero source/current/boundary/CDB/readout silence fails or rank(Z_AB)>0,R10 acceptance bound,full digitized/source-backed curve or official table,FULL_CURVE_MISSING_VISUAL_POINTS_NONCLAIM,False
+AFA4520_6_interpolation,interpolation rule,rank-zero source/current/boundary/CDB/readout silence fails or rank(Z_AB)>0,evaluate bound at predicted lambda,declared log-log or official interpolation over in-domain lambda,PRIVATE_CANDIDATE_ONLY,False

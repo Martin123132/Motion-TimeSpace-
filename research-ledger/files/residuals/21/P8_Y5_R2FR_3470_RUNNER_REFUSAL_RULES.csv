@@ -1,0 +1,5 @@
+rule_id,condition,runner_action,valid_for_claim
+REF3470_0_missing_live,any included row has MISSING marker and theorem_zero=false,fail blocked; do not claim,False
+REF3470_1_known_sum_exceeds,known absolute contribution sum exceeds arena bound,fail blocked even before missing rows are filled,False
+REF3470_2_no_cancellation,signed cancellation is required for pass,fail blocked; absolute envelope only,False
+REF3470_3_common_mode,row is common calibration mode,exclude from WEP numerator but keep Newton/G guard,False

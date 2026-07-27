@@ -1,0 +1,11 @@
+row_id,symbol,units,role,source_or_zero_rule,numeric_value,status,valid_for_claim,timestamp_utc
+BIN3921_0_P00_norm,||P00[R11]||,scalar_source_norm,drives Xi_N through C_0 nabla^2 Xi_N,zero by EH/DZ or sourced numeric bound,,ZERO_OR_BOUND_REQUIRED,False,2026-07-01T10:56:29+00:00
+BIN3921_1_C0,C_0,dimensionless_operator_coefficient,scalar 00 operator coefficient,must be nonzero and convention-fixed,,ZERO_OR_BOUND_REQUIRED,False,2026-07-01T10:56:29+00:00
+BIN3921_2_kappa_R,kappa_R,action_normalized_coupling,R11 coupling in common-mode source,zero/absent by EH/DZ or sourced numeric coefficient,,ZERO_OR_BOUND_REQUIRED,False,2026-07-01T10:56:29+00:00
+BIN3921_3_Green0,||nabla^{-2}||_0,domain_operator_norm,maps P00 source to Xi_N,requires exterior boundary/domain choice,,ZERO_OR_BOUND_REQUIRED,False,2026-07-01T10:56:29+00:00
+BIN3921_4_xi0,xi_0,dimensionless,constant monopole calibration coefficient,allowed only if universal/time-independent/source-independent,,ZERO_OR_BOUND_REQUIRED,False,2026-07-01T10:56:29+00:00
+BIN3921_5_multipoles,sum_l>=1 |a_l|,potential_multipole_norm,anisotropic exterior harmonic content,zero by local isotropy/boundary silence or orbital bound,,ZERO_OR_BOUND_REQUIRED,False,2026-07-01T10:56:29+00:00
+BIN3921_6_radial,epsilon_r,dimensionless,non-inverse-square residual,must be bounded by orbital/ephemeris data,,ZERO_OR_BOUND_REQUIRED,False,2026-07-01T10:56:29+00:00
+BIN3921_7_time,partial_t ln(1+xi_1),yr^-1,measured-GM drift,must be <= 9.6e-15 yr^-1 if not zero,,ZERO_OR_BOUND_REQUIRED,False,2026-07-01T10:56:29+00:00
+BIN3921_8_source,Delta_AB xi_1,dimensionless,composition/source dependence,must route to WEP/source residual,,ZERO_OR_BOUND_REQUIRED,False,2026-07-01T10:56:29+00:00
+BIN3921_9_Delta_sq,Delta_sq,dimensionless,beta square-law error,zero by EH completion or bounded by beta,,ZERO_OR_BOUND_REQUIRED,False,2026-07-01T10:56:29+00:00

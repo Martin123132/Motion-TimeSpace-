@@ -1,0 +1,7 @@
+rule_id,rule,result,evidence,claim_effect
+V480_0_sources,all cited source paths exist,pass,missing_sources=0,traceability only
+V480_1_product_template,"boundary, domain, and total alpha3 rows are present",pass,product_rows=3; columns_ok=True,alpha3 inputs are now concrete
+V480_2_domain_siblings,domain sibling rows cover R5/R6/R7/R8/R11,pass,sibling_rows=5; columns_ok=True,domain alpha3 cannot be isolated from R11/vector leaks
+V480_3_total_guard,total alpha3 no-cancellation policy is explicit,pass,guard_rows=4,no cancellation-by-fit
+V480_4_unfilled_default,template rows are not claim-valid before numbers or theorem certificates are supplied,pass,claim_valid_rows=0,no alpha3 promotion
+V480_5_claim_ceiling,"no alpha3, mu_extra, Newton, PPN, or local-GR pass is granted",pass,template_unfilled; claim_allowed=false,input contract only

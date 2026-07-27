@@ -1,0 +1,8 @@
+validation_id,check,status,details
+VAL1383_0_sources,every cited local source path exists and anchor is found,PASS,SRC1383_0_1382_doc exists=True anchor=True; SRC1383_1_1382_next exists=True anchor=True; SRC1383_2_1382_prior_pack exists=True anchor=True; SRC1383_3_1382_scaffold exists=True anchor=True; SRC1383_4_1382_runner_feed exists=True anchor=True; SRC1383_5_1382_claim_gate exists=True anchor=True; SRC1383_6_1379_doc exists=True anchor=True; SRC1383_7_1379_formula_feed exists=True anchor=True; SRC1383_8_1302_stress_contract exists=True anchor=True; SRC1383_9_1382_validation exists=True anchor=True; SRC1383_10_this_script exists=True anchor=True
+VAL1383_1_prior_ids,expected 1382 symbolic prior ids exist,PASS,expected=9 present=9
+VAL1383_2_numeric_refusal,validator refuses numeric scoring,PASS,All ZPV1383 rows keep pass_for_numeric=False.
+VAL1383_3_transition_nonclaim,transition dry-run rows are algebraic and nonclaim,PASS,All TID1383 rows keep numeric_scoring=blocked and valid_for_claim=False.
+VAL1383_4_local_refusal,local arenas remain blocked,PASS,LRF1383 rows and GATE1383_4 block local GR/PPN/R10/q_loc claims.
+VAL1383_5_scope,generated outputs stay inside post-checkpoint-work and outside formalization-workbench,PASS,ROOT=D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work; output_count=10; formalization_touched=False
+VAL1383_6_overall,overall 1383 validation,PASS,1383 writes a strict refusal-aware symbolic validator and transition inequality dry-run.

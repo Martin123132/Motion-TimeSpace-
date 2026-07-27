@@ -1,0 +1,4 @@
+branch_id,route_id,route,status,why,next_action,valid_for_claim,timestamp_utc
+Y5_R2FR_R10_PROFILE_TAU_MAP_2662,BCR2662_0_anchor_status,existing anchor rows,ANCHOR_ONLY_NONCLAIM,useful for smoke/unit checks but not a full alpha(lambda) curve,keep nonclaim,False,2026-06-23T04:20:54.989113+00:00
+Y5_R2FR_R10_PROFILE_TAU_MAP_2662,BCR2662_1_full_curve,digitize/import full R10 alpha(lambda) curve,DEFER_UNTIL_PROFILE_MAP_HAS_INPUTS,"a full curve still cannot score without tau_R10, K_X, Qbar_XH, c_g and tails",return after profile/source normalization rows exist,False,2026-06-23T04:20:54.989113+00:00
+Y5_R2FR_R10_PROFILE_TAU_MAP_2662,BCR2662_2_claim_condition,claim-valid R10 comparison,BLOCKED,requires both MTS alpha(lambda) rows and bound rows with valid_for_claim=true,no R10 pass claim,False,2026-06-23T04:20:54.989113+00:00

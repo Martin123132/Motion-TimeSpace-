@@ -1,0 +1,6 @@
+step_id,statement,equation,status,missing_for_MTS,valid_for_claim
+DER1852_0_common_frame_ansatz,Assume ordinary matter sees a universal conformal frame g_matter=A_g(Xhat)^2 g_E.,A_g(Xhat)=exp(c_g Xhat + O(Xhat^2)),CONDITIONAL_ANSATZ,parent action has not signed universal common frame as the only local matter coupling,False
+DER1852_1_canonical_scalar,Introduce canonical scalar varphi with alpha_PPN=d ln A_g/d(varphi/M_Pl).,"alpha_PPN = N_X c_g, where N_X=dXhat/d(varphi/M_Pl)",NORMALIZATION_GATE,N_X from Z_X and parent Hessian/range is not owned,False
+DER1852_2_ppn_gamma_law,"For an unscreened massless single scalar-tensor limit, gamma-1=-2 alpha_PPN^2/(1+alpha_PPN^2).",|alpha_PPN| <= sqrt(delta_gamma/(2-delta_gamma)),STANDARD_CONDITIONAL_RELATION,MTS has not proven it reduces to this scalar-tensor PPN limit,False
+DER1852_3_cassini_proxy_bound,Using the conservative Cassini envelope gives a scalar-tensor proxy bound.,delta_gamma=6.7e-05; |alpha_PPN|<=0.0057880154,NUMERIC_PROXY_DERIVED,"proxy is not a direct c_g bound until N_X, range and contamination gates pass",False
+DER1852_4_cg_translation,"If N_X and tau_PPN are signed, c_g inherits the proxy through |N_X tau_PPN c_g| <= alpha0_abs_bound.",|c_g| <= 0.0057880154/|N_X tau_PPN|,CONDITIONAL_BOUND_FORMULA_READY,"N_X and tau_PPN are MISSING, so c_g remains unbounded as an MTS component",False

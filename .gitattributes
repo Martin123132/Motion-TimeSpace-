@@ -2,3 +2,16 @@ research-programme/protocols/** -text
 research-programme/scripts/Y5_R2FR_5176_predeclared_paired_high_mode_seed_ensemble.py -text
 research-programme/scripts/Y5_R2FR_5176_runner_freeze_verifier.py -text
 research-programme/source-intake/mts_residuals/P8_Y5_BRR545_5176_VALIDATION.csv -text
+
+# The lossless ledger is a byte-preservation surface. Never apply checkout
+# newline conversion to copied source artifacts.
+research-ledger/files/** -text
+
+# Preserve the exact compact 5251-5252 increment as copied from the private
+# source ledger.
+research-programme/checkpoints/1267-Y5-R2FR-order5-backbone-paired-transport-rebuild.md -text
+research-programme/checkpoints/1268-Y5-R2FR-Q01-Q07-full-order9-paired-transport-and-outer-gate.md -text
+research-programme/scripts/Y5_R2FR_5251_order5_backbone_paired_transport_rebuild.py -text
+research-programme/scripts/Y5_R2FR_5252_Q01_Q07_full_order9_paired_transport_and_outer_gate.py -text
+research-programme/source-intake/mts_residuals/P8_Y5_BRR545_5251_VALIDATION.csv -text
+research-programme/source-intake/mts_residuals/P8_Y5_BRR545_5252_VALIDATION.csv -text

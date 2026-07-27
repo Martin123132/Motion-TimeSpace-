@@ -3,6 +3,8 @@
 Direct links for 250 files. Item numbers are catalogue
 ordinals, not scientific checkpoint identifiers.
 
+- [`P8_Y5_R2FR_4899_EM_OWNER_AUDIT.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4899_EM_OWNER_AUDIT.csv) (2629 bytes)
+- [`P8_Y5_R2FR_4899_EM_OWNER_SUMMARY.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4899_EM_OWNER_SUMMARY.csv) (225 bytes)
 - [`P8_Y5_R2FR_4899_NORMALIZATION_THEOREM.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4899_NORMALIZATION_THEOREM.csv) (657 bytes)
 - [`P8_Y5_R2FR_4899_PREDICTION_REENTRY.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4899_PREDICTION_REENTRY.csv) (1598 bytes)
 - [`P8_Y5_R2FR_4899_PREDICTION_REENTRY_SUMMARY.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4899_PREDICTION_REENTRY_SUMMARY.csv) (202 bytes)
@@ -251,5 +253,3 @@ ordinals, not scientific checkpoint identifiers.
 - [`P8_Y5_R2FR_4914_COMPLEX_DISCRETE_Q6_COVARIANCE.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4914_COMPLEX_DISCRETE_Q6_COVARIANCE.csv) (67734 bytes)
 - [`P8_Y5_R2FR_4914_COMPLEX_DISCRETE_Q6_RESPONSES.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4914_COMPLEX_DISCRETE_Q6_RESPONSES.csv) (8700 bytes)
 - [`P8_Y5_R2FR_4914_COMPLEX_PROJECTED_REPLICA.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4914_COMPLEX_PROJECTED_REPLICA.csv) (1638 bytes)
-- [`P8_Y5_R2FR_4914_COMPLEX_REPLICA_RUN_STATUS.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4914_COMPLEX_REPLICA_RUN_STATUS.csv) (281 bytes)
-- [`P8_Y5_R2FR_4914_DIRECT_Q6_COVARIANCE.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4914_DIRECT_Q6_COVARIANCE.csv) (16233 bytes)

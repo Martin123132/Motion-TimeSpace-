@@ -1,0 +1,7 @@
+impact_id,quantity,result,effect,current_status,valid_for_claim
+IMP3415_0_eta,kappa_eta,0 if EH/log-lapse branch is parent-owned,removes intrinsic v-lane beta drift,EXACT_CONDITIONAL_ZERO,False
+IMP3415_1_source_quad,kappa_source_quad,0 if one-parameter source-calibrated exterior is parent-owned,removes source-square beta drift after measured-U calibration,EXACT_CONDITIONAL_ZERO,False
+IMP3415_2_reduced_beta_envelope,kappa_v,|kappa_v| <= |kappa_PiM|+|kappa_boundary|+|kappa_readout|+|kappa_operator|+|kappa_coupling|+|kappa_q_loc| under eta/source-square zeroes,beta problem shrinks to retained lanes,REDUCED_ENVELOPE_CONDITIONAL_NOT_SCORE_READY,False
+IMP3415_3_public_EM,T_EM/Poynting,ordinary Hilbert source if public Maxwell action uses g_obs and fixed current/Hodge,EM stress can join the common source side without double counting,SAFE_CLASS_CONDITIONAL,False
+IMP3415_4_hidden_stress,T_extra_hidden,retained residual,"hidden/projector/constitutive stress can still feed beta, alpha_i, xi, zeta_i, source mass or EM propagation",RETAINED_Y6_RESIDUAL,False
+IMP3415_5_local_GR,local_GR_PPN,not claimed,"needs parent EH selector, all retained lanes zero/bounded, q_loc vector split, and safe stress classification",BLOCKED_BUT_MORE_DERIVED,False

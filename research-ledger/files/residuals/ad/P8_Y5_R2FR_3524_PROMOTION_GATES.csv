@@ -1,0 +1,6 @@
+gate_id,gate,pass_condition,current_status,blocking_source,if_failed,valid_for_claim
+G3524_0_q_stack_owner,Q_pub owner,"q map, kernel, e_obs, tau, ell_J and no-shadow frame close together",False,2588: OSA2588_7 / OSC2588_0..7,"epsilon_q_owner, epsilon_DObs_e, epsilon_tau_selector, epsilon_ellJ_scale, shadow/readout residuals",False
+G3524_1_hodge_owner,observed Hodge owner,e_obs q-basic plus fixed orientation plus EM action-domain excludes independent chi_EM/hidden Hodge/readout Hodge,False,3504: HFR3504_6 / HSG3504 gates,"Delta_Hodge_EM, Delta_chi, hidden/disformal Hodge, readout Hodge",False
+G3524_2_charge_gauge_owner,T_Q/charge/gauge norm owner,"T_Q object, fixed lattice/base unit, fixed norm, unique F2, same current owner and readout/radiative guard close",False,1100: TQS1100_6,"b_alpha, w_EM, C_XF2, C_JQ, current rescale",False
+G3524_3_total_hilbert_current,total Hilbert source current,matter plus EM total current closes; Pi_M natural; no external/radiative Poynting leakage or it is bounded,False,3503: THC3503_4..6,"Delta_J_total, Delta_PiM_metric, Phi_EM_rad",False
+G3524_4_total,composite local source owner,G3524_0 through G3524_3 pass together before readout/calibration,False,3524 synthesis,no derived local-GR/Newton/Maxwell/source-coupling claim; use kernel values,False

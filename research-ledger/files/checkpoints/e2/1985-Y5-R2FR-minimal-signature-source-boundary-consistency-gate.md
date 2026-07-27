@@ -1,0 +1,108 @@
+# 1985 Y5 R2FR: Minimal Signature Source Boundary Consistency Gate
+
+Private checkpoint. This runs the constructed 1984 parent-memory signature contract through the gates that decide whether a healthy positive memory operator can actually support local GR/Newton rather than a sourced fifth-force/residual branch.
+
+Verdict: the constructed contract is internally coherent as a future target, but it is not currently derived and it does not pass the consistency gates. Source-zero, boundary/readout silence, action-weight exclusion, canonical-transfer audit, conservation, Newton source-normalization, and arena matching all remain open or failed. The honest next step is a finite residual vector pack, not a local-GR claim.
+
+No local-GR, Newton, EH, R10, PPN, clock, orbital, or public claim follows from 1985.
+
+## Source Register
+
+| branch | id | valid_for_claim | public_claim | created_at_utc | source_id | source_path | required_needles | exists | needle_status | role |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | SRC1985_00_1984_doc | false | false | 2026-06-20T02:12:15.014166+00:00 | 1984_doc | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\1984-Y5-R2FR-minimal-parent-memory-signature-contract-or-route-demotion.md | COMP1984_0_no_hidden_fifth_force; NEXT1984_0_primary | true | PASS | source/boundary/canonical/conservation/Newton consistency gate input |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | SRC1985_01_1984_validation | false | false | 2026-06-20T02:12:15.014166+00:00 | 1984_validation | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_BRR545_1984_VALIDATION.csv | VAL1984_OVERALL; PASS | true | PASS | source/boundary/canonical/conservation/Newton consistency gate input |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | SRC1985_02_1386_package | false | false | 2026-06-20T02:12:15.014166+00:00 | 1386_package | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_1386_PARENT_PACKAGE_CLAUSE_MATRIX.csv | PCM1386_7_package_verdict; PACKAGE_FAILS_CURRENT_CLAIM | true | PASS | source/boundary/canonical/conservation/Newton consistency gate input |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | SRC1985_03_1386_zero | false | false | 2026-06-20T02:12:15.014166+00:00 | 1386_zero | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_1386_GC_ZERO_THEOREM_ATTEMPT.csv | GCT1386_4_zero_verdict; ZERO_THEOREM_NOT_CLOSED_CURRENT_CORPUS | true | PASS | source/boundary/canonical/conservation/Newton consistency gate input |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | SRC1985_04_1387_action_weight | false | false | 2026-06-20T02:12:15.014166+00:00 | 1387_action_weight | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_1387_ACTION_WEIGHT_EXCLUSION_AUDIT.csv | AWE1387_7_verdict; COUNTEREXAMPLE_SURVIVES_FIRST_FILL_REQUIRED | true | PASS | source/boundary/canonical/conservation/Newton consistency gate input |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | SRC1985_05_1387_delta_w | false | false | 2026-06-20T02:12:15.014166+00:00 | 1387_delta_w | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_1387_DELTA_W_SOURCE_BETA_FIRST_FILL.csv | DWB1387_6_first_fill_verdict; NONCLAIM_FIRST_FILL_READY | true | PASS | source/boundary/canonical/conservation/Newton consistency gate input |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | SRC1985_06_1540_selector | false | false | 2026-06-20T02:12:15.014166+00:00 | 1540_selector | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_1540_COUPLING_SELECTOR_THEOREM_ATTEMPT.csv | CSEL1540_6_current_verdict; THEOREM_NOT_CLOSED | true | PASS | source/boundary/canonical/conservation/Newton consistency gate input |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | SRC1985_07_1584_gr | false | false | 2026-06-20T02:12:15.014166+00:00 | 1584_gr | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_1584_GR_REDUCTION_RUNNER.csv | RUN1584_4_local_gr; BLOCKED_NO_CLAIM | true | PASS | source/boundary/canonical/conservation/Newton consistency gate input |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | SRC1985_08_1592_signature | false | false | 2026-06-20T02:12:15.014166+00:00 | 1592_signature | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_PARENT_QLOC_1592_PARENT_SIGNATURE_AUDIT.csv | PSA1592_6_local_GR_reentry; LOCAL_GR_REENTRY_STILL_BLOCKED | true | PASS | source/boundary/canonical/conservation/Newton consistency gate input |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | SRC1985_09_1042_nohair | false | false | 2026-06-20T02:12:15.014166+00:00 | 1042_nohair | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_1042_NOHAIR_PREMISE_GATE.csv | NHP1042_6_verdict; FAIL_CURRENT_CLAIM_NOHAIR_NOT_PARENT_SIGNED | true | PASS | source/boundary/canonical/conservation/Newton consistency gate input |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | SRC1985_10_1043_jx_boundary | false | false | 2026-06-20T02:12:15.014166+00:00 | 1043_jx_boundary | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\1043-Y5-R10-JX-zero-and-Phi-boundary-zero-premise-or-alpha3-prior-value.md | J_X zero channel audit; R_X_ZERO_BLOCKED_CURRENT_CORPUS | true | PASS | source/boundary/canonical/conservation/Newton consistency gate input |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | SRC1985_11_1027_qbar | false | false | 2026-06-20T02:12:15.014166+00:00 | 1027_qbar | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\1027-Y5-R10-qbarXT-source-zero-or-bounded-coupling-row.md | QZ1027_6_verdict; FAIL_CURRENT_CLAIM | true | PASS | source/boundary/canonical/conservation/Newton consistency gate input |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | SRC1985_12_1030_spm | false | false | 2026-06-20T02:12:15.014166+00:00 | 1030_spm | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\1030-Y5-R10-single-public-metric-parent-action-derivation-or-cg-provenance-gate.md | SPM1030_6_contract_verdict; CONTRACT_READY_NOT_CURRENT_THEOREM | true | PASS | source/boundary/canonical/conservation/Newton consistency gate input |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | SRC1985_13_1012_newton_norm | false | false | 2026-06-20T02:12:15.014166+00:00 | 1012_newton_norm | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\1012-Y5-R10-Y5-source-normalization-owner-or-q_loc-bound-implementation.md | Y5O1012_7_Newton_Poisson_orbit; conditional_not_parent_derived | true | PASS | source/boundary/canonical/conservation/Newton consistency gate input |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | SRC1985_14_1013_measured_gm | false | false | 2026-06-20T02:12:15.014166+00:00 | 1013_measured_gm | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\1013-Y5-R10-PiM-JH-flux-closure-or-measured-GM-obstruction-score.md | PFC1013_8_verdict; fail_current_claim | true | PASS | source/boundary/canonical/conservation/Newton consistency gate input |
+
+## Source Boundary Consistency Matrix
+
+| branch | id | valid_for_claim | public_claim | created_at_utc | gate | required_for_gr | current_evidence | status | residual_if_open |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | SBG1985_0_source_zero | false | false | 2026-06-20T02:12:15.014166+00:00 | J_m / canonical source zero | J_c=0 channelwise, or every source component has a finite no-cancellation bound. | 1386/1540/1027/1043 give conditional chain-rule/source-zero routes but say the parent package is unsigned. | FAIL_CURRENT_DERIVATION_RETAIN_RESIDUAL | J_c, qbar_XT, beta_source, beta_test, hidden-source tails |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | SBG1985_1_boundary_zero | false | false | 2026-06-20T02:12:15.014166+00:00 | boundary/readout/projector silence | Phi_boundary_local=0 or source-bounded boundary/readout/projector tails. | 1042/1043 and 1540 keep boundary flux/readout/projector silence unsigned. | FAIL_CURRENT_DERIVATION_RETAIN_RESIDUAL | Phi_boundary, q_boundary, readout tail, projector tail |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | SBG1985_2_action_weights | false | false | 2026-06-20T02:12:15.014166+00:00 | pre-variation action-weight exclusion | No independent species/source action multiplier, or w_A common/quotient-equivalent/null-projected. | 1387 proves the counterexample survives; Delta_w/beta_w first-fill rows are required. | COUNTEREXAMPLE_SURVIVES_RETAIN_RESIDUAL | Delta_w_A, beta_w_source, beta_w_test, measured-G absorption guard |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | SBG1985_3_canonical_transfer | false | false | 2026-06-20T02:12:15.014166+00:00 | canonical Z_m transfer audit | Z_m=1 canonical units must transfer into V_R, J_m, qbar, alpha, PPN/Newton normalization with no hidden knob. | 1306/1384 say constant canonicalization is only private unless every transferred coupling is audited. | OPEN_TRANSFER_AUDIT_REQUIRED | mu_m^2 law, J_c normalization, K_alpha, PPN source normalization |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | SBG1985_4_conservation | false | false | 2026-06-20T02:12:15.014166+00:00 | Ward/Bianchi/conservation closure | Memory stress, matter, source/bath and boundary terms obey same-parent conservation. | 1584 refuses GR upgrade; 1030 says source-side GR/Newton is contract-ready but not current theorem. | FAIL_CURRENT_DERIVATION_RETAIN_RESIDUAL | non-Hilbert current, source current, q_loc, H_tau/M_H_ref tails |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | SBG1985_5_newton_source_normalization | false | false | 2026-06-20T02:12:15.014166+00:00 | source-normalized Newton / measured GM | same charge sources Poisson/Gauss and inverse-square orbital acceleration with calibrated measured GM. | 1012/1013 keep Newton Poisson/orbit calibration and Pi_M J_H flux closure not parent-derived. | FAIL_CURRENT_DERIVATION_RETAIN_RESIDUAL | M_eff flux, Gdot/GM drift, radial/range/species/frame residuals |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | SBG1985_6_arena_matching | false | false | 2026-06-20T02:12:15.014166+00:00 | same-parent arena matching | one Z_m/mu_m/source law feeds local, cosmology, galaxy, clock/orbital arenas without retuning. | 1984 makes this a contract clause; no source-backed arena map exists yet. | OPEN_SAME_PARENT_MAP_REQUIRED | arena retune deltas, prior-edge flags, hidden coefficient branches |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | SBG1985_7_empirical_residual_score | false | false | 2026-06-20T02:12:15.014166+00:00 | finite residual scoreability | If any previous gate remains open, residuals must be scoreable against R10/PPN/clocks/orbital/cosmology. | many residual rows exist but are not assembled into one memory-route vector. | NEXT_VECTOR_REQUIRED | R10 alpha(lambda), PPN gamma/beta, clock, orbital, cosmology residual vector |
+
+## Retained Residual Vector
+
+| branch | id | valid_for_claim | public_claim | created_at_utc | residual | definition | required_source | status | test_arenas |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | RES1985_0_Jc | false | false | 2026-06-20T02:12:15.014166+00:00 | J_c / J_m | canonical memory source after field normalization and source decomposition | parent source-zero theorem or finite channelwise bounds | MISSING_ZERO_OR_BOUND | R10;PPN;clock;orbital;cosmology |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | RES1985_1_beta | false | false | 2026-06-20T02:12:15.014166+00:00 | beta_source,beta_test,qbar_XT | source/test coupling of the memory/canonical scalar to matter/readout | same-parent matter descent or finite composition/source rows | MISSING_ZERO_OR_BOUND | R10;WEP;clock;PPN |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | RES1985_2_boundary | false | false | 2026-06-20T02:12:15.014166+00:00 | Phi_boundary/readout/projector tail | boundary flux, projection, readout, topology, and hidden-domain contribution to no-hair RHS | boundary silence theorem or finite no-cancellation envelope | MISSING_ZERO_OR_BOUND | R10;orbital;clock;PPN |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | RES1985_3_action_weight | false | false | 2026-06-20T02:12:15.014166+00:00 | Delta_w_A,beta_w_source,beta_w_test | pre-variation source/action-weight obstruction to common matter and Newton source normalization | object-language/action-measure exclusion theorem or finite source weights | FIRST_FILL_READY_VALUES_MISSING | WEP;Newton;R10;clock |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | RES1985_4_conservation | false | false | 2026-06-20T02:12:15.014166+00:00 | q_nonH/q_loc/source-current tail | non-Hilbert current, retained q_loc, source-current or response-doublet obstruction | same-parent Ward/Bianchi closure or finite current bounds | MISSING_ZERO_OR_BOUND | PPN;orbital;clock;local-GR |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | RES1985_5_newton_gm | false | false | 2026-06-20T02:12:15.014166+00:00 | M_eff/G_eff/GM calibration residual | failure of same charge to source Poisson/Gauss, orbit acceleration, and measured-GM normalization | Pi_M J_H flux closure, worldtube glue, and Newton calibration | MISSING_ZERO_OR_BOUND | Newton;orbital;Gdot;PPN |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | RES1985_6_arena | false | false | 2026-06-20T02:12:15.014166+00:00 | arena retune delta | difference between local/cosmology/galaxy coefficient law if not one parent map | same-parent arena map or finite retuning penalty | MISSING_ZERO_OR_BOUND | cosmology;galaxy;local |
+
+## Contract Compatibility Verdict
+
+| branch | id | valid_for_claim | public_claim | created_at_utc | question | answer | because | effect |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | VER1985_0_internal_viability | false | false | 2026-06-20T02:12:15.014166+00:00 | Is the 1984 constructed contract internally viable as a future derivation target? | CONDITIONALLY_YES_BUT_NOT_CURRENTLY_DERIVED | the contract is mathematically coherent if source, boundary, conservation, Newton, and arena gates all close together | keep it as a target, not a claim |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | VER1985_1_current_status | false | false | 2026-06-20T02:12:15.014166+00:00 | Does the current corpus close the 1985 consistency gates? | NO | source-zero, boundary, action-weight, conservation, Newton-source, and arena-matching gates remain unsigned or fail | local-GR/Newton route remains blocked |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | VER1985_2_best_route | false | false | 2026-06-20T02:12:15.014166+00:00 | What is the safest next implementation? | BUILD_FINITE_RESIDUAL_VECTOR | if derivation gates are open, the competitive framework needs no-cancellation residual rows that can be empirically scored | move from contract-only to testable residual bookkeeping |
+
+## Claim Gate
+
+| branch | id | valid_for_claim | public_claim | created_at_utc | gate | status | reason | required_to_open |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | GATE1985_0_source_boundary | false | false | 2026-06-20T02:12:15.014166+00:00 | source/boundary gate closes | BLOCKED | J_c/qbar/source, boundary/readout, and hidden tails are not zero or bounded | same-parent source-zero/boundary silence theorem or finite residual vector |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | GATE1985_1_common_matter | false | false | 2026-06-20T02:12:15.014166+00:00 | common matter/Newton source normalization | BLOCKED | action-weight and measured-GM counterexamples survive | action-measure/object-language theorem and Pi_M J_H/Newton calibration |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | GATE1985_2_local_GR | false | false | 2026-06-20T02:12:15.014166+00:00 | derived local GR/Newton | BLOCKED | positive operator plus constructed contract is insufficient without all consistency gates | 1984 contract source-signed plus 1985 gates closed |
+
+## Decision Ledger
+
+| branch | id | valid_for_claim | public_claim | created_at_utc | decision | because | next_action |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | DEC1985_0_contract_viability | false | false | 2026-06-20T02:12:15.014166+00:00 | CONTRACT_REMAINS_FUTURE_TARGET_NOT_CURRENT_DERIVATION | no logical contradiction is found, but source/boundary/conservation/Newton gates are open | do not discard the route; do not claim it |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | DEC1985_1_residual_priority | false | false | 2026-06-20T02:12:15.014166+00:00 | FINITE_RESIDUAL_VECTOR_REQUIRED | open gates must become explicit no-cancellation residuals to make the framework testable | assemble memory-route residual vector with units/source slots and arena mapping |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | DEC1985_2_best_next | false | false | 2026-06-20T02:12:15.014166+00:00 | MEMORY_ROUTE_RESIDUAL_VECTOR_PACK | this converts derivation blockers into scoreable empirical pressure rows instead of rearguing the theorem | 1986-Y5-R2FR-memory-route-finite-residual-vector-pack.md |
+
+## Next Target
+
+| branch | id | valid_for_claim | public_claim | created_at_utc | status | target_doc | target_script | task | success_condition |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | NEXT1985_0_primary | false | false | 2026-06-20T02:12:15.014166+00:00 | selected | 1986-Y5-R2FR-memory-route-finite-residual-vector-pack.md | scripts/Y5_R2FR_memory_route_finite_residual_vector_pack_1986.py | assemble the finite residual vector for the memory-positive local-GR route: J_c, beta/qbar, boundary/readout, action weights, conservation/source-current, measured-GM/Newton, and arena-retune components. | one nonclaim vector with units, source slots, no-cancellation rule, and test arenas; no local-GR claim unless components are theorem-zero or source-bounded |
+
+## Project Status Snapshot
+
+| branch | id | valid_for_claim | public_claim | created_at_utc | area | status | summary |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | SNAP1985_0_status | false | false | 2026-06-20T02:12:15.014166+00:00 | minimal contract | INTERNALLY_COHERENT_TARGET_ONLY | No contradiction found, but it is not derived and all consistency gates remain open. |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | SNAP1985_1_local_gr | false | false | 2026-06-20T02:12:15.014166+00:00 | local GR/Newton | BLOCKED | The source/boundary/action-weight/conservation/Newton gates block local-GR promotion. |
+| MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428 | SNAP1985_2_next | false | false | 2026-06-20T02:12:15.014166+00:00 | testability | RESIDUAL_VECTOR_NEXT | The next move is empirical discipline: retain finite residuals with no-cancellation scoring. |
+
+## Validation
+
+| validation_id | status | detail | valid_for_claim | public_claim |
+| --- | --- | --- | --- | --- |
+| VAL1985_00_sources | PASS | all source paths exist and needles found | false | false |
+| VAL1985_01_gates_retained | PASS | open/failed consistency gates retained as residuals | false | false |
+| VAL1985_02_residual_vector | PASS | residual vector rows remain missing/source-bound | false | false |
+| VAL1985_03_contract_target_only | PASS | contract remains target only, not derivation | false | false |
+| VAL1985_04_current_not_closed | PASS | current corpus does not close gates | false | false |
+| VAL1985_05_claim_gates | PASS | all claim gates blocked | false | false |
+| VAL1985_06_decision | PASS | decision selects residual vector pack | false | false |
+| VAL1985_07_next_target | PASS | 1986 target selected | false | false |
+| VAL1985_08_claim_flags_safe | PASS | claim flags all false | false | false |
+| VAL1985_09_csv_parse | PASS | all generated CSVs parse with rows | false | false |
+| VAL1985_10_pycache_absent | PASS | scripts __pycache__ absent | false | false |
+| VAL1985_11_formalization_untouched | PASS | formalization_1985_artifact_count=0 | false | false |
+| VAL1985_OVERALL | PASS | 1985 minimal signature source-boundary consistency gate | false | false |

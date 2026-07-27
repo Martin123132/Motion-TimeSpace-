@@ -1,0 +1,5 @@
+threshold_id,formula,use,status,valid_for_claim
+PTH3330_0_master,R_PPN <= |R_Gamma_PPN| + C_PPN epsilon_eff_PPN^2 + epsilon_composite_PPN + epsilon_direct_PPN <= B_PPN,claim-ready PPN comparison only after B_PPN and all terms are sourced,MASTER_THRESHOLD_FORMULA,false
+PTH3330_1_epsilon_eff,"epsilon_eff_PPN <= sqrt(max(B_PPN-|R_Gamma_PPN|-epsilon_composite_PPN-epsilon_direct_PPN,0)/C_PPN)",allowable first-gradient leakage after floors are reserved,TREE_CHANNEL_THRESHOLD,false
+PTH3330_2_floor_budget,|R_Gamma_PPN| + epsilon_composite_PPN + epsilon_direct_PPN < B_PPN is required before the tree term has any room,diagnoses floor-dominated failure from 3329 smoke,FLOOR_GATE,false
+PTH3330_3_claim_rule,"No row is claim-ready unless B_PPN is real, C_PPN is bounded, epsilon_eff_PPN is bounded, and all floors are bounded below B_PPN",prevents smoke numbers being converted into evidence,NO_CLAIM_RULE,false

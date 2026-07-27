@@ -1,0 +1,5 @@
+signature_id,quantity,signature_attempt,current_result,status,next_derivation,valid_for_claim
+SIG4492_0_sK2_zero,s_K2,parent variation sets Hessian source-to-metric response coefficient to zero,not found in current source chain,UNSIGNED,derive metric response coefficient from parent action/readout map,False
+SIG4492_1_kappa_STF_zero,kappa_STF,matter/source kernel has no tracefree Hessian projection in the public metric channel,not found; current projected Hessian branch explicitly keeps kappa_STF symbolic,UNSIGNED,derive kappa_STF from the matter coupling/source domain rather than fit it,False
+SIG4492_2_c_ext_zero,c_ext,set the exterior r^-3 amplitude to zero,trivializes the exterior local test branch and is not a useful local-GR recovery route,REJECTED_AS_TRIVIAL_BRANCH,keep nonzero exterior branch and bound its leakage,False
+SIG4492_3_product_bound,|s_K2*kappa_STF|,use the 4492 leakage inequality to limit the live product,|s_K2*kappa_STF| <= allowance/(C_DeltaKTF*N_Bprime) whenever C_DeltaKTF*N_Bprime is sourced,FORMULA_DERIVED_NUMERIC_COEFFICIENTS_MISSING,compute N_Bprime from actual profile families or prove C_DeltaKTF=0 by parent projection,False

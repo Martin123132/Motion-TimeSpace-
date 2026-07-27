@@ -1,0 +1,9 @@
+validation_id,check,status,details
+VAL4552_0_sources,all cited source paths exist and needles are found,PASS,13/13 sources verified
+VAL4552_1_reduced_split,"reduced alpha3 split explicitly contains marker, boundary flux and cubic channels",PASS,Delta alpha3 = M_alpha3 + F_alpha3 + C3_alpha3 epsilon_U^3
+VAL4552_2_marker_contract,marker exclusion contract has zero route and finite fallback,PASS,M_alpha3 retained unless scalar-singlet/no-marker is parent-signed
+VAL4552_3_boundary_contract,"boundary flux contract has no-flux route, Poynting guard and finite fallback",PASS,F_alpha3 retained unless scalar-boundary/no-flux is parent-signed
+VAL4552_4_finite_rows,finite vector rows have positive numeric values and remain nonclaim,PASS,7 finite rows checked
+VAL4552_5_claim_guard,no alpha3/local-GR claim is promoted,PASS,claim gates remain blocked/nonclaim
+VAL4552_6_docs,post and formal docs exist during validation,PASS,post=True formal=True
+VAL4552_OVERALL,4552 checkpoint validation,PASS,ALPHA3_REDUCED_TO_MARKER_AND_BOUNDARY_FLUX_ZERO_OR_FINITE_AMPLITUDE_ROWS_NONCLAIM

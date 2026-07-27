@@ -1,0 +1,5 @@
+score_id,arena,residual,formula,acceptance,status,valid_for_claim
+SCR4344_0_owner_zero_branch,all local arenas,owner_tail,"Y_owner=0 if lambda_RI>0, B_Lambda=0, B_RI=0, and no hyperbolic incoming mode",conditional theorem only; no empirical claim until parent signs inputs,CONDITIONAL_ZERO,False
+SCR4344_1_owner_tail,PPN/R10/clock/orbital/WEP,owner_tail,Y_owner_a <= Pi_a^RI C_Lambda R_Lambda/lambda_RI + Pi_a^BRI B_RI + Pi_a^I I_RI,PPN_gamma<=0.0002739826487147268; PPN_beta<=0.0009529831259642674; clock<=0.0006134828873394971; R10/orbital/WEP sourced separately,SCORE_ROW_READY_VALUES_MISSING,False
+SCR4344_2_Kperp_first_row,PPN/R10/clock/orbital/WEP,K_extra_source,Y_Kperp_i := |W_i^K| C_T(|S_T|+|B_T|+|I_T|+|Z_T|),Y_Kperp_i <= bound_i for every local arena i; coefficients fixed before scoring,FIRST_KPERP_SCORE_ROW_READY_VALUES_MISSING,False
+SCR4344_3_combined,all local arenas,owner_tail_plus_Kperp,Y_a^4344 <= Y_owner_a + |W_a^K| C_T(|S_T|+|B_T|+|I_T|+|Z_T|),combined residual below each arena gate with no placeholder rows,COMBINED_NONCLAIM_RUNNER_READY,False

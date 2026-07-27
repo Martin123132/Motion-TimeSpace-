@@ -1,0 +1,7 @@
+contract_id,requirement,test,if_fail
+MR514_0_scalar_density,"Gamma_eff is a covariant scalar density input to S_GK, not a post-readout fitted function.","Gamma_eff = Gamma_eff(g,Phi,nabla Phi,D,topological data) with declared units and no data-fit selector",candidate A fails; q_loc remains residual
+MR514_1_Khat_metric_response,"K_hat is exactly the metric response of Gamma_eff, including derivative/boundary terms.",K_hat^{mu nu} = K_metric^{mu nu} from delta[sqrt(-g)Gamma_eff]/delta g_{mu nu} under a fixed sign convention,Gamma and Khat are independent knobs and cannot derive q_loc zero
+MR514_2_Ward_identity,Diffeomorphism invariance of S_GK gives the q_loc expression as a Ward residual.,nabla_mu T_GK^{mu nu} = sum_A E_A nabla^nu Phi^A + boundary/nonlocal terms,q_loc is not owned by the parent variation
+MR514_3_Euler_silence,The fields Phi entering Gamma_eff obey source-free positive local equations in compact local vacuum.,E_A=0 and energy identity gives delta Phi=0 or bounded exponential hair,q_loc is a physical local force residual
+MR514_4_fixed_point_subtraction,"Any constant Gamma_eff(Phi0) is absorbed into Lambda0/background subtraction, leaving no local force.",nabla^nu Gamma_eff(Phi0)=0 and boundary variation of the constant piece is EH-compatible,constant background contaminates local mass/source readout
+MR514_5_double_zero,First variations of the stress vanish at the local fixed point.,"partial_A T_GK^{mu nu}(Phi0)=0, equivalent to F_1=0 for this sector",linear PPN/fifth-force/source-normalization leakage remains

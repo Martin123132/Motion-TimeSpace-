@@ -1,0 +1,15 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1232_0_sources_exist,all cited local sources exist,PASS,10/10 sources exist,False,False
+VAL1232_1_needles_found,all cited local needles found,PASS,10/10 needles found,False,False
+VAL1232_2_graph_conditional,graph connectedness theorem remains conditional,PASS,IGC1232_1 present,False,False
+VAL1232_3_graph_not_closed,interaction graph certificate is not promoted,PASS,IGC1232_4 result=GRAPH_CERTIFICATE_NOT_CLOSED,False,False
+VAL1232_4_edge_rows_present,graph edge audit rows are present and unsigned,PASS,edge_rows=6,False,False
+VAL1232_5_source_pack_present,component-fraction source pack exists,PASS,source_pack_rows=8,False,False
+VAL1232_6_formula_template_present,Delta_w component formula template exists,PASS,FORM1232_2_delta_w_prediction present,False,False
+VAL1232_7_quarantine_present,toy/proxy rows are quarantined,PASS,quarantine_rows=4,False,False
+VAL1232_8_claim_gates_blocked,all claim gates remain blocked,PASS,blocked_gates=5/5,False,False
+VAL1232_9_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables,False,False
+VAL1232_10_next_target_1233,next target builds validator or edge-owner proof,PASS,1233-Y5-R10-component-fraction-intake-validator-or-parent-graph-edge-owner-proof.md,False,False
+VAL1232_11_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1232_SOURCE_REGISTER.csv:10; P8_Y5_R10_1232_INTERACTION_GRAPH_CERTIFICATE_ATTEMPT.csv:5; P8_Y5_R10_1232_ORDINARY_MATTER_GRAPH_EDGE_AUDIT.csv:6; P8_Y5_R10_1232_TIPT_COMPONENT_FRACTION_SOURCE_PACK.csv:8; P8_Y5_R10_1232_COMPONENT_FRACTION_FORMULA_LEDGER.csv:4; P8_Y5_R10_1232_TOY_PROXY_QUARANTINE.csv:4; P8_Y5_R10_1232_RUNNER_FEED_UPDATE.csv:3; P8_Y5_R10_1232_DECISION_LEDGER.csv:3; P8_Y5_R10_1232_CLAIM_GATES.csv:5; P8_Y5_R10_1232_NEXT_TARGET.csv:1,False,False
+VAL1232_12_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_write_count_since_run_start=0,False,False
+VAL1232_13_overall,overall 1232 validation,PASS,1232 keeps the parent interaction graph conditional and stages a strict nonclaim Ti/Pt component-fraction source pack,False,False

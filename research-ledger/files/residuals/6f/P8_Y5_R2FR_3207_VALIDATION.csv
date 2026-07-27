@@ -1,0 +1,10 @@
+check_id,check,pass,detail,generated_utc
+VAL3207_00_inputs_exist,all cited inputs exist,true,inputs=8,2026-06-26T20:08:36.686757+00:00
+VAL3207_01_definition_law_present,M_H_ref exact definition law is present,true,M_H_ref := G_ref^-1*(H_tau[S_outer]-H_ref),2026-06-26T20:08:36.686757+00:00
+VAL3207_02_lower_bound_law_present,positive lower-bound law is present,true,M_H_ref >= M_EH*(1-epsilon_abs)>0 if M_EH>0 and epsilon_abs<1,2026-06-26T20:08:36.686757+00:00
+VAL3207_03_candidate_rows_nonclaim,candidate denominator rows remain nonclaim,true,candidate_rows=2,2026-06-26T20:08:36.686757+00:00
+VAL3207_04_positivity_gate_refuses,positivity gate still refuses current claim,true,denominator law derived but exact/lower-bound values missing,2026-06-26T20:08:36.686757+00:00
+VAL3207_05_anti_circularity_guard,orbital GM shortcut remains rejected,true,"observed orbital GM is test output, not denominator proof input",2026-06-26T20:08:36.686757+00:00
+VAL3207_06_decision_next_target,decision selects component derivation instead of circling M_H_ref,true,3208-Y5-R2FR-Htau-one-form-exactness-or-first-DeltaH-curl-bound-under-AX1090,2026-06-26T20:08:36.686757+00:00
+VAL3207_07_no_formalization_workbench_edit,script writes only post-checkpoint outputs,true,no formalization-workbench paths are output targets,2026-06-26T20:08:36.686757+00:00
+VAL3207_08_csv_parse,all generated CSV files parse cleanly,true,P8_Y5_R2FR_3207_INPUTS.csv;P8_Y5_R2FR_3207_MHREF_DENOMINATOR_LOWER_BOUND_LAW.csv;P8_Y5_R2FR_3207_MHREF_FIRST_ROW_CANDIDATE.csv;P8_Y5_R2FR_3207_POSITIVITY_BOUND_GATE.csv;P8_Y5_R2FR_3207_BOBS_3206_PATCH_QUEUE.csv;P8_Y5_R2FR_3207_DECISION.csv,2026-06-26T20:08:36.686757+00:00

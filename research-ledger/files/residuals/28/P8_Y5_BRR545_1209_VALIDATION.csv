@@ -1,0 +1,15 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1209_0_sources_exist,all cited local sources exist,PASS,10/10 sources exist,False,False
+VAL1209_1_needles_found,all cited source needles found,PASS,10/10 needles found,False,False
+VAL1209_2_fermi_law_present,clean Fermi finite-domain law is recorded,PASS,FDL1209_3 present,False,False
+VAL1209_3_pressure_insert,projector pressure insert is recorded,PASS,FDL1209_4 present,False,False
+VAL1209_4_domain_audit,domain motion and projector stress are audited,PASS,"domain_motion_Linf,domain_motion_Linf,projector_stress_Linf,projector_stress_Linf,epsilon_geom",False,False
+VAL1209_5_source_pack_complete,unified source pack lists required constants,PASS,"D_L,L_D,Riemann_norm,nabla_Riemann_norm,C_Fermi;C_Fermi2,acceleration_norm;rotation_norm,C_P,G_res_norm,domain_motion_Linf,projector_stress_Linf,C_CK",False,False
+VAL1209_6_pressure_preserved,1208 projector target is preserved,PASS,target=1.17233215026e-05,False,False
+VAL1209_7_blocker_policy,missing source rows block claims,PASS,PSC1209_4 present,False,False
+VAL1209_8_no_missing_claim_rows,no row with MISSING is valid for claim,PASS,all source pack rows nonclaim,False,False
+VAL1209_9_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout,False,False
+VAL1209_10_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1209_SOURCE_REGISTER.csv:10; P8_Y5_R10_1209_FERMI_DOMAIN_DERIVATION.csv:5; P8_Y5_R10_1209_DOMAIN_MOTION_PROJECTOR_STRESS_AUDIT.csv:5; P8_Y5_R10_1209_UNIFIED_SOURCE_PACK.csv:11; P8_Y5_R10_1209_PRESSURE_SMOKE_SCHEMA.csv:5; P8_Y5_R10_1209_DECISION_LEDGER.csv:2; P8_Y5_R10_1209_CLAIM_GATES.csv:4; P8_Y5_R10_1209_NEXT_TARGET.csv:1,False,False
+VAL1209_11_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_after_run_start_count=0,False,False
+VAL1209_12_next_target,next target is staged,PASS,1210-Y5-R10-first-local-curvature-scale-and-Gres-bracket-smoke.md,False,False
+VAL1209_13_overall,overall 1209 validation,PASS,1209 local Fermi-domain source pack is reproducible and nonclaim,False,False

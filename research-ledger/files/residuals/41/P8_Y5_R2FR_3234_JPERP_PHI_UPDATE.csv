@@ -1,0 +1,4 @@
+update_id,target,formula,claim_effect,status,valid_for_claim,generated_utc
+UP3234_0_residual_vector,local residual vector,R_local includes R_EM_F2 + R_Poynting + R_other; R_Poynting is bounded by PB3234_0/PB3234_1,keeps EM flux as a finite residual rather than erasing it by trace/F2 silence,RESIDUAL_COMPONENT_EXPLICIT,false,2026-06-26T22:50:59.503467+00:00
+UP3234_1_Yperp_feedback,transverse amplitude law,Y_perp <= (a_perp + sqrt(a_perp^2+4 b_perp))/2 with a_perp=J_perp_bound/m_perp_min and b_perp=Phi_perp_bound,local PPN branch cannot claim v_perp=0 unless both EM_F2 and Poynting terms vanish or are bounded below tolerance,FEEDS_3230_CHAIN,false,2026-06-26T22:50:59.503467+00:00
+UP3234_2_flux_gate,future source rows,"required row: {B_id,u,n,C_flux,||S_EM dot n||_B,B_corner_flux,units,source_path,valid_for_claim}",turns Poynting into a sourceable coefficient instead of a vague objection,SOURCE_ROW_CONTRACT_READY,false,2026-06-26T22:50:59.503467+00:00

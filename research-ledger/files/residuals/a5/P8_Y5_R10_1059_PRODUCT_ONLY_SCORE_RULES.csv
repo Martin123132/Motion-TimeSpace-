@@ -1,0 +1,5 @@
+rule_id,rule,effect,claim_allowed,valid_for_claim,generated_utc
+PSR1059_0_product_only,a row with a product_symbol may only score that exact product,prevents product bound from being divided by assumed tau/source factors,false,false,2026-06-14T09:46:14.864541+00:00
+PSR1059_1_no_unity_tau,"tau_clock, tau_WEP, and tau_R10 cannot be set to unity by convention",blocks unit-rescaling shortcuts,false,false,2026-06-14T09:46:14.864543+00:00
+PSR1059_2_no_cancellation,counterterm components are absolute/no-cancellation until a signed parent relation exists,prevents hiding WEP/R10 pressure by branch cancellation,false,false,2026-06-14T09:46:14.864546+00:00
+PSR1059_3_claim_validity,"valid_for_claim may become true only when product prediction and bound are numeric, sourced, unit-matched, and projection-owned",keeps smoke rows private/nonclaim,false,false,2026-06-14T09:46:14.864548+00:00

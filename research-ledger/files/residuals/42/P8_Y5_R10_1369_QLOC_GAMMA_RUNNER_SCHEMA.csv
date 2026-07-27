@@ -1,0 +1,6 @@
+schema_id,field,required_value,unit,status,source_requirement,valid_for_claim,claim_allowed
+QG1369_0_inputs,q_loc_hat,finite dimensionless local residual amplitude after source averaging,dimensionless,MISSING_QLOC_VALUE,source path to q_loc computation and normalization,False,False
+QG1369_1_response_coefficient,C_qgamma,gamma_minus_1_q_loc = C_qgamma*q_loc_hat + C_DeltaK*DeltaK_hat + retained residual terms,dimensionless,MISSING_WEAK_FIELD_RESPONSE,"linearized solve, gauge, trace reversal, sign, and GM convention",False,False
+QG1369_2_comparator,sigma_gamma,2.3e-5 at N_sigma=1 from Cassini policy feed,dimensionless,SOURCE_BACKED_COMPARATOR,SRC1181W_0_Cassini_gamma;RPF1244_0_policy,False,False
+QG1369_3_nonimport_rule,q_R_to_q_loc_bridge,proof q_loc uses the same normalization as q_R before using gamma_minus_1_QR=-q_R_hat/2,logic,MISSING_BRIDGE,q_loc-to-q_R reduction theorem or separate q_loc projection,False,False
+QG1369_4_pass_policy,acceptance,only pass if every response coefficient is numeric/source-backed and |gamma_minus_1_q_loc| <= N_sigma*sigma_gamma,logic,POLICY_READY_INPUTS_MISSING,"all QG1369 inputs resolved, no cancellation assumptions",False,False

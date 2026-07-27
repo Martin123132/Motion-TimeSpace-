@@ -1,0 +1,6 @@
+gate_id,claim,gate_pass,reason,claim_allowed,valid_for_claim
+GATE3383_0_sources,all 3383 source paths exist and parse,true,"source register validates UOC, PPN, nonEH and source-transfer inputs",false,false
+GATE3383_1_reduced_vector,post-UOC residual vector is defined,true,RV3383 components isolate live K_MTS_IR/source-transfer terms,false,false
+GATE3383_2_zero_theorem,all post-UOC PPN residuals vanish,false,zero theorem clauses fail as current proof,false,false
+GATE3383_3_bound_ready,finite PPN bound runner is numeric-ready,false,bound formulas exist but source-backed numeric inputs are missing,false,false
+GATE3383_4_full_local_GR,full local GR/PPN pass under UOC,false,reduced residual vector still contains live components,false,false

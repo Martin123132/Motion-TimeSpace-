@@ -1,0 +1,8 @@
+audit_id,clause,current_status,risk_if_open,next_action,valid_for_claim,timestamp_utc
+KIA4017_0_packet_coherence,action packet is internally coherent,PASS_CONDITIONAL,none if treated as branch packet,test against source and PPN gates,False,2026-07-01T21:21:18+00:00
+KIA4017_1_parent_adoption,packet is adopted as the actual parent action sector,NOT_ADOPTED_FINAL,cannot claim constant G from the full corpus,future spine/action synthesis must choose or reject it explicitly,False,2026-07-01T21:21:18+00:00
+KIA4017_2_matter_same_branch,matter stress descends on same branch as EH coefficient,CONDITIONAL_4008_4015,different G in geometry/source maps,bind to source-current and PPN rows,False,2026-07-01T21:21:18+00:00
+KIA4017_3_noHom_signed,no source/range/domain Hom into K_G,CONDITIONAL_UNSIGNED,WEP/R10/range/source drift,retain no-Hom residuals if not adopted,False,2026-07-01T21:21:18+00:00
+KIA4017_4_Bianchi_exchange,no hidden Bianchi exchange is used to prove constancy,GUARD_LOCKED,fake constant-G derivation,exchange row stays live unless separately zeroed,False,2026-07-01T21:21:18+00:00
+KIA4017_5_numeric_G,absolute numerical G is predicted,REJECTED,dimensionful overclaim,keep numerical G as calibrated constant,False,2026-07-01T21:21:18+00:00
+KIA4017_6_local_GR,local GR follows from packet alone,REJECTED,PPN/local source overclaim,move to gamma/beta/source-stability target,False,2026-07-01T21:21:18+00:00

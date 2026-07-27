@@ -1,0 +1,6 @@
+leak_id,term,formula,meaning,status,valid_for_claim,timestamp_utc
+LEAK4034_0_master,F_source_leak,F_source_leak=c_T*T_H + c_EM*F_EM^2 + c_Poynting*divS_EM + c_B*B_boundary + c_Z*J_Z + c_norm*Delta_source_norm + c_nonEH*O_nonEH,all possible linear source leak channels are explicit coefficients,LEAK_VECTOR_DEFINED,False,2026-07-01T23:01:53+00:00
+LEAK4034_1_matter_trace,c_T*T_H,ordinary matter trace or Hilbert source coupling directly into F,danger channel because matter trace can be exchange-even,RETAINED_UNLESS_SOURCE_DOMAIN_EXCLUSION_SIGNED,False,2026-07-01T23:01:53+00:00
+LEAK4034_2_EM,c_EM*F_EM^2 + c_Poynting*divS_EM,nonminimal EM cross term or radiative/background Poynting flux outside M_H,ordinary bound EM stress belongs in Hilbert source; nonminimal/background flux is retained,PARTLY_CONDITIONAL_PARTLY_RETAINED,False,2026-07-01T23:01:53+00:00
+LEAK4034_3_boundary_odd,c_B*B_boundary + c_Z*J_Z,exchange-odd boundary/source class charge,quadratic exchange route works only if local odd charge is zero,RETAINED_UNTIL_BOUNDARY_ZERO,False,2026-07-01T23:01:53+00:00
+LEAK4034_4_source_norm,c_norm*Delta_source_norm + c_nonEH*O_nonEH,source-normalization or non-EH operator contribution after EH/Newton routing,feeds measured-GM/Newton/R11 if not zeroed,RETAINED_R11_SOURCE_NORMALIZATION,False,2026-07-01T23:01:53+00:00

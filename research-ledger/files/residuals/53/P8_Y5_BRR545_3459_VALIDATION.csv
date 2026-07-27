@@ -1,0 +1,11 @@
+check_id,description,passed,detail
+VAL3459_0_sources_exist,all source paths exist,True,15/15 source paths exist
+VAL3459_1_energy_identity_derived,energy identity and integrated source/boundary form are present,True,EID3459_0_operator_definition;EID3459_1_integrated_identity;EID3459_2_positive_operator_bound;EID3459_3_sharp_amplitude_envelope;EID3459_4_zero_theorem
+VAL3459_2_sharp_bound_present,sharp amplitude bound is present,True,RDB3459_0_Z_amplitude;RDB3459_1_q_loc_Hilbert_branch;RDB3459_2_second_order_stress_tail;RDB3459_3_PPN_envelope
+VAL3459_3_source_gates_explicit,"source, boundary and positivity gates are explicit",True,SZG3459_0_exchange_symmetry;SZG3459_1_source_current;SZG3459_2_boundary_flux;SZG3459_3_positive_floor
+VAL3459_4_no_claims,all theorem/bound/status rows remain nonclaim,True,claim_allowed=false across generated rows
+VAL3459_5_csv_parse,generated CSV files parse cleanly,True,P8_Y5_R2FR_3459_SOURCE_REGISTER.csv:15;P8_Y5_R2FR_3459_ENERGY_IDENTITY_DERIVATION.csv:5;P8_Y5_R2FR_3459_SOURCE_ZERO_GATE.csv:4;P8_Y5_R2FR_3459_RESIDUAL_BOUNDS.csv:4;P8_Y5_R2FR_3459_THEOREM_STATUS.csv:3;P8_Y5_R2FR_3459_DECISION_LEDGER.csv:1;P8_Y5_R2FR_3459_NEXT_TARGET.csv:1
+VAL3459_6_next_target_3460,next target is source-current owner/Y5 bound,True,3460-Y5-R2FR-source-current-owner-for-doublet-or-Y5-source-normalization-bound-under-AX1090.md
+VAL3459_7_progress_not_claim,status distinguishes derivation progress from local-GR claim,True,DERIVATION_PROGRESS_REAL;CLAIM_BLOCKED_BUT_BOUNDABLE;ATTACK_SOURCE_OWNER_NEXT
+VAL3459_8_formalization_untouched,formalization-workbench unchanged during this script,True,modified_count_since_start=0
+VAL3459_9_overall,3459 response-doublet energy identity checkpoint is internally valid,True,PASS

@@ -1,0 +1,7 @@
+force_id,required_clause,formula_or_rule,current_status,blocks,valid_for_claim,generated_utc
+FRM1068_0_observed_frame,"same observed coframe for source variation, force law, clocks, and readout",e_obs = e_source = e_force = e_readout through WEP order,CONDITIONAL_FROM_PRIOR_SPINE,frame-safe tau_WEP,false,2026-06-14T10:49:16.498632+00:00
+FRM1068_1_eta_mapping,map residual force to eta_AB,"eta_AB = readout[(a_A-a_B), calibration] in MICROSCOPE convention",BOUND_OBSERVABLE_KNOWN_MAP_NOT_DERIVED,direct product scoring,false,2026-06-14T10:49:16.498635+00:00
+FRM1068_2_common_mode_separation,common source normalization removed only by universal calibration,relative w_A/w_B cannot be absorbed into measured G or GM,GUARD_ACTIVE,fake local-GR pass,false,2026-06-14T10:49:16.498637+00:00
+FRM1068_3_units,dimensionless tau/product convention,P_WEP_relative_source_weight must be dimensionless and comparable to eta_bound,SCHEMA_ONLY,runner validity,false,2026-06-14T10:49:16.498640+00:00
+FRM1068_4_direct_variation,direct parent variation option,derive delta a_AB or eta_AB directly from parent action instead of split Delta_w*tau,MISSING_DIRECT_PRODUCT,fallback remains nonclaim,false,2026-06-14T10:49:16.498642+00:00
+FRM1068_5_verdict,observed-frame force/readout map,source residual -> a_A-a_B -> eta_AB with units and calibration,FORCE_MAP_NOT_DERIVED,tau_WEP/direct product scoring,false,2026-06-14T10:49:16.498645+00:00

@@ -1,0 +1,7 @@
+row_id,quantity,formula,meaning,status,valid_for_claim,timestamp_utc
+BLAW3967_0_unmeasured_source_potential,W,g_00=-1+2 A_source W/c^2-2 B_source W^2/c^4+O(c^-6),A_source is the first-order source amplitude and B_source is the quadratic response before observed-GM normalization,DEFINITION_ROLLED_FORWARD,False,2026-07-01T15:36:24+00:00
+BLAW3967_1_fixed_GM_normalization,U,U=A_source W,the observed Newton potential is fixed once; remaining PPN shifts cannot be absorbed into GM again,FIXED_GM_GUARD,False,2026-07-01T15:36:24+00:00
+BLAW3967_2_beta_exact,beta_eff,beta_eff=B_source/A_source^2,"the clean route to beta=1 is a quadratic closure theorem, not a fit",EXACT_KINEMATIC_LAW,False,2026-07-01T15:36:24+00:00
+BLAW3967_3_delta_beta_source,delta_beta_source,delta_beta_source=B_source/A_source^2-1,this is the source-normalization beta residual feeding the PPN vector,COEFFICIENTS_UNFILLED,False,2026-07-01T15:36:24+00:00
+BLAW3967_4_linear_guard,first_order_shift,"if A=1+a1 eps and B=1+b1 eps, beta_eff-1=(b1-2a1)eps+O(eps^2)",a linear source/coupling correction is safe only if the quadratic response tracks it with b1=2a1,NO_SIMPLE_ABSORPTION_GUARD,False,2026-07-01T15:36:24+00:00
+BLAW3967_5_kappa_v_branch,kappa_v,kappa_v=-eta_v+kappa_source_quad+kappa_PiM+kappa_boundary+kappa_readout+kappa_operator+kappa_coupling,"in the constrained v-readout branch beta-1=kappa_v/2, so coupling/source terms remain live",ALTERNATE_EXACT_LEDGER_COMPATIBLE,False,2026-07-01T15:36:24+00:00

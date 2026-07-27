@@ -1,0 +1,13 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1243_0_sources_exist,all cited local sources exist,PASS,7/7 sources exist,False,False
+VAL1243_1_needles_found,all cited local needles found,PASS,7/7 needles found,False,False
+VAL1243_2_scan_status,candidate scan completed,PASS,candidate_csv_count=0 status=NO_CANDIDATE_FILES_PRESENT,False,False
+VAL1243_3_no_accepted_without_candidates,no accepted rows exist when no candidates exist,PASS,accepted_rows=0,False,False
+VAL1243_4_source_hunt,source-hunt ledger covers missing targets,PASS,hunt_rows=4,False,False
+VAL1243_5_runner_feed_blocked,runner feed remains blocked without accepted rows,PASS,NO_FEED_ROWS_AVAILABLE,False,False
+VAL1243_6_claim_gates,claim gates remain blocked/nonclaim,PASS,claim_gate_rows=4,False,False
+VAL1243_7_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables,False,False
+VAL1243_8_next_target_1244,next target is q_R statistical policy and GM convention pack,PASS,1244-Y5-R10-QR-statistical-policy-and-GM-convention-pack.md,False,False
+VAL1243_9_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1243_SOURCE_REGISTER.csv:7; P8_Y5_R10_1243_VALIDATOR_RULES.csv:5; P8_Y5_R10_1243_CANDIDATE_SCAN.csv:1; P8_Y5_R10_1243_ACCEPTED_NONCLAIM_ROWS.csv:0; P8_Y5_R10_1243_REJECTED_ROWS.csv:0; P8_Y5_R10_1243_SOURCE_HUNT_LEDGER.csv:4; P8_Y5_R10_1243_RUNNER_FEED_UPDATE.csv:1; P8_Y5_R10_1243_DECISION_LEDGER.csv:3; P8_Y5_R10_1243_CLAIM_GATES.csv:4; P8_Y5_R10_1243_NEXT_TARGET.csv:1,False,False
+VAL1243_10_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_write_count_since_run_start=0,False,False
+VAL1243_11_overall,overall 1243 validation,PASS,"1243 builds the q_R_hat validator and, with no raw candidates present, writes the source-hunt ledger without fabricating inputs",False,False

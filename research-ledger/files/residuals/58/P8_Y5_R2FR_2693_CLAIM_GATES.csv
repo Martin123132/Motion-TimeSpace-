@@ -1,0 +1,8 @@
+gate_id,condition,current_status,source_anchor,gate_pass,valid_for_claim,claim_allowed,timestamp_utc
+CG2693_0_hypotheses,all Lovelock/EH hypotheses parent-signed,FAIL_LOVELOCK_HYPOTHESIS_PROOF_FAILED,LHP2693_7_verdict,false,false,false,2026-06-23T07:40:09.356078+00:00
+CG2693_1_sector_certificates,all extra sectors have zero/suppression certificates,FAIL_SECTOR_CERTIFICATE_SET_INCOMPLETE,SCR2693_9_verdict,false,false,false,2026-06-23T07:40:09.356081+00:00
+CG2693_2_residual_values,"residual acquisition rows have values, units, kernels and source paths",FAIL_ACQUISITION_ROWS_NONCLAIM,ACQ2693_9_total_abs,false,false,false,2026-06-23T07:40:09.356084+00:00
+CG2693_3_source_normalization,source/Gauss normalization branch closed,FAIL_PARALLEL_SOURCE_GAUSS_OPEN,2692:NEXT2692_1_parallel,false,false,false,2026-06-23T07:40:09.356087+00:00
+CG2693_4_noether,final parent Noether/Bianchi identity signed,FAIL_FINAL_NOETHER_CHAIN_UNSIGNED,LHP2693_4_diffeomorphism_noether,false,false,false,2026-06-23T07:40:09.356090+00:00
+CG2693_5_guardrails,"EH axiom, cancellation and fitted-GM shortcuts refused",PASS_GUARD_ONLY,DRY2693_5;DRY2693_6;DRY2693_7,true,false,false,2026-06-23T07:40:09.356093+00:00
+CG2693_6_verdict,local GR/Newton branch can claim pass,CLAIM_BLOCKED,CG2693_0 through CG2693_5,false,false,false,2026-06-23T07:40:09.356096+00:00

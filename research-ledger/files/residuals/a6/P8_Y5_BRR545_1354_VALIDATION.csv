@@ -1,0 +1,11 @@
+check_id,check,status,details
+VAL1354_0_sources_exist,registered source paths exist and anchors are found,PASS,SRC1354_0_1353_doc=True/True;SRC1354_1_1353_next=True/True;SRC1354_2_1353_JZ=True/True;SRC1354_3_response_contract=True/True;SRC1354_4_response_variation=True/True;SRC1354_5_1011_qbound=True/True;SRC1354_6_1012_y5_doc=True/True;SRC1354_7_1345_source_charge=True/True
+VAL1354_1_evenness_not_proved,source-functional evenness theorem is not promoted,PASS,must retain Y5/Y6 J_Z coefficient rows
+VAL1354_2_Y5Y6_coefficients_present,Y5 and Y6 JZ coefficient rows are present,PASS,Y5=8;Y6=4
+VAL1354_3_coefficients_nonclaim,all coefficient rows remain nonclaim and unscored,PASS,rows=12
+VAL1354_4_runner_rejects_all,runner rejection rows reject every coefficient,PASS,rejections=12
+VAL1354_5_claim_gates_blocked,all claim gates remain blocked,PASS,GATE1354_0_source_evenness=BLOCKED;GATE1354_1_JZ_zero=BLOCKED;GATE1354_2_response_doublet_physical=BLOCKED
+VAL1354_6_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false across generated rows
+VAL1354_7_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1354_8_next_target_1355,next target routes to Y5 source-functional pullback,PASS,1355-Y5-R10-RAB-Y5-source-functional-pullback-or-JZ-source-normalization-basis.md
+VAL1354_9_overall,overall 1354 validation,PASS,1354 blocks source-evenness claim and installs Y5/Y6 JZ coefficient debts

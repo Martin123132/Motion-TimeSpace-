@@ -1,0 +1,6 @@
+contract_id,quantity,formula,candidate_bound,derivation_status,still_needed,valid_for_claim,assumptions
+COMP3336_0_total_budget,epsilon_composite_PPN,epsilon_composite <= f_comp B_gamma,6.900000e-06,BUDGET_PARTITION_FROM_CASSINI_CANDIDATE,replace f_comp policy with full PPN vector allocation,false,
+COMP3336_1_commutator_bound,delta_comm_PPN,delta_comm <= (f_comp B_gamma - other_composite_floors)/(A_1P sigma_Dpi),6.900000e-03,EXACT_INEQUALITY_CEILING,derive or source the PPN projector/smoothing commutator norm and sigma_Dpi,false,"A_1P=1, sigma_Dpi=1.0e-03, other floors reserved as zero for first ceiling"
+COMP3336_2_contact_p2,ell_c/L_PPN for p_contact=2,ell_c/L_PPN <= (f_comp B_gamma/C_contact)^(1/p_contact),2.626785e-03,CONTACT_SCALE_CEILING,derive p_contact and C_contact from parent/local renormalization,false,"C_contact=1, p_contact=2"
+COMP3336_3_contact_p4,ell_c/L_PPN for p_contact=4,ell_c/L_PPN <= (f_comp B_gamma/C_contact)^(1/p_contact),5.125217e-02,CONTACT_SCALE_CEILING,derive p_contact and C_contact from parent/local renormalization,false,"C_contact=1, p_contact=4"
+COMP3336_4_two_particle_gap,m_gap_2pi r_PPN,C_2P exp[-2 m_gap_2pi r_PPN] <= allocated two-particle budget,m_gap_2pi r_PPN >= 0.5 ln(C_2P/B_2p),SPECTRAL_GAP_CONTRACT,source two-particle spectral density/gap or prove absence,false,gapped two-particle tail; B_2p chosen from f_comp B_gamma

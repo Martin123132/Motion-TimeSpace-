@@ -1,0 +1,5 @@
+prior_id,branch,definition,status,allowed_use,units,numeric_values,valid_for_claim
+KP645_0_zero_theorem_demoted,kappa_alpha_zero,kappa_alpha = D_v ln(alpha_EM) / D chi_X = 0,demoted_closure_contract,bookkeeping only; not an active evidence branch,per_dimensionless_chi_X_if_chi_X_is_later_defined,0,false
+KP645_1_sign_free_log_sensitivity,finite_sign_free,kappa_alpha may be positive or negative; scan log-spaced absolute normalized factors,allowed_for_smoke_only,pressure/sensitivity runner after input maps exist,UNDEFINED_UNTIL_CHI_X_OR_XHAT_UNIT_DEFINED,"-10,-1,-0.1,0.1,1,10 as normalized nonphysical probes",false
+KP645_2_near_zero_linear_sensitivity,finite_near_zero,small signed normalized factors around zero for stability checks,allowed_for_smoke_only,detect whether future maps are catastrophically sensitive near zero,UNDEFINED_UNTIL_CHI_X_OR_XHAT_UNIT_DEFINED,"-0.01,-0.001,0.001,0.01 as normalized nonphysical probes",false
+KP645_3_bound_saturating_diagnostic,finite_bound_saturating,solve |prediction(kappa_alpha)| = bound after projection maps exist,blocked,future diagnostic only,requires_bound_specific_tau_and_sensitivity_units,MISSING_PROJECTION_MAPS,false

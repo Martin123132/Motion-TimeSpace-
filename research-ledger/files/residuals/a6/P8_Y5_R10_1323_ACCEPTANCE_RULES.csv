@@ -1,0 +1,6 @@
+rule_id,rule,reject_if,current_status,valid_for_claim,claim_allowed
+AR1323_0_numeric_product,predicted product must be numeric finite yr^-1 value,MISSING_DIRECT_P_CLOCK_ALPHA;non_numeric;wrong_units,BLOCKED,False,False
+AR1323_1_provenance,"source_path, source_anchor, equation_ref, and provenance note must be present",any source/provenance field is missing,BLOCKED,False,False
+AR1323_2_readout_model,MTS clock readout kernel must match the Yb E3/E2 convention,readout model missing or cross-arena transferred,BLOCKED,False,False
+AR1323_3_bound_comparison,compare abs(predicted_product_value) <= product_bound_1sigma_yr_inv after all source gates pass,"prediction missing, source gates fail, or abs prediction exceeds selected bound",NOT_SCORED,False,False
+AR1323_4_no_balpha,standalone b_alpha inference is forbidden,row is produced by dividing clock bound by tau assumption,ENFORCED,False,False

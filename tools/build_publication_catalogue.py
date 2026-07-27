@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 import csv
 import hashlib
 import json
@@ -34,6 +35,24 @@ CATEGORIES = {
         "relative_target": "../source-intake/mts_residuals",
     },
 }
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Build the bounded public catalogues and/or Git index inventory."
+    )
+    group = parser.add_mutually_exclusive_group()
+    group.add_argument(
+        "--catalogue-only",
+        action="store_true",
+        help="Regenerate only the bounded catalogue shards.",
+    )
+    group.add_argument(
+        "--inventory-only",
+        action="store_true",
+        help="Regenerate only the staged Git-index inventory.",
+    )
+    return parser.parse_args()
 
 
 def checkpoint_sort_key(path: Path) -> tuple[int, str]:
@@ -209,8 +228,9 @@ def write_inventory() -> dict[str, int]:
 
 
 def main() -> None:
-    catalogue_summary = write_catalogue()
-    inventory_summary = write_inventory()
+    args = parse_args()
+    catalogue_summary = None if args.inventory_only else write_catalogue()
+    inventory_summary = None if args.catalogue_only else write_inventory()
     print(
         json.dumps(
             {

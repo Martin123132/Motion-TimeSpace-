@@ -1,0 +1,4 @@
+bound_id,quantity,bound,interpretation,inputs_needed,status,valid_for_claim
+SQR2275_0_wkb_amplitude,amplitude-gradient residual,epsilon_amp=max_I |partial a_I|/(|a_I k_I|),"if carrier amplitudes vary slowly relative to phase gradients, the weight-lift behaves approximately curl-safe after smoothing","carrier wavelengths/frequencies, amplitude profiles, smoothing kernel",INPUTS_MISSING,False
+SQR2275_1_combined_residual,combined exactness/smoothing residual,epsilon_total <= K2 ell_cg/L_cg + K_amp epsilon_amp,combines 2274 Hodge residual with WKB amplitude leakage,"K2, ell_cg, L_cg, K_amp, epsilon_amp",INPUTS_MISSING,False
+SQR2275_2_qR_bound,finite q_R residual,|q_R| <= Kq epsilon_total |deltaq_alg|,the local branch becomes testable once Kq and arena tolerances are sourced,"Kq, local PPN/clock/orbital/R10 tolerances, no-cancellation guard",NOT_SCORE_READY,False

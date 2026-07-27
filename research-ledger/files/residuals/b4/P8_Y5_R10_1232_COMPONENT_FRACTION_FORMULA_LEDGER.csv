@@ -1,0 +1,5 @@
+formula_id,target,formula,inputs,status,valid_for_claim,claim_allowed
+FORM1232_0_alloy_average,component fraction in material B,"F_{B,c}=sum_{elements E in B} x_{B,E} sum_i p_{E,i} F_{E,i,c}",alloy mass fractions x; isotope fractions p; isotope component fractions F,FORMULA_READY_INPUTS_MISSING,False,False
+FORM1232_1_delta_fraction,Ti/Pt differential component fraction,"DeltaF_{TiPt,c}=F_{TA6V,c}-F_{PtRh10,c}",same convention as MCON1061_0_test_pair,FORMULA_READY_INPUTS_MISSING,False,False
+FORM1232_2_delta_w_prediction,Delta_w_TiPt,"Delta_w_TiPt=sum_c DeltaF_{TiPt,c} delta w_c + DeltaK_TiPt",DeltaF rows; component priors; readout/measure residual,NONCLAIM_TEMPLATE_ONLY,False,False
+FORM1232_3_wep_product,MICROSCOPE WEP source-weight product,abs(Delta_w_TiPt * tau_WEP) <= 2.8e-15,Delta_w_TiPt; official tau_WEP; eta bound,NOT_SCOREABLE,False,False

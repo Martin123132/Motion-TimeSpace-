@@ -1,0 +1,9 @@
+row_id,field,symbol,required_value,units,status,valid_for_claim
+WBP3305_0_material_pair,test_body_pair,"A,B",material labels and composition fractions for the WEP comparison,dimensionless labels/fractions,SOURCE_REQUIRED,false
+WBP3305_1_source_body,attractor_source,E,source body composition or justified universal source approximation,dimensionless labels/fractions,SOURCE_REQUIRED,false
+WBP3305_2_scalar_delta,scalar source residual,"Delta_Xi_0[A,B]",Xi_0[A]-Xi_0[B] or bound,dimensionless,DERIVATION_OR_BOUND_REQUIRED,false
+WBP3305_3_spin2_delta,spin2 source residual,"Delta_Xi_2[A,B]",Xi_2[A]-Xi_2[B] or bound,dimensionless,DERIVATION_OR_BOUND_REQUIRED,false
+WBP3305_4_mode_strengths,finite mode strengths,"alpha0_star, alpha2_star",mode residues after Z/U normalization,dimensionless,WAITING_ON_3303_ZU_FACTORS,false
+WBP3305_5_ranges,finite mode ranges,"lambda_0, lambda_2",ranges from parent coefficients or bounds,length,WAITING_ON_PARENT_COEFFICIENTS,false
+WBP3305_6_wep_bound,Eotvos bound,"eta_bound(lambda, materials, source)","sourced WEP bound with experiment, materials, range regime, and confidence",dimensionless,SOURCE_REQUIRED,false
+WBP3305_7_acceptance_inequality,WEP acceptance,"|sum_i alpha_i_star Xi_i[E] Delta_Xi_i[A,B] (1+r/lambda_i) exp(-r/lambda_i)| <= eta_bound",all quantities numeric/sourced before scoring,dimensionless,NONCLAIM_TEMPLATE,false

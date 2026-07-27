@@ -1,0 +1,6 @@
+row_id,symbol,formula,current_value,units,observable_link,score_ready,valid_for_claim,claim_allowed,timestamp_utc
+RB3943_0_ref_charge,epsilon_ref_charge,abs(H_tau[u_hom]-H_ref[u_hom])/M_H_ref,MISSING_HOMOGENEOUS_REFERENCE_CHARGE_OR_PARENT_ZERO,dimensionless,source_mass;Newton,False,False,False,2026-07-01T12:55:54+00:00
+RB3943_1_denominator,epsilon_MHref_denominator,indicator(M_H_ref<=0 or missing) plus lower-bound uncertainty,MISSING_POSITIVE_SAME_FRAME_MHREF_OR_LOWER_BOUND,dimensionless,local_GR;Newton,False,False,False,2026-07-01T12:55:54+00:00
+RB3943_2_boundary,epsilon_boundary_reference_abs,(abs(B_zero_flux)+abs(Delta_symp))/M_H_ref,MISSING_B_ZERO_FLUX_DELTA_SYMP_MHREF,dimensionless,boundary;PPN,False,False,False,2026-07-01T12:55:54+00:00
+RB3943_3_tau_surface,epsilon_tau_surface_ref,same-tau/same-surface mismatch contribution normalized by M_H_ref,MISSING_SAME_TAU_SURFACE_LOCK_OR_VALUE,dimensionless,clock;orbital,False,False,False,2026-07-01T12:55:54+00:00
+RB3943_4_total,R_kernel_ref_anchor_bound,epsilon_ref_charge + epsilon_MHref_denominator + epsilon_boundary_reference_abs + epsilon_tau_surface_ref,MISSING_COMPONENT_VALUES,dimensionless,source_normalized_Newton;local_GR,False,False,False,2026-07-01T12:55:54+00:00

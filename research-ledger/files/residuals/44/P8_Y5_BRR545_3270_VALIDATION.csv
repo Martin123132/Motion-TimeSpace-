@@ -1,0 +1,12 @@
+check_id,check,passed,detail
+VAL3270_0_sources_exist,all cited source paths exist,true,
+VAL3270_1_sources_parse,all cited source paths parse,true,
+VAL3270_2_outputs_parse,all 3270 output CSVs parse,true,non-validation outputs parsed before validation write
+VAL3270_3_sweep_has_hits,corpus sweep found direct-vertex/coupling evidence across multiple files,true,patterns=11;files=43607
+VAL3270_4_no_valid_claim_rows,finite coefficient rows remain nonclaim,true,all finite rows carry missing theorem/value/source status
+VAL3270_5_zero_case_passes,zero no-direct-vertex smoke predicts zero/passing eta in both DD arenas,true,CONDITIONAL_ZERO_NONCLAIM
+VAL3270_6_large_alpha_fails,large alpha leak fails the DD smoke bound,true,FAILS_NUMERIC_SMOKE
+VAL3270_7_hidden_frame_refused,hidden frame/disformal candidate is refused outside DD basis,true,REFUSE_OUTSIDE_DD_BASIS
+VAL3270_8_claim_gates_false,no 3270 promotion gate allows a WEP/local-GR claim,true,all claim_allowed=false
+VAL3270_9_formalization_untouched,formalization-workbench modified-file count remains zero by this script,true,formalization_changed_count=0
+VAL3270_10_overall,3270 validation overall,true,all required checks passed

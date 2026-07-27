@@ -1,0 +1,7 @@
+gate_id,gate,status,claim_allowed,reason,timestamp_utc
+GATE3827_0_runner_executes,dry-run runner emits one result per local arena,PASS_NONCLAIM,False,6 local arena smoke rows emitted,2026-07-01T01:46:56+00:00
+GATE3827_1_no_claim_pass,no dry-run result can be interpreted as a physics pass,PASS_GUARD,False,"all results are schema, input-blocked, proof-blocked, source-row, guard, or extension modes",2026-07-01T01:46:56+00:00
+GATE3827_2_local_GR_Newton,local GR/Newton recovery claim,BLOCKED,False,R_PPN_readout_tail remains missing and is selected as 3828,2026-07-01T01:46:56+00:00
+GATE3827_3_R10,R10 alpha(lambda) claim,BLOCKED_DRY_RUN_ONLY,False,real MTS numerator and boundary/MHref rows are still absent,2026-07-01T01:46:56+00:00
+GATE3827_4_EM,Maxwell/EM stress or Poynting claim,BLOCKED_EXTENSION_NONCLAIM,False,Poynting flux/source-current boundary row is not yet parent-owned,2026-07-01T01:46:56+00:00
+GATE3827_5_next_derivation,next target prioritizes derivation over more passive ledgering,PASS_ACTIONABLE_NEXT,False,3828 targets PPN readout-tail descent or finite residual vector,2026-07-01T01:46:56+00:00

@@ -1,0 +1,7 @@
+field_id,field_name,units,required_source,validity_rule,valid_for_claim,generated_utc
+FIS2794_0_branch_id,branch_id,label,"one MTS branch supplying range, amplitude, coefficients, and readout",must be same branch for every row,False,2026-06-24T01:16:51.325780+00:00
+FIS2794_1_lambda,lambda_X_m,m,parent Z_X/M_X^2 or source-backed finite-range branch,positive numeric with source path; no fitted convenience range,False,2026-06-24T01:16:51.325795+00:00
+FIS2794_2_readout,K_MICROSCOPE_lambda,dimensionless readout factor,official or derived MICROSCOPE readout/projection model,not a unit proxy unless explicitly labelled nonclaim,False,2026-06-24T01:16:51.325809+00:00
+FIS2794_3_source_profile,Qeff_E_alpha;Qeff_E_surface;Qeff_E_mass,DD charge convention,bulk long-range theorem or finite profile integration with sourced Earth profile,must match lambda_X and composition profile,False,2026-06-24T01:16:51.325822+00:00
+FIS2794_4_coefficients,c_alpha;c_surface;c_mass_ratio;q_tail,dimensionless after parent normalization,parent action derivative or labelled phenomenological source with provenance,"no pair cancellation, no posthoc sign choice, no measured-G absorption",False,2026-06-24T01:16:51.325834+00:00
+FIS2794_5_prediction,eta_pred,dimensionless,computed from all source-backed factors using FPF2794_0,claim allowed only if abs(eta_pred) <= accepted bound and all gates are source-backed,False,2026-06-24T01:16:51.325840+00:00

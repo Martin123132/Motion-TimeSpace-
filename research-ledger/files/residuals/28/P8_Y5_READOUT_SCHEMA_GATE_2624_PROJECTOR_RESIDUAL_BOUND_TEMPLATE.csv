@@ -1,0 +1,5 @@
+residual_id,symbol,definition,units,needed_inputs,observable_links,status,valid_for_claim
+PRB2624_0_E_readout_total,E_readout_total,"E_readout_total = delta S_red[g,P_read]/delta g or equivalent readout-backreaction operator",operator_dependent,"S_red form, P_read definition, variation path, source/readout provenance","PPN, R10, WEP/source, orbital mass readout, clocks",NONCLAIM_BOUND_REQUIRED_IF_PARENT_DOMAIN_NOT_SIGNED,False
+PRB2624_1_projector_commutator,"||[nabla,P_read]||",local commutator/projection leakage norm,inverse_length_or_operator_dependent,"projector definition, local domain, derivative operator, norm","WEP, clocks, R10, source normalization",MISSING_PROJECTOR_NORM,False
+PRB2624_2_section_backreaction,E_section,Euler term induced by treating representative/readout section as physical,operator_dependent,"section map, gauge proof or variation tax","PPN preferred-frame, source frame, boundary/domain tests",MISSING_SECTION_GAUGE_PROOF_OR_BOUND,False
+PRB2624_3_claim_policy,claim_allowed,readout/projector theorem-zero is false unless parent domain certificate closes,status,PDS2624_0..6 all pass,all local arenas,NONCLAIM_LOCK,False

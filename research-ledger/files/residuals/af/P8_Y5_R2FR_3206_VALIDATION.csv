@@ -1,0 +1,10 @@
+check_id,check,pass,detail,generated_utc
+VAL3206_00_inputs_exist,all cited inputs exist,true,inputs=7,2026-06-26T19:59:18.083339+00:00
+VAL3206_01_schema_complete,"Bobs schema includes denominator, live components, Poynting, Kperp, and total",true,schema_rows=9,2026-06-26T19:59:18.083339+00:00
+VAL3206_02_template_nonclaim,candidate input template has no valid claim rows,true,template_rows=9,2026-06-26T19:59:18.083339+00:00
+VAL3206_03_refusal_active,runner refuses scoring in current corpus,true,M_H_ref positive same-frame denominator=false;all required Bobs components numeric/source-backed=false;absolute no-cancellation total=false;Bobs residual score readiness=false,2026-06-26T19:59:18.083339+00:00
+VAL3206_04_dryrun_no_score,dry run does not compute a residual score,true,runner is executable but refuses to score without source-backed denominator and component rows,2026-06-26T19:59:18.083339+00:00
+VAL3206_05_queue_prioritizes_denominator,acquisition queue starts with M_H_ref denominator,true,ACQ3206_00=M_H_ref_same_frame;ACQ3206_01=B_obs_source_measure_over_MH;ACQ3206_02=B_obs_boundary_improvement_over_MH;ACQ3206_03=B_obs_projector_commutator_over_MH,2026-06-26T19:59:18.083339+00:00
+VAL3206_06_decision_nonclaim,decision records runner built but score refused,true,3207-Y5-R2FR-MH-ref-denominator-source-row-or-Bobs-runner-remains-refused-under-AX1090,2026-06-26T19:59:18.083339+00:00
+VAL3206_07_no_claim_leak,all generated non-input rows remain valid_for_claim=false,true,"no local-GR, Newton, PPN, Bobs score, or residual claim",2026-06-26T19:59:18.083339+00:00
+VAL3206_08_csv_parse,all generated CSV files parse cleanly,true,P8_Y5_R2FR_3206_INPUTS.csv;P8_Y5_R2FR_3206_BOBS_COMPONENT_SCHEMA.csv;P8_Y5_R2FR_3206_BOBS_CANDIDATE_INPUT_TEMPLATE.csv;P8_Y5_R2FR_3206_SCORING_REFUSAL_GATE.csv;P8_Y5_R2FR_3206_DRYRUN_SCORE_TABLE.csv;P8_Y5_R2FR_3206_NEXT_ACQUISITION_QUEUE.csv;P8_Y5_R2FR_3206_DECISION.csv,2026-06-26T19:59:18.083339+00:00

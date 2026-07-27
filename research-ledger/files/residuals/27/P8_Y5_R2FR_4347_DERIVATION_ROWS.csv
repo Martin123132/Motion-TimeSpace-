@@ -1,0 +1,5 @@
+derivation_id,statement,formula,result,status,valid_for_claim
+DER4347_0_variation,"For S_RI=int sqrt(-g) Lambda_nu C_RI^nu, metric variation has constraint, multiplier-adjoint and boundary pieces.",delta_g S_RI = constraint*C_g + Lambda*delta_g C_RI + B_RI,"on C_RI=0, Lambda=0 and B_RI=0, T_RI^{mu nu}=0",DERIVED_CONDITIONAL,False
+DER4347_1_adjoint_energy,"For the fixed static collar, the homogeneous adjoint equation is killed by a positive gap.","0=<Lambda,L_RI^dagger Lambda> >= lambda_RI ||Lambda||^2",lambda_RI>0 implies Lambda=0,DERIVED_CONDITIONAL,False
+DER4347_2_exact_zero,The owner-tail score is exactly zero only if every leg of the owner-tail decomposition is zero.,"C_RI=0, Lambda=0, B_RI=0, I_RI=0 => Y_owner_a=0",local owner block is metric-null in the selected private branch,ZERO_THEOREM_DERIVED_SIGNATURE_UNSIGNED,False
+DER4347_3_fallback_bound,"If the zero signature is not signed, the residual is a componentwise absolute bound, not a cancellation.",|Y_a| <= |Pi_a^RI| C_Lambda |R_Lambda|/lambda_RI + |Pi_a^BRI||B_RI| + |Pi_a^I||I_RI|,reduced real-bound runner is now explicit,BOUND_RUNNER_READY_VALUES_MISSING,False

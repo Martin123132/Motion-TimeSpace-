@@ -1,0 +1,6 @@
+variation_id,variation_piece,required_expression,risk_if_missing,current_status,valid_for_claim,generated_utc
+VAR1130_0_product_rule,delta I_D,"delta I_D = 2 <P_coh J_D, delta(P_coh J_D)> + delta<.,.>(P_coh J_D,P_coh J_D)",hidden branch-selector stress is dropped,WRITTEN_CONTRACT_NOT_DERIVED,false,2026-06-14T21:46:01.746775+00:00
+VAR1130_1_delta_Pcoh,delta P_coh,delta(P_coh J_D) includes (delta P_coh)J_D,projector/domain homology variation leaks preferred-frame/source residuals,NOT_PARENT_DERIVED,false,2026-06-14T21:46:01.746775+00:00
+VAR1130_2_delta_JD,delta J_D,delta(P_coh J_D) includes P_coh delta J_D with J_D sourced by parent Euler/Ward/domain equations,domain current is a fitted readout object,NOT_PARENT_DERIVED,false,2026-06-14T21:46:01.746775+00:00
+VAR1130_3_delta_norm,delta inner product/norm,"delta<.,.> is zero by topological theorem or mapped to residual stress",Hodge/DeWitt metric dependence becomes hidden stress,MISSING_PARENT_NORM_VARIATION,false,2026-06-14T21:46:01.746775+00:00
+VAR1130_4_verdict,variation/stress ledger complete,VAR1130_0 through VAR1130_3 all parent-owned or retained,I_D selector cannot support local-GR reduction,VARIATION_LEDGER_NOT_CLOSED,false,2026-06-14T21:46:01.746775+00:00

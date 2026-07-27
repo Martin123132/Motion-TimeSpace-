@@ -1,0 +1,11 @@
+check_id,check,pass,detail,generated_utc
+VAL3197_0_inputs_exist,all cited input paths exist,true,all inputs resolved,2026-06-26T19:07:03.653767+00:00
+VAL3197_1_theorem_present,"domain stiffness theorem records pullback formula, positivity condition, and failure modes",true,K0=J^T G_N J,2026-06-26T19:07:03.653767+00:00
+VAL3197_2_model_scan,model scan contains healthy and rejected domain-stiffness cases,true,healthy=4; rejected=3,2026-06-26T19:07:03.653767+00:00
+VAL3197_3_healthy_positive,"healthy models have full rank, positive normal metric, and positive effective stiffness",true,rank/metric/Schur gates pass for healthy rows,2026-06-26T19:07:03.653767+00:00
+VAL3197_4_rejected_failure_modes,"rank, metric, and overcancel failure modes are all represented",true,all no-go guards present,2026-06-26T19:07:03.653767+00:00
+VAL3197_5_multiplier_recovery,domain stiffness compatibility rows recover the 3194 multipliers,true,compatibility_rows=24; expected_rows=24; max_recovery=8.881784197001252e-16,2026-06-26T19:07:03.653767+00:00
+VAL3197_6_parent_gates_open,parent domain gates remain explicit blockers,true,open_gates=6,2026-06-26T19:07:03.653767+00:00
+VAL3197_7_next_target_selected,decision selects parent-domain-map extraction or closure demotion,true,next target is 3198,2026-06-26T19:07:03.653767+00:00
+VAL3197_8_no_claim_leak,no generated row sets valid_for_claim=true,true,all rows are private/nonclaim,2026-06-26T19:07:03.653767+00:00
+VAL3197_9_formalization_workbench_untouched,formalization-workbench files modified during this run remain zero,true,formalization_recent_file_count=0,2026-06-26T19:07:03.653767+00:00

@@ -1,0 +1,9 @@
+column_id,column_name,definition,normalization,source_status,valid_for_claim
+DM2781_0_poly0,poly0,constant offset column,always present,surrogate_design_matrix,False
+DM2781_1_poly1,poly1,centered linear drift over segment preview,"x in [-1,1] from preview row order",surrogate_design_matrix,False
+DM2781_2_poly2,poly2,centered quadratic drift over segment preview,x^2,surrogate_design_matrix,False
+DM2781_3_poly3,poly3,centered cubic drift over segment preview,x^3,surrogate_design_matrix,False
+DM2781_4_gx_shape,gx_shape,normalized surrogate gx column,gx_surrogate_m_s2/max_abs_gx,SURROGATE_ONLY,False
+DM2781_5_gz_shape,gz_shape,normalized surrogate gz column,gz_surrogate_m_s2/max_abs_gz,SURROGATE_ONLY,False
+DM2781_6_Sxx_shape,Sxx_shape,normalized surrogate Sxx column,Sxx_surrogate_s2/max_abs_Sxx,SURROGATE_ONLY,False
+DM2781_7_Sxz_shape,Sxz_shape,normalized surrogate Sxz column,Sxz_surrogate_s2/max_abs_Sxz,SURROGATE_ONLY,False

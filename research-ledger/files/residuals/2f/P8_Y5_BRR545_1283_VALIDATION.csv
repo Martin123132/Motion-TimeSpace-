@@ -1,0 +1,12 @@
+check_id,check,status,details
+VAL1283_0_sources_exist,all cited local sources exist,PASS,13/13 sources exist
+VAL1283_1_needles_found,all cited local needles found,PASS,13/13 needles found
+VAL1283_2_Ploc_boundable_not_zero,P_loc owner route is sharpened but not claimed zero,PASS,POD1283_5_verdict=PLOC_OWNER_NOT_CLOSED_BUT_BOUNDABLE
+VAL1283_3_profile_template_invalid,q_loc live profile remains invalid,PASS,QPF1283_6_verdict=TEMPLATE_REMAINS_INVALID
+VAL1283_4_theorem_zero_false,theorem-zero switch remains false,PASS,TZ1283_5_verdict=THEOREM_ZERO_FALSE
+VAL1283_5_live_schema_blocks_claim,minimum live q_loc schema blocks claim until all fields are sourced,PASS,live_schema_rows=6
+VAL1283_6_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1283_SOURCE_REGISTER.csv:13; P8_Y5_R10_1283_QLOC_PROFILE_SOURCE_FILL_AUDIT.csv:7; P8_Y5_R10_1283_PLOC_PROJECTOR_OWNER_DERIVATION.csv:6; P8_Y5_R10_1283_THEOREM_ZERO_SWITCH_AUDIT.csv:6; P8_Y5_R10_1283_MINIMUM_LIVE_PROFILE_SCHEMA.csv:6; P8_Y5_R10_1283_DECISION_LEDGER.csv:3; P8_Y5_R10_1283_NEXT_TARGET.csv:1
+VAL1283_7_next_target_1284,next target routes to Gamma_eff/Khat owner extraction or DeltaK residual ledger,PASS,1284-Y5-R10-RAB-Gamma-eff-Khat-owner-extraction-or-DeltaK-residual-ledger.md
+VAL1283_8_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1283_9_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1283_10_overall,overall 1283 validation,PASS,"1283 derives the projector-zero condition/bound route, keeps q_loc profile invalid, and routes to Gamma_eff/Khat/DeltaK owner extraction next"

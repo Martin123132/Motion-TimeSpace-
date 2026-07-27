@@ -1,0 +1,15 @@
+check_id,check,passed,detail
+VAL3396_0_sources_exist_parse,all cited 3396 source paths exist and parse,true,
+VAL3396_1_outputs_parse,all generated CSV outputs parse cleanly,true,parsed=11 expected=11
+VAL3396_2_integration_audit,integration audit covers required term patterns,true,rows=72
+VAL3396_3_term_coverage,term coverage separates core present from missing/post-checkpoint terms,true,
+VAL3396_4_unit_convention,"unit convention lock ledger covers kappa, mixed RHS notation and G policy",true,
+VAL3396_5_adoption_packet,adoption packet stages parent action/source/boundary/no-backfill text,true,
+VAL3396_6_demotion_ledger,demotion ledger blocks current claim without forced closure-only demotion,true,
+VAL3396_7_integration_gate,integration gate passes core compatibility but blocks source-normalization claim,true,
+VAL3396_8_runner,"runner records audit, compatibility, missing terms, packet and firewall",true,
+VAL3396_9_gates,"gates pass compatibility but block parent adoption, source normalization and local GR",true,
+VAL3396_10_no_overclaim_flags,all generated rows with valid_for_claim remain false,true,
+VAL3396_11_write_scope_outside_formalization,no 3396 files were written under formalization-workbench,true,hits=0
+VAL3396_12_next_target,next target moves to full PPN vector readiness,true,
+VAL3396_13_overall,3396 validation overall,true,all required checks passed

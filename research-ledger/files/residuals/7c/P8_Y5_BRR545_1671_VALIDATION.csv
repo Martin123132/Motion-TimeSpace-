@@ -1,0 +1,19 @@
+check_id,result,detail,valid_for_mts_claim,claim_allowed
+VAL1671_0_sources_exist,PASS,all cited 1671 source paths exist and needles are present,False,False
+VAL1671_1_z_lock_failed,PASS,Z basis/component physical lock is not promoted,False,False
+VAL1671_2_dqz_zero_failed,PASS,Dq_Z zero theorem remains unsigned,False,False
+VAL1671_3_constraint_failed,PASS,constraint-elimination route remains not derived,False,False
+VAL1671_4_cobs_factor_rows,PASS,C_Obs_e factor rows are staged,False,False
+VAL1671_5_dqz_factor_rows,PASS,Dq_Z factor rows are staged,False,False
+VAL1671_6_queue_routes,PASS,product-factor queue has theorem-kill and finite fallback routes,False,False
+VAL1671_7_decision_next,PASS,decision selects physical lock or first product factor,False,False
+VAL1671_8_claim_gate_safe,PASS,all claim gates keep local claims false,False,False
+VAL1671_9_no_mts_claim_flags,PASS,all 1671 generated rows keep claim/no-score flags false,False,False
+VAL1671_10_missing_not_ready,PASS,"no row containing MISSING_* is marked source-backed, claim-ready, or score-ready",False,False
+VAL1671_11_next_target_selected,PASS,next target selects Z physical-lock map or first Dq_Z factor row,False,False
+VAL1671_12_csv_parse,PASS,all generated 1671 CSVs parse,False,False
+VAL1671_13_branch_copies,PASS,branch/quarantine copies exist,False,False
+VAL1671_14_queue_copies,PASS,acquisition queue nonclaim copies exist,False,False
+VAL1671_15_pycache_absent,PASS,scripts __pycache__ absent,False,False
+VAL1671_16_formalization_untouched,PASS,no 1671 outputs found under formalization-workbench,False,False
+VAL1671_OVERALL,PASS,1671 Dq_Z basis/kernel or C_Obs operator-norm input validation,False,False

@@ -1,0 +1,18 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1218_0_sources_exist,all cited local sources exist,PASS,22/22 sources exist,False,False
+VAL1218_1_needles_found,all cited source needles found,PASS,22/22 needles found,False,False
+VAL1218_2_alpha_owner_blocked,alpha operator owner remains unproved,PASS,OWNER1218_0_alpha_EM_F2_image=NOT_DERIVED,False,False
+VAL1218_3_surface_owner_blocked,surface operator owner remains unproved,PASS,OWNER1218_3_surface_binding_superselection=CONDITIONAL_NOT_PARENT_DERIVED,False,False
+VAL1218_4_combined_not_derived,combined operator owner not overclaimed,PASS,OWNER1218_6_verdict=PARENT_ALPHA_SURFACE_OPERATOR_OWNER_NOT_DERIVED,False,False
+VAL1218_5_counterexamples_retained,live counterexamples are retained,PASS,CX1218_0_lambda_A; CX1218_1_hidden_F2; CX1218_2_binding_coefficient; CX1218_3_readout_radiative,False,False
+VAL1218_6_no_prior_acquired,no coefficient prior is falsely acquired,PASS,all prior-source rows current_status=NOT_ACQUIRED,False,False
+VAL1218_7_thresholds_positive,carried thresholds are positive,PASS,TCF1218_0_alpha=8.320244933243531978e-10; TCF1218_1_surface=6.987501646143863402e-11; TCF1218_2_common_abs=6.446142229433907306e-11,False,False
+VAL1218_8_threshold_not_promoted,thresholds remain nonclaim,PASS,thresholds are scale discipline only,False,False
+VAL1218_9_missing_rows_nonclaim,no MISSING row is valid for claim,PASS,missing source/prior/feed values are quarantined,False,False
+VAL1218_10_runner_refuses,runner stub refuses missing full product,PASS,valid_operator_owner_rows=0 and valid_prediction_rows=0,False,False
+VAL1218_11_claim_locks_blocked,claim locks remain blocked,PASS,"alpha, surface, tail, prior, and product gates blocked",False,False
+VAL1218_12_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout,False,False
+VAL1218_13_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1218_SOURCE_REGISTER.csv:22; P8_Y5_R10_1218_ALPHA_SURFACE_OPERATOR_OWNER_AUDIT.csv:7; P8_Y5_R10_1218_CONDITIONAL_ZERO_THEOREM_PACK.csv:4; P8_Y5_R10_1218_COEFFICIENT_PRIOR_SOURCE_LEDGER.csv:6; P8_Y5_R10_1218_COUNTEREXAMPLE_RETENTION_LEDGER.csv:4; P8_Y5_R10_1218_THRESHOLD_CARRY_FORWARD_NONCLAIM.csv:3; P8_Y5_R10_1218_COUPLING_FEED_UPDATE.csv:3; P8_Y5_R10_1218_PRODUCT_RUNNER_STUB.csv:1; P8_Y5_R10_1218_DECISION_LEDGER.csv:3; P8_Y5_R10_1218_CLAIM_GATES.csv:6; P8_Y5_R10_1218_NEXT_TARGET.csv:1,False,False
+VAL1218_14_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_after_run_start_count=0,False,False
+VAL1218_15_next_target,next target is staged,PASS,1219-Y5-R10-typed-visible-coefficient-functor-or-hidden-scalar-counterexample-lock.md,False,False
+VAL1218_16_overall,overall 1218 validation,PASS,"1218 alpha/surface operator-owner pack is reproducible, nonclaim, and claim-locked",False,False

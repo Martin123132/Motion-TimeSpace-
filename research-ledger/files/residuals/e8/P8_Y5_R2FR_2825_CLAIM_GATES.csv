@@ -1,0 +1,9 @@
+claim_gate_id,claim,gate_passed,status,reason,score_ready,valid_prediction_row,valid_for_claim,claim_allowed,generated_utc
+CG2825_0_sources,source anchors present,True,PASS_NONCLAIM,imported ledgers are reproducible,False,False,False,False,2026-06-24T04:31:40.107296+00:00
+CG2825_1_schema,control input schema parses,True,PASS_NONCLAIM,all schema rows cite an existing source anchor,False,False,False,False,2026-06-24T04:31:40.107300+00:00
+CG2825_2_placeholders,all placeholder rows are nonclaim,True,PASS_NONCLAIM,all values are missing tokens with no numeric/source-backed status,False,False,False,False,2026-06-24T04:31:40.107303+00:00
+CG2825_3_formulas,control formulas parse,True,PASS_NONCLAIM,formula rows are bookkeeping only and cannot emit predictions,False,False,False,False,2026-06-24T04:31:40.107306+00:00
+CG2825_4_dryrun,dry-run refusal works,True,PASS_NONCLAIM,numeric prediction is refused until source inputs exist,False,False,False,False,2026-06-24T04:31:40.107308+00:00
+CG2825_5_promotion,promotion remains blocked,True,PASS_NONCLAIM,promotion needs source-backed or theorem-zero carrier/source/response/local inputs,False,False,False,False,2026-06-24T04:31:40.107311+00:00
+CG2825_6_GR_Newton,local GR/Newton claim allowed,False,BLOCKED,"q=0 selector, Newton source normalization, and Dq[v_m] remain missing",False,False,False,False,2026-06-24T04:31:40.107314+00:00
+CG2825_7_PPN_R10,PPN/R10/clock/orbital claim allowed,False,BLOCKED,arena projection and local source vector are not source-backed,False,False,False,False,2026-06-24T04:31:40.107317+00:00

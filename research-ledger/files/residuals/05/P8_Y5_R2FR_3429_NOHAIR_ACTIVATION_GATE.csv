@@ -1,0 +1,8 @@
+gate_id,needed_input,required_condition,current_status,if_fail,valid_for_claim
+NAG3429_0_field_operator,field-specific self-adjoint operator L_X,L_X >= lambda_X I after gauge/constraint quotient,MISSING_FIELD_SPECIFIC_OPERATOR,tachyon/zero-mode/indefinite stress residual,False
+NAG3429_1_source_zero,source current J_X,J_X=0 in compact local exterior and no source charge from matter/readout,OPEN_Y5_Y6_SOURCE_CURRENT,Yukawa/fifth-force or extra monopole source,False
+NAG3429_2_boundary_zero,boundary work B_X,B_X=0 from 3427 fixed-reference/no-flux branch,CONDITIONAL_ON_3427_AND_CHANNEL,boundary hair or compact linked charge,False
+NAG3429_3_projector_zero,projector/domain residual R_X,R_X=0 or source-backed bound,OPEN_HIDDEN_PROJECTOR,hidden/domain/projector monopole residual,False
+NAG3429_4_nonlinear_control,small-field Lipschitz bound for N_X,Lip(N_X)<=lambda_X/2 in local branch radius,MISSING_NONLINEAR_RADIUS,nonzero branch or instability possible,False
+NAG3429_5_charge_map,map from X norm to Delta_extra_mass,"C_HX,C_TX and M_H_ref normalization are known",MISSING_RESPONSE_CONSTANTS,no observable bound can be scored,False
+NAG3429_6_verdict,all nohair premises,NAG3429_0 through NAG3429_5 pass,NOHAIR_NOT_ACTIVATED,use DeltaExtra norm-bound branch,False

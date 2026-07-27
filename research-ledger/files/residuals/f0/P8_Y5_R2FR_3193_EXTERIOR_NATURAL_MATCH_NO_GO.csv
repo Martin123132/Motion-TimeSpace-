@@ -1,0 +1,7 @@
+proof_id,step,formula,implication,status,valid_for_claim,generated_utc
+NG3193_0_exterior_has_zero_u,"For exterior F=x^-3, D2[F]=0 because p=-3 is a normal zero of D2.",u_ext=0 and u_ext'=0,Exterior natural momenta vanish.,PROVEN,false,2026-06-26T18:20:08.951435+00:00
+NG3193_1_transition_u,"For exact interior EL transition F=A+B*x^2+C/x+D/x^3, only A and B contribute to D2.",u_tr=6B*x^4+(6/5)A*x^2,The exterior natural join at x=b depends only on A and B.,PROVEN,false,2026-06-26T18:20:08.951435+00:00
+NG3193_2_exterior_Pi1_zero,Continuity of Pi_1 at exterior join requires u_tr(b)=0.,6B*b^4+(6/5)A*b^2=0,A=-5B*b^2.,PROVEN,false,2026-06-26T18:20:08.951435+00:00
+NG3193_3_exterior_Pi0_zero,"With u_tr(b)=0, continuity of Pi_0 requires u_tr'(b)=0.",24B*b^3+(12/5)A*b=0,"Substituting A=-5B*b^2 gives 12B*b^3=0, so B=0 and A=0.",PROVEN,false,2026-06-26T18:20:08.951435+00:00
+NG3193_4_transition_collapses,"If A=B=0, the transition is F=C/x+D/x^3. Matching exterior F and Fprime at b forces C=0 and D=1.",F_tr=x^-3,The transition is identical to the exterior mode.,PROVEN,false,2026-06-26T18:20:08.951435+00:00
+NG3193_5_core_incompatibility,The exterior-only transition cannot also match the finite core F=x^2 and Fprime=2x at a=1-w for any finite transition width.,x^-3 != x^2 and -3x^-4 != 2x at the same positive x,Pure natural matching of core -> exact EL transition -> exterior is impossible for this toy functional.,NO_GO_FOR_PURE_NATURAL_INTERFACE_MATCHING,false,2026-06-26T18:20:08.951435+00:00

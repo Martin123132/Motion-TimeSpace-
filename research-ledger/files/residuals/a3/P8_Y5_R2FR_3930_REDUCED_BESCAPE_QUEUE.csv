@@ -1,0 +1,5 @@
+row_id,component,before,after,status,valid_for_claim,timestamp_utc
+RBE3930_0_removed_boundary,boundary/harmonic,B_boundary_harmonic := |P00_boundary| + |B_harmonic_boundary| + |Phi_B|/M_H_ref + |tau_wall_TF|/M_H_ref,"P00_boundary=0, B_harmonic_boundary=0, Phi_B=0, tau_wall_TF=0",REMOVED_IN_PRIVATE_LOCAL_ISOLATED_BRANCH,False,2026-07-01T11:38:02+00:00
+RBE3930_1_reduced_multipole,A_multi,A_multi_PD0 <= G_ext*(|P00_boundary|+|P00_history|+|P00_nonlocal|)+B_harmonic_boundary,A_multi_BPD0 <= G_ext*(|P00_history|+|P00_nonlocal|),REDUCED_QUEUE_READY,False,2026-07-01T11:38:02+00:00
+RBE3930_2_reduced_escape,B_escape,|Delta_sq|/(1+xi_1)^2 + |epsilon_r| + A_multi_PD0 + B_deriv,|Delta_sq|/(1+xi_1)^2 + |epsilon_r| + A_multi_BPD0 + B_deriv,PROJECTOR_DOMAIN_BOUNDARY_REMOVED_HISTORY_DERIVATIVE_REMAIN,False,2026-07-01T11:38:02+00:00
+RBE3930_3_next_priority,next obstruction,boundary/harmonic multipoles,"history/nonlocal tails, then derivative hair and Delta_sq/epsilon_r",NEXT_PRIORITY_SELECTED,False,2026-07-01T11:38:02+00:00

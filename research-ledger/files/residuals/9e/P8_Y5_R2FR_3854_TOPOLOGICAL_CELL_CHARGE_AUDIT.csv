@@ -1,0 +1,5 @@
+audit_id,route,test,result,status,valid_for_claim,timestamp_utc
+TCA3854_0_closed_two_form,closed radial two-form,d Omega_tr=0 in the static t-r sector,closedness is automatic/too weak; a closed top-degree two-form may have arbitrary density T sqrt(S),REJECTED_TOO_WEAK,False,2026-07-01T04:24:06+00:00
+TCA3854_1_single_global_charge,global cell charge,int_D(Omega_tr-Omega_ref)=0 on one selected domain,fixes only an average over D; local density and therefore R_AB hair can remain,REJECTED_AVERAGE_NOT_POINTWISE,False,2026-07-01T04:24:06+00:00
+TCA3854_2_all_subdomain_charge,all-subdomain topological/cell charge,Q_cell[D]=int_D (Omega_tr-Omega_ref)=0 for every local radial cell D,"by the fundamental lemma, the density vanishes pointwise: Omega_tr=Omega_ref and R_AB=0",PROVES_CELL_LOCK_IF_PARENT_SIGNED_BUT_EQUIVALENT_TO_CONSTRAINT,False,2026-07-01T04:24:06+00:00
+TCA3854_3_quantized_charge,integer/topological quantization,assign an integer cell charge to the exterior branch,"quantization fixes a global sector label, not the local continuous density, unless all local cells are constrained",REJECTED_FOR_LOCAL_LOCK_WITHOUT_ALL_CELL_RULE,False,2026-07-01T04:24:06+00:00

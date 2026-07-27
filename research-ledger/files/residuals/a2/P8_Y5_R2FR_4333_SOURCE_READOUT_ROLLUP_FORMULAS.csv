@@ -1,0 +1,8 @@
+formula_id,name,formula,status
+F4333_0_reduced_geometry,4331 reduced geometry core,epsilon_geom_core_after_projection <= C_EMopen epsilon_EM_open_boundary + C_coeff_open epsilon_coeff_open + C_proj epsilon_projection_open + tail_guard_sum,IMPORTED
+F4333_1_Xi_reduced_source_readout,4332 reduced source-readout,epsilon_source_readout <= (L_T L_mg + L_g) epsilon_geom_core_after_projection + Xi_open,IMPORTED
+F4333_2_standard_geometry_zero,standard geometry zero condition,epsilon_EM_open_boundary=epsilon_coeff_open=epsilon_projection_open=tail_guard_sum=0 => epsilon_geom_core_after_projection=0,DERIVED_BRANCH_CONTRACT
+F4333_3_standard_source_readout_zero,standard source-readout closure,Xi_src_hidden=0 and epsilon_geom_core_after_projection=0 => epsilon_source_readout=0,DERIVED_BRANCH_CONTRACT
+F4333_4_open_tail_envelope,open branch source-readout envelope,epsilon_source_readout_open <= (L_T L_mg + L_g)(C_EMopen epsilon_EM_open_boundary + C_coeff_open epsilon_coeff_open + C_proj epsilon_projection_open + tail_guard_sum) + Xi_open,TEST_PACK_INPUT
+F4333_5_local_arena_projection,arena residual projection contract,R_arena <= Pi_arena^Xi Xi_open + Pi_arena^EM epsilon_EM_open_boundary + Pi_arena^coeff epsilon_coeff_open + Pi_arena^proj epsilon_projection_open + Pi_arena^guard tail_guard_sum + Pi_arena^tau epsilon_tau_open + Pi_arena^domain epsilon_boundary_projector_open,SOURCE_MATRIX_REQUIRED
+F4333_6_claim_gate,local claim gate,"local claim requires all standard-zero clauses signed, all open tails zero or source-bounded, and all Pi_arena transfer constants fixed before scoring",CLAIM_BLOCKED

@@ -1,0 +1,10 @@
+schema_id,fields,requirement,purpose,field_ready,control_only,score_ready,valid_prediction_row,valid_for_claim,claim_allowed,generated_utc
+SCHEMA2868_0_identity,row_id;branch_id;arena_id,nonempty strings,identifies one branch and test arena,False,True,False,False,False,False,2026-06-24T14:07:33.343803+00:00
+SCHEMA2868_1_Q_CAB,Q_CAB_value;Q_CAB_units;Q_CAB_source_path;Q_CAB_equation_anchor,finite numeric/theorem-zero with source,target-map numerator leg,False,True,False,False,False,False,2026-06-24T14:07:33.343807+00:00
+SCHEMA2868_2_q_R_eff,q_R_eff_value;q_R_eff_units;q_R_eff_source_path;q_R_eff_equation_anchor;ell_R_value,finite numeric/theorem-zero with source,R-sector numerator leg,False,True,False,False,False,False,2026-06-24T14:07:33.343811+00:00
+SCHEMA2868_3_sigma,sigma_R_source_sign;sign_convention;sigma_source_path;sigma_equation_anchor,signed source convention only,couples q_R_eff to Q_CAB,False,True,False,False,False,False,2026-06-24T14:07:33.343814+00:00
+SCHEMA2868_4_green,common_green_convention;operator_pair;radial_4pi_convention,no MISSING markers,prevents sign/radial mismatch,False,True,False,False,False,False,2026-06-24T14:07:33.343818+00:00
+SCHEMA2868_5_boundary_tail,boundary_policy;tail_bound;tail_source_path,zero/exact/included/finite bound,prevents hidden homogeneous modes,False,True,False,False,False,False,2026-06-24T14:07:33.343821+00:00
+SCHEMA2868_6_GM,GM_value;GM_units;GM_source_path;GM_readout_convention,measured same-frame source denominator,normalizes PPN/local residuals,False,True,False,False,False,False,2026-06-24T14:07:33.343825+00:00
+SCHEMA2868_7_full_vector,gamma;beta;alpha_i;xi;zeta_i;clock;orbital;q_loc;endpoint,finite/theorem-zero vector,prevents gamma-only local-GR claim,False,True,False,False,False,False,2026-06-24T14:07:33.343828+00:00
+SCHEMA2868_8_claim_flags,control_only;score_ready;valid_prediction_row;valid_for_claim;claim_allowed,all false until every row passes,runner safety,False,True,False,False,False,False,2026-06-24T14:07:33.343832+00:00

@@ -1,0 +1,7 @@
+gate_id,gate,current_result,promotes_if,valid_for_claim
+PG3417_0_projection_split,q_loc scalar/vector/Hodge lane split is explicit,PASS_ROUTING,not a claim gate,False
+PG3417_1_scalar_beta,q_loc scalar U2 beta lane is score-ready,FAIL_U2_NORMALIZATION_UNSIGNED,"W_q_beta, f_beta and readout/source normalization are parent-signed",False
+PG3417_2_alpha_vector,q_loc preferred-frame alpha-vector lane is safe,FAIL_ALPHA3_PRODUCT_PRESSURE,f_qV=0 by theorem or |W_q_alpha3 f_qV|<=5.38e-15 with sourced rows,False
+PG3417_3_Ward_zero,q_loc Ward-zero rescue closes,BLOCKED_SYMBOL_EULER_BOUNDARY,"metric-response symbol match, Helmholtz/Euler and boundary/projector gates pass",False
+PG3417_4_retained_bounds,retained beta/stress/nonEH bound pack is score-ready,FAIL_VALUES_MISSING,all retained lanes have source-backed numeric values or theorem-zeroes,False
+PG3417_5_local_GR,local GR/Newton/PPN branch is derived,BLOCKED,PG3417_1 through PG3417_4 and selector/source/EM stress gates pass,False

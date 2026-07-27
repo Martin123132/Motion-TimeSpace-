@@ -1,0 +1,6 @@
+gate_id,gate,statement,pass_effect,current_status,fallback,claim_allowed
+CE3543_0_parent_generate_domain,ParentGenerate coefficient domain,"Coeff_active_source may be generated only from q(Phi), theta_rep, and universal constants.",species/source coefficients w_A cannot be formed,NOT_DERIVED,use first species-source coefficient inequality,False
+CE3543_1_noHom_species,no-Hom from SpeciesLabel to active-source coefficient,"Hom_parent(SpeciesLabel,Coeff_active_source)=empty.",source-only Ti/Pt relative weights are untypeable,EXACT_CONDITIONAL_UNSIGNED,bound epsilon_species_Ti-epsilon_species_Pt,False
+CE3543_2_noHiddenMarker,no-Hom from hidden marker to active-source coefficient,"Hom_parent(HiddenMarker,Coeff_active_source)=empty.",marker/readout source charge cannot re-enter after variation,EXACT_CONDITIONAL_UNSIGNED,include hidden marker in absolute WEP envelope,False
+CE3543_3_action_scale_owner,single action-density line,One parent action scale/measure/Jacobian covers ordinary matter before Hilbert variation.,relative source weights cannot hide as action-normalization choices,UNSIGNED,retain delta_w_species row,False
+CE3543_4_countermodel,surviving weighted-action countermodel,S_matter=sum_A w_A S_A remains legal unless CE3543_0 through CE3543_3 pass.,none; this is the obstruction,COUNTERMODEL_RETAINED,score species/source coefficient,False

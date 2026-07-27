@@ -1,0 +1,6 @@
+checkpoint,bound_id,formula,meaning,status,claim_allowed,valid_for_claim,timestamp_utc
+4662,ARB4662_0_before,|A_mem| <= [exp(R/lambda_mem) int_body(|B_mem_eff||R_obs|+|C_mem^final_live||T|+|J_mem_live|)dV + |Q_boundary_mem|]/(4*pi Z_min),4657/4600 Green-function envelope,BOUND_IMPORTED_VALUES_MISSING,False,False,2026-07-07T15:57:31.687788+00:00
+4662,ARB4662_1_Cmem_rebased,|C_mem^final_live||T| <= (|C_mem^LHRS_live|+|C_mem^boundary|+|C_mem^nonHilbert|)|T|,first standard/weight block no longer contributes on fixed private branch,TRACE_TERM_REDUCED,False,False,2026-07-07T15:57:31.687788+00:00
+4662,ARB4662_2_LHRS_expanded,|C_mem^LHRS_live| <= |C_mem^label|+|C_mem^Hodge|+|C_mem^support|+|C_mem^readout|,LHRS split is the next actual Cmem work surface,LHRS_EXPANDED,False,False,2026-07-07T15:57:31.687788+00:00
+4662,ARB4662_3_exact_zero_condition,C_mem^LHRS_live=C_mem^boundary=C_mem^nonHilbert=0 => C_mem^final_live=0,componentwise same-branch zero condition after first-block closure,CONDITIONAL_ZERO_ROUTE_REDUCED,False,False,2026-07-07T15:57:31.687788+00:00
+4662,ARB4662_4_live_branch,A_mem trace-source term remains live through LHRS/boundary/nonHilbert rows,no local-GR/R10/PPN pass until those rows are zero or source-backed,FAIL_CLOSED_NONCLAIM,False,False,2026-07-07T15:57:31.687788+00:00

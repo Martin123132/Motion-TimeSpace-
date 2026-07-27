@@ -1,0 +1,20 @@
+check_id,check,status,detail,timestamp_utc
+VAL3845_0_sources,all cited local source paths exist and needles are found,PASS,12/12 sources resolved,2026-07-01T03:34:01+00:00
+VAL3845_1_action_candidate,visible action candidate is explicit,PASS,action formula present,2026-07-01T03:34:01+00:00
+VAL3845_2_metric_bridge,MTS-to-visible-metric bridge schema is explicit,PASS,metric bridge formula present,2026-07-01T03:34:01+00:00
+VAL3845_3_not_adopted,candidate is not adopted as a claim,PASS,candidate/adoption gates block claim,2026-07-01T03:34:01+00:00
+VAL3845_4_eh2_implication,EH2 conditional implication is present,PASS,EH2 implication rows present,2026-07-01T03:34:01+00:00
+VAL3845_5_nonclaim,all 3845 rows remain nonclaim,PASS,valid_for_claim/claim_allowed false throughout,2026-07-01T03:34:01+00:00
+VAL3845_6_next_bridge,next target attacks metric bridge,PASS,3846 bridge target visible,2026-07-01T03:34:01+00:00
+VAL3845_7_parse_sources,sources CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3845_SOURCE_REGISTER.csv rows=12,2026-07-01T03:34:01+00:00
+VAL3845_7_parse_metric_bridge,metric_bridge CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3845_METRIC_BRIDGE_CANDIDATE.csv rows=4,2026-07-01T03:34:01+00:00
+VAL3845_7_parse_action_candidate,action_candidate CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3845_VISIBLE_ACTION_CANDIDATE.csv rows=3,2026-07-01T03:34:01+00:00
+VAL3845_7_parse_clause_test,clause_test CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3845_LOVELOCK_CLAUSE_TEST.csv rows=7,2026-07-01T03:34:01+00:00
+VAL3845_7_parse_eh2_implication,eh2_implication CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3845_EH2_IMPLICATION_UPDATE.csv rows=3,2026-07-01T03:34:01+00:00
+VAL3845_7_parse_gates,gates CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3845_CLAIM_GATES.csv rows=5,2026-07-01T03:34:01+00:00
+VAL3845_7_parse_decisions,decisions CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3845_DECISION_ROWS.csv rows=3,2026-07-01T03:34:01+00:00
+VAL3845_7_parse_next,next CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3845_NEXT_TARGET.csv rows=1,2026-07-01T03:34:01+00:00
+VAL3845_7_parse_status,status CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3845_STATUS.csv rows=1,2026-07-01T03:34:01+00:00
+VAL3845_8_doc,markdown checkpoint document exists,PASS,3845-Y5-R2FR-visible-metric-parent-action-candidate-from-MTS-or-Lovelock-failure.md,2026-07-01T03:34:01+00:00
+VAL3845_9_formalization_clean,formalization-workbench has no 3845 files,PASS,no 3845 file hits under formalization-workbench,2026-07-01T03:34:01+00:00
+VAL3845_10_pycache_removed,scripts __pycache__ removed,PASS,no __pycache__ directories,2026-07-01T03:34:01+00:00

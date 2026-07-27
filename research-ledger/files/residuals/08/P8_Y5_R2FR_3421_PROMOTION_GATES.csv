@@ -1,0 +1,8 @@
+gate_id,gate,current_result,promotes_if,valid_for_claim
+PG3421_0_fixed_point_theorem,Euler/coercive fixed-point theorem is mathematically written,PASS_CONDITIONAL_THEOREM,not a claim gate alone,False
+PG3421_1_Z_basis_lock,Z=0 equals physical q_loc/PPN/Y5/Y6/source/stress zero,BLOCKED_COMPONENT_LOCK_NOT_CLOSED,ZLM3421_0 through ZLM3421_6 pass,False
+PG3421_2_source_current_zero,J_Z and B_Z vanish in the local branch,BLOCKED_Y5_Y6_SOURCE_CURRENT,SCZ3421_0 through SCZ3421_6 pass,False
+PG3421_3_coercivity,positive/coercive operator after gauge quotient,BLOCKED_MISSING_LAMBDA_STAR,lambda_*>0 with units/domain/source path,False
+PG3421_4_bound_branch,"if not zero, source-current residuals are bounded into observables",FORMULA_READY_VALUES_MISSING,J_Z/B_Z/lambda_*/response operators are numeric or theorem-zero,False
+PG3421_5_q_loc_vector_zero,q_loc vector projection is theorem-zero,BLOCKED_PENDING_3420_AND_3421_GATES,3420 and PG3421_1 through PG3421_3 pass,False
+PG3421_6_local_GR,local GR/Newton/PPN branch is derived,BLOCKED,q_loc vector-zero plus retained beta/source/stress/nonEH envelopes close,False

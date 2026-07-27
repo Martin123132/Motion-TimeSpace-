@@ -1,0 +1,6 @@
+em_id,claim_piece,formula,uoc_effect,status,residual_if_missing,valid_for_claim
+EM3382_0_public_maxwell_action,public Maxwell action,S_EM=-lambda_0/4 int sqrt(-g_obs) F^2 + int sqrt(-g_obs) A_mu J_Q^mu,uses same public g_obs/Hodge star as rods/clocks/source variation,EXACT_CONDITIONAL_ACTION_FORM,epsilon_EM_hidden_Hodge,false
+EM3382_1_hilbert_stress,EM Hilbert stress,T_EM^munu=lambda_0(F^mualpha F^nu_alpha - 1/4 g_obs^munu F^2),"EM energy density, pressure, radiation stress and Poynting flux gravitate through the same Hilbert source",EXACT_CONDITIONAL_VARIATION,R_Poynting_worldtube,false
+EM3382_2_poynting_worldtube,Poynting/source-worldtube placement,M_source[W]=M_matter+M_EM+M_binding+M_boundary+residuals,Poynting is not optional; it is included in T_EM/H_tau or carried as explicit residual,POLICY_LOCK_CONDITIONAL_ON_PUBLIC_EM_BRANCH,R_Poynting_worldtube >= ||S_EM dot n||_L1(B)/|M_H_ref|,false
+EM3382_3_no_double_count,double-count guard,do not add second background/Poynting force if same flux is already in Hilbert T_EM,prevents a new hidden fifth-force channel,GUARD_REQUIRED,epsilon_EM_double_count,false
+EM3382_4_mts_em_origin,EM-from-MTS origin,"derive A_Q,J_Q,lambda_0/Hodge from MTS or label Maxwell import","UOC couples EM stress consistently, but does not by itself derive EM from MTS",ORIGIN_OPEN_NOT_COUPLING_BLOCKER,R_EM_origin,false

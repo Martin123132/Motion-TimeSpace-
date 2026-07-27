@@ -1,0 +1,7 @@
+row_id,piece,formula_or_statement,meaning,status,valid_for_claim,timestamp_utc
+BETA3919_0_definition,PPN beta source definition,delta_beta_source = B_source/A_source^2 - 1,beta is the quadratic g00 response after Newtonian source normalization,FORMULA_READY,False,2026-07-01T10:46:59+00:00
+BETA3919_1_expansion,source expansion,g00=-1+2 A_source U_N - 2 B_source U_N^2 + O(U_N^3),A_source is first-order Newton coupling; B_source is second-order source response,NORMAL_FORM,False,2026-07-01T10:46:59+00:00
+BETA3919_2_Newton_lock,linear lock,Z_Poisson=1 and Z_frame=1 set A_source=1 after measured-GM calibration,same Hilbert source and same observed frame,CONDITIONAL_A_SOURCE_ONE,False,2026-07-01T10:46:59+00:00
+BETA3919_3_EH_square,EH nonlinear square law,g00_EH=-1+2 U_obs - 2 U_obs^2 + O(U_obs^3),"stationary one-metric EH/Hilbert branch has beta=1, hence B_source=A_source^2",CONDITIONAL_B_SOURCE_LOCK,False,2026-07-01T10:46:59+00:00
+BETA3919_4_source_zero,source beta theorem-zero,B_source=A_source^2 => delta_beta_source=0,"under the 3914/3915 branch, delta_beta_source=0 without fitting a new parameter",CONDITIONAL_THEOREM_ZERO,False,2026-07-01T10:46:59+00:00
+BETA3919_5_escape,source-shadow escape,"if matter sees a different frame, non-Hilbert source, or second-order source shadow, keep B_source/A_source^2-1 as an explicit residual",fallback row remains active outside B_loc,BOUND_OR_FILL_IF_BRANCH_FAILS,False,2026-07-01T10:46:59+00:00

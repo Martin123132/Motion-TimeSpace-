@@ -7,9 +7,9 @@ provide direct links to every checkpoint, script, and compact residual.
 
 | Category | Files | Catalogue shards |
 |---|---:|---:|
-| Checkpoints | 1254 | 6 |
-| Scripts | 1460 | 6 |
-| Residuals | 5975 | 24 |
+| Checkpoints | 1256 | 6 |
+| Scripts | 1462 | 6 |
+| Residuals | 5977 | 24 |
 
 ## Shards
 
@@ -18,13 +18,13 @@ provide direct links to every checkpoint, script, and compact residual.
 - [Checkpoints items 501-750](checkpoints-items-0501-0750.md)
 - [Checkpoints items 751-1000](checkpoints-items-0751-1000.md)
 - [Checkpoints items 1001-1250](checkpoints-items-1001-1250.md)
-- [Checkpoints items 1251-1254](checkpoints-items-1251-1254.md)
+- [Checkpoints items 1251-1256](checkpoints-items-1251-1256.md)
 - [Scripts items 1-250](scripts-items-0001-0250.md)
 - [Scripts items 251-500](scripts-items-0251-0500.md)
 - [Scripts items 501-750](scripts-items-0501-0750.md)
 - [Scripts items 751-1000](scripts-items-0751-1000.md)
 - [Scripts items 1001-1250](scripts-items-1001-1250.md)
-- [Scripts items 1251-1460](scripts-items-1251-1460.md)
+- [Scripts items 1251-1462](scripts-items-1251-1462.md)
 - [Residuals items 1-250](residuals-items-0001-0250.md)
 - [Residuals items 251-500](residuals-items-0251-0500.md)
 - [Residuals items 501-750](residuals-items-0501-0750.md)
@@ -48,7 +48,7 @@ provide direct links to every checkpoint, script, and compact residual.
 - [Residuals items 5001-5250](residuals-items-5001-5250.md)
 - [Residuals items 5251-5500](residuals-items-5251-5500.md)
 - [Residuals items 5501-5750](residuals-items-5501-5750.md)
-- [Residuals items 5751-5975](residuals-items-5751-5975.md)
+- [Residuals items 5751-5977](residuals-items-5751-5977.md)
 
 ## Integrity
 

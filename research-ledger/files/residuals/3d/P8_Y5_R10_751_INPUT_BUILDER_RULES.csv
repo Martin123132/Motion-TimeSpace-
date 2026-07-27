@@ -1,0 +1,5 @@
+rule_id,rule,pass_condition,failure_action,valid_for_claim,generated_utc
+QBR751_0_no_proxy_fabrication,Do not generate q_loc component samples from q_proxy.,all component rows come from a real source file or a parent-derived formula,block dry-run and keep valid_for_claim=false,false,2026-06-11T18:59:27+00:00
+QBR751_1_frame_required,Observed frame/normalization must be declared before splitting q_T and q_perp.,u^mu or local orthonormal frame convention is present and normalized,block Hodge split,false,2026-06-11T18:59:27+00:00
+QBR751_2_boundary_required,Boundary conditions/topology are required before Hodge transverse/harmonic split.,boundary tags and adjacency/operator metadata exist,block f_qV,false,2026-06-11T18:59:27+00:00
+QBR751_3_response_required,P_alpha3 or response_operator_id must be sourced before alpha3 scoring.,"P_flux, G_PPN, and Pi_alpha3^PPN are real or theorem-zero is supplied",block W_q_alpha3,false,2026-06-11T18:59:27+00:00

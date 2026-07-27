@@ -1,0 +1,16 @@
+timestamp_utc,branch_id,valid_for_claim,claim_allowed,check_id,status,detail
+2026-06-20T23:32:08.618168+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,VAL2163_00_sources,PASS,2162 plus 1859/1860 source paths and needles validate
+2026-06-20T23:32:08.618183+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,VAL2163_01_origin,PASS,direct motion-load/phase-volume origin is rejected as current derivation
+2026-06-20T23:32:08.618186+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,VAL2163_02_euler_route,PASS,Euler-difference route remains live but not closed
+2026-06-20T23:32:08.618189+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,VAL2163_03_qloc_bridge,PASS,q_loc formal mechanism remains nonclaim until coupling lock closes
+2026-06-20T23:32:08.618192+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,VAL2163_04_vector_backstop,PASS,finite residual vector backstop is open but values missing
+2026-06-20T23:32:08.618195+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,VAL2163_05_claim_gates,PASS,identity/route selection can pass while local-GR claim remains blocked
+2026-06-20T23:32:08.618198+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,VAL2163_06_refusals,PASS,"refusal runner blocks phase-volume closure, no-charge assumption, q_loc zero and local-GR claims"
+2026-06-20T23:32:08.618201+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,VAL2163_07_decision,PASS,decision ledger selects 2164 coupling-lock target
+2026-06-20T23:32:08.618204+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,VAL2163_08_next,PASS,2164 next target selected
+2026-06-20T23:32:08.618206+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,VAL2163_09_branch_copies,PASS,branch copies exist and parse
+2026-06-20T23:32:08.618209+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,VAL2163_10_csv_parse,PASS,all generated 2163 CSVs parse cleanly
+2026-06-20T23:32:08.618212+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,VAL2163_11_no_claim_flags,PASS,no generated row allows a claim
+2026-06-20T23:32:08.618215+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,VAL2163_12_formalization_clean,PASS,formalization-workbench untouched by 2163
+2026-06-20T23:32:08.618217+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,VAL2163_13_no_pycache,PASS,scripts __pycache__ removed
+2026-06-20T23:32:08.618220+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,VAL2163_OVERALL,PASS,"2163 rejects direct phase-volume as derivation, selects Euler/q_loc coupling lock, and opens the finite-vector backstop."

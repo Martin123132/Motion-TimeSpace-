@@ -1,0 +1,5 @@
+step_id,statement,math,result,valid_for_claim
+ETA3401_0_ansatz,Allow the v potential to have a second-order observed-source correction.,v = -2U/c^2 + a_v U^2/c^4 + O(c^-6),a_v is the intrinsic v-lane beta coefficient to derive or bound,False
+ETA3401_1_expand,Expand the exponential readout.,e^v = 1 - 2U/c^2 + (a_v+2)U^2/c^4 + O(c^-6),g_00=-e^v = -1+2U/c^2-(a_v+2)U^2/c^4+O(c^-6),False
+ETA3401_2_compare,Compare with the PPN beta dictionary.,-2*beta = -(a_v+2),"beta-1=a_v/2, hence kappa_v_eta_lane=a_v",False
+ETA3401_3_zero_condition,"If the parent v equation gives v=-2U/c^2+O(c^-6) in the observed PPN gauge, the exponential readout itself gives beta=1.",a_v=0 => beta=1 => kappa_v_eta_lane=0,eta_v is reduced to the concrete task: derive or bound the U^2 coefficient a_v in v,False

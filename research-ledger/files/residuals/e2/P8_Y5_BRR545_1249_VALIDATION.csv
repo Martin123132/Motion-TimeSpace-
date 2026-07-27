@@ -1,0 +1,14 @@
+check_id,check,status,details
+VAL1249_0_sources_exist,all cited local sources exist,PASS,8/8 sources exist
+VAL1249_1_needles_found,all cited local needles found,PASS,8/8 needles found
+VAL1249_2_qr_dirs,qr-hat intake directories exist,PASS,raw/accepted/rejected/docs directories present
+VAL1249_3_candidate_scan,candidate scan is well formed,PASS,live_candidate_rows=1; scan_rows=2
+VAL1249_4_ansatz_zero_rejected,1248 ansatz zero is rejected,PASS,ZTC1248_0 -> REJECT_ZERO_THEOREM_UNDERIVED
+VAL1249_5_runner_result_consistent,policy runner result matches accepted candidate state,PASS,accepted_count=1; numeric_pass_count=1
+VAL1249_6_policy_loaded,1244 policy values are loaded,PASS,N_sigma=1 sigma_gamma=2.3e-5 q_guardrail=4.6e-05
+VAL1249_7_claim_gates,claim gates remain blocked/nonclaim,PASS,claim_gate_rows=5
+VAL1249_8_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1249_9_next_target_1250,next target is finite q_Rhat template/checklist,PASS,1250-Y5-R10-first-finite-qRhat-template-and-Hcore-coefficient-checklist.md
+VAL1249_10_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1249_SOURCE_REGISTER.csv:8; P8_Y5_R10_1249_FINITE_QRHAT_INTAKE_SCAN.csv:2; P8_Y5_R10_1249_FINITE_QRHAT_VALIDATION_RULES.csv:6; P8_Y5_R10_1249_FINITE_QRHAT_CANDIDATE_RESULTS.csv:2; P8_Y5_R10_1249_POLICY_RUNNER_RESULTS.csv:1; P8_Y5_R10_1249_SOURCE_ACQUISITION_LEDGER.csv:4; P8_Y5_R10_1249_CLAIM_GATES.csv:5; P8_Y5_R10_1249_DECISION_LEDGER.csv:3; P8_Y5_R10_1249_NEXT_TARGET.csv:1
+VAL1249_11_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_write_count_since_run_start=0
+VAL1249_12_overall,overall 1249 validation,PASS,"1249 validates finite q_Rhat intake rows as nonclaim smoke inputs, rejects ansatz zero/placeholders, and keeps local-GR claims blocked"

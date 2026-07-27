@@ -1,0 +1,6 @@
+interface_id,runner_input,required_beta_condition,current_status,runner_effect,claim_allowed,valid_for_claim
+BRI1393_0_template_dependency,R10_alpha_lambda_curve_MTS_1392_BULK_ALPHA_TEMPLATE_NONCLAIM.csv,replace symbolic beta_bulk_S and beta_bulk_T only after BBS1393 rows are claim-ready,BLOCKED_SYMBOLIC_BETA_HANDLES,valid_mts_rows remains zero,False,False
+BRI1393_1_zero_certificate,future theorem-zero alpha row,"beta_bulk,S=0 and beta_bulk,T=0 with signed source/test certificates plus epsilon_tail=0",BLOCKED_ZERO_CERTIFICATE_UNSIGNED,do not write alpha_predicted=0 as claim row,False,False
+BRI1393_2_numeric_product,future numeric alpha row,"both beta legs numeric, same units/convention, source-backed, and paired with K(lambda) and tail",BLOCKED_NUMERIC_VALUES_MISSING,no numeric alpha(lambda) may be emitted,False,False
+BRI1393_3_WEP_link,source/test beta contrast,"if beta_bulk,S != beta_bulk,T or material composition differs, WEP/source-charge gate opens",BLOCKED_MATERIAL_MAP_MISSING,R10 score cannot be isolated from WEP/PPN gates,False,False
+BRI1393_4_verdict,all beta-to-runner routes,beta rows complete or zero-certified before R10 runner promotion,BETA_RUNNER_INTERFACE_READY_SCORING_BLOCKED,runner remains a blocker until beta rows become real,False,False

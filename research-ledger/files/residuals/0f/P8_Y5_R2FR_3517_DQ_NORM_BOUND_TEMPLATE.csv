@@ -1,0 +1,6 @@
+row_id,direction,Dq_norm_formula,required_inputs,prediction_value,bound_value,candidate_priority,valid_for_claim
+DQB3517_0_v_q_private,v_q,||Dq[v_q]||_q/||v_q|| <= E_first_class + E_matter + E_boundary + E_readout,q matrix; v_q action; first-class/Omega/DCq package; matter and boundary descent,MISSING_VQ_DQ_NORM,MISSING_VQ_DQ_BOUND,highest,False
+DQB3517_1_v_memory_tau,v_memory/v_tau_private,||Dq[v_memory]|| <= E_tau_lock + E_clock + E_frame + E_source_support,tau/coframe readout functor; clock/source support lock,MISSING_MEMORY_TAU_DQ_NORM,MISSING_MEMORY_TAU_DQ_BOUND,medium,False
+DQB3517_2_v_coeff,v_coeff,||Dq[v_coeff]|| <= E_coeff_descent + E_source_scale + E_clock_constants,coefficient descent theorem; parent normal form; no-source scale laundering,MISSING_COEFF_DQ_NORM,MISSING_COEFF_DQ_BOUND,medium,False
+DQB3517_3_v_boundary,v_boundary/reference,||Dq[v_boundary]||_local <= E_boundary_flux + E_Href_source + E_corner,boundary class; compact no-flux proof; H_ref source-blindness,MISSING_BOUNDARY_DQ_NORM,MISSING_BOUNDARY_DQ_BOUND,medium_local_only,False
+DQB3517_4_v_RAB,v_RAB,not eligible under current map; Dq[v_RAB] retained as nonzero unless observer-cell map rebuilt,new observer-cell map or constraint-first elimination,REJECTED_NOT_NUMERIC,MISSING_RAB_REBUILD_BOUND,rejected,False

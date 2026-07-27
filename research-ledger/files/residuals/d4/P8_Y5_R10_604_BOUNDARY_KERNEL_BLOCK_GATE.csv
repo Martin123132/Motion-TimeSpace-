@@ -1,0 +1,7 @@
+gate_id,requirement,result_if_satisfied,current_status,failure_if_missing,valid_for_claim
+KBG604_0_block_theorem,"Q_sec self-adjoint, q_MTS nondegenerate, and [K_B,Q_sec]=0",K_boundary is block diagonal between ordinary and MTS sectors,conditional_theorem,"ordinary coherent local baths can leak into rho_MTS,D",false
+KBG604_1_relation_to_A_D,"P_MTS,D from Q_sec is used inside b_D and A_D=b_D c_D",A_D activation is protected from ordinary bath pollution,conditional_support,"A_D is a closure filter, not a parent primitive",false
+KBG604_2_S3_insufficient,do not replace Q_sec with S3/coherent singlet alone,ordinary isotropic thermal/EM singlets do not falsely count as MTS,guard_pass,P_singlet leaks ordinary coherent baths,false
+KBG604_3_Ptop_insufficient,relative/topological projector P_top must be supplemented by P_MTS,edge/horizon/topological classes do not degenerate with MTS top class,guard_pass,edge/top-class leakage survives,false
+KBG604_4_Bianchi,projector/boundary/domain variations are zero by theorem or retained,block split is compatible with the Ward/Bianchi ledger,open,hidden projector stress or boundary charge can re-enter q_loc,false
+KBG604_5_verdict,"parent action derives Q_sec and [K_B,Q_sec]=0","P_MTS,D kernel block becomes a parent theorem",fail_current_corpus,selector route remains conditional; unit-map demotion becomes likely,false

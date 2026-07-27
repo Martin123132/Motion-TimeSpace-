@@ -1,0 +1,6 @@
+checkpoint,split_id,object,formula_or_rule,source_basis,meaning,claim_allowed,valid_for_claim,timestamp_utc
+4667,SPL4667_0_import,C_mem^final_live,|C_mem^final_live| <= |C_mem^boundary|+|C_mem^nonHilbert|,4666,import after LHRS closure,False,False,2026-07-07T16:33:30.119542+00:00
+4667,SPL4667_1_boundary,C_mem^boundary,Pi_mem[X_boundary_history + X_boundary_flux],4600;4609;4646,worldtube/collar/edge/boundary-history channel,False,False,2026-07-07T16:33:30.119542+00:00
+4667,SPL4667_2_nonHilbert,C_mem^nonHilbert,Pi_mem[X_nonHilbert_source_bypass],4600;4639;4645,orthogonal quotient/current/spin/torsion/improvement/readout bypass channel,False,False,2026-07-07T16:33:30.119542+00:00
+4667,SPL4667_3_no_cancellation,zero route,C_mem^boundary=0 and C_mem^nonHilbert=0 separately,4600,do not cancel boundary against non-Hilbert,False,False,2026-07-07T16:33:30.119542+00:00
+4667,SPL4667_4_dynamic_bound,fallback,|C_mem^boundary|+|C_mem^nonHilbert|,4600;4609;4431,absolute-sum fallback when either branch clause fails,False,False,2026-07-07T16:33:30.119542+00:00

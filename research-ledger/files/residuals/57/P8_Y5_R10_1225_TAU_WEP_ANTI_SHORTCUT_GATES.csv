@@ -1,0 +1,5 @@
+gate_id,forbidden_shortcut,reason,status,valid_for_claim,claim_allowed
+SHORT1225_0_no_tau_unity,set tau_WEP=1,"tau_WEP is a lab/source/orbit/readout functional, not a convention-free unit",ENFORCED,False,False
+SHORT1225_1_no_surrogate_claim,use surrogate kernel as official readout,RIG1084 requires official arrays or proof of exact equivalence,ENFORCED,False,False
+SHORT1225_2_no_G_absorption,absorb source-weight residual into measured G,source-weight branch affects composition/source/readout comparison,ENFORCED,False,False
+SHORT1225_3_no_cancellation,cancel signs/material terms by hand,1224 product uses absolute guard unless full material model is signed,ENFORCED,False,False

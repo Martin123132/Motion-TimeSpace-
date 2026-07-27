@@ -1,0 +1,7 @@
+row_id,quantity,definition,bound_formula,status,valid_for_claim
+JZB3422_0_total,||J_Z_total||,absolute sum of all nonzero Z-source currents,||J_Z_total|| <= |J_matter|+|J_Y5|+|J_Y6|+|J_boundary|+|J_species_frame|,FORMULA_READY_VALUES_MISSING,False
+JZB3422_1_matter_readout,||J_Z_matter_readout||,variation of matter/clocks/rods/photons/source readout with respect to Z,0 if quotient-even descent theorem passes; otherwise source-backed norm,CONDITIONAL_ZERO_NOT_PARENT_SIGNED,False
+JZB3422_2_Y5,||J_Z_Y5_source_normalization||,source-normalization/measured-GM drift driving the Z equation,epsilon_Y5_source_normalization with same-frame units and source path,MISSING_Y5_OWNER_OR_NUMERIC_BOUND,False
+JZB3422_3_Y6,||J_Z_Y6_extra_stress||,extra-stress source current not public/topological/gapped/zero,epsilon_Y6_extra_stress with PPN/source-stress map,MISSING_Y6_SAFE_CLASS_OR_BOUND,False
+JZB3422_4_to_Znorm,||Z|| contribution from J_Z,source-current contribution to fixed-point residual amplitude,||Z||_J <= 2 lambda_*^-1 ||J_Z_total||,MISSING_LAMBDA_STAR_AND_JZ_VALUE,False
+JZB3422_5_to_alpha3,alpha3 contribution from J_Z,q_loc alpha-vector effect induced by nonzero source-current fixed point,|alpha3_JZ| <= Q_PROXY*C_alphaZ*2*lambda_*^-1*||J_Z_total|| and total vector budget <= 5.381673706808059e-15,MISSING_RESPONSE_OPERATOR_AND_VALUES,False

@@ -1,0 +1,4 @@
+decision_id,decision,because,next_action,valid_for_claim,claim_allowed
+DEC1294_0_choose_Csign_first,acquire C_sign as the first source-backed input candidate,C_sign is explicitly missing in RRI1292 m/Lcg rows and GK514 provides the closest source-backed convention branch,"try to promote C_sign by locking Hilbert sign, volume subtraction, and K_hat/K_metric equality",False,False
+DEC1294_1_do_not_promote,keep C_sign out of live scoring,the same sources that suggest the convention also state that fixed sign/volume/Khat matching is required before claims,build a promotion test or switch to response-operator sourcing if sign lock fails,False,False
+DEC1294_2_runner_stays_rejected,leave chain residual runner in rejection/no-score state,"preview rows retain missing m, L_cg, kernel, CDB, and response inputs",fill missing input packs one at a time without weakening claim gates,False,False

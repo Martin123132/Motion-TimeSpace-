@@ -3,6 +3,8 @@
 Direct links for 250 files. Item numbers are catalogue
 ordinals, not scientific checkpoint identifiers.
 
+- [`P8_Y5_R2FR_4480_DECISION_LEDGER.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4480_DECISION_LEDGER.csv) (971 bytes)
+- [`P8_Y5_R2FR_4480_NEXT_TARGET.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4480_NEXT_TARGET.csv) (638 bytes)
 - [`P8_Y5_R2FR_4480_ORIENTATION_ZERO_PROOF.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4480_ORIENTATION_ZERO_PROOF.csv) (4036 bytes)
 - [`P8_Y5_R2FR_4480_QUADRUPOLE_INPUT_ROWS.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4480_QUADRUPOLE_INPUT_ROWS.csv) (2776 bytes)
 - [`P8_Y5_R2FR_4480_QUADRUPOLE_RESIDUAL_SCORER.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4480_QUADRUPOLE_RESIDUAL_SCORER.csv) (2968 bytes)
@@ -251,5 +253,3 @@ ordinals, not scientific checkpoint identifiers.
 - [`P8_Y5_R2FR_4505_DIRECT_SCALAR_PRESSURE_ROWS.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4505_DIRECT_SCALAR_PRESSURE_ROWS.csv) (780 bytes)
 - [`P8_Y5_R2FR_4505_NEXT_TARGET.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4505_NEXT_TARGET.csv) (511 bytes)
 - [`P8_Y5_R2FR_4505_PARENT_SIGNATURE_AUDIT.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4505_PARENT_SIGNATURE_AUDIT.csv) (1941 bytes)
-- [`P8_Y5_R2FR_4505_POSITIVE_MATRIX_LEMMA.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4505_POSITIVE_MATRIX_LEMMA.csv) (1101 bytes)
-- [`P8_Y5_R2FR_4505_SCALARON_BOUND_CONTRACT.csv`](../source-intake/mts_residuals/P8_Y5_R2FR_4505_SCALARON_BOUND_CONTRACT.csv) (1242 bytes)

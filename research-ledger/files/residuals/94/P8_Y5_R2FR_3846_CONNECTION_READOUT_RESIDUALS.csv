@@ -1,0 +1,5 @@
+residual_id,observable,formula,meaning,status,valid_for_claim,timestamp_utc
+MBR3846_0_metric_bridge_total,B_metric_bridge,B_metric_bridge <= B_tau_owner + B_h_owner + B_c_owner + B_signature + B_coframe_descent + B_nonLC + B_motion_frame,finite residual if the MTS primitives fail to own a single public Lorentzian metric,CURRENT_NONCLAIM_BOUND,False,2026-07-01T03:40:31+00:00
+MBR3846_1_nonLC,B_nonLC,B_nonLC <= ||Gamma_obs - LeviCivita[g_obs]||_local_ppn,torsion/nonmetricity/independent connection leakage into local PPN,RETAIN_UNTIL_CONNECTION_LOCK_SIGNED,False,2026-07-01T03:40:31+00:00
+MBR3846_2_motion_frame,B_motion_frame,B_motion_frame <= |delta g_matter/g_obs| + |A_g(Xhat)-1| + |B_g(Xhat)|,motion/readout becomes a physical shadow frame rather than observer congruence,RETAIN_UNTIL_NO_SHADOW_FRAME_SIGNED,False,2026-07-01T03:40:31+00:00
+MBR3846_3_action_adoption,B_action_adoption,B_action_adoption <= B_metric_bridge + B_action_descent + B_matter_source + B_silent_sector,visible EH action candidate cannot be adopted until bridge and action clauses close,ACTION_CANDIDATE_REMAINS_NONCLAIM,False,2026-07-01T03:40:31+00:00

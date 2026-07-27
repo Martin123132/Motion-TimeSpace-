@@ -1,0 +1,5 @@
+assumption_id,assumption,status,consequence,valid_for_claim,claim_allowed
+ASM1210_0_clean_branch_only,Bracket grid evaluates only the clean Fermi curvature projector drift term.,NONCLAIM_SANDBOX,"domain_motion_Linf and projector_stress_Linf remain separate blockers, not silently zeroed",False,False
+ASM1210_1_effective_constant,C_eff represents C_Fermi plus any retained second-order curvature-gradient allowance.,BRACKET_PARAMETER_NOT_SOURCED,"C_eff grid is a sensitivity scan, not evidence",False,False
+ASM1210_2_allowed_product,"Allowed product is S_allowed = target/(C_eff*L_D*Riemann_norm), where S=C_P*G_res_norm in the normalized pressure schema.",ALGEBRAIC_REARRANGEMENT,large S_allowed means the clean curvature drift is not the limiting piece; small S_allowed means C_P*G_res must be correspondingly tiny,False,False
+ASM1210_3_units_guard,C_P*G_res_norm may carry norm-dependent units until the operator norm is sourced.,UNITS_NOT_CLAIM_READY,all numeric rows are feasibility bookkeeping only,False,False

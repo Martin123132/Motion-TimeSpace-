@@ -1,0 +1,5 @@
+pressure_id,component,target_context,required_bound,factorized_condition,if_second_factor_normalized_to_1,if_equal_factors_each_less_than,status,valid_for_claim,claim_allowed
+PRS1205_0_boundary_only_trace_bound,q_boundary,"harsh W=100, only q_boundary live",2.3446643005193777e-05,||n.K_T||_{H-1/2} * ||P_loc V||_{H1/2} <= required_bound,2.3446643005193777e-05,0.004842173376201411,TARGET_ONLY_NO_SOURCE_VALUE,False,False
+PRS1205_1_boundary_split_trace_bound,q_boundary,"harsh W=100, q_boundary/q_projector equal split",1.1723321502596888e-05,||n.K_T||_{H-1/2} * ||P_loc V||_{H1/2} <= required_bound,1.1723321502596888e-05,0.0034239336299929776,TARGET_ONLY_NO_SOURCE_VALUE,False,False
+PRS1205_2_projector_only_delta_bound,q_projector,"harsh W=100, only q_projector live",2.3446643005193777e-05,||Delta_P|| <= required_bound,2.3446643005193777e-05,,TARGET_ONLY_NO_SOURCE_VALUE,False,False
+PRS1205_3_projector_split_eps_G1,eps_P,"harsh W=100, q_projector split, assumed ||G_res||=1",1.1723321502596888e-05,eps_P * ||G_res|| <= required_bound and C_CK*eps_P < 1,1.1723321502596888e-05,,TARGET_ONLY_NO_SOURCE_VALUE,False,False

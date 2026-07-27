@@ -1,0 +1,11 @@
+check_id,check,status,details
+VAL1357_0_sources_exist,registered source paths exist and anchors are found,PASS,SRC1357_0_1356_doc=True/True;SRC1357_1_1356_next=True/True;SRC1357_2_1356_residuals=True/True;SRC1357_3_1014_doc=True/True;SRC1357_4_commutator_gate=True/True;SRC1357_5_topo_certificate=True/True;SRC1357_6_topo_acceptance=True/True;SRC1357_7_input_template=True/True;SRC1357_8_radial_template=True/True;SRC1357_9_1015_doc=True/True;SRC1357_10_1017_doc=True/True
+VAL1357_1_conditional_not_promoted,conditional chain-map lemma is written but not promoted,PASS,fill I_commutator source-profile rows as nonclaim
+VAL1357_2_profile_rows_present,"I_commutator profile rows cover domain, Hodge, current, boundary, anomaly, tau, species, and total envelope",PASS,profile_rows=8
+VAL1357_3_profiles_nonclaim,profile rows remain missing/unscored/nonclaim,PASS,all profile rows reject scoring
+VAL1357_4_guardrails_installed,chain-map/idempotence/Hodge/readout/normalization guardrails are installed,PASS,GUARD1357_0_chainmap_not_projector_algebra;GUARD1357_1_no_Hodge_silencing;GUARD1357_2_no_post_readout_mask;GUARD1357_3_no_normalization_shortcut
+VAL1357_5_claim_gates_block_claim,current MTS commutator/local-GR claim gates remain blocked,PASS,GATE1357_0_conditional_lemma=True;GATE1357_1_parent_chainmap_signed=False;GATE1357_2_Icommutator_zero_current_MTS=False;GATE1357_3_Icommutator_profile_score_ready=False;GATE1357_4_Newton_local_GR=False
+VAL1357_6_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false across generated rows
+VAL1357_7_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1357_8_next_target_1358,next target routes to fixed-chainmap parent signature or first profile row,PASS,1358-Y5-R10-RAB-PiM-fixed-chainmap-parent-signature-or-Icommutator-first-profile-row.md
+VAL1357_9_overall,overall 1357 validation,PASS,1357 records the conditional commutator-zero route and keeps I_commutator profiles nonclaim

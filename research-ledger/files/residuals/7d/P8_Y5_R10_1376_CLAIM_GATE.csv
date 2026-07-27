@@ -1,0 +1,6 @@
+gate_id,gate,status,reason,valid_for_claim,claim_allowed
+GATE1376_0_source_integrity,all cited local paths and anchors exist,PASS_SOURCE_REGISTERED,1376 uses existing 1371/1374/1375/1288/776/1291/1298/798/799/802/803 anchors.,False,False
+GATE1376_1_Kconn_operator_norms,K_conn operator norms are source-filled,BLOCKED_NOT_SOURCE_FILLED,"N_conn,* and source-tensor norms are still missing gauge/domain/operator/boundary conventions.",False,False
+GATE1376_2_transition_parent_sources,transition parent-source acquisition table exists,PASS_ACQUISITION_LEDGER_READY,"U_B, powers, amplitudes, L0, L_tr, A_ref, limits, provenance, and shell closure now have explicit acquisition rows.",False,False
+GATE1376_3_numeric_runner,Q_alg/Q_trans/Q_conn can be evaluated numerically,BLOCKED_NO_NUMERIC_SOURCE_ROW,"current evidence contains only symbolic contracts, missing-parent templates, and toy nonclaim rows.",False,False
+GATE1376_4_local_claim,local GR / PPN / R10 pass can be claimed,BLOCKED_NO_CLAIM,no source-backed K_conn fill and no source-backed transition parent row.,False,False

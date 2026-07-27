@@ -1,0 +1,13 @@
+validation_id,passed,requirement,evidence
+VAL3022_00_sources_exist,True,every cited local source path exists,P8_Y5_R2FR_3022_SOURCE_REGISTER.csv
+VAL3022_01_csv_parse,True,generated CSV rows parse cleanly,all generated CSV artifacts import with csv.DictReader
+VAL3022_02_owner_audit_verdict,True,psi_N owner audit fails closed and routes to bound inputs,P8_Y5_R2FR_3022_PSIN_HAMILTONIAN_OWNER_AUDIT.csv
+VAL3022_03_bound_inputs_present,True,all lambda_N bound-input families are present,P8_Y5_R2FR_3022_LAMBDAN_BOUND_INPUT_ROWS.csv
+VAL3022_04_bound_translation_present,True,beta comparator translation and A_source guard are present,P8_Y5_R2FR_3022_BETA_BOUND_TRANSLATION.csv
+VAL3022_05_claims_blocked,True,all rows remain nonclaim/private-control rows,all 3022 generated ledgers
+VAL3022_06_missing_markers_nonclaim,True,rows with MISSING markers are never valid_for_claim=true,all 3022 generated ledgers
+VAL3022_07_branch_copies_exist,True,branch copies and acquisition queue exist,P8_Y5_R2FR_3022_BRANCH_COPIES.csv
+VAL3022_08_outputs_scoped,True,no generated file is outside post-checkpoint-work,generated path scope check
+VAL3022_09_formalization_not_targeted,True,formalization-workbench is not modified by this checkpoint,output target list excludes formalization-workbench
+VAL3022_10_next_target_selected,True,next target selects Hcore action block or first lambdaN bound row,P8_Y5_R2FR_3022_NEXT_TARGET.csv
+VAL3022_99_overall,True,all 3022 validation checks pass,aggregate of VAL3022_00 through VAL3022_10

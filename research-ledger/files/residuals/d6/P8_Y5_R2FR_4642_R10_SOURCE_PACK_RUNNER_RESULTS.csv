@@ -1,0 +1,9 @@
+checkpoint,run_id,branch,lambda_mem_m,Xi_tail_abs,alpha_bound_vector,result,reason,valid_for_claim,claim_allowed,timestamp_utc
+4642,RUN4642_0_live_missing_pack,current live source pack,,,,FAIL_CLOSED,"missing parent signatures, projection constants and lambda_mem",False,False,2026-07-06T20:00:15.630977+00:00
+4642,RUN4642_1_exact_same_branch_zero,same-branch exact zero control,0.0001,0,0.0755863083618,CONDITIONAL_ZERO_PASS_NONCLAIM,Xi_tail=0 if the strict same-branch parent signature is signed,False,False,2026-07-06T20:00:15.630977+00:00
+4642,RUN4642_2_anchor_smoke_pass,anchor-smoke finite pack,3.86e-05,0.9,0.978211726949,SMOKE_PASS_NONCLAIM,absolute Xi_tail sits inside digitized vector bound for this toy/source-pack row,False,False,2026-07-06T20:00:15.630977+00:00
+4642,RUN4642_3_anchor_smoke_fail,anchor-smoke finite pack,3.86e-05,1,0.978211726949,SMOKE_FAIL_NONCLAIM,absolute Xi_tail exceeds digitized vector bound,False,False,2026-07-06T20:00:15.630977+00:00
+4642,RUN4642_4_finite_pack_pass_100um,finite coefficient pack smoke,0.0001,0.07,0.0755863083618,SMOKE_PASS_NONCLAIM,absolute Xi_tail sits inside digitized vector bound for this toy/source-pack row,False,False,2026-07-06T20:00:15.630977+00:00
+4642,RUN4642_5_finite_pack_fail_100um,finite coefficient pack smoke,0.0001,0.08,0.0755863083618,SMOKE_FAIL_NONCLAIM,absolute Xi_tail exceeds digitized vector bound,False,False,2026-07-06T20:00:15.630977+00:00
+4642,RUN4642_6_massless_branch,M2_mem=0 without exact Xi_tail zero,inf,0,,FAIL_CLOSED,massless branch requires exact source/coupling zero; no finite R10 range,False,False,2026-07-06T20:00:15.630977+00:00
+4642,RUN4642_7_tachyon_branch,M2_mem<0,nan,0,,REJECT_BRANCH,negative M2_mem is unstable and cannot be local-GR recovery,False,False,2026-07-06T20:00:15.630977+00:00

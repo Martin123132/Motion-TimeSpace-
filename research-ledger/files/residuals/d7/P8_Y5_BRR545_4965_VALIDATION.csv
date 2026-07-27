@@ -1,0 +1,31 @@
+validation_id,test,expected,actual,passed,status,checkpoint_marker,valid_for_full_MTS_claim
+V4965_00,all locked files exist,[],[],True,PASS,MTS_4965_P8_BASIS_HELICITY_PARTIAL_FLOW,False
+V4965_01,all locked hashes match,{},{},True,PASS,MTS_4965_P8_BASIS_HELICITY_PARTIAL_FLOW,False
+V4965_02,generator and validator parse,{},{},True,PASS,MTS_4965_P8_BASIS_HELICITY_PARTIAL_FLOW,False
+V4965_03,all generated CSVs parse without malformed rows,True,True,True,PASS,MTS_4965_P8_BASIS_HELICITY_PARTIAL_FLOW,False
+V4965_04,all rows retain private nonclaim tags,True,True,True,PASS,MTS_4965_P8_BASIS_HELICITY_PARTIAL_FLOW,False
+V4965_05,no placeholder tokens in evidence rows,[],[],True,PASS,MTS_4965_P8_BASIS_HELICITY_PARTIAL_FLOW,False
+V4965_06,all generator checks pass,[],[],True,PASS,MTS_4965_P8_BASIS_HELICITY_PARTIAL_FLOW,False
+V4965_07,independent chiral-real invariant map,True,True,True,PASS,MTS_4965_P8_BASIS_HELICITY_PARTIAL_FLOW,False
+V4965_08,complete p8 quotient count,3 raw -> 2 even; D rank 0,"{'O_CC_chiral_expansion': 'C_L2**2 + 2*C_L2*C_R2 + C_R2**2', 'O_Ctilde_chiral_expansion': '-I*C_L2**2 + I*C_R2**2', 'O_tildetilde_chiral_expansion': '-C_L2**2 + 2*C_L2*C_R2 - C_R2**2', 'checks': {'O_CC_map': True, 'O_CT_map': True, 'O_TT_map': True}, 'derivative_p8_rank': 0, 'raw_chiral_monomial_count': 3, 'real_parity_even_rank': 2, 'real_parity_odd_rank_excluded': 1}",True,PASS,MTS_4965_P8_BASIS_HELICITY_PARTIAL_FLOW,False
+V4965_09,basis table marks exactly four representations of two even coordinates,4,4,True,PASS,MTS_4965_P8_BASIS_HELICITY_PARTIAL_FLOW,False
+V4965_10,independent helicity projector rank and inverse,rank 2 det 2,rank 2 det 2,True,PASS,MTS_4965_P8_BASIS_HELICITY_PARTIAL_FLOW,False
+V4965_11,CSV helicity rows reproduce projector,"[[1, -1], [1, 1]]","[[1, -1], [1, 1]]",True,PASS,MTS_4965_P8_BASIS_HELICITY_PARTIAL_FLOW,False
+V4965_12,independent minimal-scalar p8 algebra,True,True,True,PASS,MTS_4965_P8_BASIS_HELICITY_PARTIAL_FLOW,False
+V4965_13,nine motion source rows preserve partial-source scope,True,True,True,PASS,MTS_4965_P8_BASIS_HELICITY_PARTIAL_FLOW,False
+V4965_14,independent C3 heat-kernel prefactor match,2.0941051513379998e-07,2.0941051513379995e-07,True,PASS,MTS_4965_P8_BASIS_HELICITY_PARTIAL_FLOW,False
+V4965_15,sign mismatch is not promoted to physical origin no-go,True,True,True,PASS,MTS_4965_P8_BASIS_HELICITY_PARTIAL_FLOW,False
+V4965_16,all p8 power-count rows evaluate to D=8,8/8,8/8,True,PASS,MTS_4965_P8_BASIS_HELICITY_PARTIAL_FLOW,False
+V4965_17,four p4-dependent partitions are quotient-relocated,4,4,True,PASS,MTS_4965_P8_BASIS_HELICITY_PARTIAL_FLOW,False
+V4965_18,parent p8 rank accounting is 2 target 0 current 1 partial,2/0/1 total open,"{'current_4935_coordinates': ['g', 'g_plus', 'g_minus', 'g_CFF', 'h_C3'], 'current_4935_p8_coordinates': [], 'current_4935_p8_projection_rank': 0, 'minimal_motion_scalar_source_rank': 1, 'p4_quotient_rank': 0, 'power_count_identity_passed_for_all_partitions': True, 'required_extension': 'append B_minus,B_plus and project d_t Gamma_TTTT on ++++ and +--+ channels; include O4, graviton, photon and boundary sources', 'target_p8_rank': 2, 'total_parent_p8_values_identified': False}",True,PASS,MTS_4965_P8_BASIS_HELICITY_PARTIAL_FLOW,False
+V4965_19,dispersive cone derived but numeric MTS activation blocked,True,True,True,PASS,MTS_4965_P8_BASIS_HELICITY_PARTIAL_FLOW,False
+V4965_20,source-scheme cone factors independently recomputed,"[2.7195190785650133e-06, 2.764484931858842e-06]","[2.7195190785650133e-06, 2.764484931858842e-06]",True,PASS,MTS_4965_P8_BASIS_HELICITY_PARTIAL_FLOW,False
+V4965_21,eleven compact two-coordinate gates retain nonclaim status,True,True,True,PASS,MTS_4965_P8_BASIS_HELICITY_PARTIAL_FLOW,False
+V4965_22,tightest inherited compact unit-response budget retained,SLY4 3.027551244686395e232,SLY4_near_turning_0p99_Mmax 3.027551244686395e+232,True,PASS,MTS_4965_P8_BASIS_HELICITY_PARTIAL_FLOW,False
+V4965_23,decision table retains total and all-operator false,True,True,True,PASS,MTS_4965_P8_BASIS_HELICITY_PARTIAL_FLOW,False
+V4965_24,claims and variable registers contain 4965 rows,True,True,True,PASS,MTS_4965_P8_BASIS_HELICITY_PARTIAL_FLOW,False
+V4965_25,formal marker appears in every narrative handoff,[],[],True,PASS,MTS_4965_P8_BASIS_HELICITY_PARTIAL_FLOW,False
+V4965_26,checkpoint contains no forbidden promotion language,[],[],True,PASS,MTS_4965_P8_BASIS_HELICITY_PARTIAL_FLOW,False
+V4965_27,all cited local source paths exist,[],[],True,PASS,MTS_4965_P8_BASIS_HELICITY_PARTIAL_FLOW,False
+V4965_28,scripts tree contains no pycache,[],[],True,PASS,MTS_4965_P8_BASIS_HELICITY_PARTIAL_FLOW,False
+V4965_29,aggregate validation,True,True,True,PASS,MTS_4965_P8_BASIS_HELICITY_PARTIAL_FLOW,False

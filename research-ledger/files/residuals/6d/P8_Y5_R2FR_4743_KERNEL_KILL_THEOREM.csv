@@ -1,0 +1,7 @@
+checkpoint,theorem_id,formula,meaning,status,valid_for_claim,timestamp_utc
+4743,KKT4743_0_kernel_membership,m in ker(D_adj) means D_adj m=0 on W_loc,Starts from the exact leftover obstruction in 4742.,DEFINITION,False,2026-07-08T00:09:01+00:00
+4743,KKT4743_1_trace_map,gamma_boundary m := m|partial W_loc,A boundary trace is the minimal parent-owned datum needed to test the kernel.,TRACE_DEFINED,False,2026-07-08T00:09:01+00:00
+4743,KKT4743_2_unique_continuation_kill,"D_adj m=0 and gamma_boundary m=0 and UCP(D_adj,W_loc) => m=0",This is the clean kernel-kill theorem: zero trace plus unique continuation kills Pi_0 m.,THEOREM_CONDITIONAL,False,2026-07-08T00:09:01+00:00
+4743,KKT4743_3_quotient_kill,Pi_0 m = Pi_phys Pi_0 m + Pi_gauge Pi_0 m; parent quotient requires Pi_gauge Pi_0 m=0,"Gauge/representative zero modes are killed only by explicit quotient ownership, not by wishful projection.",QUOTIENT_CONDITIONAL,False,2026-07-08T00:09:01+00:00
+4743,KKT4743_4_kernel_bound,||Pi_0 m|| <= C_trace||gamma_boundary m|| + C_q||Pi_gauge Pi_0 m|| + C_phys||Pi_phys Pi_0 m||,"If exact killing fails, the kernel obstruction becomes a bounded source row.",FINITE_BOUND_DERIVED,False,2026-07-08T00:09:01+00:00
+4743,KKT4743_5_exact_zero_branch,"gamma_boundary m=0, Pi_gauge Pi_0 m=0, Pi_phys Pi_0 m=0 => C_zeroMode=0",This closes the 4742 exact zero branch only if the parent owns all three inputs.,EXACT_BRANCH_CONDITIONAL_UNSIGNED,False,2026-07-08T00:09:01+00:00

@@ -1,0 +1,5 @@
+contract_id,required_input,runner_use,acceptance_rule,status,valid_for_claim
+IPC4383_0_profile_rows,"CSV rows with profile_id, x, y, z, volume_weight, rho_H, rho_top, R","topological_center_lock_input_runner.py computes c_H, c_top, b/R",real source/profile provenance; no synthetic labels; positive M_H/M_top; parent-owned radius and worldtube,RUNNER_READY_REAL_INPUT_MISSING,False
+IPC4383_1_envelope_scores,4382 envelope rows and computed b/R,scores predicted |delta a|/|a_N| envelope for each support and l,numeric delta_N must be provided before pass/fail promotion,SCORER_READY_DELTA_N_MISSING,False
+IPC4383_2_center_lock_zero,parent theorem setting b=0 before readout,all b/R score rows collapse to zero,"must be a parent signature, not coordinate centering after the fact",THEOREM_ROUTE_READY_UNSIGNED,False
+IPC4383_3_quadrature_fallback,same profile rows can also feed profile_topological_moment_quadrature.py,computes direct M_lm/E_l^top rather than center-offset envelope,use direct quadrature for non-spherical profiles; use center envelope as conservative separated-center diagnostic,FALLBACK_READY_REAL_INPUT_MISSING,False

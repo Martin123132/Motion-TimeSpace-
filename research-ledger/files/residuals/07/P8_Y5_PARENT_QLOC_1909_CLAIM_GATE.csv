@@ -1,0 +1,5 @@
+gate_id,condition,current_status,source_anchor,gate_pass,valid_for_claim
+CG1909_0_alloy,alloy mass fractions are source-backed and sum to unity,PASS_CONTEXT_ONLY,P8_Y5_PARENT_QLOC_1909_TIPT_ALLOY_COMPOSITION_SOURCE_BACKED_NONCLAIM.csv,False,False
+CG1909_1_binding,material binding tensor is source-backed or parent-derived,FAIL_BINDING_PROJECTION_BLOCKED_EXPLICITLY,P8_Y5_PARENT_QLOC_1909_MATERIAL_BINDING_PROJECTION_BLOCKER_LEDGER_NONCLAIM.csv,False,False
+CG1909_2_readout,material tensor is contracted with source-worldtube/readout/tau kernels,FAIL_SOURCE_READOUT_TAU_KERNEL_MISSING,P8_Y5_PARENT_QLOC_1900_OFFICIAL_READOUT_DATA_TARGETS_NONCLAIM.csv,False,False
+CG1909_3_claim,1909 supports WEP/local-GR claim-grade projection,CLAIM_BLOCKED,CG1909_0_alloy through CG1909_2_readout,False,False

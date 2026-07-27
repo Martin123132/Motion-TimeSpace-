@@ -1,0 +1,7 @@
+gate_id,gate,status,reason,valid_for_claim,claim_allowed
+GATE1395_0_sources,all cited local sources exist and anchors are present,PASS,source register validates against local corpus and prior EM-lock/binding files,False,False
+GATE1395_1_sector_zero,"beta_e, beta_nuc, and beta_EM are theorem-zero",BLOCKED_PARENT_UNSIGNED,sector ownership/descent clauses are unsigned; EM-lock has active blockers,False,False
+GATE1395_2_source_pack,binding sector beta source pack exists,PASS_NONCLAIM_PACK,sector beta rows are explicit but all values/provenance remain missing,False,False
+GATE1395_3_binding_promotion,sector rows can promote beta_bind and beta_bulk,BLOCKED_VALUES_MISSING,sector betas and composition fractions are not source-backed or zero-certified,False,False
+GATE1395_4_empirical_scores,R10/WEP/clock/PPN scores may be reported,BLOCKED_SECTOR_INPUTS_MISSING,sector beta vector is missing and EM-lock is not signed,False,False
+GATE1395_5_local_claim,local GR/Newton reduction can be claimed,BLOCKED_NO_CLAIM,"1395 is a sector-beta source pack, not a derived local GR limit",False,False

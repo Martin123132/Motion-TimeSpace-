@@ -1,0 +1,13 @@
+check_id,check,passed,detail
+VAL3288_0_sources_exist,all cited source paths exist,true,
+VAL3288_1_sources_parse,all cited source paths parse,true,
+VAL3288_2_outputs_parse,all 3288 non-validation output CSVs parse,true,non-validation outputs parsed before validation write
+VAL3288_3_metric_conformal_split_present,metric table separates conformal cone and coframe scale,true,
+VAL3288_4_ZQ_value_vs_drift_present,Z_Q table separates calibrated constants from dangerous drift,true,
+VAL3288_5_local_GR_fair_standard_present,local GR relevance table allows calibrated value but requires silence,true,
+VAL3288_6_residual_rows_refuse_missing_sources,metric split and Z_Q drift residual rows refuse missing numeric projections,true,
+VAL3288_7_runner_expectations,split runner expectations all match,true,SPL3288_0_clean_local_limit_conditional=PASS_NUMERIC_NONCLAIM;SPL3288_1_metric_split_residual=REFUSE_MISSING_SOURCE_NONCLAIM;SPL3288_2_ZQ_drift_residual=REFUSE_MISSING_SOURCE_NONCLAIM;SPL3288_3_half_bound_smoke=PASS_NUMERIC_NONCLAIM;SPL3288_4_twice_bound_smoke=FAIL_BOUND
+VAL3288_8_claim_gates_false,no 3288 gate allows local-GR/alpha/Maxwell claim,true,
+VAL3288_9_next_target_focused,next target focuses q-basic Z_Q vertical silence,true,
+VAL3288_10_formalization_untouched,formalization-workbench modified-file count remains zero by this script,true,formalization_changed_count=0
+VAL3288_11_overall,3288 validation overall,true,all required checks passed

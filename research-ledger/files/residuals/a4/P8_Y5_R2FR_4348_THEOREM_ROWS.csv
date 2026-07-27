@@ -1,0 +1,5 @@
+theorem_id,statement,formula,result,status,valid_for_claim
+LAM4348_THM_0_quadratic_form,"On a fixed static RI collar, the adjoint quadratic form has a lower bound by kinetic, mass and negative-correction pieces.","a_RI[Lambda,Lambda] >= Z_RI,min ||D Lambda||^2 + (M_RI,min^2 - Eta_RI - B_RI,neg)||Lambda||^2",reduces adjoint no-kernel to a positive lower-bound problem,DERIVED_CONDITIONAL,False
+LAM4348_THM_1_domain_gap,"If the domain removes the constant/gauge zero mode, a Poincare or spectral gap controls ||D Lambda|| by ||Lambda||.",||D Lambda||^2 >= lambda_dom(D_RI)||Lambda||^2,"lambda_RI,lower = Z_RI,min lambda_dom + M_RI,min^2 - Eta_RI - B_RI,neg",DERIVED_CONDITIONAL,False
+LAM4348_THM_2_positive_gap,A positive lower bound kills the homogeneous adjoint multiplier.,"lambda_RI,lower > 0 and L_RI^dagger Lambda=0 => Lambda=0",owner-tail Lambda leg vanishes,EXACT_IF_INPUTS_SIGNED,False
+LAM4348_THM_3_finite_inverse,"If the owner block is not exact-zero but lambda_RI,lower is positive, the finite inverse row is controlled.","||Lambda|| <= ||R_Lambda||/lambda_RI,lower",feeds 4347 reduced absolute owner-tail bound,BOUND_FORMULA_READY_VALUES_MISSING,False

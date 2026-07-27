@@ -1,0 +1,6 @@
+test_id,test,required_evidence,current_evidence,result,valid_for_claim
+PQT2270_0_absent_q,"Does the psi covariance map land only in Phi, with q absent?",explicit map C_munu[psi] satisfying (1-C_tt)(1+C_rr)=1 identically,metric covariance ansatz has independent temporal and radial channels,FAIL_CURRENT_CLAIM,False
+PQT2270_1_vertical_q,Is q quotient-vertical/gauge under a parent map?,a quotient q_parent with Dq killing q variations and matter/readout descent,no quotient map or matter descent for q exists in current action files,MISSING_QUOTIENT_MAP,False
+PQT2270_2_stiff_q,Does the psi action generate a positive algebraic stiffness in q?,second variation along q gives M_R^2>0 and first source leg gives j_R,psi action has kinetic/potential terms but no pullback Hessian to q,MISSING_STIFFNESS_PULLBACK,False
+PQT2270_3_source_q,Does matter/readout source q with known j_R?,delta S_matter/delta q or readout functor source coefficient in same normalization,no q-specific source coefficient in current corpus,MISSING_SOURCE_COEFFICIENT,False
+PQT2270_4_verdict,"Can psi-to-(Phi,q) map promote reduced local GR?",PQT2270_0 or PQT2270_1 closes; otherwise PQT2270_2 and PQT2270_3 source finite q_R,none closed,PSI_QUOTIENT_NOT_CLOSED_STIFFNESS_NOT_SOURCED,False

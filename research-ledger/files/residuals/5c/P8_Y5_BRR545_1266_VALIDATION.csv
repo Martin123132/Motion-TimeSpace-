@@ -1,0 +1,13 @@
+check_id,check,status,details
+VAL1266_0_sources_exist,all cited local sources exist,PASS,14/14 sources exist
+VAL1266_1_needles_found,all cited local needles found,PASS,14/14 needles found
+VAL1266_2_ap_clause_coverage,all AP1265 clauses have 1266 evidence mapping,PASS,covered=5; missing=[]
+VAL1266_3_source_hunt_nonclaim,primitive source hunt remains nonclaim and records missing source,PASS,source_hunt_rows=9
+VAL1266_4_parent_scorecard_blocked,parent origin scorecard has explicit blockers,PASS,scorecard_rows=6
+VAL1266_5_finite_intake_blocked,finite-ZR intake is not runner eligible,PASS,raw_rows=0; accepted_rows=0; docs_rows=3
+VAL1266_6_claim_gates,all claim gates remain blocked,PASS,claim_gate_rows=4
+VAL1266_7_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1266_8_next_target_1267,next target routes to first-class parent constraint or finite-ZR acquisition,PASS,1267-Y5-R10-first-class-RAB-parent-constraint-synthesis-or-finite-ZR-source-acquisition.md
+VAL1266_9_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1266_SOURCE_REGISTER.csv:14; P8_Y5_R10_1266_PRIMITIVE_SOURCE_HUNT_LEDGER.csv:9; P8_Y5_R10_1266_AP1265_CLAUSE_EVIDENCE_MAP.csv:5; P8_Y5_R10_1266_PARENT_ORIGIN_SCORECARD.csv:6; P8_Y5_R10_1266_FINITE_ZR_INTAKE_REVIEW.csv:4; P8_Y5_R10_1266_CLAIM_GATES.csv:4; P8_Y5_R10_1266_DECISION_LEDGER.csv:4; P8_Y5_R10_1266_NEXT_TARGET.csv:1
+VAL1266_10_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1266_11_overall,overall 1266 validation,PASS,1266 finds no primitive parent source for the R_AB auxiliary grammar; theorem-zero remains blocked and the best next move is first-class parent constraint synthesis or finite-ZR acquisition

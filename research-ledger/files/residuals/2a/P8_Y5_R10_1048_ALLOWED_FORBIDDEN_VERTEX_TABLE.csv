@@ -1,0 +1,8 @@
+vertex_id,sector,operator_or_slot,classification,coefficient,claim_effect,current_status,valid_for_claim,generated_utc
+VT1048_0_parent_curvature_F2,EM,"<F_Q T_Q,F_Q T_Q>_P",allowed_if_parent_owned,"C_P<T_Q,T_Q>_P",can support b_alpha=0 only if no extra F2/readout re-entry,conditional,false,2026-06-14T08:31:39.718716+00:00
+VT1048_1_scalar_F2,EM,f_X(Xhat) F_Q^2 or lambda_A F_Q^2,forbidden_required_but_currently_legal,b_alpha,finite alpha drift and Coulomb/source pressure,blocks_claim,false,2026-06-14T08:31:39.718718+00:00
+VT1048_2_fixed_charge_lattice,EM/source,n_A in fixed compact charge representation,allowed_if_parent_owned,n_A,helps source/current normalization only after T_Q owner signs,partial,false,2026-06-14T08:31:39.718721+00:00
+VT1048_3_mass_X,matter,m_A(Xhat) psi_bar_A psi_A,forbidden_required_but_currently_legal,b_mA,"composition, clocks, and source mass drift",blocks_claim,false,2026-06-14T08:31:39.718723+00:00
+VT1048_4_yukawa_X,matter,y_A(Xhat) psi_A H psi_B,forbidden_required_but_currently_legal,b_mu;b_mA,dimensionless mass-ratio drift,blocks_claim,false,2026-06-14T08:31:39.718726+00:00
+VT1048_5_binding_X,composite matter,"B_A(Xhat), Lambda_QCD(Xhat), nuclear/EM binding response",forbidden_required_or_bounded,b_nuc;beta_A,WEP/R10 composition pressure even if point-particle masses are fixed,blocks_claim,false,2026-06-14T08:31:39.718729+00:00
+VT1048_6_clock_readout_X,readout,nu_i(Xhat) or clock frame/readout normalization,forbidden_required_or_bounded,b_clock_i,clock/redshift residual independent of WEP silence,blocks_claim,false,2026-06-14T08:31:39.718731+00:00

@@ -1,0 +1,9 @@
+source_id,local_path,needle,role,valid_for_claim,claim_allowed,exists,needle_found
+SRC1298_0_1297_next,source-intake/mts_residuals/P8_Y5_R10_1297_NEXT_TARGET.csv,NEXT1297_0_1298,handoff into Kbar local projection,False,False,True,True
+SRC1298_1_1297_bridge,source-intake/mts_residuals/P8_Y5_R10_1297_SOURCE_NORMALIZATION_BRIDGE_NONCLAIM.csv,Kbar_{mu nu}:=K_{mu nu}-0.5*g_{mu nu}K,trace-reversed source slot required by the Newton bridge,False,False,True,True
+SRC1298_2_1297_dimensional,source-intake/mts_residuals/P8_Y5_R10_1297_DIMENSIONAL_LEDGER.csv,MISSING_TRACE_REVERSED_PROJECTION,explicit unresolved projection from Kmetric_chain to Kbar,False,False,True,True
+SRC1298_3_chain_kernel,source-intake/mts_residuals/P8_Y5_R10_1289_FIRST_DERIVATIVE_TERM_ROW_NONCLAIM.csv,Kmetric_chain^{00}=C_sign,available 00 chain component to project,False,False,True,True
+SRC1298_4_bound_ledger,source-intake/mts_residuals/P8_Y5_R10_1291_CHAIN_KERNEL_RESIDUAL_BOUND_LEDGER.csv,R_chain^{00}=R_m^{00}+R_L^{00}+R_cdb^{00},current component residual vector only supplies 00 branch,False,False,True,True
+SRC1298_5_Newton_requirement,source-intake/mts_residuals/P8_Y5_R10_1288_RESPONSE_MATRIX_REQUIREMENTS.csv,MISSING_KBAR_L_LOC_00,"Newton source row explicitly waits on Kbar_L,loc,00",False,False,True,True
+SRC1298_6_KL_budget,source-intake/mts_residuals/P8_Y5_R10_796_KL_AMPLITUDE_PPN_BUDGET.csv,K_L can shift weak-field metric coefficients,trace-reversed projection matters for local metric response,False,False,True,True
+SRC1298_7_metric_response_contract,source-intake/mts_residuals/P8_GK_METRIC_RESPONSE_CONTRACT.csv,K_hat is exactly the metric response of Gamma_eff,blocks projection claim until Khat/Kmetric and derivative/boundary terms close,False,False,True,True

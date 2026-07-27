@@ -1,0 +1,9 @@
+contract_id,quantity,formula_or_definition,meaning,status,numeric_value,valid_for_claim,timestamp_utc
+DVC3879_0_bGcommon,b_Gcommon,b_Gcommon := b_common_drift + b_delta_kappa + b_MHref_lock + b_PiM_JH_flux + b_GM_anti_circular + b_PPN_readout,top-level common coupling/source calibration residual after 3879,RUNNER_FILL_NONCLAIM,MISSING_PARENT_ZERO_OR_SOURCE_BOUND,False,2026-07-01T07:09:52+00:00
+DVC3879_1_bcommon,b_common_drift,|D_t ln C_*|+|D_r ln C_*|+|D_frame ln C_*|+|D_lambda ln C_*|+|Delta_domain(C_*)|,common-tail derivative/domain drift,MISSING_DERIVATIVE_SILENCE_OR_BOUND,MISSING_PARENT_ZERO_OR_SOURCE_BOUND,False,2026-07-01T07:09:52+00:00
+DVC3879_2_kappa,b_delta_kappa,|D ln G_ref| or |delta kappa/kappa0|,parent EH coefficient drift/mismatch,MISSING_PARENT_CONSTANT_OR_BOUND,MISSING_PARENT_ZERO_OR_SOURCE_BOUND,False,2026-07-01T07:09:52+00:00
+DVC3879_3_MHref,b_MHref_lock,same-frame positive M_H_ref and H_tau/H_ref lock failure,source denominator/source charge lock,MISSING_SAME_FRAME_MHREF,MISSING_PARENT_ZERO_OR_SOURCE_BOUND,False,2026-07-01T07:09:52+00:00
+DVC3879_4_PiM,b_PiM_JH_flux,"abs(Pi_M dJ_H)+abs([d,Pi_M]J_H)+boundary/reference flux",projected Hilbert current closure,MISSING_PIM_JH_CLOSURE,MISSING_PARENT_ZERO_OR_SOURCE_BOUND,False,2026-07-01T07:09:52+00:00
+DVC3879_5_GM,b_GM_anti_circular,|delta ln mu_obs - delta ln G0 - delta ln M_H_ref|,measured GM split residual,NO_ORBITAL_GM_BACKFILL,MISSING_PARENT_ZERO_OR_SOURCE_BOUND,False,2026-07-01T07:09:52+00:00
+DVC3879_6_PPN,b_PPN_readout,Delta_cal+Delta_PPN+gamma/beta/preferred-frame source tails,second-order/local-GR readout stability,MISSING_PPN_READOUT_STABILITY,MISSING_PARENT_ZERO_OR_SOURCE_BOUND,False,2026-07-01T07:09:52+00:00
+DVC3879_7_observable_bound,delta_C,delta_C(p)=C_*(p)/C_*(p0)-1 with |ln(1+delta_C)| bounded by CGT3879_3,observable common coupling drift,SOURCE_BACKED_BOUND_OR_ZERO_REQUIRED,MISSING_PARENT_ZERO_OR_SOURCE_BOUND,False,2026-07-01T07:09:52+00:00

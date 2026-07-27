@@ -1,0 +1,7 @@
+gate_id,gate,result,evidence
+PF515_0_sources_exist,all cited 515 sources exist,pass,validated by source register
+PF515_1_Gamma_owner_found,actual Gamma_eff scalar-density owner found in current corpus,fail,MA515_0
+PF515_2_Khat_response_found,actual K_hat metric-response derivation found,fail,MA515_1
+PF515_3_response_template_found,a viable response-field template exists,pass_conditional,MA515_2 and P8_YLOC_SOURCE_CURRENT_NOETHER_AUDIT.csv
+PF515_4_q_loc_zero,q_loc zero is derived for current MTS,fail,Gamma/Khat match and double-zero gates fail
+PF515_5_residual_branch,"if match fails, residual branch is explicit",pass,514 residual branch plus 219/220 leakage bounds

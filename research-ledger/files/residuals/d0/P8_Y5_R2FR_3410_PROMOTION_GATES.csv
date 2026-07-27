@@ -1,0 +1,6 @@
+gate_id,gate,current_result,promotes_if,valid_for_claim
+PG3410_0_split_written,"q_loc is separated into scalar, vector, preferred-frame, source/readout and range lanes",PASS_AS_NONCLAIM_DERIVATION_INTERFACE,not a claim gate,False
+PG3410_1_alpha_vector_zero,q_loc alpha-vector leakage is theorem-zero,FAIL_NOT_PROVED,"no-spurion, Hodge transverse zero, momentum-map zero, or GK Ward identity is parent-signed",False
+PG3410_2_alpha_vector_bound,"if vector leakage survives, the product bound is source-backed",FAIL_NO_W_OR_f_SOURCE_ROW,abs(W_q_alpha3*f_qV)<=5.381673706808059e-15 plus alpha1/alpha2/xi checks,False
+PG3410_3_scalar_beta_gamma,scalar q_loc lanes pass gamma/beta/R10/source-readout checks,FAIL_U2_GAMMA_RANGE_READOUT_UNSIGNED,"W_beta, W_gamma, range kernel and same-readout/source normalization are signed",False
+PG3410_4_local_GR,q_loc no longer blocks local GR,BLOCKED,"PG3410_1 or PG3410_2 passes, and PG3410_3 passes or scalar lanes are theorem-zero",False

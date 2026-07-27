@@ -1,0 +1,6 @@
+debt_id,source_or_boundary,missing_zero,fallback,blocks,valid_for_claim
+S0_boundary_source,J_B^i or B_B^i,boundary scalar stationary marker-free Ward no-flux theorem,fill W_boundary_alpha3_epsilon_boundary_flux,LRV_BOUNDARY_R7_ALPHA3,false
+S1_domain_vector_source,J_V^i,domain selector no-vector Euler theorem,fill alpha1/alpha2/alpha3 domain vector products,LRV_DOMAIN_R5_ALPHA1;LRV_DOMAIN_R6_ALPHA2;LRV_DOMAIN_R7_ALPHA3,false
+S2_domain_STF_source,J_S^{ij},projector/domain STF stress zero or topological stress theorem,fill xi and retained-stress residual rows,LRV_DOMAIN_R8_XI;LRV_PROJECTOR_STRESS_ACCOUNTING,false
+S3_source_normalization_current,J_mu,constant measured-GM/source-normalization Noether theorem,fill c_domain_source_normalization_operator and R11 source rows,LRV_DOMAIN_R11_SOURCE_NORMALIZATION,false
+S4_Bianchi_stress_current,nabla_mu T_extra^{mu nu},full Ward/Bianchi stress ledger,retain and score T_extra residual vector,LRV_PROJECTOR_STRESS_ACCOUNTING;LRV_TOTAL_ALPHA3_GUARD,false

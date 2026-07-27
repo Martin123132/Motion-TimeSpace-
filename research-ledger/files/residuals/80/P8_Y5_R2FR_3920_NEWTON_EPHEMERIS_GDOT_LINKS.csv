@@ -1,0 +1,6 @@
+row_id,arena,formula_or_rule,meaning,status,valid_for_claim,timestamp_utc
+ARE3920_0_beta,PPN beta,delta_beta_common = (1+xi_2)/(1+xi_1)^2 - 1 = (xi_2-2 xi_1-xi_1^2)/(1+xi_1)^2,pass only if Delta_sq=0 theorem or |Delta_sq| below bound,NOT_CLAIMED,False,2026-07-01T10:53:05+00:00
+ARE3920_1_Newton,Newton/inverse-square,"a_obs/a_N = (1+xi_1)-r partial_r xi_1; constant xi_1 is GM calibration, nonconstant xi_1 is a Newton/ephemeris residual",constant xi_1 can be GM calibration; radial xi_1 creates force-law residual,BOUND_REQUIRED_IF_NONCONSTANT,False,2026-07-01T10:53:05+00:00
+ARE3920_2_ephemeris,orbital/ephemeris,epsilon_r and any finite-range shape are scored against orbital residual rows,do not absorb range/radial/source hair into the monopole,BOUND_REQUIRED_IF_NONCONSTANT,False,2026-07-01T10:53:05+00:00
+ARE3920_3_Gdot,dotG/G,partial_t ln(GM_obs)=partial_t ln(1+xi_1),time-varying common mode enters measured GM drift,BOUND_REQUIRED_IF_TIME_DEPENDENT,False,2026-07-01T10:53:05+00:00
+ARE3920_4_WEP_source,source/WEP,Delta_AB xi_1 or Delta_AB Delta_sq,source-composition dependence is not universal calibration,BOUND_REQUIRED_IF_SOURCE_DEPENDENT,False,2026-07-01T10:53:05+00:00

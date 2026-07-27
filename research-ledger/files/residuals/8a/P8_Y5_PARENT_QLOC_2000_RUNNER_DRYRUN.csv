@@ -1,0 +1,6 @@
+branch_id,valid_for_claim,claim_allowed,generated_utc,run_id,check,result,reason
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,false,false,2026-06-20T03:31:53.037201+00:00,RUN2000_0_live_probe,probe CMSM and public route URLs,PASS_PROBE_RECORDED,probe rows record current accessibility without claiming schema or arrays
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,false,false,2026-06-20T03:31:53.037201+00:00,RUN2000_1_contract,stage official array extraction contract,PASS_CONTRACT_READY,required columns for inventory/time/mask/attitude/orbit/gxS are explicit
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,false,false,2026-06-20T03:31:53.037201+00:00,RUN2000_2_official_arrays,acquire official segment arrays,FAIL_NOT_ACQUIRED,CMSM schema and official arrays remain unavailable from this runtime
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,false,false,2026-06-20T03:31:53.037201+00:00,RUN2000_3_product_score,score WEP product,FAIL_VALID_PREDICTION_ROWS_ZERO,no numeric tau_WEP or direct P_WEP product
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,false,false,2026-06-20T03:31:53.037201+00:00,RUN2000_4_verdict,2000 next-step decision,NEXT_2001_USER_ASSISTED_CMSM_EXPORT_OR_NONCLAIM_SURROGATE_RECONSTRUCTION,official extraction is blocked here; next useful move is user export or labelled surrogate path test

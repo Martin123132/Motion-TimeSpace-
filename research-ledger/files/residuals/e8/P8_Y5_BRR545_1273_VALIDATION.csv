@@ -1,0 +1,13 @@
+check_id,check,status,details
+VAL1273_0_sources_exist,all cited local sources exist,PASS,10/10 sources exist
+VAL1273_1_needles_found,all cited local needles found,PASS,10/10 needles found
+VAL1273_2_uv_split,u/v radial-cell split defines the exact zero target,PASS,u=ln(J_q)=C_R/2; u=0 iff R_AB=0
+VAL1273_3_hcore_classification,ordinary H_core routes are classified and rejected for theorem-zero,PASS,ordinary H_core no-go; multiplier exact conditional; unimodular cell selected next
+VAL1273_4_dirac_audit,Dirac preservation remains blocked by unsigned H_core,PASS,DPA1273_2_preservation=BLOCKED_BY_UNSIGNED_HCORE
+VAL1273_5_finite_fallback_locked,finite branch has no source-backed accepted rows,PASS,docs_rows=11; raw_rows=0; accepted_rows=0; accepted_ready=0
+VAL1273_6_claim_gates_safe,claim gates remain blocked/open-next-target except owner-classification nonclaim gate,PASS,claim_gate_rows=6
+VAL1273_7_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1273_8_next_target_1274,next target routes to unimodular radial-cell origin or finite residual intake,PASS,1274-Y5-R10-RAB-unimodular-radial-cell-constraint-origin-or-finite-residual-intake.md
+VAL1273_9_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1273_SOURCE_REGISTER.csv:10; P8_Y5_R10_1273_UV_RADIAL_CELL_VARIABLE_CHANGE.csv:3; P8_Y5_R10_1273_HCORE_OWNER_CLASSIFICATION.csv:7; P8_Y5_R10_1273_DIRAC_PRESERVATION_AUDIT.csv:6; P8_Y5_R10_1273_FINITE_RESIDUAL_DECISION.csv:3; P8_Y5_R10_1273_ZR_VALIDATOR_RESCAN.csv:11; P8_Y5_R10_1273_CLAIM_GATES.csv:6; P8_Y5_R10_1273_DECISION_LEDGER.csv:3; P8_Y5_R10_1273_NEXT_TARGET.csv:1
+VAL1273_10_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1273_11_overall,overall 1273 validation,PASS,"1273 classifies H_core owner routes using u=ln(J_q), rejects ordinary H_core as an exact zero owner, keeps multiplier/unimodular routes conditional, and routes to unimodular radial-cell origin next"

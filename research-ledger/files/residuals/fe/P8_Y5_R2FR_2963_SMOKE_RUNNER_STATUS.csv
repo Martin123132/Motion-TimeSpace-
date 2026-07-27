@@ -1,0 +1,5 @@
+smoke_id,object,input_rows,refused_rows,valid_mts_rows,smoke_status,notes,claim_allowed,valid_for_claim,checkpoint,branch_id,control_only,score_ready,valid_prediction_row,generated_utc
+SMOKE2963_0_schema,input schema,10,10,0,PASS_SCHEMA_ONLY,schema may pass even while claim rows are refused,False,False,2963,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,True,False,False,2026-06-25T05:42:03.222084+00:00
+SMOKE2963_1_refusal,placeholder refusal,10,10,0,PLACEHOLDERS_REJECTED,all current finite-branch rows are placeholders/nonclaim,False,False,2963,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,True,False,False,2026-06-25T05:42:03.222084+00:00
+SMOKE2963_2_promotion,promotion rules,7,7,0,PROMOTION_BLOCKED,no promotion rule is satisfied,False,False,2963,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,True,False,False,2026-06-25T05:42:03.222084+00:00
+SMOKE2963_3_expected,claim outcome,10,10,0,CLAIM_FALSE_EXPECTED,schema_pass=True; promotion_pass=False; valid_mts_rows=0,False,False,2963,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,True,False,False,2026-06-25T05:42:03.222084+00:00

@@ -1,0 +1,7 @@
+action_id,object,formula,derivation_status,meaning,valid_for_claim,timestamp_utc
+CLA4846_0_fields,response decomposition,R_+=Q+Z; R_-=Q-Z; Q exchange-even; Z exchange-odd,ALGEBRAIC_DECOMPOSITION,cosmological volume load and local odd response are no longer forced into one parity channel,False,2026-07-09T20:30:00+00:00
+CLA4846_1_spatial_geometry,observed-time spatial bundle,"u=tau_obs/sqrt(-g(tau_obs,tau_obs)); h=delta+u tensor u; theta=nabla.u; hQh=Q",CONDITIONAL_ON_PARENT_TAU_LOCK,uses the same source/clock/orbit coframe candidate rather than a fitted cosmology frame,False,2026-07-09T20:30:00+00:00
+CLA4846_2_determinant,covariant spatial determinant,I_Q=((Tr_h Q)^3-3 Tr_h Q Tr_h(Q^2)+2 Tr_h(Q^3))/6,EXACT_THREE_DIMENSIONAL_IDENTITY,"on Q=s h, I_Q=s^3",False,2026-07-09T20:30:00+00:00
+CLA4846_3_constraint,local coherent-load constraint,C_Q=Q-(ell_Q theta/3)h; Gamma_mem=Gamma_* F(I_Q)+Lambda:C_Q,PRIVATE_PARENT_ACTION_CANDIDATE,the isotropic volume projector is imposed variationally and its multiplier stress is retained,False,2026-07-09T20:30:00+00:00
+CLA4846_4_auxiliary_equations,Q and Lambda Euler equations,Q=(ell_Q theta/3)h; Lambda=-Gamma_* F'(I_Q) Cof_h(Q),EXACT_AUXILIARY_VARIATION,"Lambda is O(theta^2), so it cannot be dropped from the metric/flow variation",False,2026-07-09T20:30:00+00:00
+CLA4846_5_combined_density,same-action Gamma carrier,"Gamma_eff=Gamma0+Gamma_mem[Q,Lambda,u]+Gamma_Z[Z]",PRIVATE_COMBINED_ACTION_CANDIDATE,Q carries coherent cosmology; the positive Z action from 4845 carries odd local deviations,False,2026-07-09T20:30:00+00:00

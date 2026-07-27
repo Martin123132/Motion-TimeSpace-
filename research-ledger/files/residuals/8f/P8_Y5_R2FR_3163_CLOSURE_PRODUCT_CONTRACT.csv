@@ -1,0 +1,5 @@
+closure_id,quantity,condition,required_bound_l2,required_bound_general,formula,status,valid_for_claim,generated_utc
+KC3163_0_if_MLambda_signed,L_W_phys,if M_Lambda=1 is parent-signed,1.661478072732745e+20,9.592548125449111e+19,L_W_phys <= cap because |M_Lambda|=1,conditional_bound_not_claim,false,2026-06-26T10:07:10.583454+00:00
+KC3163_1_closure_product,K_LambdaW,if M_Lambda is not parent-signed,1.661478072732745e+20,9.592548125449111e+19,K_LambdaW := L_W_phys |M_Lambda| <= cap,closure_product_contract,false,2026-06-26T10:07:10.583454+00:00
+KC3163_2_reciprocal_MLambda_cap,|M_Lambda|,if L_W_phys is independently derived or bounded,1.661478072732745e20 / L_W_phys,9.592548125449111e19 / L_W_phys,|M_Lambda| <= cap/L_W_phys,reciprocal_contract_ready,false,2026-06-26T10:07:10.583454+00:00
+KC3163_3_reciprocal_LWphys_cap,L_W_phys,if |M_Lambda| is independently derived or bounded,1.661478072732745e20 / |M_Lambda|,9.592548125449111e19 / |M_Lambda|,L_W_phys <= cap/|M_Lambda|,reciprocal_contract_ready,false,2026-06-26T10:07:10.583454+00:00

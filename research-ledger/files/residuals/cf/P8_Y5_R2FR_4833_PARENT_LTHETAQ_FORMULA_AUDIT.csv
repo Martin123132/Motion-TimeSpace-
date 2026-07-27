@@ -1,0 +1,9 @@
+clause_id,object,formula,current_result,needed_signature_or_input,valid_for_claim,timestamp_utc
+PLT4833_0_first_variation,parent sector first variation,delta L_X=E_X delta X + d Theta_X(delta X),formula_written_not_owned,parent_LX_signed;theta_X_signed,False,2026-07-08T11:38:57+00:00
+PLT4833_1_Noether_current,Noether current,J_epsilon^X=Theta_X(delta_epsilon X)-mu_epsilon,template_only,vertical_generator_signed;theta_X_signed,False,2026-07-08T11:38:57+00:00
+PLT4833_2_charge_decomposition,surface charge and constraints,J_epsilon^X=dQ_epsilon^X+epsilon C_X,formula_written_not_owned,Q_X_signed;DC_operator_signed,False,2026-07-08T11:38:57+00:00
+PLT4833_3_boundary_covector,Hamiltonian boundary covector,delta H_epsilon^X|_S=int_S(delta Q_epsilon^X-i_epsilon Theta_X+delta B_ct),boundary_pairing_known_not_cancelled,Bct_reference_owner_signed;boundary_condition_lock_signed,False,2026-07-08T11:38:57+00:00
+PLT4833_4_BX_pullback,edge boundary momentum,B_X=i_S^*(delta Q_epsilon^X-i_epsilon Theta_X+delta B_ct),definition_sharpened,same_branch_signed;hodge_domain_signed,False,2026-07-08T11:38:57+00:00
+PLT4833_5_Hodge_bound,first b_X norm law,if B_exact=d_S b_X and delta_S b_X=0 then ||b_X||_2 <= C_H ||B_exact||_2/sqrt(lambda_1),derived_bound_law,spectral_gap_lambda1_abs;B_exact_norm_abs,False,2026-07-08T11:38:57+00:00
+PLT4833_6_edge_feed,kernel edge feed,Q_edge <= C_corner+||d_S(F epsilon)||_*||b_X||_*+harmonic+residual+K_boundary,bound_law_executable,norm_dS_Feps_abs;harmonic_edge_abs;residual_edge_abs;K_boundary_abs,False,2026-07-08T11:38:57+00:00
+PLT4833_7_guard,no circular source normalization,"B_X and b_X are parent/Hodge objects, not orbital GM or post-readout masks",guard_active,no_cancellation_guard;no_measured_GM_absorption_signed,False,2026-07-08T11:38:57+00:00

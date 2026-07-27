@@ -1,0 +1,5 @@
+firewall_id,rule,reason,status,valid_for_claim
+FW4352_0,Do not set B_RI=0 from no-flux alone.,"The RI boundary term is zero only when multiplier traces, fixed domain/corners and differentiability/routing clauses all hold.",ACTIVE,False
+FW4352_1,Do not set I_RI=0 from the static elliptic energy identity alone.,Incoming modes require a stationary/no-incoming selector or finite incoming flux bound.,ACTIVE,False
+FW4352_2,"Do not erase physical radiation, source crossing or open-memory pullback.","Such terms are routed or bounded, not converted into local bulk silence.",ACTIVE,False
+FW4352_3,Do not mix clean-branch zero rows with open-branch finite rows.,B_RI=0 and I_RI=0 must hold in the same compact static branch as lambda_4350>0.,ACTIVE,False

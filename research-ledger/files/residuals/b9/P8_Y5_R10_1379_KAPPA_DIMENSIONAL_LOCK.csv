@@ -1,0 +1,5 @@
+lock_id,quantity,symbolic_units_rule,derived_from,status,missing,valid_for_claim,claim_allowed
+KDL1379_0_action_density_match,kappa_m,[kappa_m] = [L0^-2 Fhat] / [(partial eta)^2],match gradient term (kappa_m/2)(partial eta)^2 to L0^-2 Fhat in the parent density,SYMBOLIC_DIMENSIONAL_RULE_ONLY,units of eta/m; units of Fhat; local coordinate convention; action-density normalization,False,False
+KDL1379_1_transition_length,ell_tr,ell_tr^2 = kappa_m L0^2 / F2,linearized Euler equation kappa_m Box eta - L0^-2 F2 eta=0,FORMULA_DIMENSIONALLY_CONDITIONAL,kappa_m value; F2 sign/value; L0 scale rule,False,False
+KDL1379_2_stability_sign,kappa_m F2,kappa_m F2 > 0 for real exponential relaxation length in static local normal coordinate,ell_tr=sqrt(kappa_m L0^2/F2) and decaying branch,SIGN_CONDITION_WRITTEN_NOT_SOURCED,parent sign convention; potential curvature sign; ghost/tachyon exclusion,False,False
+KDL1379_3_verdict,dimensional lock,"symbolic unit relations are available, but numeric/source lock is absent",KDL1379_0 through KDL1379_2,LOCK_SCHEMA_READY_VALUES_MISSING,source-backed units/value rows,False,False

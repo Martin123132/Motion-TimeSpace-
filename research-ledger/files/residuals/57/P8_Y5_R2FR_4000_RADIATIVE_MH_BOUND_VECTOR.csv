@@ -1,0 +1,8 @@
+bound_id,target,formula,numeric_value,units,status,valid_for_claim,timestamp_utc
+EMB4000_0_master,epsilon_EM_source_4000,|Delta_Hodge_EM|+|delta_w_EM|+|C_XF2|+|C_JQ|+|C_EM_readout|+|Delta_rad_Poynting|+|Delta_internal_exchange|,MISSING_PARENT_SIGNED_COMPONENTS,dimensionless,EXECUTABLE_VECTOR_READY,False,2026-07-01T19:12:21+00:00
+EMB4000_1_bound_stress_inside_MH,epsilon_EM_bound_stress_not_in_MH,0 if minimal Maxwell stress is varied with the same observed coframe and included in J_H_total,ZERO_CONDITIONAL_INSIDE_MH,dimensionless,CONDITIONAL_ZERO_ROUTE,False,2026-07-01T19:12:21+00:00
+EMB4000_2_radiative_flux,Delta_rad_Poynting,(|Delta U_EM|+|W_matter|+|Phi_external|+|B_improvement|)/(M_H c^2),MISSING_FLUX_WINDOW_AND_SOURCE_ROWS,dimensionless_per_window_or_time^-1_declared,FINITE_BOUND_TEMPLATE,False,2026-07-01T19:12:21+00:00
+EMB4000_3_Hodge,Delta_Hodge_EM,*_EM - *_obs[e_obs(q)] or chi_EM - chi_obs,MISSING_OBSERVED_HODGE_PARENT_SIGNATURE,dimensionless_or_tensor,OPEN_MAXWELL_GEOMETRY_OWNER,False,2026-07-01T19:12:21+00:00
+EMB4000_4_normalization,delta_w_EM,D ln w_EM or w_EM-1 for Maxwell action/stress scale,MISSING_UNIQUE_F2_OR_ALPHA_OWNER,dimensionless,OPEN_NORMALIZATION_OWNER,False,2026-07-01T19:12:21+00:00
+EMB4000_5_nonminimal,C_XF2 + C_EM_readout,hidden/motion/time field F^2 terms plus radiative/readout regeneration,MISSING_OPERATOR_EXCLUSION_OR_BOUND,model_dependent,OPEN_NONMINIMAL_EM_GUARD,False,2026-07-01T19:12:21+00:00
+EMB4000_6_internal_exchange,Delta_internal_exchange,0 if matter and EM are varied in same parent action/current owner; otherwise source-current mismatch bound,ZERO_CONDITIONAL_IN_TOTAL_STRESS,dimensionless,CONDITIONAL_ZERO_ROUTE,False,2026-07-01T19:12:21+00:00

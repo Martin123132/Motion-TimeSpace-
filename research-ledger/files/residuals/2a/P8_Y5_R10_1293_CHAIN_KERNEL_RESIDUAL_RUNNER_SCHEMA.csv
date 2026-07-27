@@ -1,0 +1,7 @@
+schema_id,requirement,pass_condition,on_fail,valid_for_claim,claim_allowed
+CKR1293_0_required_columns,"each runner row must declare runner_id, residual_component, prediction_form, zero_condition, required_inputs, maps_to_tests, source_path, source_anchor, current_status, valid_for_claim, claim_allowed",all required columns are present and non-empty,reject row with STRUCTURE_FAIL,False,False
+CKR1293_1_missing_input_policy,required_inputs must contain no MISSING_* tokens before any score is emitted,missing_token_count=0,reject row with MISSING_INPUTS,False,False
+CKR1293_2_claim_flag_policy,valid_for_claim and claim_allowed must both be true before score export is possible,valid_for_claim=true and claim_allowed=true after source validation,reject row with NONCLAIM_FLAGS,False,False
+CKR1293_3_source_anchor_policy,source_path must exist and source_anchor must be found in the source text,source_exists=true and anchor_found=true,reject row with SOURCE_ANCHOR_FAIL,False,False
+CKR1293_4_response_policy,local response operator/observable limit must be sourced for every mapped arena,response operator fields are present and sourced,reject row with RESPONSE_OPERATOR_MISSING,False,False
+CKR1293_5_score_policy,score fields remain blank unless all prior gates pass,score_emitted=false for current smoke; future score only after all gates pass,abort runner,False,False

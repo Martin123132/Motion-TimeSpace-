@@ -1,0 +1,9 @@
+schema_id,field,acceptance_rule,input_type,rejection_rule,control_only,score_ready,valid_prediction_row,valid_for_claim,claim_allowed,generated_utc
+FS2853_0_Q_CAB,Q_CAB_value,finite real charge or parent-signed theorem-zero row,numeric_or_theorem,MISSING_Q_CAB;placeholder;closure-only zero,True,False,False,False,False,2026-06-24T12:33:24.994713+00:00
+FS2853_1_q_R_eff,q_R_eff_value,finite real charge or parent-signed theorem-zero row,numeric_or_theorem,MISSING_q_R_eff;placeholder;closure-only zero,True,False,False,False,False,2026-06-24T12:33:24.994719+00:00
+FS2853_2_sigma_R,sigma_R_value,finite nonzero sign or parent operator sign theorem,numeric_or_theorem,MISSING_sigma_R;implicit sign,True,False,False,False,False,2026-06-24T12:33:24.994722+00:00
+FS2853_3_GM,GM_value,positive measured source GM or mass convention tied to U=GM/r,numeric_or_theorem,MISSING_GM;bare mass;orbital fit as proof,True,False,False,False,False,2026-06-24T12:33:24.994726+00:00
+FS2853_4_A_total,A_total_value,computed only by runner from accepted Q_CAB/q_R_eff/sigma_R,computed,user-supplied A_total without inputs;tuned cancellation,True,False,False,False,False,2026-06-24T12:33:24.994729+00:00
+FS2853_5_delta_p,delta_p_value,computed only by runner from A_total and GM,computed,computed with missing or nonpositive GM,True,False,False,False,False,2026-06-24T12:33:24.994732+00:00
+FS2853_6_sources,source_path/equation_anchor,every accepted input needs existing local source path and exact anchor,provenance,web-only;generic citation;missing file,True,False,False,False,False,2026-06-24T12:33:24.994736+00:00
+FS2853_7_vector,full_vector_status,gamma lane cannot promote local GR without full PPN vector closure,guard,gamma-only pass,True,False,False,False,False,2026-06-24T12:33:24.994739+00:00

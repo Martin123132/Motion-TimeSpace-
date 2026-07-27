@@ -1,0 +1,18 @@
+check_id,result,detail,valid_for_claim,claim_allowed
+VAL1700_0_sources_exist,PASS,all cited local source paths exist and required needles are present,False,False
+VAL1700_1_exhaustiveness_blocked,PASS,parent grammar exhaustiveness is not promoted,False,False
+VAL1700_2_prior_routes_covered,PASS,"audit covers no-marker, source-current, SPM, terminal metric, and parent primitive routes",False,False
+VAL1700_3_counterexamples_complete,PASS,counterexample merge covers all live exhaustiveness blockers,False,False
+VAL1700_4_signoff_contract_complete,PASS,parent action signoff contract includes all required locks,False,False
+VAL1700_5_contract_not_signed,PASS,no signoff is marked parent-signed,False,False
+VAL1700_6_readout_selected,PASS,readout no-reentry is selected as the next contained target,False,False
+VAL1700_7_readout_not_claimed,PASS,readout no-reentry is not claimed as derived,False,False
+VAL1700_8_runner_blocks,PASS,"runner blocks exhaustiveness, Hom, Delta_w, readout, score, and local-GR claims",False,False
+VAL1700_9_next_selected,PASS,next target selects readout/effective no-reentry or finite product map,False,False
+VAL1700_10_local_gr_blocked,PASS,local GR/Newton claim remains blocked,False,False
+VAL1700_11_no_claim_flags,PASS,all generated scoring and claim flags remain false,False,False
+VAL1700_12_csv_parse,PASS,all generated 1700 CSVs parse,False,False
+VAL1700_13_branch_copies,PASS,branch/quarantine/queue copies exist,False,False
+VAL1700_14_pycache_absent,PASS,scripts __pycache__ absent,False,False
+VAL1700_15_formalization_untouched,PASS,no 1700 outputs found under formalization-workbench,False,False
+VAL1700_OVERALL,PASS,1700 parent grammar exhaustiveness audit and readout no-reentry target validation,False,False

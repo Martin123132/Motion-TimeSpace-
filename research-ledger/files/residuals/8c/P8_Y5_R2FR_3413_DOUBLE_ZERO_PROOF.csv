@@ -1,0 +1,5 @@
+proof_id,statement,calculation,passes_if,current_result,valid_for_claim
+DZ3413_0_value,"At Z=0, Gamma_eff-Gamma0=0.",Gamma_eff-Gamma0=1/2 M_AB Z^A Z^B+O(Z^4),Gamma0 is constant/background-subtracted and Z=0 is the physical local residual state,PASS_FORMAL_CONDITIONAL,False
+DZ3413_1_first_variation,The first residual variation vanishes at Z=0.,"partial Gamma_eff/partial Z^A=M_AB Z^B+O(Z^3), so partial_A Gamma_eff|Z=0=0",no linear source term J_A Z^A or boundary term B_A Z^A is present,PASS_FORMAL_CONDITIONAL,False
+DZ3413_2_Euler,The Euler equation can force Z=0 on compact local domains only if the operator is positive and source-free.,L_AB Z^B=J_A+B_A; positivity gives Z=0 only when J_A=B_A=0,M_AB/L_AB positive after constraints and every local source/boundary charge vanishes,FAIL_CURRENT_SOURCE_NEUTRALITY,False
+DZ3413_3_physical_lock,The formal Z zero must be the physical q_loc/PPN/source residual zero.,Z^A=Y_loc^A through beta/gamma/alpha_i/xi/Gdot/R11 order,component map covers Y0-Y6 and observed readout/source normalization,FAIL_CURRENT_COMPONENT_LOCK,False

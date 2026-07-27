@@ -1,0 +1,7 @@
+gate_id,gate,status,reason,valid_for_claim,claim_allowed
+GATE1385_0_sources,all cited sources exist and anchors are present,PASS,source register validates against local corpus,False,False
+GATE1385_1_contract,canonical gap/coupling parent contract exists,PASS_CONTRACT_READY,"CGC1385 rows define mu_m^2, J_c/g_c, zero route, finite beta route and no-single-coupling policy",False,False
+GATE1385_2_zero_route,g_c=0 theorem is parent signed,BLOCKED_ZERO_ROUTE_UNSIGNED,GZ1385_6 records active unsigned clauses/counterexamples,False,False
+GATE1385_3_finite_route,finite beta_source/beta_test scoring is source-backed,BLOCKED_FINITE_ROWS_MISSING,"mu_m^2, beta_s, beta_t, Phi_S, epsilon_Z and tail envelope are missing",False,False
+GATE1385_4_arenas,R10/PPN/WEP/clock/orbital projections can score,BLOCKED_ARENA_PROJECTIONS_MISSING,arena gates all remain blocked with explicit missing inputs,False,False
+GATE1385_5_local_claim,local GR / Newton / PPN / R10 pass can be claimed,BLOCKED_NO_CLAIM,"1385 is a parent contract and fork selection, not a derived local GR limit",False,False

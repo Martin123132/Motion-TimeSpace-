@@ -1,0 +1,13 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1244_0_sources_exist,all cited local sources exist,PASS,7/7 sources exist,False,False
+VAL1244_1_needles_found,all cited local needles found,PASS,7/7 needles found,False,False
+VAL1244_2_GM_convention,GM/source convention rows are declared,PASS,gm_rows=4,False,False
+VAL1244_3_stat_policy,strict one-sigma nonclaim policy is declared,PASS,N_sigma=1 sigma_gamma=2.3e-5,False,False
+VAL1244_4_q_bound,q_R_hat guardrail derives from gamma schema,PASS,abs(q_R_hat)<=4.6e-5 strict smoke guardrail,False,False
+VAL1244_5_qR_missing,q_R_hat remains missing,PASS,MISSING_QR_VALUE_UNCHANGED,False,False
+VAL1244_6_claim_gates,claim gates remain blocked/nonclaim,PASS,claim_gate_rows=4,False,False
+VAL1244_7_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables,False,False
+VAL1244_8_next_target_1245,next target is policy-fed Q_R smoke runner,PASS,1245-Y5-R10-PPN-QR-policy-fed-smoke-runner-and-source-hunt-update.md,False,False
+VAL1244_9_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1244_SOURCE_REGISTER.csv:7; P8_Y5_R10_1244_GM_CONVENTION_PACK.csv:4; P8_Y5_R10_1244_PPN_GAMMA_STATISTICAL_POLICY.csv:3; P8_Y5_R10_1244_QR_BOUND_DERIVATION_NONCLAIM.csv:2; P8_Y5_R10_1244_RUNNER_POLICY_FEED.csv:1; P8_Y5_R10_1244_DECISION_LEDGER.csv:3; P8_Y5_R10_1244_CLAIM_GATES.csv:4; P8_Y5_R10_1244_NEXT_TARGET.csv:1,False,False
+VAL1244_10_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_write_count_since_run_start=0,False,False
+VAL1244_11_overall,overall 1244 validation,PASS,1244 declares GM convention and nonclaim PPN gamma statistical policy while leaving q_R_hat missing,False,False

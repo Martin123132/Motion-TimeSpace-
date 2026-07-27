@@ -1,0 +1,4 @@
+envelope_id,quantity,formula,rule,status,valid_for_claim
+ENV1850_0_component_vector,absolute_component_vector,"(|c_g|,|b_dis|,|b_A|,|b_alpha|,|b_marker|,|delta_kappa_A|,|q_nonH|,|Delta_W_support|,|q_domain|,|q_boundary|)",all unknown signs are discarded,GUARDRAIL_ACTIVE,False
+ENV1850_1_no_cancellation,qbar_XT_bound_abs,sum of absolute projected component magnitudes,"no cancellation between frame, marker, source and boundary tails may be used to pass local tests",GUARDRAIL_ACTIVE,False
+ENV1850_2_claim_block,local_claim,claim_allowed=false while any component/projection has MISSING_* or valid_for_claim=false,schema can guide work but cannot be scored as evidence,CLAIM_BLOCKED,False

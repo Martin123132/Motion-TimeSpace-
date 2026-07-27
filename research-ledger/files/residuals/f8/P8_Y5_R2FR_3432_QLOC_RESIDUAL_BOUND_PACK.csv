@@ -1,0 +1,8 @@
+bound_id,object,symbolic_bound,needed_inputs,status,valid_for_claim
+QRB3432_0_metric_response,Khat metric-response defect,epsilon_DeltaK <= C_K ||P_loc nabla_mu Delta_K^{mu nu}||*/M_H_ref,Delta_K tensor profile or theorem-zero identity; projection norm; M_H_ref,FORMULA_READY_VALUES_MISSING,False
+QRB3432_1_euler_source,on-shell Euler source defect,epsilon_E <= C_E sum_A ||E_A nabla Phi^A||*/M_H_ref,"field equations, source-free collar, gradients, dual norm, M_H_ref",FORMULA_READY_VALUES_MISSING,False
+QRB3432_2_double_zero_linear,first-order fixed-point leakage,epsilon_F1 <= C_F1 ||partial_A T_GK(Phi0) delta Phi^A||*/M_H_ref,"fixed-point variables, physical q_loc component map, deltaPhi amplitude/range",FORMULA_READY_VALUES_MISSING,False
+QRB3432_3_projection,P_loc projection/commutator defect,"epsilon_Ploc <= C_P ||[P_loc,nabla]T_GK||*/M_H_ref + epsilon_domain_projector_abs",parent-owned P_loc or commutator norm; 3431 domain/projector bound values,FORMULA_READY_VALUES_MISSING,False
+QRB3432_4_boundary,GK boundary/symplectic flux,epsilon_GK_boundary <= C_B |Phi_GK|/M_H_ref,"theta_GK/Q_GK boundary flux, fixed reference, linking surface, M_H_ref",FORMULA_READY_VALUES_MISSING,False
+QRB3432_5_compact_shell_proxy,older compact-shell leakage proxy,epsilon_q_proxy <= 7.432631961576971e-06 only after mapping proxy units to PPN/source units,unit map from J_rel/q_loc proxy to observable residual vector,NUMERIC_PROXY_NOT_CLAIM_VALUE,False
+QRB3432_6_total_q_loc,total q_loc residual,epsilon_q_loc_TGK_mass <= sum(abs(QRB3432_0..QRB3432_5)),all sub-bounds or zero certificates,ABSOLUTE_SUM_GUARD,False

@@ -1,0 +1,5 @@
+audit_id,object,rule,effect_on_beta,status,valid_for_claim,timestamp_utc
+BLA3856_0_required_label,RAB_branch_label,every beta/EH2 row must declare explicit_RAB_zero_closure or finite_RAB_hair,metadata prevents gamma closure from being silently mixed into beta,PASS_BRANCH_LABEL_CARRIED,False,2026-07-01T04:37:35+00:00
+BLA3856_1_closure_control,explicit_RAB_zero_closure,allowed only as local-GR control branch,"does not set B_EH2_vertex, B_source, B_readout, or B_boundary to zero",CONTROL_BRANCH_NOT_BETA_PROOF,False,2026-07-01T04:37:35+00:00
+BLA3856_2_finite_hair,finite_RAB_hair,allowed only with sourced B_RAB rows beating the 3851 pressure budget,adds or bounds B_RAB_beta_cross if finite hair mixes into temporal readout,FINITE_HAIR_RETAINS_CROSS_TERM,False,2026-07-01T04:37:35+00:00
+BLA3856_3_cross_term_guard,B_RAB_beta_cross(RAB_branch_label),may be zero only after a readout-decoupling or field-redefinition theorem,keeps RAB work from erasing beta by bookkeeping,CROSS_TERM_GUARD_ACTIVE,False,2026-07-01T04:37:35+00:00

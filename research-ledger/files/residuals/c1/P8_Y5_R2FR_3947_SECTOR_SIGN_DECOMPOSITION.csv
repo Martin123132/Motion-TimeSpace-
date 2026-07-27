@@ -1,0 +1,11 @@
+row_id,symbol,sign_class,definition,bucket,exit_requirement,units,score_ready,claim_allowed,valid_for_claim,timestamp_utc
+SEC3947_0_rest_mass,rho_rest,positive,ordinary rest/inertial mass density in same-frame Hilbert source,E_pos,PARENT_SIGN_OR_SOURCE_LEDGER_REQUIRED,mass_energy_density,False,False,False,2026-07-01T13:23:35+00:00
+SEC3947_1_kinetic,rho_kin,positive,local kinetic energy density,E_pos,LOW_ENERGY_HAMILTONIAN_POSITIVITY_REQUIRED,energy_density,False,False,False,2026-07-01T13:23:35+00:00
+SEC3947_2_internal_positive,rho_internal_pos,positive_if_split,thermal/internal positive-energy part after stress split,E_pos,THERMODYNAMIC_SOURCE_SPLIT_REQUIRED,energy_density,False,False,False,2026-07-01T13:23:35+00:00
+SEC3947_3_Maxwell_near,rho_EM_near_pos,positive_if_descended,descended stationary Maxwell near-field energy,E_pos,MTS_EM_DESCENT_AND_DOMAIN_REQUIRED,energy_density,False,False,False,2026-07-01T13:23:35+00:00
+SEC3947_4_binding,E_binding_neg,negative_or_unsigned,binding energy/stabilizer stress not covered by total positive-energy theorem,E_neg,BOUND_OR_PARENT_POSITIVE_ENERGY_THEOREM_REQUIRED,energy,False,False,False,2026-07-01T13:23:35+00:00
+SEC3947_5_material_response,E_material_unsigned,unsigned,"polarization, magnetization, material/theta response and source labels",E_neg,MATERIAL_RESPONSE_THETA_DESCENT_OR_BOUND_REQUIRED,energy,False,False,False,2026-07-01T13:23:35+00:00
+SEC3947_6_parent_exchange,E_parent_exchange,unsigned,parent/non-EM exchange current not cancelled in total stress,E_neg,WARD_OR_EXCHANGE_BOUND_REQUIRED,energy,False,False,False,2026-07-01T13:23:35+00:00
+SEC3947_7_nonminimal_counterterm,E_nonminimal_counterterm,unsigned,"non-EH operator, improvement, counterterm or regularization energy",E_neg,OPERATOR_COUNTERTERM_BOUND_REQUIRED,energy,False,False,False,2026-07-01T13:23:35+00:00
+SEC3947_8_source_norm_shift,E_source_norm_shift,unsigned,theta/source-normalization shift in active/passive/inertial source,E_neg,SOURCE_NORMALIZATION_SUPERSELECTION_OR_BOUND_REQUIRED,energy,False,False,False,2026-07-01T13:23:35+00:00
+SEC3947_9_Poynting_flux,E_closed_leak,flux_not_negative_sector,Poynting/wall/tail/Ward/tau leakage from 3946,epsilon_closed,CLOSED_DOMAIN_ZERO_OR_FLUX_BOUND_REQUIRED,energy,False,False,False,2026-07-01T13:23:35+00:00

@@ -1,0 +1,6 @@
+step_id,runner_step,required_input,current_status,output_if_supplied,valid_for_claim,generated_utc
+A3S750_0_operator_input,load gauge-fixed linearized weak-field operator,G_PPN_mn[source] with source-normalization convention,missing,metric response delta g_mn,false,2026-06-11T18:50:06+00:00
+A3S750_1_flux_projector,load P_flux/P_alpha3 source projection,map from q_loc vector/flux component into g0i preferred-frame sector,missing,epsilon_q_momentum,false,2026-06-11T18:50:06+00:00
+A3S750_2_alpha3_projector,load PPN alpha3 extraction convention,"official PPN alpha3 normalization, frame/velocity convention, sign",missing,alpha3_q,false,2026-06-11T18:50:06+00:00
+A3S750_3_response_weight,compute W_q_alpha3,alpha3_q and epsilon_q_momentum with same norm/source frame,contract_only,W_q_alpha3 := alpha3_q/epsilon_q_momentum,false,2026-06-11T18:50:06+00:00
+A3S750_4_score,score product with no-cancellation guard,"f_qV, W_q_alpha3, q_proxy=7.43263196157697e-06",not_runnable,pass only if abs(W_q_alpha3*f_qV) <= 5.38167370680806e-15 or theorem-zero,false,2026-06-11T18:50:06+00:00

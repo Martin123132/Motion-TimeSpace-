@@ -1,0 +1,7 @@
+step_id,required_statement,math_form,if_derived,current_status,valid_for_claim
+S0_same_frame,"matter, clocks, and the EH operator use the same observed local metric/coframe","S = (1/2 kappa) int sqrt(-g_obs) R[g_obs] + S_matter[psi,g_obs] + S_extra",source normalization is not hidden in a frame change,conditional_not_parent_derived,false
+S1_constant_kappa,"kappa is constant, universal, and locally time/range/species independent","G_EH = kappa c^4/(8 pi), partial_t G_EH = partial_r G_EH = partial_A G_EH = 0","no Gdot, range-dependent G, or species-dependent source normalization",not_parent_derived,false
+S2_Gauss_law_mass,observed mass is the EH Gauss-law/ADM source in the same frame,mu_obs = lim r^2 partial_r Phi = G_EH M_EH,Newtonian measured GM is fixed operationally,conditional_only,false
+S3_no_extra_long_range_charge,"boundary, domain, bulk, scalar, vector, tensor, nonlocal, torsion/nonmetricity, and projector source charges vanish/topological/bounded",mu_extra = sum_i mu_i = 0 or explicitly scored below gates,R11 source-normalization row can close,retained_debt,false
+S4_no_absorption_cheat,range/time/species/radial dependence is not absorbed into measured GM calibration,"partial_r mu_extra = partial_t mu_extra = partial_A mu_extra = 0, else residual row stays active",calibration is not hiding physics,rule_written_not_satisfied,false
+S5_Newton_gate,all previous statements hold together,mu_obs = G_EH M_EH and c_domain_source_normalization_operator = 0,source-normalized Newtonian branch could be promoted,fail_for_current_corpus,false

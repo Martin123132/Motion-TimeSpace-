@@ -1,0 +1,12 @@
+check_id,check,status,details
+VAL1289_0_sources_exist,registered source paths exist and anchors are found,PASS,14/14 source anchors found
+VAL1289_1_chain_rule_written,delta Gamma_eff chain-rule variation is written,PASS,KVE1289_1_chain_rule_scalar_variation
+VAL1289_2_first_derivative_row_nonclaim,"first Kmetric derivative kernel row exists, has missing inputs, and remains nonclaim",PASS,KDR1289_0_Gamma_m_L_chain_kernel_00
+VAL1289_3_response_coefficients_not_claimed,response coefficient route remains explicitly unfilled,PASS,RCH1289_0_response_matrix_route
+VAL1289_4_DeltaK_template_improved_not_computable,DeltaK00 comparison template is improved but still blocked,PASS,DTC1289_2_DeltaK00_template
+VAL1289_5_claim_gates_blocked,claim gates block local GR/PPN promotion,PASS,claim_gate_rows=5
+VAL1289_6_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1289_SOURCE_REGISTER.csv:14; P8_Y5_R10_1289_KMETRIC_VARIATION_EXPANSION_NONCLAIM.csv:4; P8_Y5_R10_1289_FIRST_DERIVATIVE_TERM_ROW_NONCLAIM.csv:2; P8_Y5_R10_1289_RESPONSE_COEFFICIENT_HUNT_LEDGER.csv:3; P8_Y5_R10_1289_DELTAK00_COMPARISON_TEMPLATE.csv:3; P8_Y5_R10_1289_CLAIM_GATES.csv:5; P8_Y5_R10_1289_DECISION_LEDGER.csv:3; P8_Y5_R10_1289_NEXT_TARGET.csv:1
+VAL1289_7_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1289_8_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1289_9_next_target_1290,next target routes to m/Lcg metric kernel source or fixed-point chain zero,PASS,1290-Y5-R10-RAB-m-Lcg-metric-kernel-source-or-fixed-point-chain-zero.md
+VAL1289_10_overall,overall 1289 validation,PASS,"1289 writes the first Kmetric chain-rule derivative kernel row, keeps response coefficients and DeltaK00 nonclaim, and routes to m/Lcg kernels or fixed-point zero"

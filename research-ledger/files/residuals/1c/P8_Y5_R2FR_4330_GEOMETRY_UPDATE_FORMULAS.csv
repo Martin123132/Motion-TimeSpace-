@@ -1,0 +1,9 @@
+formula_id,name,formula,status
+F4330_0_kappa_lock,topological kappa lock,"S_top^kappa=C_top int A_3 wedge d ln(kappa_*/kappa_0), delta_A3 S=0 => d ln kappa_*=0 => D_A ln kappa_*=0",CONDITIONAL_ZERO_DERIVED
+F4330_1_source_measure,Hilbert source-measure closure,"Z_H=Z_0 exp(delta_ZH), Hilbert source-measure descent => delta_ZH=0 and D_A delta_ZH=0",CONDITIONAL_ZERO_DERIVED
+F4330_2_Gcal,calibrated Newton coupling drift,"G_cal=c^4 kappa_* Z_H/(8*pi), so D_A ln G_cal=D_A ln kappa_*+D_A delta_ZH=0",STRUCTURAL_COUPLING_ZERO_NUMERIC_VALUE_CALIBRATED
+F4330_3_EM_coeff,calibrated EM coefficient silence,b_alpha=D_X ln alpha_eff=2D_X ln g_J-D_X ln lambda_A=0 in q-basic visible EM readout branch,CONDITIONAL_ZERO_DERIVED
+F4330_4_Dq_coeff,coefficient drift zero,fixed parent-action/calibrated constants and no C_i(Phi) hidden coefficient slot => Dq_coeff=Dq_coeff_C1=epsilon_coeff=0,CONDITIONAL_ZERO_IMPORTED
+F4330_5_bound_fallback,dynamic coefficient fallback,epsilon_coeff <= |D_A ln kappa_*| + |D_A delta_ZH| + |b_alpha| + sum_A |D_A ln unit/mass constants| + sum_i |D_v c_i| ||O_i||,BOUND_RETAINED_OUTSIDE_BRANCH
+F4330_6_geometry_core_update,geometry core after coefficient reduction,epsilon_geom_core <= C_readout epsilon_readout_frame + C_terminal epsilon_terminal + C_EMopen epsilon_EM_open_boundary + C_coeff_open epsilon_coeff_open + tail_guard_sum,REDUCED_BUT_OPEN
+F4330_7_source_readout_update,source-readout after coefficient reduction,epsilon_source_readout <= (L_T L_mg + L_g) epsilon_geom_core_after_coeff + Xi_src_hidden,NONCLAIM_HANDOFF

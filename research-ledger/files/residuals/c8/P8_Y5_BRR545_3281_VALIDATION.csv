@@ -1,0 +1,11 @@
+check_id,check,passed,detail
+VAL3281_0_sources_exist,all cited source paths exist,true,
+VAL3281_1_sources_parse,all cited source paths parse,true,
+VAL3281_2_outputs_parse,all 3281 output CSVs parse,true,non-validation outputs parsed before validation write
+VAL3281_3_exact_theorem_present,parent curvature norm and vertical zero theorem rows exist,true,MKO3281_0;MKO3281_1
+VAL3281_4_constant_lambda_split,constant lambda value debt is separated from C_Z drift,true,LS3281_1_constant_lambda
+VAL3281_5_pure_CZ_bound_positive,pure C_Z bound contract has positive numeric bound and remains nonclaim,true,bound=1.389797711495e-12
+VAL3281_6_runner_expectations,C_Z runner expectations all match,true,CZB3281_0_pure_CZ_bound_contract=REFUSE_OR_FAIL;CZB3281_1_CZ_theorem_zero_conditional=PASS_NUMERIC_NONCLAIM;CZB3281_2_constant_lambda_value_debt=CONDITIONAL_NONNUMERIC_NONCLAIM;CZB3281_3_hidden_F2_missing=REFUSE_OR_FAIL;CZB3281_4_radiative_readout_missing=REFUSE_OR_FAIL;CZB3281_5_half_bound_smoke=PASS_NUMERIC_NONCLAIM;CZB3281_6_twice_bound_smoke=FAIL_BOUND
+VAL3281_7_claim_gates_false,no 3281 gate allows alpha/Maxwell/local-GR claim,true,all claim_allowed=false
+VAL3281_8_formalization_untouched,formalization-workbench modified-file count remains zero by this script,true,formalization_changed_count=0
+VAL3281_9_overall,3281 validation overall,true,all required checks passed

@@ -1,0 +1,12 @@
+check_id,check,status,details
+VAL1318_0_sources_exist,registered source paths exist and anchors are found,PASS,10/10 source anchors found
+VAL1318_1_certificates_imported,all 1317 certificates imported,PASS,certificates=6 expected_clauses=41
+VAL1318_2_clause_audit_complete,every required certificate clause is audited,PASS,audited_clauses=41 signed=0
+VAL1318_3_all_certificates_rejected,no theorem-zero certificate is promoted,PASS,CERT1317_0_parent_object_language:6;CERT1317_1_alpha_F2_zero:6;CERT1317_2_clock_readout:6;CERT1317_3_source_weight_zero:6;CERT1317_4_r10_product_vector:9;CERT1317_5_cross_arena_functor:8
+VAL1318_4_numeric_fallback_active,numeric source fallback remains active and nonclaim,PASS,RUN1314_0_alpha;RUN1314_1_clock;RUN1314_2_wep;RUN1314_3_r10;RUN1314_4_cross_arena
+VAL1318_5_counterexamples_active,counterexamples remain active after certificate attempt,PASS,HSC1313_1_alpha;HSC1313_3_clock_readout;HSC1313_4_source_weight;R10REF1315_product_bound_source
+VAL1318_6_anti_overclaim_enforced,anti-overclaim gates are enforced,PASS,AOC1318_0_no_conditional_to_certificate;AOC1318_1_no_absence_to_zero;AOC1318_2_no_readout_silence;AOC1318_3_no_numeric_shortcut
+VAL1318_7_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1318_8_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1318_9_next_target_1319,next target routes to minimal parent object-language construction,PASS,1319-Y5-R10-RAB-minimal-parent-object-language-signature-construction-or-closure.md
+VAL1318_10_overall,overall 1318 validation,PASS,1318 rejects current parent theorem-zero certificates clause-by-clause and routes to parent object-language construction attempt

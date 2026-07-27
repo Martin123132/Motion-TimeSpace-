@@ -1,0 +1,15 @@
+schema_id,runner_field,expression_or_rule,required_inputs,current_status,refusal_gate,valid_for_claim,claim_allowed
+CRS1379_0_branch_selector,transition_branch,gradient_relaxation_closure,explicit user/theory selection plus source_path/source_anchor,CLOSURE_ONLY_DEFAULT,do not claim parent derivation from branch selector alone,False,False
+CRS1379_1_kappa_m,kappa_m,positive scalar stiffness; units follow KDL1379_0,value_or_symbol; units; sign; source_path; source_anchor; extraction_method,MISSING_VALUE_ALLOWED_AS_SYMBOLIC_ONLY,numeric scoring blocked until source-backed,False,False
+CRS1379_2_F2,F2,Fhat''(m_*),value_or_symbol; units; sign; source_path; source_anchor; extraction_method,MISSING_VALUE_ALLOWED_AS_SYMBOLIC_ONLY,reject local-fit curvature,False,False
+CRS1379_3_L0,L0,fixed scalar parent scale,value_or_symbol; units; scale-setting rule; source_path; source_anchor,ACTION_ROLE_ONLY_VALUE_MISSING,reject per-arena scale fit,False,False
+CRS1379_4_ell_tr,ell_tr,sqrt(kappa_m * L0^2 / F2),kappa_m;F2;L0;sign_condition,FORMULA_READY_SYMBOLIC_ONLY,"if sign condition fails or inputs unsourced, no numeric pass",False,False
+CRS1379_5_U_B,U_B,exp(-d/ell_tr),d;ell_tr;domain/reference boundary definition,FORMULA_READY_DISTANCE_MISSING,reject toy or handpicked U_B,False,False
+CRS1379_6_Delta_m,Delta_m,A_S * U_B,A_S;U_B;boundary amplitude source,FORMULA_READY_AMPLITUDE_MISSING,reject unsourced A_S,False,False
+CRS1379_7_Delta_grad_m,Delta_grad_m,<= A_S * U_B / ell_tr,A_S;U_B;ell_tr;domain norm,FORMULA_READY_DOMAIN_NORM_MISSING,reject hidden gradient plateau,False,False
+CRS1379_8_support_powers,pS;pL;pT;pB,pS=1; pL inactive if A_L=0; pT=2 conditional for gradient stress; pB unresolved,fixed-L0 signature; stress projection; boundary/shell theorem,PARTIAL_CONDITIONAL,do not independently tune powers,False,False
+CRS1379_9_Q_alg,Q_alg_conditional,A_ref^-1 |F2| A_S^2 U_B^2/(L0^2 ell_tr),A_ref;F2;A_S;U_B;L0;ell_tr,FORMULA_READY_VALUES_MISSING,symbolic output only until all required inputs are source-backed,False,False
+CRS1379_10_Q_trans,Q_trans_conditional,retain A_T U_B^2/ell_tr + A_B U_B^pB/(L0^2 ell_tr) + |b_mem|A_S^2 U_B^2/ell_tr^3; A_L term only if fixed-L0 closure fails,A_T;A_B;pB;b_mem;A_S;U_B;ell_tr;L0;shell_bound,FORMULA_PARTIAL_SHELL_UNRESOLVED,no shell hiding or stress deletion,False,False
+CRS1379_11_shell_gate,shell_status,must be exact_projector_zero or explicit_finite_shell_bound,projector identity/no-flux/boundary row or finite shell contribution,MISSING_SHELL_CLOSURE,claim blocked if shell_status missing,False,False
+CRS1379_12_provenance_gate,provenance,"every numeric/theorem input has source_path, source_anchor, units, extraction_method",all runner fields,GATE_READY,reject MISSING_* and toy_nonclaim_no_physical_source,False,False
+CRS1379_13_verdict,closure_runner_status,schema can run symbolic dry-runs and refuse claims; numeric scoring blocked,CRS1379_0 through CRS1379_12,CLOSURE_RUNNER_SCHEMA_READY_NONCLAIM,local-GR/PPN/R10 pass blocked,False,False

@@ -1,0 +1,6 @@
+runner_id,field,schema_value,status,acceptance,valid_for_claim,claim_allowed
+QRI1373_0_contract_schema,Q_components,"Q_alg,Q_cdb,Q_mem,Q_bdy,Q_trans,Q_proj",RUNNER_SCHEMA_READY,each component must be numeric or theorem-zero with source path before scoring,False,False
+QRI1373_1_total_bound,Q_norm_bound,"sum(max(0,Q_i_bound)) over all six components",NO_CANCELLATION_SUM_READY,all components included; missing component blocks score,False,False
+QRI1373_2_gamma_bound,B_gamma,B_gamma=(c^2/(2U_min))*N_G*N_D*Q_norm_bound,PPN_BOUND_SCHEMA_READY_INPUTS_MISSING,"requires U_min,N_G,N_D plus all Q components",False,False
+QRI1373_3_pass_rule,nonclaim_Cassini_gate,B_gamma <= sigma_gamma where sigma_gamma=2.3e-5,PASS_RULE_READY_NOT_EXECUTABLE,execute only after all fields are source-backed and no MISSING markers remain,False,False
+QRI1373_4_failure_modes,refusal_conditions,missing_Q_component;missing_U_min;missing_operator_norm;proxy_input;claim_flag_true_with_missing_values,REFUSAL_GATES_READY,runner must refuse rather than silently score,False,False

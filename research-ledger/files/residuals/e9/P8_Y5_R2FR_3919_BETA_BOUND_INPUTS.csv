@@ -1,0 +1,9 @@
+row_id,symbol,units,role,source_or_zero_rule,numeric_value,status,valid_for_claim,timestamp_utc
+BIN3919_0_A_source,A_source,dimensionless,linear source coefficient,one by Z_Poisson/Z_frame in B_loc or numeric fallback,,THEOREM_ZERO_OR_FALLBACK_BOUND_INPUT,False,2026-07-01T10:46:59+00:00
+BIN3919_1_B_source,B_source,dimensionless,quadratic source coefficient,A_source^2 by EH nonlinear completion or numeric fallback,,THEOREM_ZERO_OR_FALLBACK_BOUND_INPUT,False,2026-07-01T10:46:59+00:00
+BIN3919_2_xi1,xi_1,dimensionless,linear R11 common-mode coefficient,constant part may renormalize GM; nonconstant part must be bounded,,THEOREM_ZERO_OR_FALLBACK_BOUND_INPUT,False,2026-07-01T10:46:59+00:00
+BIN3919_3_xi2,xi_2,dimensionless,quadratic R11 common-mode coefficient,must satisfy xi_2=2xi_1+xi_1^2 or beta shifts,,THEOREM_ZERO_OR_FALLBACK_BOUND_INPUT,False,2026-07-01T10:46:59+00:00
+BIN3919_4_delta_beta_common,delta_beta_common,dimensionless,(1+xi_2)/(1+xi_1)^2-1,compare to 7.8e-05 if square law not proved,,THEOREM_ZERO_OR_FALLBACK_BOUND_INPUT,False,2026-07-01T10:46:59+00:00
+BIN3919_5_XiN_radial,d_r Xi_N,per_length_or_dimensionless_gradient,radial common-mode drift,route to inverse-square/ephemeris bound,,THEOREM_ZERO_OR_FALLBACK_BOUND_INPUT,False,2026-07-01T10:46:59+00:00
+BIN3919_6_XiN_time,d_t Xi_N,per_time,time-dependent common-mode drift,route to dotG/G bound,,THEOREM_ZERO_OR_FALLBACK_BOUND_INPUT,False,2026-07-01T10:46:59+00:00
+BIN3919_7_source_shadow,S_shadow^(2),dimensionless_or_stress_response,second-order non-Hilbert source shadow,must be zero by same-frame Hilbert descent or bounded,,THEOREM_ZERO_OR_FALLBACK_BOUND_INPUT,False,2026-07-01T10:46:59+00:00

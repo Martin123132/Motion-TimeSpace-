@@ -1,0 +1,14 @@
+validation_id,passed,requirement,evidence
+VAL3025_00_sources_exist,True,every cited local source path exists,P8_Y5_R2FR_3025_SOURCE_REGISTER.csv
+VAL3025_01_csv_parse,True,generated CSV rows parse cleanly,all generated CSV artifacts import with csv.DictReader
+VAL3025_02_hunt_records_missing,True,parent coefficient hunt fails closed,P8_Y5_R2FR_3025_PARENT_COEFFICIENT_HUNT.csv
+VAL3025_03_signature_formula,True,C_beta_core signature is recorded,P8_Y5_R2FR_3025_CANCELLATION_SIGNATURE_AUDIT.csv
+VAL3025_04_bound_rows,True,bound rows translate the beta comparator correctly,P8_Y5_R2FR_3025_C_BETA_CORE_BOUND_ROWS.csv
+VAL3025_05_inputs_named,True,all required input coefficients are explicitly named,P8_Y5_R2FR_3025_SIGMAH_FPSI_INPUT_REQUIREMENTS.csv
+VAL3025_06_claims_blocked,True,all rows remain nonclaim/private-control rows,all 3025 generated ledgers
+VAL3025_07_missing_markers_nonclaim,True,rows with MISSING markers are never valid_for_claim=true,all 3025 generated ledgers
+VAL3025_08_branch_copies_exist,True,branch copies and acquisition queue exist,P8_Y5_R2FR_3025_BRANCH_COPIES.csv
+VAL3025_09_outputs_scoped,True,no generated file is outside post-checkpoint-work,generated path scope check
+VAL3025_10_formalization_not_targeted,True,formalization-workbench is not modified by this checkpoint,output target list excludes formalization-workbench
+VAL3025_11_next_target_selected,True,next target selects coefficient extraction contract,P8_Y5_R2FR_3025_NEXT_TARGET.csv
+VAL3025_99_overall,True,all 3025 validation checks pass,aggregate of VAL3025_00 through VAL3025_11

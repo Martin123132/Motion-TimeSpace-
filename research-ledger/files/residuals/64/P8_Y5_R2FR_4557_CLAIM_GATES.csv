@@ -1,0 +1,6 @@
+gate_id,requirement,status,claim_effect,valid_for_claim
+G4557_0_zeta3_private_zero,zeta3=0 inside same-metric Hilbert stress-conserved private selector,PASS_PRIVATE_SELECTOR,zeta3 removed from active private product pressure,False
+G4557_1_EM_Poynting_owner,Poynting/EM stress is part of T_total and not a second source,PASS_OWNER_BRANCH,no EM side-channel contribution to zeta3 inside branch,False
+G4557_2_boundary_no_flux_guard,nonzero radiative/cross-sector flux is routed or the branch reopens,GUARD_RETAINED,prevents flux amnesia and overclaiming,False
+G4557_3_global_public_firewall,global parent/public zeta3 claim remains false,PASS_FIREWALL,local private proof is not promoted to public/global theorem,False
+G4557_4_next_channel_selection,remaining channels ranked after zeta3 removal,PASS_NEXT_SELECTED,next hard channel = ((2+2gamma-beta)/3)-1,False

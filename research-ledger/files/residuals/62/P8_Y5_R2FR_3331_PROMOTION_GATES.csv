@@ -1,0 +1,7 @@
+gate_id,claim,passed,reason,valid_for_claim
+GATE3331_0_A_PPN_symbolic,"A_PPN(q_U,gauge) is no longer a free placeholder",true,"gamma, beta, and anisotropic PPN slots now carry explicit q_U denominators and gauge/source caveats",false
+GATE3331_1_Cmetric_factorized,C_metric is factorized into auditable operator pieces,true,"projection, gauge, source-window, derivative-readout, smoothing, Green/Hessian, and source-normalization factors are separated",false
+GATE3331_2_CPPN_composed,C_PPN composition is formula-ready,true,C_PPN <= A_PPN C_metric and the tree residual budget are written explicitly,false
+GATE3331_3_A_PPN_numeric,A_PPN has claim-grade numeric arena bounds,false,"q_U values, gauge projector, and threshold vector are not sourced here",false
+GATE3331_4_Cmetric_numeric,C_metric has claim-grade numeric operator bound,false,parent Hessian spectrum and metric projection norms are not numeric/source-owned,false
+GATE3331_5_PPN_claim,PPN/local-GR pass is claim-ready,false,"3331 derives the map, not the numeric floors and observational threshold comparison",false

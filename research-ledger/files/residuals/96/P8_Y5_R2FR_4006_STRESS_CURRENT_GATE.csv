@@ -1,0 +1,5 @@
+gate_id,quantity,formula,zero_condition,current_status,valid_for_claim,timestamp_utc
+SCG4006_0_master,Delta_cell_stress_current,|Lambda_R| + |J_R| + |B_R/Pi_R^n| + |readout_regen| + |Z_R derivative escape|,"all terms vanish by E_R source silence, boundary nohair, readout descent, and no-derivative grammar",CONDITIONAL_ZERO_NOT_CLAIM,False,2026-07-01T19:56:04+00:00
+SCG4006_1_lambda,Lambda_R,Lambda_R=-(J_R+delta B_R/delta R_AB+readout_regen),"J_R=0, boundary derivative=0, readout_regen=0",NEXT_GATE_DEPENDS_ON_MATTER_READOUT_DESCENT,False,2026-07-01T19:56:04+00:00
+SCG4006_2_symplectic,Theta_cell/Q_tau_cell,Theta_cell=0 and Q_tau_cell=0/proper if no derivatives and no boundary improvement,minimal object language plus boundary nohair,CONDITIONAL_EXACT,False,2026-07-01T19:56:04+00:00
+SCG4006_3_finite_bound,B_RAB,B_RAB <= 6.1021786990762981e-11,not a zero condition; finite fallback bound target,BOUND_TARGET_SOURCE_BACKED_NONCLAIM,False,2026-07-01T19:56:04+00:00

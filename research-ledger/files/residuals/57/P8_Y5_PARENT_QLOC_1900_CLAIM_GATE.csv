@@ -1,0 +1,6 @@
+gate_id,condition,current_status,source_anchor,gate_pass,valid_for_claim
+CG1900_0_point_source,source-worldtube point-source/common-mode reduction is parent-signed,FAIL_SOURCE_WORLDTUBE_POINT_SOURCE_REDUCTION_NOT_PARENT_DERIVED,P8_Y5_PARENT_QLOC_1900_WEP_SOURCE_WORLDTUBE_POINT_SOURCE_REDUCTION_ATTEMPT.csv:PSR1900_6_verdict,False,False
+CG1900_1_residual_pack,"relative source vector, measured-G guard, finite-source error, same-frame, and kernel residuals are filled or zero",FAIL_POINT_SOURCE_RESIDUAL_PACK_NOT_EXECUTABLE_NONCLAIM,P8_Y5_PARENT_QLOC_1900_WEP_POINT_SOURCE_RESIDUAL_LEDGER_NONCLAIM.csv:PSE1900_6_verdict,False,False
+CG1900_2_official_data,official readout data targets are acquired and cache-validated,FAIL_OFFICIAL_DATA_TARGET_NOT_ACQUIRED_NONCLAIM,P8_Y5_PARENT_QLOC_1900_OFFICIAL_READOUT_DATA_TARGETS_NONCLAIM.csv:cmsm_ds_onera_root,False,False
+CG1900_3_no_shortcuts,"no measured-G hiding, no tau=1, no surrogate-as-official, no bound-only pass",PASS_GUARDS_ENFORCED_BUT_NONCLAIM,P8_Y5_PARENT_QLOC_1900_POINT_SOURCE_DATA_DRYRUN_RESULTS.csv,False,False
+CG1900_4_verdict,WEP source-worldtube/readout branch can support local-GR/WEP claim,CLAIM_BLOCKED,CG1900_0_point_source through CG1900_3_no_shortcuts,False,False

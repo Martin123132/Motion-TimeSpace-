@@ -1,0 +1,5 @@
+source_id,target,candidate_formula,source_attempt,current_status,score_ready,valid_for_claim
+SSA2270_0_MR2_pullback,M_R^2,"M_R^2 := second variation of parent action along q at local vacuum, normalized to L_q=-1/2 M_R^2 q^2",pull back A_MTS[psi] through psi -> C_munu -> q,MISSING_PSI_TO_Q_PULLBACK,False,False
+SSA2270_1_jR_source,j_R,"J_R=j_R L+O(L^2), J_R := source/readout variation in q direction",extract from matter/readout coupling after Phi/q split,MISSING_MATTER_Q_SOURCE_MAP,False,False
+SSA2270_2_qR_ratio,q_R,q_R=j_R/M_R^2,requires SSA2270_0 and SSA2270_1 with compatible units,MISSING_RATIO_INPUTS,False,False
+SSA2270_3_no_gradient_guard,Q_R,Q_R=0 for algebraic q only if no nabla q term or boundary q momentum is generated,operator inventory of psi pullback and boundary variation,MISSING_OPERATOR_BOUNDARY_INVENTORY,False,False

@@ -1,0 +1,7 @@
+rule_id,rule,result,evidence,claim_effect
+V492_0_sources,all cited source paths exist,pass,missing_sources=0,traceability only
+V492_1_inputs_loaded,"491 contract, 491 component audit, and 490 source-current audit are loaded",pass,contract_rows=7;component_rows=7;current_rows=6,parent-action attempt is tied to current gates
+V492_2_candidate_coverage,"action candidates cover pure auxiliary, lock, odd residual, quartic penalty, double-zero, and closure branches",pass,A0_pure_even_auxiliary;A1_linear_lock_to_composite;A2_odd_residual_parentization;A3_quartic_even_composite_penalty;A4_double_zero_activation;A5_coefficient_closure_branch,fork space is explicit
+V492_3_contract_coverage,C0 through C6 are scored against the action attempt,pass,C0;C1;C2;C3;C4;C5;C6,no missing contract clause
+V492_4_component_coverage,all Yloc components are scored,pass,Y0_trace_expansion;Y1_coherent_projector;Y2_boundary_flux;Y3_domain_vector;Y4_domain_STF_stress;Y5_source_normalization;Y6_stress_Bianchi,no hidden residual skipped
+V492_5_no_claim_rows,"no candidate, contract, or component row is promoted as claim-valid",pass,candidate_claim_rows=0;contract_claim_rows=0;component_claim_rows=0,no local-GR promotion

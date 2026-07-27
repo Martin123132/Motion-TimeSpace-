@@ -1,0 +1,5 @@
+guard_id,statement,blocks_bad_move,required_safe_move,valid_for_claim
+NG3256_0_external_neutrality,"External Q_net=0 does not imply internal EM_Coulomb binding fraction f_EM,A=0.",using neutral material as an EM stress zero theorem,"use f_EM,A or gamma_EM,A from material binding/source rows",false
+NG3256_1_shell_surrogate,"The shell energy match is a surrogate profile unless a real u_EM,A(x) distribution is sourced.",treating R_in/R_out as physical without source-worldtube geometry,label toy shell rows or source actual material/profile geometry,false
+NG3256_2_double_count,"EM_Coulomb, nuclear surface/asymmetry, QCD binding, electron rest mass, and readout fractions must be basis-disjoint.",counting the same binding energy in multiple source components,declare basis convention and no-double-count map before score,false
+NG3256_3_DD_external_comparator,Damour-Donoghue style material charges may guide extraction but do not become parent MTS coefficients by copy-paste.,claiming MTS source coupling from external phenomenological charges alone,record external basis as comparator or derive parent basis map,false

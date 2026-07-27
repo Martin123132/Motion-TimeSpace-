@@ -1,0 +1,13 @@
+check_id,check,status,details
+VAL1265_0_sources_exist,all cited local sources exist,PASS,9/9 sources exist
+VAL1265_1_needles_found,all cited local needles found,PASS,9/9 needles found
+VAL1265_2_protection_complete,auxiliary protection audit covers all required clauses,PASS,aux_protection_rows=5
+VAL1265_3_theorem_conditional,auxiliary elimination theorem remains conditional,PASS,EXACT_CONDITIONAL_NOT_PARENT_SIGNED
+VAL1265_4_bound_runner_blocked,finite-ZR bound runner dry-run remains blocked,PASS,dryrun_rows=3
+VAL1265_5_no_live_rows,no live raw/accepted R_AB coefficient rows exist,PASS,raw_rows=0; accepted_rows=0; docs_rows=3
+VAL1265_6_claim_gates,all claim gates remain blocked,PASS,claim_gate_rows=4
+VAL1265_7_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1265_8_next_target_1266,next target is primitive auxiliary grammar source hunt,PASS,1266-Y5-R10-RAB-primitive-auxiliary-grammar-source-hunt-or-finite-ZR-intake-review.md
+VAL1265_9_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1265_SOURCE_REGISTER.csv:9; P8_Y5_R10_1265_AUXILIARY_PROTECTION_AUDIT.csv:5; P8_Y5_R10_1265_AUXILIARY_ELIMINATION_THEOREM.csv:3; P8_Y5_R10_1265_REGENERATION_RISK_LEDGER.csv:4; P8_Y5_R10_1265_FINITE_ZR_BOUND_RUNNER_SCHEMA.csv:4; P8_Y5_R10_1265_FINITE_ZR_BOUND_RUNNER_DRYRUN.csv:3; P8_Y5_R10_1265_CLAIM_GATES.csv:4; P8_Y5_R10_1265_DECISION_LEDGER.csv:3; P8_Y5_R10_1265_NEXT_TARGET.csv:1
+VAL1265_10_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1265_11_overall,overall 1265 validation,PASS,"1265 upgrades the auxiliary route into an exact conditional elimination theorem and builds a nonclaim finite-ZR bound-runner schema, with all claims blocked"

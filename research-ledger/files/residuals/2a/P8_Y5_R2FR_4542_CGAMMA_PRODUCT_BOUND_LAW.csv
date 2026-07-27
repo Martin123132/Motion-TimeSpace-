@@ -1,0 +1,6 @@
+law_id,statement,consequence,status,current_chain_action,claim_allowed,valid_for_claim
+LAW4542_0_definition,"Define C_Gamma,a := c_Gamma * N_a[P_loc Gamma_mem, J_a^Gamma, Gamma_perp]","collapses the unknown parent coefficient, local profile and arena projection into one effective product",exact bookkeeping identity,imported_into_4542,False,False
+LAW4542_1_linear_bound,"For each arena a, Delta O_a = C_Gamma,a + O(C_Gamma,a^2) in unit-normalized first-order smoke rows.","the source-backed bound B_a gives |C_Gamma,a| <= B_a at first order",derived finite-bound law,imported_into_4542,False,False
+LAW4542_2_nonunit_jacobian,"If a real Jacobian J_a is later supplied, replace the smoke bound by |c_Gamma * profile_a| <= B_a / |J_a|.",prevents hiding behind unit normalization,ready for coefficient fill,imported_into_4542,False,False
+LAW4542_3_no_cancellation,"Bounds are channelwise; cancellations between gamma, beta, xi, alpha_i, zeta_i, clock and orbital rows are not allowed.",avoids fitting away one local residual with another,claim firewall,imported_into_4542,False,False
+LAW4542_4_zero_recovery,"If the 4187 support/no-hair clauses are later parent-proved, every C_Gamma,a row becomes zero and this runner becomes a regression check.",connects finite-bound branch back to derivation-first branch,future proof hook,imported_into_4542,False,False

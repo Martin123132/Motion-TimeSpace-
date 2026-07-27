@@ -1,0 +1,6 @@
+requirement_id,component,needed_bound,why_needed,status,valid_for_claim,claim_allowed
+STR1298_0_m_spatial_trace,sum_i R_m^{ii},sum_i |L_cg^-2 F_prime(m) M_m^{ii}| or parent trace theorem,Kbar_00 includes spatial trace as well as 00 component,MISSING_SPATIAL_M_KERNEL_TRACE,False,False
+STR1298_1_Lcg_spatial_trace,sum_i R_L^{ii},sum_i |2 L_cg^-3 F(m) M_L^{ii}| or parent trace theorem,L_cg chain can source the spatial trace even if R_L^{00} is bounded,MISSING_SPATIAL_LCG_KERNEL_TRACE,False,False
+STR1298_2_cdb_spatial_trace,sum_i R_cdb^{ii},connection/domain/boundary spatial trace or no-flux/improvement theorem,CDB terms can enter Kbar_00 through the trace,MISSING_SPATIAL_CDB_TRACE,False,False
+STR1298_3_projector_domain,P_loc and Delta_projector_boundary,commutator/domain/boundary term introduced by local projection,local projection may not commute with trace reversal or boundary restriction,MISSING_PROJECTOR_DOMAIN_BOUND,False,False
+STR1298_4_index_convention,covariant/contravariant 00 and ii conversion,"fixed local signature, frame, and index placement",current rows use superscript 00 while Kbar bridge is written with lower-index source slot,MISSING_INDEX_CONVENTION_LOCK,False,False

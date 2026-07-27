@@ -1,0 +1,6 @@
+derivation_id,object,formula,derivation,status,valid_for_claim
+AV3274_0_action_block,low-energy EM plus source block,"S[A,J;g,X]=int mu_obs[-Z_Q(X)F_Q^2/4 + s_J kappa_J(X) A_Q_mu J_Q^mu] + S_matter + S_owner[X]",Use one explicit sign flag s_J so the source normalization question is not hidden in conventions.,EXACT_STARTING_BLOCK_FOR_CJ_AUDIT,false
+AV3274_1_Maxwell_equation,variation with respect to A_Q,nabla_mu(Z_Q F_Q^{mu nu}) = -s_J kappa_J J_Q^nu,Integrate -Z_Q F^{mu nu} nabla_mu(delta A_nu) by parts and combine with s_J kappa_J J^nu delta A_nu.,DERIVED_FROM_ASSUMED_BLOCK,false
+AV3274_2_weighted_current_conservation,divergence of Maxwell equation,0 = nabla_nu nabla_mu(Z_Q F_Q^{mu nu}) = -s_J nabla_nu(kappa_J J_Q^nu),"antisymmetry of F_Q makes the double divergence vanish, so the source entering Maxwell is the weighted current kappa_J J_Q.",EXACT_CURRENT_CONSTRAINT,false
+AV3274_3_CJ_definition,current/source normalization slope,C_J := L_X ln kappa_J,This is the 3273 alpha decomposition component that controls Maxwell source normalization and Lorentz/Poynting transfer.,DEFINED_AS_FINITE_COUPLING_TARGET,false
+AV3274_4_if_J_Noether_conserved,separately owned representation current,if nabla_mu J_Q^mu=0 then J_Q^mu nabla_mu ln kappa_J=0,Substitute separate Noether conservation into nabla_mu(kappa_J J_Q^mu)=0.,GAUGE_CURRENT_LOCK_LEMMA,false

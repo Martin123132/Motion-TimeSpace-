@@ -1,0 +1,4 @@
+bound_id,quantity,bound,required_inputs,claim_gate,valid_for_claim
+SQR2278_0_source_norm,S_q source norm,||S_q|| <= ||S_q_free|| + ||S_q_exchange_error||,"phase-averaged F_T,F_R,E_T,E_R; common D convention; units",all terms sourced or parent-zero with no cancellation,False
+SQR2278_1_q_residual,finite q_R,||q_R|| <= ||G_q|| (||S_q|| + ||boundary_q||),"q operator inverse/coercivity G_q, boundary condition, same-frame norm",G_q and boundary sourced and positive/coercive,False
+SQR2278_2_observable,local observable residual,||R_local|| <= K_obs ||q_R||,PPN/R10/clock/orbital projection norm K_obs and arena tolerance,observable map and tolerance sourced before any pass/fail statement,False

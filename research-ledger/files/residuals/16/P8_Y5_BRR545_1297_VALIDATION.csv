@@ -1,0 +1,12 @@
+check_id,check,status,details
+VAL1297_0_sources_recorded,local anchors and external sources are recorded,PASS,9/9 source records validated
+VAL1297_1_abs_bridge_contains_required_constants,"source bridge includes c factors, 4*pi*G, kappa, and measured-GM caveat",PASS,epsilon_K = |c^2*Kbar_{00}|/(4*pi*G*rho_ref)
+VAL1297_2_dimensional_ledger_passes,dimensional ledger confirms Newton ratio units and unresolved projection,PASS,DL1297_0_Kbar;DL1297_1_c2Kbar;DL1297_2_4piGrho;DL1297_3_Teff;DL1297_4_unresolved_projection
+VAL1297_3_runner_preview_applies_source_norm,source normalization appears only in component rows with response operators,PASS,RRI1292_0_m_chain;RRI1292_1_Lcg_chain;RRI1292_2_cdb_chain
+VAL1297_4_runner_still_no_score,all runner preview rows remain no-score,PASS,RRI1292_0_m_chain=4;RRI1292_1_Lcg_chain=5;RRI1292_2_cdb_chain=4;RRI1292_3_chain_vector=3
+VAL1297_5_blockers_remain_explicit,scoring blockers remain explicit after bridge,PASS,SB1297_0_parent_side_sign;SB1297_1_trace_reversed_projection;SB1297_2_rho_and_measured_GM;SB1297_3_remaining_residual_inputs;SB1297_4_observable_projection
+VAL1297_6_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1297_SOURCE_REGISTER.csv:9; P8_Y5_R10_1297_SOURCE_NORMALIZATION_BRIDGE_NONCLAIM.csv:3; P8_Y5_R10_1297_DIMENSIONAL_LEDGER.csv:5; P8_Y5_R10_1297_RUNNER_SOURCE_NORMALIZATION_PREVIEW.csv:4; P8_Y5_R10_1297_SCORING_BLOCKERS.csv:5; P8_Y5_R10_1297_CLAIM_GATES.csv:4; P8_Y5_R10_1297_DECISION_LEDGER.csv:3; P8_Y5_R10_1297_NEXT_TARGET.csv:1
+VAL1297_7_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1297_8_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1297_9_next_target_1298,next target routes to Kbar projection,PASS,1298-Y5-R10-RAB-Kmetric-chain-to-trace-reversed-Kbar-local-projection.md
+VAL1297_10_overall,overall 1297 validation,PASS,"1297 derives a nonclaim absolute Newton source-normalization bridge with c factors, 4*pi*G, dimensions, and measured-GM caveat, while keeping scoring blocked by Kbar projection and remaining inputs"

@@ -1,0 +1,6 @@
+check_id,contract_ref,calculation,result,defect,valid_for_claim,claim_allowed
+DIR1248_0_primary,DC1247_2_primary_secondary,"lambda_R has no time derivative in S_min, so pi_lambda approx 0",FORMAL_PASS_WITHIN_ANSATZ,primary constraint exists only after ansatz inserts lambda_R,False,False
+DIR1248_1_secondary,DC1247_2_primary_secondary,"dot(pi_lambda)=-delta H/delta lambda_R=-C_R approx 0, so C_R=ln(T^2 S)=0",FORMAL_PASS_WITHIN_ANSATZ,secondary constraint is the desired closure unless the action origin is independently derived,False,False
+DIR1248_2_preservation,DC1247_2_primary_secondary,"dot(C_R)={C_R,H_core}+lambda-sector terms must vanish or determine lambda_R",BLOCKED,"H_core and canonical brackets for T,S are not supplied, so closure of the constraint chain cannot be checked",False,False
+DIR1248_3_constraint_class,DC1247_3_constraint_class,"classify {pi_lambda,C_R} and the brackets of C_R with the Hamiltonian/momentum constraints",BLOCKED,no Poisson algebra or DOF count exists for the ansatz,False,False
+DIR1248_4_boundary,DC1247_5_boundary_silence,verify no boundary term permits a reciprocal Q_R charge after C_R=0,BLOCKED,boundary/corner variational class is missing,False,False

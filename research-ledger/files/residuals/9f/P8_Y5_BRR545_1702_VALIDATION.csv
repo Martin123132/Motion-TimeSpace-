@@ -1,0 +1,19 @@
+check_id,result,detail,valid_for_claim,claim_allowed
+VAL1702_0_sources_exist,PASS,all cited local source paths exist and required needles are present,False,False
+VAL1702_1_ledger_complete,PASS,"commutator ledger covers C_R, I_commutator, tau, source-weight, and branch-transfer rows",False,False
+VAL1702_2_product_runner_complete,PASS,"first product runner covers WEP, R10, PPN, clock, and orbital rows",False,False
+VAL1702_3_products_blocked,PASS,all product rows are explicitly blocked by missing inputs,False,False
+VAL1702_4_wep_schema_complete,PASS,"WEP source-weight product row covers Delta_w, tau_WEP, readout, direct product, and refusal",False,False
+VAL1702_5_wep_blocked,PASS,WEP rows do not pass required gates,False,False
+VAL1702_6_r10_ppn_complete,PASS,R10 and PPN projection rows are present,False,False
+VAL1702_7_r10_ppn_blocked,PASS,R10 and PPN rows are missing required projection inputs,False,False
+VAL1702_8_no_scores,PASS,no product row is score-ready or claim-valid,False,False
+VAL1702_9_runner_blocks,PASS,"runner blocks commutator, WEP, R10, PPN, arena-transfer, and local-GR claims",False,False
+VAL1702_10_next_selected,PASS,next target selects WEP source-weight first fill or MICROSCOPE parser shell,False,False
+VAL1702_11_local_gr_blocked,PASS,local GR/Newton claim remains blocked,False,False
+VAL1702_12_no_claim_flags,PASS,all generated scoring and claim flags remain false,False,False
+VAL1702_13_csv_parse,PASS,all generated 1702 CSVs parse,False,False
+VAL1702_14_branch_copies,PASS,branch/quarantine/queue copies exist,False,False
+VAL1702_15_pycache_absent,PASS,scripts __pycache__ absent,False,False
+VAL1702_16_formalization_untouched,PASS,no MTS 1702 outputs found under formalization-workbench outside vendor/env folders,False,False
+VAL1702_OVERALL,PASS,1702 commutator source-intake ledger and first arena product runner validation,False,False

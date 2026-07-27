@@ -1,0 +1,7 @@
+component_id,symbol,meaning,source_row,zero_condition,finite_input,status,valid_for_claim
+AEV4502_0_DeltaE_R11,DeltaE_R11_l2,non-EH/R11 local operator l=2 residual,RES1956_0_DeltaE_R11,local weak-field operator is EH-only through l=2 order,numeric R11/non-EH coefficient vector and l=2 operator norm,FIRST_TARGET_UNSIGNED,False
+AEV4502_1_DeltaT_w,DeltaT_w_l2,source prefactor/species/source-label l=2 residual,RES1956_1_DeltaT_w; CUR1957_1_DeltaT_w,source-label forgetting/common Hilbert source measure,numeric delta_w l=2 envelope,SOURCE_LABEL_ZERO_OR_BOUND_REQUIRED,False
+AEV4502_2_DeltaT_NH,DeltaT_NH_l2,spin/torsion/boundary/non-Hilbert current bypass residual,RES1956_2_DeltaT_NH; CUR1957_2_DeltaT_NH,no bypass current or projected-silent exact current,numeric non-Hilbert l=2 envelope,NONHILBERT_ZERO_OR_BOUND_REQUIRED,False
+AEV4502_3_boundary_flux,Omega_boundary_extra_l2,extra boundary/symplectic l=2 flux residual,RES1956_4_boundary_flux_l2,no extra l=2 parent theta/Q/boundary flux,numeric boundary flux envelope,BOUNDARY_FLUX_ZERO_OR_BOUND_REQUIRED,False
+AEV4502_4_readout_reentry,DeltaT_readout_l2,post-variation readout/domain/frame re-entry residual,CUR1957_3_DeltaT_readout,identity readout and no domain/frame re-entry,numeric marker/readout l=2 envelope,READOUT_REENTRY_ZERO_OR_BOUND_REQUIRED,False
+AEV4502_5_vector_norm,||P_2 R_extra||,conservative no-cancellation vector norm,RES1956_3_R_extra_l2 plus residual vector rows,all AEV4502_0 through AEV4502_4 zero,sum of absolute subcomponent envelopes,VECTOR_NORM_DECOMPOSED_VALUES_MISSING,False

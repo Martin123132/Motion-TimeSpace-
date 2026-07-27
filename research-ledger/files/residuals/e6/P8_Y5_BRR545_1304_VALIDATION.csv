@@ -1,0 +1,11 @@
+check_id,check,status,details
+VAL1304_0_sources_exist,registered source paths exist and anchors are found,PASS,9/9 source anchors found
+VAL1304_1_operator_form_advanced,operator-owner premise advances in form but not claim,PASS,OO1304_0_action_form=FORM_ADVANCES_OPERATOR_TARGET_NOT_PARENT_SIGNED;OO1304_1_static_local_operator_map=RELATIVE_OPERATOR_MAP_WRITTEN;OO1304_2_owner_verdict=NOT_PARENT_SIGNED_KEEP_NONCLAIM
+VAL1304_2_first_bound_rows_written,Z_m_bar and B_grad_sp first bound rows exist and remain value-missing,PASS,KMS1304_0_Zm_bar_first_row=MISSING_PARENT_VALUE_OR_BOUND;KMS1304_1_B_grad_sp_first_row=MISSING_PROFILE_OR_ENERGY_TO_POINTWISE_BOUND
+VAL1304_3_positive_gap_values_missing,positive/gap map does not claim values,PASS,ZPG1304_0_Zm_positive=NONCLAIM_MAP_ONLY;ZPG1304_1_Zm_abs_bound=FIRST_BOUND_INPUT_ROW_READY_VALUE_MISSING;ZPG1304_2_mass_gap=GAP_MAP_ONLY_VALUE_MISSING;ZPG1304_3_gradient_energy_route=B_GRAD_ROUTE_WRITTEN_NOT_EXECUTABLE
+VAL1304_4_runner_update_no_execution,runner update remains non-executable/no-score,PASS,RUN1304_0_Zm_bar_named=still no execution;RUN1304_1_B_grad_sp_route_named=still no execution;RUN1304_2_operator_premise_advanced=premise sharpened but not parent-signed
+VAL1304_5_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1304_SOURCE_REGISTER.csv:9; P8_Y5_R10_1304_MEMORY_OPERATOR_OWNER_ATTEMPT.csv:3; P8_Y5_R10_1304_ZM_POSITIVE_GAP_MAP_NONCLAIM.csv:4; P8_Y5_R10_1304_FIRST_STRESS_BOUND_INPUT_ROWS_NONCLAIM.csv:2; P8_Y5_R10_1304_GRADIENT_BOUND_ROUTE_NONCLAIM.csv:3; P8_Y5_R10_1304_RUNNER_INPUT_UPDATE_NONCLAIM.csv:3; P8_Y5_R10_1304_CLAIM_GATES.csv:5; P8_Y5_R10_1304_DECISION_LEDGER.csv:2; P8_Y5_R10_1304_NEXT_TARGET.csv:1
+VAL1304_6_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1304_7_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1304_8_next_target_1305,next target routes to Z_m sign/value or gradient profile bound,PASS,1305-Y5-R10-RAB-Zm-sign-value-or-gradient-profile-bound.md
+VAL1304_9_overall,overall 1304 validation,PASS,"1304 sharpens the memory operator form, maps Z_m positivity/gap owners, writes first Z_m_bar and B_grad_sp bound rows, keeps scoring blocked, and routes to Z_m sign/value or gradient profile"

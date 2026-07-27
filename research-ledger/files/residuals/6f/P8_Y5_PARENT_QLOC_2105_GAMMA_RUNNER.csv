@@ -1,0 +1,6 @@
+timestamp_utc,branch_id,valid_for_claim,claim_allowed,run_id,attempted_score,input_state,runner_result,reason,accepted_for_scoring
+2026-06-20T17:27:24.618254+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,RUN2105_0_missing_ZX,c_g_gamma_bound,c_g=MISSING_PARENT_INPUT; Z_X=MISSING_ZX; Y_gamma=MISSING_RANGE_RESPONSE,REJECTED,cannot convert raw c_g to alpha_eff,False
+2026-06-20T17:27:24.618258+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,RUN2105_1_relation_only_NX,alpha_eff_bound,N_X=1/sqrt(Z_X) relation exists but Z_X is missing,REJECTED,relation-only rows cannot be scored,False
+2026-06-20T17:27:24.618262+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,RUN2105_2_missing_range,finite_range_gamma,lambda_X=sqrt(Z_X/M_X^2) relation exists but M_X^2/Y_gamma are missing,REJECTED,long-range Y_gamma=1 cannot be assumed,False
+2026-06-20T17:27:24.618265+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,RUN2105_3_missing_tails,isolated_cg_gamma,b_dis/q_nonH/gauge/readout/tail vector not zero or bounded,REJECTED,no cancellation or tail omission allowed,False
+2026-06-20T17:27:24.618268+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,RUN2105_VERDICT,gamma_bound_runner,all candidate score paths contain missing parent inputs,REFUSES_SCORE,strict runner is ready; physics inputs are not,False

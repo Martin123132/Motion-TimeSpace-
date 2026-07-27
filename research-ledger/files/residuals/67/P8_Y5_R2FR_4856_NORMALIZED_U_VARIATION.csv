@@ -1,0 +1,8 @@
+variation_id,equation,meaning,status,valid_for_claim,timestamp_utc
+VAR4856_0_action,L=-[G(theta)+lambda_u(u^2+1)]/kappa + eta_u I/2; I=u^mu u^nu F_mu_alpha F_nu^alpha,combined stationary memory and photon constitutive action,DECLARED_EXISTING_ACTION_SUM,False,2026-07-09T22:52:54+00:00
+VAR4856_1_definitions,f=G_theta; K_mu_nu=F_mu_alpha F_nu^alpha; V_mu=u^alpha F_alpha_mu; I=V_mu V^mu,V is spatial because u.V=0,EXACT,False,2026-07-09T22:52:54+00:00
+VAR4856_2_u_Euler,nabla_mu f-2 lambda_u u_mu+kappa eta_u K_mu_nu u^nu=0,variation at fixed metric and independent contravariant u,EXACT,False,2026-07-09T22:52:54+00:00
+VAR4856_3_multiplier,lambda_u=-(dot f+kappa eta_u I)/2,contraction of the full u equation using u^2=-1,EXACT,False,2026-07-09T22:52:54+00:00
+VAR4856_4_spatial,D_mu f=-kappa eta_u S_mu; S_mu=h_mu^rho K_rho_nu u^nu,the local electromagnetic energy-flow/Poynting one-form sources the parent time-flow Euler equation,EXACT,False,2026-07-09T22:52:54+00:00
+VAR4856_5_static,G=f=dot f=0 and S_mu=0,aligned electrostatic or magnetostatic no-Poynting branch solves the transverse flow equation algebraically,EXACT_BRANCH_CONDITION,False,2026-07-09T22:52:54+00:00
+VAR4856_6_circulation,integral_boundary S.n=0 does not imply S_mu=0 pointwise,stationary internal Poynting circulation can source u even when net radiative flux vanishes,NO_SMUGGLE_GUARD,False,2026-07-09T22:52:54+00:00

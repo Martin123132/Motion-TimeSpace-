@@ -1,0 +1,5 @@
+attempt_id,target,zero_route,result,why_not_full,valid_for_claim
+GZ3384_0_finite_pole,R_Gamma_PPN^pole,Gamma_G is readout/background and delta Gamma_G is not an independent local Hessian row,CONDITIONAL_ZERO_POLE_INHERITED,kills finite exchange pole only; not the constant/proxy Gamma floor,false
+GZ3384_1_constant_floor,R_Gamma_const,Gamma_local=0 in the local PPN patch or source-owned constant curvature is below allocated gamma budget,NOT_ZERO_SIGNED,no parent-signed local Gamma_local=0 certificate or sourced constant-curvature value,false
+GZ3384_2_solar_proxy,R_Gamma_proxy,"Gamma residual maps to K_solar^m with K_solar about 1e-61 and m>=2, giving an encouraging tiny proxy",ENCOURAGING_PROXY_NOT_CLAIM,proxy only applies if local Gamma residual is parent-mapped to the curvature-saturation proxy,false
+GZ3384_3_verdict,R_Gamma_const_or_proxy,finite pole zero plus constant/proxy floor zero,PARTIAL_ZERO_BOUND_ROW_REQUIRED,only finite pole is conditionally closed; full floor needs certificate or bound,false

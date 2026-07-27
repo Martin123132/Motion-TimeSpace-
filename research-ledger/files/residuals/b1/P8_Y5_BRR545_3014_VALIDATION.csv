@@ -1,0 +1,13 @@
+validation_id,passed,requirement,evidence
+VAL3014_00_sources_exist,True,every cited local source path exists,P8_Y5_R2FR_3014_SOURCE_REGISTER.csv
+VAL3014_01_csv_parse,True,generated CSV rows parse cleanly,all generated CSV artifacts import with csv.DictReader
+VAL3014_02_source_current_not_signed,True,source-current owner remains unsigned,P8_Y5_R2FR_3014_PROMOTION_GATES.csv
+VAL3014_03_rank_zero_not_claimed,True,rank-zero closure is not claimed as proven,P8_Y5_R2FR_3014_RANK_ZERO_CLOSURE_GATE.csv
+VAL3014_04_R10_demoted,True,"R10 finite-range branch is demoted, not promoted",P8_Y5_R2FR_3014_R10_FINITE_RANGE_DEMOTION_LEDGER.csv
+VAL3014_05_no_scalarization,True,direct scalarization of q_loc remains forbidden,P8_Y5_R2FR_3014_PROMOTION_GATES.csv
+VAL3014_06_claims_blocked,True,R10/local claims remain blocked,P8_Y5_R2FR_3014_PROMOTION_GATES.csv
+VAL3014_07_missing_markers_nonclaim,True,rows with MISSING markers are never valid_for_claim=true,all 3014 generated ledgers
+VAL3014_08_outputs_scoped,True,no generated file is outside post-checkpoint-work,generated path scope check
+VAL3014_09_formalization_not_targeted,True,formalization-workbench is not modified by this checkpoint,output target list excludes formalization-workbench
+VAL3014_10_next_target_selected,True,next target selects PPN kernel from local closure envelope,P8_Y5_R2FR_3014_NEXT_TARGET.csv
+VAL3014_99_overall,True,all 3014 validation checks pass,aggregate of VAL3014_00 through VAL3014_10

@@ -1,0 +1,5 @@
+match_id,object,formula,result,derivation,valid_for_claim
+CSM3256_0_energy_match,"replace Q_eff by E_EM,A","U_EM_shell = Q_eff^2/(8*pi*epsilon0)*(1/R_in-1/R_out) = E_EM,A","Q_eff^2 = 8*pi*epsilon0*E_EM,A/(R_in^-1-R_out^-1)",solve the 3255 shell energy formula for Q_eff^2,false
+CSM3256_1_material_Gram_self,"G_J[EM,EM]_A material shell surrogate","G_J[EM,EM]_A = C_frame^2/(20*pi) * E_EM,A^2 * (R_in^-5-R_out^-5)/(R_in^-1-R_out^-1)^2",substitute CSM3256_0 into the 3255 Q_eff^4 shell Gram formula,epsilon0 cancels; the remaining dependence is material EM energy squared times shell-shape factor,false
+CSM3256_2_fraction_form,"G_J[EM,EM]_A in component fraction variables","G_J[EM,EM]_A = C_frame^2/(20*pi) * (f_EM,A M_A c^2)^2 * K_shell(R_in,R_out)",K_shell := (R_in^-5-R_out^-5)/(R_in^-1-R_out^-1)^2,"use E_EM,A=f_EM,A M_A c^2",false
+CSM3256_3_distribution_generalization,non-shell material distribution,"G_J[EM,EM]_A = integral_A w_J u_EM,A(x)^2 dV_eobs","shell formula is a surrogate when u_EM,A(x) is replaced by an energy-matched shell profile","keeps the true target as a stress-current norm, not a forced spherical model",false

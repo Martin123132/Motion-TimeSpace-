@@ -1,0 +1,6 @@
+run_id,test,result,detail,claim_allowed,valid_for_claim
+RUN3390_0_source_sweep,corpus scale-source sweep,PASS_EXECUTED_NONCLAIM,sweep_rows=72; claim numeric values deliberately not extracted,false,false
+RUN3390_1_compact_transfer,compact-kernel transfer replacement derivation,PASS_SYMBOLIC_BOUND_NONCLAIM,replacement is T_grad^compact <= (ell_s/lambda)|Khat(ell_s/lambda)| with C_N constants required for scoring,false,false
+RUN3390_2_gaussian_trials,Gaussian boundary d/ell acquisition rows,PASS_REQUIREMENT_ROWS_NONCLAIM,trial_rows=32,false,false
+RUN3390_3_cassini_rough_estimator,Cassini rough geometry scale estimator,PASS_ROUGH_NONCLAIM,rough strict projector-controlled ell_s ceiling can be as low as 8.037e-01 m; boundary collar ceiling is far looser up to 1.215e+08 m,false,false
+RUN3390_4_firewall,prevent local PPN/local GR claim,PASS_CLAIM_FIREWALL,"3390 moves from missing-input ledger to concrete source/estimator hunt, but all outputs remain nonclaim until source pack and parent projection law are closed",false,false

@@ -1,0 +1,8 @@
+derivation_id,statement,formula,status,valid_for_claim,generated_utc
+AUX3196_0_slot_vector,Collect the C1 interface mismatch slots into a vector z.,"z=(Delta F_L, Delta F'_L, Delta F_R, Delta F'_R)",DEFINED,false,2026-06-26T18:58:01.026429+00:00
+AUX3196_1_auxiliary_action,Introduce a nonpropagating auxiliary layer field chi with positive mass matrix M and coupling B to the mismatch slots.,S=(1/(2 delta))(z^T K0 z + 2 z^T B chi + chi^T M chi),AUXILIARY_LAYER_ACTION_CANDIDATE,false,2026-06-26T18:58:01.026429+00:00
+AUX3196_2_auxiliary_equation,"The auxiliary field is algebraic, so it can be eliminated locally.",dS/dchi=0 -> M chi + B^T z=0 -> chi*=-M^-1 B^T z,ELIMINATION_DERIVED,false,2026-06-26T18:58:01.026429+00:00
+AUX3196_3_schur_complement,Substituting chi* gives an effective positive layer stiffness only if the Schur complement is positive.,K_eff=K0-B M^-1 B^T,SCHUR_COMPLEMENT_DERIVED,false,2026-06-26T18:58:01.026429+00:00
+AUX3196_4_reaction_force,The hard-layer reaction force is the derivative of the effective action with respect to z.,lambda=(K_eff/delta)z,FINITE_LAYER_FORCE_RECOVERED,false,2026-06-26T18:58:01.026429+00:00
+AUX3196_5_pure_auxiliary_no_go,"If K0=0 and M is positive, K_eff is negative semidefinite; a healthy auxiliary field cannot create positive stiffness from nothing.",K_eff=-B M^-1 B^T <= 0,PURE_AUXILIARY_POSITIVE_STIFFNESS_NO_GO,false,2026-06-26T18:58:01.026429+00:00
+AUX3196_6_parent_gate,"The parent action must own K0, M, B, and the delta scaling; otherwise the route remains an effective compliance closure.","S_parent -> S_bulk + S_layer[z,chi], K_eff>0, C_delta=delta K_eff^-1",PARENT_SIGNATURE_REQUIRED,false,2026-06-26T18:58:01.026429+00:00

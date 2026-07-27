@@ -1,0 +1,6 @@
+update_id,runner_field,rule,status,valid_for_claim,timestamp_utc
+RUNU3887_0_energy,Yloc_energy_identity,evaluate positive norm = source term + boundary term; theorem-zero only if source and boundary are zero,IMPLEMENTED_CONDITIONAL_RULE,False,2026-07-01T08:05:57+00:00
+RUNU3887_1_source,linear_source_guard,"if any J_A row remains unsigned, route that component to coefficient fill rather than local-GR promotion",NO_SMUGGLED_ZERO,False,2026-07-01T08:05:57+00:00
+RUNU3887_2_boundary,boundary_guard,"if inner/outer boundary flux is not theorem-zero, keep alpha3/xi/Gdot rows live",NO_BOUNDARY_SHORTCUT,False,2026-07-01T08:05:57+00:00
+RUNU3887_3_residual_lock,residual_lock_guard,do not let auxiliary variables replace physical residuals unless lock row is parent-signed,NO_DECOY_FIELD,False,2026-07-01T08:05:57+00:00
+RUNU3887_4_next,next_attack,"sign no-linear-source/residual-lock from quotient-invariant matter action and same Hilbert source, or fill first fallback coefficients",NEXT_3888,False,2026-07-01T08:05:57+00:00

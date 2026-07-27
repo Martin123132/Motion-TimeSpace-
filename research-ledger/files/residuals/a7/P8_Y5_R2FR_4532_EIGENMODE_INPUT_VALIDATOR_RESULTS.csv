@@ -1,0 +1,10 @@
+validation_row_id,input_id,numeric_value_detected,source_path_exists,source_backed_candidate,usable_now,claim_ready,status,reason
+VALRUN4532_ACQ4532_0_h_i_or_ZR,ACQ4532_0_h_i_or_ZR,False,True,False,False,False,REJECT_NONCLAIM_OR_MISSING,1573 requires positive same-frame parent-normalized kinetic value; no numeric/source-backed row found.
+VALRUN4532_ACQ4532_1_m_i2_or_MR2,ACQ4532_1_m_i2_or_MR2,False,True,False,False,False,REJECT_NONCLAIM_OR_MISSING,mass/range denominator is not sourced; range branch cannot be classified.
+VALRUN4532_ACQ4532_2_K_i_projection,ACQ4532_2_K_i_projection,False,True,True,False,False,REJECT_NONCLAIM_OR_MISSING,3897 derives arena projection structure but not numeric K_i for the first physical SGK/Kvert mode.
+VALRUN4532_ACQ4532_3_Q_iS_Q_iT,ACQ4532_3_Q_iS_Q_iT,False,True,False,False,False,REJECT_NONCLAIM_OR_MISSING,matter functor/source-current zero is conditional and no finite source/test charge row is source-backed.
+VALRUN4532_ACQ4532_4_alpha_bound_R10,ACQ4532_4_alpha_bound_R10,False,True,False,False,False,REJECT_NONCLAIM_OR_MISSING,external curve exists as reviewed candidate but accepted_for_scoring=false and live MTS λ/α inputs are missing.
+VALRUN4532_ACQ4532_5_alpha_proxy_PPN,ACQ4532_5_alpha_proxy_PPN,True,True,False,False,False,REJECT_NONCLAIM_OR_MISSING,"proxy bound is useful for diagnostics but not the first Kvert eigenmode without Z_X, τ_PPN, S_PPN and range transfer."
+VALRUN4532_ACQ4532_6_WEP_unit_proxy,ACQ4532_6_WEP_unit_proxy,False,True,False,False,False,REJECT_NONCLAIM_OR_MISSING,"proxy assumes |K_i|=1 and lacks exact materials, source charge and confidence convention."
+VALRUN4532_ACQ4532_7_live_runner_row,ACQ4532_7_live_runner_row,False,True,False,False,False,REJECT_NONCLAIM_OR_MISSING,live row lacks every numeric MTS-side input and alpha bound.
+VALRUN4532_OVERALL,all,False,True,False,False,False,NO_CLAIM_GRADE_EIGENMODE_INPUTS,"partial proxy/candidate rows exist, but no complete source-backed h_i,m_i,K_i,Q_iS,Q_iT,alpha_bound set exists"

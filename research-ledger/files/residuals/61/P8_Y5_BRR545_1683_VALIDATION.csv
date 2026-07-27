@@ -1,0 +1,18 @@
+check_id,result,detail,valid_for_claim,claim_allowed
+VAL1683_0_sources_exist,PASS,all cited 1683 source paths exist and required needles are present,False,False
+VAL1683_1_owner_fails,PASS,source-current owner derivation remains unsigned,False,False
+VAL1683_2_target_exact,PASS,first coefficient target is qbar_source_weight,False,False
+VAL1683_3_fill_failed,PASS,first coefficient fill fails because value/zero theorem is missing,False,False
+VAL1683_4_acquisition_complete,PASS,qbar acquisition ledger lists all required next objects,False,False
+VAL1683_5_smoke_exact,PASS,"gate smoke covers WEP, R10, Newton-GM, and R11",False,False
+VAL1683_6_smoke_rejects,PASS,1682 gate still rejects all source arenas,False,False
+VAL1683_7_decision_safe,PASS,decision records first fill failed as nonclaim,False,False
+VAL1683_8_claim_gate_safe,PASS,all claim gates remain false,False,False
+VAL1683_9_no_claim_flags,PASS,all generated rows keep claim flags false,False,False
+VAL1683_10_blocked_not_ready,PASS,no blocked/missing row is marked claim/scoring ready,False,False
+VAL1683_11_next_target_selected,PASS,next target selects qbar source-weight value hunt or source-label forgetting proof,False,False
+VAL1683_12_csv_parse,PASS,all generated 1683 CSVs parse,False,False
+VAL1683_13_branch_copies,PASS,branch/quarantine/queue copies exist,False,False
+VAL1683_14_pycache_absent,PASS,scripts __pycache__ absent,False,False
+VAL1683_15_formalization_untouched,PASS,no 1683 outputs found under formalization-workbench,False,False
+VAL1683_OVERALL,PASS,1683 first Rsource coefficient fill or source-current owner derivation validation,False,False

@@ -1,0 +1,6 @@
+checkpoint,row_id,quantity,formula,required_inputs,status,valid_for_claim,timestamp_utc
+4739,FS4739_0_transition_vector,Y_a^transition,Y_a <= Pi_Delta C_DeltaK_div + Pi_RI C_TF_RI + Pi_conn C_conn + Pi_bdry C_boundary + Pi_kernel C_kernel,PPN/R10/clocks/orbital/WEP arena projection norms,SCORE_VECTOR_FORMULA_READY_INPUTS_OPEN,False,2026-07-07T23:43:14+00:00
+4739,FS4739_1_CDeltaK_components,C_DeltaK_div,C_DeltaK_div <= (||P_loc||/a_ref)(C_TTleak+C_curvU+C_support+C_boundary+C_readout+C_projector),"component values, units, source paths, fixed-before-scoring flags",SOURCE_ROWS_REQUIRED,False,2026-07-07T23:43:14+00:00
+4739,FS4739_2_CTFRI_components,C_TF_RI,C_TF_RI <= (||P_loc||/a_ref)(C_DvP+C_conn+C_Green+C_zeroMode+C_curv+C_domain+C_boundary+C_readout),operator/domain/Green commutator values,SOURCE_ROWS_REQUIRED,False,2026-07-07T23:43:14+00:00
+4739,FS4739_3_Ckernel_components,C_kernel,C_kernel=||Pi_obs L_GR^{-1} Sigma_metric[q_tr]||_obs/a_ref,derived response operator or finite leakage source,SOURCE_ROWS_REQUIRED,False,2026-07-07T23:43:14+00:00
+4739,FS4739_4_promotion_budget,transition budget,all finite rows must beat the existing transition suppression target without retuning,arena-specific PPN/R10/clock/orbital/WEP budgets,BUDGET_COMPARISON_REQUIRED,False,2026-07-07T23:43:14+00:00

@@ -1,0 +1,7 @@
+audit_id,boundary_case,mathematical_test,effect_on_no_pole,current_status,fallback
+BCA581_0_proper_gauge,vertical parameter vanishes or is fixed on compact boundary,epsilon|boundary=0 or allowed variations keep Q_X[epsilon]=0,safe_if_parent_boundary_conditions_are_derived,not_derived,retain boundary source row
+BCA581_1_large_vertical_transform,vertical transformation has nonzero boundary parameter,Q_X[epsilon]=int_boundary epsilon B_X,fails_no_pole_if_Q_X_nonzero,open_edge_mode,treat as boundary hair/source charge
+BCA581_2_first_order_X_boundary_momentum,first-order X multiplier route,B_X^nu=n_mu P[Y]^{mu nu},safe_only_if_B_X_is_zero_exact_or_pure_gauge,known_from_222_not_closed,score Q_boundary contribution inside Q_X^H(lambda)
+BCA581_3_projector_boundary_stress,P_mem/projector variation creates stress or source leakage,delta P_mem destinations are owned and no uncarried stress remains,fails_if_projector_source_is_unowned,safe_conditions_written_not_derived,retain projector/source residual
+BCA581_4_mass_channel_projection,boundary charge projects into measured Hamiltonian mass,Pi_M^H[Q_boundary]=0 including reference-boundary terms,fails_R10_zero_if_projection_nonzero,not_derived,retain epsilon_PiM_X(lambda)
+BCA581_5_verdict,local compact boundary silence,all BCA581_0 through BCA581_4 are safe,required_before_theorem_credit,blocked,582-Y5-R10-boundary-charge-and-constraint-algebra-no-pole-audit.md

@@ -1,0 +1,5 @@
+bridge_id,object,law,meaning,status,valid_for_claim
+TB4358_0_linear_observable,MICROSCOPE Ti/Pt eta channel,eta_TiPt = Delta_w_TiPt * tau_WEP + O((Delta_w_TiPt*tau_WEP)^2) + R_readout_tail,finite source/action weight enters the reported WEP observable only through the projection tau_WEP on this branch,CONDITIONAL_LINEAR_BRIDGE_IMPORTED,False
+TB4358_1_product_bound,P_WEP_relative_source_weight,abs(Delta_w_TiPt * tau_WEP) <= 2.8e-15,"source-backed MICROSCOPE anchor constrains the product, not Delta_w_TiPt alone",SOURCE_BACKED_PRODUCT_BOUND,False
+TB4358_2_amplitude_law,Delta_w_TiPt,"if abs(tau_WEP) >= tau_min > 0, then abs(Delta_w_TiPt) <= 2.8e-15/tau_min",the WEP anchor becomes a usable finite source-weight bound only after a positive projection lower bound is sourced,EXACT_CONDITIONAL_AMPLITUDE_LAW,False
+TB4358_3_null_escape,tau_WEP,"if tau_WEP can vanish or be arbitrarily small, no finite Delta_w_TiPt bound follows from the product anchor",tau_WEP=1 is not a convention; it is a source/readout projection that must be derived or measured,NO_SHORTCUT_THEOREM,False

@@ -1,0 +1,8 @@
+gate_id,rule,gate_pass,reason,valid_for_claim,generated_utc
+G1136_0_source_rows_exist,"source-pack first rows exist for epsilon, W, K, c, and K*c",true_nonclaim,schemas exist but rows are placeholders with missing values,false,2026-06-14T22:10:43.846489+00:00
+G1136_1_no_missing_values,no MISSING markers in claim rows,false,every first-row value is missing or product-blocked,false,2026-06-14T22:10:43.846489+00:00
+G1136_2_source_paths,all claim rows have real source paths,false,epsilon source path is missing and map-only paths are not numeric coefficient sources,false,2026-06-14T22:10:43.846489+00:00
+G1136_3_domain_product,domain product can be evaluated,false,W and epsilon are missing,false,2026-06-14T22:10:43.846489+00:00
+G1136_4_R11_product,R11 product can be evaluated,false,"K, c, and epsilon are missing",false,2026-06-14T22:10:43.846489+00:00
+G1136_5_no_cancellation,total alpha3 cannot pass by tuned cancellation,true_nonclaim,total row is guard-only until product rows independently close,false,2026-06-14T22:10:43.846489+00:00
+G1136_6_alpha3_local_GR,alpha3/R10/PPN/local-GR can promote,false,source pack is nonclaim and products remain blocked,false,2026-06-14T22:10:43.846489+00:00

@@ -1,0 +1,5 @@
+timestamp_utc,branch_id,checkpoint_id,budget_id,formula,meaning,status,claim_allowed,valid_for_claim
+2026-07-03T09:29:56+00:00,MTS_R2FR_Y5_M2_DEFECT_SOURCE_MAP_PRUNING_4242,4242,RB4242_0_full_defect,"A_J,eff_private <= |S_A Hperp^A| + |D_m Delta_h M2_defect| + |D_t M2_defect|",imported reduced defect budget,active_nonclaim,False,False
+2026-07-03T09:29:56+00:00,MTS_R2FR_Y5_M2_DEFECT_SOURCE_MAP_PRUNING_4242,4242,RB4242_1_routed_defect,"A_J,eff_private <= |S_A Hperp^A| + |R_transport_to_local| + |R_Bgrad_to_local|","after conditional routing, transport/Bgrad only enter through explicit local leakage residuals",conditional_private,False,False
+2026-07-03T09:29:56+00:00,MTS_R2FR_Y5_M2_DEFECT_SOURCE_MAP_PRUNING_4242,4242,RB4242_2_best_case,"R_transport_to_local=R_Bgrad_to_local=0 => A_J,eff_private <= |S_A Hperp^A|",best current non-smuggled reduction,not_claimed,False,False
+2026-07-03T09:29:56+00:00,MTS_R2FR_Y5_M2_DEFECT_SOURCE_MAP_PRUNING_4242,4242,RB4242_3_exact_zero,"Hperp=0 and routed residuals zero => A_J,eff_private=0 at leading order",remaining exact-zero path,not_claimed,False,False

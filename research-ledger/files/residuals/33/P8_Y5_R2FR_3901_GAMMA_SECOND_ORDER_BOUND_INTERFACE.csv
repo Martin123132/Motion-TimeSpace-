@@ -1,0 +1,5 @@
+bound_id,quantity,formula,required_inputs,status,valid_for_claim,timestamp_utc
+G2B3901_0_linear_zero,linear gamma coefficient,"K_gamma_linear=0, equivalently c_space-c_lapse=0",no direct disformal readout; quadratic memory stress; finite Sigma-factorized R11; no linear boundary/projector anisotropy,CANDIDATE_LINEAR_ZERO_PARENT_UNSIGNED,False,2026-07-01T09:15:26+00:00
+G2B3901_1_second_order_bound,second-order gamma residual,|gamma-1| <= C_slip[(gradX_bound)^2 + m_eff^2 X_bound^2 + B_TF_boundary] <= 2.3e-5,"C_slip, gradX_bound, X_bound, m_eff, B_TF_boundary",FORMULA_READY_INPUTS_MISSING,False,2026-07-01T09:15:26+00:00
+G2B3901_2_boundary_projector_escape,boundary/projector anisotropic stress,Pi_TF_boundary/projector must be zero by 3892 certificate or included in B_TF_boundary,topological/no-flux boundary certificate or numeric anisotropic boundary stress norm,ESCAPE_RETAINED_AS_BOUND_INPUT,False,2026-07-01T09:15:26+00:00
+G2B3901_3_runner_threshold,gamma acceptance threshold,G2B3901_1 <= 2.3e-5,all second-order inputs source-backed; no cancellation credit,NONCLAIM_RUNNER_THRESHOLD,False,2026-07-01T09:15:26+00:00

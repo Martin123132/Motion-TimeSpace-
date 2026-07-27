@@ -1,0 +1,7 @@
+bound_id,quantity,bound_or_definition,status,claim_allowed,valid_for_claim,generated_utc
+QB2811_0_CPloc,C_Ploc := ||P_loc||,dimensionless >=1 unless an orthogonal projector theorem signs C_Ploc=1,NORM_CONSTANT_RETAINED,False,False,2026-06-24T03:02:08.241569+00:00
+QB2811_1_Ccomm,C_comm := ||nabla P_loc|| plus connection/domain representation terms,inverse-length or appropriate connection scale; zero only if P_loc is covariantly fixed,COMMUTATOR_CONSTANT_RETAINED,False,False,2026-06-24T03:02:08.241573+00:00
+QB2811_2_component_derivatives,D_Delta := C_t||partial_t Delta_K^{0nu}||+C_r||partial_r Delta_K^{rnu}||+C_ang||partial_ang Delta_K||+C_conn||Gamma_conn||||Delta_K||,force-density envelope from 2809 derivative split,COMPONENT_VALUES_MISSING,False,False,2026-06-24T03:02:08.241576+00:00
+QB2811_3_commutator_term,C_comm ||Delta_K||,force-density contribution from projector derivative/domain leakage,BOUND_FORM_ONLY,False,False,2026-06-24T03:02:08.241579+00:00
+QB2811_4_total,||q_DeltaK|| <= C_Ploc D_Delta + C_comm ||Delta_K||,first cleaner bound interface after unit certificate; nonnumeric because components/constants missing,DERIVED_BOUND_INTERFACE_NONNUMERIC,False,False,2026-06-24T03:02:08.241582+00:00
+QB2811_5_score_gate,acceleration/PPN score,"still requires Delta_K components, C_Ploc/C_comm values or zero theorems, zeta/body measure, and no measured-G absorption guard",NOT_SCORE_READY,False,False,2026-06-24T03:02:08.241585+00:00

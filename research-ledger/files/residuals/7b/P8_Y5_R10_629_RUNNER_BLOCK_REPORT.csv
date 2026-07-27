@@ -1,0 +1,5 @@
+report_id,item,status,detail,valid_for_claim
+RB629_0_runner_status,R10_alpha_lambda_bound_prediction_runner,blocked_as_expected,"{""R10_pass_for_claim"": false, ""blocked_or_failed_rows"": 1, ""bound_curve"": ""source-intake/local_bounds/R10_alpha_lambda_bound_curve_VECTOR_2020_REVIEW_CANDIDATE.csv"", ""bound_rows"": 390, ""claim_allowed"": false, ""comparison_rows"": 1, ""generated_at_utc"": ""2026-06-06T11:48:52.128690+00:00"", ""mts_curve"": ""source-intake/mts_residuals/R10_alpha_lambda_curve_MTS_CG_PROJECTION_SMOKE_NONCLAIM.csv"", ""mts_rows"": 9, ""output_dir"": ""runs/20260606-032900-Y5-R10-629-cg-projection-smoke-runner/results"", ""passed_rows"": 0, ""valid_bound_rows"": 0, ""valid_mts_rows"": 0}",false
+RB629_1_MTS_validation,MTS cg smoke rows,invalid_as_expected,"{""alpha_predicted_not_numeric"": 9, ""valid_for_claim_not_true"": 9}",false
+RB629_2_bound_validation,review candidate bound rows,invalid_for_claim_as_expected,"{""valid_for_claim_not_true"": 390}",false
+RB629_3_comparison,comparison rows,no_claim_comparison,comparison_rows=1;passed_rows=0;blocked_or_failed_rows=1,false

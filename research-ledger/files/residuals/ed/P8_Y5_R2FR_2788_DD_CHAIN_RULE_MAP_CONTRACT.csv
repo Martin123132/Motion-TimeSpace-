@@ -1,0 +1,7 @@
+chain_rule_id,object,statement,status,missing_for_claim,generated_utc,valid_for_claim
+DCR2788_0_parent_coordinates,parent coordinates,eps_I are signed parent vertical/coupling generators in the local matter action,MISSING_SIGNED_PARENT_GENERATORS,needed before any DD component can be called MTS-derived,2026-06-24T00:36:15.418101+00:00,False
+DCR2788_1_dd_constants,DD target coordinates,d_alpha and d_surface represent low-energy alpha/Coulomb and surface/binding response amplitudes,EXTERNAL_COORDINATES_AVAILABLE,available only as phenomenological comparator coordinates,2026-06-24T00:36:15.418101+00:00,False
+DCR2788_2_pullback,operator pullback,D_iI := partial d_i / partial eps_I maps parent generators into DD response coordinates,MISSING_OPERATOR_PULLBACK,requires MTS EM and binding operators with units and signs,2026-06-24T00:36:15.418101+00:00,False
+DCR2788_3_coefficient_projection,coefficient projection,c_i = sum_I C_parent^I D_iI,EXACT_IF_D_I_AND_C_PARENT_SIGNED,C_parent and D_iI are both unsigned,2026-06-24T00:36:15.418101+00:00,False
+DCR2788_4_product_projection,DD finite WEP product,P_WEP_DD = tau_WEP * R_source^DD * (c_alpha DeltaQ_alpha + c_surface DeltaQ_surface),FORMAL_NONCLAIM_PRODUCT,physical source/readout and coefficient map missing,2026-06-24T00:36:15.418101+00:00,False
+DCR2788_5_claim_rule,claim rule,"only promote if D_iI, C_parent, source vector, material deltas, and tau_WEP are signed/sourced in one convention",STRICT_GATE,current checkpoint fails the rule,2026-06-24T00:36:15.418101+00:00,False

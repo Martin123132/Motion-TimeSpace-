@@ -1,0 +1,5 @@
+lemma_id,claim,formula,derivation,status,valid_for_claim
+MAG3276_0_variation,F-only terms give magnetization currents,delta L_F = (partial L_F/partial F_{mu nu}) delta F_{mu nu}; J_mag^nu=-nabla_mu H^{mu nu},integrate by parts using delta F=d(delta A),EXACT_LOCAL_VARIATION_LEMMA,false
+MAG3276_1_identity,magnetization current is identically conserved,nabla_nu nabla_mu H^{mu nu}=0 for antisymmetric H^{mu nu},the commutator contracts Ricci curvature with an antisymmetric tensor and vanishes,EXACT_IDENTITY,false
+MAG3276_2_CJ_consequence,magnetization cannot be the C_J compensator,nabla_mu J_mag^mu=0 cannot equal -J_min^mu nabla_mu kappa_J unless J_min.nabla kappa_J=0,compare with the 3275 compensator equation,NONCONSERVED_COMPENSATOR_CLASS_SHRUNK,false
+MAG3276_3_stress_consequence,F-only terms belong in stress/Poynting residuals,"F-only response changes H^{mu nu}, T_EM^{mu nu}, and boundary multipoles, not the active charge-current slope C_J",same variation contributes to constitutive EM stress rather than source-shadow normalization,MAP_TO_EM_STRESS_RESIDUAL,false

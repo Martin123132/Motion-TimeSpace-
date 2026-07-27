@@ -1,0 +1,7 @@
+checkpoint,contract_id,formula,meaning,status,valid_for_claim,timestamp_utc
+4749,QMC4749_0_parent_fields,"X_quar=(X_q,X_K), q_tr=J_q X_q, K_own=J_K X_K","The quarantine map must be a parent map from actual fields, not a notation-only current.",PARENT_MAP_CONTRACT_WRITTEN,False,2026-07-08T00:50:51+00:00
+4749,QMC4749_1_operator,D_quar[X]^nu = J_q[X_q]^nu + nabla_mu J_K[X_K]^{mu nu},This is the sourced version of q_tr+nabla K_own.,OPERATOR_CONTRACT,False,2026-07-08T00:50:51+00:00
+4749,QMC4749_2_static_symbol,"sigma_quar^dagger(p)chi = (J_q^dagger chi, -i p_mu J_K^dagger chi)",The symbol acts on chi through algebraic q and derivative K channels.,HARDENED_PARENT_SYMBOL,False,2026-07-08T00:50:51+00:00
+4749,QMC4749_3_rank_condition,rank(J_q)=dim(chi) or s_min(J_q)>0,The algebraic q channel is the shortest route to positive coercivity.,RANK_TEST_REQUIRED,False,2026-07-08T00:50:51+00:00
+4749,QMC4749_4_kernel_condition,ker(J_q^dagger) cap ker(p_mu J_K^dagger)=0 for every spatial p,"If q is rank-deficient, K can help only for nonzero p and only outside its kernel.",FULL_SYMBOL_TEST_REQUIRED,False,2026-07-08T00:50:51+00:00
+4749,QMC4749_5_nonclaim,"If J_q/J_K are not parent-owned, carry C_quar_kernel and do not score.",Prevents algebraic-control by pure notation.,FAIL_CLOSED_RULE,False,2026-07-08T00:50:51+00:00

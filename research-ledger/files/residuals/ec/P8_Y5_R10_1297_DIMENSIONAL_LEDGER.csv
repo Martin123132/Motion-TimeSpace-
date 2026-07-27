@@ -1,0 +1,6 @@
+dim_id,quantity,expected_units,reason,bridge_use,status,valid_for_claim,claim_allowed
+DL1297_0_Kbar,Kbar_{00},L^-2,Einstein tensor/source-side geometric residual has curvature units,c^2*Kbar_{00} supplies Newton-source units,UNIT_CONSISTENT_IF_TRACE_REVERSED_K_DEFINED,False,False
+DL1297_1_c2Kbar,c^2*Kbar_{00},T^-2,Newton source nabla^2 Phi has units potential/length^2 = T^-2,S_K=-sigma_K*c^2*Kbar_{00},DIMENSIONALLY_MATCHES_POISSON_SOURCE,False,False
+DL1297_2_4piGrho,4*pi*G*rho_ref,T^-2,Poisson equation uses nabla^2 Phi = 4*pi*G*rho,epsilon_K=|c^2*Kbar_{00}|/(4*pi*G*rho_ref),DIMENSIONLESS_RATIO_CONFIRMED,False,False
+DL1297_3_Teff,"T_eff,K_{mu nu}",energy_density_or_pressure,Einstein equation coupling is 8*pi*G/c^4,"T_eff,K=-(sigma_K*c^4/(8*pi*G))*K",DIMENSIONALLY_MATCHES_STRESS_ENERGY,False,False
+DL1297_4_unresolved_projection,Kmetric_chain^{00} to Kbar_{00},L^-2 after trace reversal and projection,"runner rows contain component bounds, but trace and projection into observable 00 slot are not derived","must derive Kbar_L,loc,00 from Kmetric_chain/R_chain before scoring",MISSING_TRACE_REVERSED_PROJECTION,False,False

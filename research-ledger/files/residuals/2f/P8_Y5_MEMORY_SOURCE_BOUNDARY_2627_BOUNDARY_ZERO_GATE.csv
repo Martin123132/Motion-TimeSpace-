@@ -1,0 +1,7 @@
+boundary_id,gate,status,mathematical_condition,gap,valid_for_claim
+BZ2627_0_variational_boundary_term,identify X boundary term,TERM_IDENTIFIED,delta_X S_boundary cancels or fixes n_i A^ij nabla_j X on partial D,parent boundary condition not selected,False
+BZ2627_1_dirichlet,Dirichlet local no-hair,CONDITIONAL_ROUTE,X|partialD=0 or fixed universal calibration value,could be imposed closure; not parent-derived,False
+BZ2627_2_neumann_zero_mean,zero flux plus zero mean/topological class,CONDITIONAL_ROUTE,n.A.grad X=0 and constant/topological mode removed or universal,zero-mode and parent-selected class not signed,False
+BZ2627_3_exact_topological,exact/topological boundary primitive,CONDITIONAL_ROUTE_NOT_DERIVED,boundary current is exact or pure bookkeeping with zero local representative,"417 says boundary primitive, Bianchi gate, projected flux, and secular drift fail",False
+BZ2627_4_wall_stress,no metric/domain wall stress,NOT_DERIVED,metric variation of boundary/domain selector has no local stress or is Ward-owned,boundary polarization/local wall stress not parent-signed,False
+BZ2627_5_current_verdict,boundary zero package,BOUNDARY_ZERO_NOT_PARENT_DERIVED,"one boundary route must pass from parent action, or finite boundary residual rows must be used",no local-GR memory zero claim,False

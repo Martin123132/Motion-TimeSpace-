@@ -1,0 +1,6 @@
+update_id,runner_field,rule,status,valid_for_claim,timestamp_utc
+RUNU3884_0_flux,b_MHref_lock,b_MHref_lock := b_PiM_flux+b_Gauss+b_orbital+b_PiM_stress+b_boundary_ref+b_flux+b_PPN_source,MASS_LOCK_REFINED,False,2026-07-01T07:43:35+00:00
+RUNU3884_1_candidate,candidate zeros,b_PiM_flux=0 and b_Gauss=0 in the stationary candidate if PiM is parent-fixed and Gauss/readout premises hold,CANDIDATE_ONLY,False,2026-07-01T07:43:35+00:00
+RUNU3884_2_residual,fallback rows,"if any premise fails, use MGR3884 residual rows for dln_Meff_dt, radial hair, Delta_Gauss, Delta_PiM, Phi_EM_rad and delta_a_r",RESIDUAL_BOUND_READY,False,2026-07-01T07:43:35+00:00
+RUNU3884_3_Newton,Newton branch,nabla^2 Phi=4*pi*G0 rho_H; oint gradPhi.n dA=4*pi*G0 M_eff; a=-gradPhi,FIRST_ORDER_NEWTON_CANDIDATE,False,2026-07-01T07:43:35+00:00
+RUNU3884_4_no_GR,local_GR,no promotion beyond first-order Newton until PPN/R11 source-stability vector is derived or bounded,NO_LOCAL_GR_PROMOTION,False,2026-07-01T07:43:35+00:00

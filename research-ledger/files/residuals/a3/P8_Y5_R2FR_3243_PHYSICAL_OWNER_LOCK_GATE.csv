@@ -1,0 +1,11 @@
+gate_id,required_clause,zero_condition,current_status,if_unsigned,claim_gate
+OL3243_0_Z_basis,Z^A is a parent-owned exchange-odd vertical coordinate,Dq[e_A]=0 and exchange involution fixes Z=0,CONDITIONAL_NOT_PARENT_SIGNED,eps_Zbasis + eps_q_descent,false
+OL3243_1_MAB,"M_AB is parent-owned, symmetric and positive/coercive on the local branch","M_AB=M_BA, M>=m0>0, same branch as q and Gamma_eff",CONDITIONAL_NOT_PARENT_SIGNED,eps_MAB_domain + eps_M_inverse,false
+OL3243_2_Gamma_even,Gamma_eff has no odd/linear Z term,"Gamma_eff(Gamma,Z)=Gamma_eff(Gamma,-Z) through O(Z^3) or exact symmetry",FORMAL_ROUTE_AVAILABLE,eps_odd_Gamma,false
+OL3243_3_matter_descent,ordinary matter action descends through q with no direct Z/source-label slot,"S_matter=Sbar[q(Phi),Psi,theta]",BEST_ZERO_ROUTE_NOT_SIGNED,eps_JZ,false
+OL3243_4_species_blind_measure,"measure, hbar/path weight, coframe and Jacobian are species-blind and q-owned",D_Z log(mu_parent)=0 and one hbar_parent/action density line,2981_CONDITIONAL_NOT_PARENT_DERIVED,eps_measure + delta_w_A,false
+OL3243_5_constants_couplings,dimensionless constants and EM/clock/mass couplings do not carry independent Z/source markers,D_Z theta=0 or theta is fixed/topological on the same branch,UNSIGNED_MARKER_CLAUSE,eps_theta + eps_constants_em,false
+OL3243_6_readout_projector,local projector/readout/domain cannot reintroduce source labels after q,delta_Z Pi_loc=0 or its contribution is a sourced finite bound,UNSIGNED_PROJECTOR_CLAUSE,eps_projector + eps_worldtube,false
+OL3243_7_boundary_reference,fixed B_ref/no-flux boundary convention kills edge work,delta_Z B_ref + integral_boundary Theta_Z = 0,2990_FIRST_PROOF_TARGET_NOT_SIGNED,eps_BZ + epsilon_Bv_ambiguity,false
+OL3243_8_metric_response,K_hat is the Hilbert metric response of the same Gamma_eff density sector,K_hat=K_metric and Helmholtz/integrability conditions close,3241_3242_UNIFIED_BUT_NOT_PARENT_OWNED,DeltaK_deltaM + DeltaK_deltaZ + eps_Helmholtz,false
+OL3243_9_same_branch,"all zero clauses hold in one local branch, not stitched across unrelated branches","same q, Z basis, matter action, boundary convention, projection and units",GLOBAL_BRANCH_LOCK_OPEN,eps_branch_mismatch,false

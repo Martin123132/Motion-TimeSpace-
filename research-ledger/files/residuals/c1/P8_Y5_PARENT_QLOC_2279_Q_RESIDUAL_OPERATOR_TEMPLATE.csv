@@ -1,0 +1,4 @@
+operator_id,operator,formula,bound,status,valid_for_claim
+QOP2279_0_transport_relaxation,first-order residual transport,D q + kappa_q q = S_q,|q(t)| <= exp(-K)t |q(0)| + integral exp(-K(t-s)) |S_q(s)| ds when kappa_q>=K>0,OPERATOR_TEMPLATE_ONLY,False
+QOP2279_1_elliptic_stiffness,local stiffness residual,L_q q = -nabla_i(Z_q nabla^i q)+M_q^2 q = S_q,"||q|| <= ||L_q^{-1}|| ||S_q|| if Z_q>0, M_q^2>0 and boundary conditions are fixed",STIFFNESS_TEMPLATE_ONLY,False
+QOP2279_2_local_observable,observable projection,R_local=P_obs q,||R_local|| <= ||P_obs|| ||L_q^{-1}|| ||S_q||,OBSERVABLE_TEMPLATE_ONLY,False

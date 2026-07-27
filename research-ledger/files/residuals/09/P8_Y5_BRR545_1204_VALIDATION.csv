@@ -1,0 +1,13 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1204_0_sources_exist,all cited local sources exist,PASS,9/9 sources exist,False,False
+VAL1204_1_needles_found,all cited source needles found,PASS,9/9 needles found,False,False
+VAL1204_2_zero_not_claimed,zero theorem attempts remain conditional,PASS,no boundary/projector zero is promoted,False,False
+VAL1204_3_finite_targets_positive,finite boundary/projector targets are numeric positive,PASS,finite_target_rows=12,False,False
+VAL1204_4_harsh_split_matches,harsh boundary/projector split target matches 1203 threshold/2,PASS,split=1.17233215026e-05;threshold=2.3446643005193777e-05,False,False
+VAL1204_5_epsilon_targets_positive,projector epsilon targets are positive,PASS,epsilon_rows=12,False,False
+VAL1204_6_source_schema_present,source-ready boundary/projector row schemas present,PASS,schema_rows=4,False,False
+VAL1204_7_current_comparison_blocked,current comparison does not claim a pass,PASS,BLOCKED_MISSING_BOUNDARY_AND_PROJECTOR_AMPLITUDES,False,False
+VAL1204_8_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout,False,False
+VAL1204_9_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1204_SOURCE_REGISTER.csv:9; P8_Y5_R10_1204_BOUNDARY_PROJECTOR_ZERO_ATTEMPT.csv:4; P8_Y5_R10_1204_BOUNDARY_PROJECTOR_FINITE_TARGETS.csv:12; P8_Y5_R10_1204_PROJECTOR_EPSILON_TARGETS.csv:12; P8_Y5_R10_1204_SOURCE_READY_BOUND_ROWS.csv:4; P8_Y5_R10_1204_COMPARISON_LEDGER.csv:3; P8_Y5_R10_1204_CLAIM_GATES.csv:4; P8_Y5_R10_1204_DECISION_LEDGER.csv:1; P8_Y5_R10_1204_NEXT_TARGET.csv:1,False,False
+VAL1204_10_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_after_run_start_count=0,False,False
+VAL1204_11_overall,overall 1204 validation,PASS,1204 boundary/projector zero-or-finite-bound gates are reproducible,False,False

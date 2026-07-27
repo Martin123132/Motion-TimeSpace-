@@ -1,0 +1,5 @@
+contract_id,requirement,mathematical_form,current_status,next_evidence_needed,valid_for_claim
+MPC2280_0_no_free_phase_claim,Do not claim phase locking closes local GR unless the phase distribution is derived.,P_locked must be sourced and must make E_R-F'(C_T)E_T+B_q=0 on q=0,UNSIGNED,"parent phase-lock equation, projector map, and coefficient calculation",False
+MPC2280_1_q_sector,"If phase locking is not derived, add/derive a q-stiffness or q-relaxation owner.",S_q=-1/2 integral [Z_q |nabla q|^2 + M_q^2 q^2] or Dq=-M_q delta F_q/delta q,BEST_CONDITIONAL_PARENT_COMPLETION,derive Z_q>0/M_q^2>0 or mobility/free energy from regularity/coarse-graining,False
+MPC2280_2_gr_limit,Show the q-sector decouples or becomes silent in the GR/Newton limit.,q->0 and R_local=P_obs q below PPN/R10/clock/orbital bounds,MISSING_OBSERVABLE_PROJECTION,PPN/R10/clock/orbital projection matrices and bounds,False
+MPC2280_3_no_smuggling,"A q-stiffness term must be motivated by parent geometry, not inserted only to pass local tests.","Z_q,M_q^2 derived from quotient regularity, covariance positivity, or entropy production",PHYSICS_JUSTIFICATION_REQUIRED,2281 derivation attempt,False

@@ -1,0 +1,7 @@
+gate_id,gate,status,claim_allowed,reason,timestamp_utc
+GATE3860_0_sources,source-backed coframe inputs resolved,PASS_SOURCE_REGISTERED,False,all coframe-basicness inputs are local source rows from 3494/3498/3504/3517/3765/3766/3767/3859,2026-07-01T05:01:38+00:00
+GATE3860_1_theorem,coframe basicness theorem,PASS_EXACT_CONDITIONAL_COFRAME_BASICNESS_THEOREM,False,e_obs descends by chain rule once q_obs is parent-signed,2026-07-01T05:01:38+00:00
+GATE3860_2_antitautology,q_obs anti-tautology guard,PASS_NO_QOBS_BY_DECLARATION,False,including e_obs in q_obs is not enough without action pullback/kernel/source/readout certificates,2026-07-01T05:01:38+00:00
+GATE3860_3_current_claim,current corpus proves e_obs basicness,BLOCKED_EOBS_BASICNESS_NOT_PARENT_SIGNED,False,"current corpus has q_obs and public-geometry candidates, but parent pullback, L_leak=0, boundary silence, source descent, constants, and sector readout descent are not all signed",2026-07-01T05:01:38+00:00
+GATE3860_4_local_GR,strict-current metric/action/local-GR claim,BLOCKED_LOCAL_GR_CLAIM,False,"coframe basicness, cstar, nonLC connection, action adoption, source, and readout gates remain active",2026-07-01T05:01:38+00:00
+GATE3860_5_next,next target selected,PASS_3861_NO_SHADOW_COFRAME_TARGET,False,the most concrete e_obs-specific leak is the possible hidden/shadow coframe epsilon_shadow_g,2026-07-01T05:01:38+00:00

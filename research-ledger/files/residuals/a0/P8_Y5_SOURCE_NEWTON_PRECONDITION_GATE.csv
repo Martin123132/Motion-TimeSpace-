@@ -1,0 +1,5 @@
+gate_id,gate,current_status,detail,valid_for_claim
+NG531_0_scorecard_loaded,source-normalization scorecard exists,pass,scorecard_rows=12,false
+NG531_1_measured_GM_precondition,all measured-GM/source-normalization residuals are zero or bounded with source paths,fail_unfilled,unfilled_or_unclaimable_rows=12,false
+NG531_2_first_order_before_beta,Newton/source precondition must pass before beta can be promoted,fail_current_branch,beta is second-order PPN; first-order measured-GM chain remains open,false
+NG531_3_no_absorption_cheat,range/time/species/frame/domain dependence cannot be hidden inside measured GM,pass_policy_enforced,dependent source-normalization channels stay explicit,false

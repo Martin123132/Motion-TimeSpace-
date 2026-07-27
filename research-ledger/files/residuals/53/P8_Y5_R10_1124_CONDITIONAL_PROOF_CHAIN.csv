@@ -1,0 +1,7 @@
+step_id,proof_step,depends_on,status,claim_allowed,valid_for_claim,generated_utc
+P1124_0_define_flux,Define the live alpha3 flux as epsilon_domain_flux = P_loc^i_mu F_D^mu.,1122 flux narrowing; 1123 definition,DEFINITION,false,false,2026-06-14T21:24:25.800969+00:00
+P1124_1_owner_split,Assume parent variation gives F_D^nu = nabla_mu K_D^{mu nu} + q_D^nu.,TH1124_1_owner_decomposition,CONDITIONAL,false,false,2026-06-14T21:24:25.800969+00:00
+P1124_2_kill_retained,"If q_D^nu=0 by a legal route, the only remaining domain exchange is the owned exact/boundary term.",TH1124_2_retained_zero,CONDITIONAL,false,false,2026-06-14T21:24:25.800969+00:00
+P1124_3_project,"Apply Pi_M: Pi_M F_D = Pi_M nabla_mu K_D^{mu nu}; if Pi_M annihilates domain-vertical exchange or the compact boundary charge vanishes, Pi_M F_D=0.",TH1124_3_PiM_annihilator; TH1124_4_boundary_silence,CONDITIONAL,false,false,2026-06-14T21:24:25.800969+00:00
+P1124_4_local_flux,"With Pi_M F_D=0 and the local representative in the observed coframe, the alpha3 flux branch epsilon_domain_flux is zero.",TH1124_0_same_frame; P1124_1-P1124_3,CONDITIONAL,false,false,2026-06-14T21:24:25.800969+00:00
+P1124_5_verdict,"Current corpus does not prove Pi_M F_D=0 because owner decomposition, retained-zero, Pi_M annihilator, and boundary silence are unsigned/open.",TH1124_1-TH1124_4,THEOREM_CONTRACT_NOT_PROVED,false,false,2026-06-14T21:24:25.800969+00:00

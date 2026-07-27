@@ -1,0 +1,7 @@
+rule_id,rule,result,evidence,claim_effect
+V491_0_sources,all cited source paths exist,pass,missing_sources=0,traceability only
+V491_1_inputs_loaded,"490 current audit, 490 closure fills, and 489 Euler system are loaded",pass,current_rows=6;closure_rows=5;euler_rows=7,symmetry test is tied to current blockers
+V491_2_contract_complete,parent symmetry contract lists clauses C0 through C6,pass,C0;C1;C2;C3;C4;C5;C6,exact contract is explicit
+V491_3_component_coverage,component audit covers all Yloc Euler components,pass,Y0_trace_expansion;Y1_coherent_projector;Y2_boundary_flux;Y3_domain_vector;Y4_domain_STF_stress;Y5_source_normalization;Y6_stress_Bianchi,no hidden local residual skipped
+V491_4_counterexamples_written,counterexamples show why naive symmetry is insufficient,pass,counterexamples=4,prevents smuggled zero-source axiom
+V491_5_no_claim_rows,no theorem or component row is claim-valid,pass,claim_valid_theorem_rows=0;claim_valid_component_rows=0,no local-GR promotion

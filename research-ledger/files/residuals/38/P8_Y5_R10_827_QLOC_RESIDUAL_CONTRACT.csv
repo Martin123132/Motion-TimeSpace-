@@ -1,0 +1,6 @@
+term_id,residual_term,status,safe_if,claim_risk,valid_for_claim,generated_utc
+Q827_0_baseline_F_L,P_loc L^-2 partial_X F_L nabla X,open_linear_term,"partial_X F_L=0 locally, nabla X=0 locally, or K_hat/bath stress cancels it with Ward ownership",linear local source survives F1 zero,false,2026-06-12T18:46:51+00:00
+Q827_1_Lcg_drift,-2 P_loc L^-2 F_L nabla ln L,open_linear_term,L_cg is locally constant/adiabatic below bounds or its variation is owned by K_hat/bath stress,trace-baseline gradient looks like local nonconservation/source,false,2026-06-12T18:46:51+00:00
+Q827_2_quadratic_memory,P_loc L^-2 a_F R_mm delta_m nabla delta_m,conditionally_suppressed,delta_m and nabla delta_m are bounded by sourced local relaxation/support powers,can still fail in transition shells if delta_m gradients are not suppressed,false,2026-06-12T18:46:51+00:00
+Q827_3_second_order_X_drift,O(delta_m^2 nabla X),higher_order_conditional,moving-extremum cancellation holds and delta_m is small enough,still needs a bound; not a zero theorem,false,2026-06-12T18:46:51+00:00
+Q827_4_Khat_divergence,-P_loc nabla_mu K_hat^{mu nu},owner_missing,parent action derives the tensor response and boundary data or an explicit residual-vector bound passes,hand-setting K_hat is equivalent to smuggling in a cancellation axiom,false,2026-06-12T18:46:51+00:00

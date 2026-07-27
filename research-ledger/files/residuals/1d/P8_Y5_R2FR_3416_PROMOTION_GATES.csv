@@ -1,0 +1,7 @@
+gate_id,gate,current_result,promotes_if,valid_for_claim
+PG3416_0_selector_math,EH selector math is derived under q-basic two-derivative metric normal form,PASS_EXACT_CONDITIONAL,not a claim gate,False
+PG3416_1_minimum_GR_pole,minimum massless GR pole row is parent-signed,FAIL_NOT_PARENT_SIGNED,"action reduction, readout identity, Hilbert+EM source, boundary/gauge class and G_ref lock all sign together",False
+PG3416_2_TT_only,TT-only long-range public mode rank,FAIL_HRJ_RESIDUES_NOT_READY,G_pub pole test shows no scalar/vector/connection/domain residue or all are bounded,False
+PG3416_3_hidden_stress,all hidden/projector/constitutive stresses excluded or bounded,FAIL_GLOBAL_HIDDEN_STRESS_EXCLUSION,"each live stress is public Hilbert, Lambda, topological, no-hair, or bounded",False
+PG3416_4_residual_bounds,non-EH residual bound pack is score-ready,FAIL_VALUES_MISSING,H_i/R_i/J_i/range/projection rows are source-backed and pass no-cancellation locks,False
+PG3416_5_local_GR,local GR/Newton/Maxwell/PPN branch is derived,BLOCKED,PG3416_1 through PG3416_4 plus q_loc vector/full PPN gates pass,False

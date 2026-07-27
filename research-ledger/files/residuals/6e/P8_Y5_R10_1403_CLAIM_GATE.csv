@@ -1,0 +1,6 @@
+claim_id,claim,status,reason,valid_for_claim,claim_allowed
+GATE1403_0_owner,WEP source normalization is parent-owned,BLOCKED_NO_CLAIM,same-owner current/source geometry and tau_WEP are unsigned,False,False
+GATE1403_1_WEP_pass,WEP branch passes,BLOCKED_NO_CLAIM,pressure targets are numeric but B_WEP is not derived or fitted with claim provenance,False,False
+GATE1403_2_clock_transfer,clock product relieves WEP,BLOCKED_NO_CLAIM,1402 forbids clock-to-WEP transfer without parent theorem,False,False
+GATE1403_3_R10_or_PPN_transfer,WEP target relieves R10 or PPN,BLOCKED_NO_CLAIM,R10 material kernel and local PPN projection coefficients are missing,False,False
+GATE1403_4_local_GR,local GR/Newton reduction can be claimed,BLOCKED_NO_CLAIM,WEP pressure target is not a local-GR proof and R_EM_local remains unbounded,False,False

@@ -1,0 +1,6 @@
+formula_id,name,formula,status
+F4334_0_tail_vector,open-tail vector,"T_open := (Xi_open, epsilon_EM_open_boundary, epsilon_coeff_open, epsilon_projection_open, tail_guard_sum, epsilon_tau_open, epsilon_boundary_projector_open, ordinary_matter_shadow_open)",DEFINED
+F4334_1_matrix_contract,projection matrix contract,"R_arena = Pi_arena T_open, with Pi_arena source-backed numeric and fixed before scoring",SOURCE_MATRIX_REQUIRED
+F4334_2_R10_smoke_gate,R10 smoke gate,"score_R10 only if K_X, Qbar_XH(lambda), P_A qbarXT_vec, lambda_X, Pi_R10(lambda), and alpha_bound(lambda) are numeric/source-backed",BLOCKED_CURRENTLY
+F4334_3_PPN_smoke_gate,PPN smoke gate,"score_PPN only if Pi_PPN maps T_open into (gamma-1,beta-1,alpha1,alpha2,alpha3,xi,zeta1,zeta2,zeta3,zeta4,Gdot/G) with metric-transfer provenance",BLOCKED_CURRENTLY
+F4334_4_claim_gate,claim gate,"claim_allowed=False unless every used Pi_arena row has numeric_matrix_present=True, source_status=SOURCE_BACKED_NUMERIC_MATRIX, and no MISSING_* marker",CLAIM_BLOCKED

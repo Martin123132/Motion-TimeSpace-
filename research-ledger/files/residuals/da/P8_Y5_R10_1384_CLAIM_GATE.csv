@@ -1,0 +1,7 @@
+gate_id,gate,status,reason,valid_for_claim,claim_allowed
+GATE1384_0_sources,all cited sources exist and anchors are present,PASS,source register validates against local corpus,False,False
+GATE1384_1_canonicalization,local canonicalization derivation exists,PASS_CONDITIONAL_DERIVATION,CDA1384_3 derives phi=sqrt(Z_0) eta and mu_m^2=F2/(Z_0 L0^2) under frozen-X_B assumptions,False,False
+GATE1384_2_full_Zm_law,unique parent Z_m(X_B) law is derived,BLOCKED_NOT_DERIVED,covariance/action form allows infinitely many positive Z_m functions without extra principle,False,False
+GATE1384_3_first_fill,first-fill target selected,PASS_SELECTED_MU_M2_AND_GC,canonical mass-gap and coupling are the physical pair needed before local scoring,False,False
+GATE1384_4_numeric,numeric ell_tr / R10 / PPN scoring can run,BLOCKED_CANONICAL_INPUTS_MISSING,"mu_m^2, g_c, Phi_S, epsilon_Z, source/boundary and arena projection rows are not source-backed",False,False
+GATE1384_5_local_claim,local GR / Newton / PPN / R10 pass can be claimed,BLOCKED_NO_CLAIM,"1384 is a canonical pivot and first-fill selection, not a parent-signed GR reduction",False,False

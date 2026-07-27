@@ -1,0 +1,167 @@
+# 2695 - Y5/R2FR Kappa Topological Superselection Parent Adoption or Drift Residual Values
+
+## Private Verdict
+
+This checkpoint takes the best shot at the coupling gap. The clean mechanism is real: a parent topological zero-form/three-form sector
+
+`S_kappa_top = int_M kappa_eff dA_3`
+
+would derive `d kappa_eff=0` by varying `A_3`, provided `A_3`, `kappa_eff`, the companion equation, the boundary policy, and metric/source silence are all parent-owned.
+
+The route is therefore not rubbish and not hand-waving. But current MTS has not yet signed those parent clauses. So 2695 does not claim constant `G_eff`, Newton, PPN, local GR, R10, WEP, clock, orbital, GitHub, or public readiness. It promotes only a candidate parent-action mechanism and keeps the kappa drift/source/range/frame/domain residual rows alive.
+
+The useful forward leap is to carry this topological kappa sector as a conditional parent clause while attacking the next blocker: whether `M_eff` is the conserved source/Gauss/worldtube charge before orbital readout.
+
+## Source Register
+
+| source_id | relative_path | absolute_path | exists | required_needles | found_needles | missing_needles | purpose | valid_for_claim | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| SRC2695_2694_DOC | 2694-Y5-R2FR-sector-positive-operator-silence-certificates-or-residual-values.md | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\2694-Y5-R2FR-sector-positive-operator-silence-certificates-or-residual-values.md | true | NEXT2694_0_selected;CERT2694_0_kappa;VAL2694_OVERALL | NEXT2694_0_selected;CERT2694_0_kappa;VAL2694_OVERALL |  | imports selected 2695 kappa target and no-claim ceiling | false | 2026-06-23T07:56:14.923688+00:00 |
+| SRC2695_508_KAPPA | 508-constant-kappa-superselection-or-drift-residual.md | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\508-constant-kappa-superselection-or-drift-residual.md | true | T508_1_topological_zeroform;K508_3_metric_stress_silence;KR508_0_time_drift | T508_1_topological_zeroform;K508_3_metric_stress_silence;KR508_0_time_drift |  | imports topological zero-form/three-form route and kappa residual map | false | 2026-06-23T07:56:14.924138+00:00 |
+| SRC2695_453_SUPERSELECTION | 453-global-coupling-superselection-parent-action-contract.md | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\453-global-coupling-superselection-parent-action-contract.md | true | P1_topological_zero_form;GS0_configuration_factorization;global_coupling_parent_derived | P1_topological_zero_form;GS0_configuration_factorization;global_coupling_parent_derived |  | imports global coupling superselection contract and parent-adoption failure | false | 2026-06-23T07:56:14.924562+00:00 |
+| SRC2695_452_CONSTANT_KAPPA | 452-constant-universal-Geff-kappa-identity-attempt.md | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\452-constant-universal-Geff-kappa-identity-attempt.md | true | CU1_global_coupling_status;CU5_Bianchi_exchange_zero;CU8_retained_residual_fallback | CU1_global_coupling_status;CU5_Bianchi_exchange_zero;CU8_retained_residual_fallback |  | imports constant universal G_eff/kappa identity and residual fallback | false | 2026-06-23T07:56:14.924990+00:00 |
+| SRC2695_GS_CONTRACT | source-intake/mts_residuals/P8_global_coupling_superselection_CONTRACT.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_global_coupling_superselection_CONTRACT.csv | true | GS0_configuration_factorization;GS4_no_range_radial_time_dependence;GS7_scalar_branch_fallback | GS0_configuration_factorization;GS4_no_range_radial_time_dependence;GS7_scalar_branch_fallback |  | imports machine-readable global/superselection kappa contract | false | 2026-06-23T07:56:14.925397+00:00 |
+| SRC2695_CU_CONTRACT | source-intake/mts_residuals/P8_constant_universal_Geff_kappa_CONTRACT.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_constant_universal_Geff_kappa_CONTRACT.csv | true | CU1_global_coupling_status;CU4_no_range_radial_running;CU8_retained_residual_fallback | CU1_global_coupling_status;CU4_no_range_radial_running;CU8_retained_residual_fallback |  | imports constant universal kappa/G_eff contract rows | false | 2026-06-23T07:56:14.925793+00:00 |
+| SRC2695_CONSTANT_GM_THEOREM | source-intake/mts_residuals/P8_CONSTANT_GM_ZERO_THEOREM_ATTEMPT.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_CONSTANT_GM_ZERO_THEOREM_ATTEMPT.csv | true | Z1_global_coupling_superselection;Z5_no_radial_or_range_hair;Z8_second_order_source_stability | Z1_global_coupling_superselection;Z5_no_radial_or_range_hair;Z8_second_order_source_stability |  | imports measured-GM zero theorem and open kappa/source blockers | false | 2026-06-23T07:56:14.926184+00:00 |
+| SRC2695_DERIVATIVE_HAIR | source-intake/mts_residuals/P8_CONSTANT_GM_DERIVATIVE_HAIR_GATE.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_CONSTANT_GM_DERIVATIVE_HAIR_GATE.csv | true | CGM0_master_identity;CGM4_range_dependence;retained_unfilled_no_claim | CGM0_master_identity;CGM4_range_dependence;retained_unfilled_no_claim |  | imports derivative-hair scorecard for measured source normalization | false | 2026-06-23T07:56:14.926573+00:00 |
+| SRC2695_LOCAL_RESIDUAL_INPUT | source-intake/mts_residuals/P8_CONSTANT_GM_LOCAL_RESIDUAL_RUNNER_INPUT.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_CONSTANT_GM_LOCAL_RESIDUAL_RUNNER_INPUT.csv | true | P8_Geff_time_drift;P8_range_dependence;not_scoreable_prediction_missing | P8_Geff_time_drift;P8_range_dependence;not_scoreable_prediction_missing |  | imports currently unfilled local residual runner inputs | false | 2026-06-23T07:56:14.926984+00:00 |
+| SRC2695_BOUND_MATRIX | source-intake/mts_residuals/P8_CONSTANT_GM_RESIDUAL_BOUND_MATRIX.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_CONSTANT_GM_RESIDUAL_BOUND_MATRIX.csv | true | P8_Geff_time_drift;P8_range_dependence;score only | P8_Geff_time_drift;P8_range_dependence;score only |  | imports bound/scoreability matrix for kappa residual rows | false | 2026-06-23T07:56:14.927396+00:00 |
+| SRC2695_LOCAL_BOUNDS | source-intake/local_bounds/local_bound_claims.csv | D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\local_bounds\local_bound_claims.csv | true | R1_WEP_source_charge;R9_Gdot;R10_fifth_force | R1_WEP_source_charge;R9_Gdot;R10_fifth_force |  | imports empirical locks touched by kappa drift/source/range hair | false | 2026-06-23T07:56:14.927855+00:00 |
+
+## Kappa Topological Parent Adoption Audit
+
+| audit_id | clause | required_identity | evidence_now | current_status | blocks_if_missing | residual_if_missing | parent_adopted | valid_for_claim | claim_allowed | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| KAD2695_0_configuration_factorization | configuration category | Q_parent = Q_dyn x K_top with kappa_eff in K_top, not in a local scalar bundle | 453/GS0 requires this but marks it not_parent_derived | UNSIGNED_PARENT_FACTOR | kappa_eff can still be a local scalar/source-normalization field | dln_Geff_dt;partial_r_ln_Geff;partial_A_ln_Geff;alpha_kappa(lambda);delta_frame_source | false | false | false | 2026-06-23T07:56:14.927869+00:00 |
+| KAD2695_1_field_content | topological field content | parent action contains metric-independent A_3 and zero-form kappa_eff in a global/topological sector | 508/K508_0 writes the clause; 453/P1 says promising future route, not in corpus | CLAUSE_AVAILABLE_NOT_PARENT_SIGNED | zero-gradient derivation has nowhere to live in the current parent action | retain scalar-kappa branch and local-bound rows | false | false | false | 2026-06-23T07:56:14.927874+00:00 |
+| KAD2695_2_variation_A3 | A_3 variation | delta_{A_3} int kappa_eff dA_3 = -int d kappa_eff wedge delta A_3 + boundary | mathematical variation is exact if A_3 is parent-owned and boundary variation is fixed/topological | CONDITIONAL_ZERO_GRADIENT_DERIVATION | without parent-owned A_3 this is a post-hoc plateau axiom | d kappa_eff remains unowned | false | false | false | 2026-06-23T07:56:14.927878+00:00 |
+| KAD2695_3_variation_kappa | kappa companion equation | delta_{kappa} S gives dA_3 plus only global/topological constraints | 508/K508_2 warns this must not become a local scalar force/source-current equation | UNSIGNED_COMPANION_EQUATION | the route becomes a dressed Lagrange multiplier patch | new source/current/stress residual owner required | false | false | false | 2026-06-23T07:56:14.927880+00:00 |
+| KAD2695_4_metric_stress_silence | stress silence | delta_g S_kappa_top = 0 in compact local exterior | 508/K508_3 states the needed metric independence but the current parent action does not sign it | UNSIGNED_METRIC_STRESS_SILENCE | constant kappa may be paid for by an unowned non-EH stress sector | R11 operator/stress ledger stays active | false | false | false | 2026-06-23T07:56:14.927887+00:00 |
+| KAD2695_5_matter_source_blindness | source/species/range/frame blindness | partial_A kappa_eff = partial_source kappa_eff = partial_m kappa_eff = partial_lambda kappa_eff = partial_frame kappa_eff = 0 | 453/GS2-GS4 and 452/CU2-CU4 remain not_parent_derived | UNSIGNED_SOURCE_BLINDNESS | source-charge, range-hair, frame/domain coupling can survive even if a spacetime gradient is killed | R1/R9/R10/R11 kappa residuals remain | false | false | false | 2026-06-23T07:56:14.927890+00:00 |
+| KAD2695_6_boundary_projection_policy | boundary and local projection silence | boundary term from integration by parts is fixed/topological and cannot leak into measured mass/source flux | 508/K508_1 names the boundary condition; source-measure/Gauss closure is still held after kappa | UNSIGNED_BOUNDARY_POLICY | the zero-form derivation can move the problem into boundary mass flux | source/Gauss M_eff branch remains next blocker | false | false | false | 2026-06-23T07:56:14.927893+00:00 |
+| KAD2695_7_bianchi_exchange | Bianchi/exchange term | if d kappa_eff=0 and source blindness holds then P_loc[T_obs nabla kappa_eff]=0 | 452/CU5 and 453/GS5 keep this as a conditional branch, not current promotion | CONDITIONAL_ZERO_NOT_PROMOTED | hidden exchange owner can impersonate conservation | delta_kappa_source residual remains | false | false | false | 2026-06-23T07:56:14.927896+00:00 |
+| KAD2695_8_verdict | adoption verdict | the topological route is a valid candidate parent mechanism but is not yet an earned theorem of current MTS | all required adoption clauses are either conditional or unsigned | PARENT_ADOPTION_FAILS_CURRENT_CORPUS | no kappa/G_eff, measured-GM, Newton, PPN, local-GR, R10, WEP, clock, or orbital claim | carry candidate clause only, or fill residual values | false | false | false | 2026-06-23T07:56:14.927899+00:00 |
+
+## Zero-Form / Three-Form Derivation Check
+
+| step_id | operation | expression | requirement | result_if_requirement_met | current_result | mathematical_valid | parent_signed | valid_for_claim | notes | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| ZFD2695_0_action | write candidate sector | S_kappa_top = int_M kappa_eff dA_3 | A_3 is a parent-owned topological three-form and kappa_eff is a zero-form sector variable | candidate topological mechanism exists | CONDITIONAL | true | false | false | this is a clean parent-action clause, not evidence that old MTS already contained it | 2026-06-23T07:56:14.927904+00:00 |
+| ZFD2695_1_integrate_by_parts | vary A_3 | delta_A S = int kappa_eff d(delta A_3) = -int d kappa_eff wedge delta A_3 + boundary | boundary variation is fixed/topological before source readout | Euler equation can be d kappa_eff = 0 | MATHEMATICAL_STEP_VALID_CONDITIONAL | true | false | false | this is the non-plateau route: the zero comes from a variational equation | 2026-06-23T07:56:14.927908+00:00 |
+| ZFD2695_2_local_equation | use arbitrary compact-support delta A_3 | d kappa_eff = 0 | compact local variations in a connected local domain are allowed and no boundary flux contributes | kappa_eff is locally constant | MATHEMATICAL_STEP_VALID_CONDITIONAL | true | false | false | local constancy is conditional on the parent topological sector | 2026-06-23T07:56:14.927911+00:00 |
+| ZFD2695_3_connected_domain | convert closed zero-form to integration constant | d kappa_eff = 0 on connected D implies kappa_eff = kappa_D | domain label is global/superselected and not a local memory/range/source readout | D_X kappa_eff = 0 for local spacetime directions | CONDITIONAL_DOMAIN_CONSTANT | true | false | false | domain superselection must not become preferred-location hair | 2026-06-23T07:56:14.927914+00:00 |
+| ZFD2695_4_companion_equation | vary kappa_eff | delta_kappa S gives dA_3 plus any allowed global-sector constraint | companion equation is global/topological rather than a local matter/source equation | no scalar-tensor force is introduced | UNSIGNED | false | false | false | this is the main gap left by simply writing int kappa dA_3 | 2026-06-23T07:56:14.927917+00:00 |
+| ZFD2695_5_stress_silence | vary metric/coframe | delta_g S_kappa_top = 0 | the topological sector is metric independent or has an explicitly fixed subtraction | no non-EH stress buys the constant | UNSIGNED | false | false | false | without this, kappa closure can reappear as an R11 operator/stress debt | 2026-06-23T07:56:14.927922+00:00 |
+| ZFD2695_6_source_blindness | act with source/material/range/frame selectors | partial_A kappa_eff = partial_lambda kappa_eff = partial_frame kappa_eff = 0 | matter/source action sees only the same constant kappa_eff | no source-charge or fifth-force kappa hair | UNSIGNED | false | false | false | killing spacetime gradient alone is not enough for local tests | 2026-06-23T07:56:14.927925+00:00 |
+| ZFD2695_7_verdict | derive-or-reject result | S_kappa_top can derive d kappa_eff=0, but current MTS has not signed every parent clause | all adoption clauses above must pass before claim credit | candidate branch ready; claim branch blocked | ROUTE_BUILT_NOT_PROMOTED | true | false | false | this is progress, not a public win | 2026-06-23T07:56:14.927928+00:00 |
+
+## Kappa Residual Value Requirements
+
+| residual_id | component_id | symbol | derivative_channel | observable_link | target_bound_or_zero | units | required_artifact | current_status | source_anchor | numeric_value_present | score_ready | valid_for_claim | claim_allowed | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| KRR2695_0_time_drift | P8_Geff_time_drift | dln_Geff_dt | D_t | Gdot_over_G | 9.6e-15 | yr^-1 | P8_time_drift_residual_or_zero.csv with separated G_eff, M_eff, epsilon_mu terms | MISSING_TOPOLOGICAL_PARENT_ADOPTION_OR_NUMERIC_DRIFT | KR508_0_time_drift;CGM1_time_drift;R9_Gdot | false | false | false | false | 2026-06-23T07:56:14.927932+00:00 |
+| KRR2695_1_radial_hair | P8_radial_source_hair | partial_r_ln_Geff | D_r | gamma_minus_1;beta_minus_1;radial source hair | zero radial hair or mapped local profile bound | inverse_length_or_dimensionless_envelope | P8_radial_mu_profile_or_zero.csv with source-normalized radius map | MISSING_TOPOLOGICAL_PARENT_ADOPTION_OR_RADIAL_PROFILE | KR508_1_radial_hair;CGM2_radial_hair | false | false | false | false | 2026-06-23T07:56:14.927936+00:00 |
+| KRR2695_2_range_dependence | P8_range_dependence | alpha_kappa(lambda) | D_lambda;finite_range | R10_fifth_force | verified alpha(lambda) curve or theorem-zero | range-dependent | R10_alpha_lambda_curve_MTS_source_normalization.csv with predicted and bound columns | MISSING_TOPOLOGICAL_PARENT_ADOPTION_OR_ALPHA_CURVE | KR508_2_range_dependence;CGM4_range_dependence;R10_fifth_force | false | false | false | false | 2026-06-23T07:56:14.927939+00:00 |
+| KRR2695_3_species_source_charge | P8_species_source_charge | eta_source_AB;partial_A_ln_Geff | D_A;Delta_AB | R1_WEP_source_charge | 2.8e-15 | dimensionless | P8_species_source_charge_residual_or_zero.csv with material/source assumptions | MISSING_TOPOLOGICAL_PARENT_ADOPTION_OR_SOURCE_CHARGE_VALUE | KR508_3_species_source_charge;GS3;CU3;R1_WEP_source_charge | false | false | false | false | 2026-06-23T07:56:14.927942+00:00 |
+| KRR2695_4_frame_domain_split | P8_frame_calibration_split | delta_frame_source;partial_D_ln_Geff | Delta_frame;D_domain | WEP/clock/R11/domain rows | one observed source frame or explicit residual below locks | dimensionless | P8_frame_source_split_residual_or_zero.csv with same-frame assumptions | MISSING_TOPOLOGICAL_PARENT_ADOPTION_OR_FRAME_DOMAIN_VALUE | KR508_4_frame_domain_split;CGM5_frame_domain_split | false | false | false | false | 2026-06-23T07:56:14.927945+00:00 |
+| KRR2695_5_bianchi_exchange | P8_Bianchi_kappa_exchange | delta_kappa_source | nabla_mu | R4;R7;R9;R10;R11 | same-frame arbitrary-source conservation theorem or explicit exchange coefficient | operator/source units | P8_delta_kappa_source_exchange_residual.csv | MISSING_TOPOLOGICAL_PARENT_ADOPTION_OR_EXCHANGE_COEFFICIENT | KR508_5_Bianchi_exchange;CU5;GS5 | false | false | false | false | 2026-06-23T07:56:14.927948+00:00 |
+
+## Measured-GM Contamination Map
+
+| contamination_id | source_identity | contamination_path | if_kappa_not_constant | affected_claim | active_residuals | decision | valid_for_claim | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| MGM2695_0_master_identity | mu_obs = G_eff M_eff(1+epsilon_mu) | D_X ln mu_obs = D_X ln G_eff + D_X ln M_eff + D_X ln(1+epsilon_mu) | kappa drift contaminates the measured source product and cannot be hidden in fitted GM | Newton source normalization; PPN source rows | KRR2695_0;KRR2695_1;KRR2695_2;KRR2695_3;KRR2695_4;KRR2695_5 | block_claim_or_require_parent_zero/value | false | 2026-06-23T07:56:14.927952+00:00 |
+| MGM2695_1_time | G_eff = kappa_eff c^4/(8 pi) | dln_Geff_dt = dln_kappa_eff_dt | local Gdot lock activates unless topological kappa closes or a numeric drift row is supplied | R9_Gdot;clock/orbital drift | KRR2695_0_time_drift | block_claim_or_require_parent_zero/value | false | 2026-06-23T07:56:14.927955+00:00 |
+| MGM2695_2_range | G_eff(lambda) or Yukawa-like finite-range kappa hair | alpha_kappa(lambda) must be zero by theorem or scored against R10 curve | inverse-square law cannot be claimed from a symbolic constant-G sentence | R10_fifth_force | KRR2695_2_range_dependence | block_claim_or_require_parent_zero/value | false | 2026-06-23T07:56:14.927958+00:00 |
+| MGM2695_3_source | kappa_eff(A, source, material) | Delta_AB ln mu_obs includes partial_A ln G_eff | direct coframe WEP is not enough if the active gravitational source charge varies by material/source label | R1_WEP_source_charge;measured GM | KRR2695_3_species_source_charge | block_claim_or_require_parent_zero/value | false | 2026-06-23T07:56:14.927961+00:00 |
+| MGM2695_4_frame_domain | kappa_eff(frame, domain, boundary) | Delta_frame ln mu_obs and partial_D ln G_eff survive | constant in one representation is not automatically constant in the observed source/matter frame | WEP;clock;R11;domain rows | KRR2695_4_frame_domain_split | block_claim_or_require_parent_zero/value | false | 2026-06-23T07:56:14.927964+00:00 |
+| MGM2695_5_bianchi | P_loc[T_obs nabla kappa_eff] | Bianchi kills this only in the same-frame arbitrary-source branch with no hidden exchange owners | source-normalization exchange can remain after EH algebra | R4;R7;R9;R10;R11 | KRR2695_5_bianchi_exchange | block_claim_or_require_parent_zero/value | false | 2026-06-23T07:56:14.927967+00:00 |
+| MGM2695_6_verdict | constant kappa is a prerequisite, not the whole Newton/GR proof | even if kappa closes, M_eff/Gauss/source measure and non-EH operator rows remain | kappa work can unlock the next gate but cannot itself promote local GR | Newton;PPN;local_GR | next_source_measure_Meff_flux_gate | block_claim_or_require_parent_zero/value | false | 2026-06-23T07:56:14.927971+00:00 |
+
+## Dry-Run Cases
+
+| case_id | topological_clause_written | topological_sector_in_parent | companion_equation_global | metric_stress_silent | source_blind | boundary_fixed | residual_values_present | cancellation_only | fitted_gm_backfill | expected_status | expected_claim_allowed | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| DRY2695_0_full_topological_parent | true | true | true | true | true | true | false | false | false | CONDITIONAL_KAPPA_ZERO_ONLY_SOURCE_GAUSS_STILL_REQUIRED | false | 2026-06-23T07:56:14.927976+00:00 |
+| DRY2695_1_formula_only | true | false | true | true | true | false | false | false | false | REJECT_PARENT_ADOPTION_UNSIGNED | false | 2026-06-23T07:56:14.927981+00:00 |
+| DRY2695_2_companion_missing | true | true | false | true | true | true | false | false | false | REJECT_COMPANION_EQUATION_LOCAL_OR_MISSING | false | 2026-06-23T07:56:14.927985+00:00 |
+| DRY2695_3_stress_missing | true | true | true | false | true | true | false | false | false | REJECT_UNOWNED_STRESS | false | 2026-06-23T07:56:14.927988+00:00 |
+| DRY2695_4_source_blind_missing | true | true | true | true | false | true | false | false | false | REJECT_SOURCE_LABEL_HAIR | false | 2026-06-23T07:56:14.927991+00:00 |
+| DRY2695_5_boundary_missing | true | true | true | true | true | false | false | false | false | REJECT_BOUNDARY_FLUX | false | 2026-06-23T07:56:14.927994+00:00 |
+| DRY2695_6_no_parent_no_values | false | false | false | false | false | false | false | false | false | BLOCK_RESIDUAL_VALUES_MISSING | false | 2026-06-23T07:56:14.927998+00:00 |
+| DRY2695_7_residual_values_present | false | false | false | false | false | false | true | false | false | NONCLAIM_SCOREABLE_RESIDUAL_BRANCH_ONLY | false | 2026-06-23T07:56:14.928001+00:00 |
+| DRY2695_8_cancellation_only | true | true | true | true | true | true | false | true | false | REJECT_TUNED_CANCELLATION | false | 2026-06-23T07:56:14.928004+00:00 |
+| DRY2695_9_fitted_gm_backfill | true | true | true | true | true | true | false | false | true | REJECT_FITTED_GM_BACKFILL | false | 2026-06-23T07:56:14.928007+00:00 |
+
+## Dry-Run Results
+
+| case_id | expected_status | actual_status | status_match | claim_allowed | valid_for_claim | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- |
+| DRY2695_0_full_topological_parent | CONDITIONAL_KAPPA_ZERO_ONLY_SOURCE_GAUSS_STILL_REQUIRED | CONDITIONAL_KAPPA_ZERO_ONLY_SOURCE_GAUSS_STILL_REQUIRED | true | false | false | 2026-06-23T07:56:14.928012+00:00 |
+| DRY2695_1_formula_only | REJECT_PARENT_ADOPTION_UNSIGNED | REJECT_PARENT_ADOPTION_UNSIGNED | true | false | false | 2026-06-23T07:56:14.928019+00:00 |
+| DRY2695_2_companion_missing | REJECT_COMPANION_EQUATION_LOCAL_OR_MISSING | REJECT_COMPANION_EQUATION_LOCAL_OR_MISSING | true | false | false | 2026-06-23T07:56:14.928023+00:00 |
+| DRY2695_3_stress_missing | REJECT_UNOWNED_STRESS | REJECT_UNOWNED_STRESS | true | false | false | 2026-06-23T07:56:14.928026+00:00 |
+| DRY2695_4_source_blind_missing | REJECT_SOURCE_LABEL_HAIR | REJECT_SOURCE_LABEL_HAIR | true | false | false | 2026-06-23T07:56:14.928029+00:00 |
+| DRY2695_5_boundary_missing | REJECT_BOUNDARY_FLUX | REJECT_BOUNDARY_FLUX | true | false | false | 2026-06-23T07:56:14.928032+00:00 |
+| DRY2695_6_no_parent_no_values | BLOCK_RESIDUAL_VALUES_MISSING | BLOCK_RESIDUAL_VALUES_MISSING | true | false | false | 2026-06-23T07:56:14.928035+00:00 |
+| DRY2695_7_residual_values_present | NONCLAIM_SCOREABLE_RESIDUAL_BRANCH_ONLY | NONCLAIM_SCOREABLE_RESIDUAL_BRANCH_ONLY | true | false | false | 2026-06-23T07:56:14.928038+00:00 |
+| DRY2695_8_cancellation_only | REJECT_TUNED_CANCELLATION | REJECT_TUNED_CANCELLATION | true | false | false | 2026-06-23T07:56:14.928041+00:00 |
+| DRY2695_9_fitted_gm_backfill | REJECT_FITTED_GM_BACKFILL | REJECT_FITTED_GM_BACKFILL | true | false | false | 2026-06-23T07:56:14.928044+00:00 |
+
+## Claim Gates
+
+| gate_id | pass_condition | current_status | evidence | valid_for_claim | claim_allowed | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- |
+| CG2695_0_parent_sector | topological kappa sector is actually in the parent action | FAIL_PARENT_ADOPTION_UNSIGNED | KAD2695_0;KAD2695_1;KAD2695_8 | false | false | 2026-06-23T07:56:14.928048+00:00 |
+| CG2695_1_zero_gradient | d kappa_eff=0 follows from parent A_3 variation | PASS_CONDITIONAL_NOT_PROMOTED | ZFD2695_1;ZFD2695_2 | false | false | 2026-06-23T07:56:14.928052+00:00 |
+| CG2695_2_companion_stress | kappa variation and metric variation introduce no local scalar force or stress | FAIL_COMPANION_AND_STRESS_UNSIGNED | ZFD2695_4;ZFD2695_5 | false | false | 2026-06-23T07:56:14.928055+00:00 |
+| CG2695_3_source_blindness | kappa carries no species/source/range/frame/domain labels | FAIL_SOURCE_BLINDNESS_UNSIGNED | KAD2695_5;ZFD2695_6 | false | false | 2026-06-23T07:56:14.928059+00:00 |
+| CG2695_4_residual_values | if parent zero fails, all drift/source/range/frame/domain values are sourced and scoreable | FAIL_VALUES_MISSING | KRR2695_0-KRR2695_5 | false | false | 2026-06-23T07:56:14.928062+00:00 |
+| CG2695_5_source_gauss_after_kappa | even with kappa controlled, M_eff is the conserved source/Gauss charge | FAIL_HELD_NEXT_GATE | MGM2695_6 | false | false | 2026-06-23T07:56:14.928066+00:00 |
+| CG2695_6_verdict | kappa branch proves local GR/Newton now | CLAIM_BLOCKED | all gates above | false | false | 2026-06-23T07:56:14.928070+00:00 |
+
+## Decisions
+
+| decision_id | decision | rationale | status | next_action | claim_allowed | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- |
+| DEC2695_0_zero_form_route | ZERO_FORM_THREE_FORM_ROUTE_IS_MATH_VALID | The action int kappa_eff dA_3 gives d kappa_eff=0 by A_3 variation if the parent owns A_3, kappa_eff, and boundary silence. | REAL_PROGRESS | keep as candidate parent mechanism | false | 2026-06-23T07:56:14.928074+00:00 |
+| DEC2695_1_parent_adoption | PARENT_ADOPTION_NOT_EARNED | The current corpus still does not sign configuration factorization, companion equation, stress silence, source blindness, and boundary policy. | NO_CLAIM | do not call this a local-GR/Newton pass | false | 2026-06-23T07:56:14.928077+00:00 |
+| DEC2695_2_residual_branch | KAPPA_RESIDUALS_REMAIN_ACTIVE | If kappa is not parent-topological/global, it must be carried as dln_Geff_dt, radial hair, alpha(lambda), source charge, frame/domain split, and Bianchi exchange rows. | NONCLAIM_RESIDUALS | fill values only if the parent clause is rejected | false | 2026-06-23T07:56:14.928080+00:00 |
+| DEC2695_3_measured_GM | MEASURED_GM_CANNOT_HIDE_KAPPA | A fitted orbital GM cannot absorb derivative/source/range/frame dependence in G_eff. | ANTI_CHEAT_GUARD | score row by row or derive zero | false | 2026-06-23T07:56:14.928083+00:00 |
+| DEC2695_4_best_route | CARRY_CANDIDATE_KAPPA_CLAUSE_AND_ATTACK_SOURCE_MEASURE | The useful leap is to carry the topological kappa sector as a candidate parent action clause while explicitly marking it unsigned, then test whether M_eff is a conserved source/Gauss charge. | NEXT_ROUTE_SELECTED | run 2696 source-measure/M_eff flux gate with kappa status imported as conditional | false | 2026-06-23T07:56:14.928087+00:00 |
+
+## Next Target
+
+| target_id | selection_status | target_doc | target_script | purpose | acceptance_gate | forbidden_shortcuts | private_only | claim_allowed | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| NEXT2695_0_selected | selected_conditional_route | 2696-Y5-R2FR-source-measure-Meff-flux-closure-after-conditional-kappa-gate.md | scripts/Y5_R2FR_source_measure_Meff_flux_closure_after_conditional_kappa_gate_2696.py | derive whether M_eff is the conserved parent source charge mapped to exterior Gauss/worldtube flux, importing kappa as a candidate topological parent clause rather than a claim | M_eff=M_Hilbert=M_Gauss with no boundary/memory/source flux hair before orbital readout | using orbital GM as premise; hiding kappa/source drift in fitted GM; promoting conditional kappa as public local-GR proof; GitHub action; formalization-workbench edits | true | false | 2026-06-23T07:56:14.928091+00:00 |
+| NEXT2695_1_fallback | fallback_if_topological_kappa_rejected | 2696b-Y5-R2FR-kappa-drift-source-range-residual-value-acquisition.md | scripts/Y5_R2FR_kappa_drift_source_range_residual_value_acquisition_2696b.py | fill dln_Geff_dt, partial_r_ln_Geff, alpha_kappa(lambda), source-charge, frame/domain, and Bianchi exchange values as nonclaim residual inputs | all residual rows numeric/sourced/units-clean and scoreable while still nonclaim | pretending missing residual values are zero | true | false | 2026-06-23T07:56:14.928095+00:00 |
+
+## Project Status Snapshot
+
+| status_id | area | current_state | meaning | claim_ready | next_action | timestamp_utc |
+| --- | --- | --- | --- | --- | --- | --- |
+| STATUS2695_0_kappa_route | kappa/G_eff | CANDIDATE_TOPOLOGICAL_MECHANISM_BUILT_NOT_PARENT_CLAIMED | d kappa_eff=0 can be derived from int kappa_eff dA_3 if parent-owned; current adoption unsigned | false | carry as conditional or fill residual values | 2026-06-23T07:56:14.928099+00:00 |
+| STATUS2695_1_newton_source | Newton/source normalization | STILL_BLOCKED_BY_SOURCE_MEASURE_MEFF_FLUX | constant kappa is only one prerequisite; source charge and Gauss flux remain | false | run 2696 source-measure M_eff gate | 2026-06-23T07:56:14.928102+00:00 |
+| STATUS2695_2_local_bounds | R1/R9/R10/R11 local tests | ACTIVE_LOCKS_RETAINED | Gdot, source charge, alpha(lambda), frame/domain and Bianchi exchange rows are still nonclaim | false | do not score unless values or theorem-zero proof exist | 2026-06-23T07:56:14.928105+00:00 |
+| STATUS2695_3_project | overall unified framework | FORWARD_PROGRESS_NO_PUBLIC_CLAIM | the kappa gap is sharpened into an exact parent contract rather than vague coupling language | false | attack source measure next | 2026-06-23T07:56:14.928108+00:00 |
+| STATUS2695_4_github | publication/GitHub | NO_ACTION | private checkpoint only | false | no push | 2026-06-23T07:56:14.928111+00:00 |
+
+## Validation
+
+| check_id | passed | detail | timestamp_utc |
+| --- | --- | --- | --- |
+| VAL2695_sources_exist_and_needles_found | true | all cited source paths exist and required needles were found | 2026-06-23T07:56:15.045027+00:00 |
+| VAL2695_zero_form_derivation_math_valid | true | zero-form/three-form derivation of d kappa_eff=0 is mathematically valid conditional on parent ownership | 2026-06-23T07:56:15.045038+00:00 |
+| VAL2695_parent_adoption_not_promoted | true | current MTS parent adoption remains unsigned | 2026-06-23T07:56:15.045042+00:00 |
+| VAL2695_residual_requirements_nonclaim | true | kappa residual rows remain nonclaim, nonnumeric, and not score-ready | 2026-06-23T07:56:15.045045+00:00 |
+| VAL2695_measured_GM_hiding_blocked | true | measured GM cannot hide kappa derivative/source/range/frame dependence | 2026-06-23T07:56:15.045047+00:00 |
+| VAL2695_dryrun_refusals | true | dry-run refuses formula-only, missing companion/stress/source/boundary, cancellation, and fitted-GM cases | 2026-06-23T07:56:15.045050+00:00 |
+| VAL2695_claim_gates_block_claims | true | claim gates block kappa/local-GR/Newton promotion | 2026-06-23T07:56:15.045053+00:00 |
+| VAL2695_csv_parse | true | parsed 12 output CSVs | 2026-06-23T07:56:15.045055+00:00 |
+| VAL2695_branch_copies_parse | true | parsed 5 branch-copy CSVs | 2026-06-23T07:56:15.045058+00:00 |
+| VAL2695_formalization_write_guard | true | no output path targets formalization-workbench | 2026-06-23T07:56:15.045060+00:00 |
+| VAL2695_pycache_absent_at_validation_time | true | scripts/__pycache__ absent when validation rows were built | 2026-06-23T07:56:15.045063+00:00 |
+| VAL2695_next_target_selected | true | 2696 source-measure/M_eff target selected with kappa imported as conditional | 2026-06-23T07:56:15.045065+00:00 |
+| VAL2695_no_public_claim | true | no row allows a public or GitHub claim | 2026-06-23T07:56:15.045067+00:00 |
+| VAL2695_OVERALL | true | 2695 builds the exact topological kappa candidate, refuses parent promotion, keeps residual values active, and selects source-measure/M_eff as the next conditional gate | 2026-06-23T07:56:15.045070+00:00 |

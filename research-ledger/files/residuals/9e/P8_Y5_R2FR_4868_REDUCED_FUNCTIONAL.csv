@@ -1,0 +1,14 @@
+row_id,quantity,derived,expected,meaning,status,valid_for_claim,timestamp_utc
+FUN4868_00_c13,c1+c3,0,0,luminal public tensor surface,PASS,False,2026-07-10T12:48:00+01:00
+FUN4868_01_c14,c1+c4,2*r/(r + 1),2*r/(r + 1),acceleration coefficient,PASS,False,2026-07-10T12:48:00+01:00
+FUN4868_02_c123,c1+c2+c3,2/(3*(r + 1)),2/(3*(r + 1)),scalar coefficient,PASS,False,2026-07-10T12:48:00+01:00
+FUN4868_03_unit,unit norm through v4,0,0,gamma boundary normalization retained,PASS,False,2026-07-10T12:48:00+01:00
+FUN4868_04_L2_degree,L2 total field degree,2,2,quadratic stationary functional,PASS,False,2026-07-10T12:48:00+01:00
+FUN4868_05_L4_degree,L4 maximum field degree,4,4,quartic coefficient including gamma terms,PASS,False,2026-07-10T12:48:00+01:00
+FUN4868_06_D_symmetric,L2 derivative Hessian symmetry,"Matrix([
+[0, 0],
+[0, 0]])","Matrix([
+[0, 0],
+[0, 0]])",Euler principal matrix,PASS,False,2026-07-10T12:48:00+01:00
+FUN4868_07_Euler,finite-C radial Euler system,D q''+(D'+M-M^T)q'+(M'-F)q=0,Euler-Lagrange equation from L2,exact generated two-field BVP,DERIVED,False,2026-07-10T12:48:00+01:00
+FUN4868_08_stationarity,zero-boundary v3 bulk cross term,delta I2[q1; q3]=Euler[q1]*q3+boundary=0,zero on stationary q1 with regular/zero-residual q3 boundary data,L4[q1] is complete fixed-background bulk v4 coefficient,DERIVED_CONDITIONAL_BOUNDARY,False,2026-07-10T12:48:00+01:00

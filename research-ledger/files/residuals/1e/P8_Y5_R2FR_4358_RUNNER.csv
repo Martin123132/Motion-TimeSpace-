@@ -1,0 +1,6 @@
+runner_id,input,action,result,current_result,valid_for_claim
+RUN4358_0_action_measure,parent action-measure owner signed,SET_DELTA_W_ZERO,Y_species_frame_source zero route can close,REJECT_ZERO_CLAIM_NOW,False
+RUN4358_1_product_bound,MICROSCOPE R1 product anchor,ACCEPT_PRODUCT_ONLY,abs(Delta_w_TiPt*tau_WEP)<=2.8e-15,BOUND_INPUT_ACCEPTED_NONCLAIM,False
+RUN4358_2_delta_w,product anchor without tau_min,REJECT_DELTA_W_SCORE,no numeric Delta_w_TiPt bound,BLOCKED_BY_TAU_MIN,False
+RUN4358_3_tau_min,future tau_min>0,COMPUTE_DELTA_W_BOUND,abs(Delta_w_TiPt)<=2.8e-15/tau_min,READY_FORMULA_WAITING_FOR_INPUT,False
+RUN4358_4_next,no action-measure zero and no tau_min,SELECT_TAU_MIN_OR_ZERO_PROOF_TARGET,4359-Y5-R2FR-transition-tau-min-lower-bound-or-action-measure-zero-proof.md,NEXT_TARGET_SELECTED,False

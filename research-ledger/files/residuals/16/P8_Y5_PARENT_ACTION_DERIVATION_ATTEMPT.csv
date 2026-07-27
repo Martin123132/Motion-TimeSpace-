@@ -1,0 +1,7 @@
+attempt_id,step,equation,derivation_status,current_MTS_status,claim_status
+DAT537_0_variation,start from an explicit covariant action,delta L = E_A delta phi^A + dTheta,formal_if_action_supplied,full_parent_Lagrangian_not_supplied_here,false
+DAT537_1_Noether_current,define the local time-flow Noether current,"J_tau = Theta(phi,L_tau phi) - i_tau L",formal_if_tau_and_Theta_fixed,tau/source/readout lock not yet derived,false
+DAT537_2_charge_decomposition,decompose current into surface charge and constraints,J_tau = dQ_tau + C_tau,conditional,MTS Q_tau and C_tau not explicitly varied,false
+DAT537_3_worldtube_Stokes_equality,integrate between linked surfaces around the same W_source,int_S2 Q_tau - int_S1 Q_tau = int_A C_tau + boundary_flux,mathematical_once_Q_tau_defined,Q_tau/source map not yet owned,false
+DAT537_4_PiM_Hilbert_identification,identify the mass-channel charge with Pi_M projected Hilbert current,(4*pi*G_ref)^-1 int_S Pi_M J_H = int_S Q_tau,core_missing_identity,not_derived,false
+DAT537_5_local_readout,derive metric and PPN readout from the same charge,g_00=-1+2G_ref M_source/r+O(r^-2); Delta_PPN explicit,not_reached,blocked_by_DAT537_4,false

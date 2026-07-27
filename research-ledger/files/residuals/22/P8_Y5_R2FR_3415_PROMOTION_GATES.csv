@@ -1,0 +1,7 @@
+gate_id,gate,current_result,promotes_if,valid_for_claim
+PG3415_0_v_source_square,a_v=0 and B_source=A_source^2 are derived in the source-calibrated EH one-parameter branch,PASS_EXACT_CONDITIONAL,"EH/log-lapse/no-hair branch is parent-owned by MTS, not imported as closure",False
+PG3415_1_safe_class_classifier,T_extra safe/residual classifier is explicit,PASS_INTERNAL,all live extra stresses are assigned to safe classes or bounded,False
+PG3415_2_all_Textra_safe,every retained extra stress is harmless,BLOCKED_HIDDEN_STRESS_RETAINS,hidden/projector/constitutive/q_loc stress rows theorem-zero or pass source-backed bounds,False
+PG3415_3_kappav,kappa_v=0 or beta bound pass is derived,BLOCKED_RETAINED_LANES,"PiM, boundary, readout, operator, coupling and q_loc lanes zero/bounded",False
+PG3415_4_parent_EH,MTS derives the EH/no-hair normal form rather than importing GR,BLOCKED_PARENT_SELECTOR,quotient/vertical symmetry forces metric-only second-order EH form and kills non-EH operators,False
+PG3415_5_local_GR,local GR/Newton/PPN is derived,BLOCKED,"PG3415_2, PG3415_3, PG3415_4 and q_loc vector/full PPN gates pass in one branch",False

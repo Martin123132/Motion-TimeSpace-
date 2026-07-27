@@ -1,0 +1,5 @@
+gate_id,condition,current_status,source_anchor,gate_pass,valid_for_claim
+CG1899_0_action_owner,action/current owner is parent-signed,FAIL_ACTION_CURRENT_OWNER_NOT_PARENT_DERIVED,P8_Y5_PARENT_QLOC_1899_ACTION_CURRENT_OWNER_LEMMA_ATTEMPT.csv:ACO1899_6_verdict,False,False
+CG1899_1_wep_inputs,WEP input pack is executable,FAIL_WEP_INPUT_PACK_NOT_EXECUTABLE,P8_Y5_PARENT_QLOC_1899_WEP_INPUT_EXECUTABILITY_GATE.csv:WEG1899_6_verdict,False,False
+CG1899_2_cached_sources,cached web sources are not treated as model predictions or missing arrays,PASS_PROVENANCE_ONLY_NONCLAIM,P8_Y5_PARENT_QLOC_1899_WEB_SOURCE_CACHE_LEDGER.csv,False,False
+CG1899_3_verdict,WEP/local-GR claim allowed,CLAIM_BLOCKED,CG1899_0_action_owner through CG1899_2_cached_sources,False,False

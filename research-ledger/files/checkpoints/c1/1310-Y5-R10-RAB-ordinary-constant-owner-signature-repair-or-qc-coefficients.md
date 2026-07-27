@@ -1,0 +1,107 @@
+# 1310 Y5 R10 RAB ordinary constant owner signature repair or qc coefficients
+
+Generated: `2026-06-15T15:45:09.382049+00:00`
+
+**Current verdict:** the ordinary-constant owner/action signature is still **not parent-signed**. The clean signature is known, but current evidence still allows hidden `alpha_EM`, mass/binding, material-marker, source-weight, and readout/radiative vertices.
+
+**Main progress:** the failure is now converted into explicit `q_c` coefficient acquisition rows: `b_alpha`, `b_mA`, `b_clock_i`, `qbar_constants_abs`, `qbar_marker_abs`, `qbar_source_weight`, and `q_c^T_abs`. These rows are nonclaim and value-missing, but they are now test-facing.
+
+**Decision:** no `q_c^T=0`, no R10, and no local-GR claim from ordinary matter descent alone. Next step is either selected no-vertex proof repair or source-backed coefficient acquisition.
+
+## Source Register
+
+| source_id | local_path | needle | exists | needle_found | role | valid_for_claim | claim_allowed |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| SRC1310_0_1309_next | source-intake/mts_residuals/P8_Y5_R10_1309_NEXT_TARGET.csv | NEXT1309_0_1310 | True | True | handoff into ordinary constant owner signature repair | False | False |
+| SRC1310_1_1309_theorem | source-intake/mts_residuals/P8_Y5_R10_1309_QC_ZERO_THEOREM_ATTEMPT.csv | FAIL_CURRENT_CLAIM_STAGE_QC_RESIDUAL | True | True | q_c zero theorem failed current claim and staged residual route | False | False |
+| SRC1310_2_1309_premise | source-intake/mts_residuals/P8_Y5_R10_1309_MATTER_CONSTANT_PREMISE_GATE.csv | MCG1309_2_no_direct_constant_vertices | True | True | prior premise gates for forbidden vertices | False | False |
+| SRC1310_3_1309_residual | source-intake/mts_residuals/P8_Y5_R10_1309_QC_RESIDUAL_VECTOR_NONCLAIM.csv | QCR1309_3_qc_total | True | True | q_c residual vector being refined into coefficient-acquisition rows | False | False |
+| SRC1310_4_1098_owner | source-intake/mts_residuals/P8_Y5_R10_1098_ORDINARY_CONSTANT_OWNER_SIGNATURE_ATTEMPT.csv | OWNER_ACTION_SIGNATURE_NOT_DERIVED | True | True | ordinary constant owner signature not derived | False | False |
+| SRC1310_5_1097_theorem | source-intake/mts_residuals/P8_Y5_R10_1097_CONSTANT_SECTOR_UNIVERSALITY_THEOREM_ATTEMPT.csv | CONSTANT_SECTOR_UNIVERSALITY_NOT_DERIVED | True | True | constant-sector universality theorem remains unsigned | False | False |
+| SRC1310_6_1046_split | source-intake/mts_residuals/P8_Y5_R10_1046_CONSTANT_MARKER_SPLIT_AUDIT.csv | FAIL_CURRENT_CLAIM_CONSTANT_MARKER_ZERO_NOT_SIGNED | True | True | constant/marker zero failure and residual fallback symbols | False | False |
+| SRC1310_7_1046_coefficients | source-intake/mts_residuals/P8_Y5_R10_1046_QBAR_CONSTANTS_COEFFICIENT_ROWS.csv | QCC1046_3_qbar_constants_abs | True | True | existing coefficient rows for constant qbar envelope | False | False |
+| SRC1310_8_constant_contract | source-intake/mts_residuals/P8_constant_sector_universality_CONTRACT.csv | C7_empirical_fallback | True | True | constant-sector empirical fallback policy | False | False |
+| SRC1310_9_no_species_contract | source-intake/mts_residuals/P8_no_species_source_charge_CONTRACT.csv | S7_R1_empirical_fallback | True | True | species/source-charge fallback policy | False | False |
+| SRC1310_10_R10_1046_template | source-intake/mts_residuals/R10_alpha_lambda_curve_MTS_1046_MARKER_CONSTANT_TEMPLATE_NONCLAIM.csv | MTS_1046_QBAR_MARKER_TEMPLATE | True | True | R10 marker/constant nonclaim template | False | False |
+| SRC1310_11_1309_R10_update | source-intake/mts_residuals/P8_Y5_R10_1309_R10_TEMPLATE_UPDATE_NONCLAIM.csv | RTU1309_1_constants_template | True | True | canonical q_c update to existing R10 templates | False | False |
+
+## Owner Signature Repair Attempt
+
+| attempt_id | signature_piece | required_form | repair_attempt | current_status | if_signed | if_missing | source_path | source_anchor | valid_for_claim | claim_allowed |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| OSA1310_0_parent_signature_candidate | parent action declares all ordinary constant slots before tests | S_parent[Phi,Psi]=S_geom[q(Phi)]+S_gauge[A,T_Q,q(Phi),theta_rep]+S_matter[Psi,e_obs(q),theta_rep]+S_top[theta_rep] | adopt theta_rep as representation/topological data and forbid hidden Xhat/m_c arguments in ordinary matter/readout slots | CONTRACT_CANDIDATE_NOT_PARENT_SIGNED | prevents adding arena-specific hidden constant/source vertices after the fact | coefficient priors and q_c residual rows remain live | source-intake/mts_residuals/P8_Y5_R10_1098_ORDINARY_CONSTANT_OWNER_SIGNATURE_ATTEMPT.csv | OCS1098_0_parent_domain | False | False |
+| OSA1310_1_unique_EM_owner | unique EM/gauge kinetic owner | allowed gauge kinetic norm is quotient/topological/representation-owned; forbidden: f_X(Xhat)F^2, lambda_A F^2 | try to classify alpha_EM as fixed theta_rep or quotient-owned gauge norm | FAIL_CURRENT_CORPUS_COUNTERTERM_LEGAL | b_alpha theorem-zero | b_alpha coefficient row remains live | source-intake/mts_residuals/P8_Y5_R10_1098_ORDINARY_CONSTANT_OWNER_SIGNATURE_ATTEMPT.csv;source-intake/mts_residuals/P8_Y5_R10_1046_CONSTANT_MARKER_SPLIT_AUDIT.csv | OCS1098_1_unique_EM_owner;CMA1046_0_alpha_EM | False | False |
+| OSA1310_2_matter_spectrum_owner | no Xhat-dependent masses/Yukawas/binding response | forbidden: m_A(Xhat), y_A(Xhat), Lambda_QCD(Xhat), B_A(Xhat), material response slots depending on Xhat | try to classify mass ratios and binding fractions as theta_rep with trivial vertical action | NOT_PARENT_SIGNED | b_mA, b_mass_ratio, b_nuc theorem-zero | mass/binding/clock/WEP/R10 material coefficient rows remain live | source-intake/mts_residuals/P8_Y5_R10_1098_ORDINARY_CONSTANT_OWNER_SIGNATURE_ATTEMPT.csv;source-intake/mts_residuals/P8_Y5_R10_1046_CONSTANT_MARKER_SPLIT_AUDIT.csv | OCS1098_2_matter_spectrum_owner;CMA1046_1_particle_masses | False | False |
+| OSA1310_3_source_weight_exclusion | no species/source-only gravitational weights | forbidden: w_A(Xhat)S_A, kappa_A(Xhat)T_A, source-only material multiplier before variation | try to force one common Hilbert current and one universal/global kappa | UNSIGNED | qbar_source_weight theorem-zero and source-normalization WEP route can advance | R1/Newton-GM/R10 source-normalization remains live | source-intake/mts_residuals/P8_Y5_R10_1098_ORDINARY_CONSTANT_OWNER_SIGNATURE_ATTEMPT.csv;source-intake/mts_residuals/P8_Y5_R10_1046_CONSTANT_MARKER_SPLIT_AUDIT.csv | OCS1098_4_source_weight_exclusion;CMA1046_4_source_only_weights | False | False |
+| OSA1310_4_marker_readout_radiative | no material marker, shadow-frame, clock/readout, or radiative re-entry | material markers absent/pure gauge; readout maps and S_eff factor through q and fixed theta_rep | try to ban post-variation readout slots that reintroduce hidden invariant sensitivity | NO_MARKER_AND_RADIATIVE_READOUT_UNSIGNED | qbar_marker_abs, b_clock_i, and readout residuals can be theorem-zero | marker/readout q_c residual rows remain live | source-intake/mts_residuals/P8_Y5_R10_1098_ORDINARY_CONSTANT_OWNER_SIGNATURE_ATTEMPT.csv;source-intake/mts_residuals/P8_Y5_R10_1046_CONSTANT_MARKER_SPLIT_AUDIT.csv | OCS1098_3_clock_readout_owner;OCS1098_5_radiative_readout_closure;CMA1046_3_material_markers | False | False |
+| OSA1310_5_verdict | ordinary constant owner/action signature | OSA1310_0 through OSA1310_4 all parent-signed together | attempted repair from existing contracts and owner rows | OWNER_SIGNATURE_REPAIR_FAIL_STAGE_QC_COEFFICIENTS | q_c components can be theorem-zero and R10 test-charge route can close | explicit q_c coefficient acquisition is required | source-intake/mts_residuals/P8_Y5_R10_1098_ORDINARY_CONSTANT_OWNER_SIGNATURE_ATTEMPT.csv;source-intake/mts_residuals/P8_Y5_R10_1309_QC_ZERO_THEOREM_ATTEMPT.csv | OCS1098_6_verdict;QZT1309_4_verdict | False | False |
+
+## Forbidden Vertex Gate
+
+| gate_id | forbidden_vertex | would_zero | current_status | residual_if_open | valid_for_claim | claim_allowed |
+| --- | --- | --- | --- | --- | --- | --- |
+| FVG1310_0_alpha_vertex | f_X(Xhat) F^2 or lambda_A F^2 | b_alpha | COUNTERTERM_LEGAL_UNTIL_OWNER_SIGNED | QCA1310_0_b_alpha | False | False |
+| FVG1310_1_mass_binding_vertex | m_A(Xhat), y_A(Xhat), Lambda_QCD(Xhat), B_A(Xhat) | b_mA;b_mass_ratio;b_nuc | MASS_SPECTRUM_OWNER_UNSIGNED | QCA1310_1_b_mA | False | False |
+| FVG1310_2_clock_readout_vertex | nu_i(Xhat), Hodge/readout shadow slot, clock-specific hidden response | b_clock_i | CLOCK_READOUT_OWNER_UNSIGNED | QCA1310_2_b_clock_i | False | False |
+| FVG1310_3_marker_vertex | co-moving material marker, isotope/preparation mask, shadow-frame marker in S_parent or readout | qbar_marker_abs | NO_MARKER_THEOREM_NOT_PARENT_SIGNED | QCA1310_4_qbar_marker_abs | False | False |
+| FVG1310_4_source_weight_vertex | w_A(Xhat)S_A, kappa_A(Xhat)T_A, source-only material multiplier | qbar_source_weight | SOURCE_WEIGHT_EXCLUSION_UNSIGNED | QCA1310_5_qbar_source_weight | False | False |
+| FVG1310_5_radiative_reentry | S_eff/readout reintroduces f_X, m_A(X), marker, or source-weight sensitivity | readout/radiative residual terms | RADIATIVE_READOUT_UNSIGNED | QCA1310_6_qc_total | False | False |
+
+## `q_c` Coefficient Acquisition Rows
+
+| coefficient_id | symbol | definition | formula_or_bound | required_inputs | current_value | units | observable_links | source_path | source_anchor | valid_for_claim | claim_allowed |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| QCA1310_0_b_alpha | b_alpha | vertical derivative d ln alpha_EM/dm_c or equivalent EM/gauge kinetic marker | clock/WEP/R10 sensitivity contribution from EM/gauge kinetic response | b_alpha theorem-zero or value; m_c/Xhat normalization; clock/WEP sensitivities; source paths | MISSING_B_ALPHA_OR_THEOREM_ZERO | dimensionless | clock;EM spectra;WEP;R10 | source-intake/mts_residuals/P8_Y5_R10_1046_QBAR_CONSTANTS_COEFFICIENT_ROWS.csv | QCC1046_0_b_alpha | False | False |
+| QCA1310_1_b_mA | b_mA | vertical derivative of particle masses, mass ratios, Yukawa/binding constants, or nuclear response | \|qbar_constants\| contains sum_A \|s_mA b_mA\| over declared material/clock/source sensitivities | species/material sensitivities; b_mA values or theorem-zero source; normalization; source paths | MISSING_B_MASS_OR_THEOREM_ZERO | dimensionless | WEP;composition;clock;source_charge;R10 | source-intake/mts_residuals/P8_Y5_R10_1046_QBAR_CONSTANTS_COEFFICIENT_ROWS.csv | QCC1046_1_b_mA | False | False |
+| QCA1310_2_b_clock_i | b_clock_i | vertical derivative of a clock transition after alpha/mass/nuclear sensitivities project into readout | b_clock_i = K_alpha_i b_alpha + K_mu_i b_mu + K_nuc_i b_nuc + readout terms | clock sensitivity matrix; b_alpha/b_mu/b_nuc; local dXhat projection; source paths | MISSING_CLOCK_CONSTANT_PROJECTION | dimensionless | R2_clock_redshift;alpha drift;clock comparison | source-intake/mts_residuals/P8_Y5_R10_1046_QBAR_CONSTANTS_COEFFICIENT_ROWS.csv | QCC1046_2_b_clock_i | False | False |
+| QCA1310_3_qbar_constants_abs | qbar_constants_abs | no-cancellation constant-sector envelope | \|qbar_constants\| <= \|s_alpha b_alpha\| + sum_A \|s_mA b_mA\| + sum_i \|s_clock_i b_clock_i\| + retained charge/source constants | all constant coefficients theorem-zero or numeric/source-backed with no-cancellation policy | MISSING_COMPONENT_VALUES | dimensionless_or_declared_clock_units | WEP;clock;R10;EM;local_GR | source-intake/mts_residuals/P8_Y5_R10_1046_QBAR_CONSTANTS_COEFFICIENT_ROWS.csv;source-intake/mts_residuals/P8_Y5_R10_1309_QC_RESIDUAL_VECTOR_NONCLAIM.csv | QCC1046_3_qbar_constants_abs;QCR1309_0_qbar_constants_abs | False | False |
+| QCA1310_4_qbar_marker_abs | qbar_marker_abs | absolute material/preparation/shadow-frame marker sensitivity | sum marker/species/preparation sensitivities with no cancellation unless parent identity supplies it | no-marker theorem or marker coefficients; marker normalization; source paths | MISSING_MARKER_THEOREM_OR_COEFFICIENTS | dimensionless | WEP_source_charge;R10;clock;composition | source-intake/mts_residuals/P8_Y5_R10_1046_CONSTANT_MARKER_SPLIT_AUDIT.csv;source-intake/mts_residuals/P8_Y5_R10_1309_QC_RESIDUAL_VECTOR_NONCLAIM.csv | CMA1046_3_material_markers;QCR1309_1_qbar_marker_abs | False | False |
+| QCA1310_5_qbar_source_weight | qbar_source_weight | species/source-only gravitational prefactor or kappa_A sensitivity | qbar_source_weight = partial_{m_c} ln kappa_A or equivalent source-only weight derivative | source-weight exclusion theorem or source-weight coefficient; material/source tags; source paths | MISSING_SOURCE_WEIGHT_EXCLUSION_OR_COEFFICIENT | dimensionless | R1_WEP_source_charge;Newton_GM;R10;R11 | source-intake/mts_residuals/P8_Y5_R10_1046_CONSTANT_MARKER_SPLIT_AUDIT.csv;source-intake/mts_residuals/P8_Y5_R10_1309_QC_RESIDUAL_VECTOR_NONCLAIM.csv | CMA1046_4_source_only_weights;QCR1309_2_qbar_source_weight | False | False |
+| QCA1310_6_qc_total | q_c^T_abs | total canonical test charge envelope for ordinary matter | q_c^T_abs <= qbar_constants_abs + qbar_marker_abs + qbar_source_weight + readout/radiative residual terms | component theorem-zero or numeric/source-backed coefficient rows; no-cancellation policy | MISSING_COMPONENT_VALUES_AND_THEOREM_ZERO | canonical_test_charge_units_required | R10;R1_WEP;R2_clock;local_GR | source-intake/mts_residuals/P8_Y5_R10_1309_QC_RESIDUAL_VECTOR_NONCLAIM.csv | QCR1309_3_qc_total | False | False |
+
+## R10 `q_c` Template Bridge
+
+| bridge_id | branch_id | alpha_formula | required_inputs | current_status | source_path | source_anchor | valid_for_claim | claim_allowed |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| RTB1310_0_constants_alpha | q_c_constants_template | alpha_c_constants(lambda)=s_c Pi_M^H[Q_c^H(lambda)] qbar_constants_abs/(4*pi*G_obs*M_H*m_T) | lambda_c;Pi_M^H[Q_c^H(lambda)];qbar_constants_abs;G_obs*M_H*m_T;alpha_bound(lambda) | TEMPLATE_NONCLAIM_MISSING_COEFFICIENTS | source-intake/mts_residuals/R10_alpha_lambda_curve_MTS_1046_MARKER_CONSTANT_TEMPLATE_NONCLAIM.csv;source-intake/mts_residuals/P8_Y5_R10_1309_R10_TEMPLATE_UPDATE_NONCLAIM.csv | MTS_1046_QBAR_CONSTANTS_TEMPLATE;RTU1309_1_constants_template | False | False |
+| RTB1310_1_marker_alpha | q_c_marker_template | alpha_c_marker(lambda)=s_c Pi_M^H[Q_c^H(lambda)] qbar_marker_abs/(4*pi*G_obs*M_H*m_T) | lambda_c;Pi_M^H[Q_c^H(lambda)];qbar_marker_abs;G_obs*M_H*m_T;alpha_bound(lambda) | TEMPLATE_NONCLAIM_MISSING_COEFFICIENTS | source-intake/mts_residuals/R10_alpha_lambda_curve_MTS_1046_MARKER_CONSTANT_TEMPLATE_NONCLAIM.csv;source-intake/mts_residuals/P8_Y5_R10_1309_R10_TEMPLATE_UPDATE_NONCLAIM.csv | MTS_1046_QBAR_MARKER_TEMPLATE;RTU1309_0_marker_template | False | False |
+| RTB1310_2_source_weight_alpha | q_c_source_weight_template | alpha_c_source_weight(lambda)=s_c Pi_M^H[Q_c^H(lambda)] qbar_source_weight/(4*pi*G_obs*M_H*m_T) | lambda_c;Pi_M^H[Q_c^H(lambda)];qbar_source_weight;G_obs*M_H*m_T;alpha_bound(lambda) | TEMPLATE_NONCLAIM_SOURCE_WEIGHT_ROW_CREATED | source-intake/mts_residuals/P8_Y5_R10_1309_QC_RESIDUAL_VECTOR_NONCLAIM.csv | QCR1309_2_qbar_source_weight | False | False |
+| RTB1310_3_total_alpha_envelope | q_c_total_envelope_template | \|alpha_c_total(lambda)\| <= \|s_c Pi_M^H[Q_c^H(lambda)]\| q_c^T_abs/(4*pi*G_obs*M_H*m_T) | lambda_c;Pi_MQ envelope;q_c^T_abs;measured GM;bound curve;no-cancellation policy | TEMPLATE_NONCLAIM_TOTAL_ENVELOPE_CREATED | source-intake/mts_residuals/P8_Y5_R10_1309_QC_RESIDUAL_VECTOR_NONCLAIM.csv;source-intake/mts_residuals/P8_Y5_R10_1308_CANONICAL_ALPHA_INPUTS_NONCLAIM.csv | QCR1309_3_qc_total;CAI1308_4_alpha_c | False | False |
+
+## Claim Gates
+
+| gate_id | claim | current_status | reason | valid_for_claim | claim_allowed |
+| --- | --- | --- | --- | --- | --- |
+| CG1310_0_owner_signature | ordinary constant owner/action signature is parent-signed | BLOCKED_CONTRACT_ONLY | 1098 remains OWNER_ACTION_SIGNATURE_NOT_DERIVED and 1310 only restates the sufficient contract | False | False |
+| CG1310_1_qc_zero | q_c^T=0 | BLOCKED_OWNER_SIGNATURE_FAILS | forbidden alpha/mass/marker/source-weight/readout vertices are not excluded by parent proof | False | False |
+| CG1310_2_coefficients_executable | q_c coefficient rows are executable | BLOCKED_VALUES_MISSING | coefficient rows are explicit but contain missing theorem-zero/numeric values and source paths for values | False | False |
+| CG1310_3_R10 | R10/local fifth-force pass | BLOCKED_NO_R10_CLAIM | q_c alpha templates are nonclaim and not runner-executable | False | False |
+
+## Decision Ledger
+
+| decision_id | decision | because | next_action | valid_for_claim | claim_allowed |
+| --- | --- | --- | --- | --- | --- |
+| DEC1310_0_repair_failed | do not parent-sign the ordinary constant owner signature | existing evidence keeps counterterms/source weights/markers/readout re-entry legal until a stronger parent action clause is derived | treat q_c coefficient rows as acquisition targets | False | False |
+| DEC1310_1_coefficients_staged | stage q_c coefficient rows and R10 template bridge as nonclaim | if theorem-zero fails, empirical/source-backed coefficients are the honest route to testability | try to source coefficient bounds or prove selected no-vertex clauses one by one | False | False |
+
+## Next Target
+
+| next_id | target_file | target_script | task | success_condition | do_not | valid_for_claim | claim_allowed |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| NEXT1310_0_1311 | 1311-Y5-R10-RAB-qc-coefficient-source-acquisition-or-no-vertex-proof.md | scripts/Y5_R10_RAB_qc_coefficient_source_acquisition_or_no_vertex_proof.py | try to prove selected no-vertex clauses for b_alpha/b_mA/qbar_source_weight/qbar_marker, or source numeric/theorem-bound q_c coefficient rows with units and provenance | at least one q_c component is theorem-zero or source-backed, or the exact coefficient acquisition blockers are recorded for R10/WEP testing | do not run or claim R10 until lambda_c, Pi_MQ, q_c coefficients, measured GM normalization, and bound curve are real | False | False |
+
+## Validation
+
+| check_id | check | status | details |
+| --- | --- | --- | --- |
+| VAL1310_0_sources_exist | registered source paths exist and anchors are found | PASS | 12/12 source anchors found |
+| VAL1310_1_owner_repair_fails | owner signature repair attempt does not parent-sign the contract | PASS | OSA1310_0_parent_signature_candidate=CONTRACT_CANDIDATE_NOT_PARENT_SIGNED;OSA1310_1_unique_EM_owner=FAIL_CURRENT_CORPUS_COUNTERTERM_LEGAL;OSA1310_2_matter_spectrum_owner=NOT_PARENT_SIGNED;OSA1310_3_source_weight_exclusion=UNSIGNED;OSA1310_4_marker_readout_radiative=NO_MARKER_AND_RADIATIVE_READOUT_UNSIGNED;OSA1310_5_verdict=OWNER_SIGNATURE_REPAIR_FAIL_STAGE_QC_COEFFICIENTS |
+| VAL1310_2_forbidden_vertices_covered | forbidden vertex gate covers alpha, mass, clock, marker, source-weight, and radiative re-entry | PASS | FVG1310_0_alpha_vertex;FVG1310_1_mass_binding_vertex;FVG1310_2_clock_readout_vertex;FVG1310_3_marker_vertex;FVG1310_4_source_weight_vertex;FVG1310_5_radiative_reentry |
+| VAL1310_3_qc_coefficients_staged | q_c coefficient acquisition rows exist and remain value-missing | PASS | QCA1310_0_b_alpha=MISSING_B_ALPHA_OR_THEOREM_ZERO;QCA1310_1_b_mA=MISSING_B_MASS_OR_THEOREM_ZERO;QCA1310_2_b_clock_i=MISSING_CLOCK_CONSTANT_PROJECTION;QCA1310_3_qbar_constants_abs=MISSING_COMPONENT_VALUES;QCA1310_4_qbar_marker_abs=MISSING_MARKER_THEOREM_OR_COEFFICIENTS;QCA1310_5_qbar_source_weight=MISSING_SOURCE_WEIGHT_EXCLUSION_OR_COEFFICIENT;QCA1310_6_qc_total=MISSING_COMPONENT_VALUES_AND_THEOREM_ZERO |
+| VAL1310_4_R10_templates_nonclaim | R10 q_c template bridge rows remain nonclaim and non-executable | PASS | RTB1310_0_constants_alpha=TEMPLATE_NONCLAIM_MISSING_COEFFICIENTS;RTB1310_1_marker_alpha=TEMPLATE_NONCLAIM_MISSING_COEFFICIENTS;RTB1310_2_source_weight_alpha=TEMPLATE_NONCLAIM_SOURCE_WEIGHT_ROW_CREATED;RTB1310_3_total_alpha_envelope=TEMPLATE_NONCLAIM_TOTAL_ENVELOPE_CREATED |
+| VAL1310_5_claim_gates_block | claim gates block owner/q_c/R10 promotion | PASS | CG1310_0_owner_signature=BLOCKED_CONTRACT_ONLY;CG1310_1_qc_zero=BLOCKED_OWNER_SIGNATURE_FAILS;CG1310_2_coefficients_executable=BLOCKED_VALUES_MISSING;CG1310_3_R10=BLOCKED_NO_R10_CLAIM |
+| VAL1310_6_csv_parse | all generated CSVs parse cleanly | PASS | P8_Y5_R10_1310_SOURCE_REGISTER.csv:12; P8_Y5_R10_1310_OWNER_SIGNATURE_REPAIR_ATTEMPT.csv:6; P8_Y5_R10_1310_FORBIDDEN_VERTEX_GATE.csv:6; P8_Y5_R10_1310_QC_COEFFICIENT_ACQUISITION_NONCLAIM.csv:7; P8_Y5_R10_1310_R10_QC_TEMPLATE_BRIDGE_NONCLAIM.csv:4; P8_Y5_R10_1310_CLAIM_GATES.csv:4; P8_Y5_R10_1310_DECISION_LEDGER.csv:2; P8_Y5_R10_1310_NEXT_TARGET.csv:1 |
+| VAL1310_7_formalization_untouched | formalization-workbench untouched by generated outputs | PASS | formalization_generated_output_count=0 |
+| VAL1310_8_nonclaim_policy | all generated rows remain nonclaim | PASS | valid_for_claim=false and claim_allowed=false throughout generated tables |
+| VAL1310_9_next_target_1311 | next target routes to q_c coefficient source acquisition or no-vertex proof | PASS | 1311-Y5-R10-RAB-qc-coefficient-source-acquisition-or-no-vertex-proof.md |
+| VAL1310_10_overall | overall 1310 validation | PASS | 1310 fails to parent-sign the ordinary constant owner signature, stages q_c coefficients and R10 template bridges as nonclaim, blocks R10/local-GR claims, and routes to coefficient acquisition/no-vertex proof |

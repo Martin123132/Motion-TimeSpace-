@@ -1,0 +1,5 @@
+schema_id,field,definition,equation,required_owner,status,valid_for_claim
+TLS632_0_effective_coupling,c_eff,dimensionless effective source/test coupling after absorbing 4 pi G_eff Z_eff normalization,alpha_X(lambda)=profile_factor(lambda)*c_eff_source(lambda)*c_eff_test(lambda),parent matter-frame selector plus Z_eff/profile normalization,nonclaim_runner_variable,false
+TLS632_1_universal_case,universal_two_leg,c_eff_source=c_eff_test=c_eff,|c_eff| <= sqrt(alpha_bound/profile_factor),universal composition-independent matter-frame coupling,computed_as_private_pressure,false
+TLS632_2_profile_factor,profile_factor,"positive dimensionless package of source geometry, range response, and normalization not yet parent-sourced","profile_factor in {0.01,0.1,1,10} for pressure sensitivity only","Qbar_XH(lambda;lambda_X), tau_R10(lambda), Z_eff, material geometry",scan_not_fit,false
+TLS632_3_claim_gate,claim_allowed,"true only if parent branch, profile factors, R10 curve, and source/test charges are all source-backed",claim_allowed=false while any row has valid_for_claim=false or MISSING_PARENT_INPUT,future promoted source files,hard_block,false

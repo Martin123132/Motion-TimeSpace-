@@ -1,0 +1,5 @@
+route_id,route_type,condition,result,current_status,residual_if_missing,valid_for_claim
+PRS3373_0_topological_chainmap,candidate_derivation,"fixed S2xI exterior, q-basic closed omega_M, pre-readout ell_M, delta_g Pi_M=0","[d,Pi_M]J_H=0 and projector stress zero conditionally",VALID_CONDITIONAL_NOT_PARENT_SIGNED,I_commutator;Delta_PiM,false
+PRS3373_1_Hodge_DeWitt_projector,retained_residual,"Pi_M depends on boundary metric, Hodge representative, DeWitt metric, Green operator, normal, or domain selector",delta Pi_M stress must be included; commutator is not theorem-zero,RETAIN_PROJECTOR_STRESS,epsilon_projector_stress;T_PiM;PPN_beta_gamma_rows,false
+PRS3373_2_readout_mask,forbidden_shortcut,Pi_M chosen after orbital/readout fitting to select measured GM,not a derivation; target observable is smuggled into the source theorem,FORBIDDEN,epsilon_GM_absorption_shortcut,false
+PRS3373_3_topological_Hilbert_equality,next_derivation,Pi_M J_H and J_M_top are representatives of the same compact Hilbert worldtube class,R_eq=0 up to exact zero-flux boundary term; needed after commutator closure,NEXT_ROOT_NOT_CLOSED_HERE,R_eq_integral;B_zero_flux,false
