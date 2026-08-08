@@ -4,22 +4,22 @@
 
 - `README.md` gives the public overview.
 - `CLAIM_CEILING.md` states the current claim boundary.
-- `docs/status/STATUS-2026-07-27.md` gives the current status snapshot.
-- `docs/status/PUBLICATION-NOTES-2026-07-27.md` records the exact update scope, integrity checks, and exclusions.
+- `docs/status/STATUS-2026-08-08.md` gives the current status snapshot.
+- `docs/status/PUBLICATION-NOTES-2026-08-08.md` records the exact update scope, integrity checks, and exclusions.
 - `research-programme/catalogue/README.md` provides bounded direct-link indexes when GitHub caps large folder listings.
 - `docs/theory-gates/LOCAL-GR-NEWTON-GATES.md` gives the main route from MTS toward GR/Newton.
 
 ## Research Programme
 
-- `research-programme/checkpoints/` contains numbered derivation attempts, scorecards, red-team ledgers, and promotion gates. The public sequence currently runs through checkpoint `1266`.
+- `research-programme/checkpoints/` contains numbered derivation attempts, scorecards, red-team ledgers, and promotion gates. The public sequence currently runs through checkpoint `1352`.
 - `research-programme/protocols/1192/` preserves the machine-readable freeze record and now contains the complete compact 12-seed outcome.
 - `research-programme/scripts/` contains the scripts used to generate many checkpoint artifacts.
 - `research-programme/source-intake/mts_residuals/` contains compact CSV/register artifacts used by the residual and theorem-gate workflow.
 
 ## Current Derivation Thread
 
-The July 27 update preserves checkpoint `1192` and extends the public record
-through checkpoint `1266`. The most useful milestones are:
+The 2026-08-08 update preserves checkpoint `1192` and extends the public record
+through checkpoint `1352`. The most useful milestones are:
 
 - `research-programme/checkpoints/1192-Y5-R2FR-predeclared-paired-high-mode-seed-ensemble.md` - completed frozen 12-seed metric-split result.
 - `research-programme/checkpoints/1194-Y5-R2FR-exact-2PI-Schur-Ward-Vlasov-subtraction-and-Gaussian-residual-stress-no-go.md` - exact Schur/Ward reduction and Gaussian residual-stress no-go.
@@ -46,10 +46,17 @@ through checkpoint `1266`. The most useful milestones are:
 - `research-programme/checkpoints/1263-Y5-R2FR-Q03-reciprocal-projective-corrected-inner-slice.md` - corrected Q03 inner slice.
 - `research-programme/checkpoints/1265-Y5-R2FR-Q05-reciprocal-projective-corrected-inner-slice.md` - corrected Q05 inner slice.
 - `research-programme/checkpoints/1266-Y5-R2FR-Q03-Q05-partial-outer-impact-and-remaining-node-gate.md` - partial outer impact and current hold decision.
+- `research-programme/checkpoints/1271-Y5-R2FR-outer-topology-boundary-bisection-generation1.md` - second-phase paired boundary refinement.
+- `research-programme/checkpoints/1278-Y5-R2FR-R64-resolution-repair-and-targeted-boundary-completion-PARTIAL.md` - targeted resolution repair and partial completion.
+- `research-programme/checkpoints/1292-Y5-R2FR-spinor-denominator-incidence-and-analytic-pole-basis.md` - spinor incidence and analytic pole-basis construction.
+- `research-programme/checkpoints/1307-Y5-R2FR-order4-complete-singularity-atlas.md` - order-4 exact singularity atlas and comparisons.
+- `research-programme/checkpoints/1324-Y5-R2FR-full-fixed-decay-pair-orbit-topology.md` - fixed-decay pair-orbit topology.
+- `research-programme/checkpoints/1345-Y5-R2FR-E040-owner-channel-numerator-pole-certificate.md` - owner-channel numerator certificate and divisor theorem.
+- `research-programme/checkpoints/1352-Y5-R2FR-fold-pair-equivalence-and-incremental-ownership-gate.md` - current fold/pair non-identifiability conclusion.
 
 Public checkpoint filenames use an offset sequence; document titles and
 generated artifact names retain their original private IDs. The established
-offset is `3984`, so private `5176-5250` maps to public `1192-1266`.
+offset is `3984`, so private `5176-5336` maps to public `1192-1352`.
 
 ## Data Policy
 

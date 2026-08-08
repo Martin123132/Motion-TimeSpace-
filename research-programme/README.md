@@ -48,6 +48,13 @@ Start with:
 32. `checkpoints/1263-Y5-R2FR-Q03-reciprocal-projective-corrected-inner-slice.md`
 33. `checkpoints/1265-Y5-R2FR-Q05-reciprocal-projective-corrected-inner-slice.md`
 34. `checkpoints/1266-Y5-R2FR-Q03-Q05-partial-outer-impact-and-remaining-node-gate.md`
+35. `checkpoints/1271-Y5-R2FR-outer-topology-boundary-bisection-generation1.md`
+36. `checkpoints/1281-Y5-R2FR-piecewise-outer-coefficient-reassembly.md`
+37. `checkpoints/1307-Y5-R2FR-order4-complete-singularity-atlas.md`
+38. `checkpoints/1324-Y5-R2FR-full-fixed-decay-pair-orbit-topology.md`
+39. `checkpoints/1331-Y5-R2FR-squared-event-coordinate-collar-repair.md`
+40. `checkpoints/1350-Y5-R2FR-D4-outer-regulator-ladder-controller.md`
+41. `checkpoints/1352-Y5-R2FR-fold-pair-equivalence-and-incremental-ownership-gate.md`
 
 The numbered files are internal research artifacts. They deliberately include
 failed derivation attempts and red-team gates because those failures are part
@@ -55,5 +62,5 @@ of the audit trail.
 
 Public filenames use the compact public checkpoint sequence. Document titles,
 script names, and residual artifacts retain the original private checkpoint
-IDs for provenance. The established offset is `3984`; the July 27 update maps
-private `5176-5250` to public `1192-1266`.
+IDs for provenance. The established offset is `3984`; the 2026-08-08 update maps
+private `5176-5336` to public `1192-1352`.
