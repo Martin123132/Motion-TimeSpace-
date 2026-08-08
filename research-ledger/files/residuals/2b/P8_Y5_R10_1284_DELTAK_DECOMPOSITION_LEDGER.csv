@@ -1,0 +1,6 @@
+delta_id,object,equation,current_status,effect_on_q_loc,valid_for_claim,claim_allowed
+DK1284_0_definition,Delta_K^{mu nu},Delta_K^{mu nu}:=K_hat^{mu nu}-K_metric^{mu nu}[Gamma_eff],DEFINED_SYMBOLIC_GAP,q_loc^nu=P_loc(nabla_mu T_metric^{mu nu}-nabla_mu Delta_K^{mu nu}) up to Euler/boundary convention,False,False
+DK1284_1_Ward_owned_piece,T_metric^{mu nu}=Gamma_eff g^{mu nu}-K_metric^{mu nu},nabla_mu T_metric^{mu nu}=nabla^nu Gamma_eff-nabla_mu K_metric^{mu nu},WARD_ROUTE_AVAILABLE_IF_S_GK_EXISTS,"this part can vanish on shell only after action, Euler, source-zero, and boundary gates close",False,False
+DK1284_2_unowned_piece,-P_loc nabla_mu Delta_K^{mu nu},q_DeltaK^nu:=-P_loc nabla_mu Delta_K^{mu nu},RETAINED_RESIDUAL_IF_DELTAK_NOT_ZERO,even a good Gamma_eff action cannot silence q_loc if K_hat has an unmatched tensor piece,False,False
+DK1284_3_zero_options,Delta_K zero theorem,"Delta_K=0, or Delta_K=exact/improvement with P_loc div Delta_K=0, or source-backed bound",ZERO_OR_BOUND_NOT_PROVED,"requires component comparison, exact-term certificate, or finite residual bound",False,False
+DK1284_4_verdict,Delta_K branch status,K_hat=K_metric+Delta_K,DELTAK_RETAINED_SYMBOLIC_RESIDUAL,future local branch must either kill Delta_K or score it separately from the Ward-owned piece,False,False

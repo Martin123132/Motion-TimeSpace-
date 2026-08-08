@@ -1,0 +1,13 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1205_0_sources_exist,all cited local sources exist,PASS,8/8 sources exist,False,False
+VAL1205_1_needles_found,all cited source needles found,PASS,8/8 needles found,False,False
+VAL1205_2_scan_nonempty,corpus scan found candidate/template rows,PASS,scan_rows=430,False,False
+VAL1205_3_no_accepted_sources,no numeric source row is falsely accepted,PASS,accepted_source_rows=0,False,False
+VAL1205_4_fill_attempts_blocked,source-fill attempts remain blocked rather than fabricated,PASS,attempt_rows=2,False,False
+VAL1205_5_pressure_positive,pressure targets are positive,PASS,pressure_rows=4,False,False
+VAL1205_6_blockers_cover_components,blocker ledger covers boundary and projector,PASS,"q_boundary,q_projector,q_boundary and q_projector",False,False
+VAL1205_7_comparison_blocked,current comparison does not claim pass,PASS,BLOCKED_NO_NUMERIC_SOURCE_ROW;BLOCKED_NO_NUMERIC_SOURCE_ROW;NO_ACCEPTED_SOURCE_ROWS_IN_SCAN,False,False
+VAL1205_8_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout,False,False
+VAL1205_9_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1205_SOURCE_REGISTER.csv:8; P8_Y5_R10_1205_CORPUS_SCAN_CANDIDATES.csv:430; P8_Y5_R10_1205_SOURCE_FILL_ATTEMPT.csv:2; P8_Y5_R10_1205_BOUND_PRESSURE_TARGETS.csv:4; P8_Y5_R10_1205_BLOCKER_LEDGER.csv:3; P8_Y5_R10_1205_COMPARISON_LEDGER.csv:3; P8_Y5_R10_1205_CLAIM_GATES.csv:4; P8_Y5_R10_1205_DECISION_LEDGER.csv:1; P8_Y5_R10_1205_NEXT_TARGET.csv:1,False,False
+VAL1205_10_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_after_run_start_count=0,False,False
+VAL1205_11_overall,overall 1205 validation,PASS,1205 source-fill audit is reproducible and nonclaim,False,False

@@ -1,0 +1,15 @@
+validation_id,passed,requirement,evidence
+VAL3018_00_sources_exist,True,every cited local source path exists,P8_Y5_R2FR_3018_SOURCE_REGISTER.csv
+VAL3018_01_csv_parse,True,generated CSV rows parse cleanly,all generated CSV artifacts import with csv.DictReader
+VAL3018_02_gamma_slots_present,True,"gamma coefficient fill includes A_T, A_S, s_R, readout gauge and verdict row",P8_Y5_R2FR_3018_GAMMA_COEFFICIENT_FILL_ATTEMPT.csv
+VAL3018_03_gamma_formulas_present,True,general gamma ratio and C_R combo law are recorded,P8_Y5_R2FR_3018_GAMMA_COEFFICIENT_FILL_ATTEMPT.csv
+VAL3018_04_bound_interfaces_present,True,"general, conformal and C_R combo bound interfaces are present",P8_Y5_R2FR_3018_GAMMA_BOUND_INTERFACE.csv
+VAL3018_05_gamma_claim_blocked,True,no gamma score or local-GR claim is allowed from 3018,P8_Y5_R2FR_3018_GAMMA_COEFFICIENT_FILL_ATTEMPT.csv; P8_Y5_R2FR_3018_PROMOTION_GATES.csv
+VAL3018_06_beta_handoff_present,True,beta square-law handoff includes beta_eff and square-law target,P8_Y5_R2FR_3018_BETA_SQUARE_LAW_HANDOFF.csv
+VAL3018_07_claims_blocked,True,all rows remain nonclaim/private-control rows,all 3018 generated ledgers
+VAL3018_08_missing_markers_nonclaim,True,rows with MISSING markers are never valid_for_claim=true,all 3018 generated ledgers
+VAL3018_09_branch_copies_exist,True,branch copies and acquisition queue exist,P8_Y5_R2FR_3018_BRANCH_COPIES.csv
+VAL3018_10_outputs_scoped,True,no generated file is outside post-checkpoint-work,generated path scope check
+VAL3018_11_formalization_not_targeted,True,formalization-workbench is not modified by this checkpoint,output target list excludes formalization-workbench
+VAL3018_12_next_target_selected,True,next target selects beta square-law source-normalization gate,P8_Y5_R2FR_3018_NEXT_TARGET.csv
+VAL3018_99_overall,True,all 3018 validation checks pass,aggregate of VAL3018_00 through VAL3018_12

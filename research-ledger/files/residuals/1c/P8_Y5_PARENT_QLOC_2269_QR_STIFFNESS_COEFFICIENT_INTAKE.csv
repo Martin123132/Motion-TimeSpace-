@@ -1,0 +1,6 @@
+row_id,coefficient,definition,required_source,units_or_normalization,current_value,status,score_ready,valid_for_claim
+SCI2269_0_MR2,M_R^2,algebraic stiffness multiplying q^2/2 in L_q,parent action term or psi/quotient expansion coefficient,same density normalization as J_R/q source; must be declared,MISSING_PARENT_COEFFICIENT,NOT_SCORE_READY,False,False
+SCI2269_1_jR,j_R,coefficient of J_R=j_R L+O(L^2) in local weak-field source expansion,matter/readout coupling variation in the q direction,same normalization as M_R^2 times dimensionless q,MISSING_PARENT_SOURCE_COEFFICIENT,NOT_SCORE_READY,False,False
+SCI2269_2_qR,q_R,q_R=j_R/M_R^2 when L_q=-1/2 M_R^2 q^2+J_R q and J_R=j_R L,SCI2269_0_MR2 and SCI2269_1_jR with compatible units,dimensionless after matching L=2GM/(rc^2),MISSING_RATIO,NOT_SCORE_READY,False,False
+SCI2269_3_no_gradient,Q_R_guard,proof that no nabla q term or boundary term generates W q'=Q_R hair,parent operator inventory and boundary variation,"boolean theorem-zero guard, not a numeric fit",MISSING_OPERATOR_INVENTORY,NOT_SCORE_READY,False,False
+SCI2269_4_external_bounds,comparator_bounds,PPN/R10/clock/orbital gates may screen q_R after q_R is parent-sourced,external bounds plus parent q_R; bounds alone forbidden as theory value,arena-specific,COMPARATOR_ONLY,GUARD_ONLY,False,False

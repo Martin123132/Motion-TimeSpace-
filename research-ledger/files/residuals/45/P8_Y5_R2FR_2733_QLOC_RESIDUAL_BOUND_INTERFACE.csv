@@ -1,0 +1,5 @@
+bound_id,quantity,bound_form,known_status,missing_inputs,score_ready,valid_for_claim
+QB2733_0_vector_envelope,||q_loc||_D,"||q_loc|| <= ||P_loc|| (||W_metric|| + C_div ||Delta_K|| + ||[P_loc,nabla]Delta_K||)",DERIVED_BOUND_INTERFACE,P_loc operator norm; W_metric Ward defect; divergence/domain constant C_div; Delta_K component norms; projector commutator,False,False
+QB2733_1_00_projection,q_loc component sourced by Delta_K00,||q_loc||_00 <= ||P_loc|| (C_0 ||partial_0 Delta_K00|| + C_i ||partial_i Delta_K00|| + component-mixing terms),SCHEMA_ONLY_STATIC_REDUCTION_NOT_SIGNED,static/stationary domain rule; component mixing; derivative scale; units; local projection,False,False
+QB2733_2_observable_projection,PPN/R10/clock/orbital readout,residual_arena <= K_arena ||q_loc|| or K_arena ||Delta_K||,PROJECTION_MISSING,K_PPN; K_R10; K_clock; K_orbital; source normalization,False,False
+QB2733_3_verdict,first q_loc residual bound,symbolic envelope exists but no numeric/source-backed score row exists,NOT_SCORE_READY_REDUCED_TO_KERNELS,"M_L first, then M_m/K_conn/K_domain/K_boundary/lambda_phi/projections",False,False

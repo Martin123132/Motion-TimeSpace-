@@ -1,0 +1,5 @@
+arena_id,equation,inputs_required,claim_status,failure_mode,valid_for_claim
+CGE626_0_R10,b_g_R10 = tau_R10*c_g; alpha_bg(lambda)=K_X(lambda)*Qbar_XH*b_g_R10,"c_g,tau_R10,K_X,Qbar_XH,lambda_X,alpha_bound(lambda)",blocked_missing_inputs,cannot compare alpha_bg to R10 bound,false
+CGE626_1_PPN,"r_PPN_bg = M_PPN(lambda_X,profile)*tau_PPN*c_g","c_g,tau_PPN,lambda_X,profile,M_PPN",blocked_missing_inputs,cannot claim PPN/local-GR recovery,false
+CGE626_2_clock,r_clock_bg = S_clock(environment)*tau_clock*c_g,"c_g,tau_clock,environment_profile,clock_sensitivity",blocked_missing_inputs,cannot score clock/redshift branch,false
+CGE626_3_orbital,"r_orbital_bg = M_orbital(lambda_X,source_profile)*tau_orbital*c_g","c_g,tau_orbital,lambda_X,source_profile,orbital_projection",blocked_missing_inputs,cannot score orbital/binary branch,false

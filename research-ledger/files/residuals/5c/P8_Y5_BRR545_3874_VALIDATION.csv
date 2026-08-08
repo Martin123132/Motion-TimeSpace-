@@ -1,0 +1,15 @@
+check_id,description,status,detail,timestamp_utc
+VAL3874_0_sources,all cited source paths exist and needles are found,PASS,20/20 sources resolved,2026-07-01T06:39:05+00:00
+VAL3874_1_split,calibration split theorem exists,PASS,split theorem present,2026-07-01T06:39:05+00:00
+VAL3874_2_active_identity,active identity is exact and present,PASS,b_alpha_active = 2 z_g_active - s_XF2_active,2026-07-01T06:39:05+00:00
+VAL3874_3_residual_basis,active residual basis covers required terms,PASS,"C_EM_readout,C_JQ,C_XF2_active,Z_cal,b_alpha_active,lambda_0 F_Q^2,s_XF2_active,z_g_active",2026-07-01T06:39:05+00:00
+VAL3874_4_envelope,stationary active envelope is written,PASS,B_EM_scale_stationary_active <= b_Z_active + b_J + |b_alpha_active| + |C_XF2_active| + |C_JQ| + |Delta_M_EM_binding| + |C_EM_readout|,2026-07-01T06:39:05+00:00
+VAL3874_5_default_branch,calibrated local branch is selected,PASS,DEFAULT_WORKING_BRANCH,2026-07-01T06:39:05+00:00
+VAL3874_6_alpha_shortcut_guard,alpha-only shortcut is rejected,PASS,GUARD_ACTIVE,2026-07-01T06:39:05+00:00
+VAL3874_7_no_claim_gates,no claim gate allows a claim,PASS,claim_allowed=false,2026-07-01T06:39:05+00:00
+VAL3874_8_doc,markdown checkpoint exists with expected bottom line,PASS,3874-Y5-R2FR-EM-normalization-or-Delta-w-theta-commonness.md,2026-07-01T06:39:05+00:00
+VAL3874_9_spine,spine updated with 3874 block,PASS,LOCAL_GR_COUPLING_SPINE_CURRENT_STATE.md,2026-07-01T06:39:05+00:00
+VAL3874_10_csv_parse,all generated CSV outputs parse,PASS,P8_Y5_R2FR_3874_SOURCE_REGISTER.csv:20; P8_Y5_R2FR_3874_EM_NORMALIZATION_SPLIT_THEOREM.csv:6; P8_Y5_R2FR_3874_ACTIVE_F2_RESIDUAL_DEFINITION.csv:8; P8_Y5_R2FR_3874_STATIONARY_EM_SOURCE_ENVELOPE_UPDATE.csv:4; P8_Y5_R2FR_3874_BRANCH_DECISION_TABLE.csv:4; P8_Y5_R2FR_3874_CLAIM_GATES.csv:7; P8_Y5_R2FR_3874_NEXT_TARGET.csv:1; P8_Y5_R2FR_3874_STATUS.csv:1,2026-07-01T06:39:05+00:00
+VAL3874_11_formalization_untouched,no generated 3874 files appear in formalization-workbench,PASS,0 hits,2026-07-01T06:39:05+00:00
+VAL3874_12_no_pycache,scripts __pycache__ removed,PASS,0 pycache dirs,2026-07-01T06:39:05+00:00
+VAL3874_13_no_generated_claim,all analytical rows are nonclaim,PASS,valid_for_claim=false,2026-07-01T06:39:05+00:00

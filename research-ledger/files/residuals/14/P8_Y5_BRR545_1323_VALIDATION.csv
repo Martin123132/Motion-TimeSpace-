@@ -1,0 +1,12 @@
+check_id,check,status,details
+VAL1323_0_sources_exist,registered source paths exist and anchors are found,PASS,7/7 source anchors found
+VAL1323_1_bound_link_ready,Yb E3/E2 comparison bound and sensitivity are linked,PASS,171Yb+ E3 / 171Yb+ E2 bound=2.1e-18 yr^-1
+VAL1323_2_source_pack_schema_complete,direct source pack contains all required fill fields,PASS,equation_ref;predicted_product_units;predicted_product_value;product_definition;provenance_note;readout_model;sign_convention;source_anchor;source_path
+VAL1323_3_acceptance_rules_written,"acceptance rules block missing product, provenance, readout, and b_alpha shortcuts",PASS,AR1323_0_numeric_product;AR1323_1_provenance;AR1323_2_readout_model;AR1323_3_bound_comparison;AR1323_4_no_balpha
+VAL1323_4_runner_refuses_placeholders,acceptance runner refuses current placeholder source pack,PASS,predicted_product_value;predicted_product_units;product_definition;readout_model;source_path;source_anchor;equation_ref;provenance_note;sign_convention
+VAL1323_5_blockers_recorded,all missing direct product fields are recorded as blockers,PASS,blockers=9
+VAL1323_6_shortcuts_enforced,anti-shortcut gates are enforced,PASS,SHORT1323_0_no_placeholder_pass;SHORT1323_1_no_bound_as_prediction;SHORT1323_2_no_tau_balpha;SHORT1323_3_no_cross_arena_transfer
+VAL1323_7_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1323_8_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1323_9_next_target_1324,next target routes to direct product fill or wait-state,PASS,1324-Y5-R10-RAB-clock-direct-product-derivation-source-fill-or-waitstate.md
+VAL1323_10_overall,overall 1323 validation,PASS,"1323 creates direct clock product source pack, links Yb bound, refuses placeholders, and preserves nonclaim gates"

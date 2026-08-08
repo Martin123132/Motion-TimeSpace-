@@ -1,0 +1,8 @@
+constant_id,symbol,value,units,formula,source_id,status,valid_for_claim,timestamp_utc
+CGC3851_0_bmin_factor,b_min/R_sun_N,1.6,dimensionless,Cassini 2002 conjunction minimum impact parameter,SRC3851_W0_Cassini_bmin,SOURCE_BACKED_CASSINI_GEOMETRY_INPUT,False,2026-07-01T04:09:11+00:00
+CGC3851_1_Rsun_nominal,R_sun_N,6.957000000000000e+08,m,IAU nominal solar radius,SRC3851_W2_IAU_2015_B3,SOURCE_BACKED_NOMINAL_CONVERSION_CONSTANT,False,2026-07-01T04:09:11+00:00
+CGC3851_2_mu_sun_nominal,GM_sun_N,1.327124400000000e+20,m^3 s^-2,IAU nominal solar mass parameter,SRC3851_W2_IAU_2015_B3,SOURCE_BACKED_NOMINAL_CONVERSION_CONSTANT,False,2026-07-01T04:09:11+00:00
+CGC3851_3_c,c,299792458,m s^-1,SI exact speed of light,SRC3851_W3_BIPM_c,SOURCE_BACKED_EXACT_SI_CONSTANT,False,2026-07-01T04:09:11+00:00
+CGC3851_4_bmin_m,b_min,1.113120000000000e+09,m,b_min=1.6*R_sun_N,CGC3851_0_bmin_factor;CGC3851_1_Rsun_nominal,DERIVED_GEOMETRY_INPUT,False,2026-07-01T04:09:11+00:00
+CGC3851_5_phi_b,phi_b,1.326564106340848e-06,dimensionless,"phi_b=GM_sun_N/(c^2*b_min), b_min=1.6*R_sun_N",CGC3851_2_mu_sun_nominal;CGC3851_3_c;CGC3851_4_bmin_m,DERIVED_NEAR_LIMB_DENOMINATOR_INPUT,False,2026-07-01T04:09:11+00:00
+CGC3851_6_T2_b,T2_b,9.999973468717873e-01,dimensionless,T2_b=1-2*phi_b,CGC3851_5_phi_b,DERIVED_NEAR_LIMB_BRANCH_INPUT,False,2026-07-01T04:09:11+00:00

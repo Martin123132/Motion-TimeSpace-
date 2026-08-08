@@ -1,0 +1,6 @@
+field,required,meaning,units,valid_for_claim_rule
+profile_id,True,groups sample rows into one source profile comparison,text,must be stable and source-backed
+"x,y,z,volume_weight",True,sample coordinates and integration weight on W_H,declared source units,grid/domain and volume convention must be documented
+"rho_H,rho_top",True,ordinary Hilbert and topological density representatives on the same samples,mass per volume or signed mass if volume_weight=1,"both profiles must be parent/source-backed, not fitted to kill moments"
+"M_H,R,center_x,center_y,center_z",True for claim rows,"normalization mass, support radius, and parent-owned center",mass and length,center fixed before readout; M_H/R not imported from orbital GM to hide residuals
+input_valid_for_claim,True for promotion,upstream source/profile provenance flag,boolean,4381 smoke rows keep this false

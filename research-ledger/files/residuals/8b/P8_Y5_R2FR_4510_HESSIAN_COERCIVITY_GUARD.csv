@@ -1,0 +1,5 @@
+guard_id,quantity,formula,guard,status,valid_for_claim
+HCG4510_0_branch_gap,mu_m^2,"mu_m^2=V_{,mm}(m_*) plus controlled parent corrections",mu_m^2>0 after gauge/constraint/zero-mode removal,REQUIRED_FOR_LOCAL_LOCK,False
+HCG4510_1_extra_sector_shift,eta_extra,G_eff >= mu_m^2 - eta_EM - eta_boundary - eta_readout - eta_history,extra-sector Hessian shifts must not flip the positive operator,FINITE_GUARD_STAGED,False
+HCG4510_2_source_silence,J_m+B_m,delta m <= (||J_m||+||B_m||+||N||)/lambda_m,zero theorem requires exact source/boundary silence; otherwise use amplitude bound,FALLBACK_BOUND_READY_SYMBOLIC,False
+HCG4510_3_FLRW_branch_safety,branch separation,local source-root applies on the local vacuum branch; FLRW/disk memory amplitude may live on a different nonzero branch,do not erase cosmology/galaxy memory by globally forcing F=0,BRANCH_COMPATIBILITY_GUARD,False

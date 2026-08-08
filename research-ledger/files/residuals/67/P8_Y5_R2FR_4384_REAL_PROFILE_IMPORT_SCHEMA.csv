@@ -1,0 +1,5 @@
+field,required,units,purpose,claim_rule
+profile_id,True,text,group samples for one source-profile comparison,must not be synthetic/smoke/surrogate
+"x,y,z,volume_weight",True,declared length and volume convention,compute first moments and direct multipoles,"numeric, positive volume weights, fixed W_H"
+"rho_H,rho_top",True,mass density or signed mass per sample if volume_weight=1,Hilbert/topological profile comparison,real source provenance for both density representatives
+"R,source_profile_path,input_valid_for_claim",True,"length, path, boolean",normalization radius and provenance gate,"R>0, paths declared, input_valid_for_claim true and no forbidden markers"

@@ -1,0 +1,7 @@
+rule_id,rule,result,evidence,claim_effect
+V482_0_sources,all cited source paths exist,pass,missing_sources=0,traceability only
+V482_1_components,"local residual vector includes boundary alpha3, domain siblings, Qcoh parent gates, stress, and total guard",pass,components=11,residual vector is explicit
+V482_2_no_hidden_claim_rows,no local residual vector row is valid for local-GR claim while unfilled,pass,valid_for_local_GR_claim_rows=0,no hidden PPN/local-GR promotion
+V482_3_promotion_gates,promotion gates fail where source-normalized Newton/PPN/local-GR evidence is missing,pass,fail_for_claim_gates=5,failure is recorded rather than smuggled
+V482_4_no_cancellation_guard,total alpha3 remains guard-only until individual rows pass or parent identity exists,pass,LRV_TOTAL_ALPHA3_GUARD passes_required_gate=false,no tuned cancellation
+V482_5_next_route,next step chooses derive/fill decision rather than rerunning evaluator with missing inputs,pass,483-parent-action-local-zero-or-fill-decision.md,alpha3 evaluator refresh deferred until inputs exist

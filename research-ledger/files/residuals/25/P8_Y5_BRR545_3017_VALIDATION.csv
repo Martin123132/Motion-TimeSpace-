@@ -1,0 +1,13 @@
+validation_id,passed,requirement,evidence
+VAL3017_00_sources_exist,True,every cited local source path exists,P8_Y5_R2FR_3017_SOURCE_REGISTER.csv
+VAL3017_01_csv_parse,True,generated CSV rows parse cleanly,all generated CSV artifacts import with csv.DictReader
+VAL3017_02_Ward_not_promoted,True,Ward bridge is not promoted as alpha3 zero proof,P8_Y5_R2FR_3017_SOURCE_CURRENT_WARD_OWNER_ATTEMPT.csv
+VAL3017_03_alpha3_heads_complete,True,alpha3 head reduction matrix includes total no-cancellation residual,P8_Y5_R2FR_3017_ALPHA3_HEAD_REDUCTION_MATRIX.csv
+VAL3017_04_gamma_fill_contract,True,"gamma coefficient fill contract includes A_T, A_S and s_R",P8_Y5_R2FR_3017_GAMMA_COEFFICIENT_FILL_CONTRACT.csv
+VAL3017_05_claims_blocked,True,alpha3/PPN/local-GR claims remain blocked,P8_Y5_R2FR_3017_PROMOTION_GATES.csv
+VAL3017_06_missing_markers_nonclaim,True,rows with MISSING markers are never valid_for_claim=true,all 3017 generated ledgers
+VAL3017_07_branch_copies_exist,True,branch copies and acquisition queue exist,P8_Y5_R2FR_3017_BRANCH_COPIES.csv
+VAL3017_08_outputs_scoped,True,no generated file is outside post-checkpoint-work,generated path scope check
+VAL3017_09_formalization_not_targeted,True,formalization-workbench is not modified by this checkpoint,output target list excludes formalization-workbench
+VAL3017_10_next_target_selected,True,next target selects gamma coefficient fill or beta square-law handoff,P8_Y5_R2FR_3017_NEXT_TARGET.csv
+VAL3017_99_overall,True,all 3017 validation checks pass,aggregate of VAL3017_00 through VAL3017_10

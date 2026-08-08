@@ -1,0 +1,7 @@
+rule_id,rule,result,evidence,claim_effect
+V488_0_sources,all cited source paths exist,pass,missing_sources=0,traceability only
+V488_1_double_zero_imported,487 double-zero sufficiency lemma is loaded,pass,L2_double_zero_sufficient,parent clause addresses the correct leak
+V488_2_R11_family_coverage,operator mapping covers all ten R11 families,pass,operator_mapping_rows=10,no R11 family silently omitted
+V488_3_composite_selector,Sigma_loc is written as a composite squared norm rather than an independent switch,pass,Sigma_loc=G_AB Y_loc^A Y_loc^B,avoids the single-zero trap conditionally
+V488_4_no_claim_parent_rows,no parent-clause row is promoted as derived,pass,claim_valid_parent_clause_rows=0,no fake parent-action pass
+V488_5_no_claim_operator_rows,no R11 operator mapping row is claim-valid before Yloc Euler equations are derived,pass,claim_valid_operator_rows=0,no EH/R11/local-GR promotion

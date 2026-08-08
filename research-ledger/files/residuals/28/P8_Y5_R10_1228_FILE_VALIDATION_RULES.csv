@@ -1,0 +1,6 @@
+rule_id,rule,failure_effect,valid_for_claim,claim_allowed
+RULE1228_0_path,file must be under source-intake/microscope/raw or source-intake/microscope/docs,quarantine/refuse,False,False
+RULE1228_1_unmodified,"raw files must be unmodified official packages, not manually edited extracts",quarantine/refuse,False,False
+RULE1228_2_provenance,"source_url, package id, checksum, access/license, and schema docs must be present",parser_refuses,False,False
+RULE1228_3_columns,"readout arrays must expose time, session/segment, SU, gx/gz/Sxx/Sxz, masks, calibration flags, orbit/attitude convention",tau_WEP_not_scoreable,False,False
+RULE1228_4_no_claim,passing intake is not a WEP/local-GR claim; it only permits parser precheck,claim_allowed_always_false,False,False

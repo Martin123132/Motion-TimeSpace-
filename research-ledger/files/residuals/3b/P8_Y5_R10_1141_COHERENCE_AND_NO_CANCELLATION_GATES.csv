@@ -1,0 +1,9 @@
+gate_id,rule,gate_pass,reason,valid_for_claim,generated_utc
+G1141_0_sources_exist,"1140 handoff, PPN target rows, alpha3 product rows, and R11 c rows are locally anchored",true_nonclaim,source paths/needles are present but do not provide MTS coefficients,false,2026-06-14T22:36:51.613669+00:00
+G1141_1_ppn_bounds_present,"alpha1, alpha2, and alpha3 numeric guardrails are carried explicitly",true_nonclaim,numeric bounds exist as local guardrails; predictions are still missing,false,2026-06-14T22:36:51.613669+00:00
+G1141_2_observed_coframe_fixed,vector rows must use the observed local matter/source coframe,true_nonclaim,"coframe string is fixed in every vector row, but no coefficient is sourced",false,2026-06-14T22:36:51.613669+00:00
+G1141_3_vector_prediction,alpha1/alpha2/alpha3 vector predictions are numeric or theorem-zero,false,R_alpha_i_vector and c_vector_preferred_frame_hair are missing,false,2026-06-14T22:36:51.613669+00:00
+G1141_4_flux_product,K*c*epsilon product is numeric below 4e-20 or has a parent zero factor,false,"K, c, epsilon, and product are missing or theorem-zero unsigned",false,2026-06-14T22:36:51.613669+00:00
+G1141_5_no_cancellation,"no tuned cancellation between vector, flux, boundary, or domain channels",true_nonclaim,every channel must pass independently before any total row is meaningful,false,2026-06-14T22:36:51.613669+00:00
+G1141_6_sibling_guard,R5/R6/R8/R11 siblings cannot be bypassed by an alpha3-only row,true_nonclaim,1121 sibling guard remains active,false,2026-06-14T22:36:51.613669+00:00
+G1141_7_local_claim,R10/PPN/alpha3/local-GR promotion allowed,false,"first bound rows are source-ready only, not executable/scored",false,2026-06-14T22:36:51.613669+00:00

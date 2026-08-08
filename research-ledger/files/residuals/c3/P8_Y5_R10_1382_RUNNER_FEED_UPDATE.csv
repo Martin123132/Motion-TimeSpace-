@@ -1,0 +1,5 @@
+feed_id,runner_input,formula_or_gate,status,numeric_scoring,claim_allowed
+RUF1382_0_admissibility,Z_m admissibility scaffold,"requires positivity, finite bounds, shared law, units, gap, sources, boundary",SCHEMA_READY_VALUES_MISSING,blocked,False
+RUF1382_1_symbolic_transition_length,ell_tr=sqrt(Z_m L0^2/F2),"allowed only as symbolic expression until Z_m, F2, L0 units and values are source-backed",SYMBOLIC_ONLY,blocked,False
+RUF1382_2_stress_residual,memory stress envelope,requires Z_m_bar and gradient/source/boundary bounds before any PPN/R10/local residual scoring,NONCLAIM_RESIDUAL_LEDGER_RETAINED,blocked,False
+RUF1382_3_prior_pack,symbolic prior pack,dry-run placeholders must carry valid_for_claim=false,READY_FOR_STRICT_VALIDATOR_DRYRUN,blocked,False

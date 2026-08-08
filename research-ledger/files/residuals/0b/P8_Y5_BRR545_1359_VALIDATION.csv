@@ -1,0 +1,11 @@
+check_id,check,status,details
+VAL1359_0_sources_exist,registered source paths exist and anchors are found,PASS,SRC1359_0_1358_doc=True/True;SRC1359_1_1358_next=True/True;SRC1359_2_1358_contract=True/True;SRC1359_3_1358_schema=True/True;SRC1359_4_1016_doc=True/True;SRC1359_5_1017_doc=True/True;SRC1359_6_1018_doc=True/True;SRC1359_7_topo_certificate=True/True;SRC1359_8_input_template=True/True
+VAL1359_1_selector_action_not_promoted,"parent selector action is a contract, not a current-MTS derivation",PASS,"the candidate action is a useful contract, but adding multipliers would be a new closure sector unless justified by the parent theory"
+VAL1359_2_obstructions_open,selector action obstruction ledger stays open,PASS,obstruction_rows=6
+VAL1359_3_intake_ledger_complete,"I_commutator source-intake ledger covers surfaces, numerator, denominator, units, sources, guard flags, and acceptance",PASS,intake_rows=8
+VAL1359_4_intake_nonclaim_missing,intake rows remain missing/schema-only/nonclaim,PASS,no intake row can score
+VAL1359_5_claim_gates_block_claim,"selector derivation, chainmap, source-row, and Newton claims remain blocked",PASS,GATE1359_0_selector_contract_written=True;GATE1359_1_selector_action_derived=False;GATE1359_2_chainmap_signed=False;GATE1359_3_first_Icommutator_row_ready=False;GATE1359_4_Newton_local_GR=False
+VAL1359_6_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false across generated rows
+VAL1359_7_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1359_8_next_target_1360,next target routes to selector-action locality/differentiability or MHref/surface intake,PASS,1360-Y5-R10-RAB-selector-action-locality-differentiability-or-MHref-surface-intake.md
+VAL1359_9_overall,overall 1359 validation,PASS,"1359 writes selector-action contract, blocks derivation claim, and creates I_commutator intake ledger"

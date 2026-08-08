@@ -1,0 +1,4 @@
+row_id,channel,exact_requirement,numeric_value,units,status,valid_for_claim
+XF4556_0_master_no_cancellation,xi total retained channel,"|P_xi := K_xi S_static|*epsilon_U^2 + |Q_xi := K_xi B_boundary,xi| + |R_higher_xi| <= 4.0000000000000002e-09 dimensionless",4.0000000000000002e-09,dimensionless,fallback_if_private_zero_scope_fails,False
+XF4556_1_source_product_if_boundary_zero,P_xi,|P_xi| <= B_xi/epsilon_U^2 if boundary and higher terms are zero,6.4582427632245596e+05,dimensionless effective product,finite_source_product_budget_nonclaim,False
+XF4556_2_boundary_plus_higher_half_budget,Q_xi + R_higher_xi,|Q_xi| + |R_higher_xi| <= B_xi/2 under equal split,2.0000000000000001e-09,dimensionless,finite_boundary_higher_budget_nonclaim,False

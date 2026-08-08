@@ -1,0 +1,8 @@
+gate_id,arena,lambda_A_dependency,current_blocker,status,valid_for_claim,claim_allowed
+LAG1397_0_EM_lock,EM-lock theorem,unique F2 must set lambda_A=0 or forbid standalone F_Q^2,UMF1397_2 fails current corpus and UMF1397_3 is unsigned,BLOCKED_UNIQUE_F2_NOT_SIGNED,False,False
+LAG1397_1_alphaEM,fine-structure/readout,b_alpha_EM depends on derivative of C_P N_Q + lambda_A plus readout factors,lambda_A and readout descent derivatives missing,BLOCKED_ALPHAEM_DERIVATIVE_OWNER_MISSING,False,False
+LAG1397_2_clock,clock/fine-structure tests,clock constrains K_alpha b_alpha_EM tau_clock,only product-level clock constraint is present,BLOCKED_CLOCK_PRODUCT_ONLY,False,False
+LAG1397_3_WEP,WEP/Coulomb composition,WEP needs beta_source_alpha b_alpha_EM tau_WEP with normalized charges,source normalization owner and tau_WEP map missing,BLOCKED_WEP_SOURCE_MAP_MISSING,False,False
+LAG1397_4_R10,R10 short-range alpha(lambda),finite lambda_A feeds beta_EM then bulk material kernel,"beta_EM map, K_bulk,ST(lambda), tail, and real bound curve not all claim-ready",BLOCKED_R10_MATERIAL_KERNEL_MISSING,False,False
+LAG1397_5_local_GR,local GR/Newton reduction,finite EM residual must vanish or be bounded as part of the local residual vector,R_EM_local incomplete and EM-lock not signed,BLOCKED_NO_LOCAL_GR_CLAIM,False,False
+LAG1397_6_verdict,all alphaEM/local arenas,unique F2 proof or complete lambda_A finite source map,neither proof nor sourced finite map exists,ARENA_SCORING_BLOCKED,False,False

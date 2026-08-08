@@ -1,0 +1,16 @@
+check_id,check,passed,detail
+VAL3395_0_sources_exist_parse,all cited 3395 source paths exist and parse,true,
+VAL3395_1_outputs_parse,all generated CSV outputs parse cleanly,true,parsed=12 expected=12
+VAL3395_2_external_constants,"external constants include c, G and derived kappa comparator",true,
+VAL3395_3_corpus_audit,corpus coefficient audit covers all normalization categories,true,categories=6
+VAL3395_4_hygiene_import,3394 local hygiene package imported but not used as coupling substitute,true,rows=3
+VAL3395_5_coupling_ladder,"coupling ladder covers EH, Hilbert source, Poisson, Htau, v action and PPN",true,
+VAL3395_6_parent_line,"minimal parent action line candidate covers action, variation, source-current and no-backfill",true,
+VAL3395_7_residual_contract,"residual contract covers delta_kappa, ellJ, Gref match, KC, Newton and PPN",true,
+VAL3395_8_implications,"Newton/PPN implications separate conditional, current no-claim and G policy",true,
+VAL3395_9_runner,"runner records hygiene, ladder, parent line, residual contract and firewall",true,
+VAL3395_10_gates,"gates record constants but block parent line, Newton, PPN and local GR claims",true,
+VAL3395_11_no_overclaim_flags,all generated rows with valid_for_claim remain false,true,
+VAL3395_12_write_scope_outside_formalization,no 3395 files were written under formalization-workbench,true,hits=0
+VAL3395_13_next_target,next target moves to minimal parent-line integration audit,true,
+VAL3395_14_overall,3395 validation overall,true,all required checks passed

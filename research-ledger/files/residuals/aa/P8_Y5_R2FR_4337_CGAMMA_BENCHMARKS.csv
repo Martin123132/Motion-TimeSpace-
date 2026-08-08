@@ -1,0 +1,3 @@
+benchmark_id,branch,inputs,S_PPN_unit_cGamma,cGamma_max_for_gate,unit_cGamma_status,interpretation,valid_for_claim
+BM4337_0_AU_linear_generic,direct linear q_profile,M_tr=1e-09; F1=1; u_shell=9.8706287268031270e-09; S_gate=1e-05,1.0131066902400628e-01,9.8706287268031276e-05,FAIL,direct AU linear memory projection survives only if c_Gamma is below about 1e-4 or F1/M_tr is further suppressed,False
+BM4337_1_AU_quadratic_fixed_point,quadratic fixed-point q_profile,M_tr=1e-7; F1=0; ell_tr/L_cg~sqrt(2); S_gate=1e-05,1.4327492214684143e-06,6.9795885072972315e+00,CONDITIONAL_PASS_SOURCE_AMPLITUDE_ONLY,"quadratic branch can tolerate c_Gamma order unity at this source-amplitude proxy, but only if the fixed-point/no-hair profile is parent-owned",False

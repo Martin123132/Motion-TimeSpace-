@@ -1,0 +1,6 @@
+interface_id,target_row,dependency,gate,current_status,claim_allowed,valid_for_claim
+BTB1394_0_beta_bulk_source,BBS1393_5_beta_bulk_source,"beta_bind,S from BBR1394_3","cannot fill beta_bulk,S until source binding sum is real or zero-certified",BLOCKED_BINDING_SOURCE_MISSING,False,False
+BTB1394_1_beta_bulk_test,BBS1393_6_beta_bulk_test,"beta_bind,T from BBR1394_4","cannot fill beta_bulk,T until test binding sum is real or zero-certified",BLOCKED_BINDING_TEST_MISSING,False,False
+BTB1394_2_WEP_warning,WEP/source-charge gate,"composition differences f_i,S vs f_i,T and sector beta_i","composition-dependent binding betas open WEP/clock gates, not only R10",WEP_CLOCK_GATES_RETAINED,False,False
+BTB1394_3_runner_warning,1392 bulk alpha template,"beta_bulk,S and beta_bulk,T",runner template remains symbolic until binding and nonbinding beta pieces are real,RUNNER_PROMOTION_BLOCKED,False,False
+BTB1394_4_verdict,beta_bind to beta_bulk interface,all composition and binding beta rows,binding rows must close before beta_bulk rows can promote R10/local scoring,BINDING_TO_BETA_INTERFACE_READY_SCORING_BLOCKED,False,False

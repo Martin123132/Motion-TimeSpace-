@@ -1,0 +1,12 @@
+case_id,official_arrays,template_only,surrogate_as_official,botcheck_as_data,bound_inequality_only,c_parent,source_vector,material_tensor,tau_wep_unity,uses_cancellation,expected_status,valid_for_claim
+DRY2656_0_no_official_arrays,False,False,False,False,False,False,False,False,False,False,REFUSED_OFFICIAL_ARRAYS_MISSING,False
+DRY2656_1_template_only,False,True,False,False,False,False,False,False,False,False,REFUSED_TEMPLATE_ONLY_NOT_DATA,False
+DRY2656_2_surrogate,False,False,True,False,False,False,False,False,False,False,REFUSED_SURROGATE_AS_OFFICIAL,False
+DRY2656_3_botcheck,True,False,False,True,False,False,False,False,False,False,REFUSED_BOTCHECK_HTML_AS_DATA,False
+DRY2656_4_inequality_only,True,False,False,False,True,False,False,False,False,False,REFUSED_INEQUALITY_ONLY_MISSING_NUMERIC_FACTORS,False
+DRY2656_5_parent_coupling,True,False,False,False,False,False,True,True,False,False,REFUSED_PARENT_COUPLING_OWNER_MISSING,False
+DRY2656_6_source_vector,True,False,False,False,False,True,False,True,False,False,REFUSED_SOURCE_VECTOR_MISSING,False
+DRY2656_7_material_tensor,True,False,False,False,False,True,True,False,False,False,REFUSED_MATERIAL_TENSOR_MISSING,False
+DRY2656_8_tau_unity,True,False,False,False,False,True,True,True,True,False,REFUSED_TAU_WEP_UNITY_SHORTCUT,False
+DRY2656_9_cancellation,True,False,False,False,False,True,True,True,False,True,REFUSED_CANCELLATION_ONLY,False
+DRY2656_10_counterfactual,True,False,False,False,False,True,True,True,False,False,COUNTERFACTUAL_READY_NOT_CURRENT_CLAIM,False

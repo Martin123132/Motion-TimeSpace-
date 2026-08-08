@@ -1,0 +1,5 @@
+graph_id,component,constraint,derivation_use,status,valid_for_claim
+HGC3348_0_nodes,ordinary atomic/nuclear matter components,"nodes={charged leptons, protons, neutrons, EM binding, nuclear binding, molecular/lattice binding}",defines the candidate connected Hilbert-source graph whose relative weights would collapse,CANDIDATE_NODE_BASIS_FROM_2616_NOT_PUBLIC_SOURCED,false
+HGC3348_1_exchange_constraint,interacting component currents,nabla_mu T_i^{mu nu}=C_i^nu and sum_i C_i^nu=0; source conservation of sum_i w_i T_i requires sum_i w_i C_i^nu=0,nonzero exchange edges force equal source weights across connected nodes,DERIVED_CONDITIONAL_GRAPH_THEOREM,false
+HGC3348_2_common_mode,connected ordinary component,w_i=w_* for all nodes in the connected component,w_* rescales kappa and is absorbed into measured G_N; it gives no WEP R_AB,DERIVED_COMMON_MODE_COLLAPSE,false
+HGC3348_3_decoupled_exception,decoupled conserved block,nabla_mu T_D^{mu nu}=0 independently,a decoupled block can keep an independent source weight only if it is inventoried in the local arena and bounded,RESIDUAL_EXCEPTION_REQUIRES_ARENA_INVENTORY,false

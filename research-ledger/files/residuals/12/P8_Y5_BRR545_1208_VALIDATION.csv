@@ -1,0 +1,15 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1208_0_sources_exist,all cited local sources exist,PASS,10/10 sources exist,False,False
+VAL1208_1_needles_found,all cited source needles found,PASS,10/10 needles found,False,False
+VAL1208_2_projector_identity,projector derivative identity is recorded,PASS,PPA1208_0 present,False,False
+VAL1208_3_quotient_not_enough,vertical quotient silence is not overclaimed,PASS,PPA1208_4 blocks spatial nabla_P_loc zero,False,False
+VAL1208_4_zero_not_claimed,nabla_P_loc zero is not claimed,PASS,PPA1208_5 selects bound route,False,False
+VAL1208_5_lower_bound_laws,nabla_P_loc is reduced to lower geometry constants,PASS,"NPL1208_0_parallel_splitting_bound,NPL1208_1_unit_vector_bound,NPL1208_2_fermi_curvature_bound,NPL1208_3_quotient_projector_bound,NPL1208_4_projector_pressure_insert",False,False
+VAL1208_6_source_ready_rows,source-ready nabla_P_loc rows are staged,PASS,"SRN1208_0_parallel_splitting_row,SRN1208_1_unit_vector_row,SRN1208_2_fermi_curvature_row,SRN1208_3_quotient_projector_row",False,False
+VAL1208_7_pressure_preserved,1207 projector pressure target is preserved,PASS,target=1.17233215026e-05,False,False
+VAL1208_8_fermi_route_selected,Fermi curvature/domain route is selected for next numeric gate,PASS,DEC1208_1 present,False,False
+VAL1208_9_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout,False,False
+VAL1208_10_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1208_SOURCE_REGISTER.csv:10; P8_Y5_R10_1208_PLOC_PARALLEL_PROJECTOR_AUDIT.csv:6; P8_Y5_R10_1208_NABLAPLOC_BOUND_LAW.csv:5; P8_Y5_R10_1208_SOURCE_READY_NABLAPLOC_ROW.csv:4; P8_Y5_R10_1208_PRESSURE_COMPARISON.csv:4; P8_Y5_R10_1208_DECISION_LEDGER.csv:2; P8_Y5_R10_1208_CLAIM_GATES.csv:4; P8_Y5_R10_1208_NEXT_TARGET.csv:1,False,False
+VAL1208_11_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_after_run_start_count=0,False,False
+VAL1208_12_next_target,next target is staged,PASS,1209-Y5-R10-local-Fermi-domain-curvature-source-pack-or-domain-motion-lock.md,False,False
+VAL1208_13_overall,overall 1208 validation,PASS,1208 P_loc parallel-projector audit is reproducible and nonclaim,False,False

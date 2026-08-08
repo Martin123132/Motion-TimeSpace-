@@ -1,0 +1,13 @@
+validation_id,passed,requirement,evidence
+VAL3016_00_sources_exist,True,every cited local source path exists,P8_Y5_R2FR_3016_SOURCE_REGISTER.csv
+VAL3016_01_csv_parse,True,generated CSV rows parse cleanly,all generated CSV artifacts import with csv.DictReader
+VAL3016_02_gamma_kernel_written,True,gamma weak-field coefficient-ratio and conformal special case are written,P8_Y5_R2FR_3016_GAMMA_KERNEL_DERIVATION.csv
+VAL3016_03_alpha3_zero_audit_written,True,alpha3 source-current zero/bound theorem audit exists and remains nonclaim,P8_Y5_R2FR_3016_ALPHA3_ZERO_THEOREM_AUDIT.csv
+VAL3016_04_fixed_GM_ratio_guard_active,True,fixed measured-GM cannot absorb gamma ratio residual,P8_Y5_R2FR_3016_FIXED_GM_GAMMA_GUARD.csv
+VAL3016_05_claims_blocked,True,PPN/local-GR claims remain blocked,P8_Y5_R2FR_3016_PROMOTION_GATES.csv
+VAL3016_06_missing_markers_nonclaim,True,rows with MISSING markers are never valid_for_claim=true,all 3016 generated ledgers
+VAL3016_07_branch_copies_exist,True,branch copies and acquisition queue exist,P8_Y5_R2FR_3016_BRANCH_COPIES.csv
+VAL3016_08_outputs_scoped,True,no generated file is outside post-checkpoint-work,generated path scope check
+VAL3016_09_formalization_not_targeted,True,formalization-workbench is not modified by this checkpoint,output target list excludes formalization-workbench
+VAL3016_10_next_target_selected,True,next target selects source-current Ward owner or gamma coefficient fill,P8_Y5_R2FR_3016_NEXT_TARGET.csv
+VAL3016_99_overall,True,all 3016 validation checks pass,aggregate of VAL3016_00 through VAL3016_10

@@ -1,0 +1,6 @@
+test_id,test,formula,pass_condition,current_status,valid_for_claim
+PPT3406_0_field_redefinition,G_pub invariance under Phi -> M Phi,R H^{-1} R^T = (R M)(M^T H M)^{-1}(M^T R^T),identity holds algebraically,PASS_FORMAL,False
+PPT3406_1_massless_pole,positive GR pole,Res_{k^2=0}[T G_pub T] = G_ref T P^(2) T,"positive residue, correct Hilbert source, same G_ref",FORMULA_READY_RESIDUE_NOT_EXTRACTED,False
+PPT3406_2_scalar_residue,extra scalar pole silence,B_0 = Res_{k^2=-m_0^2}[T G_pub T]_{scalar}/Res_GR,"B_0=0, m_0 infinite, or finite-range/PPN bound pass",R2_FR_SCALAR_INPUTS_MISSING,False
+PPT3406_3_spin2_ghost_residue,massive spin-2/Weyl pole silence,B_2 = Res_{k^2=-m_2^2}[T G_pub T]_{massive spin2}/Res_GR,B_2=0 or bounded; sign/ghost handled by parent stability,RICCI_WEYL_INPUTS_MISSING,False
+PPT3406_4_zero_mode_charge,nullspace is gauge not hair,v in ker H => R v=0 and J v=0 unless v is q-basic diffeo gauge,no physical zero mode with source/readout overlap,ZERO_MODE_CLASS_OPEN,False

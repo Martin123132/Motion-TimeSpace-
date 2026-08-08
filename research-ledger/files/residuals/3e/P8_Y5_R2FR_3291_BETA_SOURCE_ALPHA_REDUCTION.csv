@@ -1,0 +1,6 @@
+reduction_id,quantity,3291_statement,formula,status,valid_for_claim
+BRED3291_0_chain_rule,beta_source_alpha,"Split beta_source_alpha into current-owner, source-label, hidden-source, and arena-projection pieces instead of treating it as one free factor.",beta_source_alpha = beta_current_owner + beta_source_only_label + beta_hidden_source + beta_arena_projection,DECOMPOSITION,false
+BRED3291_1_current_owner_piece,beta_current_owner,"If J_Q=delta S_matter/delta A_Q from the same fixed T_Q owner, then beta_current_owner=0.",L_v n_A = L_v J_Q = 0,THEOREM_ZERO_CONDITIONAL_NOT_PARENT_SIGNED,false
+BRED3291_2_measured_charge_not_beta,measured q_A/n_A,"A changed charge label is matter data, not a hidden source-current alpha drift, unless it is allowed to vary vertically without readout.",q_A in theta_rep => L_v q_A=0,CLASSIFICATION_REDUCTION,false
+BRED3291_3_source_only_piece,beta_source_only_label,The live source-current obstruction is a source-only species scalar or label-retaining source functor.,Delta_w_AB != 0 gives WEP/PPN/R10 residuals,LIVE_RESIDUAL,false
+BRED3291_4_arena_projection_piece,"tau_WEP, tau_R10, tau_PPN","Even with source-only weights bounded, each arena still needs its own projection map before scoring.",P_arena = beta_source_alpha * b_alpha * tau_arena,PROJECTION_REQUIRED,false

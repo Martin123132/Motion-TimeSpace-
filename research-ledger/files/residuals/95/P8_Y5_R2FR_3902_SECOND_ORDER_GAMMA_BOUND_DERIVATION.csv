@@ -1,0 +1,7 @@
+row_id,piece,formula,derived_result,status,valid_for_claim,timestamp_utc
+GAM3902_0_gap,coercive memory gap,lambda_gap=a_min*C_P_over_L_D2+m_min2,positive lambda_gap is the denominator for both X and gradient bounds,FORMULA_READY_INPUTS_MISSING,False,2026-07-01T09:20:21+00:00
+GAM3902_1_X,memory amplitude,"X_bound=S_X/lambda_gap, with S_X=J_open_plus_B_lift",restates 3895/3896 in runner variables,FORMULA_READY_INPUTS_MISSING,False,2026-07-01T09:20:21+00:00
+GAM3902_2_gradX,gradient memory bound,gradX_bound^2 <= S_X^2/(a_min*lambda_gap),from energy identity: a_min||grad X||^2 <= ||X||S_X <= S_X^2/lambda_gap,DERIVED_GRADIENT_BOUND,False,2026-07-01T09:20:21+00:00
+GAM3902_3_gamma2,second-order gamma residual,gamma2_bound=C_slip*(S_X^2/(a_min*lambda_gap)+m_eff2*S_X^2/lambda_gap^2+B_TF_boundary),substitutes X_bound and gradX_bound into the 3901 no-slip fallback,DERIVED_SECOND_ORDER_RUNNER_FORMULA,False,2026-07-01T09:20:21+00:00
+GAM3902_4_accept,gamma acceptance inequality,gamma2_bound <= 2.3e-5,Cassini/gamma-scale comparison remains nonclaim until all inputs are source-backed,NONCLAIM_THRESHOLD_READY,False,2026-07-01T09:20:21+00:00
+GAM3902_5_source_ceiling,allowed source norm ceiling,S_X^2 <= (2.3e-5/C_slip-B_TF_boundary)/(1/(a_min*lambda_gap)+m_eff2/lambda_gap^2),turns gamma pressure into a direct maximum allowed S_X once C_slip and boundary anisotropy are fixed,DERIVED_REARRANGED_BOUND,False,2026-07-01T09:20:21+00:00

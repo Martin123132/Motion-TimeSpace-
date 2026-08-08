@@ -1,0 +1,12 @@
+check_id,check,passed,detail
+VAL3274_0_sources_exist,all cited source paths exist,true,
+VAL3274_1_sources_parse,all cited source paths parse,true,
+VAL3274_2_outputs_parse,all 3274 output CSVs parse,true,non-validation outputs parsed before validation write
+VAL3274_3_variation_law_present,Maxwell and weighted-current equations are present,true,nabla_mu(kappa_J J_Q^mu)=0
+VAL3274_4_poynting_law_present,Poynting/stress exchange law is present,true,S_EM=Z_Q(E x B)
+VAL3274_5_CJ_bound_positive,conditional C_J bound is positive numeric,true,6.948988557475e-13
+VAL3274_6_CJ_zero_not_falsely_signed,C_J zero remains conditional rather than promoted,true,CJ_ZERO_NOT_PARENT_SIGNED
+VAL3274_7_runner_expectations,C_J runner expectations all match,true,CJR3274_0_missing_CJ=REFUSE_OR_FAIL;CJR3274_1_CJ_zero_conditional=PASS_NUMERIC_NONCLAIM;CJR3274_2_half_conditional_bound=PASS_NUMERIC_NONCLAIM;CJR3274_3_at_conditional_bound=PASS_NUMERIC_NONCLAIM;CJR3274_4_twice_conditional_bound=FAIL_BOUND;CJR3274_5_general_without_CZ_CR=REFUSE_OR_FAIL
+VAL3274_8_claim_gates_false,no 3274 gate allows local-GR/WEP/Maxwell claim,true,all claim_allowed=false
+VAL3274_9_formalization_untouched,formalization-workbench modified-file count remains zero by this script,true,formalization_changed_count=0
+VAL3274_10_overall,3274 validation overall,true,all required checks passed

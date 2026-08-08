@@ -1,0 +1,15 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1223_0_sources_exist,all cited local sources exist,PASS,13/13 sources exist,False,False
+VAL1223_1_needles_found,all cited source needles found,PASS,13/13 needles found,False,False
+VAL1223_2_p0_rows_imported,four P0 rows imported,PASS,ACQ1221_0_alpha; ACQ1221_1_surface; ACQ1221_2_source_weight; ACQ1221_3_readout,False,False
+VAL1223_3_derivations_attempted,one derivation attempt per P0 row,PASS,DER1223_0_alpha_F2; DER1223_1_surface_binding; DER1223_2_source_weight_owner; DER1223_3_readout_functor,False,False
+VAL1223_4_no_false_promotion,no P0 row is falsely promoted,PASS,all promotion rows promoted=false,False,False
+VAL1223_5_source_requirements_exact,all P0 rows have fallback source requirements,PASS,SRCREQ1223_0_alpha; SRCREQ1223_1_surface; SRCREQ1223_2_source_weight; SRCREQ1223_3_readout,False,False
+VAL1223_6_blockers_narrowed,P0 blockers narrowed to exact proof/source contracts,PASS,NAR1223_0_alpha; NAR1223_1_surface; NAR1223_2_source_weight; NAR1223_3_readout,False,False
+VAL1223_7_runner_feed_nonclaim,runner feed keeps zero valid predictions,PASS,valid_prediction_rows_delta=0 for all feed rows,False,False
+VAL1223_8_next_target_source_weight,next target selects source-weight owner proof,PASS,1224-Y5-R10-source-weight-action-scale-current-owner-proof.md,False,False
+VAL1223_9_claim_gates_blocked,claim gates keep physical claims blocked,PASS,derivation/runner/physical claim gates blocked,False,False
+VAL1223_10_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout claim-bearing tables,False,False
+VAL1223_11_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1223_SOURCE_REGISTER.csv:13; P8_Y5_R10_1223_P0_QUEUE_IMPORT.csv:4; P8_Y5_R10_1223_DERIVATION_ATTEMPT_MATRIX.csv:4; P8_Y5_R10_1223_MINIMAL_PROOF_CONTRACTS.csv:4; P8_Y5_R10_1223_FALLBACK_SOURCE_REQUIREMENTS.csv:4; P8_Y5_R10_1223_PROMOTION_ATTEMPT_LEDGER.csv:4; P8_Y5_R10_1223_NARROWED_BLOCKER_LEDGER.csv:4; P8_Y5_R10_1223_RUNNER_FEED_UPDATE.csv:2; P8_Y5_R10_1223_DECISION_LEDGER.csv:3; P8_Y5_R10_1223_CLAIM_GATES.csv:6; P8_Y5_R10_1223_NEXT_TARGET.csv:1,False,False
+VAL1223_12_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_after_run_start_count=0,False,False
+VAL1223_13_overall,overall 1223 validation,PASS,"1223 attempts P0 derivations, promotes no false rows, and narrows every P0 blocker",False,False

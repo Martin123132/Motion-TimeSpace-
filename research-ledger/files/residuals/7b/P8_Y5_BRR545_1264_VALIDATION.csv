@@ -1,0 +1,13 @@
+check_id,check,status,details
+VAL1264_0_sources_exist,all cited local sources exist,PASS,9/9 sources exist
+VAL1264_1_needles_found,all cited local needles found,PASS,9/9 needles found
+VAL1264_2_aux_route_written,auxiliary compatibility route is written but unsigned,PASS,auxiliary_rows=5
+VAL1264_3_theta_candidate_nonclaim,theta/Omega/vR candidate is not promoted,PASS,theta_rows=4
+VAL1264_4_boundary_nonclaim,boundary test remains nonclaim,PASS,boundary_rows=3
+VAL1264_5_claim_gates,all claim gates remain blocked,PASS,claim_gate_rows=4
+VAL1264_6_template_guard,finite-ZR template is docs-only and incomplete,PASS,ZR1264_FINITE_ZR_SOURCE_ROW_TEMPLATE_NONCLAIM.csv
+VAL1264_7_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1264_8_next_target_1265,next target is auxiliary protection or finite-ZR bound runner,PASS,1265-Y5-R10-RAB-auxiliary-constraint-protection-or-finite-ZR-bound-runner.md
+VAL1264_9_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1264_SOURCE_REGISTER.csv:9; P8_Y5_R10_1264_AUXILIARY_COMPATIBILITY_ROUTE.csv:5; P8_Y5_R10_1264_THETA_OMEGA_VR_FILL_AUDIT.csv:4; P8_Y5_R10_1264_BOUNDARY_ZERO_TEST.csv:3; P8_Y5_R10_1264_ZR_OPERATOR_STATUS.csv:3; P8_Y5_R10_1264_FINITE_ZR_SOURCE_ROW_REQUIREMENTS.csv:5; P8_Y5_R10_1264_CLAIM_GATES.csv:4; P8_Y5_R10_1264_DECISION_LEDGER.csv:3; P8_Y5_R10_1264_NEXT_TARGET.csv:1; ZR1264_FINITE_ZR_SOURCE_ROW_TEMPLATE_NONCLAIM.csv:1
+VAL1264_10_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1264_11_overall,overall 1264 validation,PASS,"1264 partially fills the theta/Omega/vR route with an auxiliary compatibility candidate, but keeps Z_R=0 and local tests blocked until parent protection is derived"

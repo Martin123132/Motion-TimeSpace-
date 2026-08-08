@@ -1,0 +1,6 @@
+run_id,input_case,runner_result,reason,local_GR_effect,valid_for_claim
+DGRUN3365_0_common_constant_absorption_smoke,"eps_common=0.1, all observable residuals zero",FIRST_ORDER_NEWTON_DEGENERATE_NONCLAIM,a universal source-blind constant can be reabsorbed into G_ref M_H at first Newtonian order,not a failure if parent-fixed and derivative/species/range/frame silent,false
+DGRUN3365_1_species_bound_smoke,eps_species_TiPt=1.4e-15,PASS_WEP_COMPONENT_SMOKE_NONCLAIM,toy value is below 2.8e-15 but lacks MTS parent/tau projection,nonclaim,false
+DGRUN3365_2_species_fail_smoke,eps_species_TiPt=5.6e-15,FAIL_WEP_COMPONENT_SMOKE_NONCLAIM,toy value exceeds 2.8e-15 component target,would fail if this were a real parent coefficient and tau_WEP=1,false
+DGRUN3365_3_total_scalar_refusal,ask for one DeltaGM_total pass/fail number,REFUSE_TOTAL_SCALAR_BOUND,"live rows mix dimensionless WEP, yr^-1 time drift, alpha(lambda), PPN coefficients, and mass-charge offsets; no common arena kernel",must score componentwise or derive zero,false
+DGRUN3365_4_real_MTS_row_refusal,real source-normalized local GR claim,REFUSE_MISSING_COMPONENT_INPUTS,R_nonEH/R_symp/R_extra/R_boundary/R_time_frame/R_worldtube/PPN source rows are not zeroed or bounded,no source-normalized Newton/local-GR promotion,false

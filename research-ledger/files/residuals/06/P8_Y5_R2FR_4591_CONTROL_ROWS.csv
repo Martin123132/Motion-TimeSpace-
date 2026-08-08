@@ -1,0 +1,8 @@
+checkpoint,control_id,scenario,expected_result,status,generated_utc,claim_allowed,valid_for_claim
+4591,CTRL4591_clean_same_branch,"one tau/e_obs branch fixed before variation for source, charge, clocks, orbit, PPN and readout",E_tau_eobs=0 and strict source-kernel branch reaches C_K_source_worldtube=0,SYMBOLIC_CONTROL_PASS,2026-07-06T13:23:08.443786+00:00,False,False
+4591,CTRL4591_clock_after_fit,clock normalization chosen after seeing residuals,reject zero; retain R_clock_orbit_postfit,COUNTERMODEL_CAUGHT,2026-07-06T13:23:08.443786+00:00,False,False
+4591,CTRL4591_orbit_frame_split,orbital coordinates use a frame not used by Hilbert source charge,retain Delta_tau_roles/Delta_eobs_roles,COUNTERMODEL_CAUGHT,2026-07-06T13:23:08.443786+00:00,False,False
+4591,CTRL4591_private_time_internal,private memory/process time exists but does not enter observed source/readout tau,no observed tau residual from private time alone,FIREWALL_PASS,2026-07-06T13:23:08.443786+00:00,False,False
+4591,CTRL4591_private_time_leaks,private memory/process time enters clock/source/orbit/readout definitions,retain R_private_memory_tau,COUNTERMODEL_CAUGHT,2026-07-06T13:23:08.443786+00:00,False,False
+4591,CTRL4591_moving_surface,linking surface reselected or moved independently of tau drag,retain Delta_S_link/surface motion row,COUNTERMODEL_CAUGHT,2026-07-06T13:23:08.443786+00:00,False,False
+4591,CTRL4591_units_lapse_split,source and readout use different lapse/unit/orientation normalization,retain Delta_units and reject denominator/source-kernel promotion,COUNTERMODEL_CAUGHT,2026-07-06T13:23:08.443786+00:00,False,False

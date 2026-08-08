@@ -1,0 +1,10 @@
+input_id,symbol,formula,units,current_status,required_evidence,valid_for_claim,timestamp_utc
+BJF3870_0_total,"b_J,A","b_J,A <= b_Sdescent + b_AQdescent + b_rep + b_slot[c_A,w_A,kappa_A] + b_readout + b_rad + b_boundary",dimensionless,nonclaim envelope,requires every component zero or numeric/source-backed,False,2026-07-01T06:13:47+00:00
+BJF3870_1_b_slot,"b_slot[c_A,w_A,kappa_A]",|D ln c_A_pre|+|D ln w_A|+|D ln kappa_A|,dimensionless,MISSING_SOURCE_ONLY_SLOT_EXCLUSION_OR_VALUES,main 3870 live source-slot pack,False,2026-07-01T06:13:47+00:00
+BJF3870_2_Delta_w_A,Delta_w_A,w_A/w_*-1,dimensionless,FIRST_FILL_ROW_READY_VALUE_MISSING,material/source class value or upper bound,False,2026-07-01T06:13:47+00:00
+BJF3870_3_beta_w_source,beta_w_source,partial_phi ln w_source(phi),canonical beta units,MISSING_SOURCE_BETA_WEIGHT_FUNCTION,canonical field and source weight function,False,2026-07-01T06:13:47+00:00
+BJF3870_4_beta_w_test,beta_w_test,partial_phi ln w_test(phi),canonical beta units,MISSING_TEST_BETA_WEIGHT_FUNCTION,test material action/composition map,False,2026-07-01T06:13:47+00:00
+BJF3870_5_c_A_pre,c_A_pre,pre-variation current/source coefficient,dimensionless,MISSING_CURRENT_SLOT_ZERO_OR_VALUE,source/test current coefficient value or parent exclusion theorem,False,2026-07-01T06:13:47+00:00
+BJF3870_6_kappa_A,kappa_A,active-source selector coefficient,dimensionless,MISSING_SOURCE_SELECTOR_ZERO_OR_VALUE,source-current grammar theorem or finite source vector,False,2026-07-01T06:13:47+00:00
+BJF3870_7_no_absorb,absorption_guard,only universal derivative-silent common factors may enter G_N calibration,boolean+derivatives,GUARD_READY_INPUTS_MISSING,"partial_t,r,A,lambda,frame ln slot = 0 and Delta_w_A=0",False,2026-07-01T06:13:47+00:00
+BJF3870_8_kernel,arena_kernel,K_Arena for WEP/R10/PPN/clock/orbital projection,arena units,MISSING_ARENA_PROJECTIONS,arena-specific kernel and source/material map,False,2026-07-01T06:13:47+00:00

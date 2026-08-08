@@ -1,0 +1,7 @@
+rule_id,rule,result,evidence,claim_effect
+V493_0_sources,all cited source paths exist,pass,missing_sources=0,traceability only
+V493_1_inputs_loaded,492 contract and component result are loaded,pass,aux_contract_rows=7;aux_component_rows=7,493 follows the active obstruction
+V493_2_candidate_space,"candidate parentizations include independent odd, exchange doublet, gauge redundancy, Lagrange lock, and closure",pass,P0_independent_odd_Z;P1_exchange_doublet_representatives;P2_gauge_sign_redundancy;P3_odd_Lagrange_lock;P4_closure_coefficients,fork space explicit
+V493_3_contract_complete,exchange parentization contract O0 through O6 is explicit,pass,O0;O1;O2;O3;O4;O5;O6,no hidden premise
+V493_4_component_coverage,all Yloc components are mapped or marked unresolved,pass,Y0_trace_expansion;Y1_coherent_projector;Y2_boundary_flux;Y3_domain_vector;Y4_domain_STF_stress;Y5_source_normalization;Y6_stress_Bianchi,no skipped PPN blocker
+V493_5_no_claim_rows,"no candidate, theorem, or component row is promoted as claim-valid",pass,candidate_claim_rows=0;theorem_claim_rows=0;component_claim_rows=0,no local-GR promotion

@@ -1,0 +1,6 @@
+map_id,input,derived_quantity,formula,status,missing,valid_for_claim
+CMAP2722_0_metric_coupling,kappa0,G_N,G_N = kappa0*c^4/(8*pi),CONDITIONAL_MAP_NOT_SOURCE,parent-fixed kappa0/G_ref convention,false
+CMAP2722_1_source_density,T_00≈rho_H*c^2,rho_H,rho_H = T_00/c^2 in the local observed coframe,CONDITIONAL_SOURCE_READOUT,same-frame Hilbert matter descent and tau/coframe lock,false
+CMAP2722_2_poisson,G_00^lin=kappa0*T_00,nabla^2 Phi,nabla^2 Phi = 4*pi*G_N*rho_H + residual_Phi,CONDITIONAL_WEAK_FIELD_FORM,gauge/domain/residual-stress package,false
+CMAP2722_3_gauss,Poisson equation plus boundary/falloff,mu_parent,mu_parent = G_N*M_source,CONDITIONAL_GAUSS_FORM,surface-independent M_source and boundary flux control,false
+CMAP2722_4_orbital_comparison,mu_parent,Delta_mu_orbit,Delta_mu_orbit = (GM_orbit - mu_parent)/mu_parent,DOWNSTREAM_TEST_ONLY,orbital/readout protocol after mu_parent is fixed,false

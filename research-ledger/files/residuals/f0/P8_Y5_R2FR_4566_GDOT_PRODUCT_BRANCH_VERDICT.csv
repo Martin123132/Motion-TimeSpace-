@@ -1,0 +1,5 @@
+verdict_id,object,result,status,claim_effect,valid_for_claim
+GV4566_0_product_identity,C_Gamma_Gdot,"C_Gamma_Gdot = c_Gamma D_t Xi_0 + T_perp,Gdot",EXACT_CHANNEL_IDENTITY_RETAINED,"Gdot row is a product/sum bound, not a c_Gamma bound",False
+GV4566_1_derivative_silence,D_t Xi_0,D_t Xi_0=0 in the stationary compact local branch,CONDITIONAL_BRANCH_PASS,removes scalar time-profile drift only if branch premises are accepted,False
+GV4566_2_tensor_perp,"T_perp,Gdot","pure TT monopole is scalar-Gdot silent, but trace/scalar and boundary pieces remain",PARTIAL_TENSOR_SPLIT_RETAINED,Gdot silence still needs T_trace/T_boundary zero or bound,False
+GV4566_3_coefficient,c_Gamma,not bounded or normalized by D_t Xi_0=0,NO_STANDALONE_COEFFICIENT_CLAIM,a zero profile can make any c_Gamma compatible with the Gdot product unless other arenas/profiles normalize it,False

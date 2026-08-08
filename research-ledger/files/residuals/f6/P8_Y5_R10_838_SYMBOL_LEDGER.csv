@@ -1,0 +1,5 @@
+symbol_id,symbol,canonical_role,current_usage,replacement,status,valid_for_claim,generated_utc
+SL838_0_alias_collision,C_D,ambiguous_do_not_use_unqualified,837 uses C_D as active-Gamma/D_L^2 coefficient while the equation register also uses C_D as the D_L<=C_D U_B transfer bound,use C_gamma_D for active-Gamma coefficient and C_DU for D_L-to-U_B transfer,alias_collision_resolved_for_new_rows,false,2026-06-12T23:14:56+00:00
+SL838_1_CgammaD,C_gamma_D,bound in |Gamma_eff-Lambda_loc| <= C_gamma_D D_L^2,not numeric; derived conditionally from F2_bound and L_cg normalization,C_gamma_D <= L_cg^-2(F2_bound + R3_bound delta_D),conditional_formula_only,false,2026-06-12T23:14:56+00:00
+SL838_2_CDU,C_DU,bound in D_L <= C_DU U_B,"equation register gives 0<=H_L<=C_D and D_L<=C_D U_B, but C_D value/source is not numeric",source or derive numeric/symbolic upper bound C_DU from parent local branch,not_sourced_numeric,false,2026-06-12T23:14:56+00:00
+SL838_3_CgammaU,C_gamma_U,bound in |Gamma_eff-Lambda_loc| <= C_gamma_U U_B^2,induced only if C_gamma_D and C_DU are sourced,C_gamma_U <= C_gamma_D C_DU^2,conditional_formula_only,false,2026-06-12T23:14:56+00:00

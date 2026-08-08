@@ -1,0 +1,6 @@
+gate_id,gate,status,reason,valid_for_claim,claim_allowed
+GATE1369_0_parent_Lcg_definition,source-backed parent definition of L_cg exists,BLOCKED,"registered sources define L_cg dependence but do not select fixed parameter, cell volume, curvature scale, or source-density route",False,False
+GATE1369_1_ML_silence_or_bound,M_L is zero-derived or bounded with units,BLOCKED,fixed-scale silence lemma is exact but unsigned; metric-composite routes are generically nonzero,False,False
+GATE1369_2_Kcdb_resolved,connection/domain/boundary terms are zero-derived or bounded,BLOCKED,"K_conn, K_domain, and K_boundary remain retained after the algebraic chain analysis",False,False
+GATE1369_3_q_loc_gamma_runner,q_loc-to-gamma runner can score a finite branch,BLOCKED_SCHEMA_READY,"schema and comparator exist, but q_loc_hat and C_qgamma are missing",False,False
+GATE1369_4_local_GR_or_PPN_claim,local GR / PPN pass can be claimed,BLOCKED_NO_CLAIM,L_cg parent status and q_loc projection are unresolved,False,False

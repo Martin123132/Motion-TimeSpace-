@@ -1,0 +1,6 @@
+fork_id,condition,local_expression,status,required_if_not,valid_for_claim,generated_utc
+LRF863_0_zero_branch,"P_loc J_trace=0, Pi_I^matter=0, F_P_bulk=0, boundary no-hair",q_loc^nu=0 from trace/projector/coframe endpoint channels,conditional_not_parent_signed,none if fully signed,false,2026-06-13T10:18:29+00:00
+LRF863_1_trace_leak_branch,P_loc J_trace != 0,q_loc^nu includes trace endpoint flux,residual_required_if_zero_fails,PPN/clock/WEP/orbital source projection for trace leakage,false,2026-06-13T10:18:29+00:00
+LRF863_2_coframe_pullback_branch,Pi_I^matter != 0,matter stress sources selector/projector equations,residual_required_if_zero_fails,c_g/source-test law or theorem-zero matter-frame descent,false,2026-06-13T10:18:29+00:00
+LRF863_3_projector_stress_branch,F_P_bulk or T_projector survives,retained anisotropic/projector stress modifies exterior metric,residual_required_if_N5_fails,source-normalized PPN residual vector,false,2026-06-13T10:18:29+00:00
+LRF863_4_coupling_ambiguity_branch,finite common-frame coupling survives,"alpha/PPN/clock response depends on whether coupling is zero, one-leg, two-leg, or disformal",blocked_by_630_ambiguity,derive matter-frame variation and source/test current law,false,2026-06-13T10:18:29+00:00

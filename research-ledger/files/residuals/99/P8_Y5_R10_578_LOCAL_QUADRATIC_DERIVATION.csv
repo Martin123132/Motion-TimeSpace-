@@ -1,0 +1,9 @@
+step_id,derivation_step,formula,result,remaining_input,valid_for_claim
+LD578_0_parent_expansion,expand the parent action around the compact local branch,S_X^(2)=1/2 int sqrt(g)[Z_X nabla_i X nabla^i X + M_X^2 X^2] - int sqrt(g) J_X X,conditional_quadratic_form_derived,"parent action must supply numeric Z_X, M_X^2, and source split J_X",false
+LD578_1_static_operator,vary X in the static weak-field exterior,(-Z_X Delta + M_X^2) X = J_X,conditional_operator_derived,Z_X>0 and M_X^2>0 must be parent-owned in the same branch,false
+LD578_2_range_law,canonicalize the operator,mu_X^2=M_X^2/Z_X; lambda_X=1/mu_X=sqrt(Z_X/M_X^2),lambda_law_derived_conditionally,numeric Hessian ratio M_X^2/Z_X is missing,false
+LD578_3_green_function,solve exterior point-source Green function,X(r)=Q_X^H(lambda_X) exp(-r/lambda_X)/(4*pi*Z_X*r),profile_derived_conditionally,projected source charge Q_X^H(lambda_X) must be derived or bounded,false
+LD578_4_test_potential,couple test body to the finite X profile,V_X(r)=-q_X^T X(r); V_N(r)=-G_obs M_H m_T/r,force_ratio_setup_derived,test charge q_X^T and source mass calibration must be parent-owned,false
+LD578_5_alpha_law,divide by Newtonian potential,alpha_X(lambda_X)=s_X Q_X^H q_X^T/(4*pi*Z_X*G_obs*M_H*m_T)=K_X Qbar_XH(lambda_X) qbar_XT,product_law_derived_conditionally,"K_X, Qbar_XH(lambda_X), and qbar_XT remain symbolic",false
+LD578_6_nohair_fork,test theorem-zero alternative,int[Z_X|grad X|^2+M_X^2 X^2]=int_boundary Z_X X n.gradX + int X J_X,conditional_nohair_identity_only,J_X=0 and boundary flux=0 failed to be parent-derived earlier,false
+LD578_7_verdict,combine local law with R10,abs(K_X Qbar_XH(lambda_X) qbar_XT)<=alpha_bound(lambda_X),exact_nonclaim_target_law,derive lambda_X and product coefficients before scoring,false

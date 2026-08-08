@@ -1,0 +1,8 @@
+timestamp_utc,branch_id,checkpoint_id,valid_for_claim,claim_allowed,gate_id,gate,status,implication
+2026-06-21T02:07:07.176524+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,2189,False,False,CG2189_0_inventory,current extra-sector coupling inventory exists,PASS_GUARDRAIL,known local leakage suspects are now explicit rows
+2026-06-21T02:07:07.176530+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,2189,False,False,CG2189_1_coverage,inventory is complete enough for local-GR claim,BLOCKED_NONCLAIM,"this is a current-evidence inventory, not a proof that the whole corpus has no other operators"
+2026-06-21T02:07:07.176535+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,2189,False,False,CG2189_2_double_zero,each inventoried C_i has parent-signed C0 and dC zero,BLOCKED_NONCLAIM,no inventoried sector has a full parent-signed double-zero certificate
+2026-06-21T02:07:07.176543+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,2189,False,False,CG2189_3_gap_boundary,each sector has positive gap/closure and boundary silence,BLOCKED_NONCLAIM,"gap, Ward/Euler, readout and boundary clauses remain open"
+2026-06-21T02:07:07.176548+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,2189,False,False,CG2189_4_PiM,PiM/source-measure parallel blocker is closed,BLOCKED_NONCLAIM,PiM value/derivative/commutator/stress/equality locks remain live
+2026-06-21T02:07:07.176556+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,2189,False,False,CG2189_5_local_GR,full local-GR reduction can be claimed,BLOCKED_NONCLAIM,inventory improves targeting but does not close descent
+2026-06-21T02:07:07.176564+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,2189,False,False,CG2189_6_GitHub,public/github update is triggered,BLOCKED_NONCLAIM,private goal work only; no GitHub action

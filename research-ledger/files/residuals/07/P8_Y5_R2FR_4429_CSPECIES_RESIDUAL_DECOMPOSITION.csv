@@ -1,0 +1,6 @@
+term_id,symbol,meaning,status,formula_piece,valid_for_claim
+CSD4429_0_total,C_species,relative active source coupling from species/material labels,RETAINED_NONCLAIM,C_species = C_block + C_shadow + C_nonHilbert + C_marker_readout,False
+CSD4429_1_block,C_block,disconnected conserved exchange-block source weight,COLLAPSES_TO_COMMON_IF_EXCHANGE_GRAPH_CONNECTED,C_block=0 if all ordinary sectors exchange/bind through one Hilbert current,False
+CSD4429_2_shadow,C_shadow,separate source-shadow functional or source-only weight,LIVE_UNTIL_PARENT_GRAMMAR_EXCLUDES,not exists S_source=sum_A w_A S_A outside S_matter,False
+CSD4429_3_nonHilbert,C_nonHilbert,active source current not equal to total Hilbert/coframe derivative,LIVE_UNTIL_NO_NONHILBERT_BYPASS,J_src = kappa T_Hilbert + J_NH; require J_NH=0,False
+CSD4429_4_marker_readout,C_marker_readout,hidden/material/readout marker re-entry into source coefficient,LIVE_UNTIL_NO_HIDDEN_RETURN,partial_marker F_src=partial_hidden F_src=partial_readout F_src=0,False

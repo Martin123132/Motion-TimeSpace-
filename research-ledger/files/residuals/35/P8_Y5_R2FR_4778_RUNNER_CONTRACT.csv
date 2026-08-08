@@ -1,0 +1,6 @@
+checkpoint,contract_id,runner_rule,purpose,guard,valid_for_claim,timestamp_utc
+4778,RC4778_0_mass_comparator,M_GM_cal=mu_ref/G_cal,computes observed-GM comparator mass,comparator only; never defines M_H^dress,False,2026-07-08T04:06:11+00:00
+4778,RC4778_1_mass_residual,Delta_MH_rel=(M_H^dress-M_GM_cal)/M_GM_cal,tests Hamiltonian/source mass once supplied,blocked if M_H^dress missing,False,2026-07-08T04:06:11+00:00
+4778,RC4778_2_e00_integral,eta_E00=c^2 int|E_00|dV/(8*pi*mu_ref),computes open Poisson residual envelope,blocked if E00 integral or sup/radius missing,False,2026-07-08T04:06:11+00:00
+4778,RC4778_3_e00_sup_target,E00_sup_required=6 mu_ref eta_tol/(c^2 R^3),converts a tolerance into a source-support bound target,target only; not evidence,False,2026-07-08T04:06:11+00:00
+4778,RC4778_4_claim_policy,claim_allowed=false for all runner rows,prevents smoke/counterfactual rows becoming claims,hard-coded nonclaim,False,2026-07-08T04:06:11+00:00

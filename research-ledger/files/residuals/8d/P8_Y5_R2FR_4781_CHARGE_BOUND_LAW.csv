@@ -1,0 +1,7 @@
+checkpoint,law_id,symbol,formula,meaning,claim_allowed,valid_for_claim,timestamp_utc
+4781,CBL4781_0_center,H_tau_center,H_tau_bulk+H_tau_surface,parent charge center before retained residual radius,False,False,2026-07-08T04:29:20+00:00
+4781,CBL4781_1_radius,Delta_H_abs,abs(H_tau_curl)+abs(H_tau_flux)+abs(H_tau_sector)+abs(H_tau_surface_residual)+abs(H_ref_drift)+abs(H_ref_selector),no-cancellation charge uncertainty radius,False,False,2026-07-08T04:29:20+00:00
+4781,CBL4781_2_interval_low,M_low,H_tau_center-H_ref-Delta_H_abs,lower allowed Hamiltonian source mass,False,False,2026-07-08T04:29:20+00:00
+4781,CBL4781_3_interval_high,M_high,H_tau_center-H_ref+Delta_H_abs,upper allowed Hamiltonian source mass,False,False,2026-07-08T04:29:20+00:00
+4781,CBL4781_4_normalized,epsilon_Hcharge,Delta_H_abs/M_lower,dimensionless source-charge uncertainty if M_lower>0,False,False,2026-07-08T04:29:20+00:00
+4781,CBL4781_5_exact_zero,exact pass,Delta_H_abs=0 and M_low>0,only then may a computed parent charge be fed as exact M_Hdress,False,False,2026-07-08T04:29:20+00:00

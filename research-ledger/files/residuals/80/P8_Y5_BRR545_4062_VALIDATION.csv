@@ -1,0 +1,9 @@
+check_id,passed,detail
+VAL4062_00_sources,True,all cited source paths exist and needles are present
+VAL4062_01_csv_parse,True,P8_Y5_R2FR_4062_SOURCE_REGISTER.csv:rows=11; P8_Y5_R2FR_4062_QUADRATIC_REMAINDER_GATE.csv:rows=3; P8_Y5_R2FR_4062_CNORM_NEWTON_G_CALIBRATION_LAW.csv:rows=3; P8_Y5_R2FR_4062_NEWTON_GR_REDUCTION_CONTRACT.csv:rows=4; P8_Y5_R2FR_4062_FALLBACK_BOUND_VECTOR.csv:rows=5; P8_Y5_R2FR_4062_DECISION_GATE.csv:rows=1; P8_Y5_R2FR_4062_CLAIM_GATE.csv:rows=3; P8_Y5_R2FR_4062_NEXT_TARGET.csv:rows=1; P8_Y5_R2FR_4062_STATUS.csv:rows=1
+VAL4062_02_no_public_claim,True,all claim-bearing rows preserve public false
+VAL4062_03_decision,True,decision records quadratic fixed-point fork and c_norm Newton-G calibration
+VAL4062_04_no_numerical_G_claim,True,absolute G prediction is explicitly forbidden
+VAL4062_05_derivative_firewall,True,time/range/source/species derivative hair is routed to zero-or-bound rows
+VAL4062_06_no_formalization_outputs,True,4062 writes only post-checkpoint/source-intake outputs
+VAL4062_07_script_compiles,True,script compiles

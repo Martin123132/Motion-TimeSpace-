@@ -1,0 +1,5 @@
+gate_id,claim,status,reason,valid_for_claim,claim_allowed
+GATE1244_0_policy,nonclaim statistical policy exists,PASS_NONCLAIM,strict one-sigma smoke policy and guardrail are declared,False,False
+GATE1244_1_GM_convention,GM convention contract exists,PASS_NONCLAIM,q_R_hat normalization and future source-body/GM requirements are declared,False,False
+GATE1244_2_qR_value,q_R_hat value exists,BLOCKED,runner policy feed keeps q_R_hat_status=MISSING_QR_VALUE_UNCHANGED,False,False
+GATE1244_3_local_GR,local GR/Newton pass,BLOCKED,policy/convention plumbing is not a Q_R theorem or finite value,False,False

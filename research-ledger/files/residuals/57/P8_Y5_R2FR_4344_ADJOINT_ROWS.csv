@@ -1,0 +1,5 @@
+adjoint_id,name,statement,formula,status,valid_for_claim
+ADJ4344_0_static_operator,static elliptic adjoint collar operator,"On the compact fixed local collar, use the static adjoint problem L_RI^dagger Lambda=0 with Dirichlet/decay/routed boundary data.",L_RI^dagger = -D_i(Z_RI D^i) + M_RI^2 + V_Ric - E_RI,STATIC_COLLAR_OPERATOR_DEFINED,False
+ADJ4344_1_energy_identity,adjoint energy identity,Multiply L_RI^dagger Lambda=0 by Lambda and integrate over the collar.,"0=<Lambda,L_RI^dagger Lambda>=int[Z_RI|D Lambda|^2+(M_RI^2+V_Ric-E_RI)|Lambda|^2]+B_Lambda",DERIVED_ENERGY_IDENTITY,False
+ADJ4344_2_lambda_RI_floor,adjoint no-kernel floor,"If boundary term is zero/nonnegative and the collar Poincare/mass margin is positive, the only homogeneous adjoint solution is zero.","lambda_RI := Z_RI,min lambda_1(D_RI)+M_RI,min^2-Eta_RI > 0 => ||Lambda||=0",CONDITIONAL_ZERO_PROOF_DERIVED,False
+ADJ4344_3_hyperbolic_guard,static proof guard,The coercive proof applies to the fixed static/elliptic local collar only.,hyperbolic/incoming modes require separate I_RI row,FIREWALL_ACTIVE,False

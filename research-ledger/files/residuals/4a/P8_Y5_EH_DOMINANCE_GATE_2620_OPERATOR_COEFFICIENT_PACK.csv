@@ -1,0 +1,10 @@
+row_id,symbol,meaning,definition,units,status,observable_links,valid_for_claim
+OPC2620_0_EH_normalization,a_EH,coefficient multiplying Einstein-Hilbert local operator,S_EH=(a_EH/2) int sqrt(-g)(R-2 Lambda),1/kappa_or_action_units,MISSING_PARENT_NORMALIZATION_AND_G_CALIBRATION,"Newton G, PPN normalization, cosmology background",False
+OPC2620_1_higher_derivative,"c_R2,c_Ricci2,c_boxR",higher-curvature/higher-derivative LHS coefficients,DeltaE_higher=sum c_i O_i_munu,length_power_by_operator,MISSING_OPERATOR_BASIS_UNITS_BOUNDS,"R10 alpha(lambda), PPN, gravitational waves, cosmology",False
+OPC2620_2_projector,c_projector,domain/projector/local readout operator residual,"E_projector or [d,Pi_M]J_H",operator_dependent,MISSING_PROJECTOR_ACTION_VARIATION_OR_BOUND,"measured GM, R10, WEP, orbits",False
+OPC2620_3_boundary_reference,c_boundary,boundary/reference/improvement residual coefficient,DeltaE_boundary or Q_boundary residual,boundary_operator_dependent,MISSING_BOUNDARY_SILENCE_OR_BOUND,"mass charge, orbits, clock potentials",False
+OPC2620_4_nonminimal,c_nonminimal,direct matter-geometry/MTS coupling coefficient,"f(X,Phi)L_m or A(X)J_m",operator_dependent,MISSING_FORBID_THEOREM_OR_BOUND,"WEP, clocks, PPN, R10",False
+OPC2620_5_memory_coframe,"c_memory,c_frame",memory/coframe/preferred-frame local residual coefficients,E_memory + E_coframe,operator_dependent,MISSING_LOCAL_FRAME_LOCK_OR_PPN_BOUND,"PPN alpha_i, clocks, orbits",False
+OPC2620_6_nonlocal_history,"c_nonlocal,K_history",nonlocal/history kernel residual,"E_nonlocal[g,Phi;history]",kernel_or_operator_dependent,MISSING_LOCALITY_REDUCTION_OR_KERNEL_BOUND,"clocks, orbital hysteresis, cosmology growth, wave propagation",False
+OPC2620_7_total_DeltaE,DeltaE_munu,total non-Einstein left-hand residual,DeltaE_munu=sum_i c_i O_i_munu,curvature_operator_units,MISSING_ZERO_THEOREM_OR_BOUNDED_COEFFICIENTS,"PPN, R10, orbital, clocks, cosmology",False
+OPC2620_8_nonclaim_lock,claim_allowed,EH dominance/local-GR claim status,claim_allowed=false until DeltaE_munu is theorem-zeroed or source-backed bounded and source normalization closes,status,NONCLAIM_LOCK,all local arenas,False

@@ -1,0 +1,9 @@
+residual_id,quantity,formula_or_definition,meaning,status,numeric_value,valid_for_claim,timestamp_utc
+ZQS3876_0_total,b_Qstar,b_Qstar <= b_TQ_object + b_NQ_norm + b_CP_owner + b_Qunit_readout + b_level_index + b_patch_norm,finite nonclaim bound for z_Qstar,COMPONENT_BOUND_CONTRACT,MISSING_PARENT_ZERO_OR_SOURCE_BOUND,False,2026-07-01T06:47:57+00:00
+ZQS3876_1_TQ_object,b_TQ_object,0 if parent visible T_Q object/projection is signed; otherwise bounded by projection ambiguity,needed before Qstar can be parent-owned,MISSING_PARENT_OBJECT_OR_BOUND,MISSING_PARENT_ZERO_OR_SOURCE_BOUND,False,2026-07-01T06:47:57+00:00
+ZQS3876_2_NQ_norm,b_NQ_norm,|D_X ln N_Q|,nonrescalable fibre norm/level/index derivative,MISSING_FIXED_NORM_OR_BOUND,MISSING_PARENT_ZERO_OR_SOURCE_BOUND,False,2026-07-01T06:47:57+00:00
+ZQS3876_3_CP_owner,b_CP_owner,|D_X ln C_P|,parent curvature coefficient derivative,MISSING_CP_OWNER_OR_BOUND,MISSING_PARENT_ZERO_OR_SOURCE_BOUND,False,2026-07-01T06:47:57+00:00
+ZQS3876_4_Qunit,b_Qunit_readout,|D_X ln Qstar_readout|,base charge/current unit readout drift,MISSING_QSTAR_CERTIFICATE_OR_BOUND,MISSING_PARENT_ZERO_OR_SOURCE_BOUND,False,2026-07-01T06:47:57+00:00
+ZQS3876_5_level_index,b_level_index,residual freedom in trace/level/lattice index convention,blocks continuous rescale,MISSING_LEVEL_INDEX_CERTIFICATE,MISSING_PARENT_ZERO_OR_SOURCE_BOUND,False,2026-07-01T06:47:57+00:00
+ZQS3876_6_patch_norm,b_patch_norm,norm/domain/readout mismatch contribution,must share domain with z_g/s_XF2/b_alpha runner,MISSING_PATCH_NORM_NUMERICS,MISSING_PARENT_ZERO_OR_SOURCE_BOUND,False,2026-07-01T06:47:57+00:00
+ZQS3876_7_active_runner,z_g_active,z_g_active <= b_Qstar + b_Noether + b_readout + b_source_slot + b_rad,feeds 3875 active runner,RUNNER_UPDATE_NONCLAIM,MISSING_PARENT_ZERO_OR_SOURCE_BOUND,False,2026-07-01T06:47:57+00:00

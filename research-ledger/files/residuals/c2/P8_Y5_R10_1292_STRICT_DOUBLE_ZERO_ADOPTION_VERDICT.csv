@@ -1,0 +1,6 @@
+verdict_id,gate,status,evidence,residual_if_fail,valid_for_claim,claim_allowed
+SDA1292_0_F_form,actual strict F source,FAIL_CURRENT_CORPUS,generic F(m) found; strict F=(m-m_*)^2H exists only as theorem target,KRB1291_0_m_chain_bound;KRB1291_1_Lcg_chain_bound,False,False
+SDA1292_1_m_parent,m parent lock/source profile,FAIL_CURRENT_CORPUS,m=m_*+delta m is conditional; no parent Euler lock/profile source found in inspected rows,MISSING_m_PROFILE;MISSING_F_PRIME_BOUND,False,False
+SDA1292_2_Lcg_parent,L_cg parent definition/safe lower bound,FAIL_CURRENT_CORPUS,L_cg/ell_tr action-map rows explicitly keep transition-scale ownership open,MISSING_LCG_LOWER_BOUND;MISSING_M_L_00_BOUND,False,False
+SDA1292_3_boundary_gradient,gradient and boundary/domain closure,FAIL_CURRENT_CORPUS,801 gradient warning and 1291 CDB residual rows remain open,MISSING_GRADIENT_POWER_PROOF;MISSING_K_CONN_DOMAIN_BOUNDARY_BOUNDS,False,False
+SDA1292_4_overall,strict double-zero adoption,NOT_ADOPTED_RESIDUAL_RUNNER_INPUT_REQUIRED,"F, m, L_cg, gradient, and CDB gates fail current-corpus source-match",RRI1292_0..3,False,False

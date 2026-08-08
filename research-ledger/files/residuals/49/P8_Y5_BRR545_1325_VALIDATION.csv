@@ -1,0 +1,11 @@
+check_id,check,status,details
+VAL1325_0_sources_exist,registered source paths exist and anchors are found,PASS,13/13 source anchors found
+VAL1325_1_branches_decomposed,"WEP decomposition covers alpha factorized, alpha direct, source-weight, and full tensor branches",PASS,alpha_Coulomb_direct;alpha_Coulomb_smoke;full_parent_basis;relative_source_weight
+VAL1325_2_input_matrix_covers_coupling_gap,first-fill matrix includes available anchors and missing coupling/readout inputs,PASS,IN1325_0_eta_bound;IN1325_1_alpha_product_threshold;IN1325_2_deltaQ_alpha_smoke;IN1325_3_deltaQ_surface_smoke;IN1325_4_beta_source_alpha;IN1325_5_balpha;IN1325_6_tau_WEP;IN1325_7_delta_w;IN1325_8_readout_arrays;IN1325_9_direct_product
+VAL1325_3_runner_refuses_all_branches,runner refuses all current WEP branches and scores nothing,PASS,RUN1325_0_alpha_coulomb_factorized=required coupling/readout inputs missing; smoke material delta is not a prediction;RUN1325_1_source_weight_relative=Delta_w_TiPt and tau_WEP/readout/source profile not sourced;RUN1325_2_direct_wep_product=direct parent product not derived or sourced
+VAL1325_4_blockers_recorded,"blocker ledger records coupling, tau, readout, and direct-product missing objects",PASS,BLK1325_0_beta_source_alpha;BLK1325_1_balpha;BLK1325_2_tau_WEP;BLK1325_3_delta_w;BLK1325_4_readout_arrays;BLK1325_5_direct_product
+VAL1325_5_shortcuts_enforced,anti-shortcut gates are enforced,PASS,SHORT1325_0_no_unity_couplings;SHORT1325_1_no_threshold_prediction;SHORT1325_2_no_smoke_tensor_claim;SHORT1325_3_no_cancellation_pass;SHORT1325_4_no_cross_arena_transfer
+VAL1325_6_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1325_7_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1325_8_next_target_1326,next target routes to source-weight owner zero or finite Delta_w prior,PASS,1326-Y5-R10-RAB-WEP-source-weight-owner-zero-or-finite-Delta-w-prior.md
+VAL1325_9_overall,overall 1325 validation,PASS,"1325 decomposes WEP source-normalization, refuses all branches, and selects source-weight owner/Delta_w next"

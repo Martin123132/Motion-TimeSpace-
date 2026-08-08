@@ -1,0 +1,7 @@
+gate_id,gate,status,reason,valid_for_claim,claim_allowed
+GATE1387_0_sources,all cited sources exist and anchors are present,PASS,source register validates against local corpus,False,False
+GATE1387_1_exclusion_attempt,action-weight exclusion is attempted,PASS_ATTEMPTED,"object-language, action-measure, current-owner, and connectedness routes are audited",False,False
+GATE1387_2_counterexample,w_A counterexample is killed,BLOCKED_COUNTEREXAMPLE_SURVIVES,object-language and action-measure owners remain unsigned; current owner cannot kill pre-variation weights,False,False
+GATE1387_3_first_fill,Delta_w/beta_source first-fill rows exist,PASS_NONCLAIM_FIRST_FILL,DWB1387 rows convert the counterexample into explicit source-beta/source-normalization inputs,False,False
+GATE1387_4_numeric,finite source beta/action-weight rows can score,BLOCKED_VALUES_MISSING,"Delta_w_A, beta_w,S, beta_w,T, convention, material map, and arena kernels are missing",False,False
+GATE1387_5_local_claim,local GR / Newton / PPN / R10 / WEP pass can be claimed,BLOCKED_NO_CLAIM,"1387 is an exclusion audit and nonclaim first-fill pack, not a derived GR limit",False,False

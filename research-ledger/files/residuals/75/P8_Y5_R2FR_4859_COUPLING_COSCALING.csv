@@ -1,0 +1,9 @@
+row_id,equation,meaning,status,valid_for_claim,timestamp_utc
+CO4859_0_fixed,"d=r p with 0<r<=1/3 and fixed beta_u!=0 gives C_V,C_S proportional to beta_u^2/p",the exact-GR endpoint is radiatively singular at fixed direct coupling,FAIL_UNIFORM_ENDPOINT,False,2026-07-10T01:10:00+01:00
+CO4859_1_gate,beta_u=zeta p with finite zeta,minimal coupling regularity condition,DERIVED_NECESSARY_SCALING_FOR_THIS_LINEAR_SECTOR,False,2026-07-10T01:10:00+01:00
+CO4859_2_flow,lim R_W=-(zeta - 1)/(r + 1),internal transverse flow stays finite,PASS,False,2026-07-10T01:10:00+01:00
+CO4859_3_metric,delta_B=-r zeta p/(1+r) -> 0,stationary metric residual vanishes,PASS,False,2026-07-10T01:10:00+01:00
+CO4859_4_vector,lim(C_V/p)=16*sqrt(r)*(zeta - 1)**2/(3*(r + 1)**2),sourced vector dipole coefficient vanishes linearly,PASS,False,2026-07-10T01:10:00+01:00
+CO4859_5_scalar,lim(C_S/p)=sqrt(3)*sqrt(r)*zeta**2*(r + 1),direct scalar dipole coefficient vanishes linearly,PASS,False,2026-07-10T01:10:00+01:00
+CO4859_6_special,zeta=1 cancels the transverse EM spin-1 source but not the direct scalar self-channel,do not promote beta_u=p to full radiation silence,GUARD,False,2026-07-10T01:10:00+01:00
+CO4859_7_origin,no parent symmetry or coefficient equation yet derives finite zeta=beta_u/p,regularity selects a scaling law but does not explain it,OPEN_PARENT_ORIGIN,False,2026-07-10T01:10:00+01:00

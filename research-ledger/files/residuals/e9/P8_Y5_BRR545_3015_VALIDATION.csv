@@ -1,0 +1,13 @@
+validation_id,passed,requirement,evidence
+VAL3015_00_sources_exist,True,every cited local source path exists,P8_Y5_R2FR_3015_SOURCE_REGISTER.csv
+VAL3015_01_csv_parse,True,generated CSV rows parse cleanly,all generated CSV artifacts import with csv.DictReader
+VAL3015_02_comparators_linked,True,PPN comparator rows are linked but not promoted as predictions,P8_Y5_R2FR_3015_PPN_COMPARATOR_LINKS.csv
+VAL3015_03_kernel_contracts_written,True,component PPN kernel contracts are explicit with blockers,P8_Y5_R2FR_3015_PPN_KERNEL_CONTRACT.csv
+VAL3015_04_fixed_GM_guard_active,True,fixed measured-GM no-absorb guard is active,P8_Y5_R2FR_3015_FIXED_GM_GUARD.csv
+VAL3015_05_prediction_not_valid,True,no valid PPN prediction row is claimed,P8_Y5_R2FR_3015_PROMOTION_GATES.csv
+VAL3015_06_claims_blocked,True,PPN/local-GR claims remain blocked,P8_Y5_R2FR_3015_PROMOTION_GATES.csv
+VAL3015_07_missing_markers_nonclaim,True,rows with MISSING markers are never valid_for_claim=true,all 3015 generated ledgers
+VAL3015_08_outputs_scoped,True,no generated file is outside post-checkpoint-work,generated path scope check
+VAL3015_09_formalization_not_targeted,True,formalization-workbench is not modified by this checkpoint,output target list excludes formalization-workbench
+VAL3015_10_next_target_selected,True,next target selects gamma and alpha3 PPN kernel derivation,P8_Y5_R2FR_3015_NEXT_TARGET.csv
+VAL3015_99_overall,True,all 3015 validation checks pass,aggregate of VAL3015_00 through VAL3015_10

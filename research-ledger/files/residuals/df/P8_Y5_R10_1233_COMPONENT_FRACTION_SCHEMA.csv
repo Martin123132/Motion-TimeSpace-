@@ -1,0 +1,10 @@
+field,required,type_or_rule,allowed_values_or_units,blocks_acceptance_if_missing,valid_for_claim,claim_allowed
+row_id,True,stable unique string,prefix CFI1233 or future checkpoint id,True,False,False
+material_id,True,"one of TA6V, PtRh10, or explicit alloy/source body",TA6V;PtRh10;Earth_source;custom_with_source,True,False,False
+component_id,True,must map to DCW1231 component basis,electron;light_quark;QCD_gluon;EM_Coulomb;nuclear_surface;measure_readout,True,False,False
+fraction_value,True,finite numeric >=0 unless signed residual explicitly justified,dimensionless energy/mass fraction,True,False,False
+fraction_uncertainty,True,finite numeric >=0 or sourced upper-bound convention,dimensionless,True,False,False
+basis_convention,True,names parent/MTS basis or external phenomenological basis,MTS_parent_basis;external_DD;external_mass_budget;other_with_source,True,False,False
+source_path_or_url,True,local path or URL/DOI recorded with provenance,must not be blank or MISSING,True,False,False
+extraction_method,True,explicit formula/table/digitization/derivation note,table;formula;digitized;parent_derivation;manual_with_audit,True,False,False
+valid_for_claim,True,must remain false at intake stage,False,True,False,False

@@ -1,0 +1,10 @@
+validation_id,check,status,details
+VAL1369_0_sources,every cited local source path exists and anchor is found,PASS,SRC1369_0_1368_doc exists=True anchor=True; SRC1369_1_1368_next exists=True anchor=True; SRC1369_2_1368_kernel exists=True anchor=True; SRC1369_3_1368_projection exists=True anchor=True; SRC1369_4_798_gamma exists=True anchor=True; SRC1369_5_1289_chain exists=True anchor=True; SRC1369_6_1299_trace exists=True anchor=True; SRC1369_7_776_kgamma exists=True anchor=True; SRC1369_8_1181_cassini exists=True anchor=True; SRC1369_9_1244_policy exists=True anchor=True; SRC1369_10_1244_doc exists=True anchor=True
+VAL1369_1_fixed_scale_lemma,fixed-parameter L_cg silence lemma is captured as exact but unsigned,PASS,LCGH1369_1 derives M_L=0 only under a parent-fixed parameter contract
+VAL1369_2_no_parent_definition,registered evidence does not yet contain a live L_cg parent definition,PASS,LCGH1369_5 remains NOT_FOUND_IN_REGISTERED_SOURCES
+VAL1369_3_counterbranches,metric-composite L_cg counterbranches are retained,PASS,"volume, curvature, and density/source routes are not automatically silent"
+VAL1369_4_projection_schema,q_loc-to-gamma runner schema exists but refuses missing inputs,PASS,QG1369 schema plus SMOKE1369 placeholder block prevent false PPN scoring
+VAL1369_5_no_claim_rows,all new rows keep valid_for_claim=false and claim_allowed=false,PASS,1369 is a derivation/projection discipline checkpoint
+VAL1369_6_local_claim_blocked,local GR / PPN claim remains blocked,PASS,GATE1369_4_local_GR_or_PPN_claim remains BLOCKED_NO_CLAIM
+VAL1369_7_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1369_SOURCE_REGISTER.csv:11; P8_Y5_R10_1369_LCG_PARENT_DEFINITION_HUNT.csv:6; P8_Y5_R10_1369_LCG_METRIC_RESPONSE_DERIVATION_LEDGER.csv:5; P8_Y5_R10_1369_QLOC_GAMMA_RUNNER_SCHEMA.csv:5; P8_Y5_R10_1369_QLOC_GAMMA_SMOKE_RESULT.csv:1; P8_Y5_R10_1369_CLAIM_GATE.csv:5; P8_Y5_R10_1369_DECISION_LEDGER.csv:3; P8_Y5_R10_1369_NEXT_TARGET.csv:1
+VAL1369_8_overall,overall 1369 validation,PASS,"1369 proves the fixed-scale route conditionally, rejects automatic silence for geometric L_cg routes, and builds a blocked q_loc-gamma schema."

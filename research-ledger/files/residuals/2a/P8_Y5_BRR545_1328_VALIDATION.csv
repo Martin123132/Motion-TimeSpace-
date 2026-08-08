@@ -1,0 +1,13 @@
+check_id,check,status,details
+VAL1328_0_sources_exist,registered local source paths exist and anchors are found,PASS,9/9 source anchors found
+VAL1328_1_public_sources_staged,public source candidate rows have URL/DOI provenance,PASS,public_source_rows=8
+VAL1328_2_route_matrix_coverage,component source route matrix covers six components for both materials,PASS,route_rows=12
+VAL1328_3_no_raw_placeholders,placeholder candidate rows are not placed in raw validator intake,PASS,raw_1328_candidate_files=0;candidate_pack=docs
+VAL1328_4_existing_validator_zero,existing component validator remains at zero accepted rows,PASS,dryrun_status=NO_CANDIDATE_FILES_PRESENT;accepted_rows=0
+VAL1328_5_graph_edges_refused,graph edge owner reentry records no connected graph edge counts,PASS,EDGE1232_0_electron_photon=BLOCKED_BY_CERTIFICATE_NOT_DERIVED;EDGE1232_1_quark_photon=PENDING;EDGE1232_2_quark_gluon=DEEPENED_BUT_NOT_SIGNED;EDGE1328_3_readout_matter=REENTRY_STAGED_NOT_SIGNED
+VAL1328_6_runner_refuses,Delta_w runner remains refused for source and graph routes,PASS,RUN1328_0_source_acquisition=REFUSED_NOT_SCOREABLE;RUN1328_1_graph_reentry=REFUSED_NO_CONNECTED_GRAPH
+VAL1328_7_shortcuts_enforced,anti-shortcut gates are enforced,PASS,SHORT1328_0_no_source_url_as_fraction;SHORT1328_1_no_external_DD_as_parent_MTS;SHORT1328_2_no_placeholder_raw_rows;SHORT1328_3_no_template_edge_count;SHORT1328_4_no_local_GR_claim
+VAL1328_8_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1328_9_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1328_10_next_target_1329,next target routes to electron fraction extractor or DD basis demotion,PASS,1329-Y5-R10-RAB-electron-fraction-extractor-dryrun-or-DD-basis-map-demotion.md
+VAL1328_11_overall,overall 1328 validation,PASS,1328 stages source acquisition and narrows graph reentry while preserving nonclaim gates

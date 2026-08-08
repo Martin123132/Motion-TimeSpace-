@@ -1,0 +1,5 @@
+bound_id,quantity,bound_formula,zero_limit,missing_inputs,status,claim_allowed,valid_for_claim
+RDB3459_0_Z_amplitude,||Z||,||Z|| <= (||J|| + sqrt(||J||^2 + 4 lambda_min |B_flux|))/(2 lambda_min),J=0 and B_flux=0 imply Z=0,lambda_min;J_norm;B_flux_norm;domain_U;norm_convention;source_path,FORMULA_DERIVED_INPUTS_MISSING,False,False
+RDB3459_1_q_loc_Hilbert_branch,Q_q_loc,Q_q_loc <= N_P [Q_source_work + Q_boundary_flux] when K_hat=K_H; add Q_DeltaK if old K_hat remains independent,"source work, boundary flux and Delta_K all zero",N_P;Q_source_work;Q_boundary_flux;Q_DeltaK;P_loc definition,RESIDUAL_BOUND_STRUCTURE_READY,False,False
+RDB3459_2_second_order_stress_tail,T_GK local tail,||T_GK|| <= C_T ||Z||^2 + C_grad ||nabla Z||^2 plus boundary/improvement terms,Z=0 and boundary/improvement zero,C_T;C_grad;gradient elliptic estimate;boundary term,TAIL_BOUND_TEMPLATE_READY,False,False
+RDB3459_3_PPN_envelope,delta_PPN from q_loc,|delta gamma_PPN| <= c^2 N_G N_D Q_q_loc/(2 U_min),Q_q_loc=0,N_G;N_D;U_min;metric solution map,PPN_MAP_STILL_MISSING,False,False

@@ -1,0 +1,14 @@
+check_id,check,passed,detail
+VAL3397_0_sources_exist_parse,all cited 3397 source paths exist and parse,true,
+VAL3397_1_outputs_parse,all generated CSV outputs parse cleanly,true,parsed=11 expected=11
+VAL3397_2_vector_contract,"PPN vector contract covers gamma, beta, alpha_i, zeta_i and xi",true,parameters=10
+VAL3397_3_dependency_matrix,dependency matrix covers every PPN parameter,true,dependency_params=10
+VAL3397_4_input_schema,input schema includes source-normalization and vector-specific residuals,true,
+VAL3397_5_readiness_blocks_scoring,readiness gate blocks scoring overall,true,
+VAL3397_6_firewall,"scoring firewall blocks gamma-only, beta-only, preferred-frame, conservation and empirical claims",true,rows=5
+VAL3397_7_runner,"runner records vector, dependencies, readiness block and firewall",true,
+VAL3397_8_gates,"gates pass vector definition but block adoption, bounds, empirical PPN and local GR",true,
+VAL3397_9_no_overclaim_flags,all generated rows with valid_for_claim remain false,true,
+VAL3397_10_write_scope_outside_formalization,no 3397 files were written under formalization-workbench,true,hits=0
+VAL3397_11_next_target,next target moves to finite source-normalization bound pack,true,
+VAL3397_12_overall,3397 validation overall,true,all required checks passed

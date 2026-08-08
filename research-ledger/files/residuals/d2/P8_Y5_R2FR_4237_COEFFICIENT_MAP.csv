@@ -1,0 +1,6 @@
+timestamp_utc,branch_id,checkpoint_id,coefficient_map_id,coefficient,exact_row,safe_bound,meaning,status,claim_allowed,valid_for_claim
+2026-07-03T09:00:50+00:00,MTS_R2FR_Y5_AJ_SOURCE_COEFFICIENT_THEOREM_4237,4237,CM4237_0_A_src_exact,A_src,sup_local |S_A H_L^A|,sup_local C_S C_H or C_D C_S,"source-current contraction, not a free amplitude",open_source_current_projection,False,False
+2026-07-03T09:00:50+00:00,MTS_R2FR_Y5_AJ_SOURCE_COEFFICIENT_THEOREM_4237,4237,CM4237_1_A_lap_exact,A_lap,sup_local |D_m Delta_h M_2|,D_m C_M C_lap/L_B^2,Laplacian of the leakage-shape scalar,open_shape_laplacian,False,False
+2026-07-03T09:00:50+00:00,MTS_R2FR_Y5_AJ_SOURCE_COEFFICIENT_THEOREM_4237,4237,CM4237_2_A_drift_exact,A_drift,sup_local |D_t M_2|,C_M C_t/T_B,Time drift of the same leakage-shape scalar,open_shape_drift,False,False
+2026-07-03T09:00:50+00:00,MTS_R2FR_Y5_AJ_SOURCE_COEFFICIENT_THEOREM_4237,4237,CM4237_3_AJ_exact,A_J_eff_private,sup_local |S_A H_L^A + D_m Delta_h M_2 - D_t M_2|,A_src + A_lap + A_drift,combined private compact coefficient without cancellation credit,derived_symbolic_bound,False,False
+2026-07-03T09:00:50+00:00,MTS_R2FR_Y5_AJ_SOURCE_COEFFICIENT_THEOREM_4237,4237,CM4237_4_no_cancellation,absolute_budget,|x+y-z| <= |x|+|y|+|z|,no cancellation used,prevents fake pass by tuned source/lap/drift cancellation,active_guard,False,False

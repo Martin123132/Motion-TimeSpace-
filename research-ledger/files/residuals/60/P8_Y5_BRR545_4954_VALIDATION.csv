@@ -1,0 +1,37 @@
+check_id,requirement,expected,actual,passed,validation_marker
+VAL4954_00_research,research runner completes,0,0,True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_01_paths,"all source, output and document paths exist",[],[],True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_02_marker,result and every evidence row use the checkpoint marker,MTS_4954_OFFSHELL_X2_X3_NUMBER_CHANGE_GATE,MTS_4954_OFFSHELL_X2_X3_NUMBER_CHANGE_GATE,True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_03_nonclaim,all evidence rows remain private nonclaim,True,True,True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_04_hashes,all source locks independently recompute,[],[],True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_05_clauses,all parent and 2PI source clauses are located,True,"{'4941_X2_essential': True, '4941_six_derivative_block_open': True, '4952_parent_pair_kernel': True, '4953_22_number_invariant': True, '4953_offshell_target': True, 'Berges_four_channels': True, 'Berges_only_22_infinite_time': True, 'Berges_preBoltzmann_equation': True, 'Berges_quasiparticle_removes_main_offshell': True}",True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_06_channels,four finite-time sign channels are exact,"{'0<->4': 'DeltaE=Ep+Eq+Ek+Es', '1<->3': 'DeltaE=Ep+Eq+Ek-Es', '2<->2': 'DeltaE=Ep+Eq-Ek-Es', '3<->1': 'DeltaE=Ep-Eq-Ek-Es'}","{'parent source plus self-energy': 'p^mu nabla_mu f=C_2PI[f]+S_pair', '0<->4': 'DeltaE=Ep+Eq+Ek+Es', '1<->3': 'DeltaE=Ep+Eq+Ek-Es', '2<->2': 'DeltaE=Ep+Eq-Ek-Es', '3<->1': 'DeltaE=Ep-Eq-Ek-Es', 'finite preparation': 'box switching has |G_T(DeltaE)|2~DeltaE^-2', 'persistent off-shell spectral width': 'delta=Gamma/E; tau_coh=1/Gamma'}",True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_07_preBoltzmann,all finite-time kernel rows pass,7 pass,7,True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_08_gaussian_shape,four independent finite Gaussian replicas exist,4 x 2^18,4,True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_09_C13,C13 independently recomputes from angular mean,6.066094386569174e-06,6.066094386569174e-06,True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_10_C13_error,C13 standard error independently recomputes,1.5811792112685815e-10,1.5811792112685815e-10,True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_11_radial,analytic Gaussian radial integral equals 32,32.0,32.0,True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_12_unitarity,smooth-preparation numerator uses the 4953 unitarity ceiling,2.1553182667838363e-05,2.1553182667838363e-05,True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_13_gaussian_rows,all analytic preparation rows pass,6 pass,6,True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_14_phase_shape,eight independent RAMBO replicas exist,8 x 2^16,8,True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_15_phase_accuracy,RAMBO rows conserve four-momentum and remain massless,<1e-12,True,True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_16_C0,exchange coefficient independently recomputes,2.020369322849811e-06,2.020369322849811e-06,True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_17_C1,interference coefficient independently recomputes,-2.094769338605941e-06,-2.094769338605941e-06,True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_18_C2,contact coefficient independently recomputes,5.444348636923915e-07,5.444348636923915e-07,True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_19_minimum,phase-integrated X3 interference minimum stays positive,>0,5.409005924347081e-09,True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_20_ratio,exchange 2-to-4 over 2-to-2 prefactor independently recomputes,4.533698158716536e-06,4.533698158716536e-06,True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_21_combinatorics,ten 3+3 partitions and fifteen perfect matchings are complete,10;15,10;15,True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_22_amplitude,all six-point structure rows pass and X3 is mandatory,7 pass,7,True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_23_sparc_formulas,every galaxy preparation and controlled-envelope row recomputes,0,0,True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_24_sparc_shape,six injection cases exist for each of 175 public galaxies,1050,1050,True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_25_finite_gate,all positive high-frequency rows fail smooth preparation,692/692,692/692,True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_26_controlled_gate,all positive high-frequency rows fail the generous controlled envelope,692/692,692/692,True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_27_maxima,reported high-frequency maxima independently reproduce,True,True,True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_28_local,both compact smooth-preparation comparators recompute,2 rows;0 failures,2 rows;0 failures,True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_29_decisions,decision table contains every required route status,"['4947_LOCAL_BRANCH_RETAINED', 'CONTROLLED_HIGH_FREQUENCY_ROUTE_REJECTED', 'EXCHANGE_ONLY_24_DERIVED', 'FINITE_TIME_KERNEL_DERIVED', 'FULL_MTS_PROMOTION_BLOCKED', 'MANDATORY_X3_PARENT_COORDINATE_IDENTIFIED', 'PARENT_SIX_DERIVATIVE_FLOW_NEXT', 'SHARP_SWITCH_ROUTE_REJECTED', 'SMOOTH_FINITE_PREPARATION_ROUTE_REJECTED', 'STRONG_NONQUASIPARTICLE_ROUTE_OPEN']","['4947_LOCAL_BRANCH_RETAINED', 'CONTROLLED_HIGH_FREQUENCY_ROUTE_REJECTED', 'EXCHANGE_ONLY_24_DERIVED', 'FINITE_TIME_KERNEL_DERIVED', 'FULL_MTS_PROMOTION_BLOCKED', 'MANDATORY_X3_PARENT_COORDINATE_IDENTIFIED', 'PARENT_SIX_DERIVATIVE_FLOW_NEXT', 'SHARP_SWITCH_ROUTE_REJECTED', 'SMOOTH_FINITE_PREPARATION_ROUTE_REJECTED', 'STRONG_NONQUASIPARTICLE_ROUTE_OPEN']",True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_30_result,result keeps X3 and strong 2PI open without full-MTS promotion,True,"{'X2_exchange_24': 'DERIVED', 'X2_only_complete_24': False, 'controlled_high_frequency_route': 'REJECTED', 'direct_profile_formation_amplitude': 'OPEN', 'full_MTS': False, 'local_GR_Newton_Maxwell_4947': 'RETAINED', 'mandatory_next_coordinate': 'd3_X3', 'sharp_switch_finite_time_route': 'REJECTED_UV_SENSITIVE', 'smooth_single_preparation_13_route': 'REJECTED_ON_EXECUTED_HIGH_FREQUENCY_ROWS', 'strong_nonquasiparticle_X2_X3_2PI': 'OPEN'}",True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_31_documents,checkpoint 4954 is synchronized across all registers,True,True,True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_32_prohibitions,new synchronized text contains no placeholder or promotion marker,[],[],True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_33_provenance,provenance records every locked source hash,True,True,True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_34_pycache,no script bytecode cache remains,[],[],True,MTS_4954_INDEPENDENT_VALIDATION
+VAL4954_35_complete,all preceding independent checks pass,True,True,True,MTS_4954_INDEPENDENT_VALIDATION

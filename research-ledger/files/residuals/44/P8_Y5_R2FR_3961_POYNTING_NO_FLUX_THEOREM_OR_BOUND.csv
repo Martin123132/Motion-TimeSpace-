@@ -1,0 +1,5 @@
+row_id,theorem_piece,formula,derived_result,status,valid_for_claim,timestamp_utc
+PNF3961_0_identity,Poynting identity,dU_EM/dt + integral_boundary S_Poynting dot n dA = - integral_D J dot E dV,boundary EM flux is controlled by field energy change plus matter work,DERIVED_IDENTITY,False,2026-07-01T15:02:41+00:00
+PNF3961_1_stationary_zero,stationary isolated no-flux theorem,time_avg(dU_EM/dt)=0 and time_avg(integral_D J dot E)=0 => time_avg(Phi_EM_rad)=0,compact stationary non-radiating local branch has no net Poynting boundary source,POYNTING_ZERO_CONDITIONAL,False,2026-07-01T15:02:41+00:00
+PNF3961_2_flux_bound,nonstationary flux bound,"|Phi_EM_rad| <= |dU_EM/dt| + |W_matter|, W_matter:=integral_D J dot E dV","if the local branch radiates or sits in a background flux, the leakage is bounded by energy/work terms",DERIVED_FLUX_BOUND_TEMPLATE,False,2026-07-01T15:02:41+00:00
+PNF3961_3_branch_warning,branch warning,"Phi_EM_rad=0 is not valid for radiating binaries, driven lab systems, or boundaries through external radiation","no-flux is a local stationary branch condition, not a universal EM truth",NO_UNIVERSAL_CLAIM,False,2026-07-01T15:02:41+00:00

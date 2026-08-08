@@ -1,0 +1,5 @@
+case_id,description,branch_type,value_mode,q_R_hat,N_sigma,sigma_gamma,GM_convention_status,source_status,expected_status,valid_for_claim,claim_allowed
+CASE1245_0_policy_fed_missing_qR,finite MTS row after policy feed; only q_R_hat/source theorem remains missing,finite_residual,missing_source,MISSING_QR_VALUE,1,2.3e-5,DECLARED_CONTRACT_ONLY,missing_finite_qR_or_zero_theorem,REFUSED_MISSING_QR,False,False
+CASE1245_1_policy_fed_comparator_only,"Cassini comparator plus 1244 policy, still without an MTS q_R_hat prediction",finite_residual,comparator_only,MISSING_QR_VALUE,1,2.3e-5,DECLARED_CONTRACT_ONLY,comparator_available_prediction_missing,REFUSED_COMPARATOR_ONLY,False,False
+CASE1245_2_policy_fed_hypothetical_pass,synthetic q_R_hat inside strict guardrail; proves arithmetic only,finite_residual,numeric_value,1.0e-5,1,2.3e-5,DECLARED_CONTRACT_ONLY,hypothetical_schema_math_only,SCHEMA_MATH_ONLY_NOT_EVIDENCE,False,False
+CASE1245_3_policy_fed_hypothetical_fail,synthetic q_R_hat outside strict guardrail; proves fail path only,finite_residual,numeric_value,5.0e-5,1,2.3e-5,DECLARED_CONTRACT_ONLY,hypothetical_schema_math_only,SCHEMA_MATH_ONLY_NOT_EVIDENCE,False,False

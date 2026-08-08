@@ -1,0 +1,6 @@
+gate_id,gate,current_result,promotes_if,valid_for_claim
+PG3413_0_formal_double_zero,response-doublet density gives F1=0 at Z=0,PASS_FORMAL_CONDITIONAL,not a claim gate,False
+PG3413_1_component_coverage,Z^A covers all physical local residual components Y0-Y6,FAIL_Y5_Y6_AND_OPEN_ROWS,Y0-Y6 all become theorem-zero/source-neutral or explicitly bounded,False
+PG3413_2_metric_response_match,K_metric from constructed density equals live K_hat,FAIL_DELTA_K_RETAINED,Delta_K=0 by symbol match or is bounded below local locks,False
+PG3413_3_source_neutrality,linear source/boundary terms J_A and B_A vanish,FAIL_Y5_SOURCE_AND_Y6_STRESS,source-normalization and extra-stress owner theorems pass,False
+PG3413_4_q_loc_local_GR,q_loc no longer blocks local GR,BLOCKED,"PG3413_1, PG3413_2 and PG3413_3 pass",False

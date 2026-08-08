@@ -1,0 +1,8 @@
+formula_id,name,formula,status
+F4331_0_readout_zero,quotient-natural readout zero,R_obs(Phi)=Rbar(q(Phi)) and Hperp in ker(Dq) => D_Hperp R_obs = DRbar[Dq(Hperp)] = 0,CONDITIONAL_ZERO_DERIVED
+F4331_1_pure_postprocessing_guard,no readout reentry,readout_after_variation and no readout slot in S_parent/S_eff => epsilon_readout_frame=0,CONDITIONAL_ZERO_DERIVED
+F4331_2_terminal_reject,terminal shortcut rejection,terminal e_pub exists does not imply no A_g/B_dis/h_perp/readout frame slot in S_matter or S_EM,REJECTED_SHORTCUT
+F4331_3_terminal_action_domain_zero,terminal/action-domain zero,e_obs=e_bar(q) used in the action domain and no separate terminal-to-matter frame map => epsilon_terminal=0,CONDITIONAL_ZERO_DERIVED_NOT_SHORTCUT
+F4331_4_projection_bound,open projection/readout envelope,epsilon_projection_open <= |R_post_action_reentry| + |R_terminal_shortcut| + |R_projector_fit| + |R_source_readout_reentry| + sum_a |Pi_a R_a|,BOUND_RETAINED_OUTSIDE_BRANCH
+F4331_5_geometry_core_update,geometry core after readout-terminal reduction,epsilon_geom_core <= C_EMopen epsilon_EM_open_boundary + C_coeff_open epsilon_coeff_open + C_proj epsilon_projection_open + tail_guard_sum,REDUCED_BUT_OPEN
+F4331_6_source_readout_update,source-readout after readout-terminal reduction,epsilon_source_readout <= (L_T L_mg + L_g) epsilon_geom_core_after_projection + Xi_src_hidden,NONCLAIM_HANDOFF_TO_XI

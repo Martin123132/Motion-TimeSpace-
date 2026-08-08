@@ -1,0 +1,11 @@
+same_parent_branch_id,spec_id,field_or_gate,requirement,failure_rule,score_ready,valid_prediction_row,valid_for_claim,claim_allowed
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,BVS1594_0_branch,same_parent_branch_id,must equal MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,reject mismatched branch or blank branch,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,BVS1594_1_identity,quantity;definition,"must declare source/test leg, product, weight, kernel, or tail with explicit convention",reject vague coupling symbols,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,BVS1594_2_units,required_units,"must be concrete beta, dimensionless, kernel, or arena residual units",reject missing or placeholder units,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,BVS1594_3_source,source_path;source_anchor;extraction_method,must cite a local source and how the value/theorem was obtained,"reject missing, toy, proxy, or unsourced rows",False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,BVS1594_4_beta_convention,beta_convention,must state canonical normalization and whether source/test legs are already packed,reject linear-coupling shortcuts,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,BVS1594_5_arena,arena_map;observable_links,must name R10/PPN/WEP/clock/orbital/Newton map and kernel role,reject no-arena rows,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,BVS1594_6_status,current_status,"must be SOURCE_BACKED_NUMERIC, THEOREM_ZERO_PARENT_SIGNED, or EXPLICIT_BOUND_SOURCE_BACKED","reject MISSING, TEMPLATE, NONCLAIM, TOY, PLACEHOLDER",False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,BVS1594_7_flags,valid_for_claim;claim_allowed;score_ready,may be true only if all previous gates pass,default false,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,BVS1594_8_no_absorption,measured_G_guard,must prove common derivative-silent factor before any G_N absorption,reject relative or phi-dependent absorption,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,BVS1594_9_verdict,validator policy,strict validator is ready and should be used before every local score,current 1593 beta rows are expected to fail,False,False,False,False

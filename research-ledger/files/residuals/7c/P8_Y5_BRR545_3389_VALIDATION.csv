@@ -1,0 +1,13 @@
+check_id,check,passed,detail
+VAL3389_0_sources_exist_parse,all cited 3389 source paths exist and parse,true,
+VAL3389_1_outputs_parse,all generated CSV outputs parse cleanly,true,parsed=10 expected=10
+VAL3389_2_compact_audit,compact audit allows route but blocks current adoption,true,
+VAL3389_3_scale_schema,scale schema covers all required 3388 scale inputs,true,
+VAL3389_4_target_summary,target summary rows exist for response products,true,rows=8
+VAL3389_5_scenarios,"scenario runner includes compact, clean Gaussian, and failure modes",true,
+VAL3389_6_runner,"runner records compact audit, schema, target summary, smoke scenarios and firewall",true,
+VAL3389_7_gates,"gates block compact adoption, Gaussian values, boundary/kernel claim and local PPN while runner executes",true,
+VAL3389_8_no_overclaim_flags,all generated rows with valid_for_claim remain false,true,
+VAL3389_9_next_target,next target moves to local scale acquisition or compact transfer replacement,true,
+VAL3389_10_write_scope_outside_formalization,no 3389 files were written under formalization-workbench,true,hits=0
+VAL3389_11_overall,3389 validation overall,true,all required checks passed

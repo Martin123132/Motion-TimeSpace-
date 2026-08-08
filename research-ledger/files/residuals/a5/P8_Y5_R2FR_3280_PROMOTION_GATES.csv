@@ -1,0 +1,7 @@
+gate_id,gate,passed,claim_allowed,detail
+GATE3280_0_derivation_present,EM stress/readout residual derivation is explicit,true,false,q_EM^nu=P_loc[Q_Z^nu+nabla_mu T_readout^{mu nu}+boundary] built as the direct Poynting/readout route.
+GATE3280_1_CZ_owner_signed,unique Maxwell kinetic owner and no-extra-F2 are parent-signed,false,false,C_Z remains blocked by gauge-norm/no-extra-F2/radiative counterterm debt.
+GATE3280_2_CR_readout_signed,readout/Hodge/coframe/radiative transfer is parent-signed,false,false,C_R remains unsigned.
+GATE3280_3_CJ_not_used_as_compensator,finite C_J is not reopened as a hidden compensator,true,false,3279 demotion is carried forward.
+GATE3280_4_runner_expectations,CZ/CR bound runner refuses missing rows and scores smoke rows,true,false,ZRB3280_0_CZ_zero_if_unique_owner_signed=REFUSE_OR_FAIL;ZRB3280_1_CR_zero_if_readout_signed=REFUSE_OR_FAIL;ZRB3280_2_hidden_F2_CZ_missing=REFUSE_OR_FAIL;ZRB3280_3_readout_CR_missing=REFUSE_OR_FAIL;ZRB3280_4_combined_ZR_bound_contract=REFUSE_OR_FAIL;ZRB3280_5_half_bound_CZ_smoke=PASS_NUMERIC_NONCLAIM;ZRB3280_6_twice_bound_CZ_smoke=FAIL_BOUND
+GATE3280_5_no_public_claim,no Maxwell/alpha/local-GR/Newton claim promoted,true,false,3280 is derivation plus source-bound gate only.

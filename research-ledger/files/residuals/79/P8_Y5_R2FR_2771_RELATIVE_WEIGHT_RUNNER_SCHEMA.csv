@@ -1,0 +1,12 @@
+column,definition,required,nonclaim_rule,valid_for_claim
+prediction_id,stable row id,True,"reject if missing marker, nonnumeric product, unity shortcut, source missing, or valid_for_claim=false",False
+arena,"MICROSCOPE_WEP, PPN_Newton, Gdot_orbital, or R10_short_range",True,"reject if missing marker, nonnumeric product, unity shortcut, source missing, or valid_for_claim=false",False
+product_symbol,exact relative-weight product tested,True,"reject if missing marker, nonnumeric product, unity shortcut, source missing, or valid_for_claim=false",False
+product_value,numeric prediction only; placeholders are invalid,True,"reject if missing marker, nonnumeric product, unity shortcut, source missing, or valid_for_claim=false",False
+product_units,"dimensionless, yr^-1, or declared alpha(lambda) convention",True,"reject if missing marker, nonnumeric product, unity shortcut, source missing, or valid_for_claim=false",False
+product_source,local source path proving the product,True,"reject if missing marker, nonnumeric product, unity shortcut, source missing, or valid_for_claim=false",False
+inputs_present,semicolon-separated real inputs,True,"reject if missing marker, nonnumeric product, unity shortcut, source missing, or valid_for_claim=false",False
+required_inputs,all required coefficients/maps/source files,True,"reject if missing marker, nonnumeric product, unity shortcut, source missing, or valid_for_claim=false",False
+derivation_status,"derived_zero, sourced_numeric, or blocked status",True,"reject if missing marker, nonnumeric product, unity shortcut, source missing, or valid_for_claim=false",False
+valid_for_claim,true only when numeric/sourced/unit matched,True,"reject if missing marker, nonnumeric product, unity shortcut, source missing, or valid_for_claim=false",False
+notes,assumptions and no-cancellation caveats,True,"reject if missing marker, nonnumeric product, unity shortcut, source missing, or valid_for_claim=false",False

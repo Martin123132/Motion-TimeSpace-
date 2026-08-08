@@ -1,0 +1,6 @@
+gate_id,requirement,gate_result,blocks_claim,detail,valid_for_claim,generated_utc
+QRG978_0_schema,"all prior rows expose parameter, component, status, value, units, source_path, bound_channel",pass,false,schema row written for future executable runner,false,2026-06-14T01:19:21.390567+00:00
+QRG978_1_missing_markers,symbolic rows with MISSING_PARENT_INPUT cannot be claim-ready,pass,true,all finite priors are placeholders until parent theorem or numeric values exist,false,2026-06-14T01:19:21.390569+00:00
+QRG978_2_zero_return,only derived parent certificate may move a component to derive_zero,pass,true,topological/superselection mechanism is not parent-signed yet,false,2026-06-14T01:19:21.390572+00:00
+QRG978_3_numeric_bound_return,"numeric_bound rows require value, units, source path, observable map, and accepted bound",pass,true,no numeric finite qbar/source values are supplied in 978,false,2026-06-14T01:19:21.390574+00:00
+QRG978_4_local_GR_guard,finite qbar/source runner pass would not equal local-GR pass by itself,pass,true,"measured-GM, PPN, operator, boundary, and conservation gates remain separate",false,2026-06-14T01:19:21.390577+00:00

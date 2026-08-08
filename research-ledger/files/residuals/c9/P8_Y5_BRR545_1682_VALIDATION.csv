@@ -1,0 +1,19 @@
+check_id,result,detail,valid_for_claim,claim_allowed
+VAL1682_0_sources_exist,PASS,all cited 1682 source paths exist and required needles are present,False,False
+VAL1682_1_module_written,PASS,importable source runner gate module exists with require_source_branch_gate,False,False
+VAL1682_2_gate_spec_complete,PASS,"gate spec covers module, inputs, components, arenas, and fail-closed behavior",False,False
+VAL1682_3_dry_run_all_reject,PASS,gate dry run rejects current ALL/WEP/R10/Newton/R11 source branch use,False,False
+VAL1682_4_parent_clause_exact,PASS,parent clause search covers the intended four high-leverage clauses,False,False
+VAL1682_5_parent_clause_none_signed,PASS,no parent clause is signed,False,False
+VAL1682_6_adoption_exact,PASS,"downstream adoption matrix covers WEP, R10, Newton-GM, and R11",False,False
+VAL1682_7_adoption_required,PASS,all downstream runner classes require gate import before scoring,False,False
+VAL1682_8_decision_safe,PASS,decision records current source branch rejection,False,False
+VAL1682_9_claim_gate_safe,PASS,all claim gates remain false,False,False
+VAL1682_10_no_claim_flags,PASS,all generated rows keep claim flags false,False,False
+VAL1682_11_blocked_not_ready,PASS,no blocked/rejected row is marked claim/scoring ready,False,False
+VAL1682_12_next_target_selected,PASS,next target selects first coefficient fill or source-current owner derivation,False,False
+VAL1682_13_csv_parse,PASS,all generated 1682 CSVs parse,False,False
+VAL1682_14_branch_copies,PASS,branch/quarantine/queue copies exist,False,False
+VAL1682_15_pycache_absent,PASS,scripts __pycache__ absent,False,False
+VAL1682_16_formalization_untouched,PASS,no 1682 outputs found under formalization-workbench,False,False
+VAL1682_OVERALL,PASS,1682 source-branch runner import gate and parent-clause search validation,False,False

@@ -1,0 +1,18 @@
+same_parent_branch_id,schema_id,required_column,expected_type,required_units_or_domain,acceptance_rule,why_required,valid_for_claim,claim_allowed
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,SC1477_0,row_id,string,dimensionless id,unique stable row key,required for traceability,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,SC1477_1,ci_id,string,CI1474_1_source_weight,must equal source-weight residual target,prevents accidental import into wrong residual,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,SC1477_2,arena,enum,WEP|R10|PPN|clock|orbital|Newton|local_GR,local arena for projection,forces arena-specific projection instead of vague pass/fail,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,SC1477_3,composition_pair,string,Ti-Pt or source/test pair,material/source labels entering observable,needed for WEP/source weight mapping,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,SC1477_4,delta_w_basis,string,"w_EM,w_QCD,w_lepton,w_nuclear or parent graph component basis",basis for relative source weights,stops hidden basis changes,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,SC1477_5,delta_w_value,float_or_symbolic_missing,dimensionless,numeric residual or MISSING_THEOREM_ZERO_OR_NUMERIC_DELTA_W,claim needs numeric or theorem zero,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,SC1477_6,delta_w_uncertainty,float_or_missing,dimensionless,one-sigma or conservative interval,prevents point-value claims without width,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,SC1477_7,delta_w_units,enum,dimensionless,must be dimensionless,unit gate for action/source weights,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,SC1477_8,delta_w_sign_convention,string,positive means source A couples stronger than reference,must state sign convention,avoids fake cancellation,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,SC1477_9,tau_projection_value,float_or_symbolic_missing,dimensionless,arena projection tau_X or MISSING_TAU_X,turns weight into observable,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,SC1477_10,tau_projection_units,enum,dimensionless,must be dimensionless after normalization,unit gate for products,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,SC1477_11,observable_bound_value,float_or_missing,arena units,source-backed bound used only after tau is real,separates data from theory coefficient,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,SC1477_12,product_formula,string,P_X = delta_w_basis dot tau_X or direct q_source integral,explicit observable product,prevents bound inversion by prose,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,SC1477_13,no_cancellation_statement,string,"states whether cancellations are forbidden, bounded, or modelled",must not be blank,protects robustness,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,SC1477_14,source_path,path,local source artifact or external citation,must exist for local files,provenance gate,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,SC1477_15,source_anchor,string,row/table/equation anchor,must be specific,prevents unsourced import,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,SC1477_16,valid_for_claim,boolean,False until all gates pass,must remain False for templates,claim firewall,False,False

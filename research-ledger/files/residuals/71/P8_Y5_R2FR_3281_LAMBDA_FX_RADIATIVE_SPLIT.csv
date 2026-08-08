@@ -1,0 +1,6 @@
+split_id,term,vertical_slope,alpha_value_effect,status,valid_for_claim
+LS3281_0_parent_piece,Z_parent=C_P N_Q,0_if_C_P_and_N_Q_parent_fixed,sets part or all of alpha normalization,CONDITIONAL_PARENT_OWNER,false
+LS3281_1_constant_lambda,lambda_A0 F_Q^2,0_if_lambda_A0_hidden_independent,changes absolute alpha value; not a local vertical drift,VALUE_DEBT_NOT_LOCAL_RESIDUAL,false
+LS3281_2_hidden_scalar,f_X(I_hid)F_Q^2,L_v ln(Z_parent+f_X),creates local alpha/EM stress drift and WEP/clock/R10 pressure,RETAINED_CZ_RESIDUAL,false
+LS3281_3_radiative,"delta_lambda_rad(mu,Xhat)F_Q^2",L_v ln(Z_parent+delta_lambda_rad),re-enters after tree-level descent unless effective/readout closure is signed,RETAINED_CZ_CR_RESIDUAL,false
+LS3281_4_readout,R_alpha_readout,C_R=L_v ln R_alpha,dimensionless observed alpha conversion can drift independently of bare Z_Q,RETAINED_CR_RESIDUAL,false

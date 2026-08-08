@@ -1,0 +1,7 @@
+checkpoint,bound_id,symbol,definition,bound_formula,current_status,numeric_value_present,claim_allowed,valid_for_claim,generated_utc
+4589,MDB4589_0_Dv_Htau,D_v H_tau,vertical derivative of Hamiltonian charge,|D_v H_tau| <= |E_theta|+|E_Qtau|+|E_curl|+|E_surface|+|E_sector|+|E_boundary|,MISSING_PARENT_HTAU_DERIVATIVE,False,False,False,2026-07-06T13:08:57.465298+00:00
+4589,MDB4589_1_Dv_Href,D_v H_ref,vertical derivative of reference subtraction,|D_v H_ref| <= |E_ref_selector|+|E_ref_boundary|+|E_ref_frame|+|E_ref_readout|,MISSING_SOURCE_BLIND_HREF_DERIVATIVE,False,False,False,2026-07-06T13:08:57.465298+00:00
+4589,MDB4589_2_Dv_MHref,D_v M_H_ref,source-worldtube denominator drift,|D_v M_H_ref| <= |D_v H_tau|+|D_v H_ref|,FORMULA_READY_VALUES_MISSING,False,False,False,2026-07-06T13:08:57.465298+00:00
+4589,MDB4589_3_Mlower,M_lower,positive same-frame denominator lower bound,"M_lower=M_EH*(1-epsilon_abs), requiring M_EH>0 and epsilon_abs<1",MISSING_POSITIVE_LOWER_BOUND,False,False,False,2026-07-06T13:08:57.465298+00:00
+4589,MDB4589_4_epsilon_MHref,epsilon_MHref,normalized denominator drift,epsilon_MHref <= (|D_v H_tau|+|D_v H_ref|)/M_lower,FORMULA_READY_VALUES_MISSING,False,False,False,2026-07-06T13:08:57.465298+00:00
+4589,MDB4589_5_no_fitted_G,delta_Gfit,absorbed fitted-G/orbital-GM contamination,delta_Gfit=0 required; otherwise denominator branch rejected,ANTI_CIRCULARITY_GUARD,False,False,False,2026-07-06T13:08:57.465298+00:00

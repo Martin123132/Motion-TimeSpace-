@@ -1,0 +1,5 @@
+update_id,formula,status,claim_allowed
+EJ2723_0_previous,E_Newton_bridge includes E_kappa_bridge + E_Poisson_residual + E_Gauss_flux + E_mu_transfer + E_extra_stress_Newton + E_gauge_domain,INHERITED_FROM_2722,false
+EJ2723_1_kappa_split,E_kappa_bridge := E_kappa_source + E_Gref_definition + E_kappa_running + E_frame_coupling + E_sector_renorm + E_reference_absorption + E_unit_convention,REFINED_NONCLAIM_VECTOR,false
+EJ2723_2_newton_feed,E_Newton_bridge := E_kappa_bridge + E_Poisson_residual + E_Gauss_flux + E_mu_transfer + E_extra_stress_Newton + E_gauge_domain,FORMAL_GREEN_INTERFACE_ONLY,false
+EJ2723_3_zero_condition,"E_kappa_bridge=0 only if kappa0 source, G_ref definition, constant-coupling, same-frame, sector-renorm, reference and unit clauses all close",ZERO_CONDITION_NOT_MET,false

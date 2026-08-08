@@ -1,0 +1,8 @@
+law_id,quantity,definition,formula,status,valid_for_claim
+KER3321_0_gaussian_kernel,S_ell,Gaussian smoothing kernel with width ell_s and Fourier transfer exp[-(k ell_s)^2/2],S_ell(k)=exp[-(k ell_s)^2/2],MODEL_EXPLICIT_NONCLAIM,false
+KER3321_1_gradient_transfer,T_grad(lambda),first-gradient leakage transfer for a finite mode of range lambda under k≈1/lambda,T_grad(lambda)=(ell_s/lambda) exp[-ell_s^2/(2 lambda^2)],DERIVED_FROM_GAUSSIAN_AND_ONE_DERIVATIVE,false
+KER3321_2_bound,epsilon_grad(lambda),dimensionless first-gradient readout leak,epsilon_grad(lambda) <= epsilon_bg T_grad(lambda) + epsilon_boundary + epsilon_kernel_aniso,BOUND_LAW_DERIVED,false
+KER3321_SAMPLE_shorter_than_smoothing,T_grad_sample,sample transfer for lambda/ell_s=0.1,T_grad=1.928749847964e-21,NUMERIC_MODEL_SAMPLE,false
+KER3321_SAMPLE_equal_to_smoothing,T_grad_sample,sample transfer for lambda/ell_s=1,T_grad=6.065306597126e-01,NUMERIC_MODEL_SAMPLE,false
+KER3321_SAMPLE_ten_times_smoothing,T_grad_sample,sample transfer for lambda/ell_s=10,T_grad=9.950124791927e-02,NUMERIC_MODEL_SAMPLE,false
+KER3321_SAMPLE_million_times_smoothing,T_grad_sample,sample transfer for lambda/ell_s=1e+06,T_grad=9.999999999995e-07,NUMERIC_MODEL_SAMPLE,false

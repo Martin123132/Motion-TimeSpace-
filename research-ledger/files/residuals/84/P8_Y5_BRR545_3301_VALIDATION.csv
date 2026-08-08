@@ -1,0 +1,12 @@
+check_id,check,passed,detail
+VAL3301_0_sources_exist,all cited checkpoint source paths and scan roots exist,true,
+VAL3301_1_sources_parse,all cited checkpoint source paths parse,true,
+VAL3301_2_outputs_parse,all 3301 non-validation output CSVs parse,true,
+VAL3301_3_scan_has_evidence_or_placeholder,parent signature scan produced evidence rows or an explicit placeholder,true,top_scan_exists=true; rows=80
+VAL3301_4_clause_score_complete,clause score covers required parent-signature clauses,true,
+VAL3301_5_zero_not_claimed_by_default,zero route is not claim-promoted unless a single parent-owned signature satisfies all clauses,true,single_signature=false
+VAL3301_6_finite_schema_complete,"finite schema covers c_R2, c_Ric, and combined gate",true,
+VAL3301_7_claim_gates_safe,no finite/local-GR claim is allowed from schema rows,true,
+VAL3301_8_next_target_finite_bound_map,next target is finite coefficient extraction and bound map,true,
+VAL3301_9_formalization_untouched,formalization-workbench modified-file count remains zero by this script,true,formalization_changed_count=0
+VAL3301_10_overall,3301 validation overall,true,all required checks passed

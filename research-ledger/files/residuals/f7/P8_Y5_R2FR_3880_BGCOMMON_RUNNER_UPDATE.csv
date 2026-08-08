@@ -1,0 +1,7 @@
+update_id,runner_field,rule,source_logic,status,valid_for_claim,timestamp_utc
+RUNU3880_0_previous,b_Gcommon,b_Gcommon := b_common_drift + b_delta_kappa + b_MHref_lock + b_PiM_JH_flux + b_GM_anti_circular + b_PPN_readout,imports 3879,previous common residual,False,2026-07-01T07:16:29+00:00
+RUNU3880_1_bcommon_split,b_common_drift,b_common_drift = b_t + b_r + b_lambda + b_frame + b_domain + b_Bianchi,3880 derivative-channel split,DERIVATIVE_HAIR_CHANNELS_EXPLICIT,False,2026-07-01T07:16:29+00:00
+RUNU3880_2_bG_update,b_Gcommon,b_Gcommon := b_t+b_r+b_lambda+b_frame+b_domain+b_Bianchi+b_MHref_lock+b_PiM_JH_flux+b_GM_anti_circular+b_PPN_readout,3880 bcommon decomposition plus carried source locks,RUNNER_SCHEMA_REFINED,False,2026-07-01T07:16:29+00:00
+RUNU3880_3_runner,"z_g_active,cal","|z_g_active,cal| <= b_Qstar + b_Noether + b_tail_rel + b_Gcommon",unchanged top-level runner with refined b_Gcommon,NO_CANCELLATION_RUNNER,False,2026-07-01T07:16:29+00:00
+RUNU3880_4_conditional_zero,Geff derivative silence,"all b_t,b_r,b_lambda,b_frame,b_domain,b_Bianchi vanish only if GST3880_0 or GST3880_1 is parent-signed",superselection/topological route,CONDITIONAL_ONLY,False,2026-07-01T07:16:29+00:00
+RUNU3880_5_no_claim,claim_allowed,false until derivative hair rows are zero-proved or source-backed and same-source/PPN locks close,acceptance policy,NO_NEWTON_LOCAL_GR_CLAIM,False,2026-07-01T07:16:29+00:00

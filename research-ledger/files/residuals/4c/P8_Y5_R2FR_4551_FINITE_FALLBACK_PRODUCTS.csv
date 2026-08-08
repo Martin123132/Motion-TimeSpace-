@@ -1,0 +1,5 @@
+fallback_id,assumption,required_bound,numeric_value,units,status,valid_for_claim
+FB4551_0_if_boundary_and_higher_zero,"Q_alpha3_vec=0 and R_alpha3,higher=0",|K_alpha3^src S_static| <= B_alpha3/epsilon_U^2,6.4582427632245591e-06,dimensionless combined product,same_as_4550_product_wall,False
+FB4551_1_equal_split,"half alpha3 budget to source product, half to boundary+higher residues",|K_alpha3^src S_static| <= B_alpha3/(2 epsilon_U^2); |Q_alpha3_vec|+|R| <= B_alpha3/2,3.2291213816122795e-06; boundary_plus_higher <= 1.9999999999999999e-20,dimensionless,conservative_nonclaim_budget,False
+FB4551_2_if_source_and_boundary_zero_higher_order,"P_alpha3_src=0 and Q_alpha3_vec=0, but R_alpha3,higher=C3_alpha3 epsilon_U^3 remains",|C3_alpha3| <= B_alpha3/epsilon_U^3,8.2061897207390857e+01,dimensionless higher-order coefficient,higher_order_budget_ready,False
+FB4551_3_boundary_only,source scalar projection zero and higher-order negligible,|Q_alpha3_vec| <= B_alpha3,3.9999999999999998e-20,dimensionless alpha3 residual,boundary_flux_product_must_be_zero_or_ultratiny,False

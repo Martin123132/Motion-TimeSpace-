@@ -1,0 +1,12 @@
+check_id,result,detail,claim_allowed,generated_utc
+V1200_0_sources_exist,pass,all cited local source paths exist and needles are found,False,2026-06-15T04:02:38.012199+00:00
+V1200_1_WR10_stub_present,pass,"W_R10 denominator, numerator, and ratio rows are present",False,2026-06-15T04:02:38.012199+00:00
+V1200_2_qDT_profile_envelope_present,pass,"qDT profile-envelope rows include total, cokernel, and shape components",False,2026-06-15T04:02:38.012199+00:00
+V1200_3_source_pack_templates_present,pass,"kernel, qDT profile, and join source-pack templates are declared",False,2026-06-15T04:02:38.012199+00:00
+V1200_4_samples_numeric_nonclaim,pass,R10 join samples have numeric lambda/alpha bounds and remain nonclaim,False,2026-06-15T04:02:38.012199+00:00
+V1200_5_dryrun_blocked,pass,dry-run blocks because kernel/profile values are missing,False,2026-06-15T04:02:38.012199+00:00
+V1200_6_claim_gates_blocked,pass,all 1200 claim gates and next target remain blocked/nonclaim,False,2026-06-15T04:02:38.012199+00:00
+V1200_7_all_science_rows_nonclaim,pass,all generated science rows keep valid_for_claim=false,False,2026-06-15T04:02:38.012199+00:00
+V1200_8_generated_under_post_checkpoint,pass,all generated outputs are under post-checkpoint-work,False,2026-06-15T04:02:38.012199+00:00
+V1200_9_formalization_untouched,pass,generator writes no outputs under formalization-workbench,False,2026-06-15T04:02:38.012199+00:00
+V1200_SUMMARY,pass,"1200 creates the first W_R10 kernel/source-pack stub and qDT profile-envelope rows, then blocks the R10 join until numerator, denominator, and qDT profile values are sourced",False,2026-06-15T04:02:38.012199+00:00

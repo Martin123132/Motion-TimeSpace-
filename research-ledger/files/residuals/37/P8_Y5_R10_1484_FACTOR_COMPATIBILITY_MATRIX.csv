@@ -1,0 +1,10 @@
+same_parent_branch_id,compat_id,condition,condition_pass,current_status,score_effect,valid_prediction_row,valid_for_claim,claim_allowed
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,COMP1484_0_branch,all factors declare same_parent_branch_id,False,BRANCH_GUARD_NONCLAIM_OR_UNSIGNED,required before WEP score,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,COMP1484_1_C_parent,C_parent import exists and is proof/source-backed,False,MISSING_C_PARENT_IMPORT,required before WEP score,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,COMP1484_2_material,R_material tensor exists in same basis,False,MISSING_FULL_PARENT_MATERIAL_TENSOR,required before WEP score,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,COMP1484_3_readout,K_CMSM live readout exists with units/sign/masks,False,MISSING_LIVE_READOUT_MATRIX,required before WEP score,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,COMP1484_4_source,R_source live source worldtube exists,False,MISSING_SOURCE_WORLDTUBE,required before WEP score,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,COMP1484_5_product,eta product convention has no pending sign/unit/orbit fields,False,PENDING_PRODUCT_SIGN_UNITS_ORBIT,required before WEP score,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,COMP1484_6_tau,tau_eff_X numeric values exist,False,TAU_SYMBOLIC_ONLY,required before WEP score,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,COMP1484_7_units,C_parent * R_material * tau_eff has dimensionless eta units,False,UNIT_PRODUCT_NOT_EVALUABLE,required before WEP score,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,COMP1484_8_no_shortcuts,"tau=1, DD-only, bound-inversion, mixed-basis rows rejected",True,PASS_REFUSAL_RULE_ONLY,guards against false positives,False,False,False

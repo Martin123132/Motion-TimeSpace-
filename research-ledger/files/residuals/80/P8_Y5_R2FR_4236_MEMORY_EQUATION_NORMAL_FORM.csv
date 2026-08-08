@@ -1,0 +1,7 @@
+timestamp_utc,branch_id,checkpoint_id,row_id,formula,meaning,result_type,status,claim_allowed,valid_for_claim
+2026-07-03T08:53:02+00:00,MTS_R2FR_Y5_CGAMMA_PARENT_MEMORY_EQUATION_4236,4236,ME4236_0_field,Xi_0 := N_0[P_loc Gamma_mem],local scalar memory profile projected from Gamma_mem,definition,open,False,False
+2026-07-03T08:53:02+00:00,MTS_R2FR_Y5_CGAMMA_PARENT_MEMORY_EQUATION_4236,4236,ME4236_1_operator,L_Xi = -D_Xi Delta_h + mu_Xi,positive/self-adjoint local memory operator with mu_Xi ~= Pi_B/tau_L,derived normal form,conditional_private,False,False
+2026-07-03T08:53:02+00:00,MTS_R2FR_Y5_CGAMMA_PARENT_MEMORY_EQUATION_4236,4236,ME4236_2_equation,L_Xi delta Xi = J_res,parent memory equation around Xi_star,derived normal form,conditional_private,False,False
+2026-07-03T08:53:02+00:00,MTS_R2FR_Y5_CGAMMA_PARENT_MEMORY_EQUATION_4236,4236,ME4236_3_source,J_res = U_B S_cg + D_m Delta_h m_L - D_t m_L + boundary_in,residual source decomposition,derived source split,open,False,False
+2026-07-03T08:53:02+00:00,MTS_R2FR_Y5_CGAMMA_PARENT_MEMORY_EQUATION_4236,4236,ME4236_4_profile,D_t Xi_res <= |J_res|/(mu_Xi T_res); L_loc grad Xi_res <= (L_loc/L_res)|J_res|/mu_Xi,profile bounds from Green inverse,derived bound,active,False,False
+2026-07-03T08:53:02+00:00,MTS_R2FR_Y5_CGAMMA_PARENT_MEMORY_EQUATION_4236,4236,ME4236_5_full_budget,|c_Gamma D_t Xi_0| <= 2.42e-14 yr^-1; |c_Gamma L_loc grad_perp Xi_0| <= 4e-9,full-budget local cGamma rows after Kperp removal,active bound,not_scoreable,False,False

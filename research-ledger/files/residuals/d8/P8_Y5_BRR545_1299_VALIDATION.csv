@@ -1,0 +1,11 @@
+check_id,check,status,details
+VAL1299_0_sources_exist,registered source paths exist and anchors are found,PASS,9/9 source anchors found
+VAL1299_1_trace_shortcut_rejected,trace theorem audit rejects current shortcut while preserving conditional routes,PASS,TTA1299_0_tracefree_shortcut=NOT_DERIVED;TTA1299_1_isotropic_pressure_shortcut=CONDITIONAL_NOT_SCOREABLE;TTA1299_2_metric_invisible_shortcut=BLOCKED_NOT_PARENT_DERIVED;TTA1299_3_Ward_Bianchi_shortcut=REJECTED_SHORTCUT;TTA1299_4_current_verdict=FAIL_CURRENT_CORPUS_KEEP_SPATIAL_TRACE_ROWS
+VAL1299_2_spatial_trace_templates_written,spatial trace kernel templates exist and contain MISSING guards,PASS,STK1299_0_m_spatial_trace;STK1299_1_Lcg_spatial_trace;STK1299_2_cdb_spatial_trace;STK1299_3_projector_boundary_trace
+VAL1299_3_Kbar_bound_not_scoreable,assembled Kbar/Newton bounds remain non-scoreable,PASS,KBA1299_0_total_Kbar_abs_bound;KBA1299_1_Newton_budget_bound
+VAL1299_4_runner_updates_no_score,runner update rows remain rejected/no-score,PASS,RRI1292_0_m_chain;RRI1292_1_Lcg_chain;RRI1292_2_cdb_chain;RRI1292_3_chain_vector
+VAL1299_5_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1299_SOURCE_REGISTER.csv:9; P8_Y5_R10_1299_TRACE_THEOREM_AUDIT.csv:5; P8_Y5_R10_1299_SPATIAL_TRACE_KERNEL_ROWS_NONCLAIM.csv:4; P8_Y5_R10_1299_KBAR_BOUND_ASSEMBLY_NONCLAIM.csv:2; P8_Y5_R10_1299_RUNNER_MISSING_INPUT_UPDATE.csv:4; P8_Y5_R10_1299_CLAIM_GATES.csv:4; P8_Y5_R10_1299_DECISION_LEDGER.csv:2; P8_Y5_R10_1299_NEXT_TARGET.csv:1
+VAL1299_6_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1299_7_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1299_8_next_target_1300,next target routes to first spatial trace kernel input or theorem,PASS,1300-Y5-R10-RAB-first-spatial-trace-kernel-input-or-isotropy-theorem.md
+VAL1299_9_overall,overall 1299 validation,PASS,"1299 rejects an unsupported trace shortcut, writes spatial trace kernel templates, assembles the correct Kbar bound form, keeps scoring blocked, and routes to first trace input/theorem"

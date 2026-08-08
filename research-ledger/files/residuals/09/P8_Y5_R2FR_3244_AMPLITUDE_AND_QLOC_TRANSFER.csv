@@ -1,0 +1,5 @@
+transfer_id,target,formula,condition,effect,claim_allowed
+TR3244_0_response_amplitude,response-doublet amplitude,||Z_*|| <= m0^{-1} ||J_tot|| + O(||J_tot||^2),M_AB >= m0 I on the local branch,finite source leakage becomes a controlled amplitude rather than a closure assumption,false
+TR3244_1_density_shift,Gamma_eff density shift,|Delta Gamma_min| <= (2 m0)^{-1} ||J_tot||^2 + higher_order,positive Hessian and sourced Jtot norm,turns coupling leakage into a local density residual feeding epsilon_Gamma_owner,false
+TR3244_2_qLoc,q_loc local residual,||q_loc||_arena <= C_arena(||nabla E_res_GK|| + ||nabla DeltaGamma_J|| + ||DeltaK||),3241 EH/SGK bridge plus arena constants,connects Jtot bound to PPN/Newton/local-GR residual scoring,false
+TR3244_3_newton_ppn,Newton/PPN gate,"pass only if ||q_loc||_PPN, ||DeltaG_eff|| and matter-coupling residuals are below sourced bounds",real arena constants and no prior-edge/placeholder rows,prevents calling the branch GR-like unless the bound is actually small,false

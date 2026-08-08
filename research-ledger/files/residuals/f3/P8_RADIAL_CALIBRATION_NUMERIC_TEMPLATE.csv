@@ -1,0 +1,5 @@
+template_id,target_channel,coefficient_symbol,required_columns,bound_formula,template_status,valid_for_claim
+N498_0_source_current_norm,radial_Meff_hair,epsilon_radial_Meff,r1;r2;c_M;M_eff_ref;int_A_dPiMJ;norm_convention;units;source_file;assumptions,epsilon_radial_Meff = c_M*int_A_dPiMJ/M_eff_ref,not_filled,false
+N498_1_radial_profile,radial_Meff_hair,epsilon_radial_Meff,r;M_eff_r;dln_Meff_dlnr;dln_Geff_dlnr;dln_mu_dlnr;units;source_file;assumptions,dln_mu_dlnr = dln_Geff_dlnr + dln_Meff_dlnr,not_filled,false
+N498_2_calibration_owner,absolute_calibration_offset,epsilon_calibration,lambda0;G_parent_definition;M_flux_definition;M_EH_definition;same_frame_certificate;source_file;assumptions,epsilon_calibration = lambda0 - 1 unless lambda0 is parent-fixed universal unit normalization,not_filled,false
+N498_3_derivative_hair,absolute_calibration_offset,epsilon_calibration,dln_mu_dr;dln_mu_dt;dln_mu_dlambda;Delta_species_mu;units;source_file;assumptions,all derivative hair must be zero or mapped to R4/R9/R10/R11 bounds,not_filled,false

@@ -1,0 +1,6 @@
+lemma_id,assumptions,derivation,result,status,valid_for_claim,generated_utc
+DZ801_0_generic_failure,generic smooth scalar readout f(Z_L)=f_0+a_A Z_L^A+O(D_L^2),"local GR fixed surface requires f_0=0, but unless a_A=0 the first correction is O(D_L)",generic smooth leakage gives only p=1,fails_double_zero,false,2026-06-12T13:09:44+00:00
+DZ801_1_norm_evenness,"f(Z_L)=F(R_L), R_L=G_AB Z_L^A Z_L^B, F smooth, F(0)=0","F(R_L)=F'(0)R_L+O(R_L^2), so f=O(D_L^2) and partial_A f|Sigma_L=0",double zero follows from norm-only scalar dependence,mathematical_theorem_if_parent_signed,false,2026-06-12T13:09:44+00:00
+DZ801_2_mL_power,"m_L-m_*=M(R_L), M(0)=0, D_L<=C_D U_B",|m_L-m_*|<=C_M D_L^2+O(D_L^4)<=C_M C_D^2 U_B^2+O(U_B^4),pL=2 conditionally derived,conditional_scalar_pass,false,2026-06-12T13:09:44+00:00
+DZ801_3_trace_power,"T_L=L_cg^-2F_L-Lambda_loc=T(R_L), T(0)=0, D_L<=C_D U_B",|T_L|<=C_T D_L^2+O(D_L^4)<=C_T C_D^2 U_B^2+O(U_B^4),pT=2 conditionally derived,conditional_scalar_pass,false,2026-06-12T13:09:44+00:00
+DZ801_4_gradient_warning,"f=F(D_L^2), D_L=O(U_B), nabla D_L not bounded",nabla f=2F'(R_L)D_L nabla D_L; a large transition gradient can still source q_loc,double zero of amplitude is not enough without gradient control,gradient_gate_still_open,false,2026-06-12T13:09:44+00:00

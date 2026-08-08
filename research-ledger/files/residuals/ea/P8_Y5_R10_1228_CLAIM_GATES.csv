@@ -1,0 +1,6 @@
+gate_id,gate,status,reason,valid_for_claim,claim_allowed
+GATE1228_0_sources,source path and needle audit,PASS,all local handoff sources are traceable,False,False
+GATE1228_1_directories,intake directories available,PASS,raw/docs/metadata/derived/quarantine directories exist under source-intake/microscope,False,False
+GATE1228_2_files,official files accepted,BLOCKED,no accepted official files with provenance/schema,False,False
+GATE1228_3_parser,parser may run,BLOCKED,parser prechecks are blocked,False,False
+GATE1228_4_tau_WEP,tau_WEP/local-GR/WEP claim permission,BLOCKED,intake contract only; no physical claim,False,False

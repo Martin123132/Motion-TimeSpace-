@@ -1,0 +1,6 @@
+gate_id,required_object,acceptance_rule,current_status,valid_for_claim
+ACC3256_0_component_fraction,"f_EM,A","must be finite numeric with uncertainty, basis convention, source path/URL/DOI, and extraction method matching the 1233 schema",MISSING_ACCEPTED_EM_FRACTION_ROWS,false
+ACC3256_1_material_mass,M_A or mass density profile,"must match the same material body, isotope/alloy convention, and source-worldtube used by the tau/readout kernel",MISSING_SAME_ARENA_MATERIAL_MASS,false
+ACC3256_2_shape_cutoffs,R_in/R_out or u_EM(x),"either source a real EM energy-density distribution u_EM(x), or declare shell cutoffs as a toy/surrogate envelope",MISSING_SHAPE_PROFILE_OR_TOY_LABEL,false
+ACC3256_3_no_double_count,component basis map,"EM_Coulomb fraction must not double-count nuclear surface/asymmetry, QCD/gluon binding, electron rest mass, or readout rows",BASIS_CONVENTION_REQUIRED,false
+ACC3256_4_tau_source_kernel,tau/source/readout kernel,material Gram row cannot be inserted into WEP/PPN/local-GR until the same tau/e_obs/source-worldtube convention is declared,MISSING_TAU_SOURCE_KERNEL,false

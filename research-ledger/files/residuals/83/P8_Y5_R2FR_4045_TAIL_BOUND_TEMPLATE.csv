@@ -1,0 +1,4 @@
+bound_id,quantity,formula,candidate_value,units,claim_status,valid_for_public_claim,timestamp_utc
+TBT4045_0_tail_formula,A_tail,"A_tail <= C_G(D_Z,M_Z,L_collar)*|c_Z|*C_mem*exp(-L_collar/ell_mem)*||H||_1",MISSING_NUMERIC_VALUES,local acceleration/PPN force-envelope units after projection,NONCLAIM_FORMULA_READY,False,2026-07-02T00:01:07+00:00
+TBT4045_1_selected_total,Delta_cZ_selected,Delta_cZ_selected = A_tail because A_wall_projector=0 in selected branch,MISSING_TAIL_VALUE_OR_ZERO_THEOREM,same as A_tail,TAIL_ONLY_REDUCTION_PRIVATE,False,2026-07-02T00:01:07+00:00
+TBT4045_2_fallback_total,Delta_cZ_fallback,Delta_cZ_fallback <= A_tail + A_wall if selected branch rejected,MISSING_TAIL_AND_WALL_VALUES,same as A_tail plus A_wall,FALLBACK_NONCLAIM,False,2026-07-02T00:01:07+00:00

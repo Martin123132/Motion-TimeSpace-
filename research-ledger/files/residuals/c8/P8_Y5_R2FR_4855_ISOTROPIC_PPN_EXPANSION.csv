@@ -1,0 +1,8 @@
+row_id,equation,meaning,status,valid_for_claim,timestamp_utc
+PPN4855_0_transform,r=rho+m+(m^2-q^2)/(4rho),exact areal-to-isotropic radial map for the static charged exterior,EXACT,False,2026-07-09T22:36:08+00:00
+PPN4855_1_g00,g00=-2*m**2*x**2 + 2*m*x - q2*x**2 - 1+O(rho^-3),g00=-1+2m/rho-(2m^2+q^2)/rho^2+...,PASS,False,2026-07-09T22:36:08+00:00
+PPN4855_2_gij,gij/deltaij=3*m**2*x**2/2 + 2*m*x - q2*x**2/2 + 1+O(rho^-3),spatial factor=1+2m/rho+(3m^2-q^2)/(2rho^2)+...,PASS,False,2026-07-09T22:36:08+00:00
+PPN4855_3_gamma,gamma_1PN=1,charge enters at order rho^-2 and does not change the first-PN spatial-curvature coefficient,EXACT_MINIMAL_BRANCH,False,2026-07-09T22:36:08+00:00
+PPN4855_4_beta_apparent,"Delta beta_Q,app=q^2/(2m^2)",only an apparent source-specific projection if the charged term is forced into the neutral PPN beta template,EXACT_MAPPING_NOT_UNIVERSAL_PPN_PARAMETER,False,2026-07-09T22:36:08+00:00
+PPN4855_5_neutral,spherical nonrotating q=0 and F_ext=0 -> beta=gamma=1,the neutral no-exterior-EM-hair minimal Einstein-Maxwell branch reduces exactly to the GR PPN values,EXACT_PRIVATE_BRANCH,False,2026-07-09T22:36:08+00:00
+PPN4855_6_preferred_frame_guard,"alpha1,alpha2 not inferred from beta=gamma=1",the MTS time flow and its gravitational/Hilbert variation require a separate preferred-frame derivation,OPEN_SEPARATE_GATE,False,2026-07-09T22:36:08+00:00

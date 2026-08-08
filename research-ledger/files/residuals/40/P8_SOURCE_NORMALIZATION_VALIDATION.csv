@@ -1,0 +1,7 @@
+rule_id,rule,result,evidence,claim_effect
+V495_0_sources,all cited source paths exist,pass,missing_sources=0,traceability only
+V495_1_inputs_loaded,"494 hard rows, 494 coefficient branch, R11 vector, and local residual vector are loaded",pass,hard_rows=4;coeff_rows=7;r11_rows=10;local_rows=11,source-normalization gate tied to active residuals
+V495_2_R11_source_row_present,R11 vector includes source-normalization operator row,pass,source_norm_R11_rows=1,hard row is concretely wired
+V495_3_local_R11_row_present,local residual vector includes LRV_DOMAIN_R11_SOURCE_NORMALIZATION,pass,local_source_norm_rows=1,Newton blocker is in active local vector
+V495_4_even_odd_split_written,"even observed source, odd extra source, and even extra source are separated",pass,even_odd_rows=4,prevents exchange-odd overclaim
+V495_5_no_claim_rows,"no theorem, channel, or coefficient fill row is claim-valid",pass,claim_theorem_rows=0;claim_channel_rows=0;claim_fill_rows=0,no Newton/local-GR promotion

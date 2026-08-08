@@ -1,0 +1,7 @@
+residual_id,symbol,definition,closure_condition,current_status,valid_for_claim
+CR3395_0_delta_kappa,delta_kappa,kappa_MTS c^4/(8*pi*G_ref)-1 or branch variation of kappa_MTS,zero if MPL3395_0 signs kappa_MTS=8*pi*G_ref/c^4 as universal parent coefficient,OPEN_PARENT_SIGNATURE,false
+CR3395_1_delta_ellJ,delta_ellJ,hidden source-current scale drift relative to Hilbert source normalization,"zero if MPL3395_2 signs same matter variation for T_muν,J_H,M_H",OPEN_MATTER_DESCENT_SIGNATURE,false
+CR3395_2_epsilon_Gref_match,epsilon_Gref_match,|G_Htau/G_Poisson-1|+|G_PPN/G_Poisson-1|,"zero if EH, H_tau/Gauss and PPN U all inherit same G_ref and M_H",OPEN_HTAU_PPN_MATCH,false
+CR3395_3_delta_KC,delta_KC,v-action kinetic/source coefficient mismatch,zero if parent v reduction yields c^4/(32*pi*G_ref) and rho_H c^2/2 coefficients,OPEN_V_ACTION_RATIO,false
+CR3395_4_Delta_Newton,Delta_Newton_v_coupled,(1+delta_KC)(1+epsilon_M)(1+delta_kappa)(1+delta_ellJ)-1 without cancellation credit,zero only if each component closes independently or is source-bounded,OPEN_NO_CANCELLATION_LEDGER,false
+CR3395_5_kappa_v,kappa_v,"second-order PPN beta-source ledger including source, PiM, boundary, readout, operator and coupling terms",zero or finite bound after source normalization and local package adoption,OPEN_SECOND_ORDER_PPN,false

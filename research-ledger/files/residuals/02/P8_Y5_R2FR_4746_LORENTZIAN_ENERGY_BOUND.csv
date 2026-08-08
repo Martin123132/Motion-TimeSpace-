@@ -1,0 +1,6 @@
+checkpoint,energy_id,formula,meaning,status,valid_for_claim,timestamp_utc
+4746,HYP4746_0_energy_definition,E_m[t]=||partial_t m||_{L2(Sigma_t)}^2+||nabla_h m||_{L2(Sigma_t)}^2+||m||_{L2(Sigma_t)}^2,Defines the dynamical multiplier energy on a time slab.,ENERGY_DEFINED,False,2026-07-08T00:24:12+00:00
+4746,HYP4746_1_energy_bound,E_m[t2] <= C_hyp(E_m[t1]+int_{t1}^{t2}||D_adj m||^2 dt + Flux_boundary + Curv_coeff),"Lorentzian branch is bounded by energy growth, not set to zero by elliptic gap.",DERIVED_SCHEMATIC_BOUND,False,2026-07-08T00:24:12+00:00
+4746,HYP4746_2_zero_dynamic_case,"If E_m[t1]=0, D_adj m=0, Flux_boundary=0, Curv_coeff controlled, then E_m[t2]=0","Dynamical zero is possible, but it is an initial/boundary energy theorem.",EXACT_DYNAMIC_BRANCH_CONDITIONAL,False,2026-07-08T00:24:12+00:00
+4746,HYP4746_3_finite_residual,C_hyp_energy := sqrt(E_m[t2])/a_ref,Finite residual carried into CzeroMode for full Lorentzian dynamics.,FINITE_SOURCE_REQUIRED,False,2026-07-08T00:24:12+00:00
+4746,HYP4746_4_no_static_claim,Do not replace C_hyp_energy by lambda_1^stat^{-1} terms,Prevents static elliptic proof from leaking into dynamical local GR.,FIREWALL,False,2026-07-08T00:24:12+00:00

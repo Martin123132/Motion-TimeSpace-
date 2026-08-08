@@ -1,0 +1,5 @@
+row_id,term,formula,zero_route,status,valid_for_claim,timestamp_utc
+TVTF3832_0_inertia,d2I_TF/dt2,epsilon_inertia_TF = ||d2I_TF/dt2||/(M c^2),stationary/period-averaged source with declared averaging window,BOUND_REQUIRED,False,2026-07-01T02:11:49+00:00
+TVTF3832_1_surface_exchange,surface_TF + exchange_TF,epsilon_surface_exchange_TF = ||surface_TF + exchange_TF||/(M c^2),fixed closed boundary and no parent/matter exchange across it,BOUND_REQUIRED,False,2026-07-01T02:11:49+00:00
+TVTF3832_2_flux_correction,flux_TF,epsilon_flux_TF = ||radiative/Poynting/gravitational flux_TF||/(M c^2),no radiative flux or included in closed total source accounting,BOUND_REQUIRED_LINKED_TO_EM,False,2026-07-01T02:11:49+00:00
+TVTF3832_3_total,epsilon_tensor_virial_TF,epsilon_tensor_virial_TF <= epsilon_inertia_TF + epsilon_surface_exchange_TF + epsilon_flux_TF,all tensor-virial TF residuals vanish,FIRST_TENSOR_VIRIAL_TF_BOUND_NONCLAIM,False,2026-07-01T02:11:49+00:00

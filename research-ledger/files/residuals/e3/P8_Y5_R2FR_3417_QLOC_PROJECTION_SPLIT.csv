@@ -1,0 +1,8 @@
+projection_id,lane,mathematical_form,observable,status,claim_effect,valid_for_claim
+QPS3417_0_decomposition,identity,q_loc^nu=q_parallel u^nu + D^nu chi_q + q_T^nu + q_harmonic^nu,routing identity,KINEMATIC_SPLIT_ONLY,prevents beta-only scalar number being reused as vector safety,False
+QPS3417_1_scalar_beta,scalar U2 beta,delta_beta_q = W_q_beta f_beta q_proxy,beta-1 and kappa_q=2 delta_beta_q,PROVISIONAL_SMALL_IF_UNIT_WEIGHT,can enter beta envelope only if U2/readout normalization is parent-signed,False
+QPS3417_2_scalar_gamma,scalar gamma/spatial slip,delta_gamma_q = W_q_gamma f_gamma q_proxy,gamma-1,UNSCORED_MISSING_W_AND_F,gamma cannot be inferred from beta,False
+QPS3417_3_alpha1_alpha2,transverse preferred-frame vector,"alpha{1,2}_q = W_q_alpha{1,2} f_qV q_proxy","alpha1, alpha2",HIGH_RISK_UNSIGNED,requires theorem-zero vector projection or sourced products,False
+QPS3417_4_alpha3,momentum/preferred-frame alpha3,alpha3_q = W_q_alpha3 f_qV q_proxy,alpha3,FAIL_UNLESS_VECTOR_PRODUCT_NEAR_ZERO,order-one vector leakage is excluded by ~5.38e-15 product limit,False
+QPS3417_5_xi,preferred-location anisotropy,xi_q = W_q_xi f_xi q_proxy,xi,UNSCORED_DOMAIN_ANISOTROPY_MISSING,requires no anisotropic boundary/domain spurion or sourced xi bound,False
+QPS3417_6_range,finite-range q scalar kernel,alpha_q(lambda)=W_q_R10(lambda) f_range(lambda) q_proxy,R10/fifth-force alpha(lambda),DEFER_UNTIL_RANGE_KERNEL_EXISTS,cannot score R10 without range kernel and real bound comparison,False

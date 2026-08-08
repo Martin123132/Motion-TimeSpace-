@@ -1,0 +1,6 @@
+variation_id,object,formula,result,status,timestamp_utc
+GV4072_0_transform,local motion-frame transformation,X' = Lambda X + a; omega' = Lambda omega Lambda^-1 - dLambda Lambda^-1; B' = Lambda B - D' a,e' = Lambda e and g_obs' = g_obs,GAUGE_COVARIANCE_CHECK_PASSES_FORMALLY,2026-07-02T02:18:11+00:00
+GV4072_1_field_strengths,Cartan field strengths,R^AB = d omega^AB + omega^A_C wedge omega^CB; T^A = D_omega e^A = D_omega B^A + R^A_B X^B,Gamma/memory may be scalar invariants of R/T but not a replacement for omega/B,FIELD_STRENGTHS_DEFINED,2026-07-02T02:18:11+00:00
+GV4072_2_delta_omega,spin connection variation,delta_omega S_EC gives torsion/spin equation; spinless/torsion-constrained branch gives omega=omega_LC[e],EH reduction possible only after torsion gate closes,CONDITIONAL_PALATINI_REDUCTION,2026-07-02T02:18:11+00:00
+GV4072_3_delta_B_or_e,coframe/solder variation,delta_e S_EC + delta_e S_matter + delta_e S_EM = 0,tetrad Einstein equation with one coframe Hilbert source if matter/EM gate closes,CONDITIONAL_EINSTEIN_EQUATION,2026-07-02T02:18:11+00:00
+GV4072_4_delta_A3,topological kappa variation,delta_A3 int kappa_eff dA_3 = - int d kappa_eff wedge delta A_3,d kappa_eff=0 locally if boundary/topological premises hold,CONDITIONAL_CONSTANT_G,2026-07-02T02:18:11+00:00

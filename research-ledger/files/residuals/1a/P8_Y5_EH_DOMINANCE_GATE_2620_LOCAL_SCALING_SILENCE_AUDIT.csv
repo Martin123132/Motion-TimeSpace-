@@ -1,0 +1,6 @@
+scaling_id,sector_group,scaling_law,needed_inputs,current_status,resulting_residual,valid_for_claim
+LSS2620_0_exact_zero_path,all non-EH sectors,epsilon_i E_i_munu = 0 in local branch,parent grammar forbids sector or Euler variation vanishes under local branch conditions,NOT_PROVED,DeltaE_munu retained,False
+LSS2620_1_scale_suppression_path,higher derivative and nonlocal tails,|epsilon_i E_i|/|G| ~ |epsilon_i| L_local^{-p_i},"operator dimension p_i, coefficient units, and local curvature length",MISSING_UNITS_AND_COEFFICIENTS,c_R2/c_nonlocal rows remain nonclaim,False
+LSS2620_2_domain_suppression_path,projector / boundary / source readout,||E_projector+E_bdy|| <= U_B(A_boundary+A_projector),"fixed-before-readout boundary clause, commutator norm, and local projection theorem",MISSING_COMPONENT_NORMS,boundary/projector coefficient rows remain nonclaim,False
+LSS2620_3_frame_suppression_path,memory/coframe/preferred frame,|E_frame|/|G| <= tau_PPN_alpha_i,local frame-lock theorem or PPN preferred-frame projection,MISSING_FRAME_LOCK_OR_PPN_MAP,c_memory/c_frame rows remain nonclaim,False
+LSS2620_4_verdict,EH dominance,DeltaE_munu -> 0 or bounded below all local tolerances,"sector-by-sector action variation, local scaling, and empirical maps",RESIDUAL_SILENCE_NOT_CLOSED,operator coefficient pack required,False

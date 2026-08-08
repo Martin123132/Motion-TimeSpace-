@@ -1,0 +1,6 @@
+checkpoint,dryrun_id,case,predicted_response,threshold,result,next_action,score_ready,valid_for_claim,timestamp_utc
+4740,DRY4740_0_zero_branch,all_zero_certificates_signed,0,4.212667126774669e-17,PASS_CONDITIONAL_ONLY,requires all SIG4740 clauses,False,False,2026-07-07T23:49:05+00:00
+4740,DRY4740_1_CDeltaK_missing,missing_CDeltaKdiv,MISSING_SOURCE_VALUE,4.212667126774669e-17,FAIL_CLOSED,fill CDeltaKdiv or prove SIG4740_3,False,False,2026-07-07T23:49:05+00:00
+4740,DRY4740_2_CTFRI_missing,missing_CTFRI,MISSING_SOURCE_VALUE,4.212667126774669e-17,FAIL_CLOSED,fill CTFRI or prove SIG4740_2,False,False,2026-07-07T23:49:05+00:00
+4740,DRY4740_3_Ckernel_missing,missing_Ckernel,MISSING_SOURCE_VALUE,4.212667126774669e-17,FAIL_CLOSED,fill Ckernel or prove SIG4740_1/SIG4740_5,False,False,2026-07-07T23:49:05+00:00
+4740,DRY4740_4_symbolic_vector,symbolic_transition_vector,Pi_Delta*C_DeltaK_div+Pi_RI*C_TF_RI+Pi_conn*C_conn+Pi_bdry*C_boundary+Pi_kernel*C_kernel,4.212667126774669e-17,NOT_SCORE_READY,needs all component values and arena projections,False,False,2026-07-07T23:49:05+00:00

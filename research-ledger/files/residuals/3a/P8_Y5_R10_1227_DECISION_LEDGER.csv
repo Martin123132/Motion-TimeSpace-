@@ -1,0 +1,4 @@
+decision_id,decision,because,next_action,valid_for_claim,claim_allowed
+DEC1227_0_no_package_map,do not claim a CMSM package map,local machine cannot connect to CMSM and no package identifiers were obtained,user-assisted/browser portal package list or retry from a network that can reach CMSM,False,False
+DEC1227_1_no_download,do not download or create raw data rows,"there is no mapped package URL, AIP id, checksum, or license/access state",only execute dry-run download plan after package metadata exists,False,False
+DEC1227_2_parser_ready,stage parser contract rather than parser code,"without official files, parser code would be speculative and risk accepting wrong columns",build parser only after package docs reveal schema,False,False

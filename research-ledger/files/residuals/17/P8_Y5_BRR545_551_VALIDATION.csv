@@ -1,0 +1,9 @@
+check_id,result,detail
+V551_0_source_paths_exist,pass,missing=0
+V551_1_prior_550_clean,pass,prior_validation_rows=9;prior_fails=0
+V551_2_component_bound_rows_loaded,pass,reference_rows=1;boundary_rows=1;projector_rows=1
+V551_3_original_BRR545_templates_loaded,pass,input_rows=4;dryrun_rows=4;local_lock_rows=10
+V551_4_envelope_complete,pass,envelope_rows=6
+V551_5_local_lock_preflight_complete,pass,lock_preflight_rows=8;first_lock_rows=1
+V551_6_no_claim_rows,pass,claim_envelope=0;claim_lock=0;claim_first_lock=0
+V551_7_demote_not_overclaim,pass,BRR545_filled=false; first_local_lock_passed=false; local_GR_claim_allowed=false; closure_only_label_active=true

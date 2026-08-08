@@ -1,0 +1,13 @@
+check_id,check,status,details
+VAL1263_0_sources_exist,all cited local sources exist,PASS,10/10 sources exist
+VAL1263_1_needles_found,all cited local needles found,PASS,10/10 needles found
+VAL1263_2_chain_verdict,presymplectic chain verdict is conditional-not-proved,PASS,CONDITIONAL_CONTRADICTION_WRITTEN_NOT_PARENT_PROVED
+VAL1263_3_kinetic_contradiction,kinetic term contradiction is exact conditional,PASS,EXACT_CONDITIONAL_ON_TRUE_NULLNESS
+VAL1263_4_parent_blockers,parent input blockers are visible,PASS,blocker_rows=4
+VAL1263_5_prior_not_scoreable,prior envelope has no live raw/accepted rows,PASS,raw_rows=0; accepted_rows=0; docs_rows=2
+VAL1263_6_claim_gates,all claim gates remain blocked,PASS,claim_gate_rows=4
+VAL1263_7_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1263_8_next_target_1264,next target is parent theta/vR fill,PASS,1264-Y5-R10-RAB-parent-theta-vR-fill-or-finite-ZR-source-row.md
+VAL1263_9_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1263_SOURCE_REGISTER.csv:10; P8_Y5_R10_1263_PRESYMPLECTIC_NULL_DERIVATION_CHAIN.csv:6; P8_Y5_R10_1263_KINETIC_TERM_CONTRADICTION_AUDIT.csv:3; P8_Y5_R10_1263_RAB_BOUNDARY_CHARGE_AUDIT.csv:3; P8_Y5_R10_1263_PARENT_INPUT_BLOCKERS.csv:4; P8_Y5_R10_1263_PRIOR_ENVELOPE_FILL_STATUS.csv:3; P8_Y5_R10_1263_CLAIM_GATES.csv:4; P8_Y5_R10_1263_DECISION_LEDGER.csv:2; P8_Y5_R10_1263_NEXT_TARGET.csv:1
+VAL1263_10_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1263_11_overall,overall 1263 validation,PASS,"1263 proves the conditional kinetic/null contradiction, but keeps Z_R=0 and local tests blocked until parent theta/Omega/v_R and boundary silence are derived"

@@ -1,0 +1,5 @@
+gate_id,condition,current_status,source_anchor,gate_pass,valid_for_claim
+CG1902_0_label,source labels are forgotten before measured-G calibration,FAIL_SOURCE_LABEL_FORGETTING_BEFORE_GM_NOT_PARENT_DERIVED,P8_Y5_PARENT_QLOC_1902_SOURCE_LABEL_FORGETTING_BEFORE_GM_ATTEMPT.csv:SLG1902_6_verdict,False,False
+CG1902_1_no_slot,no-source-only slot/no-Hom theorem is parent-signed,FAIL_SOURCE_LABEL_FORGETTING_CLAIM_BLOCKED,P8_Y5_PARENT_QLOC_1902_NO_SOURCE_SLOT_GATE.csv:NSG1902_5_verdict,False,False
+CG1902_2_profile_map,profile/worldtube source-vector map is executable if source labels are not zero,FAIL_PROFILE_SOURCE_VECTOR_MAP_NOT_EXECUTABLE_NONCLAIM,P8_Y5_PARENT_QLOC_1902_PROFILE_SOURCE_VECTOR_MAP_NONCLAIM.csv:PSM1902_6_verdict,False,False
+CG1902_3_verdict,1902 branch supports WEP/local-GR source claim,CLAIM_BLOCKED,CG1902_0_label through CG1902_2_profile_map,False,False

@@ -1,0 +1,8 @@
+gate_id,condition,current_status,source_anchor,gate_pass,valid_for_claim,claim_allowed,timestamp_utc
+CG2694_0_kappa,constant kappa/G_eff parent-owned or residual values filled,FAIL_KAPPA_PARENT_ADOPTION_UNSIGNED,CERT2694_0_kappa;REQ2694_0_kappa_drift,false,false,false,2026-06-23T07:46:39.045810+00:00
+CG2694_1_sector_certificates,non-EH sectors have silence certificates,FAIL_SECTOR_CERTIFICATE_PASS_FAILED,CERT2694_10_verdict,false,false,false,2026-06-23T07:46:39.045814+00:00
+CG2694_2_residual_values,"failed sectors have values, units, kernels and source paths",FAIL_RESIDUAL_VALUE_REQUIREMENTS_NONCLAIM,REQ2694_9_total,false,false,false,2026-06-23T07:46:39.045816+00:00
+CG2694_3_source_gauss,source-measure/worldtube/Gauss chain closed,FAIL_PARALLEL_SOURCE_GAUSS_HELD,CERT2694_1_source_measure,false,false,false,2026-06-23T07:46:39.045819+00:00
+CG2694_4_no_cancellation,absolute no-cancellation guard active,PASS_GUARD_ONLY,DRY2694_5_cancellation_only,true,false,false,2026-06-23T07:46:39.045821+00:00
+CG2694_5_no_gm_backfill,fitted orbital GM backfill refused,PASS_GUARD_ONLY,DRY2694_6_fitted_gm,true,false,false,2026-06-23T07:46:39.045824+00:00
+CG2694_6_verdict,local GR/Newton branch can claim pass,CLAIM_BLOCKED,CG2694_0 through CG2694_5,false,false,false,2026-06-23T07:46:39.045826+00:00

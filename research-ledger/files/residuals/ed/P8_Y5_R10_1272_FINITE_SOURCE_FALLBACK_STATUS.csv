@@ -1,0 +1,5 @@
+fallback_id,branch,rows_seen,accepted_ready,status,reason,next_action,valid_for_claim,claim_allowed
+FFB1272_0_docs_templates,docs templates,11,0,REJECTED_AS_TEMPLATES,docs templates are not live source-backed intake,leave templates as nonclaim instructions only,False,False
+FFB1272_1_raw_intake,raw finite Z_R rows,0,0,NO_RAW_ROWS,no source-backed raw coefficient row exists,do not fabricate finite residual coefficients,False,False
+FFB1272_2_accepted_intake,accepted finite Z_R rows,0,0,NO_ACCEPTED_ROWS,no validator-accepted finite residual source row exists,finite branch remains unscored,False,False
+FFB1272_3_no_row_created,1272 generation,11,0,NO_SOURCE_BACKED_ROW_CREATED,1272 is a derivation checkpoint; it did not identify a real coefficient source,"only create a raw row after source path, anchor, units, coefficient, and projection are real",False,False

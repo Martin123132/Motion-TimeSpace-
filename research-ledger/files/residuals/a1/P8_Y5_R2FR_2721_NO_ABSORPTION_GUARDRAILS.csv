@@ -1,0 +1,6 @@
+guardrail_id,rule,allowed_use,violation_effect,active,claim_credit
+GUARD2721_0_no_orbital_GM_input,"Observed orbital GM cannot be used to define M_source, M_H_ref, G_ref, or any residual normalizer.",downstream observable after parent source and coupling are fixed,circular Newton/PPN claim,true,false
+GUARD2721_1_fixed_before_fit,"G_ref, kappa0, H_ref/counterterms, source charge and tau/coframe frame must be declared before fitting local residuals.",pre-fit protocol row only,residual absorption into constants,true,false
+GUARD2721_2_one_source_measure,"R10, PPN, clocks and orbital tests must use the same parent source measure unless a sourced conversion row exists.",arena projection after common source normalization,incompatible wins across arenas,true,false
+GUARD2721_3_no_reference_cancellation,H_ref/background/counterterm choices cannot be tuned to cancel the tested residual.,fixed reference convention with source path,fake local-GR pass,true,false
+GUARD2721_4_no_shadow_hiding,Non-Hilbert source-shadow and species-dependent currents cannot be hidden in E_norm.,separate E_shadow row or zero theorem,WEP/composition leakage hidden as normalization,true,false

@@ -1,0 +1,5 @@
+row_id,claim,allowed,reason,blocking_rows,valid_for_claim
+REF2761_0_standalone_balpha,clock row gives standalone b_alpha,False,the row bounds only b_alpha*tau_clock_time and tau_clock_time is not parent-derived,CON2761_1_tau_clock;TR2761_1_clock_to_balpha,False
+REF2761_1_clock_export,clock product can be used directly in WEP/R10/local tests,False,projection taus and source/test/material factors are missing,TR2761_2_clock_to_WEP;TR2761_3_clock_to_R10;TR2761_5_mixed_branch_guard,False
+REF2761_2_delta_w_bound,MICROSCOPE comparator bound supplies delta_w_A,False,comparator bound is not an MTS prediction and lacks material/source/tau transfer,DW2761_1_delta_w_prediction;TR2761_4_delta_to_local,False
+REF2761_3_local_GR,MTS derives local GR/Newton after 2761,False,"2761 adds a clock-only product row, not a complete local residual vector",ARENA2761_3_PPN_local;CG2761_6_local_GR_Newton,False

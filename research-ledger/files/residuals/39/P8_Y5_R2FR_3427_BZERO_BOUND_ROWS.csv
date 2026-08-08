@@ -1,0 +1,7 @@
+bound_id,quantity,definition,bound_formula,status,valid_for_claim
+BZR3427_0_reference_shift,Delta_ref_over_MH,reference subtraction shift normalized by dressed source charge,0 if H_ref is parent-fixed and derivative-silent; otherwise |H_ref_shift|/M_H_ref,CONDITIONAL_ZERO_NEEDS_PARENT_REFERENCE_SIGNATURE,False
+BZR3427_1_Bzero_Hilbert_identity,B_zero_flux^H,exact boundary improvement flux in Hilbert-identity branch,0 for closed homologous surfaces with fixed corner data,CONDITIONAL_THEOREM_ZERO,False
+BZR3427_2_Bzero_topological,B_zero_flux^top,old topological-Hilbert exact correction flux,M_H_ref^-1 |int_boundary dB_zero|,MISSING_SAME_OBJECT_BOUNDARY_ZERO_PROOF_OR_VALUE,False
+BZR3427_3_Delta_symp_EH,Delta_symp^EH_over_MH,public EH/Hilbert symplectic boundary leakage,"0 under fixed tau, reference, boundary and corner conditions",CONDITIONAL_THEOREM_ZERO,False
+BZR3427_4_Delta_symp_residual,Delta_symp^residual_over_MH,Z/Y6/projector/hidden-sector symplectic or boundary leakage,M_H_ref^-1 |Delta_symp^Z+Delta_symp^Y6+Delta_symp^projector+Delta_symp^hidden|,MISSING_RESIDUAL_NO_HAIR_OR_VALUES,False
+BZR3427_5_total,epsilon_boundary_reference_after_3427,no-cancellation boundary/reference residual after Hilbert-identity branch split,Delta_ref_over_MH+B_zero_flux^top+Delta_symp^residual_over_MH,FORMULA_READY_VALUES_MISSING,False

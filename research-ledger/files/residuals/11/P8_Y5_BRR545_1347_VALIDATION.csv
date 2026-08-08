@@ -1,0 +1,11 @@
+check_id,check,status,details
+VAL1347_0_sources_exist,registered source paths exist and anchors are found,PASS,10/10 source anchors found
+VAL1347_1_memory_scaffold_found,memory action/operator scaffold is found but not signed,PASS,OWN1347_0_memory_action_scaffold
+VAL1347_2_bmem_route_found,memory branch-extremum B_mem route is identified as the best next target,PASS,OWN1347_2_memory_branch_extremum
+VAL1347_3_no_claim_ready_owner,no coefficient owner is claim-ready,PASS,OWN1347_0_memory_action_scaffold=SCAFFOLD_FOUND_NOT_PARENT_SIGNED;OWN1347_1_memory_positive_gap=FORMULA_OWNER_FOUND_VALUES_MISSING;OWN1347_2_memory_branch_extremum=PROMISING_CONDITIONAL_ROUTE_NOT_DERIVED;OWN1347_3_memory_matter_vertex=CONDITIONAL_ROUTE_COUNTEREXAMPLE_LOCKED;OWN1347_4_memory_source_boundary=RELATIVE_LEMMA_READY_INPUTS_UNSIGNED;OWN1347_5_fibre_unique_gap=FINITE_BRANCH_IF_CHOSEN_NOT_ZERO_OWNER;OWN1347_6_fibre_curvature_vertex=EXACT_IF_PARENT_GRAMMAR_SIGNED_ELSE_UNSIGNED;OWN1347_7_fibre_matter_vertex=CONDITIONAL_NOT_PARENT_SIGNED;OWN1347_8_fibre_boundary=NO_ZERO_WITHOUT_NO_CHARGE
+VAL1347_4_closure_ledger_complete,explicit closure/residual ledger covers memory and fibre,PASS,closure_rows=4
+VAL1347_5_claims_blocked,"owner, R2/fR zero, and runner claims remain blocked",PASS,GATE1347_0_owner_claim=BLOCKED;GATE1347_1_R2FR_zero=BLOCKED;GATE1347_2_runner=BLOCKED
+VAL1347_6_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false where present
+VAL1347_7_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1347_8_next_target_1348,next target routes to memory branch-extremum/operator signature,PASS,1348-Y5-R10-RAB-memory-branch-extremum-and-operator-signature-or-closure.md
+VAL1347_9_overall,overall 1347 validation,PASS,"1347 finds memory scaffold and B_mem extremum route, finds no claim-ready owner, and writes explicit closure ledger"

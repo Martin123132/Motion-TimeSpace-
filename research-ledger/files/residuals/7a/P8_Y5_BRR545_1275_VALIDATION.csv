@@ -1,0 +1,14 @@
+check_id,check,status,details
+VAL1275_0_sources_exist,all cited local sources exist,PASS,10/10 sources exist
+VAL1275_1_needles_found,all cited local needles found,PASS,10/10 needles found
+VAL1275_2_import_guard,"GR pattern is marked reference-only, not proof",PASS,GRP1275_0_static_spherical_pattern=REFERENCE_ONLY_NOT_PROOF
+VAL1275_3_equation_diff_not_derived,MTS equation-difference derivation remains blocked,PASS,EDA1275_5_verdict=NOT_DERIVED
+VAL1275_4_closure_baseline,local closure baseline is explicit and nonclaim,PASS,closure_rows=4
+VAL1275_5_missing_parent_map,missing parent Euler/source map is explicit,PASS,missing_parent_rows=6
+VAL1275_6_finite_fallback_locked,finite branch has no source-backed accepted rows,PASS,docs_rows=11; raw_rows=0; accepted_rows=0; accepted_ready=0
+VAL1275_7_claim_gates_safe,claim gates remain blocked except closure-baseline nonclaim gate,PASS,claim_gate_rows=5
+VAL1275_8_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1275_9_next_target_1276,next target routes to parent Euler/source-map contract or closure scorecard,PASS,1276-Y5-R10-RAB-parent-Euler-source-map-contract-or-closure-baseline-scorecard.md
+VAL1275_10_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1275_SOURCE_REGISTER.csv:10; P8_Y5_R10_1275_GR_PATTERN_IMPORT_GUARD.csv:3; P8_Y5_R10_1275_MTS_EQUATION_DIFFERENCE_ATTEMPT.csv:6; P8_Y5_R10_1275_LOCAL_CLOSURE_BASELINE.csv:4; P8_Y5_R10_1275_MISSING_PARENT_EULER_SOURCE_MAP.csv:6; P8_Y5_R10_1275_FINITE_RESIDUAL_DECISION.csv:2; P8_Y5_R10_1275_ZR_VALIDATOR_RESCAN.csv:11; P8_Y5_R10_1275_CLAIM_GATES.csv:5; P8_Y5_R10_1275_DECISION_LEDGER.csv:3; P8_Y5_R10_1275_NEXT_TARGET.csv:1
+VAL1275_11_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1275_12_overall,overall 1275 validation,PASS,"1275 attempts the GR-style radial equation-difference route, blocks it because MTS parent Euler/source maps are missing, records C_R=0 as closure-only, and routes to the parent Euler/source-map contract next"

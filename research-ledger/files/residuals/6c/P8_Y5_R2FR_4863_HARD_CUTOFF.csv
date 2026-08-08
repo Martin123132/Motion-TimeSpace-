@@ -1,0 +1,12 @@
+row_id,equation,meaning,status,valid_for_claim,timestamp_utc
+CUT4863_0_canonical,v_c=Mbar sqrt(q) v; q=c14,common local canonical flow normalization,EXACT,False,2026-07-10T02:45:00+01:00
+CUT4863_1_cubic,Lambda3_exact=Mbar q^(3/2)/C3,all pure-flow cubic vertices are perturbative below this norm scale,DERIVED_HARD_VERTEX_SCALE,False,2026-07-10T02:45:00+01:00
+CUT4863_2_quartic,Lambda4_exact=Mbar q/sqrt(C4),all pure-flow quartic vertices are perturbative below this norm scale,DERIVED_HARD_VERTEX_SCALE,False,2026-07-10T02:45:00+01:00
+CUT4863_3_control,Lambda3/Lambda4=sqrt(q/C3)<1 and Lambda3/Lambda_sigma=q/C3<1,cubic norm scale controls,PROVED,False,2026-07-10T02:45:00+01:00
+CUT4863_4_floor,Lambda_hard_floor=6sqrt(2)Mbar(1-p)sqrt(p)[r/(1+r)]^(3/2)/(5-3p),global lower bound using Cbar_op,DERIVED_GLOBAL_FLOOR,False,2026-07-10T02:45:00+01:00
+CUT4863_5_inversion,y=[Ereq(5-3p)/(6sqrt(2)Mbar(1-p)sqrt(p))]^(2/3); r>=y/(1-y),hard-cutoff energy-window inversion,DERIVED,False,2026-07-10T02:45:00+01:00
+CUT4863_6_hvv,Lambda_hvv>=Mbar q/Cbar_op,one-graviton/two-flow vertices are parametrically above the pure-flow cubic scale,DERIVED_MIXED_GRAVITY_BOUND,False,2026-07-10T02:45:00+01:00
+CUT4863_7_mix,epsilon_mix<=Cbar_op/sqrt(q),quadratic flow-metric canonical mixing bound,DERIVED,False,2026-07-10T02:45:00+01:00
+CUT4863_8_mixfloor,A=p(5-3p)^2/[18(1-p)^2]; epsilon_mix<=1 if r>=A/(1-A),exact conservative mixing-floor inversion,DERIVED,False,2026-07-10T02:45:00+01:00
+CUT4863_9_partial,"E<min(Lambda3_exact,Lambda4_exact,Lambda_hvv,Mbar)",hard Wilsonian perturbativity requirement; no 4pi or cancellation credit,SELECTED_HARD_CUTOFF_NOT_EXACT_PARTIAL_WAVE,False,2026-07-10T02:45:00+01:00
+CUT4863_10_scope,massless forward exchange and exact angular eigenchannels are not used to raise the cutoff,hard cutoff is sufficient and deliberately below any order-one partial-wave enhancement,CLAIM_CEILING,False,2026-07-10T02:45:00+01:00

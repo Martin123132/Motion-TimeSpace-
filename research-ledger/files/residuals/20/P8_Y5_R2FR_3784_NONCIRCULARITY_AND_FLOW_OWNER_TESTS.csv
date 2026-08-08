@@ -1,0 +1,6 @@
+current_status,requirement,test_id,timestamp_utc,valid_for_claim,verdict
+UNSIGNED,"B_Q[Phi_MTS,Psi_Q] contains no A_obs, F_obs, Maxwell equation, Lorentz force, or EM stress as an input.",NCT3784_0_no_A_in_BQ,2026-06-30T18:03:00.767679+00:00,False,blocks derived claim; otherwise Pi_Q is renamed EM
+PROMISING_UNFILLED,"B_Q is computed from owned MTS flow primitives such as normalized phase-flow, vorticity, connection on node bundle, or pre-EM Poynting-like stress flow.",NCT3784_1_flow_origin,2026-06-30T18:03:00.767679+00:00,False,"best constructive fork is vorticity/defect flow, but parent operator is not yet written"
+PASSED_AS_GUARD_NOT_AS_CONSTRUCTION,dPi_Q must be nonzero away from defects without defining Pi_Q=dtheta_Q or df(psi).,NCT3784_2_no_pure_gradient,2026-06-30T18:03:00.767679+00:00,False,pure-gradient routes rejected; need primitive one-form or defect curvature
+UNSIGNED,"J_Q, charged matter, EM stress, and binding stress arise from the same source action used by Pi_M_total.",NCT3784_3_same_source,2026-06-30T18:03:00.767679+00:00,False,blocks Newton/PPN promotion until source action is explicit
+UNSIGNED,"q_*, N_Q, and Z_Pi are fixed by parent units/superselection or empirical finite-bound rows, not tuned after data.",NCT3784_4_normalization,2026-06-30T18:03:00.767679+00:00,False,blocks alpha_EM claim; leaves finite-bound mode active

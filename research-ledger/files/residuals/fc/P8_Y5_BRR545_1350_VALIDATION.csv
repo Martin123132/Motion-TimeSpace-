@@ -1,0 +1,11 @@
+check_id,check,status,details
+VAL1350_0_sources_exist,registered source paths exist and anchors are found,PASS,SRC1350_0_1349_doc=True/True;SRC1350_1_1349_residual_branch=True/True;SRC1350_2_1349_claim_gate=True/True;SRC1350_3_1010_q_loc_residual=True/True;SRC1350_4_1011_bound_fill=True/True;SRC1350_5_1348_bmem_extremum=True/True
+VAL1350_1_schema_has_claim_blockers,runner schema contains all blockers needed before a claim can score,PASS,missing=[]
+VAL1350_2_required_inputs_reject_current,all required current input rows reject and remain nonclaim,PASS,rows=9
+VAL1350_3_dry_run_rejects_bad_rows,"dry-run rejects symbolic, no-parent, partial-response, and axiom cases",PASS,DRY1350_0_current_symbolic_Bmem=REJECT;DRY1350_1_numeric_without_parent=REJECT;DRY1350_2_Gamma_without_Khat=REJECT;DRY1350_3_q_loc_zero_by_axiom=REJECT
+VAL1350_4_future_template_only,"complete future row is only a template, not a current claim",PASS,WOULD_ACCEPT_IF_REAL_FILES_AND_VALUES_EXIST
+VAL1350_5_claim_gates_blocked,all claim gates remain blocked,PASS,GATE1350_0_score_Bmem=BLOCKED;GATE1350_1_q_loc_zero=BLOCKED;GATE1350_2_R10=BLOCKED;GATE1350_3_PPN=BLOCKED;GATE1350_4_clock_orbital=BLOCKED
+VAL1350_6_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false across generated rows
+VAL1350_7_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1350_8_next_target_1351,next target routes to Gamma/Khat/Ploc owner bundle or q_loc bound fill,PASS,1351-Y5-R10-RAB-Gamma-Khat-Ploc-owner-bundle-or-q_loc-bound-row-fill.md
+VAL1350_9_overall,overall 1350 validation,PASS,1350 installs strict nonclaim runner contract for finite B_mem/q_loc residual branch

@@ -1,0 +1,7 @@
+gate_id,rule,current_result,evidence,promotion_effect
+G0_Yloc_parent_owned,Y_loc^A is derived from parent variables and its compact-local Euler equations force every component to zero,fail_for_claim,Y_loc multiplet written as contract only,no local EH/R11 pass
+G1_composite_not_independent,"Sigma_loc is a composite squared norm, not an independently constrained switch",pass_as_clause_design,Sigma_loc=G_AB Y^A Y^B,prevents single-zero/multiplier cheat but does not prove Y=0
+G2_all_R11_factorized,every non-topological R11 family is multiplied by Sigma_loc or is absent,fail_for_claim,actual R11 rows still contain missing coefficients/selectors,R11 silence not derived
+G3_boundary_topological_closed,boundary/topological terms are either scalar no-flux/topological or included in Y_loc,fail_for_claim,boundary no-flux remains premise from 485/486,alpha3 boundary channel still open
+G4_stress_Bianchi_closed,selector/projector/domain/boundary stresses vanish or are retained with a conserved residual,fail_for_claim,stress/Bianchi ledger still retained,no PPN/local-GR promotion
+G5_public_claim,"no Newton, PPN, alpha3, mu_extra-zero, EH-only, R11, or local-GR claim is made",pass,all parent clause and operator mapping rows valid_for_claim=false,claim ceiling enforced

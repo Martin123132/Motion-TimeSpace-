@@ -1,0 +1,6 @@
+gate_id,gate,current_result,promotes_if,valid_for_claim
+PG3409_0_bound_pack_written,non-EH residue channels use the 3408 GR pole as denominator,PASS_AS_NONCLAIM_INTERFACE,not a claim gate,False
+PG3409_1_parent_residues_numeric,"every active non-EH channel has H_i, R_i, J_i, mass/range and projection",FAIL_MISSING_PARENT_INPUTS,all residue inputs are source-backed and numeric or theorem-zero,False
+PG3409_2_empirical_locks,every active channel is checked against beta/gamma/alpha_i/xi/R10/WEP/clock/orbital locks,FAIL_MISSING_ARENA_PROJECTIONS,each channel passes without cancellation credit,False
+PG3409_3_q_loc_alpha_vector,q_loc beta/gamma/preferred-frame vector split is signed,FAIL_ALPHA3_WARNING_LIVE,"alpha-vector leakage is zero, source-silent, or bounded by sourced projections",False
+PG3409_4_local_GR_reduction,local GR/PPN branch claim,BLOCKED,"PG3409_1, PG3409_2 and PG3409_3 all pass, plus 3408 parent-action/readout/Hilbert/boundary gates",False

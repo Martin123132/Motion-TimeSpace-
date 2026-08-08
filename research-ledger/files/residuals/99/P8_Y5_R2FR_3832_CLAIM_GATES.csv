@@ -1,0 +1,6 @@
+gate_id,gate,status,claim_allowed,reason,timestamp_utc
+GATE3832_0_separation,tensor-virial and EM/Poynting TF stress separated,PASS_SEPARATION_NONCLAIM,False,separate ledgers emitted for tensor-virial TF and EM/Poynting TF terms,2026-07-01T02:11:49+00:00
+GATE3832_1_EM_zero,EM/Poynting TF zero claim,BLOCKED_PARENT_OR_SOURCE_BOUND_REQUIRED,False,"field stress, flux stress, and parent cancellation rows are not source-backed",2026-07-01T02:11:49+00:00
+GATE3832_2_tensor_virial_zero,tensor-virial TF zero claim,BLOCKED_SOURCE_BOUND_REQUIRED,False,"inertia, surface/exchange, and flux corrections are not signed",2026-07-01T02:11:49+00:00
+GATE3832_3_gamma,gamma/no-slip claim,BLOCKED_REFINED_BOUND_ONLY,False,gamma bound is refined but still lacks numeric/source-backed local rows,2026-07-01T02:11:49+00:00
+GATE3832_4_next_target,next target moves to parent-extra/readout slip,PASS_ACTIONABLE_NEXT,False,matter/EM side is now decomposed; next no-slip term is parent extra scalar/readout mismatch,2026-07-01T02:11:49+00:00

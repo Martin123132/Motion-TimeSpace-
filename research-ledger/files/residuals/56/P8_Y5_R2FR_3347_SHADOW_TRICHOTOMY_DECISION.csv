@@ -1,0 +1,6 @@
+case_id,candidate,classification,action,survives_as_residual,valid_for_claim
+TRI3347_0_identity,P_src = I + C_0 I,identity plus measured-G common mode,absorb C_0 into G_N; no WEP/source-composition residual,false,false
+TRI3347_1_variational,P_src(T_H)-T_H = delta DeltaS/delta g_obs,real action content,move DeltaS into parent action inventory or forbid it by Args(S_parent),true_until_parent_inventory_closes,false
+TRI3347_2_boundary,J_shadow = nabla_alpha U^{alpha mu nu},boundary/improvement,"zero under signed local falloff/no-flux condition, otherwise bound boundary contact residual",true_until_boundary_signed,false
+TRI3347_3_nonvariational,J_shadow inserted into RHS without DeltaS,Bianchi-inconsistent unless separately conserved,reject as parent field theory or classify as decoupled residual block,true_if_separately_conserved_block_exists,false
+TRI3347_4_relative_projector,Pi_rel(T_H) labelled by material/species/source composition,observable source-shadow leakage,bound epsilon_source_shadow using WEP/source-composition tests with no-cancellation guard,true_until_zero_or_bound_promoted,false

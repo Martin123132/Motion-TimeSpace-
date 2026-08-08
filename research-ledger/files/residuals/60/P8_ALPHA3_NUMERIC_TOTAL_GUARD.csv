@@ -1,0 +1,5 @@
+guard_id,rule,current_status,failure_mode_prevented,valid_for_claim
+TG0_individual_first,boundary and domain alpha3 products must pass individually before total alpha3 can be scored,active,post-fit cancellation between hidden boundary and domain fluxes,false
+TG1_parent_cancellation_identity,a total cancellation claim is allowed only if a parent identity is derived before fitting,not_present,tuned cancellation masquerading as field-theory prediction,false
+TG2_domain_siblings,domain alpha3 cannot pass while R5/R6/R8/R11 sibling rows remain missing or unscored,active,closing alpha3 while preferred-frame/source-normalization leakage survives elsewhere,false
+TG3_source_path_required,"numeric products require source file, formula reference, units, assumptions, and bound comparison",active,unsourced tiny number inserted after the fact,false

@@ -1,0 +1,6 @@
+derivation_id,step,mathematical_form,result,status,valid_for_claim,generated_utc
+GAM931_0_metric_ansatz,write weak-field residual split,g_00=-1+2 U_N + 2 a_FM epsilon_FM U_N; g_ij=delta_ij(1+2 U_N + 2 b_FM epsilon_FM U_N),a_FM controls Newtonian time-potential response; b_FM controls spatial-curvature response,ansatz_for_projection_not_parent_derived,false,2026-06-13T18:10:32.454402+00:00
+GAM931_1_observed_G_calibration,calibrate U_obs by g_00,U_obs := U_N(1+a_FM epsilon_FM),a universal time-potential rescaling is absorbed into measured GM only after source normalization is fixed,conditional_readout_definition,false,2026-06-13T18:10:32.454422+00:00
+GAM931_2_gamma_projection,compute gamma_eff relative to U_obs,gamma_eff=(1+b_FM epsilon_FM)/(1+a_FM epsilon_FM)=1+(b_FM-a_FM)epsilon_FM+O(epsilon_FM^2),C_gamma_FM = b_FM - a_FM,projection_formula_derived,false,2026-06-13T18:10:32.454424+00:00
+GAM931_3_gamma_bound,apply Cassini-style gamma lock,|gamma-1| = |C_gamma_FM epsilon_FM| <= 2.3e-05,|epsilon_FM| <= 2.3e-05/|b_FM-a_FM| when C_gamma_FM is nonzero,symbolic_bound_only,false,2026-06-13T18:10:32.454427+00:00
+GAM931_4_KBFH_bound,substitute epsilon_FM=|K_BF_H|X_FM,|K_BF_H| <= 2.3e-05/(|b_FM-a_FM| X_FM),K_BF_H can be bounded only after C_gamma_FM and X_FM are parent-derived or sourced,symbolic_bound_only,false,2026-06-13T18:10:32.454429+00:00

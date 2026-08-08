@@ -1,0 +1,5 @@
+bound_id,symbol,formula,required_inputs,current_value,status,valid_for_claim
+BND3244_0_Jtot_definition,J_A^tot,J_A^tot := J_A^matter + J_A^measure + J_A^theta + J_A^projector + B_A + J_A^oddGamma,"same branch q,Z,measure,theta,projector,boundary and normalization",MISSING_COMPONENT_ZERO_OR_NUMERIC_ROWS,SOURCE_READY_NONCLAIM,false
+BND3244_1_bulk_bound,J_A^bulk_bound,|J_A^bulk| <= C_q||Dq[e_A]|| + C_src||source_label_A|| + C_mu||D_A log mu|| + C_theta||D_A theta||,"C_q,C_src,C_mu,C_theta plus sourced branch norms",MISSING_CONSTANTS_AND_NORMS,FINITE_BOUND_FORM_DERIVED,false
+BND3244_2_boundary_bound,B_A_bound,|B_A| <= ||Theta_A + D_A B_ref||_boundary + C_flux||S_EM dot n||_B + B_corner + B_top + B_projector,"boundary norm, C_flux, EM stress flux, corner/topology/projector rows",MISSING_BOUNDARY_INPUTS,FINITE_BOUND_FORM_DERIVED,false
+BND3244_3_total_bound,||J_tot||,||J_tot|| <= ||J_bulk_bound|| + ||B_bound|| + ||J_oddGamma||,component bounds in common units and same norm,MISSING_COMMON_NORM_AND_COMPONENT_VALUES,CLAIM_BLOCKED_BUT_NOW_BOUNDABLE,false

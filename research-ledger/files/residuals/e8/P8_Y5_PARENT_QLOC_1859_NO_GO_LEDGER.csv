@@ -1,0 +1,7 @@
+no_go_id,candidate,why_it_fails,survives_as,status,valid_for_claim
+NG1859_0_generic_volume,generic four-volume or broad volume preservation,selects wrong exponents or is underdetermined; previous audit gives p=1/3 or other non-GR lanes,discarded shortcut,REJECT,False
+NG1859_1_liouville,canonical Liouville/symplectic phase-volume preservation,(T sqrt(S))*(1/(T sqrt(S)))=1 for every p,background consistency only,REJECT_AS_SELECTOR,False
+NG1859_2_null_propagation,radial null propagation,dr/dt=cT/sqrt(S) is defined for any p; it does not force T sqrt(S)=1,readout constraint after metric is known,REJECT_AS_SELECTOR,False
+NG1859_3_unimodular_cell,impose theta_0 wedge theta_1 equals flat/reference radial cell,"exactly gives C_R=0, but as an imposed cell determinant it is closure-only unless parent dynamics force it",explicit local closure baseline,CLOSURE_ONLY,False
+NG1859_4_ordinary_current,conserved radial observer-cell current,ordinary conservation preserves Q_R hair instead of setting Q_R=0,finite residual or no-charge theorem target,REJECT_AS_ZERO_PROOF,False
+NG1859_5_gauge_noether,Noether/gauge language alone,Noether identities relate equations after a parent action exists; they do not conjure R_AB=0 from nothing,constraint algebra requirement after parent action is written,REJECT_AS_ORIGIN,False

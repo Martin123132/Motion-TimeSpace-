@@ -1,0 +1,5 @@
+queue_id,option,why_next,success_condition,fallback,priority
+NQ598_A_parent_projector,derive P_loc as a parent-owned Q_obs projector,P_loc ownership is the smallest remaining structural hole in the observed q_loc row,P_loc=Pi o pi and projection does not hide unprojected force components,carry full unprojected q_loc residual,high
+NQ598_B_boundary_no_flux,derive compact boundary primitive/no-flux,boundary flux can spoil both Ward zero and source-measure closure,boundary_flux=0 or exact/fixed-reference with zero compact charge,score compact-shell and alpha3/source-measure residuals,high
+NQ598_C_compact_shell_mapping,map 7.432631961576971e-06 compact-shell proxy into PPN/source-normalization units,"if derivation stalls, this is the first numeric residual pressure test",source-backed unit map and sign convention,block numeric claim,medium
+NQ598_D_Y5_source_owner,derive measured source charge as one parent EH/Hilbert mass with no extra projection,Y5 blocks source-normalized Newton/PPN more directly than q_loc algebra,mu_obs=G0 M_H and mu_extra=0 with no derivative hair,fill Y5 bound runner rows,high_but_harder

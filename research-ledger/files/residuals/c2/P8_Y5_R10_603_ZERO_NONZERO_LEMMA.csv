@@ -1,0 +1,7 @@
+lemma_id,statement,proof_status,proof_sketch,not_proved,valid_for_claim
+ZNL603_0_local_gap,projected local spectral gap implies b_D=0,proved_from_premise,"if rho_MTS,D(omega)=0 for 0<omega<omega_gap, then lim rho/omega=0",the parent action forces the projected local gap,false
+ZNL603_1_local_trivial_class,local exact/trivial relative class implies c_D=0,proved_from_premise,"Pi_rel kills exact relative representatives, so the projected class norm vanishes",the local branch is always exact/trivial in the parent theory,false
+ZNL603_2_activation_zero,b_D=0 or c_D=0 implies A_D=b_D c_D=0,algebra_pass,product activation has zero if either required local-silence premise holds,A_D normalization and action coupling are parent-owned,false
+ZNL603_3_FLRW_active,Ohmic coherent bath plus nontrivial expansion class implies A_D>0,conditional_pass,b_D=eta>0 and c_D>0 give A_D>0,FLRW bath/class are parent-derived rather than imposed,false
+ZNL603_4_double_zero_gate,A_D=0 with p>=2 selector gate gives local first-variation silence for the gated memory term,conditional_pass,"delta(A_D^p L)=p A_D^(p-1)L delta A_D + A_D^p delta L, which vanishes at A_D=0 for p>=2",p>=2 and A_D are both derived by a single deeper parent principle,false
+ZNL603_5_counterexample_guard,"without P_MTS,D, ordinary local baths can make b_D>0 and falsely activate N_D",guard_pass,generic local EM/matter/environmental spectral density need not be gapped in the unprojected channel,ordinary/MTS sector split by a parent boundary kernel,false

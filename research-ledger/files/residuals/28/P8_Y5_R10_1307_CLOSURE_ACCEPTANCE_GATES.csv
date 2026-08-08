@@ -1,0 +1,5 @@
+gate_id,condition,current_status,if_fail,valid_for_claim,claim_allowed
+CAG1307_0_constant_only,Z_m is a global positive constant in the private branch,ASSUMED_ONLY_NOT_PARENT_DERIVED,canonical closure invalid; return to parent Z_m(X_B) function/bounds,False,False
+CAG1307_1_transfer_complete,"V_R, J_m, Q_H, q_T, Pi_M, GM, boundary/projector/memory terms are all transformed and retained",TRANSFER_RESIDUALS_RETAINED_NOT_CLOSED,closure hides coupling and must not be used,False,False
+CAG1307_2_no_claim,canonical Z_m=1 branch is private algebra/sensitivity only,PASS_POLICY_RECORDED,public/local-GR/R10/PPN claims would be overclaims,False,False
+CAG1307_3_smoke_allowed,smoke tests may run only with every transferred coupling marked closure_assumed/speculative/nonclaim,ALLOWED_FOR_NONCLAIM_SMOKE_ONLY,runner outputs must be blocked,False,False

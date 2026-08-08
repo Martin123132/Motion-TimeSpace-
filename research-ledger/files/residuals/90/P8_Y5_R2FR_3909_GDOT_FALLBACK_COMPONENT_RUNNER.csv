@@ -1,0 +1,6 @@
+runner_id,case,formula,value_or_status,bound,result,valid_for_claim,timestamp_utc
+GDF3909_0_conditional_zero,adopt ZF3909 and close other drift components,Gdot_total = |d_t ln G_*| + |d_t ln M_eff| + |d_t epsilon_mu/(1+epsilon_mu)| + |d_t ln Z_Poisson| + |d_t ln Z_frame|,0 if every component is theorem-zero,9.6e-15 yr^-1,CONDITIONAL_PASS_NOT_CLAIMED,False,2026-07-01T09:53:51+00:00
+GDF3909_1_partial_zero,adopt ZF3909 only for Gstar,Gdot_total = 0 + |d_t ln M_eff| + |d_t epsilon_mu/(1+epsilon_mu)| + |d_t ln Z_Poisson| + |d_t ln Z_frame|,GSTAR_COMPONENT_CLOSED_OTHER_INPUTS_MISSING,9.6e-15 yr^-1,BLOCKED_COMPONENTS_REMAIN,False,2026-07-01T09:53:51+00:00
+GDF3909_2_live_fallback,no ZF3909 adoption,Gdot_total = |d_t ln G_*| + |d_t ln M_eff| + |d_t epsilon_mu/(1+epsilon_mu)| + |d_t ln Z_Poisson| + |d_t ln Z_frame|,MISSING_NUMERIC_COMPONENTS,9.6e-15 yr^-1,BOUND_FORMULA_READY_NUMERIC_COMPONENTS_MISSING,False,2026-07-01T09:53:51+00:00
+GDF3909_3_dry_pass,arithmetic check,sum components = 2e-16 yr^-1,2e-16,9.6e-15 yr^-1,PASS_DRYRUN_ARITHMETIC_ONLY,False,2026-07-01T09:53:51+00:00
+GDF3909_4_dry_fail,arithmetic check,sum components = 1e-12 yr^-1,1e-12,9.6e-15 yr^-1,FAIL_DRYRUN_ARITHMETIC_ONLY,False,2026-07-01T09:53:51+00:00

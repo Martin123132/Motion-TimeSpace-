@@ -1,0 +1,6 @@
+branch_id,decision_id,decision,reason,next_action,valid_for_claim,claim_allowed
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,D1689_0_zero,BULK_ALPHA_ZERO_NOT_SIGNED,exact alpha-zero condition exists but beta source/test and tail-zero premises are unsigned,do not claim R10/local pass,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,D1689_1_template,RUNNER_SHAPED_TEMPLATE_BRIDGED,1392 template is copied into current 1689 route with factor exposure and nonclaim flags,use it as plumbing only,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,D1689_2_curve,FULL_R10_CURVE_STILL_MISSING,anchor rows are source-backed but not a full alpha(lambda) bound curve,curve digitization remains a separate blocker,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,D1689_3_next_priority,BETA_SOURCE_TEST_CONVENTION_FIRST,"without beta source/test convention, a full curve cannot test MTS alpha",move to 1690 beta source/test convention,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,D1689_4_claim,CLAIMS_BLOCKED,MTS side and external curve side are both nonclaim,no R10/Newton/PPN/WEP/local-GR claim,False,False

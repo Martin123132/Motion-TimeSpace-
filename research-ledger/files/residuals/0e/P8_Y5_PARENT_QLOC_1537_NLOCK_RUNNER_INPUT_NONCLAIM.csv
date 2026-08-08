@@ -1,0 +1,5 @@
+same_parent_branch_id,runner_id,quantity,formula,current_status,missing_inputs,score_ready,valid_prediction_row,valid_for_claim,claim_allowed
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,NLR1537_0_NJ,N_J,N_J <= N_src+N_drift_mL+N_drift_Lcg+N_selector+N_history+N_transition+N_mass_current,FORMULA_ONLY_COMPONENTS_MISSING,all N_J component norms,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,NLR1537_1_NB,N_B,N_B <= N_inner+N_no_flux+N_zero_mode+N_outer+N_history_boundary+N_domain,FORMULA_ONLY_COMPONENTS_MISSING,all N_B component norms,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,NLR1537_2_Nlock,N_lock,N_lock=N_J+N_B,NOT_COMPUTABLE,N_src and N_inner first; then remaining component norms,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,NLR1537_3_local_lock,local locking/leakage,E_m(u)<=N_lock; U_m<=C_emb N_lock,BLOCKED,N_lock and C_emb,False,False,False,False

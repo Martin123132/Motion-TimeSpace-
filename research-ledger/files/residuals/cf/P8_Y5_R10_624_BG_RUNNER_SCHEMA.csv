@@ -1,0 +1,7 @@
+field,required,allowed_or_expected,claim_rule
+mode_id,true,"conformal_common,disformal_common,gauge_lorentz,Q_only_frame,marker_mixed",mode selects projection formula and zero/bound requirements
+coefficient,true,"c_g,d_g,0,MISSING_PARENT_INPUT",claim-ready only when coefficient is zero-derived or numerically sourced
+projection,true,"tau_g,Pi_disformal,0,MISSING_ARENA_PROJECTION",arena projection must be known before scoring
+b_g_effective,true,"coefficient times projection, or zero for signed factorization/gauge",cannot be evaluated with MISSING markers
+source_path,true,"local theorem path, local data path, or MISSING_PARENT_SOURCE",source path must exist for any claim-ready row
+valid_for_claim,true,"false until coefficient, projection, and source gate pass",smoke rows never self-promote

@@ -1,0 +1,5 @@
+condition_id,object,formula,derivation,status,valid_for_claim
+EXC2278_0_q_source,q transport source,S_q := Dq = -D C_tt/(1-C_tt) + D C_rr/(1+C_rr),differentiate q=ln[(1-C_tt)(1+C_rr)] along the local readout/transport direction D,EXACT_IDENTITY,False
+EXC2278_1_q_zero_surface,q=0 surface,"q=0 iff C_rr=C_tt/(1-C_tt), hence 1+C_rr=1/(1-C_tt)",solve (1-C_tt)(1+C_rr)=1,EXACT_IDENTITY,False
+EXC2278_2_tangent_lock,exact q-zero preservation,"on q=0, D C_rr = D C_tt/(1-C_tt)^2",differentiate C_rr=C_tt/(1-C_tt); equivalently set S_q=0 on the q=0 surface,EXACT_EXCHANGE_CONDITION,False
+EXC2278_3_weight_lock,carrier-weight form,D(s_R W_R K_R^2) = D(s_T W_T Omega_T^2)/(1-s_T W_T Omega_T^2)^2,substitute C_tt=s_T W_T Omega_T^2 and C_rr=s_R W_R K_R^2 into EXC2278_2,EXACT_WEIGHT_EXCHANGE_TARGET,False

@@ -1,0 +1,8 @@
+schema_id,field,requirement,current_status,why_it_matters,valid_for_claim,timestamp_utc
+RUN3875_0_required_identity,identity,b_alpha_active = 2 z_g_active - s_XF2_active,exact same-domain identity,required before any score,False,2026-07-01T06:43:06+00:00
+RUN3875_1_zg_input,z_g_active,numeric bound or theorem-zero for z_Qstar+z_Noether+z_readout+source_slot+rad,MISSING_COMPONENT_VALUES,blocks F2 isolation,False,2026-07-01T06:43:06+00:00
+RUN3875_2_sxf2_input,s_XF2_active,numeric bound or theorem-zero for active F2 coefficient,MISSING_F2_COMPONENT_VALUES,blocks Maxwell normalization score,False,2026-07-01T06:43:06+00:00
+RUN3875_3_balpha_input,b_alpha_active,clock/WEP/R10/spectroscopy alpha product in same Xhat/arena convention,PARTIAL_EXTERNAL_PRODUCTS_ONLY,must not be used alone,False,2026-07-01T06:43:06+00:00
+RUN3875_4_CJQ_input,C_JQ,charge/current normalization mismatch row or same-current theorem-zero,MISSING_CURRENT_OWNER_OR_VALUE,local source-current leg blocked,False,2026-07-01T06:43:06+00:00
+RUN3875_5_arena_domain,arena_domain,"same material/source/readout/kernel convention for z_g, s_XF2 and b_alpha",MISSING_SHARED_DOMAIN,prevents cross-domain cancellation,False,2026-07-01T06:43:06+00:00
+RUN3875_6_acceptance,claim_allowed,true only if every component is numeric/source-backed or parent-zeroed and no cancellation shortcut is used,CLAIM_FALSE_CURRENTLY,nonclaim runner contract,False,2026-07-01T06:43:06+00:00

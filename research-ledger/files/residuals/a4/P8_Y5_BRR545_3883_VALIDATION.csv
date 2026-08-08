@@ -1,0 +1,18 @@
+check_id,description,status,detail,timestamp_utc
+VAL3883_0_sources,all cited source paths exist and needles are found,PASS,50/50 sources resolved,2026-07-01T07:38:50+00:00
+VAL3883_1_source_action,matter/EM action inserted,PASS,HSL3883_0_action,2026-07-01T07:38:50+00:00
+VAL3883_2_Hilbert,Hilbert stress defined by variation,PASS,HSL3883_1,2026-07-01T07:38:50+00:00
+VAL3883_3_same_source,same-source lock row exists,PASS,HSL3883_2,2026-07-01T07:38:50+00:00
+VAL3883_4_Maxwell_stress,Maxwell stress row exists,PASS,MX3883_1,2026-07-01T07:38:50+00:00
+VAL3883_5_Poynting,Poynting accounting row exists,PASS,MX3883_4,2026-07-01T07:38:50+00:00
+VAL3883_6_residual_vector,matter/EM residual vector includes required residuals,PASS,required residual symbols,2026-07-01T07:38:50+00:00
+VAL3883_7_Newton_density,Newton density bridge uses rho_H,PASS,NSB3883_0,2026-07-01T07:38:50+00:00
+VAL3883_8_runner,runner decomposes b_MHref_lock,PASS,b_MHref_lock,2026-07-01T07:38:50+00:00
+VAL3883_9_no_claim_gates,no gate allows a claim,PASS,claim_allowed=false,2026-07-01T07:38:50+00:00
+VAL3883_10_doc,markdown checkpoint exists with bottom line,PASS,3883-Y5-R2FR-Hilbert-source-and-Maxwell-stress-lock-or-residual-vector.md,2026-07-01T07:38:50+00:00
+VAL3883_11_spine,spine updated with 3883 block,PASS,LOCAL_GR_COUPLING_SPINE_CURRENT_STATE.md,2026-07-01T07:38:50+00:00
+VAL3883_12_csv_parse,all generated CSV outputs parse,PASS,P8_Y5_R2FR_3883_SOURCE_REGISTER.csv:50; P8_Y5_R2FR_3883_SAME_HILBERT_SOURCE_LOCK.csv:6; P8_Y5_R2FR_3883_MAXWELL_STRESS_POYNTING_DERIVATION.csv:6; P8_Y5_R2FR_3883_MATTER_EM_RESIDUAL_VECTOR.csv:11; P8_Y5_R2FR_3883_NEWTON_SOURCE_DENSITY_BRIDGE.csv:5; P8_Y5_R2FR_3883_RUNNER_UPDATE.csv:5; P8_Y5_R2FR_3883_CLAIM_GATES.csv:8; P8_Y5_R2FR_3883_NEXT_TARGET.csv:1; P8_Y5_R2FR_3883_STATUS.csv:1,2026-07-01T07:38:50+00:00
+VAL3883_13_formalization_untouched,no generated 3883 files appear in formalization-workbench,PASS,0 hits,2026-07-01T07:38:50+00:00
+VAL3883_14_no_pycache,scripts __pycache__ removed,PASS,0 pycache dirs,2026-07-01T07:38:50+00:00
+VAL3883_15_all_nonclaim,all analytical rows are nonclaim,PASS,valid_for_claim=false,2026-07-01T07:38:50+00:00
+VAL3883_16_next_target,next target attacks PiM/Gauss calibration,PASS,3884 PiM/Gauss,2026-07-01T07:38:50+00:00

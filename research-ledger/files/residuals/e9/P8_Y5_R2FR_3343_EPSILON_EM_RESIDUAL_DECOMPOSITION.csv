@@ -1,0 +1,6 @@
+term_id,component,definition,zero_route,finite_route,current_status,valid_for_claim
+EEM3343_0_b_alpha,b_alpha,vertical/readout drift of alpha_EM or Z_Q,"q-basic/constant Z_Q and q-basic hbar,c,readout","alpha drift, clock products, spectra, R10 alpha products",NOT_NUMERIC_FULL_COMPONENT,false
+EEM3343_1_delta_J,delta_J,source/test current or charge normalization drift,same Noether current and fixed representation charge lattice,WEP/R10 source-current rows; 3127 has one nonclaim smoke reproduction,PARTIAL_NONCLAIM_SMOKE_ONLY,false
+EEM3343_2_delta_star,delta_star,hidden Hodge/coframe/constitutive drift,metric Hodge from public g_obs and constant Z_Q,constitutive/birefringence/stress projection bounds,DERIVED_CONDITIONAL_NEEDS_PROJECTION_BOUND,false
+EEM3343_3_delta_TEM,||P_EM DeltaT_EM||/||T_EM||,non-Hilbert EM stress tensor mismatch,T_EM is metric variation of the public Maxwell action,EM stress/light propagation residual projection,EXACT_CONDITIONAL_NOT_PARENT_SIGNED,false
+EEM3343_4_poynting,Phi_Poynting_unclosed,unbalanced EM energy flux or double-counted wave/Poynting channel,flux is the spatial component of Hilbert T_EM with closed or explicitly balanced boundary,radiative flux/readout coefficient separate from static ADM source coefficient,GUARD_DERIVED_BOUNDARY_NOT_FILLED,false

@@ -1,0 +1,10 @@
+gate_id,condition,current_status,source_anchor,gate_pass,valid_for_claim,claim_allowed,timestamp_utc
+CG2689_0_parent_action,total parent action is explicit and parent-derived,FAIL_SCHEMA_ONLY_NOT_DERIVED,TPA2689_1_single_parent_action_shape,false,false,false,2026-06-23T07:14:04.928719+00:00
+CG2689_1_qsrc,source-domain quotient q_src is constructed,FAIL_QSRC_NOT_CONSTRUCTED,TPA2689_3_source_domain_quotient,false,false,false,2026-06-23T07:14:04.928722+00:00
+CG2689_2_no_prefactor,pre-action source prefactors are impossible,FAIL_NO_SOURCE_PREFACTOR_NOT_DERIVED,TPA2689_4_no_prefactor_package,false,false,false,2026-06-23T07:14:04.928725+00:00
+CG2689_3_shadow,source-shadow/non-Hilbert/readout label reentry is forbidden or bounded,FAIL_SOURCE_SHADOW_BAN_UNSIGNED,TPA2689_5_source_shadow_nonhilbert,false,false,false,2026-06-23T07:14:04.928728+00:00
+CG2689_4_action_line,connected matter action-density line owner is signed,FAIL_ACTION_LINE_OWNER_UNSIGNED,TPA2689_6_connected_action_line,false,false,false,2026-06-23T07:14:04.928731+00:00
+CG2689_5_readout,readout/radiative stability is signed,FAIL_READOUT_STABILITY_UNSIGNED,TPA2689_7_readout_radiative_stability,false,false,false,2026-06-23T07:14:04.928734+00:00
+CG2689_6_deltaw_values,finite Delta_w component values/kernels are sourced if theorem route fails,FAIL_DELTW_VALUES_AND_KERNELS_MISSING,DWV2689_9_acceptance,false,false,false,2026-06-23T07:14:04.928736+00:00
+CG2689_7_guards,Ward-only and cancellation-only shortcuts are refused,PASS_GUARD_ONLY,POG2689_6_ward_guard;POG2689_7_no_cancellation_guard,true,false,false,2026-06-23T07:14:04.928739+00:00
+CG2689_8_verdict,source coupling/local-GR branch can claim pass,CLAIM_BLOCKED,CG2689_0_parent_action through CG2689_7_guards,false,false,false,2026-06-23T07:14:04.928741+00:00

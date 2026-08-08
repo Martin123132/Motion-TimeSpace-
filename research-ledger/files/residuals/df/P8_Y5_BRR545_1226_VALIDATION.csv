@@ -1,0 +1,15 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1226_0_local_sources_exist,all cited local sources exist,PASS,5/5 local sources exist,False,False
+VAL1226_1_local_needles_found,all cited local needles found,PASS,5/5 local needles found,False,False
+VAL1226_2_web_sources_recorded,web provenance URLs recorded,PASS,SRC1226_5_CMSM_portal; SRC1226_6_arxiv_ground_segment; SRC1226_7_CNES_project; SRC1226_8_CQG_result_data_availability; SRC1226_9_Moriond_data_available,False,False
+VAL1226_3_required_objects_complete,required tau_WEP objects are listed,PASS,OBJ1226_0_official_CMSM_arrays; OBJ1226_1_eta_product_convention; OBJ1226_2_source_worldtube; OBJ1226_3_orbit_attitude_masks; OBJ1226_4_TiPt_material_tensor; OBJ1226_5_Delta_w_prior; OBJ1226_6_reproducibility_metadata,False,False
+VAL1226_4_no_fabricated_acquisition,no official data object is falsely acquired,PASS,all required objects remain missing/package-unenumerated,False,False
+VAL1226_5_blockers_materialized,missing objects have blockers,PASS,blocker_rows=7,False,False
+VAL1226_6_no_surrogate_policy,surrogate-as-claim policy active,PASS,SURR1226_0_official_arrays_only; SURR1226_1_no_literature_to_arrays; SURR1226_2_no_tau_unity,False,False
+VAL1226_7_tau_feed_nonclaim,tau_WEP feed remains nonclaim,PASS,valid_prediction_rows_delta=0 for tau/product feeds,False,False
+VAL1226_8_claim_gates_blocked,claim gates keep physical claims blocked,PASS,portal/object/tau/local claim gates blocked,False,False
+VAL1226_9_next_target_package_map,next target stages package map/access blocker,PASS,1227-Y5-R10-MICROSCOPE-portal-package-map-or-access-blocker.md,False,False
+VAL1226_10_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout claim-bearing tables,False,False
+VAL1226_11_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1226_SOURCE_REGISTER.csv:10; P8_Y5_R10_1226_PUBLIC_PORTAL_PROBE.csv:2; P8_Y5_R10_1226_REQUIRED_DATA_OBJECTS.csv:7; P8_Y5_R10_1226_ACQUISITION_BLOCKER_LEDGER.csv:7; P8_Y5_R10_1226_NO_SURROGATE_POLICY.csv:3; P8_Y5_R10_1226_LOCAL_STAGING_MANIFEST.csv:3; P8_Y5_R10_1226_TAU_WEP_FEED_UPDATE.csv:2; P8_Y5_R10_1226_DECISION_LEDGER.csv:3; P8_Y5_R10_1226_CLAIM_GATES.csv:6; P8_Y5_R10_1226_NEXT_TARGET.csv:1,False,False
+VAL1226_12_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_after_run_start_count=0,False,False
+VAL1226_13_overall,overall 1226 validation,PASS,1226 identifies official MICROSCOPE acquisition targets and blocks tau_WEP claims until real packages are mapped/acquired,False,False

@@ -1,0 +1,5 @@
+gate_id,quantity,needed_for,current_state,pass_condition,valid_for_claim
+CI3322_0_projection_norm,||Pi_i W_i||,PPN/R10/WEP/clock arena response,SYMBOLIC_BOUNDED_OPERATOR,"define arena projection and source window, then prove finite norm or source a numeric upper bound",false
+CI3322_1_propagator_norm,||D S_ell H_pi S_ell^dagger D^dagger||,range-dependent response coefficient,FORMULA_DERIVED_NUMERIC_VALUE_MISSING,"parent action supplies Z_pi and M_pi^2, or a conservative band-limited propagator envelope",false
+CI3322_2_source_normalization,source-normalization factors,Newton constant / matter coupling calibration,NOT_PARENT_OWNED_YET,derive kappa=8 pi G/c^4 or match the Poisson/Newtonian limit from psi covariance without re-inserting it silently,false
+CI3322_3_Ci_numeric,C_i(lambda),claim-ready local bound comparison,BLOCKED_BY_CI3322_0_TO_CI3322_2,"every factor in C_i has a parent source path, unit convention, and numeric or conservative upper bound",false

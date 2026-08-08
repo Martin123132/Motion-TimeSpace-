@@ -1,0 +1,5 @@
+bound_id,observable,coefficient_relation,bound_formula,needed_for_claim,source_status,valid_for_claim,timestamp_utc
+BND3829_0_Ct_Newtonian_norm,Newtonian normalization,C_t = 1 + epsilon_t,abs(epsilon_t) <= abs(R_Poisson_norm) + abs(R_source_ledger),independent source normalization and no fitted-GM input,FORMULA_ONLY_NONCLAIM,False,2026-07-01T01:57:46+00:00
+BND3829_1_gamma,gamma-1,C_s = C_t + S_slip,abs(gamma-1) <= abs(S_slip/C_t) + abs(eps_spatial/Phi),source or theorem bound for S_slip and eps_spatial on local exterior domain,FIRST_GAMMA_COEFFICIENT_BOUND_NONCLAIM,False,2026-07-01T01:57:46+00:00
+BND3829_2_beta,beta-1,B_t = C_t^2 + S_beta,abs(beta-1) <= abs(S_beta/C_t^2) + abs(eps_temporal4/Phi^2),source or theorem bound for S_beta and fourth-order temporal residual,FIRST_BETA_COEFFICIENT_BOUND_NONCLAIM,False,2026-07-01T01:57:46+00:00
+BND3829_3_scalar_pair,scalar PPN pair,"R_scalar_pair = {gamma-1, beta-1}",norm(R_scalar_pair) <= w_gamma*B_gamma + w_beta*B_beta,"declared norm, experimental thresholds, and source-backed coefficient rows",INTEGRATED_SCALAR_PAIR_BOUND_NONCLAIM,False,2026-07-01T01:57:46+00:00

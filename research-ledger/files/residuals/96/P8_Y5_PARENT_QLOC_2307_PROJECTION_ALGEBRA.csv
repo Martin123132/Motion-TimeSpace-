@@ -1,0 +1,7 @@
+branch_id,row_id,symbol,formula,units,status,claim_note,valid_for_claim
+MTS_R2FR_DQWEYL2_PROJECTION_SMOKE_CONTRACT_2307,ALG2307_0_mu,mu,mu=G*M_source/c^2,m,READY,"uses GR background as projection scaffold, not proof of MTS local GR",false
+MTS_R2FR_DQWEYL2_PROJECTION_SMOKE_CONTRACT_2307,ALG2307_1_C2,C2(r),48*mu^2/r^6,m^-4,READY,Schwarzschild exterior identity,false
+MTS_R2FR_DQWEYL2_PROJECTION_SMOKE_CONTRACT_2307,ALG2307_2_integrated_kernel,K_C2_ext,64*pi*mu^2/R_body^3,m^-1,READY,finite-radius source kernel; diverges for R_body -> 0,false
+MTS_R2FR_DQWEYL2_PROJECTION_SMOKE_CONTRACT_2307,ALG2307_3_massless_q_far,q_far_massless,q(r)=D_qWeyl2*K_C2_ext/(4*pi*Z_q*r)=16*D_qWeyl2*mu^2/(Z_q*R_body^3*r),depends_on_D_and_Zq,FORMULA_READY_INPUTS_MISSING,requires q operator normalization and observable projection,false
+MTS_R2FR_DQWEYL2_PROJECTION_SMOKE_CONTRACT_2307,ALG2307_4_yukawa_far,q_far_yukawa,q(r)≈D_qWeyl2*K_C2_ext*exp(-(r-R_body)/lambda_q)/(4*pi*Z_q*r) for far-field/profile approximation,depends_on_D_and_Zq,APPROX_BRANCH_INPUTS_MISSING,massive branch needs full finite-profile Green function for claim-grade work,false
+MTS_R2FR_DQWEYL2_PROJECTION_SMOKE_CONTRACT_2307,ALG2307_5_observable,O_arena,"O_arena=P_arena[q(r),grad q(r),metric backreaction,readout]",arena_specific,MISSING_OBSERVABLE_MAP,no R10/PPN/orbital/clock claim until P_arena is parent-sourced,false

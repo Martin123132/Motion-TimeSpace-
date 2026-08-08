@@ -1,0 +1,4 @@
+match_id,object,condition,formula,result,status,valid_for_claim,generated_utc
+MATCH3180_0_value_match,quadratic_core_to_exterior,F_in=A r^2 for r<R_b and F_out=C r^-3 for r>R_b,continuity F_in(R_b)=F_out(R_b) gives C=A R_b^5,value matching fixes exterior coefficient,VALUE_MATCH_POSSIBLE,false,2026-06-26T12:46:14.316314+00:00
+MATCH3180_1_derivative_jump,C1_matching,same value-matched core/exterior profile,F'_in(R_b)=2A R_b; F'_out(R_b)=-3C R_b^-4=-3A R_b; [F']:=F'_out-F'_in=-5A R_b,nonzero derivative jump unless A=0,C1_MATCH_FAILS_NONTRIVIAL_SOURCE,false,2026-06-26T12:46:14.316314+00:00
+MATCH3180_2_no_free_smooth_glue,boundary_layer,avoid a sharp derivative jump,a smooth transition layer must change d(F/r^2)/dr from 0 in the core to exterior behavior,"B'(r) nonzero in the layer, so 3179 K_perp tensor leakage is active",BOUNDARY_LAYER_OR_LEAKAGE_REQUIRED,false,2026-06-26T12:46:14.316314+00:00

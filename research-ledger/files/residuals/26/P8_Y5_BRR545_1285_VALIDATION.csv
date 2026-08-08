@@ -1,0 +1,13 @@
+check_id,check,status,details
+VAL1285_0_sources_exist,all cited local sources exist,PASS,10/10 sources exist
+VAL1285_1_needles_found,all cited local needles found,PASS,10/10 needles found
+VAL1285_2_conjugacy_not_constructed,parent response/displacement conjugacy is not constructed,PASS,PRC1285_6_verdict=CONJUGACY_NOT_CONSTRUCTED
+VAL1285_3_theorem_not_closed,conjugacy theorem contract remains open,PASS,PCT1285_5_verdict=THEOREM_NOT_CLOSED
+VAL1285_4_DeltaK_bound_template_nonclaim,DeltaK divergence bound row is source-ready but not scoreable,PASS,DKB1285_0 has MISSING markers and claim flags false
+VAL1285_5_intake_rules_block_claims,"DeltaK intake rules reject templates, require zero proof or finite bound, and forbid free auxiliary fifth force",PASS,intake_rule_rows=4
+VAL1285_6_claim_gates_blocked,all claim gates remain blocked,PASS,claim_gate_rows=4
+VAL1285_7_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1285_SOURCE_REGISTER.csv:10; P8_Y5_R10_1285_PARENT_RESPONSE_CONJUGACY_AUDIT.csv:7; P8_Y5_R10_1285_CONJUGACY_THEOREM_CONTRACT.csv:6; P8_Y5_R10_1285_DELTAK_DIVERGENCE_BOUND_ROW_NONCLAIM.csv:1; P8_Y5_R10_1285_DELTAK_BOUND_INTAKE_RULES.csv:4; P8_Y5_R10_1285_CLAIM_GATES.csv:4; P8_Y5_R10_1285_DECISION_LEDGER.csv:3; P8_Y5_R10_1285_NEXT_TARGET.csv:1
+VAL1285_8_next_target_1286,next target routes to first DeltaK component profile or response-field row,PASS,1286-Y5-R10-RAB-first-DeltaK-component-profile-or-response-field-row.md
+VAL1285_9_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1285_10_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1285_11_overall,overall 1285 validation,PASS,"1285 fails parent response/displacement conjugacy construction, writes a nonclaim DeltaK divergence bound row, and routes to first component/profile fill next"

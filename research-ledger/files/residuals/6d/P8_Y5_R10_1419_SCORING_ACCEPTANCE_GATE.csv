@@ -1,0 +1,7 @@
+gate_id,gate,opens_if,current_status,valid_for_claim,claim_allowed
+SAG1419_0_direct_product,direct product scoring,DSP1419 arena row has theorem-zero or numeric observable residual with units/source/readout path,CLOSED_DIRECT_PRODUCT_NOT_DERIVED,False,False
+SAG1419_1_matrix_coefficients,projection matrix scoring,"PMX1419 matrix coefficients have values/bounds, units, signs, source paths, and arena kernels",CLOSED_MATRIX_VALUES_MISSING,False,False
+SAG1419_2_residual_vector,source residual vector scoring,SRCV1419 residual coefficients are theorem-zero or source-backed numeric in the same parent basis,CLOSED_RESIDUAL_VALUES_MISSING,False,False
+SAG1419_3_empirical_bounds,empirical comparison,arena bounds are numeric or curve-backed and matched to the prediction variable,PARTIAL_ANCHORS_EXIST_R10_CURVE_SYMBOLIC,False,False
+SAG1419_4_refusal_guards,no shortcut guard,"no tau=1, no Delta=0 by taste, no measured-G absorption, no cancellation credit",GUARDS_ACTIVE,False,False
+SAG1419_5_overall,local/source projection matrix claim gate,SAG1419_0 or SAG1419_1+2+3 open and SAG1419_4 remains satisfied,ALL_SOURCE_PROJECTION_CLAIMS_BLOCKED,False,False

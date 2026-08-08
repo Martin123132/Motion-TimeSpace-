@@ -1,0 +1,6 @@
+row_id,fallback_condition,required_bound,numeric_value,status,valid_for_claim,timestamp_utc
+BFB3930_0_boundary_source,if local branch is not isolated,source |P00_boundary| with source path and units,,HELD_IN_RESERVE_IF_SIGNATURE_REJECTED_OR_NONISOLATED_ARENA,False,2026-07-01T11:38:02+00:00
+BFB3930_1_harmonic,if l>=2 exterior harmonic data are present,source |B_harmonic_boundary| or exterior tidal multipole amplitude,,HELD_IN_RESERVE_IF_SIGNATURE_REJECTED_OR_NONISOLATED_ARENA,False,2026-07-01T11:38:02+00:00
+BFB3930_2_flux,if total Hilbert/Maxwell flux crosses the collar,source |Phi_B|/M_H_ref including Poynting/matter exchange,,HELD_IN_RESERVE_IF_SIGNATURE_REJECTED_OR_NONISOLATED_ARENA,False,2026-07-01T11:38:02+00:00
+BFB3930_3_wall,if boundary wall/shear stress is present,source |tau_wall_TF|/M_H_ref,,HELD_IN_RESERVE_IF_SIGNATURE_REJECTED_OR_NONISOLATED_ARENA,False,2026-07-01T11:38:02+00:00
+BFB3930_4_total,if the 3930 isolated-boundary signature is rejected,B_boundary_harmonic := |P00_boundary| + |B_harmonic_boundary| + |Phi_B|/M_H_ref + |tau_wall_TF|/M_H_ref,,HELD_IN_RESERVE_IF_SIGNATURE_REJECTED_OR_NONISOLATED_ARENA,False,2026-07-01T11:38:02+00:00

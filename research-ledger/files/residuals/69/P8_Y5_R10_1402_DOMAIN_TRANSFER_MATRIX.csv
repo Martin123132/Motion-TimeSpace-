@@ -1,0 +1,7 @@
+matrix_id,from_arena,to_arena,transfer_needed,current_status,reason,allowed_use_now,valid_for_claim,claim_allowed
+DTM1402_0_clock_to_WEP,clock,WEP,tau_clock -> beta_source_alpha*tau_WEP,FORBIDDEN_WITHOUT_PARENT_THEOREM,989 separates time-drift screening from force-source normalization,none; compare only as pressure diagnostics,False,False
+DTM1402_1_clock_to_R10,clock,R10,tau_clock -> tau_R10 plus material kernel,FORBIDDEN_WITHOUT_KERNEL_AND_DOMAIN,"R10 needs K_bulk_ST(lambda), beta maps, tail, and bound curve",none; clock product cannot be an R10 pass,False,False
+DTM1402_2_clock_to_PPN,clock,local PPN,tau_clock -> A_i projection coefficients,FORBIDDEN_WITHOUT_LOCAL_PROJECTION,"PPN pressure gate lacks A_gamma,A_beta,A_alpha1,A_G",none; clock product cannot be local-GR evidence,False,False
+DTM1402_3_WEP_to_R10,WEP,R10,"beta_source_alpha*tau_WEP -> beta_bulk,S/T and K_bulk_ST(lambda)",FORBIDDEN_WITHOUT_MATERIAL_KERNEL,WEP target lacks R10 kernel/tail/range dependence,none; WEP target is not alpha(lambda),False,False
+DTM1402_4_WEP_to_PPN,WEP,local PPN,composition residual -> PPN projection coefficients,FORBIDDEN_WITHOUT_LOCAL_COMPOSITION_PROJECTION,"WEP pressure is a target-only force-source diagnostic, not a PPN bound",none; local-GR claim stays blocked,False,False
+DTM1402_5_R10_to_PPN,R10,local PPN,finite-range alpha(lambda) -> local effective-G/PPN limit,FORBIDDEN_WITHOUT_RANGE_LIMIT_AND_BOUND_CURVE,R10 live curve is placeholder-invalid and finite-range-to-local limit is missing,none; R10 remains smoke lane only,False,False

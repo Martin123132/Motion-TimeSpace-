@@ -1,0 +1,5 @@
+formula_id,formula,meaning,inputs_needed,valid_for_claim
+DBF3410_0_component_envelope,Delta_q_loc_abs <= abs(delta_gamma_q)+abs(delta_beta_q)+abs(alpha1_q)+abs(alpha2_q)+abs(alpha3_q)+abs(xi_q)+abs(alpha_q(lambda)),no cancellation between scalar and preferred-frame lanes,"all W coefficients, component fractions, observed-frame readout, sourced locks",False
+DBF3410_1_scalar_lanes,delta_beta_q=W_beta f_beta q_proxy; delta_gamma_q=W_gamma f_gamma q_proxy; alpha_q(lambda)=W_R10(lambda) f_range(lambda) q_proxy,"scalar/even q_loc is not automatically safe, but it is the route where the existing q_proxy might matter constructively","U2 conversion, gamma slip map, range kernel, R10 curve/provenance",False
+DBF3410_2_preferred_frame,"alphaA_q=W_alphaA f_qV q_proxy for A in {1,2,3}; xi_q=W_xi f_xi q_proxy",preferred-frame/local anisotropy lanes are separate and tighter than beta,f_qV or zero theorem; W_alphaA; W_xi; bounds for each lane,False
+DBF3410_3_alpha3_pressure,abs(W_q_alpha3*f_qV) <= 5.381673706808059e-15,alpha3 effectively demands vector zero unless a very small product is parent-sourced,theorem-zero or source-backed response product,False

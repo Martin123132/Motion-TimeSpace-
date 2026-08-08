@@ -1,0 +1,12 @@
+check_id,check,status,details
+VAL1282_0_sources_exist,all cited local sources exist,PASS,11/11 sources exist
+VAL1282_1_needles_found,all cited local needles found,PASS,11/11 needles found
+VAL1282_2_component_map_not_closed,response-doublet map to physical residual vector is not closed,PASS,RCM1282_6_verdict=COMPONENT_MAP_NOT_CLOSED
+VAL1282_3_f1_formal_only,formal F1 double-zero is not promoted to physical q_loc zero,PASS,FZ1282_5_verdict=FORMAL_DOUBLE_ZERO_NOT_PHYSICAL_QLOC_ZERO
+VAL1282_4_profile_requirements_blocked,q_loc profile requirements remain explicit missing inputs,PASS,profile_requirement_rows=8
+VAL1282_5_claim_gates_blocked,all claim gates remain blocked,PASS,claim_gate_rows=4
+VAL1282_6_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1282_SOURCE_REGISTER.csv:11; P8_Y5_R10_1282_RESPONSE_DOUBLET_COMPONENT_MAP_AUDIT.csv:7; P8_Y5_R10_1282_F1_ZERO_THEOREM_AUDIT.csv:6; P8_Y5_R10_1282_QLOC_PROFILE_FILL_REQUIREMENTS.csv:8; P8_Y5_R10_1282_CLAIM_GATES.csv:4; P8_Y5_R10_1282_DECISION_LEDGER.csv:3; P8_Y5_R10_1282_NEXT_TARGET.csv:1
+VAL1282_7_next_target_1283,next target routes to q_loc profile source-fill or P_loc projector owner,PASS,1283-Y5-R10-RAB-q_loc-profile-source-fill-or-P_loc-projector-owner.md
+VAL1282_8_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1282_9_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1282_10_overall,overall 1282 validation,PASS,"1282 keeps the response-doublet F1=0 as formal-only, blocks physical q_loc/local-GR promotion, and routes to concrete q_loc profile/P_loc ownership next"

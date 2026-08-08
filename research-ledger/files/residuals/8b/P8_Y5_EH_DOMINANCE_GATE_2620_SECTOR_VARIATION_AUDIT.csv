@@ -1,0 +1,8 @@
+sector_id,action_block,variation_target,zero_or_owner_clause,current_status,coefficient_row,valid_for_claim
+SVA2620_0_EH_core,S_EH + S_Lambda,a(G_munu+Lambda g_munu),owned by EH core if local action coefficient a is signed and normalized,TEMPLATE_OWNER_NOT_PARENT_SIGNED,OPC2620_0_EH_normalization,False
+SVA2620_1_topological_boundary,S_top + S_bdy + reference/improvement terms,E_top_munu + E_bdy_munu,"locally silent only with fixed topology, fixed boundary data, and reference chosen before readout",MISSING_BOUNDARY_TOPOLOGY_SILENCE_CERTIFICATE,OPC2620_3_boundary_reference,False
+SVA2620_2_higher_derivative,S_R2 + S_Ricci2 + S_boxR + higher operators,E_higher_munu,"absent by parent grammar, topological in 4D, or suppressed by a real high scale",MISSING_OPERATOR_BASIS_VARIATION_AND_SCALE,OPC2620_1_higher_derivative,False
+SVA2620_3_projector,"S_projector[Pi_M,q,e,Phi]","E_projector_munu and [d,Pi_M]J_H","projector is identity/commuting in local branch, or variation is bounded",MISSING_PROJECTOR_VARIATION_COMMUTATOR_ZERO,OPC2620_2_projector,False
+SVA2620_4_nonminimal,"S_nonmin[e,Phi,X,Psi]",E_nonminimal_munu and modified matter equations,forbid direct matter-MTS couplings or reclassify them with explicit WEP/clock bounds,MISSING_NONMINIMAL_FORBID_OR_BOUND,OPC2620_4_nonminimal,False
+SVA2620_5_memory_coframe,S_memory + S_coframe + frame-lock terms,E_memory_munu + E_frame_munu,"local vacuum frame lock, auxiliary elimination, or preferred-frame bounds",MISSING_LOCAL_FRAME_LOCK_VARIATION,OPC2620_5_memory_coframe,False
+SVA2620_6_nonlocal_history,S_nonlocal/history,E_nonlocal_munu,local Markov/adiabatic reduction or explicit kernel tail bound,MISSING_LOCALITY_REDUCTION_OR_KERNEL_BOUND,OPC2620_6_nonlocal_history,False

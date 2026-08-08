@@ -1,0 +1,7 @@
+checklist_id,requirement,runner_condition,current_status,claim_rule,valid_for_claim,claim_allowed
+PROM1315_0_threshold,positive numeric threshold or empirical bound,threshold_numeric_positive=true,PARTIAL_ALPHA_CLOCK_WEP_ONLY_R10_AND_CROSS_ARENA_BLOCKED,nonnumeric thresholds refuse the row immediately,False,False
+PROM1315_1_prediction,finite predicted absolute value,predicted_abs_value numeric and sourced,MISSING_FOR_ALL_ROWS,"no prediction, no comparison, no pass",False,False
+PROM1315_2_provenance,source-backed coefficient/readout/profile provenance,source paths and anchors exist for every physical input,MISSING_PHYSICAL_INPUT_PROVENANCE,placeholder strings cannot become evidence,False,False
+PROM1315_3_counterexamples,counterexample locks closed or finitely bounded,"counterexample_status in {closed,bounded_with_source}",COUNTEREXAMPLES_RETAINED,active hidden-scalar/source-weight/readout counterexamples block claims,False,False
+PROM1315_4_anti_shortcuts,"no unity, threshold-as-prediction, anchor-curve, transfer, measured-G absorption, or assumption fill",anti-shortcut gates pass,GATES_WRITTEN_AND_ENFORCED,shortcut route invalidates row,False,False
+PROM1315_5_parent_primitive,optional theorem-zero route needs genuinely new primitive,primitive source status FOUND_SIGNED_PRIMITIVE and source audited,NO_SIGNED_PRIMITIVE_FOUND,escape hatch remains open but empty,False,False

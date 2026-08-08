@@ -1,0 +1,5 @@
+template_id,required_quantity,definition,required_columns,maps_to,template_status,valid_for_claim
+T499_0_identity_integral,I_parent_radial,"int_A_ext[-Pi_M dJ_extra + [d,Pi_M]J_H + A_parent]",system_id;r1;r2;c_M;M_eff_ref;I_parent_radial;norm_convention;units;source_file;assumptions,epsilon_radial_Meff = c_M * I_parent_radial / M_eff_ref,not_filled,false
+T499_1_commutator_profile,I_commutator,"int_A_ext [d,Pi_M]J_H",system_id;projector_type;metric_dependence_flag;I_commutator;units;source_file;assumptions,projector stress and radial/source-normalization rows,not_filled,false
+T499_2_extra_channel_integrals,I_extra_by_channel,int_A_ext Pi_M dJ_extra separated by boundary/domain/bulk/nonEH/kappa/frame/species,system_id;channel;I_extra;units;affected_rows;source_file;assumptions,mu_extra channel vector and R4/R9/R10/R11 residuals,not_filled,false
+T499_3_observable_bound,radial_measured_GM_bound,dln_mu_dlnr or finite shell Delta mu/mu inferred from local/orbital data,system_id;r;mu_obs_or_proxy;dln_mu_dlnr;bound_source;units;source_file;assumptions,R4 beta/source hair and R10 fifth-force/radial profile,not_filled,false

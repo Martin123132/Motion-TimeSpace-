@@ -1,0 +1,7 @@
+same_parent_branch_id,validator_id,rule,failure_status,claim_allowed
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,FCV1603_0_required_fields,all finite C_EP source-pack fields must be present and nonempty,REJECT_MISSING_FIELDS,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,FCV1603_1_branch_basis,same_parent_branch_id and MTS parent WEP basis must match branch,REJECT_BRANCH_OR_BASIS_MISMATCH,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,FCV1603_2_value_policy,value must be finite numeric or DERIVED_ZERO; MISSING/PENDING/PLACEHOLDER/TEMPLATE forbidden,REJECT_BAD_VALUE,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,FCV1603_3_provenance,source_path must exist or be a real URL/DOI and cannot cite MICROSCOPE bound as coefficient source,REJECT_BAD_PROVENANCE_OR_BOUND_INVERSION,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,FCV1603_4_zero_policy,DERIVED_ZERO requires parent-signed zero certificate; closure-only zero rejected,REJECT_CLOSURE_ONLY_ZERO,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,FCV1603_5_claim_policy,"validator may accept source-pack rows for quarantine, but claim_allowed remains false until WEP/local gates pass",NONCLAIM_ACCEPT_ONLY,False

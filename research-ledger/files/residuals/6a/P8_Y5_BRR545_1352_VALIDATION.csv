@@ -1,0 +1,11 @@
+check_id,check,status,details
+VAL1352_0_sources_exist,registered source paths exist and anchors are found,PASS,SRC1352_0_1351_doc=True/True;SRC1352_1_1351_next=True/True;SRC1352_2_response_contract=True/True;SRC1352_3_response_variation=True/True;SRC1352_4_gamma_candidates=True/True;SRC1352_5_metric_audit=True/True;SRC1352_6_passfail=True/True;SRC1352_7_owner_extraction=True/True;SRC1352_8_qrow_fill=True/True
+VAL1352_1_action_template_nonclaim,response/displacement action template is written but not promoted,PASS,"component lock, no-linear-source theorem, metric response match, P_loc owner, and boundary no-flux all pass"
+VAL1352_2_metric_identities_conditional,metric-response identities are conditional and not symbol-matched,PASS,MRI1352_1 and MRI1352_4 present
+VAL1352_3_blockers_open,conjugacy blocker verdict stays open,PASS,go after component-lock plus no-linear-source theorem first
+VAL1352_4_profile_rows_staged,q_loc profile source rows are staged and nonclaim,PASS,rows=2
+VAL1352_5_claim_gates_blocked,all claim gates remain blocked,PASS,GATE1352_0_conjugacy_action=BLOCKED;GATE1352_1_Bmem_or_q_loc_zero=BLOCKED;GATE1352_2_local_GR=BLOCKED
+VAL1352_6_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false across generated rows
+VAL1352_7_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1352_8_next_target_1353,next target routes to component lock and no-linear-source theorem,PASS,1353-Y5-R10-RAB-Z-component-lock-and-no-linear-source-theorem-or-JZ-source-pack.md
+VAL1352_9_overall,overall 1352 validation,PASS,1352 keeps the conjugacy route alive while refusing local-GR promotion

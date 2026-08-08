@@ -1,0 +1,6 @@
+gate_id,quantity,definition,zero_condition,current_status,fallback_bound,valid_for_claim
+MOM4377_0_test_function_all,distributional profile defect,Delta_f := int_W f(y)(rho_top-rho_H)(y)dV_H for all compact test functions f,Delta_f=0 for every f,FORMULA_READY_NOT_PROVED,choose finite basis/moment rows and bound the remaining profile norm,False
+MOM4377_1_monopole,M_00^top-H,M_00^top-H := int_W delta rho_top dV_H,same integrated Hamiltonian/topological/Hilbert charge,CONDITIONAL_MONOPOLE_ONLY,not enough for E_profile; proceed to l>=1,False
+MOM4377_2_dipole,M_1m^top-H,M_1m^top-H := int_W delta rho_top r Y_1m dV_H,same center/profile owner or symmetry plus no readout shift,MISSING_ZERO_OR_SOURCE_BOUND,include dipole acceleration residual in deltaPhi_top,False
+MOM4377_3_quadrupole_and_higher,M_lm^top-H for l>=2,M_lm^top-H := int_W delta rho_top r^l Y_lm dV_H,distributional equality or complete profile/moment hierarchy,MISSING_ZERO_OR_SOURCE_BOUND,multipole sum or coarse K_N E_top_profile bound,False
+MOM4377_4_coarse_norm,E_top_profile,E_top_profile := ||(rho_top-rho_H)_perp/rho_H||_inf,rho_top=rho_H as distributions on W_H,BOUND_SCHEMA_READY_VALUE_MISSING,|deltaa_top|/|a_N| <= K_N(s) E_top_profile,False

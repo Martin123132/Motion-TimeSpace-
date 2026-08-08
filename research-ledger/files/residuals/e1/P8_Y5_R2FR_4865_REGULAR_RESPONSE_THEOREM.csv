@@ -1,0 +1,11 @@
+row_id,quantity,equation_or_condition,interpretation,status,valid_for_claim,timestamp_utc
+REG4865_00_reduced,co-scaled reduced compact-body functional,"I[p,x,Y]=I_GR+p I1[x,Y;r,C]+O(p^2)",established public coefficients all scale with p at fixed finite r,DERIVED_CONDITIONAL,False,2026-07-10T04:25:00+01:00
+REG4865_01_stationary,leading reduced stationary equation,"D_Y I1[x,Y0]=0",the p factor divides out before taking p to zero,DERIVED_CONDITIONAL,False,2026-07-10T04:25:00+01:00
+REG4865_02_hessian,regular-response condition,H_YY=D_Y^2 I1 invertible after gauge fixing and boundary conditions,explicit no-zero-mode hypothesis,DERIVED_CONDITIONAL,False,2026-07-10T04:25:00+01:00
+REG4865_03_implicit,stationary branch,"Y_star(x,p)=Y0(x)+O(p)",implicit-function theorem at fixed 0<r<=1/3,DERIVED_CONDITIONAL,False,2026-07-10T04:25:00+01:00
+REG4865_04_mass,on-shell mass response,"ln(mu)=ln(m_GR)+p h(x;r,C)+O(p^2)",h is finite with two x derivatives on a regular branch,DERIVED_CONDITIONAL,False,2026-07-10T04:25:00+01:00
+REG4865_05_first,first sensitivity,sigma=-d_x ln(mu)=p f+O(p^2); f=-h_x(0),agrees with sigma=s/(1-s) and s=pF,DERIVED_CONDITIONAL,False,2026-07-10T04:25:00+01:00
+REG4865_06_second,second sensitivity coefficient,sigma_prime=sigma+sigma^2+d_x^2 ln(mu)=p g+O(p^2),g=f+h_xx(0) is finite but not numerically fixed,DERIVED_CONDITIONAL,False,2026-07-10T04:25:00+01:00
+REG4865_07_schur,on-shell second derivative,h_xx=I1_xx-I1_xY H_YY^(-1) I1_Yx,general Schur complement evaluated on Y0,DERIVED_CONDITIONAL,False,2026-07-10T04:25:00+01:00
+REG4865_08_failure,strong-field failure condition,lambda_min(H_YY)=0 or unbounded inverse,a compact-star zero mode can invalidate sigma_prime=O(p) and triggers fallback,FAILURE_GATE_IDENTIFIED,False,2026-07-10T04:25:00+01:00
+REG4865_09_notation,2025 notation map,"s_TW=-sigma_Gupta; a_s,TW=sigma_prime,Gupta",follows directly by matching the two Taylor expansions of m(gamma),DERIVED_CONDITIONAL,False,2026-07-10T04:25:00+01:00

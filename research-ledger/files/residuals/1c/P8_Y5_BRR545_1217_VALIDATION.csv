@@ -1,0 +1,17 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1217_0_sources_exist,all cited local sources exist,PASS,18/18 sources exist,False,False
+VAL1217_1_needles_found,all cited source needles found,PASS,18/18 needles found,False,False
+VAL1217_2_map_not_overclaimed,C_parent map failure is explicit,PASS,CMAP1217_5_verdict=CPARENT_MAP_NOT_DERIVED,False,False
+VAL1217_3_zero_not_overclaimed,coefficient zero is not overclaimed,PASS,ZERO1217_3_vector=COEFFICIENT_ZERO_NOT_DERIVED,False,False
+VAL1217_4_thresholds_positive,finite-prior thresholds are positive,PASS,CPRIOR1217_0_alpha=8.320244933243531978e-10; CPRIOR1217_1_surface=6.987501646143863402e-11; CPRIOR1217_2_common_abs=6.446142229433907306e-11,False,False
+VAL1217_5_prior_rows_nonclaim,prior rows remain nonclaim,PASS,all finite prior rows valid_for_claim=false and claim_allowed=false,False,False
+VAL1217_6_missing_rows_nonclaim,no MISSING row is valid for claim,PASS,missing coefficient/prior/source values are quarantined,False,False
+VAL1217_7_cancellation_forbidden,pair cancellation line is forbidden,PASS,c_surface/c_alpha=-6.017949967452794e-01,False,False
+VAL1217_8_pressure_reuse_positive,numeric pressure reuse rows are positive,PASS,PREUSE1217_0_alpha=8.320244933243531978e-10; PREUSE1217_1_surface=6.987501646143863402e-11; PREUSE1217_2_common_abs=6.446142229433907306e-11,False,False
+VAL1217_9_runner_refuses,runner stub refuses missing full product,PASS,valid_prediction_rows=0 and claim_allowed=false,False,False
+VAL1217_10_claim_locks_blocked,claim locks remain blocked,PASS,"Cparent map, zero theorem, finite prior, and WEP product blocked",False,False
+VAL1217_11_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout,False,False
+VAL1217_12_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1217_SOURCE_REGISTER.csv:18; P8_Y5_R10_1217_CPARENT_MAP_ATTEMPT.csv:6; P8_Y5_R10_1217_COEFFICIENT_ZERO_AUDIT.csv:4; P8_Y5_R10_1217_FINITE_COEFFICIENT_PRIOR_CONTRACT.csv:5; P8_Y5_R10_1217_NUMERIC_PRESSURE_REUSE.csv:3; P8_Y5_R10_1217_NO_CANCELLATION_GUARD.csv:2; P8_Y5_R10_1217_WEP_FACTOR_FEED_UPDATE.csv:3; P8_Y5_R10_1217_PRODUCT_RUNNER_STUB.csv:1; P8_Y5_R10_1217_DECISION_LEDGER.csv:3; P8_Y5_R10_1217_CLAIM_GATES.csv:6; P8_Y5_R10_1217_NEXT_TARGET.csv:1,False,False
+VAL1217_13_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_after_run_start_count=0,False,False
+VAL1217_14_next_target,next target is staged,PASS,1218-Y5-R10-parent-alpha-surface-operator-owner-or-coefficient-prior-source.md,False,False
+VAL1217_15_overall,overall 1217 validation,PASS,"1217 C_parent map/prior pack is reproducible, nonclaim, and claim-locked",False,False

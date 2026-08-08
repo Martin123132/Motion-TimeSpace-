@@ -1,0 +1,5 @@
+branch_id,route,condition,consequence,status,double_counting,valid_for_claim
+HPB3286_0_public_metric_Hodge,public Maxwell/Hodge stress,"chi=chi_metric(g_pub,Z_Q), Z_Q/g_pub/F/u/h all q-basic","L_v H=0 and L_v S_EM^a=0, so C_H=C_S=0",EXACT_CONDITIONAL_NOT_PARENT_SIGNED,safe: Poynting belongs only to T_EM,false
+HPB3286_1_finite_constitutive_medium,Delta_chi medium residual,chi has hidden/domain dependence not forced through q,C_H/C_S are projections of L_v Delta_chi and must be sourced or bounded,LIVE_FINITE_ROUTE,"safe only if counted as EM constitutive residual, not also hidden E_res flux",false
+HPB3286_2_independent_background_flux,separate MTS background energy flux,background carries energy not equal to public EM Poynting flux,"route belongs to E_res_munu/stress conservation, not to the public C_H/C_S readout factor",SEPARATE_BRANCH,safe only if named separately and never duplicated as T_EM flux,false
+HPB3286_3_forbidden_double_count,same Poynting flux used twice,EM flux is both public T_EM and hidden background source,source equation is overcounted,FORBIDDEN,forbidden by 3105/3285 guard,false

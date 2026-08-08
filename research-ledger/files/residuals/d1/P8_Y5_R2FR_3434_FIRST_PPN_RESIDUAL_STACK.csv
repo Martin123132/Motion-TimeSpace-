@@ -1,0 +1,10 @@
+ppn_id,observable,source_formula,target,current_status,blocks_Newton,blocks_local_GR,valid_for_claim
+PPRS3434_0_gamma,gamma_minus_1,"gamma_minus_1 = R_gamma[c_nonEH_operator_vector, epsilon_mu, epsilon_q_loc, epsilon_boundary, epsilon_range]",2.3e-5 dimensionless or derived zero,BLOCKED_MAP_VALUES_MISSING,False,True,False
+PPRS3434_1_beta,beta_minus_1,"beta_minus_1 = R_beta[delta_beta_source, epsilon_radial_Meff, epsilon_boundary, epsilon_nonEH, epsilon_q_loc]",7.8e-5 dimensionless or derived zero,BLOCKED_SECOND_ORDER_SOURCE_STACK,False,True,False
+PPRS3434_2_alpha1,alpha1,alpha1 = W_domain_alpha1 epsilon_domain_vector + R_alpha1[q_loc/frame/vector],1e-4 dimensionless or derived zero,BLOCKED_DOMAIN_FRAME_VALUES_MISSING,False,True,False
+PPRS3434_3_alpha2,alpha2,alpha2 = W_domain_alpha2 epsilon_domain_vector + R_alpha2[q_loc/frame/vector],2e-9 dimensionless or derived zero,BLOCKED_DOMAIN_FRAME_VALUES_MISSING,False,True,False
+PPRS3434_4_alpha3,alpha3,alpha3 = W_domain_alpha3 epsilon_domain_flux + W_boundary_alpha3 epsilon_boundary_flux + R_alpha3[q_loc],4e-20 dimensionless or derived zero,BLOCKED_TIGHT_FLUX_ROW,indirect_source_normalization,True,False
+PPRS3434_5_xi,xi,xi = W_domain_xi epsilon_domain_anisotropy + R_xi[boundary/projector/STF],4e-9 dimensionless or derived zero,BLOCKED_PROJECTOR_STF_ROW,False,True,False
+PPRS3434_6_zeta_conservation,zeta_i / conservation rows,"zeta_i = R_zeta[source nonconservation, q_loc exchange, boundary flux, frame split]",derived conservation or explicit row bounds,BLOCKED_SOURCE_CONSERVATION_MAP,if source flux changes M_H_ref,True,False
+PPRS3434_7_R10_range,alpha(lambda),"alpha(lambda)=R_R10[epsilon_range, q_loc Yukawa source, nonEH operator, bulk_X]",real alpha_bound(lambda) curve or derived zero,BLOCKED_CURVE_AND_SOURCE_MAP_MISSING,if finite-range force survives,True,False
+PPRS3434_8_Gdot,Gdot_over_G,dln mu_obs/dt = dln G_eff/dt + dln M_H_ref/dt + d epsilon_mu/dt,9.6e-15 yr^-1 or derived zero,BLOCKED_TIME_DERIVATIVE_VALUES_MISSING,time-dependent GM,True,False

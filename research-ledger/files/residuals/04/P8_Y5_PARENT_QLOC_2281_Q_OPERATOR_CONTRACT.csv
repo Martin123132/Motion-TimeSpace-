@@ -1,0 +1,6 @@
+contract_id,requirement,formula,status,missing_inputs,valid_for_claim
+QOC2281_0_action_term,"If accepted as a parent sector, write the q-sector covariantly.",S_q=-1/2 integral sqrt(-g_eff)[Z_q h^{ij} nabla_i q nabla_j q + M_q^2 q^2],FORMAL_TEMPLATE_ONLY,definition of h^{ij}; units; Z_q; M_q^2; source path; variation convention,False
+QOC2281_1_positivity,Coercivity requires positive coefficients on the physical/gauge-reduced domain.,Z_q>=Z_min>0 and M_q^2>=M_min^2>0 after quotient/gauge reduction,CONDITIONAL_FROM_HESSIAN_ONLY,positive Hessian proof; no ghost/gauge-zero mode audit; normalization,False
+QOC2281_2_boundary,Boundary terms must vanish or be bounded.,int_boundary Z_q q n^i nabla_i q = 0 or <= epsilon_boundary,UNSIGNED,local cell boundary class; no-flux theorem; matching to exterior,False
+QOC2281_3_observable_projection,q residuals must map into PPN/R10/clock/orbital observables.,R_obs=P_obs q and ||R_obs|| <= ||P_obs|| ||L_q^{-1}|| ||S_q||,MISSING_PROJECTION,P_obs for gamma/beta/Gdot/R10/clocks/orbits; units and source normalization,False
+QOC2281_4_newton_limit,"The same parent source must recover Newtonian mechanics, not merely suppress q.",nabla^2 Phi=4 pi G rho and a=-nabla Phi must use the same source normalization as the q-sector,SEPARATE_DEBT_RETAINED,worldtube/Hilbert source equality and measured-GM pullback remain unsolved,False

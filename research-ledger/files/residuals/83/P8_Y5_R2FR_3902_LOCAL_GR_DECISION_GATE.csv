@@ -1,0 +1,6 @@
+gate_id,gate,result,status,claim_allowed,timestamp_utc
+LGG3902_0_gradX,gradient memory bound,gradX_bound^2 <= S_X^2/(a_min*lambda_gap),PASS_DERIVED_FORMULA,False,2026-07-01T09:20:21+00:00
+LGG3902_1_gamma2,second-order gamma bound,gamma2_bound=C_slip*(S_X^2/(a_min*lambda_gap)+m_eff2*S_X^2/lambda_gap^2+B_TF_boundary),PASS_FORMULA_READY_INPUTS_MISSING,False,2026-07-01T09:20:21+00:00
+LGG3902_2_Gdot,Gdot calibration bound,Gdot_bound=abs(c_G)*dXdt_bound+abs(X_bound)*dcGdt_bound+calibration_drift_bound <= 9.6e-15 yr^-1,PASS_FORMULA_READY_INPUTS_MISSING,False,2026-07-01T09:20:21+00:00
+LGG3902_3_arithmetic,runner arithmetic,dry-run pass and fail branches validate the scalar runner,PASS_DRYRUN_ONLY,False,2026-07-01T09:20:21+00:00
+LGG3902_4_local_GR,local-GR promotion,no claim until live second-order gamma and Gdot calibration inputs are source-backed and pass,BLOCKED_NO_CLAIM_SCALAR_RUNNER_READY,False,2026-07-01T09:20:21+00:00

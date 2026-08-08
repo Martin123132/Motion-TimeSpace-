@@ -1,0 +1,7 @@
+rule_id,rule,result,evidence,claim_effect
+V479_0_sources,all cited source paths exist,pass,missing_sources=0,traceability only
+V479_1_domain_rows,three domain/projector R11 rows are loaded,pass,domain_r11_rows=3,domain source check is targeted
+V479_2_zero_rejected,theorem-zero attempt explicitly rejects promotion,pass,reject_rows=7,no hidden zero claim
+V479_3_fill_rows,fill requirements cover all domain coefficient rows,pass,fill_rows=5; domain_coeff_rows=5,next fill step is complete for domain channel
+V479_4_gates,claim gates fail for promotion and pass for fill-contract creation,pass,G479_0_sources=pass;G479_1_R11_claimable=fail_for_claim;G479_2_domain_coefficients=fail_for_claim;G479_3_no_missing_debt=fail_for_claim;G479_4_fill_requirements=pass;G479_5_claim_ceiling=pass,claim ceiling enforced
+V479_5_no_promotion,"no alpha3, mu_extra, Newton, PPN, or local-GR promotion is granted",pass,claim_allowed=false for all active domain source rows,private zero-or-fill gate only

@@ -1,0 +1,9 @@
+acquisition_id,needed_input,meaning,units,required_derivation_or_data,current_status,valid_for_claim,timestamp_utc
+ACQ3894_0_a_min,a_min,positive principal-symbol lower bound,dimensionless_or_metric_units,prove A^ij_mem >= a_min h^ij with a_min>0,MISSING_SIGN_CERTIFICATE,False,2026-07-01T08:43:13+00:00
+ACQ3894_1_lambda1,lambda_1(D),first eigenvalue or zero-mode removal,1/length^2,derive selected compact domain spectrum or boundary condition removing constant mode,MISSING_DOMAIN_SPECTRUM,False,2026-07-01T08:43:13+00:00
+ACQ3894_2_m_min,m_min^2,mass/gap lower bound,1/length^2,derive m_mem^2>=m_min^2>=0 or prove universal constant calibration,MISSING_MASS_GAP,False,2026-07-01T08:43:13+00:00
+ACQ3894_3_JX,||J_X||,source norm,operator-normalized source units,"fill J_chi_wall,J_boundary,J_history or theorem-zero each",MISSING_OPEN_COMPONENT_NORMS,False,2026-07-01T08:43:13+00:00
+ACQ3894_4_boundary_lift,boundary_lift_norm,boundary memory lift,operator-normalized boundary units,source boundary projection coefficient or topological/no-flux zero,MISSING_BOUNDARY_LIFT,False,2026-07-01T08:43:13+00:00
+ACQ3894_5_X_bound,||X_mem||,memory amplitude bound,X units times sqrt(volume),"||X_mem|| <= (||J_X|| + boundary_lift_norm)/lambda_gap, with lambda_gap := a_min lambda_1(D)+m_min^2",FORMULA_READY_INPUTS_MISSING,False,2026-07-01T08:43:13+00:00
+ACQ3894_6_Gdot_projection,K_Gdot;partial_t X_mem,Gdot memory projection,yr^-1 per X unit,|Delta Gdot/G| <= 9.6e-15 yr^-1,MISSING_GDOT_PROJECTION,False,2026-07-01T08:43:13+00:00
+ACQ3894_7_R10_PPN_projection,K_R10;K_PPN;K_clock;K_orbital;K_WEP,arena projections,arena-specific,each arena residual below bound with no cancellation credit,MISSING_ARENA_PROJECTIONS,False,2026-07-01T08:43:13+00:00

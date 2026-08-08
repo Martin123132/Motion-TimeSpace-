@@ -1,0 +1,6 @@
+gate_id,gate,status,reason,valid_for_claim,claim_allowed
+GATE1379_0_parent_signature_audit,gradient parent signature audit exists,PASS_AUDIT_READY,"GPA1379 rows test action slot, m status, kappa_m, Euler, sources, shell, stress, and units.",False,False
+GATE1379_1_gradient_parent_signed,gradient completion is parent-signed enough for candidate row,BLOCKED_NOT_PARENT_SIGNED,GPA1379_8 verdict fails parent signature.,False,False
+GATE1379_2_closure_runner_schema,closure-only runner schema exists,PASS_SCHEMA_READY_NONCLAIM,CRS1379 rows define symbolic inputs and refusal gates.,False,False
+GATE1379_3_numeric_scoring,closure runner can score numerically,BLOCKED_VALUES_MISSING,"kappa_m, F2, L0, d, A_S, A_ref, stress/boundary/shell values are missing or symbolic.",False,False
+GATE1379_4_local_claim,local GR / PPN / R10 pass can be claimed,BLOCKED_NO_CLAIM,closure runner is not a parent-signed GR reduction.,False,False

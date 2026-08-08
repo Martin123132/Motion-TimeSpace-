@@ -1,0 +1,7 @@
+gate_id,gate,current_status,promotion_rule,valid_for_claim,claim_allowed
+CFG1233_0_schema,candidate row has every required schema field,WAITING_FOR_INPUTS,reject if any required column missing,False,False
+CFG1233_1_numeric,fraction_value and fraction_uncertainty parse as finite numeric values,WAITING_FOR_INPUTS,"reject NaN, infinity, blank, symbolic, or MISSING values",False,False
+CFG1233_2_basis,basis convention maps to DCW1231 components and no double counting,WAITING_FOR_INPUTS,reject unowned basis or component aliases not mapped to residual basis,False,False
+CFG1233_3_source,source path/url/doi and extraction method are recorded,WAITING_FOR_INPUTS,"reject unsourced, proxy-only, toy-only, or unverifiable rows",False,False
+CFG1233_4_no_proxy,toy/proxy rows are refused as claim candidates,ACTIVE,rows referencing QUAR1232 sources remain debug-only,False,False
+CFG1233_5_physics,accepted fraction rows still cannot claim WEP/local-GR without Delta_w priors and tau_WEP,ACTIVE,component rows feed only nonclaim templates until physics gates close,False,False

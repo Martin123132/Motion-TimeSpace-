@@ -1,0 +1,7 @@
+row_id,symbol,formula,required_if_not_locked,numeric_value,status,valid_for_claim,timestamp_utc
+CMB3932_0_Delta_sq,Delta_sq,|Delta_sq| <= 7.8e-05*(1+xi_1)^2,PPN beta gate if EH square law is not signed,,HELD_IN_RESERVE_IF_CALIBRATED_MONOPOLE_BRANCH_REJECTED,False,2026-07-01T11:47:50+00:00
+CMB3932_1_epsilon_r,epsilon_r,epsilon_r(r)=|((1+xi_1)-r partial_r xi_1)/(1+xi_ref)-1|,orbital/ephemeris inverse-square gate if radial hair exists,,HELD_IN_RESERVE_IF_CALIBRATED_MONOPOLE_BRANCH_REJECTED,False,2026-07-01T11:47:50+00:00
+CMB3932_2_time,partial_t ln(1+xi_1),|partial_t ln(1+xi_1)| <= 9.6e-15 yr^-1,Gdot gate if time hair exists,,HELD_IN_RESERVE_IF_CALIBRATED_MONOPOLE_BRANCH_REJECTED,False,2026-07-01T11:47:50+00:00
+CMB3932_3_source,Delta_AB xi_1,Delta_AB xi_1 and Delta_AB Delta_sq,WEP/source-composition gate if source hair exists,,HELD_IN_RESERVE_IF_CALIBRATED_MONOPOLE_BRANCH_REJECTED,False,2026-07-01T11:47:50+00:00
+CMB3932_4_frame,delta_frame xi_1,frame/readout variation of xi_1,preferred-frame/readout gate if frame hair exists,,HELD_IN_RESERVE_IF_CALIBRATED_MONOPOLE_BRANCH_REJECTED,False,2026-07-01T11:47:50+00:00
+CMB3932_5_total,B_escape_loc_fallback,B_escape_loc_fallback=|Delta_sq|/(1+xi_1)^2 + |epsilon_r| + |partial_t xi_1| + |partial_r xi_1| + |Delta_AB xi_1| + |delta_frame xi_1|,absolute-sum no-cancellation if calibrated branch is rejected,,HELD_IN_RESERVE_IF_CALIBRATED_MONOPOLE_BRANCH_REJECTED,False,2026-07-01T11:47:50+00:00

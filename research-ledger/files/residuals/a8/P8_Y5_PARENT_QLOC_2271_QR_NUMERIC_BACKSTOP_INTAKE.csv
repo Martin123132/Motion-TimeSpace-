@@ -1,0 +1,4 @@
+backstop_id,target,purpose,required_fields,current_status,score_ready,valid_for_claim
+NB2271_0_covariance_data,C_tt;C_rr profile,"if analytic pullback fails, a toy/numeric psi covariance model must output C_tt and C_rr before q can be estimated",psi_profile; smoothing_kernel; C_tt(r); C_rr(r); frame; units; source_path,MISSING_NUMERIC_PROFILE,False,False
+NB2271_1_q_profile,q(r),compute q=ln[(1-C_tt)(1+C_rr)] and weak q_R coefficient,q_profile; L_profile; fit_window; q_R_fit; uncertainty; no_gradient_policy,MISSING_Q_PROFILE,False,False
+NB2271_2_comparator_gate,local bounds,screen a parent/numeric q_R after it exists,PPN/R10/clock/orbital bounds; projection kernels; no-cancellation guard,COMPARATOR_ONLY_NOT_THEORY_VALUE,False,False

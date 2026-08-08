@@ -1,0 +1,7 @@
+check_id,needed_object,minimum_evidence,why_needed,current_status,valid_for_claim,claim_allowed
+HC1250_0_core_action,L_MTS_core or H_core,"explicit local weak-field parent core for T,S/e_pub/chi_load, not just lambda_R C_R","q_R_hat must come from a coefficient equation or boundary charge, not template arithmetic",MISSING_HCORE,False,False
+HC1250_1_canonical_brackets,canonical variables and brackets,"Poisson/Dirac bracket table for T,S or C_R sector",constraint preservation and finite residual coefficient require bracket closure,MISSING_BRACKET_TABLE,False,False
+HC1250_2_boundary_charge,Q_R boundary/corner class,"boundary variation identifies whether Q_R is forbidden, zero, or finite with units",finite q_R_hat is meaningless unless Q_R is a defined charge/source coefficient,MISSING_BOUNDARY_CLASS,False,False
+HC1250_3_GM_projection,Q_R to q_R_hat projection,"q_R_hat=Q_R c^2/(G M_source) with source body, measured GM, and coordinate convention",local PPN runner uses dimensionless q_R_hat,MISSING_QR_TO_QRHAT_SOURCE_ROW,False,False
+HC1250_4_gamma_policy,PPN gamma scoring map,gamma_minus_1_QR=-q_R_hat/2 and strict 1244 policy values,finite row must be smoke-scored consistently,READY_NONCLAIM_POLICY_ONLY,False,False
+HC1250_5_no_closure,no-closure certificate,"source derivation does not use R_AB=0, q_R_hat=0 by closure, or 1248 ansatz-zero",prevents importing the desired local GR result,REQUIRED_FOR_ANY_ROW,False,False

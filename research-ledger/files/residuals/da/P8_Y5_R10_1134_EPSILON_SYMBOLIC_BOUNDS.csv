@@ -1,0 +1,4 @@
+bound_id,product,alpha3_limit,required_epsilon_bound,numeric_bound,if_zero_theorem,current_status,valid_for_claim,generated_utc
+EB1134_0_domain_bound,W_domain_alpha3*epsilon_domain_flux,4e-20,4e-20/abs(W_domain_alpha3),NONEXECUTABLE_MISSING_W,passes this product if epsilon_domain_flux=0 or W_domain_alpha3=0,SYMBOLIC_ONLY,false,2026-06-14T22:02:50.701160+00:00
+EB1134_1_R11_bound,K_R11_flux_alpha3*c_R11_flux_alpha3*epsilon_domain_flux,4e-20,4e-20/abs(K_R11_flux_alpha3*c_R11_flux_alpha3),NONEXECUTABLE_MISSING_K_C,passes this product if epsilon_domain_flux=0 or K_R11_flux_alpha3=0 or c_R11_flux_alpha3=0,SYMBOLIC_ONLY,false,2026-06-14T22:02:50.701160+00:00
+EB1134_2_shared_bound,domain_and_R11_alpha3_flux,4e-20,"min(4e-20/abs(W_domain_alpha3), 4e-20/abs(K_R11_flux_alpha3*c_R11_flux_alpha3))",NONEXECUTABLE_MISSING_W_K_C,passes both products if epsilon_domain_flux=0 and couplings are finite,SYMBOLIC_ONLY,false,2026-06-14T22:02:50.701160+00:00

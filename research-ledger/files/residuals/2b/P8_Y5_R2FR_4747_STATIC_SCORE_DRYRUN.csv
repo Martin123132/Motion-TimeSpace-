@@ -1,0 +1,6 @@
+checkpoint,dryrun_id,case,value_state,result,next_action,score_ready,valid_for_claim,timestamp_utc
+4747,DRY4747_0_symbolic_gap,lambda_1^stat >= c_DN/(C_P L_loc^2),NOT_NUMERIC,PASS_SYMBOLIC_ONLY,"Needs c_DN,C_P,L_loc.",False,False,2026-07-08T00:29:31+00:00
+4747,DRY4747_1_canonical_CP_only,"C_P=1/pi^2, L_loc=MISSING, c_DN=MISSING",NOT_SCORE_READY,FAIL_CLOSED,Canonical C_P alone cannot score anything.,False,False,2026-07-08T00:29:31+00:00
+4747,DRY4747_2_missing_TT,sigma_TT schematic but not parent-fixed,NOT_SCORE_READY,FAIL_CLOSED,Write exact TT owner field/projector symbol.,False,False,2026-07-08T00:29:31+00:00
+4747,DRY4747_3_missing_quar,sigma_quar schematic but not parent-fixed,NOT_SCORE_READY,FAIL_CLOSED,Write exact q_tr/K_own symbol.,False,False,2026-07-08T00:29:31+00:00
+4747,DRY4747_4_static_residual,C_res_static <= Pi_owner^stat sqrt(CzeroMode_stat^2+(C_Dstat^2+C_boundary_stat) C_P L_loc^2/c_DN),SYMBOLIC_NONCLAIM,NOT_SCORE_READY,Source all constants before any PPN/R10 claim.,False,False,2026-07-08T00:29:31+00:00

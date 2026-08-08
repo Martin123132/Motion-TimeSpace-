@@ -1,0 +1,7 @@
+checkpoint,runner_id,quantity,value_or_formula,status,score_ready,valid_for_claim,timestamp_utc
+4744,CZR4744_0_trace_zero,C_trace_norm,0 if m in H^1_0; MISSING if parent domain not accepted,CONDITIONAL_ZERO,False,False,2026-07-08T00:14:10+00:00
+4744,CZR4744_1_gauge_zero,C_gauge_kernel,0 if Q_perp=ker(Pi_gauge Pi_0) is parent-owned; otherwise MISSING,CONDITIONAL_ZERO,False,False,2026-07-08T00:14:10+00:00
+4744,CZR4744_2_physical_kernel,C_phys_kernel,MISSING_SOURCE_VALUE unless physical kernel absence is proved,MISSING_SOURCE_VALUE,False,False,2026-07-08T00:14:10+00:00
+4744,CZR4744_3_trace_constant,C_trace,MISSING_OPERATOR_CONSTANT until trace estimate is sourced,MISSING_SOURCE_VALUE,False,False,2026-07-08T00:14:10+00:00
+4744,CZR4744_4_kernel_bound,C_zeroMode <= C_trace*C_trace_norm + C_q*C_gauge_kernel + C_phys*C_phys_kernel,score-ready only after physical kernel and constants are sourced,NOT_SCORE_READY,False,False,2026-07-08T00:14:10+00:00
+4744,CZR4744_5_exact_condition,"C_trace_norm=0, C_gauge_kernel=0, C_phys_kernel=0 => C_zeroMode=0",exact if parent domain plus physical-kernel absence are both signed,EXACT_CONDITIONAL,False,False,2026-07-08T00:14:10+00:00

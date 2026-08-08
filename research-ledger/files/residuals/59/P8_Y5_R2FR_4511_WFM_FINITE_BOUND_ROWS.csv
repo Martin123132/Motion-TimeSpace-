@@ -1,0 +1,5 @@
+bound_id,quantity,formula,required_inputs,current_status,valid_for_claim
+WFB4511_0_parent_spurion,"W_F,m_parent","|W_F,m_parent| <= |partial_m q| |P_parent| |C_Weyl| + |q| |partial_m P_parent| |C_Weyl|",partial_m q; q; P_parent; partial_m P_parent; C_Weyl; units; source path,MISSING_PARENT_SPURION_OR_ZERO_SIGNATURE,False
+WFB4511_1_readout_quadrupole,"W_F,m_readout","|W_F,m_readout| <= |partial_m Q_TF| |E_Weyl| + |Q_TF| |partial_m E_Weyl| + commutator/readout tails",Q_TF norm; partial_m Q_TF; E_Weyl profile; readout commutator; source-worldtube certificate,MISSING_QUADRUPOLE_OR_READOUT_SILENCE,False
+WFB4511_2_projector_reentry,"W_F,m_projector","|W_F,m_projector| <= E_projector_stress + E_worldtube + E_domain_motion + E_current_escape + E_exterior",chainmap/readout bound pack components and M_H_ref normalization,MISSING_CHAINMAP_COMPONENT_VALUES,False
+WFB4511_3_arena_projection,E_WFm[arena],"E_WFm[arena] <= tau_WFm_arena ||G_q|| |W_F,m_total| ||C_Weyl|| + boundary/source tails",tau_R10; tau_PPN; tau_clock; tau_orbital; G_q; C_Weyl profile; no-cancellation envelope,MISSING_ARENA_PROJECTION,False

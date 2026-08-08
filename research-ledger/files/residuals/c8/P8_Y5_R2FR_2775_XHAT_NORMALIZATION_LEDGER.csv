@@ -1,0 +1,6 @@
+xhat_id,quantity,required_form,current_status,risk,valid_for_claim
+XHN2775_0_shared_parent_norm,Xhat/chi_X normalization,"same parent normalization used by clocks, WEP, and R10 or explicitly separated",MISSING_SHARED_NORMALIZATION,tau_WEP cannot be compared to clock/R10 factors,False
+XHN2775_1_clock_transfer_guard,clock-to-WEP transfer,no clock screening imported into WEP without source/readout map,TRANSFER_BLOCKED,fake tau_WEP via clock branch,False
+XHN2775_2_R10_transfer_guard,R10-to-WEP transfer,no tau_R10 unity or profile factor imported into WEP,TRANSFER_BLOCKED,profile/unit contamination,False
+XHN2775_3_direct_product_escape,direct P_WEP product,parent variation gives dimensionless eta_AB product directly,MISSING_DIRECT_PRODUCT,split-factor ambiguity persists,False
+XHN2775_4_verdict,Xhat normalization pack,shared normalization or direct product,NOT_ACQUIRED,tau_WEP remains a free symbol,False

@@ -1,0 +1,11 @@
+check_id,check,status,details
+VAL1345_0_sources_exist,registered source paths exist and anchors are found,PASS,10/10 source anchors found
+VAL1345_1_vertex_matrix_complete,generator vertex matrix covers all seven GE966 live generators,PASS,vertex_rows=7
+VAL1345_2_no_hidden_ambiguity,each row names its retained or closure-only source status,PASS,GE966_0_readout_projector=CLOSURE_ONLY_UNTIL_PARENT_DOMAIN_SIGNED;GE966_1_species_constants=RETAINED_SOURCE_NORMALIZATION_SYMBOLIC;GE966_2_relative_domain_class=RETAINED_BOUNDARY_SOURCE_CHARGE_SYMBOLIC;GE966_3_domain_selector=RETAINED_SELECTOR_SOURCE_CHARGE_SYMBOLIC;GE966_4_memory_class_scalar=RETAINED_SCALAR_SOURCE_CHARGE_SYMBOLIC_HIGH_PRIORITY;GE966_5_finite_fibre_spectrum=RETAINED_FIBRE_SOURCE_CHARGE_SYMBOLIC_HIGH_PRIORITY;GE966_6_orientation_time_arrow=RETAINED_CONNECTION_OR_PREFERRED_FRAME_SYMBOLIC
+VAL1345_3_runner_rejects,source-charge runner inputs remain nonclaim and rejected,PASS,ALL_GENERATOR_VERTEX_ROWS_NONCLAIM
+VAL1345_4_direct_pressure_selected,memory and fibre rows selected as direct R2/fR scalar pressure targets,PASS,priority1=memory/class scalar;priority2=finite-cell fibre spectrum
+VAL1345_5_claims_blocked,"R2/fR zero, finite scalar bound, and local-GR claims remain blocked",PASS,GATE1345_0_R2FR_zero=BLOCKED;GATE1345_1_finite_scalar_bound=BLOCKED;GATE1345_2_local_GR_EH=BLOCKED
+VAL1345_6_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false where present
+VAL1345_7_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1345_8_next_target_1346,next target routes to memory/fibre vertex zero or symbolic coefficient fill,PASS,1346-Y5-R10-RAB-memory-and-fibre-vertex-zero-or-symbolic-coefficient-fill.md
+VAL1345_9_overall,overall 1345 validation,PASS,1345 inventories all live generator vertices and selects memory/fibre rows as next direct scalar pressure targets

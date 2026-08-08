@@ -1,0 +1,6 @@
+dryrun_id,check,result,details,valid_for_claim,claim_allowed
+DRY1239_0_schema_fields,required schema fields exist,PASS,11 schema fields declared,False,False
+DRY1239_1_branch_separation,closure rows and finite/source rows are distinguishable,PASS,branch_type separates closure_benchmark from finite_residual/source_required,False,False
+DRY1239_2_missing_sources_block,missing finite rows are blocked from scoring,PASS,all missing finite rows use source_required or blocked validation gates,False,False
+DRY1239_3_closure_not_evidence,closure rows are labelled closure_only,PASS,closure_value rows cannot be counted as derived_zero or evidence,False,False
+DRY1239_4_no_long_jobs,no data job is launched,PASS,1239 is schema/checklist generation only,False,False

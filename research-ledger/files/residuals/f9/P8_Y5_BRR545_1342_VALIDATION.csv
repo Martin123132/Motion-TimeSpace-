@@ -1,0 +1,12 @@
+check_id,check,status,details
+VAL1342_0_sources_exist,registered source paths exist and anchors are found,PASS,10/10 source anchors found
+VAL1342_1_live_curve_placeholder,live claim-facing curve remains placeholder-only,PASS,positive_numeric_rows=0;claim_true_rows=0
+VAL1342_2_review_candidate_private_curve,Lee 2020 review candidate is numeric but nonclaim,PASS,positive_numeric_rows=390;claim_true_rows=0;status=PRIVATE_PRESSURE_CURVE_NONCLAIM
+VAL1342_3_interpolation_private_smoke,log-log interpolation smoke runs on private review curve,PASS,alpha_interp=1.13811631033; log10_error_to_alpha1=0.0561866
+VAL1342_4_tower_zero_not_derived,integrated-out tower zero theorem is not promoted,PASS,"integrated-out tower, measure, memory, boundary, and primitive-marker clauses remain unsigned"
+VAL1342_5_promotion_blocked,claim promotion gates remain blocked/nonclaim,PASS,GATE1342_0_parent_zero=BLOCKED;GATE1342_1_full_curve=BLOCKED;GATE1342_2_MTS_prediction=BLOCKED;GATE1342_3_interpolation=PRIVATE_ONLY;GATE1342_4_local_GR=BLOCKED
+VAL1342_6_runner_rejects,strict runner status rejects every R2/fR branch,PASS,RUN1342_0_zero_branch=REJECTED_ZERO_THEOREM_NOT_PARENT_SIGNED;RUN1342_1_live_curve_branch=REJECTED_BOUND_CURVE_PLACEHOLDER;RUN1342_2_review_curve_branch=REJECTED_NONCLAIM_REVIEW_CANDIDATE;RUN1342_3_MTS_prediction_branch=REJECTED_MISSING_MTS_PARENT_COEFFICIENT;RUN1342_VERDICT=R2FR_BRANCH_BLOCKED_NONCLAIM
+VAL1342_7_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false where present
+VAL1342_8_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1342_9_next_target_1343,next target routes to parent scalar coefficient zero or finite scalar map fill,PASS,1343-Y5-R10-RAB-R2FR-parent-coefficient-zero-signature-or-finite-scalar-map-fill.md
+VAL1342_10_overall,overall 1342 validation,PASS,"1342 keeps R2/fR blocked, preserves Lee 2020 curve as private pressure data, and selects parent coefficient route"

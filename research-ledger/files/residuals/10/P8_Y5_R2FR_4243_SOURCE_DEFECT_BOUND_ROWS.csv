@@ -1,0 +1,5 @@
+timestamp_utc,branch_id,checkpoint_id,bound_id,formula,row_type,status,claim_allowed,valid_for_claim
+2026-07-03T09:35:15+00:00,MTS_R2FR_Y5_HPERP_DQ_DEFECT_BOUND_4243,4243,SB4243_0_symbolic_bound,"A_src,Hperp := |S_A Hperp^A| <= C_S C_perp E_Dq,H",symbolic_bound,"nonclaim until C_S, C_perp and E_Dq,H component values are sourced",False,False
+2026-07-03T09:35:15+00:00,MTS_R2FR_Y5_HPERP_DQ_DEFECT_BOUND_4243,4243,SB4243_1_best_case,"E_Dq,H=0 => A_src,Hperp=0",exact_zero_branch,requires all Dq_i[H_L] zero clauses,False,False
+2026-07-03T09:35:15+00:00,MTS_R2FR_Y5_HPERP_DQ_DEFECT_BOUND_4243,4243,SB4243_2_budget,"C_S C_perp E_Dq,H <= 0.1678939074330212*(mu_Xi T_res)/|c_Gamma|",strong_Gdot_budget_branch,scoreable only after Dq profile and budget owner inputs exist,False,False
+2026-07-03T09:35:15+00:00,MTS_R2FR_Y5_HPERP_DQ_DEFECT_BOUND_4243,4243,SB4243_3_first_profile_row,Hperp/S_A first real row is replaced by Dq component profile pack,profile_contract,Dq component rows are the first source-ready form; no fabricated numbers,False,False

@@ -1,0 +1,5 @@
+row_id,piece,formula,result,status,valid_for_claim,timestamp_utc
+GD3902_0_dxdt,memory time-derivative bound,dXdt_bound <= gamma_mem*X_bound + (dJdt_bound+dBdt_bound)/lambda_gap + incoming_tail_dt,"stationarity kills dXdt only when source, boundary, and incoming history are all time-silent",DERIVED_DXDT_BOUND,False,2026-07-01T09:20:21+00:00
+GD3902_1_stationary_zero,stationary Gdot zero branch,dXdt_bound=0 and calibration_drift_bound=0 => Gdot_bound=0,"candidate exact zero branch from 3899, still parent-unsigned",CANDIDATE_ZERO_PARENT_UNSIGNED,False,2026-07-01T09:20:21+00:00
+GD3902_2_bound,Gdot executable bound,Gdot_bound=abs(c_G)*dXdt_bound+abs(X_bound)*dcGdt_bound+calibration_drift_bound <= 9.6e-15 yr^-1,retains nonstationary memory and calibration drift as scored components,DERIVED_GDOT_RUNNER_FORMULA,False,2026-07-01T09:20:21+00:00
+GD3902_3_calibration,calibration drift split,calibration_drift_bound = abs(partial_t ln G_cal) + clock/alpha/source-frame drift terms,minimal Maxwell helps source stress but does not by itself fix alpha/clock/G calibration,OPEN_EM_CLOCK_CALIBRATION_INPUT,False,2026-07-01T09:20:21+00:00

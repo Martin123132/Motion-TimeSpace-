@@ -1,0 +1,7 @@
+gate_id,pass_condition,current_result,claim_effect
+AG523_0_source_paths_exist,all cited source paths exist inside post-checkpoint-work,computed_in_validation,fail_if_missing
+AG523_1_chain_complete,"calibration chain covers charge, Poisson, Gauss, orbit, extra mass, G_eff, derivative hair, PPN, and residual score",written_but_not_satisfied,no_claim_until_all_chain_rows_close
+AG523_2_no_extra_mass_unfilled,all 522 extra-mass channels are theorem-zero or individually below local locks,fail_open_channels_unfilled,blocks_measured_GM_and_Newton
+AG523_3_residual_scorecard_scored,all scorecard rows have numeric or theorem-zero evidence with units and source paths,fail_scorecard_unfilled,blocks_source_normalized_Newton
+AG523_4_PPN_source_stability,second-order beta/gamma/source/operator residual vector vanishes or is below locks,fail_not_derived,blocks_local_GR_even_if_Newton_lands
+AG523_5_no_overclaim,no row grants measured-GM/Newton/PPN/local-GR credit before derivation or scoring,pass_policy_enforced,keeps_private_checkpoint_safe

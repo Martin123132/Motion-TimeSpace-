@@ -1,0 +1,4 @@
+fallback_id,needed_input,current_value,formula_use,claim_gate,score_ready,valid_for_claim
+MV4465_0_required_vector,"Delta_s_TiPt_j = s_Ti,j - s_Pt,j for each active source coefficient b_j",MISSING_SOURCE_BACKED_MATERIAL_SENSITIVITY_VECTOR,Delta_C_TiPt = sum_j Delta_s_TiPt_j * b_j,"valid only if material vector, b_j coefficients, range/profile and readout normalization are same-branch",False,False
+MV4465_1_required_coefficients,"b_j = d ln theta_j / d chi and common alpha_0, C_S, lambda",MISSING_PARENT_SOURCE_COEFFICIENTS_AND_RANGE,eta_TiPt = Delta_C_TiPt*C_S*alpha_0*(1+r/lambda)exp(-r/lambda),cannot use empirical eta bound as a coefficient,False,False
+MV4465_2_current_product_bound,source-backed product only,|Delta_C_TiPt*C_S*alpha_0*Y(lambda)| <= 2.8e-15,a future vector row must satisfy this product inequality before any WEP pass,bound exists but prediction side is missing,True,False

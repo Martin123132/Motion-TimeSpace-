@@ -1,0 +1,15 @@
+same_parent_branch_id,field,type,required_value_or_policy,purpose,valid_for_claim,claim_allowed
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,schema_version,string,C_PARENT_IMPORT_SCHEMA_1431,locks parser and interpretation,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,same_parent_branch_id,string,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,must exactly match branch_id.csv,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,coefficient_id,string,unique row id,stable component identity,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,component,string,Q_T_over_m|C_T_metric|C_T_source|Z_T|lambda_T|DD_pullback_or_other,declares the physical slot,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,value,float_or_DERIVED_ZERO,numeric value or DERIVED_ZERO,no MISSING/PENDING/PLACEHOLDER for claim rows,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,uncertainty,float_or_exact,uncertainty or exact theorem tag,required for numeric rows,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,units,string,SI or declared natural-unit conversion,dimension checking,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,sign_convention,string,explicit body/order/field sign,prevents sign flips,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,basis,string,"MTS parent basis, not DD-only proxy",prevents ontology swap,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,source_path,path_or_url_or_doi,"local file, URL, or DOI",provenance,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,parent_status,enum,PARENT_DERIVED|SOURCE_BACKED_NUMERIC|DERIVED_ZERO|EXTERNAL_COMPARATOR_ONLY,promotion gate,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,zero_certificate_status,enum,QT_ZERO_CLOSED|NUMERIC_NONZERO|NOT_ZERO_CERTIFIED,distinguishes theorem zero from missing,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,valid_for_claim,boolean,false until all promotion tests pass,claim safety,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,claim_allowed,boolean,false until full branch scorepack passes,claim safety,False,False

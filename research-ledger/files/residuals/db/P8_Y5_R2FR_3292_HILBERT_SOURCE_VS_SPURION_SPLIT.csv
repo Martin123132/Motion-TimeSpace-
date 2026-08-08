@@ -1,0 +1,5 @@
+split_id,input_type,source_effect,classification,beta_source_only_label,valid_for_claim
+HSS3292_0_allowed_measured_parameter,"mass, charge, representation label, interaction coupling","enters S_matter, J_Q, T_total, and readout together",ALLOWED_THETA_A,0 for hidden source-only branch,false
+HSS3292_1_allowed_common_calibration,single universal kappa_common,common scale of source strength,CALIBRATION_ONLY_IF_GUARDS_PASS,0 relative piece only after guards,false
+HSS3292_2_forbidden_source_only_spurion,w_A/kappa_A affects source but not matter/readout,changes active/passive source normalization without same-action owner,FORBID_IF_HILBERT_SOURCE_SIGNATURE_SIGNED,live until parent signature,false
+HSS3292_3_hidden_spurion_return,w_A(I_hid) or kappa_A(I_hid),vertical drift in source selection,LIVE_COUNTERMODEL,nonzero unless no-hidden/no-spurion theorem closes,false

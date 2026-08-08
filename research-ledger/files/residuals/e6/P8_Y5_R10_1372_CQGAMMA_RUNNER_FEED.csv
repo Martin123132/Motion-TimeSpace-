@@ -1,0 +1,5 @@
+feed_id,runner_field,feed_formula,status,blocks_claim_because,valid_for_claim,claim_allowed
+QGF1372_0_bound_feed,Q_norm,Q_norm <= Q_alg + Q_cdb + Q_mem + Q_bdy + Q_trans + Q_proj,SYMBOLIC_FEED_READY,component values are not numeric/source-backed,False,False
+QGF1372_1_gamma_bound,B_gamma,B_gamma <= (c^2/(2U_min)) N_G N_D (Q_alg+Q_cdb+Q_mem+Q_bdy+Q_trans+Q_proj),SYMBOLIC_CASSINI_BOUND_READY,"U_min,N_G,N_D and Q_i values remain missing",False,False
+QGF1372_2_acceptance,Q_allowed,Q_alg+Q_cdb+Q_mem+Q_bdy+Q_trans+Q_proj <= 2 U_min sigma_gamma/(c^2 N_G N_D),NONCLAIM_ACCEPTANCE_RULE_READY,left and right sides are symbolic only,False,False
+QGF1372_3_proxy_guard,old compact-shell proxy,do not import QBF1011_0=7.432631961576971e-06 as Q_norm,PROXY_NOT_IMPORTED,mapping into PPN/source-normalization units is missing,False,False

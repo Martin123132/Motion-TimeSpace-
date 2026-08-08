@@ -1,0 +1,8 @@
+row_id,equation,meaning,status,valid_for_claim,timestamp_utc
+V4859_0_constraint,Delta B_i=-p Delta W_i/(1-p)+16piGae(1-beta_u)P_i^T/(1-p),nondynamical transverse shift constraint,EXACT,False,2026-07-10T01:10:00+01:00
+V4859_1_wave,c14 ddot W_i-A_V Delta W_i=8piGae(beta_u-p)P_i^T/(1-p),sourced physical spin-1 wave equation,EXACT,False,2026-07-10T01:10:00+01:00
+V4859_2_gradient,A_V=D/[2(1-p)],positive vector gradient coefficient,PASS,False,2026-07-10T01:10:00+01:00
+V4859_3_speed,cV2=(d + p)*(d*p - d - p)/(4*d*p*(p - 1)),same mode speed as the reduced primary action,PASS,False,2026-07-10T01:10:00+01:00
+V4859_4_retarded,"W_i(t,x)=4Gae(beta_u-p)/D int P_i^T(t-R/cV,x')/R d3x'",outgoing retarded Green response,EXACT_LINEAR,False,2026-07-10T01:10:00+01:00
+V4859_5_metric_wave,B_i^rad=-p W_i^rad/(1-p),vacuum outgoing metric-vector polarization,EXACT_OUTSIDE_SOURCE,False,2026-07-10T01:10:00+01:00
+V4859_6_static,omega->0 reproduces Delta W_i=16piGae(p-beta_u)P_i^T/D,4858 limit,PASS,False,2026-07-10T01:10:00+01:00

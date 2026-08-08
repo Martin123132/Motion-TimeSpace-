@@ -1,0 +1,7 @@
+gate_id,gate,status,reason,valid_for_claim,claim_allowed
+GATE1390_0_sources,all cited local sources exist and anchors are present,PASS,source register validates against local corpus,False,False
+GATE1390_1_common_constant,w_* is parent-signed as a global constant,BLOCKED_PARENT_UNSIGNED,1390 proves the conditional theorem but current corpus does not sign the global-constant premise,False,False
+GATE1390_2_derivative_silence,time/source/range/frame/scalar derivatives of w_* vanish,BLOCKED_NOT_SIGNED,derivative silence is required but not parent-proven,False,False
+GATE1390_3_bulk_bound_rows,bulk material coefficient rows exist,PASS_NONCLAIM_ROWS,"w_*, beta_*, Delta_w_bulk, beta_w,bulk, alpha_bulk, and local residual rows are staged without values",False,False
+GATE1390_4_numeric_score,bulk coefficients can score Newton/WEP/R10/PPN/local residuals,BLOCKED_VALUES_AND_KERNELS_MISSING,"no coefficient values, real bounds, material kernels, or local residual vector exist yet",False,False
+GATE1390_5_local_claim,local GR/Newton reduction can be claimed,BLOCKED_NO_CLAIM,1390 is a common-calibration theorem attempt plus nonclaim coefficient routing pack,False,False

@@ -1,0 +1,6 @@
+term_id,variation_piece,schematic_result,order_in_Z,risk,current_status,valid_for_claim
+MRT3413_0_volume,delta sqrt(-g),volume term proportional to Gamma_eff g^{mu nu},Gamma0 + O(Z^2),"Gamma0 must be background/cosmological subtraction, not local source mass",CONVENTION_AND_SUBTRACTION_UNSIGNED,False
+MRT3413_1_MAB,delta_g M_AB,1/2 (delta_g M_AB) Z^A Z^B,O(Z^2) if M_AB finite,"M_AB must be parent-owned, covariant, positive and nonsingular",FORMAL_SAFE_TO_LINEAR_ORDER_ONLY,False
+MRT3413_2_Z_metric,delta_g Z^A,M_AB Z^A delta_g Z^B,O(Z) if delta_g Z is finite,linear metric-response leakage returns if Z/readout/projector variation is singular or source-weighted,PPN_READOUT_LOCK_OPEN,False
+MRT3413_3_derivatives_boundary,"derivative, projector, domain and integration-by-parts terms",boundary/collar/domain response terms B_GK and P_loc commutators,can be O(Z) or boundary-supported,alpha3/source-measure leakage if boundary odd charge or projector flux survives,BOUNDARY_PROJECTOR_OPEN,False
+MRT3413_4_live_Khat_compare,compare K_metric[Gamma_eff] to live K_hat,Delta_K:=K_hat-K_metric[Gamma_eff],unknown,construction is only useful if Delta_K=0 or bounded,DELTA_K_RETAINED,False

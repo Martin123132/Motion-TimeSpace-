@@ -1,0 +1,5 @@
+unit_id,quantity,definition,formula,value,units,valid_for_claim,generated_utc,ratio_to_AX1090_single_cap,status,source_value_from_3164
+KU3165_0_definition,C_K2_unit,per-unit K2 local l=2 residual coefficient,C_K2_unit = ||Lambda||_hat(M_Lambda=1) * A_public_full_shell,3.593766357482964e-24,dimensionless_coefficient_per_unit_K2,false,2026-06-26T10:23:42.991157+00:00,,,
+KU3165_1_projection_owner_smoke,C_K2_if_K2_equals_1,projection-owner smoke case W2=1 and M_Lambda=1,C_K2 = C_K2_unit,3.593766357482964e-24,,false,2026-06-26T10:23:42.991157+00:00,6.018737270214063e-21,safe_smoke_nonclaim_if_parent_owner_signed,
+KU3165_2_at_K2_l2_cap,C_K2_at_K2_l2_cap,coefficient impact at the 3164 l2 cap,C_K2 = K2_cap_l2 * C_K2_unit,5.970964001482573e-04,,false,2026-06-26T10:23:42.991157+00:00,1.000000000000000e+00,saturates_internal_AX1090_single_cap,
+KU3165_3_internal_cap,K2_internal_cap_l2,largest K2 allowed by the inherited AX1090 single coefficient cap for this l2 lane,K2 <= AX1090_SINGLE_CAP/C_K2_unit,1.661478072732744e+20,,false,2026-06-26T10:23:42.991157+00:00,,internal_cap_reproduced,1.661478072732745e+20

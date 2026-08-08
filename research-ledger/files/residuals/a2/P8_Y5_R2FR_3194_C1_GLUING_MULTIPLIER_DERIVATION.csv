@@ -1,0 +1,8 @@
+derivation_id,statement,formula,status,valid_for_claim,generated_utc
+GLUE3194_0_boundary_variables,Use z_0=F and z_1=F' as the C1 variables at each interface.,"z=(F,F')",DEFINED,false,2026-06-26T18:27:03.809424+00:00
+GLUE3194_1_jump_constraints,Impose C1 continuity as variational constraints rather than fixed external patching.,[F]=0 and [F']=0,DEFINED,false,2026-06-26T18:27:03.809424+00:00
+GLUE3194_2_gluing_action,Add Lagrange multipliers for the C1 constraints at each interface.,S_glue=sum_interfaces(lambda_0[F]+lambda_1[F']),ACTION_CANDIDATE,false,2026-06-26T18:27:03.809424+00:00
+GLUE3194_3_constraint_variation,Varying lambda enforces the C1 constraints exactly.,"delta_lambda S_glue=0 -> [F]=0, [F']=0",DERIVED,false,2026-06-26T18:27:03.809424+00:00
+GLUE3194_4_boundary_field_variation,Varying the boundary fields gives force-balance between bulk momenta and multiplier reaction forces.,[Pi_0]+lambda_0=0 and [Pi_1]+lambda_1=0,DERIVED,false,2026-06-26T18:27:03.809424+00:00
+GLUE3194_5_multiplier_solution,The multiplier values are fixed by the already-derived 3193 momentum jumps.,lambda_i=-[Pi_i],SOLVED_BY_STATIONARITY,false,2026-06-26T18:27:03.809424+00:00
+GLUE3194_6_parent_gate,This closes the interface equations only if the parent theory permits constrained gluing domains or derives these multipliers as finite edge stress.,parent signature required: S_parent -> S_bulk + S_glue or finite-layer limit,PARENT_SIGNATURE_REQUIRED,false,2026-06-26T18:27:03.809424+00:00

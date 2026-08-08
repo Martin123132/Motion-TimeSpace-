@@ -1,0 +1,5 @@
+prior_id,parameter,symbol,definition,component,units,current_value,source_path,claim_gate,valid_for_claim
+BG623_0_common_frame_log_derivative,common_frame_log_derivative,c_g,c_g := d ln A_g/dXhat for hat_g_ab=A_g(X)^2 g_ab,b_g,dimensionless,MISSING_PARENT_INPUT,MISSING_PARENT_SOURCE,blocked_until_derive_zero_or_numeric_bound,false
+BG623_1_trace_response,geometry_trace_response,tau_g,"tau_g := projected T^ab hat_g_ab/rho_ref, sign and normalization fixed by arena convention",b_g,dimensionless,MISSING_ARENA_PROJECTION,MISSING_ARENA_SOURCE,blocked_until_projection_defined,false
+BG623_2_effective_bg,b_g_effective,b_g,b_g := tau_g*c_g for pure conformal common-frame mode; generalized by a projection matrix for disformal modes,b_g,dimensionless,MISSING_PARENT_INPUT,MISSING_PARENT_SOURCE,blocked_until_c_g_and_tau_g_sourced_or_zero_derived,false
+BG623_3_zero_certificate,b_g_zero_certificate,Z_bg,"Z_bg=true only if parent signs q, X verticality, matter geometry factorization, and no representative-dependent frame",b_g,boolean,false,this_checkpoint,not_signed,false

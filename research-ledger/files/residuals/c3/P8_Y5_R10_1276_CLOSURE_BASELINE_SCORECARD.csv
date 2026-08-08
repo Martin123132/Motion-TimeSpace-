@@ -1,0 +1,6 @@
+score_id,closure_baseline_id,assumption,safe_internal_use,claim_risk,score,valid_for_claim,claim_allowed
+CS1276_0_C_R_zero,LCB1275_0_assumption,C_R=R_AB=ln(T^2S)=0,benchmark/control branch for local tests,would fake derived GR reduction if unlabeled,SAFE_NONCLAIM_ONLY,False,False
+CS1276_1_no_charge,LCB1275_1_no_charge,"Q_R=0, boundary_u=0, readout_regen_u=0",prevents hidden-hair benchmark branch,boundary/no-hair theorem remains unproved,SAFE_NONCLAIM_ONLY,False,False
+CS1276_2_source_balance,LCB1275_2_source_balance,"S_R[source,residual]=0",local vacuum/source-balance control,arbitrary matter/interior branch would be overclaimed,SAFE_NONCLAIM_ONLY,False,False
+CS1276_3_boundary,LCB1275_3_boundary,C_R(infinity)=0 or matching fixes constant,normalization bookkeeping,normalization is not a dynamical equation,SAFE_NONCLAIM_ONLY,False,False
+CS1276_4_overall,LCB1275_all,local closure branch = C_R=0 + no-charge + source-balance + boundary normalization,explicitly labelled closure/control route,not evidence that MTS reduces to GR,CLOSURE_BASELINE_ONLY,False,False

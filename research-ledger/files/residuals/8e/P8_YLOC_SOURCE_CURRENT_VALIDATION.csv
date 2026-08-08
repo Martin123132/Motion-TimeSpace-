@@ -1,0 +1,7 @@
+rule_id,rule,result,evidence,claim_effect
+V490_0_sources,all cited source paths exist,pass,missing_sources=0,traceability only
+V490_1_euler_loaded,489 Yloc Euler rows are loaded,pass,euler_rows=7,Noether audit is tied to Yloc system
+V490_2_source_debts_loaded,"source debt ledger includes boundary, source-normalization, and Bianchi debts",pass,S0_boundary_source;S3_source_normalization_current;S4_Bianchi_stress_current,targets known source-current blockers
+V490_3_residual_coverage,audit covers active local residual blockers,pass,LRV_BOUNDARY_R7_ALPHA3;LRV_DOMAIN_R11_SOURCE_NORMALIZATION;LRV_PROJECTOR_STRESS_ACCOUNTING,not a generic Noether discussion
+V490_4_no_Noether_zero_claim,Noether/Ward rows are not promoted as zero-current proof,pass,claim_valid_noether_rows=0,no fake source-current zero
+V490_5_no_current_claim,no source-current component row is claim-valid,pass,claim_valid_current_rows=0,no local-GR promotion

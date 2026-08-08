@@ -1,0 +1,9 @@
+spurion_id,possible_vector,safe_if,residual_if_not,current_status,valid_for_claim
+NVS3420_0_matter_momentum,ordinary matter momentum density T^{0i},local vacuum/rest frame has no net matter momentum through dOmega,epsilon_matter_momentum_alpha,CONDITIONAL_LOCAL_REST_FRAME,False
+NVS3420_1_EM_Poynting,public EM Poynting vector S_EM^i=(E x B)^i/mu0,Maxwell/EM is included as public Hilbert stress and net transverse Poynting flux through dOmega is zero,epsilon_EM_Poynting_alpha,IMPORTANT_OPEN_FLUX_CHECK,False
+NVS3420_2_radiation_wave_flux,gravitational/EM/radiative wave momentum flux,stationary local branch or time-averaged flux has no preferred-frame projection,epsilon_wave_flux_alpha,OPEN_IF_WAVES_PRESENT,False
+NVS3420_3_boundary_normal,domain normal/corner orientation,fixed spherical/local geodesic ball or covariant domain with no anisotropic normal response,epsilon_domain_normal_alpha,OPEN_DOMAIN_RULE,False
+NVS3420_4_hidden_constitutive_vector,hidden/projector/constitutive stress vector,"hidden sector is pure gauge, topological exact, gapped no-hair, or explicitly bounded",epsilon_hidden_vector_alpha,RETAINED_FROM_3416,False
+NVS3420_5_frame_shadow,Weyl/disformal/frame shadow direction,one public metric/coframe with quotient-invariant matter readout,epsilon_frame_shadow_alpha,OPEN_FRAME_DESCENT,False
+NVS3420_6_rotation_axial,spin/rotation/axial vector,local non-rotating Fermi frame or axial coupling coefficient zero/bounded,epsilon_rotation_alpha,OPEN_IF_ROTATING_SOURCE,False
+NVS3420_7_verdict,all exchange-odd vector spurions,NVS3420_0 through NVS3420_6 theorem-zero or bounded,epsilon_V_total,NO_VECTOR_SPURION_THEOREM_NOT_CLOSED,False

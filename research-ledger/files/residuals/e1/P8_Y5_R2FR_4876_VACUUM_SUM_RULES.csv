@@ -1,0 +1,6 @@
+row_id,quantity,formula,target,status,valid_for_claim,claim_allowed,timestamp_utc
+VS4876_0_quartic,quartic_weight,4*N_d - N_s,0,SUM_RULE_DERIVED,False,False,2026-07-11T03:00:00+01:00
+VS4876_1_quadratic,quadratic_weight,4*N_d*m_d**2 - N_s*m_s**2,0,SUM_RULE_DERIVED,False,False,2026-07-11T03:00:00+01:00
+VS4876_2_logarithmic,logarithmic_weight,4*N_d*m_d**4 - N_s*m_s**4,0,SUM_RULE_DERIVED,False,False,2026-07-11T03:00:00+01:00
+VS4876_3_EH,newton_weight,N_d/3 + N_s*(1/6 - xi_s),>0,POSITIVE_EH_GATE,False,False,2026-07-11T03:00:00+01:00
+VS4876_4_example,constructive_example,"N_s=4, N_d=1, equal masses, xi_s=0 cancels all three one-loop vacuum weights while C_G=1 remains positive","0,0,0,positive",COMPATIBILITY_PROOF_NOT_MTS_OWNERSHIP,False,False,2026-07-11T03:00:00+01:00

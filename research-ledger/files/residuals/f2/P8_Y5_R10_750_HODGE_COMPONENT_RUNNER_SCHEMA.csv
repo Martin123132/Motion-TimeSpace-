@@ -1,0 +1,6 @@
+step_id,runner_step,formula_or_check,output,claim_status,valid_for_claim,generated_utc
+HRS750_0_validate_input,validate required columns and units,"input has sample/domain, measure, frame, q_loc components, boundary metadata",schema_pass=false until candidate input exists,dry_run_only,false,2026-06-11T18:50:06+00:00
+HRS750_1_frame_split,compute q_T and q_perp,q_T=-u.q; q_perp=h q,temporal and spatial norms by domain,blocked_no_input_field,false,2026-06-11T18:50:06+00:00
+HRS750_2_Hodge_split,"split q_perp into gradient, transverse, and harmonic/boundary pieces",q_perp^i = D^i sigma_q + q_V^i + q_H^i with declared boundary conditions,"norm_gradient, norm_transverse, norm_harmonic",blocked_no_mesh_or_boundary_operator,false,2026-06-11T18:50:06+00:00
+HRS750_3_fqV,compute alpha3 momentum fraction,f_qV = ||P_alpha3 q_loc||_A / q_proxy,f_qV with source path and denominator check,blocked_no_Palpha3_or_q_field,false,2026-06-11T18:50:06+00:00
+HRS750_4_acceptance,only output claim-ready row if zero theorem or numeric product exists,abs(W_q_alpha3*f_qV) <= 5.38167370680806e-15,nonclaim until W and f are both sourced,guard_active,false,2026-06-11T18:50:06+00:00

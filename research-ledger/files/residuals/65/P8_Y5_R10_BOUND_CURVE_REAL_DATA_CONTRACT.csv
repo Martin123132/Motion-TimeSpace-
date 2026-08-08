@@ -1,0 +1,6 @@
+contract_id,artifact,required_content,current_status,repair,valid_for_claim
+BC562_0_current_manifest,source-intake/local_bounds/local_bound_claims.csv,R10 bound source names and convention,symbolic_alpha_lambda_only,"digitize/source machine-readable lambda, alpha_bound rows",false
+BC562_1_bound_curve_file,source-intake/local_bounds/R10_alpha_lambda_bound_curve_DIGITIZED.csv,"positive numeric lambda_value, lambda_units, alpha_bound, source, method, claim flag",placeholder_rows_only,replace placeholders with sourced rows and conservative interpolation policy,false
+BC562_2_MTS_curve_file,source-intake/mts_residuals/R10_alpha_lambda_curve_MTS_source_normalization.csv,"lambda_X, alpha_predicted, source file, assumptions, valid_for_claim after derivation",placeholder_rows_only,fill from K_X Qbar_XH qbar_XT once parent values exist,false
+BC562_3_comparison_rule,scripts/R10_alpha_lambda_bound_prediction_runner.py,abs(alpha_predicted(lambda)) <= alpha_bound(lambda),runner_available_and_blocks_placeholders,rerun after both curve files have valid rows,false
+BC562_4_no_online_claim,future data acquisition,"source URL/DOI, extraction/digitization method, units, interpolation, date, uncertainty/caveat",not_attempted_in_derivation_checkpoint,perform a separate real-data acquisition pass before any R10 scoring,false

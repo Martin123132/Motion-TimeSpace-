@@ -1,0 +1,5 @@
+run_id,row_id,test_prediction_value,bound_abs,abs_le_bound,runner_status,why_nonclaim,valid_for_claim
+RUN3363_0_zero_smoke,Y5SN3363_0_MICROSCOPE_species_source_weight_bound,0.000000000000e+00,2.800000000000e-15,true,PASS_NUMERIC_SMOKE_NONCLAIM,smoke prediction is not a parent MTS coefficient; projection requirements remain unsigned,false
+RUN3363_1_half_bound_smoke,Y5SN3363_0_MICROSCOPE_species_source_weight_bound,1.400000000000e-15,2.800000000000e-15,true,PASS_NUMERIC_SMOKE_NONCLAIM,smoke prediction is not a parent MTS coefficient; projection requirements remain unsigned,false
+RUN3363_2_twice_bound_smoke,Y5SN3363_0_MICROSCOPE_species_source_weight_bound,5.600000000000e-15,2.800000000000e-15,false,FAIL_NUMERIC_SMOKE_NONCLAIM,smoke prediction is not a parent MTS coefficient; projection requirements remain unsigned,false
+RUN3363_3_real_MTS_row_refusal,Y5SN3363_0_MICROSCOPE_species_source_weight_bound,MISSING_PARENT_DELTA_W_OR_EPSILON_SPECIES_VALUE,2.800000000000e-15,false,REFUSE_REAL_MTS_SCORE_MISSING_PARENT_PREDICTION,"no parent coefficient value, tau_WEP projection, or source-readout theorem is supplied",false

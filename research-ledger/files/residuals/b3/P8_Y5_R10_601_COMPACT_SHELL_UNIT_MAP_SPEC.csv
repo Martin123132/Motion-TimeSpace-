@@ -1,0 +1,7 @@
+map_id,quantity,required_value_or_rule,source_or_status,units,claim_status,valid_for_claim
+CSU601_0_proxy_input,compact_shell_proxy_epsilon,7.432631961576971e-06,219/599 compact-shell internal pressure budget,dimensionless proxy until mapped,blocked_not_physical_observable,false
+CSU601_1_channel_choice,observable channel,"choose exactly one before scoring: R10 alpha(lambda), PPN residual vector, WEP/Eotvos channel, or clock/redshift channel",not selected,channel dependent,blocked,false
+CSU601_2_operator_normalization,epsilon_shell to observable coefficient,"derive coefficient C_channel from parent source projector, not tune it to the bound",missing parent coefficient,"must convert proxy into alpha, gamma-1, beta-1, eta, or delta_nu/nu",blocked,false
+CSU601_3_sign_and_range,"sign, lambda, and spatial profile","provide sign convention, lambda from parent mass gap/length scale, and radial profile shape",missing,lambda in metres for R10; dimensionless residuals for PPN/WEP,blocked,false
+CSU601_4_baseline_comparison,baseline and acceptance rule,compare MTS residual and GR/null baseline through the same pipeline; no one-sided guilty-until-proven test,policy written,test dependent,not_yet_run,false
+CSU601_5_claim_gate,minimum claim requirements,"source path, numeric coefficient, units, uncertainty/bound, positive data provenance, and abs(prediction)<=bound",gate written,test dependent,no_claim_until_filled,false

@@ -1,0 +1,13 @@
+row_id,equation,meaning,status,valid_for_claim,timestamp_utc
+CAN4862_0_action,"S_ae=(Mbar^2/2) int sqrt(-gHat)[R-K(c_i,nabla u)+lambda(u^2+1)]",public two-derivative gravity/flow action,NORMALIZATION_FIXED,False,2026-07-10T02:30:00+01:00
+CAN4862_1_unit,u^0=sqrt(1+v_i v_i)=1+v^2/2-v^4/8+...,unit constraint supplies nonlinear flow vertices,EXACT_SERIES,False,2026-07-10T02:30:00+01:00
+CAN4862_2_transverse,"K[v(t,x)]=-c14 v_t^2+c1 v_x^2+c123 v^2 v_t^2-c1 v^2 v_x^2+O(v^4 partial-v^2)",exact single-transverse-polarization expansion through quartic order,EXACT_LOCAL_EXPANSION,False,2026-07-10T02:30:00+01:00
+CAN4862_3_smallest,q_min=c14=2rp/(1+r); c123/c14=1/[3r(1-p)]>=1,c14 is the smallest flow kinetic owner in 0<r<=1/3,EXACT_CORRIDOR,False,2026-07-10T02:30:00+01:00
+CAN4862_4_canonical,v_c=Mbar sqrt(c14) v,canonical transverse flow field,EXACT_QUADRATIC_NORMALIZATION,False,2026-07-10T02:30:00+01:00
+CAN4862_5_Cbar,"C3,C4<=Cbar=2p/[3(1-p)] for p<=0.06 and 0<r<=1/3",uniform ceiling on the dimensionless two-derivative nonlinear coefficients,PROVED_COEFFICIENT_ENVELOPE,False,2026-07-10T02:30:00+01:00
+CAN4862_6_cubic,Mbar^2 C3 v(partial v)^2 -> [C3/(Mbar c14^(3/2))] v_c(partial v_c)^2,canonical cubic interaction,EXACT_POWER_COUNTING,False,2026-07-10T02:30:00+01:00
+CAN4862_7_quartic,Mbar^2 C4 v^2(partial v)^2 -> [C4/(Mbar^2 c14^2)] v_c^2(partial v_c)^2,canonical quartic interaction,EXACT_POWER_COUNTING,False,2026-07-10T02:30:00+01:00
+CAN4862_8_scales,Lambda3=Mbar c14^(3/2)/C3; Lambda4=Mbar c14/sqrt(C4); Lambda_sigma=Mbar sqrt(c14),tree-level canonical suppression scales before order-one partial-wave factors,DERIVED_NDA_SCALES,False,2026-07-10T02:30:00+01:00
+CAN4862_9_floor,Lambda_safe=3sqrt(2) Mbar (1-p) sqrt(p) [r/(1+r)]^(3/2),lower diagnostic obtained by C3<=Cbar; it is below the quartic and sigma-model diagnostics,DERIVED_CONSERVATIVE_TWO_DERIVATIVE_FLOOR,False,2026-07-10T02:30:00+01:00
+CAN4862_10_rfloor,x=[Ereq/(3sqrt(2)Mbar(1-p)sqrt(p))]^(2/3); r>=x/(1-x),exact inversion of Lambda_safe>=Ereq,DERIVED_EFT_WINDOW,False,2026-07-10T02:30:00+01:00
+CAN4862_11_ceiling,full reduced scalar-vector-graviton cubic action and partial-wave eigenvalues are not yet evaluated,constraint elimination could change order-one factors or reveal a lower mixed channel,HARD_CAVEAT_NEXT,False,2026-07-10T02:30:00+01:00

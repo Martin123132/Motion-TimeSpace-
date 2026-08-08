@@ -1,0 +1,13 @@
+check_id,check,status,details
+VAL1276_0_sources_exist,all cited local sources exist,PASS,10/10 sources exist
+VAL1276_1_needles_found,all cited local needles found,PASS,10/10 needles found
+VAL1276_2_action_coverage,all A511 local-GR action blocks are covered,PASS,action_coverage_rows=7
+VAL1276_3_euler_contract,Euler/source-map contract is executable but not a derivation,PASS,euler_contract_rows=10
+VAL1276_4_closure_scorecard,closure baseline is separated as nonclaim,PASS,closure_scorecard_rows=5
+VAL1276_5_finite_fallback_locked,finite branch has no source-backed accepted rows,PASS,docs_rows=11; raw_rows=0; accepted_rows=0; accepted_ready=0
+VAL1276_6_promotion_gates,promotion gates remain blocked except closure-baseline nonclaim gate,PASS,promotion_gate_rows=6
+VAL1276_7_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1276_8_next_target_1277,next target routes to local EH fixed-point inheritance or explicit closure runner,PASS,1277-Y5-R10-RAB-local-EH-fixed-point-inheritance-or-explicit-closure-runner.md
+VAL1276_9_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1276_SOURCE_REGISTER.csv:10; P8_Y5_R10_1276_A511_ACTION_BLOCK_COVERAGE.csv:7; P8_Y5_R10_1276_PARENT_EULER_SOURCE_CONTRACT.csv:10; P8_Y5_R10_1276_CLOSURE_BASELINE_SCORECARD.csv:5; P8_Y5_R10_1276_PROMOTION_GATES.csv:6; P8_Y5_R10_1276_ZR_VALIDATOR_RESCAN.csv:11; P8_Y5_R10_1276_DECISION_LEDGER.csv:3; P8_Y5_R10_1276_NEXT_TARGET.csv:1
+VAL1276_10_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1276_11_overall,overall 1276 validation,PASS,"1276 turns the missing MTS parent Euler/source map into executable certificate rows, covers the A511 action-block scaffold, keeps the closure baseline nonclaim, and routes to local EH fixed-point inheritance next"

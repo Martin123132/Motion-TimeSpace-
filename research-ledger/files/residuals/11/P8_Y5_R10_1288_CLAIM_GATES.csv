@@ -1,0 +1,7 @@
+gate_id,claim,current_status,reason,valid_for_claim,claim_allowed
+CG1288_0_sources_exist,internal source provenance,SATISFIED_FOR_PRIVATE_CHECKPOINT,all registered source paths and anchors are checked before validation,False,False
+CG1288_1_KL00_numeric_amplitude,KL00 Newton amplitude can be scored,BLOCKED_MISSING_NUMERIC_AMPLITUDE,"Kbar_L,loc,00, rho model, CK bound, Gamma norm, and boundary mode are missing",False,False
+CG1288_2_response_matrix,PPN/clock/orbital/R10/WEP response can be scored,BLOCKED_MISSING_RESPONSE_MATRIX,"no sourced R_PPN, R_clock, R_orbital, R_R10, or WEP readout coefficients",False,False
+CG1288_3_full_Kmetric,Kmetric^{00} computed,BLOCKED_VOLUME_SUBPIECE_ONLY,"derivative, metric-dependence, boundary/reference, and response-metric terms remain unsigned",False,False
+CG1288_4_DeltaK_component,Delta_K^{00} computable,BLOCKED_MISSING_KHAT_KMETRIC_COMPARISON,current-MTS Khat match and full Kmetric^{00} are still unavailable,False,False
+CG1288_5_local_GR_PPN,local GR or PPN pass,BLOCKED_NONCLAIM,q_loc cancellation and a symbolic amplitude row do not prove metric silence or observational safety,False,False

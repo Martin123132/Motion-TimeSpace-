@@ -1,0 +1,8 @@
+checkpoint,row_id,quantity,formula_or_requirement,status,valid_for_claim,timestamp_utc
+4764,QE4764_0_zero_certificate,Q_edge_shell_abs=0,rho_H_trace_norm=0 and mu_birth_TV=0 in fixed q-basic collar,ZERO_CERTIFICATE_TARGET,False,2026-07-08T02:37:33+00:00
+4764,QE4764_1_bound_formula,Q_edge_shell_abs,Q_edge_shell_abs <= W_lambda_edge_max Phi_edge (rho_H_trace_norm V_n_bound + mu_birth_TV),BOUND_FORMULA_READY,False,2026-07-08T02:37:33+00:00
+4764,QE4764_2_trace,rho_H_trace_norm,int_partialW |rho_H^tr| dSigma; zero trace certificate or finite trace norm,SOURCE_VALUE_REQUIRED,False,2026-07-08T02:37:33+00:00
+4764,QE4764_3_velocity,V_n_bound,sup_partialW |V_n| under source-vertical probe; fixed boundary gives no contribution if trace also zero,SOURCE_VALUE_REQUIRED,False,2026-07-08T02:37:33+00:00
+4764,QE4764_4_birth,mu_birth_TV,total variation norm of distributional birth/death shell,SOURCE_VALUE_REQUIRED,False,2026-07-08T02:37:33+00:00
+4764,QE4764_5_kernel_test,"Phi_edge,W_lambda_edge_max",arena test ceiling and finite-range kernel ceiling on boundary collar,SOURCE_VALUE_REQUIRED,False,2026-07-08T02:37:33+00:00
+4764,QE4764_6_claim_gate,valid_for_claim,true only if all fields are exact-zero or source-backed with units and no MISSING markers,FALSE_NOW,False,2026-07-08T02:37:33+00:00

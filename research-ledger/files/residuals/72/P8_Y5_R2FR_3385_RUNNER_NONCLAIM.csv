@@ -1,0 +1,5 @@
+run_id,test,result,detail,claim_allowed,valid_for_claim
+RUN3385_0_rescore,rescore 3335 placeholder scenarios against Cassini gamma envelope,PASS_NONCLAIM_RUNNER,pass_like=5; fail_like=4; rows=9,false,false
+RUN3385_1_bound_present,real external gamma comparator exists,PASS_EXTERNAL_BOUND_PRESENT,B_gamma_Cassini imported from 3384/Cassini intake,false,false
+RUN3385_2_prediction_ready,MTS prediction row is source-ready,FAIL_MTS_INPUTS_PLACEHOLDER,"A_gamma, Cmetric, epsilon_eff and floor components are symbolic/placeholders",false,false
+RUN3385_3_firewall,prevent PPN pass claim,PASS_CLAIM_FIREWALL,scenario pass-like rows remain nonclaim until source-backed inputs replace placeholders,false,false

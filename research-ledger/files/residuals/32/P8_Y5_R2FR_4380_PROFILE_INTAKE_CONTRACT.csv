@@ -1,0 +1,6 @@
+contract_id,required_input,acceptance_test,status,valid_for_claim,claim_allowed
+PIC4380_0_required_profile_pair,rho_H_profile_path and rho_top_profile_path or analytic formulas for both on same W_H,paths/formulas exist; units declared; profile domains overlap; ordinary Hilbert profile and topological representative are not fitted after scoring,REQUIRED_NOT_FILLED,False,False
+PIC4380_1_center_owner,"parent-owned center functional for rho_H and rho_top, or direct center for delta rho_top",center fixed before readout and before moment extraction; no post-hoc centering to kill a dipole,REQUIRED_NOT_FILLED,False,False
+PIC4380_2_monopole_subtraction,M0_delta=int_W(rho_top-rho_H)dV and explicit subtraction/charge equality statement,M0_delta=0 from parent charge or finite residual routed separately; no orbital GM calibration hides it,MONOPOLE_ONLY_PARTIALLY_SUPPORTED,False,False
+PIC4380_3_moment_values,M_1m and M_2m values or conservative upper bounds with extraction method,numeric finite values with units mass*length^l or dimensionless E_l^top; quadrature/domain error recorded,REQUIRED_NOT_FILLED,False,False
+PIC4380_4_no_claim_promotion,valid_for_claim only true after all previous rows are real and sourced,"no MISSING, SURROGATE, NOT_SIGNED, NONCLAIM, or placeholder path markers",FAIL_CLOSED,False,False

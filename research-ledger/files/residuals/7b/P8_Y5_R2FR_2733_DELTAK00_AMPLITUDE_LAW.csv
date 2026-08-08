@@ -1,0 +1,7 @@
+law_id,quantity,formula_or_bound,status,missing_inputs,score_ready,valid_for_claim
+DKA2733_0_component_split,Delta_K00,Delta_K00=Delta_adopt00+Delta_lambda00+Delta_kernel00+Delta_boundary00+Delta_convention00,DECOMPOSITION_READY_VALUES_MISSING,live Khat adoption; lambda_phi zero/bound; Kmetric kernel norms; boundary convention; sign/volume convention,False,False
+DKA2733_1_adoption_mismatch,Delta_adopt00,|Delta_adopt00| <= |1-sigma_resp*c_I| |K_L00| + |K_unmatched00|,CONTRACT_ONLY,sigma_resp*c_I live adoption; K_L00 normalization; current-MTS Khat symbol match,False,False
+DKA2733_2_multiplier_stress,Delta_lambda00,|Delta_lambda00| <= epsilon_lambda_phi,BOUND_FORM_ONLY,C_P; C_E; C_T; R_norm; boundary_source_norm; initial/static exclusion; delta_g_SGamma_norm; observable projection,False,False
+DKA2733_3_kmetric_kernel_envelope,Delta_kernel00,||Delta_kernel|| <= (2/3)(L_cg^-2|F_prime|||M_m||+2L_cg^-3|F|||M_L||+||K_conn||+||K_domain||+||K_boundary||+||K_C||),SYMBOLIC_ABSOLUTE_ENVELOPE,L_cg; F; F_prime; M_m; M_L; K_conn; K_domain; K_boundary; K_C; units,False,False
+DKA2733_4_cleanest_pruning,M_L channel,M_L term vanishes only if L_cg is parent-fixed/metric-silent or F(m_*)=0 in the same branch,NEXT_CRITICAL_PRUNING_TARGET,L_cg ownership theorem or explicit M_L norm,False,False
+DKA2733_5_no_cancellation,absolute DeltaK00 envelope,|Delta_K00| <= |Delta_adopt00|+|Delta_lambda00|+|Delta_kernel00|+|Delta_boundary00|+|Delta_convention00|,GUARDRAIL_PASS,component values still absent; no sign cancellation allowed,False,False

@@ -1,0 +1,6 @@
+guardrail_id,rule,allowed_use,active,claim_credit
+GKD2723_0_no_observed_G,"Do not set kappa0 or G_ref from observed orbital GM, local PPN fit, R10 limits, or cosmology fits.",downstream comparison only,true,false
+GKD2723_1_field_equation_convention,Every use of kappa0 must declare whether it is an action coefficient or a field-equation coefficient.,field-equation convention for 2722 coefficient map,true,false
+GKD2723_2_same_source_frame,"The same observed metric/coframe/tau/source measure must define matter stress, clocks, photons and orbit readout.",conditional theorem or finite frame residual,true,false
+GKD2723_3_extra_stress_separate,Do not absorb GK/tau/boundary stress into G_ref unless a parent renormalization theorem is signed.,separate E_kappa_sector_renorm row,true,false
+GKD2723_4_fixed_before_readout,The coupling and reference convention must be fixed before local-test residuals are computed.,pre-fit protocol row with source path,true,false

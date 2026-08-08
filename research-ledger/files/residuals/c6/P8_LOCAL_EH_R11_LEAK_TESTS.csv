@@ -1,0 +1,6 @@
+test_id,operator_form,selector_condition,variation_result,verdict
+K0_constant_coefficient,c O[g],c independent of Z,c delta O survives,fails_local_EH_selector
+K1_single_zero,Z O[g],F(0)=0 but F_prime(0)=1,O delta Z survives at Z=0,fails_unless_deltaZ_also_parent_zero
+K2_double_zero,Z^2 O[g],F(0)=0 and F_prime(0)=0,2Z O delta Z + Z^2 delta O = 0 at Z=0,passes_as_conditional_sufficient_class
+K3_constraint_multiplier,lambda Z,Z=0 on shell,lambda delta Z can survive unless lambda=0 or eliminated,fails_without_multiplier_silence
+K4_topological,S_top,delta_g S_top=0 in local collar,no bulk local operator if boundary variation is closed,passes_only_with_boundary_nohair

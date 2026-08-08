@@ -1,0 +1,6 @@
+branch_id,valid_for_claim,claim_allowed,generated_utc,run_id,check,result,reason
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,false,false,2026-06-20T03:26:51.634925+00:00,RUN1999_0_portal_route,import CMSM/REGARDS route and requirements,PASS_NONCLAIM_ROUTE,"route and candidate endpoints are staged, but schema/products are not acquired"
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,false,false,2026-06-20T03:26:51.634925+00:00,RUN1999_1_dry_run_preview,import segment-210 dry-run gx/gz/Sxx/Sxz preview,PASS_NONCLAIM_DRY_RUN,preview exercises reconstruction path only; zero-phase/unit amplitude is not physical tau
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,false,false,2026-06-20T03:26:51.634925+00:00,RUN1999_2_numeric_tau,promote numeric tau_WEP,FAIL_OFFICIAL_ARRAYS_MISSING,"exact timestamps/masks, ephemeris, attitude, gravity model, and official arrays are missing"
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,false,false,2026-06-20T03:26:51.634925+00:00,RUN1999_3_product_score,score WEP product,FAIL_VALID_PREDICTION_ROWS_ZERO,dry-run kernel is not a prediction and tau_WEP remains missing
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,false,false,2026-06-20T03:26:51.634925+00:00,RUN1999_4_verdict,1999 next-step decision,NEXT_2000_CMSM_SCHEMA_OR_ONE_SEGMENT_OFFICIAL_ARRAY_EXTRACT,the next real move is CMSM UI/API schema capture or one official/reconstructed segment array

@@ -1,0 +1,12 @@
+check_id,check,status,details
+VAL1367_0_sources_exist,registered source paths exist and anchors are found,PASS,SRC1367_0_1366_doc=True/True;SRC1367_1_1366_next=True/True;SRC1367_2_1366_envelope=True/True;SRC1367_3_1289_first_kernel=True/True;SRC1367_4_1289_delta_template=True/True;SRC1367_5_1289_claim_gates=True/True;SRC1367_6_798_gamma_expansion=True/True;SRC1367_7_776_kgamma_ledger=True/True;SRC1367_8_1181_external_ppn=True/True;SRC1367_9_1244_policy_feed=True/True
+VAL1367_1_kernels_not_computable,Kmetric chain kernels are not promoted as computable,PASS,C_sign;M_m;M_L;K_conn;K_domain;K_boundary;units;live Khat comparison
+VAL1367_2_kernel_formula_retained,symbolic Kmetric_chain formula is retained as nonclaim,PASS,Kmetric_chain formula exists but is not scoreable
+VAL1367_3_PPN_gamma_threshold_loaded,PPN gamma threshold input is source-backed but map-missing,PASS,q_loc_to_PPN_gamma_response_matrix; GM convention; sign convention; no cancellation
+VAL1367_4_threshold_ledger_complete,"threshold ledger covers PPN gamma, beta/eta, preferred frame, clock, orbital, R10, and acceptance",PASS,threshold_rows=7
+VAL1367_5_thresholds_nonclaim,threshold rows remain nonclaim or missing rather than scored,PASS,THR1367_0_PPN_gamma_Cassini=SOURCE_BACKED_COMPARATOR_NONCLAIM_MAP_MISSING;THR1367_1_PPN_beta_eta_LLR=SOURCE_BACKED_COMPARATOR_NONCLAIM_MAP_MISSING;THR1367_2_PPN_preferred_frame_framework=FRAMEWORK_ONLY_NUMERIC_THRESHOLD_MISSING;THR1367_3_clock_threshold=MISSING_SOURCE_INPUT;THR1367_4_orbital_threshold=MISSING_SOURCE_INPUT;THR1367_5_R10_fifth_force_threshold=MISSING_SOURCE_INPUT;THR1367_6_acceptance_gate=CLAIM_BLOCKED
+VAL1367_6_claim_gates_block_claim,"claim gates block kernel computation, q_loc projection, and local-GR claims",PASS,GATE1367_0_kernel_formula_exists=True;GATE1367_1_kernel_computable=False;GATE1367_2_PPN_gamma_threshold_available=True;GATE1367_3_q_loc_projection_ready=False;GATE1367_4_local_GR_reopen=False
+VAL1367_7_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false across generated rows
+VAL1367_8_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1367_9_next_target_1368,next target routes to m/Lcg metric response kernels or q_loc projection map,PASS,1368-Y5-R10-RAB-m-Lcg-parent-metric-response-kernels-or-q_loc-projection-map.md
+VAL1367_10_overall,overall 1367 validation,PASS,1367 keeps Kmetric kernels noncomputable and stages q_loc arena threshold intake rows

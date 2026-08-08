@@ -1,0 +1,5 @@
+rule_id,rule,applies_to,refusal_if,claim_policy,valid_for_claim,claim_allowed
+RULE1241_0_projection,gamma_minus_1_QR = -0.5*q_R_hat,finite_residual rows with numeric q_R_hat,q_R_hat missing or not normalized,nonclaim projection schema only,False,False
+RULE1241_1_closure,branch_type=closure_benchmark can compute gamma=0 but must return REFUSED_CLOSURE_NOT_EVIDENCE,closure q_R=0 rows,always refused as evidence,private baseline only,False,False
+RULE1241_2_comparator,Cassini gamma comparator cannot score without an MTS q_R_hat prediction/value,comparator-only rows,no q_R_hat supplied,comparator is not a prediction,False,False
+RULE1241_3_pass_policy,pass_rule requires N_sigma and sigma_gamma,numeric finite rows,statistical policy missing,even numeric pass remains nonclaim until source/model gates close,False,False

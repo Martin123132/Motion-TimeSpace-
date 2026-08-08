@@ -1,0 +1,6 @@
+case_id,branch_type,value_mode,runner_status,reason,raw_numeric_pass,claim_allowed,valid_for_claim
+CASE1883_0_closure_GR,closure_benchmark,closure_value,REFUSED_CLOSURE_NOT_EVIDENCE,closure rows are useful private baselines but not derivations or evidence,False,False,False
+CASE1883_1_missing_finite,finite_residual,missing_source,REFUSED_MISSING_VECTOR_INPUTS,"delta_p/q_R_hat, b_R, beta, source and projection inputs are missing",False,False,False
+CASE1883_2_gamma_only,finite_residual,partial_gamma_only,REFUSED_INCOMPLETE_VECTOR,"gamma cannot stand in for beta, preferred-frame, source, endpoint and no-cancellation gates",False,False,False
+CASE1883_3_cancellation_only,finite_residual,cancellation_tuned,REFUSED_CANCELLATION_ONLY,tuned cancellation is refused without a parent identity and independent channel closure,False,False,False
+CASE1883_4_hypothetical_full_vector,finite_residual,hypothetical_numeric,SCHEMA_MATH_ONLY_NOT_EVIDENCE,"arithmetic schema can evaluate later, but synthetic values are not sourced MTS predictions",True,False,False

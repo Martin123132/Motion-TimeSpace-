@@ -1,0 +1,7 @@
+gate_id,gate,status,reason,valid_for_claim,claim_allowed
+GATE1223_0_sources,source path and needle audit,PASS,all local sources used by 1223 are traceable,False,False
+GATE1223_1_p0_import,P0 queue imported,PASS,four P0 coupling rows imported from 1222,False,False
+GATE1223_2_derivation_promotion,P0 derivation promoted,BLOCKED,all DER1223 rows verdict DERIVATION_NOT_CLOSED_SOURCE_REQUIREMENT_RETAINED,False,False
+GATE1223_3_source_requirements,fallback source requirements exact,PASS,each P0 row has an exact source/proof contract,False,False
+GATE1223_4_runner_promotion,runner rows promoted,BLOCKED,valid prediction rows remain zero,False,False
+GATE1223_5_physical_claim,WEP/local-GR/R10/EM claim permission,BLOCKED,1223 is a derivation/source narrowing checkpoint only,False,False

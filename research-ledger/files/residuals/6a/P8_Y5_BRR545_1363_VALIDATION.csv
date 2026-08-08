@@ -1,0 +1,12 @@
+check_id,check,status,details
+VAL1363_0_sources_exist,registered source paths exist and anchors are found,PASS,SRC1363_0_1362_doc=True/True;SRC1363_1_1362_next=True/True;SRC1363_2_1362_qobs=True/True;SRC1363_3_1362_denominator_pack=True/True;SRC1363_4_1008_doc=True/True;SRC1363_5_1008_variation=True/True;SRC1363_6_1008_piece_ledger=True/True;SRC1363_7_1009_doc=True/True;SRC1363_8_1009_contract=True/True;SRC1363_9_1010_doc=True/True;SRC1363_10_1007_doc=True/True;SRC1363_11_1007_symplectic_schema=True/True;SRC1363_12_771_owner_audit=True/True;SRC1363_13_993_decomposition=True/True
+VAL1363_1_bridge_not_promoted,qObs-current-chain bridge is not promoted for current MTS,PASS,"the bridge theorem is exact as a conditional route, but current MTS lacks the parent current-chain construction."
+VAL1363_2_conditional_math_is_separated,conditional bridge lemmas are separated from current claims,PASS,conditional rows present while verdict blocks claim
+VAL1363_3_obstructions_open,"bridge obstruction ledger covers parent action, tau, theta/Q, reference, q_loc, Pi_M/worldtube, and matter constants",PASS,open_obstructions=7
+VAL1363_4_first_source_row_guarded,H_tau/H_ref first source row has strict anti-circularity fields,PASS,not_orbital_GM=True;not_bare_mass=True;not_reference_only_one=True;not_EH_only_import=True
+VAL1363_5_first_source_row_missing_fields_explicit,H_tau/H_ref source rows keep missing fields explicit and nonclaim,PASS,surface_outer;surface_reference;coframe_id;tau_id;boundary_domain_id;theta_source;Q_tau_source;H_tau;H_ref;M_H_ref;units;reference_policy;source_path;source_anchor
+VAL1363_6_claim_gates_block_claim,"claim gates block current MTS bridge, denominator, shortcut, and local-GR claims",PASS,GATE1363_0_conditional_bridge=True;GATE1363_1_parent_current_chain_bridge=False;GATE1363_2_Htau_Href_source_row_ready=False;GATE1363_3_EH_or_orbital_shortcut_allowed=False;GATE1363_4_local_GR_reopen=False
+VAL1363_7_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false across generated rows
+VAL1363_8_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1363_9_next_target_1364,next target routes to quotient-basic sector audit or H_tau/H_ref acquisition,PASS,1364-Y5-R10-RAB-quotient-basic-parent-action-sector-audit-or-Htau-Href-source-acquisition.md
+VAL1363_10_overall,overall 1363 validation,PASS,1363 keeps the exact bridge conditional and stages guarded H_tau/H_ref source rows

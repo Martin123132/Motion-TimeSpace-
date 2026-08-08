@@ -1,0 +1,7 @@
+rule_id,rule,result,evidence,claim_effect
+V486_0_sources,all cited source paths exist,pass,missing_sources=0,traceability only
+V486_1_premise_coverage,"485 premise requirements include boundary, R11, and stress blockers",pass,P0_domain_selector;P1_boundary_scalar_no_flux;P2_R11_EH_operator;P3_stress_Bianchi;P4_no_total_cancellation,sufficient stack is tied to prior audit
+V486_2_blocker_coverage,fill pack covers active local residual blocker components,pass,LRV_BOUNDARY_R7_ALPHA3;LRV_DOMAIN_R11_SOURCE_NORMALIZATION;LRV_PROJECTOR_STRESS_ACCOUNTING;LRV_TOTAL_ALPHA3_GUARD,closure pack targets actual local-GR blockers
+V486_3_theorem_rows_no_claim,no theorem row is promoted as derived,pass,claim_valid_theorem_rows=0,no fake theorem pass
+V486_4_fill_rows_no_claim,no closure fill row is claim-valid before evidence is supplied,pass,claim_valid_fill_rows=0,no numeric/closure pass yet
+V486_5_gate_policy,promotion gates explicitly fail until theorem or fill rows are valid,pass,G0/G1/G3/G4 fail_for_claim; G2 guard only,no Newton/PPN/local-GR promotion

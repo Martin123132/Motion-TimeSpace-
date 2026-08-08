@@ -1,0 +1,4 @@
+policy_id,quantity,rule,runner_effect,status,valid_for_claim,timestamp_utc
+POL3907_0_value,G_* numerical value,"MEASURED_NOT_PREDICTED unless a source-backed F(kappa_MTS,ell_J,...) exists",do not score failure to predict G as local-GR failure; do score any drift/source/range dependence,MEASURED_COUPLING_POLICY_ACTIVE,False,2026-07-01T09:45:25+00:00
+POL3907_1_derivatives,partial G_* residuals,"must be theorem-zero or bounded: time, radius, species/material, range, frame/domain",activate derivative zero gates before any local-GR/Newton claim,DERIVATIVE_GATES_ACTIVE,False,2026-07-01T09:45:25+00:00
+POL3907_2_source_mass,Hilbert mass/source normalization,source mass must be Hilbert/worldtube calibrated independently of orbital GM,epsilon_Hilbert_mass_norm remains active until source current and Pi_M/H_tau lock,SOURCE_NORMALIZATION_GATE_ACTIVE,False,2026-07-01T09:45:25+00:00

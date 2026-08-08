@@ -1,0 +1,8 @@
+step_id,statement,derived_if,current_status,valid_for_claim
+VAR3378_0_variation,The parent action must vary before readout: delta S_parent=int(E_g delta g+E_Q delta Q+E_psi delta psi+...)+int_dM Theta_total.,one explicit L_parent contains all retained sectors,SCHEMA_VALID_ACTION_MISSING,false
+VAR3378_1_field_equations,E_g=0 gives EH plus named residual operators; E_psi=0 gives ordinary matter equations; E_Q=0 gives extra-sector equations or silence conditions.,sector Lagrangians and residual classifications are supplied,PARTIAL_CONTRACT,false
+VAR3378_2_Noether,Diffeomorphism covariance gives J_tau=Theta_total(L_tau Phi)-i_tau L_parent=dQ_tau^MTS+C_tau.,"Theta_s and Q_tau_s exist for EH, matter, extra, PiM and boundary sectors",FORMAL_NOETHER_SCHEMA_SECTOR_CERTS_FAIL,false
+VAR3378_3_Hamiltonian,delta H_tau=int_S(delta Q_tau^MTS-i_tau Theta_total)-delta H_ref must be integrable and source-blind in the reference.,"omega_total curl, H_ref lock and surface/tau lock vanish",INTEGRABILITY_REFERENCE_OPEN,false
+VAR3378_4_source,J_H[tau] is the Hilbert source current from the same S_matter and W_source=closure(supp J_H[tau]) before readout.,matter descends only through e_obs(qPhi) and no source prefactor exists,CONDITIONAL_FROM_3375_NOT_PARENT_UNIQUE,false
+VAR3378_5_weak_field,The EH coefficient and Hilbert source produce nabla^2 Phi_N=4*pi*G_ref rho_H in the same frame.,"kappa/G_ref, e_obs, J_H and weak-field gauge are all parent-signed",CONDITIONAL_FROM_3377,false
+VAR3378_6_total_verdict,"A single parent variation would close the ladder only if no extra hidden source, boundary, projector or coefficient slot remains outside it.",no-extension/no-smuggling theorem passes,ADOPTION_AND_UNIQUENESS_NOT_DERIVED,false

@@ -1,0 +1,15 @@
+check_id,check,status,details
+VAL1277_0_sources_exist,all cited local sources exist,PASS,10/10 sources exist
+VAL1277_1_needles_found,all cited local needles found,PASS,10/10 needles found
+VAL1277_2_A511_audit,all A511 inheritance blocks are audited,PASS,inheritance_audit_rows=9
+VAL1277_3_inheritance_not_claimed,EH fixed-point inheritance is blocked,PASS,EHI1277_8_verdict=EH_FIXED_POINT_NOT_INHERITED
+VAL1277_4_conditional_theorem,conditional EH inheritance theorem remains nonclaim,PASS,conditional_rows=3
+VAL1277_5_closure_runner,explicit closure runner spec is written as nonclaim,PASS,closure_runner_rows=4
+VAL1277_6_priority_ladder,A511 derivation priority ladder is written,PASS,priority_ladder_rows=5
+VAL1277_7_finite_fallback_locked,finite branch has no source-backed accepted rows,PASS,docs_rows=11; raw_rows=0; accepted_rows=0; accepted_ready=0
+VAL1277_8_claim_gates_safe,claim gates remain blocked except closure-runner nonclaim gate,PASS,claim_gate_rows=5
+VAL1277_9_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1277_10_next_target_1278,next target routes to explicit closure runner and A511 priority ladder,PASS,1278-Y5-R10-RAB-explicit-local-closure-runner-and-A511-origin-priority-ladder.md
+VAL1277_11_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1277_SOURCE_REGISTER.csv:10; P8_Y5_R10_1277_EH_FIXED_POINT_INHERITANCE_AUDIT.csv:9; P8_Y5_R10_1277_CONDITIONAL_EH_INHERITANCE_THEOREM.csv:3; P8_Y5_R10_1277_EXPLICIT_CLOSURE_RUNNER_SPEC.csv:4; P8_Y5_R10_1277_A511_ORIGIN_PRIORITY_LADDER.csv:5; P8_Y5_R10_1277_ZR_VALIDATOR_RESCAN.csv:11; P8_Y5_R10_1277_CLAIM_GATES.csv:5; P8_Y5_R10_1277_DECISION_LEDGER.csv:3; P8_Y5_R10_1277_NEXT_TARGET.csv:1
+VAL1277_12_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1277_13_overall,overall 1277 validation,PASS,"1277 audits A511 local EH fixed-point inheritance, blocks it as not parent-signed, writes conditional theorem and closure runner specs, and queues A511 block-origin priorities"

@@ -1,0 +1,7 @@
+checkpoint,rank_test_id,formula,meaning,status,valid_for_claim,timestamp_utc
+4749,QRT4749_0_symbol_norm,||sigma_quar^dagger(p)chi||^2 = ||J_q^dagger chi||^2 + |p|_h^2||J_K^dagger chi||^2 + cross_terms,Norm identity for the quarantine symbol.,DERIVED_SYMBOLIC,False,2026-07-08T00:50:51+00:00
+4749,QRT4749_1_algebraic_lower,if s_q:=s_min(J_q)>0 then ||sigma_quar^dagger(p)chi||^2 >= s_q^2||chi||^2,Full-rank q_tr gives a positive p-independent lower bound.,COERCIVITY_THEOREM_CONDITIONAL,False,2026-07-08T00:50:51+00:00
+4749,QRT4749_2_K_lower,if s_K:=s_min(J_K)>0 then K channel adds |p|_h^2 s_K^2||chi||^2 for p!=0,The K channel helps the static symbol but cannot replace missing p=0 algebraic control by itself.,DERIVED_SYMBOLIC,False,2026-07-08T00:50:51+00:00
+4749,QRT4749_3_combined_constant,c_quar >= s_q^2 + p_min^2 s_K^2 - C_cross - C_quar_kernel,Source-ready lower-bound form for c_quar.,SOURCE_READY_BOUND,False,2026-07-08T00:50:51+00:00
+4749,QRT4749_4_static_unit,"on unit spatial cotangent p_min=1, c_quar >= s_q^2+s_K^2-C_cross-C_quar_kernel",Canonical static symbol test once the collar normalization is fixed.,STATIC_SYMBOL_ROUTE,False,2026-07-08T00:50:51+00:00
+4749,QRT4749_5_blocker,"numeric c_quar requires J_q,J_K,weights,cross terms and kernel projection sources",This is the exact source list for quarantine coercivity.,MISSING_SOURCE_VALUES,False,2026-07-08T00:50:51+00:00

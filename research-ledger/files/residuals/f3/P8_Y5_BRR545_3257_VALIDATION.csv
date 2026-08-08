@@ -1,0 +1,10 @@
+check_id,check,passed,detail
+VAL3257_0_sources_exist,all required source paths exist,true,
+VAL3257_1_sources_parse,all required source CSV/MD paths parse,true,
+VAL3257_2_outputs_parse,all 3257 output CSVs parse,true,
+VAL3257_3_shape_numeric,TA6V and PtRh10 q_C shape values are finite numeric,true,5.187582949;2.613068278
+VAL3257_4_raw_candidates_nonclaim,all raw candidate fraction rows remain valid_for_claim=false,true,CFI3257_PtRh10_EM_Coulomb_candidate;CFI3257_TA6V_EM_Coulomb_candidate
+VAL3257_5_toy_outputs_finite_positive,toy shell G_J outputs are finite positive,true,TOYSHELL_OUT3257_PtRh10;TOYSHELL_OUT3257_TA6V
+VAL3257_6_no_claim_gate_promoted,no 3257 claim gate allows a local-GR/WEP/Maxwell claim,true,all claim_allowed=false
+VAL3257_7_formalization_untouched,formalization-workbench modified-file count remains zero by this script,true,formalization_changed_count=0
+VAL3257_8_overall,3257 validation overall,true,all required checks passed

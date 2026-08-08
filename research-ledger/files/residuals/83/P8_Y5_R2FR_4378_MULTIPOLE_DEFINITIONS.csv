@@ -1,0 +1,7 @@
+moment_id,quantity,definition,units,zero_condition,current_status,valid_for_claim
+MP4378_0_defect_density,delta rho_top,delta rho_top := rho_top-rho_H on W_H,mass_density,"rho_top=rho_H as distributions, or exterior-harmonic-null defect for exterior scoring",SYMBOLIC_DEFECT_DEFINED,False
+MP4378_1_monopole,M_0,M_0 := int_W delta rho_top dV_H,mass,same total Hamiltonian/topological/Hilbert source charge,CONDITIONAL_MONOPOLE_ONLY_NOT_PROFILE_EQUALITY,False
+MP4378_2_dipole,M_1m,M_1m := int_W delta rho_top r Y_1m dV_H,mass*length,"harmonic-null theorem, symmetry/same-center theorem, or source-backed value zero",FIRST_BOUND_ROW_STAGED_VALUE_MISSING,False
+MP4378_3_quadrupole,M_2m,M_2m := int_W delta rho_top r^2 Y_2m dV_H,mass*length^2,"harmonic-null theorem, spherical/profile equality theorem, or source-backed value zero",BOUND_ROW_STAGED_VALUE_MISSING,False
+MP4378_4_dimensionless_envelope,E_l^top,E_l^top := ((l+1)4pi/(2l+1)) sum_m |M_lm|/(M_H R^l),dimensionless,all M_lm=0 for that l,NORMALIZATION_CHOSEN_FOR_SCORING_VALUE_MISSING,False
+MP4378_5_transfer,multipole acceleration transfer,|delta a_l|/|a_N| <= E_l^top (R/r)^l,dimensionless,E_l^top=0 or below arena threshold,TRANSFER_DERIVED,False

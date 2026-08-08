@@ -1,0 +1,16 @@
+validation_id,status,detail,valid_for_claim
+VAL1876_0_sources,PASS,"1875 vector, routing, contract, claim gate, validation, and selected target are present",False
+VAL1876_1_input_audit,PASS,"runner consumed all 1875 vector, routing, and contract rows",False
+VAL1876_2_arena_coverage,PASS,"local_GR, PPN, R10, clock, WEP, and orbital branches are represented",False
+VAL1876_3_all_arenas_blocked,PASS,every arena returns blocked/nonclaim with exact RV1875 missing row IDs,False
+VAL1876_4_R10_route_separation,PASS,massless C_R/r route is machine-blocked from R10 alpha(lambda),False
+VAL1876_5_contract_forbidden_tests,PASS,"route separation, closure-only, no-cancellation, normalization, and baseline failures all block",False
+VAL1876_6_claim_gate,PASS,"only the internal dry-run harness is allowed, not any physics claim",False
+VAL1876_7_decision,PASS,decision ledger records all-arenas blocked and selects derivation-first next target,False
+VAL1876_8_next_target,PASS,1877 q_shape/lambda_R parent-origin hunt selected,False
+VAL1876_9_claim_flags_false,PASS,checked=161,False
+VAL1876_10_csv_parse,PASS,P8_Y5_PARENT_QLOC_1876_SOURCE_REGISTER.csv:7;P8_Y5_PARENT_QLOC_1876_RUNNER_INPUT_AUDIT.csv:21;P8_Y5_PARENT_QLOC_1876_ARENA_BLOCKING_DRYRUN.csv:7;P8_Y5_PARENT_QLOC_1876_FORBIDDEN_ROUTE_TESTS.csv:5;P8_Y5_PARENT_QLOC_1876_CLAIM_GATE.csv:5;P8_Y5_PARENT_QLOC_1876_DECISION_LEDGER.csv:3;P8_Y5_PARENT_QLOC_1876_NEXT_TARGET.csv:2,False
+VAL1876_11_branch_copies,PASS,D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\microscope\branch_locked_wep\residuals\P8_Y5_PARENT_QLOC_1876_ARENA_BLOCKING_DRYRUN.csv;D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\microscope\quarantine\1876\P8_Y5_PARENT_QLOC_1876_FORBIDDEN_ROUTE_TESTS.csv;D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\rab-sector\acquisition-queue\JR1876_RAB_ARENA_BLOCKING_DRYRUN_NONCLAIM.csv;D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\rab-sector\acquisition-queue\JR1876_RAB_FORBIDDEN_ROUTE_TESTS_NONCLAIM.csv,False
+VAL1876_12_pycache_absent,PASS,D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\__pycache__,False
+VAL1876_13_formalization_untouched,PASS,formalization_1876_count=0,False
+VAL1876_OVERALL,PASS,1876 R_AB residual vector blocking runner dry-run,False

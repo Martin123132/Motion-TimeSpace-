@@ -1,0 +1,9 @@
+gate_id,condition,current_status,source_anchor,gate_pass,valid_for_claim,claim_allowed,timestamp_utc
+CG2690_0_qsrc,q_src is written and parent-adopted before coupling,FAIL_PARENT_ADOPTION_NOT_DERIVED,QPK2690_3_parent_adoption,false,false,false,2026-06-23T07:19:45.140128+00:00
+CG2690_1_no_prefactor,pre-action source prefactors are impossible,FAIL_NO_PREFACTOR_THEOREM_NOT_DERIVED,QPK2690_4_no_prefactor,false,false,false,2026-06-23T07:19:45.140131+00:00
+CG2690_2_no_shadow,source-shadow/projector/non-Hilbert bypass is zero or bounded,FAIL_SHADOW_PACKAGE_NOT_ZEROED,QPK2690_5_no_shadow,false,false,false,2026-06-23T07:19:45.140134+00:00
+CG2690_3_action_line,action-density line/measure owner is signed,FAIL_ACTION_DENSITY_LINE_OWNER_UNSIGNED,QPK2690_7_action_line,false,false,false,2026-06-23T07:19:45.140136+00:00
+CG2690_4_projected_mass,Newton/GM projected source calibration is closed,FAIL_PROJECTED_MASS_OPEN,QPK2690_8_projected_mass,false,false,false,2026-06-23T07:19:45.140139+00:00
+CG2690_5_value_rows,finite Delta_w first rows are numeric/theorem-zero and projected,FAIL_FIRST_VALUE_ROWS_NONCLAIM,DWFV2690_0_delta_w_species;DWFV2690_1_delta_w_shadow,false,false,false,2026-06-23T07:19:45.140142+00:00
+CG2690_6_guards,Ward-only and cancellation-only shortcuts are refused,PASS_GUARD_ONLY,QG2690_6_ward_guard;QG2690_7_no_cancellation,true,false,false,2026-06-23T07:19:45.140144+00:00
+CG2690_7_verdict,source-coupling/local-GR branch can claim pass,CLAIM_BLOCKED,CG2690_0_qsrc through CG2690_6_guards,false,false,false,2026-06-23T07:19:45.140147+00:00

@@ -1,0 +1,4 @@
+bound_id,quantity,formula,required_inputs,status,valid_for_claim,generated_utc
+CFB3233_0_CF2perp,C_F2_perp,C_F2_perp <= (C_Q_leak + C_lambda_leak + C_hidden_leak + C_readout_leak) / Z_min,Z_min; C_Q_leak; C_lambda_leak; C_hidden_leak; C_readout_leak,FINITE_BOUND_FORMULA_READY_INPUTS_MISSING,false,2026-06-26T22:43:59.603493+00:00
+CFB3233_1_JEMF2,||J_EM_F2||_2,||J_EM_F2||_2 <= (1/4) C_F2_perp ||F^2||_2,C_F2_perp; ||F^2||_2 on scored support,FEEDS_3232_JPERP_BOUND,false,2026-06-26T22:43:59.603493+00:00
+CFB3233_2_zero_switch,C_F2_perp_zero,C_F2_perp=0 if C_Q_leak=C_lambda_leak=C_hidden_leak=C_readout_leak=0,parent-signed zero for each numerator leak and Z_min>0,ZERO_SWITCH_DEFINED_NOT_ACTIVE,false,2026-06-26T22:43:59.603493+00:00

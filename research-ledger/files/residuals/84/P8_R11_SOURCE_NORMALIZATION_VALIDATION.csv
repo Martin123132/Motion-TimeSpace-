@@ -1,0 +1,7 @@
+rule_id,rule,result,evidence,claim_effect
+V496_0_sources,all cited source paths exist,pass,missing_sources=0,traceability only
+V496_1_inputs_loaded,"R11 vector, R11 mu link, mu_extra vector, local vector, and 495 fill rows are loaded",pass,r11_rows=10;r11_mu_link_rows=8;mu_extra_rows=8;local_rows=11;fill_rows=5,minimum fill is tied to active artifacts
+V496_2_source_norm_R11_present,canonical R11 vector contains source_normalization_operator,pass,source_norm_R11_rows=1,R11 family is wired
+V496_3_channel_coverage,minimum vector covers all eight mu_extra channels,pass,absolute_calibration_offset;boundary_monopole_shift;bulk_X_Yukawa_tail;domain_projector_mass;nonEH_operator_potential;radial_Meff_hair;species_source_charge;time_drift,no hidden source-normalization channel
+V496_4_local_blocker_present,local residual vector contains LRV_DOMAIN_R11_SOURCE_NORMALIZATION,pass,local_source_norm_rows=1,Newton blocker remains active
+V496_5_no_claim_rows,minimum rows are not claim-valid while missing/conditional inputs remain,pass,claim_rows=0;missing_or_conditional_rows=8,no Newton/local-GR promotion

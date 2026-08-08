@@ -1,0 +1,6 @@
+gate_id,gate,result,status,claim_allowed,timestamp_utc
+LGG3903_0_chain,q-basic coframe chain rule,exact zero if Dq[X_mem]=0,PASS_CONDITIONAL_EXACT,False,2026-07-01T09:23:54+00:00
+LGG3903_1_verticality,memory verticality,not parent-signed; 2570 memory-frame obstruction remains,FAIL_PARENT_UNSIGNED,False,2026-07-01T09:23:54+00:00
+LGG3903_2_linear_gamma,linear gamma-zero promotion,contract ready but not promoted to claim,BLOCKED_DQ_MEMORY_BOUNDARY_INPUTS,False,2026-07-01T09:23:54+00:00
+LGG3903_3_live_runner,live scalar runner row,"input fill queue emitted, but no physical live row is claimable yet",BLOCKED_INPUTS_MISSING,False,2026-07-01T09:23:54+00:00
+LGG3903_4_local_GR,local-GR promotion,no claim until Dq[X_mem] or live scalar inputs close,BLOCKED_NO_CLAIM_DQ_GATE_IDENTIFIED,False,2026-07-01T09:23:54+00:00

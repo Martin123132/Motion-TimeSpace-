@@ -1,0 +1,10 @@
+check_id,check,passed,detail
+VAL3279_0_sources_exist,all cited source paths exist,true,
+VAL3279_1_sources_parse,all cited source paths parse,true,
+VAL3279_2_outputs_parse,all 3279 output CSVs parse,true,non-validation outputs parsed before validation write
+VAL3279_3_corpus_search_nontrivial,corpus search scanned multiple files and found target-term hits,true,files_selected=2700;term_hits_total=10939;numeric_context_hits_requiring_manual_audit=1119
+VAL3279_4_candidates_nonclaim,best candidate rows remain nonclaim and no finite row is promoted,true,CAND3279_0_epsilon_shadow=NO_REAL_NUMERIC_ROW;CAND3279_1_current_rescale=COUNTEREXAMPLE_PLUS_MISSING_COEFFICIENT;CAND3279_2_pre_action_weight=LIVE_COUNTERMODEL_NOT_NUMERIC_PRIOR;CAND3279_3_WEP_bound_product=NUMERIC_BOUND_NOT_COEFFICIENT;CAND3279_4_local_source_residual=SYMBOLIC_RESIDUAL_CONTRACT;CAND3279_5_qbar_source_weight=MISSING_DELTA_KAPPA_A;CAND3279_6_exact_U1_nonconserved=SOURCE_BACKED_FORBIDDEN_CLAUSE_NOT_FINITE_ROW
+VAL3279_5_decision_demotes_finite_CJ,"finite C_J branch is demoted to closure-only, not claimed zero",true,finite C_J route demoted; parent exact-U1 route remains unsigned.
+VAL3279_6_all_rows_nonclaim,all 3279 rows with claim flags are nonclaim,true,valid_for_claim=false across source/candidate/decision/closure rows.
+VAL3279_7_formalization_untouched,formalization-workbench modified-file count remains zero by this script,true,formalization_changed_count=0
+VAL3279_8_overall,3279 validation overall,true,all required checks passed

@@ -1,0 +1,5 @@
+map_id,chain_piece,formal_need,current_input,attempt_result,blocker,valid_for_claim,claim_allowed
+CMAP1251_0_required_chain,H_core -> Euler/source equation,delta H_core/delta R_AB or equivalent canonical equation defines reciprocal source/current,MISSING_HCORE,BLOCKED,"no explicit weak-field H_core for T,S/e_pub/chi_load",False,False
+CMAP1251_1_charge_definition,source/current -> Q_R,Q_R = boundary integral or integration constant with declared units,MISSING_BOUNDARY_CLASS,BLOCKED,no boundary/corner class defining finite Q_R as source-backed charge,False,False
+CMAP1251_2_normalization,Q_R -> q_R_hat,q_R_hat=Q_R c^2/(G M_source) with GM/source convention,GM1244_CONVENTION_READY_BUT_QR_MISSING,WAITING_FOR_QR,normalization rule exists but no Q_R value/source exists,False,False
+CMAP1251_3_gamma_score,q_R_hat -> gamma_minus_1_QR,gamma_minus_1_QR=-q_R_hat/2 and abs(q_R_hat)<=4.6e-05 strict smoke guardrail,POLICY_READY_BUT_QRHAT_MISSING,WAITING_FOR_QRHAT,policy cannot score without accepted finite q_R_hat,False,False

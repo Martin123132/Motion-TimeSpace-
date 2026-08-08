@@ -1,0 +1,6 @@
+adjoint_id,formula,meaning,current_status,valid_for_claim
+DCA591_0_formal_pairing,"<X,DC[delta Y]>=<DCdagger X,delta Y>+B_DC[X,delta Y]",defines DCdagger only after a bulk pairing and boundary domain are chosen,formal_definition,false
+DCA591_1_PJ_adjoint,DCdagger_A X = (DP_A)^dagger[nabla_mu X_nu] + (DJ_A)^dagger[X_nu] + connection/volume adjoint terms,the adjoint is controlled by how P and J depend on parent fields,operator_shape_derived,false
+DCA591_2_metric_connection_terms,metric/coframe component also receives adjoints of -X_nu deltaGamma^mu_{mu rho}P^{rho nu}-X_nu deltaGamma^nu_{mu rho}P^{mu rho},"even if P,J are simple, the connection variation contributes to Omega-flat matching",must_be_included,false
+DCA591_3_boundary_adjoint,B_DC=-int_boundary n_mu X_nu delta P^{mu nu}+delta Q_X plus possible density/reference terms,differentiability of G_X is equivalent to cancelling this boundary covector,not_cancelled_currently,false
+DCA591_4_compare_to_Omega_flat,need DCdagger_A X = [Omega_flat(v_X)]_A for every parent field A,"this is now an equation for P,J,theta,Omega and v_X, not a slogan",not_closed_without_parent_PJ_and_Omega,false

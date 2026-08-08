@@ -1,0 +1,7 @@
+parameter,role,allowed_mode,source_rule,counts_in_AIC_BIC,support_allowed_if_free,valid_for_claim,generated_utc
+F(z)_shape,memory/activation shape,fixed_or_predeclared,must come from parent/equality-scale argument or predeclared shape family before scoring,true_if_selected_from_family_or_tuned,false,false,2026-06-12T23:56:10+00:00
+b_mem,memory amplitude,parent_predicted_or_predeclared_corridor,parent-predicted for support; predeclared corridor only for exploratory pruning,true_if_fitted_or_corridor_selected_after_data,false,false,2026-06-12T23:56:10+00:00
+z50_act_width_act,transition location/width if used,fixed_by_physics_or_counted,must not be edge-seeking or retuned per dataset without parameter penalty,true_if_fitted,false,false,2026-06-12T23:56:10+00:00
+Omega_m0_H0_calibration,background calibration/nuisance,same_freedom_as_baselines,MTS and fitted baselines must receive symmetric calibration treatment,true_if_fitted,only_if_baseline_symmetric_and_other_gates_pass,false,2026-06-12T23:56:10+00:00
+sigma8_0,growth nuisance,analytic_refit_allowed_if_baselines_same,count as fitted parameter and apply equally to baselines,true,only_if_baseline_symmetric_and_other_gates_pass,false,2026-06-12T23:56:10+00:00
+local_GR_closure,local theory guardrail,external_closure_only,cosmology scoring cannot improve or prove local GR status,not_applicable,false,false,2026-06-12T23:56:10+00:00

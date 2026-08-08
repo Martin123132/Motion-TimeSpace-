@@ -1,0 +1,8 @@
+checkpoint,insertion_id,object,formula,source_basis,meaning,claim_allowed,valid_for_claim,timestamp_utc
+4668,INS4668_0_import,C_mem^final_live,C_mem^final_live=0,4667 strict private branch,memory trace leakage is removed from the body-charge source density,False,False,2026-07-07T16:39:49.152692+00:00
+4668,INS4668_1_density_before,rho_mem_before,rho_mem = B_mem_eff R_obs + C_mem^final_live T + J_mem_live,4595;4600,body-charge density before insertion,False,False,2026-07-07T16:39:49.152692+00:00
+4668,INS4668_2_density_after,rho_mem_reduced,rho_mem = B_mem_eff R_obs + J_mem_live,INS4668_0,trace-coupling term is gone; curvature/source-normalization and live current remain,False,False,2026-07-07T16:39:49.152692+00:00
+4668,INS4668_3_charge_after,Q_mem0_reduced,Q_mem0 = 4*pi int_0^R dr r^2 [B_mem_eff R_obs + J_mem_live] sinh(r/lambda_mem)/(r/lambda_mem) + Q_boundary_mem,4505;4506,"source charge is now a B/J/Q problem, not a Cmem problem",False,False,2026-07-07T16:39:49.152692+00:00
+4668,INS4668_4_amplitude_after,A_mem_reduced,|A_mem| <= [exp(R/lambda_mem) int_body (||B_mem_eff||||R_obs|| + ||J_mem_live||) dV + ||Q_boundary_mem||]/(4*pi||Z_mem||),4514;4595;4600,finite body-charge envelope after Cmem closure,False,False,2026-07-07T16:39:49.152692+00:00
+4668,INS4668_5_zero_switch,A_mem_zero_condition,"positive Z_mem,M2_mem plus B_mem_eff=J_mem_live=Q_boundary_mem=0",4514 nohair;4506 zero switch,exact body-charge zero route after Cmem closure,False,False,2026-07-07T16:39:49.152692+00:00
+4668,INS4668_6_not_enough,C_mem_zero_not_local_GR,"C_mem^final_live=0 does not set B_mem_eff, J_mem_live, Q_boundary_mem, Z_mem, M2_mem, Pi_M/H_tau or M_H_ref",4601;4012;4354,prevents the fake victory route,False,False,2026-07-07T16:39:49.152692+00:00

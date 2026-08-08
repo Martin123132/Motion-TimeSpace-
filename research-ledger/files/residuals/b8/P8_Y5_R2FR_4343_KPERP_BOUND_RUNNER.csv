@@ -1,0 +1,5 @@
+kperp_id,quantity,formula,condition,output,status,valid_for_claim
+KP4343_0_sector_split,K_perp,K_perp=K_metric_TT+K_vertical+K_boundary+K_extra_source,sector labels fixed before scoring,only K_extra_source is an independent local residual,IMPORTED_SECTOR_SPLIT,False
+KP4343_1_clean_zero,R_i^K,"R_i^K=0 if K_perp is GR TT/radiative, vertical quotient, or routed boundary with zero local projection","EH/coframe identity, Dq=0/e_obs descent, and boundary readout route parent-signed",no extra Kperp score,CLEAN_ROUTE_PARENT_UNSIGNED,False
+KP4343_2_finite_bound,||K_perp||_E,||K_perp||_E <= C_T(||S_T||+||B_T||+||I_T||+||Z_T||),"positive tensor operator, finite source/boundary/incoming/zero-mode rows",|R_i^K| <= W_i^K ||K_perp||_E,FINITE_RUNNER_READY_VALUES_MISSING,False
+KP4343_3_total_vector,Y_a^4343,Y_a^4343 <= Pi_a^RI C_RI_curved + Pi_a^BRI B_RI + W_a^K C_T(S_T+B_T+I_T+Z_T),used if adjoint-zero or Kperp clean route fails,"compare to PPN_gamma<=0.0002739826487147268, PPN_beta<=0.0009529831259642674, clock<=0.0006134828873394971, plus R10/orbital/WEP gates",NONCLAIM_BOUND_VECTOR_READY,False

@@ -1,0 +1,7 @@
+gate_id,gate,acceptance_condition,failure_status,valid_for_claim,claim_allowed
+QGATE1242_0_no_closure_zero,closure q_R_hat=0 is rejected as input evidence,closure_used=False or branch explicitly closure_benchmark and not scored,REJECT_CLOSURE_AS_EVIDENCE,False,False
+QGATE1242_1_finite_numeric,finite candidate has numeric q_R_hat,q_R_hat parses as finite float and units=dimensionless,REJECT_MISSING_OR_NONNUMERIC_QR,False,False
+QGATE1242_2_GM_convention,GM/source convention declared,GM_convention is non-placeholder and tied to comparator source,REJECT_MISSING_GM_CONVENTION,False,False
+QGATE1242_3_policy,statistical pass policy declared,N_sigma and sigma_gamma parse as finite positive numbers,REJECT_MISSING_STATISTICAL_POLICY,False,False
+QGATE1242_4_source,source/provenance declared,source_path is non-placeholder and either exists locally or is an explicit external source/provenance id,REJECT_MISSING_SOURCE,False,False
+QGATE1242_5_zero_theorem,parent zero theorem route proves Q_R=0 without closure,route_type=parent_zero_theorem and zero_theorem_statement plus source_path are present; closure_used=False,REJECT_ZERO_THEOREM_UNDERIVED,False,False

@@ -1,0 +1,5 @@
+decision_id,decision,reason,next_action,valid_for_claim
+DEC2279_0_gain,RANDOM_PHASE_NONLINEAR_EXCHANGE_REJECTED,ordinary smoothing/random phases cannot be the hidden source of the q-zero carrier exchange.,do not rely on generic nonlinearity to close q=0.,False
+DEC2279_1_open_route,LOCKED_PHASE_OR_MEMORY_KERNEL_ROUTE_REMAINS_OPEN,"the corpus has nonlinear phase-dynamics motifs, but the exact locked distribution/coefficient map is absent.",derive phase-lock distribution/projectors or demote exchange to residual source.,False
+DEC2279_2_backstop,Q_OPERATOR_BACKSTOP_STAGED,"if exchange does not close, q_R can still be bounded through Dq+kappa_q q=S_q or L_q q=S_q once the operator is sourced.",derive kappa_q/L_q/G_q and boundary/observable maps.,False
+DEC2279_3_next,PHASE_LOCK_DISTRIBUTION_OR_Q_OPERATOR_OWNER_NEXT,this is now the least ambiguous next gate.,2280-Y5-R2FR-phase-lock-distribution-or-q-residual-operator-owner.md,False

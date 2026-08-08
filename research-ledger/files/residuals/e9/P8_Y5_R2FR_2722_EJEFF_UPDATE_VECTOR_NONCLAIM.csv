@@ -1,0 +1,6 @@
+update_id,formula,status,claim_allowed
+EJ2722_0_previous,E_norm := E_norm_kappa + E_norm_source_charge + E_norm_surface_drift + E_norm_reference + E_norm_absorption + E_norm_extra_stress,INHERITED_FROM_2721,false
+EJ2722_1_newton_split,E_Newton_bridge := E_kappa_bridge + E_Poisson_residual + E_Gauss_flux + E_mu_transfer + E_extra_stress_Newton + E_gauge_domain,REFINED_NONCLAIM_VECTOR,false
+EJ2722_2_source_shadow,E_shadow retains E_shadow_source unless all source currents reduce to Hilbert stress,REFINED_NONCLAIM_VECTOR,false
+EJ2722_3_green_feed,||R_AB|| <= ||G_R||*(E_matter + E_boundary_hair + E_readout + E_shadow + E_norm + E_Newton_bridge),FORMAL_GREEN_INTERFACE_ONLY,false
+EJ2722_4_zero_condition,"E_Newton_bridge=0 only if kappa/G_ref, Poisson algebra, Gauss flux, orbit readout, extra stress and gauge/domain clauses all close",ZERO_CONDITION_NOT_MET,false

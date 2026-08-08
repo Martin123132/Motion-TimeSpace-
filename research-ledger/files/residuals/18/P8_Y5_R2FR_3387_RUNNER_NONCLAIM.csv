@@ -1,0 +1,7 @@
+run_id,test,result,detail,claim_allowed,valid_for_claim
+RUN3387_0_boundary_zero,try epsilon_boundary_PPN=0,FAIL_CURRENT_ZERO_NOT_PARENT_SIGNED,"compact/interior zero theorem is valid, but current Gaussian tail plus 3376 physical/reference clauses are not parent-signed",false,false
+RUN3387_1_boundary_bound,derive finite boundary/collar tail law,PASS_BOUND_FORMULA_NONCLAIM,epsilon_boundary <= Gaussian collar tail + 3376 physical/reference/topology flux terms,false,false
+RUN3387_2_kernel_zero,try epsilon_kernel_aniso_PPN=0,PASS_TANGENT_ZERO_FAIL_REAL_PATCH_ZERO,"constant projector and isotropic kernel commute exactly, but real PPN projector constancy is not parent-signed",false,false
+RUN3387_3_kernel_bound,derive variable projector commutator bound,PASS_COMMUTATOR_BOUND_NONCLAIM,"[P,S]f identity gives C1 ell_s ||nabla P|| + C2 ell_s^2 ||nabla^2 P|| plus moment/gauge defects",false,false
+RUN3387_4_targets,attach 3386 target ceilings to boundary/kernel components,PASS_TARGETS_NONCLAIM,targets=32,false,false
+RUN3387_5_firewall,prevent local PPN/local-GR overclaim,PASS_CLAIM_FIREWALL,"new formulas are constraints on future inputs, not evidence of passing Cassini/local GR",false,false

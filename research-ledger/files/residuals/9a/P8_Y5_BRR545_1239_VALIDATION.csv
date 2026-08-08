@@ -1,0 +1,15 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1239_0_sources_exist,all cited local sources exist,PASS,9/9 sources exist,False,False
+VAL1239_1_needles_found,all cited local needles found,PASS,9/9 needles found,False,False
+VAL1239_2_schema_fields,runner input schema includes required fields,PASS,schema_fields=11,False,False
+VAL1239_3_branch_separation,closure and finite/source rows are distinguishable,PASS,"branch_types=['closure_benchmark', 'finite_residual', 'source_required']",False,False
+VAL1239_4_closure_rows_safe,closure rows cannot count as evidence,PASS,closure rows use value_mode=closure_value and validation_gate=closure_only,False,False
+VAL1239_5_missing_rows_blocked,missing finite/source rows are blocked from scoring,PASS,missing_source rows use source_required or blocked gates,False,False
+VAL1239_6_QR_priority,Q_R/gamma residual is rank 1,PASS,SP1239_0_QR rank=1,False,False
+VAL1239_7_dryrun_pass,dry-run acceptance matrix passes,PASS,dryrun_rows=5,False,False
+VAL1239_8_claim_gates,physics claim gates remain blocked/nonclaim,PASS,claim_gate_rows=4,False,False
+VAL1239_9_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables,False,False
+VAL1239_10_next_target_1240,next target is PPN Q_R bound schema or zero-charge theorem,PASS,1240-Y5-R10-PPN-QR-residual-bound-schema-or-zero-charge-theorem.md,False,False
+VAL1239_11_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1239_SOURCE_REGISTER.csv:9; P8_Y5_R10_1239_RUNNER_INPUT_SCHEMA.csv:11; P8_Y5_R10_1239_BRANCH_INPUT_ROWS_TEMPLATE.csv:8; P8_Y5_R10_1239_SOURCE_PRIORITY_CHECKLIST.csv:5; P8_Y5_R10_1239_DRYRUN_ACCEPTANCE_MATRIX.csv:5; P8_Y5_R10_1239_DECISION_LEDGER.csv:3; P8_Y5_R10_1239_CLAIM_GATES.csv:4; P8_Y5_R10_1239_NEXT_TARGET.csv:1,False,False
+VAL1239_12_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_write_count_since_run_start=0,False,False
+VAL1239_13_overall,overall 1239 validation,PASS,"1239 creates a nonclaim runner-input schema, separates closure from finite rows, and prioritizes Q_R/gamma next",False,False

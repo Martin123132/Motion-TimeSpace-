@@ -1,0 +1,4 @@
+step_id,action,condition_to_execute,future_destination,current_status,valid_for_claim,claim_allowed
+DRY1227_0_do_not_execute,download,mapped_package_url and license/access status are known,source-intake/microscope/raw/,BLOCKED_NO_PACKAGE_URL,False,False
+DRY1227_1_checksum,compute checksums,official files exist locally,source-intake/microscope/metadata/checksums.csv,BLOCKED_NO_FILES,False,False
+DRY1227_2_manifest,write package manifest,package metadata and local file paths exist,source-intake/microscope/metadata/package_manifest.csv,BLOCKED_NO_METADATA,False,False

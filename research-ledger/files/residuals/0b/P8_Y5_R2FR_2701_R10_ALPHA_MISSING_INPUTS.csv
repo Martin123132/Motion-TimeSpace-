@@ -1,0 +1,8 @@
+missing_id,input,purpose,why_required,status,source_backed,score_ready,valid_for_claim,timestamp_utc
+MISS2701_0_q_loc_profile,"q_loc^r(r,lambda,source,frame)",radial acceleration or force-density profile,required to calculate alpha_q(lambda),MISSING_PROFILE,false,false,false,2026-06-23T08:36:25.807117+00:00
+MISS2701_1_source_mass,M_source or a_N(r)=G M_source/r^2,source-normalized Newtonian acceleration,required denominator for alpha ratio,MISSING_SOURCE_MEASURE_LOCK,false,false,false,2026-06-23T08:36:25.807120+00:00
+MISS2701_2_test_body_normalization,rho_test or m_test map,convert force density/stress divergence to test acceleration,required if q_loc is not already acceleration,MISSING_MATTER_FRAME_NORMALIZATION,false,false,false,2026-06-23T08:36:25.807123+00:00
+MISS2701_3_range_kernel,lambda dependence of q_loc,project q_loc onto Yukawa range lambda,required to sample alpha(lambda),MISSING_RANGE_KERNEL,false,false,false,2026-06-23T08:36:25.807126+00:00
+MISS2701_4_bound_curve,full alpha_bound(lambda) curve,dense or interpolable source-backed bound rows,required for claim scoring,MISSING_FULL_DIGITIZED_BOUND_CURVE,false,false,false,2026-06-23T08:36:25.807128+00:00
+MISS2701_5_anchor_policy,anchor-only nonclaim policy,do not treat alpha=1 threshold anchors as full curve,prevents false R10 pass,ANCHORS_NONCLAIM_ONLY,false,false,false,2026-06-23T08:36:25.807130+00:00
+MISS2701_6_no_cancellation,absolute q_loc component envelope,sum/bound residual components without cancellation credit,required for conservative local tests,MISSING_COMPONENT_VALUES,false,false,false,2026-06-23T08:36:25.807133+00:00

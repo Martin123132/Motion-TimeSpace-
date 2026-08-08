@@ -1,0 +1,9 @@
+gate_id,required_signature,closes,current_status,valid_for_claim
+PSG3423_0_single_branch,"one local branch fixes g_obs/e_obs, tau, Q_tau, B_ref, Pi_M, kappa_MTS and ell_J before comparison",no source readout backfit or branch mismatch,STAGED_NOT_ADOPTED,False
+PSG3423_1_constant_kappa,kappa_MTS is branch-constant and label-free,epsilon_kappa_Z and first-order coupling drift,COMPATIBLE_GLOBAL_CLAUSE_NOT_ADOPTED,False
+PSG3423_2_same_Hilbert_source,"same S_matter[e_obs,psi] defines T_H, J_H, M_H and PPN source density",epsilon_ellJ_Z and shadow-source split,OBSERVED_COFRAME_COMPATIBLE_BUT_NOT_ADOPTED,False
+PSG3423_3_Htau_PiM_chain,H_tau-H_ref and Pi_M are functionals of the same Hilbert worldtube charge,epsilon_HPiM_Z and commutator mismatch,MISSING_CORE_PARENT_HAMILTONIAN_CHARGE,False
+PSG3423_4_boundary_no_extra_mass,"B_zero_flux, domain shift, nonEH/frame/memory/source extra monopoles vanish or are explicit rows",epsilon_boundary_domain_Z and hidden source drift,RETAINED_ROWS_ACTIVE,False
+PSG3423_5_v_action_ratio,local v branch has the exact Poisson source/kinetic coefficient ratio,delta_KC_Z,TARGET_RATIO_KNOWN_PARENT_COEFFICIENTS_UNSIGNED,False
+PSG3423_6_same_U_PPN_guard,"the same G_ref M_H source builds Poisson, H_tau and PPN potential U",first-order source normalization transfer only,GUARD_READY_NOT_FULL_PPN,False
+PSG3423_7_verdict,all Y5 source signatures are parent-signed in one branch,J_Z_mu_Y5=0 and first-order Newton source normalization,FAIL_CURRENT_CLAIM_USE_CONDITIONAL_THEOREM_OR_BOUND_ROWS,False

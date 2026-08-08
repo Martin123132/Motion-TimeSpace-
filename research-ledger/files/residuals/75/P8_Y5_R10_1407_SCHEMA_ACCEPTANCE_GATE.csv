@@ -1,0 +1,7 @@
+gate_id,requirement,current_status,failure_action,valid_for_claim,claim_allowed
+SG1407_0_no_missing_values,no finite coefficient row may have MISSING_SOURCE_VALUE when valid_for_claim=true,ALL_ROWS_NONCLAIM,keep WEP branch blocked,False,False
+SG1407_1_units,units and parent-coordinate dimension basis must be declared,SCHEMA_DECLARED_VALUES_MISSING,do not compare coefficients across sectors,False,False
+SG1407_2_source_paths,source_path and source_anchor must be real local/provenance-backed rows,MISSING_FOR_ALL_VALUE_ROWS,no claim-ready coefficient,False,False
+SG1407_3_arena_projection,WEP rows cannot transfer to clocks/R10/PPN without arena projection theorem,BLOCKED_BY_1402_ARENA_ISOLATION,WEP pressure only,False,False
+SG1407_4_no_pair_cancellation,no coefficient set may be accepted only because it cancels one material pair,PAIR_CANCELLATION_FORBIDDEN,require all-material theorem or multi-material evidence,False,False
+SG1407_5_verdict,schema acceptance status,SCHEMA_READY_VALUES_MISSING_NO_PASS,move to source acquisition/fill queue,False,False

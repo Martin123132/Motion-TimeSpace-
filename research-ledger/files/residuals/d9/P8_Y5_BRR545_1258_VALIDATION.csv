@@ -1,0 +1,13 @@
+check_id,check,status,details
+VAL1258_0_sources_exist,all cited local sources exist,PASS,8/8 sources exist
+VAL1258_1_needles_found,all cited local needles found,PASS,8/8 needles found
+VAL1258_2_tests_complete,field-status tests cover listing/composite/typing/exhaustion/constraint,PASS,test_rows=5
+VAL1258_3_certificate_rejected,R_AB field-exclusion certificate is rejected for current corpus,PASS,REJECT_CERTIFICATE_CURRENT_CORPUS
+VAL1258_4_counterterm_retained,R_AB gradient counterterm risk remains retained,PASS,counterterm_rows=2
+VAL1258_5_positive_handoff,Z_R-positive fallback remains open,PASS,Z_R-positive finite/suppressed branch retained
+VAL1258_6_claim_gates,claim gates block field exclusion/Z_R/local GR,PASS,claim_gate_rows=4
+VAL1258_7_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1258_8_next_target_1259,next target is R_AB gradient-counterterm ban or Z_R source row,PASS,1259-Y5-R10-RAB-gradient-counterterm-ban-or-ZR-source-row.md
+VAL1258_9_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1258_SOURCE_REGISTER.csv:8; P8_Y5_R10_1258_RAB_FIELD_STATUS_TESTS.csv:5; P8_Y5_R10_1258_FIELD_EXCLUSION_CERTIFICATE_ATTEMPT.csv:1; P8_Y5_R10_1258_RAB_GRADIENT_COUNTERTERM_RISK_LEDGER.csv:2; P8_Y5_R10_1258_ZR_POSITIVE_HANDOFF.csv:3; P8_Y5_R10_1258_CLAIM_GATES.csv:4; P8_Y5_R10_1258_DECISION_LEDGER.csv:2; P8_Y5_R10_1258_NEXT_TARGET.csv:1
+VAL1258_10_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_write_count_since_run_start=0
+VAL1258_11_overall,overall 1258 validation,PASS,1258 rejects the R_AB field-exclusion certificate for the current corpus and routes next to gradient-counterterm ban or Z_R source row

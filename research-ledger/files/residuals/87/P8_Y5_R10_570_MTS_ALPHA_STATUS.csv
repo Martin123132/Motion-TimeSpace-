@@ -1,0 +1,9 @@
+status_id,item,current_state,blocking_detail,next_action,valid_for_claim
+MAS570_0_finite_alpha_law,alpha_X(lambda),symbolic,"alpha_X(lambda)=K_X*Qbar_XH(lambda)*qbar_XT; no numeric K_X, source charge, or test charge",derive theorem-zero or fill/bound product coefficients,false
+MAS570_1_range_law,lambda_X,symbolic,lambda_X=sqrt(Z_X/M_X^2); no parent Hessian/mass-gap value,"derive Z_X and M_X^2, or scan lambda_X as non-claim",false
+MAS570_req_0,Z_X,missing_parent_Hessian_value,lambda_X;K_X;ghost/stability sign,derive positive kinetic Hessian coefficient or define conservative scan prior,false
+MAS570_req_1,M_X^2;lambda_X,missing_parent_Hessian_value,range selection;interpolation into R10 bound curve,derive positive Hessian mass gap or scan lambda_X directly as non-claim,false
+MAS570_req_2,qbar_XT,not_theorem_zero,WEP/local fifth-force amplitude,derive ordinary test-body X neutrality or enter residual coupling bound,false
+MAS570_req_3,Qbar_XH(lambda),hidden_source_channels_open,source amplitude in torsion-balance bodies,derive source projected X charge or channelwise source form factor,false
+MAS570_req_4,alpha_bound(lambda),anchor_only_noncurve,external evidence comparison,digitize/source full alpha_bound(lambda) curve with valid claim rows,false
+MAS570_2_source_rows,finite alpha law register,law_rows=4;requirement_rows=5,law is structurally useful but not numeric,turn pressure table into coefficient target ledger,false

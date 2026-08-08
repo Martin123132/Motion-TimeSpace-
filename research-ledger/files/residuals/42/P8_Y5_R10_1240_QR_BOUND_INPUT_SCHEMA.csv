@@ -1,0 +1,6 @@
+bound_id,runner_field,definition,units,required_value,current_value,validation_gate,valid_for_claim,claim_allowed
+QB1240_0_qR_input,q_R_hat,Q_R c^2/(GM),dimensionless,numeric finite residual or derived zero theorem,MISSING_QR_VALUE,source_required,False,False
+QB1240_1_gamma_projection,gamma_minus_1_QR,-q_R_hat/2,dimensionless,computed from q_R_hat after normalization,MISSING_QR_VALUE,blocked_until_qR_supplied,False,False
+QB1240_2_gamma_comparator,gamma_comparator,Cassini gamma_minus_1 comparator from 1181 source row,dimensionless,(2.1 +/- 2.3)e-5 comparator available as nonclaim source-backed anchor,SOURCED_COMPARATOR_PREDICTION_MISSING,comparator_available_nonclaim,False,False
+QB1240_3_pass_rule,pass_rule,abs(gamma_minus_1_QR) <= N_sigma * sigma_gamma or a separately justified absolute target,dimensionless,N_sigma policy and uncertainty convention,MISSING_STATISTICAL_POLICY,source_required,False,False
+QB1240_4_closure_row,closure_q_R_hat,q_R_hat=0 only for closure benchmark,dimensionless,explicit branch_type=closure_benchmark,0_CLOSURE_ONLY,closure_only_not_evidence,False,False

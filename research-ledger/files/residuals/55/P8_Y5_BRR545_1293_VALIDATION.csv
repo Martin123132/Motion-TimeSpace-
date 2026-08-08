@@ -1,0 +1,14 @@
+check_id,check,status,details
+VAL1293_0_sources_exist,registered source paths exist and anchors are found,PASS,7/7 source anchors found
+VAL1293_1_schema_structural_pass,runner input rows have required structural columns,PASS,runner_rows=4
+VAL1293_2_all_rows_rejected,all current rows are rejected as nonclaim/no-score,PASS,RRI1292_0_m_chain:MISSING_INPUTS;NONCLAIM_FLAGS;RESPONSE_OPERATOR_MISSING;RRI1292_1_Lcg_chain:MISSING_INPUTS;NONCLAIM_FLAGS;RESPONSE_OPERATOR_MISSING;RRI1292_2_cdb_chain:MISSING_INPUTS;NONCLAIM_FLAGS;RESPONSE_OPERATOR_MISSING;RRI1292_3_chain_vector:MISSING_INPUTS;NONCLAIM_FLAGS;RESPONSE_OPERATOR_MISSING
+VAL1293_3_missing_inputs_detected,missing inputs are detected on every current row,PASS,RRI1292_0_m_chain=6;RRI1292_1_Lcg_chain=7;RRI1292_2_cdb_chain=5;RRI1292_3_chain_vector=3
+VAL1293_4_no_score_emitted,runner emits no score values,PASS,score_value blank and score_emitted=false for every row
+VAL1293_5_response_requirements_blocked,response operator requirements remain blocked,PASS,response_requirement_rows=5
+VAL1293_6_no_score_guard_pass,no-score guard rows pass,PASS,guard_rows=3
+VAL1293_7_claim_gates_blocked,claim gates block local GR/PPN promotion,PASS,claim_gate_rows=5
+VAL1293_8_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1293_SOURCE_REGISTER.csv:7; P8_Y5_R10_1293_CHAIN_KERNEL_RESIDUAL_RUNNER_SCHEMA.csv:6; P8_Y5_R10_1293_REJECTION_SMOKE_RESULTS.csv:4; P8_Y5_R10_1293_RESPONSE_OPERATOR_REQUIREMENTS.csv:5; P8_Y5_R10_1293_NO_SCORE_GUARD.csv:3; P8_Y5_R10_1293_CLAIM_GATES.csv:5; P8_Y5_R10_1293_DECISION_LEDGER.csv:3; P8_Y5_R10_1293_NEXT_TARGET.csv:1
+VAL1293_9_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1293_10_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1293_11_next_target_1294,next target routes to response operator/input pack acquisition,PASS,1294-Y5-R10-RAB-chain-kernel-response-operator-or-input-pack-acquisition.md
+VAL1293_12_overall,overall 1293 validation,PASS,"1293 builds a structural residual runner schema, rejects all current rows due missing/nonclaim inputs, emits no score, and routes to response/input acquisition"

@@ -1,0 +1,7 @@
+gate_id,ppn_or_local_channel,residual_dependency,needed_projection,current_status,pressure_result,valid_for_claim,claim_allowed
+PPN1401_0_gamma,gamma-1 / spatial curvature per unit mass,A_gamma · R_EM_local,"A_gamma(lambda_A,rho_NQ,rho_readout,b_alpha,beta_source,C_WEP,beta_EM)",MISSING_LOCAL_PROJECTION_COEFFICIENT,BLOCKED,False,False
+PPN1401_1_beta,beta-1 / nonlinear superposition,A_beta · R_EM_local + quadratic finite-EM terms,A_beta and quadratic local source coefficients,MISSING_LOCAL_PROJECTION_COEFFICIENT,BLOCKED,False,False
+PPN1401_2_alpha1_alpha2,preferred-frame / source-current residuals,current/readout components beta_source_alpha and rho_readout,source-current owner or preferred-frame projection map,MISSING_CURRENT_READOUT_OWNER,BLOCKED,False,False
+PPN1401_3_WEP_local,composition-dependent free fall,C_WEP_EM and beta_EM(lambda_A),composition charge normalization and tau_WEP local domain map,TARGET_ONLY_NOT_PASS,BLOCKED,False,False
+PPN1401_4_effective_G,effective Newton coupling / inverse-square leakage,C_R10_EM(lambda) and local finite-range tail,"finite-range-to-local limit, K_bulk_ST(lambda), epsilon_tail, real bound curve",R10_NOT_SCOREABLE,BLOCKED,False,False
+PPN1401_5_verdict,local GR/Newton/PPN reentry,all components of R_EM_local,"every component theorem-zero, source-backed bounded, or below threshold",PPN_PRESSURE_GATE_WRITTEN_NO_PASS,LOCAL_GR_BLOCKED,False,False

@@ -1,0 +1,4 @@
+decision_id,question,answer,reason,action,valid_for_claim,timestamp_utc
+DG4006_0_insertion_result,Does the inserted coframe-cell block mathematically close I_X?,Conditionally,"The variation chain closes R_AB, Lambda_R, Theta_cell and stress only if matter/readout descent, boundary nohair and no-derivative grammar are all signed.",do not claim; use packet as parent insertion target,False,2026-07-01T19:56:04+00:00
+DG4006_1_next_gate,Which guard should be attacked next?,matter/readout descent J_R=0,E_R gives Lambda_R=-(J_R+B_R+readout_regen); without J_R=0 the cell block can carry stress even when R_AB=0.,write 4007-Y5-R2FR-cell-lock-matter-readout-descent-or-JR-bound-row.md,False,2026-07-01T19:56:04+00:00
+DG4006_2_finite_fallback,What if the guard fails?,fill J_R first,J_R is the first coefficient that directly blocks Lambda_R=0 and stress silence.,make J_R the next finite/nonclaim source row if no descent theorem closes,False,2026-07-01T19:56:04+00:00

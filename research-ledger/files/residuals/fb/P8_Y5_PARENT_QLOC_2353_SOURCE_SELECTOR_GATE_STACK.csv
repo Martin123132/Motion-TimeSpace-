@@ -1,0 +1,9 @@
+branch_id,row_id,gate,condition,status,residual_if_missing,valid_for_claim
+MTS_R2FR_READOUT_NO_REENTRY_SOURCE_SELECTOR_2353,SSG2353_0_parent_domain,parent action domain excludes readout maps,"Conf_parent excludes P_read,R_read,fitted masks and readout-selected active blocks",CERTIFICATE_READY_NOT_PRIMITIVE_DERIVATION,E_pure_fail,false
+MTS_R2FR_READOUT_NO_REENTRY_SOURCE_SELECTOR_2353,SSG2353_1_solution_map,pure solution-to-data map,R_read: Sol(S_parent)/G -> Obs with no arrow into S_parent or S_eff,EXACT_CONDITIONAL_SAFE_CLASS,none if globally signed,false
+MTS_R2FR_READOUT_NO_REENTRY_SOURCE_SELECTOR_2353,SSG2353_2_variation_order,variation before readout,delta S_parent and T_H are formed before material/source/readout projection,EXACT_CONDITIONAL_THEOREM,post-current transfer row if unsigned,false
+MTS_R2FR_READOUT_NO_REENTRY_SOURCE_SELECTOR_2353,SSG2353_3_source_worldtube,source worldtube selector,"W_source and K_source are fixed downstream maps of J_H/e_obs/q, not source-normalizers fitted after data",MISSING_ARENA_TRANSFER_KERNEL,E_source_worldtube,false
+MTS_R2FR_READOUT_NO_REENTRY_SOURCE_SELECTOR_2353,SSG2353_4_projector_chainmap,projector/domain chain map,"delta Pi=0 and [d,Pi]J_H=0 for source/readout projector",MISSING_CHAINMAP_THEOREM,E_projector_worldtube,false
+MTS_R2FR_READOUT_NO_REENTRY_SOURCE_SELECTOR_2353,SSG2353_5_no_EFT_reentry,no pre-variation EFT/readout feedback,"readout-reduced action is retained as new EFT, not theorem-zero",GUARDRAIL_READY_NOT_ZERO,E_EFT_readout,false
+MTS_R2FR_READOUT_NO_REENTRY_SOURCE_SELECTOR_2353,SSG2353_6_no_marker_relabel,no marker/species/source label reentry,readout labels cannot be hidden material/source markers inside parent action,NO_MARKER_THEOREM_MISSING,E_hidden_marker,false
+MTS_R2FR_READOUT_NO_REENTRY_SOURCE_SELECTOR_2353,SSG2353_7_verdict,source-selector gate stack,all gates must close before C_R[A]=0 can be claimed,GATE_STACK_NOT_CLOSED,epsilon_readout_reentry_abs,false

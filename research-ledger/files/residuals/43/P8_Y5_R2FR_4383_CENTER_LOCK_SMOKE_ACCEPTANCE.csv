@@ -1,0 +1,6 @@
+accept_id,tested_output,value,threshold,passed,interpretation,valid_for_claim
+CSA4383_0_center_locked_zero,SMOKE4383_center_locked b/R,0.0000000000000000e+00,1e-12,True,identical parent-centered profiles give b=0,False
+CSA4383_1_shifted_detected,SMOKE4383_shifted_centers b/R,2.0000000000000001e-01,> 1e-3,True,shifted profile centers produce a real b/R input,False
+CSA4383_2_locked_scores_zero,all center-locked envelope scores,0.0000000000000000e+00,1e-12,True,b=0 collapses all envelope scores,False
+CSA4383_3_shifted_scores_positive,all shifted envelope scores,3.9640720034291298e-06,> 0,True,nonzero b/R creates finite envelope scores in every support row,False
+CSA4383_4_all_nonclaim,smoke center/score rows,True,True,True,synthetic smoke rows cannot be promoted,False

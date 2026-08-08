@@ -1,0 +1,6 @@
+arena,selected_for_3329,reason,main_formula,claim_status,valid_for_claim
+PPN_local_GR,true,smallest dimensionless smoke route; no range-dependent bound curve or material-composition model required for algebra stress-test,R_PPN <= |R_Gamma_PPN| + C_PPN epsilon_eff^2 + epsilon_composite_PPN + epsilon_direct_PPN,NONCLAIM_SMOKE_ONLY,false
+R10_short_range,false,"needs claim-ready alpha_bound(lambda), contact/source-size routing, and C_R10(lambda)",alpha_psi(lambda) <= |R_Gamma_R10| + C_R10 epsilon_eff(lambda)^2 + epsilon_composite_R10(lambda),DEFER_UNTIL_BOUND_CURVE_AND_CONTACT_RULE,false
+WEP,false,needs material response Delta q_AB and direct-vertex exclusion or material-tail bounds,eta_AB <= |R_Gamma_WEP| + C_WEP epsilon_eff^2 |Delta q_AB| + epsilon_composite_WEP + epsilon_direct_WEP,DEFER,false
+clocks_EM_Poynting,false,needs clock normalization and EM/Poynting projection; useful after PPN budget behavior is understood,R_clock <= |R_Gamma_clock| + C_clock epsilon_eff^2 + epsilon_EM_tail + epsilon_direct_EM,DEFER,false
+orbital_Newton,false,needs orbital threshold table and compact-source projection; good follow-up after PPN response coefficient,R_orb <= |R_Gamma_orb| + C_orb epsilon_eff^2 + epsilon_composite_orb,DEFER,false

@@ -1,0 +1,9 @@
+field_name,required_for,acceptance_rule,blocks_if_missing,current_policy,valid_for_claim,claim_allowed
+row_id,all_rows,unique nonempty identifier,True,required,False,False
+quantity,all_rows,"one of B_mem,Z_mem,M2_mem,C_mem,J_mem,Q_boundary,Gamma_eff,K_hat,P_loc,q_loc,observable_map,bound",True,required,False,False
+numeric_value_or_theorem_zero,scored_rows,finite numeric value with units or theorem-zero certificate with source path,True,symbolic-only rows reject,False,False
+units,scored_rows,dimensionful rows declare SI or natural-unit convention and conversion,True,missing-unit rows reject,False,False
+parent_owner_source,derived_or_zero_rows,"local source path proves parent action, variation, or theorem-zero clause",True,closure-only rows reject,False,False
+normalization_and_sign,all_scored_rows,"sign convention, Fourier/radial convention, and source/test normalization declared",True,ambiguous sign/normalization rows reject,False,False
+observable_map,R10_PPN_clock_orbital_rows,maps residual quantity into the named measured observable with coefficient path,True,"no observable map, no score",False,False
+bound_source,comparison_rows,source-backed constraint curve/table or explicitly noncurve anchor,True,anchor-only rows cannot become claim rows,False,False

@@ -1,0 +1,6 @@
+gate_id,claim,status,blocking_rows,is_evidence,keep_private,valid_for_claim,timestamp_utc
+CG2682_0_classification_written,coefficient targets are classified,PASS_NONCLAIM_CLASSIFICATION_ONLY,TC2682_4_source_prefactor;TC2682_6_verdict,false,true,false,2026-06-23T06:29:53.399542+00:00
+CG2682_1_source_prefactor_absence,Coeff_source-prefactor is absent/forbidden,FAIL_TARGET_ABSENCE_NOT_PARENT_SIGNED,NF2682_2_source_prefactor_target;TC2682_4_source_prefactor,false,true,false,2026-06-23T06:29:53.399545+00:00
+CG2682_2_countermodels,source-prefactor countermodels are eliminated,FAIL_COUNTERMODELS_ACTIVE,NF2682_3_scalar_extension;NF2682_4_pre_action_weight;FSP2682_0_cIhid;FSP2682_1_Delta_w_AB,false,true,false,2026-06-23T06:29:53.399548+00:00
+CG2682_3_finite_rows,finite source-prefactor rows can be scored,FAIL_MISSING_NUMERIC_OR_THEOREM_ZERO,FSP2682_0_cIhid;FSP2682_1_Delta_w_AB;FSP2682_4_total_envelope,false,true,false,2026-06-23T06:29:53.399550+00:00
+CG2682_4_local_GR,local GR/PPN can use normal form to silence source-prefactor couplings,CLAIM_BLOCKED,NF2682_7_verdict;CG2682_1_source_prefactor_absence;CG2682_2_countermodels;CG2682_3_finite_rows,false,true,false,2026-06-23T06:29:53.399553+00:00

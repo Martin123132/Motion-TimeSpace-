@@ -1,0 +1,4 @@
+route_id,input_target,route_formula,required_inputs,status,valid_for_claim,claim_allowed
+GBR1304_0_energy_to_L2_gradient,B_grad_sp,G2_m := int_D sum_i |nabla^i m nabla^i m| <= Z_m_min^-1 (|int_D m J_m| + |Phi_boundary| + retained nonpositive/zero-mode terms),Z_m_min;J_m_norm;boundary_flux_bound;domain_measure;zero_mode_rule,ROUTE_WRITTEN_NOT_EXECUTABLE,False,False
+GBR1304_1_L2_to_pointwise,B_grad_sp,"B_grad_sp <= C_reg(D,L_m) * G2_m or direct profile bound, if elliptic regularity/domain smoothness is supplied",regularity_constant;domain_geometry;operator_coefficients;source_norm_class,POINTWISE_LIFT_MISSING,False,False
+GBR1304_2_nohair_shortcut,B_grad_sp,"B_grad_sp=0 if operator owner, positive gap, source silence, boundary zero, and zero-mode removal all pass",full nohair premise gate,ZERO_SHORTCUT_BLOCKED_NOT_PARENT_SIGNED,False,False

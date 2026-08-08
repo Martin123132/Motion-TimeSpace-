@@ -1,0 +1,7 @@
+firewall_id,readout_case,verdict,reason,residual_if_fails,valid_for_claim
+RFW4521_0_pure_postprocess,R_post:Sol(S_parent)/G -> Data,ZERO_CONDITIONAL,absent from parent/effective action before variation,none if pure,False
+RFW4521_1_variation_before_readout,source current formed before readout/selector,ZERO_CONDITIONAL,post-current transfer coefficients are not source couplings,pre-action weights become retained branch,False
+RFW4521_2_reduced_action,"varied S_red[g,P_read] or S_eff with readout/cutoff",RETAINED,reduced action can produce real Euler/source terms,R_A^red,False
+RFW4521_3_worldtube_projector,field-dependent source worldtube/projector/support,RETAINED_OR_BOUND,delta(Pi J)=Pi delta J+(delta Pi)J,epsilon_chainmap_readout_abs,False
+RFW4521_4_calibration,GM/PPN/calibration feedback or material/clock sensitivity,RETAINED,calibration masks can be physical source standards,R_A^cal,False
+RFW4521_5_marker,material/species/source labels renamed as readout,RETAINED,hidden markers are not killed by postprocessing theorem,R_A^marker,False

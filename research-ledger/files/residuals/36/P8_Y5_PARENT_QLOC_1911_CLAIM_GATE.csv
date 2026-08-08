@@ -1,0 +1,5 @@
+gate_id,condition,current_status,source_anchor,gate_pass,valid_for_claim
+CG1911_0_exact_theorem,descent theorem proving C_X=0 is mathematically exact,PASS_CONDITIONAL_THEOREM_ONLY,CXZ1911_1_descent_theorem,False,False
+CG1911_1_parent_premises,all zero-theorem premises are parent-signed together,FAIL_PREMISES_UNSIGNED,P8_Y5_PARENT_QLOC_1911_ZERO_THEOREM_PREMISE_MATRIX_NONCLAIM.csv,False,False
+CG1911_2_finite_contract,finite C_X rows are filled if zero theorem fails,FAIL_FINITE_CX_CONTRACT_UNFILLED,P8_Y5_PARENT_QLOC_1911_FINITE_CX_CONTRACT_NONCLAIM.csv,False,False
+CG1911_3_claim,1911 supports WEP/local-GR material coefficient claim,CLAIM_BLOCKED,CG1911_0_exact_theorem through CG1911_2_finite_contract,False,False

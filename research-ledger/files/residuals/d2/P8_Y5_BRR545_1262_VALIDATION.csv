@@ -1,0 +1,13 @@
+check_id,check,status,details
+VAL1262_0_sources_exist,all cited local sources exist,PASS,8/8 sources exist
+VAL1262_1_needles_found,all cited local needles found,PASS,8/8 needles found
+VAL1262_2_minimal_assumptions,minimal assumption audit has every required clause,PASS,minimal_assumption_rows=5
+VAL1262_3_conditional_theorem,"theorem is exact conditional, not claimed",PASS,EXACT_CONDITIONAL_NOT_PARENT_DERIVED
+VAL1262_4_countermodels,legal countermodels are recorded,PASS,countermodel_rows=3
+VAL1262_5_claim_gates,all claim gates remain blocked,PASS,claim_gate_rows=3
+VAL1262_6_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1262_7_template_guard,prior-envelope template is docs-only and visibly incomplete,PASS,template=ZR1262_RAB_PRIOR_ENVELOPE_TEMPLATE_NONCLAIM.csv
+VAL1262_8_next_target_1263,next target is vertical-fibre null derivation,PASS,1263-Y5-R10-vertical-fibre-null-from-parent-presymplectic-degeneracy-or-RAB-prior-envelope-fill.md
+VAL1262_9_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1262_SOURCE_REGISTER.csv:8; P8_Y5_R10_1262_MINIMAL_ASSUMPTION_AUDIT.csv:5; P8_Y5_R10_1262_VERTICAL_NULL_THEOREM_CANDIDATE.csv:3; P8_Y5_R10_1262_CLOSURE_SMUGGLING_AUDIT.csv:4; P8_Y5_R10_1262_LEGAL_COUNTERMODEL_AUDIT.csv:3; P8_Y5_R10_1262_ZR_PRIOR_ENVELOPE_REQUIREMENTS.csv:5; P8_Y5_R10_1262_CLAIM_GATES.csv:3; P8_Y5_R10_1262_DECISION_LEDGER.csv:2; P8_Y5_R10_1262_NEXT_TARGET.csv:1; ZR1262_RAB_PRIOR_ENVELOPE_TEMPLATE_NONCLAIM.csv:1
+VAL1262_10_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1262_11_overall,overall 1262 validation,PASS,"1262 isolates the minimum vertical-null theorem route, rejects closure smuggling, and creates only a nonclaim finite-Z_R prior-envelope template"

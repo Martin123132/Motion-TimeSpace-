@@ -1,0 +1,12 @@
+check_id,description,passed,detail
+VAL3458_0_sources_exist,all source paths exist,True,15/15 source paths exist
+VAL3458_1_live_symbols_mapped,"Gamma_eff, K_hat, q_loc, P_loc and Delta_K are mapped",True,Gamma_eff;K_hat^{mu nu};q_loc^nu;P_loc;Delta_K^{mu nu}
+VAL3458_2_parent_action_candidate,response-doublet parent action candidate includes Hilbert Khat rule,True,PAC3458_0_minimal_response_doublet_parent;PAC3458_1_positive_auxiliary_parent;PAC3458_2_topological_boundary_parent
+VAL3458_3_contract_instantiated,all six PHK3457 clauses are instantiated or explicitly left open,True,PARTIAL_CONSTRUCTION;OPEN_FIELD_TRANSFORM_TABLE;DEFINITION_AVAILABLE_NOT_BACKWARD_MATCHED;REDUCED_TO_SOURCE_ZERO_AND_POSITIVITY;OPEN_BOUNDARY_FLUX;OPEN_PROJECTOR_DEFINITION
+VAL3458_4_residual_vector_concrete,"q_loc residual is concretized into J_E, J_B and Delta_K",True,RVI3458_0_instantiated_q_loc;RVI3458_1_doublet_field_current;RVI3458_2_boundary_current;RVI3458_3_khat_mismatch
+VAL3458_5_energy_identity_next,next derivation target is an energy identity with source/boundary bound,True,||Z|| <= ||J||/lambda_min + sqrt(|boundary_flux|/lambda_min) up to norm constants
+VAL3458_6_no_claims,all generated rows remain nonclaim,True,claim_allowed=false across generated rows
+VAL3458_7_csv_parse,generated CSV files parse cleanly,True,P8_Y5_R2FR_3458_SOURCE_REGISTER.csv:15;P8_Y5_R2FR_3458_LIVE_SYMBOL_MAP.csv:5;P8_Y5_R2FR_3458_PARENT_ACTION_CANDIDATE.csv:3;P8_Y5_R2FR_3458_CONTRACT_INSTANTIATION.csv:6;P8_Y5_R2FR_3458_RESIDUAL_VECTOR_AFTER_INSTANTIATION.csv:4;P8_Y5_R2FR_3458_ENERGY_IDENTITY_TARGET.csv:1;P8_Y5_R2FR_3458_DECISION_LEDGER.csv:1;P8_Y5_R2FR_3458_NEXT_TARGET.csv:1
+VAL3458_8_next_target_3459,next target is response-doublet energy identity,True,3459-Y5-R2FR-response-doublet-energy-identity-source-zero-or-q_loc-bound-under-AX1090.md
+VAL3458_9_formalization_untouched,formalization-workbench unchanged during this script,True,modified_count_since_start=0
+VAL3458_10_overall,3458 live action instantiation checkpoint is internally valid,True,PASS

@@ -1,0 +1,9 @@
+component_id,component,zero_condition,residual_if_not_zero,current_status,valid_for_claim
+Y5S3423_0_kappa_common,universal kappa/G common mode,kappa_0 is a parent constant fixed before readout,delta_Z ln kappa_MTS or source/species/range-labelled kappa,COMPATIBLE_BUT_NOT_PARENT_ADOPTED,False
+Y5S3423_1_Hilbert_source_measure,Hilbert source density and ell_J conversion,"T_H, J_H, M_H and PPN rho are all induced by the same S_matter[e_obs,psi]",delta_Z ln ell_J or shadow-source mismatch,UNSIGNED_SAME_SOURCE_MAP,False
+Y5S3423_2_Htau_PiM,Hamiltonian charge and Pi_M map,H_tau-H_ref equals the fixed Pi_M-projected Hilbert charge,epsilon_Htau_PiM + I_commutator,OPEN_FROM_1015_1016,False
+Y5S3423_3_worldtube_boundary,"worldtube, linking surfaces, boundary and reference terms","W_source=supp J_H[tau], surfaces homologous, B_zero_flux=Delta_symp=Delta_domain=0",epsilon_boundary_reference_domain,OPEN_BUT_NOW_LOCALIZED,False
+Y5S3423_4_v_action_ratio,local v action source/kinetic ratio,B_v/A_v=16 pi G_ref/c^4 in the same branch,delta_KC,TARGET_COEFFICIENTS_KNOWN_PARENT_RATIO_UNSIGNED,False
+Y5S3423_5_second_order_square,second-order source square and beta stability,B_source=A_source^2 and a_v=0 through O(U^2),delta_beta_source + kappa_v pieces,OPEN_NOT_PART_OF_FIRST_ORDER_Y5_ZERO,False
+Y5S3423_6_hidden_drift,"range, time, memory, species, frame or hidden source drift",no source labels survive quotient-even public readout,epsilon_drift_frame_species_memory,MUST_BE_EXCLUDED_BY_PARENT_ACTION_OR_BOUNDED,False
+Y5S3423_7_total,total Y5 source current,Y5S3423_0 through Y5S3423_6 theorem-zero in one parent branch,||J_Z_mu_Y5|| bounded by absolute no-cancellation sum,NOT_ZERO_FOR_CURRENT_MTS,False

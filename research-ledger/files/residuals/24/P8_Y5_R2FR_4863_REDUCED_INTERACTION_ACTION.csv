@@ -1,0 +1,13 @@
+row_id,equation,meaning,status,valid_for_claim,timestamp_utc
+INT4863_0_action,K=c1 I1+c2 I2+c3 I3-c4 I4,Einstein-aether kinetic invariant convention compatible with qV=c14,EXACT,False,2026-07-10T02:45:00+01:00
+INT4863_1_unit,u^0=sqrt(1+v^2),unit constraint solved before perturbative expansion,EXACT,False,2026-07-10T02:45:00+01:00
+INT4863_2_quadratic,K2=-c14 dot(v)^2+c1 partial_i(v_j)partial_i(v_j)+c2 theta^2+c3 partial_i(v_j)partial_j(v_i),complete local quadratic flow action,EXACT,False,2026-07-10T02:45:00+01:00
+INT4863_3_cubic,K3=2c2 theta(v.dot(dot(v)))+2c3 dot(v_i)v_k partial_i(v_k)-2c4 dot(v_i)v_j partial_j(v_i),complete local cubic flow action,EXACT,False,2026-07-10T02:45:00+01:00
+INT4863_4_cubic_boundary,K3 ~= 2c2 theta(v.dot(dot(v)))-c3 dot(theta)v^2-2c4 dot(v_i)v_j partial_j(v_i),spatial-boundary-equivalent compact cubic form,EXACT_UP_TO_BOUNDARY,False,2026-07-10T02:45:00+01:00
+INT4863_5_quartic,K4=(c123+c4)(v.dot(dot(v)))^2-c4 v^2 dot(v)^2-c1 sum_j(v.dot(partial_j v))^2-c4 abs((v.dot(grad))v)^2,complete local quartic flow action,EXACT,False,2026-07-10T02:45:00+01:00
+INT4863_6_decomposition,v_i=V_i+partial_i sigma; partial_i V_i=0,Helmholtz scalar-vector split,EXACT_LOCAL_PROJECTOR,False,2026-07-10T02:45:00+01:00
+INT4863_7_K2modes,K2=-q[dot(V)^2+abs(grad dot(sigma))^2]+c1 abs(grad V)^2+c123(Delta sigma)^2,diagonal fixed-public-metric scalar/vector quadratic action,EXACT_UP_TO_BOUNDARY,False,2026-07-10T02:45:00+01:00
+INT4863_8_K3modes,K3 ~= 2c2 Delta(sigma)(V+grad sigma).(dot(V)+grad dot(sigma))-c3 Delta dot(sigma) abs(V+grad sigma)^2-2c4[dot(V)+grad dot(sigma)]_i[V+grad sigma]_j partial_j[V+grad sigma]_i,complete scalar/vector cubic action in compact projected form,EXACT_UP_TO_BOUNDARY,False,2026-07-10T02:45:00+01:00
+INT4863_9_scalar,K3_S ~= (c14-c2) Delta dot(sigma) abs(grad sigma)^2,pure-scalar cubic collapses to one coefficient,EXACT_UP_TO_BOUNDARY,False,2026-07-10T02:45:00+01:00
+INT4863_10_vector,K3_V=-2c4 dot(V_i)V_j partial_j V_i,pure transverse-vector cubic,EXACT,False,2026-07-10T02:45:00+01:00
+INT4863_11_mixed,K3_mixed=K3[V+grad sigma]-K3_S-K3_V,all SSV and SVV vertices are retained rather than cancelled by hand,EXACT_DEFINITION,False,2026-07-10T02:45:00+01:00

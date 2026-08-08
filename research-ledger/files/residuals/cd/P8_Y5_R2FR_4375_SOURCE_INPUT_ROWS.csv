@@ -1,0 +1,5 @@
+input_id,needed_quantity,units,source_path_required,acceptance_rule,current_status,valid_for_claim
+IN4375_0_density_profile,rho_H(y) and any proposed rho_eff(y) on the same W_H,mass density or energy density/c^2,yes,"must state action/source owner and whether profile is Hilbert T00, topological representative, transition shell, or empirical matter model",MISSING_NUMERIC_PROFILE,False
+IN4375_1_common_mode_subtraction,<sigma>_rho = M_H^-1 int_W rho_H sigma dV,dimensionless,derived from same density profile,subtract common monopole before E_profile scoring,FORMULA_READY_INPUT_MISSING,False
+IN4375_2_support_geometry,source radius/support R and readout radius r,length,yes,must be fixed before scoring and paired with K_N(s),AVAILABLE_FOR_SOLAR_SYSTEM_EXAMPLES_FROM_4371,False
+IN4375_3_profile_moments,optional zero-monopole multipole moments M_L,mass*length^L,yes if used,may tighten bound but cannot replace source owner theorem,OPTIONAL_NOT_FILLED,False

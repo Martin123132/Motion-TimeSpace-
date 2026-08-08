@@ -1,0 +1,7 @@
+audit_id,requirement,status,evidence,accepts_real_fraction,valid_for_claim
+ACCEPT3257_0_schema_present,1233 component-fraction schema exists and parses,PASS_SCHEMA_PRESENT,D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\source-intake\mts_residuals\P8_Y5_R10_1233_COMPONENT_FRACTION_SCHEMA.csv,false,false
+ACCEPT3257_1_routes_present,TA6V and PtRh10 EM_Coulomb acquisition routes exist,PASS_ROUTE_PRESENT,ROUTE1328_TA6V_EM_Coulomb;ROUTE1328_PtRh10_EM_Coulomb,false,false
+ACCEPT3257_2_shape_proxy_present,numeric alloy Coulomb shape proxy exists for both materials,PASS_SHAPE_PRESENT,SHAPE3257_PtRh10;SHAPE3257_TA6V;SHAPE3257_TA6V_minus_PtRh10,false,false
+ACCEPT3257_3_claim_fraction_rejected,"fraction_value must be finite numeric with uncertainty, basis, and source",REJECTED_MISSING_SOURCE_BACKED_k_C_AND_UNCERTAINTY,CFI3257_PtRh10_EM_Coulomb_candidate;CFI3257_TA6V_EM_Coulomb_candidate,false,false
+ACCEPT3257_4_parent_alpha_map_unsigned,MTS parent EM/alpha map must turn Coulomb fraction into parent-owned response,BLOCKED_PARENT_ALPHA_MAP_UNSIGNED,1910 exact tensor contract remains nonclaim; 1328 routes remain external-basis-only,false,false
+ACCEPT3257_5_toy_runner_executes,toy shell runner evaluates finite positive G_J values without evidence promotion,PASS_TOY_DRYRUN_ONLY,TOYSHELL_OUT3257_PtRh10;TOYSHELL_OUT3257_TA6V,false,false

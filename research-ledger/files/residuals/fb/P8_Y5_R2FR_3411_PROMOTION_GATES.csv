@@ -1,0 +1,6 @@
+gate_id,gate,current_result,promotes_if,valid_for_claim
+PG3411_0_conditional_theorem,Ward theorem from metric-response stress is written exactly,PASS_CONDITIONAL_THEOREM,not a claim gate,False
+PG3411_1_symbol_match,current MTS Gamma_eff and K_hat satisfy the metric-response identity,FAIL_CURRENT_SYMBOL_MATCH,SMA3411_0 and SMA3411_1 become source-backed exact matches,False
+PG3411_2_Helmholtz_Euler,T_GK has action integrability and source-free compact local Euler closure,FAIL_NOT_CHECKED_OR_NOT_DERIVED,SMA3411_2 and SMA3411_3 pass,False
+PG3411_3_projector_boundary,P_loc and boundary improvements cannot leak residual force,OPEN,P_loc parent ownership and no-flux boundary theorem pass,False
+PG3411_4_q_loc_zero,q_loc is killed as a local-GR blocker,BLOCKED,"PG3411_1, PG3411_2 and PG3411_3 all pass",False

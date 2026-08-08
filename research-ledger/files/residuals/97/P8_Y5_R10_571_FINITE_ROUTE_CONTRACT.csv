@@ -1,0 +1,6 @@
+contract_id,object,mathematical_form,requirement,claim_status,valid_for_claim
+FRC571_0_quadratic_local_mode,local X quadratic action,S_X^(2)=int sqrt(-g)[-1/2 Z_X (nabla deltaX)^2 -1/2 M_X^2 deltaX^2 + deltaX J_X],"derive Z_X>0 and M_X^2>=0 from parent Hessian, or mark branch unstable/closure",unfilled,false
+FRC571_1_range_law,lambda_X,lambda_X=sqrt(Z_X/M_X^2),derive or scan only as nonclaim until parent mass gap exists,unfilled,false
+FRC571_2_alpha_law,alpha_X(lambda_X),alpha_X=K_X Qbar_XH(lambda_X) qbar_XT; K_X=s_X/(4*pi*Z_X*G_obs),"all three product factors must be sourced, bounded, or theorem-zero",symbolic_only,false
+FRC571_3_R10_bound_gate,R10 inequality,abs(K_X Qbar_XH(lambda_X) qbar_XT) <= alpha_bound(lambda_X),candidate curve may set private targets; live claim needs promoted source-backed curve,diagnostic_only,false
+FRC571_4_zero_return_gate,return to theorem-zero,alpha_X=0 only if qbar_XT=0 or Qbar_XH=0 or K_X=0 by parent identity,"no assumed plateau, no fitted cancellation, no universal-coupling shortcut",not_promoted,false

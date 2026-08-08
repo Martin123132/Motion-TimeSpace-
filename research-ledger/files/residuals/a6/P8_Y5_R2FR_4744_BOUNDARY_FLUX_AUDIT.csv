@@ -1,0 +1,6 @@
+checkpoint,audit_id,formula,meaning,status,valid_for_claim,timestamp_utc
+4744,BFA4744_0_green_identity,"int_W <D_adj m,n>-<m,D_adj^* n> = int_partialW <gamma m, B_n n>",The boundary form is explicit; it is not thrown away silently.,IDENTITY_SCHEMATIC,False,2026-07-08T00:14:10+00:00
+4744,BFA4744_1_dirichlet_flux,"gamma_boundary m=0 and gamma_boundary n=0 => B_adj[m,n]=0 for Dirichlet-type boundary forms",Dirichlet admissible multipliers kill the standard boundary flux.,CONDITIONAL_PASS,False,2026-07-08T00:14:10+00:00
+4744,BFA4744_2_derivative_boundary_warning,"if B_adj contains normal-derivative-only terms not multiplied by gamma m, H^1_0 is insufficient",Higher-derivative owner blocks may need H^2_0 or explicit normal-trace data.,WARNING_CARRY_CBOUNDARY,False,2026-07-08T00:14:10+00:00
+4744,BFA4744_3_safe_upgrade,M_adm_strong=H^2_0 or compact-support collar => gamma m=0 and gamma_nabla m=0,Strong admissible space kills both field and normal derivative boundary terms.,STRONG_ROUTE_CONDITIONAL,False,2026-07-08T00:14:10+00:00
+4744,BFA4744_4_result,C_boundary=0 only for Dirichlet-form or strong compact-support route; otherwise source C_boundary,Boundary silence is partly advanced but not overclaimed.,NONCLAIM_BOUNDARY_RESULT,False,2026-07-08T00:14:10+00:00

@@ -1,0 +1,5 @@
+checkpoint,row_id,definition,status,valid_for_claim,claim_allowed,timestamp_utc
+4639,XR4639_0_input_from_4638,Xi_tail := Xi_src_hidden + Xi_nonHilbert + Xi_boundary_history + Xi_transition_inner,INPUT_FROM_4638,False,False,2026-07-06T19:39:56.759405+00:00
+4639,XR4639_1_nonHilbert_zero_branch,"if Hperp=0 or S_A Hperp^A=0, and R_src_readout=0, then Xi_nonHilbert=0",CONDITIONAL_ZERO_ROUTE_IMPORTED,False,False,2026-07-06T19:39:56.759405+00:00
+4639,XR4639_2_reduced_tail_after_two_zeros,"if Xi_src_hidden=0 and Xi_nonHilbert=0, then Xi_tail := Xi_boundary_history + Xi_transition_inner",TWO_COMPONENT_REDUCTION_CONDITIONAL,False,False,2026-07-06T19:39:56.759405+00:00
+4639,XR4639_3_finite_gate,|Xi_src_hidden| + |Xi_nonHilbert| + |Xi_boundary_history| + |Xi_transition_inner| <= alpha_bound(lambda_mem),R10_GATE_RETAINS_NONCANCELLATION,False,False,2026-07-06T19:39:56.759405+00:00

@@ -1,0 +1,5 @@
+formula_id,quantity,formula,units_required,maps_to,valid_for_claim
+RB502_0_parent_integral,I_parent_radial_total,I_parent_radial_total = I_R_eq + I_B_zero + sum_channel I_extra_channel + I_commutator + I_anomaly,same units as M_eff_ref/c_M,epsilon_radial_Meff,false
+RB502_1_epsilon,epsilon_radial_Meff,epsilon_radial_Meff = c_M * I_parent_radial_total / M_eff_ref,dimensionless after normalization,P8_radial_source_hair; R4; R10; R11,false
+RB502_2_profile,dln_mu_dlnr,dln_mu_dlnr = Delta ln(mu_obs) / Delta ln(r) or sourced profile derivative,dimensionless,radial measured-GM profile and fifth-force/source-normalization rows,false
+RB502_3_no_cancellation,channelwise_gate,each nonzero channel must be below its own mapped row lock unless a theorem-zero certificate exists,row-specific,no hidden cancellation between open residuals,false

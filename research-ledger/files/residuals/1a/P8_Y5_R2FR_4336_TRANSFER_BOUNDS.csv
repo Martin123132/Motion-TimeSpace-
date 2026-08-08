@@ -1,0 +1,7 @@
+bound_id,quantity,bound_statement,source_basis,numeric_status,valid_for_claim
+BND4336_0_q_profile_source_bound,abs(q_loc),abs(q_loc)<=P_loc{L_cg^-2[abs(F1)M_tr/ell_tr+0.5abs(F2)M_tr^2/ell_tr]+C_K abs(b_mem)M_tr^2/ell_tr^3},63 local q_profile bound,formula_source_backed_inputs_not_derived,False
+BND4336_1_shell_SPPN,S_PPN,S_PPN~abs(q_loc) R_shell ell_tr^2/u_shell,63 shell-scale PPN residual estimate,order_bound_only,False
+BND4336_2_linear_danger,linear source branch,"S_PPN,linear~abs(F1)M_tr/u_shell; internal gate requires abs(F1)M_tr<=9.87e-14 at AU benchmark",64 first q-profile results,benchmark_pressure_not_parent_derivation,False
+BND4336_3_quadratic_survival,quadratic fixed-point branch,"if F1=0 then M_tr<=sqrt(S_gate u/[P_loc C_quad(e)]), with e=ell_tr/L_cg and C_quad=0.5abs(F2)re+C_Kabs(b_mem)r/e",65/66 extremum amplitude law,conditional_survival_envelope,False
+BND4336_4_PPN_residual_norm,R_PPN_open,||R_PPN_open||<=||P_PPN||||G_metric C_gK P_E||[||K_L||||G_Box||||S_q||+||S_perp||]||T_open||,4336 operator factorisation,operator_norm_envelope_no_constants,False
+BND4336_5_gamma_beta_envelope,delta_gamma and delta_beta,abs(delta_gamma)<=C_gamma C_metric abs(C_gK)(C_KL C_Box ||S_q T_open||+||Kperp||); abs(delta_beta)<=C_beta times same source envelope plus second-order normalization terms,59 PPN contract plus 61/63 transfer chain,coefficient_envelope_only,False

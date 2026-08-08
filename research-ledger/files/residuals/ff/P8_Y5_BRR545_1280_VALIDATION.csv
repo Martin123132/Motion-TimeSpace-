@@ -1,0 +1,15 @@
+check_id,check,status,details
+VAL1280_0_sources_exist,all cited local sources exist,PASS,10/10 sources exist
+VAL1280_1_needles_found,all cited local needles found,PASS,10/10 needles found
+VAL1280_2_q_loc_not_derived,q_loc parent-zero is not promoted,PASS,GKA1280_6_verdict=QLOC_ZERO_NOT_DERIVED
+VAL1280_3_metric_response,metric-response symbol match remains open/failed,PASS,MRM1280_3_verdict=NOT_MATCHED
+VAL1280_4_helmholtz,Helmholtz/Euler/double-zero route remains not closed,PASS,HED1280_4_verdict=NOT_CLOSED
+VAL1280_5_bound_contract,epsilon_GK_q_loc bound contract is retained as nonclaim,PASS,BND1280_4_row_status=RETAIN_NONCLAIM
+VAL1280_6_A511_impact,A511_3 remains blocked by epsilon_GK_q_loc,PASS,A511I1280_0_extra_silence=BLOCKED_BY_EPSILON_GK_QLOC
+VAL1280_7_finite_fallback_locked,finite branch has no source-backed accepted rows,PASS,docs_rows=11; raw_rows=0; accepted_rows=0; accepted_ready=0
+VAL1280_8_claim_gates_blocked,all claim gates remain blocked,PASS,claim_gate_rows=5
+VAL1280_9_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1280_10_next_target_1281,next target routes to metric-response symbol match or q_loc profile template,PASS,1281-Y5-R10-RAB-Gamma-Khat-metric-response-symbol-match-or-q_loc-profile-template.md
+VAL1280_11_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1280_SOURCE_REGISTER.csv:10; P8_Y5_R10_1280_GK_ACTION_EXISTENCE_GATE.csv:7; P8_Y5_R10_1280_METRIC_RESPONSE_SYMBOL_MATCH_AUDIT.csv:4; P8_Y5_R10_1280_HELMHOLTZ_EULER_DOUBLE_ZERO_AUDIT.csv:5; P8_Y5_R10_1280_EPSILON_GK_QLOC_BOUND_CONTRACT.csv:5; P8_Y5_R10_1280_A511_IMPACT.csv:2; P8_Y5_R10_1280_ZR_VALIDATOR_RESCAN.csv:11; P8_Y5_R10_1280_CLAIM_GATES.csv:5; P8_Y5_R10_1280_DECISION_LEDGER.csv:3; P8_Y5_R10_1280_NEXT_TARGET.csv:1
+VAL1280_12_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1280_13_overall,overall 1280 validation,PASS,"1280 tests Gamma/Khat/q_loc action-existence and metric-response gates, blocks q_loc parent-zero, retains epsilon_GK_q_loc with a strict bound contract, and routes to symbol matching/profile template next"

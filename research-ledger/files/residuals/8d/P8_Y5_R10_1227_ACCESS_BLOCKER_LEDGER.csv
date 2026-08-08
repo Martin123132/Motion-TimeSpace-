@@ -1,0 +1,5 @@
+blocker_id,blocker,evidence,impact,resolution,valid_for_claim,claim_allowed
+ABLOCK1227_0_local_tcp,LOCAL_MACHINE_CANNOT_CONNECT_TO_CMSM_HTTPS,NET1227_0_CMSM_tcp plus prior curl probe,cannot enumerate or download official packages from this run,"retry from browser/user network, VPN-free network, or user-assisted portal download",False,False
+ABLOCK1227_1_api_auth_unknown,REGARDS_API_AUTH_OR_PUBLIC_ROLE_UNKNOWN,REGARDS catalog API docs list REGARDS_OAUTH2 for catalog/search/download endpoints,"even with connectivity, API may require browser session/public-role token",inspect portal UI session/network calls or use public UI export/download if available,False,False
+ABLOCK1227_2_no_package_identifiers,NO_AIP_ID_CHECKSUM_OR_PACKAGE_URL,package map rows all MISSING_PACKAGE_NAME/MISSING_PACKAGE_URL,download route cannot be constructed safely,obtain package metadata before any download attempt,False,False
+ABLOCK1227_3_no_data_dictionary,NO_DATA_DICTIONARY_OR_COLUMN_SCHEMA,OBJ1226 required object metadata remains missing,parser/tau_WEP runner cannot interpret arrays even if files appear,download documentation/readme/data dictionary with the raw packages,False,False

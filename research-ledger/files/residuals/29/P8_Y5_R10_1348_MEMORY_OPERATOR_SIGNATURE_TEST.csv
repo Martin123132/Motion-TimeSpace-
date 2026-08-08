@@ -1,0 +1,7 @@
+test_id,claim_piece,mathematical_form,result,blocker,valid_for_claim,claim_allowed
+OPS1348_0_action_shape,memory action shape,L_m=-1/2 Z_m(X_B) nabla m nabla m - V_R(m;X_B) plus source/bath/boundary terms,SCAFFOLD_PRESENT,template/candidate not adopted as parent action,False,False
+OPS1348_1_variation,operator form,"L_m,loc delta m = -nabla_i(Z_m h^ij nabla_j delta m)+M_m^2 delta m plus sources",RELATIVE_VARIATION_WRITTEN,"field domain, boundary condition, source terms, and branch reduction are not parent-signed",False,False
+OPS1348_2_Z_positive,Z_mem>0,A_m^ij=Z_m h^ij and positive ellipticity needs Z_m>=Z_min>0,FORMULA_ONLY_VALUE_MISSING,Z_m_min and units are not sourced,False,False
+OPS1348_3_M2_gap,M2_mem positive gap,"M_m^2=partial_m^2 V_R(m_*;X_B), with zero-mode/topology removed",FORMULA_ONLY_VALUE_MISSING,"V_R functional form, stable local extremum, and zero-mode removal missing",False,False
+OPS1348_4_source_boundary,operator proves memory no-hair,positive operator only kills m if B_mem=C_mem=J_mem=Q_boundary_mem=0,INSUFFICIENT_WITHOUT_SOURCES,1343/1344 show curvature/source vertices and boundary charge must be killed separately,False,False
+OPS1348_5_verdict,Z_mem/M2_mem parent-owned,"parent action, signs, units, branch Hessian, source/boundary package all supplied",OPERATOR_SIGNATURE_NOT_PARENT_OWNED_CURRENT_CORPUS,owner scaffold present; values/signs/units and parent adoption missing,False,False

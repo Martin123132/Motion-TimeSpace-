@@ -1,0 +1,7 @@
+acq_id,field,needed_input,derivation_or_source_route,claim_if_missing,priority
+ACQ3246_0_boundary,boundary_id;surface_class,parent-owned local boundary/collar/worldtube label and support class,derive from local test-domain definition or source from existing local arena runner,cannot choose the boundary after seeing flux,1
+ACQ3246_1_frame,frame_u;normal_n,observed tetrad/frame u and outward normal n,derive from observed coframe/public metric branch; must match T_EM readout,Poynting flux is frame/surface ambiguous,2
+ACQ3246_2_flux_constants,C_flux;C_coll,operator constants mapping boundary/collar flux norms into Jtot units,dual norm of response test function and collar embedding constant,no numerical Jtot component can be computed,3
+ACQ3246_3_flux_norms,S_normal_norm_B;T_EM_un_norm_collar,EM stress flux norms on the selected boundary/collar,"quiet-static zero certificate, measured/source-backed EM field bounds, or finite arena model",component remains formula-only,4
+ACQ3246_4_response_norm,eA_norm_B;eA_norm_collar,response basis norm under the same Z normalization used by M_AB,M_AB/Z basis owner ledger and boundary trace inequality,cannot connect flux to response amplitude denominator,5
+ACQ3246_5_units,units;source_path,common action-density/Jtot units and source provenance,same unit convention as 3244/3245 amplitude transfer,row cannot be valid_for_claim,6

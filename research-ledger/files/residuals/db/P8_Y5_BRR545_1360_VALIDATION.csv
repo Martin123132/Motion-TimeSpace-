@@ -1,0 +1,11 @@
+check_id,check,status,details
+VAL1360_0_sources_exist,registered source paths exist and anchors are found,PASS,SRC1360_0_1359_doc=True/True;SRC1360_1_1359_next=True/True;SRC1360_2_1359_obstructions=True/True;SRC1360_3_1359_intake=True/True;SRC1360_4_domain_clause=True/True;SRC1360_5_domain_variation=True/True;SRC1360_6_domain_gate=True/True;SRC1360_7_1016_doc=True/True;SRC1360_8_1017_doc=True/True;SRC1360_9_942_doc=True/True;SRC1360_10_687_tau=True/True
+VAL1360_1_selector_certificate_not_promoted,selector locality/differentiability/no-stress certificate is not promoted,PASS,"local proxy exists only as an auxiliary template; nonlocal support, domain differentiability, stress, frame/tau, and M_H_ref remain open"
+VAL1360_2_stress_ledger_open,selector stress ledger has open bulk/boundary/topological/Hodge/frame/reference rows,PASS,stress_rows=6
+VAL1360_3_MHref_surface_intake_complete,M_H_ref and S1/S2 intake rows are present with missing fields explicit,PASS,intake_rows=8
+VAL1360_4_intake_nonclaim_missing,intake rows remain missing/blocked/nonclaim,PASS,no M_H_ref/surface row can score
+VAL1360_5_claim_gates_block_claim,"selector certificate, MHref, surface, Icommutator, and local-GR claims remain blocked",PASS,GATE1360_0_local_proxy_written=True;GATE1360_1_selector_certificate=False;GATE1360_2_MHref_source_ready=False;GATE1360_3_surface_intake_ready=False;GATE1360_4_Icommutator_score_ready=False;GATE1360_5_Newton_local_GR=False
+VAL1360_6_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false across generated rows
+VAL1360_7_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1360_8_next_target_1361,next target routes to observed coframe/tau/source-frame lock or MHref first row,PASS,1361-Y5-R10-RAB-observed-coframe-tau-source-frame-lock-or-MHref-first-row.md
+VAL1360_9_overall,overall 1360 validation,PASS,1360 blocks selector-locality certificate and stages M_H_ref/S1/S2 intake rows

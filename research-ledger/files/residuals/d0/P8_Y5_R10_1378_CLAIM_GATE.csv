@@ -1,0 +1,6 @@
+gate_id,gate,status,reason,valid_for_claim,claim_allowed
+GATE1378_0_fixed_L0_alone,fixed-L0 double-zero alone derives transition law,FAIL_PROFILE_UNDERDETERMINED,pure algebraic Euler equation has no derivative term and no transition width/profile.,False,False
+GATE1378_1_gradient_branch,conditional gradient relaxation law exists,PASS_CONDITIONAL_BRANCH_DERIVED,adding kappa_m gradient stiffness yields ell_tr=sqrt(kappa_m L0^2/F2) and exponential support.,False,False
+GATE1378_2_parent_signed,gradient branch is parent-signed by current corpus,BLOCKED_NOT_PARENT_SIGNED,"kappa_m, source coupling, boundary data, and m parent-field status are unsigned.",False,False
+GATE1378_3_shell,transition shell is exactly cancelled or bounded,BLOCKED_SHELL_CLOSURE_MISSING,802/803 anti-cheat ledgers still require exact projector identity or explicit shell bound.,False,False
+GATE1378_4_local_claim,local GR / PPN / R10 pass can be claimed,BLOCKED_NO_CLAIM,only a conditional transition law and closure input pack exist.,False,False

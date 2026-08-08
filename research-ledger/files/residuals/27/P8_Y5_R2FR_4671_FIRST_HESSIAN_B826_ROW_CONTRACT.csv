@@ -1,0 +1,9 @@
+checkpoint,row_id,route,required_object,definition,claim_grade_requirement,status,claim_allowed,valid_for_claim,timestamp_utc
+4671,FHR4671_0_symmetry_owner,THEOREM_ZERO,sigma_branch,parent map sigma: delta_m -> -delta_m or equivalent extremum owner,"derive from MTS parent variables, not impose as closure",MISSING_PARENT_SYMMETRY_OWNER,False,False,2026-07-07T16:59:54.467639+00:00
+4671,FHR4671_1_energy_minimum,THEOREM_ZERO,strict_minimum,V_eff'(m0)=0 and V_eff''+H_env>=M0^2>0,source parent Hessian or signed stability theorem,MISSING_STRICT_MINIMUM_SIGNATURE,False,False,2026-07-07T16:59:54.467639+00:00
+4671,FHR4671_2_kinetic_lower,THEOREM_ZERO,Z0,Z_mem>=Z0>0 over local branch/domain,source no-ghost lower bound and sign convention,MISSING_Z0,False,False,2026-07-07T16:59:54.467639+00:00
+4671,FHR4671_3_B826_root,THEOREM_ZERO,R_m=0,R_m(m_L;X_B)=0 with fixed X_B and m_L=m0,source branch lock or response extremum proof,MISSING_ROOT_LOCK,False,False,2026-07-07T16:59:54.467639+00:00
+4671,FHR4671_4_B826_value,FINITE_BOUND,"a_F,L_cg,R_m",|B_826| <= |a_F| L_cg^-2 |R_m|,numeric/source-backed values plus units and profile,MISSING_FINITE_VALUES,False,False,2026-07-07T16:59:54.467639+00:00
+4671,FHR4671_5_lambda_value,FINITE_BOUND,lambda_mem,sqrt(Z_mem/M2_mem),same-branch Z/M values; no R10 anchor substitution,MISSING_ZM_RATIO,False,False,2026-07-07T16:59:54.467639+00:00
+4671,FHR4671_6_no_cancellation,COMMON,absolute_sum_guard,B_mem_eff finite route uses abs component sum,componentwise zeros or componentwise source bounds only,GUARD_ACTIVE,False,False,2026-07-07T16:59:54.467639+00:00
+4671,FHR4671_7_claim_switch,COMMON,valid_for_claim,claim admission,true only when theorem-zero clauses are parent-signed or finite rows source-backed,FALSE_NOW,False,False,2026-07-07T16:59:54.467639+00:00

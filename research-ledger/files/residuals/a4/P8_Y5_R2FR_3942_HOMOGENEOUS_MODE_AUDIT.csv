@@ -1,0 +1,7 @@
+row_id,mode_symbol,mode_name,effect,required_control,classification,valid_for_claim,timestamp_utc
+HMA3942_0_constant,C_0,constant potential offset,fixed by clock normalization/reference; does not change GM,REFERENCE_CLOCK_GAUGE_REQUIRED,not_mass_kernel,False,2026-07-01T12:49:52+00:00
+HMA3942_1_monopole,C_1/r,free Schwarzschild/Newtonian monopole,changes boundary charge and measured GM if not source-owned,CORE_RKERNEL_MODE,mass_kernel,False,2026-07-01T12:49:52+00:00
+HMA3942_2_dipole,C_1m/r^2,homogeneous dipole/center choice,does not alter total mass but can affect frame/origin and orbital residuals,CENTER_OF_MASS_FRAME_OR_BOUND,multipole_residual,False,2026-07-01T12:49:52+00:00
+HMA3942_3_higher,"C_lm r^{-(l+1)}, l>=2",source-free multipole hair,does not alter monopole source mass but feeds PPN/orbital multipole bounds,MULTIPOLE_BOUND_OR_NO_HAIR,multipole_residual,False,2026-07-01T12:49:52+00:00
+HMA3942_4_radiative,retarded/incoming homogeneous wave,time-dependent source-free incoming/radiative mode,excluded only in local reset/no-incoming branch; otherwise a finite boundary row,NO_INCOMING_RESET_OR_WAVE_BOUND,radiative_residual,False,2026-07-01T12:49:52+00:00
+HMA3942_5_extra,X-sector homogeneous source shadow,non-EH/non-Hilbert homogeneous mode in the same boundary charge,must be zero/bounded before local-GR source coupling claim,EXTRA_SOURCE_SHADOW_VECTOR,extra_residual,False,2026-07-01T12:49:52+00:00

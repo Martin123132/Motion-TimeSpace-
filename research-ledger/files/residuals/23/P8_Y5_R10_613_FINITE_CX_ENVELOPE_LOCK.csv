@@ -1,0 +1,7 @@
+lock_id,condition,locked_response,numeric_pressure,claim_status,valid_for_claim
+FL613_0_selector_not_signed,ST613 selector theorem remains conditional only,do not set qbar_XT=0 in claim rows,finite C_X envelope remains active,finite_branch_locked_nonclaim,false
+FL613_1_full_curve_safe_envelope,want one C_X ceiling that clears every sampled review-candidate lambda,require |C_X| <= 3.154554554349e+02,private review-candidate curve only,pressure_only,false
+FL613_2_order_100,|C_X| around 100,survives all sampled review-candidate lambda points,passing_fraction=1.000000000000e+00,pressure_only,false
+FL613_3_order_1000,|C_X| around 1000,allowed only in lambda windows; not whole-curve safe,passing_fraction=9.230769230769e-01; intervals=31,pressure_only,false
+FL613_4_order_1e5,|C_X| around 1e5,branch becomes range-sensitive; tens-of-microns windows matter,passing_fraction=5.000000000000e-01; intervals=34,pressure_only,false
+FL613_5_public_claim_gate,R10 claim wanted,must supply claim-grade bound curve plus parent-signed lambda_X and C_X,current review rows and symbolic coefficients are explicitly invalid for claim,blocked,false

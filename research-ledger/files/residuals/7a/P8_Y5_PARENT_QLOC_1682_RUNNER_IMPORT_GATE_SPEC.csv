@@ -1,0 +1,6 @@
+branch_id,gate_id,gate_object,enforcement_rule,current_status,gate_pass,accepted_for_scoring,score_ready,valid_prediction_row,valid_for_claim,claim_allowed
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,GATE1682_0_module,Rsource_runner_gate_1682.py,downstream runners import evaluate_source_branch_gate or require_source_branch_gate,module written in scripts,False,False,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,GATE1682_1_inputs,1681 validation/result/arena matrices,gate reads current 1681 validator outputs before scoring,source-backed local files required,False,False,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,GATE1682_2_component_rule,all finite R_source rows must pass,component_rows_pass requires validator_pass=true for every 1681 result row,currently rejected,False,False,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,GATE1682_3_arena_rule,arena-specific rejection,WEP/R10/NEWTON_GM/R11 are refused if present in 1681 arena refusal matrix,currently all rejected,False,False,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,GATE1682_4_fail_closed,fail closed,"missing gate files, unknown arena, rejected components, or rejected arena return/raise failure",active,False,False,False,False,False,False

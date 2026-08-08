@@ -1,0 +1,6 @@
+arena,residual_bound,epsilon_eff,claim_gate,valid_for_claim
+PPN_local_GR,"|gamma-1|,|beta-1|,|alpha_PF| <= C_PPN epsilon_eff^2 + epsilon_composite_PPN",epsilon_bg T_grad(lambda_solar)+epsilon_boundary+epsilon_kernel_aniso,requires C_PPN numeric/source bound and epsilon_composite_PPN below PPN residual limits,false
+R10_short_range,|alpha_psi(lambda)| <= C_R10(lambda) epsilon_eff(lambda)^2 + epsilon_composite_R10(lambda),epsilon_bg T_grad(lambda)+epsilon_boundary+epsilon_kernel_aniso,"requires source-backed alpha_bound(lambda), C_R10(lambda), and noncontact finite-range tail split",false
+WEP,eta_AB <= C_WEP epsilon_eff^2 |Delta q_AB| + epsilon_composite_WEP,composition-weighted local gradient leak,requires material response Delta q_AB and anisotropic/composite tail bound,false
+clocks_EM_Poynting,|delta nu/nu| or EM stress residual <= C_clock epsilon_eff^2 + epsilon_EM_Poynting_tail,clock/field projection of the same public metric readout,requires Maxwell stress/Poynting source projection and clock observable normalization,false
+orbital_Newton,|delta a/a_Newton| <= C_orb epsilon_eff^2 + epsilon_composite_orb,compact-system local branch leak,requires Poisson/Newton normalization and compact-source C_orb bound,false

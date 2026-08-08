@@ -1,0 +1,17 @@
+check_id,description,status,detail,timestamp_utc
+VAL3879_0_sources,all cited source paths exist and needles are found,PASS,37/37 sources resolved,2026-07-01T07:09:52+00:00
+VAL3879_1_calibration_theorem,common G calibration theorem exists,PASS,calibration theorem present,2026-07-01T07:09:52+00:00
+VAL3879_2_G_policy,GR-style numeric G policy exists,PASS,numeric G policy present,2026-07-01T07:09:52+00:00
+VAL3879_3_no_backfill,orbital backfill guard exists,PASS,anti-circularity guard present,2026-07-01T07:09:52+00:00
+VAL3879_4_poisson_chain,Poisson calibrated algebra exists,PASS,"G_00^(1)=2 nabla^2 Phi/c^2, T_00=rho_H c^2, kappa0=8*pi*G0/c^4 => nabla^2 Phi=4*pi*G0 rho_H",2026-07-01T07:09:52+00:00
+VAL3879_5_drift_contract,b_Gcommon drift contract complete,PASS,"b_GM_anti_circular,b_Gcommon,b_MHref_lock,b_PPN_readout,b_PiM_JH_flux,b_common_drift,b_delta_kappa,delta_C",2026-07-01T07:09:52+00:00
+VAL3879_6_residual_update,R3818 total residual updated,PASS,R3818 total present,2026-07-01T07:09:52+00:00
+VAL3879_7_runner_update,active runner uses b_Gcommon,PASS,"|z_g_active,cal| <= b_Qstar + b_Noether + b_tail_rel + b_Gcommon",2026-07-01T07:09:52+00:00
+VAL3879_8_no_claim_gates,no claim gate allows a claim,PASS,claim_allowed=false,2026-07-01T07:09:52+00:00
+VAL3879_9_doc,markdown checkpoint exists with expected bottom line,PASS,3879-Y5-R2FR-calibrated-GN-common-tail-to-Newton-Poisson-chain.md,2026-07-01T07:09:52+00:00
+VAL3879_10_spine,spine updated with 3879 block,PASS,LOCAL_GR_COUPLING_SPINE_CURRENT_STATE.md,2026-07-01T07:09:52+00:00
+VAL3879_11_csv_parse,all generated CSV outputs parse,PASS,P8_Y5_R2FR_3879_SOURCE_REGISTER.csv:37; P8_Y5_R2FR_3879_COMMON_GN_CALIBRATION_THEOREM.csv:7; P8_Y5_R2FR_3879_NEWTON_POISSON_COMMON_TAIL_CHAIN.csv:6; P8_Y5_R2FR_3879_COMMON_DRIFT_VECTOR_CONTRACT.csv:8; P8_Y5_R2FR_3879_EH_POISSON_GM_RESIDUAL_UPDATE.csv:6; P8_Y5_R2FR_3879_ACTIVE_RUNNER_GN_CALIBRATION_UPDATE.csv:6; P8_Y5_R2FR_3879_CLAIM_GATES.csv:8; P8_Y5_R2FR_3879_NEXT_TARGET.csv:1; P8_Y5_R2FR_3879_STATUS.csv:1,2026-07-01T07:09:52+00:00
+VAL3879_12_formalization_untouched,no generated 3879 files appear in formalization-workbench,PASS,0 hits,2026-07-01T07:09:52+00:00
+VAL3879_13_no_pycache,scripts __pycache__ removed,PASS,0 pycache dirs,2026-07-01T07:09:52+00:00
+VAL3879_14_no_generated_claim,all analytical rows are nonclaim,PASS,valid_for_claim=false,2026-07-01T07:09:52+00:00
+VAL3879_15_next_target,next target attacks Geff derivative silence,PASS,3880 derivative silence,2026-07-01T07:09:52+00:00

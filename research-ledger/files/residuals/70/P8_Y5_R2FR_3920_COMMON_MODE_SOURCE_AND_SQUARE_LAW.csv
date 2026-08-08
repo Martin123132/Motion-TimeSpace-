@@ -1,0 +1,8 @@
+row_id,piece,formula_or_statement,meaning,status,valid_for_claim,timestamp_utc
+LAW3920_0_scalar_source,scalar common-mode source equation,"C_0 nabla^2 Xi_N = -kappa_R P00[R11], with C_0:=C00_Phi+C00_Psi and Phi_R11=Psi_R11=Xi_N","when P_TF=0, the remaining linear R11 common mode is the scalar 00 source",DERIVED_FROM_1944_SYMBOLIC,False,2026-07-01T10:53:05+00:00
+LAW3920_1_Xi_solution,formal Xi_N solution,Xi_N = -(kappa_R/C_0) nabla^{-2} P00[R11],turns common mode into a P00/source and boundary-domain problem,FORMAL_SOLUTION_INPUTS_MISSING,False,2026-07-01T10:53:05+00:00
+LAW3920_2_xi1,linear common-mode coefficient,xi_1 := Xi_N/U_N,constant xi_1 is a measured-GM calibration; gradients/time/source dependence are residuals,COEFFICIENT_DEFINED,False,2026-07-01T10:53:05+00:00
+LAW3920_3_beta_exact,exact beta common-mode identity,delta_beta_common = (1+xi_2)/(1+xi_1)^2 - 1 = (xi_2-2 xi_1-xi_1^2)/(1+xi_1)^2,the square-law error is not approximate; only the small-bound simplification is approximate,EXACT_ALGEBRAIC_IDENTITY,False,2026-07-01T10:53:05+00:00
+LAW3920_4_square_law,harmless square law,Delta_sq:=xi_2-2 xi_1-xi_1^2=0,equivalent to beta_common=0 for finite 1+xi_1,CONDITIONAL_THEOREM_ZERO,False,2026-07-01T10:53:05+00:00
+LAW3920_5_beta_bound,fallback beta bound,|Delta_sq| <= 7.8e-05*(1+xi_1)^2,"if square law is not derived, this is the no-cancellation beta gate",BOUND_INTERFACE_READY,False,2026-07-01T10:53:05+00:00
+LAW3920_6_EH_completion,EH completion route,"if the common mode is just U_obs=(1+xi_1)U_N inside one EH metric, the O(U^2) term forces xi_2=2xi_1+xi_1^2","this is the clean derivation route, not a fitted cancellation",CONDITIONAL_SQUARE_LAW_FROM_ONE_METRIC_EH,False,2026-07-01T10:53:05+00:00

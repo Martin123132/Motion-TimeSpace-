@@ -1,0 +1,5 @@
+decision_id,topic,result,reason,next_action
+DEC981_0_source_acquisition,finite coupling priors,source_backed_observational_anchors_acquired,"MICROSCOPE, LLR Gdot, pulsar alpha3_hat, and solar alpha3 sources are recorded",derive projection maps from observational anchors to MTS residual coefficients
+DEC981_1_alpha3_policy,alpha3,split_strong_and_weak_alpha3,4e-20 is strong-field alpha3_hat; weak-field solar-system alpha3 is much weaker but context-closer,do not use pulsar alpha3_hat as local PPN prior without a projection argument
+DEC981_2_Gdot_policy,Gdot,local_anchor_relabel_needed,"417's 9.6e-15 yr^-1 matches the LLR uncertainty scale, not a full conservative absolute envelope",store both central value and chosen envelope convention before any scoring
+DEC981_3_best_next,next checkpoint,projection_matrix_or_screening_runner,"we now have source anchors; the blocker is mapping them into b_kappa, K_boundary_alpha3, and local residual vector components",write 982 coupling-bound projection matrix skeleton and nonclaim screening runner

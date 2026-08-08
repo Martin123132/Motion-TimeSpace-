@@ -1,0 +1,6 @@
+branch_id,run_id,case,runner_decision,reason,accepted_for_scoring,score_ready,valid_for_claim,claim_allowed
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,JBR1655_0_nabla_only,nabla_Ploc row without M_H_ref,REFUSE,cannot normalize projector/source leakage without denominator,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,JBR1655_1_Icomm_only,I_commutator row without M_H_ref,REFUSE,commutator integral is not dimensionless/scoreable without same-frame denominator,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,JBR1655_2_MHref_only,M_H_ref row without numerator rows,REFUSE_LOCAL_SCORING,denominator alone does not prove local-GR recovery,False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,JBR1655_3_joined_no_cancellation,nabla_Ploc + I_commutator + B_P_flux + M_H_ref,FUTURE_ACCEPTABLE_ROUTE,"requires sourced units, coefficients, no-cancellation vector, and valid_for_claim true on every component",False,False,False,False
+MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,JBR1655_4_current_state,current 1655 rows,REFUSE_SCORING,all candidates remain missing numeric/source fields,False,False,False,False

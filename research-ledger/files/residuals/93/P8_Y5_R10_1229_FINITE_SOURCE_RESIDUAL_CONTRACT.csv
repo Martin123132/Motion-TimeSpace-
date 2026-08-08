@@ -1,0 +1,7 @@
+residual_id,quantity,contract,arena,current_status,required_to_score,valid_for_claim,claim_allowed
+FR1229_0_delta_w,delta w_A := w_A-w_ref,dimensionless species/source residual after removing one common G_N-absorbable factor,all local source-coupling tests,MISSING_NUMERIC_PRIOR_OR_THEOREM_ZERO,parent action-scale theorem or sourced finite prior width,False,False
+FR1229_1_Tres,T_res^{mu nu}=sum_A delta w_A T_A^{mu nu},"source-side stress residual that must vanish, be exchanged with a derived field current, or be bounded",GR/Newton/PPN,SYMBOLIC_ONLY,source composition/profile and parent operator basis,False,False
+FR1229_2_qsource,q_source^nu=P_loc nabla_mu T_res^{mu nu}+boundary/projector terms,local conservation/covariance residual vector,local GR branch,DERIVED_AS_REQUIRED_OBJECT_NOT_ZERO,"Noether descent, boundary silence, arena projection",False,False
+FR1229_3_WEP_product,abs(Delta_w_TiPt*tau_WEP) <= 2.8e-15,MICROSCOPE source-weight product bound if theorem-zero fails,WEP/R10,NOT_SCOREABLE_DATA_PENDING,Delta_w_TiPt numeric prior; tau_WEP official projection,False,False
+FR1229_4_PPN_product,abs(delta w_source*tau_PPN) <= B_PPN,"PPN/local metric residual product, to be filled only with sourced arena projection",PPN,PLACEHOLDER_CONTRACT_ONLY,tau_PPN projection; PPN bound source; local metric map,False,False
+FR1229_5_clock_orbital_product,abs(delta w_source*tau_clock_or_orbital) <= B_clock_or_orbital,clock/orbital source-coupling residual product,clocks/orbital,PLACEHOLDER_CONTRACT_ONLY,arena kernel; source profile; published bound,False,False

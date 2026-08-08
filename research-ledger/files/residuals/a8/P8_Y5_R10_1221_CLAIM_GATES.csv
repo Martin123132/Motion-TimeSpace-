@@ -1,0 +1,7 @@
+gate_id,gate,status,reason,valid_for_claim,claim_allowed
+GATE1221_0_sources,source path and needle audit,PASS,all local sources used by 1221 are traceable,False,False
+GATE1221_1_closure_register,finite closure register imported,PASS,five 1220 closure rows plus source-weight auxiliary row are represented,False,False
+GATE1221_2_parent_primitive,new parent primitive source found,BLOCKED,PESC1221 rows retain NOT_FOUND/UNSIGNED/COUNTEREXAMPLE_ACTIVE status,False,False
+GATE1221_3_source_acquisition,finite coefficient/source/readout inputs acquired,BLOCKED,"ACQ1221 rows are schemas with missing inputs, not sourced values",False,False
+GATE1221_4_runner_claim,runner rows scoreable for claim,BLOCKED,RUN1221 rows are schema-valid but score_ready=false and valid_for_claim=false,False,False
+GATE1221_5_local_GR_WEP_R10,local GR/WEP/R10 claim permission,BLOCKED,scorepack rows are private nonclaim plumbing only,False,False

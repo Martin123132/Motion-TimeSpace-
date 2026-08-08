@@ -1,0 +1,19 @@
+check_id,check,status,detail,timestamp_utc
+VAL3829_0_sources,all cited source paths exist and needles are found,PASS,9/9 sources resolved,2026-07-01T01:57:46+00:00
+VAL3829_1_coefficients,"C_t, C_s, B_t, S_slip, and S_beta are all represented",PASS,scalar coefficient tokens present,2026-07-01T01:57:46+00:00
+VAL3829_2_gamma_beta_bounds,gamma and beta coefficient-bound rows exist,PASS,4 bound rows,2026-07-01T01:57:46+00:00
+VAL3829_3_nonclaim,"all scalar owner, theorem, bound, residual, and gate rows remain nonclaim",PASS,valid_for_claim/claim_allowed false throughout,2026-07-01T01:57:46+00:00
+VAL3829_4_gamma_blocked_by_slip,gamma lock is reduced to S_slip and remains blocked,PASS,gamma gate blocks on S_slip,2026-07-01T01:57:46+00:00
+VAL3829_5_beta_blocked_by_vertex,beta lock is reduced to S_beta and remains blocked,PASS,beta gate blocks on S_beta,2026-07-01T01:57:46+00:00
+VAL3829_6_parse_sources,sources CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3829_SOURCE_REGISTER.csv rows=9,2026-07-01T01:57:46+00:00
+VAL3829_6_parse_coefficient_owner,coefficient_owner CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3829_SCALAR_COEFFICIENT_OWNER_MAP.csv rows=5,2026-07-01T01:57:46+00:00
+VAL3829_6_parse_lock_theorem,lock_theorem CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3829_SCALAR_LOCK_CONDITIONAL_THEOREM.csv rows=4,2026-07-01T01:57:46+00:00
+VAL3829_6_parse_bound_rows,bound_rows CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3829_GAMMA_BETA_COEFFICIENT_BOUND_ROWS.csv rows=4,2026-07-01T01:57:46+00:00
+VAL3829_6_parse_residual_budget,residual_budget CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3829_SCALAR_RESIDUAL_BUDGET.csv rows=5,2026-07-01T01:57:46+00:00
+VAL3829_6_parse_gates,gates CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3829_CLAIM_GATES.csv rows=5,2026-07-01T01:57:46+00:00
+VAL3829_6_parse_decisions,decisions CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3829_DECISION_ROWS.csv rows=3,2026-07-01T01:57:46+00:00
+VAL3829_6_parse_next,next CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3829_NEXT_TARGET.csv rows=1,2026-07-01T01:57:46+00:00
+VAL3829_6_parse_status,status CSV parses cleanly,PASS,source-intake\mts_residuals\P8_Y5_R2FR_3829_STATUS.csv rows=1,2026-07-01T01:57:46+00:00
+VAL3829_7_doc,markdown checkpoint document exists,PASS,3829-Y5-R2FR-scalar-readout-lock-Ct-Cs-Bt-owner-or-bound-fill.md,2026-07-01T01:57:46+00:00
+VAL3829_8_formalization_clean,formalization-workbench has no 3829 files,PASS,no 3829 file hits under formalization-workbench,2026-07-01T01:57:46+00:00
+VAL3829_9_pycache_removed,scripts __pycache__ removed,PASS,no __pycache__ directories,2026-07-01T01:57:46+00:00

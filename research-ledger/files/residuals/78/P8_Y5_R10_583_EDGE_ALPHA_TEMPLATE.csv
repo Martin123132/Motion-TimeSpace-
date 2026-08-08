@@ -1,0 +1,4 @@
+template_id,branch_id,lambda_value,alpha_predicted,required_bound,source_terms,valid_for_claim,notes
+EAT583_0_edge_alpha,MTS_X_edge_residual_branch,MISSING_PARENT_EDGE_RANGE_OR_ENVELOPE,K_edge(lambda)*Qbar_edge_XH(lambda)*qbar_XT,alpha_bound(lambda),Q_edge^H;epsilon_PiM_X;qbar_XT;K_boundary_if_dynamic,false,edge residual only; do not write to live claim curve until numeric/source-backed
+EAT583_1_no_pole_success_row,MTS_parent_momentum_map_no_pole,not_applicable,0 by parent momentum-map owner plus Q_boundary=0,not_needed_after_certificate,owner certificate,false,"certificate unfilled, so not claimable"
+EAT583_2_bulk_plus_edge_fallback,MTS_X_bulk_and_edge_residual_branch,lambda_X or edge envelope support,K_X*(Qbar_bulk_XH(lambda)+Qbar_edge_XH(lambda))*qbar_XT,alpha_bound(lambda),bulk source;edge source;projector leak;test charge,false,fallback if no-pole fails and physical/edge exchange remains

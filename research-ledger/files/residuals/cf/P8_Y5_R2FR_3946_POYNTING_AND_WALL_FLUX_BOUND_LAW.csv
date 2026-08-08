@@ -1,0 +1,7 @@
+row_id,symbol,formula,current_value,units,exit_requirement,score_ready,claim_allowed,valid_for_claim,timestamp_utc
+FLX3946_0_wall,epsilon_wall,|int_wall J_tau^a s_a dA dt|/E_pos,MISSING_TOTAL_DOMAIN_WALL_FLUX_BOUND,dimensionless,zero for closed stationary wall or finite wall-flux bound,False,False,False,2026-07-01T13:18:27+00:00
+FLX3946_1_Poynting,epsilon_Poynting_flux,|int_wall S_EM dot dA dt|/E_pos,MISSING_POYNTING_FLUX_BOUND,dimensionless_or_rate,zero normal Poynting flux or measured/modelled bound,False,False,False,2026-07-01T13:18:27+00:00
+FLX3946_2_EM_tail,epsilon_EM_tail,E_EM_tail_unassigned/E_pos,MISSING_EM_TAIL_ENERGY_MODEL_OR_BOUND,dimensionless,include tail in source or bound exterior field energy,False,False,False,2026-07-01T13:18:27+00:00
+FLX3946_3_Ward,epsilon_Ward,|int_Omega R_Ward^b tau_b dV|/E_pos,MISSING_PARENT_WARD_RESIDUAL_BOUND,dimensionless,parent Bianchi/Ward zero or finite residual,False,False,False,2026-07-01T13:18:27+00:00
+FLX3946_4_tau,epsilon_tau_stationarity,|int_Omega T_total^{ab} nabla_(a tau_b) dV|/E_pos,MISSING_TAU_STATIONARITY_BOUND,dimensionless,Killing/stationary tau or finite local-frame correction,False,False,False,2026-07-01T13:18:27+00:00
+FLX3946_5_total,epsilon_closed,epsilon_wall + epsilon_Poynting_flux + epsilon_EM_tail + epsilon_Ward + epsilon_tau_stationarity,COMPONENT_VALUES_MISSING,dimensionless,closed-domain if zero; bounded-domain if finite and small,False,False,False,2026-07-01T13:18:27+00:00

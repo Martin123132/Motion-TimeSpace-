@@ -1,0 +1,7 @@
+chain_id,step,formula,meaning,status,valid_for_claim,timestamp_utc
+NPC3879_0_EH_coefficient,EH coefficient,S_EH=(c^4/16*pi*G0) int sqrt(-g_obs) R[g_obs],single calibrated coefficient after common-tail anchor,EXACT_IF_PARENT_EH_OWNER_SIGNED,False,2026-07-01T07:09:52+00:00
+NPC3879_1_Hilbert_source,same Hilbert source,T_munu=-(2/sqrt(-g_obs)) delta S_matter/delta g_obs^munu and T_00=rho_H c^2,source density is not orbital GM and not a post-readout rescale,CONDITIONAL_SOURCE_OWNER_REQUIRED,False,2026-07-01T07:09:52+00:00
+NPC3879_2_weak_field,linearized 00 equation,"G_00^(1)=2 nabla^2 Phi/c^2, T_00=rho_H c^2, kappa0=8*pi*G0/c^4 => nabla^2 Phi=4*pi*G0 rho_H",Newton/Poisson coefficient follows from EH coefficient and same source,EXACT_CONDITIONAL_WEAK_FIELD_ALGEBRA,False,2026-07-01T07:09:52+00:00
+NPC3879_3_common_tail_residual,common tail residual Poisson form,nabla^2 Phi = 4*pi*G0 rho_H + S_EH + S_source + S_boundary + S_domain + S_nonEH + S_readout + 4*pi*G0 rho_H delta_C,drifting common tail enters as delta_C source-normalization residual,FINITE_RESIDUAL_FORM,False,2026-07-01T07:09:52+00:00
+NPC3879_4_Gauss_monopole,Gauss exterior,oint grad Phi.dS = 4*pi*G0 M_H_ref + residual_flux; Phi=-G0 M_H_ref/r + deltaPhi_res,inverse-square law needs compact source-free exterior and same M_H_ref,CONDITIONAL_GAUSS_TEMPLATE,False,2026-07-01T07:09:52+00:00
+NPC3879_5_scope_guard,not full local GR,"First-order Newton/Poisson calibration does not imply gamma=1, beta=1, alpha_i=0, xi=0.",PPN scope guard,NO_LOCAL_GR_PROMOTION,False,2026-07-01T07:09:52+00:00

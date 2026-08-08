@@ -1,0 +1,18 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1220_0_sources_exist,all cited local sources exist,PASS,20/20 sources exist,False,False
+VAL1220_1_needles_found,all cited source needles found,PASS,20/20 needles found,False,False
+VAL1220_2_signature_not_derived,signature certificate is not overclaimed,PASS,PTOL1220_7_verdict=PARENT_TYPED_OBJECT_LANGUAGE_SIGNATURE_NOT_DERIVED,False,False
+VAL1220_3_no_all_in_one,no all-in-one parent certificate exists,PASS,COV1220_5_all_in_one=NO_PARENT_SIGNATURE_CERTIFICATE,False,False
+VAL1220_4_conditionals_not_promoted,conditional theorems are not promoted,PASS,IFSIG1220_4_current_verdict=NOT_PROMOTED,False,False
+VAL1220_5_route_demoted,no-hidden-visible route demoted,PASS,DEM1220_0_route_status records demotion,False,False
+VAL1220_6_finite_register_created,finite closure register created,PASS,FCCR1220_0_alpha; FCCR1220_1_surface; FCCR1220_2_common_norm; FCCR1220_3_tail; FCCR1220_4_readout,False,False
+VAL1220_7_counterexamples_active,counterexamples remain active,PASS,CELOCK1220_0_hidden_scalar; CELOCK1220_1_alpha_F2; CELOCK1220_2_source_weight; CELOCK1220_3_readout,False,False
+VAL1220_8_thresholds_positive,carried numeric thresholds are positive,PASS,FCCR1220_0_alpha=8.320244933243531978e-10; FCCR1220_1_surface=6.987501646143863402e-11; FCCR1220_2_common_norm=6.446142229433907306e-11,False,False
+VAL1220_9_missing_rows_nonclaim,no MISSING row is valid for claim,PASS,tail/readout missing rows remain nonclaim,False,False
+VAL1220_10_runner_refuses,runner stub refuses missing product,PASS,valid_prediction_rows=0 and claim_allowed=false,False,False
+VAL1220_11_claim_locks_blocked,claim locks remain blocked,PASS,"signature, no-hidden-visible, counterexamples, finite closure, and local-GR gates blocked",False,False
+VAL1220_12_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout,False,False
+VAL1220_13_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1220_SOURCE_REGISTER.csv:20; P8_Y5_R10_1220_PARENT_TYPED_SIGNATURE_ATTEMPT.csv:8; P8_Y5_R10_1220_SIGNATURE_CLAUSE_COVERAGE.csv:6; P8_Y5_R10_1220_IF_SIGNED_THEOREM_PACK.csv:5; P8_Y5_R10_1220_NO_HIDDEN_VISIBLE_ROUTE_DEMOTION.csv:3; P8_Y5_R10_1220_FINITE_COUPLING_CLOSURE_REGISTER.csv:5; P8_Y5_R10_1220_COUNTEREXAMPLE_LOCK_UPDATE.csv:4; P8_Y5_R10_1220_FEED_UPDATE.csv:3; P8_Y5_R10_1220_PRODUCT_RUNNER_STUB.csv:1; P8_Y5_R10_1220_DECISION_LEDGER.csv:3; P8_Y5_R10_1220_CLAIM_GATES.csv:6; P8_Y5_R10_1220_NEXT_TARGET.csv:1,False,False
+VAL1220_14_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_after_run_start_count=0,False,False
+VAL1220_15_next_target,next target is staged,PASS,1221-Y5-R10-finite-coupling-closure-scorepack-or-parent-primitive-source.md,False,False
+VAL1220_16_overall,overall 1220 validation,PASS,"1220 parent typed signature pack is reproducible, nonclaim, and finite-closure-demoted",False,False

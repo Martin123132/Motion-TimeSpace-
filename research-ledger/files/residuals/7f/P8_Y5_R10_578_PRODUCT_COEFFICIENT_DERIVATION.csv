@@ -1,0 +1,7 @@
+factor_id,factor,derived_form,meaning,status,zero_or_suppression_route,valid_for_claim
+PCD578_0_KX,K_X,K_X=s_X/(4*pi*Z_X*G_obs) after chosen X normalization,kinetic normalization and sign convention prefactor,conditional_prefactor_derived_numeric_ZX_missing,"large Z_X, canonical normalization, or parent source normalization can suppress K_X",false
+PCD578_1_Qbar_XH,Qbar_XH(lambda_X),Qbar_XH=Pi_M^H[Q_X^H(lambda_X)]/M_H,projected source charge per measured source mass,not_parent_derived,"source neutrality, screening, boundary no-flux, or Hamiltonian projector orthogonality",false
+PCD578_2_qbar_XT,qbar_XT,qbar_XT=q_X^T/m_T=-m_T^-1 delta S_T/dX,ordinary test-body charge per inertial mass,retained_after_576,"trivial MTS action on matter constants, selector-blind matter, or small finite matter coupling",false
+PCD578_3_lambda_X,lambda_X,lambda_X=sqrt(Z_X/M_X^2),range selecting the R10 bound ordinate,conditional_law_derived_numeric_Hessian_missing,large M_X^2/Z_X gives short range; no fifth-force if source/test charge zero,false
+PCD578_4_alpha_abs_gate,abs(alpha_X),abs(alpha_X)=abs(K_X Qbar_XH(lambda_X) qbar_XT),R10 comparison magnitude,gate_locked,sign cannot remove magnitude bound,false
+PCD578_5_claim_evidence,alpha_bound(lambda),external R10 curve ordinate at derived lambda_X,empirical comparison wall,review_candidate_nonclaim,claim needs official/supplemental or QA-promoted curve rows,false

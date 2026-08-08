@@ -1,0 +1,7 @@
+timestamp_utc,branch_id,checkpoint_id,valid_for_claim,claim_allowed,gate_id,claim,gate_status,reason,gate_pass
+2026-06-22T07:40:37.232995+00:00,MTS_R2FR_GK_STRESS_BOUND_RUNNER_DRY_RUN_AND_PLACEHOLDER_REJECTION_2474,2474,False,False,GATE2474_0_dry_run,Dry-run calculator executes.,PASS,results rows written,True
+2026-06-22T07:40:37.233010+00:00,MTS_R2FR_GK_STRESS_BOUND_RUNNER_DRY_RUN_AND_PLACEHOLDER_REJECTION_2474,2474,False,False,GATE2474_1_placeholder_rejection,Placeholder/missing rows are rejected.,PASS,5 rejection rows written,True
+2026-06-22T07:40:37.233458+00:00,MTS_R2FR_GK_STRESS_BOUND_RUNNER_DRY_RUN_AND_PLACEHOLDER_REJECTION_2474,2474,False,False,GATE2474_2_toy_arithmetic,Toy numeric rows can compute but remain nonclaim.,PASS,computed rows have claim_allowed=false,True
+2026-06-22T07:40:37.233486+00:00,MTS_R2FR_GK_STRESS_BOUND_RUNNER_DRY_RUN_AND_PLACEHOLDER_REJECTION_2474,2474,False,False,GATE2474_3_claim_rows,Any current row can support a local-test claim.,BLOCKED,all rows remain valid_for_claim=false or have missing inputs,False
+2026-06-22T07:40:37.233507+00:00,MTS_R2FR_GK_STRESS_BOUND_RUNNER_DRY_RUN_AND_PLACEHOLDER_REJECTION_2474,2474,False,False,GATE2474_4_local_GR,local GR/PPN branch passes.,BLOCKED,stress-bound dry-run is compatibility plumbing only,False
+2026-06-22T07:40:37.233594+00:00,MTS_R2FR_GK_STRESS_BOUND_RUNNER_DRY_RUN_AND_PLACEHOLDER_REJECTION_2474,2474,False,False,GATE2474_5_no_GitHub,No public/GitHub update.,PASS_GUARDRAIL,private dry-run only,True

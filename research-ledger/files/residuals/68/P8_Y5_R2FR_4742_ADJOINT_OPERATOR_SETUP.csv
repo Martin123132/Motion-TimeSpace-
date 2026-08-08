@@ -1,0 +1,7 @@
+checkpoint,operator_id,formula,meaning,status,valid_for_claim,timestamp_utc
+4742,OP4742_0_hilbert_space,"H_m = L2(W_loc,sqrt|g|; Lambda*T*W plus scalar plus tensor multiplier bundle)",Defines the multiplier fields as elements of a local Hilbert space on the fixed collar.,DEFINITION,False,2026-07-08T00:05:07+00:00
+4742,OP4742_1_domain,Dom(D_adj)=H1_m(W_loc) with parent-fixed boundary trace and quotient gauge projection,"This is the exact place where boundary data enters the proof; if the parent cannot sign it, the proof remains conditional.",DOMAIN_CONDITIONAL,False,2026-07-08T00:05:07+00:00
+4742,OP4742_2_operator,"D_adj := A_TFRI^dagger acting on m=(lambda,eta,rho,xi,chi)",The homogeneous multiplier equations are written as D_adj m=0.,OPERATOR_DEFINED_FROM_4741,False,2026-07-08T00:05:07+00:00
+4742,OP4742_3_laplacian,L_adj := D_adj^* D_adj with inherited boundary/domain conditions,The positivity problem becomes a spectral problem for a nonnegative adjoint Laplacian.,SPECTRAL_REDUCTION,False,2026-07-08T00:05:07+00:00
+4742,OP4742_4_kernel_projector,Pi_0 := orthogonal projector onto ker(D_adj),Zero modes are not ignored; they are isolated as a projector that must be killed or bounded.,KERNEL_EXPLICIT,False,2026-07-08T00:05:07+00:00
+4742,OP4742_5_spectral_gap,lambda_1^adj := inf spec(L_adj restricted to (ker D_adj)^perp),"For a fixed elliptic collar/domain with compact resolvent, lambda_1^adj>0 is the desired c_adj.",GAP_CONDITIONAL,False,2026-07-08T00:05:07+00:00

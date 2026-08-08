@@ -1,0 +1,6 @@
+bound_id,symbol,bound_formula,required_inputs,current_status,valid_for_claim
+BND3383_0_Cmetric,C_metric,C_metric <= P_PPN^2 G_fix^2 W_src^2 D_readout^2 S_band^2 H_band(lambda) N_source,"P_PPN,G_fix,W_src,D_readout,S_band,H_band,N_source,source_file",FORMULA_READY_NUMERIC_MISSING,false
+BND3383_1_RGamma,R_Gamma_const_or_proxy,|R_Gamma_const_or_proxy| < allocated_B_PPN_Gamma,"Gamma local branch, constant/proxy certificate, allocated PPN budget",PARTIAL_ZERO_FLOOR_NUMERIC_OR_CERTIFICATE_MISSING,false
+BND3383_2_transfer,R_transfer_tail,(|R_eq_integral|+|I_commutator|+|B_zero_flux|)/|M_H_ref| + |epsilon_projector_stress|,"R_eq_integral,I_commutator,B_zero_flux,M_H_ref,epsilon_projector_stress,source_file",SCHEMA_READY_NUMERIC_MISSING,false
+BND3383_3_nonEH,R_nonEH_tail,"|R_nonEH[W,S]|/|M_H_ref| or PPN-projected operator norm","operator family, coefficient, source support, boundary flux, PPN projection, source_file",CLASSIFICATION_READY_NUMERIC_MISSING,false
+BND3383_4_bianchi,epsilon_Bianchi_exchange,||nabla_mu K_MTS_IR^munu - Q_exchange^nu||_PPN,"local exchange current, conservation law, PPN component map, source_file",CONSERVATION_MAP_MISSING,false

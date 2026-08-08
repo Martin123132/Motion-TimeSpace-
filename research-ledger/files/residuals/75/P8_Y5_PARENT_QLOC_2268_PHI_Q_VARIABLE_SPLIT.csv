@@ -1,0 +1,5 @@
+split_id,object,formula,result,status,valid_for_claim
+PQS2268_0_definitions,local static radial metric block,"A=T^2, B=S, q:=R_AB=ln(AB), Phi:=1/4 ln(A/B)","A=exp(2Phi+q/2), B=exp(-2Phi+q/2)",EXACT_CHANGE_OF_VARIABLES,False
+PQS2268_1_observer_cell,radial observer configuration cell,J_q=T sqrt(S)=sqrt(AB)=exp(q/2),q=0 <=> J_q=1 <=> AB=T^2S=1,EXACT_IDENTITY,False
+PQS2268_2_reduced_branch,pre-variation reduced configuration seed,"q=0 before variation gives A=exp(2Phi), B=exp(-2Phi)",no lambda_R multiplier is required and no lambda_R D_A q backreaction is introduced,VALID_REDUCED_PARAMETRIZATION_SEED,False
+PQS2268_3_weak_field,first PPN scalar lane,A=1-L+O(L^2) with q=0 gives B=A^-1=1+L+O(L^2),gamma=1 at first order if the reduced branch is parent-derived,CONDITIONAL_LOCAL_LIMIT,False

@@ -1,0 +1,15 @@
+field_name,required_for,type,acceptance_rule,reject_if_missing,valid_for_claim,claim_allowed
+candidate_id,finite_or_zero,string,unique stable id,True,False,False
+route_type,finite_or_zero,enum,finite_qR_hat | parent_zero_theorem,True,False,False
+q_R_hat,finite_qR_hat,numeric,finite dimensionless value q_R_hat=Q_R*c^2/(GM),True,False,False
+q_R_hat_units,finite_qR_hat,string,must be dimensionless,True,False,False
+Q_R_units_before_normalization,finite_qR_hat,string,declares raw Q_R units or says directly_dimensionless_q_R_hat,True,False,False
+GM_convention,finite_qR_hat,string,same measured GM/source convention used in PPN comparator,True,False,False
+source_path,finite_or_zero,path_or_reference,local path or external provenance string; no placeholder markers,True,False,False
+derivation_status,finite_or_zero,enum,parent_derived_zero | sourced_finite_model | phenomenological_bound_nonclaim,True,False,False
+N_sigma,finite_qR_hat,numeric,declared statistical policy for comparator,True,False,False
+sigma_gamma,finite_qR_hat,numeric,"uncertainty used by pass rule, e.g. 2.3e-5 from comparator row",True,False,False
+zero_theorem_statement,parent_zero_theorem,string,states theorem proving Q_R=0 without closure R_AB=0,True,False,False
+closure_used,finite_or_zero,boolean,must be False for claim-like theorem route; closure rows stay benchmark-only,True,False,False
+valid_for_claim,finite_or_zero,boolean,False in this checkpoint even if accepted for smoke runner,True,False,False
+claim_allowed,finite_or_zero,boolean,False in this checkpoint,True,False,False

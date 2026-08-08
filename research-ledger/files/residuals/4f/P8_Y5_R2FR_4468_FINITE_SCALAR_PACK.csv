@@ -1,0 +1,6 @@
+pack_id,quantity,formula,current_value,role,claim_status,valid_for_claim
+FSP4468_0_required_scalar_pack,c_R2_eff,c_R2_eff = xi_shape*c2_visible*ell_cell^2/N_EH or D0/12 in pure R2 normalization,MISSING_PARENT_COEFFICIENT,sets lambda_R2 and decides whether a finite scalar pole exists,BLOCKED,False
+FSP4468_1_required_coupling_pack,C_total,C_total = C_explicit_Achi + C_metric_pole + C_hidden_source,C_explicit_Achi=0 only inside private selector; C_metric_pole/C_hidden_source not globally zero,sets alpha_eff=C_total^2/3,BLOCKED,False
+FSP4468_2_current_universal_pressure,R10 pressure at lambda_R2,alpha_eff=1/3 for universal metric scalar; alpha_bound=0.136485683105; ratio=2.44225859996,universal branch fails review-candidate pressure at lambda_R2=7.63929980956e-05 m,shows finite scalar is not safe by default,NONCLAIM_PRESSURE,False
+FSP4468_3_live_curve_requirement,alpha_bound(lambda),abs(alpha_eff)<=alpha_bound(lambda_R2),live claim curve still placeholder; review-candidate rows are nonclaim,needed before any R10 pass/fail claim,BLOCKED,False
+FSP4468_4_ppn_requirement,gamma(r)-1,gamma(r)-1=-2*alpha_eff*exp(-r/lambda_R2)/(1+alpha_eff*exp(-r/lambda_R2)),projection/lightcone branch not source-complete,finite scalar must also pass PPN/orbital/clock gates if range is relevant,BLOCKED,False

@@ -1,0 +1,4 @@
+budget_id,formula,update,claim_status,valid_for_claim
+RB3384_0_post_3384_gamma,|delta_gamma_MTS| <= |R_Gamma_const_or_proxy| + A_gamma C_metric epsilon_eff_PPN^2 + epsilon_composite_gamma + R_nonEH_gamma + R_transfer_gamma,external gamma bound attached; MTS side still symbolic,NONCLAIM_FIRST_BOUND_ROW,false
+RB3384_1_if_Gamma_proxy_signed,|delta_gamma_MTS| <= A_gamma C_metric epsilon_eff_PPN^2 + epsilon_composite_gamma + R_nonEH_gamma + R_transfer_gamma + 1e-122_proxy,Gamma likely harmless only if proxy map is parent-signed,PROMISING_CONDITIONAL_NOT_CLAIM,false
+RB3384_2_next_bound,A_gamma C_metric epsilon_eff_PPN^2 < B_gamma_remaining,first real route is to fill A_gamma/Cmetric/epsilon_eff or prove epsilon_eff=0,NEXT_NUMERIC_OR_ZERO_TARGET,false

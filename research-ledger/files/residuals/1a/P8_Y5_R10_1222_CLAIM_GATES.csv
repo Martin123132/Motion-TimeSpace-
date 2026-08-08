@@ -1,0 +1,7 @@
+gate_id,gate,status,reason,valid_for_claim,claim_allowed
+GATE1222_0_sources,source path and needle audit,PASS,all 1222 input sources are traceable,False,False
+GATE1222_1_runner_inputs,runner rows imported,PASS,six 1221 nonclaim runner rows imported,False,False
+GATE1222_2_thresholds,thresholds ready,PARTIAL,four rows have positive numeric thresholds; readout and tail remain nonnumeric blockers,False,False
+GATE1222_3_predictions,sourced predictions available,BLOCKED,predicted_abs_value is missing for every score row,False,False
+GATE1222_4_counterexamples,counterexamples disposed,BLOCKED,counterexample locks remain retained in every runner row,False,False
+GATE1222_5_claim_permission,WEP/local-GR/R10/EM claim permission,BLOCKED,valid_prediction_rows=0 and all score rows are REFUSED,False,False

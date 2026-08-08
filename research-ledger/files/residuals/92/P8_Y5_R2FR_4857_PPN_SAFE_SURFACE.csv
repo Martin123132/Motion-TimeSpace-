@@ -1,0 +1,9 @@
+row_id,equation,meaning,status,valid_for_claim,timestamp_utc
+PPN4857_0_alpha,alpha1=8*(c1*c4 + c3**2)/(c1**2 - 2*c1 - c3**2); alpha2=(2*c1**4 + 3*c1**3*c2 + 5*c1**3*c3 + 3*c1**3*c4 - 4*c1**3 + 6*c1**2*c2*c3 + c1**2*c2*c4 - 6*c1**2*c2 + 4*c1**2*c3**2 + 5*c1**2*c3*c4 - 10*c1**2*c3 + 3*c1**2*c4**2 - 6*c1**2*c4 + c1*c2*c3**2 - 12*c1*c2*c3 + 4*c1*c2*c4**2 - 2*c1*c2*c4 - c1*c3**3 + 5*c1*c3**2*c4 - 12*c1*c3**2 + 4*c1*c3*c4**2 - 10*c1*c3*c4 + 2*c1*c4**2 - 6*c2*c3**3 + 7*c2*c3**2*c4 - 8*c2*c3**2 - 2*c3**4 + 3*c3**3*c4 - 8*c3**3 + c3**2*c4**2)/((c1 + c2 + c3)*(c1 + c4 - 2)*(c1**2 - 2*c1 - c3**2)),exact weak-field preferred-frame map,PRIMARY_FORMULA,False,2026-07-10T00:26:00+00:00
+PPN4857_1_surface,c4=-c3**2/c1; c2=-(c1 + c3)*(2*c1 - c3)/(3*c1),nondegenerate alpha1=alpha2=0 surface,EXACT,False,2026-07-10T00:26:00+00:00
+PPN4857_2_symbolic,alpha1_safe=0; alpha2_safe=0,symbolic substitution,PASS,False,2026-07-10T00:26:00+00:00
+PPN4857_3_pd,p=c13=c1+c3; d=c1-c3,GW-adapted shear and vorticity coordinates,EXACT_CHANGE_OF_VARIABLES,False,2026-07-10T00:26:00+00:00
+PPN4857_4_coefficients,c2=-p*(3*d + p)/(3*(d + p)); c4=-(-d + p)**2/(2*(d + p)),"full safe surface in p,d",EXACT,False,2026-07-10T00:26:00+00:00
+PPN4857_5_combinations,c14=2*d*p/(d + p); c123=2*p**2/(3*(d + p)); ctheta=-2*d*p/(d + p),kinetic combinations,EXACT,False,2026-07-10T00:26:00+00:00
+PPN4857_6_Gequality,ctheta=-c14 -> G_cos=G_ae/(1+ctheta/2)=G_ae/(1-c14/2)=G_N,PPN-safe surface also removes the Newton/cosmological-G mismatch,EXACT,False,2026-07-10T00:26:00+00:00
+PPN4857_7_other,beta=gamma=1 and all non-alpha1/alpha2 weak-field PPN parameters equal GR for universal metric matter coupling,standard semi-conservative unit-flow result,CONDITIONAL_CORRESPONDENCE_RESULT,False,2026-07-10T00:26:00+00:00

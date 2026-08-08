@@ -1,0 +1,10 @@
+contract_id,component,required_object,current_status,source,claim_effect,valid_for_claim,claim_allowed
+UAK1408_0_definition,U_a,"U_a := K_ab(lambda,lab) alpha_source^b",SYMBOLIC_ONLY,FORM1225_0_tau_WEP_functional,cannot compute P_s without U_a,False,False
+UAK1408_1_source_worldtube,alpha_source^b,Earth/source stress-current worldtube in observed local frame,MISSING_SOURCE_PROFILE_WEIGHTING,TAU1225_0_source_worldtube;ACQ1225_2_source_worldtube,source side of U_a unavailable,False,False
+UAK1408_2_readout_kernel,"K_ab(lambda,lab)",official or exactly equivalent WEP readout/kernel arrays,OFFICIAL_ARRAYS_NOT_IMPORTED,TAU1225_4_force_readout;ACQ1225_0_official_readout_arrays,no surrogate kernel can promote a claim,False,False
+UAK1408_3_orbit_average,lab/orbit average,time/session/orbit average matched to the reported eta_AB channel,MISSING_ORBIT_AVERAGE_ARRAYS,TAU1225_1_orbit_average;ACQ1225_3_orbit_average,kernel cannot be normalized to the experiment,False,False
+UAK1408_4_product_normalization,N_eta/product convention,map from source response x material response x readout kernel to reported Eotvos eta,NORMALIZATION_NOT_FILLED,TAU1225_5_normalization;ACQ1225_1_product_convention,U_a cannot be compared to eta_AB bound,False,False
+UAK1408_5_observed_frame,e_obs/source frame,"same observed frame for force law, source variation, clocks, and readout",CONDITIONAL_FROM_PRIOR_SPINE,TAU1225_2_observed_coframe,frame consistency remains conditional,False,False
+UAK1408_6_material_tensor_domain,"Delta f_s,AB/R_material",material tensor in the same basis as U_a and beta_s,MISSING_FULL_MATERIAL_TENSOR,MTC1079_0_basis;MTC1079_2_response_map,U_a cannot be safely contracted with material rows,False,False
+UAK1408_7_anti_shortcuts,shortcut guards,"no tau_WEP=1, no surrogate kernel claim, no sign/material cancellation",ENFORCED,SHORT1225_0_no_tau_unity;SHORT1225_1_no_surrogate_claim;SHORT1225_3_no_cancellation,prevents fake WEP pass,False,False
+UAK1408_8_verdict,U_a contract status,all UAK1408_1 through UAK1408_6 complete without MISSING markers,UA_KERNEL_CONTRACT_READY_VALUES_MISSING,1408 checkpoint,U_a remains nonclaim and blocks P_s products,False,False

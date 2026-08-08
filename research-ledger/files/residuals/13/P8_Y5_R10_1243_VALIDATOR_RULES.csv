@@ -1,0 +1,6 @@
+rule_id,rule,failure_status,valid_for_claim,claim_allowed
+VR1243_0_route,route_type must be finite_qR_hat or parent_zero_theorem,REJECT_BAD_ROUTE_TYPE,False,False
+VR1243_1_finite,"finite_qR_hat rows need numeric q_R_hat, dimensionless units, raw-unit declaration, GM convention, source, N_sigma, and sigma_gamma",REJECT_MISSING_FINITE_QR_FIELDS,False,False
+VR1243_2_zero,"parent_zero_theorem rows need q_R_hat=0, derivation_status=parent_derived_zero, theorem statement, source, and closure_used=false",REJECT_ZERO_THEOREM_UNDERIVED,False,False
+VR1243_3_no_claim,all accepted rows remain valid_for_claim=false and claim_allowed=false,REJECT_CLAIM_FLAG,False,False
+VR1243_4_no_closure,closure_used=true is rejected for evidence-like input rows,REJECT_CLOSURE_AS_EVIDENCE,False,False

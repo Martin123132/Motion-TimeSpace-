@@ -1,0 +1,7 @@
+rule_id,rule,result,evidence,claim_effect
+V481_0_sources,all cited source paths exist,pass,missing_sources=0,traceability only
+V481_1_projector_algebra,"P_coh is idempotent, self-adjoint, and unique in the scalar trace sector",pass,A1/A2 algebra rows,projector candidate narrowed
+V481_2_shear_exclusion,using det_h(P_coh Q) removes trace-free determinant leakage,conditional_pass,A3 algebra row,raw det(Q) remains forbidden; projected det is allowed as candidate
+V481_3_parent_ownership,"parent action forces P_coh, chi_D, local X_D=0, and stress accounting",fail_for_claim,C0-C4 all valid_for_local_GR_claim=false,Qcoh route remains closure/theorem target
+V481_4_alpha3_no_promotion,no alpha3 impact row is claim-valid,pass,claim_valid_rows=0,no alpha3/PPN/local-GR pass
+V481_5_next_route,failure is routed to numeric/domain residual vector rather than hidden promotion,pass,482-local-residual-vector-from-domain-source-fill.md,local residual vector remains retained

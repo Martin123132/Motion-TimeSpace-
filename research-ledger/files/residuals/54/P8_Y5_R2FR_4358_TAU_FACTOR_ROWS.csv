@@ -1,0 +1,7 @@
+factor_id,factor,required_object,current_status,source_basis,effect,valid_for_claim
+TF4358_0_tau_functional,tau_WEP functional,"N_eta^-1 < K_eta[e_obs,orbit,masks] Integral_Earth dV K_source R_source R_material(TiPt) >_orbit",SYMBOLIC_ONLY_NONCLAIM,P8_Y5_R10_1225_SYMBOLIC_TAU_WEP_FORMULA.csv,formula shape exists but not numeric,False
+TF4358_1_source_worldtube,T_source^Earth(x),profile-weighted Earth/source stress-current in observed local frame,MISSING_SOURCE_PROFILE_WEIGHTING,P8_Y5_R10_1083_SOURCE_VECTOR_CAVEAT_GATE.csv,tau_WEP cannot be evaluated,False
+TF4358_2_orbit_average,orbit/session/mask average,time-weighted projection into the reported MICROSCOPE eta channel,MISSING_ORBIT_AVERAGE_ARRAYS,P8_Y5_R10_1225_TAU_WEP_PROJECTION_ATTEMPT.csv,tau normalization open,False
+TF4358_3_material_tensor,Ti/Pt material response,TA6V-minus-PtRh10 response tensor in same source-weight convention,MISSING_FULL_MATERIAL_TENSOR,1596 factor audit / 1225 projection attempt,Delta_w_TiPt mapping incomplete,False
+TF4358_4_readout_matrix,K_MICROSCOPE / K_CMSM,"official readout/design matrix with masks, timing, orbit/attitude convention and units",OFFICIAL_ARRAYS_NOT_IMPORTED,P8_Y5_R10_1084_MICROSCOPE_READOUT_IMPORT_GATE.csv,no surrogate kernel can promote WEP claim,False
+TF4358_5_product_convention,eta product normalization,map source response x material response x readout kernel to reported Eotvos eta,NORMALIZATION_NOT_FILLED,P8_Y5_R10_1084_MICROSCOPE_READOUT_IMPORT_GATE.csv,tau_WEP=1 shortcut forbidden,False

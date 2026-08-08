@@ -1,0 +1,6 @@
+constraint_id,assumptions,coefficient_constraint,value,what_it_does_not_bound,valid_for_claim
+CONSTR3268_0_zero_residual_Dhatm,parent signature signed; s_MICROSCOPE=s_EOTWASH=1; epsilon=0,|C_hatm-C_g| <= |D_hatm|_bound,8.549427862687e-11,C_g common mode and C_hatm common mode separately,false
+CONSTR3268_1_zero_residual_De,parent signature signed; s_MICROSCOPE=s_EOTWASH=1; epsilon=0,|C_e| <= |D_e|_bound,1.443549691533e-10,non-DD EM readout/boundary coefficients hidden in epsilon,false
+CONSTR3268_2_eta_residual_Dhatm,parent signature signed; s=1; epsilon_k allowed up to eta_bound_k,|C_hatm-C_g| <= residual-degraded |D_hatm|_bound,1.709885572537e-10,C_g common mode and C_hatm common mode separately,false
+CONSTR3268_3_eta_residual_De,parent signature signed; s=1; epsilon_k allowed up to eta_bound_k,|C_e| <= residual-degraded |D_e|_bound,2.887099383065e-10,hidden EM coefficient channels outside DD Q'_e,false
+CONSTR3268_4_common_mode_free,dominant two-channel WEP only,"C_common along (1,1,0) is unconstrained by DD WEP material differences",UNBOUNDED_BY_THIS_ARENA,absolute mass-scale/G/clock normalization,false

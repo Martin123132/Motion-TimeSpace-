@@ -1,0 +1,5 @@
+gate_id,requirement,failure_mode,action_if_failed,status,valid_for_claim,generated_utc
+RG857_0_independent_q_B,"q_B must be measured, derived, or otherwise signed independently of the fitted target split",MISSING_INDEPENDENT_SOURCE or solved-from-target amplitude,set b_R[B]=0,failed_currently,false,2026-06-13T01:01:32+00:00
+RG857_1_response_coefficient,"C_R must come from a parent projection, local geometry, or stated likelihood-response map",free coefficient tuned to match SH0ES/no-SH0ES split,response channel remains closure-only,missing_currently,false,2026-06-13T01:01:32+00:00
+RG857_2_projected_offset_rejection,global SN calibration offset cannot source b_R after nuisance projection removes it,using MU_SH0ES minus m_b_corr as physical memory amplitude,reject as source,passed_rejection,false,2026-06-13T01:01:32+00:00
+RG857_3_response_pre_registration,response vector and amplitude must be recorded before any scoring run that uses them,post-hoc response chosen after seeing BIC,score as exploratory nonclaim only,required_next,false,2026-06-13T01:01:32+00:00

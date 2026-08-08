@@ -1,0 +1,16 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1215_0_sources_exist,all cited local sources exist,PASS,15/15 sources exist,False,False
+VAL1215_1_needles_found,all cited source needles found,PASS,15/15 needles found,False,False
+VAL1215_2_numeric_material_subcomponents,DD material subcomponents are numeric positive magnitudes,PASS,WEP1215_0_material_delta_alpha=0.001989808886825; WEP1215_1_material_delta_surface=0.003306456347405,False,False
+VAL1215_3_numeric_smoke_bounds,unit-response smoke coefficient bounds are numeric positive,PASS,WEP1215_2_alpha_unit_response=1.407170315973e-12; WEP1215_3_surface_unit_response=8.468280557212e-13; WEP1215_4_equal_two_component_unit_response=5.286744292758e-13,False,False
+VAL1215_4_eta_bound_positive,MICROSCOPE eta bound anchor positive,PASS,R1_WEP_source_charge=2.8e-15,False,False
+VAL1215_5_zero_not_claimed,component zero is not overclaimed,PASS,CZ1215_4 keeps numeric subcomponent nonclaim,False,False
+VAL1215_6_same_norm_blocked,same-norm product remains blocked,PASS,SNP1215_4 status NOT_CLAIM_VALID,False,False
+VAL1215_7_runner_refuses,runner stub refuses missing product,PASS,valid_prediction_rows=0 and claim_allowed=false,False,False
+VAL1215_8_feed_present,Bspecies feed update exists,PASS,BFEED1215_0_to_DSB1214_5_projection_map present,False,False
+VAL1215_9_no_missing_claim_rows,no row with MISSING is valid for claim,PASS,missing factor rows remain nonclaim,False,False
+VAL1215_10_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout,False,False
+VAL1215_11_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1215_SOURCE_REGISTER.csv:15; P8_Y5_R10_1215_COMPONENT_ZERO_AUDIT.csv:5; P8_Y5_R10_1215_WEP_NUMERIC_SUBCOMPONENT_INTAKE.csv:9; P8_Y5_R10_1215_SAME_NORM_PRODUCT_CONTRACT.csv:5; P8_Y5_R10_1215_BSPECIES_FEED_UPDATE.csv:2; P8_Y5_R10_1215_PRODUCT_RUNNER_STUB.csv:1; P8_Y5_R10_1215_DECISION_LEDGER.csv:3; P8_Y5_R10_1215_CLAIM_GATES.csv:5; P8_Y5_R10_1215_NEXT_TARGET.csv:1,False,False
+VAL1215_12_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_after_run_start_count=0,False,False
+VAL1215_13_next_target,next target is staged,PASS,1216-Y5-R10-WEP-same-norm-Cparent-source-readout-or-component-zero.md,False,False
+VAL1215_14_overall,overall 1215 validation,PASS,"1215 Bspecies finite projection input pack is reproducible, numeric-subcomponent-backed, and nonclaim",False,False

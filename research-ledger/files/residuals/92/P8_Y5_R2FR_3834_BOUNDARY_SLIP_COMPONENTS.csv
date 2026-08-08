@@ -1,0 +1,6 @@
+component_id,component,definition,zero_route,bound_formula,status,valid_for_claim,timestamp_utc
+BC3834_0_Dirichlet,B_Dirichlet_slip,scalar slip value fixed on the exterior boundary/reference surface,S|boundary=0 from reference lock,B_Dirichlet_slip <= sup_boundary abs(S/Phi),SOURCE_BOUND_REQUIRED,False,2026-07-01T02:21:35+00:00
+BC3834_1_Neumann,B_Neumann_slip,normal derivative or flux of scalar slip through the exterior boundary,normal slip flux zero by Stokes/fixed boundary data,B_Neumann_slip <= sup_boundary abs(n.grad S/Phi),SOURCE_BOUND_REQUIRED,False,2026-07-01T02:21:35+00:00
+BC3834_2_harmonic,B_harmonic_l2,homogeneous l>=2 harmonic scalar slip mode on the exterior annulus,cohomologically trivial/no harmonic scalar slip class,B_harmonic_l2 <= sum_l>=2 abs(a_lm^slip)/abs(Phi),HARMONIC_CLASS_SIGNATURE_REQUIRED,False,2026-07-01T02:21:35+00:00
+BC3834_3_Bzero,B_Bzero_flux_slip,scalar-slip specialization of 3825 B_zero_flux,B_zero_flux=0 applies to scalar slip mode,B_Bzero_flux_slip <= abs(B_zero_flux^slip/Phi),SPECIALIZED_3825_ROW_REQUIRED,False,2026-07-01T02:21:35+00:00
+BC3834_4_Delta_symp,B_Delta_symp_slip,scalar-slip reference/symplectic drift from fixed exterior projector,Delta_symp=0 applies to scalar slip reference data,B_Delta_symp_slip <= abs(Delta_symp^slip/Phi),SPECIALIZED_3825_ROW_REQUIRED,False,2026-07-01T02:21:35+00:00

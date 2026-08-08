@@ -1,0 +1,5 @@
+bound_id,quantity,formula,numeric_bound,units,status,claim_allowed,valid_for_claim
+NGB1853_0_alpha_proxy_input,alpha_PPN_proxy,sqrt(delta_gamma/(2-delta_gamma)) from 1852,0.005788015401465051,dimensionless,SOURCE_BACKED_PROXY,False,False
+NGB1853_1_normalized_effective_coupling,alpha_eff_PPN,"alpha_eff_PPN = tau_PPN c_g S_PPN(lambda_X,env)/sqrt(Z_X)",abs(alpha_eff_PPN)<=0.005788015401465051,dimensionless,CONDITIONAL_EFFECTIVE_BOUND,False,False
+NGB1853_2_cg_formula,c_g,abs(c_g) <= alpha_PPN_proxy*sqrt(Z_X)/(abs(tau_PPN)*abs(S_PPN)),MISSING_ZX_TAU_PPN_RANGE_TRANSFER,dimensionless_per_Xhat,FORMULA_READY_COMPONENT_BOUND_MISSING,False,False
+NGB1853_3_rescaling_invariant,c_g/sqrt(Z_X),invariant under Xhat->aXhat,MISSING_TAU_PPN_RANGE_TRANSFER; proxy ceiling 0.005788015401465051,dimensionless,INVARIANT_IDENTIFIED_NOT_NUMERIC,False,False

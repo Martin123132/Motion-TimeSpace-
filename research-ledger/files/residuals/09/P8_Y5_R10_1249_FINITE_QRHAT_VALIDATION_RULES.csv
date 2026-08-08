@@ -1,0 +1,7 @@
+rule_id,rule,reject_status,valid_for_claim,claim_allowed
+QRV1249_0_route,route_type must be finite_qR_hat,REJECT_BAD_ROUTE_TYPE,False,False
+QRV1249_1_numeric,q_R_hat must parse as finite dimensionless float,REJECT_MISSING_OR_NONNUMERIC_QR;REJECT_BAD_QR_UNITS,False,False
+QRV1249_2_source_GM,source_path and GM_convention must be non-placeholder; raw-unit declaration required,REJECT_MISSING_SOURCE;REJECT_MISSING_GM_CONVENTION;REJECT_MISSING_RAW_QR_UNIT_DECLARATION,False,False
+QRV1249_3_policy,N_sigma and sigma_gamma must match 1244 policy,REJECT_POLICY_NSIGMA_MISMATCH;REJECT_POLICY_SIGMA_MISMATCH,False,False
+QRV1249_4_no_closure,closure_used must be false; ansatz zero and closure zero are refused,REJECT_CLOSURE_AS_EVIDENCE;REJECT_ZERO_THEOREM_UNDERIVED,False,False
+QRV1249_5_no_claim_flags,valid_for_claim and claim_allowed must remain false in this checkpoint,REJECT_CLAIM_FLAG,False,False

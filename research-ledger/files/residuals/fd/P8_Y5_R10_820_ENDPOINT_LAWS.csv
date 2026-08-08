@@ -1,0 +1,6 @@
+law_id,statement,status,implication,valid_for_claim,generated_utc
+E820_0_total_budget,Delta_Gamma = integral_{N_i}^{N_f} S_Gamma dN = B_mem*(F_f-F_i).,exact_if_absolute_continuity_holds,amplitude budget cannot be interpreted without endpoint values,false,2026-06-12T18:09:48+00:00
+E820_1_full_activation,Full activation Delta_Gamma=B_mem requires X_i=0 and X_f->infinity.,conditional,finite X_f leaves unactivated memory fraction exp[-(X_f/X_star)^p],false,2026-06-12T18:09:48+00:00
+E820_2_finite_endpoint,"If X_i=0 and X_f=X_star, then Delta_Gamma=B_mem*(1-exp[-1])~0.632 B_mem.",counterexample_anchor,normalization to B_mem is false unless endpoints are locked,false,2026-06-12T18:09:48+00:00
+E820_3_onset_power_law,"For X~C tau^r near activation, S_Gamma~tau^(r*p-1).",regularity_gate,finite source onset requires r*p>=1,false,2026-06-12T18:09:48+00:00
+E820_4_X_density_peak,The density dF/dX peaks at (X/X_star)^p=(p-1)/p only for p>1; p=1 peaks at X=0; 0<p<1 is singular at X=0.,shape_warning,"a smooth source onset prefers p>1 or an X onset with r*p>=1, but the N-peak still depends on dX/dN",false,2026-06-12T18:09:48+00:00

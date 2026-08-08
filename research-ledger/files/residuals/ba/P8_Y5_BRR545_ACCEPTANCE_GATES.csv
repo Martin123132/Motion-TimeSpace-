@@ -1,0 +1,6 @@
+gate_id,gate,acceptance_rule,current_status,valid_for_claim
+AG547_0_template_complete,"BRR545 input template has total, boundary-flux, reference-symplectic, and denominator rows",exactly four input rows and all valid_for_claim=false until filled,pass_template_written,false
+AG547_1_local_locks_mapped,each active residual component maps to local empirical/internal lock rows,all external lock row_ids exist in local_bound_claims.csv,pass_locks_exist,false
+AG547_2_no_cancellation_credit,"total envelope uses absolute components, not cancellation",epsilon_total = abs(B/MH)+abs(Delta/MH); no signed cancellation row,pass_policy_enforced,false
+AG547_3_measured_GM_precondition,denominator must be same-frame measured GM before Newton/PPN promotion,GM_orbit=G*M_H_ref certificate exists or no measured-GM claim,fail_missing_certificate,false
+AG547_4_no_public_claim,private residual template cannot promote local GR,source_measure=false; Newton=false; PPN=false; local_GR=false,pass_policy_no_claim,false

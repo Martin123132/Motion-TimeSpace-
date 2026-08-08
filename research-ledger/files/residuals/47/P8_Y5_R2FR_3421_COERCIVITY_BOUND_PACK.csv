@@ -1,0 +1,6 @@
+bound_id,quantity,formula,needed_inputs,current_status,valid_for_claim
+CBP3421_0_energy_identity,Z_norm,"lambda_* ||Z||^2 <= <Z,J_Z+B_Z+R_proj-N(Z)>","lambda_*, J_Z norm, B_Z norm, projector residual norm, nonlinear Lipschitz radius",FORMULA_READY_VALUES_MISSING,False
+CBP3421_1_small_branch,small-field fixed-point radius,if Lip(N)<=lambda_*/2 then ||Z|| <= 2 lambda_*^-1 (||J_Z||+||B_Z||+||R_proj||),coercivity lower bound and source/boundary/projector norms,BOUND_READY_NOT_NUMERIC,False
+CBP3421_2_zero_switch,Z=0 theorem switch,theorem_zero=true iff lambda_*>0 and J_Z=B_Z=R_proj=0 in the physical Z basis,"parent-signed coercivity, source-current zero, boundary/projector zero and component lock",ZERO_SWITCH_NOT_ACTIVE,False
+CBP3421_3_q_loc_map,q_loc residual from Z,||q_loc|| <= C_qZ ||Z|| + epsilon_boundary_projector,C_qZ response operator and boundary/projector envelope,MISSING_C_QZ_RESPONSE_OPERATOR,False
+CBP3421_4_alpha3_map,alpha3 from Z/vector leakage,|alpha3_q| <= Q_PROXY * (C_alphaZ ||Z|| + epsilon_V_total),"C_alphaZ, Z_norm bound, epsilon_V_total and alpha3 arena bound",MISSING_ALPHA_RESPONSE_OPERATOR,False

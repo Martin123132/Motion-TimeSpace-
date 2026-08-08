@@ -1,0 +1,7 @@
+gate_id,gate,status,reason,valid_for_claim,claim_allowed
+GATE1370_0_fixed_Lcg_covariance,fixed L0 parent contract is covariance-admissible,PASS_CLOSURE_CANDIDATE,constant scalar parameter does not select a frame; delta_g L0=0.,False,False
+GATE1370_1_fixed_Lcg_source_signed,fixed L0 is source-signed as the live parent definition,BLOCKED_NOT_CORPUS_SIGNED,1370 writes the contract but prior registered corpus does not adopt it.,False,False
+GATE1370_2_ML_zero_live,M_L=0 can be used in live local-GR scoring,BLOCKED_CONDITIONAL_ONLY,M_L=0 follows under fixed-L0 closure but not under metric-composite L_cg routes.,False,False
+GATE1370_3_Cqgamma_symbolic,q_loc-to-gamma response coefficient is mathematically typed,PASS_SYMBOLIC_WARD_SAFE,C_qgamma is derived as a Green-operator/divergence-inverse functional.,False,False
+GATE1370_4_Cqgamma_numeric,q_loc-to-gamma runner can compute a number,BLOCKED_NUMERIC_INPUTS_MISSING,"q_loc profile, source normalization, operator norms, gauge, and boundary are missing.",False,False
+GATE1370_5_local_GR_or_PPN_claim,local GR / PPN pass can be claimed,BLOCKED_NO_CLAIM,fixed L0 is not parent-signed and q_loc gamma coefficient is symbolic only.,False,False

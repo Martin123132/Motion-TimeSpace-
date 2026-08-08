@@ -1,0 +1,11 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1202_0_sources_exist,all cited local source paths exist,PASS,8/8 sources exist,False,False
+VAL1202_1_needles_found,all cited source needles found,PASS,8/8 needles found,False,False
+VAL1202_2_scenario_values,"W_R10 scenario family is exactly 1,10,100",PASS,"W values=[1.0, 10.0, 100.0]",False,False
+VAL1202_3_envelope_numeric,qDT allowed envelope has positive numeric lambda alpha and qDT values,PASS,rows=12,False,False
+VAL1202_4_gate_bites,at least one conservative envelope threshold is below toy qDT=1,PASS,min_qDT_allowed=2.34466430052e-05 at QAE1202_0351_WR10F1202_2_brutal_100x,False,False
+VAL1202_5_nonclaim_flags,all stress rows remain nonclaim,PASS,"scenario, assumption, and envelope valid_for_claim flags are false",False,False
+VAL1202_6_claim_gates_blocked,all claim gates remain blocked,PASS,blocked=4/4,False,False
+VAL1202_7_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1202_SOURCE_REGISTER.csv:8; P8_Y5_R10_1202_CONSERVATIVE_KERNEL_ASSUMPTIONS.csv:4; P8_Y5_R10_1202_WR10_SCENARIO_FAMILY.csv:3; P8_Y5_R10_1202_QDT_ALLOWED_ENVELOPE.csv:12; P8_Y5_R10_1202_QDT_PROFILE_FAMILY_REQUIREMENTS.csv:6; P8_Y5_R10_1202_RUNNER_SUMMARY.csv:1; P8_Y5_R10_1202_CLAIM_GATES.csv:4; P8_Y5_R10_1202_DECISION_LEDGER.csv:1; P8_Y5_R10_1202_NEXT_TARGET.csv:1,False,False
+VAL1202_8_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_after_run_start_count=0,False,False
+VAL1202_9_overall,overall 1202 validation,PASS,1202 conservative nonclaim envelope is reproducible,False,False

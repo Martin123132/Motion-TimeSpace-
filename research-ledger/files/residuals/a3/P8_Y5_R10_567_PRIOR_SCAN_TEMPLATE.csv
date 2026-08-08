@@ -1,0 +1,7 @@
+scan_id,parameter,suggested_domain,units,why,claim_use,valid_for_claim
+PST567_0_lambda_anchor_window,lambda_X,3.0e-5 m <= lambda_X <= 6.5e-5 m,m,covers current Eot-Wash alpha=1 anchor thresholds without pretending to have full curve,smoke_only,false
+PST567_1_lambda_broad_R10,lambda_X,1.0e-6 m <= lambda_X <= 1.0e-2 m,m,broad non-claim R10 range for later digitized curve interpolation stress,smoke_only_until_curve_digitized,false
+PST567_2_product_amplitude,abs(K_X*Qbar_XH*qbar_XT),log10 product from -30 to +3,dimensionless_alpha_convention,tests whether any finite source/test charge branch can sit below short-range fifth-force bounds,nonclaim_prior_scan,false
+PST567_3_sign,s_X,"-1,+1",sign,keeps attractive/repulsive convention explicit while R10 compares abs(alpha),diagnostic_only,false
+PST567_4_source_charge,Qbar_XH(lambda),parent integral or channelwise bound required,parent_normalized,torsion-balance source composition must not be hand-waved,blocked_until_parent_or_external_source_model,false
+PST567_5_test_charge,qbar_XT,zero theorem or residual bound required,parent_normalized,ordinary test-body neutrality is the local-GR/WEP pressure point,blocked_until_parent_or_residual_bound,false

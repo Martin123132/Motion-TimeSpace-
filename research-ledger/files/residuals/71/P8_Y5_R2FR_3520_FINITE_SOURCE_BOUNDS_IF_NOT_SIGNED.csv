@@ -1,0 +1,6 @@
+bound_id,source_channel,bound_formula,required_inputs,prediction_value,status,valid_for_claim
+QAPB3520_0_Dq_vq,failed_qmap_kernel,||Dq[v_q]|| <= eps_qmap + eps_Qvis + eps_boundary + eps_readout,parent qmap field chart; Dq matrix norms; source/readout/boundary derivative norms,MISSING_DQ_VQ_BOUND,NONCLAIM_IF_QAP_UNSIGNED,False
+QAPB3520_1_CqT,direct_qprivate_matter,E_T <= |C_qT| ||P_T T||,C_qT source coefficient; stress projection; source support normalization,MISSING_CQT_COEFFICIENT,NONCLAIM_IF_QAP_UNSIGNED,False
+QAPB3520_2_BqWeyl,linear_weyl_spurion,E_W <= |B_qWeyl| ||P_W W||,B_qWeyl coefficient; Weyl/profile projection; no-spurion verdict,MISSING_BQWEYL_COEFFICIENT,NONCLAIM_IF_QAP_UNSIGNED,False
+QAPB3520_3_prefactor,source_prefactor_common_mode,E_weight <= sup_A |partial_q ln w_A| ||T_A|| + Delta_w_species_common_owner,vertical source-weight derivative; common-mode owner; material/source basis,MISSING_SOURCE_WEIGHT_INPUTS,NONCLAIM_IF_QAP_UNSIGNED,False
+QAPB3520_4_nonEH_tower,qbasic_hidden_sector_after_elimination,E_nonEH <= |a_R2| ||R2|| + |a_fR| ||Delta f_R|| + |a_W2| ||W2|| + ||K_nonlocal||,EH/no-tower theorem or finite higher-curvature/nonlocal coefficients,MISSING_NON_EH_TOWER_BOUND,NONCLAIM_SEPARATE_FROM_QPRIVATE_SOURCE_SILENCE,False

@@ -1,0 +1,14 @@
+validation_id,passed,requirement,evidence
+VAL3028_00_sources_exist,True,every cited local source path exists,P8_Y5_R2FR_3028_SOURCE_REGISTER.csv
+VAL3028_01_csv_parse,True,generated CSV rows parse cleanly,all generated CSV artifacts import with csv.DictReader
+VAL3028_02_candidate_present,True,candidate L_Hcore density is recorded,P8_Y5_R2FR_3028_LHCORE_DENSITY_ADOPTION_CANDIDATE.csv
+VAL3028_03_adoption_rejected,True,adoption fails closed,P8_Y5_R2FR_3028_ADOPTION_CLAUSE_AUDIT.csv
+VAL3028_04_variation_formula,True,conditional variation records residual-augmented coefficient law,P8_Y5_R2FR_3028_CONDITIONAL_VARIATION_TEST.csv
+VAL3028_05_components_carried,True,component fill rows are carried forward,P8_Y5_R2FR_3028_COMPONENT_FILL_CARRYFORWARD.csv
+VAL3028_06_claims_blocked,True,all rows remain nonclaim/private-control rows,all 3028 generated ledgers
+VAL3028_07_missing_markers_nonclaim,True,rows with MISSING markers are never valid_for_claim=true,all 3028 generated ledgers
+VAL3028_08_branch_copies_exist,True,branch copies and acquisition queue exist,P8_Y5_R2FR_3028_BRANCH_COPIES.csv
+VAL3028_09_outputs_scoped,True,no generated file is outside post-checkpoint-work,generated path scope check
+VAL3028_10_formalization_not_targeted,True,formalization-workbench is not modified by this checkpoint,output target list excludes formalization-workbench
+VAL3028_11_next_target_selected,True,next target selects covariant lift or first component value,P8_Y5_R2FR_3028_NEXT_TARGET.csv
+VAL3028_99_overall,True,all 3028 validation checks pass,aggregate of VAL3028_00 through VAL3028_11

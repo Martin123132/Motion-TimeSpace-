@@ -1,0 +1,6 @@
+timestamp_utc,branch_id,checkpoint_id,valid_for_claim,claim_allowed,dryrun_id,check,result,detail
+2026-06-21T02:16:51.883454+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,2191,False,False,DR2191_0_theorem_zero,all theorem certificate clauses pass,PASS_BLOCKED_EXPECTED,theorem_zero remains false because at least one certificate row is missing
+2026-06-21T02:16:51.883460+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,2191,False,False,DR2191_1_components,component rows have real q_loc profiles,PASS_BLOCKED_EXPECTED,missing/template component rows=7
+2026-06-21T02:16:51.883464+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,2191,False,False,DR2191_2_runner,arena projections are executable,PASS_BLOCKED_EXPECTED,score_ready runner rows=0
+2026-06-21T02:16:51.883467+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,2191,False,False,DR2191_3_no_scalar_proxy,scalar proxy cannot pass as vector proof,PASS_GUARDRAIL,"component schema requires q0..q3/q_T/q_x/q_y/q_z and response operators, not q_proxy alone"
+2026-06-21T02:16:51.883470+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,2191,False,False,DR2191_4_claim_status,no local-GR/q_loc/R10/PPN claim allowed,PASS_NONCLAIM,all rows remain valid_for_claim=false and claim_allowed=false

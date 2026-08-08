@@ -1,0 +1,11 @@
+check_id,check,status,details
+VAL1320_0_sources_exist,registered source paths exist and anchors are found,PASS,11/11 source anchors found
+VAL1320_1_closure_consequences_cover_demotions,closure consequences cover all 1319 demotions,PASS,DEM1319_0_parent_signature;DEM1319_1_alpha;DEM1319_2_wep_r10_source;DEM1319_3_readout_transfer
+VAL1320_2_priority_map_covers_survivors,finite priority map covers every surviving row with unique ranks,PASS,1:SURV1319_1_clock;2:SURV1319_2_wep;3:SURV1319_0_alpha;4:SURV1319_3_r10;5:SURV1319_4_cross_arena
+VAL1320_3_clock_selected_first,first-fill selected row is clock direct product/readout,PASS,rank1=SURV1319_1_clock next=1321-Y5-R10-RAB-clock-readout-direct-product-first-fill-runner.md
+VAL1320_4_r10_remains_heavy_nonclaim,R10 remains high payoff but blocked by data and product inputs,PASS,R10 requires promoted curve plus numeric product vector
+VAL1320_5_acceptance_gates_enforced,acceptance gates are enforced,PASS,GATE1320_0_closure_only;GATE1320_1_clock;GATE1320_2_wep;GATE1320_3_r10;GATE1320_4_cross_arena
+VAL1320_6_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1320_7_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1320_8_next_target_1321,next target routes to clock readout direct product first-fill runner,PASS,1321-Y5-R10-RAB-clock-readout-direct-product-first-fill-runner.md
+VAL1320_9_overall,overall 1320 validation,PASS,"1320 ranks closure-only finite source rows, selects clock first-fill, and keeps WEP/R10/local claims blocked"

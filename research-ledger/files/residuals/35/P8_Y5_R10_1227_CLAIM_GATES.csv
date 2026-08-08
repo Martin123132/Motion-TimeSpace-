@@ -1,0 +1,7 @@
+gate_id,gate,status,reason,valid_for_claim,claim_allowed
+GATE1227_0_sources,local and web source register,PASS,local handoff sources and web/API documentation sources are recorded,False,False
+GATE1227_1_connectivity,local machine can reach CMSM portal,BLOCKED,tcp_status=CONNECT_FAILED,False,False
+GATE1227_2_package_map,official package map,BLOCKED,package names/URLs/AIP ids/checksums are missing,False,False
+GATE1227_3_download,official package download,BLOCKED,download dry run is blocked until package URL and license/access are known,False,False
+GATE1227_4_parser,readout parser implementation,BLOCKED,schema/data dictionary not acquired,False,False
+GATE1227_5_tau_WEP_claim,tau_WEP/local-GR/WEP claim permission,BLOCKED,no official data objects are mapped or local,False,False

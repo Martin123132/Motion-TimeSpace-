@@ -1,0 +1,10 @@
+row_id,equation,meaning,status,valid_for_claim,timestamp_utc
+S4859_0_action,16piGae L_S=-3A dot(psi)^2-2A dot(psi)Theta-c123 Theta^2-2(2-c14)(grad psi)^2/c14,lapse-eliminated but pre-longitudinal-constraint scalar action,DERIVED_SECOND_VARIATION,False,2026-07-10T01:10:00+01:00
+S4859_1_source,J_i=beta_u P_i^EM; c123 Theta=-A dot(psi)-8piGae Delta^-1 partial_i J_i,exact longitudinal flow constraint,EXACT,False,2026-07-10T01:10:00+01:00
+S4859_2_reduced,S_S=(qS/8piGae)int[dot(psi)^2-cS2(grad psi)^2]; qS=3*(p - 1)*(d*p - d - p)/p**2,positive reduced scalar action,PASS,False,2026-07-10T01:10:00+01:00
+S4859_3_sigma,Sigma_EM=partial_t Delta^-1 partial_i P_i^EM,longitudinal power-transfer source,DEFINITION,False,2026-07-10T01:10:00+01:00
+S4859_4_wave,(partial_t^2-cS2 Delta)psi=-4piGae beta_u Sigma_EM/(1-p),exact direct constitutive scalar response,EXACT_LINEAR,False,2026-07-10T01:10:00+01:00
+S4859_5_retarded,"psi=-Gae beta_u/[(1-p)cS2] int Sigma_EM(t-R/cS,x')/R d3x'",formal retarded inverse-Laplacian representation,EXACT_WITH_DECAY_BOUNDARY,False,2026-07-10T01:10:00+01:00
+S4859_6_fourier,"psi_rad(omega,r,n)=Gae beta_u n_i P_i(omega,k=omega n/cS)/[(1-p)cS r]",compact-source on-shell radiation amplitude,EXACT_LEADING_FAR_ZONE,False,2026-07-10T01:10:00+01:00
+S4859_7_stationary,partial_i P_i=0 and partial_t=0 imply Sigma_EM=0,stationary circulation does not excite the scalar channel,EXACT_SOURCE_ZERO,False,2026-07-10T01:10:00+01:00
+S4859_8_lapse,H_beta/U_EM=18*beta*d*x**2*(d*p - d - p)/((d + p)*(3*d*p*x - 3*d*x + p)); x=omega^2/k^2,separately conserved quasistatic lapse transfer starts at beta_u x^2,EXACT_FOURIER,False,2026-07-10T01:10:00+01:00

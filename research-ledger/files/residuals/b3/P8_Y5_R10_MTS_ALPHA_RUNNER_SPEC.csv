@@ -1,0 +1,6 @@
+current_status,failure_mode,runner_requirement,spec_id,valid_for_claim
+implemented,missing/non-numeric alpha_predicted or lambda rejects row,MTS curve must use R10_alpha_lambda_curve_MTS_source_normalization.csv schema from checkpoint 558,AR559_0_MTS_schema,false
+implemented,symbolic alpha(lambda) bound rejects row,bound curve must use R10_alpha_lambda_bound_curve_DIGITIZED.csv schema,AR559_1_bound_schema,false
+implemented,template rows stay dry-run only,valid_for_claim must be true on both MTS and bound rows before comparison can support R10,AR559_2_claim_flag,false
+implemented,"any missing, out-of-range, or exceeding row blocks R10",abs(alpha_predicted(lambda)) <= alpha_bound(lambda) for all valid rows,AR559_3_comparison_rule,false
+implemented_and_verified,false-positive local GR pass,dry-run with placeholders must produce R10_pass_for_claim=false,AR559_4_no_claim_dryrun,false

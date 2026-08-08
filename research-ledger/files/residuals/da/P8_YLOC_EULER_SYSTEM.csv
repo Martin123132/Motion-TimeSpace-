@@ -1,0 +1,8 @@
+component_id,Y_component,candidate_Euler_equation,zero_conditions,would_clear,current_status,valid_for_claim
+Y0_trace_expansion,X_D,L_X X_D = J_X with L_X positive on compact local domain,J_X=0 and boundary flux n.grad X_D=0,coherent trace-load source,conditional_partial_from_484,false
+Y1_coherent_projector,Qcoh_D - h X_D/3,algebraic/constraint equation plus positive STF penalty for non-trace modes,trace projector owned and STF source current zero,LRV_QCOH_PROJECTOR_OWNERSHIP,partial_clause_stress_open,false
+Y2_boundary_flux,Phi_boundary^i=P_loc^i_nu n_mu K_boundary^{mu nu},boundary/collar elliptic equation L_B Phi^i = J_B^i,J_B^i=0 and scalar stationary boundary no-flux/no-marker conditions,LRV_BOUNDARY_R7_ALPHA3,not_parent_derived,false
+Y3_domain_vector,V_domain^i,L_V V_domain^i = J_V^i,domain selector carries no vector/preferred-frame source,LRV_DOMAIN_R5_ALPHA1;LRV_DOMAIN_R6_ALPHA2;LRV_DOMAIN_R7_ALPHA3,not_parent_derived,false
+Y4_domain_STF_stress,S_TF_domain^{ij},L_S S_TF^{ij}=J_S^{ij},projector/domain stress is topological or isotropic trace-only,LRV_DOMAIN_R8_XI;LRV_PROJECTOR_STRESS_ACCOUNTING,retained_debt,false
+Y5_source_normalization,Delta_mu_source,L_mu Delta_mu = J_mu,measured-GM source current is constant and no derivative/range/species leakage,LRV_DOMAIN_R11_SOURCE_NORMALIZATION,not_parent_derived,false
+Y6_stress_Bianchi,nabla_mu T_extra^{mu nu},Ward identity plus retained-stress conservation equation,all extra stresses vanish/topological or are conserved below PPN bounds,LRV_PROJECTOR_STRESS_ACCOUNTING;LRV_TOTAL_ALPHA3_GUARD,retained_debt,false

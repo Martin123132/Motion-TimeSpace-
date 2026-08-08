@@ -1,0 +1,10 @@
+validation_id,check,status,details
+VAL1380_0_sources,every cited local source path exists and anchor is found,PASS,SRC1380_0_1379_doc exists=True anchor=True; SRC1380_1_1379_next exists=True anchor=True; SRC1380_2_1379_dimensional_lock exists=True anchor=True; SRC1380_3_1379_closure_schema exists=True anchor=True; SRC1380_4_1302_memory_stress exists=True anchor=True; SRC1380_5_1302_fixed_field exists=True anchor=True; SRC1380_6_1378_gradient_branch exists=True anchor=True; SRC1380_7_802_shell exists=True anchor=True; SRC1380_8_803_anticheat exists=True anchor=True; SRC1380_9_1171_boundary_nogo exists=True anchor=True
+VAL1380_1_kappa_origin,kappa_m maps to Z_m as a source-backed symbolic nonclaim coefficient slot,PASS,KOR1380_4 and GATE1380_0 establish kappa_m=Z_m as symbolic/nonclaim only.
+VAL1380_2_shell_route,shell/boundary route is audited without false finite bound,PASS,SBA1380_4 keeps no explicit finite shell bound row.
+VAL1380_3_closure_feed,closure runner feed is updated with kappa_m=Z_m and refusal gates,PASS,CFU1380 updates ell_tr and stress/shell guards.
+VAL1380_4_claim_refusal,local-GR/PPN/R10 claims remain blocked,PASS,GATE1380_4 keeps BLOCKED_NO_CLAIM.
+VAL1380_5_no_claim_rows,all generated rows keep valid_for_claim=false and claim_allowed=false,PASS,1380 improves symbolic coefficient provenance but does not score local claims.
+VAL1380_6_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1380_SOURCE_REGISTER.csv:10; P8_Y5_R10_1380_KAPPA_ZM_ORIGIN_COEFFICIENT_ROW.csv:5; P8_Y5_R10_1380_SHELL_BOUND_ROUTE_AUDIT.csv:5; P8_Y5_R10_1380_CLOSURE_RUNNER_FEED_UPDATE.csv:6; P8_Y5_R10_1380_CLAIM_GATE.csv:5; P8_Y5_R10_1380_DECISION_LEDGER.csv:3; P8_Y5_R10_1380_NEXT_TARGET.csv:1
+VAL1380_7_scope,generated outputs stay inside post-checkpoint-work and outside formalization-workbench,PASS,ROOT=D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work; FORMALIZATION_EXISTS=True
+VAL1380_8_overall,overall 1380 validation,PASS,1380 maps kappa_m to Z_m as a source-backed symbolic nonclaim slot and keeps shell/local claims blocked.

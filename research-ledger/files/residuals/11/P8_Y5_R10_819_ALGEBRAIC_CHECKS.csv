@@ -1,0 +1,6 @@
+check_id,condition,result,blocker,valid_for_claim,generated_utc
+A819_0_explicit_source,S_Gamma is written as B_mem*dF_X/dN with a visible formula for F_X.,pass_symbolic,symbolic is not parent-derived,false,2026-06-12T18:04:59+00:00
+A819_1_positivity,"S_Gamma>=0 follows only if B_mem>=0, p_source>0, X_star>0, X>=0, and dX/dN>=0.",conditional,must derive or bound dX/dN sign,false,2026-06-12T18:04:59+00:00
+A819_2_normalization,Integral S_Gamma dN = B_mem[F_X(N_f)-F_X(N_i)]. Full budget requires F_X(N_i)=0 and F_X(N_f)=1.,conditional,endpoint behaviour of X is not signed,false,2026-06-12T18:04:59+00:00
+A819_3_units,"If N is dimensionless, S_Gamma has units of B_mem per e-fold; X/X_star must be dimensionless.",pass_if_X_star_matches_X,units of X must be fixed by parent invariant definition,false,2026-06-12T18:04:59+00:00
+A819_4_no_fit_reuse,Old C1 values such as nu_act=7/4 or F_eq=3/5 are not inserted.,pass,p_source remains symbolic until derived or separately stress-labelled,false,2026-06-12T18:04:59+00:00

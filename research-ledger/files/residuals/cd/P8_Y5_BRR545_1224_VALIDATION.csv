@@ -1,0 +1,16 @@
+check_id,check,status,details,valid_for_claim,claim_allowed
+VAL1224_0_sources_exist,all cited local sources exist,PASS,13/13 sources exist,False,False
+VAL1224_1_needles_found,all cited source needles found,PASS,13/13 needles found,False,False
+VAL1224_2_owner_verdict_nonclaim,owner proof is not falsely promoted,PASS,SOURCE_WEIGHT_OWNER_PROOF_NOT_DERIVED,False,False
+VAL1224_3_obstructions_active,obstructions remain active and nonclaim,PASS,OBS1224_0_wA_action_multiplier; OBS1224_1_path_integral_scale; OBS1224_2_disconnected_species; OBS1224_3_readout_regeneration,False,False
+VAL1224_4_finite_contract_complete,finite source-weight input contract contains required rows,PASS,FSW1224_0_eta_bound; FSW1224_1_delta_w; FSW1224_2_tau_WEP; FSW1224_3_source_worldtube; FSW1224_4_readout_kernel; FSW1224_5_no_cancellation,False,False
+VAL1224_5_missing_inputs_nonclaim,missing finite inputs remain nonclaim,PASS,"Delta_w, tau_WEP, source_worldtube, and readout kernel are missing/nonclaim",False,False
+VAL1224_6_product_not_scoreable,source-weight product is not scoreable,PASS,MISSING_NUMERIC_PRIOR_WIDTH;MISSING_LAB_SOURCE_ORBIT_PROJECTION;MISSING_SOURCE_PROFILE_WEIGHTING;OFFICIAL_ARRAYS_NOT_IMPORTED,False,False
+VAL1224_7_no_measured_G_absorption,no measured-G absorption shortcut,PASS,no measured-G absorption guard active,False,False
+VAL1224_8_runner_feed_nonclaim,runner feed keeps source-weight refused,PASS,valid_prediction_rows_delta=0 for all feed rows,False,False
+VAL1224_9_next_target_tau_WEP,next target stages tau_WEP projection,PASS,1225-Y5-R10-tau-WEP-source-worldtube-readout-projection.md,False,False
+VAL1224_10_claim_gates_blocked,claim gates keep physical claims blocked,PASS,owner/obstruction/finite-input/product/local-claim gates blocked,False,False
+VAL1224_11_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout claim-bearing tables,False,False
+VAL1224_12_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1224_SOURCE_REGISTER.csv:13; P8_Y5_R10_1224_OWNER_PROOF_CLAUSES.csv:7; P8_Y5_R10_1224_SOURCE_WEIGHT_OBSTRUCTION_LEDGER.csv:4; P8_Y5_R10_1224_FINITE_SOURCE_WEIGHT_INPUT_CONTRACT.csv:6; P8_Y5_R10_1224_SOURCE_WEIGHT_PRODUCT_LAW.csv:2; P8_Y5_R10_1224_LOCAL_GR_CONSEQUENCE_LEDGER.csv:3; P8_Y5_R10_1224_RUNNER_FEED_UPDATE.csv:2; P8_Y5_R10_1224_DECISION_LEDGER.csv:3; P8_Y5_R10_1224_CLAIM_GATES.csv:6; P8_Y5_R10_1224_NEXT_TARGET.csv:1,False,False
+VAL1224_13_formalization_untouched,formalization-workbench untouched during run,PASS,formalization_recent_after_run_start_count=0,False,False
+VAL1224_14_overall,overall 1224 validation,PASS,1224 does not close source-weight owner proof; exact finite input contract and tau_WEP next target are staged,False,False

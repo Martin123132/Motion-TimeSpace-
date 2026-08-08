@@ -1,0 +1,10 @@
+runner_id,quantity,formula,units,if_nonzero,required_source,scoreable_now,valid_for_claim,timestamp_utc
+GRR4017_0_C_sector,C_sector,0 if K_G parent sector is adopted; else 1 or sourced residual,dimensionless,blocks constant G if nonzero,parent action sector source,false,False,2026-07-01T21:21:18+00:00
+GRR4017_1_C_local_scalar,C_local_scalar,0 if kappa_* notin Gamma(E_local); else scalar coupling coefficient,dimensionless,activates Gdot/fifth-force,local scalar field source or theorem zero,false,False,2026-07-01T21:21:18+00:00
+GRR4017_2_C_noHom,C_noHom,"0 if Hom(labels,K_G)=0; else max label-to-coupling map norm",dimensionless,activates source/range/domain drift,object-language no-Hom source,false,False,2026-07-01T21:21:18+00:00
+GRR4017_3_C_Gref_kappa,C_Gref_kappa,ln(kappa_eff*c^4/(8*pi*G_ref)),dimensionless,EH/Poisson/Newton amplitude mismatch,same branch calibration source,false,False,2026-07-01T21:21:18+00:00
+GRR4017_4_Gdot,D_t_lnG,D_t ln G_ref; compare with 9.6e-15 yr^-1 if nonzero,yr^-1,Gdot empirical pressure,numeric derivative or theorem zero,false,False,2026-07-01T21:21:18+00:00
+GRR4017_5_range,alpha_lambda,finite-range alpha(lambda) projection from partial_lambda lnG or scalar branch,dimensionless,R10/fifth-force pressure,alpha(lambda) curve and prediction source,false,False,2026-07-01T21:21:18+00:00
+GRR4017_6_source,partial_A_lnG,source/material derivative of lnG_ref,dimensionless,WEP/source-charge pressure,source/material coefficient map,false,False,2026-07-01T21:21:18+00:00
+GRR4017_7_exchange,delta_kappa_exchange,kappa^-1 P_loc[T_obs nabla kappa],dimensionless projection,Bianchi/exchange pressure,exchange owner theorem or coefficient,false,False,2026-07-01T21:21:18+00:00
+GRR4017_8_PPN_handoff,epsilon_PPN_2nd,|gamma-1|+|beta-1|+|delta_beta_source| after K_G packet,dimensionless,local GR promotion gate,4018 PPN source-stability rows,false,False,2026-07-01T21:21:18+00:00

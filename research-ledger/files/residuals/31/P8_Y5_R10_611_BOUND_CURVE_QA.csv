@@ -1,0 +1,8 @@
+qa_id,check,result,detail,valid_for_claim
+QA611_0_schema_rows,review candidate file has parseable rows,pass,raw_rows=390;numeric_points=390,false
+QA611_1_positive_numeric,lambda and alpha are positive numeric,pass,positive_numeric=True,false
+QA611_2_lambda_order,lambda values can be sorted into a monotonic curve,pass,lambda_min=5.894419132271889e-06;lambda_max=0.0010099153351819316,false
+QA611_3_no_missing_markers,review rows contain no MISSING markers,pass,missing_marker_rows=0,false
+QA611_4_source_assets_exist,local figure source and render assets exist,pass,source_missing=0;render_missing=0,false
+QA611_5_anchor_recovery,nearest review point recovers alpha~1 at 38.6um,pass_review_candidate,nearest_bound_id=R10_VECTOR_2020_REVIEW_0154;lambda=3.866316691563e-05;alpha=9.915372447041e-01;lambda_rel_error=1.636448591456e-03;alpha_log10_error=3.690967927978e-03;prior_570=True,false
+QA611_6_nonclaim_guard,review candidate remains nonclaim,pass,claim_rows=0,false

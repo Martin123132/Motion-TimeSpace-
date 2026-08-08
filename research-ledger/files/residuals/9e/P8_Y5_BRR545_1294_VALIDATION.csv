@@ -1,0 +1,13 @@
+check_id,check,status,details
+VAL1294_0_sources_exist,registered source paths exist and anchors are found,PASS,9/9 source anchors found
+VAL1294_1_Csign_candidate_acquired,C_sign candidate exists as source-backed nonclaim row,PASS,SOURCE_BACKED_CONVENTION_CANDIDATE_NOT_PROMOTED
+VAL1294_2_Csign_not_promoted,C_sign remains unusable in live scoring until sign/volume/Khat gates close,PASS,fix covariant/contravariant Hilbert variation convention; lock volume subtraction; prove K_hat=K_metric including derivative/boundary terms; attach response operator
+VAL1294_3_patch_preview_replaces_Csign_only,patch preview replaces MISSING_C_SIGN only in m/Lcg rows,PASS,RRI1292_0_m_chain;RRI1292_1_Lcg_chain
+VAL1294_4_preview_rows_still_rejected,all preview rows remain rejected/nonclaim/no-score,PASS,RRI1292_0_m_chain=5;RRI1292_1_Lcg_chain=6;RRI1292_2_cdb_chain=5;RRI1292_3_chain_vector=3
+VAL1294_5_no_score_emitted,no residual or local-GR score is emitted,PASS,score_value blank and score_emitted=false for every preview row
+VAL1294_6_response_blockers_remain,response operator blockers remain explicit,PASS,response_blocker_rows=5
+VAL1294_7_csv_parse,all generated CSVs parse cleanly,PASS,P8_Y5_R10_1294_SOURCE_REGISTER.csv:9; P8_Y5_R10_1294_INPUT_PRIORITY_AUDIT.csv:6; P8_Y5_R10_1294_C_SIGN_CONVENTION_CANDIDATE.csv:1; P8_Y5_R10_1294_RUNNER_PATCH_PREVIEW_NONCLAIM.csv:4; P8_Y5_R10_1294_RESPONSE_OPERATOR_BLOCKERS.csv:5; P8_Y5_R10_1294_CLAIM_GATES.csv:5; P8_Y5_R10_1294_DECISION_LEDGER.csv:3; P8_Y5_R10_1294_NEXT_TARGET.csv:1
+VAL1294_8_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1294_9_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1294_10_next_target_1295,next target routes to Csign promotion test or response-operator sourcing,PASS,1295-Y5-R10-RAB-Csign-promotion-test-or-first-response-operator-source.md
+VAL1294_11_overall,overall 1294 validation,PASS,"1294 acquires a source-backed C_sign convention candidate, keeps it nonclaim/unpromoted, preserves runner rejection, and routes to promotion/response sourcing"

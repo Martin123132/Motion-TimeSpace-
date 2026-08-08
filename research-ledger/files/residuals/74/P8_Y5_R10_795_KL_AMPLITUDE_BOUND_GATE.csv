@@ -1,0 +1,6 @@
+gate_id,quantity,bound_or_law,meaning,status,valid_for_claim,generated_utc
+KAB795_0_scale_law,K_L amplitude,"if Box phi=(2/3)Gamma_eff on scale L, then phi~Gamma_eff L^2 and K_L~Gamma_eff up to geometry constants",divergence cancellation does not make the stress small,formal_scaling,false,2026-06-12T12:27:41+00:00
+KAB795_1_Newton_fraction,"epsilon_K = |c^2 Kbar_L,00| / |4 pi G rho|",epsilon_K must be below local Newton/PPN tolerance,q_loc=0 still fails if K_L contributes too much to the local metric source,missing_numeric_source_model,false,2026-06-12T12:27:41+00:00
+KAB795_2_PPN_vector,"{delta_gamma, delta_beta, alpha1, alpha2, eta_AB, Gdot/G, clock_delta_z}",response vector from K_L/A_loc/K_perp must be below observational limits,"formal cancellation needs a full local-test pass, not only q_loc algebra",missing_response_matrix,false,2026-06-12T12:27:41+00:00
+KAB795_3_Kperp_guard,"K_perp,loc","K_perp must be zero, higher-order suppressed, or explicitly PPN-bounded",longitudinal control does not control transverse tensor modes,open_from_prior_work,false,2026-06-12T12:27:41+00:00
+KAB795_4_acceptance,solver acceptance,parent origin plus epsilon_K/PPN/Kperp bounds are all required,no local GR claim until both origin and amplitude close,not_satisfied,false,2026-06-12T12:27:41+00:00

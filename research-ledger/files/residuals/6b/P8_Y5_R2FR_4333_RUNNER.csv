@@ -1,0 +1,5 @@
+runner_id,branch_input,action,output,claim_policy
+RUN4333_0_standard_all_clauses,all CON4333 standard clauses signed and open tails zero,ALLOW_SOURCE_READOUT_ZERO,epsilon_source_readout=0,branch-local closure only; no public local-GR claim
+RUN4333_1_open_tail_present,any Xi/EM/coefficient/projection/tau/domain/guard tail survives,USE_OPEN_TAIL_TEST_PACK,R_arena projection rows required,valid_for_claim=false until sourced
+RUN4333_2_branch_mixed,standard zero for one sector mixed with unsourced nonstandard sector,REJECT_MIXED_CLOSURE,retain corresponding open tail,firewall
+RUN4333_3_projection_fit,Pi_arena chosen after seeing residuals,REJECT_POSTFIT_PROJECTION,projection invalid for claim,firewall

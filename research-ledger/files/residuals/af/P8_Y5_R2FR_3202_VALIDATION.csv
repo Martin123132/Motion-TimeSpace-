@@ -1,0 +1,9 @@
+check_id,check,pass,detail,generated_utc
+VAL3202_00_inputs_exist,all cited inputs exist,true,inputs=7,2026-06-26T19:38:38.379549+00:00
+VAL3202_01_second_order_scalar_rejected,single second-order scalar operator is not promoted to C1 rank-four owner,true,rank two: endpoint values duplicate; derivative slots unowned,2026-06-26T19:38:38.379549+00:00
+VAL3202_02_forced_cauchy_rejected,rank-four Cauchy forcing of second-order elliptic problem is rejected,true,"rank four algebraically, but rejected because generic Cauchy data overdetermine a second-order elliptic boundary problem",2026-06-26T19:38:38.379549+00:00
+VAL3202_03_l4_conditional_rank4_positive,fourth-order clamped trace row has rank four and positive pullback,true,min_eig=1.48074175964,2026-06-26T19:38:38.379549+00:00
+VAL3202_04_parent_gates_not_claimed,"parent origin, zero-mode, trace-map, and local-safety gates remain open/nonclaim",true,parent_origin_of_L4_or_two_component_L2=open;coercive_positive_energy=conditional_mathematical_pass_not_parent_signed;no_zero_modes_or_fixed_gauge=open;parent_trace_map_to_C1_slots=open;local_safety_or_decay=open,2026-06-26T19:38:38.379549+00:00
+VAL3202_05_bobs_fallback_staged,Bobs fallback trigger is staged if parent Kperp origin fails,true,no parent origin for L4/two-component Kperp;Kperp operator derived but local safety/decay gate fails,2026-06-26T19:38:38.379549+00:00
+VAL3202_06_no_claim_leak,all generated non-input rows remain valid_for_claim=false,true,"no local-GR, Newton, PPN, or parent rank-four claim",2026-06-26T19:38:38.379549+00:00
+VAL3202_07_csv_parse,all generated CSV files parse cleanly,true,P8_Y5_R2FR_3202_INPUTS.csv;P8_Y5_R2FR_3202_KPERP_OPERATOR_DERIVATION_AUDIT.csv;P8_Y5_R2FR_3202_TRACE_RANK_AUDIT.csv;P8_Y5_R2FR_3202_COERCIVITY_AND_ZERO_MODE_GATE.csv;P8_Y5_R2FR_3202_BOBS_FALLBACK_TRIGGER.csv;P8_Y5_R2FR_3202_DECISION.csv,2026-06-26T19:38:38.379549+00:00

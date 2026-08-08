@@ -1,0 +1,6 @@
+run_id,test,input,result,detail,valid_prediction_row,valid_for_claim
+RUN3366_0_external_bound_import,MICROSCOPE external comparator row is numeric and source-backed,3363/3260/3342 WEP rows,PASS_EXTERNAL_BOUND_ONLY,external bound retained as 2.800000000000e-15 dimensionless component target,false,false
+RUN3366_1_readout_partial,readout factor tau_readout_X is source-backed,3262 readout factor evidence,PASS_PARTIAL_FACTOR_ONLY,"tau_readout_X exists, but source_profile and channel_projection are missing",false,false
+RUN3366_2_live_product,evaluate eta_MTS finite WEP product,C_parent*K_CMSM*R_source*R_material,REFUSE_PRODUCT_EVALUATION,missing_or_partial=C_parent_WEP_slot_import;K_CMSM_readout;R_source_Earth_worldtube;R_material_TA6V_minus_PtRh10_full_tensor;tau_WEP_product_convention,false,false
+RUN3366_3_tau_one_shortcut,set tau_WEP=1 and score Delta_w directly,manual shortcut,REJECT_SHORTCUT,"tau=1 hides the readout/source/material projection, exactly the closure assumption this branch is meant to avoid",false,false
+RUN3366_4_local_GR_promotion,promote WEP/local-GR source-normalization pass,3366 packet,BLOCKED,"external bound exists, but no executable MTS prediction row exists",false,false

@@ -1,0 +1,12 @@
+check_id,check,status,details
+VAL1324_0_sources_exist,registered source paths exist and anchors are found,PASS,11/11 source anchors found
+VAL1324_1_equation_attempt_refuses_shortcuts,equation attempt separates clock sensitivity from MTS product and refuses shortcuts,PASS,EQ1324_0_clock_observable=PARTIAL_EXTERNAL_CLOCK_SENSITIVITY_ONLY;EQ1324_1_direct_product=NOT_FILLABLE_FROM_CURRENT_CORPUS;EQ1324_2_factorized_product=REJECTED_AS_DERIVATION;EQ1324_3_h0_route=DIAGNOSTIC_ONLY_REFUSED;EQ1324_4_local_silence=CONDITIONAL_ONLY_NOT_ACTIVE
+VAL1324_2_fill_audit_keeps_missing_fields,direct product fill audit records current missing fields without promotion,PASS,predicted_product_value;predicted_product_units;product_definition;readout_model;source_path;source_anchor;equation_ref;provenance_note;sign_convention
+VAL1324_3_clock_waitstate_complete,clock wait-state ledger covers every required direct product field,PASS,waitstate_fields=9
+VAL1324_4_runner_refuses_waitstate,runner remains refused and not scored after direct product fill attempt,PASS,no direct P_clock_alpha value/readout/provenance; tau/H0/bound shortcuts refused
+VAL1324_5_wep_route_selected,next route targets WEP source-normalization decomposition fields,PASS,REQ1316_6_beta_source;REQ1316_7_tau_wep;REQ1316_8_material;REQ1316_9_source_profile;HSC1313_4_source_weight
+VAL1324_6_shortcuts_enforced,anti-shortcut gates are enforced,PASS,SHORT1324_0_no_clock_bound_prediction;SHORT1324_1_no_h0_tau;SHORT1324_2_no_standalone_balpha;SHORT1324_3_no_clock_to_wep_transfer
+VAL1324_7_nonclaim_policy,all generated rows remain nonclaim,PASS,valid_for_claim=false and claim_allowed=false throughout generated tables
+VAL1324_8_formalization_untouched,formalization-workbench untouched by generated outputs,PASS,formalization_generated_output_count=0
+VAL1324_9_next_target_1325,next target routes to WEP source-normalization decomposition,PASS,1325-Y5-R10-RAB-WEP-source-normalization-decomposition-first-fill.md
+VAL1324_10_overall,overall 1324 validation,PASS,"1324 wait-states direct clock product, refuses shortcuts, and selects WEP source-normalization route"

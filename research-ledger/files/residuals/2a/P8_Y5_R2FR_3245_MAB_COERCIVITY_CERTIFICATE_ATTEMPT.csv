@@ -1,0 +1,7 @@
+cert_id,object,certificate,derived_result,current_status,claim_allowed
+MAB3245_0_definition,response Hessian,M_AB := partial_A partial_B Gamma_eff|_{Z=0} on the parent-owned vertical response subspace V_Z,formal second-variation object identified,OBJECT_DEFINED_NOT_PARENT_SIGNED,false
+MAB3245_1_symmetry,symmetric bilinear form,M_AB=M_BA if Gamma_eff is C2 and Z^A coordinates are fixed on one branch,Schwarz symmetry gives formal symmetry,CONDITIONAL_ON_BRANCH_AND_UNITS,false
+MAB3245_2_coercivity_theorem,positive lower bound,"m0 := inf_{Z in V_Z, ||Z||_Z=1} <Z,MZ>; if M is self-adjoint, gauge kernels are quotiented, and spectrum(M|V_Z)>=m0>0, then ||Z_*|| <= m0^{-1}||J_tot||",exact coercivity-to-amplitude theorem,THEOREM_DERIVED_INPUTS_UNSIGNED,false
+MAB3245_3_no_zero_modes,kernel guard,ker(M) on V_Z is empty after quotient/gauge removal; otherwise use Moore-Penrose inverse and retain kernel source projection,zero-mode failure mode made explicit,KERNEL_AUDIT_MISSING,false
+MAB3245_4_units_norm,common units and norm,"J_tot and M_AB must use the same Z-normalization, density weight, local volume/collar norm, and branch frame",prevents fake small amplitude from unit mismatch,UNITS_AND_NORM_NOT_SOURCED,false
+MAB3245_5_verdict,current MTS M_AB,"M_AB coercivity is the right next owner object, but current corpus still lacks parent-signed spectrum/units",do not claim amplitude safety; use m0 acquisition row,COERCIVITY_NOT_PROMOTED,false

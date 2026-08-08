@@ -1,0 +1,7 @@
+update_id,target_residual,update_rule,resulting_formula_or_action,status,valid_for_claim,timestamp_utc
+RUP3879_0_R3818_total,R_EH_Poisson_GM_total,replace generic common drift slot by b_Gcommon,"sum_abs(R_EH_owner,R_Poisson_norm,R_GM_calibration,R_PiM_JH_flux,R_PPN_readout_tail,b_common_drift)",REFINED_NOT_CLOSED,False,2026-07-01T07:09:52+00:00
+RUP3879_1_time,Gdot/common time drift,D_t ln C_* maps to Gdot/source-time residual unless zero,use Gdot/clock/source drift bound or parent fixed coupling theorem,BOUND_REQUIRED_IF_NOT_ZERO,False,2026-07-01T07:09:52+00:00
+RUP3879_2_radial,radial source hair,D_r ln C_* maps to radial mu_obs/G_eff hair,source-free exterior no-hair or radial profile bound,BOUND_REQUIRED_IF_NOT_ZERO,False,2026-07-01T07:09:52+00:00
+RUP3879_3_range,range/fifth-force branch,D_lambda ln C_* maps to R10/range-sensitive coupling,no-pole theorem or alpha(lambda) bound row,BOUND_REQUIRED_IF_NOT_ZERO,False,2026-07-01T07:09:52+00:00
+RUP3879_4_frame,frame/domain drift,D_frame ln C_* and Delta_domain(C_*) map to preferred-frame/source-domain residuals,same-frame/source-pullback theorem or PPN/WEP bound,BOUND_REQUIRED_IF_NOT_ZERO,False,2026-07-01T07:09:52+00:00
+RUP3879_5_abs_constant,absolute calibration,C_*(p0) can be absorbed into G0 once; only derivatives and mismatch across branches remain observable in local tests,do not try to derive decimal G in this gate,GR_STYLE_CALIBRATION_ALLOWED,False,2026-07-01T07:09:52+00:00

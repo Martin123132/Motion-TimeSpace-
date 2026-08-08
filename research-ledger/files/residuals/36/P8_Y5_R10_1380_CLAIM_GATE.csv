@@ -1,0 +1,6 @@
+gate_id,gate,status,reason,valid_for_claim,claim_allowed
+GATE1380_0_kappa_origin,kappa_m/Z_m receives a source-backed nonclaim coefficient row,PASS_SYMBOLIC_SOURCE_BACKED_SLOT,KOR1380 maps kappa_m to Z_m from the canonical scalar stress row.,False,False
+GATE1380_1_kappa_numeric,Z_m sign/value/units are source-backed,BLOCKED_VALUE_SIGN_UNITS_MISSING,MSR1302 explicitly lists MISSING_Z_m_SIGN_AND_VALUE and related unit/frame gaps.,False,False
+GATE1380_2_shell_bound,explicit finite shell/boundary bound exists,BLOCKED_NO_EXPLICIT_FINITE_SHELL_BOUND,"802/803/1171 reject direct, generic, and shortcut shell routes.",False,False
+GATE1380_3_runner_update,closure runner can use improved symbolic kappa origin,PASS_SYMBOLIC_RUNNER_UPDATE,closure feed updates kappa_m=Z_m and ell_tr=sqrt(Z_m L0^2/F2).,False,False
+GATE1380_4_local_claim,local GR / PPN / R10 pass can be claimed,BLOCKED_NO_CLAIM,symbolic coefficient origin is not a numeric or theorem-zero local-GR reduction.,False,False

@@ -1,0 +1,8 @@
+gate_id,condition,current_status,source_anchor,gate_pass,valid_for_claim,claim_allowed,timestamp_utc
+CG2691_0_classifier,normal-form classifier is complete and parent-signed,FAIL_CLASSIFIER_LEDGER_READY_NOT_COMPLETE,CLS2691_10_verdict,false,false,false,2026-06-23T07:25:03.003463+00:00
+CG2691_1_source_identity,T_active=T_H and no prefactor/shadow/projector bypass,FAIL_SOURCE_MAP_IDENTITY_UNSIGNED,SMC2691_7_verdict,false,false,false,2026-06-23T07:25:03.003466+00:00
+CG2691_2_boundary,boundary/improvement terms are silent or bounded,FAIL_BOUNDARY_SILENCE_UNSIGNED,SMC2691_4_boundary_silence,false,false,false,2026-06-23T07:25:03.003468+00:00
+CG2691_3_lhs_gr,left-hand operator has Einstein/Newton limit,FAIL_LHS_GR_BRIDGE_NOT_DERIVED,SMC2691_5_gr_lhs,false,false,false,2026-06-23T07:25:03.003471+00:00
+CG2691_4_residual_values,retained residual coefficient pack has values/kernels,FAIL_RESIDUAL_PACK_NONCLAIM,RCP2691_6_total_envelope,false,false,false,2026-06-23T07:25:03.003475+00:00
+CG2691_5_guardrails,Ward-only/cancellation-only/action-schema shortcuts refused,PASS_GUARD_ONLY,DRY2691_*,true,false,false,2026-06-23T07:25:03.003478+00:00
+CG2691_6_verdict,local source/GR/Newton branch can claim pass,CLAIM_BLOCKED,CG2691_0_classifier through CG2691_5_guardrails,false,false,false,2026-06-23T07:25:03.003480+00:00

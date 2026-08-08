@@ -1,0 +1,6 @@
+gate_id,gate,needed_for,current_result,blocker,valid_for_claim
+SNG3413_0_no_linear_J,No linear source term J_A Z^A appears in the local branch.,double-zero promotion from formal to physical,FAIL_FOR_Y5_AND_Y6,source normalization and extra stress can be exchange-even,False
+SNG3413_1_boundary_odd_charge,Boundary/collar odd charge vanishes.,alpha3/vector silence and no local force flux,CONDITIONAL_ONLY,Y2 boundary flux and P_loc/boundary terms not parent-signed,False
+SNG3413_2_domain_vector,"Domain vector is absent, topological, pure gauge, or dynamically zero.",alpha1/alpha2/alpha3/xi silence,CONDITIONAL_ONLY,Y3 domain vector no-source theorem not parent-signed,False
+SNG3413_3_physical_residual_lock,"Z^A equals the physical q_loc and local residual basis, not an auxiliary shadow.",q_loc local-GR promotion,FAIL_CURRENT,Y0-Y6 component map and PPN/source-normalization readout are not fully locked,False
+SNG3413_4_positive_operator,M_AB/L_AB is positive after gauge/constraint quotient.,Z=0 no-hair from energy identity,UNSIGNED,operator positivity and constraint quotient not supplied,False

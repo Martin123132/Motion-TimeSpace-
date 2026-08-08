@@ -1,0 +1,5 @@
+budget_id,formula,Gamma_fork,status,valid_for_claim
+UB3334_0_reduced_with_Gamma_fork,R_PPN <= R_Gamma_fork + A_PPN C_metric epsilon_eff_PPN^2 + epsilon_composite_PPN,"R_Gamma_fork is zero only for finite pole; total Gamma is either A_Gamma |Gamma_local| L_PPN^2, A_K K_solar^m if parent-signed, or explicit open floor",REDUCED_BUDGET_WITH_GAMMA_FORK,false
+UB3334_1_Lambda_like_candidate,R_PPN <= A_Gamma (L_PPN/L_H)^2 + A_PPN C_metric epsilon_eff_PPN^2 + epsilon_composite_PPN,valid only if Gamma_local is bounded by cosmological background scale or residual after subtraction,LAMBDA_CANDIDATE_NONCLAIM,false
+UB3334_2_Ksolar_candidate,R_PPN <= A_K K_solar^m + A_PPN C_metric epsilon_eff_PPN^2 + epsilon_composite_PPN,valid only if parent map signs Gamma_local residual to curvature-saturation S(K_solar),KSOLAR_CANDIDATE_NONCLAIM,false
+UB3334_3_if_Gamma_unclosed,R_PPN <= R_Gamma_open + A_PPN C_metric epsilon_eff_PPN^2 + epsilon_composite_PPN,use this if neither Gamma_local nor K_solar map is source-owned,OPEN_GAMMA_FALLBACK,false

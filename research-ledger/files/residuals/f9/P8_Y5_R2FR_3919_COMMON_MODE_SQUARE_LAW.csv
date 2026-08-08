@@ -1,0 +1,6 @@
+row_id,piece,formula_or_statement,meaning,status,valid_for_claim,timestamp_utc
+CM3919_0_gamma_blind,gamma-blind common mode,Phi_R11=Psi_R11 does not alter delta_gamma_R11 at linear order,3918 closes only the STF/slip sector,ACTIVE_AFTER_GAMMA,False,2026-07-01T10:46:59+00:00
+CM3919_1_effective_coefficients,effective beta coefficients,"A_eff=1+xi_1, B_eff=1+xi_2, delta_beta_common=(1+xi_2)/(1+xi_1)^2-1",common mode is harmless for beta only if its quadratic coefficient scales as the square of its linear coefficient,DERIVED_CALIBRATED_FORM,False,2026-07-01T10:46:59+00:00
+CM3919_2_square_law,mass-renormalization square law,xi_2=2 xi_1+xi_1^2 => delta_beta_common=0,a pure GR-like mass rescaling preserves beta after measured-GM calibration,CONDITIONAL_ZERO,False,2026-07-01T10:46:59+00:00
+CM3919_3_small_bound,small residual bound,|delta_beta_common| ~= |xi_2-2 xi_1| <= 7.8e-05,"if xi_1,xi_2 are small, beta forces the mismatch xi_2-2xi_1 below the PPN beta tolerance",BOUND_FORMULA,False,2026-07-01T10:46:59+00:00
+CM3919_4_radial_guard,nonconstant common mode,"radial/time/source-dependent Xi_N cannot be hidden in GM; route it to inverse-square, ephemeris, Gdot and beta residuals",prevents orbital-GM absorption shortcut,NO_ABSORPTION_GUARD,False,2026-07-01T10:46:59+00:00

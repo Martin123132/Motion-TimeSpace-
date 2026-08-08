@@ -1,0 +1,7 @@
+gate_id,rule,result,evidence,claim_effect
+G479_0_sources,all cited source paths exist,pass,missing=0,traceability only
+G479_1_R11_claimable,R11 executable vector has claim-valid rows for domain source silence,fail_for_claim,R11_claimable_rows=0; domain_claimable_rows=0,R11 silence not accepted
+G479_2_domain_coefficients,domain coefficient rows are either theorem-zero or numeric/source-bound filled,fail_for_claim,domain_coefficient_claimable_rows=0,domain alpha3 and mu_extra rows remain not scoreable
+G479_3_no_missing_debt,domain R11 rows contain no MISSING/retained/conditional debt markers,fail_for_claim,domain_rows_with_debt=3,must fill or derive rows before promotion
+G479_4_fill_requirements,missing rows are converted into explicit fill requirements,pass,fill_requirement_rows=5,next numeric/theorem fill step is concrete
+G479_5_claim_ceiling,no R11/domain source result is promoted while zero route fails,pass,zero_route_rejected; fill_required,"no alpha3, mu_extra, Newton, PPN, or local-GR pass"

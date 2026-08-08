@@ -1,0 +1,5 @@
+step_id,statement,consequence,status,valid_for_claim
+VAR3325_0_metric_variation,"If S_matter = S_matter[g_pub,Psi_m], then delta S_matter = 1/2 int sqrt(-g_pub) T^munu delta g_pub_munu","all matter, including EM, sources geometry through T_munu",STANDARD_METRIC_VARIATION,false
+VAR3325_1_chain_to_psi,delta S_matter/delta psi = 1/2 int sqrt(-g_pub) T^munu (delta g_pub_munu/delta psi),psi sees matter only through the public metric readout; there is no independent material charge if Delta S_direct=0,CHAIN_RULE_DERIVED,false
+VAR3325_2_EM_stress,"For S_EM[g_pub,A], variation gives T_munu^EM and the Poynting vector is a component of the EM stress-energy flux","Poynting is real physics in the source, but not a new nonmetric coupling",MAXWELL_STRESS_ROUTE,false
+VAR3325_3_fifth_force_warning,"If Delta S_direct != 0, then delta S/direct delta psi adds a new source not proportional to T_munu delta g_pub",local GR/WEP/clock closure fails unless the direct vertex is symmetry-forbidden or empirically bounded,DERIVED_FAILURE_MODE,false

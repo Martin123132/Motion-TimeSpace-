@@ -1,0 +1,16 @@
+validation_id,passed,requirement,evidence
+VAL3019_00_sources_exist,True,every cited local source path exists,P8_Y5_R2FR_3019_SOURCE_REGISTER.csv
+VAL3019_01_csv_parse,True,generated CSV rows parse cleanly,all generated CSV artifacts import with csv.DictReader
+VAL3019_02_extraction_and_square_equivalence,True,beta extraction law and square-law equivalence are recorded,P8_Y5_R2FR_3019_BETA_SQUARE_LAW_PROOF_ATTEMPT.csv
+VAL3019_03_conditional_lapse_route,True,a concrete sufficient route to B_source=A_source^2 is derived conditionally,P8_Y5_R2FR_3019_BETA_SQUARE_LAW_PROOF_ATTEMPT.csv
+VAL3019_04_parent_square_not_claimed,True,conditional route is not promoted to MTS beta proof,P8_Y5_R2FR_3019_BETA_SQUARE_LAW_PROOF_ATTEMPT.csv; P8_Y5_R2FR_3019_PROMOTION_GATES.csv
+VAL3019_05_field_contract_complete,True,"second-order field-equation contract includes source coefficients, operator, readout and denominator gates",P8_Y5_R2FR_3019_SECOND_ORDER_FIELD_EQUATION_CONTRACT.csv
+VAL3019_06_residual_decomposition_present,True,beta residual decomposition includes square gap and no-cancellation total,P8_Y5_R2FR_3019_BETA_RESIDUAL_DECOMPOSITION.csv
+VAL3019_07_first_fill_queue_selected,True,next coefficient-fill route is selected,P8_Y5_R2FR_3019_FIRST_COEFFICIENT_FILL_QUEUE.csv
+VAL3019_08_claims_blocked,True,all rows remain nonclaim/private-control rows,all 3019 generated ledgers
+VAL3019_09_missing_markers_nonclaim,True,rows with MISSING markers are never valid_for_claim=true,all 3019 generated ledgers
+VAL3019_10_branch_copies_exist,True,branch copies and acquisition queue exist,P8_Y5_R2FR_3019_BRANCH_COPIES.csv
+VAL3019_11_outputs_scoped,True,no generated file is outside post-checkpoint-work,generated path scope check
+VAL3019_12_formalization_not_targeted,True,formalization-workbench is not modified by this checkpoint,output target list excludes formalization-workbench
+VAL3019_13_next_target_selected,True,next target selects parent second-order coefficient map,P8_Y5_R2FR_3019_NEXT_TARGET.csv
+VAL3019_99_overall,True,all 3019 validation checks pass,aggregate of VAL3019_00 through VAL3019_13

@@ -1,0 +1,7 @@
+gate_id,gate,result,evidence,valid_for_claim
+PG3430_0_channel_decomposition,all hidden/projector channels are decomposed,PASS_ACCOUNTING,HCD3430_0 through HCD3430_6,False
+PG3430_1_zero_certificates,every hidden/projector channel has a parent-signed zero theorem,FAIL_CURRENT,CHA3430 rows retain unsigned parent/projector/readout/source inputs,False
+PG3430_2_bound_contracts,every nonzero channel has a symbolic bound row,PASS_SYMBOLIC_VALUES_MISSING,HBR3430_0 through HBR3430_6,False
+PG3430_3_no_cancellation,"hidden total uses absolute sum, not tuned cancellation",PASS_GUARD,CEX3430_0 and HBR3430_6,False
+PG3430_4_PC3400_4,no-extra-mass PC3400_4 is signed,BLOCKED_PARTIAL,hidden/projector channels are not zero/bounded numerically,False
+PG3430_5_local_GR,local GR/Newton/PPN branch is derived,BLOCKED,"PC3400_4, M_H_ref/tau, and second-order PPN remain open",False

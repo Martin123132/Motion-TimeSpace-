@@ -1,0 +1,7 @@
+contract_id,needed_object,mathematical_form,pass_condition,current_status,valid_for_claim
+NMC583_0_symplectic_potential,parent symplectic potential,delta L_parent = E_i delta Y^i + d theta_Y(delta Y),"theta_Y is explicit for the parent variables that own P,J_eff,P_mem",missing,false
+NMC583_1_vertical_generator,vertical transformation v_epsilon,"delta_epsilon Y^i = v_epsilon^i[Y], with d pi(v_epsilon)=0",transformation law is given for all parent fields and boundary fields,missing,false
+NMC583_2_Noether_current,Noether current,J_epsilon = theta_Y(v_epsilon)-mu_epsilon,dJ_epsilon=-E_i v_epsilon^i and J decomposes into epsilon C_X + dQ_epsilon,template_only,false
+NMC583_3_momentum_map,Hamiltonian generator,i_{v_epsilon} Omega_Y = delta G[epsilon],G[epsilon]=int epsilon C_X + Q_boundary is differentiable,not_derived,false
+NMC583_4_equivariance,constraint algebra,"{G[epsilon],G[eta]}=G[[epsilon,eta]]+K_boundary[epsilon,eta]",K_boundary=0 or is forbidden/proper-gauge on compact local branch,not_computed,false
+NMC583_5_boundary_zero,edge charge silence,Q_X[epsilon]=int_boundary epsilon_nu B_X^nu=0,"epsilon proper, B_X exact/pure gauge/zero, or Pi_M^H Q_X=0 by theorem",not_derived,false

@@ -1,0 +1,7 @@
+audit_id,step,formal_condition,status,blocker,valid_for_claim,claim_allowed
+DPA1273_0_reparametrize,use u=C_R/2 and v=ln(T/sqrt(S)),C_R approx 0 is equivalent to u approx 0,PASS_DEFINITIONAL,none; this is only a coordinate split on field space,False,False
+DPA1273_1_primary_secondary,multiplier action gives primary/secondary constraints,pi_Lambda approx 0; dot(pi_Lambda)=-2u approx 0,PASS_WITHIN_MULTIPLIER_ANSATZ,still assumes Lambda_R is in the parent action,False,False
+DPA1273_2_preservation,preserve u approx 0,"dot(u)={u,H_core}+Lambda-sector terms must vanish or fix a multiplier",BLOCKED_BY_UNSIGNED_HCORE,no parent bracket table or H_core for u/v exists,False,False
+DPA1273_3_source_silence,solve E_u/E_R without finite force,J_u + boundary_u + readout_regen_u = 0 on protected branch,BLOCKED_BY_MATTER_BOUNDARY_READOUT,"matter descent, no-charge boundary, and EFT/readout stability remain unsigned",False,False
+DPA1273_4_class,classify the constraint pair,"{pi_Lambda,u}, {u,H_core}, and momentum/Hamiltonian constraints must close without adding u hair",BLOCKED_BY_ALGEBRA,no canonical algebra or degree-of-freedom count has been derived,False,False
+DPA1273_5_conditional_theorem,conditional local zero theorem,"if HCO1273_4 or HCO1273_5 is parent-signed and DPA1273_2..4 close, then u=0 before readout",EXACT_CONDITIONAL_NOT_PARENT_SIGNED,parent origin of the constrained cell remains the live problem,False,False

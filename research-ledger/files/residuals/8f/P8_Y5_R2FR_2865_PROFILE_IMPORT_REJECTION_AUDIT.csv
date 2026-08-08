@@ -1,0 +1,7 @@
+profile_audit_id,attempted_import,decision,reason,profile_import_accepted,control_only,score_ready,valid_prediction_row,valid_for_claim,claim_allowed,generated_utc
+PROF2865_0_profile_as_sign,sigma_R_profile -> sigma_R_source_sign,REJECT,2862 explicitly split profile from runner/source sign,False,True,False,False,False,False,2026-06-24T13:47:32.159247+00:00
+PROF2865_1_symbol_only,sigma_R symbol without parent operator/sign owner,REJECT,symbol names do not carry orientation or Green convention,False,True,False,False,False,False,2026-06-24T13:47:32.159250+00:00
+PROF2865_2_gamma_bound_backsolve,infer sigma_R from a desired gamma/PPN bound,REJECT,would tune the sign from readout rather than derive it,False,True,False,False,False,False,2026-06-24T13:47:32.159254+00:00
+PROF2865_3_Uamp_closure_skip,choose sigma_R only to make U_amp cancellation work,REJECT,closure-only unless parent owns the ratio before readout,False,True,False,False,False,False,2026-06-24T13:47:32.159257+00:00
+PROF2865_4_placeholder,MISSING_sigma_R_source_sign placeholder row,REJECT,placeholder rows cannot score,False,True,False,False,False,False,2026-06-24T13:47:32.159262+00:00
+PROF2865_5_bridge_absent,sigma_R_profile bridge to source sign,OPEN_BLOCKER,no source path derives the bridge,False,True,False,False,False,False,2026-06-24T13:47:32.159265+00:00

@@ -1,0 +1,7 @@
+rule_id,rule,failure_status,severity,valid_for_claim,claim_allowed
+RULE1269_0_docs_not_live,Rows in source-intake/rab-sector/docs are always rejected as docs templates.,DOCS_TEMPLATE_NOT_LIVE_INTAKE,hard_reject,False,False
+RULE1269_1_no_missing_markers,Any field containing MISSING_ rejects the row.,MISSING_MARKER_PRESENT,hard_reject,False,False
+RULE1269_2_source_path_exists,source_path must be non-placeholder and resolve to an existing local file.,SOURCE_PATH_MISSING_OR_NOT_FOUND,hard_reject,False,False
+RULE1269_3_source_anchor_found,source_anchor must be non-placeholder and occur in source_path text.,SOURCE_ANCHOR_MISSING_OR_NOT_FOUND,hard_reject,False,False
+RULE1269_4_required_fields,"coefficient_symbol, value, units, normalization, parent_action_block, arena_projection, and claim flags must exist.",MISSING_REQUIRED_COLUMNS_OR_EMPTY_FIELD,hard_reject,False,False
+RULE1269_5_private_nonclaim,"During this private checkpoint, valid_for_claim=true or claim_allowed=true rejects the row.",CLAIM_FLAG_TRUE_REJECTED_IN_PRIVATE_NONCLAIM_PHASE,hard_reject,False,False

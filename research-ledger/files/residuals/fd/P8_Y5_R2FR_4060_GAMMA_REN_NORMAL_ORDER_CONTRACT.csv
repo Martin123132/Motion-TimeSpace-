@@ -1,0 +1,5 @@
+contract_id,clause,effect,adoption_status,valid_for_public_claim,timestamp_utc
+NOR4060_0_fixed_point,"choose one parent local fixed point Y_*=(m_*,L_*,...) before variation",prevents source/readout-dependent subtraction,candidate_parent_clause,False,2026-07-02T01:18:16+00:00
+NOR4060_1_subtraction,subtract Gamma_eff(Y_*) and its first differential D Gamma_eff|Y_* from Gamma_ren,"kills F'(m_*), F(m_*) L_cg linear drift, and mixed first-order chain response in one operation",candidate_parent_clause,False,2026-07-02T01:18:16+00:00
+NOR4060_2_background,route the constant piece to fixed Lambda/background/reference data,keeps constant Gamma from becoming compact source mass or radial G,aligned_with_4055_trace_law,False,2026-07-02T01:18:16+00:00
+NOR4060_3_legacy,"if an older row uses unrenormalized Gamma_eff=L_cg^-2 F(m), it remains legacy and must be bounded",prevents normal-ordering from silently rewriting old empirical rows,legacy_DeltaK_guard,False,2026-07-02T01:18:16+00:00

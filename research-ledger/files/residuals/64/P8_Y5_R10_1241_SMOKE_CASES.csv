@@ -1,0 +1,6 @@
+case_id,description,branch_type,value_mode,q_R_hat,N_sigma,sigma_gamma,source_status,expected_status,valid_for_claim,claim_allowed
+CASE1241_0_closure_zero,closure benchmark q_R_hat=0,closure_benchmark,closure_value,0,MISSING_STATISTICAL_POLICY,2.3e-5,closure_only,REFUSED_CLOSURE_NOT_EVIDENCE,False,False
+CASE1241_1_finite_missing_qR,finite row from 1239/1240 with q_R_hat missing,finite_residual,missing_source,MISSING_QR_VALUE,MISSING_STATISTICAL_POLICY,2.3e-5,missing_source,REFUSED_MISSING_QR,False,False
+CASE1241_2_comparator_only,Cassini comparator loaded without MTS q_R_hat,finite_residual,comparator_only,MISSING_QR_VALUE,1,2.3e-5,comparator_available_prediction_missing,REFUSED_COMPARATOR_ONLY,False,False
+CASE1241_3_numeric_no_policy,numeric q_R_hat supplied but pass policy missing,finite_residual,numeric_value,1.0e-5,MISSING_STATISTICAL_POLICY,2.3e-5,hypothetical_schema_math_only,REFUSED_MISSING_STATISTICAL_POLICY,False,False
+CASE1241_4_hypothetical_numeric,synthetic numeric row exercises arithmetic only,finite_residual,numeric_value,1.0e-5,1,2.3e-5,hypothetical_schema_math_only,SCHEMA_MATH_ONLY_NOT_EVIDENCE,False,False

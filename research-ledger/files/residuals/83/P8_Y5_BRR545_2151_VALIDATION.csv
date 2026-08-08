@@ -1,0 +1,16 @@
+timestamp_utc,branch_id,valid_for_claim,claim_allowed,check_id,status,detail
+2026-06-20T22:22:37.726586+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,VAL2151_00_sources,PASS,2150 handoff plus old 1841-1843 source-owner frontier validate
+2026-06-20T22:22:37.726607+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,VAL2151_01_owner_map,PASS,"source-owner map covers L_X, Theta/Q, M_H_ref and fail verdict"
+2026-06-20T22:22:37.726612+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,VAL2151_02_route_split,PASS,"route split covers zero routes, finite source fallback and boundary/projector next"
+2026-06-20T22:22:37.726616+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,VAL2151_03_source_schema,PASS,"FB5540/source schema covers denominator, bulk, edge and total guard"
+2026-06-20T22:22:37.726620+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,VAL2151_04_source_schema_nonclaim,PASS,source schema and runner stay nonclaim
+2026-06-20T22:22:37.726624+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,VAL2151_05_missing_not_ready,PASS,no MISSING_* row is marked ready
+2026-06-20T22:22:37.726628+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,VAL2151_06_bridge,PASS,GR bridge remains blocked and selects boundary/projector route
+2026-06-20T22:22:37.726632+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,VAL2151_07_decisions,PASS,decisions block local claims and select theorem-first route
+2026-06-20T22:22:37.726636+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,VAL2151_08_next,PASS,next target is 2152 boundary exactness/projector/source pack
+2026-06-20T22:22:37.726640+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,VAL2151_09_branch_copies,PASS,branch copies exist and parse
+2026-06-20T22:22:37.726644+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,VAL2151_10_csv_parse,PASS,all generated 2151 CSVs parse cleanly
+2026-06-20T22:22:37.726648+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,VAL2151_11_no_claim_flags,PASS,no generated row allows a claim
+2026-06-20T22:22:37.726651+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,VAL2151_12_formalization_clean,PASS,formalization-workbench untouched by 2151
+2026-06-20T22:22:37.726655+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,VAL2151_13_no_pycache,PASS,scripts __pycache__ removed
+2026-06-20T22:22:37.726659+00:00,MTS_R10_WEP_RAB_FINITE_SOURCE_BRANCH_1428,False,False,VAL2151_OVERALL,PASS,2151 writes the source-owner/FB5540 gate and keeps Newton/local-GR claims blocked.

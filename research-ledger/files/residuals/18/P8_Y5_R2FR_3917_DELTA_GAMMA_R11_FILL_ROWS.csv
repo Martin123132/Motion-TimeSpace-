@@ -1,0 +1,6 @@
+row_id,piece,formula,required_inputs,status,numeric_value,score_ready,valid_for_claim,timestamp_utc
+GAM3917_0_exact,exact residual,delta_gamma_R11 = (Psi_R11-Phi_R11)/(U+Phi_R11),requires Phi_R11/Psi_R11 potentials and nonzero denominator,FORMULA_READY_INPUTS_MISSING,,False,False,2026-07-01T10:33:48+00:00
+GAM3917_1_linear,linear residual,delta_gamma_R11 ~= (Psi_R11-Phi_R11)/U,"requires |Phi_R11|,|Psi_R11| << |U|",CONTROLLED_LINEAR_LIMIT_READY,,False,False,2026-07-01T10:33:48+00:00
+GAM3917_2_source_law,R11 source projection,delta_gamma_R11 ~= -(kappa_R/(C_TF*U)) nabla^{-2} P_TF[R11_ij],"requires kappa_R, C_TF, U, inverse-Laplacian domain and P_TF[R11_ij]",SYMBOLIC_BOUND_READY_INPUTS_MISSING,,False,False,2026-07-01T10:33:48+00:00
+GAM3917_3_zero_route,theorem-zero target,P_TF[R11_ij]=0 => Psi_R11-Phi_R11=0 => delta_gamma_R11=0,requires parent-derived local STF/traceless R11 silence,BEST_DERIVATION_TARGET,,False,False,2026-07-01T10:33:48+00:00
+GAM3917_4_pass_rule,Cassini-style pass rule,abs(delta_gamma_R11) <= 2.3e-05 or theorem-zero via P_TF[R11_ij]=0,requires theorem-zero or numeric source-backed projection,NONCLAIM_PASS_RULE,,False,False,2026-07-01T10:33:48+00:00
