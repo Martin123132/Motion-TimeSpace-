@@ -4,22 +4,22 @@
 
 - `README.md` gives the public overview.
 - `CLAIM_CEILING.md` states the current claim boundary.
-- `docs/status/STATUS-2026-08-08.md` gives the current status snapshot.
-- `docs/status/PUBLICATION-NOTES-2026-08-08.md` records the exact update scope, integrity checks, and exclusions.
+- `docs/status/STATUS-2026-08-29.md` gives the current status snapshot.
+- `docs/status/PUBLICATION-NOTES-2026-08-29.md` records the exact update scope, integrity checks, and exclusions.
 - `research-programme/catalogue/README.md` provides bounded direct-link indexes when GitHub caps large folder listings.
 - `docs/theory-gates/LOCAL-GR-NEWTON-GATES.md` gives the main route from MTS toward GR/Newton.
 
 ## Research Programme
 
-- `research-programme/checkpoints/` contains numbered derivation attempts, scorecards, red-team ledgers, and promotion gates. The public sequence currently runs through checkpoint `1352`.
+- `research-programme/checkpoints/` contains numbered derivation attempts, scorecards, red-team ledgers, and promotion gates. The public sequence currently runs through checkpoint `1433`.
 - `research-programme/protocols/1192/` preserves the machine-readable freeze record and now contains the complete compact 12-seed outcome.
 - `research-programme/scripts/` contains the scripts used to generate many checkpoint artifacts.
 - `research-programme/source-intake/mts_residuals/` contains compact CSV/register artifacts used by the residual and theorem-gate workflow.
 
 ## Current Derivation Thread
 
-The 2026-08-08 update preserves checkpoint `1192` and extends the public record
-through checkpoint `1352`. The most useful milestones are:
+The 2026-08-29 update preserves the earlier local/empirical theorem chain and
+extends the public record through checkpoint `1433`. The most useful milestones are:
 
 - `research-programme/checkpoints/1192-Y5-R2FR-predeclared-paired-high-mode-seed-ensemble.md` - completed frozen 12-seed metric-split result.
 - `research-programme/checkpoints/1194-Y5-R2FR-exact-2PI-Schur-Ward-Vlasov-subtraction-and-Gaussian-residual-stress-no-go.md` - exact Schur/Ward reduction and Gaussian residual-stress no-go.
@@ -53,10 +53,20 @@ through checkpoint `1352`. The most useful milestones are:
 - `research-programme/checkpoints/1324-Y5-R2FR-full-fixed-decay-pair-orbit-topology.md` - fixed-decay pair-orbit topology.
 - `research-programme/checkpoints/1345-Y5-R2FR-E040-owner-channel-numerator-pole-certificate.md` - owner-channel numerator certificate and divisor theorem.
 - `research-programme/checkpoints/1352-Y5-R2FR-fold-pair-equivalence-and-incremental-ownership-gate.md` - current fold/pair non-identifiability conclusion.
+- `research-programme/checkpoints/1353-Y5-R2FR-D4-regulator-fold-double-scaling-and-contrast-gate.md` - fixed-topology regulator preflight.
+- `research-programme/checkpoints/1360-Y5-R2FR-closed-parent-local-vacuum-attractor-no-go-and-minimal-reduced-dynamics-contract.md` - exact closed-unitary state-attractor no-go.
+- `research-programme/checkpoints/1375-Y5-R2FR-D4-zero-regulator-endpoint-coefficient-limit.md` - analytic endpoint-coefficient limit.
+- `research-programme/checkpoints/1400-Y5-R2FR-D4-nested-global-contour-root-clearance-certificate.md` - nested-contour root clearance.
+- `research-programme/checkpoints/1411-Y5-R2FR-D4-correlated-material-residue-supremum-and-numeric-pole-W3.md` - pole-primitive W3 certificate.
+- `research-programme/checkpoints/1412-Y5-R2FR-D4-deformed-contour-regular-away-W3.md` - active regular-away W3 proof ledger.
+- `research-programme/checkpoints/1424-Y5-R2FR-D4-representative-external41-square-subcover-gate.md` - exact representative-spinor identity and finite cover.
+- `research-programme/checkpoints/1426-Y5-R2FR-D4-anisotropic-projective-collision-Jacobian-gate.md` - exact anisotropic collision-Jacobian cover.
+- `research-programme/checkpoints/1429-Y5-R2FR-D4-left-second-soft-mixed-angle-subcover-gate.md` - exact mixed-angle finite-cover repair.
+- `research-programme/checkpoints/1433-Y5-R2FR-D4-v43-right-connector-frontier-expansion-gate.md` - current resume-safe frontier.
 
 Public checkpoint filenames use an offset sequence; document titles and
 generated artifact names retain their original private IDs. The established
-offset is `3984`, so private `5176-5336` maps to public `1192-1352`.
+offset is `3984`, so private `5337-5417` maps to public `1353-1433` in this update.
 
 ## Data Policy
 
