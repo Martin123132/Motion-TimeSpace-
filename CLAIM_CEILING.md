@@ -25,6 +25,10 @@ This repository is a public work-in-progress research programme.
   reciprocal-projective topology results now constrain the crossed-`hhh`
   estimator. They identify material fixed-topology errors without promoting a
   coefficient value.
+- The D4 branch now includes analytic endpoint coefficients, nested contour
+  clearance, exact interval-dependency repairs, and 29 certified contour path
+  jobs. These are auditable components of the higher-operator calculation,
+  not a completed W3 coefficient.
 - Failed derivations, corrected sign errors, adverse outcomes, and
   superseded routes remain in the public audit trail.
 
@@ -38,6 +42,9 @@ This repository is a public work-in-progress research programme.
 - The exact local result is a selected two-derivative branch, not an
   all-operator, all-state, strong-field, compact-body, horizon, or complete
   radiation/back-reaction theorem.
+- The locally silent density state is admissible preparation data, but the
+  closed unitary parent cannot attract arbitrary density matrices to it.
+  Dynamic local-vacuum preparation therefore remains open.
 - The numerical value of `G_N` is calibrated once rather than predicted, and
   the cosmological constant remains a renormalization datum rather than a
   symmetry-selected zero.
@@ -45,9 +52,9 @@ This repository is a public work-in-progress research programme.
   visible, and `p8+` contributions remain bounded, matched, or open according
   to their individual ledgers.
 - The first canonical MTS-specific crossed-`hhh` UV coefficient remains
-  unresolved as of checkpoint `1352`; the latest fold/pair work constrains the
-  target exponent further but does not derive the remaining coefficient or
-  outer occupancy law.
+  unresolved as of checkpoint `1433`. The regular-away calculation has
+  certified `29/240` contour path jobs, while the complete regular-away W3,
+  event-local combination, regulator limit, and UV coefficient remain open.
 - The occupied galactic response is not yet the retarded self-energy of the
   parent motion state. Its amplitude, transition scale, exponent, preparation
   law, and Hilbert stress remain under derivation.
