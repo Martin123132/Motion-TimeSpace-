@@ -14,11 +14,11 @@ The project now has five connected layers:
 4. **Cosmology and large-scale motion** - a direct parent-scalar SN+BAO+growth+compressed-CMB programme has been executed, while mass/state selection and the occupied retarded response remain open. A single elementary mass cannot simultaneously be the fitted homogeneous cosmology pole and the conditional galactic collective scale.
 5. **Empirical branches** - the preregistered 12-seed galaxy-formation comparison is complete. Its `q` component is MTS-directed, its RMSE component is unresolved, and the locked result is a statistical draw/metric split rather than model preference.
 
-The 2026-08-29 update extends the contiguous public record through checkpoint
-`1433`, corresponding to private checkpoint `5417`. It includes the D4
-endpoint/subtraction and deformed-contour programme, an exact closed-parent
-local-state-attractor no-go, and the latest interval-certified production
-frontier. Large run products and third-party/source caches remain excluded.
+The 2026-09-09 update extends the contiguous public record through checkpoint
+`1530`, corresponding to private checkpoint `5514`. It adds the D4 audit
+through the latest complete private checkpoint, reader-facing field-theoretic
+derivation notes, and two sealed annular source packages. Large run products,
+the incomplete `5515` frontier, and third-party/source caches remain excluded.
 
 The strongest honest claim is:
 
@@ -33,8 +33,10 @@ The strongest honest claim is:
 ## Start Here
 
 - `CLAIM_CEILING.md` - the current claim boundary.
-- `docs/status/STATUS-2026-08-29.md` - concise current status and open problems.
-- `docs/status/PUBLICATION-NOTES-2026-08-29.md` - exact update scope, integrity checks, and exclusions.
+- `docs/status/STATUS-2026-08-29.md` - historical status snapshot from the previous upload.
+- `docs/status/PUBLICATION-NOTES-2026-08-29.md` - historical scope, integrity checks, and exclusions from the previous upload.
+- `docs/status/STATUS-2026-09-09.md` - current reader-facing WIP status.
+- `docs/status/PUBLICATION-NOTES-2026-09-09.md` - exact current update scope, omissions, and claim boundary.
 - `research-programme/catalogue/README.md` - bounded direct-link catalogues for large artifact folders.
 - `docs/theory-gates/LOCAL-GR-NEWTON-GATES.md` - the updated local-limit gate map.
 - `research-programme/checkpoints/1203-Y5-R2FR-canonical-local-parent-action-Hessian-source-residue-and-scale-setting-theorem.md` - consolidated local action and scale-setting theorem.
@@ -47,7 +49,7 @@ The strongest honest claim is:
 - `research-programme/checkpoints/1375-Y5-R2FR-D4-zero-regulator-endpoint-coefficient-limit.md` - analytic zero-regulator endpoint coefficient.
 - `research-programme/checkpoints/1412-Y5-R2FR-D4-deformed-contour-regular-away-W3.md` - active regular-away contour proof ledger.
 - `research-programme/checkpoints/1429-Y5-R2FR-D4-left-second-soft-mixed-angle-subcover-gate.md` - exact finite-cover interval-dependency repair.
-- `research-programme/checkpoints/1433-Y5-R2FR-D4-v43-right-connector-frontier-expansion-gate.md` - latest verified production frontier.
+- `research-programme/checkpoints/1433-Y5-R2FR-D4-v43-right-connector-frontier-expansion-gate.md` - previous-upload verified frontier; the current public range continues through checkpoint `1530`.
 - `research-programme/protocols/1192/README.md` - frozen protocol and complete compact 12-seed outcome.
 
 ## Repository Layout
@@ -63,8 +65,10 @@ The strongest honest claim is:
 |   |-- catalogue/
 |   |-- checkpoints/
 |   |-- protocols/
+|   |-- reproducibility/
 |   |-- scripts/
-|   `-- source-intake/
+|   |-- source-intake/
+|   `-- derivations/
 |-- tools/
 |-- data/
 `-- archive/
@@ -76,13 +80,20 @@ The strongest honest claim is:
 Public checkpoint filenames use a compact sequence, while document titles and
 generated artifact names retain their original private checkpoint IDs for
 provenance. The established offset is `3984`; this update adds private
-checkpoints `5337-5417` as public checkpoints `1353-1433`.
+checkpoints `5418-5514` as public checkpoints `1434-1530`.
 
-The repository includes source scripts and compact residual/register artifacts, but not large third-party datasets, virtual environments, raw generated run folders, or the local `functional_rg` source cache. Local machine paths retained in historical artifacts are provenance records, not portable execution paths.
+The repository includes source scripts, compact residual/register artifacts,
+reader-facing derivation notes, two sealed annular source packages, and a
+transitive reproducibility capsule, but not
+large third-party datasets, virtual environments, the incomplete `5515`
+frontier, or raw generated run/cache folders. Local machine paths retained in
+historical artifacts are provenance records, not portable execution paths.
 
 GitHub can cap the visible entries in very large flat folders and pull-request
-file lists. The generated catalogue and SHA-256 publication inventory provide
-direct access and completeness checks without changing historical paths.
+file lists. The generated catalogue shards and SHA-256 publication inventory
+provide direct access and completeness checks without changing historical
+paths. New export directories are bounded; legacy flat directories may remain
+larger than 1,000 entries.
 
 ### Windows Checkout
 

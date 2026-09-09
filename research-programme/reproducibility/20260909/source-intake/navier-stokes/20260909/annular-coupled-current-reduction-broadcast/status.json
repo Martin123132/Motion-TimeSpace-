@@ -1,0 +1,261 @@
+{
+  "state": "complete",
+  "started_utc": "2026-09-09T05:55:40.078837+00:00",
+  "script_sha256": "180b742c6daca65d523cec1ea7cf134a4c8a5c54a25687b8fc7f9f0deefd05d1",
+  "inputs": {
+    "scripts\\annular_coupled_current_operator_20260909.py": "20e5c31f4bce2b401b11ad5e55e2cf8f9e75519b2c84557e9378ddc0bd8504ba",
+    "scripts\\derive_annular_coupled_current_reduction_20260909.py": "180b742c6daca65d523cec1ea7cf134a4c8a5c54a25687b8fc7f9f0deefd05d1",
+    "scripts\\annular_coordinate_evolution_operator_20260909.py": "cf884d6a6df0e0c9c578248bbff7ebf16011aad051a018350d9ab31c40bccbd2",
+    "scripts\\annular_evolution_operator_20260909.py": "3955c8fdf7eda801ced7d0eeefa21be6e3267f6056178664b3015c047933aed8",
+    "scripts\\annular_conservative_scalar_evolution_20260909.py": "9ed4c615b2a144ed461808747f6c80512baae6c0bac25163fbdbfe1e15198c2b",
+    "scripts\\annular_noether_completion_20260909.py": "1bcc72f03e3bd99859c8bdcb4ed55f064775d71673f68d7bb92601da61c4cb6f",
+    "source-intake\\navier-stokes\\20260909\\annular-constraint-correction-initial\\canonical.json": "6e24704a5834702cbbd1b8379dcb621cc074948a9dc81c9c80709df30425644a",
+    "source-intake\\navier-stokes\\20260909\\annular-constraint-correction-initial\\nonlinear_modulated.json": "39a36d33cabf877b4574692e5a15a5245af834eefce3cffd68cffe5296c4c222"
+  },
+  "checks": [
+    {
+      "name": "exact_scalar_transform_determinant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_positive_norm_determinant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_scalar_symmetry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw_horizon_zero_eigenvalue_has_Jordan_chain",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reduced_horizon_zero_eigenvalue_semisimple",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_batched_shape_and_offshell_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_T0.0_offshell_parent_reduction",
+      "passed": true,
+      "detail": {
+        "error": 9.003956920590762e-18,
+        "defect_scale": 6.288182146860222e-09,
+        "J0_max": 2.5399747102455237e-11,
+        "omitted_constraint_force": 7.604851354893017e-15
+      }
+    },
+    {
+      "name": "canonical_T0.1_offshell_parent_reduction",
+      "passed": true,
+      "detail": {
+        "error": 3.779620449711758e-18,
+        "defect_scale": 2.3864343608875904e-09,
+        "J0_max": 3.332425356711646e-11,
+        "omitted_constraint_force": 5.572282496032985e-15
+      }
+    },
+    {
+      "name": "canonical_T0.3_offshell_parent_reduction",
+      "passed": true,
+      "detail": {
+        "error": 5.995026231063795e-18,
+        "defect_scale": 6.481026127228007e-09,
+        "J0_max": 2.0399621919106186e-11,
+        "omitted_constraint_force": 5.341005755408976e-15
+      }
+    },
+    {
+      "name": "canonical_F0.5_full_parent_principal_similarity",
+      "passed": true,
+      "detail": {
+        "error": 6.800467362229281e-16
+      }
+    },
+    {
+      "name": "canonical_F0.5_full_reduced_positive_symmetrizer",
+      "passed": true,
+      "detail": {
+        "minimum_norm_eigenvalue": 0.9987936215523439,
+        "symmetry_error": 3.552713678800501e-15
+      }
+    },
+    {
+      "name": "canonical_F0.0_full_parent_principal_similarity",
+      "passed": true,
+      "detail": {
+        "error": 0.0
+      }
+    },
+    {
+      "name": "canonical_F0.0_full_reduced_positive_symmetrizer",
+      "passed": true,
+      "detail": {
+        "minimum_norm_eigenvalue": 0.9991913101936852,
+        "symmetry_error": 0.0
+      }
+    },
+    {
+      "name": "canonical_F-0.5_full_parent_principal_similarity",
+      "passed": true,
+      "detail": {
+        "error": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "canonical_F-0.5_full_reduced_positive_symmetrizer",
+      "passed": true,
+      "detail": {
+        "minimum_norm_eigenvalue": 0.999500124984375,
+        "symmetry_error": 5.329070518200751e-15
+      }
+    },
+    {
+      "name": "nonlinear_modulated_batched_shape_and_offshell_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_T0.0_offshell_parent_reduction",
+      "passed": true,
+      "detail": {
+        "error": 8.883976027101171e-18,
+        "defect_scale": 2.0465772987768305e-08,
+        "J0_max": 3.995865571477901e-11,
+        "omitted_constraint_force": 1.060887592841194e-14
+      }
+    },
+    {
+      "name": "nonlinear_modulated_T0.1_offshell_parent_reduction",
+      "passed": true,
+      "detail": {
+        "error": 5.54588618360159e-18,
+        "defect_scale": 1.1698938329370023e-08,
+        "J0_max": 3.109314690010541e-11,
+        "omitted_constraint_force": 3.2115327505996884e-15
+      }
+    },
+    {
+      "name": "nonlinear_modulated_T0.3_offshell_parent_reduction",
+      "passed": true,
+      "detail": {
+        "error": 8.39508912402518e-18,
+        "defect_scale": 2.0642375204993346e-08,
+        "J0_max": 4.868925892347921e-11,
+        "omitted_constraint_force": 7.540885141308665e-15
+      }
+    },
+    {
+      "name": "nonlinear_modulated_F0.5_full_parent_principal_similarity",
+      "passed": true,
+      "detail": {
+        "error": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "nonlinear_modulated_F0.5_full_reduced_positive_symmetrizer",
+      "passed": true,
+      "detail": {
+        "minimum_norm_eigenvalue": 0.9987396358469605,
+        "symmetry_error": 1.7763568394002505e-15
+      }
+    },
+    {
+      "name": "nonlinear_modulated_F0.0_full_parent_principal_similarity",
+      "passed": true,
+      "detail": {
+        "error": 1.8015984212284286e-15
+      }
+    },
+    {
+      "name": "nonlinear_modulated_F0.0_full_reduced_positive_symmetrizer",
+      "passed": true,
+      "detail": {
+        "minimum_norm_eigenvalue": 0.999125280721475,
+        "symmetry_error": 1.7763568394002505e-15
+      }
+    },
+    {
+      "name": "nonlinear_modulated_F-0.5_full_parent_principal_similarity",
+      "passed": true,
+      "detail": {
+        "error": 5.551115123125783e-16
+      }
+    },
+    {
+      "name": "nonlinear_modulated_F-0.5_full_reduced_positive_symmetrizer",
+      "passed": true,
+      "detail": {
+        "minimum_norm_eigenvalue": 0.9994138107687981,
+        "symmetry_error": 7.105427357601002e-15
+      }
+    },
+    {
+      "name": "no_bytecode_cache",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "fixtures": [
+    {
+      "case": "canonical",
+      "time": 0.0,
+      "background_residual_max": 6.288182146860222e-09,
+      "mass_constraint_max": 2.5399747102455237e-11,
+      "constraint_force_max": 7.604851354893017e-15,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "time": 0.1,
+      "background_residual_max": 2.3864343608875904e-09,
+      "mass_constraint_max": 3.332425356711646e-11,
+      "constraint_force_max": 5.572282496032985e-15,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "time": 0.3,
+      "background_residual_max": 6.481026127228007e-09,
+      "mass_constraint_max": 2.0399621919106186e-11,
+      "constraint_force_max": 5.341005755408976e-15,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.0,
+      "background_residual_max": 2.0465772987768305e-08,
+      "mass_constraint_max": 3.995865571477901e-11,
+      "constraint_force_max": 1.060887592841194e-14,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.1,
+      "background_residual_max": 1.1698938329370023e-08,
+      "mass_constraint_max": 3.109314690010541e-11,
+      "constraint_force_max": 3.2115327505996884e-15,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.3,
+      "background_residual_max": 2.0642375204993346e-08,
+      "mass_constraint_max": 4.868925892347921e-11,
+      "constraint_force_max": 7.540885141308665e-15,
+      "valid_for_physics_claim": false
+    }
+  ],
+  "valid_for_physics_claim": false,
+  "passed": 26,
+  "total": 26,
+  "completed_utc": "2026-09-09T05:55:44.300135+00:00"
+}

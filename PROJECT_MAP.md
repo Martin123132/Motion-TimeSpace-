@@ -4,22 +4,26 @@
 
 - `README.md` gives the public overview.
 - `CLAIM_CEILING.md` states the current claim boundary.
-- `docs/status/STATUS-2026-08-29.md` gives the current status snapshot.
-- `docs/status/PUBLICATION-NOTES-2026-08-29.md` records the exact update scope, integrity checks, and exclusions.
+- `docs/status/STATUS-2026-09-09.md` gives the current status snapshot.
+- `docs/status/PUBLICATION-NOTES-2026-09-09.md` records the exact current update scope and omissions.
+- `docs/status/PUBLICATION-MANIFEST-2026-09-09.csv` records the complete source-to-public byte/hash mapping.
 - `research-programme/catalogue/README.md` provides bounded direct-link indexes when GitHub caps large folder listings.
 - `docs/theory-gates/LOCAL-GR-NEWTON-GATES.md` gives the main route from MTS toward GR/Newton.
 
 ## Research Programme
 
-- `research-programme/checkpoints/` contains numbered derivation attempts, scorecards, red-team ledgers, and promotion gates. The public sequence currently runs through checkpoint `1433`.
+- `research-programme/checkpoints/` contains numbered derivation attempts, scorecards, red-team ledgers, and promotion gates. The public sequence currently runs through checkpoint `1530`.
+- `research-programme/derivations/2026-09/` contains reader-facing derivation and result notes from the current MTS formalization thread.
+- `research-programme/source-intake/navier-stokes/20260909/` contains the two sealed annular source packages and their immutable resume snapshots.
+- `research-programme/reproducibility/20260909/` contains the latest spatial-clock-energy seal's transitive hashed input/output capsule and restore guide.
 - `research-programme/protocols/1192/` preserves the machine-readable freeze record and now contains the complete compact 12-seed outcome.
 - `research-programme/scripts/` contains the scripts used to generate many checkpoint artifacts.
 - `research-programme/source-intake/mts_residuals/` contains compact CSV/register artifacts used by the residual and theorem-gate workflow.
 
 ## Current Derivation Thread
 
-The 2026-08-29 update preserves the earlier local/empirical theorem chain and
-extends the public record through checkpoint `1433`. The most useful milestones are:
+The 2026-09-09 update preserves the earlier local/empirical theorem chain and
+extends the public record through checkpoint `1530`. The most useful milestones are:
 
 - `research-programme/checkpoints/1192-Y5-R2FR-predeclared-paired-high-mode-seed-ensemble.md` - completed frozen 12-seed metric-split result.
 - `research-programme/checkpoints/1194-Y5-R2FR-exact-2PI-Schur-Ward-Vlasov-subtraction-and-Gaussian-residual-stress-no-go.md` - exact Schur/Ward reduction and Gaussian residual-stress no-go.
@@ -66,7 +70,8 @@ extends the public record through checkpoint `1433`. The most useful milestones 
 
 Public checkpoint filenames use an offset sequence; document titles and
 generated artifact names retain their original private IDs. The established
-offset is `3984`, so private `5337-5417` maps to public `1353-1433` in this update.
+offset is `3984`, so the previous upload's private `5337-5417` maps to public
+`1353-1433`, while this update adds private `5418-5514` as public `1434-1530`.
 
 ## Data Policy
 
@@ -74,6 +79,8 @@ offset is `3984`, so private `5337-5417` maps to public `1353-1433` in this upda
 - Generated run folders are not committed.
 - The local `functional_rg` source/cache tree is not committed.
 - Virtual environments are not committed.
+- New catalogue shards and the reproducibility capsule are bounded; historical
+  flat directories are preserved even when their entry count exceeds 1,000.
 - Reproducibility notes, scripts, compact source-intake ledgers, and validation CSVs are kept where they help audit the logic.
 
 ## Archive

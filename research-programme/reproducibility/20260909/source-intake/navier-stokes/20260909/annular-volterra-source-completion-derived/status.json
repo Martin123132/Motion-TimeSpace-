@@ -1,0 +1,380 @@
+{
+  "state": "complete",
+  "started_utc": "2026-09-09T06:17:45.456820+00:00",
+  "script_sha256": "b55b7ca628218d373a475f581ef46deb2b8c25f6478e37f2898d86e819e5cc76",
+  "inputs": {
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-correction-refined\\status.json": "d6d0c133d38b9a1d8b41f288156e95a0522b6d84cd83d3e628cfb4e48330184f",
+    "source-intake\\navier-stokes\\20260909\\annular-constraint-correction-initial\\canonical.json": "6e24704a5834702cbbd1b8379dcb621cc074948a9dc81c9c80709df30425644a",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-correction-refined\\canonical_N512_dt2_T0.1.npz": "9f636588c1f462c67a294034eeceac2c908a0d3ef1c62ab5943901908cfa8fc2",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-correction-refined\\canonical_N512_dt2_T0.3.npz": "d57503c78ef5945e3f33717cf18a0534af34d1f59625615097154706b63ec129",
+    "source-intake\\navier-stokes\\20260909\\annular-constraint-correction-initial\\nonlinear_modulated.json": "39a36d33cabf877b4574692e5a15a5245af834eefce3cffd68cffe5296c4c222",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-correction-refined\\nonlinear_modulated_N512_dt2_T0.1.npz": "e96d5a18cef4df13d225d1b200e21819dc2b0e4af6167346258d0ac599bf4c93",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-correction-refined\\nonlinear_modulated_N512_dt2_T0.3.npz": "9809dbe43f01c4c6bdcb47ec05ffc95fd4b1c1c43996fc96c1ae7402f2ccb033",
+    "scripts\\annular_volterra_source_completion_20260909.py": "158ec29d76d4b9de73065697ebc3a91b04377f718c8aa85e57e6a84bac818106",
+    "scripts\\derive_annular_volterra_source_completion_20260909.py": "b55b7ca628218d373a475f581ef46deb2b8c25f6478e37f2898d86e819e5cc76",
+    "scripts\\annular_coupled_current_operator_20260909.py": "20e5c31f4bce2b401b11ad5e55e2cf8f9e75519b2c84557e9378ddc0bd8504ba",
+    "scripts\\annular_coordinate_evolution_operator_20260909.py": "cf884d6a6df0e0c9c578248bbff7ebf16011aad051a018350d9ab31c40bccbd2",
+    "scripts\\annular_evolution_operator_20260909.py": "3955c8fdf7eda801ced7d0eeefa21be6e3267f6056178664b3015c047933aed8",
+    "scripts\\sbp4_derived_operator_20260909.py": "065ea0be52b651d742082230fe8322a367e11fc5e20150c8f3d506d1f87e77d3"
+  },
+  "checks": [
+    {
+      "name": "exact_exponential_first_moment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_exponential_linear_moment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_quadrature_moments",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "zero_coefficient_linear_forcing_N16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "constant_all_row_bound_N16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "varying_all_row_bound_N16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "boundary_spike_all_row_bound_N16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "zero_coefficient_linear_forcing_N32",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "constant_all_row_bound_N32",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "varying_all_row_bound_N32",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "boundary_spike_all_row_bound_N32",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "zero_coefficient_linear_forcing_N64",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "constant_all_row_bound_N64",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "varying_all_row_bound_N64",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "boundary_spike_all_row_bound_N64",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "zero_coefficient_linear_forcing_N128",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "constant_all_row_bound_N128",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "varying_all_row_bound_N128",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "boundary_spike_all_row_bound_N128",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "failed_owner_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1.npz_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1.npz_scalar_lapse_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1.npz_all_row_residual_bounded_not_zeroed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3.npz_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3.npz_scalar_lapse_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3.npz_all_row_residual_bounded_not_zeroed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1.npz_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1.npz_scalar_lapse_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1.npz_all_row_residual_bounded_not_zeroed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3.npz_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3.npz_scalar_lapse_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3.npz_all_row_residual_bounded_not_zeroed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_bytecode_cache",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "controls": [
+    {
+      "kind": "constant",
+      "intervals": 16,
+      "residual_max": 0.0009858431675948687,
+      "bound_max": 0.034405570647640944,
+      "amplitude_bound": 0.5292332203629023,
+      "derivative_bound": 0.13704279127253738,
+      "coefficient_max": 0.07,
+      "forcing_max": 0.0999964658471342,
+      "coefficient_lipschitz": 0.0,
+      "forcing_lipschitz": 0.06971476068006083
+    },
+    {
+      "kind": "varying",
+      "intervals": 16,
+      "residual_max": 0.001088745102105007,
+      "bound_max": 0.04460616625824825,
+      "amplitude_bound": 0.5730638303509931,
+      "derivative_bound": 0.15151030569210117,
+      "coefficient_max": 0.08989197558222353,
+      "forcing_max": 0.0999964658471342,
+      "coefficient_lipschitz": 0.019863936370829782,
+      "forcing_lipschitz": 0.06971476068006083
+    },
+    {
+      "kind": "boundary_spike",
+      "intervals": 16,
+      "residual_max": 0.05975641387495034,
+      "bound_max": 0.35538245193380447,
+      "amplitude_bound": 1.0585038498699495,
+      "derivative_bound": 0.27409526949089646,
+      "coefficient_max": 0.07,
+      "forcing_max": 0.2,
+      "coefficient_lipschitz": 0.0,
+      "forcing_lipschitz": 0.8
+    },
+    {
+      "kind": "constant",
+      "intervals": 32,
+      "residual_max": 0.00023992184254087445,
+      "bound_max": 0.017252455304785842,
+      "amplitude_bound": 0.5292332203629023,
+      "derivative_bound": 0.13704279127253738,
+      "coefficient_max": 0.07,
+      "forcing_max": 0.0999964658471342,
+      "coefficient_lipschitz": 0.0,
+      "forcing_lipschitz": 0.06994374771095202
+    },
+    {
+      "kind": "varying",
+      "intervals": 32,
+      "residual_max": 0.00026855276463248756,
+      "bound_max": 0.022383852396373128,
+      "amplitude_bound": 0.573301372953427,
+      "derivative_bound": 0.1515910568228993,
+      "coefficient_max": 0.089995582445529,
+      "forcing_max": 0.0999964658471342,
+      "coefficient_lipschitz": 0.019978394406037547,
+      "forcing_lipschitz": 0.06994374771095202
+    },
+    {
+      "kind": "boundary_spike",
+      "intervals": 32,
+      "residual_max": 0.0592883919670632,
+      "bound_max": 0.3512206377316081,
+      "amplitude_bound": 1.0585038498699495,
+      "derivative_bound": 0.27409526949089646,
+      "coefficient_max": 0.07,
+      "forcing_max": 0.2,
+      "coefficient_lipschitz": 0.0,
+      "forcing_lipschitz": 1.6
+    },
+    {
+      "kind": "constant",
+      "intervals": 64,
+      "residual_max": 5.888652672354777e-05,
+      "bound_max": 0.008631397338106656,
+      "amplitude_bound": 0.5292332203629023,
+      "derivative_bound": 0.13704279127253738,
+      "coefficient_max": 0.07,
+      "forcing_max": 0.0999964658471342,
+      "coefficient_lipschitz": 0.0,
+      "forcing_lipschitz": 0.06999141396566849
+    },
+    {
+      "kind": "varying",
+      "intervals": 64,
+      "residual_max": 6.629777864122777e-05,
+      "bound_max": 0.011199045132544265,
+      "amplitude_bound": 0.573301372953427,
+      "derivative_bound": 0.1515910568228993,
+      "coefficient_max": 0.089995582445529,
+      "forcing_max": 0.0999964658471342,
+      "coefficient_lipschitz": 0.019996707502577316,
+      "forcing_lipschitz": 0.06999141396566849
+    },
+    {
+      "kind": "boundary_spike",
+      "intervals": 64,
+      "residual_max": 0.059055556875712706,
+      "bound_max": 0.34913973063050996,
+      "amplitude_bound": 1.0585038498699495,
+      "derivative_bound": 0.27409526949089646,
+      "coefficient_max": 0.07,
+      "forcing_max": 0.2,
+      "coefficient_lipschitz": 0.0,
+      "forcing_lipschitz": 3.2
+    },
+    {
+      "kind": "constant",
+      "intervals": 128,
+      "residual_max": 1.4568029262460036e-05,
+      "bound_max": 0.004316083272630228,
+      "amplitude_bound": 0.5292332203629023,
+      "derivative_bound": 0.13704279127253738,
+      "coefficient_max": 0.07,
+      "forcing_max": 0.0999964658471342,
+      "coefficient_lipschitz": 0.0,
+      "forcing_lipschitz": 0.06999850631637472
+    },
+    {
+      "kind": "varying",
+      "intervals": 128,
+      "residual_max": 1.6444764513845467e-05,
+      "bound_max": 0.005599994238174496,
+      "amplitude_bound": 0.5733091027138971,
+      "derivative_bound": 0.15159368492033987,
+      "coefficient_max": 0.08999895314579479,
+      "forcing_max": 0.0999964658471342,
+      "coefficient_lipschitz": 0.019997312236477605,
+      "forcing_lipschitz": 0.06999850631637472
+    },
+    {
+      "kind": "boundary_spike",
+      "intervals": 128,
+      "residual_max": 0.05893944106645055,
+      "bound_max": 0.34809927707996086,
+      "amplitude_bound": 1.0585038498699495,
+      "derivative_bound": 0.27409526949089646,
+      "coefficient_max": 0.07,
+      "forcing_max": 0.2,
+      "coefficient_lipschitz": 0.0,
+      "forcing_lipschitz": 6.4
+    }
+  ],
+  "source_replays": [
+    {
+      "case": "canonical",
+      "time": 0.1,
+      "old_interior_q_source_max": 9.213840022713754e-12,
+      "new_interior_q_source_max": 0.0,
+      "mass_source_change_max": 6.645788298637953e-14,
+      "source_constraint_residual_max": 7.104476101843843e-12,
+      "derived_bound_max": 4.191640984938082e-11,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "time": 0.3,
+      "old_interior_q_source_max": 9.755408968969392e-12,
+      "new_interior_q_source_max": 0.0,
+      "mass_source_change_max": 1.5486365080789042e-13,
+      "source_constraint_residual_max": 1.1722092068812365e-11,
+      "derived_bound_max": 6.916034421384668e-11,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.1,
+      "old_interior_q_source_max": 3.7060642996908576e-11,
+      "new_interior_q_source_max": 0.0,
+      "mass_source_change_max": 2.678350817468375e-13,
+      "source_constraint_residual_max": 2.8960730338258326e-11,
+      "derived_bound_max": 1.7086831245389273e-10,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.3,
+      "old_interior_q_source_max": 1.0110391354281436e-11,
+      "new_interior_q_source_max": 0.0,
+      "mass_source_change_max": 2.2176027261552644e-13,
+      "source_constraint_residual_max": 1.6764843434567968e-11,
+      "derived_bound_max": 9.891257779410793e-11,
+      "valid_for_physics_claim": false
+    }
+  ],
+  "valid_for_physics_claim": false,
+  "bound_scope": "Analytic all-row bound for the exact piecewise-constant-coefficient, piecewise-linear-forcing Volterra reconstruction. Floating evaluation is checked, not outward-rounded interval arithmetic; original smooth-coefficient and parent/background errors remain separate.",
+  "passed": 33,
+  "total": 33,
+  "completed_utc": "2026-09-09T06:17:49.895456+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "checkpoint": 5451,
+  "runner_revision": "D4-event-endpoint-xt-overlap-geometry-cover-v1",
+  "observed_utc": "2026-08-30T01:36:39.346178+00:00",
+  "decision": "PRESERVE_FAILED_ATTEMPTS__ROOT_CAUSE_IS_FAILED_ROOT_BOX_SPLIT_DIRECTION",
+  "diagnosis": "E02 U024 owns its event endpoint on the lower-energy boundary. The left connector and adjacent top segment exhausted the 20000-node x-t budget while the opposite connector passed. A v2 retry added endpoint-aware top seeds and 32 real-epsilon boxes, but E02 e0 TOP still failed after 36.60 s. Direct inspection then found one wide right-side x panel where the material recoil enclosure leaves the physical chart. The exception path stored NaN path speed, causing the adaptive heuristic to refine t even though the failed root enclosure depends on x and epsilon but not t. Revision v3 forces x refinement after any root/boundary enclosure exception: E02 e0 TOP then closed with 210 outer leaves in 2.37 s and e1 TOP with 210 leaves in 1.62 s. E02 e1 LEFT still exhausted the node budget in 150.00 s, showing that the contact connector itself retains genuine real-epsilon dependency. Revision v4 therefore applies 32 real-epsilon subboxes only to the cell-owned connector; top and the opposite connector remain unsplit.",
+  "v2_failed_retry": {"job_id": "E02__U024__e0__TOP", "runtime_seconds": 36.60398569999961, "failure_type": "CoverBudgetExceeded"},
+  "v3_failed_retry": {"job_id": "E02__U024__e1__LEFT_CONNECTOR", "runtime_seconds": 150.003, "failure_type": "CoverBudgetExceeded"},
+  "failed_jobs": [
+    {"job_id": "E02__U024__e0__TOP", "runtime_seconds": 28.48, "failure_type": "CoverBudgetExceeded"},
+    {"job_id": "E02__U024__e1__LEFT_CONNECTOR", "runtime_seconds": 139.57, "failure_type": "CoverBudgetExceeded"},
+    {"job_id": "E02__U024__e1__TOP", "runtime_seconds": 28.19, "failure_type": "CoverBudgetExceeded"},
+    {"job_id": "E02__U024__e2__LEFT_CONNECTOR", "runtime_seconds": 140.49, "failure_type": "CoverBudgetExceeded"},
+    {"job_id": "E02__U024__e2__TOP", "runtime_seconds": 26.86, "failure_type": "CoverBudgetExceeded"},
+    {"job_id": "E02__U024__e3__LEFT_CONNECTOR", "runtime_seconds": 183.60, "failure_type": "CoverBudgetExceeded"},
+    {"job_id": "E02__U024__e3__TOP", "runtime_seconds": 47.83, "failure_type": "CoverBudgetExceeded"}
+  ],
+  "valid_for_endpoint_xt_overlap_geometry_atlas": false,
+  "valid_for_D4_event_local_W3_bound": false,
+  "valid_for_all_operator_local_GR_claim": false,
+  "valid_for_full_MTS_claim": false
+}

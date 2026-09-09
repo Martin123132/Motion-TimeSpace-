@@ -1,0 +1,41 @@
+{
+  "checkpoint": 5452,
+  "decision": "PRESERVE_V1_FAILURE__ADAPTIVE_X_REFINEMENT_CLOSES_ALL_EIGHT_SMOKE_PROJECTIONS",
+  "v1": {
+    "revision": "D4-inner-Q-projection-manifest-correlated-smoke-v1",
+    "passed_event_count": 4,
+    "failed_event_count": 4,
+    "passed_events": ["E01", "E02", "E03", "E08"],
+    "failed_events": ["E04", "E05", "E06", "E07"],
+    "failure_classes": [
+      "hard-pair coherent spinor normalization failed",
+      "no closed square-root half-plane chart excludes zero",
+      "left_first_rational_spinors:active_diagonal reaches zero"
+    ],
+    "interpretation": "The widest branch-death x hulls were too broad for one parent interval chart; no numeric Q value failed."
+  },
+  "fail_fast_two_arc_subdivision_audit": {
+    "E04": {"selected_count": 32, "subinterval_width": 1.984843132615821e-06},
+    "E05": {"selected_count": 8, "subinterval_width": 1.2213218894524536e-05},
+    "E06": {"selected_count": 8, "subinterval_width": 2.2202370999341303e-06},
+    "E07": {"selected_count": 32, "subinterval_width": 6.667399003248975e-07}
+  },
+  "v2": {
+    "revision": "D4-inner-Q-projection-manifest-correlated-smoke-v2",
+    "method": "Bisect only x after the first failed parent arc; require every accepted x leaf to pass all 32 arcs.",
+    "passed_event_count": 8,
+    "failed_event_count": 0,
+    "accepted_x_leaf_count": 83,
+    "refinement_witness_count": 75,
+    "passed_final_arc_count": 2656,
+    "failed_final_arc_count": 0,
+    "maximum_refinement_depth": 6,
+    "projection_width_reconstruction_error": 0.0
+  },
+  "valid_for_correlated_inner_Q_smoke": true,
+  "valid_for_correlated_inner_Q_full_cover": false,
+  "valid_for_full_event_cell_finite_cover": false,
+  "valid_for_D4_event_local_W3_bound": false,
+  "valid_for_all_operator_local_GR_claim": false,
+  "valid_for_full_MTS_claim": false
+}

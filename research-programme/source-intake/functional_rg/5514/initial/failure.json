@@ -1,0 +1,100 @@
+{
+  "checks": {
+    "E07__U051__RIGHT_CONNECTOR__CUBOID__6df3d70a73e4618b_fiber_union_exact": {
+      "evidence": {
+        "child_count": 1540,
+        "contained": true,
+        "exact_closed_cover": false,
+        "interior_disjoint": false,
+        "root_exact_volume": "467570765336346916528492649570260575895220268177959/98079714615416886934934209737619787751599303819750539264",
+        "volume_error": "-46752401293528715029103883066185164662144883239/98079714615416886934934209737619787751599303819750539264"
+      },
+      "passed": false
+    },
+    "E07__U051__RIGHT_CONNECTOR__CUBOID__6df3d70a73e4618b_semantic_and_member_signature": {
+      "evidence": {
+        "fiber_count": 1540,
+        "signature": "09405fe2a41d98213d06422f1ecc452e77215faa3019d4473df96466e88dcd93"
+      },
+      "passed": true
+    },
+    "accepted_subcuboids_independently_cover_root_exactly": {
+      "evidence": {
+        "child_count": 218,
+        "contained": true,
+        "exact_closed_cover": true,
+        "interior_disjoint": true,
+        "root_exact_volume": "467570765336346916528492649570260575895220268177959/98079714615416886934934209737619787751599303819750539264",
+        "volume_error": "0"
+      },
+      "passed": true
+    },
+    "duplicate_box_rejected": {
+      "evidence": "exact binary-rational cover control",
+      "passed": true
+    },
+    "exact_two_piece_union_accepted": {
+      "evidence": "exact binary-rational cover control",
+      "passed": true
+    },
+    "gap_rejected": {
+      "evidence": "exact binary-rational cover control",
+      "passed": true
+    },
+    "global_manifest_dimensions_and_partition": {
+      "evidence": {
+        "cuboids": 21065,
+        "fibers": 99522,
+        "membership_rows": 99522
+      },
+      "passed": true
+    },
+    "main_complete_state_is_bound_to_target": {
+      "evidence": {
+        "accepted": 218,
+        "pending": 0,
+        "unresolved": 0
+      },
+      "passed": true
+    },
+    "old_certificate_is_not_replaced_or_duplicated": {
+      "evidence": [
+        "E08__U060__LEFT_CONNECTOR__CUBOID__878baa843eb8656a"
+      ],
+      "passed": true
+    },
+    "one_ulp_escape_rejected": {
+      "evidence": "exact binary-rational cover control",
+      "passed": true
+    },
+    "prior_5451_validation_passes": {
+      "evidence": 15,
+      "passed": true
+    },
+    "prior_5468_validation_passes": {
+      "evidence": 14,
+      "passed": true
+    },
+    "prior_5469_validation_passes": {
+      "evidence": 10,
+      "passed": true
+    },
+    "prior_5513_validation_passes": {
+      "evidence": 23,
+      "passed": true
+    },
+    "regional_bounds_positive_and_outward_carried": {
+      "evidence": {
+        "collision_jacobian_abs_lower": 0.010244978531048044,
+        "integrated_regular_path_abs_upper": 1.1395548204201093e+23,
+        "minimum_amplitude_denominator_abs_lower": 1.56457263377374e-09,
+        "relative_root_abs_lower": 0.9413782923495446,
+        "selected_global_root_abs_lower": 0.3097899495622826
+      },
+      "passed": true
+    }
+  },
+  "error": "E07__U051__RIGHT_CONNECTOR__CUBOID__6df3d70a73e4618b_fiber_union_exact: {'exact_closed_cover': False, 'contained': True, 'interior_disjoint': False, 'volume_error': '-46752401293528715029103883066185164662144883239/98079714615416886934934209737619787751599303819750539264', 'root_exact_volume': '467570765336346916528492649570260575895220268177959/98079714615416886934934209737619787751599303819750539264', 'child_count': 1540}",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\Y5_R2FR_5514_D4_parent_v59_exact_source_leaf_transplant.py\", line 439, in main\n    payload, certificates, leaf_map, fiber_audit, frontier, cover_audit = calculate(checks)\n                                                                          ~~~~~~~~~^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\Y5_R2FR_5514_D4_parent_v59_exact_source_leaf_transplant.py\", line 303, in calculate\n    require(checks, cuboid_id + \"_fiber_union_exact\", cover[\"exact_closed_cover\"] and count == int(root[\"source_leaf_count\"]), cover)\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\Y5_R2FR_5514_D4_parent_v59_exact_source_leaf_transplant.py\", line 198, in require\n    raise ValueError(f\"{name}: {evidence}\")\nValueError: E07__U051__RIGHT_CONNECTOR__CUBOID__6df3d70a73e4618b_fiber_union_exact: {'exact_closed_cover': False, 'contained': True, 'interior_disjoint': False, 'volume_error': '-46752401293528715029103883066185164662144883239/98079714615416886934934209737619787751599303819750539264', 'root_exact_volume': '467570765336346916528492649570260575895220268177959/98079714615416886934934209737619787751599303819750539264', 'child_count': 1540}\n",
+  "valid_for_exact_source_leaf_transplant": false
+}

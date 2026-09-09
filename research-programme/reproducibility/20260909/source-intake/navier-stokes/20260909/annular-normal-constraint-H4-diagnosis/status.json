@@ -1,0 +1,2758 @@
+{
+  "state": "complete",
+  "started_utc": "2026-09-09T08:09:17.542593+00:00",
+  "script_sha256": "4ae9434f2d3990bbb4f14303ce52e3d29ff00f9bb28f3e2c933180f6f644a650",
+  "inputs": {
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\status.json": "30f1537a71b1a0375cb2422956f4e4005aea547e99aeacb0dbe27cc94db7d120",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\executed-script.py": "980b74839be27757678ecd26d1e64ce91d22a390863248f6819b172a6c4685f9",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\status.json": "80ecaa81956bdb745a88b0dfc2f556f416027232ce15d11081c7b1c423054d30",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\executed-script.py": "272b666fec41e8882d6db8198200537928851c5e36e961c89fc35cc7ae37a726",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\status.json": "21f1d122fbeb933d31af3b5168fba9fe905f31a73e55483968e9af4b58822020",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\executed-script.py": "cc70564b11d4481839b436d07703cdcba8956ae90cf2bddb821bff2bd33c6662",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-reduction-broadcast\\status.json": "881da914115e43662e8ed9c6d367b79c0ee83644e64f7386b974abc90fd2a949",
+    "scripts\\annular_coupled_current_operator_20260909.py": "20e5c31f4bce2b401b11ad5e55e2cf8f9e75519b2c84557e9378ddc0bd8504ba",
+    "scripts\\derive_annular_coupled_current_reduction_20260909.py": "180b742c6daca65d523cec1ea7cf134a4c8a5c54a25687b8fc7f9f0deefd05d1",
+    "scripts\\annular_coordinate_evolution_operator_20260909.py": "cf884d6a6df0e0c9c578248bbff7ebf16011aad051a018350d9ab31c40bccbd2",
+    "scripts\\annular_evolution_operator_20260909.py": "3955c8fdf7eda801ced7d0eeefa21be6e3267f6056178664b3015c047933aed8",
+    "scripts\\annular_conservative_scalar_evolution_20260909.py": "9ed4c615b2a144ed461808747f6c80512baae6c0bac25163fbdbfe1e15198c2b",
+    "scripts\\annular_noether_completion_20260909.py": "1bcc72f03e3bd99859c8bdcb4ed55f064775d71673f68d7bb92601da61c4cb6f",
+    "source-intake\\navier-stokes\\20260909\\annular-constraint-correction-initial\\canonical.json": "6e24704a5834702cbbd1b8379dcb621cc074948a9dc81c9c80709df30425644a",
+    "source-intake\\navier-stokes\\20260909\\annular-constraint-correction-initial\\nonlinear_modulated.json": "39a36d33cabf877b4574692e5a15a5245af834eefce3cffd68cffe5296c4c222",
+    "scripts\\annular_volterra_source_completion_20260909.py": "158ec29d76d4b9de73065697ebc3a91b04377f718c8aa85e57e6a84bac818106",
+    "scripts\\run_annular_coupled_current_correction_20260909.py": "cc70564b11d4481839b436d07703cdcba8956ae90cf2bddb821bff2bd33c6662",
+    "scripts\\annular_continuum_initial_data_20260909.py": "7ae2b3489dd715780daf17d652fecc45c50165f638c46cf825d1d1f0cac0491b",
+    "scripts\\annular_boundary_preserving_completion_20260909.py": "88532e07986f620a1211b568c7a7d28dcc7f3961e47b5123bcacfe4d8c8e63dc",
+    "scripts\\annular_noether_source_projection_20260909.py": "ce89734bac822e9d507d013ff30c987e97c5d75d27ecd321322b5175a100b076",
+    "scripts\\sbp4_derived_operator_20260909.py": "065ea0be52b651d742082230fe8322a367e11fc5e20150c8f3d506d1f87e77d3",
+    "scripts\\sbp4_compatible_second_operator_20260909.py": "86c6f05f7cf0a07abe9d4caa5ca1038b9f64641085a1a4a4f03aeae3ac918a3c",
+    "source-intake\\navier-stokes\\20260909\\annular-analytic-third-corner-initial-data\\status.json": "9c22536e38bf8479419a1ec526c0f7a3b688bc65d050f56e905c1b57b763a79a",
+    "scripts\\annular_third_corner_initial_data_20260909.py": "ac6f3ef627a88496a7639bc8dacfc08583052f8c2e22ba5c80ca21845a8ad480",
+    "scripts\\annular_analytic_corner_jets_20260909.py": "fdb1b59a03d37cce85de443cfae9c2a246d829e9716251b6d942fded15bf40ea",
+    "scripts\\derive_annular_analytic_third_corner_data_20260909.py": "819278bc5dd3b6f0781413a6cc2042c3055a65dede06d5a1106e3a53bf7ae5b4",
+    "scripts\\annular_fifth_order_jet_20260909.py": "02db75655f95f3d64fba5246b7d7eca9ab4cdba35cc5b3aa0cb8be53072814ef",
+    "scripts\\annular_second_corner_initial_data_20260909.py": "ec895bc2d29b5191d684d11ab4373d91feca7acdfaf8b97b715b30b117eef807",
+    "scripts\\annular_current_corner_compatibility_20260909.py": "bd7515936a8bc0f062519ac38881c66ea9f40cc93acee56eb5afa2b607528d07",
+    "source-intake\\navier-stokes\\20260909\\annular-second-corner-truncation-diagnosis\\status.json": "ec2d7da1e7c6c04687189362b91bce41305af20816c5e37562e87e6e6d1c10cf",
+    "source-intake\\navier-stokes\\20260909\\annular-second-corner-initial-data\\canonical-degree64.json": "c6403afcede88ccdf08664072f5a3dcc4f4ac609f9fbecfb5dcb2144d1e8cbb4",
+    "source-intake\\navier-stokes\\20260909\\annular-second-corner-initial-data\\nonlinear_modulated-degree64.json": "c0897535cd59a37b3ad69f03b7db1d1d0f8b2407b77e573c0ff6754b80e71998",
+    "source-intake\\navier-stokes\\20260909\\annular-analytic-third-corner-initial-data\\canonical-degree64.json": "fe232378a70a9ac9d328c750fffcc8bfbd16ddfe8e4062c321bcc05b7ef662cf",
+    "source-intake\\navier-stokes\\20260909\\annular-analytic-third-corner-initial-data\\nonlinear_modulated-degree64.json": "9772d01c0514176c10ee762220acbcaa95f4341f4d63dd0073c9d214a39696e5",
+    "scripts\\annular_coupled_current_time_jets_20260909.py": "0622610d2da611e066aff45e42e03675eb57b2099eda7bfff1ac711c3d67a95b",
+    "scripts\\derive_annular_coupled_current_time_jets_20260909.py": "272b666fec41e8882d6db8198200537928851c5e36e961c89fc35cc7ae37a726",
+    "scripts\\annular_correction_time_jets_20260909.py": "ec5decfa95ad31a42908801d3e98002ac70d04b1e1b19636ce699f4a6cff5e9a",
+    "scripts\\navier_stokes_source_audit_20260908.py": "817c4cdff5bf22a88deea7771b4bbc960690397512bc07cdb639ee9ab33e4f0b",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N128_dt1_T0.1.npz": "c1256753a985a3acd464ec9698d949ead2aea8656b5e781be621bb2b580107b1",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N128_dt1_T0.3.npz": "e9fb136c2fffbb4b8e368ff8f035f8184e035e540f3fca2eb7b01f785e080fc7",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N256_dt1_T0.1.npz": "1e84fd16a7ac0f290610aae32a1fa5ad9be568949e28ad5f5d674cc635cd13a7",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N256_dt1_T0.3.npz": "5db7cda772ec2d61917c400da8cd7e86bb1ce4f242a7dc7dc4f33da03c840d95",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N512_dt2_T0.1.npz": "cbfafb567aa71dc6bba30f8e5f03952509bee3ec1867da0a5c1f880f1e5519fa",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N512_dt2_T0.3.npz": "8c927efc64a7f7e2d7034b58e627fb29bd27d3230610272ba3ac511ce2030d78",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N128_dt1_T0.1.npz": "614f9586a008541b86147f8ece40c2ac80033fff24f7c33d8dcd383b22abec3e",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N128_dt1_T0.3.npz": "13a11854d8b8414d9bd42e6137f3de867d3670428bb673090b00523c2aa86e85",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N256_dt1_T0.1.npz": "59bb2e53fc99dce96580fd1276199edbf5d3dc59d79edb7c67f3ee51ecb0a524",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N256_dt1_T0.3.npz": "54376c906efebb1eb3667d2984e7ef6977078e93cda97b54862a4fc4c1a3da3d",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N512_dt2_T0.1.npz": "d83270ac8f8186dc1dc41890fe5169ea62d9e9e2d476b3328c5911e3d6c68d55",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N512_dt2_T0.3.npz": "229e310052f3eb45ea8c2b89ff33b8a4537a0d1f0f0e2443b20fdf31914e00f5",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-curvature-transfer\\status.json": "3c6716ac3cc3025c14c411f03c61dc3717b6e2e1551ee042d3e4b60dd08c8ae8",
+    "scripts\\annular_current_normal_reconstruction_20260909.py": "a99bf58d7267416f74b8b95f7ec1b5c691fd7074683bb1616cfb81676563e9af",
+    "scripts\\derive_annular_current_normal_reconstruction_20260909.py": "980b74839be27757678ecd26d1e64ce91d22a390863248f6819b172a6c4685f9",
+    "scripts\\annular_coupled_curvature_transfer_20260909.py": "271ced21b5857d8a87229d16af768d3d14ee071b76905c82607c41c7c93b262a",
+    "scripts\\annular_curvature_timejet_transfer_20260909.py": "5b07d93df2021227f3b04a471d7cdf3ebe616fc5abd65731f8ec58bff8315b74",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\canonical_N128_dt1_T0.1_time_jets.npz": "b4fb8237f6b9610ab203d829ad1a066f6932cae9ed7a723d646b3a30590f4a1e",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\canonical_N128_dt1_T0.3_time_jets.npz": "abcd7c59e78516a554d67d2d10a766812dc92a1f562400ffb0737c2587f448fd",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\canonical_N256_dt1_T0.1_time_jets.npz": "a58f9065dbfc39438049250b6823ce20fea3d5d5129b76a1e5d988a401976f14",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\canonical_N256_dt1_T0.3_time_jets.npz": "1c4e8307973e74840ef2914057a6bb3cbff813f5c7f1bc15a5f8b33b48e2b9f6",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\canonical_N512_dt2_T0.1_time_jets.npz": "f78b2fb09e0a16d06ab4d6eadf64d7077440e75d11d0be643aaaa772ee28da8f",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\canonical_N512_dt2_T0.3_time_jets.npz": "e0862ebeb9dc348f6e9a40e358ae8bdf18bac9d47b730ef13299a1ca503b7606",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\nonlinear_modulated_N128_dt1_T0.1_time_jets.npz": "424142e1657ec5a90432bcd2a8836198f8e95f8fb6389b2777422b7169862894",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\nonlinear_modulated_N128_dt1_T0.3_time_jets.npz": "2a4c9b48f8685800feeee0b8e991445d481f0d090c6d56d3007e36d1d3406e26",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\nonlinear_modulated_N256_dt1_T0.1_time_jets.npz": "30e2c8dfdd7a9c5a735450c62c9a46759de58fd12cc192a2b3d75a3624dc4f69",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\nonlinear_modulated_N256_dt1_T0.3_time_jets.npz": "49c079750552b3350e1cc33e47ba584b755c7e239c2f27ab3f0853359737783e",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\nonlinear_modulated_N512_dt2_T0.1_time_jets.npz": "942f760b3df11f54998f2419d624414acf8ebe6609e4fbe4b48ebf2cc0c295f0",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\nonlinear_modulated_N512_dt2_T0.3_time_jets.npz": "bdc45988cbebdca8cf69e5c3ab1250abb439c9b7871bc6967ec23072c82aea22",
+    "scripts\\diagnose_annular_normal_constraint_and_H4_20260909.py": "4ae9434f2d3990bbb4f14303ce52e3d29ff00f9bb28f3e2c933180f6f644a650",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N128_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "adf288606b787bd05e51fd3dc66c49b67cd28ff489781b8a55227a570e99e02c",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N128_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "cb2de5e6196e70de2d5a50593476d29f7033a19a87acb3a7ebdc272c769b3fb4",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N128_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "cc07cf182f8ea85e552397fb9835f6e4fbddd5ee2e044a520f34643891ddd227",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N128_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "d672e4649d7433fe8c4eff9392ecbd1ddb28a27b648f4be06876f166a78370ed",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N256_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "5b9f3ebb98e46edb6f719aa0b31b1a8cac88caf2256672ac619dbbeaa50573f4",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N256_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "cad0ffcae50a21c86d77a01780a9a8e353c01249f1881e4b2ac323c222afabc6",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N256_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "ca062239f32ab24506c7c704827f509e72688425a5b4efe242a7ddf42ac214e5",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N256_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "48315d5af1c371b7c27022608b5ff8b1fba5635df63801c5149b9864c4023d7c",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N512_dt2_T0.1_time_jets_poly7_normal_curvature.npz": "5b0c1df82558dcf90ef5dfcf97eb5e1ced56e0ba1ec5b82c31d1ad657234f155",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N512_dt2_T0.1_time_jets_poly9_normal_curvature.npz": "6b49bf445dd60c254c9ab61a19b27fc3450e27c3cad67b878fde2fc002356a8d",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N512_dt2_T0.3_time_jets_poly7_normal_curvature.npz": "4468e7c05099dd2b6c6717030b5c1dfc6b7045cd30591fdd8b6c6c1488f3b7d8",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N512_dt2_T0.3_time_jets_poly9_normal_curvature.npz": "6935c9f311daa480bdc48a509d8c0ee39264721a277299f5f72ab7ecfa457eaa",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "085cc504ca09b4fc010b65a328db86fd1a9835ef3568bf12d87e6cbd4eb07230",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "bec4f0c01453a16caf408935d6c5ad9f6c761561443491baf9dc6a87a36958ea",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "6dc4d9e2e6f01a3d08ae97e5b2d27f9d842d5b15a247b1e18e8542080b023104",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "6a29cf4eab9422cc04c4f2bb693ddadb95e49dfd9ba5d876f81acc826b16c7d0",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "4b376aa628d80cedfbf5e2777c842ecdb27de5216110caf7984113e8cc767432",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "d0de7b843b001869a49561d36176d8d07016f7c38b5b0dccb61208475fe002f5",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "18cb4b1aafed9c2dc137b3c2b98628105efcf3e26e03287b8364a04b98dc6c57",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "9ff60c328cf3631a83c9c839e596d3de301644710d615f57dc03c5b83c6985fc",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_normal_curvature.npz": "6f7d13f51c1e5acc6168565b674b594e144905918eec21c5bcb008d9da914b67",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_normal_curvature.npz": "eee90f3aeb0c6a9e810dfb8fe45ddbb9acc5745edb407d65e204e3596566f733",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_normal_curvature.npz": "6a4bcb7e23d3d667080500318d33a74131dc8c37c54dd9b7b224682b352e1641",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_normal_curvature.npz": "85f46952ada2adeb39f942880f1d19e89c62d4af99fde5deadff044f4e0b9096"
+  },
+  "checks": [
+    {
+      "name": "normal_reconstruction_owner_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "normal_execution_snapshot",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "normal_inputs_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "symbolic_normal_determinant_minus_c_over_alpha",
+      "passed": true,
+      "detail": "-wave/alpha"
+    },
+    {
+      "name": "characteristic_c_zero_is_not_invertible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly7_normal_curvature_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly7_normal_curvature_H4_polynomial_quadrature_8_vs10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly7_normal_curvature_finite_H4_norms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly9_normal_curvature_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly9_normal_curvature_H4_polynomial_quadrature_8_vs10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly9_normal_curvature_finite_H4_norms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly7_normal_curvature_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly7_normal_curvature_H4_polynomial_quadrature_8_vs10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly7_normal_curvature_finite_H4_norms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly9_normal_curvature_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly9_normal_curvature_H4_polynomial_quadrature_8_vs10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly9_normal_curvature_finite_H4_norms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly7_normal_curvature_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly7_normal_curvature_H4_polynomial_quadrature_8_vs10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly7_normal_curvature_finite_H4_norms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly9_normal_curvature_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly9_normal_curvature_H4_polynomial_quadrature_8_vs10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly9_normal_curvature_finite_H4_norms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly7_normal_curvature_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly7_normal_curvature_H4_polynomial_quadrature_8_vs10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly7_normal_curvature_finite_H4_norms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly9_normal_curvature_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly9_normal_curvature_H4_polynomial_quadrature_8_vs10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly9_normal_curvature_finite_H4_norms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly7_normal_curvature_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly7_normal_curvature_H4_polynomial_quadrature_8_vs10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly7_normal_curvature_finite_H4_norms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly9_normal_curvature_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly9_normal_curvature_H4_polynomial_quadrature_8_vs10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly9_normal_curvature_finite_H4_norms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly7_normal_curvature_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly7_normal_curvature_H4_polynomial_quadrature_8_vs10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly7_normal_curvature_finite_H4_norms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly9_normal_curvature_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly9_normal_curvature_H4_polynomial_quadrature_8_vs10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly9_normal_curvature_finite_H4_norms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_normal_curvature_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_normal_curvature_H4_polynomial_quadrature_8_vs10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_normal_curvature_finite_H4_norms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_normal_curvature_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_normal_curvature_H4_polynomial_quadrature_8_vs10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_normal_curvature_finite_H4_norms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_normal_curvature_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_normal_curvature_H4_polynomial_quadrature_8_vs10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_normal_curvature_finite_H4_norms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_normal_curvature_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_normal_curvature_H4_polynomial_quadrature_8_vs10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_normal_curvature_finite_H4_norms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_normal_curvature_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_normal_curvature_H4_polynomial_quadrature_8_vs10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_normal_curvature_finite_H4_norms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_normal_curvature_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_normal_curvature_H4_polynomial_quadrature_8_vs10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_normal_curvature_finite_H4_norms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_normal_curvature_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_normal_curvature_H4_polynomial_quadrature_8_vs10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_normal_curvature_finite_H4_norms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_normal_curvature_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_normal_curvature_H4_polynomial_quadrature_8_vs10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_normal_curvature_finite_H4_norms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_normal_curvature_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_normal_curvature_H4_polynomial_quadrature_8_vs10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_normal_curvature_finite_H4_norms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_normal_curvature_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_normal_curvature_H4_polynomial_quadrature_8_vs10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_normal_curvature_finite_H4_norms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_normal_curvature_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_normal_curvature_H4_polynomial_quadrature_8_vs10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_normal_curvature_finite_H4_norms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_normal_curvature_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_normal_curvature_H4_polynomial_quadrature_8_vs10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_normal_curvature_finite_H4_norms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_T0.1_time_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_T0.1_mass_second_jet_constraint_decomposition",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_T0.1_normal_Z_four_channel_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_T0.3_time_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_T0.3_mass_second_jet_constraint_decomposition",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_T0.3_normal_Z_four_channel_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_T0.1_time_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_T0.1_mass_second_jet_constraint_decomposition",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_T0.1_normal_Z_four_channel_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_T0.3_time_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_T0.3_mass_second_jet_constraint_decomposition",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_T0.3_normal_Z_four_channel_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_bytecode_cache",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "cases": [
+    {
+      "case": "canonical",
+      "time": 0.1,
+      "Z_difference_max": 3.6575751554931007e-13,
+      "channel_names": [
+        "retained_constraint_radial",
+        "constraint_coefficient_radial",
+        "changed_current_radial",
+        "lapse_second_radial"
+      ],
+      "channel_maxima": [
+        3.657575066059076e-13,
+        3.9600115427378936e-24,
+        1.0244156253988438e-24,
+        3.352658176495485e-15
+      ],
+      "all_row_triangle_max": 3.6575751554930225e-13,
+      "remainder_max": 5.979950539415356e-26
+    },
+    {
+      "case": "canonical",
+      "time": 0.3,
+      "Z_difference_max": 1.2434092436764262e-11,
+      "channel_names": [
+        "retained_constraint_radial",
+        "constraint_coefficient_radial",
+        "changed_current_radial",
+        "lapse_second_radial"
+      ],
+      "channel_maxima": [
+        1.2434092547711916e-11,
+        1.9098598145007535e-24,
+        1.8117630676164503e-24,
+        2.1882181654920387e-13
+      ],
+      "all_row_triangle_max": 1.2434092658663193e-11,
+      "remainder_max": 6.930537482819199e-27
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.1,
+      "Z_difference_max": 2.0139609230787738e-11,
+      "channel_names": [
+        "retained_constraint_radial",
+        "constraint_coefficient_radial",
+        "changed_current_radial",
+        "lapse_second_radial"
+      ],
+      "channel_maxima": [
+        2.01396091299487e-11,
+        4.668233368320004e-24,
+        6.310462223146452e-24,
+        4.384300437520714e-15
+      ],
+      "all_row_triangle_max": 2.013960923080036e-11,
+      "remainder_max": 1.9305043515613862e-25
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.3,
+      "Z_difference_max": 7.559810083424792e-11,
+      "channel_names": [
+        "retained_constraint_radial",
+        "constraint_coefficient_radial",
+        "changed_current_radial",
+        "lapse_second_radial"
+      ],
+      "channel_maxima": [
+        7.559810063269723e-11,
+        1.148428166112042e-23,
+        4.43095492651281e-24,
+        1.2218151417890383e-12
+      ],
+      "all_row_triangle_max": 7.559810083427108e-11,
+      "remainder_max": 3.1455039734782625e-26
+    }
+  ],
+  "norms": [
+    {
+      "case": "canonical",
+      "time": 0.1,
+      "intervals": 128,
+      "method": "poly7",
+      "component_order": [
+        "chi",
+        "w",
+        "h",
+        "mu",
+        "delta"
+      ],
+      "derivative_L2_norms_orders0to4": [
+        [
+          3.3824477887904894e-10,
+          9.260308763246392e-10,
+          9.32120242729398e-10,
+          1.2243334366209092e-11,
+          3.8047137486258624e-14
+        ],
+        [
+          9.261549284625244e-10,
+          8.137496242802325e-09,
+          8.122556953855986e-09,
+          1.3668891565776987e-11,
+          1.6740712941453138e-13
+        ],
+        [
+          8.329451019542289e-09,
+          1.0224130813348439e-07,
+          1.0223301533769445e-07,
+          5.652031790044889e-11,
+          9.209857601024222e-12
+        ],
+        [
+          3.905356313510233e-07,
+          2.4278007430341267e-06,
+          2.4145968274328704e-06,
+          1.0796519559226161e-08,
+          1.9254436651521285e-09
+        ],
+        [
+          0.00011438432945384762,
+          0.0006908110067337768,
+          0.0006897501200710208,
+          3.2770658576575373e-06,
+          5.842031468987241e-07
+        ]
+      ],
+      "H4_norm_by_component": [
+        0.000114384996450748,
+        0.0006908152804920745,
+        0.0006897543540524125,
+        3.2770836430873422e-06,
+        5.842063199457285e-07
+      ]
+    },
+    {
+      "case": "canonical",
+      "time": 0.1,
+      "intervals": 128,
+      "method": "poly9",
+      "component_order": [
+        "chi",
+        "w",
+        "h",
+        "mu",
+        "delta"
+      ],
+      "derivative_L2_norms_orders0to4": [
+        [
+          3.3824478073655166e-10,
+          9.260310101030711e-10,
+          9.321200323147928e-10,
+          1.2243339729526485e-11,
+          3.804713782341458e-14
+        ],
+        [
+          9.261549555020834e-10,
+          8.137481874648503e-09,
+          8.12254267479825e-09,
+          1.3668882590304388e-11,
+          1.6740713834247182e-13
+        ],
+        [
+          8.329454231424379e-09,
+          1.0224767435808706e-07,
+          1.0223770963242048e-07,
+          5.656404081441627e-11,
+          9.209855703948411e-12
+        ],
+        [
+          3.9054218646890525e-07,
+          2.452364784285939e-06,
+          2.4330686268308537e-06,
+          1.081782739424075e-08,
+          1.92544300524335e-09
+        ],
+        [
+          0.00011439021919107547,
+          0.0006931184107156511,
+          0.0006901352664404918,
+          3.2801704406760147e-06,
+          5.842025864705155e-07
+        ]
+      ],
+      "H4_norm_by_component": [
+        0.00011439088617601353,
+        0.0006931227567232866,
+        0.000690139562934357,
+        3.2801882794758046e-06,
+        5.842057595183888e-07
+      ]
+    },
+    {
+      "case": "canonical",
+      "time": 0.3,
+      "intervals": 128,
+      "method": "poly7",
+      "component_order": [
+        "chi",
+        "w",
+        "h",
+        "mu",
+        "delta"
+      ],
+      "derivative_L2_norms_orders0to4": [
+        [
+          8.345295959628714e-10,
+          9.083553469354869e-10,
+          1.2779225194745477e-09,
+          7.625211882525023e-12,
+          2.341848032575372e-13
+        ],
+        [
+          9.316913770317383e-10,
+          7.991190270204504e-09,
+          7.991847889593255e-09,
+          2.1879070359231437e-11,
+          3.954566333914412e-13
+        ],
+        [
+          2.6900344443532295e-08,
+          1.3430686226878337e-07,
+          1.3258544132184462e-07,
+          1.5865474569295605e-09,
+          9.413524771050107e-12
+        ],
+        [
+          5.440738649815271e-06,
+          1.3033874494171267e-05,
+          1.1768081666533279e-05,
+          3.367219114207905e-07,
+          1.8416465465584982e-09
+        ],
+        [
+          0.0016508543486249134,
+          0.003796975914099791,
+          0.0033930146762245214,
+          0.00010221915739209861,
+          5.587141195310721e-07
+        ]
+      ],
+      "H4_norm_by_component": [
+        0.00165086331437101,
+        0.0037969982871001256,
+        0.0033930350865361684,
+        0.00010221971200367339,
+        5.587171548415256e-07
+      ]
+    },
+    {
+      "case": "canonical",
+      "time": 0.3,
+      "intervals": 128,
+      "method": "poly9",
+      "component_order": [
+        "chi",
+        "w",
+        "h",
+        "mu",
+        "delta"
+      ],
+      "derivative_L2_norms_orders0to4": [
+        [
+          8.34529574727609e-10,
+          9.083529183901547e-10,
+          1.277926424015479e-09,
+          7.62512982442865e-12,
+          2.3418478835911966e-13
+        ],
+        [
+          9.316912481015844e-10,
+          7.991582139953396e-09,
+          7.992221603531617e-09,
+          2.1879364493663455e-11,
+          3.954565993501754e-13
+        ],
+        [
+          2.690071323488428e-08,
+          1.3449924257618032e-07,
+          1.3273152712590515e-07,
+          1.5868494081702087e-09,
+          9.414083280690257e-12
+        ],
+        [
+          5.440879847230015e-06,
+          1.3236398708555993e-05,
+          1.1942588604918947e-05,
+          3.3685260877102427e-07,
+          1.8418928388580163e-09
+        ],
+        [
+          0.0016509748161246643,
+          0.0038258292199317458,
+          0.0034131090305961273,
+          0.00010224576338640217,
+          5.58817900883878e-07
+        ]
+      ],
+      "H4_norm_by_component": [
+        0.0016509837816818776,
+        0.0038258521195269767,
+        0.0034131299268915314,
+        0.00010224631828416513,
+        5.588209364423721e-07
+      ]
+    },
+    {
+      "case": "canonical",
+      "time": 0.1,
+      "intervals": 256,
+      "method": "poly7",
+      "component_order": [
+        "chi",
+        "w",
+        "h",
+        "mu",
+        "delta"
+      ],
+      "derivative_L2_norms_orders0to4": [
+        [
+          3.382406954877479e-10,
+          9.259911685869222e-10,
+          9.32028137499233e-10,
+          1.2242706980639316e-11,
+          3.8039792850731526e-14
+        ],
+        [
+          9.259993036079264e-10,
+          8.10981016655695e-09,
+          8.096187596471528e-09,
+          1.3663104805947687e-11,
+          1.514146452949177e-13
+        ],
+        [
+          8.134697533791712e-09,
+          1.0004959691245244e-07,
+          1.000693352620235e-07,
+          2.8603932091288714e-11,
+          3.5635486942999337e-12
+        ],
+        [
+          2.8678030869373336e-07,
+          2.4324997524846286e-06,
+          2.291653409501985e-06,
+          6.146442971101902e-09,
+          1.3760655615380762e-09
+        ],
+        [
+          0.00016324791265447133,
+          0.0010654218976888102,
+          0.0009646019451364466,
+          3.731351112215876e-06,
+          8.351341662457043e-07
+        ]
+      ],
+      "H4_norm_by_component": [
+        0.0001632481647557869,
+        0.0010654246792741473,
+        0.0009646046725558893,
+        3.7313561747105573e-06,
+        8.351352999365195e-07
+      ]
+    },
+    {
+      "case": "canonical",
+      "time": 0.1,
+      "intervals": 256,
+      "method": "poly9",
+      "component_order": [
+        "chi",
+        "w",
+        "h",
+        "mu",
+        "delta"
+      ],
+      "derivative_L2_norms_orders0to4": [
+        [
+          3.382406957623006e-10,
+          9.259912069187621e-10,
+          9.320281203501952e-10,
+          1.2242707107124998e-11,
+          3.803979289938014e-14
+        ],
+        [
+          9.259993071461673e-10,
+          8.109809800412227e-09,
+          8.096187205961774e-09,
+          1.3663104512969753e-11,
+          1.5141464684019136e-13
+        ],
+        [
+          8.134698966063241e-09,
+          1.0006181568546519e-07,
+          1.0007989814818861e-07,
+          2.860368239392791e-11,
+          3.5635478486929327e-12
+        ],
+        [
+          2.867935406941787e-07,
+          2.6498853524155366e-06,
+          2.4963780489106925e-06,
+          6.146094985510765e-09,
+          1.3760649194151675e-09
+        ],
+        [
+          0.00016327130789680808,
+          0.0011674243912336935,
+          0.001061078573170929,
+          3.7305074029794624e-06,
+          8.35133065503975e-07
+        ]
+      ],
+      "H4_norm_by_component": [
+        0.00016327155998524206,
+        0.0011674274029757627,
+        0.0010610815145068828,
+        3.7305124660457684e-06,
+        8.351341991952265e-07
+      ]
+    },
+    {
+      "case": "canonical",
+      "time": 0.3,
+      "intervals": 256,
+      "method": "poly7",
+      "component_order": [
+        "chi",
+        "w",
+        "h",
+        "mu",
+        "delta"
+      ],
+      "derivative_L2_norms_orders0to4": [
+        [
+          8.345459869821062e-10,
+          9.084769618311679e-10,
+          1.2782235781927772e-09,
+          7.63175704327571e-12,
+          2.341920921067809e-13
+        ],
+        [
+          9.110507467955533e-10,
+          8.194868331463546e-09,
+          8.189774336210617e-09,
+          1.850532199999198e-11,
+          3.901861846388881e-13
+        ],
+        [
+          1.8916911345392823e-08,
+          1.5590840500682514e-07,
+          1.5716222432641524e-07,
+          1.1685388157347977e-09,
+          8.153720248635158e-12
+        ],
+        [
+          7.237472800274801e-06,
+          1.555831064308887e-05,
+          1.7807747103921223e-05,
+          4.95972384934278e-07,
+          3.0795331131125318e-09
+        ],
+        [
+          0.004392917081521207,
+          0.008875299889342252,
+          0.010326461978567982,
+          0.0003011319099791605,
+          1.869002263426172e-06
+        ]
+      ],
+      "H4_norm_by_component": [
+        0.004392923043543184,
+        0.008875313527485329,
+        0.0103264773342818,
+        0.00030113231842110493,
+        1.8690048004975908e-06
+      ]
+    },
+    {
+      "case": "canonical",
+      "time": 0.3,
+      "intervals": 256,
+      "method": "poly9",
+      "component_order": [
+        "chi",
+        "w",
+        "h",
+        "mu",
+        "delta"
+      ],
+      "derivative_L2_norms_orders0to4": [
+        [
+          8.345459881559918e-10,
+          9.084774642799226e-10,
+          1.2782232074457912e-09,
+          7.631755545921445e-12,
+          2.341920929345736e-13
+        ],
+        [
+          9.11050774880548e-10,
+          8.194805685187693e-09,
+          8.189712824527333e-09,
+          1.8505321230146852e-11,
+          3.901862121573342e-13
+        ],
+        [
+          1.891683034752346e-08,
+          1.5610026468234593e-07,
+          1.5733236349919584e-07,
+          1.1685377459778817e-09,
+          8.153978107930418e-12
+        ],
+        [
+          7.237409813527598e-06,
+          1.6286816886031376e-05,
+          1.8384660367412268e-05,
+          4.959717815291726e-07,
+          3.0797839389897673e-09
+        ],
+        [
+          0.004392809465022645,
+          0.009154246868538118,
+          0.010536649140978887,
+          0.0003011307725654666,
+          1.869095681752771e-06
+        ]
+      ],
+      "H4_norm_by_component": [
+        0.004392815427086906,
+        0.009154261358240734,
+        0.010536665181197042,
+        0.0003011311810079599,
+        1.8690982191106655e-06
+      ]
+    },
+    {
+      "case": "canonical",
+      "time": 0.1,
+      "intervals": 512,
+      "method": "poly7",
+      "component_order": [
+        "chi",
+        "w",
+        "h",
+        "mu",
+        "delta"
+      ],
+      "derivative_L2_norms_orders0to4": [
+        [
+          3.382404210081959e-10,
+          9.259907201576876e-10,
+          9.320251337125561e-10,
+          1.2242604806946893e-11,
+          3.803968305891403e-14
+        ],
+        [
+          9.259934441140664e-10,
+          8.107969041151144e-09,
+          8.094460034485271e-09,
+          1.3666452356633362e-11,
+          1.5089015656004146e-13
+        ],
+        [
+          8.179838145103582e-09,
+          1.0020602012268256e-07,
+          1.0027179873984107e-07,
+          1.5753885032332203e-10,
+          2.1023877643179748e-12
+        ],
+        [
+          9.239251277654718e-07,
+          7.794869992052387e-06,
+          7.738659721679439e-06,
+          1.3210582014370874e-07,
+          1.2747285568000553e-09
+        ],
+        [
+          0.001115359983735374,
+          0.007896457536654515,
+          0.00788097719655127,
+          0.0001604173116789243,
+          1.5475393073941022e-06
+        ]
+      ],
+      "H4_norm_by_component": [
+        0.0011153603664393393,
+        0.007896461384588285,
+        0.007880980996648593,
+        0.00016041736607445598,
+        1.547539832400819e-06
+      ]
+    },
+    {
+      "case": "canonical",
+      "time": 0.1,
+      "intervals": 512,
+      "method": "poly9",
+      "component_order": [
+        "chi",
+        "w",
+        "h",
+        "mu",
+        "delta"
+      ],
+      "derivative_L2_norms_orders0to4": [
+        [
+          3.382404210687421e-10,
+          9.259907387931624e-10,
+          9.320251198742393e-10,
+          1.2242604802990276e-11,
+          3.8039683069528245e-14
+        ],
+        [
+          9.259934448698522e-10,
+          8.10796927807277e-09,
+          8.094460219219636e-09,
+          1.3666452359146422e-11,
+          1.5089015692025587e-13
+        ],
+        [
+          8.179838468971143e-09,
+          1.0027003981645369e-07,
+          1.0032704627402891e-07,
+          1.57538818147904e-10,
+          2.102387400770425e-12
+        ],
+        [
+          9.239305122404361e-07,
+          8.987473724962946e-06,
+          8.794948996868045e-06,
+          1.3210577528992448e-07,
+          1.2747279417702589e-09
+        ],
+        [
+          0.001115377367124939,
+          0.008870744378078901,
+          0.008691519098817385,
+          0.00016041722630867565,
+          1.5475370781945934e-06
+        ]
+      ],
+      "H4_norm_by_component": [
+        0.0011153777498274001,
+        0.008870748931517737,
+        0.008691523549203967,
+        0.00016041728070419932,
+        1.5475376032015599e-06
+      ]
+    },
+    {
+      "case": "canonical",
+      "time": 0.3,
+      "intervals": 512,
+      "method": "poly7",
+      "component_order": [
+        "chi",
+        "w",
+        "h",
+        "mu",
+        "delta"
+      ],
+      "derivative_L2_norms_orders0to4": [
+        [
+          8.345473275112483e-10,
+          9.084998165932213e-10,
+          1.2782511791181993e-09,
+          7.633045265099381e-12,
+          2.341931252999968e-13
+        ],
+        [
+          9.086012013973293e-10,
+          8.167402738276685e-09,
+          8.163199452033354e-09,
+          1.79630804829979e-11,
+          3.891315299915423e-13
+        ],
+        [
+          1.0626573072646318e-08,
+          1.4826426690312537e-07,
+          1.4896207008660493e-07,
+          6.380431107470426e-10,
+          4.479408172822247e-12
+        ],
+        [
+          5.774182829653414e-06,
+          3.189606624314161e-05,
+          3.403320355106212e-05,
+          5.413920561986844e-07,
+          2.136040339568373e-09
+        ],
+        [
+          0.007009311612452254,
+          0.037876132598562234,
+          0.040543489690230465,
+          0.000657418217197382,
+          2.5923903383547766e-06
+        ]
+      ],
+      "H4_norm_by_component": [
+        0.007009313990809643,
+        0.037876146028931724,
+        0.040543503974656975,
+        0.0006574184401191909,
+        2.5923912183703673e-06
+      ]
+    },
+    {
+      "case": "canonical",
+      "time": 0.3,
+      "intervals": 512,
+      "method": "poly9",
+      "component_order": [
+        "chi",
+        "w",
+        "h",
+        "mu",
+        "delta"
+      ],
+      "derivative_L2_norms_orders0to4": [
+        [
+          8.345473275676236e-10,
+          9.084998786220876e-10,
+          1.2782511414779434e-09,
+          7.633045371654458e-12,
+          2.341931253396773e-13
+        ],
+        [
+          9.086012029426605e-10,
+          8.167399591763057e-09,
+          8.163196317368816e-09,
+          1.7963080496981117e-11,
+          3.89131531323922e-13
+        ],
+        [
+          1.062656470360016e-08,
+          1.483341880630629e-07,
+          1.4902305857695347e-07,
+          6.380450042825187e-10,
+          4.479495803927743e-12
+        ],
+        [
+          5.774164547722483e-06,
+          3.237321460336154e-05,
+          3.442717878722368e-05,
+          5.413954767167845e-07,
+          2.1363058256827135e-09
+        ],
+        [
+          0.007009248989349955,
+          0.038277286275416746,
+          0.040864455071594766,
+          0.0006574204720089698,
+          2.5926426110863093e-06
+        ]
+      ],
+      "H4_norm_by_component": [
+        0.007009251367713533,
+        0.03827729996561018,
+        0.040864469573840094,
+        0.0006574206949328309,
+        2.5926434912350155e-06
+      ]
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.1,
+      "intervals": 128,
+      "method": "poly7",
+      "component_order": [
+        "chi",
+        "w",
+        "h",
+        "mu",
+        "delta"
+      ],
+      "derivative_L2_norms_orders0to4": [
+        [
+          1.1415579401434925e-09,
+          3.938028701824646e-09,
+          3.975194641893007e-09,
+          1.3758974109378174e-10,
+          1.2410407158256093e-13
+        ],
+        [
+          3.938954719650992e-09,
+          3.737326688219017e-08,
+          3.7363504819092914e-08,
+          7.31780625207281e-11,
+          7.524213212166529e-13
+        ],
+        [
+          3.893048319282514e-08,
+          4.880728331733904e-07,
+          4.873983423375873e-07,
+          3.934702080779964e-10,
+          4.912917029013104e-11
+        ],
+        [
+          2.3596996427962243e-06,
+          1.3436465554381431e-05,
+          1.301524533764153e-05,
+          8.104168156314228e-08,
+          1.0307162357241557e-08
+        ],
+        [
+          0.0007008070796143803,
+          0.003664811036709887,
+          0.003547841420096557,
+          2.4599139201194052e-05,
+          3.127689593737302e-06
+        ]
+      ],
+      "H4_norm_by_component": [
+        0.0007008110533891725,
+        0.00366483570068626,
+        0.0035478653268878357,
+        2.4599272700081547e-05,
+        3.127706577475375e-06
+      ]
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.1,
+      "intervals": 128,
+      "method": "poly9",
+      "component_order": [
+        "chi",
+        "w",
+        "h",
+        "mu",
+        "delta"
+      ],
+      "derivative_L2_norms_orders0to4": [
+        [
+          1.14155795236038e-09,
+          3.938029400242766e-09,
+          3.975193576911279e-09,
+          1.3758973370630888e-10,
+          1.2410407212069334e-13
+        ],
+        [
+          3.938954997688018e-09,
+          3.737314512523253e-08,
+          3.736338434769558e-08,
+          7.317807466823001e-11,
+          7.524214102825392e-13
+        ],
+        [
+          3.8930528474196183e-08,
+          4.881885293022501e-07,
+          4.874936529728245e-07,
+          3.938458436129137e-10,
+          4.912915561216101e-11
+        ],
+        [
+          2.359766600849011e-06,
+          1.3805169263657368e-05,
+          1.3329171370645822e-05,
+          8.120924270219361e-08,
+          1.030715730296049e-08
+        ],
+        [
+          0.0007008653163318207,
+          0.003735523020671551,
+          0.003599446072905237,
+          2.4629041520572436e-05,
+          3.127685294893565e-06
+        ]
+      ],
+      "H4_norm_by_component": [
+        0.0007008692900018649,
+        0.0037355485621800993,
+        0.003599470785771743,
+        2.4629175409310433e-05,
+        3.127702278638325e-06
+      ]
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.3,
+      "intervals": 128,
+      "method": "poly7",
+      "component_order": [
+        "chi",
+        "w",
+        "h",
+        "mu",
+        "delta"
+      ],
+      "derivative_L2_norms_orders0to4": [
+        [
+          4.227395491333844e-09,
+          4.157013890558725e-09,
+          5.438662671769888e-09,
+          1.9433562620500815e-10,
+          1.0985857014066398e-12
+        ],
+        [
+          4.30273940522946e-09,
+          3.672804399565772e-08,
+          3.6690637142092167e-08,
+          1.2546868716535499e-10,
+          1.8326335344698642e-12
+        ],
+        [
+          1.4244716612225192e-07,
+          6.741409992146275e-07,
+          6.64449855522904e-07,
+          8.137526720517473e-09,
+          5.079256759970328e-11
+        ],
+        [
+          2.9154574970498868e-05,
+          6.884054733628019e-05,
+          6.243149035697138e-05,
+          1.727015330056827e-06,
+          1.0127486460263735e-08
+        ],
+        [
+          0.00884653170497953,
+          0.020080027536424926,
+          0.018038800298163793,
+          0.0005242739294325238,
+          3.072624745794476e-06
+        ]
+      ],
+      "H4_norm_by_component": [
+        0.00884657974681613,
+        0.020080145550776595,
+        0.018038908346429718,
+        0.0005242767739761529,
+        3.0726414364574046e-06
+      ]
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.3,
+      "intervals": 128,
+      "method": "poly9",
+      "component_order": [
+        "chi",
+        "w",
+        "h",
+        "mu",
+        "delta"
+      ],
+      "derivative_L2_norms_orders0to4": [
+        [
+          4.2273954010543284e-09,
+          4.15700707519641e-09,
+          5.4386788450597764e-09,
+          1.9433579904299657e-10,
+          1.0985856326845167e-12
+        ],
+        [
+          4.302738823698163e-09,
+          3.672997346992968e-08,
+          3.669247027672985e-08,
+          1.254698875877002e-10,
+          1.832633537308762e-12
+        ],
+        [
+          1.4244897459461037e-07,
+          6.747211639138595e-07,
+          6.648446496069299e-07,
+          8.138795619370456e-09,
+          5.0796038272457534e-11
+        ],
+        [
+          2.9155257936832803e-05,
+          6.949802695558024e-05,
+          6.296704757634619e-05,
+          1.7275654939472893e-06,
+          1.0128998344846284e-08
+        ],
+        [
+          0.008847114886840092,
+          0.020156256749636156,
+          0.01807908125959843,
+          0.0005243840611176719,
+          3.073212572133098e-06
+        ]
+      ],
+      "H4_norm_by_component": [
+        0.008847162927760574,
+        0.020156376573918708,
+        0.01807919092447552,
+        0.0005243869068761077,
+        3.073229264586227e-06
+      ]
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.1,
+      "intervals": 256,
+      "method": "poly7",
+      "component_order": [
+        "chi",
+        "w",
+        "h",
+        "mu",
+        "delta"
+      ],
+      "derivative_L2_norms_orders0to4": [
+        [
+          1.1415410225185133e-09,
+          3.937724682531641e-09,
+          3.974736815760752e-09,
+          1.3757893480344091e-10,
+          1.2403421106328861e-13
+        ],
+        [
+          3.937960928425417e-09,
+          3.717261401672542e-08,
+          3.717128749916931e-08,
+          7.3134248489672e-11,
+          6.486671476842321e-13
+        ],
+        [
+          3.8568315219503304e-08,
+          4.743524491899666e-07,
+          4.7393665259396687e-07,
+          4.275807501812598e-10,
+          1.8898046326205842e-11
+        ],
+        [
+          4.382617762989372e-06,
+          1.9069009711425962e-05,
+          1.7056185427494788e-05,
+          1.76972966928545e-07,
+          7.466186870215111e-09
+        ],
+        [
+          0.002645512050390592,
+          0.00937481481381436,
+          0.007940588183745403,
+          0.00010744827894944731,
+          4.5317298729479375e-06
+        ]
+      ],
+      "H4_norm_by_component": [
+        0.00264551568084648,
+        0.00937483421969968,
+        0.00794060651608628,
+        0.00010744842469220461,
+        4.531736023388022e-06
+      ]
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.1,
+      "intervals": 256,
+      "method": "poly9",
+      "component_order": [
+        "chi",
+        "w",
+        "h",
+        "mu",
+        "delta"
+      ],
+      "derivative_L2_norms_orders0to4": [
+        [
+          1.1415410246986915e-09,
+          3.937725025257413e-09,
+          3.974736706686439e-09,
+          1.375789342903544e-10,
+          1.24034211138589e-13
+        ],
+        [
+          3.9379609711081895e-09,
+          3.7172618450822594e-08,
+          3.717129122426406e-08,
+          7.313424831925531e-11,
+          6.4866716526347e-13
+        ],
+        [
+          3.856836132446877e-08,
+          4.745736121792241e-07,
+          4.741245672364847e-07,
+          4.276311621015049e-10,
+          1.8898041051745964e-11
+        ],
+        [
+          4.382747464818148e-06,
+          2.1158775069261413e-05,
+          1.9063117781377072e-05,
+          1.770175042573369e-07,
+          7.466183191701546e-09
+        ],
+        [
+          0.002645732239266077,
+          0.01024351361864254,
+          0.00876159675140642,
+          0.00010746491765408048,
+          4.531723544016586e-06
+        ]
+      ],
+      "H4_norm_by_component": [
+        0.002645735869634677,
+        0.010243535482229513,
+        0.008761617502659351,
+        0.00010746506344762589,
+        4.531729694459199e-06
+      ]
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.3,
+      "intervals": 256,
+      "method": "poly7",
+      "component_order": [
+        "chi",
+        "w",
+        "h",
+        "mu",
+        "delta"
+      ],
+      "derivative_L2_norms_orders0to4": [
+        [
+          4.227451146972988e-09,
+          4.15775018366891e-09,
+          5.440154836109994e-09,
+          1.928708359335207e-10,
+          1.0986188540828867e-12
+        ],
+        [
+          4.173270201941551e-09,
+          3.776857822610091e-08,
+          3.770253882982916e-08,
+          1.0917274110169744e-10,
+          1.7973448946048773e-12
+        ],
+        [
+          9.724373325913107e-08,
+          7.807154348401588e-07,
+          7.85727700850567e-07,
+          4.551957974578141e-09,
+          4.096454060063344e-11
+        ],
+        [
+          3.803760611059826e-05,
+          9.098019333174636e-05,
+          9.972892495272878e-05,
+          1.931608880908459e-06,
+          1.566884683328378e-08
+        ],
+        [
+          0.02308822260282218,
+          0.05299148505997743,
+          0.058548569993858886,
+          0.0011727851970052962,
+          9.509604156122559e-06
+        ]
+      ],
+      "H4_norm_by_component": [
+        0.023088253936286284,
+        0.05299156316686978,
+        0.058548654935899974,
+        0.0011727867877190591,
+        9.509617064876328e-06
+      ]
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.3,
+      "intervals": 256,
+      "method": "poly9",
+      "component_order": [
+        "chi",
+        "w",
+        "h",
+        "mu",
+        "delta"
+      ],
+      "derivative_L2_norms_orders0to4": [
+        [
+          4.227451151617985e-09,
+          4.157752095497571e-09,
+          5.44015335416908e-09,
+          1.9287083735684038e-10,
+          1.0986188576458426e-12
+        ],
+        [
+          4.173270333127479e-09,
+          3.7768267842009036e-08,
+          3.7702234350967186e-08,
+          1.0917273863836106e-10,
+          1.7973450389688746e-12
+        ],
+        [
+          9.724336202475214e-08,
+          7.815660617064062e-07,
+          7.864878969618019e-07,
+          4.551943694645871e-09,
+          4.096592952772675e-11
+        ],
+        [
+          3.803732289495497e-05,
+          9.374206772192792e-05,
+          0.00010201624699037402,
+          1.931597667994796e-06,
+          1.5670176821029983e-08
+        ],
+        [
+          0.023087738634790102,
+          0.05407898076728295,
+          0.0594194399091671,
+          0.001172777399955082,
+          9.510123938460937e-06
+        ]
+      ],
+      "H4_norm_by_component": [
+        0.023087769968444423,
+        0.054079062020487276,
+        0.05941952748931772,
+        0.0011727789906609523,
+        9.51013684870055e-06
+      ]
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.1,
+      "intervals": 512,
+      "method": "poly7",
+      "component_order": [
+        "chi",
+        "w",
+        "h",
+        "mu",
+        "delta"
+      ],
+      "derivative_L2_norms_orders0to4": [
+        [
+          1.1415392781007986e-09,
+          3.937711572842836e-09,
+          3.974712130753129e-09,
+          1.375760643740734e-10,
+          1.240329719186005e-13
+        ],
+        [
+          3.937747961157637e-09,
+          3.7130644076618e-08,
+          3.713144918921774e-08,
+          7.312887356423266e-11,
+          6.450158627699595e-13
+        ],
+        [
+          3.802915260459387e-08,
+          4.7603214564192504e-07,
+          4.7591387584734704e-07,
+          7.092803728855307e-10,
+          9.724800735607431e-12
+        ],
+        [
+          6.988367409318091e-06,
+          3.490544201996407e-05,
+          3.204372013270406e-05,
+          5.967772819389519e-07,
+          5.8497005289704756e-09
+        ],
+        [
+          0.00846649069594259,
+          0.03696712014361736,
+          0.03314372189505548,
+          0.0007246733251871477,
+          7.101556484772099e-06
+        ]
+      ],
+      "H4_norm_by_component": [
+        0.008466493580179727,
+        0.03696713662606997,
+        0.03314373738860282,
+        0.0007246735709141387,
+        7.101558894038684e-06
+      ]
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.1,
+      "intervals": 512,
+      "method": "poly9",
+      "component_order": [
+        "chi",
+        "w",
+        "h",
+        "mu",
+        "delta"
+      ],
+      "derivative_L2_norms_orders0to4": [
+        [
+          1.141539278304124e-09,
+          3.937711628681175e-09,
+          3.974712096569508e-09,
+          1.3757606434341022e-10,
+          1.2403297192499132e-13
+        ],
+        [
+          3.937747964657216e-09,
+          3.7130649930883466e-08,
+          3.7131454759136235e-08,
+          7.312887351875411e-11,
+          6.450158643357494e-13
+        ],
+        [
+          3.802916847211527e-08,
+          4.7620171445850324e-07,
+          4.760544660449283e-07,
+          7.09283352873201e-10,
+          9.724802153180834e-12
+        ],
+        [
+          6.988476379976951e-06,
+          3.833371643171408e-05,
+          3.518296446196664e-05,
+          5.967824206160569e-07,
+          5.849703813176783e-09
+        ],
+        [
+          0.00846686190782644,
+          0.03940621327854246,
+          0.03518689161773825,
+          0.0007246772979648714,
+          7.101567537772631e-06
+        ]
+      ],
+      "H4_norm_by_component": [
+        0.008466864792027065,
+        0.03940623192663762,
+        0.03518690921049288,
+        0.000724677543694747,
+        7.101569947038171e-06
+      ]
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.3,
+      "intervals": 512,
+      "method": "poly7",
+      "component_order": [
+        "chi",
+        "w",
+        "h",
+        "mu",
+        "delta"
+      ],
+      "derivative_L2_norms_orders0to4": [
+        [
+          4.227456279551007e-09,
+          4.157872263591984e-09,
+          5.440295119015208e-09,
+          1.9267016329909242e-10,
+          1.0986220495317271e-12
+        ],
+        [
+          4.15823245207463e-09,
+          3.7633810315617496e-08,
+          3.757155980455167e-08,
+          1.0770942473573568e-10,
+          1.7913949406212593e-12
+        ],
+        [
+          4.647319967657219e-08,
+          7.173969052644522e-07,
+          7.218349802941156e-07,
+          1.3287586776927509e-09,
+          2.1694364034366075e-11
+        ],
+        [
+          2.3166625112260452e-05,
+          0.00010115103432401685,
+          0.00012315689873093375,
+          1.1228829153177016e-06,
+          1.0665130112923117e-08
+        ],
+        [
+          0.028118459515192967,
+          0.11834940741271747,
+          0.14595850999741583,
+          0.0013635237706499704,
+          1.2943308344414154e-05
+        ]
+      ],
+      "H4_norm_by_component": [
+        0.028118469058650047,
+        0.11834945064084254,
+        0.1459585619578719,
+        0.0013635242330062819,
+        1.294331273840111e-05
+      ]
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.3,
+      "intervals": 512,
+      "method": "poly9",
+      "component_order": [
+        "chi",
+        "w",
+        "h",
+        "mu",
+        "delta"
+      ],
+      "derivative_L2_norms_orders0to4": [
+        [
+          4.227456279802582e-09,
+          4.157872522381642e-09,
+          5.440294947235784e-09,
+          1.9267016299746975e-10,
+          1.0986220497250335e-12
+        ],
+        [
+          4.158232460310207e-09,
+          3.7633789383078e-08,
+          3.7571539145215907e-08,
+          1.077094248610259e-10,
+          1.7913949486001042e-12
+        ],
+        [
+          4.64731483118733e-08,
+          7.175211509961539e-07,
+          7.219299919309008e-07,
+          1.3287959527108782e-09,
+          2.169494298554945e-11
+        ],
+        [
+          2.3166504266751485e-05,
+          0.00010254130458448045,
+          0.00012406156179467663,
+          1.1229478064372095e-06,
+          1.0666828410733681e-08
+        ],
+        [
+          0.028118049286371384,
+          0.11902155046983544,
+          0.1462658887140809,
+          0.0013635785323579612,
+          1.2944933987330444e-05
+        ]
+      ],
+      "H4_norm_by_component": [
+        0.02811805882986813,
+        0.11902159464348896,
+        0.14626594132987225,
+        0.0013635789947491425,
+        1.2944938382164909e-05
+      ]
+    }
+  ],
+  "refinement": [
+    {
+      "case": "canonical",
+      "time": 0.1,
+      "method": "poly7",
+      "N128_to256_derivative_L2_differences": [
+        [
+          1.356264685289619e-13,
+          2.1745822279460743e-12,
+          2.134475173846031e-12,
+          4.62943331344804e-15,
+          7.049497611259953e-16
+        ],
+        [
+          1.4171092405485618e-11,
+          2.107979689293781e-10,
+          2.0515034441112702e-10,
+          4.0706332002691017e-13,
+          7.343166611544839e-14
+        ],
+        [
+          1.8930858629273586e-09,
+          1.4742343830936134e-08,
+          1.4473225452621855e-08,
+          5.290555786034026e-11,
+          9.651272651255681e-12
+        ],
+        [
+          4.6220302464016e-07,
+          2.5703172992843896e-06,
+          2.4405961862901125e-06,
+          1.2423138333782057e-08,
+          2.366214051706914e-09
+        ],
+        [
+          0.00019946929486152902,
+          0.0012386917823906333,
+          0.0011480432427718606,
+          4.965978627289142e-06,
+          1.0192456178737296e-06
+        ]
+      ],
+      "N256_to512_derivative_L2_differences": [
+        [
+          1.3755461933112265e-14,
+          2.2260232470892172e-13,
+          2.2854383673069896e-13,
+          8.883928788078485e-16,
+          6.268963405433337e-17
+        ],
+        [
+          3.3211128688151647e-12,
+          3.3243861830618245e-11,
+          3.5055498091909626e-11,
+          3.130822700336112e-13,
+          1.3215426153401468e-14
+        ],
+        [
+          1.2554595411867005e-09,
+          9.469792171603311e-09,
+          9.973386566530368e-09,
+          1.5626714432398361e-10,
+          3.5757660919393014e-12
+        ],
+        [
+          9.56910932658426e-07,
+          7.329697038336414e-06,
+          7.289846274563655e-06,
+          1.3224868109673091e-07,
+          1.875475243409963e-09
+        ],
+        [
+          0.001127255997623621,
+          0.00782297028473358,
+          0.007806764030568749,
+          0.00016046070013870048,
+          1.7585289238696885e-06
+        ]
+      ],
+      "H4_difference_ratio_by_component": [
+        0.1769516054211996,
+        0.15834061237904137,
+        0.14705777349518254,
+        0.0309483410940206,
+        0.5796025138072669
+      ],
+      "H4_fine_difference_by_component": [
+        0.0011272564037780111,
+        0.007822973718501996,
+        0.007806767434152256,
+        0.000160460754637201,
+        1.758529923972424e-06
+      ],
+      "unknown_continuum_bound": false
+    },
+    {
+      "case": "canonical",
+      "time": 0.1,
+      "method": "poly9",
+      "N128_to256_derivative_L2_differences": [
+        [
+          1.356278112343494e-13,
+          2.175392517714936e-12,
+          2.135219123894499e-12,
+          4.629236850636627e-15,
+          7.049499218316e-16
+        ],
+        [
+          1.4171389820342055e-11,
+          2.1047589462185159e-10,
+          2.0480863456383568e-10,
+          4.0714760400199776e-13,
+          7.34316621452984e-14
+        ],
+        [
+          1.893127593900642e-09,
+          1.4839145602936357e-08,
+          1.455048857550107e-08,
+          5.294866129252499e-11,
+          9.651270312863907e-12
+        ],
+        [
+          4.622211788124422e-07,
+          2.7376083515807886e-06,
+          2.591117647975752e-06,
+          1.2437918411344073e-08,
+          2.366213159466775e-09
+        ],
+        [
+          0.00019948901853316726,
+          0.0013295878749754891,
+          0.001230765447337041,
+          4.966765346003813e-06,
+          1.0192449288690855e-06
+        ]
+      ],
+      "N256_to512_derivative_L2_differences": [
+        [
+          1.3755308236795521e-14,
+          2.2242661917641343e-13,
+          2.283238277187058e-13,
+          8.88378142591576e-16,
+          6.268965086835488e-17
+        ],
+        [
+          3.3211320030825446e-12,
+          3.3233673052621416e-11,
+          3.5001418747215886e-11,
+          3.130818598323276e-13,
+          1.321542476352922e-14
+        ],
+        [
+          1.255469101242135e-09,
+          1.0063642588137646e-08,
+          1.0453701444078479e-08,
+          1.56267110659337e-10,
+          3.5757650230494566e-12
+        ],
+        [
+          9.56917639950383e-07,
+          8.380328602543247e-06,
+          8.202825264141033e-06,
+          1.3224870756989354e-07,
+          1.87547445291876e-09
+        ],
+        [
+          0.0011272681982999085,
+          0.008778138732538184,
+          0.008594457762939855,
+          0.00016046057918745735,
+          1.7585276890414514e-06
+        ]
+      ],
+      "H4_difference_ratio_by_component": [
+        0.17696718709463566,
+        0.1514660599490024,
+        0.1432048010841309,
+        0.03095326751406869,
+        0.5796025289931285
+      ],
+      "H4_fine_difference_by_component": [
+        0.0011272686044555963,
+        0.008778142732816312,
+        0.008594461677464665,
+        0.00016046063368602078,
+        1.7585286891440462e-06
+      ],
+      "unknown_continuum_bound": false
+    },
+    {
+      "case": "canonical",
+      "time": 0.3,
+      "method": "poly7",
+      "N128_to256_derivative_L2_differences": [
+        [
+          2.0112727884670365e-12,
+          1.1711000961061093e-11,
+          1.141168660335997e-11,
+          3.805367210346872e-13,
+          6.849586299529442e-16
+        ],
+        [
+          2.1428281632303621e-10,
+          1.074135073566079e-09,
+          1.0273717581711069e-09,
+          1.3377716021201702e-11,
+          7.457868239892096e-14
+        ],
+        [
+          3.078921159779059e-08,
+          8.396838392998806e-08,
+          8.1397322076328e-08,
+          1.970176976841218e-09,
+          1.1310524581236497e-11
+        ],
+        [
+          9.03573465834847e-06,
+          1.9973085442910597e-05,
+          2.102814548790281e-05,
+          5.994739444225197e-07,
+          3.5812000397919064e-09
+        ],
+        [
+          0.004696571777630513,
+          0.009710641496588552,
+          0.010906182557254935,
+          0.00031800814735040726,
+          1.9519833086126853e-06
+        ]
+      ],
+      "N256_to512_derivative_L2_differences": [
+        [
+          3.328134987761264e-13,
+          2.0864778613619895e-12,
+          2.108378845535329e-12,
+          3.6222045426838714e-14,
+          1.4173254627264553e-16
+        ],
+        [
+          6.900898815781907e-11,
+          3.383960991723694e-10,
+          3.4575815964784634e-10,
+          4.791197749922622e-12,
+          2.925379618337849e-14
+        ],
+        [
+          1.835073160993599e-08,
+          6.22893744466966e-08,
+          6.706242569918512e-08,
+          1.3310059749606488e-09,
+          7.67566903143737e-12
+        ],
+        [
+          9.249143142649303e-06,
+          3.4535208959459965e-05,
+          3.758653545347153e-05,
+          7.342303022344447e-07,
+          3.74286789434215e-09
+        ],
+        [
+          0.008275910791443377,
+          0.03891847607007838,
+          0.04184862618912385,
+          0.0007231038133350443,
+          3.197843671488405e-06
+        ]
+      ],
+      "H4_difference_ratio_by_component": [
+        0.5674997779604648,
+        0.24951280715004984,
+        0.2606106681123741,
+        0.43978270144199094,
+        0.610406716916816
+      ],
+      "H4_fine_difference_by_component": [
+        0.008275915959875051,
+        0.03891849139293302,
+        0.041848643068433736,
+        0.0007231041861001711,
+        3.1978458618885045e-06
+      ],
+      "unknown_continuum_bound": false
+    },
+    {
+      "case": "canonical",
+      "time": 0.3,
+      "method": "poly9",
+      "N128_to256_derivative_L2_differences": [
+        [
+          2.011268453063429e-12,
+          1.1748214551709223e-11,
+          1.144841176926243e-11,
+          3.805584510130049e-13,
+          6.849672921968409e-16
+        ],
+        [
+          2.1428648340401978e-10,
+          1.0718084469870798e-09,
+          1.0250207546635238e-09,
+          1.3378188872278943e-11,
+          7.458201499171998e-14
+        ],
+        [
+          3.0789983488127886e-08,
+          8.481971664762962e-08,
+          8.214104084344277e-08,
+          1.970411019478642e-09,
+          1.1311407985432405e-11
+        ],
+        [
+          9.035902548925891e-06,
+          2.097817710452537e-05,
+          2.188392814547343e-05,
+          5.995383995911411e-07,
+          3.5815552685094842e-09
+        ],
+        [
+          0.004696550495543534,
+          0.009996483717609632,
+          0.011129193491937438,
+          0.0003180152872281988,
+          1.9521205335828173e-06
+        ]
+      ],
+      "N256_to512_derivative_L2_differences": [
+        [
+          3.3281499913560427e-13,
+          2.0862190579684362e-12,
+          2.108046980431272e-12,
+          3.622243227571735e-14,
+          1.4173430339040345e-16
+        ],
+        [
+          6.900886113177358e-11,
+          3.379331875982624e-10,
+          3.45285837068296e-10,
+          4.7911944275796565e-12,
+          2.925405780201202e-14
+        ],
+        [
+          1.8350609540293625e-08,
+          6.280532038912641e-08,
+          6.748422987417313e-08,
+          1.331006454156941e-09,
+          7.675954650276132e-12
+        ],
+        [
+          9.249064821495e-06,
+          3.505020860277141e-05,
+          3.799926730945961e-05,
+          7.342337249892691e-07,
+          3.743143636979205e-09
+        ],
+        [
+          0.00827582776171937,
+          0.03934361958278757,
+          0.042184291063947256,
+          0.0007231054599088264,
+          3.1981261066643232e-06
+        ]
+      ],
+      "H4_difference_ratio_by_component": [
+        0.5675029000203018,
+        0.254081903723674,
+        0.2638235753645612,
+        0.4397915740723908,
+        0.6103957182909919
+      ],
+      "H4_fine_difference_by_component": [
+        0.008275832930115364,
+        0.03934363519549475,
+        0.042184308178713686,
+        0.0007231058326765799,
+        3.198128297193706e-06
+      ],
+      "unknown_continuum_bound": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.1,
+      "method": "poly7",
+      "N128_to256_derivative_L2_differences": [
+        [
+          8.556425470483231e-13,
+          1.1867167377612305e-11,
+          1.1500584177429216e-11,
+          3.26056567388043e-14,
+          3.761037779411781e-15
+        ],
+        [
+          9.554957122611931e-11,
+          1.3601056909284377e-09,
+          1.3214151053468507e-09,
+          3.442961419018787e-12,
+          3.9259446647724e-13
+        ],
+        [
+          1.50381526103138e-08,
+          1.041402647047314e-07,
+          1.0152487688839464e-07,
+          5.653117347170698e-10,
+          5.17190054048506e-11
+        ],
+        [
+          4.925795872984275e-06,
+          1.9197026847262453e-05,
+          1.7074653200231452e-05,
+          1.9464161081299717e-07,
+          1.2725572237821565e-08
+        ],
+        [
+          0.002737956913863914,
+          0.00988963434197706,
+          0.00850176101126599,
+          0.00011022776054964349,
+          5.50647834791901e-06
+        ]
+      ],
+      "N256_to512_derivative_L2_differences": [
+        [
+          2.01887471648311e-13,
+          2.1214486682552554e-12,
+          2.059809263491709e-12,
+          9.216620386090492e-15,
+          3.3869362710020625e-16
+        ],
+        [
+          4.3931219056723455e-11,
+          4.778006716260959e-10,
+          4.6236069052454083e-10,
+          2.157108062269203e-12,
+          7.110869489350868e-14
+        ],
+        [
+          1.3168904955266441e-08,
+          8.114796074624141e-08,
+          7.824411817416643e-08,
+          8.172044184226574e-10,
+          1.890302228158915e-11
+        ],
+        [
+          8.213783398007776e-06,
+          3.540061184063449e-05,
+          3.176764970029396e-05,
+          6.22464122942724e-07,
+          9.483941670708685e-09
+        ],
+        [
+          0.008873795528940753,
+          0.03741646448678852,
+          0.03340609157035774,
+          0.0007325956428296749,
+          8.424233070392253e-06
+        ]
+      ],
+      "H4_difference_ratio_by_component": [
+        0.3085444287061411,
+        0.26431274797596993,
+        0.2544977252389891,
+        0.1504621187571097,
+        0.6536487674479015
+      ],
+      "H4_fine_difference_by_component": [
+        0.008873799330380423,
+        0.037416481233555496,
+        0.03340610667522955,
+        0.0007325959072744515,
+        8.424238408888808e-06
+      ],
+      "unknown_continuum_bound": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.1,
+      "method": "poly9",
+      "N128_to256_derivative_L2_differences": [
+        [
+          8.5565242905382e-13,
+          1.1864526044886774e-11,
+          1.149725250570288e-11,
+          3.2604821975871955e-14,
+          3.761039042396146e-15
+        ],
+        [
+          9.555250570222606e-11,
+          1.357374660171042e-09,
+          1.3184658022068139e-09,
+          3.443603034998987e-12,
+          3.9259444840237894e-13
+        ],
+        [
+          1.5038689242412217e-08,
+          1.0517233902208519e-07,
+          1.0235622721448136e-07,
+          5.655672576101089e-10,
+          5.1718991703832567e-11
+        ],
+        [
+          4.925999848533288e-06,
+          2.0906359180035126e-05,
+          1.8670040565990138e-05,
+          1.9471146997715352e-07,
+          1.2725567418565513e-08
+        ],
+        [
+          0.0027381650873481724,
+          0.010710898549242199,
+          0.00925593722625229,
+          0.00011024851653517166,
+          5.5064757002313595e-06
+        ]
+      ],
+      "N256_to512_derivative_L2_differences": [
+        [
+          2.0188747928934054e-13,
+          2.126358973009394e-12,
+          2.064265310046092e-12,
+          9.216440104578097e-15,
+          3.3869382706950725e-16
+        ],
+        [
+          4.393211319853835e-11,
+          4.756590092956439e-10,
+          4.600331647865676e-10,
+          2.157146445331222e-12,
+          7.110870719422327e-14
+        ],
+        [
+          1.3169290436439619e-08,
+          8.254471633316444e-08,
+          7.937690495581132e-08,
+          8.172301359133755e-10,
+          1.890302292678223e-11
+        ],
+        [
+          8.214031949821562e-06,
+          3.813098022607007e-05,
+          3.4187089554760956e-05,
+          6.22476030554932e-07,
+          9.483944049687764e-09
+        ],
+        [
+          0.008874160060970287,
+          0.0397620971952812,
+          0.03531140718683764,
+          0.0007326014220574922,
+          8.42424288964724e-06
+        ]
+      ],
+      "H4_difference_ratio_by_component": [
+        0.30855521272660985,
+        0.2693749772641451,
+        0.2621235588092767,
+        0.15048926382219524,
+        0.6536476912648316
+      ],
+      "H4_fine_difference_by_component": [
+        0.008874163862483861,
+        0.03976211547875007,
+        0.03531142373620812,
+        0.0007326016865103004,
+        8.424248228140251e-06
+      ],
+      "unknown_continuum_bound": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.3,
+      "method": "poly7",
+      "N128_to256_derivative_L2_differences": [
+        [
+          1.0773793410111891e-11,
+          6.174875433254611e-11,
+          6.034170380734115e-11,
+          2.053356077935781e-12,
+          3.755026455263157e-15
+        ],
+        [
+          1.1461718004215554e-09,
+          5.43264690589969e-09,
+          5.201154660802428e-09,
+          6.685717931057725e-11,
+          4.056909768737604e-13
+        ],
+        [
+          1.6400156081162242e-07,
+          4.3860835607004237e-07,
+          4.2460415077073857e-07,
+          9.322356502805011e-09,
+          6.031928682102363e-11
+        ],
+        [
+          4.782729837917891e-05,
+          0.0001116220621216535,
+          0.00011532698031849636,
+          2.591080762745661e-06,
+          1.8618857164074014e-08
+        ],
+        [
+          0.02474411157007723,
+          0.05704926438736074,
+          0.06154663616805483,
+          0.0012846351787377257,
+          1.0000470476307468e-05
+        ]
+      ],
+      "N256_to512_derivative_L2_differences": [
+        [
+          1.7412262633755286e-12,
+          8.704087778673506e-12,
+          8.826489499976344e-12,
+          2.8328800547099514e-13,
+          7.196514633976046e-16
+        ],
+        [
+          3.5937828483878107e-10,
+          1.5251435343378356e-09,
+          1.5640665295675024e-09,
+          1.8190668806407708e-11,
+          1.4856345808687209e-13
+        ],
+        [
+          9.360503947022305e-08,
+          2.8174556311147715e-07,
+          3.091396020067479e-07,
+          4.73844267075732e-09,
+          3.8956268560217955e-11
+        ],
+        [
+          4.448108565878982e-05,
+          0.00013144932800488953,
+          0.00015473480298887837,
+          2.234272506088223e-06,
+          1.8926432432315762e-08
+        ],
+        [
+          0.03640490419419887,
+          0.12940633126815781,
+          0.15705693237213042,
+          0.0017985056574026403,
+          1.6070822368414475e-05
+        ]
+      ],
+      "H4_difference_ratio_by_component": [
+        0.6796924719359558,
+        0.4408543507619962,
+        0.3918751844972348,
+        0.7142800998525893,
+        0.6222756150480093
+      ],
+      "H4_fine_difference_by_component": [
+        0.036404931368765714,
+        0.12940639803073653,
+        0.15705700859591964,
+        0.0017985070452198367,
+        1.6070833513184475e-05
+      ],
+      "unknown_continuum_bound": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.3,
+      "method": "poly9",
+      "N128_to256_derivative_L2_differences": [
+        [
+          1.0773763706154208e-11,
+          6.189629444837883e-11,
+          6.048705190255947e-11,
+          2.0534598575133695e-12,
+          3.755069457439683e-15
+        ],
+        [
+          1.1461886493040362e-09,
+          5.422352849645654e-09,
+          5.1907835447156464e-09,
+          6.685917716801057e-11,
+          4.057081037260256e-13
+        ],
+        [
+          1.6400527272501613e-07,
+          4.418687265448301e-07,
+          4.274394487962621e-07,
+          9.32344243058365e-09,
+          6.032422083751662e-11
+        ],
+        [
+          4.782812327265401e-05,
+          0.0001155988658482629,
+          0.00011878535353066447,
+          2.591425925071401e-06,
+          1.8620803440842475e-08
+        ],
+        [
+          0.02474403986187144,
+          0.05816267944609217,
+          0.062458842738549396,
+          0.0012846718267851733,
+          1.0001237216263113e-05
+        ]
+      ],
+      "N256_to512_derivative_L2_differences": [
+        [
+          1.7412328062890641e-12,
+          8.700804577890136e-12,
+          8.822921427198634e-12,
+          2.83289173866965e-13,
+          7.196597745114591e-16
+        ],
+        [
+          3.5937765442223513e-10,
+          1.522402662134712e-09,
+          1.5613250888475423e-09,
+          1.8190649597032258e-11,
+          1.485648940599155e-13
+        ],
+        [
+          9.360446579866562e-08,
+          2.8371707154373016e-07,
+          3.1069545754292597e-07,
+          4.7384407427412675e-09,
+          3.895783498532673e-11
+        ],
+        [
+          4.4480691781555855e-05,
+          0.00013311980530272043,
+          0.00015589586336277873,
+          2.2343003103396797e-06,
+          1.8928026561639947e-08
+        ],
+        [
+          0.03640444477266923,
+          0.1302571552048928,
+          0.15749470070140795,
+          0.0017985423889722279,
+          1.607256455111182e-05
+        ]
+      ],
+      "H4_difference_ratio_by_component": [
+        0.6796990798870923,
+        0.44652260261083027,
+        0.39657794717587047,
+        0.714285889000252,
+        0.6222558686189626
+      ],
+      "H4_fine_difference_by_component": [
+        0.03640447194709775,
+        0.13025722322786787,
+        0.15749477785832397,
+        0.0017985437767956216,
+        1.6072575696551053e-05
+      ],
+      "unknown_continuum_bound": false
+    }
+  ],
+  "valid_for_physics_claim": false,
+  "scope": "Symbolic radial invertibility, retained-constraint contribution to the normal-reconstruction Z discrepancy, exact-degree polynomial quadrature of reconstructed H0..H4 norms and nested-grid differences. No unknown continuum-error bound; no nodal-gate pass promoted to physical regularity.",
+  "passed": 90,
+  "total": 90,
+  "completed_utc": "2026-09-09T08:09:33.195467+00:00"
+}

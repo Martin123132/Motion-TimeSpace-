@@ -1,0 +1,4242 @@
+{
+  "state": "complete",
+  "started_utc": "2026-09-09T08:38:24.725137+00:00",
+  "script_sha256": "5cd889f58f60387dbc354075920756c9cb56db45efd31109c895fd4be530899e",
+  "inputs": {
+    "source-intake\\navier-stokes\\20260909\\annular-volterra-source-completion-derived\\status.json": "b558693445fea0bdb35b7911861e492421ded53881e13e6d110577bc0754b86e",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-correction-refined\\status.json": "d6d0c133d38b9a1d8b41f288156e95a0522b6d84cd83d3e628cfb4e48330184f",
+    "source-intake\\navier-stokes\\20260909\\annular-constraint-correction-initial\\canonical.json": "6e24704a5834702cbbd1b8379dcb621cc074948a9dc81c9c80709df30425644a",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-correction-refined\\canonical_N512_dt2_T0.1.npz": "9f636588c1f462c67a294034eeceac2c908a0d3ef1c62ab5943901908cfa8fc2",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-correction-refined\\canonical_N512_dt2_T0.3.npz": "d57503c78ef5945e3f33717cf18a0534af34d1f59625615097154706b63ec129",
+    "source-intake\\navier-stokes\\20260909\\annular-constraint-correction-initial\\nonlinear_modulated.json": "39a36d33cabf877b4574692e5a15a5245af834eefce3cffd68cffe5296c4c222",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-correction-refined\\nonlinear_modulated_N512_dt2_T0.1.npz": "e96d5a18cef4df13d225d1b200e21819dc2b0e4af6167346258d0ac599bf4c93",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-correction-refined\\nonlinear_modulated_N512_dt2_T0.3.npz": "9809dbe43f01c4c6bdcb47ec05ffc95fd4b1c1c43996fc96c1ae7402f2ccb033",
+    "scripts\\annular_volterra_source_completion_20260909.py": "158ec29d76d4b9de73065697ebc3a91b04377f718c8aa85e57e6a84bac818106",
+    "scripts\\derive_annular_volterra_source_completion_20260909.py": "b55b7ca628218d373a475f581ef46deb2b8c25f6478e37f2898d86e819e5cc76",
+    "scripts\\annular_coupled_current_operator_20260909.py": "20e5c31f4bce2b401b11ad5e55e2cf8f9e75519b2c84557e9378ddc0bd8504ba",
+    "scripts\\annular_coordinate_evolution_operator_20260909.py": "cf884d6a6df0e0c9c578248bbff7ebf16011aad051a018350d9ab31c40bccbd2",
+    "scripts\\annular_evolution_operator_20260909.py": "3955c8fdf7eda801ced7d0eeefa21be6e3267f6056178664b3015c047933aed8",
+    "scripts\\sbp4_derived_operator_20260909.py": "065ea0be52b651d742082230fe8322a367e11fc5e20150c8f3d506d1f87e77d3",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\status.json": "21f1d122fbeb933d31af3b5168fba9fe905f31a73e55483968e9af4b58822020",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\executed-script.py": "cc70564b11d4481839b436d07703cdcba8956ae90cf2bddb821bff2bd33c6662",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-reduction-broadcast\\status.json": "881da914115e43662e8ed9c6d367b79c0ee83644e64f7386b974abc90fd2a949",
+    "scripts\\derive_annular_coupled_current_reduction_20260909.py": "180b742c6daca65d523cec1ea7cf134a4c8a5c54a25687b8fc7f9f0deefd05d1",
+    "scripts\\annular_conservative_scalar_evolution_20260909.py": "9ed4c615b2a144ed461808747f6c80512baae6c0bac25163fbdbfe1e15198c2b",
+    "scripts\\annular_noether_completion_20260909.py": "1bcc72f03e3bd99859c8bdcb4ed55f064775d71673f68d7bb92601da61c4cb6f",
+    "scripts\\run_annular_coupled_current_correction_20260909.py": "cc70564b11d4481839b436d07703cdcba8956ae90cf2bddb821bff2bd33c6662",
+    "scripts\\annular_continuum_initial_data_20260909.py": "7ae2b3489dd715780daf17d652fecc45c50165f638c46cf825d1d1f0cac0491b",
+    "scripts\\annular_boundary_preserving_completion_20260909.py": "88532e07986f620a1211b568c7a7d28dcc7f3961e47b5123bcacfe4d8c8e63dc",
+    "scripts\\annular_noether_source_projection_20260909.py": "ce89734bac822e9d507d013ff30c987e97c5d75d27ecd321322b5175a100b076",
+    "scripts\\sbp4_compatible_second_operator_20260909.py": "86c6f05f7cf0a07abe9d4caa5ca1038b9f64641085a1a4a4f03aeae3ac918a3c",
+    "source-intake\\navier-stokes\\20260909\\annular-analytic-third-corner-initial-data\\status.json": "9c22536e38bf8479419a1ec526c0f7a3b688bc65d050f56e905c1b57b763a79a",
+    "scripts\\annular_third_corner_initial_data_20260909.py": "ac6f3ef627a88496a7639bc8dacfc08583052f8c2e22ba5c80ca21845a8ad480",
+    "scripts\\annular_analytic_corner_jets_20260909.py": "fdb1b59a03d37cce85de443cfae9c2a246d829e9716251b6d942fded15bf40ea",
+    "scripts\\derive_annular_analytic_third_corner_data_20260909.py": "819278bc5dd3b6f0781413a6cc2042c3055a65dede06d5a1106e3a53bf7ae5b4",
+    "scripts\\annular_fifth_order_jet_20260909.py": "02db75655f95f3d64fba5246b7d7eca9ab4cdba35cc5b3aa0cb8be53072814ef",
+    "scripts\\annular_second_corner_initial_data_20260909.py": "ec895bc2d29b5191d684d11ab4373d91feca7acdfaf8b97b715b30b117eef807",
+    "scripts\\annular_current_corner_compatibility_20260909.py": "bd7515936a8bc0f062519ac38881c66ea9f40cc93acee56eb5afa2b607528d07",
+    "source-intake\\navier-stokes\\20260909\\annular-second-corner-truncation-diagnosis\\status.json": "ec2d7da1e7c6c04687189362b91bce41305af20816c5e37562e87e6e6d1c10cf",
+    "source-intake\\navier-stokes\\20260909\\annular-second-corner-initial-data\\canonical-degree64.json": "c6403afcede88ccdf08664072f5a3dcc4f4ac609f9fbecfb5dcb2144d1e8cbb4",
+    "source-intake\\navier-stokes\\20260909\\annular-second-corner-initial-data\\nonlinear_modulated-degree64.json": "c0897535cd59a37b3ad69f03b7db1d1d0f8b2407b77e573c0ff6754b80e71998",
+    "source-intake\\navier-stokes\\20260909\\annular-analytic-third-corner-initial-data\\canonical-degree64.json": "fe232378a70a9ac9d328c750fffcc8bfbd16ddfe8e4062c321bcc05b7ef662cf",
+    "source-intake\\navier-stokes\\20260909\\annular-analytic-third-corner-initial-data\\nonlinear_modulated-degree64.json": "9772d01c0514176c10ee762220acbcaa95f4341f4d63dd0073c9d214a39696e5",
+    "scripts\\annular_projected_volterra_source_20260909.py": "2fa54d4cbd5814d5efcf3faa2c00e13f21bf0f935de0528afff8be7b9cb36fd5",
+    "scripts\\annular_projected_volterra_time_jets_20260909.py": "781cf3dacb4031df3c75806a301a16dc5e7b954f18363be9310965a0ce2362d0",
+    "scripts\\derive_annular_projected_volterra_time_jets_20260909.py": "5cd889f58f60387dbc354075920756c9cb56db45efd31109c895fd4be530899e",
+    "scripts\\annular_coupled_current_time_jets_20260909.py": "0622610d2da611e066aff45e42e03675eb57b2099eda7bfff1ac711c3d67a95b",
+    "scripts\\derive_annular_coupled_current_time_jets_20260909.py": "272b666fec41e8882d6db8198200537928851c5e36e961c89fc35cc7ae37a726",
+    "scripts\\annular_correction_time_jets_20260909.py": "ec5decfa95ad31a42908801d3e98002ac70d04b1e1b19636ce699f4a6cff5e9a",
+    "scripts\\navier_stokes_source_audit_20260908.py": "817c4cdff5bf22a88deea7771b4bbc960690397512bc07cdb639ee9ab33e4f0b",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N128_dt1_T0.1.npz": "c1256753a985a3acd464ec9698d949ead2aea8656b5e781be621bb2b580107b1",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N128_dt1_T0.3.npz": "e9fb136c2fffbb4b8e368ff8f035f8184e035e540f3fca2eb7b01f785e080fc7",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N256_dt1_T0.1.npz": "1e84fd16a7ac0f290610aae32a1fa5ad9be568949e28ad5f5d674cc635cd13a7",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N256_dt1_T0.3.npz": "5db7cda772ec2d61917c400da8cd7e86bb1ce4f242a7dc7dc4f33da03c840d95",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N512_dt2_T0.1.npz": "cbfafb567aa71dc6bba30f8e5f03952509bee3ec1867da0a5c1f880f1e5519fa",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N512_dt2_T0.3.npz": "8c927efc64a7f7e2d7034b58e627fb29bd27d3230610272ba3ac511ce2030d78",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N128_dt1_T0.1.npz": "614f9586a008541b86147f8ece40c2ac80033fff24f7c33d8dcd383b22abec3e",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N128_dt1_T0.3.npz": "13a11854d8b8414d9bd42e6137f3de867d3670428bb673090b00523c2aa86e85",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N256_dt1_T0.1.npz": "59bb2e53fc99dce96580fd1276199edbf5d3dc59d79edb7c67f3ee51ecb0a524",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N256_dt1_T0.3.npz": "54376c906efebb1eb3667d2984e7ef6977078e93cda97b54862a4fc4c1a3da3d",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N512_dt2_T0.1.npz": "d83270ac8f8186dc1dc41890fe5169ea62d9e9e2d476b3328c5911e3d6c68d55",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N512_dt2_T0.3.npz": "229e310052f3eb45ea8c2b89ff33b8a4537a0d1f0f0e2443b20fdf31914e00f5"
+  },
+  "checks": [
+    {
+      "name": "Volterra_bound_owner_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Volterra_bound_inputs_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Volterra_moment_degree0_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_moment_finite_time_0.001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_moment_finite_time_0.0005",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unqualified_large_argument_time_branch_rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ordinary_evolution_owner_passed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "owner_source_snapshot",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "owner_inputs_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_operator_configuration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_mass_only_same_state_scalar_lapse_law",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_saved_RHS_replay",
+      "passed": true,
+      "detail": {
+        "error": [
+          0.0,
+          0.0,
+          4.1359030627651384e-25,
+          3.7865323450608567e-29,
+          0.0
+        ],
+        "scale": [
+          3.5688911274028716e-09,
+          7.211058734141859e-09,
+          4.76713918727288e-09,
+          1.990391160337952e-10,
+          1.6270542058853836e-12
+        ]
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_saved_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_saved_coordinate_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_saved_nonzero_forcing_replay",
+      "passed": true,
+      "detail": {
+        "error": 5.169878828456423e-26,
+        "scale": 2.386434362893558e-09
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_source_endpoint_and_lapse_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_scalar_kinematic_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_integrability_time_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_bounded_nonzero_source_residual",
+      "passed": true,
+      "detail": {
+        "residual_max": 1.1772363349376022e-11,
+        "bound_max": 6.9910125036287e-11,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_higher_Noether_coefficients_recorded_not_zeroed",
+      "passed": true,
+      "detail": {
+        "max_by_time_degree": [
+          1.1772363349376022e-11,
+          2.7712506147565896e-10,
+          2.99786233930091e-09
+        ]
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_finite_time_control_0.00025",
+      "passed": true,
+      "detail": {
+        "step": 0.00025,
+        "errors": [
+          [
+            9.43647642800494e-20,
+            3.806056521703493e-18,
+            4.589191420999297e-18,
+            1.4200449458075466e-18,
+            3.2999045756353247e-21
+          ],
+          [
+            9.430458258914698e-16,
+            3.858732367786671e-14,
+            7.599821303617082e-14,
+            2.3658810742513065e-14,
+            5.478127973237523e-17
+          ]
+        ],
+        "scales": [
+          [
+            4.321805966123207e-08,
+            8.20292693858507e-08,
+            1.1450613647326843e-07,
+            3.817211819456731e-09,
+            6.204651734206846e-11
+          ],
+          [
+            1.5122073161179192e-06,
+            2.185224275360274e-05,
+            2.2064039842676725e-05,
+            1.515480979962657e-07,
+            2.4040150350731796e-08
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_finite_time_control_0.000125",
+      "passed": true,
+      "detail": {
+        "step": 0.000125,
+        "errors": [
+          [
+            1.859965238162236e-19,
+            5.1055241767997974e-18,
+            4.8683880387930954e-18,
+            8.566034269415389e-20,
+            3.5402683982416027e-22
+          ],
+          [
+            3.90092384121906e-15,
+            9.623608198316633e-14,
+            9.925551261222147e-14,
+            2.8914074886036135e-15,
+            8.236626134078396e-18
+          ]
+        ],
+        "scales": [
+          [
+            4.321805966123207e-08,
+            8.20292693858507e-08,
+            1.1450613647326843e-07,
+            3.817211819456731e-09,
+            6.204651734206846e-11
+          ],
+          [
+            1.5122073161179192e-06,
+            2.185224275360274e-05,
+            2.2064039842676725e-05,
+            1.515480979962657e-07,
+            2.4040150350731796e-08
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_cache_side_control",
+      "passed": true,
+      "detail": {
+        "absolute_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            4.1359030627651384e-25,
+            0.0,
+            0.0
+          ],
+          [
+            1.4558378780933287e-21,
+            3.0559360550159054e-20,
+            2.2568405138949886e-15,
+            4.0019697002933086e-16,
+            2.3373844194185213e-19
+          ],
+          [
+            2.2880763361326486e-14,
+            1.3674742490709518e-12,
+            1.3667976719752118e-12,
+            1.851101825845163e-15,
+            1.6384026226753558e-16
+          ]
+        ],
+        "relative_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            8.67585967241529e-17,
+            0.0,
+            0.0
+          ],
+          [
+            3.3685868581445365e-14,
+            3.725421520751746e-13,
+            1.9709341205672852e-08,
+            1.0484012650005032e-07,
+            3.7671484549766015e-09
+          ],
+          [
+            1.513070537184353e-08,
+            6.257821059788011e-08,
+            6.194684571460587e-08,
+            1.221461602171197e-08,
+            6.815276105897906e-09
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_mass_only_same_state_scalar_lapse_law",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_saved_RHS_replay",
+      "passed": true,
+      "detail": {
+        "error": [
+          0.0,
+          0.0,
+          1.6543612251060553e-24,
+          1.809457589959748e-25,
+          1.6155871338926322e-27
+        ],
+        "scale": [
+          1.0263055893859534e-08,
+          9.431860421875852e-09,
+          8.536119701348435e-09,
+          1.278634716082476e-10,
+          3.4822060079123506e-12
+        ]
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_saved_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_saved_coordinate_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_saved_nonzero_forcing_replay",
+      "passed": true,
+      "detail": {
+        "error": 1.6543612251060553e-24,
+        "scale": 6.4810261289470055e-09
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_source_endpoint_and_lapse_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_scalar_kinematic_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_integrability_time_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_bounded_nonzero_source_residual",
+      "passed": true,
+      "detail": {
+        "residual_max": 8.721705973932284e-11,
+        "bound_max": 5.200362063122306e-10,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_higher_Noether_coefficients_recorded_not_zeroed",
+      "passed": true,
+      "detail": {
+        "max_by_time_degree": [
+          8.721705973932284e-11,
+          5.772942292109206e-10,
+          1.788185512834988e-08
+        ]
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_finite_time_control_0.00025",
+      "passed": true,
+      "detail": {
+        "step": 0.00025,
+        "errors": [
+          [
+            1.1044533633383925e-19,
+            2.251847016442908e-18,
+            4.158468549875585e-18,
+            1.085975802815183e-18,
+            3.764915789209373e-21
+          ],
+          [
+            9.515883649227662e-16,
+            2.439525721222599e-14,
+            4.033922349970618e-14,
+            1.8087751328671673e-14,
+            6.58599975351511e-17
+          ]
+        ],
+        "scales": [
+          [
+            2.1568632376727447e-08,
+            6.457724792960211e-08,
+            7.477434373448791e-08,
+            3.0170240070682807e-09,
+            4.360546220658957e-11
+          ],
+          [
+            1.043274795969126e-06,
+            6.555053383431726e-06,
+            6.576236636610014e-06,
+            6.291212300847231e-08,
+            1.1488324939545597e-08
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_finite_time_control_0.000125",
+      "passed": true,
+      "detail": {
+        "step": 0.000125,
+        "errors": [
+          [
+            1.5247627026343097e-19,
+            7.554898614797918e-18,
+            4.845134337413005e-18,
+            6.456284267704749e-20,
+            9.376544607686059e-22
+          ],
+          [
+            3.4688648285606137e-15,
+            1.2600260021293757e-13,
+            1.0330176570784921e-13,
+            2.1808613541238124e-15,
+            1.528319868781502e-17
+          ]
+        ],
+        "scales": [
+          [
+            2.1568632376727447e-08,
+            6.457724792960211e-08,
+            7.477434373448791e-08,
+            3.0170240070682807e-09,
+            4.360546220658957e-11
+          ],
+          [
+            1.043274795969126e-06,
+            6.555053383431726e-06,
+            6.576236636610014e-06,
+            6.291212300847231e-08,
+            1.1488324939545597e-08
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_mass_only_same_state_scalar_lapse_law",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_saved_RHS_replay",
+      "passed": true,
+      "detail": {
+        "error": [
+          0.0,
+          0.0,
+          4.1359030627651384e-25,
+          2.0194839173657902e-28,
+          2.524354896707238e-29
+        ],
+        "scale": [
+          3.568886602781815e-09,
+          7.265696992023342e-09,
+          4.764609595203822e-09,
+          1.9886864870953684e-10,
+          1.6368365480072302e-12
+        ]
+      }
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_saved_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_saved_coordinate_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_saved_nonzero_forcing_replay",
+      "passed": true,
+      "detail": {
+        "error": 5.169878828456423e-26,
+        "scale": 2.3873826840053546e-09
+      }
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_source_endpoint_and_lapse_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_scalar_kinematic_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_integrability_time_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_bounded_nonzero_source_residual",
+      "passed": true,
+      "detail": {
+        "residual_max": 4.8871471101705845e-12,
+        "bound_max": 2.8924190269011595e-11,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_higher_Noether_coefficients_recorded_not_zeroed",
+      "passed": true,
+      "detail": {
+        "max_by_time_degree": [
+          4.8871471101705845e-12,
+          2.783747811193066e-10,
+          3.845165653135438e-09
+        ]
+      }
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_finite_time_control_0.00025",
+      "passed": true,
+      "detail": {
+        "step": 0.00025,
+        "errors": [
+          [
+            1.4066702624831767e-19,
+            1.0100270051219809e-17,
+            6.2181747449122256e-18,
+            1.485944357258115e-18,
+            3.379200823341043e-21
+          ],
+          [
+            1.3942164429388152e-15,
+            1.032312019341123e-13,
+            9.255070092196917e-14,
+            2.4778038104561894e-14,
+            5.565480272515624e-17
+          ]
+        ],
+        "scales": [
+          [
+            4.309317928691068e-08,
+            7.971580033669308e-08,
+            1.1359041385531893e-07,
+            3.81862266504786e-09,
+            2.539284019070414e-11
+          ],
+          [
+            1.5272226236604248e-06,
+            2.0238423314496437e-05,
+            2.0288201033714086e-05,
+            1.4961594917762446e-07,
+            9.112986133868446e-09
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_finite_time_control_0.000125",
+      "passed": true,
+      "detail": {
+        "step": 0.000125,
+        "errors": [
+          [
+            2.497423705420101e-19,
+            1.2472661684739763e-17,
+            1.3208975886618382e-17,
+            9.944737555388148e-20,
+            5.910367035404772e-22
+          ],
+          [
+            4.965843943935031e-15,
+            2.8872667738643124e-13,
+            2.8327595091414814e-13,
+            3.2450791937346155e-15,
+            1.3979406118885984e-17
+          ]
+        ],
+        "scales": [
+          [
+            4.309317928691068e-08,
+            7.971580033669308e-08,
+            1.1359041385531893e-07,
+            3.81862266504786e-09,
+            2.539284019070414e-11
+          ],
+          [
+            1.5272226236604248e-06,
+            2.0238423314496437e-05,
+            2.0288201033714086e-05,
+            1.4961594917762446e-07,
+            9.112986133868446e-09
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_cache_side_control",
+      "passed": true,
+      "detail": {
+        "absolute_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            4.1359030627651384e-25,
+            0.0,
+            2.524354896707238e-29
+          ],
+          [
+            1.462455322993753e-21,
+            8.770099726532221e-20,
+            2.35897587902381e-15,
+            4.417453729048783e-16,
+            2.337459382661534e-19
+          ],
+          [
+            2.3926478897787597e-14,
+            1.3367024725628957e-12,
+            1.3046344120789546e-12,
+            2.0688882174733344e-15,
+            2.4622545458983423e-16
+          ]
+        ],
+        "relative_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            8.680465797089533e-17,
+            0.0,
+            1.542215623044658e-17
+          ],
+          [
+            3.3937048674381884e-14,
+            1.1001708180172852e-12,
+            2.0767385195272355e-08,
+            1.156818600979371e-07,
+            9.205190774670552e-09
+          ],
+          [
+            1.5666660856844148e-08,
+            6.604775736682207e-08,
+            6.430508106218819e-08,
+            1.3827992462335314e-08,
+            2.7019184597981164e-08
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_mass_only_same_state_scalar_lapse_law",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_saved_RHS_replay",
+      "passed": true,
+      "detail": {
+        "error": [
+          0.0,
+          0.0,
+          4.1359030627651384e-25,
+          1.2924697071141057e-26,
+          0.0
+        ],
+        "scale": [
+          1.0267028800696858e-08,
+          9.45613085908153e-09,
+          8.57526973734615e-09,
+          1.307266720294452e-10,
+          3.481830779785207e-12
+        ]
+      }
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_saved_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_saved_coordinate_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_saved_nonzero_forcing_replay",
+      "passed": true,
+      "detail": {
+        "error": 0.0,
+        "scale": 6.482105120601137e-09
+      }
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_source_endpoint_and_lapse_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_scalar_kinematic_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_integrability_time_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_bounded_nonzero_source_residual",
+      "passed": true,
+      "detail": {
+        "residual_max": 2.1196975761592467e-11,
+        "bound_max": 1.2559968473353132e-10,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_higher_Noether_coefficients_recorded_not_zeroed",
+      "passed": true,
+      "detail": {
+        "max_by_time_degree": [
+          2.1196975761592467e-11,
+          1.0068837885571273e-10,
+          1.588680942729533e-08
+        ]
+      }
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_finite_time_control_0.00025",
+      "passed": true,
+      "detail": {
+        "step": 0.00025,
+        "errors": [
+          [
+            8.548890951220227e-20,
+            5.079603645124836e-18,
+            5.063854126261826e-18,
+            1.1264988123374847e-18,
+            3.9810490359815296e-21
+          ],
+          [
+            8.521604612005042e-16,
+            5.481410600786387e-14,
+            5.6812498134826733e-14,
+            1.879054627788604e-14,
+            6.57509447315291e-17
+          ]
+        ],
+        "scales": [
+          [
+            2.1469489871486003e-08,
+            6.566708494984635e-08,
+            8.310439798663589e-08,
+            2.969244371971596e-09,
+            3.92130848171519e-11
+          ],
+          [
+            1.0425719070512061e-06,
+            6.914905901987604e-06,
+            6.9485636001298365e-06,
+            6.12632744496837e-08,
+            6.074765330204425e-09
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_finite_time_control_0.000125",
+      "passed": true,
+      "detail": {
+        "step": 0.000125,
+        "errors": [
+          [
+            1.985499201899049e-19,
+            1.47364012836445e-17,
+            1.4840268698801558e-17,
+            7.254146497421601e-20,
+            1.7688255735423483e-21
+          ],
+          [
+            4.394034871133229e-15,
+            3.1292096163236104e-13,
+            3.2442799866498433e-13,
+            2.4194011845427924e-15,
+            3.607240373433438e-17
+          ]
+        ],
+        "scales": [
+          [
+            2.1469489871486003e-08,
+            6.566708494984635e-08,
+            8.310439798663589e-08,
+            2.969244371971596e-09,
+            3.92130848171519e-11
+          ],
+          [
+            1.0425719070512061e-06,
+            6.914905901987604e-06,
+            6.9485636001298365e-06,
+            6.12632744496837e-08,
+            6.074765330204425e-09
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_mass_only_same_state_scalar_lapse_law",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_saved_RHS_replay",
+      "passed": true,
+      "detail": {
+        "error": [
+          0.0,
+          0.0,
+          4.1359030627651384e-25,
+          2.0194839173657902e-28,
+          5.048709793414476e-29
+        ],
+        "scale": [
+          3.568884867034903e-09,
+          7.270065281788702e-09,
+          4.763688720463509e-09,
+          1.9885427805796788e-10,
+          1.6376711906361789e-12
+        ]
+      }
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_saved_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_saved_coordinate_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_saved_nonzero_forcing_replay",
+      "passed": true,
+      "detail": {
+        "error": 5.169878828456423e-26,
+        "scale": 2.387425389673054e-09
+      }
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_source_endpoint_and_lapse_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_scalar_kinematic_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_integrability_time_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_bounded_nonzero_source_residual",
+      "passed": true,
+      "detail": {
+        "residual_max": 6.5931631506699375e-12,
+        "bound_max": 3.8958909246572987e-11,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_higher_Noether_coefficients_recorded_not_zeroed",
+      "passed": true,
+      "detail": {
+        "max_by_time_degree": [
+          6.5931631506699375e-12,
+          2.2101866249008967e-10,
+          2.0223772809874416e-09
+        ]
+      }
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_finite_time_control_0.00025",
+      "passed": true,
+      "detail": {
+        "step": 0.00025,
+        "errors": [
+          [
+            1.3213713977167085e-19,
+            1.392115967906518e-17,
+            1.4461618501599284e-17,
+            1.7364084428845776e-18,
+            3.5447403434282175e-21
+          ],
+          [
+            1.477152615178036e-15,
+            1.5765910559901617e-13,
+            1.5505572505991637e-13,
+            2.8935173040766696e-14,
+            5.743641793268533e-17
+          ]
+        ],
+        "scales": [
+          [
+            4.306195408172319e-08,
+            7.958010961038359e-08,
+            1.1340464507447476e-07,
+            3.81988924183062e-09,
+            2.410740869473717e-11
+          ],
+          [
+            1.528142484718323e-06,
+            1.9833018646338937e-05,
+            2.004456742907391e-05,
+            1.4581737159711785e-07,
+            5.2527847317218214e-09
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_finite_time_control_0.000125",
+      "passed": true,
+      "detail": {
+        "step": 0.000125,
+        "errors": [
+          [
+            1.8984787674827049e-19,
+            1.9424900700264463e-17,
+            2.1459950295602123e-17,
+            1.082713247382909e-19,
+            1.3688934408957628e-21
+          ],
+          [
+            3.968975526992655e-15,
+            4.225311998207063e-13,
+            4.3600405336369046e-13,
+            3.606282298933574e-15,
+            3.066932945630946e-17
+          ]
+        ],
+        "scales": [
+          [
+            4.306195408172319e-08,
+            7.958010961038359e-08,
+            1.1340464507447476e-07,
+            3.81988924183062e-09,
+            2.410740869473717e-11
+          ],
+          [
+            1.528142484718323e-06,
+            1.9833018646338937e-05,
+            2.004456742907391e-05,
+            1.4581737159711785e-07,
+            5.2527847317218214e-09
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_cache_side_control",
+      "passed": true,
+      "detail": {
+        "absolute_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            4.1359030627651384e-25,
+            0.0,
+            5.048709793414476e-29
+          ],
+          [
+            1.4492204331929045e-21,
+            1.5028217368863407e-19,
+            2.9859344332232825e-15,
+            6.453374374522783e-16,
+            2.433350941406597e-19
+          ],
+          [
+            3.023795982755404e-14,
+            8.260985211866467e-12,
+            8.148815038623557e-12,
+            2.069180576189035e-15,
+            6.348486692050734e-16
+          ]
+        ],
+        "relative_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            8.682143829000467e-17,
+            0.0,
+            3.082859259100251e-17
+          ],
+          [
+            3.365431188846114e-14,
+            1.88843888786282e-12,
+            2.6329912952528254e-08,
+            1.6894140028599644e-07,
+            1.0093788893776111e-08
+          ],
+          [
+            1.9787395566799972e-08,
+            4.1652687163642627e-07,
+            4.065348412959015e-07,
+            1.419021995476658e-08,
+            1.208594491548819e-07
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_mass_only_same_state_scalar_lapse_law",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_saved_RHS_replay",
+      "passed": true,
+      "detail": {
+        "error": [
+          0.0,
+          0.0,
+          1.6543612251060553e-24,
+          1.809457589959748e-25,
+          1.8175355256292112e-27
+        ],
+        "scale": [
+          1.0267933839655406e-08,
+          9.45486509472467e-09,
+          8.578445629814953e-09,
+          1.309680271109865e-10,
+          3.481878625094147e-12
+        ]
+      }
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_saved_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_saved_coordinate_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_saved_nonzero_forcing_replay",
+      "passed": true,
+      "detail": {
+        "error": 1.6543612251060553e-24,
+        "scale": 6.482105120601136e-09
+      }
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_source_endpoint_and_lapse_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_scalar_kinematic_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_integrability_time_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_bounded_nonzero_source_residual",
+      "passed": true,
+      "detail": {
+        "residual_max": 1.2063808748569305e-11,
+        "bound_max": 7.133437555374461e-11,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_higher_Noether_coefficients_recorded_not_zeroed",
+      "passed": true,
+      "detail": {
+        "max_by_time_degree": [
+          1.2063808748569305e-11,
+          6.557190136735328e-11,
+          1.0839661748245705e-07
+        ]
+      }
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_finite_time_control_0.00025",
+      "passed": true,
+      "detail": {
+        "step": 0.00025,
+        "errors": [
+          [
+            1.058112895965582e-19,
+            1.7241587251932798e-17,
+            1.6126382350088806e-17,
+            1.1831457950463411e-18,
+            5.227687767281369e-21
+          ],
+          [
+            1.1778346767826525e-15,
+            1.6078425766600101e-13,
+            1.7883567212826842e-13,
+            1.9716035661805937e-14,
+            7.945905546183239e-17
+          ]
+        ],
+        "scales": [
+          [
+            2.142158485985628e-08,
+            6.588917540556118e-08,
+            8.7449506056291e-08,
+            2.9612429981625222e-09,
+            3.8217963836576265e-11
+          ],
+          [
+            1.0404296001224113e-06,
+            6.219069709062693e-06,
+            6.223149940520574e-06,
+            5.888058165276472e-08,
+            2.812980847788626e-09
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_finite_time_control_0.000125",
+      "passed": true,
+      "detail": {
+        "step": 0.000125,
+        "errors": [
+          [
+            2.250568195215901e-19,
+            2.6953223656342278e-17,
+            3.407951698238462e-17,
+            7.208713602277126e-20,
+            5.072494467199643e-21
+          ],
+          [
+            4.149913622987435e-15,
+            5.262988971770164e-13,
+            6.859039902450982e-13,
+            2.431579774627578e-15,
+            1.1191681991962871e-16
+          ]
+        ],
+        "scales": [
+          [
+            2.142158485985628e-08,
+            6.588917540556118e-08,
+            8.7449506056291e-08,
+            2.9612429981625222e-09,
+            3.8217963836576265e-11
+          ],
+          [
+            1.0404296001224113e-06,
+            6.219069709062693e-06,
+            6.223149940520574e-06,
+            5.888058165276472e-08,
+            2.812980847788626e-09
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_mass_only_same_state_scalar_lapse_law",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_saved_RHS_replay",
+      "passed": true,
+      "detail": {
+        "error": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          9.80746687696511e-09,
+          2.6840704488027605e-08,
+          2.0000279599927698e-08,
+          1.4793472634614585e-09,
+          6.0100249241010125e-12
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_saved_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_saved_coordinate_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_saved_nonzero_forcing_replay",
+      "passed": true,
+      "detail": {
+        "error": 0.0,
+        "scale": 1.1698938327754425e-08
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_source_endpoint_and_lapse_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_scalar_kinematic_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_integrability_time_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_bounded_nonzero_source_residual",
+      "passed": true,
+      "detail": {
+        "residual_max": 8.207391141688496e-11,
+        "bound_max": 4.872859025194511e-10,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_higher_Noether_coefficients_recorded_not_zeroed",
+      "passed": true,
+      "detail": {
+        "max_by_time_degree": [
+          8.207391141688496e-11,
+          1.7368356976618283e-09,
+          9.648015873076308e-09
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_finite_time_control_0.00025",
+      "passed": true,
+      "detail": {
+        "step": 0.00025,
+        "errors": [
+          [
+            3.3203691532368573e-19,
+            1.0172667173177134e-17,
+            1.5205829589990793e-17,
+            3.642751216450824e-18,
+            9.3348753843287e-21
+          ],
+          [
+            2.719760960228409e-15,
+            9.728435640616109e-14,
+            1.654814512670196e-13,
+            6.078723602695956e-14,
+            1.5534060812752245e-16
+          ]
+        ],
+        "scales": [
+          [
+            2.399838919031413e-07,
+            5.585316531880359e-07,
+            6.865724292640391e-07,
+            3.2855761782438837e-08,
+            2.946170275333439e-10
+          ],
+          [
+            1.1796348649356988e-05,
+            0.00014931019040359414,
+            0.00015022480897200564,
+            1.3670465301707055e-06,
+            1.0981783833352137e-07
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_finite_time_control_0.000125",
+      "passed": true,
+      "detail": {
+        "step": 0.000125,
+        "errors": [
+          [
+            6.423818462637809e-19,
+            1.6558501502086508e-17,
+            1.7965939388178134e-17,
+            2.26700427398733e-19,
+            8.08245931343806e-22
+          ],
+          [
+            1.6801701496023044e-14,
+            4.0021904247709156e-13,
+            3.524586950288044e-13,
+            7.664869961131128e-15,
+            2.5032480495492095e-17
+          ]
+        ],
+        "scales": [
+          [
+            2.399838919031413e-07,
+            5.585316531880359e-07,
+            6.865724292640391e-07,
+            3.2855761782438837e-08,
+            2.946170275333439e-10
+          ],
+          [
+            1.1796348649356988e-05,
+            0.00014931019040359414,
+            0.00015022480897200564,
+            1.3670465301707055e-06,
+            1.0981783833352137e-07
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_cache_side_control",
+      "passed": true,
+      "detail": {
+        "absolute_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            8.761497048161669e-21,
+            2.9299399041118283e-19,
+            3.99059080195496e-15,
+            6.8463336837643e-16,
+            2.661005650888881e-19
+          ],
+          [
+            4.044238427762699e-14,
+            1.1406329084240807e-12,
+            1.1182107757107262e-12,
+            3.2269342193746563e-15,
+            1.3784222505518504e-16
+          ]
+        ],
+        "relative_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            3.650868805685447e-14,
+            5.245790256269382e-13,
+            5.812337681885381e-09,
+            2.0837543591588904e-08,
+            9.032083695799679e-10
+          ],
+          [
+            3.4283815678702815e-09,
+            7.639350705674432e-09,
+            7.443582610373661e-09,
+            2.3605152773927185e-09,
+            1.2551897501073772e-09
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_mass_only_same_state_scalar_lapse_law",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_saved_RHS_replay",
+      "passed": true,
+      "detail": {
+        "error": [
+          0.0,
+          0.0,
+          6.617444900424222e-24,
+          1.3958672836832342e-24,
+          6.462348535570529e-27
+        ],
+        "scale": [
+          3.9203225772601415e-08,
+          3.43105218446258e-08,
+          3.076862021379446e-08,
+          1.4346756553707269e-09,
+          1.3303802101780853e-11
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_saved_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_saved_coordinate_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_saved_nonzero_forcing_replay",
+      "passed": true,
+      "detail": {
+        "error": 5.790264287871194e-24,
+        "scale": 2.0642375206838022e-08
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_source_endpoint_and_lapse_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_scalar_kinematic_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_integrability_time_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_bounded_nonzero_source_residual",
+      "passed": true,
+      "detail": {
+        "residual_max": 5.044955806912879e-10,
+        "bound_max": 3.008985490175832e-09,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_higher_Noether_coefficients_recorded_not_zeroed",
+      "passed": true,
+      "detail": {
+        "max_by_time_degree": [
+          5.044955806912879e-10,
+          2.986438507599714e-09,
+          9.633134684633176e-08
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_finite_time_control_0.00025",
+      "passed": true,
+      "detail": {
+        "step": 0.00025,
+        "errors": [
+          [
+            4.621921303476795e-19,
+            1.720027454341945e-17,
+            1.3995843024838025e-17,
+            4.5338530380194996e-18,
+            1.421440089308194e-20
+          ],
+          [
+            4.3365215457728985e-15,
+            1.792708903620619e-13,
+            1.5220020864692386e-13,
+            7.553179344379273e-14,
+            2.2252873140368206e-16
+          ]
+        ],
+        "scales": [
+          [
+            1.1169455269366494e-07,
+            2.651101769546486e-07,
+            3.0728328142564763e-07,
+            3.098122729652003e-08,
+            1.968159657091819e-10
+          ],
+          [
+            3.9730662312518705e-06,
+            2.9267148186902754e-05,
+            2.9435534455593814e-05,
+            6.274225508445141e-07,
+            5.081795483844806e-08
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_finite_time_control_0.000125",
+      "passed": true,
+      "detail": {
+        "step": 0.000125,
+        "errors": [
+          [
+            5.000190997597295e-19,
+            1.5400739812087888e-17,
+            2.3245416339075383e-17,
+            3.038565262152292e-19,
+            7.312612657092614e-21
+          ],
+          [
+            1.2124316104583123e-14,
+            4.0124895216699867e-13,
+            5.174090848017411e-13,
+            9.863578974432969e-15,
+            1.5694881846471233e-16
+          ]
+        ],
+        "scales": [
+          [
+            1.1169455269366494e-07,
+            2.651101769546486e-07,
+            3.0728328142564763e-07,
+            3.098122729652003e-08,
+            1.968159657091819e-10
+          ],
+          [
+            3.9730662312518705e-06,
+            2.9267148186902754e-05,
+            2.9435534455593814e-05,
+            6.274225508445141e-07,
+            5.081795483844806e-08
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_mass_only_same_state_scalar_lapse_law",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_saved_RHS_replay",
+      "passed": true,
+      "detail": {
+        "error": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          9.813336899678149e-09,
+          2.7153287626071605e-08,
+          2.0391030482633835e-08,
+          1.477946897046859e-09,
+          6.0384596389350225e-12
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_saved_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_saved_coordinate_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_saved_nonzero_forcing_replay",
+      "passed": true,
+      "detail": {
+        "error": 5.169878828456423e-26,
+        "scale": 1.1698938327754425e-08
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_source_endpoint_and_lapse_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_scalar_kinematic_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_integrability_time_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_bounded_nonzero_source_residual",
+      "passed": true,
+      "detail": {
+        "residual_max": 4.5882611663138886e-11,
+        "bound_max": 2.7153949010752627e-10,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_higher_Noether_coefficients_recorded_not_zeroed",
+      "passed": true,
+      "detail": {
+        "max_by_time_degree": [
+          4.5882611663138886e-11,
+          1.1666132295158236e-09,
+          6.408267263194249e-09
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_finite_time_control_0.00025",
+      "passed": true,
+      "detail": {
+        "step": 0.00025,
+        "errors": [
+          [
+            3.906013026924401e-19,
+            1.5846967356613294e-17,
+            1.5202070881287352e-17,
+            3.927863829985602e-18,
+            9.866817141685652e-21
+          ],
+          [
+            3.8505774733836855e-15,
+            1.5464540726543158e-13,
+            1.9525707615976502e-13,
+            6.549804936190463e-14,
+            1.6121417281180018e-16
+          ]
+        ],
+        "scales": [
+          [
+            2.408976586841002e-07,
+            5.666741877959119e-07,
+            6.622233593658567e-07,
+            3.299406979008848e-08,
+            1.1461754431030426e-10
+          ],
+          [
+            1.128611785430451e-05,
+            0.0001409884159296808,
+            0.00014064183810769668,
+            1.4037034074163529e-06,
+            4.625370593298235e-08
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_finite_time_control_0.000125",
+      "passed": true,
+      "detail": {
+        "step": 0.000125,
+        "errors": [
+          [
+            7.627134643330949e-19,
+            3.882556831730357e-17,
+            5.094267903024176e-17,
+            2.464932050959018e-19,
+            1.2718548152856358e-21
+          ],
+          [
+            1.579543736611325e-14,
+            7.54116638113176e-13,
+            8.928274836979408e-13,
+            8.255496612010014e-15,
+            2.990689371786703e-17
+          ]
+        ],
+        "scales": [
+          [
+            2.408976586841002e-07,
+            5.666741877959119e-07,
+            6.622233593658567e-07,
+            3.299406979008848e-08,
+            1.1461754431030426e-10
+          ],
+          [
+            1.128611785430451e-05,
+            0.0001409884159296808,
+            0.00014064183810769668,
+            1.4037034074163529e-06,
+            4.625370593298235e-08
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_cache_side_control",
+      "passed": true,
+      "detail": {
+        "absolute_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            8.735027268559972e-21,
+            4.893203457169686e-19,
+            4.139782367784445e-15,
+            7.26112078803828e-16,
+            2.661009609077359e-19
+          ],
+          [
+            4.194232377315206e-14,
+            2.5346250129927497e-12,
+            2.475162571647163e-12,
+            3.2263179499659696e-15,
+            7.957751372260943e-16
+          ]
+        ],
+        "relative_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            3.626032447253712e-14,
+            8.634950316339407e-13,
+            6.251338478528889e-09,
+            2.2007351121684124e-08,
+            2.3216424894544967e-09
+          ],
+          [
+            3.716275544398583e-09,
+            1.7977540894259825e-08,
+            1.759904879621812e-08,
+            2.298432797783336e-09,
+            1.720457034035509e-08
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_mass_only_same_state_scalar_lapse_law",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_saved_RHS_replay",
+      "passed": true,
+      "detail": {
+        "error": [
+          0.0,
+          0.0,
+          1.2924697071141057e-26,
+          2.0679515313825692e-25,
+          0.0
+        ],
+        "scale": [
+          3.9210856520176624e-08,
+          3.442123509539401e-08,
+          3.095247931783106e-08,
+          1.4519692702500655e-09,
+          1.3324270152329632e-11
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_saved_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_saved_coordinate_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_saved_nonzero_forcing_replay",
+      "passed": true,
+      "detail": {
+        "error": 0.0,
+        "scale": 2.0642375206838022e-08
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_source_endpoint_and_lapse_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_scalar_kinematic_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_integrability_time_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_bounded_nonzero_source_residual",
+      "passed": true,
+      "detail": {
+        "residual_max": 1.2921116189212417e-10,
+        "bound_max": 7.658290276518122e-10,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_higher_Noether_coefficients_recorded_not_zeroed",
+      "passed": true,
+      "detail": {
+        "max_by_time_degree": [
+          1.2921116189212417e-10,
+          4.5768010236047366e-10,
+          8.440426719003852e-08
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_finite_time_control_0.00025",
+      "passed": true,
+      "detail": {
+        "step": 0.00025,
+        "errors": [
+          [
+            3.4723718625996017e-19,
+            2.4831578177037666e-17,
+            2.842406989946977e-17,
+            4.6067475023201226e-18,
+            1.3123569384974705e-20
+          ],
+          [
+            4.0462458958476916e-15,
+            2.638319938783946e-13,
+            2.9240698302620844e-13,
+            7.681589306248964e-14,
+            1.941568309582654e-16
+          ]
+        ],
+        "scales": [
+          [
+            1.1033653917726326e-07,
+            2.692384230846244e-07,
+            3.426664709035794e-07,
+            3.072585981430463e-08,
+            1.7525077260517766e-10
+          ],
+          [
+            3.956009039616896e-06,
+            3.010903269560605e-05,
+            3.0301078124627468e-05,
+            6.14882685474348e-07,
+            2.64010321050788e-08
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_finite_time_control_0.000125",
+      "passed": true,
+      "detail": {
+        "step": 0.000125,
+        "errors": [
+          [
+            7.045792108828681e-19,
+            3.979021973021801e-17,
+            4.4077000536712823e-17,
+            2.9455239868523273e-19,
+            8.129750780021365e-21
+          ],
+          [
+            1.3125909694821757e-14,
+            8.387395155305937e-13,
+            8.953053007082143e-13,
+            9.784484943642493e-15,
+            1.6922535252428847e-16
+          ]
+        ],
+        "scales": [
+          [
+            1.1033653917726326e-07,
+            2.692384230846244e-07,
+            3.426664709035794e-07,
+            3.072585981430463e-08,
+            1.7525077260517766e-10
+          ],
+          [
+            3.956009039616896e-06,
+            3.010903269560605e-05,
+            3.0301078124627468e-05,
+            6.14882685474348e-07,
+            2.64010321050788e-08
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_mass_only_same_state_scalar_lapse_law",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_saved_RHS_replay",
+      "passed": true,
+      "detail": {
+        "error": [
+          0.0,
+          0.0,
+          1.6543612251060553e-24,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          9.807358452291882e-09,
+          2.7144157825035844e-08,
+          2.0395141278401148e-08,
+          1.4779810508249183e-09,
+          6.03660121767362e-12
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_saved_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_saved_coordinate_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_saved_nonzero_forcing_replay",
+      "passed": true,
+      "detail": {
+        "error": 5.169878828456423e-26,
+        "scale": 1.1698938327754425e-08
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_source_endpoint_and_lapse_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_scalar_kinematic_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_integrability_time_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_bounded_nonzero_source_residual",
+      "passed": true,
+      "detail": {
+        "residual_max": 2.639282312986877e-11,
+        "bound_max": 1.5595314488544946e-10,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_higher_Noether_coefficients_recorded_not_zeroed",
+      "passed": true,
+      "detail": {
+        "max_by_time_degree": [
+          2.639282312986877e-11,
+          4.558481391976305e-10,
+          6.41138738085172e-09
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_finite_time_control_0.00025",
+      "passed": true,
+      "detail": {
+        "step": 0.00025,
+        "errors": [
+          [
+            4.1443733922376814e-19,
+            4.108766244717479e-17,
+            6.463756066100849e-17,
+            4.0565069588498486e-18,
+            1.0153396449844063e-20
+          ],
+          [
+            3.822299701956074e-15,
+            4.682321255711479e-13,
+            7.038973489368119e-13,
+            6.764004036084406e-14,
+            1.646581088932772e-16
+          ]
+        ],
+        "scales": [
+          [
+            2.4059795533004095e-07,
+            5.641516961205057e-07,
+            6.457576669700913e-07,
+            3.296172595389428e-08,
+            9.851265006112418e-11
+          ],
+          [
+            1.098237671622994e-05,
+            0.0001397181699566772,
+            0.000140798953397837,
+            1.388390720120348e-06,
+            3.1852898505560794e-08
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_finite_time_control_0.000125",
+      "passed": true,
+      "detail": {
+        "step": 0.000125,
+        "errors": [
+          [
+            9.075163936441777e-19,
+            7.2111276461768e-17,
+            1.1396166560816569e-16,
+            2.5395768294358034e-19,
+            4.501523355862112e-21
+          ],
+          [
+            1.78999093582914e-14,
+            1.8477744392886557e-12,
+            2.2567148277581432e-12,
+            8.445341365324291e-15,
+            8.859880731486353e-17
+          ]
+        ],
+        "scales": [
+          [
+            2.4059795533004095e-07,
+            5.641516961205057e-07,
+            6.457576669700913e-07,
+            3.296172595389428e-08,
+            9.851265006112418e-11
+          ],
+          [
+            1.098237671622994e-05,
+            0.0001397181699566772,
+            0.000140798953397837,
+            1.388390720120348e-06,
+            3.1852898505560794e-08
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_cache_side_control",
+      "passed": true,
+      "detail": {
+        "absolute_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.6543612251060553e-24,
+            0.0,
+            0.0
+          ],
+          [
+            9.145308852386274e-21,
+            1.102274414508563e-18,
+            4.1402106488184e-15,
+            7.261121052736076e-16,
+            3.885116505946751e-19
+          ],
+          [
+            4.195525542515779e-14,
+            5.516126170743672e-12,
+            5.3709037068608474e-12,
+            3.339079158129639e-15,
+            1.178493831370197e-15
+          ]
+        ],
+        "relative_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            8.111545796733735e-17,
+            0.0,
+            0.0
+          ],
+          [
+            3.801075050634229e-14,
+            1.9538617398273523e-12,
+            6.411399911431724e-09,
+            2.202894673322835e-08,
+            3.9437742295392024e-09
+          ],
+          [
+            3.820234591220643e-09,
+            3.948037805286222e-08,
+            3.8145906466257564e-08,
+            2.4049996227576355e-09,
+            3.699800918162781e-08
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_mass_only_same_state_scalar_lapse_law",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_saved_RHS_replay",
+      "passed": true,
+      "detail": {
+        "error": [
+          0.0,
+          0.0,
+          5.790264287871194e-24,
+          1.34416849539867e-24,
+          6.462348535570529e-27
+        ],
+        "scale": [
+          3.9216632487999155e-08,
+          3.4411731129481196e-08,
+          3.1234776840901735e-08,
+          1.454727417174351e-09,
+          1.3325091167289885e-11
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_saved_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_saved_coordinate_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_saved_nonzero_forcing_replay",
+      "passed": true,
+      "detail": {
+        "error": 5.790264287871194e-24,
+        "scale": 2.0642375206838022e-08
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_source_endpoint_and_lapse_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_scalar_kinematic_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_integrability_time_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_bounded_nonzero_source_residual",
+      "passed": true,
+      "detail": {
+        "residual_max": 1.6880116980272518e-11,
+        "bound_max": 9.976233490421458e-11,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_higher_Noether_coefficients_recorded_not_zeroed",
+      "passed": true,
+      "detail": {
+        "max_by_time_degree": [
+          1.6880116980272518e-11,
+          3.4771182561710217e-10,
+          5.291215617671246e-07
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_finite_time_control_0.00025",
+      "passed": true,
+      "detail": {
+        "step": 0.00025,
+        "errors": [
+          [
+            3.994711604008462e-19,
+            7.357935661292712e-17,
+            6.728099167071155e-17,
+            4.669944101119174e-18,
+            1.8028608245746376e-20
+          ],
+          [
+            4.516621926182844e-15,
+            8.263363770644306e-13,
+            7.24355953822829e-13,
+            7.77626311049982e-14,
+            2.176685622314553e-16
+          ]
+        ],
+        "scales": [
+          [
+            1.1019199359401228e-07,
+            2.7053666576636445e-07,
+            3.585686816146382e-07,
+            3.0690637619802006e-08,
+            1.697005386082078e-10
+          ],
+          [
+            3.941410930312855e-06,
+            2.7116208124880044e-05,
+            2.70697692632644e-05,
+            6.163608544854522e-07,
+            1.2408072707157368e-08
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_finite_time_control_0.000125",
+      "passed": true,
+      "detail": {
+        "step": 0.000125,
+        "errors": [
+          [
+            1.1167566926731414e-18,
+            1.3938133611350405e-16,
+            1.2879138609979597e-16,
+            2.777176188585535e-19,
+            2.910095065734857e-20
+          ],
+          [
+            2.5320191991397506e-14,
+            3.042822152013111e-12,
+            2.7029219731890806e-12,
+            9.3531400856377e-15,
+            6.541247793450889e-16
+          ]
+        ],
+        "scales": [
+          [
+            1.1019199359401228e-07,
+            2.7053666576636445e-07,
+            3.585686816146382e-07,
+            3.0690637619802006e-08,
+            1.697005386082078e-10
+          ],
+          [
+            3.941410930312855e-06,
+            2.7116208124880044e-05,
+            2.70697692632644e-05,
+            6.163608544854522e-07,
+            1.2408072707157368e-08
+          ]
+        ]
+      }
+    },
+    {
+      "name": "all_twelve_snapshots_processed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_bytecode_cache",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "runs": [
+    {
+      "source_residual_max": 1.1772363349376022e-11,
+      "source_bound_max": 6.9910125036287e-11,
+      "mass_source_change_max": 4.3368864056834153e-13,
+      "mode": "preflight",
+      "case": "canonical",
+      "intervals": 128,
+      "time": 0.1,
+      "time_refinement": 1,
+      "artifact": "canonical_N128_dt1_T0.1_time_jets.npz",
+      "sha256": "a756d0014992f4919356cf01fcb1e3c133df2acf2ff6ee044576308daee9b7d8",
+      "source_artifact": "canonical_N128_dt1_T0.1.npz",
+      "cache_first": 61,
+      "controls": [
+        {
+          "step": 0.00025,
+          "errors": [
+            [
+              9.43647642800494e-20,
+              3.806056521703493e-18,
+              4.589191420999297e-18,
+              1.4200449458075466e-18,
+              3.2999045756353247e-21
+            ],
+            [
+              9.430458258914698e-16,
+              3.858732367786671e-14,
+              7.599821303617082e-14,
+              2.3658810742513065e-14,
+              5.478127973237523e-17
+            ]
+          ],
+          "scales": [
+            [
+              4.321805966123207e-08,
+              8.20292693858507e-08,
+              1.1450613647326843e-07,
+              3.817211819456731e-09,
+              6.204651734206846e-11
+            ],
+            [
+              1.5122073161179192e-06,
+              2.185224275360274e-05,
+              2.2064039842676725e-05,
+              1.515480979962657e-07,
+              2.4040150350731796e-08
+            ]
+          ]
+        },
+        {
+          "step": 0.000125,
+          "errors": [
+            [
+              1.859965238162236e-19,
+              5.1055241767997974e-18,
+              4.8683880387930954e-18,
+              8.566034269415389e-20,
+              3.5402683982416027e-22
+            ],
+            [
+              3.90092384121906e-15,
+              9.623608198316633e-14,
+              9.925551261222147e-14,
+              2.8914074886036135e-15,
+              8.236626134078396e-18
+            ]
+          ],
+          "scales": [
+            [
+              4.321805966123207e-08,
+              8.20292693858507e-08,
+              1.1450613647326843e-07,
+              3.817211819456731e-09,
+              6.204651734206846e-11
+            ],
+            [
+              1.5122073161179192e-06,
+              2.185224275360274e-05,
+              2.2064039842676725e-05,
+              1.515480979962657e-07,
+              2.4040150350731796e-08
+            ]
+          ]
+        }
+      ],
+      "side_change": {
+        "absolute_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            4.1359030627651384e-25,
+            0.0,
+            0.0
+          ],
+          [
+            1.4558378780933287e-21,
+            3.0559360550159054e-20,
+            2.2568405138949886e-15,
+            4.0019697002933086e-16,
+            2.3373844194185213e-19
+          ],
+          [
+            2.2880763361326486e-14,
+            1.3674742490709518e-12,
+            1.3667976719752118e-12,
+            1.851101825845163e-15,
+            1.6384026226753558e-16
+          ]
+        ],
+        "relative_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            8.67585967241529e-17,
+            0.0,
+            0.0
+          ],
+          [
+            3.3685868581445365e-14,
+            3.725421520751746e-13,
+            1.9709341205672852e-08,
+            1.0484012650005032e-07,
+            3.7671484549766015e-09
+          ],
+          [
+            1.513070537184353e-08,
+            6.257821059788011e-08,
+            6.194684571460587e-08,
+            1.221461602171197e-08,
+            6.815276105897906e-09
+          ]
+        ]
+      },
+      "component_maxima_by_time_order": [
+        [
+          5.365452988762653e-10,
+          1.565294465656987e-09,
+          1.6565184325952552e-09,
+          1.1474367102482342e-11,
+          6.915883083148364e-14
+        ],
+        [
+          3.5688911274028716e-09,
+          7.211058734141859e-09,
+          4.76713918727288e-09,
+          1.990391160337952e-10,
+          1.6270542058853836e-12
+        ],
+        [
+          4.321805966123207e-08,
+          8.20292693858507e-08,
+          1.1450613647326843e-07,
+          3.817211819456731e-09,
+          6.204651734206846e-11
+        ],
+        [
+          1.5122073161179192e-06,
+          2.185224275360274e-05,
+          2.2064039842676725e-05,
+          1.515480979962657e-07,
+          2.4040150350731796e-08
+        ]
+      ],
+      "valid_for_physics_claim": false
+    },
+    {
+      "source_residual_max": 8.721705973932284e-11,
+      "source_bound_max": 5.200362063122306e-10,
+      "mass_source_change_max": 4.61198273929054e-12,
+      "mode": "preflight",
+      "case": "canonical",
+      "intervals": 128,
+      "time": 0.3,
+      "time_refinement": 1,
+      "artifact": "canonical_N128_dt1_T0.3_time_jets.npz",
+      "sha256": "93e3fbff32a14bf2065555d4adf7ab066b4e75ad745f4867ce47e226ef583fa0",
+      "source_artifact": "canonical_N128_dt1_T0.3.npz",
+      "cache_first": 187,
+      "controls": [
+        {
+          "step": 0.00025,
+          "errors": [
+            [
+              1.1044533633383925e-19,
+              2.251847016442908e-18,
+              4.158468549875585e-18,
+              1.085975802815183e-18,
+              3.764915789209373e-21
+            ],
+            [
+              9.515883649227662e-16,
+              2.439525721222599e-14,
+              4.033922349970618e-14,
+              1.8087751328671673e-14,
+              6.58599975351511e-17
+            ]
+          ],
+          "scales": [
+            [
+              2.1568632376727447e-08,
+              6.457724792960211e-08,
+              7.477434373448791e-08,
+              3.0170240070682807e-09,
+              4.360546220658957e-11
+            ],
+            [
+              1.043274795969126e-06,
+              6.555053383431726e-06,
+              6.576236636610014e-06,
+              6.291212300847231e-08,
+              1.1488324939545597e-08
+            ]
+          ]
+        },
+        {
+          "step": 0.000125,
+          "errors": [
+            [
+              1.5247627026343097e-19,
+              7.554898614797918e-18,
+              4.845134337413005e-18,
+              6.456284267704749e-20,
+              9.376544607686059e-22
+            ],
+            [
+              3.4688648285606137e-15,
+              1.2600260021293757e-13,
+              1.0330176570784921e-13,
+              2.1808613541238124e-15,
+              1.528319868781502e-17
+            ]
+          ],
+          "scales": [
+            [
+              2.1568632376727447e-08,
+              6.457724792960211e-08,
+              7.477434373448791e-08,
+              3.0170240070682807e-09,
+              4.360546220658957e-11
+            ],
+            [
+              1.043274795969126e-06,
+              6.555053383431726e-06,
+              6.576236636610014e-06,
+              6.291212300847231e-08,
+              1.1488324939545597e-08
+            ]
+          ]
+        }
+      ],
+      "side_change": null,
+      "component_maxima_by_time_order": [
+        [
+          6.59977997671401e-10,
+          1.4289124881905241e-09,
+          2.3045184301534247e-09,
+          1.2664024653781582e-11,
+          2.2341240828390894e-13
+        ],
+        [
+          1.0263055893859534e-08,
+          9.431860421875852e-09,
+          8.536119701348435e-09,
+          1.278634716082476e-10,
+          3.4822060079123518e-12
+        ],
+        [
+          2.1568632376727447e-08,
+          6.457724792960211e-08,
+          7.477434373448791e-08,
+          3.0170240070682807e-09,
+          4.360546220658957e-11
+        ],
+        [
+          1.043274795969126e-06,
+          6.555053383431726e-06,
+          6.576236636610014e-06,
+          6.291212300847231e-08,
+          1.1488324939545597e-08
+        ]
+      ],
+      "valid_for_physics_claim": false
+    },
+    {
+      "source_residual_max": 4.8871471101705845e-12,
+      "source_bound_max": 2.8924190269011595e-11,
+      "mass_source_change_max": 9.11993427002435e-14,
+      "mode": "preflight",
+      "case": "canonical",
+      "intervals": 256,
+      "time": 0.1,
+      "time_refinement": 1,
+      "artifact": "canonical_N256_dt1_T0.1_time_jets.npz",
+      "sha256": "5687ceb43970cdff5a9ab5f875f4fc0726b267870c67bae2c18efef7eb4431f2",
+      "source_artifact": "canonical_N256_dt1_T0.1.npz",
+      "cache_first": 61,
+      "controls": [
+        {
+          "step": 0.00025,
+          "errors": [
+            [
+              1.4066702624831767e-19,
+              1.0100270051219809e-17,
+              6.2181747449122256e-18,
+              1.485944357258115e-18,
+              3.379200823341043e-21
+            ],
+            [
+              1.3942164429388152e-15,
+              1.032312019341123e-13,
+              9.255070092196917e-14,
+              2.4778038104561894e-14,
+              5.565480272515624e-17
+            ]
+          ],
+          "scales": [
+            [
+              4.309317928691068e-08,
+              7.971580033669308e-08,
+              1.1359041385531893e-07,
+              3.81862266504786e-09,
+              2.539284019070414e-11
+            ],
+            [
+              1.5272226236604248e-06,
+              2.0238423314496437e-05,
+              2.0288201033714086e-05,
+              1.4961594917762446e-07,
+              9.112986133868446e-09
+            ]
+          ]
+        },
+        {
+          "step": 0.000125,
+          "errors": [
+            [
+              2.497423705420101e-19,
+              1.2472661684739763e-17,
+              1.3208975886618382e-17,
+              9.944737555388148e-20,
+              5.910367035404772e-22
+            ],
+            [
+              4.965843943935031e-15,
+              2.8872667738643124e-13,
+              2.8327595091414814e-13,
+              3.2450791937346155e-15,
+              1.3979406118885984e-17
+            ]
+          ],
+          "scales": [
+            [
+              4.309317928691068e-08,
+              7.971580033669308e-08,
+              1.1359041385531893e-07,
+              3.81862266504786e-09,
+              2.539284019070414e-11
+            ],
+            [
+              1.5272226236604248e-06,
+              2.0238423314496437e-05,
+              2.0288201033714086e-05,
+              1.4961594917762446e-07,
+              9.112986133868446e-09
+            ]
+          ]
+        }
+      ],
+      "side_change": {
+        "absolute_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            4.1359030627651384e-25,
+            0.0,
+            2.524354896707238e-29
+          ],
+          [
+            1.462455322993753e-21,
+            8.770099726532221e-20,
+            2.35897587902381e-15,
+            4.417453729048783e-16,
+            2.337459382661534e-19
+          ],
+          [
+            2.3926478897787597e-14,
+            1.3367024725628957e-12,
+            1.3046344120789546e-12,
+            2.0688882174733344e-15,
+            2.4622545458983423e-16
+          ]
+        ],
+        "relative_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            8.680465797089533e-17,
+            0.0,
+            1.542215623044658e-17
+          ],
+          [
+            3.3937048674381884e-14,
+            1.1001708180172852e-12,
+            2.0767385195272355e-08,
+            1.156818600979371e-07,
+            9.205190774670552e-09
+          ],
+          [
+            1.5666660856844148e-08,
+            6.604775736682207e-08,
+            6.430508106218819e-08,
+            1.3827992462335314e-08,
+            2.7019184597981164e-08
+          ]
+        ]
+      },
+      "component_maxima_by_time_order": [
+        [
+          5.363952853154382e-10,
+          1.5657369406910675e-09,
+          1.6565784395018048e-09,
+          1.1473137675835953e-11,
+          6.881848757722138e-14
+        ],
+        [
+          3.568886602781815e-09,
+          7.265696992023342e-09,
+          4.764609595203822e-09,
+          1.9886864870953684e-10,
+          1.6368365480072302e-12
+        ],
+        [
+          4.309317928691068e-08,
+          7.971580033669308e-08,
+          1.1359041385531893e-07,
+          3.81862266504786e-09,
+          2.539284019070414e-11
+        ],
+        [
+          1.5272226236604248e-06,
+          2.0238423314496437e-05,
+          2.0288201033714086e-05,
+          1.4961594917762446e-07,
+          9.112986133868446e-09
+        ]
+      ],
+      "valid_for_physics_claim": false
+    },
+    {
+      "source_residual_max": 2.1196975761592467e-11,
+      "source_bound_max": 1.2559968473353132e-10,
+      "mass_source_change_max": 5.619917122094288e-13,
+      "mode": "preflight",
+      "case": "canonical",
+      "intervals": 256,
+      "time": 0.3,
+      "time_refinement": 1,
+      "artifact": "canonical_N256_dt1_T0.3_time_jets.npz",
+      "sha256": "bcec3786ce865a2a246a97980e5c3b758e48a9782aab5dbf29bf52d753f69394",
+      "source_artifact": "canonical_N256_dt1_T0.3.npz",
+      "cache_first": 187,
+      "controls": [
+        {
+          "step": 0.00025,
+          "errors": [
+            [
+              8.548890951220227e-20,
+              5.079603645124836e-18,
+              5.063854126261826e-18,
+              1.1264988123374847e-18,
+              3.9810490359815296e-21
+            ],
+            [
+              8.521604612005042e-16,
+              5.481410600786387e-14,
+              5.6812498134826733e-14,
+              1.879054627788604e-14,
+              6.57509447315291e-17
+            ]
+          ],
+          "scales": [
+            [
+              2.1469489871486003e-08,
+              6.566708494984635e-08,
+              8.310439798663589e-08,
+              2.969244371971596e-09,
+              3.92130848171519e-11
+            ],
+            [
+              1.0425719070512061e-06,
+              6.914905901987604e-06,
+              6.9485636001298365e-06,
+              6.12632744496837e-08,
+              6.074765330204425e-09
+            ]
+          ]
+        },
+        {
+          "step": 0.000125,
+          "errors": [
+            [
+              1.985499201899049e-19,
+              1.47364012836445e-17,
+              1.4840268698801558e-17,
+              7.254146497421601e-20,
+              1.7688255735423483e-21
+            ],
+            [
+              4.394034871133229e-15,
+              3.1292096163236104e-13,
+              3.2442799866498433e-13,
+              2.4194011845427924e-15,
+              3.607240373433438e-17
+            ]
+          ],
+          "scales": [
+            [
+              2.1469489871486003e-08,
+              6.566708494984635e-08,
+              8.310439798663589e-08,
+              2.969244371971596e-09,
+              3.92130848171519e-11
+            ],
+            [
+              1.0425719070512061e-06,
+              6.914905901987604e-06,
+              6.9485636001298365e-06,
+              6.12632744496837e-08,
+              6.074765330204425e-09
+            ]
+          ]
+        }
+      ],
+      "side_change": null,
+      "component_maxima_by_time_order": [
+        [
+          6.598318873925911e-10,
+          1.4344866953699403e-09,
+          2.3084285639776384e-09,
+          1.2845231134170852e-11,
+          2.2370951222400408e-13
+        ],
+        [
+          1.0267028800696858e-08,
+          9.45613085908153e-09,
+          8.57526973734615e-09,
+          1.307266720294452e-10,
+          3.481830779785207e-12
+        ],
+        [
+          2.1469489871486003e-08,
+          6.566708494984635e-08,
+          8.310439798663589e-08,
+          2.969244371971596e-09,
+          3.92130848171519e-11
+        ],
+        [
+          1.0425719070512061e-06,
+          6.914905901987604e-06,
+          6.9485636001298365e-06,
+          6.12632744496837e-08,
+          6.074765330204425e-09
+        ]
+      ],
+      "valid_for_physics_claim": false
+    },
+    {
+      "source_residual_max": 6.5931631506699375e-12,
+      "source_bound_max": 3.8958909246572987e-11,
+      "mass_source_change_max": 6.197065286261463e-14,
+      "mode": "preflight",
+      "case": "canonical",
+      "intervals": 512,
+      "time": 0.1,
+      "time_refinement": 2,
+      "artifact": "canonical_N512_dt2_T0.1_time_jets.npz",
+      "sha256": "f52e41bdc2e2ef049f7c417f17339bbed86c2cd3b87783f1388e38df62e26547",
+      "source_artifact": "canonical_N512_dt2_T0.1.npz",
+      "cache_first": 61,
+      "controls": [
+        {
+          "step": 0.00025,
+          "errors": [
+            [
+              1.3213713977167085e-19,
+              1.392115967906518e-17,
+              1.4461618501599284e-17,
+              1.7364084428845776e-18,
+              3.5447403434282175e-21
+            ],
+            [
+              1.477152615178036e-15,
+              1.5765910559901617e-13,
+              1.5505572505991637e-13,
+              2.8935173040766696e-14,
+              5.743641793268533e-17
+            ]
+          ],
+          "scales": [
+            [
+              4.306195408172319e-08,
+              7.958010961038359e-08,
+              1.1340464507447476e-07,
+              3.81988924183062e-09,
+              2.410740869473717e-11
+            ],
+            [
+              1.528142484718323e-06,
+              1.9833018646338937e-05,
+              2.004456742907391e-05,
+              1.4581737159711785e-07,
+              5.2527847317218214e-09
+            ]
+          ]
+        },
+        {
+          "step": 0.000125,
+          "errors": [
+            [
+              1.8984787674827049e-19,
+              1.9424900700264463e-17,
+              2.1459950295602123e-17,
+              1.082713247382909e-19,
+              1.3688934408957628e-21
+            ],
+            [
+              3.968975526992655e-15,
+              4.225311998207063e-13,
+              4.3600405336369046e-13,
+              3.606282298933574e-15,
+              3.066932945630946e-17
+            ]
+          ],
+          "scales": [
+            [
+              4.306195408172319e-08,
+              7.958010961038359e-08,
+              1.1340464507447476e-07,
+              3.81988924183062e-09,
+              2.410740869473717e-11
+            ],
+            [
+              1.528142484718323e-06,
+              1.9833018646338937e-05,
+              2.004456742907391e-05,
+              1.4581737159711785e-07,
+              5.2527847317218214e-09
+            ]
+          ]
+        }
+      ],
+      "side_change": {
+        "absolute_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            4.1359030627651384e-25,
+            0.0,
+            5.048709793414476e-29
+          ],
+          [
+            1.4492204331929045e-21,
+            1.5028217368863407e-19,
+            2.9859344332232825e-15,
+            6.453374374522783e-16,
+            2.433350941406597e-19
+          ],
+          [
+            3.023795982755404e-14,
+            8.260985211866467e-12,
+            8.148815038623557e-12,
+            2.069180576189035e-15,
+            6.348486692050734e-16
+          ]
+        ],
+        "relative_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            8.682143829000467e-17,
+            0.0,
+            3.082859259100251e-17
+          ],
+          [
+            3.365431188846114e-14,
+            1.88843888786282e-12,
+            2.6329912952528254e-08,
+            1.6894140028599644e-07,
+            1.0093788893776111e-08
+          ],
+          [
+            1.9787395566799972e-08,
+            4.1652687163642627e-07,
+            4.065348412959015e-07,
+            1.419021995476658e-08,
+            1.208594491548819e-07
+          ]
+        ]
+      },
+      "component_maxima_by_time_order": [
+        [
+          5.363786167714617e-10,
+          1.565729479214342e-09,
+          1.6590463013400111e-09,
+          1.1472935816365305e-11,
+          6.88400438650926e-14
+        ],
+        [
+          3.568884867034903e-09,
+          7.270065281788702e-09,
+          4.763688720463509e-09,
+          1.9885427805796788e-10,
+          1.6376711906361789e-12
+        ],
+        [
+          4.306195408172319e-08,
+          7.958010961038359e-08,
+          1.1340464507447476e-07,
+          3.81988924183062e-09,
+          2.410740869473717e-11
+        ],
+        [
+          1.528142484718323e-06,
+          1.9833018646338937e-05,
+          2.004456742907391e-05,
+          1.4581737159711785e-07,
+          5.2527847317218214e-09
+        ]
+      ],
+      "valid_for_physics_claim": false
+    },
+    {
+      "source_residual_max": 1.2063808748569305e-11,
+      "source_bound_max": 7.133437555374461e-11,
+      "mass_source_change_max": 1.6006800032569262e-13,
+      "mode": "preflight",
+      "case": "canonical",
+      "intervals": 512,
+      "time": 0.3,
+      "time_refinement": 2,
+      "artifact": "canonical_N512_dt2_T0.3_time_jets.npz",
+      "sha256": "0b36dcea63ecd18ebb53383ce1d7d32fa0c6cf11521f767a3a408300c2d9d6fa",
+      "source_artifact": "canonical_N512_dt2_T0.3.npz",
+      "cache_first": 187,
+      "controls": [
+        {
+          "step": 0.00025,
+          "errors": [
+            [
+              1.058112895965582e-19,
+              1.7241587251932798e-17,
+              1.6126382350088806e-17,
+              1.1831457950463411e-18,
+              5.227687767281369e-21
+            ],
+            [
+              1.1778346767826525e-15,
+              1.6078425766600101e-13,
+              1.7883567212826842e-13,
+              1.9716035661805937e-14,
+              7.945905546183239e-17
+            ]
+          ],
+          "scales": [
+            [
+              2.142158485985628e-08,
+              6.588917540556118e-08,
+              8.7449506056291e-08,
+              2.9612429981625222e-09,
+              3.8217963836576265e-11
+            ],
+            [
+              1.0404296001224113e-06,
+              6.219069709062693e-06,
+              6.223149940520574e-06,
+              5.888058165276472e-08,
+              2.812980847788626e-09
+            ]
+          ]
+        },
+        {
+          "step": 0.000125,
+          "errors": [
+            [
+              2.250568195215901e-19,
+              2.6953223656342278e-17,
+              3.407951698238462e-17,
+              7.208713602277126e-20,
+              5.072494467199643e-21
+            ],
+            [
+              4.149913622987435e-15,
+              5.262988971770164e-13,
+              6.859039902450982e-13,
+              2.431579774627578e-15,
+              1.1191681991962871e-16
+            ]
+          ],
+          "scales": [
+            [
+              2.142158485985628e-08,
+              6.588917540556118e-08,
+              8.7449506056291e-08,
+              2.9612429981625222e-09,
+              3.8217963836576265e-11
+            ],
+            [
+              1.0404296001224113e-06,
+              6.219069709062693e-06,
+              6.223149940520574e-06,
+              5.888058165276472e-08,
+              2.812980847788626e-09
+            ]
+          ]
+        }
+      ],
+      "side_change": null,
+      "component_maxima_by_time_order": [
+        [
+          6.597816036128282e-10,
+          1.4339107771750984e-09,
+          2.308278007770165e-09,
+          1.285954097725654e-11,
+          2.237084572514004e-13
+        ],
+        [
+          1.0267933839655406e-08,
+          9.45486509472467e-09,
+          8.578445629814953e-09,
+          1.309680271109865e-10,
+          3.481878625094148e-12
+        ],
+        [
+          2.142158485985628e-08,
+          6.588917540556118e-08,
+          8.7449506056291e-08,
+          2.9612429981625222e-09,
+          3.8217963836576265e-11
+        ],
+        [
+          1.0404296001224113e-06,
+          6.219069709062693e-06,
+          6.223149940520574e-06,
+          5.888058165276472e-08,
+          2.812980847788626e-09
+        ]
+      ],
+      "valid_for_physics_claim": false
+    },
+    {
+      "source_residual_max": 8.207391141688496e-11,
+      "source_bound_max": 4.872859025194511e-10,
+      "mass_source_change_max": 3.0228359251468243e-12,
+      "mode": "preflight",
+      "case": "nonlinear_modulated",
+      "intervals": 128,
+      "time": 0.1,
+      "time_refinement": 1,
+      "artifact": "nonlinear_modulated_N128_dt1_T0.1_time_jets.npz",
+      "sha256": "104555d27e619b2162594d1261afd4e02e5e1167c8490556ee0a9278f0c4c82f",
+      "source_artifact": "nonlinear_modulated_N128_dt1_T0.1.npz",
+      "cache_first": 61,
+      "controls": [
+        {
+          "step": 0.00025,
+          "errors": [
+            [
+              3.3203691532368573e-19,
+              1.0172667173177134e-17,
+              1.5205829589990793e-17,
+              3.642751216450824e-18,
+              9.3348753843287e-21
+            ],
+            [
+              2.719760960228409e-15,
+              9.728435640616109e-14,
+              1.654814512670196e-13,
+              6.078723602695956e-14,
+              1.5534060812752245e-16
+            ]
+          ],
+          "scales": [
+            [
+              2.399838919031413e-07,
+              5.585316531880359e-07,
+              6.865724292640391e-07,
+              3.2855761782438837e-08,
+              2.946170275333439e-10
+            ],
+            [
+              1.1796348649356988e-05,
+              0.00014931019040359414,
+              0.00015022480897200564,
+              1.3670465301707055e-06,
+              1.0981783833352137e-07
+            ]
+          ]
+        },
+        {
+          "step": 0.000125,
+          "errors": [
+            [
+              6.423818462637809e-19,
+              1.6558501502086508e-17,
+              1.7965939388178134e-17,
+              2.26700427398733e-19,
+              8.08245931343806e-22
+            ],
+            [
+              1.6801701496023044e-14,
+              4.0021904247709156e-13,
+              3.524586950288044e-13,
+              7.664869961131128e-15,
+              2.5032480495492095e-17
+            ]
+          ],
+          "scales": [
+            [
+              2.399838919031413e-07,
+              5.585316531880359e-07,
+              6.865724292640391e-07,
+              3.2855761782438837e-08,
+              2.946170275333439e-10
+            ],
+            [
+              1.1796348649356988e-05,
+              0.00014931019040359414,
+              0.00015022480897200564,
+              1.3670465301707055e-06,
+              1.0981783833352137e-07
+            ]
+          ]
+        }
+      ],
+      "side_change": {
+        "absolute_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            8.761497048161669e-21,
+            2.9299399041118283e-19,
+            3.99059080195496e-15,
+            6.8463336837643e-16,
+            2.661005650888881e-19
+          ],
+          [
+            4.044238427762699e-14,
+            1.1406329084240807e-12,
+            1.1182107757107262e-12,
+            3.2269342193746563e-15,
+            1.3784222505518504e-16
+          ]
+        ],
+        "relative_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            3.650868805685447e-14,
+            5.245790256269382e-13,
+            5.812337681885381e-09,
+            2.0837543591588904e-08,
+            9.032083695799679e-10
+          ],
+          [
+            3.4283815678702815e-09,
+            7.639350705674432e-09,
+            7.443582610373661e-09,
+            2.3605152773927185e-09,
+            1.2551897501073772e-09
+          ]
+        ]
+      },
+      "component_maxima_by_time_order": [
+        [
+          1.9260830394387806e-09,
+          7.124160441475827e-09,
+          6.538865454748227e-09,
+          1.2124327115273732e-10,
+          2.3248347544672546e-13
+        ],
+        [
+          9.80746687696511e-09,
+          2.6840704488027605e-08,
+          2.0000279599927698e-08,
+          1.4793472634614585e-09,
+          6.0100249241010125e-12
+        ],
+        [
+          2.399838919031413e-07,
+          5.585316531880359e-07,
+          6.865724292640391e-07,
+          3.2855761782438837e-08,
+          2.946170275333439e-10
+        ],
+        [
+          1.1796348649356988e-05,
+          0.00014931019040359414,
+          0.00015022480897200564,
+          1.3670465301707055e-06,
+          1.0981783833352137e-07
+        ]
+      ],
+      "valid_for_physics_claim": false
+    },
+    {
+      "source_residual_max": 5.044955806912879e-10,
+      "source_bound_max": 3.008985490175832e-09,
+      "mass_source_change_max": 2.667392437373239e-11,
+      "mode": "preflight",
+      "case": "nonlinear_modulated",
+      "intervals": 128,
+      "time": 0.3,
+      "time_refinement": 1,
+      "artifact": "nonlinear_modulated_N128_dt1_T0.3_time_jets.npz",
+      "sha256": "8c31a9e1f38327e68f452bf93bb767831fc1a39034905fe006ec50aabe4dd4f8",
+      "source_artifact": "nonlinear_modulated_N128_dt1_T0.3.npz",
+      "cache_first": 187,
+      "controls": [
+        {
+          "step": 0.00025,
+          "errors": [
+            [
+              4.621921303476795e-19,
+              1.720027454341945e-17,
+              1.3995843024838025e-17,
+              4.5338530380194996e-18,
+              1.421440089308194e-20
+            ],
+            [
+              4.3365215457728985e-15,
+              1.792708903620619e-13,
+              1.5220020864692386e-13,
+              7.553179344379273e-14,
+              2.2252873140368206e-16
+            ]
+          ],
+          "scales": [
+            [
+              1.1169455269366494e-07,
+              2.651101769546486e-07,
+              3.0728328142564763e-07,
+              3.098122729652003e-08,
+              1.968159657091819e-10
+            ],
+            [
+              3.9730662312518705e-06,
+              2.9267148186902754e-05,
+              2.9435534455593814e-05,
+              6.274225508445141e-07,
+              5.081795483844806e-08
+            ]
+          ]
+        },
+        {
+          "step": 0.000125,
+          "errors": [
+            [
+              5.000190997597295e-19,
+              1.5400739812087888e-17,
+              2.3245416339075383e-17,
+              3.038565262152292e-19,
+              7.312612657092614e-21
+            ],
+            [
+              1.2124316104583123e-14,
+              4.0124895216699867e-13,
+              5.174090848017411e-13,
+              9.863578974432969e-15,
+              1.5694881846471233e-16
+            ]
+          ],
+          "scales": [
+            [
+              1.1169455269366494e-07,
+              2.651101769546486e-07,
+              3.0728328142564763e-07,
+              3.098122729652003e-08,
+              1.968159657091819e-10
+            ],
+            [
+              3.9730662312518705e-06,
+              2.9267148186902754e-05,
+              2.9435534455593814e-05,
+              6.274225508445141e-07,
+              5.081795483844806e-08
+            ]
+          ]
+        }
+      ],
+      "side_change": null,
+      "component_maxima_by_time_order": [
+        [
+          2.9953116892079956e-09,
+          6.500597718496373e-09,
+          9.846704750617828e-09,
+          1.5463301645404727e-10,
+          9.883453517432372e-13
+        ],
+        [
+          3.9203225772601415e-08,
+          3.43105218446258e-08,
+          3.076862021379446e-08,
+          1.4346756553707265e-09,
+          1.3303802101780858e-11
+        ],
+        [
+          1.1169455269366494e-07,
+          2.651101769546486e-07,
+          3.0728328142564763e-07,
+          3.098122729652003e-08,
+          1.968159657091819e-10
+        ],
+        [
+          3.9730662312518705e-06,
+          2.9267148186902754e-05,
+          2.9435534455593814e-05,
+          6.274225508445141e-07,
+          5.081795483844806e-08
+        ]
+      ],
+      "valid_for_physics_claim": false
+    },
+    {
+      "source_residual_max": 4.5882611663138886e-11,
+      "source_bound_max": 2.7153949010752627e-10,
+      "mass_source_change_max": 8.486140198156121e-13,
+      "mode": "preflight",
+      "case": "nonlinear_modulated",
+      "intervals": 256,
+      "time": 0.1,
+      "time_refinement": 1,
+      "artifact": "nonlinear_modulated_N256_dt1_T0.1_time_jets.npz",
+      "sha256": "985e451b5dcf9494190d1608c2d67d896d739875aa9fb58bdcc06886c7c96f4c",
+      "source_artifact": "nonlinear_modulated_N256_dt1_T0.1.npz",
+      "cache_first": 61,
+      "controls": [
+        {
+          "step": 0.00025,
+          "errors": [
+            [
+              3.906013026924401e-19,
+              1.5846967356613294e-17,
+              1.5202070881287352e-17,
+              3.927863829985602e-18,
+              9.866817141685652e-21
+            ],
+            [
+              3.8505774733836855e-15,
+              1.5464540726543158e-13,
+              1.9525707615976502e-13,
+              6.549804936190463e-14,
+              1.6121417281180018e-16
+            ]
+          ],
+          "scales": [
+            [
+              2.408976586841002e-07,
+              5.666741877959119e-07,
+              6.622233593658567e-07,
+              3.299406979008848e-08,
+              1.1461754431030426e-10
+            ],
+            [
+              1.128611785430451e-05,
+              0.0001409884159296808,
+              0.00014064183810769668,
+              1.4037034074163529e-06,
+              4.625370593298235e-08
+            ]
+          ]
+        },
+        {
+          "step": 0.000125,
+          "errors": [
+            [
+              7.627134643330949e-19,
+              3.882556831730357e-17,
+              5.094267903024176e-17,
+              2.464932050959018e-19,
+              1.2718548152856358e-21
+            ],
+            [
+              1.579543736611325e-14,
+              7.54116638113176e-13,
+              8.928274836979408e-13,
+              8.255496612010014e-15,
+              2.990689371786703e-17
+            ]
+          ],
+          "scales": [
+            [
+              2.408976586841002e-07,
+              5.666741877959119e-07,
+              6.622233593658567e-07,
+              3.299406979008848e-08,
+              1.1461754431030426e-10
+            ],
+            [
+              1.128611785430451e-05,
+              0.0001409884159296808,
+              0.00014064183810769668,
+              1.4037034074163529e-06,
+              4.625370593298235e-08
+            ]
+          ]
+        }
+      ],
+      "side_change": {
+        "absolute_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            8.735027268559972e-21,
+            4.893203457169686e-19,
+            4.139782367784445e-15,
+            7.26112078803828e-16,
+            2.661009609077359e-19
+          ],
+          [
+            4.194232377315206e-14,
+            2.5346250129927497e-12,
+            2.475162571647163e-12,
+            3.2263179499659696e-15,
+            7.957751372260943e-16
+          ]
+        ],
+        "relative_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            3.626032447253712e-14,
+            8.634950316339407e-13,
+            6.251338478528889e-09,
+            2.2007351121684124e-08,
+            2.3216424894544967e-09
+          ],
+          [
+            3.716275544398583e-09,
+            1.7977540894259825e-08,
+            1.759904879621812e-08,
+            2.298432797783336e-09,
+            1.720457034035509e-08
+          ]
+        ]
+      },
+      "component_maxima_by_time_order": [
+        [
+          1.9253109130328932e-09,
+          7.136391191479211e-09,
+          6.558743438486378e-09,
+          1.2123720979424215e-10,
+          2.31977220967324e-13
+        ],
+        [
+          9.813336899678149e-09,
+          2.7153287626071605e-08,
+          2.0391030482633835e-08,
+          1.477946897046859e-09,
+          6.0384596389350225e-12
+        ],
+        [
+          2.408976586841002e-07,
+          5.666741877959119e-07,
+          6.622233593658567e-07,
+          3.299406979008848e-08,
+          1.1461754431030426e-10
+        ],
+        [
+          1.128611785430451e-05,
+          0.0001409884159296808,
+          0.00014064183810769668,
+          1.4037034074163529e-06,
+          4.625370593298235e-08
+        ]
+      ],
+      "valid_for_physics_claim": false
+    },
+    {
+      "source_residual_max": 1.2921116189212417e-10,
+      "source_bound_max": 7.658290276518122e-10,
+      "mass_source_change_max": 3.425350253360438e-12,
+      "mode": "preflight",
+      "case": "nonlinear_modulated",
+      "intervals": 256,
+      "time": 0.3,
+      "time_refinement": 1,
+      "artifact": "nonlinear_modulated_N256_dt1_T0.3_time_jets.npz",
+      "sha256": "5e742d42ee2052d7997d41e13c9498699cff3a538d3bb34ea8cadc0ee48769b1",
+      "source_artifact": "nonlinear_modulated_N256_dt1_T0.3.npz",
+      "cache_first": 187,
+      "controls": [
+        {
+          "step": 0.00025,
+          "errors": [
+            [
+              3.4723718625996017e-19,
+              2.4831578177037666e-17,
+              2.842406989946977e-17,
+              4.6067475023201226e-18,
+              1.3123569384974705e-20
+            ],
+            [
+              4.0462458958476916e-15,
+              2.638319938783946e-13,
+              2.9240698302620844e-13,
+              7.681589306248964e-14,
+              1.941568309582654e-16
+            ]
+          ],
+          "scales": [
+            [
+              1.1033653917726326e-07,
+              2.692384230846244e-07,
+              3.426664709035794e-07,
+              3.072585981430463e-08,
+              1.7525077260517766e-10
+            ],
+            [
+              3.956009039616896e-06,
+              3.010903269560605e-05,
+              3.0301078124627468e-05,
+              6.14882685474348e-07,
+              2.64010321050788e-08
+            ]
+          ]
+        },
+        {
+          "step": 0.000125,
+          "errors": [
+            [
+              7.045792108828681e-19,
+              3.979021973021801e-17,
+              4.4077000536712823e-17,
+              2.9455239868523273e-19,
+              8.129750780021365e-21
+            ],
+            [
+              1.3125909694821757e-14,
+              8.387395155305937e-13,
+              8.953053007082143e-13,
+              9.784484943642493e-15,
+              1.6922535252428847e-16
+            ]
+          ],
+          "scales": [
+            [
+              1.1033653917726326e-07,
+              2.692384230846244e-07,
+              3.426664709035794e-07,
+              3.072585981430463e-08,
+              1.7525077260517766e-10
+            ],
+            [
+              3.956009039616896e-06,
+              3.010903269560605e-05,
+              3.0301078124627468e-05,
+              6.14882685474348e-07,
+              2.64010321050788e-08
+            ]
+          ]
+        }
+      ],
+      "side_change": null,
+      "component_maxima_by_time_order": [
+        [
+          2.990955700675678e-09,
+          6.529885784992301e-09,
+          9.867611393796246e-09,
+          1.5340510439429684e-10,
+          9.920323196706372e-13
+        ],
+        [
+          3.9210856520176624e-08,
+          3.442123509539401e-08,
+          3.095247931783106e-08,
+          1.4519692702500655e-09,
+          1.3324270152329632e-11
+        ],
+        [
+          1.1033653917726326e-07,
+          2.692384230846244e-07,
+          3.426664709035794e-07,
+          3.072585981430463e-08,
+          1.7525077260517766e-10
+        ],
+        [
+          3.956009039616896e-06,
+          3.010903269560605e-05,
+          3.0301078124627468e-05,
+          6.14882685474348e-07,
+          2.64010321050788e-08
+        ]
+      ],
+      "valid_for_physics_claim": false
+    },
+    {
+      "source_residual_max": 2.639282312986877e-11,
+      "source_bound_max": 1.5595314488544946e-10,
+      "mass_source_change_max": 2.450041951167902e-13,
+      "mode": "preflight",
+      "case": "nonlinear_modulated",
+      "intervals": 512,
+      "time": 0.1,
+      "time_refinement": 2,
+      "artifact": "nonlinear_modulated_N512_dt2_T0.1_time_jets.npz",
+      "sha256": "76506398076a7070644e8bb051df4a78ee355a900d40954009193d3d214f6b11",
+      "source_artifact": "nonlinear_modulated_N512_dt2_T0.1.npz",
+      "cache_first": 61,
+      "controls": [
+        {
+          "step": 0.00025,
+          "errors": [
+            [
+              4.1443733922376814e-19,
+              4.108766244717479e-17,
+              6.463756066100849e-17,
+              4.0565069588498486e-18,
+              1.0153396449844063e-20
+            ],
+            [
+              3.822299701956074e-15,
+              4.682321255711479e-13,
+              7.038973489368119e-13,
+              6.764004036084406e-14,
+              1.646581088932772e-16
+            ]
+          ],
+          "scales": [
+            [
+              2.4059795533004095e-07,
+              5.641516961205057e-07,
+              6.457576669700913e-07,
+              3.296172595389428e-08,
+              9.851265006112418e-11
+            ],
+            [
+              1.098237671622994e-05,
+              0.0001397181699566772,
+              0.000140798953397837,
+              1.388390720120348e-06,
+              3.1852898505560794e-08
+            ]
+          ]
+        },
+        {
+          "step": 0.000125,
+          "errors": [
+            [
+              9.075163936441777e-19,
+              7.2111276461768e-17,
+              1.1396166560816569e-16,
+              2.5395768294358034e-19,
+              4.501523355862112e-21
+            ],
+            [
+              1.78999093582914e-14,
+              1.8477744392886557e-12,
+              2.2567148277581432e-12,
+              8.445341365324291e-15,
+              8.859880731486353e-17
+            ]
+          ],
+          "scales": [
+            [
+              2.4059795533004095e-07,
+              5.641516961205057e-07,
+              6.457576669700913e-07,
+              3.296172595389428e-08,
+              9.851265006112418e-11
+            ],
+            [
+              1.098237671622994e-05,
+              0.0001397181699566772,
+              0.000140798953397837,
+              1.388390720120348e-06,
+              3.1852898505560794e-08
+            ]
+          ]
+        }
+      ],
+      "side_change": {
+        "absolute_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.6543612251060553e-24,
+            0.0,
+            0.0
+          ],
+          [
+            9.145308852386274e-21,
+            1.102274414508563e-18,
+            4.1402106488184e-15,
+            7.261121052736076e-16,
+            3.885116505946751e-19
+          ],
+          [
+            4.195525542515779e-14,
+            5.516126170743672e-12,
+            5.3709037068608474e-12,
+            3.339079158129639e-15,
+            1.178493831370197e-15
+          ]
+        ],
+        "relative_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            8.111545796733735e-17,
+            0.0,
+            0.0
+          ],
+          [
+            3.801075050634229e-14,
+            1.9538617398273523e-12,
+            6.411399911431724e-09,
+            2.202894673322835e-08,
+            3.9437742295392024e-09
+          ],
+          [
+            3.820234591220643e-09,
+            3.948037805286222e-08,
+            3.8145906466257564e-08,
+            2.4049996227576355e-09,
+            3.699800918162781e-08
+          ]
+        ]
+      },
+      "component_maxima_by_time_order": [
+        [
+          1.926593879708925e-09,
+          7.156938751423663e-09,
+          6.563204817990667e-09,
+          1.212355856626992e-10,
+          2.3186606589317197e-13
+        ],
+        [
+          9.807358452291882e-09,
+          2.7144157825035844e-08,
+          2.0395141278401148e-08,
+          1.4779810508249183e-09,
+          6.03660121767362e-12
+        ],
+        [
+          2.4059795533004095e-07,
+          5.641516961205057e-07,
+          6.457576669700913e-07,
+          3.296172595389428e-08,
+          9.851265006112418e-11
+        ],
+        [
+          1.098237671622994e-05,
+          0.0001397181699566772,
+          0.000140798953397837,
+          1.388390720120348e-06,
+          3.1852898505560794e-08
+        ]
+      ],
+      "valid_for_physics_claim": false
+    },
+    {
+      "source_residual_max": 1.6880116980272518e-11,
+      "source_bound_max": 9.976233490421458e-11,
+      "mass_source_change_max": 2.2402313306176925e-13,
+      "mode": "preflight",
+      "case": "nonlinear_modulated",
+      "intervals": 512,
+      "time": 0.3,
+      "time_refinement": 2,
+      "artifact": "nonlinear_modulated_N512_dt2_T0.3_time_jets.npz",
+      "sha256": "223f4ae9d91fa3ee7a3423d23f8dd04a147701e4882973f945606319187481b7",
+      "source_artifact": "nonlinear_modulated_N512_dt2_T0.3.npz",
+      "cache_first": 187,
+      "controls": [
+        {
+          "step": 0.00025,
+          "errors": [
+            [
+              3.994711604008462e-19,
+              7.357935661292712e-17,
+              6.728099167071155e-17,
+              4.669944101119174e-18,
+              1.8028608245746376e-20
+            ],
+            [
+              4.516621926182844e-15,
+              8.263363770644306e-13,
+              7.24355953822829e-13,
+              7.77626311049982e-14,
+              2.176685622314553e-16
+            ]
+          ],
+          "scales": [
+            [
+              1.1019199359401228e-07,
+              2.7053666576636445e-07,
+              3.585686816146382e-07,
+              3.0690637619802006e-08,
+              1.697005386082078e-10
+            ],
+            [
+              3.941410930312855e-06,
+              2.7116208124880044e-05,
+              2.70697692632644e-05,
+              6.163608544854522e-07,
+              1.2408072707157368e-08
+            ]
+          ]
+        },
+        {
+          "step": 0.000125,
+          "errors": [
+            [
+              1.1167566926731414e-18,
+              1.3938133611350405e-16,
+              1.2879138609979597e-16,
+              2.777176188585535e-19,
+              2.910095065734857e-20
+            ],
+            [
+              2.5320191991397506e-14,
+              3.042822152013111e-12,
+              2.7029219731890806e-12,
+              9.3531400856377e-15,
+              6.541247793450889e-16
+            ]
+          ],
+          "scales": [
+            [
+              1.1019199359401228e-07,
+              2.7053666576636445e-07,
+              3.585686816146382e-07,
+              3.0690637619802006e-08,
+              1.697005386082078e-10
+            ],
+            [
+              3.941410930312855e-06,
+              2.7116208124880044e-05,
+              2.70697692632644e-05,
+              6.163608544854522e-07,
+              1.2408072707157368e-08
+            ]
+          ]
+        }
+      ],
+      "side_change": null,
+      "component_maxima_by_time_order": [
+        [
+          2.9899405746429705e-09,
+          6.5268511961609e-09,
+          9.864092327547534e-09,
+          1.5326151914221688e-10,
+          9.929539612558079e-13
+        ],
+        [
+          3.9216632487999155e-08,
+          3.4411731129481196e-08,
+          3.1234776840901735e-08,
+          1.4547274171743505e-09,
+          1.332509116728989e-11
+        ],
+        [
+          1.1019199359401228e-07,
+          2.7053666576636445e-07,
+          3.585686816146382e-07,
+          3.0690637619802006e-08,
+          1.697005386082078e-10
+        ],
+        [
+          3.941410930312855e-06,
+          2.7116208124880044e-05,
+          2.70697692632644e-05,
+          6.163608544854522e-07,
+          1.2408072707157368e-08
+        ]
+      ],
+      "valid_for_physics_claim": false
+    }
+  ],
+  "valid_for_physics_claim": false,
+  "scope": "Mass-only Volterra replacement with original projected scalar/lapse source law. Differentiate the actual cell-exponential recurrence through time degree2, then actual RHS through derivative3. Preflight uses old saved states only as matched-state probes; trajectory mode replays new evolution. Nonzero source Noether residual retained, not exact source identity or physical claim.",
+  "passed": 174,
+  "total": 174,
+  "completed_utc": "2026-09-09T08:38:41.266482+00:00"
+}

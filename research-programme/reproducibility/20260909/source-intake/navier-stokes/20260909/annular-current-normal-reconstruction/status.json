@@ -1,0 +1,4484 @@
+{
+  "state": "complete",
+  "started_utc": "2026-09-09T08:02:33.249265+00:00",
+  "script_sha256": "980b74839be27757678ecd26d1e64ce91d22a390863248f6819b172a6c4685f9",
+  "inputs": {
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\status.json": "80ecaa81956bdb745a88b0dfc2f556f416027232ce15d11081c7b1c423054d30",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\executed-script.py": "272b666fec41e8882d6db8198200537928851c5e36e961c89fc35cc7ae37a726",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\status.json": "21f1d122fbeb933d31af3b5168fba9fe905f31a73e55483968e9af4b58822020",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\executed-script.py": "cc70564b11d4481839b436d07703cdcba8956ae90cf2bddb821bff2bd33c6662",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-reduction-broadcast\\status.json": "881da914115e43662e8ed9c6d367b79c0ee83644e64f7386b974abc90fd2a949",
+    "scripts\\annular_coupled_current_operator_20260909.py": "20e5c31f4bce2b401b11ad5e55e2cf8f9e75519b2c84557e9378ddc0bd8504ba",
+    "scripts\\derive_annular_coupled_current_reduction_20260909.py": "180b742c6daca65d523cec1ea7cf134a4c8a5c54a25687b8fc7f9f0deefd05d1",
+    "scripts\\annular_coordinate_evolution_operator_20260909.py": "cf884d6a6df0e0c9c578248bbff7ebf16011aad051a018350d9ab31c40bccbd2",
+    "scripts\\annular_evolution_operator_20260909.py": "3955c8fdf7eda801ced7d0eeefa21be6e3267f6056178664b3015c047933aed8",
+    "scripts\\annular_conservative_scalar_evolution_20260909.py": "9ed4c615b2a144ed461808747f6c80512baae6c0bac25163fbdbfe1e15198c2b",
+    "scripts\\annular_noether_completion_20260909.py": "1bcc72f03e3bd99859c8bdcb4ed55f064775d71673f68d7bb92601da61c4cb6f",
+    "source-intake\\navier-stokes\\20260909\\annular-constraint-correction-initial\\canonical.json": "6e24704a5834702cbbd1b8379dcb621cc074948a9dc81c9c80709df30425644a",
+    "source-intake\\navier-stokes\\20260909\\annular-constraint-correction-initial\\nonlinear_modulated.json": "39a36d33cabf877b4574692e5a15a5245af834eefce3cffd68cffe5296c4c222",
+    "scripts\\annular_volterra_source_completion_20260909.py": "158ec29d76d4b9de73065697ebc3a91b04377f718c8aa85e57e6a84bac818106",
+    "scripts\\run_annular_coupled_current_correction_20260909.py": "cc70564b11d4481839b436d07703cdcba8956ae90cf2bddb821bff2bd33c6662",
+    "scripts\\annular_continuum_initial_data_20260909.py": "7ae2b3489dd715780daf17d652fecc45c50165f638c46cf825d1d1f0cac0491b",
+    "scripts\\annular_boundary_preserving_completion_20260909.py": "88532e07986f620a1211b568c7a7d28dcc7f3961e47b5123bcacfe4d8c8e63dc",
+    "scripts\\annular_noether_source_projection_20260909.py": "ce89734bac822e9d507d013ff30c987e97c5d75d27ecd321322b5175a100b076",
+    "scripts\\sbp4_derived_operator_20260909.py": "065ea0be52b651d742082230fe8322a367e11fc5e20150c8f3d506d1f87e77d3",
+    "scripts\\sbp4_compatible_second_operator_20260909.py": "86c6f05f7cf0a07abe9d4caa5ca1038b9f64641085a1a4a4f03aeae3ac918a3c",
+    "source-intake\\navier-stokes\\20260909\\annular-analytic-third-corner-initial-data\\status.json": "9c22536e38bf8479419a1ec526c0f7a3b688bc65d050f56e905c1b57b763a79a",
+    "scripts\\annular_third_corner_initial_data_20260909.py": "ac6f3ef627a88496a7639bc8dacfc08583052f8c2e22ba5c80ca21845a8ad480",
+    "scripts\\annular_analytic_corner_jets_20260909.py": "fdb1b59a03d37cce85de443cfae9c2a246d829e9716251b6d942fded15bf40ea",
+    "scripts\\derive_annular_analytic_third_corner_data_20260909.py": "819278bc5dd3b6f0781413a6cc2042c3055a65dede06d5a1106e3a53bf7ae5b4",
+    "scripts\\annular_fifth_order_jet_20260909.py": "02db75655f95f3d64fba5246b7d7eca9ab4cdba35cc5b3aa0cb8be53072814ef",
+    "scripts\\annular_second_corner_initial_data_20260909.py": "ec895bc2d29b5191d684d11ab4373d91feca7acdfaf8b97b715b30b117eef807",
+    "scripts\\annular_current_corner_compatibility_20260909.py": "bd7515936a8bc0f062519ac38881c66ea9f40cc93acee56eb5afa2b607528d07",
+    "source-intake\\navier-stokes\\20260909\\annular-second-corner-truncation-diagnosis\\status.json": "ec2d7da1e7c6c04687189362b91bce41305af20816c5e37562e87e6e6d1c10cf",
+    "source-intake\\navier-stokes\\20260909\\annular-second-corner-initial-data\\canonical-degree64.json": "c6403afcede88ccdf08664072f5a3dcc4f4ac609f9fbecfb5dcb2144d1e8cbb4",
+    "source-intake\\navier-stokes\\20260909\\annular-second-corner-initial-data\\nonlinear_modulated-degree64.json": "c0897535cd59a37b3ad69f03b7db1d1d0f8b2407b77e573c0ff6754b80e71998",
+    "source-intake\\navier-stokes\\20260909\\annular-analytic-third-corner-initial-data\\canonical-degree64.json": "fe232378a70a9ac9d328c750fffcc8bfbd16ddfe8e4062c321bcc05b7ef662cf",
+    "source-intake\\navier-stokes\\20260909\\annular-analytic-third-corner-initial-data\\nonlinear_modulated-degree64.json": "9772d01c0514176c10ee762220acbcaa95f4341f4d63dd0073c9d214a39696e5",
+    "scripts\\annular_coupled_current_time_jets_20260909.py": "0622610d2da611e066aff45e42e03675eb57b2099eda7bfff1ac711c3d67a95b",
+    "scripts\\derive_annular_coupled_current_time_jets_20260909.py": "272b666fec41e8882d6db8198200537928851c5e36e961c89fc35cc7ae37a726",
+    "scripts\\annular_correction_time_jets_20260909.py": "ec5decfa95ad31a42908801d3e98002ac70d04b1e1b19636ce699f4a6cff5e9a",
+    "scripts\\navier_stokes_source_audit_20260908.py": "817c4cdff5bf22a88deea7771b4bbc960690397512bc07cdb639ee9ab33e4f0b",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N128_dt1_T0.1.npz": "c1256753a985a3acd464ec9698d949ead2aea8656b5e781be621bb2b580107b1",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N128_dt1_T0.3.npz": "e9fb136c2fffbb4b8e368ff8f035f8184e035e540f3fca2eb7b01f785e080fc7",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N256_dt1_T0.1.npz": "1e84fd16a7ac0f290610aae32a1fa5ad9be568949e28ad5f5d674cc635cd13a7",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N256_dt1_T0.3.npz": "5db7cda772ec2d61917c400da8cd7e86bb1ce4f242a7dc7dc4f33da03c840d95",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N512_dt2_T0.1.npz": "cbfafb567aa71dc6bba30f8e5f03952509bee3ec1867da0a5c1f880f1e5519fa",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N512_dt2_T0.3.npz": "8c927efc64a7f7e2d7034b58e627fb29bd27d3230610272ba3ac511ce2030d78",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N128_dt1_T0.1.npz": "614f9586a008541b86147f8ece40c2ac80033fff24f7c33d8dcd383b22abec3e",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N128_dt1_T0.3.npz": "13a11854d8b8414d9bd42e6137f3de867d3670428bb673090b00523c2aa86e85",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N256_dt1_T0.1.npz": "59bb2e53fc99dce96580fd1276199edbf5d3dc59d79edb7c67f3ee51ecb0a524",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N256_dt1_T0.3.npz": "54376c906efebb1eb3667d2984e7ef6977078e93cda97b54862a4fc4c1a3da3d",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N512_dt2_T0.1.npz": "d83270ac8f8186dc1dc41890fe5169ea62d9e9e2d476b3328c5911e3d6c68d55",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N512_dt2_T0.3.npz": "229e310052f3eb45ea8c2b89ff33b8a4537a0d1f0f0e2443b20fdf31914e00f5",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-curvature-transfer\\status.json": "3c6716ac3cc3025c14c411f03c61dc3717b6e2e1551ee042d3e4b60dd08c8ae8",
+    "scripts\\annular_current_normal_reconstruction_20260909.py": "a99bf58d7267416f74b8b95f7ec1b5c691fd7074683bb1616cfb81676563e9af",
+    "scripts\\derive_annular_current_normal_reconstruction_20260909.py": "980b74839be27757678ecd26d1e64ce91d22a390863248f6819b172a6c4685f9",
+    "scripts\\annular_coupled_curvature_transfer_20260909.py": "271ced21b5857d8a87229d16af768d3d14ee071b76905c82607c41c7c93b262a",
+    "scripts\\annular_curvature_timejet_transfer_20260909.py": "5b07d93df2021227f3b04a471d7cdf3ebe616fc5abd65731f8ec58bff8315b74",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\canonical_N128_dt1_T0.1_time_jets.npz": "b4fb8237f6b9610ab203d829ad1a066f6932cae9ed7a723d646b3a30590f4a1e",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\canonical_N128_dt1_T0.3_time_jets.npz": "abcd7c59e78516a554d67d2d10a766812dc92a1f562400ffb0737c2587f448fd",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\canonical_N256_dt1_T0.1_time_jets.npz": "a58f9065dbfc39438049250b6823ce20fea3d5d5129b76a1e5d988a401976f14",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\canonical_N256_dt1_T0.3_time_jets.npz": "1c4e8307973e74840ef2914057a6bb3cbff813f5c7f1bc15a5f8b33b48e2b9f6",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\canonical_N512_dt2_T0.1_time_jets.npz": "f78b2fb09e0a16d06ab4d6eadf64d7077440e75d11d0be643aaaa772ee28da8f",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\canonical_N512_dt2_T0.3_time_jets.npz": "e0862ebeb9dc348f6e9a40e358ae8bdf18bac9d47b730ef13299a1ca503b7606",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\nonlinear_modulated_N128_dt1_T0.1_time_jets.npz": "424142e1657ec5a90432bcd2a8836198f8e95f8fb6389b2777422b7169862894",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\nonlinear_modulated_N128_dt1_T0.3_time_jets.npz": "2a4c9b48f8685800feeee0b8e991445d481f0d090c6d56d3007e36d1d3406e26",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\nonlinear_modulated_N256_dt1_T0.1_time_jets.npz": "30e2c8dfdd7a9c5a735450c62c9a46759de58fd12cc192a2b3d75a3624dc4f69",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\nonlinear_modulated_N256_dt1_T0.3_time_jets.npz": "49c079750552b3350e1cc33e47ba584b755c7e239c2f27ab3f0853359737783e",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\nonlinear_modulated_N512_dt2_T0.1_time_jets.npz": "942f760b3df11f54998f2419d624414acf8ebe6609e4fbe4b48ebf2cc0c295f0",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\nonlinear_modulated_N512_dt2_T0.3_time_jets.npz": "bdc45988cbebdca8cf69e5c3ab1250abb439c9b7871bc6967ec23072c82aea22"
+  },
+  "checks": [
+    {
+      "name": "time_jet_owner_passed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "time_jet_owner_snapshot",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "time_jet_inputs_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_four_old_curvature_failures_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_time_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly7_normal_determinant",
+      "passed": true,
+      "detail": {
+        "condition_max": 79.0021923046214,
+        "minimum_abs_determinant": 5.063150672181392
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly7_normal_form_recurrence",
+      "passed": true,
+      "detail": {
+        "residual_max": 3.9903192749558055e-21,
+        "scale": 6.172152299988055e-06
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly7_saved_time_jets_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly7_kinematic_spatial_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly7_nonzero_constraint_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly7_independent_prescribed_jet_inverse_control",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly7_C3_endpoint_(0, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly7_C3_endpoint_(1, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly7_C3_endpoint_(2, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly7_C3_endpoint_(3, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly7_C3_endpoint_(0, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly7_C3_endpoint_(1, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly7_C3_endpoint_(2, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly7_C3_endpoint_(0, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly7_C3_endpoint_(1, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly7_C3_endpoint_(0, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly7_subcell_positions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly7_finite_retained_reconstruction_defects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly7_nodes_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly7_nodes_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly7_subcells_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly7_subcells_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly9_normal_determinant",
+      "passed": true,
+      "detail": {
+        "condition_max": 79.0021923046214,
+        "minimum_abs_determinant": 5.063150672181392
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly9_normal_form_recurrence",
+      "passed": true,
+      "detail": {
+        "residual_max": 6.776263578034403e-21,
+        "scale": 6.344528545208118e-06
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly9_saved_time_jets_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly9_kinematic_spatial_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly9_nonzero_constraint_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly9_independent_prescribed_jet_inverse_control",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly9_C3_endpoint_(0, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly9_C3_endpoint_(1, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly9_C3_endpoint_(2, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly9_C3_endpoint_(3, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly9_C3_endpoint_(0, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly9_C3_endpoint_(1, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly9_C3_endpoint_(2, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly9_C3_endpoint_(0, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly9_C3_endpoint_(1, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly9_C3_endpoint_(0, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly9_subcell_positions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly9_finite_retained_reconstruction_defects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly9_nodes_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly9_nodes_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly9_subcells_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly9_subcells_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_time_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly7_normal_determinant",
+      "passed": true,
+      "detail": {
+        "condition_max": 79.01253789526066,
+        "minimum_abs_determinant": 5.062487817564012
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly7_normal_form_recurrence",
+      "passed": true,
+      "detail": {
+        "residual_max": 1.1434944787933055e-20,
+        "scale": 1.264359531588193e-05
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly7_saved_time_jets_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly7_kinematic_spatial_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly7_nonzero_constraint_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly7_C3_endpoint_(0, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly7_C3_endpoint_(1, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly7_C3_endpoint_(2, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly7_C3_endpoint_(3, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly7_C3_endpoint_(0, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly7_C3_endpoint_(1, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly7_C3_endpoint_(2, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly7_C3_endpoint_(0, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly7_C3_endpoint_(1, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly7_C3_endpoint_(0, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly7_subcell_positions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly7_finite_retained_reconstruction_defects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly7_nodes_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly7_nodes_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly7_subcells_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly7_subcells_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly9_normal_determinant",
+      "passed": true,
+      "detail": {
+        "condition_max": 79.01253789526066,
+        "minimum_abs_determinant": 5.062487817564012
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly9_normal_form_recurrence",
+      "passed": true,
+      "detail": {
+        "residual_max": 3.5575383784680614e-20,
+        "scale": 1.7284026637622398e-05
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly9_saved_time_jets_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly9_kinematic_spatial_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly9_nonzero_constraint_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly9_C3_endpoint_(0, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly9_C3_endpoint_(1, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly9_C3_endpoint_(2, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly9_C3_endpoint_(3, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly9_C3_endpoint_(0, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly9_C3_endpoint_(1, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly9_C3_endpoint_(2, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly9_C3_endpoint_(0, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly9_C3_endpoint_(1, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly9_C3_endpoint_(0, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly9_subcell_positions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly9_finite_retained_reconstruction_defects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly9_nodes_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly9_nodes_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly9_subcells_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly9_subcells_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_time_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly7_normal_determinant",
+      "passed": true,
+      "detail": {
+        "condition_max": 79.0021923046214,
+        "minimum_abs_determinant": 5.063150672181392
+      }
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly7_normal_form_recurrence",
+      "passed": true,
+      "detail": {
+        "residual_max": 4.341043854678289e-21,
+        "scale": 8.617445674864064e-06
+      }
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly7_saved_time_jets_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly7_kinematic_spatial_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly7_nonzero_constraint_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly7_C3_endpoint_(0, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly7_C3_endpoint_(1, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly7_C3_endpoint_(2, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly7_C3_endpoint_(3, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly7_C3_endpoint_(0, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly7_C3_endpoint_(1, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly7_C3_endpoint_(2, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly7_C3_endpoint_(0, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly7_C3_endpoint_(1, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly7_C3_endpoint_(0, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly7_subcell_positions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly7_finite_retained_reconstruction_defects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly7_nodes_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly7_nodes_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly7_subcells_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly7_subcells_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly9_normal_determinant",
+      "passed": true,
+      "detail": {
+        "condition_max": 79.0021923046214,
+        "minimum_abs_determinant": 5.063150672181392
+      }
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly9_normal_form_recurrence",
+      "passed": true,
+      "detail": {
+        "residual_max": 8.046812998915853e-21,
+        "scale": 1.0300010751320881e-05
+      }
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly9_saved_time_jets_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly9_kinematic_spatial_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly9_nonzero_constraint_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly9_C3_endpoint_(0, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly9_C3_endpoint_(1, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly9_C3_endpoint_(2, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly9_C3_endpoint_(3, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly9_C3_endpoint_(0, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly9_C3_endpoint_(1, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly9_C3_endpoint_(2, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly9_C3_endpoint_(0, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly9_C3_endpoint_(1, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly9_C3_endpoint_(0, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly9_subcell_positions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly9_finite_retained_reconstruction_defects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly9_nodes_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly9_nodes_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly9_subcells_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly9_subcells_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_time_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly7_normal_determinant",
+      "passed": true,
+      "detail": {
+        "condition_max": 79.01253789526066,
+        "minimum_abs_determinant": 5.062487817564012
+      }
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly7_normal_form_recurrence",
+      "passed": true,
+      "detail": {
+        "residual_max": 4.3728075902003255e-20,
+        "scale": 2.3180903642560232e-05
+      }
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly7_saved_time_jets_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly7_kinematic_spatial_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly7_nonzero_constraint_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly7_C3_endpoint_(0, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly7_C3_endpoint_(1, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly7_C3_endpoint_(2, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly7_C3_endpoint_(3, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly7_C3_endpoint_(0, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly7_C3_endpoint_(1, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly7_C3_endpoint_(2, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly7_C3_endpoint_(0, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly7_C3_endpoint_(1, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly7_C3_endpoint_(0, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly7_subcell_positions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly7_finite_retained_reconstruction_defects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly7_nodes_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly7_nodes_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly7_subcells_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly7_subcells_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly9_normal_determinant",
+      "passed": true,
+      "detail": {
+        "condition_max": 79.01253789526066,
+        "minimum_abs_determinant": 5.062487817564012
+      }
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly9_normal_form_recurrence",
+      "passed": true,
+      "detail": {
+        "residual_max": 6.225692162319107e-20,
+        "scale": 3.0946021270777604e-05
+      }
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly9_saved_time_jets_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly9_kinematic_spatial_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly9_nonzero_constraint_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly9_C3_endpoint_(0, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly9_C3_endpoint_(1, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly9_C3_endpoint_(2, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly9_C3_endpoint_(3, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly9_C3_endpoint_(0, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly9_C3_endpoint_(1, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly9_C3_endpoint_(2, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly9_C3_endpoint_(0, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly9_C3_endpoint_(1, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly9_C3_endpoint_(0, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly9_subcell_positions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly9_finite_retained_reconstruction_defects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly9_nodes_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly9_nodes_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly9_subcells_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly9_subcells_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_time_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly7_normal_determinant",
+      "passed": true,
+      "detail": {
+        "condition_max": 79.0021923046214,
+        "minimum_abs_determinant": 5.063150672181392
+      }
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly7_normal_form_recurrence",
+      "passed": true,
+      "detail": {
+        "residual_max": 1.1434944787933055e-20,
+        "scale": 3.8803328586545425e-05
+      }
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly7_saved_time_jets_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly7_kinematic_spatial_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly7_nonzero_constraint_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly7_C3_endpoint_(0, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly7_C3_endpoint_(1, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly7_C3_endpoint_(2, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly7_C3_endpoint_(3, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly7_C3_endpoint_(0, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly7_C3_endpoint_(1, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly7_C3_endpoint_(2, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly7_C3_endpoint_(0, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly7_C3_endpoint_(1, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly7_C3_endpoint_(0, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly7_subcell_positions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly7_finite_retained_reconstruction_defects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly7_nodes_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly7_nodes_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly7_subcells_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly7_subcells_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly9_normal_determinant",
+      "passed": true,
+      "detail": {
+        "condition_max": 79.0021923046214,
+        "minimum_abs_determinant": 5.063150672181392
+      }
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly9_normal_form_recurrence",
+      "passed": true,
+      "detail": {
+        "residual_max": 1.3827812863926453e-19,
+        "scale": 4.9324785865133626e-05
+      }
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly9_saved_time_jets_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly9_kinematic_spatial_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly9_nonzero_constraint_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly9_C3_endpoint_(0, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly9_C3_endpoint_(1, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly9_C3_endpoint_(2, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly9_C3_endpoint_(3, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly9_C3_endpoint_(0, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly9_C3_endpoint_(1, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly9_C3_endpoint_(2, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly9_C3_endpoint_(0, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly9_C3_endpoint_(1, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly9_C3_endpoint_(0, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly9_subcell_positions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly9_finite_retained_reconstruction_defects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly9_nodes_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly9_nodes_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly9_subcells_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly9_subcells_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_time_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly7_normal_determinant",
+      "passed": true,
+      "detail": {
+        "condition_max": 79.01253789526066,
+        "minimum_abs_determinant": 5.062487817564012
+      }
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly7_normal_form_recurrence",
+      "passed": true,
+      "detail": {
+        "residual_max": 6.522153693858113e-20,
+        "scale": 3.090632176466499e-05
+      }
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly7_saved_time_jets_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly7_kinematic_spatial_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly7_nonzero_constraint_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly7_C3_endpoint_(0, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly7_C3_endpoint_(1, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly7_C3_endpoint_(2, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly7_C3_endpoint_(3, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly7_C3_endpoint_(0, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly7_C3_endpoint_(1, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly7_C3_endpoint_(2, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly7_C3_endpoint_(0, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly7_C3_endpoint_(1, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly7_C3_endpoint_(0, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly7_subcell_positions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly7_finite_retained_reconstruction_defects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly7_nodes_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly7_nodes_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly7_subcells_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly7_subcells_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly9_normal_determinant",
+      "passed": true,
+      "detail": {
+        "condition_max": 79.01253789526066,
+        "minimum_abs_determinant": 5.062487817564012
+      }
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly9_normal_form_recurrence",
+      "passed": true,
+      "detail": {
+        "residual_max": 3.5151867311053464e-20,
+        "scale": 4.1736693254192674e-05
+      }
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly9_saved_time_jets_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly9_kinematic_spatial_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly9_nonzero_constraint_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly9_C3_endpoint_(0, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly9_C3_endpoint_(1, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly9_C3_endpoint_(2, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly9_C3_endpoint_(3, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly9_C3_endpoint_(0, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly9_C3_endpoint_(1, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly9_C3_endpoint_(2, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly9_C3_endpoint_(0, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly9_C3_endpoint_(1, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly9_C3_endpoint_(0, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly9_subcell_positions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly9_finite_retained_reconstruction_defects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly9_nodes_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly9_nodes_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly9_subcells_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly9_subcells_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_time_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_normal_determinant",
+      "passed": true,
+      "detail": {
+        "condition_max": 79.89411852758377,
+        "minimum_abs_determinant": 5.006621944022614
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_normal_form_recurrence",
+      "passed": true,
+      "detail": {
+        "residual_max": 9.889109659193956e-20,
+        "scale": 4.257153386044486e-05
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_saved_time_jets_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_kinematic_spatial_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_nonzero_constraint_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_independent_prescribed_jet_inverse_control",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_C3_endpoint_(0, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_C3_endpoint_(1, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_C3_endpoint_(2, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_C3_endpoint_(3, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_C3_endpoint_(0, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_C3_endpoint_(1, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_C3_endpoint_(2, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_C3_endpoint_(0, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_C3_endpoint_(1, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_C3_endpoint_(0, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_subcell_positions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_finite_retained_reconstruction_defects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_nodes_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_nodes_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_subcells_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_subcells_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_normal_determinant",
+      "passed": true,
+      "detail": {
+        "condition_max": 79.89411852758377,
+        "minimum_abs_determinant": 5.006621944022614
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_normal_form_recurrence",
+      "passed": true,
+      "detail": {
+        "residual_max": 1.795776022628121e-19,
+        "scale": 4.392387636263462e-05
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_saved_time_jets_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_kinematic_spatial_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_nonzero_constraint_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_independent_prescribed_jet_inverse_control",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_C3_endpoint_(0, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_C3_endpoint_(1, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_C3_endpoint_(2, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_C3_endpoint_(3, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_C3_endpoint_(0, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_C3_endpoint_(1, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_C3_endpoint_(2, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_C3_endpoint_(0, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_C3_endpoint_(1, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_C3_endpoint_(0, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_subcell_positions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_finite_retained_reconstruction_defects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_nodes_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_nodes_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_subcells_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_subcells_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_time_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_normal_determinant",
+      "passed": true,
+      "detail": {
+        "condition_max": 79.87654379061269,
+        "minimum_abs_determinant": 5.007711742382584
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_normal_form_recurrence",
+      "passed": true,
+      "detail": {
+        "residual_max": 5.590417451878382e-20,
+        "scale": 6.346441529894213e-05
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_saved_time_jets_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_kinematic_spatial_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_nonzero_constraint_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_C3_endpoint_(0, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_C3_endpoint_(1, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_C3_endpoint_(2, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_C3_endpoint_(3, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_C3_endpoint_(0, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_C3_endpoint_(1, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_C3_endpoint_(2, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_C3_endpoint_(0, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_C3_endpoint_(1, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_C3_endpoint_(0, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_subcell_positions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_finite_retained_reconstruction_defects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_nodes_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_nodes_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_subcells_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_subcells_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_normal_determinant",
+      "passed": true,
+      "detail": {
+        "condition_max": 79.87654379061269,
+        "minimum_abs_determinant": 5.007711742382584
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_normal_form_recurrence",
+      "passed": true,
+      "detail": {
+        "residual_max": 6.945670167485263e-20,
+        "scale": 8.659074947091558e-05
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_saved_time_jets_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_kinematic_spatial_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_nonzero_constraint_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_C3_endpoint_(0, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_C3_endpoint_(1, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_C3_endpoint_(2, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_C3_endpoint_(3, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_C3_endpoint_(0, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_C3_endpoint_(1, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_C3_endpoint_(2, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_C3_endpoint_(0, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_C3_endpoint_(1, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_C3_endpoint_(0, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_subcell_positions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_finite_retained_reconstruction_defects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_nodes_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_nodes_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_subcells_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_subcells_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_time_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_normal_determinant",
+      "passed": true,
+      "detail": {
+        "condition_max": 79.89411852758377,
+        "minimum_abs_determinant": 5.006621944022614
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_normal_form_recurrence",
+      "passed": true,
+      "detail": {
+        "residual_max": 8.539150899507415e-20,
+        "scale": 6.832151325291662e-05
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_saved_time_jets_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_kinematic_spatial_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_nonzero_constraint_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_C3_endpoint_(0, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_C3_endpoint_(1, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_C3_endpoint_(2, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_C3_endpoint_(3, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_C3_endpoint_(0, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_C3_endpoint_(1, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_C3_endpoint_(2, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_C3_endpoint_(0, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_C3_endpoint_(1, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_C3_endpoint_(0, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_subcell_positions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_finite_retained_reconstruction_defects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_nodes_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_nodes_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_subcells_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_subcells_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_normal_determinant",
+      "passed": true,
+      "detail": {
+        "condition_max": 79.89411852758377,
+        "minimum_abs_determinant": 5.006621944022614
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_normal_form_recurrence",
+      "passed": true,
+      "detail": {
+        "residual_max": 2.0297026998581172e-19,
+        "scale": 8.226858404067312e-05
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_saved_time_jets_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_kinematic_spatial_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_nonzero_constraint_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_C3_endpoint_(0, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_C3_endpoint_(1, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_C3_endpoint_(2, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_C3_endpoint_(3, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_C3_endpoint_(0, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_C3_endpoint_(1, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_C3_endpoint_(2, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_C3_endpoint_(0, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_C3_endpoint_(1, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_C3_endpoint_(0, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_subcell_positions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_finite_retained_reconstruction_defects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_nodes_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_nodes_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_subcells_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_subcells_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_time_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_normal_determinant",
+      "passed": true,
+      "detail": {
+        "condition_max": 79.87654379061269,
+        "minimum_abs_determinant": 5.007711742382584
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_normal_form_recurrence",
+      "passed": true,
+      "detail": {
+        "residual_max": 1.6432439176733427e-19,
+        "scale": 0.00010117287161080381
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_saved_time_jets_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_kinematic_spatial_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_nonzero_constraint_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_C3_endpoint_(0, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_C3_endpoint_(1, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_C3_endpoint_(2, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_C3_endpoint_(3, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_C3_endpoint_(0, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_C3_endpoint_(1, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_C3_endpoint_(2, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_C3_endpoint_(0, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_C3_endpoint_(1, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_C3_endpoint_(0, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_subcell_positions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_finite_retained_reconstruction_defects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_nodes_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_nodes_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_subcells_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_subcells_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_normal_determinant",
+      "passed": true,
+      "detail": {
+        "condition_max": 79.87654379061269,
+        "minimum_abs_determinant": 5.007711742382584
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_normal_form_recurrence",
+      "passed": true,
+      "detail": {
+        "residual_max": 2.5368636770266295e-19,
+        "scale": 0.00013540182312890756
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_saved_time_jets_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_kinematic_spatial_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_nonzero_constraint_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_C3_endpoint_(0, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_C3_endpoint_(1, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_C3_endpoint_(2, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_C3_endpoint_(3, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_C3_endpoint_(0, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_C3_endpoint_(1, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_C3_endpoint_(2, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_C3_endpoint_(0, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_C3_endpoint_(1, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_C3_endpoint_(0, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_subcell_positions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_finite_retained_reconstruction_defects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_nodes_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_nodes_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_subcells_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_subcells_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_time_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_normal_determinant",
+      "passed": true,
+      "detail": {
+        "condition_max": 79.89411852758377,
+        "minimum_abs_determinant": 5.006621944022614
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_normal_form_recurrence",
+      "passed": true,
+      "detail": {
+        "residual_max": 3.5744790374131474e-19,
+        "scale": 0.00014755296937868899
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_saved_time_jets_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_kinematic_spatial_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_nonzero_constraint_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_C3_endpoint_(0, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_C3_endpoint_(1, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_C3_endpoint_(2, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_C3_endpoint_(3, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_C3_endpoint_(0, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_C3_endpoint_(1, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_C3_endpoint_(2, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_C3_endpoint_(0, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_C3_endpoint_(1, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_C3_endpoint_(0, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_subcell_positions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_finite_retained_reconstruction_defects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_nodes_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_nodes_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_subcells_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_subcells_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_normal_determinant",
+      "passed": true,
+      "detail": {
+        "condition_max": 79.89411852758377,
+        "minimum_abs_determinant": 5.006621944022614
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_normal_form_recurrence",
+      "passed": true,
+      "detail": {
+        "residual_max": 4.336808689942018e-19,
+        "scale": 0.00018822901048826758
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_saved_time_jets_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_kinematic_spatial_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_nonzero_constraint_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_C3_endpoint_(0, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_C3_endpoint_(1, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_C3_endpoint_(2, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_C3_endpoint_(3, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_C3_endpoint_(0, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_C3_endpoint_(1, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_C3_endpoint_(2, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_C3_endpoint_(0, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_C3_endpoint_(1, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_C3_endpoint_(0, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_subcell_positions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_finite_retained_reconstruction_defects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_nodes_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_nodes_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_subcells_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_subcells_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_time_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_normal_determinant",
+      "passed": true,
+      "detail": {
+        "condition_max": 79.87654379061269,
+        "minimum_abs_determinant": 5.007711742382584
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_normal_form_recurrence",
+      "passed": true,
+      "detail": {
+        "residual_max": 7.369186641112413e-20,
+        "scale": 0.0001584635103269882
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_saved_time_jets_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_kinematic_spatial_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_nonzero_constraint_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_C3_endpoint_(0, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_C3_endpoint_(1, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_C3_endpoint_(2, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_C3_endpoint_(3, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_C3_endpoint_(0, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_C3_endpoint_(1, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_C3_endpoint_(2, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_C3_endpoint_(0, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_C3_endpoint_(1, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_C3_endpoint_(0, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_subcell_positions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_finite_retained_reconstruction_defects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_nodes_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_nodes_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_subcells_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_subcells_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_normal_determinant",
+      "passed": true,
+      "detail": {
+        "condition_max": 79.87654379061269,
+        "minimum_abs_determinant": 5.007711742382584
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_normal_form_recurrence",
+      "passed": true,
+      "detail": {
+        "residual_max": 2.0328790734103208e-19,
+        "scale": 0.00021253700924591924
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_saved_time_jets_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_kinematic_spatial_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_nonzero_constraint_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_C3_endpoint_(0, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_C3_endpoint_(1, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_C3_endpoint_(2, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_C3_endpoint_(3, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_C3_endpoint_(0, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_C3_endpoint_(1, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_C3_endpoint_(2, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_C3_endpoint_(0, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_C3_endpoint_(1, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_C3_endpoint_(0, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_subcell_positions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_finite_retained_reconstruction_defects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_nodes_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_nodes_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_subcells_offshell_Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_subcells_offshell_K1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all24_reconstructions_saved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_bytecode_cache",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "runs": [
+    {
+      "case": "canonical",
+      "time": 0.1,
+      "intervals": 128,
+      "method": "poly7",
+      "artifact": "canonical_N128_dt1_T0.1_time_jets_poly7_normal_curvature.npz",
+      "sha256": "adf288606b787bd05e51fd3dc66c49b67cd28ff489781b8a55227a570e99e02c",
+      "metrics": {
+        "normal_matrix_condition_max": 79.0021923046214,
+        "mass_time_compatibility_residual_coefficients": {
+          "(0, 0)": 5.169878828456423e-26,
+          "(0, 1)": 2.8434107508868354e-10,
+          "(0, 2)": 1.7525096423743965e-08,
+          "(1, 0)": 8.271806125530277e-25,
+          "(1, 1)": 6.683393769494154e-09,
+          "(2, 0)": 1.3234889800848443e-23
+        },
+        "endpoint_matching_errors": {
+          "(0, 0)": 4.1359030627651384e-25,
+          "(1, 0)": 2.1816888656086105e-23,
+          "(2, 0)": 2.091112588534054e-21,
+          "(3, 0)": 1.2231155758352097e-18,
+          "(0, 1)": 1.737079286361358e-23,
+          "(1, 1)": 1.394561889279049e-21,
+          "(2, 1)": 1.8809425384965807e-19,
+          "(0, 2)": 1.9058241313221758e-21,
+          "(1, 2)": 1.2366681029912785e-19,
+          "(0, 3)": 4.277516383634217e-20
+        },
+        "subcell_PDE_defect_by_component": [
+          9.02843849512768e-14,
+          7.99760412726133e-10,
+          6.835795487806868e-10,
+          1.5817659960499447e-13,
+          3.2349741945054365e-12
+        ],
+        "subcell_integrability_defect": 4.569929681053084e-11,
+        "nodes": {
+          "Z": 2.184764255452984e-11,
+          "K1": 1.2571150982773918e-10,
+          "M1": 1.1796581740783126e-10,
+          "Weyl2": 2.525610151483578e-12,
+          "Rm": 1.1271774450879599e-11,
+          "Dl": 6.879343748858885e-14,
+          "Fchi": 2.8037470682454886e-09
+        },
+        "subcells": {
+          "Z": 4.8808114261797824e-11,
+          "K1": 1.4630752618494375e-10,
+          "M1": 1.1847103131537878e-10,
+          "Weyl2": 2.3951903765263815e-12,
+          "Rm": 1.1103197427185853e-11,
+          "Dl": 1.6195153805934871e-13,
+          "Fchi": 4.828210566578189e-09
+        }
+      },
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "time": 0.1,
+      "intervals": 128,
+      "method": "poly9",
+      "artifact": "canonical_N128_dt1_T0.1_time_jets_poly9_normal_curvature.npz",
+      "sha256": "cb2de5e6196e70de2d5a50593476d29f7033a19a87acb3a7ebdc272c769b3fb4",
+      "metrics": {
+        "normal_matrix_condition_max": 79.0021923046214,
+        "mass_time_compatibility_residual_coefficients": {
+          "(0, 0)": 5.169878828456423e-26,
+          "(0, 1)": 8.383299239734502e-10,
+          "(0, 2)": 6.269268197207114e-08,
+          "(1, 0)": 8.271806125530277e-25,
+          "(1, 1)": 1.9526012722840063e-08,
+          "(2, 0)": 1.3234889800848443e-23
+        },
+        "endpoint_matching_errors": {
+          "(0, 0)": 4.1359030627651384e-25,
+          "(1, 0)": 1.5923226791645783e-23,
+          "(2, 0)": 1.9087192634661114e-21,
+          "(3, 0)": 1.2231155758352097e-18,
+          "(0, 1)": 1.613002194478404e-23,
+          "(1, 1)": 1.0755415914720742e-21,
+          "(2, 1)": 1.3234889800848443e-19,
+          "(0, 2)": 7.9947006203250125e-22,
+          "(1, 2)": 9.973812953919386e-20,
+          "(0, 3)": 5.717472393966527e-20
+        },
+        "subcell_PDE_defect_by_component": [
+          9.028697294071274e-14,
+          7.993797690966197e-10,
+          6.841695829550841e-10,
+          1.6016881648353028e-13,
+          3.234973651863112e-12
+        ],
+        "subcell_integrability_defect": 4.571229387414621e-11,
+        "nodes": {
+          "Z": 3.434884845202568e-11,
+          "K1": 1.2571148702901236e-10,
+          "M1": 1.1796581789609253e-10,
+          "Weyl2": 4.293788379365013e-12,
+          "Rm": 1.1271774450879599e-11,
+          "Dl": 6.879343748858885e-14,
+          "Fchi": 2.8037470682460627e-09
+        },
+        "subcells": {
+          "Z": 4.880790384121733e-11,
+          "K1": 1.463075312133718e-10,
+          "M1": 1.1847103078250936e-10,
+          "Weyl2": 2.4590187179060827e-12,
+          "Rm": 1.105507052098713e-11,
+          "Dl": 1.619515380543155e-13,
+          "Fchi": 4.828176989598759e-09
+        }
+      },
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "time": 0.3,
+      "intervals": 128,
+      "method": "poly7",
+      "artifact": "canonical_N128_dt1_T0.3_time_jets_poly7_normal_curvature.npz",
+      "sha256": "cc07cf182f8ea85e552397fb9835f6e4fbddd5ee2e044a520f34643891ddd227",
+      "metrics": {
+        "normal_matrix_condition_max": 79.01253789526066,
+        "mass_time_compatibility_residual_coefficients": {
+          "(0, 0)": 2.5849394142282115e-26,
+          "(0, 1)": 2.104306890397062e-09,
+          "(0, 2)": 1.2961813221708122e-07,
+          "(1, 0)": 8.271806125530277e-25,
+          "(1, 1)": 1.4076467530078228e-08,
+          "(2, 0)": 4.963083675318166e-24
+        },
+        "endpoint_matching_errors": {
+          "(0, 0)": 8.530300066953098e-25,
+          "(1, 0)": 2.714186384939622e-23,
+          "(2, 0)": 3.3955764145301786e-22,
+          "(3, 0)": 5.565006463460753e-19,
+          "(0, 1)": 1.9376705849054673e-22,
+          "(1, 1)": 4.2616345158731986e-21,
+          "(2, 1)": 3.7375328797596e-20,
+          "(0, 2)": 1.5484821066992678e-20,
+          "(1, 2)": 2.619449389383924e-19,
+          "(0, 3)": 3.2864878353466853e-19
+        },
+        "subcell_PDE_defect_by_component": [
+          1.3853547472034929e-13,
+          3.1062008836556863e-09,
+          3.2819919007876736e-09,
+          1.1436327273319017e-12,
+          3.722473963632682e-12
+        ],
+        "subcell_integrability_defect": 5.727322174363038e-10,
+        "nodes": {
+          "Z": 6.227920797290216e-11,
+          "K1": 3.279554397059268e-10,
+          "M1": 2.8482811011431376e-11,
+          "Weyl2": 7.78608598582556e-12,
+          "Rm": 2.3582599884053175e-11,
+          "Dl": 2.4072167240212058e-14,
+          "Fchi": 6.487511739175214e-09
+        },
+        "subcells": {
+          "Z": 6.158664967569451e-10,
+          "K1": 3.824261185039134e-10,
+          "M1": 3.3481204203826745e-11,
+          "Weyl2": 3.780776055275958e-11,
+          "Rm": 2.4347225648905428e-11,
+          "Dl": 1.0280597472140088e-13,
+          "Fchi": 3.733916015586013e-08
+        }
+      },
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "time": 0.3,
+      "intervals": 128,
+      "method": "poly9",
+      "artifact": "canonical_N128_dt1_T0.3_time_jets_poly9_normal_curvature.npz",
+      "sha256": "d672e4649d7433fe8c4eff9392ecbd1ddb28a27b648f4be06876f166a78370ed",
+      "metrics": {
+        "normal_matrix_condition_max": 79.01253789526066,
+        "mass_time_compatibility_residual_coefficients": {
+          "(0, 0)": 2.5849394142282115e-26,
+          "(0, 1)": 6.1465704336826365e-09,
+          "(0, 2)": 4.5924503769862053e-07,
+          "(1, 0)": 8.271806125530277e-25,
+          "(1, 1)": 4.156442489828585e-08,
+          "(2, 0)": 4.963083675318166e-24
+        },
+        "endpoint_matching_errors": {
+          "(0, 0)": 1.0985992510469899e-24,
+          "(1, 0)": 2.1610093502947848e-23,
+          "(2, 0)": 4.748016716054379e-22,
+          "(3, 0)": 5.565006463460753e-19,
+          "(0, 1)": 1.5468277454741618e-22,
+          "(1, 1)": 2.5344813968624768e-21,
+          "(2, 1)": 4.581918849053731e-20,
+          "(0, 2)": 7.940933880509066e-21,
+          "(1, 2)": 1.4145450219146816e-19,
+          "(0, 3)": 4.701032857261367e-19
+        },
+        "subcell_PDE_defect_by_component": [
+          1.6770549414359168e-13,
+          3.1087396789700137e-09,
+          3.2810138361997443e-09,
+          1.1452920503052388e-12,
+          3.7232288770918895e-12
+        ],
+        "subcell_integrability_defect": 5.728093765711191e-10,
+        "nodes": {
+          "Z": 2.052556611269711e-10,
+          "K1": 3.279553987495363e-10,
+          "M1": 2.8481967559434756e-11,
+          "Weyl2": 2.566086304930891e-11,
+          "Rm": 2.3582599884053175e-11,
+          "Dl": 2.4072167240212058e-14,
+          "Fchi": 6.4875117391749626e-09
+        },
+        "subcells": {
+          "Z": 6.158577341674494e-10,
+          "K1": 3.8242618514683733e-10,
+          "M1": 3.348149023206446e-11,
+          "Weyl2": 3.7807462885819664e-11,
+          "Rm": 2.4411293279456472e-11,
+          "Dl": 1.0280595275278986e-13,
+          "Fchi": 3.7339308517960296e-08
+        }
+      },
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "time": 0.1,
+      "intervals": 256,
+      "method": "poly7",
+      "artifact": "canonical_N256_dt1_T0.1_time_jets_poly7_normal_curvature.npz",
+      "sha256": "5b9f3ebb98e46edb6f719aa0b31b1a8cac88caf2256672ac619dbbeaa50573f4",
+      "metrics": {
+        "normal_matrix_condition_max": 79.0021923046214,
+        "mass_time_compatibility_residual_coefficients": {
+          "(0, 0)": 5.169878828456423e-26,
+          "(0, 1)": 1.1901322013516995e-10,
+          "(0, 2)": 1.4623385470699642e-08,
+          "(1, 0)": 8.271806125530277e-25,
+          "(1, 1)": 6.787940946267334e-09,
+          "(2, 0)": 1.3234889800848443e-23
+        },
+        "endpoint_matching_errors": {
+          "(0, 0)": 2.0679515313825692e-25,
+          "(1, 0)": 7.031035206700735e-24,
+          "(2, 0)": 7.064122431202856e-22,
+          "(3, 0)": 1.6957599604031093e-18,
+          "(0, 1)": 1.1580528575742387e-23,
+          "(1, 1)": 4.350970022028926e-22,
+          "(2, 1)": 1.2554616465084833e-19,
+          "(0, 2)": 1.5948042210022374e-21,
+          "(1, 2)": 5.754530085408903e-20,
+          "(0, 3)": 2.879912020664621e-20
+        },
+        "subcell_PDE_defect_by_component": [
+          1.9854984501986674e-14,
+          2.993101294929627e-10,
+          3.119008324648757e-10,
+          3.246322796764179e-14,
+          7.357134208380915e-13
+        ],
+        "subcell_integrability_defect": 9.286752213062773e-12,
+        "nodes": {
+          "Z": 2.1883265554072746e-11,
+          "K1": 1.257150511986689e-10,
+          "M1": 1.1798882702083407e-10,
+          "Weyl2": 2.2556720572806565e-12,
+          "Rm": 1.1309357860214947e-11,
+          "Dl": 6.879343748858884e-14,
+          "Fchi": 2.3883723862468998e-09
+        },
+        "subcells": {
+          "Z": 2.8382622652697843e-11,
+          "K1": 1.3151347516234135e-10,
+          "M1": 1.1799285545373855e-10,
+          "Weyl2": 2.901630219011399e-12,
+          "Rm": 1.1232306805383458e-11,
+          "Dl": 7.212287983861506e-14,
+          "Fchi": 3.048621975229393e-09
+        }
+      },
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "time": 0.1,
+      "intervals": 256,
+      "method": "poly9",
+      "artifact": "canonical_N256_dt1_T0.1_time_jets_poly9_normal_curvature.npz",
+      "sha256": "cad0ffcae50a21c86d77a01780a9a8e353c01249f1881e4b2ac323c222afabc6",
+      "metrics": {
+        "normal_matrix_condition_max": 79.0021923046214,
+        "mass_time_compatibility_residual_coefficients": {
+          "(0, 0)": 5.169878828456423e-26,
+          "(0, 1)": 3.5204051704131e-10,
+          "(0, 2)": 5.249836653300052e-08,
+          "(1, 0)": 8.271806125530277e-25,
+          "(1, 1)": 2.001693849851193e-08,
+          "(2, 0)": 1.3234889800848443e-23
+        },
+        "endpoint_matching_errors": {
+          "(0, 0)": 2.0679515313825692e-25,
+          "(1, 0)": 4.549493369041652e-24,
+          "(2, 0)": 7.378451063973007e-22,
+          "(3, 0)": 1.6957599604031093e-18,
+          "(0, 1)": 6.617444900424222e-24,
+          "(1, 1)": 3.970466940254533e-22,
+          "(2, 1)": 1.4240741425712924e-19,
+          "(0, 2)": 8.602678370551488e-22,
+          "(1, 2)": 1.0122043719688889e-19,
+          "(0, 3)": 7.284483346386983e-20
+        },
+        "subcell_PDE_defect_by_component": [
+          2.2296723422279546e-14,
+          2.993572794670725e-10,
+          3.1268402692713297e-10,
+          3.253484628281898e-14,
+          7.357133700031174e-13
+        ],
+        "subcell_integrability_defect": 9.289832837585906e-12,
+        "nodes": {
+          "Z": 2.1883664015370087e-11,
+          "K1": 1.2571504326015006e-10,
+          "M1": 1.1798882697556105e-10,
+          "Weyl2": 2.3003243024556586e-12,
+          "Rm": 1.1309357860214947e-11,
+          "Dl": 6.879343748858884e-14,
+          "Fchi": 2.3883723862468865e-09
+        },
+        "subcells": {
+          "Z": 2.8382710099287917e-11,
+          "K1": 1.3151347793685714e-10,
+          "M1": 1.1799285546487268e-10,
+          "Weyl2": 2.9016391589064686e-12,
+          "Rm": 1.1227667956152129e-11,
+          "Dl": 7.212287839656645e-14,
+          "Fchi": 3.048621975999156e-09
+        }
+      },
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "time": 0.3,
+      "intervals": 256,
+      "method": "poly7",
+      "artifact": "canonical_N256_dt1_T0.3_time_jets_poly7_normal_curvature.npz",
+      "sha256": "ca062239f32ab24506c7c704827f509e72688425a5b4efe242a7ddf42ac214e5",
+      "metrics": {
+        "normal_matrix_condition_max": 79.01253789526066,
+        "mass_time_compatibility_residual_coefficients": {
+          "(0, 0)": 2.5849394142282115e-26,
+          "(0, 1)": 5.165978613047348e-10,
+          "(0, 2)": 6.344909230120885e-08,
+          "(1, 0)": 1.6543612251060553e-24,
+          "(1, 1)": 2.4908996939197473e-09,
+          "(2, 0)": 6.617444900424222e-24
+        },
+        "endpoint_matching_errors": {
+          "(0, 0)": 4.1359030627651384e-25,
+          "(1, 0)": 8.271806125530277e-24,
+          "(2, 0)": 2.034864306880448e-22,
+          "(3, 0)": 5.55653613398821e-19,
+          "(0, 1)": 3.554291694563791e-23,
+          "(1, 1)": 4.5577651751671825e-22,
+          "(2, 1)": 3.096302468908493e-20,
+          "(0, 2)": 6.594283843272737e-21,
+          "(1, 2)": 1.0757318430129614e-19,
+          "(0, 3)": 6.212986668110293e-19
+        },
+        "subcell_PDE_defect_by_component": [
+          2.648983349880674e-14,
+          9.8061937967001e-10,
+          8.841145781578659e-10,
+          1.3904602644987093e-13,
+          1.6445140700537141e-12
+        ],
+        "subcell_integrability_defect": 1.949054160730955e-10,
+        "nodes": {
+          "Z": 2.5117756808442212e-11,
+          "K1": 3.2868726744732044e-10,
+          "M1": 2.879574037677657e-11,
+          "Weyl2": 3.1036847879990907e-12,
+          "Rm": 2.399235765584e-11,
+          "Dl": 2.2129072972010703e-14,
+          "Fchi": 6.4827948916001314e-09
+        },
+        "subcells": {
+          "Z": 4.46762996922078e-10,
+          "K1": 3.488995089505806e-10,
+          "M1": 3.093121831540409e-11,
+          "Weyl2": 2.1574424244768883e-11,
+          "Rm": 2.3947607919631682e-11,
+          "Dl": 3.1571871653861027e-14,
+          "Fchi": 2.461075628213956e-08
+        }
+      },
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "time": 0.3,
+      "intervals": 256,
+      "method": "poly9",
+      "artifact": "canonical_N256_dt1_T0.3_time_jets_poly9_normal_curvature.npz",
+      "sha256": "48315d5af1c371b7c27022608b5ff8b1fba5635df63801c5149b9864c4023d7c",
+      "metrics": {
+        "normal_matrix_condition_max": 79.01253789526066,
+        "mass_time_compatibility_residual_coefficients": {
+          "(0, 0)": 2.5849394142282115e-26,
+          "(0, 1)": 1.5229611229295543e-09,
+          "(0, 2)": 2.269669832079269e-07,
+          "(1, 0)": 1.6543612251060553e-24,
+          "(1, 1)": 7.407587688074125e-09,
+          "(2, 0)": 6.617444900424222e-24
+        },
+        "endpoint_matching_errors": {
+          "(0, 0)": 4.1359030627651384e-25,
+          "(1, 0)": 7.599721877830942e-24,
+          "(2, 0)": 2.4386318433828947e-22,
+          "(3, 0)": 5.55653613398821e-19,
+          "(0, 1)": 4.6735704609246064e-23,
+          "(1, 1)": 7.0248313521065875e-22,
+          "(2, 1)": 4.384718991021089e-20,
+          "(0, 2)": 7.808584982500581e-21,
+          "(1, 2)": 8.470329472543003e-20,
+          "(0, 3)": 6.68308995383643e-19
+        },
+        "subcell_PDE_defect_by_component": [
+          3.15360478992442e-14,
+          9.807420350671345e-10,
+          8.857443108690696e-10,
+          1.3924400328701523e-13,
+          1.6443202360794006e-12
+        ],
+        "subcell_integrability_defect": 1.9488572378896105e-10,
+        "nodes": {
+          "Z": 2.8155173859659567e-11,
+          "K1": 3.28687292664889e-10,
+          "M1": 2.879578299317526e-11,
+          "Weyl2": 3.479004334587894e-12,
+          "Rm": 2.399235765584e-11,
+          "Dl": 2.2129072972010703e-14,
+          "Fchi": 6.4827948916001265e-09
+        },
+        "subcells": {
+          "Z": 4.4676166232961876e-10,
+          "K1": 3.4889951836033947e-10,
+          "M1": 3.093120285432866e-11,
+          "Weyl2": 2.1574474796314456e-11,
+          "Rm": 2.3982367158151476e-11,
+          "Dl": 3.157187400542027e-14,
+          "Fchi": 2.4610416253006303e-08
+        }
+      },
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "time": 0.1,
+      "intervals": 512,
+      "method": "poly7",
+      "artifact": "canonical_N512_dt2_T0.1_time_jets_poly7_normal_curvature.npz",
+      "sha256": "5b0c1df82558dcf90ef5dfcf97eb5e1ced56e0ba1ec5b82c31d1ad657234f155",
+      "metrics": {
+        "normal_matrix_condition_max": 79.0021923046214,
+        "mass_time_compatibility_residual_coefficients": {
+          "(0, 0)": 5.169878828456423e-26,
+          "(0, 1)": 1.613082327117736e-10,
+          "(0, 2)": 3.958961159090404e-08,
+          "(1, 0)": 8.271806125530277e-25,
+          "(1, 1)": 5.403342475544445e-09,
+          "(2, 0)": 1.3234889800848443e-23
+        },
+        "endpoint_matching_errors": {
+          "(0, 0)": 2.0679515313825692e-25,
+          "(1, 0)": 1.2407709188295415e-24,
+          "(2, 0)": 3.5403330217269584e-22,
+          "(3, 0)": 1.0664144805931641e-18,
+          "(0, 1)": 1.1580528575742387e-23,
+          "(1, 1)": 3.970466940254533e-22,
+          "(2, 1)": 1.2328299849490324e-19,
+          "(0, 2)": 4.392329052656577e-21,
+          "(1, 2)": 7.750351467376848e-20,
+          "(0, 3)": 6.962610826430349e-19
+        },
+        "subcell_PDE_defect_by_component": [
+          2.9603157236238195e-15,
+          4.586150701243707e-10,
+          4.169697624380066e-10,
+          2.1675048711060452e-14,
+          1.3900420525782048e-13
+        ],
+        "subcell_integrability_defect": 3.603765400851894e-12,
+        "nodes": {
+          "Z": 2.190466189849895e-11,
+          "K1": 1.2583853630379672e-10,
+          "M1": 1.1798840093200668e-10,
+          "Weyl2": 2.255778304798998e-12,
+          "Rm": 1.1316141463177375e-11,
+          "Dl": 6.879343748858884e-14,
+          "Fchi": 2.388080326080634e-09
+        },
+        "subcells": {
+          "Z": 8.891548296248177e-11,
+          "K1": 1.36213771131194e-10,
+          "M1": 1.1802655742854007e-10,
+          "Weyl2": 7.090555989409799e-12,
+          "Rm": 1.1278590767214378e-11,
+          "Dl": 6.868529565134246e-14,
+          "Fchi": 2.9373078737476694e-09
+        }
+      },
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "time": 0.1,
+      "intervals": 512,
+      "method": "poly9",
+      "artifact": "canonical_N512_dt2_T0.1_time_jets_poly9_normal_curvature.npz",
+      "sha256": "6b49bf445dd60c254c9ab61a19b27fc3450e27c3cad67b878fde2fc002356a8d",
+      "metrics": {
+        "normal_matrix_condition_max": 79.0021923046214,
+        "mass_time_compatibility_residual_coefficients": {
+          "(0, 0)": 5.169878828456423e-26,
+          "(0, 1)": 4.775808605753768e-10,
+          "(0, 2)": 1.422427186299895e-07,
+          "(1, 0)": 8.271806125530277e-25,
+          "(1, 1)": 1.59723766479002e-08,
+          "(2, 0)": 1.3234889800848443e-23
+        },
+        "endpoint_matching_errors": {
+          "(0, 0)": 2.0679515313825692e-25,
+          "(1, 0)": 1.6543612251060553e-24,
+          "(2, 0)": 3.2094607767057474e-22,
+          "(3, 0)": 1.0664144805931641e-18,
+          "(0, 1)": 1.6543612251060553e-23,
+          "(1, 1)": 4.7976475528075605e-22,
+          "(2, 1)": 1.2567851354885681e-19,
+          "(0, 2)": 5.353512924443195e-21,
+          "(1, 2)": 1.7533582008164017e-19,
+          "(0, 3)": 6.844026213814747e-19
+        },
+        "subcell_PDE_defect_by_component": [
+          3.292758482707345e-15,
+          4.58638862424836e-10,
+          4.1866074904463287e-10,
+          2.171205182264447e-14,
+          1.3900418876441237e-13
+        ],
+        "subcell_integrability_defect": 3.603775283773984e-12,
+        "nodes": {
+          "Z": 2.1904819178691294e-11,
+          "K1": 1.2583852094064498e-10,
+          "M1": 1.1798840091512863e-10,
+          "Weyl2": 2.2557968415156944e-12,
+          "Rm": 1.1316141463177375e-11,
+          "Dl": 6.879343748858884e-14,
+          "Fchi": 2.3880803260806424e-09
+        },
+        "subcells": {
+          "Z": 8.891555850384336e-11,
+          "K1": 1.3621377777855575e-10,
+          "M1": 1.1802655742699865e-10,
+          "Weyl2": 7.090563896635354e-12,
+          "Rm": 1.1278906577447382e-11,
+          "Dl": 6.868530048946764e-14,
+          "Fchi": 2.937307873169086e-09
+        }
+      },
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "time": 0.3,
+      "intervals": 512,
+      "method": "poly7",
+      "artifact": "canonical_N512_dt2_T0.3_time_jets_poly7_normal_curvature.npz",
+      "sha256": "4468e7c05099dd2b6c6717030b5c1dfc6b7045cd30591fdd8b6c6c1488f3b7d8",
+      "metrics": {
+        "normal_matrix_condition_max": 79.01253789526066,
+        "mass_time_compatibility_residual_coefficients": {
+          "(0, 0)": 2.5849394142282115e-26,
+          "(0, 1)": 2.9494797730770546e-10,
+          "(0, 2)": 7.236678968104378e-08,
+          "(1, 0)": 1.6543612251060553e-24,
+          "(1, 1)": 1.590334283823805e-09,
+          "(2, 0)": 4.963083675318166e-24
+        },
+        "endpoint_matching_errors": {
+          "(0, 0)": 4.1359030627651384e-25,
+          "(1, 0)": 3.877409121342317e-24,
+          "(2, 0)": 1.3400325923359048e-22,
+          "(3, 0)": 7.860465750519907e-19,
+          "(0, 1)": 6.178005200005425e-23,
+          "(1, 1)": 1.3718790459191964e-21,
+          "(2, 1)": 3.560185356428231e-20,
+          "(0, 2)": 1.3577342574445396e-20,
+          "(1, 2)": 5.365424325263959e-19,
+          "(0, 3)": 2.329340604949326e-18
+        },
+        "subcell_PDE_defect_by_component": [
+          2.9945888897914573e-15,
+          4.5590284236326254e-10,
+          6.424796144116831e-10,
+          3.9603946038326156e-14,
+          2.232224277308414e-13
+        ],
+        "subcell_integrability_defect": 2.5688084591998116e-11,
+        "nodes": {
+          "Z": 3.627331701086374e-11,
+          "K1": 3.292672952538216e-10,
+          "M1": 2.8839562653760824e-11,
+          "Weyl2": 4.534854800346511e-12,
+          "Rm": 2.4003052067210343e-11,
+          "Dl": 2.212907297201065e-14,
+          "Fchi": 6.4821454608521975e-09
+        },
+        "subcells": {
+          "Z": 2.37812406516097e-10,
+          "K1": 3.329576724908165e-10,
+          "M1": 2.900505849394245e-11,
+          "Weyl2": 9.488856429996546e-12,
+          "Rm": 2.3965869012214015e-11,
+          "Dl": 2.220769799909699e-14,
+          "Fchi": 1.0442791769549643e-08
+        }
+      },
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "time": 0.3,
+      "intervals": 512,
+      "method": "poly9",
+      "artifact": "canonical_N512_dt2_T0.3_time_jets_poly9_normal_curvature.npz",
+      "sha256": "6935c9f311daa480bdc48a509d8c0ee39264721a277299f5f72ab7ecfa457eaa",
+      "metrics": {
+        "normal_matrix_condition_max": 79.01253789526066,
+        "mass_time_compatibility_residual_coefficients": {
+          "(0, 0)": 2.5849394142282115e-26,
+          "(0, 1)": 8.72169943741665e-10,
+          "(0, 2)": 2.596900370671965e-07,
+          "(1, 0)": 1.6543612251060553e-24,
+          "(1, 1)": 4.685647218204804e-09,
+          "(2, 0)": 4.963083675318166e-24
+        },
+        "endpoint_matching_errors": {
+          "(0, 0)": 4.1359030627651384e-25,
+          "(1, 0)": 4.265150033476549e-24,
+          "(2, 0)": 1.406207041340147e-22,
+          "(3, 0)": 7.860465750519907e-19,
+          "(0, 1)": 3.8799940607565454e-23,
+          "(1, 1)": 1.0711988932561708e-21,
+          "(2, 1)": 3.5840081580697583e-20,
+          "(0, 2)": 1.0650777567232784e-20,
+          "(1, 2)": 4.2693107519576907e-19,
+          "(0, 3)": 1.748276003132876e-18
+        },
+        "subcell_PDE_defect_by_component": [
+          2.9961772502754878e-15,
+          4.55902842320063e-10,
+          6.437937469545714e-10,
+          3.9654309983827096e-14,
+          2.2317624822216523e-13
+        ],
+        "subcell_integrability_defect": 2.5683415614855934e-11,
+        "nodes": {
+          "Z": 4.8707409447628e-11,
+          "K1": 3.2926730069012093e-10,
+          "M1": 2.8839563225269848e-11,
+          "Weyl2": 6.089352938962426e-12,
+          "Rm": 2.4003052067210343e-11,
+          "Dl": 2.212907297201065e-14,
+          "Fchi": 6.4821454608521975e-09
+        },
+        "subcells": {
+          "Z": 2.37812320984928e-10,
+          "K1": 3.329576713648344e-10,
+          "M1": 2.900504657130772e-11,
+          "Weyl2": 9.488807180083286e-12,
+          "Rm": 2.3971528937058896e-11,
+          "Dl": 2.22077007346511e-14,
+          "Fchi": 1.0442791797932963e-08
+        }
+      },
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.1,
+      "intervals": 128,
+      "method": "poly7",
+      "artifact": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_normal_curvature.npz",
+      "sha256": "085cc504ca09b4fc010b65a328db86fd1a9835ef3568bf12d87e6cbd4eb07230",
+      "metrics": {
+        "normal_matrix_condition_max": 79.89411852758377,
+        "mass_time_compatibility_residual_coefficients": {
+          "(0, 0)": 2.0679515313825692e-25,
+          "(0, 1)": 1.990993109696223e-09,
+          "(0, 2)": 1.22850123955674e-07,
+          "(1, 0)": 4.963083675318166e-24,
+          "(1, 1)": 4.18631482592937e-08,
+          "(2, 0)": 7.940933880509066e-23
+        },
+        "endpoint_matching_errors": {
+          "(0, 0)": 1.2407709188295415e-24,
+          "(1, 0)": 7.77549775799846e-23,
+          "(2, 0)": 8.808646343077192e-21,
+          "(3, 0)": 7.738493006115288e-18,
+          "(0, 1)": 6.617444900424221e-23,
+          "(1, 1)": 5.9904419961090264e-21,
+          "(2, 1)": 7.090724559702562e-19,
+          "(0, 2)": 6.33289476970598e-21,
+          "(1, 2)": 5.022905377218001e-19,
+          "(0, 3)": 2.608861477543245e-19
+        },
+        "subcell_PDE_defect_by_component": [
+          4.2205804057328253e-13,
+          5.527082126254721e-09,
+          5.006010045288184e-09,
+          1.0788876800831654e-12,
+          1.6392036335057172e-11
+        ],
+        "subcell_integrability_defect": 2.7468998823656795e-10,
+        "nodes": {
+          "Z": 6.619349170306467e-11,
+          "K1": 4.991151654418744e-10,
+          "M1": 5.554936773006177e-10,
+          "Weyl2": 5.462980463390794e-12,
+          "Rm": 2.1982227330777165e-11,
+          "Dl": 2.2703489124873903e-13,
+          "Fchi": 1.95271738170148e-08
+        },
+        "subcells": {
+          "Z": 2.178530080673174e-10,
+          "K1": 6.891055888019781e-10,
+          "M1": 5.679306835262752e-10,
+          "Weyl2": 6.477841458160156e-12,
+          "Rm": 2.20801573481844e-11,
+          "Dl": 8.196006838566007e-13,
+          "Fchi": 2.822298612086501e-08
+        }
+      },
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.1,
+      "intervals": 128,
+      "method": "poly9",
+      "artifact": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_normal_curvature.npz",
+      "sha256": "bec4f0c01453a16caf408935d6c5ad9f6c761561443491baf9dc6a87a36958ea",
+      "metrics": {
+        "normal_matrix_condition_max": 79.89411852758377,
+        "mass_time_compatibility_residual_coefficients": {
+          "(0, 0)": 2.0679515313825692e-25,
+          "(0, 1)": 5.856541377831333e-09,
+          "(0, 2)": 4.3814194655985844e-07,
+          "(1, 0)": 4.963083675318166e-24,
+          "(1, 1)": 1.2226044210942305e-07,
+          "(2, 0)": 7.940933880509066e-23
+        },
+        "endpoint_matching_errors": {
+          "(0, 0)": 1.0339757656912846e-24,
+          "(1, 0)": 7.279189390466644e-23,
+          "(2, 0)": 7.067431153653068e-21,
+          "(3, 0)": 7.738493006115288e-18,
+          "(0, 1)": 7.940933880509066e-23,
+          "(1, 1)": 4.577514112291886e-21,
+          "(2, 1)": 7.198721260477485e-19,
+          "(0, 2)": 7.835054762102278e-21,
+          "(1, 2)": 4.0234064994579266e-19,
+          "(0, 3)": 3.4558944247975454e-19
+        },
+        "subcell_PDE_defect_by_component": [
+          4.220748010673271e-13,
+          5.524284690370926e-09,
+          5.010460108646072e-09,
+          1.0887058919859151e-12,
+          1.639203236603041e-11
+        ],
+        "subcell_integrability_defect": 2.74790594135738e-10,
+        "nodes": {
+          "Z": 1.246633015551209e-10,
+          "K1": 4.993260707910036e-10,
+          "M1": 5.554936806083972e-10,
+          "Weyl2": 1.5583572392014415e-11,
+          "Rm": 2.1982227330777165e-11,
+          "Dl": 2.2703489124873903e-13,
+          "Fchi": 1.9527173817018287e-08
+        },
+        "subcells": {
+          "Z": 2.178512486196686e-10,
+          "K1": 6.891087808058934e-10,
+          "M1": 5.679306879040434e-10,
+          "Weyl2": 1.012945641961386e-11,
+          "Rm": 2.209335789879418e-11,
+          "Dl": 8.196006838201951e-13,
+          "Fchi": 2.8222736713452486e-08
+        }
+      },
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.3,
+      "intervals": 128,
+      "method": "poly7",
+      "artifact": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_normal_curvature.npz",
+      "sha256": "6dc4d9e2e6f01a3d08ae97e5b2d27f9d842d5b15a247b1e18e8542080b023104",
+      "metrics": {
+        "normal_matrix_condition_max": 79.87654379061269,
+        "mass_time_compatibility_residual_coefficients": {
+          "(0, 0)": 2.0679515313825692e-25,
+          "(0, 1)": 1.2165604206618144e-08,
+          "(0, 2)": 7.491800205064287e-07,
+          "(1, 0)": 6.617444900424222e-24,
+          "(1, 1)": 7.269071883166534e-08,
+          "(2, 0)": 5.293955920339377e-23
+        },
+        "endpoint_matching_errors": {
+          "(0, 0)": 6.514047323855093e-24,
+          "(1, 0)": 8.778454250719006e-23,
+          "(2, 0)": 1.6675961149069038e-21,
+          "(3, 0)": 2.019326546254252e-18,
+          "(0, 1)": 5.227781471335135e-22,
+          "(1, 1)": 1.3870164511289168e-20,
+          "(2, 1)": 1.5998334791265598e-19,
+          "(0, 2)": 3.006966962752766e-20,
+          "(1, 2)": 8.334804200982315e-19,
+          "(0, 3)": 2.371692252312041e-18
+        },
+        "subcell_PDE_defect_by_component": [
+          6.435442317809071e-13,
+          1.5465784200298462e-08,
+          1.7700850874008895e-08,
+          6.619813453495991e-12,
+          2.0211738341682503e-11
+        ],
+        "subcell_integrability_defect": 3.0474722475046425e-09,
+        "nodes": {
+          "Z": 3.578094221734008e-10,
+          "K1": 1.4730068895355497e-09,
+          "M1": 1.1728845188340915e-10,
+          "Weyl2": 4.4733177701942627e-11,
+          "Rm": 3.269007737189727e-11,
+          "Dl": 1.4903369626692676e-13,
+          "Fchi": 2.0211357465474273e-08
+        },
+        "subcells": {
+          "Z": 3.081179294282012e-09,
+          "K1": 1.7833975808628874e-09,
+          "M1": 1.4751636161492163e-10,
+          "Weyl2": 1.8097363223090734e-10,
+          "Rm": 8.932292336528226e-11,
+          "Dl": 5.427460573128259e-13,
+          "Fchi": 1.9713931608233362e-07
+        }
+      },
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.3,
+      "intervals": 128,
+      "method": "poly9",
+      "artifact": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_normal_curvature.npz",
+      "sha256": "6a29cf4eab9422cc04c4f2bb693ddadb95e49dfd9ba5d876f81acc826b16c7d0",
+      "metrics": {
+        "normal_matrix_condition_max": 79.87654379061269,
+        "mass_time_compatibility_residual_coefficients": {
+          "(0, 0)": 2.0679515313825692e-25,
+          "(0, 1)": 3.552138624659081e-08,
+          "(0, 2)": 2.6535043369770527e-06,
+          "(1, 0)": 6.617444900424222e-24,
+          "(1, 1)": 2.1447767982266574e-07,
+          "(2, 0)": 5.293955920339377e-23
+        },
+        "endpoint_matching_errors": {
+          "(0, 0)": 8.323504913814841e-24,
+          "(1, 0)": 1.4558378780933287e-22,
+          "(2, 0)": 2.355810384551023e-21,
+          "(3, 0)": 2.019326546254252e-18,
+          "(0, 1)": 5.0954325733266505e-22,
+          "(1, 1)": 1.4399560103323106e-20,
+          "(2, 1)": 1.623126885176053e-19,
+          "(0, 2)": 4.412512259602871e-20,
+          "(1, 2)": 1.0299920638612292e-18,
+          "(0, 3)": 2.7308342219478643e-18
+        },
+        "subcell_PDE_defect_by_component": [
+          8.428825196019449e-13,
+          1.54818005896213e-08,
+          1.7693274396624153e-08,
+          6.627860212149244e-12,
+          2.0214934030009052e-11
+        ],
+        "subcell_integrability_defect": 3.047789901983127e-09,
+        "nodes": {
+          "Z": 1.040797858965867e-09,
+          "K1": 1.4730067361768266e-09,
+          "M1": 1.1728382439177108e-10,
+          "Weyl2": 1.301200938033393e-10,
+          "Rm": 3.269007737189727e-11,
+          "Dl": 1.4903369626692676e-13,
+          "Fchi": 2.021135746547814e-08
+        },
+        "subcells": {
+          "Z": 3.0811423620241504e-09,
+          "K1": 1.7833979081470932e-09,
+          "M1": 1.475179195535521e-10,
+          "Weyl2": 1.8097248001650963e-10,
+          "Rm": 8.932236427358849e-11,
+          "Dl": 5.427459489909378e-13,
+          "Fchi": 1.9714000857656464e-07
+        }
+      },
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.1,
+      "intervals": 256,
+      "method": "poly7",
+      "artifact": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_normal_curvature.npz",
+      "sha256": "4b376aa628d80cedfbf5e2777c842ecdb27de5216110caf7984113e8cc767432",
+      "metrics": {
+        "normal_matrix_condition_max": 79.89411852758377,
+        "mass_time_compatibility_residual_coefficients": {
+          "(0, 0)": 2.0679515313825692e-25,
+          "(0, 1)": 1.1202664560555661e-09,
+          "(0, 2)": 1.3776292650995228e-07,
+          "(1, 0)": 6.617444900424222e-24,
+          "(1, 1)": 2.8402842933672168e-08,
+          "(2, 0)": 8.271806125530277e-23
+        },
+        "endpoint_matching_errors": {
+          "(0, 0)": 8.271806125530277e-25,
+          "(1, 0)": 9.926167350636332e-24,
+          "(2, 0)": 3.467541127822292e-21,
+          "(3, 0)": 6.220609964635582e-18,
+          "(0, 1)": 3.970466940254533e-23,
+          "(1, 1)": 1.4310224597167379e-21,
+          "(2, 1)": 6.629091603448968e-19,
+          "(0, 2)": 1.1745964698252993e-20,
+          "(1, 2)": 2.5559219183398513e-19,
+          "(0, 3)": 1.5720931501039814e-18
+        },
+        "subcell_PDE_defect_by_component": [
+          6.136407157855883e-14,
+          3.081633982671847e-09,
+          2.8995381328677213e-09,
+          3.0044334108348756e-13,
+          3.726578019137472e-12
+        ],
+        "subcell_integrability_defect": 1.2997601928991777e-10,
+        "nodes": {
+          "Z": 6.631830007220247e-11,
+          "K1": 4.868577239419187e-10,
+          "M1": 5.556448470671554e-10,
+          "Weyl2": 5.473280957664854e-12,
+          "Rm": 2.201026956248905e-11,
+          "Dl": 2.2703489124873903e-13,
+          "Fchi": 1.5824139594882113e-08
+        },
+        "subcells": {
+          "Z": 1.5108434744061155e-10,
+          "K1": 7.370528911761854e-10,
+          "M1": 5.562794663209328e-10,
+          "Weyl2": 9.940790333837297e-12,
+          "Rm": 2.2010019200626058e-11,
+          "Dl": 2.6351259881808415e-13,
+          "Fchi": 2.66754856820383e-08
+        }
+      },
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.1,
+      "intervals": 256,
+      "method": "poly9",
+      "artifact": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_normal_curvature.npz",
+      "sha256": "d0de7b843b001869a49561d36176d8d07016f7c38b5b0dccb61208475fe002f5",
+      "metrics": {
+        "normal_matrix_condition_max": 79.89411852758377,
+        "mass_time_compatibility_residual_coefficients": {
+          "(0, 0)": 2.0679515313825692e-25,
+          "(0, 1)": 3.308411361633284e-09,
+          "(0, 2)": 4.935329036824763e-07,
+          "(1, 0)": 6.617444900424222e-24,
+          "(1, 1)": 8.364168646729274e-08,
+          "(2, 0)": 8.271806125530277e-23
+        },
+        "endpoint_matching_errors": {
+          "(0, 0)": 8.271806125530277e-25,
+          "(1, 0)": 1.5716431638507526e-23,
+          "(2, 0)": 3.533715576826534e-21,
+          "(3, 0)": 6.220609964635582e-18,
+          "(0, 1)": 1.0587911840678754e-22,
+          "(1, 1)": 1.8049080965907064e-21,
+          "(2, 1)": 5.923936674859763e-19,
+          "(0, 2)": 1.7172269516600855e-20,
+          "(1, 2)": 2.795208725939191e-19,
+          "(0, 3)": 8.809142651444724e-19
+        },
+        "subcell_PDE_defect_by_component": [
+          6.663277926819226e-14,
+          3.081734608824197e-09,
+          2.9088058255036545e-09,
+          3.012076535449168e-13,
+          3.72657751339849e-12
+        ],
+        "subcell_integrability_defect": 1.3001848727999122e-10,
+        "nodes": {
+          "Z": 6.632312107820153e-11,
+          "K1": 4.868574628949396e-10,
+          "M1": 5.556448462309924e-10,
+          "Weyl2": 7.456671105345354e-12,
+          "Rm": 2.201026956248905e-11,
+          "Dl": 2.2703489124873903e-13,
+          "Fchi": 1.582413959488191e-08
+        },
+        "subcells": {
+          "Z": 1.5108351733181036e-10,
+          "K1": 7.370570074535144e-10,
+          "M1": 5.562794685111883e-10,
+          "Weyl2": 9.941228818961195e-12,
+          "Rm": 2.202433184170649e-11,
+          "Dl": 2.6351258497059946e-13,
+          "Fchi": 2.6675219987097974e-08
+        }
+      },
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.3,
+      "intervals": 256,
+      "method": "poly7",
+      "artifact": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_normal_curvature.npz",
+      "sha256": "18cb4b1aafed9c2dc137b3c2b98628105efcf3e26e03287b8364a04b98dc6c57",
+      "metrics": {
+        "normal_matrix_condition_max": 79.87654379061269,
+        "mass_time_compatibility_residual_coefficients": {
+          "(0, 0)": 2.0679515313825692e-25,
+          "(0, 1)": 3.147765854656099e-09,
+          "(0, 2)": 3.8662580173465214e-07,
+          "(1, 0)": 6.617444900424222e-24,
+          "(1, 1)": 1.0845323733214926e-08,
+          "(2, 0)": 5.293955920339377e-23
+        },
+        "endpoint_matching_errors": {
+          "(0, 0)": 3.2053248736429822e-24,
+          "(1, 0)": 3.412120026781239e-23,
+          "(2, 0)": 1.0984958534704208e-21,
+          "(3, 0)": 3.130633773051894e-18,
+          "(0, 1)": 4.1069517413257824e-22,
+          "(1, 1)": 5.929230630780102e-21,
+          "(2, 1)": 1.6940658945086007e-19,
+          "(0, 2)": 6.569799297141167e-20,
+          "(1, 2)": 7.439066859260893e-19,
+          "(0, 3)": 2.4326786245143506e-18
+        },
+        "subcell_PDE_defect_by_component": [
+          1.2563917424843955e-13,
+          4.158337390002369e-09,
+          5.5834177919328155e-09,
+          8.474843083895554e-13,
+          8.51955587428913e-12
+        ],
+        "subcell_integrability_defect": 1.013853983667874e-09,
+        "nodes": {
+          "Z": 5.633583753165121e-11,
+          "K1": 1.4770635269416542e-09,
+          "M1": 1.1891155826615186e-10,
+          "Weyl2": 7.043081805905732e-12,
+          "Rm": 3.431939876601128e-11,
+          "Dl": 7.850568848016957e-14,
+          "Fchi": 2.6630019387521365e-08
+        },
+        "subcells": {
+          "Z": 1.708496284341073e-09,
+          "K1": 1.5815308069472444e-09,
+          "M1": 1.3130015868067863e-10,
+          "Weyl2": 7.72714390176797e-11,
+          "Rm": 3.751548169844668e-11,
+          "Dl": 1.4321099920221366e-13,
+          "Fchi": 1.2786207439010766e-07
+        }
+      },
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.3,
+      "intervals": 256,
+      "method": "poly9",
+      "artifact": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_normal_curvature.npz",
+      "sha256": "9ff60c328cf3631a83c9c839e596d3de301644710d615f57dc03c5b83c6985fc",
+      "metrics": {
+        "normal_matrix_condition_max": 79.87654379061269,
+        "mass_time_compatibility_residual_coefficients": {
+          "(0, 0)": 2.0679515313825692e-25,
+          "(0, 1)": 9.276137682249325e-09,
+          "(0, 2)": 1.382407999882707e-06,
+          "(1, 0)": 6.617444900424222e-24,
+          "(1, 1)": 3.138818410492328e-08,
+          "(2, 0)": 5.293955920339377e-23
+        },
+        "endpoint_matching_errors": {
+          "(0, 0)": 2.6366382025127757e-24,
+          "(1, 0)": 3.639594695233322e-23,
+          "(2, 0)": 1.0918784085699965e-21,
+          "(3, 0)": 3.130633773051894e-18,
+          "(0, 1)": 3.1763735522036263e-22,
+          "(1, 1)": 4.0234064994579266e-21,
+          "(2, 1)": 2.2557546176566086e-19,
+          "(0, 2)": 5.759824041329242e-20,
+          "(1, 2)": 9.33430307874239e-19,
+          "(0, 3)": 7.077807307256934e-18
+        },
+        "subcell_PDE_defect_by_component": [
+          1.516147593856734e-13,
+          4.158848666306466e-09,
+          5.592099192248307e-09,
+          8.485976755401999e-13,
+          8.518657474515815e-12
+        ],
+        "subcell_integrability_defect": 1.0137654705679714e-09,
+        "nodes": {
+          "Z": 3.671563876372768e-11,
+          "K1": 1.4770635995542464e-09,
+          "M1": 1.1891166667445815e-10,
+          "Weyl2": 4.186966164658039e-12,
+          "Rm": 3.431939876601128e-11,
+          "Dl": 7.850568848016957e-14,
+          "Fchi": 2.6630019387523165e-08
+        },
+        "subcells": {
+          "Z": 1.7084936956890516e-09,
+          "K1": 1.581530841422998e-09,
+          "M1": 1.3130002941550648e-10,
+          "Weyl2": 7.727164103946972e-11,
+          "Rm": 3.751543331789294e-11,
+          "Dl": 1.4321100988126238e-13,
+          "Fchi": 1.2786057867601174e-07
+        }
+      },
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.1,
+      "intervals": 512,
+      "method": "poly7",
+      "artifact": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_normal_curvature.npz",
+      "sha256": "6f7d13f51c1e5acc6168565b674b594e144905918eec21c5bcb008d9da914b67",
+      "metrics": {
+        "normal_matrix_condition_max": 79.89411852758377,
+        "mass_time_compatibility_residual_coefficients": {
+          "(0, 0)": 2.0679515313825692e-25,
+          "(0, 1)": 6.461333760739285e-10,
+          "(0, 2)": 1.5860950638373843e-07,
+          "(1, 0)": 6.617444900424222e-24,
+          "(1, 1)": 1.1136087325097372e-08,
+          "(2, 0)": 9.26442286059391e-23
+        },
+        "endpoint_matching_errors": {
+          "(0, 0)": 8.271806125530277e-25,
+          "(1, 0)": 3.308722450212111e-24,
+          "(2, 0)": 1.4293680984916318e-21,
+          "(3, 0)": 7.135405547670226e-18,
+          "(0, 1)": 3.3087224502121107e-23,
+          "(1, 1)": 8.139457227521792e-22,
+          "(2, 1)": 5.13301966036106e-19,
+          "(0, 2)": 1.8581785280391214e-20,
+          "(1, 2)": 1.8857070988248861e-19,
+          "(0, 3)": 3.469446951953614e-18
+        },
+        "subcell_PDE_defect_by_component": [
+          8.107889212858853e-15,
+          1.8771661207561226e-09,
+          1.664957479226215e-09,
+          8.645261929241824e-14,
+          7.314443247409811e-13
+        ],
+        "subcell_integrability_defect": 5.795449873450923e-11,
+        "nodes": {
+          "Z": 6.643223592400117e-11,
+          "K1": 4.868462406118172e-10,
+          "M1": 5.572460308893894e-10,
+          "Weyl2": 5.471665086549648e-12,
+          "Rm": 2.2017219128731035e-11,
+          "Dl": 2.2703489124873905e-13,
+          "Fchi": 1.384618982281898e-08
+        },
+        "subcells": {
+          "Z": 2.914614946494176e-10,
+          "K1": 6.680917700514349e-10,
+          "M1": 5.590612483591469e-10,
+          "Weyl2": 1.977954565110501e-11,
+          "Rm": 2.201415582454386e-11,
+          "Dl": 2.286121727134098e-13,
+          "Fchi": 2.4803499869584055e-08
+        }
+      },
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.1,
+      "intervals": 512,
+      "method": "poly9",
+      "artifact": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_normal_curvature.npz",
+      "sha256": "eee90f3aeb0c6a9e810dfb8fe45ddbb9acc5745edb407d65e204e3596566f733",
+      "metrics": {
+        "normal_matrix_condition_max": 79.89411852758377,
+        "mass_time_compatibility_residual_coefficients": {
+          "(0, 0)": 2.0679515313825692e-25,
+          "(0, 1)": 1.91223629256362e-09,
+          "(0, 2)": 5.695831867536527e-07,
+          "(1, 0)": 6.617444900424222e-24,
+          "(1, 1)": 3.28844320634922e-08,
+          "(2, 0)": 9.26442286059391e-23
+        },
+        "endpoint_matching_errors": {
+          "(0, 0)": 8.271806125530277e-25,
+          "(1, 0)": 3.308722450212111e-24,
+          "(2, 0)": 1.4095157637903592e-21,
+          "(3, 0)": 7.135405547670226e-18,
+          "(0, 1)": 5.955700410381799e-23,
+          "(1, 1)": 7.792041370249521e-22,
+          "(2, 1)": 5.027669937546306e-19,
+          "(0, 2)": 2.6046263128069735e-20,
+          "(1, 2)": 2.3139881327803417e-19,
+          "(0, 3)": 2.9815559743351372e-18
+        },
+        "subcell_PDE_defect_by_component": [
+          8.177700659211206e-15,
+          1.8771943774820575e-09,
+          1.6684259871220285e-09,
+          8.66070868336397e-14,
+          7.314442531875349e-13
+        ],
+        "subcell_integrability_defect": 5.795747374732905e-11,
+        "nodes": {
+          "Z": 6.643117999035648e-11,
+          "K1": 4.868464311416285e-10,
+          "M1": 5.572460311018745e-10,
+          "Weyl2": 5.471753922402056e-12,
+          "Rm": 2.2017219128731035e-11,
+          "Dl": 2.2703489124873905e-13,
+          "Fchi": 1.3846189822817919e-08
+        },
+        "subcells": {
+          "Z": 2.914615579217992e-10,
+          "K1": 6.680966356700532e-10,
+          "M1": 5.590612490829239e-10,
+          "Weyl2": 1.9779575116533785e-11,
+          "Rm": 2.2016639118196042e-11,
+          "Dl": 2.2861214282704415e-13,
+          "Fchi": 2.480331173785193e-08
+        }
+      },
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.3,
+      "intervals": 512,
+      "method": "poly7",
+      "artifact": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_normal_curvature.npz",
+      "sha256": "6a4bcb7e23d3d667080500318d33a74131dc8c37c54dd9b7b224682b352e1641",
+      "metrics": {
+        "normal_matrix_condition_max": 79.87654379061269,
+        "mass_time_compatibility_residual_coefficients": {
+          "(0, 0)": 2.0679515313825692e-25,
+          "(0, 1)": 4.131025001115384e-10,
+          "(0, 2)": 1.0138127737509607e-07,
+          "(1, 0)": 6.617444900424222e-24,
+          "(1, 1)": 8.524360165706451e-09,
+          "(2, 0)": 5.293955920339377e-23
+        },
+        "endpoint_matching_errors": {
+          "(0, 0)": 1.6543612251060553e-24,
+          "(1, 0)": 6.617444900424222e-24,
+          "(2, 0)": 4.566036981292713e-22,
+          "(3, 0)": 3.105222784634265e-18,
+          "(0, 1)": 1.1001502146955268e-22,
+          "(1, 1)": 1.942220078274509e-21,
+          "(2, 1)": 1.6686549060909717e-19,
+          "(0, 2)": 3.177697041183711e-20,
+          "(1, 2)": 5.303485040995988e-19,
+          "(0, 3)": 5.577831071677775e-18
+        },
+        "subcell_PDE_defect_by_component": [
+          1.0598393112394863e-14,
+          2.194122287983144e-09,
+          1.7446463340117058e-09,
+          5.535219324294918e-14,
+          1.2134378979368218e-12
+        ],
+        "subcell_integrability_defect": 1.4591112153411583e-10,
+        "nodes": {
+          "Z": 1.0753166228235148e-10,
+          "K1": 1.4766400519211247e-09,
+          "M1": 1.1906256357081094e-10,
+          "Weyl2": 1.34435614586208e-11,
+          "Rm": 3.42887967379914e-11,
+          "Dl": 6.87839529827455e-14,
+          "Fchi": 2.353359985655096e-08
+        },
+        "subcells": {
+          "Z": 6.562281193656383e-10,
+          "K1": 1.4924038943813384e-09,
+          "M1": 1.2024468836220164e-10,
+          "Weyl2": 5.4046297767053124e-11,
+          "Rm": 3.418803365867735e-11,
+          "Dl": 7.570931773005147e-14,
+          "Fchi": 5.290754332629061e-08
+        }
+      },
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.3,
+      "intervals": 512,
+      "method": "poly9",
+      "artifact": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_normal_curvature.npz",
+      "sha256": "85f46952ada2adeb39f942880f1d19e89c62d4af99fde5deadff044f4e0b9096",
+      "metrics": {
+        "normal_matrix_condition_max": 79.87654379061269,
+        "mass_time_compatibility_residual_coefficients": {
+          "(0, 0)": 2.0679515313825692e-25,
+          "(0, 1)": 1.2223140512255427e-09,
+          "(0, 2)": 3.6402880645595764e-07,
+          "(1, 0)": 6.617444900424222e-24,
+          "(1, 1)": 2.5315439147867898e-08,
+          "(2, 0)": 5.293955920339377e-23
+        },
+        "endpoint_matching_errors": {
+          "(0, 0)": 1.6543612251060553e-24,
+          "(1, 0)": 9.305781891221561e-24,
+          "(2, 0)": 5.161607022330893e-22,
+          "(3, 0)": 3.105222784634265e-18,
+          "(0, 1)": 1.1911400820763599e-22,
+          "(1, 1)": 2.6453235989445825e-21,
+          "(2, 1)": 1.3441354081741679e-19,
+          "(0, 2)": 4.1941365778888715e-20,
+          "(1, 2)": 7.579356691149886e-19,
+          "(0, 3)": 6.640738306473715e-18
+        },
+        "subcell_PDE_defect_by_component": [
+          1.059098473724505e-14,
+          2.194076782273366e-09,
+          1.7493068896380552e-09,
+          5.544167829943055e-14,
+          1.213196641926307e-12
+        ],
+        "subcell_integrability_defect": 1.4588746341177453e-10,
+        "nodes": {
+          "Z": 1.831297631165994e-10,
+          "K1": 1.4766400140812643e-09,
+          "M1": 1.1906256771048517e-10,
+          "Weyl2": 2.2894803010635987e-11,
+          "Rm": 3.42887967379914e-11,
+          "Dl": 6.87839529827455e-14,
+          "Fchi": 2.3533599856547684e-08
+        },
+        "subcells": {
+          "Z": 6.562260213395151e-10,
+          "K1": 1.4924038862212345e-09,
+          "M1": 1.202446098326858e-10,
+          "Weyl2": 5.404618741221585e-11,
+          "Rm": 3.425886981984863e-11,
+          "Dl": 7.570931887583768e-14,
+          "Fchi": 5.2906889505316476e-08
+        }
+      },
+      "valid_for_physics_claim": false
+    }
+  ],
+  "sensitivity": [
+    {
+      "case": "canonical",
+      "time": 0.1,
+      "scopes": {
+        "nodes": {
+          "Z": {
+            "difference": 3.6575751554931007e-13,
+            "larger_correction_norm": 2.1904819178691294e-11,
+            "relative_difference": 0.016697582051036237,
+            "ten_percent_gate": true
+          },
+          "K1": {
+            "difference": 7.233942098056314e-15,
+            "larger_correction_norm": 1.2583853630379672e-10,
+            "relative_difference": 5.748590464046948e-05,
+            "ten_percent_gate": true
+          }
+        },
+        "subcells": {
+          "Z": {
+            "difference": 1.533330241461572e-13,
+            "larger_correction_norm": 8.891555850384336e-11,
+            "relative_difference": 0.001724479120710122,
+            "ten_percent_gate": true
+          },
+          "K1": {
+            "difference": 9.324343702335179e-14,
+            "larger_correction_norm": 1.3621377777855575e-10,
+            "relative_difference": 0.0006845374861780772,
+            "ten_percent_gate": true
+          }
+        }
+      },
+      "refinement": {
+        "poly7_Z": {
+          "coarse_difference": 4.525653565831005e-12,
+          "fine_difference": 1.228216541202808e-12,
+          "ratio": 3.6847358865554565
+        },
+        "poly7_K1": {
+          "coarse_difference": 1.2997577670527814e-11,
+          "fine_difference": 5.294156747485725e-13,
+          "ratio": 24.550798721062726
+        },
+        "poly9_Z": {
+          "coarse_difference": 1.5947035443428822e-11,
+          "fine_difference": 4.317417359069783e-12,
+          "ratio": 3.693651578513299
+        },
+        "poly9_K1": {
+          "coarse_difference": 1.3019762995876217e-11,
+          "fine_difference": 5.295336302921676e-13,
+          "ratio": 24.58722591177566
+        }
+      },
+      "all_nodal_and_subcell_sensitivity_gates_passed": true,
+      "continuum_bound_available": false
+    },
+    {
+      "case": "canonical",
+      "time": 0.3,
+      "scopes": {
+        "nodes": {
+          "Z": {
+            "difference": 1.2434092436764262e-11,
+            "larger_correction_norm": 4.8707409447628e-11,
+            "relative_difference": 0.25528133353373794,
+            "ten_percent_gate": false
+          },
+          "K1": {
+            "difference": 4.2508569816012626e-14,
+            "larger_correction_norm": 3.2926730069012093e-10,
+            "relative_difference": 0.0001291004898661898,
+            "ten_percent_gate": true
+          }
+        },
+        "subcells": {
+          "Z": {
+            "difference": 5.506069594028785e-12,
+            "larger_correction_norm": 2.37812406516097e-10,
+            "relative_difference": 0.023152995567773674,
+            "ten_percent_gate": true
+          },
+          "K1": {
+            "difference": 3.155103568304164e-14,
+            "larger_correction_norm": 3.329576724908165e-10,
+            "relative_difference": 9.475989980051252e-05,
+            "ten_percent_gate": true
+          }
+        }
+      },
+      "refinement": {
+        "poly7_Z": {
+          "coarse_difference": 8.211124460804316e-11,
+          "fine_difference": 1.6441280375722746e-11,
+          "ratio": 4.994212295612264
+        },
+        "poly7_K1": {
+          "coarse_difference": 3.507857342770306e-11,
+          "fine_difference": 5.966651110111736e-12,
+          "ratio": 5.879105846871974
+        },
+        "poly9_Z": {
+          "coarse_difference": 2.049152867688573e-10,
+          "fine_difference": 4.9047783805741805e-11,
+          "ratio": 4.177870453442766
+        },
+        "poly9_K1": {
+          "coarse_difference": 3.5215292743712394e-11,
+          "fine_difference": 5.877980508245909e-12,
+          "ratio": 5.991052997591726
+        }
+      },
+      "all_nodal_and_subcell_sensitivity_gates_passed": false,
+      "continuum_bound_available": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.1,
+      "scopes": {
+        "nodes": {
+          "Z": {
+            "difference": 2.0139609230787738e-11,
+            "larger_correction_norm": 6.643223592400117e-11,
+            "relative_difference": 0.30316018948733797,
+            "ten_percent_gate": false
+          },
+          "K1": {
+            "difference": 1.8635161538039156e-13,
+            "larger_correction_norm": 4.868464311416285e-10,
+            "relative_difference": 0.0003827728898893376,
+            "ten_percent_gate": true
+          }
+        },
+        "subcells": {
+          "Z": {
+            "difference": 8.931291487425104e-12,
+            "larger_correction_norm": 2.914615579217992e-10,
+            "relative_difference": 0.030643119974749538,
+            "ten_percent_gate": true
+          },
+          "K1": {
+            "difference": 2.312680323083214e-13,
+            "larger_correction_norm": 6.680966356700532e-10,
+            "relative_difference": 0.000346159552317422,
+            "ten_percent_gate": true
+          }
+        }
+      },
+      "refinement": {
+        "poly7_Z": {
+          "coarse_difference": 2.08917242188592e-11,
+          "fine_difference": 1.3594730178583856e-11,
+          "ratio": 1.536751663653501
+        },
+        "poly7_K1": {
+          "coarse_difference": 7.919175847885409e-11,
+          "fine_difference": 4.3822173270811686e-11,
+          "ratio": 1.807116182701983
+        },
+        "poly9_Z": {
+          "coarse_difference": 6.501245801173855e-11,
+          "fine_difference": 4.050237225544484e-11,
+          "ratio": 1.60515185633352
+        },
+        "poly9_K1": {
+          "coarse_difference": 7.918419201924345e-11,
+          "fine_difference": 4.385429346417113e-11,
+          "ratio": 1.8056200605292334
+        }
+      },
+      "all_nodal_and_subcell_sensitivity_gates_passed": false,
+      "continuum_bound_available": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.3,
+      "scopes": {
+        "nodes": {
+          "Z": {
+            "difference": 7.559810083424792e-11,
+            "larger_correction_norm": 1.831297631165994e-10,
+            "relative_difference": 0.41281165632325056,
+            "ten_percent_gate": false
+          },
+          "K1": {
+            "difference": 2.886843444937087e-13,
+            "larger_correction_norm": 1.4766400519211247e-09,
+            "relative_difference": 0.0001955008223690853,
+            "ten_percent_gate": true
+          }
+        },
+        "subcells": {
+          "Z": {
+            "difference": 3.346868004251995e-11,
+            "larger_correction_norm": 6.562281193656383e-10,
+            "relative_difference": 0.05100159388913935,
+            "ten_percent_gate": true
+          },
+          "K1": {
+            "difference": 1.51046509250439e-13,
+            "larger_correction_norm": 1.4924038943813384e-09,
+            "relative_difference": 0.00010121020845570352,
+            "ten_percent_gate": true
+          }
+        }
+      },
+      "refinement": {
+        "poly7_Z": {
+          "coarse_difference": 4.14145259705052e-10,
+          "fine_difference": 5.119582475070027e-11,
+          "ratio": 8.089434279489504
+        },
+        "poly7_K1": {
+          "coarse_difference": 1.8161172172424048e-10,
+          "fine_difference": 2.6063446050583617e-11,
+          "ratio": 6.968062526028626
+        },
+        "poly9_Z": {
+          "coarse_difference": 1.052011625605569e-09,
+          "fine_difference": 1.719159964768974e-10,
+          "ratio": 6.11933529842839
+        },
+        "poly9_K1": {
+          "coarse_difference": 1.8243591947190188e-10,
+          "fine_difference": 2.5651291947932967e-11,
+          "ratio": 7.11215325302954
+        }
+      },
+      "all_nodal_and_subcell_sensitivity_gates_passed": false,
+      "continuum_bound_available": false
+    }
+  ],
+  "valid_for_physics_claim": false,
+  "scope": "Derived noncharacteristic radial normal form using actual coupled time jets, numerical sources and nonzero discrete mass constraint. Piecewise C3 septic Hermite realization; intercell defects and overdetermined mass transport are retained. No continuum/source-bound or characteristic-horizon extension claim.",
+  "completion": "Mixed orders above total3 are set to zero only to define a C3 spacetime Hermite representative; not claims about the solution's higher derivatives.",
+  "sensitivity_gate": "Unchanged10% larger-correction-norm+1e-25 for Z AND K1 on every nodal row; additionally test every quarter/mid/three-quarter cell point. No deletion of original failures.",
+  "all_curvature_sensitivity_gates_passed": false,
+  "passed": 526,
+  "total": 526,
+  "completed_utc": "2026-09-09T08:02:56.545333+00:00"
+}

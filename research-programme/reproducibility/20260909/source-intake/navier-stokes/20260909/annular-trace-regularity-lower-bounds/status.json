@@ -1,0 +1,996 @@
+{
+  "state": "complete",
+  "started_utc": "2026-09-09T08:13:39.313886+00:00",
+  "script_sha256": "3a330b59b854c2615c0c0e0128ed5a79d2c9e781b532b2df9088f3757ae4daa8",
+  "inputs": {
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\status.json": "30f1537a71b1a0375cb2422956f4e4005aea547e99aeacb0dbe27cc94db7d120",
+    "source-intake\\navier-stokes\\20260909\\annular-normal-constraint-H4-diagnosis\\status.json": "1a0a972c3c32c12fba8b9b5aecc916945cc97cf47369aac53c15bef540f8edc8",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\executed-script.py": "980b74839be27757678ecd26d1e64ce91d22a390863248f6819b172a6c4685f9",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\status.json": "80ecaa81956bdb745a88b0dfc2f556f416027232ce15d11081c7b1c423054d30",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\executed-script.py": "272b666fec41e8882d6db8198200537928851c5e36e961c89fc35cc7ae37a726",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\status.json": "21f1d122fbeb933d31af3b5168fba9fe905f31a73e55483968e9af4b58822020",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\executed-script.py": "cc70564b11d4481839b436d07703cdcba8956ae90cf2bddb821bff2bd33c6662",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-reduction-broadcast\\status.json": "881da914115e43662e8ed9c6d367b79c0ee83644e64f7386b974abc90fd2a949",
+    "scripts\\annular_coupled_current_operator_20260909.py": "20e5c31f4bce2b401b11ad5e55e2cf8f9e75519b2c84557e9378ddc0bd8504ba",
+    "scripts\\derive_annular_coupled_current_reduction_20260909.py": "180b742c6daca65d523cec1ea7cf134a4c8a5c54a25687b8fc7f9f0deefd05d1",
+    "scripts\\annular_coordinate_evolution_operator_20260909.py": "cf884d6a6df0e0c9c578248bbff7ebf16011aad051a018350d9ab31c40bccbd2",
+    "scripts\\annular_evolution_operator_20260909.py": "3955c8fdf7eda801ced7d0eeefa21be6e3267f6056178664b3015c047933aed8",
+    "scripts\\annular_conservative_scalar_evolution_20260909.py": "9ed4c615b2a144ed461808747f6c80512baae6c0bac25163fbdbfe1e15198c2b",
+    "scripts\\annular_noether_completion_20260909.py": "1bcc72f03e3bd99859c8bdcb4ed55f064775d71673f68d7bb92601da61c4cb6f",
+    "source-intake\\navier-stokes\\20260909\\annular-constraint-correction-initial\\canonical.json": "6e24704a5834702cbbd1b8379dcb621cc074948a9dc81c9c80709df30425644a",
+    "source-intake\\navier-stokes\\20260909\\annular-constraint-correction-initial\\nonlinear_modulated.json": "39a36d33cabf877b4574692e5a15a5245af834eefce3cffd68cffe5296c4c222",
+    "scripts\\annular_volterra_source_completion_20260909.py": "158ec29d76d4b9de73065697ebc3a91b04377f718c8aa85e57e6a84bac818106",
+    "scripts\\run_annular_coupled_current_correction_20260909.py": "cc70564b11d4481839b436d07703cdcba8956ae90cf2bddb821bff2bd33c6662",
+    "scripts\\annular_continuum_initial_data_20260909.py": "7ae2b3489dd715780daf17d652fecc45c50165f638c46cf825d1d1f0cac0491b",
+    "scripts\\annular_boundary_preserving_completion_20260909.py": "88532e07986f620a1211b568c7a7d28dcc7f3961e47b5123bcacfe4d8c8e63dc",
+    "scripts\\annular_noether_source_projection_20260909.py": "ce89734bac822e9d507d013ff30c987e97c5d75d27ecd321322b5175a100b076",
+    "scripts\\sbp4_derived_operator_20260909.py": "065ea0be52b651d742082230fe8322a367e11fc5e20150c8f3d506d1f87e77d3",
+    "scripts\\sbp4_compatible_second_operator_20260909.py": "86c6f05f7cf0a07abe9d4caa5ca1038b9f64641085a1a4a4f03aeae3ac918a3c",
+    "source-intake\\navier-stokes\\20260909\\annular-analytic-third-corner-initial-data\\status.json": "9c22536e38bf8479419a1ec526c0f7a3b688bc65d050f56e905c1b57b763a79a",
+    "scripts\\annular_third_corner_initial_data_20260909.py": "ac6f3ef627a88496a7639bc8dacfc08583052f8c2e22ba5c80ca21845a8ad480",
+    "scripts\\annular_analytic_corner_jets_20260909.py": "fdb1b59a03d37cce85de443cfae9c2a246d829e9716251b6d942fded15bf40ea",
+    "scripts\\derive_annular_analytic_third_corner_data_20260909.py": "819278bc5dd3b6f0781413a6cc2042c3055a65dede06d5a1106e3a53bf7ae5b4",
+    "scripts\\annular_fifth_order_jet_20260909.py": "02db75655f95f3d64fba5246b7d7eca9ab4cdba35cc5b3aa0cb8be53072814ef",
+    "scripts\\annular_second_corner_initial_data_20260909.py": "ec895bc2d29b5191d684d11ab4373d91feca7acdfaf8b97b715b30b117eef807",
+    "scripts\\annular_current_corner_compatibility_20260909.py": "bd7515936a8bc0f062519ac38881c66ea9f40cc93acee56eb5afa2b607528d07",
+    "source-intake\\navier-stokes\\20260909\\annular-second-corner-truncation-diagnosis\\status.json": "ec2d7da1e7c6c04687189362b91bce41305af20816c5e37562e87e6e6d1c10cf",
+    "source-intake\\navier-stokes\\20260909\\annular-second-corner-initial-data\\canonical-degree64.json": "c6403afcede88ccdf08664072f5a3dcc4f4ac609f9fbecfb5dcb2144d1e8cbb4",
+    "source-intake\\navier-stokes\\20260909\\annular-second-corner-initial-data\\nonlinear_modulated-degree64.json": "c0897535cd59a37b3ad69f03b7db1d1d0f8b2407b77e573c0ff6754b80e71998",
+    "source-intake\\navier-stokes\\20260909\\annular-analytic-third-corner-initial-data\\canonical-degree64.json": "fe232378a70a9ac9d328c750fffcc8bfbd16ddfe8e4062c321bcc05b7ef662cf",
+    "source-intake\\navier-stokes\\20260909\\annular-analytic-third-corner-initial-data\\nonlinear_modulated-degree64.json": "9772d01c0514176c10ee762220acbcaa95f4341f4d63dd0073c9d214a39696e5",
+    "scripts\\annular_coupled_current_time_jets_20260909.py": "0622610d2da611e066aff45e42e03675eb57b2099eda7bfff1ac711c3d67a95b",
+    "scripts\\derive_annular_coupled_current_time_jets_20260909.py": "272b666fec41e8882d6db8198200537928851c5e36e961c89fc35cc7ae37a726",
+    "scripts\\annular_correction_time_jets_20260909.py": "ec5decfa95ad31a42908801d3e98002ac70d04b1e1b19636ce699f4a6cff5e9a",
+    "scripts\\navier_stokes_source_audit_20260908.py": "817c4cdff5bf22a88deea7771b4bbc960690397512bc07cdb639ee9ab33e4f0b",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N128_dt1_T0.1.npz": "c1256753a985a3acd464ec9698d949ead2aea8656b5e781be621bb2b580107b1",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N128_dt1_T0.3.npz": "e9fb136c2fffbb4b8e368ff8f035f8184e035e540f3fca2eb7b01f785e080fc7",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N256_dt1_T0.1.npz": "1e84fd16a7ac0f290610aae32a1fa5ad9be568949e28ad5f5d674cc635cd13a7",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N256_dt1_T0.3.npz": "5db7cda772ec2d61917c400da8cd7e86bb1ce4f242a7dc7dc4f33da03c840d95",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N512_dt2_T0.1.npz": "cbfafb567aa71dc6bba30f8e5f03952509bee3ec1867da0a5c1f880f1e5519fa",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N512_dt2_T0.3.npz": "8c927efc64a7f7e2d7034b58e627fb29bd27d3230610272ba3ac511ce2030d78",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N128_dt1_T0.1.npz": "614f9586a008541b86147f8ece40c2ac80033fff24f7c33d8dcd383b22abec3e",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N128_dt1_T0.3.npz": "13a11854d8b8414d9bd42e6137f3de867d3670428bb673090b00523c2aa86e85",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N256_dt1_T0.1.npz": "59bb2e53fc99dce96580fd1276199edbf5d3dc59d79edb7c67f3ee51ecb0a524",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N256_dt1_T0.3.npz": "54376c906efebb1eb3667d2984e7ef6977078e93cda97b54862a4fc4c1a3da3d",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N512_dt2_T0.1.npz": "d83270ac8f8186dc1dc41890fe5169ea62d9e9e2d476b3328c5911e3d6c68d55",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N512_dt2_T0.3.npz": "229e310052f3eb45ea8c2b89ff33b8a4537a0d1f0f0e2443b20fdf31914e00f5",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-curvature-transfer\\status.json": "3c6716ac3cc3025c14c411f03c61dc3717b6e2e1551ee042d3e4b60dd08c8ae8",
+    "scripts\\annular_current_normal_reconstruction_20260909.py": "a99bf58d7267416f74b8b95f7ec1b5c691fd7074683bb1616cfb81676563e9af",
+    "scripts\\derive_annular_current_normal_reconstruction_20260909.py": "980b74839be27757678ecd26d1e64ce91d22a390863248f6819b172a6c4685f9",
+    "scripts\\annular_coupled_curvature_transfer_20260909.py": "271ced21b5857d8a87229d16af768d3d14ee071b76905c82607c41c7c93b262a",
+    "scripts\\annular_curvature_timejet_transfer_20260909.py": "5b07d93df2021227f3b04a471d7cdf3ebe616fc5abd65731f8ec58bff8315b74",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\canonical_N128_dt1_T0.1_time_jets.npz": "b4fb8237f6b9610ab203d829ad1a066f6932cae9ed7a723d646b3a30590f4a1e",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\canonical_N128_dt1_T0.3_time_jets.npz": "abcd7c59e78516a554d67d2d10a766812dc92a1f562400ffb0737c2587f448fd",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\canonical_N256_dt1_T0.1_time_jets.npz": "a58f9065dbfc39438049250b6823ce20fea3d5d5129b76a1e5d988a401976f14",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\canonical_N256_dt1_T0.3_time_jets.npz": "1c4e8307973e74840ef2914057a6bb3cbff813f5c7f1bc15a5f8b33b48e2b9f6",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\canonical_N512_dt2_T0.1_time_jets.npz": "f78b2fb09e0a16d06ab4d6eadf64d7077440e75d11d0be643aaaa772ee28da8f",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\canonical_N512_dt2_T0.3_time_jets.npz": "e0862ebeb9dc348f6e9a40e358ae8bdf18bac9d47b730ef13299a1ca503b7606",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\nonlinear_modulated_N128_dt1_T0.1_time_jets.npz": "424142e1657ec5a90432bcd2a8836198f8e95f8fb6389b2777422b7169862894",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\nonlinear_modulated_N128_dt1_T0.3_time_jets.npz": "2a4c9b48f8685800feeee0b8e991445d481f0d090c6d56d3007e36d1d3406e26",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\nonlinear_modulated_N256_dt1_T0.1_time_jets.npz": "30e2c8dfdd7a9c5a735450c62c9a46759de58fd12cc192a2b3d75a3624dc4f69",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\nonlinear_modulated_N256_dt1_T0.3_time_jets.npz": "49c079750552b3350e1cc33e47ba584b755c7e239c2f27ab3f0853359737783e",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\nonlinear_modulated_N512_dt2_T0.1_time_jets.npz": "942f760b3df11f54998f2419d624414acf8ebe6609e4fbe4b48ebf2cc0c295f0",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\nonlinear_modulated_N512_dt2_T0.3_time_jets.npz": "bdc45988cbebdca8cf69e5c3ab1250abb439c9b7871bc6967ec23072c82aea22",
+    "scripts\\diagnose_annular_normal_constraint_and_H4_20260909.py": "4ae9434f2d3990bbb4f14303ce52e3d29ff00f9bb28f3e2c933180f6f644a650",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N128_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "adf288606b787bd05e51fd3dc66c49b67cd28ff489781b8a55227a570e99e02c",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N128_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "cb2de5e6196e70de2d5a50593476d29f7033a19a87acb3a7ebdc272c769b3fb4",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N128_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "cc07cf182f8ea85e552397fb9835f6e4fbddd5ee2e044a520f34643891ddd227",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N128_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "d672e4649d7433fe8c4eff9392ecbd1ddb28a27b648f4be06876f166a78370ed",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N256_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "5b9f3ebb98e46edb6f719aa0b31b1a8cac88caf2256672ac619dbbeaa50573f4",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N256_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "cad0ffcae50a21c86d77a01780a9a8e353c01249f1881e4b2ac323c222afabc6",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N256_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "ca062239f32ab24506c7c704827f509e72688425a5b4efe242a7ddf42ac214e5",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N256_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "48315d5af1c371b7c27022608b5ff8b1fba5635df63801c5149b9864c4023d7c",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N512_dt2_T0.1_time_jets_poly7_normal_curvature.npz": "5b0c1df82558dcf90ef5dfcf97eb5e1ced56e0ba1ec5b82c31d1ad657234f155",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N512_dt2_T0.1_time_jets_poly9_normal_curvature.npz": "6b49bf445dd60c254c9ab61a19b27fc3450e27c3cad67b878fde2fc002356a8d",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N512_dt2_T0.3_time_jets_poly7_normal_curvature.npz": "4468e7c05099dd2b6c6717030b5c1dfc6b7045cd30591fdd8b6c6c1488f3b7d8",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N512_dt2_T0.3_time_jets_poly9_normal_curvature.npz": "6935c9f311daa480bdc48a509d8c0ee39264721a277299f5f72ab7ecfa457eaa",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "085cc504ca09b4fc010b65a328db86fd1a9835ef3568bf12d87e6cbd4eb07230",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "bec4f0c01453a16caf408935d6c5ad9f6c761561443491baf9dc6a87a36958ea",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "6dc4d9e2e6f01a3d08ae97e5b2d27f9d842d5b15a247b1e18e8542080b023104",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "6a29cf4eab9422cc04c4f2bb693ddadb95e49dfd9ba5d876f81acc826b16c7d0",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "4b376aa628d80cedfbf5e2777c842ecdb27de5216110caf7984113e8cc767432",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "d0de7b843b001869a49561d36176d8d07016f7c38b5b0dccb61208475fe002f5",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "18cb4b1aafed9c2dc137b3c2b98628105efcf3e26e03287b8364a04b98dc6c57",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "9ff60c328cf3631a83c9c839e596d3de301644710d615f57dc03c5b83c6985fc",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_normal_curvature.npz": "6f7d13f51c1e5acc6168565b674b594e144905918eec21c5bcb008d9da914b67",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_normal_curvature.npz": "eee90f3aeb0c6a9e810dfb8fe45ddbb9acc5745edb407d65e204e3596566f733",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_normal_curvature.npz": "6a4bcb7e23d3d667080500318d33a74131dc8c37c54dd9b7b224682b352e1641",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_normal_curvature.npz": "85f46952ada2adeb39f942880f1d19e89c62d4af99fde5deadff044f4e0b9096",
+    "scripts\\derive_annular_trace_regularity_lower_bounds_20260909.py": "3a330b59b854c2615c0c0e0128ed5a79d2c9e781b532b2df9088f3757ae4daa8"
+  },
+  "checks": [
+    {
+      "name": "reconstruction_and_norm_owners_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "norm_owner_inputs_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fourth_derivative_kernel_Gram",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fourth_derivative_optimal_trace_quadratic",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "third_derivative_kernel_norm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Peano_kernel_polynomial_degree_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Peano_kernel_polynomial_degree_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Peano_kernel_polynomial_degree_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Peano_kernel_polynomial_degree_3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Peano_kernel_polynomial_degree_4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Peano_kernel_polynomial_degree_5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Peano_kernel_polynomial_degree_6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Peano_kernel_polynomial_degree_7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly7_normal_curvature_source_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly7_normal_curvature_trace_lower_bounds_below_measured_norm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly9_normal_curvature_source_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_time_jets_poly9_normal_curvature_trace_lower_bounds_below_measured_norm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly7_normal_curvature_source_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly7_normal_curvature_trace_lower_bounds_below_measured_norm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly9_normal_curvature_source_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_time_jets_poly9_normal_curvature_trace_lower_bounds_below_measured_norm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly7_normal_curvature_source_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly7_normal_curvature_trace_lower_bounds_below_measured_norm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly9_normal_curvature_source_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_time_jets_poly9_normal_curvature_trace_lower_bounds_below_measured_norm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly7_normal_curvature_source_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly7_normal_curvature_trace_lower_bounds_below_measured_norm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly9_normal_curvature_source_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_time_jets_poly9_normal_curvature_trace_lower_bounds_below_measured_norm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly7_normal_curvature_source_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly7_normal_curvature_trace_lower_bounds_below_measured_norm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly9_normal_curvature_source_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_time_jets_poly9_normal_curvature_trace_lower_bounds_below_measured_norm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly7_normal_curvature_source_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly7_normal_curvature_trace_lower_bounds_below_measured_norm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly9_normal_curvature_source_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_time_jets_poly9_normal_curvature_trace_lower_bounds_below_measured_norm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_normal_curvature_source_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_normal_curvature_trace_lower_bounds_below_measured_norm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_normal_curvature_source_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_normal_curvature_trace_lower_bounds_below_measured_norm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_normal_curvature_source_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_normal_curvature_trace_lower_bounds_below_measured_norm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_normal_curvature_source_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_normal_curvature_trace_lower_bounds_below_measured_norm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_normal_curvature_source_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_normal_curvature_trace_lower_bounds_below_measured_norm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_normal_curvature_source_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_normal_curvature_trace_lower_bounds_below_measured_norm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_normal_curvature_source_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_normal_curvature_trace_lower_bounds_below_measured_norm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_normal_curvature_source_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_normal_curvature_trace_lower_bounds_below_measured_norm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_normal_curvature_source_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_normal_curvature_trace_lower_bounds_below_measured_norm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_normal_curvature_source_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_normal_curvature_trace_lower_bounds_below_measured_norm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_normal_curvature_source_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_normal_curvature_trace_lower_bounds_below_measured_norm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_normal_curvature_source_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_normal_curvature_trace_lower_bounds_below_measured_norm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_bytecode_cache",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "runs": [
+    {
+      "case": "canonical",
+      "time": 0.1,
+      "intervals": 128,
+      "method": "poly7",
+      "derivative3_lower_bound_by_current_component": [
+        1.543794457224901e-07,
+        1.459922328164696e-06,
+        1.4742199355070047e-06,
+        3.536213738641621e-09,
+        6.322208937861304e-10
+      ],
+      "derivative4_lower_bound_by_current_component": [
+        6.271721223722033e-05,
+        0.0002774972835940806,
+        0.00027488426291631717,
+        1.7951400952852534e-06,
+        3.2013765745202684e-07
+      ],
+      "physical_H3chi_H4mu_H4delta_lower_bound": 1.8299860913900967e-06,
+      "measured_physical_H3chi_H4mu_H4delta_norm": 3.3515910638585743e-06,
+      "fraction_of_measured_physical_norm_forced_by_traces": 0.5460051827693129,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "time": 0.1,
+      "intervals": 128,
+      "method": "poly9",
+      "derivative3_lower_bound_by_current_component": [
+        1.543794457224901e-07,
+        1.4599223281646557e-06,
+        1.4742199355069234e-06,
+        3.536213738641621e-09,
+        6.322208937861304e-10
+      ],
+      "derivative4_lower_bound_by_current_component": [
+        6.27172122372233e-05,
+        0.00028169675042996937,
+        0.0002778245762111712,
+        1.7981108040712609e-06,
+        3.201376574606014e-07
+      ],
+      "physical_H3chi_H4mu_H4delta_lower_bound": 1.8329003237229626e-06,
+      "measured_physical_H3chi_H4mu_H4delta_norm": 3.3546274114508062e-06,
+      "fraction_of_measured_physical_norm_forced_by_traces": 0.5463797015032055,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "time": 0.3,
+      "intervals": 128,
+      "method": "poly7",
+      "derivative3_lower_bound_by_current_component": [
+        1.7929247409377864e-06,
+        4.510848153495994e-06,
+        4.26240154587687e-06,
+        1.1021744922501965e-07,
+        6.080140632238668e-10
+      ],
+      "derivative4_lower_bound_by_current_component": [
+        0.0009045462579358085,
+        0.002081596023157296,
+        0.0018685230022192163,
+        5.5988354212070475e-05,
+        3.0608533617126364e-07
+      ],
+      "physical_H3chi_H4mu_H4delta_lower_bound": 5.601789066660718e-05,
+      "measured_physical_H3chi_H4mu_H4delta_norm": 0.00010236593207323253,
+      "fraction_of_measured_physical_norm_forced_by_traces": 0.5472317745959858,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "time": 0.3,
+      "intervals": 128,
+      "method": "poly9",
+      "derivative3_lower_bound_by_current_component": [
+        1.7929247409377864e-06,
+        4.510848153496049e-06,
+        4.262401545877022e-06,
+        1.1021744922501965e-07,
+        6.080140632238668e-10
+      ],
+      "derivative4_lower_bound_by_current_component": [
+        0.0009045462579358061,
+        0.002104132733863066,
+        0.001885316692741439,
+        5.600819986109259e-05,
+        3.0611447684731783e-07
+      ],
+      "physical_H3chi_H4mu_H4delta_lower_bound": 5.603772601453145e-05,
+      "measured_physical_H3chi_H4mu_H4delta_norm": 0.00010239250842825691,
+      "fraction_of_measured_physical_norm_forced_by_traces": 0.5472834573028871,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "time": 0.1,
+      "intervals": 256,
+      "method": "poly7",
+      "derivative3_lower_bound_by_current_component": [
+        1.2723359306036152e-07,
+        1.358260939946205e-06,
+        1.3571489632389098e-06,
+        2.0137174580602216e-09,
+        4.515442804987334e-10
+      ],
+      "derivative4_lower_bound_by_current_component": [
+        8.937764588301684e-05,
+        0.0005995214772419788,
+        0.0005350596235482512,
+        2.0439728771942886e-06,
+        4.5756569976453665e-07
+      ],
+      "physical_H3chi_H4mu_H4delta_lower_bound": 2.098423188851562e-06,
+      "measured_physical_H3chi_H4mu_H4delta_norm": 3.834420420662108e-06,
+      "fraction_of_measured_physical_norm_forced_by_traces": 0.5472595486775591,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "time": 0.1,
+      "intervals": 256,
+      "method": "poly9",
+      "derivative3_lower_bound_by_current_component": [
+        1.2723359306036152e-07,
+        1.3582609399460486e-06,
+        1.357148963238722e-06,
+        2.0137174580602216e-09,
+        4.515442804987334e-10
+      ],
+      "derivative4_lower_bound_by_current_component": [
+        8.937764588301746e-05,
+        0.0006859658722494482,
+        0.0006194279842140218,
+        2.043732355091783e-06,
+        4.575656997089694e-07
+      ],
+      "physical_H3chi_H4mu_H4delta_lower_bound": 2.098188908559526e-06,
+      "measured_physical_H3chi_H4mu_H4delta_norm": 3.83360014479614e-06,
+      "fraction_of_measured_physical_norm_forced_by_traces": 0.5473155335221068,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "time": 0.3,
+      "intervals": 256,
+      "method": "poly7",
+      "derivative3_lower_bound_by_current_component": [
+        2.374112801181057e-06,
+        5.4227035189442554e-06,
+        6.21674762118952e-06,
+        1.6235109981042666e-07,
+        1.0104718852088823e-09
+      ],
+      "derivative4_lower_bound_by_current_component": [
+        0.0024064231953554375,
+        0.004979511986056992,
+        0.005758524966980409,
+        0.00016493734173637063,
+        1.0238521713130419e-06
+      ],
+      "physical_H3chi_H4mu_H4delta_lower_bound": 0.00016495760480778613,
+      "measured_physical_H3chi_H4mu_H4delta_norm": 0.0003012250782198002,
+      "fraction_of_measured_physical_norm_forced_by_traces": 0.5476224150481209,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "time": 0.3,
+      "intervals": 256,
+      "method": "poly9",
+      "derivative3_lower_bound_by_current_component": [
+        2.374112801181057e-06,
+        5.422703518944212e-06,
+        6.216747621189372e-06,
+        1.6235109981042666e-07,
+        1.0104718852088823e-09
+      ],
+      "derivative4_lower_bound_by_current_component": [
+        0.002406423195355433,
+        0.005208675077302369,
+        0.005937020791056967,
+        0.00016493712072792457,
+        1.0239431343750853e-06
+      ],
+      "physical_H3chi_H4mu_H4delta_lower_bound": 0.00016495738439110003,
+      "measured_physical_H3chi_H4mu_H4delta_norm": 0.00030122394022318895,
+      "fraction_of_measured_physical_norm_forced_by_traces": 0.5476237521787826,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "time": 0.1,
+      "intervals": 512,
+      "method": "poly7",
+      "derivative3_lower_bound_by_current_component": [
+        3.1425313891237783e-07,
+        2.4206241512606005e-06,
+        2.646269860562946e-06,
+        4.3242932246511294e-08,
+        4.17878552594561e-10
+      ],
+      "derivative4_lower_bound_by_current_component": [
+        0.0006108973535200708,
+        0.004727858811162069,
+        0.004714229548985903,
+        8.78645826633624e-05,
+        8.477199626290836e-07
+      ],
+      "physical_H3chi_H4mu_H4delta_lower_bound": 8.786923392619967e-05,
+      "measured_physical_H3chi_H4mu_H4delta_norm": 0.00016042749117069126,
+      "fraction_of_measured_physical_norm_forced_by_traces": 0.5477193047462717,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "time": 0.1,
+      "intervals": 512,
+      "method": "poly9",
+      "derivative3_lower_bound_by_current_component": [
+        3.1425313891237783e-07,
+        2.420624151263613e-06,
+        2.6462698605662105e-06,
+        4.3242932246511294e-08,
+        4.17878552594561e-10
+      ],
+      "derivative4_lower_bound_by_current_component": [
+        0.0006108973535200703,
+        0.005478169740464406,
+        0.005366704690422515,
+        8.78645563508596e-05,
+        8.477199814939134e-07
+      ],
+      "physical_H3chi_H4mu_H4delta_lower_bound": 8.786920761527169e-05,
+      "measured_physical_H3chi_H4mu_H4delta_norm": 0.00016042740581532905,
+      "fraction_of_measured_physical_norm_forced_by_traces": 0.5477194321549994,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "time": 0.3,
+      "intervals": 512,
+      "method": "poly7",
+      "derivative3_lower_bound_by_current_component": [
+        1.8938838382319466e-06,
+        1.1313345800282228e-05,
+        1.2008757130169653e-05,
+        1.7721555539312127e-07,
+        7.01235450727372e-10
+      ],
+      "derivative4_lower_bound_by_current_component": [
+        0.003839273549684556,
+        0.02087684425822562,
+        0.02232749578907647,
+        0.0003600837581426587,
+        1.4199231632485269e-06
+      ],
+      "physical_H3chi_H4mu_H4delta_lower_bound": 0.0003600915381620665,
+      "measured_physical_H3chi_H4mu_H4delta_norm": 0.0006574489084353061,
+      "fraction_of_measured_physical_norm_forced_by_traces": 0.5477102989174709,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "time": 0.3,
+      "intervals": 512,
+      "method": "poly9",
+      "derivative3_lower_bound_by_current_component": [
+        1.8938838382319466e-06,
+        1.1313345800277642e-05,
+        1.2008757130164957e-05,
+        1.7721555539312127e-07,
+        7.01235450727372e-10
+      ],
+      "derivative4_lower_bound_by_current_component": [
+        0.0038392735496845447,
+        0.021161050882305684,
+        0.022559112027398957,
+        0.0003600858512277502,
+        1.420101179987727e-06
+      ],
+      "physical_H3chi_H4mu_H4delta_lower_bound": 0.00036009363190393626,
+      "measured_physical_H3chi_H4mu_H4delta_norm": 0.0006574511639786708,
+      "fraction_of_measured_physical_norm_forced_by_traces": 0.5477116045011953,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.1,
+      "intervals": 128,
+      "method": "poly7",
+      "derivative3_lower_bound_by_current_component": [
+        8.77456817010512e-07,
+        7.085078715596113e-06,
+        7.190805023253895e-06,
+        2.652940144908322e-08,
+        3.381940823586947e-09
+      ],
+      "derivative4_lower_bound_by_current_component": [
+        0.0003840453715152818,
+        0.001692599776136776,
+        0.0016072039522404976,
+        1.3474783558215273e-05,
+        1.7137589370576948e-06
+      ],
+      "physical_H3chi_H4mu_H4delta_lower_bound": 1.3611638112321821e-05,
+      "measured_physical_H3chi_H4mu_H4delta_norm": 2.4909365319353542e-05,
+      "fraction_of_measured_physical_norm_forced_by_traces": 0.5464466050343783,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.1,
+      "intervals": 128,
+      "method": "poly9",
+      "derivative3_lower_bound_by_current_component": [
+        8.77456817010512e-07,
+        7.085078715597892e-06,
+        7.190805023255363e-06,
+        2.652940144908322e-08,
+        3.381940823586947e-09
+      ],
+      "derivative4_lower_bound_by_current_component": [
+        0.00038404537151529863,
+        0.0017539286678332666,
+        0.0016588065727099377,
+        1.3499163369287003e-05,
+        1.7137589334642835e-06
+      ],
+      "physical_H3chi_H4mu_H4delta_lower_bound": 1.3635773238743994e-05,
+      "measured_physical_H3chi_H4mu_H4delta_norm": 2.4938902014752615e-05,
+      "fraction_of_measured_physical_norm_forced_by_traces": 0.5467671844846156,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.3,
+      "intervals": 128,
+      "method": "poly7",
+      "derivative3_lower_bound_by_current_component": [
+        9.603138153491991e-06,
+        2.3520601414160293e-05,
+        2.2261459524631924e-05,
+        5.653054290942384e-07,
+        3.341115458120391e-09
+      ],
+      "derivative4_lower_bound_by_current_component": [
+        0.0048472507477845045,
+        0.011014750598764654,
+        0.009938311341302604,
+        0.00028715950404540496,
+        1.6833129128305678e-06
+      ],
+      "physical_H3chi_H4mu_H4delta_lower_bound": 0.00028732496335745093,
+      "measured_physical_H3chi_H4mu_H4delta_norm": 0.0005250957878573481,
+      "fraction_of_measured_physical_norm_forced_by_traces": 0.5471858087643011,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.3,
+      "intervals": 128,
+      "method": "poly9",
+      "derivative3_lower_bound_by_current_component": [
+        9.603138153491991e-06,
+        2.352060141416195e-05,
+        2.2261459524634147e-05,
+        5.653054290942384e-07,
+        3.341115458120391e-09
+      ],
+      "derivative4_lower_bound_by_current_component": [
+        0.0048472507477844914,
+        0.011073149229775947,
+        0.009971204754214766,
+        0.0002872427637189715,
+        1.6835054117512785e-06
+      ],
+      "physical_H3chi_H4mu_H4delta_lower_bound": 0.00028740817622638945,
+      "measured_physical_H3chi_H4mu_H4delta_norm": 0.0005252057903666547,
+      "fraction_of_measured_physical_norm_forced_by_traces": 0.5472296412150086,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.1,
+      "intervals": 256,
+      "method": "poly7",
+      "derivative3_lower_bound_by_current_component": [
+        1.4951104311657298e-06,
+        7.813061239812623e-06,
+        7.722472553539839e-06,
+        5.792905789233863e-08,
+        2.4483265725152294e-09
+      ],
+      "derivative4_lower_bound_by_current_component": [
+        0.0014488992529487577,
+        0.005423285960061137,
+        0.004653938394838908,
+        5.88527201647569e-05,
+        2.4826902554488553e-06
+      ],
+      "physical_H3chi_H4mu_H4delta_lower_bound": 5.892403394962929e-05,
+      "measured_physical_H3chi_H4mu_H4delta_norm": 0.00010763321719155338,
+      "fraction_of_measured_physical_norm_forced_by_traces": 0.5474521294366124,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.1,
+      "intervals": 256,
+      "method": "poly9",
+      "derivative3_lower_bound_by_current_component": [
+        1.4951104311657298e-06,
+        7.813061239812213e-06,
+        7.722472553539481e-06,
+        5.792905789233863e-08,
+        2.4483265725152294e-09
+      ],
+      "derivative4_lower_bound_by_current_component": [
+        0.0014488992529487622,
+        0.006111733977830697,
+        0.005326862183263646,
+        5.886581318061545e-05,
+        2.482690257335406e-06
+      ],
+      "physical_H3chi_H4mu_H4delta_lower_bound": 5.8937111123046815e-05,
+      "measured_physical_H3chi_H4mu_H4delta_norm": 0.00010764983239882642,
+      "fraction_of_measured_physical_norm_forced_by_traces": 0.5474891117776542,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.3,
+      "intervals": 256,
+      "method": "poly7",
+      "derivative3_lower_bound_by_current_component": [
+        1.2475504306265516e-05,
+        3.1143862773543814e-05,
+        3.426872598045297e-05,
+        6.322896857819077e-07,
+        5.141482848124705e-09
+      ],
+      "derivative4_lower_bound_by_current_component": [
+        0.012647583227515075,
+        0.02946906312099861,
+        0.0324713886231212,
+        0.0006423631950801247,
+        5.2093860984591255e-06
+      ],
+      "physical_H3chi_H4mu_H4delta_lower_bound": 0.000642505447684893,
+      "measured_physical_H3chi_H4mu_H4delta_norm": 0.0011734420101715151,
+      "fraction_of_measured_physical_norm_forced_by_traces": 0.547539155847149,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.3,
+      "intervals": 256,
+      "method": "poly9",
+      "derivative3_lower_bound_by_current_component": [
+        1.2475504306265516e-05,
+        3.114386277354407e-05,
+        3.426872598045321e-05,
+        6.322896857819077e-07,
+        5.141482848124705e-09
+      ],
+      "derivative4_lower_bound_by_current_component": [
+        0.012647583227515077,
+        0.030332035347683212,
+        0.03317848304028908,
+        0.0006423596265210569,
+        5.209863018649467e-06
+      ],
+      "physical_H3chi_H4mu_H4delta_lower_bound": 0.0006425018837829509,
+      "measured_physical_H3chi_H4mu_H4delta_norm": 0.0011734342124990124,
+      "fraction_of_measured_physical_norm_forced_by_traces": 0.5475397571838665,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.1,
+      "intervals": 512,
+      "method": "poly7",
+      "derivative3_lower_bound_by_current_component": [
+        2.3264387508168363e-06,
+        1.3832530024013867e-05,
+        1.371002427225516e-05,
+        1.9534364076028316e-07,
+        1.917943091413236e-09
+      ],
+      "derivative4_lower_bound_by_current_component": [
+        0.004637256027441175,
+        0.021289982593707416,
+        0.019301740203049065,
+        0.00039692104340952094,
+        3.890104280335239e-06
+      ],
+      "physical_H3chi_H4mu_H4delta_lower_bound": 0.0003969469233157954,
+      "measured_physical_H3chi_H4mu_H4delta_norm": 0.000724742061192979,
+      "fraction_of_measured_physical_norm_forced_by_traces": 0.5477078599003782,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.1,
+      "intervals": 512,
+      "method": "poly9",
+      "derivative3_lower_bound_by_current_component": [
+        2.3264387508168363e-06,
+        1.3832530024010046e-05,
+        1.37100242722499e-05,
+        1.9534364076028316e-07,
+        1.917943091413236e-09
+      ],
+      "derivative4_lower_bound_by_current_component": [
+        0.004637256027441186,
+        0.02329171379924905,
+        0.021095978963632776,
+        0.0003969240738018425,
+        3.8901043126063365e-06
+      ],
+      "physical_H3chi_H4mu_H4delta_lower_bound": 0.00039694995351086104,
+      "measured_physical_H3chi_H4mu_H4delta_norm": 0.0007247460347572139,
+      "fraction_of_measured_physical_norm_forced_by_traces": 0.5477090380271445,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.3,
+      "intervals": 512,
+      "method": "poly7",
+      "derivative3_lower_bound_by_current_component": [
+        7.603417352494421e-06,
+        3.95416682991332e-05,
+        4.594140996580518e-05,
+        3.675527031085495e-07,
+        3.500961621575866e-09
+      ],
+      "derivative4_lower_bound_by_current_component": [
+        0.01540097859250003,
+        0.06540754389921076,
+        0.0804154374983422,
+        0.0007468357534507366,
+        7.089342366764829e-06
+      ],
+      "physical_H3chi_H4mu_H4delta_lower_bound": 0.0007469081023546062,
+      "measured_physical_H3chi_H4mu_H4delta_norm": 0.0013637824452800474,
+      "fraction_of_measured_physical_norm_forced_by_traces": 0.547673937980065,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.3,
+      "intervals": 512,
+      "method": "poly9",
+      "derivative3_lower_bound_by_current_component": [
+        7.603417352494421e-06,
+        3.9541668299124895e-05,
+        4.5941409965798484e-05,
+        3.675527031085495e-07,
+        3.500961621575866e-09
+      ],
+      "derivative4_lower_bound_by_current_component": [
+        0.015400978592500022,
+        0.06608747016748782,
+        0.08081691552178168,
+        0.0007468757279271237,
+        7.0904739148940096e-06
+      ],
+      "physical_H3chi_H4mu_H4delta_lower_bound": 0.00074694808369956,
+      "measured_physical_H3chi_H4mu_H4delta_norm": 0.0013638372100311887,
+      "fraction_of_measured_physical_norm_forced_by_traces": 0.5476812615212915,
+      "valid_for_physics_claim": false
+    }
+  ],
+  "valid_for_physics_claim": false,
+  "scope": "Derived cellwise H3/H4 lower bounds for ANY reconstruction matching the specified nodal traces. Physical target is H3 scalar plus H4 metric, not unnecessary H4 on every auxiliary current. Finite-grid lower bounds and observed trends do not prove a continuum solution singular or absent.",
+  "passed": 62,
+  "total": 62,
+  "completed_utc": "2026-09-09T08:13:47.387027+00:00"
+}
