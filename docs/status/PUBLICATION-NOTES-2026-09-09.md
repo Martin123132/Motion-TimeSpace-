@@ -43,7 +43,7 @@ are not represented as below that threshold.
 
 ## Explicit exclusions and omissions
 
-- The currently running or incomplete private checkpoint `5515` is excluded;
+- The paused/incomplete private checkpoint `5515` is excluded;
   no part of its seeded frontier or mutable resume is treated as complete.
 - The mutable root `CURRENT_LOCAL_RESUME.md`,
   `LOCAL_GR_COUPLING_SPINE_CURRENT_STATE.md`, and
