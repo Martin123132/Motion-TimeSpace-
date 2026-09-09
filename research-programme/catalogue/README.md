@@ -71,7 +71,10 @@ exceed 1,000 entries.
 - [Publication items 2101-2400](publication-2026-09-09-items-2101-2400.md)
 - [Publication items 2401-2700](publication-2026-09-09-items-2401-2700.md)
 - [Publication items 2701-3000](publication-2026-09-09-items-2701-3000.md)
-- [Publication items 3001-3188](publication-2026-09-09-items-3001-3188.md)
+- [Publication items 3001-3191](publication-2026-09-09-items-3001-3191.md)
+
+The prior `publication-2026-09-09-items-3001-3188.md` file is retained as a
+historical pre-correction index; the active links above are authoritative.
 
 The authoritative source-relative mapping is
 `../../docs/status/PUBLICATION-MANIFEST-2026-09-09.csv`. The latest seal's

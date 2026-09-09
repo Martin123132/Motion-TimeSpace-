@@ -32,7 +32,8 @@ post-checkpoint source root recorded in the verification report, or begin with
 `GENERATED/` for publication-authored documents. It records every included
 file's published path, byte count, and SHA-256 digest. The capsule's role-level
 closure map is `research-programme/reproducibility/20260909/CAPSULE-MANIFEST.csv`.
-The post-export report is `PUBLICATION-VERIFICATION-2026-09-09.json`.
+The public post-export report is
+`docs/status/PUBLICATION-VERIFICATION-2026-09-09.json`.
 
 The export preserves complete bytes for every included file. Imported artifacts
 and the capsule are marked `-text` in `.gitattributes` because this checkout
@@ -65,11 +66,16 @@ packages, but their integrity records refer transitively to a wider source
 closure. The capsule closes the latest spatial-clock-energy seal's declared
 `1,256` input and `415` output entries: `1,409` unique source paths,
 `154,538,343` bytes when role duplicates are counted, and no individual file
-over 5 MiB. The capsule also includes the seal and immutable resume snapshot.
-All declared closure paths were found locally and matched their declared
-SHA-256 values before export. The capsule does not include third-party Python
-runtime dependencies or prove the scientific claims; use its `README.md` for
-the source-root restore/run contract.
+over 5 MiB. The capsule also includes the seal, immutable resume snapshot, and
+five runtime-dependency files required to import the derive graph, for `1,415`
+unique capsule files. All declared closure paths and runtime dependencies were
+found locally and matched their declared SHA-256 values before export. The
+derive/import closure is therefore present, but the seal phase is not
+self-contained: the mutable `CURRENT_LOCAL_RESUME.md` and sibling
+`formalization-workbench` path checked by the sealing script are intentionally
+omitted. These exact omissions block a standalone seal rerun. The capsule does
+not include third-party Python runtime packages or prove the scientific claims;
+use its `README.md` for the source-root restore/run contract.
 
 The dated catalogue README and shards are navigation indexes rather than
 source artifacts; they are intentionally outside the inventory to avoid a
