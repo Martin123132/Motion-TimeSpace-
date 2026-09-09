@@ -52,6 +52,36 @@ provide direct links to every checkpoint, script, and compact residual.
 - [Residuals items 5751-6000](residuals-items-5751-6000.md)
 - [Residuals items 6001-6098](residuals-items-6001-6098.md)
 
+## 2026-09-09 Publication
+
+The dated shards below cover every `published_path` in the 2026-09-09
+publication manifest: new checkpoint and script exports, curated functional-RG
+artifacts, reader-facing notes, sealed own-result packages, the reproducibility
+capsule, and publication documents. The catalogue shards are 300 rows or
+fewer; preserved legacy folders above retain their historical layout and may
+exceed 1,000 entries.
+
+- [Publication items 1-300](publication-2026-09-09-items-0001-0300.md)
+- [Publication items 301-600](publication-2026-09-09-items-0301-0600.md)
+- [Publication items 601-900](publication-2026-09-09-items-0601-0900.md)
+- [Publication items 901-1200](publication-2026-09-09-items-0901-1200.md)
+- [Publication items 1201-1500](publication-2026-09-09-items-1201-1500.md)
+- [Publication items 1501-1800](publication-2026-09-09-items-1501-1800.md)
+- [Publication items 1801-2100](publication-2026-09-09-items-1801-2100.md)
+- [Publication items 2101-2400](publication-2026-09-09-items-2101-2400.md)
+- [Publication items 2401-2700](publication-2026-09-09-items-2401-2700.md)
+- [Publication items 2701-3000](publication-2026-09-09-items-2701-3000.md)
+- [Publication items 3001-3193](publication-2026-09-09-items-3001-3193.md)
+
+The prior `publication-2026-09-09-items-3001-3188.md` and intermediate
+`publication-2026-09-09-items-3001-3191.md` files are retained as historical
+pre-correction indexes; the active links above are authoritative.
+
+The authoritative source-relative mapping is
+`../../docs/status/PUBLICATION-MANIFEST-2026-09-09.csv`. The latest seal's
+role-level dependency map is
+`../reproducibility/20260909/CAPSULE-MANIFEST.csv`.
+
 ## Integrity
 
 The dated publication inventory at

@@ -1,0 +1,35 @@
+{
+  "checkpoint": 5455,
+  "created_utc": "2026-08-30T14:21:19.634599+00:00",
+  "decision": "AGGREGATION_ONLY_SCHEMA_REPAIR__NO_NUMERICAL_JOB_REEVALUATED__FULL_CERTIFICATE_REBUILT",
+  "trigger": {
+    "failure_type": "ValueError",
+    "failure_message": "dict contains fields not in fieldnames: 'superprojection_epsilon_width'",
+    "stage": "final summary CSV aggregation after all numerical jobs were committed"
+  },
+  "pre_repair_state": {
+    "atomic_work_json_count": 85,
+    "failed_marker_count": 0,
+    "last_committed_job_id": "E08__U060__em1__s0000to0000of0001__x00"
+  },
+  "repair": {
+    "csv_field_policy": "ordered union of keys across all summary rows",
+    "payload_normalization": "superprojection_epsilon_width is now written on every newly normalized payload",
+    "numerical_evaluation_changed": false,
+    "numerical_job_reevaluation_count": 0
+  },
+  "post_repair_state": {
+    "aggregation_mode": "status only",
+    "completed_superprojection_job_count": 85,
+    "passed_superprojection_job_count": 85,
+    "certified_source_projection_job_count": 2074,
+    "certificate_failure_job_count": 0,
+    "exception_job_count": 0,
+    "failed_validation_count": 0,
+    "valid_for_correlated_inner_Q_full_cover": true
+  },
+  "valid_for_full_event_cell_finite_cover": false,
+  "valid_for_D4_event_local_W3_bound": false,
+  "valid_for_all_operator_local_GR_claim": false,
+  "valid_for_full_MTS_claim": false
+}

@@ -1,0 +1,4651 @@
+{
+  "state": "complete",
+  "started_utc": "2026-09-09T09:43:16.517662+00:00",
+  "script_sha256": "240903791d5541f3ac39087e51c27a164e965289fe56872d75a4b7c027301e7a",
+  "inputs": {
+    "source-intake\\navier-stokes\\20260909\\annular-compatible-current-restoring-source-derived\\status.json": "6bcacc2d786abf343a09a9a00e9e20d8842d959f52c77dc85766eb59ece483fb",
+    "scripts\\derive_annular_compatible_current_restoring_source_20260909.py": "4a69dac57a708c85443008761f50ab41ca9cea5b0936382c4ad58d9408b85559",
+    "scripts\\sbp4_compatible_second_operator_20260909.py": "86c6f05f7cf0a07abe9d4caa5ca1038b9f64641085a1a4a4f03aeae3ac918a3c",
+    "scripts\\sbp4_derived_operator_20260909.py": "065ea0be52b651d742082230fe8322a367e11fc5e20150c8f3d506d1f87e77d3",
+    "scripts\\annular_volterra_source_completion_20260909.py": "158ec29d76d4b9de73065697ebc3a91b04377f718c8aa85e57e6a84bac818106",
+    "scripts\\annular_coupled_current_time_jets_20260909.py": "0622610d2da611e066aff45e42e03675eb57b2099eda7bfff1ac711c3d67a95b",
+    "source-intake\\navier-stokes\\20260909\\sbp4-second-derivative-derived\\status.json": "7bceb95a043ac8055789a785b8906177c5b912768c32a3007aea94d3f7cb8fe5",
+    "source-intake\\navier-stokes\\20260909\\sbp4-operator-derived\\coefficients.json": "973a0cee5f2006c9d0bfb6c4f9e14af9e4c5a83a708005257ab1095091314ae1",
+    "source-intake\\navier-stokes\\20260909\\annular-current-driving-and-passivity-qualified\\status.json": "07671f8494d3642079643de1264a24cd8fa8ddcedbe89425f99344e4b7042f88",
+    "scripts\\derive_annular_current_driving_and_passivity_qualified_20260909.py": "3935fec80ac47b1edb95c9ffb7221e85147a4d4a70c316d0282b127f241918c9",
+    "source-intake\\navier-stokes\\20260909\\annular-current-driving-and-passivity-obstruction\\status.json": "eee7e1659813b4b13c1dcf8a84c133949d1f7756202a6172b2f572fd9182c6b7",
+    "source-intake\\navier-stokes\\20260909\\annular-current-driving-and-passivity-obstruction\\executed-script.py": "ce71bc8e9581d7ac09b3c88dd44949a667a5d36b42b0269700fe9b3b64d33b88",
+    "scripts\\derive_annular_current_driving_and_passivity_20260909.py": "ce71bc8e9581d7ac09b3c88dd44949a667a5d36b42b0269700fe9b3b64d33b88",
+    "source-intake\\navier-stokes\\20260909\\annular-mass-bulk-parity-channels\\status.json": "288b2488f8985c36d9c1f64416111211ce0e8639949f2839f695c7cbf3ca22bb",
+    "scripts\\diagnose_annular_mass_bulk_parity_channels_20260909.py": "8ec215a4a800ec4537b4397db08cf9c721fcafdfcc5020ef63bd4572e344d49e",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-matched-comparison-portable\\status.json": "b3b1d9738c09f21bdc6a18f06dfba16d56f980bafa43334630c9fa846266b3f8",
+    "scripts\\compare_annular_projected_volterra_mass_repair_portable_20260909.py": "2bd1201dbfc807563d32ab19af0c1d59eadf7900475877e2ed939605bba66244",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-matched-comparison\\status.json": "0dd435776338e73486f6dffb0052703d98399bd220dacce5546a392a213c7c82",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-matched-comparison\\executed-script.py": "bc1b2b5d4e913e0ff2da8b571b56f806fd8e2a19c86e9fdd4e323f648712f084",
+    "scripts\\compare_annular_projected_volterra_mass_repair_20260909.py": "bc1b2b5d4e913e0ff2da8b571b56f806fd8e2a19c86e9fdd4e323f648712f084",
+    "source-intake\\navier-stokes\\20260909\\annular-trace-regularity-lower-bounds\\status.json": "3bb731b77039a4f1a39908f882f93bf01e05b36efc236fff76e5d9f59b4637da",
+    "source-intake\\navier-stokes\\20260909\\annular-trace-regularity-lower-bounds\\executed-script.py": "3a330b59b854c2615c0c0e0128ed5a79d2c9e781b532b2df9088f3757ae4daa8",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\status.json": "30f1537a71b1a0375cb2422956f4e4005aea547e99aeacb0dbe27cc94db7d120",
+    "source-intake\\navier-stokes\\20260909\\annular-normal-constraint-H4-diagnosis\\status.json": "1a0a972c3c32c12fba8b9b5aecc916945cc97cf47369aac53c15bef540f8edc8",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\executed-script.py": "980b74839be27757678ecd26d1e64ce91d22a390863248f6819b172a6c4685f9",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\status.json": "80ecaa81956bdb745a88b0dfc2f556f416027232ce15d11081c7b1c423054d30",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\executed-script.py": "272b666fec41e8882d6db8198200537928851c5e36e961c89fc35cc7ae37a726",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\status.json": "21f1d122fbeb933d31af3b5168fba9fe905f31a73e55483968e9af4b58822020",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\executed-script.py": "cc70564b11d4481839b436d07703cdcba8956ae90cf2bddb821bff2bd33c6662",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-reduction-broadcast\\status.json": "881da914115e43662e8ed9c6d367b79c0ee83644e64f7386b974abc90fd2a949",
+    "scripts\\annular_coupled_current_operator_20260909.py": "20e5c31f4bce2b401b11ad5e55e2cf8f9e75519b2c84557e9378ddc0bd8504ba",
+    "scripts\\derive_annular_coupled_current_reduction_20260909.py": "180b742c6daca65d523cec1ea7cf134a4c8a5c54a25687b8fc7f9f0deefd05d1",
+    "scripts\\annular_coordinate_evolution_operator_20260909.py": "cf884d6a6df0e0c9c578248bbff7ebf16011aad051a018350d9ab31c40bccbd2",
+    "scripts\\annular_evolution_operator_20260909.py": "3955c8fdf7eda801ced7d0eeefa21be6e3267f6056178664b3015c047933aed8",
+    "scripts\\annular_conservative_scalar_evolution_20260909.py": "9ed4c615b2a144ed461808747f6c80512baae6c0bac25163fbdbfe1e15198c2b",
+    "scripts\\annular_noether_completion_20260909.py": "1bcc72f03e3bd99859c8bdcb4ed55f064775d71673f68d7bb92601da61c4cb6f",
+    "source-intake\\navier-stokes\\20260909\\annular-constraint-correction-initial\\canonical.json": "6e24704a5834702cbbd1b8379dcb621cc074948a9dc81c9c80709df30425644a",
+    "source-intake\\navier-stokes\\20260909\\annular-constraint-correction-initial\\nonlinear_modulated.json": "39a36d33cabf877b4574692e5a15a5245af834eefce3cffd68cffe5296c4c222",
+    "scripts\\run_annular_coupled_current_correction_20260909.py": "cc70564b11d4481839b436d07703cdcba8956ae90cf2bddb821bff2bd33c6662",
+    "scripts\\annular_continuum_initial_data_20260909.py": "7ae2b3489dd715780daf17d652fecc45c50165f638c46cf825d1d1f0cac0491b",
+    "scripts\\annular_boundary_preserving_completion_20260909.py": "88532e07986f620a1211b568c7a7d28dcc7f3961e47b5123bcacfe4d8c8e63dc",
+    "scripts\\annular_noether_source_projection_20260909.py": "ce89734bac822e9d507d013ff30c987e97c5d75d27ecd321322b5175a100b076",
+    "source-intake\\navier-stokes\\20260909\\annular-analytic-third-corner-initial-data\\status.json": "9c22536e38bf8479419a1ec526c0f7a3b688bc65d050f56e905c1b57b763a79a",
+    "scripts\\annular_third_corner_initial_data_20260909.py": "ac6f3ef627a88496a7639bc8dacfc08583052f8c2e22ba5c80ca21845a8ad480",
+    "scripts\\annular_analytic_corner_jets_20260909.py": "fdb1b59a03d37cce85de443cfae9c2a246d829e9716251b6d942fded15bf40ea",
+    "scripts\\derive_annular_analytic_third_corner_data_20260909.py": "819278bc5dd3b6f0781413a6cc2042c3055a65dede06d5a1106e3a53bf7ae5b4",
+    "scripts\\annular_fifth_order_jet_20260909.py": "02db75655f95f3d64fba5246b7d7eca9ab4cdba35cc5b3aa0cb8be53072814ef",
+    "scripts\\annular_second_corner_initial_data_20260909.py": "ec895bc2d29b5191d684d11ab4373d91feca7acdfaf8b97b715b30b117eef807",
+    "scripts\\annular_current_corner_compatibility_20260909.py": "bd7515936a8bc0f062519ac38881c66ea9f40cc93acee56eb5afa2b607528d07",
+    "source-intake\\navier-stokes\\20260909\\annular-second-corner-truncation-diagnosis\\status.json": "ec2d7da1e7c6c04687189362b91bce41305af20816c5e37562e87e6e6d1c10cf",
+    "source-intake\\navier-stokes\\20260909\\annular-second-corner-initial-data\\canonical-degree64.json": "c6403afcede88ccdf08664072f5a3dcc4f4ac609f9fbecfb5dcb2144d1e8cbb4",
+    "source-intake\\navier-stokes\\20260909\\annular-second-corner-initial-data\\nonlinear_modulated-degree64.json": "c0897535cd59a37b3ad69f03b7db1d1d0f8b2407b77e573c0ff6754b80e71998",
+    "source-intake\\navier-stokes\\20260909\\annular-analytic-third-corner-initial-data\\canonical-degree64.json": "fe232378a70a9ac9d328c750fffcc8bfbd16ddfe8e4062c321bcc05b7ef662cf",
+    "source-intake\\navier-stokes\\20260909\\annular-analytic-third-corner-initial-data\\nonlinear_modulated-degree64.json": "9772d01c0514176c10ee762220acbcaa95f4341f4d63dd0073c9d214a39696e5",
+    "scripts\\derive_annular_coupled_current_time_jets_20260909.py": "272b666fec41e8882d6db8198200537928851c5e36e961c89fc35cc7ae37a726",
+    "scripts\\annular_correction_time_jets_20260909.py": "ec5decfa95ad31a42908801d3e98002ac70d04b1e1b19636ce699f4a6cff5e9a",
+    "scripts\\navier_stokes_source_audit_20260908.py": "817c4cdff5bf22a88deea7771b4bbc960690397512bc07cdb639ee9ab33e4f0b",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N128_dt1_T0.1.npz": "c1256753a985a3acd464ec9698d949ead2aea8656b5e781be621bb2b580107b1",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N128_dt1_T0.3.npz": "e9fb136c2fffbb4b8e368ff8f035f8184e035e540f3fca2eb7b01f785e080fc7",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N256_dt1_T0.1.npz": "1e84fd16a7ac0f290610aae32a1fa5ad9be568949e28ad5f5d674cc635cd13a7",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N256_dt1_T0.3.npz": "5db7cda772ec2d61917c400da8cd7e86bb1ce4f242a7dc7dc4f33da03c840d95",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N512_dt2_T0.1.npz": "cbfafb567aa71dc6bba30f8e5f03952509bee3ec1867da0a5c1f880f1e5519fa",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N512_dt2_T0.3.npz": "8c927efc64a7f7e2d7034b58e627fb29bd27d3230610272ba3ac511ce2030d78",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N128_dt1_T0.1.npz": "614f9586a008541b86147f8ece40c2ac80033fff24f7c33d8dcd383b22abec3e",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N128_dt1_T0.3.npz": "13a11854d8b8414d9bd42e6137f3de867d3670428bb673090b00523c2aa86e85",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N256_dt1_T0.1.npz": "59bb2e53fc99dce96580fd1276199edbf5d3dc59d79edb7c67f3ee51ecb0a524",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N256_dt1_T0.3.npz": "54376c906efebb1eb3667d2984e7ef6977078e93cda97b54862a4fc4c1a3da3d",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N512_dt2_T0.1.npz": "d83270ac8f8186dc1dc41890fe5169ea62d9e9e2d476b3328c5911e3d6c68d55",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N512_dt2_T0.3.npz": "229e310052f3eb45ea8c2b89ff33b8a4537a0d1f0f0e2443b20fdf31914e00f5",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-curvature-transfer\\status.json": "3c6716ac3cc3025c14c411f03c61dc3717b6e2e1551ee042d3e4b60dd08c8ae8",
+    "scripts\\annular_current_normal_reconstruction_20260909.py": "a99bf58d7267416f74b8b95f7ec1b5c691fd7074683bb1616cfb81676563e9af",
+    "scripts\\derive_annular_current_normal_reconstruction_20260909.py": "980b74839be27757678ecd26d1e64ce91d22a390863248f6819b172a6c4685f9",
+    "scripts\\annular_coupled_curvature_transfer_20260909.py": "271ced21b5857d8a87229d16af768d3d14ee071b76905c82607c41c7c93b262a",
+    "scripts\\annular_curvature_timejet_transfer_20260909.py": "5b07d93df2021227f3b04a471d7cdf3ebe616fc5abd65731f8ec58bff8315b74",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\canonical_N128_dt1_T0.1_time_jets.npz": "b4fb8237f6b9610ab203d829ad1a066f6932cae9ed7a723d646b3a30590f4a1e",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\canonical_N128_dt1_T0.3_time_jets.npz": "abcd7c59e78516a554d67d2d10a766812dc92a1f562400ffb0737c2587f448fd",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\canonical_N256_dt1_T0.1_time_jets.npz": "a58f9065dbfc39438049250b6823ce20fea3d5d5129b76a1e5d988a401976f14",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\canonical_N256_dt1_T0.3_time_jets.npz": "1c4e8307973e74840ef2914057a6bb3cbff813f5c7f1bc15a5f8b33b48e2b9f6",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\canonical_N512_dt2_T0.1_time_jets.npz": "f78b2fb09e0a16d06ab4d6eadf64d7077440e75d11d0be643aaaa772ee28da8f",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\canonical_N512_dt2_T0.3_time_jets.npz": "e0862ebeb9dc348f6e9a40e358ae8bdf18bac9d47b730ef13299a1ca503b7606",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\nonlinear_modulated_N128_dt1_T0.1_time_jets.npz": "424142e1657ec5a90432bcd2a8836198f8e95f8fb6389b2777422b7169862894",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\nonlinear_modulated_N128_dt1_T0.3_time_jets.npz": "2a4c9b48f8685800feeee0b8e991445d481f0d090c6d56d3007e36d1d3406e26",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\nonlinear_modulated_N256_dt1_T0.1_time_jets.npz": "30e2c8dfdd7a9c5a735450c62c9a46759de58fd12cc192a2b3d75a3624dc4f69",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\nonlinear_modulated_N256_dt1_T0.3_time_jets.npz": "49c079750552b3350e1cc33e47ba584b755c7e239c2f27ab3f0853359737783e",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\nonlinear_modulated_N512_dt2_T0.1_time_jets.npz": "942f760b3df11f54998f2419d624414acf8ebe6609e4fbe4b48ebf2cc0c295f0",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\nonlinear_modulated_N512_dt2_T0.3_time_jets.npz": "bdc45988cbebdca8cf69e5c3ab1250abb439c9b7871bc6967ec23072c82aea22",
+    "scripts\\diagnose_annular_normal_constraint_and_H4_20260909.py": "4ae9434f2d3990bbb4f14303ce52e3d29ff00f9bb28f3e2c933180f6f644a650",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N128_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "adf288606b787bd05e51fd3dc66c49b67cd28ff489781b8a55227a570e99e02c",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N128_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "cb2de5e6196e70de2d5a50593476d29f7033a19a87acb3a7ebdc272c769b3fb4",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N128_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "cc07cf182f8ea85e552397fb9835f6e4fbddd5ee2e044a520f34643891ddd227",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N128_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "d672e4649d7433fe8c4eff9392ecbd1ddb28a27b648f4be06876f166a78370ed",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N256_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "5b9f3ebb98e46edb6f719aa0b31b1a8cac88caf2256672ac619dbbeaa50573f4",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N256_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "cad0ffcae50a21c86d77a01780a9a8e353c01249f1881e4b2ac323c222afabc6",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N256_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "ca062239f32ab24506c7c704827f509e72688425a5b4efe242a7ddf42ac214e5",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N256_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "48315d5af1c371b7c27022608b5ff8b1fba5635df63801c5149b9864c4023d7c",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N512_dt2_T0.1_time_jets_poly7_normal_curvature.npz": "5b0c1df82558dcf90ef5dfcf97eb5e1ced56e0ba1ec5b82c31d1ad657234f155",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N512_dt2_T0.1_time_jets_poly9_normal_curvature.npz": "6b49bf445dd60c254c9ab61a19b27fc3450e27c3cad67b878fde2fc002356a8d",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N512_dt2_T0.3_time_jets_poly7_normal_curvature.npz": "4468e7c05099dd2b6c6717030b5c1dfc6b7045cd30591fdd8b6c6c1488f3b7d8",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N512_dt2_T0.3_time_jets_poly9_normal_curvature.npz": "6935c9f311daa480bdc48a509d8c0ee39264721a277299f5f72ab7ecfa457eaa",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "085cc504ca09b4fc010b65a328db86fd1a9835ef3568bf12d87e6cbd4eb07230",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "bec4f0c01453a16caf408935d6c5ad9f6c761561443491baf9dc6a87a36958ea",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "6dc4d9e2e6f01a3d08ae97e5b2d27f9d842d5b15a247b1e18e8542080b023104",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "6a29cf4eab9422cc04c4f2bb693ddadb95e49dfd9ba5d876f81acc826b16c7d0",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "4b376aa628d80cedfbf5e2777c842ecdb27de5216110caf7984113e8cc767432",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "d0de7b843b001869a49561d36176d8d07016f7c38b5b0dccb61208475fe002f5",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "18cb4b1aafed9c2dc137b3c2b98628105efcf3e26e03287b8364a04b98dc6c57",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "9ff60c328cf3631a83c9c839e596d3de301644710d615f57dc03c5b83c6985fc",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_normal_curvature.npz": "6f7d13f51c1e5acc6168565b674b594e144905918eec21c5bcb008d9da914b67",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_normal_curvature.npz": "eee90f3aeb0c6a9e810dfb8fe45ddbb9acc5745edb407d65e204e3596566f733",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_normal_curvature.npz": "6a4bcb7e23d3d667080500318d33a74131dc8c37c54dd9b7b224682b352e1641",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_normal_curvature.npz": "85f46952ada2adeb39f942880f1d19e89c62d4af99fde5deadff044f4e0b9096",
+    "scripts\\derive_annular_trace_regularity_lower_bounds_20260909.py": "3a330b59b854c2615c0c0e0128ed5a79d2c9e781b532b2df9088f3757ae4daa8",
+    "source-intake\\navier-stokes\\20260909\\annular-centered-constraint-mode-diagnosis\\status.json": "2632a60dd6fd39c2d1b9fdd9a81d82dfd4a571197440a256f44b9c8c76777229",
+    "source-intake\\navier-stokes\\20260909\\annular-centered-constraint-mode-diagnosis\\executed-script.py": "512c6a5d1ae1b80a62bbb7c80b861e9d9ecdb5b030a29ca928af24562707f72e",
+    "scripts\\diagnose_annular_centered_constraint_mode_20260909.py": "512c6a5d1ae1b80a62bbb7c80b861e9d9ecdb5b030a29ca928af24562707f72e",
+    "source-intake\\navier-stokes\\20260909\\annular-normal-spatial-refinement-validation\\status.json": "0dca9b34cebfb94e44c0972d49e96f6f804b8bd713788a9fbd592686b6d6d690",
+    "source-intake\\navier-stokes\\20260909\\annular-normal-spatial-refinement-validation\\canonical_N1024_dt2_T0.1_poly7_normal_refined.npz": "1bcfe53684cfec44e40c61bca04c5a0c03e345a25fc7fee797bc37ebb003ea84",
+    "source-intake\\navier-stokes\\20260909\\annular-normal-spatial-refinement-validation\\canonical_N1024_dt2_T0.3_poly7_normal_refined.npz": "3ceb193bed707a2a4754f3447964e57540c51cac46ea41474444be3dedbf2058",
+    "source-intake\\navier-stokes\\20260909\\annular-normal-spatial-refinement-validation\\nonlinear_modulated_N1024_dt2_T0.1_poly7_normal_refined.npz": "a0da611982d5d0025524cca01a48fb80d42b3b8e03b26957acc99e11a8388df1",
+    "source-intake\\navier-stokes\\20260909\\annular-normal-spatial-refinement-validation\\nonlinear_modulated_N1024_dt2_T0.3_poly7_normal_refined.npz": "488afd9b9caa68e8d98043539f5f907eae5b92b055f8ab81527befd0294394d3",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\status.json": "dc70c8d9a043a8c5dd2cf0a70324c794fbb6db418e7287f3f7d75a679cee6aa7",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\executed-script.py": "f8a26c38188546032e37c99ec899a4502253ff448d723912db29e2749e0c693e",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-trajectory\\status.json": "2bac6c0b21f82084f2ad1c1795746d22a75978ca2fd25e53ed51e68c60c6fc63",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-trajectory\\executed-script.py": "a5237a143fd49f074e9f2241f1eb4323ed11d8399b5be646b4c416ed85ba9d1c",
+    "source-intake\\navier-stokes\\20260909\\annular-volterra-source-completion-derived\\status.json": "b558693445fea0bdb35b7911861e492421ded53881e13e6d110577bc0754b86e",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-correction-refined\\status.json": "d6d0c133d38b9a1d8b41f288156e95a0522b6d84cd83d3e628cfb4e48330184f",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-correction-refined\\canonical_N512_dt2_T0.1.npz": "9f636588c1f462c67a294034eeceac2c908a0d3ef1c62ab5943901908cfa8fc2",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-correction-refined\\canonical_N512_dt2_T0.3.npz": "d57503c78ef5945e3f33717cf18a0534af34d1f59625615097154706b63ec129",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-correction-refined\\nonlinear_modulated_N512_dt2_T0.1.npz": "e96d5a18cef4df13d225d1b200e21819dc2b0e4af6167346258d0ac599bf4c93",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-correction-refined\\nonlinear_modulated_N512_dt2_T0.3.npz": "9809dbe43f01c4c6bdcb47ec05ffc95fd4b1c1c43996fc96c1ae7402f2ccb033",
+    "scripts\\derive_annular_volterra_source_completion_20260909.py": "b55b7ca628218d373a475f581ef46deb2b8c25f6478e37f2898d86e819e5cc76",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-third-corner\\status.json": "fe41ae8828d19d43f0ca42c00182b579912196c1dde232a29dfd73733d97fe91",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-third-corner\\executed-script.py": "d15ecdfe6cde56fee0a21f5203d79e14126c3a6738b57e0124fdc372059115b1",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-preflight\\status.json": "f8d6d0d1c5553b26a433ddb5e29c300c819843bed5622df717fd044460ce1aa6",
+    "scripts\\annular_projected_volterra_source_20260909.py": "2fa54d4cbd5814d5efcf3faa2c00e13f21bf0f935de0528afff8be7b9cb36fd5",
+    "scripts\\annular_projected_volterra_time_jets_20260909.py": "781cf3dacb4031df3c75806a301a16dc5e7b954f18363be9310965a0ce2362d0",
+    "scripts\\derive_annular_projected_volterra_time_jets_20260909.py": "5cd889f58f60387dbc354075920756c9cb56db45efd31109c895fd4be530899e",
+    "scripts\\replay_annular_projected_volterra_time_jets_20260909.py": "a5237a143fd49f074e9f2241f1eb4323ed11d8399b5be646b4c416ed85ba9d1c",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-third-corner\\canonical_N128_dt1_T0.1.npz": "4d507cb0f3acb2995d04a6fd4478688010e39f87ae3a02dd1c37fa3816e23bfb",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-third-corner\\canonical_N128_dt1_T0.3.npz": "cfe81a36d9d4f0cb3ea56fac5552b1c78faffa9050d74cadf38b99f47f3c519e",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-third-corner\\canonical_N256_dt1_T0.1.npz": "6d75f47f3cf9ce2e02a78fd3f1b4c5a6d5f81a421b4e1ed5c004e8c9fe5cee88",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-third-corner\\canonical_N256_dt1_T0.3.npz": "3c4183c051018f204fd101b159fdfc874a08a0225ae9c6170418aea4400999aa",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-third-corner\\canonical_N512_dt2_T0.1.npz": "8b21a9c6cd9ef524fb925d9f32e7ce73c1b59030dd90e12ff32b290323905270",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-third-corner\\canonical_N512_dt2_T0.3.npz": "9307691c46cefd91f6246b6821f803feea2b40f4d0dfda375f5168db7be11b6c",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-third-corner\\nonlinear_modulated_N128_dt1_T0.1.npz": "81bdb4c617281b57efa571ef57eff12028da0200db91a2df9bd3f3b5f8bb11f6",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-third-corner\\nonlinear_modulated_N128_dt1_T0.3.npz": "0d5750fa0cb564b1fd457c32cc069cdef5f6578d4cfe891610afa2372b0cbf9d",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-third-corner\\nonlinear_modulated_N256_dt1_T0.1.npz": "2c2e6afe648423e01a7edf55cb20af4d345f4809c8699471bab21e2d14ce47e4",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-third-corner\\nonlinear_modulated_N256_dt1_T0.3.npz": "bd1cd8cb7ab26c228d9c3de59845d96e0f66820d42eefec40a53709664d21e0e",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-third-corner\\nonlinear_modulated_N512_dt2_T0.1.npz": "9d76e7bcb40faf9c5d136f6018c7056930d8eeb6e9edfe12e78b287d975a9784",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-third-corner\\nonlinear_modulated_N512_dt2_T0.3.npz": "21663f7a8e670e584f69084f6d296062048d2772575533b1b370a366877d98e9",
+    "scripts\\derive_annular_projected_volterra_normal_reconstruction_20260909.py": "f8a26c38188546032e37c99ec899a4502253ff448d723912db29e2749e0c693e",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-trajectory\\canonical_N128_dt1_T0.1_time_jets.npz": "ed6d9ad1a303d531268f88889781b98d00086f14e0b3090f329580ff9793924a",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-trajectory\\canonical_N128_dt1_T0.3_time_jets.npz": "665e45d5f0b1bab0fc216dbed148f0a901cd72b491208ccc9a0108b7f355e0a0",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-trajectory\\canonical_N256_dt1_T0.1_time_jets.npz": "d7f4fdab0aa9408b59ba6a42bd1000a6035b160923e3eadd65318ff94004443f",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-trajectory\\canonical_N256_dt1_T0.3_time_jets.npz": "f00abcd2802c61f7324098fabe5400a086a4e13b27626e9535f1af5c640c451a",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-trajectory\\canonical_N512_dt2_T0.1_time_jets.npz": "9d3e2592b313d8f719aa2c0bfa1ab56d71f386bb1fbfe2ad4824cae4c07b0bff",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-trajectory\\canonical_N512_dt2_T0.3_time_jets.npz": "52607914a9adc4ddda003f3d34577a58d824cbe509c8e3778d895c643c77e5f4",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-trajectory\\nonlinear_modulated_N128_dt1_T0.1_time_jets.npz": "03daebff11a678fe406c5f4b7517e88aca621f3b2e68af94c2697beefd7f3a4c",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-trajectory\\nonlinear_modulated_N128_dt1_T0.3_time_jets.npz": "eb6f2cb6eee3fe443d00b87b0fcca9e5110a43ff2a81b856b7021fec5475d7a4",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-trajectory\\nonlinear_modulated_N256_dt1_T0.1_time_jets.npz": "a1ff1950f9837993349e8800c4c5427146cd196cebb1fd7b790a03d78372eb11",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-trajectory\\nonlinear_modulated_N256_dt1_T0.3_time_jets.npz": "63a8e76a3f6618bbd41a28c5e34780790fed1b7e2bf1b2fac9f163429eb02026",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-trajectory\\nonlinear_modulated_N512_dt2_T0.1_time_jets.npz": "05d1d525b7a49dc94203d083899d23e29eed7cd42680df52aeb2005dcf154d9b",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-trajectory\\nonlinear_modulated_N512_dt2_T0.3_time_jets.npz": "498413568f7cb94e9b74436bfb1c08ea89d2ba07ffd679138a38821a9614da4e",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-preflight\\executed-script.py": "5cd889f58f60387dbc354075920756c9cb56db45efd31109c895fd4be530899e",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\canonical_N128_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "39949779060816129d1fb2e9a8f68bc1bc07eed07d5160b4632bc4bac439a55e",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\canonical_N128_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "520f028c85d071977f4099815566cd6eef50149f262e6ccc3b22c6e0f26e051e",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\canonical_N128_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "ba7ec95f70de81707f3a6558cd590af151dcd447a0a377f509096615aca0a4fd",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\canonical_N128_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "78a5abe543affcac4b7cc303c62ca4d8740460e060de7e767a41b501364bbb66",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\canonical_N256_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "006cee6ad6980c2a2780d5cf3f8a2d7c371f4274bfc9a0ad96f64fdc2dd7f3db",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\canonical_N256_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "a5178f8a36cb68e00be33153b1de31f9221bcd6545ed018fbf79b288e0b24bc9",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\canonical_N256_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "a06b3ee71d8adbbb47f0a9d1d8eaf332b942fe1bab112786114b731c12cf3ee5",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\canonical_N256_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "69f4806a00ee124861b9ed3c5fe9a0486c523287cbabac57d38f429b75cb6637",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\canonical_N512_dt2_T0.1_time_jets_poly7_normal_curvature.npz": "50ab9ce3f302e69129f8b63c1f8bcb8c51df728b6de81a8c8bee63a63531931f",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\canonical_N512_dt2_T0.1_time_jets_poly9_normal_curvature.npz": "2b756a56b6d30dbc394d20dbd952680df6eac33fbf2745a70476712e379a5055",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\canonical_N512_dt2_T0.3_time_jets_poly7_normal_curvature.npz": "0c1fcebe01303eb2de661f7ef43852ea7f219cc385a55a2911cf03051fd46de1",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\canonical_N512_dt2_T0.3_time_jets_poly9_normal_curvature.npz": "afea3f63a838c92ea7ddc184a470c494667462fabc6d227e910fb39d04adb027",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "9ca90b324becd79116e5c65d37fa61c4123779b20cefff158409438ab3cf47ec",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "05736f717208da5dbfe3b2dac5b96eaeff9d45322fb039c972953f95197d93ea",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "a889b52bd7b2c4a41b57f6841c76a65961583311899f4ef2cdf20261686c5247",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "f41bbd65adbc03a7764163d26889aabe9e760ce88485e00b1835aecf9213f56c",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "31a6620501d373c9f6dbe8bb620a262f46e7355b844a7e59a8bd6b94d6ef2d29",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "7cc9c3c0449f0f3ce249e8beadd92c18a459a5947a2437ab7702b01089316604",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "384d8601dc7f6cd16a65a45489002bcf6ceea6bda4ff79ef9397b677ed156d97",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "51ce05335b58337a116d9c8cfc0d1af99500f1cd0d7a4c815254e002facd5d7e",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_normal_curvature.npz": "13d868a9b531010587e515f19b279078ce5e60469f4fc5fecf245214f53b1ea0",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_normal_curvature.npz": "9c8fb12bca5df80e8f787b248b5e5dc1b7c2fbc565762ab089a8a94ba2f59dcd",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_normal_curvature.npz": "5b49a968d54a5407aa07ec2b0663be5c65d102e86c51bd32d41ae5ab6ecb4bf5",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_normal_curvature.npz": "c7fdc25f0e1f4a30f05221e1b1af2e3beae6e6bb1e4368cc658a32809644938e",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-preflight\\canonical_N128_dt1_T0.1_time_jets.npz": "a756d0014992f4919356cf01fcb1e3c133df2acf2ff6ee044576308daee9b7d8",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-preflight\\canonical_N128_dt1_T0.3_time_jets.npz": "93e3fbff32a14bf2065555d4adf7ab066b4e75ad745f4867ce47e226ef583fa0",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-preflight\\canonical_N256_dt1_T0.1_time_jets.npz": "5687ceb43970cdff5a9ab5f875f4fc0726b267870c67bae2c18efef7eb4431f2",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-preflight\\canonical_N256_dt1_T0.3_time_jets.npz": "bcec3786ce865a2a246a97980e5c3b758e48a9782aab5dbf29bf52d753f69394",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-preflight\\canonical_N512_dt2_T0.1_time_jets.npz": "f52e41bdc2e2ef049f7c417f17339bbed86c2cd3b87783f1388e38df62e26547",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-preflight\\canonical_N512_dt2_T0.3_time_jets.npz": "0b36dcea63ecd18ebb53383ce1d7d32fa0c6cf11521f767a3a408300c2d9d6fa",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-preflight\\nonlinear_modulated_N128_dt1_T0.1_time_jets.npz": "104555d27e619b2162594d1261afd4e02e5e1167c8490556ee0a9278f0c4c82f",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-preflight\\nonlinear_modulated_N128_dt1_T0.3_time_jets.npz": "8c31a9e1f38327e68f452bf93bb767831fc1a39034905fe006ec50aabe4dd4f8",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-preflight\\nonlinear_modulated_N256_dt1_T0.1_time_jets.npz": "985e451b5dcf9494190d1608c2d67d896d739875aa9fb58bdcc06886c7c96f4c",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-preflight\\nonlinear_modulated_N256_dt1_T0.3_time_jets.npz": "5e742d42ee2052d7997d41e13c9498699cff3a538d3bb34ea8cadc0ee48769b1",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-preflight\\nonlinear_modulated_N512_dt2_T0.1_time_jets.npz": "76506398076a7070644e8bb051df4a78ee355a900d40954009193d3d214f6b11",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-preflight\\nonlinear_modulated_N512_dt2_T0.3_time_jets.npz": "223f4ae9d91fa3ee7a3423d23f8dd04a147701e4882973f945606319187481b7",
+    "DERIVATION-20260909-compatible-boundary-energy-and-Noether-coupling.md": "cb678609bcca09b8c843f0f931ff7e0add55d2095b6d9856e330a1af3479fd3b",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-matched-comparison\\status.json": "ef04d1cd200d9f8679d8dedf78b5640cbfb05fce11dd72f0fd5e436965025080",
+    "scripts\\compare_annular_raw_volterra_C3_20260909.py": "3b7a3d7f5a244dc9e1cd1593f6e0f003c1248659fd5769e3dee63d0721963f2d",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\status.json": "62aebd63d119525dd2c02a9f096699206a8a3dbcfed3d5b7a05e63e63b9cf137",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\executed-script.py": "18d4e7e5b5ae746b9231d02e68675434c417acb77a340934a7512ade31a7ec7b",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-trajectory\\status.json": "a792ca0a5b6f73c29f534c723c997e0c95a6fb0fe8d23a9c2ac75577152446ce",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-trajectory\\executed-script.py": "bd8adf83bbf621f71331b5f4536287db5a176656ba445e5032a7e7691e75a0de",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-third-corner-raw-volterra\\status.json": "bbd731406298e17e2c1ff6966f6273a9d4dabb6d874e439e44453e4cc30911a5",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-third-corner-raw-volterra\\executed-script.py": "cc70564b11d4481839b436d07703cdcba8956ae90cf2bddb821bff2bd33c6662",
+    "scripts\\derive_annular_raw_volterra_C3_time_jets_20260909.py": "bd8adf83bbf621f71331b5f4536287db5a176656ba445e5032a7e7691e75a0de",
+    "scripts\\annular_raw_volterra_time_jets_20260909.py": "a4c90536db052483d9f3c6120e60d4072ea9e6331b4117be1f1910edfe2eafe0",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-third-corner-raw-volterra\\canonical_N128_dt1_T0.1.npz": "aa1acb8dadc9cb384f1b4186e485c7942d59b628ee3bd9f12a66b93446d8b254",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-third-corner-raw-volterra\\canonical_N128_dt1_T0.3.npz": "ea9ed6d2f56014228195a50faf8fc58c34af001c2d53991e5d7ad93a69eb6c2f",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-third-corner-raw-volterra\\canonical_N256_dt1_T0.1.npz": "dc130965d967bd650ef8691031fd1f28ed05ca149feb29cbd4ed6541fb407111",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-third-corner-raw-volterra\\canonical_N256_dt1_T0.3.npz": "74ed4a9087a9fbf0e8262b0c72be2525f9de14e8707fc94332cd1fd6ce7cfecc",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-third-corner-raw-volterra\\canonical_N512_dt2_T0.1.npz": "7232b495d5d896d6daae4537835b5a8e75f7c039f8865303417c024f71890ee7",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-third-corner-raw-volterra\\canonical_N512_dt2_T0.3.npz": "a53dc89d33c6cc8131ff58f2d88929ad1ab7432615d5a617e6e34a58b40a0a5d",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-third-corner-raw-volterra\\nonlinear_modulated_N128_dt1_T0.1.npz": "d50ce0fdaf6694331c45a93f2c2a1337ca22b5340656a3141f4086cd215efddf",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-third-corner-raw-volterra\\nonlinear_modulated_N128_dt1_T0.3.npz": "526e76eeb18368c627cc71e9161f5871b1c53b6ef354865bde4d27122c0db8de",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-third-corner-raw-volterra\\nonlinear_modulated_N256_dt1_T0.1.npz": "f04b1836fe88db1171cf184e78891e9684f2ce1f2a5bc1f33383d2280330b45f",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-third-corner-raw-volterra\\nonlinear_modulated_N256_dt1_T0.3.npz": "813c7fd838d67344d91f9d18ab32b02ed54b6803aa14820da2da70c18498110c",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-third-corner-raw-volterra\\nonlinear_modulated_N512_dt2_T0.1.npz": "b45101bfb0761249875a380094ad1656205b2eb913b4a52ddb672b827cb38843",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-third-corner-raw-volterra\\nonlinear_modulated_N512_dt2_T0.3.npz": "1f9d9378135814fa0d66c74974c878fdf81dfacfa5a45e7f1d2e94f1db43afce",
+    "scripts\\derive_annular_raw_volterra_C3_normal_reconstruction_20260909.py": "18d4e7e5b5ae746b9231d02e68675434c417acb77a340934a7512ade31a7ec7b",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-trajectory\\canonical_N128_dt1_T0.1_time_jets.npz": "ef50a73ba83fd575459a6773443edba6cb189fe95e0e97b59941ab820f14733c",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-trajectory\\canonical_N128_dt1_T0.3_time_jets.npz": "a42c8cfa86975dbbe4d66f0aa2ff09a6b9c0feb96af1d3971071fd07661b8ed5",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-trajectory\\canonical_N256_dt1_T0.1_time_jets.npz": "7bcb95018a54da68525765621c94bc9f64ca419091e8b950bbc8dd3162ce0358",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-trajectory\\canonical_N256_dt1_T0.3_time_jets.npz": "0917ba16db61c63e316da10df46bcd4d7b6d586d4c9c1770093a0c96922718ec",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-trajectory\\canonical_N512_dt2_T0.1_time_jets.npz": "af2e8ba102d5f2ac8259e10019247271cb928e484aeb416e0a01c0bef22cce24",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-trajectory\\canonical_N512_dt2_T0.3_time_jets.npz": "38ddb08053a1db907b89be0c23670c4ea0ba94d411b94c79f84706484f852a4e",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-trajectory\\nonlinear_modulated_N128_dt1_T0.1_time_jets.npz": "83a4c159a77282c55f37c4eea18bde4b56b1e626ac7926a14ef85b59c3ee3ac2",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-trajectory\\nonlinear_modulated_N128_dt1_T0.3_time_jets.npz": "b29eb7ab575fed053a37b791facccb410a630c8fcbf514e0098b16267bc1f2f9",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-trajectory\\nonlinear_modulated_N256_dt1_T0.1_time_jets.npz": "ccc7d727395cd06206b4d9fe8b5da7f5e8e045da02d937c6c7b778a55bc8bd58",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-trajectory\\nonlinear_modulated_N256_dt1_T0.3_time_jets.npz": "dbb39b0819c92afbb0a51a7bd500d1dce33ac497a636f1026023c4c1024b6beb",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-trajectory\\nonlinear_modulated_N512_dt2_T0.1_time_jets.npz": "a544f10644c260adf2348dd8bc1095b6c622cc267b9f6994ff34ccd4181f10e7",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-trajectory\\nonlinear_modulated_N512_dt2_T0.3_time_jets.npz": "0bbc7eef40284f38fbe05f6261f0b9bd5432923472354e77d4abab3977fe9124",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-preflight\\status.json": "01f4ffac140e829d3e3b13bc423c1e8283a35bf3a1405d10a9a05ac4ab0bc671",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-preflight\\executed-script.py": "bd8adf83bbf621f71331b5f4536287db5a176656ba445e5032a7e7691e75a0de",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\canonical_N128_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "71af23882b37b7732efb4f08fe4a8c5c8f5059aa89f213868c99e7af55f07971",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\canonical_N128_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "3f7c527af4f75da28d70dc3e8c38c37d90b69e032b0c515edb8bdb102b22e16b",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\canonical_N128_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "2187e2f6a9aea81caedbc1367c8a3d1b2205fd08b476799ccf6d12381ad36100",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\canonical_N128_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "bd5f9cd1649c0125a08ca59a794eddb478c54c211cfb4c388466dcbf11bcc8be",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\canonical_N256_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "037745e3deb9b5c0cc52118186bdc0e5a174a082827776857007eb2258e5be65",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\canonical_N256_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "a941881869becfeed4261cec04f49a051960491be3a91bea71bc9cdedfa06b29",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\canonical_N256_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "ad312b98bc064e61e7e7e89c9744f8e82142d5a9ffc3f9112104fe17c2dee3f4",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\canonical_N256_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "7f3a9e9c21c39a95fcc94200390d46f69aecb6b983657ea7e69cb1c8c5d97c06",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\canonical_N512_dt2_T0.1_time_jets_poly7_normal_curvature.npz": "cd4056558475c91addd589c2cf9bcec1e58c5500914ce22e029fdcdb19ac8ddb",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\canonical_N512_dt2_T0.1_time_jets_poly9_normal_curvature.npz": "d8fc024b2ef3fe027775d597761bfb1d05128ed422fbe1eabf33fc20b3ea0194",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\canonical_N512_dt2_T0.3_time_jets_poly7_normal_curvature.npz": "dd4582b878108c712539788211952ee2cdb455a662cac48d6a7c9fc0113d1177",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\canonical_N512_dt2_T0.3_time_jets_poly9_normal_curvature.npz": "ee95aa5793214fe4217cf3db29a8c335e120b1442514920c0a78231e721f8833",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "eb632fc8c455709b90483eceaf16add00a017db4020f9adf8cda87a104ead810",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "2ac76f0c9f905059da9b35a6beef5587126796dc2f08b82e004e21d854c478c0",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "35760bf38c76ae953214e30bb3749a3e237b094ca18372363259fc93f9e3fa30",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "3847103a33895040206da57ee04072bf54d260b615d2569015124b9c97cffc1d",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "138e7fe72e12a226a21f97d3536da820eac98d4374a988371b6a50d2d3f2cdc7",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "f775d9ece98c2db7b7e9b393a3558fee9dabeea29875aaa850c158b0651553de",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "73ad355dbb16fa59ddb76e32c1d0b63357f505aa6be77cabeb55fd70c29f8e34",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "a0c57eefed54dddff84166f0bf08b141976ea639aeccd1e3aa6469d274c9bbc6",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_normal_curvature.npz": "ed2ddf319f1faf94cf7c60a7e98fea9de0cb3617abbb45bd29dedb5cdb25921e",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_normal_curvature.npz": "00571390778c401fb195f8c046e45d80d3e8bc1351cca77c7536560c30229259",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_normal_curvature.npz": "3d2d8a977eb31937da2a27003e30fa474b62288db985e0294104ed68e1fdd5a4",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_normal_curvature.npz": "5257957adf8ddf444f8c28793fd8493792f44f42966532bddae7e89a100e0e87",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-preflight\\canonical_N128_dt1_T0.1_time_jets.npz": "700b2b756090d339d648fc771babb822c1d3e9613318ab87226387aa9796c534",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-preflight\\canonical_N128_dt1_T0.3_time_jets.npz": "c3471d54095128615b71ae1122816a06862f46878f5f4449b3bb249961a1222b",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-preflight\\canonical_N256_dt1_T0.1_time_jets.npz": "759b40cecb1b3bcf351b1cab58296e9f50d7173d5dca3262de596facb4fa7670",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-preflight\\canonical_N256_dt1_T0.3_time_jets.npz": "4a3c8bffcf69425ac3f03e5f285f842012700c0c3e26fd51b89309d72a515e1c",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-preflight\\canonical_N512_dt2_T0.1_time_jets.npz": "402233cc71aafac8794ec90efadc634cac5d3ed5f933af438d91e70299f8dfb7",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-preflight\\canonical_N512_dt2_T0.3_time_jets.npz": "7a06d1e199a32f7621344f40c5563d8e44d85c5923872378e2693362cd8de0e2",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-preflight\\nonlinear_modulated_N128_dt1_T0.1_time_jets.npz": "fd198b7b2471687ccb2abc964d786a00c545a9b9b6986e27b84ddffdaf48d708",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-preflight\\nonlinear_modulated_N128_dt1_T0.3_time_jets.npz": "6e570f8acd1ae53891ee8ac46268e4762d0b69206793e671be493e1eb18a4761",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-preflight\\nonlinear_modulated_N256_dt1_T0.1_time_jets.npz": "0eb5be20920f2c96776d362f6727e053f8a39c8a7ef2fbec8e5f78709508d6c2",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-preflight\\nonlinear_modulated_N256_dt1_T0.3_time_jets.npz": "afd72a3d1b5c5eba1e3b5831f6de258c8c4ba3a5f346b9358e20e357c01bc03e",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-preflight\\nonlinear_modulated_N512_dt2_T0.1_time_jets.npz": "61c7ae7b854e54d51dcd89f14907ff632691069706916a06a2c5104f5bf91bb9",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-preflight\\nonlinear_modulated_N512_dt2_T0.3_time_jets.npz": "38730a6c30210bee4881d2b4eda7f06168304225bc7aef56d5857182e8a6b24d",
+    "source-intake\\navier-stokes\\20260909\\annular-compatible-current-restoring-smoke\\status.json": "bbc54e848bd202b37f6b6b840f63a43294b94dc67ee6c523046b3e1cde8ba8b3",
+    "source-intake\\navier-stokes\\20260909\\annular-compatible-current-restoring-smoke\\executed-script.py": "edf0046dd6073b176185490cdd377debfa5f24d3270fff36a0f8e1584a5d87f0",
+    "source-intake\\navier-stokes\\20260909\\annular-compatible-current-timestep-qualified\\status.json": "20651f3a3f5fb973ed5cbe8e46b570c172648aea0f3e0632103ea3fdd59bcce1",
+    "scripts\\derive_annular_compatible_current_timestep_20260909.py": "245dad181bf8926ab5fc2270a1741eef3197f02256b40d721bb2665bbda6ce5c",
+    "source-intake\\navier-stokes\\20260909\\annular-compatible-current-time-jets-preflight\\status.json": "39726b79032cf4e621cdd623a4f38e5da8e55addcc0a54788572f3e842bda83d",
+    "scripts\\derive_annular_compatible_current_time_jets_20260909.py": "240903791d5541f3ac39087e51c27a164e965289fe56872d75a4b7c027301e7a",
+    "scripts\\annular_compatible_current_restoring_20260909.py": "c2e15990fb70e4e0587e63f8f0182831b0a4185003cdcd295db97af9027d4051",
+    "scripts\\annular_compatible_current_time_jets_20260909.py": "7196c06480d61c3c05acb00dff5795a61e284d0b7f7414d98c6298830a984ed9",
+    "scripts\\annular_compatible_current_rhs_20260909.py": "48cdf585d23f7d4b9f83d71cf91f2e09bfe93d76da362cdbc15fc104d7718a41",
+    "source-intake\\navier-stokes\\20260909\\annular-compatible-current-restoring-smoke\\canonical_N32_dt1_T0.1.npz": "abd7d8683ec89bba1b1f1285d36af8c26ea866d2d4cac215716ce539d499f9bb",
+    "source-intake\\navier-stokes\\20260909\\annular-compatible-current-restoring-smoke\\canonical_N32_dt1_T0.3.npz": "952683734d213a4cbe8492a4f29fd65a3804e9fa5d42f0de9737d706214eb7e6",
+    "source-intake\\navier-stokes\\20260909\\annular-compatible-current-restoring-smoke\\canonical_N64_dt1_T0.1.npz": "92216ebb1c0fd9c4599b4e2631d33bca36dcadbe3980b6585c65e6e927f59fc3",
+    "source-intake\\navier-stokes\\20260909\\annular-compatible-current-restoring-smoke\\canonical_N64_dt1_T0.3.npz": "a8e320d7fa32f0860886ef9ed29bdb406dce2b6e4f94a61faf871b0a5d892023",
+    "source-intake\\navier-stokes\\20260909\\annular-compatible-current-restoring-smoke\\canonical_N128_dt2_T0.1.npz": "f1a32355780d7032a1312860df15ec92d9647cf08b3d64706c4ae4a6ff24db29",
+    "source-intake\\navier-stokes\\20260909\\annular-compatible-current-restoring-smoke\\canonical_N128_dt2_T0.3.npz": "902b1a630444d3f397e32bdb84bbd6881b6bc4d845be3a55591ce0536c9992f2",
+    "source-intake\\navier-stokes\\20260909\\annular-compatible-current-restoring-smoke\\nonlinear_modulated_N32_dt1_T0.1.npz": "a74a116daf917487f08e7294f2679d3bd1a1cbea5d937cf885e311a7b45a6c8f",
+    "source-intake\\navier-stokes\\20260909\\annular-compatible-current-restoring-smoke\\nonlinear_modulated_N32_dt1_T0.3.npz": "6a2628a973b1889e228d7aa079ced679cfa21e77a818961ed54d6a1af2967feb",
+    "source-intake\\navier-stokes\\20260909\\annular-compatible-current-restoring-smoke\\nonlinear_modulated_N64_dt1_T0.1.npz": "8e8ae6f335de7bb4882ff9a7c65efd0bc6d1ede19e01f75ee270c26debee9b61",
+    "source-intake\\navier-stokes\\20260909\\annular-compatible-current-restoring-smoke\\nonlinear_modulated_N64_dt1_T0.3.npz": "bcd9264824952fba8e08212f90c9bac7e09121f197b3c186ca75493ab91453d5",
+    "source-intake\\navier-stokes\\20260909\\annular-compatible-current-restoring-smoke\\nonlinear_modulated_N128_dt2_T0.1.npz": "2b49e0520f8f67e8ed902935052d85affaf657ea241cbe4e03adb0c667b0f0c1",
+    "source-intake\\navier-stokes\\20260909\\annular-compatible-current-restoring-smoke\\nonlinear_modulated_N128_dt2_T0.3.npz": "b463fde85ed83d7ccd0bac37916f62912ebb14671250ff603203c3380a2df8f3"
+  },
+  "checks": [
+    {
+      "name": "previous_goal_turn_progress_and_static_restoring_derivation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "static_restoring_inputs_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "signed_Gram_leading_positive_operator",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "signed_Gram_coefficient_linearity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_signed_Gram_time_control_0.001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_signed_Gram_time_control_0.0005",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Volterra_bound_owner_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Volterra_bound_inputs_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Volterra_moment_degree0_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_moment_finite_time_0.001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_moment_finite_time_0.0005",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unqualified_large_argument_time_branch_rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "field_evolution_terminal_and_fully_reported",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "field_failure_not_promoted",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "owner_source_snapshot",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "owner_inputs_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_operator_configuration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N32_dt1_T0.1_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N32_dt1_T0.1_unprojected_scalar_lapse_source_law",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N32_dt1_T0.1_new_trajectory_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N32_dt1_T0.1_saved_RHS_replay",
+      "passed": true,
+      "detail": {
+        "error": [
+          0.0,
+          0.0,
+          2.0679515313825692e-25,
+          6.462348535570529e-27,
+          0.0
+        ],
+        "scale": [
+          3.5493784785629187e-09,
+          6.02566784538736e-09,
+          4.3200164831600655e-09,
+          2.0040312936132634e-10,
+          3.701290233634597e-12
+        ]
+      }
+    },
+    {
+      "name": "canonical_N32_dt1_T0.1_saved_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N32_dt1_T0.1_saved_coordinate_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N32_dt1_T0.1_saved_nonzero_forcing_replay",
+      "passed": true,
+      "detail": {
+        "error": 0.0,
+        "scale": 2.386434362893558e-09
+      }
+    },
+    {
+      "name": "canonical_N32_dt1_T0.1_source_endpoint_and_lapse_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N32_dt1_T0.1_scalar_kinematic_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N32_dt1_T0.1_integrability_time_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N32_dt1_T0.1_bounded_nonzero_source_residual",
+      "passed": true,
+      "detail": {
+        "residual_max": 3.284608953001738e-11,
+        "bound_max": 1.7843843865696558e-10,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "canonical_N32_dt1_T0.1_higher_Noether_coefficients_recorded_not_zeroed",
+      "passed": true,
+      "detail": {
+        "max_by_time_degree": [
+          3.284608953001738e-11,
+          6.199007437063046e-10,
+          5.35593012270694e-08
+        ]
+      }
+    },
+    {
+      "name": "canonical_N32_dt1_T0.1_finite_time_control_0.00025",
+      "passed": true,
+      "detail": {
+        "step": 0.00025,
+        "errors": [
+          [
+            5.1768271456018684e-20,
+            3.2835761595904987e-19,
+            2.5337005383642267e-18,
+            1.421264623620756e-18,
+            3.163242059979347e-21
+          ],
+          [
+            6.029269457015572e-16,
+            4.089591959890483e-15,
+            4.228005952614487e-14,
+            2.369505769107602e-14,
+            5.2843090091635387e-17
+          ]
+        ],
+        "scales": [
+          [
+            6.60156869114858e-08,
+            2.1823904363687266e-07,
+            3.074969290950506e-07,
+            4.1295260938098575e-09,
+            7.28858804223549e-10
+          ],
+          [
+            5.270951782843621e-06,
+            5.004406448011177e-05,
+            5.1465048942686244e-05,
+            5.24361273882479e-07,
+            1.303114979929811e-07
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_N32_dt1_T0.1_finite_time_control_0.000125",
+      "passed": true,
+      "detail": {
+        "step": 0.000125,
+        "errors": [
+          [
+            1.6701769184180692e-19,
+            6.483640164537644e-19,
+            5.589408291531068e-19,
+            9.4877202669526e-20,
+            1.9645539548134407e-22
+          ],
+          [
+            3.4270969986567937e-15,
+            1.3320831457742759e-14,
+            1.1937538563449972e-14,
+            3.0868350228383543e-15,
+            6.382591780908166e-18
+          ]
+        ],
+        "scales": [
+          [
+            6.60156869114858e-08,
+            2.1823904363687266e-07,
+            3.074969290950506e-07,
+            4.1295260938098575e-09,
+            7.28858804223549e-10
+          ],
+          [
+            5.270951782843621e-06,
+            5.004406448011177e-05,
+            5.1465048942686244e-05,
+            5.24361273882479e-07,
+            1.303114979929811e-07
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_N32_dt1_T0.1_cache_side_control",
+      "passed": true,
+      "detail": {
+        "absolute_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            8.933550615572699e-22,
+            4.90683539366456e-21,
+            1.4474080606184661e-15,
+            3.8162965069028713e-16,
+            1.0008456311948873e-19
+          ],
+          [
+            1.4677910799900393e-14,
+            1.1058794057903186e-13,
+            1.0970951659075232e-13,
+            1.301638679949456e-15,
+            3.34318345627556e-17
+          ]
+        ],
+        "relative_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.3532466347810412e-14,
+            2.2483765104052738e-14,
+            4.707065091277893e-09,
+            9.241487812907839e-08,
+            1.3731680613518623e-10
+          ],
+          [
+            2.784679390859808e-09,
+            2.2098113278345145e-09,
+            2.1317285972647122e-09,
+            2.4823318288016483e-09,
+            2.565532211482698e-10
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_N32_dt1_T0.3_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N32_dt1_T0.3_unprojected_scalar_lapse_source_law",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N32_dt1_T0.3_new_trajectory_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N32_dt1_T0.3_saved_RHS_replay",
+      "passed": true,
+      "detail": {
+        "error": [
+          0.0,
+          0.0,
+          1.6543612251060553e-24,
+          1.550963648536927e-25,
+          1.2116903504194741e-27
+        ],
+        "scale": [
+          1.0261134510480532e-08,
+          1.0069263884000058e-08,
+          9.15774085061307e-09,
+          1.3600781557839606e-10,
+          3.5435372437886463e-12
+        ]
+      }
+    },
+    {
+      "name": "canonical_N32_dt1_T0.3_saved_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N32_dt1_T0.3_saved_coordinate_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N32_dt1_T0.3_saved_nonzero_forcing_replay",
+      "passed": true,
+      "detail": {
+        "error": 1.6543612251060553e-24,
+        "scale": 6.467724575672776e-09
+      }
+    },
+    {
+      "name": "canonical_N32_dt1_T0.3_source_endpoint_and_lapse_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N32_dt1_T0.3_scalar_kinematic_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N32_dt1_T0.3_integrability_time_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N32_dt1_T0.3_bounded_nonzero_source_residual",
+      "passed": true,
+      "detail": {
+        "residual_max": 1.2279591331839217e-11,
+        "bound_max": 7.382249528689774e-11,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "canonical_N32_dt1_T0.3_higher_Noether_coefficients_recorded_not_zeroed",
+      "passed": true,
+      "detail": {
+        "max_by_time_degree": [
+          1.2279591331839217e-11,
+          5.996336076566472e-09,
+          1.9182123089544294e-07
+        ]
+      }
+    },
+    {
+      "name": "canonical_N32_dt1_T0.3_finite_time_control_0.00025",
+      "passed": true,
+      "detail": {
+        "step": 0.00025,
+        "errors": [
+          [
+            6.151080471066824e-20,
+            3.07691335535025e-19,
+            2.1680205331667843e-18,
+            1.5432795542366155e-18,
+            4.8359563549264226e-21
+          ],
+          [
+            3.998013510490427e-16,
+            2.6689873701502627e-15,
+            3.645118535895546e-14,
+            2.572103408124093e-14,
+            8.057658991107649e-17
+          ]
+        ],
+        "scales": [
+          [
+            2.951466109861995e-08,
+            1.4562327961865472e-07,
+            1.2136290703783197e-07,
+            5.814345184038821e-09,
+            5.128604284688133e-10
+          ],
+          [
+            2.550153241174695e-06,
+            2.4855324793592295e-05,
+            2.5751711417577908e-05,
+            3.620777480993456e-07,
+            1.0450417802147007e-07
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_N32_dt1_T0.3_finite_time_control_0.000125",
+      "passed": true,
+      "detail": {
+        "step": 0.000125,
+        "errors": [
+          [
+            1.9464056121740273e-19,
+            2.2003268991706553e-18,
+            1.1420816543070649e-18,
+            9.871201198932183e-20,
+            3.05850031491482e-22
+          ],
+          [
+            3.8938122584730316e-15,
+            4.2023376355874824e-14,
+            2.1930905061198487e-14,
+            3.239298994580438e-15,
+            1.0101450231158769e-17
+          ]
+        ],
+        "scales": [
+          [
+            2.951466109861995e-08,
+            1.4562327961865472e-07,
+            1.2136290703783197e-07,
+            5.814345184038821e-09,
+            5.128604284688133e-10
+          ],
+          [
+            2.550153241174695e-06,
+            2.4855324793592295e-05,
+            2.5751711417577908e-05,
+            3.620777480993456e-07,
+            1.0450417802147007e-07
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_N64_dt1_T0.1_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N64_dt1_T0.1_unprojected_scalar_lapse_source_law",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N64_dt1_T0.1_new_trajectory_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N64_dt1_T0.1_saved_RHS_replay",
+      "passed": true,
+      "detail": {
+        "error": [
+          0.0,
+          0.0,
+          1.6543612251060553e-24,
+          3.360421238496675e-25,
+          4.341890422336449e-27
+        ],
+        "scale": [
+          3.5684721963426673e-09,
+          7.812898299462032e-09,
+          5.031030483894506e-09,
+          1.9932325248363023e-10,
+          1.5883175747108736e-12
+        ]
+      }
+    },
+    {
+      "name": "canonical_N64_dt1_T0.1_saved_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N64_dt1_T0.1_saved_coordinate_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N64_dt1_T0.1_saved_nonzero_forcing_replay",
+      "passed": true,
+      "detail": {
+        "error": 1.4475660719677984e-24,
+        "scale": 2.3864343628935568e-09
+      }
+    },
+    {
+      "name": "canonical_N64_dt1_T0.1_source_endpoint_and_lapse_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N64_dt1_T0.1_scalar_kinematic_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N64_dt1_T0.1_integrability_time_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N64_dt1_T0.1_bounded_nonzero_source_residual",
+      "passed": true,
+      "detail": {
+        "residual_max": 2.482892549631388e-11,
+        "bound_max": 1.0093591448626254e-10,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "canonical_N64_dt1_T0.1_higher_Noether_coefficients_recorded_not_zeroed",
+      "passed": true,
+      "detail": {
+        "max_by_time_degree": [
+          2.482892549631388e-11,
+          1.3929832429029772e-09,
+          1.663479029595757e-07
+        ]
+      }
+    },
+    {
+      "name": "canonical_N64_dt1_T0.1_finite_time_control_0.00025",
+      "passed": true,
+      "detail": {
+        "step": 0.00025,
+        "errors": [
+          [
+            7.276542412506474e-20,
+            1.292598747289664e-18,
+            4.589489206019816e-18,
+            1.1521232133531524e-18,
+            3.3516389068368346e-21
+          ],
+          [
+            7.643464379762828e-16,
+            1.2680512771980252e-14,
+            7.189946422660404e-14,
+            1.9218369609647512e-14,
+            5.577527330956846e-17
+          ]
+        ],
+        "scales": [
+          [
+            4.5152850418423985e-08,
+            1.479316054896243e-07,
+            1.4235373410971432e-07,
+            3.821518485449271e-09,
+            2.9666592833368254e-10
+          ],
+          [
+            2.8219835550468384e-06,
+            3.452625454830647e-05,
+            3.875287259194617e-05,
+            3.401466619636479e-07,
+            7.931370018852367e-08
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_N64_dt1_T0.1_finite_time_control_0.000125",
+      "passed": true,
+      "detail": {
+        "step": 0.000125,
+        "errors": [
+          [
+            1.2240949576804725e-19,
+            1.745912748122812e-18,
+            2.176001171716696e-18,
+            7.22906224534593e-20,
+            2.217296406039604e-22
+          ],
+          [
+            2.8991125635129816e-15,
+            3.679964539609346e-14,
+            4.151395448895141e-14,
+            2.408405201344884e-15,
+            6.8258480926732814e-18
+          ]
+        ],
+        "scales": [
+          [
+            4.5152850418423985e-08,
+            1.479316054896243e-07,
+            1.4235373410971432e-07,
+            3.821518485449271e-09,
+            2.9666592833368254e-10
+          ],
+          [
+            2.8219835550468384e-06,
+            3.452625454830647e-05,
+            3.875287259194617e-05,
+            3.401466619636479e-07,
+            7.931370018852367e-08
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_N64_dt1_T0.1_cache_side_control",
+      "passed": true,
+      "detail": {
+        "absolute_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.262177448353619e-29
+          ],
+          [
+            8.801201717564214e-22,
+            8.982354271713328e-21,
+            1.7741134064649984e-15,
+            3.8162575839191476e-16,
+            2.3377459878190865e-19
+          ],
+          [
+            1.7988121275242593e-14,
+            2.473646146455265e-13,
+            2.366076453517898e-13,
+            1.4989102843197081e-15,
+            1.3737432132348704e-16
+          ]
+        ],
+        "relative_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            7.946631507766178e-18
+          ],
+          [
+            1.9492017970083697e-14,
+            6.071964298625378e-14,
+            1.2462710708365828e-08,
+            9.986233478785582e-08,
+            7.880062267176322e-10
+          ],
+          [
+            6.374282813616195e-09,
+            7.164536607914797e-09,
+            6.1055511379293944e-09,
+            4.40665880907542e-09,
+            1.7320377311480479e-09
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_N64_dt1_T0.3_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N64_dt1_T0.3_unprojected_scalar_lapse_source_law",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N64_dt1_T0.3_new_trajectory_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N64_dt1_T0.3_saved_RHS_replay",
+      "passed": true,
+      "detail": {
+        "error": [
+          0.0,
+          0.0,
+          1.6543612251060553e-24,
+          3.2311742677852644e-27,
+          0.0
+        ],
+        "scale": [
+          1.0262870736398178e-08,
+          9.386349835832562e-09,
+          8.469286146714376e-09,
+          1.323584489014265e-10,
+          3.4712385509878904e-12
+        ]
+      }
+    },
+    {
+      "name": "canonical_N64_dt1_T0.3_saved_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N64_dt1_T0.3_saved_coordinate_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N64_dt1_T0.3_saved_nonzero_forcing_replay",
+      "passed": true,
+      "detail": {
+        "error": 0.0,
+        "scale": 6.481026128947006e-09
+      }
+    },
+    {
+      "name": "canonical_N64_dt1_T0.3_source_endpoint_and_lapse_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N64_dt1_T0.3_scalar_kinematic_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N64_dt1_T0.3_integrability_time_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N64_dt1_T0.3_bounded_nonzero_source_residual",
+      "passed": true,
+      "detail": {
+        "residual_max": 1.0358453152415882e-11,
+        "bound_max": 7.613378977444295e-11,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "canonical_N64_dt1_T0.3_higher_Noether_coefficients_recorded_not_zeroed",
+      "passed": true,
+      "detail": {
+        "max_by_time_degree": [
+          1.0358453152415882e-11,
+          2.6230484486944636e-09,
+          1.371652847107194e-07
+        ]
+      }
+    },
+    {
+      "name": "canonical_N64_dt1_T0.3_finite_time_control_0.00025",
+      "passed": true,
+      "detail": {
+        "step": 0.00025,
+        "errors": [
+          [
+            5.3248924752488604e-20,
+            6.989874699420097e-19,
+            2.17544199762261e-18,
+            1.039006471381679e-18,
+            2.7016138858636696e-21
+          ],
+          [
+            6.541979558779784e-16,
+            9.11559451308012e-15,
+            3.407899674533633e-14,
+            1.732845915283527e-14,
+            4.7487245345045405e-17
+          ]
+        ],
+        "scales": [
+          [
+            2.2420958933195626e-08,
+            6.716848322344895e-08,
+            7.201054906374872e-08,
+            2.9232891299938327e-09,
+            9.459311556844971e-11
+          ],
+          [
+            1.0433994786153085e-06,
+            1.4807342071259477e-05,
+            1.498009061054651e-05,
+            1.563833371636008e-07,
+            3.6624702789399075e-08
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_N64_dt1_T0.3_finite_time_control_0.000125",
+      "passed": true,
+      "detail": {
+        "step": 0.000125,
+        "errors": [
+          [
+            9.946019685337605e-20,
+            2.3344228026328517e-18,
+            3.90225431822096e-18,
+            6.621622162517614e-20,
+            3.241578648927533e-22
+          ],
+          [
+            2.3763311341267975e-15,
+            5.0601901581935355e-14,
+            8.990744964206961e-14,
+            2.206977169906508e-15,
+            8.028145186851756e-18
+          ]
+        ],
+        "scales": [
+          [
+            2.2420958933195626e-08,
+            6.716848322344895e-08,
+            7.201054906374872e-08,
+            2.9232891299938327e-09,
+            9.459311556844971e-11
+          ],
+          [
+            1.0433994786153085e-06,
+            1.4807342071259477e-05,
+            1.498009061054651e-05,
+            1.563833371636008e-07,
+            3.6624702789399075e-08
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_N128_dt2_T0.1_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt2_T0.1_unprojected_scalar_lapse_source_law",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt2_T0.1_new_trajectory_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt2_T0.1_saved_RHS_replay",
+      "passed": true,
+      "detail": {
+        "error": [
+          0.0,
+          0.0,
+          2.0679515313825692e-25,
+          5.048709793414476e-29,
+          0.0
+        ],
+        "scale": [
+          3.5688746099136642e-09,
+          7.197796979491258e-09,
+          4.679864958230832e-09,
+          1.9891857389496736e-10,
+          1.6267802714411974e-12
+        ]
+      }
+    },
+    {
+      "name": "canonical_N128_dt2_T0.1_saved_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt2_T0.1_saved_coordinate_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt2_T0.1_saved_nonzero_forcing_replay",
+      "passed": true,
+      "detail": {
+        "error": 5.169878828456423e-26,
+        "scale": 2.386434362893558e-09
+      }
+    },
+    {
+      "name": "canonical_N128_dt2_T0.1_source_endpoint_and_lapse_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt2_T0.1_scalar_kinematic_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt2_T0.1_integrability_time_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt2_T0.1_bounded_nonzero_source_residual",
+      "passed": true,
+      "detail": {
+        "residual_max": 7.389711439404186e-12,
+        "bound_max": 4.100780241936442e-11,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "canonical_N128_dt2_T0.1_higher_Noether_coefficients_recorded_not_zeroed",
+      "passed": true,
+      "detail": {
+        "max_by_time_degree": [
+          7.389711439404186e-12,
+          8.488807166327833e-10,
+          1.310391892396405e-07
+        ]
+      }
+    },
+    {
+      "name": "canonical_N128_dt2_T0.1_finite_time_control_0.00025",
+      "passed": true,
+      "detail": {
+        "step": 0.00025,
+        "errors": [
+          [
+            9.595956850105163e-20,
+            2.384918353318881e-18,
+            4.791678617507378e-18,
+            1.3800842640054162e-18,
+            3.482789039191971e-21
+          ],
+          [
+            9.677336599303804e-16,
+            2.4370166190504187e-14,
+            7.496653580026102e-14,
+            2.2990312905104298e-14,
+            5.829260601156179e-17
+          ]
+        ],
+        "scales": [
+          [
+            4.338891497718263e-08,
+            9.069787174877186e-08,
+            1.1736268094278714e-07,
+            3.818018905623873e-09,
+            6.287814675778142e-11
+          ],
+          [
+            1.526952811335874e-06,
+            2.104023572275489e-05,
+            2.4862600108526972e-05,
+            1.7306672334104236e-07,
+            2.442160922342547e-08
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_N128_dt2_T0.1_finite_time_control_0.000125",
+      "passed": true,
+      "detail": {
+        "step": 0.000125,
+        "errors": [
+          [
+            1.5065936804795825e-19,
+            4.896027451780942e-18,
+            4.713619237461974e-18,
+            8.828664113900975e-20,
+            3.3462363834610976e-22
+          ],
+          [
+            3.1956719273573946e-15,
+            8.12370453228523e-14,
+            9.438248082117417e-14,
+            2.9007841631820533e-15,
+            8.577758727417715e-18
+          ]
+        ],
+        "scales": [
+          [
+            4.338891497718263e-08,
+            9.069787174877186e-08,
+            1.1736268094278714e-07,
+            3.818018905623873e-09,
+            6.287814675778142e-11
+          ],
+          [
+            1.526952811335874e-06,
+            2.104023572275489e-05,
+            2.4862600108526972e-05,
+            1.7306672334104236e-07,
+            2.442160922342547e-08
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_N128_dt2_T0.1_cache_side_control",
+      "passed": true,
+      "detail": {
+        "absolute_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.462455322993753e-21,
+            3.0546125660358206e-20,
+            2.2568406065392172e-15,
+            4.001971098228544e-16,
+            2.337687438941354e-19
+          ],
+          [
+            2.2880761455502355e-14,
+            1.3674743981487505e-12,
+            1.3667977019390023e-12,
+            1.851106603640381e-15,
+            1.638403799598271e-16
+          ]
+        ],
+        "relative_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            3.3705736217714345e-14,
+            3.367898835043153e-13,
+            1.9229627241042655e-08,
+            1.0481800109302007e-07,
+            3.717805882457972e-09
+          ],
+          [
+            1.498458975656545e-08,
+            6.499330217435897e-08,
+            5.497404519128473e-08,
+            1.0695912928290794e-08,
+            6.708828171841749e-09
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_N128_dt2_T0.3_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt2_T0.3_unprojected_scalar_lapse_source_law",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt2_T0.3_new_trajectory_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt2_T0.3_saved_RHS_replay",
+      "passed": true,
+      "detail": {
+        "error": [
+          0.0,
+          0.0,
+          1.6543612251060553e-24,
+          1.4217166778255163e-25,
+          1.2621774483536189e-27
+        ],
+        "scale": [
+          1.0263114630570164e-08,
+          9.51833688617319e-09,
+          8.596524888747612e-09,
+          1.311350277363186e-10,
+          3.4738979379596232e-12
+        ]
+      }
+    },
+    {
+      "name": "canonical_N128_dt2_T0.3_saved_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt2_T0.3_saved_coordinate_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt2_T0.3_saved_nonzero_forcing_replay",
+      "passed": true,
+      "detail": {
+        "error": 1.6543612251060553e-24,
+        "scale": 6.4810261289470055e-09
+      }
+    },
+    {
+      "name": "canonical_N128_dt2_T0.3_source_endpoint_and_lapse_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt2_T0.3_scalar_kinematic_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt2_T0.3_integrability_time_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt2_T0.3_bounded_nonzero_source_residual",
+      "passed": true,
+      "detail": {
+        "residual_max": 5.968906298830191e-12,
+        "bound_max": 5.482941139021694e-11,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "canonical_N128_dt2_T0.3_higher_Noether_coefficients_recorded_not_zeroed",
+      "passed": true,
+      "detail": {
+        "max_by_time_degree": [
+          5.968906298830191e-12,
+          4.489448104009755e-10,
+          1.3571483256477562e-07
+        ]
+      }
+    },
+    {
+      "name": "canonical_N128_dt2_T0.3_finite_time_control_0.00025",
+      "passed": true,
+      "detail": {
+        "step": 0.00025,
+        "errors": [
+          [
+            7.706676331034048e-20,
+            2.3725128154796936e-18,
+            3.048501355670279e-18,
+            1.098957161758284e-18,
+            3.6295166626920995e-21
+          ],
+          [
+            8.716041025047267e-16,
+            2.477595325869368e-14,
+            4.264407447632625e-14,
+            1.8320248684125292e-14,
+            6.048181415573366e-17
+          ]
+        ],
+        "scales": [
+          [
+            2.1729719034975297e-08,
+            6.66764396423577e-08,
+            7.26814310205509e-08,
+            3.002636884858031e-09,
+            4.357283660981726e-11
+          ],
+          [
+            1.0401844303098824e-06,
+            7.342429177915661e-06,
+            8.489110636643248e-06,
+            6.18505855106437e-08,
+            1.1847479561630596e-08
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_N128_dt2_T0.3_finite_time_control_0.000125",
+      "passed": true,
+      "detail": {
+        "step": 0.000125,
+        "errors": [
+          [
+            2.4745004626947254e-19,
+            4.761499760038993e-18,
+            6.432010859424534e-18,
+            7.334367507202759e-20,
+            1.2662648838023672e-21
+          ],
+          [
+            3.49182175077181e-15,
+            9.829663415235904e-14,
+            1.403858490027954e-13,
+            2.3730336547154712e-15,
+            2.875601809967276e-17
+          ]
+        ],
+        "scales": [
+          [
+            2.1729719034975297e-08,
+            6.66764396423577e-08,
+            7.26814310205509e-08,
+            3.002636884858031e-09,
+            4.357283660981726e-11
+          ],
+          [
+            1.0401844303098824e-06,
+            7.342429177915661e-06,
+            8.489110636643248e-06,
+            6.18505855106437e-08,
+            1.1847479561630596e-08
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.1_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.1_unprojected_scalar_lapse_source_law",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.1_new_trajectory_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.1_saved_RHS_replay",
+      "passed": true,
+      "detail": {
+        "error": [
+          0.0,
+          0.0,
+          3.308722450212111e-24,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          9.718526260357542e-09,
+          2.1188865142792532e-08,
+          1.6174259161527935e-08,
+          1.4989368202977067e-09,
+          1.6454384743831968e-11
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.1_saved_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.1_saved_coordinate_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.1_saved_nonzero_forcing_replay",
+      "passed": true,
+      "detail": {
+        "error": 0.0,
+        "scale": 1.1698938327754425e-08
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.1_source_endpoint_and_lapse_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.1_scalar_kinematic_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.1_integrability_time_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.1_bounded_nonzero_source_residual",
+      "passed": true,
+      "detail": {
+        "residual_max": 1.3937220189967346e-10,
+        "bound_max": 7.461478975914724e-10,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.1_higher_Noether_coefficients_recorded_not_zeroed",
+      "passed": true,
+      "detail": {
+        "max_by_time_degree": [
+          1.3937220189967346e-10,
+          2.873142103116982e-09,
+          2.389959670976875e-07
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.1_finite_time_control_0.00025",
+      "passed": true,
+      "detail": {
+        "step": 0.00025,
+        "errors": [
+          [
+            2.305253105511782e-19,
+            1.6762782026162604e-18,
+            4.896459240060695e-18,
+            5.67695708756368e-18,
+            9.469356857353923e-21
+          ],
+          [
+            2.295000195201742e-15,
+            1.6704492606864352e-14,
+            8.088366402429076e-14,
+            9.463109600262162e-14,
+            1.574004797586816e-16
+          ]
+        ],
+        "scales": [
+          [
+            2.6508903718569e-07,
+            1.0613330800499125e-06,
+            1.3064043286115844e-06,
+            3.565911607943943e-08,
+            3.2974445807101175e-09
+          ],
+          [
+            2.3714151585756626e-05,
+            0.00022237175549423357,
+            0.00022900561617954495,
+            2.499296436694303e-06,
+            6.010608758979647e-07
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.1_finite_time_control_0.000125",
+      "passed": true,
+      "detail": {
+        "step": 0.000125,
+        "errors": [
+          [
+            4.1454321834217493e-19,
+            2.4916532934669312e-18,
+            2.3778332411796346e-18,
+            3.521886894067026e-19,
+            7.4280819007261885e-22
+          ],
+          [
+            9.354736901561952e-15,
+            5.184952944423116e-14,
+            5.740378875365715e-14,
+            1.1886564967717155e-14,
+            2.1446927164038088e-17
+          ]
+        ],
+        "scales": [
+          [
+            2.6508903718569e-07,
+            1.0613330800499125e-06,
+            1.3064043286115844e-06,
+            3.565911607943943e-08,
+            3.2974445807101175e-09
+          ],
+          [
+            2.3714151585756626e-05,
+            0.00022237175549423357,
+            0.00022900561617954495,
+            2.499296436694303e-06,
+            6.010608758979647e-07
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.1_cache_side_control",
+      "passed": true,
+      "detail": {
+        "absolute_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            8.41738991333961e-21,
+            3.613124915631625e-20,
+            2.1310777470376596e-15,
+            5.341474336331445e-16,
+            1.825952605349821e-19
+          ],
+          [
+            2.1649702192929558e-14,
+            1.3671594238651164e-13,
+            1.292236716937678e-13,
+            2.3404909466669815e-15,
+            5.016322343031059e-17
+          ]
+        ],
+        "relative_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            3.1753066828800555e-14,
+            3.4043270520331906e-14,
+            1.6312543523967948e-09,
+            1.4979267361625007e-08,
+            5.537477766970067e-11
+          ],
+          [
+            9.129444127334063e-10,
+            6.148080365811425e-10,
+            5.642816706838049e-10,
+            9.364599222021996e-10,
+            8.345780842143223e-11
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.3_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.3_unprojected_scalar_lapse_source_law",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.3_new_trajectory_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.3_saved_RHS_replay",
+      "passed": true,
+      "detail": {
+        "error": [
+          0.0,
+          0.0,
+          5.790264287871194e-24,
+          1.4475660719677984e-24,
+          6.462348535570529e-27
+        ],
+        "scale": [
+          3.917721460322638e-08,
+          3.669398160345049e-08,
+          3.3721325373779026e-08,
+          1.4619640517025973e-09,
+          1.3661660877183527e-11
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.3_saved_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.3_saved_coordinate_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.3_saved_nonzero_forcing_replay",
+      "passed": true,
+      "detail": {
+        "error": 5.583469134732937e-24,
+        "scale": 2.0642375206838022e-08
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.3_source_endpoint_and_lapse_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.3_scalar_kinematic_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.3_integrability_time_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.3_bounded_nonzero_source_residual",
+      "passed": true,
+      "detail": {
+        "residual_max": 5.6373388003241565e-11,
+        "bound_max": 3.4251164628836976e-10,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.3_higher_Noether_coefficients_recorded_not_zeroed",
+      "passed": true,
+      "detail": {
+        "max_by_time_degree": [
+          5.6373388003241565e-11,
+          2.772174698040258e-08,
+          1.1161953907954486e-06
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.3_finite_time_control_0.00025",
+      "passed": true,
+      "detail": {
+        "step": 0.00025,
+        "errors": [
+          [
+            2.46761211614369e-19,
+            1.479819498412466e-18,
+            3.724959734448794e-18,
+            8.284038472428711e-18,
+            2.080012858689358e-20
+          ],
+          [
+            2.0573621372342327e-15,
+            1.1806734653537279e-14,
+            4.700383691210591e-14,
+            1.3805037312645087e-13,
+            3.467788355563772e-16
+          ]
+        ],
+        "scales": [
+          [
+            1.534950300855453e-07,
+            6.46082984309051e-07,
+            5.412537295097867e-07,
+            4.374730186476307e-08,
+            2.385344920874166e-09
+          ],
+          [
+            1.1854421508291656e-05,
+            0.00011146351384684616,
+            0.00011583703537511737,
+            1.9502676398426527e-06,
+            4.703268022383246e-07
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.3_finite_time_control_0.000125",
+      "passed": true,
+      "detail": {
+        "step": 0.000125,
+        "errors": [
+          [
+            4.823786460164236e-19,
+            6.4081218833340024e-18,
+            3.847647162902659e-18,
+            5.236351062481184e-19,
+            1.3080827411760441e-21
+          ],
+          [
+            1.0221686134505043e-14,
+            1.1458121642249006e-13,
+            8.795569880201215e-14,
+            1.7381265367215197e-14,
+            4.37334492672624e-17
+          ]
+        ],
+        "scales": [
+          [
+            1.534950300855453e-07,
+            6.46082984309051e-07,
+            5.412537295097867e-07,
+            4.374730186476307e-08,
+            2.385344920874166e-09
+          ],
+          [
+            1.1854421508291656e-05,
+            0.00011146351384684616,
+            0.00011583703537511737,
+            1.9502676398426527e-06,
+            4.703268022383246e-07
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.1_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.1_unprojected_scalar_lapse_source_law",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.1_new_trajectory_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.1_saved_RHS_replay",
+      "passed": true,
+      "detail": {
+        "error": [
+          0.0,
+          0.0,
+          3.308722450212111e-24,
+          9.305781891221561e-25,
+          1.6963664905872638e-26
+        ],
+        "scale": [
+          9.805733937377243e-09,
+          2.993830241370213e-08,
+          2.3049819308212304e-08,
+          1.480377664738941e-09,
+          6.248397819611876e-12
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.1_saved_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.1_saved_coordinate_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.1_saved_nonzero_forcing_replay",
+      "passed": true,
+      "detail": {
+        "error": 3.308722450212111e-24,
+        "scale": 1.1698938327754425e-08
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.1_source_endpoint_and_lapse_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.1_scalar_kinematic_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.1_integrability_time_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.1_bounded_nonzero_source_residual",
+      "passed": true,
+      "detail": {
+        "residual_max": 1.3126768655665626e-10,
+        "bound_max": 5.263608707995207e-10,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.1_higher_Noether_coefficients_recorded_not_zeroed",
+      "passed": true,
+      "detail": {
+        "max_by_time_degree": [
+          1.3126768655665626e-10,
+          6.4100295788029446e-09,
+          8.179127345453088e-07
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.1_finite_time_control_0.00025",
+      "passed": true,
+      "detail": {
+        "step": 0.00025,
+        "errors": [
+          [
+            2.044922823129093e-19,
+            3.411742832421915e-18,
+            7.72509929763683e-18,
+            5.381655263243474e-18,
+            1.14527937945883e-20
+          ],
+          [
+            2.252978043655509e-15,
+            3.9712509539505114e-14,
+            1.3750687041243865e-13,
+            8.968908820109704e-14,
+            1.908308849533387e-16
+          ]
+        ],
+        "scales": [
+          [
+            2.4370930104204773e-07,
+            7.529495140342322e-07,
+            7.214312155534316e-07,
+            3.324069470471091e-08,
+            1.400455420780394e-09
+          ],
+          [
+            1.4727495102455618e-05,
+            0.00018502892810084342,
+            0.00020426160161444092,
+            2.020743902425206e-06,
+            3.6645643056175514e-07
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.1_finite_time_control_0.000125",
+      "passed": true,
+      "detail": {
+        "step": 0.000125,
+        "errors": [
+          [
+            4.173225452003531e-19,
+            6.323011615747196e-18,
+            9.180990115289361e-18,
+            3.325448042197933e-19,
+            7.741828922128138e-22
+          ],
+          [
+            8.275381451600637e-15,
+            1.2483406235802574e-13,
+            2.240733301488683e-13,
+            1.1166487012663224e-14,
+            2.4102322514121116e-17
+          ]
+        ],
+        "scales": [
+          [
+            2.4370930104204773e-07,
+            7.529495140342322e-07,
+            7.214312155534316e-07,
+            3.324069470471091e-08,
+            1.400455420780394e-09
+          ],
+          [
+            1.4727495102455618e-05,
+            0.00018502892810084342,
+            0.00020426160161444092,
+            2.020743902425206e-06,
+            3.6645643056175514e-07
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.1_cache_side_control",
+      "passed": true,
+      "detail": {
+        "absolute_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            8.986490174776093e-21,
+            1.1265538198482195e-19,
+            3.9905480797306826e-15,
+            5.341323921808859e-16,
+            2.299413905089625e-19
+          ],
+          [
+            4.044240291235183e-14,
+            4.754059288163831e-13,
+            4.682741417934635e-13,
+            3.2268697389915466e-15,
+            1.213294294986245e-16
+          ]
+        ],
+        "relative_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            3.687380882203438e-14,
+            1.49618772421042e-13,
+            5.531432510401443e-09,
+            1.6068629038164715e-08,
+            1.6419043912217445e-10
+          ],
+          [
+            2.746047622559289e-09,
+            2.569360011410108e-09,
+            2.2925216393699197e-09,
+            1.5968721890581001e-09,
+            3.310882805703094e-10
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.3_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.3_unprojected_scalar_lapse_source_law",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.3_new_trajectory_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.3_saved_RHS_replay",
+      "passed": true,
+      "detail": {
+        "error": [
+          0.0,
+          0.0,
+          6.617444900424222e-24,
+          2.5849394142282115e-26,
+          0.0
+        ],
+        "scale": [
+          3.9201215722710196e-08,
+          3.4196825958960826e-08,
+          3.0601928342715495e-08,
+          1.4608440633167473e-09,
+          1.3312439755351128e-11
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.3_saved_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.3_saved_coordinate_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.3_saved_nonzero_forcing_replay",
+      "passed": true,
+      "detail": {
+        "error": 0.0,
+        "scale": 2.0642375206838022e-08
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.3_source_endpoint_and_lapse_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.3_scalar_kinematic_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.3_integrability_time_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.3_bounded_nonzero_source_residual",
+      "passed": true,
+      "detail": {
+        "residual_max": 5.845996322868694e-11,
+        "bound_max": 4.322510371598929e-10,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.3_higher_Noether_coefficients_recorded_not_zeroed",
+      "passed": true,
+      "detail": {
+        "max_by_time_degree": [
+          5.845996322868694e-11,
+          1.3660667157104775e-08,
+          5.897425979387676e-07
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.3_finite_time_control_0.00025",
+      "passed": true,
+      "detail": {
+        "step": 0.00025,
+        "errors": [
+          [
+            2.945954120770855e-19,
+            4.7371376366380814e-18,
+            5.1879973925937845e-18,
+            5.168025943884304e-18,
+            1.3540610585369213e-20
+          ],
+          [
+            2.40203297248269e-15,
+            4.3437983211194655e-14,
+            6.963663857790375e-14,
+            8.61541819077049e-14,
+            2.255454367637864e-16
+          ]
+        ],
+        "scales": [
+          [
+            1.167494585325166e-07,
+            2.99940918512412e-07,
+            3.5210679444145384e-07,
+            3.035045323028415e-08,
+            4.480031023167079e-10
+          ],
+          [
+            4.163202325619017e-06,
+            7.145210655344511e-05,
+            7.261587682950018e-05,
+            1.0608191217669207e-06,
+            1.7209118520488087e-07
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.3_finite_time_control_0.000125",
+      "passed": true,
+      "detail": {
+        "step": 0.000125,
+        "errors": [
+          [
+            7.946823406470443e-19,
+            1.129806955761268e-17,
+            1.777445700253946e-17,
+            3.1857703239622287e-19,
+            2.090091537465434e-21
+          ],
+          [
+            1.5227154491470867e-14,
+            2.369604993723417e-13,
+            3.51741194595009e-13,
+            1.076328651839685e-14,
+            4.4725710314662635e-17
+          ]
+        ],
+        "scales": [
+          [
+            1.167494585325166e-07,
+            2.99940918512412e-07,
+            3.5210679444145384e-07,
+            3.035045323028415e-08,
+            4.480031023167079e-10
+          ],
+          [
+            4.163202325619017e-06,
+            7.145210655344511e-05,
+            7.261587682950018e-05,
+            1.0608191217669207e-06,
+            1.7209118520488087e-07
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.1_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.1_unprojected_scalar_lapse_source_law",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.1_new_trajectory_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.1_saved_RHS_replay",
+      "passed": true,
+      "detail": {
+        "error": [
+          0.0,
+          0.0,
+          8.271806125530277e-25,
+          2.5849394142282115e-26,
+          0.0
+        ],
+        "scale": [
+          9.807330506401351e-09,
+          2.6859713506672724e-08,
+          1.9969466790718976e-08,
+          1.4778932461997012e-09,
+          6.006925929212041e-12
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.1_saved_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.1_saved_coordinate_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.1_saved_nonzero_forcing_replay",
+      "passed": true,
+      "detail": {
+        "error": 0.0,
+        "scale": 1.1698938327754425e-08
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.1_source_endpoint_and_lapse_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.1_scalar_kinematic_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.1_integrability_time_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.1_bounded_nonzero_source_residual",
+      "passed": true,
+      "detail": {
+        "residual_max": 4.124358538314528e-11,
+        "bound_max": 3.137851411263775e-10,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.1_higher_Noether_coefficients_recorded_not_zeroed",
+      "passed": true,
+      "detail": {
+        "max_by_time_degree": [
+          4.124358538314528e-11,
+          4.293930079135182e-09,
+          6.923064971431034e-07
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.1_finite_time_control_0.00025",
+      "passed": true,
+      "detail": {
+        "step": 0.00025,
+        "errors": [
+          [
+            2.6696096217291394e-19,
+            8.382568918273577e-18,
+            1.3636065780491761e-17,
+            3.506481482338838e-18,
+            1.0341929006020798e-20
+          ],
+          [
+            2.810283371301476e-15,
+            8.557092751396156e-14,
+            1.7849530549094144e-13,
+            5.842580507587769e-14,
+            1.7329025867507819e-16
+          ]
+        ],
+        "scales": [
+          [
+            2.449469613189127e-07,
+            6.334420902195542e-07,
+            7.004508754924202e-07,
+            3.343511725229593e-08,
+            2.98650502940302e-10
+          ],
+          [
+            1.1975235963895605e-05,
+            0.00015486210867081995,
+            0.00017282282148583952,
+            1.5421629676234186e-06,
+            1.1162737258506897e-07
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.1_finite_time_control_0.000125",
+      "passed": true,
+      "detail": {
+        "step": 0.000125,
+        "errors": [
+          [
+            6.133180282611177e-19,
+            1.9421168461340624e-17,
+            1.8018984826499935e-17,
+            2.228821616911882e-19,
+            1.033639723567435e-21
+          ],
+          [
+            1.1970859145529061e-14,
+            4.1156414078624345e-13,
+            4.1351006006915686e-13,
+            7.355674056853763e-15,
+            2.9363991920791323e-17
+          ]
+        ],
+        "scales": [
+          [
+            2.449469613189127e-07,
+            6.334420902195542e-07,
+            7.004508754924202e-07,
+            3.343511725229593e-08,
+            2.98650502940302e-10
+          ],
+          [
+            1.1975235963895605e-05,
+            0.00015486210867081995,
+            0.00017282282148583952,
+            1.5421629676234186e-06,
+            1.1162737258506897e-07
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.1_cache_side_control",
+      "passed": true,
+      "detail": {
+        "absolute_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            8.74826215836082e-21,
+            2.9270282283556416e-19,
+            3.990590960773637e-15,
+            6.846339275505241e-16,
+            2.6610088820631486e-19
+          ],
+          [
+            4.0442391053890567e-14,
+            1.1406325746930995e-12,
+            1.1181149830606554e-12,
+            3.227012728740955e-15,
+            1.3784443369204404e-16
+          ]
+        ],
+        "relative_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            3.571492420749355e-14,
+            4.620830023058808e-13,
+            5.697174634792531e-09,
+            2.047649249692736e-08,
+            8.910110165108493e-10
+          ],
+          [
+            3.3771686149501516e-09,
+            7.365472319104643e-09,
+            6.469718370801333e-09,
+            2.0925238100575117e-09,
+            1.2348622967632387e-09
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.3_artifact_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.3_unprojected_scalar_lapse_source_law",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.3_new_trajectory_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.3_saved_RHS_replay",
+      "passed": true,
+      "detail": {
+        "error": [
+          0.0,
+          0.0,
+          6.617444900424222e-24,
+          1.34416849539867e-24,
+          6.462348535570529e-27
+        ],
+        "scale": [
+          3.920360242868131e-08,
+          3.4751195122051125e-08,
+          3.1120956082897265e-08,
+          1.4558467566081537e-09,
+          1.3304666414509335e-11
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.3_saved_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.3_saved_coordinate_source_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.3_saved_nonzero_forcing_replay",
+      "passed": true,
+      "detail": {
+        "error": 5.790264287871194e-24,
+        "scale": 2.0642375206838022e-08
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.3_source_endpoint_and_lapse_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.3_scalar_kinematic_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.3_integrability_time_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.3_bounded_nonzero_source_residual",
+      "passed": true,
+      "detail": {
+        "residual_max": 3.44484682218687e-11,
+        "bound_max": 3.155180245663819e-10,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.3_higher_Noether_coefficients_recorded_not_zeroed",
+      "passed": true,
+      "detail": {
+        "max_by_time_degree": [
+          3.44484682218687e-11,
+          2.4523806921912975e-09,
+          6.115790292629652e-07
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.3_finite_time_control_0.00025",
+      "passed": true,
+      "detail": {
+        "step": 0.00025,
+        "errors": [
+          [
+            3.8984980910593567e-19,
+            1.0756418457623157e-17,
+            3.240250424338441e-17,
+            4.234420273720204e-18,
+            9.07900515641132e-21
+          ],
+          [
+            5.2652652203499795e-15,
+            1.1780386613745926e-13,
+            3.303989323276478e-13,
+            7.052019013306906e-14,
+            1.495285029627574e-16
+          ]
+        ],
+        "scales": [
+          [
+            1.1154910225555504e-07,
+            2.7561348720408424e-07,
+            2.956620373386836e-07,
+            3.0965335864213354e-08,
+            1.9678326739885434e-10
+          ],
+          [
+            3.94386541130695e-06,
+            4.243040184699341e-05,
+            4.660923400126266e-05,
+            5.711309645844866e-07,
+            5.2689215544509587e-08
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.3_finite_time_control_0.000125",
+      "passed": true,
+      "detail": {
+        "step": 0.000125,
+        "errors": [
+          [
+            7.615856035678789e-19,
+            1.7761883857228653e-17,
+            2.6951344301990557e-17,
+            2.7865729603441375e-19,
+            5.807945273464515e-21
+          ],
+          [
+            1.9828085842058668e-14,
+            4.4295828534020656e-13,
+            6.208190674389315e-13,
+            9.125111245879877e-15,
+            1.4282734324843975e-16
+          ]
+        ],
+        "scales": [
+          [
+            1.1154910225555504e-07,
+            2.7561348720408424e-07,
+            2.956620373386836e-07,
+            3.0965335864213354e-08,
+            1.9678326739885434e-10
+          ],
+          [
+            3.94386541130695e-06,
+            4.243040184699341e-05,
+            4.660923400126266e-05,
+            5.711309645844866e-07,
+            5.2689215544509587e-08
+          ]
+        ]
+      }
+    },
+    {
+      "name": "all_twelve_snapshots_processed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_bytecode_cache",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "runs": [
+    {
+      "source_residual_max": 3.284608953001738e-11,
+      "source_bound_max": 1.7843843865696558e-10,
+      "mass_source_max": 2.567857878070152e-12,
+      "mode": "trajectory",
+      "case": "canonical",
+      "intervals": 32,
+      "time": 0.1,
+      "time_refinement": 1,
+      "artifact": "canonical_N32_dt1_T0.1_time_jets.npz",
+      "sha256": "d48ee99a95f0ab0a4f34c1ba383aaa1500e759ec4617dd43978fc4abbbed966e",
+      "source_artifact": "canonical_N32_dt1_T0.1.npz",
+      "cache_first": 61,
+      "controls": [
+        {
+          "step": 0.00025,
+          "errors": [
+            [
+              5.1768271456018684e-20,
+              3.2835761595904987e-19,
+              2.5337005383642267e-18,
+              1.421264623620756e-18,
+              3.163242059979347e-21
+            ],
+            [
+              6.029269457015572e-16,
+              4.089591959890483e-15,
+              4.228005952614487e-14,
+              2.369505769107602e-14,
+              5.2843090091635387e-17
+            ]
+          ],
+          "scales": [
+            [
+              6.60156869114858e-08,
+              2.1823904363687266e-07,
+              3.074969290950506e-07,
+              4.1295260938098575e-09,
+              7.28858804223549e-10
+            ],
+            [
+              5.270951782843621e-06,
+              5.004406448011177e-05,
+              5.1465048942686244e-05,
+              5.24361273882479e-07,
+              1.303114979929811e-07
+            ]
+          ]
+        },
+        {
+          "step": 0.000125,
+          "errors": [
+            [
+              1.6701769184180692e-19,
+              6.483640164537644e-19,
+              5.589408291531068e-19,
+              9.4877202669526e-20,
+              1.9645539548134407e-22
+            ],
+            [
+              3.4270969986567937e-15,
+              1.3320831457742759e-14,
+              1.1937538563449972e-14,
+              3.0868350228383543e-15,
+              6.382591780908166e-18
+            ]
+          ],
+          "scales": [
+            [
+              6.60156869114858e-08,
+              2.1823904363687266e-07,
+              3.074969290950506e-07,
+              4.1295260938098575e-09,
+              7.28858804223549e-10
+            ],
+            [
+              5.270951782843621e-06,
+              5.004406448011177e-05,
+              5.1465048942686244e-05,
+              5.24361273882479e-07,
+              1.303114979929811e-07
+            ]
+          ]
+        }
+      ],
+      "side_change": {
+        "absolute_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            8.933550615572699e-22,
+            4.90683539366456e-21,
+            1.4474080606184661e-15,
+            3.8162965069028713e-16,
+            1.0008456311948873e-19
+          ],
+          [
+            1.4677910799900393e-14,
+            1.1058794057903186e-13,
+            1.0970951659075232e-13,
+            1.301638679949456e-15,
+            3.34318345627556e-17
+          ]
+        ],
+        "relative_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.3532466347810412e-14,
+            2.2483765104052738e-14,
+            4.707065091277893e-09,
+            9.241487812907839e-08,
+            1.3731680613518623e-10
+          ],
+          [
+            2.784679390859808e-09,
+            2.2098113278345145e-09,
+            2.1317285972647122e-09,
+            2.4823318288016483e-09,
+            2.565532211482698e-10
+          ]
+        ]
+      },
+      "component_maxima_by_time_order": [
+        [
+          5.116486860079474e-10,
+          1.5075630129387753e-09,
+          1.6537878343175538e-09,
+          1.156012794030989e-11,
+          7.367384198434744e-14
+        ],
+        [
+          3.5493784785629187e-09,
+          6.02566784538736e-09,
+          4.3200164831600655e-09,
+          2.0040312936132634e-10,
+          3.701290233634597e-12
+        ],
+        [
+          6.60156869114858e-08,
+          2.1823904363687266e-07,
+          3.074969290950506e-07,
+          4.1295260938098575e-09,
+          7.28858804223549e-10
+        ],
+        [
+          5.270951782843621e-06,
+          5.004406448011177e-05,
+          5.1465048942686244e-05,
+          5.24361273882479e-07,
+          1.303114979929811e-07
+        ]
+      ],
+      "valid_for_physics_claim": false
+    },
+    {
+      "source_residual_max": 1.2279591331839217e-11,
+      "source_bound_max": 7.382249528689774e-11,
+      "mass_source_max": 3.268489052399296e-12,
+      "mode": "trajectory",
+      "case": "canonical",
+      "intervals": 32,
+      "time": 0.3,
+      "time_refinement": 1,
+      "artifact": "canonical_N32_dt1_T0.3_time_jets.npz",
+      "sha256": "d7e088780039b00340aca2a293e94f393019a2f2a8219bb8c0a25ea3420a31f6",
+      "source_artifact": "canonical_N32_dt1_T0.3.npz",
+      "cache_first": 187,
+      "controls": [
+        {
+          "step": 0.00025,
+          "errors": [
+            [
+              6.151080471066824e-20,
+              3.07691335535025e-19,
+              2.1680205331667843e-18,
+              1.5432795542366155e-18,
+              4.8359563549264226e-21
+            ],
+            [
+              3.998013510490427e-16,
+              2.6689873701502627e-15,
+              3.645118535895546e-14,
+              2.572103408124093e-14,
+              8.057658991107649e-17
+            ]
+          ],
+          "scales": [
+            [
+              2.951466109861995e-08,
+              1.4562327961865472e-07,
+              1.2136290703783197e-07,
+              5.814345184038821e-09,
+              5.128604284688133e-10
+            ],
+            [
+              2.550153241174695e-06,
+              2.4855324793592295e-05,
+              2.5751711417577908e-05,
+              3.620777480993456e-07,
+              1.0450417802147007e-07
+            ]
+          ]
+        },
+        {
+          "step": 0.000125,
+          "errors": [
+            [
+              1.9464056121740273e-19,
+              2.2003268991706553e-18,
+              1.1420816543070649e-18,
+              9.871201198932183e-20,
+              3.05850031491482e-22
+            ],
+            [
+              3.8938122584730316e-15,
+              4.2023376355874824e-14,
+              2.1930905061198487e-14,
+              3.239298994580438e-15,
+              1.0101450231158769e-17
+            ]
+          ],
+          "scales": [
+            [
+              2.951466109861995e-08,
+              1.4562327961865472e-07,
+              1.2136290703783197e-07,
+              5.814345184038821e-09,
+              5.128604284688133e-10
+            ],
+            [
+              2.550153241174695e-06,
+              2.4855324793592295e-05,
+              2.5751711417577908e-05,
+              3.620777480993456e-07,
+              1.0450417802147007e-07
+            ]
+          ]
+        }
+      ],
+      "side_change": null,
+      "component_maxima_by_time_order": [
+        [
+          6.579310636300474e-10,
+          1.3535708656683114e-09,
+          2.0288853523108595e-09,
+          1.2648352485979974e-11,
+          2.2607539432809305e-13
+        ],
+        [
+          1.0261134510480532e-08,
+          1.0069263884000058e-08,
+          9.15774085061307e-09,
+          1.36007815578396e-10,
+          3.5435372437886476e-12
+        ],
+        [
+          2.951466109861995e-08,
+          1.4562327961865472e-07,
+          1.2136290703783197e-07,
+          5.814345184038821e-09,
+          5.128604284688133e-10
+        ],
+        [
+          2.550153241174695e-06,
+          2.4855324793592295e-05,
+          2.5751711417577908e-05,
+          3.620777480993456e-07,
+          1.0450417802147007e-07
+        ]
+      ],
+      "valid_for_physics_claim": false
+    },
+    {
+      "source_residual_max": 2.482892549631388e-11,
+      "source_bound_max": 1.0093591448626254e-10,
+      "mass_source_max": 1.0463946029322086e-12,
+      "mode": "trajectory",
+      "case": "canonical",
+      "intervals": 64,
+      "time": 0.1,
+      "time_refinement": 1,
+      "artifact": "canonical_N64_dt1_T0.1_time_jets.npz",
+      "sha256": "dd6c7696c57b0bdd5719284db6bfa8525e81ab69761228707ff264c725628098",
+      "source_artifact": "canonical_N64_dt1_T0.1.npz",
+      "cache_first": 61,
+      "controls": [
+        {
+          "step": 0.00025,
+          "errors": [
+            [
+              7.276542412506474e-20,
+              1.292598747289664e-18,
+              4.589489206019816e-18,
+              1.1521232133531524e-18,
+              3.3516389068368346e-21
+            ],
+            [
+              7.643464379762828e-16,
+              1.2680512771980252e-14,
+              7.189946422660404e-14,
+              1.9218369609647512e-14,
+              5.577527330956846e-17
+            ]
+          ],
+          "scales": [
+            [
+              4.5152850418423985e-08,
+              1.479316054896243e-07,
+              1.4235373410971432e-07,
+              3.821518485449271e-09,
+              2.9666592833368254e-10
+            ],
+            [
+              2.8219835550468384e-06,
+              3.452625454830647e-05,
+              3.875287259194617e-05,
+              3.401466619636479e-07,
+              7.931370018852367e-08
+            ]
+          ]
+        },
+        {
+          "step": 0.000125,
+          "errors": [
+            [
+              1.2240949576804725e-19,
+              1.745912748122812e-18,
+              2.176001171716696e-18,
+              7.22906224534593e-20,
+              2.217296406039604e-22
+            ],
+            [
+              2.8991125635129816e-15,
+              3.679964539609346e-14,
+              4.151395448895141e-14,
+              2.408405201344884e-15,
+              6.8258480926732814e-18
+            ]
+          ],
+          "scales": [
+            [
+              4.5152850418423985e-08,
+              1.479316054896243e-07,
+              1.4235373410971432e-07,
+              3.821518485449271e-09,
+              2.9666592833368254e-10
+            ],
+            [
+              2.8219835550468384e-06,
+              3.452625454830647e-05,
+              3.875287259194617e-05,
+              3.401466619636479e-07,
+              7.931370018852367e-08
+            ]
+          ]
+        }
+      ],
+      "side_change": {
+        "absolute_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.262177448353619e-29
+          ],
+          [
+            8.801201717564214e-22,
+            8.982354271713328e-21,
+            1.7741134064649984e-15,
+            3.8162575839191476e-16,
+            2.3377459878190865e-19
+          ],
+          [
+            1.7988121275242593e-14,
+            2.473646146455265e-13,
+            2.366076453517898e-13,
+            1.4989102843197081e-15,
+            1.3737432132348704e-16
+          ]
+        ],
+        "relative_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            7.946631507766178e-18
+          ],
+          [
+            1.9492017970083697e-14,
+            6.071964298625378e-14,
+            1.2462710708365828e-08,
+            9.986233478785582e-08,
+            7.880062267176322e-10
+          ],
+          [
+            6.374282813616195e-09,
+            7.164536607914797e-09,
+            6.1055511379293944e-09,
+            4.40665880907542e-09,
+            1.7320377311480479e-09
+          ]
+        ]
+      },
+      "component_maxima_by_time_order": [
+        [
+          5.371777250528567e-10,
+          1.4972696135841652e-09,
+          1.6353670167027024e-09,
+          1.1490851100897073e-11,
+          7.070593685648723e-14
+        ],
+        [
+          3.5684721963426673e-09,
+          7.812898299462032e-09,
+          5.031030483894505e-09,
+          1.9932325248363038e-10,
+          1.5883175747108736e-12
+        ],
+        [
+          4.5152850418423985e-08,
+          1.479316054896243e-07,
+          1.4235373410971432e-07,
+          3.821518485449271e-09,
+          2.9666592833368254e-10
+        ],
+        [
+          2.8219835550468384e-06,
+          3.452625454830647e-05,
+          3.875287259194617e-05,
+          3.401466619636479e-07,
+          7.931370018852367e-08
+        ]
+      ],
+      "valid_for_physics_claim": false
+    },
+    {
+      "source_residual_max": 1.0358453152415882e-11,
+      "source_bound_max": 7.613378977444295e-11,
+      "mass_source_max": 1.083647174116217e-12,
+      "mode": "trajectory",
+      "case": "canonical",
+      "intervals": 64,
+      "time": 0.3,
+      "time_refinement": 1,
+      "artifact": "canonical_N64_dt1_T0.3_time_jets.npz",
+      "sha256": "336c67bea2cbd64487063e16c64b722e0feecf483832f59bf8837daecc67c917",
+      "source_artifact": "canonical_N64_dt1_T0.3.npz",
+      "cache_first": 187,
+      "controls": [
+        {
+          "step": 0.00025,
+          "errors": [
+            [
+              5.3248924752488604e-20,
+              6.989874699420097e-19,
+              2.17544199762261e-18,
+              1.039006471381679e-18,
+              2.7016138858636696e-21
+            ],
+            [
+              6.541979558779784e-16,
+              9.11559451308012e-15,
+              3.407899674533633e-14,
+              1.732845915283527e-14,
+              4.7487245345045405e-17
+            ]
+          ],
+          "scales": [
+            [
+              2.2420958933195626e-08,
+              6.716848322344895e-08,
+              7.201054906374872e-08,
+              2.9232891299938327e-09,
+              9.459311556844971e-11
+            ],
+            [
+              1.0433994786153085e-06,
+              1.4807342071259477e-05,
+              1.498009061054651e-05,
+              1.563833371636008e-07,
+              3.6624702789399075e-08
+            ]
+          ]
+        },
+        {
+          "step": 0.000125,
+          "errors": [
+            [
+              9.946019685337605e-20,
+              2.3344228026328517e-18,
+              3.90225431822096e-18,
+              6.621622162517614e-20,
+              3.241578648927533e-22
+            ],
+            [
+              2.3763311341267975e-15,
+              5.0601901581935355e-14,
+              8.990744964206961e-14,
+              2.206977169906508e-15,
+              8.028145186851756e-18
+            ]
+          ],
+          "scales": [
+            [
+              2.2420958933195626e-08,
+              6.716848322344895e-08,
+              7.201054906374872e-08,
+              2.9232891299938327e-09,
+              9.459311556844971e-11
+            ],
+            [
+              1.0433994786153085e-06,
+              1.4807342071259477e-05,
+              1.498009061054651e-05,
+              1.563833371636008e-07,
+              3.6624702789399075e-08
+            ]
+          ]
+        }
+      ],
+      "side_change": null,
+      "component_maxima_by_time_order": [
+        [
+          6.602988664379233e-10,
+          1.3919525535377364e-09,
+          2.282575642170115e-09,
+          1.2672802535898581e-11,
+          2.2205235488362223e-13
+        ],
+        [
+          1.0262870736398178e-08,
+          9.386349835832562e-09,
+          8.469286146714376e-09,
+          1.323584489014265e-10,
+          3.4712385509878904e-12
+        ],
+        [
+          2.2420958933195626e-08,
+          6.716848322344895e-08,
+          7.201054906374872e-08,
+          2.9232891299938327e-09,
+          9.459311556844971e-11
+        ],
+        [
+          1.0433994786153085e-06,
+          1.4807342071259477e-05,
+          1.498009061054651e-05,
+          1.563833371636008e-07,
+          3.6624702789399075e-08
+        ]
+      ],
+      "valid_for_physics_claim": false
+    },
+    {
+      "source_residual_max": 7.389711439404186e-12,
+      "source_bound_max": 4.100780241936442e-11,
+      "mass_source_max": 2.1886521747002234e-13,
+      "mode": "trajectory",
+      "case": "canonical",
+      "intervals": 128,
+      "time": 0.1,
+      "time_refinement": 2,
+      "artifact": "canonical_N128_dt2_T0.1_time_jets.npz",
+      "sha256": "52b550802381931e0c2dcefb2040dd34f9dcfae6d544ea259cb1fe3e1ed30242",
+      "source_artifact": "canonical_N128_dt2_T0.1.npz",
+      "cache_first": 61,
+      "controls": [
+        {
+          "step": 0.00025,
+          "errors": [
+            [
+              9.595956850105163e-20,
+              2.384918353318881e-18,
+              4.791678617507378e-18,
+              1.3800842640054162e-18,
+              3.482789039191971e-21
+            ],
+            [
+              9.677336599303804e-16,
+              2.4370166190504187e-14,
+              7.496653580026102e-14,
+              2.2990312905104298e-14,
+              5.829260601156179e-17
+            ]
+          ],
+          "scales": [
+            [
+              4.338891497718263e-08,
+              9.069787174877186e-08,
+              1.1736268094278714e-07,
+              3.818018905623873e-09,
+              6.287814675778142e-11
+            ],
+            [
+              1.526952811335874e-06,
+              2.104023572275489e-05,
+              2.4862600108526972e-05,
+              1.7306672334104236e-07,
+              2.442160922342547e-08
+            ]
+          ]
+        },
+        {
+          "step": 0.000125,
+          "errors": [
+            [
+              1.5065936804795825e-19,
+              4.896027451780942e-18,
+              4.713619237461974e-18,
+              8.828664113900975e-20,
+              3.3462363834610976e-22
+            ],
+            [
+              3.1956719273573946e-15,
+              8.12370453228523e-14,
+              9.438248082117417e-14,
+              2.9007841631820533e-15,
+              8.577758727417715e-18
+            ]
+          ],
+          "scales": [
+            [
+              4.338891497718263e-08,
+              9.069787174877186e-08,
+              1.1736268094278714e-07,
+              3.818018905623873e-09,
+              6.287814675778142e-11
+            ],
+            [
+              1.526952811335874e-06,
+              2.104023572275489e-05,
+              2.4862600108526972e-05,
+              1.7306672334104236e-07,
+              2.442160922342547e-08
+            ]
+          ]
+        }
+      ],
+      "side_change": {
+        "absolute_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.462455322993753e-21,
+            3.0546125660358206e-20,
+            2.2568406065392172e-15,
+            4.001971098228544e-16,
+            2.337687438941354e-19
+          ],
+          [
+            2.2880761455502355e-14,
+            1.3674743981487505e-12,
+            1.3667977019390023e-12,
+            1.851106603640381e-15,
+            1.638403799598271e-16
+          ]
+        ],
+        "relative_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            3.3705736217714345e-14,
+            3.367898835043153e-13,
+            1.9229627241042655e-08,
+            1.0481800109302007e-07,
+            3.717805882457972e-09
+          ],
+          [
+            1.498458975656545e-08,
+            6.499330217435897e-08,
+            5.497404519128473e-08,
+            1.0695912928290794e-08,
+            6.708828171841749e-09
+          ]
+        ]
+      },
+      "component_maxima_by_time_order": [
+        [
+          5.363416575596579e-10,
+          1.564234262825036e-09,
+          1.655738805092835e-09,
+          1.147551143892972e-11,
+          6.921017986293442e-14
+        ],
+        [
+          3.5688746099136642e-09,
+          7.197796979491258e-09,
+          4.679864958230832e-09,
+          1.9891857389496736e-10,
+          1.6267802714411974e-12
+        ],
+        [
+          4.338891497718263e-08,
+          9.069787174877186e-08,
+          1.1736268094278714e-07,
+          3.818018905623873e-09,
+          6.287814675778142e-11
+        ],
+        [
+          1.526952811335874e-06,
+          2.104023572275489e-05,
+          2.4862600108526972e-05,
+          1.7306672334104236e-07,
+          2.442160922342547e-08
+        ]
+      ],
+      "valid_for_physics_claim": false
+    },
+    {
+      "source_residual_max": 5.968906298830191e-12,
+      "source_bound_max": 5.482941139021694e-11,
+      "mass_source_max": 6.57938125310938e-13,
+      "mode": "trajectory",
+      "case": "canonical",
+      "intervals": 128,
+      "time": 0.3,
+      "time_refinement": 2,
+      "artifact": "canonical_N128_dt2_T0.3_time_jets.npz",
+      "sha256": "3a6d80e71155943508d4536fcb717306cd617e968e40e081333585dd94e8ef4a",
+      "source_artifact": "canonical_N128_dt2_T0.3.npz",
+      "cache_first": 187,
+      "controls": [
+        {
+          "step": 0.00025,
+          "errors": [
+            [
+              7.706676331034048e-20,
+              2.3725128154796936e-18,
+              3.048501355670279e-18,
+              1.098957161758284e-18,
+              3.6295166626920995e-21
+            ],
+            [
+              8.716041025047267e-16,
+              2.477595325869368e-14,
+              4.264407447632625e-14,
+              1.8320248684125292e-14,
+              6.048181415573366e-17
+            ]
+          ],
+          "scales": [
+            [
+              2.1729719034975297e-08,
+              6.66764396423577e-08,
+              7.26814310205509e-08,
+              3.002636884858031e-09,
+              4.357283660981726e-11
+            ],
+            [
+              1.0401844303098824e-06,
+              7.342429177915661e-06,
+              8.489110636643248e-06,
+              6.18505855106437e-08,
+              1.1847479561630596e-08
+            ]
+          ]
+        },
+        {
+          "step": 0.000125,
+          "errors": [
+            [
+              2.4745004626947254e-19,
+              4.761499760038993e-18,
+              6.432010859424534e-18,
+              7.334367507202759e-20,
+              1.2662648838023672e-21
+            ],
+            [
+              3.49182175077181e-15,
+              9.829663415235904e-14,
+              1.403858490027954e-13,
+              2.3730336547154712e-15,
+              2.875601809967276e-17
+            ]
+          ],
+          "scales": [
+            [
+              2.1729719034975297e-08,
+              6.66764396423577e-08,
+              7.26814310205509e-08,
+              3.002636884858031e-09,
+              4.357283660981726e-11
+            ],
+            [
+              1.0401844303098824e-06,
+              7.342429177915661e-06,
+              8.489110636643248e-06,
+              6.18505855106437e-08,
+              1.1847479561630596e-08
+            ]
+          ]
+        }
+      ],
+      "side_change": null,
+      "component_maxima_by_time_order": [
+        [
+          6.598068865849926e-10,
+          1.4330450161838544e-09,
+          2.3067560626051245e-09,
+          1.2806286997410942e-11,
+          2.2418722168168694e-13
+        ],
+        [
+          1.0263114630570164e-08,
+          9.51833688617319e-09,
+          8.596524888747612e-09,
+          1.311350277363185e-10,
+          3.4738979379596244e-12
+        ],
+        [
+          2.1729719034975297e-08,
+          6.66764396423577e-08,
+          7.26814310205509e-08,
+          3.002636884858031e-09,
+          4.357283660981726e-11
+        ],
+        [
+          1.0401844303098824e-06,
+          7.342429177915661e-06,
+          8.489110636643248e-06,
+          6.18505855106437e-08,
+          1.1847479561630596e-08
+        ]
+      ],
+      "valid_for_physics_claim": false
+    },
+    {
+      "source_residual_max": 1.3937220189967346e-10,
+      "source_bound_max": 7.461478975914724e-10,
+      "mass_source_max": 1.2453644273236234e-11,
+      "mode": "trajectory",
+      "case": "nonlinear_modulated",
+      "intervals": 32,
+      "time": 0.1,
+      "time_refinement": 1,
+      "artifact": "nonlinear_modulated_N32_dt1_T0.1_time_jets.npz",
+      "sha256": "b03b3b40a6a0a60a717021d09d3198fb4cb68266ff9d49463cc28bf9f7f95fb1",
+      "source_artifact": "nonlinear_modulated_N32_dt1_T0.1.npz",
+      "cache_first": 61,
+      "controls": [
+        {
+          "step": 0.00025,
+          "errors": [
+            [
+              2.305253105511782e-19,
+              1.6762782026162604e-18,
+              4.896459240060695e-18,
+              5.67695708756368e-18,
+              9.469356857353923e-21
+            ],
+            [
+              2.295000195201742e-15,
+              1.6704492606864352e-14,
+              8.088366402429076e-14,
+              9.463109600262162e-14,
+              1.574004797586816e-16
+            ]
+          ],
+          "scales": [
+            [
+              2.6508903718569e-07,
+              1.0613330800499125e-06,
+              1.3064043286115844e-06,
+              3.565911607943943e-08,
+              3.2974445807101175e-09
+            ],
+            [
+              2.3714151585756626e-05,
+              0.00022237175549423357,
+              0.00022900561617954495,
+              2.499296436694303e-06,
+              6.010608758979647e-07
+            ]
+          ]
+        },
+        {
+          "step": 0.000125,
+          "errors": [
+            [
+              4.1454321834217493e-19,
+              2.4916532934669312e-18,
+              2.3778332411796346e-18,
+              3.521886894067026e-19,
+              7.4280819007261885e-22
+            ],
+            [
+              9.354736901561952e-15,
+              5.184952944423116e-14,
+              5.740378875365715e-14,
+              1.1886564967717155e-14,
+              2.1446927164038088e-17
+            ]
+          ],
+          "scales": [
+            [
+              2.6508903718569e-07,
+              1.0613330800499125e-06,
+              1.3064043286115844e-06,
+              3.565911607943943e-08,
+              3.2974445807101175e-09
+            ],
+            [
+              2.3714151585756626e-05,
+              0.00022237175549423357,
+              0.00022900561617954495,
+              2.499296436694303e-06,
+              6.010608758979647e-07
+            ]
+          ]
+        }
+      ],
+      "side_change": {
+        "absolute_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            8.41738991333961e-21,
+            3.613124915631625e-20,
+            2.1310777470376596e-15,
+            5.341474336331445e-16,
+            1.825952605349821e-19
+          ],
+          [
+            2.1649702192929558e-14,
+            1.3671594238651164e-13,
+            1.292236716937678e-13,
+            2.3404909466669815e-15,
+            5.016322343031059e-17
+          ]
+        ],
+        "relative_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            3.1753066828800555e-14,
+            3.4043270520331906e-14,
+            1.6312543523967948e-09,
+            1.4979267361625007e-08,
+            5.537477766970067e-11
+          ],
+          [
+            9.129444127334063e-10,
+            6.148080365811425e-10,
+            5.642816706838049e-10,
+            9.364599222021996e-10,
+            8.345780842143223e-11
+          ]
+        ]
+      },
+      "component_maxima_by_time_order": [
+        [
+          1.8597874339465893e-09,
+          6.332733100166241e-09,
+          6.590417740807878e-09,
+          1.2214828934718171e-10,
+          2.5540915820406747e-13
+        ],
+        [
+          9.718526260357542e-09,
+          2.1188865142792532e-08,
+          1.6174259161527935e-08,
+          1.4989368202977067e-09,
+          1.6454384743831968e-11
+        ],
+        [
+          2.6508903718569e-07,
+          1.0613330800499125e-06,
+          1.3064043286115844e-06,
+          3.565911607943943e-08,
+          3.2974445807101175e-09
+        ],
+        [
+          2.3714151585756626e-05,
+          0.00022237175549423357,
+          0.00022900561617954495,
+          2.499296436694303e-06,
+          6.010608758979647e-07
+        ]
+      ],
+      "valid_for_physics_claim": false
+    },
+    {
+      "source_residual_max": 5.6373388003241565e-11,
+      "source_bound_max": 3.4251164628836976e-10,
+      "mass_source_max": 1.4546293052796276e-11,
+      "mode": "trajectory",
+      "case": "nonlinear_modulated",
+      "intervals": 32,
+      "time": 0.3,
+      "time_refinement": 1,
+      "artifact": "nonlinear_modulated_N32_dt1_T0.3_time_jets.npz",
+      "sha256": "3ac595b90526ce899653aa17c7303a5d5655138b78c622facd97d586cd30e37f",
+      "source_artifact": "nonlinear_modulated_N32_dt1_T0.3.npz",
+      "cache_first": 187,
+      "controls": [
+        {
+          "step": 0.00025,
+          "errors": [
+            [
+              2.46761211614369e-19,
+              1.479819498412466e-18,
+              3.724959734448794e-18,
+              8.284038472428711e-18,
+              2.080012858689358e-20
+            ],
+            [
+              2.0573621372342327e-15,
+              1.1806734653537279e-14,
+              4.700383691210591e-14,
+              1.3805037312645087e-13,
+              3.467788355563772e-16
+            ]
+          ],
+          "scales": [
+            [
+              1.534950300855453e-07,
+              6.46082984309051e-07,
+              5.412537295097867e-07,
+              4.374730186476307e-08,
+              2.385344920874166e-09
+            ],
+            [
+              1.1854421508291656e-05,
+              0.00011146351384684616,
+              0.00011583703537511737,
+              1.9502676398426527e-06,
+              4.703268022383246e-07
+            ]
+          ]
+        },
+        {
+          "step": 0.000125,
+          "errors": [
+            [
+              4.823786460164236e-19,
+              6.4081218833340024e-18,
+              3.847647162902659e-18,
+              5.236351062481184e-19,
+              1.3080827411760441e-21
+            ],
+            [
+              1.0221686134505043e-14,
+              1.1458121642249006e-13,
+              8.795569880201215e-14,
+              1.7381265367215197e-14,
+              4.37334492672624e-17
+            ]
+          ],
+          "scales": [
+            [
+              1.534950300855453e-07,
+              6.46082984309051e-07,
+              5.412537295097867e-07,
+              4.374730186476307e-08,
+              2.385344920874166e-09
+            ],
+            [
+              1.1854421508291656e-05,
+              0.00011146351384684616,
+              0.00011583703537511737,
+              1.9502676398426527e-06,
+              4.703268022383246e-07
+            ]
+          ]
+        }
+      ],
+      "side_change": null,
+      "component_maxima_by_time_order": [
+        [
+          2.9939982507583336e-09,
+          5.965857158177874e-09,
+          8.604123156557487e-09,
+          1.5656426945877309e-10,
+          1.0352411424349712e-12
+        ],
+        [
+          3.917721460322638e-08,
+          3.669398160345049e-08,
+          3.3721325373779026e-08,
+          1.461964051702597e-09,
+          1.3661660877183532e-11
+        ],
+        [
+          1.534950300855453e-07,
+          6.46082984309051e-07,
+          5.412537295097867e-07,
+          4.374730186476307e-08,
+          2.385344920874166e-09
+        ],
+        [
+          1.1854421508291656e-05,
+          0.00011146351384684616,
+          0.00011583703537511737,
+          1.9502676398426527e-06,
+          4.703268022383246e-07
+        ]
+      ],
+      "valid_for_physics_claim": false
+    },
+    {
+      "source_residual_max": 1.3126768655665626e-10,
+      "source_bound_max": 5.263608707995207e-10,
+      "mass_source_max": 5.436819562511752e-12,
+      "mode": "trajectory",
+      "case": "nonlinear_modulated",
+      "intervals": 64,
+      "time": 0.1,
+      "time_refinement": 1,
+      "artifact": "nonlinear_modulated_N64_dt1_T0.1_time_jets.npz",
+      "sha256": "94ed052c1fdd7d80e50f81f614845595f24ca231bbf6128050f2dbd04dde3587",
+      "source_artifact": "nonlinear_modulated_N64_dt1_T0.1.npz",
+      "cache_first": 61,
+      "controls": [
+        {
+          "step": 0.00025,
+          "errors": [
+            [
+              2.044922823129093e-19,
+              3.411742832421915e-18,
+              7.72509929763683e-18,
+              5.381655263243474e-18,
+              1.14527937945883e-20
+            ],
+            [
+              2.252978043655509e-15,
+              3.9712509539505114e-14,
+              1.3750687041243865e-13,
+              8.968908820109704e-14,
+              1.908308849533387e-16
+            ]
+          ],
+          "scales": [
+            [
+              2.4370930104204773e-07,
+              7.529495140342322e-07,
+              7.214312155534316e-07,
+              3.324069470471091e-08,
+              1.400455420780394e-09
+            ],
+            [
+              1.4727495102455618e-05,
+              0.00018502892810084342,
+              0.00020426160161444092,
+              2.020743902425206e-06,
+              3.6645643056175514e-07
+            ]
+          ]
+        },
+        {
+          "step": 0.000125,
+          "errors": [
+            [
+              4.173225452003531e-19,
+              6.323011615747196e-18,
+              9.180990115289361e-18,
+              3.325448042197933e-19,
+              7.741828922128138e-22
+            ],
+            [
+              8.275381451600637e-15,
+              1.2483406235802574e-13,
+              2.240733301488683e-13,
+              1.1166487012663224e-14,
+              2.4102322514121116e-17
+            ]
+          ],
+          "scales": [
+            [
+              2.4370930104204773e-07,
+              7.529495140342322e-07,
+              7.214312155534316e-07,
+              3.324069470471091e-08,
+              1.400455420780394e-09
+            ],
+            [
+              1.4727495102455618e-05,
+              0.00018502892810084342,
+              0.00020426160161444092,
+              2.020743902425206e-06,
+              3.6645643056175514e-07
+            ]
+          ]
+        }
+      ],
+      "side_change": {
+        "absolute_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            8.986490174776093e-21,
+            1.1265538198482195e-19,
+            3.9905480797306826e-15,
+            5.341323921808859e-16,
+            2.299413905089625e-19
+          ],
+          [
+            4.044240291235183e-14,
+            4.754059288163831e-13,
+            4.682741417934635e-13,
+            3.2268697389915466e-15,
+            1.213294294986245e-16
+          ]
+        ],
+        "relative_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            3.687380882203438e-14,
+            1.49618772421042e-13,
+            5.531432510401443e-09,
+            1.6068629038164715e-08,
+            1.6419043912217445e-10
+          ],
+          [
+            2.746047622559289e-09,
+            2.569360011410108e-09,
+            2.2925216393699197e-09,
+            1.5968721890581001e-09,
+            3.310882805703094e-10
+          ]
+        ]
+      },
+      "component_maxima_by_time_order": [
+        [
+          1.9289843515560775e-09,
+          6.91828641643962e-09,
+          6.499109000555294e-09,
+          1.2142600784791453e-10,
+          2.4691273139710296e-13
+        ],
+        [
+          9.805733937377243e-09,
+          2.993830241370213e-08,
+          2.3049819308212307e-08,
+          1.4803776647389412e-09,
+          6.248397819611876e-12
+        ],
+        [
+          2.4370930104204773e-07,
+          7.529495140342322e-07,
+          7.214312155534316e-07,
+          3.324069470471091e-08,
+          1.400455420780394e-09
+        ],
+        [
+          1.4727495102455618e-05,
+          0.00018502892810084342,
+          0.00020426160161444092,
+          2.020743902425206e-06,
+          3.6645643056175514e-07
+        ]
+      ],
+      "valid_for_physics_claim": false
+    },
+    {
+      "source_residual_max": 5.845996322868694e-11,
+      "source_bound_max": 4.322510371598929e-10,
+      "mass_source_max": 5.521519237564504e-12,
+      "mode": "trajectory",
+      "case": "nonlinear_modulated",
+      "intervals": 64,
+      "time": 0.3,
+      "time_refinement": 1,
+      "artifact": "nonlinear_modulated_N64_dt1_T0.3_time_jets.npz",
+      "sha256": "c4b6a9c991caf6bd47c67fd30ef193b545d7552d3bb8f614a7f1493735b19e1c",
+      "source_artifact": "nonlinear_modulated_N64_dt1_T0.3.npz",
+      "cache_first": 187,
+      "controls": [
+        {
+          "step": 0.00025,
+          "errors": [
+            [
+              2.945954120770855e-19,
+              4.7371376366380814e-18,
+              5.1879973925937845e-18,
+              5.168025943884304e-18,
+              1.3540610585369213e-20
+            ],
+            [
+              2.40203297248269e-15,
+              4.3437983211194655e-14,
+              6.963663857790375e-14,
+              8.61541819077049e-14,
+              2.255454367637864e-16
+            ]
+          ],
+          "scales": [
+            [
+              1.167494585325166e-07,
+              2.99940918512412e-07,
+              3.5210679444145384e-07,
+              3.035045323028415e-08,
+              4.480031023167079e-10
+            ],
+            [
+              4.163202325619017e-06,
+              7.145210655344511e-05,
+              7.261587682950018e-05,
+              1.0608191217669207e-06,
+              1.7209118520488087e-07
+            ]
+          ]
+        },
+        {
+          "step": 0.000125,
+          "errors": [
+            [
+              7.946823406470443e-19,
+              1.129806955761268e-17,
+              1.777445700253946e-17,
+              3.1857703239622287e-19,
+              2.090091537465434e-21
+            ],
+            [
+              1.5227154491470867e-14,
+              2.369604993723417e-13,
+              3.51741194595009e-13,
+              1.076328651839685e-14,
+              4.4725710314662635e-17
+            ]
+          ],
+          "scales": [
+            [
+              1.167494585325166e-07,
+              2.99940918512412e-07,
+              3.5210679444145384e-07,
+              3.035045323028415e-08,
+              4.480031023167079e-10
+            ],
+            [
+              4.163202325619017e-06,
+              7.145210655344511e-05,
+              7.261587682950018e-05,
+              1.0608191217669207e-06,
+              1.7209118520488087e-07
+            ]
+          ]
+        }
+      ],
+      "side_change": null,
+      "component_maxima_by_time_order": [
+        [
+          2.988348009529387e-09,
+          6.283889262140044e-09,
+          9.677440110295688e-09,
+          1.5315902451538018e-10,
+          9.772175296836712e-13
+        ],
+        [
+          3.9201215722710196e-08,
+          3.4196825958960826e-08,
+          3.0601928342715495e-08,
+          1.4608440633167473e-09,
+          1.3312439755351128e-11
+        ],
+        [
+          1.167494585325166e-07,
+          2.99940918512412e-07,
+          3.5210679444145384e-07,
+          3.035045323028415e-08,
+          4.480031023167079e-10
+        ],
+        [
+          4.163202325619017e-06,
+          7.145210655344511e-05,
+          7.261587682950018e-05,
+          1.0608191217669207e-06,
+          1.7209118520488087e-07
+        ]
+      ],
+      "valid_for_physics_claim": false
+    },
+    {
+      "source_residual_max": 4.124358538314528e-11,
+      "source_bound_max": 3.137851411263775e-10,
+      "mass_source_max": 2.196818619779958e-12,
+      "mode": "trajectory",
+      "case": "nonlinear_modulated",
+      "intervals": 128,
+      "time": 0.1,
+      "time_refinement": 2,
+      "artifact": "nonlinear_modulated_N128_dt2_T0.1_time_jets.npz",
+      "sha256": "a583c4a2a5bcaf0943426d99a48a8cac007a7f74a8893288199c9479facd857f",
+      "source_artifact": "nonlinear_modulated_N128_dt2_T0.1.npz",
+      "cache_first": 61,
+      "controls": [
+        {
+          "step": 0.00025,
+          "errors": [
+            [
+              2.6696096217291394e-19,
+              8.382568918273577e-18,
+              1.3636065780491761e-17,
+              3.506481482338838e-18,
+              1.0341929006020798e-20
+            ],
+            [
+              2.810283371301476e-15,
+              8.557092751396156e-14,
+              1.7849530549094144e-13,
+              5.842580507587769e-14,
+              1.7329025867507819e-16
+            ]
+          ],
+          "scales": [
+            [
+              2.449469613189127e-07,
+              6.334420902195542e-07,
+              7.004508754924202e-07,
+              3.343511725229593e-08,
+              2.98650502940302e-10
+            ],
+            [
+              1.1975235963895605e-05,
+              0.00015486210867081995,
+              0.00017282282148583952,
+              1.5421629676234186e-06,
+              1.1162737258506897e-07
+            ]
+          ]
+        },
+        {
+          "step": 0.000125,
+          "errors": [
+            [
+              6.133180282611177e-19,
+              1.9421168461340624e-17,
+              1.8018984826499935e-17,
+              2.228821616911882e-19,
+              1.033639723567435e-21
+            ],
+            [
+              1.1970859145529061e-14,
+              4.1156414078624345e-13,
+              4.1351006006915686e-13,
+              7.355674056853763e-15,
+              2.9363991920791323e-17
+            ]
+          ],
+          "scales": [
+            [
+              2.449469613189127e-07,
+              6.334420902195542e-07,
+              7.004508754924202e-07,
+              3.343511725229593e-08,
+              2.98650502940302e-10
+            ],
+            [
+              1.1975235963895605e-05,
+              0.00015486210867081995,
+              0.00017282282148583952,
+              1.5421629676234186e-06,
+              1.1162737258506897e-07
+            ]
+          ]
+        }
+      ],
+      "side_change": {
+        "absolute_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            8.74826215836082e-21,
+            2.9270282283556416e-19,
+            3.990590960773637e-15,
+            6.846339275505241e-16,
+            2.6610088820631486e-19
+          ],
+          [
+            4.0442391053890567e-14,
+            1.1406325746930995e-12,
+            1.1181149830606554e-12,
+            3.227012728740955e-15,
+            1.3784443369204404e-16
+          ]
+        ],
+        "relative_by_order_component": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            3.571492420749355e-14,
+            4.620830023058808e-13,
+            5.697174634792531e-09,
+            2.047649249692736e-08,
+            8.910110165108493e-10
+          ],
+          [
+            3.3771686149501516e-09,
+            7.365472319104643e-09,
+            6.469718370801333e-09,
+            2.0925238100575117e-09,
+            1.2348622967632387e-09
+          ]
+        ]
+      },
+      "component_maxima_by_time_order": [
+        [
+          1.9248655661822274e-09,
+          7.1200431106110505e-09,
+          6.534935817883081e-09,
+          1.212631942597049e-10,
+          2.3279651498490557e-13
+        ],
+        [
+          9.807330506401351e-09,
+          2.6859713506672724e-08,
+          1.9969466790718976e-08,
+          1.4778932461997012e-09,
+          6.006925929212041e-12
+        ],
+        [
+          2.449469613189127e-07,
+          6.334420902195542e-07,
+          7.004508754924202e-07,
+          3.343511725229593e-08,
+          2.98650502940302e-10
+        ],
+        [
+          1.1975235963895605e-05,
+          0.00015486210867081995,
+          0.00017282282148583952,
+          1.5421629676234186e-06,
+          1.1162737258506897e-07
+        ]
+      ],
+      "valid_for_physics_claim": false
+    },
+    {
+      "source_residual_max": 3.44484682218687e-11,
+      "source_bound_max": 3.155180245663819e-10,
+      "mass_source_max": 2.3943185839634836e-12,
+      "mode": "trajectory",
+      "case": "nonlinear_modulated",
+      "intervals": 128,
+      "time": 0.3,
+      "time_refinement": 2,
+      "artifact": "nonlinear_modulated_N128_dt2_T0.3_time_jets.npz",
+      "sha256": "b1a898095821f54808927cc91ea7716fbae959bb19d38e755ab5781ca7180467",
+      "source_artifact": "nonlinear_modulated_N128_dt2_T0.3.npz",
+      "cache_first": 187,
+      "controls": [
+        {
+          "step": 0.00025,
+          "errors": [
+            [
+              3.8984980910593567e-19,
+              1.0756418457623157e-17,
+              3.240250424338441e-17,
+              4.234420273720204e-18,
+              9.07900515641132e-21
+            ],
+            [
+              5.2652652203499795e-15,
+              1.1780386613745926e-13,
+              3.303989323276478e-13,
+              7.052019013306906e-14,
+              1.495285029627574e-16
+            ]
+          ],
+          "scales": [
+            [
+              1.1154910225555504e-07,
+              2.7561348720408424e-07,
+              2.956620373386836e-07,
+              3.0965335864213354e-08,
+              1.9678326739885434e-10
+            ],
+            [
+              3.94386541130695e-06,
+              4.243040184699341e-05,
+              4.660923400126266e-05,
+              5.711309645844866e-07,
+              5.2689215544509587e-08
+            ]
+          ]
+        },
+        {
+          "step": 0.000125,
+          "errors": [
+            [
+              7.615856035678789e-19,
+              1.7761883857228653e-17,
+              2.6951344301990557e-17,
+              2.7865729603441375e-19,
+              5.807945273464515e-21
+            ],
+            [
+              1.9828085842058668e-14,
+              4.4295828534020656e-13,
+              6.208190674389315e-13,
+              9.125111245879877e-15,
+              1.4282734324843975e-16
+            ]
+          ],
+          "scales": [
+            [
+              1.1154910225555504e-07,
+              2.7561348720408424e-07,
+              2.956620373386836e-07,
+              3.0965335864213354e-08,
+              1.9678326739885434e-10
+            ],
+            [
+              3.94386541130695e-06,
+              4.243040184699341e-05,
+              4.660923400126266e-05,
+              5.711309645844866e-07,
+              5.2689215544509587e-08
+            ]
+          ]
+        }
+      ],
+      "side_change": null,
+      "component_maxima_by_time_order": [
+        [
+          2.9897984461948195e-09,
+          6.5173758426457196e-09,
+          9.85388610942111e-09,
+          1.531256111253504e-10,
+          9.96596617049671e-13
+        ],
+        [
+          3.920360242868131e-08,
+          3.4751195122051125e-08,
+          3.1120956082897265e-08,
+          1.4558467566081533e-09,
+          1.330466641450934e-11
+        ],
+        [
+          1.1154910225555504e-07,
+          2.7561348720408424e-07,
+          2.956620373386836e-07,
+          3.0965335864213354e-08,
+          1.9678326739885434e-10
+        ],
+        [
+          3.94386541130695e-06,
+          4.243040184699341e-05,
+          4.660923400126266e-05,
+          5.711309645844866e-07,
+          5.2689215544509587e-08
+        ]
+      ],
+      "valid_for_physics_claim": false
+    }
+  ],
+  "valid_for_physics_claim": false,
+  "scope": "Compatible Gram restoring source plus raw scalar/lapse SAT on SAME C3 data. Differentiate signed Gram time coefficients with fixed edge orientations, then complete ALL sources with Volterra. No global scalar projection. Differentiate the actual cell-exponential recurrence through time degree2, then actual RHS through derivative3. Diagnostic trajectory replay retains any failed field gates; numerical time-jet validation is not field acceptance. Nonzero source Noether residual retained, not exact source identity or physical claim.",
+  "field_evolution_passed": false,
+  "retained_field_failures": [
+    {
+      "name": "canonical_N128_dt1_T0.3_mass_constraint_gate",
+      "passed": false,
+      "detail": {
+        "error": 4.082737116738769e-12,
+        "background_scale": 2.0399621919000307e-11
+      }
+    },
+    {
+      "name": "canonical_N128_dt2_T0.3_mass_constraint_gate",
+      "passed": false,
+      "detail": {
+        "error": 4.082737116350653e-12,
+        "background_scale": 2.0399621919000323e-11
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_mass_constraint_gate",
+      "passed": false,
+      "detail": {
+        "error": 2.2122405017720008e-12,
+        "background_scale": 3.110146778502456e-11
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_mass_constraint_gate",
+      "passed": false,
+      "detail": {
+        "error": 2.2997154061058644e-11,
+        "background_scale": 4.868925891856112e-11
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.1_mass_constraint_gate",
+      "passed": false,
+      "detail": {
+        "error": 2.2122405007585947e-12,
+        "background_scale": 3.110146778502456e-11
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.3_mass_constraint_gate",
+      "passed": false,
+      "detail": {
+        "error": 2.2997154058377202e-11,
+        "background_scale": 4.86892589185611e-11
+      }
+    },
+    {
+      "name": "nonlinear_modulated_T0.1_spatial_refinement",
+      "passed": false,
+      "detail": {
+        "coarse_difference": [
+          3.210010588507754e-11,
+          6.339947594693619e-10,
+          1.4081747036905256e-12,
+          1.9784844389424312e-13
+        ],
+        "fine_difference": [
+          2.4730251438431675e-11,
+          1.7625944180622368e-10,
+          5.653903934458854e-13,
+          4.742927235983897e-14
+        ],
+        "time_difference": [
+          1.6338107047313482e-18,
+          1.0124571875222017e-15,
+          1.8424732762635804e-19,
+          4.393390648335826e-20
+        ]
+      }
+    }
+  ],
+  "passed": 193,
+  "total": 193,
+  "completed_utc": "2026-09-09T09:43:25.459483+00:00"
+}

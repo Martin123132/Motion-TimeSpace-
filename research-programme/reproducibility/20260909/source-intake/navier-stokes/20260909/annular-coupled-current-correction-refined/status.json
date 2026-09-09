@@ -1,0 +1,1842 @@
+{
+  "state": "failed",
+  "started_utc": "2026-09-09T05:58:17.976912+00:00",
+  "script_sha256": "7223e3524ef0b5ed7e04f4f50eff8a4c53ff6010225c90edea4993ecaf6f800c",
+  "inputs": {
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-reduction-broadcast\\status.json": "881da914115e43662e8ed9c6d367b79c0ee83644e64f7386b974abc90fd2a949",
+    "scripts\\annular_coupled_current_operator_20260909.py": "20e5c31f4bce2b401b11ad5e55e2cf8f9e75519b2c84557e9378ddc0bd8504ba",
+    "scripts\\derive_annular_coupled_current_reduction_20260909.py": "180b742c6daca65d523cec1ea7cf134a4c8a5c54a25687b8fc7f9f0deefd05d1",
+    "scripts\\annular_coordinate_evolution_operator_20260909.py": "cf884d6a6df0e0c9c578248bbff7ebf16011aad051a018350d9ab31c40bccbd2",
+    "scripts\\annular_evolution_operator_20260909.py": "3955c8fdf7eda801ced7d0eeefa21be6e3267f6056178664b3015c047933aed8",
+    "scripts\\annular_conservative_scalar_evolution_20260909.py": "9ed4c615b2a144ed461808747f6c80512baae6c0bac25163fbdbfe1e15198c2b",
+    "scripts\\annular_noether_completion_20260909.py": "1bcc72f03e3bd99859c8bdcb4ed55f064775d71673f68d7bb92601da61c4cb6f",
+    "source-intake\\navier-stokes\\20260909\\annular-constraint-correction-initial\\canonical.json": "6e24704a5834702cbbd1b8379dcb621cc074948a9dc81c9c80709df30425644a",
+    "source-intake\\navier-stokes\\20260909\\annular-constraint-correction-initial\\nonlinear_modulated.json": "39a36d33cabf877b4574692e5a15a5245af834eefce3cffd68cffe5296c4c222",
+    "scripts\\run_annular_coupled_current_correction_20260909.py": "7223e3524ef0b5ed7e04f4f50eff8a4c53ff6010225c90edea4993ecaf6f800c",
+    "scripts\\annular_continuum_initial_data_20260909.py": "7ae2b3489dd715780daf17d652fecc45c50165f638c46cf825d1d1f0cac0491b",
+    "scripts\\annular_boundary_preserving_completion_20260909.py": "88532e07986f620a1211b568c7a7d28dcc7f3961e47b5123bcacfe4d8c8e63dc",
+    "scripts\\annular_noether_source_projection_20260909.py": "ce89734bac822e9d507d013ff30c987e97c5d75d27ecd321322b5175a100b076",
+    "scripts\\sbp4_derived_operator_20260909.py": "065ea0be52b651d742082230fe8322a367e11fc5e20150c8f3d506d1f87e77d3",
+    "scripts\\sbp4_compatible_second_operator_20260909.py": "86c6f05f7cf0a07abe9d4caa5ca1038b9f64641085a1a4a4f03aeae3ac918a3c",
+    "source-intake\\navier-stokes\\20260909\\annular-continuum-data-initial\\status.json": "d549ddfac326aa082d3bc17160b9575f5341f97b7833d638a520292f615c7f99",
+    "source-intake\\navier-stokes\\20260909\\annular-continuum-data-initial\\canonical-degree64.json": "a2738d4edb5e8934a4c78675954ecf9e51080e906fb6fa1ca184a1ec63131700",
+    "source-intake\\navier-stokes\\20260909\\annular-continuum-data-initial\\nonlinear_modulated-degree64.json": "df50b19dffd2978b6d9a56e561e548d7b4a2bd8e8f1d171c3cae4d3a8821c5b5"
+  },
+  "checks": [
+    {
+      "name": "parent_reduction_derivation_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "parent_reduction_inputs_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_frozen_initial_lift",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_independent_offshell_defect",
+      "passed": true,
+      "detail": {
+        "absolute_difference": 1.1665025075314679e-17,
+        "stable_residual_source": "frozen exact-jet parent residual transformed to h; not zeroed"
+      }
+    },
+    {
+      "name": "canonical_N128_healthy_sampled_branch",
+      "passed": true,
+      "detail": {
+        "alpha": 0.09812507441254281,
+        "P": 1.0,
+        "Q": 1.0
+      }
+    },
+    {
+      "name": "canonical_N128_forcing_interpolation_0.037123",
+      "passed": true,
+      "detail": {
+        "error": 2.70946059870253e-18,
+        "scale": 5.2774830864341685e-09
+      }
+    },
+    {
+      "name": "canonical_N128_forcing_interpolation_0.271234",
+      "passed": true,
+      "detail": {
+        "error": 2.098294370945044e-18,
+        "scale": 6.52626310765582e-09
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 2.5402797564145388e-11,
+        "change": 1.2407709188295415e-23
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_all_row_source_Noether_identity",
+      "passed": true,
+      "detail": {
+        "residual": 6.315817622425726e-29
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 2.5402797564145388e-11,
+        "change": 4.611531914983129e-23
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_all_row_source_Noether_identity",
+      "passed": true,
+      "detail": {
+        "residual": 2.5849394142282115e-25
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_independent_offshell_defect",
+      "passed": true,
+      "detail": {
+        "absolute_difference": 1.1665025075314679e-17,
+        "stable_residual_source": "frozen exact-jet parent residual transformed to h; not zeroed"
+      }
+    },
+    {
+      "name": "canonical_N256_healthy_sampled_branch",
+      "passed": true,
+      "detail": {
+        "alpha": 0.09812507441254281,
+        "P": 1.0,
+        "Q": 1.0
+      }
+    },
+    {
+      "name": "canonical_N256_forcing_interpolation_0.037123",
+      "passed": true,
+      "detail": {
+        "error": 3.3506356918501726e-18,
+        "scale": 5.278026429974672e-09
+      }
+    },
+    {
+      "name": "canonical_N256_forcing_interpolation_0.271234",
+      "passed": true,
+      "detail": {
+        "error": 2.102415598014285e-18,
+        "scale": 6.52626310765582e-09
+      }
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 6.93532046814059e-12,
+        "change": 2.3511235662756003e-23
+      }
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_all_row_source_Noether_identity",
+      "passed": true,
+      "detail": {
+        "residual": 2.347650053937731e-26
+      }
+    },
+    {
+      "name": "canonical_N256_dt1_T0.1_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 6.93532046814059e-12,
+        "change": 9.109326495740217e-23
+      }
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_all_row_source_Noether_identity",
+      "passed": true,
+      "detail": {
+        "residual": 9.04728794979874e-26
+      }
+    },
+    {
+      "name": "canonical_N256_dt1_T0.3_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_independent_offshell_defect",
+      "passed": true,
+      "detail": {
+        "absolute_difference": 1.1665025075314679e-17,
+        "stable_residual_source": "frozen exact-jet parent residual transformed to h; not zeroed"
+      }
+    },
+    {
+      "name": "canonical_N512_healthy_sampled_branch",
+      "passed": true,
+      "detail": {
+        "alpha": 0.09812507441254281,
+        "P": 1.0,
+        "Q": 1.0
+      }
+    },
+    {
+      "name": "canonical_N512_forcing_interpolation_0.037123",
+      "passed": true,
+      "detail": {
+        "error": 3.730043586493545e-18,
+        "scale": 5.278225034145378e-09
+      }
+    },
+    {
+      "name": "canonical_N512_forcing_interpolation_0.271234",
+      "passed": true,
+      "detail": {
+        "error": 2.218791224804064e-18,
+        "scale": 6.526315934764243e-09
+      }
+    },
+    {
+      "name": "canonical_N512_dt1_T0.1_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt1_T0.1_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 1.8104880091201884e-12,
+        "change": 4.993779830862126e-23
+      }
+    },
+    {
+      "name": "canonical_N512_dt1_T0.1_all_row_source_Noether_identity",
+      "passed": true,
+      "detail": {
+        "residual": 5.153470521627826e-26
+      }
+    },
+    {
+      "name": "canonical_N512_dt1_T0.1_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt1_T0.1_physical_scalar_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 3.971471450128725e-12,
+        "scale": 1.4104410778161827e-08,
+        "legacy_boundary_error": 3.971471450128725e-12
+      }
+    },
+    {
+      "name": "canonical_N512_dt1_T0.1_lapse_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 4.1764014330646174e-19,
+        "scale": 2.7016148029606985e-14
+      }
+    },
+    {
+      "name": "canonical_N512_dt1_T0.1_mass_constraint_gate",
+      "passed": true,
+      "detail": {
+        "error": 3.04050615143267e-15,
+        "background_scale": 3.332425357183205e-11
+      }
+    },
+    {
+      "name": "canonical_N512_dt1_T0.3_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt1_T0.3_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 1.8104880091201884e-12,
+        "change": 4.1624862868758933e-22
+      }
+    },
+    {
+      "name": "canonical_N512_dt1_T0.3_all_row_source_Noether_identity",
+      "passed": true,
+      "detail": {
+        "residual": 1.1632227364026952e-25
+      }
+    },
+    {
+      "name": "canonical_N512_dt1_T0.3_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt1_T0.3_physical_scalar_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 3.05384355926765e-12,
+        "scale": 4.053904825777938e-08,
+        "legacy_boundary_error": 3.05384355926765e-12
+      }
+    },
+    {
+      "name": "canonical_N512_dt1_T0.3_lapse_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 1.1743180566794696e-17,
+        "scale": 2.490282362259045e-13
+      }
+    },
+    {
+      "name": "canonical_N512_dt1_T0.3_mass_constraint_gate",
+      "passed": true,
+      "detail": {
+        "error": 2.5495600542491266e-14,
+        "background_scale": 2.040130660312085e-11
+      }
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 1.8104880091201884e-12,
+        "change": 8.12187963950504e-23
+      }
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_all_row_source_Noether_identity",
+      "passed": true,
+      "detail": {
+        "residual": 2.4688190889796785e-26
+      }
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_physical_scalar_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 3.971471450142839e-12,
+        "scale": 1.410441077863463e-08,
+        "legacy_boundary_error": 3.971471450142839e-12
+      }
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_lapse_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 4.176408709800268e-19,
+        "scale": 2.701614802892838e-14
+      }
+    },
+    {
+      "name": "canonical_N512_dt2_T0.1_mass_constraint_gate",
+      "passed": true,
+      "detail": {
+        "error": 3.0405061381977803e-15,
+        "background_scale": 3.332425357183205e-11
+      }
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 1.8104880091201884e-12,
+        "change": 4.0339272028738354e-22
+      }
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_all_row_source_Noether_identity",
+      "passed": true,
+      "detail": {
+        "residual": 9.693522803355793e-26
+      }
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_physical_scalar_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 3.0538435585744725e-12,
+        "scale": 4.053904831788012e-08,
+        "legacy_boundary_error": 3.0538435585744725e-12
+      }
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_lapse_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 1.1743167461864984e-17,
+        "scale": 2.4902823604152785e-13
+      }
+    },
+    {
+      "name": "canonical_N512_dt2_T0.3_mass_constraint_gate",
+      "passed": true,
+      "detail": {
+        "error": 2.549560042355174e-14,
+        "background_scale": 2.040130660312085e-11
+      }
+    },
+    {
+      "name": "canonical_T0.1_spatial_refinement",
+      "passed": false,
+      "detail": {
+        "coarse_difference": [
+          1.0031901788758844e-13,
+          1.485041408579388e-12,
+          3.3169978044149796e-15,
+          2.821004921604939e-16
+        ],
+        "fine_difference": [
+          3.523998124628975e-14,
+          1.9120724576263554e-12,
+          2.510632396868872e-15,
+          4.018839735532632e-17
+        ],
+        "time_difference": [
+          5.8448436680154885e-21,
+          9.865935780742977e-18,
+          6.341248036764027e-22,
+          2.0311828034763083e-22
+        ]
+      }
+    },
+    {
+      "name": "canonical_T0.1_temporal_refinement",
+      "passed": true,
+      "detail": {
+        "coarse_difference": [
+          1.0031901788758844e-13,
+          1.485041408579388e-12,
+          3.3169978044149796e-15,
+          2.821004921604939e-16
+        ],
+        "fine_difference": [
+          3.523998124628975e-14,
+          1.9120724576263554e-12,
+          2.510632396868872e-15,
+          4.018839735532632e-17
+        ],
+        "time_difference": [
+          5.8448436680154885e-21,
+          9.865935780742977e-18,
+          6.341248036764027e-22,
+          2.0311828034763083e-22
+        ]
+      }
+    },
+    {
+      "name": "canonical_T0.3_spatial_refinement",
+      "passed": true,
+      "detail": {
+        "coarse_difference": [
+          3.0370166878959146e-12,
+          3.11236122415072e-11,
+          2.2460552795627447e-13,
+          1.2781167954018183e-15
+        ],
+        "fine_difference": [
+          9.25198430349655e-13,
+          6.399815704335194e-12,
+          3.6005029120756853e-14,
+          4.197438352521508e-16
+        ],
+        "time_difference": [
+          1.0726878183587663e-20,
+          3.278858086812619e-17,
+          3.297356794725176e-22,
+          4.326992689478042e-22
+        ]
+      }
+    },
+    {
+      "name": "canonical_T0.3_temporal_refinement",
+      "passed": true,
+      "detail": {
+        "coarse_difference": [
+          3.0370166878959146e-12,
+          3.11236122415072e-11,
+          2.2460552795627447e-13,
+          1.2781167954018183e-15
+        ],
+        "fine_difference": [
+          9.25198430349655e-13,
+          6.399815704335194e-12,
+          3.6005029120756853e-14,
+          4.197438352521508e-16
+        ],
+        "time_difference": [
+          1.0726878183587663e-20,
+          3.278858086812619e-17,
+          3.297356794725176e-22,
+          4.326992689478042e-22
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_frozen_initial_lift",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_independent_offshell_defect",
+      "passed": true,
+      "detail": {
+        "absolute_difference": 1.3849792707163212e-17,
+        "stable_residual_source": "frozen exact-jet parent residual transformed to h; not zeroed"
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_healthy_sampled_branch",
+      "passed": true,
+      "detail": {
+        "alpha": 0.09817841161401289,
+        "P": 0.9999968829208624,
+        "Q": 0.9999906487042912
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_forcing_interpolation_0.037123",
+      "passed": true,
+      "detail": {
+        "error": 4.1052750462241374e-18,
+        "scale": 1.9134306900045384e-08
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_forcing_interpolation_0.271234",
+      "passed": true,
+      "detail": {
+        "error": 2.461964126921178e-18,
+        "scale": 1.8946609701103337e-08
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 1.7173523653370064e-10,
+        "change": 3.618915179919496e-23
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_all_row_source_Noether_identity",
+      "passed": true,
+      "detail": {
+        "residual": 4.0086755759710936e-26
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 1.7173523653370064e-10,
+        "change": 1.675040740419881e-22
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_all_row_source_Noether_identity",
+      "passed": true,
+      "detail": {
+        "residual": 6.203854594147708e-25
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_independent_offshell_defect",
+      "passed": true,
+      "detail": {
+        "absolute_difference": 1.4177567987971025e-17,
+        "stable_residual_source": "frozen exact-jet parent residual transformed to h; not zeroed"
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N256_healthy_sampled_branch",
+      "passed": true,
+      "detail": {
+        "alpha": 0.09817841161401289,
+        "P": 0.9999968829208624,
+        "Q": 0.9999906487042912
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N256_forcing_interpolation_0.037123",
+      "passed": true,
+      "detail": {
+        "error": 4.779300686821134e-18,
+        "scale": 1.9134306900045384e-08
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N256_forcing_interpolation_0.271234",
+      "passed": true,
+      "detail": {
+        "error": 3.0070033586997185e-18,
+        "scale": 1.8946609701103337e-08
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 4.688613126273247e-11,
+        "change": 7.361907451721946e-23
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_all_row_source_Noether_identity",
+      "passed": true,
+      "detail": {
+        "residual": 3.521979951885938e-25
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.1_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 4.688613126273247e-11,
+        "change": 7.146840492458159e-22
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_all_row_source_Noether_identity",
+      "passed": true,
+      "detail": {
+        "residual": 1.7635143308396763e-25
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N256_dt1_T0.3_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_independent_offshell_defect",
+      "passed": true,
+      "detail": {
+        "absolute_difference": 1.4177567987971025e-17,
+        "stable_residual_source": "frozen exact-jet parent residual transformed to h; not zeroed"
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_healthy_sampled_branch",
+      "passed": true,
+      "detail": {
+        "alpha": 0.09817841161401289,
+        "P": 0.9999968829208624,
+        "Q": 0.9999906487042912
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_forcing_interpolation_0.037123",
+      "passed": true,
+      "detail": {
+        "error": 4.991680963455349e-18,
+        "scale": 1.9134306900045384e-08
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_forcing_interpolation_0.271234",
+      "passed": true,
+      "detail": {
+        "error": 3.0070033586997185e-18,
+        "scale": 1.8946609701103337e-08
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt1_T0.1_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt1_T0.1_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 1.2239777359267593e-11,
+        "change": 2.1483431471650666e-22
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt1_T0.1_all_row_source_Noether_identity",
+      "passed": true,
+      "detail": {
+        "residual": 2.6737967065923063e-25
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt1_T0.1_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt1_T0.1_physical_scalar_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 1.6311541605308652e-11,
+        "scale": 3.926765113345492e-08,
+        "legacy_boundary_error": 1.6311541605287963e-11
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt1_T0.1_lapse_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 2.6340287295342948e-18,
+        "scale": 5.122114802503546e-14
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt1_T0.1_mass_constraint_gate",
+      "passed": true,
+      "detail": {
+        "error": 9.400634589234127e-15,
+        "background_scale": 3.11048123341997e-11
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt1_T0.3_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt1_T0.3_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 1.2239777359267593e-11,
+        "change": 1.3897668266656556e-21
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt1_T0.3_all_row_source_Noether_identity",
+      "passed": true,
+      "detail": {
+        "residual": 1.8740810753154533e-25
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt1_T0.3_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt1_T0.3_physical_scalar_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 1.6279482775174807e-11,
+        "scale": 1.5647992979777524e-07,
+        "legacy_boundary_error": 1.6279482775443276e-11
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt1_T0.3_lapse_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 6.610480779856258e-17,
+        "scale": 1.1402582507465507e-12
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt1_T0.3_mass_constraint_gate",
+      "passed": true,
+      "detail": {
+        "error": 1.6375277182050995e-13,
+        "background_scale": 4.869277256470604e-11
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 1.2239777359267593e-11,
+        "change": 2.258978554094034e-22
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_all_row_source_Noether_identity",
+      "passed": true,
+      "detail": {
+        "residual": 2.908056841006738e-25
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_physical_scalar_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 1.6311541605395196e-11,
+        "scale": 3.9267651136646435e-08,
+        "legacy_boundary_error": 1.6311541605374507e-11
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_lapse_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 2.6340368927549397e-18,
+        "scale": 5.1221146831743425e-14
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.1_mass_constraint_gate",
+      "passed": true,
+      "detail": {
+        "error": 9.400634590461973e-15,
+        "background_scale": 3.11048123341997e-11
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 1.2239777359267593e-11,
+        "change": 1.73449434694713e-21
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_all_row_source_Noether_identity",
+      "passed": true,
+      "detail": {
+        "residual": 1.6155871338926322e-25
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_physical_scalar_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 1.627948276854206e-11,
+        "scale": 1.5647993037950156e-07,
+        "legacy_boundary_error": 1.6279482768810528e-11
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_lapse_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 6.610471897951572e-17,
+        "scale": 1.1402582550702914e-12
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N512_dt2_T0.3_mass_constraint_gate",
+      "passed": true,
+      "detail": {
+        "error": 1.6375277019873512e-13,
+        "background_scale": 4.869277256470604e-11
+      }
+    },
+    {
+      "name": "nonlinear_modulated_T0.1_spatial_refinement",
+      "passed": true,
+      "detail": {
+        "coarse_difference": [
+          4.008588414017448e-13,
+          2.294573630263486e-11,
+          2.4553039120494145e-14,
+          1.916237231243469e-15
+        ],
+        "fine_difference": [
+          2.898549527002423e-13,
+          1.1592655328181733e-11,
+          1.4486406113149286e-14,
+          2.821580797219985e-16
+        ],
+        "time_difference": [
+          5.593148440369514e-20,
+          9.390900017024187e-17,
+          6.232269540658611e-21,
+          2.262336542485499e-21
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_T0.1_temporal_refinement",
+      "passed": true,
+      "detail": {
+        "coarse_difference": [
+          4.008588414017448e-13,
+          2.294573630263486e-11,
+          2.4553039120494145e-14,
+          1.916237231243469e-15
+        ],
+        "fine_difference": [
+          2.898549527002423e-13,
+          1.1592655328181733e-11,
+          1.4486406113149286e-14,
+          2.821580797219985e-16
+        ],
+        "time_difference": [
+          5.593148440369514e-20,
+          9.390900017024187e-17,
+          6.232269540658611e-21,
+          2.262336542485499e-21
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_T0.3_spatial_refinement",
+      "passed": true,
+      "detail": {
+        "coarse_difference": [
+          1.6924381735680162e-11,
+          1.5664053428734998e-10,
+          1.2311572045877127e-12,
+          6.938353084275216e-15
+        ],
+        "fine_difference": [
+          4.655482837589313e-12,
+          2.6511231599630038e-11,
+          2.2534082481428826e-13,
+          2.111577790755197e-15
+        ],
+        "time_difference": [
+          1.025885939300516e-19,
+          3.1566617720320386e-16,
+          3.159752391770139e-21,
+          4.895946740278907e-21
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_T0.3_temporal_refinement",
+      "passed": true,
+      "detail": {
+        "coarse_difference": [
+          1.6924381735680162e-11,
+          1.5664053428734998e-10,
+          1.2311572045877127e-12,
+          6.938353084275216e-15
+        ],
+        "fine_difference": [
+          4.655482837589313e-12,
+          2.6511231599630038e-11,
+          2.2534082481428826e-13,
+          2.111577790755197e-15
+        ],
+        "time_difference": [
+          1.025885939300516e-19,
+          3.1566617720320386e-16,
+          3.159752391770139e-21,
+          4.895946740278907e-21
+        ]
+      }
+    },
+    {
+      "name": "all_expected_outputs_saved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "metric_corrections_evolved_not_prescribed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_bytecode_cache",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "runs": [
+    {
+      "case": "canonical",
+      "intervals": 128,
+      "time_refinement": 1,
+      "time": 0.1,
+      "artifact": "canonical_N128_dt1_T0.1.npz",
+      "sha256": "59c7a68435dca7f63e39e0027ffcdbeaf518eea013d1c6e641c3b017a290e665",
+      "dt": 0.00022271714922048998,
+      "steps": 449,
+      "coordinate_component_maxima": [
+        2.5022285876025335e-10,
+        3.5706280555465722e-09,
+        1.1472272276331308e-11,
+        2.7147122286610112e-14
+      ],
+      "current_component_maxima": [
+        2.5022285876025335e-10,
+        4.061438418424101e-10,
+        7.116023636700288e-10,
+        1.1472272276331308e-11,
+        2.7147122286610112e-14
+      ],
+      "mass_constraint_max": 5.251116093041591e-14,
+      "background_constraint_max": 3.332425357183205e-11,
+      "scalar_boundary_error": 7.017216485125326e-13,
+      "legacy_scalar_boundary_error": 7.017217179603724e-13,
+      "scalar_boundary_scale": 1.4104372106343851e-08,
+      "lapse_boundary_error": 1.4524453402350675e-17,
+      "constraint_addition_max": 5.563501901418879e-15,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        4.754948245921653e-11,
+        1.151987821457351e-14,
+        2.6246541677659566e-14
+      ],
+      "scalar_boundary_gate": true,
+      "lapse_boundary_gate": true,
+      "mass_constraint_gate": true,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "intervals": 128,
+      "time_refinement": 1,
+      "time": 0.3,
+      "artifact": "canonical_N128_dt1_T0.3.npz",
+      "sha256": "d34d91df4f4bdedc81d35318e2e94d710718c13a0ff2e78fe6c366e981c07b90",
+      "dt": 0.00022271714922048998,
+      "steps": 1347,
+      "coordinate_component_maxima": [
+        7.111717821782549e-10,
+        1.0261389875150274e-08,
+        1.2723175615610732e-11,
+        2.493837616524364e-13
+      ],
+      "current_component_maxima": [
+        7.111717821782549e-10,
+        6.086625375552854e-10,
+        8.387938177667843e-10,
+        1.2723175615610732e-11,
+        2.493837616524364e-13
+      ],
+      "mass_constraint_max": 2.8209005430775073e-13,
+      "background_constraint_max": 2.0399621919000323e-11,
+      "scalar_boundary_error": 9.723968222570774e-11,
+      "legacy_scalar_boundary_error": 9.723968222570774e-11,
+      "scalar_boundary_scale": 4.053892175127404e-08,
+      "lapse_boundary_error": 4.450002924636331e-17,
+      "constraint_addition_max": 5.389160099657135e-15,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        4.392257338419778e-09,
+        4.9469340953178465e-12,
+        8.041417049695768e-14
+      ],
+      "scalar_boundary_gate": true,
+      "lapse_boundary_gate": true,
+      "mass_constraint_gate": true,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "intervals": 256,
+      "time_refinement": 1,
+      "time": 0.1,
+      "artifact": "canonical_N256_dt1_T0.1.npz",
+      "sha256": "be0dc747de84544d78f4bcb5c61c09c6362347383562cb52a9dee550cbfe8c91",
+      "dt": 0.00011148272017837236,
+      "steps": 897,
+      "coordinate_component_maxima": [
+        2.502498676147623e-10,
+        3.5706400984714273e-09,
+        1.1472708775104117e-11,
+        2.696196541263507e-14
+      ],
+      "current_component_maxima": [
+        2.502498676147623e-10,
+        4.067567459870788e-10,
+        7.116610903349638e-10,
+        1.1472708775104117e-11,
+        2.696196541263507e-14
+      ],
+      "mass_constraint_max": 1.4540805934031463e-14,
+      "background_constraint_max": 3.332425357183205e-11,
+      "scalar_boundary_error": 5.228774737270598e-12,
+      "legacy_scalar_boundary_error": 5.228774737270598e-12,
+      "scalar_boundary_scale": 1.4104419677216753e-08,
+      "lapse_boundary_error": 2.3303844155448213e-18,
+      "constraint_addition_max": 5.569851157289048e-15,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        4.724222343969382e-10,
+        8.631761312399355e-14,
+        8.4222834406514e-15
+      ],
+      "scalar_boundary_gate": true,
+      "lapse_boundary_gate": true,
+      "mass_constraint_gate": true,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "intervals": 256,
+      "time_refinement": 1,
+      "time": 0.3,
+      "artifact": "canonical_N256_dt1_T0.3.npz",
+      "sha256": "c91b9e18081b16cefccec4a9fb577ac89019f020d1503c39773287211a374811",
+      "dt": 0.00011148272017837236,
+      "steps": 2691,
+      "coordinate_component_maxima": [
+        7.102019459279085e-10,
+        1.0265318439825718e-08,
+        1.28593847955847e-11,
+        2.4914472263146786e-13
+      ],
+      "current_component_maxima": [
+        7.102019459279085e-10,
+        6.120964915350854e-10,
+        8.574965473143317e-10,
+        1.28593847955847e-11,
+        2.4914472263146786e-13
+      ],
+      "mass_constraint_max": 3.0022358593922343e-14,
+      "background_constraint_max": 2.0401087711860752e-11,
+      "scalar_boundary_error": 1.624753800790695e-11,
+      "legacy_scalar_boundary_error": 1.624753800790695e-11,
+      "scalar_boundary_scale": 4.0538987735385543e-08,
+      "lapse_boundary_error": 7.420543550799236e-17,
+      "constraint_addition_max": 5.345570687812912e-15,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        1.4677828543825666e-09,
+        8.3353624763704e-13,
+        2.681871739771206e-13
+      ],
+      "scalar_boundary_gate": true,
+      "lapse_boundary_gate": true,
+      "mass_constraint_gate": true,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "intervals": 512,
+      "time_refinement": 1,
+      "time": 0.1,
+      "artifact": "canonical_N512_dt1_T0.1.npz",
+      "sha256": "1f6d01cd024e82e79ea8ef5ddfaff8d2410a7e39796d79bf10bccc8b87389d35",
+      "dt": 5.5772448410485224e-05,
+      "steps": 1793,
+      "coordinate_component_maxima": [
+        2.504114575248484e-10,
+        3.570637845608631e-09,
+        1.147289457950996e-11,
+        2.7016148029606985e-14
+      ],
+      "current_component_maxima": [
+        2.504114575248484e-10,
+        4.073159425175503e-10,
+        7.116462066792008e-10,
+        1.147289457950996e-11,
+        2.7016148029606985e-14
+      ],
+      "mass_constraint_max": 3.04050615143267e-15,
+      "background_constraint_max": 3.332425357183205e-11,
+      "scalar_boundary_error": 3.971471450128725e-12,
+      "legacy_scalar_boundary_error": 3.971471450128725e-12,
+      "scalar_boundary_scale": 1.4104410778161827e-08,
+      "lapse_boundary_error": 4.1764014330646174e-19,
+      "constraint_addition_max": 5.571774147729848e-15,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        7.176485923338074e-10,
+        6.721675095322735e-14,
+        3.018801224088118e-15
+      ],
+      "scalar_boundary_gate": true,
+      "lapse_boundary_gate": true,
+      "mass_constraint_gate": true,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "intervals": 512,
+      "time_refinement": 1,
+      "time": 0.3,
+      "artifact": "canonical_N512_dt1_T0.3.npz",
+      "sha256": "120e9c2a968595f90a1bbc0cd929c1016ef1bd7ee0650d34934223bca48f6a2a",
+      "dt": 5.5772448410485224e-05,
+      "steps": 5379,
+      "coordinate_component_maxima": [
+        7.098524223737678e-10,
+        1.0266277257746688e-08,
+        1.287186840539142e-11,
+        2.490282362259045e-13
+      ],
+      "current_component_maxima": [
+        7.098524223737678e-10,
+        6.127158703154242e-10,
+        8.696838332045768e-10,
+        1.287186840539142e-11,
+        2.490282362259045e-13
+      ],
+      "mass_constraint_max": 2.5495600542491266e-14,
+      "background_constraint_max": 2.040130660312085e-11,
+      "scalar_boundary_error": 3.05384355926765e-12,
+      "legacy_scalar_boundary_error": 3.05384355926765e-12,
+      "scalar_boundary_scale": 4.053904825777938e-08,
+      "lapse_boundary_error": 1.1743180566794696e-17,
+      "constraint_addition_max": 5.34213873021375e-15,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        5.517610368418548e-10,
+        1.945118404343538e-13,
+        8.488247223810188e-14
+      ],
+      "scalar_boundary_gate": true,
+      "lapse_boundary_gate": true,
+      "mass_constraint_gate": true,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "intervals": 512,
+      "time_refinement": 2,
+      "time": 0.1,
+      "artifact": "canonical_N512_dt2_T0.1.npz",
+      "sha256": "9f636588c1f462c67a294034eeceac2c908a0d3ef1c62ab5943901908cfa8fc2",
+      "dt": 2.7886224205242612e-05,
+      "steps": 3586,
+      "coordinate_component_maxima": [
+        2.504114575248893e-10,
+        3.5706378457283245e-09,
+        1.1472894579510076e-11,
+        2.701614802892838e-14
+      ],
+      "current_component_maxima": [
+        2.504114575248893e-10,
+        4.0731594252436586e-10,
+        7.116462066626722e-10,
+        1.1472894579510076e-11,
+        2.701614802892838e-14
+      ],
+      "mass_constraint_max": 3.0405061381977803e-15,
+      "background_constraint_max": 3.332425357183205e-11,
+      "scalar_boundary_error": 3.971471450142839e-12,
+      "legacy_scalar_boundary_error": 3.971471450142839e-12,
+      "scalar_boundary_scale": 1.410441077863463e-08,
+      "lapse_boundary_error": 4.176408709800268e-19,
+      "constraint_addition_max": 5.5717741477320614e-15,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        7.176485923363485e-10,
+        6.721675037939056e-14,
+        3.018806483883864e-15
+      ],
+      "scalar_boundary_gate": true,
+      "lapse_boundary_gate": true,
+      "mass_constraint_gate": true,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "intervals": 512,
+      "time_refinement": 2,
+      "time": 0.3,
+      "artifact": "canonical_N512_dt2_T0.3.npz",
+      "sha256": "d57503c78ef5945e3f33717cf18a0534af34d1f59625615097154706b63ec129",
+      "dt": 2.7886224205242612e-05,
+      "steps": 10758,
+      "coordinate_component_maxima": [
+        7.098524223733969e-10,
+        1.0266277249332292e-08,
+        1.2871868405390314e-11,
+        2.4902823604152785e-13
+      ],
+      "current_component_maxima": [
+        7.098524223733969e-10,
+        6.127158715566777e-10,
+        8.696838345579355e-10,
+        1.2871868405390314e-11,
+        2.4902823604152785e-13
+      ],
+      "mass_constraint_max": 2.549560042355174e-14,
+      "background_constraint_max": 2.040130660312085e-11,
+      "scalar_boundary_error": 3.0538435585744725e-12,
+      "legacy_scalar_boundary_error": 3.0538435585744725e-12,
+      "scalar_boundary_scale": 4.053904831788012e-08,
+      "lapse_boundary_error": 1.1743167461864984e-17,
+      "constraint_addition_max": 5.342138730274616e-15,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        5.517610367168928e-10,
+        1.9451187473310616e-13,
+        8.488237751258641e-14
+      ],
+      "scalar_boundary_gate": true,
+      "lapse_boundary_gate": true,
+      "mass_constraint_gate": true,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "intervals": 128,
+      "time_refinement": 1,
+      "time": 0.1,
+      "artifact": "nonlinear_modulated_N128_dt1_T0.1.npz",
+      "sha256": "efc1702f629a413bc42ae279377fb76661998c6b954779c9beacaa33f228e938",
+      "dt": 0.00022271714922048998,
+      "steps": 449,
+      "coordinate_component_maxima": [
+        6.991738874230102e-10,
+        9.829936342430427e-09,
+        1.2123223458720586e-10,
+        5.200332851871307e-14
+      ],
+      "current_component_maxima": [
+        6.991738874230102e-10,
+        2.5965891901712077e-09,
+        3.4227806907021324e-09,
+        1.2123223458720586e-10,
+        5.200332851871307e-14
+      ],
+      "mass_constraint_max": 4.93282400662143e-14,
+      "background_constraint_max": 3.110146778502456e-11,
+      "scalar_boundary_error": 6.663578719704738e-11,
+      "legacy_scalar_boundary_error": 6.663578719702669e-11,
+      "scalar_boundary_scale": 3.9267722141773664e-08,
+      "lapse_boundary_error": 1.506911311875429e-16,
+      "constraint_addition_max": 3.2033059434507856e-15,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        2.977078089715428e-09,
+        1.1238752097171242e-12,
+        2.723077382400775e-13
+      ],
+      "scalar_boundary_gate": true,
+      "lapse_boundary_gate": true,
+      "mass_constraint_gate": true,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "intervals": 128,
+      "time_refinement": 1,
+      "time": 0.3,
+      "artifact": "nonlinear_modulated_N128_dt1_T0.3.npz",
+      "sha256": "7cc32c36c41f2d925bf86319373a46729247b1af4bd1a517515bcf8800676b0b",
+      "dt": 0.00022271714922048998,
+      "steps": 1347,
+      "coordinate_component_maxima": [
+        3.2419269605454775e-09,
+        3.9180229497580374e-08,
+        1.5341832163471464e-10,
+        1.141694128204355e-12
+      ],
+      "current_component_maxima": [
+        3.2419269605454775e-09,
+        3.21279716209171e-09,
+        3.674812233955452e-09,
+        1.5341832163471464e-10,
+        1.141694128204355e-12
+      ],
+      "mass_constraint_max": 1.0262562788532464e-12,
+      "background_constraint_max": 4.86892589185611e-11,
+      "scalar_boundary_error": 4.878705323867755e-10,
+      "legacy_scalar_boundary_error": 4.87870532386507e-10,
+      "scalar_boundary_scale": 1.5647931677065918e-07,
+      "lapse_boundary_error": 5.399411082682581e-16,
+      "constraint_addition_max": 7.708905868715114e-15,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        2.1801401489869726e-08,
+        2.9210327499775395e-11,
+        9.75705343882405e-13
+      ],
+      "scalar_boundary_gate": true,
+      "lapse_boundary_gate": true,
+      "mass_constraint_gate": true,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "intervals": 256,
+      "time_refinement": 1,
+      "time": 0.1,
+      "artifact": "nonlinear_modulated_N256_dt1_T0.1.npz",
+      "sha256": "10aea5b824ddb8632ef2e1bd137d2e72774cd9c2536923d980532d818a3638d4",
+      "dt": 0.00011148272017837236,
+      "steps": 897,
+      "coordinate_component_maxima": [
+        7.020084788121141e-10,
+        9.831078557192446e-09,
+        1.2123481231210516e-10,
+        5.1310794107642923e-14
+      ],
+      "current_component_maxima": [
+        7.020084788121141e-10,
+        2.6017839972316235e-09,
+        3.443064734625075e-09,
+        1.2123481231210516e-10,
+        5.1310794107642923e-14
+      ],
+      "mass_constraint_max": 1.324413351997284e-14,
+      "background_constraint_max": 3.110455262055201e-11,
+      "scalar_boundary_error": 4.94168056530632e-11,
+      "legacy_scalar_boundary_error": 4.9416805653042504e-11,
+      "scalar_boundary_scale": 3.926775887502828e-08,
+      "lapse_boundary_error": 2.1023597563999712e-17,
+      "constraint_addition_max": 3.2120263464203087e-15,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        4.415575933966116e-09,
+        8.412737291009194e-13,
+        7.598175496071424e-14
+      ],
+      "scalar_boundary_gate": true,
+      "lapse_boundary_gate": true,
+      "mass_constraint_gate": true,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "intervals": 256,
+      "time_refinement": 1,
+      "time": 0.3,
+      "artifact": "nonlinear_modulated_N256_dt1_T0.3.npz",
+      "sha256": "23c794940a41273194be29d8dfe1c3e33f8ff172133d913081b632dc5beb5546",
+      "dt": 0.00011148272017837236,
+      "steps": 2691,
+      "coordinate_component_maxima": [
+        3.2357471981050273e-09,
+        3.918753075416309e-08,
+        1.5236471143722194e-10,
+        1.1406758502284719e-12
+      ],
+      "current_component_maxima": [
+        3.2357471981050273e-09,
+        3.2315899432465244e-09,
+        3.6709726119146527e-09,
+        1.5236471143722194e-10,
+        1.1406758502284719e-12
+      ],
+      "mass_constraint_max": 2.657132512028902e-13,
+      "background_constraint_max": 4.8692581727976576e-11,
+      "scalar_boundary_error": 6.957819688643912e-11,
+      "legacy_scalar_boundary_error": 6.957819688670758e-11,
+      "scalar_boundary_scale": 1.5647936869743345e-07,
+      "lapse_boundary_error": 3.729442299073365e-16,
+      "constraint_addition_max": 7.625716190092867e-15,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        6.248314510863026e-09,
+        4.909954704489085e-12,
+        1.3478643226768676e-12
+      ],
+      "scalar_boundary_gate": true,
+      "lapse_boundary_gate": true,
+      "mass_constraint_gate": true,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "intervals": 512,
+      "time_refinement": 1,
+      "time": 0.1,
+      "artifact": "nonlinear_modulated_N512_dt1_T0.1.npz",
+      "sha256": "5555385119bec8ea049fe4caf6e66d144a50d82ee5330d9fab4521d8024a4d0e",
+      "dt": 5.5772448410485224e-05,
+      "steps": 1793,
+      "coordinate_component_maxima": [
+        7.022983337648144e-10,
+        9.829918566832175e-09,
+        1.2123517028167496e-10,
+        5.122114802503546e-14
+      ],
+      "current_component_maxima": [
+        7.022983337648144e-10,
+        2.604749919376766e-09,
+        3.4434028693391353e-09,
+        1.2123517028167496e-10,
+        5.122114802503546e-14
+      ],
+      "mass_constraint_max": 9.400634589234127e-15,
+      "background_constraint_max": 3.11048123341997e-11,
+      "scalar_boundary_error": 1.6311541605308652e-11,
+      "legacy_scalar_boundary_error": 1.6311541605287963e-11,
+      "scalar_boundary_scale": 3.926765113345492e-08,
+      "lapse_boundary_error": 2.6340287295342948e-18,
+      "constraint_addition_max": 3.213100281103285e-15,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        2.9149941826481345e-09,
+        2.815006129771618e-13,
+        1.903937942853965e-14
+      ],
+      "scalar_boundary_gate": true,
+      "lapse_boundary_gate": true,
+      "mass_constraint_gate": true,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "intervals": 512,
+      "time_refinement": 1,
+      "time": 0.3,
+      "artifact": "nonlinear_modulated_N512_dt1_T0.3.npz",
+      "sha256": "faa53f773b612affcee5ef3c4a46d9a2034d81255ae664f74ba1cd281bc66503",
+      "dt": 5.5772448410485224e-05,
+      "steps": 5379,
+      "coordinate_component_maxima": [
+        3.2338112490870784e-09,
+        3.9193594154172725e-08,
+        1.5221907054757003e-10,
+        1.1402582507465507e-12
+      ],
+      "current_component_maxima": [
+        3.2338112490870784e-09,
+        3.2348703979814636e-09,
+        3.6683275373506134e-09,
+        1.5221907054757003e-10,
+        1.1402582507465507e-12
+      ],
+      "mass_constraint_max": 1.6375277182050995e-13,
+      "background_constraint_max": 4.869277256470604e-11,
+      "scalar_boundary_error": 1.6279482775174807e-11,
+      "legacy_scalar_boundary_error": 1.6279482775443276e-11,
+      "scalar_boundary_scale": 1.5647992979777524e-07,
+      "lapse_boundary_error": 6.610480779856258e-17,
+      "constraint_addition_max": 7.593164817973406e-15,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        2.9099158199856896e-09,
+        2.7857016023702997e-13,
+        4.778211048404335e-13
+      ],
+      "scalar_boundary_gate": true,
+      "lapse_boundary_gate": true,
+      "mass_constraint_gate": true,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "intervals": 512,
+      "time_refinement": 2,
+      "time": 0.1,
+      "artifact": "nonlinear_modulated_N512_dt2_T0.1.npz",
+      "sha256": "e96d5a18cef4df13d225d1b200e21819dc2b0e4af6167346258d0ac599bf4c93",
+      "dt": 2.7886224205242612e-05,
+      "steps": 3586,
+      "coordinate_component_maxima": [
+        7.022983337655563e-10,
+        9.82991856763111e-09,
+        1.2123517028167638e-10,
+        5.1221146831743425e-14
+      ],
+      "current_component_maxima": [
+        7.022983337655563e-10,
+        2.60474991937586e-09,
+        3.4434028694000315e-09,
+        1.2123517028167638e-10,
+        5.1221146831743425e-14
+      ],
+      "mass_constraint_max": 9.400634590461973e-15,
+      "background_constraint_max": 3.11048123341997e-11,
+      "scalar_boundary_error": 1.6311541605395196e-11,
+      "legacy_scalar_boundary_error": 1.6311541605374507e-11,
+      "scalar_boundary_scale": 3.9267651136646435e-08,
+      "lapse_boundary_error": 2.6340368927549397e-18,
+      "constraint_addition_max": 3.21310028110349e-15,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        2.91499418266368e-09,
+        2.8150060665756826e-13,
+        1.903943843421923e-14
+      ],
+      "scalar_boundary_gate": true,
+      "lapse_boundary_gate": true,
+      "mass_constraint_gate": true,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "intervals": 512,
+      "time_refinement": 2,
+      "time": 0.3,
+      "artifact": "nonlinear_modulated_N512_dt2_T0.3.npz",
+      "sha256": "9809dbe43f01c4c6bdcb47ec05ffc95fd4b1c1c43996fc96c1ae7402f2ccb033",
+      "dt": 2.7886224205242612e-05,
+      "steps": 10758,
+      "coordinate_component_maxima": [
+        3.2338112490009197e-09,
+        3.91935940735857e-08,
+        1.5221907054795299e-10,
+        1.1402582550702914e-12
+      ],
+      "current_component_maxima": [
+        3.2338112490009197e-09,
+        3.2348704099165197e-09,
+        3.6683275455032633e-09,
+        1.5221907054795299e-10,
+        1.1402582550702914e-12
+      ],
+      "mass_constraint_max": 1.6375277019873512e-13,
+      "background_constraint_max": 4.869277256470604e-11,
+      "scalar_boundary_error": 1.627948276854206e-11,
+      "legacy_scalar_boundary_error": 1.6279482768810528e-11,
+      "scalar_boundary_scale": 1.5647993037950156e-07,
+      "lapse_boundary_error": 6.610471897951572e-17,
+      "constraint_addition_max": 7.593164817455637e-15,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        2.909915818799447e-09,
+        2.785704090261777e-13,
+        4.778204628354641e-13
+      ],
+      "scalar_boundary_gate": true,
+      "lapse_boundary_gate": true,
+      "mass_constraint_gate": true,
+      "valid_for_physics_claim": false
+    }
+  ],
+  "comparisons": [
+    {
+      "case": "canonical",
+      "time": 0.1,
+      "spatial_pass": false,
+      "temporal_pass": true,
+      "coarse_difference": [
+        1.0031901788758844e-13,
+        1.485041408579388e-12,
+        3.3169978044149796e-15,
+        2.821004921604939e-16
+      ],
+      "fine_difference": [
+        3.523998124628975e-14,
+        1.9120724576263554e-12,
+        2.510632396868872e-15,
+        4.018839735532632e-17
+      ],
+      "time_difference": [
+        5.8448436680154885e-21,
+        9.865935780742977e-18,
+        6.341248036764027e-22,
+        2.0311828034763083e-22
+      ]
+    },
+    {
+      "case": "canonical",
+      "time": 0.3,
+      "spatial_pass": true,
+      "temporal_pass": true,
+      "coarse_difference": [
+        3.0370166878959146e-12,
+        3.11236122415072e-11,
+        2.2460552795627447e-13,
+        1.2781167954018183e-15
+      ],
+      "fine_difference": [
+        9.25198430349655e-13,
+        6.399815704335194e-12,
+        3.6005029120756853e-14,
+        4.197438352521508e-16
+      ],
+      "time_difference": [
+        1.0726878183587663e-20,
+        3.278858086812619e-17,
+        3.297356794725176e-22,
+        4.326992689478042e-22
+      ]
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.1,
+      "spatial_pass": true,
+      "temporal_pass": true,
+      "coarse_difference": [
+        4.008588414017448e-13,
+        2.294573630263486e-11,
+        2.4553039120494145e-14,
+        1.916237231243469e-15
+      ],
+      "fine_difference": [
+        2.898549527002423e-13,
+        1.1592655328181733e-11,
+        1.4486406113149286e-14,
+        2.821580797219985e-16
+      ],
+      "time_difference": [
+        5.593148440369514e-20,
+        9.390900017024187e-17,
+        6.232269540658611e-21,
+        2.262336542485499e-21
+      ]
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.3,
+      "spatial_pass": true,
+      "temporal_pass": true,
+      "coarse_difference": [
+        1.6924381735680162e-11,
+        1.5664053428734998e-10,
+        1.2311572045877127e-12,
+        6.938353084275216e-15
+      ],
+      "fine_difference": [
+        4.655482837589313e-12,
+        2.6511231599630038e-11,
+        2.2534082481428826e-13,
+        2.111577790755197e-15
+      ],
+      "time_difference": [
+        1.025885939300516e-19,
+        3.1566617720320386e-16,
+        3.159752391770139e-21,
+        4.895946740278907e-21
+      ]
+    }
+  ],
+  "valid_for_physics_claim": false,
+  "scope": "Ordinary linearized coupled scalar/mass/lapse correction about the saved approximate parent. Constraint-reduced current formulation, actual nonzero parent defects, fixed continuum initial lift, coupled scalar characteristic boundary and outer lapse boundary. No manufactured solution/forcing, no first-u or full nonlinear claim.",
+  "parameters": {
+    "N": [
+      128,
+      256,
+      512
+    ],
+    "T": 0.3,
+    "outputs_T": [
+      0.1,
+      0.3
+    ],
+    "epsilon": 0.1,
+    "sigma": 0.05,
+    "cfl": 0.15,
+    "time_interpolation_intervals": 192,
+    "dissipation": 0,
+    "mass_completion": "interior q-source projection, fixed endpoint q/lapse sources, then exact transformation to current h",
+    "constraint_addition": "-f_mu*delta_J-delta_f_mu*J_background retained explicitly"
+  },
+  "gates": {
+    "spatial_reduction": 1.3,
+    "absolute_refinement_floor": 1e-16,
+    "time_halving_fraction_of_mesh_difference": 0.1,
+    "boundary_relative": 0.01,
+    "boundary_floor": 1e-22,
+    "mass_constraint_fraction_of_background": 0.05,
+    "mass_constraint_floor": 1e-16
+  },
+  "active_job": null,
+  "passed": 126,
+  "total": 127,
+  "completed_utc": "2026-09-09T06:03:52.347664+00:00"
+}

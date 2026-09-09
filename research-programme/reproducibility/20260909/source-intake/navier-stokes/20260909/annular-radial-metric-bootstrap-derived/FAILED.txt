@@ -1,0 +1,6 @@
+2026-09-09 first radial-bound validation attempt stopped during JSON output.
+The positive_chart_gate was a NumPy boolean, which the standard JSON encoder
+does not serialize. No completed result or COMPLETE marker was written.
+The executed source is preserved here. The owner now explicitly converts
+that gate to a Python bool and reruns in the separate -v2 output directory.
+No equation, bound, data, tolerance or physics acceptance gate was changed.

@@ -1,0 +1,2432 @@
+{
+  "state": "failed",
+  "started_utc": "2026-09-09T09:39:04.693088+00:00",
+  "script_sha256": "edf0046dd6073b176185490cdd377debfa5f24d3270fff36a0f8e1584a5d87f0",
+  "inputs": {
+    "source-intake\\navier-stokes\\20260909\\annular-compatible-current-timestep-qualified\\status.json": "20651f3a3f5fb973ed5cbe8e46b570c172648aea0f3e0632103ea3fdd59bcce1",
+    "scripts\\derive_annular_compatible_current_timestep_20260909.py": "245dad181bf8926ab5fc2270a1741eef3197f02256b40d721bb2665bbda6ce5c",
+    "source-intake\\navier-stokes\\20260909\\annular-compatible-current-time-jets-preflight\\status.json": "39726b79032cf4e621cdd623a4f38e5da8e55addcc0a54788572f3e842bda83d",
+    "source-intake\\navier-stokes\\20260909\\annular-compatible-current-restoring-source-derived\\status.json": "6bcacc2d786abf343a09a9a00e9e20d8842d959f52c77dc85766eb59ece483fb",
+    "scripts\\derive_annular_compatible_current_restoring_source_20260909.py": "4a69dac57a708c85443008761f50ab41ca9cea5b0936382c4ad58d9408b85559",
+    "scripts\\sbp4_compatible_second_operator_20260909.py": "86c6f05f7cf0a07abe9d4caa5ca1038b9f64641085a1a4a4f03aeae3ac918a3c",
+    "scripts\\sbp4_derived_operator_20260909.py": "065ea0be52b651d742082230fe8322a367e11fc5e20150c8f3d506d1f87e77d3",
+    "scripts\\annular_volterra_source_completion_20260909.py": "158ec29d76d4b9de73065697ebc3a91b04377f718c8aa85e57e6a84bac818106",
+    "scripts\\annular_coupled_current_time_jets_20260909.py": "0622610d2da611e066aff45e42e03675eb57b2099eda7bfff1ac711c3d67a95b",
+    "source-intake\\navier-stokes\\20260909\\sbp4-second-derivative-derived\\status.json": "7bceb95a043ac8055789a785b8906177c5b912768c32a3007aea94d3f7cb8fe5",
+    "source-intake\\navier-stokes\\20260909\\sbp4-operator-derived\\coefficients.json": "973a0cee5f2006c9d0bfb6c4f9e14af9e4c5a83a708005257ab1095091314ae1",
+    "source-intake\\navier-stokes\\20260909\\annular-current-driving-and-passivity-qualified\\status.json": "07671f8494d3642079643de1264a24cd8fa8ddcedbe89425f99344e4b7042f88",
+    "scripts\\derive_annular_current_driving_and_passivity_qualified_20260909.py": "3935fec80ac47b1edb95c9ffb7221e85147a4d4a70c316d0282b127f241918c9",
+    "source-intake\\navier-stokes\\20260909\\annular-current-driving-and-passivity-obstruction\\status.json": "eee7e1659813b4b13c1dcf8a84c133949d1f7756202a6172b2f572fd9182c6b7",
+    "source-intake\\navier-stokes\\20260909\\annular-current-driving-and-passivity-obstruction\\executed-script.py": "ce71bc8e9581d7ac09b3c88dd44949a667a5d36b42b0269700fe9b3b64d33b88",
+    "scripts\\derive_annular_current_driving_and_passivity_20260909.py": "ce71bc8e9581d7ac09b3c88dd44949a667a5d36b42b0269700fe9b3b64d33b88",
+    "source-intake\\navier-stokes\\20260909\\annular-mass-bulk-parity-channels\\status.json": "288b2488f8985c36d9c1f64416111211ce0e8639949f2839f695c7cbf3ca22bb",
+    "scripts\\diagnose_annular_mass_bulk_parity_channels_20260909.py": "8ec215a4a800ec4537b4397db08cf9c721fcafdfcc5020ef63bd4572e344d49e",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-matched-comparison-portable\\status.json": "b3b1d9738c09f21bdc6a18f06dfba16d56f980bafa43334630c9fa846266b3f8",
+    "scripts\\compare_annular_projected_volterra_mass_repair_portable_20260909.py": "2bd1201dbfc807563d32ab19af0c1d59eadf7900475877e2ed939605bba66244",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-matched-comparison\\status.json": "0dd435776338e73486f6dffb0052703d98399bd220dacce5546a392a213c7c82",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-matched-comparison\\executed-script.py": "bc1b2b5d4e913e0ff2da8b571b56f806fd8e2a19c86e9fdd4e323f648712f084",
+    "scripts\\compare_annular_projected_volterra_mass_repair_20260909.py": "bc1b2b5d4e913e0ff2da8b571b56f806fd8e2a19c86e9fdd4e323f648712f084",
+    "source-intake\\navier-stokes\\20260909\\annular-trace-regularity-lower-bounds\\status.json": "3bb731b77039a4f1a39908f882f93bf01e05b36efc236fff76e5d9f59b4637da",
+    "source-intake\\navier-stokes\\20260909\\annular-trace-regularity-lower-bounds\\executed-script.py": "3a330b59b854c2615c0c0e0128ed5a79d2c9e781b532b2df9088f3757ae4daa8",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\status.json": "30f1537a71b1a0375cb2422956f4e4005aea547e99aeacb0dbe27cc94db7d120",
+    "source-intake\\navier-stokes\\20260909\\annular-normal-constraint-H4-diagnosis\\status.json": "1a0a972c3c32c12fba8b9b5aecc916945cc97cf47369aac53c15bef540f8edc8",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\executed-script.py": "980b74839be27757678ecd26d1e64ce91d22a390863248f6819b172a6c4685f9",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\status.json": "80ecaa81956bdb745a88b0dfc2f556f416027232ce15d11081c7b1c423054d30",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\executed-script.py": "272b666fec41e8882d6db8198200537928851c5e36e961c89fc35cc7ae37a726",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\status.json": "21f1d122fbeb933d31af3b5168fba9fe905f31a73e55483968e9af4b58822020",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\executed-script.py": "cc70564b11d4481839b436d07703cdcba8956ae90cf2bddb821bff2bd33c6662",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-reduction-broadcast\\status.json": "881da914115e43662e8ed9c6d367b79c0ee83644e64f7386b974abc90fd2a949",
+    "scripts\\annular_coupled_current_operator_20260909.py": "20e5c31f4bce2b401b11ad5e55e2cf8f9e75519b2c84557e9378ddc0bd8504ba",
+    "scripts\\derive_annular_coupled_current_reduction_20260909.py": "180b742c6daca65d523cec1ea7cf134a4c8a5c54a25687b8fc7f9f0deefd05d1",
+    "scripts\\annular_coordinate_evolution_operator_20260909.py": "cf884d6a6df0e0c9c578248bbff7ebf16011aad051a018350d9ab31c40bccbd2",
+    "scripts\\annular_evolution_operator_20260909.py": "3955c8fdf7eda801ced7d0eeefa21be6e3267f6056178664b3015c047933aed8",
+    "scripts\\annular_conservative_scalar_evolution_20260909.py": "9ed4c615b2a144ed461808747f6c80512baae6c0bac25163fbdbfe1e15198c2b",
+    "scripts\\annular_noether_completion_20260909.py": "1bcc72f03e3bd99859c8bdcb4ed55f064775d71673f68d7bb92601da61c4cb6f",
+    "source-intake\\navier-stokes\\20260909\\annular-constraint-correction-initial\\canonical.json": "6e24704a5834702cbbd1b8379dcb621cc074948a9dc81c9c80709df30425644a",
+    "source-intake\\navier-stokes\\20260909\\annular-constraint-correction-initial\\nonlinear_modulated.json": "39a36d33cabf877b4574692e5a15a5245af834eefce3cffd68cffe5296c4c222",
+    "scripts\\run_annular_coupled_current_correction_20260909.py": "cc70564b11d4481839b436d07703cdcba8956ae90cf2bddb821bff2bd33c6662",
+    "scripts\\annular_continuum_initial_data_20260909.py": "7ae2b3489dd715780daf17d652fecc45c50165f638c46cf825d1d1f0cac0491b",
+    "scripts\\annular_boundary_preserving_completion_20260909.py": "88532e07986f620a1211b568c7a7d28dcc7f3961e47b5123bcacfe4d8c8e63dc",
+    "scripts\\annular_noether_source_projection_20260909.py": "ce89734bac822e9d507d013ff30c987e97c5d75d27ecd321322b5175a100b076",
+    "source-intake\\navier-stokes\\20260909\\annular-analytic-third-corner-initial-data\\status.json": "9c22536e38bf8479419a1ec526c0f7a3b688bc65d050f56e905c1b57b763a79a",
+    "scripts\\annular_third_corner_initial_data_20260909.py": "ac6f3ef627a88496a7639bc8dacfc08583052f8c2e22ba5c80ca21845a8ad480",
+    "scripts\\annular_analytic_corner_jets_20260909.py": "fdb1b59a03d37cce85de443cfae9c2a246d829e9716251b6d942fded15bf40ea",
+    "scripts\\derive_annular_analytic_third_corner_data_20260909.py": "819278bc5dd3b6f0781413a6cc2042c3055a65dede06d5a1106e3a53bf7ae5b4",
+    "scripts\\annular_fifth_order_jet_20260909.py": "02db75655f95f3d64fba5246b7d7eca9ab4cdba35cc5b3aa0cb8be53072814ef",
+    "scripts\\annular_second_corner_initial_data_20260909.py": "ec895bc2d29b5191d684d11ab4373d91feca7acdfaf8b97b715b30b117eef807",
+    "scripts\\annular_current_corner_compatibility_20260909.py": "bd7515936a8bc0f062519ac38881c66ea9f40cc93acee56eb5afa2b607528d07",
+    "source-intake\\navier-stokes\\20260909\\annular-second-corner-truncation-diagnosis\\status.json": "ec2d7da1e7c6c04687189362b91bce41305af20816c5e37562e87e6e6d1c10cf",
+    "source-intake\\navier-stokes\\20260909\\annular-second-corner-initial-data\\canonical-degree64.json": "c6403afcede88ccdf08664072f5a3dcc4f4ac609f9fbecfb5dcb2144d1e8cbb4",
+    "source-intake\\navier-stokes\\20260909\\annular-second-corner-initial-data\\nonlinear_modulated-degree64.json": "c0897535cd59a37b3ad69f03b7db1d1d0f8b2407b77e573c0ff6754b80e71998",
+    "source-intake\\navier-stokes\\20260909\\annular-analytic-third-corner-initial-data\\canonical-degree64.json": "fe232378a70a9ac9d328c750fffcc8bfbd16ddfe8e4062c321bcc05b7ef662cf",
+    "source-intake\\navier-stokes\\20260909\\annular-analytic-third-corner-initial-data\\nonlinear_modulated-degree64.json": "9772d01c0514176c10ee762220acbcaa95f4341f4d63dd0073c9d214a39696e5",
+    "scripts\\derive_annular_coupled_current_time_jets_20260909.py": "272b666fec41e8882d6db8198200537928851c5e36e961c89fc35cc7ae37a726",
+    "scripts\\annular_correction_time_jets_20260909.py": "ec5decfa95ad31a42908801d3e98002ac70d04b1e1b19636ce699f4a6cff5e9a",
+    "scripts\\navier_stokes_source_audit_20260908.py": "817c4cdff5bf22a88deea7771b4bbc960690397512bc07cdb639ee9ab33e4f0b",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N128_dt1_T0.1.npz": "c1256753a985a3acd464ec9698d949ead2aea8656b5e781be621bb2b580107b1",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N128_dt1_T0.3.npz": "e9fb136c2fffbb4b8e368ff8f035f8184e035e540f3fca2eb7b01f785e080fc7",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N256_dt1_T0.1.npz": "1e84fd16a7ac0f290610aae32a1fa5ad9be568949e28ad5f5d674cc635cd13a7",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N256_dt1_T0.3.npz": "5db7cda772ec2d61917c400da8cd7e86bb1ce4f242a7dc7dc4f33da03c840d95",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N512_dt2_T0.1.npz": "cbfafb567aa71dc6bba30f8e5f03952509bee3ec1867da0a5c1f880f1e5519fa",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\canonical_N512_dt2_T0.3.npz": "8c927efc64a7f7e2d7034b58e627fb29bd27d3230610272ba3ac511ce2030d78",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N128_dt1_T0.1.npz": "614f9586a008541b86147f8ece40c2ac80033fff24f7c33d8dcd383b22abec3e",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N128_dt1_T0.3.npz": "13a11854d8b8414d9bd42e6137f3de867d3670428bb673090b00523c2aa86e85",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N256_dt1_T0.1.npz": "59bb2e53fc99dce96580fd1276199edbf5d3dc59d79edb7c67f3ee51ecb0a524",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N256_dt1_T0.3.npz": "54376c906efebb1eb3667d2984e7ef6977078e93cda97b54862a4fc4c1a3da3d",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N512_dt2_T0.1.npz": "d83270ac8f8186dc1dc41890fe5169ea62d9e9e2d476b3328c5911e3d6c68d55",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-analytic-third-corner\\nonlinear_modulated_N512_dt2_T0.3.npz": "229e310052f3eb45ea8c2b89ff33b8a4537a0d1f0f0e2443b20fdf31914e00f5",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-curvature-transfer\\status.json": "3c6716ac3cc3025c14c411f03c61dc3717b6e2e1551ee042d3e4b60dd08c8ae8",
+    "scripts\\annular_current_normal_reconstruction_20260909.py": "a99bf58d7267416f74b8b95f7ec1b5c691fd7074683bb1616cfb81676563e9af",
+    "scripts\\derive_annular_current_normal_reconstruction_20260909.py": "980b74839be27757678ecd26d1e64ce91d22a390863248f6819b172a6c4685f9",
+    "scripts\\annular_coupled_curvature_transfer_20260909.py": "271ced21b5857d8a87229d16af768d3d14ee071b76905c82607c41c7c93b262a",
+    "scripts\\annular_curvature_timejet_transfer_20260909.py": "5b07d93df2021227f3b04a471d7cdf3ebe616fc5abd65731f8ec58bff8315b74",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\canonical_N128_dt1_T0.1_time_jets.npz": "b4fb8237f6b9610ab203d829ad1a066f6932cae9ed7a723d646b3a30590f4a1e",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\canonical_N128_dt1_T0.3_time_jets.npz": "abcd7c59e78516a554d67d2d10a766812dc92a1f562400ffb0737c2587f448fd",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\canonical_N256_dt1_T0.1_time_jets.npz": "a58f9065dbfc39438049250b6823ce20fea3d5d5129b76a1e5d988a401976f14",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\canonical_N256_dt1_T0.3_time_jets.npz": "1c4e8307973e74840ef2914057a6bb3cbff813f5c7f1bc15a5f8b33b48e2b9f6",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\canonical_N512_dt2_T0.1_time_jets.npz": "f78b2fb09e0a16d06ab4d6eadf64d7077440e75d11d0be643aaaa772ee28da8f",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\canonical_N512_dt2_T0.3_time_jets.npz": "e0862ebeb9dc348f6e9a40e358ae8bdf18bac9d47b730ef13299a1ca503b7606",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\nonlinear_modulated_N128_dt1_T0.1_time_jets.npz": "424142e1657ec5a90432bcd2a8836198f8e95f8fb6389b2777422b7169862894",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\nonlinear_modulated_N128_dt1_T0.3_time_jets.npz": "2a4c9b48f8685800feeee0b8e991445d481f0d090c6d56d3007e36d1d3406e26",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\nonlinear_modulated_N256_dt1_T0.1_time_jets.npz": "30e2c8dfdd7a9c5a735450c62c9a46759de58fd12cc192a2b3d75a3624dc4f69",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\nonlinear_modulated_N256_dt1_T0.3_time_jets.npz": "49c079750552b3350e1cc33e47ba584b755c7e239c2f27ab3f0853359737783e",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\nonlinear_modulated_N512_dt2_T0.1_time_jets.npz": "942f760b3df11f54998f2419d624414acf8ebe6609e4fbe4b48ebf2cc0c295f0",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-time-jets\\nonlinear_modulated_N512_dt2_T0.3_time_jets.npz": "bdc45988cbebdca8cf69e5c3ab1250abb439c9b7871bc6967ec23072c82aea22",
+    "scripts\\diagnose_annular_normal_constraint_and_H4_20260909.py": "4ae9434f2d3990bbb4f14303ce52e3d29ff00f9bb28f3e2c933180f6f644a650",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N128_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "adf288606b787bd05e51fd3dc66c49b67cd28ff489781b8a55227a570e99e02c",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N128_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "cb2de5e6196e70de2d5a50593476d29f7033a19a87acb3a7ebdc272c769b3fb4",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N128_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "cc07cf182f8ea85e552397fb9835f6e4fbddd5ee2e044a520f34643891ddd227",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N128_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "d672e4649d7433fe8c4eff9392ecbd1ddb28a27b648f4be06876f166a78370ed",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N256_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "5b9f3ebb98e46edb6f719aa0b31b1a8cac88caf2256672ac619dbbeaa50573f4",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N256_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "cad0ffcae50a21c86d77a01780a9a8e353c01249f1881e4b2ac323c222afabc6",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N256_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "ca062239f32ab24506c7c704827f509e72688425a5b4efe242a7ddf42ac214e5",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N256_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "48315d5af1c371b7c27022608b5ff8b1fba5635df63801c5149b9864c4023d7c",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N512_dt2_T0.1_time_jets_poly7_normal_curvature.npz": "5b0c1df82558dcf90ef5dfcf97eb5e1ced56e0ba1ec5b82c31d1ad657234f155",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N512_dt2_T0.1_time_jets_poly9_normal_curvature.npz": "6b49bf445dd60c254c9ab61a19b27fc3450e27c3cad67b878fde2fc002356a8d",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N512_dt2_T0.3_time_jets_poly7_normal_curvature.npz": "4468e7c05099dd2b6c6717030b5c1dfc6b7045cd30591fdd8b6c6c1488f3b7d8",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\canonical_N512_dt2_T0.3_time_jets_poly9_normal_curvature.npz": "6935c9f311daa480bdc48a509d8c0ee39264721a277299f5f72ab7ecfa457eaa",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "085cc504ca09b4fc010b65a328db86fd1a9835ef3568bf12d87e6cbd4eb07230",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "bec4f0c01453a16caf408935d6c5ad9f6c761561443491baf9dc6a87a36958ea",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "6dc4d9e2e6f01a3d08ae97e5b2d27f9d842d5b15a247b1e18e8542080b023104",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "6a29cf4eab9422cc04c4f2bb693ddadb95e49dfd9ba5d876f81acc826b16c7d0",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "4b376aa628d80cedfbf5e2777c842ecdb27de5216110caf7984113e8cc767432",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "d0de7b843b001869a49561d36176d8d07016f7c38b5b0dccb61208475fe002f5",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "18cb4b1aafed9c2dc137b3c2b98628105efcf3e26e03287b8364a04b98dc6c57",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "9ff60c328cf3631a83c9c839e596d3de301644710d615f57dc03c5b83c6985fc",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_normal_curvature.npz": "6f7d13f51c1e5acc6168565b674b594e144905918eec21c5bcb008d9da914b67",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_normal_curvature.npz": "eee90f3aeb0c6a9e810dfb8fe45ddbb9acc5745edb407d65e204e3596566f733",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_normal_curvature.npz": "6a4bcb7e23d3d667080500318d33a74131dc8c37c54dd9b7b224682b352e1641",
+    "source-intake\\navier-stokes\\20260909\\annular-current-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_normal_curvature.npz": "85f46952ada2adeb39f942880f1d19e89c62d4af99fde5deadff044f4e0b9096",
+    "scripts\\derive_annular_trace_regularity_lower_bounds_20260909.py": "3a330b59b854c2615c0c0e0128ed5a79d2c9e781b532b2df9088f3757ae4daa8",
+    "source-intake\\navier-stokes\\20260909\\annular-centered-constraint-mode-diagnosis\\status.json": "2632a60dd6fd39c2d1b9fdd9a81d82dfd4a571197440a256f44b9c8c76777229",
+    "source-intake\\navier-stokes\\20260909\\annular-centered-constraint-mode-diagnosis\\executed-script.py": "512c6a5d1ae1b80a62bbb7c80b861e9d9ecdb5b030a29ca928af24562707f72e",
+    "scripts\\diagnose_annular_centered_constraint_mode_20260909.py": "512c6a5d1ae1b80a62bbb7c80b861e9d9ecdb5b030a29ca928af24562707f72e",
+    "source-intake\\navier-stokes\\20260909\\annular-normal-spatial-refinement-validation\\status.json": "0dca9b34cebfb94e44c0972d49e96f6f804b8bd713788a9fbd592686b6d6d690",
+    "source-intake\\navier-stokes\\20260909\\annular-normal-spatial-refinement-validation\\canonical_N1024_dt2_T0.1_poly7_normal_refined.npz": "1bcfe53684cfec44e40c61bca04c5a0c03e345a25fc7fee797bc37ebb003ea84",
+    "source-intake\\navier-stokes\\20260909\\annular-normal-spatial-refinement-validation\\canonical_N1024_dt2_T0.3_poly7_normal_refined.npz": "3ceb193bed707a2a4754f3447964e57540c51cac46ea41474444be3dedbf2058",
+    "source-intake\\navier-stokes\\20260909\\annular-normal-spatial-refinement-validation\\nonlinear_modulated_N1024_dt2_T0.1_poly7_normal_refined.npz": "a0da611982d5d0025524cca01a48fb80d42b3b8e03b26957acc99e11a8388df1",
+    "source-intake\\navier-stokes\\20260909\\annular-normal-spatial-refinement-validation\\nonlinear_modulated_N1024_dt2_T0.3_poly7_normal_refined.npz": "488afd9b9caa68e8d98043539f5f907eae5b92b055f8ab81527befd0294394d3",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\status.json": "dc70c8d9a043a8c5dd2cf0a70324c794fbb6db418e7287f3f7d75a679cee6aa7",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\executed-script.py": "f8a26c38188546032e37c99ec899a4502253ff448d723912db29e2749e0c693e",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-trajectory\\status.json": "2bac6c0b21f82084f2ad1c1795746d22a75978ca2fd25e53ed51e68c60c6fc63",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-trajectory\\executed-script.py": "a5237a143fd49f074e9f2241f1eb4323ed11d8399b5be646b4c416ed85ba9d1c",
+    "source-intake\\navier-stokes\\20260909\\annular-volterra-source-completion-derived\\status.json": "b558693445fea0bdb35b7911861e492421ded53881e13e6d110577bc0754b86e",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-correction-refined\\status.json": "d6d0c133d38b9a1d8b41f288156e95a0522b6d84cd83d3e628cfb4e48330184f",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-correction-refined\\canonical_N512_dt2_T0.1.npz": "9f636588c1f462c67a294034eeceac2c908a0d3ef1c62ab5943901908cfa8fc2",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-correction-refined\\canonical_N512_dt2_T0.3.npz": "d57503c78ef5945e3f33717cf18a0534af34d1f59625615097154706b63ec129",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-correction-refined\\nonlinear_modulated_N512_dt2_T0.1.npz": "e96d5a18cef4df13d225d1b200e21819dc2b0e4af6167346258d0ac599bf4c93",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-correction-refined\\nonlinear_modulated_N512_dt2_T0.3.npz": "9809dbe43f01c4c6bdcb47ec05ffc95fd4b1c1c43996fc96c1ae7402f2ccb033",
+    "scripts\\derive_annular_volterra_source_completion_20260909.py": "b55b7ca628218d373a475f581ef46deb2b8c25f6478e37f2898d86e819e5cc76",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-third-corner\\status.json": "fe41ae8828d19d43f0ca42c00182b579912196c1dde232a29dfd73733d97fe91",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-third-corner\\executed-script.py": "d15ecdfe6cde56fee0a21f5203d79e14126c3a6738b57e0124fdc372059115b1",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-preflight\\status.json": "f8d6d0d1c5553b26a433ddb5e29c300c819843bed5622df717fd044460ce1aa6",
+    "scripts\\annular_projected_volterra_source_20260909.py": "2fa54d4cbd5814d5efcf3faa2c00e13f21bf0f935de0528afff8be7b9cb36fd5",
+    "scripts\\annular_projected_volterra_time_jets_20260909.py": "781cf3dacb4031df3c75806a301a16dc5e7b954f18363be9310965a0ce2362d0",
+    "scripts\\derive_annular_projected_volterra_time_jets_20260909.py": "5cd889f58f60387dbc354075920756c9cb56db45efd31109c895fd4be530899e",
+    "scripts\\replay_annular_projected_volterra_time_jets_20260909.py": "a5237a143fd49f074e9f2241f1eb4323ed11d8399b5be646b4c416ed85ba9d1c",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-third-corner\\canonical_N128_dt1_T0.1.npz": "4d507cb0f3acb2995d04a6fd4478688010e39f87ae3a02dd1c37fa3816e23bfb",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-third-corner\\canonical_N128_dt1_T0.3.npz": "cfe81a36d9d4f0cb3ea56fac5552b1c78faffa9050d74cadf38b99f47f3c519e",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-third-corner\\canonical_N256_dt1_T0.1.npz": "6d75f47f3cf9ce2e02a78fd3f1b4c5a6d5f81a421b4e1ed5c004e8c9fe5cee88",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-third-corner\\canonical_N256_dt1_T0.3.npz": "3c4183c051018f204fd101b159fdfc874a08a0225ae9c6170418aea4400999aa",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-third-corner\\canonical_N512_dt2_T0.1.npz": "8b21a9c6cd9ef524fb925d9f32e7ce73c1b59030dd90e12ff32b290323905270",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-third-corner\\canonical_N512_dt2_T0.3.npz": "9307691c46cefd91f6246b6821f803feea2b40f4d0dfda375f5168db7be11b6c",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-third-corner\\nonlinear_modulated_N128_dt1_T0.1.npz": "81bdb4c617281b57efa571ef57eff12028da0200db91a2df9bd3f3b5f8bb11f6",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-third-corner\\nonlinear_modulated_N128_dt1_T0.3.npz": "0d5750fa0cb564b1fd457c32cc069cdef5f6578d4cfe891610afa2372b0cbf9d",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-third-corner\\nonlinear_modulated_N256_dt1_T0.1.npz": "2c2e6afe648423e01a7edf55cb20af4d345f4809c8699471bab21e2d14ce47e4",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-third-corner\\nonlinear_modulated_N256_dt1_T0.3.npz": "bd1cd8cb7ab26c228d9c3de59845d96e0f66820d42eefec40a53709664d21e0e",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-third-corner\\nonlinear_modulated_N512_dt2_T0.1.npz": "9d76e7bcb40faf9c5d136f6018c7056930d8eeb6e9edfe12e78b287d975a9784",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-third-corner\\nonlinear_modulated_N512_dt2_T0.3.npz": "21663f7a8e670e584f69084f6d296062048d2772575533b1b370a366877d98e9",
+    "scripts\\derive_annular_projected_volterra_normal_reconstruction_20260909.py": "f8a26c38188546032e37c99ec899a4502253ff448d723912db29e2749e0c693e",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-trajectory\\canonical_N128_dt1_T0.1_time_jets.npz": "ed6d9ad1a303d531268f88889781b98d00086f14e0b3090f329580ff9793924a",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-trajectory\\canonical_N128_dt1_T0.3_time_jets.npz": "665e45d5f0b1bab0fc216dbed148f0a901cd72b491208ccc9a0108b7f355e0a0",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-trajectory\\canonical_N256_dt1_T0.1_time_jets.npz": "d7f4fdab0aa9408b59ba6a42bd1000a6035b160923e3eadd65318ff94004443f",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-trajectory\\canonical_N256_dt1_T0.3_time_jets.npz": "f00abcd2802c61f7324098fabe5400a086a4e13b27626e9535f1af5c640c451a",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-trajectory\\canonical_N512_dt2_T0.1_time_jets.npz": "9d3e2592b313d8f719aa2c0bfa1ab56d71f386bb1fbfe2ad4824cae4c07b0bff",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-trajectory\\canonical_N512_dt2_T0.3_time_jets.npz": "52607914a9adc4ddda003f3d34577a58d824cbe509c8e3778d895c643c77e5f4",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-trajectory\\nonlinear_modulated_N128_dt1_T0.1_time_jets.npz": "03daebff11a678fe406c5f4b7517e88aca621f3b2e68af94c2697beefd7f3a4c",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-trajectory\\nonlinear_modulated_N128_dt1_T0.3_time_jets.npz": "eb6f2cb6eee3fe443d00b87b0fcca9e5110a43ff2a81b856b7021fec5475d7a4",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-trajectory\\nonlinear_modulated_N256_dt1_T0.1_time_jets.npz": "a1ff1950f9837993349e8800c4c5427146cd196cebb1fd7b790a03d78372eb11",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-trajectory\\nonlinear_modulated_N256_dt1_T0.3_time_jets.npz": "63a8e76a3f6618bbd41a28c5e34780790fed1b7e2bf1b2fac9f163429eb02026",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-trajectory\\nonlinear_modulated_N512_dt2_T0.1_time_jets.npz": "05d1d525b7a49dc94203d083899d23e29eed7cd42680df52aeb2005dcf154d9b",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-trajectory\\nonlinear_modulated_N512_dt2_T0.3_time_jets.npz": "498413568f7cb94e9b74436bfb1c08ea89d2ba07ffd679138a38821a9614da4e",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-preflight\\executed-script.py": "5cd889f58f60387dbc354075920756c9cb56db45efd31109c895fd4be530899e",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\canonical_N128_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "39949779060816129d1fb2e9a8f68bc1bc07eed07d5160b4632bc4bac439a55e",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\canonical_N128_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "520f028c85d071977f4099815566cd6eef50149f262e6ccc3b22c6e0f26e051e",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\canonical_N128_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "ba7ec95f70de81707f3a6558cd590af151dcd447a0a377f509096615aca0a4fd",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\canonical_N128_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "78a5abe543affcac4b7cc303c62ca4d8740460e060de7e767a41b501364bbb66",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\canonical_N256_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "006cee6ad6980c2a2780d5cf3f8a2d7c371f4274bfc9a0ad96f64fdc2dd7f3db",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\canonical_N256_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "a5178f8a36cb68e00be33153b1de31f9221bcd6545ed018fbf79b288e0b24bc9",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\canonical_N256_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "a06b3ee71d8adbbb47f0a9d1d8eaf332b942fe1bab112786114b731c12cf3ee5",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\canonical_N256_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "69f4806a00ee124861b9ed3c5fe9a0486c523287cbabac57d38f429b75cb6637",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\canonical_N512_dt2_T0.1_time_jets_poly7_normal_curvature.npz": "50ab9ce3f302e69129f8b63c1f8bcb8c51df728b6de81a8c8bee63a63531931f",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\canonical_N512_dt2_T0.1_time_jets_poly9_normal_curvature.npz": "2b756a56b6d30dbc394d20dbd952680df6eac33fbf2745a70476712e379a5055",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\canonical_N512_dt2_T0.3_time_jets_poly7_normal_curvature.npz": "0c1fcebe01303eb2de661f7ef43852ea7f219cc385a55a2911cf03051fd46de1",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\canonical_N512_dt2_T0.3_time_jets_poly9_normal_curvature.npz": "afea3f63a838c92ea7ddc184a470c494667462fabc6d227e910fb39d04adb027",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "9ca90b324becd79116e5c65d37fa61c4123779b20cefff158409438ab3cf47ec",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "05736f717208da5dbfe3b2dac5b96eaeff9d45322fb039c972953f95197d93ea",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "a889b52bd7b2c4a41b57f6841c76a65961583311899f4ef2cdf20261686c5247",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "f41bbd65adbc03a7764163d26889aabe9e760ce88485e00b1835aecf9213f56c",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "31a6620501d373c9f6dbe8bb620a262f46e7355b844a7e59a8bd6b94d6ef2d29",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "7cc9c3c0449f0f3ce249e8beadd92c18a459a5947a2437ab7702b01089316604",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "384d8601dc7f6cd16a65a45489002bcf6ceea6bda4ff79ef9397b677ed156d97",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "51ce05335b58337a116d9c8cfc0d1af99500f1cd0d7a4c815254e002facd5d7e",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_normal_curvature.npz": "13d868a9b531010587e515f19b279078ce5e60469f4fc5fecf245214f53b1ea0",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_normal_curvature.npz": "9c8fb12bca5df80e8f787b248b5e5dc1b7c2fbc565762ab089a8a94ba2f59dcd",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_normal_curvature.npz": "5b49a968d54a5407aa07ec2b0663be5c65d102e86c51bd32d41ae5ab6ecb4bf5",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_normal_curvature.npz": "c7fdc25f0e1f4a30f05221e1b1af2e3beae6e6bb1e4368cc658a32809644938e",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-preflight\\canonical_N128_dt1_T0.1_time_jets.npz": "a756d0014992f4919356cf01fcb1e3c133df2acf2ff6ee044576308daee9b7d8",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-preflight\\canonical_N128_dt1_T0.3_time_jets.npz": "93e3fbff32a14bf2065555d4adf7ab066b4e75ad745f4867ce47e226ef583fa0",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-preflight\\canonical_N256_dt1_T0.1_time_jets.npz": "5687ceb43970cdff5a9ab5f875f4fc0726b267870c67bae2c18efef7eb4431f2",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-preflight\\canonical_N256_dt1_T0.3_time_jets.npz": "bcec3786ce865a2a246a97980e5c3b758e48a9782aab5dbf29bf52d753f69394",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-preflight\\canonical_N512_dt2_T0.1_time_jets.npz": "f52e41bdc2e2ef049f7c417f17339bbed86c2cd3b87783f1388e38df62e26547",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-preflight\\canonical_N512_dt2_T0.3_time_jets.npz": "0b36dcea63ecd18ebb53383ce1d7d32fa0c6cf11521f767a3a408300c2d9d6fa",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-preflight\\nonlinear_modulated_N128_dt1_T0.1_time_jets.npz": "104555d27e619b2162594d1261afd4e02e5e1167c8490556ee0a9278f0c4c82f",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-preflight\\nonlinear_modulated_N128_dt1_T0.3_time_jets.npz": "8c31a9e1f38327e68f452bf93bb767831fc1a39034905fe006ec50aabe4dd4f8",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-preflight\\nonlinear_modulated_N256_dt1_T0.1_time_jets.npz": "985e451b5dcf9494190d1608c2d67d896d739875aa9fb58bdcc06886c7c96f4c",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-preflight\\nonlinear_modulated_N256_dt1_T0.3_time_jets.npz": "5e742d42ee2052d7997d41e13c9498699cff3a538d3bb34ea8cadc0ee48769b1",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-preflight\\nonlinear_modulated_N512_dt2_T0.1_time_jets.npz": "76506398076a7070644e8bb051df4a78ee355a900d40954009193d3d214f6b11",
+    "source-intake\\navier-stokes\\20260909\\annular-projected-volterra-time-jets-preflight\\nonlinear_modulated_N512_dt2_T0.3_time_jets.npz": "223f4ae9d91fa3ee7a3423d23f8dd04a147701e4882973f945606319187481b7",
+    "DERIVATION-20260909-compatible-boundary-energy-and-Noether-coupling.md": "cb678609bcca09b8c843f0f931ff7e0add55d2095b6d9856e330a1af3479fd3b",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-matched-comparison\\status.json": "ef04d1cd200d9f8679d8dedf78b5640cbfb05fce11dd72f0fd5e436965025080",
+    "scripts\\compare_annular_raw_volterra_C3_20260909.py": "3b7a3d7f5a244dc9e1cd1593f6e0f003c1248659fd5769e3dee63d0721963f2d",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\status.json": "62aebd63d119525dd2c02a9f096699206a8a3dbcfed3d5b7a05e63e63b9cf137",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\executed-script.py": "18d4e7e5b5ae746b9231d02e68675434c417acb77a340934a7512ade31a7ec7b",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-trajectory\\status.json": "a792ca0a5b6f73c29f534c723c997e0c95a6fb0fe8d23a9c2ac75577152446ce",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-trajectory\\executed-script.py": "bd8adf83bbf621f71331b5f4536287db5a176656ba445e5032a7e7691e75a0de",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-third-corner-raw-volterra\\status.json": "bbd731406298e17e2c1ff6966f6273a9d4dabb6d874e439e44453e4cc30911a5",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-third-corner-raw-volterra\\executed-script.py": "cc70564b11d4481839b436d07703cdcba8956ae90cf2bddb821bff2bd33c6662",
+    "scripts\\derive_annular_raw_volterra_C3_time_jets_20260909.py": "bd8adf83bbf621f71331b5f4536287db5a176656ba445e5032a7e7691e75a0de",
+    "scripts\\annular_raw_volterra_time_jets_20260909.py": "a4c90536db052483d9f3c6120e60d4072ea9e6331b4117be1f1910edfe2eafe0",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-third-corner-raw-volterra\\canonical_N128_dt1_T0.1.npz": "aa1acb8dadc9cb384f1b4186e485c7942d59b628ee3bd9f12a66b93446d8b254",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-third-corner-raw-volterra\\canonical_N128_dt1_T0.3.npz": "ea9ed6d2f56014228195a50faf8fc58c34af001c2d53991e5d7ad93a69eb6c2f",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-third-corner-raw-volterra\\canonical_N256_dt1_T0.1.npz": "dc130965d967bd650ef8691031fd1f28ed05ca149feb29cbd4ed6541fb407111",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-third-corner-raw-volterra\\canonical_N256_dt1_T0.3.npz": "74ed4a9087a9fbf0e8262b0c72be2525f9de14e8707fc94332cd1fd6ce7cfecc",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-third-corner-raw-volterra\\canonical_N512_dt2_T0.1.npz": "7232b495d5d896d6daae4537835b5a8e75f7c039f8865303417c024f71890ee7",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-third-corner-raw-volterra\\canonical_N512_dt2_T0.3.npz": "a53dc89d33c6cc8131ff58f2d88929ad1ab7432615d5a617e6e34a58b40a0a5d",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-third-corner-raw-volterra\\nonlinear_modulated_N128_dt1_T0.1.npz": "d50ce0fdaf6694331c45a93f2c2a1337ca22b5340656a3141f4086cd215efddf",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-third-corner-raw-volterra\\nonlinear_modulated_N128_dt1_T0.3.npz": "526e76eeb18368c627cc71e9161f5871b1c53b6ef354865bde4d27122c0db8de",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-third-corner-raw-volterra\\nonlinear_modulated_N256_dt1_T0.1.npz": "f04b1836fe88db1171cf184e78891e9684f2ce1f2a5bc1f33383d2280330b45f",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-third-corner-raw-volterra\\nonlinear_modulated_N256_dt1_T0.3.npz": "813c7fd838d67344d91f9d18ab32b02ed54b6803aa14820da2da70c18498110c",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-third-corner-raw-volterra\\nonlinear_modulated_N512_dt2_T0.1.npz": "b45101bfb0761249875a380094ad1656205b2eb913b4a52ddb672b827cb38843",
+    "source-intake\\navier-stokes\\20260909\\annular-coupled-current-third-corner-raw-volterra\\nonlinear_modulated_N512_dt2_T0.3.npz": "1f9d9378135814fa0d66c74974c878fdf81dfacfa5a45e7f1d2e94f1db43afce",
+    "scripts\\derive_annular_raw_volterra_C3_normal_reconstruction_20260909.py": "18d4e7e5b5ae746b9231d02e68675434c417acb77a340934a7512ade31a7ec7b",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-trajectory\\canonical_N128_dt1_T0.1_time_jets.npz": "ef50a73ba83fd575459a6773443edba6cb189fe95e0e97b59941ab820f14733c",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-trajectory\\canonical_N128_dt1_T0.3_time_jets.npz": "a42c8cfa86975dbbe4d66f0aa2ff09a6b9c0feb96af1d3971071fd07661b8ed5",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-trajectory\\canonical_N256_dt1_T0.1_time_jets.npz": "7bcb95018a54da68525765621c94bc9f64ca419091e8b950bbc8dd3162ce0358",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-trajectory\\canonical_N256_dt1_T0.3_time_jets.npz": "0917ba16db61c63e316da10df46bcd4d7b6d586d4c9c1770093a0c96922718ec",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-trajectory\\canonical_N512_dt2_T0.1_time_jets.npz": "af2e8ba102d5f2ac8259e10019247271cb928e484aeb416e0a01c0bef22cce24",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-trajectory\\canonical_N512_dt2_T0.3_time_jets.npz": "38ddb08053a1db907b89be0c23670c4ea0ba94d411b94c79f84706484f852a4e",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-trajectory\\nonlinear_modulated_N128_dt1_T0.1_time_jets.npz": "83a4c159a77282c55f37c4eea18bde4b56b1e626ac7926a14ef85b59c3ee3ac2",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-trajectory\\nonlinear_modulated_N128_dt1_T0.3_time_jets.npz": "b29eb7ab575fed053a37b791facccb410a630c8fcbf514e0098b16267bc1f2f9",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-trajectory\\nonlinear_modulated_N256_dt1_T0.1_time_jets.npz": "ccc7d727395cd06206b4d9fe8b5da7f5e8e045da02d937c6c7b778a55bc8bd58",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-trajectory\\nonlinear_modulated_N256_dt1_T0.3_time_jets.npz": "dbb39b0819c92afbb0a51a7bd500d1dce33ac497a636f1026023c4c1024b6beb",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-trajectory\\nonlinear_modulated_N512_dt2_T0.1_time_jets.npz": "a544f10644c260adf2348dd8bc1095b6c622cc267b9f6994ff34ccd4181f10e7",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-trajectory\\nonlinear_modulated_N512_dt2_T0.3_time_jets.npz": "0bbc7eef40284f38fbe05f6261f0b9bd5432923472354e77d4abab3977fe9124",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-preflight\\status.json": "01f4ffac140e829d3e3b13bc423c1e8283a35bf3a1405d10a9a05ac4ab0bc671",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-preflight\\executed-script.py": "bd8adf83bbf621f71331b5f4536287db5a176656ba445e5032a7e7691e75a0de",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\canonical_N128_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "71af23882b37b7732efb4f08fe4a8c5c8f5059aa89f213868c99e7af55f07971",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\canonical_N128_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "3f7c527af4f75da28d70dc3e8c38c37d90b69e032b0c515edb8bdb102b22e16b",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\canonical_N128_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "2187e2f6a9aea81caedbc1367c8a3d1b2205fd08b476799ccf6d12381ad36100",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\canonical_N128_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "bd5f9cd1649c0125a08ca59a794eddb478c54c211cfb4c388466dcbf11bcc8be",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\canonical_N256_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "037745e3deb9b5c0cc52118186bdc0e5a174a082827776857007eb2258e5be65",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\canonical_N256_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "a941881869becfeed4261cec04f49a051960491be3a91bea71bc9cdedfa06b29",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\canonical_N256_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "ad312b98bc064e61e7e7e89c9744f8e82142d5a9ffc3f9112104fe17c2dee3f4",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\canonical_N256_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "7f3a9e9c21c39a95fcc94200390d46f69aecb6b983657ea7e69cb1c8c5d97c06",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\canonical_N512_dt2_T0.1_time_jets_poly7_normal_curvature.npz": "cd4056558475c91addd589c2cf9bcec1e58c5500914ce22e029fdcdb19ac8ddb",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\canonical_N512_dt2_T0.1_time_jets_poly9_normal_curvature.npz": "d8fc024b2ef3fe027775d597761bfb1d05128ed422fbe1eabf33fc20b3ea0194",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\canonical_N512_dt2_T0.3_time_jets_poly7_normal_curvature.npz": "dd4582b878108c712539788211952ee2cdb455a662cac48d6a7c9fc0113d1177",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\canonical_N512_dt2_T0.3_time_jets_poly9_normal_curvature.npz": "ee95aa5793214fe4217cf3db29a8c335e120b1442514920c0a78231e721f8833",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "eb632fc8c455709b90483eceaf16add00a017db4020f9adf8cda87a104ead810",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "2ac76f0c9f905059da9b35a6beef5587126796dc2f08b82e004e21d854c478c0",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "35760bf38c76ae953214e30bb3749a3e237b094ca18372363259fc93f9e3fa30",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\nonlinear_modulated_N128_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "3847103a33895040206da57ee04072bf54d260b615d2569015124b9c97cffc1d",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.1_time_jets_poly7_normal_curvature.npz": "138e7fe72e12a226a21f97d3536da820eac98d4374a988371b6a50d2d3f2cdc7",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.1_time_jets_poly9_normal_curvature.npz": "f775d9ece98c2db7b7e9b393a3558fee9dabeea29875aaa850c158b0651553de",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.3_time_jets_poly7_normal_curvature.npz": "73ad355dbb16fa59ddb76e32c1d0b63357f505aa6be77cabeb55fd70c29f8e34",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\nonlinear_modulated_N256_dt1_T0.3_time_jets_poly9_normal_curvature.npz": "a0c57eefed54dddff84166f0bf08b141976ea639aeccd1e3aa6469d274c9bbc6",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.1_time_jets_poly7_normal_curvature.npz": "ed2ddf319f1faf94cf7c60a7e98fea9de0cb3617abbb45bd29dedb5cdb25921e",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.1_time_jets_poly9_normal_curvature.npz": "00571390778c401fb195f8c046e45d80d3e8bc1351cca77c7536560c30229259",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.3_time_jets_poly7_normal_curvature.npz": "3d2d8a977eb31937da2a27003e30fa474b62288db985e0294104ed68e1fdd5a4",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-normal-reconstruction\\nonlinear_modulated_N512_dt2_T0.3_time_jets_poly9_normal_curvature.npz": "5257957adf8ddf444f8c28793fd8493792f44f42966532bddae7e89a100e0e87",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-preflight\\canonical_N128_dt1_T0.1_time_jets.npz": "700b2b756090d339d648fc771babb822c1d3e9613318ab87226387aa9796c534",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-preflight\\canonical_N128_dt1_T0.3_time_jets.npz": "c3471d54095128615b71ae1122816a06862f46878f5f4449b3bb249961a1222b",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-preflight\\canonical_N256_dt1_T0.1_time_jets.npz": "759b40cecb1b3bcf351b1cab58296e9f50d7173d5dca3262de596facb4fa7670",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-preflight\\canonical_N256_dt1_T0.3_time_jets.npz": "4a3c8bffcf69425ac3f03e5f285f842012700c0c3e26fd51b89309d72a515e1c",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-preflight\\canonical_N512_dt2_T0.1_time_jets.npz": "402233cc71aafac8794ec90efadc634cac5d3ed5f933af438d91e70299f8dfb7",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-preflight\\canonical_N512_dt2_T0.3_time_jets.npz": "7a06d1e199a32f7621344f40c5563d8e44d85c5923872378e2693362cd8de0e2",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-preflight\\nonlinear_modulated_N128_dt1_T0.1_time_jets.npz": "fd198b7b2471687ccb2abc964d786a00c545a9b9b6986e27b84ddffdaf48d708",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-preflight\\nonlinear_modulated_N128_dt1_T0.3_time_jets.npz": "6e570f8acd1ae53891ee8ac46268e4762d0b69206793e671be493e1eb18a4761",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-preflight\\nonlinear_modulated_N256_dt1_T0.1_time_jets.npz": "0eb5be20920f2c96776d362f6727e053f8a39c8a7ef2fbec8e5f78709508d6c2",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-preflight\\nonlinear_modulated_N256_dt1_T0.3_time_jets.npz": "afd72a3d1b5c5eba1e3b5831f6de258c8c4ba3a5f346b9358e20e357c01bc03e",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-preflight\\nonlinear_modulated_N512_dt2_T0.1_time_jets.npz": "61c7ae7b854e54d51dcd89f14907ff632691069706916a06a2c5104f5bf91bb9",
+    "source-intake\\navier-stokes\\20260909\\annular-raw-volterra-C3-time-jets-preflight\\nonlinear_modulated_N512_dt2_T0.3_time_jets.npz": "38730a6c30210bee4881d2b4eda7f06168304225bc7aef56d5857182e8a6b24d",
+    "scripts\\derive_annular_compatible_current_time_jets_20260909.py": "240903791d5541f3ac39087e51c27a164e965289fe56872d75a4b7c027301e7a",
+    "scripts\\annular_compatible_current_restoring_20260909.py": "c2e15990fb70e4e0587e63f8f0182831b0a4185003cdcd295db97af9027d4051",
+    "scripts\\annular_compatible_current_time_jets_20260909.py": "7196c06480d61c3c05acb00dff5795a61e284d0b7f7414d98c6298830a984ed9",
+    "scripts\\annular_compatible_current_rhs_20260909.py": "48cdf585d23f7d4b9f83d71cf91f2e09bfe93d76da362cdbc15fc104d7718a41"
+  },
+  "checks": [
+    {
+      "name": "coupled_timestep_qualification_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "timestep_inputs_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "qualified_smoke_grids",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "parent_reduction_derivation_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "parent_reduction_inputs_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Volterra_source_derivation_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Volterra_source_inputs_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "initial_data_owner_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "analytic_third_corner_inputs_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_frozen_initial_lift",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N32_independent_offshell_defect",
+      "passed": true,
+      "detail": {
+        "absolute_difference": 9.606279236969213e-18,
+        "stable_residual_source": "frozen exact-jet parent residual transformed to h; not zeroed"
+      }
+    },
+    {
+      "name": "canonical_N32_healthy_sampled_branch",
+      "passed": true,
+      "detail": {
+        "alpha": 0.09812507441254281,
+        "P": 1.0,
+        "Q": 1.0
+      }
+    },
+    {
+      "name": "canonical_N32_forcing_interpolation_0.037123",
+      "passed": true,
+      "detail": {
+        "error": 2.70946059870253e-18,
+        "scale": 5.258293290211745e-09
+      }
+    },
+    {
+      "name": "canonical_N32_forcing_interpolation_0.271234",
+      "passed": true,
+      "detail": {
+        "error": 1.8632181655029855e-18,
+        "scale": 6.519677432683154e-09
+      }
+    },
+    {
+      "name": "canonical_N32_positive_compatible_coefficient",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N32_dt1_qualified_timestep_cap",
+      "passed": true,
+      "detail": {
+        "dt": 0.00078125,
+        "cap": 0.0007856222817359336
+      }
+    },
+    {
+      "name": "canonical_N32_dt1_T0.1_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N32_dt1_T0.1_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 5.435593819926416e-10,
+        "change": 3.308722450212111e-24
+      }
+    },
+    {
+      "name": "canonical_N32_dt1_T0.1_all_row_source_residual_bound",
+      "passed": true,
+      "detail": {
+        "residual": 3.284608953001738e-11,
+        "bound": 1.7843843865696558e-10,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "canonical_N32_dt1_T0.1_all_scalar_lapse_sources_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N32_dt1_T0.1_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N32_dt1_T0.3_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N32_dt1_T0.3_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 5.435593819926416e-10,
+        "change": 4.239300639334267e-24
+      }
+    },
+    {
+      "name": "canonical_N32_dt1_T0.3_all_row_source_residual_bound",
+      "passed": true,
+      "detail": {
+        "residual": 1.2279591331839217e-11,
+        "bound": 7.382249528689773e-11,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "canonical_N32_dt1_T0.3_all_scalar_lapse_sources_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N32_dt1_T0.3_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N64_independent_offshell_defect",
+      "passed": true,
+      "detail": {
+        "absolute_difference": 9.780062439041091e-18,
+        "stable_residual_source": "frozen exact-jet parent residual transformed to h; not zeroed"
+      }
+    },
+    {
+      "name": "canonical_N64_healthy_sampled_branch",
+      "passed": true,
+      "detail": {
+        "alpha": 0.09812507441254281,
+        "P": 1.0,
+        "Q": 1.0
+      }
+    },
+    {
+      "name": "canonical_N64_forcing_interpolation_0.037123",
+      "passed": true,
+      "detail": {
+        "error": 2.70946059870253e-18,
+        "scale": 5.2774830864341685e-09
+      }
+    },
+    {
+      "name": "canonical_N64_forcing_interpolation_0.271234",
+      "passed": true,
+      "detail": {
+        "error": 2.098294370945044e-18,
+        "scale": 6.522834136709875e-09
+      }
+    },
+    {
+      "name": "canonical_N64_positive_compatible_coefficient",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N64_dt1_qualified_timestep_cap",
+      "passed": true,
+      "detail": {
+        "dt": 0.0003921568627450981,
+        "cap": 0.0003928038337637631
+      }
+    },
+    {
+      "name": "canonical_N64_dt1_T0.1_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N64_dt1_T0.1_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 2.947375550206885e-10,
+        "change": 5.169878828456423e-24
+      }
+    },
+    {
+      "name": "canonical_N64_dt1_T0.1_all_row_source_residual_bound",
+      "passed": true,
+      "detail": {
+        "residual": 2.4828925496313886e-11,
+        "bound": 1.0093591448626255e-10,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "canonical_N64_dt1_T0.1_all_scalar_lapse_sources_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N64_dt1_T0.1_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N64_dt1_T0.3_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N64_dt1_T0.3_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 2.947375550206885e-10,
+        "change": 1.6543612251060553e-23
+      }
+    },
+    {
+      "name": "canonical_N64_dt1_T0.3_all_row_source_residual_bound",
+      "passed": true,
+      "detail": {
+        "residual": 1.0358453152415882e-11,
+        "bound": 7.613378977444295e-11,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "canonical_N64_dt1_T0.3_all_scalar_lapse_sources_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N64_dt1_T0.3_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_independent_offshell_defect",
+      "passed": true,
+      "detail": {
+        "absolute_difference": 1.1665025075314679e-17,
+        "stable_residual_source": "frozen exact-jet parent residual transformed to h; not zeroed"
+      }
+    },
+    {
+      "name": "canonical_N128_healthy_sampled_branch",
+      "passed": true,
+      "detail": {
+        "alpha": 0.09812507441254281,
+        "P": 1.0,
+        "Q": 1.0
+      }
+    },
+    {
+      "name": "canonical_N128_forcing_interpolation_0.037123",
+      "passed": true,
+      "detail": {
+        "error": 2.70946059870253e-18,
+        "scale": 5.2774830864341685e-09
+      }
+    },
+    {
+      "name": "canonical_N128_forcing_interpolation_0.271234",
+      "passed": true,
+      "detail": {
+        "error": 2.098294370945044e-18,
+        "scale": 6.52626310765582e-09
+      }
+    },
+    {
+      "name": "canonical_N128_positive_compatible_coefficient",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_qualified_timestep_cap",
+      "passed": true,
+      "detail": {
+        "dt": 0.00019607843137254904,
+        "cap": 0.00019639788783890307
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 6.409679487378375e-11,
+        "change": 2.3768517913828405e-23
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_all_row_source_residual_bound",
+      "passed": true,
+      "detail": {
+        "residual": 7.389710643843646e-12,
+        "bound": 4.100780218477761e-11,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_all_scalar_lapse_sources_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_physical_scalar_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 7.70370471722329e-12,
+        "scale": 1.4097445813134437e-08,
+        "legacy_boundary_error": 7.70370471722329e-12
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_lapse_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 3.251651390129884e-18,
+        "scale": 6.921018275692832e-14
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.1_mass_constraint_gate",
+      "passed": true,
+      "detail": {
+        "error": 3.6485486584277255e-13,
+        "background_scale": 3.332425357183205e-11
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 6.409679487378375e-11,
+        "change": 6.462348535570529e-23
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_all_row_source_residual_bound",
+      "passed": true,
+      "detail": {
+        "residual": 5.968906256895177e-12,
+        "bound": 5.4829411259279856e-11,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_all_scalar_lapse_sources_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_physical_scalar_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 1.9166024040391624e-10,
+        "scale": 4.0545735581169544e-08,
+        "legacy_boundary_error": 1.9166024040391624e-10
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_lapse_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 1.433957486613202e-16,
+        "scale": 2.241872225131976e-13
+      }
+    },
+    {
+      "name": "canonical_N128_dt1_T0.3_mass_constraint_gate",
+      "passed": false,
+      "detail": {
+        "error": 4.082737116738769e-12,
+        "background_scale": 2.0399621919000307e-11
+      }
+    },
+    {
+      "name": "canonical_N128_dt2_qualified_timestep_cap",
+      "passed": true,
+      "detail": {
+        "dt": 9.803921568627452e-05,
+        "cap": 0.00019639788783890307
+      }
+    },
+    {
+      "name": "canonical_N128_dt2_T0.1_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt2_T0.1_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 6.409679487378375e-11,
+        "change": 4.2496403969911797e-23
+      }
+    },
+    {
+      "name": "canonical_N128_dt2_T0.1_all_row_source_residual_bound",
+      "passed": true,
+      "detail": {
+        "residual": 7.389711439404186e-12,
+        "bound": 4.100780241936442e-11,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "canonical_N128_dt2_T0.1_all_scalar_lapse_sources_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt2_T0.1_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt2_T0.1_physical_scalar_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 7.703704717449575e-12,
+        "scale": 1.4097445803942692e-08,
+        "legacy_boundary_error": 7.703704717449575e-12
+      }
+    },
+    {
+      "name": "canonical_N128_dt2_T0.1_lapse_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 3.2516500783890037e-18,
+        "scale": 6.921017986293442e-14
+      }
+    },
+    {
+      "name": "canonical_N128_dt2_T0.1_mass_constraint_gate",
+      "passed": true,
+      "detail": {
+        "error": 3.648548657952226e-13,
+        "background_scale": 3.332425357183205e-11
+      }
+    },
+    {
+      "name": "canonical_N128_dt2_T0.3_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt2_T0.3_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 6.409679487378375e-11,
+        "change": 8.199427821931887e-23
+      }
+    },
+    {
+      "name": "canonical_N128_dt2_T0.3_all_row_source_residual_bound",
+      "passed": true,
+      "detail": {
+        "residual": 5.968906298830171e-12,
+        "bound": 5.482941139021677e-11,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "canonical_N128_dt2_T0.3_all_scalar_lapse_sources_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt2_T0.3_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N128_dt2_T0.3_physical_scalar_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 1.9166024040373938e-10,
+        "scale": 4.054573561624338e-08,
+        "legacy_boundary_error": 1.9166024040373938e-10
+      }
+    },
+    {
+      "name": "canonical_N128_dt2_T0.3_lapse_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 1.4339368186281237e-16,
+        "scale": 2.2418722168168694e-13
+      }
+    },
+    {
+      "name": "canonical_N128_dt2_T0.3_mass_constraint_gate",
+      "passed": false,
+      "detail": {
+        "error": 4.082737116350653e-12,
+        "background_scale": 2.0399621919000323e-11
+      }
+    },
+    {
+      "name": "canonical_T0.1_spatial_refinement",
+      "passed": true,
+      "detail": {
+        "coarse_difference": [
+          6.576561031395243e-12,
+          1.4321725108978823e-10,
+          1.8464061416476587e-13,
+          3.821018036151274e-14
+        ],
+        "fine_difference": [
+          4.809961018645405e-12,
+          3.622549612428639e-11,
+          9.603259996153189e-14,
+          9.436798981858939e-15
+        ],
+        "time_difference": [
+          2.4920966461193883e-19,
+          1.758719202310328e-16,
+          2.744148134962193e-20,
+          9.853317458297407e-21
+        ]
+      }
+    },
+    {
+      "name": "canonical_T0.1_temporal_refinement",
+      "passed": true,
+      "detail": {
+        "coarse_difference": [
+          6.576561031395243e-12,
+          1.4321725108978823e-10,
+          1.8464061416476587e-13,
+          3.821018036151274e-14
+        ],
+        "fine_difference": [
+          4.809961018645405e-12,
+          3.622549612428639e-11,
+          9.603259996153189e-14,
+          9.436798981858939e-15
+        ],
+        "time_difference": [
+          2.4920966461193883e-19,
+          1.758719202310328e-16,
+          2.744148134962193e-20,
+          9.853317458297407e-21
+        ]
+      }
+    },
+    {
+      "name": "canonical_T0.3_spatial_refinement",
+      "passed": true,
+      "detail": {
+        "coarse_difference": [
+          2.3606124856784213e-11,
+          1.186266782727556e-10,
+          9.982729177536527e-13,
+          2.939775892940678e-14
+        ],
+        "fine_difference": [
+          6.897776026641839e-12,
+          3.662594563569713e-11,
+          4.466856579438778e-13,
+          6.994687694057166e-15
+        ],
+        "time_difference": [
+          4.143526259124025e-19,
+          3.460164126230784e-16,
+          9.090814775242649e-20,
+          2.5328148678326166e-20
+        ]
+      }
+    },
+    {
+      "name": "canonical_T0.3_temporal_refinement",
+      "passed": true,
+      "detail": {
+        "coarse_difference": [
+          2.3606124856784213e-11,
+          1.186266782727556e-10,
+          9.982729177536527e-13,
+          2.939775892940678e-14
+        ],
+        "fine_difference": [
+          6.897776026641839e-12,
+          3.662594563569713e-11,
+          4.466856579438778e-13,
+          6.994687694057166e-15
+        ],
+        "time_difference": [
+          4.143526259124025e-19,
+          3.460164126230784e-16,
+          9.090814775242649e-20,
+          2.5328148678326166e-20
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_frozen_initial_lift",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N32_independent_offshell_defect",
+      "passed": true,
+      "detail": {
+        "absolute_difference": 1.0974041404979733e-17,
+        "stable_residual_source": "frozen exact-jet parent residual transformed to h; not zeroed"
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N32_healthy_sampled_branch",
+      "passed": true,
+      "detail": {
+        "alpha": 0.09817841161401289,
+        "P": 0.9999968829208624,
+        "Q": 0.9999906487042912
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N32_forcing_interpolation_0.037123",
+      "passed": true,
+      "detail": {
+        "error": 4.1052750462241374e-18,
+        "scale": 1.9134306900045384e-08
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N32_forcing_interpolation_0.271234",
+      "passed": true,
+      "detail": {
+        "error": 2.158363613105534e-18,
+        "scale": 1.8946609701103337e-08
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N32_positive_compatible_coefficient",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_qualified_timestep_cap",
+      "passed": true,
+      "detail": {
+        "dt": 0.00078125,
+        "cap": 0.0007852310819691208
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.1_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.1_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 2.9788760767254855e-09,
+        "change": 4.1359030627651384e-24
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.1_all_row_source_residual_bound",
+      "passed": true,
+      "detail": {
+        "residual": 1.3937220189967346e-10,
+        "bound": 7.461478975914724e-10,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.1_all_scalar_lapse_sources_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.1_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.3_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.3_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 2.9788760767254855e-09,
+        "change": 2.0472720160687435e-23
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.3_all_row_source_residual_bound",
+      "passed": true,
+      "detail": {
+        "residual": 5.6373388003241565e-11,
+        "bound": 3.4251164628836966e-10,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.3_all_scalar_lapse_sources_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N32_dt1_T0.3_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N64_independent_offshell_defect",
+      "passed": true,
+      "detail": {
+        "absolute_difference": 1.3849792707163212e-17,
+        "stable_residual_source": "frozen exact-jet parent residual transformed to h; not zeroed"
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N64_healthy_sampled_branch",
+      "passed": true,
+      "detail": {
+        "alpha": 0.09817841161401289,
+        "P": 0.9999968829208624,
+        "Q": 0.9999906487042912
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N64_forcing_interpolation_0.037123",
+      "passed": true,
+      "detail": {
+        "error": 4.1052750462241374e-18,
+        "scale": 1.9134306900045384e-08
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N64_forcing_interpolation_0.271234",
+      "passed": true,
+      "detail": {
+        "error": 2.2772530417768618e-18,
+        "scale": 1.8946609701103337e-08
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N64_positive_compatible_coefficient",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_qualified_timestep_cap",
+      "passed": true,
+      "detail": {
+        "dt": 0.0003921568627450981,
+        "cap": 0.00039260992988250973
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.1_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.1_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 1.5389671391978234e-09,
+        "change": 1.943874439499615e-23
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.1_all_row_source_residual_bound",
+      "passed": true,
+      "detail": {
+        "residual": 1.3126768655665626e-10,
+        "bound": 5.263608707995208e-10,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.1_all_scalar_lapse_sources_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.1_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.3_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.3_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 1.5389671391978234e-09,
+        "change": 6.152155805863143e-23
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.3_all_row_source_residual_bound",
+      "passed": true,
+      "detail": {
+        "residual": 5.845996322868691e-11,
+        "bound": 4.322510371598929e-10,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.3_all_scalar_lapse_sources_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N64_dt1_T0.3_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_independent_offshell_defect",
+      "passed": true,
+      "detail": {
+        "absolute_difference": 1.3849792707163212e-17,
+        "stable_residual_source": "frozen exact-jet parent residual transformed to h; not zeroed"
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_healthy_sampled_branch",
+      "passed": true,
+      "detail": {
+        "alpha": 0.09817841161401289,
+        "P": 0.9999968829208624,
+        "Q": 0.9999906487042912
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_forcing_interpolation_0.037123",
+      "passed": true,
+      "detail": {
+        "error": 4.1052750462241374e-18,
+        "scale": 1.9134306900045384e-08
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_forcing_interpolation_0.271234",
+      "passed": true,
+      "detail": {
+        "error": 2.461964126921178e-18,
+        "scale": 1.8946609701103337e-08
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_positive_compatible_coefficient",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_qualified_timestep_cap",
+      "passed": true,
+      "detail": {
+        "dt": 0.00019607843137254904,
+        "cap": 0.00019630134373298312
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 3.53557139989618e-10,
+        "change": 7.77549775799846e-23
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_all_row_source_residual_bound",
+      "passed": true,
+      "detail": {
+        "residual": 4.124358488163053e-11,
+        "bound": 3.1378513932958477e-10,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_all_scalar_lapse_sources_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_physical_scalar_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 8.975981341266066e-11,
+        "scale": 3.917741848475968e-08,
+        "legacy_boundary_error": 8.975981341265675e-11
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_lapse_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 4.202874775346752e-17,
+        "scale": 2.3279652713813475e-13
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.1_mass_constraint_gate",
+      "passed": false,
+      "detail": {
+        "error": 2.2122405017720008e-12,
+        "background_scale": 3.110146778502456e-11
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 3.53557139989618e-10,
+        "change": 1.500298836018054e-22
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_all_row_source_residual_bound",
+      "passed": true,
+      "detail": {
+        "residual": 3.4448467942479116e-11,
+        "bound": 3.15518023717318e-10,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_all_scalar_lapse_sources_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_physical_scalar_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 1.0089986156352638e-09,
+        "scale": 1.5657266414558782e-07,
+        "legacy_boundary_error": 1.0089986156349729e-09
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_lapse_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 8.288023879014958e-16,
+        "scale": 9.965966205577536e-13
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt1_T0.3_mass_constraint_gate",
+      "passed": false,
+      "detail": {
+        "error": 2.2997154061058644e-11,
+        "background_scale": 4.868925891856112e-11
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_qualified_timestep_cap",
+      "passed": true,
+      "detail": {
+        "dt": 9.803921568627452e-05,
+        "cap": 0.00019630134373298312
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.1_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.1_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 3.53557139989618e-10,
+        "change": 9.802090258753378e-23
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.1_all_row_source_residual_bound",
+      "passed": true,
+      "detail": {
+        "residual": 4.12435853831453e-11,
+        "bound": 3.137851411263775e-10,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.1_all_scalar_lapse_sources_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.1_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.1_physical_scalar_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 8.975981341098468e-11,
+        "scale": 3.917741843511174e-08,
+        "legacy_boundary_error": 8.975981341098078e-11
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.1_lapse_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 4.2028733549414257e-17,
+        "scale": 2.3279651498490557e-13
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.1_mass_constraint_gate",
+      "passed": false,
+      "detail": {
+        "error": 2.2122405007585947e-12,
+        "background_scale": 3.110146778502456e-11
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.3_finite_coupled_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.3_integrability_preserved",
+      "passed": true,
+      "detail": {
+        "initial_defect": 3.53557139989618e-10,
+        "change": 2.09276694975916e-22
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.3_all_row_source_residual_bound",
+      "passed": true,
+      "detail": {
+        "residual": 3.444846822186857e-11,
+        "bound": 3.15518024566381e-10,
+        "exact_zero_claimed": false
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.3_all_scalar_lapse_sources_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.3_boundary_source_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.3_physical_scalar_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 1.0089986156348335e-09,
+        "scale": 1.5657266436806994e-07,
+        "legacy_boundary_error": 1.0089986156345425e-09
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.3_lapse_boundary_gate",
+      "passed": true,
+      "detail": {
+        "error": 8.287905210363168e-16,
+        "scale": 9.96596617049671e-13
+      }
+    },
+    {
+      "name": "nonlinear_modulated_N128_dt2_T0.3_mass_constraint_gate",
+      "passed": false,
+      "detail": {
+        "error": 2.2997154058377202e-11,
+        "background_scale": 4.86892589185611e-11
+      }
+    },
+    {
+      "name": "nonlinear_modulated_T0.1_spatial_refinement",
+      "passed": false,
+      "detail": {
+        "coarse_difference": [
+          3.210010588507754e-11,
+          6.339947594693619e-10,
+          1.4081747036905256e-12,
+          1.9784844389424312e-13
+        ],
+        "fine_difference": [
+          2.4730251438431675e-11,
+          1.7625944180622368e-10,
+          5.653903934458854e-13,
+          4.742927235983897e-14
+        ],
+        "time_difference": [
+          1.6338107047313482e-18,
+          1.0124571875222017e-15,
+          1.8424732762635804e-19,
+          4.393390648335826e-20
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_T0.1_temporal_refinement",
+      "passed": true,
+      "detail": {
+        "coarse_difference": [
+          3.210010588507754e-11,
+          6.339947594693619e-10,
+          1.4081747036905256e-12,
+          1.9784844389424312e-13
+        ],
+        "fine_difference": [
+          2.4730251438431675e-11,
+          1.7625944180622368e-10,
+          5.653903934458854e-13,
+          4.742927235983897e-14
+        ],
+        "time_difference": [
+          1.6338107047313482e-18,
+          1.0124571875222017e-15,
+          1.8424732762635804e-19,
+          4.393390648335826e-20
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_T0.3_spatial_refinement",
+      "passed": true,
+      "detail": {
+        "coarse_difference": [
+          1.0844210759941534e-10,
+          5.777754279007076e-10,
+          5.176913659761864e-12,
+          1.54364510750808e-13
+        ],
+        "fine_difference": [
+          3.61566443659779e-11,
+          1.8776005619734489e-10,
+          2.3976940686688763e-12,
+          3.776699801990777e-14
+        ],
+        "time_difference": [
+          2.3748638695757224e-18,
+          1.9822064734835815e-15,
+          5.505538575143241e-19,
+          1.138021874833073e-19
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_T0.3_temporal_refinement",
+      "passed": true,
+      "detail": {
+        "coarse_difference": [
+          1.0844210759941534e-10,
+          5.777754279007076e-10,
+          5.176913659761864e-12,
+          1.54364510750808e-13
+        ],
+        "fine_difference": [
+          3.61566443659779e-11,
+          1.8776005619734489e-10,
+          2.3976940686688763e-12,
+          3.776699801990777e-14
+        ],
+        "time_difference": [
+          2.3748638695757224e-18,
+          1.9822064734835815e-15,
+          5.505538575143241e-19,
+          1.138021874833073e-19
+        ]
+      }
+    },
+    {
+      "name": "all_expected_outputs_saved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "metric_corrections_evolved_not_prescribed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_bytecode_cache",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "runs": [
+    {
+      "case": "canonical",
+      "intervals": 32,
+      "time_refinement": 1,
+      "time": 0.1,
+      "artifact": "canonical_N32_dt1_T0.1.npz",
+      "sha256": "abd7d8683ec89bba1b1f1285d36af8c26ea866d2d4cac215716ce539d499f9bb",
+      "dt": 0.00078125,
+      "steps": 128,
+      "coordinate_component_maxima": [
+        5.116486860079474e-10,
+        3.5493784785629187e-09,
+        1.156012794030989e-11,
+        7.367384198434744e-14
+      ],
+      "current_component_maxima": [
+        5.116486860079474e-10,
+        1.5075630129387753e-09,
+        1.6537878343175538e-09,
+        1.156012794030989e-11,
+        7.367384198434744e-14
+      ],
+      "mass_constraint_max": 2.108044297371519e-12,
+      "background_constraint_max": 3.332425357183205e-11,
+      "scalar_boundary_error": 1.1514171203486373e-10,
+      "legacy_scalar_boundary_error": 1.1514171203486373e-10,
+      "scalar_boundary_scale": 1.4020433948625554e-08,
+      "lapse_boundary_error": 1.0628091927162342e-16,
+      "constraint_addition_max": 5.314709505910767e-15,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        1.708360719395126e-09,
+        2.567857878070152e-12,
+        4.801396823565104e-14
+      ],
+      "scalar_boundary_gate": true,
+      "lapse_boundary_gate": true,
+      "mass_constraint_gate": false,
+      "valid_for_physics_claim": false,
+      "source_residual_artifact": "canonical_N32_dt1_T0.1_source_residual.npz",
+      "source_residual_sha256": "df6138857d571552b3752ff42d5b3e2193f86f864de746820ce3e17c3424c4bf",
+      "source_constraint_residual_max": 3.284608953001738e-11,
+      "source_residual_bound_max": 1.7843843865696558e-10,
+      "exact_source_identity_claimed": false
+    },
+    {
+      "case": "canonical",
+      "intervals": 32,
+      "time_refinement": 1,
+      "time": 0.3,
+      "artifact": "canonical_N32_dt1_T0.3.npz",
+      "sha256": "952683734d213a4cbe8492a4f29fd65a3804e9fa5d42f0de9737d706214eb7e6",
+      "dt": 0.00078125,
+      "steps": 384,
+      "coordinate_component_maxima": [
+        6.579310636300474e-10,
+        1.0261134510480532e-08,
+        1.2648352485979974e-11,
+        2.2607539432809305e-13
+      ],
+      "current_component_maxima": [
+        6.579310636300474e-10,
+        1.3535708656683114e-09,
+        2.0288853523108595e-09,
+        1.2648352485979974e-11,
+        2.2607539432809305e-13
+      ],
+      "mass_constraint_max": 5.214090740582586e-12,
+      "background_constraint_max": 2.036032023865144e-11,
+      "scalar_boundary_error": 3.3420975398644114e-10,
+      "legacy_scalar_boundary_error": 3.3420975398644114e-10,
+      "scalar_boundary_scale": 4.053791290076835e-08,
+      "lapse_boundary_error": 6.964011504257952e-15,
+      "constraint_addition_max": 6.377746413083056e-15,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        4.138103986841797e-09,
+        3.268489052399297e-12,
+        3.1460946089824155e-12
+      ],
+      "scalar_boundary_gate": true,
+      "lapse_boundary_gate": false,
+      "mass_constraint_gate": false,
+      "valid_for_physics_claim": false,
+      "source_residual_artifact": "canonical_N32_dt1_T0.3_source_residual.npz",
+      "source_residual_sha256": "b5581968eda5373080b459773e19faafeb513db39289438f9da520546cebfe6d",
+      "source_constraint_residual_max": 1.2279591331839217e-11,
+      "source_residual_bound_max": 7.382249528689773e-11,
+      "exact_source_identity_claimed": false
+    },
+    {
+      "case": "canonical",
+      "intervals": 64,
+      "time_refinement": 1,
+      "time": 0.1,
+      "artifact": "canonical_N64_dt1_T0.1.npz",
+      "sha256": "92216ebb1c0fd9c4599b4e2631d33bca36dcadbe3980b6585c65e6e927f59fc3",
+      "dt": 0.0003921568627450981,
+      "steps": 255,
+      "coordinate_component_maxima": [
+        5.371777250528567e-10,
+        3.5684721963426673e-09,
+        1.1490851100897073e-11,
+        7.070593685648723e-14
+      ],
+      "current_component_maxima": [
+        5.371777250528567e-10,
+        1.4972696135841652e-09,
+        1.6353670167027024e-09,
+        1.1490851100897073e-11,
+        7.070593685648723e-14
+      ],
+      "mass_constraint_max": 1.2809240163206528e-12,
+      "background_constraint_max": 3.3324253571832045e-11,
+      "scalar_boundary_error": 5.206149448590026e-12,
+      "legacy_scalar_boundary_error": 5.206149269782211e-12,
+      "scalar_boundary_scale": 1.4095856226238802e-08,
+      "lapse_boundary_error": 3.739620672986291e-17,
+      "constraint_addition_max": 5.786470957803974e-15,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        1.1762471628945063e-09,
+        1.0463946029322086e-12,
+        3.378857266886437e-14
+      ],
+      "scalar_boundary_gate": true,
+      "lapse_boundary_gate": true,
+      "mass_constraint_gate": true,
+      "valid_for_physics_claim": false,
+      "source_residual_artifact": "canonical_N64_dt1_T0.1_source_residual.npz",
+      "source_residual_sha256": "380c343a2a30f6dddfc04df879aa384908715f4e8591014b410e66007d276096",
+      "source_constraint_residual_max": 2.4828925496313886e-11,
+      "source_residual_bound_max": 1.0093591448626255e-10,
+      "exact_source_identity_claimed": false
+    },
+    {
+      "case": "canonical",
+      "intervals": 64,
+      "time_refinement": 1,
+      "time": 0.3,
+      "artifact": "canonical_N64_dt1_T0.3.npz",
+      "sha256": "a8e320d7fa32f0860886ef9ed29bdb406dce2b6e4f94a61faf871b0a5d892023",
+      "dt": 0.0003921568627450981,
+      "steps": 765,
+      "coordinate_component_maxima": [
+        6.602988664379233e-10,
+        1.0262870736398178e-08,
+        1.2672802535898581e-11,
+        2.2205235488362223e-13
+      ],
+      "current_component_maxima": [
+        6.602988664379233e-10,
+        1.3919525535377364e-09,
+        2.282575642170115e-09,
+        1.2672802535898581e-11,
+        2.2205235488362223e-13
+      ],
+      "mass_constraint_max": 6.1061070107649935e-12,
+      "background_constraint_max": 2.0399621919000307e-11,
+      "scalar_boundary_error": 4.145639090403402e-10,
+      "legacy_scalar_boundary_error": 4.145639090403402e-10,
+      "scalar_boundary_scale": 4.054477208139342e-08,
+      "lapse_boundary_error": 1.7520303630313017e-15,
+      "constraint_addition_max": 7.208930056104463e-15,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        8.586302799427967e-09,
+        1.083647174116217e-12,
+        1.5830109633035758e-12
+      ],
+      "scalar_boundary_gate": false,
+      "lapse_boundary_gate": true,
+      "mass_constraint_gate": false,
+      "valid_for_physics_claim": false,
+      "source_residual_artifact": "canonical_N64_dt1_T0.3_source_residual.npz",
+      "source_residual_sha256": "8f99d84c10f6acf612372e033622404a9b6b56898821576968df48449ce84f3e",
+      "source_constraint_residual_max": 1.0358453152415882e-11,
+      "source_residual_bound_max": 7.613378977444295e-11,
+      "exact_source_identity_claimed": false
+    },
+    {
+      "case": "canonical",
+      "intervals": 128,
+      "time_refinement": 1,
+      "time": 0.1,
+      "artifact": "canonical_N128_dt1_T0.1.npz",
+      "sha256": "ab875bbb3aa67618a9f459318eb11e958c4fb99953437d4d0cf6fe12bb362b4a",
+      "dt": 0.00019607843137254904,
+      "steps": 510,
+      "coordinate_component_maxima": [
+        5.363416574408142e-10,
+        3.5688746122406234e-09,
+        1.1475511438930788e-11,
+        6.921018275692832e-14
+      ],
+      "current_component_maxima": [
+        5.363416574408142e-10,
+        1.56423426434503e-09,
+        1.6557388048643598e-09,
+        1.1475511438930788e-11,
+        6.921018275692832e-14
+      ],
+      "mass_constraint_max": 3.6485486584277255e-13,
+      "background_constraint_max": 3.332425357183205e-11,
+      "scalar_boundary_error": 7.70370471722329e-12,
+      "legacy_scalar_boundary_error": 7.70370471722329e-12,
+      "scalar_boundary_scale": 1.4097445813134437e-08,
+      "lapse_boundary_error": 3.251651390129884e-18,
+      "constraint_addition_max": 5.624218984035726e-15,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        6.51453623709037e-10,
+        2.1886521734418994e-13,
+        5.8759253355758835e-15
+      ],
+      "scalar_boundary_gate": true,
+      "lapse_boundary_gate": true,
+      "mass_constraint_gate": true,
+      "valid_for_physics_claim": false,
+      "source_residual_artifact": "canonical_N128_dt1_T0.1_source_residual.npz",
+      "source_residual_sha256": "30c2a7a6627042ca3cfa1c51d835465d288c4f2c25bf86160ffa5d686aa849da",
+      "source_constraint_residual_max": 7.389710643843646e-12,
+      "source_residual_bound_max": 4.100780218477761e-11,
+      "exact_source_identity_claimed": false
+    },
+    {
+      "case": "canonical",
+      "intervals": 128,
+      "time_refinement": 1,
+      "time": 0.3,
+      "artifact": "canonical_N128_dt1_T0.3.npz",
+      "sha256": "8c97639f1e482178e1dfe1c3c6cdb5ec3d30ac7477002033a11e068601fce81d",
+      "dt": 0.00019607843137254904,
+      "steps": 1530,
+      "coordinate_component_maxima": [
+        6.598068866540038e-10,
+        1.026311462169212e-08,
+        1.2806287025496515e-11,
+        2.241872225131976e-13
+      ],
+      "current_component_maxima": [
+        6.598068866540038e-10,
+        1.4330450175158516e-09,
+        2.306756061263255e-09,
+        1.2806287025496515e-11,
+        2.241872225131976e-13
+      ],
+      "mass_constraint_max": 4.082737116738769e-12,
+      "background_constraint_max": 2.0399621919000307e-11,
+      "scalar_boundary_error": 1.9166024040391624e-10,
+      "legacy_scalar_boundary_error": 1.9166024040391624e-10,
+      "scalar_boundary_scale": 4.0545735581169544e-08,
+      "lapse_boundary_error": 1.433957486613202e-16,
+      "constraint_addition_max": 6.582350241066864e-15,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        6.902403323839778e-09,
+        6.579579132272745e-13,
+        2.5912455287504445e-13
+      ],
+      "scalar_boundary_gate": true,
+      "lapse_boundary_gate": true,
+      "mass_constraint_gate": false,
+      "valid_for_physics_claim": false,
+      "source_residual_artifact": "canonical_N128_dt1_T0.3_source_residual.npz",
+      "source_residual_sha256": "94e2c01dfe547f40794d6d84db57fd5ab042f4dabb5e9242637e4cd64fed5cfd",
+      "source_constraint_residual_max": 5.968906256895177e-12,
+      "source_residual_bound_max": 5.4829411259279856e-11,
+      "exact_source_identity_claimed": false
+    },
+    {
+      "case": "canonical",
+      "intervals": 128,
+      "time_refinement": 2,
+      "time": 0.1,
+      "artifact": "canonical_N128_dt2_T0.1.npz",
+      "sha256": "f1a32355780d7032a1312860df15ec92d9647cf08b3d64706c4ae4a6ff24db29",
+      "dt": 9.803921568627452e-05,
+      "steps": 1020,
+      "coordinate_component_maxima": [
+        5.363416575596579e-10,
+        3.5688746099136642e-09,
+        1.147551143892972e-11,
+        6.921017986293442e-14
+      ],
+      "current_component_maxima": [
+        5.363416575596579e-10,
+        1.564234262825036e-09,
+        1.655738805092835e-09,
+        1.147551143892972e-11,
+        6.921017986293442e-14
+      ],
+      "mass_constraint_max": 3.648548657952226e-13,
+      "background_constraint_max": 3.332425357183205e-11,
+      "scalar_boundary_error": 7.703704717449575e-12,
+      "legacy_scalar_boundary_error": 7.703704717449575e-12,
+      "scalar_boundary_scale": 1.4097445803942692e-08,
+      "lapse_boundary_error": 3.2516500783890037e-18,
+      "constraint_addition_max": 5.62421898404567e-15,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        6.514536257587547e-10,
+        2.1886521747002234e-13,
+        5.8759229651829515e-15
+      ],
+      "scalar_boundary_gate": true,
+      "lapse_boundary_gate": true,
+      "mass_constraint_gate": true,
+      "valid_for_physics_claim": false,
+      "source_residual_artifact": "canonical_N128_dt2_T0.1_source_residual.npz",
+      "source_residual_sha256": "33cf5d155cabbfd0f224bf5c066f0e61a23752f5184862541473a87a4dde29b4",
+      "source_constraint_residual_max": 7.389711439404186e-12,
+      "source_residual_bound_max": 4.100780241936442e-11,
+      "exact_source_identity_claimed": false
+    },
+    {
+      "case": "canonical",
+      "intervals": 128,
+      "time_refinement": 2,
+      "time": 0.3,
+      "artifact": "canonical_N128_dt2_T0.3.npz",
+      "sha256": "902b1a630444d3f397e32bdb84bbd6881b6bc4d845be3a55591ce0536c9992f2",
+      "dt": 9.803921568627452e-05,
+      "steps": 3060,
+      "coordinate_component_maxima": [
+        6.598068865849926e-10,
+        1.0263114630570164e-08,
+        1.2806286997410942e-11,
+        2.2418722168168694e-13
+      ],
+      "current_component_maxima": [
+        6.598068865849926e-10,
+        1.4330450161838544e-09,
+        2.3067560626051245e-09,
+        1.2806286997410942e-11,
+        2.2418722168168694e-13
+      ],
+      "mass_constraint_max": 4.082737116350653e-12,
+      "background_constraint_max": 2.0399621919000323e-11,
+      "scalar_boundary_error": 1.9166024040373938e-10,
+      "legacy_scalar_boundary_error": 1.9166024040373938e-10,
+      "scalar_boundary_scale": 4.054573561624338e-08,
+      "lapse_boundary_error": 1.4339368186281237e-16,
+      "constraint_addition_max": 6.582350240946683e-15,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        6.902403330713622e-09,
+        6.579381253109358e-13,
+        2.5912081804856445e-13
+      ],
+      "scalar_boundary_gate": true,
+      "lapse_boundary_gate": true,
+      "mass_constraint_gate": false,
+      "valid_for_physics_claim": false,
+      "source_residual_artifact": "canonical_N128_dt2_T0.3_source_residual.npz",
+      "source_residual_sha256": "17894ad9af69c911d832e92adfdbd7bf21d5699ca4c6f2c75c2825df22bd217a",
+      "source_constraint_residual_max": 5.968906298830171e-12,
+      "source_residual_bound_max": 5.482941139021677e-11,
+      "exact_source_identity_claimed": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "intervals": 32,
+      "time_refinement": 1,
+      "time": 0.1,
+      "artifact": "nonlinear_modulated_N32_dt1_T0.1.npz",
+      "sha256": "a74a116daf917487f08e7294f2679d3bd1a1cbea5d937cf885e311a7b45a6c8f",
+      "dt": 0.00078125,
+      "steps": 128,
+      "coordinate_component_maxima": [
+        1.8597874339465893e-09,
+        9.718526260357542e-09,
+        1.2214828934718171e-10,
+        2.5540915820406747e-13
+      ],
+      "current_component_maxima": [
+        1.8597874339465893e-09,
+        6.332733100166241e-09,
+        6.590417740807878e-09,
+        1.2214828934718171e-10,
+        2.5540915820406747e-13
+      ],
+      "mass_constraint_max": 8.876591265205846e-12,
+      "background_constraint_max": 3.105241978379145e-11,
+      "scalar_boundary_error": 5.127006900484503e-10,
+      "legacy_scalar_boundary_error": 5.127006900484548e-10,
+      "scalar_boundary_scale": 3.882267143195914e-08,
+      "lapse_boundary_error": 2.8375403903173176e-15,
+      "constraint_addition_max": 2.5383908233491327e-15,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        7.288649257477341e-09,
+        1.2453644273236234e-11,
+        1.2819005998609997e-12
+      ],
+      "scalar_boundary_gate": false,
+      "lapse_boundary_gate": false,
+      "mass_constraint_gate": false,
+      "valid_for_physics_claim": false,
+      "source_residual_artifact": "nonlinear_modulated_N32_dt1_T0.1_source_residual.npz",
+      "source_residual_sha256": "c1561c4e3e16f1323ca8f8d90d38aa75911bae79f33bf94fadb1ac4bc3acecca",
+      "source_constraint_residual_max": 1.3937220189967346e-10,
+      "source_residual_bound_max": 7.461478975914724e-10,
+      "exact_source_identity_claimed": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "intervals": 32,
+      "time_refinement": 1,
+      "time": 0.3,
+      "artifact": "nonlinear_modulated_N32_dt1_T0.3.npz",
+      "sha256": "6a2628a973b1889e228d7aa079ced679cfa21e77a818961ed54d6a1af2967feb",
+      "dt": 0.00078125,
+      "steps": 384,
+      "coordinate_component_maxima": [
+        2.9939982507583336e-09,
+        3.917721460322638e-08,
+        1.5656426945877309e-10,
+        1.0352411424349712e-12
+      ],
+      "current_component_maxima": [
+        2.9939982507583336e-09,
+        5.965857158177874e-09,
+        8.604123156557487e-09,
+        1.5656426945877309e-10,
+        1.0352411424349712e-12
+      ],
+      "mass_constraint_max": 2.5078399738904417e-11,
+      "background_constraint_max": 4.86892589185611e-11,
+      "scalar_boundary_error": 1.8560556081671365e-09,
+      "legacy_scalar_boundary_error": 1.8560556081668422e-09,
+      "scalar_boundary_scale": 1.5646727578430718e-07,
+      "lapse_boundary_error": 3.7930967076134145e-14,
+      "constraint_addition_max": 1.1789339801967763e-14,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        2.2566950789744516e-08,
+        1.4546293052796276e-11,
+        1.7135872184982953e-11
+      ],
+      "scalar_boundary_gate": false,
+      "lapse_boundary_gate": false,
+      "mass_constraint_gate": false,
+      "valid_for_physics_claim": false,
+      "source_residual_artifact": "nonlinear_modulated_N32_dt1_T0.3_source_residual.npz",
+      "source_residual_sha256": "ed6a2ec6e9d2214dace579d70f6ab960145c08728f2408d2cff8dda6c7bccebc",
+      "source_constraint_residual_max": 5.6373388003241565e-11,
+      "source_residual_bound_max": 3.4251164628836966e-10,
+      "exact_source_identity_claimed": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "intervals": 64,
+      "time_refinement": 1,
+      "time": 0.1,
+      "artifact": "nonlinear_modulated_N64_dt1_T0.1.npz",
+      "sha256": "8e8ae6f335de7bb4882ff9a7c65efd0bc6d1ede19e01f75ee270c26debee9b61",
+      "dt": 0.0003921568627450981,
+      "steps": 255,
+      "coordinate_component_maxima": [
+        1.9289843515560775e-09,
+        9.805733937377243e-09,
+        1.2142600784791453e-10,
+        2.4691273139710296e-13
+      ],
+      "current_component_maxima": [
+        1.9289843515560775e-09,
+        6.91828641643962e-09,
+        6.499109000555294e-09,
+        1.2142600784791453e-10,
+        2.4691273139710296e-13
+      ],
+      "mass_constraint_max": 7.07994937447033e-12,
+      "background_constraint_max": 3.1093146939704194e-11,
+      "scalar_boundary_error": 5.2133472292847954e-11,
+      "legacy_scalar_boundary_error": 5.213346951452861e-11,
+      "scalar_boundary_scale": 3.9171040608579104e-08,
+      "lapse_boundary_error": 4.888111011330975e-16,
+      "constraint_addition_max": 4.392211867276286e-15,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        5.969182494486072e-09,
+        5.436819562511753e-12,
+        4.416552066708456e-13
+      ],
+      "scalar_boundary_gate": true,
+      "lapse_boundary_gate": true,
+      "mass_constraint_gate": false,
+      "valid_for_physics_claim": false,
+      "source_residual_artifact": "nonlinear_modulated_N64_dt1_T0.1_source_residual.npz",
+      "source_residual_sha256": "2587c52852d5185faff5adb48b507a7093adcb0f4ceae53acb9fea00f92ec139",
+      "source_constraint_residual_max": 1.3126768655665626e-10,
+      "source_residual_bound_max": 5.263608707995208e-10,
+      "exact_source_identity_claimed": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "intervals": 64,
+      "time_refinement": 1,
+      "time": 0.3,
+      "artifact": "nonlinear_modulated_N64_dt1_T0.3.npz",
+      "sha256": "bcd9264824952fba8e08212f90c9bac7e09121f197b3c186ca75493ab91453d5",
+      "dt": 0.0003921568627450981,
+      "steps": 765,
+      "coordinate_component_maxima": [
+        2.988348009529387e-09,
+        3.9201215722710196e-08,
+        1.5315902451538018e-10,
+        9.772175296836712e-13
+      ],
+      "current_component_maxima": [
+        2.988348009529387e-09,
+        6.283889262140044e-09,
+        9.677440110295688e-09,
+        1.5315902451538018e-10,
+        9.772175296836712e-13
+      ],
+      "mass_constraint_max": 3.333844000317031e-11,
+      "background_constraint_max": 4.868925891856112e-11,
+      "scalar_boundary_error": 2.1690851419015814e-09,
+      "legacy_scalar_boundary_error": 2.169085141901291e-09,
+      "scalar_boundary_scale": 1.5656313226158458e-07,
+      "lapse_boundary_error": 9.293628864933491e-15,
+      "constraint_addition_max": 1.818457345999429e-14,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        4.438538108472819e-08,
+        5.521519237564504e-12,
+        8.397067021492847e-12
+      ],
+      "scalar_boundary_gate": false,
+      "lapse_boundary_gate": true,
+      "mass_constraint_gate": false,
+      "valid_for_physics_claim": false,
+      "source_residual_artifact": "nonlinear_modulated_N64_dt1_T0.3_source_residual.npz",
+      "source_residual_sha256": "37582b1a63ff81170982600aa0855db8b343b80e4d1a552a01c2da98b3ec4926",
+      "source_constraint_residual_max": 5.845996322868691e-11,
+      "source_residual_bound_max": 4.322510371598929e-10,
+      "exact_source_identity_claimed": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "intervals": 128,
+      "time_refinement": 1,
+      "time": 0.1,
+      "artifact": "nonlinear_modulated_N128_dt1_T0.1.npz",
+      "sha256": "f6b497e1caa0cfc1b3d891b57a8d484f798d7fdccde502637e6e32c6f55eb40d",
+      "dt": 0.00019607843137254904,
+      "steps": 510,
+      "coordinate_component_maxima": [
+        1.9248655654964728e-09,
+        9.80733051882978e-09,
+        1.2126319425972075e-10,
+        2.3279652713813475e-13
+      ],
+      "current_component_maxima": [
+        1.9248655654964728e-09,
+        7.120043119074462e-09,
+        6.534935814832744e-09,
+        1.2126319425972075e-10,
+        2.3279652713813475e-13
+      ],
+      "mass_constraint_max": 2.2122405017720008e-12,
+      "background_constraint_max": 3.110146778502456e-11,
+      "scalar_boundary_error": 8.975981341266066e-11,
+      "legacy_scalar_boundary_error": 8.975981341265675e-11,
+      "scalar_boundary_scale": 3.917741848475968e-08,
+      "lapse_boundary_error": 4.202874775346752e-17,
+      "constraint_addition_max": 3.579657187376812e-15,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        5.331767083498225e-09,
+        2.196818627355711e-12,
+        7.594841946979542e-14
+      ],
+      "scalar_boundary_gate": true,
+      "lapse_boundary_gate": true,
+      "mass_constraint_gate": false,
+      "valid_for_physics_claim": false,
+      "source_residual_artifact": "nonlinear_modulated_N128_dt1_T0.1_source_residual.npz",
+      "source_residual_sha256": "bd49eb5c25a39c53c59fd72e9f95b549d67173981c997f958156a37c118926ed",
+      "source_constraint_residual_max": 4.124358488163053e-11,
+      "source_residual_bound_max": 3.1378513932958477e-10,
+      "exact_source_identity_claimed": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "intervals": 128,
+      "time_refinement": 1,
+      "time": 0.3,
+      "artifact": "nonlinear_modulated_N128_dt1_T0.3.npz",
+      "sha256": "0ef9e8a4cc0d9c92c1fe40a7bd3d8ea3d2dfb49ad89626a946ab9f41e592e4bc",
+      "dt": 0.00019607843137254904,
+      "steps": 1530,
+      "coordinate_component_maxima": [
+        2.989798445450803e-09,
+        3.9203602372974895e-08,
+        1.531256109494618e-10,
+        9.965966205577536e-13
+      ],
+      "current_component_maxima": [
+        2.989798445450803e-09,
+        6.517375850291128e-09,
+        9.853886101745417e-09,
+        1.531256109494618e-10,
+        9.965966205577536e-13
+      ],
+      "mass_constraint_max": 2.2997154061058644e-11,
+      "background_constraint_max": 4.868925891856112e-11,
+      "scalar_boundary_error": 1.0089986156352638e-09,
+      "legacy_scalar_boundary_error": 1.0089986156349729e-09,
+      "scalar_boundary_scale": 1.5657266414558782e-07,
+      "lapse_boundary_error": 8.288023879014958e-16,
+      "constraint_addition_max": 1.4882990776000857e-14,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        3.6044206336498093e-08,
+        2.394433497980308e-12,
+        1.497694668019644e-12
+      ],
+      "scalar_boundary_gate": true,
+      "lapse_boundary_gate": true,
+      "mass_constraint_gate": false,
+      "valid_for_physics_claim": false,
+      "source_residual_artifact": "nonlinear_modulated_N128_dt1_T0.3_source_residual.npz",
+      "source_residual_sha256": "1caf3a18aaed6da2c10ce53b9a68e56bf08ab211e88514c82fc66190686eafd5",
+      "source_constraint_residual_max": 3.4448467942479116e-11,
+      "source_residual_bound_max": 3.15518023717318e-10,
+      "exact_source_identity_claimed": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "intervals": 128,
+      "time_refinement": 2,
+      "time": 0.1,
+      "artifact": "nonlinear_modulated_N128_dt2_T0.1.npz",
+      "sha256": "2b49e0520f8f67e8ed902935052d85affaf657ea241cbe4e03adb0c667b0f0c1",
+      "dt": 9.803921568627452e-05,
+      "steps": 1020,
+      "coordinate_component_maxima": [
+        1.9248655661822274e-09,
+        9.807330506401351e-09,
+        1.212631942597049e-10,
+        2.3279651498490557e-13
+      ],
+      "current_component_maxima": [
+        1.9248655661822274e-09,
+        7.1200431106110505e-09,
+        6.534935817883081e-09,
+        1.212631942597049e-10,
+        2.3279651498490557e-13
+      ],
+      "mass_constraint_max": 2.2122405007585947e-12,
+      "background_constraint_max": 3.110146778502456e-11,
+      "scalar_boundary_error": 8.975981341098468e-11,
+      "legacy_scalar_boundary_error": 8.975981341098078e-11,
+      "scalar_boundary_scale": 3.917741843511174e-08,
+      "lapse_boundary_error": 4.2028733549414257e-17,
+      "constraint_addition_max": 3.579657187324069e-15,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        5.331767100307285e-09,
+        2.196818619779958e-12,
+        7.594839380223563e-14
+      ],
+      "scalar_boundary_gate": true,
+      "lapse_boundary_gate": true,
+      "mass_constraint_gate": false,
+      "valid_for_physics_claim": false,
+      "source_residual_artifact": "nonlinear_modulated_N128_dt2_T0.1_source_residual.npz",
+      "source_residual_sha256": "f361cca94a7f6c165ce948b3177092be3cae3af3bc38d999fd812776899ba022",
+      "source_constraint_residual_max": 4.12435853831453e-11,
+      "source_residual_bound_max": 3.137851411263775e-10,
+      "exact_source_identity_claimed": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "intervals": 128,
+      "time_refinement": 2,
+      "time": 0.3,
+      "artifact": "nonlinear_modulated_N128_dt2_T0.3.npz",
+      "sha256": "b463fde85ed83d7ccd0bac37916f62912ebb14671250ff603203c3380a2df8f3",
+      "dt": 9.803921568627452e-05,
+      "steps": 3060,
+      "coordinate_component_maxima": [
+        2.9897984461948195e-09,
+        3.920360242868131e-08,
+        1.531256111253504e-10,
+        9.96596617049671e-13
+      ],
+      "current_component_maxima": [
+        2.9897984461948195e-09,
+        6.5173758426457196e-09,
+        9.85388610942111e-09,
+        1.531256111253504e-10,
+        9.96596617049671e-13
+      ],
+      "mass_constraint_max": 2.2997154058377202e-11,
+      "background_constraint_max": 4.86892589185611e-11,
+      "scalar_boundary_error": 1.0089986156348335e-09,
+      "legacy_scalar_boundary_error": 1.0089986156345425e-09,
+      "scalar_boundary_scale": 1.5657266436806994e-07,
+      "lapse_boundary_error": 8.287905210363168e-16,
+      "constraint_addition_max": 1.488299077514479e-14,
+      "numerical_source_maxima": [
+        0.0,
+        0.0,
+        3.6044206376223085e-08,
+        2.394318583963474e-12,
+        1.4976732238962146e-12
+      ],
+      "scalar_boundary_gate": true,
+      "lapse_boundary_gate": true,
+      "mass_constraint_gate": false,
+      "valid_for_physics_claim": false,
+      "source_residual_artifact": "nonlinear_modulated_N128_dt2_T0.3_source_residual.npz",
+      "source_residual_sha256": "59ef35734b5c534714eb75b21f426cbceb2c9e4fc19957344d005c10c4bfa873",
+      "source_constraint_residual_max": 3.444846822186857e-11,
+      "source_residual_bound_max": 3.15518024566381e-10,
+      "exact_source_identity_claimed": false
+    }
+  ],
+  "comparisons": [
+    {
+      "case": "canonical",
+      "time": 0.1,
+      "spatial_pass": true,
+      "temporal_pass": true,
+      "coarse_difference": [
+        6.576561031395243e-12,
+        1.4321725108978823e-10,
+        1.8464061416476587e-13,
+        3.821018036151274e-14
+      ],
+      "fine_difference": [
+        4.809961018645405e-12,
+        3.622549612428639e-11,
+        9.603259996153189e-14,
+        9.436798981858939e-15
+      ],
+      "time_difference": [
+        2.4920966461193883e-19,
+        1.758719202310328e-16,
+        2.744148134962193e-20,
+        9.853317458297407e-21
+      ]
+    },
+    {
+      "case": "canonical",
+      "time": 0.3,
+      "spatial_pass": true,
+      "temporal_pass": true,
+      "coarse_difference": [
+        2.3606124856784213e-11,
+        1.186266782727556e-10,
+        9.982729177536527e-13,
+        2.939775892940678e-14
+      ],
+      "fine_difference": [
+        6.897776026641839e-12,
+        3.662594563569713e-11,
+        4.466856579438778e-13,
+        6.994687694057166e-15
+      ],
+      "time_difference": [
+        4.143526259124025e-19,
+        3.460164126230784e-16,
+        9.090814775242649e-20,
+        2.5328148678326166e-20
+      ]
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.1,
+      "spatial_pass": false,
+      "temporal_pass": true,
+      "coarse_difference": [
+        3.210010588507754e-11,
+        6.339947594693619e-10,
+        1.4081747036905256e-12,
+        1.9784844389424312e-13
+      ],
+      "fine_difference": [
+        2.4730251438431675e-11,
+        1.7625944180622368e-10,
+        5.653903934458854e-13,
+        4.742927235983897e-14
+      ],
+      "time_difference": [
+        1.6338107047313482e-18,
+        1.0124571875222017e-15,
+        1.8424732762635804e-19,
+        4.393390648335826e-20
+      ]
+    },
+    {
+      "case": "nonlinear_modulated",
+      "time": 0.3,
+      "spatial_pass": true,
+      "temporal_pass": true,
+      "coarse_difference": [
+        1.0844210759941534e-10,
+        5.777754279007076e-10,
+        5.176913659761864e-12,
+        1.54364510750808e-13
+      ],
+      "fine_difference": [
+        3.61566443659779e-11,
+        1.8776005619734489e-10,
+        2.3976940686688763e-12,
+        3.776699801990777e-14
+      ],
+      "time_difference": [
+        2.3748638695757224e-18,
+        1.9822064734835815e-15,
+        5.505538575143241e-19,
+        1.138021874833073e-19
+      ]
+    }
+  ],
+  "valid_for_physics_claim": false,
+  "scope": "Ordinary linearized coupled scalar/mass/lapse correction about the saved approximate parent. Constraint-reduced current formulation, actual nonzero parent defects, fixed continuum initial lift, coupled scalar characteristic boundary and outer lapse boundary. No manufactured solution/forcing, no first-u or full nonlinear claim.",
+  "parameters": {
+    "N": [
+      32,
+      64,
+      128
+    ],
+    "T": 0.3,
+    "outputs_T": [
+      0.1,
+      0.3
+    ],
+    "epsilon": 0.1,
+    "sigma": 0.05,
+    "cfl": 0.15,
+    "time_interpolation_intervals": 192,
+    "dissipation": 0,
+    "mass_completion": "Backward cell-exponential Volterra solve: whole raw SAT plus derived compatible Gram restoring source completed, without scalar projection, outer mass source zero, nonzero all-row source residual explicitly bounded. Physical/field accuracy gates unchanged; exact source identity is NOT claimed.",
+    "constraint_addition": "-f_mu*delta_J-delta_f_mu*J_background retained explicitly",
+    "filter_scope": "Optional existing third-difference Gram filter on coordinate q/lapse before Noether completion. Negative work in the declared unprojected source norm; not proof of negative completed/full coupled work. Vanishes with mesh refinement; not a physical coefficient.",
+    "source_completion": "compatible_volterra",
+    "source_identity_exact_required": false,
+    "initial_kind": "third_corner",
+    "compatible_restoring_term": true,
+    "timestep_control": "Ordinary CFL plus minimum qualified full-coupled frozen-matrix cap. Same caps for baseline; no all-time/continuum stability claim."
+  },
+  "gates": {
+    "spatial_reduction": 1.3,
+    "absolute_refinement_floor": 1e-16,
+    "time_halving_fraction_of_mesh_difference": 0.1,
+    "boundary_relative": 0.01,
+    "boundary_floor": 1e-22,
+    "mass_constraint_fraction_of_background": 0.05,
+    "mass_constraint_floor": 1e-16
+  },
+  "active_job": null,
+  "passed": 157,
+  "total": 164,
+  "completed_utc": "2026-09-09T09:41:16.094114+00:00"
+}

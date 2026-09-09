@@ -1,0 +1,670 @@
+{
+  "state": "complete",
+  "started_utc": "2026-09-09T07:19:57.458516+00:00",
+  "script_sha256": "819278bc5dd3b6f0781413a6cc2042c3055a65dede06d5a1106e3a53bf7ae5b4",
+  "inputs": {
+    "scripts\\annular_analytic_corner_jets_20260909.py": "fdb1b59a03d37cce85de443cfae9c2a246d829e9716251b6d942fded15bf40ea",
+    "scripts\\annular_third_corner_initial_data_20260909.py": "ac6f3ef627a88496a7639bc8dacfc08583052f8c2e22ba5c80ca21845a8ad480",
+    "scripts\\derive_annular_analytic_third_corner_data_20260909.py": "819278bc5dd3b6f0781413a6cc2042c3055a65dede06d5a1106e3a53bf7ae5b4",
+    "scripts\\annular_fifth_order_jet_20260909.py": "02db75655f95f3d64fba5246b7d7eca9ab4cdba35cc5b3aa0cb8be53072814ef",
+    "scripts\\annular_coordinate_evolution_operator_20260909.py": "cf884d6a6df0e0c9c578248bbff7ebf16011aad051a018350d9ab31c40bccbd2",
+    "scripts\\annular_evolution_operator_20260909.py": "3955c8fdf7eda801ced7d0eeefa21be6e3267f6056178664b3015c047933aed8",
+    "scripts\\annular_coupled_current_operator_20260909.py": "20e5c31f4bce2b401b11ad5e55e2cf8f9e75519b2c84557e9378ddc0bd8504ba",
+    "scripts\\annular_second_corner_initial_data_20260909.py": "ec895bc2d29b5191d684d11ab4373d91feca7acdfaf8b97b715b30b117eef807",
+    "scripts\\annular_current_corner_compatibility_20260909.py": "bd7515936a8bc0f062519ac38881c66ea9f40cc93acee56eb5afa2b607528d07",
+    "scripts\\annular_continuum_initial_data_20260909.py": "7ae2b3489dd715780daf17d652fecc45c50165f638c46cf825d1d1f0cac0491b",
+    "source-intake\\navier-stokes\\20260909\\annular-second-corner-truncation-diagnosis\\status.json": "ec2d7da1e7c6c04687189362b91bce41305af20816c5e37562e87e6e6d1c10cf",
+    "source-intake\\navier-stokes\\20260909\\annular-constraint-correction-initial\\canonical.json": "6e24704a5834702cbbd1b8379dcb621cc074948a9dc81c9c80709df30425644a",
+    "source-intake\\navier-stokes\\20260909\\annular-second-corner-initial-data\\canonical-degree64.json": "c6403afcede88ccdf08664072f5a3dcc4f4ac609f9fbecfb5dcb2144d1e8cbb4",
+    "source-intake\\navier-stokes\\20260909\\annular-constraint-correction-initial\\nonlinear_modulated.json": "39a36d33cabf877b4574692e5a15a5245af834eefce3cffd68cffe5296c4c222",
+    "source-intake\\navier-stokes\\20260909\\annular-second-corner-initial-data\\nonlinear_modulated-degree64.json": "c0897535cd59a37b3ad69f03b7db1d1d0f8b2407b77e573c0ff6754b80e71998"
+  },
+  "checks": [
+    {
+      "name": "old_third_corner_diagnosis_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_cutoff_join_through_order_five",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_independent_background_current",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_independent_background_defect",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_analytic_C3_matches_independent_old_diagnosis",
+      "passed": true,
+      "detail": {
+        "analytic": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -3.009089085197115e-18,
+            4.8979516206606195e-17,
+            -4.532949863286814e-22
+          ],
+          [
+            -5.717784354794794e-16,
+            -2.172633793613965e-13,
+            -2.930351269274994e-18
+          ],
+          [
+            1.5587927151935777e-07,
+            -0.0005020506021775664,
+            4.120772376132211e-09
+          ]
+        ],
+        "finite_difference_C3": [
+          1.5587577698711972e-07,
+          -0.0005020558007277357,
+          4.121060867531966e-09
+        ]
+      }
+    },
+    {
+      "name": "canonical_degree64_conditioned_analytic_solve",
+      "passed": true,
+      "detail": {
+        "condition_number": 118487.89751798722,
+        "amplitudes": [
+          -6.119804478533298e-09,
+          6.508169923840698e-10,
+          1.3033786179719865e-16,
+          -1.3453109010087756e-07,
+          -1.086843330612785e-08,
+          6.641455772213729e-14,
+          8.603986631113257e-06,
+          1.418939941008129e-07,
+          -9.143659493627354e-13
+        ]
+      }
+    },
+    {
+      "name": "canonical_degree64_direct_parent_corners",
+      "passed": true,
+      "detail": {
+        "C0_to_C3": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            2.3665264149771276e-25,
+            -4.268781962118867e-23,
+            -5.561469381808133e-29
+          ],
+          [
+            -1.4537699265619461e-22,
+            4.972182126492769e-21,
+            -1.8156422594566808e-26
+          ],
+          [
+            8.318346449480856e-53,
+            4.272897378203733e-18,
+            -1.216537111821152e-24
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_degree64_global_initial_mass_holdout",
+      "passed": true,
+      "detail": {
+        "max": 3.144858730191309e-19
+      }
+    },
+    {
+      "name": "canonical_degree64_zero_q_outer_mass_lapse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_degree64_independent_first_second_corner_check",
+      "passed": true,
+      "detail": {
+        "finite_C0_to_C2": [
+          [
+            4.930380657631324e-32,
+            0.0,
+            0.0
+          ],
+          [
+            3.009094275953216e-18,
+            -4.897956156847658e-17,
+            4.5329492006436535e-22
+          ],
+          [
+            9.824516879373099e-16,
+            -7.160517729471794e-13,
+            1.0441322468826176e-17
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_degree80_conditioned_analytic_solve",
+      "passed": true,
+      "detail": {
+        "condition_number": 118487.89751798716,
+        "amplitudes": [
+          -6.119804478533298e-09,
+          6.508169923840698e-10,
+          1.3033786179719865e-16,
+          -1.3453109010087756e-07,
+          -1.086843330612785e-08,
+          6.641455772213729e-14,
+          8.603986631113257e-06,
+          1.418939941008129e-07,
+          -9.143659493627354e-13
+        ]
+      }
+    },
+    {
+      "name": "canonical_degree80_direct_parent_corners",
+      "passed": true,
+      "detail": {
+        "C0_to_C3": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            5.275858925475104e-25,
+            -4.268781962118867e-23,
+            -5.561469381808133e-29
+          ],
+          [
+            -1.4310224597167379e-22,
+            4.972182126492769e-21,
+            -1.8156422594566808e-26
+          ],
+          [
+            8.318346449480856e-53,
+            4.272897378203733e-18,
+            -1.216537111821152e-24
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_degree80_global_initial_mass_holdout",
+      "passed": true,
+      "detail": {
+        "max": 3.360623599198242e-19
+      }
+    },
+    {
+      "name": "canonical_degree80_zero_q_outer_mass_lapse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_degree80_independent_first_second_corner_check",
+      "passed": true,
+      "detail": {
+        "finite_C0_to_C2": [
+          [
+            0.0,
+            -2.1382117680737565e-50,
+            0.0
+          ],
+          [
+            3.009094148060031e-18,
+            -4.8979541308300395e-17,
+            4.5329492006436535e-22
+          ],
+          [
+            9.824506012639034e-16,
+            -7.160511770594899e-13,
+            1.0441322468024693e-17
+          ]
+        ]
+      }
+    },
+    {
+      "name": "canonical_independent_mass_degree_amplitudes",
+      "passed": true,
+      "detail": {
+        "absolute_difference": 0.0
+      }
+    },
+    {
+      "name": "nonlinear_modulated_independent_background_current",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_independent_background_defect",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_analytic_C3_matches_independent_old_diagnosis",
+      "passed": true,
+      "detail": {
+        "analytic": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -1.542901841190043e-18,
+            -3.55640948692003e-17,
+            -6.617446667472649e-22
+          ],
+          [
+            -5.592505519621323e-16,
+            2.700089563267434e-13,
+            -1.2026340466856747e-18
+          ],
+          [
+            -6.828792106582933e-07,
+            0.0048190629701148225,
+            -4.315288400804337e-08
+          ]
+        ],
+        "finite_difference_C3": [
+          -6.828857020024313e-07,
+          0.004819038853207164,
+          -4.3152819189901314e-08
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_degree64_conditioned_analytic_solve",
+      "passed": true,
+      "detail": {
+        "condition_number": 121984.0996780739,
+        "amplitudes": [
+          4.1372847394624785e-08,
+          -6.7422213418624225e-09,
+          4.967656382683905e-15,
+          6.650361366428237e-07,
+          1.0909802166055165e-07,
+          -7.758236157748844e-13,
+          -3.865555374537396e-05,
+          -1.3942605830330802e-06,
+          1.001924615006343e-11
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_degree64_direct_parent_corners",
+      "passed": true,
+      "detail": {
+        "C0_to_C3": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -3.550757622649372e-24,
+            -2.2732361472803427e-23,
+            -2.7767903863779616e-28
+          ],
+          [
+            8.258321301394132e-26,
+            4.3337642830710664e-20,
+            -1.21370983433684e-25
+          ],
+          [
+            1.825391603344273e-18,
+            -6.4365239485723474e-18,
+            -1.370017889540952e-24
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_degree64_global_initial_mass_holdout",
+      "passed": true,
+      "detail": {
+        "max": 4.831584834636051e-19
+      }
+    },
+    {
+      "name": "nonlinear_modulated_degree64_zero_q_outer_mass_lapse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_degree64_independent_first_second_corner_check",
+      "passed": true,
+      "detail": {
+        "finite_C0_to_C2": [
+          [
+            0.0,
+            4.276423536147513e-50,
+            0.0
+          ],
+          [
+            1.5429115377268994e-18,
+            3.556415818663342e-17,
+            6.61744224985158e-22
+          ],
+          [
+            9.457807046225837e-16,
+            -1.456073601906575e-12,
+            3.3307130080227417e-18
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_degree80_conditioned_analytic_solve",
+      "passed": true,
+      "detail": {
+        "condition_number": 121984.09967807392,
+        "amplitudes": [
+          4.1372847394624785e-08,
+          -6.7422213418624225e-09,
+          4.967656382683905e-15,
+          6.650361366428237e-07,
+          1.0909802166055165e-07,
+          -7.758236157748844e-13,
+          -3.865555374537396e-05,
+          -1.3942605830330802e-06,
+          1.001924615006343e-11
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_degree80_direct_parent_corners",
+      "passed": true,
+      "detail": {
+        "C0_to_C3": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -4.3058593937981715e-25,
+            -2.2732361472803427e-23,
+            -2.7767903863779616e-28
+          ],
+          [
+            6.700028113438163e-24,
+            4.3337642830710664e-20,
+            -1.21370983433684e-25
+          ],
+          [
+            1.825391603344273e-18,
+            -6.4365239485723474e-18,
+            -1.370017889540952e-24
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_degree80_global_initial_mass_holdout",
+      "passed": true,
+      "detail": {
+        "max": 5.742042324728873e-19
+      }
+    },
+    {
+      "name": "nonlinear_modulated_degree80_zero_q_outer_mass_lapse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonlinear_modulated_degree80_independent_first_second_corner_check",
+      "passed": true,
+      "detail": {
+        "finite_C0_to_C2": [
+          [
+            4.930380657631324e-32,
+            -8.552847072295026e-50,
+            0.0
+          ],
+          [
+            1.5429113077478453e-18,
+            3.5564013641519814e-17,
+            6.61744224985158e-22
+          ],
+          [
+            9.457815050625282e-16,
+            -1.4560742755094244e-12,
+            3.3307130084266385e-18
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_modulated_independent_mass_degree_amplitudes",
+      "passed": true,
+      "detail": {
+        "absolute_difference": 0.0
+      }
+    },
+    {
+      "name": "no_bytecode_cache",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "cases": [
+    {
+      "case": "canonical",
+      "degree": 64,
+      "path": "canonical-degree64.json",
+      "sha256": "fe232378a70a9ac9d328c750fffcc8bfbd16ddfe8e4062c321bcc05b7ef662cf",
+      "analytic_corner_values": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          2.3665264149771276e-25,
+          -4.268781962118867e-23,
+          -5.561469381808133e-29
+        ],
+        [
+          -1.4537699265619461e-22,
+          4.972182126492769e-21,
+          -1.8156422594566808e-26
+        ],
+        [
+          8.318346449480856e-53,
+          4.272897378203733e-18,
+          -1.216537111821152e-24
+        ]
+      ],
+      "initial_component_maxima": [
+        3.408844388775192e-10,
+        0.0,
+        3.3638029958109305e-11,
+        8.310961259291483e-16
+      ],
+      "mass_constraint_holdout_max": 3.144858730191309e-19,
+      "condition_number": 118487.89751798722,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "canonical",
+      "degree": 80,
+      "path": "canonical-degree80.json",
+      "sha256": "a63471cf655a5d4da3035ab090af144e2a24419c967b82964e44ac55baa25d7d",
+      "analytic_corner_values": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          5.275858925475104e-25,
+          -4.268781962118867e-23,
+          -5.561469381808133e-29
+        ],
+        [
+          -1.4310224597167379e-22,
+          4.972182126492769e-21,
+          -1.8156422594566808e-26
+        ],
+        [
+          8.318346449480856e-53,
+          4.272897378203733e-18,
+          -1.216537111821152e-24
+        ]
+      ],
+      "initial_component_maxima": [
+        3.408844388775192e-10,
+        0.0,
+        3.3638029960246204e-11,
+        8.310961259291483e-16
+      ],
+      "mass_constraint_holdout_max": 3.360623599198242e-19,
+      "condition_number": 118487.89751798716,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "degree": 64,
+      "path": "nonlinear_modulated-degree64.json",
+      "sha256": "9772d01c0514176c10ee762220acbcaa95f4341f4d63dd0073c9d214a39696e5",
+      "analytic_corner_values": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -3.550757622649372e-24,
+          -2.2732361472803427e-23,
+          -2.7767903863779616e-28
+        ],
+        [
+          8.258321301394132e-26,
+          4.3337642830710664e-20,
+          -1.21370983433684e-25
+        ],
+        [
+          1.825391603344273e-18,
+          -6.4365239485723474e-18,
+          -1.370017889540952e-24
+        ]
+      ],
+      "initial_component_maxima": [
+        1.4566097122684427e-09,
+        0.0,
+        5.7944485848317604e-11,
+        9.588429974855968e-15
+      ],
+      "mass_constraint_holdout_max": 4.831584834636051e-19,
+      "condition_number": 121984.0996780739,
+      "valid_for_physics_claim": false
+    },
+    {
+      "case": "nonlinear_modulated",
+      "degree": 80,
+      "path": "nonlinear_modulated-degree80.json",
+      "sha256": "1ae7c44a940388c1ce18e11574c05c4ffc490074657cbb8452460909c9e27eb0",
+      "analytic_corner_values": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -4.3058593937981715e-25,
+          -2.2732361472803427e-23,
+          -2.7767903863779616e-28
+        ],
+        [
+          6.700028113438163e-24,
+          4.3337642830710664e-20,
+          -1.21370983433684e-25
+        ],
+        [
+          1.825391603344273e-18,
+          -6.4365239485723474e-18,
+          -1.370017889540952e-24
+        ]
+      ],
+      "initial_component_maxima": [
+        1.4566097122684427e-09,
+        0.0,
+        5.79444858520646e-11,
+        9.588429974855968e-15
+      ],
+      "mass_constraint_holdout_max": 5.742042324728873e-19,
+      "condition_number": 121984.09967807392,
+      "valid_for_physics_claim": false
+    }
+  ],
+  "old_data_corners": [
+    {
+      "case": "canonical",
+      "corners": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -3.009089085197115e-18,
+          4.8979516206606195e-17,
+          -4.532949863286814e-22
+        ],
+        [
+          -5.717784354794794e-16,
+          -2.172633793613965e-13,
+          -2.930351269274994e-18
+        ],
+        [
+          1.5587927151935777e-07,
+          -0.0005020506021775664,
+          4.120772376132211e-09
+        ]
+      ]
+    },
+    {
+      "case": "nonlinear_modulated",
+      "corners": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -1.542901841190043e-18,
+          -3.55640948692003e-17,
+          -6.617446667472649e-22
+        ],
+        [
+          -5.592505519621323e-16,
+          2.700089563267434e-13,
+          -1.2026340466856747e-18
+        ],
+        [
+          -6.828792106582933e-07,
+          0.0048190629701148225,
+          -4.315288400804337e-08
+        ]
+      ]
+    }
+  ],
+  "valid_for_physics_claim": false,
+  "scope": "New explicitly declared C0-C3 compatible initial family for the ordinary CURRENT linearization. Analytic truncated Taylor recurrence and mass ODE jets; no finite-difference fitting of boundary amplitudes, no new physical coefficient or retroactive promotion of old tests.",
+  "passed": 31,
+  "total": 31,
+  "completed_utc": "2026-09-09T07:20:08.190390+00:00"
+}
