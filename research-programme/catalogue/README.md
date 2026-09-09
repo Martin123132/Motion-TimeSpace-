@@ -71,7 +71,7 @@ exceed 1,000 entries.
 - [Publication items 2101-2400](publication-2026-09-09-items-2101-2400.md)
 - [Publication items 2401-2700](publication-2026-09-09-items-2401-2700.md)
 - [Publication items 2701-3000](publication-2026-09-09-items-2701-3000.md)
-- [Publication items 3001-3191](publication-2026-09-09-items-3001-3191.md)
+- [Publication items 3001-3193](publication-2026-09-09-items-3001-3193.md)
 
 The prior `publication-2026-09-09-items-3001-3188.md` and intermediate
 `publication-2026-09-09-items-3001-3191.md` files are retained as historical

@@ -26,7 +26,8 @@ it. The capsule includes five additional `runtime-dependency` files needed to
 import the derive graph: `scripts/annular_discrete_chain_completion_20260909.py`,
 `source-intake/navier-stokes/20260909/sbp4-operator-derived/status.json`, and
 `source-intake/navier-stokes/20260909/sbp4-operator-derived/COMPLETE`, plus
-`source-intake/navier-stokes/20260909/sbp4-second-derivative-derived/coefficients.json`.
+`source-intake/navier-stokes/20260909/sbp4-second-derivative-derived/coefficients.json`
+and `source-intake/navier-stokes/20260909/sbp4-second-derivative-derived/COMPLETE`.
 Install the required compatible Python runtime packages separately; they are
 not part of this source closure. The seal's own results are conditional
 finite-dimensional evidence. The paired
