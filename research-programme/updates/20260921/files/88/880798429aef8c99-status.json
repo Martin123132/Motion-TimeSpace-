@@ -1,0 +1,30 @@
+{
+  "state": "failed",
+  "checks": [
+    {
+      "name": "paired_saved_trajectories_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference257_hierarchical_coordinates_exact",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "cases": [],
+  "inputs": {
+    "scripts\\verify_annular_boundary_response_20260916.py": "847ac805bd9b27a5d25177c0823fb0815455b8a4ce8e782c77bc0f1b4b2e19e8",
+    "source-intake\\navier-stokes\\20260914\\annular-local-refinement-crossing-attempt02\\status.json": "d13a83f713f6f1371cce27d25e14be9cce66562eb34f8b9bb97661e153413d3f"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-boundary-dynamic-response-attempt01\\executed-verify_annular_boundary_response_20260916.py": "847ac805bd9b27a5d25177c0823fb0815455b8a4ce8e782c77bc0f1b4b2e19e8"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "error": "ValueError('zero-size array to reduction operation maximum which has no identity')",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\verify_annular_boundary_response_20260916.py\", line 35, in main\n    evidence.check(prefix+'_local_Gram_dependence_is_rank_one', original_bubble.nnz==0 and maximum(gram_difference) < 2e-10)\n                                                                                           ~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\verify_annular_boundary_response_20260916.py\", line 13, in maximum\n    return float(np.max(abs(matrix)))\n                 ~~~~~~^^^^^^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\.venv-score\\Lib\\site-packages\\numpy\\_core\\fromnumeric.py\", line 3123, in max\n    return _wrapreduction(a, np.maximum, 'max', axis, None, out,\n                          keepdims=keepdims, initial=initial, where=where)\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\.venv-score\\Lib\\site-packages\\numpy\\_core\\fromnumeric.py\", line 81, in _wrapreduction\n    return reduction(axis=axis, out=out, **passkwargs)\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\.venv-score\\Lib\\site-packages\\numpy\\matrixlib\\defmatrix.py\", line 652, in max\n    return N.ndarray.max(self, axis, out, keepdims=True)._collapse(axis)\n           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\.venv-score\\Lib\\site-packages\\numpy\\_core\\_methods.py\", line 41, in _amax\n    return umr_maximum(a, axis, None, out, keepdims, initial, where)\nValueError: zero-size array to reduction operation maximum which has no identity\n"
+}

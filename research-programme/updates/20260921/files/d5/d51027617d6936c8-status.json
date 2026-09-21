@@ -1,0 +1,231 @@
+{
+  "state": "complete",
+  "checks": [
+    {
+      "name": "GR_only_inputs_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preexisting_forward_predictions_blocked",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_terminal_knot",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference_resolved_spectral_step",
+      "passed": true,
+      "detail": {
+        "largest_field_eigenvalue": 9204175.150964022,
+        "eigen_residual": 4.224146022042228e-13,
+        "coupled_factor": 1.0257563928867646,
+        "frequency_estimate": 3111.979085377057,
+        "maximum_step": 0.00020565690913776038,
+        "frozen_spectrum_is_not_a_nonlinear_stability_proof": true
+      }
+    },
+    {
+      "name": "reference_finite_full_backward_path",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference_signed_integrals_bounded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference_new_small_forward_backward_duality",
+      "passed": true,
+      "detail": 4.0319382388191456e-16
+    },
+    {
+      "name": "MTS_resolved_spectral_step",
+      "passed": true,
+      "detail": {
+        "largest_field_eigenvalue": 10690536.742671916,
+        "eigen_residual": 1.1913221013418353e-15,
+        "coupled_factor": 1.0257563928867646,
+        "frequency_estimate": 3353.852722741667,
+        "maximum_step": 0.00019082531431995037,
+        "frozen_spectrum_is_not_a_nonlinear_stability_proof": true
+      }
+    },
+    {
+      "name": "MTS_finite_full_backward_path",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS_signed_integrals_bounded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS_new_small_forward_backward_duality",
+      "passed": true,
+      "detail": 1.5175035707193363e-15
+    }
+  ],
+  "cases": [
+    {
+      "branch": "reference",
+      "count": 33,
+      "terminal_time": 0.05,
+      "terminal_instantaneous_defect": 4.1046948844638805e-07,
+      "initial_pairing": 5.1876039377549595e-11,
+      "base_residual_integral": 3.2104888822718146e-07,
+      "Gram_residual_integral": 0.0,
+      "absolute_base_integral": 8.634443514874412e-06,
+      "absolute_Gram_integral": 0.0,
+      "predicted_linear_GR_difference": 7.31570252712947e-07,
+      "new_small_duality_error": 4.0319382388191456e-16,
+      "rhs_evaluations": 8908,
+      "seconds": 39.41099490004126,
+      "spectral_step": {
+        "largest_field_eigenvalue": 9204175.150964022,
+        "eigen_residual": 4.224146022042228e-13,
+        "coupled_factor": 1.0257563928867646,
+        "frequency_estimate": 3111.979085377057,
+        "maximum_step": 0.00020565690913776038,
+        "frozen_spectrum_is_not_a_nonlinear_stability_proof": true
+      },
+      "frozen_before_preexisting_forward_read": true,
+      "all_physical_claims_false": true
+    },
+    {
+      "branch": "MTS",
+      "count": 33,
+      "terminal_time": 0.05,
+      "terminal_instantaneous_defect": -0.0003984301611782976,
+      "initial_pairing": 1.0469358323055048e-10,
+      "base_residual_integral": 7.039067441736643e-07,
+      "Gram_residual_integral": 0.0004036730820446371,
+      "absolute_base_integral": 1.961281177350025e-05,
+      "absolute_Gram_integral": 0.015589626170472437,
+      "predicted_linear_GR_difference": 5.9469323040963916e-06,
+      "new_small_duality_error": 1.5175035707193363e-15,
+      "rhs_evaluations": 21820,
+      "seconds": 58.07155959994998,
+      "spectral_step": {
+        "largest_field_eigenvalue": 10690536.742671916,
+        "eigen_residual": 1.1913221013418353e-15,
+        "coupled_factor": 1.0257563928867646,
+        "frequency_estimate": 3353.852722741667,
+        "maximum_step": 0.00019082531431995037,
+        "frozen_spectrum_is_not_a_nonlinear_stability_proof": true
+      },
+      "frozen_before_preexisting_forward_read": true,
+      "all_physical_claims_false": true
+    }
+  ],
+  "inputs": {
+    "scripts\\run_annular_force_adjoint_20260917.py": "d23e594d21f8b5ac869ffdb241ea08a0ce17404bca263d8ed796aacf855796e5",
+    "source-intake\\navier-stokes\\20260914\\annular-small-adjoint-inputs-attempt01\\status.json": "6f2448f60be04d0376a48eb4229fcc328488b33ef591473e23ec68b3f44cb7f3",
+    "source-intake\\navier-stokes\\20260914\\annular-small-adjoint-inputs-attempt01\\GR-only-768-33.npz": "084f4ed274b6c17e95fc941200bbbfadb86f27b8ff998d04eddbf36aeec681bc",
+    "scripts\\navier_stokes_source_audit_20260908.py": "817c4cdff5bf22a88deea7771b4bbc960690397512bc07cdb639ee9ab33e4f0b",
+    "scripts\\sbp4_derived_operator_20260909.py": "065ea0be52b651d742082230fe8322a367e11fc5e20150c8f3d506d1f87e77d3",
+    "scripts\\sbp4_compatible_second_operator_20260909.py": "86c6f05f7cf0a07abe9d4caa5ca1038b9f64641085a1a4a4f03aeae3ac918a3c",
+    "scripts\\annular_compatible_current_restoring_20260909.py": "c2e15990fb70e4e0587e63f8f0182831b0a4185003cdcd295db97af9027d4051",
+    "scripts\\annular_gram_joint_action_20260909.py": "c45de66a16a3c44a1ebb5a68874c47a10ceb24815bda5ecc88d5bfad3d049591",
+    "scripts\\annular_covariant_time_transport_20260909.py": "d6a55d99b9f9de06e30ab7a6f090ae12b97b273a23930315740490324ab679a9",
+    "scripts\\annular_mixed_grid_basis_20260909.py": "5a9ceef39b681f376a7e6468a104dc6a4139365248ec64ea95fa8809993f147c",
+    "scripts\\annular_adm_mixed_action_20260909.py": "c5681003a7a495196428407f25e00babc525a35d953618e1911540f4b096fe05",
+    "scripts\\annular_adm_clock_quadratic_20260909.py": "e5ccec725f88125169ccf6f533d5f613343a7259fabad0c0bcf992e600d024be",
+    "scripts\\annular_constraint_routhian_20260909.py": "62a5cf9ac8f8e73ee56bc0c46f29e5ed560692cb19a1125ba848f15c72b1dfd8",
+    "scripts\\annular_metric_link_quadratic_20260909.py": "9555ff3da29cf2522ac67cb8f3a2e3b44420464392e1029cc31410542d96e63b",
+    "scripts\\annular_released_hermite_action_20260909.py": "360d565ed558fd83121d11d59f9096d1ebf7fc49f288ca5d8bf7e4f062cac145",
+    "scripts\\annular_action_boundary_current_20260909.py": "8b702d8f7610d686bebed3ea1af73d94b0d33fe5cc7dbe3e0faee4adbd98ce98",
+    "scripts\\annular_metric_flux_jets_20260909.py": "a1c5e3db71e68ebdd69259d47e50bd1d9cecbba51034a55d5c791ad09bada3a0",
+    "scripts\\annular_nonlinear_history_20260912.py": "7747f735107c7c5bb2eae1b9e213354fc9d8856597328cbe697389ec1a96a2fd",
+    "scripts\\annular_covariant_scalar_action_20260912.py": "ccf97c4622e79a5816e094b3001e0513e7cd16f3a424fafeade04de85bca6a4f",
+    "scripts\\annular_finite_width_bulk_current_20260913.py": "da2ca4c2fab7315b4738007aafff59f38be0d90cf4f121706a32afa16f060601",
+    "scripts\\annular_horizontal_clock_evolution_20260913.py": "985843dab67ab06c85c97b32042d48f6ed5342bf578c3518bbad132cb731cd3d",
+    "scripts\\annular_compatible_h_evolution_20260914.py": "88424b14891e92d7780077619e02e5dc3e166806ed9c22924f0f03682e4e97e1",
+    "scripts\\annular_reference_continuum_shell_20260914.py": "5cbb6013083eafb55181d5a14de236685835c51ed36f26b12f0b4cc02edd9409",
+    "scripts\\annular_source_gravity_collar_20260914.py": "65d8b6c1a421bac8b56420df81630647155043b7b35031365d3f708ab94c7fa2",
+    "scripts\\derive_annular_source_gravity_20260914.py": "97861e2bff4aa48b4408f30a71379b32b5133439bc4d456d9b6426d544bacdbc",
+    "scripts\\annular_flat_preassembled_flow_20260916.py": "d98631ce1a3cb56eb1fb6ea3c1a46c09e60b28f3c4ce9a70097eb618c0be9687",
+    "scripts\\annular_canonical_energy_20260917.py": "30d58c468700bae7a91d45f609beaba53024420e28c40c0b91e3b24722434fbf",
+    "scripts\\annular_matrix_free_adjoint_20260917.py": "bf3d747847dc60b74ff087f1cf7f1b802721c5728391aaf4d3edc53f8403f785",
+    "scripts\\annular_covariant_cut_action_20260915.py": "928f830561a0237f5297897bf690e4a53ca0ffc778b2967c9726223e9fd4176f",
+    "scripts\\annular_covariant_cut_action_v2_20260915.py": "0c24f5c974b4a5d4cd78bb395d8fa71070130e271018eb769d1ef19c2fdc828e",
+    "scripts\\annular_dynamical_source_20260914.py": "b4d623cb63ee77b589bf4a1d1162e281680893b5743df42fe323b90f3c38642a",
+    "scripts\\annular_moving_collar_action_20260914.py": "ac6abbd604a12709b26274ebd53747083d71fdb76f6ac3d90e67b011ee306597",
+    "scripts\\annular_moving_collar_sparse_20260914.py": "2d4b8bfcd5ec95b7b9ff2a2b6999f0c0edba7960a984cdd72bfca1daf0e8cb6d",
+    "scripts\\annular_sparse_repaired_cut_20260915.py": "8e47042aa5e58430e845b8434f6ff47ab322360e0602fd4a482f745737319a99",
+    "scripts\\annular_source_fitted_action_20260915.py": "d409c37c30313d0e05cfd7d0015a587188e1984460da6dc92c2d8fef15f0252f",
+    "scripts\\annular_quadratic_source_fitted_action_20260915.py": "cde77a8db83b284034f98f44d785b58a5f1cad0e4c41113e28c0a47ddd6fd92c",
+    "scripts\\annular_locally_refined_source_action_20260916.py": "81e3fef722d868fcd4e53ebc69b119afed0cc2253cb21e6e88e457424c6d128d",
+    "scripts\\annular_GR_causal_predictor_20260917.py": "819ba8bb68cc79884ee3871a01771cca2cae90a54e7f35229e7911ced41aa432",
+    "scripts\\annular_radiation_benchmark_preparation_20260915.py": "31870324cb028582c1667a594a8da3f5f627c9326ccec406110558406c9d6fd4",
+    "scripts\\annular_two_sided_GR_characteristics_20260915.py": "ece5e22ab8b0d3a8a25f562f9e02d45f4de5cb256e2b6ad1d734463a7fd46b92",
+    "scripts\\run_annular_source_fitted_crossing_20260915.py": "032d4778421f937c7aaa7117da2e03b2f4a196a85c70a8c8d2a939ed37292caa",
+    "scripts\\annular_variational_initial_projection_20260916_v2.py": "6b3d854bbf2edf5c291b9fa0578a6a326611a939e0e32ed9a0dec76a901abf83",
+    "scripts\\annular_local_spectral_step_20260916.py": "f542c9d14b5af0de3b91e65e0912c15760ed4baacea88fb2988d8d91e3001b61"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-force-adjoint-small-tight-attempt01\\executed-run_annular_force_adjoint_20260917.py": "d23e594d21f8b5ac869ffdb241ea08a0ce17404bca263d8ed796aacf855796e5",
+    "source-intake\\navier-stokes\\20260914\\annular-force-adjoint-small-tight-attempt01\\reference-backward-accepted-10.npz": "f4f8a5352f0bb494df72fc2623ab9328862f246839a02c91afa6b6b8883fa60e",
+    "source-intake\\navier-stokes\\20260914\\annular-force-adjoint-small-tight-attempt01\\reference-adjoint.npz": "4b414c704fc87d67e1ebd922702f95c43813527b54448d49c82b2af1e1d1ef75",
+    "source-intake\\navier-stokes\\20260914\\annular-force-adjoint-small-tight-attempt01\\MTS-backward-accepted-10.npz": "fe1fa258bdef631641f9c14cc40761625064a4a4f451094f27ce556b57ac4c5d",
+    "source-intake\\navier-stokes\\20260914\\annular-force-adjoint-small-tight-attempt01\\MTS-adjoint.npz": "fd7d009c9f2c69a193f43eac678de280a61f719c8b5d8cf699acde11b9236fde"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "arguments": {
+    "label": "annular-force-adjoint-small-tight-attempt01",
+    "count": 33,
+    "terminal_time": 0.05,
+    "tight": true,
+    "compute_small_forward": true,
+    "stop_at_utc": "2026-09-17T18:00:00Z"
+  },
+  "count": 33,
+  "source_splits": 8,
+  "degree": 768,
+  "terminal_time": 0.05,
+  "configuration": {
+    "rtol": 2e-12,
+    "atol": 2e-15,
+    "step_multiplier": 0.5
+  },
+  "original_action_unchanged": true,
+  "finite_future_trajectories_read": false,
+  "preexisting_forward_predictions_read": false,
+  "npz_read_allowlist": [
+    "source-intake\\navier-stokes\\20260914\\annular-small-adjoint-inputs-attempt01\\GR-only-768-33.npz"
+  ],
+  "fresh_small_forward_performed": true,
+  "all_modes_and_Gram_rows_retained": true,
+  "matrix_free_transpose": true,
+  "velocity_coordinate_adjoint_exactly_includes_off_solution_canonical_correction": true,
+  "force_fit": false,
+  "force_correction": false,
+  "physical_force_gate": 2e-07,
+  "duality_gate": 2e-09,
+  "control_gate": 2e-10,
+  "full_GR_gate_upgraded": false,
+  "interval_arithmetic": false,
+  "known_benchmark_not_blind_new_experiment": true,
+  "progress": {
+    "branch": "MTS",
+    "accepted_backward_time": 0.0,
+    "rhs_evaluations": 21820,
+    "seconds": 53.17782689991873
+  },
+  "prediction_frozen_at": "2026-09-17T14:32:09.243982+00:00",
+  "completed_at": "2026-09-17T14:32:09.690064+00:00"
+}

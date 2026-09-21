@@ -1,0 +1,243 @@
+{
+  "state": "complete",
+  "checks": [
+    {
+      "name": "stencil_preparation_complete_preserved_series",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "smooth_preparation_complete_preserved_series",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference65_finite_refinement_diagnostics",
+      "passed": true,
+      "detail": {
+        "branch": "reference",
+        "coarse": 33,
+        "fine": 65,
+        "max_relative_scalar_L2": 0.0953835454892155,
+        "final_relative_scalar_L2": 0.0953835454892155,
+        "max_absolute_momentum_density_L2": 0.07263597354007441,
+        "max_source_position_difference": 3.9989084084091076e-05,
+        "max_source_clock_difference": 1.0873160985747088e-06
+      }
+    },
+    {
+      "name": "reference129_finite_refinement_diagnostics",
+      "passed": true,
+      "detail": {
+        "branch": "reference",
+        "coarse": 65,
+        "fine": 129,
+        "max_relative_scalar_L2": 0.028343602797261808,
+        "final_relative_scalar_L2": 0.028343602797261808,
+        "max_absolute_momentum_density_L2": 0.02457472658867095,
+        "max_source_position_difference": 0.0001823188150789079,
+        "max_source_clock_difference": 6.384809660281432e-06
+      }
+    },
+    {
+      "name": "MTS65_finite_refinement_diagnostics",
+      "passed": true,
+      "detail": {
+        "branch": "MTS",
+        "coarse": 33,
+        "fine": 65,
+        "max_relative_scalar_L2": 0.07312924522581232,
+        "final_relative_scalar_L2": 0.06135499646816579,
+        "max_absolute_momentum_density_L2": 0.054804561024359724,
+        "max_source_position_difference": 0.00013660560441142167,
+        "max_source_clock_difference": 5.278336653952165e-06
+      }
+    },
+    {
+      "name": "MTS129_finite_refinement_diagnostics",
+      "passed": true,
+      "detail": {
+        "branch": "MTS",
+        "coarse": 65,
+        "fine": 129,
+        "max_relative_scalar_L2": 0.0214643608807439,
+        "final_relative_scalar_L2": 0.0214643608807439,
+        "max_absolute_momentum_density_L2": 0.020010943725389516,
+        "max_source_position_difference": 0.00016180887441841207,
+        "max_source_clock_difference": 5.795697282123813e-06
+      }
+    },
+    {
+      "name": "reference_offgrid_source_trace",
+      "passed": true,
+      "detail": 8.568449769152942e-15
+    },
+    {
+      "name": "reference_finer_layer_and_radial_RHS",
+      "passed": true,
+      "detail": 3.6613772994367744e-13
+    },
+    {
+      "name": "reference_final_source_polynomial_ordered",
+      "passed": true,
+      "detail": 0.0008983986678567923
+    },
+    {
+      "name": "MTS_offgrid_source_trace",
+      "passed": true,
+      "detail": 6.746773278942797e-15
+    },
+    {
+      "name": "MTS_finer_layer_and_radial_RHS",
+      "passed": true,
+      "detail": 5.430484621010701e-13
+    },
+    {
+      "name": "MTS_final_source_polynomial_ordered",
+      "passed": true,
+      "detail": 0.0008984888172198779
+    }
+  ],
+  "cases": [
+    {
+      "branch": "reference",
+      "final_radius": 6.025909623038521,
+      "final_coordinate_speed": -0.025844239170558923,
+      "final_proper_radial_speed": -0.030178030279217626,
+      "final_proper_clock": 0.17132834820736334,
+      "final_minimum_source_jacobian": 0.0008983986678567923,
+      "offgrid_trace_error": 8.568449769152942e-15,
+      "finer_layer_RHS_error": 3.6613772994367744e-13,
+      "final_polynomial_minimum_jacobian": 0.0008983986678567923
+    },
+    {
+      "branch": "MTS",
+      "final_radius": 6.025878266859038,
+      "final_coordinate_speed": -0.026071638326838998,
+      "final_proper_radial_speed": -0.030443926825110865,
+      "final_proper_clock": 0.17132718404540312,
+      "final_minimum_source_jacobian": 0.0008984888172198779,
+      "offgrid_trace_error": 6.746773278942797e-15,
+      "finer_layer_RHS_error": 5.430484621010701e-13,
+      "final_polynomial_minimum_jacobian": 0.0008984888172198779
+    }
+  ],
+  "inputs": {
+    "scripts\\compare_annular_fixed_trace_evolution_20260914.py": "56a44f1c3a835401b8a3ff5a26493d130855fa4070345415083c97deaed8b4ca",
+    "source-intake\\navier-stokes\\20260914\\annular-fixed-grid-moving-trace-evolution-attempt01\\status.json": "61b7ba474360e573f2c6ac89003ba8b6f7d39caac45b58f1bd177a52ed7e4f19",
+    "source-intake\\navier-stokes\\20260914\\annular-fixed-grid-moving-trace-smooth-evolution-attempt01\\status.json": "6d5163febb79046826372324c829ac088617c8308bd02fde81f074524ee81664",
+    "source-intake\\navier-stokes\\20260914\\annular-fixed-grid-moving-trace-smooth-evolution-attempt01\\reference-33-degree-4.npz": "70f35fc58500c228416432063ce04d6fd634faffacd7e5a9d9dc93e515e4841a",
+    "source-intake\\navier-stokes\\20260914\\annular-fixed-grid-moving-trace-smooth-evolution-attempt01\\MTS-33-degree-4.npz": "c912565752d5b6b84a6d8e68bed673923bc6dca252c77190d7b898d519ebae48",
+    "source-intake\\navier-stokes\\20260914\\annular-fixed-grid-moving-trace-smooth-evolution-attempt01\\reference-65-degree-4.npz": "98a4c5fb811a9ffcd7073882bb4fd785834cca25d51ae0365cdc9863e1286cdd",
+    "source-intake\\navier-stokes\\20260914\\annular-fixed-grid-moving-trace-smooth-evolution-attempt01\\MTS-65-degree-4.npz": "0ceaa4250e583e375ec8bbfc9bf6524f1d6b6a12499f44663f2a6959e4a69e12",
+    "source-intake\\navier-stokes\\20260914\\annular-fixed-grid-moving-trace-smooth-evolution-attempt01\\reference-129-degree-4.npz": "a3726968057da451c87ce721db79db788ec01e56885db3eb1389f805313619a0",
+    "source-intake\\navier-stokes\\20260914\\annular-fixed-grid-moving-trace-smooth-evolution-attempt01\\MTS-129-degree-4.npz": "2ad42e01b901fd99ceeda12fbcf06d8c0d7ab18409b40a73317c6d275d5849c8",
+    "scripts\\navier_stokes_source_audit_20260908.py": "817c4cdff5bf22a88deea7771b4bbc960690397512bc07cdb639ee9ab33e4f0b",
+    "scripts\\sbp4_derived_operator_20260909.py": "065ea0be52b651d742082230fe8322a367e11fc5e20150c8f3d506d1f87e77d3",
+    "scripts\\sbp4_compatible_second_operator_20260909.py": "86c6f05f7cf0a07abe9d4caa5ca1038b9f64641085a1a4a4f03aeae3ac918a3c",
+    "scripts\\annular_compatible_current_restoring_20260909.py": "c2e15990fb70e4e0587e63f8f0182831b0a4185003cdcd295db97af9027d4051",
+    "scripts\\annular_gram_joint_action_20260909.py": "c45de66a16a3c44a1ebb5a68874c47a10ceb24815bda5ecc88d5bfad3d049591",
+    "scripts\\annular_covariant_time_transport_20260909.py": "d6a55d99b9f9de06e30ab7a6f090ae12b97b273a23930315740490324ab679a9",
+    "scripts\\annular_mixed_grid_basis_20260909.py": "5a9ceef39b681f376a7e6468a104dc6a4139365248ec64ea95fa8809993f147c",
+    "scripts\\annular_adm_mixed_action_20260909.py": "c5681003a7a495196428407f25e00babc525a35d953618e1911540f4b096fe05",
+    "scripts\\annular_adm_clock_quadratic_20260909.py": "e5ccec725f88125169ccf6f533d5f613343a7259fabad0c0bcf992e600d024be",
+    "scripts\\annular_constraint_routhian_20260909.py": "62a5cf9ac8f8e73ee56bc0c46f29e5ed560692cb19a1125ba848f15c72b1dfd8",
+    "scripts\\annular_metric_link_quadratic_20260909.py": "9555ff3da29cf2522ac67cb8f3a2e3b44420464392e1029cc31410542d96e63b",
+    "scripts\\annular_released_hermite_action_20260909.py": "360d565ed558fd83121d11d59f9096d1ebf7fc49f288ca5d8bf7e4f062cac145",
+    "scripts\\annular_action_boundary_current_20260909.py": "8b702d8f7610d686bebed3ea1af73d94b0d33fe5cc7dbe3e0faee4adbd98ce98",
+    "scripts\\annular_metric_flux_jets_20260909.py": "a1c5e3db71e68ebdd69259d47e50bd1d9cecbba51034a55d5c791ad09bada3a0",
+    "scripts\\annular_nonlinear_history_20260912.py": "7747f735107c7c5bb2eae1b9e213354fc9d8856597328cbe697389ec1a96a2fd",
+    "scripts\\annular_covariant_scalar_action_20260912.py": "ccf97c4622e79a5816e094b3001e0513e7cd16f3a424fafeade04de85bca6a4f",
+    "scripts\\annular_finite_width_bulk_current_20260913.py": "da2ca4c2fab7315b4738007aafff59f38be0d90cf4f121706a32afa16f060601",
+    "scripts\\annular_horizontal_clock_evolution_20260913.py": "985843dab67ab06c85c97b32042d48f6ed5342bf578c3518bbad132cb731cd3d",
+    "scripts\\annular_compatible_h_evolution_20260914.py": "88424b14891e92d7780077619e02e5dc3e166806ed9c22924f0f03682e4e97e1",
+    "scripts\\annular_reference_continuum_shell_20260914.py": "5cbb6013083eafb55181d5a14de236685835c51ed36f26b12f0b4cc02edd9409",
+    "scripts\\annular_source_gravity_collar_20260914.py": "65d8b6c1a421bac8b56420df81630647155043b7b35031365d3f708ab94c7fa2",
+    "scripts\\derive_annular_source_gravity_20260914.py": "97861e2bff4aa48b4408f30a71379b32b5133439bc4d456d9b6426d544bacdbc",
+    "scripts\\annular_moving_live_gravity_20260914.py": "b6428419729fc965fddebf6e7a1af2f037482d7f1e5d69326817014829e21ac8",
+    "scripts\\annular_fixed_grid_moving_trace_20260914.py": "4f9243b3ffe4db37800f7b419dda9a32f783ea612f979c96948c8b348034cd04"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-fixed-trace-evolution-comparison-attempt01\\executed-compare_annular_fixed_trace_evolution_20260914.py": "56a44f1c3a835401b8a3ff5a26493d130855fa4070345415083c97deaed8b4ca"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "refinements": [
+    {
+      "branch": "reference",
+      "coarse": 33,
+      "fine": 65,
+      "max_relative_scalar_L2": 0.0953835454892155,
+      "final_relative_scalar_L2": 0.0953835454892155,
+      "max_absolute_momentum_density_L2": 0.07263597354007441,
+      "max_source_position_difference": 3.9989084084091076e-05,
+      "max_source_clock_difference": 1.0873160985747088e-06
+    },
+    {
+      "branch": "reference",
+      "coarse": 65,
+      "fine": 129,
+      "max_relative_scalar_L2": 0.028343602797261808,
+      "final_relative_scalar_L2": 0.028343602797261808,
+      "max_absolute_momentum_density_L2": 0.02457472658867095,
+      "max_source_position_difference": 0.0001823188150789079,
+      "max_source_clock_difference": 6.384809660281432e-06
+    },
+    {
+      "branch": "MTS",
+      "coarse": 33,
+      "fine": 65,
+      "max_relative_scalar_L2": 0.07312924522581232,
+      "final_relative_scalar_L2": 0.06135499646816579,
+      "max_absolute_momentum_density_L2": 0.054804561024359724,
+      "max_source_position_difference": 0.00013660560441142167,
+      "max_source_clock_difference": 5.278336653952165e-06
+    },
+    {
+      "branch": "MTS",
+      "coarse": 65,
+      "fine": 129,
+      "max_relative_scalar_L2": 0.0214643608807439,
+      "final_relative_scalar_L2": 0.0214643608807439,
+      "max_absolute_momentum_density_L2": 0.020010943725389516,
+      "max_source_position_difference": 0.00016180887441841207,
+      "max_source_clock_difference": 5.795697282123813e-06
+    }
+  ],
+  "between_branches": [
+    {
+      "count": 33,
+      "max_relative_scalar_L2": 0.08276026198102927,
+      "final_relative_scalar_L2": 0.08276026198102927,
+      "max_absolute_momentum_density_L2": 0.0542134789638983,
+      "max_source_position_difference": 0.00012847874385357727,
+      "max_source_clock_difference": 3.9727982283493946e-06
+    },
+    {
+      "count": 65,
+      "max_relative_scalar_L2": 0.015150294930718794,
+      "final_relative_scalar_L2": 0.015150294930718794,
+      "max_absolute_momentum_density_L2": 0.023908870009398665,
+      "max_source_position_difference": 1.3604435587843966e-05,
+      "max_source_clock_difference": 6.666010163025593e-07
+    },
+    {
+      "count": 129,
+      "max_relative_scalar_L2": 0.002701167853527578,
+      "final_relative_scalar_L2": 0.002701167853527578,
+      "max_absolute_momentum_density_L2": 0.005996063909355902,
+      "max_source_position_difference": 3.135617948313296e-05,
+      "max_source_clock_difference": 1.1641619602209552e-06
+    }
+  ],
+  "scalar_refinement_decreases": {
+    "reference": true,
+    "MTS": true
+  },
+  "same_resolution_is_not_independent_continuum_truth": true,
+  "standalone_continuum_waveform_accuracy_qualified": false,
+  "completed_at": "2026-09-15T01:01:09.290522+00:00"
+}

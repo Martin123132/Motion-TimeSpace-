@@ -1,0 +1,50 @@
+{
+  "state": "complete",
+  "checks": [
+    {
+      "name": "GR_full_off_shell_canonical_time_Ward_nonzero_P",
+      "passed": true,
+      "reduced_expression": "0"
+    },
+    {
+      "name": "wrong_representative_P_generator_detected",
+      "passed": true,
+      "reduced_expression": "kappa*momentum*(-6*geo_r**2*geometry**2*kappa*lapse**2*momentum**2*radius + 3*geo_r*geo_t*sqrt(geometry)*lapse*momentum*radius - 2*geo_r*geometry**3*kappa*lapse**2*momentum**2 - 6*geo_r*geometry**3*kappa*lapse**2*momentum*momentum_r*radius + 12*geo_r*geometry**3*kappa*lapse*lapse_r*momentum**2*radius + 12*geo_r*geometry**2*gradient*kappa*lapse**2*momentum*pi - 2*geo_rr*geometry**3*kappa*lapse**2*momentum**2*radius + 2*geo_t*geometry**(3/2)*lapse*momentum + 4*geo_t*geometry**(3/2)*lapse*momentum_r*radius + 2*geo_t*geometry**(3/2)*lapse_r*momentum*radius + 2*geo_tr*geometry**(3/2)*lapse*momentum*radius + 4*geometry**4*kappa*lapse*lapse_r*momentum**2 + 12*geometry**4*kappa*lapse*lapse_r*momentum*momentum_r*radius + 4*geometry**4*kappa*lapse*lapse_rr*momentum**2*radius + 4*geometry**4*kappa*lapse_r**2*momentum**2*radius + 4*geometry**3*gradient*kappa*lapse**2*momentum*pi_r + 8*geometry**3*gradient*kappa*lapse**2*momentum_r*pi + 8*geometry**3*gradient*kappa*lapse*lapse_r*momentum*pi + 4*geometry**3*gradient_r*kappa*lapse**2*momentum*pi)/4"
+    },
+    {
+      "name": "memory_Ward_exact_endpoint_jump_P0",
+      "passed": true,
+      "reduced_expression": "0"
+    },
+    {
+      "name": "memory_Ward_time_exact_inverse_J_endpoint_jump_P0",
+      "passed": true,
+      "reduced_expression": "0"
+    },
+    {
+      "name": "single_J_current_time_negative_control",
+      "passed": true,
+      "reduced_expression": "(A*J**3*(-A1*C1*S + B*D*q2) + A*L*(-A1*C*S + B*D*q) + J**2*(A*A1*C1*S - A*A2*C*S - A*B*D*q2 + A*B*D1*q - A1**2*C*S + A1*B*D*q) + J*(A*A1*C*L*S + A*A2*C*S - A*B*D*L*q - A*B*D1*q + A1**2*C*S - A1*B*D*q))/(J**3*h)"
+    },
+    {
+      "name": "memory_Ward_from_full_time_pullback",
+      "passed": true,
+      "reduced_expression": "0"
+    }
+  ],
+  "inputs": {
+    "scripts\\verify_annular_history_ward_symbolic_20260912.py": "2e746f6d54bfc8b41d665fbe13af2063c144aa0a4bf89ee9751153a9e320ceeb",
+    "DERIVATION-20260909-covariant-time-links-and-mixed-gravity-basis.md": "2acda4c747b4a84f59351347ab76bb7e9a7c46406eabc56ae8c236bee4687967",
+    "DERIVATION-20260912-nonlinear-history-Euler-equations.md": "ee35b0324ce4f7f3859910f2539d461256cd7485b9a2b85b3c10041e3fc2812b"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260912\\annular-history-ward-symbolic-attempt01\\executed-verify_annular_history_ward_symbolic_20260912.py": "2e746f6d54bfc8b41d665fbe13af2063c144aa0a4bf89ee9751153a9e320ceeb"
+  },
+  "valid_for_physics_claim": false,
+  "new_evolution": false,
+  "full_second_jet_closed": false,
+  "smooth_interior_identity_only": true,
+  "temporal_and_radial_boundary_work_required": true,
+  "GR_off_shell_identity_proven_symbolically": true,
+  "history_interior_identity_derived_with_exact_node_jumps": true
+}

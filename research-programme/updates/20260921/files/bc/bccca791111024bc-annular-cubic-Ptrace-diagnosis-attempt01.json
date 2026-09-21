@@ -1,0 +1,117 @@
+{
+  "state": "complete",
+  "inputs": {
+    "source-intake\\navier-stokes\\20260912\\annular-cubic-lapse-boundary-attempt02\\GR_corrected_primary.npz": "5605e0cea98c0d601c6de23bc1d11c718876860ab2c080f8ca759f975e2515ce",
+    "source-intake\\navier-stokes\\20260912\\annular-cubic-lapse-boundary-attempt02\\GR_corrected_higher.npz": "6c599f64a65448c0352c21a67027cba3b34167cfbe30e6abc635d43f651630db",
+    "source-intake\\navier-stokes\\20260912\\annular-cubic-lapse-boundary-attempt02\\GR_corrected_data.npz": "c3ca47e170b940f3f697cb0b67ad228bbd84b64c1c6ce77af3b0a68524d3b270",
+    "source-intake\\navier-stokes\\20260912\\annular-cubic-lapse-boundary-attempt02\\GR_corrected_frames.npz": "314352f363c5865cdea3a08e55a44e440449268b6b9cc8e71902936788c7e584",
+    "source-intake\\navier-stokes\\20260912\\annular-cubic-lapse-boundary-attempt02\\metric_Gram_corrected_primary.npz": "13c2b5e82a94c59fe8c76273079175d4ff5edad2a4e2adc04de78defb5411f5f",
+    "source-intake\\navier-stokes\\20260912\\annular-cubic-lapse-boundary-attempt02\\metric_Gram_corrected_higher.npz": "08951e1f34118ba30c947271cb0d65555e3fb4881486b80a932b31f24372e175",
+    "source-intake\\navier-stokes\\20260912\\annular-cubic-lapse-boundary-attempt02\\metric_Gram_corrected_data.npz": "a0baf71d8e6146c67a0d3025dd247fa46b074f5a611b4077634ddae9cf4781c3",
+    "source-intake\\navier-stokes\\20260912\\annular-cubic-lapse-boundary-attempt02\\metric_Gram_corrected_frames.npz": "9c952e524cf5a93786b4b32147f25756308acd621422646958e0bb407fb16ae5",
+    "scripts\\diagnose_annular_cubic_Ptrace_20260912.py": "95ccd5cd51b47a954d0242f3fc4f9cb71a85a7108672a7439b48ac777af43666"
+  },
+  "cases": [
+    {
+      "branch": "GR",
+      "variant": "primary",
+      "components": {
+        "bulk_projection": [
+          -8.65816199321196e-15,
+          -8.619585063475389e-14
+        ],
+        "nodal_source": [
+          0.0,
+          0.0
+        ],
+        "quadrature_IBP": [
+          -9.816012802902377e-10,
+          -7.350442871208284e-09
+        ]
+      },
+      "actual": [
+        -9.816099385393587e-10,
+        -7.350529066570579e-09
+      ],
+      "decomposition_error": 4.883401366910933e-19,
+      "weak_IBP_load_max": 4.684808164323423e-10,
+      "mass_pair_condition": 1.6637444506967178
+    },
+    {
+      "branch": "GR",
+      "variant": "higher",
+      "components": {
+        "bulk_projection": [
+          9.217812585682284e-14,
+          2.067095922226724e-13
+        ],
+        "nodal_source": [
+          0.0,
+          0.0
+        ],
+        "quadrature_IBP": [
+          -3.5770893786741497e-09,
+          -2.9404860674623556e-09
+        ]
+      },
+      "actual": [
+        -3.5769972004581244e-09,
+        -2.940279357883813e-09
+      ],
+      "decomposition_error": 9.016847703256789e-20,
+      "weak_IBP_load_max": 5.039226414899444e-10,
+      "mass_pair_condition": 1.6637444480661923
+    },
+    {
+      "branch": "metric_Gram",
+      "variant": "primary",
+      "components": {
+        "bulk_projection": [
+          2.4881338080436186e-13,
+          8.091400516797788e-14
+        ],
+        "nodal_source": [
+          -1.057993241888949e-07,
+          3.6318492636821346e-09
+        ],
+        "quadrature_IBP": [
+          -9.708200555797516e-10,
+          -7.301079211199985e-09
+        ]
+      },
+      "actual": [
+        -1.067698954310658e-07,
+        -3.669149033498316e-09
+      ],
+      "decomposition_error": 2.804473148799785e-20,
+      "weak_IBP_load_max": 4.678400526934034e-10,
+      "mass_pair_condition": 1.6636697887384555
+    },
+    {
+      "branch": "metric_Gram",
+      "variant": "higher",
+      "components": {
+        "bulk_projection": [
+          2.850511833173109e-13,
+          3.151964929870284e-13
+        ],
+        "nodal_source": [
+          -1.0579932189725986e-07,
+          3.631847167183621e-09
+        ],
+        "quadrature_IBP": [
+          -3.5395127112362928e-09,
+          -2.877924131035174e-09
+        ]
+      },
+      "actual": [
+        -1.093385495576483e-07,
+        7.542382325180328e-10
+      ],
+      "decomposition_error": 3.354647517821055e-19,
+      "weak_IBP_load_max": 5.028697569458839e-10,
+      "mass_pair_condition": 1.6636697907046516
+    }
+  ],
+  "valid_for_physics_claim": false
+}

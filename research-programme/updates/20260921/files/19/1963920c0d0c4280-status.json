@@ -1,0 +1,36 @@
+{
+  "state": "failed",
+  "checks": [
+    {
+      "name": "full_lapse_variation_mass_constraint",
+      "passed": false,
+      "detail": null
+    }
+  ],
+  "cases": [],
+  "inputs": {
+    "scripts\\derive_annular_candidate_radial_constraint_20260920.py": "1728a4fd9170a832005f834a3bc2fbf5ced5e4ffb13230b848d987b0425555c2"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-candidate-radial-derivation-attempt01\\executed-derive_annular_candidate_radial_constraint_20260920.py": "1728a4fd9170a832005f834a3bc2fbf5ced5e4ffb13230b848d987b0425555c2"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "github_action": false,
+  "subagents_used": false,
+  "no_new_evolution": true,
+  "original_live_action_unchanged": true,
+  "candidate_only": true,
+  "polar_zero_shift_only": true,
+  "radial_constraint_derived": false,
+  "radial_jacobian_qualified": false,
+  "self_consistent_candidate_metric_solved": false,
+  "physical_force_mismatch_fixed": false,
+  "full_live_P2_force_convergence_proven": false,
+  "certified_continuous_time_bound": false,
+  "error": "RuntimeError('full_lapse_variation_mass_constraint: None')",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\derive_annular_candidate_radial_constraint_20260920.py\", line 36, in main\n    evidence.check('full_lapse_variation_mass_constraint', sp.simplify(lapse_euler-(mass_radial-expected_mass)/(coupling*root)) == 0)\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\annular_reference_continuum_shell_20260914.py\", line 41, in check\n    raise RuntimeError(name+': '+repr(detail))\nRuntimeError: full_lapse_variation_mass_constraint: None\n"
+}

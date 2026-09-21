@@ -1,0 +1,242 @@
+{
+  "state": "complete",
+  "checks": [
+    {
+      "name": "symbolic_identities_passed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_stable_material_interval_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "slope_threshold_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_complex_step_stability_slope",
+      "passed": true,
+      "detail": {
+        "analytic": -0.031162339349590486,
+        "complex_step": -0.031162339349590513
+      }
+    },
+    {
+      "name": "causal_but_unstable_material_negative_control",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "material_pressure_is_action_first_law",
+      "passed": true,
+      "detail": 1.0842021724855044e-18
+    },
+    {
+      "name": "sampled_material_dominant_energy_condition",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "numeric_temporal_junction",
+      "passed": true,
+      "detail": 5.470667321927358e-15
+    },
+    {
+      "name": "numeric_normal_shape_force_balance",
+      "passed": true,
+      "detail": 1.734723475976807e-18
+    },
+    {
+      "name": "moving_reflection_not_fixed_p_zero",
+      "passed": true,
+      "detail": 1.3877787807814457e-17
+    },
+    {
+      "name": "two_clock_induced_metric_matches",
+      "passed": true,
+      "detail": 6.661338147750939e-16
+    },
+    {
+      "name": "naive_shared_moving_lapse_rejected",
+      "passed": true,
+      "detail": 1.672641044926772e-05
+    },
+    {
+      "name": "held_pressure_limit_gives_zero_acceleration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "zero_tension_dust_recoils_instead",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Newton_central_plus_half_self_mass_refines",
+      "passed": true,
+      "detail": [
+        2.5011999182922295e-07,
+        2.4996979930413943e-08,
+        2.4995480130129977e-09
+      ]
+    },
+    {
+      "name": "dust_solver_finished",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dust_exterior_mass_conserved",
+      "passed": true,
+      "detail": 1.1102230246251565e-16
+    },
+    {
+      "name": "dust_material_energy_conditions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dust_falls_without_artificial_support",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_rest_solver_finished",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_rest_exterior_mass_conserved",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "causal_rest_material_energy_conditions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "action_supported_quiet_equilibrium",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_displaced_solver_finished",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_displaced_exterior_mass_conserved",
+      "passed": true,
+      "detail": 1.1102230246251565e-16
+    },
+    {
+      "name": "causal_displaced_material_energy_conditions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "displaced_shell_returns_and_stays_bounded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vacuum_evolution_time_refinement",
+      "passed": true,
+      "detail": 2.1316282072803006e-14
+    }
+  ],
+  "cases": [
+    {
+      "branch": "dust",
+      "duration": 2.0,
+      "final_state": [
+        5.9551959278915545,
+        -0.044916265116184434,
+        0.8043365648636244
+      ],
+      "radius_min": 5.9551959278915545,
+      "radius_max": 6.0,
+      "mass_drift": 1.1102230246251565e-16
+    },
+    {
+      "branch": "causal_rest",
+      "duration": 80.0,
+      "final_state": [
+        6.0,
+        -1.6612010161551025e-16,
+        0.8043365648636244
+      ],
+      "radius_min": 6.0,
+      "radius_max": 6.0,
+      "mass_drift": 0.0
+    },
+    {
+      "branch": "causal_displaced",
+      "duration": 80.0,
+      "final_state": [
+        6.000014911743093,
+        -0.0001765035048123656,
+        0.8043365648636244
+      ],
+      "radius_min": 5.9990000628161475,
+      "radius_max": 6.001,
+      "mass_drift": 1.1102230246251565e-16
+    }
+  ],
+  "inputs": {
+    "scripts\\test_annular_dynamical_source_20260914.py": "26e2edf2751cad4e1abf4f55662aeaf754127d90f4dcd3b2e7f7cbad0948d76d",
+    "source-intake\\navier-stokes\\20260914\\annular-dynamical-source-algebra-attempt02\\status.json": "a36c61523aa8ca4d547f71fd16bd0c9891e8adf19718d86a7861d0567a6c37b4",
+    "source-intake\\navier-stokes\\20260914\\annular-collision-refined-target-attempt01\\continuum_count4097.npz": "70e751418934486fb33418749ccb21159466d345d7b271a23018260538bb7204",
+    "scripts\\navier_stokes_source_audit_20260908.py": "817c4cdff5bf22a88deea7771b4bbc960690397512bc07cdb639ee9ab33e4f0b",
+    "scripts\\sbp4_derived_operator_20260909.py": "065ea0be52b651d742082230fe8322a367e11fc5e20150c8f3d506d1f87e77d3",
+    "scripts\\sbp4_compatible_second_operator_20260909.py": "86c6f05f7cf0a07abe9d4caa5ca1038b9f64641085a1a4a4f03aeae3ac918a3c",
+    "scripts\\annular_compatible_current_restoring_20260909.py": "c2e15990fb70e4e0587e63f8f0182831b0a4185003cdcd295db97af9027d4051",
+    "scripts\\annular_gram_joint_action_20260909.py": "c45de66a16a3c44a1ebb5a68874c47a10ceb24815bda5ecc88d5bfad3d049591",
+    "scripts\\annular_covariant_time_transport_20260909.py": "d6a55d99b9f9de06e30ab7a6f090ae12b97b273a23930315740490324ab679a9",
+    "scripts\\annular_mixed_grid_basis_20260909.py": "5a9ceef39b681f376a7e6468a104dc6a4139365248ec64ea95fa8809993f147c",
+    "scripts\\annular_adm_mixed_action_20260909.py": "c5681003a7a495196428407f25e00babc525a35d953618e1911540f4b096fe05",
+    "scripts\\annular_adm_clock_quadratic_20260909.py": "e5ccec725f88125169ccf6f533d5f613343a7259fabad0c0bcf992e600d024be",
+    "scripts\\annular_constraint_routhian_20260909.py": "62a5cf9ac8f8e73ee56bc0c46f29e5ed560692cb19a1125ba848f15c72b1dfd8",
+    "scripts\\annular_metric_link_quadratic_20260909.py": "9555ff3da29cf2522ac67cb8f3a2e3b44420464392e1029cc31410542d96e63b",
+    "scripts\\annular_released_hermite_action_20260909.py": "360d565ed558fd83121d11d59f9096d1ebf7fc49f288ca5d8bf7e4f062cac145",
+    "scripts\\annular_action_boundary_current_20260909.py": "8b702d8f7610d686bebed3ea1af73d94b0d33fe5cc7dbe3e0faee4adbd98ce98",
+    "scripts\\annular_metric_flux_jets_20260909.py": "a1c5e3db71e68ebdd69259d47e50bd1d9cecbba51034a55d5c791ad09bada3a0",
+    "scripts\\annular_nonlinear_history_20260912.py": "7747f735107c7c5bb2eae1b9e213354fc9d8856597328cbe697389ec1a96a2fd",
+    "scripts\\annular_covariant_scalar_action_20260912.py": "ccf97c4622e79a5816e094b3001e0513e7cd16f3a424fafeade04de85bca6a4f",
+    "scripts\\annular_finite_width_bulk_current_20260913.py": "da2ca4c2fab7315b4738007aafff59f38be0d90cf4f121706a32afa16f060601",
+    "scripts\\annular_horizontal_clock_evolution_20260913.py": "985843dab67ab06c85c97b32042d48f6ed5342bf578c3518bbad132cb731cd3d",
+    "scripts\\annular_compatible_h_evolution_20260914.py": "88424b14891e92d7780077619e02e5dc3e166806ed9c22924f0f03682e4e97e1",
+    "scripts\\annular_reference_continuum_shell_20260914.py": "5cbb6013083eafb55181d5a14de236685835c51ed36f26b12f0b4cc02edd9409",
+    "scripts\\annular_dynamical_source_20260914.py": "b4d623cb63ee77b589bf4a1d1162e281680893b5743df42fe323b90f3c38642a"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-dynamical-source-numerics-attempt01\\executed-test_annular_dynamical_source_20260914.py": "26e2edf2751cad4e1abf4f55662aeaf754127d90f4dcd3b2e7f7cbad0948d76d",
+    "source-intake\\navier-stokes\\20260914\\annular-dynamical-source-numerics-attempt01\\dust.npz": "4934330bfb9d876e3363243716806761e1a75c502c22bd97eed4ac7cadce81bb",
+    "source-intake\\navier-stokes\\20260914\\annular-dynamical-source-numerics-attempt01\\causal_rest.npz": "0ba0176727b184589aeb2d6c146c0bbca46f3a89df643239bf81e0fd6d98094b",
+    "source-intake\\navier-stokes\\20260914\\annular-dynamical-source-numerics-attempt01\\causal_displaced.npz": "03817744b8cc9319cd0882b20d29b0a81e1d9dda47036065aa00b4001ac177d6"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "scope": "Local covariant shell identities, vacuum self-gravitating source and material stability controls; no prescribed old pulse used as a moving-boundary drive.",
+  "material_and_reflection_parent_derived": false,
+  "coupled_moving_GR_scalar_PDE_tested": false,
+  "quiet_material": {
+    "radius": 6.0,
+    "reservoir": 0.003,
+    "interior_mass": 0.8043365648636244,
+    "equilibrium_pressure": 7.633530954247579e-06,
+    "pressure_density_ratio": 0.09160237145097094,
+    "radial_stability_critical_sound_squared": 0.1489338473361009,
+    "chosen_sound_squared": 0.5,
+    "calibration_scope": "Static reference state only; a material-law example, not a parent-selected coefficient.",
+    "proper_frequency": 0.17652857941305278
+  },
+  "completed_at": "2026-09-14T19:16:47.831458+00:00"
+}

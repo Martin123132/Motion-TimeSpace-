@@ -1,0 +1,132 @@
+{
+  "state": "failed",
+  "checks": [
+    {
+      "name": "reference62e-05_nodal_full_vector_Euler",
+      "passed": true,
+      "detail": {
+        "branch": "reference",
+        "label_degree": 6,
+        "difference_step": 2e-05,
+        "nodal_scalar": 5.487277299209836e-14,
+        "nodal_source": 1.7213399629290027e-10,
+        "offgrid_scalar": 1.3878394657089606e-06,
+        "offgrid_source": 7.100989067587715e-11,
+        "nodal_Noether": 8.229898901955426e-12,
+        "offgrid_Noether": 8.2968943249383e-12
+      }
+    },
+    {
+      "name": "reference62e-05_full_Noether_separate_from_vector",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference61e-05_nodal_full_vector_Euler",
+      "passed": true,
+      "detail": {
+        "branch": "reference",
+        "label_degree": 6,
+        "difference_step": 1e-05,
+        "nodal_scalar": 1.0064171718227044e-13,
+        "nodal_source": 8.605883236936784e-11,
+        "offgrid_scalar": 1.387839465066896e-06,
+        "offgrid_source": 7.107949211854203e-11,
+        "nodal_Noether": 8.229897515362491e-12,
+        "offgrid_Noether": 8.296884753465996e-12
+      }
+    },
+    {
+      "name": "reference61e-05_full_Noether_separate_from_vector",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference102e-05_nodal_full_vector_Euler",
+      "passed": true,
+      "detail": {
+        "branch": "reference",
+        "label_degree": 10,
+        "difference_step": 2e-05,
+        "nodal_scalar": 4.469341563506646e-14,
+        "nodal_source": 1.7215147753504856e-10,
+        "offgrid_scalar": 7.296966736554096e-07,
+        "offgrid_source": 1.1535180449717686e-10,
+        "nodal_Noether": 8.229897292592826e-12,
+        "offgrid_Noether": 8.296897188756695e-12
+      }
+    },
+    {
+      "name": "reference102e-05_full_Noether_separate_from_vector",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference_tangent_time_difference_control",
+      "passed": true,
+      "detail": 2.3418766925686896e-12
+    },
+    {
+      "name": "reference_offgrid_scalar_residual_label_refinement",
+      "passed": false,
+      "detail": 0.5257788755003109
+    }
+  ],
+  "cases": [
+    {
+      "branch": "reference",
+      "label_degree": 6,
+      "difference_step": 2e-05,
+      "nodal_scalar": 5.487277299209836e-14,
+      "nodal_source": 1.7213399629290027e-10,
+      "offgrid_scalar": 1.3878394657089606e-06,
+      "offgrid_source": 7.100989067587715e-11,
+      "nodal_Noether": 8.229898901955426e-12,
+      "offgrid_Noether": 8.2968943249383e-12
+    },
+    {
+      "branch": "reference",
+      "label_degree": 6,
+      "difference_step": 1e-05,
+      "nodal_scalar": 1.0064171718227044e-13,
+      "nodal_source": 8.605883236936784e-11,
+      "offgrid_scalar": 1.387839465066896e-06,
+      "offgrid_source": 7.107949211854203e-11,
+      "nodal_Noether": 8.229897515362491e-12,
+      "offgrid_Noether": 8.296884753465996e-12
+    },
+    {
+      "branch": "reference",
+      "label_degree": 10,
+      "difference_step": 2e-05,
+      "nodal_scalar": 4.469341563506646e-14,
+      "nodal_source": 1.7215147753504856e-10,
+      "offgrid_scalar": 7.296966736554096e-07,
+      "offgrid_source": 1.1535180449717686e-10,
+      "nodal_Noether": 8.229897292592826e-12,
+      "offgrid_Noether": 8.296897188756695e-12
+    }
+  ],
+  "inputs": {
+    "scripts\\qualify_annular_P2_current_tangent_resolution_20260918.py": "82647d145f46b27e7917a398ebc2d41a33a8e252509cc99a3db2fe2a463913d7"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-P2-current-tangent-resolution-attempt01\\executed-qualify_annular_P2_current_tangent_resolution_20260918.py": "82647d145f46b27e7917a398ebc2d41a33a8e252509cc99a3db2fe2a463913d7"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "no_forward_evolution": true,
+  "github_action": false,
+  "subagents_used": false,
+  "finite_label_collocation_not_exact_Galerkin": true,
+  "current_pairing_does_not_replace_full_vector_Euler_residual": true,
+  "full_live_P2_force_convergence_proven": false,
+  "label_residual_ratios": {
+    "reference": 0.5257788755003109
+  },
+  "error": "RuntimeError('reference_offgrid_scalar_residual_label_refinement: 0.5257788755003109')",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\qualify_annular_P2_current_tangent_resolution_20260918.py\", line 37, in main\n    evidence.check(branch+'_offgrid_scalar_residual_label_refinement', ratio < .5, ratio)\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\annular_reference_continuum_shell_20260914.py\", line 41, in check\n    raise RuntimeError(name+': '+repr(detail))\nRuntimeError: reference_offgrid_scalar_residual_label_refinement: 0.5257788755003109\n"
+}

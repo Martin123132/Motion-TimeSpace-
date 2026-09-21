@@ -1,0 +1,29 @@
+{
+  "state": "failed",
+  "checks": [
+    {
+      "name": "rank_one_feedback_algebra",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "static_attenuation_is_between_zero_and_one",
+      "passed": false,
+      "detail": null
+    }
+  ],
+  "cases": [],
+  "inputs": {
+    "scripts\\derive_annular_trace_susceptibility_20260916.py": "52d904948ca20e48a87c5124711b943d60ca3b603e40bec5cb369eab6b2e67d2"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-trace-susceptibility-attempt01\\executed-derive_annular_trace_susceptibility_20260916.py": "52d904948ca20e48a87c5124711b943d60ca3b603e40bec5cb369eab6b2e67d2"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "error": "RuntimeError('static_attenuation_is_between_zero_and_one: None')",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\derive_annular_trace_susceptibility_20260916.py\", line 16, in main\n    evidence.check('static_attenuation_is_between_zero_and_one', sp.ask(sp.Q.positive(1/(1+stiffness_symbol*susceptibility)))\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                   and sp.ask(sp.Q.positive(1-1/(1+stiffness_symbol*susceptibility))))\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\annular_reference_continuum_shell_20260914.py\", line 41, in check\n    raise RuntimeError(name+': '+repr(detail))\nRuntimeError: static_attenuation_is_between_zero_and_one: None\n"
+}

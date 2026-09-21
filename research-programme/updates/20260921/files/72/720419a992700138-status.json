@@ -1,0 +1,201 @@
+{
+  "state": "complete",
+  "checks": [
+    {
+      "name": "standard_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tight_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "paths_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference_path_resolution_control",
+      "passed": true,
+      "detail": {
+        "initial_preparation_linear_response": 1.2904017555827232e-22,
+        "accumulated_motion_linear_response": 2.1714173592030658e-14,
+        "net_reconstruction_contribution": 2.5135234038530313e-13,
+        "reduced_interpolation_contribution": 6.43852831309085e-14,
+        "full_replay_residual_contribution": 1.8696705725439465e-13,
+        "total_measured_nonlinear_remainder": 6.528066989161606e-17,
+        "physical_linear_prediction": 2.1714173462990483e-14
+      }
+    },
+    {
+      "name": "reference_adjoint_time_control",
+      "passed": true,
+      "detail": {
+        "initial_preparation_linear_response": 2.60207528779786e-18,
+        "accumulated_motion_linear_response": 1.5799488182069485e-16,
+        "net_reconstruction_contribution": 3.4015335426988535e-13,
+        "reduced_interpolation_contribution": 1.124657303133526e-14,
+        "full_replay_residual_contribution": 3.513999273012206e-13,
+        "total_measured_nonlinear_remainder": 2.579777922370485e-16,
+        "physical_linear_prediction": 1.6059695710849271e-16
+      }
+    },
+    {
+      "name": "reference_saved_force_target_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference_linear_attribution_flags_recomputed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference_independent_nonlinear_counterfactual_control",
+      "passed": true,
+      "detail": 8.492820564104492e-14
+    },
+    {
+      "name": "MTS_path_resolution_control",
+      "passed": true,
+      "detail": {
+        "initial_preparation_linear_response": 2.901749588836021e-21,
+        "accumulated_motion_linear_response": 1.1257385929881345e-14,
+        "net_reconstruction_contribution": 3.4844106440452387e-13,
+        "reduced_interpolation_contribution": 1.3869736111828884e-10,
+        "full_replay_residual_contribution": 1.3834892005388432e-10,
+        "total_measured_nonlinear_remainder": 1.1037272334449516e-15,
+        "physical_linear_prediction": 1.1257388831630934e-14
+      }
+    },
+    {
+      "name": "MTS_adjoint_time_control",
+      "passed": true,
+      "detail": {
+        "initial_preparation_linear_response": 7.718736624365071e-19,
+        "accumulated_motion_linear_response": 8.394354587641233e-18,
+        "net_reconstruction_contribution": 1.2031359480310348e-13,
+        "reduced_interpolation_contribution": 1.1722646279717668e-10,
+        "full_replay_residual_contribution": 1.1710614920237358e-10,
+        "total_measured_nonlinear_remainder": 1.2940906440477735e-15,
+        "physical_linear_prediction": 7.6224792708435e-18
+      }
+    },
+    {
+      "name": "MTS_saved_force_target_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS_linear_attribution_flags_recomputed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS_independent_nonlinear_counterfactual_control",
+      "passed": true,
+      "detail": 8.408843559351328e-14
+    }
+  ],
+  "cases": [
+    {
+      "branch": "reference",
+      "path_refinement_changes": {
+        "initial_preparation_linear_response": 1.2904017555827232e-22,
+        "accumulated_motion_linear_response": 2.1714173592030658e-14,
+        "net_reconstruction_contribution": 2.5135234038530313e-13,
+        "reduced_interpolation_contribution": 6.43852831309085e-14,
+        "full_replay_residual_contribution": 1.8696705725439465e-13,
+        "total_measured_nonlinear_remainder": 6.528066989161606e-17,
+        "physical_linear_prediction": 2.1714173462990483e-14
+      },
+      "time_refinement_changes": {
+        "initial_preparation_linear_response": 2.60207528779786e-18,
+        "accumulated_motion_linear_response": 1.5799488182069485e-16,
+        "net_reconstruction_contribution": 3.4015335426988535e-13,
+        "reduced_interpolation_contribution": 1.124657303133526e-14,
+        "full_replay_residual_contribution": 3.513999273012206e-13,
+        "total_measured_nonlinear_remainder": 2.579777922370485e-16,
+        "physical_linear_prediction": 1.6059695710849271e-16
+      },
+      "physical_attribution_qualified": true,
+      "nonlinear_counterfactual_maximum_difference": 8.492820564104492e-14,
+      "standard_absolute_reconstruction_sum": 3.846724001168593e-13,
+      "tight_absolute_reconstruction_sum": 6.76641354361502e-14,
+      "reconstruction_cancellation_not_hidden": true,
+      "uniform_nonlinear_bound": false,
+      "continuous_time_force_budget_proven": false
+    },
+    {
+      "branch": "MTS",
+      "path_refinement_changes": {
+        "initial_preparation_linear_response": 2.901749588836021e-21,
+        "accumulated_motion_linear_response": 1.1257385929881345e-14,
+        "net_reconstruction_contribution": 3.4844106440452387e-13,
+        "reduced_interpolation_contribution": 1.3869736111828884e-10,
+        "full_replay_residual_contribution": 1.3834892005388432e-10,
+        "total_measured_nonlinear_remainder": 1.1037272334449516e-15,
+        "physical_linear_prediction": 1.1257388831630934e-14
+      },
+      "time_refinement_changes": {
+        "initial_preparation_linear_response": 7.718736624365071e-19,
+        "accumulated_motion_linear_response": 8.394354587641233e-18,
+        "net_reconstruction_contribution": 1.2031359480310348e-13,
+        "reduced_interpolation_contribution": 1.1722646279717668e-10,
+        "full_replay_residual_contribution": 1.1710614920237358e-10,
+        "total_measured_nonlinear_remainder": 1.2940906440477735e-15,
+        "physical_linear_prediction": 7.6224792708435e-18
+      },
+      "physical_attribution_qualified": true,
+      "nonlinear_counterfactual_maximum_difference": 8.408843559351328e-14,
+      "standard_absolute_reconstruction_sum": 2.338193539359383e-10,
+      "tight_absolute_reconstruction_sum": 5.13258063611971e-13,
+      "reconstruction_cancellation_not_hidden": true,
+      "uniform_nonlinear_bound": false,
+      "continuous_time_force_budget_proven": false
+    }
+  ],
+  "inputs": {
+    "scripts\\verify_annular_force_response_controls_20260916.py": "3bb3ba3ecbaa0abd14213e386360bddbe11abdf1a68fa1a50a4a46222f9d1a21",
+    "source-intake\\navier-stokes\\20260914\\annular-force-adjoint-response-attempt01\\status.json": "0c4217bf76509cf3b93929579724089a721b6fbda6e9309ade6f22e74c4c9f40",
+    "source-intake\\navier-stokes\\20260914\\annular-force-adjoint-tight-attempt01\\status.json": "39b6ade4c401b7832ac7f6d32bdb5dac0976767f236999c3a5e7e564258105c5",
+    "source-intake\\navier-stokes\\20260914\\annular-force-response-paths-attempt01\\status.json": "e6f1fefdd4f9a3be1879dda4198d95f206594c1608719665534b5d640155c4b0",
+    "scripts\\navier_stokes_source_audit_20260908.py": "817c4cdff5bf22a88deea7771b4bbc960690397512bc07cdb639ee9ab33e4f0b",
+    "scripts\\sbp4_derived_operator_20260909.py": "065ea0be52b651d742082230fe8322a367e11fc5e20150c8f3d506d1f87e77d3",
+    "scripts\\sbp4_compatible_second_operator_20260909.py": "86c6f05f7cf0a07abe9d4caa5ca1038b9f64641085a1a4a4f03aeae3ac918a3c",
+    "scripts\\annular_compatible_current_restoring_20260909.py": "c2e15990fb70e4e0587e63f8f0182831b0a4185003cdcd295db97af9027d4051",
+    "scripts\\annular_gram_joint_action_20260909.py": "c45de66a16a3c44a1ebb5a68874c47a10ceb24815bda5ecc88d5bfad3d049591",
+    "scripts\\annular_covariant_time_transport_20260909.py": "d6a55d99b9f9de06e30ab7a6f090ae12b97b273a23930315740490324ab679a9",
+    "scripts\\annular_mixed_grid_basis_20260909.py": "5a9ceef39b681f376a7e6468a104dc6a4139365248ec64ea95fa8809993f147c",
+    "scripts\\annular_adm_mixed_action_20260909.py": "c5681003a7a495196428407f25e00babc525a35d953618e1911540f4b096fe05",
+    "scripts\\annular_adm_clock_quadratic_20260909.py": "e5ccec725f88125169ccf6f533d5f613343a7259fabad0c0bcf992e600d024be",
+    "scripts\\annular_constraint_routhian_20260909.py": "62a5cf9ac8f8e73ee56bc0c46f29e5ed560692cb19a1125ba848f15c72b1dfd8",
+    "scripts\\annular_metric_link_quadratic_20260909.py": "9555ff3da29cf2522ac67cb8f3a2e3b44420464392e1029cc31410542d96e63b",
+    "scripts\\annular_released_hermite_action_20260909.py": "360d565ed558fd83121d11d59f9096d1ebf7fc49f288ca5d8bf7e4f062cac145",
+    "scripts\\annular_action_boundary_current_20260909.py": "8b702d8f7610d686bebed3ea1af73d94b0d33fe5cc7dbe3e0faee4adbd98ce98",
+    "scripts\\annular_metric_flux_jets_20260909.py": "a1c5e3db71e68ebdd69259d47e50bd1d9cecbba51034a55d5c791ad09bada3a0",
+    "scripts\\annular_nonlinear_history_20260912.py": "7747f735107c7c5bb2eae1b9e213354fc9d8856597328cbe697389ec1a96a2fd",
+    "scripts\\annular_covariant_scalar_action_20260912.py": "ccf97c4622e79a5816e094b3001e0513e7cd16f3a424fafeade04de85bca6a4f",
+    "scripts\\annular_finite_width_bulk_current_20260913.py": "da2ca4c2fab7315b4738007aafff59f38be0d90cf4f121706a32afa16f060601",
+    "scripts\\annular_horizontal_clock_evolution_20260913.py": "985843dab67ab06c85c97b32042d48f6ed5342bf578c3518bbad132cb731cd3d",
+    "scripts\\annular_compatible_h_evolution_20260914.py": "88424b14891e92d7780077619e02e5dc3e166806ed9c22924f0f03682e4e97e1",
+    "scripts\\annular_reference_continuum_shell_20260914.py": "5cbb6013083eafb55181d5a14de236685835c51ed36f26b12f0b4cc02edd9409",
+    "scripts\\annular_source_gravity_collar_20260914.py": "65d8b6c1a421bac8b56420df81630647155043b7b35031365d3f708ab94c7fa2",
+    "scripts\\derive_annular_source_gravity_20260914.py": "97861e2bff4aa48b4408f30a71379b32b5133439bc4d456d9b6426d544bacdbc"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-force-response-controls-attempt01\\executed-verify_annular_force_response_controls_20260916.py": "3bb3ba3ecbaa0abd14213e386360bddbe11abdf1a68fa1a50a4a46222f9d1a21"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "original_GR_gates_unchanged": true,
+  "short_finite_response_only": true,
+  "measured_remainders_not_uniform_bounds": true,
+  "no_claim_upgraded": true,
+  "completed_at": "2026-09-16T15:27:48.214120+00:00"
+}

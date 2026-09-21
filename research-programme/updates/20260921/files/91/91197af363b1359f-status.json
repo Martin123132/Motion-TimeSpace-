@@ -1,0 +1,278 @@
+{
+  "state": "complete",
+  "inputs": {
+    "scripts\\verify_annular_canonical_rate_completion_20260911.py": "0ffd9802fe01019e0797716a81fe35dd3e485d9d8a0deff5356c30d2438a443c",
+    "source-intake\\navier-stokes\\20260911\\annular-canonical-rate-completion-attempt01\\status.json": "4bf0d88c9308c673389116aed4db17ab6ede2deafeb35b0f19b1c05a562b5d95",
+    "source-intake\\navier-stokes\\20260909\\annular-constraint-correction-initial\\canonical.json": "6e24704a5834702cbbd1b8379dcb621cc074948a9dc81c9c80709df30425644a",
+    "source-intake\\navier-stokes\\20260910\\annular-parent-root-residence-attempt02\\canonical_N16_GR_sample0.npz": "68c1bb56a4b9887b22f33b04b7e24d536cf33429be27f5c199693bd4433db902",
+    "source-intake\\navier-stokes\\20260911\\annular-canonical-inverse-boundary-attempt01\\N16_GR_outer_clock.npz": "251d6dcc928016ede4e09b07445d00ccce7f802b942c5b31e2dd0caf38b410b6",
+    "source-intake\\navier-stokes\\20260911\\annular-canonical-gr-boundary-reference-attempt01\\constructed_GR_first_jet.npz": "408961dfa503226007c480b93804a6db0e72e76f00f52f333d9b003de2b57e74",
+    "source-intake\\navier-stokes\\20260910\\annular-parent-root-residence-attempt02\\canonical_N16_metric_Gram_sample0.npz": "ea4d5bb4922ff8c7938bc4dbe1c4e919cf21e942659496bc703e71d2faa1313f",
+    "source-intake\\navier-stokes\\20260911\\annular-canonical-inverse-boundary-attempt01\\N16_metric_Gram_outer_clock.npz": "fb39a40f6b6576194da67a37f48c684ce0e5c77666ff38be92e632835f8aa783"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260911\\annular-canonical-rate-completion-control-attempt01\\executed-verify_annular_canonical_rate_completion_20260911.py": "0ffd9802fe01019e0797716a81fe35dd3e485d9d8a0deff5356c30d2438a443c",
+    "source-intake\\navier-stokes\\20260911\\annular-canonical-rate-completion-control-attempt01\\GR_coordinate_only.npz": "852f74867beb5594ba2c82e21ab955013812bed4a1fd4c83277ad5842152b427",
+    "source-intake\\navier-stokes\\20260911\\annular-canonical-rate-completion-control-attempt01\\GR_completed.npz": "2462ac1cf1ed7b9bdc9c949b92b4912a720cf7daffbcbe485bc477c2c855528c",
+    "source-intake\\navier-stokes\\20260911\\annular-canonical-rate-completion-control-attempt01\\metric_Gram_coordinate_only.npz": "b2892049536d97c8d4528bb845b93b77c405945457375eecbdca9838ecfc5bea",
+    "source-intake\\navier-stokes\\20260911\\annular-canonical-rate-completion-control-attempt01\\metric_Gram_completed.npz": "3b6caa3469ed9fb9e4ad08497355b38e2d7569a0b7ec6b0b2fce889f122a756b"
+  },
+  "checks": [
+    {
+      "name": "main_attempt_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "coordinate_only_GR_all_constraint_rate_rows_close",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "GR_entire_remaining_Cdot_is_boundary_trace_defect",
+      "passed": true,
+      "detail": 1.446743900317012e-17
+    },
+    {
+      "name": "completed_GR_all_constraint_rate_rows_close",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "GR_unfitted_lapse_profile_1",
+      "passed": true,
+      "detail": 3.742517918667453e-17
+    },
+    {
+      "name": "GR_unfitted_lapse_profile_2",
+      "passed": true,
+      "detail": 1.1949372592441128e-17
+    },
+    {
+      "name": "GR_unfitted_lapse_profile_3",
+      "passed": true,
+      "detail": 1.1727088327139914e-17
+    },
+    {
+      "name": "enlarged_action_derivative_phase_0",
+      "passed": true,
+      "detail": 6.228751804143268e-16
+    },
+    {
+      "name": "enlarged_action_derivative_phase_1",
+      "passed": true,
+      "detail": 2.6469779601696886e-23
+    },
+    {
+      "name": "enlarged_action_derivative_phase_2",
+      "passed": true,
+      "detail": 1.6046192152785466e-17
+    },
+    {
+      "name": "enlarged_action_derivative_phase_3",
+      "passed": true,
+      "detail": 8.999725064576941e-22
+    },
+    {
+      "name": "metric_Gram_entire_remaining_Cdot_is_boundary_trace_defect",
+      "passed": true,
+      "detail": 1.794988176108056e-15
+    },
+    {
+      "name": "omitting_Gram_endpoint_force_is_detected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "metric_Gram_unfitted_lapse_profile_1",
+      "passed": true,
+      "detail": 1.794371536122455e-15
+    },
+    {
+      "name": "metric_Gram_unfitted_lapse_profile_2",
+      "passed": true,
+      "detail": 1.788645593399016e-15
+    },
+    {
+      "name": "metric_Gram_unfitted_lapse_profile_3",
+      "passed": true,
+      "detail": 1.7854336444630275e-15
+    },
+    {
+      "name": "no_python_cache",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "samples": [
+    {
+      "branch": "GR",
+      "coordinate_only_dimensions": {
+        "mass": 50,
+        "scalar": 50
+      },
+      "results": {
+        "coordinate_only": {
+          "constraint_rate_max": 1.481701789255361e-17,
+          "interior_constraint_rate_max": 1.481701789255361e-17,
+          "boundary_constraint_rates": [
+            4.56082450266271e-18,
+            6.19434284428396e-18
+          ],
+          "boundary_prediction": [
+            -3.3374838645423954e-18,
+            6.6060621615343695e-18
+          ],
+          "full_boundary_identity_error": 1.481701789255361e-17,
+          "weak_mass_flux_endpoints": [
+            0.0003357828122650893,
+            0.0008868069388893152
+          ],
+          "parent_trace_flux_endpoints": [
+            0.00033578281226508903,
+            0.0008868069388893147
+          ],
+          "mass_flux_trace_gaps": [
+            2.710505431213761e-19,
+            5.421010862427522e-19
+          ]
+        },
+        "completed": {
+          "constraint_rate_max": 1.446743900317012e-17,
+          "interior_constraint_rate_max": 1.446743900317012e-17,
+          "boundary_constraint_rates": [
+            -1.4304603978876815e-18,
+            6.472940561359877e-18
+          ],
+          "boundary_prediction": [
+            -6.0074709561763124e-18,
+            6.6060621615343695e-18
+          ],
+          "full_boundary_identity_error": 1.446743900317012e-17,
+          "weak_mass_flux_endpoints": [
+            0.00033578281226508925,
+            0.0008868069388893152
+          ],
+          "parent_trace_flux_endpoints": [
+            0.00033578281226508876,
+            0.0008868069388893147
+          ],
+          "mass_flux_trace_gaps": [
+            4.87890977618477e-19,
+            5.421010862427522e-19
+          ]
+        },
+        "bulk_action_directional_errors": [
+          6.228751804143268e-16,
+          2.6469779601696886e-23,
+          1.6046192152785466e-17,
+          8.999725064576941e-22
+        ]
+      },
+      "unfitted_lapse_checks": [
+        {
+          "amplitude": 0.001,
+          "harmonic": 1,
+          "all_rows_max": 3.742517918667453e-17,
+          "interior_max": 3.742517918667453e-17
+        },
+        {
+          "amplitude": -0.003,
+          "harmonic": 2,
+          "all_rows_max": 1.1949372592441128e-17,
+          "interior_max": 1.1118055784393415e-17
+        },
+        {
+          "amplitude": 0.002,
+          "harmonic": 3,
+          "all_rows_max": 1.1727088327139914e-17,
+          "interior_max": 1.1727088327139914e-17
+        }
+      ],
+      "valid_for_physics_claim": false
+    },
+    {
+      "branch": "metric_Gram",
+      "coordinate_only_dimensions": {
+        "mass": 50,
+        "scalar": 51
+      },
+      "results": {
+        "coordinate_only": {
+          "constraint_rate_max": 9.140542436096087e-06,
+          "interior_constraint_rate_max": 2.7689750415249483e-12,
+          "boundary_constraint_rates": [
+            -9.140542436096087e-06,
+            3.5713271067469995e-06
+          ],
+          "boundary_prediction": [
+            -9.140542858225627e-06,
+            3.5713272064946975e-06
+          ],
+          "full_boundary_identity_error": 2.7689750415249483e-12,
+          "weak_mass_flux_endpoints": [
+            0.0003364947960144365,
+            0.0008828289618266959
+          ],
+          "parent_trace_flux_endpoints": [
+            0.0003357524556146917,
+            0.000882535900935215
+          ],
+          "mass_flux_trace_gaps": [
+            7.423403997448234e-07,
+            2.930608914808279e-07
+          ]
+        },
+        "completed": {
+          "constraint_rate_max": 7.71468994776849e-06,
+          "interior_constraint_rate_max": 1.794988176108056e-15,
+          "boundary_constraint_rates": [
+            -7.71468994776849e-06,
+            3.3490837576886277e-06
+          ],
+          "boundary_prediction": [
+            -7.71468994826288e-06,
+            3.3490837574933773e-06
+          ],
+          "full_boundary_identity_error": 1.794988176108056e-15,
+          "weak_mass_flux_endpoints": [
+            0.00033637899674630065,
+            0.0008828107246721511
+          ],
+          "parent_trace_flux_endpoints": [
+            0.0003357524556197037,
+            0.0008825359009400019
+          ],
+          "mass_flux_trace_gaps": [
+            6.26541126596972e-07,
+            2.748237321492002e-07
+          ]
+        }
+      },
+      "unfitted_lapse_checks": [
+        {
+          "amplitude": 0.001,
+          "harmonic": 1,
+          "all_rows_max": 7.716627964890172e-06,
+          "interior_max": 1.794371536122455e-15
+        },
+        {
+          "amplitude": -0.003,
+          "harmonic": 2,
+          "all_rows_max": 7.702356832718457e-06,
+          "interior_max": 1.788645593399016e-15
+        },
+        {
+          "amplitude": 0.002,
+          "harmonic": 3,
+          "all_rows_max": 7.72685936289964e-06,
+          "interior_max": 1.7854336444630275e-15
+        }
+      ],
+      "valid_for_physics_claim": false
+    }
+  ],
+  "valid_for_physics_claim": false,
+  "new_evolution": false,
+  "interval_certificate": false
+}

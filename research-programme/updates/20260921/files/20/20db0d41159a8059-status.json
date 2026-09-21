@@ -1,0 +1,129 @@
+{
+  "state": "complete",
+  "inputs": {
+    "scripts\\verify_annular_canonical_control_20260911.py": "edc5d83940d4ff6b458e8750b292b0b5dd840827872a69c03f6bb486271299fc",
+    "source-intake\\navier-stokes\\20260910\\annular-parent-root-residence-attempt02\\canonical_N16_GR_sample0.npz": "68c1bb56a4b9887b22f33b04b7e24d536cf33429be27f5c199693bd4433db902",
+    "source-intake\\navier-stokes\\20260911\\annular-time-link-adjoint-attempt01\\canonical_N16_GR_sample0.npz": "81da93c8cc7d7c1973b483c5273008bb10538834c9a6f8290ff03880079bc7ed",
+    "source-intake\\navier-stokes\\20260910\\annular-parent-root-residence-attempt02\\canonical_N16_metric_Gram_sample0.npz": "ea4d5bb4922ff8c7938bc4dbe1c4e919cf21e942659496bc703e71d2faa1313f",
+    "source-intake\\navier-stokes\\20260911\\annular-time-link-adjoint-attempt01\\canonical_N16_metric_Gram_sample0.npz": "03bcc606d0ff1e632bc2c7ecd61b12a6ba375d91717f650a607ec9c772d4e246",
+    "source-intake\\navier-stokes\\20260910\\annular-parent-root-residence-attempt02\\canonical_N32_GR_sample0.npz": "6918b122e9ca6b56d1a23845a803bcbcc587d2a3a0ec1a658d9c7e48a80cd73c",
+    "source-intake\\navier-stokes\\20260911\\annular-initial-mesh-control-attempt01\\canonical_N32_GR_sample0.npz": "653ccc7efd0ac511ad48f83c90ea4bac0335778d03e6373345928f654acffdf1",
+    "source-intake\\navier-stokes\\20260910\\annular-parent-root-residence-attempt02\\canonical_N32_metric_Gram_sample0.npz": "e1b71bd72b9d41bb29281bd38895e0848b9f9dafb3e0690a336e51d46b82d7a6",
+    "source-intake\\navier-stokes\\20260911\\annular-initial-mesh-control-attempt01\\canonical_N32_metric_Gram_sample0.npz": "4f9b05370b96e6d45381d1c295beedbfc84895d20c7cdecd0e6d1af6ea52e619",
+    "source-intake\\navier-stokes\\20260910\\annular-parent-root-residence-attempt02\\canonical_N64_GR_sample0.npz": "1d58f5ff01b7d599bbb3ba18511c86fa004921cae34ba98bb2d329445b6143d3",
+    "source-intake\\navier-stokes\\20260911\\annular-initial-mesh-control-attempt01\\canonical_N64_GR_sample0.npz": "e9b9c54afee1fde2b82e0dd830974a93641f3d2421d020313f109a23d74a8970",
+    "source-intake\\navier-stokes\\20260910\\annular-parent-root-residence-attempt02\\canonical_N64_metric_Gram_sample0.npz": "0268954cbf046cbe4e8398fa1accb67671514e40d38e6f848077b214493e7f72",
+    "source-intake\\navier-stokes\\20260911\\annular-initial-mesh-control-attempt01\\canonical_N64_metric_Gram_sample0.npz": "bdf77fa7ae6172986c64c09bf5acf71a8b88f41f392a555a8a6b3260a62b262d",
+    "source-intake\\navier-stokes\\20260911\\annular-canonical-initial-data-nodal01\\canonical_N16_GR_sample0.npz": "1626cb9ff68c3ea45fccc12942527fecf4eb863b81df88669ba0f53a864cabee",
+    "source-intake\\navier-stokes\\20260909\\annular-constraint-correction-initial\\canonical.json": "6e24704a5834702cbbd1b8379dcb621cc074948a9dc81c9c80709df30425644a"
+  },
+  "checks": [
+    {
+      "name": "canonical_N16_GR_sample0_kinematic_tent_not_residual_fit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N16_metric_Gram_sample0_kinematic_tent_not_residual_fit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N32_GR_sample0_kinematic_tent_not_residual_fit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N32_metric_Gram_sample0_kinematic_tent_not_residual_fit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N64_GR_sample0_kinematic_tent_not_residual_fit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_N64_metric_Gram_sample0_kinematic_tent_not_residual_fit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "GR_full_canonical_action_constraint_time_derivative",
+      "passed": true,
+      "detail": 5.372629450243596e-19
+    },
+    {
+      "name": "GR_boundary_energy_balance_without_new_clock_law",
+      "passed": true,
+      "detail": {
+        "outer_mass_power": 0.008880398021363006,
+        "boundary_reaction_power": 0.008880398021363018,
+        "constraint_work": -1.470962428162575e-17,
+        "error": 2.5665599497881014e-18
+      }
+    },
+    {
+      "name": "canonical_Gram_lapse_transport_chain_rule",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_python_cache",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "near_null_modes": [
+    {
+      "label": "canonical_N16_GR_sample0",
+      "tent_alignment": 0.999580374166437,
+      "peak_radius": 6.046875,
+      "q_at_peak": 0.0009663068961318525,
+      "product_derivative_jump_at_peak": -0.021990783762173265,
+      "smallest_schur_eigenvalue_midpoint": 6.592755605286115e-12
+    },
+    {
+      "label": "canonical_N16_metric_Gram_sample0",
+      "tent_alignment": 0.9995803741478253,
+      "peak_radius": 6.046875,
+      "q_at_peak": 0.0009663068881545726,
+      "product_derivative_jump_at_peak": -0.02199078368618348,
+      "smallest_schur_eigenvalue_midpoint": 6.592755692773905e-12
+    },
+    {
+      "label": "canonical_N32_GR_sample0",
+      "tent_alignment": 0.9995477945541209,
+      "peak_radius": 6.0390625,
+      "q_at_peak": -0.0009650146924506588,
+      "product_derivative_jump_at_peak": 0.020922183984318977,
+      "smallest_schur_eigenvalue_midpoint": 2.08941657121417e-13
+    },
+    {
+      "label": "canonical_N32_metric_Gram_sample0",
+      "tent_alignment": 0.9995477945549078,
+      "peak_radius": 6.0390625,
+      "q_at_peak": -0.0009650146919493745,
+      "product_derivative_jump_at_peak": 0.020922183979549504,
+      "smallest_schur_eigenvalue_midpoint": 2.0894165454897402e-13
+    },
+    {
+      "label": "canonical_N64_GR_sample0",
+      "tent_alignment": 0.9999999987844823,
+      "peak_radius": 6.04296875,
+      "q_at_peak": 1.4268815175849339e-06,
+      "product_derivative_jump_at_peak": -3.1650237678968754e-05,
+      "smallest_schur_eigenvalue_midpoint": 6.850026834455446e-20
+    },
+    {
+      "label": "canonical_N64_metric_Gram_sample0",
+      "tent_alignment": 0.999999998784482,
+      "peak_radius": 6.04296875,
+      "q_at_peak": 1.4268815175389607e-06,
+      "product_derivative_jump_at_peak": -3.165023767853251e-05,
+      "smallest_schur_eigenvalue_midpoint": 6.856784897067295e-20
+    }
+  ],
+  "valid_for_physics_claim": false,
+  "completed_utc": "2026-09-11T00:45:27.029149+00:00"
+}

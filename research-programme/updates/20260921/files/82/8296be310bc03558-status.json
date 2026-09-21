@@ -1,0 +1,213 @@
+{
+  "state": "complete",
+  "checks": [
+    {
+      "name": "reference-0.15_full_moving_action_time_covariance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference-0.15_untransported_density_control_fails",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference0.0_full_moving_action_time_covariance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference0.0_untransported_density_control_fails",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference0.15_full_moving_action_time_covariance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference0.15_untransported_density_control_fails",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference_independent_nonzero_shift_action_difference",
+      "passed": true,
+      "detail": {
+        "difference": -6.715303124190987e-05,
+        "derived": -6.715303125665387e-05,
+        "error": 1.4743997580994594e-14
+      }
+    },
+    {
+      "name": "reference_bulk_current_adjoint_including_moving_anchor",
+      "passed": true,
+      "detail": {
+        "raw": -6.715303125665387e-05,
+        "adjoint": -6.715303125665407e-05,
+        "error": 2.0328790734103208e-19
+      }
+    },
+    {
+      "name": "reference_frozen_source_anchor_control_fails",
+      "passed": true,
+      "detail": 8.325932101816317e-06
+    },
+    {
+      "name": "MTS-0.15_full_moving_action_time_covariance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS-0.15_untransported_density_control_fails",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS0.0_full_moving_action_time_covariance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS0.0_untransported_density_control_fails",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS0.15_full_moving_action_time_covariance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS0.15_untransported_density_control_fails",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS_independent_nonzero_shift_action_difference",
+      "passed": true,
+      "detail": {
+        "difference": -6.849543095326556e-05,
+        "derived": -6.849543096527455e-05,
+        "error": 1.2008989180682661e-14
+      }
+    },
+    {
+      "name": "MTS_bulk_current_adjoint_including_moving_anchor",
+      "passed": true,
+      "detail": {
+        "raw": -6.849543096527455e-05,
+        "adjoint": -6.849543096527463e-05,
+        "error": 8.131516293641283e-20
+      }
+    },
+    {
+      "name": "MTS_frozen_source_anchor_control_fails",
+      "passed": true,
+      "detail": 9.535448237949303e-06
+    }
+  ],
+  "cases": [
+    {
+      "branch": "reference",
+      "time": -0.15,
+      "action_error": 6.938893903907228e-18,
+      "proper_clock_error": 1.1102230246251565e-16,
+      "omitted_link_J_error": 0.0001195184764501353,
+      "minimum_chart_rr": 1.2489370758007086,
+      "maximum_nonzero_shift": 0.08339776268705043
+    },
+    {
+      "branch": "reference",
+      "time": 0.0,
+      "action_error": 6.938893903907228e-18,
+      "proper_clock_error": 1.1102230246251565e-16,
+      "omitted_link_J_error": 0.00015259413937417782,
+      "minimum_chart_rr": 1.2465255974259197,
+      "maximum_nonzero_shift": 0.09254646878554701
+    },
+    {
+      "branch": "reference",
+      "time": 0.15,
+      "action_error": 1.3877787807814457e-17,
+      "proper_clock_error": 0.0,
+      "omitted_link_J_error": 0.00019742820381818404,
+      "minimum_chart_rr": 1.2438563130931908,
+      "maximum_nonzero_shift": 0.10178693680386952
+    },
+    {
+      "branch": "MTS",
+      "time": -0.15,
+      "action_error": 2.0816681711721685e-17,
+      "proper_clock_error": 1.1102230246251565e-16,
+      "omitted_link_J_error": 0.00012678007879439457,
+      "minimum_chart_rr": 1.2489370758007086,
+      "maximum_nonzero_shift": 0.08339776268705043
+    },
+    {
+      "branch": "MTS",
+      "time": 0.0,
+      "action_error": 2.0816681711721685e-17,
+      "proper_clock_error": 1.1102230246251565e-16,
+      "omitted_link_J_error": 0.00016513494637623166,
+      "minimum_chart_rr": 1.2465255974259197,
+      "maximum_nonzero_shift": 0.09254646878554701
+    },
+    {
+      "branch": "MTS",
+      "time": 0.15,
+      "action_error": 1.0408340855860843e-16,
+      "proper_clock_error": 0.0,
+      "omitted_link_J_error": 0.00021471616343344407,
+      "minimum_chart_rr": 1.2438563130931908,
+      "maximum_nonzero_shift": 0.10178693680386952
+    }
+  ],
+  "inputs": {
+    "scripts\\verify_annular_cut_transport_current_20260915.py": "eed49c944bc29dfeb2664218598a46a728f764d41cb204b43debd4f27ef49df8",
+    "scripts\\navier_stokes_source_audit_20260908.py": "817c4cdff5bf22a88deea7771b4bbc960690397512bc07cdb639ee9ab33e4f0b",
+    "scripts\\sbp4_derived_operator_20260909.py": "065ea0be52b651d742082230fe8322a367e11fc5e20150c8f3d506d1f87e77d3",
+    "scripts\\sbp4_compatible_second_operator_20260909.py": "86c6f05f7cf0a07abe9d4caa5ca1038b9f64641085a1a4a4f03aeae3ac918a3c",
+    "scripts\\annular_compatible_current_restoring_20260909.py": "c2e15990fb70e4e0587e63f8f0182831b0a4185003cdcd295db97af9027d4051",
+    "scripts\\annular_gram_joint_action_20260909.py": "c45de66a16a3c44a1ebb5a68874c47a10ceb24815bda5ecc88d5bfad3d049591",
+    "scripts\\annular_covariant_time_transport_20260909.py": "d6a55d99b9f9de06e30ab7a6f090ae12b97b273a23930315740490324ab679a9",
+    "scripts\\annular_mixed_grid_basis_20260909.py": "5a9ceef39b681f376a7e6468a104dc6a4139365248ec64ea95fa8809993f147c",
+    "scripts\\annular_adm_mixed_action_20260909.py": "c5681003a7a495196428407f25e00babc525a35d953618e1911540f4b096fe05",
+    "scripts\\annular_adm_clock_quadratic_20260909.py": "e5ccec725f88125169ccf6f533d5f613343a7259fabad0c0bcf992e600d024be",
+    "scripts\\annular_constraint_routhian_20260909.py": "62a5cf9ac8f8e73ee56bc0c46f29e5ed560692cb19a1125ba848f15c72b1dfd8",
+    "scripts\\annular_metric_link_quadratic_20260909.py": "9555ff3da29cf2522ac67cb8f3a2e3b44420464392e1029cc31410542d96e63b",
+    "scripts\\annular_released_hermite_action_20260909.py": "360d565ed558fd83121d11d59f9096d1ebf7fc49f288ca5d8bf7e4f062cac145",
+    "scripts\\annular_action_boundary_current_20260909.py": "8b702d8f7610d686bebed3ea1af73d94b0d33fe5cc7dbe3e0faee4adbd98ce98",
+    "scripts\\annular_metric_flux_jets_20260909.py": "a1c5e3db71e68ebdd69259d47e50bd1d9cecbba51034a55d5c791ad09bada3a0",
+    "scripts\\annular_nonlinear_history_20260912.py": "7747f735107c7c5bb2eae1b9e213354fc9d8856597328cbe697389ec1a96a2fd",
+    "scripts\\annular_covariant_scalar_action_20260912.py": "ccf97c4622e79a5816e094b3001e0513e7cd16f3a424fafeade04de85bca6a4f",
+    "scripts\\annular_finite_width_bulk_current_20260913.py": "da2ca4c2fab7315b4738007aafff59f38be0d90cf4f121706a32afa16f060601",
+    "scripts\\annular_horizontal_clock_evolution_20260913.py": "985843dab67ab06c85c97b32042d48f6ed5342bf578c3518bbad132cb731cd3d",
+    "scripts\\annular_compatible_h_evolution_20260914.py": "88424b14891e92d7780077619e02e5dc3e166806ed9c22924f0f03682e4e97e1",
+    "scripts\\annular_reference_continuum_shell_20260914.py": "5cbb6013083eafb55181d5a14de236685835c51ed36f26b12f0b4cc02edd9409",
+    "scripts\\annular_source_gravity_collar_20260914.py": "65d8b6c1a421bac8b56420df81630647155043b7b35031365d3f708ab94c7fa2",
+    "scripts\\derive_annular_source_gravity_20260914.py": "97861e2bff4aa48b4408f30a71379b32b5133439bc4d456d9b6426d544bacdbc",
+    "scripts\\annular_covariant_cut_action_20260915.py": "928f830561a0237f5297897bf690e4a53ca0ffc778b2967c9726223e9fd4176f",
+    "scripts\\annular_covariant_cut_action_v2_20260915.py": "0c24f5c974b4a5d4cd78bb395d8fa71070130e271018eb769d1ef19c2fdc828e",
+    "scripts\\qualify_annular_covariant_cut_20260915.py": "5b1a56efd2a26867f4da7c6b7d1dfea1c343b86b0c45934640ed548c56b13d46"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-cut-transport-and-current-attempt01\\executed-verify_annular_cut_transport_current_20260915.py": "eed49c944bc29dfeb2664218598a46a728f764d41cb204b43debd4f27ef49df8"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "scope": "Full repaired curved-history action, physical time pullback, and independent P=0 shift-current first variation.",
+  "finite_nonzero_shift_action_used": true,
+  "old_trace_multiplier_absent": true,
+  "moving_anchor_factor_retained": true,
+  "time_boundary_terms_vanish_by_compact_variation": true,
+  "canonical_parent_factor": "delta c = kappa U/N delta P; delta beta = kappa N U^3 delta P at P=0.",
+  "live_repaired_gravity_evolution_completed": false,
+  "arbitrary_spatial_diffeomorphism_invariance_proven": false,
+  "unique_parent_boundary_selection_proven": false,
+  "completed_at": "2026-09-15T01:39:07.595210+00:00"
+}

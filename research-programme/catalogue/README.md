@@ -1,5 +1,15 @@
 # Research Programme Catalogue
 
+## Latest: 2026-09-21
+
+The [latest reader route](../updates/20260921/README.md) and
+[complete bounded source catalogue](../updates/20260921/catalogue/README.md)
+cover the annular-action update through the September 21 current seal.
+Every original source path is listed, including explicitly local-only raw
+arrays. The [manifest](../updates/20260921/MANIFEST.csv) supplies byte counts,
+SHA-256 hashes and exact public locations; it does not silently omit files
+because a GitHub folder or PR list has reached a display limit.
+
 GitHub can cap large directory and pull-request file listings. The
 underlying Git tree remains complete, but entries beyond the display
 limit may not appear in the normal folder view. These bounded catalogues

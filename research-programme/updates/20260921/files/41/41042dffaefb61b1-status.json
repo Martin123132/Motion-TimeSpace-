@@ -1,0 +1,148 @@
+{
+  "state": "failed",
+  "checks": [
+    {
+      "name": "P2_endpoint_mass_after_midpoint_elimination",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "positive_halfline_tail_fixed_point",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_halfline_boundary_mass",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_halfline_8",
+      "passed": true,
+      "detail": 0.11785113019762501
+    },
+    {
+      "name": "finite_halfline_16",
+      "passed": true,
+      "detail": 0.11785113019775792
+    },
+    {
+      "name": "finite_halfline_32",
+      "passed": true,
+      "detail": 0.11785113019775792
+    },
+    {
+      "name": "reference65_embedded_action",
+      "passed": true,
+      "detail": {
+        "branch": "reference",
+        "base_count": 65,
+        "scalar_nodes": 178,
+        "source_bisections": [
+          4,
+          6
+        ],
+        "action_error": 3.191891195797325e-16,
+        "kinetic_error": 9.215718466126788e-19,
+        "potential_error": 3.222248856626919e-16,
+        "momentum_pullback_error": 1.471533398605951e-16,
+        "scalar_covector_pullback_error": 8.835598919176846e-12,
+        "source_covector_error": 2.348110855060481e-16,
+        "lifted_operator_error": 0.0
+      }
+    },
+    {
+      "name": "reference65_embedded_momentum",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference65_embedded_covectors",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference65_Gram_operator_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference65_positive_graded_cells",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS65_embedded_action",
+      "passed": false,
+      "detail": {
+        "branch": "MTS",
+        "base_count": 65,
+        "scalar_nodes": 178,
+        "source_bisections": [
+          4,
+          6
+        ],
+        "action_error": 2.68292332794573e-12,
+        "kinetic_error": 9.215718466126788e-19,
+        "potential_error": 2.6829302668396338e-12,
+        "momentum_pullback_error": 1.471533398605951e-16,
+        "scalar_covector_pullback_error": 3.171555817971239e-08,
+        "source_covector_error": 1.0094720198638996e-12,
+        "lifted_operator_error": 1.2862209075592546e-09
+      }
+    }
+  ],
+  "cases": [
+    {
+      "branch": "reference",
+      "base_count": 65,
+      "scalar_nodes": 178,
+      "source_bisections": [
+        4,
+        6
+      ],
+      "action_error": 3.191891195797325e-16,
+      "kinetic_error": 9.215718466126788e-19,
+      "potential_error": 3.222248856626919e-16,
+      "momentum_pullback_error": 1.471533398605951e-16,
+      "scalar_covector_pullback_error": 8.835598919176846e-12,
+      "source_covector_error": 2.348110855060481e-16,
+      "lifted_operator_error": 0.0
+    },
+    {
+      "branch": "MTS",
+      "base_count": 65,
+      "scalar_nodes": 178,
+      "source_bisections": [
+        4,
+        6
+      ],
+      "action_error": 2.68292332794573e-12,
+      "kinetic_error": 9.215718466126788e-19,
+      "potential_error": 2.6829302668396338e-12,
+      "momentum_pullback_error": 1.471533398605951e-16,
+      "scalar_covector_pullback_error": 3.171555817971239e-08,
+      "source_covector_error": 1.0094720198638996e-12,
+      "lifted_operator_error": 1.2862209075592546e-09
+    }
+  ],
+  "inputs": {
+    "scripts\\verify_annular_P2_graded_source_v2_20260919.py": "f1fb3b0275bbcf7dfe36475032d7f753dc8f87d65f46dd05320c38c5ed1c58f3"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-P2-graded-source-algebra-attempt02\\executed-verify_annular_P2_graded_source_v2_20260919.py": "f1fb3b0275bbcf7dfe36475032d7f753dc8f87d65f46dd05320c38c5ed1c58f3"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "github_action": false,
+  "subagents_used": false,
+  "no_forward_evolution": true,
+  "nested_space_not_new_physical_force": true,
+  "full_live_P2_force_convergence_proven": false,
+  "uniform_halfline_mass_law_not_a_graded_live_convergence_theorem": true,
+  "error": "RuntimeError(\"MTS65_embedded_action: {'branch': 'MTS', 'base_count': 65, 'scalar_nodes': 178, 'source_bisections': [4, 6], 'action_error': 2.68292332794573e-12, 'kinetic_error': 9.215718466126788e-19, 'potential_error': 2.6829302668396338e-12, 'momentum_pullback_error': 1.471533398605951e-16, 'scalar_covector_pullback_error': 3.171555817971239e-08, 'source_covector_error': 1.0094720198638996e-12, 'lifted_operator_error': 1.2862209075592546e-09}\")",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\verify_annular_P2_graded_source_v2_20260919.py\", line 52, in main\n    evidence.check(key+'_embedded_action', max(row['action_error'], row['kinetic_error'], row['potential_error']) < 2e-12, row)\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\annular_reference_continuum_shell_20260914.py\", line 41, in check\n    raise RuntimeError(name+': '+repr(detail))\nRuntimeError: MTS65_embedded_action: {'branch': 'MTS', 'base_count': 65, 'scalar_nodes': 178, 'source_bisections': [4, 6], 'action_error': 2.68292332794573e-12, 'kinetic_error': 9.215718466126788e-19, 'potential_error': 2.6829302668396338e-12, 'momentum_pullback_error': 1.471533398605951e-16, 'scalar_covector_pullback_error': 3.171555817971239e-08, 'source_covector_error': 1.0094720198638996e-12, 'lifted_operator_error': 1.2862209075592546e-09}\n"
+}

@@ -1,0 +1,91 @@
+{
+  "state": "failed",
+  "checks": [
+    {
+      "name": "reference513_Jacobian_complex_direction",
+      "passed": true,
+      "detail": 1.765717521390116e-16
+    },
+    {
+      "name": "reference513_Jacobian_transpose_duality",
+      "passed": true,
+      "detail": 2.5163281233838433e-15
+    },
+    {
+      "name": "reference513_scaled_initial_flow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference513standard_frozen_integration_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference513tight_frozen_integration_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference513_frozen_force_time_control",
+      "passed": false,
+      "detail": {
+        "linear": 7.846983923713168e-10,
+        "evaluated": 7.91397048046337e-10
+      }
+    }
+  ],
+  "cases": [],
+  "inputs": {
+    "scripts\\run_annular_frozen_initial_layer_20260917.py": "4e329d34c3e80cb7dbd4bd491fe0f9f0937d30e192d5f6a67a886f733dd49238"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-frozen-initial-layer-attempt01\\executed-run_annular_frozen_initial_layer_20260917.py": "4e329d34c3e80cb7dbd4bd491fe0f9f0937d30e192d5f6a67a886f733dd49238",
+    "source-intake\\navier-stokes\\20260914\\annular-frozen-initial-layer-attempt01\\prediction-protocol.json": "6e39e26d5d9e79d5c4b4ad509978eae59d0f9c1c1ba73790e6c1bac1f61acf18",
+    "source-intake\\navier-stokes\\20260914\\annular-frozen-initial-layer-attempt01\\reference513-standard-frozen-layer.npz": "d5a220e199b0fab02814c3d5c334f7efc3edf09bb310c7642067b1a39bccccec",
+    "source-intake\\navier-stokes\\20260914\\annular-frozen-initial-layer-attempt01\\reference513-tight-frozen-layer.npz": "7fcf01bd5f2b45b82cbe9e8ebd0ec2ba9ef8030a6e7ed264ba81e7a037e15f80"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "original_action_unchanged": true,
+  "finite_future_trajectories_read": false,
+  "no_nonlinear_forward_trajectory_rerun": true,
+  "frozen_linear_response_not_original_nonlinear_trajectory": true,
+  "uniform_nonlinear_remainder_proven": false,
+  "all_source_Gram_terms_retained": true,
+  "source_field_inertia_retained": true,
+  "old_peak_force_gates_unchanged": true,
+  "force_fit": false,
+  "force_correction": false,
+  "protocol": {
+    "frozen_at": "2026-09-17T18:50:40.715687+00:00",
+    "counts": [
+      513,
+      1025
+    ],
+    "branches": [
+      "reference",
+      "MTS"
+    ],
+    "source_splits": 8,
+    "physical_horizon": 0.02,
+    "scaled_plot_horizon": 6.4,
+    "comparison_times": [
+      0.0,
+      0.005,
+      0.01,
+      0.015,
+      0.02
+    ],
+    "fit_parameters": [],
+    "both_branches_same_protocol": true,
+    "diagnostic_explanation_fraction": 0.25,
+    "diagnostic_fraction_not_physics_gate": true,
+    "nonlinear_trajectories_not_read_or_rerun": true
+  },
+  "error": "RuntimeError(\"reference513_frozen_force_time_control: {'linear': 7.846983923713168e-10, 'evaluated': 7.91397048046337e-10}\")",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\run_annular_frozen_initial_layer_20260917.py\", line 80, in main\n    evidence.check(prefix+'_frozen_force_time_control', max(force_control, evaluated_control) < 2e-10,\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        dict(linear=force_control, evaluated=evaluated_control))\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\annular_reference_continuum_shell_20260914.py\", line 41, in check\n    raise RuntimeError(name+': '+repr(detail))\nRuntimeError: reference513_frozen_force_time_control: {'linear': 7.846983923713168e-10, 'evaluated': 7.91397048046337e-10}\n"
+}

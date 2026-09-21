@@ -1,0 +1,232 @@
+{
+  "state": "complete",
+  "checks": [
+    {
+      "name": "nonlinear_quadratic_secant_with_metric",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_solution_has_zero_velocity_defect",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "continuous_force_defect_transport",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_integrated_transport",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dropping_moving_covector_is_detected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dropping_geometry_feedback_is_detected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "discrete_product_rule_exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "8_independent_analytic_endpoint",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "8_nonzero_quadrature_defect_not_ODE_error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "16_independent_analytic_endpoint",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "16_nonzero_quadrature_defect_not_ODE_error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "32_independent_analytic_endpoint",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "32_nonzero_quadrature_defect_not_ODE_error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_path_quadrature_refines_second_order",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "cases": [
+    {
+      "sample_intervals": 8,
+      "stride": 1,
+      "initial_difference": 0.0,
+      "endpoint_difference": 0.3057211910827431,
+      "terminal_geometry_change": 0.2962962962962963,
+      "signed_terms": {
+        "momentum_fed": -0.07497298836637986,
+        "configuration_metric_fed": 0.08331263544231027,
+        "reconstructed_path_quadrature": -5.6692806896140506e-05,
+        "moving_covector": 0.001141940517412544
+      },
+      "absolute_nodal_bounds": {
+        "momentum_fed": 0.07497298836637986,
+        "configuration_metric_fed": 0.08331263544231027,
+        "reconstructed_path_quadrature": 5.6692806896140506e-05,
+        "moving_covector": 0.001141940517412544
+      },
+      "reconstructed_endpoint": 0.3057211910827431,
+      "reconstruction_error": 0.0,
+      "endpoint_bound": 0.45578055342929513,
+      "omitted_geometry_and_covector_prediction": -0.075029681173276,
+      "path_quadrature_defect_is_not_an_ODE_error_certificate": true,
+      "valid_for_claim": false,
+      "known_exact_endpoint": 0.3057211910827431,
+      "known_ODE_error": 0.0
+    },
+    {
+      "sample_intervals": 16,
+      "stride": 1,
+      "initial_difference": 0.0,
+      "endpoint_difference": 0.3057211910827431,
+      "terminal_geometry_change": 0.2962962962962963,
+      "signed_terms": {
+        "momentum_fed": -0.07507591149081028,
+        "configuration_metric_fed": 0.08338449909106296,
+        "reconstructed_path_quadrature": -1.4170843482442773e-05,
+        "moving_covector": 0.0011304780296765727
+      },
+      "absolute_nodal_bounds": {
+        "momentum_fed": 0.07507591149081028,
+        "configuration_metric_fed": 0.08338449909106296,
+        "reconstructed_path_quadrature": 1.4170843482442773e-05,
+        "moving_covector": 0.0011304780296765727
+      },
+      "reconstructed_endpoint": 0.3057211910827431,
+      "reconstruction_error": 0.0,
+      "endpoint_bound": 0.4559013557513285,
+      "omitted_geometry_and_covector_prediction": -0.07509008233429272,
+      "path_quadrature_defect_is_not_an_ODE_error_certificate": true,
+      "valid_for_claim": false,
+      "known_exact_endpoint": 0.3057211910827431,
+      "known_ODE_error": 0.0
+    },
+    {
+      "sample_intervals": 32,
+      "stride": 1,
+      "initial_difference": 0.0,
+      "endpoint_difference": 0.3057211910827431,
+      "terminal_geometry_change": 0.2962962962962963,
+      "signed_terms": {
+        "momentum_fed": -0.0751016376414195,
+        "configuration_metric_fed": 0.08340246423235037,
+        "reconstructed_path_quadrature": -3.5425634772537958e-06,
+        "moving_covector": 0.0011276107589931897
+      },
+      "absolute_nodal_bounds": {
+        "momentum_fed": 0.0751016376414195,
+        "configuration_metric_fed": 0.08340246423235037,
+        "reconstructed_path_quadrature": 3.5425634772537958e-06,
+        "moving_covector": 0.0011276107589931897
+      },
+      "reconstructed_endpoint": 0.3057211910827431,
+      "reconstruction_error": 0.0,
+      "endpoint_bound": 0.4559315514925366,
+      "omitted_geometry_and_covector_prediction": -0.07510518020489676,
+      "path_quadrature_defect_is_not_an_ODE_error_certificate": true,
+      "valid_for_claim": false,
+      "known_exact_endpoint": 0.3057211910827431,
+      "known_ODE_error": 0.0
+    }
+  ],
+  "inputs": {
+    "scripts\\validate_annular_Gram_transport_identity_20260919.py": "53c88b537a7704081c39d9de353fc953771ef4008fedfa563658588d559f3c44",
+    "scripts\\navier_stokes_source_audit_20260908.py": "817c4cdff5bf22a88deea7771b4bbc960690397512bc07cdb639ee9ab33e4f0b",
+    "scripts\\sbp4_derived_operator_20260909.py": "065ea0be52b651d742082230fe8322a367e11fc5e20150c8f3d506d1f87e77d3",
+    "scripts\\sbp4_compatible_second_operator_20260909.py": "86c6f05f7cf0a07abe9d4caa5ca1038b9f64641085a1a4a4f03aeae3ac918a3c",
+    "scripts\\annular_compatible_current_restoring_20260909.py": "c2e15990fb70e4e0587e63f8f0182831b0a4185003cdcd295db97af9027d4051",
+    "scripts\\annular_gram_joint_action_20260909.py": "c45de66a16a3c44a1ebb5a68874c47a10ceb24815bda5ecc88d5bfad3d049591",
+    "scripts\\annular_covariant_time_transport_20260909.py": "d6a55d99b9f9de06e30ab7a6f090ae12b97b273a23930315740490324ab679a9",
+    "scripts\\annular_mixed_grid_basis_20260909.py": "5a9ceef39b681f376a7e6468a104dc6a4139365248ec64ea95fa8809993f147c",
+    "scripts\\annular_adm_mixed_action_20260909.py": "c5681003a7a495196428407f25e00babc525a35d953618e1911540f4b096fe05",
+    "scripts\\annular_adm_clock_quadratic_20260909.py": "e5ccec725f88125169ccf6f533d5f613343a7259fabad0c0bcf992e600d024be",
+    "scripts\\annular_constraint_routhian_20260909.py": "62a5cf9ac8f8e73ee56bc0c46f29e5ed560692cb19a1125ba848f15c72b1dfd8",
+    "scripts\\annular_metric_link_quadratic_20260909.py": "9555ff3da29cf2522ac67cb8f3a2e3b44420464392e1029cc31410542d96e63b",
+    "scripts\\annular_released_hermite_action_20260909.py": "360d565ed558fd83121d11d59f9096d1ebf7fc49f288ca5d8bf7e4f062cac145",
+    "scripts\\annular_action_boundary_current_20260909.py": "8b702d8f7610d686bebed3ea1af73d94b0d33fe5cc7dbe3e0faee4adbd98ce98",
+    "scripts\\annular_metric_flux_jets_20260909.py": "a1c5e3db71e68ebdd69259d47e50bd1d9cecbba51034a55d5c791ad09bada3a0",
+    "scripts\\annular_nonlinear_history_20260912.py": "7747f735107c7c5bb2eae1b9e213354fc9d8856597328cbe697389ec1a96a2fd",
+    "scripts\\annular_covariant_scalar_action_20260912.py": "ccf97c4622e79a5816e094b3001e0513e7cd16f3a424fafeade04de85bca6a4f",
+    "scripts\\annular_finite_width_bulk_current_20260913.py": "da2ca4c2fab7315b4738007aafff59f38be0d90cf4f121706a32afa16f060601",
+    "scripts\\annular_horizontal_clock_evolution_20260913.py": "985843dab67ab06c85c97b32042d48f6ed5342bf578c3518bbad132cb731cd3d",
+    "scripts\\annular_compatible_h_evolution_20260914.py": "88424b14891e92d7780077619e02e5dc3e166806ed9c22924f0f03682e4e97e1",
+    "scripts\\annular_reference_continuum_shell_20260914.py": "5cbb6013083eafb55181d5a14de236685835c51ed36f26b12f0b4cc02edd9409",
+    "scripts\\annular_source_gravity_collar_20260914.py": "65d8b6c1a421bac8b56420df81630647155043b7b35031365d3f708ab94c7fa2",
+    "scripts\\derive_annular_source_gravity_20260914.py": "97861e2bff4aa48b4408f30a71379b32b5133439bc4d456d9b6426d544bacdbc",
+    "scripts\\annular_covariant_cut_action_20260915.py": "928f830561a0237f5297897bf690e4a53ca0ffc778b2967c9726223e9fd4176f",
+    "scripts\\annular_covariant_cut_action_v2_20260915.py": "0c24f5c974b4a5d4cd78bb395d8fa71070130e271018eb769d1ef19c2fdc828e",
+    "scripts\\annular_dynamical_source_20260914.py": "b4d623cb63ee77b589bf4a1d1162e281680893b5743df42fe323b90f3c38642a",
+    "scripts\\annular_moving_collar_action_20260914.py": "ac6abbd604a12709b26274ebd53747083d71fdb76f6ac3d90e67b011ee306597",
+    "scripts\\annular_moving_collar_sparse_20260914.py": "2d4b8bfcd5ec95b7b9ff2a2b6999f0c0edba7960a984cdd72bfca1daf0e8cb6d",
+    "scripts\\annular_sparse_repaired_cut_20260915.py": "8e47042aa5e58430e845b8434f6ff47ab322360e0602fd4a482f745737319a99",
+    "scripts\\annular_source_fitted_action_20260915.py": "d409c37c30313d0e05cfd7d0015a587188e1984460da6dc92c2d8fef15f0252f",
+    "scripts\\annular_quadratic_source_fitted_action_20260915.py": "cde77a8db83b284034f98f44d785b58a5f1cad0e4c41113e28c0a47ddd6fd92c",
+    "scripts\\annular_locally_refined_source_action_20260916.py": "81e3fef722d868fcd4e53ebc69b119afed0cc2253cb21e6e88e457424c6d128d",
+    "scripts\\annular_cut_initial_data_20260915.py": "47618f0af63d126619f4d2b6ccf97618ebf8b6ca84f3a77e3cdefe6e57e2eda3",
+    "scripts\\verify_annular_cut_metric_and_inversion_20260915.py": "b90147c1e97702ffbcccd47e873c469a5b97abac2a626f3f1c2f700cd3a43d45",
+    "scripts\\annular_repaired_live_geometry_20260915.py": "aaae4f759077bcecae39ad8ba7aa7362aa371c5bdf98ec872b6d5408c4d5154d",
+    "scripts\\annular_live_P2_canonical_v2_20260918.py": "2a6785ab15cd5c5aa181d0e55db1b1170eb221e7d32f9a4f6a1c3bc0a9352192",
+    "scripts\\annular_repaired_live_current_20260915.py": "9cf0436c0f343c1db623fd8de59af0662d8efe1726c2271a4ce9a6610de21d48",
+    "scripts\\annular_live_P2_current_20260918.py": "b62fa9173385cf0af26d15d4ed816ba8c8a228161ceb80f8d3560ff51af67c06",
+    "scripts\\annular_P2_primitive_geometry_20260918.py": "26dfb33bc76f8698f1e14023b505af32ecd719b2afde3cf7057c90d4374b5d71",
+    "scripts\\annular_P2_graded_source_20260919.py": "940967144392ae8d23285c24d1c65cd765d2de0d0391bc473b2795103d1f202d",
+    "scripts\\annular_P2_indexed_live_geometry_20260919.py": "5ff00d7736a0b0eda5609d132b81271d0f464bcc0f14bc57a1aef05dfcb73978",
+    "scripts\\annular_P2_Gram_row_bounds_20260919.py": "504b52070eae00daf5560ff706d4600a2ad9c0e160b992963dea646d35e69f97",
+    "scripts\\annular_live_continuum_characteristics_20260915.py": "f0d67ab9a0e754f13e5c68067c5657e85071414ec4d072f49045457ee0d8365f",
+    "scripts\\annular_live_continuum_fast_20260915.py": "426f61cf0051e537a5107ea30a2c5d4a68f3028d63f91d738c7a0f99dd5ae973",
+    "scripts\\annular_live_barycentric_20260915.py": "d8f73407553a6f34bf2aee863e380953379d3fedbbdf079a2bdd4a06b9b15cfd",
+    "scripts\\run_annular_P2_continuum_bridge_20260918.py": "e8ec6ab2d7ad1472802cfe0d62f891880b981c507aa4edb9b02d556c82ce9dee",
+    "scripts\\run_annular_P2_saved_impulse_20260919.py": "32c48d5a3e53359798153698feaa84ff4a015e2c67c5a0e84ea054ce969f286f",
+    "scripts\\derive_annular_P2_Gram_energy_error_bound_20260919.py": "20bddb0e245ef59003b72b0bf8d3a294db2a9d47a5b0aa418091973b7455fc83",
+    "scripts\\derive_annular_live_Gram_defect_transport_20260919.py": "e5a2affbc8f589cc2fa2a5e423b862a1909927d683274be462d7c112c2691660"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-Gram-transport-identity-attempt01\\executed-validate_annular_Gram_transport_identity_20260919.py": "53c88b537a7704081c39d9de353fc953771ef4008fedfa563658588d559f3c44",
+    "source-intake\\navier-stokes\\20260914\\annular-Gram-transport-identity-attempt01\\completion.txt": "522d29d684cd7c275f0ea8335ec43b507e9eb504012307e1a94ae8e449943eb0"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "github_action": false,
+  "subagents_used": false,
+  "full_live_P2_force_convergence_proven": false,
+  "independent_exact_solution_not_a_parent_evolution": true,
+  "nonzero_path_quadrature_defect_despite_zero_ODE_error": true,
+  "moving_covector_identity_not_full_nonlinear_adjoint": true,
+  "exact_integrals": [
+    "-225373/3000564",
+    "12769/153090",
+    "16903/15002820",
+    "8/27"
+  ],
+  "exact_endpoint": "32762/107163",
+  "completed_at": "2026-09-19T10:26:34.793494+00:00"
+}

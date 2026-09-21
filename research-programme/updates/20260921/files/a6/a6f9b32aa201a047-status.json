@@ -1,0 +1,26 @@
+{
+  "state": "failed",
+  "checks": [
+    {
+      "name": "previous_checkpoint_sealed",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "cases": [],
+  "inputs": {
+    "scripts\\verify_annular_variational_initial_projection_20260916.py": "9432ddfb7073a411ed0aeed09aec18ba786d92227cc9637ffa677403c73b59d8",
+    "source-intake\\navier-stokes\\20260914\\annular-quadratic-crossing-final-integrity.json": "6814478b812ea66b0c799037919f77438336b46d1e1ee3561ac1d5cb84564859",
+    "source-intake\\navier-stokes\\20260914\\annular-source-fitted-fine-crossing-attempt01\\oracle-512.npz": "0fcf2101bc727520bcac3553d39d53a315b8d77753e2d7290c005705ecc0d29c"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-variational-initial-projection-attempt01\\executed-verify_annular_variational_initial_projection_20260916.py": "9432ddfb7073a411ed0aeed09aec18ba786d92227cc9637ffa677403c73b59d8"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "error": "AttributeError(\"'function' object has no attribute 'T'\")",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\verify_annular_variational_initial_projection_20260916.py\", line 30, in main\n    state,projection = variational_initial(system,configuration,velocity)\n                       ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\annular_variational_initial_projection_20260916.py\", line 62, in variational_initial\n    stiffness = assemble_matrix(system,indices,derivative,measure*coefficient)+lifted.T @ diags(gram_coefficient) @ lifted\n                                                                               ^^^^^^^^\nAttributeError: 'function' object has no attribute 'T'\n"
+}

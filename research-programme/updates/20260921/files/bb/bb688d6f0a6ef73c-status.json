@@ -1,0 +1,190 @@
+{
+  "state": "failed",
+  "checks": [
+    {
+      "name": "independent_residual_qualification_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "P2_reproduces_quadratics",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "P2_derivative_bound_by_endpoints",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dyadic_phase_cycle",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "P2_inverse_constant_60",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference33_same_original_initial_data",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference33_mesh_ratio_lower_bound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference33_0.0_fixed_b_square_completion",
+      "passed": true,
+      "detail": 9.04503946583928e-16
+    },
+    {
+      "name": "reference33_0.0_timelike_wave_coercivity",
+      "passed": true,
+      "detail": 0.9964049377474125
+    },
+    {
+      "name": "reference33_0.0_fixed_b_positive_generalized_margin",
+      "passed": true,
+      "detail": 0.9401814446031862
+    },
+    {
+      "name": "reference33_0.0_source_shift_positive_sample",
+      "passed": true,
+      "detail": 0.908601699680119
+    },
+    {
+      "name": "reference33_0.0_independent_canonical_momentum_time_derivative",
+      "passed": true,
+      "detail": 1.0551379792977283e-16
+    },
+    {
+      "name": "reference33_0.173_fixed_b_square_completion",
+      "passed": true,
+      "detail": 4.2526694136930334e-16
+    },
+    {
+      "name": "reference33_0.173_timelike_wave_coercivity",
+      "passed": true,
+      "detail": 0.9965454494099869
+    },
+    {
+      "name": "reference33_0.173_fixed_b_positive_generalized_margin",
+      "passed": true,
+      "detail": 0.9413611114660101
+    },
+    {
+      "name": "reference33_0.173_source_shift_positive_sample",
+      "passed": true,
+      "detail": 0.9101365918884348
+    },
+    {
+      "name": "reference33_0.173_independent_canonical_momentum_time_derivative",
+      "passed": true,
+      "detail": 1.0300203142398065e-16
+    },
+    {
+      "name": "reference33_0.4_fixed_b_square_completion",
+      "passed": true,
+      "detail": 2.6183254219099884e-16
+    },
+    {
+      "name": "reference33_0.4_timelike_wave_coercivity",
+      "passed": true,
+      "detail": 0.9973620722928458
+    },
+    {
+      "name": "reference33_0.4_fixed_b_positive_generalized_margin",
+      "passed": true,
+      "detail": 0.9487069108863334
+    },
+    {
+      "name": "reference33_0.4_source_shift_positive_sample",
+      "passed": true,
+      "detail": 0.9089422036405497
+    },
+    {
+      "name": "reference33_0.4_independent_canonical_momentum_time_derivative",
+      "passed": true,
+      "detail": 1.0821214103288911e-16
+    },
+    {
+      "name": "MTS33_same_original_initial_data",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS33_mesh_ratio_lower_bound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS33_positive_Gram_sampling",
+      "passed": false,
+      "detail": null
+    }
+  ],
+  "cases": [
+    {
+      "branch": "reference",
+      "base_count": 33,
+      "time": 0.0,
+      "fixed_b_generalized_lower": 0.9401814446031862,
+      "source_schur_critical_beta": 0.00021835896893957017,
+      "demonstrated_sample_beta": 1.0002183589689395,
+      "shifted_generalized_lower": 0.908601699680119,
+      "timelike_wave_lower": 0.9964049377474125,
+      "momentum_identity_error": 1.0551379792977283e-16,
+      "sampled_beta_not_a_uniform_neighborhood_certificate": true
+    },
+    {
+      "branch": "reference",
+      "base_count": 33,
+      "time": 0.173,
+      "fixed_b_generalized_lower": 0.9413611114660101,
+      "source_schur_critical_beta": 5.6368045008803325e-05,
+      "demonstrated_sample_beta": 1.0000563680450087,
+      "shifted_generalized_lower": 0.9101365918884348,
+      "timelike_wave_lower": 0.9965454494099869,
+      "momentum_identity_error": 1.0300203142398065e-16,
+      "sampled_beta_not_a_uniform_neighborhood_certificate": true
+    },
+    {
+      "branch": "reference",
+      "base_count": 33,
+      "time": 0.4,
+      "fixed_b_generalized_lower": 0.9487069108863334,
+      "source_schur_critical_beta": 0.00022330102373758869,
+      "demonstrated_sample_beta": 1.0002233010237376,
+      "shifted_generalized_lower": 0.9089422036405497,
+      "timelike_wave_lower": 0.9973620722928458,
+      "momentum_identity_error": 1.0821214103288911e-16,
+      "sampled_beta_not_a_uniform_neighborhood_certificate": true
+    }
+  ],
+  "inputs": {
+    "scripts\\qualify_annular_galerkin_coercivity_20260917.py": "a0a87761944ea0e68bd51cb88b1ce7b78f23f94e4ead7452b0c55b4559182bbf",
+    "source-intake\\navier-stokes\\20260914\\annular-coupled-galerkin-defect-attempt01\\status.json": "85eca6c6f7f217b1b369712c995818a90d11b7cf33bc9f854bd640c05e6998f7"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-galerkin-coercivity-attempt01\\executed-qualify_annular_galerkin_coercivity_20260917.py": "a0a87761944ea0e68bd51cb88b1ce7b78f23f94e4ead7452b0c55b4559182bbf"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "original_action_unchanged": true,
+  "finite_future_trajectories_read": false,
+  "no_forward_trajectory_rerun": true,
+  "numerical_positivity_not_uniform_neighborhood_certificate": true,
+  "auxiliary_beta_not_an_action_term": true,
+  "full_parent_GR_limit_proven": false,
+  "instantaneous_force_convergence_proven": false,
+  "h0_numerically_certified": false,
+  "error": "RuntimeError('MTS33_positive_Gram_sampling: None')",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\qualify_annular_galerkin_coercivity_20260917.py\", line 58, in main\n    evidence.check(branch+str(base_count)+'_positive_Gram_sampling', np.min(system.sampling.data) > 0.)\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\annular_reference_continuum_shell_20260914.py\", line 41, in check\n    raise RuntimeError(name+': '+repr(detail))\nRuntimeError: MTS33_positive_Gram_sampling: None\n"
+}

@@ -1,0 +1,134 @@
+{
+  "state": "complete",
+  "checks": [
+    {
+      "name": "coarse_variable_change_discretization_failure_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "0_unchanged_independent_variable_change_gate",
+      "passed": true,
+      "detail": {
+        "layer": 0,
+        "degree": 192,
+        "field_error": 3.89861920871426e-09,
+        "source_error": 5.310530661051249e-14
+      }
+    },
+    {
+      "name": "2_unchanged_independent_variable_change_gate",
+      "passed": true,
+      "detail": {
+        "layer": 2,
+        "degree": 192,
+        "field_error": 3.885217533111662e-09,
+        "source_error": 5.272800425448754e-14
+      }
+    },
+    {
+      "name": "4_unchanged_independent_variable_change_gate",
+      "passed": true,
+      "detail": {
+        "layer": 4,
+        "degree": 192,
+        "field_error": 3.87188062341004e-09,
+        "source_error": 5.2656446911103494e-14
+      }
+    },
+    {
+      "name": "0_independent_dust_proper_clock_orbit",
+      "passed": true,
+      "detail": 1.8110513089197866e-15
+    },
+    {
+      "name": "1_independent_dust_proper_clock_orbit",
+      "passed": true,
+      "detail": 2.498001805406602e-16
+    },
+    {
+      "name": "2_independent_dust_proper_clock_orbit",
+      "passed": true,
+      "detail": 9.853229343548264e-16
+    },
+    {
+      "name": "3_independent_dust_proper_clock_orbit",
+      "passed": true,
+      "detail": 3.8163916471489756e-16
+    },
+    {
+      "name": "4_independent_dust_proper_clock_orbit",
+      "passed": true,
+      "detail": 1.8506030041720578e-14
+    }
+  ],
+  "cases": [
+    {
+      "layer": 0,
+      "degree": 192,
+      "field_error": 3.89861920871426e-09,
+      "source_error": 5.310530661051249e-14
+    },
+    {
+      "layer": 2,
+      "degree": 192,
+      "field_error": 3.885217533111662e-09,
+      "source_error": 5.272800425448754e-14
+    },
+    {
+      "layer": 4,
+      "degree": 192,
+      "field_error": 3.87188062341004e-09,
+      "source_error": 5.2656446911103494e-14
+    }
+  ],
+  "inputs": {
+    "scripts\\verify_annular_live_oracle_controls_refined_20260915.py": "7947acbb831fb5cf64e23501066a7b66efae0133c92aa08d852fd4f0a67c233a",
+    "source-intake\\navier-stokes\\20260914\\annular-live-oracle-independent-controls-attempt01\\status.json": "7b92561342d92a1ccdcaad5593793620ac9234615636c1076c2790b6bfab33dd",
+    "source-intake\\navier-stokes\\20260914\\annular-live-oracle-independent-controls-attempt01\\static-layer0.npz": "b7718e3f3503b9d25cd5d1fdc8a2342547abc151d0b6fa5ce50f7a273964f022",
+    "source-intake\\navier-stokes\\20260914\\annular-live-continuum-evolution-attempt01\\degree64-dust.npz": "219d00d0daae21bd5602de829c74e7a98f99d3c7c31e8b002bbffe986646a574",
+    "scripts\\navier_stokes_source_audit_20260908.py": "817c4cdff5bf22a88deea7771b4bbc960690397512bc07cdb639ee9ab33e4f0b",
+    "scripts\\sbp4_derived_operator_20260909.py": "065ea0be52b651d742082230fe8322a367e11fc5e20150c8f3d506d1f87e77d3",
+    "scripts\\sbp4_compatible_second_operator_20260909.py": "86c6f05f7cf0a07abe9d4caa5ca1038b9f64641085a1a4a4f03aeae3ac918a3c",
+    "scripts\\annular_compatible_current_restoring_20260909.py": "c2e15990fb70e4e0587e63f8f0182831b0a4185003cdcd295db97af9027d4051",
+    "scripts\\annular_gram_joint_action_20260909.py": "c45de66a16a3c44a1ebb5a68874c47a10ceb24815bda5ecc88d5bfad3d049591",
+    "scripts\\annular_covariant_time_transport_20260909.py": "d6a55d99b9f9de06e30ab7a6f090ae12b97b273a23930315740490324ab679a9",
+    "scripts\\annular_mixed_grid_basis_20260909.py": "5a9ceef39b681f376a7e6468a104dc6a4139365248ec64ea95fa8809993f147c",
+    "scripts\\annular_adm_mixed_action_20260909.py": "c5681003a7a495196428407f25e00babc525a35d953618e1911540f4b096fe05",
+    "scripts\\annular_adm_clock_quadratic_20260909.py": "e5ccec725f88125169ccf6f533d5f613343a7259fabad0c0bcf992e600d024be",
+    "scripts\\annular_constraint_routhian_20260909.py": "62a5cf9ac8f8e73ee56bc0c46f29e5ed560692cb19a1125ba848f15c72b1dfd8",
+    "scripts\\annular_metric_link_quadratic_20260909.py": "9555ff3da29cf2522ac67cb8f3a2e3b44420464392e1029cc31410542d96e63b",
+    "scripts\\annular_released_hermite_action_20260909.py": "360d565ed558fd83121d11d59f9096d1ebf7fc49f288ca5d8bf7e4f062cac145",
+    "scripts\\annular_action_boundary_current_20260909.py": "8b702d8f7610d686bebed3ea1af73d94b0d33fe5cc7dbe3e0faee4adbd98ce98",
+    "scripts\\annular_metric_flux_jets_20260909.py": "a1c5e3db71e68ebdd69259d47e50bd1d9cecbba51034a55d5c791ad09bada3a0",
+    "scripts\\annular_nonlinear_history_20260912.py": "7747f735107c7c5bb2eae1b9e213354fc9d8856597328cbe697389ec1a96a2fd",
+    "scripts\\annular_covariant_scalar_action_20260912.py": "ccf97c4622e79a5816e094b3001e0513e7cd16f3a424fafeade04de85bca6a4f",
+    "scripts\\annular_finite_width_bulk_current_20260913.py": "da2ca4c2fab7315b4738007aafff59f38be0d90cf4f121706a32afa16f060601",
+    "scripts\\annular_horizontal_clock_evolution_20260913.py": "985843dab67ab06c85c97b32042d48f6ed5342bf578c3518bbad132cb731cd3d",
+    "scripts\\annular_compatible_h_evolution_20260914.py": "88424b14891e92d7780077619e02e5dc3e166806ed9c22924f0f03682e4e97e1",
+    "scripts\\annular_reference_continuum_shell_20260914.py": "5cbb6013083eafb55181d5a14de236685835c51ed36f26b12f0b4cc02edd9409",
+    "scripts\\annular_source_gravity_collar_20260914.py": "65d8b6c1a421bac8b56420df81630647155043b7b35031365d3f708ab94c7fa2",
+    "scripts\\derive_annular_source_gravity_20260914.py": "97861e2bff4aa48b4408f30a71379b32b5133439bc4d456d9b6426d544bacdbc",
+    "scripts\\annular_live_continuum_characteristics_20260915.py": "f0d67ab9a0e754f13e5c68067c5657e85071414ec4d072f49045457ee0d8365f",
+    "scripts\\annular_radiation_benchmark_preparation_20260915.py": "31870324cb028582c1667a594a8da3f5f627c9326ccec406110558406c9d6fd4",
+    "scripts\\annular_two_sided_GR_characteristics_20260915.py": "ece5e22ab8b0d3a8a25f562f9e02d45f4de5cb256e2b6ad1d734463a7fd46b92",
+    "scripts\\run_annular_live_continuum_evolution_20260915.py": "8f490eb601b59d558a40ee430f698cd8b482781d8f7e9c8104e93f9e17256695"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-live-oracle-independent-controls-attempt02\\executed-verify_annular_live_oracle_controls_refined_20260915.py": "7947acbb831fb5cf64e23501066a7b66efae0133c92aa08d852fd4f0a67c233a",
+    "source-intake\\navier-stokes\\20260914\\annular-live-oracle-independent-controls-attempt02\\canonical-zero-coupling-degree192.npz": "fd2403dc73d574566746c2e24e2bd886f42c0ddd0bf21115e4d4a42ceeddce05",
+    "source-intake\\navier-stokes\\20260914\\annular-live-oracle-independent-controls-attempt02\\static-layer0.npz": "d1c19553ff38066eb32d21fc5211996db9f99a1888252abc030fa7e4f4eee729",
+    "source-intake\\navier-stokes\\20260914\\annular-live-oracle-independent-controls-attempt02\\static-layer2.npz": "1bbcd1e18276410d6bba0767732359bff374074508919b1f37024b446dac4433",
+    "source-intake\\navier-stokes\\20260914\\annular-live-oracle-independent-controls-attempt02\\static-layer4.npz": "dfb11ace8d3ef83223b742f2ecf73b0442cb46a688a44cdf64f8640f1a5006d8"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "zero_coupling_compared_to_different_characteristic_variables": true,
+  "no_wave_compared_to_independent_proper_time_ODE": true,
+  "original_gates_unchanged": true,
+  "coarse_variable_change_failure_retained": true,
+  "completed_at": "2026-09-15T11:49:55.811765+00:00"
+}

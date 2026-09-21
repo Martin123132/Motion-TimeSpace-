@@ -1,0 +1,177 @@
+{
+  "state": "failed",
+  "checks": [
+    {
+      "name": "symbolic_quadratic_subdivision_and_derivative_embedding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "33reference6.03_old_quadratic_action_exactly_embedded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "33reference6.03_full_canonical_momentum_embedded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "33reference6.03_source_and_field_covectors_embedded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "33reference6.09_old_quadratic_action_exactly_embedded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "33reference6.09_full_canonical_momentum_embedded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "33reference6.09_source_and_field_covectors_embedded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "33reference_all_original_Gram_rows_and_true_jump",
+      "passed": true,
+      "detail": {
+        "absolute_derivative_coefficient_error": 5.331912689143792e-11,
+        "relative_derivative_coefficient_error": 2.665956344571839e-13
+      }
+    },
+    {
+      "name": "33MTS6.03_old_quadratic_action_exactly_embedded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "33MTS6.03_full_canonical_momentum_embedded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "33MTS6.03_source_and_field_covectors_embedded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "33MTS6.09_old_quadratic_action_exactly_embedded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "33MTS6.09_full_canonical_momentum_embedded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "33MTS6.09_source_and_field_covectors_embedded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "33MTS_all_original_Gram_rows_and_true_jump",
+      "passed": true,
+      "detail": {
+        "absolute_derivative_coefficient_error": 5.331912689143792e-11,
+        "relative_derivative_coefficient_error": 2.665956344571839e-13
+      }
+    },
+    {
+      "name": "65reference6.03_old_quadratic_action_exactly_embedded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "65reference6.03_full_canonical_momentum_embedded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "65reference6.03_source_and_field_covectors_embedded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "65reference6.09_old_quadratic_action_exactly_embedded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "65reference6.09_full_canonical_momentum_embedded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "65reference6.09_source_and_field_covectors_embedded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "65reference_all_original_Gram_rows_and_true_jump",
+      "passed": false,
+      "detail": {
+        "absolute_derivative_coefficient_error": 1.9895196601282805e-09,
+        "relative_derivative_coefficient_error": 2.4868995751602977e-12
+      }
+    }
+  ],
+  "cases": [
+    {
+      "added_mass": 5.407624842258832e-06,
+      "material_inertia": 0.030162732074249583,
+      "schur": 0.03016813969909184,
+      "schur_identity_error": 2.095559511507139e-18,
+      "eliminated_drive": 7.626659010640706e-07,
+      "mechanical_force": 7.625291935602579e-07,
+      "eliminated_force": 7.625291935602579e-07,
+      "locally_constant_profile_force_estimate": -1.7932522481097793e-06,
+      "estimate_relative_error": 3.351716187726614,
+      "near_source_complement_fraction": 0.9903956320728766,
+      "dimensionless_boundary_capacity": 0.02974417488158352,
+      "count": 33,
+      "branch": "reference",
+      "source_splits": 4,
+      "scalar_dofs": 78,
+      "old_scalar_dofs": 66
+    },
+    {
+      "added_mass": 5.407624842258832e-06,
+      "material_inertia": 0.030162732074249583,
+      "schur": 0.03016813969909184,
+      "schur_identity_error": 2.095559511507139e-18,
+      "eliminated_drive": 2.8786111739097513e-05,
+      "mechanical_force": 2.8780951842116626e-05,
+      "eliminated_force": 2.8780951842116626e-05,
+      "locally_constant_profile_force_estimate": -1.7932522481097793e-06,
+      "estimate_relative_error": 1.0623069125005664,
+      "near_source_complement_fraction": 0.9903956320728766,
+      "dimensionless_boundary_capacity": 0.02974417488158352,
+      "count": 33,
+      "branch": "MTS",
+      "source_splits": 4,
+      "scalar_dofs": 78,
+      "old_scalar_dofs": 66
+    }
+  ],
+  "inputs": {
+    "scripts\\verify_annular_local_refinement_20260916_v2.py": "86409c41a81fdc58ea0d4b482eed10e395304ef68c8860bf1d0519d9ce7d471e",
+    "source-intake\\navier-stokes\\20260914\\annular-local-refinement-qualification-attempt01\\status.json": "e2c7bb830df6e6cf3458cc462fa045fb56cf0381f233c3c2c9d5355ce1f725ca",
+    "scripts\\verify_annular_local_refinement_20260916.py": "678cb6a2d5e8145d12ea7a27eba338a2ee3a115ab9e2132c25fd7720551163f1"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-local-refinement-qualification-attempt02\\executed-verify_annular_local_refinement_20260916_v2.py": "86409c41a81fdc58ea0d4b482eed10e395304ef68c8860bf1d0519d9ce7d471e"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "error": "RuntimeError(\"65reference_all_original_Gram_rows_and_true_jump: {'absolute_derivative_coefficient_error': 1.9895196601282805e-09, 'relative_derivative_coefficient_error': 2.4868995751602977e-12}\")",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\verify_annular_local_refinement_20260916_v2.py\", line 50, in main\n    evidence.check(str(count)+branch+'_all_original_Gram_rows_and_true_jump',system.original.shape[0] == old.original.shape[0]\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        and jump_relative < 2e-12,dict(absolute_derivative_coefficient_error=jump_absolute,relative_derivative_coefficient_error=jump_relative))\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\annular_reference_continuum_shell_20260914.py\", line 41, in check\n    raise RuntimeError(name+': '+repr(detail))\nRuntimeError: 65reference_all_original_Gram_rows_and_true_jump: {'absolute_derivative_coefficient_error': 1.9895196601282805e-09, 'relative_derivative_coefficient_error': 2.4868995751602977e-12}\n"
+}

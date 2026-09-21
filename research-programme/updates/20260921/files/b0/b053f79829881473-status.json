@@ -1,0 +1,253 @@
+{
+  "state": "failed",
+  "checks": [
+    {
+      "name": "reference513_Jacobian_complex_direction",
+      "passed": true,
+      "detail": 1.765717521390116e-16
+    },
+    {
+      "name": "reference513_Jacobian_transpose_duality",
+      "passed": true,
+      "detail": 2.5163281233838433e-15
+    },
+    {
+      "name": "reference513_scaled_initial_flow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference513standard_frozen_integration_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference513tight_frozen_integration_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference513_frozen_force_time_control",
+      "passed": true,
+      "detail": {
+        "linear": 4.438017336440281e-12,
+        "evaluated": 4.472860734680735e-12
+      }
+    },
+    {
+      "name": "MTS513_Jacobian_complex_direction",
+      "passed": true,
+      "detail": 6.202395054823672e-16
+    },
+    {
+      "name": "MTS513_Jacobian_transpose_duality",
+      "passed": true,
+      "detail": 3.509234974192656e-16
+    },
+    {
+      "name": "MTS513_scaled_initial_flow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS513standard_frozen_integration_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS513tight_frozen_integration_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS513_frozen_force_time_control",
+      "passed": true,
+      "detail": {
+        "linear": 4.35642724693798e-11,
+        "evaluated": 4.37135278062023e-11
+      }
+    },
+    {
+      "name": "reference1025_Jacobian_complex_direction",
+      "passed": true,
+      "detail": 3.1817323071836574e-16
+    },
+    {
+      "name": "reference1025_Jacobian_transpose_duality",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "reference1025_scaled_initial_flow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference1025standard_frozen_integration_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference1025tight_frozen_integration_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference1025_frozen_force_time_control",
+      "passed": true,
+      "detail": {
+        "linear": 2.8263643107786368e-11,
+        "evaluated": 2.807736795205863e-11
+      }
+    },
+    {
+      "name": "MTS1025_Jacobian_complex_direction",
+      "passed": true,
+      "detail": 1.7942471719694674e-15
+    },
+    {
+      "name": "MTS1025_Jacobian_transpose_duality",
+      "passed": true,
+      "detail": 2.633289182755246e-15
+    },
+    {
+      "name": "MTS1025_scaled_initial_flow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS1025standard_frozen_integration_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS1025tight_frozen_integration_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS1025_frozen_force_time_control",
+      "passed": false,
+      "detail": {
+        "linear": 3.1206118886742884e-10,
+        "evaluated": 3.1070655495343564e-10
+      }
+    }
+  ],
+  "cases": [
+    {
+      "branch": "reference",
+      "base_count": 513,
+      "scalar_dofs": 1054,
+      "h": 0.0031249999999998224,
+      "source_phase": 0.6000000000151431,
+      "initial_force": -5.543511216258979e-08,
+      "initial_force_slope": 4.427741357645218e-10,
+      "physical_horizon": 0.02,
+      "tau_horizon": 6.400000000000364,
+      "force_time_control": 4.438017336440281e-12,
+      "evaluated_force_time_control": 4.472860734680735e-12,
+      "state_time_control": 3.537980455775057e-11,
+      "rate_time_control": 2.5362271744832493e-07,
+      "maximum_observable_Taylor_remainder": 4.6381219248299924e-08,
+      "standard_nfev": 8477,
+      "tight_nfev": 11765
+    },
+    {
+      "branch": "MTS",
+      "base_count": 513,
+      "scalar_dofs": 1054,
+      "h": 0.0031249999999998224,
+      "source_phase": 0.6000000000151431,
+      "initial_force": -5.4864100065873825e-08,
+      "initial_force_slope": 2.3731445109734365e-08,
+      "physical_horizon": 0.02,
+      "tau_horizon": 6.400000000000364,
+      "force_time_control": 4.35642724693798e-11,
+      "evaluated_force_time_control": 4.37135278062023e-11,
+      "state_time_control": 3.362696167817381e-11,
+      "rate_time_control": 2.352207871193085e-06,
+      "maximum_observable_Taylor_remainder": 5.26180246999104e-08,
+      "standard_nfev": 13601,
+      "tight_nfev": 19433
+    },
+    {
+      "branch": "reference",
+      "base_count": 1025,
+      "scalar_dofs": 2078,
+      "h": 0.0015625000000003553,
+      "source_phase": 0.19999999987931005,
+      "initial_force": -2.776720191887061e-08,
+      "initial_force_slope": 2.124027107148551e-09,
+      "physical_horizon": 0.02,
+      "tau_horizon": 12.79999999999709,
+      "force_time_control": 2.8263643107786368e-11,
+      "evaluated_force_time_control": 2.807736795205863e-11,
+      "state_time_control": 1.9997493697061455e-10,
+      "rate_time_control": 5.3823384894833605e-06,
+      "maximum_observable_Taylor_remainder": 4.665361870260452e-08,
+      "standard_nfev": 25373,
+      "tight_nfev": 40049
+    }
+  ],
+  "inputs": {
+    "scripts\\run_annular_frozen_initial_layer_v2_20260917.py": "2a9bf5817c982cd0a2910b6dd3f9134e40fc72e3987cfbb46bee5a6da12bcf7c"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-frozen-initial-layer-attempt02\\executed-run_annular_frozen_initial_layer_v2_20260917.py": "2a9bf5817c982cd0a2910b6dd3f9134e40fc72e3987cfbb46bee5a6da12bcf7c",
+    "source-intake\\navier-stokes\\20260914\\annular-frozen-initial-layer-attempt02\\prediction-protocol.json": "22fe5336389f2461b14f962c6685da9a04bf941c74b0e6a543182816380cb420",
+    "source-intake\\navier-stokes\\20260914\\annular-frozen-initial-layer-attempt02\\reference513-standard-frozen-layer.npz": "7fcf01bd5f2b45b82cbe9e8ebd0ec2ba9ef8030a6e7ed264ba81e7a037e15f80",
+    "source-intake\\navier-stokes\\20260914\\annular-frozen-initial-layer-attempt02\\reference513-tight-frozen-layer.npz": "fb3bcc36626cd7be3a1710ba0d9656366a24dc34920805fafff7c5e3b796b455",
+    "source-intake\\navier-stokes\\20260914\\annular-frozen-initial-layer-attempt02\\MTS513-standard-frozen-layer.npz": "e62335051606613322cb5f52c4bf179ae50996ecc519ca6d6b8ff4442b479ee0",
+    "source-intake\\navier-stokes\\20260914\\annular-frozen-initial-layer-attempt02\\MTS513-tight-frozen-layer.npz": "80d76ecab87f7186a7c6b4bfdab323ffaf9f4c81cd828fb2acc4798498d380f6",
+    "source-intake\\navier-stokes\\20260914\\annular-frozen-initial-layer-attempt02\\reference1025-standard-frozen-layer.npz": "a03a97c0bc84683f0b336a774022819e1a92798f762360c43ecaa7af595f3d3a",
+    "source-intake\\navier-stokes\\20260914\\annular-frozen-initial-layer-attempt02\\reference1025-tight-frozen-layer.npz": "3eae19ef39edcb230bf813522fbd77eec6563160172f0d485632c84b06cedc9d",
+    "source-intake\\navier-stokes\\20260914\\annular-frozen-initial-layer-attempt02\\MTS1025-standard-frozen-layer.npz": "30fe02fa27b268c6f3ce69bd965e0046ce2472972d7204354645c8d08361075d",
+    "source-intake\\navier-stokes\\20260914\\annular-frozen-initial-layer-attempt02\\MTS1025-tight-frozen-layer.npz": "be657e4e5a9afaa846a325b62b60cc6b1a3251b0eb258a42a7f967ddcbb72f84"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "original_action_unchanged": true,
+  "finite_future_trajectories_read": false,
+  "no_nonlinear_forward_trajectory_rerun": true,
+  "frozen_linear_response_not_original_nonlinear_trajectory": true,
+  "uniform_nonlinear_remainder_proven": false,
+  "all_source_Gram_terms_retained": true,
+  "source_field_inertia_retained": true,
+  "old_peak_force_gates_unchanged": true,
+  "force_fit": false,
+  "force_correction": false,
+  "protocol": {
+    "frozen_at": "2026-09-17T18:51:13.849020+00:00",
+    "counts": [
+      513,
+      1025
+    ],
+    "branches": [
+      "reference",
+      "MTS"
+    ],
+    "source_splits": 8,
+    "physical_horizon": 0.02,
+    "scaled_plot_horizon": 6.4,
+    "comparison_times": [
+      0.0,
+      0.005,
+      0.01,
+      0.015,
+      0.02
+    ],
+    "fit_parameters": [],
+    "both_branches_same_protocol": true,
+    "diagnostic_explanation_fraction": 0.25,
+    "diagnostic_fraction_not_physics_gate": true,
+    "nonlinear_trajectories_not_read_or_rerun": true
+  },
+  "supersedes_failed_time_control": "annular-frozen-initial-layer-attempt01",
+  "unchanged_force_time_control_threshold": 2e-10,
+  "error": "RuntimeError(\"MTS1025_frozen_force_time_control: {'linear': 3.1206118886742884e-10, 'evaluated': 3.1070655495343564e-10}\")",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\run_annular_frozen_initial_layer_v2_20260917.py\", line 81, in main\n    evidence.check(prefix+'_frozen_force_time_control', max(force_control, evaluated_control) < 2e-10,\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        dict(linear=force_control, evaluated=evaluated_control))\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\annular_reference_continuum_shell_20260914.py\", line 41, in check\n    raise RuntimeError(name+': '+repr(detail))\nRuntimeError: MTS1025_frozen_force_time_control: {'linear': 3.1206118886742884e-10, 'evaluated': 3.1070655495343564e-10}\n"
+}

@@ -1,0 +1,377 @@
+{
+  "state": "failed",
+  "checks": [
+    {
+      "name": "reference(17, 4, 12, False)_finite_canonical_roundtrip",
+      "passed": true,
+      "detail": {
+        "branch": "reference",
+        "base_count": 17,
+        "scalar_free_count": 62,
+        "layer_degree": 4,
+        "radial_degree": 12,
+        "deformed": false,
+        "action_order": 20,
+        "label_order": 12,
+        "canonical_roundtrip": 6.938893903907228e-18,
+        "nodal_momentum_error": 1.3010426069826053e-18,
+        "off_grid_momentum_error": 4.949514658327968e-10,
+        "mass_radial_residual": 6.854708803610138e-12,
+        "lapse_radial_residual": 1.5876605585773973e-12,
+        "exterior_mass": 0.7027939063396988,
+        "source_rate": 0.030000000000000006,
+        "minimum_source_jacobian": 0.019999999999998377,
+        "minimum_spatial_jacobian": 0.9999999999999996,
+        "radial_iterations": 5,
+        "canonical_history": [
+          0.03000004298317374,
+          4.2983295180099024e-08,
+          1.214375822122804e-13
+        ],
+        "seconds": 2.0788013999990653,
+        "tangent": {
+          "metric_tangent_error": 3.189657739322005e-14,
+          "metric_norm": 0.00023190230553283306,
+          "metric_norm_bound": 0.0002865557714717198,
+          "metric_envelope_error": 4.143603862805101e-15,
+          "field_schur": 9.15859961878237e-06,
+          "subtraction_schur": 9.158599618783007e-06,
+          "schur_error": 6.369687763352339e-19,
+          "proper_inertia": 0.04474588712595642,
+          "total_schur": 0.0447550457255752,
+          "timelike_ratio": 0.0391072835187269
+        }
+      }
+    },
+    {
+      "name": "reference(17, 4, 12, False)_independent_radial_equations",
+      "passed": true,
+      "detail": [
+        6.854708803610138e-12,
+        1.5876605585773973e-12
+      ]
+    },
+    {
+      "name": "reference(17, 4, 12, False)_nonzero_live_load_and_ordered_map",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference(17, 4, 12, False)_metric_tangent_natural_norm_bound",
+      "passed": true,
+      "detail": {
+        "norm": 0.00023190230553283306,
+        "bound": 0.0002865557714717198
+      }
+    },
+    {
+      "name": "reference(17, 4, 12, False)_implicit_metric_tangent_vs_full_inverse_difference",
+      "passed": true,
+      "detail": 3.189657739322005e-14
+    },
+    {
+      "name": "reference(17, 4, 12, False)_finite_Legendre_metric_envelope_identity",
+      "passed": true,
+      "detail": {
+        "hamiltonian_derivative": 0.00036443384230794756,
+        "minus_action_derivative": 0.00036443384231209117,
+        "error": 4.143603862805101e-15
+      }
+    },
+    {
+      "name": "reference(17, 4, 12, False)_omitted_field_source_momentum_detected",
+      "passed": true,
+      "detail": {
+        "correct_source_rate": 0.030000000000000006,
+        "wrong_material_only_rate": 0.03236106148036124
+      }
+    },
+    {
+      "name": "reference(17, 4, 12, False)_projection_Schur_identity",
+      "passed": true,
+      "detail": {
+        "field_schur": 9.15859961878237e-06,
+        "subtraction_schur": 9.158599618783007e-06,
+        "schur_error": 6.369687763352339e-19,
+        "proper_inertia": 0.04474588712595642,
+        "total_schur": 0.0447550457255752,
+        "timelike_ratio": 0.0391072835187269
+      }
+    },
+    {
+      "name": "reference(17, 4, 12, False)_frozen_metric_inverse_is_detectably_wrong",
+      "passed": true,
+      "detail": 2.4944766601360784e-06
+    },
+    {
+      "name": "MTS(17, 4, 12, False)_finite_canonical_roundtrip",
+      "passed": true,
+      "detail": {
+        "branch": "MTS",
+        "base_count": 17,
+        "scalar_free_count": 62,
+        "layer_degree": 4,
+        "radial_degree": 12,
+        "deformed": false,
+        "action_order": 20,
+        "label_order": 12,
+        "canonical_roundtrip": 1.3877787807814457e-17,
+        "nodal_momentum_error": 1.5178830414797062e-18,
+        "off_grid_momentum_error": 4.94954951251402e-10,
+        "mass_radial_residual": 1.0228110025600756e-11,
+        "lapse_radial_residual": 2.5659786795362294e-12,
+        "exterior_mass": 0.7028081169353968,
+        "source_rate": 0.03,
+        "minimum_source_jacobian": 0.019999999999998377,
+        "minimum_spatial_jacobian": 0.9999999999999996,
+        "radial_iterations": 5,
+        "canonical_history": [
+          0.030000042983723888,
+          4.2983845330302195e-08,
+          1.214445211061843e-13
+        ],
+        "seconds": 2.1437967000019853,
+        "tangent": {
+          "metric_tangent_error": 7.365202198128529e-15,
+          "metric_norm": 0.0002319031172946656,
+          "metric_norm_bound": 0.00028655674625263595,
+          "metric_envelope_error": 8.35160933465584e-15,
+          "field_schur": 9.158652972516558e-06,
+          "subtraction_schur": 9.158652972516765e-06,
+          "schur_error": 2.0667603913004928e-19,
+          "proper_inertia": 0.044746203902445415,
+          "total_schur": 0.044755362555417934,
+          "timelike_ratio": 0.0391075123076517
+        }
+      }
+    },
+    {
+      "name": "MTS(17, 4, 12, False)_independent_radial_equations",
+      "passed": true,
+      "detail": [
+        1.0228110025600756e-11,
+        2.5659786795362294e-12
+      ]
+    },
+    {
+      "name": "MTS(17, 4, 12, False)_nonzero_live_load_and_ordered_map",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS(17, 4, 12, False)_metric_tangent_natural_norm_bound",
+      "passed": true,
+      "detail": {
+        "norm": 0.0002319031172946656,
+        "bound": 0.00028655674625263595
+      }
+    },
+    {
+      "name": "MTS(17, 4, 12, False)_implicit_metric_tangent_vs_full_inverse_difference",
+      "passed": true,
+      "detail": 7.365202198128529e-15
+    },
+    {
+      "name": "MTS(17, 4, 12, False)_finite_Legendre_metric_envelope_identity",
+      "passed": true,
+      "detail": {
+        "hamiltonian_derivative": 0.0003678563214815656,
+        "minus_action_derivative": 0.0003678563214899172,
+        "error": 8.35160933465584e-15
+      }
+    },
+    {
+      "name": "MTS(17, 4, 12, False)_omitted_field_source_momentum_detected",
+      "passed": true,
+      "detail": {
+        "correct_source_rate": 0.03,
+        "wrong_material_only_rate": 0.032361058537098836
+      }
+    },
+    {
+      "name": "MTS(17, 4, 12, False)_projection_Schur_identity",
+      "passed": true,
+      "detail": {
+        "field_schur": 9.158652972516558e-06,
+        "subtraction_schur": 9.158652972516765e-06,
+        "schur_error": 2.0667603913004928e-19,
+        "proper_inertia": 0.044746203902445415,
+        "total_schur": 0.044755362555417934,
+        "timelike_ratio": 0.0391075123076517
+      }
+    },
+    {
+      "name": "MTS(17, 4, 12, False)_frozen_metric_inverse_is_detectably_wrong",
+      "passed": true,
+      "detail": 2.5045829406405984e-06
+    },
+    {
+      "name": "reference(17, 8, 12, False)_finite_canonical_roundtrip",
+      "passed": true,
+      "detail": {
+        "branch": "reference",
+        "base_count": 17,
+        "scalar_free_count": 62,
+        "layer_degree": 8,
+        "radial_degree": 12,
+        "deformed": false,
+        "action_order": 20,
+        "label_order": 12,
+        "canonical_roundtrip": 1.0408340855860843e-17,
+        "nodal_momentum_error": 1.734723475976807e-18,
+        "off_grid_momentum_error": 7.161948960862467e-11,
+        "mass_radial_residual": 6.450347778686868,
+        "lapse_radial_residual": 1.4599417448642464,
+        "exterior_mass": 0.702793906339699,
+        "source_rate": 0.03,
+        "minimum_source_jacobian": 0.01999999999998083,
+        "minimum_spatial_jacobian": 0.9999999999999983,
+        "radial_iterations": 5,
+        "canonical_history": [
+          0.030000042983173738,
+          4.298329518356847e-08,
+          1.2145839889399213e-13
+        ],
+        "seconds": 2.6232646999997087
+      }
+    },
+    {
+      "name": "reference(17, 8, 12, False)_independent_radial_equations",
+      "passed": false,
+      "detail": [
+        6.450347778686868,
+        1.4599417448642464
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "branch": "reference",
+      "base_count": 17,
+      "scalar_free_count": 62,
+      "layer_degree": 4,
+      "radial_degree": 12,
+      "deformed": false,
+      "action_order": 20,
+      "label_order": 12,
+      "canonical_roundtrip": 6.938893903907228e-18,
+      "nodal_momentum_error": 1.3010426069826053e-18,
+      "off_grid_momentum_error": 4.949514658327968e-10,
+      "mass_radial_residual": 6.854708803610138e-12,
+      "lapse_radial_residual": 1.5876605585773973e-12,
+      "exterior_mass": 0.7027939063396988,
+      "source_rate": 0.030000000000000006,
+      "minimum_source_jacobian": 0.019999999999998377,
+      "minimum_spatial_jacobian": 0.9999999999999996,
+      "radial_iterations": 5,
+      "canonical_history": [
+        0.03000004298317374,
+        4.2983295180099024e-08,
+        1.214375822122804e-13
+      ],
+      "seconds": 2.0788013999990653,
+      "tangent": {
+        "metric_tangent_error": 3.189657739322005e-14,
+        "metric_norm": 0.00023190230553283306,
+        "metric_norm_bound": 0.0002865557714717198,
+        "metric_envelope_error": 4.143603862805101e-15,
+        "field_schur": 9.15859961878237e-06,
+        "subtraction_schur": 9.158599618783007e-06,
+        "schur_error": 6.369687763352339e-19,
+        "proper_inertia": 0.04474588712595642,
+        "total_schur": 0.0447550457255752,
+        "timelike_ratio": 0.0391072835187269
+      }
+    },
+    {
+      "branch": "MTS",
+      "base_count": 17,
+      "scalar_free_count": 62,
+      "layer_degree": 4,
+      "radial_degree": 12,
+      "deformed": false,
+      "action_order": 20,
+      "label_order": 12,
+      "canonical_roundtrip": 1.3877787807814457e-17,
+      "nodal_momentum_error": 1.5178830414797062e-18,
+      "off_grid_momentum_error": 4.94954951251402e-10,
+      "mass_radial_residual": 1.0228110025600756e-11,
+      "lapse_radial_residual": 2.5659786795362294e-12,
+      "exterior_mass": 0.7028081169353968,
+      "source_rate": 0.03,
+      "minimum_source_jacobian": 0.019999999999998377,
+      "minimum_spatial_jacobian": 0.9999999999999996,
+      "radial_iterations": 5,
+      "canonical_history": [
+        0.030000042983723888,
+        4.2983845330302195e-08,
+        1.214445211061843e-13
+      ],
+      "seconds": 2.1437967000019853,
+      "tangent": {
+        "metric_tangent_error": 7.365202198128529e-15,
+        "metric_norm": 0.0002319031172946656,
+        "metric_norm_bound": 0.00028655674625263595,
+        "metric_envelope_error": 8.35160933465584e-15,
+        "field_schur": 9.158652972516558e-06,
+        "subtraction_schur": 9.158652972516765e-06,
+        "schur_error": 2.0667603913004928e-19,
+        "proper_inertia": 0.044746203902445415,
+        "total_schur": 0.044755362555417934,
+        "timelike_ratio": 0.0391075123076517
+      }
+    },
+    {
+      "branch": "reference",
+      "base_count": 17,
+      "scalar_free_count": 62,
+      "layer_degree": 8,
+      "radial_degree": 12,
+      "deformed": false,
+      "action_order": 20,
+      "label_order": 12,
+      "canonical_roundtrip": 1.0408340855860843e-17,
+      "nodal_momentum_error": 1.734723475976807e-18,
+      "off_grid_momentum_error": 7.161948960862467e-11,
+      "mass_radial_residual": 6.450347778686868,
+      "lapse_radial_residual": 1.4599417448642464,
+      "exterior_mass": 0.702793906339699,
+      "source_rate": 0.03,
+      "minimum_source_jacobian": 0.01999999999998083,
+      "minimum_spatial_jacobian": 0.9999999999999983,
+      "radial_iterations": 5,
+      "canonical_history": [
+        0.030000042983173738,
+        4.298329518356847e-08,
+        1.2145839889399213e-13
+      ],
+      "seconds": 2.6232646999997087
+    }
+  ],
+  "inputs": {
+    "scripts\\qualify_annular_live_P2_canonical_20260918.py": "db6894229931afe217341f6bed0990377a4fe5cbb2ca45eff1c56df2cea4e41d"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-live-P2-canonical-attempt01\\executed-qualify_annular_live_P2_canonical_20260918.py": "db6894229931afe217341f6bed0990377a4fe5cbb2ca45eff1c56df2cea4e41d",
+    "source-intake\\navier-stokes\\20260914\\annular-live-P2-canonical-attempt01\\reference-17-4-False.npz": "8b9c3403622195c57970974df594c2793ef89b0cc002dc3578822bcbe4ed84b1",
+    "source-intake\\navier-stokes\\20260914\\annular-live-P2-canonical-attempt01\\MTS-17-4-False.npz": "8b57d27071786fbb658660e4c78b34bd79a282c88a1c80fcbb94c7150cae8522"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "actual_finite_P2_banded_inverse": true,
+  "continuum_pointwise_momentum_not_substituted": true,
+  "all_Gram_rows_retained": true,
+  "material_method": "Chebyshev collocation; not an exact finite-label Galerkin action.",
+  "no_forward_evolution": true,
+  "original_stored_actions_and_data_unchanged": true,
+  "full_live_P2_force_convergence_proven": false,
+  "independent_temporal_current_tested": false,
+  "global_coupled_fixed_point_uniqueness_proven": false,
+  "github_action": false,
+  "subagents_used": false,
+  "error": "RuntimeError('reference(17, 8, 12, False)_independent_radial_equations: (6.450347778686868, 1.4599417448642464)')",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\qualify_annular_live_P2_canonical_20260918.py\", line 110, in main\n    evidence.check(prefix+'_independent_radial_equations', max(radial) < 2e-7, radial)\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\annular_reference_continuum_shell_20260914.py\", line 41, in check\n    raise RuntimeError(name+': '+repr(detail))\nRuntimeError: reference(17, 8, 12, False)_independent_radial_equations: (6.450347778686868, 1.4599417448642464)\n"
+}
