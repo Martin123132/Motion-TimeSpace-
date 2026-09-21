@@ -1,0 +1,104 @@
+{
+  "state": "complete",
+  "inputs": {
+    "scripts\\verify_annular_gr_reference_global_chart_20260911.py": "bcac17e6044338664f7aed9565c12301be46189fe748f5a5a29fb2bbd2989852",
+    "source-intake\\navier-stokes\\20260910\\annular-parent-root-residence-attempt02\\canonical_N16_GR_sample0.npz": "68c1bb56a4b9887b22f33b04b7e24d536cf33429be27f5c199693bd4433db902",
+    "source-intake\\navier-stokes\\20260911\\annular-canonical-gr-boundary-reference-attempt01\\constructed_GR_first_jet.npz": "408961dfa503226007c480b93804a6db0e72e76f00f52f333d9b003de2b57e74"
+  },
+  "outputs": {},
+  "checks": [
+    {
+      "name": "positive_source_chart_and_mass_barrier",
+      "passed": true
+    },
+    {
+      "name": "positive_large_clock_root_exists",
+      "passed": true
+    },
+    {
+      "name": "entire_annulus_F_above_declared_chart",
+      "passed": true
+    },
+    {
+      "name": "entire_annulus_N_above_declared_chart",
+      "passed": true
+    },
+    {
+      "name": "exact_inverse_inner_flux",
+      "passed": true
+    }
+  ],
+  "valid_for_physics_claim": false,
+  "new_evolution": false,
+  "interval_spacetime_certificate": false,
+  "scope": "Exact rational coefficient bounds proving the integrating-factor GR reference has a large-clock-root solution with F>.1 everywhere on the original annulus. Exact Hermite polynomial with stored binary nodal values/slopes, exact kappa=1/10 and exactly derived rational inner q. Numerical reference quadrature values are not enclosed; spacetime evolution and the finite canonical system are not certified.",
+  "bounds": {
+    "gradient_absolute_upper": {
+      "numerator": "58669366840887145",
+      "denominator": "2305843009213693952",
+      "approximation": 0.025443781994895543
+    },
+    "velocity_absolute_upper": {
+      "numerator": "1109596255459625746987079163192419133331686462731137",
+      "denominator": "65803499456777853614697598303219250082798917853904896",
+      "approximation": 0.016862268186640272
+    },
+    "seed_lapse_lower": {
+      "numerator": "114290397241687",
+      "denominator": "140737488355328",
+      "approximation": 0.8120821152721689
+    },
+    "A_upper": {
+      "numerator": "5446210154036529494694393583644920655485",
+      "denominator": "5444517870735015415413993718908291383296",
+      "approximation": 1.000310823353269
+    },
+    "B_upper": {
+      "numerator": "2956120444162185319827856872238102490575382612968325253355866720156642620811805314730933777700027499958369",
+      "denominator": "14620688801666385618775264558624927386984725314462282476418470990258257775805848296612623719807415424353566720",
+      "approximation": 0.00020218749501222288
+    },
+    "Fa_lower": {
+      "numerator": "11227625825089455215010962180511721705859",
+      "denominator": "16673835979125984709705355764156642361344",
+      "approximation": 0.6733678944152591
+    },
+    "clock_discriminant_lower": {
+      "numerator": "42076377763662782207172502526539932877562628512779232498063134234251434483104724267960474732197592635643468585657480549211918047433625606605588715011428019547444129243368302510054338291165461184049677506138107616544980509203541185270661",
+      "denominator": "42097333429640422557429757943190815882087089451219968362745570134751734577159018919445393890189360991930091407614767475730587269005634646523940960833587990889038995633812003130964983764620718529186718857503421255970697681737500569108480",
+      "approximation": 0.9995022091835659
+    },
+    "large_scale_squared_lower": {
+      "numerator": "227735283051159560341911454612338070931840557507772510867981573866265051",
+      "denominator": "455494623965281403270887871035497142601001023188321609260671956070432768",
+      "approximation": 0.4999735914962587
+    },
+    "mass_global_upper": {
+      "numerator": "1007043709985476901501540552057205806664572543727180841785460931046545076616874922948585577551903238566123576738572441940654665616396159583988699444855019974411316902430892320709464911100259353854920965923",
+      "denominator": "1006323967257199566818906765287429199621408239166467300909577586135390050099752714673798615378492438351551511503961095214307600326488987131113643881440338659216470993826277389982210748157548544386588999680",
+      "approximation": 1.0007152197022984
+    },
+    "F_global_lower": {
+      "numerator": "1949032943832546826028998070974617467223314158824316854636423228226163195551148676405697855122418299091558988304313275251373910342665240113657629456875974837037066641933797512363279161612539495280684220637",
+      "denominator": "2956076653818023727530538623031823273887886702551497696421884159272708272168023599354283432674321537657682565042885717192028575959061399697646328901730994811448383544364689833072744072712798849135605186560",
+      "approximation": 0.6593309890375155
+    },
+    "N_squared_global_lower": {
+      "numerator": "2974745426727854156938931337022996073508110219441472113187170552177903436180658230668201329156689419",
+      "denominator": "9022000522973759616214766116733059593805227603236559148476879416198000009619630477612934141954752512",
+      "approximation": 0.32972126516207984
+    },
+    "exact_required_inner_velocity": {
+      "numerator": "-1089677525796257223153056481280",
+      "denominator": "111475464169042593390665385725733",
+      "approximation": -0.00977504362882812
+    }
+  },
+  "proof": [
+    "Quadratic Bernstein coefficients bound w on every Hermite segment; cubic Bernstein coefficients bound q_original. The global lift 1-3x^2+2x^3 lies in [0,1].",
+    "p=kappa*R*w^2>=0. A_prime=p*(R/2-A), A(in)=m_in, implies 0<=A<=R/2 and A<=m_in+kappa*Rout^2*W^2*length/2.",
+    "B_prime=b0-p*B, B(in)=0, b0=kappa*R^2*q^2/(2*Nseed^2)>=0, implies 0<=B<=kappa*Rout^2*Q^2*length/(2*Nseed_min^2).",
+    "Positive discriminant lower bound gives a positive large root y; y>=K*Fa_lower/2. Then m=A+B/y<=mass_global_upper and F=1-2m/R>=1-2*mass_global_upper/Rin.",
+    "These inequalities enclose the exact formula-defined reference, not rounding errors of its numerical samples and not any finite-dimensional root."
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "state": "failed",
+  "checks": [
+    {
+      "name": "moving_connection_qualification_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_degenerate_pair_clustered",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "partial_cluster_selection_completed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "degenerate_projector_has_finite_correct_derivative",
+      "passed": true,
+      "detail": 8.881784197001251e-11
+    },
+    {
+      "name": "differentiated_projector_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "within_cluster_rotation_does_not_change_projector",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "33-0.0-False-mass_first_and_second_matrix_derivatives",
+      "passed": true,
+      "detail": {
+        "first": 2.11081093814439e-16,
+        "second": 1.6653345369377348e-16
+      }
+    },
+    {
+      "name": "33-0.0-False-transport_first_and_second_matrix_derivatives",
+      "passed": true,
+      "detail": {
+        "first": 7.866293754812341e-16,
+        "second": 3.423164861234635e-16
+      }
+    },
+    {
+      "name": "33-0.0-False-transport_square_first_and_second_matrix_derivatives",
+      "passed": true,
+      "detail": {
+        "first": 4.662019746340909e-16,
+        "second": 1.7721582715016825e-16
+      }
+    },
+    {
+      "name": "33-0.0-False-stiffness_first_and_second_matrix_derivatives",
+      "passed": true,
+      "detail": {
+        "first": 2.300125466603873e-16,
+        "second": 1.7492627876769185e-16
+      }
+    },
+    {
+      "name": "33-0.0-False_second_mass_normalization",
+      "passed": true,
+      "detail": 4.445466107764135e-14
+    },
+    {
+      "name": "33-0.0-False_second_block_eigen_derivative",
+      "passed": true,
+      "detail": {
+        "symmetry": 3.7231431812445113e-20,
+        "offblock": 3.3094606055506767e-20
+      }
+    },
+    {
+      "name": "33-0.0-False_independent_second_frame_control",
+      "passed": false,
+      "detail": [
+        {
+          "step": 2e-06,
+          "relative_second_frame_error": 0.0142959613503681
+        },
+        {
+          "step": 1e-06,
+          "relative_second_frame_error": 0.1008861411818559
+        },
+        {
+          "step": 5e-07,
+          "relative_second_frame_error": 0.31526596533684487
+        }
+      ]
+    }
+  ],
+  "cases": [],
+  "inputs": {
+    "scripts\\verify_annular_spectral_clusters_20260916.py": "b01886093624c0ae3069b0adbc0f31d0f429f86eac9e6ea373eac072a014ccc7",
+    "source-intake\\navier-stokes\\20260914\\annular-moving-spectral-connection-attempt02\\status.json": "85c6e88fc5361e96a4d00608c5079210c1afc36b3f5c0b806c4869c94f83d6be"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-spectral-clusters-curvature-attempt01\\executed-verify_annular_spectral_clusters_20260916.py": "b01886093624c0ae3069b0adbc0f31d0f429f86eac9e6ea373eac072a014ccc7"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "synthetic_cluster": {
+    "internal_gap": 0.0,
+    "projector_derivative_error": 8.881784197001251e-11,
+    "whole_cluster_retention_required": true,
+    "synthetic_not_physical_evidence": true
+  },
+  "error": "RuntimeError(\"33-0.0-False_independent_second_frame_control: [{'step': 2e-06, 'relative_second_frame_error': 0.0142959613503681}, {'step': 1e-06, 'relative_second_frame_error': 0.1008861411818559}, {'step': 5e-07, 'relative_second_frame_error': 0.31526596533684487}]\")",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\verify_annular_spectral_clusters_20260916.py\", line 81, in main\n    evidence.check(label+'_independent_second_frame_control',min(row['relative_second_frame_error'] for row in fd)<3e-3,fd)\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\annular_reference_continuum_shell_20260914.py\", line 41, in check\n    raise RuntimeError(name+': '+repr(detail))\nRuntimeError: 33-0.0-False_independent_second_frame_control: [{'step': 2e-06, 'relative_second_frame_error': 0.0142959613503681}, {'step': 1e-06, 'relative_second_frame_error': 0.1008861411818559}, {'step': 5e-07, 'relative_second_frame_error': 0.31526596533684487}]\n"
+}

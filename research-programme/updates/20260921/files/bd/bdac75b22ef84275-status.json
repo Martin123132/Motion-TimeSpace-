@@ -1,0 +1,429 @@
+{
+  "state": "complete",
+  "checks": [
+    {
+      "name": "indexed_kernel_qualified_before_evolution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "annular-P2-live-exponential-reference-257-attempt01_complete_and_hash_frozen-canonical-basis.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "annular-P2-live-exponential-reference-257-attempt01_complete_and_hash_trajectory-steps16.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same_initial_state_and_short_horizon",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "standard_all_requested_times_saved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "standard_canonical_radial_and_regular_endpoint",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "standard_current_Euler_endpoint",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tight_all_requested_times_saved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tight_canonical_radial_and_regular_endpoint",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tight_current_Euler_endpoint",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "cases": [
+    {
+      "tag": "standard",
+      "maximum_step": 5e-06,
+      "rtol": 1e-11,
+      "accepted_steps": 8,
+      "RHS_calls_after_initialization": 120,
+      "endpoint": {
+        "reduced_wave_force": -5.178708409455876e-08,
+        "canonical_residual": 8.673617379884035e-19,
+        "radial_residual": [
+          3.665123760043798e-14,
+          4.85722573273506e-17
+        ],
+        "source_positions": [
+          6.0200011999881955,
+          6.020251920866377,
+          6.020991511309174,
+          6.022182885163519,
+          6.023766301969614,
+          6.025662362597031,
+          6.027775990648646,
+          6.030001199988209,
+          6.032226409327771,
+          6.034340037379384,
+          6.036236098006796,
+          6.037819514812892,
+          6.039010888667238,
+          6.039750479110034,
+          6.040001199988217
+        ],
+        "source_rates": [
+          0.029999409730398104,
+          0.029999409771028888,
+          0.029999409879156454,
+          0.029999410019331672,
+          0.0299994101492655,
+          0.02999941023735086,
+          0.0299994102752743,
+          0.02999941027993393,
+          0.029999410284316186,
+          0.029999410321483993,
+          0.029999410408320312,
+          0.029999410536516648,
+          0.02999941067483247,
+          0.029999410781618104,
+          0.02999941082172419
+        ],
+        "proper_clock_rates": [
+          0.8748225242960788,
+          0.8748280687107941,
+          0.8748444212867318,
+          0.8748707558614446,
+          0.8749057462209188,
+          0.8749476359617624,
+          0.8749943269215547,
+          0.8750434816814701,
+          0.8750926372272746,
+          0.8751393268667013,
+          0.8751812055277253,
+          0.8752161708952908,
+          0.8752424715159288,
+          0.8752587942477608,
+          0.875264326754105
+        ],
+        "noether": {
+          "residual": 8.138574435527706e-13,
+          "without_moving_transport": 2.776967140658864e-09,
+          "moving_edge_work": 2.7761532832153113e-09,
+          "moving_atom_work": 0.0,
+          "scalar_euler": 2.450600486425536e-14,
+          "source_euler": 4.54454182619024e-15
+        },
+        "minimum_material_jacobian": 0.019999999999944326,
+        "maximum_timelike_ratio": 0.039115082468621554,
+        "exterior_mass": 0.7027941941750363
+      }
+    },
+    {
+      "tag": "tight",
+      "maximum_step": 2.5e-06,
+      "rtol": 2e-12,
+      "accepted_steps": 16,
+      "RHS_calls_after_initialization": 240,
+      "endpoint": {
+        "reduced_wave_force": -5.1787083927591626e-08,
+        "canonical_residual": 7.928228386300251e-19,
+        "radial_residual": [
+          4.359013150434521e-14,
+          4.85722573273506e-17
+        ],
+        "source_positions": [
+          6.020001199988195,
+          6.020251920866377,
+          6.020991511309174,
+          6.02218288516352,
+          6.023766301969616,
+          6.025662362597029,
+          6.027775990648642,
+          6.030001199988205,
+          6.032226409327768,
+          6.0343400373793825,
+          6.036236098006795,
+          6.037819514812891,
+          6.039010888667237,
+          6.039750479110035,
+          6.040001199988216
+        ],
+        "source_rates": [
+          0.029999409730398118,
+          0.029999409771028877,
+          0.02999940987915645,
+          0.029999410019331676,
+          0.0299994101492655,
+          0.029999410237350848,
+          0.029999410275274307,
+          0.02999941027993393,
+          0.029999410284316175,
+          0.029999410321483993,
+          0.0299994104083203,
+          0.02999941053651666,
+          0.029999410674832458,
+          0.029999410781618108,
+          0.029999410821724196
+        ],
+        "proper_clock_rates": [
+          0.8748225242960788,
+          0.8748280687107941,
+          0.8748444212867318,
+          0.8748707558614446,
+          0.8749057462209188,
+          0.8749476359617624,
+          0.8749943269215545,
+          0.8750434816814701,
+          0.8750926372272745,
+          0.8751393268667013,
+          0.8751812055277253,
+          0.8752161708952908,
+          0.8752424715159288,
+          0.8752587942477608,
+          0.875264326754105
+        ],
+        "noether": {
+          "residual": 8.138411368533188e-13,
+          "without_moving_transport": 2.7769672031703295e-09,
+          "moving_edge_work": 2.776153362033476e-09,
+          "moving_atom_work": 0.0,
+          "scalar_euler": 2.349704632254035e-14,
+          "source_euler": 7.181755190543981e-15
+        },
+        "minimum_material_jacobian": 0.01999999999991743,
+        "maximum_timelike_ratio": 0.039115082468621575,
+        "exterior_mass": 0.7027941941750362
+      }
+    }
+  ],
+  "inputs": {
+    "scripts\\verify_annular_P2_indexed_full_pilot_20260919.py": "db8fc95b72aa5e98a29b1dd63e74754aae9da6d341c16a359031ab095cc8344b",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-live-geometry-attempt01\\status.json": "ae42c9d2548e4fa76e7f8208f31323ca84339412b07c6ac5d31c9b540af275f9",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-live-exponential-reference-257-attempt01\\status.json": "8d23f9875e1642c6569fae00159563dc1d1f3ce04ca8ce6a46e8bf388f7a7fdf",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-live-exponential-reference-257-attempt01\\frozen-canonical-basis.npz": "7103021cbd9bea140598a50d1229bce8167a856c04351c184095c50f0f90c0fb",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-live-exponential-reference-257-attempt01\\trajectory-steps16.npz": "f5bb88bd4a813629e220437c403157b0dda791f956407c21d2b47212c90b97cf",
+    "scripts\\navier_stokes_source_audit_20260908.py": "817c4cdff5bf22a88deea7771b4bbc960690397512bc07cdb639ee9ab33e4f0b",
+    "scripts\\sbp4_derived_operator_20260909.py": "065ea0be52b651d742082230fe8322a367e11fc5e20150c8f3d506d1f87e77d3",
+    "scripts\\sbp4_compatible_second_operator_20260909.py": "86c6f05f7cf0a07abe9d4caa5ca1038b9f64641085a1a4a4f03aeae3ac918a3c",
+    "scripts\\annular_compatible_current_restoring_20260909.py": "c2e15990fb70e4e0587e63f8f0182831b0a4185003cdcd295db97af9027d4051",
+    "scripts\\annular_gram_joint_action_20260909.py": "c45de66a16a3c44a1ebb5a68874c47a10ceb24815bda5ecc88d5bfad3d049591",
+    "scripts\\annular_covariant_time_transport_20260909.py": "d6a55d99b9f9de06e30ab7a6f090ae12b97b273a23930315740490324ab679a9",
+    "scripts\\annular_mixed_grid_basis_20260909.py": "5a9ceef39b681f376a7e6468a104dc6a4139365248ec64ea95fa8809993f147c",
+    "scripts\\annular_adm_mixed_action_20260909.py": "c5681003a7a495196428407f25e00babc525a35d953618e1911540f4b096fe05",
+    "scripts\\annular_adm_clock_quadratic_20260909.py": "e5ccec725f88125169ccf6f533d5f613343a7259fabad0c0bcf992e600d024be",
+    "scripts\\annular_constraint_routhian_20260909.py": "62a5cf9ac8f8e73ee56bc0c46f29e5ed560692cb19a1125ba848f15c72b1dfd8",
+    "scripts\\annular_metric_link_quadratic_20260909.py": "9555ff3da29cf2522ac67cb8f3a2e3b44420464392e1029cc31410542d96e63b",
+    "scripts\\annular_released_hermite_action_20260909.py": "360d565ed558fd83121d11d59f9096d1ebf7fc49f288ca5d8bf7e4f062cac145",
+    "scripts\\annular_action_boundary_current_20260909.py": "8b702d8f7610d686bebed3ea1af73d94b0d33fe5cc7dbe3e0faee4adbd98ce98",
+    "scripts\\annular_metric_flux_jets_20260909.py": "a1c5e3db71e68ebdd69259d47e50bd1d9cecbba51034a55d5c791ad09bada3a0",
+    "scripts\\annular_nonlinear_history_20260912.py": "7747f735107c7c5bb2eae1b9e213354fc9d8856597328cbe697389ec1a96a2fd",
+    "scripts\\annular_covariant_scalar_action_20260912.py": "ccf97c4622e79a5816e094b3001e0513e7cd16f3a424fafeade04de85bca6a4f",
+    "scripts\\annular_finite_width_bulk_current_20260913.py": "da2ca4c2fab7315b4738007aafff59f38be0d90cf4f121706a32afa16f060601",
+    "scripts\\annular_horizontal_clock_evolution_20260913.py": "985843dab67ab06c85c97b32042d48f6ed5342bf578c3518bbad132cb731cd3d",
+    "scripts\\annular_compatible_h_evolution_20260914.py": "88424b14891e92d7780077619e02e5dc3e166806ed9c22924f0f03682e4e97e1",
+    "scripts\\annular_reference_continuum_shell_20260914.py": "5cbb6013083eafb55181d5a14de236685835c51ed36f26b12f0b4cc02edd9409",
+    "scripts\\annular_source_gravity_collar_20260914.py": "65d8b6c1a421bac8b56420df81630647155043b7b35031365d3f708ab94c7fa2",
+    "scripts\\derive_annular_source_gravity_20260914.py": "97861e2bff4aa48b4408f30a71379b32b5133439bc4d456d9b6426d544bacdbc",
+    "scripts\\annular_covariant_cut_action_20260915.py": "928f830561a0237f5297897bf690e4a53ca0ffc778b2967c9726223e9fd4176f",
+    "scripts\\annular_covariant_cut_action_v2_20260915.py": "0c24f5c974b4a5d4cd78bb395d8fa71070130e271018eb769d1ef19c2fdc828e",
+    "scripts\\annular_dynamical_source_20260914.py": "b4d623cb63ee77b589bf4a1d1162e281680893b5743df42fe323b90f3c38642a",
+    "scripts\\annular_moving_collar_action_20260914.py": "ac6abbd604a12709b26274ebd53747083d71fdb76f6ac3d90e67b011ee306597",
+    "scripts\\annular_moving_collar_sparse_20260914.py": "2d4b8bfcd5ec95b7b9ff2a2b6999f0c0edba7960a984cdd72bfca1daf0e8cb6d",
+    "scripts\\annular_sparse_repaired_cut_20260915.py": "8e47042aa5e58430e845b8434f6ff47ab322360e0602fd4a482f745737319a99",
+    "scripts\\annular_source_fitted_action_20260915.py": "d409c37c30313d0e05cfd7d0015a587188e1984460da6dc92c2d8fef15f0252f",
+    "scripts\\annular_quadratic_source_fitted_action_20260915.py": "cde77a8db83b284034f98f44d785b58a5f1cad0e4c41113e28c0a47ddd6fd92c",
+    "scripts\\annular_locally_refined_source_action_20260916.py": "81e3fef722d868fcd4e53ebc69b119afed0cc2253cb21e6e88e457424c6d128d",
+    "scripts\\annular_cut_initial_data_20260915.py": "47618f0af63d126619f4d2b6ccf97618ebf8b6ca84f3a77e3cdefe6e57e2eda3",
+    "scripts\\verify_annular_cut_metric_and_inversion_20260915.py": "b90147c1e97702ffbcccd47e873c469a5b97abac2a626f3f1c2f700cd3a43d45",
+    "scripts\\annular_repaired_live_geometry_20260915.py": "aaae4f759077bcecae39ad8ba7aa7362aa371c5bdf98ec872b6d5408c4d5154d",
+    "scripts\\annular_live_P2_canonical_v2_20260918.py": "2a6785ab15cd5c5aa181d0e55db1b1170eb221e7d32f9a4f6a1c3bc0a9352192",
+    "scripts\\annular_repaired_live_current_20260915.py": "9cf0436c0f343c1db623fd8de59af0662d8efe1726c2271a4ce9a6610de21d48",
+    "scripts\\annular_live_P2_current_20260918.py": "b62fa9173385cf0af26d15d4ed816ba8c8a228161ceb80f8d3560ff51af67c06",
+    "scripts\\annular_P2_primitive_geometry_20260918.py": "26dfb33bc76f8698f1e14023b505af32ecd719b2afde3cf7057c90d4374b5d71",
+    "scripts\\annular_P2_graded_source_20260919.py": "940967144392ae8d23285c24d1c65cd765d2de0d0391bc473b2795103d1f202d",
+    "scripts\\annular_P2_indexed_live_geometry_20260919.py": "5ff00d7736a0b0eda5609d132b81271d0f464bcc0f14bc57a1aef05dfcb73978",
+    "scripts\\annular_live_continuum_characteristics_20260915.py": "f0d67ab9a0e754f13e5c68067c5657e85071414ec4d072f49045457ee0d8365f",
+    "scripts\\annular_live_continuum_fast_20260915.py": "426f61cf0051e537a5107ea30a2c5d4a68f3028d63f91d738c7a0f99dd5ae973",
+    "scripts\\annular_live_barycentric_20260915.py": "d8f73407553a6f34bf2aee863e380953379d3fedbbdf079a2bdd4a06b9b15cfd",
+    "scripts\\run_annular_P2_continuum_bridge_20260918.py": "e8ec6ab2d7ad1472802cfe0d62f891880b981c507aa4edb9b02d556c82ce9dee",
+    "scripts\\annular_P2_live_exponential_20260919.py": "6656d48dce7ba845b0c6caa61b8c15bd181eba247fc969e1cf0e1102456b6108",
+    "scripts\\run_annular_P2_live_exponential_20260919.py": "8233d5757dabd33e9f124b3e6182242a976d6a2b595d9dbb1946e2d7735d783c",
+    "scripts\\verify_annular_P2_live_exponential_direct_20260919.py": "1a273780eabce5f420db29b25aa578b9a4f481b80a536f2586c1e9dfc25a6b2f"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-reference-attempt01\\executed-verify_annular_P2_indexed_full_pilot_20260919.py": "db8fc95b72aa5e98a29b1dd63e74754aae9da6d341c16a359031ab095cc8344b",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-reference-attempt01\\standard-accepted001.npz": "01b3c0bc03388daa9271ff13f9f51e736c16692031b1bf160e521b978041ee44",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-reference-attempt01\\standard-accepted002.npz": "e374ce4e276170502b3b85f67745b004b49a983cea825363b51107b62d0abe17",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-reference-attempt01\\standard-accepted003.npz": "647ddbcecb5febfe502e2e505019646a306ff5946175a46025301e6a89c1b6e1",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-reference-attempt01\\standard-accepted004.npz": "a73c297231a0979bdade209d596eea2c71767a65b4f836c09e977248d4950f4f",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-reference-attempt01\\standard-accepted005.npz": "a4f3f787d022ca4e7d83d953ec9b816a961a42330432ba9aa2eb47e488254001",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-reference-attempt01\\standard-accepted006.npz": "90685fef2204d2344fa0bff2b333502d2065deae3e41595655495306ac64dadf",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-reference-attempt01\\standard-accepted007.npz": "ca27fb1fbe5aa6db3e6def7c648f9c514cfa688461e416f74b33a953d5c65395",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-reference-attempt01\\standard-accepted008.npz": "a8d3ed53789a49a163074bc6aa95c18ec0aa74707c5ff113df4975a684c78058",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-reference-attempt01\\standard-trajectory.npz": "cc04c2972afa1da7c4332fc3c3be0d14bc7ae1d8f4e310f197a3e44c41a8dd78",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-reference-attempt01\\tight-accepted001.npz": "b4340b07179e22defb3ab75c5c910858784834f20ebb103b7acacfc4c36d730c",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-reference-attempt01\\tight-accepted002.npz": "641b98ca3eba39e0b5b4377b3c989e8d5dd78a45f8689ff5e10763e1176a13cb",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-reference-attempt01\\tight-accepted003.npz": "98460a1d63e0acdce9e8245f1b513fdf5452c7c5ead70f7e6fc3d71715c31e04",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-reference-attempt01\\tight-accepted004.npz": "df6126b986cdf9f427b9940d06b838c798aa335307d0a97efdd6780bae3d6e41",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-reference-attempt01\\tight-accepted005.npz": "a026df4b5b7af8f338949a3f54b2e00ec3cdc09b5d61be2e58815ac507aceec4",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-reference-attempt01\\tight-accepted006.npz": "da248ef1e47cc5306e8a978bb0eebb68c6cd21d987e0b2a533a00058169430af",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-reference-attempt01\\tight-accepted007.npz": "9e5014921231c50eec6b000440fb47deff5544811dd755f25728884462c4fc14",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-reference-attempt01\\tight-accepted008.npz": "76cea52dfb8f970bb0f9cb9bfcbcad59e137f5a2a8e9da3d4e70803047edf691",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-reference-attempt01\\tight-accepted009.npz": "34551f56e34ed6eb1ffece4c99021d20c8e049d51aec3efbbfedfa9733ed9743",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-reference-attempt01\\tight-accepted010.npz": "93310e89731a463016cc3c15cb7b550440ded514d3fd6b541195ff9dc77f846c",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-reference-attempt01\\tight-accepted011.npz": "5abc5ec5b68d814105abb93375c25ce8376a7348ff3d8cdffa5230d86e0b3291",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-reference-attempt01\\tight-accepted012.npz": "a1330c4b3f066288b525610390dfba13427de8ea05c8a2b07a2bc104c1d55c29",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-reference-attempt01\\tight-accepted013.npz": "143ec0253c7462de6e68f7213549e49b0efb3199673590913dd64adf2f55ced2",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-reference-attempt01\\tight-accepted014.npz": "050c091b691d224ae8dfd41cf70d9063c905d69ffa2ddcd0862b64445df09bf9",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-reference-attempt01\\tight-accepted015.npz": "aeb0a41a60cca8ccaa6599fd9996162fc9f1827841c444e88b9afcaaaa06d9f0",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-reference-attempt01\\tight-accepted016.npz": "954a4f42f9614cb3137885d3fe1a1eea1c8fad0b9a6083a7300966cdc445ec77",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-reference-attempt01\\tight-trajectory.npz": "73d1ab9ea93ddd94005d984d9c0f5054559857eebbbf534f420e9e0000a2f983",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-reference-attempt01\\completion.txt": "fc9f5dfd8e080bf83f9548e88885043b997e0565e38a456e84f1e63e97495d2b"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "github_action": false,
+  "subagents_used": false,
+  "full_live_P2_force_convergence_proven": false,
+  "branch": "reference",
+  "duration": 4e-05,
+  "original_action_and_preparation_retained": true,
+  "no_modal_split_in_RK": true,
+  "indexed_kernel_not_identical_floating_point_implementation": true,
+  "original_indexed_RHS_agreement_prerequisite": true,
+  "independent_control_covers_whole_new_short_pilot": true,
+  "previous_point004_window_not_retested": true,
+  "maximum_wall_seconds": 2700.0,
+  "active": "tight",
+  "accepted_time": 4e-05,
+  "accepted_steps": 16,
+  "filled_samples": 17,
+  "calls": 362,
+  "seconds": 2141.6015215000007,
+  "saved_time_differences": [
+    {
+      "time": 0.0,
+      "RK_relative_difference": 0.0,
+      "exponential_RK_relative_difference": 0.0,
+      "source_gap": 0.0
+    },
+    {
+      "time": 2.5e-06,
+      "RK_relative_difference": 4.9253340430581045e-15,
+      "exponential_RK_relative_difference": 5.549611245743139e-13,
+      "source_gap": 0.0
+    },
+    {
+      "time": 5e-06,
+      "RK_relative_difference": 6.733160750097192e-15,
+      "exponential_RK_relative_difference": 1.1031322062839417e-12,
+      "source_gap": 8.881784197001252e-16
+    },
+    {
+      "time": 7.500000000000001e-06,
+      "RK_relative_difference": 8.126394557518733e-15,
+      "exponential_RK_relative_difference": 1.6417338555118363e-12,
+      "source_gap": 8.881784197001252e-16
+    },
+    {
+      "time": 1e-05,
+      "RK_relative_difference": 9.41910924897031e-15,
+      "exponential_RK_relative_difference": 2.1671661978898257e-12,
+      "source_gap": 8.881784197001252e-16
+    },
+    {
+      "time": 1.25e-05,
+      "RK_relative_difference": 1.0374797840713763e-14,
+      "exponential_RK_relative_difference": 2.674615027072378e-12,
+      "source_gap": 8.881784197001252e-16
+    },
+    {
+      "time": 1.5000000000000002e-05,
+      "RK_relative_difference": 1.1388181102056769e-14,
+      "exponential_RK_relative_difference": 3.1580258982922045e-12,
+      "source_gap": 8.881784197001252e-16
+    },
+    {
+      "time": 1.7500000000000002e-05,
+      "RK_relative_difference": 1.2476662732433214e-14,
+      "exponential_RK_relative_difference": 3.610384719962447e-12,
+      "source_gap": 8.881784197001252e-16
+    },
+    {
+      "time": 2e-05,
+      "RK_relative_difference": 1.3230602189212603e-14,
+      "exponential_RK_relative_difference": 4.0242252340928295e-12,
+      "source_gap": 8.881784197001252e-16
+    },
+    {
+      "time": 2.25e-05,
+      "RK_relative_difference": 1.4138270882384172e-14,
+      "exponential_RK_relative_difference": 4.392324009556338e-12,
+      "source_gap": 8.881784197001252e-16
+    },
+    {
+      "time": 2.5e-05,
+      "RK_relative_difference": 1.479523783019402e-14,
+      "exponential_RK_relative_difference": 4.70844510723187e-12,
+      "source_gap": 8.881784197001252e-16
+    },
+    {
+      "time": 2.75e-05,
+      "RK_relative_difference": 1.5516981132446935e-14,
+      "exponential_RK_relative_difference": 4.968065470594188e-12,
+      "source_gap": 8.881784197001252e-16
+    },
+    {
+      "time": 3.0000000000000004e-05,
+      "RK_relative_difference": 1.6092182321202914e-14,
+      "exponential_RK_relative_difference": 5.168992930554339e-12,
+      "source_gap": 8.881784197001252e-16
+    },
+    {
+      "time": 3.2500000000000004e-05,
+      "RK_relative_difference": 1.6513726097085473e-14,
+      "exponential_RK_relative_difference": 5.311809271773219e-12,
+      "source_gap": 8.881784197001252e-16
+    },
+    {
+      "time": 3.5000000000000004e-05,
+      "RK_relative_difference": 1.748238098904572e-14,
+      "exponential_RK_relative_difference": 5.40009635473145e-12,
+      "source_gap": 8.881784197001252e-16
+    },
+    {
+      "time": 3.7500000000000003e-05,
+      "RK_relative_difference": 1.8084083802794436e-14,
+      "exponential_RK_relative_difference": 5.440418388355566e-12,
+      "source_gap": 8.881784197001252e-16
+    },
+    {
+      "time": 4e-05,
+      "RK_relative_difference": 1.871164151211108e-14,
+      "exponential_RK_relative_difference": 5.442040960685675e-12,
+      "source_gap": 8.881784197001252e-16
+    }
+  ],
+  "endpoint_force_RK_refinement_difference": 1.6696713456276768e-16,
+  "endpoint_force_exponential_RK_difference": 4.066056627678727e-12,
+  "independent_short_pilot_agreement_pass": true,
+  "endpoint_force_only_not_all_time_force_bound": true,
+  "spatial_force_convergence_claim": false,
+  "total_RHS_calls": 362,
+  "completed_at": "2026-09-19T02:24:34.557341+00:00"
+}

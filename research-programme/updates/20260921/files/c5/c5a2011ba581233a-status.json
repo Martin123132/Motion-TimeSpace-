@@ -1,0 +1,556 @@
+{
+  "state": "complete",
+  "checks": [
+    {
+      "name": "symbolic_q_m",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "symbolic_q_p",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "symbolic_q_mm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "symbolic_q_mp",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "symbolic_q_pp",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "symbolic_lapse_m_on_F_relation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "symbolic_lapse_p",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "symbolic_adjoint_damping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "symbolic_wave_speed_radial_cancellation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "symbolic_momentum_adjoint_is_velocity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "symbolic_rest_mass_adjoint_is_clock",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "symbolic_translation_gravity_reduction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_snapshot_complete_and_hash_verified",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gradient_reduction_error",
+      "passed": true,
+      "detail": 4.336808689942018e-19
+    },
+    {
+      "name": "adjoint_metric_identity",
+      "passed": true,
+      "detail": 7.771561172376096e-16
+    },
+    {
+      "name": "speed_cancellation_error",
+      "passed": true,
+      "detail": 1.3877787807814457e-17
+    },
+    {
+      "name": "moving_combined_first_variation_equals_adjoint",
+      "passed": true,
+      "detail": {
+        "tangent": 0.03148332781554564,
+        "adjoint": 0.0314833278155452,
+        "error": 4.440892098500626e-16
+      }
+    },
+    {
+      "name": "positive_frozen_density_tracks_actual_snapshot",
+      "passed": true,
+      "detail": {
+        "lapse": 1.9920276539409087e-10,
+        "root": 1.1456235959883543e-10
+      }
+    },
+    {
+      "name": "density_tabulation_control",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_RK45_radial_control",
+      "passed": true,
+      "detail": {
+        "mass": 1.887379141862766e-15,
+        "log_lapse": 3.3306690738754696e-16,
+        "speed": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "wave_independent_mass_difference_matches_adjoint",
+      "passed": true,
+      "detail": {
+        "kind": "wave",
+        "step": 0.001,
+        "finite_derivative": 0.0014826652308119748,
+        "adjoint": 0.0014826652355439916,
+        "error": 4.732016861686006e-12
+      }
+    },
+    {
+      "name": "source_density_independent_mass_difference_matches_adjoint",
+      "passed": true,
+      "detail": {
+        "kind": "source_density",
+        "step": 0.001,
+        "finite_derivative": 6.626099668949337e-07,
+        "adjoint": 6.62608240311963e-07,
+        "error": 1.7265829706518922e-12
+      }
+    },
+    {
+      "name": "momentum_independent_mass_difference_matches_adjoint",
+      "passed": true,
+      "detail": {
+        "kind": "momentum",
+        "step": 0.0001,
+        "finite_derivative": 0.029999999881328655,
+        "adjoint": 0.029999999971760893,
+        "error": 9.043223808680168e-11
+      }
+    },
+    {
+      "name": "rest_mass_independent_mass_difference_matches_adjoint",
+      "passed": true,
+      "detail": {
+        "kind": "rest_mass",
+        "step": 1e-05,
+        "finite_derivative": 0.8750434242902707,
+        "adjoint": 0.875043423894327,
+        "error": 3.9594372225337793e-10
+      }
+    },
+    {
+      "name": "translation_independent_mass_difference_matches_adjoint",
+      "passed": true,
+      "detail": {
+        "kind": "translation",
+        "step": 0.0001,
+        "finite_derivative": 0.0006627040146274983,
+        "adjoint": 0.0006627040358397876,
+        "error": 2.1212289303546017e-11
+      }
+    },
+    {
+      "name": "moving_combined_second_radial_variation",
+      "passed": true,
+      "detail": {
+        "tangent": 22.348363180396422,
+        "finite_difference": 22.348362728926336,
+        "error": 4.514700862046084e-07
+      }
+    },
+    {
+      "name": "moving_variation_full_profiles",
+      "passed": true,
+      "detail": {
+        "mass": 4.424422200138833e-12,
+        "log_lapse": 6.868334460202741e-12,
+        "speed": 6.530025868992095e-12
+      }
+    },
+    {
+      "name": "analytic_tube_follows_from_positive_loading_not_samples",
+      "passed": true,
+      "detail": {
+        "radius_min": 5.19,
+        "metric_floor": 0.5,
+        "derived_metric_floor": 0.7271516835201738,
+        "mass_cap": 0.708041381265149,
+        "momentum_cap": 0.005,
+        "actual_momentum_polynomial_bound": 0.0013405733595306473,
+        "density_L1": 1.0,
+        "density_Linfinity": 75.0,
+        "wave_energy_cap": 0.05,
+        "log_eta_constant": 0.038567146993715634,
+        "speed_constant": 0.11563843793783894,
+        "speed_radial_constant": 0.05144223534787455
+      }
+    },
+    {
+      "name": "localized_0.04_uniform_mass_response",
+      "passed": true,
+      "detail": {
+        "kind": "localized_energy",
+        "width": 0.04,
+        "added_energy": 0.002,
+        "peak_added_density": 0.046875,
+        "differences": {
+          "mass": 0.00014999238650181823,
+          "speed": 5.348692115847431e-05,
+          "speed_radial": 9.428758159110706e-06,
+          "lapse_rhs": 0.0008413022007245259
+        },
+        "mass_bound": 0.0002,
+        "speed_bound": 0.00023127687587567788,
+        "speed_radial_bound": 0.0001028844706957491,
+        "cancellation_error": 1.3877787807814457e-17
+      }
+    },
+    {
+      "name": "localized_0.04_uniform_speed_response",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "localized_0.04_uniform_speed_gradient_response",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "localized_0.04_exact_cancellation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "localized_0.01_uniform_mass_response",
+      "passed": true,
+      "detail": {
+        "kind": "localized_energy",
+        "width": 0.01,
+        "added_energy": 0.002,
+        "peak_added_density": 0.1875,
+        "differences": {
+          "mass": 0.00014999344038002516,
+          "speed": 5.3533458935439704e-05,
+          "speed_radial": 9.525607057185581e-06,
+          "lapse_rhs": 0.0033524652975843797
+        },
+        "mass_bound": 0.0002,
+        "speed_bound": 0.00023127687587567788,
+        "speed_radial_bound": 0.0001028844706957491,
+        "cancellation_error": 1.3877787807814457e-17
+      }
+    },
+    {
+      "name": "localized_0.01_uniform_speed_response",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "localized_0.01_uniform_speed_gradient_response",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "localized_0.01_exact_cancellation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "localized_0.0025_uniform_mass_response",
+      "passed": true,
+      "detail": {
+        "kind": "localized_energy",
+        "width": 0.0025,
+        "added_energy": 0.002,
+        "peak_added_density": 0.75,
+        "differences": {
+          "mass": 0.00014999363708911861,
+          "speed": 5.3545120012099545e-05,
+          "speed_radial": 9.550593167019505e-06,
+          "lapse_rhs": 0.013397108748548329
+        },
+        "mass_bound": 0.0002,
+        "speed_bound": 0.00023127687587567788,
+        "speed_radial_bound": 0.0001028844706957491,
+        "cancellation_error": 1.3877787807814457e-17
+      }
+    },
+    {
+      "name": "localized_0.0025_uniform_speed_response",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "localized_0.0025_uniform_speed_gradient_response",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "localized_0.0025_exact_cancellation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "localized_0.000625_uniform_mass_response",
+      "passed": true,
+      "detail": {
+        "kind": "localized_energy",
+        "width": 0.000625,
+        "added_energy": 0.002,
+        "peak_added_density": 3.0,
+        "differences": {
+          "mass": 0.00014999368104862132,
+          "speed": 5.354803695889476e-05,
+          "speed_radial": 9.556922247924704e-06,
+          "lapse_rhs": 0.05357568032546155
+        },
+        "mass_bound": 0.0002,
+        "speed_bound": 0.00023127687587567788,
+        "speed_radial_bound": 0.0001028844706957491,
+        "cancellation_error": 1.3877787807814457e-17
+      }
+    },
+    {
+      "name": "localized_0.000625_uniform_speed_response",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "localized_0.000625_uniform_speed_gradient_response",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "localized_0.000625_exact_cancellation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "narrowest_spike_independent_integrator",
+      "passed": true,
+      "detail": {
+        "mass": 4.75175454539567e-14,
+        "speed": 4.440892098500626e-16,
+        "speed_radial": 4.0245584642661925e-15
+      }
+    },
+    {
+      "name": "nonzero_moving_source_not_stationary_retest",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "cases": [
+    {
+      "kind": "wave",
+      "step": 0.001,
+      "finite_derivative": 0.0014826652308119748,
+      "adjoint": 0.0014826652355439916,
+      "error": 4.732016861686006e-12
+    },
+    {
+      "kind": "source_density",
+      "step": 0.001,
+      "finite_derivative": 6.626099668949337e-07,
+      "adjoint": 6.62608240311963e-07,
+      "error": 1.7265829706518922e-12
+    },
+    {
+      "kind": "momentum",
+      "step": 0.0001,
+      "finite_derivative": 0.029999999881328655,
+      "adjoint": 0.029999999971760893,
+      "error": 9.043223808680168e-11
+    },
+    {
+      "kind": "rest_mass",
+      "step": 1e-05,
+      "finite_derivative": 0.8750434242902707,
+      "adjoint": 0.875043423894327,
+      "error": 3.9594372225337793e-10
+    },
+    {
+      "kind": "translation",
+      "step": 0.0001,
+      "finite_derivative": 0.0006627040146274983,
+      "adjoint": 0.0006627040358397876,
+      "error": 2.1212289303546017e-11
+    },
+    {
+      "kind": "localized_energy",
+      "width": 0.04,
+      "added_energy": 0.002,
+      "peak_added_density": 0.046875,
+      "differences": {
+        "mass": 0.00014999238650181823,
+        "speed": 5.348692115847431e-05,
+        "speed_radial": 9.428758159110706e-06,
+        "lapse_rhs": 0.0008413022007245259
+      },
+      "mass_bound": 0.0002,
+      "speed_bound": 0.00023127687587567788,
+      "speed_radial_bound": 0.0001028844706957491,
+      "cancellation_error": 1.3877787807814457e-17
+    },
+    {
+      "kind": "localized_energy",
+      "width": 0.01,
+      "added_energy": 0.002,
+      "peak_added_density": 0.1875,
+      "differences": {
+        "mass": 0.00014999344038002516,
+        "speed": 5.3533458935439704e-05,
+        "speed_radial": 9.525607057185581e-06,
+        "lapse_rhs": 0.0033524652975843797
+      },
+      "mass_bound": 0.0002,
+      "speed_bound": 0.00023127687587567788,
+      "speed_radial_bound": 0.0001028844706957491,
+      "cancellation_error": 1.3877787807814457e-17
+    },
+    {
+      "kind": "localized_energy",
+      "width": 0.0025,
+      "added_energy": 0.002,
+      "peak_added_density": 0.75,
+      "differences": {
+        "mass": 0.00014999363708911861,
+        "speed": 5.3545120012099545e-05,
+        "speed_radial": 9.550593167019505e-06,
+        "lapse_rhs": 0.013397108748548329
+      },
+      "mass_bound": 0.0002,
+      "speed_bound": 0.00023127687587567788,
+      "speed_radial_bound": 0.0001028844706957491,
+      "cancellation_error": 1.3877787807814457e-17
+    },
+    {
+      "kind": "localized_energy",
+      "width": 0.000625,
+      "added_energy": 0.002,
+      "peak_added_density": 3.0,
+      "differences": {
+        "mass": 0.00014999368104862132,
+        "speed": 5.354803695889476e-05,
+        "speed_radial": 9.556922247924704e-06,
+        "lapse_rhs": 0.05357568032546155
+      },
+      "mass_bound": 0.0002,
+      "speed_bound": 0.00023127687587567788,
+      "speed_radial_bound": 0.0001028844706957491,
+      "cancellation_error": 1.3877787807814457e-17
+    }
+  ],
+  "inputs": {
+    "scripts\\qualify_annular_live_radial_response_v2_20260918.py": "5ad13ca0094bfa1362b33bfcceb166f47098d86b22e0fa8088864f7530dd6ee5",
+    "scripts\\annular_live_radial_response_20260918.py": "d48357a7b611075c5a2f33a627fb5dff93c05f23a975e0f2031a8d00e78430b1",
+    "source-intake\\navier-stokes\\20260914\\annular-live-continuum-snapshot-attempt01\\degree64.npz": "7ced888587e115f807b6c16bebb7a009f49ef628a72e94bf0e9041428d46c227",
+    "source-intake\\navier-stokes\\20260914\\annular-live-continuum-snapshot-attempt01\\status.json": "82c22f578062839b83d02bda754a875235f7587cf4d85d9cbd48e58d11836919",
+    "scripts\\navier_stokes_source_audit_20260908.py": "817c4cdff5bf22a88deea7771b4bbc960690397512bc07cdb639ee9ab33e4f0b",
+    "scripts\\sbp4_derived_operator_20260909.py": "065ea0be52b651d742082230fe8322a367e11fc5e20150c8f3d506d1f87e77d3",
+    "scripts\\sbp4_compatible_second_operator_20260909.py": "86c6f05f7cf0a07abe9d4caa5ca1038b9f64641085a1a4a4f03aeae3ac918a3c",
+    "scripts\\annular_compatible_current_restoring_20260909.py": "c2e15990fb70e4e0587e63f8f0182831b0a4185003cdcd295db97af9027d4051",
+    "scripts\\annular_gram_joint_action_20260909.py": "c45de66a16a3c44a1ebb5a68874c47a10ceb24815bda5ecc88d5bfad3d049591",
+    "scripts\\annular_covariant_time_transport_20260909.py": "d6a55d99b9f9de06e30ab7a6f090ae12b97b273a23930315740490324ab679a9",
+    "scripts\\annular_mixed_grid_basis_20260909.py": "5a9ceef39b681f376a7e6468a104dc6a4139365248ec64ea95fa8809993f147c",
+    "scripts\\annular_adm_mixed_action_20260909.py": "c5681003a7a495196428407f25e00babc525a35d953618e1911540f4b096fe05",
+    "scripts\\annular_adm_clock_quadratic_20260909.py": "e5ccec725f88125169ccf6f533d5f613343a7259fabad0c0bcf992e600d024be",
+    "scripts\\annular_constraint_routhian_20260909.py": "62a5cf9ac8f8e73ee56bc0c46f29e5ed560692cb19a1125ba848f15c72b1dfd8",
+    "scripts\\annular_metric_link_quadratic_20260909.py": "9555ff3da29cf2522ac67cb8f3a2e3b44420464392e1029cc31410542d96e63b",
+    "scripts\\annular_released_hermite_action_20260909.py": "360d565ed558fd83121d11d59f9096d1ebf7fc49f288ca5d8bf7e4f062cac145",
+    "scripts\\annular_action_boundary_current_20260909.py": "8b702d8f7610d686bebed3ea1af73d94b0d33fe5cc7dbe3e0faee4adbd98ce98",
+    "scripts\\annular_metric_flux_jets_20260909.py": "a1c5e3db71e68ebdd69259d47e50bd1d9cecbba51034a55d5c791ad09bada3a0",
+    "scripts\\annular_nonlinear_history_20260912.py": "7747f735107c7c5bb2eae1b9e213354fc9d8856597328cbe697389ec1a96a2fd",
+    "scripts\\annular_covariant_scalar_action_20260912.py": "ccf97c4622e79a5816e094b3001e0513e7cd16f3a424fafeade04de85bca6a4f",
+    "scripts\\annular_finite_width_bulk_current_20260913.py": "da2ca4c2fab7315b4738007aafff59f38be0d90cf4f121706a32afa16f060601",
+    "scripts\\annular_horizontal_clock_evolution_20260913.py": "985843dab67ab06c85c97b32042d48f6ed5342bf578c3518bbad132cb731cd3d",
+    "scripts\\annular_compatible_h_evolution_20260914.py": "88424b14891e92d7780077619e02e5dc3e166806ed9c22924f0f03682e4e97e1",
+    "scripts\\annular_reference_continuum_shell_20260914.py": "5cbb6013083eafb55181d5a14de236685835c51ed36f26b12f0b4cc02edd9409",
+    "scripts\\annular_source_gravity_collar_20260914.py": "65d8b6c1a421bac8b56420df81630647155043b7b35031365d3f708ab94c7fa2",
+    "scripts\\derive_annular_source_gravity_20260914.py": "97861e2bff4aa48b4408f30a71379b32b5133439bc4d456d9b6426d544bacdbc",
+    "scripts\\annular_live_continuum_characteristics_20260915.py": "f0d67ab9a0e754f13e5c68067c5657e85071414ec4d072f49045457ee0d8365f",
+    "scripts\\annular_live_continuum_fast_20260915.py": "426f61cf0051e537a5107ea30a2c5d4a68f3028d63f91d738c7a0f99dd5ae973",
+    "scripts\\annular_live_barycentric_20260915.py": "d8f73407553a6f34bf2aee863e380953379d3fedbbdf079a2bdd4a06b9b15cfd",
+    "scripts\\annular_live_radial_response_v2_20260918.py": "a7f4d76740e0a77a573fe50c0ff6d30a785bb3bfe63ec034bf72097e44c93266"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-live-radial-response-attempt02\\executed-qualify_annular_live_radial_response_v2_20260918.py": "5ad13ca0094bfa1362b33bfcceb166f47098d86b22e0fa8088864f7530dd6ee5",
+    "source-intake\\navier-stokes\\20260914\\annular-live-radial-response-attempt02\\width-0.04.npz": "ad552bf46ee48fd35e20fda6666de7311d8c036483a1c1b87beee428ae679f46",
+    "source-intake\\navier-stokes\\20260914\\annular-live-radial-response-attempt02\\width-0.01.npz": "82fc92e4b36750dee1493a169d7fe91baa52c276b721216081e4adc27ceb98fd",
+    "source-intake\\navier-stokes\\20260914\\annular-live-radial-response-attempt02\\width-0.0025.npz": "b9cb937e8375312ccbcaa945ff287657549ec7b3e4597c910439690464184906",
+    "source-intake\\navier-stokes\\20260914\\annular-live-radial-response-attempt02\\width-0.000625.npz": "df7e93327bc73d5dbead15e4a8ad898b389323b77b00bff38583ea0e3a9291e8"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "no_forward_evolution": true,
+  "frozen_canonical_density_radial_variations_only": true,
+  "interpolation_knots_are_radial_integration_boundaries": true,
+  "supersedes_integration_control_failure": "annular-live-radial-response-attempt01",
+  "continuum_initial_snapshot_not_finite_P2_trajectory": true,
+  "no_flat_proof_transfer": true,
+  "no_new_parent_coefficients": true,
+  "no_GitHub_action": true,
+  "subagents_used": false,
+  "inherited_force_gates_unchanged": true,
+  "full_live_force_convergence_proven": false,
+  "radial_metric_response_derived": true,
+  "independently_reviewed_proof": false,
+  "base_diagnostics": {
+    "wave": 0.0014826652355439916,
+    "source_density": 6.62608240311963e-07,
+    "momentum": 0.029999999971760893,
+    "rest_mass": 0.875043423894327,
+    "translation": 0.0006627040358397876,
+    "gradient_reduction_error": 4.336808689942018e-19,
+    "adjoint_metric_identity": 7.771561172376096e-16,
+    "speed_cancellation_error": 1.3877787807814457e-17,
+    "density_integral": 1.0000000000000062,
+    "wave_energy_integral": 0.0021379670373143853,
+    "minimum_metric": 0.7302513416632894,
+    "minimum_wave_speed": 0.729784169302664,
+    "maximum_source_ratio": 0.03976166047483828
+  },
+  "analytic_constants": {
+    "radius_min": 5.19,
+    "metric_floor": 0.5,
+    "derived_metric_floor": 0.7271516835201738,
+    "mass_cap": 0.708041381265149,
+    "momentum_cap": 0.005,
+    "actual_momentum_polynomial_bound": 0.0013405733595306473,
+    "density_L1": 1.0,
+    "density_Linfinity": 75.0,
+    "wave_energy_cap": 0.05,
+    "log_eta_constant": 0.038567146993715634,
+    "speed_constant": 0.11563843793783894,
+    "speed_radial_constant": 0.05144223534787455
+  },
+  "seconds": 147.28081310000198,
+  "tabulation_control_not_exact_original_density": true,
+  "uniform_bounds_derived_not_inferred_from_samples": true,
+  "physical_source_width_fixed": 0.02,
+  "zero_width_limit_proven": false,
+  "moving_chart_force_convergence_proven": false,
+  "metric_loading_tests_not_new_physical_initial_data": true,
+  "completed_at": "2026-09-18T03:04:02.012368+00:00"
+}

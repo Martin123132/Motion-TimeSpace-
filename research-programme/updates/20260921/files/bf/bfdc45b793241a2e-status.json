@@ -1,0 +1,56 @@
+{
+  "state": "failed",
+  "checks": [
+    {
+      "name": "annular-coefficient-geometry-algebra-attempt01_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "annular-Gram-two-trace-force-law-attempt01_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "annular-P2-joint-refinement-257-cap2e-05-attempt01_complete_and_hash_reference-initial.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "annular-P2-bulk513-preflight-reference-attempt01_complete_and_hash_initial.npz",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "cases": [],
+  "inputs": {
+    "scripts\\derive_annular_live_coefficient_bounds_20260919.py": "fd7956e1179d2293a68e8e1671f88fe635314cdae9484c101aafef49a613c378",
+    "source-intake\\navier-stokes\\20260914\\annular-coefficient-geometry-algebra-attempt01\\status.json": "7b4302fe7b98702ffb0d92e49dfd93ca0673ded7a4ef599bb1d788c462a4309c",
+    "source-intake\\navier-stokes\\20260914\\annular-Gram-two-trace-force-law-attempt01\\status.json": "cdd2038f113fdaa4a643f9cfe9858534b2f907481c0229c80b2e4c11a9de1b97",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-joint-refinement-257-cap2e-05-attempt01\\status.json": "1c30a7df0fed4d29a343cfbe5e01639fde3a56a4a8d65fe108049f3ce72d8c49",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-joint-refinement-257-cap2e-05-attempt01\\reference-initial.npz": "24f1d99326e031e345daa44b468c118a9d83fa7c0580477ec585b5a0d91f265a",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-bulk513-preflight-reference-attempt01\\status.json": "6b96eb7c8f78699b3ca076a1d45bdbb814156402f6777c73ab759d71508da074",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-bulk513-preflight-reference-attempt01\\initial.npz": "31b558926cc5c7308c0e72669a5a0bfb5c65048a759fbcb2697365a1fb667901"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-live-coefficient-bounds-attempt01\\executed-derive_annular_live_coefficient_bounds_20260919.py": "fd7956e1179d2293a68e8e1671f88fe635314cdae9484c101aafef49a613c378"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "github_action": false,
+  "subagents_used": false,
+  "full_live_P2_force_convergence_proven": false,
+  "no_new_evolution": true,
+  "all_Gram_rows_retained": true,
+  "full_geometry_reconstructed": true,
+  "ordinary_gradient_jumps_retained": true,
+  "geometry_response_defect_retained": true,
+  "instantaneous_field_driver_not_total_time_derivative": true,
+  "full_nonlinear_stability_proven": false,
+  "hierarchy_not_continuum_error": true,
+  "error": "ValueError('max() iterable argument is empty')",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\derive_annular_live_coefficient_bounds_20260919.py\", line 48, in main\n    dict(maximum_error=float(max(error)), maximum_tolerance=float(max(split['tolerance']))))\n                             ~~~^^^^^^^\nValueError: max() iterable argument is empty\n"
+}

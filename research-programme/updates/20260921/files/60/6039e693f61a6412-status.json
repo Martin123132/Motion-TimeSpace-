@@ -1,0 +1,189 @@
+{
+  "state": "complete",
+  "checks": [
+    {
+      "name": "isolated_input_pack_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference_input_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference_strict_input_schema",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference-stride1_finite_predictor_outputs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference-stride1_original_initial_state_recovered",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "reference-stride1_residual_identity",
+      "passed": true,
+      "detail": 5.5457469944692153e-17
+    },
+    {
+      "name": "reference-stride1_positive_schur",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS_input_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS_strict_input_schema",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS-stride1_finite_predictor_outputs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS-stride1_original_initial_state_recovered",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "MTS-stride1_residual_identity",
+      "passed": true,
+      "detail": 5.5418274968796544e-17
+    },
+    {
+      "name": "MTS-stride1_positive_schur",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "cases": [
+    {
+      "branch": "reference",
+      "stride": 1,
+      "seconds": 348.7900749000255,
+      "evaluations": 16520,
+      "maximum_step": 3.9062500000000035e-06,
+      "sample_count": 641,
+      "identity_error": 5.5457469944692153e-17,
+      "maximum_measured_nonlinear_residual": 4.157173259575226e-12,
+      "maximum_measured_reconstruction_residual": 1.0605905741319088e-09,
+      "maximum_energy_drift": 6.938893903907228e-18,
+      "nonlinear_remainder_is_measured_not_uniform_bound": true
+    },
+    {
+      "branch": "MTS",
+      "stride": 1,
+      "seconds": 347.07819259993266,
+      "evaluations": 16520,
+      "maximum_step": 3.9062500000000035e-06,
+      "sample_count": 641,
+      "identity_error": 5.5418274968796544e-17,
+      "maximum_measured_nonlinear_residual": 1.838465503470255e-11,
+      "maximum_measured_reconstruction_residual": 9.759400868177004e-09,
+      "maximum_energy_drift": 1.3877787807814457e-17,
+      "nonlinear_remainder_is_measured_not_uniform_bound": true
+    }
+  ],
+  "inputs": {
+    "scripts\\run_annular_causal_correction_20260916_v2.py": "0501159e56e229fae6e1d82c008aec71d7bce862cb7329fb90c7da21d86d4d5e",
+    "source-intake\\navier-stokes\\20260914\\annular-causal-inputs-attempt01\\status.json": "005f571a28b9ef11fcef650838b54ba3060a2b1c2e5ae8683124a9627b7bda12",
+    "source-intake\\navier-stokes\\20260914\\annular-causal-inputs-attempt01\\reference-predictor-inputs.npz": "09bbdf6276c4307ac5596eb39a3fb5fb6e4cd7d153fa0a5426a3931f83ed196f",
+    "source-intake\\navier-stokes\\20260914\\annular-causal-inputs-attempt01\\MTS-predictor-inputs.npz": "b4ffea202e25657e89f3f6f985811532daaa37f7d8f9b4efdfe935d01384a5a4",
+    "scripts\\navier_stokes_source_audit_20260908.py": "817c4cdff5bf22a88deea7771b4bbc960690397512bc07cdb639ee9ab33e4f0b",
+    "scripts\\sbp4_derived_operator_20260909.py": "065ea0be52b651d742082230fe8322a367e11fc5e20150c8f3d506d1f87e77d3",
+    "scripts\\sbp4_compatible_second_operator_20260909.py": "86c6f05f7cf0a07abe9d4caa5ca1038b9f64641085a1a4a4f03aeae3ac918a3c",
+    "scripts\\annular_compatible_current_restoring_20260909.py": "c2e15990fb70e4e0587e63f8f0182831b0a4185003cdcd295db97af9027d4051",
+    "scripts\\annular_gram_joint_action_20260909.py": "c45de66a16a3c44a1ebb5a68874c47a10ceb24815bda5ecc88d5bfad3d049591",
+    "scripts\\annular_covariant_time_transport_20260909.py": "d6a55d99b9f9de06e30ab7a6f090ae12b97b273a23930315740490324ab679a9",
+    "scripts\\annular_mixed_grid_basis_20260909.py": "5a9ceef39b681f376a7e6468a104dc6a4139365248ec64ea95fa8809993f147c",
+    "scripts\\annular_adm_mixed_action_20260909.py": "c5681003a7a495196428407f25e00babc525a35d953618e1911540f4b096fe05",
+    "scripts\\annular_adm_clock_quadratic_20260909.py": "e5ccec725f88125169ccf6f533d5f613343a7259fabad0c0bcf992e600d024be",
+    "scripts\\annular_constraint_routhian_20260909.py": "62a5cf9ac8f8e73ee56bc0c46f29e5ed560692cb19a1125ba848f15c72b1dfd8",
+    "scripts\\annular_metric_link_quadratic_20260909.py": "9555ff3da29cf2522ac67cb8f3a2e3b44420464392e1029cc31410542d96e63b",
+    "scripts\\annular_released_hermite_action_20260909.py": "360d565ed558fd83121d11d59f9096d1ebf7fc49f288ca5d8bf7e4f062cac145",
+    "scripts\\annular_action_boundary_current_20260909.py": "8b702d8f7610d686bebed3ea1af73d94b0d33fe5cc7dbe3e0faee4adbd98ce98",
+    "scripts\\annular_metric_flux_jets_20260909.py": "a1c5e3db71e68ebdd69259d47e50bd1d9cecbba51034a55d5c791ad09bada3a0",
+    "scripts\\annular_nonlinear_history_20260912.py": "7747f735107c7c5bb2eae1b9e213354fc9d8856597328cbe697389ec1a96a2fd",
+    "scripts\\annular_covariant_scalar_action_20260912.py": "ccf97c4622e79a5816e094b3001e0513e7cd16f3a424fafeade04de85bca6a4f",
+    "scripts\\annular_finite_width_bulk_current_20260913.py": "da2ca4c2fab7315b4738007aafff59f38be0d90cf4f121706a32afa16f060601",
+    "scripts\\annular_horizontal_clock_evolution_20260913.py": "985843dab67ab06c85c97b32042d48f6ed5342bf578c3518bbad132cb731cd3d",
+    "scripts\\annular_compatible_h_evolution_20260914.py": "88424b14891e92d7780077619e02e5dc3e166806ed9c22924f0f03682e4e97e1",
+    "scripts\\annular_reference_continuum_shell_20260914.py": "5cbb6013083eafb55181d5a14de236685835c51ed36f26b12f0b4cc02edd9409",
+    "scripts\\annular_source_gravity_collar_20260914.py": "65d8b6c1a421bac8b56420df81630647155043b7b35031365d3f708ab94c7fa2",
+    "scripts\\derive_annular_source_gravity_20260914.py": "97861e2bff4aa48b4408f30a71379b32b5133439bc4d456d9b6426d544bacdbc",
+    "scripts\\annular_boundary_response_20260916.py": "a9cc499a2583f2f4807179fc90b9981b9735e62ea4a0511df1b5ba854014bcd0",
+    "scripts\\annular_moving_spectral_frame_20260916.py": "53ac6e0176ee073779e73c134fff40b0b7476a5e663fc1b70e5adda449e9c3e5",
+    "scripts\\annular_moving_spectral_curvature_20260916.py": "bb25eab102afe2bf1a6f68099dcc11712fb7b9ee7f1c253354a5afbd6108ecc7",
+    "scripts\\annular_anchored_projector_chart_20260916.py": "a88a39cb33d7cb4a773703aa9c546a0d748ef5d45a9a8b4ace004541ea50b23d",
+    "scripts\\annular_full_force_linearization_20260916.py": "3e893853b587e19a670a7c2fc2579ef3ed56b50d298eb439de9e54277e5d6e40",
+    "scripts\\annular_force_adjoint_response_20260916.py": "9e3c8896c1bf846cd2268216a22c662f4d3a5790187308ae0228c9892be751d4",
+    "scripts\\annular_covariant_cut_action_20260915.py": "928f830561a0237f5297897bf690e4a53ca0ffc778b2967c9726223e9fd4176f",
+    "scripts\\annular_covariant_cut_action_v2_20260915.py": "0c24f5c974b4a5d4cd78bb395d8fa71070130e271018eb769d1ef19c2fdc828e",
+    "scripts\\annular_dynamical_source_20260914.py": "b4d623cb63ee77b589bf4a1d1162e281680893b5743df42fe323b90f3c38642a",
+    "scripts\\annular_moving_collar_action_20260914.py": "ac6abbd604a12709b26274ebd53747083d71fdb76f6ac3d90e67b011ee306597",
+    "scripts\\annular_moving_collar_sparse_20260914.py": "2d4b8bfcd5ec95b7b9ff2a2b6999f0c0edba7960a984cdd72bfca1daf0e8cb6d",
+    "scripts\\annular_sparse_repaired_cut_20260915.py": "8e47042aa5e58430e845b8434f6ff47ab322360e0602fd4a482f745737319a99",
+    "scripts\\annular_source_fitted_action_20260915.py": "d409c37c30313d0e05cfd7d0015a587188e1984460da6dc92c2d8fef15f0252f",
+    "scripts\\annular_quadratic_source_fitted_action_20260915.py": "cde77a8db83b284034f98f44d785b58a5f1cad0e4c41113e28c0a47ddd6fd92c",
+    "scripts\\annular_locally_refined_source_action_20260916.py": "81e3fef722d868fcd4e53ebc69b119afed0cc2253cb21e6e88e457424c6d128d"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-causal-tight-step-attempt01\\executed-run_annular_causal_correction_20260916_v2.py": "0501159e56e229fae6e1d82c008aec71d7bce862cb7329fb90c7da21d86d4d5e",
+    "source-intake\\navier-stokes\\20260914\\annular-causal-tight-step-attempt01\\reference-stride1-accepted-40.npz": "ee5b484325b67f3df10cd576d14c79b0b2227377b72a253a847b3209289ccefb",
+    "source-intake\\navier-stokes\\20260914\\annular-causal-tight-step-attempt01\\reference-stride1-accepted-80.npz": "c6653946316a562e8ebd85ca810a4049314c1c1d6bac4de6e6e74719867b1897",
+    "source-intake\\navier-stokes\\20260914\\annular-causal-tight-step-attempt01\\reference-stride1-accepted-120.npz": "20f83d0c76e095175456dd833205f3f710d5f16947d291797af3e1ff305cc38f",
+    "source-intake\\navier-stokes\\20260914\\annular-causal-tight-step-attempt01\\reference-stride1-accepted-160.npz": "a2fee66d6575c77b26b2b64e82bc593abcd98b65358d2a17aff2045a5d07a61c",
+    "source-intake\\navier-stokes\\20260914\\annular-causal-tight-step-attempt01\\reference-stride1-accepted-200.npz": "94e3359c0d40d49f137361c87d8d7edbf338ad5973c7ec1a35f7b6bc44acd002",
+    "source-intake\\navier-stokes\\20260914\\annular-causal-tight-step-attempt01\\reference-stride1-accepted-240.npz": "7f6ff17b2a636f2f1df83ae899b8908bae681f40af9c7c67bafb8b23371d0b6f",
+    "source-intake\\navier-stokes\\20260914\\annular-causal-tight-step-attempt01\\reference-stride1-accepted-280.npz": "7b076bd2b6b66aaa13d0e70886237153dafddf988a5e45b840420f5c6ac1a2b3",
+    "source-intake\\navier-stokes\\20260914\\annular-causal-tight-step-attempt01\\reference-stride1-accepted-320.npz": "92aa749e8033415918d35dd0c60099c51fa3c199bee2ea55dd41db1cc2661852",
+    "source-intake\\navier-stokes\\20260914\\annular-causal-tight-step-attempt01\\reference-stride1-prediction.npz": "12b9df3ad4d8a1ea03091b73e231f719db6555491d7d9a0da66b1ccabd173566",
+    "source-intake\\navier-stokes\\20260914\\annular-causal-tight-step-attempt01\\MTS-stride1-accepted-40.npz": "094ee9bd7fd0d2a5f234eff8ee5a874641d9a5ef54ea8dba9f020c13d380e16f",
+    "source-intake\\navier-stokes\\20260914\\annular-causal-tight-step-attempt01\\MTS-stride1-accepted-80.npz": "56ba2949c34c5b99c9fa8a2b754da0ea612f03b2afe0caa6034c9e6552dbf895",
+    "source-intake\\navier-stokes\\20260914\\annular-causal-tight-step-attempt01\\MTS-stride1-accepted-120.npz": "003a965912dfcdfc31805791bc8f6ef3c2698e0927bcdaa3085f279845b9ff17",
+    "source-intake\\navier-stokes\\20260914\\annular-causal-tight-step-attempt01\\MTS-stride1-accepted-160.npz": "94b2f096b599d473f816650d1c00fda84892fa7c426b280d92baaf541f625563",
+    "source-intake\\navier-stokes\\20260914\\annular-causal-tight-step-attempt01\\MTS-stride1-accepted-200.npz": "a7229b791a72563dbdef8e0bf2fd3f6a70a15848a597ca1a59a6502d71f38785",
+    "source-intake\\navier-stokes\\20260914\\annular-causal-tight-step-attempt01\\MTS-stride1-accepted-240.npz": "549e6ba0d516f1058ba87a829a5bba46ad90a312d08480f4287d94b484792f44",
+    "source-intake\\navier-stokes\\20260914\\annular-causal-tight-step-attempt01\\MTS-stride1-accepted-280.npz": "d5d4b64776015589fbc2480d80abe925057819150ee92ba4782bc260f8ce808f",
+    "source-intake\\navier-stokes\\20260914\\annular-causal-tight-step-attempt01\\MTS-stride1-accepted-320.npz": "469f1651d75ae9a25b9ab07199ecde7f68210425bac7d8a033547529481e02ab",
+    "source-intake\\navier-stokes\\20260914\\annular-causal-tight-step-attempt01\\MTS-stride1-prediction.npz": "d06494302b992363604288c2d9aab95d324e553bd25746dbf0397d596dc29b14",
+    "source-intake\\navier-stokes\\20260914\\annular-causal-tight-step-attempt01\\predictions-sealed.json": "a6860332b353fc22fc500065267a01ef7529293b9c9aeb260124805d0fe9bee4"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "configuration": {
+    "rtol": 2e-10,
+    "atol": 1e-16,
+    "tight": true,
+    "final_time": 0.005
+  },
+  "future_full_arrays_loaded": false,
+  "force_fit": false,
+  "original_action_unchanged": true,
+  "original_GR_failures_unchanged": true,
+  "all_time_error_certificate": false,
+  "actual_step_refinement": true,
+  "reason": "Original tighter tolerances left the accepted integration steps unchanged.",
+  "progress": {
+    "branch": "MTS",
+    "stride": 1,
+    "accepted_time": 0.005,
+    "seconds": 310.893611800042,
+    "evaluations": 16520
+  },
+  "completed_at": "2026-09-16T16:08:29.920050+00:00"
+}

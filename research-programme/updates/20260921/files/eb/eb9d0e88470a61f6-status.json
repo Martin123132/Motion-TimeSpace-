@@ -1,0 +1,251 @@
+{
+  "state": "complete",
+  "checks": [
+    {
+      "name": "source_snapshot_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "analytic_joint_fixed_position_coercivity",
+      "passed": true,
+      "detail": {
+        "positive": [
+          [
+            0.49860711301775296,
+            0.0
+          ],
+          [
+            0.0,
+            11.279072344706547
+          ]
+        ],
+        "binding": [
+          [
+            0.007710279246577731,
+            0.00513559424933957
+          ],
+          [
+            0.00513559424933957,
+            0.003271647420298093
+          ]
+        ],
+        "lower_matrix": [
+          [
+            0.4908968337711752,
+            -0.00513559424933957
+          ],
+          [
+            -0.00513559424933957,
+            11.275800697286249
+          ]
+        ],
+        "lower_eigenvalue": 0.49089438828601867,
+        "eta_min": 0.9972142260355059,
+        "energy_cap": 0.05,
+        "momentum_cap": 0.005
+      }
+    },
+    {
+      "name": "(1.0, 0.0)_second_variation_adjoint_identity",
+      "passed": true,
+      "detail": {
+        "adjoint": 0.002915859337863674,
+        "radial": 0.002915859337863674
+      }
+    },
+    {
+      "name": "(1.0, 0.0)_analytic_lower_bound",
+      "passed": true,
+      "detail": {
+        "hessian": 0.002915859337863674,
+        "lower": 0.0018573484705069242,
+        "norm_squared": [
+          0.06151082908323751,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "(1.0, 0.0)_finite_canonical_loading_second_difference",
+      "passed": true,
+      "detail": {
+        "field_scale": 1.0,
+        "momentum_scale": 0.0,
+        "field_term": 0.0029162455869953773,
+        "source_kinetic_term": 0.0,
+        "gravitational_binding_term": -3.8624913170329773e-07,
+        "hessian": 0.002915859337863674,
+        "finite_difference": 0.0029134565130798738,
+        "error": 2.402824783800158e-06,
+        "lower_bound": 0.0018573484705069242
+      }
+    },
+    {
+      "name": "(0.0, 1.0)_second_variation_adjoint_identity",
+      "passed": true,
+      "detail": {
+        "adjoint": 22.348363294358336,
+        "radial": 22.34836329435866
+      }
+    },
+    {
+      "name": "(0.0, 1.0)_analytic_lower_bound",
+      "passed": true,
+      "detail": {
+        "hessian": 22.348363294358336,
+        "lower": 11.275800697286323,
+        "norm_squared": [
+          0.0,
+          1.0000000000000033
+        ]
+      }
+    },
+    {
+      "name": "(0.0, 1.0)_finite_canonical_loading_second_difference",
+      "passed": true,
+      "detail": {
+        "field_scale": 0.0,
+        "momentum_scale": 1.0,
+        "field_term": 0.0,
+        "source_kinetic_term": 22.348421610492025,
+        "gravitational_binding_term": -5.831613368860824e-05,
+        "hessian": 22.348363294358336,
+        "finite_difference": 22.348362493929127,
+        "error": 8.004292091357001e-07,
+        "lower_bound": 11.275800697286323
+      }
+    },
+    {
+      "name": "(1.0, 1.0)_second_variation_adjoint_identity",
+      "passed": true,
+      "detail": {
+        "adjoint": 22.35126993888818,
+        "radial": 22.351269938888542
+      }
+    },
+    {
+      "name": "(1.0, 1.0)_analytic_lower_bound",
+      "passed": true,
+      "detail": {
+        "hessian": 22.35126993888818,
+        "lower": 11.277026256436606,
+        "norm_squared": [
+          0.06151082908323751,
+          1.0000000000000033
+        ]
+      }
+    },
+    {
+      "name": "(1.0, 1.0)_finite_canonical_loading_second_difference",
+      "passed": true,
+      "detail": {
+        "field_scale": 1.0,
+        "momentum_scale": 1.0,
+        "field_term": 0.0029162455869953773,
+        "source_kinetic_term": 22.348421610492025,
+        "gravitational_binding_term": -6.791719083864933e-05,
+        "hessian": 22.35126993888818,
+        "finite_difference": 22.351268239943302,
+        "error": 1.6989448781146166e-06,
+        "lower_bound": 11.277026256436606
+      }
+    }
+  ],
+  "cases": [
+    {
+      "field_scale": 1.0,
+      "momentum_scale": 0.0,
+      "field_term": 0.0029162455869953773,
+      "source_kinetic_term": 0.0,
+      "gravitational_binding_term": -3.8624913170329773e-07,
+      "hessian": 0.002915859337863674,
+      "finite_difference": 0.0029134565130798738,
+      "error": 2.402824783800158e-06,
+      "lower_bound": 0.0018573484705069242
+    },
+    {
+      "field_scale": 0.0,
+      "momentum_scale": 1.0,
+      "field_term": 0.0,
+      "source_kinetic_term": 22.348421610492025,
+      "gravitational_binding_term": -5.831613368860824e-05,
+      "hessian": 22.348363294358336,
+      "finite_difference": 22.348362493929127,
+      "error": 8.004292091357001e-07,
+      "lower_bound": 11.275800697286323
+    },
+    {
+      "field_scale": 1.0,
+      "momentum_scale": 1.0,
+      "field_term": 0.0029162455869953773,
+      "source_kinetic_term": 22.348421610492025,
+      "gravitational_binding_term": -6.791719083864933e-05,
+      "hessian": 22.35126993888818,
+      "finite_difference": 22.351268239943302,
+      "error": 1.6989448781146166e-06,
+      "lower_bound": 11.277026256436606
+    }
+  ],
+  "inputs": {
+    "scripts\\qualify_annular_live_mass_hessian_20260918.py": "925fe58213f39baa27df6405edfa1043e4b4a5dc470ebadbeedc3ade4e67b49d",
+    "source-intake\\navier-stokes\\20260914\\annular-live-continuum-snapshot-attempt01\\degree64.npz": "7ced888587e115f807b6c16bebb7a009f49ef628a72e94bf0e9041428d46c227",
+    "source-intake\\navier-stokes\\20260914\\annular-live-continuum-snapshot-attempt01\\status.json": "82c22f578062839b83d02bda754a875235f7587cf4d85d9cbd48e58d11836919",
+    "scripts\\navier_stokes_source_audit_20260908.py": "817c4cdff5bf22a88deea7771b4bbc960690397512bc07cdb639ee9ab33e4f0b",
+    "scripts\\sbp4_derived_operator_20260909.py": "065ea0be52b651d742082230fe8322a367e11fc5e20150c8f3d506d1f87e77d3",
+    "scripts\\sbp4_compatible_second_operator_20260909.py": "86c6f05f7cf0a07abe9d4caa5ca1038b9f64641085a1a4a4f03aeae3ac918a3c",
+    "scripts\\annular_compatible_current_restoring_20260909.py": "c2e15990fb70e4e0587e63f8f0182831b0a4185003cdcd295db97af9027d4051",
+    "scripts\\annular_gram_joint_action_20260909.py": "c45de66a16a3c44a1ebb5a68874c47a10ceb24815bda5ecc88d5bfad3d049591",
+    "scripts\\annular_covariant_time_transport_20260909.py": "d6a55d99b9f9de06e30ab7a6f090ae12b97b273a23930315740490324ab679a9",
+    "scripts\\annular_mixed_grid_basis_20260909.py": "5a9ceef39b681f376a7e6468a104dc6a4139365248ec64ea95fa8809993f147c",
+    "scripts\\annular_adm_mixed_action_20260909.py": "c5681003a7a495196428407f25e00babc525a35d953618e1911540f4b096fe05",
+    "scripts\\annular_adm_clock_quadratic_20260909.py": "e5ccec725f88125169ccf6f533d5f613343a7259fabad0c0bcf992e600d024be",
+    "scripts\\annular_constraint_routhian_20260909.py": "62a5cf9ac8f8e73ee56bc0c46f29e5ed560692cb19a1125ba848f15c72b1dfd8",
+    "scripts\\annular_metric_link_quadratic_20260909.py": "9555ff3da29cf2522ac67cb8f3a2e3b44420464392e1029cc31410542d96e63b",
+    "scripts\\annular_released_hermite_action_20260909.py": "360d565ed558fd83121d11d59f9096d1ebf7fc49f288ca5d8bf7e4f062cac145",
+    "scripts\\annular_action_boundary_current_20260909.py": "8b702d8f7610d686bebed3ea1af73d94b0d33fe5cc7dbe3e0faee4adbd98ce98",
+    "scripts\\annular_metric_flux_jets_20260909.py": "a1c5e3db71e68ebdd69259d47e50bd1d9cecbba51034a55d5c791ad09bada3a0",
+    "scripts\\annular_nonlinear_history_20260912.py": "7747f735107c7c5bb2eae1b9e213354fc9d8856597328cbe697389ec1a96a2fd",
+    "scripts\\annular_covariant_scalar_action_20260912.py": "ccf97c4622e79a5816e094b3001e0513e7cd16f3a424fafeade04de85bca6a4f",
+    "scripts\\annular_finite_width_bulk_current_20260913.py": "da2ca4c2fab7315b4738007aafff59f38be0d90cf4f121706a32afa16f060601",
+    "scripts\\annular_horizontal_clock_evolution_20260913.py": "985843dab67ab06c85c97b32042d48f6ed5342bf578c3518bbad132cb731cd3d",
+    "scripts\\annular_compatible_h_evolution_20260914.py": "88424b14891e92d7780077619e02e5dc3e166806ed9c22924f0f03682e4e97e1",
+    "scripts\\annular_reference_continuum_shell_20260914.py": "5cbb6013083eafb55181d5a14de236685835c51ed36f26b12f0b4cc02edd9409",
+    "scripts\\annular_source_gravity_collar_20260914.py": "65d8b6c1a421bac8b56420df81630647155043b7b35031365d3f708ab94c7fa2",
+    "scripts\\derive_annular_source_gravity_20260914.py": "97861e2bff4aa48b4408f30a71379b32b5133439bc4d456d9b6426d544bacdbc",
+    "scripts\\annular_live_continuum_characteristics_20260915.py": "f0d67ab9a0e754f13e5c68067c5657e85071414ec4d072f49045457ee0d8365f",
+    "scripts\\annular_live_continuum_fast_20260915.py": "426f61cf0051e537a5107ea30a2c5d4a68f3028d63f91d738c7a0f99dd5ae973",
+    "scripts\\annular_live_barycentric_20260915.py": "d8f73407553a6f34bf2aee863e380953379d3fedbbdf079a2bdd4a06b9b15cfd",
+    "scripts\\annular_live_radial_response_20260918.py": "d48357a7b611075c5a2f33a627fb5dff93c05f23a975e0f2031a8d00e78430b1",
+    "scripts\\annular_live_radial_response_v2_20260918.py": "a7f4d76740e0a77a573fe50c0ff6d30a785bb3bfe63ec034bf72097e44c93266"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-live-mass-hessian-attempt01\\executed-qualify_annular_live_mass_hessian_20260918.py": "925fe58213f39baa27df6405edfa1043e4b4a5dc470ebadbeedc3ade4e67b49d"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "fixed_source_position_and_density": true,
+  "nonzero_source_momentum_retained": true,
+  "constrained_mass_Hessian_not_full_moving_canonical_chart": true,
+  "no_uniform_third_source_momentum_variation_claim": true,
+  "no_forward_evolution": true,
+  "original_action_unchanged": true,
+  "old_force_gates_unchanged": true,
+  "subagents_used": false,
+  "github_action": false,
+  "analytic_lower_matrix": [
+    [
+      0.4908968337711752,
+      -0.00513559424933957
+    ],
+    [
+      -0.00513559424933957,
+      11.275800697286249
+    ]
+  ],
+  "analytic_lower_eigenvalue": 0.49089438828601867,
+  "completed_at": "2026-09-18T03:05:20.822995+00:00"
+}

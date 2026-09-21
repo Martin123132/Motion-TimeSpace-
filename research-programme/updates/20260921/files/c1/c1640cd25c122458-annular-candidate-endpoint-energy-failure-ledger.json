@@ -1,0 +1,29 @@
+{
+  "stage": "endpoint energy",
+  "valid_for_claim": false,
+  "failures": [
+    {
+      "folder": "annular-candidate-endpoint-energy-attempt01",
+      "session": 20356,
+      "exit_code": 1,
+      "saved_status": "failed",
+      "cause": "The zero-step midpoint reuse rounds long exact binary64 decimal momentum strings at precision 64; exact state-preservation gate failed.",
+      "independent_reproduction": {
+        "reference_initial_coordinates_changed": 0,
+        "reference_initial_momenta_changed": 14926,
+        "maximum_absolute_momentum_rounding": "5E-70"
+      },
+      "repair": "Fresh fixed-q,p endpoint inverse; no state arithmetic and no relaxed identity gate."
+    },
+    {
+      "folder": "annular-candidate-endpoint-energy-attempt02",
+      "session": 84976,
+      "exit_code": 1,
+      "saved_status": "running",
+      "cause": "Numpy Boolean in post-branch drift/refinement diagnostics was not JSON serializable. Failure handler encountered the same serialization error. Last status is a stale checkpoint, not an active or completed worker.",
+      "last_checkpoint": "Six reference endpoint cases with 61 successful checks. No completed whole-run result.",
+      "repair": "Fresh v3 runner converts comparison resolution scales to native Python floats before Boolean comparisons. Same scientific tolerances and endpoint solver."
+    }
+  ],
+  "preservation": "Original executed scripts, status files and saved numerical artifacts retained unchanged."
+}

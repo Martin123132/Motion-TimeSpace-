@@ -1,0 +1,417 @@
+{
+  "state": "complete",
+  "checks": [
+    {
+      "name": "previous_completed_control_failure_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "annular-P2-indexed-full-pilot-control-MTS-attempt01_complete_and_hash_tight-trajectory.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "annular-P2-live-exponential-MTS-257-attempt01_complete_and_hash_frozen-canonical-basis.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "annular-P2-live-exponential-MTS-257-attempt01_complete_and_hash_trajectory-steps16.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "whole_short_horizon_reached",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "endpoint_canonical_radial_and_current",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "endpoint_Euler_and_regular_domain",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "cases": [
+    {
+      "tag": "tight",
+      "maximum_step": 2.5e-06,
+      "rtol": 2e-12,
+      "accepted_steps": 16,
+      "RHS_calls_after_initialization": 240,
+      "endpoint": {
+        "reduced_wave_force": -4.134004695109574e-08,
+        "canonical_residual": 8.673617379884035e-19,
+        "radial_residual": [
+          4.3760134404990936e-14,
+          4.85722573273506e-17
+        ],
+        "source_positions": [
+          6.020001199988195,
+          6.020251920866377,
+          6.020991511309173,
+          6.02218288516352,
+          6.023766301969616,
+          6.025662362597029,
+          6.027775990648642,
+          6.030001199988205,
+          6.032226409327768,
+          6.0343400373793825,
+          6.036236098006795,
+          6.037819514812891,
+          6.039010888667237,
+          6.039750479110035,
+          6.040001199988216
+        ],
+        "source_rates": [
+          0.029999409714712225,
+          0.02999940975547643,
+          0.029999409863991956,
+          0.02999941000472792,
+          0.029999410135284163,
+          0.029999410223929757,
+          0.029999410262237923,
+          0.02999941026703487,
+          0.029999410271278063,
+          0.029999410308052064,
+          0.029999410394316892,
+          0.02999941052188056,
+          0.029999410659630396,
+          0.029999410766025376,
+          0.02999941080599772
+        ],
+        "proper_clock_rates": [
+          0.8748225241432047,
+          0.8748280685579155,
+          0.8748444211338398,
+          0.8748707557085342,
+          0.8749057460679894,
+          0.8749476358088185,
+          0.8749943267686052,
+          0.875043481528527,
+          0.87509263707435,
+          0.8751393267138061,
+          0.8751812053748661,
+          0.8752161707424686,
+          0.8752424713631384,
+          0.875258794094992,
+          0.8752643266013436
+        ],
+        "noether": {
+          "residual": 8.138448168309198e-13,
+          "without_moving_transport": 1.3898082551341413e-10,
+          "moving_edge_work": 1.6738358382145073e-10,
+          "moving_atom_work": -2.921660312486754e-11,
+          "scalar_euler": 2.102658325231488e-14,
+          "source_euler": 8.378063867664487e-15
+        },
+        "minimum_material_jacobian": 0.019999999999932308,
+        "maximum_timelike_ratio": 0.039115082456966,
+        "exterior_mass": 0.7027941947212059
+      }
+    },
+    {
+      "tag": "further_refined",
+      "maximum_step": 1.25e-06,
+      "endpoint": {
+        "reduced_wave_force": -4.13388929008246e-08,
+        "canonical_residual": 8.673617379884035e-19,
+        "radial_residual": [
+          5.302182304323111e-14,
+          4.85722573273506e-17
+        ],
+        "source_positions": [
+          6.020001199988197,
+          6.02025192086638,
+          6.020991511309176,
+          6.022182885163522,
+          6.023766301969617,
+          6.025662362597029,
+          6.027775990648642,
+          6.030001199988205,
+          6.032226409327769,
+          6.0343400373793825,
+          6.036236098006797,
+          6.037819514812893,
+          6.039010888667239,
+          6.039750479110035,
+          6.040001199988217
+        ],
+        "source_rates": [
+          0.029999409714712252,
+          0.02999940975547646,
+          0.029999409863991997,
+          0.02999941000472798,
+          0.02999941013528418,
+          0.029999410223929778,
+          0.02999941026223794,
+          0.0299994102670349,
+          0.02999941027127809,
+          0.02999941030805209,
+          0.029999410394316927,
+          0.029999410521880612,
+          0.029999410659630438,
+          0.029999410766025393,
+          0.029999410805997755
+        ],
+        "proper_clock_rates": [
+          0.8748225241432047,
+          0.8748280685579155,
+          0.8748444211338399,
+          0.8748707557085343,
+          0.8749057460679894,
+          0.8749476358088185,
+          0.8749943267686052,
+          0.875043481528527,
+          0.87509263707435,
+          0.8751393267138061,
+          0.8751812053748661,
+          0.8752161707424687,
+          0.8752424713631384,
+          0.875258794094992,
+          0.8752643266013436
+        ],
+        "noether": {
+          "residual": 8.138490569851837e-13,
+          "without_moving_transport": 1.3897951802971107e-10,
+          "moving_edge_work": 1.6738227209760342e-10,
+          "moving_atom_work": -2.9216603124877525e-11,
+          "scalar_euler": 2.104219576359867e-14,
+          "source_euler": 1.9174115420406146e-14
+        },
+        "minimum_material_jacobian": 0.01999999999995156,
+        "maximum_timelike_ratio": 0.03911508245696602,
+        "exterior_mass": 0.7027941947212059
+      }
+    }
+  ],
+  "inputs": {
+    "scripts\\refine_annular_P2_indexed_MTS_RK_20260919.py": "4aa490f32e6c9e901654e737c4cdaa2319be49d0ced62d683747385cf821ae3d",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt01\\status.json": "7467c48530f2fcf8fbdba6d0766391e77779a118ffd2688bdf6191d0022977aa",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt01\\tight-trajectory.npz": "96384b4c070d66c6f3958ea2afa24431a8fb4e359d851357106370c1bc9b4d9a",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-live-exponential-MTS-257-attempt01\\status.json": "2d92261b67a60faca980b3892080b4a23dd94ef551925b02430aa3e965b604b7",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-live-exponential-MTS-257-attempt01\\frozen-canonical-basis.npz": "224d79f77e2699d4c12539c61e3a23093c891775b11f545f99e3caa0315e983a",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-live-exponential-MTS-257-attempt01\\trajectory-steps16.npz": "afa6d1862f0a5d2e6aacc5a0f931438f201ddb49d0c65b0e5e2944e24672c91e",
+    "scripts\\navier_stokes_source_audit_20260908.py": "817c4cdff5bf22a88deea7771b4bbc960690397512bc07cdb639ee9ab33e4f0b",
+    "scripts\\sbp4_derived_operator_20260909.py": "065ea0be52b651d742082230fe8322a367e11fc5e20150c8f3d506d1f87e77d3",
+    "scripts\\sbp4_compatible_second_operator_20260909.py": "86c6f05f7cf0a07abe9d4caa5ca1038b9f64641085a1a4a4f03aeae3ac918a3c",
+    "scripts\\annular_compatible_current_restoring_20260909.py": "c2e15990fb70e4e0587e63f8f0182831b0a4185003cdcd295db97af9027d4051",
+    "scripts\\annular_gram_joint_action_20260909.py": "c45de66a16a3c44a1ebb5a68874c47a10ceb24815bda5ecc88d5bfad3d049591",
+    "scripts\\annular_covariant_time_transport_20260909.py": "d6a55d99b9f9de06e30ab7a6f090ae12b97b273a23930315740490324ab679a9",
+    "scripts\\annular_mixed_grid_basis_20260909.py": "5a9ceef39b681f376a7e6468a104dc6a4139365248ec64ea95fa8809993f147c",
+    "scripts\\annular_adm_mixed_action_20260909.py": "c5681003a7a495196428407f25e00babc525a35d953618e1911540f4b096fe05",
+    "scripts\\annular_adm_clock_quadratic_20260909.py": "e5ccec725f88125169ccf6f533d5f613343a7259fabad0c0bcf992e600d024be",
+    "scripts\\annular_constraint_routhian_20260909.py": "62a5cf9ac8f8e73ee56bc0c46f29e5ed560692cb19a1125ba848f15c72b1dfd8",
+    "scripts\\annular_metric_link_quadratic_20260909.py": "9555ff3da29cf2522ac67cb8f3a2e3b44420464392e1029cc31410542d96e63b",
+    "scripts\\annular_released_hermite_action_20260909.py": "360d565ed558fd83121d11d59f9096d1ebf7fc49f288ca5d8bf7e4f062cac145",
+    "scripts\\annular_action_boundary_current_20260909.py": "8b702d8f7610d686bebed3ea1af73d94b0d33fe5cc7dbe3e0faee4adbd98ce98",
+    "scripts\\annular_metric_flux_jets_20260909.py": "a1c5e3db71e68ebdd69259d47e50bd1d9cecbba51034a55d5c791ad09bada3a0",
+    "scripts\\annular_nonlinear_history_20260912.py": "7747f735107c7c5bb2eae1b9e213354fc9d8856597328cbe697389ec1a96a2fd",
+    "scripts\\annular_covariant_scalar_action_20260912.py": "ccf97c4622e79a5816e094b3001e0513e7cd16f3a424fafeade04de85bca6a4f",
+    "scripts\\annular_finite_width_bulk_current_20260913.py": "da2ca4c2fab7315b4738007aafff59f38be0d90cf4f121706a32afa16f060601",
+    "scripts\\annular_horizontal_clock_evolution_20260913.py": "985843dab67ab06c85c97b32042d48f6ed5342bf578c3518bbad132cb731cd3d",
+    "scripts\\annular_compatible_h_evolution_20260914.py": "88424b14891e92d7780077619e02e5dc3e166806ed9c22924f0f03682e4e97e1",
+    "scripts\\annular_reference_continuum_shell_20260914.py": "5cbb6013083eafb55181d5a14de236685835c51ed36f26b12f0b4cc02edd9409",
+    "scripts\\annular_source_gravity_collar_20260914.py": "65d8b6c1a421bac8b56420df81630647155043b7b35031365d3f708ab94c7fa2",
+    "scripts\\derive_annular_source_gravity_20260914.py": "97861e2bff4aa48b4408f30a71379b32b5133439bc4d456d9b6426d544bacdbc",
+    "scripts\\annular_covariant_cut_action_20260915.py": "928f830561a0237f5297897bf690e4a53ca0ffc778b2967c9726223e9fd4176f",
+    "scripts\\annular_covariant_cut_action_v2_20260915.py": "0c24f5c974b4a5d4cd78bb395d8fa71070130e271018eb769d1ef19c2fdc828e",
+    "scripts\\annular_dynamical_source_20260914.py": "b4d623cb63ee77b589bf4a1d1162e281680893b5743df42fe323b90f3c38642a",
+    "scripts\\annular_moving_collar_action_20260914.py": "ac6abbd604a12709b26274ebd53747083d71fdb76f6ac3d90e67b011ee306597",
+    "scripts\\annular_moving_collar_sparse_20260914.py": "2d4b8bfcd5ec95b7b9ff2a2b6999f0c0edba7960a984cdd72bfca1daf0e8cb6d",
+    "scripts\\annular_sparse_repaired_cut_20260915.py": "8e47042aa5e58430e845b8434f6ff47ab322360e0602fd4a482f745737319a99",
+    "scripts\\annular_source_fitted_action_20260915.py": "d409c37c30313d0e05cfd7d0015a587188e1984460da6dc92c2d8fef15f0252f",
+    "scripts\\annular_quadratic_source_fitted_action_20260915.py": "cde77a8db83b284034f98f44d785b58a5f1cad0e4c41113e28c0a47ddd6fd92c",
+    "scripts\\annular_locally_refined_source_action_20260916.py": "81e3fef722d868fcd4e53ebc69b119afed0cc2253cb21e6e88e457424c6d128d",
+    "scripts\\annular_cut_initial_data_20260915.py": "47618f0af63d126619f4d2b6ccf97618ebf8b6ca84f3a77e3cdefe6e57e2eda3",
+    "scripts\\verify_annular_cut_metric_and_inversion_20260915.py": "b90147c1e97702ffbcccd47e873c469a5b97abac2a626f3f1c2f700cd3a43d45",
+    "scripts\\annular_repaired_live_geometry_20260915.py": "aaae4f759077bcecae39ad8ba7aa7362aa371c5bdf98ec872b6d5408c4d5154d",
+    "scripts\\annular_live_P2_canonical_v2_20260918.py": "2a6785ab15cd5c5aa181d0e55db1b1170eb221e7d32f9a4f6a1c3bc0a9352192",
+    "scripts\\annular_repaired_live_current_20260915.py": "9cf0436c0f343c1db623fd8de59af0662d8efe1726c2271a4ce9a6610de21d48",
+    "scripts\\annular_live_P2_current_20260918.py": "b62fa9173385cf0af26d15d4ed816ba8c8a228161ceb80f8d3560ff51af67c06",
+    "scripts\\annular_P2_primitive_geometry_20260918.py": "26dfb33bc76f8698f1e14023b505af32ecd719b2afde3cf7057c90d4374b5d71",
+    "scripts\\annular_P2_graded_source_20260919.py": "940967144392ae8d23285c24d1c65cd765d2de0d0391bc473b2795103d1f202d",
+    "scripts\\annular_P2_indexed_live_geometry_20260919.py": "5ff00d7736a0b0eda5609d132b81271d0f464bcc0f14bc57a1aef05dfcb73978",
+    "scripts\\annular_live_continuum_characteristics_20260915.py": "f0d67ab9a0e754f13e5c68067c5657e85071414ec4d072f49045457ee0d8365f",
+    "scripts\\annular_live_continuum_fast_20260915.py": "426f61cf0051e537a5107ea30a2c5d4a68f3028d63f91d738c7a0f99dd5ae973",
+    "scripts\\annular_live_barycentric_20260915.py": "d8f73407553a6f34bf2aee863e380953379d3fedbbdf079a2bdd4a06b9b15cfd",
+    "scripts\\run_annular_P2_continuum_bridge_20260918.py": "e8ec6ab2d7ad1472802cfe0d62f891880b981c507aa4edb9b02d556c82ce9dee",
+    "scripts\\annular_P2_live_exponential_20260919.py": "6656d48dce7ba845b0c6caa61b8c15bd181eba247fc969e1cf0e1102456b6108",
+    "scripts\\run_annular_P2_live_exponential_20260919.py": "8233d5757dabd33e9f124b3e6182242a976d6a2b595d9dbb1946e2d7735d783c",
+    "scripts\\verify_annular_P2_live_exponential_direct_20260919.py": "1a273780eabce5f420db29b25aa578b9a4f481b80a536f2586c1e9dfc25a6b2f"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\executed-refine_annular_P2_indexed_MTS_RK_20260919.py": "4aa490f32e6c9e901654e737c4cdaa2319be49d0ced62d683747385cf821ae3d",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted001.npz": "e4ef130456d2a1ee89f1d6838fa75933bee619c554bdfcc85b78e88fe025d1a3",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted002.npz": "bc089140056215147596eaaed9ca934a8bc050b71c2bc13cd31ea5ed1948864a",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted003.npz": "f5ac980e0bf7a5d7dad88abfad96ac6ccdd48d3f86b28fe3c115ae4d6c8ef77a",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted004.npz": "e6faceda24cc200bc411e5878d33fce030345f490e0557782c9cb42d8379000d",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted005.npz": "fc9a8d9e6128b18170defe710997c91eff4cbc85f304ba6b8701d7ae85eb734b",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted006.npz": "021c583f5513b4f8b9b05dd3d9dbae8ea3e8e91931d6e94e293d0ec711582721",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted007.npz": "3d97090d619c19837935c76fc8c2c7987908b48c56140e4dbf449032c08e6f8c",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted008.npz": "8d3dbb50f03928c2012d2d05ac98131f872f09d55169f68860a6f1fdc078bb80",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted009.npz": "61932edf265788051422a74fba294d8098911b0da91bdf78b9f19f0fece4523d",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted010.npz": "f7c93fd000cfa0369eed03eda4c80d7929e20d3e133f00f1ed9b41c262c0083f",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted011.npz": "d754b6de60bb2e334b63c043c70edfd66139123fd8a815e40fe00f4a4f4c05e4",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted012.npz": "65ab9bf5d6c5d65f245c9a7372ce691e62c401d05bfbe983612d95366180bcee",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted013.npz": "7a266299218d2e6777f368ad8b4bb4c4f49c491e539c6f9e6c5696f1b0eb7d9c",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted014.npz": "b39e4814373e38fd32fdb894e73a2ab1a010a0bd175b3aa298696632a6fa3078",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted015.npz": "204caeacf03f6b49f23128ecbe004d89c4318483c2c4f7fa12f635eb144d4303",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted016.npz": "ace5bf4b474fbd6ccb48d83a708a44f4c46deadab8dfc3661d3a2e2c55276c5d",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted017.npz": "939d17502cd396ffb31ed288ef1286a59c74079986d5f8cff984cc2783e7fbc3",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted018.npz": "707ce223c1eeadf7907ad8ea344c1ecfefefa632905336d70f7ac5f5163ea412",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted019.npz": "b1003a6d3745f50c220e7f80c3227989aa6bd49c0114ae7411c61d4bf2d2ea7b",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted020.npz": "a08aaa5ef0a06f7475b19424b78a61b9bd94085a91fb22702444202875189b86",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted021.npz": "a7d6d9610fec20aba94020e2e8ce727cc10c840bdeec3bd7bc1fb18389c46a19",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted022.npz": "903864ef714772b618c1ff29edb525ae91c20fd9847276f216844631e9e3c59e",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted023.npz": "54d5f1ce6d897a2f945ecf542682bf4b34a04d74c4d61198590637aee3bf405b",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted024.npz": "2c9206e23cb9f9d8ef6d0211561f7c17591dd55d2e207d9ca03bc133afe573f6",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted025.npz": "f3f813346a75983eed7fd6ebad6fe152c57600310e82f92ffafff2f925cb6916",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted026.npz": "2feece438c4dc5d154e793854b547fa0b65b9b6461eb4ae63c880f9a8bfa47d9",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted027.npz": "38d6672c1a69e905fa8878a00e6bf07bf5dac89f746201c7af82ee641312eb48",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted028.npz": "38dd7b4a6b293456203f2992ed9cbefc984afa9f70619f3cd6e2331be3ae39ad",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted029.npz": "f13ec2dec36f78874ac477d6ede8ca12522cc5ce1276f47313e2f083feb2dbb7",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted030.npz": "e42ffe3929a355dbb799d794510eafb07c68dae69e38ea990a67c0359283a6f9",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted031.npz": "30326e61b43f8ed6db4492fd8954806b70813b7949b256b5677236e8764191a7",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\accepted032.npz": "1a2bf0cd73e0af053e0ea281e370bd9c01d245e75060d8b0fcf06a28aa9944fc",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\tight-trajectory.npz": "8ad9fd2cf13f8ccfe30b7cb70af413a8d9f2baa3091b13a234415428a160b97a",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-indexed-full-pilot-control-MTS-attempt02\\completion.txt": "6235fdb16eff4f29bedc6aa17146b215f2e31b0669a19d154ebe5939296fbd0b"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "github_action": false,
+  "subagents_used": false,
+  "branch": "MTS",
+  "full_live_P2_force_convergence_proven": false,
+  "duration": 4e-05,
+  "maximum_wall_seconds": 2700.0,
+  "no_modal_split_in_RK": true,
+  "previous_point004_window_not_retested": true,
+  "additional_endpoint_RK_refinement": true,
+  "maximum_step": 1.25e-06,
+  "rtol": 4e-13,
+  "atol": 4e-15,
+  "accepted_time": 4e-05,
+  "calls": 385,
+  "seconds": 1831.9205796000024,
+  "endpoint_force_RK_refinement_difference": 1.1540502711446243e-12,
+  "endpoint_force_exponential_RK_difference": 2.7710728893806658e-11,
+  "endpoint_relative_state_refinement": 1.1819583011169902e-13,
+  "endpoint_relative_method_difference": 1.3011255593046926e-11,
+  "inherited_seventeen_time_state_controls": [
+    {
+      "time": 0.0,
+      "RK_relative_difference": 0.0,
+      "exponential_RK_relative_difference": 0.0,
+      "source_gap": 0.0
+    },
+    {
+      "time": 2.5e-06,
+      "RK_relative_difference": 2.5449137191564528e-11,
+      "exponential_RK_relative_difference": 4.2923680724979576e-11,
+      "source_gap": 0.0
+    },
+    {
+      "time": 5e-06,
+      "RK_relative_difference": 4.27332063859819e-12,
+      "exponential_RK_relative_difference": 6.147008753646517e-11,
+      "source_gap": 8.881784197001252e-16
+    },
+    {
+      "time": 7.500000000000001e-06,
+      "RK_relative_difference": 2.450843833458891e-11,
+      "exponential_RK_relative_difference": 4.506824188700318e-11,
+      "source_gap": 8.881784197001252e-16
+    },
+    {
+      "time": 1e-05,
+      "RK_relative_difference": 8.537977337455846e-12,
+      "exponential_RK_relative_difference": 3.694761642211969e-12,
+      "source_gap": 8.881784197001252e-16
+    },
+    {
+      "time": 1.25e-05,
+      "RK_relative_difference": 2.4301242735507574e-11,
+      "exponential_RK_relative_difference": 4.0668091352003424e-11,
+      "source_gap": 8.881784197001252e-16
+    },
+    {
+      "time": 1.5000000000000002e-05,
+      "RK_relative_difference": 1.2793941079120472e-11,
+      "exponential_RK_relative_difference": 6.123611137665768e-11,
+      "source_gap": 8.881784197001252e-16
+    },
+    {
+      "time": 1.7500000000000002e-05,
+      "RK_relative_difference": 2.4841546731387878e-11,
+      "exponential_RK_relative_difference": 4.706673790434863e-11,
+      "source_gap": 8.881784197001252e-16
+    },
+    {
+      "time": 2e-05,
+      "RK_relative_difference": 1.7041211458876158e-11,
+      "exponential_RK_relative_difference": 7.1087141730267125e-12,
+      "source_gap": 8.881784197001252e-16
+    },
+    {
+      "time": 2.25e-05,
+      "RK_relative_difference": 2.6078553669071824e-11,
+      "exponential_RK_relative_difference": 3.829477993350427e-11,
+      "source_gap": 8.881784197001252e-16
+    },
+    {
+      "time": 2.5e-05,
+      "RK_relative_difference": 2.127985642910393e-11,
+      "exponential_RK_relative_difference": 6.078051763818956e-11,
+      "source_gap": 8.881784197001252e-16
+    },
+    {
+      "time": 2.75e-05,
+      "RK_relative_difference": 2.7915753179826276e-11,
+      "exponential_RK_relative_difference": 4.888323468575577e-11,
+      "source_gap": 8.881784197001252e-16
+    },
+    {
+      "time": 3.0000000000000004e-05,
+      "RK_relative_difference": 2.5509895663604243e-11,
+      "exponential_RK_relative_difference": 1.0151962231211242e-11,
+      "source_gap": 8.881784197001252e-16
+    },
+    {
+      "time": 3.2500000000000004e-05,
+      "RK_relative_difference": 3.024017264742315e-11,
+      "exponential_RK_relative_difference": 3.581911042680256e-11,
+      "source_gap": 8.881784197001252e-16
+    },
+    {
+      "time": 3.5000000000000004e-05,
+      "RK_relative_difference": 2.9731233087300317e-11,
+      "exponential_RK_relative_difference": 6.017641984909557e-11,
+      "source_gap": 8.881784197001252e-16
+    },
+    {
+      "time": 3.7500000000000003e-05,
+      "RK_relative_difference": 3.2945915066064195e-11,
+      "exponential_RK_relative_difference": 5.055427732836539e-11,
+      "source_gap": 8.881784197001252e-16
+    },
+    {
+      "time": 4e-05,
+      "RK_relative_difference": 3.394404460365571e-11,
+      "exponential_RK_relative_difference": 1.2941030068335257e-11,
+      "source_gap": 8.881784197001252e-16
+    }
+  ],
+  "refined_force_test_only_at_endpoint": true,
+  "independent_short_pilot_agreement_pass": true,
+  "previous_failed_coarse_control_preserved": true,
+  "completed_at": "2026-09-19T03:01:42.173159+00:00"
+}

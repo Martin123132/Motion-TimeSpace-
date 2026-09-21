@@ -1,0 +1,32 @@
+{
+  "state": "failed",
+  "checks": [
+    {
+      "name": "0.005_no_centre_return_in_exact_time",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "cases": [],
+  "inputs": {
+    "scripts\\test_annular_exact_flat_recoil_20260914.py": "ee7e3ab1a9f83671cdebc8438f02ed92ff3df6539901076f63da3e5ef1474eca"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-exact-flat-recoil-attempt01\\executed-test_annular_exact_flat_recoil_20260914.py": "ee7e3ab1a9f83671cdebc8438f02ed92ff3df6539901076f63da3e5ef1474eca"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "scope": "Nonlinear spherical scalar and freely recoiling dust shell in G=0 Minkowski space, before any reflected pulse returns to the centre.",
+  "production_GR_pulse_reused": false,
+  "scalar_profile_is_new_declared_control": true,
+  "coupled_moving_GR_scalar_PDE_tested": false,
+  "parent_reflectivity_derived": false,
+  "energy_is_angular_reduced": true,
+  "reservoir": 0.003,
+  "radial_impulse_is_not_total_Cartesian_momentum": true,
+  "error": "ValueError('Values in `t_eval` are not within `t_span`.')",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\test_annular_exact_flat_recoil_20260914.py\", line 46, in run\n    result = solve_ivp(flat_mirror_rhs(reservoir, amplitude), (0., 6.1), [6., 0., 0., 0.],\n                       method='DOP853', rtol=2e-11, atol=2e-13, max_step=.002,\n                       t_eval=np.arange(0., 6.1001, .01), events=pulse_complete)\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\.venv-score\\Lib\\site-packages\\scipy\\integrate\\_ivp\\ivp.py\", line 606, in solve_ivp\n    raise ValueError(\"Values in `t_eval` are not within `t_span`.\")\nValueError: Values in `t_eval` are not within `t_span`.\n"
+}

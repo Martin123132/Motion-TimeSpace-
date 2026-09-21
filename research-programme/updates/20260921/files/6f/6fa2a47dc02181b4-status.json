@@ -1,0 +1,927 @@
+{
+  "state": "complete",
+  "checks": [
+    {
+      "name": "reference(17, 4, 12, False)_finite_canonical_roundtrip",
+      "passed": true,
+      "detail": {
+        "branch": "reference",
+        "base_count": 17,
+        "scalar_free_count": 62,
+        "layer_degree": 4,
+        "radial_degree": 12,
+        "deformed": false,
+        "action_order": 20,
+        "label_order": 12,
+        "canonical_roundtrip": 6.938893903907228e-18,
+        "nodal_momentum_error": 1.3010426069826053e-18,
+        "off_grid_momentum_error": 4.949514658327968e-10,
+        "mass_radial_residual": 6.854708803610138e-12,
+        "lapse_radial_residual": 1.5876605585773973e-12,
+        "exterior_mass": 0.7027939063396988,
+        "source_rate": 0.030000000000000006,
+        "minimum_source_jacobian": 0.019999999999998377,
+        "minimum_spatial_jacobian": 0.9999999999999996,
+        "radial_iterations": 5,
+        "canonical_history": [
+          0.03000004298317374,
+          4.2983295180099024e-08,
+          1.214375822122804e-13
+        ],
+        "seconds": 2.204215599995223,
+        "tangent": {
+          "metric_tangent_error": 3.189657739322005e-14,
+          "metric_norm": 0.00023190230553283306,
+          "metric_norm_bound": 0.0002865557714717198,
+          "metric_envelope_error": 4.143603862805101e-15,
+          "field_schur": 9.15859961878237e-06,
+          "subtraction_schur": 9.158599618783007e-06,
+          "schur_error": 6.369687763352339e-19,
+          "proper_inertia": 0.04474588712595642,
+          "total_schur": 0.0447550457255752,
+          "timelike_ratio": 0.0391072835187269
+        }
+      }
+    },
+    {
+      "name": "reference(17, 4, 12, False)_independent_radial_equations",
+      "passed": true,
+      "detail": [
+        6.854708803610138e-12,
+        1.5876605585773973e-12
+      ]
+    },
+    {
+      "name": "reference(17, 4, 12, False)_nonzero_live_load_and_ordered_map",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference(17, 4, 12, False)_metric_tangent_natural_norm_bound",
+      "passed": true,
+      "detail": {
+        "norm": 0.00023190230553283306,
+        "bound": 0.0002865557714717198
+      }
+    },
+    {
+      "name": "reference(17, 4, 12, False)_implicit_metric_tangent_vs_full_inverse_difference",
+      "passed": true,
+      "detail": 3.189657739322005e-14
+    },
+    {
+      "name": "reference(17, 4, 12, False)_finite_Legendre_metric_envelope_identity",
+      "passed": true,
+      "detail": {
+        "hamiltonian_derivative": 0.00036443384230794756,
+        "minus_action_derivative": 0.00036443384231209117,
+        "error": 4.143603862805101e-15
+      }
+    },
+    {
+      "name": "reference(17, 4, 12, False)_omitted_field_source_momentum_detected",
+      "passed": true,
+      "detail": {
+        "correct_source_rate": 0.030000000000000006,
+        "wrong_material_only_rate": 0.03236106148036124
+      }
+    },
+    {
+      "name": "reference(17, 4, 12, False)_projection_Schur_identity",
+      "passed": true,
+      "detail": {
+        "field_schur": 9.15859961878237e-06,
+        "subtraction_schur": 9.158599618783007e-06,
+        "schur_error": 6.369687763352339e-19,
+        "proper_inertia": 0.04474588712595642,
+        "total_schur": 0.0447550457255752,
+        "timelike_ratio": 0.0391072835187269
+      }
+    },
+    {
+      "name": "reference(17, 4, 12, False)_frozen_metric_inverse_is_detectably_wrong",
+      "passed": true,
+      "detail": 2.4944766601360784e-06
+    },
+    {
+      "name": "MTS(17, 4, 12, False)_finite_canonical_roundtrip",
+      "passed": true,
+      "detail": {
+        "branch": "MTS",
+        "base_count": 17,
+        "scalar_free_count": 62,
+        "layer_degree": 4,
+        "radial_degree": 12,
+        "deformed": false,
+        "action_order": 20,
+        "label_order": 12,
+        "canonical_roundtrip": 1.3877787807814457e-17,
+        "nodal_momentum_error": 1.5178830414797062e-18,
+        "off_grid_momentum_error": 4.94954951251402e-10,
+        "mass_radial_residual": 1.0228110025600756e-11,
+        "lapse_radial_residual": 2.5659786795362294e-12,
+        "exterior_mass": 0.7028081169353968,
+        "source_rate": 0.03,
+        "minimum_source_jacobian": 0.019999999999998377,
+        "minimum_spatial_jacobian": 0.9999999999999996,
+        "radial_iterations": 5,
+        "canonical_history": [
+          0.030000042983723888,
+          4.2983845330302195e-08,
+          1.214445211061843e-13
+        ],
+        "seconds": 2.1567313999985345,
+        "tangent": {
+          "metric_tangent_error": 7.365202198128529e-15,
+          "metric_norm": 0.0002319031172946656,
+          "metric_norm_bound": 0.00028655674625263595,
+          "metric_envelope_error": 8.35160933465584e-15,
+          "field_schur": 9.158652972516558e-06,
+          "subtraction_schur": 9.158652972516765e-06,
+          "schur_error": 2.0667603913004928e-19,
+          "proper_inertia": 0.044746203902445415,
+          "total_schur": 0.044755362555417934,
+          "timelike_ratio": 0.0391075123076517
+        }
+      }
+    },
+    {
+      "name": "MTS(17, 4, 12, False)_independent_radial_equations",
+      "passed": true,
+      "detail": [
+        1.0228110025600756e-11,
+        2.5659786795362294e-12
+      ]
+    },
+    {
+      "name": "MTS(17, 4, 12, False)_nonzero_live_load_and_ordered_map",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS(17, 4, 12, False)_metric_tangent_natural_norm_bound",
+      "passed": true,
+      "detail": {
+        "norm": 0.0002319031172946656,
+        "bound": 0.00028655674625263595
+      }
+    },
+    {
+      "name": "MTS(17, 4, 12, False)_implicit_metric_tangent_vs_full_inverse_difference",
+      "passed": true,
+      "detail": 7.365202198128529e-15
+    },
+    {
+      "name": "MTS(17, 4, 12, False)_finite_Legendre_metric_envelope_identity",
+      "passed": true,
+      "detail": {
+        "hamiltonian_derivative": 0.0003678563214815656,
+        "minus_action_derivative": 0.0003678563214899172,
+        "error": 8.35160933465584e-15
+      }
+    },
+    {
+      "name": "MTS(17, 4, 12, False)_omitted_field_source_momentum_detected",
+      "passed": true,
+      "detail": {
+        "correct_source_rate": 0.03,
+        "wrong_material_only_rate": 0.032361058537098836
+      }
+    },
+    {
+      "name": "MTS(17, 4, 12, False)_projection_Schur_identity",
+      "passed": true,
+      "detail": {
+        "field_schur": 9.158652972516558e-06,
+        "subtraction_schur": 9.158652972516765e-06,
+        "schur_error": 2.0667603913004928e-19,
+        "proper_inertia": 0.044746203902445415,
+        "total_schur": 0.044755362555417934,
+        "timelike_ratio": 0.0391075123076517
+      }
+    },
+    {
+      "name": "MTS(17, 4, 12, False)_frozen_metric_inverse_is_detectably_wrong",
+      "passed": true,
+      "detail": 2.5045829406405984e-06
+    },
+    {
+      "name": "reference(17, 8, 12, False)_finite_canonical_roundtrip",
+      "passed": true,
+      "detail": {
+        "branch": "reference",
+        "base_count": 17,
+        "scalar_free_count": 62,
+        "layer_degree": 8,
+        "radial_degree": 12,
+        "deformed": false,
+        "action_order": 20,
+        "label_order": 12,
+        "canonical_roundtrip": 1.0408340855860843e-17,
+        "nodal_momentum_error": 1.734723475976807e-18,
+        "off_grid_momentum_error": 7.161948961540094e-11,
+        "mass_radial_residual": 7.198332208080416e-12,
+        "lapse_radial_residual": 2.074139471286429e-12,
+        "exterior_mass": 0.7027939063396988,
+        "source_rate": 0.029999999999999995,
+        "minimum_source_jacobian": 0.01999999999998083,
+        "minimum_spatial_jacobian": 0.9999999999999983,
+        "radial_iterations": 5,
+        "canonical_history": [
+          0.030000042983173738,
+          4.298329518356847e-08,
+          1.2145839889399213e-13
+        ],
+        "seconds": 2.5783521000048495
+      }
+    },
+    {
+      "name": "reference(17, 8, 12, False)_independent_radial_equations",
+      "passed": true,
+      "detail": [
+        7.198332208080416e-12,
+        2.074139471286429e-12
+      ]
+    },
+    {
+      "name": "reference(17, 8, 12, False)_nonzero_live_load_and_ordered_map",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS(17, 8, 12, False)_finite_canonical_roundtrip",
+      "passed": true,
+      "detail": {
+        "branch": "MTS",
+        "base_count": 17,
+        "scalar_free_count": 62,
+        "layer_degree": 8,
+        "radial_degree": 12,
+        "deformed": false,
+        "action_order": 20,
+        "label_order": 12,
+        "canonical_roundtrip": 1.3877787807814457e-17,
+        "nodal_momentum_error": 1.734723475976807e-18,
+        "off_grid_momentum_error": 7.161999450124761e-11,
+        "mass_radial_residual": 8.462013479249714e-12,
+        "lapse_radial_residual": 2.601523163558994e-12,
+        "exterior_mass": 0.7028081169353969,
+        "source_rate": 0.029999999999999995,
+        "minimum_source_jacobian": 0.01999999999998083,
+        "minimum_spatial_jacobian": 0.9999999999999983,
+        "radial_iterations": 5,
+        "canonical_history": [
+          0.03000004298372389,
+          4.298384533724109e-08,
+          1.2145146000008822e-13
+        ],
+        "seconds": 2.654837199996109
+      }
+    },
+    {
+      "name": "MTS(17, 8, 12, False)_independent_radial_equations",
+      "passed": true,
+      "detail": [
+        8.462013479249714e-12,
+        2.601523163558994e-12
+      ]
+    },
+    {
+      "name": "MTS(17, 8, 12, False)_nonzero_live_load_and_ordered_map",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference(17, 6, 18, True)_finite_canonical_roundtrip",
+      "passed": true,
+      "detail": {
+        "branch": "reference",
+        "base_count": 17,
+        "scalar_free_count": 62,
+        "layer_degree": 6,
+        "radial_degree": 18,
+        "deformed": true,
+        "action_order": 20,
+        "label_order": 12,
+        "canonical_roundtrip": 6.938893903907228e-18,
+        "nodal_momentum_error": 2.6020852139652106e-18,
+        "off_grid_momentum_error": 3.153282355957939e-10,
+        "mass_radial_residual": 5.170796822944086e-11,
+        "lapse_radial_residual": 8.005037605007814e-12,
+        "exterior_mass": 0.7027968175576489,
+        "source_rate": 0.04,
+        "minimum_source_jacobian": 0.01800000000001547,
+        "minimum_spatial_jacobian": 0.9870129870129855,
+        "radial_iterations": 5,
+        "canonical_history": [
+          0.04200010502558236,
+          1.050261030852151e-07,
+          5.207362319126219e-13,
+          6.938893903907228e-18
+        ],
+        "seconds": 3.4544702999992296
+      }
+    },
+    {
+      "name": "reference(17, 6, 18, True)_independent_radial_equations",
+      "passed": true,
+      "detail": [
+        5.170796822944086e-11,
+        8.005037605007814e-12
+      ]
+    },
+    {
+      "name": "reference(17, 6, 18, True)_nonzero_live_load_and_ordered_map",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS(17, 6, 18, True)_finite_canonical_roundtrip",
+      "passed": true,
+      "detail": {
+        "branch": "MTS",
+        "base_count": 17,
+        "scalar_free_count": 62,
+        "layer_degree": 6,
+        "radial_degree": 18,
+        "deformed": true,
+        "action_order": 20,
+        "label_order": 12,
+        "canonical_roundtrip": 6.938893903907228e-18,
+        "nodal_momentum_error": 1.951563910473908e-18,
+        "off_grid_momentum_error": 3.153304595790527e-10,
+        "mass_radial_residual": 3.8572787379540646e-11,
+        "lapse_radial_residual": 9.557968999596156e-12,
+        "exterior_mass": 0.7028110976734486,
+        "source_rate": 0.039999999999999994,
+        "minimum_source_jacobian": 0.01800000000001547,
+        "minimum_spatial_jacobian": 0.9870129870129855,
+        "radial_iterations": 5,
+        "canonical_history": [
+          0.04200010502693094,
+          1.0502745167312311e-07,
+          5.207501097004297e-13,
+          1.3877787807814457e-17
+        ],
+        "seconds": 3.5261593000032008
+      }
+    },
+    {
+      "name": "MTS(17, 6, 18, True)_independent_radial_equations",
+      "passed": true,
+      "detail": [
+        3.8572787379540646e-11,
+        9.557968999596156e-12
+      ]
+    },
+    {
+      "name": "MTS(17, 6, 18, True)_nonzero_live_load_and_ordered_map",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference(33, 4, 14, False)_finite_canonical_roundtrip",
+      "passed": true,
+      "detail": {
+        "branch": "reference",
+        "base_count": 33,
+        "scalar_free_count": 94,
+        "layer_degree": 4,
+        "radial_degree": 14,
+        "deformed": false,
+        "action_order": 20,
+        "label_order": 12,
+        "canonical_roundtrip": 1.734723475976807e-17,
+        "nodal_momentum_error": 8.673617379884035e-19,
+        "off_grid_momentum_error": 4.2156262890767106e-10,
+        "mass_radial_residual": 1.8711088234368844e-11,
+        "lapse_radial_residual": 5.924410267921232e-12,
+        "exterior_mass": 0.7027941644103405,
+        "source_rate": 0.030000000000000006,
+        "minimum_source_jacobian": 0.019999999999998377,
+        "minimum_spatial_jacobian": 0.9999999999999996,
+        "radial_iterations": 5,
+        "canonical_history": [
+          0.030000043003446143,
+          4.300356768946467e-08,
+          1.2155207396169487e-13
+        ],
+        "seconds": 3.56052059999638
+      }
+    },
+    {
+      "name": "reference(33, 4, 14, False)_independent_radial_equations",
+      "passed": true,
+      "detail": [
+        1.8711088234368844e-11,
+        5.924410267921232e-12
+      ]
+    },
+    {
+      "name": "reference(33, 4, 14, False)_nonzero_live_load_and_ordered_map",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS(33, 4, 14, False)_finite_canonical_roundtrip",
+      "passed": true,
+      "detail": {
+        "branch": "MTS",
+        "base_count": 33,
+        "scalar_free_count": 94,
+        "layer_degree": 4,
+        "radial_degree": 14,
+        "deformed": false,
+        "action_order": 20,
+        "label_order": 12,
+        "canonical_roundtrip": 1.734723475976807e-17,
+        "nodal_momentum_error": 6.505213034913027e-19,
+        "off_grid_momentum_error": 4.215629599959095e-10,
+        "mass_radial_residual": 2.4969720735512624e-11,
+        "lapse_radial_residual": 3.3245975417095508e-12,
+        "exterior_mass": 0.7027957260696067,
+        "source_rate": 0.030000000000000002,
+        "minimum_source_jacobian": 0.019999999999998377,
+        "minimum_spatial_jacobian": 0.9999999999999996,
+        "radial_iterations": 5,
+        "canonical_history": [
+          0.03000004300350709,
+          4.300362863376983e-08,
+          1.2154860451474292e-13
+        ],
+        "seconds": 3.6762718000027235
+      }
+    },
+    {
+      "name": "MTS(33, 4, 14, False)_independent_radial_equations",
+      "passed": true,
+      "detail": [
+        2.4969720735512624e-11,
+        3.3245975417095508e-12
+      ]
+    },
+    {
+      "name": "MTS(33, 4, 14, False)_nonzero_live_load_and_ordered_map",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference_off_grid_label_refinement",
+      "passed": true,
+      "detail": [
+        {
+          "branch": "reference",
+          "base_count": 17,
+          "scalar_free_count": 62,
+          "layer_degree": 4,
+          "radial_degree": 12,
+          "deformed": false,
+          "action_order": 20,
+          "label_order": 12,
+          "canonical_roundtrip": 6.938893903907228e-18,
+          "nodal_momentum_error": 1.3010426069826053e-18,
+          "off_grid_momentum_error": 4.949514658327968e-10,
+          "mass_radial_residual": 6.854708803610138e-12,
+          "lapse_radial_residual": 1.5876605585773973e-12,
+          "exterior_mass": 0.7027939063396988,
+          "source_rate": 0.030000000000000006,
+          "minimum_source_jacobian": 0.019999999999998377,
+          "minimum_spatial_jacobian": 0.9999999999999996,
+          "radial_iterations": 5,
+          "canonical_history": [
+            0.03000004298317374,
+            4.2983295180099024e-08,
+            1.214375822122804e-13
+          ],
+          "seconds": 2.204215599995223,
+          "tangent": {
+            "metric_tangent_error": 3.189657739322005e-14,
+            "metric_norm": 0.00023190230553283306,
+            "metric_norm_bound": 0.0002865557714717198,
+            "metric_envelope_error": 4.143603862805101e-15,
+            "field_schur": 9.15859961878237e-06,
+            "subtraction_schur": 9.158599618783007e-06,
+            "schur_error": 6.369687763352339e-19,
+            "proper_inertia": 0.04474588712595642,
+            "total_schur": 0.0447550457255752,
+            "timelike_ratio": 0.0391072835187269
+          }
+        },
+        {
+          "branch": "reference",
+          "base_count": 17,
+          "scalar_free_count": 62,
+          "layer_degree": 8,
+          "radial_degree": 12,
+          "deformed": false,
+          "action_order": 20,
+          "label_order": 12,
+          "canonical_roundtrip": 1.0408340855860843e-17,
+          "nodal_momentum_error": 1.734723475976807e-18,
+          "off_grid_momentum_error": 7.161948961540094e-11,
+          "mass_radial_residual": 7.198332208080416e-12,
+          "lapse_radial_residual": 2.074139471286429e-12,
+          "exterior_mass": 0.7027939063396988,
+          "source_rate": 0.029999999999999995,
+          "minimum_source_jacobian": 0.01999999999998083,
+          "minimum_spatial_jacobian": 0.9999999999999983,
+          "radial_iterations": 5,
+          "canonical_history": [
+            0.030000042983173738,
+            4.298329518356847e-08,
+            1.2145839889399213e-13
+          ],
+          "seconds": 2.5783521000048495
+        }
+      ]
+    },
+    {
+      "name": "MTS_off_grid_label_refinement",
+      "passed": true,
+      "detail": [
+        {
+          "branch": "MTS",
+          "base_count": 17,
+          "scalar_free_count": 62,
+          "layer_degree": 4,
+          "radial_degree": 12,
+          "deformed": false,
+          "action_order": 20,
+          "label_order": 12,
+          "canonical_roundtrip": 1.3877787807814457e-17,
+          "nodal_momentum_error": 1.5178830414797062e-18,
+          "off_grid_momentum_error": 4.94954951251402e-10,
+          "mass_radial_residual": 1.0228110025600756e-11,
+          "lapse_radial_residual": 2.5659786795362294e-12,
+          "exterior_mass": 0.7028081169353968,
+          "source_rate": 0.03,
+          "minimum_source_jacobian": 0.019999999999998377,
+          "minimum_spatial_jacobian": 0.9999999999999996,
+          "radial_iterations": 5,
+          "canonical_history": [
+            0.030000042983723888,
+            4.2983845330302195e-08,
+            1.214445211061843e-13
+          ],
+          "seconds": 2.1567313999985345,
+          "tangent": {
+            "metric_tangent_error": 7.365202198128529e-15,
+            "metric_norm": 0.0002319031172946656,
+            "metric_norm_bound": 0.00028655674625263595,
+            "metric_envelope_error": 8.35160933465584e-15,
+            "field_schur": 9.158652972516558e-06,
+            "subtraction_schur": 9.158652972516765e-06,
+            "schur_error": 2.0667603913004928e-19,
+            "proper_inertia": 0.044746203902445415,
+            "total_schur": 0.044755362555417934,
+            "timelike_ratio": 0.0391075123076517
+          }
+        },
+        {
+          "branch": "MTS",
+          "base_count": 17,
+          "scalar_free_count": 62,
+          "layer_degree": 8,
+          "radial_degree": 12,
+          "deformed": false,
+          "action_order": 20,
+          "label_order": 12,
+          "canonical_roundtrip": 1.3877787807814457e-17,
+          "nodal_momentum_error": 1.734723475976807e-18,
+          "off_grid_momentum_error": 7.161999450124761e-11,
+          "mass_radial_residual": 8.462013479249714e-12,
+          "lapse_radial_residual": 2.601523163558994e-12,
+          "exterior_mass": 0.7028081169353969,
+          "source_rate": 0.029999999999999995,
+          "minimum_source_jacobian": 0.01999999999998083,
+          "minimum_spatial_jacobian": 0.9999999999999983,
+          "radial_iterations": 5,
+          "canonical_history": [
+            0.03000004298372389,
+            4.298384533724109e-08,
+            1.2145146000008822e-13
+          ],
+          "seconds": 2.654837199996109
+        }
+      ]
+    },
+    {
+      "name": "reference_MTS_zero_wave_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "zero_coupling_recovers_Schwarzschild_not_flat_space",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "cases": [
+    {
+      "branch": "reference",
+      "base_count": 17,
+      "scalar_free_count": 62,
+      "layer_degree": 4,
+      "radial_degree": 12,
+      "deformed": false,
+      "action_order": 20,
+      "label_order": 12,
+      "canonical_roundtrip": 6.938893903907228e-18,
+      "nodal_momentum_error": 1.3010426069826053e-18,
+      "off_grid_momentum_error": 4.949514658327968e-10,
+      "mass_radial_residual": 6.854708803610138e-12,
+      "lapse_radial_residual": 1.5876605585773973e-12,
+      "exterior_mass": 0.7027939063396988,
+      "source_rate": 0.030000000000000006,
+      "minimum_source_jacobian": 0.019999999999998377,
+      "minimum_spatial_jacobian": 0.9999999999999996,
+      "radial_iterations": 5,
+      "canonical_history": [
+        0.03000004298317374,
+        4.2983295180099024e-08,
+        1.214375822122804e-13
+      ],
+      "seconds": 2.204215599995223,
+      "tangent": {
+        "metric_tangent_error": 3.189657739322005e-14,
+        "metric_norm": 0.00023190230553283306,
+        "metric_norm_bound": 0.0002865557714717198,
+        "metric_envelope_error": 4.143603862805101e-15,
+        "field_schur": 9.15859961878237e-06,
+        "subtraction_schur": 9.158599618783007e-06,
+        "schur_error": 6.369687763352339e-19,
+        "proper_inertia": 0.04474588712595642,
+        "total_schur": 0.0447550457255752,
+        "timelike_ratio": 0.0391072835187269
+      }
+    },
+    {
+      "branch": "MTS",
+      "base_count": 17,
+      "scalar_free_count": 62,
+      "layer_degree": 4,
+      "radial_degree": 12,
+      "deformed": false,
+      "action_order": 20,
+      "label_order": 12,
+      "canonical_roundtrip": 1.3877787807814457e-17,
+      "nodal_momentum_error": 1.5178830414797062e-18,
+      "off_grid_momentum_error": 4.94954951251402e-10,
+      "mass_radial_residual": 1.0228110025600756e-11,
+      "lapse_radial_residual": 2.5659786795362294e-12,
+      "exterior_mass": 0.7028081169353968,
+      "source_rate": 0.03,
+      "minimum_source_jacobian": 0.019999999999998377,
+      "minimum_spatial_jacobian": 0.9999999999999996,
+      "radial_iterations": 5,
+      "canonical_history": [
+        0.030000042983723888,
+        4.2983845330302195e-08,
+        1.214445211061843e-13
+      ],
+      "seconds": 2.1567313999985345,
+      "tangent": {
+        "metric_tangent_error": 7.365202198128529e-15,
+        "metric_norm": 0.0002319031172946656,
+        "metric_norm_bound": 0.00028655674625263595,
+        "metric_envelope_error": 8.35160933465584e-15,
+        "field_schur": 9.158652972516558e-06,
+        "subtraction_schur": 9.158652972516765e-06,
+        "schur_error": 2.0667603913004928e-19,
+        "proper_inertia": 0.044746203902445415,
+        "total_schur": 0.044755362555417934,
+        "timelike_ratio": 0.0391075123076517
+      }
+    },
+    {
+      "branch": "reference",
+      "base_count": 17,
+      "scalar_free_count": 62,
+      "layer_degree": 8,
+      "radial_degree": 12,
+      "deformed": false,
+      "action_order": 20,
+      "label_order": 12,
+      "canonical_roundtrip": 1.0408340855860843e-17,
+      "nodal_momentum_error": 1.734723475976807e-18,
+      "off_grid_momentum_error": 7.161948961540094e-11,
+      "mass_radial_residual": 7.198332208080416e-12,
+      "lapse_radial_residual": 2.074139471286429e-12,
+      "exterior_mass": 0.7027939063396988,
+      "source_rate": 0.029999999999999995,
+      "minimum_source_jacobian": 0.01999999999998083,
+      "minimum_spatial_jacobian": 0.9999999999999983,
+      "radial_iterations": 5,
+      "canonical_history": [
+        0.030000042983173738,
+        4.298329518356847e-08,
+        1.2145839889399213e-13
+      ],
+      "seconds": 2.5783521000048495
+    },
+    {
+      "branch": "MTS",
+      "base_count": 17,
+      "scalar_free_count": 62,
+      "layer_degree": 8,
+      "radial_degree": 12,
+      "deformed": false,
+      "action_order": 20,
+      "label_order": 12,
+      "canonical_roundtrip": 1.3877787807814457e-17,
+      "nodal_momentum_error": 1.734723475976807e-18,
+      "off_grid_momentum_error": 7.161999450124761e-11,
+      "mass_radial_residual": 8.462013479249714e-12,
+      "lapse_radial_residual": 2.601523163558994e-12,
+      "exterior_mass": 0.7028081169353969,
+      "source_rate": 0.029999999999999995,
+      "minimum_source_jacobian": 0.01999999999998083,
+      "minimum_spatial_jacobian": 0.9999999999999983,
+      "radial_iterations": 5,
+      "canonical_history": [
+        0.03000004298372389,
+        4.298384533724109e-08,
+        1.2145146000008822e-13
+      ],
+      "seconds": 2.654837199996109
+    },
+    {
+      "branch": "reference",
+      "base_count": 17,
+      "scalar_free_count": 62,
+      "layer_degree": 6,
+      "radial_degree": 18,
+      "deformed": true,
+      "action_order": 20,
+      "label_order": 12,
+      "canonical_roundtrip": 6.938893903907228e-18,
+      "nodal_momentum_error": 2.6020852139652106e-18,
+      "off_grid_momentum_error": 3.153282355957939e-10,
+      "mass_radial_residual": 5.170796822944086e-11,
+      "lapse_radial_residual": 8.005037605007814e-12,
+      "exterior_mass": 0.7027968175576489,
+      "source_rate": 0.04,
+      "minimum_source_jacobian": 0.01800000000001547,
+      "minimum_spatial_jacobian": 0.9870129870129855,
+      "radial_iterations": 5,
+      "canonical_history": [
+        0.04200010502558236,
+        1.050261030852151e-07,
+        5.207362319126219e-13,
+        6.938893903907228e-18
+      ],
+      "seconds": 3.4544702999992296
+    },
+    {
+      "branch": "MTS",
+      "base_count": 17,
+      "scalar_free_count": 62,
+      "layer_degree": 6,
+      "radial_degree": 18,
+      "deformed": true,
+      "action_order": 20,
+      "label_order": 12,
+      "canonical_roundtrip": 6.938893903907228e-18,
+      "nodal_momentum_error": 1.951563910473908e-18,
+      "off_grid_momentum_error": 3.153304595790527e-10,
+      "mass_radial_residual": 3.8572787379540646e-11,
+      "lapse_radial_residual": 9.557968999596156e-12,
+      "exterior_mass": 0.7028110976734486,
+      "source_rate": 0.039999999999999994,
+      "minimum_source_jacobian": 0.01800000000001547,
+      "minimum_spatial_jacobian": 0.9870129870129855,
+      "radial_iterations": 5,
+      "canonical_history": [
+        0.04200010502693094,
+        1.0502745167312311e-07,
+        5.207501097004297e-13,
+        1.3877787807814457e-17
+      ],
+      "seconds": 3.5261593000032008
+    },
+    {
+      "branch": "reference",
+      "base_count": 33,
+      "scalar_free_count": 94,
+      "layer_degree": 4,
+      "radial_degree": 14,
+      "deformed": false,
+      "action_order": 20,
+      "label_order": 12,
+      "canonical_roundtrip": 1.734723475976807e-17,
+      "nodal_momentum_error": 8.673617379884035e-19,
+      "off_grid_momentum_error": 4.2156262890767106e-10,
+      "mass_radial_residual": 1.8711088234368844e-11,
+      "lapse_radial_residual": 5.924410267921232e-12,
+      "exterior_mass": 0.7027941644103405,
+      "source_rate": 0.030000000000000006,
+      "minimum_source_jacobian": 0.019999999999998377,
+      "minimum_spatial_jacobian": 0.9999999999999996,
+      "radial_iterations": 5,
+      "canonical_history": [
+        0.030000043003446143,
+        4.300356768946467e-08,
+        1.2155207396169487e-13
+      ],
+      "seconds": 3.56052059999638
+    },
+    {
+      "branch": "MTS",
+      "base_count": 33,
+      "scalar_free_count": 94,
+      "layer_degree": 4,
+      "radial_degree": 14,
+      "deformed": false,
+      "action_order": 20,
+      "label_order": 12,
+      "canonical_roundtrip": 1.734723475976807e-17,
+      "nodal_momentum_error": 6.505213034913027e-19,
+      "off_grid_momentum_error": 4.215629599959095e-10,
+      "mass_radial_residual": 2.4969720735512624e-11,
+      "lapse_radial_residual": 3.3245975417095508e-12,
+      "exterior_mass": 0.7027957260696067,
+      "source_rate": 0.030000000000000002,
+      "minimum_source_jacobian": 0.019999999999998377,
+      "minimum_spatial_jacobian": 0.9999999999999996,
+      "radial_iterations": 5,
+      "canonical_history": [
+        0.03000004300350709,
+        4.300362863376983e-08,
+        1.2154860451474292e-13
+      ],
+      "seconds": 3.6762718000027235
+    }
+  ],
+  "inputs": {
+    "scripts\\qualify_annular_live_P2_canonical_v2_20260918.py": "133da8eff7f58d8c9a0e48aca6714e48e6fd717d824e6004987eac562dfa048c",
+    "scripts\\navier_stokes_source_audit_20260908.py": "817c4cdff5bf22a88deea7771b4bbc960690397512bc07cdb639ee9ab33e4f0b",
+    "scripts\\sbp4_derived_operator_20260909.py": "065ea0be52b651d742082230fe8322a367e11fc5e20150c8f3d506d1f87e77d3",
+    "scripts\\sbp4_compatible_second_operator_20260909.py": "86c6f05f7cf0a07abe9d4caa5ca1038b9f64641085a1a4a4f03aeae3ac918a3c",
+    "scripts\\annular_compatible_current_restoring_20260909.py": "c2e15990fb70e4e0587e63f8f0182831b0a4185003cdcd295db97af9027d4051",
+    "scripts\\annular_gram_joint_action_20260909.py": "c45de66a16a3c44a1ebb5a68874c47a10ceb24815bda5ecc88d5bfad3d049591",
+    "scripts\\annular_covariant_time_transport_20260909.py": "d6a55d99b9f9de06e30ab7a6f090ae12b97b273a23930315740490324ab679a9",
+    "scripts\\annular_mixed_grid_basis_20260909.py": "5a9ceef39b681f376a7e6468a104dc6a4139365248ec64ea95fa8809993f147c",
+    "scripts\\annular_adm_mixed_action_20260909.py": "c5681003a7a495196428407f25e00babc525a35d953618e1911540f4b096fe05",
+    "scripts\\annular_adm_clock_quadratic_20260909.py": "e5ccec725f88125169ccf6f533d5f613343a7259fabad0c0bcf992e600d024be",
+    "scripts\\annular_constraint_routhian_20260909.py": "62a5cf9ac8f8e73ee56bc0c46f29e5ed560692cb19a1125ba848f15c72b1dfd8",
+    "scripts\\annular_metric_link_quadratic_20260909.py": "9555ff3da29cf2522ac67cb8f3a2e3b44420464392e1029cc31410542d96e63b",
+    "scripts\\annular_released_hermite_action_20260909.py": "360d565ed558fd83121d11d59f9096d1ebf7fc49f288ca5d8bf7e4f062cac145",
+    "scripts\\annular_action_boundary_current_20260909.py": "8b702d8f7610d686bebed3ea1af73d94b0d33fe5cc7dbe3e0faee4adbd98ce98",
+    "scripts\\annular_metric_flux_jets_20260909.py": "a1c5e3db71e68ebdd69259d47e50bd1d9cecbba51034a55d5c791ad09bada3a0",
+    "scripts\\annular_nonlinear_history_20260912.py": "7747f735107c7c5bb2eae1b9e213354fc9d8856597328cbe697389ec1a96a2fd",
+    "scripts\\annular_covariant_scalar_action_20260912.py": "ccf97c4622e79a5816e094b3001e0513e7cd16f3a424fafeade04de85bca6a4f",
+    "scripts\\annular_finite_width_bulk_current_20260913.py": "da2ca4c2fab7315b4738007aafff59f38be0d90cf4f121706a32afa16f060601",
+    "scripts\\annular_horizontal_clock_evolution_20260913.py": "985843dab67ab06c85c97b32042d48f6ed5342bf578c3518bbad132cb731cd3d",
+    "scripts\\annular_compatible_h_evolution_20260914.py": "88424b14891e92d7780077619e02e5dc3e166806ed9c22924f0f03682e4e97e1",
+    "scripts\\annular_reference_continuum_shell_20260914.py": "5cbb6013083eafb55181d5a14de236685835c51ed36f26b12f0b4cc02edd9409",
+    "scripts\\annular_source_gravity_collar_20260914.py": "65d8b6c1a421bac8b56420df81630647155043b7b35031365d3f708ab94c7fa2",
+    "scripts\\derive_annular_source_gravity_20260914.py": "97861e2bff4aa48b4408f30a71379b32b5133439bc4d456d9b6426d544bacdbc",
+    "scripts\\annular_covariant_cut_action_20260915.py": "928f830561a0237f5297897bf690e4a53ca0ffc778b2967c9726223e9fd4176f",
+    "scripts\\annular_covariant_cut_action_v2_20260915.py": "0c24f5c974b4a5d4cd78bb395d8fa71070130e271018eb769d1ef19c2fdc828e",
+    "scripts\\annular_dynamical_source_20260914.py": "b4d623cb63ee77b589bf4a1d1162e281680893b5743df42fe323b90f3c38642a",
+    "scripts\\annular_moving_collar_action_20260914.py": "ac6abbd604a12709b26274ebd53747083d71fdb76f6ac3d90e67b011ee306597",
+    "scripts\\annular_moving_collar_sparse_20260914.py": "2d4b8bfcd5ec95b7b9ff2a2b6999f0c0edba7960a984cdd72bfca1daf0e8cb6d",
+    "scripts\\annular_sparse_repaired_cut_20260915.py": "8e47042aa5e58430e845b8434f6ff47ab322360e0602fd4a482f745737319a99",
+    "scripts\\annular_source_fitted_action_20260915.py": "d409c37c30313d0e05cfd7d0015a587188e1984460da6dc92c2d8fef15f0252f",
+    "scripts\\annular_quadratic_source_fitted_action_20260915.py": "cde77a8db83b284034f98f44d785b58a5f1cad0e4c41113e28c0a47ddd6fd92c",
+    "scripts\\annular_locally_refined_source_action_20260916.py": "81e3fef722d868fcd4e53ebc69b119afed0cc2253cb21e6e88e457424c6d128d",
+    "scripts\\annular_cut_initial_data_20260915.py": "47618f0af63d126619f4d2b6ccf97618ebf8b6ca84f3a77e3cdefe6e57e2eda3",
+    "scripts\\verify_annular_cut_metric_and_inversion_20260915.py": "b90147c1e97702ffbcccd47e873c469a5b97abac2a626f3f1c2f700cd3a43d45",
+    "scripts\\annular_repaired_live_geometry_20260915.py": "aaae4f759077bcecae39ad8ba7aa7362aa371c5bdf98ec872b6d5408c4d5154d",
+    "scripts\\annular_live_P2_canonical_v2_20260918.py": "2a6785ab15cd5c5aa181d0e55db1b1170eb221e7d32f9a4f6a1c3bc0a9352192"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-live-P2-canonical-attempt02\\executed-qualify_annular_live_P2_canonical_v2_20260918.py": "133da8eff7f58d8c9a0e48aca6714e48e6fd717d824e6004987eac562dfa048c",
+    "source-intake\\navier-stokes\\20260914\\annular-live-P2-canonical-attempt02\\reference-17-4-False.npz": "8b9c3403622195c57970974df594c2793ef89b0cc002dc3578822bcbe4ed84b1",
+    "source-intake\\navier-stokes\\20260914\\annular-live-P2-canonical-attempt02\\MTS-17-4-False.npz": "8b57d27071786fbb658660e4c78b34bd79a282c88a1c80fcbb94c7150cae8522",
+    "source-intake\\navier-stokes\\20260914\\annular-live-P2-canonical-attempt02\\reference-17-8-False.npz": "4c6c5bd405fc07a6fd8505329159621d599d19e2fb019a4d49377fcc9115b167",
+    "source-intake\\navier-stokes\\20260914\\annular-live-P2-canonical-attempt02\\MTS-17-8-False.npz": "d09c30016abbdc4320e3a815875d20cc1e776c78fd382c50783bdab0cf7b50f4",
+    "source-intake\\navier-stokes\\20260914\\annular-live-P2-canonical-attempt02\\reference-17-6-True.npz": "b81f876f2c6b3f735c153b315a1d5270bb374da632864893e76512ba178d4142",
+    "source-intake\\navier-stokes\\20260914\\annular-live-P2-canonical-attempt02\\MTS-17-6-True.npz": "ba6ffb8d60e8b687e19a0628e9964683acf51e1a9f088be93106390c8dc7ff59",
+    "source-intake\\navier-stokes\\20260914\\annular-live-P2-canonical-attempt02\\reference-33-4-False.npz": "7cd57b794793b3572fe06d89337a2730f92b9d1f09faf1a6217d337a9a0dd901",
+    "source-intake\\navier-stokes\\20260914\\annular-live-P2-canonical-attempt02\\MTS-33-4-False.npz": "d3879d15f4294418973026954508dd0b9dc1e796ae23cb6ea1d02c14dde46ae9"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "actual_finite_P2_banded_inverse": true,
+  "supersedes_machine_width_radial_partition_failure": "annular-live-P2-canonical-attempt01",
+  "coincident_edges_merged_within_32_scaled_machine_eps": true,
+  "continuum_pointwise_momentum_not_substituted": true,
+  "all_Gram_rows_retained": true,
+  "material_method": "Chebyshev collocation; not an exact finite-label Galerkin action.",
+  "no_forward_evolution": true,
+  "original_stored_actions_and_data_unchanged": true,
+  "full_live_P2_force_convergence_proven": false,
+  "independent_temporal_current_tested": false,
+  "global_coupled_fixed_point_uniqueness_proven": false,
+  "github_action": false,
+  "subagents_used": false,
+  "coupled_live_P2_canonical_snapshots_solved": true,
+  "metric_tangent_derived_and_qualified": true,
+  "finite_metric_Legendre_envelope_qualified": true,
+  "natural_norm_bound_not_inverse_mesh_estimate": true,
+  "completed_at": "2026-09-18T13:04:37.560366+00:00"
+}

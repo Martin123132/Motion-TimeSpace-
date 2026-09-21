@@ -1,0 +1,95 @@
+{
+  "state": "failed",
+  "checks": [
+    {
+      "name": "independent_dense_mpmath_False",
+      "passed": true,
+      "detail": "1.6642708742913604949121819743569720016494478409493030884768491933189984313653716e-47"
+    },
+    {
+      "name": "independent_dense_mpmath_True",
+      "passed": true,
+      "detail": "4.1608711293029784390009948568798793056482508698730344657158889911167532154815965e-48"
+    },
+    {
+      "name": "independent_affine_increment_fixture",
+      "passed": true,
+      "detail": "4E-48"
+    },
+    {
+      "name": "factor_assembly_and_LDL_dense_oracle",
+      "passed": true,
+      "detail": "1.7992966385867342766009650772879693855662711323810339438507313463366168780198582e-47"
+    },
+    {
+      "name": "old_failed_strict_qualification_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "annular-action-exponential-response-attempt01_complete_and_hash_reference-coarse-action.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "annular-action-exponential-response-attempt01_complete_and_hash_reference-fine-action.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "annular-moving-duhamel-trajectory-attempt01_complete_and_hash_reference-point032.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "annular-full-force-endpoints-attempt01_complete_and_hash_reference-spatial32-force-covector.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "annular-full-force-endpoints-attempt01_complete_and_hash_reference-spatial64-force-covector.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference_same_spatial_transfer",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "cases": [],
+  "inputs": {
+    "scripts\\derive_annular_decimal_duality_20260919.py": "677d5cebd6da7a208ce7d4daf62ea2fd756b50ed98dc2ea06dd58ea69a86111e",
+    "source-intake\\navier-stokes\\20260914\\annular-full-force-transport-attempt02\\status.json": "8112da05889d35cde730f49b206c04006cb02ab6aff6cc0e46c0085e036c650a",
+    "source-intake\\navier-stokes\\20260914\\annular-action-exponential-response-attempt01\\status.json": "5e8941725b911efe45d710d69c2937ff7e819dfde027fea76fbe6ca9f6ef4d27",
+    "source-intake\\navier-stokes\\20260914\\annular-action-exponential-response-attempt01\\reference-coarse-action.npz": "f4ad10f201897bc55e7ca7939fbb39f0f08ddf28f12909816f451ea4d3f6d375",
+    "source-intake\\navier-stokes\\20260914\\annular-action-exponential-response-attempt01\\reference-fine-action.npz": "5e52b588d64d30253293a642d18f0522bd9207e4bc7cf91edc2ec0986b11dc00",
+    "source-intake\\navier-stokes\\20260914\\annular-moving-duhamel-trajectory-attempt01\\status.json": "d757f98c403e324ce8646a58cb89390d3f1d5eef7ce3b36000a6d4f1dd06e0b3",
+    "source-intake\\navier-stokes\\20260914\\annular-moving-duhamel-trajectory-attempt01\\reference-point032.npz": "b3cb71054af2e92d0f2bc7ae2f7bbdf731149c7f2ed51887f43432db180bb1fa",
+    "source-intake\\navier-stokes\\20260914\\annular-full-force-endpoints-attempt01\\status.json": "7e449e80251449955bfb1632994034b0b0ee7aadca81bf3e451b489ca61d391b",
+    "source-intake\\navier-stokes\\20260914\\annular-full-force-endpoints-attempt01\\reference-spatial32-force-covector.npz": "d55417d7e06ec5dd3ad75b1e3484c100c3208144306c49f9d60cc4f4481b8582",
+    "source-intake\\navier-stokes\\20260914\\annular-full-force-endpoints-attempt01\\reference-spatial64-force-covector.npz": "c96fc42b7e1fc1e085c57e9e5ab6bdd1d007ffdd758673e643af29d89fd8a2e3"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-decimal-duality-attempt01\\executed-derive_annular_decimal_duality_20260919.py": "677d5cebd6da7a208ce7d4daf62ea2fd756b50ed98dc2ea06dd58ea69a86111e"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "github_action": false,
+  "subagents_used": false,
+  "no_new_evolution": true,
+  "original_action_unchanged": true,
+  "genuine_decimal_precision": true,
+  "fixed_saved_binary64_inputs_not_new_parent_precision": true,
+  "original_strict_dual_gate_pass": false,
+  "full_live_P2_force_convergence_proven": false,
+  "certified_continuous_time_bound": false,
+  "interval_roundoff_certificate": false,
+  "maximum_wall_seconds": 7200,
+  "controls": [],
+  "error": "ValueError('Saved mass is not exactly symmetric.')",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\derive_annular_decimal_duality_20260919.py\", line 82, in main\n    actions = [DecimalAction(item) for item in data]\n               ~~~~~~~~~~~~~^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\annular_decimal_transport_20260919.py\", line 50, in __init__\n    raise ValueError('Saved mass is not exactly symmetric.')\nValueError: Saved mass is not exactly symmetric.\n"
+}

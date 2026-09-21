@@ -1,0 +1,74 @@
+{
+  "state": "failed",
+  "checks": [
+    {
+      "name": "matrix_exponential_0.0",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "augmented_matrix_phi1_0.0",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "orthogonal_rotation_0.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matrix_exponential_1e-12",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "augmented_matrix_phi1_1e-12",
+      "passed": true,
+      "detail": 1.0097419586828951e-28
+    },
+    {
+      "name": "orthogonal_rotation_1e-12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matrix_exponential_1e-05",
+      "passed": true,
+      "detail": 9.547918011776346e-15
+    },
+    {
+      "name": "augmented_matrix_phi1_1e-05",
+      "passed": true,
+      "detail": 9.105604182983729e-21
+    },
+    {
+      "name": "orthogonal_rotation_1e-05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matrix_exponential_0.1",
+      "passed": false,
+      "detail": 3.262090597644374e-11
+    }
+  ],
+  "cases": [],
+  "inputs": {
+    "scripts\\verify_annular_P2_live_exponential_20260919.py": "2523c65bfe4144eceee55b01210e3a30ec5b803e6f58e764db3d4e5112c87dd2"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-P2-live-exponential-algebra-attempt01\\executed-verify_annular_P2_live_exponential_20260919.py": "2523c65bfe4144eceee55b01210e3a30ec5b803e6f58e764db3d4e5112c87dd2"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "github_action": false,
+  "subagents_used": false,
+  "full_live_P2_force_convergence_proven": false,
+  "live_annular_evolution": false,
+  "tests_are_manufactured_solver_controls": true,
+  "error": "RuntimeError('matrix_exponential_0.1: 3.262090597644374e-11')",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\verify_annular_P2_live_exponential_20260919.py\", line 31, in main\n    evidence.check('matrix_exponential_'+str(step), error < 2e-11, error)\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\annular_reference_continuum_shell_20260914.py\", line 41, in check\n    raise RuntimeError(name+': '+repr(detail))\nRuntimeError: matrix_exponential_0.1: 3.262090597644374e-11\n"
+}

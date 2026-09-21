@@ -1,0 +1,99 @@
+{
+  "state": "failed",
+  "checks": [
+    {
+      "name": "reference_finite_radial_geometry",
+      "passed": true,
+      "detail": {
+        "branch": "reference",
+        "seconds_per_evaluation": 0.051185499993152916,
+        "radial_constraint_defect": 5.500547256174701e-17,
+        "current_error": 6.388781678865999e-05,
+        "current_scale": 0.006453054553253659,
+        "relative_current_error": 0.009900399301048442,
+        "source_jacobian": 0.0009999999999857972,
+        "initial_outer_mass": 0.8002709891222349,
+        "independent_outer_mass_rate": -7.701334697335209e-17
+      }
+    },
+    {
+      "name": "MTS_finite_radial_geometry",
+      "passed": true,
+      "detail": {
+        "branch": "MTS",
+        "seconds_per_evaluation": 0.04987220000475645,
+        "radial_constraint_defect": 5.532242170269773e-17,
+        "current_error": 6.644133301444889e-05,
+        "current_scale": 0.006453052282958026,
+        "relative_current_error": 0.010296109515479197,
+        "source_jacobian": 0.0009999999999857972,
+        "initial_outer_mass": 0.8002713760836003,
+        "independent_outer_mass_rate": -7.841198911342376e-17
+      }
+    },
+    {
+      "name": "independent_live_dust_control",
+      "passed": true,
+      "detail": 9.510136276570658e-14
+    },
+    {
+      "name": "independent_old_flat_action_control",
+      "passed": true,
+      "detail": 1.1011428314305904e-19
+    },
+    {
+      "name": "reference_independent_temporal_mass_equation",
+      "passed": false,
+      "detail": {
+        "branch": "reference",
+        "seconds_per_evaluation": 0.051185499993152916,
+        "radial_constraint_defect": 5.500547256174701e-17,
+        "current_error": 6.388781678865999e-05,
+        "current_scale": 0.006453054553253659,
+        "relative_current_error": 0.009900399301048442,
+        "source_jacobian": 0.0009999999999857972,
+        "initial_outer_mass": 0.8002709891222349,
+        "independent_outer_mass_rate": -7.701334697335209e-17
+      }
+    }
+  ],
+  "cases": [
+    {
+      "branch": "reference",
+      "seconds_per_evaluation": 0.051185499993152916,
+      "radial_constraint_defect": 5.500547256174701e-17,
+      "current_error": 6.388781678865999e-05,
+      "current_scale": 0.006453054553253659,
+      "relative_current_error": 0.009900399301048442,
+      "source_jacobian": 0.0009999999999857972,
+      "initial_outer_mass": 0.8002709891222349,
+      "independent_outer_mass_rate": -7.701334697335209e-17
+    },
+    {
+      "branch": "MTS",
+      "seconds_per_evaluation": 0.04987220000475645,
+      "radial_constraint_defect": 5.532242170269773e-17,
+      "current_error": 6.644133301444889e-05,
+      "current_scale": 0.006453052282958026,
+      "relative_current_error": 0.010296109515479197,
+      "source_jacobian": 0.0009999999999857972,
+      "initial_outer_mass": 0.8002713760836003,
+      "independent_outer_mass_rate": -7.841198911342376e-17
+    }
+  ],
+  "inputs": {
+    "scripts\\qualify_annular_moving_live_gravity_20260914.py": "8b1c7fee71e3ae8970666a5e0d74ee6b983c6abdf866367efe215263acd8172a"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-moving-live-gravity-qualification-attempt01\\executed-qualify_annular_moving_live_gravity_20260914.py": "8b1c7fee71e3ae8970666a5e0d74ee6b983c6abdf866367efe215263acd8172a",
+    "source-intake\\navier-stokes\\20260914\\annular-moving-live-gravity-qualification-attempt01\\reference-state-current.npz": "54e86a10a84f2a2dd430b639aecaa8ec01cfceeac2cb40260675de1a315fe96f",
+    "source-intake\\navier-stokes\\20260914\\annular-moving-live-gravity-qualification-attempt01\\MTS-state-current.npz": "62a4c15113c4052be4289189d779203b3460d121f01d9ab98bc937993453806e"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "error": "RuntimeError(\"reference_independent_temporal_mass_equation: {'branch': 'reference', 'seconds_per_evaluation': 0.051185499993152916, 'radial_constraint_defect': 5.500547256174701e-17, 'current_error': 6.388781678865999e-05, 'current_scale': 0.006453054553253659, 'relative_current_error': 0.009900399301048442, 'source_jacobian': 0.0009999999999857972, 'initial_outer_mass': 0.8002709891222349, 'independent_outer_mass_rate': -7.701334697335209e-17}\")",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\qualify_annular_moving_live_gravity_20260914.py\", line 74, in main\n    evidence.check(row['branch']+'_independent_temporal_mass_equation',row['current_error']<2e-7,row)\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\annular_reference_continuum_shell_20260914.py\", line 41, in check\n    raise RuntimeError(name+': '+repr(detail))\nRuntimeError: reference_independent_temporal_mass_equation: {'branch': 'reference', 'seconds_per_evaluation': 0.051185499993152916, 'radial_constraint_defect': 5.500547256174701e-17, 'current_error': 6.388781678865999e-05, 'current_scale': 0.006453054553253659, 'relative_current_error': 0.009900399301048442, 'source_jacobian': 0.0009999999999857972, 'initial_outer_mass': 0.8002709891222349, 'independent_outer_mass_rate': -7.701334697335209e-17}\n"
+}

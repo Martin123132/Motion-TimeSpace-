@@ -1,0 +1,70 @@
+{
+  "state": "failed",
+  "checks": [
+    {
+      "name": "annular-GR-projection-qualification-attempt01_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "annular-dense-GR-references-attempt01_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "384_input_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "384-257_material_source_identity",
+      "passed": true,
+      "detail": 4.336808689942018e-19
+    },
+    {
+      "name": "384-257_finite_full_projection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "384-257reference_original_momentum_covectors",
+      "passed": true,
+      "detail": 2.7634193041430294e-14
+    },
+    {
+      "name": "384-257reference_coupled_force_defect_identity",
+      "passed": true,
+      "detail": 1.0188218168693131e-18
+    },
+    {
+      "name": "384-257reference_source_clock_kinematics",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "cases": [],
+  "inputs": {
+    "scripts\\derive_annular_GR_projection_residual_20260916.py": "ed7e54f14e59a75404c795b47132f318eca43571bdbbc340bfadd4c582c5472c",
+    "source-intake\\navier-stokes\\20260914\\annular-GR-projection-qualification-attempt01\\status.json": "3951ac2f584e1c9f43777e3a0fceb20bf27c4acf03863913ae34b17655ee7b2d",
+    "source-intake\\navier-stokes\\20260914\\annular-dense-GR-references-attempt01\\status.json": "65f6b040fd662348ba3c92091d6d6ba3830c7eaab9ed6e0a9f3ba8e5ceeb4851",
+    "source-intake\\navier-stokes\\20260914\\annular-dense-GR-references-attempt01\\oracle-384.npz": "ee7440e9c69c1824a3886941268e3d3341434636fa7b764c3a551d08c5049caf"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-GR-projection-residual-attempt01\\executed-derive_annular_GR_projection_residual_20260916.py": "ed7e54f14e59a75404c795b47132f318eca43571bdbbc340bfadd4c582c5472c"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "finite_future_trajectories_read": false,
+  "force_fit": false,
+  "force_correction": false,
+  "original_action_unchanged": true,
+  "all_modes_and_Gram_rows_retained": true,
+  "projection_kinematic_defect_retained": true,
+  "prescribed_flat_background_only": true,
+  "independent_reference_resolution_not_rigorous_error_bound": true,
+  "error": "TypeError(\"bad operand type for abs(): 'list'\")",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\derive_annular_GR_projection_residual_20260916.py\", line 126, in main\n    max_source_part=float(np.max(abs(source_parts))),max_field_part=float(np.max(abs(field_parts))),\n                                 ~~~^^^^^^^^^^^^^^\nTypeError: bad operand type for abs(): 'list'\n"
+}

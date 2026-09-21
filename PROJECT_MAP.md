@@ -4,9 +4,10 @@
 
 - `README.md` gives the public overview.
 - `CLAIM_CEILING.md` states the current claim boundary.
-- `docs/status/STATUS-2026-09-09.md` gives the current status snapshot.
-- `docs/status/PUBLICATION-NOTES-2026-09-09.md` records the exact current update scope and omissions.
-- `docs/status/PUBLICATION-MANIFEST-2026-09-09.csv` records the complete source-to-public byte/hash mapping.
+- `docs/status/STATUS-2026-09-21.md` gives the current status snapshot.
+- `docs/status/PUBLICATION-NOTES-2026-09-21.md` records the exact current update scope and omissions.
+- `research-programme/updates/20260921/MANIFEST.csv` maps all latest sealed source paths, including explicit local-only raw arrays.
+- `research-programme/updates/20260921/README.md` links the latest action/current derivations and bounded catalogue.
 - `research-programme/catalogue/README.md` provides bounded direct-link indexes when GitHub caps large folder listings.
 - `docs/theory-gates/LOCAL-GR-NEWTON-GATES.md` gives the main route from MTS toward GR/Newton.
 
@@ -21,6 +22,13 @@
 - `research-programme/source-intake/mts_residuals/` contains compact CSV/register artifacts used by the residual and theorem-gate workflow.
 
 ## Current Derivation Thread
+
+The 2026-09-21 dated update advances the retained finite action through
+localized energy balance, independent Ward-source prediction, moving-source
+Legendre current, and direct horizontal metric-current variation. Its next
+equation is the radial/areal-radius stress variation and angular Einstein
+closure. Read the dated status/package above for actual numerical results,
+the six preserved coarse failures, their step refinement and raw-data scope.
 
 The 2026-09-09 update preserves the earlier local/empirical theorem chain and
 extends the public record through checkpoint `1530`. The most useful milestones are:

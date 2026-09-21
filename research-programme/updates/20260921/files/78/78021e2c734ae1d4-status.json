@@ -1,0 +1,66 @@
+{
+  "state": "failed",
+  "checks": [
+    {
+      "name": "full_lapse_variation_mass_constraint",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full_mass_variation_lapse_constraint",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vacuum_mass_equation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vacuum_lapse_equation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Gram_mass_loading_sign",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Gram_lapse_loading_sign",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sourced_boundary_cancellation",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "cases": [],
+  "inputs": {
+    "scripts\\derive_annular_candidate_radial_constraint_v2_20260920.py": "b16d1e507766700c9942d1d0506973117e441ea30625b3f421a2baeb36fe9a49"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-candidate-radial-derivation-attempt02\\executed-derive_annular_candidate_radial_constraint_v2_20260920.py": "b16d1e507766700c9942d1d0506973117e441ea30625b3f421a2baeb36fe9a49"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "github_action": false,
+  "subagents_used": false,
+  "no_new_evolution": true,
+  "original_live_action_unchanged": true,
+  "candidate_only": true,
+  "polar_zero_shift_only": true,
+  "radial_constraint_derived": false,
+  "radial_jacobian_qualified": false,
+  "self_consistent_candidate_metric_solved": false,
+  "physical_force_mismatch_fixed": false,
+  "full_live_P2_force_convergence_proven": false,
+  "certified_continuous_time_bound": false,
+  "error": "TypeError(\"Basic.subs() missing 1 required positional argument: 'arg1'\")",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\derive_annular_candidate_radial_constraint_v2_20260920.py\", line 48, in main\n    evidence.check('omitted_gravity_boundary_detected', sp.simplify((-outer_delta/coupling+multiplier*inner_delta).subs(\n                                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        multiplier=inner_lapse/(coupling*inner_root))) != 0)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: Basic.subs() missing 1 required positional argument: 'arg1'\n"
+}

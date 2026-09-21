@@ -1,0 +1,410 @@
+{
+  "state": "complete",
+  "checks": [
+    {
+      "name": "qualified_isolated_inputs_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "future_finite_trajectory_read_rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "isolated_input_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference_finite_positive_inertia",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference_original_initial_state",
+      "passed": true,
+      "detail": 1.9387045606711586e-26
+    },
+    {
+      "name": "reference_full_original_horizon",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS_finite_positive_inertia",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS_original_initial_state",
+      "passed": true,
+      "detail": 1.9387045606711586e-26
+    },
+    {
+      "name": "MTS_full_original_horizon",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "cases": [
+    {
+      "branch": "reference",
+      "count": 1025,
+      "splits": 8,
+      "degree": 512,
+      "stride": 1,
+      "seconds": 4626.745828000014,
+      "rhs_evaluations": 1455800,
+      "spectral_history": [
+        {
+          "largest_field_eigenvalue": 37400840415.78001,
+          "eigen_residual": 7.218098792913344e-16,
+          "coupled_factor": 1.0306896078416992,
+          "frequency_estimate": 199328.12326375395,
+          "maximum_step": 3.2107862629757593e-06,
+          "frozen_spectrum_is_not_a_nonlinear_stability_proof": true,
+          "used_step": 3.2107862629757593e-06
+        },
+        {
+          "largest_field_eigenvalue": 37132079901.069405,
+          "eigen_residual": 7.458748277474657e-16,
+          "coupled_factor": 1.0257581752356961,
+          "frequency_estimate": 197660.3796129013,
+          "maximum_step": 3.237877015380513e-06,
+          "frozen_spectrum_is_not_a_nonlinear_stability_proof": true,
+          "used_step": 3.237877015380513e-06
+        },
+        {
+          "largest_field_eigenvalue": 36867082932.230095,
+          "eigen_residual": 6.761635963341479e-16,
+          "coupled_factor": 1.0181751341110417,
+          "frequency_estimate": 195497.79996627767,
+          "maximum_step": 3.2736941290919724e-06,
+          "frozen_spectrum_is_not_a_nonlinear_stability_proof": true,
+          "used_step": 3.2736941290919724e-06
+        },
+        {
+          "largest_field_eigenvalue": 36606640813.70357,
+          "eigen_residual": 9.899937029476595e-16,
+          "coupled_factor": 1.0136074334198497,
+          "frequency_estimate": 193932.11141186926,
+          "maximum_step": 3.300123921410727e-06,
+          "frozen_spectrum_is_not_a_nonlinear_stability_proof": true,
+          "used_step": 3.300123921410727e-06
+        },
+        {
+          "largest_field_eigenvalue": 36351500228.10398,
+          "eigen_residual": 5.125552878937678e-16,
+          "coupled_factor": 1.0094589290395275,
+          "frequency_estimate": 192464.13995278341,
+          "maximum_step": 3.3252947804043344e-06,
+          "frozen_spectrum_is_not_a_nonlinear_stability_proof": true,
+          "used_step": 3.3252947804043344e-06
+        },
+        {
+          "largest_field_eigenvalue": 36100690414.82766,
+          "eigen_residual": 6.434018168924625e-16,
+          "coupled_factor": 1.005000177961221,
+          "frequency_estimate": 190951.859769756,
+          "maximum_step": 3.351630095520896e-06,
+          "frozen_spectrum_is_not_a_nonlinear_stability_proof": true,
+          "used_step": 3.351630095520896e-06
+        },
+        {
+          "largest_field_eigenvalue": 35849739649.92117,
+          "eigen_residual": 4.831431893339855e-16,
+          "coupled_factor": 1.0046336198461232,
+          "frequency_estimate": 190217.605624691,
+          "maximum_step": 3.3645676376704716e-06,
+          "frozen_spectrum_is_not_a_nonlinear_stability_proof": true,
+          "used_step": 3.3645676376704716e-06
+        },
+        {
+          "largest_field_eigenvalue": 35606141632.47965,
+          "eigen_residual": 7.358025064125103e-16,
+          "coupled_factor": 1.013612786580794,
+          "frequency_estimate": 191264.57421046996,
+          "maximum_step": 3.3461502353056555e-06,
+          "frozen_spectrum_is_not_a_nonlinear_stability_proof": true,
+          "used_step": 3.3461502353056555e-06
+        }
+      ],
+      "maximum_correction": 1.4006323122076854e-06,
+      "maximum_nonlinear_flow_remainder": 2.0500929990077688e-10,
+      "maximum_linear_vs_reconstructed_force": 6.1835577755192314e-12,
+      "energy_relative_drift": 9.913790727747321e-14,
+      "maximum_predicted_GR_force_difference": 2.5024420736421624e-07,
+      "future_finite_states_opened": false
+    },
+    {
+      "branch": "MTS",
+      "count": 1025,
+      "splits": 8,
+      "degree": 512,
+      "stride": 1,
+      "seconds": 8091.81399039994,
+      "rhs_evaluations": 2338040,
+      "spectral_history": [
+        {
+          "largest_field_eigenvalue": 96141921708.93011,
+          "eigen_residual": 2.1351980393143688e-16,
+          "coupled_factor": 1.0306896078416992,
+          "frequency_estimate": 319583.4615899239,
+          "maximum_step": 2.002606758234634e-06,
+          "frozen_spectrum_is_not_a_nonlinear_stability_proof": true,
+          "used_step": 2.002606758234634e-06
+        },
+        {
+          "largest_field_eigenvalue": 95563733876.6415,
+          "eigen_residual": 7.306368623679072e-16,
+          "coupled_factor": 1.0257581752356961,
+          "frequency_estimate": 317096.5683396029,
+          "maximum_step": 2.0183126022183096e-06,
+          "frozen_spectrum_is_not_a_nonlinear_stability_proof": true,
+          "used_step": 2.0183126022183096e-06
+        },
+        {
+          "largest_field_eigenvalue": 94994148546.02516,
+          "eigen_residual": 8.367976543059939e-16,
+          "coupled_factor": 1.0181751341110417,
+          "frequency_estimate": 313812.9877247822,
+          "maximum_step": 2.0394312059553375e-06,
+          "frozen_spectrum_is_not_a_nonlinear_stability_proof": true,
+          "used_step": 2.0394312059553375e-06
+        },
+        {
+          "largest_field_eigenvalue": 94434859076.09326,
+          "eigen_residual": 1.6301074644274744e-16,
+          "coupled_factor": 1.0136074334198497,
+          "frequency_estimate": 311484.1520227302,
+          "maximum_step": 2.054679173383103e-06,
+          "frozen_spectrum_is_not_a_nonlinear_stability_proof": true,
+          "used_step": 2.054679173383103e-06
+        },
+        {
+          "largest_field_eigenvalue": 93887456407.67345,
+          "eigen_residual": 4.86582873993786e-16,
+          "coupled_factor": 1.0094589290395275,
+          "frequency_estimate": 309308.9171359233,
+          "maximum_step": 2.06912883704144e-06,
+          "frozen_spectrum_is_not_a_nonlinear_stability_proof": true,
+          "used_step": 2.06912883704144e-06
+        },
+        {
+          "largest_field_eigenvalue": 93349845284.33902,
+          "eigen_residual": 3.047555636792004e-16,
+          "coupled_factor": 1.005000177961221,
+          "frequency_estimate": 307059.78387725883,
+          "maximum_step": 2.08428466899406e-06,
+          "frozen_spectrum_is_not_a_nonlinear_stability_proof": true,
+          "used_step": 2.08428466899406e-06
+        },
+        {
+          "largest_field_eigenvalue": 92812444055.68959,
+          "eigen_residual": 1.7292015754798355e-16,
+          "coupled_factor": 1.0046336198461232,
+          "frequency_estimate": 306062.98689081514,
+          "maximum_step": 2.091072842559409e-06,
+          "frozen_spectrum_is_not_a_nonlinear_stability_proof": true,
+          "used_step": 2.091072842559409e-06
+        },
+        {
+          "largest_field_eigenvalue": 92291294000.3756,
+          "eigen_residual": 1.6532896868411318e-16,
+          "coupled_factor": 1.013612786580794,
+          "frequency_estimate": 307930.31628704316,
+          "maximum_step": 2.0783923054961947e-06,
+          "frozen_spectrum_is_not_a_nonlinear_stability_proof": true,
+          "used_step": 2.0783923054961947e-06
+        }
+      ],
+      "maximum_correction": 6.821806495755578e-06,
+      "maximum_nonlinear_flow_remainder": 1.0994183805533575e-07,
+      "maximum_linear_vs_reconstructed_force": 3.315240145341375e-09,
+      "energy_relative_drift": 4.141996848574506e-10,
+      "maximum_predicted_GR_force_difference": 9.191215146310083e-07,
+      "future_finite_states_opened": false
+    }
+  ],
+  "inputs": {
+    "scripts\\run_annular_GR_causal_refinement_20260917.py": "04f960b958bdb6c9a04b1a7aace528e8f50a6184b522f8fde56fef2a9bb13db7",
+    "source-intake\\navier-stokes\\20260914\\annular-GR-causal-refinement-inputs-attempt01\\status.json": "12b1abbc5b89f31a96397b3a4ae865c68aeeab15f796026eb6c8e603ec677016",
+    "source-intake\\navier-stokes\\20260914\\annular-GR-causal-refinement-inputs-attempt01\\GR-only-512-1025.npz": "321a394b00e1a8e5c566664b724f85e9153ca2d176b399ec53a63e2bdc71217c",
+    "scripts\\navier_stokes_source_audit_20260908.py": "817c4cdff5bf22a88deea7771b4bbc960690397512bc07cdb639ee9ab33e4f0b",
+    "scripts\\sbp4_derived_operator_20260909.py": "065ea0be52b651d742082230fe8322a367e11fc5e20150c8f3d506d1f87e77d3",
+    "scripts\\sbp4_compatible_second_operator_20260909.py": "86c6f05f7cf0a07abe9d4caa5ca1038b9f64641085a1a4a4f03aeae3ac918a3c",
+    "scripts\\annular_compatible_current_restoring_20260909.py": "c2e15990fb70e4e0587e63f8f0182831b0a4185003cdcd295db97af9027d4051",
+    "scripts\\annular_gram_joint_action_20260909.py": "c45de66a16a3c44a1ebb5a68874c47a10ceb24815bda5ecc88d5bfad3d049591",
+    "scripts\\annular_covariant_time_transport_20260909.py": "d6a55d99b9f9de06e30ab7a6f090ae12b97b273a23930315740490324ab679a9",
+    "scripts\\annular_mixed_grid_basis_20260909.py": "5a9ceef39b681f376a7e6468a104dc6a4139365248ec64ea95fa8809993f147c",
+    "scripts\\annular_adm_mixed_action_20260909.py": "c5681003a7a495196428407f25e00babc525a35d953618e1911540f4b096fe05",
+    "scripts\\annular_adm_clock_quadratic_20260909.py": "e5ccec725f88125169ccf6f533d5f613343a7259fabad0c0bcf992e600d024be",
+    "scripts\\annular_constraint_routhian_20260909.py": "62a5cf9ac8f8e73ee56bc0c46f29e5ed560692cb19a1125ba848f15c72b1dfd8",
+    "scripts\\annular_metric_link_quadratic_20260909.py": "9555ff3da29cf2522ac67cb8f3a2e3b44420464392e1029cc31410542d96e63b",
+    "scripts\\annular_released_hermite_action_20260909.py": "360d565ed558fd83121d11d59f9096d1ebf7fc49f288ca5d8bf7e4f062cac145",
+    "scripts\\annular_action_boundary_current_20260909.py": "8b702d8f7610d686bebed3ea1af73d94b0d33fe5cc7dbe3e0faee4adbd98ce98",
+    "scripts\\annular_metric_flux_jets_20260909.py": "a1c5e3db71e68ebdd69259d47e50bd1d9cecbba51034a55d5c791ad09bada3a0",
+    "scripts\\annular_nonlinear_history_20260912.py": "7747f735107c7c5bb2eae1b9e213354fc9d8856597328cbe697389ec1a96a2fd",
+    "scripts\\annular_covariant_scalar_action_20260912.py": "ccf97c4622e79a5816e094b3001e0513e7cd16f3a424fafeade04de85bca6a4f",
+    "scripts\\annular_finite_width_bulk_current_20260913.py": "da2ca4c2fab7315b4738007aafff59f38be0d90cf4f121706a32afa16f060601",
+    "scripts\\annular_horizontal_clock_evolution_20260913.py": "985843dab67ab06c85c97b32042d48f6ed5342bf578c3518bbad132cb731cd3d",
+    "scripts\\annular_compatible_h_evolution_20260914.py": "88424b14891e92d7780077619e02e5dc3e166806ed9c22924f0f03682e4e97e1",
+    "scripts\\annular_reference_continuum_shell_20260914.py": "5cbb6013083eafb55181d5a14de236685835c51ed36f26b12f0b4cc02edd9409",
+    "scripts\\annular_source_gravity_collar_20260914.py": "65d8b6c1a421bac8b56420df81630647155043b7b35031365d3f708ab94c7fa2",
+    "scripts\\derive_annular_source_gravity_20260914.py": "97861e2bff4aa48b4408f30a71379b32b5133439bc4d456d9b6426d544bacdbc",
+    "scripts\\annular_GR_causal_predictor_20260917.py": "819ba8bb68cc79884ee3871a01771cca2cae90a54e7f35229e7911ced41aa432",
+    "scripts\\annular_flat_preassembled_flow_20260916.py": "d98631ce1a3cb56eb1fb6ea3c1a46c09e60b28f3c4ce9a70097eb618c0be9687",
+    "scripts\\annular_covariant_cut_action_20260915.py": "928f830561a0237f5297897bf690e4a53ca0ffc778b2967c9726223e9fd4176f",
+    "scripts\\annular_covariant_cut_action_v2_20260915.py": "0c24f5c974b4a5d4cd78bb395d8fa71070130e271018eb769d1ef19c2fdc828e",
+    "scripts\\annular_dynamical_source_20260914.py": "b4d623cb63ee77b589bf4a1d1162e281680893b5743df42fe323b90f3c38642a",
+    "scripts\\annular_moving_collar_action_20260914.py": "ac6abbd604a12709b26274ebd53747083d71fdb76f6ac3d90e67b011ee306597",
+    "scripts\\annular_moving_collar_sparse_20260914.py": "2d4b8bfcd5ec95b7b9ff2a2b6999f0c0edba7960a984cdd72bfca1daf0e8cb6d",
+    "scripts\\annular_sparse_repaired_cut_20260915.py": "8e47042aa5e58430e845b8434f6ff47ab322360e0602fd4a482f745737319a99",
+    "scripts\\annular_source_fitted_action_20260915.py": "d409c37c30313d0e05cfd7d0015a587188e1984460da6dc92c2d8fef15f0252f",
+    "scripts\\annular_quadratic_source_fitted_action_20260915.py": "cde77a8db83b284034f98f44d785b58a5f1cad0e4c41113e28c0a47ddd6fd92c",
+    "scripts\\annular_locally_refined_source_action_20260916.py": "81e3fef722d868fcd4e53ebc69b119afed0cc2253cb21e6e88e457424c6d128d",
+    "scripts\\annular_radiation_benchmark_preparation_20260915.py": "31870324cb028582c1667a594a8da3f5f627c9326ccec406110558406c9d6fd4",
+    "scripts\\annular_two_sided_GR_characteristics_20260915.py": "ece5e22ab8b0d3a8a25f562f9e02d45f4de5cb256e2b6ad1d734463a7fd46b92",
+    "scripts\\run_annular_source_fitted_crossing_20260915.py": "032d4778421f937c7aaa7117da2e03b2f4a196a85c70a8c8d2a939ed37292caa",
+    "scripts\\annular_variational_initial_projection_20260916_v2.py": "6b3d854bbf2edf5c291b9fa0578a6a326611a939e0e32ed9a0dec76a901abf83",
+    "scripts\\annular_local_spectral_step_20260916.py": "f542c9d14b5af0de3b91e65e0912c15760ed4baacea88fb2988d8d91e3001b61"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-GR-causal-refinement-512-attempt01\\executed-run_annular_GR_causal_refinement_20260917.py": "04f960b958bdb6c9a04b1a7aace528e8f50a6184b522f8fde56fef2a9bb13db7",
+    "source-intake\\navier-stokes\\20260914\\annular-GR-causal-refinement-512-attempt01\\reference-accepted-1.npz": "31f7cbac78ee2785c27ba3cd4a213c001997a3c0675dcfff3740a50dd88eb04b",
+    "source-intake\\navier-stokes\\20260914\\annular-GR-causal-refinement-512-attempt01\\reference-accepted-2.npz": "dafdf7a1d3e578fea8d13d4f67a6536b33ed66e82e2083b88420498d9c9bff39",
+    "source-intake\\navier-stokes\\20260914\\annular-GR-causal-refinement-512-attempt01\\reference-accepted-3.npz": "e43a31c0b8c8750534022f2fa3c36b75d76dd4c7cd63093cf1c06bf0cb46d461",
+    "source-intake\\navier-stokes\\20260914\\annular-GR-causal-refinement-512-attempt01\\reference-accepted-4.npz": "132ce0abb29af8eec91c34894eb10f683dadd79194bf0cdade2a8efbf6c086d3",
+    "source-intake\\navier-stokes\\20260914\\annular-GR-causal-refinement-512-attempt01\\reference-accepted-5.npz": "48f4605a9fdc5d9308ce8378c5c7d9bab86b8673b2adb749a6b403cbda8a7cd3",
+    "source-intake\\navier-stokes\\20260914\\annular-GR-causal-refinement-512-attempt01\\reference-accepted-6.npz": "43c5fa32340861b0d9135617e71070982d7c2eccbf3d23b20ce50aa239f21055",
+    "source-intake\\navier-stokes\\20260914\\annular-GR-causal-refinement-512-attempt01\\reference-accepted-7.npz": "10d584d45f414e6171a4e307296c87dd096fbcfd1522d046648dd7498ded7a14",
+    "source-intake\\navier-stokes\\20260914\\annular-GR-causal-refinement-512-attempt01\\reference-accepted-8.npz": "2dcc8aa37d8b56c3727281a2b1ded11bc9f85072d3417efb73a63f2149515da0",
+    "source-intake\\navier-stokes\\20260914\\annular-GR-causal-refinement-512-attempt01\\reference-prediction.npz": "fdeb1c843b80d7a8db9379f952d2ef37cff7b9a265531842da6bf456ef19b1dd",
+    "source-intake\\navier-stokes\\20260914\\annular-GR-causal-refinement-512-attempt01\\MTS-accepted-1.npz": "ab01666a4e6a0ffa396be6ebbcd03f29abd5005324e1eef7b0bd219fa32b1df8",
+    "source-intake\\navier-stokes\\20260914\\annular-GR-causal-refinement-512-attempt01\\MTS-accepted-2.npz": "6ff05d8595196f3f3e12d51c6e118623a68628c1525e5ee5f0211d4e87d5bea8",
+    "source-intake\\navier-stokes\\20260914\\annular-GR-causal-refinement-512-attempt01\\MTS-accepted-3.npz": "335c110f8fc89798f2d38bf70366af2ec2c0af86ebf46eafcf26f203e5622831",
+    "source-intake\\navier-stokes\\20260914\\annular-GR-causal-refinement-512-attempt01\\MTS-accepted-4.npz": "f8b63ad43e996373f42c8c15e791d1bc09ca3c2f36d6192b53e2b20145c67c37",
+    "source-intake\\navier-stokes\\20260914\\annular-GR-causal-refinement-512-attempt01\\MTS-accepted-5.npz": "f25f7fe446c2fb39dee06d7c091a876ac03e1b69c3076d904c8973bdccfd4aa1",
+    "source-intake\\navier-stokes\\20260914\\annular-GR-causal-refinement-512-attempt01\\MTS-accepted-6.npz": "4fdb82eb8e02e54db714ea011dd646391983d23541dd1bcbc592d4b186410f3a",
+    "source-intake\\navier-stokes\\20260914\\annular-GR-causal-refinement-512-attempt01\\MTS-accepted-7.npz": "30e883ce65f7db09e911e69c955dc875434f61666ae2e6ecf3bd38d9b3fccbd7",
+    "source-intake\\navier-stokes\\20260914\\annular-GR-causal-refinement-512-attempt01\\MTS-accepted-8.npz": "6476b3613c6765e6aac58d64bbac69b3208dc5319420f44fda588c1142873eac",
+    "source-intake\\navier-stokes\\20260914\\annular-GR-causal-refinement-512-attempt01\\MTS-prediction.npz": "78ea4eca4cf9f038a888a7cf41f0932e37a6ff794d0aac6c71d04007942b591f"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "arguments": {
+    "label": "annular-GR-causal-refinement-512-attempt01",
+    "degree": 512,
+    "stride": 1,
+    "tight": false,
+    "stop_at_utc": "2026-09-17T13:40:00Z"
+  },
+  "finite_future_trajectories_read": false,
+  "npz_read_allowlist": [
+    "source-intake\\navier-stokes\\20260914\\annular-GR-causal-refinement-inputs-attempt01\\GR-only-512-1025.npz"
+  ],
+  "known_benchmark_not_blind_new_experiment": true,
+  "original_action_unchanged": true,
+  "all_modes_and_Gram_rows_retained": true,
+  "force_fit": false,
+  "retrospective_force_subtraction": false,
+  "count": 1025,
+  "source_splits": 8,
+  "final_time": 0.4,
+  "configuration": {
+    "rtol": 2e-10,
+    "atol": 2e-14,
+    "spectral_step_multiplier": 1.0,
+    "degree": 512,
+    "stride": 1
+  },
+  "reconstruction_derivative_is_own_exact_derivative": true,
+  "original_initial_projection_error_retained": true,
+  "physical_force_gate": 2e-07,
+  "numerical_control_gate": 2e-08,
+  "progress": {
+    "branch": "MTS",
+    "accepted_time": 0.4,
+    "seconds": 8091.067325699958,
+    "rhs_evaluations": 2338040
+  },
+  "active_spectral_history": [
+    {
+      "largest_field_eigenvalue": 96141921708.93011,
+      "eigen_residual": 2.1351980393143688e-16,
+      "coupled_factor": 1.0306896078416992,
+      "frequency_estimate": 319583.4615899239,
+      "maximum_step": 2.002606758234634e-06,
+      "frozen_spectrum_is_not_a_nonlinear_stability_proof": true,
+      "used_step": 2.002606758234634e-06
+    },
+    {
+      "largest_field_eigenvalue": 95563733876.6415,
+      "eigen_residual": 7.306368623679072e-16,
+      "coupled_factor": 1.0257581752356961,
+      "frequency_estimate": 317096.5683396029,
+      "maximum_step": 2.0183126022183096e-06,
+      "frozen_spectrum_is_not_a_nonlinear_stability_proof": true,
+      "used_step": 2.0183126022183096e-06
+    },
+    {
+      "largest_field_eigenvalue": 94994148546.02516,
+      "eigen_residual": 8.367976543059939e-16,
+      "coupled_factor": 1.0181751341110417,
+      "frequency_estimate": 313812.9877247822,
+      "maximum_step": 2.0394312059553375e-06,
+      "frozen_spectrum_is_not_a_nonlinear_stability_proof": true,
+      "used_step": 2.0394312059553375e-06
+    },
+    {
+      "largest_field_eigenvalue": 94434859076.09326,
+      "eigen_residual": 1.6301074644274744e-16,
+      "coupled_factor": 1.0136074334198497,
+      "frequency_estimate": 311484.1520227302,
+      "maximum_step": 2.054679173383103e-06,
+      "frozen_spectrum_is_not_a_nonlinear_stability_proof": true,
+      "used_step": 2.054679173383103e-06
+    },
+    {
+      "largest_field_eigenvalue": 93887456407.67345,
+      "eigen_residual": 4.86582873993786e-16,
+      "coupled_factor": 1.0094589290395275,
+      "frequency_estimate": 309308.9171359233,
+      "maximum_step": 2.06912883704144e-06,
+      "frozen_spectrum_is_not_a_nonlinear_stability_proof": true,
+      "used_step": 2.06912883704144e-06
+    },
+    {
+      "largest_field_eigenvalue": 93349845284.33902,
+      "eigen_residual": 3.047555636792004e-16,
+      "coupled_factor": 1.005000177961221,
+      "frequency_estimate": 307059.78387725883,
+      "maximum_step": 2.08428466899406e-06,
+      "frozen_spectrum_is_not_a_nonlinear_stability_proof": true,
+      "used_step": 2.08428466899406e-06
+    },
+    {
+      "largest_field_eigenvalue": 92812444055.68959,
+      "eigen_residual": 1.7292015754798355e-16,
+      "coupled_factor": 1.0046336198461232,
+      "frequency_estimate": 306062.98689081514,
+      "maximum_step": 2.091072842559409e-06,
+      "frozen_spectrum_is_not_a_nonlinear_stability_proof": true,
+      "used_step": 2.091072842559409e-06
+    },
+    {
+      "largest_field_eigenvalue": 92291294000.3756,
+      "eigen_residual": 1.6532896868411318e-16,
+      "coupled_factor": 1.013612786580794,
+      "frequency_estimate": 307930.31628704316,
+      "maximum_step": 2.0783923054961947e-06,
+      "frozen_spectrum_is_not_a_nonlinear_stability_proof": true,
+      "used_step": 2.0783923054961947e-06
+    }
+  ],
+  "completed_at": "2026-09-17T13:40:35.020984+00:00"
+}

@@ -1,0 +1,48 @@
+{
+  "state": "complete",
+  "started_utc": "2026-09-11T00:05:28.824364+00:00",
+  "checks": [
+    {
+      "name": "bubble_node_mass_rate_is_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full_lapse_time_variation_matches_derived_source",
+      "passed": true,
+      "detail": {
+        "absolute_error": 3.176373552203626e-20,
+        "derived_source_norm": 3.875304636335658e-07,
+        "transport_derivative_norm": 5.449945056954977e-11
+      }
+    },
+    {
+      "name": "transport_term_not_silently_dropped",
+      "passed": true,
+      "detail": 5.449945056955976e-11
+    },
+    {
+      "name": "symbolic_connection_lapse_to_shift_ratio",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "symbolic_zero_shift_rate_limit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_python_cache",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "inputs": {
+    "scripts\\verify_annular_time_link_lapse_20260911.py": "66a5d0760aa200068336931330e39aa01ec9dc8b28f71d71488441abbc44d210",
+    "source-intake\\navier-stokes\\20260910\\annular-parent-root-residence-attempt02\\canonical_N16_metric_Gram_sample0.npz": "ea4d5bb4922ff8c7938bc4dbe1c4e919cf21e942659496bc703e71d2faa1313f",
+    "source-intake\\navier-stokes\\20260911\\annular-time-link-adjoint-attempt01\\canonical_N16_metric_Gram_sample0.npz": "03bcc606d0ff1e632bc2c7ecd61b12a6ba375d91717f650a607ec9c772d4e246"
+  },
+  "valid_for_physics_claim": false,
+  "scope": "Nonlinear ADM coefficient and connection variations on the soluble background f(t,R)=t*g(R); checks the derived physical-time lapse covector derivative, not numerical evolution.",
+  "completed_utc": "2026-09-11T00:05:29.167420+00:00"
+}

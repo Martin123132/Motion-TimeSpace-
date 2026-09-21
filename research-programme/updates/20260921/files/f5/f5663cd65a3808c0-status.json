@@ -1,0 +1,178 @@
+{
+  "state": "failed",
+  "checks": [
+    {
+      "name": "symbolic_q_m",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "symbolic_q_p",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "symbolic_q_mm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "symbolic_q_mp",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "symbolic_q_pp",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "symbolic_lapse_m_on_F_relation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "symbolic_lapse_p",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "symbolic_adjoint_damping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "symbolic_wave_speed_radial_cancellation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "symbolic_momentum_adjoint_is_velocity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "symbolic_rest_mass_adjoint_is_clock",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "symbolic_translation_gravity_reduction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_snapshot_complete_and_hash_verified",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gradient_reduction_error",
+      "passed": true,
+      "detail": 5.421010862427522e-19
+    },
+    {
+      "name": "adjoint_metric_identity",
+      "passed": true,
+      "detail": 1.2989609388114332e-14
+    },
+    {
+      "name": "speed_cancellation_error",
+      "passed": true,
+      "detail": 1.8214596497756474e-17
+    },
+    {
+      "name": "moving_combined_first_variation_equals_adjoint",
+      "passed": true,
+      "detail": {
+        "tangent": 0.031483327663534504,
+        "adjoint": 0.031483327815777486,
+        "error": 1.5224298210991805e-10
+      }
+    },
+    {
+      "name": "positive_frozen_density_tracks_actual_snapshot",
+      "passed": true,
+      "detail": {
+        "lapse": 2.052510383876438e-10,
+        "root": 1.1692868895352149e-10
+      }
+    },
+    {
+      "name": "density_tabulation_control",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_RK45_radial_control",
+      "passed": true,
+      "detail": {
+        "mass": 1.6807777392102707e-11,
+        "log_lapse": 8.892164782281498e-12,
+        "speed": 5.2309268028238876e-12
+      }
+    },
+    {
+      "name": "wave_independent_mass_difference_matches_adjoint",
+      "passed": false,
+      "detail": {
+        "kind": "wave",
+        "step": 0.001,
+        "finite_derivative": 0.0014825146603669737,
+        "adjoint": 0.001482665235553742,
+        "error": 1.5057518676841672e-07
+      }
+    }
+  ],
+  "cases": [
+    {
+      "kind": "wave",
+      "step": 0.001,
+      "finite_derivative": 0.0014825146603669737,
+      "adjoint": 0.001482665235553742,
+      "error": 1.5057518676841672e-07
+    }
+  ],
+  "inputs": {
+    "scripts\\qualify_annular_live_radial_response_20260918.py": "546b4c2b2b4a606cdd24bdb418163ff84fe6c0632618635658201ee5b038f36d",
+    "scripts\\annular_live_radial_response_20260918.py": "d48357a7b611075c5a2f33a627fb5dff93c05f23a975e0f2031a8d00e78430b1",
+    "source-intake\\navier-stokes\\20260914\\annular-live-continuum-snapshot-attempt01\\degree64.npz": "7ced888587e115f807b6c16bebb7a009f49ef628a72e94bf0e9041428d46c227",
+    "source-intake\\navier-stokes\\20260914\\annular-live-continuum-snapshot-attempt01\\status.json": "82c22f578062839b83d02bda754a875235f7587cf4d85d9cbd48e58d11836919"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-live-radial-response-attempt01\\executed-qualify_annular_live_radial_response_20260918.py": "546b4c2b2b4a606cdd24bdb418163ff84fe6c0632618635658201ee5b038f36d"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "no_forward_evolution": true,
+  "frozen_canonical_density_radial_variations_only": true,
+  "continuum_initial_snapshot_not_finite_P2_trajectory": true,
+  "no_flat_proof_transfer": true,
+  "no_new_parent_coefficients": true,
+  "no_GitHub_action": true,
+  "subagents_used": false,
+  "inherited_force_gates_unchanged": true,
+  "full_live_force_convergence_proven": false,
+  "radial_metric_response_derived": true,
+  "independently_reviewed_proof": false,
+  "base_diagnostics": {
+    "wave": 0.001482665235553742,
+    "source_density": 6.626082403132946e-07,
+    "momentum": 0.02999999997198343,
+    "rest_mass": 0.8750434238994613,
+    "translation": 0.0006627040358392678,
+    "gradient_reduction_error": 5.421010862427522e-19,
+    "adjoint_metric_identity": 1.2989609388114332e-14,
+    "speed_cancellation_error": 1.8214596497756474e-17,
+    "density_integral": 1.0000000000000062,
+    "wave_energy_integral": 0.0021379670373143853,
+    "minimum_metric": 0.7302513416632894,
+    "minimum_wave_speed": 0.7297841693076634,
+    "maximum_source_ratio": 0.03976166047495678
+  },
+  "error": "RuntimeError(\"wave_independent_mass_difference_matches_adjoint: {'kind': 'wave', 'step': 0.001, 'finite_derivative': np.float64(0.0014825146603669737), 'adjoint': 0.001482665235553742, 'error': np.float64(1.5057518676841672e-07)}\")",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\qualify_annular_live_radial_response_20260918.py\", line 99, in main\n    evidence.check(key+'_independent_mass_difference_matches_adjoint', row['error'] < 2e-8, row)\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\annular_reference_continuum_shell_20260914.py\", line 41, in check\n    raise RuntimeError(name+': '+repr(detail))\nRuntimeError: wave_independent_mass_difference_matches_adjoint: {'kind': 'wave', 'step': 0.001, 'finite_derivative': np.float64(0.0014825146603669737), 'adjoint': 0.001482665235553742, 'error': np.float64(1.5057518676841672e-07)}\n"
+}

@@ -1,0 +1,50 @@
+{
+  "state": "failed",
+  "checks": [
+    {
+      "name": "additional_oracle_qualified",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "annular-quadratic-crossing-attempt01_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference33_independent_quadratic_shape_force_identity",
+      "passed": true,
+      "detail": 2.127069137144999e-17
+    },
+    {
+      "name": "reference33_physical_impulse_derivative_identity",
+      "passed": true,
+      "detail": 2.019326546254252e-18
+    },
+    {
+      "name": "reference33_comparison_quadrature_agrees",
+      "passed": false,
+      "detail": 3.088613565252474e-08
+    }
+  ],
+  "cases": [],
+  "inputs": {
+    "scripts\\verify_annular_quadratic_crossing_precision_20260915.py": "e7a44ead68d0f156f49ff03de33d8e4f636fc7467cf901820b952f0fa2dede4c",
+    "source-intake\\navier-stokes\\20260914\\annular-source-fitted-fine-crossing-attempt01\\oracle-512.npz": "0fcf2101bc727520bcac3553d39d53a315b8d77753e2d7290c005705ecc0d29c",
+    "source-intake\\navier-stokes\\20260914\\annular-source-fitted-fine-crossing-attempt01\\oracle-384.npz": "49256920850ed9a91f84d68128dfb238ea78859a05d98e9628b9ca50fff997ef",
+    "source-intake\\navier-stokes\\20260914\\annular-crossing-oracle768-attempt01\\status.json": "7b2323feaf9a283001991926aa45f0da0577fe7013f942fe3821ed50d79dfaa3",
+    "source-intake\\navier-stokes\\20260914\\annular-crossing-oracle768-attempt01\\oracle-768.npz": "3e08f86222d946ff1819e0a7f20d6eb693029d2ed9bd13a5c19ad9c5741f1728",
+    "source-intake\\navier-stokes\\20260914\\annular-quadratic-crossing-attempt01\\status.json": "0b11dbaf1680098407ccebae53f82ea36305834c520085756f9f3ca06d5eb770",
+    "source-intake\\navier-stokes\\20260914\\annular-quadratic-crossing-attempt01\\reference-33.npz": "ec2db152cc6af426c38ad9636dce8ae4f1e8bee3e44c139867df54324a4913a4"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-quadratic-crossing-precision-attempt01\\executed-verify_annular_quadratic_crossing_precision_20260915.py": "e7a44ead68d0f156f49ff03de33d8e4f636fc7467cf901820b952f0fa2dede4c"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "error": "RuntimeError('reference33_comparison_quadrature_agrees: 3.088613565252474e-08')",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\verify_annular_quadratic_crossing_precision_20260915.py\", line 126, in main\n    evidence.check(branch+str(base_count)+'_comparison_quadrature_agrees', abs(alternate_field-original['field_errors'][-1]) < 2e-8,\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        float(abs(alternate_field-original['field_errors'][-1])))\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\annular_reference_continuum_shell_20260914.py\", line 41, in check\n    raise RuntimeError(name+': '+repr(detail))\nRuntimeError: reference33_comparison_quadrature_agrees: 3.088613565252474e-08\n"
+}

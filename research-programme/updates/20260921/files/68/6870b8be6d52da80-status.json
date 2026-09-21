@@ -1,0 +1,96 @@
+{
+  "state": "complete",
+  "started_utc": "2026-09-11T00:07:07.799607+00:00",
+  "samples": [
+    {
+      "label": "canonical_N32_GR_sample0",
+      "state": "evaluated",
+      "maximum_lapse_rate": 7.13014669699253,
+      "maximum_shift_rate": 3.4459976820271503e-05,
+      "maximum_scalar_acceleration_coefficients": 0.16608565073269835,
+      "maximum_J_minus_one": 1.6307097672196846e-07,
+      "schur_condition": 50145015.51674014,
+      "schur_minimum_eigenvalue": 2.089416571214168e-13,
+      "residuals": {
+        "mass": 1.2431373171259332e-17,
+        "shift": 8.131516293641283e-20,
+        "scalar": 2.7755575615628914e-17,
+        "lapse_preservation": 2.168404344971009e-19,
+        "boundary": 2.936759046079024e-20
+      },
+      "finite_values": true
+    },
+    {
+      "label": "canonical_N32_metric_Gram_sample0",
+      "state": "evaluated",
+      "maximum_lapse_rate": 16.23710991639826,
+      "maximum_shift_rate": 3.446002568041761e-05,
+      "maximum_scalar_acceleration_coefficients": 0.3138099698350516,
+      "maximum_J_minus_one": 1.6307121142311587e-07,
+      "schur_condition": 50145015.53781621,
+      "schur_minimum_eigenvalue": 2.0894165454897432e-13,
+      "residuals": {
+        "mass": 1.3339710128071162e-17,
+        "shift": 8.131516293641283e-20,
+        "scalar": 2.7755575615628914e-17,
+        "lapse_preservation": 6.505213034913027e-19,
+        "boundary": 2.4842517360999757e-20
+      },
+      "finite_values": true
+    },
+    {
+      "label": "canonical_N64_GR_sample0",
+      "state": "evaluated",
+      "maximum_lapse_rate": 20754.168796955713,
+      "maximum_shift_rate": 1.724110733180434e-05,
+      "maximum_scalar_acceleration_coefficients": 216.1756381039361,
+      "maximum_J_minus_one": 4.079068227635929e-08,
+      "schur_condition": 75966725891122.34,
+      "schur_minimum_eigenvalue": 6.850026834488804e-20,
+      "residuals": {
+        "mass": 3.13993260662597e-17,
+        "shift": 4.0657581468206416e-20,
+        "scalar": 2.4102247975221758e-14,
+        "lapse_preservation": 5.644627560502657e-16,
+        "boundary": 8.131516293641283e-20
+      },
+      "finite_values": true
+    },
+    {
+      "label": "canonical_N64_metric_Gram_sample0",
+      "state": "evaluated",
+      "maximum_lapse_rate": 9359.648108310425,
+      "maximum_shift_rate": 1.7241106782684562e-05,
+      "maximum_scalar_acceleration_coefficients": 97.46680012244053,
+      "maximum_J_minus_one": 4.079068072204706e-08,
+      "schur_condition": 75971511759819.31,
+      "schur_minimum_eigenvalue": 6.856784897049368e-20,
+      "residuals": {
+        "mass": 2.6474085903965837e-17,
+        "shift": 2.710505431213761e-20,
+        "scalar": 1.3307063784218087e-14,
+        "lapse_preservation": 2.5218542532012833e-16,
+        "boundary": 0.0
+      },
+      "finite_values": true
+    }
+  ],
+  "inputs": {
+    "scripts\\verify_annular_initial_mesh_20260911.py": "f26b51eba35da735e4af856564ce49a12bfc3f40976067f86afddf5aa3bc4f15",
+    "scripts\\annular_time_link_adjoint_20260911.py": "c5a23d77fee0e1b30545e7b96866890dd913d4784d4b86e760e8639bccc266c7",
+    "source-intake\\navier-stokes\\20260909\\annular-constraint-correction-initial\\canonical.json": "6e24704a5834702cbbd1b8379dcb621cc074948a9dc81c9c80709df30425644a",
+    "source-intake\\navier-stokes\\20260910\\annular-parent-root-residence-attempt02\\canonical_N32_GR_sample0.npz": "6918b122e9ca6b56d1a23845a803bcbcc587d2a3a0ec1a658d9c7e48a80cd73c",
+    "source-intake\\navier-stokes\\20260910\\annular-parent-root-residence-attempt02\\canonical_N32_metric_Gram_sample0.npz": "e1b71bd72b9d41bb29281bd38895e0848b9f9dafb3e0690a336e51d46b82d7a6",
+    "source-intake\\navier-stokes\\20260910\\annular-parent-root-residence-attempt02\\canonical_N64_GR_sample0.npz": "1d58f5ff01b7d599bbb3ba18511c86fa004921cae34ba98bb2d329445b6143d3",
+    "source-intake\\navier-stokes\\20260910\\annular-parent-root-residence-attempt02\\canonical_N64_metric_Gram_sample0.npz": "0268954cbf046cbe4e8398fa1accb67671514e40d38e6f848077b214493e7f72"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260911\\annular-initial-mesh-control-attempt01\\canonical_N32_GR_sample0.npz": "653ccc7efd0ac511ad48f83c90ea4bac0335778d03e6373345928f654acffdf1",
+    "source-intake\\navier-stokes\\20260911\\annular-initial-mesh-control-attempt01\\canonical_N32_metric_Gram_sample0.npz": "4f9b05370b96e6d45381d1c295beedbfc84895d20c7cdecd0e6d1af6ea52e619",
+    "source-intake\\navier-stokes\\20260911\\annular-initial-mesh-control-attempt01\\canonical_N64_GR_sample0.npz": "e9b9c54afee1fde2b82e0dd830974a93641f3d2421d020313f109a23d74a8970",
+    "source-intake\\navier-stokes\\20260911\\annular-initial-mesh-control-attempt01\\canonical_N64_metric_Gram_sample0.npz": "bdf77fa7ae6172986c64c09bf5acf71a8b88f41f392a555a8a6b3260a62b262d"
+  },
+  "valid_for_physics_claim": false,
+  "scope": "Untuned zero-inner-shift-rate midpoint refinement diagnostic for both GR and metric-Gram. No interval or convergence certificate.",
+  "completed_utc": "2026-09-11T00:07:28.611575+00:00"
+}

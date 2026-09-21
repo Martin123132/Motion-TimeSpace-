@@ -1,0 +1,203 @@
+{
+  "state": "complete",
+  "checks": [
+    {
+      "name": "annular-anchored-moving-smoke-attempt01_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "annular-anchored-moving-tight-attempt01_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference_identical_times_and_subspace",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference_force_temporal_control",
+      "passed": true,
+      "detail": {
+        "full_force": 2.7624844550549685e-15,
+        "reduced_force": 8.050169790485822e-14,
+        "force_difference": 7.82209126165773e-14,
+        "source_position_error": 6.217248937900877e-15,
+        "source_velocity_error": 5.967448757360216e-16,
+        "clock_error": 4.336808689942018e-18,
+        "integrated_omitted_drive": 1.0884794114658484e-13,
+        "integrated_kinetic_defect": 1.088481986578357e-13,
+        "reference_coordinate_phase_error": 1.062237575841796e-15
+      }
+    },
+    {
+      "name": "reference_source_and_clock_temporal_control",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference_field_error_temporal_control",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference_integrated_omitted_drive_temporal_control",
+      "passed": true,
+      "detail": {
+        "error": 1.0884794114658484e-13,
+        "budget": 2.1303693568866055e-10
+      }
+    },
+    {
+      "name": "reference_integrated_kinetic_defect_temporal_control",
+      "passed": true,
+      "detail": {
+        "error": 1.088481986578357e-13,
+        "budget": 2.1303710493701862e-10
+      }
+    },
+    {
+      "name": "reference_sampled_force_flags_stable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS_identical_times_and_subspace",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS_force_temporal_control",
+      "passed": true,
+      "detail": {
+        "full_force": 8.497183991450002e-13,
+        "reduced_force": 2.6058870434219304e-12,
+        "force_difference": 2.2769778734889464e-12,
+        "source_position_error": 2.6645352591003757e-15,
+        "source_velocity_error": 6.390721285498557e-15,
+        "clock_error": 2.168404344971009e-18,
+        "integrated_omitted_drive": 1.761416680370677e-14,
+        "integrated_kinetic_defect": 1.7614177426360196e-14,
+        "reference_coordinate_phase_error": 2.9594429298734665e-14
+      }
+    },
+    {
+      "name": "MTS_source_and_clock_temporal_control",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS_field_error_temporal_control",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS_integrated_omitted_drive_temporal_control",
+      "passed": true,
+      "detail": {
+        "error": 1.761416680370677e-14,
+        "budget": 1.885239875970913e-10
+      }
+    },
+    {
+      "name": "MTS_integrated_kinetic_defect_temporal_control",
+      "passed": true,
+      "detail": {
+        "error": 1.7614177426360196e-14,
+        "budget": 1.8852400165445952e-10
+      }
+    },
+    {
+      "name": "MTS_sampled_force_flags_stable",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "cases": [
+    {
+      "branch": "reference",
+      "maximum_differences": {
+        "full_force": 2.7624844550549685e-15,
+        "reduced_force": 8.050169790485822e-14,
+        "force_difference": 7.82209126165773e-14,
+        "source_position_error": 6.217248937900877e-15,
+        "source_velocity_error": 5.967448757360216e-16,
+        "clock_error": 4.336808689942018e-18,
+        "integrated_omitted_drive": 1.0884794114658484e-13,
+        "integrated_kinetic_defect": 1.088481986578357e-13,
+        "reference_coordinate_phase_error": 1.062237575841796e-15
+      },
+      "all_sampled_force_flags_stable": true,
+      "comparison": "Same moving chart and original finite action; 100x tighter tolerances and half the maximum step.",
+      "continuous_time_force_bound": false,
+      "continuum_limit": false
+    },
+    {
+      "branch": "MTS",
+      "maximum_differences": {
+        "full_force": 8.497183991450002e-13,
+        "reduced_force": 2.6058870434219304e-12,
+        "force_difference": 2.2769778734889464e-12,
+        "source_position_error": 2.6645352591003757e-15,
+        "source_velocity_error": 6.390721285498557e-15,
+        "clock_error": 2.168404344971009e-18,
+        "integrated_omitted_drive": 1.761416680370677e-14,
+        "integrated_kinetic_defect": 1.7614177426360196e-14,
+        "reference_coordinate_phase_error": 2.9594429298734665e-14
+      },
+      "all_sampled_force_flags_stable": true,
+      "comparison": "Same moving chart and original finite action; 100x tighter tolerances and half the maximum step.",
+      "continuous_time_force_bound": false,
+      "continuum_limit": false
+    }
+  ],
+  "inputs": {
+    "scripts\\verify_annular_anchored_moving_precision_20260916.py": "823849512593c7dd03bd1af4c9af18e1ce97a8db4d6b0f9355576bd2e3a47d6d",
+    "source-intake\\navier-stokes\\20260914\\annular-anchored-moving-smoke-attempt01\\status.json": "d75b07874124bc1895347adfb26e74fc5b53b79151d54b4f99c357eeedc2b346",
+    "source-intake\\navier-stokes\\20260914\\annular-anchored-moving-tight-attempt01\\status.json": "2d89ef07abf77a1a62c20799fb0e19e386c469448d9da4011ab38c185e1f8d3e",
+    "source-intake\\navier-stokes\\20260914\\annular-anchored-moving-smoke-attempt01\\reference-accepted-8.npz": "ecf2a1ab8025f98630a36bc226a761adb7e79ae0716759081d4cc7fd5744bbd0",
+    "source-intake\\navier-stokes\\20260914\\annular-anchored-moving-smoke-attempt01\\reference-diagnostics-8.json": "3f38b4f67351017113279d8f6e71e3a5fdde44b9f48984f696a2b5d9d0b65b09",
+    "source-intake\\navier-stokes\\20260914\\annular-anchored-moving-tight-attempt01\\reference-accepted-8.npz": "53e936220e2b60820b1968bfcad9ccb06b1053ffbfa7be5fe2fc8480306984af",
+    "source-intake\\navier-stokes\\20260914\\annular-anchored-moving-tight-attempt01\\reference-diagnostics-8.json": "7cefa32e8d05f5dd7596106f706204c387e8de81db08697d3c15c770f863258b",
+    "source-intake\\navier-stokes\\20260914\\annular-anchored-moving-smoke-attempt01\\MTS-accepted-8.npz": "2c67e5e39989b27f8f0b65be7a043f40c83d3da471d1d338a89b1ea4c2fceb7f",
+    "source-intake\\navier-stokes\\20260914\\annular-anchored-moving-smoke-attempt01\\MTS-diagnostics-8.json": "c3772cfa7db347957fa8fdbeb376921565c080d172b4c43a9cbdc6cea4a3c78b",
+    "source-intake\\navier-stokes\\20260914\\annular-anchored-moving-tight-attempt01\\MTS-accepted-8.npz": "0f25958960d3d2fe38114c7cb24744d3d562aecd8762da4a46f220bf071018e3",
+    "source-intake\\navier-stokes\\20260914\\annular-anchored-moving-tight-attempt01\\MTS-diagnostics-8.json": "bddad733fc9293ff4479c2c30506389613b341220d91c4b5fb80dda147ed9c54",
+    "scripts\\navier_stokes_source_audit_20260908.py": "817c4cdff5bf22a88deea7771b4bbc960690397512bc07cdb639ee9ab33e4f0b",
+    "scripts\\sbp4_derived_operator_20260909.py": "065ea0be52b651d742082230fe8322a367e11fc5e20150c8f3d506d1f87e77d3",
+    "scripts\\sbp4_compatible_second_operator_20260909.py": "86c6f05f7cf0a07abe9d4caa5ca1038b9f64641085a1a4a4f03aeae3ac918a3c",
+    "scripts\\annular_compatible_current_restoring_20260909.py": "c2e15990fb70e4e0587e63f8f0182831b0a4185003cdcd295db97af9027d4051",
+    "scripts\\annular_gram_joint_action_20260909.py": "c45de66a16a3c44a1ebb5a68874c47a10ceb24815bda5ecc88d5bfad3d049591",
+    "scripts\\annular_covariant_time_transport_20260909.py": "d6a55d99b9f9de06e30ab7a6f090ae12b97b273a23930315740490324ab679a9",
+    "scripts\\annular_mixed_grid_basis_20260909.py": "5a9ceef39b681f376a7e6468a104dc6a4139365248ec64ea95fa8809993f147c",
+    "scripts\\annular_adm_mixed_action_20260909.py": "c5681003a7a495196428407f25e00babc525a35d953618e1911540f4b096fe05",
+    "scripts\\annular_adm_clock_quadratic_20260909.py": "e5ccec725f88125169ccf6f533d5f613343a7259fabad0c0bcf992e600d024be",
+    "scripts\\annular_constraint_routhian_20260909.py": "62a5cf9ac8f8e73ee56bc0c46f29e5ed560692cb19a1125ba848f15c72b1dfd8",
+    "scripts\\annular_metric_link_quadratic_20260909.py": "9555ff3da29cf2522ac67cb8f3a2e3b44420464392e1029cc31410542d96e63b",
+    "scripts\\annular_released_hermite_action_20260909.py": "360d565ed558fd83121d11d59f9096d1ebf7fc49f288ca5d8bf7e4f062cac145",
+    "scripts\\annular_action_boundary_current_20260909.py": "8b702d8f7610d686bebed3ea1af73d94b0d33fe5cc7dbe3e0faee4adbd98ce98",
+    "scripts\\annular_metric_flux_jets_20260909.py": "a1c5e3db71e68ebdd69259d47e50bd1d9cecbba51034a55d5c791ad09bada3a0",
+    "scripts\\annular_nonlinear_history_20260912.py": "7747f735107c7c5bb2eae1b9e213354fc9d8856597328cbe697389ec1a96a2fd",
+    "scripts\\annular_covariant_scalar_action_20260912.py": "ccf97c4622e79a5816e094b3001e0513e7cd16f3a424fafeade04de85bca6a4f",
+    "scripts\\annular_finite_width_bulk_current_20260913.py": "da2ca4c2fab7315b4738007aafff59f38be0d90cf4f121706a32afa16f060601",
+    "scripts\\annular_horizontal_clock_evolution_20260913.py": "985843dab67ab06c85c97b32042d48f6ed5342bf578c3518bbad132cb731cd3d",
+    "scripts\\annular_compatible_h_evolution_20260914.py": "88424b14891e92d7780077619e02e5dc3e166806ed9c22924f0f03682e4e97e1",
+    "scripts\\annular_reference_continuum_shell_20260914.py": "5cbb6013083eafb55181d5a14de236685835c51ed36f26b12f0b4cc02edd9409",
+    "scripts\\annular_source_gravity_collar_20260914.py": "65d8b6c1a421bac8b56420df81630647155043b7b35031365d3f708ab94c7fa2",
+    "scripts\\derive_annular_source_gravity_20260914.py": "97861e2bff4aa48b4408f30a71379b32b5133439bc4d456d9b6426d544bacdbc"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-anchored-moving-precision-attempt01\\executed-verify_annular_anchored_moving_precision_20260916.py": "823849512593c7dd03bd1af4c9af18e1ce97a8db4d6b0f9355576bd2e3a47d6d"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "temporal_control_only": true,
+  "original_GR_gates_unchanged": true,
+  "no_replacement_of_GR_oracle": true,
+  "all_time_error_certificate": false,
+  "completed_at": "2026-09-16T13:54:04.960481+00:00"
+}

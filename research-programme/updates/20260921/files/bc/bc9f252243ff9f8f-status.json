@@ -1,0 +1,128 @@
+{
+  "state": "failed",
+  "checks": [
+    {
+      "name": "sealed_input_evolutions_completed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference80.0001_unchanged_temporal_gate",
+      "passed": true,
+      "detail": {
+        "branch": "reference",
+        "layer_degree": 8,
+        "difference_step": 0.0001,
+        "error": 4.927223117359714e-10,
+        "off_shell_error": 4.927225754139397e-10,
+        "Euler_current_correction": 2.636779683484747e-16,
+        "off_grid_canonical_residual": 1.825297725466246e-14
+      }
+    },
+    {
+      "name": "reference120.0001_unchanged_temporal_gate",
+      "passed": true,
+      "detail": {
+        "branch": "reference",
+        "layer_degree": 12,
+        "difference_step": 0.0001,
+        "error": 4.906888385197705e-10,
+        "off_shell_error": 4.906888385197705e-10,
+        "Euler_current_correction": 8.673617379884035e-19,
+        "off_grid_canonical_residual": 4.414871246360974e-16
+      }
+    },
+    {
+      "name": "reference122e-05_unchanged_temporal_gate",
+      "passed": true,
+      "detail": {
+        "branch": "reference",
+        "layer_degree": 12,
+        "difference_step": 2e-05,
+        "error": 4.911514311575771e-10,
+        "off_shell_error": 4.911514320249388e-10,
+        "Euler_current_correction": 8.673617379884035e-19,
+        "off_grid_canonical_residual": 4.414871246360974e-16
+      }
+    },
+    {
+      "name": "reference_deformed_material_current_refines",
+      "passed": false,
+      "detail": [
+        {
+          "branch": "reference",
+          "layer_degree": 8,
+          "difference_step": 0.0001,
+          "error": 4.927223117359714e-10,
+          "off_shell_error": 4.927225754139397e-10,
+          "Euler_current_correction": 2.636779683484747e-16,
+          "off_grid_canonical_residual": 1.825297725466246e-14
+        },
+        {
+          "branch": "reference",
+          "layer_degree": 12,
+          "difference_step": 0.0001,
+          "error": 4.906888385197705e-10,
+          "off_shell_error": 4.906888385197705e-10,
+          "Euler_current_correction": 8.673617379884035e-19,
+          "off_grid_canonical_residual": 4.414871246360974e-16
+        },
+        {
+          "branch": "reference",
+          "layer_degree": 12,
+          "difference_step": 2e-05,
+          "error": 4.911514311575771e-10,
+          "off_shell_error": 4.911514320249388e-10,
+          "Euler_current_correction": 8.673617379884035e-19,
+          "off_grid_canonical_residual": 4.414871246360974e-16
+        }
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "branch": "reference",
+      "layer_degree": 8,
+      "difference_step": 0.0001,
+      "error": 4.927223117359714e-10,
+      "off_shell_error": 4.927225754139397e-10,
+      "Euler_current_correction": 2.636779683484747e-16,
+      "off_grid_canonical_residual": 1.825297725466246e-14
+    },
+    {
+      "branch": "reference",
+      "layer_degree": 12,
+      "difference_step": 0.0001,
+      "error": 4.906888385197705e-10,
+      "off_shell_error": 4.906888385197705e-10,
+      "Euler_current_correction": 8.673617379884035e-19,
+      "off_grid_canonical_residual": 4.414871246360974e-16
+    },
+    {
+      "branch": "reference",
+      "layer_degree": 12,
+      "difference_step": 2e-05,
+      "error": 4.911514311575771e-10,
+      "off_shell_error": 4.911514320249388e-10,
+      "Euler_current_correction": 8.673617379884035e-19,
+      "off_grid_canonical_residual": 4.414871246360974e-16
+    }
+  ],
+  "inputs": {
+    "scripts\\verify_annular_repaired_live_method_20260915.py": "ce16dda0cb4e1cc6d20ee264011556bebd9797843cec1dcd6a3988b692672067",
+    "source-intake\\navier-stokes\\20260914\\annular-repaired-live-evolution-attempt01\\status.json": "9121d4e490f155cb53b6ad8762dade9c41d3061dd0edf91688d65d5152e26d63"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-repaired-live-method-attempt01\\executed-verify_annular_repaired_live_method_20260915.py": "ce16dda0cb4e1cc6d20ee264011556bebd9797843cec1dcd6a3988b692672067",
+    "source-intake\\navier-stokes\\20260914\\annular-repaired-live-method-attempt01\\reference-8-0.0001.npz": "c5e7f4e1aff11cf68d61c2c364b4b26eb9657dc840b7eef1bda043820a4eea7a",
+    "source-intake\\navier-stokes\\20260914\\annular-repaired-live-method-attempt01\\reference-12-0.0001.npz": "0dacaaefdd6b3916b482e79e70c2285df39f1716fcf095226156b3f4793a1abc",
+    "source-intake\\navier-stokes\\20260914\\annular-repaired-live-method-attempt01\\reference-12-2e-05.npz": "a100d9d1e3daca8d9bca49b26fc3d875c3ab76d217dfef27eb09edb28c4fa23b"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "error": "RuntimeError(\"reference_deformed_material_current_refines: [{'branch': 'reference', 'layer_degree': 8, 'difference_step': 0.0001, 'error': 4.927223117359714e-10, 'off_shell_error': 4.927225754139397e-10, 'Euler_current_correction': 2.636779683484747e-16, 'off_grid_canonical_residual': 1.825297725466246e-14}, {'branch': 'reference', 'layer_degree': 12, 'difference_step': 0.0001, 'error': 4.906888385197705e-10, 'off_shell_error': 4.906888385197705e-10, 'Euler_current_correction': 8.673617379884035e-19, 'off_grid_canonical_residual': 4.414871246360974e-16}, {'branch': 'reference', 'layer_degree': 12, 'difference_step': 2e-05, 'error': 4.911514311575771e-10, 'off_shell_error': 4.911514320249388e-10, 'Euler_current_correction': 8.673617379884035e-19, 'off_grid_canonical_residual': 4.414871246360974e-16}]\")",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\verify_annular_repaired_live_method_20260915.py\", line 39, in main\n    evidence.check(branch+'_deformed_material_current_refines', current_rows[1]['error'] < current_rows[0]['error']*.2\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                   and current_rows[1]['error'] < 2e-10, current_rows)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\annular_reference_continuum_shell_20260914.py\", line 41, in check\n    raise RuntimeError(name+': '+repr(detail))\nRuntimeError: reference_deformed_material_current_refines: [{'branch': 'reference', 'layer_degree': 8, 'difference_step': 0.0001, 'error': 4.927223117359714e-10, 'off_shell_error': 4.927225754139397e-10, 'Euler_current_correction': 2.636779683484747e-16, 'off_grid_canonical_residual': 1.825297725466246e-14}, {'branch': 'reference', 'layer_degree': 12, 'difference_step': 0.0001, 'error': 4.906888385197705e-10, 'off_shell_error': 4.906888385197705e-10, 'Euler_current_correction': 8.673617379884035e-19, 'off_grid_canonical_residual': 4.414871246360974e-16}, {'branch': 'reference', 'layer_degree': 12, 'difference_step': 2e-05, 'error': 4.911514311575771e-10, 'off_shell_error': 4.911514320249388e-10, 'Euler_current_correction': 8.673617379884035e-19, 'off_grid_canonical_residual': 4.414871246360974e-16}]\n"
+}

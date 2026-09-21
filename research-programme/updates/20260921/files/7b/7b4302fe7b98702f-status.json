@@ -1,0 +1,220 @@
+{
+  "state": "complete",
+  "checks": [
+    {
+      "name": "0.0_mass_derivative_defect_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "0.0_coefficient_rate_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "0.0_conditional_rate_bound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "0.0_independent_difference_convergence",
+      "passed": true,
+      "detail": [
+        6.498838821755726e-06,
+        1.624709943470748e-06,
+        4.0617666918763007e-07,
+        1.0154479390678262e-07
+      ]
+    },
+    {
+      "name": "0.0_omitting_geometry_is_detected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "0.2_mass_derivative_defect_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "0.2_coefficient_rate_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "0.2_conditional_rate_bound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "0.2_independent_difference_convergence",
+      "passed": true,
+      "detail": [
+        5.818912487853822e-06,
+        1.4547281406152024e-06,
+        3.6368355260663066e-07,
+        9.09319535224995e-08
+      ]
+    },
+    {
+      "name": "0.2_omitting_geometry_is_detected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "0.7_mass_derivative_defect_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "0.7_coefficient_rate_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "0.7_conditional_rate_bound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "0.7_independent_difference_convergence",
+      "passed": true,
+      "detail": [
+        3.865393651381055e-06,
+        9.663482032351567e-07,
+        2.415928364030151e-07,
+        6.040266242735015e-08
+      ]
+    },
+    {
+      "name": "0.7_omitting_geometry_is_detected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "representable_targets_have_zero_geometry_response",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_geometry_response_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_geometry_side0_pairing_and_bounds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_geometry_side1_pairing_and_bounds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_nonnested_Peano_reconstruction",
+      "passed": true,
+      "detail": {
+        "error": 1.287319869389612e-16,
+        "tolerance": 8.552486384910517e-13
+      }
+    },
+    {
+      "name": "discarding_ordinary_jumps_fails",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_knot_and_ordinary_knot_distinct",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "cases": [
+    {
+      "time": 0.0,
+      "coefficient_rate_left": -3.6447050370821894,
+      "coefficient_rate_right": -8.919499557014744,
+      "bound_left": 14.145717932500823,
+      "bound_right": 25.545436543879184,
+      "finest_difference_error": 1.0154479390678262e-07,
+      "valid_for_claim": false
+    },
+    {
+      "time": 0.2,
+      "coefficient_rate_left": -4.193654204010773,
+      "coefficient_rate_right": -7.342219559766969,
+      "bound_left": 16.984339325051316,
+      "bound_right": 28.06642797244206,
+      "finest_difference_error": 9.09319535224995e-08,
+      "valid_for_claim": false
+    },
+    {
+      "time": 0.7,
+      "coefficient_rate_left": -5.293302133945261,
+      "coefficient_rate_right": -4.825699509603119,
+      "bound_left": 23.71064976824166,
+      "bound_right": 33.84551023447777,
+      "finest_difference_error": 6.040266242735015e-08,
+      "valid_for_claim": false
+    }
+  ],
+  "inputs": {
+    "scripts\\validate_annular_coefficient_geometry_law_20260919.py": "a8635f4d4d7a3b3f93f90ed30cac412ee52d301de266a0ceb029c354bed27a0e",
+    "scripts\\navier_stokes_source_audit_20260908.py": "817c4cdff5bf22a88deea7771b4bbc960690397512bc07cdb639ee9ab33e4f0b",
+    "scripts\\sbp4_derived_operator_20260909.py": "065ea0be52b651d742082230fe8322a367e11fc5e20150c8f3d506d1f87e77d3",
+    "scripts\\sbp4_compatible_second_operator_20260909.py": "86c6f05f7cf0a07abe9d4caa5ca1038b9f64641085a1a4a4f03aeae3ac918a3c",
+    "scripts\\annular_compatible_current_restoring_20260909.py": "c2e15990fb70e4e0587e63f8f0182831b0a4185003cdcd295db97af9027d4051",
+    "scripts\\annular_gram_joint_action_20260909.py": "c45de66a16a3c44a1ebb5a68874c47a10ceb24815bda5ecc88d5bfad3d049591",
+    "scripts\\annular_covariant_time_transport_20260909.py": "d6a55d99b9f9de06e30ab7a6f090ae12b97b273a23930315740490324ab679a9",
+    "scripts\\annular_mixed_grid_basis_20260909.py": "5a9ceef39b681f376a7e6468a104dc6a4139365248ec64ea95fa8809993f147c",
+    "scripts\\annular_adm_mixed_action_20260909.py": "c5681003a7a495196428407f25e00babc525a35d953618e1911540f4b096fe05",
+    "scripts\\annular_adm_clock_quadratic_20260909.py": "e5ccec725f88125169ccf6f533d5f613343a7259fabad0c0bcf992e600d024be",
+    "scripts\\annular_constraint_routhian_20260909.py": "62a5cf9ac8f8e73ee56bc0c46f29e5ed560692cb19a1125ba848f15c72b1dfd8",
+    "scripts\\annular_metric_link_quadratic_20260909.py": "9555ff3da29cf2522ac67cb8f3a2e3b44420464392e1029cc31410542d96e63b",
+    "scripts\\annular_released_hermite_action_20260909.py": "360d565ed558fd83121d11d59f9096d1ebf7fc49f288ca5d8bf7e4f062cac145",
+    "scripts\\annular_action_boundary_current_20260909.py": "8b702d8f7610d686bebed3ea1af73d94b0d33fe5cc7dbe3e0faee4adbd98ce98",
+    "scripts\\annular_metric_flux_jets_20260909.py": "a1c5e3db71e68ebdd69259d47e50bd1d9cecbba51034a55d5c791ad09bada3a0",
+    "scripts\\annular_nonlinear_history_20260912.py": "7747f735107c7c5bb2eae1b9e213354fc9d8856597328cbe697389ec1a96a2fd",
+    "scripts\\annular_covariant_scalar_action_20260912.py": "ccf97c4622e79a5816e094b3001e0513e7cd16f3a424fafeade04de85bca6a4f",
+    "scripts\\annular_finite_width_bulk_current_20260913.py": "da2ca4c2fab7315b4738007aafff59f38be0d90cf4f121706a32afa16f060601",
+    "scripts\\annular_horizontal_clock_evolution_20260913.py": "985843dab67ab06c85c97b32042d48f6ed5342bf578c3518bbad132cb731cd3d",
+    "scripts\\annular_compatible_h_evolution_20260914.py": "88424b14891e92d7780077619e02e5dc3e166806ed9c22924f0f03682e4e97e1",
+    "scripts\\annular_reference_continuum_shell_20260914.py": "5cbb6013083eafb55181d5a14de236685835c51ed36f26b12f0b4cc02edd9409",
+    "scripts\\annular_source_gravity_collar_20260914.py": "65d8b6c1a421bac8b56420df81630647155043b7b35031365d3f708ab94c7fa2",
+    "scripts\\derive_annular_source_gravity_20260914.py": "97861e2bff4aa48b4408f30a71379b32b5133439bc4d456d9b6426d544bacdbc",
+    "scripts\\annular_covariant_cut_action_20260915.py": "928f830561a0237f5297897bf690e4a53ca0ffc778b2967c9726223e9fd4176f",
+    "scripts\\annular_covariant_cut_action_v2_20260915.py": "0c24f5c974b4a5d4cd78bb395d8fa71070130e271018eb769d1ef19c2fdc828e",
+    "scripts\\annular_dynamical_source_20260914.py": "b4d623cb63ee77b589bf4a1d1162e281680893b5743df42fe323b90f3c38642a",
+    "scripts\\annular_moving_collar_action_20260914.py": "ac6abbd604a12709b26274ebd53747083d71fdb76f6ac3d90e67b011ee306597",
+    "scripts\\annular_moving_collar_sparse_20260914.py": "2d4b8bfcd5ec95b7b9ff2a2b6999f0c0edba7960a984cdd72bfca1daf0e8cb6d",
+    "scripts\\annular_sparse_repaired_cut_20260915.py": "8e47042aa5e58430e845b8434f6ff47ab322360e0602fd4a482f745737319a99",
+    "scripts\\annular_source_fitted_action_20260915.py": "d409c37c30313d0e05cfd7d0015a587188e1984460da6dc92c2d8fef15f0252f",
+    "scripts\\annular_quadratic_source_fitted_action_20260915.py": "cde77a8db83b284034f98f44d785b58a5f1cad0e4c41113e28c0a47ddd6fd92c",
+    "scripts\\annular_locally_refined_source_action_20260916.py": "81e3fef722d868fcd4e53ebc69b119afed0cc2253cb21e6e88e457424c6d128d",
+    "scripts\\annular_cut_initial_data_20260915.py": "47618f0af63d126619f4d2b6ccf97618ebf8b6ca84f3a77e3cdefe6e57e2eda3",
+    "scripts\\verify_annular_cut_metric_and_inversion_20260915.py": "b90147c1e97702ffbcccd47e873c469a5b97abac2a626f3f1c2f700cd3a43d45",
+    "scripts\\annular_repaired_live_geometry_20260915.py": "aaae4f759077bcecae39ad8ba7aa7362aa371c5bdf98ec872b6d5408c4d5154d",
+    "scripts\\annular_live_P2_canonical_v2_20260918.py": "2a6785ab15cd5c5aa181d0e55db1b1170eb221e7d32f9a4f6a1c3bc0a9352192",
+    "scripts\\annular_repaired_live_current_20260915.py": "9cf0436c0f343c1db623fd8de59af0662d8efe1726c2271a4ce9a6610de21d48",
+    "scripts\\annular_live_P2_current_20260918.py": "b62fa9173385cf0af26d15d4ed816ba8c8a228161ceb80f8d3560ff51af67c06",
+    "scripts\\annular_P2_primitive_geometry_20260918.py": "26dfb33bc76f8698f1e14023b505af32ecd719b2afde3cf7057c90d4374b5d71",
+    "scripts\\annular_P2_graded_source_20260919.py": "940967144392ae8d23285c24d1c65cd765d2de0d0391bc473b2795103d1f202d",
+    "scripts\\annular_force_coefficient_bounds_20260919.py": "28b87bba2564ceae919db7457237156045d7d5d2098c59f9ddc4ce3f4b3e7c14"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-coefficient-geometry-algebra-attempt01\\executed-validate_annular_coefficient_geometry_law_20260919.py": "a8635f4d4d7a3b3f93f90ed30cac412ee52d301de266a0ceb029c354bed27a0e",
+    "source-intake\\navier-stokes\\20260914\\annular-coefficient-geometry-algebra-attempt01\\completion.txt": "eeb391fff19431689896e32911a4be3829fda2dffc86484c19e5502f1f63d815"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "github_action": false,
+  "subagents_used": false,
+  "full_live_P2_force_convergence_proven": false,
+  "independent_dense_geometry_and_rate_control": true,
+  "nonzero_ordinary_jump_negative_control": true,
+  "completed_at": "2026-09-19T13:12:46.601563+00:00"
+}

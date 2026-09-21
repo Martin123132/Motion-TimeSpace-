@@ -1,0 +1,186 @@
+{
+  "state": "complete",
+  "checks": [
+    {
+      "name": "reference0.001_independent_radial_ODE",
+      "passed": true,
+      "detail": {
+        "branch": "reference",
+        "width": 0.001,
+        "maximum_overlap": 1,
+        "independent_radial_mass_error": 2.220446049250313e-15,
+        "independent_radial_log_lapse_error": 8.881784197001252e-16
+      }
+    },
+    {
+      "name": "reference0.001_real_five_point_time_derivative",
+      "passed": true,
+      "detail": [
+        2.66055903003215e-10,
+        1.6602667157750162e-11
+      ]
+    },
+    {
+      "name": "reference0.16_independent_radial_ODE",
+      "passed": true,
+      "detail": {
+        "branch": "reference",
+        "width": 0.16,
+        "maximum_overlap": 3,
+        "independent_radial_mass_error": 1.4432899320127035e-15,
+        "independent_radial_log_lapse_error": 3.3306690738754696e-16
+      }
+    },
+    {
+      "name": "reference_overlapping_bands_actually_exercised",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference0.16_real_five_point_time_derivative",
+      "passed": true,
+      "detail": [
+        1.9121608593394845e-12,
+        1.9630460790427164e-12
+      ]
+    },
+    {
+      "name": "reference_overlap_temporal_current",
+      "passed": true,
+      "detail": 1.9310263430589655e-12
+    },
+    {
+      "name": "MTS0.001_independent_radial_ODE",
+      "passed": true,
+      "detail": {
+        "branch": "MTS",
+        "width": 0.001,
+        "maximum_overlap": 1,
+        "independent_radial_mass_error": 2.3314683517128287e-15,
+        "independent_radial_log_lapse_error": 8.881784197001252e-16
+      }
+    },
+    {
+      "name": "MTS0.001_real_five_point_time_derivative",
+      "passed": true,
+      "detail": [
+        2.670611006644341e-10,
+        1.67890753383082e-11
+      ]
+    },
+    {
+      "name": "MTS0.16_independent_radial_ODE",
+      "passed": true,
+      "detail": {
+        "branch": "MTS",
+        "width": 0.16,
+        "maximum_overlap": 3,
+        "independent_radial_mass_error": 1.3322676295501878e-15,
+        "independent_radial_log_lapse_error": 3.885780586188048e-16
+      }
+    },
+    {
+      "name": "MTS_overlapping_bands_actually_exercised",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS0.16_real_five_point_time_derivative",
+      "passed": true,
+      "detail": [
+        2.1662493372991316e-12,
+        2.1431196932115287e-12
+      ]
+    },
+    {
+      "name": "MTS_overlap_temporal_current",
+      "passed": true,
+      "detail": 2.146235466638554e-12
+    },
+    {
+      "name": "zero_wave_independent_live_GR_dust",
+      "passed": true,
+      "detail": 8.126776974894806e-14
+    },
+    {
+      "name": "False_independent_flat_field_plus_particle_energy",
+      "passed": true,
+      "detail": 4.2151057806890495e-20
+    },
+    {
+      "name": "True_independent_flat_field_plus_particle_energy",
+      "passed": true,
+      "detail": 5.022253696140144e-20
+    }
+  ],
+  "cases": [
+    {
+      "branch": "reference",
+      "width": 0.001,
+      "maximum_overlap": 1,
+      "independent_radial_mass_error": 2.220446049250313e-15,
+      "independent_radial_log_lapse_error": 8.881784197001252e-16
+    },
+    {
+      "branch": "reference",
+      "width": 0.16,
+      "maximum_overlap": 3,
+      "independent_radial_mass_error": 1.4432899320127035e-15,
+      "independent_radial_log_lapse_error": 3.3306690738754696e-16
+    },
+    {
+      "branch": "MTS",
+      "width": 0.001,
+      "maximum_overlap": 1,
+      "independent_radial_mass_error": 2.3314683517128287e-15,
+      "independent_radial_log_lapse_error": 8.881784197001252e-16
+    },
+    {
+      "branch": "MTS",
+      "width": 0.16,
+      "maximum_overlap": 3,
+      "independent_radial_mass_error": 1.3322676295501878e-15,
+      "independent_radial_log_lapse_error": 3.885780586188048e-16
+    }
+  ],
+  "inputs": {
+    "scripts\\verify_annular_fixed_trace_controls_20260914.py": "02813a5c27d906573e22423ba53c662a2187da13b6baee034434e55642cadf35",
+    "scripts\\navier_stokes_source_audit_20260908.py": "817c4cdff5bf22a88deea7771b4bbc960690397512bc07cdb639ee9ab33e4f0b",
+    "scripts\\sbp4_derived_operator_20260909.py": "065ea0be52b651d742082230fe8322a367e11fc5e20150c8f3d506d1f87e77d3",
+    "scripts\\sbp4_compatible_second_operator_20260909.py": "86c6f05f7cf0a07abe9d4caa5ca1038b9f64641085a1a4a4f03aeae3ac918a3c",
+    "scripts\\annular_compatible_current_restoring_20260909.py": "c2e15990fb70e4e0587e63f8f0182831b0a4185003cdcd295db97af9027d4051",
+    "scripts\\annular_gram_joint_action_20260909.py": "c45de66a16a3c44a1ebb5a68874c47a10ceb24815bda5ecc88d5bfad3d049591",
+    "scripts\\annular_covariant_time_transport_20260909.py": "d6a55d99b9f9de06e30ab7a6f090ae12b97b273a23930315740490324ab679a9",
+    "scripts\\annular_mixed_grid_basis_20260909.py": "5a9ceef39b681f376a7e6468a104dc6a4139365248ec64ea95fa8809993f147c",
+    "scripts\\annular_adm_mixed_action_20260909.py": "c5681003a7a495196428407f25e00babc525a35d953618e1911540f4b096fe05",
+    "scripts\\annular_adm_clock_quadratic_20260909.py": "e5ccec725f88125169ccf6f533d5f613343a7259fabad0c0bcf992e600d024be",
+    "scripts\\annular_constraint_routhian_20260909.py": "62a5cf9ac8f8e73ee56bc0c46f29e5ed560692cb19a1125ba848f15c72b1dfd8",
+    "scripts\\annular_metric_link_quadratic_20260909.py": "9555ff3da29cf2522ac67cb8f3a2e3b44420464392e1029cc31410542d96e63b",
+    "scripts\\annular_released_hermite_action_20260909.py": "360d565ed558fd83121d11d59f9096d1ebf7fc49f288ca5d8bf7e4f062cac145",
+    "scripts\\annular_action_boundary_current_20260909.py": "8b702d8f7610d686bebed3ea1af73d94b0d33fe5cc7dbe3e0faee4adbd98ce98",
+    "scripts\\annular_metric_flux_jets_20260909.py": "a1c5e3db71e68ebdd69259d47e50bd1d9cecbba51034a55d5c791ad09bada3a0",
+    "scripts\\annular_nonlinear_history_20260912.py": "7747f735107c7c5bb2eae1b9e213354fc9d8856597328cbe697389ec1a96a2fd",
+    "scripts\\annular_covariant_scalar_action_20260912.py": "ccf97c4622e79a5816e094b3001e0513e7cd16f3a424fafeade04de85bca6a4f",
+    "scripts\\annular_finite_width_bulk_current_20260913.py": "da2ca4c2fab7315b4738007aafff59f38be0d90cf4f121706a32afa16f060601",
+    "scripts\\annular_horizontal_clock_evolution_20260913.py": "985843dab67ab06c85c97b32042d48f6ed5342bf578c3518bbad132cb731cd3d",
+    "scripts\\annular_compatible_h_evolution_20260914.py": "88424b14891e92d7780077619e02e5dc3e166806ed9c22924f0f03682e4e97e1",
+    "scripts\\annular_reference_continuum_shell_20260914.py": "5cbb6013083eafb55181d5a14de236685835c51ed36f26b12f0b4cc02edd9409",
+    "scripts\\annular_source_gravity_collar_20260914.py": "65d8b6c1a421bac8b56420df81630647155043b7b35031365d3f708ab94c7fa2",
+    "scripts\\derive_annular_source_gravity_20260914.py": "97861e2bff4aa48b4408f30a71379b32b5133439bc4d456d9b6426d544bacdbc",
+    "scripts\\annular_moving_live_gravity_20260914.py": "b6428419729fc965fddebf6e7a1af2f037482d7f1e5d69326817014829e21ac8",
+    "scripts\\annular_fixed_grid_moving_trace_20260914.py": "4f9243b3ffe4db37800f7b419dda9a32f783ea612f979c96948c8b348034cd04",
+    "scripts\\qualify_annular_fixed_grid_moving_trace_20260914.py": "3eb7f9400c8f8e676b8612e42844980a29de75dc53475549f350cf667565660e"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-fixed-trace-independent-controls-attempt01\\executed-verify_annular_fixed_trace_controls_20260914.py": "02813a5c27d906573e22423ba53c662a2187da13b6baee034434e55642cadf35"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "no_conservation_projection": true,
+  "independent_ODE_is_same_declared_source_model": true,
+  "observational_validation": false,
+  "completed_at": "2026-09-15T00:00:25.566517+00:00"
+}

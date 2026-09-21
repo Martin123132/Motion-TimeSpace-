@@ -1,0 +1,172 @@
+{
+  "state": "failed",
+  "checks": [
+    {
+      "name": "48_independent_derivative_and_quadrature",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "48_solver_finished_and_nonzero_radiation",
+      "passed": true,
+      "detail": {
+        "degree": 48,
+        "seconds": 0.07066799997119233,
+        "rhs_calls": 593,
+        "energy_drift": 9.94864895673131e-09,
+        "energy_derivative": 7.261580868249249e-07,
+        "initial_field_energy": 0.0009609697514576431,
+        "minimum_radiation_force": 0.0014989295612348682,
+        "maximum_radiation_force": 0.0015055713707291126,
+        "final_source": [
+          6.030603789947372,
+          0.0013555446470453192,
+          0.017511734778883195
+        ]
+      }
+    },
+    {
+      "name": "96_independent_derivative_and_quadrature",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "96_solver_finished_and_nonzero_radiation",
+      "passed": true,
+      "detail": {
+        "degree": 96,
+        "seconds": 0.24326349998591468,
+        "rhs_calls": 2249,
+        "energy_drift": 3.078601505668299e-10,
+        "energy_derivative": 2.0644808798119672e-08,
+        "initial_field_energy": 0.0009609490938563119,
+        "minimum_radiation_force": 0.0014994098078137408,
+        "maximum_radiation_force": 0.0015053191199498478,
+        "final_source": [
+          6.030603789792486,
+          0.001355542814877485,
+          0.01751173478588261
+        ]
+      }
+    },
+    {
+      "name": "192_independent_derivative_and_quadrature",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "192_solver_finished_and_nonzero_radiation",
+      "passed": true,
+      "detail": {
+        "degree": 192,
+        "seconds": 1.409556100028567,
+        "rhs_calls": 8885,
+        "energy_drift": 9.11288058902393e-12,
+        "energy_derivative": 1.2276137805051389e-09,
+        "initial_field_energy": 0.0009609490518046325,
+        "minimum_radiation_force": 0.0014994227159896567,
+        "maximum_radiation_force": 0.0015053191199498478,
+        "final_source": [
+          6.030603789791626,
+          0.0013555428020423938,
+          0.01751173478592111
+        ]
+      }
+    },
+    {
+      "name": "independent_continuum_fields_refine",
+      "passed": false,
+      "detail": [
+        {
+          "lower": 48,
+          "upper": 96,
+          "maximum_field_difference": 0.0003652887075437785,
+          "source_difference": 2.238225691158363e-09
+        },
+        {
+          "lower": 96,
+          "upper": 192,
+          "maximum_field_difference": 2.2820531380892052e-05,
+          "source_difference": 1.9590885337594788e-11
+        }
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "degree": 48,
+      "seconds": 0.07066799997119233,
+      "rhs_calls": 593,
+      "energy_drift": 9.94864895673131e-09,
+      "energy_derivative": 7.261580868249249e-07,
+      "initial_field_energy": 0.0009609697514576431,
+      "minimum_radiation_force": 0.0014989295612348682,
+      "maximum_radiation_force": 0.0015055713707291126,
+      "final_source": [
+        6.030603789947372,
+        0.0013555446470453192,
+        0.017511734778883195
+      ]
+    },
+    {
+      "degree": 96,
+      "seconds": 0.24326349998591468,
+      "rhs_calls": 2249,
+      "energy_drift": 3.078601505668299e-10,
+      "energy_derivative": 2.0644808798119672e-08,
+      "initial_field_energy": 0.0009609490938563119,
+      "minimum_radiation_force": 0.0014994098078137408,
+      "maximum_radiation_force": 0.0015053191199498478,
+      "final_source": [
+        6.030603789792486,
+        0.001355542814877485,
+        0.01751173478588261
+      ]
+    },
+    {
+      "degree": 192,
+      "seconds": 1.409556100028567,
+      "rhs_calls": 8885,
+      "energy_drift": 9.11288058902393e-12,
+      "energy_derivative": 1.2276137805051389e-09,
+      "initial_field_energy": 0.0009609490518046325,
+      "minimum_radiation_force": 0.0014994227159896567,
+      "maximum_radiation_force": 0.0015053191199498478,
+      "final_source": [
+        6.030603789791626,
+        0.0013555428020423938,
+        0.01751173478592111
+      ]
+    }
+  ],
+  "inputs": {
+    "scripts\\run_annular_two_sided_GR_oracle_20260915.py": "ef227afd71a28d2d8107c3c6c56046d658f6d15ecf18f87a793bd096e8dd8cd3"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-two-sided-GR-oracle-attempt01\\executed-run_annular_two_sided_GR_oracle_20260915.py": "ef227afd71a28d2d8107c3c6c56046d658f6d15ecf18f87a793bd096e8dd8cd3",
+    "source-intake\\navier-stokes\\20260914\\annular-two-sided-GR-oracle-attempt01\\degree48.npz": "9c8f5bfd07a62197f5021b0ed5626da7a969e4c8acbf9b17cda9312d4543fd11",
+    "source-intake\\navier-stokes\\20260914\\annular-two-sided-GR-oracle-attempt01\\degree96.npz": "13965dcd1a00cc0f3b94fc9181847f712dbf2ab6c9d269eefd87411cbe5a5a38",
+    "source-intake\\navier-stokes\\20260914\\annular-two-sided-GR-oracle-attempt01\\degree192.npz": "157d689af34262303f0817744dd1de3535d4cb722f309ac5b57ff2387c2f7669"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "refinement": [
+    {
+      "lower": 48,
+      "upper": 96,
+      "maximum_field_difference": 0.0003652887075437785,
+      "source_difference": 2.238225691158363e-09
+    },
+    {
+      "lower": 96,
+      "upper": 192,
+      "maximum_field_difference": 2.2820531380892052e-05,
+      "source_difference": 1.9590885337594788e-11
+    }
+  ],
+  "error": "RuntimeError(\"independent_continuum_fields_refine: [{'lower': 48, 'upper': 96, 'maximum_field_difference': 0.0003652887075437785, 'source_difference': 2.238225691158363e-09}, {'lower': 96, 'upper': 192, 'maximum_field_difference': 2.2820531380892052e-05, 'source_difference': 1.9590885337594788e-11}]\")",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\run_annular_two_sided_GR_oracle_20260915.py\", line 47, in main\n    evidence.check('independent_continuum_fields_refine', comparisons[-1]['maximum_field_difference'] < .3*comparisons[0]['maximum_field_difference']\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                   and comparisons[-1]['maximum_field_difference'] < 2e-6, comparisons)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\annular_reference_continuum_shell_20260914.py\", line 41, in check\n    raise RuntimeError(name+': '+repr(detail))\nRuntimeError: independent_continuum_fields_refine: [{'lower': 48, 'upper': 96, 'maximum_field_difference': 0.0003652887075437785, 'source_difference': 2.238225691158363e-09}, {'lower': 96, 'upper': 192, 'maximum_field_difference': 2.2820531380892052e-05, 'source_difference': 1.9590885337594788e-11}]\n"
+}

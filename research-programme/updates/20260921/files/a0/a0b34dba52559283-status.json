@@ -1,0 +1,33 @@
+{
+  "state": "failed",
+  "checks": [
+    {
+      "name": "reference_actual_nested_spatial_elements",
+      "passed": false,
+      "detail": 0.0012499999999997513
+    }
+  ],
+  "cases": [],
+  "inputs": {
+    "scripts\\derive_annular_spatial_Gram_defect_split_20260919.py": "68e0437b779bc0df594d5124adf092618df65c04aa768780a8b4f408366c099e"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-spatial-Gram-defect-split-attempt01\\executed-derive_annular_spatial_Gram_defect_split_20260919.py": "68e0437b779bc0df594d5124adf092618df65c04aa768780a8b4f408366c099e"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "github_action": false,
+  "subagents_used": false,
+  "full_live_P2_force_convergence_proven": false,
+  "no_new_evolution": true,
+  "all_Gram_rows_retained": true,
+  "spatial_hierarchy_not_continuum_error": true,
+  "counterfactuals_not_evolved_states": true,
+  "full_geometry_reconstructed_on_both_paths": true,
+  "split_order_explicit_not_unique_causal_attribution": true,
+  "error": "RuntimeError('reference_actual_nested_spatial_elements: 0.0012499999999997513')",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\derive_annular_spatial_Gram_defect_split_20260919.py\", line 43, in main\n    evidence.check(branch+'_actual_nested_spatial_elements', nesting_error < 2e-14, nesting_error)\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\annular_reference_continuum_shell_20260914.py\", line 41, in check\n    raise RuntimeError(name+': '+repr(detail))\nRuntimeError: reference_actual_nested_spatial_elements: 0.0012499999999997513\n"
+}

@@ -1,0 +1,201 @@
+{
+  "state": "failed",
+  "checks": [
+    {
+      "name": "independent_live_oracle_qualified",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_continuum_radiation_force_refines",
+      "passed": true,
+      "detail": {
+        "forces": [
+          [
+            0.0,
+            -1.1323352039812813e-18
+          ],
+          [
+            -6.76780560048066e-06,
+            -6.767251051424952e-06
+          ],
+          [
+            -1.3799809299298061e-05,
+            -1.3800082409839022e-05
+          ],
+          [
+            -2.13075722244195e-05,
+            -2.1305329820854232e-05
+          ],
+          [
+            -2.892856054707835e-05,
+            -2.892638937234157e-05
+          ]
+        ],
+        "absolute_error": 2.2424035652694827e-09,
+        "relative_error": 7.75210323143058e-05
+      }
+    },
+    {
+      "name": "reference-17_same_times",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference-17_finite_physical_norm_and_diagnostics",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference-17_source_and_clock_smoke_accuracy",
+      "passed": true,
+      "detail": {
+        "key": "reference-17",
+        "branch": "reference",
+        "count": 17,
+        "width": 0.02,
+        "coupling": 0.1,
+        "duration": 0.02,
+        "seconds": 2.918084800010547,
+        "maximum_field_error": 0.29886134162582717,
+        "final_field_error": 0.292235420541531,
+        "maximum_source_error": 1.5754392279632157e-07,
+        "maximum_velocity_error": 1.3836307175732476e-05,
+        "maximum_clock_error": 8.846027014022817e-08,
+        "maximum_mass_error": 1.6013440721218686e-05,
+        "maximum_lapse_error": 6.150432803275763e-06,
+        "final_wave_force": -4.740705060107944e-05,
+        "continuum_final_wave_force": -2.892638937234157e-05,
+        "final_force_absolute_error": 1.848066122873787e-05,
+        "strict_half_percent_waveform_gate": false,
+        "valid_for_physics_claim": false
+      }
+    },
+    {
+      "name": "MTS-17_same_times",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS-17_finite_physical_norm_and_diagnostics",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS-17_source_and_clock_smoke_accuracy",
+      "passed": false,
+      "detail": {
+        "key": "MTS-17",
+        "branch": "MTS",
+        "count": 17,
+        "width": 0.02,
+        "coupling": 0.1,
+        "duration": 0.02,
+        "seconds": 2.916975200001616,
+        "maximum_field_error": 0.3004375527761766,
+        "final_field_error": 0.3004375527761766,
+        "maximum_source_error": 2.969803913899227e-07,
+        "maximum_velocity_error": 2.7064652034700792e-05,
+        "maximum_clock_error": 1.3128693573255523e-08,
+        "maximum_mass_error": 5.14476076507453e-06,
+        "maximum_lapse_error": 1.0960034363405313e-06,
+        "final_wave_force": -7.122873290892791e-05,
+        "continuum_final_wave_force": -2.892638937234157e-05,
+        "final_force_absolute_error": 4.230234353658635e-05,
+        "strict_half_percent_waveform_gate": false,
+        "valid_for_physics_claim": false
+      }
+    }
+  ],
+  "cases": [
+    {
+      "key": "reference-17",
+      "branch": "reference",
+      "count": 17,
+      "width": 0.02,
+      "coupling": 0.1,
+      "duration": 0.02,
+      "seconds": 2.918084800010547,
+      "maximum_field_error": 0.29886134162582717,
+      "final_field_error": 0.292235420541531,
+      "maximum_source_error": 1.5754392279632157e-07,
+      "maximum_velocity_error": 1.3836307175732476e-05,
+      "maximum_clock_error": 8.846027014022817e-08,
+      "maximum_mass_error": 1.6013440721218686e-05,
+      "maximum_lapse_error": 6.150432803275763e-06,
+      "final_wave_force": -4.740705060107944e-05,
+      "continuum_final_wave_force": -2.892638937234157e-05,
+      "final_force_absolute_error": 1.848066122873787e-05,
+      "strict_half_percent_waveform_gate": false,
+      "valid_for_physics_claim": false
+    },
+    {
+      "key": "MTS-17",
+      "branch": "MTS",
+      "count": 17,
+      "width": 0.02,
+      "coupling": 0.1,
+      "duration": 0.02,
+      "seconds": 2.916975200001616,
+      "maximum_field_error": 0.3004375527761766,
+      "final_field_error": 0.3004375527761766,
+      "maximum_source_error": 2.969803913899227e-07,
+      "maximum_velocity_error": 2.7064652034700792e-05,
+      "maximum_clock_error": 1.3128693573255523e-08,
+      "maximum_mass_error": 5.14476076507453e-06,
+      "maximum_lapse_error": 1.0960034363405313e-06,
+      "final_wave_force": -7.122873290892791e-05,
+      "continuum_final_wave_force": -2.892638937234157e-05,
+      "final_force_absolute_error": 4.230234353658635e-05,
+      "strict_half_percent_waveform_gate": false,
+      "valid_for_physics_claim": false
+    }
+  ],
+  "inputs": {
+    "scripts\\compare_annular_repaired_live_continuum_v2_20260915.py": "84195f0f14960c20a7cdf602ceb0d7e5d8660a2eae41147d1df82246c5504664",
+    "source-intake\\navier-stokes\\20260914\\annular-live-continuum-degree512-attempt01\\status.json": "308b2be687c123c9c44b4e88deb10ee21f8d278533a240918842bc79dce70609",
+    "source-intake\\navier-stokes\\20260914\\annular-live-continuum-degree512-attempt01\\degree512.npz": "a6faae702cdb79624974db869f8ad22294427fc0a9e65495067e2542ee57a010",
+    "source-intake\\navier-stokes\\20260914\\annular-live-continuum-refinement-attempt02\\degree384.npz": "5f02627408e36085725ebe8f0ee0f28698f5e546f37abbc7d720059ae5e76b2f",
+    "source-intake\\navier-stokes\\20260914\\annular-repaired-live-evolution-attempt01\\status.json": "9121d4e490f155cb53b6ad8762dade9c41d3061dd0edf91688d65d5152e26d63",
+    "source-intake\\navier-stokes\\20260914\\annular-repaired-live-evolution-attempt01\\reference-17-main.npz": "9e07af9503b8582175ec68710e14dd2da76e434401729c50fbf45e134163bd9a",
+    "source-intake\\navier-stokes\\20260914\\annular-repaired-live-evolution-attempt01\\MTS-17-main.npz": "2893d29bcc811c222e64e2c78aafaf64b00455aaa6282b88259e676ea4dd6f40"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-repaired-live-continuum-comparison-attempt02\\executed-compare_annular_repaired_live_continuum_v2_20260915.py": "84195f0f14960c20a7cdf602ceb0d7e5d8660a2eae41147d1df82246c5504664",
+    "source-intake\\navier-stokes\\20260914\\annular-repaired-live-continuum-comparison-attempt02\\reference-17-diagnostics.json": "a8c324a5a52e54e782e34f29fe6c6e8a747ffcc7713363e73468fb5fd1d7f6f4",
+    "source-intake\\navier-stokes\\20260914\\annular-repaired-live-continuum-comparison-attempt02\\MTS-17-diagnostics.json": "a136bc45ac775a6ff116dbdc5b83bfe8249c42130ff3054dd4194b9ac98a99cc"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "oracle_force_refinement": {
+    "forces": [
+      [
+        0.0,
+        -1.1323352039812813e-18
+      ],
+      [
+        -6.76780560048066e-06,
+        -6.767251051424952e-06
+      ],
+      [
+        -1.3799809299298061e-05,
+        -1.3800082409839022e-05
+      ],
+      [
+        -2.13075722244195e-05,
+        -2.1305329820854232e-05
+      ],
+      [
+        -2.892856054707835e-05,
+        -2.892638937234157e-05
+      ]
+    ],
+    "absolute_error": 2.2424035652694827e-09,
+    "relative_error": 7.75210323143058e-05
+  },
+  "error": "RuntimeError(\"MTS-17_source_and_clock_smoke_accuracy: {'key': 'MTS-17', 'branch': 'MTS', 'count': 17, 'width': 0.02, 'coupling': 0.1, 'duration': 0.02, 'seconds': 2.916975200001616, 'maximum_field_error': 0.3004375527761766, 'final_field_error': 0.3004375527761766, 'maximum_source_error': 2.969803913899227e-07, 'maximum_velocity_error': 2.7064652034700792e-05, 'maximum_clock_error': 1.3128693573255523e-08, 'maximum_mass_error': 5.14476076507453e-06, 'maximum_lapse_error': 1.0960034363405313e-06, 'final_wave_force': -7.122873290892791e-05, 'continuum_final_wave_force': -2.892638937234157e-05, 'final_force_absolute_error': 4.230234353658635e-05, 'strict_half_percent_waveform_gate': False, 'valid_for_physics_claim': False}\")",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\compare_annular_repaired_live_continuum_v2_20260915.py\", line 129, in main\n    evidence.check(key+'_source_and_clock_smoke_accuracy', summary['maximum_source_error'] < 5e-7\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                   and summary['maximum_velocity_error'] < 2e-5 and summary['maximum_clock_error'] < 2e-7, summary)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\annular_reference_continuum_shell_20260914.py\", line 41, in check\n    raise RuntimeError(name+': '+repr(detail))\nRuntimeError: MTS-17_source_and_clock_smoke_accuracy: {'key': 'MTS-17', 'branch': 'MTS', 'count': 17, 'width': 0.02, 'coupling': 0.1, 'duration': 0.02, 'seconds': 2.916975200001616, 'maximum_field_error': 0.3004375527761766, 'final_field_error': 0.3004375527761766, 'maximum_source_error': 2.969803913899227e-07, 'maximum_velocity_error': 2.7064652034700792e-05, 'maximum_clock_error': 1.3128693573255523e-08, 'maximum_mass_error': 5.14476076507453e-06, 'maximum_lapse_error': 1.0960034363405313e-06, 'final_wave_force': -7.122873290892791e-05, 'continuum_final_wave_force': -2.892638937234157e-05, 'final_force_absolute_error': 4.230234353658635e-05, 'strict_half_percent_waveform_gate': False, 'valid_for_physics_claim': False}\n"
+}

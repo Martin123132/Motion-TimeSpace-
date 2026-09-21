@@ -1,0 +1,397 @@
+{
+  "state": "complete",
+  "checks": [
+    {
+      "name": "annular-P2-continuum-bridge-continuum-384-attempt01_complete_and_hash_trajectory.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "oracle_384_initial_time_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "oracle_384_finished",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "annular-P2-continuum-bridge-continuum-512-attempt01_complete_and_hash_trajectory.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "oracle_512_initial_time_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "oracle_512_finished",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_oracle_force_refinement",
+      "passed": true,
+      "detail": 6.329604082989347e-11
+    },
+    {
+      "name": "independent_oracle_waveform_refinement",
+      "passed": true,
+      "detail": [
+        {
+          "aligned_field_error": 8.777012941333729e-07,
+          "physical_relative_L2_error": 9.110068754517176e-06,
+          "physical_absolute_L2_error": 1.0123562645159624e-07,
+          "maximum_source_gap": 0.0,
+          "pointwise_error_inside_gap": 0.0
+        }
+      ]
+    },
+    {
+      "name": "annular-P2-live-exponential-reference-257-attempt01_complete_and_hash_trajectory-steps16.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference_matching_time_and_scope",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "annular-P2-live-exponential-MTS-257-attempt01_complete_and_hash_trajectory-steps16.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS_matching_time_and_scope",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "cases": [
+    {
+      "kind": "continuum",
+      "degree": 384,
+      "evaluations": 16,
+      "wave_force": -5.37322539125438e-08,
+      "seconds": 8.06667600000219
+    },
+    {
+      "kind": "continuum",
+      "degree": 512,
+      "evaluations": 28,
+      "wave_force": -5.379554995337369e-08,
+      "seconds": 29.246028400004434
+    },
+    {
+      "kind": "finite",
+      "branch": "reference",
+      "time": 4e-05,
+      "force": -5.1791149984219305e-08,
+      "continuum_force": -5.379554995337369e-08,
+      "force_error": 2.0043999691543864e-09,
+      "force_threshold": 2.700598122731542e-08,
+      "instantaneous_force_relative_error": 0.0372595869154914,
+      "force_peak_relative_error": 0.00037110297016851583,
+      "short_endpoint_force_gate_pass": true,
+      "short_endpoint_waveform_gate_pass": true,
+      "short_endpoint_source_and_clock_gate_pass": true,
+      "short_endpoint_combined_gate_pass": true,
+      "empirical_time_budget_pass": true,
+      "full_interval_gate_pass": false,
+      "spatial_force_convergence_claim": false,
+      "layers": [
+        {
+          "label": -0.25,
+          "physical_relative_L2_error": 0.0002933740859235113,
+          "physical_absolute_energy_norm": 1.6793634422146585e-05,
+          "target_energy_norm": 0.05724307369985307,
+          "source_error": 1.7763568394002505e-15,
+          "velocity_error": 1.7266188478970435e-12,
+          "proper_clock_rate_error": 9.776623954849128e-13
+        },
+        {
+          "label": 0.0,
+          "physical_relative_L2_error": 0.00029337318681133315,
+          "physical_absolute_energy_norm": 1.6809546085835827e-05,
+          "target_energy_norm": 0.05729748607409703,
+          "source_error": 8.881784197001252e-16,
+          "velocity_error": 1.7312332123431418e-12,
+          "proper_clock_rate_error": 9.768852393676752e-13
+        },
+        {
+          "label": 0.25,
+          "physical_relative_L2_error": 0.0002933722898824354,
+          "physical_absolute_energy_norm": 1.6825457621734522e-05,
+          "target_energy_norm": 0.05735189791945611,
+          "source_error": 8.881784197001252e-16,
+          "velocity_error": 1.7308862676479464e-12,
+          "proper_clock_rate_error": 9.767742170652127e-13
+        }
+      ],
+      "field_error": 0.0002933740859235113,
+      "source_error": 1.7763568394002505e-15,
+      "velocity_error": 1.7312332123431418e-12,
+      "clock_rate_error": 9.776623954849128e-13,
+      "mass_error": 1.7656431872126177e-11,
+      "lapse_error": 3.515299162870633e-12
+    },
+    {
+      "kind": "finite",
+      "branch": "MTS",
+      "time": 4e-05,
+      "force": -4.1366603629718404e-08,
+      "continuum_force": -5.379554995337369e-08,
+      "force_error": 1.2428946323655287e-08,
+      "force_threshold": 2.700598122731542e-08,
+      "instantaneous_force_relative_error": 0.23104041755178353,
+      "force_peak_relative_error": 0.002301146960563671,
+      "short_endpoint_force_gate_pass": true,
+      "short_endpoint_waveform_gate_pass": true,
+      "short_endpoint_source_and_clock_gate_pass": true,
+      "short_endpoint_combined_gate_pass": true,
+      "empirical_time_budget_pass": true,
+      "full_interval_gate_pass": false,
+      "spatial_force_convergence_claim": false,
+      "layers": [
+        {
+          "label": -0.25,
+          "physical_relative_L2_error": 0.0002933854995296104,
+          "physical_absolute_energy_norm": 1.6794287772041696e-05,
+          "target_energy_norm": 0.05724307369985307,
+          "source_error": 1.7763568394002505e-15,
+          "velocity_error": 1.187230869170719e-11,
+          "proper_clock_rate_error": 1.5391732333114305e-10
+        },
+        {
+          "label": 0.0,
+          "physical_relative_L2_error": 0.0002933846048039791,
+          "physical_absolute_energy_norm": 1.681020030811045e-05,
+          "target_energy_norm": 0.05729748607409703,
+          "source_error": 8.881784197001252e-16,
+          "velocity_error": 1.1173582892265443e-11,
+          "proper_clock_rate_error": 1.5391976582179723e-10
+        },
+        {
+          "label": 0.25,
+          "physical_relative_L2_error": 0.0002933837128715729,
+          "physical_absolute_energy_norm": 1.682611275184147e-05,
+          "target_energy_norm": 0.05735189791945611,
+          "source_error": 8.881784197001252e-16,
+          "velocity_error": 1.1882446415700798e-11,
+          "proper_clock_rate_error": 1.5386025786767732e-10
+        }
+      ],
+      "field_error": 0.0002933854995296104,
+      "source_error": 1.7763568394002505e-15,
+      "velocity_error": 1.1882446415700798e-11,
+      "clock_rate_error": 1.5391976582179723e-10,
+      "mass_error": 5.498235200462886e-10,
+      "lapse_error": 2.0358814634136024e-10
+    }
+  ],
+  "inputs": {
+    "scripts\\compare_annular_P2_live_exponential_short_20260919.py": "c505e36a441d2df9fd16e50ad5f139faa2ebe53026927c7fb5050fb2f141dc69",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-continuum-bridge-continuum-384-attempt01\\status.json": "74ce5d146179d0b4f3d67836b27547f8f7c40a76c26963c1b2df2b4a3c6d82d1",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-continuum-bridge-continuum-384-attempt01\\trajectory.npz": "62c09e31301f7d3080080eb9ca4f57fb83134e7f74a6a10d07b631782f652ee6",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-continuum-bridge-continuum-512-attempt01\\status.json": "77ce8043ebf7a5f0d1d54c9e67cadd1f205f93d1e580eac5c7345280ba0feb58",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-continuum-bridge-continuum-512-attempt01\\trajectory.npz": "a27168ce290426ed2fd417be1556eba0a81c2c19c87ee54e33a1a63a7c7d4e13",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-live-exponential-reference-257-attempt01\\status.json": "8d23f9875e1642c6569fae00159563dc1d1f3ce04ca8ce6a46e8bf388f7a7fdf",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-live-exponential-reference-257-attempt01\\trajectory-steps16.npz": "f5bb88bd4a813629e220437c403157b0dda791f956407c21d2b47212c90b97cf",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-live-exponential-MTS-257-attempt01\\status.json": "2d92261b67a60faca980b3892080b4a23dd94ef551925b02430aa3e965b604b7",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-live-exponential-MTS-257-attempt01\\trajectory-steps16.npz": "afa6d1862f0a5d2e6aacc5a0f931438f201ddb49d0c65b0e5e2944e24672c91e",
+    "scripts\\navier_stokes_source_audit_20260908.py": "817c4cdff5bf22a88deea7771b4bbc960690397512bc07cdb639ee9ab33e4f0b",
+    "scripts\\sbp4_derived_operator_20260909.py": "065ea0be52b651d742082230fe8322a367e11fc5e20150c8f3d506d1f87e77d3",
+    "scripts\\sbp4_compatible_second_operator_20260909.py": "86c6f05f7cf0a07abe9d4caa5ca1038b9f64641085a1a4a4f03aeae3ac918a3c",
+    "scripts\\annular_compatible_current_restoring_20260909.py": "c2e15990fb70e4e0587e63f8f0182831b0a4185003cdcd295db97af9027d4051",
+    "scripts\\annular_gram_joint_action_20260909.py": "c45de66a16a3c44a1ebb5a68874c47a10ceb24815bda5ecc88d5bfad3d049591",
+    "scripts\\annular_covariant_time_transport_20260909.py": "d6a55d99b9f9de06e30ab7a6f090ae12b97b273a23930315740490324ab679a9",
+    "scripts\\annular_mixed_grid_basis_20260909.py": "5a9ceef39b681f376a7e6468a104dc6a4139365248ec64ea95fa8809993f147c",
+    "scripts\\annular_adm_mixed_action_20260909.py": "c5681003a7a495196428407f25e00babc525a35d953618e1911540f4b096fe05",
+    "scripts\\annular_adm_clock_quadratic_20260909.py": "e5ccec725f88125169ccf6f533d5f613343a7259fabad0c0bcf992e600d024be",
+    "scripts\\annular_constraint_routhian_20260909.py": "62a5cf9ac8f8e73ee56bc0c46f29e5ed560692cb19a1125ba848f15c72b1dfd8",
+    "scripts\\annular_metric_link_quadratic_20260909.py": "9555ff3da29cf2522ac67cb8f3a2e3b44420464392e1029cc31410542d96e63b",
+    "scripts\\annular_released_hermite_action_20260909.py": "360d565ed558fd83121d11d59f9096d1ebf7fc49f288ca5d8bf7e4f062cac145",
+    "scripts\\annular_action_boundary_current_20260909.py": "8b702d8f7610d686bebed3ea1af73d94b0d33fe5cc7dbe3e0faee4adbd98ce98",
+    "scripts\\annular_metric_flux_jets_20260909.py": "a1c5e3db71e68ebdd69259d47e50bd1d9cecbba51034a55d5c791ad09bada3a0",
+    "scripts\\annular_nonlinear_history_20260912.py": "7747f735107c7c5bb2eae1b9e213354fc9d8856597328cbe697389ec1a96a2fd",
+    "scripts\\annular_covariant_scalar_action_20260912.py": "ccf97c4622e79a5816e094b3001e0513e7cd16f3a424fafeade04de85bca6a4f",
+    "scripts\\annular_finite_width_bulk_current_20260913.py": "da2ca4c2fab7315b4738007aafff59f38be0d90cf4f121706a32afa16f060601",
+    "scripts\\annular_horizontal_clock_evolution_20260913.py": "985843dab67ab06c85c97b32042d48f6ed5342bf578c3518bbad132cb731cd3d",
+    "scripts\\annular_compatible_h_evolution_20260914.py": "88424b14891e92d7780077619e02e5dc3e166806ed9c22924f0f03682e4e97e1",
+    "scripts\\annular_reference_continuum_shell_20260914.py": "5cbb6013083eafb55181d5a14de236685835c51ed36f26b12f0b4cc02edd9409",
+    "scripts\\annular_source_gravity_collar_20260914.py": "65d8b6c1a421bac8b56420df81630647155043b7b35031365d3f708ab94c7fa2",
+    "scripts\\derive_annular_source_gravity_20260914.py": "97861e2bff4aa48b4408f30a71379b32b5133439bc4d456d9b6426d544bacdbc",
+    "scripts\\annular_live_continuum_characteristics_20260915.py": "f0d67ab9a0e754f13e5c68067c5657e85071414ec4d072f49045457ee0d8365f",
+    "scripts\\annular_live_continuum_fast_20260915.py": "426f61cf0051e537a5107ea30a2c5d4a68f3028d63f91d738c7a0f99dd5ae973",
+    "scripts\\annular_live_barycentric_20260915.py": "d8f73407553a6f34bf2aee863e380953379d3fedbbdf079a2bdd4a06b9b15cfd",
+    "scripts\\annular_covariant_cut_action_20260915.py": "928f830561a0237f5297897bf690e4a53ca0ffc778b2967c9726223e9fd4176f",
+    "scripts\\annular_covariant_cut_action_v2_20260915.py": "0c24f5c974b4a5d4cd78bb395d8fa71070130e271018eb769d1ef19c2fdc828e",
+    "scripts\\annular_dynamical_source_20260914.py": "b4d623cb63ee77b589bf4a1d1162e281680893b5743df42fe323b90f3c38642a",
+    "scripts\\annular_moving_collar_action_20260914.py": "ac6abbd604a12709b26274ebd53747083d71fdb76f6ac3d90e67b011ee306597",
+    "scripts\\annular_moving_collar_sparse_20260914.py": "2d4b8bfcd5ec95b7b9ff2a2b6999f0c0edba7960a984cdd72bfca1daf0e8cb6d",
+    "scripts\\annular_sparse_repaired_cut_20260915.py": "8e47042aa5e58430e845b8434f6ff47ab322360e0602fd4a482f745737319a99",
+    "scripts\\annular_source_fitted_action_20260915.py": "d409c37c30313d0e05cfd7d0015a587188e1984460da6dc92c2d8fef15f0252f",
+    "scripts\\annular_quadratic_source_fitted_action_20260915.py": "cde77a8db83b284034f98f44d785b58a5f1cad0e4c41113e28c0a47ddd6fd92c",
+    "scripts\\annular_locally_refined_source_action_20260916.py": "81e3fef722d868fcd4e53ebc69b119afed0cc2253cb21e6e88e457424c6d128d",
+    "scripts\\annular_cut_initial_data_20260915.py": "47618f0af63d126619f4d2b6ccf97618ebf8b6ca84f3a77e3cdefe6e57e2eda3",
+    "scripts\\verify_annular_cut_metric_and_inversion_20260915.py": "b90147c1e97702ffbcccd47e873c469a5b97abac2a626f3f1c2f700cd3a43d45",
+    "scripts\\annular_repaired_live_geometry_20260915.py": "aaae4f759077bcecae39ad8ba7aa7362aa371c5bdf98ec872b6d5408c4d5154d",
+    "scripts\\annular_live_P2_canonical_v2_20260918.py": "2a6785ab15cd5c5aa181d0e55db1b1170eb221e7d32f9a4f6a1c3bc0a9352192",
+    "scripts\\annular_repaired_live_current_20260915.py": "9cf0436c0f343c1db623fd8de59af0662d8efe1726c2271a4ce9a6610de21d48",
+    "scripts\\annular_live_P2_current_20260918.py": "b62fa9173385cf0af26d15d4ed816ba8c8a228161ceb80f8d3560ff51af67c06",
+    "scripts\\annular_P2_primitive_geometry_20260918.py": "26dfb33bc76f8698f1e14023b505af32ecd719b2afde3cf7057c90d4374b5d71",
+    "scripts\\annular_P2_graded_source_20260919.py": "940967144392ae8d23285c24d1c65cd765d2de0d0391bc473b2795103d1f202d",
+    "scripts\\run_annular_P2_continuum_bridge_20260918.py": "e8ec6ab2d7ad1472802cfe0d62f891880b981c507aa4edb9b02d556c82ce9dee",
+    "scripts\\annular_live_jump_aware_comparison_20260915.py": "767db0519b344c8ba7f4262c591e52975691d178cfcd51e4c0182b3afa21e682",
+    "scripts\\run_annular_live_continuum_evolution_20260915.py": "8f490eb601b59d558a40ee430f698cd8b482781d8f7e9c8104e93f9e17256695",
+    "scripts\\compare_annular_P2_continuum_bridge_20260918.py": "c3551af356a0e2ef7b6082b2881c7408e10d20ccdbb363a0ff17d9c560208c58"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-P2-live-exponential-short-continuum-attempt01\\executed-compare_annular_P2_live_exponential_short_20260919.py": "c505e36a441d2df9fd16e50ad5f139faa2ebe53026927c7fb5050fb2f141dc69",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-live-exponential-short-continuum-attempt01\\continuum384.npz": "a799c61d48b2e875bb31c80600de3269646f6740a07c8b43175ff4e02a90644d",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-live-exponential-short-continuum-attempt01\\continuum512.npz": "8e1096246aff7b8083f8c5065521b69ea97d3817444ea987b76fe5b521bbac0c",
+    "source-intake\\navier-stokes\\20260914\\annular-P2-live-exponential-short-continuum-attempt01\\completion.txt": "8d1268073c08ed22d392925d1372b9c2b85ec5c5b766ed31b4da5da5e771d728"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "github_action": false,
+  "subagents_used": false,
+  "full_live_P2_force_convergence_proven": false,
+  "duration": 4e-05,
+  "full_window_not_retested": true,
+  "finite_spatial_refinement_not_supplied": true,
+  "original_force_gates_not_replaced": true,
+  "same_analytic_preparation": true,
+  "sampled_continuum_peak_scale": 5.401196245463084e-06,
+  "force_absolute_gate": 2e-07,
+  "force_peak_relative_gate": 0.005,
+  "oracle_force_difference_budget": 2e-09,
+  "waveform_relative_gate": 0.005,
+  "source_position_gate": 5e-07,
+  "source_velocity_gate": 2e-05,
+  "clock_rate_gate": 2e-07,
+  "oracle_field_refinement": [
+    {
+      "aligned_field_error": 8.777012941333729e-07,
+      "physical_relative_L2_error": 9.110068754517176e-06,
+      "physical_absolute_L2_error": 1.0123562645159624e-07,
+      "maximum_source_gap": 0.0,
+      "pointwise_error_inside_gap": 0.0
+    }
+  ],
+  "results": [
+    {
+      "branch": "reference",
+      "time": 4e-05,
+      "force": -5.1791149984219305e-08,
+      "continuum_force": -5.379554995337369e-08,
+      "force_error": 2.0043999691543864e-09,
+      "force_threshold": 2.700598122731542e-08,
+      "instantaneous_force_relative_error": 0.0372595869154914,
+      "force_peak_relative_error": 0.00037110297016851583,
+      "short_endpoint_force_gate_pass": true,
+      "short_endpoint_waveform_gate_pass": true,
+      "short_endpoint_source_and_clock_gate_pass": true,
+      "short_endpoint_combined_gate_pass": true,
+      "empirical_time_budget_pass": true,
+      "full_interval_gate_pass": false,
+      "spatial_force_convergence_claim": false,
+      "layers": [
+        {
+          "label": -0.25,
+          "physical_relative_L2_error": 0.0002933740859235113,
+          "physical_absolute_energy_norm": 1.6793634422146585e-05,
+          "target_energy_norm": 0.05724307369985307,
+          "source_error": 1.7763568394002505e-15,
+          "velocity_error": 1.7266188478970435e-12,
+          "proper_clock_rate_error": 9.776623954849128e-13
+        },
+        {
+          "label": 0.0,
+          "physical_relative_L2_error": 0.00029337318681133315,
+          "physical_absolute_energy_norm": 1.6809546085835827e-05,
+          "target_energy_norm": 0.05729748607409703,
+          "source_error": 8.881784197001252e-16,
+          "velocity_error": 1.7312332123431418e-12,
+          "proper_clock_rate_error": 9.768852393676752e-13
+        },
+        {
+          "label": 0.25,
+          "physical_relative_L2_error": 0.0002933722898824354,
+          "physical_absolute_energy_norm": 1.6825457621734522e-05,
+          "target_energy_norm": 0.05735189791945611,
+          "source_error": 8.881784197001252e-16,
+          "velocity_error": 1.7308862676479464e-12,
+          "proper_clock_rate_error": 9.767742170652127e-13
+        }
+      ],
+      "field_error": 0.0002933740859235113,
+      "source_error": 1.7763568394002505e-15,
+      "velocity_error": 1.7312332123431418e-12,
+      "clock_rate_error": 9.776623954849128e-13,
+      "mass_error": 1.7656431872126177e-11,
+      "lapse_error": 3.515299162870633e-12
+    },
+    {
+      "branch": "MTS",
+      "time": 4e-05,
+      "force": -4.1366603629718404e-08,
+      "continuum_force": -5.379554995337369e-08,
+      "force_error": 1.2428946323655287e-08,
+      "force_threshold": 2.700598122731542e-08,
+      "instantaneous_force_relative_error": 0.23104041755178353,
+      "force_peak_relative_error": 0.002301146960563671,
+      "short_endpoint_force_gate_pass": true,
+      "short_endpoint_waveform_gate_pass": true,
+      "short_endpoint_source_and_clock_gate_pass": true,
+      "short_endpoint_combined_gate_pass": true,
+      "empirical_time_budget_pass": true,
+      "full_interval_gate_pass": false,
+      "spatial_force_convergence_claim": false,
+      "layers": [
+        {
+          "label": -0.25,
+          "physical_relative_L2_error": 0.0002933854995296104,
+          "physical_absolute_energy_norm": 1.6794287772041696e-05,
+          "target_energy_norm": 0.05724307369985307,
+          "source_error": 1.7763568394002505e-15,
+          "velocity_error": 1.187230869170719e-11,
+          "proper_clock_rate_error": 1.5391732333114305e-10
+        },
+        {
+          "label": 0.0,
+          "physical_relative_L2_error": 0.0002933846048039791,
+          "physical_absolute_energy_norm": 1.681020030811045e-05,
+          "target_energy_norm": 0.05729748607409703,
+          "source_error": 8.881784197001252e-16,
+          "velocity_error": 1.1173582892265443e-11,
+          "proper_clock_rate_error": 1.5391976582179723e-10
+        },
+        {
+          "label": 0.25,
+          "physical_relative_L2_error": 0.0002933837128715729,
+          "physical_absolute_energy_norm": 1.682611275184147e-05,
+          "target_energy_norm": 0.05735189791945611,
+          "source_error": 8.881784197001252e-16,
+          "velocity_error": 1.1882446415700798e-11,
+          "proper_clock_rate_error": 1.5386025786767732e-10
+        }
+      ],
+      "field_error": 0.0002933854995296104,
+      "source_error": 1.7763568394002505e-15,
+      "velocity_error": 1.1882446415700798e-11,
+      "clock_rate_error": 1.5391976582179723e-10,
+      "mass_error": 5.498235200462886e-10,
+      "lapse_error": 2.0358814634136024e-10
+    }
+  ],
+  "oracle_force_difference": 6.329604082989347e-11,
+  "seconds": 121.97643590000371,
+  "completed_at": "2026-09-19T00:47:31.752314+00:00"
+}

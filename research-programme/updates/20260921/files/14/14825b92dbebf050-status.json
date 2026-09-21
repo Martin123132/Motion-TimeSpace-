@@ -1,0 +1,202 @@
+{
+  "state": "complete",
+  "checks": [
+    {
+      "name": "GR_only_projection_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "384_projection_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "384_shapes_and_finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "384_Hermite_knots_and_derivatives",
+      "passed": true,
+      "detail": 7.771561172376096e-16
+    },
+    {
+      "name": "512_projection_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "512_shapes_and_finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "512_Hermite_knots_and_derivatives",
+      "passed": true,
+      "detail": 3.3306690738754696e-16
+    },
+    {
+      "name": "768_projection_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768_shapes_and_finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768_Hermite_knots_and_derivatives",
+      "passed": true,
+      "detail": 3.3306690738754696e-16
+    },
+    {
+      "name": "known_cubic_reconstruction",
+      "passed": true,
+      "detail": {
+        "state": 2.220446049250313e-16,
+        "derivative": 4.440892098500626e-15
+      }
+    },
+    {
+      "name": "reference_independent_analytic_full_Jacobian",
+      "passed": true,
+      "detail": 6.386759339546478e-16
+    },
+    {
+      "name": "reference_independent_force_direction",
+      "passed": true,
+      "detail": 1.0842021724855044e-18
+    },
+    {
+      "name": "reference_clock_gauge_silence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference_causal_initial_equation",
+      "passed": true,
+      "detail": 1.1582748649097141e-14
+    },
+    {
+      "name": "MTS_independent_analytic_full_Jacobian",
+      "passed": true,
+      "detail": 5.8018444689565305e-16
+    },
+    {
+      "name": "MTS_independent_force_direction",
+      "passed": true,
+      "detail": 2.439454888092385e-19
+    },
+    {
+      "name": "MTS_clock_gauge_silence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS_causal_initial_equation",
+      "passed": true,
+      "detail": 9.091685737594446e-15
+    }
+  ],
+  "cases": [
+    {
+      "degree": 384,
+      "count": 513,
+      "splits": 8,
+      "scalar_dofs": 1054,
+      "maximum_knot_error": 7.771561172376096e-16,
+      "initial_projection_difference": 5.960875405668742e-08
+    },
+    {
+      "degree": 512,
+      "count": 513,
+      "splits": 8,
+      "scalar_dofs": 1054,
+      "maximum_knot_error": 3.3306690738754696e-16,
+      "initial_projection_difference": 2.9332609641542966e-08
+    },
+    {
+      "degree": 768,
+      "count": 513,
+      "splits": 8,
+      "scalar_dofs": 1054,
+      "maximum_knot_error": 3.3306690738754696e-16,
+      "initial_projection_difference": 1.2363803082326107e-08
+    }
+  ],
+  "inputs": {
+    "scripts\\prepare_annular_GR_causal_predictor_20260917.py": "dae426d9c631f15513b240ab4be326304fcea035aacf1dc5d19d6cf63dec926c",
+    "source-intake\\navier-stokes\\20260914\\annular-GR-projection-residual-attempt02\\status.json": "59eb28dfa9ae761280c9dfc0d66bab61f63f9573349e2d52b0dfe2c7afc959e1",
+    "source-intake\\navier-stokes\\20260914\\annular-GR-projection-residual-attempt02\\projection-384-513.npz": "8e6c618dbf226f1af904c6594d7b1197d067322eb3c6ee13cbf060eeeee6b13a",
+    "source-intake\\navier-stokes\\20260914\\annular-GR-projection-residual-attempt02\\projection-512-513.npz": "fc3f1058d4e743f3dd372429705e773300a0559d71822b5d0dc99c62f5fef4e2",
+    "source-intake\\navier-stokes\\20260914\\annular-GR-projection-residual-attempt02\\projection-768-513.npz": "8fa7a50c5e13eaefd0b1dc2b6c882fe0cb980f863b1ea9f6a1b55c2f54357fac",
+    "scripts\\navier_stokes_source_audit_20260908.py": "817c4cdff5bf22a88deea7771b4bbc960690397512bc07cdb639ee9ab33e4f0b",
+    "scripts\\sbp4_derived_operator_20260909.py": "065ea0be52b651d742082230fe8322a367e11fc5e20150c8f3d506d1f87e77d3",
+    "scripts\\sbp4_compatible_second_operator_20260909.py": "86c6f05f7cf0a07abe9d4caa5ca1038b9f64641085a1a4a4f03aeae3ac918a3c",
+    "scripts\\annular_compatible_current_restoring_20260909.py": "c2e15990fb70e4e0587e63f8f0182831b0a4185003cdcd295db97af9027d4051",
+    "scripts\\annular_gram_joint_action_20260909.py": "c45de66a16a3c44a1ebb5a68874c47a10ceb24815bda5ecc88d5bfad3d049591",
+    "scripts\\annular_covariant_time_transport_20260909.py": "d6a55d99b9f9de06e30ab7a6f090ae12b97b273a23930315740490324ab679a9",
+    "scripts\\annular_mixed_grid_basis_20260909.py": "5a9ceef39b681f376a7e6468a104dc6a4139365248ec64ea95fa8809993f147c",
+    "scripts\\annular_adm_mixed_action_20260909.py": "c5681003a7a495196428407f25e00babc525a35d953618e1911540f4b096fe05",
+    "scripts\\annular_adm_clock_quadratic_20260909.py": "e5ccec725f88125169ccf6f533d5f613343a7259fabad0c0bcf992e600d024be",
+    "scripts\\annular_constraint_routhian_20260909.py": "62a5cf9ac8f8e73ee56bc0c46f29e5ed560692cb19a1125ba848f15c72b1dfd8",
+    "scripts\\annular_metric_link_quadratic_20260909.py": "9555ff3da29cf2522ac67cb8f3a2e3b44420464392e1029cc31410542d96e63b",
+    "scripts\\annular_released_hermite_action_20260909.py": "360d565ed558fd83121d11d59f9096d1ebf7fc49f288ca5d8bf7e4f062cac145",
+    "scripts\\annular_action_boundary_current_20260909.py": "8b702d8f7610d686bebed3ea1af73d94b0d33fe5cc7dbe3e0faee4adbd98ce98",
+    "scripts\\annular_metric_flux_jets_20260909.py": "a1c5e3db71e68ebdd69259d47e50bd1d9cecbba51034a55d5c791ad09bada3a0",
+    "scripts\\annular_nonlinear_history_20260912.py": "7747f735107c7c5bb2eae1b9e213354fc9d8856597328cbe697389ec1a96a2fd",
+    "scripts\\annular_covariant_scalar_action_20260912.py": "ccf97c4622e79a5816e094b3001e0513e7cd16f3a424fafeade04de85bca6a4f",
+    "scripts\\annular_finite_width_bulk_current_20260913.py": "da2ca4c2fab7315b4738007aafff59f38be0d90cf4f121706a32afa16f060601",
+    "scripts\\annular_horizontal_clock_evolution_20260913.py": "985843dab67ab06c85c97b32042d48f6ed5342bf578c3518bbad132cb731cd3d",
+    "scripts\\annular_compatible_h_evolution_20260914.py": "88424b14891e92d7780077619e02e5dc3e166806ed9c22924f0f03682e4e97e1",
+    "scripts\\annular_reference_continuum_shell_20260914.py": "5cbb6013083eafb55181d5a14de236685835c51ed36f26b12f0b4cc02edd9409",
+    "scripts\\annular_source_gravity_collar_20260914.py": "65d8b6c1a421bac8b56420df81630647155043b7b35031365d3f708ab94c7fa2",
+    "scripts\\derive_annular_source_gravity_20260914.py": "97861e2bff4aa48b4408f30a71379b32b5133439bc4d456d9b6426d544bacdbc",
+    "scripts\\annular_GR_causal_predictor_20260917.py": "819ba8bb68cc79884ee3871a01771cca2cae90a54e7f35229e7911ced41aa432",
+    "scripts\\annular_flat_preassembled_flow_20260916.py": "d98631ce1a3cb56eb1fb6ea3c1a46c09e60b28f3c4ce9a70097eb618c0be9687",
+    "scripts\\annular_boundary_response_20260916.py": "a9cc499a2583f2f4807179fc90b9981b9735e62ea4a0511df1b5ba854014bcd0",
+    "scripts\\annular_moving_spectral_frame_20260916.py": "53ac6e0176ee073779e73c134fff40b0b7476a5e663fc1b70e5adda449e9c3e5",
+    "scripts\\annular_moving_spectral_curvature_20260916.py": "bb25eab102afe2bf1a6f68099dcc11712fb7b9ee7f1c253354a5afbd6108ecc7",
+    "scripts\\annular_anchored_projector_chart_20260916.py": "a88a39cb33d7cb4a773703aa9c546a0d748ef5d45a9a8b4ace004541ea50b23d",
+    "scripts\\annular_full_force_linearization_20260916.py": "3e893853b587e19a670a7c2fc2579ef3ed56b50d298eb439de9e54277e5d6e40",
+    "scripts\\annular_covariant_cut_action_20260915.py": "928f830561a0237f5297897bf690e4a53ca0ffc778b2967c9726223e9fd4176f",
+    "scripts\\annular_covariant_cut_action_v2_20260915.py": "0c24f5c974b4a5d4cd78bb395d8fa71070130e271018eb769d1ef19c2fdc828e",
+    "scripts\\annular_dynamical_source_20260914.py": "b4d623cb63ee77b589bf4a1d1162e281680893b5743df42fe323b90f3c38642a",
+    "scripts\\annular_moving_collar_action_20260914.py": "ac6abbd604a12709b26274ebd53747083d71fdb76f6ac3d90e67b011ee306597",
+    "scripts\\annular_moving_collar_sparse_20260914.py": "2d4b8bfcd5ec95b7b9ff2a2b6999f0c0edba7960a984cdd72bfca1daf0e8cb6d",
+    "scripts\\annular_sparse_repaired_cut_20260915.py": "8e47042aa5e58430e845b8434f6ff47ab322360e0602fd4a482f745737319a99",
+    "scripts\\annular_source_fitted_action_20260915.py": "d409c37c30313d0e05cfd7d0015a587188e1984460da6dc92c2d8fef15f0252f",
+    "scripts\\annular_quadratic_source_fitted_action_20260915.py": "cde77a8db83b284034f98f44d785b58a5f1cad0e4c41113e28c0a47ddd6fd92c",
+    "scripts\\annular_locally_refined_source_action_20260916.py": "81e3fef722d868fcd4e53ebc69b119afed0cc2253cb21e6e88e457424c6d128d",
+    "scripts\\annular_radiation_benchmark_preparation_20260915.py": "31870324cb028582c1667a594a8da3f5f627c9326ccec406110558406c9d6fd4",
+    "scripts\\annular_two_sided_GR_characteristics_20260915.py": "ece5e22ab8b0d3a8a25f562f9e02d45f4de5cb256e2b6ad1d734463a7fd46b92",
+    "scripts\\run_annular_source_fitted_crossing_20260915.py": "032d4778421f937c7aaa7117da2e03b2f4a196a85c70a8c8d2a939ed37292caa"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-GR-causal-inputs-attempt01\\executed-prepare_annular_GR_causal_predictor_20260917.py": "dae426d9c631f15513b240ab4be326304fcea035aacf1dc5d19d6cf63dec926c",
+    "source-intake\\navier-stokes\\20260914\\annular-GR-causal-inputs-attempt01\\GR-only-384-513.npz": "46aaec692192564dbedd48b716eff2cbca9e1aaecadd0dbde6811116ec2a1750",
+    "source-intake\\navier-stokes\\20260914\\annular-GR-causal-inputs-attempt01\\GR-only-512-513.npz": "7aac15b137b2df4aeb4221b18e2de029658ab6880b3e02eae9ce48552b19ff2c",
+    "source-intake\\navier-stokes\\20260914\\annular-GR-causal-inputs-attempt01\\GR-only-768-513.npz": "325a9e210000d8f89638e2aeb21b3fc6bf6173165dc498a82a14f31d55add5fc"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "known_benchmark_not_blind_new_experiment": true,
+  "finite_future_trajectories_read": false,
+  "prescribed_flat_background_only": true,
+  "original_action_unchanged": true,
+  "count": 513,
+  "source_splits": 8,
+  "predictor_equation": "eta_dot=DF(z)eta+F(z)-z_dot",
+  "observables_prespecified": [
+    "linearized_force",
+    "original_force_on_reconstructed_state"
+  ],
+  "physical_force_gate": 2e-07,
+  "numerical_control_gate": 2e-08,
+  "completed_at": "2026-09-17T00:59:06.835637+00:00"
+}

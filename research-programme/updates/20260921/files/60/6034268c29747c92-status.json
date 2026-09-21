@@ -1,0 +1,128 @@
+{
+  "state": "complete",
+  "checks": [
+    {
+      "name": "reference_zero_shift_current_adjoint",
+      "passed": true,
+      "detail": {
+        "branch": "reference",
+        "transport": 0.00024045629524092814,
+        "direct_node": 0.0005437708875948708,
+        "source": 1.12807631342619e-06,
+        "boundary": -5.108004342523336e-06,
+        "total": 0.0007802472548067018,
+        "tangent_derivative": 0.000780247254806702,
+        "independent_difference": 0.000780247254791866,
+        "adjoint_tangent_error": 2.168404344971009e-19,
+        "independent_error": 1.483578884742265e-14
+      }
+    },
+    {
+      "name": "reference_independent_full_action_shift_difference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference_temporal_endpoint_term_is_nonzero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference_mesh_motion_direct_term_is_nonzero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS_zero_shift_current_adjoint",
+      "passed": true,
+      "detail": {
+        "branch": "MTS",
+        "transport": 0.00024042391798885794,
+        "direct_node": 0.0005438138200942444,
+        "source": 1.12807631342619e-06,
+        "boundary": -5.108025041205403e-06,
+        "total": 0.0007802577893553231,
+        "tangent_derivative": 0.0007802577893553236,
+        "independent_difference": 0.0007802577893592973,
+        "adjoint_tangent_error": 5.421010862427522e-19,
+        "independent_error": 3.974251483462865e-15
+      }
+    },
+    {
+      "name": "MTS_independent_full_action_shift_difference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS_temporal_endpoint_term_is_nonzero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS_mesh_motion_direct_term_is_nonzero",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "cases": [
+    {
+      "branch": "reference",
+      "transport": 0.00024045629524092814,
+      "direct_node": 0.0005437708875948708,
+      "source": 1.12807631342619e-06,
+      "boundary": -5.108004342523336e-06,
+      "total": 0.0007802472548067018,
+      "tangent_derivative": 0.000780247254806702,
+      "independent_difference": 0.000780247254791866,
+      "adjoint_tangent_error": 2.168404344971009e-19,
+      "independent_error": 1.483578884742265e-14
+    },
+    {
+      "branch": "MTS",
+      "transport": 0.00024042391798885794,
+      "direct_node": 0.0005438138200942444,
+      "source": 1.12807631342619e-06,
+      "boundary": -5.108025041205403e-06,
+      "total": 0.0007802577893553231,
+      "tangent_derivative": 0.0007802577893553236,
+      "independent_difference": 0.0007802577893592973,
+      "adjoint_tangent_error": 5.421010862427522e-19,
+      "independent_error": 3.974251483462865e-15
+    }
+  ],
+  "inputs": {
+    "scripts\\derive_annular_moving_zero_shift_current_20260914.py": "a54024ede77a410f9d54d2db78c461a04ec21bedebfad7b8a9b3e8df00660ca3",
+    "scripts\\navier_stokes_source_audit_20260908.py": "817c4cdff5bf22a88deea7771b4bbc960690397512bc07cdb639ee9ab33e4f0b",
+    "scripts\\sbp4_derived_operator_20260909.py": "065ea0be52b651d742082230fe8322a367e11fc5e20150c8f3d506d1f87e77d3",
+    "scripts\\sbp4_compatible_second_operator_20260909.py": "86c6f05f7cf0a07abe9d4caa5ca1038b9f64641085a1a4a4f03aeae3ac918a3c",
+    "scripts\\annular_compatible_current_restoring_20260909.py": "c2e15990fb70e4e0587e63f8f0182831b0a4185003cdcd295db97af9027d4051",
+    "scripts\\annular_gram_joint_action_20260909.py": "c45de66a16a3c44a1ebb5a68874c47a10ceb24815bda5ecc88d5bfad3d049591",
+    "scripts\\annular_covariant_time_transport_20260909.py": "d6a55d99b9f9de06e30ab7a6f090ae12b97b273a23930315740490324ab679a9",
+    "scripts\\annular_mixed_grid_basis_20260909.py": "5a9ceef39b681f376a7e6468a104dc6a4139365248ec64ea95fa8809993f147c",
+    "scripts\\annular_adm_mixed_action_20260909.py": "c5681003a7a495196428407f25e00babc525a35d953618e1911540f4b096fe05",
+    "scripts\\annular_adm_clock_quadratic_20260909.py": "e5ccec725f88125169ccf6f533d5f613343a7259fabad0c0bcf992e600d024be",
+    "scripts\\annular_constraint_routhian_20260909.py": "62a5cf9ac8f8e73ee56bc0c46f29e5ed560692cb19a1125ba848f15c72b1dfd8",
+    "scripts\\annular_metric_link_quadratic_20260909.py": "9555ff3da29cf2522ac67cb8f3a2e3b44420464392e1029cc31410542d96e63b",
+    "scripts\\annular_released_hermite_action_20260909.py": "360d565ed558fd83121d11d59f9096d1ebf7fc49f288ca5d8bf7e4f062cac145",
+    "scripts\\annular_action_boundary_current_20260909.py": "8b702d8f7610d686bebed3ea1af73d94b0d33fe5cc7dbe3e0faee4adbd98ce98",
+    "scripts\\annular_metric_flux_jets_20260909.py": "a1c5e3db71e68ebdd69259d47e50bd1d9cecbba51034a55d5c791ad09bada3a0",
+    "scripts\\annular_nonlinear_history_20260912.py": "7747f735107c7c5bb2eae1b9e213354fc9d8856597328cbe697389ec1a96a2fd",
+    "scripts\\annular_covariant_scalar_action_20260912.py": "ccf97c4622e79a5816e094b3001e0513e7cd16f3a424fafeade04de85bca6a4f",
+    "scripts\\annular_finite_width_bulk_current_20260913.py": "da2ca4c2fab7315b4738007aafff59f38be0d90cf4f121706a32afa16f060601",
+    "scripts\\annular_horizontal_clock_evolution_20260913.py": "985843dab67ab06c85c97b32042d48f6ed5342bf578c3518bbad132cb731cd3d",
+    "scripts\\annular_compatible_h_evolution_20260914.py": "88424b14891e92d7780077619e02e5dc3e166806ed9c22924f0f03682e4e97e1",
+    "scripts\\annular_reference_continuum_shell_20260914.py": "5cbb6013083eafb55181d5a14de236685835c51ed36f26b12f0b4cc02edd9409",
+    "scripts\\verify_annular_moving_curved_factor_variation_20260914.py": "1deede66928c46d3685ad08579bc943d166038a891412a37680ebc6bca224ec8"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-moving-zero-shift-current-attempt01\\executed-derive_annular_moving_zero_shift_current_20260914.py": "a54024ede77a410f9d54d2db78c461a04ec21bedebfad7b8a9b3e8df00660ca3"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "full_zero_shift_scalar_and_source_first_variation_derived": true,
+  "gravity_constraint_assembled_or_solved": false,
+  "completed_at": "2026-09-14T22:28:22.292454+00:00"
+}

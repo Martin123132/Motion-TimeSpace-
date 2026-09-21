@@ -1,0 +1,25 @@
+{
+  "state": "failed",
+  "checks": [],
+  "cases": [],
+  "inputs": {
+    "scripts\\validate_annular_mixed_force_cascade_20260920.py": "9376c273d48fbd042e79952f7bbf96cc2d12bb6a4ce5f27a025d319272fdfb75"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-mixed-force-controls-attempt01\\executed-validate_annular_mixed_force_cascade_20260920.py": "9376c273d48fbd042e79952f7bbf96cc2d12bb6a4ce5f27a025d319272fdfb75"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "github_action": false,
+  "subagents_used": false,
+  "no_new_evolution": true,
+  "full_live_P2_force_convergence_proven": false,
+  "certified_continuous_time_bound": false,
+  "fixture_only": true,
+  "physical_force_mismatch_fixed": false,
+  "error": "ValueError('zero-size array to reduction operation maximum which has no identity')",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\validate_annular_mixed_force_cascade_20260920.py\", line 49, in main\n    actions = [DecimalAction(action_data(mass, factor)) for mass, factor in\n               ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\annular_decimal_transport_v2_20260919.py\", line 14, in __init__\n    discrepancy = max(discrepancy, float(np.max(abs(bands[2-offset, offset:]-bands[2+offset, :count-offset]))))\n                                         ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\.venv-score\\Lib\\site-packages\\numpy\\_core\\fromnumeric.py\", line 3123, in max\n    return _wrapreduction(a, np.maximum, 'max', axis, None, out,\n                          keepdims=keepdims, initial=initial, where=where)\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\.venv-score\\Lib\\site-packages\\numpy\\_core\\fromnumeric.py\", line 83, in _wrapreduction\n    return ufunc.reduce(obj, axis, dtype, out, **passkwargs)\n           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: zero-size array to reduction operation maximum which has no identity\n"
+}
