@@ -1,0 +1,42 @@
+{
+  "frozen_at_utc": "2026-10-23T12:22:50.543655+00:00",
+  "sha256": "d4cce31663efa93265aab66ed2380ca93095cfe36f619717239a272dae8d0733",
+  "checks": [
+    {
+      "name": "independent analytic accumulator reproduces cold physical matrix",
+      "value": 1.133707440235725e-15,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "numerical"
+    },
+    {
+      "name": "warm value matches existing candidate",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "numerical"
+    },
+    {
+      "name": "warm derivative matches existing candidate",
+      "value": 2.406290521056218e-15,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "numerical"
+    },
+    {
+      "name": "cold derivative matches physical analytic slope",
+      "value": 2.198963403936265e-15,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "numerical"
+    }
+  ],
+  "failed_checks": [],
+  "offsets": [
+    -0.029238946039015983,
+    -0.04347789207803197,
+    -0.05771683811704795
+  ],
+  "endpoint_is_input": true,
+  "independent_targets_loaded": false
+}

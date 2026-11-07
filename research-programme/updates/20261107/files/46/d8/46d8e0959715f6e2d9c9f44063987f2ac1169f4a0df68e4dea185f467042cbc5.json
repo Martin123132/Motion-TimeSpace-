@@ -1,0 +1,2277 @@
+{
+  "stage": 141,
+  "previous_goal_turn": "progress",
+  "packet_names": [
+    "coefficients",
+    "evolution-heavy-carry",
+    "evolution-cold-carry",
+    "weak-m20",
+    "weak-m40",
+    "feedback-heavy-m20",
+    "feedback-heavy-m40",
+    "feedback-cold-m20",
+    "feedback-cold-m40",
+    "block-source-error",
+    "saved-block-gas-residual"
+  ],
+  "scientific_checks": 5220,
+  "passing_scientific_checks": 5210,
+  "retained_failed_checks": 10,
+  "failed_by_packet": {
+    "feedback-heavy-m20": [
+      "Response:physical:gas",
+      "Response:cubic:gas"
+    ],
+    "feedback-heavy-m40": [
+      "Response:physical:gas",
+      "Response:cubic:gas"
+    ],
+    "feedback-cold-m20": [
+      "Response:physical:gas",
+      "Response:cubic:gas"
+    ],
+    "feedback-cold-m40": [
+      "Response:physical:gas",
+      "Response:cubic:gas"
+    ],
+    "saved-block-gas-residual": [
+      "Response:precision-cast:heavy-m20-step1585:column1:gas",
+      "Response:precision-cast:heavy-m20-step1585:column2:gas"
+    ]
+  },
+  "evolution": {
+    "heavy": {
+      "saved_sites": 257,
+      "maximum_budget_error": 2.0631257709200195e-13,
+      "maximum_total_equation_error": 3.123764621658461e-16,
+      "minimum_generator_dissipation": -2130.216662289416,
+      "seconds": 983.3444467999507
+    },
+    "cold": {
+      "saved_sites": 257,
+      "maximum_budget_error": 1.9398953307494794e-13,
+      "maximum_total_equation_error": 3.0789049386550676e-16,
+      "minimum_generator_dissipation": -2133.2816955888393,
+      "seconds": 1176.3910602999385
+    }
+  },
+  "responses": {
+    "feedback-heavy-m20": {
+      "physical": {
+        "comparison": {
+          "radiation_relative": [
+            0.0169928247727014,
+            0.006520295569608427,
+            0.006520295558046716
+          ],
+          "gas_peak_relative": [
+            0.002743319053688451,
+            2.901676475287185e-05,
+            2.9015393449267286e-05
+          ],
+          "gas_late_relative": [
+            0.002743319053688451,
+            2.901676475287185e-05,
+            2.9015393449267286e-05
+          ],
+          "gas_endpoint_relative": [
+            0.002743319053688451,
+            2.8219746390292226e-05,
+            2.8218475794971862e-05
+          ],
+          "gas_peak_denominator": [
+            9.806377861024423e-13,
+            6.236572016685485e-16,
+            6.236861178658189e-16
+          ],
+          "gas_late_denominator": [
+            9.806377861024423e-13,
+            6.236572016685485e-16,
+            6.236861178658189e-16
+          ],
+          "gas_endpoint_denominator": [
+            9.806377861024423e-13,
+            6.236572016685485e-16,
+            6.236861178658189e-16
+          ],
+          "gas_endpoint_signed_difference": [
+            2.6902023233816895e-15,
+            1.759944806556577e-20,
+            1.7599471620656578e-20
+          ],
+          "gas_endpoint": [
+            -9.779475837790606e-13,
+            -6.236396022204829e-16,
+            -6.236685183941982e-16
+          ],
+          "reference_gas_endpoint": [
+            -9.806377861024423e-13,
+            -6.236572016685485e-16,
+            -6.236861178658189e-16
+          ],
+          "endpoint_near_zero": [
+            false,
+            false,
+            false
+          ],
+          "endpoint_sign_preserved": [
+            true,
+            true,
+            true
+          ]
+        },
+        "source_errors": {
+          "mass_projection": 3.1598956146251963e-16,
+          "dc_energy": 8.112828507935669e-13,
+          "compton_number": 0.0,
+          "dc_represented_energy": 4.392367396338449e-12,
+          "compton_represented_number": 0.0,
+          "source_decomposition": 9.740101884280053e-17
+        },
+        "response_errors": {
+          "photon": 6.036281717766642e-14,
+          "gas": 6.3032902436073825e-06,
+          "energy_spectrum": 0.01837820040378568,
+          "energy_step": 1.3215433519234492e-16,
+          "energy_work": 2.493516072140351e-14,
+          "number": 4.61863661140011e-11,
+          "linearity": 7.242554980541018e-14
+        }
+      },
+      "cubic": {
+        "comparison": {
+          "radiation_relative": [
+            2.081770256390276e-06,
+            6.192420067356459e-07,
+            6.192424224293735e-07
+          ],
+          "gas_peak_relative": [
+            2.2111102730816332e-05,
+            7.1419923964068e-05,
+            7.141694028809047e-05
+          ],
+          "gas_late_relative": [
+            2.2111102730816332e-05,
+            7.1419923964068e-05,
+            7.141694028809047e-05
+          ],
+          "gas_endpoint_relative": [
+            2.2111102730816332e-05,
+            7.1419923964068e-05,
+            7.141694028809047e-05
+          ],
+          "gas_peak_denominator": [
+            9.779475837790606e-13,
+            6.236396022204829e-16,
+            6.236685183941982e-16
+          ],
+          "gas_late_denominator": [
+            9.779475837790606e-13,
+            6.236396022204829e-16,
+            6.236685183941982e-16
+          ],
+          "gas_endpoint_denominator": [
+            9.779475837790606e-13,
+            6.236396022204829e-16,
+            6.236685183941982e-16
+          ],
+          "gas_endpoint_signed_difference": [
+            -2.162349949029242e-17,
+            4.45402929715685e-20,
+            4.4540497337720306e-20
+          ],
+          "gas_endpoint": [
+            -9.779692072785509e-13,
+            -6.235950619275113e-16,
+            -6.236239778968605e-16
+          ],
+          "reference_gas_endpoint": [
+            -9.779475837790606e-13,
+            -6.236396022204829e-16,
+            -6.236685183941982e-16
+          ],
+          "endpoint_near_zero": [
+            false,
+            false,
+            false
+          ],
+          "endpoint_sign_preserved": [
+            true,
+            true,
+            true
+          ]
+        },
+        "source_errors": {
+          "mass_projection": 3.1598956146251963e-16,
+          "dc_energy": 8.112828507935669e-13,
+          "compton_number": 0.0,
+          "dc_represented_energy": 4.392367396338449e-12,
+          "compton_represented_number": 0.0,
+          "source_decomposition": 9.740101884280053e-17
+        },
+        "response_errors": {
+          "photon": 5.787025245047655e-14,
+          "gas": 6.3032902436073825e-06,
+          "energy_spectrum": 0.018249753426737878,
+          "energy_step": 1.3215433519234492e-16,
+          "energy_work": 2.989658246299384e-14,
+          "number": 4.4364311827947554e-11,
+          "linearity": 7.703328096954204e-14
+        }
+      },
+      "continuation": {
+        "response_errors": {
+          "photon": 2.6871630089029703e-14,
+          "gas": 2.5068716656875443e-08,
+          "energy_spectrum": 0.016089058156055228,
+          "energy_step": 1.095227952683073e-16,
+          "energy_work": 7.974471933286727e-15,
+          "number": 1.005974423813952e-11,
+          "linearity": 3.023946657027785e-14
+        },
+        "relative_peak": [
+          0.0027433190574898763,
+          2.9016763268067115e-05,
+          2.9015394626679203e-05
+        ],
+        "relative_late": [
+          0.0027433190574898763,
+          2.9016763268067115e-05,
+          2.9015394626679203e-05
+        ],
+        "relative_endpoint": [
+          0.0027433190574898763,
+          2.8219745323008754e-05,
+          2.8218475861802118e-05
+        ],
+        "superposition_relative": [
+          8.023530293340586e-08,
+          2.7031513232899747e-07,
+          3.788160146808758e-07
+        ],
+        "gas_endpoint": [
+          2.690202327109511e-15,
+          1.7599447399946748e-20,
+          1.759947166233768e-20
+        ]
+      },
+      "discretization": {
+        "response_errors": {
+          "photon": 1.881888804219908e-14,
+          "gas": 1.1693429529706764e-08,
+          "energy_spectrum": 0.015274666847938816,
+          "energy_step": 1.4465263956908654e-16,
+          "energy_work": 2.5733149294446447e-14,
+          "number": 1.0904674318233731e-12,
+          "linearity": 0.0
+        },
+        "relative_peak": [
+          2.211116560580785e-05,
+          7.14200464844657e-05,
+          7.141673638275189e-05
+        ],
+        "relative_late": [
+          2.211116560580785e-05,
+          7.14200464844657e-05,
+          7.141673638275189e-05
+        ],
+        "relative_endpoint": [
+          2.211116560580785e-05,
+          7.14200464844657e-05,
+          7.141673638275189e-05
+        ],
+        "superposition_relative": [
+          6.180773556756839e-05,
+          3.5302358384565746e-05,
+          7.174613845001422e-05
+        ],
+        "gas_endpoint": [
+          -2.1623560978738456e-17,
+          4.4540369380140584e-20,
+          4.45403701683799e-20
+        ]
+      }
+    },
+    "feedback-heavy-m40": {
+      "physical": {
+        "comparison": {
+          "radiation_relative": [
+            0.00320301646211464,
+            0.002652763958426613,
+            0.002652763888101005
+          ],
+          "gas_peak_relative": [
+            0.004250389989132508,
+            7.124368242061976e-05,
+            7.123849295832719e-05
+          ],
+          "gas_late_relative": [
+            0.004250389989132508,
+            7.124368242061976e-05,
+            7.123849295832719e-05
+          ],
+          "gas_endpoint_relative": [
+            0.004250389989132508,
+            6.817278127108492e-05,
+            6.816800504359764e-05
+          ],
+          "gas_peak_denominator": [
+            2.530153270017509e-12,
+            3.973447988796178e-16,
+            3.9737301034997906e-16
+          ],
+          "gas_late_denominator": [
+            2.530153270017509e-12,
+            3.973447988796178e-16,
+            3.9737301034997906e-16
+          ],
+          "gas_endpoint_denominator": [
+            2.530153270017509e-12,
+            3.973447988796178e-16,
+            3.9737301034997906e-16
+          ],
+          "gas_endpoint_signed_difference": [
+            1.07541381298533e-14,
+            2.7088100063223414e-20,
+            2.708812537372695e-20
+          ],
+          "gas_endpoint": [
+            -2.5193991318876557e-12,
+            -3.973177107795546e-16,
+            -3.9734592222460534e-16
+          ],
+          "reference_gas_endpoint": [
+            -2.530153270017509e-12,
+            -3.973447988796178e-16,
+            -3.9737301034997906e-16
+          ],
+          "endpoint_near_zero": [
+            false,
+            false,
+            false
+          ],
+          "endpoint_sign_preserved": [
+            true,
+            true,
+            true
+          ]
+        },
+        "source_errors": {
+          "mass_projection": 3.1470060241431684e-16,
+          "dc_energy": 3.5948111391733484e-13,
+          "compton_number": 0.0,
+          "dc_represented_energy": 5.5781956119061095e-12,
+          "compton_represented_number": 0.0,
+          "source_decomposition": 8.855094674142276e-17
+        },
+        "response_errors": {
+          "photon": 6.555018972691057e-14,
+          "gas": 2.6414124462722155e-06,
+          "energy_spectrum": 0.020488304002046057,
+          "energy_step": 1.495839629292452e-16,
+          "energy_work": 3.178633913684955e-14,
+          "number": 3.306380521701888e-11,
+          "linearity": 8.297311286585355e-14
+        }
+      },
+      "cubic": {
+        "comparison": {
+          "radiation_relative": [
+            1.1909136354728923e-06,
+            5.327756996177746e-07,
+            5.327754238175008e-07
+          ],
+          "gas_peak_relative": [
+            1.9412759988913306e-05,
+            0.00012177301541353694,
+            0.00012176413742073184
+          ],
+          "gas_late_relative": [
+            1.9412759988913306e-05,
+            0.00012177301541353694,
+            0.00012176413742073184
+          ],
+          "gas_endpoint_relative": [
+            1.9412759988913306e-05,
+            0.00012177301541353694,
+            0.00012176413742073184
+          ],
+          "gas_peak_denominator": [
+            2.5193991318876557e-12,
+            3.973177107795546e-16,
+            3.9734592222460534e-16
+          ],
+          "gas_late_denominator": [
+            2.5193991318876557e-12,
+            3.973177107795546e-16,
+            3.9734592222460534e-16
+          ],
+          "gas_endpoint_denominator": [
+            2.5193991318876557e-12,
+            3.973177107795546e-16,
+            3.9734592222460534e-16
+          ],
+          "gas_endpoint_signed_difference": [
+            -4.89084906636116e-17,
+            4.8382575718829916e-20,
+            4.838248347732427e-20
+          ],
+          "gas_endpoint": [
+            -2.5194480403783193e-12,
+            -3.9726932820383577e-16,
+            -3.97297539741128e-16
+          ],
+          "reference_gas_endpoint": [
+            -2.5193991318876557e-12,
+            -3.973177107795546e-16,
+            -3.9734592222460534e-16
+          ],
+          "endpoint_near_zero": [
+            false,
+            false,
+            false
+          ],
+          "endpoint_sign_preserved": [
+            true,
+            true,
+            true
+          ]
+        },
+        "source_errors": {
+          "mass_projection": 3.1470060241431684e-16,
+          "dc_energy": 3.5948111391733484e-13,
+          "compton_number": 0.0,
+          "dc_represented_energy": 5.5781956119061095e-12,
+          "compton_represented_number": 0.0,
+          "source_decomposition": 8.855094674142276e-17
+        },
+        "response_errors": {
+          "photon": 6.555018972691057e-14,
+          "gas": 3.956713545190215e-06,
+          "energy_spectrum": 0.020488304002046057,
+          "energy_step": 1.495839629292452e-16,
+          "energy_work": 3.0420395683443475e-14,
+          "number": 2.0426322711349252e-11,
+          "linearity": 7.858245648395473e-14
+        }
+      },
+      "continuation": {
+        "response_errors": {
+          "photon": 2.0225731575649408e-14,
+          "gas": 7.835514535743056e-09,
+          "energy_spectrum": 0.014841483199991151,
+          "energy_step": 1.0545241519415142e-16,
+          "energy_work": 6.5676592122290985e-15,
+          "number": 5.033574946727307e-12,
+          "linearity": 4.0208407936462785e-14
+        },
+        "relative_peak": [
+          0.004250389999637296,
+          7.124368455165944e-05,
+          7.123849369045036e-05
+        ],
+        "relative_late": [
+          0.004250389999637296,
+          7.124368455165944e-05,
+          7.123849369045036e-05
+        ],
+        "relative_endpoint": [
+          0.004250389999637296,
+          6.81727798110352e-05,
+          6.816800703007078e-05
+        ],
+        "superposition_relative": [
+          2.0096145990287917e-08,
+          1.447501794592455e-07,
+          1.4398613055783308e-07
+        ],
+        "gas_endpoint": [
+          1.0754138156432024e-14,
+          2.708809948308025e-20,
+          2.7088126163097764e-20
+        ]
+      },
+      "discretization": {
+        "response_errors": {
+          "photon": 2.139953814595749e-14,
+          "gas": 2.500767904805349e-08,
+          "energy_spectrum": 0.01352426695710068,
+          "energy_step": 1.595631038914615e-16,
+          "energy_work": 2.3573456611182593e-14,
+          "number": 4.151109608987723e-13,
+          "linearity": 0.0
+        },
+        "relative_peak": [
+          1.9412771931976097e-05,
+          0.00012177276642653298,
+          0.000121764127911194
+        ],
+        "relative_late": [
+          1.9412771931976097e-05,
+          0.00012177276642653298,
+          0.000121764127911194
+        ],
+        "relative_endpoint": [
+          1.9412771931976097e-05,
+          0.00012177276642653298,
+          0.000121764127911194
+        ],
+        "superposition_relative": [
+          2.4956245918269485e-05,
+          3.516672671571394e-05,
+          2.057009682271953e-05
+        ],
+        "gas_endpoint": [
+          -4.8908520752953625e-17,
+          4.838247679188349e-20,
+          4.8382479698748186e-20
+        ]
+      }
+    },
+    "feedback-cold-m20": {
+      "physical": {
+        "comparison": {
+          "radiation_relative": [
+            0.01700220738235376,
+            0.006507014747517027,
+            0.006507014702077719
+          ],
+          "gas_peak_relative": [
+            0.002748047499551474,
+            2.8995363901126696e-05,
+            2.8994043842320295e-05
+          ],
+          "gas_late_relative": [
+            0.002748047499551474,
+            2.8995363901126696e-05,
+            2.8994043842320295e-05
+          ],
+          "gas_endpoint_relative": [
+            0.002748047499551474,
+            2.8184930037109893e-05,
+            2.8183594783861466e-05
+          ],
+          "gas_peak_denominator": [
+            9.791968971124372e-13,
+            6.212013563070718e-16,
+            6.212302597188815e-16
+          ],
+          "gas_late_denominator": [
+            9.791968971124372e-13,
+            6.212013563070718e-16,
+            6.212302597188815e-16
+          ],
+          "gas_endpoint_denominator": [
+            9.791968971124372e-13,
+            6.212013563070718e-16,
+            6.212302597188815e-16
+          ],
+          "gas_endpoint_signed_difference": [
+            2.690879584678395e-15,
+            1.7508516766472592e-20,
+            1.7508501907389974e-20
+          ],
+          "gas_endpoint": [
+            -9.765060175277588e-13,
+            -6.211838477903053e-16,
+            -6.212127512169741e-16
+          ],
+          "reference_gas_endpoint": [
+            -9.791968971124372e-13,
+            -6.212013563070718e-16,
+            -6.212302597188815e-16
+          ],
+          "endpoint_near_zero": [
+            false,
+            false,
+            false
+          ],
+          "endpoint_sign_preserved": [
+            true,
+            true,
+            true
+          ]
+        },
+        "source_errors": {
+          "mass_projection": 3.1685964683831895e-16,
+          "dc_energy": 5.043937768554032e-13,
+          "compton_number": 0.0,
+          "dc_represented_energy": 7.2451512021997115e-12,
+          "compton_represented_number": 0.0,
+          "source_decomposition": 9.355207123614468e-17
+        },
+        "response_errors": {
+          "photon": 7.151071282749124e-14,
+          "gas": 3.36597789678977e-05,
+          "energy_spectrum": 0.01670642094176185,
+          "energy_step": 1.6120608781377726e-16,
+          "energy_work": 5.3441153914012424e-14,
+          "number": 3.686680695367488e-11,
+          "linearity": 8.08774664348478e-14
+        }
+      },
+      "cubic": {
+        "comparison": {
+          "radiation_relative": [
+            2.077206601586289e-06,
+            6.21880313276647e-07,
+            6.21880185219495e-07
+          ],
+          "gas_peak_relative": [
+            2.218476881571154e-05,
+            7.150937118404762e-05,
+            7.150608697663765e-05
+          ],
+          "gas_late_relative": [
+            2.218476881571154e-05,
+            7.150937118404762e-05,
+            7.150608697663765e-05
+          ],
+          "gas_endpoint_relative": [
+            2.218476881571154e-05,
+            7.150937118404762e-05,
+            7.150608697663765e-05
+          ],
+          "gas_peak_denominator": [
+            9.765060175277588e-13,
+            6.211838477903053e-16,
+            6.212127512169741e-16
+          ],
+          "gas_late_denominator": [
+            9.765060175277588e-13,
+            6.211838477903053e-16,
+            6.212127512169741e-16
+          ],
+          "gas_endpoint_denominator": [
+            9.765060175277588e-13,
+            6.211838477903053e-16,
+            6.212127512169741e-16
+          ],
+          "gas_endpoint_signed_difference": [
+            -2.166356024600449e-17,
+            4.442046634517188e-20,
+            4.4420493019517316e-20
+          ],
+          "gas_endpoint": [
+            -9.765276810880048e-13,
+            -6.211394273239601e-16,
+            -6.211683307239546e-16
+          ],
+          "reference_gas_endpoint": [
+            -9.765060175277588e-13,
+            -6.211838477903053e-16,
+            -6.212127512169741e-16
+          ],
+          "endpoint_near_zero": [
+            false,
+            false,
+            false
+          ],
+          "endpoint_sign_preserved": [
+            true,
+            true,
+            true
+          ]
+        },
+        "source_errors": {
+          "mass_projection": 3.1685964683831895e-16,
+          "dc_energy": 5.043937768554032e-13,
+          "compton_number": 0.0,
+          "dc_represented_energy": 7.2451512021997115e-12,
+          "compton_represented_number": 0.0,
+          "source_decomposition": 9.355207123614468e-17
+        },
+        "response_errors": {
+          "photon": 5.991123351793552e-14,
+          "gas": 3.36597789678977e-05,
+          "energy_spectrum": 0.01670642094176185,
+          "energy_step": 1.4884133745696756e-16,
+          "energy_work": 5.1265673942301005e-14,
+          "number": 4.438320035582729e-11,
+          "linearity": 7.871838876559074e-14
+        }
+      },
+      "continuation": {
+        "response_errors": {
+          "photon": 2.3547179429856474e-14,
+          "gas": 1.3191647326684453e-08,
+          "energy_spectrum": 0.014755114367653059,
+          "energy_step": 1.4076169942008112e-16,
+          "energy_work": 9.266224307906848e-15,
+          "number": 9.998584612340155e-12,
+          "linearity": 3.236022648234874e-14
+        },
+        "relative_peak": [
+          0.0027480474979236394,
+          2.8995362214234046e-05,
+          2.899404299164143e-05
+        ],
+        "relative_late": [
+          0.0027480474979236394,
+          2.8995362214234046e-05,
+          2.899404299164143e-05
+        ],
+        "relative_endpoint": [
+          0.0027480474979236394,
+          2.8184931321906703e-05,
+          2.8183593404629333e-05
+        ],
+        "superposition_relative": [
+          6.14424369478245e-08,
+          3.389513874028797e-07,
+          3.291877121675838e-07
+        ],
+        "gas_endpoint": [
+          2.6908795830844246e-15,
+          1.7508517564590113e-20,
+          1.7508501050569236e-20
+        ]
+      },
+      "discretization": {
+        "response_errors": {
+          "photon": 2.2936498513668316e-14,
+          "gas": 1.1894665190006795e-08,
+          "energy_spectrum": 0.015197039758264716,
+          "energy_step": 1.5315586597432135e-16,
+          "energy_work": 4.712661521192157e-14,
+          "number": 8.851427068295984e-13,
+          "linearity": 0.0
+        },
+        "relative_peak": [
+          2.2184764917401015e-05,
+          7.150953165293398e-05,
+          7.150620447685381e-05
+        ],
+        "relative_late": [
+          2.2184764917401015e-05,
+          7.150953165293398e-05,
+          7.150620447685381e-05
+        ],
+        "relative_endpoint": [
+          2.2184764917401015e-05,
+          7.150953165293398e-05,
+          7.150620447685381e-05
+        ],
+        "superposition_relative": [
+          5.625785281005647e-05,
+          4.581388847232609e-05,
+          3.079328424566874e-05
+        ],
+        "gas_endpoint": [
+          -2.1663556439280806e-17,
+          4.442056602585216e-20,
+          4.442056601214987e-20
+        ]
+      }
+    },
+    "feedback-cold-m40": {
+      "physical": {
+        "comparison": {
+          "radiation_relative": [
+            0.0032037401205058835,
+            0.002652468454877508,
+            0.0026524684341380678
+          ],
+          "gas_peak_relative": [
+            0.004253827743839754,
+            7.090809897791319e-05,
+            7.090300572862243e-05
+          ],
+          "gas_late_relative": [
+            0.004253827743839754,
+            7.090809897791319e-05,
+            7.090300572862243e-05
+          ],
+          "gas_endpoint_relative": [
+            0.004253827743839754,
+            6.773874719288281e-05,
+            6.773389724522699e-05
+          ],
+          "gas_peak_denominator": [
+            2.528938787546595e-12,
+            3.946162708307265e-16,
+            3.946444737281184e-16
+          ],
+          "gas_late_denominator": [
+            2.528938787546595e-12,
+            3.946162708307265e-16,
+            3.946444737281184e-16
+          ],
+          "gas_endpoint_denominator": [
+            2.528938787546595e-12,
+            3.946162708307265e-16,
+            3.946444737281184e-16
+          ],
+          "gas_endpoint_signed_difference": [
+            1.0757669976938175e-14,
+            2.6730811808000756e-20,
+            2.6730808231897057e-20
+          ],
+          "gas_endpoint": [
+            -2.518181117569657e-12,
+            -3.945895400189185e-16,
+            -3.946177429198865e-16
+          ],
+          "reference_gas_endpoint": [
+            -2.528938787546595e-12,
+            -3.946162708307265e-16,
+            -3.946444737281184e-16
+          ],
+          "endpoint_near_zero": [
+            false,
+            false,
+            false
+          ],
+          "endpoint_sign_preserved": [
+            true,
+            true,
+            true
+          ]
+        },
+        "source_errors": {
+          "mass_projection": 3.1558497544838246e-16,
+          "dc_energy": 4.549470410591984e-13,
+          "compton_number": 0.0,
+          "dc_represented_energy": 5.541158230206563e-12,
+          "compton_represented_number": 0.0,
+          "source_decomposition": 8.867232443630982e-17
+        },
+        "response_errors": {
+          "photon": 5.855419747869461e-14,
+          "gas": 5.605193633545093e-07,
+          "energy_spectrum": 0.01945576558444152,
+          "energy_step": 1.572409318810087e-16,
+          "energy_work": 5.726374280251646e-14,
+          "number": 2.3498776365577723e-11,
+          "linearity": 8.439743460792703e-14
+        }
+      },
+      "cubic": {
+        "comparison": {
+          "radiation_relative": [
+            1.1887042461293446e-06,
+            5.340558456073612e-07,
+            5.340559445487367e-07
+          ],
+          "gas_peak_relative": [
+            1.944877043612061e-05,
+            0.0001223375656752948,
+            0.00012232892013869703
+          ],
+          "gas_late_relative": [
+            1.944877043612061e-05,
+            0.0001223375656752948,
+            0.00012232892013869703
+          ],
+          "gas_endpoint_relative": [
+            1.944877043612061e-05,
+            0.0001223375656752948,
+            0.00012232892013869703
+          ],
+          "gas_peak_denominator": [
+            2.518181117569657e-12,
+            3.945895400189185e-16,
+            3.946177429198865e-16
+          ],
+          "gas_late_denominator": [
+            2.518181117569657e-12,
+            3.945895400189185e-16,
+            3.946177429198865e-16
+          ],
+          "gas_endpoint_denominator": [
+            2.518181117569657e-12,
+            3.945895400189185e-16,
+            3.946177429198865e-16
+          ],
+          "gas_endpoint_signed_difference": [
+            -4.8975526472185904e-17,
+            4.827312376684881e-20,
+            4.8273162358959673e-20
+          ],
+          "gas_endpoint": [
+            -2.518230093096129e-12,
+            -3.9454126689515167e-16,
+            -3.9456946975752754e-16
+          ],
+          "reference_gas_endpoint": [
+            -2.518181117569657e-12,
+            -3.945895400189185e-16,
+            -3.946177429198865e-16
+          ],
+          "endpoint_near_zero": [
+            false,
+            false,
+            false
+          ],
+          "endpoint_sign_preserved": [
+            true,
+            true,
+            true
+          ]
+        },
+        "source_errors": {
+          "mass_projection": 3.1558497544838246e-16,
+          "dc_energy": 4.549470410591984e-13,
+          "compton_number": 0.0,
+          "dc_represented_energy": 5.541158230206563e-12,
+          "compton_represented_number": 0.0,
+          "source_decomposition": 8.867232443630982e-17
+        },
+        "response_errors": {
+          "photon": 6.263098127552162e-14,
+          "gas": 6.266683186972619e-07,
+          "energy_spectrum": 0.01966344800880412,
+          "energy_step": 1.5220031466250554e-16,
+          "energy_work": 5.3556183698757263e-14,
+          "number": 2.3880064300865745e-11,
+          "linearity": 7.94117489942529e-14
+        }
+      },
+      "continuation": {
+        "response_errors": {
+          "photon": 1.9885195862482326e-14,
+          "gas": 4.660722346356464e-09,
+          "energy_spectrum": 0.015553214116735603,
+          "energy_step": 1.0280861175971864e-16,
+          "energy_work": 1.0451610729774903e-14,
+          "number": 4.443027735998877e-12,
+          "linearity": 4.123013720140175e-14
+        },
+        "relative_peak": [
+          0.004253827747240246,
+          7.090809509555732e-05,
+          7.090300633354695e-05
+        ],
+        "relative_late": [
+          0.004253827747240246,
+          7.090809509555732e-05,
+          7.090300633354695e-05
+        ],
+        "relative_endpoint": [
+          0.004253827747240246,
+          6.77387468009832e-05,
+          6.773390132817584e-05
+        ],
+        "superposition_relative": [
+          1.5946064837026643e-08,
+          1.7702757379314847e-07,
+          1.4130936112902043e-07
+        ],
+        "gas_endpoint": [
+          1.0757669985537813e-14,
+          2.67308116533508e-20,
+          2.6730809843210258e-20
+        ]
+      },
+      "discretization": {
+        "response_errors": {
+          "photon": 2.125861002894562e-14,
+          "gas": 6.952794313202825e-10,
+          "energy_spectrum": 0.016089516024152244,
+          "energy_step": 9.749946607851536e-17,
+          "energy_work": 4.753394962989841e-14,
+          "number": 7.503753076535883e-13,
+          "linearity": 0.0
+        },
+        "relative_peak": [
+          1.944878753010782e-05,
+          0.00012233748166159017,
+          0.00012232874167724344
+        ],
+        "relative_late": [
+          1.944878753010782e-05,
+          0.00012233748166159017,
+          0.00012232874167724344
+        ],
+        "relative_endpoint": [
+          1.944878753010782e-05,
+          0.00012233748166159017,
+          0.00012232874167724344
+        ],
+        "superposition_relative": [
+          1.8895239441892604e-05,
+          3.4681839937383144e-05,
+          3.1576988505838034e-05
+        ],
+        "gas_endpoint": [
+          -4.8975569517941725e-17,
+          4.8273090615919744e-20,
+          4.827309193490365e-20
+        ]
+      }
+    }
+  },
+  "max_weak_error": 2.5125082015659295e-06,
+  "all_band_symbol_upper": -1.0843596830615173e-05,
+  "continuous_inner_start": 0,
+  "continuous_inner_stop": 40960,
+  "new_corrected_steps_per_background": 5120,
+  "replayed_inner_steps": 10240,
+  "original_saved_epochs_covered": 65,
+  "continuous_source_sites": 2049,
+  "full_original_source_epochs": 65,
+  "source_knots": [
+    2049
+  ],
+  "response_steps": 2048,
+  "frequency_nodes": 5265,
+  "source_restore_step": null,
+  "full_history_recomputed": true,
+  "full_parent_history_rerun": false,
+  "corrected_final_readout": true,
+  "physical_reference_sites_per_window": 257,
+  "new_temperature_event_evaluations": 248,
+  "next_target": "Use the completed corrected history to quantify final readout and source-discretization sensitivity together,then choose the smallest remaining numerical check before a matched baseline/MTS physical interpretation. Reuse all saved states and source packets;do not restart the full history.",
+  "block_source_error": {
+    "heavy-m20": {
+      "relative_peak_to_extension": [
+        3.134115078246977e-06,
+        2.0450489458574964e-05,
+        2.045077206884155e-05
+      ],
+      "relative_endpoint_to_extension": [
+        1.6461881064111297e-06,
+        2.1028078196430138e-05,
+        2.102832289397117e-05
+      ],
+      "relative_endpoint_to_previous_correction": [
+        4.516019204530825e-09,
+        5.934070113355718e-10,
+        5.933872219977063e-10
+      ],
+      "extension_endpoint_near_zero": [
+        false,
+        false,
+        false
+      ],
+      "gas_endpoint": [
+        -4.42857907472722e-21,
+        3.700825561400393e-25,
+        3.7008737287893227e-25
+      ],
+      "extension_gas_endpoint": [
+        2.690202327109511e-15,
+        1.7599447399946748e-20,
+        1.759947166233768e-20
+      ],
+      "response_errors": {
+        "photon": 4.4711208134153005e-15,
+        "gas": 9.080888952521022e-09,
+        "energy_spectrum": 0.014139021401025843,
+        "energy_step": 9.994634445679913e-17,
+        "energy_work": 3.786005447214158e-15,
+        "number": 4.914590115307597e-12,
+        "linearity": 0.0
+      }
+    },
+    "heavy-m40": {
+      "relative_peak_to_extension": [
+        1.236675546245066e-06,
+        1.5015325123225213e-05,
+        1.5015590488161667e-05
+      ],
+      "relative_endpoint_to_extension": [
+        7.031477538401662e-07,
+        1.5691704071402748e-05,
+        1.5691936655525554e-05
+      ],
+      "relative_endpoint_to_previous_correction": [
+        2.9886521811896696e-09,
+        1.069747086519664e-09,
+        1.0696880482492913e-09
+      ],
+      "extension_endpoint_near_zero": [
+        false,
+        false,
+        false
+      ],
+      "gas_endpoint": [
+        7.561748089182004e-21,
+        4.25058440945213e-25,
+        4.250651598682146e-25
+      ],
+      "extension_gas_endpoint": [
+        1.0754138156432024e-14,
+        2.708809948308025e-20,
+        2.7088126163097764e-20
+      ],
+      "response_errors": {
+        "photon": 4.5159944509163056e-15,
+        "gas": 5.405266683630852e-10,
+        "energy_spectrum": 0.014329664014349595,
+        "energy_step": 1.2358065134409073e-16,
+        "energy_work": 3.4612292694019253e-15,
+        "number": 5.528993567172962e-12,
+        "linearity": 0.0
+      }
+    },
+    "cold-m20": {
+      "relative_peak_to_extension": [
+        3.098633519418711e-06,
+        1.978514436247104e-05,
+        1.9785135325706297e-05
+      ],
+      "relative_endpoint_to_extension": [
+        1.681791048780077e-06,
+        2.0354047370158698e-05,
+        2.0354078204049954e-05
+      ],
+      "relative_endpoint_to_previous_correction": [
+        4.6216416836304645e-09,
+        5.736774272507586e-10,
+        5.736510642289719e-10
+      ],
+      "extension_endpoint_near_zero": [
+        false,
+        false,
+        false
+      ],
+      "gas_endpoint": [
+        -4.525497196176451e-21,
+        3.5636919589092273e-25,
+        3.56369399618977e-25
+      ],
+      "extension_gas_endpoint": [
+        2.6908795830844246e-15,
+        1.7508517564590113e-20,
+        1.7508501050569236e-20
+      ],
+      "response_errors": {
+        "photon": 4.601563199001451e-15,
+        "gas": 8.257681584675119e-09,
+        "energy_spectrum": 0.013283405068068353,
+        "energy_step": 1.0010134559043354e-16,
+        "energy_work": 5.483741754644937e-15,
+        "number": 6.34041468406224e-12,
+        "linearity": 0.0
+      }
+    },
+    "cold-m40": {
+      "relative_peak_to_extension": [
+        1.2223958292067562e-06,
+        1.4769803834155321e-05,
+        1.4769474578154268e-05
+      ],
+      "relative_endpoint_to_extension": [
+        6.894982230316351e-07,
+        1.5460850757868038e-05,
+        1.546050248138328e-05
+      ],
+      "relative_endpoint_to_previous_correction": [
+        2.933006672804813e-09,
+        1.0472986548150124e-09,
+        1.0472001495580328e-09
+      ],
+      "extension_endpoint_near_zero": [
+        false,
+        false,
+        false
+      ],
+      "gas_endpoint": [
+        7.417394338989077e-21,
+        4.132810896091365e-25,
+        4.132717519103367e-25
+      ],
+      "extension_gas_endpoint": [
+        1.0757669985537813e-14,
+        2.67308116533508e-20,
+        2.6730809843210258e-20
+      ],
+      "response_errors": {
+        "photon": 4.908831739548704e-15,
+        "gas": 3.908805622672386e-09,
+        "energy_spectrum": 0.01574467898983732,
+        "energy_step": 9.017244074331368e-17,
+        "energy_work": 8.464809789181831e-15,
+        "number": 4.937551083051683e-12,
+        "linearity": 0.0
+      }
+    }
+  },
+  "final_readout_decomposition": {
+    "feedback-heavy-m20": {
+      "total_relative": [
+        0.0169928247727014,
+        0.006520295569608427,
+        0.006520295558046716
+      ],
+      "resolved_relative": [
+        0.005675230296877044,
+        0.00257077648092818,
+        0.0025707764900007365
+      ],
+      "endpoint_unresolved_relative": [
+        0.016017111313629304,
+        0.005992108360181617,
+        0.005992108343708499
+      ],
+      "raw_endpoint_relative": [
+        37.236458145137284,
+        17.059772784484718,
+        17.05977273718857
+      ],
+      "projection_endpoint_relative": [
+        37.236454700289435,
+        17.059771732144696,
+        17.059771684848553
+      ],
+      "split_identity_error": [
+        3.777612429889903e-17,
+        2.944592203127822e-17,
+        3.605956456558971e-17
+      ],
+      "endpoint_identity_error": [
+        3.162600338872e-16,
+        3.2563432958410493e-16,
+        3.135794430814218e-16
+      ],
+      "independent_resolved_error": [
+        3.4141114984081833e-12,
+        5.60141056079561e-12,
+        5.394894595986244e-12
+      ]
+    },
+    "feedback-heavy-m40": {
+      "total_relative": [
+        0.00320301646211464,
+        0.002652763958426613,
+        0.002652763888101005
+      ],
+      "resolved_relative": [
+        0.0015867274474460251,
+        0.0013396020221327727,
+        0.0013396018919415507
+      ],
+      "endpoint_unresolved_relative": [
+        0.0027823749682722365,
+        0.0022896774972541367,
+        0.0022896774919447466
+      ],
+      "raw_endpoint_relative": [
+        42.02989318419498,
+        17.34703634112893,
+        17.347036295584353
+      ],
+      "projection_endpoint_relative": [
+        42.02989309209854,
+        17.347036190018898,
+        17.34703614447431
+      ],
+      "split_identity_error": [
+        3.4575313656137e-17,
+        3.8627960254787524e-17,
+        4.436895761480677e-17
+      ],
+      "endpoint_identity_error": [
+        3.317779791084093e-16,
+        3.5817485568158383e-16,
+        3.968710326982018e-16
+      ],
+      "independent_resolved_error": [
+        9.293146949426047e-12,
+        1.0863885593603185e-11,
+        1.387225715089261e-11
+      ]
+    },
+    "feedback-cold-m20": {
+      "total_relative": [
+        0.01700220738235376,
+        0.006507014747517027,
+        0.006507014702077719
+      ],
+      "resolved_relative": [
+        0.005678056343506381,
+        0.0025668639440358924,
+        0.0025668638666154118
+      ],
+      "endpoint_unresolved_relative": [
+        0.01602606414664854,
+        0.0059793352822213605,
+        0.0059793352660075004
+      ],
+      "raw_endpoint_relative": [
+        37.25535683387623,
+        17.032221546666644,
+        17.03222150121763
+      ],
+      "projection_endpoint_relative": [
+        37.25535338692571,
+        17.03222049711327,
+        17.032220451664244
+      ],
+      "split_identity_error": [
+        3.505636779416035e-17,
+        3.386697371801902e-17,
+        3.909299939582554e-17
+      ],
+      "endpoint_identity_error": [
+        2.9565148941770746e-16,
+        3.3262456947177833e-16,
+        4.656329587793486e-16
+      ],
+      "independent_resolved_error": [
+        3.1419294337173986e-12,
+        5.725286440663142e-12,
+        6.890010714004328e-12
+      ]
+    },
+    "feedback-cold-m40": {
+      "total_relative": [
+        0.0032037401205058835,
+        0.002652468454877508,
+        0.0026524684341380678
+      ],
+      "resolved_relative": [
+        0.0015868590639845337,
+        0.0013392401006279842,
+        0.0013392400692685206
+      ],
+      "endpoint_unresolved_relative": [
+        0.0027831329595893275,
+        0.0022895468671745743,
+        0.0022895468614916596
+      ],
+      "raw_endpoint_relative": [
+        42.053775843158455,
+        17.31561492433056,
+        17.31561488480987
+      ],
+      "projection_endpoint_relative": [
+        42.05377575106414,
+        17.315614772963567,
+        17.31561473344288
+      ],
+      "split_identity_error": [
+        3.0971726221038955e-17,
+        3.187489107877417e-17,
+        3.8596734213684814e-17
+      ],
+      "endpoint_identity_error": [
+        3.547885660461254e-16,
+        3.1110932348019696e-16,
+        3.459226063433205e-16
+      ],
+      "independent_resolved_error": [
+        9.958928089475221e-12,
+        1.1386715377406947e-11,
+        1.1766866145339988e-11
+      ]
+    }
+  },
+  "saved_gas_residual_audit": {
+    "selections": {
+      "heavy-m20": {
+        "raw_maximum_by_column": [
+          3.1704528270358e-10,
+          2.00375241319992e-07,
+          4.6060207422221585e-07,
+          3.1704528270358e-10,
+          2.00375241319992e-07,
+          4.6060207422221585e-07,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "worst_step_by_column": [
+          1933,
+          1585,
+          1585,
+          1933,
+          1585,
+          1585,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "columns": [
+          0,
+          1,
+          2
+        ],
+        "steps": [
+          1585,
+          1933
+        ],
+        "raw_errors": {
+          "photon": 5.905413142593591e-15,
+          "gas": 4.6060207422221585e-07,
+          "energy_spectrum": 0.01622066881549832,
+          "energy_step": 1.0912567864447604e-16,
+          "energy_work": 8.875572247160083e-15,
+          "number": 1.832188254130853e-12,
+          "linearity": 0.0
+        },
+        "source_path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\seven-eighths-history-cubic-carry-20261015\\results\\block-source-error\\heavy-m20-source.npz",
+        "response_path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\seven-eighths-history-cubic-carry-20261015\\results\\block-source-error\\heavy-m20-response.npz"
+      },
+      "heavy-m40": {
+        "raw_maximum_by_column": [
+          5.900154459220845e-10,
+          1.409240128910159e-09,
+          3.758577046277151e-09,
+          5.900154459220845e-10,
+          1.409240128910159e-09,
+          3.758577046277151e-09,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "worst_step_by_column": [
+          2005,
+          1588,
+          1700,
+          2005,
+          1588,
+          1700,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "columns": [
+          0,
+          1,
+          2
+        ],
+        "steps": [
+          1588,
+          1700,
+          2005
+        ],
+        "raw_errors": {
+          "photon": 5.666598825567492e-15,
+          "gas": 3.758577046277151e-09,
+          "energy_spectrum": 0.014137786836501087,
+          "energy_step": 1.3620723486453945e-16,
+          "energy_work": 8.7824596616102e-15,
+          "number": 1.2224276003072468e-12,
+          "linearity": 0.0
+        },
+        "source_path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\seven-eighths-history-cubic-carry-20261015\\results\\block-source-error\\heavy-m40-source.npz",
+        "response_path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\seven-eighths-history-cubic-carry-20261015\\results\\block-source-error\\heavy-m40-response.npz"
+      },
+      "cold-m20": {
+        "raw_maximum_by_column": [
+          9.112295751969222e-11,
+          2.3575083196619396e-09,
+          1.8107110569996275e-09,
+          9.112295751969222e-11,
+          2.3575083196619396e-09,
+          1.8107110569996275e-09,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "worst_step_by_column": [
+          1932,
+          1571,
+          1697,
+          1932,
+          1571,
+          1697,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "columns": [
+          0,
+          1,
+          2
+        ],
+        "steps": [
+          1571,
+          1697,
+          1932
+        ],
+        "raw_errors": {
+          "photon": 5.5371976499838676e-15,
+          "gas": 2.3575083196619396e-09,
+          "energy_spectrum": 0.012572001554879135,
+          "energy_step": 9.729151558820602e-17,
+          "energy_work": 1.233775049617092e-14,
+          "number": 1.7075527251261952e-12,
+          "linearity": 0.0
+        },
+        "source_path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\seven-eighths-history-cubic-carry-20261015\\results\\block-source-error\\cold-m20-source.npz",
+        "response_path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\seven-eighths-history-cubic-carry-20261015\\results\\block-source-error\\cold-m20-response.npz"
+      },
+      "cold-m40": {
+        "raw_maximum_by_column": [
+          1.0675813731168138e-10,
+          1.3773917275976803e-09,
+          3.2516534034274244e-09,
+          1.0675813731168138e-10,
+          1.3773917275976803e-09,
+          3.2516534034274244e-09,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "worst_step_by_column": [
+          1565,
+          1694,
+          1694,
+          1565,
+          1694,
+          1694,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "columns": [
+          0,
+          1,
+          2
+        ],
+        "steps": [
+          1565,
+          1694
+        ],
+        "raw_errors": {
+          "photon": 5.501860857942697e-15,
+          "gas": 3.2516534034274244e-09,
+          "energy_spectrum": 0.01366117973266832,
+          "energy_step": 1.7790645800665256e-16,
+          "energy_work": 1.6208298836913864e-14,
+          "number": 1.2949876536731569e-12,
+          "linearity": 0.0
+        },
+        "source_path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\seven-eighths-history-cubic-carry-20261015\\results\\block-source-error\\cold-m40-source.npz",
+        "response_path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\seven-eighths-history-cubic-carry-20261015\\results\\block-source-error\\cold-m40-response.npz"
+      }
+    },
+    "rows": [
+      {
+        "case": "heavy-m20",
+        "step": 1585,
+        "columns": [
+          0,
+          1,
+          2
+        ],
+        "input_path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\complete-corrected-history-20261015\\results\\saved-block-gas-residual\\heavy-m20-step1585-inputs.npz",
+        "traced_raw_gas_relative": [
+          8.515188392983807e-12,
+          2.00375241319992e-07,
+          4.6060207422221585e-07
+        ],
+        "reevaluated_double_gas_relative": [
+          8.515188392983807e-12,
+          2.00375241319992e-07,
+          4.6060207422221585e-07
+        ],
+        "existing_state_50digit_gas_relative": [
+          2.5731008051024315e-14,
+          6.023707687268358e-08,
+          6.033278867973935e-08
+        ],
+        "high_precision_gas_relative": [
+          1.2966653241761399e-70,
+          7.456416891330873e-67,
+          1.2131694370722294e-66
+        ],
+        "high_precision_photon_relative": [
+          1.8231957194485448e-70,
+          2.110531077542464e-70,
+          1.9976084610086686e-70
+        ],
+        "photon50to70": [
+          4.543473691047343e-50,
+          5.338577347897849e-50,
+          5.07034086699045e-50
+        ],
+        "gas50to70": [
+          3.3458996208417628e-46,
+          8.027073711528505e-45,
+          7.847690832487836e-45
+        ],
+        "cast_raw_gas_relative": [
+          1.8240985283872386e-12,
+          1.0498898104603633e-07,
+          1.5832845937454223e-07
+        ],
+        "gas_change_over_old_local": [
+          1.1585432453814354e-10,
+          7.756000363837449e-09,
+          7.564198465149461e-09
+        ],
+        "gas_change_over_saved_peak": [
+          4.587312808796242e-12,
+          4.1163323080744405e-10,
+          4.014720932003977e-10
+        ],
+        "photon_change_over_saved_peak": [
+          3.002725163785137e-15,
+          5.0827568206018626e-15,
+          5.190971061522927e-15
+        ],
+        "old_endpoint_near_zero": [
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "case": "heavy-m20",
+        "step": 1933,
+        "columns": [
+          0,
+          1,
+          2
+        ],
+        "input_path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\complete-corrected-history-20261015\\results\\saved-block-gas-residual\\heavy-m20-step1933-inputs.npz",
+        "traced_raw_gas_relative": [
+          3.1704528270358e-10,
+          1.6712800820525928e-13,
+          1.3509754869955447e-14
+        ],
+        "reevaluated_double_gas_relative": [
+          3.1704528270358e-10,
+          1.6712800820525928e-13,
+          1.3509754869955447e-14
+        ],
+        "existing_state_50digit_gas_relative": [
+          5.051482773673363e-11,
+          3.443678002897829e-14,
+          3.451880926159437e-14
+        ],
+        "high_precision_gas_relative": [
+          6.486103380076011e-68,
+          6.153381227470603e-73,
+          1.3107882466257776e-71
+        ],
+        "high_precision_photon_relative": [
+          1.0843907930021175e-70,
+          1.5175795387266e-70,
+          1.0501344569335719e-70
+        ],
+        "photon50to70": [
+          2.409663925098311e-50,
+          2.6125935639574064e-50,
+          2.7359898238608758e-50
+        ],
+        "gas50to70": [
+          1.0835216075798251e-47,
+          1.1734384961505217e-47,
+          1.0399111404910302e-47
+        ],
+        "cast_raw_gas_relative": [
+          6.174190773802447e-11,
+          7.770713722874477e-14,
+          5.6211239344952294e-14
+        ],
+        "gas_change_over_old_local": [
+          3.000172981709912e-11,
+          2.2295993760937553e-11,
+          2.2452011500731982e-11
+        ],
+        "gas_change_over_saved_peak": [
+          1.801166483298882e-11,
+          2.227882632139133e-11,
+          2.2434727095657346e-11
+        ],
+        "photon_change_over_saved_peak": [
+          1.45143482325897e-16,
+          6.475593596126814e-17,
+          6.655846149239703e-17
+        ],
+        "old_endpoint_near_zero": [
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "case": "heavy-m40",
+        "step": 1588,
+        "columns": [
+          0,
+          1,
+          2
+        ],
+        "input_path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\complete-corrected-history-20261015\\results\\saved-block-gas-residual\\heavy-m40-step1588-inputs.npz",
+        "traced_raw_gas_relative": [
+          7.780003652038443e-12,
+          1.409240128910159e-09,
+          2.644382070763738e-10
+        ],
+        "reevaluated_double_gas_relative": [
+          7.780003652038443e-12,
+          1.409240128910159e-09,
+          2.644382070763738e-10
+        ],
+        "existing_state_50digit_gas_relative": [
+          1.2367890069061227e-12,
+          2.9156827444625363e-10,
+          2.915082595952596e-10
+        ],
+        "high_precision_gas_relative": [
+          2.326793629977186e-70,
+          5.0296976720391615e-70,
+          7.803809600298879e-69
+        ],
+        "high_precision_photon_relative": [
+          2.197505553763434e-70,
+          2.5396597035584275e-70,
+          2.399436884317391e-70
+        ],
+        "photon50to70": [
+          4.857317345948002e-50,
+          5.265042948383247e-50,
+          5.571042631812219e-50
+        ],
+        "gas50to70": [
+          6.536494957786542e-46,
+          8.083492432735218e-47,
+          3.075722018472116e-46
+        ],
+        "cast_raw_gas_relative": [
+          1.8932101426682118e-12,
+          1.100196344063304e-09,
+          4.679316226280675e-10
+        ],
+        "gas_change_over_old_local": [
+          3.0947399141936463e-09,
+          8.615612158370383e-09,
+          8.47953952730195e-09
+        ],
+        "gas_change_over_saved_peak": [
+          1.4629234694196535e-10,
+          4.857240426293894e-10,
+          4.780629395406895e-10
+        ],
+        "photon_change_over_saved_peak": [
+          3.656123508016864e-15,
+          5.683602702301096e-15,
+          5.6755439353002925e-15
+        ],
+        "old_endpoint_near_zero": [
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "case": "heavy-m40",
+        "step": 1700,
+        "columns": [
+          0,
+          1,
+          2
+        ],
+        "input_path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\complete-corrected-history-20261015\\results\\saved-block-gas-residual\\heavy-m40-step1700-inputs.npz",
+        "traced_raw_gas_relative": [
+          7.427400537667364e-13,
+          1.1866237348060755e-09,
+          3.758577046277151e-09
+        ],
+        "reevaluated_double_gas_relative": [
+          7.427400537667364e-13,
+          1.1866237348060755e-09,
+          3.758577046277151e-09
+        ],
+        "existing_state_50digit_gas_relative": [
+          2.6235422397651985e-13,
+          1.1727375282712455e-11,
+          1.1746210475172539e-11
+        ],
+        "high_precision_gas_relative": [
+          8.473314280489273e-71,
+          2.8908310491408102e-68,
+          9.616066619907404e-69
+        ],
+        "high_precision_photon_relative": [
+          1.7423658401653527e-70,
+          2.717811322419573e-70,
+          2.4151053632835845e-70
+        ],
+        "photon50to70": [
+          3.2637621474696013e-50,
+          4.909534998537933e-50,
+          4.701890923977144e-50
+        ],
+        "gas50to70": [
+          2.300492381174632e-46,
+          2.457428656336267e-46,
+          2.366045113071646e-46
+        ],
+        "cast_raw_gas_relative": [
+          3.5936476475970665e-13,
+          1.8030272661358009e-10,
+          5.096921499797028e-10
+        ],
+        "gas_change_over_old_local": [
+          9.704571631627513e-10,
+          3.107994676895332e-11,
+          4.2719610671197675e-11
+        ],
+        "gas_change_over_saved_peak": [
+          8.19089441214338e-11,
+          1.0908778190016332e-11,
+          1.49941581950723e-11
+        ],
+        "photon_change_over_saved_peak": [
+          2.699634186868504e-15,
+          3.720429808342064e-15,
+          3.667011636329375e-15
+        ],
+        "old_endpoint_near_zero": [
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "case": "heavy-m40",
+        "step": 2005,
+        "columns": [
+          0,
+          1,
+          2
+        ],
+        "input_path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\complete-corrected-history-20261015\\results\\saved-block-gas-residual\\heavy-m40-step2005-inputs.npz",
+        "traced_raw_gas_relative": [
+          5.900154459220845e-10,
+          1.9717361940620164e-13,
+          1.255573630773628e-13
+        ],
+        "reevaluated_double_gas_relative": [
+          5.900154459220845e-10,
+          1.9717361940620164e-13,
+          1.255573630773628e-13
+        ],
+        "existing_state_50digit_gas_relative": [
+          3.0027447985120307e-10,
+          4.794313578841899e-14,
+          4.799097785682825e-14
+        ],
+        "high_precision_gas_relative": [
+          1.2072194370830189e-67,
+          5.747180501091564e-71,
+          4.0603719269109866e-72
+        ],
+        "high_precision_photon_relative": [
+          7.731186126833657e-71,
+          1.4044014718703124e-70,
+          1.2819476994929379e-70
+        ],
+        "photon50to70": [
+          1.8831147798637996e-50,
+          2.2791526092108346e-50,
+          2.0463837545852628e-50
+        ],
+        "gas50to70": [
+          1.4549115839945856e-47,
+          6.556250842671811e-48,
+          7.459384519261775e-48
+        ],
+        "cast_raw_gas_relative": [
+          3.085392592857527e-10,
+          1.6244286670241456e-13,
+          3.2558384170825263e-14
+        ],
+        "gas_change_over_old_local": [
+          5.756895672487538e-11,
+          2.7315976084626983e-11,
+          2.914287118532371e-11
+        ],
+        "gas_change_over_saved_peak": [
+          4.660291648430207e-11,
+          2.613379016190118e-11,
+          2.7881578185731242e-11
+        ],
+        "photon_change_over_saved_peak": [
+          1.9601484069600007e-16,
+          6.7931887801591e-17,
+          6.634093625069617e-17
+        ],
+        "old_endpoint_near_zero": [
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "case": "cold-m20",
+        "step": 1571,
+        "columns": [
+          0,
+          1,
+          2
+        ],
+        "input_path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\complete-corrected-history-20261015\\results\\saved-block-gas-residual\\cold-m20-step1571-inputs.npz",
+        "traced_raw_gas_relative": [
+          8.657025514762184e-12,
+          2.3575083196619396e-09,
+          1.8003890086818643e-09
+        ],
+        "reevaluated_double_gas_relative": [
+          8.657025514762184e-12,
+          2.3575083196619396e-09,
+          1.8003890086818643e-09
+        ],
+        "existing_state_50digit_gas_relative": [
+          1.3966295975445893e-12,
+          6.677938758746856e-10,
+          6.677877937998334e-10
+        ],
+        "high_precision_gas_relative": [
+          9.97352849102682e-72,
+          6.469236119968348e-69,
+          1.4687180904545849e-69
+        ],
+        "high_precision_photon_relative": [
+          1.6203124082749106e-70,
+          2.4819986304213602e-70,
+          2.5583401131859818e-70
+        ],
+        "photon50to70": [
+          4.223204301654778e-50,
+          4.8542227365580975e-50,
+          4.769020125089693e-50
+        ],
+        "gas50to70": [
+          2.4923652959388975e-45,
+          2.995572732575045e-45,
+          2.97425133155348e-45
+        ],
+        "cast_raw_gas_relative": [
+          3.2020325979386398e-12,
+          1.0558526122892613e-09,
+          4.130127544050327e-10
+        ],
+        "gas_change_over_old_local": [
+          3.402130400173294e-09,
+          7.37092769469769e-09,
+          7.767536906412997e-09
+        ],
+        "gas_change_over_saved_peak": [
+          1.0943524662391081e-10,
+          4.28630194317654e-10,
+          4.5168529704791613e-10
+        ],
+        "photon_change_over_saved_peak": [
+          2.8049953268957508e-15,
+          5.311588769901657e-15,
+          5.309611584691867e-15
+        ],
+        "old_endpoint_near_zero": [
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "case": "cold-m20",
+        "step": 1697,
+        "columns": [
+          0,
+          1,
+          2
+        ],
+        "input_path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\complete-corrected-history-20261015\\results\\saved-block-gas-residual\\cold-m20-step1697-inputs.npz",
+        "traced_raw_gas_relative": [
+          2.0961225993251063e-12,
+          1.5577145446847686e-09,
+          1.8107110569996275e-09
+        ],
+        "reevaluated_double_gas_relative": [
+          2.0961225993251063e-12,
+          1.5577145446847686e-09,
+          1.8107110569996275e-09
+        ],
+        "existing_state_50digit_gas_relative": [
+          9.385981552182087e-13,
+          5.218590145012274e-10,
+          5.219168793359976e-10
+        ],
+        "high_precision_gas_relative": [
+          9.324829042019777e-72,
+          1.0369994271818215e-68,
+          6.168351182070995e-71
+        ],
+        "high_precision_photon_relative": [
+          1.5533205308842945e-70,
+          2.5829753533685772e-70,
+          2.5116559632747696e-70
+        ],
+        "photon50to70": [
+          3.46818043685731e-50,
+          4.4355602342898e-50,
+          4.504113341899503e-50
+        ],
+        "gas50to70": [
+          7.887666227051887e-46,
+          5.084940857942819e-46,
+          4.9013085683365035e-46
+        ],
+        "cast_raw_gas_relative": [
+          2.406685400177215e-13,
+          3.535212006874993e-10,
+          7.203842323351901e-10
+        ],
+        "gas_change_over_old_local": [
+          6.894124720624842e-09,
+          2.7697533408483993e-09,
+          2.864197674029824e-09
+        ],
+        "gas_change_over_saved_peak": [
+          2.8880694580411463e-10,
+          9.770429011917508e-10,
+          1.0103597738360985e-09
+        ],
+        "photon_change_over_saved_peak": [
+          2.869824614010423e-15,
+          4.150752477488049e-15,
+          4.086884989151808e-15
+        ],
+        "old_endpoint_near_zero": [
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "case": "cold-m20",
+        "step": 1932,
+        "columns": [
+          0,
+          1,
+          2
+        ],
+        "input_path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\complete-corrected-history-20261015\\results\\saved-block-gas-residual\\cold-m20-step1932-inputs.npz",
+        "traced_raw_gas_relative": [
+          9.112295751969222e-11,
+          2.0730943368872607e-14,
+          8.456934517277535e-14
+        ],
+        "reevaluated_double_gas_relative": [
+          9.112295751969222e-11,
+          2.0730943368872607e-14,
+          8.456934517277535e-14
+        ],
+        "existing_state_50digit_gas_relative": [
+          6.658892277735469e-11,
+          5.10197698289044e-14,
+          5.1136412956709465e-14
+        ],
+        "high_precision_gas_relative": [
+          8.382730048827692e-69,
+          8.748175662613776e-72,
+          7.655855879769431e-72
+        ],
+        "high_precision_photon_relative": [
+          8.434013961483754e-71,
+          8.140306249130535e-71,
+          1.1249808262648827e-70
+        ],
+        "photon50to70": [
+          2.3325765223419995e-50,
+          2.613537907027048e-50,
+          2.9668112314951973e-50
+        ],
+        "gas50to70": [
+          7.970209280409873e-47,
+          1.6865273597689038e-47,
+          1.2956023209159768e-47
+        ],
+        "cast_raw_gas_relative": [
+          2.6721508382384896e-10,
+          2.1381788990148857e-13,
+          1.9686150662504214e-13
+        ],
+        "gas_change_over_old_local": [
+          6.579910687803925e-11,
+          3.162057498060348e-11,
+          3.279972157364845e-11
+        ],
+        "gas_change_over_saved_peak": [
+          3.9416928159668885e-11,
+          3.1618295534581014e-11,
+          3.279735779299565e-11
+        ],
+        "photon_change_over_saved_peak": [
+          1.3614344017023752e-16,
+          7.425179090552156e-17,
+          7.334881837792756e-17
+        ],
+        "old_endpoint_near_zero": [
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "case": "cold-m40",
+        "step": 1565,
+        "columns": [
+          0,
+          1,
+          2
+        ],
+        "input_path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\complete-corrected-history-20261015\\results\\saved-block-gas-residual\\cold-m40-step1565-inputs.npz",
+        "traced_raw_gas_relative": [
+          1.0675813731168138e-10,
+          8.612319298653682e-12,
+          1.064819883453232e-11
+        ],
+        "reevaluated_double_gas_relative": [
+          1.0675813731168138e-10,
+          8.612319298653682e-12,
+          1.064819883453232e-11
+        ],
+        "existing_state_50digit_gas_relative": [
+          1.9728566580611732e-11,
+          2.3333938528259303e-12,
+          2.3341351090001273e-12
+        ],
+        "high_precision_gas_relative": [
+          2.7292189657268135e-70,
+          1.6280326633010778e-72,
+          5.122994970973145e-71
+        ],
+        "high_precision_photon_relative": [
+          2.500444567683053e-70,
+          2.8754285683846383e-70,
+          2.7993453669613144e-70
+        ],
+        "photon50to70": [
+          4.950256707250842e-50,
+          5.238573673707835e-50,
+          4.96667801689835e-50
+        ],
+        "gas50to70": [
+          9.529331271831566e-46,
+          6.200737651356073e-45,
+          6.386454733893848e-45
+        ],
+        "cast_raw_gas_relative": [
+          5.0322476352891084e-11,
+          3.865259136566266e-12,
+          4.65301646671989e-13
+        ],
+        "gas_change_over_old_local": [
+          5.006661862020446e-09,
+          1.2444558809703836e-08,
+          1.289567992737394e-08
+        ],
+        "gas_change_over_saved_peak": [
+          1.3321694870794837e-10,
+          4.64868702129351e-10,
+          4.816574218396298e-10
+        ],
+        "photon_change_over_saved_peak": [
+          3.378295102882005e-15,
+          5.616039091472456e-15,
+          5.62903545614002e-15
+        ],
+        "old_endpoint_near_zero": [
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "case": "cold-m40",
+        "step": 1694,
+        "columns": [
+          0,
+          1,
+          2
+        ],
+        "input_path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\complete-corrected-history-20261015\\results\\saved-block-gas-residual\\cold-m40-step1694-inputs.npz",
+        "traced_raw_gas_relative": [
+          1.3414867462840136e-13,
+          1.3773917275976803e-09,
+          3.2516534034274244e-09
+        ],
+        "reevaluated_double_gas_relative": [
+          1.3414867462840136e-13,
+          1.3773917275976803e-09,
+          3.2516534034274244e-09
+        ],
+        "existing_state_50digit_gas_relative": [
+          1.0845028622439514e-13,
+          1.340581910948961e-10,
+          1.3450441636788588e-10
+        ],
+        "high_precision_gas_relative": [
+          1.4758527309198313e-70,
+          1.925073483193437e-68,
+          4.327806827252997e-68
+        ],
+        "high_precision_photon_relative": [
+          1.947843385489162e-70,
+          2.600594567008555e-70,
+          2.7192312218210944e-70
+        ],
+        "photon50to70": [
+          3.537681870486157e-50,
+          5.168275917144144e-50,
+          4.969050210010579e-50
+        ],
+        "gas50to70": [
+          9.310403871879807e-46,
+          1.9950441324368075e-46,
+          2.177608939748191e-46
+        ],
+        "cast_raw_gas_relative": [
+          4.252611169633698e-13,
+          3.6713940208966565e-09,
+          1.2963474217854911e-09
+        ],
+        "gas_change_over_old_local": [
+          3.884524483799756e-10,
+          3.9163279421829066e-10,
+          3.7599085121677635e-10
+        ],
+        "gas_change_over_saved_peak": [
+          3.252137693056501e-11,
+          1.336500600914136e-10,
+          1.2831145947797398e-10
+        ],
+        "photon_change_over_saved_peak": [
+          2.9410677346056755e-15,
+          4.532419870985533e-15,
+          4.470738662586963e-15
+        ],
+        "old_endpoint_near_zero": [
+          false,
+          false,
+          false
+        ]
+      }
+    ],
+    "witnesses": 10,
+    "max_high_precision_gas_residual": 1.2131694370722294e-66,
+    "max_existing_state_50digit_residual": 6.033278867973935e-08,
+    "max_gas_state_change_over_saved_peak": 1.0103597738360985e-09,
+    "max_precision_disagreement": 8.027073711528505e-45,
+    "retained_cast_failures": 2,
+    "preceding_states_are_binary64": true,
+    "full_high_precision_history": false
+  }
+}

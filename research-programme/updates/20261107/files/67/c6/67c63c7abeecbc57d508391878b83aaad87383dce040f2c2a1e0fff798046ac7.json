@@ -1,0 +1,21 @@
+{
+  "state": "reconciled_failed_first_attempts",
+  "original_script": "scripts/probe_annular_common_physical_jet_20261001.py",
+  "failed_runs": [
+    "source-intake/navier-stokes/20260914/annular-common-physical-jet-reference-attempt01/status.json",
+    "source-intake/navier-stokes/20260914/annular-common-physical-jet-MTS-attempt01/status.json"
+  ],
+  "failed_check": "normalization_is_coordinate_change",
+  "cause": "Structural symbolic matrix equality was used without expansion; algebraically identical expressions were represented differently.",
+  "repair": "The daughter script expands the difference and tests equality to the zero matrix. No tolerance or physical input was changed.",
+  "daughter_script": "scripts/probe_annular_common_physical_jet_v2_20261001.py",
+  "daughter_runs": [
+    "source-intake/navier-stokes/20260914/annular-common-physical-jet-reference-attempt02/status.json",
+    "source-intake/navier-stokes/20260914/annular-common-physical-jet-MTS-attempt02/status.json"
+  ],
+  "originals_preserved": true,
+  "both_original_process_exit_codes": [1, 1],
+  "both_daughter_process_exit_codes": [0, 0],
+  "physical_equations_changed": false,
+  "original_physical_comparison_reached": false
+}

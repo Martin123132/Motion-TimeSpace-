@@ -1,0 +1,213 @@
+{
+  "state": "complete",
+  "checks": [
+    {
+      "name": "reference:probe_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS:probe_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same_geometric_normalization_both_branches",
+      "passed": true,
+      "detail": [
+        0.1333360280697051,
+        0.1333360280697051
+      ]
+    },
+    {
+      "name": "time_dependent_normalization_requires_triangular_jet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "constant_normalization_is_special_case",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference:source_positions_shared",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference:actual_P2_P1_transfer",
+      "passed": true,
+      "detail": [
+        "4.6E-92",
+        "1E-90",
+        "1.912E-89",
+        "3.531E-90"
+      ]
+    },
+    {
+      "name": "reference:actual_background_separation",
+      "passed": true,
+      "detail": "7.44705378432857704007748755278821430389018128162955803219336751472027291154286775671354000E-93"
+    },
+    {
+      "name": "reference:resampled_background_not_ignored",
+      "passed": true,
+      "detail": "8.14012760856691198441235635089456067238105981021268909319995925835716744075881086633224279E-8"
+    },
+    {
+      "name": "MTS:source_positions_shared",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MTS:actual_P2_P1_transfer",
+      "passed": true,
+      "detail": [
+        "6E-92",
+        "1E-90",
+        "1.912E-89",
+        "3.551E-90"
+      ]
+    },
+    {
+      "name": "MTS:actual_background_separation",
+      "passed": true,
+      "detail": "9.1156646963828581097317797101493806858928887077134982442392570420311041538757647373180970E-93"
+    },
+    {
+      "name": "MTS:resampled_background_not_ignored",
+      "passed": true,
+      "detail": "8.14012760856691198441236037138148393862482991353089316448995413345359037125423835772981038E-8"
+    },
+    {
+      "name": "all_46_witnesses_exactly_preserved_by_fixed_normalization",
+      "passed": true,
+      "detail": 46
+    }
+  ],
+  "cases": [
+    {
+      "branch": "reference-reference",
+      "points": 48,
+      "maximum_errors": [
+        "4.6E-92",
+        "1E-90",
+        "1.912E-89",
+        "3.531E-90",
+        "8.14012760856691198441235635089456067238105981021268909319995925835716744075881086633067E-8",
+        "8.14012760856691198441235635089456067238105981021268909319995925835716744075881086633224279E-8",
+        "4.60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000E-92",
+        "7.44705378432857704007748755278821430389018128162955803219336751472027291154286775671354000E-93"
+      ],
+      "path": "source-intake\\navier-stokes\\20260914\\annular-common-jet-transfer-validation-attempt01\\reference-exact-transfer.npz",
+      "transported_direction_not_reprojected": true
+    },
+    {
+      "branch": "MTS-primary",
+      "points": 48,
+      "maximum_errors": [
+        "6E-92",
+        "1E-90",
+        "1.912E-89",
+        "3.551E-90",
+        "8.14012760856691198441236037138148393862482991353089316448995413345359037125423835773392E-8",
+        "8.14012760856691198441236037138148393862482991353089316448995413345359037125423835772981038E-8",
+        "6.67813783303853466465124183321043199702998532737745714096433972602055039306780159429427245E-92",
+        "9.1156646963828581097317797101493806858928887077134982442392570420311041538757647373180970E-93"
+      ],
+      "path": "source-intake\\navier-stokes\\20260914\\annular-common-jet-transfer-validation-attempt01\\MTS-exact-transfer.npz",
+      "transported_direction_not_reprojected": true
+    }
+  ],
+  "inputs": {
+    "scripts\\verify_annular_common_jet_transfer_20261001.py": "ab8c6e208a427557e8d017f6f76b7ece582ee72ffb82de657a59e627a5228bb0",
+    "source-intake\\navier-stokes\\20260914\\annular-C1-integrated-stage-integrity-20261001.json": "ca88df11dd866008491e1952b81d80cc7d92f87fc6d95287dd06f28a32cebe6b",
+    "source-intake\\navier-stokes\\20260914\\annular-common-physical-jet-reference-attempt02\\status.json": "1afb39dd1ab7b6acf8e237aecac3ff1b4d90908501c726355aeb2309ef352da2",
+    "source-intake\\navier-stokes\\20260914\\annular-common-physical-jet-MTS-attempt02\\status.json": "f621faca042585afd1e8506b8cee97f9503606b01527564b4a1414624cd0a511",
+    "source-intake\\navier-stokes\\20260914\\annular-live-support-acceleration-attempt01\\status.json": "93efad275b693a714a6dc423b1250a7a8b7a45e18f1b8e7a084db31f38a25f17",
+    "source-intake\\navier-stokes\\20260914\\annular-nested-refinement-preparation-attempt02\\reference-reference-refined-action.json": "0a330ec85019e599218ac40563e81ad86ef54d34be0a4c2e5a21dbd5ed07b466",
+    "source-intake\\navier-stokes\\20260914\\annular-resampled-third-grid-preparation-attempt01\\reference-reference-third-action.json": "4725e5d78c7d98297d07e634c8d4372fd8e9ac5284cce69aed9062b8861f39e0",
+    "source-intake\\navier-stokes\\20260914\\annular-matched-seed-flow-attempt01\\reference-reference-resampled-state.npz": "1751be9f6a0b4cbd64dbeb7191bf3b186dccb26f875c1edeb9d1bc22280a4437",
+    "source-intake\\navier-stokes\\20260914\\annular-reference-third-current-attempt01\\reference-reference-third-resampled-index-1-sign0-state.npz": "370e11d812393f7263ae67d11e9a642ba945a303fa09f605f2a91159b77c0f84",
+    "source-intake\\navier-stokes\\20260914\\annular-directional-coupled-Euler-attempt02\\reference-reference-fine-directions.npz": "e9e148235c27c860697c73655e7348e26418419d352bd73c93b75ebfed50465b",
+    "source-intake\\navier-stokes\\20260914\\annular-live-support-acceleration-attempt01\\reference-reference-fine-live-projection.npz": "c6d7c600633fef0ae83d4e05ffa875ef5772354d77f68c9b8007cfd86744e00e",
+    "source-intake\\navier-stokes\\20260914\\annular-common-physical-jet-reference-attempt02\\transported-fine-candidate.npz": "273db9264908a8a4dc67800d2d693e045aa3b75b3ea2439ca3c3eb5237b86412",
+    "source-intake\\navier-stokes\\20260914\\annular-nested-refinement-preparation-attempt02\\MTS-primary-refined-action.json": "276ac668f6e85644aa31690155ae12d830443a89f515dcc940944d41d575d369",
+    "source-intake\\navier-stokes\\20260914\\annular-resampled-third-grid-preparation-attempt01\\MTS-primary-third-action.json": "93753b29cbbfb3b3e4cdb3237ac7c28c422d37400abf78fb719ec118715e90fb",
+    "source-intake\\navier-stokes\\20260914\\annular-matched-seed-flow-attempt01\\MTS-primary-resampled-state.npz": "cc4adca54c4004ca269876f2efac089b6f3812f25bd91a74d0ab295dc79a016d",
+    "source-intake\\navier-stokes\\20260914\\annular-MTS-primary-third-current-attempt01\\MTS-primary-third-resampled-index-1-sign0-state.npz": "ee2f0c7fe961062ceb4f01914e9667dd9b58af2e29ff2a6c5db3a1c539f4d261",
+    "source-intake\\navier-stokes\\20260914\\annular-directional-coupled-Euler-attempt02\\MTS-primary-fine-directions.npz": "e9e148235c27c860697c73655e7348e26418419d352bd73c93b75ebfed50465b",
+    "source-intake\\navier-stokes\\20260914\\annular-live-support-acceleration-attempt01\\MTS-primary-fine-live-projection.npz": "10b7086c95b146e4d5aaf02aa2f3057c5bce133fd2dcb9823ea61b2056fa1204",
+    "source-intake\\navier-stokes\\20260914\\annular-common-physical-jet-MTS-attempt02\\transported-fine-candidate.npz": "76ff9d3457ce808259c137e7a0ba63887e402ccef262bd14c3c6726637c9383c",
+    "source-intake\\navier-stokes\\20260914\\annular-C1-integrated-assembly-attempt01\\status.json": "96e1b226ace3eb47a0f82291b27130b2365a962da22dff1dab29a85b3a174399",
+    "source-intake\\navier-stokes\\20260914\\annular-C1-integrated-assembly-attempt01\\reference-nodal_contraction-rounded_coefficients-locked_original.json": "c396137e2aa9e167ef2f4a1a550a626840e127dfa20e27b88318eef8f1801db8",
+    "source-intake\\navier-stokes\\20260914\\annular-C1-integrated-assembly-attempt01\\reference-nodal_contraction-rounded_coefficients-locked_previous.json": "9f514b0f3d366b91c48bffb3aebb402d610c984e4d04ff2e2771cee5fb51fffb",
+    "source-intake\\navier-stokes\\20260914\\annular-C1-integrated-assembly-attempt01\\reference-nodal_contraction-rounded_coefficients-accounted.json": "06b464cb9d3e71646a782dcbe9457b5c567074db764d74aad336df04b925474c",
+    "source-intake\\navier-stokes\\20260914\\annular-C1-integrated-assembly-attempt01\\reference-nodal_contraction-parent_nodal-locked_original.json": "971d02b0f8551171dfeca298bbcf70fa44d78c2ee00a0634b1c6acde64ec0fa3",
+    "source-intake\\navier-stokes\\20260914\\annular-C1-integrated-assembly-attempt01\\reference-nodal_contraction-parent_nodal-locked_previous.json": "d5ef4373a90ab965543472c0a38709cfceeccea40b83faccdb3f5433fef5c5e7",
+    "source-intake\\navier-stokes\\20260914\\annular-C1-integrated-assembly-attempt01\\reference-nodal_contraction-parent_nodal-accounted.json": "58b94ae43c0fdc8fbc130a112f8e3f163870cd70b395516067df72d0c1d34286",
+    "source-intake\\navier-stokes\\20260914\\annular-C1-integrated-assembly-attempt01\\reference-rounded_coefficients-rounded_coefficients-locked_original.json": "e0af860ff9e151d72db36ce2187783999ce773e9c0bc3164fe87f5169e671d14",
+    "source-intake\\navier-stokes\\20260914\\annular-C1-integrated-assembly-attempt01\\reference-rounded_coefficients-rounded_coefficients-locked_previous.json": "efb66314c5d5be67367a94fa802df392d291e576e182582197f5ebfc62ad0e50",
+    "source-intake\\navier-stokes\\20260914\\annular-C1-integrated-assembly-attempt01\\reference-rounded_coefficients-rounded_coefficients-accounted.json": "14f2b6fd15df582a5c9405df63ce4aad60f1bef83db4df2f655a2e1629e7503d",
+    "source-intake\\navier-stokes\\20260914\\annular-C1-integrated-assembly-attempt01\\reference-rounded_coefficients-parent_nodal-locked_original.json": "cf5927112ad8eecffa69634052b2ca8cdeae0ad3862ed23938f7ed8cf30c05aa",
+    "source-intake\\navier-stokes\\20260914\\annular-C1-integrated-assembly-attempt01\\reference-rounded_coefficients-parent_nodal-locked_previous.json": "3e67f4996c78626abfbd7a0aaf03033168493cb57dce00fa8a50e2ab99c5faee",
+    "source-intake\\navier-stokes\\20260914\\annular-C1-integrated-assembly-attempt01\\reference-rounded_coefficients-parent_nodal-accounted.json": "e66e82fd0e207a35fb976d97567aa108a582c04de27f2eb8c9052b2a58fdabbf",
+    "source-intake\\navier-stokes\\20260914\\annular-C1-integrated-assembly-attempt01\\MTS-nodal_contraction-rounded_coefficients-locked_original.json": "8b4d8b7d3af49ffcd2e744bfa1e1f77c170f4f261578eb48042aa20892c33ca0",
+    "source-intake\\navier-stokes\\20260914\\annular-C1-integrated-assembly-attempt01\\MTS-nodal_contraction-rounded_coefficients-locked_previous.json": "64c1a806525bc61dfb40192b7da401a57e7f67dedce8596508eaeda450b4e817",
+    "source-intake\\navier-stokes\\20260914\\annular-C1-integrated-assembly-attempt01\\MTS-nodal_contraction-rounded_coefficients-accounted.json": "0fdd415c442083f6013535f693bb318bf89d6198f305977324ace6b677e26710",
+    "source-intake\\navier-stokes\\20260914\\annular-C1-integrated-assembly-attempt01\\MTS-nodal_contraction-parent_nodal-locked_original.json": "5db88c72732d479ae86011b94c86452aa9051de64a6e1e50652b321f33931836",
+    "source-intake\\navier-stokes\\20260914\\annular-C1-integrated-assembly-attempt01\\MTS-nodal_contraction-parent_nodal-locked_previous.json": "f9f26dda387d978fbaa308cfd1bc4ba9e8e7fbb718b739bfd16a31b1d437487b",
+    "source-intake\\navier-stokes\\20260914\\annular-C1-integrated-assembly-attempt01\\MTS-nodal_contraction-parent_nodal-accounted.json": "741b5e98cc1bfc60c4d56da276f92f7251a59fe0beb9023901ea25834c3c0ab1",
+    "source-intake\\navier-stokes\\20260914\\annular-C1-integrated-assembly-attempt01\\MTS-rounded_coefficients-rounded_coefficients-locked_original.json": "c520caa7a3c710f12b99fa3233aaaa783d203e2b81c506abe43ee8ebd07f8c5a",
+    "source-intake\\navier-stokes\\20260914\\annular-C1-integrated-assembly-attempt01\\MTS-rounded_coefficients-rounded_coefficients-locked_previous.json": "05f68f986880e31bf0a183c09796d7ed11534944f4dd938562d15f1cc1928e92",
+    "source-intake\\navier-stokes\\20260914\\annular-C1-integrated-assembly-attempt01\\MTS-rounded_coefficients-rounded_coefficients-accounted.json": "db3d46fbc0b0507d04120c039ef562fdc99a5507d379e33ee2f77f80f8ed1802",
+    "source-intake\\navier-stokes\\20260914\\annular-C1-integrated-assembly-attempt01\\MTS-rounded_coefficients-parent_nodal-locked_original.json": "c8aaecdca1d9ceafefa3ce2191c11cd3288cd36a40d6125e9083a6842cd1e66d",
+    "source-intake\\navier-stokes\\20260914\\annular-C1-integrated-assembly-attempt01\\MTS-rounded_coefficients-parent_nodal-locked_previous.json": "adbea8399becf3d81c7e1a0796a1b512a92074187db19b8a88ddec1ea0ab9c2c",
+    "source-intake\\navier-stokes\\20260914\\annular-C1-integrated-assembly-attempt01\\MTS-rounded_coefficients-parent_nodal-accounted.json": "b6567a0cc38b4ab57f6298b5c0e903a6f8709a891c40262fd7f118554183d888",
+    "scripts\\navier_stokes_source_audit_20260908.py": "817c4cdff5bf22a88deea7771b4bbc960690397512bc07cdb639ee9ab33e4f0b",
+    "scripts\\sbp4_derived_operator_20260909.py": "065ea0be52b651d742082230fe8322a367e11fc5e20150c8f3d506d1f87e77d3",
+    "scripts\\sbp4_compatible_second_operator_20260909.py": "86c6f05f7cf0a07abe9d4caa5ca1038b9f64641085a1a4a4f03aeae3ac918a3c",
+    "scripts\\annular_compatible_current_restoring_20260909.py": "c2e15990fb70e4e0587e63f8f0182831b0a4185003cdcd295db97af9027d4051",
+    "scripts\\annular_gram_joint_action_20260909.py": "c45de66a16a3c44a1ebb5a68874c47a10ceb24815bda5ecc88d5bfad3d049591",
+    "scripts\\annular_covariant_time_transport_20260909.py": "d6a55d99b9f9de06e30ab7a6f090ae12b97b273a23930315740490324ab679a9",
+    "scripts\\annular_mixed_grid_basis_20260909.py": "5a9ceef39b681f376a7e6468a104dc6a4139365248ec64ea95fa8809993f147c",
+    "scripts\\annular_adm_mixed_action_20260909.py": "c5681003a7a495196428407f25e00babc525a35d953618e1911540f4b096fe05",
+    "scripts\\annular_adm_clock_quadratic_20260909.py": "e5ccec725f88125169ccf6f533d5f613343a7259fabad0c0bcf992e600d024be",
+    "scripts\\annular_constraint_routhian_20260909.py": "62a5cf9ac8f8e73ee56bc0c46f29e5ed560692cb19a1125ba848f15c72b1dfd8",
+    "scripts\\annular_metric_link_quadratic_20260909.py": "9555ff3da29cf2522ac67cb8f3a2e3b44420464392e1029cc31410542d96e63b",
+    "scripts\\annular_released_hermite_action_20260909.py": "360d565ed558fd83121d11d59f9096d1ebf7fc49f288ca5d8bf7e4f062cac145",
+    "scripts\\annular_action_boundary_current_20260909.py": "8b702d8f7610d686bebed3ea1af73d94b0d33fe5cc7dbe3e0faee4adbd98ce98",
+    "scripts\\annular_metric_flux_jets_20260909.py": "a1c5e3db71e68ebdd69259d47e50bd1d9cecbba51034a55d5c791ad09bada3a0",
+    "scripts\\annular_nonlinear_history_20260912.py": "7747f735107c7c5bb2eae1b9e213354fc9d8856597328cbe697389ec1a96a2fd",
+    "scripts\\annular_covariant_scalar_action_20260912.py": "ccf97c4622e79a5816e094b3001e0513e7cd16f3a424fafeade04de85bca6a4f",
+    "scripts\\annular_finite_width_bulk_current_20260913.py": "da2ca4c2fab7315b4738007aafff59f38be0d90cf4f121706a32afa16f060601",
+    "scripts\\annular_horizontal_clock_evolution_20260913.py": "985843dab67ab06c85c97b32042d48f6ed5342bf578c3518bbad132cb731cd3d",
+    "scripts\\annular_compatible_h_evolution_20260914.py": "88424b14891e92d7780077619e02e5dc3e166806ed9c22924f0f03682e4e97e1",
+    "scripts\\annular_reference_continuum_shell_20260914.py": "5cbb6013083eafb55181d5a14de236685835c51ed36f26b12f0b4cc02edd9409",
+    "scripts\\annular_source_gravity_collar_20260914.py": "65d8b6c1a421bac8b56420df81630647155043b7b35031365d3f708ab94c7fa2",
+    "scripts\\derive_annular_source_gravity_20260914.py": "97861e2bff4aa48b4408f30a71379b32b5133439bc4d456d9b6426d544bacdbc",
+    "scripts\\annular_decimal_transport_20260919.py": "fee1c01e12206aa80a3e5d1c0b9f5a5b3b58b3e56a923496912715f1bcd26c20",
+    "scripts\\annular_decimal_transport_v2_20260919.py": "bf5677c583c2504bce8746220c1f77def8fdf2a69686bfa951916e9863070e0d",
+    "scripts\\annular_common_weighted_moments_20260920.py": "41c44959c09a5d2d8d2f660d068ad205956a074e2c41c61a7d872eefa16f2ecb"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-common-jet-transfer-validation-attempt01\\executed-verify_annular_common_jet_transfer_20261001.py": "ab8c6e208a427557e8d017f6f76b7ece582ee72ffb82de657a59e627a5228bb0",
+    "source-intake\\navier-stokes\\20260914\\annular-common-jet-transfer-validation-attempt01\\reference-exact-transfer.npz": "a265d6dd70512ec9c28235420b8373042c2e2b4ed7cd31a2e74debc019fdda0a",
+    "source-intake\\navier-stokes\\20260914\\annular-common-jet-transfer-validation-attempt01\\MTS-exact-transfer.npz": "58c10f816db2b4a89107c0a9dd9c34ae80add9558880c3c62028e2a8887befc5"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "frozen_normalization": 0.1333360280697051,
+  "normalization_frozen_at_base_state": true,
+  "variable_normalization_not_used": true,
+  "github_action": false,
+  "subagents_used": false,
+  "exact_witnesses_normalized": 46,
+  "normalization_is_not_new_physics": true,
+  "common_field_transfer_verified": true,
+  "finite_evolution_performed": false,
+  "completed_at": "2026-10-01T20:04:26.262000+00:00"
+}

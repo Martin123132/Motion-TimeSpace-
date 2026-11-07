@@ -1,0 +1,18 @@
+D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\annular_moving_collar_sparse_20260914.py:14: FutureWarning: Input has data type int64, but the output has been cast to float64.  In the future, the output data type will match the input. To avoid this warning, set the `dtype` parameter to `None` to have the output dtype match the input, or set it to the desired output data type.
+  differences=diags([np.full(count-3,value) for value in [-1,3,-3,1]],
+{"order": 48, "next_label": 0, "seconds": 76.3979114999529}
+{"order": 48, "next_label": 8, "seconds": 88.66189519991167}
+{"order": 48, "next_label": 16, "seconds": 100.8587405999424}
+{"order": 48, "next_label": 24, "seconds": 113.24496939999517}
+{"order": 48, "next_label": 32, "seconds": 125.50270169996656}
+{"order": 48, "next_label": 40, "seconds": 137.77384929999243}
+Traceback (most recent call last):
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\replay_annular_material_C2_20261001.py", line 183, in <module>
+    main()
+    ~~~~^^
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\replay_annular_material_C2_20261001.py", line 160, in main
+    evidence.check('original_material_replay-'+str(order),np.max(abs(replay_difference))<=2e-24,replay_difference.tolist())
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\annular_reference_continuum_shell_20260914.py", line 41, in check
+    raise RuntimeError(name+': '+repr(detail))
+RuntimeError: original_material_replay-48: [2.442079169483015e-31, -1.4131154669841446e-23, -2.751742806176839e-25, -4.784234135457536e-25]

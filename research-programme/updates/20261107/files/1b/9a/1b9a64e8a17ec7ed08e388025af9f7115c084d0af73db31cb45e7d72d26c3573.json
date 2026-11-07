@@ -1,0 +1,65 @@
+{
+  "accepted_scope": "Measured incoming-frequency seed3/seed4 differences at the two Stage104 temperatures, with saved control and central seed4 sources unchanged; component-resolved transfer through the inherited first-order fixed-geometry photon/gas history.",
+  "numerical_gate_scope": "1% component-sum diagnostics for each full finite source and endpoint response; raw equations, moment reconstruction, number, energy/work, all96 modes, timestep refinement and exact central replay separately checked.",
+  "retained_failed_checks": {},
+  "frequency_diagnostic_failures_retained": true,
+  "scientific_checks": 106,
+  "passing_scientific_checks": 106,
+  "source_frequency_component_sum_max": 0.0070429232290068295,
+  "conditional_response_component_sum_max": 0.00029584953260900496,
+  "history_photon_component_sum_max": 0.0003687886805088391,
+  "history_gas_component_sum_max": 0.00025489176548239783,
+  "photon_sum_of_peaks_max": 0.0005676477594904588,
+  "source_moment_component_sum": {
+    "early": {
+      "component_max": 0.006475756450914008,
+      "coherent_max": 0.00642023475616217,
+      "moment_sums": {
+        "photon_energy": 0.0000746936355577676,
+        "gas_energy": 0.00007469363554896183,
+        "photon_number": 0.0005220576426528184
+      }
+    },
+    "late": {
+      "component_max": 0.0070429232290068295,
+      "coherent_max": 0.006972967402157319,
+      "moment_sums": {
+        "photon_energy": 0.00009883813110387907,
+        "gas_energy": 0.00009883813108767478,
+        "photon_number": 0.000524841610730558
+      }
+    }
+  },
+  "conservative_energy_work_relative": 1.5348478443761022e-14,
+  "maximum_source_moment_reconstruction": 2.549544491450743e-13,
+  "maximum_number_residual": 2.8464307617704433e-13,
+  "maximum_original_photon_equation_relative": 2.5460952415490757e-13,
+  "maximum_original_gas_equation_absolute": 5.464315421855898e-18,
+  "maximum_component_superposition_error": 1.3074622797527966e-9,
+  "central_replay_max": 0,
+  "source_seed4_sha256": "695037a1f7052d32d242457ab1b31b2a69becc544637c0ed77e0f2238eec8c3c",
+  "new_virtual_loop_evaluations": 1512,
+  "new_production_nodes": 1512,
+  "reused_seed4_nodes": 2016,
+  "reused_control_nodes": 9216,
+  "modes_removed": 0,
+  "new_empirical_fit": false,
+  "new_parent_history": false,
+  "full_parent_feedback_applied": false,
+  "new_epoch_precision_gate_closed": false,
+  "source_interpolation_error_bounded": false,
+  "source_frequency_continuum_error_bounded": false,
+  "control_coefficient_fitted": false,
+  "github_action": false,
+  "central_seed4_unchanged": true,
+  "other_integration_axes_held_fixed": true,
+  "no_midpoint_error_certificate_transferred": true,
+  "source_scope_warning": "All percentages refer to full finite remainders or their conditional increments, not total radiation or an observational fit. A quadrature difference is not a certified continuum upper bound.",
+  "inherited_interpolation_ledger": "Stage104's36 frozen source-forecast misses remain preserved. They are distinct from this frequency comparison and are not deleted, cancelled, or converted to passes.",
+  "next_target": "At the more frequency-sensitive late temperature (.4375), compute only the seed5 D/V/S corner at the SAME pilot geometry, reusing the frozen seed3/seed4 sources and control. Compare the 4-to-5 component differences with the saved 3-to-4 differences to test whether refinement actually reduces the sensitivity; propagate that single new difference through the same local hat. No global precision claim from one additional rule.",
+  "conclusion": "The measured incoming-frequency sensitivity passes the frozen source and response diagnostics at both new temperatures. The evolved photon correction changes by at most0.02959% using a no-cancellation component sum, with at most0.03688% over the sampled history. This supports numerical stability for this axis at these temperatures, not certification of all integration axes.",
+  "operational_diagnostics": [
+    "Two single-core below-normal producer jobs; no subagents. Seven scripts compile. Source and response jobs exited0. No failed science checks or reruns.",
+    "The parent control and seed4 source were reused; no new source forecast was advertised. Stage104 central photon and gas histories replay exactly."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "state": "failed",
+  "pid": 117660,
+  "completed": 0,
+  "total": 4,
+  "failure_stage": "First heavy native get_time_evolution, before any model comparison",
+  "observed_error": "CAMBError Dverk error -3: step-size at or below hmin could not satisfy error requirement",
+  "observed_warning_tolerance": 2.5436656473769231e-20,
+  "settings": {"AccuracyBoost": 5.0, "IntTolBoost": 6.0},
+  "root_cause_evidence": "camb_python.f90: tol1=base_tol/exp(AccuracyBoost*IntTolBoost-1); product30 inadvertently tightens tolerance below floating point resolution",
+  "saved_attempt_script": "diagnostics/refine_photon_reference_attempt1.py",
+  "comparison_results_produced": false,
+  "next_attempt": "Hold AccuracyBoost*IntTolBoost at15, the inherited native response tolerance, while varying approximation AccuracyBoost5/10. Use a distinct output folder."
+}

@@ -1,0 +1,114 @@
+{
+  "state": "running",
+  "checks": [
+    {
+      "name": "high_label_baseline_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matrix_owned",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_force_32",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_flux_derivative_32",
+      "passed": true,
+      "detail": 8.050678714928033E-13
+    },
+    {
+      "name": "finite_force_40",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_flux_derivative_40",
+      "passed": true,
+      "detail": 6.783275587211635E-13
+    }
+  ],
+  "cases": [
+    {
+      "summary": {
+        "radial_order": 32,
+        "label_order": 36,
+        "ordinary_derivative_replay_inverse": 1.5405344822479515E-12,
+        "compensated_derivative_replay_inverse": 1.2180327213645417E-11,
+        "ordinary_replay_within_2e11": true,
+        "compensated_replay_within_2e11": true,
+        "summation_shift_inverse": 1.266650754605916E-11,
+        "derivative_oracle_inverse": 8.050678714928033E-13,
+        "baseline_from_saved_ordinary": 0.0,
+        "baseline_from_saved_compensated": 5.585572423420088E-16,
+        "baseline_from_original1024": 1.0434313377491664E-14,
+        "baseline_from_original2048": 1.0433949768746721E-14,
+        "baseline_within_2e15": false,
+        "compensated_successive_inverse": null,
+        "successive_within_2e11": null,
+        "maximum_position_force": 0.005283674129766426,
+        "seconds": 629.4856866999762,
+        "valid_for_claim": false
+      },
+      "path": "source-intake\\navier-stokes\\20260914\\annular-position-force-compensated-diagnostic-attempt01\\field-force-32-36.npz"
+    },
+    {
+      "summary": {
+        "radial_order": 40,
+        "label_order": 44,
+        "ordinary_derivative_replay_inverse": 6.009459248971935E-11,
+        "compensated_derivative_replay_inverse": 5.87997526580232E-11,
+        "ordinary_replay_within_2e11": false,
+        "compensated_replay_within_2e11": false,
+        "summation_shift_inverse": 2.0838479976232866E-11,
+        "derivative_oracle_inverse": 6.783275587211635E-13,
+        "baseline_from_saved_ordinary": 9.48273140171195E-15,
+        "baseline_from_saved_compensated": 9.483648625897263E-15,
+        "baseline_from_original1024": 1.0356014548511261E-14,
+        "baseline_from_original2048": 1.0373280468108093E-14,
+        "baseline_within_2e15": false,
+        "compensated_successive_inverse": 5.5353205094952635E-11,
+        "successive_within_2e11": false,
+        "maximum_position_force": 0.005283674129766427,
+        "seconds": 1769.735283399932,
+        "valid_for_claim": false
+      },
+      "path": "source-intake\\navier-stokes\\20260914\\annular-position-force-compensated-diagnostic-attempt01\\field-force-40-44.npz"
+    }
+  ],
+  "inputs": {
+    "scripts\\diagnose_annular_position_force_compensated_20260929.py": "d738acfc34d120632acdb91c9ee4c8875def79943165f75589482513d54b4155",
+    "DERIVATION-20260929-compensated-field-force-integration.md": "5abf465389183c1cfc5fdd83f1c85eba2a88b14bdfad962e8d1e0cee42b99c6b",
+    "source-intake\\navier-stokes\\20260914\\annular-position-reaction-diagnostic-attempt02\\status.json": "6f634cccb38150a40913f3b16a03f2b6c7848c3b2e25c52fbea907d39dcf6bc9",
+    "source-intake\\navier-stokes\\20260914\\annular-original-label-rule-diagnostic-attempt03\\status.json": "04bd1acb1c82dcb92218dea7ef381986994bb6ca02556490d2bfa93db0db645d"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-position-force-compensated-diagnostic-attempt01\\executed-diagnose_annular_position_force_compensated_20260929.py": "d738acfc34d120632acdb91c9ee4c8875def79943165f75589482513d54b4155",
+    "source-intake\\navier-stokes\\20260914\\annular-position-force-compensated-diagnostic-attempt01\\field-force-32-36.npz": "ac63a2203415a0f75f130a54c53f8e1b248a2375f7bb1d92b950dfc5b46bb5c7",
+    "source-intake\\navier-stokes\\20260914\\annular-position-force-compensated-diagnostic-attempt01\\field-force-40-44.npz": "668c2d5ded1e1d6be0d2614aa971568d074dc7e519744baaaa933b6671e24267"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "diagnostic_only": true,
+  "accepted_for_C0": false,
+  "numerical_acceptance_passed": false,
+  "branch": "reference-reference",
+  "level": "fine",
+  "scope": "Independent weak field-force derivative, resolution, compensated summation",
+  "actual_flux_by_parts_implemented": false,
+  "full_live_reaction_recomputed": false,
+  "github_action": false,
+  "subagents_used": false,
+  "original_workbench_write": false,
+  "progress": {
+    "stage": "force-48-52:16384/104736",
+    "seconds": 1985.797263699933
+  }
+}

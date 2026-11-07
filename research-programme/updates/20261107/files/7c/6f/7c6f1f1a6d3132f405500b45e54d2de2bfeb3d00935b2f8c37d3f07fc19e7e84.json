@@ -1,0 +1,107 @@
+{
+  "stage": 127,
+  "accepted_scope": "Paired arithmetic and separate event/frequency quadrature tests at16 saved odd sites of interval0;both backgrounds,windows and baseline/MTS joins.",
+  "scientific_checks": 1746,
+  "passing_scientific_checks": 1718,
+  "retained_failed_checks": 28,
+  "expected_failed_by_packet": {
+    "comparison-cold-m20": [
+      "Response:legacy-control:gas",
+      "Response:stable:gas",
+      "Response:event1:gas",
+      "Response:event2:gas",
+      "Response:frequency1:gas",
+      "Response:frequency2:gas",
+      "Response:joint:gas"
+    ],
+    "comparison-cold-m40": [
+      "Response:legacy-control:gas",
+      "Response:stable:gas",
+      "Response:event1:gas",
+      "Response:event2:gas",
+      "Response:frequency1:gas",
+      "Response:frequency2:gas",
+      "Response:joint:gas"
+    ],
+    "comparison-heavy-m20": [
+      "Response:legacy-control:gas",
+      "Response:stable:gas",
+      "Response:event1:gas",
+      "Response:event2:gas",
+      "Response:frequency1:gas",
+      "Response:frequency2:gas",
+      "Response:joint:gas"
+    ],
+    "comparison-heavy-m40": [
+      "Response:legacy-control:gas",
+      "Response:stable:gas",
+      "Response:event1:gas",
+      "Response:event2:gas",
+      "Response:frequency1:gas",
+      "Response:frequency2:gas",
+      "Response:joint:gas"
+    ]
+  },
+  "combined_original_response_failures": {
+    "cold:m20": [
+      {
+        "name": "Response:cold:gas",
+        "value": 2.953730651125777e-06,
+        "limit": 1e-07,
+        "passed": false
+      }
+    ],
+    "cold:m40": [
+      {
+        "name": "Response:cold:gas",
+        "value": 1.0669703551373481e-06,
+        "limit": 1e-07,
+        "passed": false
+      }
+    ],
+    "heavy:m20": [
+      {
+        "name": "Response:heavy:gas",
+        "value": 3.814939850560378e-06,
+        "limit": 1e-07,
+        "passed": false
+      }
+    ],
+    "heavy:m40": [
+      {
+        "name": "Response:heavy:gas",
+        "value": 9.009176935688985e-07,
+        "limit": 1e-07,
+        "passed": false
+      }
+    ]
+  },
+  "prior_stage_failed_checks_retained": 96,
+  "maxima": {
+    "arithmetic_endpoint": 1.8272097262628466e-08,
+    "event_endpoint": 2.413183170695086e-09,
+    "frequency_final_increment_endpoint": 1.1084860097456367e-05,
+    "refined_total_endpoint_baseline": 3.651947618784636e-06,
+    "refined_total_endpoint_mts": 4.253476452895713e-05,
+    "refined_total_radiation": 1.75464499824318e-08,
+    "source_component_relative": 4.554008524189622e-07,
+    "raw_gas_residual": 8.831268997588118e-06,
+    "mixed_peak_relative": 1.4844586570088819e-08,
+    "mixed_endpoint_relative": 2.8439804266336963e-09,
+    "pre_replacement_energy": 2.19280563131576e-15
+  },
+  "frequency_endpoint_increment_ratio_range": [
+    0.20338538157754033,
+    0.44320829813114804
+  ],
+  "previous_failure_counts_not_directly_comparable": true,
+  "conclusion": "The paired arithmetic and tested event/frequency refinements are stable at the preregistered1percent source/response thresholds for all four cases. The largest total q32-to-q128 MTS gas endpoint change is4.254e-5 relative (0.004254percent of the small correction), much smaller than the prior source-time refinement change. Frequency increments shrink in every case; event increments are near numerical reproducibility and do not establish a convergence order. None of the tested endpoint signs changes. The tested operator quadrature therefore does not explain the earlier large source-time sensitivity at these16 sites. Move to temperature interpolation and inner/source consistency, not a higher quadrature order by default. All28 raw gas1e-7 diagnostic failures and inherited failures remain visible; this is not a physical-signal error certificate.",
+  "next_target": "Derive and test the temperature-interpolation contribution to the direct-versus-assembled Compton source, using the saved first-interval operators and histories. Separate operator curvature, unresolved-state evolution, and interpolation of their product; propagate signed terms identically for baseline/MTS and both windows/backgrounds. Then refine the initial-interval inner collision coefficients consistently with the source, using the saved restart rather than another blanket time or frequency refinement. Keep the response grid fixed for that isolation test; continuous-time response accuracy, remaining intervals and initial-memory ownership stay separate follow-ups.",
+  "physical_time_accuracy_certified": false,
+  "inner_source_joint_refinement": false,
+  "new_high_precision": "80digit kernel arithmetic reference only;no new high-precision response evolution",
+  "highest_joint_quadrature_rule_tested": false,
+  "common_kernel_bias_excluded": false,
+  "goal_turn_classification": "progress",
+  "independent_validation_required": true
+}

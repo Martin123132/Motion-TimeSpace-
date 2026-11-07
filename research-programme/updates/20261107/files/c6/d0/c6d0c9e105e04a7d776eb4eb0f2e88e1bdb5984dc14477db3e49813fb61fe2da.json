@@ -1,0 +1,222 @@
+{
+  "model": "heavy",
+  "run_name": "heavy-pilot",
+  "initial": {
+    "projection_relative_changes": [
+      0.00019060677091404079,
+      0.00019060677091411782,
+      0.00037878638216672013,
+      0.0012004329202250743
+    ],
+    "maximum_constraint_before": 3.3582049285945e-05,
+    "maximum_constraint_after": 6.938893903907228e-18
+  },
+  "steps": 157,
+  "elapsed_seconds": 5.538773000007495,
+  "angular_maximum": 6,
+  "step_cap": 0.01,
+  "start_scale": 1e-06,
+  "end_scale": 2e-06,
+  "native_comparison": {
+    "names": [
+      "delta_cdm",
+      "delta_baryon",
+      "delta_photon",
+      "delta_neutrino",
+      "v_photon",
+      "v_neutrino"
+    ],
+    "reference": [
+      0.0021431890438925426,
+      0.0021426787511789882,
+      0.0028569049974749524,
+      0.0028565766417808273,
+      2.9372523460520948e-05,
+      4.355603002999326e-05
+    ],
+    "predicted": [
+      0.0021431686004436123,
+      0.0021426902272803387,
+      0.0028569203030169134,
+      0.0028566124810833642,
+      2.9372952348520993e-05,
+      4.355739156620668e-05
+    ],
+    "relative_errors": [
+      9.538798730094764e-06,
+      5.355931158108832e-06,
+      5.357356992016152e-06,
+      1.2546084838007984e-05,
+      1.460146038289285e-05,
+      3.1258442355409346e-05
+    ],
+    "maximum_error": 3.1258442355409346e-05
+  },
+  "checks": [
+    {
+      "name": "Native first-order density/flux endpoint",
+      "passed": true,
+      "value": 3.1258442355409346e-05,
+      "gate": 0.002
+    },
+    {
+      "name": "Hamiltonian and momentum propagation",
+      "passed": true,
+      "value": 0.00023412574579490406,
+      "gate": 0.002
+    },
+    {
+      "name": "Polarization transversality",
+      "passed": true,
+      "value": 5.963496951217641e-19,
+      "gate": 1e-09
+    },
+    {
+      "name": "Mixed-metric compatibility",
+      "passed": true,
+      "value": 1.0842032427445338e-19,
+      "gate": 1e-09
+    }
+  ],
+  "all_checks_passed": true,
+  "ward_samples": [
+    {
+      "time": 0.46334760493756877,
+      "residuals": [
+        [
+          1.0939237115256436e-11,
+          1.9910421419856774e-10
+        ],
+        [
+          9.74749334553387e-12,
+          1.6006271158119145e-10
+        ],
+        [
+          2.3274903157676542e-12,
+          1.7739584267202075e-10
+        ],
+        [
+          1.403352444211246e-11,
+          7.870342715834718e-10
+        ]
+      ],
+      "normalizers": [
+        [
+          172703536311.38626,
+          797.1819273874689
+        ],
+        [
+          172703536311.18045,
+          797.1819273897692
+        ],
+        [
+          345431686467.6324,
+          2254.7709867855874
+        ],
+        [
+          345517065202.37195,
+          2283.649559186591
+        ]
+      ]
+    },
+    {
+      "time": 0.6948073080064998,
+      "residuals": [
+        [
+          6.151729549261306e-12,
+          1.5138083665577565e-10
+        ],
+        [
+          3.471308867174135e-12,
+          3.7792676110349073e-10
+        ],
+        [
+          1.2806537166123836e-11,
+          2.045857899905296e-10
+        ],
+        [
+          1.3794043327046515e-11,
+          1.3491555643224584e-10
+        ]
+      ],
+      "normalizers": [
+        [
+          51195765206.202614,
+          531.2705178306392
+        ],
+        [
+          51195765206.06532,
+          531.2705178347292
+        ],
+        [
+          102387968112.95416,
+          1502.5090679386558
+        ],
+        [
+          102372665213.60687,
+          1642.7954672080587
+        ]
+      ]
+    },
+    {
+      "time": 0.9262670110754309,
+      "residuals": [
+        [
+          2.329399997546779e-12,
+          1.7701588859320782e-10
+        ],
+        [
+          3.5216040207592524e-12,
+          1.6112587481246641e-10
+        ],
+        [
+          4.1548915978375036e-13,
+          1.4380767569924457e-10
+        ],
+        [
+          7.139767097745409e-12,
+          1.6589549394464524e-10
+        ]
+      ],
+      "normalizers": [
+        [
+          21599508037.173225,
+          398.2410058496828
+        ],
+        [
+          21599508037.19896,
+          398.2410058469978
+        ],
+        [
+          43195153876.91416,
+          1126.119772419966
+        ],
+        [
+          43178841699.01221,
+          1230.6340059999034
+        ]
+      ]
+    }
+  ],
+  "particular_and_primordial_separate": true,
+  "ultrarelativistic_neutrinos": true,
+  "elastic_cold_thomson": true,
+  "pressureless_baryons": true,
+  "no_constraint_projection_after_initialization": true,
+  "observational_fit": false,
+  "state": "complete",
+  "finished_utc": "2026-10-07T07:48:22.063774+00:00",
+  "script_sha256": "f88731c1c32caa9f8713977aae84b3d6562eb428e7a912533db49e6796134401",
+  "input_hashes": {
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\coupled-finite-wave-evolution-20261007\\run_evolution.py": "f88731c1c32caa9f8713977aae84b3d6562eb428e7a912533db49e6796134401",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\coupled-finite-wave-evolution-20261007\\evolution_common.py": "6a5809738aeb1860fcd94f600288746c00018e2ee2a2b1eea5902f626486c670",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\coupled-finite-wave-evolution-20261007\\ACCEPTANCE.md": "9eb296ea757117c5d2ac9194d412cb236550f770d9247c5670e6a4ea570b56ca",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\adiabatic-boundary-and-screen-transport-20261007\\results\\stage-integrity.json": "88660f8b689b343cc83fd7ea3a2b745bff8ccab7b93972cd0fbaad92354f7cae",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\coupled-finite-wave-evolution-20261007\\coupled_system.py": "23749f71d8cb510945023de92fcfd9c4dab9508924c71a9779e8abd022292313",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\coupled-finite-wave-evolution-20261007\\initial_state.py": "289bc0d0139edea8cbcaacaea809ae8f050e1e4f35a6533ec1d1ff80802639fd",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\coupled-finite-wave-evolution-20261007\\diagnostics.py": "d0e9ec22b5f4ee7b64816ce2e51e6e5dcfa9dc70a38ffcb2d4c2965cbca30ae6",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\full-history-source-precision-20261007\\runs\\sources\\unmatched-base.npz": "fb5471d7d5d417ee211bab09c3666c1be13f019a505f8d8fb57fa80f591d957a",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\einstein-constraints-and-kinetic-response-20261007\\runs\\native\\heavy.npz": "97ee6b5c13fa9ae5275f7abd9d531cc2d4ef4427d711be2b221447c083358d11",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\thomson-source-coupling-20261007\\runs\\backgrounds\\heavy.npz": "55b4fefe0c4f86c7eaedaee1e3c86fe2362e18a42fd0173dd99f5b33937e5c5e"
+  }
+}

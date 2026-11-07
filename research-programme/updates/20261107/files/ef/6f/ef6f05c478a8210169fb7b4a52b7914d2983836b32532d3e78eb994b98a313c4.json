@@ -1,0 +1,143 @@
+{
+  "checks": [
+    {
+      "name": "heavy hierarchy8: native kinetic response agreement",
+      "passed": true,
+      "errors": [
+        3.8989655334535053e-07,
+        1.0042053532224442e-07
+      ]
+    },
+    {
+      "name": "heavy hierarchy12: native kinetic response agreement",
+      "passed": true,
+      "errors": [
+        3.8989655334535053e-07,
+        1.0042053532224442e-07
+      ]
+    },
+    {
+      "name": "heavy: hierarchy12 does not enter high-ktau approximation",
+      "passed": true
+    },
+    {
+      "name": "heavy: density and metric8/12 agreement",
+      "passed": true
+    },
+    {
+      "name": "cold hierarchy8: native kinetic response agreement",
+      "passed": true,
+      "errors": [
+        2.8289020402690586e-07,
+        8.65437029550209e-08
+      ]
+    },
+    {
+      "name": "cold hierarchy12: native kinetic response agreement",
+      "passed": true,
+      "errors": [
+        2.8289020402690586e-07,
+        8.65437029550209e-08
+      ]
+    },
+    {
+      "name": "cold: hierarchy12 does not enter high-ktau approximation",
+      "passed": true
+    },
+    {
+      "name": "cold: density and metric8/12 agreement",
+      "passed": true
+    },
+    {
+      "name": "Original failed tests retained as common native approximation evidence",
+      "passed": true
+    }
+  ],
+  "count": 9,
+  "all_checks_passed": true,
+  "rows": [
+    {
+      "model": "heavy",
+      "boost": 8,
+      "native_errors": [
+        3.8989655334535053e-07,
+        1.0042053532224442e-07
+      ],
+      "expected_ufa_switch_tau": 108,
+      "end_tau": 102.71763002905956,
+      "nfev": 18443
+    },
+    {
+      "model": "heavy",
+      "boost": 12,
+      "native_errors": [
+        3.8989655334535053e-07,
+        1.0042053532224442e-07
+      ],
+      "expected_ufa_switch_tau": 164,
+      "end_tau": 102.71763002905956,
+      "nfev": 18443
+    },
+    {
+      "model": "cold",
+      "boost": 8,
+      "native_errors": [
+        2.8289020402690586e-07,
+        8.65437029550209e-08
+      ],
+      "expected_ufa_switch_tau": 108,
+      "end_tau": 102.71756724218709,
+      "nfev": 5417
+    },
+    {
+      "model": "cold",
+      "boost": 12,
+      "native_errors": [
+        2.8289020402690586e-07,
+        8.65437029550209e-08
+      ],
+      "expected_ufa_switch_tau": 164,
+      "end_tau": 102.71756724218709,
+      "nfev": 5417
+    }
+  ],
+  "superseded_failures": [
+    {
+      "name": "heavy k=1.0: native density/momentum agreement",
+      "passed": false,
+      "errors": [
+        0.004779473709419108,
+        0.001964253051973856
+      ]
+    },
+    {
+      "name": "cold k=1.0: native density/momentum agreement",
+      "passed": false,
+      "errors": [
+        0.004885307205458477,
+        0.0019313024144316801
+      ]
+    }
+  ],
+  "original_failures_not_relabelled_passes": true,
+  "root_cause": "Native switches to high_ktau_neutrino_approx at k*tau=max(20,lmaxnr-4); lmaxnr=14*lAccuracyBoost here. Boost4 switches at52; boost12 stays unswitched across this history.",
+  "acceptance_thresholds_unchanged": true,
+  "original_sealed_histories_not_modified": true,
+  "state": "complete",
+  "finished_utc": "2026-10-07T05:59:13.885198+00:00",
+  "script_sha256": "9fc3e56f61576ba9fe905d121870212aa7981d230acdabd36d6bf3d4f54a5c57",
+  "input_hashes": {
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\einstein-constraints-and-kinetic-response-20261007\\refine_neutrino_hierarchy.py": "9fc3e56f61576ba9fe905d121870212aa7981d230acdabd36d6bf3d4f54a5c57",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\einstein-constraints-and-kinetic-response-20261007\\constraint_common.py": "8996b45d7d9f9a1d06873d65ced83f3945706313beb8e930e14e07e919b40874",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\einstein-constraints-and-kinetic-response-20261007\\ACCEPTANCE.md": "405062eb59cd8eb871609a5c5b4377b7f8b5838ab561837d53784385e76b9798",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\finite-wave-canonical-source-20261007\\results\\stage-integrity.json": "dec872a4af35ef731f68cbb44d1f8185d5aa1aab9464e0af79c03fbc753c5527",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\einstein-constraints-and-kinetic-response-20261007\\reconstruct_neutrinos.py": "692747a40f9fe34542f72c5a261a69873197aa6c7b11f408fb9feef530bbabcc",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\native-heavy-matching-20261007\\native\\fortran\\equations.f90": "0456d911e33d402cc71b006fcdd29682944cfda6003253528bd308016b9d4dab",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\native-heavy-matching-20261007\\native\\camb\\cambdll.dll": "a3780fc2390569dee8b6dabef0441ab0efb411be18ea42e1419c1d0aac571ff1",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\einstein-constraints-and-kinetic-response-20261007\\runs\\native\\heavy.npz": "97ee6b5c13fa9ae5275f7abd9d531cc2d4ef4427d711be2b221447c083358d11",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\full-history-source-precision-20261007\\runs\\sources\\unmatched-base.npz": "fb5471d7d5d417ee211bab09c3666c1be13f019a505f8d8fb57fa80f591d957a",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\einstein-constraints-and-kinetic-response-20261007\\runs\\native\\cold.npz": "c6a3bfa3d1f2caf3244dfbe47d21a4d568c07ee21c3332e9ab3460735482b102",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\full-history-source-precision-20261007\\runs\\sources\\cold-base.npz": "7e0941fd7971169965364ca35bfb1fbb51be67f90d623f802399aa4a630efc56",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\einstein-constraints-and-kinetic-response-20261007\\results\\neutrino-response\\status.json": "2d86d4adc10973479407070c824d5298e020cae119eff2652432a317ab85d7c4"
+  }
+}

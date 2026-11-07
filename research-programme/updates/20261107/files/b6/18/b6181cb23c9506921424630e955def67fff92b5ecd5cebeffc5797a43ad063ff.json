@@ -1,0 +1,61 @@
+{
+  "state": "complete",
+  "time_utc": "2026-10-06T17:35:16.546048+00:00",
+  "script_sha256": "91c62182987b9af9ad046a0032908f24cf3fe12acad5469b2b48372c3a4dd027",
+  "input_hashes": {
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polar-energy-bound-20261006\\results\\stage-integrity.json": "0983659a4669442251e0ba8ad83a2867612f3a3dc0a3cd112a7560d457efa59e",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polar-hamiltonian-20261006\\polar_energy.py": "8b41a3e46cbcf3ec34a30d90d5f2a6d7e9513469bef8b98d5439db4f6546eca0",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polar-interior-schur-20261006\\interior_common.py": "fd839bf7cc6d16d400a79dd21af9da7dbcb7b7929b5b5daeeda1e6ea9eaaf11c",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polar-interior-schur-20261006\\prove_vacuum_join_v2.py": "91c62182987b9af9ad046a0032908f24cf3fe12acad5469b2b48372c3a4dd027",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\radial-gravity-stability-20261003\\test_radial_energy.py": "b3e34d1313560be3dc803d80dc5eb5abeaafa940f0e792d116214e97959a89fa",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\self-gravity-20261003\\solve_self_gravity.py": "35adf55501885d1e988a1e48d3a2d7f14670c683e62b1e289fc4c8c094aed3ea",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polar-interior-schur-20261006\\results\\reduced-v2\\status.json": "3369a2d2355dccb4bf95331c296ecd20c7dcc170338bd3946bea2a8b9d633c8d",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polar-interior-schur-20261006\\results\\energy-v2\\status.json": "41c86785e8cbe65700420d1293afa05eb63ca8e1d392b2cc920e0154ffe41cbf",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polar-energy-bound-20261006\\results\\vacuum\\status.json": "e97158622fa7ec7e8e789dfecdc20123efe165ff3e951a023162909e4af1633e"
+  },
+  "exact_checks": [
+    {
+      "name": "vacuum map derivative matches stage46",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "vacuum map value matches stage46",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "vacuum gravitational normalization",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "vacuum matter contact vanishes",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "vacuum potential including local mixed derivative",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "full surface contact matches stage46 exactly",
+      "residual": "0",
+      "passed": true
+    }
+  ],
+  "vacuum_mixed_coefficient": "9*(M**3 + 8*M**2*r + 4*r**3)/(4*alpha*r**4*(-2*M + r)*(3*M + 2*r))",
+  "local_surface_contact": "-(-6*M**2*r*Derivative(Z(r), r) + 6*M**2*Z(r) - M*r**2*Derivative(Z(r), r) + 6*M*r*Z(r) + 2*r**3*Derivative(Z(r), r) + 6*r**2*Z(r))*(18*M**4*r*Derivative(Z(r), r) - 18*M**4*Z(r) + 39*M**3*r**2*Derivative(Z(r), r) - 12*M**2*r**3*Derivative(Z(r), r) + 30*M**2*r**2*Z(r) - 14*M*r**4*Derivative(Z(r), r) + 4*r**5*Derivative(Z(r), r) + 12*r**4*Z(r))/(8*alpha*r**4*(-2*M + r)*(3*M + 2*r)**2)",
+  "additional_surface_contact": "9*(M**3 + 8*M**2*r + 4*r**3)*Z(r)**2/(8*alpha*r**2*(-2*M + r)*(3*M + 2*r))",
+  "corrected_potential": "9*(3*M**3 + 6*M**2*r + 4*M*r**2 + 4*r**3)/(alpha*r**5*(3*M + 2*r)**2)",
+  "identity": "C_Z/(4alpha)=local_contact + r^2 B_ZZ Z^2/2 in vacuum. The added term arises only when removing the residual Zprime*Z term.",
+  "matching_conditions": [
+    "Continuous Z,K and metric at shell-free material surface",
+    "h=h_prime=W=W_h=0 at the surface",
+    "No scalar outside; do not evaluate divergent W_hh at h=0 as a physical scalar mass"
+  ],
+  "endpoint_rule": "Join the local interior and local exterior contacts first. If the exterior is rewritten as Zerilli bulk, retain the additional inner contact; do not discard it.",
+  "no_frequency_equation_used": true,
+  "canonical_transformation_claimed": false
+}

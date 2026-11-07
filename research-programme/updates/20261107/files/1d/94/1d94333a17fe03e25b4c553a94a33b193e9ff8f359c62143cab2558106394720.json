@@ -1,0 +1,154 @@
+{
+  "state": "complete",
+  "time_utc": "2026-10-06T17:20:09.140535+00:00",
+  "script_sha256": "692521a9a61dcfedb8309da0a476e0b1cba1322e80d63bccdd1f20ba88891492",
+  "input_hashes": {
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polar-energy-bound-20261006\\results\\stage-integrity.json": "0983659a4669442251e0ba8ad83a2867612f3a3dc0a3cd112a7560d457efa59e",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polar-hamiltonian-20261006\\polar_energy.py": "8b41a3e46cbcf3ec34a30d90d5f2a6d7e9513469bef8b98d5439db4f6546eca0",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polar-interior-schur-20261006\\derive_local_energy.py": "692521a9a61dcfedb8309da0a476e0b1cba1322e80d63bccdd1f20ba88891492",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polar-interior-schur-20261006\\interior_common.py": "fd839bf7cc6d16d400a79dd21af9da7dbcb7b7929b5b5daeeda1e6ea9eaaf11c",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\radial-gravity-stability-20261003\\test_radial_energy.py": "b3e34d1313560be3dc803d80dc5eb5abeaafa940f0e792d116214e97959a89fa",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\self-gravity-20261003\\solve_self_gravity.py": "35adf55501885d1e988a1e48d3a2d7f14670c683e62b1e289fc4c8c094aed3ea"
+  },
+  "exact_checks": [
+    {
+      "name": "Kprime squared cancels exactly",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "no scalar derivative times Kprime",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "no independent phase momentum times Kprime",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "master contact coefficient",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "scalar contact coefficient",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "positive reconstruction denominator",
+      "residual": "0",
+      "passed": true
+    }
+  ],
+  "symbols": [
+    "r",
+    "alpha",
+    "F",
+    "h",
+    "hp",
+    "s",
+    "W",
+    "Wh",
+    "Whh"
+  ],
+  "base_coordinates": [
+    "Zp",
+    "Z",
+    "wp",
+    "w",
+    "pibar",
+    "K"
+  ],
+  "local_coordinates": [
+    "Zp",
+    "Z",
+    "wp",
+    "w",
+    "pibar"
+  ],
+  "base_hessian": [
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-3*(F*alpha*hp**2*r**2 - F - 2*W*alpha*r**2 + alpha*h**2*r**2*s**2 + 1)*(F*alpha*hp**2*r**2 + 3*F + 2*W*alpha*r**2 + alpha*h**2*r**2*s**2 - 7)/(16*F*alpha*r**2)"
+    ],
+    [
+      "0",
+      "9*(2*W*alpha*r**2 - 1)*(F*alpha*hp**2*r**2 + 3*F + 2*W*alpha*r**2 + alpha*h**2*r**2*s**2 - 7)**2/(16*F**2*alpha*r**4)",
+      "3*hp*(F*alpha*hp**2*r**2 + 3*F + 2*W*alpha*r**2 + alpha*h**2*r**2*s**2 - 7)/(4*r)",
+      "-3*(Wh + h*s**2)*(F*alpha*hp**2*r**2 + 3*F + 2*W*alpha*r**2 + alpha*h**2*r**2*s**2 - 7)/(4*F*r)",
+      "3*h*s*(F*alpha*hp**2*r**2 + 3*F + 2*W*alpha*r**2 + alpha*h**2*r**2*s**2 - 7)/(4*F*r)",
+      "-3*(-F**3*alpha**2*hp**4*r**4 - 2*F**3*alpha*hp**2*r**2 + 3*F**3 + 4*F**2*W*alpha**3*hp**4*r**6 - 4*F**2*W*alpha**2*hp**2*r**4 + 8*F**2*W*alpha*r**2 + 4*F**2*Wh*alpha**2*hp**3*r**5 - 4*F**2*Wh*alpha*hp*r**3 + 2*F**2*alpha**2*h**2*hp**2*r**4*s**2 - 8*F**2*alpha**2*hp**4*r**4 - 6*F**2*alpha*h**2*r**2*s**2 + 4*F**2*alpha*hp**2*r**2 - 24*F**2 - 8*F*W**2*alpha**3*hp**2*r**6 + 4*F*W**2*alpha**2*r**4 - 8*F*W*Wh*alpha**2*hp*r**5 + 8*F*W*alpha**3*h**2*hp**2*r**6*s**2 - 12*F*W*alpha**2*h**2*r**4*s**2 + 8*F*W*alpha**2*hp**2*r**4 - 56*F*W*alpha*r**2 + 4*F*Wh*alpha**2*h**2*hp*r**5*s**2 + 4*F*Wh*alpha*hp*r**3 + 3*F*alpha**2*h**4*r**4*s**4 - 16*F*alpha**2*h**2*hp**2*r**4*s**2 + 8*F*alpha*h**2*r**2*s**2 - 2*F*alpha*hp**2*r**2 + 63*F - 8*W**2*alpha**3*h**2*r**6*s**2 - 24*W**2*alpha**2*r**4 + 4*W*alpha**3*h**4*r**6*s**4 + 8*W*alpha**2*h**2*r**4*s**2 + 96*W*alpha*r**2 - 8*alpha**2*h**4*r**4*s**4 - 2*alpha*h**2*r**2*s**2 - 42)/(16*F**2*alpha*r**3)"
+    ],
+    [
+      "0",
+      "3*hp*(F*alpha*hp**2*r**2 + 3*F + 2*W*alpha*r**2 + alpha*h**2*r**2*s**2 - 7)/(4*r)",
+      "F",
+      "0",
+      "0",
+      "-hp*(F*alpha*hp**2*r**2 - F - 2*W*alpha*r**2 + alpha*h**2*r**2*s**2 - 5)/4"
+    ],
+    [
+      "0",
+      "-3*(Wh + h*s**2)*(F*alpha*hp**2*r**2 + 3*F + 2*W*alpha*r**2 + alpha*h**2*r**2*s**2 - 7)/(4*F*r)",
+      "0",
+      "(Whh*r**2 + 3*r**2*s**2 + 6)/r**2",
+      "-2*s",
+      "(-F*Wh*alpha*hp**2*r**3 + F*Wh*r + F*alpha*h*hp**2*r**3*s**2 - F*h*r*s**2 + 12*F*hp + 2*W*Wh*alpha*r**3 - 2*W*alpha*h*r**3*s**2 - Wh*alpha*h**2*r**3*s**2 - 7*Wh*r + alpha*h**3*r**3*s**4 - 5*h*r*s**2)/(4*F*r)"
+    ],
+    [
+      "0",
+      "3*h*s*(F*alpha*hp**2*r**2 + 3*F + 2*W*alpha*r**2 + alpha*h**2*r**2*s**2 - 7)/(4*F*r)",
+      "0",
+      "-2*s",
+      "1",
+      "-h*s*(F*alpha*hp**2*r**2 - F - 2*W*alpha*r**2 + alpha*h**2*r**2*s**2 - 5)/(4*F)"
+    ],
+    [
+      "-3*(F*alpha*hp**2*r**2 - F - 2*W*alpha*r**2 + alpha*h**2*r**2*s**2 + 1)*(F*alpha*hp**2*r**2 + 3*F + 2*W*alpha*r**2 + alpha*h**2*r**2*s**2 - 7)/(16*F*alpha*r**2)",
+      "-3*(-F**3*alpha**2*hp**4*r**4 - 2*F**3*alpha*hp**2*r**2 + 3*F**3 + 4*F**2*W*alpha**3*hp**4*r**6 - 4*F**2*W*alpha**2*hp**2*r**4 + 8*F**2*W*alpha*r**2 + 4*F**2*Wh*alpha**2*hp**3*r**5 - 4*F**2*Wh*alpha*hp*r**3 + 2*F**2*alpha**2*h**2*hp**2*r**4*s**2 - 8*F**2*alpha**2*hp**4*r**4 - 6*F**2*alpha*h**2*r**2*s**2 + 4*F**2*alpha*hp**2*r**2 - 24*F**2 - 8*F*W**2*alpha**3*hp**2*r**6 + 4*F*W**2*alpha**2*r**4 - 8*F*W*Wh*alpha**2*hp*r**5 + 8*F*W*alpha**3*h**2*hp**2*r**6*s**2 - 12*F*W*alpha**2*h**2*r**4*s**2 + 8*F*W*alpha**2*hp**2*r**4 - 56*F*W*alpha*r**2 + 4*F*Wh*alpha**2*h**2*hp*r**5*s**2 + 4*F*Wh*alpha*hp*r**3 + 3*F*alpha**2*h**4*r**4*s**4 - 16*F*alpha**2*h**2*hp**2*r**4*s**2 + 8*F*alpha*h**2*r**2*s**2 - 2*F*alpha*hp**2*r**2 + 63*F - 8*W**2*alpha**3*h**2*r**6*s**2 - 24*W**2*alpha**2*r**4 + 4*W*alpha**3*h**4*r**6*s**4 + 8*W*alpha**2*h**2*r**4*s**2 + 96*W*alpha*r**2 - 8*alpha**2*h**4*r**4*s**4 - 2*alpha*h**2*r**2*s**2 - 42)/(16*F**2*alpha*r**3)",
+      "-hp*(F*alpha*hp**2*r**2 - F - 2*W*alpha*r**2 + alpha*h**2*r**2*s**2 - 5)/4",
+      "(-F*Wh*alpha*hp**2*r**3 + F*Wh*r + F*alpha*h*hp**2*r**3*s**2 - F*h*r*s**2 + 12*F*hp + 2*W*Wh*alpha*r**3 - 2*W*alpha*h*r**3*s**2 - Wh*alpha*h**2*r**3*s**2 - 7*Wh*r + alpha*h**3*r**3*s**4 - 5*h*r*s**2)/(4*F*r)",
+      "-h*s*(F*alpha*hp**2*r**2 - F - 2*W*alpha*r**2 + alpha*h**2*r**2*s**2 - 5)/(4*F)",
+      "-3*(F**2*alpha**2*hp**4*r**4 - 4*F**2*alpha*hp**2*r**2 + 3*F**2 - 4*F*W*alpha**2*hp**2*r**4 + 8*F*W*alpha*r**2 + 2*F*alpha**2*h**2*hp**2*r**4*s**2 - 4*F*alpha*h**2*r**2*s**2 + 2*F*alpha*hp**2*r**2 - 14*F + 4*W**2*alpha**2*r**4 - 4*W*alpha**2*h**2*r**4*s**2 - 16*W*alpha*r**2 + alpha**2*h**4*r**4*s**4 + 2*alpha*h**2*r**2*s**2 + 7)/(8*F**2*alpha*r**2)"
+    ]
+  ],
+  "coefficients": {
+    "a": "hp*r/2",
+    "c": "h*r*s/2",
+    "d": "s*(4*F*h + 2*F*hp*r + 2*W*alpha*h*r**2 - h)/(2*F)",
+    "a_prime": "(2*W*alpha*hp*r**2 + Wh*r - h*r*s**2 - hp)/(2*F)",
+    "beta": "-3*F/2 - alpha*r**2*(F*hp**2/2 + W + h**2*s**2/2) + 7/2",
+    "omega": "(4*F*alpha*h**2*r**2*s**2 + 3*F*alpha*hp**2*r**2 - 9*F - 6*W*alpha*r**2 + 3*alpha*h**2*r**2*s**2 + 21)/6",
+    "k_Zprime": "-3*F*(F*alpha*hp**2*r**2 + 3*F + 2*W*alpha*r**2 + alpha*h**2*r**2*s**2 - 7)/(4*F*alpha*h**2*r**2*s**2 + 3*F*alpha*hp**2*r**2 - 9*F - 6*W*alpha*r**2 + 3*alpha*h**2*r**2*s**2 + 21)",
+    "k_Z": "-3*(-F**2*alpha*hp**2*r**2 - 3*F**2 + 4*F*W*alpha**2*hp**2*r**4 - 2*F*W*alpha*r**2 + 4*F*Wh*alpha*hp*r**3 + 3*F*alpha*h**2*r**2*s**2 - 5*F*alpha*hp**2*r**2 + 12*F + 4*W*alpha**2*h**2*r**4*s**2 + 6*W*alpha*r**2 - 5*alpha*h**2*r**2*s**2 - 21)/(r*(4*F*alpha*h**2*r**2*s**2 + 3*F*alpha*hp**2*r**2 - 9*F - 6*W*alpha*r**2 + 3*alpha*h**2*r**2*s**2 + 21))",
+    "k_wprime": "-4*F**2*alpha*hp*r**2/(4*F*alpha*h**2*r**2*s**2 + 3*F*alpha*hp**2*r**2 - 9*F - 6*W*alpha*r**2 + 3*alpha*h**2*r**2*s**2 + 21)",
+    "k_w": "-4*F*alpha*r**2*(Wh - h*s**2)/(4*F*alpha*h**2*r**2*s**2 + 3*F*alpha*hp**2*r**2 - 9*F - 6*W*alpha*r**2 + 3*alpha*h**2*r**2*s**2 + 21)",
+    "k_pibar": "-4*F*alpha*h*r**2*s/(4*F*alpha*h**2*r**2*s**2 + 3*F*alpha*hp**2*r**2 - 9*F - 6*W*alpha*r**2 + 3*alpha*h**2*r**2*s**2 + 21)"
+  },
+  "derivatives": {
+    "a": "(2*W*alpha*hp*r**2 + Wh*r - h*r*s**2 - hp)/(2*F)",
+    "c": "-s*(F*alpha*h*hp**2*r**2 - 3*F*h - 2*F*hp*r - 2*W*alpha*h*r**2 + alpha*h**3*r**2*s**2 + h)/(4*F)",
+    "d": "s*(-4*F**2*alpha*h*hp**2*r**2 - 2*F**2*alpha*hp**3*r**3 + 4*F**2*h + 10*F**2*hp*r + 2*F*W*alpha**2*h*hp**2*r**4 + 22*F*W*alpha*h*r**2 + 16*F*W*alpha*hp*r**3 + 4*F*Wh*alpha*h*hp*r**3 + 4*F*Wh*r**2 - 4*F*alpha*h**3*r**2*s**2 - 2*F*alpha*h**2*hp*r**3*s**2 - F*alpha*h*hp**2*r**2 - 4*F*h*r**2*s**2 - 7*F*h - 8*F*hp*r + 12*W**2*alpha**2*h*r**4 + 2*W*alpha**2*h**3*r**4*s**2 - 12*W*alpha*h*r**2 - alpha*h**3*r**2*s**2 + 3*h)/(4*F**2*r)",
+    "beta": "(F**2*alpha**2*hp**4*r**4 + 4*F**2*alpha*hp**2*r**2 + 3*F**2 - 2*F*W*alpha**2*hp**2*r**4 + 2*F*W*alpha*r**2 - 4*F*Wh*alpha*hp*r**3 + 2*F*alpha**2*h**2*hp**2*r**4*s**2 + F*alpha*hp**2*r**2 - 3*F - 2*W*alpha**2*h**2*r**4*s**2 + alpha**2*h**4*r**4*s**4 + alpha*h**2*r**2*s**2)/(2*F*r)",
+    "k_Zprime": "3*(3*F**3*alpha**3*hp**6*r**6 + 16*F**3*alpha**2*h**2*hp**2*r**4*s**2 + 8*F**3*alpha**2*h*hp**3*r**5*s**2 + 3*F**3*alpha**2*hp**4*r**4 + 48*F**3*alpha*h**2*r**2*s**2 + 24*F**3*alpha*h*hp*r**3*s**2 - 27*F**3*alpha*hp**2*r**2 - 27*F**3 - 8*F**2*W*alpha**3*h**2*hp**2*r**6*s**2 - 6*F**2*W*alpha**3*hp**4*r**6 + 56*F**2*W*alpha**2*h**2*r**4*s**2 + 16*F**2*W*alpha**2*h*hp*r**5*s**2 - 90*F**2*W*alpha*r**2 - 16*F**2*Wh*alpha**2*h**2*hp*r**5*s**2 - 12*F**2*Wh*alpha**2*hp**3*r**5 + 36*F**2*Wh*alpha*hp*r**3 + 9*F**2*alpha**3*h**2*hp**4*r**6*s**2 + 8*F**2*alpha**2*h**3*hp*r**5*s**4 + 34*F**2*alpha**2*h**2*hp**2*r**4*s**2 + 39*F**2*alpha**2*hp**4*r**4 - 63*F**2*alpha*h**2*r**2*s**2 - 56*F**2*alpha*h*hp*r**3*s**2 + 132*F**2*alpha*hp**2*r**2 + 153*F**2 + 16*F*W**2*alpha**3*h**2*r**6*s**2 + 12*F*W**2*alpha**3*hp**2*r**6 - 84*F*W**2*alpha**2*r**4 + 24*F*W*Wh*alpha**2*hp*r**5 - 8*F*W*alpha**3*h**4*r**6*s**4 - 12*F*W*alpha**3*h**2*hp**2*r**6*s**2 - 16*F*W*alpha**2*h**2*r**4*s**2 - 12*F*W*alpha**2*hp**2*r**4 + 372*F*W*alpha*r**2 - 12*F*Wh*alpha**2*h**2*hp*r**5*s**2 - 84*F*Wh*alpha*hp*r**3 + 9*F*alpha**3*h**4*hp**2*r**6*s**4 + 31*F*alpha**2*h**4*r**4*s**4 + 78*F*alpha**2*h**2*hp**2*r**4*s**2 - 8*F*alpha*h**2*r**2*s**2 - 105*F*alpha*hp**2*r**2 - 273*F - 24*W**3*alpha**3*r**6 + 12*W**2*alpha**3*h**2*r**6*s**2 + 180*W**2*alpha**2*r**4 - 6*W*alpha**3*h**4*r**6*s**4 - 12*W*alpha**2*h**2*r**4*s**2 - 378*W*alpha*r**2 + 3*alpha**3*h**6*r**6*s**6 + 39*alpha**2*h**4*r**4*s**4 - 105*alpha*h**2*r**2*s**2 + 147)/(r*(4*F*alpha*h**2*r**2*s**2 + 3*F*alpha*hp**2*r**2 - 9*F - 6*W*alpha*r**2 + 3*alpha*h**2*r**2*s**2 + 21)**2)",
+    "k_Z": "-3*(3*F**4*alpha**3*hp**6*r**6 + 20*F**4*alpha**2*h**2*hp**2*r**4*s**2 + 8*F**4*alpha**2*h*hp**3*r**5*s**2 + 6*F**4*alpha**2*hp**4*r**4 + 60*F**4*alpha*h**2*r**2*s**2 + 24*F**4*alpha*h*hp*r**3*s**2 - 27*F**4*alpha*hp**2*r**2 - 54*F**4 + 16*F**3*W*alpha**4*h**2*hp**4*r**8*s**2 - 40*F**3*W*alpha**3*h**2*hp**2*r**6*s**2 - 32*F**3*W*alpha**3*h*hp**3*r**7*s**2 + 6*F**3*W*alpha**3*hp**4*r**6 + 64*F**3*W*alpha**2*h**2*r**4*s**2 + 16*F**3*W*alpha**2*h*hp*r**5*s**2 - 36*F**3*W*alpha**2*hp**2*r**4 - 126*F**3*W*alpha*r**2 + 32*F**3*Wh*alpha**3*h**2*hp**3*r**7*s**2 + 12*F**3*Wh*alpha**3*hp**5*r**7 - 48*F**3*Wh*alpha**2*h**2*hp*r**5*s**2 - 32*F**3*Wh*alpha**2*h*hp**2*r**6*s**2 - 36*F**3*Wh*alpha**2*hp**3*r**5 + 16*F**3*Whh*alpha**2*h**2*hp**2*r**6*s**2 + 12*F**3*Whh*alpha**2*hp**4*r**6 - 36*F**3*Whh*alpha*hp**2*r**4 - 23*F**3*alpha**3*h**2*hp**4*r**6*s**2 - 12*F**3*alpha**2*h**4*r**4*s**4 + 8*F**3*alpha**2*h**3*hp*r**5*s**4 + 200*F**3*alpha**2*h**2*hp**2*r**4*s**2 + 64*F**3*alpha**2*h*hp**3*r**5*s**2 + 54*F**3*alpha**2*hp**4*r**4 - 243*F**3*alpha*h**2*r**2*s**2 - 168*F**3*alpha*h*hp*r**3*s**2 + 72*F**3*alpha*hp**2*r**2 + 324*F**3 + 32*F**2*W**2*alpha**4*h**2*hp**2*r**8*s**2 + 24*F**2*W**2*alpha**4*hp**4*r**8 + 16*F**2*W**2*alpha**3*h**2*r**6*s**2 - 84*F**2*W**2*alpha**3*hp**2*r**6 - 96*F**2*W**2*alpha**2*r**4 + 32*F**2*W*Wh*alpha**3*h**2*hp*r**7*s**2 - 72*F**2*W*Wh*alpha**2*hp*r**5 - 24*F**2*W*Whh*alpha**2*hp**2*r**6 + 32*F**2*W*alpha**4*h**4*hp**2*r**8*s**4 + 24*F**2*W*alpha**3*h**4*r**6*s**4 - 32*F**2*W*alpha**3*h**3*hp*r**7*s**4 + 28*F**2*W*alpha**3*h**2*hp**2*r**6*s**2 - 96*F**2*W*alpha**3*hp**4*r**6 - 308*F**2*W*alpha**2*h**2*r**4*s**2 - 96*F**2*W*alpha**2*h*hp*r**5*s**2 + 72*F**2*W*alpha**2*hp**2*r**4 + 468*F**2*W*alpha*r**2 + 16*F**2*Wh**2*alpha**2*h**2*r**6*s**2 + 12*F**2*Wh**2*alpha**2*hp**2*r**6 - 36*F**2*Wh**2*alpha*r**4 + 32*F**2*Wh*alpha**3*h**4*hp*r**7*s**4 + 24*F**2*Wh*alpha**3*h**2*hp**3*r**7*s**2 - 16*F**2*Wh*alpha**2*h**3*r**6*s**4 - 100*F**2*Wh*alpha**2*h**2*hp*r**5*s**2 - 12*F**2*Wh*alpha**2*h*hp**2*r**6*s**2 + 36*F**2*Wh*alpha*h*r**4*s**2 - 12*F**2*Wh*alpha*hp*r**3 + 12*F**2*Whh*alpha**2*h**2*hp**2*r**6*s**2 + 84*F**2*Whh*alpha*hp**2*r**4 - 55*F**2*alpha**3*h**4*hp**2*r**6*s**4 + 66*F**2*alpha**2*h**4*r**4*s**4 + 64*F**2*alpha**2*h**3*hp*r**5*s**4 - 196*F**2*alpha**2*h**2*hp**2*r**4*s**2 + 42*F**2*alpha**2*hp**4*r**4 + 444*F**2*alpha*h**2*r**2*s**2 + 336*F**2*alpha*h*hp*r**3*s**2 + 129*F**2*alpha*hp**2*r**2 - 630*F**2 - 48*F*W**3*alpha**4*hp**2*r**8 - 24*F*W**3*alpha**3*r**6 - 48*F*W**2*Wh*alpha**3*hp*r**7 + 32*F*W**2*alpha**4*h**4*r**8*s**4 + 48*F*W**2*alpha**4*h**2*hp**2*r**8*s**2 - 180*F*W**2*alpha**3*h**2*r**6*s**2 + 216*F*W**2*alpha**3*hp**2*r**6 + 168*F*W**2*alpha**2*r**4 - 24*F*W*Wh**2*alpha**2*r**6 + 24*F*W*Wh*alpha**2*h*r**6*s**2 + 192*F*W*Wh*alpha**2*hp*r**5 + 16*F*W*alpha**4*h**6*r**8*s**6 + 22*F*W*alpha**3*h**4*r**6*s**4 - 192*F*W*alpha**3*h**2*hp**2*r**6*s**2 + 456*F*W*alpha**2*h**2*r**4*s**2 - 180*F*W*alpha**2*hp**2*r**4 - 438*F*W*alpha*r**2 + 12*F*Wh**2*alpha**2*h**2*r**6*s**2 + 84*F*Wh**2*alpha*r**4 + 12*F*Wh*alpha**3*h**4*hp*r**7*s**4 - 12*F*Wh*alpha**2*h**3*r**6*s**4 - 84*F*Wh*alpha*h*r**4*s**2 - 84*F*Wh*alpha*hp*r**3 - 29*F*alpha**3*h**6*r**6*s**6 - 250*F*alpha**2*h**4*r**4*s**4 + 84*F*alpha**2*h**2*hp**2*r**4*s**2 - 39*F*alpha*h**2*r**2*s**2 + 42*F*alpha*hp**2*r**2 + 504*F - 48*W**3*alpha**4*h**2*r**8*s**2 + 24*W**2*alpha**4*h**4*r**8*s**4 + 216*W**2*alpha**3*h**2*r**6*s**2 - 96*W*alpha**3*h**4*r**6*s**4 - 180*W*alpha**2*h**2*r**4*s**2 + 42*alpha**2*h**4*r**4*s**4 + 42*alpha*h**2*r**2*s**2)/(F*r**2*(4*F*alpha*h**2*r**2*s**2 + 3*F*alpha*hp**2*r**2 - 9*F - 6*W*alpha*r**2 + 3*alpha*h**2*r**2*s**2 + 21)**2)",
+    "k_wprime": "4*F*alpha*r*(3*F**2*alpha**2*hp**5*r**4 + 12*F**2*alpha*h**2*hp*r**2*s**2 + 8*F**2*alpha*h*hp**2*r**3*s**2 - 9*F**2*alpha*hp**3*r**2 + 8*F*W*alpha**2*h**2*hp*r**4*s**2 - 18*F*W*alpha*hp*r**2 - 4*F*Wh*alpha*h**2*r**3*s**2 - 3*F*Wh*alpha*hp**2*r**3 + 9*F*Wh*r + 6*F*alpha**2*h**2*hp**3*r**4*s**2 + 4*F*alpha*h**3*r**3*s**4 - F*alpha*h**2*hp*r**2*s**2 + 3*F*alpha*h*hp**2*r**3*s**2 + 36*F*alpha*hp**3*r**2 - 9*F*h*r*s**2 + 21*F*hp - 12*W**2*alpha**2*hp*r**4 + 6*W*Wh*alpha*r**3 - 6*W*alpha*h*r**3*s**2 + 48*W*alpha*hp*r**2 - 3*Wh*alpha*h**2*r**3*s**2 - 21*Wh*r + 3*alpha**2*h**4*hp*r**4*s**4 + 3*alpha*h**3*r**3*s**4 + 36*alpha*h**2*hp*r**2*s**2 + 21*h*r*s**2 - 21*hp)/(4*F*alpha*h**2*r**2*s**2 + 3*F*alpha*hp**2*r**2 - 9*F - 6*W*alpha*r**2 + 3*alpha*h**2*r**2*s**2 + 21)**2",
+    "k_w": "-4*alpha*r*(4*F**2*Wh*alpha**2*h**2*hp**2*r**4*s**2 - 4*F**2*Wh*alpha*h**2*r**2*s**2 - 8*F**2*Wh*alpha*h*hp*r**3*s**2 + 6*F**2*Wh*alpha*hp**2*r**2 - 18*F**2*Wh + 4*F**2*Whh*alpha*h**2*hp*r**3*s**2 + 3*F**2*Whh*alpha*hp**3*r**3 - 9*F**2*Whh*hp*r + 3*F**2*alpha**2*h*hp**4*r**4*s**2 + 4*F**2*alpha*h**2*hp*r**3*s**4 - 18*F**2*alpha*h*hp**2*r**2*s**2 - 3*F**2*alpha*hp**3*r**3*s**2 + 27*F**2*h*s**2 + 9*F**2*hp*r*s**2 - 8*F*W*Wh*alpha**2*h**2*r**4*s**2 - 6*F*W*Wh*alpha**2*hp**2*r**4 + 6*F*W*Wh*alpha*r**2 - 6*F*W*Whh*alpha*hp*r**3 - 6*F*W*alpha**2*h*hp**2*r**4*s**2 + 18*F*W*alpha*h*r**2*s**2 + 6*F*W*alpha*hp*r**3*s**2 + 4*F*Wh*alpha**2*h**4*r**4*s**4 - 2*F*Wh*alpha*h**2*r**2*s**2 - 15*F*Wh*alpha*hp**2*r**2 + 21*F*Wh + 3*F*Whh*alpha*h**2*hp*r**3*s**2 + 21*F*Whh*hp*r + 6*F*alpha**2*h**3*hp**2*r**4*s**4 - 6*F*alpha*h**3*r**2*s**4 - 3*F*alpha*h**2*hp*r**3*s**4 + 39*F*alpha*h*hp**2*r**2*s**2 - 51*F*h*s**2 - 21*F*hp*r*s**2 + 12*W**2*Wh*alpha**2*r**4 - 6*W*Wh*alpha**2*h**2*r**4*s**2 - 48*W*Wh*alpha*r**2 - 6*W*alpha**2*h**3*r**4*s**4 - 15*Wh*alpha*h**2*r**2*s**2 + 21*Wh + 3*alpha**2*h**5*r**4*s**6 + 39*alpha*h**3*r**2*s**4)/(4*F*alpha*h**2*r**2*s**2 + 3*F*alpha*hp**2*r**2 - 9*F - 6*W*alpha*r**2 + 3*alpha*h**2*r**2*s**2 + 21)**2",
+    "k_pibar": "-2*alpha*r*s*(4*F**2*alpha**2*h**3*hp**2*r**4*s**2 - 3*F**2*alpha**2*h*hp**4*r**4 - 4*F**2*alpha*h**3*r**2*s**2 - 8*F**2*alpha*h**2*hp*r**3*s**2 + 24*F**2*alpha*h*hp**2*r**2 + 6*F**2*alpha*hp**3*r**3 - 45*F**2*h - 18*F**2*hp*r - 8*F*W*alpha**2*h**3*r**4*s**2 - 12*F*W*alpha*h*r**2 - 12*F*W*alpha*hp*r**3 + 4*F*alpha**2*h**5*r**4*s**4 - 6*F*alpha**2*h**3*hp**2*r**4*s**2 + 4*F*alpha*h**3*r**2*s**2 + 6*F*alpha*h**2*hp*r**3*s**2 - 54*F*alpha*h*hp**2*r**2 + 72*F*h + 42*F*hp*r + 12*W**2*alpha**2*h*r**4 - 48*W*alpha*h*r**2 - 3*alpha**2*h**5*r**4*s**4 - 54*alpha*h**3*r**2*s**2 + 21*h)/(4*F*alpha*h**2*r**2*s**2 + 3*F*alpha*hp**2*r**2 - 9*F - 6*W*alpha*r**2 + 3*alpha*h**2*r**2*s**2 + 21)**2"
+  },
+  "contact_coefficients": [
+    "-(F**2*alpha**2*hp**4*r**4 - 6*F**2*alpha*hp**2*r**2 - 3*F**2 - 8*F*W*alpha*r**2 - 4*F*Wh*alpha*hp*r**3 + 2*F*alpha**2*h**2*hp**2*r**4*s**2 + 2*F*alpha*h**2*r**2*s**2 + 4*F*alpha*h*hp*r**3*s**2 - 6*F*alpha*hp**2*r**2 + 18*F - 4*W**2*alpha**2*r**4 + 16*W*alpha*r**2 + alpha**2*h**4*r**4*s**4 - 6*alpha*h**2*r**2*s**2 - 7)/(16*F*alpha*r)",
+    "3*(F*alpha*hp**2*r**2 - F - 2*W*alpha*r**2 + alpha*h**2*r**2*s**2 + 1)*(F*alpha*hp**2*r**2 + 3*F + 2*W*alpha*r**2 + alpha*h**2*r**2*s**2 - 7)/(16*F*alpha*r**2)",
+    "-r*(-Wh + h*s**2)/2"
+  ],
+  "density_recipe": "E_local=a/2*x6^T B x6, x6=(Zprime,Z,wprime,w,pibar,K), K=k dot x5; contact=a[A K^2/2+B K Z+C K w]",
+  "measure": "a_measure=N r^2/sqrtF; amplitude shift coefficient also a but kept separate in implementation",
+  "canonical_transformation_claimed": false,
+  "full_local_positivity_proved": false
+}

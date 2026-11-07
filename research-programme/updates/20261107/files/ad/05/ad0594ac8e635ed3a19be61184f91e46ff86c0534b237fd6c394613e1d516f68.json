@@ -1,0 +1,987 @@
+{
+  "checks": [
+    {
+      "name": "heavy:I: relative response refinement",
+      "passed": true,
+      "relative_error": 9.332572622657592e-08
+    },
+    {
+      "name": "heavy:E: relative response refinement",
+      "passed": true,
+      "relative_error": 2.3909486573839074e-09
+    },
+    {
+      "name": "heavy:B: relative response refinement",
+      "passed": true,
+      "relative_error": null
+    },
+    {
+      "name": "heavy:V: relative response refinement",
+      "passed": true,
+      "relative_error": null
+    },
+    {
+      "name": "heavy:plasma_temperature: relative response refinement",
+      "passed": true,
+      "relative_error": null
+    },
+    {
+      "name": "heavy:plasma_velocity: relative response refinement",
+      "passed": true,
+      "relative_error": 8.128191689563398e-07
+    },
+    {
+      "name": "heavy: same-grid elastic equilibrium agreement",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "name": "cold:I: relative response refinement",
+      "passed": true,
+      "relative_error": 9.474336800802005e-08
+    },
+    {
+      "name": "cold:E: relative response refinement",
+      "passed": true,
+      "relative_error": 2.3910224438546732e-09
+    },
+    {
+      "name": "cold:B: relative response refinement",
+      "passed": true,
+      "relative_error": null
+    },
+    {
+      "name": "cold:V: relative response refinement",
+      "passed": true,
+      "relative_error": null
+    },
+    {
+      "name": "cold:plasma_temperature: relative response refinement",
+      "passed": true,
+      "relative_error": null
+    },
+    {
+      "name": "cold:plasma_velocity: relative response refinement",
+      "passed": true,
+      "relative_error": 2.443744487680104e-06
+    },
+    {
+      "name": "cold: same-grid elastic equilibrium agreement",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "name": "synthetic:I: relative response refinement",
+      "passed": true,
+      "relative_error": 7.402308052124209e-11
+    },
+    {
+      "name": "synthetic:E: relative response refinement",
+      "passed": true,
+      "relative_error": 2.6763368843493427e-13
+    },
+    {
+      "name": "synthetic:B: relative response refinement",
+      "passed": true,
+      "relative_error": 2.524854381718323e-13
+    },
+    {
+      "name": "synthetic:V: relative response refinement",
+      "passed": true,
+      "relative_error": 4.15012053468293e-13
+    },
+    {
+      "name": "synthetic:plasma_temperature: relative response refinement",
+      "passed": true,
+      "relative_error": 1.8319794665877914e-12
+    },
+    {
+      "name": "synthetic:plasma_velocity: relative response refinement",
+      "passed": true,
+      "relative_error": 1.2926562527091527e-15
+    },
+    {
+      "name": "synthetic: same-grid elastic equilibrium agreement",
+      "passed": true,
+      "value": 0.0
+    }
+  ],
+  "count": 21,
+  "all_checks_passed": true,
+  "first": "split-384",
+  "second": "split-384-refined",
+  "rows": [
+    {
+      "fixture": "heavy",
+      "sectors": [
+        {
+          "sector": "I",
+          "peak_reference_norm": 2.474163550762445e-10,
+          "peak_difference_norm": 2.3090311017822892e-17,
+          "relative_discrepancy": 9.332572622657592e-08,
+          "numerically_resolved": true,
+          "absolute_roundoff_floor": 3.489788872160283e-14,
+          "meets_accuracy_gate": true
+        },
+        {
+          "sector": "E",
+          "peak_reference_norm": 1.000590805576946e-10,
+          "peak_difference_norm": 2.3923612431848815e-19,
+          "relative_discrepancy": 2.3909486573839074e-09,
+          "numerically_resolved": true,
+          "absolute_roundoff_floor": 3.489788872160283e-14,
+          "meets_accuracy_gate": true
+        },
+        {
+          "sector": "B",
+          "peak_reference_norm": 1.869659554946924e-21,
+          "peak_difference_norm": 2.527765055871981e-21,
+          "relative_discrepancy": null,
+          "numerically_resolved": false,
+          "absolute_roundoff_floor": 3.489788872160283e-14,
+          "meets_accuracy_gate": true
+        },
+        {
+          "sector": "V",
+          "peak_reference_norm": 9.336429639349596e-24,
+          "peak_difference_norm": 3.622563748332196e-30,
+          "relative_discrepancy": null,
+          "numerically_resolved": false,
+          "absolute_roundoff_floor": 3.489788872160283e-14,
+          "meets_accuracy_gate": true
+        },
+        {
+          "sector": "plasma_temperature",
+          "peak_reference_norm": 1.3004877273362194e-22,
+          "peak_difference_norm": 1.153625652134654e-22,
+          "relative_discrepancy": null,
+          "numerically_resolved": false,
+          "absolute_roundoff_floor": 3.489788872160283e-14,
+          "meets_accuracy_gate": true
+        },
+        {
+          "sector": "plasma_velocity",
+          "peak_reference_norm": 6.647109199625843e-14,
+          "peak_difference_norm": 5.4028977756019186e-20,
+          "relative_discrepancy": 8.128191689563398e-07,
+          "numerically_resolved": true,
+          "absolute_roundoff_floor": 3.489788872160283e-14,
+          "meets_accuracy_gate": true
+        }
+      ],
+      "degree_diagnostics": [
+        {
+          "degree": 0,
+          "sector": "I",
+          "peak_reference_norm": 1.718410327890856e-17,
+          "peak_difference_norm": 2.2991195590104823e-17
+        },
+        {
+          "degree": 0,
+          "sector": "V",
+          "peak_reference_norm": 5.5706988238377534e-24,
+          "peak_difference_norm": 2.3820694003686472e-33
+        },
+        {
+          "degree": 1,
+          "sector": "I",
+          "peak_reference_norm": 8.849266396462883e-15,
+          "peak_difference_norm": 2.137032992248786e-18
+        },
+        {
+          "degree": 1,
+          "sector": "V",
+          "peak_reference_norm": 1.9493260322201017e-24,
+          "peak_difference_norm": 3.622563596314342e-30
+        },
+        {
+          "degree": 2,
+          "sector": "I",
+          "peak_reference_norm": 2.474163549980354e-10,
+          "peak_difference_norm": 2.7086302975856e-19
+        },
+        {
+          "degree": 2,
+          "sector": "E",
+          "peak_reference_norm": 1.0005908050798574e-10,
+          "peak_difference_norm": 2.3923612431743293e-19
+        },
+        {
+          "degree": 2,
+          "sector": "B",
+          "peak_reference_norm": 1.8696595547748462e-21,
+          "peak_difference_norm": 2.5277650555848958e-21
+        },
+        {
+          "degree": 2,
+          "sector": "V",
+          "peak_reference_norm": 3.2368227283688786e-25,
+          "peak_difference_norm": 1.9129070666851116e-34
+        },
+        {
+          "degree": 3,
+          "sector": "I",
+          "peak_reference_norm": 5.238553088749927e-15,
+          "peak_difference_norm": 3.680594546248392e-24
+        },
+        {
+          "degree": 3,
+          "sector": "E",
+          "peak_reference_norm": 3.1539888680957596e-15,
+          "peak_difference_norm": 1.6029070310414798e-24
+        },
+        {
+          "degree": 3,
+          "sector": "B",
+          "peak_reference_norm": 1.04007026776065e-24,
+          "peak_difference_norm": 3.8096804236342156e-26
+        },
+        {
+          "degree": 3,
+          "sector": "V",
+          "peak_reference_norm": 5.011368741057016e-24,
+          "peak_difference_norm": 3.9250462070370515e-33
+        },
+        {
+          "degree": 4,
+          "sector": "I",
+          "peak_reference_norm": 5.1223933380839793e-20,
+          "peak_difference_norm": 4.1016332014766566e-29
+        },
+        {
+          "degree": 4,
+          "sector": "E",
+          "peak_reference_norm": 2.101111441866274e-20,
+          "peak_difference_norm": 1.595874464798847e-29
+        },
+        {
+          "degree": 4,
+          "sector": "B",
+          "peak_reference_norm": 2.4414804859045397e-23,
+          "peak_difference_norm": 1.98375110299802e-31
+        },
+        {
+          "degree": 4,
+          "sector": "V",
+          "peak_reference_norm": 9.634109872112972e-25,
+          "peak_difference_norm": 7.788282763692159e-34
+        },
+        {
+          "degree": 5,
+          "sector": "I",
+          "peak_reference_norm": 7.395910653008981e-22,
+          "peak_difference_norm": 6.041069065765555e-31
+        },
+        {
+          "degree": 5,
+          "sector": "E",
+          "peak_reference_norm": 1.1780647439673636e-22,
+          "peak_difference_norm": 1.0207605447958188e-31
+        },
+        {
+          "degree": 5,
+          "sector": "B",
+          "peak_reference_norm": 9.016505244648085e-25,
+          "peak_difference_norm": 2.5003974349629803e-33
+        },
+        {
+          "degree": 5,
+          "sector": "V",
+          "peak_reference_norm": 1.1350603793799715e-24,
+          "peak_difference_norm": 9.007900451198485e-34
+        },
+        {
+          "degree": 6,
+          "sector": "I",
+          "peak_reference_norm": 1.5320504996381592e-22,
+          "peak_difference_norm": 1.2190865649982835e-31
+        },
+        {
+          "degree": 6,
+          "sector": "E",
+          "peak_reference_norm": 2.9913144574307494e-22,
+          "peak_difference_norm": 2.3597200758011524e-31
+        },
+        {
+          "degree": 6,
+          "sector": "B",
+          "peak_reference_norm": 1.5846713820553042e-23,
+          "peak_difference_norm": 1.293124694780998e-32
+        },
+        {
+          "degree": 6,
+          "sector": "V",
+          "peak_reference_norm": 3.0108998856272547e-24,
+          "peak_difference_norm": 2.4407865713574166e-33
+        },
+        {
+          "degree": 7,
+          "sector": "I",
+          "peak_reference_norm": 9.439607002725178e-22,
+          "peak_difference_norm": 7.538658580616097e-31
+        },
+        {
+          "degree": 7,
+          "sector": "E",
+          "peak_reference_norm": 7.628516509724835e-23,
+          "peak_difference_norm": 6.116283382461663e-32
+        },
+        {
+          "degree": 7,
+          "sector": "B",
+          "peak_reference_norm": 1.6338865676504429e-24,
+          "peak_difference_norm": 1.9240449861688693e-33
+        },
+        {
+          "degree": 7,
+          "sector": "V",
+          "peak_reference_norm": 3.613253796006031e-24,
+          "peak_difference_norm": 2.8630972533928197e-33
+        },
+        {
+          "degree": 8,
+          "sector": "I",
+          "peak_reference_norm": 8.437654629334137e-22,
+          "peak_difference_norm": 6.711383840551783e-31
+        },
+        {
+          "degree": 8,
+          "sector": "E",
+          "peak_reference_norm": 2.679666760069301e-22,
+          "peak_difference_norm": 2.131957029144099e-31
+        },
+        {
+          "degree": 8,
+          "sector": "B",
+          "peak_reference_norm": 4.661783142962244e-24,
+          "peak_difference_norm": 3.8351237875418215e-33
+        },
+        {
+          "degree": 8,
+          "sector": "V",
+          "peak_reference_norm": 1.8604798063152667e-24,
+          "peak_difference_norm": 1.4808317163003116e-33
+        }
+      ]
+    },
+    {
+      "fixture": "cold",
+      "sectors": [
+        {
+          "sector": "I",
+          "peak_reference_norm": 2.476116299792823e-10,
+          "peak_difference_norm": 2.345955978219283e-17,
+          "relative_discrepancy": 9.474336800802005e-08,
+          "numerically_resolved": true,
+          "absolute_roundoff_floor": 3.480074286195218e-14,
+          "meets_accuracy_gate": true
+        },
+        {
+          "sector": "E",
+          "peak_reference_norm": 1.0013804832412676e-10,
+          "peak_difference_norm": 2.394323210267909e-19,
+          "relative_discrepancy": 2.3910224438546732e-09,
+          "numerically_resolved": true,
+          "absolute_roundoff_floor": 3.480074286195218e-14,
+          "meets_accuracy_gate": true
+        },
+        {
+          "sector": "B",
+          "peak_reference_norm": 1.87113531888962e-21,
+          "peak_difference_norm": 2.529760308701231e-21,
+          "relative_discrepancy": null,
+          "numerically_resolved": false,
+          "absolute_roundoff_floor": 3.480074286195218e-14,
+          "meets_accuracy_gate": true
+        },
+        {
+          "sector": "V",
+          "peak_reference_norm": 8.401996395046584e-24,
+          "peak_difference_norm": 2.6301925794736427e-30,
+          "relative_discrepancy": null,
+          "numerically_resolved": false,
+          "absolute_roundoff_floor": 3.480074286195218e-14,
+          "meets_accuracy_gate": true
+        },
+        {
+          "sector": "plasma_temperature",
+          "peak_reference_norm": 3.272577317116931e-23,
+          "peak_difference_norm": 6.589912727327784e-23,
+          "relative_discrepancy": null,
+          "numerically_resolved": false,
+          "absolute_roundoff_floor": 3.480074286195218e-14,
+          "meets_accuracy_gate": true
+        },
+        {
+          "sector": "plasma_velocity",
+          "peak_reference_norm": 6.632522212192956e-14,
+          "peak_difference_norm": 1.6208189595462383e-19,
+          "relative_discrepancy": 2.443744487680104e-06,
+          "numerically_resolved": true,
+          "absolute_roundoff_floor": 3.480074286195218e-14,
+          "meets_accuracy_gate": true
+        }
+      ],
+      "degree_diagnostics": [
+        {
+          "degree": 0,
+          "sector": "I",
+          "peak_reference_norm": 1.7106448796927022e-17,
+          "peak_difference_norm": 2.3383462568321323e-17
+        },
+        {
+          "degree": 0,
+          "sector": "V",
+          "peak_reference_norm": 2.4427663291754708e-24,
+          "peak_difference_norm": 1.0558846645873567e-33
+        },
+        {
+          "degree": 1,
+          "sector": "I",
+          "peak_reference_norm": 8.829880622696225e-15,
+          "peak_difference_norm": 1.8878918874783575e-18
+        },
+        {
+          "degree": 1,
+          "sector": "V",
+          "peak_reference_norm": 1.2380526480229182e-24,
+          "peak_difference_norm": 2.6301924605911954e-30
+        },
+        {
+          "degree": 2,
+          "sector": "I",
+          "peak_reference_norm": 2.476116299011468e-10,
+          "peak_difference_norm": 2.7108107350405404e-19
+        },
+        {
+          "degree": 2,
+          "sector": "E",
+          "peak_reference_norm": 1.0013804827437864e-10,
+          "peak_difference_norm": 2.394323210257349e-19
+        },
+        {
+          "degree": 2,
+          "sector": "B",
+          "peak_reference_norm": 1.8711353187174065e-21,
+          "peak_difference_norm": 2.5297603084139196e-21
+        },
+        {
+          "degree": 2,
+          "sector": "V",
+          "peak_reference_norm": 9.192576548568807e-25,
+          "peak_difference_norm": 5.432762498734722e-34
+        },
+        {
+          "degree": 3,
+          "sector": "I",
+          "peak_reference_norm": 5.242687947406484e-15,
+          "peak_difference_norm": 3.683665640070067e-24
+        },
+        {
+          "degree": 3,
+          "sector": "E",
+          "peak_reference_norm": 3.1564790308903105e-15,
+          "peak_difference_norm": 1.6041495587919887e-24
+        },
+        {
+          "degree": 3,
+          "sector": "B",
+          "peak_reference_norm": 1.7602279403544827e-24,
+          "peak_difference_norm": 3.8126872671456416e-26
+        },
+        {
+          "degree": 3,
+          "sector": "V",
+          "peak_reference_norm": 3.324373323275241e-24,
+          "peak_difference_norm": 2.6036407611891585e-33
+        },
+        {
+          "degree": 4,
+          "sector": "I",
+          "peak_reference_norm": 5.117544259536595e-20,
+          "peak_difference_norm": 4.0973527808601394e-29
+        },
+        {
+          "degree": 4,
+          "sector": "E",
+          "peak_reference_norm": 2.1102346733629944e-20,
+          "peak_difference_norm": 1.6027420253613196e-29
+        },
+        {
+          "degree": 4,
+          "sector": "B",
+          "peak_reference_norm": 2.4923890336300344e-23,
+          "peak_difference_norm": 1.983034087255292e-31
+        },
+        {
+          "degree": 4,
+          "sector": "V",
+          "peak_reference_norm": 1.5189545491796825e-24,
+          "peak_difference_norm": 1.2279366325531498e-33
+        },
+        {
+          "degree": 5,
+          "sector": "I",
+          "peak_reference_norm": 1.062521724423561e-21,
+          "peak_difference_norm": 8.682797174790391e-31
+        },
+        {
+          "degree": 5,
+          "sector": "E",
+          "peak_reference_norm": 1.0200080715367454e-22,
+          "peak_difference_norm": 1.4197046212624696e-31
+        },
+        {
+          "degree": 5,
+          "sector": "B",
+          "peak_reference_norm": 9.62858810993428e-24,
+          "peak_difference_norm": 7.822687086756032e-33
+        },
+        {
+          "degree": 5,
+          "sector": "V",
+          "peak_reference_norm": 3.1097544640542808e-24,
+          "peak_difference_norm": 2.467935034968513e-33
+        },
+        {
+          "degree": 6,
+          "sector": "I",
+          "peak_reference_norm": 2.11788085757616e-22,
+          "peak_difference_norm": 1.6841230563882866e-31
+        },
+        {
+          "degree": 6,
+          "sector": "E",
+          "peak_reference_norm": 3.7456380375284376e-22,
+          "peak_difference_norm": 2.954614996127276e-31
+        },
+        {
+          "degree": 6,
+          "sector": "B",
+          "peak_reference_norm": 3.585845114975806e-23,
+          "peak_difference_norm": 2.915974725634793e-32
+        },
+        {
+          "degree": 6,
+          "sector": "V",
+          "peak_reference_norm": 3.0214644466289358e-25,
+          "peak_difference_norm": 2.449353463059632e-34
+        },
+        {
+          "degree": 7,
+          "sector": "I",
+          "peak_reference_norm": 1.2317568714190822e-21,
+          "peak_difference_norm": 9.835350915474545e-31
+        },
+        {
+          "degree": 7,
+          "sector": "E",
+          "peak_reference_norm": 1.5553229816754944e-22,
+          "peak_difference_norm": 1.2295170955484462e-31
+        },
+        {
+          "degree": 7,
+          "sector": "B",
+          "peak_reference_norm": 4.5190457942534886e-23,
+          "peak_difference_norm": 3.5850955308367304e-32
+        },
+        {
+          "degree": 7,
+          "sector": "V",
+          "peak_reference_norm": 2.414888215419998e-24,
+          "peak_difference_norm": 1.913545614843177e-33
+        },
+        {
+          "degree": 8,
+          "sector": "I",
+          "peak_reference_norm": 6.75512113724845e-22,
+          "peak_difference_norm": 5.372990520947304e-31
+        },
+        {
+          "degree": 8,
+          "sector": "E",
+          "peak_reference_norm": 2.469596468715527e-22,
+          "peak_difference_norm": 1.964356596439182e-31
+        },
+        {
+          "degree": 8,
+          "sector": "B",
+          "peak_reference_norm": 8.301692630494201e-24,
+          "peak_difference_norm": 6.670099672818536e-33
+        },
+        {
+          "degree": 8,
+          "sector": "V",
+          "peak_reference_norm": 5.794065682525412e-24,
+          "peak_difference_norm": 4.6117265325370506e-33
+        }
+      ]
+    },
+    {
+      "fixture": "synthetic",
+      "sectors": [
+        {
+          "sector": "I",
+          "peak_reference_norm": 0.0006896782929837279,
+          "peak_difference_norm": 5.105211181528728e-14,
+          "relative_discrepancy": 7.402308052124209e-11,
+          "numerically_resolved": true,
+          "absolute_roundoff_floor": 4.127619448172552e-14,
+          "meets_accuracy_gate": true
+        },
+        {
+          "sector": "E",
+          "peak_reference_norm": 7.887937850702415e-05,
+          "peak_difference_norm": 2.111077901129015e-17,
+          "relative_discrepancy": 2.6763368843493427e-13,
+          "numerically_resolved": true,
+          "absolute_roundoff_floor": 4.127619448172552e-14,
+          "meets_accuracy_gate": true
+        },
+        {
+          "sector": "B",
+          "peak_reference_norm": 5.258625233801624e-05,
+          "peak_difference_norm": 1.327726296337857e-17,
+          "relative_discrepancy": 2.524854381718323e-13,
+          "numerically_resolved": true,
+          "absolute_roundoff_floor": 4.127619448172552e-14,
+          "meets_accuracy_gate": true
+        },
+        {
+          "sector": "V",
+          "peak_reference_norm": 0.0004051415419067165,
+          "peak_difference_norm": 1.6813862325201692e-16,
+          "relative_discrepancy": 4.15012053468293e-13,
+          "numerically_resolved": true,
+          "absolute_roundoff_floor": 4.127619448172552e-14,
+          "meets_accuracy_gate": true
+        },
+        {
+          "sector": "plasma_temperature",
+          "peak_reference_norm": 2.530555453987129e-07,
+          "peak_difference_norm": 4.635925630766167e-19,
+          "relative_discrepancy": 1.8319794665877914e-12,
+          "numerically_resolved": true,
+          "absolute_roundoff_floor": 4.127619448172552e-14,
+          "meets_accuracy_gate": true
+        },
+        {
+          "sector": "plasma_velocity",
+          "peak_reference_norm": 6.983167399360536e-06,
+          "peak_difference_norm": 9.02683500249811e-21,
+          "relative_discrepancy": 1.2926562527091527e-15,
+          "numerically_resolved": true,
+          "absolute_roundoff_floor": 4.127619448172552e-14,
+          "meets_accuracy_gate": true
+        }
+      ],
+      "degree_diagnostics": [
+        {
+          "degree": 0,
+          "sector": "I",
+          "peak_reference_norm": 0.0006641221095960231,
+          "peak_difference_norm": 5.105211140535628e-14
+        },
+        {
+          "degree": 0,
+          "sector": "V",
+          "peak_reference_norm": 0.0003873986377285976,
+          "peak_difference_norm": 1.4886455283667455e-16
+        },
+        {
+          "degree": 1,
+          "sector": "I",
+          "peak_reference_norm": 9.85400927983673e-05,
+          "peak_difference_norm": 6.445698883724006e-17
+        },
+        {
+          "degree": 1,
+          "sector": "V",
+          "peak_reference_norm": 0.00011183235388815229,
+          "peak_difference_norm": 8.570477052907733e-17
+        },
+        {
+          "degree": 2,
+          "sector": "I",
+          "peak_reference_norm": 0.00011549995844692808,
+          "peak_difference_norm": 1.3979313582400746e-17
+        },
+        {
+          "degree": 2,
+          "sector": "E",
+          "peak_reference_norm": 5.774997922346397e-05,
+          "peak_difference_norm": 2.0251741754614393e-17
+        },
+        {
+          "degree": 2,
+          "sector": "B",
+          "peak_reference_norm": 3.849998614897598e-05,
+          "peak_difference_norm": 1.1145868096523506e-17
+        },
+        {
+          "degree": 2,
+          "sector": "V",
+          "peak_reference_norm": 2.8874989611732006e-05,
+          "peak_difference_norm": 3.563511088479156e-18
+        },
+        {
+          "degree": 3,
+          "sector": "I",
+          "peak_reference_norm": 7.321146097679118e-05,
+          "peak_difference_norm": 1.1377630469358396e-17
+        },
+        {
+          "degree": 3,
+          "sector": "E",
+          "peak_reference_norm": 3.660573048839526e-05,
+          "peak_difference_norm": 6.240799756420689e-18
+        },
+        {
+          "degree": 3,
+          "sector": "B",
+          "peak_reference_norm": 2.4403820325597035e-05,
+          "peak_difference_norm": 3.394977832737758e-18
+        },
+        {
+          "degree": 3,
+          "sector": "V",
+          "peak_reference_norm": 1.8302865244197727e-05,
+          "peak_difference_norm": 2.4169952534429556e-18
+        },
+        {
+          "degree": 4,
+          "sector": "I",
+          "peak_reference_norm": 5.1653151697146654e-05,
+          "peak_difference_norm": 7.22965538854287e-18
+        },
+        {
+          "degree": 4,
+          "sector": "E",
+          "peak_reference_norm": 2.5826575848573046e-05,
+          "peak_difference_norm": 4.402297456766244e-18
+        },
+        {
+          "degree": 4,
+          "sector": "B",
+          "peak_reference_norm": 1.7217717232382147e-05,
+          "peak_difference_norm": 2.7931820664806217e-18
+        },
+        {
+          "degree": 4,
+          "sector": "V",
+          "peak_reference_norm": 1.2913287924286611e-05,
+          "peak_difference_norm": 2.1555670098413085e-18
+        },
+        {
+          "degree": 5,
+          "sector": "I",
+          "peak_reference_norm": 3.8935028049714555e-05,
+          "peak_difference_norm": 6.96846809198252e-18
+        },
+        {
+          "degree": 5,
+          "sector": "E",
+          "peak_reference_norm": 1.9467514024857257e-05,
+          "peak_difference_norm": 3.300797242801057e-18
+        },
+        {
+          "degree": 5,
+          "sector": "B",
+          "peak_reference_norm": 1.297834268323818e-05,
+          "peak_difference_norm": 1.998091470800381e-18
+        },
+        {
+          "degree": 5,
+          "sector": "V",
+          "peak_reference_norm": 9.733757012428627e-06,
+          "peak_difference_norm": 1.782810169452089e-18
+        },
+        {
+          "degree": 6,
+          "sector": "I",
+          "peak_reference_norm": 3.069858576649149e-05,
+          "peak_difference_norm": 9.205862073297162e-18
+        },
+        {
+          "degree": 6,
+          "sector": "E",
+          "peak_reference_norm": 1.5349292883245605e-05,
+          "peak_difference_norm": 4.306762769170674e-18
+        },
+        {
+          "degree": 6,
+          "sector": "B",
+          "peak_reference_norm": 1.0232861922163802e-05,
+          "peak_difference_norm": 2.0484726474616965e-18
+        },
+        {
+          "degree": 6,
+          "sector": "V",
+          "peak_reference_norm": 7.67464644162285e-06,
+          "peak_difference_norm": 1.6419798252828765e-18
+        },
+        {
+          "degree": 7,
+          "sector": "I",
+          "peak_reference_norm": 2.5006474537771695e-05,
+          "peak_difference_norm": 7.943093298641752e-18
+        },
+        {
+          "degree": 7,
+          "sector": "E",
+          "peak_reference_norm": 1.250323726888582e-05,
+          "peak_difference_norm": 2.3824177542239634e-18
+        },
+        {
+          "degree": 7,
+          "sector": "B",
+          "peak_reference_norm": 8.33549151259056e-06,
+          "peak_difference_norm": 3.131787162438509e-18
+        },
+        {
+          "degree": 7,
+          "sector": "V",
+          "peak_reference_norm": 6.251618634442921e-06,
+          "peak_difference_norm": 2.5342690496137174e-18
+        },
+        {
+          "degree": 8,
+          "sector": "I",
+          "peak_reference_norm": 2.0879549053273195e-05,
+          "peak_difference_norm": 1.2416025849522626e-17
+        },
+        {
+          "degree": 8,
+          "sector": "E",
+          "peak_reference_norm": 1.0439774526636633e-05,
+          "peak_difference_norm": 3.9759155214055264e-18
+        },
+        {
+          "degree": 8,
+          "sector": "B",
+          "peak_reference_norm": 6.959849684424405e-06,
+          "peak_difference_norm": 3.838084820377929e-18
+        },
+        {
+          "degree": 8,
+          "sector": "V",
+          "peak_reference_norm": 5.219887263318303e-06,
+          "peak_difference_norm": 3.3214439589351314e-18
+        }
+      ]
+    }
+  ],
+  "gate": 0.002,
+  "comparison": "Same response norm and fixed gate as the retained original failed trials.",
+  "common_frequency_domain_only": true,
+  "state": "complete",
+  "finished_utc": "2026-10-07T12:26:02.475820+00:00",
+  "script_sha256": "189e3cf536d65e74398b05809749fcd8e23cf0c9f1cb2c8de075b0a14378b132",
+  "input_hashes": {
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\compare_partitioned.py": "189e3cf536d65e74398b05809749fcd8e23cf0c9f1cb2c8de075b0a14378b132",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\grid_common.py": "df03e91025bf72aeac83cfec23432836ff91e8115bece247b121022cf17b61e1",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\ACCEPTANCE.md": "d6e04797b9a1842f7dced705ca1c2d4fe025510c0f1daae24d3e654418175e2c",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-finite-shift-kernel-20261007\\results\\stage-integrity.json": "941812d77d453a23a6c8ca57e1a68215ae518d0b4d99a8fa1ad92a44305f4191",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\compare_responses.py": "4efe7b1d68c22244a924c783772cc7cab3a7b60426c4e8f2e18056aae0b2166e",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384\\evolution-0.npz": "d3ea3c6c29aa415d41d6cfd3ed2d48a812dbd1fb66b196c31274df37adf3ebe1",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384\\evolution-1.npz": "c355f3a7bf88bfaa185d55cb76a82f47167add98f8c02908a74ab13eeac396bb",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384\\evolution-2.npz": "cfb00ad9f18cfb3f289737992a9cc77924a237f41db05220dbe86ba6cffc02e9",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384\\evolution-3.npz": "691a2505add5068cc3fdfbf5d3a6dd53e2c3f3d920d85cfd5928d22ab30e1766",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384\\evolution-4.npz": "3f281f3d1bd8697fe5b4898435dc2ae91bab012f214f0e370950c48063c65cf6",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384\\evolution-5.npz": "9031b4f3a724ec66cdd4dbb4a8d0f4b92d6223c96acad0d50fa82806f03b616a",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384\\evolution-6.npz": "838b5e9585c069d670fd7122e2ff2866348a25f8c132d2c1d7db160fd9498015",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384\\evolution-7.npz": "a7b32aaf90f57a7b7028ef225b5120819aabd6f220a3a5e35528c7671422c469",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384\\evolution-8.npz": "91e21fcc085e4e7175d78921088a7d0a5b5bb88059da93cb75504225eee5f6fe",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384\\status.json": "fdcca9d582302dcb4555179ccb5b94d120c30eacc6680ac866fc467190460da3",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384-elastic\\evolution-0.npz": "4d1ff934129381ad3eea15c319af56fbb7877e2e4a6ee54191a867f9ac9198b9",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384-elastic\\evolution-1.npz": "f9400d95bae5430d53ddc5250dcbeacf45f64a7598952c6787d7eafd1e8cb8d7",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384-elastic\\evolution-2.npz": "bece8e7c00d40b3a06ae6b63a2cfe63dae1d404434492ec98c87e05bd634880d",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384-elastic\\evolution-3.npz": "daa4297c5ae5d7c3532d6fee979d80f5cff2283716e1494e45f888354563a514",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384-elastic\\evolution-4.npz": "c045a46cef98e20dd3388d3d670c69b2d762c74fe45ad0e2ff7832cab96b3d2a",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384-elastic\\evolution-5.npz": "a9be3479e95562872a8c61d718883d65f73cd5c6fcdb7b0e19715b369936972b",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384-elastic\\evolution-6.npz": "7ba987f8e791fcb4ddae7d03e788ff91aa63ff3ee8d44d04e0d0a4e6f287d50e",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384-elastic\\evolution-7.npz": "9eb219f3c12eb5db488ccc59fd9a2f1cdd73211a25bd5bff30659cee947b0285",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384-elastic\\evolution-8.npz": "23a7165d2285ed67082ac57dc7507ffc2561ba3f153632d7430e4062bd1a4c3c",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384-elastic\\status.json": "07e504480a2c2406d410064b6320d45c98b1a4322c4e9a2b5740408b5bcfcffe",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384-refined\\evolution-0.npz": "2b9fb65fb57950686477b2648f9356c0762945fb1e68998a15d4384d3cfe01fe",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384-refined\\evolution-1.npz": "7068d452410c01e25e49ba5420cde6ae8630b126e0c51c7e6bdefe27068b612b",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384-refined\\evolution-2.npz": "80891cc1955582b19600f7172ab8cf1602fcfa57291729703718c2d2ad1cb440",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384-refined\\evolution-3.npz": "a650c798535c5fc1e14290adca11aead3fd59dcb72dcd3d55bf2612805a184b7",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384-refined\\evolution-4.npz": "5f0f00ad6c04e37f761d42be479a1351df8f65b5f995ccf8d54dcbc1924abe9c",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384-refined\\evolution-5.npz": "b268c2cd5b11188e2a6ea1e7c0ac6f9f402a528817c3a362dfe08b49f40f4c2d",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384-refined\\evolution-6.npz": "1a78538f4a049499b85a33df11b6410c4c0234e9b326a3cfea97ad5a63297d70",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384-refined\\evolution-7.npz": "38c0b3c191601046d0808269b91f697f2fd7c2cc59b2601c7bbb90c12750d521",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384-refined\\evolution-8.npz": "543a7c39ea49d30231cbf45b0855e53a9ebbb23ebccbd6bebfe495554e01988c",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384-refined\\status.json": "20ed730c9614a2b5ebc295ede8ecf757031ebb037159dc887c852d03326731ca",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384-refined-elastic\\evolution-0.npz": "4d1ff934129381ad3eea15c319af56fbb7877e2e4a6ee54191a867f9ac9198b9",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384-refined-elastic\\evolution-1.npz": "f9400d95bae5430d53ddc5250dcbeacf45f64a7598952c6787d7eafd1e8cb8d7",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384-refined-elastic\\evolution-2.npz": "bece8e7c00d40b3a06ae6b63a2cfe63dae1d404434492ec98c87e05bd634880d",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384-refined-elastic\\evolution-3.npz": "daa4297c5ae5d7c3532d6fee979d80f5cff2283716e1494e45f888354563a514",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384-refined-elastic\\evolution-4.npz": "c045a46cef98e20dd3388d3d670c69b2d762c74fe45ad0e2ff7832cab96b3d2a",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384-refined-elastic\\evolution-5.npz": "a9be3479e95562872a8c61d718883d65f73cd5c6fcdb7b0e19715b369936972b",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384-refined-elastic\\evolution-6.npz": "7ba987f8e791fcb4ddae7d03e788ff91aa63ff3ee8d44d04e0d0a4e6f287d50e",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384-refined-elastic\\evolution-7.npz": "9eb219f3c12eb5db488ccc59fd9a2f1cdd73211a25bd5bff30659cee947b0285",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384-refined-elastic\\evolution-8.npz": "23a7165d2285ed67082ac57dc7507ffc2561ba3f153632d7430e4062bd1a4c3c",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\cold-split-384-refined-elastic\\status.json": "ee9630f02c6e689616d7a8d82390978eb1d4b50a7ab5cc8db2bb251c19d160a1",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384\\evolution-0.npz": "4e52d2eaed7d5365b6fa46b3a8acb6a9d30dd6c09a0111a34a01c54eec5b9e64",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384\\evolution-1.npz": "0f5bed78a231a62b82140469b94e3ed14c3d0d5ad992d49cd2ab539485e91f57",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384\\evolution-2.npz": "9cd4a3b588300fa270287fe1902487292744c9ff7a99cd7fb4f0833ded1f1a99",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384\\evolution-3.npz": "dc253d6cc2bfcd5ab8cdeba26dd08e327f682ce668fac9d06932e3a52a951c30",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384\\evolution-4.npz": "9bd7897b77d6d5770b89891658e7d4a9e028aa5ec51a96be2ae52cba08c2e206",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384\\evolution-5.npz": "ded1fef198be55caa7d446932fa4d659b40f3ea82ea8526cc40d470a198c5a7f",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384\\evolution-6.npz": "7ab58668aa1d699d9aab1c5af7a4fa7541a3f1c3804e504e941806442e5bd3e2",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384\\evolution-7.npz": "db1360e9db6870ae07b28a1b5a469a4c2e148ff4cbc53a098df27eca1f5b272d",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384\\evolution-8.npz": "8e3bd30b3cf98f4f4a7272abd04d59d0704d9c6da2a2fa254c593fbb35615613",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384\\status.json": "257c4ae8cfa22cceca482067365dccf209440936f2ab904974d732a255f40c99",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384-elastic\\evolution-0.npz": "9febfab1ea564a96ad8ff22034e9dbdd700b43462bec376b97e9c65613c78a42",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384-elastic\\evolution-1.npz": "917ec7c929f7d7ff9fcb902cf6ac27d595eb6dbccf104732a8d49b43ddb6487f",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384-elastic\\evolution-2.npz": "fa88bba669b7829cdcd8844e12fa3f3f7cf6efc989eaec8a6fde09996ec184aa",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384-elastic\\evolution-3.npz": "2487949acec68143a509d1d7cf8563fe583997a13b6041ca30a6afdf8d3d261c",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384-elastic\\evolution-4.npz": "4682a078abb62737d80debfbd5fe110af0157334b33a117c21599bb370ed2b4c",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384-elastic\\evolution-5.npz": "d02704451901d170aa2048713e372c613f61837d239ac6664e60b0018eda53f5",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384-elastic\\evolution-6.npz": "4587cf4889084f64052382b278b2a62426285f077e4e939ffc459babb53b40e7",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384-elastic\\evolution-7.npz": "c590b7d6deeda517d2a79422730c6445b66d58cc60b653a54f8e9cc9026cec8e",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384-elastic\\evolution-8.npz": "6876127172facf1ac92c201b1592381e0ceac9c236fccf33fd0b70094989e8a2",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384-elastic\\status.json": "b272f2fe3781581fdbeb30b487f09440b4156712065a0d4ee235d6595bbf0c4e",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384-refined\\evolution-0.npz": "bb708136d5f64e12733b2e79ad093040b29d60cd95c46e2faff7fafa6024cf25",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384-refined\\evolution-1.npz": "db74f100a5136468ea0cd957384789ef8135a9b680572776386b917fcb46101f",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384-refined\\evolution-2.npz": "1a42ea91f6515284d579762ee4b744cbe81fdcc78f07003ac7d65473c0cf179f",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384-refined\\evolution-3.npz": "6c229034bd87ef03ed7d61e850d01fb805862dd012c817f0bda58de21b8e20c1",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384-refined\\evolution-4.npz": "c8d56972387292bbafd464cd92e390154438401955e705cc0f762dab6eb2cb08",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384-refined\\evolution-5.npz": "ea68a791f690933d1496edcc70b857f26dd74e5c02c4130004018cb505ec26d6",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384-refined\\evolution-6.npz": "c5cc85d8c6d814c7f0a5c0455760a76625a02fdfb811ccc1b619fc79c5e236a8",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384-refined\\evolution-7.npz": "fd91c6781ba9e8c9d5971d007c514db93455bb7dea1fd80af582b25f38bb370e",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384-refined\\evolution-8.npz": "b8d40f91226c65e1ea29e76760512d1079d670bd3a112b8fbea5e5bc02782e8e",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384-refined\\status.json": "5daa253def9ff7434305a00304bbef075254ede48bc12435f85300273cf9cc3a",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384-refined-elastic\\evolution-0.npz": "9febfab1ea564a96ad8ff22034e9dbdd700b43462bec376b97e9c65613c78a42",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384-refined-elastic\\evolution-1.npz": "917ec7c929f7d7ff9fcb902cf6ac27d595eb6dbccf104732a8d49b43ddb6487f",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384-refined-elastic\\evolution-2.npz": "fa88bba669b7829cdcd8844e12fa3f3f7cf6efc989eaec8a6fde09996ec184aa",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384-refined-elastic\\evolution-3.npz": "2487949acec68143a509d1d7cf8563fe583997a13b6041ca30a6afdf8d3d261c",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384-refined-elastic\\evolution-4.npz": "4682a078abb62737d80debfbd5fe110af0157334b33a117c21599bb370ed2b4c",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384-refined-elastic\\evolution-5.npz": "d02704451901d170aa2048713e372c613f61837d239ac6664e60b0018eda53f5",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384-refined-elastic\\evolution-6.npz": "4587cf4889084f64052382b278b2a62426285f077e4e939ffc459babb53b40e7",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384-refined-elastic\\evolution-7.npz": "c590b7d6deeda517d2a79422730c6445b66d58cc60b653a54f8e9cc9026cec8e",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384-refined-elastic\\evolution-8.npz": "6876127172facf1ac92c201b1592381e0ceac9c236fccf33fd0b70094989e8a2",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\heavy-split-384-refined-elastic\\status.json": "e02b063df43de156f2e53dbd9a7fd9f584a8e47da7809966f91e273e4241821a",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\synthetic-split-384\\evolution-0.npz": "a0bf3cfb0742eccfd846451aa618a2a492d32f31510edaa391bc20ef874f7fe9",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\synthetic-split-384\\evolution-1.npz": "bfa3feecbca04753c9a7602b4cab7948e35e749c1ee1c1d7fbc022e4597f40bb",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\synthetic-split-384\\evolution-2.npz": "b2457138950d54afce66f74880ee903071ab612812ff2506db00c96944222e67",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\synthetic-split-384\\evolution-3.npz": "0273738b7d7ff94b76e4b7369bcd1ceb9dee113bd19b178a7aaad3dc3526c534",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\synthetic-split-384\\evolution-4.npz": "3527bec589ad850d88a85880fa66728758e9b847396980049a1808f509541bbd",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\synthetic-split-384\\evolution-5.npz": "49e62ff5f6e5647f85b8a4bfa822c949622da6d73e6d1af9e9c85bf33d8ffeab",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\synthetic-split-384\\evolution-6.npz": "cacd11cbf90f52680506bcfb11264309adb9cc7e4e4c4c0bef743703a171a3ac",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\synthetic-split-384\\evolution-7.npz": "8923763267abc90ef4540f4bf04a2fdd4302b5ebe5907ec6ecdbb0ed38195e83",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\synthetic-split-384\\evolution-8.npz": "0773544f86f6035d0dc1a4e66daec6ef151c879df32b03243e6652900a9fbf58",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\synthetic-split-384\\status.json": "59e43ff060e4bc09b8a3c94cfaf74da136d6e9596dadc122aa450f6697eab0c5",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\synthetic-split-384-refined\\evolution-0.npz": "c725ebbb135d4845befe4ef3e958be60b8068ddd23f3e983cabdb13a4a002f17",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\synthetic-split-384-refined\\evolution-1.npz": "8e4acdee65d1b1e78c30c5c9d21fcafa1bf6bf53eaf11a2e42b1e59a0c5ff156",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\synthetic-split-384-refined\\evolution-2.npz": "2123641495c842273d87f1c0a2106ddcc1b03fb97255bd697945cc4fbeb3abd1",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\synthetic-split-384-refined\\evolution-3.npz": "d1a08bfabbad7b525ecc898d585423c05bc64b1123740e9685a160ea479f8727",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\synthetic-split-384-refined\\evolution-4.npz": "da811f96f88a534ff1c5cfc46dfbd1c3522230996d49b42b115b9020bd92abee",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\synthetic-split-384-refined\\evolution-5.npz": "4c0ccf96e76201b0e16f7cfeacfec0f571d133f67ad2c88e32cb6ad434d760e9",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\synthetic-split-384-refined\\evolution-6.npz": "c477d2cb0813385ad88262a72b27e30bec0945ab2335ee24bf8299fa5defcb24",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\synthetic-split-384-refined\\evolution-7.npz": "0b82a940e06344085a251e1a615e3e729c08cce1d10b2c1055301c4feab7acc5",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\synthetic-split-384-refined\\evolution-8.npz": "fbd0db19454345b0979ed66aa3852e720ee3db2bd4b367e2e6bcf535ba133fe8",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\runs\\synthetic-split-384-refined\\status.json": "2bb51e7be6d5436e55be89ee5cd284d20dfeb5bb77d42cad9aae78bdc55ad71c"
+  }
+}

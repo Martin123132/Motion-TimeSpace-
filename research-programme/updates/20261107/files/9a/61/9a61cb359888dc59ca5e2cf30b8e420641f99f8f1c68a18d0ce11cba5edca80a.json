@@ -1,0 +1,114 @@
+{
+  "model": "heavy",
+  "controls": [
+    {
+      "label": "base",
+      "method": "DOP853",
+      "rtol": 2e-10,
+      "atol": 2e-12,
+      "nfev": 2357,
+      "elapsed_seconds": 2.17416999998386
+    },
+    {
+      "label": "fine",
+      "method": "DOP853",
+      "rtol": 2e-12,
+      "atol": 2e-14,
+      "nfev": 2531,
+      "elapsed_seconds": 2.504465200006962
+    },
+    {
+      "label": "independent",
+      "method": "RK45",
+      "rtol": 2e-11,
+      "atol": 1.9999999999999998e-13,
+      "nfev": 2468,
+      "elapsed_seconds": 2.2460710000013933
+    }
+  ],
+  "comparisons": [
+    {
+      "label": "base",
+      "quantity": "hubble",
+      "error": 3.8425308398613114e-18
+    },
+    {
+      "label": "base",
+      "quantity": "slow_coordinates",
+      "error": 5.440435962729066e-16
+    },
+    {
+      "label": "base",
+      "quantity": "clock",
+      "error": 7.148623235031061e-16
+    },
+    {
+      "label": "base",
+      "quantity": "slow_error_radius",
+      "error": 6.816424980629683e-11
+    },
+    {
+      "label": "base",
+      "quantity": "hubble_error",
+      "error": 7.243626848063832e-16
+    },
+    {
+      "label": "base",
+      "quantity": "clock_error",
+      "error": 3.27259263837004e-08
+    },
+    {
+      "label": "independent",
+      "quantity": "hubble",
+      "error": 7.177847608860931e-14
+    },
+    {
+      "label": "independent",
+      "quantity": "slow_coordinates",
+      "error": 2.275224680261481e-11
+    },
+    {
+      "label": "independent",
+      "quantity": "clock",
+      "error": 7.73302318449485e-13
+    },
+    {
+      "label": "independent",
+      "quantity": "slow_error_radius",
+      "error": 9.329947022173478e-12
+    },
+    {
+      "label": "independent",
+      "quantity": "hubble_error",
+      "error": 3.4824506365936673e-16
+    },
+    {
+      "label": "independent",
+      "quantity": "clock_error",
+      "error": 4.31943675339242e-09
+    }
+  ],
+  "cold_relative_uncertainty": {
+    "hubble": 7.259940689792255e-07,
+    "slow_energy_coordinates": 2.477098487777652e-07,
+    "clock": 1.8464022910821416e-06,
+    "heavy_log_density": 3.18368934896095e-06
+  },
+  "cold_uncertainty_gate_pass": true,
+  "replay": {
+    "points": 24685,
+    "nfev": 41894,
+    "slow_enclosure_relative_excess": 0.0,
+    "hubble_enclosure_relative_excess": -1.1280489350415367e-07,
+    "clock_enclosure_relative_excess": 0.0,
+    "legacy_hubble_relative_difference": 1.8351223936188026e-11,
+    "initial_fields_velocities_clock_preserved": true,
+    "reference_uses_same_repaired_thermal_source": true,
+    "invariant_drift_max": 8.165879924863523e-08,
+    "derived_drift_bound": 1.5593125561279916e-06,
+    "invariant_excess": 0.0
+  },
+  "thermal_source_qualified": true,
+  "phase_resolved_late_history": false,
+  "original_scattering_bank_changed": false
+}

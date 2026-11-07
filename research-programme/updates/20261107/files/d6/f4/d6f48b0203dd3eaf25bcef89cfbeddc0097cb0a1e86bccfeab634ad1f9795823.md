@@ -1,0 +1,82 @@
+# Stage177: an exact decomposition of the saved stencil discrepancy
+
+This is a post-test diagnostic, not a new frozen prediction or a revised fit.
+Let t=ln(theta/theta0), with the microscopic source functional linear in the
+incident departure h. Include all quadrature weights in the linear operator A:
+
+    M(t)=A(t)h(t), F(t)=A(t)h(0), H(t)=M(t)-F(t).
+
+M and F are the saved moving/fixed branches. Both use the same microscopic
+parameters at t; H includes ALL history-dependent response, not just an error.
+At the anchor H(0)=0. For a half-width s,
+
+    C_s[V]=(V(+s)-2V(0)+V(-s))/s^2,
+    J_s[V]=(V(+s)-V(-s))/(2s),
+    DeltaC[V]=C_.01[V]-C_.005[V].
+
+Linearity gives EXACT finite-difference identities on the saved vectors:
+
+    C_s[M]=C_s[F]+C_s[H],
+    DeltaC[M]=DeltaC[F]+DeltaC[H].
+
+The matched MTS increment is the sum of difference, virtual and state terms.
+Its DeltaC likewise splits exactly into those three vectors. Norms do not add.
+In the inherited mass-dual photon metric, define the signed contribution
+
+    p(component)=<DeltaC_component,DeltaC_matched>/||DeltaC_matched||^2.
+
+These contributions sum to1 when the vectors close. They can be negative or
+larger than1 because cancellation matters. Also report the sum of component
+norms divided by the matched norm, and angle/electron projections. These are
+algebraic attributions, not independent statistical or causal effects.
+
+The frozen prediction's step sensitivity separates exactly as
+
+    P2_coarse-P2_fine =
+        delta*(J_.01-J_.005) + delta^2*(C_.01-C_.005)/2.
+
+Use the original target norm for prediction sensitivity and the original fine
+curvature norm for the1% curvature gate; never exchange these denominators.
+
+## What moving-minus-fixed cannot identify by itself
+
+With h_plus=h(+s), h_minus=h(-s), A_plus=A(+s), A_minus=A(-s),
+
+    C_s[M]-C_s[F] =
+        (A_plus-A_minus)*J_s[h]/s
+        + (A_plus+A_minus)*C_s[h]/2.
+
+The first term is mixed operator/history evolution; the second transmits
+incident-history curvature. Both occur even for a perfectly physical history.
+The existing bank contains A_plus*h_plus, A_minus*h_minus and A_plus/minus*h0,
+but not the crossed actions A_plus*h_minus and A_minus*h_plus. Consequently the
+two terms above are not individually determined by these saved outputs alone.
+
+If crossed actions are evaluated later, the exact finite-width separation is
+
+    mixed = (S_plus_plus-S_plus_minus-S_minus_plus+S_minus_minus)/(2s^2),
+    history_curvature =
+        (S_plus_plus+S_plus_minus+S_minus_plus+S_minus_minus
+         -2F_plus-2F_minus)/(2s^2).
+
+Their sum is the measured history-dependent curvature. This is a way to test
+the mechanism without smoothing the history or fitting a temperature law.
+
+Native histories are linearly interpolated in expansion coordinate u, with
+t=-Delta u. Inspect knot crossings and one-sided slope jumps before attributing
+anything to interpolation. A knot at the anchor alone does not establish that
+the observed finite-width discrepancy is an artifact: the two stencils span
+multiple saved intervals and contain genuine evolution as well.
+
+The80-digit reconstruction uses the SAME saved binary values. Agreement rules
+out material summation/differencing roundoff at the tested level, not integration
+error or errors already present in the source events.
+
+Local owners:
+- Stage176 saved events, frozen derivatives, target vectors and validation.
+- microscopic-temperature-tangent-20261019/source_tangent.py: paired histories,
+  matched components, twofold primitive representation and photon norm.
+- electron-direction-temperature-average-20261020/stage171_direction_common.py:
+  the unchanged finite-difference and prediction definitions.
+- population-matched-source-20261008/population_common.py: native history
+  interpolation and spectral assembly.

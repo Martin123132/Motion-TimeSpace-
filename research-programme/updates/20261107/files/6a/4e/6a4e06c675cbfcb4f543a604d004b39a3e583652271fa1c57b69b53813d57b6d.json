@@ -1,0 +1,93 @@
+{
+  "state": "complete",
+  "time_utc": "2026-10-06T17:34:15.734572+00:00",
+  "script_sha256": "7b90e08ec09607ab11c12164cac7732636929cc066f87c802269bcecac991cd1",
+  "input_hashes": {
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polar-energy-bound-20261006\\results\\stage-integrity.json": "0983659a4669442251e0ba8ad83a2867612f3a3dc0a3cd112a7560d457efa59e",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polar-hamiltonian-20261006\\polar_energy.py": "8b41a3e46cbcf3ec34a30d90d5f2a6d7e9513469bef8b98d5439db4f6546eca0",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polar-interior-schur-20261006\\interior_common.py": "fd839bf7cc6d16d400a79dd21af9da7dbcb7b7929b5b5daeeda1e6ea9eaaf11c",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polar-interior-schur-20261006\\prove_principal_form_v2.py": "7b90e08ec09607ab11c12164cac7732636929cc066f87c802269bcecac991cd1",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\radial-gravity-stability-20261003\\test_radial_energy.py": "b3e34d1313560be3dc803d80dc5eb5abeaafa940f0e792d116214e97959a89fa",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\self-gravity-20261003\\solve_self_gravity.py": "35adf55501885d1e988a1e48d3a2d7f14670c683e62b1e289fc4c8c094aed3ea",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polar-interior-schur-20261006\\results\\reduced-v2\\status.json": "3369a2d2355dccb4bf95331c296ecd20c7dcc170338bd3946bea2a8b9d633c8d",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polar-interior-schur-20261006\\results\\energy-v2\\status.json": "41c86785e8cbe65700420d1293afa05eb63ca8e1d392b2cc920e0154ffe41cbf"
+  },
+  "exact_checks": [
+    {
+      "name": "phase positive-denominator identity",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "gravity principal coefficient identity",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "mixed principal coefficient identity",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "two-field principal determinant identity",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "scalar Schur pivot cancels all beta denominators",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "gradient square shift",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "scalar principal square completion",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "reconstruction denominator omega",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "phase first lower bound residual",
+      "residual": "0",
+      "passed": true
+    }
+  ],
+  "definitions": {
+    "x": "alpha r^2 b h^2",
+    "y": "alpha r^2 F h_prime^2",
+    "beta": "(7-3F-x-y-2alpha r^2 W)/2",
+    "Omega": "beta+x+y"
+  },
+  "positive_denominator": "D=3(beta+y)^2+x(3y+2F)",
+  "phase_coefficient": "D/(3Omega^2)",
+  "gravity_gradient": "A_ZZ=9beta^2(3y+2F)/(4alpha r^2 D)",
+  "mixed_gradient": "A_Zw=3F h_prime beta(3beta-2F)/(2D)",
+  "gradient_determinant": "9F^2 beta^2/(2alpha r^2 D)",
+  "completed_gradient": "A_ZZ*(Zprime+eta*wprime)^2 + [2F^2/(3y+2F)]*wprime^2",
+  "eta": "2alpha r^2 F h_prime(3beta-2F)/(3beta(3y+2F))",
+  "minimal_assumptions": [
+    "r>0",
+    "alpha>0",
+    "F>0",
+    "beta>0",
+    "real h,h_prime,s"
+  ],
+  "background_box_source": "Stage46 assumptions imply beta>=1004/625,x<=121/625,F>=.7376,y<=492/625 in the body; exterior has x=y=0,beta>=2.",
+  "beta_uniform_lower": "1004/625",
+  "local_phase_uniform_lower_exact": "1008016/1265625",
+  "local_phase_uniform_lower_numeric": 0.7964570864197531,
+  "scalar_principal_pivot_lower_exact": "212521/749375",
+  "scalar_principal_pivot_lower_numeric": 0.2835976647206005,
+  "proof": "x,y>=0 and F,beta>0 imply D>0. The phase coefficient and both completed gradient-square coefficients are positive. This is a pointwise continuum principal-sector statement, not inferred from samples.",
+  "canonical_transformation_claimed": false,
+  "potential_matrix_positive_proved": false,
+  "full_energy_positive_claimed": false,
+  "frequency_or_continuum_gap_claimed": false
+}

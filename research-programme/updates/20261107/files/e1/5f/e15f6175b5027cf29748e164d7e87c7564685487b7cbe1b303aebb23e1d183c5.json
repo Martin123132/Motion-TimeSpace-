@@ -1,0 +1,36 @@
+{
+  "kind": "additive_provenance_correction",
+  "date_utc": "2026-11-07",
+  "state": "annotation_only_predictions_unchanged",
+  "reason": "The later runners wrote their own frozen config before solving, but retained the original result-emission expression digest(ROOT / 'run-config.json'). Their result config_sha256 therefore names the original config rather than their actual config. Keep all completed reports and scripts unchanged; use the actual config and launch/source chain recorded here.",
+  "original_config": "run-config.json",
+  "entries": [
+    {
+      "result": "hierarchy-startstep-result.json",
+      "result_sha256": "a211f4078c4391370fde416952be467fdd6e2423c5c059895747a7e5ec392462",
+      "config": "run-config-startstep.json",
+      "config_sha256": "7154fc5641f06f810a1826e03fd2e19a6a7cc465add9b28b42b02ff075deeaa7",
+      "config_created_utc": "2026-11-07T04:07:34.6889115Z",
+      "result_created_utc": "2026-11-07T04:07:53.2648317Z",
+      "runner": "run_hierarchy_startstep.py",
+      "launch_label": "hierarchy-02",
+      "runner_sha256": "95f11e00d184def21465c80018b28785fd51901e879c232134f8f99ac7de192d",
+      "recorded_config_sha256": "10175a1626f6cdaa3f1c517d251d9eb43ab1e75fcba6b167cbf79fe65f871d1e"
+    },
+    {
+      "result": "hierarchy-balanced-result.json",
+      "result_sha256": "6a0e23914735f65effc91db89b9a9a4da29fa02857b05e7a272ab0c14ce06dc2",
+      "config": "run-config-balanced.json",
+      "config_sha256": "f6e854ffc9618ae54fa8094ae12800baa50188cca1d7f2a8548c80140adba3c6",
+      "config_created_utc": "2026-11-07T04:10:30.5984267Z",
+      "result_created_utc": "2026-11-07T04:11:30.4213140Z",
+      "runner": "run_hierarchy_balanced.py",
+      "launch_label": "hierarchy-03",
+      "runner_sha256": "f62ed5521b198cbde660a0306be0698a95bea545140a30854216cce579f0512e",
+      "recorded_config_sha256": "10175a1626f6cdaa3f1c517d251d9eb43ab1e75fcba6b167cbf79fe65f871d1e"
+    }
+  ],
+  "numerical_outputs_changed": false,
+  "acceptance_gates_changed": false,
+  "no_numerical_rerun": true
+}

@@ -1,0 +1,285 @@
+{
+  "stage": 228,
+  "state": "complete",
+  "finished_at": "2026-10-26T17:42:22.872195+00:00",
+  "models": [
+    {
+      "model": "heavy",
+      "labels": [
+        "NR thermal baseline",
+        "electron EOS increment",
+        "leading EOS approximation"
+      ],
+      "amplitudes": [
+        5.755472902372619e-10,
+        1.7129667636150527e-13,
+        1.7137542358490032e-13
+      ],
+      "maximum_hubble_fractions": [
+        2.1557942063073762e-10,
+        9.484181814631317e-14,
+        9.487630349619273e-14
+      ],
+      "final_hubble_fractions": [
+        -2.1557942063073762e-10,
+        9.425627694092555e-14,
+        9.429039210833848e-14
+      ],
+      "initial_hubble_fractions": [
+        1.6984628321930176e-10,
+        5.055032714310518e-14,
+        5.057356576039061e-14
+      ],
+      "final_proper_time_shifts_seconds": [
+        0.3202068807909681,
+        -0.00021195017089534687,
+        -0.00021202936073940932
+      ],
+      "corrected_final_hubble_fraction": -2.154851643537967e-10,
+      "signed_checks": [
+        {
+          "amplitude": 0.001,
+          "hubble_error": 1.5239991222738087e-07,
+          "clock_error": 6.660454616042804e-07,
+          "heavy_field_error": 8.265724916405109e-07
+        },
+        {
+          "amplitude": 0.0001,
+          "hubble_error": 1.5233143419466795e-09,
+          "clock_error": 6.666213665261388e-09,
+          "heavy_field_error": 8.265985920289797e-09
+        }
+      ],
+      "source_scope": "Leading-chi energy-completed electron EOS; fixed incoming scalar fields; no new photon spectral evolution"
+    },
+    {
+      "model": "cold",
+      "labels": [
+        "NR thermal baseline",
+        "electron EOS increment",
+        "leading EOS approximation"
+      ],
+      "amplitudes": [
+        5.755472902372864e-10,
+        1.7129667636151254e-13,
+        1.7137542358490762e-13
+      ],
+      "maximum_hubble_fractions": [
+        2.140621698286429e-10,
+        9.293897835465522e-14,
+        9.297259399863929e-14
+      ],
+      "final_hubble_fractions": [
+        -2.140621698286429e-10,
+        9.293897835465522e-14,
+        9.297259399863929e-14
+      ],
+      "initial_hubble_fractions": [
+        1.6954832351016723e-10,
+        5.046164718799089e-14,
+        5.048484503799243e-14
+      ],
+      "final_proper_time_shifts_seconds": [
+        0.31841464735243724,
+        -0.0002098256728233469,
+        -0.0002099040453784179
+      ],
+      "corrected_final_hubble_fraction": -2.1396923085028823e-10,
+      "signed_checks": [
+        {
+          "amplitude": 0.001,
+          "hubble_error": 1.47186628211812e-07,
+          "clock_error": 6.562446404724305e-07,
+          "heavy_field_error": 0.0
+        },
+        {
+          "amplitude": 0.0001,
+          "hubble_error": 1.4711102475934228e-09,
+          "clock_error": 6.5650436477896355e-09,
+          "heavy_field_error": 0.0
+        }
+      ],
+      "source_scope": "Leading-chi energy-completed electron EOS; fixed incoming scalar fields; no new photon spectral evolution"
+    }
+  ],
+  "checks": [
+    {
+      "name": "heavy:NR: response step refinement",
+      "value": 5.928078399250679e-16,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:NR: clock step refinement",
+      "value": 2.5111268005325655e-15,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:EOS: response step refinement",
+      "value": 6.015622154509482e-16,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:EOS: clock step refinement",
+      "value": 1.4771565220004741e-15,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:leading_EOS: response step refinement",
+      "value": 8.021600088012728e-16,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:leading_EOS: clock step refinement",
+      "value": 6.331159574079075e-16,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy: original Stage70 NR H response",
+      "value": 2.9640391996253377e-16,
+      "limit": 5e-05,
+      "passed": true
+    },
+    {
+      "name": "heavy: original Stage70 clock response",
+      "value": 5.022253601065117e-16,
+      "limit": 5e-05,
+      "passed": true
+    },
+    {
+      "name": "heavy: all normalized source stress continuity",
+      "value": 1.0122906864711053e-08,
+      "limit": 1e-08,
+      "passed": false
+    },
+    {
+      "name": "heavy: all normalized Raychaudhuri identities",
+      "value": 2.3996626030751405e-08,
+      "limit": 1e-08,
+      "passed": false
+    },
+    {
+      "name": "heavy: signed EOS full variation 0.001",
+      "value": 8.265724916405109e-07,
+      "limit": 5e-05,
+      "passed": true
+    },
+    {
+      "name": "heavy: signed EOS full variation 0.0001",
+      "value": 8.265985920289797e-09,
+      "limit": 5e-05,
+      "passed": true
+    },
+    {
+      "name": "heavy: exact versus leading EOS propagated response",
+      "value": 0.00036381007658883716,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:NR: response step refinement",
+      "value": 0.0,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:NR: clock step refinement",
+      "value": 4.20521602708094e-15,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:EOS: response step refinement",
+      "value": 0.0,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:EOS: clock step refinement",
+      "value": 1.9143451139733864e-15,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:leading_EOS: response step refinement",
+      "value": 0.0,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:leading_EOS: clock step refinement",
+      "value": 1.701771568144708e-15,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold: original Stage70 NR H response",
+      "value": 0.0,
+      "limit": 5e-05,
+      "passed": true
+    },
+    {
+      "name": "cold: original Stage70 clock response",
+      "value": 5.046259232497108e-16,
+      "limit": 5e-05,
+      "passed": true
+    },
+    {
+      "name": "cold: all normalized source stress continuity",
+      "value": 1.023818822364227e-08,
+      "limit": 1e-08,
+      "passed": false
+    },
+    {
+      "name": "cold: all normalized Raychaudhuri identities",
+      "value": 4.561560146638257e-10,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "cold: signed EOS full variation 0.001",
+      "value": 6.562446404724305e-07,
+      "limit": 5e-05,
+      "passed": true
+    },
+    {
+      "name": "cold: signed EOS full variation 0.0001",
+      "value": 6.5650436477896355e-09,
+      "limit": 5e-05,
+      "passed": true
+    },
+    {
+      "name": "cold: exact versus leading EOS propagated response",
+      "value": 0.0003645380669374285,
+      "limit": 0.01,
+      "passed": true
+    }
+  ],
+  "failed": [
+    {
+      "name": "heavy: all normalized source stress continuity",
+      "value": 1.0122906864711053e-08,
+      "limit": 1e-08,
+      "passed": false
+    },
+    {
+      "name": "heavy: all normalized Raychaudhuri identities",
+      "value": 2.3996626030751405e-08,
+      "limit": 1e-08,
+      "passed": false
+    },
+    {
+      "name": "cold: all normalized source stress continuity",
+      "value": 1.023818822364227e-08,
+      "limit": 1e-08,
+      "passed": false
+    }
+  ],
+  "qualified": false,
+  "inputs_rehashed": 101
+}

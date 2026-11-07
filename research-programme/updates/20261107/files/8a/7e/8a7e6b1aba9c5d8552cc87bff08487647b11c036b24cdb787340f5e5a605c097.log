@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\validate_annular_wave_flux_events_20260929.py", line 62, in <module>
+    main()
+    ~~~~^^
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\validate_annular_wave_flux_events_20260929.py", line 26, in main
+    result, diagnostics = wave.integrate(order, order, (1, 5), perf_counter()+300, lambda stage: None)
+                          ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\annular_wave_flux_form_v2_20260929.py", line 298, in integrate
+    result, diagnostic = self.fixed_label(label, radial_order, shape)
+                         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\annular_wave_flux_form_v2_20260929.py", line 240, in fixed_label
+    interior = self.evaluate(data, offsets, np.repeat(cells, radial_order),
+        np.repeat(metric_cells, radial_order), [np.repeat(item, radial_order) for item in response_cells], local)
+TypeError: EulerianWaveFlux.evaluate() takes 3 positional arguments but 7 were given

@@ -1,0 +1,36 @@
+{
+  "required_accepted_packets": [
+    "results/start-guard/status.json",
+    "results/matrix-pair/status.json",
+    "results/stable-pair/status.json",
+    "results/isotropic-reduction/status.json",
+    "banks/fine16/status.json",
+    "banks/event8/status.json",
+    "waves/heavy24-event8-3200/status.json",
+    "waves/cold24-event8-3200/status.json",
+    "results/initial-refinements/status.json",
+    "results/response-interpretation/status.json",
+    "backgrounds/heavy/status.json",
+    "backgrounds/cold/status.json",
+    "waves/heavy-relaxed-source-probe/status.json",
+    "waves/cold-relaxed-source-probe/status.json",
+    "results/background-closure-review/status.json"
+  ],
+  "retained_unaccepted_accuracy_trials": {
+    "results/event-and-background-source-refinement/status.json": {
+      "reason": "Its event6/event8 refinement passes, but its raw unrelaxed background-residual negligibility comparison fails. The combined packet remains failed. The raw residual is not the collision term after finite-capacity background relaxation; the separately derived relaxed source and its response are tested in background-closure-review. The tolerance is not changed."
+    }
+  },
+  "source_only_diagnostic_waves_not_promoted_as_physical_backgrounds": [
+    "waves/heavy24-event8-3200-residual/status.json",
+    "waves/cold24-event8-3200-residual/status.json"
+  ],
+  "accepted_scope": "Polarized occupation, electron-temperature and bulk-velocity collision derivatives about each saved isotropic weakly distorted 24-function Stage75 background, with the retained scalar-wave gravity/field equations, a=1e-6..1e-5, k=0.1/Mpc and x=1e-5..60. The directly evolved mixed response passes time, wave-basis, interpolation and event-quadrature comparisons on both parents at the unchanged0.002 gate. The leading nonlinear homogeneous correction and its relaxed collision/boost/redshift source sensitivity are separate verified calculations, not a complete new nonlinear background or all higher-order Jacobian/Friedmann terms. Photon production is absent; B/V wave sectors remain null for the inherited scalar seed.",
+  "conclusion": "The mixed term is predominantly frequency redistribution: its monopole-shape and temperature responses exceed the previous angular-only corrections, while carrying extremely little energy/current in this wave. Keep the derived mixed transport rather than dismissing it from a small sampled coefficient or bolometric response. A failed raw-residual insertion is replaced by the derived finite-capacity relaxation law. Next move toward an observable-frequency transfer mapping with an explicit thermalization-domain gate, not an unlimited series of microscopic null tests.",
+  "unchanged_refinement_gate": 0.002,
+  "previous_goal_turn": "progress",
+  "current_goal_turn": "progress",
+  "no_new_observational_fit": true,
+  "full_second_order_background_not_claimed": true,
+  "post_save_stdout_error": "matrix-pair.log records a NumPy boolean serialization error after its complete successful calculation packet and marker were saved; hashes are unchanged."
+}

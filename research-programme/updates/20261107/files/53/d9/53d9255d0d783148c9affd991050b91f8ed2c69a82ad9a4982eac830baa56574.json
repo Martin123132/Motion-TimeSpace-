@@ -1,0 +1,12 @@
+{
+  "kind": "operational_validation_failure",
+  "date_utc": "2026-10-08",
+  "exit_code": 1,
+  "script": "validate_stage.py",
+  "original_line": 50,
+  "error": "AssertionError: RESULTS.md citation results/validation/status.json does not exist while that same validator is constructing it.",
+  "scientific_calculation_changed": false,
+  "completed_packet_overwritten": false,
+  "repair": "Treat the validator's own prospective status path, like the prospective final seal, as an output reference rather than an existing input citation. Permit the incomplete validation directory to be reused only when neither status nor COMPLETE exists.",
+  "repaired_validation_authority": "results/validation/status.json"
+}

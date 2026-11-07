@@ -1,0 +1,88 @@
+{
+  "model": "heavy",
+  "passed": true,
+  "prediction": {
+    "output_order": [
+      "D",
+      "delta_c"
+    ],
+    "contribution_order": [
+      "initial",
+      "current",
+      "shear",
+      "representation",
+      "terminal"
+    ],
+    "contributions": [
+      [
+        0.00011541786222420761,
+        0.0012501476157861003,
+        0.002806622690012061,
+        1.130773103601823e-14,
+        4.16624749650011e-06
+      ],
+      [
+        0.0023920554463064294,
+        0.013136290711820308,
+        0.034248406606191245,
+        1.6890910610367136e-14,
+        1.4560652091555198e-05
+      ]
+    ],
+    "total_bound": [
+      0.004176354415530176,
+      0.04979131341642643
+    ]
+  },
+  "previous_combined_bound": [
+    0.0034728330033839947,
+    0.04291845130730552
+  ],
+  "measured": [
+    4.757185070758481e-05,
+    -0.00047905060706861393
+  ],
+  "source_conditions": {
+    "D": {
+      "original_output_scale": 0.0016981389807894454,
+      "amplitude": 12.120560739270521,
+      "q_star": 0.05115703928090689,
+      "pi_star": 0.006021501520626399,
+      "epsilon": 0.02170748513818768,
+      "source_indicator": 0.007131992190530369,
+      "initial_indicator": 2.41059597130365e-05,
+      "terminal_indicator": 5.232797622124907e-07,
+      "indicator_not_complete_error_bound": true
+    },
+    "delta_c": {
+      "original_output_scale": 0.8432825831903412,
+      "amplitude": 0.8432825831903412,
+      "q_star": 0.7352837758129356,
+      "pi_star": 0.08654747101054325,
+      "epsilon": 0.02170748513818768,
+      "source_indicator": 0.10250863264635307,
+      "initial_indicator": 0.00034647667899755303,
+      "terminal_indicator": 7.521137360068005e-06,
+      "indicator_not_complete_error_bound": true
+    }
+  },
+  "errors": {
+    "representation": 3.5710348313918e-11,
+    "reconstruction": 6.609926566915824e-16,
+    "envelope_shortfall": 0.0,
+    "integration": 1.2898744461710663e-14,
+    "representation_budget_fraction": 2.707560209442317e-12
+  },
+  "parent_interval_packet": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-coupled-energy-envelope-20261107\\balanced\\bound\\heavy\\interval-envelope.npz",
+  "parent_interval_sha256": "49c1c35bcd65959f59992b113b9064c7551b6574c1b13832223cc30e7321345d",
+  "source_packet": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-explicit-current-shear-forcing-20261107\\balanced\\budget\\heavy-source-components.npz",
+  "source_sha256": "07fd4d878532126e3cb75a8064d4df435f990fec84e75c18ef7ba486561db289",
+  "input_hashes": {
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-coupled-energy-envelope-20261107\\balanced\\bound\\heavy\\result.json": "b9190b391a86031f6cd91e048cb4543476d3c498eae8d85bc9cd9468beb8cb2a",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-independent-poisson-evolution-20261107\\evolution\\heavy-gr.npz": "221d3dbf85c953785f1881fcf9d7d0aa49378e5639b74b09d1d51bcfdb8bca39",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-feedback-adjoint-20261107\\response-v2\\adjoints\\heavy-physical-sources.npz": "fc887b6750f0f4f98f01188c09603dedc146629ffe8a8e1bc4eab98501d680e3"
+  },
+  "seconds": 65.1961927000084,
+  "new_physical_ode_solves": 0,
+  "scope": "Separated forcing envelopes of the same parent quintic model; explicit representation residual retained"
+}

@@ -1,0 +1,27 @@
+Traceback (most recent call last):
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\mts-neutrino-metric-feedback-20261107\check_coupled_extension.py", line 136, in <module>
+    main()
+    ~~~~^^
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\mts-neutrino-metric-feedback-20261107\check_coupled_extension.py", line 131, in main
+    write(ROOT / "comparison-result.json", result)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\mts-neutrino-metric-feedback-20261107\common.py", line 59, in write
+    json.dump(value, stream, indent=2, allow_nan=False)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ollet\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 181, in dump
+    for chunk in iterable:
+                 ^^^^^^^^
+  File "C:\Users\ollet\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 435, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\ollet\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 409, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\ollet\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 328, in _iterencode_list
+    yield from chunks
+  File "C:\Users\ollet\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 409, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\ollet\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 442, in _iterencode
+    o = _default(o)
+  File "C:\Users\ollet\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 182, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bool is not JSON serializable

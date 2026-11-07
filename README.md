@@ -6,6 +6,18 @@ This repository is not presented as a completed theory of physics. It is a publi
 
 ## Current Status
 
+**Latest verified-work release: November 7, 2026.** Start with the
+[new status and results](docs/status/STATUS-2026-11-07.md),
+[publication scope](docs/status/PUBLICATION-NOTES-2026-11-07.md), and
+[bounded evidence package](research-programme/updates/20261107/README.md).
+This adds completed work since the September release without replacing the
+earlier framework. The untested relative-phase extension is excluded.
+Large local-only products are explicitly inventoried, not silently truncated.
+
+The following five-layer description records the retained parent framework;
+the November status distinguishes that selected branch from the newer
+conditional condensate, kinetic-response and GR/Newton calculations.
+
 The project now has five connected layers:
 
 1. **Parent and infrared branch** - one explicit CTP translation-gauge/coframe parent action contains the metric/coframe, visible matter, canonical `U(1)`, and reflection-even motion sector. The coframe is an honest parent premise rather than something falsely derived from four scalar clocks.
@@ -18,7 +30,7 @@ The **2026-09-21 update** adds the dated annular-action derivations through
 the sealed horizontal-shift/current calculation: energy and metric currents
 agree on the tested reference and MTS branches, with original coarse failures
 and their successful step-size refinement both preserved. Start with the
-[current status](docs/status/STATUS-2026-09-21.md) and the
+[September status](docs/status/STATUS-2026-09-21.md) and the
 [bounded evidence package](research-programme/updates/20260921/README.md).
 The full source inventory explicitly distinguishes published artifacts from
 bulky historical arrays retained locally; no truncated listing is treated as
@@ -45,9 +57,12 @@ The strongest honest claim is:
 - `CLAIM_CEILING.md` - the current claim boundary.
 - `docs/status/STATUS-2026-08-29.md` - historical status snapshot from the previous upload.
 - `docs/status/PUBLICATION-NOTES-2026-08-29.md` - historical scope, integrity checks, and exclusions from the previous upload.
-- `docs/status/STATUS-2026-09-21.md` - current reader-facing WIP status.
-- `docs/status/PUBLICATION-NOTES-2026-09-21.md` - current update scope and explicit omissions.
-- `research-programme/updates/20260921/README.md` - latest derivations, results and bounded source catalogue.
+- `docs/status/STATUS-2026-11-07.md` - latest reader-facing WIP status.
+- `docs/status/PUBLICATION-NOTES-2026-11-07.md` - latest update scope and explicit omissions.
+- `research-programme/updates/20261107/README.md` - latest results, derivations and bounded source catalogue.
+- `docs/status/STATUS-2026-09-21.md` - retained September status.
+- `docs/status/PUBLICATION-NOTES-2026-09-21.md` - September scope and explicit omissions.
+- `research-programme/updates/20260921/README.md` - retained September evidence package.
 - `docs/status/STATUS-2026-09-09.md` - previous status snapshot.
 - `docs/status/PUBLICATION-NOTES-2026-09-09.md` - previous update scope and claim boundary.
 - `research-programme/catalogue/README.md` - bounded direct-link catalogues for large artifact folders.

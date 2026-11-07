@@ -1,0 +1,2403 @@
+{
+  "numerical_passed": true,
+  "symbolic": {
+    "canonical_pressure_is_kinetic_minus_potential": "0",
+    "scalar_continuity_defect": "0",
+    "scalar_momentum_defect": "0",
+    "on_shell_scalar_continuity": "0",
+    "on_shell_scalar_momentum": "0",
+    "massive_node_continuity": "0",
+    "massive_node_momentum": "0"
+  },
+  "reports": [
+    {
+      "model": "heavy",
+      "cases": [
+        {
+          "numerical_passed": true,
+          "raw_continuity": 0.00022170512599128448,
+          "raw_momentum": 5.421691814123947e-06,
+          "raw_balance_within_gate": false,
+          "decomposition_continuity": 1.3841473957073667e-14,
+          "decomposition_momentum": 3.8055315450620016e-16,
+          "species_continuity": {
+            "cdm": 4.543252416123939e-16,
+            "baryon": 2.616150919201245e-16,
+            "photon": 2.956301393380513e-16,
+            "massless": 2.8069809972632093e-16,
+            "massive_neutrino": 3.9226900262219095e-16,
+            "slow_scalar": 4.719968586889017e-16,
+            "heavy_scalar": 1.3895976922801595e-14
+          },
+          "grouped_momentum": {
+            "cdm": 0.0,
+            "photon_baryon": 3.8332878316605265e-16,
+            "massless": 3.7224883928136798e-16,
+            "massive_neutrino": 4.552860927450126e-16,
+            "slow_scalar": 3.0750563091515846e-16,
+            "heavy_scalar": 3.8046316326541457e-16
+          },
+          "original_source_errors": {
+            "D": 5.552836480330465e-16,
+            "Q": 2.005616304636873e-16,
+            "Pi": 1.4958149288502778e-16,
+            "enthalpy": 3.2363948481120045e-16,
+            "massive_pressure": 3.9839971443691723e-16,
+            "slow_scalarD": 0.0,
+            "slow_scalarP": 0.0,
+            "slow_scalarQ": 0.0,
+            "heavy_scalarD": 0.0,
+            "heavy_scalarP": 0.0,
+            "heavy_scalarQ": 0.0
+          },
+          "independent_rate_difference": [
+            [
+              0.01352004232269945,
+              0.0004926074733993177
+            ],
+            [
+              0.003375991006458007,
+              0.00012309739312940627
+            ],
+            [
+              0.0008430296646336273,
+              3.0770522799432535e-05
+            ],
+            [
+              0.00020979628772295486,
+              7.693323877135349e-06
+            ]
+          ],
+          "richardson_errors": [
+            [
+              2.7625297809996357e-05,
+              3.6192321238329083e-07
+            ],
+            [
+              7.776784174467424e-06,
+              1.0827611406552716e-07
+            ],
+            [
+              6.921951146184018e-06,
+              1.0838923807485214e-07
+            ]
+          ],
+          "richardson_change": [
+            5.89612077552323e-06,
+            9.140868429841975e-09
+          ],
+          "thermal_scale_derivative_errors": [
+            2.1776557385568997e-07,
+            2.134364898876689e-07,
+            2.123507685099293e-07,
+            2.1214834588018125e-07
+          ],
+          "integrals": [
+            {
+              "stride": 1,
+              "raw_error": [
+                1.8432094974793364e-06,
+                1.5076899761751684e-06
+              ],
+              "defect_accounted_error": [
+                1.0866202236946125e-07,
+                1.0366183331852299e-06
+              ]
+            },
+            {
+              "stride": 2,
+              "raw_error": [
+                1.8433486161622008e-06,
+                1.5910347518070143e-06
+              ],
+              "defect_accounted_error": [
+                4.3295399167103315e-07,
+                1.2972958926544763e-06
+              ]
+            },
+            {
+              "stride": 4,
+              "raw_error": [
+                1.8476515302515875e-06,
+                3.3462343631119452e-06
+              ],
+              "defect_accounted_error": [
+                1.7836670535407966e-06,
+                5.2328824367581425e-06
+              ]
+            }
+          ],
+          "integral_refinement": [
+            1.7603148080929558e-06,
+            5.11766415370423e-06
+          ],
+          "field_defects": [
+            {
+              "species": "slow_scalar",
+              "field_rate_relative": 29.951049515800637,
+              "acceleration_relative": 0.8322009945733859
+            },
+            {
+              "species": "heavy_scalar",
+              "field_rate_relative": 5.6632318515961315e-06,
+              "acceleration_relative": 5.878842171582815e-06
+            }
+          ],
+          "predicted_defect_contributions": {
+            "cdm": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "baryon": {
+              "continuity": 1.175454161162497e-14,
+              "momentum": 0.0
+            },
+            "photon": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "massless": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "massive_neutrino": {
+              "continuity": 5.633994960861577e-10,
+              "momentum": 0.0
+            },
+            "slow_scalar": {
+              "continuity": 9.780706293174638e-28,
+              "momentum": 4.072719216874258e-28
+            },
+            "heavy_scalar": {
+              "continuity": 0.00022170549255455174,
+              "momentum": 5.421691814105828e-06
+            }
+          },
+          "maximum_neutrino_enthalpy_mismatch": 1.2236555986121097e-06,
+          "pressure_peak": 5.119070915311981e-05,
+          "continuity_scale": 4.2690494346335195e-05,
+          "momentum_scale": 0.00025595354576559906,
+          "tag": "L16-base",
+          "file": "heavy-L16-base.npz",
+          "sha256": "5710cbdf4605640a8ce3820f12f401d405c313c625d9f8a913f08804b36aee9c",
+          "input_sha256": "3f59ed71057636a0be821e978c121f7d1fac93f93a139d9e0c332b287cdef415"
+        },
+        {
+          "numerical_passed": true,
+          "raw_continuity": 0.00022170512605149356,
+          "raw_momentum": 5.421691814104663e-06,
+          "raw_balance_within_gate": false,
+          "decomposition_continuity": 1.4296766797804617e-14,
+          "decomposition_momentum": 3.8929032057621586e-16,
+          "species_continuity": {
+            "cdm": 3.4074308672370646e-16,
+            "baryon": 2.6124907973044004e-16,
+            "photon": 2.956301452571646e-16,
+            "massless": 2.8069810558322706e-16,
+            "massive_neutrino": 3.804579973109532e-16,
+            "slow_scalar": 4.884557114678025e-16,
+            "heavy_scalar": 1.4352437513583143e-14
+          },
+          "grouped_momentum": {
+            "cdm": 0.0,
+            "photon_baryon": 3.650750394524696e-16,
+            "massless": 3.7224884220367667e-16,
+            "massive_neutrino": 5.853678396053276e-16,
+            "slow_scalar": 3.066960129225909e-16,
+            "heavy_scalar": 3.8925413007604147e-16
+          },
+          "original_source_errors": {
+            "D": 5.552836363937743e-16,
+            "Q": 2.0056163046372195e-16,
+            "Pi": 1.495814943703609e-16,
+            "enthalpy": 3.2363948481120045e-16,
+            "massive_pressure": 3.9839972064517154e-16,
+            "slow_scalarD": 0.0,
+            "slow_scalarP": 0.0,
+            "slow_scalarQ": 0.0,
+            "heavy_scalarD": 0.0,
+            "heavy_scalarP": 0.0,
+            "heavy_scalarQ": 0.0
+          },
+          "independent_rate_difference": [
+            [
+              0.013520042352980027,
+              0.000492607473818085
+            ],
+            [
+              0.003375991013992141,
+              0.00012309739323317103
+            ],
+            [
+              0.0008430296664208916,
+              3.077052282730726e-05
+            ],
+            [
+              0.00020979628776379952,
+              7.693323880528299e-06
+            ]
+          ],
+          "richardson_errors": [
+            [
+              2.76252978321647e-05,
+              3.6192320952282785e-07
+            ],
+            [
+              7.776784522116927e-06,
+              1.0827611682020288e-07
+            ],
+            [
+              6.921951172271714e-06,
+              1.0838924114737083e-07
+            ]
+          ],
+          "richardson_change": [
+            5.896119403296587e-06,
+            9.140865993049245e-09
+          ],
+          "thermal_scale_derivative_errors": [
+            2.1776557385568997e-07,
+            2.134364898876689e-07,
+            2.123507685099293e-07,
+            2.1214834588018125e-07
+          ],
+          "integrals": [
+            {
+              "stride": 1,
+              "raw_error": [
+                1.8432432332769955e-06,
+                1.5076916910776503e-06
+              ],
+              "defect_accounted_error": [
+                1.0869639867347767e-07,
+                1.0366166080044042e-06
+              ]
+            },
+            {
+              "stride": 2,
+              "raw_error": [
+                1.8433823397407038e-06,
+                1.5910357765769403e-06
+              ],
+              "defect_accounted_error": [
+                4.3299875886367367e-07,
+                1.2972946798585212e-06
+              ]
+            },
+            {
+              "stride": 4,
+              "raw_error": [
+                1.8476853312019646e-06,
+                3.3462398762509027e-06
+              ],
+              "defect_accounted_error": [
+                1.78371717367493e-06,
+                5.232876218044852e-06
+              ]
+            }
+          ],
+          "integral_refinement": [
+            1.7603147460685025e-06,
+            5.1176603166602814e-06
+          ],
+          "field_defects": [
+            {
+              "species": "slow_scalar",
+              "field_rate_relative": 29.951049515800637,
+              "acceleration_relative": 0.8322009945733859
+            },
+            {
+              "species": "heavy_scalar",
+              "field_rate_relative": 5.6632318515961315e-06,
+              "acceleration_relative": 5.878842171582815e-06
+            }
+          ],
+          "predicted_defect_contributions": {
+            "cdm": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "baryon": {
+              "continuity": 1.1754541309710128e-14,
+              "momentum": 0.0
+            },
+            "photon": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "massless": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "massive_neutrino": {
+              "continuity": 5.634006992447619e-10,
+              "momentum": 0.0
+            },
+            "slow_scalar": {
+              "continuity": 9.780706066902524e-28,
+              "momentum": 4.072719126583233e-28
+            },
+            "heavy_scalar": {
+              "continuity": 0.00022170549260720808,
+              "momentum": 5.4216918140746315e-06
+            }
+          },
+          "maximum_neutrino_enthalpy_mismatch": 1.2236555986121097e-06,
+          "pressure_peak": 5.1190709153051924e-05,
+          "continuity_scale": 4.269049434635711e-05,
+          "momentum_scale": 0.0002559535457652596,
+          "tag": "L64-base",
+          "file": "heavy-L64-base.npz",
+          "sha256": "ab790bc91fae974c078ef804d3d11ea63d57d0aa6a703cf1e96cd4800de3c768",
+          "input_sha256": "e7a871fe0e96f588f91620eede25ad2b7431e3a50cf167824acb3ac22cdeef1b"
+        },
+        {
+          "numerical_passed": true,
+          "raw_continuity": 0.0002217051260337474,
+          "raw_momentum": 5.421691814046385e-06,
+          "raw_balance_within_gate": false,
+          "decomposition_continuity": 1.503387713922039e-14,
+          "decomposition_momentum": 3.9554367655536746e-16,
+          "species_continuity": {
+            "cdm": 3.407430901007025e-16,
+            "baryon": 2.4619417550617073e-16,
+            "photon": 2.9563014985144305e-16,
+            "massless": 2.8069810366900765e-16,
+            "massive_neutrino": 4.905097038208832e-16,
+            "slow_scalar": 4.585929271205529e-16,
+            "heavy_scalar": 1.5093243747369846e-14
+          },
+          "grouped_momentum": {
+            "cdm": 0.0,
+            "photon_baryon": 3.650750347735681e-16,
+            "massless": 3.722488407384525e-16,
+            "massive_neutrino": 4.5528609482043e-16,
+            "slow_scalar": 3.246198021672304e-16,
+            "heavy_scalar": 3.9550090406288265e-16
+          },
+          "original_source_errors": {
+            "D": 5.552836364406613e-16,
+            "Q": 1.0028081523184378e-16,
+            "Pi": 1.495814934983528e-16,
+            "enthalpy": 3.2363948481120045e-16,
+            "massive_pressure": 3.9839971680915913e-16,
+            "slow_scalarD": 0.0,
+            "slow_scalarP": 0.0,
+            "slow_scalarQ": 0.0,
+            "heavy_scalarD": 0.0,
+            "heavy_scalarP": 0.0,
+            "heavy_scalarQ": 0.0
+          },
+          "independent_rate_difference": [
+            [
+              0.013520042351830817,
+              0.0004926074737921494
+            ],
+            [
+              0.003375991013695572,
+              0.00012309739322628984
+            ],
+            [
+              0.0008430296662814319,
+              3.077052282529561e-05
+            ],
+            [
+              0.00020979628842280292,
+              7.693323880952428e-06
+            ]
+          ],
+          "richardson_errors": [
+            [
+              2.7625297733270662e-05,
+              3.619232068741527e-07
+            ],
+            [
+              7.776784711612146e-06,
+              1.0827611639641706e-07
+            ],
+            [
+              6.921950933632207e-06,
+              1.083892404057421e-07
+            ]
+          ],
+          "richardson_change": [
+            5.896119034659489e-06,
+            9.140866946578457e-09
+          ],
+          "thermal_scale_derivative_errors": [
+            2.1776557385568997e-07,
+            2.134364898876689e-07,
+            2.123507685099293e-07,
+            2.1214834588018125e-07
+          ],
+          "integrals": [
+            {
+              "stride": 1,
+              "raw_error": [
+                1.8433017278438231e-06,
+                1.5076915130789447e-06
+              ],
+              "defect_accounted_error": [
+                1.0875021469038596e-07,
+                1.0366170322923557e-06
+              ]
+            },
+            {
+              "stride": 2,
+              "raw_error": [
+                1.8434408726221142e-06,
+                1.5910360854415784e-06
+              ],
+              "defect_accounted_error": [
+                4.330150374565002e-07,
+                1.2972946693789535e-06
+              ]
+            },
+            {
+              "stride": 4,
+              "raw_error": [
+                1.8477442044726075e-06,
+                3.3462369521620374e-06
+              ],
+              "defect_accounted_error": [
+                1.7837443541266218e-06,
+                5.232879843997672e-06
+              ]
+            }
+          ],
+          "integral_refinement": [
+            1.7603147953597418e-06,
+            5.117663112488532e-06
+          ],
+          "field_defects": [
+            {
+              "species": "slow_scalar",
+              "field_rate_relative": 29.951049515800637,
+              "acceleration_relative": 0.8322009945733859
+            },
+            {
+              "species": "heavy_scalar",
+              "field_rate_relative": 5.6632318515961315e-06,
+              "acceleration_relative": 5.878842171582815e-06
+            }
+          ],
+          "predicted_defect_contributions": {
+            "cdm": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "baryon": {
+              "continuity": 1.1754541411826795e-14,
+              "momentum": 0.0
+            },
+            "photon": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "massless": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "massive_neutrino": {
+              "continuity": 5.634006933983323e-10,
+              "momentum": 0.0
+            },
+            "slow_scalar": {
+              "continuity": 9.780706326523219e-28,
+              "momentum": 4.072719214500571e-28
+            },
+            "heavy_scalar": {
+              "continuity": 0.0002217054925949322,
+              "momentum": 5.421691814068001e-06
+            }
+          },
+          "maximum_neutrino_enthalpy_mismatch": 1.2236555986121097e-06,
+          "pressure_peak": 5.1190709153102346e-05,
+          "continuity_scale": 4.269049434634985e-05,
+          "momentum_scale": 0.00025595354576551173,
+          "tag": "L64-fine",
+          "file": "heavy-L64-fine.npz",
+          "sha256": "e7674f74e38bbc60ff5fc456778e695a8303875b28369a80b66fca7317fcc92f",
+          "input_sha256": "881b7eac092d419c97309eea65183c0e198e61c292425ab058220a9c382ae26b"
+        },
+        {
+          "numerical_passed": true,
+          "raw_continuity": 0.00022170512603922137,
+          "raw_momentum": 5.421691814051431e-06,
+          "raw_balance_within_gate": false,
+          "decomposition_continuity": 1.8278122006764198e-14,
+          "decomposition_momentum": 4.560265831887143e-16,
+          "species_continuity": {
+            "cdm": 3.4074308938521267e-16,
+            "baryon": 2.7426743065370023e-16,
+            "photon": 2.9563014920178863e-16,
+            "massless": 2.80698103032659e-16,
+            "massive_neutrino": 4.0372553667747364e-16,
+            "slow_scalar": 4.845133917637132e-16,
+            "heavy_scalar": 1.835006151620689e-14
+          },
+          "grouped_momentum": {
+            "cdm": 0.0,
+            "photon_baryon": 4.380900408742599e-16,
+            "massless": 3.722488396279531e-16,
+            "massive_neutrino": 5.203269644168478e-16,
+            "slow_scalar": 3.1914309142552656e-16,
+            "heavy_scalar": 4.560013731421274e-16
+          },
+          "original_source_errors": {
+            "D": 5.552836364335687e-16,
+            "Q": 1.0028081523184383e-16,
+            "Pi": 1.4958149309486964e-16,
+            "enthalpy": 3.2363948481120045e-16,
+            "massive_pressure": 3.9839971600160883e-16,
+            "slow_scalarD": 0.0,
+            "slow_scalarP": 0.0,
+            "slow_scalarQ": 0.0,
+            "heavy_scalarD": 0.0,
+            "heavy_scalarP": 0.0,
+            "heavy_scalarQ": 0.0
+          },
+          "independent_rate_difference": [
+            [
+              0.013520042352085026,
+              0.0004926074737954173
+            ],
+            [
+              0.0033759910137717633,
+              0.0001230973932271333
+            ],
+            [
+              0.0008430296663194281,
+              3.0770522825400525e-05
+            ],
+            [
+              0.00020979628805658813,
+              7.6933238819057e-06
+            ]
+          ],
+          "richardson_errors": [
+            [
+              2.7625297561660415e-05,
+              3.619232137077637e-07
+            ],
+            [
+              7.776784481770148e-06,
+              1.082761176677852e-07
+            ],
+            [
+              6.921950550457095e-06,
+              1.0838923690946616e-07
+            ]
+          ],
+          "richardson_change": [
+            5.896119932009278e-06,
+            9.140869171478709e-09
+          ],
+          "thermal_scale_derivative_errors": [
+            2.1776557385568997e-07,
+            2.134364898876689e-07,
+            2.123507685099293e-07,
+            2.1214834588018125e-07
+          ],
+          "integrals": [
+            {
+              "stride": 1,
+              "raw_error": [
+                1.8432856073810293e-06,
+                1.50769152842191e-06
+              ],
+              "defect_accounted_error": [
+                1.0873457512537673e-07,
+                1.0366169723244285e-06
+              ]
+            },
+            {
+              "stride": 2,
+              "raw_error": [
+                1.8434247355008095e-06,
+                1.5910360825334354e-06
+              ],
+              "defect_accounted_error": [
+                4.3299977034384825e-07,
+                1.2972946293669088e-06
+              ]
+            },
+            {
+              "stride": 4,
+              "raw_error": [
+                1.8477281259336715e-06,
+                3.3462399297000047e-06
+              ],
+              "defect_accounted_error": [
+                1.7837324218914164e-06,
+                5.232876906271192e-06
+              ]
+            }
+          ],
+          "integral_refinement": [
+            1.7603147778458226e-06,
+            5.117660165135094e-06
+          ],
+          "field_defects": [
+            {
+              "species": "slow_scalar",
+              "field_rate_relative": 29.951049515800637,
+              "acceleration_relative": 0.8322009945733859
+            },
+            {
+              "species": "heavy_scalar",
+              "field_rate_relative": 5.6632318515961315e-06,
+              "acceleration_relative": 5.878842171582815e-06
+            }
+          ],
+          "predicted_defect_contributions": {
+            "cdm": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "baryon": {
+              "continuity": 1.1754541434825147e-14,
+              "momentum": 0.0
+            },
+            "photon": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "massless": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "massive_neutrino": {
+              "continuity": 5.634006946273086e-10,
+              "momentum": 0.0
+            },
+            "slow_scalar": {
+              "continuity": 9.78070640907793e-28,
+              "momentum": 4.072719209374673e-28
+            },
+            "heavy_scalar": {
+              "continuity": 0.00022170549259627913,
+              "momentum": 5.421691814079378e-06
+            }
+          },
+          "maximum_neutrino_enthalpy_mismatch": 1.2236555986121097e-06,
+          "pressure_peak": 5.1190709153054594e-05,
+          "continuity_scale": 4.269049434635486e-05,
+          "momentum_scale": 0.00025595354576527293,
+          "tag": "L128-fine",
+          "file": "heavy-L128-fine.npz",
+          "sha256": "a60f1e7c130c0238312fa9d9891483aa397cb51c80babaf48ea62ca0fd50f304",
+          "input_sha256": "7eb50b6cf8031cbaeabd38f6cc02b867f94afb9125a8ff2c35fd6b4007e7154b"
+        },
+        {
+          "numerical_passed": true,
+          "raw_continuity": 0.00022170512603448075,
+          "raw_momentum": 5.421691814099075e-06,
+          "raw_balance_within_gate": false,
+          "decomposition_continuity": 1.5103244023772042e-14,
+          "decomposition_momentum": 3.9635641387741864e-16,
+          "species_continuity": {
+            "cdm": 3.407430876050571e-16,
+            "baryon": 2.850186203668496e-16,
+            "photon": 2.956301483125475e-16,
+            "massless": 2.806981029259761e-16,
+            "massive_neutrino": 4.3138230128075695e-16,
+            "slow_scalar": 4.232806390545053e-16,
+            "heavy_scalar": 1.516249433666754e-14
+          },
+          "grouped_momentum": {
+            "cdm": 0.0,
+            "photon_baryon": 3.650750338584582e-16,
+            "massless": 5.583732602927442e-16,
+            "massive_neutrino": 5.203269650539181e-16,
+            "slow_scalar": 3.131685006643316e-16,
+            "heavy_scalar": 3.963297308705937e-16
+          },
+          "original_source_errors": {
+            "D": 4.1646272732125045e-16,
+            "Q": 2.0056163046368507e-16,
+            "Pi": 1.4958149336757471e-16,
+            "enthalpy": 3.2363948481120045e-16,
+            "massive_pressure": 3.9839971627844487e-16,
+            "slow_scalarD": 0.0,
+            "slow_scalarP": 0.0,
+            "slow_scalarQ": 0.0,
+            "heavy_scalarD": 0.0,
+            "heavy_scalarP": 0.0,
+            "heavy_scalarQ": 0.0
+          },
+          "independent_rate_difference": [
+            [
+              0.013520042352222308,
+              0.0004926074738006084
+            ],
+            [
+              0.003375991014009319,
+              0.00012309739322808675
+            ],
+            [
+              0.0008430296661227261,
+              3.077052282476482e-05
+            ],
+            [
+              0.00020979628818100385,
+              7.693323884554385e-06
+            ]
+          ],
+          "richardson_errors": [
+            [
+              2.7625297984334887e-05,
+              3.6192320692711407e-07
+            ],
+            [
+              7.776784377855478e-06,
+              1.0827611703209922e-07
+            ],
+            [
+              6.92195047481633e-06,
+              1.0838923828678546e-07
+            ]
+          ],
+          "richardson_change": [
+            5.896120355658932e-06,
+            9.140868853635764e-09
+          ],
+          "thermal_scale_derivative_errors": [
+            2.1776557385568997e-07,
+            2.134364898876689e-07,
+            2.123507685099293e-07,
+            2.1214834588018125e-07
+          ],
+          "integrals": [
+            {
+              "stride": 1,
+              "raw_error": [
+                1.8433141134044121e-06,
+                1.5076915693364633e-06
+              ],
+              "defect_accounted_error": [
+                1.0876300023252136e-07,
+                1.0366169777395794e-06
+              ]
+            },
+            {
+              "stride": 2,
+              "raw_error": [
+                1.8434532197293083e-06,
+                1.5910362695571353e-06
+              ],
+              "defect_accounted_error": [
+                4.33029713593398e-07,
+                1.2972945066733146e-06
+              ]
+            },
+            {
+              "stride": 4,
+              "raw_error": [
+                1.8477565479703626e-06,
+                3.3462391136146877e-06
+              ],
+              "defect_accounted_error": [
+                1.7837564806487166e-06,
+                5.232877789444265e-06
+              ]
+            }
+          ],
+          "integral_refinement": [
+            1.7603148225295609e-06,
+            5.117661018223923e-06
+          ],
+          "field_defects": [
+            {
+              "species": "slow_scalar",
+              "field_rate_relative": 29.951049515800637,
+              "acceleration_relative": 0.8322009945733859
+            },
+            {
+              "species": "heavy_scalar",
+              "field_rate_relative": 5.6632318515961315e-06,
+              "acceleration_relative": 5.878842171582815e-06
+            }
+          ],
+          "predicted_defect_contributions": {
+            "cdm": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "baryon": {
+              "continuity": 1.1754541448708513e-14,
+              "momentum": 0.0
+            },
+            "photon": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "massless": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "massive_neutrino": {
+              "continuity": 5.634006975442187e-10,
+              "momentum": 0.0
+            },
+            "slow_scalar": {
+              "continuity": 9.780706286565298e-28,
+              "momentum": 4.072719192921659e-28
+            },
+            "heavy_scalar": {
+              "continuity": 0.00022170549259749987,
+              "momentum": 5.421691814071737e-06
+            }
+          },
+          "maximum_neutrino_enthalpy_mismatch": 1.2236555986121097e-06,
+          "pressure_peak": 5.1190709153104894e-05,
+          "continuity_scale": 4.269049434636068e-05,
+          "momentum_scale": 0.00025595354576552447,
+          "tag": "G192-fine",
+          "file": "heavy-G192-fine.npz",
+          "sha256": "75d6350a457edc092666c7252101e28ea86273d7ec92d39814bccdb58c7e247d",
+          "input_sha256": "9f9fb0c4f0fbb39663f9435484b60a497e373ff91b7f4231050e12b3e9d929d6"
+        },
+        {
+          "numerical_passed": true,
+          "raw_continuity": 0.0,
+          "raw_momentum": 0.0,
+          "raw_balance_within_gate": true,
+          "decomposition_continuity": 0.0,
+          "decomposition_momentum": 0.0,
+          "species_continuity": {
+            "cdm": 0.0,
+            "baryon": 0.0,
+            "photon": 0.0,
+            "massless": 0.0,
+            "massive_neutrino": 0.0,
+            "slow_scalar": 0.0,
+            "heavy_scalar": 0.0
+          },
+          "grouped_momentum": {
+            "cdm": 0.0,
+            "photon_baryon": 0.0,
+            "massless": 0.0,
+            "massive_neutrino": 0.0,
+            "slow_scalar": 0.0,
+            "heavy_scalar": 0.0
+          },
+          "original_source_errors": {
+            "D": 0.0,
+            "Q": 0.0,
+            "Pi": 0.0,
+            "enthalpy": 3.2363948481120045e-16,
+            "massive_pressure": 0.0,
+            "slow_scalarD": 0.0,
+            "slow_scalarP": 0.0,
+            "slow_scalarQ": 0.0,
+            "heavy_scalarD": 0.0,
+            "heavy_scalarP": 0.0,
+            "heavy_scalarQ": 0.0
+          },
+          "independent_rate_difference": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "richardson_errors": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "richardson_change": [
+            0.0,
+            0.0
+          ],
+          "thermal_scale_derivative_errors": [
+            2.1776557385568997e-07,
+            2.134364898876689e-07,
+            2.123507685099293e-07,
+            2.1214834588018125e-07
+          ],
+          "integrals": [
+            {
+              "stride": 1,
+              "raw_error": [
+                0.0,
+                0.0
+              ],
+              "defect_accounted_error": [
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "stride": 2,
+              "raw_error": [
+                0.0,
+                0.0
+              ],
+              "defect_accounted_error": [
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "stride": 4,
+              "raw_error": [
+                0.0,
+                0.0
+              ],
+              "defect_accounted_error": [
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "integral_refinement": [
+            0.0,
+            0.0
+          ],
+          "field_defects": [
+            {
+              "species": "slow_scalar",
+              "field_rate_relative": 29.951049515800637,
+              "acceleration_relative": 0.8322009945733859
+            },
+            {
+              "species": "heavy_scalar",
+              "field_rate_relative": 5.6632318515961315e-06,
+              "acceleration_relative": 5.878842171582815e-06
+            }
+          ],
+          "predicted_defect_contributions": {
+            "cdm": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "baryon": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "photon": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "massless": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "massive_neutrino": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "slow_scalar": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "heavy_scalar": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            }
+          },
+          "maximum_neutrino_enthalpy_mismatch": 1.2236555986121097e-06,
+          "pressure_peak": 0.0,
+          "continuity_scale": 1e-80,
+          "momentum_scale": 1e-80,
+          "tag": "L64-zero",
+          "file": "heavy-L64-zero.npz",
+          "sha256": "f8391b74f80264bc859b8324131593a7fe3637b23dbe2dd405d8bc41eb562964",
+          "input_sha256": "342a274a0687127b989d659d6b8580afd0cf489411528076e8299a05245718fc"
+        },
+        {
+          "numerical_passed": true,
+          "raw_continuity": 0.00022170512605149356,
+          "raw_momentum": 5.421691814104663e-06,
+          "raw_balance_within_gate": false,
+          "decomposition_continuity": 1.4296766797804617e-14,
+          "decomposition_momentum": 3.8929032057621586e-16,
+          "species_continuity": {
+            "cdm": 3.4074308672370646e-16,
+            "baryon": 2.6124907973044004e-16,
+            "photon": 2.956301452571646e-16,
+            "massless": 2.8069810558322706e-16,
+            "massive_neutrino": 3.804579973109532e-16,
+            "slow_scalar": 4.884557114678025e-16,
+            "heavy_scalar": 1.4352437513583143e-14
+          },
+          "grouped_momentum": {
+            "cdm": 0.0,
+            "photon_baryon": 3.650750394524696e-16,
+            "massless": 3.7224884220367667e-16,
+            "massive_neutrino": 5.853678396053276e-16,
+            "slow_scalar": 3.066960129225909e-16,
+            "heavy_scalar": 3.8925413007604147e-16
+          },
+          "original_source_errors": {
+            "D": 5.552836363937743e-16,
+            "Q": 2.0056163046372195e-16,
+            "Pi": 1.495814943703609e-16,
+            "enthalpy": 3.2363948481120045e-16,
+            "massive_pressure": 3.9839972064517154e-16,
+            "slow_scalarD": 0.0,
+            "slow_scalarP": 0.0,
+            "slow_scalarQ": 0.0,
+            "heavy_scalarD": 0.0,
+            "heavy_scalarP": 0.0,
+            "heavy_scalarQ": 0.0
+          },
+          "independent_rate_difference": [
+            [
+              0.013520042352980027,
+              0.000492607473818085
+            ],
+            [
+              0.003375991013992141,
+              0.00012309739323317103
+            ],
+            [
+              0.0008430296664208916,
+              3.077052282730726e-05
+            ],
+            [
+              0.00020979628776379952,
+              7.693323880528299e-06
+            ]
+          ],
+          "richardson_errors": [
+            [
+              2.76252978321647e-05,
+              3.6192320952282785e-07
+            ],
+            [
+              7.776784522116927e-06,
+              1.0827611682020288e-07
+            ],
+            [
+              6.921951172271714e-06,
+              1.0838924114737083e-07
+            ]
+          ],
+          "richardson_change": [
+            5.896119403296587e-06,
+            9.140865993049245e-09
+          ],
+          "thermal_scale_derivative_errors": [
+            2.1776557385568997e-07,
+            2.134364898876689e-07,
+            2.123507685099293e-07,
+            2.1214834588018125e-07
+          ],
+          "integrals": [
+            {
+              "stride": 1,
+              "raw_error": [
+                1.8432432332769955e-06,
+                1.5076916910776503e-06
+              ],
+              "defect_accounted_error": [
+                1.0869639867347767e-07,
+                1.0366166080044042e-06
+              ]
+            },
+            {
+              "stride": 2,
+              "raw_error": [
+                1.8433823397407038e-06,
+                1.5910357765769403e-06
+              ],
+              "defect_accounted_error": [
+                4.3299875886367367e-07,
+                1.2972946798585212e-06
+              ]
+            },
+            {
+              "stride": 4,
+              "raw_error": [
+                1.8476853312019646e-06,
+                3.3462398762509027e-06
+              ],
+              "defect_accounted_error": [
+                1.78371717367493e-06,
+                5.232876218044852e-06
+              ]
+            }
+          ],
+          "integral_refinement": [
+            1.7603147460685025e-06,
+            5.1176603166602814e-06
+          ],
+          "field_defects": [
+            {
+              "species": "slow_scalar",
+              "field_rate_relative": 29.951049515800637,
+              "acceleration_relative": 0.8322009945733859
+            },
+            {
+              "species": "heavy_scalar",
+              "field_rate_relative": 5.6632318515961315e-06,
+              "acceleration_relative": 5.878842171582815e-06
+            }
+          ],
+          "predicted_defect_contributions": {
+            "cdm": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "baryon": {
+              "continuity": 1.1754541309710128e-14,
+              "momentum": 0.0
+            },
+            "photon": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "massless": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "massive_neutrino": {
+              "continuity": 5.634006992447619e-10,
+              "momentum": 0.0
+            },
+            "slow_scalar": {
+              "continuity": 9.780706066902524e-28,
+              "momentum": 4.072719126583233e-28
+            },
+            "heavy_scalar": {
+              "continuity": 0.00022170549260720808,
+              "momentum": 5.4216918140746315e-06
+            }
+          },
+          "maximum_neutrino_enthalpy_mismatch": 1.2236555986121097e-06,
+          "pressure_peak": 5.1190709153051924e-05,
+          "continuity_scale": 4.269049434635711e-05,
+          "momentum_scale": 0.0002559535457652596,
+          "tag": "L64-negative",
+          "file": "heavy-L64-negative.npz",
+          "sha256": "30161ed89956e16f6a237559b8574d14dfcebc413b83f78131cbd04de00b1f3c",
+          "input_sha256": "0dbf769e8b032e3156bee915b256eb1dc7510035dc293d1ddb7c0dcc08173c4d"
+        }
+      ],
+      "zero": true,
+      "sign_error": 0.0,
+      "numerical_passed": true
+    },
+    {
+      "model": "cold",
+      "cases": [
+        {
+          "numerical_passed": true,
+          "raw_continuity": 6.997478073265537e-08,
+          "raw_momentum": 2.830627394751765e-16,
+          "raw_balance_within_gate": true,
+          "decomposition_continuity": 1.755899412922526e-16,
+          "decomposition_momentum": 2.830627394751765e-16,
+          "species_continuity": {
+            "cdm": 5.76389707722505e-17,
+            "baryon": 2.5580642909724924e-16,
+            "photon": 3.0057532546201547e-16,
+            "massless": 2.1302684532597538e-16,
+            "massive_neutrino": 3.7435445596576794e-16,
+            "slow_scalar": 3.5041353855530825e-16,
+            "heavy_scalar": 0.0
+          },
+          "grouped_momentum": {
+            "cdm": 0.0,
+            "photon_baryon": 3.6022195321785914e-16,
+            "massless": 4.23335378367004e-16,
+            "massive_neutrino": 5.433044264380597e-16,
+            "slow_scalar": 3.2395809868260287e-16,
+            "heavy_scalar": 0.0
+          },
+          "original_source_errors": {
+            "D": 1.589310933016676e-16,
+            "Q": 2.2276534531024807e-16,
+            "Pi": 1.136065345286941e-16,
+            "enthalpy": 4.177417204815416e-16,
+            "massive_pressure": 4.0247661768363415e-16,
+            "slow_scalarD": 0.0,
+            "slow_scalarP": 0.0,
+            "slow_scalarQ": 0.0,
+            "heavy_scalarD": 0.0,
+            "heavy_scalarP": 0.0,
+            "heavy_scalarQ": 0.0
+          },
+          "independent_rate_difference": [
+            [
+              3.35271787087803e-10,
+              2.1451786820473504e-10
+            ],
+            [
+              9.33199444220659e-11,
+              5.360015279772494e-11
+            ],
+            [
+              2.3409520507140424e-11,
+              1.2894350067343461e-11
+            ],
+            [
+              3.705080479074226e-11,
+              2.3312771064405317e-12
+            ]
+          ],
+          "richardson_errors": [
+            [
+              1.2669288185150036e-11,
+              1.5643013539094023e-13
+            ],
+            [
+              3.640167298667992e-11,
+              6.742692533683815e-13
+            ],
+            [
+              4.340164566716621e-11,
+              1.1898024456144884e-12
+            ]
+          ],
+          "richardson_change": [
+            6.049857995856869e-11,
+            1.0108515625121328e-12
+          ],
+          "thermal_scale_derivative_errors": [
+            2.236920200341994e-11,
+            3.025201772936174e-11,
+            5.88391291804312e-11,
+            1.6080323476846053e-10
+          ],
+          "integrals": [
+            {
+              "stride": 1,
+              "raw_error": [
+                3.096675087153892e-08,
+                1.4444383446598124e-10
+              ],
+              "defect_accounted_error": [
+                1.2128031729850252e-12,
+                1.4444383446598124e-10
+              ]
+            },
+            {
+              "stride": 2,
+              "raw_error": [
+                3.098317067851229e-08,
+                1.7828816683221203e-09
+              ],
+              "defect_accounted_error": [
+                1.8962068741821958e-11,
+                1.7828816683221203e-09
+              ]
+            },
+            {
+              "stride": 4,
+              "raw_error": [
+                3.124710484332979e-08,
+                2.815924318950228e-08
+              ],
+              "defect_accounted_error": [
+                3.046111477682153e-10,
+                2.815924318950228e-08
+              ]
+            }
+          ],
+          "integral_refinement": [
+            3.0342107174157246e-10,
+            2.8041919198013722e-08
+          ],
+          "field_defects": [
+            {
+              "species": "slow_scalar",
+              "field_rate_relative": 0.0759123019030598,
+              "acceleration_relative": 2.9830116799249995e-10
+            },
+            {
+              "species": "heavy_scalar",
+              "field_rate_relative": 0.0,
+              "acceleration_relative": 0.0
+            }
+          ],
+          "predicted_defect_contributions": {
+            "cdm": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "baryon": {
+              "continuity": 1.5746688477483087e-12,
+              "momentum": 0.0
+            },
+            "photon": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "massless": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "massive_neutrino": {
+              "continuity": 6.997478067366018e-08,
+              "momentum": 0.0
+            },
+            "slow_scalar": {
+              "continuity": 1.764799085714264e-35,
+              "momentum": 1.5058205138986556e-34
+            },
+            "heavy_scalar": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            }
+          },
+          "maximum_neutrino_enthalpy_mismatch": 1.2236555985501664e-06,
+          "pressure_peak": 1.557553351081278e-05,
+          "continuity_scale": 0.0004300853196036026,
+          "momentum_scale": 0.00012268782144133757,
+          "tag": "L16-base",
+          "file": "cold-L16-base.npz",
+          "sha256": "b2d41c74e021cac7b4cda20ba88cd4847c2398ce9b8a6958e55be60b123d13a3",
+          "input_sha256": "4c53061672ca3a6a081b4d85aff722662a62f4defd067d7eb822363dfeafb112"
+        },
+        {
+          "numerical_passed": true,
+          "raw_continuity": 6.997478073265537e-08,
+          "raw_momentum": 3.1758258575439725e-16,
+          "raw_balance_within_gate": true,
+          "decomposition_continuity": 1.6188607925172904e-16,
+          "decomposition_momentum": 3.1758258575439725e-16,
+          "species_continuity": {
+            "cdm": 5.76389707722505e-17,
+            "baryon": 2.4166346626101263e-16,
+            "photon": 3.005753256285459e-16,
+            "massless": 2.8403579376768433e-16,
+            "massive_neutrino": 4.0886520381210643e-16,
+            "slow_scalar": 3.326185501865344e-16,
+            "heavy_scalar": 0.0
+          },
+          "grouped_momentum": {
+            "cdm": 0.0,
+            "photon_baryon": 4.1564071525641904e-16,
+            "massless": 4.233353783670016e-16,
+            "massive_neutrino": 4.93913114943701e-16,
+            "slow_scalar": 3.122813606091838e-16,
+            "heavy_scalar": 0.0
+          },
+          "original_source_errors": {
+            "D": 1.589310933016676e-16,
+            "Q": 2.2276534531023688e-16,
+            "Pi": 1.1360653452770668e-16,
+            "enthalpy": 4.177417204815416e-16,
+            "massive_pressure": 4.0247661768358716e-16,
+            "slow_scalarD": 0.0,
+            "slow_scalarP": 0.0,
+            "slow_scalarQ": 0.0,
+            "heavy_scalarD": 0.0,
+            "heavy_scalarP": 0.0,
+            "heavy_scalarQ": 0.0
+          },
+          "independent_rate_difference": [
+            [
+              3.332550669198423e-10,
+              2.1450881019826073e-10
+            ],
+            [
+              9.33200704670764e-11,
+              5.357386248309696e-11
+            ],
+            [
+              1.7985173480378662e-11,
+              1.3068274860900248e-11
+            ],
+            [
+              4.093733966692875e-11,
+              2.325698699294984e-12
+            ]
+          ],
+          "richardson_errors": [
+            [
+              1.3341738316154428e-11,
+              1.0191639415013939e-13
+            ],
+            [
+              3.640205112171141e-11,
+              4.336245010013518e-13
+            ],
+            [
+              6.00645439649204e-11,
+              1.2551416106554221e-12
+            ]
+          ],
+          "richardson_change": [
+            7.387107325728452e-11,
+            1.1684829885600049e-12
+          ],
+          "thermal_scale_derivative_errors": [
+            2.236920200341994e-11,
+            3.025201772936174e-11,
+            5.88391291804312e-11,
+            1.6080323476846053e-10
+          ],
+          "integrals": [
+            {
+              "stride": 1,
+              "raw_error": [
+                3.0966770578994494e-08,
+                1.7543249888673567e-10
+              ],
+              "defect_accounted_error": [
+                1.227265902475477e-12,
+                1.7543249888673567e-10
+              ]
+            },
+            {
+              "stride": 2,
+              "raw_error": [
+                3.098322694011932e-08,
+                1.7903713176880422e-09
+              ],
+              "defect_accounted_error": [
+                1.900482120592011e-11,
+                1.7903713176880422e-09
+              ]
+            },
+            {
+              "stride": 4,
+              "raw_error": [
+                3.1247823052940416e-08,
+                2.8232796296746085e-08
+              ],
+              "defect_accounted_error": [
+                3.054442645593027e-10,
+                2.8232796296746085e-08
+              ]
+            }
+          ],
+          "integral_refinement": [
+            3.04268015537777e-10,
+            2.8118557104068052e-08
+          ],
+          "field_defects": [
+            {
+              "species": "slow_scalar",
+              "field_rate_relative": 0.0759123019030598,
+              "acceleration_relative": 2.9830116799249995e-10
+            },
+            {
+              "species": "heavy_scalar",
+              "field_rate_relative": 0.0,
+              "acceleration_relative": 0.0
+            }
+          ],
+          "predicted_defect_contributions": {
+            "cdm": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "baryon": {
+              "continuity": 1.574668847695253e-12,
+              "momentum": 0.0
+            },
+            "photon": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "massless": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "massive_neutrino": {
+              "continuity": 6.997478067366018e-08,
+              "momentum": 0.0
+            },
+            "slow_scalar": {
+              "continuity": 1.7648099554695726e-35,
+              "momentum": 1.5058235290709019e-34
+            },
+            "heavy_scalar": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            }
+          },
+          "maximum_neutrino_enthalpy_mismatch": 1.2236555985501664e-06,
+          "pressure_peak": 1.5575533510461184e-05,
+          "continuity_scale": 0.0004300853196036026,
+          "momentum_scale": 0.0001226878214406576,
+          "tag": "L64-base",
+          "file": "cold-L64-base.npz",
+          "sha256": "5be8c155c2df406d7fde384cb5d556e802b591f6184d7b904e87d72ee68ec2cc",
+          "input_sha256": "72a27a3d5ccba407f57d6192b414965913952ee079682b8a565d9602778f492d"
+        },
+        {
+          "numerical_passed": true,
+          "raw_continuity": 6.997478073265537e-08,
+          "raw_momentum": 2.968706779851095e-16,
+          "raw_balance_within_gate": true,
+          "decomposition_continuity": 1.6248004660185052e-16,
+          "decomposition_momentum": 2.968706779851095e-16,
+          "species_continuity": {
+            "cdm": 5.76389707722505e-17,
+            "baryon": 1.9785828221062653e-16,
+            "photon": 3.005753244617394e-16,
+            "massless": 2.8403579376771574e-16,
+            "massive_neutrino": 4.194432709761797e-16,
+            "slow_scalar": 3.5801362478038365e-16,
+            "heavy_scalar": 0.0
+          },
+          "grouped_momentum": {
+            "cdm": 0.0,
+            "photon_baryon": 3.7407664372361154e-16,
+            "massless": 4.233353783669978e-16,
+            "massive_neutrino": 4.445218034493305e-16,
+            "slow_scalar": 3.175328974579054e-16,
+            "heavy_scalar": 0.0
+          },
+          "original_source_errors": {
+            "D": 1.589310933016676e-16,
+            "Q": 2.227653453097384e-16,
+            "Pi": 1.1360653452843568e-16,
+            "enthalpy": 4.177417204815416e-16,
+            "massive_pressure": 4.024766176836248e-16,
+            "slow_scalarD": 0.0,
+            "slow_scalarP": 0.0,
+            "slow_scalarQ": 0.0,
+            "heavy_scalarD": 0.0,
+            "heavy_scalarP": 0.0,
+            "heavy_scalarQ": 0.0
+          },
+          "independent_rate_difference": [
+            [
+              3.35271787087803e-10,
+              2.1453217322827273e-10
+            ],
+            [
+              9.33199444220659e-11,
+              5.3607553852576995e-11
+            ],
+            [
+              1.7995257081218465e-11,
+              1.2970790814894338e-11
+            ],
+            [
+              3.701916749310738e-11,
+              2.145367022321043e-12
+            ]
+          ],
+          "richardson_errors": [
+            [
+              1.2669288185150036e-11,
+              1.2960131086363894e-13
+            ],
+            [
+              3.6401799031690417e-11,
+              5.748520960872594e-13
+            ],
+            [
+              4.336049197123877e-11,
+              1.463089164618707e-12
+            ]
+          ],
+          "richardson_change": [
+            6.049921018362118e-11,
+            1.0873751577361568e-12
+          ],
+          "thermal_scale_derivative_errors": [
+            2.236920200341994e-11,
+            3.025201772936174e-11,
+            5.88391291804312e-11,
+            1.6080323476846053e-10
+          ],
+          "integrals": [
+            {
+              "stride": 1,
+              "raw_error": [
+                3.0966760725266705e-08,
+                1.1347104207581169e-10
+              ],
+              "defect_accounted_error": [
+                1.1878509913366636e-12,
+                1.1347104207581169e-10
+              ]
+            },
+            {
+              "stride": 2,
+              "raw_error": [
+                3.098321978822012e-08,
+                1.7812415027718622e-09
+              ],
+              "defect_accounted_error": [
+                1.898686199237702e-11,
+                1.7812415027718622e-09
+              ]
+            },
+            {
+              "stride": 4,
+              "raw_error": [
+                3.1247817808214335e-08,
+                2.822123282606457e-08
+              ],
+              "defect_accounted_error": [
+                3.0546111125519264e-10,
+                2.822123282606457e-08
+              ]
+            }
+          ],
+          "integral_refinement": [
+            3.042740549193225e-10,
+            2.8108138480187676e-08
+          ],
+          "field_defects": [
+            {
+              "species": "slow_scalar",
+              "field_rate_relative": 0.0759123019030598,
+              "acceleration_relative": 2.9830116799249995e-10
+            },
+            {
+              "species": "heavy_scalar",
+              "field_rate_relative": 0.0,
+              "acceleration_relative": 0.0
+            }
+          ],
+          "predicted_defect_contributions": {
+            "cdm": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "baryon": {
+              "continuity": 1.5746688477438428e-12,
+              "momentum": 0.0
+            },
+            "photon": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "massless": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "massive_neutrino": {
+              "continuity": 6.997478067366018e-08,
+              "momentum": 0.0
+            },
+            "slow_scalar": {
+              "continuity": 1.764809955681956e-35,
+              "momentum": 1.50582352908116e-34
+            },
+            "heavy_scalar": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            }
+          },
+          "maximum_neutrino_enthalpy_mismatch": 1.2236555985501664e-06,
+          "pressure_peak": 1.5575533510808034e-05,
+          "continuity_scale": 0.0004300853196036026,
+          "momentum_scale": 0.00012268782144177204,
+          "tag": "L64-fine",
+          "file": "cold-L64-fine.npz",
+          "sha256": "70bc26da14a1fe8e023cc1f0db4e38553cf59e2855503f2aee8f0bda79c37010",
+          "input_sha256": "3df172d4de842fae986e9021fe1e57cf2d8d468b53b80228d5b3e64f8b62ff61"
+        },
+        {
+          "numerical_passed": true,
+          "raw_continuity": 6.997478073265537e-08,
+          "raw_momentum": 3.1067861649537854e-16,
+          "raw_balance_within_gate": true,
+          "decomposition_continuity": 1.6983149319477708e-16,
+          "decomposition_momentum": 3.1067861649537854e-16,
+          "species_continuity": {
+            "cdm": 5.76389707722505e-17,
+            "baryon": 2.224315732009451e-16,
+            "photon": 2.254314934405314e-16,
+            "massless": 2.8403579376767866e-16,
+            "massive_neutrino": 4.248074724051121e-16,
+            "slow_scalar": 3.202700837298883e-16,
+            "heavy_scalar": 0.0
+          },
+          "grouped_momentum": {
+            "cdm": 0.0,
+            "photon_baryon": 3.6022195321237064e-16,
+            "massless": 4.233353783670051e-16,
+            "massive_neutrino": 4.445218034493297e-16,
+            "slow_scalar": 3.3941247906578716e-16,
+            "heavy_scalar": 0.0
+          },
+          "original_source_errors": {
+            "D": 1.589310933016676e-16,
+            "Q": 2.2276534530945344e-16,
+            "Pi": 1.136065345289049e-16,
+            "enthalpy": 4.177417204815416e-16,
+            "massive_pressure": 4.0247661768362606e-16,
+            "slow_scalarD": 0.0,
+            "slow_scalarP": 0.0,
+            "slow_scalarQ": 0.0,
+            "heavy_scalarD": 0.0,
+            "heavy_scalarP": 0.0,
+            "heavy_scalarQ": 0.0
+          },
+          "independent_rate_difference": [
+            [
+              3.35271534997782e-10,
+              2.144965487464545e-10
+            ],
+            [
+              9.33198183770554e-11,
+              5.366168097142478e-11
+            ],
+            [
+              2.0948743767196894e-11,
+              1.2969686179785647e-11
+            ],
+            [
+              3.706303115676053e-11,
+              2.1304544487246642e-12
+            ]
+          ],
+          "richardson_errors": [
+            [
+              1.2669288185150036e-11,
+              1.276129677177906e-13
+            ],
+            [
+              3.6401925076700915e-11,
+              5.942936735093818e-13
+            ],
+            [
+              4.341979614867786e-11,
+              1.4825859737929681e-12
+            ]
+          ],
+          "richardson_change": [
+            6.049908413861068e-11,
+            1.138602609609285e-12
+          ],
+          "thermal_scale_derivative_errors": [
+            2.236920200341994e-11,
+            3.025201772936174e-11,
+            5.88391291804312e-11,
+            1.6080323476846053e-10
+          ],
+          "integrals": [
+            {
+              "stride": 1,
+              "raw_error": [
+                3.096675754664484e-08,
+                1.140164830236567e-10
+              ],
+              "defect_accounted_error": [
+                1.1876920602433618e-12,
+                1.140164830236567e-10
+              ]
+            },
+            {
+              "stride": 2,
+              "raw_error": [
+                3.098321692746044e-08,
+                1.7826299434755607e-09
+              ],
+              "defect_accounted_error": [
+                1.898892809658994e-11,
+                1.7826299434755607e-09
+              ]
+            },
+            {
+              "stride": 4,
+              "raw_error": [
+                3.124781319921263e-08,
+                2.8225813995354753e-08
+              ],
+              "defect_accounted_error": [
+                3.0545046287194146e-10,
+                2.8225813995354753e-08
+              ]
+            }
+          ],
+          "integral_refinement": [
+            3.0427182988401626e-10,
+            2.811296519257987e-08
+          ],
+          "field_defects": [
+            {
+              "species": "slow_scalar",
+              "field_rate_relative": 0.0759123019030598,
+              "acceleration_relative": 2.9830116799249995e-10
+            },
+            {
+              "species": "heavy_scalar",
+              "field_rate_relative": 0.0,
+              "acceleration_relative": 0.0
+            }
+          ],
+          "predicted_defect_contributions": {
+            "cdm": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "baryon": {
+              "continuity": 1.574668847756321e-12,
+              "momentum": 0.0
+            },
+            "photon": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "massless": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "massive_neutrino": {
+              "continuity": 6.997478067366018e-08,
+              "momentum": 0.0
+            },
+            "slow_scalar": {
+              "continuity": 1.7648099556794656e-35,
+              "momentum": 1.5058235290786507e-34
+            },
+            "heavy_scalar": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            }
+          },
+          "maximum_neutrino_enthalpy_mismatch": 1.2236555985501664e-06,
+          "pressure_peak": 1.5575533510895407e-05,
+          "continuity_scale": 0.0004300853196036026,
+          "momentum_scale": 0.00012268782144203515,
+          "tag": "L128-fine",
+          "file": "cold-L128-fine.npz",
+          "sha256": "94b48c9414d7ec3e6f166b0da59e3c48d794320a4377c93b56177a696e3dc06f",
+          "input_sha256": "bf731f669b02877158d0b9fb63e506a81e72f175b86daddc83e8fd68491de959"
+        },
+        {
+          "numerical_passed": true,
+          "raw_continuity": 6.997478073265537e-08,
+          "raw_momentum": 3.382944935183985e-16,
+          "raw_balance_within_gate": true,
+          "decomposition_continuity": 1.6108586864717378e-16,
+          "decomposition_momentum": 3.382944935183985e-16,
+          "species_continuity": {
+            "cdm": 5.76389707722505e-17,
+            "baryon": 2.6955586416365893e-16,
+            "photon": 2.2543149345158657e-16,
+            "massless": 2.1302684532576273e-16,
+            "massive_neutrino": 3.5244990795613595e-16,
+            "slow_scalar": 3.250351668142166e-16,
+            "heavy_scalar": 0.0
+          },
+          "grouped_momentum": {
+            "cdm": 0.0,
+            "photon_baryon": 4.0178602474231306e-16,
+            "massless": 3.52779481972503e-16,
+            "massive_neutrino": 4.445218034493339e-16,
+            "slow_scalar": 2.939610888393991e-16,
+            "heavy_scalar": 0.0
+          },
+          "original_source_errors": {
+            "D": 1.589310933016676e-16,
+            "Q": 2.2276534530968936e-16,
+            "Pi": 1.1360653452808526e-16,
+            "enthalpy": 4.177417204815416e-16,
+            "massive_pressure": 4.024766176836224e-16,
+            "slow_scalarD": 0.0,
+            "slow_scalarP": 0.0,
+            "slow_scalarQ": 0.0,
+            "heavy_scalarD": 0.0,
+            "heavy_scalarP": 0.0,
+            "heavy_scalarQ": 0.0
+          },
+          "independent_rate_difference": [
+            [
+              3.352716610427925e-10,
+              2.1453813825801582e-10
+            ],
+            [
+              9.33199444220659e-11,
+              5.360319054408409e-11
+            ],
+            [
+              1.801094968502541e-11,
+              1.3118314829963904e-11
+            ],
+            [
+              4.093336924909808e-11,
+              2.3205069143970608e-12
+            ]
+          ],
+          "richardson_errors": [
+            [
+              1.2669288185150036e-11,
+              1.6064155663645097e-13
+            ],
+            [
+              3.640205112171141e-11,
+              5.239974585522329e-13
+            ],
+            [
+              6.00570442867958e-11,
+              1.2787808013765685e-12
+            ]
+          ],
+          "richardson_change": [
+            7.385481345093034e-11,
+            1.0839231731099708e-12
+          ],
+          "thermal_scale_derivative_errors": [
+            2.236920200341994e-11,
+            3.025201772936174e-11,
+            5.88391291804312e-11,
+            1.6080323476846053e-10
+          ],
+          "integrals": [
+            {
+              "stride": 1,
+              "raw_error": [
+                3.096675834130031e-08,
+                1.1417102648208606e-10
+              ],
+              "defect_accounted_error": [
+                1.1907117510160935e-12,
+                1.1417102648208606e-10
+              ]
+            },
+            {
+              "stride": 2,
+              "raw_error": [
+                3.098321803997809e-08,
+                1.7805604534195217e-09
+              ],
+              "defect_accounted_error": [
+                1.8983524439417684e-11,
+                1.7805604534195217e-09
+              ]
+            },
+            {
+              "stride": 4,
+              "raw_error": [
+                3.124781796714543e-08,
+                2.821683515968526e-08
+              ],
+              "defect_accounted_error": [
+                3.054588862198864e-10,
+                2.821683515968526e-08
+              ]
+            }
+          ],
+          "integral_refinement": [
+            3.042727834705761e-10,
+            2.810487402111998e-08
+          ],
+          "field_defects": [
+            {
+              "species": "slow_scalar",
+              "field_rate_relative": 0.0759123019030598,
+              "acceleration_relative": 2.9830116799249995e-10
+            },
+            {
+              "species": "heavy_scalar",
+              "field_rate_relative": 0.0,
+              "acceleration_relative": 0.0
+            }
+          ],
+          "predicted_defect_contributions": {
+            "cdm": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "baryon": {
+              "continuity": 1.5746688477339082e-12,
+              "momentum": 0.0
+            },
+            "photon": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "massless": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "massive_neutrino": {
+              "continuity": 6.997478067366018e-08,
+              "momentum": 0.0
+            },
+            "slow_scalar": {
+              "continuity": 1.7648099556774372e-35,
+              "momentum": 1.5058235290830026e-34
+            },
+            "heavy_scalar": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            }
+          },
+          "maximum_neutrino_enthalpy_mismatch": 1.2236555985501664e-06,
+          "pressure_peak": 1.5575533510744476e-05,
+          "continuity_scale": 0.0004300853196036026,
+          "momentum_scale": 0.00012268782144159683,
+          "tag": "G192-fine",
+          "file": "cold-G192-fine.npz",
+          "sha256": "5e4322ff29dcf8cb7c20851010c5093652ca1e3e49b6f819f7bba9a992400584",
+          "input_sha256": "119145239fb7705c81da3e98919e086ee3131e5c7bd31a486919910179bb2806"
+        },
+        {
+          "numerical_passed": true,
+          "raw_continuity": 0.0,
+          "raw_momentum": 0.0,
+          "raw_balance_within_gate": true,
+          "decomposition_continuity": 0.0,
+          "decomposition_momentum": 0.0,
+          "species_continuity": {
+            "cdm": 0.0,
+            "baryon": 0.0,
+            "photon": 0.0,
+            "massless": 0.0,
+            "massive_neutrino": 0.0,
+            "slow_scalar": 0.0,
+            "heavy_scalar": 0.0
+          },
+          "grouped_momentum": {
+            "cdm": 0.0,
+            "photon_baryon": 0.0,
+            "massless": 0.0,
+            "massive_neutrino": 0.0,
+            "slow_scalar": 0.0,
+            "heavy_scalar": 0.0
+          },
+          "original_source_errors": {
+            "D": 0.0,
+            "Q": 0.0,
+            "Pi": 0.0,
+            "enthalpy": 4.177417204815416e-16,
+            "massive_pressure": 0.0,
+            "slow_scalarD": 0.0,
+            "slow_scalarP": 0.0,
+            "slow_scalarQ": 0.0,
+            "heavy_scalarD": 0.0,
+            "heavy_scalarP": 0.0,
+            "heavy_scalarQ": 0.0
+          },
+          "independent_rate_difference": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "richardson_errors": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "richardson_change": [
+            0.0,
+            0.0
+          ],
+          "thermal_scale_derivative_errors": [
+            2.236920200341994e-11,
+            3.025201772936174e-11,
+            5.88391291804312e-11,
+            1.6080323476846053e-10
+          ],
+          "integrals": [
+            {
+              "stride": 1,
+              "raw_error": [
+                0.0,
+                0.0
+              ],
+              "defect_accounted_error": [
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "stride": 2,
+              "raw_error": [
+                0.0,
+                0.0
+              ],
+              "defect_accounted_error": [
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "stride": 4,
+              "raw_error": [
+                0.0,
+                0.0
+              ],
+              "defect_accounted_error": [
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "integral_refinement": [
+            0.0,
+            0.0
+          ],
+          "field_defects": [
+            {
+              "species": "slow_scalar",
+              "field_rate_relative": 0.0759123019030598,
+              "acceleration_relative": 2.9830116799249995e-10
+            },
+            {
+              "species": "heavy_scalar",
+              "field_rate_relative": 0.0,
+              "acceleration_relative": 0.0
+            }
+          ],
+          "predicted_defect_contributions": {
+            "cdm": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "baryon": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "photon": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "massless": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "massive_neutrino": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "slow_scalar": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "heavy_scalar": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            }
+          },
+          "maximum_neutrino_enthalpy_mismatch": 1.2236555985501664e-06,
+          "pressure_peak": 0.0,
+          "continuity_scale": 1e-80,
+          "momentum_scale": 1e-80,
+          "tag": "L64-zero",
+          "file": "cold-L64-zero.npz",
+          "sha256": "4035a49bc9438cdb13ee7a19fc8d26d86406cd3601c3a618be402981d00fb3a8",
+          "input_sha256": "fd947cda61c876392aa9712740b4cbd26c6b7258ff25f2c62bc574804c3eb022"
+        },
+        {
+          "numerical_passed": true,
+          "raw_continuity": 6.997478073265537e-08,
+          "raw_momentum": 3.1758258575439725e-16,
+          "raw_balance_within_gate": true,
+          "decomposition_continuity": 1.6188607925172904e-16,
+          "decomposition_momentum": 3.1758258575439725e-16,
+          "species_continuity": {
+            "cdm": 5.76389707722505e-17,
+            "baryon": 2.4166346626101263e-16,
+            "photon": 3.005753256285459e-16,
+            "massless": 2.8403579376768433e-16,
+            "massive_neutrino": 4.0886520381210643e-16,
+            "slow_scalar": 3.326185501865344e-16,
+            "heavy_scalar": 0.0
+          },
+          "grouped_momentum": {
+            "cdm": 0.0,
+            "photon_baryon": 4.1564071525641904e-16,
+            "massless": 4.233353783670016e-16,
+            "massive_neutrino": 4.93913114943701e-16,
+            "slow_scalar": 3.122813606091838e-16,
+            "heavy_scalar": 0.0
+          },
+          "original_source_errors": {
+            "D": 1.589310933016676e-16,
+            "Q": 2.2276534531023688e-16,
+            "Pi": 1.1360653452770668e-16,
+            "enthalpy": 4.177417204815416e-16,
+            "massive_pressure": 4.0247661768358716e-16,
+            "slow_scalarD": 0.0,
+            "slow_scalarP": 0.0,
+            "slow_scalarQ": 0.0,
+            "heavy_scalarD": 0.0,
+            "heavy_scalarP": 0.0,
+            "heavy_scalarQ": 0.0
+          },
+          "independent_rate_difference": [
+            [
+              3.332550669198423e-10,
+              2.1450881019826073e-10
+            ],
+            [
+              9.33200704670764e-11,
+              5.357386248309696e-11
+            ],
+            [
+              1.7985173480378662e-11,
+              1.3068274860900248e-11
+            ],
+            [
+              4.093733966692875e-11,
+              2.325698699294984e-12
+            ]
+          ],
+          "richardson_errors": [
+            [
+              1.3341738316154428e-11,
+              1.0191639415013939e-13
+            ],
+            [
+              3.640205112171141e-11,
+              4.336245010013518e-13
+            ],
+            [
+              6.00645439649204e-11,
+              1.2551416106554221e-12
+            ]
+          ],
+          "richardson_change": [
+            7.387107325728452e-11,
+            1.1684829885600049e-12
+          ],
+          "thermal_scale_derivative_errors": [
+            2.236920200341994e-11,
+            3.025201772936174e-11,
+            5.88391291804312e-11,
+            1.6080323476846053e-10
+          ],
+          "integrals": [
+            {
+              "stride": 1,
+              "raw_error": [
+                3.0966770578994494e-08,
+                1.7543249888673567e-10
+              ],
+              "defect_accounted_error": [
+                1.227265902475477e-12,
+                1.7543249888673567e-10
+              ]
+            },
+            {
+              "stride": 2,
+              "raw_error": [
+                3.098322694011932e-08,
+                1.7903713176880422e-09
+              ],
+              "defect_accounted_error": [
+                1.900482120592011e-11,
+                1.7903713176880422e-09
+              ]
+            },
+            {
+              "stride": 4,
+              "raw_error": [
+                3.1247823052940416e-08,
+                2.8232796296746085e-08
+              ],
+              "defect_accounted_error": [
+                3.054442645593027e-10,
+                2.8232796296746085e-08
+              ]
+            }
+          ],
+          "integral_refinement": [
+            3.04268015537777e-10,
+            2.8118557104068052e-08
+          ],
+          "field_defects": [
+            {
+              "species": "slow_scalar",
+              "field_rate_relative": 0.0759123019030598,
+              "acceleration_relative": 2.9830116799249995e-10
+            },
+            {
+              "species": "heavy_scalar",
+              "field_rate_relative": 0.0,
+              "acceleration_relative": 0.0
+            }
+          ],
+          "predicted_defect_contributions": {
+            "cdm": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "baryon": {
+              "continuity": 1.574668847695253e-12,
+              "momentum": 0.0
+            },
+            "photon": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "massless": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            },
+            "massive_neutrino": {
+              "continuity": 6.997478067366018e-08,
+              "momentum": 0.0
+            },
+            "slow_scalar": {
+              "continuity": 1.7648099554695726e-35,
+              "momentum": 1.5058235290709019e-34
+            },
+            "heavy_scalar": {
+              "continuity": 0.0,
+              "momentum": 0.0
+            }
+          },
+          "maximum_neutrino_enthalpy_mismatch": 1.2236555985501664e-06,
+          "pressure_peak": 1.5575533510461184e-05,
+          "continuity_scale": 0.0004300853196036026,
+          "momentum_scale": 0.0001226878214406576,
+          "tag": "L64-negative",
+          "file": "cold-L64-negative.npz",
+          "sha256": "9a8e60ba53d975ac9bb8b7429a1a7552c4f031ecadf1db6b0fe079b573dae245",
+          "input_sha256": "4c2803cbf5461725b2322e1ba79ffdf289ae5af1ba5cf1ce5519701076c9fd59"
+        }
+      ],
+      "zero": true,
+      "sign_error": 0.0,
+      "numerical_passed": true
+    }
+  ],
+  "source_sha256": "1a03259f8d51068908ef3c4039830775d4fe5bfa1909fcffd8fc303a53983b43",
+  "readout_sha256": "4e6c77c15042127101dc0134e1760f77bc1834a20b0363b7859a81c0f76391f9",
+  "csv_sha256": "a7c2211b8b1ea5b7d5fc13de3967e1041ec9d7cb96b8a7d59fa26fda5acff1eb",
+  "numerical_gate": 2e-05,
+  "algebra_gate": 1e-10,
+  "original_trajectories_unchanged": true,
+  "physical_residuals_reported_without_redefining_tolerance": true
+}

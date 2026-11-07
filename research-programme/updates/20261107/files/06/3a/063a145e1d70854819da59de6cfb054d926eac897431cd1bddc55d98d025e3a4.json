@@ -1,0 +1,25 @@
+{
+  "state": "failed",
+  "checks": [],
+  "cases": [],
+  "inputs": {
+    "scripts\\validate_annular_wave_flux_events_20260929.py": "b7d7860ffd54d3754c3696676ee157a7ad0b16e0d92fb972b625bb9de30de0c6",
+    "scripts\\annular_wave_flux_events_20260929.py": "4a9730480fa9f134013b9a88900e1468aac3adf3b2e3ef9f43a50b936278b435"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-wave-flux-events-manufactured-attempt01\\executed-validate_annular_wave_flux_events_20260929.py": "b7d7860ffd54d3754c3696676ee157a7ad0b16e0d92fb972b625bb9de30de0c6"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "diagnostic_only": true,
+  "accepted_for_C0": false,
+  "manufactured_data_only": true,
+  "github_action": false,
+  "subagents_used": false,
+  "original_workbench_write": false,
+  "error": "TypeError('EulerianWaveFlux.evaluate() takes 3 positional arguments but 7 were given')",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\validate_annular_wave_flux_events_20260929.py\", line 26, in main\n    result, diagnostics = wave.integrate(order, order, (1, 5), perf_counter()+300, lambda stage: None)\n                          ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\annular_wave_flux_form_v2_20260929.py\", line 298, in integrate\n    result, diagnostic = self.fixed_label(label, radial_order, shape)\n                         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\annular_wave_flux_form_v2_20260929.py\", line 240, in fixed_label\n    interior = self.evaluate(data, offsets, np.repeat(cells, radial_order),\n        np.repeat(metric_cells, radial_order), [np.repeat(item, radial_order) for item in response_cells], local)\nTypeError: EulerianWaveFlux.evaluate() takes 3 positional arguments but 7 were given\n"
+}

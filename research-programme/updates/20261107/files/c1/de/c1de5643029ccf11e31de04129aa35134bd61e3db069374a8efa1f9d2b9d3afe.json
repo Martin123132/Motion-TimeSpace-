@@ -1,0 +1,1388 @@
+{
+  "stage": 230,
+  "state": "complete",
+  "finished_at": "2026-10-26T18:45:19.523241+00:00",
+  "models": [
+    {
+      "model": "heavy",
+      "refinement": {
+        "NR_H": 3.873991368559175e-07,
+        "NR_fields": 1.0672194690671474e-05,
+        "NR_clocks": 6.648729362613599e-07,
+        "NR_gas": 1.526886783449661e-05,
+        "NR_spectrum": 8.63788322625698e-06,
+        "EOS_H": 2.4452321954892087e-07,
+        "EOS_fields": 1.0110699292170522e-05,
+        "EOS_clocks": 9.212318589714434e-08,
+        "EOS_gas": 4.652273063494256e-05,
+        "EOS_spectrum": 2.250975012173479e-05
+      },
+      "continuity": {
+        "NR": {
+          "coarse": 1.9384020723070823e-06,
+          "fine": 4.83922504195147e-07,
+          "ratio": 0.2496502202038937
+        },
+        "EOS": {
+          "coarse": 3.435940624745099e-07,
+          "fine": 8.575740915958538e-08,
+          "ratio": 0.24958932218436528
+        }
+      },
+      "final_NR": -2.1557944828921262e-10,
+      "final_EOS": 9.425628460216214e-14,
+      "minimum_scaled_slope_over_two": 0.9999999668348939,
+      "fine_reference_comparisons": [
+        {
+          "name": "No-heat background versus independent retained parent",
+          "value": 2.435838585489606e-09,
+          "limit": 0.01,
+          "passed": true
+        },
+        {
+          "name": "NR heat H response versus Stage228",
+          "value": 1.2829830844822324e-07,
+          "limit": 0.01,
+          "passed": true
+        },
+        {
+          "name": "EOS H response versus Stage228",
+          "value": 8.077909862975195e-08,
+          "limit": 0.01,
+          "passed": true
+        },
+        {
+          "name": "NR: paired scalar fields versus Stage228",
+          "value": 3.570975966279287e-06,
+          "limit": 0.01,
+          "passed": true
+        },
+        {
+          "name": "NR: paired clocks versus Stage228",
+          "value": 2.209196070422641e-07,
+          "limit": 0.01,
+          "passed": true
+        },
+        {
+          "name": "EOS: paired scalar fields versus Stage228",
+          "value": 3.3796498240721025e-06,
+          "limit": 0.01,
+          "passed": true
+        },
+        {
+          "name": "EOS: paired clocks versus Stage228",
+          "value": 3.042576363519971e-08,
+          "limit": 0.01,
+          "passed": true
+        }
+      ],
+      "elapsed_seconds": 55.261684800032526
+    },
+    {
+      "model": "cold",
+      "refinement": {
+        "NR_H": 3.8038291246313714e-14,
+        "NR_fields": 4.046998975295655e-06,
+        "NR_clocks": 5.700816512230194e-07,
+        "NR_gas": 1.5261857899719643e-05,
+        "NR_spectrum": 8.635582852586957e-06,
+        "EOS_H": 1.576201079173664e-07,
+        "EOS_fields": 2.684996827738645e-06,
+        "EOS_clocks": 6.250112990850185e-08,
+        "EOS_gas": 4.65060894431691e-05,
+        "EOS_spectrum": 2.250322811377996e-05
+      },
+      "continuity": {
+        "NR": {
+          "coarse": 1.9384020150452664e-06,
+          "fine": 4.839223748693832e-07,
+          "ratio": 0.24965016086102365
+        },
+        "EOS": {
+          "coarse": 3.4359402501248596e-07,
+          "fine": 8.575734398419476e-08,
+          "ratio": 0.24958915970985932
+        }
+      },
+      "final_NR": -2.1406216967246027e-10,
+      "final_EOS": 9.293897544949382e-14,
+      "minimum_scaled_slope_over_two": 0.9999999988489054,
+      "fine_reference_comparisons": [
+        {
+          "name": "No-heat background versus independent retained parent",
+          "value": 2.054954797783171e-16,
+          "limit": 0.01,
+          "passed": true
+        },
+        {
+          "name": "NR heat H response versus Stage228",
+          "value": 7.296134299150488e-10,
+          "limit": 0.01,
+          "passed": true
+        },
+        {
+          "name": "EOS H response versus Stage228",
+          "value": 5.224153301963118e-08,
+          "limit": 0.01,
+          "passed": true
+        },
+        {
+          "name": "NR: paired scalar fields versus Stage228",
+          "value": 1.350606698791719e-06,
+          "limit": 0.01,
+          "passed": true
+        },
+        {
+          "name": "NR: paired clocks versus Stage228",
+          "value": 1.8941745265237756e-07,
+          "limit": 0.01,
+          "passed": true
+        },
+        {
+          "name": "EOS: paired scalar fields versus Stage228",
+          "value": 8.961747629096784e-07,
+          "limit": 0.01,
+          "passed": true
+        },
+        {
+          "name": "EOS: paired clocks versus Stage228",
+          "value": 2.0595003654219864e-08,
+          "limit": 0.01,
+          "passed": true
+        }
+      ],
+      "elapsed_seconds": 51.5052893999964
+    }
+  ],
+  "checks": [
+    {
+      "name": "Field position implicit equation",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Field momentum implicit equation",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Analytic field logarithmic-H derivative",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Thermal density derivative loses leading exchange term",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "heavy:1: original fixed-H NR solve",
+      "value": 1.0425439341214805e-12,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "heavy:1: original fixed-H EOS difference",
+      "value": 1.042553555135117e-12,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "heavy:1:nr: independent root Jacobian",
+      "value": 3.7969627442180354e-14,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "heavy:1:nr: scaled small-source residual",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "heavy:1:nr: positive sampled branch Jacobian",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "heavy:1:eos: independent root Jacobian",
+      "value": -3.6193270602780103e-14,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "heavy:1:eos: scaled small-source residual",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "heavy:1:eos: positive sampled branch Jacobian",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "heavy:1: full80-digit NR difference Friedmann residual",
+      "value": -1.5921082844026698e-16,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "heavy:1: full80-digit EOS difference Friedmann residual",
+      "value": -2.064306531728429e-16,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200: original fixed-H NR solve",
+      "value": 3.2278689176176435e-15,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200: original fixed-H EOS difference",
+      "value": 1.9949455638814704e-15,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:nr: independent root Jacobian",
+      "value": -5.473399511402022e-14,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:nr: scaled small-source residual",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:nr: positive sampled branch Jacobian",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:eos: independent root Jacobian",
+      "value": 1.7608137170554983e-13,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:eos: scaled small-source residual",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:eos: positive sampled branch Jacobian",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200: full80-digit NR difference Friedmann residual",
+      "value": 6.044890919068408e-17,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200: full80-digit EOS difference Friedmann residual",
+      "value": -2.000827687012498e-16,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400: original fixed-H NR solve",
+      "value": 7.20296094093201e-15,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400: original fixed-H EOS difference",
+      "value": 2.4285516229777007e-15,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:nr: independent root Jacobian",
+      "value": 8.837375276016246e-14,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:nr: scaled small-source residual",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:nr: positive sampled branch Jacobian",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:eos: independent root Jacobian",
+      "value": -3.552713678800501e-14,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:eos: scaled small-source residual",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:eos: positive sampled branch Jacobian",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400: full80-digit NR difference Friedmann residual",
+      "value": -1.7482954521439893e-17,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400: full80-digit EOS difference Friedmann residual",
+      "value": 6.080932166448581e-17,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "cold:1: original fixed-H NR solve",
+      "value": 7.069052946670568e-15,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "cold:1: original fixed-H EOS difference",
+      "value": 7.077992935409362e-15,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "cold:1:nr: independent root Jacobian",
+      "value": -1.0658141036401503e-14,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "cold:1:nr: scaled small-source residual",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "cold:1:nr: positive sampled branch Jacobian",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "cold:1:eos: independent root Jacobian",
+      "value": 6.150635556423367e-14,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "cold:1:eos: scaled small-source residual",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "cold:1:eos: positive sampled branch Jacobian",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "cold:1: full80-digit NR difference Friedmann residual",
+      "value": -4.938819036537078e-17,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "cold:1: full80-digit EOS difference Friedmann residual",
+      "value": -6.726009982080322e-17,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "cold:3200: original fixed-H NR solve",
+      "value": 1.863258328944879e-16,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "cold:3200: original fixed-H EOS difference",
+      "value": 2.2736063747041357e-16,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:nr: independent root Jacobian",
+      "value": 6.439293542825908e-15,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:nr: scaled small-source residual",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:nr: positive sampled branch Jacobian",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:eos: independent root Jacobian",
+      "value": -2.7977620220553945e-14,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:eos: scaled small-source residual",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:eos: positive sampled branch Jacobian",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "cold:3200: full80-digit NR difference Friedmann residual",
+      "value": -7.887058466936744e-18,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "cold:3200: full80-digit EOS difference Friedmann residual",
+      "value": -5.47355433568058e-17,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "cold:6400: original fixed-H NR solve",
+      "value": 1.5398738616079385e-16,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "cold:6400: original fixed-H EOS difference",
+      "value": 5.3462347591634835e-17,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:nr: independent root Jacobian",
+      "value": 1.2212453270876722e-14,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:nr: scaled small-source residual",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:nr: positive sampled branch Jacobian",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:eos: independent root Jacobian",
+      "value": -2.0317081350640365e-13,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:eos: scaled small-source residual",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:eos: positive sampled branch Jacobian",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "cold:6400: full80-digit NR difference Friedmann residual",
+      "value": -4.875438228995258e-17,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "cold:6400: full80-digit EOS difference Friedmann residual",
+      "value": 3.9972038798633e-16,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:NR: energy-row perturbation condition",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:NR: positive source density floor",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:NR: sufficient physical-model root Jacobian",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:NR: root lies in physical sufficient bracket",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:EOS: energy-row perturbation condition",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:EOS: positive source density floor",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:EOS: sufficient physical-model root Jacobian",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:EOS: root lies in physical sufficient bracket",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:NR: energy-row perturbation condition",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:NR: positive source density floor",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:NR: sufficient physical-model root Jacobian",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:NR: root lies in physical sufficient bracket",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:EOS: energy-row perturbation condition",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:EOS: positive source density floor",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:EOS: sufficient physical-model root Jacobian",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:EOS: root lies in physical sufficient bracket",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:NR: energy-row perturbation condition",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:NR: positive source density floor",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:NR: sufficient physical-model root Jacobian",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:NR: root lies in physical sufficient bracket",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:EOS: energy-row perturbation condition",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:EOS: positive source density floor",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:EOS: sufficient physical-model root Jacobian",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:EOS: root lies in physical sufficient bracket",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:NR: energy-row perturbation condition",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:NR: positive source density floor",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:NR: sufficient physical-model root Jacobian",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:NR: root lies in physical sufficient bracket",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:EOS: energy-row perturbation condition",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:EOS: positive source density floor",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:EOS: sufficient physical-model root Jacobian",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:EOS: root lies in physical sufficient bracket",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:NR thermal energy/work budget",
+      "value": 1.1102230246251565e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:EOS difference thermal energy/work budget",
+      "value": 6.805728271327684e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:no_heat: scaled Friedmann residual",
+      "value": 5.050864033110558e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:NR: scaled Friedmann residual",
+      "value": 2.220446049250313e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:EOS: scaled Friedmann residual",
+      "value": 2.220446049250313e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:Positive sampled root Jacobian",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:Small gas temperature departures",
+      "value": 1.077047418381195e-09,
+      "limit": 0.002,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:Positive heat capacity",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:No-heat background versus independent retained parent",
+      "value": 9.750814967699295e-09,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:NR heat H response versus Stage228",
+      "value": 5.156974950067947e-07,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:EOS H response versus Stage228",
+      "value": 3.2530965342306856e-07,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:NR: paired scalar fields versus Stage228",
+      "value": 1.4243132546800013e-05,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:NR: paired clocks versus Stage228",
+      "value": 8.857926901870919e-07,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:EOS: paired scalar fields versus Stage228",
+      "value": 1.349031494561954e-05,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:EOS: paired clocks versus Stage228",
+      "value": 1.2254895233526232e-07,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:Kinetic EOS density versus Stage229",
+      "value": 6.049228367863464e-15,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:Kinetic EOS pressure versus Stage229",
+      "value": 6.262612330343435e-15,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:Kinetic EOS gas versus Stage229",
+      "value": 5.31220980423835e-09,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:Kinetic EOS spectrum versus Stage229",
+      "value": 6.972254686234664e-10,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:NR thermal energy/work budget",
+      "value": 3.241851231905457e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:EOS difference thermal energy/work budget",
+      "value": 1.5049285076299648e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:no_heat: scaled Friedmann residual",
+      "value": 5.0970384908129e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:NR: scaled Friedmann residual",
+      "value": 3.3306690738754696e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:EOS: scaled Friedmann residual",
+      "value": 4.440892098500626e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:Positive sampled root Jacobian",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:Small gas temperature departures",
+      "value": 1.0770474430772028e-09,
+      "limit": 0.002,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:Positive heat capacity",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:No-heat background versus independent retained parent",
+      "value": 2.435838585489606e-09,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:NR heat H response versus Stage228",
+      "value": 1.2829830844822324e-07,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:EOS H response versus Stage228",
+      "value": 8.077909862975195e-08,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:NR: paired scalar fields versus Stage228",
+      "value": 3.570975966279287e-06,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:NR: paired clocks versus Stage228",
+      "value": 2.209196070422641e-07,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:EOS: paired scalar fields versus Stage228",
+      "value": 3.3796498240721025e-06,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:EOS: paired clocks versus Stage228",
+      "value": 3.042576363519971e-08,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:Kinetic EOS density versus Stage229",
+      "value": 1.0547371569672643e-14,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:Kinetic EOS pressure versus Stage229",
+      "value": 1.105166774631292e-14,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:Kinetic EOS gas versus Stage229",
+      "value": 1.4201108799513396e-09,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:Kinetic EOS spectrum versus Stage229",
+      "value": 1.900757007505305e-10,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy: matched time-refinement nodes",
+      "value": 0.0,
+      "limit": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "heavy:NR: paired H refinement",
+      "value": 3.873991368559175e-07,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:NR: paired fields refinement",
+      "value": 1.0672194690671474e-05,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:NR: paired clocks refinement",
+      "value": 6.648729362613599e-07,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:NR: paired gas refinement",
+      "value": 1.526886783449661e-05,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:NR: paired spectrum refinement",
+      "value": 8.63788322625698e-06,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:EOS: paired H refinement",
+      "value": 2.4452321954892087e-07,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:EOS: paired fields refinement",
+      "value": 1.0110699292170522e-05,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:EOS: paired clocks refinement",
+      "value": 9.212318589714434e-08,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:EOS: paired gas refinement",
+      "value": 4.652273063494256e-05,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:EOS: paired spectrum refinement",
+      "value": 2.250975012173479e-05,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:NR: finite-step total-stress continuity",
+      "value": 4.83922504195147e-07,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:NR: total-stress continuity convergence",
+      "value": 0.2496502202038937,
+      "limit": 0.8,
+      "passed": true
+    },
+    {
+      "name": "heavy:EOS: finite-step total-stress continuity",
+      "value": 8.575740915958538e-08,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:EOS: total-stress continuity convergence",
+      "value": 0.24958932218436528,
+      "limit": 0.8,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:NR thermal energy/work budget",
+      "value": 1.2878587085651816e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:EOS difference thermal energy/work budget",
+      "value": 8.818690154396927e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:no_heat: scaled Friedmann residual",
+      "value": 6.138472838055773e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:NR: scaled Friedmann residual",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:EOS: scaled Friedmann residual",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:Positive sampled root Jacobian",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:Small gas temperature departures",
+      "value": 1.0772883733644937e-09,
+      "limit": 0.002,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:Positive heat capacity",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:No-heat background versus independent retained parent",
+      "value": 2.054954797783171e-16,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:NR heat H response versus Stage228",
+      "value": 7.295779275099114e-10,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:EOS H response versus Stage228",
+      "value": 2.0868861207325063e-07,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:NR: paired scalar fields versus Stage228",
+      "value": 5.3976111399913e-06,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:NR: paired clocks versus Stage228",
+      "value": 7.594992118588111e-07,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:EOS: paired scalar fields versus Stage228",
+      "value": 3.581173996874719e-06,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:EOS: paired clocks versus Stage228",
+      "value": 8.309613484993271e-08,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:Kinetic EOS density versus Stage229",
+      "value": 7.13498730568517e-15,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:Kinetic EOS pressure versus Stage229",
+      "value": 7.367779212168334e-15,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:Kinetic EOS gas versus Stage229",
+      "value": 1.1315058626901734e-10,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:Kinetic EOS spectrum versus Stage229",
+      "value": 2.5117387244556113e-11,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:NR thermal energy/work budget",
+      "value": 2.4424906541753444e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:EOS difference thermal energy/work budget",
+      "value": 1.7733234007105572e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:no_heat: scaled Friedmann residual",
+      "value": 6.138472838055773e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:NR: scaled Friedmann residual",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:EOS: scaled Friedmann residual",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:Positive sampled root Jacobian",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:Small gas temperature departures",
+      "value": 1.0772883856385097e-09,
+      "limit": 0.002,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:Positive heat capacity",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:No-heat background versus independent retained parent",
+      "value": 2.054954797783171e-16,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:NR heat H response versus Stage228",
+      "value": 7.296134299150488e-10,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:EOS H response versus Stage228",
+      "value": 5.224153301963118e-08,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:NR: paired scalar fields versus Stage228",
+      "value": 1.350606698791719e-06,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:NR: paired clocks versus Stage228",
+      "value": 1.8941745265237756e-07,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:EOS: paired scalar fields versus Stage228",
+      "value": 8.961747629096784e-07,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:EOS: paired clocks versus Stage228",
+      "value": 2.0595003654219864e-08,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:Kinetic EOS density versus Stage229",
+      "value": 1.3339322867527347e-14,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:Kinetic EOS pressure versus Stage229",
+      "value": 1.3753186528744268e-14,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:Kinetic EOS gas versus Stage229",
+      "value": 1.1338542748067765e-10,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:Kinetic EOS spectrum versus Stage229",
+      "value": 2.5131662605641228e-11,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold: matched time-refinement nodes",
+      "value": 0.0,
+      "limit": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "cold:NR: paired H refinement",
+      "value": 3.8038291246313714e-14,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:NR: paired fields refinement",
+      "value": 4.046998975295655e-06,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:NR: paired clocks refinement",
+      "value": 5.700816512230194e-07,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:NR: paired gas refinement",
+      "value": 1.5261857899719643e-05,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:NR: paired spectrum refinement",
+      "value": 8.635582852586957e-06,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:EOS: paired H refinement",
+      "value": 1.576201079173664e-07,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:EOS: paired fields refinement",
+      "value": 2.684996827738645e-06,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:EOS: paired clocks refinement",
+      "value": 6.250112990850185e-08,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:EOS: paired gas refinement",
+      "value": 4.65060894431691e-05,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:EOS: paired spectrum refinement",
+      "value": 2.250322811377996e-05,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:NR: finite-step total-stress continuity",
+      "value": 4.839223748693832e-07,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:NR: total-stress continuity convergence",
+      "value": 0.24965016086102365,
+      "limit": 0.8,
+      "passed": true
+    },
+    {
+      "name": "cold:EOS: finite-step total-stress continuity",
+      "value": 8.575734398419476e-08,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:EOS: total-stress continuity convergence",
+      "value": 0.24958915970985932,
+      "limit": 0.8,
+      "passed": true
+    },
+    {
+      "name": "Protected workbench recent-mtime guard",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "No local bytecode",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    }
+  ],
+  "qualified": true,
+  "failed": [],
+  "inputs_rehashed": 237,
+  "protected_recent_mtime_count": 0,
+  "scope": "Two-way homogeneous kinetic/field/Friedmann benchmark in retained weak model; numerical convergence and conditional physical branch bound"
+}

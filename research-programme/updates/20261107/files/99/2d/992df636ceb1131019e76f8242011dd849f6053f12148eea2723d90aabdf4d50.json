@@ -1,0 +1,958 @@
+{
+  "science_config_sha256": "508063733ce6897fc455c4e2f0419614b557abb46f84d1b88a8b45540a2537e1",
+  "input_map_sha256": "3375546d009ecd858b2d9a43d4d4a052e7b5a448732d30e8e16ae826f7105e00",
+  "attempt_id": "batch449-450-20261102T1946",
+  "attempt_approval_sha256": "6e15637cf77ab7400c333cd82c55673ba5578c1250b2a77187e6c6018a37ab2e",
+  "runtime": {
+    "pid": 26204,
+    "created_time": 1793649254.2826643,
+    "priority": "BelowNormal",
+    "cpu_affinity": [
+      2
+    ],
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1"
+    },
+    "mutex_owned": true
+  },
+  "saved_utc": "2026-11-02T20:04:40.893703+00:00",
+  "state": "paired_passed",
+  "cell": 450,
+  "previous_hash": "3452f9ddb816c11d9164cc038eac1f0be69b8f9094e63046dc0f884bf7e27361",
+  "packet_sha256": "6f271447ecc64995ecfbe94e3722155189d5bc9cb3b64e65d18bf75ec0c0f31a",
+  "case_heads": {
+    "heavy-bank-s1": "a4fd27856718be097f8e32c722d177dc1fce7a15d48878aca969bef1d4d6c2d8",
+    "heavy-candidate-s1": "a6eb700989dda7ab8fb98c6f1817018f983ff76d8a05072d1128251de01de3bc",
+    "heavy-bank-s2": "1c9962e54a9b464c02235c81fef750af95b793952ded13d436ff3c1b3802c76a",
+    "heavy-candidate-s2": "2fded4fad327e6e86a9ce62293812eb1626033528087276b4a3e4df12cc86fab",
+    "heavy-bank-s4": "4a748e3cd6fa1418b25ab19ac4c89d78fa25abc008ae97cd75a91403a85a734d",
+    "heavy-candidate-s4": "01d6cdc7d3d08573961afecc6b5a240c4e9bb318ab456e33f5e608feed3a89af",
+    "cold-bank-s1": "17cf85a2f9b43035dff4385c51f671f855c3e95bbc01e53f4eb18eaae1273038",
+    "cold-candidate-s1": "8ad5edc47af3df12770312dd5d18216be53738d25e01399c9058dc1a58ef285a",
+    "cold-bank-s2": "de34a351277e6efdfef234d418d912e7008c6cac8f835ca9a6ac0225acc7d4a5",
+    "cold-candidate-s2": "3f0f489caecd3f72f029fb206f80cfb05b4b332af7f1156fffabb35f0fd7b43e",
+    "cold-bank-s4": "006d812639dbd02ec1b2a60138a88b0d7f12ea4493b772d5e9cd57ddbe847bf6",
+    "cold-candidate-s4": "7a662260aaacda9faff669f9f761d615ba26a5cfb65512fbc5e6e067660fbc49"
+  },
+  "checks": [
+    {
+      "name": "paired:cell450:heavy:bank:1vs2:core",
+      "value": 7.134359583105265e-06,
+      "limit": 0.0001,
+      "strict": true,
+      "passed": true
+    },
+    {
+      "name": "paired:cell450:heavy:bank:1vs2:history_L2",
+      "value": 3.824629687004977e-06,
+      "limit": 0.01,
+      "strict": false,
+      "passed": true,
+      "raw_numerator": 0.00012977414455695048,
+      "denominator": 33.93116593689757
+    },
+    {
+      "name": "paired:cell450:heavy:bank:1vs2:number",
+      "value": 1.1221891686905936e-14,
+      "limit": 3.216710415695169e-11,
+      "strict": true,
+      "passed": true,
+      "magnitude": 3.2167104156951692e-09,
+      "envelope": 3.22053098544874e-09
+    },
+    {
+      "name": "paired:cell450:heavy:bank:1vs2:energy",
+      "value": 2.603743874166413e-19,
+      "limit": 7.93946813856894e-16,
+      "strict": true,
+      "passed": true,
+      "magnitude": 7.93946813856894e-14,
+      "envelope": 7.949422956940597e-14
+    },
+    {
+      "name": "paired:cell450:heavy:bank:2vs4:core",
+      "value": 3.56678494339846e-06,
+      "limit": 0.0001,
+      "strict": true,
+      "passed": true
+    },
+    {
+      "name": "paired:cell450:heavy:bank:2vs4:history_L2",
+      "value": 1.837101013359233e-06,
+      "limit": 0.01,
+      "strict": false,
+      "passed": true,
+      "raw_numerator": 6.233499650539749e-05,
+      "denominator": 33.93117528764233
+    },
+    {
+      "name": "paired:cell450:heavy:bank:2vs4:number",
+      "value": 4.355778685636379e-15,
+      "limit": 3.216712459320388e-11,
+      "strict": true,
+      "passed": true,
+      "magnitude": 3.216712459320388e-09,
+      "envelope": 3.2205315547202523e-09
+    },
+    {
+      "name": "paired:cell450:heavy:bank:2vs4:energy",
+      "value": 9.449763107919402e-20,
+      "limit": 7.939473101590941e-16,
+      "strict": true,
+      "passed": true,
+      "magnitude": 7.939473101590941e-14,
+      "envelope": 7.949424362106407e-14
+    },
+    {
+      "name": "paired:cell450:heavy:candidate:1vs2:core",
+      "value": 7.1337436087226536e-06,
+      "limit": 0.0001,
+      "strict": true,
+      "passed": true
+    },
+    {
+      "name": "paired:cell450:heavy:candidate:1vs2:history_L2",
+      "value": 3.824300714789158e-06,
+      "limit": 0.01,
+      "strict": false,
+      "passed": true,
+      "raw_numerator": 0.0001297629000905774,
+      "denominator": 33.931144480548916
+    },
+    {
+      "name": "paired:cell450:heavy:candidate:1vs2:number",
+      "value": 1.1222782344575025e-14,
+      "limit": 3.216708380823591e-11,
+      "strict": true,
+      "passed": true,
+      "magnitude": 3.216708380823591e-09,
+      "envelope": 3.2205289246900566e-09
+    },
+    {
+      "name": "paired:cell450:heavy:candidate:1vs2:energy",
+      "value": 2.6039505162100307e-19,
+      "limit": 7.93946311971117e-16,
+      "strict": true,
+      "passed": true,
+      "magnitude": 7.93946311971117e-14,
+      "envelope": 7.949417870250712e-14
+    },
+    {
+      "name": "paired:cell450:heavy:candidate:2vs4:core",
+      "value": 3.5664769801879714e-06,
+      "limit": 0.0001,
+      "strict": true,
+      "passed": true
+    },
+    {
+      "name": "paired:cell450:heavy:candidate:2vs4:history_L2",
+      "value": 1.8369431011291796e-06,
+      "limit": 0.01,
+      "strict": false,
+      "passed": true,
+      "raw_numerator": 6.232959894224589e-05,
+      "denominator": 33.931153830476035
+    },
+    {
+      "name": "paired:cell450:heavy:candidate:2vs4:number",
+      "value": 4.356124596486748e-15,
+      "limit": 3.216710424273276e-11,
+      "strict": true,
+      "passed": true,
+      "magnitude": 3.216710424273276e-09,
+      "envelope": 3.220529493912307e-09
+    },
+    {
+      "name": "paired:cell450:heavy:candidate:2vs4:energy",
+      "value": 9.450513641332452e-20,
+      "limit": 7.939468082307048e-16,
+      "strict": true,
+      "passed": true,
+      "magnitude": 7.939468082307048e-14,
+      "envelope": 7.949419275294926e-14
+    },
+    {
+      "name": "paired:cell450:heavy:candidate_minus_bank:1vs2:core",
+      "value": 9.74334974190314e-10,
+      "limit": 0.0001,
+      "strict": true,
+      "passed": true
+    },
+    {
+      "name": "paired:cell450:heavy:candidate_minus_bank:1vs2:history_L2",
+      "value": 0.0008247530435368904,
+      "limit": 0.01,
+      "strict": false,
+      "passed": true,
+      "raw_numerator": 1.7697829126287996e-08,
+      "denominator": 2.1458337456255038e-05
+    },
+    {
+      "name": "paired:cell450:heavy:candidate_minus_bank:1vs2:number",
+      "value": 1.431790298796798e-18,
+      "limit": 2.0348715797077813e-17,
+      "strict": true,
+      "passed": true,
+      "magnitude": 2.0348715797077814e-15,
+      "envelope": 2.0607586835513727e-15
+    },
+    {
+      "name": "paired:cell450:heavy:candidate_minus_bank:1vs2:energy",
+      "value": 3.171380714394449e-23,
+      "limit": 5.0188577700089095e-22,
+      "strict": true,
+      "passed": true,
+      "magnitude": 5.018857770008909e-20,
+      "envelope": 5.0866898849151623e-20
+    },
+    {
+      "name": "paired:cell450:heavy:candidate_minus_bank:2vs4:core",
+      "value": 4.869346733268931e-10,
+      "limit": 0.0001,
+      "strict": true,
+      "passed": true
+    },
+    {
+      "name": "paired:cell450:heavy:candidate_minus_bank:2vs4:history_L2",
+      "value": 0.00039691777556175766,
+      "limit": 0.01,
+      "strict": false,
+      "passed": true,
+      "raw_numerator": 8.517520571417758e-09,
+      "denominator": 2.145915626822939e-05
+    },
+    {
+      "name": "paired:cell450:heavy:candidate_minus_bank:2vs4:number",
+      "value": 5.060023751371081e-19,
+      "limit": 2.0350471126113893e-17,
+      "strict": true,
+      "passed": true,
+      "magnitude": 2.035047112611389e-15,
+      "envelope": 2.0608079454409287e-15
+    },
+    {
+      "name": "paired:cell450:heavy:candidate_minus_bank:2vs4:energy",
+      "value": 1.0171543392883172e-23,
+      "limit": 5.019283896369712e-22,
+      "strict": true,
+      "passed": true,
+      "magnitude": 5.019283896369712e-20,
+      "envelope": 5.086811480887226e-20
+    },
+    {
+      "name": "paired:cell450:cold:bank:1vs2:core",
+      "value": 7.140131264904426e-06,
+      "limit": 0.0001,
+      "strict": true,
+      "passed": true
+    },
+    {
+      "name": "paired:cell450:cold:bank:1vs2:history_L2",
+      "value": 3.829662928705044e-06,
+      "limit": 0.01,
+      "strict": false,
+      "passed": true,
+      "raw_numerator": 0.00012990095413932022,
+      "denominator": 33.91968341799854
+    },
+    {
+      "name": "paired:cell450:cold:bank:1vs2:number",
+      "value": 1.1208268522330367e-14,
+      "limit": 3.215623358707107e-11,
+      "strict": true,
+      "passed": true,
+      "magnitude": 3.215623358707107e-09,
+      "envelope": 3.2194332845178124e-09
+    },
+    {
+      "name": "paired:cell450:cold:bank:1vs2:energy",
+      "value": 2.60120497704007e-19,
+      "limit": 7.936786355079449e-16,
+      "strict": true,
+      "passed": true,
+      "magnitude": 7.936786355079449e-14,
+      "envelope": 7.946713438224708e-14
+    },
+    {
+      "name": "paired:cell450:cold:bank:2vs4:core",
+      "value": 3.569691423344068e-06,
+      "limit": 0.0001,
+      "strict": true,
+      "passed": true
+    },
+    {
+      "name": "paired:cell450:cold:bank:2vs4:history_L2",
+      "value": 1.8395492708679605e-06,
+      "limit": 0.01,
+      "strict": false,
+      "passed": true,
+      "raw_numerator": 6.2396946116842e-05,
+      "denominator": 33.91969277746013
+    },
+    {
+      "name": "paired:cell450:cold:bank:2vs4:number",
+      "value": 4.352398362334532e-15,
+      "limit": 3.21562540586252e-11,
+      "strict": true,
+      "passed": true,
+      "magnitude": 3.21562540586252e-09,
+      "envelope": 3.219433854272897e-09
+    },
+    {
+      "name": "paired:cell450:cold:bank:2vs4:energy",
+      "value": 9.445543772502251e-20,
+      "limit": 7.936791328772912e-16,
+      "strict": true,
+      "passed": true,
+      "magnitude": 7.936791328772912e-14,
+      "envelope": 7.946714844584147e-14
+    },
+    {
+      "name": "paired:cell450:cold:candidate:1vs2:core",
+      "value": 7.139517282928054e-06,
+      "limit": 0.0001,
+      "strict": true,
+      "passed": true
+    },
+    {
+      "name": "paired:cell450:cold:candidate:1vs2:history_L2",
+      "value": 3.8293348776311566e-06,
+      "limit": 0.01,
+      "strict": false,
+      "passed": true,
+      "raw_numerator": 0.00012988974482654203,
+      "denominator": 33.91966202415089
+    },
+    {
+      "name": "paired:cell450:cold:candidate:1vs2:number",
+      "value": 1.1209156839051659e-14,
+      "limit": 3.2156213297761504e-11,
+      "strict": true,
+      "passed": true,
+      "magnitude": 3.21562132977615e-09,
+      "envelope": 3.2194312297801125e-09
+    },
+    {
+      "name": "paired:cell450:cold:candidate:1vs2:energy",
+      "value": 2.6014111257605195e-19,
+      "limit": 7.93678135087196e-16,
+      "strict": true,
+      "passed": true,
+      "magnitude": 7.93678135087196e-14,
+      "envelope": 7.946708366396767e-14
+    },
+    {
+      "name": "paired:cell450:cold:candidate:2vs4:core",
+      "value": 3.56938401613327e-06,
+      "limit": 0.0001,
+      "strict": true,
+      "passed": true
+    },
+    {
+      "name": "paired:cell450:cold:candidate:2vs4:history_L2",
+      "value": 1.8393915514402889e-06,
+      "limit": 0.01,
+      "strict": false,
+      "passed": true,
+      "raw_numerator": 6.239155696911385e-05,
+      "denominator": 33.919671382778574
+    },
+    {
+      "name": "paired:cell450:cold:candidate:2vs4:number",
+      "value": 4.352743516335084e-15,
+      "limit": 3.2156233767557846e-11,
+      "strict": true,
+      "passed": true,
+      "magnitude": 3.2156233767557847e-09,
+      "envelope": 3.2194317994855074e-09
+    },
+    {
+      "name": "paired:cell450:cold:candidate:2vs4:energy",
+      "value": 9.446292913760664e-20,
+      "limit": 7.936786324138499e-16,
+      "strict": true,
+      "passed": true,
+      "magnitude": 7.936786324138499e-14,
+      "envelope": 7.946709772633554e-14
+    },
+    {
+      "name": "paired:cell450:cold:candidate_minus_bank:1vs2:core",
+      "value": 9.714423305644854e-10,
+      "limit": 0.0001,
+      "strict": true,
+      "passed": true
+    },
+    {
+      "name": "paired:cell450:cold:candidate_minus_bank:1vs2:history_L2",
+      "value": 0.0008248226455079586,
+      "limit": 0.01,
+      "strict": false,
+      "passed": true,
+      "raw_numerator": 1.7647761716379177e-08,
+      "denominator": 2.1395825893590717e-05
+    },
+    {
+      "name": "paired:cell450:cold:candidate_minus_bank:1vs2:number",
+      "value": 1.4292794256266297e-18,
+      "limit": 2.0289309565572756e-17,
+      "strict": true,
+      "passed": true,
+      "magnitude": 2.0289309565572756e-15,
+      "envelope": 2.0547376998473108e-15
+    },
+    {
+      "name": "paired:cell450:cold:candidate_minus_bank:1vs2:energy",
+      "value": 3.166952376149406e-23,
+      "limit": 5.004207490955892e-22,
+      "strict": true,
+      "passed": true,
+      "magnitude": 5.0042074909558917e-20,
+      "envelope": 5.071827942491166e-20
+    },
+    {
+      "name": "paired:cell450:cold:candidate_minus_bank:2vs4:core",
+      "value": 4.857596132776299e-10,
+      "limit": 0.0001,
+      "strict": true,
+      "passed": true
+    },
+    {
+      "name": "paired:cell450:cold:candidate_minus_bank:2vs4:history_L2",
+      "value": 0.000581366008635983,
+      "limit": 0.01,
+      "strict": false,
+      "passed": true,
+      "raw_numerator": 1.2439290964524414e-08,
+      "denominator": 2.139666024456748e-05
+    },
+    {
+      "name": "paired:cell450:cold:candidate_minus_bank:2vs4:number",
+      "value": 5.059131060267859e-19,
+      "limit": 2.0291067346442118e-17,
+      "strict": true,
+      "passed": true,
+      "magnitude": 2.0291067346442116e-15,
+      "envelope": 2.0547873893221627e-15
+    },
+    {
+      "name": "paired:cell450:cold:candidate_minus_bank:2vs4:energy",
+      "value": 1.0176880861071176e-23,
+      "limit": 5.004634413929212e-22,
+      "strict": true,
+      "passed": true,
+      "magnitude": 5.004634413929212e-20,
+      "envelope": 5.0719505938967545e-20
+    }
+  ],
+  "metrics": [
+    {
+      "model": "heavy",
+      "arm": "bank",
+      "pair": "1vs2",
+      "fulltail_infinity": 7.134359684801694e-06,
+      "fulltail_L2": 0.00012977414455695048,
+      "fine_L2": 33.93116593689757,
+      "core_error": 7.134359583105265e-06,
+      "core_time": 2.043993993683191,
+      "core_frequency": 2.818382931264455e-05,
+      "moments": [
+        {
+          "name": "number",
+          "error": 1.1221891686905936e-14,
+          "limit": 3.216710415695169e-11,
+          "fine_magnitude": 3.2167104156951692e-09,
+          "envelope": 3.22053098544874e-09,
+          "time": 2.003653782190698
+        },
+        {
+          "name": "energy",
+          "error": 2.603743874166413e-19,
+          "limit": 7.93946813856894e-16,
+          "fine_magnitude": 7.93946813856894e-14,
+          "envelope": 7.949422956940597e-14,
+          "time": 2.003653782190698
+        }
+      ]
+    },
+    {
+      "model": "heavy",
+      "arm": "bank",
+      "pair": "2vs4",
+      "fulltail_infinity": 3.5667871012279306e-06,
+      "fulltail_L2": 6.233499650539749e-05,
+      "fine_L2": 33.93117528764233,
+      "core_error": 3.56678494339846e-06,
+      "core_time": 2.043993993683191,
+      "core_frequency": 1.9952623149688786e-05,
+      "moments": [
+        {
+          "name": "number",
+          "error": 4.355778685636379e-15,
+          "limit": 3.216712459320388e-11,
+          "fine_magnitude": 3.216712459320388e-09,
+          "envelope": 3.2205315547202523e-09,
+          "time": 2.003631296008149
+        },
+        {
+          "name": "energy",
+          "error": 9.449763107919402e-20,
+          "limit": 7.939473101590941e-16,
+          "fine_magnitude": 7.939473101590941e-14,
+          "envelope": 7.949424362106407e-14,
+          "time": 2.003631296008149
+        }
+      ]
+    },
+    {
+      "model": "heavy",
+      "arm": "bank",
+      "refinement_ratios_diagnostic": {
+        "core": {
+          "value": 2.0002214028378154,
+          "numerator": 7.134359583105265e-06,
+          "denominator": 3.56678494339846e-06
+        },
+        "fulltail_L2": {
+          "value": 2.0818825993792034,
+          "numerator": 0.00012977414455695048,
+          "denominator": 6.233499650539749e-05
+        },
+        "number": {
+          "value": 2.5763227419958823,
+          "numerator": 1.1221891686905936e-14,
+          "denominator": 4.355778685636379e-15
+        },
+        "energy": {
+          "value": 2.755353593979872,
+          "numerator": 2.603743874166413e-19,
+          "denominator": 9.449763107919402e-20
+        }
+      }
+    },
+    {
+      "model": "heavy",
+      "arm": "candidate",
+      "pair": "1vs2",
+      "fulltail_infinity": 7.133743713971796e-06,
+      "fulltail_L2": 0.0001297629000905774,
+      "fine_L2": 33.931144480548916,
+      "core_error": 7.1337436087226536e-06,
+      "core_time": 2.043993993683191,
+      "core_frequency": 2.818382931264455e-05,
+      "moments": [
+        {
+          "name": "number",
+          "error": 1.1222782344575025e-14,
+          "limit": 3.216708380823591e-11,
+          "fine_magnitude": 3.216708380823591e-09,
+          "envelope": 3.2205289246900566e-09,
+          "time": 2.003653782190698
+        },
+        {
+          "name": "energy",
+          "error": 2.6039505162100307e-19,
+          "limit": 7.93946311971117e-16,
+          "fine_magnitude": 7.93946311971117e-14,
+          "envelope": 7.949417870250712e-14,
+          "time": 2.003653782190698
+        }
+      ]
+    },
+    {
+      "model": "heavy",
+      "arm": "candidate",
+      "pair": "2vs4",
+      "fulltail_infinity": 3.566479148675583e-06,
+      "fulltail_L2": 6.232959894224589e-05,
+      "fine_L2": 33.931153830476035,
+      "core_error": 3.5664769801879714e-06,
+      "core_time": 2.043993993683191,
+      "core_frequency": 1.9952623149688786e-05,
+      "moments": [
+        {
+          "name": "number",
+          "error": 4.356124596486748e-15,
+          "limit": 3.216710424273276e-11,
+          "fine_magnitude": 3.216710424273276e-09,
+          "envelope": 3.220529493912307e-09,
+          "time": 2.003631296008149
+        },
+        {
+          "name": "energy",
+          "error": 9.450513641332452e-20,
+          "limit": 7.939468082307048e-16,
+          "fine_magnitude": 7.939468082307048e-14,
+          "envelope": 7.949419275294926e-14,
+          "time": 2.003631296008149
+        }
+      ]
+    },
+    {
+      "model": "heavy",
+      "arm": "candidate",
+      "refinement_ratios_diagnostic": {
+        "core": {
+          "value": 2.000221408507919,
+          "numerator": 7.1337436087226536e-06,
+          "denominator": 3.5664769801879714e-06
+        },
+        "fulltail_L2": {
+          "value": 2.0818824810795697,
+          "numerator": 0.0001297629000905774,
+          "denominator": 6.232959894224589e-05
+        },
+        "number": {
+          "value": 2.5763226225499367,
+          "numerator": 1.1222782344575025e-14,
+          "denominator": 4.356124596486748e-15
+        },
+        "energy": {
+          "value": 2.755353428433222,
+          "numerator": 2.6039505162100307e-19,
+          "denominator": 9.450513641332452e-20
+        }
+      }
+    },
+    {
+      "model": "heavy",
+      "arm": "candidate_minus_bank",
+      "pair": "1vs2",
+      "fulltail_infinity": 1.0953720153139557e-09,
+      "fulltail_L2": 1.7697829126287996e-08,
+      "fine_L2": 2.1458337456255038e-05,
+      "core_error": 9.74334974190314e-10,
+      "core_time": 2.0298726710425634,
+      "core_frequency": 1e-05,
+      "moments": [
+        {
+          "name": "number",
+          "error": 1.431790298796798e-18,
+          "limit": 2.0348715797077813e-17,
+          "fine_magnitude": 2.0348715797077814e-15,
+          "envelope": 2.0607586835513727e-15,
+          "time": 2.0296927815821735
+        },
+        {
+          "name": "energy",
+          "error": 3.171380714394449e-23,
+          "limit": 5.0188577700089095e-22,
+          "fine_magnitude": 5.018857770008909e-20,
+          "envelope": 5.0866898849151623e-20,
+          "time": 2.0296927815821735
+        }
+      ]
+    },
+    {
+      "model": "heavy",
+      "arm": "candidate_minus_bank",
+      "pair": "2vs4",
+      "fulltail_infinity": 9.517560073390996e-10,
+      "fulltail_L2": 8.517520571417758e-09,
+      "fine_L2": 2.145915626822939e-05,
+      "core_error": 4.869346733268931e-10,
+      "core_time": 2.0298726710425634,
+      "core_frequency": 1e-05,
+      "moments": [
+        {
+          "name": "number",
+          "error": 5.060023751371081e-19,
+          "limit": 2.0350471126113893e-17,
+          "fine_magnitude": 2.035047112611389e-15,
+          "envelope": 2.0608079454409287e-15,
+          "time": 2.0296927815821735
+        },
+        {
+          "name": "energy",
+          "error": 1.0171543392883172e-23,
+          "limit": 5.019283896369712e-22,
+          "fine_magnitude": 5.019283896369712e-20,
+          "envelope": 5.086811480887226e-20,
+          "time": 2.0296927815821735
+        }
+      ]
+    },
+    {
+      "model": "heavy",
+      "arm": "candidate_minus_bank",
+      "refinement_ratios_diagnostic": {
+        "core": {
+          "value": 2.0009562423093565,
+          "numerator": 9.74334974190314e-10,
+          "denominator": 4.869346733268931e-10
+        },
+        "fulltail_L2": {
+          "value": 2.0778146618954576,
+          "numerator": 1.7697829126287996e-08,
+          "denominator": 8.517520571417758e-09
+        },
+        "number": {
+          "value": 2.829611814388885,
+          "numerator": 1.431790298796798e-18,
+          "denominator": 5.060023751371081e-19
+        },
+        "energy": {
+          "value": 3.1178952808807767,
+          "numerator": 3.171380714394449e-23,
+          "denominator": 1.0171543392883172e-23
+        }
+      }
+    },
+    {
+      "model": "cold",
+      "arm": "bank",
+      "pair": "1vs2",
+      "fulltail_infinity": 7.140131330629629e-06,
+      "fulltail_L2": 0.00012990095413932022,
+      "fine_L2": 33.91968341799854,
+      "core_error": 7.140131264904426e-06,
+      "core_time": 2.043993993683191,
+      "core_frequency": 2.818382931264455e-05,
+      "moments": [
+        {
+          "name": "number",
+          "error": 1.1208268522330367e-14,
+          "limit": 3.215623358707107e-11,
+          "fine_magnitude": 3.215623358707107e-09,
+          "envelope": 3.2194332845178124e-09,
+          "time": 2.003653782190698
+        },
+        {
+          "name": "energy",
+          "error": 2.60120497704007e-19,
+          "limit": 7.936786355079449e-16,
+          "fine_magnitude": 7.936786355079449e-14,
+          "envelope": 7.946713438224708e-14,
+          "time": 2.003653782190698
+        }
+      ]
+    },
+    {
+      "model": "cold",
+      "arm": "bank",
+      "pair": "2vs4",
+      "fulltail_infinity": 3.569693455052203e-06,
+      "fulltail_L2": 6.2396946116842e-05,
+      "fine_L2": 33.91969277746013,
+      "core_error": 3.569691423344068e-06,
+      "core_time": 2.043993993683191,
+      "core_frequency": 1.9952623149688786e-05,
+      "moments": [
+        {
+          "name": "number",
+          "error": 4.352398362334532e-15,
+          "limit": 3.21562540586252e-11,
+          "fine_magnitude": 3.21562540586252e-09,
+          "envelope": 3.219433854272897e-09,
+          "time": 2.003631296008149
+        },
+        {
+          "name": "energy",
+          "error": 9.445543772502251e-20,
+          "limit": 7.936791328772912e-16,
+          "fine_magnitude": 7.936791328772912e-14,
+          "envelope": 7.946714844584147e-14,
+          "time": 2.003631296008149
+        }
+      ]
+    },
+    {
+      "model": "cold",
+      "arm": "bank",
+      "refinement_ratios_diagnostic": {
+        "core": {
+          "value": 2.000209659079044,
+          "numerator": 7.140131264904426e-06,
+          "denominator": 3.569691423344068e-06
+        },
+        "fulltail_L2": {
+          "value": 2.0818479464695745,
+          "numerator": 0.00012990095413932022,
+          "denominator": 6.2396946116842e-05
+        },
+        "number": {
+          "value": 2.575193626421295,
+          "numerator": 1.1208268522330367e-14,
+          "denominator": 4.352398362334532e-15
+        },
+        "energy": {
+          "value": 2.753896482500738,
+          "numerator": 2.60120497704007e-19,
+          "denominator": 9.445543772502251e-20
+        }
+      }
+    },
+    {
+      "model": "cold",
+      "arm": "candidate",
+      "pair": "1vs2",
+      "fulltail_infinity": 7.139517352428015e-06,
+      "fulltail_L2": 0.00012988974482654203,
+      "fine_L2": 33.91966202415089,
+      "core_error": 7.139517282928054e-06,
+      "core_time": 2.043993993683191,
+      "core_frequency": 2.818382931264455e-05,
+      "moments": [
+        {
+          "name": "number",
+          "error": 1.1209156839051659e-14,
+          "limit": 3.2156213297761504e-11,
+          "fine_magnitude": 3.21562132977615e-09,
+          "envelope": 3.2194312297801125e-09,
+          "time": 2.003653782190698
+        },
+        {
+          "name": "energy",
+          "error": 2.6014111257605195e-19,
+          "limit": 7.93678135087196e-16,
+          "fine_magnitude": 7.93678135087196e-14,
+          "envelope": 7.946708366396767e-14,
+          "time": 2.003653782190698
+        }
+      ]
+    },
+    {
+      "model": "cold",
+      "arm": "candidate",
+      "pair": "2vs4",
+      "fulltail_infinity": 3.569386058721591e-06,
+      "fulltail_L2": 6.239155696911385e-05,
+      "fine_L2": 33.919671382778574,
+      "core_error": 3.56938401613327e-06,
+      "core_time": 2.043993993683191,
+      "core_frequency": 1.9952623149688786e-05,
+      "moments": [
+        {
+          "name": "number",
+          "error": 4.352743516335084e-15,
+          "limit": 3.2156233767557846e-11,
+          "fine_magnitude": 3.2156233767557847e-09,
+          "envelope": 3.2194317994855074e-09,
+          "time": 2.003631296008149
+        },
+        {
+          "name": "energy",
+          "error": 9.446292913760664e-20,
+          "limit": 7.936786324138499e-16,
+          "fine_magnitude": 7.936786324138499e-14,
+          "envelope": 7.946709772633554e-14,
+          "time": 2.003631296008149
+        }
+      ]
+    },
+    {
+      "model": "cold",
+      "arm": "candidate",
+      "refinement_ratios_diagnostic": {
+        "core": {
+          "value": 2.000209910353755,
+          "numerator": 7.139517282928054e-06,
+          "denominator": 3.56938401613327e-06
+        },
+        "fulltail_L2": {
+          "value": 2.0818481079233573,
+          "numerator": 0.00012988974482654203,
+          "denominator": 6.239155696911385e-05
+        },
+        "number": {
+          "value": 2.5751935065747973,
+          "numerator": 1.1209156839051659e-14,
+          "denominator": 4.352743516335084e-15
+        },
+        "energy": {
+          "value": 2.7538963162691847,
+          "numerator": 2.6014111257605195e-19,
+          "denominator": 9.446292913760664e-20
+        }
+      }
+    },
+    {
+      "model": "cold",
+      "arm": "candidate_minus_bank",
+      "pair": "1vs2",
+      "fulltail_infinity": 1.2284894879144304e-08,
+      "fulltail_L2": 1.7647761716379177e-08,
+      "fine_L2": 2.1395825893590717e-05,
+      "core_error": 9.714423305644854e-10,
+      "core_time": 2.0298726710425634,
+      "core_frequency": 1e-05,
+      "moments": [
+        {
+          "name": "number",
+          "error": 1.4292794256266297e-18,
+          "limit": 2.0289309565572756e-17,
+          "fine_magnitude": 2.0289309565572756e-15,
+          "envelope": 2.0547376998473108e-15,
+          "time": 2.0296927815821735
+        },
+        {
+          "name": "energy",
+          "error": 3.166952376149406e-23,
+          "limit": 5.004207490955892e-22,
+          "fine_magnitude": 5.0042074909558917e-20,
+          "envelope": 5.071827942491166e-20,
+          "time": 2.0296927815821735
+        }
+      ]
+    },
+    {
+      "model": "cold",
+      "arm": "candidate_minus_bank",
+      "pair": "2vs4",
+      "fulltail_infinity": 1.0877259759567437e-08,
+      "fulltail_L2": 1.2439290964524414e-08,
+      "fine_L2": 2.139666024456748e-05,
+      "core_error": 4.857596132776299e-10,
+      "core_time": 2.0298726710425634,
+      "core_frequency": 1e-05,
+      "moments": [
+        {
+          "name": "number",
+          "error": 5.059131060267859e-19,
+          "limit": 2.0291067346442118e-17,
+          "fine_magnitude": 2.0291067346442116e-15,
+          "envelope": 2.0547873893221627e-15,
+          "time": 2.0296927815821735
+        },
+        {
+          "name": "energy",
+          "error": 1.0176880861071176e-23,
+          "limit": 5.004634413929212e-22,
+          "fine_magnitude": 5.004634413929212e-20,
+          "envelope": 5.0719505938967545e-20,
+          "time": 2.0296927815821735
+        }
+      ]
+    },
+    {
+      "model": "cold",
+      "arm": "candidate_minus_bank",
+      "refinement_ratios_diagnostic": {
+        "core": {
+          "value": 1.9998416994977093,
+          "numerator": 9.714423305644854e-10,
+          "denominator": 4.857596132776299e-10
+        },
+        "fulltail_L2": {
+          "value": 1.4187112245150297,
+          "numerator": 1.7647761716379177e-08,
+          "denominator": 1.2439290964524414e-08
+        },
+        "number": {
+          "value": 2.825148051315665,
+          "numerator": 1.4292794256266297e-18,
+          "denominator": 5.059131060267859e-19
+        },
+        "energy": {
+          "value": 3.111908667678031,
+          "numerator": 3.166952376149406e-23,
+          "denominator": 1.0176880861071176e-23
+        }
+      }
+    }
+  ]
+}

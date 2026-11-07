@@ -1,0 +1,69 @@
+{
+  "state": "complete",
+  "time_utc": "2026-10-06T17:28:29.785663+00:00",
+  "script_sha256": "e2fe993af2316ddaf85f2241d6aaca8a7d9b4d8baf87adca4455a367be6b4a06",
+  "input_hashes": {
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polar-energy-bound-20261006\\results\\stage-integrity.json": "0983659a4669442251e0ba8ad83a2867612f3a3dc0a3cd112a7560d457efa59e",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polar-hamiltonian-20261006\\polar_energy.py": "8b41a3e46cbcf3ec34a30d90d5f2a6d7e9513469bef8b98d5439db4f6546eca0",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polar-interior-schur-20261006\\derive_local_map_v2.py": "e2fe993af2316ddaf85f2241d6aaca8a7d9b4d8baf87adca4455a367be6b4a06",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polar-interior-schur-20261006\\interior_common.py": "fd839bf7cc6d16d400a79dd21af9da7dbcb7b7929b5b5daeeda1e6ea9eaaf11c",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\radial-gravity-stability-20261003\\test_radial_energy.py": "b3e34d1313560be3dc803d80dc5eb5abeaafa940f0e792d116214e97959a89fa",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\self-gravity-20261003\\solve_self_gravity.py": "35adf55501885d1e988a1e48d3a2d7f14670c683e62b1e289fc4c8c094aed3ea"
+  },
+  "exact_checks": [
+    {
+      "name": "matter Kprime source cancellation",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "radial constraint coefficient simplified",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "angular derivative coefficient simplified",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "vacuum normalization",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "vacuum master derivative reconstruction",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "vacuum master value reconstruction",
+      "residual": "0",
+      "passed": true
+    }
+  ],
+  "symbols": [
+    "r",
+    "alpha",
+    "F",
+    "h",
+    "hp",
+    "s",
+    "W",
+    "Wh",
+    "Whh"
+  ],
+  "beta": "-3*F/2 - alpha*r**2*(F*hp**2/2 + W + h**2*s**2/2) + 7/2",
+  "amplitude_shift": "hp*r/2",
+  "phase_gradient_shift": "h*r*s/2",
+  "phase_value_shift": "s*(4*F*h + 2*F*hp*r + 2*W*alpha*h*r**2 - h)/(2*F)",
+  "constraint_normalization": "-(F*alpha*hp**2*r**2 - 3*F - 2*W*alpha*r**2 + alpha*h**2*r**2*s**2 + 7)/(F*alpha*hp**2*r**2 + 3*F + 2*W*alpha*r**2 + alpha*h**2*r**2*s**2 - 7)",
+  "reconstructed_K_denominator": "-3*(F*alpha*hp**2*r**2 - 3*F - 2*W*alpha*r**2 + alpha*h**2*r**2*s**2 + 7)/(F*r**2)",
+  "master_gradient_coefficient": "-F*(F*alpha*hp**2*r**2 + 3*F + 2*W*alpha*r**2 + alpha*h**2*r**2*s**2 - 7)/(F*alpha*hp**2*r**2 - 3*F - 2*W*alpha*r**2 + alpha*h**2*r**2*s**2 + 7)",
+  "master_value_coefficient": "-(-F**2*alpha*hp**2*r**2 - 3*F**2 + 4*F*W*alpha**2*hp**2*r**4 - 2*F*W*alpha*r**2 + 4*F*Wh*alpha*hp*r**3 + 3*F*alpha*h**2*r**2*s**2 - 5*F*alpha*hp**2*r**2 + 12*F + 4*W*alpha**2*h**2*r**4*s**2 + 6*W*alpha*r**2 - 5*alpha*h**2*r**2*s**2 - 21)/(r*(F*alpha*hp**2*r**2 - 3*F - 2*W*alpha*r**2 + alpha*h**2*r**2*s**2 + 7))",
+  "source_coefficient": "-4*F*alpha*r**2/(3*(F*alpha*hp**2*r**2 - 3*F - 2*W*alpha*r**2 + alpha*h**2*r**2*s**2 + 7))",
+  "new_variables": "w=u-aK; pibar=pi_v-cKprime-dK; Z=r/3[K+F/beta(H-rKprime)]",
+  "inverse_map": "K=k1 Zprime+k0 Z+ks[s h pibar+(Wh-s^2 h)w+F hp wprime]; H=rKprime+beta/F(3Z/r-K)",
+  "canonical_transformation_claimed": false,
+  "positive_interior_form_claimed": false
+}

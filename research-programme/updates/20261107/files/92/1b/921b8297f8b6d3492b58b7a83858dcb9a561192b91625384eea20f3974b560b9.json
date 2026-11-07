@@ -1,0 +1,81 @@
+{
+  "stage": 128,
+  "accepted_scope": "Exact source-product and energy-moment decompositions at33 saved first-interval sites;two backgrounds/windows and baseline/MTS;fixed evolution and response grids;source-only factored interpolation.",
+  "scientific_checks": 500,
+  "passing_scientific_checks": 488,
+  "retained_failed_checks": 12,
+  "expected_failed_by_packet": {
+    "case-cold-m20": [
+      "Response:control:gas",
+      "Response:chord:gas",
+      "Response:factored:gas"
+    ],
+    "case-cold-m40": [
+      "Response:control:gas",
+      "Response:chord:gas",
+      "Response:factored:gas"
+    ],
+    "case-heavy-m20": [
+      "Response:control:gas",
+      "Response:chord:gas",
+      "Response:factored:gas"
+    ],
+    "case-heavy-m40": [
+      "Response:control:gas",
+      "Response:chord:gas",
+      "Response:factored:gas"
+    ]
+  },
+  "combined_original_response_failures": {
+    "cold:m20": [
+      {
+        "name": "Response:cold:gas",
+        "value": 2.953730651125777e-06,
+        "limit": 1e-07,
+        "passed": false
+      }
+    ],
+    "cold:m40": [
+      {
+        "name": "Response:cold:gas",
+        "value": 1.0669703551373481e-06,
+        "limit": 1e-07,
+        "passed": false
+      }
+    ],
+    "heavy:m20": [
+      {
+        "name": "Response:heavy:gas",
+        "value": 3.814939850560378e-06,
+        "limit": 1e-07,
+        "passed": false
+      }
+    ],
+    "heavy:m40": [
+      {
+        "name": "Response:heavy:gas",
+        "value": 9.009176935688985e-07,
+        "limit": 1e-07,
+        "passed": false
+      }
+    ]
+  },
+  "prior_stage_failed_checks_retained": 28,
+  "maxima": {
+    "factored_mts_endpoint": 0.0017549009198497966,
+    "factored_baseline_endpoint": 9.914314501149765e-08,
+    "factored_radiation": 8.649303534278118e-07,
+    "closure": 4.996232806592937e-09,
+    "raw_gas_residual": 1.6765588703376117e-05,
+    "energy_moment_error": 6.001103298571503e-16,
+    "moment_curvature": 4.041920814286982e-05
+  },
+  "conclusion": "The signed decomposition identifies curvature of the known Compton energy moment as the dominant operator-interpolation contribution. Factoring that moment leaves only0.03104\u20130.03112percent of the MTS operator-induced endpoint discrepancy,with opposing shape/mixed terms retained. The source-only factored candidate agrees with directly sampled source responses to0.1755percent of the MTS gas correction or better. This is a derived moment-preserving numerical representation,not a fitted physical coupling or a new history. All12 raw gas residual failures remain;the worst is1.677e-5. Refine the matching inner Compton coefficients next.",
+  "next_target": "Use the saved order6 Doppler events at the33 first-interval temperatures to rebuild the positive and high-order inner Compton stencils and their matched eigenvalue,retaining the5265 grid and40960 inner steps. Check constant/chemical and energy-moment contracts before evolution. Replay only the first640 steps from the original restart for both backgrounds,keeping initial matching,DC/BR,clock/outer drivers and other intervals fixed to isolate the Compton coefficient change. Recalculate the direct and moment-factored sources from those new states and propagate with2048 response steps. Treat this as a bounded Compton inner/source consistency test;separately track the remaining clock/emission coefficient interpolation and the need to carry changed endpoint state into subsequent intervals.",
+  "independent_validation_required": true,
+  "inner_source_consistency_established": false,
+  "physical_time_accuracy_certified": false,
+  "new_high_precision": false,
+  "fitted_normalization": false,
+  "goal_turn_classification": "progress"
+}

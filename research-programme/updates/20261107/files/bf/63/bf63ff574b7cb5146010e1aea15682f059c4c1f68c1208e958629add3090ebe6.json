@@ -1,0 +1,1006 @@
+{
+  "model": "heavy",
+  "label": "balanced",
+  "wave": 0.6499534573115049,
+  "passed": true,
+  "comparisons": [
+    {
+      "label": "envelope precision",
+      "state_error": 3.12998222954312e-11,
+      "source_errors": {
+        "Phi": 2.914881100233281e-11,
+        "Psi": 2.8877379166989174e-11,
+        "D": 2.923671341659558e-11,
+        "Q": 1.068964763842668e-11,
+        "Pi": 1.8475338892892145e-11,
+        "theta_c": 3.203395533609882e-11,
+        "delta_c": 1.158418516016319e-11,
+        "delta_b": 2.4352093292420514e-11,
+        "delta_gamma": 2.4306052352888824e-11,
+        "delta_massless": 2.3413850797499685e-11,
+        "Phi_rate": 1.3008711764686264e-11
+      },
+      "passed": true
+    },
+    {
+      "label": "angular128/192",
+      "state_error": 1.618258558407814e-11,
+      "source_errors": {
+        "Phi": 1.866298194646318e-11,
+        "Psi": 1.8715031474318287e-11,
+        "D": 1.869361446107638e-11,
+        "Q": 9.174305606967736e-12,
+        "Pi": 5.432973392011034e-12,
+        "theta_c": 1.9435805562492482e-11,
+        "delta_c": 1.8194710578954643e-12,
+        "delta_b": 9.467520703300964e-12,
+        "delta_gamma": 9.4447205984334e-12,
+        "delta_massless": 5.7738375065541374e-12,
+        "Phi_rate": 1.0942160859340706e-11
+      },
+      "passed": true
+    },
+    {
+      "label": "carrier phase offset",
+      "state_error": 4.6665512349609126e-11,
+      "source_errors": {
+        "Phi": 2.2689077450264452e-11,
+        "Psi": 2.2618746063451954e-11,
+        "D": 2.2749526726708192e-11,
+        "Q": 6.368980525234692e-12,
+        "Pi": 8.398035829786577e-12,
+        "theta_c": 2.3981331831480886e-11,
+        "delta_c": 1.1893705887885333e-11,
+        "delta_b": 1.4719155902004116e-11,
+        "delta_gamma": 1.467445802028191e-11,
+        "delta_massless": 8.6363549910578e-12,
+        "Phi_rate": 9.447419648077043e-12
+      },
+      "passed": true
+    },
+    {
+      "label": "forward native L128",
+      "state_error": 2.392313338859474e-11,
+      "source_errors": {
+        "Phi": 1.159596805596954e-11,
+        "Psi": 1.1585429101982343e-11,
+        "D": 1.160256764764359e-11,
+        "Q": 7.764184214047483e-12,
+        "Pi": 9.196746786484007e-12,
+        "theta_c": 1.2345984494227323e-11,
+        "delta_c": 1.4406998398377599e-12,
+        "delta_b": 1.1176051079676645e-11,
+        "delta_gamma": 1.12333158603312e-11,
+        "delta_massless": 9.704108606250616e-12,
+        "Phi_rate": 8.428792593314871e-12
+      },
+      "passed": true
+    },
+    {
+      "label": "forward native G192",
+      "state_error": 4.007086609976347e-11,
+      "source_errors": {
+        "Phi": 1.328682492883314e-11,
+        "Psi": 1.3053677456953196e-11,
+        "D": 1.3320549060665358e-11,
+        "Q": 6.729615335180047e-12,
+        "Pi": 1.7947789586800447e-11,
+        "theta_c": 1.4470770054792411e-11,
+        "delta_c": 6.051781918866811e-12,
+        "delta_b": 1.7749921305359575e-11,
+        "delta_gamma": 1.7936307234160953e-11,
+        "delta_massless": 1.901834341318693e-11,
+        "Phi_rate": 6.9885225352603685e-12
+      },
+      "passed": true
+    }
+  ],
+  "zero": true,
+  "parity": 0.0,
+  "parity_sources": 0.0,
+  "algebra": {
+    "L128-envelope-base": {
+      "Hamiltonian": 5.06156400767275e-16,
+      "slip": 1.0905263293507877e-15,
+      "momentum": 3.2979507492790813e-16
+    },
+    "L128-envelope-fine": {
+      "Hamiltonian": 4.942234404348441e-16,
+      "slip": 1.0905263293507877e-15,
+      "momentum": 3.297950749279271e-16
+    },
+    "G192-envelope-fine": {
+      "Hamiltonian": 4.922346137127723e-16,
+      "slip": 1.0050401552279505e-15,
+      "momentum": 5.496584582131443e-16
+    },
+    "L128-envelope-zero": {
+      "Hamiltonian": 0.0,
+      "slip": 0.0,
+      "momentum": 0.0
+    },
+    "L128-envelope-negative": {
+      "Hamiltonian": 5.06156400767275e-16,
+      "slip": 1.0905263293507877e-15,
+      "momentum": 3.2979507492790813e-16
+    },
+    "L128-envelope-shift": {
+      "Hamiltonian": 4.947206471153621e-16,
+      "slip": 1.366938627005957e-15,
+      "momentum": 3.2979507492794446e-16
+    }
+  },
+  "balance": {
+    "L128-envelope-base": {
+      "passed": true,
+      "raw_continuity": 2.5062892112457705e-08,
+      "raw_momentum": 5.1561730298515845e-11,
+      "algebra": [
+        2.0541667846916683e-13,
+        3.6372564845700127e-16
+      ],
+      "source_errors": {
+        "density": 6.367253805502173e-16,
+        "flux": 2.1345833590289575e-16,
+        "shear": 1.307433224322382e-16,
+        "enthalpy": 3.3982148978748565e-16
+      },
+      "fields": [
+        {
+          "kinematics": 5.289535466114852e-12,
+          "dynamics": 5.1662019118898624e-12
+        },
+        {
+          "kinematics": 6.495432617460203e-11,
+          "dynamics": 7.241768044903215e-11
+        }
+      ],
+      "integrals": [
+        {
+          "stride": 1,
+          "raw_error": [
+            3.121900617697778e-08,
+            4.681205770767947e-09
+          ],
+          "accounted_error": [
+            2.182236162252149e-11,
+            4.6812133485388715e-09
+          ]
+        },
+        {
+          "stride": 2,
+          "raw_error": [
+            3.13076024386389e-08,
+            6.170632185755653e-08
+          ],
+          "accounted_error": [
+            1.7909353061842518e-10,
+            6.170638931039068e-08
+          ]
+        },
+        {
+          "stride": 4,
+          "raw_error": [
+            3.168103181407059e-08,
+            1.2214344918132646e-06
+          ],
+          "accounted_error": [
+            2.784784798621029e-09,
+            1.2214375478962598e-06
+          ]
+        }
+      ],
+      "integral_refinement": [
+        2.7798403713509042e-09,
+        1.219228071826246e-06
+      ],
+      "scales": [
+        0.00019485877152051263,
+        0.001645972247451863
+      ],
+      "predicted_baryon_continuity": 3.690001187316225e-12,
+      "predicted_neutrino_continuity": 2.4092623599830724e-08,
+      "predicted_scalar_continuity": 1.3508761209093266e-08,
+      "file": "heavy-balanced-L128-envelope-base-balance.npz",
+      "sha256": "bb7dfe0ec527a16cdcc69575b070bd26e2d043c3cb2056ed91a2a11dbf9e60fb"
+    },
+    "L128-envelope-fine": {
+      "passed": true,
+      "raw_continuity": 2.5062950317541215e-08,
+      "raw_momentum": 5.156159854240355e-11,
+      "algebra": [
+        1.80145882232825e-13,
+        4.68662952712076e-16
+      ],
+      "source_errors": {
+        "density": 6.367253805502173e-16,
+        "flux": 2.1345833590285261e-16,
+        "shear": 1.3074332243218557e-16,
+        "enthalpy": 3.3982148978748565e-16
+      },
+      "fields": [
+        {
+          "kinematics": 5.289535466114852e-12,
+          "dynamics": 5.1662019118898624e-12
+        },
+        {
+          "kinematics": 6.495432617460203e-11,
+          "dynamics": 7.241768044903215e-11
+        }
+      ],
+      "integrals": [
+        {
+          "stride": 1,
+          "raw_error": [
+            3.119321650685412e-08,
+            4.681223060892209e-09
+          ],
+          "accounted_error": [
+            2.2346131920562097e-11,
+            4.681230105017294e-09
+          ]
+        },
+        {
+          "stride": 2,
+          "raw_error": [
+            3.128178819091556e-08,
+            6.170639464683661e-08
+          ],
+          "accounted_error": [
+            1.7859370119469325e-10,
+            6.170646380733745e-08
+          ]
+        },
+        {
+          "stride": 4,
+          "raw_error": [
+            3.16552497846515e-08,
+            1.2214337967926761e-06
+          ],
+          "accounted_error": [
+            2.7846499401854283e-09,
+            1.221436855223713e-06
+          ]
+        }
+      ],
+      "integral_refinement": [
+        2.7798404986959803e-09,
+        1.2192282240217931e-06
+      ],
+      "scales": [
+        0.00019485877152051643,
+        0.001645972247451863
+      ],
+      "predicted_baryon_continuity": 3.690001187321185e-12,
+      "predicted_neutrino_continuity": 2.4092623599830254e-08,
+      "predicted_scalar_continuity": 1.3508761209715761e-08,
+      "file": "heavy-balanced-L128-envelope-fine-balance.npz",
+      "sha256": "f43cc3f570c0d7228a61acd1530c358e577dbff8d95145d1759786578d888427"
+    },
+    "G192-envelope-fine": {
+      "passed": true,
+      "raw_continuity": 2.5062910810676402e-08,
+      "raw_momentum": 5.156173037892365e-11,
+      "algebra": [
+        2.0986447204228676e-13,
+        3.595476691191808e-16
+      ],
+      "source_errors": {
+        "density": 7.640704566602608e-16,
+        "flux": 2.134583359033695e-16,
+        "shear": 1.3074332243225243e-16,
+        "enthalpy": 3.3982148978748565e-16
+      },
+      "fields": [
+        {
+          "kinematics": 5.289535466114852e-12,
+          "dynamics": 5.1662019118898624e-12
+        },
+        {
+          "kinematics": 6.495432617460203e-11,
+          "dynamics": 7.241768044903215e-11
+        }
+      ],
+      "integrals": [
+        {
+          "stride": 1,
+          "raw_error": [
+            3.118812741557754e-08,
+            4.6810656353808145e-09
+          ],
+          "accounted_error": [
+            2.6088039636979613e-11,
+            4.681070118005868e-09
+          ]
+        },
+        {
+          "stride": 2,
+          "raw_error": [
+            3.127668012522263e-08,
+            6.170620797767126e-08
+          ],
+          "accounted_error": [
+            1.792094146376853e-10,
+            6.170627607088041e-08
+          ]
+        },
+        {
+          "stride": 4,
+          "raw_error": [
+            3.165017431929806e-08,
+            1.221434829933979e-06
+          ],
+          "accounted_error": [
+            2.784746722443272e-09,
+            1.221437883242016e-06
+          ]
+        }
+      ],
+      "integral_refinement": [
+        2.7798404986959803e-09,
+        1.2192282432359952e-06
+      ],
+      "scales": [
+        0.0001948587715205245,
+        0.0016459722474518608
+      ],
+      "predicted_baryon_continuity": 3.690001187312175e-12,
+      "predicted_neutrino_continuity": 2.4092623599829255e-08,
+      "predicted_scalar_continuity": 1.3508761209834402e-08,
+      "file": "heavy-balanced-G192-envelope-fine-balance.npz",
+      "sha256": "8334818f02843a76f85190a3a4c16584838f797447dc226ab6fd4ca8df6f00de"
+    },
+    "L128-envelope-zero": {
+      "passed": true,
+      "raw_continuity": 0.0,
+      "raw_momentum": 0.0,
+      "algebra": [
+        0.0,
+        0.0
+      ],
+      "source_errors": {
+        "density": 0.0,
+        "flux": 0.0,
+        "shear": 0.0,
+        "enthalpy": 3.3982148978748565e-16
+      },
+      "fields": [
+        {
+          "kinematics": 5.289535466114852e-12,
+          "dynamics": 5.1662019118898624e-12
+        },
+        {
+          "kinematics": 6.495432617460203e-11,
+          "dynamics": 7.241768044903215e-11
+        }
+      ],
+      "integrals": [
+        {
+          "stride": 1,
+          "raw_error": [
+            0.0,
+            0.0
+          ],
+          "accounted_error": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "stride": 2,
+          "raw_error": [
+            0.0,
+            0.0
+          ],
+          "accounted_error": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "stride": 4,
+          "raw_error": [
+            0.0,
+            0.0
+          ],
+          "accounted_error": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "integral_refinement": [
+        0.0,
+        0.0
+      ],
+      "scales": [
+        1e-80,
+        1e-80
+      ],
+      "predicted_baryon_continuity": 0.0,
+      "predicted_neutrino_continuity": 0.0,
+      "predicted_scalar_continuity": 0.0,
+      "file": "heavy-balanced-L128-envelope-zero-balance.npz",
+      "sha256": "69e54a22adec5ec575939f4f2dff6c57adb424ca9d3d84b513fd14f552d28827"
+    },
+    "L128-envelope-negative": {
+      "passed": true,
+      "raw_continuity": 2.5062892112457705e-08,
+      "raw_momentum": 5.1561730298515845e-11,
+      "algebra": [
+        2.0541667846916683e-13,
+        3.6372564845700127e-16
+      ],
+      "source_errors": {
+        "density": 6.367253805502173e-16,
+        "flux": 2.1345833590289575e-16,
+        "shear": 1.307433224322382e-16,
+        "enthalpy": 3.3982148978748565e-16
+      },
+      "fields": [
+        {
+          "kinematics": 5.289535466114852e-12,
+          "dynamics": 5.1662019118898624e-12
+        },
+        {
+          "kinematics": 6.495432617460203e-11,
+          "dynamics": 7.241768044903215e-11
+        }
+      ],
+      "integrals": [
+        {
+          "stride": 1,
+          "raw_error": [
+            3.121900617697778e-08,
+            4.681205770767947e-09
+          ],
+          "accounted_error": [
+            2.182236162252149e-11,
+            4.6812133485388715e-09
+          ]
+        },
+        {
+          "stride": 2,
+          "raw_error": [
+            3.13076024386389e-08,
+            6.170632185755653e-08
+          ],
+          "accounted_error": [
+            1.7909353061842518e-10,
+            6.170638931039068e-08
+          ]
+        },
+        {
+          "stride": 4,
+          "raw_error": [
+            3.168103181407059e-08,
+            1.2214344918132646e-06
+          ],
+          "accounted_error": [
+            2.784784798621029e-09,
+            1.2214375478962598e-06
+          ]
+        }
+      ],
+      "integral_refinement": [
+        2.7798403713509042e-09,
+        1.219228071826246e-06
+      ],
+      "scales": [
+        0.00019485877152051263,
+        0.001645972247451863
+      ],
+      "predicted_baryon_continuity": 3.690001187316225e-12,
+      "predicted_neutrino_continuity": 2.4092623599830724e-08,
+      "predicted_scalar_continuity": 1.3508761209093266e-08,
+      "file": "heavy-balanced-L128-envelope-negative-balance.npz",
+      "sha256": "12a4730c39904190996c82477721490c518875d67940aa90b318dbd4ea1edc16"
+    },
+    "L128-envelope-shift": {
+      "passed": true,
+      "raw_continuity": 2.5062933368951755e-08,
+      "raw_momentum": 5.156166520041473e-11,
+      "algebra": [
+        2.0636329809540235e-13,
+        3.675685977342964e-16
+      ],
+      "source_errors": {
+        "density": 5.09380304440174e-16,
+        "flux": 4.269166718072337e-16,
+        "shear": 1.3074332243220648e-16,
+        "enthalpy": 3.3982148978748565e-16
+      },
+      "fields": [
+        {
+          "kinematics": 5.289535466114852e-12,
+          "dynamics": 5.1662019118898624e-12
+        },
+        {
+          "kinematics": 6.495432617460203e-11,
+          "dynamics": 7.241768044903215e-11
+        }
+      ],
+      "integrals": [
+        {
+          "stride": 1,
+          "raw_error": [
+            3.121136814665778e-08,
+            4.681142480387166e-09
+          ],
+          "accounted_error": [
+            2.902805540913219e-11,
+            4.681147283199724e-09
+          ]
+        },
+        {
+          "stride": 2,
+          "raw_error": [
+            3.1299957786374944e-08,
+            6.170633733349436e-08
+          ],
+          "accounted_error": [
+            1.786398001122451e-10,
+            6.17064068141827e-08
+          ]
+        },
+        {
+          "stride": 4,
+          "raw_error": [
+            3.1673392128264605e-08,
+            1.2214342010871376e-06
+          ],
+          "accounted_error": [
+            2.7844692375224286e-09,
+            1.2214372601585495e-06
+          ]
+        }
+      ],
+      "integral_refinement": [
+        2.7798403713509046e-09,
+        1.219228249214242e-06
+      ],
+      "scales": [
+        0.00019485877152051082,
+        0.0016459722474518625
+      ],
+      "predicted_baryon_continuity": 3.690001187321422e-12,
+      "predicted_neutrino_continuity": 2.409262359983094e-08,
+      "predicted_scalar_continuity": 1.3508761209288891e-08,
+      "file": "heavy-balanced-L128-envelope-shift-balance.npz",
+      "sha256": "01efc6fd0148ac289d6b79301db1ac74c91688f0524b5d0780b410723c5a8bf0"
+    }
+  },
+  "metric": {
+    "L128-envelope-base": {
+      "passed": true,
+      "physical_Phi_integral_errors": [
+        3.119830299482289e-08,
+        3.1228123502831384e-08,
+        3.167969230166075e-08
+      ],
+      "source_refinement": 7.884228041536866e-10,
+      "geometry_rate_identity": 3.2979507492790813e-16,
+      "scope": "Phi reconstructed from evolved eta,shear and repaired H versus integrated momentum Einstein equation",
+      "file": "heavy-balanced-L128-envelope-base-metric.npz",
+      "sha256": "24165fb93eb4cbf31ad703947516b97f340a9d8bc458ba05f260a7a52d09c495"
+    },
+    "L128-envelope-fine": {
+      "passed": true,
+      "physical_Phi_integral_errors": [
+        3.1172533209057615e-08,
+        3.12023238208497e-08,
+        3.165393122666357e-08
+      ],
+      "source_refinement": 7.884228041536866e-10,
+      "geometry_rate_identity": 3.297950749279271e-16,
+      "scope": "Phi reconstructed from evolved eta,shear and repaired H versus integrated momentum Einstein equation",
+      "file": "heavy-balanced-L128-envelope-fine-metric.npz",
+      "sha256": "4fa8918a321cd854f751e0d51f9c4f74d5f2c480618f79fc935a28276615770f"
+    },
+    "G192-envelope-fine": {
+      "passed": true,
+      "physical_Phi_integral_errors": [
+        3.116746214400388e-08,
+        3.1197228129056545e-08,
+        3.1648865323546476e-08
+      ],
+      "source_refinement": 7.884225890729931e-10,
+      "geometry_rate_identity": 2.1986338328525773e-16,
+      "scope": "Phi reconstructed from evolved eta,shear and repaired H versus integrated momentum Einstein equation",
+      "file": "heavy-balanced-G192-envelope-fine-metric.npz",
+      "sha256": "3dde8f1134e2ff56376a851c902c84a73daaebd145d99f6839876c9d4db12fd5"
+    },
+    "L128-envelope-zero": {
+      "passed": true,
+      "physical_Phi_integral_errors": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_refinement": 0.0,
+      "geometry_rate_identity": 0.0,
+      "scope": "Phi reconstructed from evolved eta,shear and repaired H versus integrated momentum Einstein equation",
+      "file": "heavy-balanced-L128-envelope-zero-metric.npz",
+      "sha256": "dd5f73b48a565630bce32027e8a86bca54feb12e9cc1c3668ed2532503f14fba"
+    },
+    "L128-envelope-negative": {
+      "passed": true,
+      "physical_Phi_integral_errors": [
+        3.119830299482289e-08,
+        3.1228123502831384e-08,
+        3.167969230166075e-08
+      ],
+      "source_refinement": 7.884228041536866e-10,
+      "geometry_rate_identity": 3.2979507492790813e-16,
+      "scope": "Phi reconstructed from evolved eta,shear and repaired H versus integrated momentum Einstein equation",
+      "file": "heavy-balanced-L128-envelope-negative-metric.npz",
+      "sha256": "7b871378401036683f1c0e9c8d95e7e34c6a5c265b413035ae9915c5a2508c42"
+    },
+    "L128-envelope-shift": {
+      "passed": true,
+      "physical_Phi_integral_errors": [
+        3.119068010487975e-08,
+        3.122048792312732e-08,
+        3.167206016324778e-08
+      ],
+      "source_refinement": 7.884224815326462e-10,
+      "geometry_rate_identity": 3.2979507492794446e-16,
+      "scope": "Phi reconstructed from evolved eta,shear and repaired H versus integrated momentum Einstein equation",
+      "file": "heavy-balanced-L128-envelope-shift-metric.npz",
+      "sha256": "44a11771324c0cdeeb50402aebad09830a55bcf40c5eb95d0608d982fd041304"
+    }
+  },
+  "rotating": {
+    "L128-envelope-base": {
+      "algebra": {
+        "amplitude_reconstruction": 8.067858316435551e-16,
+        "density_product": 8.914155327703042e-16,
+        "pressure_product": 1.2734507611004346e-15,
+        "current_product": 7.091727811992273e-16,
+        "endpoint_product": 6.721462219669526e-16,
+        "background_chain": 2.3915558274412567e-12,
+        "grouped_parent_coupling": 9.127739720326178e-16
+      },
+      "integral_errors": [
+        1.359124330000388e-11,
+        9.478941164330157e-11,
+        1.5875618890373847e-09
+      ],
+      "integral_refinement": 1.5822090620863633e-09,
+      "carrier_rate_relative_defect": 7.175745083147851e-16,
+      "passed": true,
+      "file": "heavy-balanced-L128-envelope-base-amplitudes.npz",
+      "sha256": "619b576724b28a7f07d0dbc18cfd54fe00d501f25259cc7ba7ac492f004e1fae"
+    },
+    "L128-envelope-fine": {
+      "algebra": {
+        "amplitude_reconstruction": 8.067858316435503e-16,
+        "density_product": 8.914155327703042e-16,
+        "pressure_product": 1.0187606088803477e-15,
+        "current_product": 7.091727811992293e-16,
+        "endpoint_product": 8.025626530948616e-16,
+        "background_chain": 2.3915558274412567e-12,
+        "grouped_parent_coupling": 9.241132139087162e-16
+      },
+      "integral_errors": [
+        2.0122449632982595e-11,
+        9.434655886029542e-11,
+        1.587231074714227e-09
+      ],
+      "integral_refinement": 1.582209148981519e-09,
+      "carrier_rate_relative_defect": 7.175745083147851e-16,
+      "passed": true,
+      "file": "heavy-balanced-L128-envelope-fine-amplitudes.npz",
+      "sha256": "ec40092fbfe710cdaf0543389bc364a8d3aa4f71da088c552c3b85b025eb5c23"
+    },
+    "G192-envelope-fine": {
+      "algebra": {
+        "amplitude_reconstruction": 6.807666305249045e-16,
+        "density_product": 1.0187606088803477e-15,
+        "pressure_product": 1.2734507611004346e-15,
+        "current_product": 7.091727811992644e-16,
+        "endpoint_product": 8.025626530948606e-16,
+        "background_chain": 2.3915558274412567e-12,
+        "grouped_parent_coupling": 9.127739720326125e-16
+      },
+      "integral_errors": [
+        2.4283918795526397e-11,
+        9.492203399460347e-11,
+        1.5875082565876448e-09
+      ],
+      "integral_refinement": 1.5822093511074905e-09,
+      "carrier_rate_relative_defect": 7.175745083147851e-16,
+      "passed": true,
+      "file": "heavy-balanced-G192-envelope-fine-amplitudes.npz",
+      "sha256": "1ccc259ec0e5c6907ee95157f15e57b613bf17718716eec867735b1b33ea7b80"
+    },
+    "L128-envelope-zero": {
+      "algebra": {
+        "amplitude_reconstruction": 0.0,
+        "density_product": 0.0,
+        "pressure_product": 0.0,
+        "current_product": 0.0,
+        "endpoint_product": 0.0,
+        "background_chain": 2.3915558274412567e-12,
+        "grouped_parent_coupling": 0.0
+      },
+      "integral_errors": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "integral_refinement": 0.0,
+      "carrier_rate_relative_defect": 7.175745083147851e-16,
+      "passed": true,
+      "file": "heavy-balanced-L128-envelope-zero-amplitudes.npz",
+      "sha256": "cceb5bc61139643930dff3bb23dd14bb4db41370a419d9c3f2efd3c912490878"
+    },
+    "L128-envelope-negative": {
+      "algebra": {
+        "amplitude_reconstruction": 8.067858316435551e-16,
+        "density_product": 8.914155327703042e-16,
+        "pressure_product": 1.2734507611004346e-15,
+        "current_product": 7.091727811992273e-16,
+        "endpoint_product": 6.721462219669526e-16,
+        "background_chain": 2.3915558274412567e-12,
+        "grouped_parent_coupling": 9.127739720326178e-16
+      },
+      "integral_errors": [
+        1.359124330000388e-11,
+        9.478941164330157e-11,
+        1.5875618890373847e-09
+      ],
+      "integral_refinement": 1.5822090620863633e-09,
+      "carrier_rate_relative_defect": 7.175745083147851e-16,
+      "passed": true,
+      "file": "heavy-balanced-L128-envelope-negative-amplitudes.npz",
+      "sha256": "b7ec696e5e3db4fad463aee22f411d6744f0e41101ca47a0986b158080644630"
+    },
+    "L128-envelope-shift": {
+      "algebra": {
+        "amplitude_reconstruction": 6.454286653148438e-16,
+        "density_product": 7.640704566602609e-16,
+        "pressure_product": 1.018760608880348e-15,
+        "current_product": 7.09172781199236e-16,
+        "endpoint_product": 7.824985867674969e-16,
+        "background_chain": 1.9453146871587607e-12,
+        "grouped_parent_coupling": 8.689349334923226e-16
+      },
+      "integral_errors": [
+        1.7002012408218283e-11,
+        9.452898679270118e-11,
+        1.5872693111329323e-09
+      ],
+      "integral_refinement": 1.582209174556506e-09,
+      "carrier_rate_relative_defect": 7.175745083147851e-16,
+      "passed": true,
+      "file": "heavy-balanced-L128-envelope-shift-amplitudes.npz",
+      "sha256": "492981d13c1ecf62870ff3dc0a85d804dda8606e877c84e649df250bf2a70240"
+    }
+  },
+  "averages": {
+    "passed": true,
+    "algebra": {
+      "force_split": 7.292579767923603e-16,
+      "pressure_reconstruction": 7.640704566602608e-16,
+      "canonical_density": 1.2734507611004347e-16,
+      "canonical_pressure": 2.5469015222008693e-16
+    },
+    "windows": {
+      "1": {
+        "cycles": 1,
+        "count": 17,
+        "duration_min": 0.16887159956475273,
+        "duration_max": 0.20740062445486274,
+        "pressure_over_density": 0.0010280749101780208,
+        "raw_pressure_over_density": 1.994928878851723,
+        "matter_density_norm": 0.001664280433696635,
+        "pressure_reconstruction_error": 1.074292296295185e-09,
+        "integration_refinement": {
+          "2": 1.804097629101931e-08,
+          "4": 2.6779567003248786e-07
+        },
+        "force_error": 0.018023562783609934,
+        "force_bound": 0.018718182405349146,
+        "force_identity": 2.013491926099349e-13,
+        "force_refinement": 6.476183860320825e-11,
+        "cold_pressure_exact_zero": null,
+        "components_over_density": {
+          "gradient": 0.0001150579416996992,
+          "boundary": 0.0006464480447996551,
+          "expansion": 7.551406246020694e-07,
+          "metric": 1.418864873143046e-07,
+          "dense_defect": 1.9389336562310335e-13,
+          "gauge": 0.00039710130463699355
+        },
+        "gradient_only_error": 0.0009196352921081094,
+        "boundary_omission_error": 0.0006464469705073588,
+        "gauge_omission_error": 0.00039710070346295814,
+        "density_gauge_defect": 1.229274864864123e-13,
+        "coefficient_min": 7.50714910345012e-05,
+        "coefficient_max": 0.00011778985167254092,
+        "passed": true
+      },
+      "2": {
+        "cycles": 2,
+        "count": 17,
+        "duration_min": 0.33774367151531237,
+        "duration_max": 0.4148024653172513,
+        "pressure_over_density": 0.001028085203010835,
+        "raw_pressure_over_density": 1.994928878851723,
+        "matter_density_norm": 0.0016642980075420898,
+        "pressure_reconstruction_error": 7.354785755472973e-10,
+        "integration_refinement": {
+          "2": 9.821672071321845e-09,
+          "4": 1.0059303192390669e-07
+        },
+        "force_error": 0.017986853425390505,
+        "force_bound": 0.018680350099125276,
+        "force_identity": 1.68484836166316e-13,
+        "force_refinement": 7.0709468086904e-11,
+        "cold_pressure_exact_zero": null,
+        "components_over_density": {
+          "gradient": 0.00011506024442918302,
+          "boundary": 0.000646451066129648,
+          "expansion": 7.551707494572174e-07,
+          "metric": 1.418936484271507e-07,
+          "dense_defect": 1.7490693660839634e-13,
+          "gauge": 0.0003971078685871585
+        },
+        "gradient_only_error": 0.0009196435839319741,
+        "boundary_omission_error": 0.0006464511599862177,
+        "gauge_omission_error": 0.00039710765876046713,
+        "density_gauge_defect": 1.6556143890262748e-13,
+        "coefficient_min": 7.50714910345012e-05,
+        "coefficient_max": 0.00011778985167254092,
+        "passed": true
+      },
+      "4": {
+        "cycles": 4,
+        "count": 17,
+        "duration_min": 0.6754911222325859,
+        "duration_max": 0.8296146622393508,
+        "pressure_over_density": 0.0010281262312224744,
+        "raw_pressure_over_density": 1.994928878851723,
+        "matter_density_norm": 0.0016643683082611669,
+        "pressure_reconstruction_error": 3.6877067508951476e-10,
+        "integration_refinement": {
+          "2": 6.657528631799843e-09,
+          "4": 8.987642289178014e-08
+        },
+        "force_error": 0.017840484328184046,
+        "force_bound": 0.018529500150874144,
+        "force_identity": 1.0886868889544796e-13,
+        "force_refinement": 3.600222854895417e-11,
+        "cold_pressure_exact_zero": null,
+        "components_over_density": {
+          "gradient": 0.0001150694562747137,
+          "boundary": 0.0006464679751407205,
+          "expansion": 7.552912177382335e-07,
+          "metric": 1.4192228046886146e-07,
+          "dense_defect": 9.626757876465265e-14,
+          "gauge": 0.0003971340791288553
+        },
+        "gradient_only_error": 0.0009196766073677131,
+        "boundary_omission_error": 0.0006464679910476777,
+        "gauge_omission_error": 0.0003971339981553036,
+        "density_gauge_defect": 1.295731228205722e-13,
+        "coefficient_min": 7.50714910345012e-05,
+        "coefficient_max": 0.00011778985167254092,
+        "passed": true
+      },
+      "8": {
+        "cycles": 8,
+        "count": 17,
+        "duration_min": 1.3510124809110948,
+        "duration_max": 1.659307191834472,
+        "pressure_over_density": 0.001028290533949873,
+        "raw_pressure_over_density": 1.994928878851723,
+        "matter_density_norm": 0.0016646495965743292,
+        "pressure_reconstruction_error": 1.549502502049304e-10,
+        "integration_refinement": {
+          "2": 2.990081626494687e-09,
+          "4": 2.4482154766897264e-07
+        },
+        "force_error": 0.017262411113995995,
+        "force_bound": 0.017933633973978985,
+        "force_identity": 7.688579723977853e-14,
+        "force_refinement": 1.8526774528169576e-11,
+        "cold_pressure_exact_zero": null,
+        "components_over_density": {
+          "gradient": 0.00011510631850438998,
+          "boundary": 0.0006465353414555244,
+          "expansion": 7.557733177764358e-07,
+          "metric": 1.4203671331238446e-07,
+          "dense_defect": 7.781052736718754e-14,
+          "gauge": 0.00039723910980487024
+        },
+        "gradient_only_error": 0.0009198088791444905,
+        "boundary_omission_error": 0.0006465352522832919,
+        "gauge_omission_error": 0.00039723915046721125,
+        "density_gauge_defect": 6.319391373428868e-14,
+        "coefficient_min": 7.50714910345012e-05,
+        "coefficient_max": 0.00011778985167254092,
+        "passed": true
+      }
+    },
+    "file": "heavy-balanced-averages.npz",
+    "sha256": "c7669e02eeca98d79e9f8265f783c90ad37b8b44fdb60a456da175b02cfcb47b"
+  },
+  "average_comparisons": {
+    "1": {
+      "errors": {
+        "matter_D": 1.0534272022303354e-11,
+        "matter_P": 3.674731163833611e-13,
+        "matter_Q": 1.195825278344419e-14,
+        "gradient": 9.02142937072429e-16,
+        "boundary": 6.496309309647373e-13,
+        "expansion": 1.587051864448963e-16,
+        "metric": 3.371114033841059e-17,
+        "dense_defect": 3.0513884140244367e-24,
+        "gauge": 3.205403144062054e-13,
+        "pressure_predicted": 4.5104583025804096e-13
+      },
+      "passed": true
+    },
+    "2": {
+      "errors": {
+        "matter_D": 1.0679954656923494e-11,
+        "matter_P": 4.3471958116712755e-13,
+        "matter_Q": 1.3307843549911875e-14,
+        "gradient": 9.145866119512993e-16,
+        "boundary": 6.802462219191806e-13,
+        "expansion": 1.7382978094844473e-16,
+        "metric": 3.9382610697836855e-17,
+        "dense_defect": 1.7669705721329337e-24,
+        "gauge": 3.7437789048916695e-13,
+        "pressure_predicted": 3.456154178771063e-13
+      },
+      "passed": true
+    },
+    "4": {
+      "errors": {
+        "matter_D": 1.0729011440936373e-11,
+        "matter_P": 2.296593317332258e-13,
+        "matter_Q": 1.244007907378974e-14,
+        "gradient": 9.15788477369235e-16,
+        "boundary": 3.4844464151342856e-13,
+        "expansion": 8.310393671605619e-17,
+        "metric": 1.2418069389069076e-17,
+        "dense_defect": 9.949818481072095e-25,
+        "gauge": 1.18106066959304e-13,
+        "pressure_predicted": 2.4056907517047345e-13
+      },
+      "passed": true
+    },
+    "8": {
+      "errors": {
+        "matter_D": 1.067587528729578e-11,
+        "matter_P": 8.413659962305244e-14,
+        "matter_Q": 1.229346767498248e-14,
+        "gradient": 9.153475097143606e-16,
+        "boundary": 1.3026982789264102e-13,
+        "expansion": 6.550978613903802e-17,
+        "metric": 6.784724183227149e-18,
+        "dense_defect": 6.908798827796471e-25,
+        "gauge": 7.614664068991159e-14,
+        "pressure_predicted": 1.1330852519869406e-13
+      },
+      "passed": true
+    }
+  },
+  "newton": {
+    "split_error": 6.771681213071917e-16,
+    "velocity_replay_error": 2.987079927681444e-08,
+    "source_refinement": 1.6447060838257368e-13,
+    "force_poisson_difference": 0.018686998802332475,
+    "force_triangle_budget": 0.019924160844150083,
+    "velocity_poisson_difference": 0.00032091650276366217,
+    "velocity_interpolant_budget": 0.001797117160986193,
+    "bound_excess": 0.0,
+    "passed": true,
+    "scope": "force approximation on corrected relativistic sources; not independently evolved Poisson cosmology or static local PPN",
+    "file": "heavy-balanced-newton.npz",
+    "sha256": "2c81b055d133fe738923e31af34d0c1c00ba2c0b159673e82e1a24de072f3ae3"
+  }
+}

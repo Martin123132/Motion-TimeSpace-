@@ -1,0 +1,444 @@
+{
+  "passed": true,
+  "reports": [
+    {
+      "model": "heavy",
+      "rows": [
+        {
+          "model": "heavy",
+          "branch": "gr",
+          "packet": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\double\\evolution\\heavy-gr.npz",
+          "sha256": "dcef3c9055997c9f6f0befe11defd4c3c89668a7541ec1d3dd3f430bd6ba9cb5",
+          "status": {
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 53602,
+            "points": 24685,
+            "seconds": 17.191293999989284
+          },
+          "algebra": {
+            "continuity": 5.137900727277167e-16,
+            "euler": 2.38533683562735e-16
+          },
+          "constraints": {
+            "Hamiltonian": 2.64778600569312e-16,
+            "slip": 6.717736614890924e-17,
+            "momentum": 1.7745143813426806e-08
+          },
+          "denominator_min": 1.0003515310682718,
+          "background_H_over_k_max": 0.01085374256909384,
+          "enthalpy_quadrature_defect": 9.289214011552665e-08,
+          "current_state_omitted_momentum": 0.003681098643359079,
+          "current_state_omitted_shear": 0.00847926889401507,
+          "radiation_sync_density_fraction": 0.014154576564300574,
+          "pressure_sync_fraction": 2.2124147718835885,
+          "spatial_phi_is_driver_only": false,
+          "control": {
+            "state_error": 5.112928877605708e-08,
+            "physical_errors": {
+              "Phi": 1.817853284615974e-10,
+              "Psi": 1.8042163632594532e-10,
+              "D": 1.97836342792703e-10,
+              "Q": 5.091437940589799e-09,
+              "Pi": 2.0639310368302233e-10,
+              "theta_c": 3.77117009715843e-08,
+              "delta_c": 1.7245460200211403e-09,
+              "delta_b": 1.2519001087819342e-09,
+              "delta_gamma": 1.2062490421077856e-09,
+              "delta_massless": 1.3975223343796887e-09
+            },
+            "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-coupled-wavelength-controls-20261107\\double\\evolution\\heavy-full.npz",
+            "sha256": "888b861fa708d2ed96e543249f6d9763f4f36c97db0535100633865023cf6d55"
+          },
+          "control_passed": true,
+          "numerical_passed": true
+        },
+        {
+          "model": "heavy",
+          "branch": "poisson-spatial",
+          "packet": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\double\\evolution\\heavy-poisson-spatial.npz",
+          "sha256": "eb01dd5388b426e4bc06fff1f6a1884a7283db2e311a21ed8166ccbea955b7af",
+          "status": {
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 53602,
+            "points": 24685,
+            "seconds": 17.10137059999397
+          },
+          "algebra": {
+            "continuity": 5.199600408499929e-16,
+            "euler": 2.387763069913985e-16,
+            "poisson": 7.967314149639661e-17
+          },
+          "constraints": {},
+          "denominator_min": 1.0003515310682718,
+          "background_H_over_k_max": 0.01085374256909384,
+          "enthalpy_quadrature_defect": 9.289214011552665e-08,
+          "current_state_omitted_momentum": 0.003688596040785238,
+          "current_state_omitted_shear": 0.008497183495175281,
+          "radiation_sync_density_fraction": 0.014155910314896077,
+          "pressure_sync_fraction": 2.2124147927153097,
+          "spatial_phi_is_driver_only": false,
+          "comparison": {
+            "physical_errors": {
+              "Phi": 0.003679913201453966,
+              "Psi": 0.011778046731351638,
+              "D": 2.2807137177797127e-05,
+              "Q": 5.5793132248596506e-05,
+              "Pi": 0.0004123605540196294,
+              "theta_c": 0.00033425702913069706,
+              "delta_c": 0.0002559628280898427,
+              "delta_b": 0.00025621858396008553,
+              "delta_gamma": 0.0002563409955108535,
+              "delta_massless": 0.0006938106587808592
+            },
+            "final_relative": {
+              "Phi": 0.0017115619167323729,
+              "Psi": -7.218706168957515e-05,
+              "D": -2.241272121098179e-05,
+              "Q": 3.942114946909498e-05,
+              "Pi": 0.00031817799946295494,
+              "theta_c": 0.0003320995097109964,
+              "delta_c": -0.0002542848744810814,
+              "delta_b": 4.259188423514482e-05,
+              "delta_gamma": 4.3767809735426195e-05,
+              "delta_massless": -0.0004979771118654659
+            },
+            "force_feedback": 2.276078797431209e-05,
+            "removed_control_momentum": 0.003681098643359079,
+            "removed_control_shear": 0.00847926889401507,
+            "force_decomposition": 3.0177332449705326e-16,
+            "live_evolution_integral_checks": [
+              {
+                "stride": 1,
+                "velocity": 6.3759609216311555e-15,
+                "density": 1.9729114719111927e-13
+              },
+              {
+                "stride": 2,
+                "velocity": 8.640467179231738e-14,
+                "density": 1.9725899546962048e-13
+              }
+            ],
+            "spatial_phi_is_driver_only": false
+          },
+          "initial_matter_difference": {
+            "D": 0.0,
+            "Q": 0.0,
+            "Pi": 0.0,
+            "theta_c": 0.0,
+            "delta_c": 0.0,
+            "delta_b": 0.0,
+            "delta_gamma": 0.0,
+            "delta_massless": 0.0
+          },
+          "numerical_passed": true
+        },
+        {
+          "model": "heavy",
+          "branch": "newton-dust-force",
+          "packet": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\double\\evolution\\heavy-newton-dust-force.npz",
+          "sha256": "24fd0e1291901e84c76c757699fec92c48bc173f05e04e54a2b04f5710f99833",
+          "status": {
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 53602,
+            "points": 24685,
+            "seconds": 17.578484300000127
+          },
+          "algebra": {
+            "continuity": 4.307759561734569e-16,
+            "euler": 2.387763069913985e-16,
+            "poisson": 7.967314149639661e-17,
+            "dust_continuity": 4.307759561734569e-16
+          },
+          "constraints": {},
+          "denominator_min": 1.0,
+          "background_H_over_k_max": 0.01085374256909384,
+          "enthalpy_quadrature_defect": 9.289214011552665e-08,
+          "current_state_omitted_momentum": 0.0036885948546625117,
+          "current_state_omitted_shear": 0.008510325636415777,
+          "radiation_sync_density_fraction": 0.014187469660288695,
+          "pressure_sync_fraction": 2.2124147516149923,
+          "spatial_phi_is_driver_only": true,
+          "comparison": {
+            "physical_errors": {
+              "Phi": 1.0,
+              "Psi": 0.011838861433964488,
+              "D": 0.00021711192860024157,
+              "Q": 0.000322173500738424,
+              "Pi": 0.00290324941281512,
+              "theta_c": 0.00036196052320223244,
+              "delta_c": 0.002059277876824877,
+              "delta_b": 0.0023216751109024778,
+              "delta_gamma": 0.002324919259138122,
+              "delta_massless": 0.002487098355518403
+            },
+            "final_relative": {
+              "Phi": -0.02953196365912479,
+              "Psi": 0.0001221164733664446,
+              "D": -0.00021711192860024157,
+              "Q": -4.354978575899212e-05,
+              "Pi": -0.00102227784095747,
+              "theta_c": 0.0003603740496313283,
+              "delta_c": -0.002059277876824877,
+              "delta_b": -0.000486829852376902,
+              "delta_gamma": -0.000500660881118979,
+              "delta_massless": 0.0015639893797110699
+            },
+            "force_feedback": 0.00021667070860497108,
+            "removed_control_momentum": 0.003681098643359079,
+            "removed_control_shear": 0.00847926889401507,
+            "force_decomposition": 2.944258000745163e-16,
+            "live_evolution_integral_checks": [
+              {
+                "stride": 1,
+                "velocity": 5.639526146945625e-15,
+                "density": 3.5092657001583487e-13
+              },
+              {
+                "stride": 2,
+                "velocity": 8.517276403776714e-14,
+                "density": 3.509303113070638e-13
+              }
+            ],
+            "spatial_phi_is_driver_only": true
+          },
+          "initial_matter_difference": {
+            "D": 0.0,
+            "Q": 0.0,
+            "Pi": 0.0,
+            "theta_c": 0.0,
+            "delta_c": 0.0,
+            "delta_b": 0.0,
+            "delta_gamma": 0.0,
+            "delta_massless": 0.0
+          },
+          "numerical_passed": true
+        }
+      ],
+      "all_numerical_passed": true
+    },
+    {
+      "model": "cold",
+      "rows": [
+        {
+          "model": "cold",
+          "branch": "gr",
+          "packet": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\double\\evolution\\cold-gr.npz",
+          "sha256": "e784e7eb04759c826b1cb9c782fc9cd845856bc92258d29936ad45dd273b247b",
+          "status": {
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 5554,
+            "points": 5402,
+            "seconds": 1.285831600020174
+          },
+          "algebra": {
+            "continuity": 5.599415292054136e-16,
+            "euler": 2.3062938755487437e-16
+          },
+          "constraints": {
+            "Hamiltonian": 2.796015335084516e-16,
+            "slip": 9.742696239626323e-17,
+            "momentum": 6.993047398028102e-08
+          },
+          "denominator_min": 1.0004391163233999,
+          "background_H_over_k_max": 0.010853021946856008,
+          "enthalpy_quadrature_defect": 1.0900153017207513e-07,
+          "current_state_omitted_momentum": 0.0006335805946286907,
+          "current_state_omitted_shear": 0.008485737273771714,
+          "radiation_sync_density_fraction": 0.014149426143746606,
+          "pressure_sync_fraction": 0.0054154399257646335,
+          "spatial_phi_is_driver_only": false,
+          "control": {
+            "state_error": 2.867194145640279e-07,
+            "physical_errors": {
+              "Phi": 1.4944682241723683e-10,
+              "Psi": 1.4813740404263105e-10,
+              "D": 1.6203228141392945e-10,
+              "Q": 2.348206511783721e-08,
+              "Pi": 8.681712491870045e-10,
+              "theta_c": 3.6378259723412264e-08,
+              "delta_c": 1.8267900043446964e-10,
+              "delta_b": 5.644570118968288e-09,
+              "delta_gamma": 1.8622625802368018e-09,
+              "delta_massless": 1.3500186987799999e-09
+            },
+            "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-coupled-wavelength-controls-20261107\\double\\evolution\\cold-full.npz",
+            "sha256": "f5085265dadbd550ea29138c88a0826eb57a653587ea7af8acddbb9b3d3ef61c"
+          },
+          "control_passed": true,
+          "numerical_passed": true
+        },
+        {
+          "model": "cold",
+          "branch": "poisson-spatial",
+          "packet": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\double\\evolution\\cold-poisson-spatial.npz",
+          "sha256": "a7a9dd2d38d984238243363216bf6f8aa55a45fbff2efa6595508f509453f87f",
+          "status": {
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 5608,
+            "points": 5402,
+            "seconds": 1.2951114999887068
+          },
+          "algebra": {
+            "continuity": 5.734647221206706e-16,
+            "euler": 2.3070247185952593e-16,
+            "poisson": 1.1538780124916555e-16
+          },
+          "constraints": {},
+          "denominator_min": 1.0004391163233999,
+          "background_H_over_k_max": 0.010853021946856008,
+          "enthalpy_quadrature_defect": 1.0900153017207513e-07,
+          "current_state_omitted_momentum": 0.0006339822734945154,
+          "current_state_omitted_shear": 0.008491621685139918,
+          "radiation_sync_density_fraction": 0.014150813973646396,
+          "pressure_sync_fraction": 0.005415962922616538,
+          "spatial_phi_is_driver_only": false,
+          "comparison": {
+            "physical_errors": {
+              "Phi": 0.0006335805946286773,
+              "Psi": 0.008861884551422857,
+              "D": 9.151903992998968e-06,
+              "Q": 0.00013514592148338402,
+              "Pi": 0.0003895974623477043,
+              "theta_c": 0.00019458890320281762,
+              "delta_c": 9.196287021774854e-06,
+              "delta_b": 0.0002457217388811648,
+              "delta_gamma": 0.00024868728246459234,
+              "delta_massless": 0.0006358766626895473
+            },
+            "final_relative": {
+              "Phi": 0.00013091472715050893,
+              "Psi": -0.0016894656831805425,
+              "D": -8.3638860898898e-06,
+              "Q": 4.4383590259077535e-05,
+              "Pi": 0.0003244725840758644,
+              "theta_c": 8.375040786296229e-05,
+              "delta_c": -9.196287021774854e-06,
+              "delta_b": 3.589315050060876e-05,
+              "delta_gamma": 3.310842013063226e-05,
+              "delta_massless": -0.0004955918756080019
+            },
+            "force_feedback": 9.1461055242251e-06,
+            "removed_control_momentum": 0.0006335805946286907,
+            "removed_control_shear": 0.008485737273771714,
+            "force_decomposition": 3.3490518323715485e-16,
+            "live_evolution_integral_checks": [
+              {
+                "stride": 1,
+                "velocity": 2.8631675165401113e-15,
+                "density": 9.770218269188327e-16
+              },
+              {
+                "stride": 2,
+                "velocity": 6.202341255883046e-15,
+                "density": 1.0030904794105959e-15
+              }
+            ],
+            "spatial_phi_is_driver_only": false
+          },
+          "initial_matter_difference": {
+            "D": 0.0,
+            "Q": 0.0,
+            "Pi": 0.0,
+            "theta_c": 0.0,
+            "delta_c": 0.0,
+            "delta_b": 0.0,
+            "delta_gamma": 0.0,
+            "delta_massless": 0.0
+          },
+          "numerical_passed": true
+        },
+        {
+          "model": "cold",
+          "branch": "newton-dust-force",
+          "packet": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\double\\evolution\\cold-newton-dust-force.npz",
+          "sha256": "062c3c81cd898e21c4f1f74704f077b6d4d41f7777e1128257d248b436554670",
+          "status": {
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 5581,
+            "points": 5402,
+            "seconds": 1.2832883000082802
+          },
+          "algebra": {
+            "continuity": 4.1647367053302604e-16,
+            "euler": 2.3070247185952593e-16,
+            "poisson": 1.1538780124916555e-16,
+            "dust_continuity": 4.1647367053302604e-16
+          },
+          "constraints": {},
+          "denominator_min": 1.0,
+          "background_H_over_k_max": 0.010853021946856008,
+          "enthalpy_quadrature_defect": 1.0900153017207513e-07,
+          "current_state_omitted_momentum": 0.0006339822734945154,
+          "current_state_omitted_shear": 0.008496699578221648,
+          "radiation_sync_density_fraction": 0.014161825452541795,
+          "pressure_sync_fraction": 0.005420357860627352,
+          "spatial_phi_is_driver_only": true,
+          "comparison": {
+            "physical_errors": {
+              "Phi": 1.0,
+              "Psi": 0.008883275206238505,
+              "D": 5.513080209396121e-05,
+              "Q": 0.0005572905526749438,
+              "Pi": 0.0012015707682508294,
+              "theta_c": 0.00019517863580454474,
+              "delta_c": 6.171738284238704e-05,
+              "delta_b": 0.0009874141141964395,
+              "delta_gamma": 0.0009995349209189054,
+              "delta_massless": 0.0011744602520413353
+            },
+            "final_relative": {
+              "Phi": 0.719191433061395,
+              "Psi": -0.0016427283977869806,
+              "D": -5.513080209396121e-05,
+              "Q": -9.138793019937613e-06,
+              "Pi": -0.00043911525008749115,
+              "theta_c": 8.977506483209567e-05,
+              "delta_c": -6.171738284238704e-05,
+              "delta_b": -0.0006993240698072407,
+              "delta_gamma": -0.0007131187431865368,
+              "delta_massless": 0.0008346276877454251
+            },
+            "force_feedback": 5.509587228758817e-05,
+            "removed_control_momentum": 0.0006335805946286907,
+            "removed_control_shear": 0.008485737273771714,
+            "force_decomposition": 3.744848867106368e-16,
+            "live_evolution_integral_checks": [
+              {
+                "stride": 1,
+                "velocity": 1.9980517532292142e-15,
+                "density": 1.6747563190509038e-15
+              },
+              {
+                "stride": 2,
+                "velocity": 5.339475121468765e-15,
+                "density": 1.6486891785742494e-15
+              }
+            ],
+            "spatial_phi_is_driver_only": true
+          },
+          "initial_matter_difference": {
+            "D": 0.0,
+            "Q": 0.0,
+            "Pi": 0.0,
+            "theta_c": 0.0,
+            "delta_c": 0.0,
+            "delta_b": 0.0,
+            "delta_gamma": 0.0,
+            "delta_massless": 0.0
+          },
+          "numerical_passed": true
+        }
+      ],
+      "all_numerical_passed": true
+    }
+  ],
+  "independent_current_state_gravity": true,
+  "no_future_perturbation_sources": true,
+  "newton_scope": "dust-force reduction with live relativistic species; Phi is a driver in chi=0"
+}

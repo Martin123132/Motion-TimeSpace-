@@ -1,0 +1,64 @@
+{
+  "state": "complete",
+  "time_utc": "2026-10-06T16:26:13.669607+00:00",
+  "script_sha256": "39140c07ef2036b99f5e8f28f2488ba1f12150c6399197ca2250e81532d8b2d7",
+  "input_hashes": {
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polar-energy-bound-20261006\\bound_common.py": "64a7902a7b128a8d8244b6f5839bb6889763c6531d095495df60ca8667001729",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polar-energy-bound-20261006\\derive_vacuum_energy.py": "39140c07ef2036b99f5e8f28f2488ba1f12150c6399197ca2250e81532d8b2d7",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polar-hamiltonian-20261006\\polar_energy.py": "8b41a3e46cbcf3ec34a30d90d5f2a6d7e9513469bef8b98d5439db4f6546eca0",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polar-hamiltonian-20261006\\results\\stage-integrity.json": "ef3376d6798cfbcba1424efd32c5939be7117274ca8c9cc945cb34fa648c90d9",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\radial-gravity-stability-20261003\\test_radial_energy.py": "b3e34d1313560be3dc803d80dc5eb5abeaafa940f0e792d116214e97959a89fa",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\self-gravity-20261003\\solve_self_gravity.py": "35adf55501885d1e988a1e48d3a2d7f14670c683e62b1e289fc4c8c094aed3ea"
+  },
+  "exact_checks": [
+    {
+      "name": "master definition inverted",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "arbitrary master solves vacuum spatial constraint",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "no second derivative squared survives constraint",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "canonical positive gradient coefficient",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "derived Zerilli potential normalization",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "off shell vacuum energy plus exact contact",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "flat contact limit",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "flat angular barrier",
+      "residual": "0",
+      "passed": true
+    }
+  ],
+  "metric_angular_coefficient": "(6*M**2 + 6*M*r + 6*r**2)/(r**2*(3*M + 2*r))",
+  "master_definition": "Z=r/3*[K+F/(2+3M/r)*(H-r K_prime)]",
+  "contact_4alpha": "-(-2*M + r)*(-27*M**4*r**2*Derivative(Z(r), r)**2 + 54*M**4*r*Z(r)*Derivative(Z(r), r) - 27*M**4*Z(r)**2 - 90*M**3*r**3*Derivative(Z(r), r)**2 + 144*M**3*r**2*Z(r)*Derivative(Z(r), r) - 54*M**3*r*Z(r)**2 - 66*M**2*r**4*Derivative(Z(r), r)**2 + 144*M**2*r**3*Z(r)*Derivative(Z(r), r) - 36*M**2*r**2*Z(r)**2 + 120*M*r**4*Z(r)*Derivative(Z(r), r) - 36*M*r**3*Z(r)**2 + 8*r**6*Derivative(Z(r), r)**2 + 48*r**5*Z(r)*Derivative(Z(r), r))/(2*r**4*(3*M + 2*r)**2)",
+  "potential": "(-2*M/r + 1)*(18*M**3 + 36*M**2*r + 24*M*r**2 + 24*r**3)/(r**3*(3*M + 2*r)**2)",
+  "energy_identity": "E_vacuum = 3/(4alpha) integral [F Z_prime^2+V_Z/F Z^2] dr + [contact_4alpha/(4alpha)]_endpoints",
+  "positivity_domain": "M>=0,r>2M,alpha>0; bulk positive, retain finite inner-surface contact",
+  "wave_equation_used": false,
+  "continuum_gap_claimed": false,
+  "isolated_exterior_ADM_energy_without_surface_contact_positive_claimed": false
+}

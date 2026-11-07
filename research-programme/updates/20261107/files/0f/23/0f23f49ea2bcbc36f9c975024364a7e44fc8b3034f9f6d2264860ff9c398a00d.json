@@ -1,0 +1,138 @@
+{
+  "state": "complete",
+  "created_at": "2026-10-03T13:23:23.964906+00:00",
+  "checks": [
+    {
+      "name": "flow_normalization",
+      "passed": true,
+      "difference": "0"
+    },
+    {
+      "name": "spatial_metric_variation_0_0",
+      "passed": true,
+      "difference": "0"
+    },
+    {
+      "name": "transverse_traceless_metric_0_0",
+      "passed": true,
+      "difference": "0"
+    },
+    {
+      "name": "spatial_metric_variation_0_1",
+      "passed": true,
+      "difference": "0"
+    },
+    {
+      "name": "transverse_traceless_metric_0_1",
+      "passed": true,
+      "difference": "0"
+    },
+    {
+      "name": "spatial_metric_variation_0_2",
+      "passed": true,
+      "difference": "0"
+    },
+    {
+      "name": "transverse_traceless_metric_0_2",
+      "passed": true,
+      "difference": "0"
+    },
+    {
+      "name": "spatial_metric_variation_1_0",
+      "passed": true,
+      "difference": "0"
+    },
+    {
+      "name": "transverse_traceless_metric_1_0",
+      "passed": true,
+      "difference": "0"
+    },
+    {
+      "name": "spatial_metric_variation_1_1",
+      "passed": true,
+      "difference": "0"
+    },
+    {
+      "name": "transverse_traceless_metric_1_1",
+      "passed": true,
+      "difference": "0"
+    },
+    {
+      "name": "spatial_metric_variation_1_2",
+      "passed": true,
+      "difference": "0"
+    },
+    {
+      "name": "transverse_traceless_metric_1_2",
+      "passed": true,
+      "difference": "0"
+    },
+    {
+      "name": "spatial_metric_variation_2_0",
+      "passed": true,
+      "difference": "0"
+    },
+    {
+      "name": "transverse_traceless_metric_2_0",
+      "passed": true,
+      "difference": "0"
+    },
+    {
+      "name": "spatial_metric_variation_2_1",
+      "passed": true,
+      "difference": "0"
+    },
+    {
+      "name": "transverse_traceless_metric_2_1",
+      "passed": true,
+      "difference": "0"
+    },
+    {
+      "name": "spatial_metric_variation_2_2",
+      "passed": true,
+      "difference": "0"
+    },
+    {
+      "name": "transverse_traceless_metric_2_2",
+      "passed": true,
+      "difference": "0"
+    },
+    {
+      "name": "finite_momentum_zero_limit",
+      "passed": true,
+      "difference": "0"
+    },
+    {
+      "name": "acoustic_boost_invariant",
+      "passed": true,
+      "difference": "0"
+    },
+    {
+      "name": "two_particle_threshold_smooth_weight",
+      "passed": true,
+      "difference": "0"
+    },
+    {
+      "name": "spatial_rescaling_stress_correlator_prefactor",
+      "passed": true,
+      "difference": "0"
+    }
+  ],
+  "exact_identity_checks": 23,
+  "spatial_metric_variation": "Matrix([[delta_conformal, 0, 0], [0, delta_conformal, 0], [0, 0, delta_conformal]])",
+  "transverse_traceless_variation": "Matrix([[0, 0, 0], [0, 0, 0], [0, 0, 0]])",
+  "positive_frequency_spectral_weight": "(frequency**2 - momentum**2*sound_speed**2)**2/(960*pi*sound_speed**3)",
+  "spectral_support": "omega > c_s * |q|; zero below; q along z and shear xy; positive-frequency commutator convention",
+  "derivation": "Rescale x_prime=x/c_s, canonical_field_prime=c_s^(3/2)*canonical_field. Then T_xy=c_s^-3 T_prime_xy, d4x=c_s^3 d4x_prime. Acoustic Lorentz boost along z leaves xy indices unchanged. Transport the independently derived zero-momentum Gaussian two-phonon density.",
+  "scope": "Leading Gaussian phonon EFT, homogeneous stable charged background, low frequencies and momenta compared with amplitude-elimination scale, zero temperature; no amplitude threshold or interaction resummation included.",
+  "not_proven": [
+    "nonperturbative_no_composite_tensor_theorem",
+    "full_amplitude_finite_momentum_response",
+    "underlying_geometry_emergence",
+    "universal_standard_model_metric"
+  ],
+  "inputs": {
+    "first_candidate": "b87f8562235d9a617402d1a35dc1806cbd836315f6c5d68316e8e7837206043a",
+    "independent_repair": "25186d4a45a5c39f5e50816a31f84e611d87faa5b56a7025c55b70b8c25f4092"
+  }
+}

@@ -1,0 +1,731 @@
+{
+  "model": "heavy",
+  "numerical": {
+    "quadrature_derivative_direct": 1.6174307640736932e-09,
+    "quadrature_derivative_grid": 1.6137210742421786e-08,
+    "quadrature_derivative_step": 2.712587708438059e-09,
+    "primitive_derivative": 1.3701778463590391e-08,
+    "poisson-spatial_full_derivative_core": 1.5795576981146448e-09,
+    "poisson-spatial_derivative_step_core": 2.6482498532657643e-09,
+    "poisson-spatial_full_derivative_heavy": 1.626260205420243e-09,
+    "poisson-spatial_derivative_step_heavy": 2.7202103871628726e-09,
+    "poisson-spatial_cap_contracted_derivative_D": 5.1270828307840745e-14,
+    "poisson-spatial_cap_contracted_derivative_delta_c": 2.5431545850852715e-12,
+    "poisson-spatial_half-cap_contracted_derivative_D": 3.106440165553145e-14,
+    "poisson-spatial_half-cap_contracted_derivative_delta_c": 1.974763696383874e-12,
+    "newton-dust-force_full_derivative_core": 1.7108875402850835e-09,
+    "newton-dust-force_derivative_step_core": 2.7591609211098445e-09,
+    "newton-dust-force_full_derivative_heavy": 1.6262959477521243e-09,
+    "newton-dust-force_derivative_step_heavy": 2.7200987055591266e-09,
+    "newton-dust-force_cap_contracted_derivative_D": 3.973342331852922e-14,
+    "newton-dust-force_cap_contracted_derivative_delta_c": 1.749204335126473e-12,
+    "newton-dust-force_half-cap_contracted_derivative_D": 3.760260881879731e-14,
+    "newton-dust-force_half-cap_contracted_derivative_delta_c": 2.0977092616404522e-12
+  },
+  "algebra": {
+    "constraint_primitive": 3.339631863766858e-16,
+    "prospective_temporal": 6.917370363317759e-16,
+    "source_momentum": 0.0
+  },
+  "branches": [
+    {
+      "model": "heavy",
+      "branch": "poisson-spatial",
+      "cases": [
+        {
+          "tag": "cap",
+          "packet": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-metric-time-primitive-20261107\\results\\heavy-poisson-spatial-cap.npz",
+          "sha256": "f7a7d7f128980673bc159cbb0eb89ce3bcf7185c724387eab4f94fd96097fd10",
+          "original_adjoint": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-feedback-adjoint-20261107\\adjoints\\heavy-poisson-spatial-cap.npz",
+          "original_adjoint_sha256": "03e14b59692d3a058d2378277a8145585f920d73983a4e49a65435ca7a1439a3",
+          "prediction": [
+            4.757182940685574e-05,
+            -0.00047905060950158897
+          ],
+          "bound": [
+            0.0003212406438623766,
+            0.0014082052031267934
+          ],
+          "boundary": [
+            -3.218267909004909e-07,
+            -8.775025609662482e-06
+          ],
+          "conservative_boundary": [
+            8.654321783900714e-06,
+            3.7896329792772875e-05
+          ],
+          "temporal_prediction": [
+            8.678061989547448e-05,
+            -3.4345537232405735e-06
+          ],
+          "temporal_bound": [
+            0.00029695083638395974,
+            2.875127950336791e-05
+          ],
+          "original_temporal_budget": [
+            [
+              1.6064612483289242e-05,
+              0.00010187456342966426,
+              0.00045233857887207033
+            ],
+            [
+              0.00019915620803989922,
+              0.0012702432101834285,
+              0.005382105988045797
+            ]
+          ],
+          "replay_error": 4.988940584230877e-14,
+          "integrals": [
+            {
+              "stride": 1,
+              "signed_channels": [
+                [
+                  -1.4783759121741522e-05,
+                  -2.4425031366877212e-05,
+                  8.710244668637496e-05
+                ],
+                [
+                  -0.00018197829837204296,
+                  -0.00029363775740630545,
+                  5.340471886421909e-06
+                ]
+              ],
+              "signed_prediction": [
+                4.789365619775623e-05,
+                -0.0004702755838919265
+              ],
+              "channel_absolute_budgets": [
+                [
+                  1.6064612483289242e-05,
+                  0.00010187456342966426,
+                  0.0002966290095930592
+                ],
+                [
+                  0.00019915620803989922,
+                  0.0012702432101834285,
+                  1.9976253893705427e-05
+                ]
+              ],
+              "channel_absolute_lower": [
+                [
+                  1.6064612483289242e-05,
+                  0.00010187456342966426,
+                  0.0002966290095930592
+                ],
+                [
+                  0.00019915620803989922,
+                  0.0012702432101834285,
+                  1.9976253893705427e-05
+                ]
+              ],
+              "combined_absolute_budget": [
+                0.0003209188170714761,
+                0.0013994301775171309
+              ],
+              "combined_absolute_lower": [
+                0.0003209188170714761,
+                0.0013994301775171309
+              ],
+              "enclosure_relative_gap": 0.0,
+              "meaning": "adaptive Bernstein absolute-integral enclosure for saved cubic interpolant; floating-point, not full continuum certification"
+            },
+            {
+              "stride": 2,
+              "signed_channels": [
+                [
+                  -1.4783759119232878e-05,
+                  -2.442503136688186e-05,
+                  8.710244681132132e-05
+                ],
+                [
+                  -0.000181978298338724,
+                  -0.0002936377574063647,
+                  5.34047188153978e-06
+                ]
+              ],
+              "signed_prediction": [
+                4.789365632520658e-05,
+                -0.0004702755838635489
+              ],
+              "channel_absolute_budgets": [
+                [
+                  1.606461208377323e-05,
+                  0.00010187456342974399,
+                  0.0002966289114719956
+                ],
+                [
+                  0.0001991562031481292,
+                  0.001270243210183473,
+                  1.997624875629366e-05
+                ]
+              ],
+              "channel_absolute_lower": [
+                [
+                  1.606461208377323e-05,
+                  0.00010187456342974399,
+                  0.0002966289114719956
+                ],
+                [
+                  0.0001991562031481292,
+                  0.001270243210183473,
+                  1.997624875629366e-05
+                ]
+              ],
+              "combined_absolute_budget": [
+                0.00032091872998146954,
+                0.0013994301772171011
+              ],
+              "combined_absolute_lower": [
+                0.00032091872998146954,
+                0.0013994301772171011
+              ],
+              "enclosure_relative_gap": 0.0,
+              "meaning": "adaptive Bernstein absolute-integral enclosure for saved cubic interpolant; floating-point, not full continuum certification"
+            }
+          ],
+          "quadrature_signed": 1.2745035062045051e-13,
+          "quadrature_budget": 6.184468452856316e-08
+        },
+        {
+          "tag": "half-cap",
+          "packet": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-metric-time-primitive-20261107\\results\\heavy-poisson-spatial-half-cap.npz",
+          "sha256": "ef437e26c31e2bed2a4f90b1d50cd81a0ba13627356dfe837b2cb932fb77c0ea",
+          "original_adjoint": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-feedback-adjoint-20261107\\adjoints\\heavy-poisson-spatial-half-cap.npz",
+          "original_adjoint_sha256": "0abe105f843c9c2cc6cb5a037ff16e004d888ea24fc377b4bfe7a16a7799c2ab",
+          "prediction": [
+            4.7571829406847926e-05,
+            -0.0004790506095016157
+          ],
+          "bound": [
+            0.00032124064386231896,
+            0.0014082052031271677
+          ],
+          "boundary": [
+            -3.218267909004333e-07,
+            -8.775025609670475e-06
+          ],
+          "conservative_boundary": [
+            8.654321783900656e-06,
+            3.789632979278087e-05
+          ],
+          "temporal_prediction": [
+            8.67806198954624e-05,
+            -3.4345537230987412e-06
+          ],
+          "temporal_bound": [
+            0.00029695083638391203,
+            2.8751279504087748e-05
+          ],
+          "original_temporal_budget": [
+            [
+              1.6064612483284326e-05,
+              0.00010187456342962458,
+              0.0004523385788720272
+            ],
+            [
+              0.00019915620803996517,
+              0.0012702432101838045,
+              0.005382105988046251
+            ]
+          ],
+          "replay_error": 4.9892598733003446e-14,
+          "integrals": [
+            {
+              "stride": 1,
+              "signed_channels": [
+                [
+                  -1.4783759121737219e-05,
+                  -2.442503136687726e-05,
+                  8.710244668636283e-05
+                ],
+                [
+                  -0.00018197829837210451,
+                  -0.00029363775740641246,
+                  5.3404718865717335e-06
+                ]
+              ],
+              "signed_prediction": [
+                4.789365619774836e-05,
+                -0.00047027558389194524
+              ],
+              "channel_absolute_budgets": [
+                [
+                  1.6064612483284326e-05,
+                  0.00010187456342962458,
+                  0.0002966290095930116
+                ],
+                [
+                  0.00019915620803996517,
+                  0.0012702432101838045,
+                  1.9976253894417273e-05
+                ]
+              ],
+              "channel_absolute_lower": [
+                [
+                  1.6064612483284326e-05,
+                  0.00010187456342962458,
+                  0.0002966290095930116
+                ],
+                [
+                  0.00019915620803996517,
+                  0.0012702432101838045,
+                  1.9976253894417273e-05
+                ]
+              ],
+              "combined_absolute_budget": [
+                0.0003209188170714185,
+                0.0013994301775174971
+              ],
+              "combined_absolute_lower": [
+                0.0003209188170714185,
+                0.0013994301775174971
+              ],
+              "enclosure_relative_gap": 0.0,
+              "meaning": "adaptive Bernstein absolute-integral enclosure for saved cubic interpolant; floating-point, not full continuum certification"
+            },
+            {
+              "stride": 2,
+              "signed_channels": [
+                [
+                  -1.4783759119228539e-05,
+                  -2.4425031366881915e-05,
+                  8.710244681131033e-05
+                ],
+                [
+                  -0.000181978298338786,
+                  -0.000293637757406477,
+                  5.340471881689569e-06
+                ]
+              ],
+              "signed_prediction": [
+                4.7893656325199874e-05,
+                -0.0004702755838635734
+              ],
+              "channel_absolute_budgets": [
+                [
+                  1.6064612083768277e-05,
+                  0.0001018745634297052,
+                  0.00029662891147194903
+                ],
+                [
+                  0.0001991562031481962,
+                  0.0012702432101838557,
+                  1.997624875700555e-05
+                ]
+              ],
+              "channel_absolute_lower": [
+                [
+                  1.6064612083768277e-05,
+                  0.0001018745634297052,
+                  0.00029662891147194903
+                ],
+                [
+                  0.0001991562031481962,
+                  0.0012702432101838557,
+                  1.997624875700555e-05
+                ]
+              ],
+              "combined_absolute_budget": [
+                0.00032091872998140817,
+                0.0013994301772174767
+              ],
+              "combined_absolute_lower": [
+                0.00032091872998140817,
+                0.0013994301772174767
+              ],
+              "enclosure_relative_gap": 0.0,
+              "meaning": "adaptive Bernstein absolute-integral enclosure for saved cubic interpolant; floating-point, not full continuum certification"
+            }
+          ],
+          "quadrature_signed": 1.2745151613778594e-13,
+          "quadrature_budget": 6.184468722325883e-08
+        }
+      ],
+      "step_refinement": {
+        "prediction": 2.6725583551767684e-17,
+        "budget": 2.657756050828894e-13
+      },
+      "prediction": [
+        4.7571829406847926e-05,
+        -0.0004790506095016157
+      ],
+      "measured": [
+        4.757185070758481e-05,
+        -0.00047905060706861393
+      ],
+      "prediction_error": [
+        2.1300736883697862e-11,
+        2.43300177097186e-12
+      ],
+      "transformed_bound": [
+        0.00032124064386231896,
+        0.0014082052031271677
+      ],
+      "old_bound": [
+        0.00047420306012352283,
+        0.005509061473677063
+      ],
+      "selected_bound": [
+        0.00032124064386231896,
+        0.0014082052031271677
+      ],
+      "improvement_factor": [
+        1.476161467061317,
+        3.912115550662092
+      ],
+      "tail_injection": 0.0,
+      "injection_identity": 6.367847249278644e-16,
+      "passed": true
+    },
+    {
+      "model": "heavy",
+      "branch": "newton-dust-force",
+      "cases": [
+        {
+          "tag": "cap",
+          "packet": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-metric-time-primitive-20261107\\results\\heavy-newton-dust-force-cap.npz",
+          "sha256": "182a04c48857e24ccfc69c47bb556225c41efa35948dbcac8e0d19cdbe75ed8b",
+          "original_adjoint": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-feedback-adjoint-20261107\\response-v2\\adjoints\\heavy-newton-dust-force-cap.npz",
+          "original_adjoint_sha256": "e658d97eb2e9c7dca565997aac46061ef8422d6f668ce57c6eb238a9ff3340a7",
+          "prediction": [
+            -0.0003317767582417988,
+            -0.0032179731074162207
+          ],
+          "bound": [
+            0.2072853801429372,
+            0.014552693115186026
+          ],
+          "boundary": [
+            -0.000133283340572974,
+            -0.002858370310792388
+          ],
+          "conservative_boundary": [
+            0.0026821028461917885,
+            0.011766260227716891
+          ],
+          "temporal_prediction": [
+            -0.000292519889999235,
+            -0.002742074140099438
+          ],
+          "temporal_bound": [
+            0.20728907656584722,
+            0.014555611994117541
+          ],
+          "original_temporal_budget": [
+            [
+              1.607717481539338e-05,
+              0.00010193626217722609,
+              0.00029952973741504736
+            ],
+            [
+              0.00019927193325505765,
+              0.0012709766094166483,
+              0.002742074139656562
+            ]
+          ],
+          "replay_error": 7.423839646324149e-13,
+          "integrals": [
+            {
+              "stride": 1,
+              "signed_channels": [
+                [
+                  -1.4795962285563062e-05,
+                  -2.4460905957000736e-05,
+                  -0.00015923654942626102
+                ],
+                [
+                  -0.00018208480464840997,
+                  -0.000293814162668373,
+                  0.00011629617069295052
+                ]
+              ],
+              "signed_prediction": [
+                -0.00019849341766882482,
+                -0.00035960279662383243
+              ],
+              "channel_absolute_budgets": [
+                [
+                  1.607717481539338e-05,
+                  0.00010193626217722609,
+                  0.20715579322527425
+                ],
+                [
+                  0.00019927193325505765,
+                  0.0012709766094166483,
+                  0.011697241683325152
+                ]
+              ],
+              "channel_absolute_lower": [
+                [
+                  1.607717481539338e-05,
+                  0.00010193626217722609,
+                  0.20715579322527425
+                ],
+                [
+                  0.00019927193325505765,
+                  0.0012709766094166483,
+                  0.011697241683325152
+                ]
+              ],
+              "combined_absolute_budget": [
+                0.20715209680236424,
+                0.011694322804393639
+              ],
+              "combined_absolute_lower": [
+                0.20715209680236424,
+                0.011694322804393639
+              ],
+              "enclosure_relative_gap": 0.0,
+              "meaning": "adaptive Bernstein absolute-integral enclosure for saved cubic interpolant; floating-point, not full continuum certification"
+            },
+            {
+              "stride": 2,
+              "signed_channels": [
+                [
+                  -1.4795962283051727e-05,
+                  -2.446090595700571e-05,
+                  -0.00015923654456823918
+                ],
+                [
+                  -0.00018208480461507016,
+                  -0.00029381416266844007,
+                  0.00011629616730583474
+                ]
+              ],
+              "signed_prediction": [
+                -0.0001984934128082966,
+                -0.00035960279997767546
+              ],
+              "channel_absolute_budgets": [
+                [
+                  1.607717441573239e-05,
+                  0.00010193626217730657,
+                  0.20715577016408027
+                ],
+                [
+                  0.0001992719283604128,
+                  0.0012709766094166884,
+                  0.011697240414966068
+                ]
+              ],
+              "channel_absolute_lower": [
+                [
+                  1.607717441573239e-05,
+                  0.00010193626217730657,
+                  0.20715577016408027
+                ],
+                [
+                  0.0001992719283604128,
+                  0.0012709766094166884,
+                  0.011697240414966068
+                ]
+              ],
+              "combined_absolute_budget": [
+                0.20715207374153977,
+                0.011694321546093806
+              ],
+              "combined_absolute_lower": [
+                0.20715207374153977,
+                0.011694321546093806
+              ],
+              "enclosure_relative_gap": 0.0,
+              "meaning": "adaptive Bernstein absolute-integral enclosure for saved cubic interpolant; floating-point, not full continuum certification"
+            }
+          ],
+          "quadrature_signed": 4.860528212552451e-12,
+          "quadrature_budget": 1.1125157237973035e-07
+        },
+        {
+          "tag": "half-cap",
+          "packet": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-metric-time-primitive-20261107\\results\\heavy-newton-dust-force-half-cap.npz",
+          "sha256": "ced5e3a9f2ae83fdf941c3cedbee91e07fef4fba6067d931639c28c48bdda179",
+          "original_adjoint": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-feedback-adjoint-20261107\\response-v2\\adjoints\\heavy-newton-dust-force-half-cap.npz",
+          "original_adjoint_sha256": "0527897b3a6cdc4189ef5df93a51e055d96e9acbd09a6e9af495799e52d58ad6",
+          "prediction": [
+            -0.0003317767582415356,
+            -0.0032179731074161886
+          ],
+          "bound": [
+            0.20728538014294062,
+            0.014552693115191754
+          ],
+          "boundary": [
+            -0.0001332833405729818,
+            -0.002858370310792397
+          ],
+          "conservative_boundary": [
+            0.0026821028461917963,
+            0.011766260227716898
+          ],
+          "temporal_prediction": [
+            -0.00029251988999895944,
+            -0.002742074140099405
+          ],
+          "temporal_bound": [
+            0.20728907656585085,
+            0.014555611994123207
+          ],
+          "original_temporal_budget": [
+            [
+              1.6077174815404782e-05,
+              0.0001019362621773041,
+              0.00029952973741505045
+            ],
+            [
+              0.0001992719332551136,
+              0.0012709766094170368,
+              0.002742074139656565
+            ]
+          ],
+          "replay_error": 7.426626588008522e-13,
+          "integrals": [
+            {
+              "stride": 1,
+              "signed_channels": [
+                [
+                  -1.4795962285573604e-05,
+                  -2.4460905957002515e-05,
+                  -0.00015923654942597763
+                ],
+                [
+                  -0.00018208480464845935,
+                  -0.0002938141626683242,
+                  0.00011629617069299189
+                ]
+              ],
+              "signed_prediction": [
+                -0.00019849341766855377,
+                -0.00035960279662379166
+              ],
+              "channel_absolute_budgets": [
+                [
+                  1.6077174815404782e-05,
+                  0.0001019362621773041,
+                  0.20715579322527788
+                ],
+                [
+                  0.0001992719332551136,
+                  0.0012709766094170368,
+                  0.011697241683330811
+                ]
+              ],
+              "channel_absolute_lower": [
+                [
+                  1.6077174815404782e-05,
+                  0.0001019362621773041,
+                  0.20715579322527788
+                ],
+                [
+                  0.0001992719332551136,
+                  0.0012709766094170368,
+                  0.011697241683330811
+                ]
+              ],
+              "combined_absolute_budget": [
+                0.20715209680236765,
+                0.011694322804399356
+              ],
+              "combined_absolute_lower": [
+                0.20715209680236765,
+                0.011694322804399356
+              ],
+              "enclosure_relative_gap": 0.0,
+              "meaning": "adaptive Bernstein absolute-integral enclosure for saved cubic interpolant; floating-point, not full continuum certification"
+            },
+            {
+              "stride": 2,
+              "signed_channels": [
+                [
+                  -1.4795962283062088e-05,
+                  -2.446090595700742e-05,
+                  -0.00015923654456796328
+                ],
+                [
+                  -0.0001820848046151196,
+                  -0.0002938141626683853,
+                  0.00011629616730587614
+                ]
+              ],
+              "signed_prediction": [
+                -0.0001984934128080328,
+                -0.0003596027999776288
+              ],
+              "channel_absolute_budgets": [
+                [
+                  1.6077174415743762e-05,
+                  0.00010193626217738457,
+                  0.20715577016408374
+                ],
+                [
+                  0.00019927192836046763,
+                  0.0012709766094171,
+                  0.011697240414971746
+                ]
+              ],
+              "channel_absolute_lower": [
+                [
+                  1.6077174415743762e-05,
+                  0.00010193626217738457,
+                  0.20715577016408374
+                ],
+                [
+                  0.00019927192836046763,
+                  0.0012709766094171,
+                  0.011697240414971746
+                ]
+              ],
+              "combined_absolute_budget": [
+                0.2071520737415433,
+                0.011694321546099496
+              ],
+              "combined_absolute_lower": [
+                0.2071520737415433,
+                0.011694321546099496
+              ],
+              "enclosure_relative_gap": 0.0,
+              "meaning": "adaptive Bernstein absolute-integral enclosure for saved cubic interpolant; floating-point, not full continuum certification"
+            }
+          ],
+          "quadrature_signed": 4.860521002608004e-12,
+          "quadrature_budget": 1.1125157184412731e-07
+        }
+      ],
+      "step_refinement": {
+        "prediction": 2.632442874794805e-16,
+        "budget": 2.7633675436856388e-14
+      },
+      "prediction": [
+        -0.0003317767582415356,
+        -0.0032179731074161886
+      ],
+      "measured": [
+        -0.0003317767327783762,
+        -0.0032179731050063455
+      ],
+      "prediction_error": [
+        2.5463159358807275e-11,
+        2.409843158357461e-12
+      ],
+      "transformed_bound": [
+        0.20728538014294062,
+        0.014552693115191754
+      ],
+      "old_bound": [
+        0.0003722102750996188,
+        0.0034717573343459496
+      ],
+      "selected_bound": [
+        0.0003722102750996188,
+        0.0034717573343459496
+      ],
+      "improvement_factor": [
+        0.0017956417130959679,
+        0.23856459466748015
+      ],
+      "tail_injection": 0.0,
+      "injection_identity": 4.3987097236579367e-16,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

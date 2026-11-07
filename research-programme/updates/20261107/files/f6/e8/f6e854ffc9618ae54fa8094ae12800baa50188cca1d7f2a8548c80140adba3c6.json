@@ -1,0 +1,38 @@
+{
+  "source_sha256": "f62ed5521b198cbde660a0306be0698a95bea545140a30854216cce579f0512e",
+  "protocol_sha256": "54ad952000036212b8c608d5b750057b0b1d7b5cb974401a1b90068673e74e1e",
+  "state_cases": [
+    [
+      "full",
+      2e-11,
+      1.0
+    ],
+    [
+      "precision",
+      2e-12,
+      1.0
+    ],
+    [
+      "zero",
+      2e-11,
+      0.0
+    ],
+    [
+      "negative",
+      2e-11,
+      -1.0
+    ]
+  ],
+  "kernel_release_fractions": [
+    0.0,
+    0.25,
+    0.5
+  ],
+  "kernel_tolerances": [
+    2e-11,
+    2e-12
+  ],
+  "numerical_gate": 2e-05,
+  "algebra_gate": 1e-10,
+  "dynamic_scale": "max(initial scale, max over17 fixed t-offsets of abs(exp(L0 offset)initial)); L0 frozen at initial slice, no future states used"
+}

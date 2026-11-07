@@ -1,0 +1,821 @@
+{
+  "scientific_checks": 346,
+  "passing_scientific_checks": 335,
+  "expected_failed_by_packet": {
+    "consecutive-cold-m20-baseline": [
+      "Cast raw gas accumulated:baseline",
+      "Cast raw gas reset:baseline"
+    ],
+    "consecutive-cold-m20-mts": [
+      "Cast raw gas accumulated:join1",
+      "Cast raw gas reset:join1"
+    ],
+    "consecutive-heavy-m20-baseline": [
+      "Cast raw gas reset:baseline"
+    ],
+    "consecutive-heavy-m20-mts": [
+      "Cast raw gas reset:join1",
+      "Cast raw gas accumulated:join2"
+    ],
+    "feedback-m20-n5120": [
+      "Response:heavy:gas",
+      "Response:cold:gas"
+    ],
+    "feedback-m40-n5120": [
+      "Response:heavy:gas",
+      "Response:cold:gas"
+    ]
+  },
+  "segments": [
+    {
+      "name": "consecutive-cold-m20-baseline",
+      "model": "cold",
+      "upper": 0.02,
+      "centre_kind": "baseline",
+      "start": 660,
+      "end": 691,
+      "metrics": {
+        "gas_accumulated_max_over_saved_peak": [
+          4.795101179575863e-11,
+          1.9189714548965396e-11,
+          2.0504800341774274e-11
+        ],
+        "gas_reset_max_over_saved_peak": [
+          3.337697977957947e-11,
+          1.846731925183332e-11,
+          1.4469508081626616e-11
+        ],
+        "accumulated_to_reset_peak_ratio": [
+          1.4366492148907903,
+          1.0391174965505814,
+          1.4171041770114683
+        ],
+        "photon_accumulated_max_over_saved_peak": [
+          5.9717301055591735e-15,
+          3.445072290515552e-16,
+          3.303815442591078e-16
+        ],
+        "gas_accumulated_endpoint_over_saved_peak": [
+          2.1326524852800654e-11,
+          7.07221524296845e-12,
+          1.2549986018687365e-11
+        ],
+        "photon50to70": [
+          1.8712359174737617e-49,
+          2.188327211051029e-49,
+          2.314626406926021e-49
+        ],
+        "gas50to70": [
+          2.6174453240902455e-46,
+          3.220030005815268e-47,
+          4.140622646409005e-47
+        ],
+        "cast_raw_gas_max": [
+          0.000001096107756893495,
+          2.2689656080808933e-10,
+          2.203323560668626e-10,
+          9.39947955415757e-7,
+          2.240257564591708e-10,
+          1.7688622640637016e-10
+        ]
+      },
+      "precision50": {
+        "photon_relative": 9.78717730019248e-50,
+        "gas_relative": 2.407575956098931e-43,
+        "energy_relative": 5.116876262965532e-38,
+        "error_recurrence_relative": 3.102499494209072e-51
+      },
+      "precision70": {
+        "photon_relative": 6.237426980506239e-70,
+        "gas_relative": 4.403382539639447e-63,
+        "energy_relative": 2.0733971085254564e-58,
+        "error_recurrence_relative": 2.183918176668044e-71
+      }
+    },
+    {
+      "name": "consecutive-cold-m20-mts",
+      "model": "cold",
+      "upper": 0.02,
+      "centre_kind": "mts",
+      "start": 1405,
+      "end": 1436,
+      "metrics": {
+        "gas_accumulated_max_over_saved_peak": [
+          2.1564059025230654e-10,
+          5.6745650643877377e-11,
+          5.690955177992296e-11
+        ],
+        "gas_reset_max_over_saved_peak": [
+          2.0210362929804563e-10,
+          6.393688075965306e-11,
+          5.4012433585743993e-11
+        ],
+        "accumulated_to_reset_peak_ratio": [
+          1.0669802962038732,
+          0.8875261033954965,
+          1.053637986697634
+        ],
+        "photon_accumulated_max_over_saved_peak": [
+          2.5455730051504165e-14,
+          6.278574940997191e-16,
+          7.166821677180715e-16
+        ],
+        "gas_accumulated_endpoint_over_saved_peak": [
+          1.3320482325530432e-11,
+          2.0591752651140497e-11,
+          2.064737183606513e-11
+        ],
+        "photon50to70": [
+          3.989266842826522e-49,
+          3.958694562532832e-49,
+          3.85381571703118e-49
+        ],
+        "gas50to70": [
+          4.94326103331169e-46,
+          1.122418398557196e-46,
+          7.367069550392691e-47
+        ],
+        "cast_raw_gas_max": [
+          8.149287963945003e-10,
+          1.278433445162026e-7,
+          1.1959304147231458e-8,
+          7.755519666946235e-10,
+          2.321275141350007e-7,
+          1.981754791926968e-8
+        ]
+      },
+      "precision50": {
+        "photon_relative": 1.5667010783487925e-49,
+        "gas_relative": 1.3312986183048995e-42,
+        "energy_relative": 3.4611844658495894e-38,
+        "error_recurrence_relative": 1.647620836682737e-51
+      },
+      "precision70": {
+        "photon_relative": 1.118945313104267e-69,
+        "gas_relative": 1.3342366875479466e-62,
+        "energy_relative": 1.873553005786286e-58,
+        "error_recurrence_relative": 1.219811496203248e-71
+      }
+    },
+    {
+      "name": "consecutive-cold-m40-baseline",
+      "model": "cold",
+      "upper": 0.04,
+      "centre_kind": "baseline",
+      "start": 733,
+      "end": 764,
+      "metrics": {
+        "gas_accumulated_max_over_saved_peak": [
+          1.2769312483587655e-11,
+          5.21114179373978e-12,
+          8.1835072480793e-12
+        ],
+        "gas_reset_max_over_saved_peak": [
+          9.581507740338594e-12,
+          2.772096542625328e-12,
+          2.8761569518145216e-12
+        ],
+        "accumulated_to_reset_peak_ratio": [
+          1.3327038739245864,
+          1.8798558107952985,
+          2.845292306776393
+        ],
+        "photon_accumulated_max_over_saved_peak": [
+          6.1659601311139975e-15,
+          2.650424123858601e-16,
+          2.6868752035280624e-16
+        ],
+        "gas_accumulated_endpoint_over_saved_peak": [
+          6.973957330993371e-12,
+          5.17777967876222e-12,
+          6.643227534028516e-12
+        ],
+        "photon50to70": [
+          1.7994881047423953e-49,
+          1.9915704004436885e-49,
+          1.9558410067645483e-49
+        ],
+        "gas50to70": [
+          2.590243638193531e-46,
+          3.3587717130813497e-47,
+          3.4507293374210965e-47
+        ],
+        "cast_raw_gas_max": [
+          1.2594605766710393e-9,
+          1.351282476488842e-10,
+          1.404185216108159e-10,
+          1.3333214794394585e-9,
+          1.4500997614929756e-10,
+          9.571117133911595e-11
+        ]
+      },
+      "precision50": {
+        "photon_relative": 8.647728566998074e-50,
+        "gas_relative": 7.329849668302956e-46,
+        "energy_relative": 7.597926603823308e-39,
+        "error_recurrence_relative": 1.1480343658461107e-50
+      },
+      "precision70": {
+        "photon_relative": 5.049637801403257e-70,
+        "gas_relative": 6.071672236465822e-66,
+        "energy_relative": 6.060375569835574e-59,
+        "error_recurrence_relative": 7.110807128253136e-71
+      }
+    },
+    {
+      "name": "consecutive-cold-m40-mts",
+      "model": "cold",
+      "upper": 0.04,
+      "centre_kind": "mts",
+      "start": 89,
+      "end": 120,
+      "metrics": {
+        "gas_accumulated_max_over_saved_peak": [
+          2.059529626691972e-10,
+          3.004718675195165e-10,
+          4.908207518093322e-10
+        ],
+        "gas_reset_max_over_saved_peak": [
+          8.236810512314465e-11,
+          2.1153900611561478e-10,
+          2.6648019052820235e-10
+        ],
+        "accumulated_to_reset_peak_ratio": [
+          2.5003969966443527,
+          1.4204088079873847,
+          1.8418658093738762
+        ],
+        "photon_accumulated_max_over_saved_peak": [
+          7.619815766188489e-14,
+          2.698217261468585e-14,
+          2.32002366490491e-14
+        ],
+        "gas_accumulated_endpoint_over_saved_peak": [
+          1.595880992951949e-10,
+          3.004718675195165e-10,
+          1.2812381487190512e-10
+        ],
+        "photon50to70": [
+          3.743407416122403e-49,
+          4.16832104270528e-49,
+          3.698243719977233e-49
+        ],
+        "gas50to70": [
+          6.252625051698878e-44,
+          2.467462531181851e-44,
+          1.3543707443872358e-44
+        ],
+        "cast_raw_gas_max": [
+          3.6652560869023804e-10,
+          4.378438232993622e-9,
+          6.312370595406299e-9,
+          2.661528165325248e-10,
+          2.524071500693023e-9,
+          1.6136490745349483e-9
+        ]
+      },
+      "precision50": {
+        "photon_relative": 3.0717353850428607e-49,
+        "gas_relative": 4.1248868751510696e-44,
+        "energy_relative": 3.230561041093709e-36,
+        "error_recurrence_relative": 1.6421776607802803e-51
+      },
+      "precision70": {
+        "photon_relative": 2.357169109515742e-69,
+        "gas_relative": 2.932152204907802e-64,
+        "energy_relative": 2.0977455283251045e-56,
+        "error_recurrence_relative": 1.1287133470241524e-71
+      }
+    },
+    {
+      "name": "consecutive-heavy-m20-baseline",
+      "model": "heavy",
+      "upper": 0.02,
+      "centre_kind": "baseline",
+      "start": 662,
+      "end": 693,
+      "metrics": {
+        "gas_accumulated_max_over_saved_peak": [
+          4.246996069342604e-11,
+          1.8838107146228173e-11,
+          1.9281275926202833e-11
+        ],
+        "gas_reset_max_over_saved_peak": [
+          2.5314675071876446e-11,
+          1.9244193396238138e-11,
+          2.0439049915150773e-11
+        ],
+        "accumulated_to_reset_peak_ratio": [
+          1.6776814465459369,
+          0.978898245218771,
+          0.9433548039779618
+        ],
+        "photon_accumulated_max_over_saved_peak": [
+          5.780598112173819e-15,
+          3.1576944738123127e-16,
+          3.0461858040869194e-16
+        ],
+        "gas_accumulated_endpoint_over_saved_peak": [
+          3.2049097823014676e-11,
+          5.7690288520956175e-12,
+          8.528916463342961e-12
+        ],
+        "photon50to70": [
+          2.2351599351951966e-49,
+          2.2643725489801484e-49,
+          2.126999329816607e-49
+        ],
+        "gas50to70": [
+          6.211884831146031e-46,
+          1.1683200096743042e-46,
+          1.2014929538205008e-46
+        ],
+        "cast_raw_gas_max": [
+          2.007017351975026e-8,
+          1.4832540547210855e-10,
+          1.645781318487579e-10,
+          7.90706205139936e-7,
+          1.9158557068600125e-10,
+          1.9918916017126492e-10
+        ]
+      },
+      "precision50": {
+        "photon_relative": 1.0532373044243507e-49,
+        "gas_relative": 5.483840977709944e-43,
+        "energy_relative": 3.3962627180742054e-38,
+        "error_recurrence_relative": 3.6430179670488435e-51
+      },
+      "precision70": {
+        "photon_relative": 6.626908708034338e-70,
+        "gas_relative": 4.549805176475355e-63,
+        "energy_relative": 2.2939837182729078e-58,
+        "error_recurrence_relative": 2.394523651764301e-71
+      }
+    },
+    {
+      "name": "consecutive-heavy-m20-mts",
+      "model": "heavy",
+      "upper": 0.02,
+      "centre_kind": "mts",
+      "start": 1469,
+      "end": 1500,
+      "metrics": {
+        "gas_accumulated_max_over_saved_peak": [
+          1.9802984635606226e-10,
+          5.857855516027469e-11,
+          4.889868358160742e-11
+        ],
+        "gas_reset_max_over_saved_peak": [
+          2.1917621544597784e-10,
+          5.3964176593149724e-11,
+          4.720864684580444e-11
+        ],
+        "accumulated_to_reset_peak_ratio": [
+          0.9035188692947949,
+          1.0855081807680305,
+          1.0357993047613305
+        ],
+        "photon_accumulated_max_over_saved_peak": [
+          2.19672755942708e-14,
+          5.358321893283427e-16,
+          5.087863544558266e-16
+        ],
+        "gas_accumulated_endpoint_over_saved_peak": [
+          3.8934347493611097e-11,
+          1.4126471813409092e-11,
+          7.990177330519974e-12
+        ],
+        "photon50to70": [
+          3.97116877649052e-49,
+          4.3787197653277564e-49,
+          4.092970577560294e-49
+        ],
+        "gas50to70": [
+          3.595226855278843e-46,
+          1.3298610655414942e-46,
+          6.612205851559861e-47
+        ],
+        "cast_raw_gas_max": [
+          1.5189147868425918e-9,
+          3.07553161805931e-8,
+          1.9691518056494523e-7,
+          1.0091133473265358e-9,
+          2.1715943998073802e-7,
+          1.820950922549192e-8
+        ]
+      },
+      "precision50": {
+        "photon_relative": 1.506814355366803e-49,
+        "gas_relative": 4.851864638892465e-43,
+        "energy_relative": 2.74638267264104e-38,
+        "error_recurrence_relative": 1.7914381383166977e-51
+      },
+      "precision70": {
+        "photon_relative": 1.009285501739381e-69,
+        "gas_relative": 7.106274366132868e-63,
+        "energy_relative": 1.9837192200563827e-58,
+        "error_recurrence_relative": 1.2702135574534604e-71
+      }
+    },
+    {
+      "name": "consecutive-heavy-m40-baseline",
+      "model": "heavy",
+      "upper": 0.04,
+      "centre_kind": "baseline",
+      "start": 722,
+      "end": 753,
+      "metrics": {
+        "gas_accumulated_max_over_saved_peak": [
+          1.1533268734978954e-11,
+          3.5598858271584374e-12,
+          3.480590059427162e-12
+        ],
+        "gas_reset_max_over_saved_peak": [
+          8.877645346951783e-12,
+          2.585855317306093e-12,
+          2.5661631762003795e-12
+        ],
+        "accumulated_to_reset_peak_ratio": [
+          1.2991360078310632,
+          1.3766763373548199,
+          1.3563401157446036
+        ],
+        "photon_accumulated_max_over_saved_peak": [
+          5.972830941901861e-15,
+          2.6476863938863084e-16,
+          2.6717690815298445e-16
+        ],
+        "gas_accumulated_endpoint_over_saved_peak": [
+          4.464273482728311e-12,
+          8.6358439802271e-13,
+          4.179954647380057e-13
+        ],
+        "photon50to70": [
+          1.8677814568746385e-49,
+          1.8843991439853505e-49,
+          1.929518647205794e-49
+        ],
+        "gas50to70": [
+          6.805166868222919e-47,
+          7.397830595728133e-48,
+          8.551793352745221e-48
+        ],
+        "cast_raw_gas_max": [
+          1.6230113341831714e-9,
+          8.39157304617074e-11,
+          1.2384068690559013e-10,
+          1.2222938834355e-9,
+          1.0233574895818145e-10,
+          9.290840719177792e-11
+        ]
+      },
+      "precision50": {
+        "photon_relative": 7.845735374333142e-50,
+        "gas_relative": 4.651466958999731e-46,
+        "energy_relative": 8.176870167894019e-39,
+        "error_recurrence_relative": 2.0760015956911002e-50
+      },
+      "precision70": {
+        "photon_relative": 4.908113433994872e-70,
+        "gas_relative": 4.0986664108043806e-66,
+        "energy_relative": 3.9740848181300057e-59,
+        "error_recurrence_relative": 1.1293244960293943e-70
+      }
+    },
+    {
+      "name": "consecutive-heavy-m40-mts",
+      "model": "heavy",
+      "upper": 0.04,
+      "centre_kind": "mts",
+      "start": 89,
+      "end": 120,
+      "metrics": {
+        "gas_accumulated_max_over_saved_peak": [
+          2.0228167510623976e-10,
+          7.074333622991063e-10,
+          3.154396862519532e-10
+        ],
+        "gas_reset_max_over_saved_peak": [
+          6.510681152243347e-11,
+          2.978442513358445e-10,
+          2.0182937234221368e-10
+        ],
+        "accumulated_to_reset_peak_ratio": [
+          3.1069203110421215,
+          2.375178836342272,
+          1.5629027757025697
+        ],
+        "photon_accumulated_max_over_saved_peak": [
+          6.492841153503718e-14,
+          2.6642075093414418e-14,
+          2.2344402523699135e-14
+        ],
+        "gas_accumulated_endpoint_over_saved_peak": [
+          1.6800137694264066e-11,
+          7.074333622991063e-10,
+          3.154396862519532e-10
+        ],
+        "photon50to70": [
+          3.356813208381327e-49,
+          3.693658027416297e-49,
+          4.1872222337088354e-49
+        ],
+        "gas50to70": [
+          1.611289875584068e-44,
+          1.8139957082337452e-44,
+          1.8515966465795099e-44
+        ],
+        "cast_raw_gas_max": [
+          2.7968046897556833e-10,
+          5.3562431592408415e-9,
+          1.5824066883286136e-9,
+          3.1739920943567046e-10,
+          9.556501770984434e-9,
+          5.873999707124012e-9
+        ]
+      },
+      "precision50": {
+        "photon_relative": 3.2382727870076143e-49,
+        "gas_relative": 6.996014303403874e-44,
+        "energy_relative": 4.903589107820413e-36,
+        "error_recurrence_relative": 1.6109434678577746e-51
+      },
+      "precision70": {
+        "photon_relative": 2.2562658083113248e-69,
+        "gas_relative": 2.6575584806705956e-64,
+        "energy_relative": 2.5839289646457825e-56,
+        "error_recurrence_relative": 1.4623951917711186e-71
+      }
+    }
+  ],
+  "windows": [
+    {
+      "model": "heavy",
+      "relative_radiation_shape_difference": [
+        0.06074141614089431,
+        0.02687823122158931,
+        0.026878231705124378
+      ],
+      "gas_narrow_over_wide": [
+        0.39928110832508645,
+        0.2767693549716184,
+        0.2767693431873507
+      ]
+    },
+    {
+      "model": "cold",
+      "relative_radiation_shape_difference": [
+        0.06065251959312843,
+        0.026865657879694273,
+        0.026865657631793535
+      ],
+      "gas_narrow_over_wide": [
+        0.3990023897995447,
+        0.27669749378806163,
+        0.27669748061755617
+      ]
+    }
+  ],
+  "grid": [
+    {
+      "model": "heavy",
+      "upper": 0.04,
+      "final_radiation_relative_change": [
+        0.007080761426487648,
+        0.007239196400510513,
+        0.00723919630510803
+      ],
+      "radiation_contraction": [
+        0.2711918666711806,
+        0.27136136040982894,
+        0.27136135881447493
+      ],
+      "radiation_observed_order": [
+        1.882614183703327,
+        1.8817127872247545,
+        1.881712795706468
+      ],
+      "gas_peak_relative_change": [
+        0.001922844694957966,
+        0.006019652636313276,
+        0.006019670935983057
+      ],
+      "gas_contraction_common129": [
+        0.26573795363847624,
+        0.24859860937420697,
+        0.24859922004323876
+      ],
+      "gas_peak_cadence": 2049,
+      "contraction_cadence": 129,
+      "inner_peak_relative_change": [
+        0.005052889091471348,
+        0.002382650359076174,
+        0.002382651928714195
+      ],
+      "inner_contraction": [
+        0.35144318982942707,
+        0.24770428270285985,
+        0.24770435725769752
+      ],
+      "gas_ratio_finer_over_fine": [
+        1.0019265491497702,
+        0.9931185686059492,
+        0.993118548565046
+      ]
+    },
+    {
+      "model": "cold",
+      "upper": 0.04,
+      "final_radiation_relative_change": [
+        0.007081496384596852,
+        0.007240416193979996,
+        0.007240416109429401
+      ],
+      "radiation_contraction": [
+        0.27119270046825283,
+        0.271362694511144,
+        0.2713626928822805
+      ],
+      "radiation_observed_order": [
+        1.882609748050198,
+        1.8817056944809052,
+        1.8817057031407294
+      ],
+      "gas_peak_relative_change": [
+        0.0019224963663106397,
+        0.006002846923127454,
+        0.006002865081626473
+      ],
+      "gas_contraction_common129": [
+        0.2657181353668394,
+        0.2485852303575622,
+        0.24858576252652445
+      ],
+      "gas_peak_cadence": 2049,
+      "contraction_cadence": 129,
+      "inner_peak_relative_change": [
+        0.005045285943073781,
+        0.0023778902920223444,
+        0.0023778918548488497
+      ],
+      "inner_contraction": [
+        0.3520539866056846,
+        0.24768607360904413,
+        0.24768614795018837
+      ],
+      "gas_ratio_finer_over_fine": [
+        1.0019261994778075,
+        0.9931461242626116,
+        0.9931461050624668
+      ]
+    },
+    {
+      "model": "heavy",
+      "upper": 0.02,
+      "final_radiation_relative_change": [
+        0.00704782267170312,
+        0.007206155252528635,
+        0.007206155141708832
+      ],
+      "radiation_contraction": [
+        0.27040358273735793,
+        0.2706554244955804,
+        0.2706554209117988
+      ],
+      "radiation_observed_order": [
+        1.8868138280188305,
+        1.8854707919467635,
+        1.8854708110496652
+      ],
+      "gas_peak_relative_change": [
+        0.002582951707330445,
+        0.008809934540134868,
+        0.008809913977533175
+      ],
+      "gas_contraction_common129": [
+        0.3113706137474515,
+        0.248718522936111,
+        0.24871746420918153
+      ],
+      "gas_peak_cadence": 2049,
+      "contraction_cadence": 129,
+      "inner_peak_relative_change": [
+        0.005295855592706099,
+        0.002233650134414173,
+        0.0022336508931614877
+      ],
+      "inner_contraction": [
+        0.4014825444611052,
+        0.24794953392346827,
+        0.2479495717388601
+      ],
+      "gas_ratio_finer_over_fine": [
+        1.0025896406240016,
+        0.9880266324794639,
+        0.9880266594545388
+      ]
+    },
+    {
+      "model": "cold",
+      "upper": 0.02,
+      "final_radiation_relative_change": [
+        0.007048453082462793,
+        0.00720701132597375,
+        0.007207011322509573
+      ],
+      "radiation_contraction": [
+        0.27040348523759283,
+        0.27065751141390637,
+        0.27065751214049605
+      ],
+      "radiation_observed_order": [
+        1.8868143482133173,
+        1.885459667931356,
+        1.88545966405839
+      ],
+      "gas_peak_relative_change": [
+        0.002582788881922297,
+        0.00879292769233728,
+        0.008792955703814729
+      ],
+      "gas_contraction_common129": [
+        0.31137206085680996,
+        0.2486886921277708,
+        0.24868935541802556
+      ],
+      "gas_peak_cadence": 2049,
+      "contraction_cadence": 129,
+      "inner_peak_relative_change": [
+        0.005288673301757811,
+        0.002229668735393942,
+        0.0022296694897418565
+      ],
+      "inner_contraction": [
+        0.4023939236876931,
+        0.24793032278504573,
+        0.2479303603942308
+      ],
+      "gas_ratio_finer_over_fine": [
+        1.0025894769542096,
+        0.9880736919392155,
+        0.9880736538399465
+      ]
+    }
+  ],
+  "packet_counts": {
+    "consecutive-cold-m20-baseline": {
+      "checks": 23,
+      "failed": 2
+    },
+    "consecutive-cold-m20-mts": {
+      "checks": 23,
+      "failed": 2
+    },
+    "consecutive-cold-m40-baseline": {
+      "checks": 23,
+      "failed": 0
+    },
+    "consecutive-cold-m40-mts": {
+      "checks": 23,
+      "failed": 0
+    },
+    "consecutive-heavy-m20-baseline": {
+      "checks": 23,
+      "failed": 1
+    },
+    "consecutive-heavy-m20-mts": {
+      "checks": 23,
+      "failed": 2
+    },
+    "consecutive-heavy-m40-baseline": {
+      "checks": 23,
+      "failed": 0
+    },
+    "consecutive-heavy-m40-mts": {
+      "checks": 23,
+      "failed": 0
+    },
+    "feedback-m20-n5120": {
+      "checks": 34,
+      "failed": 2
+    },
+    "feedback-m40-n5120": {
+      "checks": 34,
+      "failed": 2
+    },
+    "grid-comparison": {
+      "checks": 72,
+      "failed": 0
+    },
+    "inner-cold-n5120": {
+      "checks": 11,
+      "failed": 0
+    },
+    "inner-heavy-n5120": {
+      "checks": 11,
+      "failed": 0
+    }
+  },
+  "window_definition": "norm(wide physical_change - narrow physical_change)/norm(wide physical_change), using canonical measure; gas ratio=narrow endpoint/wide endpoint",
+  "precision_step_count": 512
+}

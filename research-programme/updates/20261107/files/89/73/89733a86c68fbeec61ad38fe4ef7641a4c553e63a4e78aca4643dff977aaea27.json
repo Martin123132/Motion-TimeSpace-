@@ -1,0 +1,10 @@
+{
+  "frozen_at": "2026-10-26T07:38:33.125255+00:00",
+  "script_sha256": "5990a8ed46c7741dafc35c0ebc4516e1231a1bbfb13dfec3df767a8bdc94bce4",
+  "original_runner_sha256": "89df7fa5700404ed5e46a8b8f7d66cfb42fa1acfc4567a1237e831387e2583a6",
+  "reason": "ShapeReadout.apply already supplies energy, while the frozen output call also supplies the identical energy keyword.",
+  "change": "Remove only the duplicate output dictionary key; assert exact equality before removal.",
+  "equations_changed": false,
+  "source_changed": false,
+  "tolerances_changed": false
+}

@@ -1,0 +1,14 @@
+ Error in dverk, x =   5.0000000000000003E-002 xend=  0.47792890982778152     
+Traceback (most recent call last):
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\condensate-origin-20261003\curvature-through-heavy-onset-20261007\repair_comparison.py", line 70, in <module>
+    main()
+    ~~~~^^
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\condensate-origin-20261003\curvature-through-heavy-onset-20261007\repair_comparison.py", line 37, in main
+    native_values=native.get_time_evolution(waves,times,vars=names,lAccuracyBoost=4)
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\condensate-origin-20261003\native-heavy-matching-20261007\native\camb\results.py", line 632, in get_time_evolution
+    config.check_global_error("get_time_evolution")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\condensate-origin-20261003\native-heavy-matching-20261007\native\camb\_config.py", line 50, in check_global_error
+    raise CAMBError(reference + f"{err}")
+camb.baseconfig.CAMBError: Error in Fortran called from get_time_evolution:
+DVERK error

@@ -1,0 +1,551 @@
+{
+  "passed": true,
+  "checks_count": 1380,
+  "reports": [
+    {
+      "family": "half",
+      "model": "heavy",
+      "prediction": {
+        "output_order": [
+          "D",
+          "delta_c"
+        ],
+        "contribution_order": [
+          "initial",
+          "current",
+          "shear",
+          "representation",
+          "terminal"
+        ],
+        "contributions": [
+          [
+            0.0009165986656131313,
+            0.010429533716327486,
+            0.010079697244148077,
+            6.099647873087724e-14,
+            1.6335011033328573e-06
+          ],
+          [
+            0.012853085862263379,
+            0.047036220253651444,
+            0.05376059973860804,
+            8.902866362646873e-14,
+            5.583960044771047e-06
+          ]
+        ],
+        "total_bound": [
+          0.021427463127253025,
+          0.11365548981465666
+        ]
+      },
+      "previous_combined_bound": [
+        0.018433974662296175,
+        0.10722096317402813
+      ],
+      "measured": [
+        0.00025169435073612814,
+        -0.0017543934360604305
+      ],
+      "source_conditions": {
+        "D": {
+          "original_output_scale": 0.0023596616177105427,
+          "amplitude": 16.842215086712137,
+          "q_star": 0.06714014575762671,
+          "pi_star": 0.00787124031328726,
+          "epsilon": 0.04341497027637536,
+          "source_indicator": 0.010786127745706134,
+          "initial_indicator": 0.00012654975123744543,
+          "terminal_indicator": 5.494153688456389e-06,
+          "indicator_not_complete_error_bound": true
+        },
+        "delta_c": {
+          "original_output_scale": 1.198015721013555,
+          "amplitude": 1.198015721013555,
+          "q_star": 0.9438847554074444,
+          "pi_star": 0.11065724767236465,
+          "epsilon": 0.04341497027637536,
+          "source_indicator": 0.15163597627270267,
+          "initial_indicator": 0.0017790902841473282,
+          "terminal_indicator": 7.723915180524444e-05,
+          "indicator_not_complete_error_bound": true
+        }
+      },
+      "errors": {
+        "representation": 2.5675108200172838e-11,
+        "reconstruction": 6.375909553567408e-16,
+        "envelope_shortfall": 0.0,
+        "integration": 8.25539819395711e-15,
+        "representation_budget_fraction": 2.8466495715630205e-12
+      },
+      "qualification_errors": {
+        "free_commutator": 5.081943079509326e-11,
+        "original_current_drive": 2.533423416919534e-11,
+        "original_shear_drive": 5.0546132889507844e-11,
+        "product_rule_current": 3.791369720928824e-11,
+        "primitive_derivative": 2.0133740948293094e-09,
+        "primitive_derivative_step": 5.038404097996471e-09
+      },
+      "algebra_errors": {
+        "density_contraction": 1.2862824695789413e-17,
+        "phase_free_contraction_bound": 0.0
+      }
+    },
+    {
+      "family": "half",
+      "model": "cold",
+      "prediction": {
+        "output_order": [
+          "D",
+          "delta_c"
+        ],
+        "contribution_order": [
+          "initial",
+          "current",
+          "shear",
+          "representation",
+          "terminal"
+        ],
+        "contributions": [
+          [
+            0.000695654091866072,
+            0.0015108559578535803,
+            0.0026860092607790187,
+            4.092346290109612e-18,
+            8.160829333142191e-06
+          ],
+          [
+            0.0007946007173148207,
+            0.0017257531320622951,
+            0.003068054813857341,
+            4.674422727679117e-18,
+            3.435601584726361e-06
+          ]
+        ],
+        "total_bound": [
+          0.004900680139831817,
+          0.005591844264819187
+        ]
+      },
+      "previous_combined_bound": [
+        0.0048661155174132735,
+        0.005552363330129626
+      ],
+      "measured": [
+        -0.00015096855201810895,
+        -0.00018685773413417643
+      ],
+      "source_conditions": {
+        "D": {
+          "original_output_scale": 0.004189632088323484,
+          "amplitude": 29.901834097062316,
+          "q_star": 0.055356311911303246,
+          "pi_star": 0.007872047413984557,
+          "epsilon": 0.04341208778742403,
+          "source_indicator": 0.01027518048626608,
+          "initial_indicator": 0.0001043250238987475,
+          "terminal_indicator": 4.5289670959175365e-06,
+          "indicator_not_complete_error_bound": true
+        },
+        "delta_c": {
+          "original_output_scale": 20.118451853062552,
+          "amplitude": 20.118451853062552,
+          "q_star": 0.08227547860473425,
+          "pi_star": 0.011700137639633654,
+          "epsilon": 0.04341208778742403,
+          "source_indicator": 0.015271887939574704,
+          "initial_indicator": 0.000155057137575799,
+          "terminal_indicator": 6.731354068507271e-06,
+          "indicator_not_complete_error_bound": true
+        }
+      },
+      "errors": {
+        "representation": 2.393942259493152e-14,
+        "reconstruction": 6.254651213978777e-16,
+        "envelope_shortfall": 0.0,
+        "integration": 9.779652406292897e-14,
+        "representation_budget_fraction": 8.359357854595518e-16
+      },
+      "qualification_errors": {
+        "free_commutator": 8.918021917256638e-16,
+        "original_current_drive": 1.5033595597826214e-14,
+        "original_shear_drive": 7.394346764008793e-16,
+        "product_rule_current": 4.602344615480179e-16,
+        "primitive_derivative": 7.8174425678281e-09,
+        "primitive_derivative_step": 3.9573460426272356e-09
+      },
+      "algebra_errors": {
+        "density_contraction": 5.01579094826657e-40,
+        "phase_free_contraction_bound": 0.0
+      }
+    },
+    {
+      "family": "balanced",
+      "model": "heavy",
+      "prediction": {
+        "output_order": [
+          "D",
+          "delta_c"
+        ],
+        "contribution_order": [
+          "initial",
+          "current",
+          "shear",
+          "representation",
+          "terminal"
+        ],
+        "contributions": [
+          [
+            0.00011541786222420761,
+            0.0012501476157861003,
+            0.002806622690012061,
+            1.130773103601823e-14,
+            4.16624749650011e-06
+          ],
+          [
+            0.0023920554463064294,
+            0.013136290711820308,
+            0.034248406606191245,
+            1.6890910610367136e-14,
+            1.4560652091555198e-05
+          ]
+        ],
+        "total_bound": [
+          0.004176354415530176,
+          0.04979131341642643
+        ]
+      },
+      "previous_combined_bound": [
+        0.0034728330033839947,
+        0.04291845130730552
+      ],
+      "measured": [
+        4.757185070758481e-05,
+        -0.00047905060706861393
+      ],
+      "source_conditions": {
+        "D": {
+          "original_output_scale": 0.0016981389807894454,
+          "amplitude": 12.120560739270521,
+          "q_star": 0.05115703928090689,
+          "pi_star": 0.006021501520626399,
+          "epsilon": 0.02170748513818768,
+          "source_indicator": 0.007131992190530369,
+          "initial_indicator": 2.41059597130365e-05,
+          "terminal_indicator": 5.232797622124907e-07,
+          "indicator_not_complete_error_bound": true
+        },
+        "delta_c": {
+          "original_output_scale": 0.8432825831903412,
+          "amplitude": 0.8432825831903412,
+          "q_star": 0.7352837758129356,
+          "pi_star": 0.08654747101054325,
+          "epsilon": 0.02170748513818768,
+          "source_indicator": 0.10250863264635307,
+          "initial_indicator": 0.00034647667899755303,
+          "terminal_indicator": 7.521137360068005e-06,
+          "indicator_not_complete_error_bound": true
+        }
+      },
+      "errors": {
+        "representation": 3.5710348313918e-11,
+        "reconstruction": 6.609926566915824e-16,
+        "envelope_shortfall": 0.0,
+        "integration": 1.2898744461710663e-14,
+        "representation_budget_fraction": 2.707560209442317e-12
+      },
+      "qualification_errors": {
+        "free_commutator": 5.060899692272246e-11,
+        "original_current_drive": 2.5285714155945616e-11,
+        "original_shear_drive": 5.05405234649646e-11,
+        "product_rule_current": 3.790621935943421e-11,
+        "primitive_derivative": 2.01338870702356e-09,
+        "primitive_derivative_step": 5.0392640971235906e-09
+      },
+      "algebra_errors": {
+        "density_contraction": 6.448198103344489e-18,
+        "phase_free_contraction_bound": 0.0
+      }
+    },
+    {
+      "family": "balanced",
+      "model": "cold",
+      "prediction": {
+        "output_order": [
+          "D",
+          "delta_c"
+        ],
+        "contribution_order": [
+          "initial",
+          "current",
+          "shear",
+          "representation",
+          "terminal"
+        ],
+        "contributions": [
+          [
+            0.00010769742849871548,
+            0.0003372310942266449,
+            0.002007579257973056,
+            5.910109203103397e-19,
+            1.5381151007340526e-06
+          ],
+          [
+            0.00012396095087818806,
+            0.0003881567804241986,
+            0.0023107462940457806,
+            6.80260213101899e-19,
+            6.510406984270642e-07
+          ]
+        ],
+        "total_bound": [
+          0.0024540458957991508,
+          0.0028235150660465952
+        ]
+      },
+      "previous_combined_bound": [
+        0.0023311158958203766,
+        0.0026820212541585394
+      ],
+      "measured": [
+        -3.224767386796442e-05,
+        -4.0748852965805866e-05
+      ],
+      "source_conditions": {
+        "D": {
+          "original_output_scale": 0.005824233993029241,
+          "amplitude": 41.56815561142049,
+          "q_star": 0.027467185177584258,
+          "pi_star": 0.006031346798930383,
+          "epsilon": 0.021706043893712015,
+          "source_indicator": 0.006627550726031743,
+          "initial_indicator": 1.2941228611265598e-05,
+          "terminal_indicator": 2.809028762746928e-07,
+          "indicator_not_complete_error_bound": true
+        },
+        "delta_c": {
+          "original_output_scale": 27.816768870282317,
+          "amplitude": 27.816768870282317,
+          "q_star": 0.04104575312085615,
+          "pi_star": 0.00901297930947781,
+          "epsilon": 0.021706043893712015,
+          "source_indicator": 0.00990392022836958,
+          "initial_indicator": 1.9338802692168888e-05,
+          "terminal_indicator": 4.1976890008805393e-07,
+          "indicator_not_complete_error_bound": true
+        }
+      },
+      "errors": {
+        "representation": 1.1433053746949685e-15,
+        "reconstruction": 1.1081957273698964e-15,
+        "envelope_shortfall": 0.0,
+        "integration": 7.157347541682947e-15,
+        "representation_budget_fraction": 2.4092671623473214e-16
+      },
+      "qualification_errors": {
+        "free_commutator": 8.977185375499532e-16,
+        "original_current_drive": 1.3911308618560107e-15,
+        "original_shear_drive": 6.093337479083985e-16,
+        "product_rule_current": 6.74478656903189e-16,
+        "primitive_derivative": 7.786362576054551e-09,
+        "primitive_derivative_step": 3.817521697855546e-09
+      },
+      "algebra_errors": {
+        "density_contraction": 3.5619979221753994e-41,
+        "phase_free_contraction_bound": 0.0
+      }
+    },
+    {
+      "family": "double",
+      "model": "heavy",
+      "prediction": {
+        "output_order": [
+          "D",
+          "delta_c"
+        ],
+        "contribution_order": [
+          "initial",
+          "current",
+          "shear",
+          "representation",
+          "terminal"
+        ],
+        "contributions": [
+          [
+            3.227344226101076e-05,
+            0.0007020718929052041,
+            0.0007811870959447717,
+            1.4513210747118089e-15,
+            8.653109866004832e-07
+          ],
+          [
+            0.0007314475641636292,
+            0.012140306145632123,
+            0.014697205588845522,
+            2.377538939047282e-15,
+            2.938368157613097e-06
+          ]
+        ],
+        "total_bound": [
+          0.0015163977420990383,
+          0.027571897666801265
+        ]
+      },
+      "previous_combined_bound": [
+        0.0011538551366823207,
+        0.020913448968297197
+      ],
+      "measured": [
+        -2.241272121098179e-05,
+        -0.0002542848744810814
+      ],
+      "source_conditions": {
+        "D": {
+          "original_output_scale": 0.0003402031575893552,
+          "amplitude": 2.4282188218401624,
+          "q_star": 0.07982333672214727,
+          "pi_star": 0.003215100478594911,
+          "epsilon": 0.01085374256909384,
+          "source_indicator": 0.004081482426383192,
+          "initial_indicator": 9.403486627804104e-06,
+          "terminal_indicator": 1.0206302311010209e-07,
+          "indicator_not_complete_error_bound": true
+        },
+        "delta_c": {
+          "original_output_scale": 0.173876146945641,
+          "amplitude": 0.173876146945641,
+          "q_star": 1.1147505397126136,
+          "pi_star": 0.044899588778397385,
+          "epsilon": 0.01085374256909384,
+          "source_indicator": 0.05699880416519651,
+          "initial_indicator": 0.00013132176909633685,
+          "terminal_indicator": 1.4253326754896234e-06,
+          "indicator_not_complete_error_bound": true
+        }
+      },
+      "errors": {
+        "representation": 2.3799911674582603e-11,
+        "reconstruction": 7.844356446879624e-16,
+        "envelope_shortfall": 0.0,
+        "integration": 2.1197522012501724e-14,
+        "representation_budget_fraction": 9.57084697780446e-13
+      },
+      "qualification_errors": {
+        "free_commutator": 5.053477287601404e-11,
+        "original_current_drive": 2.526267780454169e-11,
+        "original_shear_drive": 5.05177371130353e-11,
+        "product_rule_current": 3.788844758120389e-11,
+        "primitive_derivative": 2.0134187306216405e-09,
+        "primitive_derivative_step": 5.038577814468224e-09
+      },
+      "algebra_errors": {
+        "density_contraction": 3.542933945796974e-18,
+        "phase_free_contraction_bound": 0.0
+      }
+    },
+    {
+      "family": "double",
+      "model": "cold",
+      "prediction": {
+        "output_order": [
+          "D",
+          "delta_c"
+        ],
+        "contribution_order": [
+          "initial",
+          "current",
+          "shear",
+          "representation",
+          "terminal"
+        ],
+        "contributions": [
+          [
+            1.3452092686626086e-05,
+            8.144216478940911e-05,
+            0.0009463584330130976,
+            2.402728064659318e-19,
+            5.3826884100848774e-08
+          ],
+          [
+            1.5513059932663763e-05,
+            9.39197500980689e-05,
+            0.001091348047557652,
+            2.770845052681674e-19,
+            2.281406243592164e-08
+          ]
+        ],
+        "total_bound": [
+          0.0010413065173732338,
+          0.0012008036716508208
+        ]
+      },
+      "previous_combined_bound": [
+        0.0009951685205189524,
+        0.0011475969679024072
+      ],
+      "measured": [
+        -8.3638860898898e-06,
+        -9.196287021774854e-06
+      ],
+      "source_conditions": {
+        "D": {
+          "original_output_scale": 0.007516927513987759,
+          "amplitude": 53.64908295154112,
+          "q_star": 0.013707472026034059,
+          "pi_star": 0.0032250852869115895,
+          "epsilon": 0.010853021946856008,
+          "source_indicator": 0.003373852781646052,
+          "initial_indicator": 1.6145768853319061e-06,
+          "terminal_indicator": 1.7523038371393593e-08,
+          "indicator_not_complete_error_bound": true
+        },
+        "delta_c": {
+          "original_output_scale": 35.85288818002553,
+          "amplitude": 35.85288818002553,
+          "q_star": 0.02051141040822299,
+          "pi_star": 0.004825911575506201,
+          "epsilon": 0.010853021946856008,
+          "source_indicator": 0.005048522362827616,
+          "initial_indicator": 2.4159997604062105e-06,
+          "terminal_indicator": 2.6220898423287458e-08,
+          "indicator_not_complete_error_bound": true
+        }
+      },
+      "errors": {
+        "representation": 6.477226914975851e-16,
+        "reconstruction": 7.341297258714797e-16,
+        "envelope_shortfall": 0.0,
+        "integration": 7.918098988567724e-14,
+        "representation_budget_fraction": 2.307492155543144e-16
+      },
+      "qualification_errors": {
+        "free_commutator": 7.297998533691525e-16,
+        "original_current_drive": 8.864124691081049e-16,
+        "original_shear_drive": 8.918021917256638e-16,
+        "product_rule_current": 6.734669472707346e-16,
+        "primitive_derivative": 7.707174938943659e-09,
+        "primitive_derivative_step": 4.919869896006595e-09
+      },
+      "algebra_errors": {
+        "density_contraction": 1.762556505649905e-41,
+        "phase_free_contraction_bound": 0.0
+      }
+    }
+  ],
+  "evidence_hashes": {
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-explicit-current-shear-forcing-20261107\\half\\qualification.json": "d7cff13900199210f5d8f314c704a6ac1017f2bd0776741206a95815e81a62b0",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-explicit-current-shear-forcing-20261107\\half\\budget\\result.json": "8ce6d5adc8183aa4dbeed4aefae2e349a4e8bae2f414bb5658b03731dec67ace",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-explicit-current-shear-forcing-20261107\\half\\qualification-contexts\\heavy-half\\initial-context.npz": "6e6ae4485feba5794f5e0b75ab43a5d1e13ac7565b0b62de5329800b44dfb8e8",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-explicit-current-shear-forcing-20261107\\half\\qualification-contexts\\cold-half\\initial-context.npz": "ddbca554c3d145a53dba68ac900a9178260dac3ab7d4c383c04e704095ac3df7",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-explicit-current-shear-forcing-20261107\\balanced\\qualification.json": "163e35d7d61ab07aff4cf2172de38c8bf7aa5bfeba000b4147fe0947d2466c80",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-explicit-current-shear-forcing-20261107\\balanced\\budget\\result.json": "3c2381bb21b164e1b9f04883938e14eb7ae36d7bac83f76c012b9729b1605548",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-explicit-current-shear-forcing-20261107\\balanced\\qualification-contexts\\heavy-balanced\\initial-context.npz": "930a4b5d1637335e7af6baaa90190f178a8886420bb210e4c21058b5b1d053ae",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-explicit-current-shear-forcing-20261107\\balanced\\qualification-contexts\\cold-balanced\\initial-context.npz": "4bfbb6f075abb4956b3c612072fab468ce38d1400cb8d38f9b771cfe7731f753",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-explicit-current-shear-forcing-20261107\\double\\qualification.json": "fa8d8427f14b24d7812fb5e00c0544149903fcccfdcc608141c3c3e1ecfed0b2",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-explicit-current-shear-forcing-20261107\\double\\budget\\result.json": "4b75a63bfe266748e01a2c5bd21dec54b4f22031b16f5338ddd75c47fbe9f411",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-explicit-current-shear-forcing-20261107\\double\\qualification-contexts\\heavy-double\\initial-context.npz": "db0912264a5825705d691fb876b5707775aaba71e8e16cec2571751ea2fb9ccc",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-explicit-current-shear-forcing-20261107\\double\\qualification-contexts\\cold-double\\initial-context.npz": "d689f31307acf0a8fa568d2cb5b9f0f281c263757fcf91016a6d3d079d9c8477"
+  },
+  "scope": "Source-separated same-parent interpolant budgets plus analytic conditional linear-branch estimate",
+  "new_physical_ode_solves": 0,
+  "previous_tighter_adjoint_budgets_preserved": true
+}

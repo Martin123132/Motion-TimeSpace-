@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "mean_identity": "0",
+  "harmonics": [
+    2,
+    1,
+    0
+  ],
+  "expression": "I*(3*A**2*Bc*omega/(16*H**2*a**2) + A*k*z*(3 - I*k**2/(2*H*omega))/(2*H) + B*(3*A*Ac*omega/(8*H**2*a**2) + 9/4 + k**4/(4*H**2*omega**2)))/(2*mu)",
+  "assumptions": [
+    "exact canonical background and trace constraint",
+    "theta_N=omega/H",
+    "freeze a,H,A,B,z and other species while extracting carrier phase",
+    "dense/background/continuity defects separately retained in numerical control"
+  ],
+  "interpretation": "R contains a nonzero phase-independent term; deleting all R is not the same as deleting only fast terms",
+  "source_sha256": "c2b3dad868a166e647a7db1d17d68b748030a36e464b8a90d30a03886aacc225"
+}

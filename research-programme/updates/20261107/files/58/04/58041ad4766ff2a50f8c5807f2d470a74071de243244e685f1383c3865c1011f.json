@@ -1,0 +1,217 @@
+{
+  "stage": 228,
+  "state": "complete",
+  "finished_at": "2026-10-26T17:44:42.359555+00:00",
+  "checks": [
+    {
+      "name": "heavy: actual-equation stress derivative",
+      "value": 1.5003696791946322e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "heavy: actual-equation Raychaudhuri derivative",
+      "value": 3.6623510166146796e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "heavy: finest derivative maximum_continuity",
+      "value": 6.797547234791027e-10,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "heavy: first halving reduces failed derivative maximum_continuity",
+      "value": 0.25736334772195424,
+      "limit": 0.5,
+      "passed": true
+    },
+    {
+      "name": "heavy: finest derivative maximum_raychaudhuri",
+      "value": 1.2571481598734619e-08,
+      "limit": 1e-08,
+      "passed": false
+    },
+    {
+      "name": "heavy: first halving reduces failed derivative maximum_raychaudhuri",
+      "value": 0.2535644128072996,
+      "limit": 0.5,
+      "passed": true
+    },
+    {
+      "name": "cold: actual-equation stress derivative",
+      "value": 1.1853084940115758e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "cold: actual-equation Raychaudhuri derivative",
+      "value": 6.726915451545339e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "cold: finest derivative maximum_continuity",
+      "value": 7.930827231005941e-10,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "cold: first halving reduces failed derivative maximum_continuity",
+      "value": 0.26213839084294444,
+      "limit": 0.5,
+      "passed": true
+    },
+    {
+      "name": "cold: finest derivative maximum_raychaudhuri",
+      "value": 4.547861361310082e-09,
+      "limit": 1e-08,
+      "passed": true
+    }
+  ],
+  "models": [
+    {
+      "model": "heavy",
+      "probes": [
+        {
+          "step": 1e-05,
+          "maximum_continuity": 1.0122906864711053e-08,
+          "maximum_raychaudhuri": 2.3996626030751405e-08,
+          "continuity_by_source": [
+            1.0122906864711053e-08,
+            1.399125028907722e-10,
+            1.4012168752489185e-10
+          ],
+          "raychaudhuri_by_source": [
+            3.4690020604170214e-10,
+            2.3996626030751405e-08,
+            2.2810852859153758e-08
+          ]
+        },
+        {
+          "step": 5e-06,
+          "maximum_continuity": 2.6052651993795882e-09,
+          "maximum_raychaudhuri": 6.08469038884384e-09,
+          "continuity_by_source": [
+            2.6052651993795882e-09,
+            5.28895316831056e-11,
+            5.0751870373751174e-11
+          ],
+          "raychaudhuri_by_source": [
+            1.1895329534843787e-10,
+            6.08469038884384e-09,
+            4.863291589342198e-09
+          ]
+        },
+        {
+          "step": 2.5e-06,
+          "maximum_continuity": 9.627552406480817e-10,
+          "maximum_raychaudhuri": 6.1977793947451866e-09,
+          "continuity_by_source": [
+            9.627552406480817e-10,
+            4.3820967095137893e-11,
+            5.031069995698542e-11
+          ],
+          "raychaudhuri_by_source": [
+            9.491098269402067e-11,
+            6.1977793947451866e-09,
+            4.366882527134231e-09
+          ]
+        },
+        {
+          "step": 1.25e-06,
+          "maximum_continuity": 6.797547234791027e-10,
+          "maximum_raychaudhuri": 1.2571481598734619e-08,
+          "continuity_by_source": [
+            6.797547234791027e-10,
+            7.296746015470459e-11,
+            6.758660680684574e-11
+          ],
+          "raychaudhuri_by_source": [
+            2.1659732734819317e-10,
+            1.2339014173395403e-08,
+            1.2571481598734619e-08
+          ]
+        }
+      ]
+    },
+    {
+      "model": "cold",
+      "probes": [
+        {
+          "step": 1e-05,
+          "maximum_continuity": 1.023818822364227e-08,
+          "maximum_raychaudhuri": 4.561560146638257e-10,
+          "continuity_by_source": [
+            1.023818822364227e-08,
+            1.3481336296580134e-10,
+            1.3520866119488956e-10
+          ],
+          "raychaudhuri_by_source": [
+            1.839958111924697e-11,
+            3.7927564206641155e-10,
+            4.561560146638257e-10
+          ]
+        },
+        {
+          "step": 5e-06,
+          "maximum_continuity": 2.6838221860927685e-09,
+          "maximum_raychaudhuri": 1.6852660101868408e-09,
+          "continuity_by_source": [
+            2.6838221860927685e-09,
+            5.518909078214001e-11,
+            5.434558723888843e-11
+          ],
+          "raychaudhuri_by_source": [
+            6.64287202521589e-11,
+            1.4609964987441836e-09,
+            1.6852660101868408e-09
+          ]
+        },
+        {
+          "step": 2.5e-06,
+          "maximum_continuity": 1.3562766781632207e-09,
+          "maximum_raychaudhuri": 2.5364525039671733e-09,
+          "continuity_by_source": [
+            1.3562766781632207e-09,
+            5.719447561775142e-11,
+            5.33063581165163e-11
+          ],
+          "raychaudhuri_by_source": [
+            8.878080387819234e-11,
+            2.5364525039671733e-09,
+            1.2236925105305112e-09
+          ]
+        },
+        {
+          "step": 1.25e-06,
+          "maximum_continuity": 7.930827231005941e-10,
+          "maximum_raychaudhuri": 4.547861361310082e-09,
+          "continuity_by_source": [
+            7.930827231005941e-10,
+            9.997681284993125e-11,
+            1.0385355598567276e-10
+          ],
+          "raychaudhuri_by_source": [
+            1.3718116291256361e-10,
+            4.410785301720124e-09,
+            4.547861361310082e-09
+          ]
+        }
+      ]
+    }
+  ],
+  "qualified": false,
+  "failed": [
+    {
+      "name": "heavy: finest derivative maximum_raychaudhuri",
+      "value": 1.2571481598734619e-08,
+      "limit": 1e-08,
+      "passed": false
+    }
+  ],
+  "original_failed_report_sha256": "b47b13421f44a00dc20b025b93e10ad9fbbc4910a23d6861bf6d07f9b3aefe6b",
+  "source_and_evolution_unchanged": true,
+  "identity_gate_unchanged": true
+}

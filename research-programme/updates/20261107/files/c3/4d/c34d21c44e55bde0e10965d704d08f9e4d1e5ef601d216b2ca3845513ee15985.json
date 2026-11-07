@@ -1,0 +1,126 @@
+{
+  "state": "complete",
+  "script_sha256": "4b99d3055cfcb92a4495e14537803f0529e50aa0f54a5c6304bdc6b166b8d300",
+  "checks": [
+    {
+      "name": "zero_extrinsic_trace_l2",
+      "passed": true
+    },
+    {
+      "name": "ADM_momentum_equation_l2",
+      "passed": true
+    },
+    {
+      "name": "ADM_radial_constraint_l2",
+      "passed": true
+    },
+    {
+      "name": "ADM_polar_constraint_l2",
+      "passed": true
+    },
+    {
+      "name": "zero_extrinsic_trace_l3",
+      "passed": true
+    },
+    {
+      "name": "ADM_momentum_equation_l3",
+      "passed": true
+    },
+    {
+      "name": "ADM_radial_constraint_l3",
+      "passed": true
+    },
+    {
+      "name": "ADM_polar_constraint_l3",
+      "passed": true
+    },
+    {
+      "name": "trace_reversed_axial_stress",
+      "passed": true
+    },
+    {
+      "name": "Eulerian_axial_momentum_zero",
+      "passed": true
+    },
+    {
+      "name": "coordinate_current_follows_shift",
+      "passed": true
+    },
+    {
+      "name": "background_shift_coefficient",
+      "passed": true
+    },
+    {
+      "name": "independent_4D_Ricci_matches_ADM",
+      "passed": true
+    },
+    {
+      "name": "remaining_Ricci_00",
+      "passed": true
+    },
+    {
+      "name": "remaining_Ricci_11",
+      "passed": true
+    },
+    {
+      "name": "remaining_Ricci_22",
+      "passed": true
+    },
+    {
+      "name": "remaining_Ricci_33",
+      "passed": true
+    },
+    {
+      "name": "remaining_Ricci_13",
+      "passed": true
+    },
+    {
+      "name": "remaining_Ricci_23",
+      "passed": true
+    },
+    {
+      "name": "remaining_Ricci_01",
+      "passed": true
+    },
+    {
+      "name": "remaining_Ricci_02",
+      "passed": true
+    },
+    {
+      "name": "remaining_Ricci_12",
+      "passed": true
+    },
+    {
+      "name": "vacuum_growing_solution",
+      "passed": true
+    },
+    {
+      "name": "regular_center_coefficient",
+      "passed": true
+    },
+    {
+      "name": "weak_radial_integrating_factor",
+      "passed": true
+    },
+    {
+      "name": "weak_moment_integration_by_parts",
+      "passed": true
+    },
+    {
+      "name": "weak_response_potential_only",
+      "passed": true
+    }
+  ],
+  "radial_equation": "-(Derivative(nu(r), r) - Derivative(F(r), r)/(2*F(r)))*Derivative(q(r), r) + ((2*Derivative(nu(r), r) - Derivative(F(r), r)/F(r))/r - 2/r**2 - 4/(r**2*F(r)))*q(r) + Derivative(q(r), (r, 2))",
+  "direct_Ricci_tphi_over_harmonic": "-2*alpha*W(h(r))*q(r) + F(r)*Derivative(nu(r), r)*Derivative(q(r), r)/2 - F(r)*Derivative(q(r), (r, 2))/2 - Derivative(F(r), r)*Derivative(q(r), r)/4 - 2*F(r)*q(r)*Derivative(nu(r), r)/r + 3*q(r)/r**2",
+  "matter_coefficient": "A=alpha*r*(rho+p_r)/F=nu_prime-F_prime/(2F)",
+  "regular_center": "q=r^3[1+alpha*(11*rho0/3+p_r0)*r^2/14+O(r^4)]",
+  "vacuum_basis": "P=r^3*(1-2M/r); Q=r^-2*hypergeom(1,4;6;2M/r); W(P,Q)=-5",
+  "weak_response": "lim_alpha_to_zero (b/a)/alpha = (1/5)*integral r^6*(rho-p_r)dr = (2/5)*integral r^6 W(h)dr >0",
+  "current": "delta j^A=-beta^A*j^t, whereas Eulerian momentum density S_A=0",
+  "assumptions": [
+    "Static linear odd-parity perturbation of the same nonrotating spherical complex scalar.",
+    "No axial scalar harmonic or vortical matter mode introduced.",
+    "Retained Einstein-Hilbert dynamics, not an emergent derivation of G."
+  ]
+}

@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\diagnose_annular_C2_cancellation_20260929.py", line 61, in <module>
+    main()
+    ~~~~^^
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\diagnose_annular_C2_cancellation_20260929.py", line 50, in main
+    evidence.check('unchanged_C2_replay_gate', np.all(error <= 2e-24 + 2e-6 * abs(inherited)),
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        dict(result=result.tolist(), inherited=inherited.tolist(), error=error.tolist()))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\annular_reference_continuum_shell_20260914.py", line 41, in check
+    raise RuntimeError(name+': '+repr(detail))
+RuntimeError: unchanged_C2_replay_gate: {'result': [2.0189134788586125e-18, -4.935215516470021e-21, -1.8010289956558722e-21, -1.1209842798063425e-21], 'inherited': [2.0189134788626208e-18, -4.9373173770829685e-21, -1.802411496456677e-21, -1.1210982404852466e-21], 'error': [4.008245400258715e-30, 2.101860612947906e-24, 1.3825008008049463e-24, 1.1396067890411114e-25]}

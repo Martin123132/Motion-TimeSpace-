@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\mts-coupled-energy-envelope-20261107\probe.py", line 63, in <module>
+    main()
+    ~~~~^^
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\mts-coupled-energy-envelope-20261107\probe.py", line 40, in main
+    saved = load(ADJOINT / "response-v2/adjoints" / (model + "-poisson-spatial-half-cap.npz"))
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\mts-coupled-energy-envelope-20261107\common.py", line 102, in load
+    with np.load(path) as archive:
+         ~~~~~~~^^^^^^
+  File "C:\Users\ollet\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_npyio_impl.py", line 454, in load
+    fid = stack.enter_context(open(os.fspath(file), "rb"))
+                              ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-feedback-adjoint-20261107\\response-v2\\adjoints\\heavy-poisson-spatial-half-cap.npz'

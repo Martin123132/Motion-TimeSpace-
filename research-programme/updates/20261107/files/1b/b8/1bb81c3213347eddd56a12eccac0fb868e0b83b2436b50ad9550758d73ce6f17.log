@@ -1,0 +1,43 @@
+{"stage": "reference-reference-fine:restore", "seconds": 29.170281099970452}
+{"stage": "reference-reference-fine:material48-label8", "seconds": 44.938661799998954}
+{"stage": "reference-reference-fine:material48-label16", "seconds": 57.756261899950914}
+{"stage": "reference-reference-fine:material48-label24", "seconds": 70.69222600001376}
+{"stage": "reference-reference-fine:material48-label32", "seconds": 91.22111459996086}
+{"stage": "reference-reference-fine:material48-label40", "seconds": 117.50175679998938}
+{"stage": "reference-reference-fine:material48-label48", "seconds": 145.15774900000542}
+{"stage": "reference-reference-fine:material64-label8", "seconds": 170.12944789999165}
+{"stage": "reference-reference-fine:material64-label16", "seconds": 195.09294210001826}
+{"stage": "reference-reference-fine:material64-label24", "seconds": 220.8242612000322}
+{"stage": "reference-reference-fine:material64-label32", "seconds": 250.24066190002486}
+{"stage": "reference-reference-fine:material64-label40", "seconds": 276.38319630001206}
+{"stage": "reference-reference-fine:material64-label48", "seconds": 304.4443653000053}
+{"stage": "reference-reference-fine:material64-label56", "seconds": 331.1713007999351}
+{"stage": "reference-reference-fine:material64-label64", "seconds": 356.7926977999741}
+{"stage": "reference-reference-fine:complete", "seconds": 356.8701401000144}
+{"stage": "reference-reference-third:restore", "seconds": 356.9293903999496}
+{"stage": "reference-reference-third:material48-label8", "seconds": 436.64888079999946}
+{"stage": "reference-reference-third:material48-label16", "seconds": 512.7857993999496}
+{"stage": "reference-reference-third:material48-label24", "seconds": 593.2504212999484}
+{"stage": "reference-reference-third:material48-label32", "seconds": 671.7896008000243}
+{"stage": "reference-reference-third:material48-label40", "seconds": 747.5371874000411}
+{"stage": "reference-reference-third:material48-label48", "seconds": 825.0690661999397}
+{"stage": "reference-reference-third:material64-label8", "seconds": 898.5845620000036}
+{"stage": "reference-reference-third:material64-label16", "seconds": 962.0960385999642}
+{"stage": "reference-reference-third:material64-label24", "seconds": 1019.3260579999769}
+{"stage": "reference-reference-third:material64-label32", "seconds": 1087.2044093000004}
+{"stage": "reference-reference-third:material64-label40", "seconds": 1143.936358200037}
+{"stage": "reference-reference-third:material64-label48", "seconds": 1197.8328124999534}
+{"stage": "reference-reference-third:material64-label56", "seconds": 1249.9256720000412}
+{"stage": "reference-reference-third:material64-label64", "seconds": 1303.702976700035}
+Traceback (most recent call last):
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\derive_annular_reacted_support_columns_20260929.py", line 207, in <module>
+    main()
+    ~~~~^^
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\derive_annular_reacted_support_columns_20260929.py", line 178, in main
+    evidence.check(name + ':inherited_C2_replay', bool(np.all(acceleration_error <= 2e-24 + 2e-6 * abs(inherited_C2))),
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        dict(error=acceleration_error.tolist(), inherited=inherited_C2.tolist()))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\annular_reference_continuum_shell_20260914.py", line 41, in check
+    raise RuntimeError(name+': '+repr(detail))
+RuntimeError: reference-reference-third:inherited_C2_replay: {'error': [6.229612998114953e-30, 2.124303517875126e-24, 1.2003736377549043e-24, 9.329703623851954e-26], 'inherited': [2.0189134788626208e-18, -4.9373173770829685e-21, -1.802411496456677e-21, -1.1210982404852466e-21]}

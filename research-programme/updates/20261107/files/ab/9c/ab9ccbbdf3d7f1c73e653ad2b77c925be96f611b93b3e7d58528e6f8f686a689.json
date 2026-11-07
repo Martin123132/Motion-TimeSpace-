@@ -1,0 +1,340 @@
+{
+  "state": "complete",
+  "sealed_at_utc": "2026-10-07T02:38:56.371576+00:00",
+  "file_hashes": {
+    "57-field-to-survey-response.md": "fec8a6e0af7c415f9833f80ca0c2d38e02c128de351cca7122c666ccef4edd7e",
+    "ACCEPTANCE.md": "b1eae8ada138ad3a3bd04a33fe50aea4ee878624347d618f70f68146b3679c4b",
+    "RESULTS.md": "0c857a82ab8691bed8573c016684749d6709f06f7ea7e877d56c70ef07ec018b",
+    "RESUME.md": "b17bb9de116713d55c96b71a98a6ad45130213ee87722b3eabeb0ba52ff974e8",
+    "acquire_survey.py": "bd081dfdd88563ce87d83af40e823725cf23737e0cf37198b9b92ab31242f59c",
+    "build_response.py": "9dac18eb54e0ed4a843f8644f8ea26d69ab53afb7ece4b32429d0b44af8931ba",
+    "fit_survey.py": "5a16f4602ace0f163f8e50ba55c35f2d1ffef1485d1ea577c16e99b232d3ad8e",
+    "prepare_survey.py": "43a5e7e406cdeefda6c95ec3b5cd16ea87b31013fa9329543c13836ca2e652c4",
+    "save_figures.py": "adfa91d1a262e7f000d88034ef1ad5e0ef1af9bc5f4f744f62ef9c82d6c25904",
+    "seal_forward.py": "8be61930920f53103a69de447bedc16ebeb266744fa0e26c0b0fbc3ae6bec77e",
+    "test_compression.py": "30bf6046817f43420938636b8dfc63254176478c1309c1475e00c3289cb3baf2",
+    "validate_forward.py": "756afe616d6f3a752e5d4995c61da878ecfbecf19ee39209dd1b31741bdb0aca",
+    "window_common.py": "8e652174fdb9e5178a5c11a4c3fba60fac210c5c89a550b1e334124dcbdc2744",
+    "results/boss-window-comparison.png": "132b6c4866b77d851474749fe5cc84aef106ba99ff2d7a185324586f5e8be02b",
+    "results/compression-test/COMPLETE": "5963977da4c2cb333a978aa0daa86f36234831cd8bc416443ca9087268bc8645",
+    "results/compression-test/status.json": "aa21bb206f295b420f660b4ce03d2b5ded02d3503a39b04b5c61fdc3853a95fb",
+    "results/diagnostic-fits/COMPLETE": "5963977da4c2cb333a978aa0daa86f36234831cd8bc416443ca9087268bc8645",
+    "results/diagnostic-fits/cold-NGC-0.08-2.npz": "aa28c414466c2a5c301c29f5090380e50e90b4c18a87de4cfae2821f0e2e1f96",
+    "results/diagnostic-fits/cold-NGC-0.1-2.npz": "3d6811fa0bfa988ec9f3f1530a539844518fc10097cd59cdb2a1a4912885d09d",
+    "results/diagnostic-fits/cold-NGC-0.1-3.npz": "a7d984493bf4bf908391b13542439c58546794dfa6e6e311140b49c7ab6595b0",
+    "results/diagnostic-fits/cold-NGC-0.12-2.npz": "de881824b25797492d954a676e67d0f0e0e1d34f340a2f9ad0780d098bcdea9d",
+    "results/diagnostic-fits/cold-SGC-0.08-2.npz": "d272a9dc07b0cc88832138f4871b05a176a7e151befde6a43d34abdd8e442fc1",
+    "results/diagnostic-fits/cold-SGC-0.1-2.npz": "72576dd3c88ae4add60d20aa8d4f519eaced25feb124cc623f96767852e4dcef",
+    "results/diagnostic-fits/cold-SGC-0.1-3.npz": "366e37ef233e0135fe850f2954a96aac12334d8431f8836a9b5b4c44e9a26996",
+    "results/diagnostic-fits/cold-SGC-0.12-2.npz": "e035ad826d53336f2520a561e87a62ee4b0ccd90ead6c74450cbfa251c68bd92",
+    "results/diagnostic-fits/heavy-NGC-0.08-2.npz": "9125eb2e84f0f43d14634ae9648fe35dc8258f871f21e7e26109198f6fdc5beb",
+    "results/diagnostic-fits/heavy-NGC-0.1-2.npz": "3c42475535589ad88b8307451b303bb0284db1664adafa33d552e4baada06e8a",
+    "results/diagnostic-fits/heavy-NGC-0.1-3.npz": "65220b0e0c1aad549d5cea3765cd0daf4495d6b651ca9791fcd53f686b4b4167",
+    "results/diagnostic-fits/heavy-NGC-0.12-2.npz": "114589d11f8ee9d550c6fcfacdc6d4b81879039ba648074b642391647fff23ab",
+    "results/diagnostic-fits/heavy-SGC-0.08-2.npz": "78dc50da2affaaa3a6211352cee1c093c8e01ccbf59210a88b8beec7f6d4519e",
+    "results/diagnostic-fits/heavy-SGC-0.1-2.npz": "1b9c77544e152653d22c8052a95eaff5c63ba35c5aaaf0f8ae40f186e64c4eb1",
+    "results/diagnostic-fits/heavy-SGC-0.1-3.npz": "39e1c44df00190efefb6fccf3bb7cd2880144c43b4b2f8d64e1e1336ce140170",
+    "results/diagnostic-fits/heavy-SGC-0.12-2.npz": "446f39957b9adb5e178bc705a2cff26a5b18f1f13f5ec6cd8a75e7fd413a8a01",
+    "results/diagnostic-fits/lcdm-NGC-0.08-2.npz": "f293b07e770e547f09ee6b8362fc7839b11005ca09063f121e758154c42a2ec1",
+    "results/diagnostic-fits/lcdm-NGC-0.1-2.npz": "0aa52cfb1104f17689b4b57222d4e2220af8158130669634b0beb2bc24f51569",
+    "results/diagnostic-fits/lcdm-NGC-0.1-3.npz": "daf22f0c701a9950c08c1ddfb6fbc076a799c16d6e6d460f7bb90bba97911a0e",
+    "results/diagnostic-fits/lcdm-NGC-0.12-2.npz": "56853b1c9017e5f75f4dab689dcb37dd80eb8da7e7ec76491cfc6283fd9133e5",
+    "results/diagnostic-fits/lcdm-SGC-0.08-2.npz": "48ebf74f658030880d0ea3142c8af2455aa63b0936fac85b60f01285a95f8d7f",
+    "results/diagnostic-fits/lcdm-SGC-0.1-2.npz": "cec5af2804a64f1e501ceb8feb2013ef2acc8262e25c6ec0a1e02355306d63ad",
+    "results/diagnostic-fits/lcdm-SGC-0.1-3.npz": "1ba47cf7cab6309ee4893ceb9549ddd36b463fb20e84e793eac7b1abd88dff2e",
+    "results/diagnostic-fits/lcdm-SGC-0.12-2.npz": "cb4379aee3efffd6b1e7a35984f129315808f92b829183cfd26248e7125069dd",
+    "results/diagnostic-fits/status.json": "b5cd4cbff280e7796a749616e9f50deca216f8ac65e65253f2263d9c4f2135e0",
+    "results/prepared/COMPLETE": "5963977da4c2cb333a978aa0daa86f36234831cd8bc416443ca9087268bc8645",
+    "results/prepared/NGC.npz": "9bf1c003eaada4d6484afa21804250cc1176e829a5bf9d7e7ce356d906961fc1",
+    "results/prepared/SGC.npz": "eb6da1f4949e6154c4573f10fdaaa0c6ce0d4400a412025a45dc827faec485b1",
+    "results/prepared/status.json": "3dfc18f84be844c907fa3e88283f17541c11898054148ea61de0b462dd01c1c1",
+    "results/response/COMPLETE": "5963977da4c2cb333a978aa0daa86f36234831cd8bc416443ca9087268bc8645",
+    "results/response/cold-NGC.npz": "cd6147626fc9cf50f452e280d249880077470adf0367afe6ea50e665728817ee",
+    "results/response/cold-SGC.npz": "86e0719c92630b6e04a88cb398d347fb7bab305205a88fb5baf92f042e5f990c",
+    "results/response/heavy-NGC.npz": "cc78359ece2004d1fedf3cdd729d8b533c8da46fc6480542b1ee5b0d51203b10",
+    "results/response/heavy-SGC.npz": "310ac280fe704379c06bcd0171c22aecdc31765b00384059061f781ef5c477ab",
+    "results/response/lcdm-NGC.npz": "3ab81d6184512bd56bc34ce8c00f683bb21758a935becf952aa8a47ee05f8d05",
+    "results/response/lcdm-SGC.npz": "cea6a1c7e4047f18b0e28974cb8fe5381178b046e3967eedcef2be8f64f2eb6d",
+    "results/response/status.json": "5a88b0dc0230ba1727cf21fc447e0ad00775bdeb63e380ac06b8afce59c88f9d",
+    "results/validation/COMPLETE": "5963977da4c2cb333a978aa0daa86f36234831cd8bc416443ca9087268bc8645",
+    "results/validation/status.json": "ab5fe4cc30612683a9119cdb0c7e1fd4a7eb4922a92c5300e4f0cdc29e8f18b7",
+    "sources/Beutler-McDonald-2021.pdf": "118c09173ea091f5954716899a4dcdf3b29a84c4ba48a0b5ee0f7fe248ece358",
+    "sources/COMPLETE": "5963977da4c2cb333a978aa0daa86f36234831cd8bc416443ca9087268bc8645",
+    "sources/C_2048_BOSS_DR12_NGC_z1_V6C_1_1_1_1_1_10_200_200_prerecon.matrix.gz": "40cac0b4e29e808fbaea79d23316e10cd24258c44aa0438359eabbf233dd16ea",
+    "sources/C_2048_BOSS_DR12_SGC_z1_V6C_1_1_1_1_1_10_200_200_prerecon.matrix.gz": "ca129eb802ab84dc226e5ae04b5365937e9f0b697d5572ff0c6fbeecc18dabee",
+    "sources/M_BOSS_DR12_NGC_z1_V6C_1_1_1_1_1_1200_2000.matrix.gz": "95c027c7326cb62659fec4d5aacfff98e6b245caa920560e138aa14791f91998",
+    "sources/M_BOSS_DR12_SGC_z1_V6C_1_1_1_1_1_1200_2000.matrix.gz": "d5dadcf5b0baba8d2e0039e04e7748ae68d0e0f43f03021d64d994771dd44ee0",
+    "sources/W_BOSS_DR12_NGC_z1_V6C_1_1_1_1_1_10_200_2000_averaged_v1.matrix.gz": "3f3a9dc7b0354cb8b7928f1b935cf44f4f7ebbfa78f1f41be3bb5d8c974ca85a",
+    "sources/W_BOSS_DR12_SGC_z1_V6C_1_1_1_1_1_10_200_2000_averaged_v1.matrix.gz": "684b09039a60897a33da00f6d089ab7dfd2ebe536155ae4a2ae2db1ec443a45f",
+    "sources/author-data-page.html": "94ce6ad93ae46c9139ca336870eff632dcdac25c330ec8715512ae17eec5f2ea",
+    "sources/manifest.json": "f452dab15808ad36edbfef11d5e61af05c409ddb03eab330c0fc23bf22424fa2",
+    "sources/pk-tools-commit.json": "2f35b3da8ed65bb7034a899c8bb2266075391aa454b8fbd61e1d8932cb1ff76c",
+    "sources/pk_tools.py": "818898a7f952d2398ac232126336743965ca24fc6616ecdc556fdbdf6c76c069",
+    "sources/ps1D_BOSS_DR12_NGC_z1_COMPnbar_TSC_700_700_700_400_renorm.dat": "e9e887ceb2ead430800cc140e5c70bdb909d1c347d8d040f924038b29ba7e80f",
+    "sources/ps1D_BOSS_DR12_SGC_z1_COMPnbar_TSC_700_700_700_400_renorm.dat": "a107bebcdbeafeaa5212cc1edd4812e7412853d89c76da764e0f9d6a1b77f103"
+  },
+  "parent_seal_sha256": "83ac0a8b3dd7b017e0d02690b70187be8c5e3513458af6065c3b2da41408e148",
+  "prior_sealed_entries_unchanged": 6493,
+  "parent_chain_edges_verified": 53,
+  "checkpoint_manifest_sha256": "38f86719b0eb4c5e7fd86171a98af51918369f9daf81584a3c19c3d63222389e",
+  "full_checkpoint_payload_rehashed": false,
+  "local_source_documents": [
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\4876-Y5-R2FR-integrated-H-parent-action-saddle-regulator-and-induced-coefficient-matching-to-GN-Lambda-and-R2.md",
+      "sha256": "8798d2de8c48ccd4fcc22d676aa1ae37cb6ac7691a579f9444095a8302832780",
+      "role": "Integrated-H gravitational saddle and retained renormalized normalization"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\4916-Y5-R2FR-covariantization-map-from-microscopic-motion-action-to-integrated-H-parent-and-no-direct-flow-charge-or-primitive-freeze.md",
+      "sha256": "4c20db8f8f75d81bab3c2a6d334cbcefeb2f2c1d66266be0ec412947c705b636",
+      "role": "Local metric map, Hilbert source chain and non-unique covariantization boundary"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\4960-Y5-R2FR-integrated-H-soft-BRST-universal-source-theorem-and-local-GR-Newton-Maxwell-promotion-or-parent-field-content-boundary.md",
+      "sha256": "6cd343d022dde751f86ad82eaf0f61fb5e3616753c228f631c44a45da278a69d",
+      "role": "Declared independent-H/Diff parent and source normalization boundary"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\4873-Y5-R2FR-covariant-open-parent-action-and-connected-covariance-kernel-to-unit-flow-Kubo-coefficients-or-final-EFT-freeze.md",
+      "sha256": "af2c97091477525fb7244e5b2577e4a4c70d863987ebbb39b6c974d978b38b6e"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\4897-Y5-R2FR-cosmology-without-bath-source-metric-only-baseline-and-derived-extension-reentry-gate.md",
+      "sha256": "5cc9a75f954711cb3a320f8b6e2ecc989d6cd1692eb46190f008c70144d52ff4"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\4938-Y5-R2FR-motion-scale-to-Newton-scale-parent-identity-or-explicit-two-scale-theory-gate.md",
+      "sha256": "b30394a62c6a22af5da315b92a2823f44aa34cd914b6bab813136b0926aa0ca4"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\5192-Y5-R2FR-parent-motion-FLRW-branch-memory-separation-and-mass-gap-cosmology-gate.md",
+      "sha256": "e171efb8d498df44b535f6c25517c86a0cd5e8b993a67bfb8a9e3b74301eecc3"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\5194-Y5-R2FR-parent-canonical-scalar-perturbation-growth-and-compressed-CMB-gate.md",
+      "sha256": "1478db5333863753c00371b2e8c5ad8d7dc5250a40dd3a1f870de4e8ad25eb5d"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\5195-Y5-R2FR-matched-joint-CMB-informed-parent-refit-and-physical-sound-horizon-gate.md",
+      "sha256": "217fdc07f94e18a21fe996f7592930f69c21ba16b3fe44b1fd1a2518d9d54737"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\5197-Y5-R2FR-universal-gap-cross-arena-compatibility-and-route-separation-theorem.md",
+      "sha256": "f01f94465168758886800556f345e370910f6913e80f1a4a0c646bbe7abe0c0a"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\5156-Y5-R2FR-FLRW-Hessian-Gaussian-state-single-clock-adiabatic-radiation-transfer-and-patch-collapse-gate.md",
+      "sha256": "fdb5c0406fb7d0e47204a51212b24b5adf19d33644399bc4a1fd2268155b1353"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\4937-Y5-R2FR-gravity-motion-functional-potential-Hessian-and-one-scale-fixed-function-gate.md",
+      "sha256": "2cf1f25d7cf67ec9bb724381919a9ff6e78d5dabe355ec50178157309b29cce5"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\4957-Y5-R2FR-functional-PX-GR-connected-trajectory-and-O2-O4-O5-residual-bound-or-motion-sector-rejection.md",
+      "sha256": "235b2e640428814bbcc3f0af1b2ebef020573314eaae1cb0b793be9122db0cb4"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\4958-Y5-R2FR-six-derivative-essential-X2-X3-quotient-and-invariant-2to4-amplitude-or-rate-route-rejection.md",
+      "sha256": "d08b8a0ab6a5317c77a23accd34dc46c5ad6a0bc5aa73e0767c8e0aa0edd5f1c"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\motion-bath-matching-20261006\\49-real-motion-envelope-and-existing-bath-matching.md",
+      "sha256": "eeab083d0f4646ff936c4e12ebcc44aedb27e2a9a4ce36d76de98fdb2cdaaf90"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\early-adiabatic-matching-20261006\\51-early-adiabatic-onset-and-existing-growth-handoff.md",
+      "sha256": "bb4d035d7860dfadd29c68d1065b7802f9c6f2fd7e3c8c62094656399c01eae2"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\early-adiabatic-matching-20261006\\results\\stage-integrity.json",
+      "sha256": "64b9dced606b4b957c95140a137cf8e633991a3706c6dd05046b3bab27990921"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\early-adiabatic-matching-20261006\\results\\matching\\status.json",
+      "sha256": "fe369a4a67cb03948fc129bdcdd4421f6fe9c09cbfea0ffce7af40ad8cc9c901"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\heavy-interaction-and-condensate-bridge-20261007\\results\\stage-integrity.json",
+      "sha256": "9f135b041162dbb788c955a148df14a95b3056f44269011400d089fe51dd8bc3"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\early-adiabatic-matching-20261006\\early_common.py",
+      "sha256": "d3f0a72ef328e26853331d583484c700c8b0d188f672add364eb6a5c5e14b5bc"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\cosmology-reconnection-20261006\\results\\comparison\\status.json",
+      "sha256": "4ddef64dd7e2d0489ab0eec4aae243512ef765b08d9c1f23bf250a9e2fc76b1d"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\formalization-workbench\\data\\cosmology\\desi_dr2_bao\\desi_gaussian_bao_ALL_GCcomb_mean.txt",
+      "sha256": "9ac154ab583ce759c0f7eef3c978c7c70a6ead2d18774caceadf1a350a640585"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\formalization-workbench\\data\\cosmology\\desi_dr2_bao\\desi_gaussian_bao_ALL_GCcomb_cov.txt",
+      "sha256": "252a143274c8a07c78694c119617d36594f6d7965d00319ca611c6ffb886e509"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\Y5_R2FR_5194_parent_scalar_perturbation_growth_CMB_gate.py",
+      "sha256": "f696e14285549efa7435a3e02b01becb73833998adbd37a60ad49fa779db6bb8"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\.venv-score\\Lib\\site-packages\\camb\\cambdll.dll",
+      "sha256": "dacec802377123147f336c37218cdf871b293f1de2b87019c8726b7290082bef"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\.venv-score\\Lib\\site-packages\\camb\\__init__.py",
+      "sha256": "bb7a41157cc6b5f189b9aecff9151514971d656e4f43c997c8744ac3fc4c6ebd"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\.venv-score\\Lib\\site-packages\\camb\\results.py",
+      "sha256": "ad5d362fd48bc3c707df0f1ca866a6503b34f0076e0180f79d7d5fac6cd8ce9e"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\.venv-score\\Lib\\site-packages\\camb\\dark_energy.py",
+      "sha256": "00e95f0ec6661077dd1740a1420cd8f3568a84fd837ddc289130d01a97074058"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\.venv-score\\Lib\\site-packages\\camb\\model.py",
+      "sha256": "e94ac3cab7f9db9c9aec8da08063cb96955f89db9a5b1120a8a06148bd730018"
+    }
+  ],
+  "primary_pdfs": [
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\companion-source-20261004\\sources\\martel-poisson-2005.pdf",
+      "url": "https://arxiv.org/pdf/gr-qc/0502028",
+      "sha256": "6b9ef2af0fb9ebddcd4e46e8a71466e2ea821cd4f43e25f03c7757c1a05056be",
+      "pages": 21,
+      "rendered_pages_one_based": [
+        5,
+        6,
+        9
+      ]
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\companion-source-20261004\\sources\\martel-2004.pdf",
+      "url": "https://arxiv.org/pdf/gr-qc/0311017",
+      "sha256": "f7bc1b51162ee376cf4e8ac460561e3e599615da71c9d531c54407b420a51fbd",
+      "pages": 24,
+      "rendered_pages_one_based": [
+        16,
+        17
+      ]
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\orbital-backreaction-20261004\\sources\\fujita-et-al-2017.pdf",
+      "url": "https://arxiv.org/abs/1612.02504",
+      "role": "Reciprocal conservative Hamiltonian and action first-law cross-check",
+      "sha256": "d4c330099d779091e377bd2a3f6a5b1ee8fdaa92814180690e58900ad390ed25"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\orbital-backreaction-20261004\\sources\\vines-flanagan-hinderer-2011.pdf",
+      "sha256": "825706ae39d7f4722a85e0574e7edc168fd01231c1bdb441568f115b22c6602a",
+      "url": "https://arxiv.org/abs/1101.1673",
+      "role": "Circular tidal action/quadrupole normalization, inherited stage20 comparison"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\survey-window-forward-model-20261007\\sources\\Beutler-McDonald-2021.pdf",
+      "sha256": "118c09173ea091f5954716899a4dcdf3b29a84c4ba48a0b5ee0f7fe248ece358"
+    }
+  ],
+  "source_urls": [
+    "https://arxiv.org/abs/gr-qc/0502028",
+    "https://arxiv.org/pdf/gr-qc/0502028",
+    "https://doi.org/10.1103/PhysRevD.71.104003",
+    "https://arxiv.org/abs/gr-qc/0311017",
+    "https://arxiv.org/pdf/gr-qc/0311017",
+    "https://doi.org/10.1103/PhysRevD.69.044025",
+    "https://journals.aps.org/pr/abstract/10.1103/PhysRev.131.435",
+    "https://journals.aps.org/pr/abstract/10.1103/PhysRev.136.B1224",
+    "https://arxiv.org/abs/gr-qc/0407050",
+    "https://arxiv.org/pdf/gr-qc/0407050",
+    "https://doi.org/10.1103/PhysRevD.70.084044",
+    "https://arxiv.org/abs/1612.02504",
+    "https://arxiv.org/html/1612.02504",
+    "https://doi.org/10.1088/1361-6382/aa7342",
+    "https://arxiv.org/abs/1101.1673",
+    "https://doi.org/10.1103/PhysRevD.83.084051"
+  ],
+  "previous_primary_source_urls": [
+    "https://www.sdss4.org/science/final-bao-and-rsd-measurements/",
+    "https://svn.sdss.org/public/data/eboss/DR16cosmo/tags/v1_0_1/likelihoods/Full-shape-only/README.txt",
+    "https://svn.sdss.org/public/data/eboss/DR16cosmo/tags/v1_0_1/likelihoods/Full-shape-only/sdss_DR12_LRG_FS_DMDHfs8.txt",
+    "https://svn.sdss.org/public/data/eboss/DR16cosmo/tags/v1_0_1/likelihoods/Full-shape-only/sdss_DR12_LRG_FS_DMDHfs8_covtot.txt",
+    "https://svn.sdss.org/public/data/eboss/DR16cosmo/tags/v1_0_1/likelihoods/Full-shape-only/sdss_DR16_LRG_FS_DMDHfs8.txt",
+    "https://svn.sdss.org/public/data/eboss/DR16cosmo/tags/v1_0_1/likelihoods/Full-shape-only/sdss_DR16_LRG_FS_DMDHfs8_covtot.txt",
+    "https://svn.sdss.org/public/data/eboss/DR16cosmo/tags/v1_0_1/likelihoods/Full-shape-only/sdss_DR16_QSO_FS_DMDHfs8.txt",
+    "https://svn.sdss.org/public/data/eboss/DR16cosmo/tags/v1_0_1/likelihoods/Full-shape-only/sdss_DR16_QSO_FS_DMDHfs8_covtot.txt"
+  ],
+  "new_primary_source_urls": [
+    "https://fbeutler.github.io/hub/deconv_paper.html",
+    "https://fbeutler.github.io/hub/M_BOSS_DR12_NGC_z1_V6C_1_1_1_1_1_1200_2000.matrix.gz",
+    "https://fbeutler.github.io/hub/W_BOSS_DR12_NGC_z1_V6C_1_1_1_1_1_10_200_2000_averaged_v1.matrix.gz",
+    "https://fbeutler.github.io/hub/C_2048_BOSS_DR12_NGC_z1_V6C_1_1_1_1_1_10_200_200_prerecon.matrix.gz",
+    "https://fbeutler.github.io/hub/ps1D_BOSS_DR12_NGC_z1_COMPnbar_TSC_700_700_700_400_renorm.dat",
+    "https://fbeutler.github.io/hub/M_BOSS_DR12_SGC_z1_V6C_1_1_1_1_1_1200_2000.matrix.gz",
+    "https://fbeutler.github.io/hub/W_BOSS_DR12_SGC_z1_V6C_1_1_1_1_1_10_200_2000_averaged_v1.matrix.gz",
+    "https://fbeutler.github.io/hub/C_2048_BOSS_DR12_SGC_z1_V6C_1_1_1_1_1_10_200_200_prerecon.matrix.gz",
+    "https://fbeutler.github.io/hub/ps1D_BOSS_DR12_SGC_z1_COMPnbar_TSC_700_700_700_400_renorm.dat",
+    "https://api.github.com/repos/fbeutler/pk_tools/commits/master",
+    "https://raw.githubusercontent.com/fbeutler/pk_tools/707eb2a6a4691c34eae19d7f72047ca4892f528e/pk_tools.py",
+    "https://arxiv.org/pdf/2106.06324v2"
+  ],
+  "observational_source_urls": [
+    "https://github.com/PantheonPlusSH0ES/DataRelease",
+    "https://github.com/CobayaSampler/bao_data/blob/master/desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_cov.txt",
+    "https://www.desi.lbl.gov/2025/10/06/desi-dr2-cosmology-chains-and-data-products-released/",
+    "https://raw.githubusercontent.com/CobayaSampler/bao_data/bb0c1c9009dc76d1391300e169e8df38fd1096db/desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_mean.txt",
+    "https://raw.githubusercontent.com/CobayaSampler/bao_data/bb0c1c9009dc76d1391300e169e8df38fd1096db/desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_cov.txt",
+    "https://fbeutler.github.io/hub/deconv_paper.html"
+  ],
+  "local_dependencies": {
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\survey-window-forward-model-20261007\\results\\validation\\status.json": "ab5fe4cc30612683a9119cdb0c7e1fd4a7eb4922a92c5300e4f0cdc29e8f18b7",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\survey-window-forward-model-20261007\\results\\diagnostic-fits\\status.json": "b5cd4cbff280e7796a749616e9f50deca216f8ac65e65253f2263d9c4f2135e0",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\survey-window-forward-model-20261007\\RESULTS.md": "0c857a82ab8691bed8573c016684749d6709f06f7ea7e877d56c70ef07ec018b",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\survey-window-forward-model-20261007\\sources\\manifest.json": "f452dab15808ad36edbfef11d5e61af05c409ddb03eab330c0fc23bf22424fa2",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\survey-window-forward-model-20261007\\results\\compression-test\\status.json": "aa21bb206f295b420f660b4ce03d2b5ded02d3503a39b04b5c61fdc3853a95fb",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\survey-window-forward-model-20261007\\results\\boss-window-comparison.png": "132b6c4866b77d851474749fe5cc84aef106ba99ff2d7a185324586f5e8be02b",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\survey-window-forward-model-20261007\\57-field-to-survey-response.md": "fec8a6e0af7c415f9833f80ca0c2d38e02c128de351cca7122c666ccef4edd7e"
+  },
+  "compiled_scripts": [
+    "acquire_survey.py",
+    "build_response.py",
+    "fit_survey.py",
+    "prepare_survey.py",
+    "save_figures.py",
+    "seal_forward.py",
+    "test_compression.py",
+    "validate_forward.py",
+    "window_common.py"
+  ],
+  "checked_result_packets": 5,
+  "validation_checks": 189,
+  "all_checks_passed": true,
+  "real_multipole_data": true,
+  "real_survey_window": true,
+  "matched_control_treatment": true,
+  "primary_observations": 32,
+  "primary_tracer_nuisance_parameters": 4,
+  "field_parameters_fitted": 0,
+  "nonlinear_tracer_model_validated": false,
+  "published_compression_estimator_reproduced": false,
+  "formal_model_preference": false,
+  "overlapping_stage56_score_added": false,
+  "excluded_reproducible_dependency_caches": [
+    "runs/matplotlib-cache"
+  ],
+  "native_library_reused_read_only": true,
+  "native_library_sha256": "a3780fc2390569dee8b6dabef0441ab0efb411be18ea42e1419c1d0aac571ff1",
+  "original_library_sha256": "dacec802377123147f336c37218cdf871b293f1de2b87019c8726b7290082bef",
+  "protected_workbench_recent_modified_file_count": 0,
+  "protected_check_scope": "Modification-time scan since02:24:35UTC7October2026, not a full content-hash baseline.",
+  "maximum_active_compute_workers": 1,
+  "library_threads": 1,
+  "active_stage_workers": 0,
+  "github_action": false,
+  "subagents": 0,
+  "global_installation_changed": false,
+  "galaxy_work_modified": false,
+  "conclusion": "Retained density/velocity fields forward-projected into actual BOSS multipoles with equal tracer fits and explicit shape-compression injection tests. Next: common nonlinear/tracer response and calibration."
+}

@@ -1,0 +1,604 @@
+{
+  "stage": 120,
+  "accepted_scope": "Paired response-step sensitivity check at fixed5265 frequency nodes, fixed10240-step inner histories and byte-identical65-epoch sources.2048-to4096 response steps, both backgrounds,baseline and both MTS joins,windows0.04/0.02. Common2049-epoch comparisons; refined4097-epoch peak denominators. Does not certify total numerical error.",
+  "expected_failed_by_packet": {
+    "response-m20-r4096": [
+      "Response:heavy:gas",
+      "Response:cold:gas"
+    ],
+    "response-m40-r4096": [
+      "Response:heavy:gas",
+      "Response:cold:gas"
+    ]
+  },
+  "scientific_checks": 132,
+  "passing_scientific_checks": 128,
+  "independent_validation_pending_at_review_creation": true,
+  "conclusion": "All64 paired comparison checks pass. MTS endpoint changes0.00106–0.00266%, versus2.04–4.40% for the prior inner refinement. Its absolute response-step endpoint change is about1650–1925 times smaller than the Stage119 inner-step change. Prioritize the inner step next; source interpolation and joining-window dependence are separate.",
+  "next_target": "Refine the inner evolution10240 to20480 on the fixed5265 frequency grid, using the same sources-of-forcing and physical inputs. Recompute matched sources as required for that new inner solution. For a clean5120/10240/20480 contraction test, first hold response at2048 and compare with sealed Stage118/119. The inexpensive4096 response can then be recomputed for the new sources, not mixed silently into the contraction estimate. Keep baseline and MTS,both backgrounds,windows0.04/0.02; preserve late and endpoint checks.",
+  "raw_gas_gate": 1e-7,
+  "raw_gas_flags_retained": 4,
+  "selected_physical_audit": {
+    "steps": [
+      1,
+      2,
+      64,
+      1024,
+      2048,
+      3072,
+      3584,
+      4095,
+      4096
+    ],
+    "checks": 12,
+    "all_passed": true,
+    "full_history_high_precision": false
+  },
+  "precision_scope": "No new high-precision solves. Stage118 precision stress evidence inherited, not a certification of all Stage120 states. The9-step physical audit per case does not replace the full-history raw gas flags.",
+  "parameters_changed": [
+    "coupled response steps2048 to4096"
+  ],
+  "parameters_unchanged": [
+    "5265 frequency nodes",
+    "10240-step inner evolution",
+    "65 source epochs",
+    "all matched source arrays",
+    "physical operators and interpolation",
+    "96 spectral modes",
+    "BE/BDF2 method",
+    "physical parameters",
+    "both matching windows"
+  ],
+  "observations": {
+    "rows": [
+      {
+        "model": "heavy",
+        "upper": 0.04,
+        "columns": [
+          "baseline",
+          "join1",
+          "join2"
+        ],
+        "radiation_relative_change": [
+          3.043638209401136e-7,
+          3.638885931385821e-7,
+          3.6388864124947604e-7
+        ],
+        "gas_peak_relative_change": [
+          0.00023245473059842626,
+          0.0024202386567089436,
+          0.0024202376915558057
+        ],
+        "gas_late_relative_change": [
+          0.000016246463072767702,
+          0.00001572877449828953,
+          0.000015728525381923265
+        ],
+        "gas_endpoint_relative_change": [
+          0.000012261500147874049,
+          0.00001096540379851571,
+          0.000010965131579219016
+        ],
+        "gas_old_endpoint": [
+          -3.2825977342063684e-12,
+          3.9730980983832737e-16,
+          3.9730977226565376e-16
+        ],
+        "gas_new_endpoint": [
+          -3.282557485127279e-12,
+          3.973054532236014e-16,
+          3.9730541575949282e-16
+        ],
+        "gas_endpoint_difference": [
+          4.02490790892932e-17,
+          -4.3566147259490844e-21,
+          -4.356506160939156e-21
+        ],
+        "gas_endpoint_near_zero": [
+          false,
+          false,
+          false
+        ],
+        "gas_full_peak_denominator": [
+          3.282557485127279e-12,
+          4.581648799131696e-16,
+          4.581648404687537e-16
+        ],
+        "gas_late_peak_denominator": [
+          3.282557485127279e-12,
+          4.223829783588014e-16,
+          4.223829399719008e-16
+        ],
+        "gas_endpoint_denominator": [
+          3.282557485127279e-12,
+          3.973054532236014e-16,
+          3.9730541575949282e-16
+        ],
+        "gas_peak_absolute_difference": [
+          7.630460158791093e-16,
+          1.1088683535122642e-18,
+          1.1088678158481305e-18
+        ],
+        "gas_late_absolute_difference": [
+          5.332994896635756e-17,
+          6.643566618521494e-21,
+          6.643460792239413e-21
+        ],
+        "gas_peak_amplitude_change_over_refined_peak": [
+          -0.000012261500147874049,
+          -0.000028109540690579,
+          -0.000028109303303094047
+        ],
+        "gas_peak_difference_coordinate": [
+          1.1698436470997582,
+          1.1698436470997582,
+          1.1698436470997582
+        ],
+        "gas_late_difference_coordinate": [
+          2.286844765209907,
+          2.017010574624667,
+          2.017010574624667
+        ],
+        "gas_old_late_crossings": [
+          [],
+          [],
+          []
+        ],
+        "gas_new_late_crossings": [
+          [],
+          [],
+          []
+        ],
+        "endpoint_sign_preserved": [
+          true,
+          true,
+          true
+        ],
+        "response_over_inner_endpoint_change": [
+          0.09133873712507193,
+          0.0005351075231063032,
+          0.0005350942848753648
+        ],
+        "response_over_inner_peak_change": [
+          1.69139492836909,
+          0.12889177731379928,
+          0.12889173287157732
+        ],
+        "response_endpoint_change_over_stage119_endpoint": [
+          0.000012261349805331597,
+          0.000010965283559753712,
+          0.000010965011346426835
+        ],
+        "inner_endpoint_change_over_stage119_endpoint": [
+          0.00013424041311784165,
+          0.02049173873710494,
+          0.020491736982354104
+        ],
+        "compared_epochs": 2049,
+        "refined_peak_epochs": 4097,
+        "late_old_index": 1536,
+        "late_new_index": 3072,
+        "late_start_coordinate": 2.01476195636979,
+        "final_coordinate": 2.302585092994046
+      },
+      {
+        "model": "cold",
+        "upper": 0.04,
+        "columns": [
+          "baseline",
+          "join1",
+          "join2"
+        ],
+        "radiation_relative_change": [
+          3.039014326984299e-7,
+          3.6361979639585547e-7,
+          3.636197800598953e-7
+        ],
+        "gas_peak_relative_change": [
+          0.00023293669067348853,
+          0.002429809524749241,
+          0.0024298090641792754
+        ],
+        "gas_late_relative_change": [
+          0.000016207412991642047,
+          0.000015391134542315567,
+          0.000015391233227222242
+        ],
+        "gas_endpoint_relative_change": [
+          0.000012231531919212705,
+          0.00001060416349884003,
+          0.000010604268837441058
+        ],
+        "gas_old_endpoint": [
+          -3.2812065511044904e-12,
+          3.9762815469390107e-16,
+          3.976281155511075e-16
+        ],
+        "gas_new_endpoint": [
+          -3.2811664174127236e-12,
+          3.976239382246491e-16,
+          3.976238990403859e-16
+        ],
+        "gas_endpoint_difference": [
+          4.0133691766832526e-17,
+          -4.216469251986847e-21,
+          -4.2165107216157735e-21
+        ],
+        "gas_endpoint_near_zero": [
+          false,
+          false,
+          false
+        ],
+        "gas_full_peak_denominator": [
+          3.2811664174127236e-12,
+          4.579533992221916e-16,
+          4.579533597476207e-16
+        ],
+        "gas_late_peak_denominator": [
+          3.2811664174127236e-12,
+          4.2264379738550676e-16,
+          4.2264375767598473e-16
+        ],
+        "gas_endpoint_denominator": [
+          3.2811664174127236e-12,
+          3.976239382246491e-16,
+          3.976238990403859e-16
+        ],
+        "gas_peak_absolute_difference": [
+          7.643040468211062e-16,
+          1.1127395313213727e-18,
+          1.1127392244861213e-18
+        ],
+        "gas_late_absolute_difference": [
+          5.317921922131456e-17,
+          6.5049675490354954e-21,
+          6.505008646420682e-21
+        ],
+        "gas_peak_amplitude_change_over_refined_peak": [
+          -0.000012231531919212705,
+          -0.00002779967328867312,
+          -0.000027799749733022633
+        ],
+        "gas_peak_difference_coordinate": [
+          1.1698436470997582,
+          1.1698436470997582,
+          1.1698436470997582
+        ],
+        "gas_late_difference_coordinate": [
+          2.286844765209907,
+          2.017010574624667,
+          2.017010574624667
+        ],
+        "gas_old_late_crossings": [
+          [],
+          [],
+          []
+        ],
+        "gas_new_late_crossings": [
+          [],
+          [],
+          []
+        ],
+        "endpoint_sign_preserved": [
+          true,
+          true,
+          true
+        ],
+        "response_over_inner_endpoint_change": [
+          0.09113723946762213,
+          0.0005195683537832789,
+          0.0005195734198996858
+        ],
+        "response_over_inner_peak_change": [
+          1.6956912764081566,
+          0.12980081631573617,
+          0.12980077368416582
+        ],
+        "response_endpoint_change_over_stage119_endpoint": [
+          0.000012231382310669556,
+          0.000010604051051748927,
+          0.000010604156388115925
+        ],
+        "inner_endpoint_change_over_stage119_endpoint": [
+          0.0001342083914557774,
+          0.020409347441072333,
+          0.020409351175360878
+        ],
+        "compared_epochs": 2049,
+        "refined_peak_epochs": 4097,
+        "late_old_index": 1536,
+        "late_new_index": 3072,
+        "late_start_coordinate": 2.01476195636979,
+        "final_coordinate": 2.302585092994046
+      },
+      {
+        "model": "heavy",
+        "upper": 0.02,
+        "columns": [
+          "baseline",
+          "join1",
+          "join2"
+        ],
+        "radiation_relative_change": [
+          3.062900423334537e-7,
+          3.6406636756022066e-7,
+          3.6406647648241727e-7
+        ],
+        "gas_peak_relative_change": [
+          0.0005783413331292703,
+          0.007176490826708254,
+          0.007176488948303564
+        ],
+        "gas_late_relative_change": [
+          0.000034694214072989956,
+          0.000025129644583128294,
+          0.000025130593702386568
+        ],
+        "gas_endpoint_relative_change": [
+          0.0000247346917467051,
+          0.0000257152508536593,
+          0.000025716314687325723
+        ],
+        "gas_old_endpoint": [
+          -1.3106970648110259e-12,
+          1.1266847064373327e-16,
+          1.1266845668090582e-16
+        ],
+        "gas_new_endpoint": [
+          -1.3106646459250256e-12,
+          1.1267136801622583e-16,
+          1.1267135417290598e-16
+        ],
+        "gas_endpoint_difference": [
+          3.2418886000259896e-17,
+          2.8973724925622127e-21,
+          2.8974920001575806e-21
+        ],
+        "gas_endpoint_near_zero": [
+          false,
+          false,
+          false
+        ],
+        "gas_full_peak_denominator": [
+          1.3106646459250256e-12,
+          1.526759366044192e-16,
+          1.5267592498065816e-16
+        ],
+        "gas_late_peak_denominator": [
+          1.3106646459250256e-12,
+          1.2644676088762028e-16,
+          1.264467470396056e-16
+        ],
+        "gas_endpoint_denominator": [
+          1.3106646459250256e-12,
+          1.1267136801622583e-16,
+          1.1267135417290598e-16
+        ],
+        "gas_peak_absolute_difference": [
+          7.580115386096823e-16,
+          1.0956774585007053e-18,
+          1.0956770882957173e-18
+        ],
+        "gas_late_absolute_difference": [
+          4.547247980362242e-17,
+          3.1775621597937057e-21,
+          3.17768182484078e-21
+        ],
+        "gas_peak_amplitude_change_over_refined_peak": [
+          -0.0000247346917467051,
+          -0.000036082548799962476,
+          -0.000036081618565319783
+        ],
+        "gas_peak_difference_coordinate": [
+          1.1698436470997582,
+          1.1698436470997582,
+          1.1698436470997582
+        ],
+        "gas_late_difference_coordinate": [
+          2.286844765209907,
+          2.286844765209907,
+          2.286844765209907
+        ],
+        "gas_old_late_crossings": [
+          [],
+          [],
+          []
+        ],
+        "gas_new_late_crossings": [
+          [],
+          [],
+          []
+        ],
+        "endpoint_sign_preserved": [
+          true,
+          true,
+          true
+        ],
+        "response_over_inner_endpoint_change": [
+          0.1673237686039773,
+          0.0005843093543569122,
+          0.0005843333826906949
+        ],
+        "response_over_inner_peak_change": [
+          3.9123289826940537,
+          0.22096385259522264,
+          0.22096375047996963
+        ],
+        "response_endpoint_change_over_stage119_endpoint": [
+          0.00002473407995686173,
+          0.000025715912144791034,
+          0.0000257169760331742
+        ],
+        "inner_endpoint_change_over_stage119_endpoint": [
+          0.00014782167628200194,
+          0.044010782906417495,
+          0.044010793829294126
+        ],
+        "compared_epochs": 2049,
+        "refined_peak_epochs": 4097,
+        "late_old_index": 1536,
+        "late_new_index": 3072,
+        "late_start_coordinate": 2.01476195636979,
+        "final_coordinate": 2.302585092994046
+      },
+      {
+        "model": "cold",
+        "upper": 0.02,
+        "columns": [
+          "baseline",
+          "join1",
+          "join2"
+        ],
+        "radiation_relative_change": [
+          3.0583480924755407e-7,
+          3.638958315061523e-7,
+          3.6389590458885666e-7
+        ],
+        "gas_peak_relative_change": [
+          0.0005799434952287398,
+          0.007212594550109163,
+          0.007212591033014953
+        ],
+        "gas_late_relative_change": [
+          0.000034635208552241634,
+          0.00002586996554047634,
+          0.0000258704421846266
+        ],
+        "gas_endpoint_relative_change": [
+          0.000024690643163974887,
+          0.000026549939840327192,
+          0.000026550472781203142
+        ],
+        "gas_old_endpoint": [
+          -1.309227135095859e-12,
+          1.1271999329289431e-16,
+          1.1271997671834178e-16
+        ],
+        "gas_new_endpoint": [
+          -1.3091948102339673e-12,
+          1.127229860813934e-16,
+          1.1272296956647707e-16
+        ],
+        "gas_endpoint_difference": [
+          3.2324861891614705e-17,
+          2.992788499083034e-21,
+          2.9928481352911394e-21
+        ],
+        "gas_endpoint_near_zero": [
+          false,
+          false,
+          false
+        ],
+        "gas_full_peak_denominator": [
+          1.3091948102339673e-12,
+          1.5244907210227353e-16,
+          1.52449056947739e-16
+        ],
+        "gas_late_peak_denominator": [
+          1.3091948102339673e-12,
+          1.2646879227392394e-16,
+          1.2646877563531952e-16
+        ],
+        "gas_endpoint_denominator": [
+          1.3091948102339673e-12,
+          1.127229860813934e-16,
+          1.1272296956647707e-16
+        ],
+        "gas_peak_absolute_difference": [
+          7.592590141824137e-16,
+          1.0995533466140569e-18,
+          1.0995527011328482e-18
+        ],
+        "gas_late_absolute_difference": [
+          4.5344235287965873e-17,
+          3.271743298072073e-21,
+          3.2718031482340468e-21
+        ],
+        "gas_peak_amplitude_change_over_refined_peak": [
+          -0.000024690643163974887,
+          -0.00003553490178392234,
+          -0.00003553435800820627
+        ],
+        "gas_peak_difference_coordinate": [
+          1.1698436470997582,
+          1.1698436470997582,
+          1.1698436470997582
+        ],
+        "gas_late_difference_coordinate": [
+          2.286844765209907,
+          2.286844765209907,
+          2.286844765209907
+        ],
+        "gas_old_late_crossings": [
+          [],
+          [],
+          []
+        ],
+        "gas_new_late_crossings": [
+          [],
+          [],
+          []
+        ],
+        "endpoint_sign_preserved": [
+          true,
+          true,
+          true
+        ],
+        "response_over_inner_endpoint_change": [
+          0.16697877830075564,
+          0.000605487966963835,
+          0.0006055000842372356
+        ],
+        "response_over_inner_peak_change": [
+          3.9220629318420444,
+          0.22245685607707047,
+          0.22245674456664455
+        ],
+        "response_endpoint_change_over_stage119_endpoint": [
+          0.000024690033551166767,
+          0.00002655064475834825,
+          0.000026551177727524704
+        ],
+        "inner_endpoint_change_over_stage119_endpoint": [
+          0.00014786330216583598,
+          0.04384999571747738,
+          0.04384999840416525
+        ],
+        "compared_epochs": 2049,
+        "refined_peak_epochs": 4097,
+        "late_old_index": 1536,
+        "late_new_index": 3072,
+        "late_start_coordinate": 2.01476195636979,
+        "final_coordinate": 2.302585092994046
+      }
+    ],
+    "windows": [
+      {
+        "model": "heavy",
+        "radiation_window_difference_over_wide": [
+          0.06073875008692078,
+          0.026931858367684604,
+          0.02693185886113738
+        ],
+        "gas_endpoint_narrow_over_wide": [
+          0.3992815516143826,
+          0.2835887781102641,
+          0.2835887700083885
+        ]
+      },
+      {
+        "model": "cold",
+        "radiation_window_difference_over_wide": [
+          0.060649874550061905,
+          0.026919269748378334,
+          0.026919269507187694
+        ],
+        "gas_endpoint_narrow_over_wide": [
+          0.3990028677869677,
+          0.2834914481876775,
+          0.2834914345906256
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "state": "complete",
+  "time_utc": "2026-10-04T23:41:06.863691+00:00",
+  "script_sha256": "7b720b984e5d7e98687c3962b3981584968e1c0c2efaae24586b09cc35508659",
+  "checks": [
+    {
+      "name": "log_Laplace_derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "tail_amplitude_real",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "tail_amplitude_imaginary",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "current_quadrupole_constant",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "log_scale_has_no_linear_power_effect",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "kernel_constant_has_no_linear_power_effect",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "m1_current_tail_2pi",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "m2_mass_tail_4pi",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "shared_tail_multiplies_body_minus_reference_power",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "shared_tail_cancels_in_amplitude_ratio",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "shared_tail_zero_response_control",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geodesic_energy_derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "circular_energy_angular_momentum_identity",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "energy_Newtonian_limit",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "slope_first_PN",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "inverse_slope_first_PN",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "orbital_energy_balance",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "orbital_angular_momentum_balance",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "Newtonian_chirp_normalization",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "horizon_unit_normalized_amplitude",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "derived_horizon_power_over_Newtonian_x5",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "horizon_power_first_PN_16over3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "outgoing_normalization_cancels_horizon_amplitude",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "magnetic_chirp_relative_299over84",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "removed_absorption_chirp_relative_41over6",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "leading_total_axial_crossover",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "phase_prefactor_first_PN_and_tail",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "magnetic_phase_ratio_447over56_minus6pi",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "absorption_phase_ratio_1891over168_minus8pi",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "magnetic_phase_primitive",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "absorption_phase_primitive",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "magnetic_phase_leading_stage23_limit",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "general_linear_phase_variation",
+      "passed": true,
+      "residual": "0"
+    }
+  ],
+  "exact_checks": 33,
+  "tail_kernel_source": "Blanchet-Qusailah-Will2005 Eq4c, PDFpage3; retained GR input",
+  "amplitude_correction": "-2*I*M*omega*(-log(2*b) - log(omega) - EulerGamma + 7/6) + pi*M*omega",
+  "flux_tail_m1": "2*pi*x^(3/2)",
+  "flux_tail_m2": "4*pi*x^(3/2)",
+  "infinity_magnetic_PN_coefficients": [
+    "173/84",
+    "2*pi"
+  ],
+  "chirp_magnetic_PN_coefficients": [
+    "299/84",
+    "2*pi"
+  ],
+  "phase_density_magnetic_PN_coefficients": [
+    "447/56",
+    "-6*pi"
+  ],
+  "horizon_power_over_Newtonian": "x^5*(1+16*x/3+O(x^2))",
+  "phase_density_removed_absorption_coefficients": [
+    "1891/168",
+    "-8*pi"
+  ],
+  "geodesic_slope": "(1 - 6*x)/(1 - 3*x)**(3/2)",
+  "phase_magnetic_primitive_times_q": "5*beta*(149*x**(9/2)/84 + 2*x**(7/2)/7 - 6*pi*x**5/5)/96",
+  "phase_absorption_primitive_times_q": "9455*x**(7/2)/18816 + x**(5/2)/16 - 5*pi*x**4/16",
+  "damping_checks": [
+    {
+      "frequency": "0.03",
+      "scale": "2",
+      "relative_errors": [
+        0.0002361777595785188,
+        2.3616876244189084e-05,
+        2.3616786247052364e-06
+      ]
+    },
+    {
+      "frequency": "0.2",
+      "scale": "0.7",
+      "relative_errors": [
+        0.00018223710301720132,
+        1.8222810534656085e-05,
+        1.8222720536985356e-06
+      ]
+    }
+  ],
+  "direct_complex_integral_quadratures": [
+    {
+      "frequency": "0.03",
+      "scale": "2",
+      "damping_over_frequency": "0.5",
+      "relative_error": "2.6727666924923763890157685591977036746602122322407e-51"
+    },
+    {
+      "frequency": "0.03",
+      "scale": "2",
+      "damping_over_frequency": "1.0",
+      "relative_error": "6.5137237818695949923198488496834480668475266964187e-52"
+    },
+    {
+      "frequency": "0.2",
+      "scale": "0.7",
+      "damping_over_frequency": "0.5",
+      "relative_error": "2.6741932409766754820202009572330562977830211354172e-51"
+    },
+    {
+      "frequency": "0.2",
+      "scale": "0.7",
+      "damping_over_frequency": "1.0",
+      "relative_error": "8.4411060943196025227714620046660680747971861923338e-52"
+    }
+  ],
+  "new_body_fits": 0,
+  "finite_mass_ratio_claim": false,
+  "phase_scope": "Linear axial-channel contribution to Phi=2 orbital phase, leading q=mu/M, point reference through1.5PN; not full waveform.",
+  "point_PN_reference_source": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\pn-balance-20261004\\21-electric-tidal-PN-radiation-and-balance.md"
+}

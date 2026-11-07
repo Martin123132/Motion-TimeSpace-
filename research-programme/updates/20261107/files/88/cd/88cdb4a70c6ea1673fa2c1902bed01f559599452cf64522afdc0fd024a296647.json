@@ -1,0 +1,40 @@
+{
+  "state": "complete",
+  "script_sha256": "324bbd539ddff08d08fbb9985d9233163ff02749d3cc60c6f48cbb4ef9bca5d1",
+  "checks": [
+    {
+      "name": "static_master_Wronskian_minus_five_sixths",
+      "passed": true
+    },
+    {
+      "name": "flat_outgoing_Zerilli_equation",
+      "passed": true
+    },
+    {
+      "name": "normalized_static_decaying_limit",
+      "passed": true
+    },
+    {
+      "name": "leading_radiative_growing_piece",
+      "passed": true
+    },
+    {
+      "name": "mixing_radiation_coefficient",
+      "passed": true
+    },
+    {
+      "name": "inverse_response_radiation_coefficient",
+      "passed": true
+    },
+    {
+      "name": "response_imaginary_leading_fifth_power",
+      "passed": true
+    }
+  ],
+  "normalized_flat_outgoing_near_series": "-radius**4*sigma**6/144 + I*radius**3*sigma**5/45 + radius**2*sigma**4/24 + sigma**2/6 + radius**(-2)",
+  "leading_mixing": "Im(p/q)=(2/15)*sigma^5 + higher-order propagation corrections",
+  "leading_radiation_self_energy": "Im(Sigma_ret)=(2/5)*sigma^5",
+  "leading_response_loss": "Im(chi_ret)=(2/5)*lambda_static^2*sigma^5 + higher orders",
+  "schwarzschild_extension": "Formal fixed-M matched low-frequency limit M << r << 1/sigma, using the same static master Wronskian and asymptotic multipole normalization; numerical curved checks required.",
+  "limitation": "This is outgoing gravitational radiation, not matter heating. A constant-width pole extrapolated to zero frequency generally produces spurious lower odd powers; the non-pole response must cancel them."
+}

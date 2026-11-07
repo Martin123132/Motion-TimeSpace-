@@ -1,0 +1,17 @@
+D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\annular_moving_collar_sparse_20260914.py:14: FutureWarning: Input has data type int64, but the output has been cast to float64.  In the future, the output data type will match the input. To avoid this warning, set the `dtype` parameter to `None` to have the output dtype match the input, or set it to the desired output data type.
+  differences=diags([np.full(count-3,value) for value in [-1,3,-3,1]],
+{"stage": "reaction-24", "seconds": 71.65043699997477}
+Traceback (most recent call last):
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\integrate_annular_C0_sensitivity_20260930.py", line 125, in <module>
+    main()
+    ~~~~^^
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\integrate_annular_C0_sensitivity_20260930.py", line 94, in main
+    result = integrate_reaction(evaluator, uncertainty['acceleration_change'], response(uncertainty),
+                                                                               ~~~~~~~~^^^^^^^^^^^^^
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\integrate_annular_C0_sensitivity_20260930.py", line 69, in response
+    solver, solution = reconstructed_solver(archive)
+                       ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\annular_candidate_energy_current_20260921.py", line 58, in reconstructed_solver
+    solution = {key:archive[key] for key in ['state','rhs_coefficients','primitives','left']}
+                    ~~~~~~~^^^^^
+KeyError: 'state'

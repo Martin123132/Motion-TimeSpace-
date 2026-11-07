@@ -1,0 +1,50 @@
+{
+  "accepted_scope": "Source-sector milestone: evolving fixed-expansion emitting density tangent; leading-heat isotropic common-temperature derivative; source-frame pairing; finite-shift pair derivative.",
+  "full_finite_wavenumber_wave_evolution": false,
+  "full_stage80_original_wave_target_completed": false,
+  "all_requested_numerical_gates_closed": true,
+  "numerical_gate_scope": "Only the named source-sector tests in this review; not an angular-source or CMB-transfer validation.",
+  "retained_unaccepted_accuracy_trials": [
+    "results/density-basis-comparison/status.json"
+  ],
+  "inherited_backgrounds_modified": false,
+  "new_empirical_fit": false,
+  "density_jacobian_max_relative_error_at_step_0001": 1.2587883208041857e-08,
+  "density_negative_control_relative_errors": [
+    0.01059796088397329,
+    0.01059604958307525
+  ],
+  "time_refinement_max": 4.5027478656403746e-07,
+  "spectral_refinement_max": 0.0019326286517129256,
+  "failed_previous_spectral_refinement_max": 0.002201818360916863,
+  "final_refined_density_results": [
+    {
+      "model": "heavy",
+      "fine": "tangent104-6400",
+      "coarse": "tangent-6400",
+      "final_energy_fraction_response": -1.325246608537338e-09,
+      "final_number_fraction_response": -7.897977531538198e-11,
+      "final_gas_temperature_fraction_response": -8.457300105732017e-10
+    },
+    {
+      "model": "cold",
+      "fine": "tangent104-6400",
+      "coarse": "tangent-6400",
+      "final_energy_fraction_response": -1.3252466085371982e-09,
+      "final_number_fraction_response": -7.88901126603347e-11,
+      "final_gas_temperature_fraction_response": -8.457746415071029e-10
+    }
+  ],
+  "emitted_wave_source_thermal_check_max": 2.348786610006577e-09,
+  "frame_and_gas_check_max": 9.64425940506815e-09,
+  "approximation_scope": [
+    "Retained Stage79 leading-heat emission model, finite gas heat capacity; fixed reference Hubble history for the density derivative.",
+    "Numerical finite-difference agreement is not a physical-model accuracy estimate.",
+    "Time refinement tested at96 functions; basis refinement96-to104 separately. No exhaustive joint refinement or independent new event/emission-quadrature sweep.",
+    "First saved nonzero density-tangent time is ln(10)/80. The very fast initial electron relaxation layer is not separately resolved.",
+    "Common-temperature DC derivative is determined to retained heat order; arbitrary angular/nonthermal relativistic DC derivative is not inferred from the Planck coefficient.",
+    "Source four-force pairing is scoped to the retained collision model, not a derivation of the entire parent matter action."
+  ],
+  "next_target": "Construct emitting angular Compton bank using the new analytic pair coefficients, insert the tested density/gas source and common-temperature column, derive or control the angular DC projection, then evolve the coupled finite-k mode.",
+  "conclusion": "A concrete missing emitting density/gas coupling is derived and independently checked in both parents; the source response now has a tested route into the existing spatial hierarchy."
+}

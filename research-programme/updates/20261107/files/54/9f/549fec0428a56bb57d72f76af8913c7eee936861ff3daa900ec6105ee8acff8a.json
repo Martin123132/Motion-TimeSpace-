@@ -1,0 +1,44 @@
+{
+  "stage": 114,
+  "accepted_scope": "Exact bulk/join decomposition and orthogonal window-sensitivity budget;matched response preserved and component time-refinement gate reached. The common full-frequency overlap remains the next derivation,not a fitted closure.",
+  "scientific_checks": 1431,
+  "passing_scientific_checks": 1417,
+  "expected_failed_by_packet": {
+    "comparison": [
+      "Component refinement versus NET:steps512to1024:heavy:0.04",
+      "Component refinement versus NET:steps512to1024:heavy:0.02",
+      "Component refinement versus NET:steps512to1024:cold:0.04",
+      "Component refinement versus NET:steps512to1024:cold:0.02"
+    ],
+    "response-o8-q32-n4096": [
+      "gas:heavy-m40"
+    ],
+    "response-o8-q32-n8192": [
+      "gas:cold-m40"
+    ],
+    "time-control-n2048": [
+      "Component refinement versus NET:heavy-m40",
+      "Component refinement versus NET:heavy-m20",
+      "Component refinement versus NET:cold-m40",
+      "Component refinement versus NET:cold-m20"
+    ],
+    "time-control-n4096": [
+      "Component refinement versus NET:heavy-m40",
+      "Component refinement versus NET:heavy-m20",
+      "Component refinement versus NET:cold-m40",
+      "Component refinement versus NET:cold-m20"
+    ]
+  },
+  "authoritative_response_packet": "response-o8-q32-n8192",
+  "integration_steps": 8192,
+  "saved_snapshots": 129,
+  "original_failed_time_gates_retained": true,
+  "original_gas_relative_gate_relaxed": false,
+  "parent_gas_relative_flags_not_promoted": true,
+  "bulk_is_negative_semidefinite_on_h": true,
+  "dissipation_clarification_file": "DISSIPATION-CLARIFICATION.md",
+  "global_physical_feedback_amplitude_settled": false,
+  "full_parent_history_rerun": false,
+  "next_target": "Derive a common inner/outer overlap spectrum from the actual collision equations on the fixed shared band, keeping finite-Planck/recoil and emission remainders explicit. Start from the contraction bound ||P_perp[(W2-W1)(Phi_inner-Phi_overlap)]|| <= ||Phi_inner-Phi_overlap|| on the overlap band,then compute the overlap from shared asymptotic equations and saved drivers,not from fitting a window or minimizing the final answer. Reuse Stage113 physical events and Stage114 histories. Test BOTH baseline and corrections and both fixed windows;retain the joining term and paired gas exchange. Do not rerun full parent histories or make observational claims.",
+  "conclusion": "The bulk/join split preserves the previous small feedback. About91.6% of the two-window difference in squared unfiltered spectral norm lies in the unresolved shape,with about8.4% in the resolved response. Bulk,join,and represented-term contributions are large and cancelling;dropping the join would corrupt the equation. Refinement reaches the original component-vs-NET gate at8192 steps;coarse failures and two raw gas-relative failures are retained."
+}

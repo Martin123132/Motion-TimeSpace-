@@ -1,0 +1,575 @@
+{
+  "version": "centered-history-science-v3-serialization-only",
+  "execution_authority": "none; separate exact-hash attempt approval mandatory",
+  "preparation": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-history-20261027\\experiment.json",
+  "preparation_sha256": "2f70d99cf361c501fb7d0ea3fae092e82269d1790301c4c5fbd9314f0179b195",
+  "input_map": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-history-20261027\\input-map.json",
+  "input_map_sha256": "3375546d009ecd858b2d9a43d4d4a052e7b5a448732d30e8e16ae826f7105e00",
+  "code_hashes": {
+    "history_run.py": "0fe252c7bbe1c2b786a330ea74db83ed09ebf268d288edd4e7389d13efeee768",
+    "history_policy.py": "3fee5cde42735925daedf9fd6a653e4d747901d7da6304078630685f314ee49c",
+    "history_step.py": "9333d8f6895f9aaccad4462b0c8a15bf6b740c8c775b4f8b3211b9bbed1beeaf",
+    "history_metrics.py": "34d4736a3d11c7aeb4e08ce4e685410fe42f32c02689ad6044cf272377979632",
+    "io_v2.py": "0930d24d16452272f663ddf93ce2412e63df8885331ce9a13a595e6c49fe6e24",
+    "control_tests.py": "929197690737b0d75c6c1df8931e08a43dc974a76304779e3ab5259d19d602c0",
+    "SCIENCE-EXECUTION-CONTRACT.md": "78963daa5999bd78500e1ab17e5c912ee9609ec70a7be48f0c6f8f76c2bd3002",
+    "serialization_safety.py": "1aa6d572bba76f9c05f0b9bfe2e5256737daeac6975733ccf2466002325ba2ad",
+    "REPAIR-AUTHORIZATION.md": "fb9077afec51495ee42be0eda24f19e26853b039386a8b2f0c93c346361e78e3",
+    "JSON-SERIALIZATION-REPAIR.md": "98135a4102d4f8a1c53ffdaa4bac51a91b7a684397092d00e7ed568afa282a8f"
+  },
+  "execution_grids": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-history-20261027\\execution-v2\\execution-grids.npz",
+  "execution_grids_sha256": "0e5654fbfd8202c7cd7e595179678ff1e5db7550e49904bfd0d5e46702d4e612",
+  "references": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-history-20261027\\execution-v2\\all-reference-selections.json",
+  "references_sha256": "f4822a755d4704f64176063e8e0a7b2844d41473edd120a45823642863d45ab9",
+  "cases": [
+    {
+      "id": "heavy-bank-s1",
+      "model": "heavy",
+      "kind": "bank",
+      "subdivision": 1,
+      "driver_history": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\full\\heavy\\bank\\s1\\history.npz",
+      "driver_history_sha256": "978696275c35e05f570a30a260faefeaf7d4a19c4fa574f3e06b1e40f9062671",
+      "driver_complete": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\full\\heavy\\bank\\s1\\complete.json",
+      "driver_chain": "7eabbabf3a13e8b8c48e9ca0d569a1a2b9c8af547fc09d58275babdafbf67f4c",
+      "driver_row_rule": "coarse_cell*s .. (coarse_cell+1)*s inclusive; no interpolation",
+      "seed_packet": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-bank-s1-step1.npz",
+      "seed_packet_sha256": "cf7de20aaaa3ddd9c253a8026f5b666ca1a730cf9a2ce807f1b955ea851146e3",
+      "seed_metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-bank-s1-step1.json",
+      "seed_metadata_sha256": "0d6f2b2c8fcfe1adb9eb507bcb4a64a557b9667cb1d910b571e6b8e65709f407",
+      "seed_coordinate": 2.003698754555795,
+      "seed_last_completed_cell": 0,
+      "seed_tail_sha256": "b8ac05ba7b01e5eda3c9b88f108fb835aaaa76b4e1d459f946c8b8fa9c0f2759",
+      "tail_dimension": 481,
+      "photon_dimension": 96,
+      "startup_packets": [
+        {
+          "label": "heavy-bank-s1-step1",
+          "state": "complete",
+          "npz": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-bank-s1-step1.npz",
+          "sha256": "cf7de20aaaa3ddd9c253a8026f5b666ca1a730cf9a2ce807f1b955ea851146e3",
+          "metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-bank-s1-step1.json",
+          "metadata_sha256": "0d6f2b2c8fcfe1adb9eb507bcb4a64a557b9667cb1d910b571e6b8e65709f407"
+        }
+      ],
+      "snapshot": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\prepared-heavy-20261027T201608002013Z-p29900.npz"
+    },
+    {
+      "id": "heavy-candidate-s1",
+      "model": "heavy",
+      "kind": "candidate",
+      "subdivision": 1,
+      "driver_history": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\full\\heavy\\candidate\\s1\\history.npz",
+      "driver_history_sha256": "ebbb475268c558280620677801f9f5cb8b4202f63c39ad4248011a61819c1ddc",
+      "driver_complete": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\full\\heavy\\candidate\\s1\\complete.json",
+      "driver_chain": "b469d485fcc4dbba31fef747f2660d644c3cb681d11eb1425aa6c716756a0d66",
+      "driver_row_rule": "coarse_cell*s .. (coarse_cell+1)*s inclusive; no interpolation",
+      "seed_packet": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-candidate-s1-step1.npz",
+      "seed_packet_sha256": "e84edb0f689e3fcaae92bf9cca43d200c71164860d92c8bb2a35c6f5a4b085e0",
+      "seed_metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-candidate-s1-step1.json",
+      "seed_metadata_sha256": "1fc6c4f83adbd3a687d3fa8682b0e4f67980cbd7c34e40515f96df4ca70b1e34",
+      "seed_coordinate": 2.003698754555795,
+      "seed_last_completed_cell": 0,
+      "seed_tail_sha256": "8c98181debd2eaeb8dbca25aba8f5f4d014485dd64275c9cfb579baf9ca829d7",
+      "tail_dimension": 481,
+      "photon_dimension": 96,
+      "startup_packets": [
+        {
+          "label": "heavy-candidate-s1-step1",
+          "state": "complete",
+          "npz": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-candidate-s1-step1.npz",
+          "sha256": "e84edb0f689e3fcaae92bf9cca43d200c71164860d92c8bb2a35c6f5a4b085e0",
+          "metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-candidate-s1-step1.json",
+          "metadata_sha256": "1fc6c4f83adbd3a687d3fa8682b0e4f67980cbd7c34e40515f96df4ca70b1e34"
+        }
+      ],
+      "snapshot": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\prepared-heavy-20261027T201608002013Z-p29900.npz"
+    },
+    {
+      "id": "heavy-bank-s2",
+      "model": "heavy",
+      "kind": "bank",
+      "subdivision": 2,
+      "driver_history": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\full\\heavy\\bank\\s2\\history.npz",
+      "driver_history_sha256": "89f42d177afa0b2d8292c9e7a94e68bf4ec5ad27a7ed0b744bbc4bf9d425f5ad",
+      "driver_complete": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\full\\heavy\\bank\\s2\\complete.json",
+      "driver_chain": "d721dcf95d485dc3964bc5bcea16d7f65186655ef3a836f1cc84d1764a53a83e",
+      "driver_row_rule": "coarse_cell*s .. (coarse_cell+1)*s inclusive; no interpolation",
+      "seed_packet": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-bank-s2-step2.npz",
+      "seed_packet_sha256": "81e91718f1dcb8befb12c97f9e2894ed344846dd4d5d80b487799d319de87c22",
+      "seed_metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-bank-s2-step2.json",
+      "seed_metadata_sha256": "57fa686502f9bfeaecb99f70af1b7ee4430c6e21f62e5e7479fb737d7f004c65",
+      "seed_coordinate": 2.003698754555795,
+      "seed_last_completed_cell": 0,
+      "seed_tail_sha256": "e90ebd4082ef1d99a879bb2c361734e0ca58db85b27cb7f87cbb0a86e0dff707",
+      "tail_dimension": 481,
+      "photon_dimension": 96,
+      "startup_packets": [
+        {
+          "label": "heavy-bank-s2-step1",
+          "state": "complete",
+          "npz": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-bank-s2-step1.npz",
+          "sha256": "1a31e2c27d0cb8b1510345821f0e598c9d6dbb296556c51a840a6817c4de85bc",
+          "metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-bank-s2-step1.json",
+          "metadata_sha256": "d0f597c9d8c93b27316dc5171d0813a441c3cc06fc148c5f7cceb6c35dda9347"
+        },
+        {
+          "label": "heavy-bank-s2-step2",
+          "state": "complete",
+          "npz": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-bank-s2-step2.npz",
+          "sha256": "81e91718f1dcb8befb12c97f9e2894ed344846dd4d5d80b487799d319de87c22",
+          "metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-bank-s2-step2.json",
+          "metadata_sha256": "57fa686502f9bfeaecb99f70af1b7ee4430c6e21f62e5e7479fb737d7f004c65"
+        }
+      ],
+      "snapshot": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\prepared-heavy-20261027T201608002013Z-p29900.npz"
+    },
+    {
+      "id": "heavy-candidate-s2",
+      "model": "heavy",
+      "kind": "candidate",
+      "subdivision": 2,
+      "driver_history": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\full\\heavy\\candidate\\s2\\history.npz",
+      "driver_history_sha256": "46485b3ecc7108267a42378962b0df460f3f2d062a3a63786f0af901ae481f42",
+      "driver_complete": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\full\\heavy\\candidate\\s2\\complete.json",
+      "driver_chain": "4ff450e3c16f7e08780af079677ebda0dbb26c75ef42dd28b1868c8ffe0b5848",
+      "driver_row_rule": "coarse_cell*s .. (coarse_cell+1)*s inclusive; no interpolation",
+      "seed_packet": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-candidate-s2-step2.npz",
+      "seed_packet_sha256": "c8248dc633402493a20d8918d341c364c03b19b145d8d349271f153b2bf73857",
+      "seed_metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-candidate-s2-step2.json",
+      "seed_metadata_sha256": "401d8d0a836e677c390a5d6f0aceffaf542abbcb43a620995f8b364e3904a0e0",
+      "seed_coordinate": 2.003698754555795,
+      "seed_last_completed_cell": 0,
+      "seed_tail_sha256": "1961f735919f48297fb5956098b75380613d4689e8d2344aa2e1f231bedb2228",
+      "tail_dimension": 481,
+      "photon_dimension": 96,
+      "startup_packets": [
+        {
+          "label": "heavy-candidate-s2-step1",
+          "state": "complete",
+          "npz": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-candidate-s2-step1.npz",
+          "sha256": "fa7999016b54e8dd491b0d98566be54c2f572b039b30ebe0ba6f814614508033",
+          "metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-candidate-s2-step1.json",
+          "metadata_sha256": "b3cdcf586857348a4431966a0f5903be71b3528a827d9096306b16ef4d12d30e"
+        },
+        {
+          "label": "heavy-candidate-s2-step2",
+          "state": "complete",
+          "npz": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-candidate-s2-step2.npz",
+          "sha256": "c8248dc633402493a20d8918d341c364c03b19b145d8d349271f153b2bf73857",
+          "metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-candidate-s2-step2.json",
+          "metadata_sha256": "401d8d0a836e677c390a5d6f0aceffaf542abbcb43a620995f8b364e3904a0e0"
+        }
+      ],
+      "snapshot": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\prepared-heavy-20261027T201608002013Z-p29900.npz"
+    },
+    {
+      "id": "heavy-bank-s4",
+      "model": "heavy",
+      "kind": "bank",
+      "subdivision": 4,
+      "driver_history": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\full\\heavy\\bank\\s4\\history.npz",
+      "driver_history_sha256": "3e9ac61a54841d31c14093fdfb245f59bcc0bc7917f63cb09b547f9278358b17",
+      "driver_complete": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\full\\heavy\\bank\\s4\\complete.json",
+      "driver_chain": "1480c41d1e883854b383db8ac4b9a0eb91793bc2fe0c833384d8037f0834f90f",
+      "driver_row_rule": "coarse_cell*s .. (coarse_cell+1)*s inclusive; no interpolation",
+      "seed_packet": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-bank-s4-step4.npz",
+      "seed_packet_sha256": "bdd6a8dc186fef752a37eb0facd3785b7a8793427c12d8651576a0a9fa604055",
+      "seed_metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-bank-s4-step4.json",
+      "seed_metadata_sha256": "20f9e6d29c2f78614dc13162b61a9a6b207e0f5e4ae8a0f1b2dee435a4c1ac7b",
+      "seed_coordinate": 2.003698754555795,
+      "seed_last_completed_cell": 0,
+      "seed_tail_sha256": "1a1cdad33508d8efac561d28d124f49edf1aed9b2a19b24b56b1a07b033f159c",
+      "tail_dimension": 481,
+      "photon_dimension": 96,
+      "startup_packets": [
+        {
+          "label": "heavy-bank-s4-step1",
+          "state": "complete",
+          "npz": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-bank-s4-step1.npz",
+          "sha256": "8a890ccf73478aba7bf250262ef14ce5d9dbb2b3d74b04562f8ea0cb67714dc1",
+          "metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-bank-s4-step1.json",
+          "metadata_sha256": "814bd41e7ff5ecfe60ebc215039728c1b1697c1e9ab2e33f949f4d0485e94dff"
+        },
+        {
+          "label": "heavy-bank-s4-step2",
+          "state": "complete",
+          "npz": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-bank-s4-step2.npz",
+          "sha256": "515a70ad43590ea3e950b59c5974a0cf1d00d53c9cded19153198fcb3203701b",
+          "metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-bank-s4-step2.json",
+          "metadata_sha256": "a83926aad2ecdab70b50434eab784487dd757dc0a6850921aceb1a7cf5f90fa5"
+        },
+        {
+          "label": "heavy-bank-s4-step3",
+          "state": "complete",
+          "npz": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-bank-s4-step3.npz",
+          "sha256": "1d8284359de5ac3fcf474f420ca3f01f03abb7d0919c5b2df33238796dc2e379",
+          "metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-bank-s4-step3.json",
+          "metadata_sha256": "e7407479df39be759a2856239c4bb6fea9cabeaca81a2d20e2572da070660e7c"
+        },
+        {
+          "label": "heavy-bank-s4-step4",
+          "state": "complete",
+          "npz": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-bank-s4-step4.npz",
+          "sha256": "bdd6a8dc186fef752a37eb0facd3785b7a8793427c12d8651576a0a9fa604055",
+          "metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-bank-s4-step4.json",
+          "metadata_sha256": "20f9e6d29c2f78614dc13162b61a9a6b207e0f5e4ae8a0f1b2dee435a4c1ac7b"
+        }
+      ],
+      "snapshot": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\prepared-heavy-20261027T201608002013Z-p29900.npz"
+    },
+    {
+      "id": "heavy-candidate-s4",
+      "model": "heavy",
+      "kind": "candidate",
+      "subdivision": 4,
+      "driver_history": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\full\\heavy\\candidate\\s4\\history.npz",
+      "driver_history_sha256": "98ee9fcfd8b4e1cac1620bd8c6f6f91e279410c1d901203f7258f0e5115ae313",
+      "driver_complete": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\full\\heavy\\candidate\\s4\\complete.json",
+      "driver_chain": "1ab0727196d7f72e241d77a4ba3719c979ecb02bd2030ca3cf36ca0538a087d6",
+      "driver_row_rule": "coarse_cell*s .. (coarse_cell+1)*s inclusive; no interpolation",
+      "seed_packet": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-candidate-s4-step4.npz",
+      "seed_packet_sha256": "a1e54dc013821dfb0a19c72e4187822d21e0f497dffe6344d222582e7a395856",
+      "seed_metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-candidate-s4-step4.json",
+      "seed_metadata_sha256": "3c353434ad9c0b0f056286e9f1cb3b1e064396360aec091ba8757bbaa598d210",
+      "seed_coordinate": 2.003698754555795,
+      "seed_last_completed_cell": 0,
+      "seed_tail_sha256": "d13772750051627d6d91aedf29e94aa77f8695a97f60c2f54d1aba4de8f52c80",
+      "tail_dimension": 481,
+      "photon_dimension": 96,
+      "startup_packets": [
+        {
+          "label": "heavy-candidate-s4-step1",
+          "state": "complete",
+          "npz": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-candidate-s4-step1.npz",
+          "sha256": "b90df85852c8be25edf6c001866b8cba3351122c81a3310017d264ce37569cc3",
+          "metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-candidate-s4-step1.json",
+          "metadata_sha256": "4713bdefad33313c4fc39e1b93dc41bb7e870efa212a0f78e105fee3c09ad70d"
+        },
+        {
+          "label": "heavy-candidate-s4-step2",
+          "state": "complete",
+          "npz": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-candidate-s4-step2.npz",
+          "sha256": "8c86b497dc45faa84d56147c585295cdd072e8833ce3ec66f8f5e07c1c0afd5a",
+          "metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-candidate-s4-step2.json",
+          "metadata_sha256": "4aa278dc0631ff7b5c2e55925c71f3fb50b7a51b4fc929bbec76ccf15bb0d351"
+        },
+        {
+          "label": "heavy-candidate-s4-step3",
+          "state": "complete",
+          "npz": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-candidate-s4-step3.npz",
+          "sha256": "91f4b456ecc09c6601a5ee4c8d4117ee4e040d7d485f70a554c905fc4394aa51",
+          "metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-candidate-s4-step3.json",
+          "metadata_sha256": "3bdf24240b26dc921756a58bd95da7faa5f544f5c485f30489500972e728f7fc"
+        },
+        {
+          "label": "heavy-candidate-s4-step4",
+          "state": "complete",
+          "npz": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-candidate-s4-step4.npz",
+          "sha256": "a1e54dc013821dfb0a19c72e4187822d21e0f497dffe6344d222582e7a395856",
+          "metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\heavy-candidate-s4-step4.json",
+          "metadata_sha256": "3c353434ad9c0b0f056286e9f1cb3b1e064396360aec091ba8757bbaa598d210"
+        }
+      ],
+      "snapshot": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\prepared-heavy-20261027T201608002013Z-p29900.npz"
+    },
+    {
+      "id": "cold-bank-s1",
+      "model": "cold",
+      "kind": "bank",
+      "subdivision": 1,
+      "driver_history": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\full\\cold\\bank\\s1\\history.npz",
+      "driver_history_sha256": "3b7985108c1d74d56669328d6c7969dfabde515fdf6a3999441c46bd3c0ee5a1",
+      "driver_complete": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\full\\cold\\bank\\s1\\complete.json",
+      "driver_chain": "b6cfcb325e3d5a28ed82f9ae367cd6acf4cda2e2d63674d425ebb640e4d23d06",
+      "driver_row_rule": "coarse_cell*s .. (coarse_cell+1)*s inclusive; no interpolation",
+      "seed_packet": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-bank-s1-step1.npz",
+      "seed_packet_sha256": "84b2a0d5db187c73c857d52e6e10efef0449e7b301a8650208e10173ce57a120",
+      "seed_metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-bank-s1-step1.json",
+      "seed_metadata_sha256": "ecc6f13a536d7a51cd3622ad39b55122664b31974b0f47564790559709ca9167",
+      "seed_coordinate": 2.003698754555795,
+      "seed_last_completed_cell": 0,
+      "seed_tail_sha256": "a15d10b71d0271011596fc654d6ef9adeec2d2ec40636bb4c5b67ee504e13ab2",
+      "tail_dimension": 481,
+      "photon_dimension": 96,
+      "startup_packets": [
+        {
+          "label": "cold-bank-s1-step1",
+          "state": "complete",
+          "npz": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-bank-s1-step1.npz",
+          "sha256": "84b2a0d5db187c73c857d52e6e10efef0449e7b301a8650208e10173ce57a120",
+          "metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-bank-s1-step1.json",
+          "metadata_sha256": "ecc6f13a536d7a51cd3622ad39b55122664b31974b0f47564790559709ca9167"
+        }
+      ],
+      "snapshot": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\prepared-cold-20261027T201608002013Z-p29900.npz"
+    },
+    {
+      "id": "cold-candidate-s1",
+      "model": "cold",
+      "kind": "candidate",
+      "subdivision": 1,
+      "driver_history": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\full\\cold\\candidate\\s1\\history.npz",
+      "driver_history_sha256": "308c69861f14f0890e7c029c5196b01996edb037677489aa95b26ee92d55fc02",
+      "driver_complete": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\full\\cold\\candidate\\s1\\complete.json",
+      "driver_chain": "a716d0fae163defe1f2b7647522628f4e00f8e567273ccf37e79567546b42403",
+      "driver_row_rule": "coarse_cell*s .. (coarse_cell+1)*s inclusive; no interpolation",
+      "seed_packet": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-candidate-s1-step1.npz",
+      "seed_packet_sha256": "8823dc795f154e32b7313895fc987011c7639aa671b2df20458eec1b7a2aa023",
+      "seed_metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-candidate-s1-step1.json",
+      "seed_metadata_sha256": "ef33bbc0969b8bf047b9c70c537141bebfb523dc29164a6f5669a2b00be1ea71",
+      "seed_coordinate": 2.003698754555795,
+      "seed_last_completed_cell": 0,
+      "seed_tail_sha256": "f8db7949848bad7b621d675ab9ed36d898f92759d341d279c7383483d3f7f859",
+      "tail_dimension": 481,
+      "photon_dimension": 96,
+      "startup_packets": [
+        {
+          "label": "cold-candidate-s1-step1",
+          "state": "complete",
+          "npz": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-candidate-s1-step1.npz",
+          "sha256": "8823dc795f154e32b7313895fc987011c7639aa671b2df20458eec1b7a2aa023",
+          "metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-candidate-s1-step1.json",
+          "metadata_sha256": "ef33bbc0969b8bf047b9c70c537141bebfb523dc29164a6f5669a2b00be1ea71"
+        }
+      ],
+      "snapshot": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\prepared-cold-20261027T201608002013Z-p29900.npz"
+    },
+    {
+      "id": "cold-bank-s2",
+      "model": "cold",
+      "kind": "bank",
+      "subdivision": 2,
+      "driver_history": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\full\\cold\\bank\\s2\\history.npz",
+      "driver_history_sha256": "1324d5b3a51211811ce747aec970d997d8e027199495641158d9993eb93d079f",
+      "driver_complete": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\full\\cold\\bank\\s2\\complete.json",
+      "driver_chain": "6beda0ca830926f6ec3fe28fc3e06d3b96c75454f3616598bc821617d0ee4c86",
+      "driver_row_rule": "coarse_cell*s .. (coarse_cell+1)*s inclusive; no interpolation",
+      "seed_packet": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-bank-s2-step2.npz",
+      "seed_packet_sha256": "632722df8a15f2b585b8bc6240b5150891fcef611b87cf928d91d09fe7d6b2e2",
+      "seed_metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-bank-s2-step2.json",
+      "seed_metadata_sha256": "d2cea4e820b19f7a2a470891620a44fa12f9df3202e01fb13a2ed3d8e6d2cdc6",
+      "seed_coordinate": 2.003698754555795,
+      "seed_last_completed_cell": 0,
+      "seed_tail_sha256": "b3280d1d30af33e607d890400dc7ea9c9dc2dbcfc90a7b12567ccbec0b2afe72",
+      "tail_dimension": 481,
+      "photon_dimension": 96,
+      "startup_packets": [
+        {
+          "label": "cold-bank-s2-step1",
+          "state": "complete",
+          "npz": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-bank-s2-step1.npz",
+          "sha256": "cc188b97e07707ece491c6c92f76f3812bcfbd2d9d14b1598b02add94106c128",
+          "metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-bank-s2-step1.json",
+          "metadata_sha256": "20399d948dc8f603d65fdc5fcffe7806917d8d529726c1b9a166b03f86a489ea"
+        },
+        {
+          "label": "cold-bank-s2-step2",
+          "state": "complete",
+          "npz": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-bank-s2-step2.npz",
+          "sha256": "632722df8a15f2b585b8bc6240b5150891fcef611b87cf928d91d09fe7d6b2e2",
+          "metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-bank-s2-step2.json",
+          "metadata_sha256": "d2cea4e820b19f7a2a470891620a44fa12f9df3202e01fb13a2ed3d8e6d2cdc6"
+        }
+      ],
+      "snapshot": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\prepared-cold-20261027T201608002013Z-p29900.npz"
+    },
+    {
+      "id": "cold-candidate-s2",
+      "model": "cold",
+      "kind": "candidate",
+      "subdivision": 2,
+      "driver_history": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\full\\cold\\candidate\\s2\\history.npz",
+      "driver_history_sha256": "ef0d88ee2e61d9e191ab92293c32d8668611fa1f7cd421a679a46f0b94b032cc",
+      "driver_complete": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\full\\cold\\candidate\\s2\\complete.json",
+      "driver_chain": "f8f290e7d114aaf200704a450fd771e55b6c115a5621464daa75b13e1a35de92",
+      "driver_row_rule": "coarse_cell*s .. (coarse_cell+1)*s inclusive; no interpolation",
+      "seed_packet": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-candidate-s2-step2.npz",
+      "seed_packet_sha256": "48f00426ce264ebed098249b13e94a66a2bff3f598a78f0629642dd0fd18c684",
+      "seed_metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-candidate-s2-step2.json",
+      "seed_metadata_sha256": "6c3ff5544a320593ef29719a9b1e31b37ed5a407b05d18022c896a80ef2bd311",
+      "seed_coordinate": 2.003698754555795,
+      "seed_last_completed_cell": 0,
+      "seed_tail_sha256": "99c20cca42a7f3cc7f2c1e15310d39ce4e6726b811d1f3cfbe82e2431d0dccf1",
+      "tail_dimension": 481,
+      "photon_dimension": 96,
+      "startup_packets": [
+        {
+          "label": "cold-candidate-s2-step1",
+          "state": "complete",
+          "npz": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-candidate-s2-step1.npz",
+          "sha256": "c787cf9d4bafd772dc602d11a86059fbc4a863b2e1db1c8fc41efe86eb359e0e",
+          "metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-candidate-s2-step1.json",
+          "metadata_sha256": "f4a5019ca6c3128090f8b5cc2b8a182e601715aee48a0f1f559ecdd9788aedfe"
+        },
+        {
+          "label": "cold-candidate-s2-step2",
+          "state": "complete",
+          "npz": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-candidate-s2-step2.npz",
+          "sha256": "48f00426ce264ebed098249b13e94a66a2bff3f598a78f0629642dd0fd18c684",
+          "metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-candidate-s2-step2.json",
+          "metadata_sha256": "6c3ff5544a320593ef29719a9b1e31b37ed5a407b05d18022c896a80ef2bd311"
+        }
+      ],
+      "snapshot": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\prepared-cold-20261027T201608002013Z-p29900.npz"
+    },
+    {
+      "id": "cold-bank-s4",
+      "model": "cold",
+      "kind": "bank",
+      "subdivision": 4,
+      "driver_history": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\full\\cold\\bank\\s4\\history.npz",
+      "driver_history_sha256": "0562cf41fa85ff350940a15bd8a41ef421f9c4ee1e6dd4c5804aed7e7dbaedaf",
+      "driver_complete": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\full\\cold\\bank\\s4\\complete.json",
+      "driver_chain": "70052da891470bb53f3310c64f29bdd7af49f85b938c33f233b747a447d123a8",
+      "driver_row_rule": "coarse_cell*s .. (coarse_cell+1)*s inclusive; no interpolation",
+      "seed_packet": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-bank-s4-step4.npz",
+      "seed_packet_sha256": "686d124ffd7a8c61b981cdf9f1ea3c5362b4574e1ac5fd42d2da81775d50579b",
+      "seed_metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-bank-s4-step4.json",
+      "seed_metadata_sha256": "f458e5e24b5d936b460a912472e7f987d49c9cf6e7cdd23a44e4352da0edb221",
+      "seed_coordinate": 2.003698754555795,
+      "seed_last_completed_cell": 0,
+      "seed_tail_sha256": "a3c8baed6db66c2bffea40cd747b879fa5bdba9efca6f068043786dab600ea60",
+      "tail_dimension": 481,
+      "photon_dimension": 96,
+      "startup_packets": [
+        {
+          "label": "cold-bank-s4-step1",
+          "state": "complete",
+          "npz": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-bank-s4-step1.npz",
+          "sha256": "53f21c6eb7c72e1218898028cdb4d53639357e621e7b5a9b99150fdbe488842e",
+          "metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-bank-s4-step1.json",
+          "metadata_sha256": "b4b5dd4d5a964209e319654ba0f8a4aa0fc6956953eef6c4be78e05c48dae409"
+        },
+        {
+          "label": "cold-bank-s4-step2",
+          "state": "complete",
+          "npz": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-bank-s4-step2.npz",
+          "sha256": "2dd70aac1970e5d4c9438561cd59c8039d8e800b88d9865dbd26522c63ea1b5e",
+          "metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-bank-s4-step2.json",
+          "metadata_sha256": "497086bf45343a65f6b091f2755d483443886dce6319e81c775e9d2a87765dcb"
+        },
+        {
+          "label": "cold-bank-s4-step3",
+          "state": "complete",
+          "npz": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-bank-s4-step3.npz",
+          "sha256": "167a795390ce918e4d03a4e2be5ea4c046f4ce7ea69f74b24ab4d790722382bf",
+          "metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-bank-s4-step3.json",
+          "metadata_sha256": "50b027b036cdb51523faea68447d26739f2e7857182d969eedd7797e2a619fbd"
+        },
+        {
+          "label": "cold-bank-s4-step4",
+          "state": "complete",
+          "npz": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-bank-s4-step4.npz",
+          "sha256": "686d124ffd7a8c61b981cdf9f1ea3c5362b4574e1ac5fd42d2da81775d50579b",
+          "metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-bank-s4-step4.json",
+          "metadata_sha256": "f458e5e24b5d936b460a912472e7f987d49c9cf6e7cdd23a44e4352da0edb221"
+        }
+      ],
+      "snapshot": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\prepared-cold-20261027T201608002013Z-p29900.npz"
+    },
+    {
+      "id": "cold-candidate-s4",
+      "model": "cold",
+      "kind": "candidate",
+      "subdivision": 4,
+      "driver_history": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\full\\cold\\candidate\\s4\\history.npz",
+      "driver_history_sha256": "2194c721233e5e186a82bc66e6f9b735e26d8a66ba975362d77cdac9ffa7f4d8",
+      "driver_complete": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\full\\cold\\candidate\\s4\\complete.json",
+      "driver_chain": "e70b8c9cadbe3c9c7f4a2f44659ec426e0f378019a82e1e9d936115911d5271d",
+      "driver_row_rule": "coarse_cell*s .. (coarse_cell+1)*s inclusive; no interpolation",
+      "seed_packet": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-candidate-s4-step4.npz",
+      "seed_packet_sha256": "2d02ace5e750df07559ce4ea4822fe00b3774e144fedd0cee380dabbbcfc946b",
+      "seed_metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-candidate-s4-step4.json",
+      "seed_metadata_sha256": "d57852e6565ee42aed6f213f0da38f235bddbfee400070dc29ef3bd7f3cbeaa3",
+      "seed_coordinate": 2.003698754555795,
+      "seed_last_completed_cell": 0,
+      "seed_tail_sha256": "25b9144c6835df2fe0b904d99d868c08ffcc11fc710f54445f55878ecfc0edee",
+      "tail_dimension": 481,
+      "photon_dimension": 96,
+      "startup_packets": [
+        {
+          "label": "cold-candidate-s4-step1",
+          "state": "complete",
+          "npz": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-candidate-s4-step1.npz",
+          "sha256": "64e51d535ddcc13cf67486bbe7e6330919e1a08d851b32d0fc6a9b01113a459d",
+          "metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-candidate-s4-step1.json",
+          "metadata_sha256": "b01767a96fd292bd6f6b315e75188bd09142bc8c5516f05c1de1c08d88eb4453"
+        },
+        {
+          "label": "cold-candidate-s4-step2",
+          "state": "complete",
+          "npz": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-candidate-s4-step2.npz",
+          "sha256": "f875413679ee3a960c4f0fedf7ee8e84cc262edd662748f1d7b917651b39bd08",
+          "metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-candidate-s4-step2.json",
+          "metadata_sha256": "cd933cf6925208475a8784e8029f78cb61a3c0ea7a7bd68682e3c8086fde666a"
+        },
+        {
+          "label": "cold-candidate-s4-step3",
+          "state": "complete",
+          "npz": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-candidate-s4-step3.npz",
+          "sha256": "28b0f42fb0f9dc97ed9c26857dd70ef544e735b00b65985a90d79e3092159c50",
+          "metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-candidate-s4-step3.json",
+          "metadata_sha256": "21ccf9bf5fc2fed886e7139a95314725de58f4acee90f928a6dbbb33abadc622"
+        },
+        {
+          "label": "cold-candidate-s4-step4",
+          "state": "complete",
+          "npz": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-candidate-s4-step4.npz",
+          "sha256": "2d02ace5e750df07559ce4ea4822fe00b3774e144fedd0cee380dabbbcfc946b",
+          "metadata": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\centered-dense-transfer\\results\\cold-candidate-s4-step4.json",
+          "metadata_sha256": "d57852e6565ee42aed6f213f0da38f235bddbfee400070dc29ef3bd7f3cbeaa3"
+        }
+      ],
+      "snapshot": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-transfer\\prepared-cold-20261027T201608002013Z-p29900.npz"
+    }
+  ],
+  "last_cell": 450,
+  "coarse_cell_count": 451,
+  "startup_manifest_sha256": "9971130eb5d5a86c19254a54b313d7ab58d1533bcfe528c85eb5b1c40cfdb853",
+  "reference_rule": "canonical8-cell blocks1..8,9..16,...; first physical step quarters+endpoint, last endpoint; both one-sided join blocks and final; exact node-only selection",
+  "joins": {
+    "join189": 244,
+    "join199": 291
+  },
+  "thresholds": {
+    "core_strict_absolute": 0.0001,
+    "moment_strict_relative": 0.01,
+    "moment_envelope_multiplier": 1e-05,
+    "history_relative_L2": 0.01,
+    "source_budget_unassessed": 0.002,
+    "identity_raw_and_scaled": 1e-10
+  },
+  "radau_tolerances": [
+    {
+      "rtol": 1e-11,
+      "atol": 1e-13
+    },
+    {
+      "rtol": 2.5e-12,
+      "atol": 2.5e-14
+    }
+  ],
+  "tiny_pulse_tau_max": 0.0009765625,
+  "model_cache_bound": 2,
+  "local_cache_bound_per_model": 4,
+  "comparison_node_count": 1257,
+  "new_metric_definitions_per_paired_cell": 48,
+  "source_budget_assessed": false,
+  "historical_failures_retained_not_new_passes": true,
+  "approval_policy": "strict schema, canonical batch<=8, all12 cases, exact heads and prior-attempt acknowledgement, <=4h turn window and>=10min safe-save margin",
+  "music_priority": "Daily03:00\u201314:00 Europe/London music agent may pause/stop MTS; no contest/relaunch/priority escalation/replacements; preserve provenance; await release/user go-ahead and check ownership.",
+  "automatic_retry": false,
+  "automatic_resume": false,
+  "frozen_utc": "2026-10-27T23:06:33.538303+00:00",
+  "preserved_v2": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-history-20261027\\execution-v3\\v2-preserved-files.json",
+  "preserved_v2_sha256": "2c507a44118cf6b51692f91b3be894588be13080eba0d04221d989c31076ebeb",
+  "repair_provenance": {
+    "base_science_sha256": "7259744c79c7602e8a02b407c8e43b42a332999f29a129b3106548678add3b41",
+    "actual_exit_pid": 20920,
+    "actual_exit_code": 1,
+    "committed_cells": 0,
+    "direct_repair_authorization": "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-history-20261027\\execution-v3\\REPAIR-AUTHORIZATION.md",
+    "new_execution_approval_required": true,
+    "prior_attempt_promoted_to_commit": false
+  }
+}

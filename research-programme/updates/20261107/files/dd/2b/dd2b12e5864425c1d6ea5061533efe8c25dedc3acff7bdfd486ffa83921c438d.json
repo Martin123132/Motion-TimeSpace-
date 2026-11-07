@@ -1,0 +1,48 @@
+{
+  "state": "complete",
+  "script_sha256": "9718215a5493054f9c44252cc22d1d314584e788a0806b8eba31ae6173a144a9",
+  "checks": [
+    {
+      "name": "scalar_radial_stress_conservation",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "positive_pressure_integrating_factor",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "boundary_resolvent_Wronskian",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "spectral_remainder_identity",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "retarded_kernel_resolvent_identity",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "local_positive_wave_energy_identity",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "flat_impedance_expansion",
+      "passed": true,
+      "residual": "0"
+    }
+  ],
+  "pressure_positivity": "p_prime+A(r)p=-B(r), p(R)=0; B=M*rho/(r^2 F)+2F*h_prime^2/r>=0, hence p>=0 and N>=N0.",
+  "Dirichlet_gap": "A_D=-d_rstar^2+V on regular center to R with zero endpoints: lambda1>=3*N0^2/R^2 for ell2.",
+  "boundary_identity": "m(s)=m(0)-s*I0-s^2*<u0,(A_D-s)^(-1)u0>, I0=int u0^2 drstar, u0(R)=1.",
+  "bound": "0<=m0-s*I0-m(s)<=s^2*I0/(lambda_lower-s), 0<=s<lambda_lower.",
+  "kernel_bound": "|K_exact-K_quad|<=B/[|D_quad|*(|D_quad|-B)] if |D_quad|>B, D_quad=m0-s*I0-mout.",
+  "energy_statement": "Regular finite-energy solutions obey positive wave energy conservation with outward flux; no exponentially growing axial mode under stated background and boundary assumptions.",
+  "scope": "Linear nonrotating odd-parity sector. Not a claim of stability of every condensate sector or absence of damped quasinormal modes."
+}

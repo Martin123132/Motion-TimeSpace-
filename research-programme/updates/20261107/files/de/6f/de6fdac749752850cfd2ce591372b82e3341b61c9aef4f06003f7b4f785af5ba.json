@@ -1,0 +1,24 @@
+{
+  "state": "failed",
+  "started_utc": "2026-10-07T00:34:59.797799+00:00",
+  "commands": [
+    [
+      "R:/toolchain/mingw64/bin/gfortran.exe",
+      "-shared",
+      "-static",
+      "-cpp",
+      "-fopenmp",
+      "-O2",
+      "-fcheck=bounds",
+      "-fmax-errors=4",
+      "../forutils/MiscUtils.f90",
+      "-c",
+      "-o",
+      "WinMTS/MiscUtils.o",
+      "-JWinMTS"
+    ]
+  ],
+  "error": "CalledProcessError(1, ['R:/toolchain/mingw64/bin/gfortran.exe', '-shared', '-static', '-cpp', '-fopenmp', '-O2', '-fcheck=bounds', '-fmax-errors=4', '../forutils/MiscUtils.f90', '-c', '-o', 'WinMTS/MiscUtils.o', '-JWinMTS'])",
+  "temporary_drive_mapping_removed": true,
+  "finished_utc": "2026-10-07T00:35:00.160791+00:00"
+}

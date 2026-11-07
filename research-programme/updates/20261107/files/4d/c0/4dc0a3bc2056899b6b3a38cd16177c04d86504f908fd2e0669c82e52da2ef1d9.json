@@ -1,0 +1,48 @@
+{
+  "state": "complete",
+  "time_utc": "2026-10-06T16:34:49.388251+00:00",
+  "script_sha256": "dc2d5749cfb274e5c759e9bb3219f9808ec74bb1eeb8da3cd7ed384891985fc2",
+  "input_hashes": {
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polar-energy-bound-20261006\\bound_common.py": "64a7902a7b128a8d8244b6f5839bb6889763c6531d095495df60ca8667001729",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polar-energy-bound-20261006\\derive_phase_block_bound.py": "dc2d5749cfb274e5c759e9bb3219f9808ec74bb1eeb8da3cd7ed384891985fc2",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polar-hamiltonian-20261006\\polar_energy.py": "8b41a3e46cbcf3ec34a30d90d5f2a6d7e9513469bef8b98d5439db4f6546eca0",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polar-hamiltonian-20261006\\results\\stage-integrity.json": "ef3376d6798cfbcba1424efd32c5939be7117274ca8c9cc945cb34fa648c90d9",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\radial-gravity-stability-20261003\\test_radial_energy.py": "b3e34d1313560be3dc803d80dc5eb5abeaafa940f0e792d116214e97959a89fa",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\self-gravity-20261003\\solve_self_gravity.py": "35adf55501885d1e988a1e48d3a2d7f14670c683e62b1e289fc4c8c094aed3ea"
+  },
+  "exact_checks": [
+    {
+      "name": "pure phase full constrained density after integration by parts",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "weighted constraint quadratic form",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "phase energy identity before source substitution",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "phase source substitution exact coefficient",
+      "residual": "0",
+      "passed": true
+    }
+  ],
+  "energy_identity": "E_pp = 1/2||pi_v||_a^2 - 7/(8alpha) I + integral a(7 b h^2+5 W)K^2/8",
+  "measure": "a=N r^2/sqrt(F)",
+  "constraint": "D_l K=2alpha sqrt(b) h pi_v",
+  "weighted_constraint_form": "I=integral a K D_l K=integral a[F K_prime^2+(6/r^2+alpha(b h^2-W))K^2]",
+  "integral_bound": "I <= 4alpha^2 sup(r^2 b h^2)/(59/10) ||pi_v||_a^2",
+  "phase_coercivity_exact": "5681/7375",
+  "phase_coercivity_numeric": 0.7703050847457628,
+  "conservative_phase_coercivity": "77/100",
+  "energy_lower_bound": "E_pp >= (77/200) integral a pi_v^2",
+  "holds_under_uniform_background_box": true,
+  "phase_Schur_inverse_coercivity_proved": true,
+  "spatial_sampling_used": false,
+  "full_gravity_amplitude_Schur_bound_proved": false
+}

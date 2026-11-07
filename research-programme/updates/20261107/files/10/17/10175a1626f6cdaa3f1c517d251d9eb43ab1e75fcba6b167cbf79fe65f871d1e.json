@@ -1,0 +1,38 @@
+{
+  "source_sha256": "99bcb00dddc80fda5a976322a639a6c2620b3920cf2b1dd16476c1aba966227f",
+  "protocol_sha256": "54ad952000036212b8c608d5b750057b0b1d7b5cb974401a1b90068673e74e1e",
+  "state_cases": [
+    [
+      "full",
+      2e-11,
+      1.0
+    ],
+    [
+      "precision",
+      2e-12,
+      1.0
+    ],
+    [
+      "zero",
+      2e-11,
+      0.0
+    ],
+    [
+      "negative",
+      2e-11,
+      -1.0
+    ]
+  ],
+  "kernel_release_fractions": [
+    0.0,
+    0.25,
+    0.5
+  ],
+  "kernel_tolerances": [
+    2e-11,
+    2e-12
+  ],
+  "numerical_gate": 2e-05,
+  "algebra_gate": 1e-10,
+  "dynamic_scale": "max(abs(initial_i), max(abs(initial))*1e-20, 1e-30); no future states used to set solver units"
+}

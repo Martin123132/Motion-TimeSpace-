@@ -1,0 +1,45 @@
+{
+  "accepted_scope": "Energy-matched Planck-tangent versus nonthermal-shape decomposition of the Stage107 known-window contribution at final saved a=1e-5, reusing all 96 photon modes, 16 columns, two backgrounds and six saved numerical variants per background.",
+  "numerical_gate_scope": "Coefficient projector identities, reconstruction, energy and number partition, reference-temperature invariance and saved numerical sensitivities. Stable high-precision pointwise readout repairs cancellation without changing source vectors or coefficients. Raw failures retained.",
+  "retained_failed_checks": {
+    "results/projection": [
+      "Temperature basis is x at independent sample frequencies",
+      "Pointwise occupation reconstructs on represented band:heavy",
+      "Pointwise occupation reconstructs on represented band:cold"
+    ]
+  },
+  "scientific_checks": 174,
+  "passing_scientific_checks": 171,
+  "retained_failed_scientific_checks": 3,
+  "projection_convention": "Energy-matched temperature; orthogonal in inherited M norm, not instrument-noise weighted.",
+  "coefficient_projection_authority": "results/projection/status.json",
+  "physical_readout_authority": "results/stable-readout/status.json",
+  "final_saved_scale": 0.00001,
+  "final_reference_temperature_K": 272550,
+  "central_fractional_temperature_min": 1.8770241095701457e-24,
+  "central_fractional_temperature_max": 1.880802676554271e-24,
+  "central_temperature_norm_to_total_max": 4.2804931820001834e-10,
+  "final54_distortion_sensitivity_max": 0.00001502940629109176,
+  "final54_temperature_sensitivity_max": 0.000012738707317517793,
+  "physical_source_recomputed": false,
+  "new_empirical_fit": false,
+  "new_evolution": false,
+  "source_continuum_error_bounded": false,
+  "infrared_increment_continuation_computed": false,
+  "outside_window_source_assumed_zero": false,
+  "current_epoch_today": false,
+  "instrument_temperature_fit": false,
+  "github_action": false,
+  "kinetic_modes_discarded": 0,
+  "source_evaluations": 0,
+  "subagents": 0,
+  "conclusion": "The saved window correction is overwhelmingly a nonthermal spectral deformation rather than a temperature shift in the stated energy-matched convention. The projected frequency-grid difference remains small. Physical occupation and radiance are now explicitly normalized; raw near-edge floating-point failures are preserved and the stable readout passes unchanged reconstruction gates.",
+  "next_target": "Derive an energy-matched standard mu/y shape decomposition of the saved final-window distortion and the saved parent spectrum, with the same frequency domain, normalization and metric for both. Retain an explicit residual rather than forcing the spectrum into those two templates; check template conditioning, reconstruction and sensitivity to the low-frequency boundary using saved vectors only. Keep amplitude projection distinct from fitting physical parameters or an instrument likelihood. Before comparison with present-day spectral data, identify and derive the missing later-time transfer and this increment's infrared continuation; do not silently replace either by zero.",
+  "operational_diagnostics": [
+    "One below-normal single-core worker at a time; no new source events.",
+    "Original raw projection packet preserved:154 checks,151 passing and3 numerical readout failures.",
+    "Stable readout:20 checks pass. Uses unchanged basis parameters and unrounded residual arithmetic at40 and65 decimal digits; final arrays agree at float64 storage precision.",
+    "No claim of40/65 digit physical accuracy; this only controls arithmetic on inherited inputs."
+  ]
+}
+

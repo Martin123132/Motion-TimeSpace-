@@ -1,0 +1,38 @@
+{
+  "accepted_scope": "Analytically derived leading angular tensor and exact four-rational-tensor factorization; verified exact-kinematics intensity/counterterm split; fixed-angular radial convergence of amplitude-difference and conditional coupled response, with full remainder drift explicitly retained.",
+  "numerical_gate_scope": "Same672 physical population nodes, angular order4, radial48/96/192, all96 spectral tests and four physical profiles. Response gate is passed only on96-to192 radial comparison, not all integration dimensions.",
+  "preferred_diagnostic": "runs/midpoint-real-refinement-a4-r192/source.npz",
+  "fixed_angular_radial_gate_closed": false,
+  "fixed_angular_radial_response_gate_closed": true,
+  "fixed_angular_radial_amplitude_difference_gate_closed": true,
+  "all_dimension_remainder_gate_closed": false,
+  "full_source_maximum_relative_change": 0.00015117360166511858,
+  "remainder_maximum_relative_change": 0.07207244852981762,
+  "amplitude_difference_maximum_relative_change": 0.001932321566984746,
+  "kinematic_remainder_maximum_relative_change": 0.12363152841681746,
+  "maximum_short_duration_response_change": 0.008009913334485537,
+  "maximum_long_duration_response_change": 0.001114889814088427,
+  "kinematic_drift_norm_over_total_drift_norm": 0.9897500540917242,
+  "kinematic_norm_ratio_is_not_additive_error_fraction": true,
+  "retained_failed_checks": {
+    "results/remainder-resolution": [
+      "Fixed-angular full96 finite remainder within1percent: 48-to-96",
+      "Fixed-angular full96 finite remainder within1percent: 96-to-192",
+      "Fixed-angular remainder spectral response within1percent: heavy-0.001-r48-r96",
+      "Fixed-angular remainder spectral response within1percent: heavy-0.01-r48-r96",
+      "Fixed-angular remainder spectral response within1percent: cold-0.001-r48-r96",
+      "Fixed-angular remainder spectral response within1percent: cold-0.01-r48-r96"
+    ]
+  },
+  "new_empirical_fit": false,
+  "full_parent_feedback_applied": false,
+  "new_parent_history": false,
+  "control_coefficient_fitted": false,
+  "source_smallness_used_to_waive_gate": false,
+  "github_action": false,
+  "new_virtual_loop_evaluations": 0,
+  "modes_removed": 0,
+  "previous_stage_source_history_unchanged": true,
+  "next_target": "Reuse resolved exact amplitude difference and existing virtual/state terms; develop matched pointwise subtraction or adaptive quadrature for cheap exact-kinematics control minus stationary Gould, target all96 remainder norm, then check angular/outer resolution and the original coupled response.",
+  "conclusion": "Actual derived numerical control plus a resolved fixed-angular radial response. The remaining source uncertainty is localized to control-minus-Gould high-mode quadrature rather than new virtual physics. Do not replace the full source-history authority yet."
+}

@@ -1,0 +1,318 @@
+from derive_annular_source_gravity_20260914 import EvidenceRun
+from derive_annular_support_map_constraints_20260927 import restore_case, load_owned
+from annular_position_reaction_20260929 import ResponseSum
+from annular_position_reaction_eulerian_v2_20260929 import hybrid_position_reaction as material_position_reaction
+from annular_old_field_reaction_20260929 import symbolic_checks
+from annular_physical_native_kernel_20260928 import NativeKernel
+from annular_joint_first_tangent_20260922 import RadialResponse, MomentumMetricResponse, MetricResponse
+from annular_joint_flow_derivative_v2_20260922 import solve_joint_rhs
+from annular_candidate_full_inverse_20260920 import BandedSourceInverse
+from annular_candidate_energy_current_20260921 import reconstructed_solver
+from scipy.sparse import load_npz
+from decimal import localcontext
+from time import perf_counter
+import argparse
+import csv
+import gc
+import hashlib
+import json
+import numpy as np
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--label', default='annular-position-reaction-diagnostic-attempt03')
+    parser.add_argument('--max-seconds', type=float, default=10000)
+    parser.add_argument('--new-case-limit', type=int, default=1)
+    parser.add_argument('--resume', default='annular-position-reaction-diagnostic-attempt02')
+    parser.add_argument('--dry-run', action='store_true')
+    args = parser.parse_args()
+    if args.new_case_limit < 1 or not args.resume or any(character not in 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_' for character in args.resume):
+        parser.error('A positive case limit and a local evidence label are required')
+    evidence = EvidenceRun(args.label, __file__)
+    started, deadline = perf_counter(), perf_counter() + args.max_seconds
+    try:
+        evidence.report.update(scope='EXPLORATORY four matched k0 controls; failed quadrature and baseline gates retained',
+            accepted_for_C0=False, numerical_acceptance_passed=False, diagnostic_only=True,
+            accuracy_gate_failures=[], inherited_failed_attempt='annular-position-reaction-attempt03',
+            github_action=False, subagents_used=False, new_trajectories=0, original_workbench_write=False,
+            inherited_position_density_precision_warnings=4, inherited_mixed_time_precision_warnings=4,
+            inherited_raw_C2_warnings=2, C0_force_current_column_computed=False,
+            uncertainty_is_rigorous_bound=False, B0_polynomial_sensitivity_propagated=False, units='code-normalized')
+        evidence.own(evidence.root / 'DERIVATION-20260929-matched-position-reaction-diagnostics.md')
+        evidence.own(evidence.root / 'DERIVATION-20260929-position-reaction-safe-recovery.md')
+        evidence.report.update(run_kind='dry_run' if args.dry_run else 'bounded_diagnostic_recovery',
+            resumed_from=args.resume, completed_case_reuse=[], staged_material_reuse=[],
+            requested_new_case_limit=args.new_case_limit, all_four_diagnostics_complete=False)
+        evidence.own(evidence.root / 'scripts/annular_position_reaction_20260929.py')
+        seal_path = evidence.output.parent / 'annular-position-time-final-integrity-20260929.json'
+        seal = json.loads(seal_path.read_text())
+        evidence.own(seal_path)
+        digests, bad = {}, []
+        for relative, expected in seal['hashes'].items():
+            if relative == 'CURRENT_LOCAL_RESUME.md':
+                continue
+            path = evidence.root / relative
+            if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != expected:
+                bad.append(relative)
+            else:
+                digests[str(path.relative_to(evidence.root))] = expected
+                evidence.own(path)
+        evidence.check('position_time_inputs_unchanged', seal['state'] == 'complete' and not bad, bad)
+        previous_path = evidence.output.parent / 'annular-position-reaction-attempt03/status.json'
+        previous = json.loads(previous_path.read_text())
+        evidence.own(previous_path)
+        for category in ['inputs', 'outputs']:
+            for relative, expected in previous[category].items():
+                if relative == 'CURRENT_LOCAL_RESUME.md':
+                    continue
+                path = evidence.root / relative
+                if hashlib.sha256(path.read_bytes()).hexdigest() != expected:
+                    raise RuntimeError('Changed exploratory input: ' + relative)
+                digests[relative] = expected
+                evidence.own(path)
+        reuse_path = evidence.output.parent / 'annular-position-reaction-diagnostic-attempt01/status.json'
+        reuse = json.loads(reuse_path.read_text())
+        evidence.own(reuse_path)
+        evidence.check('reference_diagnostic_complete', reuse['state'] == 'complete' and reuse['diagnostic_only'] and not reuse['accepted_for_C0'])
+        for category in ['inputs', 'outputs']:
+            for relative, expected in reuse[category].items():
+                if relative == 'CURRENT_LOCAL_RESUME.md':
+                    continue
+                path = evidence.root / relative
+                if hashlib.sha256(path.read_bytes()).hexdigest() != expected:
+                    raise RuntimeError('Changed reused diagnostic: ' + relative)
+                digests[relative] = expected
+                evidence.own(path)
+        resumed_path = evidence.output.parent / args.resume / 'status.json'
+        resumed = json.loads(resumed_path.read_text())
+        evidence.own(resumed_path)
+        evidence.check('resume_parent_settled_diagnostic',
+            resumed['state'] in ['complete', 'failed'] and resumed.get('diagnostic_only') is True
+            and resumed.get('accepted_for_C0') is False and resumed.get('numerical_acceptance_passed') is False
+            and resumed.get('run_kind') != 'dry_run')
+        for category in ['inputs', 'outputs']:
+            for relative, expected in resumed[category].items():
+                if relative == 'CURRENT_LOCAL_RESUME.md':
+                    continue
+                path = (evidence.root / relative).resolve()
+                if not path.is_relative_to(evidence.root) or not path.is_file():
+                    raise RuntimeError('Missing or out-of-scope recovery input: ' + relative)
+                if hashlib.sha256(path.read_bytes()).hexdigest() != expected:
+                    raise RuntimeError('Changed recovery input: ' + relative)
+                if relative in digests and digests[relative] != expected:
+                    raise RuntimeError('Conflicting recovery digest: ' + relative)
+                digests[relative] = expected
+                evidence.own(path)
+        reused_cases, reused_gates = {}, {}
+        for report in [reuse, resumed]:
+            for row in report['cases']:
+                key = (row['branch'], row['level'])
+                if key in reused_cases and reused_cases[key] != row:
+                    raise RuntimeError('Conflicting completed controls: ' + repr(key))
+                reused_cases[key] = row
+                reused_gates[key] = [gate for gate in report['accuracy_gate_failures']
+                    if gate['case'] == '-'.join(key)]
+        staged_paths = {}
+        for relative in resumed['outputs']:
+            filename = (evidence.root / relative).name
+            if filename.endswith(('-material48.npz', '-material64.npz')):
+                if filename in staged_paths:
+                    raise RuntimeError('Ambiguous staged archive: ' + filename)
+                staged_paths[filename] = relative
+        read = lambda relative: load_owned(evidence, digests, evidence.root / relative)
+        status = lambda name: read(str((evidence.output.parent / name / 'status.json').relative_to(evidence.root)))
+        parent, direct, live, positions, jets = [status(name) for name in [
+            'annular-position-time-radial-attempt05', 'annular-direct-background-coupled-current-attempt01',
+            'annular-live-support-acceleration-attempt01', 'annular-compensated-position-attempt04',
+            'annular-position-metric-jet-validation-attempt01']]
+        evidence.check('B0_complete', parent['state'] == 'complete' and len(parent['cases']) == 4)
+        if args.dry_run:
+            plan = []
+            for case in parent['cases']:
+                key = (case['branch'], case['level'])
+                name = '-'.join(key)
+                plan.append(dict(branch=key[0], level=key[1], completed_control_reusable=key in reused_cases,
+                    reusable_material_orders=[order for order in [48, 64]
+                        if name + '-material' + str(order) + '.npz' in staged_paths],
+                    valid_for_claim=False))
+            evidence.report.update(recovery_plan=plan, numerical_worker_launched=False,
+                seconds=perf_counter() - started)
+            evidence.complete()
+            return
+        symbolic_checks(evidence)
+
+        def progress(stage):
+            evidence.report['progress'] = dict(stage=stage, seconds=perf_counter() - started)
+            evidence.save()
+            print(json.dumps(evidence.report['progress']), flush=True)
+            if perf_counter() > deadline:
+                raise RuntimeError('Safe old-field position reaction boundary')
+
+        def save(name, **arrays):
+            path = evidence.output / (name + '.npz')
+            np.savez_compressed(path, **arrays)
+            evidence.own(path, 'outputs')
+            return str(path.relative_to(evidence.root))
+
+        def restore(archive):
+            solver, solution = reconstructed_solver(archive)
+            return MetricResponse(solver, solution, archive.get('forcing'), 0., [])
+
+        summaries = []
+        with localcontext() as context:
+            context.prec = 70
+            new_case_count = 0
+            for case in parent['cases']:
+                branch, level = case['branch'], case['level']
+                name = branch + '-' + level
+                if (branch, level) in reused_cases:
+                    saved_case = reused_cases[branch, level]
+                    evidence.report['cases'].append(saved_case)
+                    summaries.append(saved_case['summary'])
+                    evidence.report['accuracy_gate_failures'].extend(reused_gates[branch, level])
+                    evidence.report['completed_case_reuse'].append(name)
+                    progress(name + ':reused-complete-diagnostic')
+                    continue
+                if new_case_count >= args.new_case_limit:
+                    continue
+                progress(name + ':restore')
+                loads, action, sources = restore_case(evidence, digests, branch, level, deadline)
+                match = lambda report: next(row for row in report['cases'] if row['branch'] == branch and row['level'] == level)
+                flow_case, live_case, pos_case, jet_case = map(match, [direct, live, positions, jets])
+                directions = read(live_case['direction_path'])
+                correction = read(live_case['paths']['projection'])['correction']
+                mode_rate = read(jet_case['paths']['completed_metric_time'])['mode_rate']
+                acceleration = read(flow_case['paths']['flow'])['acceleration']
+                position_archive = read(pos_case['paths']['response'])
+                transported_archive = read(jet_case['paths']['transported_old_metric'])
+                position = ResponseSum(restore(position_archive), restore(transported_archive))
+                metric_time = ResponseSum(restore(read(flow_case['paths']['background_response'])),
+                    restore(read(flow_case['paths']['velocity_response'])))
+                mixed_archive = read(case['paths']['response'])
+                mixed = restore(mixed_archive)
+                packet = read(sources['packet'])
+                native = NativeKernel(action.mesh, packet['gram_support'], branch.startswith('MTS'))
+                owner = read(sources['parent'])
+                centre = next(row for row in owner['centres'] if row.get('route') == 'resampled') if level == 'fine' else owner['centres'][0]
+                matrix_path = evidence.root / centre['matrix_path']
+                evidence.check(name + ':matrix_owned', str(matrix_path.relative_to(evidence.root)) in digests)
+                matrix = load_npz(matrix_path)
+                inverse = BandedSourceInverse(matrix, loads.rates.shape)
+                invmax = lambda array: float(np.max(abs(inverse.solve(array.ravel()))))
+                results, paths = {}, {}
+                for order in [48, 64]:
+                    progress(name + ':material' + str(order))
+                    filename = name + '-material' + str(order) + '.npz'
+                    if filename in staged_paths:
+                        cached_path = staged_paths[filename]
+                        result = read(cached_path)
+                        required = ['residual', 'oracle_difference', 'native_halving_difference',
+                            'base_momentum', 'base_force_wave', 'force_native']
+                        evidence.check(name + ':staged_material_shape_' + str(order),
+                            all(key in result and result[key].shape == loads.rates.shape
+                                and np.all(np.isfinite(result[key])) for key in required)
+                            and np.array_equal(result.get('quadrature_orders_radial_label_source'),
+                                [24, 28, 48] if order == 48 else [32, 36]))
+                        paths['material' + str(order)] = cached_path
+                        evidence.report['staged_material_reuse'].append(dict(case=name, order=order, path=cached_path))
+                    else:
+                        result = material_position_reaction(loads, action, native, directions, correction, mode_rate,
+                            acceleration, position, metric_time, mixed, order, deadline, lambda stage: progress(name + ':' + stage))
+                        paths['material' + str(order)] = save(name + '-material' + str(order), **result)
+                    results[order] = result
+                    evidence.check(name + ':original_momentum_mixed_jet_' + str(order), invmax(result['oracle_difference']) <= 2e-11,
+                        dict(inverse_error=invmax(result['oracle_difference']), raw_error=float(np.max(abs(result['oracle_difference'])))))
+                    evidence.check(name + ':native_step_halving_' + str(order), invmax(result['native_halving_difference']) <= 2e-11,
+                        invmax(result['native_halving_difference']))
+                result = results[64]
+                progress(name + ':original-action-replay')
+                original = action.momentum_and_force(12, 64, deadline)
+                momentum_error = float(np.max(abs(original['momentum'] - result['base_momentum'])))
+                force_error = float(np.max(abs(original['bulk'] + original['dust'] - result['base_force_wave'])))
+                evidence.report['accuracy_gate_failures'].append(dict(case=name, gate='original_momentum', error=momentum_error, tolerance=2e-16, passed=momentum_error <= 2e-16))
+                evidence.report['accuracy_gate_failures'].append(dict(case=name, gate='original_wave_clock_force', error=force_error, tolerance=2e-15, passed=force_error <= 2e-15))
+                difference = results[48]['residual'] - result['residual']
+                quad_error = invmax(difference)
+                evidence.report['accuracy_gate_failures'].append(dict(case=name, gate='paired_quadrature_inverse', error=quad_error, tolerance=2e-11, passed=quad_error <= 2e-11))
+                progress(name + ':live-operator')
+                radial = RadialResponse(loads, action, branch.split('-')[1], deadline, lambda stage: progress(name + ':' + stage))
+                evidence.check(name + ':radial_background', radial.base_constraint_residual <= 2e-12, radial.base_constraint_residual)
+                momentum = MomentumMetricResponse(action, deadline, lambda stage: progress(name + ':' + stage))
+                system, iterations = dict(matrix=matrix, inverse=inverse), []
+
+                def record(row, direction, coupling, residual, metric):
+                    path = save(name + '-reaction-iteration' + str(row['iteration']), direction=direction,
+                        coupling=coupling, residual=residual, forcing=metric.forcing,
+                        **{'metric_' + key: value for key, value in metric.solution.items()})
+                    iterations.append(dict(row, path=path))
+                    evidence.report['latest_iteration'] = dict(case=name, **iterations[-1])
+                    progress(name + ':reaction-' + str(row['iteration']))
+
+                reaction, reaction_metric, coupling, unused, history = solve_joint_rhs(system, radial, momentum, -result['residual'], record)
+                evidence.check(name + ':live_solve', history[-1]['relative_residual'] <= 2e-11 and history[-1]['maximum_correction'] <= 2e-12,
+                    history[-1])
+                corrected_time = ResponseSum(mixed, reaction_metric)
+                keys = ['state', 'rhs_coefficients', 'primitives', 'left']
+                evidence.check(name + ':same_metric_grid', np.array_equal(mixed.solver.edges, reaction_metric.solver.edges))
+                corrected = {key: mixed.solution[key] + reaction_metric.solution[key] for key in keys}
+                paths['reaction'] = save(name + '-reaction', acceleration_change=reaction, forcing=result['residual'],
+                    mode_rate=mode_rate, quadrature_difference=difference)
+                paths['corrected_metric_time'] = save(name + '-corrected-metric-time', **corrected,
+                    edges=mixed.solver.edges, **{'reaction_' + key: reaction_metric.solution[key] for key in keys})
+                progress(name + ':corrected-material')
+                checked = material_position_reaction(loads, action, native, directions, correction, mode_rate,
+                    acceleration, position, metric_time, corrected_time, 64, deadline, lambda stage: progress(name + ':corrected-' + stage),
+                    acceleration_change=reaction, include_native=False)
+                corrected_residual = checked['residual'] - result['force_native']
+                corrected_error = invmax(corrected_residual)
+                evidence.report['accuracy_gate_failures'].append(dict(case=name, gate='re_evaluated_corrected_Euler',
+                    error=corrected_error, tolerance=2e-11, passed=corrected_error <= 2e-11,
+                    raw_error=float(np.max(abs(corrected_residual))), original_inverse_scale=invmax(result['residual'])))
+                evidence.check(name + ':corrected_original_momentum_jet', invmax(checked['oracle_difference']) <= 2e-11,
+                    invmax(checked['oracle_difference']))
+                paths['corrected_material'] = save(name + '-corrected-material', **checked,
+                    complete_residual=corrected_residual, inverse_residual=inverse.solve(corrected_residual.ravel()).reshape(loads.rates.shape))
+                sensitivity_rows = []
+                record_sensitivity = lambda row, direction, coupled, residual, metric: sensitivity_rows.append(dict(row))
+                sensitive, sensitive_metric, unused, unused2, sensitive_history = solve_joint_rhs(system, radial, momentum, -difference, record_sensitivity)
+                sensitivity_error = float(np.max(abs(sensitive)))
+                evidence.report['accuracy_gate_failures'].append(dict(case=name, gate='live_material_sensitivity', error=sensitivity_error, tolerance=2e-11, passed=sensitivity_error <= 2e-11))
+                paths['sensitivity'] = save(name + '-material-sensitivity', acceleration_change=sensitive,
+                    edges=radial.solver.edges, **{'metric_' + key: sensitive_metric.solution[key] for key in keys})
+                summary = dict(branch=branch, level=level, k0_max=float(np.max(abs(reaction))),
+                    uncorrected_inverse_max=invmax(result['residual']), corrected_inverse_max=corrected_error,
+                    original_momentum_jet_inverse_error=invmax(result['oracle_difference']),
+                    material_inverse_error=quad_error, live_material_sensitivity=sensitivity_error,
+                    native_halving_inverse_error=invmax(result['native_halving_difference']),
+                    corrected_metric_time_max=float(np.max(abs(corrected['state']))),
+                    original_momentum_replay_error=momentum_error, original_force_replay_error=force_error,
+                    live_relative_residual=history[-1]['relative_residual'], valid_for_claim=False)
+                summaries.append(summary)
+                evidence.report['cases'].append(dict(branch=branch, level=level, summary=summary, paths=paths,
+                    iterations=iterations, sensitivity_iterations=sensitivity_rows))
+                new_case_count += 1
+                progress(name + ':complete')
+                del radial, momentum, loads, action, native, results, result, checked, matrix, inverse, original
+                gc.collect()
+        completed_keys = {(row['branch'], row['level']) for row in evidence.report['cases']}
+        remaining = [dict(branch=row['branch'], level=row['level']) for row in parent['cases']
+            if (row['branch'], row['level']) not in completed_keys]
+        evidence.report.update(completed_case_count=len(completed_keys), remaining_cases=remaining,
+            all_four_diagnostics_complete=len(completed_keys) == 4,
+            termination_kind='bounded_completed_case_handoff' if remaining else 'all_matched_diagnostics_completed')
+        table = evidence.output / 'old-field-position-reaction.csv'
+        with table.open('x', newline='', encoding='utf-8') as stream:
+            writer = csv.DictWriter(stream, fieldnames=list(summaries[0]))
+            writer.writeheader()
+            writer.writerows(summaries)
+        evidence.own(table, 'outputs')
+        evidence.report['seconds'] = perf_counter() - started
+        evidence.complete()
+    except Exception as error:
+        evidence.fail(error)
+        raise
+
+
+if __name__ == '__main__':
+    main()

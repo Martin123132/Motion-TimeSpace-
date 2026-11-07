@@ -1,0 +1,140 @@
+{
+  "state": "complete",
+  "error": null,
+  "reports": [
+    {
+      "model": "heavy",
+      "cases": [
+        {
+          "tag": "dop-base",
+          "method": "DOP853",
+          "rtol": 2e-10,
+          "atol": 2e-12,
+          "cap_factor": 1.0,
+          "max_step": 0.00012623704630795892,
+          "file": "dop-base.npz",
+          "sha256": "467b02b589fc1c1a7103cef54ab3551d1729799a9b435d93795a46e58665f610",
+          "seconds": 8.040655800024979,
+          "nfev": 27436,
+          "steps": 1817,
+          "dense_replay_error": 0.0
+        },
+        {
+          "tag": "dop-fine",
+          "method": "DOP853",
+          "rtol": 2e-12,
+          "atol": 2e-14,
+          "cap_factor": 1.0,
+          "max_step": 0.00012623704630795892,
+          "file": "dop-fine.npz",
+          "sha256": "8b9f883cc091e13bbc49ca858e9202af369d7a1859019df1cfe6f47a74a3cf3e",
+          "seconds": 12.540220399998361,
+          "nfev": 44311,
+          "steps": 2890,
+          "dense_replay_error": 0.0
+        },
+        {
+          "tag": "dop-half-cap",
+          "method": "DOP853",
+          "rtol": 2e-12,
+          "atol": 2e-14,
+          "cap_factor": 0.5,
+          "max_step": 6.311852315397946e-05,
+          "file": "dop-half-cap.npz",
+          "sha256": "c4de58a1a606ae198812c5ad23830d1dd1975e1a2d79a5e89f2f21f9f1bb76a2",
+          "seconds": 15.649547799985157,
+          "nfev": 53914,
+          "steps": 3587,
+          "dense_replay_error": 0.0
+        },
+        {
+          "tag": "rk-independent",
+          "method": "RK45",
+          "rtol": 2e-11,
+          "atol": 1.9999999999999998e-13,
+          "cap_factor": 1.0,
+          "max_step": 0.00012623704630795892,
+          "file": "rk-independent.npz",
+          "sha256": "a25551edda7ddb60e611e151983d43667645bbec52d540797e56cc48f8c1c9f0",
+          "seconds": 70.04897209999035,
+          "nfev": 119353,
+          "steps": 19697,
+          "dense_replay_error": 1.403207669831763e-16
+        }
+      ],
+      "input_sha256": "3f15eca0fa1b1b0c4b0ecc2a711676b8fc0119130427bb7464eaecc63ee7157e",
+      "original_parameter_sha256": "2309aac62a8f99890fa4736114646b9cd5b3b54ad747b9efb1bb46c1c687dc1c",
+      "scalar_initial_data_unchanged": true,
+      "future_scalar_reference_used_in_rhs": false
+    },
+    {
+      "model": "cold",
+      "cases": [
+        {
+          "tag": "dop-base",
+          "method": "DOP853",
+          "rtol": 2e-10,
+          "atol": 2e-12,
+          "cap_factor": 1.0,
+          "max_step": 0.01407824899385346,
+          "file": "dop-base.npz",
+          "sha256": "3968670cf5223775341a62e9552180d65ada289cb41d425d03f3b895f951e19e",
+          "seconds": 0.08547369998996146,
+          "nfev": 256,
+          "steps": 17,
+          "dense_replay_error": 0.0
+        },
+        {
+          "tag": "dop-fine",
+          "method": "DOP853",
+          "rtol": 2e-12,
+          "atol": 2e-14,
+          "cap_factor": 1.0,
+          "max_step": 0.01407824899385346,
+          "file": "dop-fine.npz",
+          "sha256": "3968670cf5223775341a62e9552180d65ada289cb41d425d03f3b895f951e19e",
+          "seconds": 0.08573329998762347,
+          "nfev": 256,
+          "steps": 17,
+          "dense_replay_error": 0.0
+        },
+        {
+          "tag": "dop-half-cap",
+          "method": "DOP853",
+          "rtol": 2e-12,
+          "atol": 2e-14,
+          "cap_factor": 0.5,
+          "max_step": 0.00703912449692673,
+          "file": "dop-half-cap.npz",
+          "sha256": "dbfc2c33e1b15302a78c3cc838bac3f40dbbd12b4d49ef4f21b74bda2de30fbb",
+          "seconds": 0.11153439999907278,
+          "nfev": 496,
+          "steps": 33,
+          "dense_replay_error": 0.0
+        },
+        {
+          "tag": "rk-independent",
+          "method": "RK45",
+          "rtol": 2e-11,
+          "atol": 1.9999999999999998e-13,
+          "cap_factor": 1.0,
+          "max_step": 0.01407824899385346,
+          "file": "rk-independent.npz",
+          "sha256": "865708666cea7480d950e2172b99eb40a4b508612e61f81265609bfc13ca1a27",
+          "seconds": 0.08584719998179935,
+          "nfev": 163,
+          "steps": 27,
+          "dense_replay_error": 1.2811420678447694e-16
+        }
+      ],
+      "input_sha256": "ec21205ee54df13fbb650562746b84c9f87560a9a09e9495874f7fe188612329",
+      "original_parameter_sha256": "f31d6599e59b16f88830a1472352739c758e5a68b6bf38225761721049a8e10d",
+      "scalar_initial_data_unchanged": true,
+      "future_scalar_reference_used_in_rhs": false
+    }
+  ],
+  "source_sha256": "4b11108daa9a93fe46e97711c7ac002ae2b5e945454c326e74094d4fef60d849",
+  "frozen_sha256": "ff69128d27602703141d38e685582ff74d8f2ccdfbb380a6eaf7a1d1a00d38e9",
+  "run_config_sha256": "23f705c294bd33d361006fd78c2f3ea7c77b60ba47291e44bc5776453e1484a5",
+  "no_perturbation_rerun": true
+}

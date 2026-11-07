@@ -1,0 +1,36 @@
+{
+  "state": "failed",
+  "checks": [
+    {
+      "name": "complete_parent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "parent_hashes_verified",
+      "passed": true,
+      "detail": 3697
+    },
+    {
+      "name": "normalization_is_coordinate_change",
+      "passed": false,
+      "detail": null
+    }
+  ],
+  "cases": [],
+  "inputs": {
+    "scripts\\probe_annular_common_physical_jet_20261001.py": "d1991143a13f729873bed0e164afc95cee8cdab9825a65f6ebf033b88cef6c9f",
+    "DERIVATION-20261001-common-physical-support-jet.md": "4af410f24a9275667bff3d06fccb2dda20be042232db71bcb0b08c0f893aa642",
+    "source-intake\\navier-stokes\\20260914\\annular-C1-integrated-stage-integrity-20261001.json": "ca88df11dd866008491e1952b81d80cc7d92f87fc6d95287dd06f28a32cebe6b"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-common-physical-jet-reference-attempt01\\executed-probe_annular_common_physical_jet_20261001.py": "d1991143a13f729873bed0e164afc95cee8cdab9825a65f6ebf033b88cef6c9f"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "error": "RuntimeError('normalization_is_coordinate_change: None')",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\probe_annular_common_physical_jet_20261001.py\", line 96, in main\n    symbolic(evidence)\n    ~~~~~~~~^^^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\probe_annular_common_physical_jet_20261001.py\", line 33, in symbolic\n    evidence.check('normalization_is_coordinate_change',rows*base+(rows*columns/scale)*(scale*amplitude)==rows*(base+columns*amplitude))\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\annular_reference_continuum_shell_20260914.py\", line 41, in check\n    raise RuntimeError(name+': '+repr(detail))\nRuntimeError: normalization_is_coordinate_change: None\n"
+}

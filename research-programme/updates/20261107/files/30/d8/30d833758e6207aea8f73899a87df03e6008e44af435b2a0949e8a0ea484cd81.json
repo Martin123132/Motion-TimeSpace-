@@ -1,0 +1,212 @@
+{
+  "checks": [
+    {
+      "name": "heavy: coupled photon/baryon density and momentum",
+      "passed": true,
+      "errors": [
+        8.23818288600147e-06,
+        7.753826131708539e-06,
+        6.433643884016072e-06,
+        4.919128716229224e-06
+      ]
+    },
+    {
+      "name": "heavy: native polarized photon quadrupole",
+      "passed": true,
+      "error": 0.0033905655333976107
+    },
+    {
+      "name": "heavy: time refinement",
+      "passed": true,
+      "errors": [
+        3.137167407978316e-06,
+        1.5752591156718072e-06,
+        3.815685692887967e-05,
+        1.6243199411344716e-06,
+        3.221596445473875e-06
+      ]
+    },
+    {
+      "name": "heavy: angular refinement",
+      "passed": true,
+      "errors": [
+        2.1242053130432723e-12,
+        8.135064221277776e-13,
+        2.0895005006131285e-12,
+        8.120445986091533e-13,
+        2.1368008038087475e-12
+      ]
+    },
+    {
+      "name": "cold: coupled photon/baryon density and momentum",
+      "passed": true,
+      "errors": [
+        8.432939071099336e-06,
+        7.491487625537235e-06,
+        6.193164413331075e-06,
+        4.3797247026860355e-06
+      ]
+    },
+    {
+      "name": "cold: native polarized photon quadrupole",
+      "passed": true,
+      "error": 0.003388630430917506
+    },
+    {
+      "name": "cold: time refinement",
+      "passed": true,
+      "errors": [
+        3.4217059649841657e-06,
+        2.4977665751677956e-06,
+        3.824949609763822e-05,
+        2.5456988579555514e-06,
+        3.4473694056204517e-06
+      ]
+    },
+    {
+      "name": "cold: angular refinement",
+      "passed": true,
+      "errors": [
+        2.1495531630712555e-12,
+        8.206814261598487e-13,
+        2.092342048480464e-12,
+        8.204930792044099e-13,
+        2.1688978042385984e-12
+      ]
+    }
+  ],
+  "count": 8,
+  "all_checks_passed": true,
+  "summaries": [
+    {
+      "model": "heavy",
+      "max_step": 0.1,
+      "polar": 16,
+      "steps": 1272,
+      "seconds": 1.583066700026393,
+      "native_errors": [
+        1.8991860240856693e-05,
+        6.911662698262755e-06,
+        0.0033800630117688363,
+        5.78972836942115e-06,
+        2.1271583907911202e-05
+      ]
+    },
+    {
+      "model": "heavy",
+      "max_step": 0.05,
+      "polar": 16,
+      "steps": 2205,
+      "seconds": 2.6382174999453127,
+      "native_errors": [
+        8.65151764222216e-06,
+        9.329084433873924e-06,
+        0.00338263516298633,
+        8.057963013105945e-06,
+        7.106488365874189e-06
+      ]
+    },
+    {
+      "model": "heavy",
+      "max_step": 0.025,
+      "polar": 16,
+      "steps": 4337,
+      "seconds": 5.15787689993158,
+      "native_errors": [
+        8.238183987953694e-06,
+        7.753825318202116e-06,
+        0.003390565535487111,
+        6.433643071971473e-06,
+        4.919126684616195e-06
+      ]
+    },
+    {
+      "model": "heavy",
+      "max_step": 0.025,
+      "polar": 24,
+      "steps": 4337,
+      "seconds": 6.814729500096291,
+      "native_errors": [
+        8.23818288600147e-06,
+        7.753826131708539e-06,
+        0.0033905655333976107,
+        6.433643884016072e-06,
+        4.919128716229224e-06
+      ]
+    },
+    {
+      "model": "cold",
+      "max_step": 0.1,
+      "polar": 16,
+      "steps": 1272,
+      "seconds": 1.5374853000976145,
+      "native_errors": [
+        1.7233633147731166e-05,
+        1.9214768047925202e-05,
+        0.0033362189617403585,
+        1.8108099662440413e-05,
+        2.0012694155841004e-05
+      ]
+    },
+    {
+      "model": "cold",
+      "max_step": 0.05,
+      "polar": 16,
+      "steps": 2205,
+      "seconds": 2.6486764000728726,
+      "native_errors": [
+        7.968660467773626e-06,
+        9.989253380023604e-06,
+        0.0033776251393279827,
+        8.738862450793548e-06,
+        7.7496433729563e-06
+      ]
+    },
+    {
+      "model": "cold",
+      "max_step": 0.025,
+      "polar": 16,
+      "steps": 4337,
+      "seconds": 5.403349600033835,
+      "native_errors": [
+        8.4329402121463e-06,
+        7.491486804855809e-06,
+        0.003388630433009848,
+        6.193163592837996e-06,
+        4.37972259551792e-06
+      ]
+    },
+    {
+      "model": "cold",
+      "max_step": 0.025,
+      "polar": 24,
+      "steps": 4337,
+      "seconds": 6.372142700012773,
+      "native_errors": [
+        8.432939071099336e-06,
+        7.491487625537235e-06,
+        0.003388630430917506,
+        6.193164413331075e-06,
+        4.3797247026860355e-06
+      ]
+    }
+  ],
+  "exact_collision_eigenmodes_used": true,
+  "no_tight_coupling_closure_in_independent_solver": true,
+  "solved": "linear coupled polarized photon transport and baryon density/velocity on prescribed native metric",
+  "native_background_opacity_and_barotropic_sound_speed_used": true,
+  "primordial_second_order_evolution_completed": false,
+  "normalization_fitted": false,
+  "initial_quadrupole_from_derived32_over45": true,
+  "state": "complete",
+  "finished_utc": "2026-10-07T06:33:42.717954+00:00",
+  "script_sha256": "ef12fe2ad925152fb6c12631ec680eb8bad18c46c1eb260e948e04879b26b313",
+  "input_hashes": {
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\thomson-source-coupling-20261007\\compare_photon_baryon.py": "ef12fe2ad925152fb6c12631ec680eb8bad18c46c1eb260e948e04879b26b313",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\thomson-source-coupling-20261007\\collision_common.py": "ab71a1f807b1d59c061b7fd62708dd3b3e8a3a15240e3c75c2d374aaf1eb707b",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\thomson-source-coupling-20261007\\ACCEPTANCE.md": "d6fc14e216c3684391f44bf3b5ccd526d36f6b7ebb834255328d982a85d8c66a",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\einstein-constraints-and-kinetic-response-20261007\\results\\stage-integrity.json": "c3fa01825b67a4416cdbf074a10ec20c21912caf5d49adafa5034ee468653de5",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\thomson-source-coupling-20261007\\runs\\backgrounds\\heavy.npz": "55b4fefe0c4f86c7eaedaee1e3c86fe2362e18a42fd0173dd99f5b33937e5c5e",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\thomson-source-coupling-20261007\\runs\\backgrounds\\cold.npz": "02569f6eb4d0787facf1f10f4a7c9bb7d46fd5a27242c035884352ea6c0d2b2b"
+  }
+}

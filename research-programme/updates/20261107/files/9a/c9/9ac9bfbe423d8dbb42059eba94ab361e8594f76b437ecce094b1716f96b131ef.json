@@ -1,0 +1,531 @@
+{
+  "passed": true,
+  "reports": [
+    {
+      "model": "heavy",
+      "passed": true,
+      "finite16_state_replay": 2.601302939776624e-07,
+      "finite16_physical_replay": {
+        "Phi": 1.562713843263746e-10,
+        "Psi": 1.4814415049690864e-10,
+        "D": 1.5631798192524996e-10,
+        "Q": 3.121181962584102e-10,
+        "Pi": 1.0664474880364601e-07,
+        "theta_c": 3.478650271856499e-08,
+        "delta_c": 1.4412925931114752e-08,
+        "delta_b": 1.0646746468757865e-07,
+        "delta_gamma": 1.114672469745396e-07,
+        "delta_massless": 9.856907289757387e-08,
+        "Phi_rate": 3.126236225738084e-10
+      },
+      "comparisons": [
+        {
+          "label": "L64 precision",
+          "left": "L64-base",
+          "right": "L64-fine",
+          "state_error": 1.6448179459837954e-07,
+          "physical_errors": {
+            "Phi": 1.1975177591212074e-10,
+            "Psi": 1.1485068798952268e-10,
+            "D": 1.1980949515820615e-10,
+            "Q": 2.239283235992864e-10,
+            "Pi": 8.965126784816113e-08,
+            "theta_c": 2.588018515070966e-08,
+            "delta_c": 9.640786678327787e-09,
+            "delta_b": 7.978316230422197e-08,
+            "delta_gamma": 8.380768703197999e-08,
+            "delta_massless": 9.392718650115938e-08,
+            "Phi_rate": 2.237308239829678e-10
+          },
+          "passed": true
+        },
+        {
+          "label": "L128 precision",
+          "left": "L128-base",
+          "right": "L128-fine",
+          "state_error": 1.910897242635895e-07,
+          "physical_errors": {
+            "Phi": 2.3499296616437635e-10,
+            "Psi": 2.453379224413926e-10,
+            "D": 2.349985311314543e-10,
+            "Q": 4.0731213748301583e-10,
+            "Pi": 1.2305118315512007e-07,
+            "theta_c": 2.8724519858229965e-08,
+            "delta_c": 2.4569177234879212e-08,
+            "delta_b": 8.147567662463759e-08,
+            "delta_gamma": 8.501532957916067e-08,
+            "delta_massless": 1.4345677446288835e-07,
+            "Phi_rate": 4.062840027060093e-10
+          },
+          "passed": true
+        },
+        {
+          "label": "64/128 angular",
+          "left": "L64-fine",
+          "right": "L128-fine",
+          "state_error": 1.0237137666717429e-06,
+          "physical_errors": {
+            "Phi": 3.592243085075377e-11,
+            "Psi": 3.2563446795320867e-11,
+            "D": 3.5938767246374136e-11,
+            "Q": 3.308063610309194e-11,
+            "Pi": 2.486302716298547e-08,
+            "theta_c": 3.375731042567284e-09,
+            "delta_c": 2.4034313022224443e-09,
+            "delta_b": 1.3677446367390523e-08,
+            "delta_gamma": 1.4417217127340767e-08,
+            "delta_massless": 2.3892937246204616e-08,
+            "Phi_rate": 3.327350591351636e-11
+          },
+          "passed": true
+        },
+        {
+          "label": "128/G192 angular",
+          "left": "L128-fine",
+          "right": "G192-fine",
+          "state_error": 6.964547065005346e-08,
+          "physical_errors": {
+            "Phi": 4.103142452242666e-11,
+            "Psi": 3.9982337376472785e-11,
+            "D": 4.1030901230927265e-11,
+            "Q": 5.603080353275488e-11,
+            "Pi": 3.5712440112206485e-08,
+            "theta_c": 6.801164816484236e-09,
+            "delta_c": 5.54414689157988e-09,
+            "delta_b": 1.867611946265671e-08,
+            "delta_gamma": 1.9712418170601623e-08,
+            "delta_massless": 3.799715141061568e-08,
+            "Phi_rate": 5.5813775238834896e-11
+          },
+          "passed": true
+        }
+      ],
+      "algebra": {
+        "L16-base": {
+          "Hamiltonian": 3.766366957397001e-16,
+          "slip": 9.288508320872717e-16,
+          "momentum": 3.730185788617236e-16
+        },
+        "L64-base": {
+          "Hamiltonian": 3.482694685770172e-16,
+          "slip": 8.264689642851815e-16,
+          "momentum": 3.7301857886138993e-16
+        },
+        "L64-fine": {
+          "Hamiltonian": 3.433890867964825e-16,
+          "slip": 9.115069330538007e-16,
+          "momentum": 3.730185788615822e-16
+        },
+        "L128-base": {
+          "Hamiltonian": 3.3281492621554396e-16,
+          "slip": 9.295260324670052e-16,
+          "momentum": 3.7301857886132223e-16
+        },
+        "L128-fine": {
+          "Hamiltonian": 3.7633166400902084e-16,
+          "slip": 8.918196436986525e-16,
+          "momentum": 4.973581051489355e-16
+        },
+        "G192-fine": {
+          "Hamiltonian": 3.3837313881758047e-16,
+          "slip": 8.531600035539804e-16,
+          "momentum": 3.7301857886149297e-16
+        },
+        "L64-zero": {
+          "Hamiltonian": 0.0,
+          "slip": 0.0,
+          "momentum": 0.0
+        },
+        "L64-negative": {
+          "Hamiltonian": 3.482694685770172e-16,
+          "slip": 8.264689642851815e-16,
+          "momentum": 3.7301857886138993e-16
+        }
+      },
+      "zero_state": true,
+      "zero_sources": true,
+      "negative_state_error": 0.0,
+      "negative_source_errors": {
+        "Phi": 0.0,
+        "Psi": 0.0,
+        "D": 0.0,
+        "Q": 0.0,
+        "Pi": 0.0,
+        "theta_c": 0.0,
+        "delta_c": 0.0,
+        "delta_b": 0.0,
+        "delta_gamma": 0.0,
+        "delta_massless": 0.0,
+        "Phi_rate": 0.0
+      },
+      "physical_change_from_original": {
+        "Phi": 4.009447968683426e-05,
+        "Psi": 4.850374200833975e-05,
+        "D": 4.009358719679092e-05,
+        "Q": 0.0001392065663706828,
+        "Pi": 0.06957029421358238,
+        "theta_c": 2.2637922545755986e-06,
+        "delta_c": 6.105803812581692e-07,
+        "delta_b": 6.092523652948464e-06,
+        "delta_gamma": 6.222721963920191e-06,
+        "delta_massless": 3.877250561755644e-06,
+        "Phi_rate": 0.0001389323249514868
+      },
+      "physical_change_16_to64": {
+        "Phi": 4.009461575173622e-05,
+        "Psi": 4.85038808917074e-05,
+        "D": 4.009372337236163e-05,
+        "Q": 0.00013920657225143453,
+        "Pi": 0.06957027372272671,
+        "theta_c": 2.242021944649321e-06,
+        "delta_c": 5.885100348599617e-07,
+        "delta_b": 6.081394391473421e-06,
+        "delta_gamma": 6.213804789010874e-06,
+        "delta_massless": 3.86439616002214e-06,
+        "Phi_rate": 0.00013893232826491975
+      },
+      "massive_quadrupole_change": [
+        0.5528918875825057,
+        0.5538036723677554,
+        0.553867766329707,
+        0.5538820965436531,
+        0.5538869024550871
+      ],
+      "selected_state_change": [
+        6.105969785296161e-07,
+        2.744182701821807e-09,
+        3.1455937074784262e-09
+      ],
+      "selected_native_indices": [
+        2,
+        98,
+        99
+      ],
+      "newton": {
+        "L16-base": {
+          "split_error": 6.568062504088799e-16,
+          "velocity_replay_error": 2.9787508117036605e-06,
+          "source_refinement": 2.750581629873759e-11,
+          "force_poisson_difference": 0.0019067463214706756,
+          "force_triangle_budget": 0.0019264307737325423,
+          "velocity_poisson_difference": 1.9322811691518902e-05,
+          "velocity_interpolant_budget": 0.0004831664833038886,
+          "bound_excess": 0.0,
+          "passed": true,
+          "scope": "force approximation on corrected relativistic sources; not independently evolved Poisson cosmology or static local PPN",
+          "file": "heavy-L16-base-newton.npz",
+          "sha256": "d58f0387aca794303c3c16f8d7b42c4cc442de99b32f96e8b0105d3fdadb3f4f"
+        },
+        "L64-fine": {
+          "split_error": 6.78193397061228e-16,
+          "velocity_replay_error": 2.968579921469942e-06,
+          "source_refinement": 2.750805026953475e-11,
+          "force_poisson_difference": 0.0019067461049350023,
+          "force_triangle_budget": 0.0019264305552768569,
+          "velocity_poisson_difference": 1.8879032665435207e-05,
+          "velocity_interpolant_budget": 0.00048269035409501695,
+          "bound_excess": 0.0,
+          "passed": true,
+          "scope": "force approximation on corrected relativistic sources; not independently evolved Poisson cosmology or static local PPN",
+          "file": "heavy-L64-fine-newton.npz",
+          "sha256": "6fe8d8816413f0062a5507e9f97477db6052864a5b7d853f6b78efc4df1dba02"
+        },
+        "L128-fine": {
+          "split_error": 6.663807650469053e-16,
+          "velocity_replay_error": 2.970796786574901e-06,
+          "source_refinement": 2.7508917976325014e-11,
+          "force_poisson_difference": 0.0019067461064535651,
+          "force_triangle_budget": 0.001926430556468668,
+          "velocity_poisson_difference": 1.8879032614039893e-05,
+          "velocity_interpolant_budget": 0.00048269035277434264,
+          "bound_excess": 0.0,
+          "passed": true,
+          "scope": "force approximation on corrected relativistic sources; not independently evolved Poisson cosmology or static local PPN",
+          "file": "heavy-L128-fine-newton.npz",
+          "sha256": "484efcd40bb14a30d2bb513be27edb005af4a7c2768c53d0faa4ca07588e807b"
+        },
+        "G192-fine": {
+          "split_error": 6.307309832526506e-16,
+          "velocity_replay_error": 2.9756784839529567e-06,
+          "source_refinement": 2.7512967409602217e-11,
+          "force_poisson_difference": 0.0019067461055954887,
+          "force_triangle_budget": 0.0019264305556199936,
+          "velocity_poisson_difference": 1.887903260403895e-05,
+          "velocity_interpolant_budget": 0.00048269034956583003,
+          "bound_excess": 0.0,
+          "passed": true,
+          "scope": "force approximation on corrected relativistic sources; not independently evolved Poisson cosmology or static local PPN",
+          "file": "heavy-G192-fine-newton.npz",
+          "sha256": "a49fbe69be92402ba51c7b47fc49132f94b2fdca05216144fef78a5114f23eb7"
+        }
+      },
+      "no_future_species_histories_supplied": true,
+      "original_action_retained": true,
+      "old_closure_failure_preserved": true
+    },
+    {
+      "model": "cold",
+      "passed": true,
+      "finite16_state_replay": 2.8554753329936506e-07,
+      "finite16_physical_replay": {
+        "Phi": 1.15225042643709e-13,
+        "Psi": 7.00687457593727e-12,
+        "D": 1.1522997724243675e-13,
+        "Q": 4.701336602970199e-11,
+        "Pi": 2.5464474997773876e-09,
+        "theta_c": 3.874498920659949e-15,
+        "delta_c": 4.0964355852105935e-15,
+        "delta_b": 1.828571201652106e-08,
+        "delta_gamma": 2.648679106801077e-09,
+        "delta_massless": 2.0043851216912258e-10,
+        "Phi_rate": 3.186250684805513e-11
+      },
+      "comparisons": [
+        {
+          "label": "L64 precision",
+          "left": "L64-base",
+          "right": "L64-fine",
+          "state_error": 4.617782234226778e-07,
+          "physical_errors": {
+            "Phi": 1.9630473321088787e-13,
+            "Psi": 1.1441921233470289e-11,
+            "D": 1.956525544626754e-13,
+            "Q": 8.638994847772552e-11,
+            "Pi": 4.127688769918758e-09,
+            "theta_c": 6.026998321026587e-15,
+            "delta_c": 1.7751220869245904e-15,
+            "delta_b": 2.9599433281898307e-08,
+            "delta_gamma": 4.254592462102232e-09,
+            "delta_massless": 2.714356231024113e-10,
+            "Phi_rate": 5.910575915613734e-11
+          },
+          "passed": true
+        },
+        {
+          "label": "L128 precision",
+          "left": "L128-base",
+          "right": "L128-fine",
+          "state_error": 5.601149416644533e-07,
+          "physical_errors": {
+            "Phi": 3.4132935584865953e-13,
+            "Psi": 1.3577930294461374e-11,
+            "D": 3.4123967053725753e-13,
+            "Q": 9.0992119300834e-11,
+            "Pi": 4.984184111450985e-09,
+            "theta_c": 8.035997761368782e-15,
+            "delta_c": 1.9116699397649437e-15,
+            "delta_b": 3.5886272629416004e-08,
+            "delta_gamma": 5.254320747732542e-09,
+            "delta_massless": 3.575838921093122e-10,
+            "Phi_rate": 6.316677212227354e-11
+          },
+          "passed": true
+        },
+        {
+          "label": "64/128 angular",
+          "left": "L64-fine",
+          "right": "L128-fine",
+          "state_error": 9.816517413328063e-07,
+          "physical_errors": {
+            "Phi": 3.824279432571376e-14,
+            "Psi": 8.007395474237925e-13,
+            "D": 3.8145095914737685e-14,
+            "Q": 7.120031819523165e-12,
+            "Pi": 2.957171277395323e-10,
+            "theta_c": 3.228749100549957e-15,
+            "delta_c": 3.1406006153281216e-15,
+            "delta_b": 2.156246043555767e-09,
+            "delta_gamma": 3.191770172854228e-10,
+            "delta_massless": 2.452908545954327e-11,
+            "Phi_rate": 4.690647226695732e-12
+          },
+          "passed": true
+        },
+        {
+          "label": "128/G192 angular",
+          "left": "L128-fine",
+          "right": "G192-fine",
+          "state_error": 5.233951850367638e-08,
+          "physical_errors": {
+            "Phi": 6.170996357103812e-14,
+            "Psi": 1.3204938884869022e-12,
+            "D": 6.166790506215926e-14,
+            "Q": 1.035552860436913e-11,
+            "Pi": 4.625062324708493e-10,
+            "theta_c": 3.156999120537736e-15,
+            "delta_c": 2.730957056807062e-15,
+            "delta_b": 3.3710796843662763e-09,
+            "delta_gamma": 4.751914531586621e-10,
+            "delta_massless": 3.0621519257686676e-11,
+            "Phi_rate": 6.8506452725783134e-12
+          },
+          "passed": true
+        }
+      ],
+      "algebra": {
+        "L16-base": {
+          "Hamiltonian": 4.448499150220443e-16,
+          "slip": 9.009231744624253e-16,
+          "momentum": 3.938906853672362e-16
+        },
+        "L64-base": {
+          "Hamiltonian": 4.28221031556933e-16,
+          "slip": 8.543613307217024e-16,
+          "momentum": 3.938906853672362e-16
+        },
+        "L64-fine": {
+          "Hamiltonian": 4.591167549557252e-16,
+          "slip": 9.523352102594736e-16,
+          "momentum": 3.938906853672362e-16
+        },
+        "L128-base": {
+          "Hamiltonian": 4.649006089828931e-16,
+          "slip": 1.000352111617094e-15,
+          "momentum": 3.3234526577860555e-16
+        },
+        "L128-fine": {
+          "Hamiltonian": 4.2535456805164473e-16,
+          "slip": 9.026207416821393e-16,
+          "momentum": 2.9541801402542713e-16
+        },
+        "G192-fine": {
+          "Hamiltonian": 4.2680841312052826e-16,
+          "slip": 1.0001096020142779e-15,
+          "momentum": 3.938906853672362e-16
+        },
+        "L64-zero": {
+          "Hamiltonian": 0.0,
+          "slip": 0.0,
+          "momentum": 0.0
+        },
+        "L64-negative": {
+          "Hamiltonian": 4.28221031556933e-16,
+          "slip": 8.543613307217024e-16,
+          "momentum": 3.938906853672362e-16
+        }
+      },
+      "zero_state": true,
+      "zero_sources": true,
+      "negative_state_error": 0.0,
+      "negative_source_errors": {
+        "Phi": 0.0,
+        "Psi": 0.0,
+        "D": 0.0,
+        "Q": 0.0,
+        "Pi": 0.0,
+        "theta_c": 0.0,
+        "delta_c": 0.0,
+        "delta_b": 0.0,
+        "delta_gamma": 0.0,
+        "delta_massless": 0.0,
+        "Phi_rate": 0.0
+      },
+      "physical_change_from_original": {
+        "Phi": 0.0002521038625771804,
+        "Psi": 0.0003109482558688267,
+        "D": 0.0002521211745401145,
+        "Q": 0.028888585522543385,
+        "Pi": 0.07082111297000847,
+        "theta_c": 2.841457267662931e-06,
+        "delta_c": 5.1081832550035184e-08,
+        "delta_b": 6.042767927166724e-06,
+        "delta_gamma": 6.205250647299056e-06,
+        "delta_massless": 3.87333685557325e-06,
+        "Phi_rate": 0.01855100320290663
+      },
+      "physical_change_16_to64": {
+        "Phi": 0.00025210386252391367,
+        "Psi": 0.0003109482559094286,
+        "D": 0.0002521211744968834,
+        "Q": 0.028888585534158212,
+        "Pi": 0.0708211129582151,
+        "theta_c": 2.841457268093431e-06,
+        "delta_c": 5.1081831048008805e-08,
+        "delta_b": 6.042767190972979e-06,
+        "delta_gamma": 6.205250139966215e-06,
+        "delta_massless": 3.873555844721511e-06,
+        "Phi_rate": 0.018551003210383755
+      },
+      "massive_quadrupole_change": [
+        0.555287904883195,
+        0.5559325776000816,
+        0.5559845593613169,
+        0.5559768325911878,
+        0.555971275068818
+      ],
+      "selected_state_change": [
+        5.107495306427041e-08
+      ],
+      "selected_native_indices": [
+        2
+      ],
+      "newton": {
+        "L16-base": {
+          "split_error": 6.436204858743679e-16,
+          "velocity_replay_error": 2.9658562912604243e-08,
+          "source_refinement": 3.8400589302540826e-13,
+          "force_poisson_difference": 0.002757708956672361,
+          "force_triangle_budget": 0.0027751693110618387,
+          "velocity_poisson_difference": 3.750763320122392e-06,
+          "velocity_interpolant_budget": 0.00019840593556628538,
+          "bound_excess": 0.0,
+          "passed": true,
+          "scope": "force approximation on corrected relativistic sources; not independently evolved Poisson cosmology or static local PPN",
+          "file": "cold-L16-base-newton.npz",
+          "sha256": "71aad7cb68c8a0260bd1ef6193409a9a9600edd829930f38fea61409f03c7d11"
+        },
+        "L64-fine": {
+          "split_error": 6.7393418622640115e-16,
+          "velocity_replay_error": 2.9658576114600565e-08,
+          "source_refinement": 3.9821238906782805e-13,
+          "force_poisson_difference": 0.0027577089566760858,
+          "force_triangle_budget": 0.0027751693110680538,
+          "velocity_poisson_difference": 3.404436418742794e-06,
+          "velocity_interpolant_budget": 0.00019594335533989248,
+          "bound_excess": 0.0,
+          "passed": true,
+          "scope": "force approximation on corrected relativistic sources; not independently evolved Poisson cosmology or static local PPN",
+          "file": "cold-L64-fine-newton.npz",
+          "sha256": "866f2a70d628a091fbf763d50ebf04e31838f8b8860c76e6c800234fa8414f68"
+        },
+        "L128-fine": {
+          "split_error": 6.223402682272406e-16,
+          "velocity_replay_error": 2.9658573818601205e-08,
+          "source_refinement": 3.983558890278525e-13,
+          "force_poisson_difference": 0.002757708956664911,
+          "force_triangle_budget": 0.002775169311056769,
+          "velocity_poisson_difference": 3.404436418742794e-06,
+          "velocity_interpolant_budget": 0.0001959433553396811,
+          "bound_excess": 0.0,
+          "passed": true,
+          "scope": "force approximation on corrected relativistic sources; not independently evolved Poisson cosmology or static local PPN",
+          "file": "cold-L128-fine-newton.npz",
+          "sha256": "1d8b9699193342d296234ed344ee6a8cb37b58d425cfe0970fa246d68b1be4b9"
+        },
+        "G192-fine": {
+          "split_error": 7.042478865784343e-16,
+          "velocity_replay_error": 2.9658575253600805e-08,
+          "source_refinement": 3.9864288894790136e-13,
+          "force_poisson_difference": 0.002757708956685398,
+          "force_triangle_budget": 0.0027751693110764824,
+          "velocity_poisson_difference": 3.404436418886294e-06,
+          "velocity_interpolant_budget": 0.00019594335533981925,
+          "bound_excess": 0.0,
+          "passed": true,
+          "scope": "force approximation on corrected relativistic sources; not independently evolved Poisson cosmology or static local PPN",
+          "file": "cold-G192-fine-newton.npz",
+          "sha256": "101a4fa2843bf822451d99b42f8580a93ff5a66d4f098acaea457c5516a2230c"
+        }
+      },
+      "no_future_species_histories_supplied": true,
+      "original_action_retained": true,
+      "old_closure_failure_preserved": true
+    }
+  ],
+  "source_sha256": "66d8e4c1a45103cae05a970a9bb5f540fbb9c302c8d4a6b5790487362c4919e7",
+  "prediction_result_sha256": "ae3a2e699603803f20e6bc23979b83da984685855171d2d4269639716bf57c3f",
+  "csv_sha256": "0d042bcb4f66de0921c8d080f597b6949b95670191140031bfcea27f31f4eec3",
+  "numerical_gate": 2e-05,
+  "algebra_gate": 1e-10,
+  "force_budget_scope": "same corrected relativistic source; no self-consistent Poisson-system substitution"
+}

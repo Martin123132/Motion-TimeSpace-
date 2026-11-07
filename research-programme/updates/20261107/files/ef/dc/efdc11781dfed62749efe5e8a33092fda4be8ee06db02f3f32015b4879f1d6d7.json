@@ -1,0 +1,793 @@
+{
+  "model": "cold",
+  "label": "half",
+  "wave": 0.32497672865575244,
+  "passed": true,
+  "comparisons": [
+    {
+      "label": "envelope precision",
+      "state_error": 1.5668623671049802e-06,
+      "source_errors": {
+        "Phi": 4.208998859648201e-13,
+        "Psi": 4.858173305321091e-11,
+        "D": 7.732411875533058e-14,
+        "Q": 3.937366249990251e-11,
+        "Pi": 2.993297946244327e-09,
+        "theta_c": 4.023478252230107e-13,
+        "delta_c": 1.2361287008183882e-15,
+        "delta_b": 9.197475731644984e-09,
+        "delta_gamma": 1.5081932031455726e-09,
+        "delta_massless": 3.619068314809321e-14,
+        "Phi_rate": 4.023768085696921e-11
+      },
+      "passed": true
+    },
+    {
+      "label": "angular128/192",
+      "state_error": 2.5341541819259613e-07,
+      "source_errors": {
+        "Phi": 6.691806084961044e-14,
+        "Psi": 7.917194379044143e-12,
+        "D": 1.387072545276345e-14,
+        "Q": 6.107154356130571e-12,
+        "Pi": 4.877194035875677e-10,
+        "theta_c": 6.180003385812167e-14,
+        "delta_c": 8.829490720131344e-16,
+        "delta_b": 1.5015266338324078e-09,
+        "delta_gamma": 2.4726590246280237e-10,
+        "delta_massless": 4.537024417982533e-15,
+        "Phi_rate": 6.247813103871772e-12
+      },
+      "passed": true
+    },
+    {
+      "label": "carrier phase offset",
+      "state_error": 0.0,
+      "source_errors": {
+        "Phi": 0.0,
+        "Psi": 0.0,
+        "D": 0.0,
+        "Q": 0.0,
+        "Pi": 0.0,
+        "theta_c": 0.0,
+        "delta_c": 0.0,
+        "delta_b": 0.0,
+        "delta_gamma": 0.0,
+        "delta_massless": 0.0,
+        "Phi_rate": 0.0
+      },
+      "passed": true
+    },
+    {
+      "label": "forward native L128",
+      "state_error": 0.0,
+      "source_errors": {
+        "Phi": 0.0,
+        "Psi": 0.0,
+        "D": 0.0,
+        "Q": 0.0,
+        "Pi": 0.0,
+        "theta_c": 0.0,
+        "delta_c": 0.0,
+        "delta_b": 0.0,
+        "delta_gamma": 0.0,
+        "delta_massless": 0.0,
+        "Phi_rate": 0.0
+      },
+      "passed": true
+    },
+    {
+      "label": "forward native G192",
+      "state_error": 0.0,
+      "source_errors": {
+        "Phi": 0.0,
+        "Psi": 0.0,
+        "D": 0.0,
+        "Q": 0.0,
+        "Pi": 0.0,
+        "theta_c": 0.0,
+        "delta_c": 0.0,
+        "delta_b": 0.0,
+        "delta_gamma": 0.0,
+        "delta_massless": 0.0,
+        "Phi_rate": 0.0
+      },
+      "passed": true
+    }
+  ],
+  "zero": true,
+  "parity": 0.0,
+  "parity_sources": 0.0,
+  "algebra": {
+    "L128-envelope-base": {
+      "Hamiltonian": 4.482779722553699e-16,
+      "slip": 1.0554013781110234e-15,
+      "momentum": 4.119380626445311e-16
+    },
+    "L128-envelope-fine": {
+      "Hamiltonian": 4.306670519167661e-16,
+      "slip": 9.93517862508871e-16,
+      "momentum": 5.492507501927081e-16
+    },
+    "G192-envelope-fine": {
+      "Hamiltonian": 4.258640736426014e-16,
+      "slip": 9.4254004842677e-16,
+      "momentum": 4.805944064186196e-16
+    },
+    "L128-envelope-zero": {
+      "Hamiltonian": 0.0,
+      "slip": 0.0,
+      "momentum": 0.0
+    },
+    "L128-envelope-negative": {
+      "Hamiltonian": 4.482779722553699e-16,
+      "slip": 1.0554013781110234e-15,
+      "momentum": 4.119380626445311e-16
+    },
+    "L128-envelope-shift": {
+      "Hamiltonian": 4.306670519167661e-16,
+      "slip": 9.93517862508871e-16,
+      "momentum": 5.492507501927081e-16
+    }
+  },
+  "balance": {
+    "L128-envelope-base": {
+      "passed": true,
+      "raw_continuity": 6.997478066315706e-08,
+      "raw_momentum": 2.8434956298966165e-16,
+      "algebra": [
+        1.842249968332877e-16,
+        2.8434956298966165e-16
+      ],
+      "source_errors": {
+        "density": 2.0492707303102625e-16,
+        "flux": 2.2860658131566395e-16,
+        "shear": 1.988136890181859e-16,
+        "enthalpy": 3.607769404158764e-16
+      },
+      "fields": [
+        {
+          "kinematics": 2.182746455266776e-14,
+          "dynamics": 7.051824128144314e-14
+        },
+        {
+          "kinematics": 0.0,
+          "dynamics": 0.0
+        }
+      ],
+      "integrals": [
+        {
+          "stride": 1,
+          "raw_error": [
+            3.1296124771018435e-08,
+            5.4404822951117626e-11
+          ],
+          "accounted_error": [
+            1.6373673135178996e-13,
+            5.4404822951117626e-11
+          ]
+        },
+        {
+          "stride": 2,
+          "raw_error": [
+            3.129612057001344e-08,
+            5.454667333482399e-11
+          ],
+          "accounted_error": [
+            1.7388062146682577e-13,
+            5.454667333482399e-11
+          ]
+        },
+        {
+          "stride": 4,
+          "raw_error": [
+            3.129608757675468e-08,
+            5.5072125561978045e-11
+          ],
+          "accounted_error": [
+            2.0912807802816228e-13,
+            5.5072125561978045e-11
+          ]
+        }
+      ],
+      "integral_refinement": [
+        4.313714887303102e-14,
+        1.4240511873135435e-12
+      ],
+      "scales": [
+        0.00016677623177501996,
+        2.9788438510281682e-05
+      ],
+      "predicted_baryon_continuity": 1.7800698443162474e-11,
+      "predicted_neutrino_continuity": 6.997478066147035e-08,
+      "predicted_scalar_continuity": 5.904865453219854e-38,
+      "file": "cold-half-L128-envelope-base-balance.npz",
+      "sha256": "58a82838e8abefc7e1e48b99b95c1f7070c12c8b3f0c7ab98d6be85ec9cb227d"
+    },
+    "L128-envelope-fine": {
+      "passed": true,
+      "raw_continuity": 6.997478066315706e-08,
+      "raw_momentum": 3.127845192885892e-16,
+      "algebra": [
+        1.6337603155210738e-16,
+        3.127845192885892e-16
+      ],
+      "source_errors": {
+        "density": 2.0492707303102625e-16,
+        "flux": 2.286065813156605e-16,
+        "shear": 1.9881368901861483e-16,
+        "enthalpy": 3.607769404158764e-16
+      },
+      "fields": [
+        {
+          "kinematics": 2.182746455266776e-14,
+          "dynamics": 7.051824128144314e-14
+        },
+        {
+          "kinematics": 0.0,
+          "dynamics": 0.0
+        }
+      ],
+      "integrals": [
+        {
+          "stride": 1,
+          "raw_error": [
+            3.1296211147779716e-08,
+            4.935273180733137e-12
+          ],
+          "accounted_error": [
+            2.1107488522195702e-14,
+            4.935273180733137e-12
+          ]
+        },
+        {
+          "stride": 2,
+          "raw_error": [
+            3.1296206741847645e-08,
+            5.073237252557138e-12
+          ],
+          "accounted_error": [
+            2.8997180833890215e-14,
+            5.073237252557138e-12
+          ]
+        },
+        {
+          "stride": 4,
+          "raw_error": [
+            3.1296172928880596e-08,
+            5.6111485383928865e-12
+          ],
+          "accounted_error": [
+            6.301507495704057e-14,
+            5.6111485383928865e-12
+          ]
+        }
+      ],
+      "integral_refinement": [
+        4.364946655560859e-14,
+        1.424051544424099e-12
+      ],
+      "scales": [
+        0.00016677623177501996,
+        2.9788438510285358e-05
+      ],
+      "predicted_baryon_continuity": 1.7800698443129574e-11,
+      "predicted_neutrino_continuity": 6.997478066147035e-08,
+      "predicted_scalar_continuity": 5.90486545321987e-38,
+      "file": "cold-half-L128-envelope-fine-balance.npz",
+      "sha256": "c391d94ee5c6de5ba24a3ebb2ee3c48d127553e09834ccac2ae5c36f81ab0dc0"
+    },
+    "G192-envelope-fine": {
+      "passed": true,
+      "raw_continuity": 6.997478066315706e-08,
+      "raw_momentum": 3.127845192886307e-16,
+      "algebra": [
+        1.6974922991046861e-16,
+        3.127845192886307e-16
+      ],
+      "source_errors": {
+        "density": 2.0492707303102625e-16,
+        "flux": 2.286065813156446e-16,
+        "shear": 1.9881368901817896e-16,
+        "enthalpy": 3.607769404158764e-16
+      },
+      "fields": [
+        {
+          "kinematics": 2.182746455266776e-14,
+          "dynamics": 7.051824128144314e-14
+        },
+        {
+          "kinematics": 0.0,
+          "dynamics": 0.0
+        }
+      ],
+      "integrals": [
+        {
+          "stride": 1,
+          "raw_error": [
+            3.12961998767907e-08,
+            8.337739233744191e-12
+          ],
+          "accounted_error": [
+            3.9550925094988064e-14,
+            8.337739233744191e-12
+          ]
+        },
+        {
+          "stride": 2,
+          "raw_error": [
+            3.129619516346802e-08,
+            8.47581760885884e-12
+          ],
+          "accounted_error": [
+            4.805539862577565e-14,
+            8.47581760885884e-12
+          ]
+        },
+        {
+          "stride": 4,
+          "raw_error": [
+            3.129616124803743e-08,
+            8.99338290895746e-12
+          ],
+          "accounted_error": [
+            8.135604799331741e-14,
+            8.99338290895746e-12
+          ]
+        }
+      ],
+      "integral_refinement": [
+        4.3854393628639616e-14,
+        1.4240506492493796e-12
+      ],
+      "scales": [
+        0.00016677623177501996,
+        2.9788438510281407e-05
+      ],
+      "predicted_baryon_continuity": 1.780069844312729e-11,
+      "predicted_neutrino_continuity": 6.997478066147035e-08,
+      "predicted_scalar_continuity": 5.904865453219863e-38,
+      "file": "cold-half-G192-envelope-fine-balance.npz",
+      "sha256": "5c2a51d26e40c2b2f74bf8973b4c14b0ee2a7ced340055089ea41289e83aca0b"
+    },
+    "L128-envelope-zero": {
+      "passed": true,
+      "raw_continuity": 0.0,
+      "raw_momentum": 0.0,
+      "algebra": [
+        0.0,
+        0.0
+      ],
+      "source_errors": {
+        "density": 0.0,
+        "flux": 0.0,
+        "shear": 0.0,
+        "enthalpy": 3.607769404158764e-16
+      },
+      "fields": [
+        {
+          "kinematics": 2.182746455266776e-14,
+          "dynamics": 7.051824128144314e-14
+        },
+        {
+          "kinematics": 0.0,
+          "dynamics": 0.0
+        }
+      ],
+      "integrals": [
+        {
+          "stride": 1,
+          "raw_error": [
+            0.0,
+            0.0
+          ],
+          "accounted_error": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "stride": 2,
+          "raw_error": [
+            0.0,
+            0.0
+          ],
+          "accounted_error": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "stride": 4,
+          "raw_error": [
+            0.0,
+            0.0
+          ],
+          "accounted_error": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "integral_refinement": [
+        0.0,
+        0.0
+      ],
+      "scales": [
+        1e-80,
+        1e-80
+      ],
+      "predicted_baryon_continuity": 0.0,
+      "predicted_neutrino_continuity": 0.0,
+      "predicted_scalar_continuity": 0.0,
+      "file": "cold-half-L128-envelope-zero-balance.npz",
+      "sha256": "1303cddcc1e691bbc48a09abacc73d0aefc9ad25abcfcef7fbfe23a790945b05"
+    },
+    "L128-envelope-negative": {
+      "passed": true,
+      "raw_continuity": 6.997478066315706e-08,
+      "raw_momentum": 2.8434956298966165e-16,
+      "algebra": [
+        1.842249968332877e-16,
+        2.8434956298966165e-16
+      ],
+      "source_errors": {
+        "density": 2.0492707303102625e-16,
+        "flux": 2.2860658131566395e-16,
+        "shear": 1.988136890181859e-16,
+        "enthalpy": 3.607769404158764e-16
+      },
+      "fields": [
+        {
+          "kinematics": 2.182746455266776e-14,
+          "dynamics": 7.051824128144314e-14
+        },
+        {
+          "kinematics": 0.0,
+          "dynamics": 0.0
+        }
+      ],
+      "integrals": [
+        {
+          "stride": 1,
+          "raw_error": [
+            3.1296124771018435e-08,
+            5.4404822951117626e-11
+          ],
+          "accounted_error": [
+            1.6373673135178996e-13,
+            5.4404822951117626e-11
+          ]
+        },
+        {
+          "stride": 2,
+          "raw_error": [
+            3.129612057001344e-08,
+            5.454667333482399e-11
+          ],
+          "accounted_error": [
+            1.7388062146682577e-13,
+            5.454667333482399e-11
+          ]
+        },
+        {
+          "stride": 4,
+          "raw_error": [
+            3.129608757675468e-08,
+            5.5072125561978045e-11
+          ],
+          "accounted_error": [
+            2.0912807802816228e-13,
+            5.5072125561978045e-11
+          ]
+        }
+      ],
+      "integral_refinement": [
+        4.313714887303102e-14,
+        1.4240511873135435e-12
+      ],
+      "scales": [
+        0.00016677623177501996,
+        2.9788438510281682e-05
+      ],
+      "predicted_baryon_continuity": 1.7800698443162474e-11,
+      "predicted_neutrino_continuity": 6.997478066147035e-08,
+      "predicted_scalar_continuity": 5.904865453219854e-38,
+      "file": "cold-half-L128-envelope-negative-balance.npz",
+      "sha256": "24da45e07ae5f1d5805848ee59d3af1a699e11e400afbfcee8d28ae43f5a4ec7"
+    },
+    "L128-envelope-shift": {
+      "passed": true,
+      "raw_continuity": 6.997478066315706e-08,
+      "raw_momentum": 3.127845192885892e-16,
+      "algebra": [
+        1.6337603155210738e-16,
+        3.127845192885892e-16
+      ],
+      "source_errors": {
+        "density": 2.0492707303102625e-16,
+        "flux": 2.286065813156605e-16,
+        "shear": 1.9881368901861483e-16,
+        "enthalpy": 3.607769404158764e-16
+      },
+      "fields": [
+        {
+          "kinematics": 2.182746455266776e-14,
+          "dynamics": 7.051824128144314e-14
+        },
+        {
+          "kinematics": 0.0,
+          "dynamics": 0.0
+        }
+      ],
+      "integrals": [
+        {
+          "stride": 1,
+          "raw_error": [
+            3.1296211147779716e-08,
+            4.935273180733137e-12
+          ],
+          "accounted_error": [
+            2.1107488522195702e-14,
+            4.935273180733137e-12
+          ]
+        },
+        {
+          "stride": 2,
+          "raw_error": [
+            3.1296206741847645e-08,
+            5.073237252557138e-12
+          ],
+          "accounted_error": [
+            2.8997180833890215e-14,
+            5.073237252557138e-12
+          ]
+        },
+        {
+          "stride": 4,
+          "raw_error": [
+            3.1296172928880596e-08,
+            5.6111485383928865e-12
+          ],
+          "accounted_error": [
+            6.301507495704057e-14,
+            5.6111485383928865e-12
+          ]
+        }
+      ],
+      "integral_refinement": [
+        4.364946655560859e-14,
+        1.424051544424099e-12
+      ],
+      "scales": [
+        0.00016677623177501996,
+        2.9788438510285358e-05
+      ],
+      "predicted_baryon_continuity": 1.7800698443129574e-11,
+      "predicted_neutrino_continuity": 6.997478066147035e-08,
+      "predicted_scalar_continuity": 5.90486545321987e-38,
+      "file": "cold-half-L128-envelope-shift-balance.npz",
+      "sha256": "c391d94ee5c6de5ba24a3ebb2ee3c48d127553e09834ccac2ae5c36f81ab0dc0"
+    }
+  },
+  "metric": {
+    "L128-envelope-base": {
+      "passed": true,
+      "physical_Phi_integral_errors": [
+        3.12961240804064e-08,
+        3.129612087734268e-08,
+        3.129607967036084e-08
+      ],
+      "source_refinement": 5.055646511794631e-14,
+      "geometry_rate_identity": 4.119380626445311e-16,
+      "scope": "Phi reconstructed from evolved eta,shear and repaired H versus integrated momentum Einstein equation",
+      "file": "cold-half-L128-envelope-base-metric.npz",
+      "sha256": "93557c024fc449c75a363c9f1596c36b8527202f4e46f7a77eeb1b3bce1b1d78"
+    },
+    "L128-envelope-fine": {
+      "passed": true,
+      "physical_Phi_integral_errors": [
+        3.1296212381081777e-08,
+        3.129620770634014e-08,
+        3.1296164681403215e-08
+      ],
+      "source_refinement": 5.2201281620071276e-14,
+      "geometry_rate_identity": 4.119380626445311e-16,
+      "scope": "Phi reconstructed from evolved eta,shear and repaired H versus integrated momentum Einstein equation",
+      "file": "cold-half-L128-envelope-fine-metric.npz",
+      "sha256": "e5444c37107a2eac2ebf0d6ad03dca80460bf27ddd337c452650e9c3aa51765a"
+    },
+    "G192-envelope-fine": {
+      "passed": true,
+      "physical_Phi_integral_errors": [
+        3.1296199915104073e-08,
+        3.129619593291675e-08,
+        3.129615290797983e-08
+      ],
+      "source_refinement": 5.1249019434630504e-14,
+      "geometry_rate_identity": 5.492507501927081e-16,
+      "scope": "Phi reconstructed from evolved eta,shear and repaired H versus integrated momentum Einstein equation",
+      "file": "cold-half-G192-envelope-fine-metric.npz",
+      "sha256": "5d957daf06f0fb25d1c0231920840403ee669dbca13049e0be1abc7577fe0a29"
+    },
+    "L128-envelope-zero": {
+      "passed": true,
+      "physical_Phi_integral_errors": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_refinement": 0.0,
+      "geometry_rate_identity": 0.0,
+      "scope": "Phi reconstructed from evolved eta,shear and repaired H versus integrated momentum Einstein equation",
+      "file": "cold-half-L128-envelope-zero-metric.npz",
+      "sha256": "7ef6868248ce476714f7e454615f03cb0d2b9301655c5b705562046e4770b845"
+    },
+    "L128-envelope-negative": {
+      "passed": true,
+      "physical_Phi_integral_errors": [
+        3.12961240804064e-08,
+        3.129612087734268e-08,
+        3.129607967036084e-08
+      ],
+      "source_refinement": 5.055646511794631e-14,
+      "geometry_rate_identity": 4.119380626445311e-16,
+      "scope": "Phi reconstructed from evolved eta,shear and repaired H versus integrated momentum Einstein equation",
+      "file": "cold-half-L128-envelope-negative-metric.npz",
+      "sha256": "d6bd425e610ae4fd0912b123915940c54a1ea2b251ff55cac2c0cfdeca19fdbb"
+    },
+    "L128-envelope-shift": {
+      "passed": true,
+      "physical_Phi_integral_errors": [
+        3.1296212381081777e-08,
+        3.129620770634014e-08,
+        3.1296164681403215e-08
+      ],
+      "source_refinement": 5.2201281620071276e-14,
+      "geometry_rate_identity": 4.119380626445311e-16,
+      "scope": "Phi reconstructed from evolved eta,shear and repaired H versus integrated momentum Einstein equation",
+      "file": "cold-half-L128-envelope-shift-metric.npz",
+      "sha256": "e5444c37107a2eac2ebf0d6ad03dca80460bf27ddd337c452650e9c3aa51765a"
+    }
+  },
+  "rotating": {},
+  "averages": {
+    "passed": true,
+    "algebra": {
+      "force_split": 9.096538632228944e-16,
+      "cold_pressure_zero": 0.0
+    },
+    "windows": {
+      "1": {
+        "cycles": 1,
+        "count": 17,
+        "duration_min": 0.16887159320639,
+        "duration_max": 0.20740061946061417,
+        "pressure_over_density": 2.412306037229309e-78,
+        "raw_pressure_over_density": 2.3697080901265216e-78,
+        "matter_density_norm": 0.004145411007421618,
+        "pressure_reconstruction_error": 0.0,
+        "integration_refinement": {
+          "2": 3.3697167217664277e-13,
+          "4": 2.576719120059209e-13
+        },
+        "force_error": 0.021602805645456608,
+        "force_bound": 0.026657741091791046,
+        "force_identity": 1.9925042366879387e-13,
+        "force_refinement": 3.2521002545508075e-13,
+        "cold_pressure_exact_zero": true,
+        "passed": true
+      },
+      "2": {
+        "cycles": 2,
+        "count": 17,
+        "duration_min": 0.3377436587976348,
+        "duration_max": 0.4148024553310705,
+        "pressure_over_density": 2.412284788208497e-78,
+        "raw_pressure_over_density": 2.3697080901265216e-78,
+        "matter_density_norm": 0.004145447522979483,
+        "pressure_reconstruction_error": 0.0,
+        "integration_refinement": {
+          "2": 1.5085652625513507e-13,
+          "4": 1.3087483657779054e-13
+        },
+        "force_error": 0.02159464807209803,
+        "force_bound": 0.02665206159953498,
+        "force_identity": 1.3616998113760156e-13,
+        "force_refinement": 3.1571720236393966e-13,
+        "cold_pressure_exact_zero": true,
+        "passed": true
+      },
+      "4": {
+        "cycles": 4,
+        "count": 17,
+        "duration_min": 0.6754910967948149,
+        "duration_max": 0.8296146422684672,
+        "pressure_over_density": 2.412199788892865e-78,
+        "raw_pressure_over_density": 2.3697080901265216e-78,
+        "matter_density_norm": 0.004145593597199397,
+        "pressure_reconstruction_error": 0.0,
+        "integration_refinement": {
+          "2": 1.5545416023431463e-13,
+          "4": 1.1883978871210054e-13
+        },
+        "force_error": 0.02156203840103427,
+        "force_bound": 0.0266293500394789,
+        "force_identity": 9.986314090756788e-14,
+        "force_refinement": 2.747697105205429e-13,
+        "cold_pressure_exact_zero": true,
+        "passed": true
+      },
+      "8": {
+        "cycles": 8,
+        "count": 17,
+        "duration_min": 1.3510124300353539,
+        "duration_max": 1.65930715189198,
+        "pressure_over_density": 2.411859739605887e-78,
+        "raw_pressure_over_density": 2.3697080901265216e-78,
+        "matter_density_norm": 0.004146178086472833,
+        "pressure_reconstruction_error": 0.0,
+        "integration_refinement": {
+          "2": 1.4507706923092368e-13,
+          "4": 9.821728046707811e-14
+        },
+        "force_error": 0.02143192954685971,
+        "force_bound": 0.02653856270582204,
+        "force_identity": 1.075280609203252e-13,
+        "force_refinement": 4.388140343312334e-13,
+        "cold_pressure_exact_zero": true,
+        "passed": true
+      }
+    },
+    "file": "cold-half-averages.npz",
+    "sha256": "2157e640e91c33a43bb9c3417006063357f9f0232ef70ef41a74acb49851bf6e"
+  },
+  "average_comparisons": {
+    "1": {
+      "errors": {
+        "matter_D": 2.412306037229309e-78,
+        "matter_P": 2.412306037229309e-78,
+        "matter_Q": 2.412306037229309e-78
+      },
+      "passed": true
+    },
+    "2": {
+      "errors": {
+        "matter_D": 2.412284788208497e-78,
+        "matter_P": 2.412284788208497e-78,
+        "matter_Q": 2.412284788208497e-78
+      },
+      "passed": true
+    },
+    "4": {
+      "errors": {
+        "matter_D": 2.412199788892865e-78,
+        "matter_P": 2.412199788892865e-78,
+        "matter_Q": 2.412199788892865e-78
+      },
+      "passed": true
+    },
+    "8": {
+      "errors": {
+        "matter_D": 2.411859739605887e-78,
+        "matter_P": 2.411859739605887e-78,
+        "matter_Q": 2.411859739605887e-78
+      },
+      "passed": true
+    }
+  },
+  "newton": {
+    "split_error": 7.351626389020713e-16,
+    "velocity_replay_error": 3.000378210630795e-08,
+    "source_refinement": 1.0361682323517406e-14,
+    "force_poisson_difference": 0.020814788069284038,
+    "force_triangle_budget": 0.0262427475030057,
+    "velocity_poisson_difference": 0.0018709263310001116,
+    "velocity_interpolant_budget": 0.003070552378656158,
+    "bound_excess": 0.0,
+    "passed": true,
+    "scope": "force approximation on corrected relativistic sources; not independently evolved Poisson cosmology or static local PPN",
+    "file": "cold-half-newton.npz",
+    "sha256": "eed37b53b7ffd3daea2cb6e8aa570f9f17b19978f8413fa6acdcf1c6fda09778"
+  }
+}

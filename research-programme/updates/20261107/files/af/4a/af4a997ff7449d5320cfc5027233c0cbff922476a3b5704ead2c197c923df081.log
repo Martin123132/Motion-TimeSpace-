@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\condensate-origin-20261003\native-two-field-transfer-20261007\validate_native.py", line 126, in <module>
+    main()
+    ~~~~^^
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\condensate-origin-20261003\native-two-field-transfer-20261007\validate_native.py", line 60, in main
+    densities = native.get_background_densities(scales, vars=['cdm', 'baryon', 'photon', 'neutrino', 'nu'])
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\condensate-origin-20261003\native-two-field-transfer-20261007\native\camb\results.py", line 716, in get_background_densities
+    self.f_GetBackgroundDensities(byref(c_int(arr.shape[0])), arr, outputs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\condensate-origin-20261003\native-two-field-transfer-20261007\native\camb\baseconfig.py", line 562, in method_func
+    return _func(self.fortran_self, *args)
+ctypes.ArgumentError: argument 3: TypeError: array must have flags ['C_CONTIGUOUS']
