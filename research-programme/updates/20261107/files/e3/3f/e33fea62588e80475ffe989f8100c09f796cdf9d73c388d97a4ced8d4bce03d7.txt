@@ -1,0 +1,26 @@
+{"sigma": {"real": 0.0207, "imaginary": -1e-07}, "mismatch_times_radius": {"real": -0.3136986021610961, "imaginary": -0.0010695558482216308}, "nodes": 1076, "maximum_rms_residual": 1.9896088579126396e-07, "outgoing": {"outer_radius": 1932.3671497584542, "far_phase": 40.0, "series_order": 10, "function_evaluations": 2090}}
+{"sigma": {"real": 0.0207, "imaginary": -1e-07}, "mismatch_times_radius": {"real": -0.31369860216109635, "imaginary": -0.0010695558482216308}, "nodes": 1076, "maximum_rms_residual": 1.9896088462076083e-07, "outgoing": {"outer_radius": 1932.3671497584542, "far_phase": 40.0, "series_order": 10, "function_evaluations": 2090}}
+{"sigma": {"real": 0.0207, "imaginary": -1e-07}, "mismatch_times_radius": {"real": -0.3136986021610939, "imaginary": -0.0010695558482216312}, "nodes": 1076, "maximum_rms_residual": 1.9896088461738554e-07, "outgoing": {"outer_radius": 1932.3671497584542, "far_phase": 40.0, "series_order": 10, "function_evaluations": 2090}}
+{"sigma": {"real": 0.020700000308454036, "imaginary": -1e-07}, "mismatch_times_radius": {"real": -0.3136990279238657, "imaginary": -0.0010695559117746617}, "nodes": 1076, "maximum_rms_residual": 1.9896089637713512e-07, "outgoing": {"outer_radius": 1932.3671209639401, "far_phase": 40.0, "series_order": 10, "function_evaluations": 2090}}
+{"sigma": {"real": 0.0207, "imaginary": -9.999999850988387e-08}, "mismatch_times_radius": {"real": -0.3136986021610969, "imaginary": -0.0010695558502785579}, "nodes": 1076, "maximum_rms_residual": 1.9896088494310028e-07, "outgoing": {"outer_radius": 1932.3671497584542, "far_phase": 40.0, "series_order": 10, "function_evaluations": 2090}}
+{"sigma": {"real": 0.020472734614629184, "imaginary": -8.409051223187577e-07}, "mismatch_times_radius": {"real": -0.019494734247956537, "imaginary": -0.00012291057270036494}, "nodes": 1058, "maximum_rms_residual": 1.9984587855812373e-07, "outgoing": {"outer_radius": 1953.8181270330754, "far_phase": 40.0, "series_order": 10, "function_evaluations": 2102}}
+{"sigma": {"real": 0.020457675461391545, "imaginary": -9.335986141349649e-07}, "mismatch_times_radius": {"real": -0.0012866084945178, "imaginary": -1.552401157794934e-05}, "nodes": 1056, "maximum_rms_residual": 1.998512261837373e-07, "outgoing": {"outer_radius": 1955.2563572283384, "far_phase": 40.0, "series_order": 10, "function_evaluations": 2102}}
+{"sigma": {"real": 0.02045661136889128, "imaginary": -9.458975795541329e-07}, "mismatch_times_radius": {"real": -5.653610609699563e-06, "imaginary": -1.082980579993853e-06}, "nodes": 1056, "maximum_rms_residual": 1.9984045965553234e-07, "outgoing": {"outer_radius": 1955.3580638887574, "far_phase": 40.0, "series_order": 10, "function_evaluations": 2102}}
+{"sigma": {"real": 0.020456606673124596, "imaginary": -9.466902506308844e-07}, "mismatch_times_radius": {"real": -2.234313767781305e-09, "imaginary": -1.3067091935307302e-07}, "nodes": 1056, "maximum_rms_residual": 1.9984041210457552e-07, "outgoing": {"outer_radius": 1955.3585127366725, "far_phase": 40.0, "series_order": 10, "function_evaluations": 2102}}
+Traceback (most recent call last):
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\condensate-origin-20261003\dynamical-tides-20261004\outgoing_modes.py", line 115, in <module>
+    main()
+    ~~~~^^
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\condensate-origin-20261003\dynamical-tides-20261004\outgoing_modes.py", line 94, in main
+    result = root(mismatch, [args.guess, -1e-7], method='hybr', options={'xtol': 2e-9, 'maxfev': 45})
+  File "C:\Users\ollet\AppData\Local\Programs\Python\Python313\Lib\site-packages\scipy\optimize\_root.py", line 254, in root
+    sol = _root_hybr(_wrapped_fun, x0, args=args, jac=jac, **options)
+  File "C:\Users\ollet\AppData\Local\Programs\Python\Python313\Lib\site-packages\scipy\optimize\_minpack_py.py", line 250, in _root_hybr
+    retval = _minpack._hybrd(func, x0, args, 1, xtol, maxfev,
+                             ml, mu, epsfcn, factor, diag)
+  File "C:\Users\ollet\AppData\Local\Programs\Python\Python313\Lib\site-packages\scipy\optimize\_root.py", line 216, in _wrapped_fun
+    return fun(*fargs)
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\condensate-origin-20261003\dynamical-tides-20261004\outgoing_modes.py", line 82, in mismatch
+    assert solution.success, solution.message
+           ^^^^^^^^^^^^^^^^
+AssertionError: The maximum number of mesh nodes is exceeded.

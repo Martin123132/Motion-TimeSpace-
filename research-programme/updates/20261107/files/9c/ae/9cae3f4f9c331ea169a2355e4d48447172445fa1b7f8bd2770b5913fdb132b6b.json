@@ -1,0 +1,71 @@
+{
+  "checks": [
+    {
+      "name": "Invertible96-mode energy coordinate mass identity:cold:split-second:512",
+      "value": 5.997533455506962e-17,
+      "passed": true
+    },
+    {
+      "name": "Inherited independent energy reconstructs all terminal photon modes:cold:split-second:512",
+      "value": 1.4733715127871598e-16,
+      "passed": true
+    },
+    {
+      "name": "Original homogeneous photon equations for every column:cold:split-second:512",
+      "value": 8.42717787193162e-15,
+      "passed": true
+    },
+    {
+      "name": "Original independent gas equation:cold:split-second:512",
+      "value": 1.5982807505437424e-19,
+      "passed": true
+    },
+    {
+      "name": "Energy plus inherited and downstream expansion work:cold:split-second:512",
+      "value": 4.825246794876162e-14,
+      "passed": true
+    },
+    {
+      "name": "Spectral energy within explicit floating-point allowance:cold:split-second:512",
+      "value": 0.0027300428037284313,
+      "passed": true
+    },
+    {
+      "name": "Photon-number emission bookkeeping for every column:cold:split-second:512",
+      "value": 1.6874566020031508e-11,
+      "passed": true
+    },
+    {
+      "name": "Direct54 total equals separately transferred components:cold:split-second:512",
+      "errors": {
+        "photon": 2.4545085266290716e-13,
+        "gas": 2.6117557435060094e-13,
+        "energy": 2.749667108805416e-13,
+        "work": 3.007173368308875e-13,
+        "number": 2.469736665268254e-13
+      },
+      "passed": true
+    }
+  ],
+  "metrics": {
+    "model": "cold",
+    "label": "split-second",
+    "steps": 512,
+    "start_fraction": 0.75,
+    "end_fraction": 1.0,
+    "heat": 5.755472902372864e-10,
+    "energy_work_relative": 4.825246794876162e-14,
+    "number_relative": 1.6874566020031508e-11,
+    "identity_errors": {
+      "photon": 2.4545085266290716e-13,
+      "gas": 2.6117557435060094e-13,
+      "energy": 2.749667108805416e-13,
+      "work": 3.007173368308875e-13,
+      "number": 2.469736665268254e-13
+    },
+    "original_photon_relative": 8.42717787193162e-15,
+    "original_gas_absolute": 1.5982807505437424e-19,
+    "energy_roundoff_ratio": 0.0027300428037284313,
+    "step_balance_absolute": 4.820728991805603e-27
+  }
+}

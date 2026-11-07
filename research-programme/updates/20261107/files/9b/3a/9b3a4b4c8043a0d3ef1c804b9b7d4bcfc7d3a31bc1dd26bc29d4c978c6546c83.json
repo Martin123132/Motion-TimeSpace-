@@ -1,0 +1,99 @@
+{
+  "panel": 36,
+  "order": 18,
+  "passed": false,
+  "previous_sha256": "f69d670c20a64ef6173deccea791a14a619ba67be4cce83f163adca0a0396b35",
+  "packet_sha256": "e1276f9872e5051bd4a25b0a5c0d1179fdf18fb1d5d7f6db244fa56a70f398af",
+  "checks": [
+    {
+      "name": "control:join0:l0:actions:exchange",
+      "entries": 342,
+      "failed_entries": 0,
+      "maximum": 2.4332878377769365e-11,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "control:join0:l1:actions:exchange",
+      "entries": 342,
+      "failed_entries": 0,
+      "maximum": 8.100343823433918e-12,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "control:join1:l0:actions:exchange",
+      "entries": 342,
+      "failed_entries": 0,
+      "maximum": 2.4332878377769365e-11,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "control:join1:l1:actions:exchange",
+      "entries": 342,
+      "failed_entries": 0,
+      "maximum": 8.100343823433918e-12,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "difference:join0:l0:actions:exchange",
+      "entries": 342,
+      "failed_entries": 0,
+      "maximum": 1.2808466383369035e-11,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "difference:join0:l1:actions:exchange",
+      "entries": 342,
+      "failed_entries": 23,
+      "maximum": 3.0078533962417354e-09,
+      "limit": 1e-10,
+      "passed": false
+    },
+    {
+      "name": "difference:join1:l0:actions:exchange",
+      "entries": 342,
+      "failed_entries": 0,
+      "maximum": 1.2808466383369035e-11,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "difference:join1:l1:actions:exchange",
+      "entries": 342,
+      "failed_entries": 23,
+      "maximum": 3.0078533962417354e-09,
+      "limit": 1e-10,
+      "passed": false
+    }
+  ],
+  "process": {
+    "pid": 23204,
+    "created_time": 1793752199.0203905,
+    "command": [
+      "C:\\Users\\ollet\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "-B",
+      "C:\\MTS-Data\\condensate-origin-20261003\\stiff-gas-dense-output-20261027\\data\\memory-tail-history-20261027\\source-readout-bridge-20261102\\run_final_real_directions.py",
+      "run",
+      "--ray",
+      "3",
+      "--stop-utc",
+      "2026-11-04T02:40:00Z",
+      "--order",
+      "18",
+      "--panels",
+      "8",
+      "--minutes",
+      "25"
+    ],
+    "priority": 16384,
+    "affinity": [
+      4
+    ]
+  },
+  "seconds": 13.367500899999868,
+  "finished_at": "2026-11-04T00:32:31.644309+00:00"
+}

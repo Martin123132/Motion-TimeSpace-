@@ -1,0 +1,42 @@
+{
+  "accepted_scope": "Full original16-electron, four-profile,96-mode mixed-resolution source and original finite-heat photon/gas response; observed incoming-frequency component budgets pass without discarding or fitting source terms.",
+  "numerical_gate_scope": "Midpoint only. K uses compact128/160, D/V/S retain actual Stage95 seed4 nodes with seed3/4 refinement evidence. Gates quantify computed differences at fixed hard3/electron16 and inherited internal quadrature, not continuum error bounds.",
+  "preferred_diagnostic": "runs/compact160-h3-g2-2-4/source.npz",
+  "incoming_frequency_gate_closed": true,
+  "all_dimension_remainder_gate_closed": false,
+  "outer_population_refinement_complete": false,
+  "source_observed_budget_max": 0.007621275210428895,
+  "response_observed_budget_max": 0.0026722954465879865,
+  "gas_observed_budget_max": 0.00188749789453298,
+  "control_refinement_over_remainder_max": 8.651439168891163e-8,
+  "source_component_budget_max": {
+    "control": 8.651439168891163e-8,
+    "difference": 0.006243294447546853,
+    "virtual": 0.0013376972303703433,
+    "state": 0.00004019701817207849
+  },
+  "change_from_unresolved_seed4_max": 0.213714566293979,
+  "mixed_estimator_computed": true,
+  "mixed_estimator": "Gaccurate + K_compact160 + D_seed4 + V_seed4 + S_seed4",
+  "exact_original_population_retained": true,
+  "original_photon_and_gas_equations_checked": true,
+  "inner_probe_count": 40,
+  "inner_sampled_contribution_sum_max": {
+    "radial": 1.3901651750498212e-11,
+    "angular": 4.0761984540131084e-13
+  },
+  "inner_probes_are_global_error_bound": false,
+  "control_coefficient_fitted": false,
+  "source_smallness_used_to_waive_gate": false,
+  "new_virtual_loop_evaluations": 0,
+  "modes_removed": 0,
+  "new_empirical_fit": false,
+  "full_parent_feedback_applied": false,
+  "new_parent_history": false,
+  "github_action": false,
+  "retained_failed_checks": {},
+  "rigorous_continuum_error_bound": false,
+  "unchanged_virtual_state_internal_accuracy_proved_here": false,
+  "next_target": "Refine the hard scattering-angle rule3-to5 on the same electron population. Use compact128 control and matched leading subtraction, plus actual node-owned seed4 D/V/S at the new hard directions. Reuse identical physical nodes with changed quadrature weights only after identity/hash checks. Compare the whole remainder and original coupled response, including the retained incoming budget. Then independently refine electron sampling and consistent domain/tail companions before physical-history feedback.",
+  "conclusion": "The full-population incoming sampling repair works. Observed source, photon-response and gas-response component budgets are0.76213percent,0.26723percent and0.18875percent respectively, all below1percent with original equations and energy/work checks intact. The next uncertainty is hard/electron sampling, not another incoming-frequency sweep."
+}

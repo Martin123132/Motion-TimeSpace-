@@ -1,0 +1,14 @@
+{
+  "stage": 205,
+  "phase": "prepare",
+  "outcome": "preflight_exception_before_freeze",
+  "error": "KeyError: frequencies",
+  "cause": "The sealed Stage201 single-node packet uses scalar 'frequency'; later packets use array 'frequencies'. The added leaf-identity preflight incorrectly assumed the newer header everywhere.",
+  "source_sha256": "30be8f3e7fd3e9867ada27fd5bcbb7696fb3b748b9a3fcbd2f1f54dc5e93f83c",
+  "configuration_created": false,
+  "predictions_created": false,
+  "actual_sources_evaluated": 0,
+  "repair": "Read the existing scalar or array metadata explicitly, require each leaf to declare exactly one frequency, and compare the sorted leaf list to the sealed reference header.",
+  "physical_inputs_changed": false,
+  "tolerances_changed": false
+}

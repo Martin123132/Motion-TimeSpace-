@@ -1,0 +1,21 @@
+camb_python.f90:112:15:
+
+  112 |         State%CP%DarkEnergy%num_perturb_equations, State%CP%Nu_mass_eigenstates]
+      |               1
+Error: Unexpected '%' for nonderived-type variable 'state' at (1)
+camb_python.f90:115:15:
+
+  115 |     if (State%CP%Evolve_delta_xe .and. .not.EV%saha) signature(25)=EV%xe_ix
+      |               1
+Error: Unexpected '%' for nonderived-type variable 'state' at (1)
+camb_python.f90:116:15:
+
+  116 |     if (State%CP%Evolve_delta_Ts) signature(26)=EV%Ts_ix
+      |               1
+Error: Unexpected '%' for nonderived-type variable 'state' at (1)
+camb_python.f90:117:15:
+
+  117 |     if (State%CP%Nu_mass_eigenstates>6) error stop 'unsupported neutrino signature size'
+      |               1
+Error: Unexpected '%' for nonderived-type variable 'state' at (1)
+compilation terminated due to -fmax-errors=4.

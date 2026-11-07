@@ -1,0 +1,16 @@
+{"order": 48, "next_label": 0, "seconds": 76.24328880000394}
+{"order": 48, "next_label": 8, "seconds": 87.02314730000217}
+{"order": 48, "next_label": 16, "seconds": 99.20540460001212}
+{"order": 48, "next_label": 24, "seconds": 111.35133500001393}
+{"order": 48, "next_label": 32, "seconds": 123.62084009998944}
+{"order": 48, "next_label": 40, "seconds": 135.93320749991108}
+Traceback (most recent call last):
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\replay_annular_material_C2_20261001.py", line 183, in <module>
+    main()
+    ~~~~^^
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\replay_annular_material_C2_20261001.py", line 160, in main
+    evidence.check('original_material_replay-'+str(order),np.max(abs(replay_difference))<=2e-24,replay_difference.tolist())
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\annular_reference_continuum_shell_20260914.py", line 41, in check
+    raise RuntimeError(name+': '+repr(detail))
+RuntimeError: original_material_replay-48: [2.442079169483015e-31, -1.4131154285823052e-23, -2.7517425314835576e-25, -4.784234222440356e-25]

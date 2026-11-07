@@ -1,0 +1,56 @@
+{
+  "stage": 111,
+  "accepted_scope": "Conditional downstream low-frequency prediction using saved gas and high-frequency histories, a derived soft Compton/DC/BR response, invariant interpolation, and an explanatory sourced turnover scale.",
+  "scientific_checks": 357,
+  "passing_scientific_checks": 353,
+  "retained_failed_checks": 4,
+  "expected_failed_by_packet": {
+    "runs/cold-coarse1280/status.json": [
+      "PREDICTION:field_error_over_residual_peak:baseline",
+      "PREDICTION:residual_error_over_peak:baseline"
+    ],
+    "runs/heavy-coarse1280/status.json": [
+      "PREDICTION:field_error_over_residual_peak:baseline",
+      "PREDICTION:residual_error_over_peak:baseline"
+    ]
+  },
+  "parent_stage110_gas_relative_failures_retain_authority": true,
+  "original_prediction_gates_relaxed": false,
+  "authoritative_prediction": "invariant-half-time2-prediction/runs (main1280 label, actual2560 steps)",
+  "full_spectral_modes": 96,
+  "conditional_test_band": [
+    0.001,
+    0.01
+  ],
+  "evolution_interval_fraction": [
+    0.5,
+    1
+  ],
+  "prediction_snapshots": 65,
+  "correction_minimum_epoch_resolution": 0.0078125,
+  "prediction_reuses_saved_drivers": true,
+  "future_test_band_used_in_evolution": false,
+  "global_template_amplitudes_recomputed_from_hybrid": true,
+  "source54_components_retained": true,
+  "physical_cutoff_fitted": false,
+  "other_physical_parameters_fitted": false,
+  "empirical_fit": false,
+  "independent_observational_prediction": false,
+  "autonomous_residual_decay_valid": false,
+  "source_only_equilibrium_accepted": false,
+  "new_soft_velocity_temperature_nodes": 65,
+  "new_finite_frequency_source_events": 0,
+  "old_predictions_retained": true,
+  "no_full_parent_history_rerun": true,
+  "no_parent_feedback_applied": true,
+  "full_source_precision_gate_closed": false,
+  "source_frequency_continuum_error_bounded": false,
+  "shape_error_is_agreement_not_certified_continuum_bound": true,
+  "hard_functional_full_tail_certified": false,
+  "rate_balance_root_is_diagnostic_not_evolution_input": true,
+  "prior_archive_full_rehash": false,
+  "github_action": false,
+  "subagents": 0,
+  "next_target": "Derive the matched low-frequency source-moment replacement for this downstream correction: subtract the existing finite-band overlap once, pair the soft DC contribution with its hard-photon legs and BR with the gas, then use saved response operators to estimate the change in the final spectrum. Apply the same construction to baseline and both correction joins. Keep the measured transport-grid uncertainty separate; do not add the soft solution as an extra unpaired source, fit a cutoff, or rerun the parent histories before the matching and energy identities pass.",
+  "conclusion": "The driven reduced kinetic equation predicts the saved correction's damping-to-regrowth minimum at u/U=0.6015625 and the late positive slope, with symmetric baseline controls and no fitted infrared cutoff. At the finest tested rule the correction residual-shape discrepancy is0.3648percent of its peak saved norm (1.5622percent endpoint-relative); baseline is0.6706percent. The physical rate-balance turnover shifts upward as BR gains importance, while numerical spacing uncertainty remains explicit."
+}

@@ -1,0 +1,184 @@
+{
+  "checks": [
+    {
+      "name": "heavy: derived FD energy upper bound verified by quadrature",
+      "passed": true
+    },
+    {
+      "name": "heavy: numerical background time agrees with native early solution",
+      "passed": true,
+      "value": 2.0548043933033e-08
+    },
+    {
+      "name": "heavy: retained field backgrounds agree before averaging",
+      "passed": true,
+      "value": 3.130138413629585e-08
+    },
+    {
+      "name": "heavy: native ionization/opacity approximation quantified",
+      "passed": true,
+      "value": 4.1588954502458364e-13
+    },
+    {
+      "name": "heavy: pressureless baryon scope quantified",
+      "passed": true,
+      "value": 1.413084688359611e-06
+    },
+    {
+      "name": "heavy: finite electron-temperature limitation retained",
+      "passed": true,
+      "value": 0.0009192403144502963
+    },
+    {
+      "name": "cold: derived FD energy upper bound verified by quadrature",
+      "passed": true
+    },
+    {
+      "name": "cold: numerical background time agrees with native early solution",
+      "passed": true,
+      "value": 2.0270645828546208e-08
+    },
+    {
+      "name": "cold: retained field backgrounds agree before averaging",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "name": "cold: native ionization/opacity approximation quantified",
+      "passed": true,
+      "value": 1.758593271006248e-13
+    },
+    {
+      "name": "cold: pressureless baryon scope quantified",
+      "passed": true,
+      "value": 1.4130846883599255e-06
+    },
+    {
+      "name": "cold: finite electron-temperature limitation retained",
+      "passed": true,
+      "value": 0.0009192403144505007
+    }
+  ],
+  "count": 12,
+  "all_checks_passed": true,
+  "models": [
+    {
+      "model": "heavy",
+      "scale_range": [
+        5e-07,
+        1e-05
+      ],
+      "native_mass_over_present_neutrino_temperature": [
+        356.5935334924326
+      ],
+      "massive_species_energy_fraction_upper_at_endpoint": [
+        9.202782239361625e-07
+      ],
+      "direct_FD_energy_excess_at_endpoint": [
+        9.202676315556223e-07
+      ],
+      "total_radiation_energy_error_upper": 1.2538605828767018e-07,
+      "native_baryon_cs2_max": 1.413084688359611e-06,
+      "proton_thermal_parameter_max": 5.006339227679571e-07,
+      "electron_thermal_parameter_max": 0.0009192403144502963,
+      "native_ionization_relative_variation": 0.0,
+      "native_opacity_vs_fully_ionized_error": 4.1588954502458364e-13,
+      "native_temperature_vs_photons_error": 1.38222766565832e-13,
+      "self_integrated_time_vs_native_error": 2.0548043933033e-08,
+      "field_amplitude_envelope_errors": [
+        0.0,
+        3.130138413629585e-08
+      ],
+      "cold_electron_recoil_diagnostics": [
+        {
+          "scale": 5e-07,
+          "thermal_electron_parameter": 0.0009192403144502963,
+          "cross_section_fractional_change": 0.006964012638991379,
+          "momentum_cross_section_fractional_change": 0.011108655557919844
+        },
+        {
+          "scale": 9.810739705874254e-07,
+          "thermal_electron_parameter": 0.000468486751258908,
+          "cross_section_fractional_change": 0.003569393678397148,
+          "momentum_cross_section_fractional_change": 0.00570215091055748
+        },
+        {
+          "scale": 1e-05,
+          "thermal_electron_parameter": 4.596201572252107e-05,
+          "cross_section_fractional_change": 0.0003520676185710947,
+          "momentum_cross_section_fractional_change": 0.0005632217247049098
+        }
+      ],
+      "neutrino_bound_is_background_energy_not_all_perturbations": true,
+      "ionization_check_is_native_model_comparison": true,
+      "recoil_not_full_thermal_Compton": true
+    },
+    {
+      "model": "cold",
+      "scale_range": [
+        5e-07,
+        1e-05
+      ],
+      "native_mass_over_present_neutrino_temperature": [
+        356.5935334924326
+      ],
+      "massive_species_energy_fraction_upper_at_endpoint": [
+        9.202782239361625e-07
+      ],
+      "direct_FD_energy_excess_at_endpoint": [
+        9.202676315556223e-07
+      ],
+      "total_radiation_energy_error_upper": 1.2538605828767018e-07,
+      "native_baryon_cs2_max": 1.4130846883599255e-06,
+      "proton_thermal_parameter_max": 5.006339227680684e-07,
+      "electron_thermal_parameter_max": 0.0009192403144505007,
+      "native_ionization_relative_variation": 0.0,
+      "native_opacity_vs_fully_ionized_error": 1.758593271006248e-13,
+      "native_temperature_vs_photons_error": 8.415490526658687e-14,
+      "self_integrated_time_vs_native_error": 2.0270645828546208e-08,
+      "field_amplitude_envelope_errors": [
+        0.0,
+        0.0
+      ],
+      "cold_electron_recoil_diagnostics": [
+        {
+          "scale": 5e-07,
+          "thermal_electron_parameter": 0.0009192403144505007,
+          "cross_section_fractional_change": 0.0069640126389929335,
+          "momentum_cross_section_fractional_change": 0.011108655557922176
+        },
+        {
+          "scale": 9.810739705874254e-07,
+          "thermal_electron_parameter": 0.00046848675125895885,
+          "cross_section_fractional_change": 0.00356939367839737,
+          "momentum_cross_section_fractional_change": 0.005702150910558146
+        },
+        {
+          "scale": 1e-05,
+          "thermal_electron_parameter": 4.59620157225215e-05,
+          "cross_section_fractional_change": 0.0003520676185710947,
+          "momentum_cross_section_fractional_change": 0.0005632217247049098
+        }
+      ],
+      "neutrino_bound_is_background_energy_not_all_perturbations": true,
+      "ionization_check_is_native_model_comparison": true,
+      "recoil_not_full_thermal_Compton": true
+    }
+  ],
+  "physical_prediction_accuracy_not_set_by_numerical_gates": true,
+  "state": "complete",
+  "finished_utc": "2026-10-07T08:03:21.161686+00:00",
+  "script_sha256": "638714583ba70fd2b6fa3ac71a027a90ecd81786fbc0d60acd7d304418efb778",
+  "input_hashes": {
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\coupled-finite-wave-evolution-20261007\\bound_early_scope.py": "638714583ba70fd2b6fa3ac71a027a90ecd81786fbc0d60acd7d304418efb778",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\coupled-finite-wave-evolution-20261007\\evolution_common.py": "6a5809738aeb1860fcd94f600288746c00018e2ee2a2b1eea5902f626486c670",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\coupled-finite-wave-evolution-20261007\\ACCEPTANCE.md": "9eb296ea757117c5d2ac9194d412cb236550f770d9247c5670e6a4ea570b56ca",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\adiabatic-boundary-and-screen-transport-20261007\\results\\stage-integrity.json": "88660f8b689b343cc83fd7ea3a2b745bff8ccab7b93972cd0fbaad92354f7cae",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\thomson-source-coupling-20261007\\results\\calibration\\status.json": "d63cb24f797c87cf8003e4ed60a95b47d506d9391fe6be72a3e17a691a1f6472",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\native-heavy-matching-20261007\\native\\fortran\\constants.f90": "dbea85f23c30a100bd4d33554473664e5ff146e4cba39fd2ffc305b3498313b2",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\native-heavy-matching-20261007\\native\\fortran\\results.f90": "a674d360e5c8e0d4ef540d967aeda2c290786d0872766e5b851fbcfcd93edc76",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\native-heavy-matching-20261007\\native\\fortran\\equations.f90": "0456d911e33d402cc71b006fcdd29682944cfda6003253528bd308016b9d4dab",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\full-history-source-precision-20261007\\runs\\sources\\unmatched-base.npz": "fb5471d7d5d417ee211bab09c3666c1be13f019a505f8d8fb57fa80f591d957a",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\full-history-source-precision-20261007\\runs\\sources\\cold-base.npz": "7e0941fd7971169965364ca35bfb1fbb51be67f90d623f802399aa4a630efc56"
+  }
+}

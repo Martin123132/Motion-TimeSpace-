@@ -1,0 +1,197 @@
+{
+  "state": "complete",
+  "script_sha256": "81c1c5ccf6a23dcea2a89d0f09dcba70fb7f14e169646676a038428e56397458",
+  "checks": [
+    {
+      "name": "translated_mass_octupole_000",
+      "passed": true
+    },
+    {
+      "name": "translated_mass_octupole_001",
+      "passed": true
+    },
+    {
+      "name": "translated_mass_octupole_002",
+      "passed": true
+    },
+    {
+      "name": "translated_mass_octupole_010",
+      "passed": true
+    },
+    {
+      "name": "translated_mass_octupole_011",
+      "passed": true
+    },
+    {
+      "name": "translated_mass_octupole_012",
+      "passed": true
+    },
+    {
+      "name": "translated_mass_octupole_020",
+      "passed": true
+    },
+    {
+      "name": "translated_mass_octupole_021",
+      "passed": true
+    },
+    {
+      "name": "translated_mass_octupole_022",
+      "passed": true
+    },
+    {
+      "name": "translated_mass_octupole_100",
+      "passed": true
+    },
+    {
+      "name": "translated_mass_octupole_101",
+      "passed": true
+    },
+    {
+      "name": "translated_mass_octupole_102",
+      "passed": true
+    },
+    {
+      "name": "translated_mass_octupole_110",
+      "passed": true
+    },
+    {
+      "name": "translated_mass_octupole_111",
+      "passed": true
+    },
+    {
+      "name": "translated_mass_octupole_112",
+      "passed": true
+    },
+    {
+      "name": "translated_mass_octupole_120",
+      "passed": true
+    },
+    {
+      "name": "translated_mass_octupole_121",
+      "passed": true
+    },
+    {
+      "name": "translated_mass_octupole_122",
+      "passed": true
+    },
+    {
+      "name": "translated_mass_octupole_200",
+      "passed": true
+    },
+    {
+      "name": "translated_mass_octupole_201",
+      "passed": true
+    },
+    {
+      "name": "translated_mass_octupole_202",
+      "passed": true
+    },
+    {
+      "name": "translated_mass_octupole_210",
+      "passed": true
+    },
+    {
+      "name": "translated_mass_octupole_211",
+      "passed": true
+    },
+    {
+      "name": "translated_mass_octupole_212",
+      "passed": true
+    },
+    {
+      "name": "translated_mass_octupole_220",
+      "passed": true
+    },
+    {
+      "name": "translated_mass_octupole_221",
+      "passed": true
+    },
+    {
+      "name": "translated_mass_octupole_222",
+      "passed": true
+    },
+    {
+      "name": "continuity_current_quadrupole_00",
+      "passed": true
+    },
+    {
+      "name": "continuity_current_quadrupole_01",
+      "passed": true
+    },
+    {
+      "name": "continuity_current_quadrupole_02",
+      "passed": true
+    },
+    {
+      "name": "continuity_current_quadrupole_10",
+      "passed": true
+    },
+    {
+      "name": "continuity_current_quadrupole_11",
+      "passed": true
+    },
+    {
+      "name": "continuity_current_quadrupole_12",
+      "passed": true
+    },
+    {
+      "name": "continuity_current_quadrupole_20",
+      "passed": true
+    },
+    {
+      "name": "continuity_current_quadrupole_21",
+      "passed": true
+    },
+    {
+      "name": "continuity_current_quadrupole_22",
+      "passed": true
+    },
+    {
+      "name": "mass_quadrupole_third_derivative_norm",
+      "passed": true
+    },
+    {
+      "name": "mass_octupole_fourth_derivative_norm",
+      "passed": true
+    },
+    {
+      "name": "current_quadrupole_third_derivative_norm",
+      "passed": true
+    },
+    {
+      "name": "mass_octupole_trace_0",
+      "passed": true
+    },
+    {
+      "name": "mass_octupole_trace_1",
+      "passed": true
+    },
+    {
+      "name": "mass_octupole_trace_2",
+      "passed": true
+    },
+    {
+      "name": "circular_transported_mass_octupole",
+      "passed": true
+    },
+    {
+      "name": "circular_transported_current_quadrupole",
+      "passed": true
+    }
+  ],
+  "mass_octupole_amplitude": "Mtotal*(chi - 1)*(2*chi**2*r**5 + 9*chi*lambda - chi*r**5 - 9*lambda)/r**2",
+  "transported_tidal_current_amplitude": "9*Mtotal*Omega*lambda*(chi - 1)**2/(2*r**2)",
+  "circular_mass_octupole_relative_amplitude": "(18*chi**2*t - 2*chi**2 - 36*chi*t + chi + 18*t)/chi",
+  "circular_current_quadrupole_relative_amplitude": "(36*chi**2*t - 4*chi**2 - 63*chi*t + 2*chi + 27*t)/(2*chi)",
+  "derivative_norms": {
+    "electric_quadrupole": "32",
+    "mass_octupole": "8202/5",
+    "current_quadrupole": "1/2"
+  },
+  "assumptions": [
+    "Center-of-mass frame; only body2 (fraction chi) is electrically deformable.",
+    "Conserved density/current second moment: integral xi_a j_b = dot(Q_ab)/2 up to trace when internal spin vanishes.",
+    "Linear parity-even quadrupole has no intrinsic odd current quadrupole; transported current is derived separately from an axial tidal response.",
+    "Adiabatic nonspinning circular response; no assertion that magnetic Love number is zero."
+  ]
+}

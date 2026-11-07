@@ -1,0 +1,735 @@
+{
+  "passed": true,
+  "controls": {
+    "half": [
+      {
+        "model": "heavy",
+        "wave": 0.32497672865575244,
+        "core_size": 168,
+        "native_order": 40,
+        "massless_regime": 0,
+        "packing": {
+          "core_entries": 28224,
+          "retained_entries": 760,
+          "exact_zero_only": true,
+          "every_node_roundtrip": true
+        },
+        "gr_state_error": 1.5617959427023572e-07,
+        "gr_physical_errors": {
+          "Phi": 2.250893030984746e-10,
+          "Psi": 1.8398416844547967e-10,
+          "D": 4.836482316712488e-10,
+          "Q": 2.463057238326739e-08,
+          "Pi": 2.8477706349452493e-09,
+          "theta_c": 3.673119639733323e-08,
+          "delta_c": 1.6022411691475981e-09,
+          "delta_b": 5.5693387944740585e-09,
+          "delta_gamma": 5.57863135565592e-09,
+          "delta_massless": 4.9981923070531776e-09
+        },
+        "operator_offnode_max": 1.4144045013212816e-07
+      },
+      {
+        "model": "cold",
+        "wave": 0.32497672865575244,
+        "core_size": 166,
+        "native_order": 40,
+        "massless_regime": 0,
+        "packing": {
+          "core_entries": 27556,
+          "retained_entries": 680,
+          "exact_zero_only": true,
+          "every_node_roundtrip": true
+        },
+        "gr_state_error": 2.6575481832920985e-07,
+        "gr_physical_errors": {
+          "Phi": 2.2554191351301288e-10,
+          "Psi": 1.884011777714249e-10,
+          "D": 4.3983180199974886e-10,
+          "Q": 2.467015081313364e-08,
+          "Pi": 3.097274719661287e-09,
+          "theta_c": 3.673201683050124e-08,
+          "delta_c": 1.822431607209126e-10,
+          "delta_b": 5.573436961093859e-09,
+          "delta_gamma": 5.453951543104751e-09,
+          "delta_massless": 4.961448518845413e-09
+        },
+        "operator_offnode_max": 5.941611666365958e-10
+      }
+    ],
+    "double": [
+      {
+        "model": "heavy",
+        "wave": 1.2999069146230098,
+        "core_size": 114,
+        "native_order": 16,
+        "massless_regime": 1,
+        "packing": {
+          "core_entries": 12996,
+          "retained_entries": 678,
+          "exact_zero_only": true,
+          "every_node_roundtrip": true
+        },
+        "gr_state_error": 5.112928877605708e-08,
+        "gr_physical_errors": {
+          "Phi": 1.817853284615974e-10,
+          "Psi": 1.8042163632594532e-10,
+          "D": 1.97836342792703e-10,
+          "Q": 5.091437940589799e-09,
+          "Pi": 2.0639310368302233e-10,
+          "theta_c": 3.77117009715843e-08,
+          "delta_c": 1.7245460200211403e-09,
+          "delta_b": 1.2519001087819342e-09,
+          "delta_gamma": 1.2062490421077856e-09,
+          "delta_massless": 1.3975223343796887e-09
+        },
+        "operator_offnode_max": 2.153184407522787e-07
+      },
+      {
+        "model": "cold",
+        "wave": 1.2999069146230098,
+        "core_size": 112,
+        "native_order": 16,
+        "massless_regime": 1,
+        "packing": {
+          "core_entries": 12544,
+          "retained_entries": 596,
+          "exact_zero_only": true,
+          "every_node_roundtrip": true
+        },
+        "gr_state_error": 2.867194145640279e-07,
+        "gr_physical_errors": {
+          "Phi": 1.4944682241723683e-10,
+          "Psi": 1.4813740404263105e-10,
+          "D": 1.6203228141392945e-10,
+          "Q": 2.348206511783721e-08,
+          "Pi": 8.681712491870045e-10,
+          "theta_c": 3.6378259723412264e-08,
+          "delta_c": 1.8267900043446964e-10,
+          "delta_b": 5.644570118968288e-09,
+          "delta_gamma": 1.8622625802368018e-09,
+          "delta_massless": 1.3500186987799999e-09
+        },
+        "operator_offnode_max": 9.950442500912592e-11
+      }
+    ]
+  },
+  "comparisons": [
+    {
+      "family": "half",
+      "wave": 0.32497672865575244,
+      "model": "heavy",
+      "branch": "poisson-spatial",
+      "measured": [
+        0.00025169435073612814,
+        -0.0017543934360604305
+      ],
+      "prediction": [
+        0.00025169435867484943,
+        -0.0017543933004744376
+      ],
+      "prediction_error": [
+        7.938721294925566e-12,
+        1.355859929538794e-10
+      ],
+      "old_bound": [
+        0.0029579350542760104,
+        0.02888103840290865
+      ],
+      "transformed_bound": [
+        0.003500054376080886,
+        0.0023418528972866037
+      ],
+      "selected_bound": [
+        0.0029579350542760104,
+        0.0023418528972866037
+      ],
+      "improvement_factor": [
+        0.8451111715550252,
+        12.33255873431323
+      ],
+      "temporal_bound": [
+        0.0034938290471503135,
+        0.0005480116518341855
+      ],
+      "quadrature_budget": 1.476566851681496e-07,
+      "full_history_errors": {
+        "Phi": 0.012260337228616204,
+        "Psi": 0.02255428157627609,
+        "D": 0.0002517340655752798,
+        "Q": 0.0011078027983489021,
+        "Pi": 0.002514687425794009,
+        "theta_c": 0.0018887082393348072,
+        "delta_c": 0.0018031794245917034,
+        "delta_b": 0.0023839848186321105,
+        "delta_gamma": 0.002383176157784587,
+        "delta_massless": 0.00249862371673926
+      }
+    },
+    {
+      "family": "half",
+      "wave": 0.32497672865575244,
+      "model": "heavy",
+      "branch": "newton-dust-force",
+      "measured": [
+        -0.0005035478022164328,
+        -0.009510875349909737
+      ],
+      "prediction": [
+        -0.0005035477928943786,
+        -0.009510875228209186
+      ],
+      "prediction_error": [
+        9.322054196278518e-12,
+        1.217005506787272e-10
+      ],
+      "old_bound": [
+        0.0005864811886101688,
+        0.009532482472694288
+      ],
+      "transformed_bound": [
+        0.8636548183762294,
+        0.055131758038867565
+      ],
+      "selected_bound": [
+        0.0005864811886101688,
+        0.009532482472694288
+      ],
+      "improvement_factor": [
+        0.0006790689707640618,
+        0.172903655021738
+      ],
+      "temporal_bound": [
+        0.863661264682652,
+        0.05515457284919376
+      ],
+      "quadrature_budget": 1.1053907920491916e-07,
+      "full_history_errors": {
+        "Phi": 1.0,
+        "Psi": 0.023816016754441744,
+        "D": 0.001596239691484808,
+        "Q": 0.0055946026595848596,
+        "Pi": 0.015873519060493124,
+        "theta_c": 0.002041284441000146,
+        "delta_c": 0.009510875349909737,
+        "delta_b": 0.01251277660433087,
+        "delta_gamma": 0.01251797673105984,
+        "delta_massless": 0.015957385755562683
+      }
+    },
+    {
+      "family": "half",
+      "wave": 0.32497672865575244,
+      "model": "cold",
+      "branch": "poisson-spatial",
+      "measured": [
+        -0.00015096855201810895,
+        -0.00018685773413417643
+      ],
+      "prediction": [
+        -0.00015096855201889852,
+        -0.00018685773413524396
+      ],
+      "prediction_error": [
+        7.895702321125686e-16,
+        1.0675325640835398e-15
+      ],
+      "old_bound": [
+        0.00028484062810171324,
+        0.00024570970575124335
+      ],
+      "transformed_bound": [
+        0.0002985490416556012,
+        0.00025001167356516194
+      ],
+      "selected_bound": [
+        0.00028484062810171324,
+        0.00024570970575124335
+      ],
+      "improvement_factor": [
+        0.9540832103232754,
+        0.9827929322156338
+      ],
+      "temporal_bound": [
+        2.06081894688618e-05,
+        3.504045360067735e-05
+      ],
+      "quadrature_budget": 1.9683117193356382e-13,
+      "full_history_errors": {
+        "Phi": 0.010137289514059145,
+        "Psi": 0.020882404832190594,
+        "D": 0.0002642192562790596,
+        "Q": 0.0011488868252657381,
+        "Pi": 0.002476457893819354,
+        "theta_c": 0.0018909108417604517,
+        "delta_c": 0.00018685773413417643,
+        "delta_b": 0.0022894729689477713,
+        "delta_gamma": 0.002288418049080951,
+        "delta_massless": 0.002357485366160546
+      }
+    },
+    {
+      "family": "half",
+      "wave": 0.32497672865575244,
+      "model": "cold",
+      "branch": "newton-dust-force",
+      "measured": [
+        -0.0004442170062178148,
+        -0.00098898468072862
+      ],
+      "prediction": [
+        -0.00044421700621972374,
+        -0.0009889846807305267
+      ],
+      "prediction_error": [
+        1.9089547650952277e-15,
+        1.906677940533008e-15
+      ],
+      "old_bound": [
+        0.0004481587371003966,
+        0.0009889846807306178
+      ],
+      "transformed_bound": [
+        0.011729149851292489,
+        0.0010891830419281622
+      ],
+      "selected_bound": [
+        0.0004481587371003966,
+        0.0009889846807306178
+      ],
+      "improvement_factor": [
+        0.038208970196677294,
+        0.9080059481828096
+      ],
+      "temporal_bound": [
+        0.011601547280857705,
+        0.0009814082557096585
+      ],
+      "quadrature_budget": 4.936111887456708e-15,
+      "full_history_errors": {
+        "Phi": 1.0,
+        "Psi": 0.02199135014886023,
+        "D": 0.001550473883368458,
+        "Q": 0.00644719030682021,
+        "Pi": 0.01567921550795924,
+        "theta_c": 0.002021460607851363,
+        "delta_c": 0.00098898468072862,
+        "delta_b": 0.012372471617710669,
+        "delta_gamma": 0.012377419811239873,
+        "delta_massless": 0.01577741020977813
+      }
+    },
+    {
+      "family": "double",
+      "wave": 1.2999069146230098,
+      "model": "heavy",
+      "branch": "poisson-spatial",
+      "measured": [
+        -2.241272121098179e-05,
+        -0.0002542848744810814
+      ],
+      "prediction": [
+        -2.24127720823432e-05,
+        -0.00025428487662101446
+      ],
+      "prediction_error": [
+        5.0871361410734315e-11,
+        2.1399330332912136e-12
+      ],
+      "old_bound": [
+        0.00014967475569943503,
+        0.0016809403598487941
+      ],
+      "transformed_bound": [
+        0.00010048089809717611,
+        0.0006454034953164066
+      ],
+      "selected_bound": [
+        0.00010048089809717611,
+        0.0006454034953164066
+      ],
+      "improvement_factor": [
+        1.4895841750407428,
+        2.6044797898479297
+      ],
+      "temporal_bound": [
+        8.098547363210464e-05,
+        5.154078435796508e-06
+      ],
+      "quadrature_budget": 3.708206069227821e-08,
+      "full_history_errors": {
+        "Phi": 0.003679913201453966,
+        "Psi": 0.011778046731351638,
+        "D": 2.2807137177797127e-05,
+        "Q": 5.5793132248596506e-05,
+        "Pi": 0.0004123605540196294,
+        "theta_c": 0.00033425702913069706,
+        "delta_c": 0.0002559628280898427,
+        "delta_b": 0.00025621858396008553,
+        "delta_gamma": 0.0002563409955108535,
+        "delta_massless": 0.0006938106587808592
+      }
+    },
+    {
+      "family": "double",
+      "wave": 1.2999069146230098,
+      "model": "heavy",
+      "branch": "newton-dust-force",
+      "measured": [
+        -0.00021711192860024157,
+        -0.002059277876824877
+      ],
+      "prediction": [
+        -0.0002171119750056785,
+        -0.002059277877335759
+      ],
+      "prediction_error": [
+        4.640543692043843e-11,
+        5.108821352073356e-13
+      ],
+      "old_bound": [
+        0.0002328522931082669,
+        0.002163114264070248
+      ],
+      "transformed_bound": [
+        0.02782444544738512,
+        0.004111044214546296
+      ],
+      "selected_bound": [
+        0.0002328522931082669,
+        0.002163114264070248
+      ],
+      "improvement_factor": [
+        0.00836862296316313,
+        0.5261714910329599
+      ],
+      "temporal_bound": [
+        0.027824159636801855,
+        0.004054305769268215
+      ],
+      "quadrature_budget": 1.0957504462477981e-07,
+      "full_history_errors": {
+        "Phi": 1.0,
+        "Psi": 0.011838861433964488,
+        "D": 0.00021711192860024157,
+        "Q": 0.000322173500738424,
+        "Pi": 0.00290324941281512,
+        "theta_c": 0.00036196052320223244,
+        "delta_c": 0.002059277876824877,
+        "delta_b": 0.0023216751109024778,
+        "delta_gamma": 0.002324919259138122,
+        "delta_massless": 0.002487098355518403
+      }
+    },
+    {
+      "family": "double",
+      "wave": 1.2999069146230098,
+      "model": "cold",
+      "branch": "poisson-spatial",
+      "measured": [
+        -8.3638860898898e-06,
+        -9.196287021774854e-06
+      ],
+      "prediction": [
+        -8.363886085608635e-06,
+        -9.19628702122145e-06
+      ],
+      "prediction_error": [
+        4.281165401570988e-15,
+        5.534038938909136e-16
+      ],
+      "old_bound": [
+        5.2179228510151125e-05,
+        6.542307971348389e-05
+      ],
+      "transformed_bound": [
+        5.21088554445386e-05,
+        6.527663064940423e-05
+      ],
+      "selected_bound": [
+        5.21088554445386e-05,
+        6.527663064940423e-05
+      ],
+      "improvement_factor": [
+        1.001350501081096,
+        1.0022435144495467
+      ],
+      "temporal_bound": [
+        2.6083806186793815e-07,
+        9.737361770978884e-08
+      ],
+      "quadrature_budget": 2.4863153527208478e-11,
+      "full_history_errors": {
+        "Phi": 0.0006335805946286773,
+        "Psi": 0.008861884551422857,
+        "D": 9.151903992998968e-06,
+        "Q": 0.00013514592148338402,
+        "Pi": 0.0003895974623477043,
+        "theta_c": 0.00019458890320281762,
+        "delta_c": 9.196287021774854e-06,
+        "delta_b": 0.0002457217388811648,
+        "delta_gamma": 0.00024868728246459234,
+        "delta_massless": 0.0006358766626895473
+      }
+    },
+    {
+      "family": "double",
+      "wave": 1.2999069146230098,
+      "model": "cold",
+      "branch": "newton-dust-force",
+      "measured": [
+        -5.513080209396121e-05,
+        -6.171738284238704e-05
+      ],
+      "prediction": [
+        -5.513080210648106e-05,
+        -6.171738284358601e-05
+      ],
+      "prediction_error": [
+        1.2519844915567097e-14,
+        1.198964972443095e-15
+      ],
+      "old_bound": [
+        8.518308910034872e-05,
+        9.07383050666231e-05
+      ],
+      "transformed_bound": [
+        0.0012005974613683171,
+        0.00011992315501951171
+      ],
+      "selected_bound": [
+        8.518308910034872e-05,
+        9.07383050666231e-05
+      ],
+      "improvement_factor": [
+        0.07095058239025911,
+        0.7566370735648159
+      ],
+      "temporal_bound": [
+        0.0011816794707928833,
+        5.7542972305426404e-05
+      ],
+      "quadrature_budget": 1.1798918755568535e-11,
+      "full_history_errors": {
+        "Phi": 1.0,
+        "Psi": 0.008883275206238505,
+        "D": 5.513080209396121e-05,
+        "Q": 0.0005572905526749438,
+        "Pi": 0.0012015707682508294,
+        "theta_c": 0.00019517863580454474,
+        "delta_c": 6.171738284238704e-05,
+        "delta_b": 0.0009874141141964395,
+        "delta_gamma": 0.0009995349209189054,
+        "delta_massless": 0.0011744602520413353
+      }
+    },
+    {
+      "family": "balanced",
+      "wave": 0.6499534573115049,
+      "model": "heavy",
+      "branch": "poisson-spatial",
+      "measured": [
+        4.757185070758481e-05,
+        -0.00047905060706861393
+      ],
+      "prediction": [
+        4.7571829406847926e-05,
+        -0.0004790506095016157
+      ],
+      "prediction_error": [
+        2.1300736883697862e-11,
+        2.43300177097186e-12
+      ],
+      "old_bound": [
+        0.00047420306012352283,
+        0.005509061473677063
+      ],
+      "transformed_bound": [
+        0.00032124064386231896,
+        0.0014082052031271677
+      ],
+      "selected_bound": [
+        0.00032124064386231896,
+        0.0014082052031271677
+      ],
+      "improvement_factor": [
+        1.476161467061317,
+        3.912115550662092
+      ],
+      "temporal_bound": [
+        0.00029695083638391203,
+        2.8751279504087748e-05
+      ],
+      "quadrature_budget": 6.184468722325883e-08,
+      "reused_parent": true
+    },
+    {
+      "family": "balanced",
+      "wave": 0.6499534573115049,
+      "model": "heavy",
+      "branch": "newton-dust-force",
+      "measured": [
+        -0.0003317767327783762,
+        -0.0032179731050063455
+      ],
+      "prediction": [
+        -0.0003317767582415356,
+        -0.0032179731074161886
+      ],
+      "prediction_error": [
+        2.5463159358807275e-11,
+        2.409843158357461e-12
+      ],
+      "old_bound": [
+        0.0003722102750996188,
+        0.0034717573343459496
+      ],
+      "transformed_bound": [
+        0.20728538014294062,
+        0.014552693115191754
+      ],
+      "selected_bound": [
+        0.0003722102750996188,
+        0.0034717573343459496
+      ],
+      "improvement_factor": [
+        0.0017956417130959679,
+        0.23856459466748015
+      ],
+      "temporal_bound": [
+        0.20728907656585085,
+        0.014555611994123207
+      ],
+      "quadrature_budget": 1.1125157184412731e-07,
+      "reused_parent": true
+    },
+    {
+      "family": "balanced",
+      "wave": 0.6499534573115049,
+      "model": "cold",
+      "branch": "poisson-spatial",
+      "measured": [
+        -3.224767386796442e-05,
+        -4.0748852965805866e-05
+      ],
+      "prediction": [
+        -3.224767386446204e-05,
+        -4.074885296785774e-05
+      ],
+      "prediction_error": [
+        3.5023795929428614e-15,
+        2.0518729402195512e-15
+      ],
+      "old_bound": [
+        0.00011115773221895828,
+        0.00014498143404882789
+      ],
+      "transformed_bound": [
+        0.00010893080046109404,
+        0.00014404940994629248
+      ],
+      "selected_bound": [
+        0.00010893080046109404,
+        0.00014404940994629248
+      ],
+      "improvement_factor": [
+        1.020443545337387,
+        1.0064701695264346
+      ],
+      "temporal_bound": [
+        3.9418006842781195e-06,
+        1.2738493141805137e-06
+      ],
+      "quadrature_budget": 1.1948476217031791e-12,
+      "reused_parent": true
+    },
+    {
+      "family": "balanced",
+      "wave": 0.6499534573115049,
+      "model": "cold",
+      "branch": "newton-dust-force",
+      "measured": [
+        -0.000234589818408873,
+        -0.0002476558522476735
+      ],
+      "prediction": [
+        -0.00023458981840673035,
+        -0.0002476558522492343
+      ],
+      "prediction_error": [
+        2.142654543374478e-15,
+        1.5608174475101322e-15
+      ],
+      "old_bound": [
+        0.0002882748682709419,
+        0.0002909362731415884
+      ],
+      "transformed_bound": [
+        0.002545620353910095,
+        0.0003588427319993606
+      ],
+      "selected_bound": [
+        0.0002882748682709419,
+        0.0002909362731415884
+      ],
+      "improvement_factor": [
+        0.11324346453631595,
+        0.8107626188235207
+      ],
+      "temporal_bound": [
+        0.002546452330857962,
+        0.00022903431099338833
+      ],
+      "quadrature_budget": 1.1346211083930514e-13,
+      "reused_parent": true
+    }
+  ],
+  "prospective_new_waves": [
+    "half",
+    "double"
+  ],
+  "new_forward_solves": 12,
+  "new_adjoint_solves": 16,
+  "balanced_reused": true,
+  "no_fit_or_physical_parameter_change": true,
+  "numerical_terminal_scope": true,
+  "uniform_limit_theorem_claimed": false,
+  "evidence_hashes": {
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\half\\evolution-result.json": "8a11c6e748db34990971fcd9d303c4bb6b0c7082886090841ba01b5de842f8d4",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\half\\evolution-validation.json": "13e7aec3a0e5ed07d1d3c075d2d5bf7e4bc47e03fa5706bd796ed7ea26bbc9b8",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\half\\build-result.json": "4d16048661f5feb5634c4dcb7aa09cdd891b20d75fb73fd80c97a4d7e6d62d24",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\half\\response-v2\\adjoint-result.json": "8304e8c631d7c68b9eacea0dc1f4736e08d8ed303a77390a2c8c3d935edb0e2d",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\half\\response-v2\\validation.json": "b0ed154aa2bfb72c8119022ba3e24156e6d8fb1cb13dfbbf8a01cc711e25d814",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\half\\primitive\\primitive-result.json": "074470f31187db3a70c97a41d6b3ed787081d61669e07dc6c1505a5c0a263f00",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\half\\primitive\\validation.json": "3abe39a7388782da2ada13050b3c95aa71bf7b5429053a23e212dafe7c6af636",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\half\\volume\\volume-result.json": "30221133b7b87a8e0a4f7be4588398dd9804863ead781926a24b58be85c08da3",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\half\\preflight-v2\\contexts\\heavy-half\\capture-check.json": "acef17041ce0f3817cf9863419c53409a6d29145e2e4f6063bc35c99c582161f",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\half\\evolution-contexts-v2\\heavy-half\\capture-check.json": "acef17041ce0f3817cf9863419c53409a6d29145e2e4f6063bc35c99c582161f",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\half\\contexts\\heavy-half\\capture-check.json": "acef17041ce0f3817cf9863419c53409a6d29145e2e4f6063bc35c99c582161f",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\half\\adjoint-contexts-v2\\heavy-half\\capture-check.json": "acef17041ce0f3817cf9863419c53409a6d29145e2e4f6063bc35c99c582161f",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\half\\primitive-contexts\\heavy-half\\capture-check.json": "acef17041ce0f3817cf9863419c53409a6d29145e2e4f6063bc35c99c582161f",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\half\\preflight-v2\\contexts\\cold-half\\capture-check.json": "5655d1a697d5248bb7343e5e434fbe684339a9648e7c01f17a7358ca5703a290",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\half\\evolution-contexts-v2\\cold-half\\capture-check.json": "5655d1a697d5248bb7343e5e434fbe684339a9648e7c01f17a7358ca5703a290",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\half\\contexts\\cold-half\\capture-check.json": "5655d1a697d5248bb7343e5e434fbe684339a9648e7c01f17a7358ca5703a290",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\half\\adjoint-contexts-v2\\cold-half\\capture-check.json": "5655d1a697d5248bb7343e5e434fbe684339a9648e7c01f17a7358ca5703a290",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\half\\primitive-contexts\\cold-half\\capture-check.json": "5655d1a697d5248bb7343e5e434fbe684339a9648e7c01f17a7358ca5703a290",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\double\\evolution-result.json": "901030265d6c2981d14c2533a252136c60266602032de8f96466432833e8a68c",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\double\\evolution-validation.json": "0c1fc6d52ebdd7188854e9ebe1b176847625d79afb156b734a7fec67c00b972d",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\double\\build-result.json": "a57f9ce6c3ab7b1c8da15e12ea234e585a156d89bd08a5c89e002a117c395e00",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\double\\response-v2\\adjoint-result.json": "21802d8adc8ef97c41b5206038c7976d9a4e206c5b0069548ab22a0248b6c568",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\double\\response-v2\\validation.json": "f73ac23d28ed1c0dc346c90d13c2e43d1aad785bb943251490738369ad0e6a15",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\double\\primitive\\primitive-result.json": "ea1afd275a38f1958d092f9504dec8d811fd46b307eadb5faea7745af332287a",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\double\\primitive\\validation.json": "b3bbfb67b6659112ececf50be6290be5d2dd12b0ca60567811022704b028ed60",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\double\\volume\\volume-result.json": "adad0049cb1ffe60961b78fe22a27428c27b17f05773735ae7d9ca827222cd04",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\double\\preflight-v2\\contexts\\heavy-double\\capture-check.json": "e8b31bb0ae5fb00f5ba3c7ffb876a60b90ebaf323fa614723e6c82e64df9daee",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\double\\evolution-contexts-v2\\heavy-double\\capture-check.json": "e8b31bb0ae5fb00f5ba3c7ffb876a60b90ebaf323fa614723e6c82e64df9daee",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\double\\contexts\\heavy-double\\capture-check.json": "e8b31bb0ae5fb00f5ba3c7ffb876a60b90ebaf323fa614723e6c82e64df9daee",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\double\\adjoint-contexts-v2\\heavy-double\\capture-check.json": "e8b31bb0ae5fb00f5ba3c7ffb876a60b90ebaf323fa614723e6c82e64df9daee",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\double\\primitive-contexts\\heavy-double\\capture-check.json": "e8b31bb0ae5fb00f5ba3c7ffb876a60b90ebaf323fa614723e6c82e64df9daee",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\double\\preflight-v2\\contexts\\cold-double\\capture-check.json": "f710eea76baf0be74a0d7de0c25c6d208d63d55f66e81a6a59e2aced8ff890e9",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\double\\evolution-contexts-v2\\cold-double\\capture-check.json": "f710eea76baf0be74a0d7de0c25c6d208d63d55f66e81a6a59e2aced8ff890e9",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\double\\contexts\\cold-double\\capture-check.json": "f710eea76baf0be74a0d7de0c25c6d208d63d55f66e81a6a59e2aced8ff890e9",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\double\\adjoint-contexts-v2\\cold-double\\capture-check.json": "f710eea76baf0be74a0d7de0c25c6d208d63d55f66e81a6a59e2aced8ff890e9",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-newton-wavelength-bounds-20261107\\double\\primitive-contexts\\cold-double\\capture-check.json": "f710eea76baf0be74a0d7de0c25c6d208d63d55f66e81a6a59e2aced8ff890e9"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "pid": 21852,
+  "checks": [
+    {
+      "name": "affine_state_component_0",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "affine_state_component_1",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "affine_state_component_2",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "affine_state_component_3",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "Hamiltonian",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "pressure_from_evolved_state",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "density_from_evolved_state",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "self_consistent_poisson_density",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "Duhamel_error_equation",
+      "residual": "0",
+      "passed": true
+    }
+  ],
+  "coupling_row": "Matrix([[(-3*H*v - mu**2*phi)/(3*S + 2*k**2), -v/(3*S + 2*k**2), -Rc/(3*S + 2*k**2), -3*H*Rc/(k**2*(3*S + 2*k**2))]])",
+  "matrix": "Matrix([[4*v*(-3*H*v - mu**2*phi)/(3*S + 2*k**2), -4*v**2/(3*S + 2*k**2) + 1, -4*Rc*v/(3*S + 2*k**2), -12*H*Rc*v/(k**2*(3*S + 2*k**2))], [-k**2 + 2*mu**2*phi*(-3*H*v - mu**2*phi)/(3*S + 2*k**2) - mu**2, -2*H - 2*mu**2*phi*v/(3*S + 2*k**2), -2*Rc*mu**2*phi/(3*S + 2*k**2), -6*H*Rc*mu**2*phi/(k**2*(3*S + 2*k**2))], [0, 0, 0, -1], [k**2*(-3*H*v - mu**2*phi)/(3*S + 2*k**2), -k**2*v/(3*S + 2*k**2), -Rc*k**2/(3*S + 2*k**2), -3*H*Rc/(3*S + 2*k**2) - H]])",
+  "forcing": "Matrix([[-Pi*v/k**2 + 4*v*(-De - 3*H*Qe/k)/(3*S + 2*k**2)], [Pi*mu**2*phi/k**2 + 2*mu**2*phi*(-De - 3*H*Qe/k)/(3*S + 2*k**2)], [0], [-Pi + k**2*(-De - 3*H*Qe/k)/(3*S + 2*k**2)]])",
+  "pressure": "-mu**2*phi*u + p*v + 3*v**2*(-3*H*Rc*theta/(k**2*(3*S + 2*k**2)) - Rc*dc/(3*S + 2*k**2) - p*v/(3*S + 2*k**2) + u*(-3*H*v - mu**2*phi)/(3*S + 2*k**2) + (-De - 3*H*Qe/k)/(3*S + 2*k**2))",
+  "source_sha256": "6e81d2aabc1f87ccfb301d49382cc7a7cfbe0d248fc379db816d1ed22549231d",
+  "scope": "exact selected-state feedback with prescribed external compensated sources, not a closed all-species hierarchy"
+}

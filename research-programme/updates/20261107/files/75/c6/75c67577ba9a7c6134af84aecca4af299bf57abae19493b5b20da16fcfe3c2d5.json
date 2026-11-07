@@ -1,0 +1,125 @@
+{
+  "index": 1,
+  "archive": "epoch-01.npz",
+  "archive_sha256": "70e3eb65cef6e9610398fca720f86b5239404927b6bea93060d11131e3bacf14",
+  "fingerprint_sha256": "732fb0f3908c7da491d49aa5af18bae6ba467c353ebaf9db5dc4a579aa9b8c0e",
+  "diagnostics": {
+    "physical_raw_energy_error": 7.75062294937169e-11,
+    "physical_raw_number_error": 0.0,
+    "second_raw_energy_error": 1.1253957087328886e-14,
+    "second_raw_number_error": 0.0,
+    "third_raw_energy_error": 5.106356413754144e-16,
+    "third_raw_number_error": 0.0,
+    "unique_events": 1337,
+    "original_events": 2592,
+    "physical_eigen": 0.00029045421938678006,
+    "second_eigen": 4.267049674227938e-07,
+    "third_eigen": -4.6038759532763045e-12,
+    "exact_bias": 4.267003635468405e-07,
+    "bias_identity": 0.0,
+    "minimum_variance": 1.7589914961926984e-09
+  },
+  "comparisons": {
+    "corrected2": {
+      "weak_relative": 1.0085287847658884e-07,
+      "remaining_grid_error": 0.0021946620091177604,
+      "energy_defect_over_physical": -1.5850609524980144e-08
+    },
+    "corrected3": {
+      "weak_relative": 8.774959702765792e-08,
+      "remaining_grid_error": 0.001909521174020806,
+      "energy_defect_over_physical": 0.0
+    }
+  },
+  "reference_difference": 2.325278947658829e-15,
+  "checks": [
+    {
+      "name": "Raw energy:physical:1",
+      "value": 7.75062294937169e-11,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Raw number:physical:1",
+      "value": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Raw energy:second:1",
+      "value": 1.1253957087328886e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Raw number:second:1",
+      "value": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Raw energy:third:1",
+      "value": 5.106356413754144e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Raw number:third:1",
+      "value": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Exact deposition bias:1",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Nonnegative variance:1",
+      "passed": true
+    },
+    {
+      "name": "Sensitivity1percent:weak:corrected2:1",
+      "value": 1.0085287847658884e-07,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "Explained90percent:weak:corrected2:1",
+      "value": 0.0021946620091177604,
+      "limit": 0.1,
+      "passed": true
+    },
+    {
+      "name": "Sensitivity1percent:weak:corrected3:1",
+      "value": 8.774959702765792e-08,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "Explained90percent:weak:corrected3:1",
+      "value": 0.001909521174020806,
+      "limit": 0.1,
+      "passed": true
+    },
+    {
+      "name": "Physical source matched-order reproduction:1",
+      "value": 2.325278947658829e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Derived energy row:corrected2:1",
+      "value": 3.6701317198071327e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Derived energy row:corrected3:1",
+      "value": 1.2502733583704876e-15,
+      "limit": 1e-10,
+      "passed": true
+    }
+  ]
+}

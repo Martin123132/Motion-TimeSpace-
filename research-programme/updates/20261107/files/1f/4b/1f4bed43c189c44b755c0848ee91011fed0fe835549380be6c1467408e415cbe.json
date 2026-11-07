@@ -1,0 +1,53 @@
+{
+  "accepted_scope": "Same energy-matched mu/y/residual decomposition for the saved Stage107 window correction and original parent baseline at a=1e-5, with all 96 input modes, both joins, source-frequency differences and inherited numerical variants.",
+  "numerical_gate_scope": "QR/SVD conditioning and reconstruction, template moments with exact finite-band boundary terms, unchanged source provenance, matched readout quadrature/cutoff diagnostics for both inputs, and fixed-amplitude residual localization.",
+  "retained_failed_checks": {
+    "results/decomposition": [
+      "Standard mu and y number-preserving Planck moments:canonical700",
+      "Standard mu and y number-preserving Planck moments:full1400",
+      "Standard mu and y number-preserving Planck moments:full2100"
+    ]
+  },
+  "scientific_checks": 308,
+  "passing_scientific_checks": 305,
+  "retained_failed_scientific_checks": 3,
+  "accepted_control_repair": "Incorrect whole-domain-zero expectation on a finite band replaced by a separately derived boundary identity, preserving raw failures, templates, amplitudes and original tolerances.",
+  "source_evaluations": 0,
+  "evolution_rerun": false,
+  "physical_parameters_fitted": false,
+  "empirical_fit": false,
+  "instrument_metric": false,
+  "new_physical_model": false,
+  "github_action": false,
+  "subagents": 0,
+  "infrared_continuation_derived": false,
+  "later_time_transfer_derived": false,
+  "continuum_error_bounded": false,
+  "same_readout_for_baseline_and_window": true,
+  "full_96_mode_input_retained": true,
+  "restricted_band_uses_own_energy": true,
+  "primary_independent_energy_retained": true,
+  "mu_y_component_powers_not_added": true,
+  "orthogonal_residual_retained": true,
+  "correction_captured_squared_norm_fraction": [
+    0.9945288407175032,
+    0.994531880594311
+  ],
+  "baseline_captured_squared_norm_fraction": [
+    0.980792239798045,
+    0.9808048449528347
+  ],
+  "primary_design_condition": 1.9833597400741891,
+  "correction_residual_power_below_x_point1": [
+    0.973166469983042,
+    0.9731904424679769
+  ],
+  "strong_cutoff_correction_y_relative_change": [
+    0.12073983176710813,
+    0.1216965263607334
+  ],
+  "archive_validation_scope": "Immediate Stage108/107 payloads and consumed scientific dependencies rehashed; prior whole-archive verification reused from Stage108, not repeated.",
+  "conclusion": "The window increment is strongly mu-like with a small y component, but the explicit residual is physically structured:97.32percent of its squared norm is below x=.1. The small y amplitude is cutoff-sensitive, while the dominant mu changes about.119percent under the strongest cutoff. Both results use the same comparison as the saved baseline.",
+  "next_target": "Derive the evolution equation for the retained non-mu/non-y residual by projecting the existing photon/gas collision-and-emission equations, then test it against the saved downstream histories. Resolve which terms drive or erase the x=1e-3..1e-2 structure for both correction and baseline. Test a derived low-frequency relaxation/turnover description before assuming a stationary cutoff; do not fit an arbitrary cutoff or equate analytic template tails with the missing physical tail. Reuse stored operators and histories, with no fresh source sweep by default."
+}
+

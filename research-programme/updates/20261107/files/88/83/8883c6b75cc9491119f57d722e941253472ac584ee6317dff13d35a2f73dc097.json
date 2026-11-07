@@ -1,0 +1,6090 @@
+{
+  "stage": 208,
+  "state": "forecast_rejected",
+  "checks": [
+    {
+      "name": "temperature-coordinate consistency",
+      "value": 2.220446049250313e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "heavy:history profile correction mesh",
+      "value": 0.0022317571651362137,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "heavy:history gas correction mesh",
+      "value": 1.4927060249445084e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "cold:history profile correction mesh",
+      "value": 0.0028340163890073567,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "cold:history gas correction mesh",
+      "value": 2.4712741150577562e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "quadratic reproduces degree0",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "quadratic reproduces degree1",
+      "value": 6.938893903907228e-18,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "quadratic reproduces degree2",
+      "value": 2.168404344971009e-19,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "secant reproduces degree0",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "secant reproduces degree1",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "original seven-band weight sum",
+      "value": 0.0,
+      "limit": 1e-13,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "cold full-panel replay",
+      "value": 5.402809090852028e-34,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "heavy:half:0: kinetic_relative",
+      "value": 1.4522527789073877e-78,
+      "tolerance": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "heavy:half:0: gas_energy_residual",
+      "value": 2.0667589309412624e-81,
+      "tolerance": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "heavy:half:0: work_residual",
+      "value": -5.574453928120228e-83,
+      "tolerance": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "heavy:half:0: integrated_energy",
+      "value": -8.37776046282554e-15,
+      "tolerance": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "heavy:half:80/100 profile",
+      "value": 4.9788033565046825e-82,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "heavy:half:80/100 gas",
+      "value": 5.146852537418866e-82,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "heavy:quarter:0: kinetic_relative",
+      "value": 4.416535732324621e-78,
+      "tolerance": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "heavy:quarter:0: gas_energy_residual",
+      "value": 0.0,
+      "tolerance": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "heavy:quarter:0: work_residual",
+      "value": -3.968170937533163e-82,
+      "tolerance": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "heavy:quarter:0: integrated_energy",
+      "value": -8.381260724776253e-15,
+      "tolerance": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "heavy:quarter:80/100 profile",
+      "value": 1.7086164579403175e-82,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "heavy:quarter:80/100 gas",
+      "value": 6.163527474152891e-83,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "cold:half:0: kinetic_relative",
+      "value": 3.267820683165452e-78,
+      "tolerance": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "cold:half:0: gas_energy_residual",
+      "value": 0.0,
+      "tolerance": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "cold:half:0: work_residual",
+      "value": 3.3998221044981715e-82,
+      "tolerance": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "cold:half:0: integrated_energy",
+      "value": -1.712401289863675e-14,
+      "tolerance": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "cold:half:80/100 profile",
+      "value": 2.168028441382812e-82,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "cold:half:80/100 gas",
+      "value": 7.321976213074066e-82,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "cold:quarter:0: kinetic_relative",
+      "value": 4.912521214716459e-78,
+      "tolerance": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "cold:quarter:0: gas_energy_residual",
+      "value": 0.0,
+      "tolerance": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "cold:quarter:0: work_residual",
+      "value": 8.362925641919403e-82,
+      "tolerance": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "cold:quarter:0: integrated_energy",
+      "value": -1.713117942925669e-14,
+      "tolerance": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "cold:quarter:80/100 profile",
+      "value": 3.2622718176517454e-82,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "cold:quarter:80/100 gas",
+      "value": 8.25080186230442e-83,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:0:control_event_null",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:0:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:0:difference_event_null",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:0:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:0:state_pair",
+      "value": 4.697074670013213e-77,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:0:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:0:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:0:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:1:control_event_null",
+      "value": 5.551115123125783e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:1:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:1:difference_event_null",
+      "value": 5.551115123125783e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:1:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:1:state_pair",
+      "value": 8.464485336171269e-77,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:1:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:1:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:1:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:2:control_event_null",
+      "value": 5.551115123125783e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:2:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:2:difference_event_null",
+      "value": 5.551115123125783e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:2:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:2:state_pair",
+      "value": 2.8087917056387237e-75,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:2:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:2:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:2:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:3:control_event_null",
+      "value": 5.551115123125783e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:3:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:3:difference_event_null",
+      "value": 5.551115123125783e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:3:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:3:state_pair",
+      "value": 3.4318754057698656e-76,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:3:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:3:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:3:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:4:control_event_null",
+      "value": 2.7755575615628914e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:4:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:4:difference_event_null",
+      "value": 2.7755575615628914e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:4:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:4:state_pair",
+      "value": 2.8849267905048807e-76,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:4:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:4:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:4:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:5:control_event_null",
+      "value": 2.7755575615628914e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:5:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:5:difference_event_null",
+      "value": 2.7755575615628914e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:5:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:5:state_pair",
+      "value": 1.1601511813030587e-75,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:5:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:5:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:5:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:6:control_event_null",
+      "value": 5.551115123125783e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:6:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:6:difference_event_null",
+      "value": 5.551115123125783e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:6:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:6:state_pair",
+      "value": 1.0133870299229763e-76,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:6:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:6:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:6:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:7:control_event_null",
+      "value": 5.551115123125783e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:7:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:7:difference_event_null",
+      "value": 5.551115123125783e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:7:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:7:state_pair",
+      "value": 3.068434306570881e-76,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:7:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:7:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:7:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:8:control_event_null",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:8:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:8:difference_event_null",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:8:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:8:state_pair",
+      "value": 9.039154757709843e-76,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:8:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:8:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:8:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:9:control_event_null",
+      "value": 5.551115123125783e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:9:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:9:difference_event_null",
+      "value": 5.551115123125783e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:9:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:9:state_pair",
+      "value": 3.6576430144399917e-76,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:9:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:9:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:9:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:10:control_event_null",
+      "value": 5.551115123125783e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:10:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:10:difference_event_null",
+      "value": 5.551115123125783e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:10:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:10:state_pair",
+      "value": 2.3040303988974393e-76,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:10:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:10:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:10:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:11:control_event_null",
+      "value": 5.551115123125783e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:11:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:11:difference_event_null",
+      "value": 5.551115123125783e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:11:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:11:state_pair",
+      "value": 1.4903914092138792e-75,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:11:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:11:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:11:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:12:control_event_null",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:12:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:12:difference_event_null",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:12:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:12:state_pair",
+      "value": 4.3895498207225286e-77,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:12:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:12:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:12:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:13:control_event_null",
+      "value": 5.551115123125783e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:13:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:13:difference_event_null",
+      "value": 5.551115123125783e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:13:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:13:state_pair",
+      "value": 1.3658255314023982e-76,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:13:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:13:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:13:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:14:control_event_null",
+      "value": 5.551115123125783e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:14:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:14:difference_event_null",
+      "value": 5.551115123125783e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:14:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:14:state_pair",
+      "value": 1.1466621234137879e-76,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:14:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:14:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:14:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:15:control_event_null",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:15:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:15:difference_event_null",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:15:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:15:state_pair",
+      "value": 4.846531787261556e-76,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:15:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:15:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:15:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:16:control_event_null",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:16:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:16:difference_event_null",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:16:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:16:state_pair",
+      "value": 4.342043509915641e-76,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:16:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:16:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:16:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:17:control_event_null",
+      "value": 5.551115123125783e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:17:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:17:difference_event_null",
+      "value": 5.551115123125783e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:17:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:17:state_pair",
+      "value": 2.1696373665772003e-75,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:17:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:17:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:17:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:18:control_event_null",
+      "value": 2.220446049250313e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:18:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:18:difference_event_null",
+      "value": 2.220446049250313e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:18:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:18:state_pair",
+      "value": 1.5513013111269528e-76,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:18:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:18:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:18:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:19:control_event_null",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:19:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:19:difference_event_null",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:19:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:19:state_pair",
+      "value": 8.45779997565957e-78,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:19:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:19:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:19:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:20:control_event_null",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:20:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:20:difference_event_null",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:20:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:20:state_pair",
+      "value": 2.106745377871605e-75,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:20:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:20:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:20:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:21:control_event_null",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:21:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:21:difference_event_null",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:21:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:21:state_pair",
+      "value": 4.2416482664523785e-76,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:21:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:21:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:21:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:22:control_event_null",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:22:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:22:difference_event_null",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:22:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:22:state_pair",
+      "value": 8.118021542280698e-76,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:22:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:22:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:22:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:23:control_event_null",
+      "value": 5.551115123125783e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:23:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:23:difference_event_null",
+      "value": 5.551115123125783e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:23:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:23:state_pair",
+      "value": 1.6780099525981477e-75,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:23:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:23:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:23:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:24:control_event_null",
+      "value": 5.551115123125783e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:24:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:24:difference_event_null",
+      "value": 5.551115123125783e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:24:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:24:state_pair",
+      "value": 4.9539075241281344e-77,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:24:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:24:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:24:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:25:control_event_null",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:25:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:25:difference_event_null",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:25:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:25:state_pair",
+      "value": 1.5040613764123636e-76,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:25:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:25:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:25:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:26:control_event_null",
+      "value": 2.220446049250313e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:26:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:26:difference_event_null",
+      "value": 2.220446049250313e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:26:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:26:state_pair",
+      "value": 2.936105794287507e-75,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:26:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:26:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:26:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:27:control_event_null",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:27:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:27:difference_event_null",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:27:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:27:state_pair",
+      "value": 3.221367241549591e-76,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:27:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:27:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:27:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:28:control_event_null",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:28:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:28:difference_event_null",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:28:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:28:state_pair",
+      "value": 3.6101274893973504e-76,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:28:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:28:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:28:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:29:control_event_null",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:29:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:29:difference_event_null",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:29:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:29:state_pair",
+      "value": 3.3639876172367538e-77,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:29:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:29:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:29:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:30:control_event_null",
+      "value": 2.220446049250313e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:30:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:30:difference_event_null",
+      "value": 2.220446049250313e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:30:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:30:state_pair",
+      "value": 3.672103064735539e-76,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:30:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:30:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:30:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:31:control_event_null",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:31:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:31:difference_event_null",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:31:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:31:state_pair",
+      "value": 7.70684452263492e-76,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:31:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:31:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:31:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:32:control_event_null",
+      "value": 5.551115123125783e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:32:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:32:difference_event_null",
+      "value": 5.551115123125783e-17,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:32:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:32:state_pair",
+      "value": 1.8770107039552565e-75,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:32:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:32:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:32:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:33:control_event_null",
+      "value": 2.220446049250313e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:33:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:33:difference_event_null",
+      "value": 2.220446049250313e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:33:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:33:state_pair",
+      "value": 1.2189376436180027e-76,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:33:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:33:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:33:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:34:control_event_null",
+      "value": 2.220446049250313e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:34:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:34:difference_event_null",
+      "value": 2.220446049250313e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:34:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:34:state_pair",
+      "value": 3.329061779952394e-76,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:34:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:34:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:34:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:35:control_event_null",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:35:control_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:35:difference_event_null",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:35:difference_shift_null",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:35:state_pair",
+      "value": 1.4655416876983925e-75,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    },
+    {
+      "name": "3:35:finite",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:35:shape",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "3:35:zero-history source exactly zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true,
+      "category": "negative_control"
+    },
+    {
+      "name": "3:0:0:0:photon:primary forecast",
+      "value": 0.26868196555210055,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:0:1:photon:primary forecast",
+      "value": 0.26622335735277636,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:0:2:photon:primary forecast",
+      "value": 0.26870787958597464,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:0:3:photon:primary forecast",
+      "value": 0.2662706295922566,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:1:0:photon:primary forecast",
+      "value": 0.27120104105175696,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:1:1:photon:primary forecast",
+      "value": 0.2687441436046186,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:1:2:photon:primary forecast",
+      "value": 0.2712403773064535,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:1:3:photon:primary forecast",
+      "value": 0.26880426966100274,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:2:0:photon:primary forecast",
+      "value": 0.11611217482678152,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:2:1:photon:primary forecast",
+      "value": 0.11611217482678152,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:2:2:photon:primary forecast",
+      "value": 0.11629105053988954,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:2:3:photon:primary forecast",
+      "value": 0.11629105053988954,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:3:0:photon:primary forecast",
+      "value": 0.11702393133378551,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:3:1:photon:primary forecast",
+      "value": 0.11702393133378551,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:3:2:photon:primary forecast",
+      "value": 0.11721283333253588,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:3:3:photon:primary forecast",
+      "value": 0.11721283333253588,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:4:0:photon:primary forecast",
+      "value": 0.11834320062284848,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:4:1:photon:primary forecast",
+      "value": 0.11833195167268254,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:4:2:photon:primary forecast",
+      "value": 0.11854888042449538,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:4:3:photon:primary forecast",
+      "value": 0.11853764935817902,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:5:0:photon:primary forecast",
+      "value": 0.26868229043354863,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:5:1:photon:primary forecast",
+      "value": 0.26622284264999485,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:5:2:photon:primary forecast",
+      "value": 0.26870780631688634,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:5:3:photon:primary forecast",
+      "value": 0.2662697264389272,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:0:0:photon:primary forecast",
+      "value": 0.26897547010998235,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:0:1:photon:primary forecast",
+      "value": 0.2665096181520719,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:0:2:photon:primary forecast",
+      "value": 0.2689960112585789,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:0:3:photon:primary forecast",
+      "value": 0.2665516561303286,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:1:0:photon:primary forecast",
+      "value": 0.2714998764625616,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:1:1:photon:primary forecast",
+      "value": 0.2690357943410465,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:1:2:photon:primary forecast",
+      "value": 0.27156124957102273,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:1:3:photon:primary forecast",
+      "value": 0.26911656418992386,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:2:0:photon:primary forecast",
+      "value": 0.11611558466458635,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:2:1:photon:primary forecast",
+      "value": 0.11611558466458635,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:2:2:photon:primary forecast",
+      "value": 0.11629567732196329,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:2:3:photon:primary forecast",
+      "value": 0.11629567732196329,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:3:0:photon:primary forecast",
+      "value": 0.11697565841396623,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:3:1:photon:primary forecast",
+      "value": 0.11697565841396623,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:3:2:photon:primary forecast",
+      "value": 0.1172324717794608,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:3:3:photon:primary forecast",
+      "value": 0.1172324717794608,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:4:0:photon:primary forecast",
+      "value": 0.11835365566406032,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:4:1:photon:primary forecast",
+      "value": 0.11834240751426575,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:4:2:photon:primary forecast",
+      "value": 0.11855167270359479,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:4:3:photon:primary forecast",
+      "value": 0.11854042191401032,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:5:0:photon:primary forecast",
+      "value": 0.2689756738812271,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:5:1:photon:primary forecast",
+      "value": 0.2665089787641192,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:5:2:photon:primary forecast",
+      "value": 0.2689961585859314,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:5:3:photon:primary forecast",
+      "value": 0.26655096861003336,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:0:0:gas:primary forecast",
+      "value": 0.11249652448655689,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:0:1:gas:primary forecast",
+      "value": 0.11249654374547803,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:0:2:gas:primary forecast",
+      "value": 0.11920288999572894,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:0:3:gas:primary forecast",
+      "value": 0.11920291374296374,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:1:0:gas:primary forecast",
+      "value": 0.12039405411137086,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:1:1:gas:primary forecast",
+      "value": 0.1203940740578188,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:1:2:gas:primary forecast",
+      "value": 0.1286230963679673,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:1:3:gas:primary forecast",
+      "value": 0.12862313048659774,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:2:0:gas:primary forecast",
+      "value": 0.11616779837961991,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:2:1:gas:primary forecast",
+      "value": 0.11616779837961991,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:2:2:gas:primary forecast",
+      "value": 0.11634665580009144,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:2:3:gas:primary forecast",
+      "value": 0.11634665580009144,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:3:0:gas:primary forecast",
+      "value": 0.11715433692247192,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:3:1:gas:primary forecast",
+      "value": 0.11715433692247192,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:3:2:gas:primary forecast",
+      "value": 0.11734318301597822,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:3:3:gas:primary forecast",
+      "value": 0.11734318301597822,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:4:0:gas:primary forecast",
+      "value": 0.11617039504673209,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:4:1:gas:primary forecast",
+      "value": 0.11617039505800415,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:4:2:gas:primary forecast",
+      "value": 0.1163554663745448,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:4:3:gas:primary forecast",
+      "value": 0.11635546638887884,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:5:0:gas:primary forecast",
+      "value": 0.12179674395363545,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:5:1:gas:primary forecast",
+      "value": 0.12179669915342682,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:5:2:gas:primary forecast",
+      "value": 0.11199481334947439,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:5:3:gas:primary forecast",
+      "value": 0.11199478890509672,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:0:0:gas:primary forecast",
+      "value": 0.11786798896829871,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:0:1:gas:primary forecast",
+      "value": 0.11786801300104476,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:0:2:gas:primary forecast",
+      "value": 0.11452170267932846,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:0:3:gas:primary forecast",
+      "value": 0.11452172249205549,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:1:0:gas:primary forecast",
+      "value": 0.12662488452825935,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:1:1:gas:primary forecast",
+      "value": 0.12662491367443587,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:1:2:gas:primary forecast",
+      "value": 0.12295640156783061,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:1:3:gas:primary forecast",
+      "value": 0.1229564293108247,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:2:0:gas:primary forecast",
+      "value": 0.11617120716697014,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:2:1:gas:primary forecast",
+      "value": 0.11617120716697014,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:2:2:gas:primary forecast",
+      "value": 0.1163512824324838,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:2:3:gas:primary forecast",
+      "value": 0.1163512824324838,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:3:0:gas:primary forecast",
+      "value": 0.11710653919340887,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:3:1:gas:primary forecast",
+      "value": 0.11710653919340887,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:3:2:gas:primary forecast",
+      "value": 0.11736275277443285,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:3:3:gas:primary forecast",
+      "value": 0.11736275277443285,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:4:0:gas:primary forecast",
+      "value": 0.11617865092041939,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:4:1:gas:primary forecast",
+      "value": 0.11617865093269825,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:4:2:gas:primary forecast",
+      "value": 0.11635570046319652,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:4:3:gas:primary forecast",
+      "value": 0.11635570047816085,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:5:0:gas:primary forecast",
+      "value": 0.11359143750732333,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:5:1:gas:primary forecast",
+      "value": 0.11359140778466496,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:5:2:gas:primary forecast",
+      "value": 0.11916444375133273,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:5:3:gas:primary forecast",
+      "value": 0.11916440578905672,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:0:photon:history mesh",
+      "value": 0.0009845674632051322,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:0:1:photon:history mesh",
+      "value": 0.0009763558620364789,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:0:2:photon:history mesh",
+      "value": 0.0010129861119400894,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:0:3:photon:history mesh",
+      "value": 0.001004691136185527,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:1:0:photon:history mesh",
+      "value": 0.0009845607467978382,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:1:1:photon:history mesh",
+      "value": 0.0009763669473879079,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:1:2:photon:history mesh",
+      "value": 0.0010129672554101692,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:1:3:photon:history mesh",
+      "value": 0.0010046905522759985,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:2:0:photon:history mesh",
+      "value": 6.160465933209542e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:2:1:photon:history mesh",
+      "value": 6.160465933209542e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:2:2:photon:history mesh",
+      "value": 7.688651063702027e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:2:3:photon:history mesh",
+      "value": 7.688651063702027e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:3:0:photon:history mesh",
+      "value": 6.158837218125404e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:3:1:photon:history mesh",
+      "value": 6.158837218125404e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:3:2:photon:history mesh",
+      "value": 7.68690950891756e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:3:3:photon:history mesh",
+      "value": 7.68690950891756e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:4:0:photon:history mesh",
+      "value": 0.00011154216184340447,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:4:1:photon:history mesh",
+      "value": 0.00011154667514507818,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:4:2:photon:history mesh",
+      "value": 0.00012258292561921088,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:4:3:photon:history mesh",
+      "value": 0.00012259414111167834,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:5:0:photon:history mesh",
+      "value": 0.0009845490457256647,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:5:1:photon:history mesh",
+      "value": 0.0009763341167449803,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:5:2:photon:history mesh",
+      "value": 0.0010129745529093353,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:5:3:photon:history mesh",
+      "value": 0.0010046761024486636,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:0:0:gas:history mesh",
+      "value": 4.9872353993983865e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:0:1:gas:history mesh",
+      "value": 4.987243926901891e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:0:2:gas:history mesh",
+      "value": 6.432389060581745e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:0:3:gas:history mesh",
+      "value": 6.432400906815599e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:1:0:gas:history mesh",
+      "value": 4.9292172250646304e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:1:1:gas:history mesh",
+      "value": 4.929227192569417e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:1:2:gas:history mesh",
+      "value": 6.412814916022213e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:1:3:gas:history mesh",
+      "value": 6.412828840241959e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:2:0:gas:history mesh",
+      "value": 6.159881445768387e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:2:1:gas:history mesh",
+      "value": 6.159881445768387e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:2:2:gas:history mesh",
+      "value": 7.688062079164648e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:2:3:gas:history mesh",
+      "value": 7.688062079164648e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:3:0:gas:history mesh",
+      "value": 6.15766279945955e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:3:1:gas:history mesh",
+      "value": 6.15766279945955e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:3:2:gas:history mesh",
+      "value": 7.685726054555964e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:3:3:gas:history mesh",
+      "value": 7.685726054555964e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:4:0:gas:history mesh",
+      "value": 6.158931940670731e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:4:1:gas:history mesh",
+      "value": 6.158931949579154e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:4:2:gas:history mesh",
+      "value": 7.68707821312925e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:4:3:gas:history mesh",
+      "value": 7.687078225139037e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:5:0:gas:history mesh",
+      "value": 7.953379778664738e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:5:1:gas:history mesh",
+      "value": 7.953361850134145e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:5:2:gas:history mesh",
+      "value": 9.608618013729522e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:5:3:gas:history mesh",
+      "value": 9.608594663250293e-05,
+      "limit": 0.01,
+      "passed": true,
+      "category": "mesh"
+    },
+    {
+      "name": "3:photon-gas energy exchange",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "category": "identity"
+    }
+  ],
+  "failed_checks": [
+    {
+      "name": "3:0:0:0:photon:primary forecast",
+      "value": 0.26868196555210055,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:0:1:photon:primary forecast",
+      "value": 0.26622335735277636,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:0:2:photon:primary forecast",
+      "value": 0.26870787958597464,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:0:3:photon:primary forecast",
+      "value": 0.2662706295922566,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:1:0:photon:primary forecast",
+      "value": 0.27120104105175696,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:1:1:photon:primary forecast",
+      "value": 0.2687441436046186,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:1:2:photon:primary forecast",
+      "value": 0.2712403773064535,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:1:3:photon:primary forecast",
+      "value": 0.26880426966100274,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:2:0:photon:primary forecast",
+      "value": 0.11611217482678152,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:2:1:photon:primary forecast",
+      "value": 0.11611217482678152,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:2:2:photon:primary forecast",
+      "value": 0.11629105053988954,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:2:3:photon:primary forecast",
+      "value": 0.11629105053988954,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:3:0:photon:primary forecast",
+      "value": 0.11702393133378551,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:3:1:photon:primary forecast",
+      "value": 0.11702393133378551,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:3:2:photon:primary forecast",
+      "value": 0.11721283333253588,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:3:3:photon:primary forecast",
+      "value": 0.11721283333253588,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:4:0:photon:primary forecast",
+      "value": 0.11834320062284848,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:4:1:photon:primary forecast",
+      "value": 0.11833195167268254,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:4:2:photon:primary forecast",
+      "value": 0.11854888042449538,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:4:3:photon:primary forecast",
+      "value": 0.11853764935817902,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:5:0:photon:primary forecast",
+      "value": 0.26868229043354863,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:5:1:photon:primary forecast",
+      "value": 0.26622284264999485,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:5:2:photon:primary forecast",
+      "value": 0.26870780631688634,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:5:3:photon:primary forecast",
+      "value": 0.2662697264389272,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:0:0:photon:primary forecast",
+      "value": 0.26897547010998235,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:0:1:photon:primary forecast",
+      "value": 0.2665096181520719,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:0:2:photon:primary forecast",
+      "value": 0.2689960112585789,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:0:3:photon:primary forecast",
+      "value": 0.2665516561303286,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:1:0:photon:primary forecast",
+      "value": 0.2714998764625616,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:1:1:photon:primary forecast",
+      "value": 0.2690357943410465,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:1:2:photon:primary forecast",
+      "value": 0.27156124957102273,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:1:3:photon:primary forecast",
+      "value": 0.26911656418992386,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:2:0:photon:primary forecast",
+      "value": 0.11611558466458635,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:2:1:photon:primary forecast",
+      "value": 0.11611558466458635,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:2:2:photon:primary forecast",
+      "value": 0.11629567732196329,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:2:3:photon:primary forecast",
+      "value": 0.11629567732196329,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:3:0:photon:primary forecast",
+      "value": 0.11697565841396623,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:3:1:photon:primary forecast",
+      "value": 0.11697565841396623,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:3:2:photon:primary forecast",
+      "value": 0.1172324717794608,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:3:3:photon:primary forecast",
+      "value": 0.1172324717794608,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:4:0:photon:primary forecast",
+      "value": 0.11835365566406032,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:4:1:photon:primary forecast",
+      "value": 0.11834240751426575,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:4:2:photon:primary forecast",
+      "value": 0.11855167270359479,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:4:3:photon:primary forecast",
+      "value": 0.11854042191401032,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:5:0:photon:primary forecast",
+      "value": 0.2689756738812271,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:5:1:photon:primary forecast",
+      "value": 0.2665089787641192,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:5:2:photon:primary forecast",
+      "value": 0.2689961585859314,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:5:3:photon:primary forecast",
+      "value": 0.26655096861003336,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:0:0:gas:primary forecast",
+      "value": 0.11249652448655689,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:0:1:gas:primary forecast",
+      "value": 0.11249654374547803,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:0:2:gas:primary forecast",
+      "value": 0.11920288999572894,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:0:3:gas:primary forecast",
+      "value": 0.11920291374296374,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:1:0:gas:primary forecast",
+      "value": 0.12039405411137086,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:1:1:gas:primary forecast",
+      "value": 0.1203940740578188,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:1:2:gas:primary forecast",
+      "value": 0.1286230963679673,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:1:3:gas:primary forecast",
+      "value": 0.12862313048659774,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:2:0:gas:primary forecast",
+      "value": 0.11616779837961991,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:2:1:gas:primary forecast",
+      "value": 0.11616779837961991,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:2:2:gas:primary forecast",
+      "value": 0.11634665580009144,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:2:3:gas:primary forecast",
+      "value": 0.11634665580009144,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:3:0:gas:primary forecast",
+      "value": 0.11715433692247192,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:3:1:gas:primary forecast",
+      "value": 0.11715433692247192,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:3:2:gas:primary forecast",
+      "value": 0.11734318301597822,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:3:3:gas:primary forecast",
+      "value": 0.11734318301597822,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:4:0:gas:primary forecast",
+      "value": 0.11617039504673209,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:4:1:gas:primary forecast",
+      "value": 0.11617039505800415,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:4:2:gas:primary forecast",
+      "value": 0.1163554663745448,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:4:3:gas:primary forecast",
+      "value": 0.11635546638887884,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:5:0:gas:primary forecast",
+      "value": 0.12179674395363545,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:5:1:gas:primary forecast",
+      "value": 0.12179669915342682,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:5:2:gas:primary forecast",
+      "value": 0.11199481334947439,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:0:5:3:gas:primary forecast",
+      "value": 0.11199478890509672,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:0:0:gas:primary forecast",
+      "value": 0.11786798896829871,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:0:1:gas:primary forecast",
+      "value": 0.11786801300104476,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:0:2:gas:primary forecast",
+      "value": 0.11452170267932846,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:0:3:gas:primary forecast",
+      "value": 0.11452172249205549,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:1:0:gas:primary forecast",
+      "value": 0.12662488452825935,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:1:1:gas:primary forecast",
+      "value": 0.12662491367443587,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:1:2:gas:primary forecast",
+      "value": 0.12295640156783061,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:1:3:gas:primary forecast",
+      "value": 0.1229564293108247,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:2:0:gas:primary forecast",
+      "value": 0.11617120716697014,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:2:1:gas:primary forecast",
+      "value": 0.11617120716697014,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:2:2:gas:primary forecast",
+      "value": 0.1163512824324838,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:2:3:gas:primary forecast",
+      "value": 0.1163512824324838,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:3:0:gas:primary forecast",
+      "value": 0.11710653919340887,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:3:1:gas:primary forecast",
+      "value": 0.11710653919340887,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:3:2:gas:primary forecast",
+      "value": 0.11736275277443285,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:3:3:gas:primary forecast",
+      "value": 0.11736275277443285,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:4:0:gas:primary forecast",
+      "value": 0.11617865092041939,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:4:1:gas:primary forecast",
+      "value": 0.11617865093269825,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:4:2:gas:primary forecast",
+      "value": 0.11635570046319652,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:4:3:gas:primary forecast",
+      "value": 0.11635570047816085,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:5:0:gas:primary forecast",
+      "value": 0.11359143750732333,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:5:1:gas:primary forecast",
+      "value": 0.11359140778466496,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:5:2:gas:primary forecast",
+      "value": 0.11916444375133273,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    },
+    {
+      "name": "3:1:5:3:gas:primary forecast",
+      "value": 0.11916440578905672,
+      "limit": 0.01,
+      "passed": false,
+      "category": "prediction"
+    }
+  ],
+  "records": [
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "baseline",
+      "model": "heavy",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.26868196555210055
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "baseline",
+      "model": "heavy",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.26622335735277636
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "baseline",
+      "model": "cold",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.26870787958597464
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "baseline",
+      "model": "cold",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.2662706295922566
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "real_difference",
+      "model": "heavy",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.27120104105175696
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "real_difference",
+      "model": "heavy",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.2687441436046186
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "real_difference",
+      "model": "cold",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.2712403773064535
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "real_difference",
+      "model": "cold",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.26880426966100274
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "virtual",
+      "model": "heavy",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.11611217482678152
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "virtual",
+      "model": "heavy",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.11611217482678152
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "virtual",
+      "model": "cold",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.11629105053988954
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "virtual",
+      "model": "cold",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.11629105053988954
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "state",
+      "model": "heavy",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.11702393133378551
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "state",
+      "model": "heavy",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.11702393133378551
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "state",
+      "model": "cold",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.11721283333253588
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "state",
+      "model": "cold",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.11721283333253588
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "MTS",
+      "model": "heavy",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.11834320062284848
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "MTS",
+      "model": "heavy",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.11833195167268254
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "MTS",
+      "model": "cold",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.11854888042449538
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "MTS",
+      "model": "cold",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.11853764935817902
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "total",
+      "model": "heavy",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.26868229043354863
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "total",
+      "model": "heavy",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.26622284264999485
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "total",
+      "model": "cold",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.26870780631688634
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "total",
+      "model": "cold",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.2662697264389272
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "baseline",
+      "model": "heavy",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.26897547010998235
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "baseline",
+      "model": "heavy",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.2665096181520719
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "baseline",
+      "model": "cold",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.2689960112585789
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "baseline",
+      "model": "cold",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.2665516561303286
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "real_difference",
+      "model": "heavy",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.2714998764625616
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "real_difference",
+      "model": "heavy",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.2690357943410465
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "real_difference",
+      "model": "cold",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.27156124957102273
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "real_difference",
+      "model": "cold",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.26911656418992386
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "virtual",
+      "model": "heavy",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.11611558466458635
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "virtual",
+      "model": "heavy",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.11611558466458635
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "virtual",
+      "model": "cold",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.11629567732196329
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "virtual",
+      "model": "cold",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.11629567732196329
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "state",
+      "model": "heavy",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.11697565841396623
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "state",
+      "model": "heavy",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.11697565841396623
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "state",
+      "model": "cold",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.1172324717794608
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "state",
+      "model": "cold",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.1172324717794608
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "MTS",
+      "model": "heavy",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.11835365566406032
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "MTS",
+      "model": "heavy",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.11834240751426575
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "MTS",
+      "model": "cold",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.11855167270359479
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "MTS",
+      "model": "cold",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.11854042191401032
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "total",
+      "model": "heavy",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.2689756738812271
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "total",
+      "model": "heavy",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.2665089787641192
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "total",
+      "model": "cold",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.2689961585859314
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "total",
+      "model": "cold",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.26655096861003336
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "baseline",
+      "model": "heavy",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.11249652448655689
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "baseline",
+      "model": "heavy",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.11249654374547803
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "baseline",
+      "model": "cold",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.11920288999572894
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "baseline",
+      "model": "cold",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.11920291374296374
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "real_difference",
+      "model": "heavy",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.12039405411137086
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "real_difference",
+      "model": "heavy",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.1203940740578188
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "real_difference",
+      "model": "cold",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.1286230963679673
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "real_difference",
+      "model": "cold",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.12862313048659774
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "virtual",
+      "model": "heavy",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.11616779837961991
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "virtual",
+      "model": "heavy",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.11616779837961991
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "virtual",
+      "model": "cold",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.11634665580009144
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "virtual",
+      "model": "cold",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.11634665580009144
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "state",
+      "model": "heavy",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.11715433692247192
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "state",
+      "model": "heavy",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.11715433692247192
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "state",
+      "model": "cold",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.11734318301597822
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "state",
+      "model": "cold",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.11734318301597822
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "MTS",
+      "model": "heavy",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.11617039504673209
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "MTS",
+      "model": "heavy",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.11617039505800415
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "MTS",
+      "model": "cold",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.1163554663745448
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "MTS",
+      "model": "cold",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.11635546638887884
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "total",
+      "model": "heavy",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.12179674395363545
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "total",
+      "model": "heavy",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.12179669915342682
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "total",
+      "model": "cold",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.11199481334947439
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "half",
+      "component": "total",
+      "model": "cold",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.11199478890509672
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "baseline",
+      "model": "heavy",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.11786798896829871
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "baseline",
+      "model": "heavy",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.11786801300104476
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "baseline",
+      "model": "cold",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.11452170267932846
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "baseline",
+      "model": "cold",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.11452172249205549
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "real_difference",
+      "model": "heavy",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.12662488452825935
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "real_difference",
+      "model": "heavy",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.12662491367443587
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "real_difference",
+      "model": "cold",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.12295640156783061
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "real_difference",
+      "model": "cold",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.1229564293108247
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "virtual",
+      "model": "heavy",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.11617120716697014
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "virtual",
+      "model": "heavy",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.11617120716697014
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "virtual",
+      "model": "cold",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.1163512824324838
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "virtual",
+      "model": "cold",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.1163512824324838
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "state",
+      "model": "heavy",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.11710653919340887
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "state",
+      "model": "heavy",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.11710653919340887
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "state",
+      "model": "cold",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.11736275277443285
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "state",
+      "model": "cold",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.11736275277443285
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "MTS",
+      "model": "heavy",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.11617865092041939
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "MTS",
+      "model": "heavy",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.11617865093269825
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "MTS",
+      "model": "cold",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.11635570046319652
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "MTS",
+      "model": "cold",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.11635570047816085
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "total",
+      "model": "heavy",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.11359143750732333
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "total",
+      "model": "heavy",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.11359140778466496
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "total",
+      "model": "cold",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.11916444375133273
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "quadratic",
+      "grid": "quarter",
+      "component": "total",
+      "model": "cold",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.11916440578905672
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "baseline",
+      "model": "heavy",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.20079857581838909
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "baseline",
+      "model": "heavy",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.20142347803895105
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "baseline",
+      "model": "cold",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.20101011619738102
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "baseline",
+      "model": "cold",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.2016237499489053
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "real_difference",
+      "model": "heavy",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.2133991068938962
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "real_difference",
+      "model": "heavy",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.21400089841094458
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "real_difference",
+      "model": "cold",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.21361993727001527
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "real_difference",
+      "model": "cold",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.2142106550018146
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "virtual",
+      "model": "heavy",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.13004063790742423
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "virtual",
+      "model": "heavy",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.13004063790742423
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "virtual",
+      "model": "cold",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.12967549153379587
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "virtual",
+      "model": "cold",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.12967549153379587
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "state",
+      "model": "heavy",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.13158204385728345
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "state",
+      "model": "heavy",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.13158204385728345
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "state",
+      "model": "cold",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.13121860741400898
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "state",
+      "model": "cold",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.13121860741400898
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "MTS",
+      "model": "heavy",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.13196661992439926
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "MTS",
+      "model": "heavy",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.13199107770159385
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "MTS",
+      "model": "cold",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.13162390297100532
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "MTS",
+      "model": "cold",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.13164849023591585
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "total",
+      "model": "heavy",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.20070041562553026
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "total",
+      "model": "heavy",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.20132657374077156
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "total",
+      "model": "cold",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.20091271534654684
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "total",
+      "model": "cold",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.20152757581369152
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "baseline",
+      "model": "heavy",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.20093330135313917
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "baseline",
+      "model": "heavy",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.20155645083974488
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "baseline",
+      "model": "cold",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.2011508135678259
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "baseline",
+      "model": "cold",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.20176262311380133
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "real_difference",
+      "model": "heavy",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.21352914596002495
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "real_difference",
+      "model": "heavy",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.21412914660530338
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "real_difference",
+      "model": "cold",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.21376214900788862
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "real_difference",
+      "model": "cold",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.21435115405760302
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "virtual",
+      "model": "heavy",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.13003645245039602
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "virtual",
+      "model": "heavy",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.13003645245039602
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "virtual",
+      "model": "cold",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.1296715369757777
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "virtual",
+      "model": "cold",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.1296715369757777
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "state",
+      "model": "heavy",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.13158154847939343
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "state",
+      "model": "heavy",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.13158154847939343
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "state",
+      "model": "cold",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.13121401662726587
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "state",
+      "model": "cold",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.13121401662726587
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "MTS",
+      "model": "heavy",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.13196234827460657
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "MTS",
+      "model": "heavy",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.13198681081413252
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "MTS",
+      "model": "cold",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.13162029236609765
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "MTS",
+      "model": "cold",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.13164489131569873
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "total",
+      "model": "heavy",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.20083513408609338
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "total",
+      "model": "heavy",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.20145954086641482
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "total",
+      "model": "cold",
+      "join": 0,
+      "measure": "photon",
+      "relative": 0.20105338727510108
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "total",
+      "model": "cold",
+      "join": 1,
+      "measure": "photon",
+      "relative": 0.20166642511091712
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "baseline",
+      "model": "heavy",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.13193383596202815
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "baseline",
+      "model": "heavy",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.1319337822445312
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "baseline",
+      "model": "cold",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.13096496762454693
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "baseline",
+      "model": "cold",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.13096491316663075
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "real_difference",
+      "model": "heavy",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.14378446316908478
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "real_difference",
+      "model": "heavy",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.1437844006948238
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "real_difference",
+      "model": "cold",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.14282705447070165
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "real_difference",
+      "model": "cold",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.142826991027565
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "virtual",
+      "model": "heavy",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.130161354399887
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "virtual",
+      "model": "heavy",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.130161354399887
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "virtual",
+      "model": "cold",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.12979638210223574
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "virtual",
+      "model": "cold",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.12979638210223574
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "state",
+      "model": "heavy",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.13185012910631974
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "state",
+      "model": "heavy",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.13185012910631974
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "state",
+      "model": "cold",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.1314870278974192
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "state",
+      "model": "cold",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.1314870278974192
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "MTS",
+      "model": "heavy",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.13017073616961786
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "MTS",
+      "model": "heavy",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.1301707361079916
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "MTS",
+      "model": "cold",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.12980530467494586
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "MTS",
+      "model": "cold",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.12980530461315026
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "total",
+      "model": "heavy",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.12747063707050416
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "total",
+      "model": "heavy",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.12747072653912006
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "total",
+      "model": "cold",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.12802935264883425
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "half",
+      "component": "total",
+      "model": "cold",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.12802944073215194
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "baseline",
+      "model": "heavy",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.13149861424170398
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "baseline",
+      "model": "heavy",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.13149856014822334
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "baseline",
+      "model": "cold",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.1307815142577056
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "baseline",
+      "model": "cold",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.13078145963928034
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "real_difference",
+      "model": "heavy",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.14331204337080122
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "real_difference",
+      "model": "heavy",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.14331198033113673
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "real_difference",
+      "model": "cold",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.14263377634373228
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "real_difference",
+      "model": "cold",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.14263371255916274
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "virtual",
+      "model": "heavy",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.1301571728975787
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "virtual",
+      "model": "heavy",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.1301571728975787
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "virtual",
+      "model": "cold",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.12979243294852477
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "virtual",
+      "model": "cold",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.12979243294852477
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "state",
+      "model": "heavy",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.13184960677879762
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "state",
+      "model": "heavy",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.13184960677879762
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "state",
+      "model": "cold",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.1314824607603949
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "state",
+      "model": "cold",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.1314824607603949
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "MTS",
+      "model": "heavy",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.1301661904781155
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "MTS",
+      "model": "heavy",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.13016619041650937
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "MTS",
+      "model": "cold",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.12980120976424628
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "MTS",
+      "model": "cold",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.12980120970237022
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "total",
+      "model": "heavy",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.12812558964194096
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "total",
+      "model": "heavy",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.12812567789192197
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "total",
+      "model": "cold",
+      "join": 0,
+      "measure": "gas",
+      "relative": 0.1282998864308416
+    },
+    {
+      "scope": "3",
+      "frequency": 14.0,
+      "method": "linear",
+      "grid": "quarter",
+      "component": "total",
+      "model": "cold",
+      "join": 1,
+      "measure": "gas",
+      "relative": 0.1282999740143391
+    }
+  ],
+  "completed_frequency_indices": [
+    "3"
+  ],
+  "complete_band": false,
+  "completed_events": 36,
+  "primary_prediction": "quadratic",
+  "secondary_prediction": "linear diagnostic",
+  "permission_to_propagate": false,
+  "source_prediction_tolerance": 0.01,
+  "identity_tolerance": 1e-10,
+  "original_bank_changed": false,
+  "global_curve_changed": false,
+  "weights_reapplied": false
+}

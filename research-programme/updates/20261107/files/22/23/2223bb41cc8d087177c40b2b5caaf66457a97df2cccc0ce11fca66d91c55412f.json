@@ -1,0 +1,158 @@
+{
+  "stage": 228,
+  "state": "complete",
+  "finished_at": "2026-10-26T17:47:11.931499+00:00",
+  "checks": [
+    {
+      "name": "heavy: high-precision finest continuity",
+      "value": 1.5971325052680025e-10,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "heavy: high-precision convergence continuity:1",
+      "value": 0.25000000188675514,
+      "limit": 0.5,
+      "passed": true
+    },
+    {
+      "name": "heavy: high-precision convergence continuity:2",
+      "value": 0.25000000047168874,
+      "limit": 0.5,
+      "passed": true
+    },
+    {
+      "name": "heavy: high-precision convergence continuity:3",
+      "value": 0.2500000001179222,
+      "limit": 0.5,
+      "passed": true
+    },
+    {
+      "name": "heavy: high-precision finest raychaudhuri",
+      "value": 2.771480122907758e-10,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "heavy: high-precision convergence raychaudhuri:1",
+      "value": 0.24999999667067485,
+      "limit": 0.5,
+      "passed": true
+    },
+    {
+      "name": "heavy: high-precision convergence raychaudhuri:2",
+      "value": 0.2499999991676687,
+      "limit": 0.5,
+      "passed": true
+    },
+    {
+      "name": "heavy: high-precision convergence raychaudhuri:3",
+      "value": 0.24999999979191717,
+      "limit": 0.5,
+      "passed": true
+    },
+    {
+      "name": "cold: high-precision finest continuity",
+      "value": 1.5981483153434833e-10,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "cold: high-precision convergence continuity:1",
+      "value": 0.2500000018879735,
+      "limit": 0.5,
+      "passed": true
+    },
+    {
+      "name": "cold: high-precision convergence continuity:2",
+      "value": 0.2500000004719934,
+      "limit": 0.5,
+      "passed": true
+    },
+    {
+      "name": "cold: high-precision convergence continuity:3",
+      "value": 0.2500000001179984,
+      "limit": 0.5,
+      "passed": true
+    },
+    {
+      "name": "cold: high-precision finest raychaudhuri",
+      "value": 1.7356319455466013e-13,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "cold: high-precision convergence raychaudhuri:1",
+      "value": 0.25000000000035977,
+      "limit": 0.5,
+      "passed": true
+    },
+    {
+      "name": "cold: high-precision convergence raychaudhuri:2",
+      "value": 0.25000000000009,
+      "limit": 0.5,
+      "passed": true
+    },
+    {
+      "name": "cold: high-precision convergence raychaudhuri:3",
+      "value": 0.2500000000000225,
+      "limit": 0.5,
+      "passed": true
+    }
+  ],
+  "models": [
+    {
+      "model": "heavy",
+      "probes": [
+        {
+          "step": 1e-05,
+          "continuity": 1.0221647932465045e-08,
+          "raychaudhuri": 1.7737473096642178e-08
+        },
+        {
+          "step": 5e-06,
+          "continuity": 2.555412002402008e-09,
+          "raychaudhuri": 4.434368215106729e-09
+        },
+        {
+          "step": 2.5e-06,
+          "continuity": 6.388530018058612e-10,
+          "raychaudhuri": 1.108592050085819e-09
+        },
+        {
+          "step": 1.25e-06,
+          "continuity": 1.5971325052680025e-10,
+          "raychaudhuri": 2.771480122907758e-10
+        }
+      ]
+    },
+    {
+      "model": "cold",
+      "probes": [
+        {
+          "step": 1e-05,
+          "continuity": 1.0228149116818301e-08,
+          "raychaudhuri": 1.1108044451477268e-11
+        },
+        {
+          "step": 5e-06,
+          "continuity": 2.5570372985150496e-09,
+          "raychaudhuri": 2.7770111128733132e-12
+        },
+        {
+          "step": 2.5e-06,
+          "continuity": 6.392593258356671e-10,
+          "raychaudhuri": 6.942527782185781e-13
+        },
+        {
+          "step": 1.25e-06,
+          "continuity": 1.5981483153434833e-10,
+          "raychaudhuri": 1.7356319455466013e-13
+        }
+      ]
+    }
+  ],
+  "qualified": true,
+  "failed": [],
+  "scope": "Independent local differential-equation tangent probe; no new history evolution"
+}

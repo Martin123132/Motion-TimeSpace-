@@ -1,0 +1,11 @@
+$ErrorActionPreference='Stop'
+$env:MTS_CPU='2'
+$env:MTS_DEADLINE_UTC='2026-10-15T21:00:00+00:00'
+$env:OPENBLAS_NUM_THREADS='1'
+$env:OMP_NUM_THREADS='1'
+$env:MKL_NUM_THREADS='1'
+$python='C:\Users\ollet\AppData\Local\Programs\Python\Python313\python.exe'
+foreach($model in @('heavy','cold')) {
+    & $python -B evolve_stage141_history.py --model $model
+    if($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+}

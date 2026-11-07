@@ -1,0 +1,135 @@
+{
+  "state": "complete",
+  "time_utc": "2026-10-05T00:30:21.952225+00:00",
+  "script_sha256": "7af75aa4964aaabcf7363deb1810f5a6615ddd6208f71b50685531660c40db8f",
+  "checks": [
+    {
+      "name": "lifted_mode_equation",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "surface_variation_minus_traction",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "modal_Noether_energy",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "positive_completed_square",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "work_storage_identity",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "spectral_norm_derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "periodic_storage_Legendre_recovery",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "periodic_boundary_action_derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "quartic_remainder_identity",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "derived_local_derivative_action",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "derivative_expansion_work_identity",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "exact_causal_harmonic_convolution",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "zero_initial_mode",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "zero_initial_mode_velocity",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "pulse_start_derivative_0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "pulse_start_derivative_2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "pulse_start_derivative_4",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "pulse_sixth_derivative_normalization",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "single_history_symmetrizes_kernel",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "doubled_history_keeps_retarded_kernel",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "regular_envelope_surface_contact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "inherited_finite_mass_flux_regression",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "inherited_finite_mass_chirp_regression",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "testmass_source_limit_regression",
+      "passed": true,
+      "residual": "0"
+    }
+  ],
+  "exact_checks": 24,
+  "new_free_response_parameters": 0,
+  "traction": "p=Y0*q+I*q_ddot+sum(a_n*eta_n_ddot)",
+  "mode_equation": "eta_n_ddot+lambda_n*eta_n=-a_n*q_ddot",
+  "energy_law": "dE/dtau=q_dot*p, before multiplying by kappa/R",
+  "derivative_action": "L=(I*q_dot^2-Y0*q^2+J1*q_ddot^2)/2",
+  "derivative_energy": "E=(I*q_dot^2+Y0*q^2+J1*(q_ddot^2-2*q_dot*q_third))/2",
+  "finite_mass_coefficients_role": "Regression of stage23, not a new finite-frequency two-body flux calculation."
+}

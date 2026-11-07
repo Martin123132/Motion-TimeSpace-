@@ -1,0 +1,54 @@
+{
+  "accepted_scope": "Exact invertible temperature/shape/gas-slip implementation of the retained coupled wave equations, tested for both existing parent models. All requested per-comparison 0.002 time, wave-basis and ideal-band gates pass. The same24-function no-emission background is retained. The leading isotropic nonrelativistic double-Compton spectrum functional and its Jacobian are derived and tested separately, not evolved.",
+  "all_requested_numerical_gates_closed": true,
+  "open_numerical_gate": null,
+  "unchanged_numerical_response_gate": 0.002,
+  "retained_unaccepted_accuracy_trials": {},
+  "required_accepted_packets": [
+    "results/start-guard/status.json",
+    "results/scaled-equations/status.json",
+    "results/parent-equivalence/status.json",
+    "results/time3200-over1600/status.json",
+    "results/time6400-over3200/status.json",
+    "results/basis36-over32-6400/status.json",
+    "results/emission-jacobian/status.json",
+    "waves/heavy36-400/status.json",
+    "waves/heavy36-1600/status.json",
+    "waves/heavy36-3200/status.json",
+    "waves/heavy36-6400/status.json",
+    "waves/heavy32-6400/status.json",
+    "waves/cold36-400/status.json",
+    "waves/cold36-1600/status.json",
+    "waves/cold36-3200/status.json",
+    "waves/cold36-6400/status.json",
+    "waves/cold32-6400/status.json"
+  ],
+  "resolved_parent_failures": [
+    {
+      "original": "../observer-frequency-projection-20261007/results/final-time36/status.json",
+      "old_error": 0.0022193477481446573,
+      "successor": "results/time3200-over1600/status.json",
+      "new_error": 0.0002148089028632394,
+      "scope": "Heavy x=1 ideal-band1600-to3200 time refinement; original packet unchanged."
+    },
+    {
+      "original": "../observer-frequency-projection-20261007/results/refined-time36/status.json",
+      "old_error": 0.0020970558007779574,
+      "successor": "results/time6400-over3200/status.json",
+      "new_error": 0.000055017543762777595,
+      "scope": "Cold x=1 ideal-band3200-to6400 time refinement; original packet unchanged."
+    }
+  ],
+  "accuracy_boundaries": [
+    "The0.002 criterion applies separately to tested refinement comparisons, not to a rigorous aggregate error bar or all omitted physics.",
+    "Both scalar-seeded retained parents are tested; unexcited polarization sectors and nonlinear stability are not certified.",
+    "The geometry/background stays at its saved24-function no-emission resolution.",
+    "The observer remains the baryon-clock/baryon-rest local finite-k readout; no second-gauge metric re-evolution or past-light-cone sky transfer is added.",
+    "Ideal comoving-frequency bands are not instrument responses; the angular monopole is not automatically a homogeneous spectral distortion.",
+    "No physical parameter, field content, collision-bank coefficient or acceptance threshold was fitted to repair numerical cancellation.",
+    "Source-function derivatives are for the leading isotropic nonrelativistic DC approximation, not a full double-Compton redistribution or anisotropic/polarized emission kernel.",
+    "Photon production, BR, matched emitting background and perturbed sources, and visibility transfer remain future physical work.",
+    "Existing empirical fits retain their previous authority. This stage adds numerical and analytic progress, not a new empirical preference or derivation of G, alpha or electron mass."
+  ],
+  "conclusion": "The prior individual-band time blocker is closed using direct small-variable evolution with the unchanged physical model and threshold. Independent32-to36 spectral resolution also passes. Coherent cancellation remains about91percent. The next physical extension is a matched photon-production background and its spectrum-dependent perturbation, rather than another no-emission refinement loop."
+}

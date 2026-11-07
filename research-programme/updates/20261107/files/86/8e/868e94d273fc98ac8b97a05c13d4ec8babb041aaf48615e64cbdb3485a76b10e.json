@@ -1,0 +1,46 @@
+{
+  "stage": 113,
+  "accepted_scope": "Physical-Doppler compact Compton source without shift deposition; paired baseline/correction responses and refinement controls. This removes the dominant previous source interpolation artifact. Matching-domain and inherited-profile uncertainties still dominate the remaining small conditional response.",
+  "scientific_checks": 969,
+  "passing_scientific_checks": 955,
+  "expected_failed_by_packet": {
+    "response-fine-o6-q32-m20-n1024": [
+      "gas:heavy",
+      "gas:cold"
+    ],
+    "response-fine-o6-q32-m40-n1024": [
+      "gas:heavy",
+      "gas:cold"
+    ],
+    "response-fine-o6-q48-m40-n1024": [
+      "gas:heavy",
+      "gas:cold"
+    ],
+    "response-fine-o8-q32-m40-n1024": [
+      "gas:heavy",
+      "gas:cold"
+    ],
+    "response-fine-o8-q32-m40-n512": [
+      "gas:heavy",
+      "gas:cold"
+    ],
+    "response-space-o8-q32-m40-n1024": [
+      "gas:heavy",
+      "gas:cold"
+    ],
+    "response-time-o8-q32-m40-n1024": [
+      "gas:heavy",
+      "gas:cold"
+    ]
+  },
+  "original_gas_relative_gate_relaxed": false,
+  "global_physical_feedback_amplitude_settled": false,
+  "direct_event_refinement_test_passed": true,
+  "source_panel_refinement_test_passed": true,
+  "response_timestep_refinement_test_passed": true,
+  "saved_tail_interpolation_removed": false,
+  "finite_planck_recoil_matching_derived": false,
+  "full_parent_history_rerun": false,
+  "next_target": "Derive the exact nonlocal matching decomposition Delta(W h)=W_bar Delta h+h_bar Delta W for h=Phi_inner-Phi_saved, then evaluate and propagate the bulk and joining-window contributions with the saved physical-shift bank for BOTH fixed windows, baseline and both corrections. Do not discard the joining term or tune W to reduce the answer. Use that attribution to construct the common soft/full-frequency overlap (including a separate finite-Planck/recoil remainder) and test whether matching dependence contracts. Reuse parent histories and the Stage113 bank; no full history run or observational fit.",
+  "conclusion": "The added conditional feedback is about746-fold smaller for baseline and773-fold smaller for corrections after removing source shift rounding. Independent quadrature/time controls resolve this selected functional far more accurately than its residual matching/profile uncertainty. Saved MTS correction histories are unchanged;no new observational conclusion is drawn."
+}

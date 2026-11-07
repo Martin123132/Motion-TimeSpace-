@@ -1,0 +1,8 @@
+{
+  "next_target": "Derive the second log-temperature derivative of the same physical collision integrand, test it against the saved narrow and original-probe temperature evaluations for both gas histories and baseline/MTS kernels, and keep the live bank unchanged until a smooth candidate preserves genuine curvature and passes the existing gates.",
+  "why": "A verified first derivative identifies the artificial bank corner, but a linear local replacement could erase genuine thermal curvature. Deriving and validating that curvature is the next necessary calculation, not another blind time-step refinement.",
+  "reuse": ["results/frozen-tangent.npz", "results/anchor-events.npz", "targets", "results/gas-responses.npz"],
+  "requires_live_bank_edit": false,
+  "requires_new_source_event_integrals": false,
+  "tolerances_unchanged": true
+}

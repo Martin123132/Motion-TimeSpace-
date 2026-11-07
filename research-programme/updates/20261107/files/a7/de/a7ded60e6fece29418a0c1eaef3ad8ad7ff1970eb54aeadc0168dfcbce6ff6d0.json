@@ -1,0 +1,894 @@
+{
+  "checks": [
+    {
+      "name": "Independent drive+self equals total:heavy",
+      "passed": true
+    },
+    {
+      "name": "Both central joins have same qualitative history:heavy",
+      "passed": true
+    },
+    {
+      "name": "Independent drive+self equals total:cold",
+      "passed": true
+    },
+    {
+      "name": "Both central joins have same qualitative history:cold",
+      "passed": true
+    }
+  ],
+  "models": {
+    "heavy": {
+      "column_order": [
+        "baseline",
+        "correction_join1",
+        "correction_join2"
+      ],
+      "band_order": [
+        "full",
+        "low",
+        "peak"
+      ],
+      "residual_norm_final_over_start": [
+        [
+          3.0493727732887894,
+          0.11591454036011413,
+          0.11591454052441842
+        ],
+        [
+          2.587984084136524,
+          0.12117850284197551,
+          0.12117850306589581
+        ],
+        [
+          2.2249581270873353,
+          0.1669289091150003,
+          0.16692890958296236
+        ]
+      ],
+      "residual_power_final_over_start": [
+        [
+          9.298674310474961,
+          0.013436180666896528,
+          0.013436180704987042
+        ],
+        [
+          6.697661619743962,
+          0.014684229551022668,
+          0.014684229605291319
+        ],
+        [
+          4.950438667291984,
+          0.027865260698324026,
+          0.02786526085455682
+        ]
+      ],
+      "minimum_residual_power_over_start": [
+        [
+          1.0,
+          0.010384469316618475,
+          0.010384469346096666
+        ],
+        [
+          1.0,
+          0.010883330549769667,
+          0.010883330590030466
+        ],
+        [
+          1.0,
+          0.011768126855741731,
+          0.011768126921741928
+        ]
+      ],
+      "minimum_epoch_fraction": [
+        [
+          0.5,
+          0.7578125000000001,
+          0.7578125000000001
+        ],
+        [
+          0.5,
+          0.734375,
+          0.734375
+        ],
+        [
+          0.5,
+          0.6015625,
+          0.6015625
+        ]
+      ],
+      "derivative_sign_change_brackets": [
+        {
+          "full": [],
+          "low": [],
+          "peak": []
+        },
+        {
+          "full": [
+            {
+              "bracket": [
+                0.7578125000000001,
+                0.765625
+              ],
+              "from_sign": -1,
+              "to_sign": 1
+            }
+          ],
+          "low": [
+            {
+              "bracket": [
+                0.734375,
+                0.7421874999999999
+              ],
+              "from_sign": -1,
+              "to_sign": 1
+            }
+          ],
+          "peak": [
+            {
+              "bracket": [
+                0.6015625,
+                0.609375
+              ],
+              "from_sign": -1,
+              "to_sign": 1
+            }
+          ]
+        },
+        {
+          "full": [
+            {
+              "bracket": [
+                0.7578125000000001,
+                0.765625
+              ],
+              "from_sign": -1,
+              "to_sign": 1
+            }
+          ],
+          "low": [
+            {
+              "bracket": [
+                0.734375,
+                0.7421874999999999
+              ],
+              "from_sign": -1,
+              "to_sign": 1
+            }
+          ],
+          "peak": [
+            {
+              "bracket": [
+                0.6015625,
+                0.609375
+              ],
+              "from_sign": -1,
+              "to_sign": 1
+            }
+          ]
+        }
+      ],
+      "final_residual_power_relative_growth_per_u": [
+        [
+          1.548231721680437,
+          0.46669784811563086,
+          0.4666978481042814
+        ],
+        [
+          1.2065186871930031,
+          0.4551527751876069,
+          0.45515277519388647
+        ],
+        [
+          0.9375315614614371,
+          0.37030021579335237,
+          0.3703002157971038
+        ]
+      ],
+      "endpoint_net_half_power_rate_by_operator": [
+        [
+          [
+            0.024465430807086463,
+            -6.375514459305838e-13,
+            -6.375514460023544e-13
+          ],
+          [
+            0.00021520133361901914,
+            3.5920286929492406e-14,
+            3.592028693350113e-14
+          ],
+          [
+            0.005086549136045557,
+            8.992647708394364e-13,
+            8.9926477093254e-13
+          ]
+        ],
+        [
+          [
+            0.008008879956454131,
+            -6.260285144514384e-13,
+            -6.260285145217409e-13
+          ],
+          [
+            0.00019545411770118947,
+            3.480341956393749e-14,
+            3.4803419567687674e-14
+          ],
+          [
+            0.004683814438668591,
+            8.737069186055026e-13,
+            8.737069187068779e-13
+          ]
+        ],
+        [
+          [
+            0.0003755478467225718,
+            -5.814477260069393e-13,
+            -5.814477260724875e-13
+          ],
+          [
+            0.0001214092954854723,
+            2.765820694241087e-14,
+            2.7658206945557888e-14
+          ],
+          [
+            0.0031545098013544826,
+            7.203262867677354e-13,
+            7.203262868502285e-13
+          ]
+        ]
+      ],
+      "endpoint_residual_self_half_power_rate": [
+        [
+          -21.32799963392073,
+          -3.1705356098250395e-09,
+          -3.170535610179624e-09
+        ],
+        [
+          -20.438598908727247,
+          -3.125122022240352e-09,
+          -3.1251220225901324e-09
+        ],
+        [
+          -0.1842477554722536,
+          -5.5682107440072516e-11,
+          -5.568210744643938e-11
+        ]
+      ],
+      "endpoint_template_drive_half_power_rate": [
+        [
+          21.35776681519748,
+          3.1708332434368774e-09,
+          3.1708332437914877e-09
+        ],
+        [
+          20.45148705724007,
+          3.12540450406407e-09,
+          3.125404504413885e-09
+        ],
+        [
+          0.18789922241581614,
+          5.584864420777572e-11,
+          5.584864421416268e-11
+        ]
+      ],
+      "endpoint_net_to_total_rate_magnitude": [
+        [
+          0.0006973493679967957,
+          4.693520543650803e-05,
+          4.6935205435244666e-05
+        ],
+        [
+          0.0003151893465343695,
+          4.5193253359388e-05,
+          4.5193253359895203e-05
+        ],
+        [
+          0.009811383808946736,
+          0.0014931582219299632,
+          0.001493158221939367
+        ]
+      ],
+      "endpoint_half_power_rate_by_resolved_drive": [
+        [
+          [
+            -21.32799963392073,
+            -3.1705356098250395e-09,
+            -3.170535610179624e-09
+          ],
+          [
+            0.0008900619486510563,
+            4.74489959517923e-14,
+            4.744899595711323e-14
+          ],
+          [
+            21.193489491234626,
+            3.1707451197643443e-09,
+            3.1707451201189467e-09
+          ],
+          [
+            0.16338726201420464,
+            4.067467658145736e-14,
+            4.0674676583981853e-14
+          ]
+        ],
+        [
+          [
+            -20.438598908727247,
+            -3.125122022240352e-09,
+            -3.1251220225901324e-09
+          ],
+          [
+            0.0005895581883267021,
+            4.717182534021193e-14,
+            4.7171825345519394e-14
+          ],
+          [
+            20.414469582612753,
+            3.125306692959581e-09,
+            3.125306693309387e-09
+          ],
+          [
+            0.0364279164389896,
+            5.0639279148993424e-14,
+            5.063927915290029e-14
+          ]
+        ],
+        [
+          [
+            -0.1842477554722536,
+            -5.5682107440072516e-11,
+            -5.568210744643938e-11
+          ],
+          [
+            0.0001260047265362178,
+            1.0566775136064588e-14,
+            1.0566775137163013e-14
+          ],
+          [
+            0.1801189807353998,
+            5.580914810794186e-11,
+            5.5809148114325296e-11
+          ],
+          [
+            0.007654236953880098,
+            2.8929324697797704e-14,
+            2.89293247002216e-14
+          ]
+        ]
+      ],
+      "source54_residual_norm_budget": [
+        1.5534460523856738e-05,
+        1.5534460523950846e-05
+      ],
+      "saved512_vs1024_residual_norm_comparison": {
+        "maximum_relative": [
+          0.0,
+          0.0006434435205424802,
+          0.00064344352101448
+        ],
+        "endpoint_relative": [
+          0.0,
+          1.7995557702600312e-06,
+          1.7995557082301121e-06
+        ]
+      },
+      "raw_gas_primary_relative": [
+        2.022271239358812e-12,
+        1.461304368402838e-05,
+        2.159172593327284e-05
+      ],
+      "independent_energy_gas_primary_relative": [
+        1.7763013282458638e-12,
+        3.3402130425259285e-13,
+        3.6945725167479007e-13
+      ]
+    },
+    "cold": {
+      "column_order": [
+        "baseline",
+        "correction_join1",
+        "correction_join2"
+      ],
+      "band_order": [
+        "full",
+        "low",
+        "peak"
+      ],
+      "residual_norm_final_over_start": [
+        [
+          3.046755065363119,
+          0.11565437168570744,
+          0.11565437184931149
+        ],
+        [
+          2.586995362892396,
+          0.12090870762537591,
+          0.12090870784834665
+        ],
+        [
+          2.22487009440742,
+          0.16658028761180196,
+          0.16658028807797468
+        ]
+      ],
+      "residual_power_final_over_start": [
+        [
+          9.282716428315823,
+          0.013375933690015768,
+          0.013375933727858813
+        ],
+        [
+          6.69254500762676,
+          0.014618915579638634,
+          0.014618915633556842
+        ],
+        [
+          4.950046936988481,
+          0.027748992220830666,
+          0.02774899237614103
+        ]
+      ],
+      "minimum_residual_power_over_start": [
+        [
+          1.0,
+          0.010353088903579487,
+          0.010353088932903565
+        ],
+        [
+          1.0,
+          0.010848148521807802,
+          0.010848148561845572
+        ],
+        [
+          1.0,
+          0.011729315301044232,
+          0.011729315366710824
+        ]
+      ],
+      "minimum_epoch_fraction": [
+        [
+          0.5,
+          0.7578125000000001,
+          0.7578125000000001
+        ],
+        [
+          0.5,
+          0.7421874999999999,
+          0.7421874999999999
+        ],
+        [
+          0.5,
+          0.6015625,
+          0.6015625
+        ]
+      ],
+      "derivative_sign_change_brackets": [
+        {
+          "full": [],
+          "low": [],
+          "peak": []
+        },
+        {
+          "full": [
+            {
+              "bracket": [
+                0.7578125000000001,
+                0.765625
+              ],
+              "from_sign": -1,
+              "to_sign": 1
+            }
+          ],
+          "low": [
+            {
+              "bracket": [
+                0.734375,
+                0.7421874999999999
+              ],
+              "from_sign": -1,
+              "to_sign": 1
+            }
+          ],
+          "peak": [
+            {
+              "bracket": [
+                0.6015625,
+                0.609375
+              ],
+              "from_sign": -1,
+              "to_sign": 1
+            }
+          ]
+        },
+        {
+          "full": [
+            {
+              "bracket": [
+                0.7578125000000001,
+                0.765625
+              ],
+              "from_sign": -1,
+              "to_sign": 1
+            }
+          ],
+          "low": [
+            {
+              "bracket": [
+                0.734375,
+                0.7421874999999999
+              ],
+              "from_sign": -1,
+              "to_sign": 1
+            }
+          ],
+          "peak": [
+            {
+              "bracket": [
+                0.6015625,
+                0.609375
+              ],
+              "from_sign": -1,
+              "to_sign": 1
+            }
+          ]
+        }
+      ],
+      "final_residual_power_relative_growth_per_u": [
+        [
+          1.5477054366656937,
+          0.4659516230243795,
+          0.4659516230297296
+        ],
+        [
+          1.2044940893332319,
+          0.45458119513598194,
+          0.4545811951453741
+        ],
+        [
+          0.935884936376693,
+          0.37003085898250127,
+          0.37003085898318977
+        ]
+      ],
+      "endpoint_net_half_power_rate_by_operator": [
+        [
+          [
+            0.024445649405009706,
+            -6.344048713797286e-13,
+            -6.344048714497909e-13
+          ],
+          [
+            0.00021487367135841878,
+            3.572980791999928e-14,
+            3.572980792355564e-14
+          ],
+          [
+            0.005078955963901496,
+            8.945743308820205e-13,
+            8.945743309838137e-13
+          ]
+        ],
+        [
+          [
+            0.007993997328038568,
+            -6.228793117025574e-13,
+            -6.228793117711937e-13
+          ],
+          [
+            0.00019516054500205758,
+            3.462106975080592e-14,
+            3.462106975464658e-14
+          ],
+          [
+            0.004676899560693803,
+            8.691974555264143e-13,
+            8.691974556273805e-13
+          ]
+        ],
+        [
+          [
+            0.00037470399843724574,
+            -5.785374440969962e-13,
+            -5.785374441609645e-13
+          ],
+          [
+            0.0001212272919115368,
+            2.7521633488805952e-14,
+            2.7521633491865123e-14
+          ],
+          [
+            0.0031498135420324857,
+            7.167787017522352e-13,
+            7.167787018314586e-13
+          ]
+        ]
+      ],
+      "endpoint_residual_self_half_power_rate": [
+        [
+          -21.296712839403256,
+          -3.1538738760908986e-09,
+          -3.15387387643728e-09
+        ],
+        [
+          -20.408869537962325,
+          -3.108768053653895e-09,
+          -3.1087680539955582e-09
+        ],
+        [
+          -0.18397422072666267,
+          -5.542189486661774e-11,
+          -5.5421894872829915e-11
+        ]
+      ],
+      "endpoint_template_drive_half_power_rate": [
+        [
+          21.32645231844353,
+          3.154169775358321e-09,
+          3.1541697757047376e-09
+        ],
+        [
+          20.421735595396058,
+          3.1090489928674695e-09,
+          3.109048993209169e-09
+        ],
+        [
+          0.18761996555904392,
+          5.558765775776179e-11,
+          5.5587657763992276e-11
+        ]
+      ],
+      "endpoint_net_to_total_rate_magnitude": [
+        [
+          0.0006977236527073255,
+          4.6908221281070126e-05,
+          4.690822128149928e-05
+        ],
+        [
+          0.0003151074643478039,
+          4.518290231699932e-05,
+          4.5182902317828584e-05
+        ],
+        [
+          0.009810581404210997,
+          0.0014931976433617048,
+          0.001493197643359327
+        ]
+      ],
+      "endpoint_half_power_rate_by_resolved_drive": [
+        [
+          [
+            -21.296712839403256,
+            -3.1538738760908986e-09,
+            -3.15387387643728e-09
+          ],
+          [
+            0.0008887266207513386,
+            4.718164727847593e-14,
+            4.718164728349798e-14
+          ],
+          [
+            21.162593163136115,
+            3.154082708372082e-09,
+            3.1540827087184906e-09
+          ],
+          [
+            0.16297042868665854,
+            3.9885338960683735e-14,
+            3.988533896330789e-14
+          ]
+        ],
+        [
+          [
+            -20.408869537962325,
+            -3.108768053653895e-09,
+            -3.1087680539955582e-09
+          ],
+          [
+            0.0005888229843459106,
+            4.69146299862452e-14,
+            4.691462999126605e-14
+          ],
+          [
+            20.384793401903522,
+            3.1089521980564895e-09,
+            3.10895219839818e-09
+          ],
+          [
+            0.036353370508191714,
+            4.988018099382959e-14,
+            4.98801809977777e-14
+          ]
+        ],
+        [
+          [
+            -0.18397422072666267,
+            -5.542189486661774e-11,
+            -5.5421894872829915e-11
+          ],
+          [
+            0.00012585078547191185,
+            1.0509511312768714e-14,
+            1.0509511313868702e-14
+          ],
+          [
+            0.17985412650110374,
+            5.554860268646095e-11,
+            5.5548602692687913e-11
+          ],
+          [
+            0.007639988272468272,
+            2.854555998807461e-14,
+            2.8545559990494226e-14
+          ]
+        ]
+      ],
+      "source54_residual_norm_budget": [
+        1.5554421787485873e-05,
+        1.555442178733738e-05
+      ],
+      "saved512_vs1024_residual_norm_comparison": {
+        "maximum_relative": [
+          0.0,
+          0.0006416637999146149,
+          0.0006416638003861472
+        ],
+        "endpoint_relative": [
+          0.0,
+          1.7845926968678327e-06,
+          1.784592691275741e-06
+        ]
+      },
+      "raw_gas_primary_relative": [
+        2.0128898548006916e-12,
+        2.086035993183826e-05,
+        1.8273541403068647e-05
+      ],
+      "independent_energy_gas_primary_relative": [
+        1.6815437931000898e-12,
+        3.558683910192944e-13,
+        4.25165473979072e-13
+      ]
+    }
+  },
+  "empirical_fit": false,
+  "no_new_history": true,
+  "low_frequency_residual_driven_and_damped": true,
+  "autonomous_exponential_decay_rejected_for_saved_interval": true,
+  "new_observation": false,
+  "state": "complete",
+  "finished_utc": "2026-10-12T19:23:28.062774+00:00",
+  "script_sha256": "7f216d09c2d9830e47e3304ffa6c518b68b48a61e2cf6d8e1b5b4e002387f375",
+  "input_hashes": {
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\adiabatic-boundary-and-screen-transport-20261007\\boundary_common.py": "56d266e84a2ac99108c074685a11cfccd1116ae26cc46b64bb3a6a98b1c789dd",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\adiabatic-boundary-and-screen-transport-20261007\\derive_matter_correction.py": "61ad0136fab14cdee21a4f1a16bd4a2f923de0bc3417c858a440f48d44ac15b8",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\angular-emission-kernel-20261008\\emission_angular_common.py": "69d7377c5c89dc308dcd643fdb6bae79acdd920049790ccee3c7bc4fb9741b00",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\angular-thermal-source-20261007\\angular_common.py": "9b3596a65851c703d7c8a7da8d03662dffcdfe8eeaa771bc160ba63488c2693e",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\conservative-spectral-collision-step-20261007\\step_common.py": "9cfa72334e80a51fe0277745cf7921409dbca5900dc714a10ffdaf01cb08c0dc",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\coupled-finite-wave-evolution-20261007\\coupled_system.py": "23749f71d8cb510945023de92fcfd9c4dab9508924c71a9779e8abd022292313",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\coupled-finite-wave-evolution-20261007\\evolution_common.py": "6a5809738aeb1860fcd94f600288746c00018e2ee2a2b1eea5902f626486c670",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\coupled-finite-wave-evolution-20261007\\initial_state.py": "289bc0d0139edea8cbcaacaea809ae8f050e1e4f35a6533ec1d1ff80802639fd",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\downstream-window-transfer-20261012\\window_transfer_common.py": "32c84d4edb55a3131a81b58ff3f627539b41bfd47b4dd0896ab4d0f69c972501",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\dynamical-infrared-tail-20261008\\tail_common.py": "770cbb34ee32b96a32bf05857803759c71c7404f3fe71d47d5b99fa9899a2b78",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\einstein-constraints-and-kinetic-response-20261007\\constraint_common.py": "8996b45d7d9f9a1d06873d65ced83f3945706313beb8e930e14e07e919b40874",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\electron-azimuth-source-20261009\\azimuth_common.py": "132411ef6e47c2eae21690b55262f9002091d5d56d88c9b6f228ef85eb4719e7",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\electron-polar-source-20261009\\polar_common.py": "bd18a55058a19b8361296b46f4e2af354019480fc14bd6031f59eeecea0aafef",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\electron-radial-source-20261010\\radial_common.py": "1d169941eee8a34ccf5a8c42a475d99ddb001936a8979b6e1872be7d500485b7",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\emitting-thermal-background-20261008\\emission_common.py": "2b2e7b217f8446a4fdb6f406304a8518d5e795d3eb2882f72e7cc6a1a7c5097f",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\emitting-thermal-background-20261008\\emission_rates.py": "91842c525224460cfac199c8c34ed804ce891e46d70217544426cd96997c14b7",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\emitting-thermal-background-20261008\\evolve_emitting_background.py": "4b5fc798a8f3b0a3fcd871f090a0597b4eb70d573f203151be937dd5ecec0e69",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\emitting-thermal-background-20261008\\infrared_ladder.py": "c3e5af091f375143a4c84208f3f29dfd2d3add047dd79517642c86001fa9578b",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\emitting-thermal-background-20261008\\integrated_dc.py": "0c60bbf898ba06b130d6580b99c7c34a01b097d5be12d03ba57d4412af3d5206",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\emitting-thermal-background-20261008\\sourced_emission.py": "b0ef9f60846b51538762d3a31ba9c30ba497a9e14e2d2300277af4a94f14eed4",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\emitting-wave-response-20261008\\wave_common.py": "fad10a8d8f17aaf342712f93db421d5d90efeb5579923526de67d923bbdd3820",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\expanding-thermal-gravity-20261007\\background_geometry.py": "8c1ff1ae163d8ab6baacbb8332f345b6f7de04739e0822c079c5d8f34c017e07",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\expanding-thermal-gravity-20261007\\high_degree_waves.py": "7a6f5ce910f9df238148da61f7bcf1dc7042a2f9c46e57930187f619bef59442",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\expanding-thermal-gravity-20261007\\kernel_ladder.py": "0c766b13c6c88454e630fcedfd4cc0e4c7a35157f5d8d090df05a47cb3bf4966",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\expanding-thermal-gravity-20261007\\run_paired_thermal_waves.py": "2eb4b29bf0fdcb9a3bd5d888b48bc9e5309be990e0da8438b4e800846fcf64e4",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\expanding-thermal-gravity-20261007\\stable_spectral_basis.py": "a5d10bd6c8aef215f0fe7e1a6c2aee05b32e521581fc1a2c0c263e4acfe29c2d",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\expanding-thermal-gravity-20261007\\thermal_wave_common.py": "01705129ca860b9a82c6d23c0b1fc20d8180bdf1b407db1cbf6f9d10871414d6",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\expanding-thermal-gravity-20261007\\thermal_wave_system.py": "619abecb9e30c51265bdb00c30cce101fad915a46e375c872ecfbb7a45552563",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\finite-thermal-source-20261008\\thermal_event_source.py": "012ce36eb307be7e761671cb265b3f0d498c653aecd5b1bd4e52cb3435a58438",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\finite-thermal-source-20261008\\thermal_source_common.py": "c0a8a1afc59fab6db10c7564fe167da263fc705fa36518df95e8b84e86624081",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\finite-vacuum-matching-20261008\\finite_matching_common.py": "884484ead7d16fb783095f1153dfd4462bc727e0d8ddc8a2a007d9bfb139ea15",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\finite-vacuum-matching-20261008\\ordered_real_kernel.py": "f99269f6392a0091a1bd366e93ecc51f789e367368ab5dbb0e2cde775d73db6e",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\finite-vacuum-matching-20261008\\source_four_force.py": "af5db4575e318109fdb590e5a9b06890daafda7767f3f97a566ee1c28c25c274",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\finite-vacuum-matching-20261008\\vacuum_virtual.py": "47b15d998c7f622776251bc5b40d6a8b99b5d7c3ba6f4de17f68a9e1598bb1f1",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\finite-wave-canonical-source-20261007\\vertex_common.py": "2ad30c50157b9f74c431fb057345aea6780199b94cf45938e8afb8be6d7d71ff",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\frequency-aligned-control-20261009\\aligned_common.py": "07f4f08122de38d641dce5c9d7b8d1301cf606b545eebcc26b6bd567911c1b70",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\full-history-source-precision-20261007\\precision_common.py": "0e4a436265fb51955e11a0acc434e8c5a5c9d5e758d11acb7eeb1369ef4edf6d",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\hard-direction-source-20261009\\direction_common.py": "a0b2571ed1e68f5d9e967e3c271de3ef6d5750fd0a3c28ceaa8a95c72b58bee5",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\inclusive-soft-matching-20261008\\dirac_amplitude.py": "b0614fc5d075fc27924d6cbd7194fa0e84d6bd70c6f4475df081e13c0344758e",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\inclusive-soft-matching-20261008\\soft_matching_common.py": "4bd6bcea0adc1b08a56bad4d41397053504e338873acaeadc7a18a118c6f912d",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\infrared-source-domain-20261008\\nonlocal_common.py": "51312daa57647a91a9a7c7861c61f1626a0ecaaf43d49887f0624858e0e421b2",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\infrared-source-domain-20261008\\nonlocal_dc.py": "24a584fd47a35888bb3305b0b9a7a4a6d4647752f7a17399368b10db3ea30d9f",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\infrared-source-domain-20261008\\soft_compton_moments.py": "7cff3658b6596ebc4386d298fce719468a6ceeb74900666462dac93bddcee722",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\kinetic-gain-loss-20261008\\batched_real.py": "5223dad1e52ab8d0ae97336dc35848e37beecb645a769496fd10d614faafb08e",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\kinetic-gain-loss-20261008\\evolve_derived_gaunt.py": "366642ff9ea464fcce8d3484b5611e81a5bd3a0541013b55e1f9f014808a9041",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\kinetic-gain-loss-20261008\\kinetic_common.py": "4af5048b239f8756353bb727d78dc255bdabcfdb7d6564c472e040fbe535536f",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\kinetic-gain-loss-20261008\\mass_shell_population.py": "5fedb938a0aa4db547ec8cc36aa72ee68bd5d1023bcdd145abf9dd6efac7d9ae",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\kinetic-gain-loss-20261008\\resolved_redistribution.py": "cec1d30611b0d411ef4747ecd65fd5992a76bdee5f411c07350520cbd4cbb60e",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\late-frequency-refinement-20261012\\evolve_stable_late_refinement.py": "26c66203d7374e3ff02c229eac3004f9068caafea8c36718a7992d273d641bb8",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\late-frequency-refinement-20261012\\late_frequency_common.py": "056b02a7ca2b3d7055d7b84e7e5058f0b4d5d48a11e4ce05c7db101522979e26",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\matched-weak-redistribution-20261008\\matched_weak.py": "22aedd956cb452c70cef1f3e0cb864beb60d8b28537314b728c54807c7c34c72",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\matched-weak-redistribution-20261008\\weak_common.py": "c9263a055d97fc2cb4ad4d868429d4c7bfb7e767f39caac81b77d54cd452a80c",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\mixed-bath-transport-20261007\\mixed_common.py": "48bda6fe3917e027f9a2becb7eefbe658eec20aa3a44560cfb73ad66d985ce9e",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\mixed-bath-transport-20261007\\mixed_wave_system.py": "8a598d1bcd165b827c7c5a18cbdff0126c82d1bded1ecc92aa783d71144ffbad",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\mixed-frequency-source-20261011\\frequency_grid_common.py": "e95625a36d283d7b2699d6e43c4ea833a05d4e1bc490ecc9267ed0b9c0f9ab32",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\moving-polarized-thermal-20261008\\moving_frame.py": "e8c0384f4db9c3b01676da0d33385e9b86541e4aaf288c1f9744aa867501670f",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\moving-polarized-thermal-20261008\\polarized_source.py": "472ce3687dd31a3ef319bf8852e212bc4f6a0a70d7f4e43a828d61b4cfecca3f",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\moving-polarized-thermal-20261008\\polarized_thermal_common.py": "5953c9802f4e087b4161dd39896ad76ee499928ded7cfe649373acd9b183b50c",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\moving-polarized-thermal-20261008\\reduced_amplitude.py": "0683952060689966eea372493c4fba609ab7f5ccd3d992083e3eb500bd7ae810",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\mu-y-residual-decomposition-20261012\\results\\stage-integrity.json": "9896ef22c7cce9d68d1730721a3f3b423e42839daeccd43b6bd0844d666c55cd",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\mu-y-residual-decomposition-20261012\\shape_common.py": "3b0c917e0f1a2a7d8f111ee25f9c0ef51d2864886a8eaa90692da014ffb97188",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\native-heavy-matching-20261007\\matching_common.py": "4aca07ed2ec8fbf70fe71a1066f635deada2a1eddf6fd66b9dd7e00febe9d199",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\native-heavy-matching-20261007\\native\\camb\\__init__.py": "e38de140437c9b5dbee02212c14fe76355d3ac6340e6083fa264569dfbbe7585",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\native-heavy-matching-20261007\\native\\camb\\_config.py": "5fa0a36a7364d591628e06876fa4bc153e341e3e33347e6e9309a7fb1da1d52e",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\native-heavy-matching-20261007\\native\\camb\\baseconfig.py": "6af3e204c323812789ff0ac379668e21817aa8f5758e8a0de5be48cb20705884",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\native-heavy-matching-20261007\\native\\camb\\bbn.py": "879304e01c5df30eb38707e29ffc7cf7c6595f452a36382abcfbfca5189b78ec",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\native-heavy-matching-20261007\\native\\camb\\camb.py": "a7cf444d06c500b5f846c7b5239db43ceb58403bb68fdf3c2284b22bddd5a9f4",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\native-heavy-matching-20261007\\native\\camb\\constants.py": "43e40ba181fc88a033e851f0ee86a345777b9bb2437bb09e84261d8acd28090d",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\native-heavy-matching-20261007\\native\\camb\\dark_energy.py": "1eee14318eb9de8f74c3194660dc64b286a9cafafbfbb43ab6c5660c51e686d4",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\native-heavy-matching-20261007\\native\\camb\\initialpower.py": "1d092bef9527d7cc4ee0472d4bcaef172d5c5a4a55532306c971714f87995963",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\native-heavy-matching-20261007\\native\\camb\\mathutils.py": "d2929114f234f3334915955227a84b0574a6c0a21fb922ac7f5d932c5ae70c5d",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\native-heavy-matching-20261007\\native\\camb\\model.py": "b26ea07652994efcda77ef4dfa26e4d8e0cb43d8e4edc7e8939f896a6d4a50c3",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\native-heavy-matching-20261007\\native\\camb\\mts.py": "44d97d32009731adefba99c8e2ffa7afce25c6c9f6eba5deeef559e15b7a1ec7",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\native-heavy-matching-20261007\\native\\camb\\nonlinear.py": "d51556ec87421d0654773133b102a864ccd602b33554da0432f1e0421855212b",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\native-heavy-matching-20261007\\native\\camb\\recombination.py": "dd6745ea4937b279599ee165e58b6b6f2ace70679daac7319191256331f0a6d6",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\native-heavy-matching-20261007\\native\\camb\\reionization.py": "dbc12e641b2fea6db9c26277cb96ebefe87a98991594c4849d3e52c3ec678fa7",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\native-heavy-matching-20261007\\native\\camb\\results.py": "8c2a80b8ad28e4230d9480e8bab601aa9880553227408da6cfd70f06cdb4d42f",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\native-heavy-matching-20261007\\native\\camb\\sources.py": "09cf44a5b274fb0d0943039d56ab16f0cef0ce63899c856940f68431ab4b03c6",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\native-heavy-matching-20261007\\prepare_matching.py": "ce5504c269c9b5253126593e4aaaadb88fd40607c1c650beb8c4e31f6ba20fdc",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\native-heavy-matching-20261007\\stage_common.py": "88cda9c7fab82268223d3ea844d8833faccf5686562ff5fda63546faf0982d3f",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\nodewise-source-remainder-20261008\\leading_angular.py": "eaea56c1c4c55238aca61d5c00f5bc61e81fdbfc9bdd8eeb273b2a2240f6f333",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\nodewise-source-remainder-20261008\\rational_leading.py": "09192af16108104ff613a51e218a34749e8f567a989d92a4254cb72f2fc25509",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\nodewise-source-remainder-20261008\\remainder_common.py": "ed5e0522ba8c2ed382d187e80f3591536d53f6696088f1c513978e26953fb929",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\nodewise-source-remainder-20261008\\split_real.py": "eb6a68dd9a325b80ee5cf9bf0fa7ce19c076690afe46a783cd82ef57f1b0cb6e",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\observer-frequency-projection-20261007\\consistent_spectral_basis.py": "fb4cffb2a1d675499072766099c3a3c82358aeb037a1a875c758a5b7a80fb6a5",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\observer-frequency-projection-20261007\\consistent_system.py": "2b6970691a391281fdda785491a734e853b897bd5571cb2dd55ade8510b031b3",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\observer-frequency-projection-20261007\\extended_system.py": "f1a43642f9fb045a04f1e7f469f84c7e7d7f9f183487a4ca62221f53482765b6",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\observer-frequency-projection-20261007\\observer_common.py": "c9a557cbbdc89e8404e2cc82d686fcc8a5d5dcb43c4d3eefc5854e9952054e7f",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\observer-frequency-projection-20261007\\spectral_readout.py": "188930956fbf7f0350a993bc5ef491fa9c1df0b146fcc020cd9ada6b671eadd6",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\outer-population-source-20261008\\exact_angular_factor.py": "862f34c39f40af06d33f61cf0573a6a73a18cf282061fe3e3013040aaac0c920",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\outer-population-source-20261008\\fast_source.py": "2477447ff135ebe625902bb52286896f8c0c6d3913f0ec7d904aec5399e43089",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\outer-population-source-20261008\\outer_common.py": "96be0d336eaf5c82797e0b6292035f067d9109660c81c079b850397777f7f849",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\outer-population-source-20261008\\outer_inputs.py": "8ef5e5bc294cc1cc8c6f8ef6ae16d42d6b73bcf4508f3427d3b458cb507a867e",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\outer-population-source-20261008\\pilot_compact_control.py": "d49567e1c2db254b4f32131ec2b3a5ba0cb846c5ee08ebf0e7e377579c405aec",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\panelled-recoil-control-20261008\\control_common.py": "672eb8991ce325eec07e6b940ad055ca74115f13503ff93fae08b64b7ec07e5b",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\panelled-recoil-control-20261008\\panel_rule.py": "7fad2715c03c396afb4a557c3594a02664f3e60d658c23eea8af6cc13cb74b9e",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-finite-shift-kernel-20261007\\kernel_common.py": "ab2c6f927b5b7d44be8b7f6db82ca902e54fafded7f82682a178fcc9db3f0a64",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\cold_control.py": "e8da6f9ba6fa533875cebe62671957ec1c266a516f4c7e23f4af25d4c99198a8",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-heat-momentum-grid-20261007\\grid_common.py": "df03e91025bf72aeac83cfec23432836ff91e8115bece247b121022cf17b61e1",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\population-matched-source-20261008\\population_common.py": "39bc431f54b250180c2aab931a704b17c28b4cd2c8677d5babfe0f88474d9b82",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\radiation-and-slow-field-transfer-20261007\\radiation_common.py": "b2c3784997bad1a3f12868a8cf5c5833ced1a756bd710979671ced4458d48fb5",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\rectangular-matched-source-20261008\\compare_source_vectors.py": "812890ed77af89c9cf48d2f0e01ae5541cb3c091629e5c9cdad33d8b33be9804",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\rectangular-matched-source-20261008\\gould_overlap.py": "c0567cdb2f98a081ce624326fa9332bf1c082e4cb146ba23ec2ef4a8acfd37f4",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\rectangular-matched-source-20261008\\inspect_coupled_response.py": "593fa5ffdffb11879ef2b19f9818b08c6c060f14b2a46605768aa9ec8d6fb46d",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\rectangular-matched-source-20261008\\log_rectangular.py": "c7824ee380e5ca4dc2e56d85d01b2b9121ff2d342855a9af1ee6cdf8125712b5",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\rectangular-matched-source-20261008\\rectangular_common.py": "05f48fb6a5418619e9c2ee4127282d4f7c5fde2c57d43c6b44173ee679d24af1",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\rectangular-matched-source-20261008\\rectangular_weak.py": "29ee6391102f7e2ce25bf1af962855dfda614f8e4346b2c7846c32f169305c55",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\rectangular-matched-source-20261008\\sampled_gould_control.py": "4bacda70d34d485092fe76d9535dc8a0ffb59e288211dc02120965e458e0753c",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\residual-kinetic-drive-20261012\\ACCEPTANCE.md": "a7342de6db4d25b3a68ceb53589101258dcaf6a8f8479b010f348975a1eedca5",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\residual-kinetic-drive-20261012\\DERIVATION.md": "726676d725b4a4907dfee25845aa3045201ed7a3f5844af06d700ea3f557b9ef",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\residual-kinetic-drive-20261012\\residual_kinetic_common.py": "c0df84c9e614a7b399e6595f919e836b9b012a67d539baf0e8817463eb870888",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\residual-kinetic-drive-20261012\\results\\kinetic-drive\\cold-1024.npz": "cbecd7018b51ce9ee34e3ade3f4b162d48df23827bfe375168da89adc8b0ffa9",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\residual-kinetic-drive-20261012\\results\\kinetic-drive\\heavy-1024.npz": "8bcb6959ca90e83529567194f55a9c0a2ef966cd880da4eefe6ed21f028322c9",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\residual-kinetic-drive-20261012\\results\\kinetic-drive\\status.json": "b755ca772f92cb5f44a9bff813d23e324994c911cd2562fd9497ad78103876f4",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\residual-kinetic-drive-20261012\\results\\readout-controls\\status.json": "486be6a61b41c255969d82f83c2242c7a3d0363fd9cc64b41166541d4ee78c37",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\residual-kinetic-drive-20261012\\summarize_residual_drive.py": "7f216d09c2d9830e47e3304ffa6c518b68b48a61e2cf6d8e1b5b4e002387f375",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\resolved-matter-spectrum-20261007\\analyze_spectrum.py": "af9a17a9c53a34982514a29b254ab456ff2fd6bf66b04d6a031f6aaa4962e549",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\resolved-matter-spectrum-20261007\\project_grid.py": "34b5415b99ca05099280bb0dff469a7021bb2faa85db2058b7eb68cedd036924",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\resolved-matter-spectrum-20261007\\spectrum_common.py": "55250bf95067f74cc108f1d255c06b35aeb632bf9407b165ca57fe1e1dbdbd30",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\scaled-spectral-evolution-20261007\\scaled_common.py": "7c214ae1057e40ae580bd108400139a74a1b1fb97414eddafc74f60fe13e9254",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\temperature-distortion-projection-20261012\\projection_common.py": "4f1bcfd8388ad000d968177f86fd385982bbe46de8ec79b31cbbe6b4922c56c7",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\thermal-recoil-and-spectral-response-20261007\\flrw_thermal_response.py": "849cb89b70427812cf7dba1650175c5b237f6a4f9d33dbe2111d4e7b53df65a2",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\thermal-recoil-and-spectral-response-20261007\\thermal_common.py": "6d8a767cfdaee8b72796a57eeab9f781055e84c7553179055cd399a419455974",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\thermal-ward-kernel-20261008\\thermal_dressed.py": "5663c6cf9cf44655c17f71f00055f6ddff1e605f831c55c79239e668a683fb10",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\thermal-ward-kernel-20261008\\thermal_insertions.py": "cbd914c5ce780aa7fdd16f5833aa728577a0547f3ab2a6757cf2f52667b9d971",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\thermal-ward-kernel-20261008\\thermal_radial.py": "ca94f7869c749631c8481557db21994bf2b750f9b9406316ad1a126afe3e3b1e",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\thermal-ward-kernel-20261008\\thermal_vertex_common.py": "86eb2523ff05920b2748aade618bc98bd285a5872cf02e9b5aac594ac1452fe9",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\thomson-source-coupling-20261007\\collision_common.py": "ab71a1f807b1d59c061b7fd62708dd3b3e8a3a15240e3c75c2d374aaf1eb707b"
+  },
+  "count": 4,
+  "all_checks_passed": true
+}

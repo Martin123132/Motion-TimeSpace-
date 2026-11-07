@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\validate_annular_C0_material_20260930.py", line 60, in <module>
+    main()
+    ~~~~^^
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\validate_annular_C0_material_20260930.py", line 28, in main
+    rows = material_density_rows(data, radius+amount*direction['movement'],
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        direction['values']+amount*direction['material_values'],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        direction['radial']+amount*direction['material_radial'],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        direction['time']+amount*direction['material_time'], amount)*(1+amount*direction['movement_r'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\annular_C0_material_integral_20260930.py", line 14, in material_density_rows
+    gradient = quadratic(data['field']+amount*data['field_change'], local, width)[1]
+               ^^^^^^^^^
+NameError: name 'quadratic' is not defined

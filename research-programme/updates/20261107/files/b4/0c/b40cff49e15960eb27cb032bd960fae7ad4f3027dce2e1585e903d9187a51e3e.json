@@ -1,0 +1,65 @@
+{
+  "state_representation": "100 rows; high74 columns then low74; physical response and passive ledgers",
+  "rows": {
+    "energy_coordinate": 0,
+    "other95_photon_coordinates": [
+      1,
+      95
+    ],
+    "gas": 96,
+    "expansion_work": 97,
+    "integrated_number": 98,
+    "integrated_source_pair": 99
+  },
+  "columns": {
+    "primary_high_columns": [
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66
+    ],
+    "meaning": "quadratic then linear: baseline join0/1, MTS increment join0/1, total join0/1",
+    "low_offset": 74,
+    "heavy_cold": "background histories, not theory labels"
+  },
+  "inside_interval": {
+    "required": [
+      "current",
+      "previous",
+      "step",
+      "index",
+      "global_startup_schedule"
+    ],
+    "files": "runs-matched/<model>-<count>/interfaces/step-<index>.npz"
+  },
+  "after_interval": {
+    "files": "runs-matched/<model>-<count>/transfer/step-<index>.npz",
+    "operator": "ledger-evaluated energy row; raw_operator retained",
+    "initial_older_state": "discarded only by the inherited first homogeneous BE step"
+  },
+  "ordinary_BDF_cut": {
+    "files": "runs-matched/<model>-<count>/transfer/composition.npz",
+    "required": [
+      "current_map",
+      "previous_map"
+    ]
+  },
+  "history_input": {
+    "source": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\precision-carried-gas-evolution-20261021",
+    "use": "input h in microscopic F(theta,h), not an interchangeable response initial state"
+  },
+  "unresolved_terms": [
+    "physical incoming response matching state from before the local interval",
+    "microscopic-source correction outside the verified interval"
+  ],
+  "derived_rule": "Y_final=G(final,a)Y_incoming+known_interval_contribution+integral_after_interval(G*B*source_difference)",
+  "no_default_values_for_unresolved_terms": true
+}

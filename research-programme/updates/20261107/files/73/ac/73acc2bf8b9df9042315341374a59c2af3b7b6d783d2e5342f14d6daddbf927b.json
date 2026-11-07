@@ -1,0 +1,51 @@
+{
+  "input_fingerprint_sha256": "e0bc78ee1fc6a906b86dce915278281a2c140786f7d2a85d5b9f617d21766420",
+  "archive_sha256": "783821cf2de7d6e9877df09a1ccd591ea83aa719159048e37572b441904957ab",
+  "row": {
+    "step": 500,
+    "coordinate": 1.1653464105900042,
+    "theta": 0.00014331628828128637,
+    "events": 20000,
+    "energy_moment": 0.0005731255203223888,
+    "arithmetic_operator_relative_change": null,
+    "diagnostics": {
+      "raw_energy_error": 1.20908741176808e-15,
+      "domain_crossing_pairs": 0,
+      "domain_pair_count": 3840000,
+      "positive_weight_crossing_fraction": 0.0,
+      "shifted_frequency_min": 1.6628475319824377e-05,
+      "shifted_frequency_max": 0.024055121850114675,
+      "basis_evaluation_extrapolates_not_clips": true
+    }
+  },
+  "checks": [
+    {
+      "name": "Pre-replacement energy:500",
+      "value": 1.20908741176808e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Mellin symmetry:500",
+      "value": 2.388666681774101e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Energy moment:500",
+      "value": 1.4315698136408392e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Number invariant:500",
+      "value": 0.0,
+      "limit": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "Positive events:500",
+      "passed": true
+    }
+  ]
+}

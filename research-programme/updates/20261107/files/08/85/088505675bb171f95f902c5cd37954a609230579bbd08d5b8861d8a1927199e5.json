@@ -1,0 +1,160 @@
+{
+  "stage": 231,
+  "state": "complete",
+  "finished_at": "2026-10-26T19:10:06.620298+00:00",
+  "qualified": true,
+  "checks": [
+    {
+      "name": "ordinary: independent direct Hamiltonian defect forcing",
+      "value": 1.5593443953167099e-71,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "ordinary: omitting forcing detected in Hamiltonian",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "ordinary: independent direct momentum defect forcing",
+      "value": 9.79639577291378e-72,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "ordinary: omitting forcing detected in momentum",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "small_EOS: independent direct Hamiltonian defect forcing",
+      "value": 5.983560461535067e-72,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "small_EOS: omitting forcing detected in Hamiltonian",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "small_EOS: independent direct momentum defect forcing",
+      "value": 6.255637673384807e-73,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "small_EOS: omitting forcing detected in momentum",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:NR: background Raychaudhuri defect versus small source",
+      "value": 7.826768191452186e-08,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:3200:EOS: background Raychaudhuri defect versus small source",
+      "value": 9.688045390793476e-08,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:NR: background Raychaudhuri defect versus small source",
+      "value": 1.959457420135535e-08,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:6400:EOS: background Raychaudhuri defect versus small source",
+      "value": 2.4426580440220075e-08,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy:NR: backward-difference Raychaudhuri defect convergence",
+      "value": 0.25035332236816576,
+      "limit": 0.8,
+      "passed": true
+    },
+    {
+      "name": "heavy:EOS: backward-difference Raychaudhuri defect convergence",
+      "value": 0.2521311518981176,
+      "limit": 0.8,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:NR: background Raychaudhuri defect versus small source",
+      "value": 7.831242115476938e-08,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:3200:EOS: background Raychaudhuri defect versus small source",
+      "value": 9.701253851122263e-08,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:NR: background Raychaudhuri defect versus small source",
+      "value": 1.9605648349707003e-08,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:6400:EOS: background Raychaudhuri defect versus small source",
+      "value": 2.445963683210434e-08,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold:NR: backward-difference Raychaudhuri defect convergence",
+      "value": 0.250351707438086,
+      "limit": 0.8,
+      "passed": true
+    },
+    {
+      "name": "cold:EOS: backward-difference Raychaudhuri defect convergence",
+      "value": 0.25212861355313154,
+      "limit": 0.8,
+      "passed": true
+    }
+  ],
+  "failed": [],
+  "results": [
+    {
+      "model": "heavy",
+      "component": "NR",
+      "coarse": 7.826768191452186e-08,
+      "fine": 1.959457420135535e-08,
+      "ratio": 0.25035332236816576
+    },
+    {
+      "model": "heavy",
+      "component": "EOS",
+      "coarse": 9.688045390793476e-08,
+      "fine": 2.4426580440220075e-08,
+      "ratio": 0.2521311518981176
+    },
+    {
+      "model": "cold",
+      "component": "NR",
+      "coarse": 7.831242115476938e-08,
+      "fine": 1.9605648349707003e-08,
+      "ratio": 0.250351707438086
+    },
+    {
+      "model": "cold",
+      "component": "EOS",
+      "coarse": 9.701253851122263e-08,
+      "fine": 2.445963683210434e-08,
+      "ratio": 0.25212861355313154
+    }
+  ],
+  "scope": "Exact forced constraint checks and paired BDF background-defect estimates, not continuous interpolation or propagated wave certification"
+}

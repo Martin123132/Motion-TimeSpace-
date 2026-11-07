@@ -1,0 +1,111 @@
+{
+  "model": "cold",
+  "controls": [
+    {
+      "label": "base",
+      "method": "DOP853",
+      "rtol": 2e-10,
+      "atol": 2e-12,
+      "nfev": 2342,
+      "elapsed_seconds": 2.1483285000140313
+    },
+    {
+      "label": "fine",
+      "method": "DOP853",
+      "rtol": 2e-12,
+      "atol": 2e-14,
+      "nfev": 2342,
+      "elapsed_seconds": 2.0079783000110183
+    },
+    {
+      "label": "independent",
+      "method": "RK45",
+      "rtol": 2e-11,
+      "atol": 1.9999999999999998e-13,
+      "nfev": 2462,
+      "elapsed_seconds": 2.1130237999896053
+    }
+  ],
+  "comparisons": [
+    {
+      "label": "base",
+      "quantity": "hubble",
+      "error": 0.0
+    },
+    {
+      "label": "base",
+      "quantity": "slow_coordinates",
+      "error": 0.0
+    },
+    {
+      "label": "base",
+      "quantity": "clock",
+      "error": 0.0
+    },
+    {
+      "label": "base",
+      "quantity": "slow_error_radius",
+      "error": 0.0
+    },
+    {
+      "label": "base",
+      "quantity": "hubble_error",
+      "error": 0.0
+    },
+    {
+      "label": "base",
+      "quantity": "clock_error",
+      "error": 0.0
+    },
+    {
+      "label": "independent",
+      "quantity": "hubble",
+      "error": 7.200133965334367e-14
+    },
+    {
+      "label": "independent",
+      "quantity": "slow_coordinates",
+      "error": 2.293080755911616e-11
+    },
+    {
+      "label": "independent",
+      "quantity": "clock",
+      "error": 7.766979981072427e-13
+    },
+    {
+      "label": "independent",
+      "quantity": "slow_error_radius",
+      "error": 0.0
+    },
+    {
+      "label": "independent",
+      "quantity": "hubble_error",
+      "error": 0.0
+    },
+    {
+      "label": "independent",
+      "quantity": "clock_error",
+      "error": 0.0
+    }
+  ],
+  "cold_relative_uncertainty": {
+    "hubble": 0.0,
+    "slow_energy_coordinates": 0.0,
+    "clock": 0.0,
+    "heavy_log_density": 0.0
+  },
+  "cold_uncertainty_gate_pass": true,
+  "replay": {
+    "points": 5402,
+    "nfev": 26777,
+    "slow_enclosure_relative_excess": 3.919036121086475e-15,
+    "hubble_enclosure_relative_excess": 0.0,
+    "clock_enclosure_relative_excess": 7.750890381655196e-16,
+    "legacy_hubble_relative_difference": 2.0914264152119156e-11,
+    "initial_fields_velocities_clock_preserved": true,
+    "reference_uses_same_repaired_thermal_source": true
+  },
+  "thermal_source_qualified": true,
+  "phase_resolved_late_history": false,
+  "original_scattering_bank_changed": false
+}

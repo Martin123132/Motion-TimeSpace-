@@ -1,0 +1,318 @@
+{
+  "state": "complete",
+  "passed": true,
+  "reports": [
+    {
+      "model": "heavy",
+      "label": "double",
+      "wave": 1.2999069146230098,
+      "rows": [
+        {
+          "model": "heavy",
+          "case": "full",
+          "status": {
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 53626,
+            "points": 24685,
+            "last_efold": -8.293202925182642,
+            "seconds": 26.96684949999326
+          },
+          "packet": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-coupled-wavelength-controls-20261107\\double\\evolution\\heavy-full.npz",
+          "sha256": "888b861fa708d2ed96e543249f6d9763f4f36c97db0535100633865023cf6d55",
+          "constraints": {
+            "Hamiltonian_canonical": 2.8447383820361974e-08,
+            "momentum_canonical": 2.5887362860713356e-15,
+            "Hamiltonian_kinematic": 2.8447383979599625e-08,
+            "momentum_kinematic": 1.140447137701878e-15,
+            "shear_velocity_difference": 7.466248587776203e-16
+          },
+          "constraints_passed": true,
+          "maximum_generator_remainder": 0.0
+        },
+        {
+          "model": "heavy",
+          "case": "exact",
+          "status": {
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 53602,
+            "points": 24685,
+            "last_efold": -8.293202925182642,
+            "seconds": 33.70608239999274
+          },
+          "packet": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-coupled-wavelength-controls-20261107\\double\\evolution\\heavy-exact.npz",
+          "sha256": "33cc4eedf083e8e641d5013cb3a7afe57fc7f2f31435c5f959c0b4e0bd5126e0",
+          "constraints": {
+            "Hamiltonian_canonical": 2.8456960198465406e-08,
+            "momentum_canonical": 1.670152442626305e-15,
+            "Hamiltonian_kinematic": 2.845669411232415e-08,
+            "momentum_kinematic": 3.3459250686659227e-10,
+            "shear_velocity_difference": 7.466248587776203e-16
+          },
+          "constraints_passed": true,
+          "maximum_generator_remainder": 0.0
+        },
+        {
+          "model": "heavy",
+          "case": "corrected",
+          "status": {
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 53587,
+            "points": 24685,
+            "last_efold": -8.293202925182642,
+            "seconds": 42.06128429999808
+          },
+          "packet": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-coupled-wavelength-controls-20261107\\double\\evolution\\heavy-corrected.npz",
+          "sha256": "5b256d9b6c98f78f4c9da9fb4465d49becb16854a673afef8ca8505420b9cc2b",
+          "constraints": {
+            "Hamiltonian_canonical": 2.8457057577264544e-08,
+            "momentum_canonical": 2.3382134196771985e-15,
+            "Hamiltonian_kinematic": 2.845679172997972e-08,
+            "momentum_kinematic": 3.351325085863488e-10,
+            "shear_velocity_difference": 8.399529661248228e-16
+          },
+          "constraints_passed": true,
+          "maximum_generator_remainder": 3.790564019142041e-13
+        }
+      ],
+      "comparisons": [
+        {
+          "left": "full",
+          "right": "native",
+          "state_error": 2.253530813619697e-08,
+          "physical_errors": {
+            "Phi": 1.7435100080539116e-09,
+            "Psi": 1.7371607392923472e-09,
+            "D": 1.7369532713992432e-09,
+            "Q": 3.264870224727748e-09,
+            "Pi": 3.956998676684866e-09,
+            "theta_c": 6.715952954048342e-09,
+            "delta_c": 1.9894818691173934e-08,
+            "delta_b": 6.8894043983300675e-09,
+            "delta_gamma": 6.845828184553246e-09,
+            "delta_massless": 3.8921848366998535e-09
+          },
+          "passed": true
+        },
+        {
+          "left": "exact",
+          "right": "native",
+          "state_error": 2.254690991733663e-08,
+          "physical_errors": {
+            "Phi": 1.8472080134228445e-09,
+            "Psi": 1.8408552262467282e-09,
+            "D": 1.8408360629761605e-09,
+            "Q": 3.2734025757085206e-09,
+            "Pi": 3.957313982765543e-09,
+            "theta_c": 6.712750996366105e-09,
+            "delta_c": 1.990161678708911e-08,
+            "delta_b": 6.890084026951932e-09,
+            "delta_gamma": 6.8465260880520555e-09,
+            "delta_massless": 3.892355671173102e-09
+          },
+          "passed": true
+        },
+        {
+          "left": "corrected",
+          "right": "native",
+          "state_error": 2.2546607450364196e-08,
+          "physical_errors": {
+            "Phi": 1.8469129704307185e-09,
+            "Psi": 1.84055983057343e-09,
+            "D": 1.8405405254169225e-09,
+            "Q": 3.273333852889827e-09,
+            "Pi": 3.957383542041473e-09,
+            "theta_c": 6.7130276981219534e-09,
+            "delta_c": 1.990154479466753e-08,
+            "delta_b": 6.890139184281945e-09,
+            "delta_gamma": 6.846577671515653e-09,
+            "delta_massless": 3.892399282603311e-09
+          },
+          "passed": true
+        },
+        {
+          "left": "corrected",
+          "right": "full",
+          "state_error": 1.70094969775636e-10,
+          "physical_errors": {
+            "Phi": 1.2158035152830807e-10,
+            "Psi": 1.215779331431267e-10,
+            "D": 1.217956940204095e-10,
+            "Q": 2.2040075849439468e-11,
+            "Pi": 1.3496111197444084e-12,
+            "theta_c": 3.8752892201334964e-11,
+            "delta_c": 6.726103359781927e-12,
+            "delta_b": 2.4311157591667455e-12,
+            "delta_gamma": 2.241091812984032e-12,
+            "delta_massless": 1.3585202384675308e-12
+          },
+          "passed": true
+        },
+        {
+          "left": "exact",
+          "right": "full",
+          "state_error": 1.709421346859409e-10,
+          "physical_errors": {
+            "Phi": 1.2188043282289524e-10,
+            "Psi": 1.218764021809263e-10,
+            "D": 1.2209630078327542e-10,
+            "Q": 2.2092804354830977e-11,
+            "Pi": 1.5177951191013485e-12,
+            "theta_c": 3.8527883560227025e-11,
+            "delta_c": 6.798095779927685e-12,
+            "delta_b": 2.3645613982395765e-12,
+            "delta_gamma": 2.1719610151341083e-12,
+            "delta_massless": 1.2729561330939654e-12
+          },
+          "passed": true
+        },
+        {
+          "left": "corrected",
+          "right": "exact",
+          "state_error": 6.92729284647266e-12,
+          "physical_errors": {
+            "Phi": 3.0404475918996313e-13,
+            "Psi": 3.0270121186698495e-13,
+            "D": 3.047099296529687e-13,
+            "Q": 8.533229789193055e-14,
+            "Pi": 7.796572854867441e-13,
+            "theta_c": 3.0829199263480385e-13,
+            "delta_c": 7.23116769973538e-14,
+            "delta_b": 2.490143778793221e-13,
+            "delta_gamma": 2.551895411797753e-13,
+            "delta_massless": 2.5019552621350625e-13
+          },
+          "passed": true
+        }
+      ],
+      "independent_forward": true,
+      "future_sources_used": false,
+      "maximum_encountered_U": 0.0007161395864277131,
+      "generator_identity_error": 3.54962611414276e-16,
+      "random_probe_generator_defect": 2.6477942213652193e-13,
+      "all_passed": true
+    },
+    {
+      "model": "cold",
+      "label": "double",
+      "wave": 1.2999069146230098,
+      "rows": [
+        {
+          "model": "cold",
+          "case": "full",
+          "status": {
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 5419,
+            "points": 5402,
+            "last_efold": -8.293202925162689,
+            "seconds": 2.3103902000002563
+          },
+          "packet": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-coupled-wavelength-controls-20261107\\double\\evolution\\cold-full.npz",
+          "sha256": "f5085265dadbd550ea29138c88a0826eb57a653587ea7af8acddbb9b3d3ef61c",
+          "constraints": {
+            "Hamiltonian_canonical": 2.7351488527000128e-08,
+            "momentum_canonical": 6.292898625386468e-12,
+            "Hamiltonian_kinematic": 2.7351488527000128e-08,
+            "momentum_kinematic": 6.292898625386468e-12,
+            "shear_velocity_difference": 4.0603275306322934e-16
+          },
+          "constraints_passed": true,
+          "maximum_generator_remainder": 0.0
+        },
+        {
+          "model": "cold",
+          "case": "corrected",
+          "status": {
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 5419,
+            "points": 5402,
+            "last_efold": -8.293202925162689,
+            "seconds": 2.3132990999729373
+          },
+          "packet": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-coupled-wavelength-controls-20261107\\double\\evolution\\cold-corrected.npz",
+          "sha256": "f5085265dadbd550ea29138c88a0826eb57a653587ea7af8acddbb9b3d3ef61c",
+          "constraints": {
+            "Hamiltonian_canonical": 2.7351488527000128e-08,
+            "momentum_canonical": 6.292898625386468e-12,
+            "Hamiltonian_kinematic": 2.7351488527000128e-08,
+            "momentum_kinematic": 6.292898625386468e-12,
+            "shear_velocity_difference": 4.0603275306322934e-16
+          },
+          "constraints_passed": true,
+          "maximum_generator_remainder": 0.0
+        }
+      ],
+      "comparisons": [
+        {
+          "left": "full",
+          "right": "native",
+          "state_error": 2.569212902652886e-07,
+          "physical_errors": {
+            "Phi": 1.6703946232723232e-09,
+            "Psi": 1.6643432397839665e-09,
+            "D": 1.6625290179168106e-09,
+            "Q": 1.6777927156769887e-08,
+            "Pi": 3.957205555866073e-09,
+            "theta_c": 6.529610497625464e-09,
+            "delta_c": 2.090401923839698e-09,
+            "delta_b": 1.0710082608623242e-08,
+            "delta_gamma": 7.387911112598076e-09,
+            "delta_massless": 3.890035982284464e-09
+          },
+          "passed": true
+        },
+        {
+          "left": "corrected",
+          "right": "native",
+          "state_error": 2.569212902652886e-07,
+          "physical_errors": {
+            "Phi": 1.6703946232723232e-09,
+            "Psi": 1.6643432397839665e-09,
+            "D": 1.6625290179168106e-09,
+            "Q": 1.6777927156769887e-08,
+            "Pi": 3.957205555866073e-09,
+            "theta_c": 6.529610497625464e-09,
+            "delta_c": 2.090401923839698e-09,
+            "delta_b": 1.0710082608623242e-08,
+            "delta_gamma": 7.387911112598076e-09,
+            "delta_massless": 3.890035982284464e-09
+          },
+          "passed": true
+        },
+        {
+          "left": "corrected",
+          "right": "full",
+          "state_error": 0.0,
+          "physical_errors": {
+            "Phi": 0.0,
+            "Psi": 0.0,
+            "D": 0.0,
+            "Q": 0.0,
+            "Pi": 0.0,
+            "theta_c": 0.0,
+            "delta_c": 0.0,
+            "delta_b": 0.0,
+            "delta_gamma": 0.0,
+            "delta_massless": 0.0
+          },
+          "passed": true
+        }
+      ],
+      "independent_forward": true,
+      "future_sources_used": false,
+      "maximum_encountered_U": 0.0,
+      "generator_identity_error": 0.0,
+      "random_probe_generator_defect": 0.0,
+      "all_passed": true
+    }
+  ],
+  "original_mean_failure_preserved": true,
+  "tested_label": "double",
+  "new_evolutions": 5,
+  "exact_case_is_coordinate_control": true,
+  "corrected_case_has_explicit_generator_remainder": true
+}

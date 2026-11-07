@@ -1,0 +1,97 @@
+from complete_history_common import *
+
+
+def main():
+    modest()
+    names=['coefficients','evolution-heavy-carry','evolution-cold-carry','weak-m20','weak-m40',
+        *[f'feedback-{model}-m{window}' for model in ['heavy','cold'] for window in [20,40]],'block-source-error','saved-block-gas-residual']
+    packets={name:local_packet(ROOT/'results'/name) for name in names}
+    failures={name:[row['name'] for row in packet['checks'] if not row['passed']] for name,packet in packets.items()}
+    failures={name:items for name,items in failures.items() if items}
+    count=sum(len(packet['checks']) for packet in packets.values())
+    passed=sum(sum(row['passed'] for row in packet['checks']) for packet in packets.values())
+    responses={name:packet['variants'] for name,packet in packets.items() if name.startswith('feedback-')}
+    weak=max(row['weak_relative'] for name in ['weak-m20','weak-m40'] for row in packets[name]['rows'])
+    evolution={}
+    for model in ['heavy','cold']:
+        values=read_npz(ROOT/'results'/f'evolution-{model}-carry/prediction.npz')
+        evolution[model]=dict(saved_sites=len(values['coordinate']),maximum_budget_error=float(np.max(values['budget'][:,5])),
+            maximum_total_equation_error=float(np.max(values['budget'][:,6])),minimum_generator_dissipation=float(np.min(values['budget'][:,2])),
+            seconds=packets[f'evolution-{model}-carry']['seconds'])
+    next_target='Use the completed corrected history to quantify final readout and source-discretization sensitivity together,then choose the smallest remaining numerical check before a matched baseline/MTS physical interpretation. Reuse all saved states and source packets;do not restart the full history.'
+    summary=dict(stage=141,previous_goal_turn='progress',packet_names=names,scientific_checks=count,passing_scientific_checks=passed,
+        retained_failed_checks=count-passed,failed_by_packet=failures,evolution=evolution,responses=responses,max_weak_error=weak,
+        all_band_symbol_upper=max(row['bound']['upper_bound'] for row in packets['coefficients']['rows']),
+        continuous_inner_start=0,continuous_inner_stop=LAST_STEP,new_corrected_steps_per_background=LAST_STEP-FIRST_STEP,
+        replayed_inner_steps=2*(LAST_STEP-FIRST_STEP),original_saved_epochs_covered=LAST_STEP//640+1,continuous_source_sites=LAST_STEP//20+1,
+        full_original_source_epochs=65,source_knots=sorted(set(packets[name]['source_knots'] for name in responses)),
+        response_steps=2048,frequency_nodes=5265,source_restore_step=None,full_history_recomputed=True,full_parent_history_rerun=False,corrected_final_readout=True,
+        physical_reference_sites_per_window=len(SOURCE_STEPS),new_temperature_event_evaluations=packets['coefficients']['new_temperature_event_evaluations'],next_target=next_target)
+    summary['block_source_error']=packets['block-source-error']['rows']
+    summary['final_readout_decomposition']={name:packets[name]['readout_decomposition'] for name in responses}
+    audit=packets['saved-block-gas-residual']
+    summary['saved_gas_residual_audit']=dict(selections=audit['selections'],rows=audit['rows'],
+        witnesses=len(audit['rows']),max_high_precision_gas_residual=max(max(row['high_precision_gas_relative']) for row in audit['rows']),
+        max_existing_state_50digit_residual=max(max(row['existing_state_50digit_gas_relative']) for row in audit['rows']),
+        max_gas_state_change_over_saved_peak=max(max(row['gas_change_over_saved_peak']) for row in audit['rows']),
+        max_precision_disagreement=max(max(row['gas50to70']) for row in audit['rows']),
+        retained_cast_failures=sum(not row['passed'] for row in audit['checks']),
+        preceding_states_are_binary64=True,full_high_precision_history=False)
+    write_json(ROOT/'NUMERICAL-SUMMARY.json',summary)
+    lines=['# Stage141: corrected source evolution through sixty-four original intervals','',
+        'Private/local. Stage140 is preserved;both backgrounds now carry the corrected solution continuously through global step40960.','',
+        '## Larger continuous extension','',
+        'Each background advances5120 additional steps from the corrected35840 restart with both BDF and outer time levels. The accepted trajectory is never reset to the original history. Baseline and both MTS columns are evolved together.',
+        'The original5265 frequency grid,40960 global inner spacing,2048 response steps,physical boundary prescription and external driver are unchanged. One hundred twenty-eight new hashed restarts retain both time levels.',
+        'The new257-knot coefficient bank evaluates248missing physical temperatures and reuses9original coarse endpoints. Both backgrounds share the verified thermal parameter. No normalization or physical coefficient is fitted.',
+        f"The entire-band finite-principal-grid symbol bound remains <= {summary['all_band_symbol_upper']:.9g}. It has an analytic between-sample remainder and a conservative floating allowance,not a formal interval-arithmetic certificate.",'']
+    for model,row in evolution.items():
+        lines.append(f"- {model}: weighted norm-budget residual{row['maximum_budget_error']:.9g};total-field boundary equation residual{row['maximum_total_equation_error']:.9g};{row['saved_sites']}new-block saved sites.")
+    lines+=['','The norm budget is numerical stability accounting,not physical radiation-energy conservation. The inherited control/restart tests remain evidence;no new original-law trajectory is relabelled as a control.','',
+        '## Full new-block source comparison','',
+        'Stage133 unit-shift source matrices are reused exactly. Independent physical-event sources are evaluated at every257new-block knot in BOTH matching windows,not just at endpoints. Seventeen direct common-kernel checks per window also test the cache independently.',
+        f"Maximum common-versus-physical weak relative error: {weak:.9g}.",
+        'The continuous prefix has2049dense source sites over sixty-four original intervals (all65original coarse saved epochs). The source grid reaches its final endpoint with no later splice or out-of-domain restore point. The corrected40960 state supplies the final readout.','',
+        '## Gas-response changes','',
+        'Fractions refer to the small saved gas correction,not total gas temperature. Extension increments and common/physical source differences are propagated separately to avoid relying on subtraction of nearly equal responses.','',
+        '| Background/window | Extension endpoint fraction: baseline, MTS1, MTS2 | Source-discretization endpoint fraction: baseline, MTS1, MTS2 |',
+        '|---|---|---|']
+    for name,row in responses.items():
+        left=', '.join(f'{value:.9g}' for value in row['continuation']['relative_endpoint'])
+        right=', '.join(f'{value:.9g}' for value in row['discretization']['relative_endpoint'])
+        lines.append(f'| {name} | {left} | {right} |')
+    lines+=['','## New-block source discrepancy','',
+        'The newest contribution is small enough to require separating its own source discrepancy from errors accumulated over earlier intervals. The unchanged response solver propagates (C-P)-(C0-P0),where previous sources are expanded onto the same grid. This forcing vanishes outside the new sites and outside the Compton component.',
+        'The table gives the measured source-discrepancy contribution as a PERCENT of this block\'s independently propagated gas addition,not as a percent of the total correction. It does not bound all numerical or physical error. See BLOCK-SOURCE-ERROR.md.','',
+        '| Background/window | Percent of block addition: baseline, MTS1, MTS2 |',
+        '|---|---|']
+    for name,row in summary['block_source_error'].items():
+        values=', '.join(f'{100*value:.9g}' for value in row['relative_endpoint_to_extension'])
+        lines.append(f'| {name} | {values} |')
+    lines+=['','## Corrected final readout','',
+        'There is no return to the old future source. Every2049source-grid node is now on the continuous corrected trajectory. The final unresolved spectrum uses the corrected40960defect and its matching projection,not the original endpoint.',
+        'The total radiation change is split into the propagated resolved change and the final unresolved-endpoint change. Vector identities and an independent difference-response solve verify the separation. Norms are relative to the prior saved radiation correction,not total radiation energy;the norms need not add.','',
+        '| Background/window | Total relative change | Resolved contribution | Unresolved-endpoint contribution |',
+        '|---|---|---|---|']
+    for name,row in summary['final_readout_decomposition'].items():
+        columns=[', '.join(f'{value:.9g}' for value in row[key]) for key in ['total_relative','resolved_relative','endpoint_unresolved_relative']]
+        lines.append('| '+name+' | '+' | '.join(columns)+' |')
+    precision=summary['saved_gas_residual_audit']
+    lines+=['','## Saved Stage140 gas-residual diagnosis','',
+        'The same2048-step source-discrepancy response is reproduced bitwise for both backgrounds and both windows. The original raw residuals are reproduced exactly. Baseline and both MTS totals are checked together with the worst component,using frozen saved coefficients and predecessor states. See GAS-RESIDUAL-CHECK.md.',
+        f"{precision['witnesses']} local97-equation witnesses use50and70decimal digits. Maximum gas residual after the70-digit solve:{precision['max_high_precision_gas_residual']:.9g};maximum50/70gas-solution disagreement:{precision['max_precision_disagreement']:.9g}.",
+        f"Maximum existing-state gas residual evaluated at50digits:{precision['max_existing_state_50digit_residual']:.9g}. Largest local gas-state change relative to the saved response peak:{precision['max_gas_state_change_over_saved_peak']:.9g}.",
+        f"{precision['retained_cast_failures']} cast-back raw gas flags remain recorded. Original failures are not relabelled. This is a local arithmetic/state sensitivity check,not a full high-precision history or a bound on accumulated error.",'']
+    lines+=['','Stage133 attributed its earlier large MTS change predominantly to source reconstruction. This extension does not assume that earlier attribution quantitatively applies to all new intervals. Large sensitivity flags must remain visible.','',
+        '## Retained diagnostics','',f'{count}scientific checks:{passed}pass,{count-passed}retained failures. No thresholds changed.']
+    for name,items in failures.items():
+        lines.append('- '+name+': '+'; '.join(items))
+    lines+=['','All prior failed checks remain sealed separately. No parent output is overwritten. Coverage refers to the saved time-coordinate span,not necessarily elapsed physical time or response weight.','',
+        '## Next','',next_target,'','This is a numerical extension of the existing framework,not an observational preference or a rerun of the inherited external thermal drivers.']
+    (ROOT/'RESULTS.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+    print(json.dumps(dict(science=count,passed=passed,failed=count-passed,max_weak_error=weak,evolution=evolution,
+        responses={name:{label:row[label]['relative_endpoint'] for label in ['continuation','discretization']} for name,row in responses.items()})),flush=True)
+
+
+if __name__=='__main__':
+    main()

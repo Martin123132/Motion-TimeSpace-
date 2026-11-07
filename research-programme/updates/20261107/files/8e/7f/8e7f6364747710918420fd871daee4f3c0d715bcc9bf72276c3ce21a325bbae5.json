@@ -1,0 +1,81 @@
+{
+  "state": "failed",
+  "checks": [
+    {
+      "name": "complete_parent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonzero_old_norm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_configuration_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "primary:native_radial_residual",
+      "passed": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "primary-12-48:no_hidden_native_source_boundary_force",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "primary-12-48:hinge_support_disjoint_rowwise",
+      "passed": false,
+      "detail": 1.345378599304381e-69
+    }
+  ],
+  "cases": [],
+  "inputs": {
+    "scripts\\construct_annular_source_flat_state_20261002.py": "ba6dd17cc346760add356beeccab23bdb2107d68b2b6afb76344660441d167a8",
+    "DERIVATION-20261002-source-flat-native-compatible-initial-data.md": "5a315bc12d34cf5fde30d6a2dea9a85f98e2af33d766f3efae13c06971e7ffe8",
+    "source-intake\\navier-stokes\\20260914\\annular-null-coupled-acceleration-integrity-20261001.json": "390dacc0459e6f13ebf6bacb34e6284500718390883e953f8816ae20866a35b9",
+    "source-intake\\navier-stokes\\20260914\\annular-nested-refinement-preparation-attempt02\\MTS-primary-refined-action.json": "276ac668f6e85644aa31690155ae12d830443a89f515dcc940944d41d575d369"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-source-flat-native-state-fine-attempt01\\executed-construct_annular_source_flat_state_20261002.py": "ba6dd17cc346760add356beeccab23bdb2107d68b2b6afb76344660441d167a8",
+    "source-intake\\navier-stokes\\20260914\\annular-source-flat-native-state-fine-attempt01\\primary-initial-data.npz": "4c3013ff0b38d19ff642ff9da0387ba4f21a897d846c79459f9ebdf8ca172246"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "progress": {
+    "stage": "primary-12-48:native force label 48",
+    "seconds": 121.42062580003403
+  },
+  "level": "fine",
+  "packet_path": "source-intake\\navier-stokes\\20260914\\annular-nested-refinement-preparation-attempt02\\MTS-primary-refined-action.json",
+  "sources": {
+    "parent": "source-intake\\navier-stokes\\20260914\\annular-MTS-primary-matched-current-attempt01\\status.json",
+    "state": "source-intake\\navier-stokes\\20260914\\annular-matched-seed-flow-attempt01\\MTS-primary-resampled-state.npz",
+    "packet": "source-intake\\navier-stokes\\20260914\\annular-nested-refinement-preparation-attempt02\\MTS-primary-refined-action.json",
+    "original": "source-intake\\navier-stokes\\20260914\\annular-candidate-initial-metric-attempt02\\MTS-velocity-owned-inputs.npz",
+    "overlay": "source-intake\\navier-stokes\\20260914\\annular-transfer-kernel-overlay-attempt01\\MTS-exact-common-overlay.json"
+  },
+  "amplitude": 0.003006765534486567,
+  "target_norm": 0.00013079342076075394,
+  "results": [],
+  "states": {
+    "primary": {
+      "path": "source-intake\\navier-stokes\\20260914\\annular-source-flat-native-state-fine-attempt01\\primary-initial-data.npz",
+      "radial_residual": 5.551115123125783e-17,
+      "radial_energy": 6.789820796851926e-11,
+      "minimum_F": 0.7302504816955685
+    }
+  },
+  "physical_trajectory_computed": false,
+  "native_constraints_solved": false,
+  "github_action": false,
+  "subagents_used": false,
+  "error": "RuntimeError('primary-12-48:hinge_support_disjoint_rowwise: 1.345378599304381e-69')",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\construct_annular_source_flat_state_20261002.py\", line 122, in main\n    evidence.check(prefix+':hinge_support_disjoint_rowwise',maximum_hinge_overlap==0,maximum_hinge_overlap)\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\annular_reference_continuum_shell_20260914.py\", line 41, in check\n    raise RuntimeError(name+': '+repr(detail))\nRuntimeError: primary-12-48:hinge_support_disjoint_rowwise: 1.345378599304381e-69\n"
+}

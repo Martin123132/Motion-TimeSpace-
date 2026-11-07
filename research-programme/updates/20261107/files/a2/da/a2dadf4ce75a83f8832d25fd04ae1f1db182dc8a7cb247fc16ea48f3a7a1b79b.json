@@ -1,0 +1,30 @@
+{
+  "state": "complete",
+  "script_sha256": "2f6516e8248e6c359898c1ecc8e9e5389cc7776874bf407ae952452eb00155c5",
+  "checks": [
+    {
+      "name": "Cardoso_B10_and_definition3_general",
+      "passed": true
+    },
+    {
+      "name": "Cartesian_sigma_to_Cardoso_k2B",
+      "passed": true
+    },
+    {
+      "name": "BV_sigma_halves_barred_sigma",
+      "passed": true
+    },
+    {
+      "name": "Landry_K2mag_to_Cardoso_k2B",
+      "passed": true
+    }
+  ],
+  "definitions": {
+    "metric_response": "response=b/a",
+    "Cartesian_geometric_sigma_bar": "-response/6",
+    "BV_geometric_sigma": "-response/12",
+    "Cardoso_k2B": "-response/(3*M^5)=2*geometric_sigma_bar/M^5",
+    "Landry_K2mag": "-response/(96*M^5)"
+  },
+  "source": "Cardoso2017 Eqs3,B10,C16; LandryPoisson2015 Eq5.8; BanihashemiVines2020 Eqs20,25,33."
+}

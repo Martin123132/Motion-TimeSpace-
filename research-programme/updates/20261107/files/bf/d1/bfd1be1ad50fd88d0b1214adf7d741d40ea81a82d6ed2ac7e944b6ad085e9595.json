@@ -1,0 +1,1029 @@
+{
+  "stage": 137,
+  "previous_goal_turn": "progress",
+  "packet_names": [
+    "coefficients",
+    "evolution-heavy-carry",
+    "evolution-cold-carry",
+    "weak-m20",
+    "weak-m40",
+    "feedback-heavy-m20",
+    "feedback-heavy-m40",
+    "feedback-cold-m20",
+    "feedback-cold-m40"
+  ],
+  "scientific_checks": 5028,
+  "passing_scientific_checks": 5008,
+  "retained_failed_checks": 20,
+  "failed_by_packet": {
+    "feedback-heavy-m20": [
+      "Response:physical:gas",
+      "Response:cubic:gas",
+      "Sensitivity1percent:continuation:peak:baseline",
+      "Sensitivity1percent:continuation:late:baseline",
+      "Sensitivity1percent:continuation:endpoint:baseline"
+    ],
+    "feedback-heavy-m40": [
+      "Response:physical:gas",
+      "Response:cubic:gas",
+      "Sensitivity1percent:continuation:peak:baseline",
+      "Sensitivity1percent:continuation:late:baseline",
+      "Sensitivity1percent:continuation:endpoint:baseline"
+    ],
+    "feedback-cold-m20": [
+      "Response:physical:gas",
+      "Response:cubic:gas",
+      "Sensitivity1percent:continuation:peak:baseline",
+      "Sensitivity1percent:continuation:late:baseline",
+      "Sensitivity1percent:continuation:endpoint:baseline"
+    ],
+    "feedback-cold-m40": [
+      "Response:physical:gas",
+      "Response:cubic:gas",
+      "Sensitivity1percent:continuation:peak:baseline",
+      "Sensitivity1percent:continuation:late:baseline",
+      "Sensitivity1percent:continuation:endpoint:baseline"
+    ]
+  },
+  "evolution": {
+    "heavy": {
+      "saved_sites": 257,
+      "maximum_budget_error": 8.922832219792481e-14,
+      "maximum_total_equation_error": 2.8429227099780567e-16,
+      "minimum_generator_dissipation": -3569.726937357249,
+      "seconds": 1297.3933480998967
+    },
+    "cold": {
+      "saved_sites": 257,
+      "maximum_budget_error": 9.408296104744922e-14,
+      "maximum_total_equation_error": 2.6839455502694313e-16,
+      "minimum_generator_dissipation": -3566.2302564569077,
+      "seconds": 1240.788534700172
+    }
+  },
+  "responses": {
+    "feedback-heavy-m20": {
+      "physical": {
+        "comparison": {
+          "radiation_relative": [
+            3.817131096414321e-05,
+            4.233655008675632e-05,
+            4.233654444148912e-05
+          ],
+          "gas_peak_relative": [
+            0.03627034977570786,
+            0.0009062953081946829,
+            0.0009062534045792656
+          ],
+          "gas_late_relative": [
+            0.03627034977570786,
+            0.0009062953081946829,
+            0.0009062534045792656
+          ],
+          "gas_endpoint_relative": [
+            0.03627034977570786,
+            0.0009062953081946829,
+            0.0009062534045792656
+          ],
+          "gas_peak_denominator": [
+            1.0429709116841924e-12,
+            6.230596475382154e-16,
+            6.230885637309625e-16
+          ],
+          "gas_late_denominator": [
+            1.0429709116841924e-12,
+            6.230596475382154e-16,
+            6.230885637309625e-16
+          ],
+          "gas_endpoint_denominator": [
+            1.0429709116841924e-12,
+            6.230596475382154e-16,
+            6.230885637309625e-16
+          ],
+          "gas_endpoint_signed_difference": [
+            3.7828919772674565e-14,
+            -5.646760352893174e-19,
+            -5.646761322355894e-19
+          ],
+          "gas_endpoint": [
+            -1.0051419919115178e-12,
+            -6.236243235735047e-16,
+            -6.236532398631981e-16
+          ],
+          "reference_gas_endpoint": [
+            -1.0429709116841924e-12,
+            -6.230596475382154e-16,
+            -6.230885637309625e-16
+          ],
+          "endpoint_near_zero": [
+            false,
+            false,
+            false
+          ],
+          "endpoint_sign_preserved": [
+            true,
+            true,
+            true
+          ]
+        },
+        "source_errors": {
+          "mass_projection": 3.1598956146251963e-16,
+          "dc_energy": 8.112828507935669e-13,
+          "compton_number": 0.0,
+          "dc_represented_energy": 3.652634427270644e-12,
+          "compton_represented_number": 0.0,
+          "source_decomposition": 9.740101884280053e-17
+        },
+        "response_errors": {
+          "photon": 6.036281717766642e-14,
+          "gas": 6.3032902436073825e-06,
+          "energy_spectrum": 0.01837820040378568,
+          "energy_step": 1.5758080938563389e-16,
+          "energy_work": 2.829043305895374e-14,
+          "number": 3.8991492157848e-11,
+          "linearity": 7.242554980541018e-14
+        }
+      },
+      "cubic": {
+        "comparison": {
+          "radiation_relative": [
+            1.3644688832092891e-08,
+            4.119525392296383e-07,
+            4.1195320990459093e-07
+          ],
+          "gas_peak_relative": [
+            2.016611048239127e-05,
+            7.139667575143561e-05,
+            7.1393688696925e-05
+          ],
+          "gas_late_relative": [
+            2.016611048239127e-05,
+            7.139667575143561e-05,
+            7.1393688696925e-05
+          ],
+          "gas_endpoint_relative": [
+            2.016611048239127e-05,
+            7.139667575143561e-05,
+            7.1393688696925e-05
+          ],
+          "gas_peak_denominator": [
+            1.0051419919115178e-12,
+            6.236243235735047e-16,
+            6.236532398631981e-16
+          ],
+          "gas_late_denominator": [
+            1.0051419919115178e-12,
+            6.236243235735047e-16,
+            6.236532398631981e-16
+          ],
+          "gas_endpoint_denominator": [
+            1.0051419919115178e-12,
+            6.236243235735047e-16,
+            6.236532398631981e-16
+          ],
+          "gas_endpoint_signed_difference": [
+            -2.0269804459378503e-17,
+            4.4524703620885876e-20,
+            4.452490526162186e-20
+          ],
+          "gas_endpoint": [
+            -1.0051622617159772e-12,
+            -6.235797988698838e-16,
+            -6.236087149579365e-16
+          ],
+          "reference_gas_endpoint": [
+            -1.0051419919115178e-12,
+            -6.236243235735047e-16,
+            -6.236532398631981e-16
+          ],
+          "endpoint_near_zero": [
+            false,
+            false,
+            false
+          ],
+          "endpoint_sign_preserved": [
+            true,
+            true,
+            true
+          ]
+        },
+        "source_errors": {
+          "mass_projection": 3.1598956146251963e-16,
+          "dc_energy": 8.112828507935669e-13,
+          "compton_number": 0.0,
+          "dc_represented_energy": 3.652634427270644e-12,
+          "compton_represented_number": 0.0,
+          "source_decomposition": 9.740101884280053e-17
+        },
+        "response_errors": {
+          "photon": 5.787025245047655e-14,
+          "gas": 6.3032902436073825e-06,
+          "energy_spectrum": 0.018249753426737878,
+          "energy_step": 1.5758080938563389e-16,
+          "energy_work": 2.860057039876008e-14,
+          "number": 3.997066610733326e-11,
+          "linearity": 7.703328096954204e-14
+        }
+      },
+      "continuation": {
+        "response_errors": {
+          "photon": 3.198403563188667e-14,
+          "gas": 3.568109027327342e-09,
+          "energy_spectrum": 0.01624685480535906,
+          "energy_step": 1.567582539084288e-16,
+          "energy_work": 1.7157958790296952e-14,
+          "number": 7.134522316476136e-12,
+          "linearity": 3.7107953180829495e-14
+        },
+        "relative_peak": [
+          0.036270349798145016,
+          0.0009062953092504939,
+          0.0009062534050163494
+        ],
+        "relative_late": [
+          0.036270349798145016,
+          0.0009062953092504939,
+          0.0009062534050163494
+        ],
+        "relative_endpoint": [
+          0.036270349798145016,
+          0.0009062953092504939,
+          0.0009062534050163494
+        ],
+        "superposition_relative": [
+          9.558724657529695e-09,
+          1.543353098895757e-08,
+          2.5072742131666738e-08
+        ],
+        "gas_endpoint": [
+          3.782891979607587e-14,
+          -5.646760359471506e-19,
+          -5.646761325079314e-19
+        ]
+      },
+      "discretization": {
+        "response_errors": {
+          "photon": 1.881888804219908e-14,
+          "gas": 1.1693429529706764e-08,
+          "energy_spectrum": 0.013006194254157968,
+          "energy_step": 1.4465263956908654e-16,
+          "energy_work": 2.5832938673664532e-14,
+          "number": 7.172169151506509e-13,
+          "linearity": 0.0
+        },
+        "relative_peak": [
+          2.0166253936601032e-05,
+          7.139679509772139e-05,
+          7.13934859715799e-05
+        ],
+        "relative_late": [
+          2.0166253936601032e-05,
+          7.139679509772139e-05,
+          7.13934859715799e-05
+        ],
+        "relative_endpoint": [
+          2.0166253936601032e-05,
+          7.139679509772139e-05,
+          7.13934859715799e-05
+        ],
+        "superposition_relative": [
+          6.593521088777131e-05,
+          3.531472028313923e-05,
+          7.177126194883577e-05
+        ],
+        "gas_endpoint": [
+          -2.026994865122865e-17,
+          4.4524778048132616e-20,
+          4.452477883130359e-20
+        ]
+      }
+    },
+    "feedback-heavy-m40": {
+      "physical": {
+        "comparison": {
+          "radiation_relative": [
+            4.731356559107023e-05,
+            3.5070486331292533e-05,
+            3.5070485228190915e-05
+          ],
+          "gas_peak_relative": [
+            0.03705619172306676,
+            0.004651432910475402,
+            0.004651100577243594
+          ],
+          "gas_late_relative": [
+            0.03705619172306676,
+            0.004651432910475402,
+            0.004651100577243594
+          ],
+          "gas_endpoint_relative": [
+            0.03705619172306676,
+            0.004651432910475402,
+            0.004651100577243594
+          ],
+          "gas_peak_denominator": [
+            2.7100610058272734e-12,
+            3.9510746376945064e-16,
+            3.9513567504588127e-16
+          ],
+          "gas_late_denominator": [
+            2.7100610058272734e-12,
+            3.9510746376945064e-16,
+            3.9513567504588127e-16
+          ],
+          "gas_endpoint_denominator": [
+            2.7100610058272734e-12,
+            3.9510746376945064e-16,
+            3.9513567504588127e-16
+          ],
+          "gas_endpoint_signed_difference": [
+            1.004245402131426e-13,
+            -1.8378158601516904e-18,
+            -1.8378157662954358e-18
+          ],
+          "gas_endpoint": [
+            -2.6096364656141308e-12,
+            -3.9694527962960233e-16,
+            -3.969734908121767e-16
+          ],
+          "reference_gas_endpoint": [
+            -2.7100610058272734e-12,
+            -3.9510746376945064e-16,
+            -3.9513567504588127e-16
+          ],
+          "endpoint_near_zero": [
+            false,
+            false,
+            false
+          ],
+          "endpoint_sign_preserved": [
+            true,
+            true,
+            true
+          ]
+        },
+        "source_errors": {
+          "mass_projection": 3.1470060241431684e-16,
+          "dc_energy": 3.5948111391733484e-13,
+          "compton_number": 0.0,
+          "dc_represented_energy": 5.5781956119061095e-12,
+          "compton_represented_number": 0.0,
+          "source_decomposition": 8.855094674142276e-17
+        },
+        "response_errors": {
+          "photon": 6.555018972691057e-14,
+          "gas": 6.508543095882499e-06,
+          "energy_spectrum": 0.020488304002046057,
+          "energy_step": 1.3366530715180534e-16,
+          "energy_work": 2.694468940805834e-14,
+          "number": 3.308231691717525e-11,
+          "linearity": 8.297311286585355e-14
+        }
+      },
+      "cubic": {
+        "comparison": {
+          "radiation_relative": [
+            3.250960147564633e-08,
+            4.09839623709965e-07,
+            4.098392245438118e-07
+          ],
+          "gas_peak_relative": [
+            1.739864316582887e-05,
+            0.00012183877525812122,
+            0.00012182989528638282
+          ],
+          "gas_late_relative": [
+            1.739864316582887e-05,
+            0.00012183877525812122,
+            0.00012182989528638282
+          ],
+          "gas_endpoint_relative": [
+            1.739864316582887e-05,
+            0.00012183877525812122,
+            0.00012182989528638282
+          ],
+          "gas_peak_denominator": [
+            2.6096364656141308e-12,
+            3.9694527962960233e-16,
+            3.969734908121767e-16
+          ],
+          "gas_late_denominator": [
+            2.6096364656141308e-12,
+            3.9694527962960233e-16,
+            3.969734908121767e-16
+          ],
+          "gas_endpoint_denominator": [
+            2.6096364656141308e-12,
+            3.9694527962960233e-16,
+            3.969734908121767e-16
+          ],
+          "gas_endpoint_signed_difference": [
+            -4.5404133657755096e-17,
+            4.83633267145632e-20,
+            4.836323881711734e-20
+          ],
+          "gas_endpoint": [
+            -2.6096818697477885e-12,
+            -3.9689691630288776e-16,
+            -3.969251275733596e-16
+          ],
+          "reference_gas_endpoint": [
+            -2.6096364656141308e-12,
+            -3.9694527962960233e-16,
+            -3.969734908121767e-16
+          ],
+          "endpoint_near_zero": [
+            false,
+            false,
+            false
+          ],
+          "endpoint_sign_preserved": [
+            true,
+            true,
+            true
+          ]
+        },
+        "source_errors": {
+          "mass_projection": 3.1470060241431684e-16,
+          "dc_energy": 3.5948111391733484e-13,
+          "compton_number": 0.0,
+          "dc_represented_energy": 5.5781956119061095e-12,
+          "compton_represented_number": 0.0,
+          "source_decomposition": 8.855094674142276e-17
+        },
+        "response_errors": {
+          "photon": 6.555018972691057e-14,
+          "gas": 6.508543095882499e-06,
+          "energy_spectrum": 0.020488304002046057,
+          "energy_step": 1.484576931302807e-16,
+          "energy_work": 2.752643680718742e-14,
+          "number": 1.9247297816074952e-11,
+          "linearity": 7.858245648395473e-14
+        }
+      },
+      "continuation": {
+        "response_errors": {
+          "photon": 2.4665597078615582e-14,
+          "gas": 1.8518773956874711e-09,
+          "energy_spectrum": 0.016404717716719284,
+          "energy_step": 1.3386424876297737e-16,
+          "energy_work": 1.7725159615199003e-14,
+          "number": 9.787456488913602e-12,
+          "linearity": 4.404829303137131e-14
+        },
+        "relative_peak": [
+          0.0370561917082972,
+          0.0046514329145032,
+          0.004651100571156252
+        ],
+        "relative_late": [
+          0.0370561917082972,
+          0.0046514329145032,
+          0.004651100571156252
+        ],
+        "relative_endpoint": [
+          0.0370561917082972,
+          0.0046514329145032,
+          0.004651100571156252
+        ],
+        "superposition_relative": [
+          3.387939085661312e-09,
+          5.693270936052736e-09,
+          4.732169913560416e-09
+        ],
+        "gas_endpoint": [
+          1.0042454017311619e-13,
+          -1.8378158617431032e-18,
+          -1.8378157638901095e-18
+        ]
+      },
+      "discretization": {
+        "response_errors": {
+          "photon": 2.139953814595749e-14,
+          "gas": 2.500767904805349e-08,
+          "energy_spectrum": 0.01352426695710068,
+          "energy_step": 1.595631038914615e-16,
+          "energy_work": 2.5785070166133205e-14,
+          "number": 3.139558830119779e-13,
+          "linearity": 0.0
+        },
+        "relative_peak": [
+          1.739867221956586e-05,
+          0.00012183852842245779,
+          0.00012182987719350406
+        ],
+        "relative_late": [
+          1.739867221956586e-05,
+          0.00012183852842245779,
+          0.00012182987719350406
+        ],
+        "relative_endpoint": [
+          1.739867221956586e-05,
+          0.00012183852842245779,
+          0.00012182987719350406
+        ],
+        "superposition_relative": [
+          2.688237688657008e-05,
+          3.518072270395021e-05,
+          2.0578283507670938e-05
+        ],
+        "gas_endpoint": [
+          -4.540420947744662e-17,
+          4.836322873431176e-20,
+          4.8363231634724103e-20
+        ]
+      }
+    },
+    "feedback-cold-m20": {
+      "physical": {
+        "comparison": {
+          "radiation_relative": [
+            3.817150934713186e-05,
+            4.313077067611056e-05,
+            4.313076061907672e-05
+          ],
+          "gas_peak_relative": [
+            0.036399239122348166,
+            0.0009262691935916612,
+            0.0009262263869125079
+          ],
+          "gas_late_relative": [
+            0.036399239122348166,
+            0.0009262691935916612,
+            0.0009262263869125079
+          ],
+          "gas_endpoint_relative": [
+            0.036399239122348166,
+            0.0009262691935916612,
+            0.0009262263869125079
+          ],
+          "gas_peak_denominator": [
+            1.0417224189548766e-12,
+            6.205916340628537e-16,
+            6.20620537439424e-16
+          ],
+          "gas_late_denominator": [
+            1.0417224189548766e-12,
+            6.205916340628537e-16,
+            6.20620537439424e-16
+          ],
+          "gas_endpoint_denominator": [
+            1.0417224189548766e-12,
+            6.205916340628537e-16,
+            6.20620537439424e-16
+          ],
+          "gas_endpoint_signed_difference": [
+            3.791790342664951e-14,
+            -5.748349124331308e-19,
+            -5.748351180362165e-19
+          ],
+          "gas_endpoint": [
+            -1.003804515528227e-12,
+            -6.211664689752869e-16,
+            -6.211953725574602e-16
+          ],
+          "reference_gas_endpoint": [
+            -1.0417224189548766e-12,
+            -6.205916340628537e-16,
+            -6.20620537439424e-16
+          ],
+          "endpoint_near_zero": [
+            false,
+            false,
+            false
+          ],
+          "endpoint_sign_preserved": [
+            true,
+            true,
+            true
+          ]
+        },
+        "source_errors": {
+          "mass_projection": 3.1685964683831895e-16,
+          "dc_energy": 5.043937768554032e-13,
+          "compton_number": 0.0,
+          "dc_represented_energy": 7.2451512021997115e-12,
+          "compton_represented_number": 0.0,
+          "source_decomposition": 9.355207123614468e-17
+        },
+        "response_errors": {
+          "photon": 7.151071282749124e-14,
+          "gas": 3.7778132028139647e-06,
+          "energy_spectrum": 0.016431910404037766,
+          "energy_step": 1.6120608781377726e-16,
+          "energy_work": 5.742617185845827e-14,
+          "number": 3.345776324738021e-11,
+          "linearity": 8.08774664348478e-14
+        }
+      },
+      "cubic": {
+        "comparison": {
+          "radiation_relative": [
+            1.3617907361560954e-08,
+            4.1160115802638955e-07,
+            4.11600993978285e-07
+          ],
+          "gas_peak_relative": [
+            2.022287491188875e-05,
+            7.148589251063863e-05,
+            7.148261342753253e-05
+          ],
+          "gas_late_relative": [
+            2.022287491188875e-05,
+            7.148589251063863e-05,
+            7.148261342753253e-05
+          ],
+          "gas_endpoint_relative": [
+            2.022287491188875e-05,
+            7.148589251063863e-05,
+            7.148261342753253e-05
+          ],
+          "gas_peak_denominator": [
+            1.003804515528227e-12,
+            6.211664689752869e-16,
+            6.211953725574602e-16
+          ],
+          "gas_late_denominator": [
+            1.003804515528227e-12,
+            6.211664689752869e-16,
+            6.211953725574602e-16
+          ],
+          "gas_endpoint_denominator": [
+            1.003804515528227e-12,
+            6.211664689752869e-16,
+            6.211953725574602e-16
+          ],
+          "gas_endpoint_signed_difference": [
+            -2.0299813153516423e-17,
+            4.440463943238031e-20,
+            4.4404668679496976e-20
+          ],
+          "gas_endpoint": [
+            -1.0038248153413806e-12,
+            -6.211220643358545e-16,
+            -6.211509678887807e-16
+          ],
+          "reference_gas_endpoint": [
+            -1.003804515528227e-12,
+            -6.211664689752869e-16,
+            -6.211953725574602e-16
+          ],
+          "endpoint_near_zero": [
+            false,
+            false,
+            false
+          ],
+          "endpoint_sign_preserved": [
+            true,
+            true,
+            true
+          ]
+        },
+        "source_errors": {
+          "mass_projection": 3.1685964683831895e-16,
+          "dc_energy": 5.043937768554032e-13,
+          "compton_number": 0.0,
+          "dc_represented_energy": 7.2451512021997115e-12,
+          "compton_represented_number": 0.0,
+          "source_decomposition": 9.355207123614468e-17
+        },
+        "response_errors": {
+          "photon": 5.991123351793552e-14,
+          "gas": 7.669087641917394e-06,
+          "energy_spectrum": 0.016440500413525988,
+          "energy_step": 1.4383967859771999e-16,
+          "energy_work": 5.477701508385391e-14,
+          "number": 4.075719740905328e-11,
+          "linearity": 7.871838876559074e-14
+        }
+      },
+      "continuation": {
+        "response_errors": {
+          "photon": 4.237943555773333e-14,
+          "gas": 2.041055639181054e-09,
+          "energy_spectrum": 0.015987251975522015,
+          "energy_step": 1.4191938782201707e-16,
+          "energy_work": 2.9484465320190123e-14,
+          "number": 8.343247606815937e-12,
+          "linearity": 4.381253842016607e-14
+        },
+        "relative_peak": [
+          0.036399239202276314,
+          0.0009262691965096954,
+          0.0009262263870743294
+        ],
+        "relative_late": [
+          0.036399239202276314,
+          0.0009262691965096954,
+          0.0009262263870743294
+        ],
+        "relative_endpoint": [
+          0.036399239202276314,
+          0.0009262691965096954,
+          0.0009262263870743294
+        ],
+        "superposition_relative": [
+          1.3232759291518968e-08,
+          1.2566839478440635e-08,
+          1.920058084730974e-08
+        ],
+        "gas_endpoint": [
+          3.7917903509912453e-14,
+          -5.748349142440385e-19,
+          -5.748351181366463e-19
+        ]
+      },
+      "discretization": {
+        "response_errors": {
+          "photon": 2.2936498513668316e-14,
+          "gas": 1.1894665190006795e-08,
+          "energy_spectrum": 0.015197039758264716,
+          "energy_step": 1.5315586597432135e-16,
+          "energy_work": 4.450894170098027e-14,
+          "number": 6.017813289796059e-13,
+          "linearity": 0.0
+        },
+        "relative_peak": [
+          2.022290513276657e-05,
+          7.148605855320317e-05,
+          7.148273236109567e-05
+        ],
+        "relative_late": [
+          2.022290513276657e-05,
+          7.148605855320317e-05,
+          7.148273236109567e-05
+        ],
+        "relative_endpoint": [
+          2.022290513276657e-05,
+          7.148605855320317e-05,
+          7.148273236109567e-05
+        ],
+        "superposition_relative": [
+          6.003717073688785e-05,
+          4.583021406926105e-05,
+          3.08042573088382e-05
+        ],
+        "gas_endpoint": [
+          -2.0299843489370044e-17,
+          4.440474257245382e-20,
+          4.440474256047604e-20
+        ]
+      }
+    },
+    "feedback-cold-m40": {
+      "physical": {
+        "comparison": {
+          "radiation_relative": [
+            4.7271804769700006e-05,
+            3.575998893558752e-05,
+            3.575998465947187e-05
+          ],
+          "gas_peak_relative": [
+            0.037132285872886014,
+            0.004741021839538849,
+            0.0047406815187655
+          ],
+          "gas_late_relative": [
+            0.037132285872886014,
+            0.004741021839538849,
+            0.0047406815187655
+          ],
+          "gas_endpoint_relative": [
+            0.037132285872886014,
+            0.004741021839538849,
+            0.0047406815187655
+          ],
+          "gas_peak_denominator": [
+            2.709347691957662e-12,
+            3.9234880923531687e-16,
+            3.923770122389911e-16
+          ],
+          "gas_late_denominator": [
+            2.709347691957662e-12,
+            3.9234880923531687e-16,
+            3.923770122389911e-16
+          ],
+          "gas_endpoint_denominator": [
+            2.709347691957662e-12,
+            3.9234880923531687e-16,
+            3.923770122389911e-16
+          ],
+          "gas_endpoint_signed_difference": [
+            1.0060427302681582e-13,
+            -1.860134273301699e-18,
+            -1.8601344503098094e-18
+          ],
+          "gas_endpoint": [
+            -2.6087434189308462e-12,
+            -3.9420894350861856e-16,
+            -3.942371466893009e-16
+          ],
+          "reference_gas_endpoint": [
+            -2.709347691957662e-12,
+            -3.9234880923531687e-16,
+            -3.923770122389911e-16
+          ],
+          "endpoint_near_zero": [
+            false,
+            false,
+            false
+          ],
+          "endpoint_sign_preserved": [
+            true,
+            true,
+            true
+          ]
+        },
+        "source_errors": {
+          "mass_projection": 3.1558497544838246e-16,
+          "dc_energy": 4.549470410591984e-13,
+          "compton_number": 0.0,
+          "dc_represented_energy": 4.6525906076116385e-12,
+          "compton_represented_number": 0.0,
+          "source_decomposition": 8.867232443630982e-17
+        },
+        "response_errors": {
+          "photon": 5.855419747869461e-14,
+          "gas": 5.039962743346458e-07,
+          "energy_spectrum": 0.01945576558444152,
+          "energy_step": 1.572409318810087e-16,
+          "energy_work": 5.193999754343225e-14,
+          "number": 2.364606396130974e-11,
+          "linearity": 8.439743460792703e-14
+        }
+      },
+      "cubic": {
+        "comparison": {
+          "radiation_relative": [
+            3.24569685118642e-08,
+            4.094937385430899e-07,
+            4.0949388445041957e-07
+          ],
+          "gas_peak_relative": [
+            1.742031215045954e-05,
+            0.00012240555064648215,
+            0.00012239689740938247
+          ],
+          "gas_late_relative": [
+            1.742031215045954e-05,
+            0.00012240555064648215,
+            0.00012239689740938247
+          ],
+          "gas_endpoint_relative": [
+            1.742031215045954e-05,
+            0.00012240555064648215,
+            0.00012239689740938247
+          ],
+          "gas_peak_denominator": [
+            2.6087434189308462e-12,
+            3.9420894350861856e-16,
+            3.942371466893009e-16
+          ],
+          "gas_late_denominator": [
+            2.6087434189308462e-12,
+            3.9420894350861856e-16,
+            3.942371466893009e-16
+          ],
+          "gas_endpoint_denominator": [
+            2.6087434189308462e-12,
+            3.9420894350861856e-16,
+            3.942371466893009e-16
+          ],
+          "gas_endpoint_signed_difference": [
+            -4.544512467823238e-17,
+            4.825336279994043e-20,
+            4.825340359829803e-20
+          ],
+          "gas_endpoint": [
+            -2.6087888640555244e-12,
+            -3.941606901458186e-16,
+            -3.941888932857026e-16
+          ],
+          "reference_gas_endpoint": [
+            -2.6087434189308462e-12,
+            -3.9420894350861856e-16,
+            -3.942371466893009e-16
+          ],
+          "endpoint_near_zero": [
+            false,
+            false,
+            false
+          ],
+          "endpoint_sign_preserved": [
+            true,
+            true,
+            true
+          ]
+        },
+        "source_errors": {
+          "mass_projection": 3.1558497544838246e-16,
+          "dc_energy": 4.549470410591984e-13,
+          "compton_number": 0.0,
+          "dc_represented_energy": 4.6525906076116385e-12,
+          "compton_represented_number": 0.0,
+          "source_decomposition": 8.867232443630982e-17
+        },
+        "response_errors": {
+          "photon": 6.263098127552162e-14,
+          "gas": 6.266683186972619e-07,
+          "energy_spectrum": 0.01966344800880412,
+          "energy_step": 1.5220031466250554e-16,
+          "energy_work": 5.47406896439806e-14,
+          "number": 2.2232340452691338e-11,
+          "linearity": 7.94117489942529e-14
+        }
+      },
+      "continuation": {
+        "response_errors": {
+          "photon": 2.5676394872666755e-14,
+          "gas": 1.6607513006027964e-09,
+          "energy_spectrum": 0.01546567689978536,
+          "energy_step": 1.5020307678057793e-16,
+          "energy_work": 3.00418828274715e-14,
+          "number": 9.359635044821681e-12,
+          "linearity": 4.4321979108921355e-14
+        },
+        "relative_peak": [
+          0.037132285821029815,
+          0.004741021837052351,
+          0.004740681525245164
+        ],
+        "relative_late": [
+          0.037132285821029815,
+          0.004741021837052351,
+          0.004740681525245164
+        ],
+        "relative_endpoint": [
+          0.037132285821029815,
+          0.004741021837052351,
+          0.004740681525245164
+        ],
+        "superposition_relative": [
+          4.368013108474195e-09,
+          6.1151341317667814e-09,
+          6.095348393952635e-09
+        ],
+        "gas_endpoint": [
+          1.0060427288631934e-13,
+          -1.860134272326124e-18,
+          -1.8601344528522808e-18
+        ]
+      },
+      "discretization": {
+        "response_errors": {
+          "photon": 2.125861002894562e-14,
+          "gas": 6.952794313202825e-10,
+          "energy_spectrum": 0.016089516024152244,
+          "energy_step": 9.859183087309829e-17,
+          "energy_work": 4.907808323953595e-14,
+          "number": 5.565060290765717e-13,
+          "linearity": 0.0
+        },
+        "relative_peak": [
+          1.742029536886322e-05,
+          0.00012240546932500994,
+          0.00012239671598638697
+        ],
+        "relative_late": [
+          1.742029536886322e-05,
+          0.00012240546932500994,
+          0.00012239671598638697
+        ],
+        "relative_endpoint": [
+          1.742029536886322e-05,
+          0.00012240546932500994,
+          0.00012239671598638697
+        ],
+        "superposition_relative": [
+          2.0363152502556818e-05,
+          3.4696042247646694e-05,
+          3.158991936168608e-05
+        ],
+        "gas_endpoint": [
+          -4.5445080899353425e-17,
+          4.825333074228879e-20,
+          4.825333207461394e-20
+        ]
+      }
+    }
+  },
+  "max_weak_error": 1.3645001324274879e-06,
+  "all_band_symbol_upper": -1.9280702090725593e-05,
+  "continuous_inner_start": 0,
+  "continuous_inner_stop": 20480,
+  "new_corrected_steps_per_background": 5120,
+  "replayed_inner_steps": 10240,
+  "original_saved_epochs_covered": 33,
+  "continuous_source_sites": 1025,
+  "full_original_source_epochs": 65,
+  "source_knots": [
+    1091
+  ],
+  "response_steps": 2048,
+  "frequency_nodes": 5265,
+  "source_restore_step": 20500,
+  "full_history_recomputed": false,
+  "physical_reference_sites_per_window": 257,
+  "new_temperature_event_evaluations": 248,
+  "next_target": "Continue the same corrected two-level trajectory from20480 to25600 in another eight-interval resumable block,using the verified cached common source and independent physical-event comparisons. Track cumulative gas/radiation response and source-error budget before interpreting a full-history physical amplitude."
+}

@@ -1,0 +1,93 @@
+{
+  "checks": [
+    {
+      "name": "frequency192/384: smooth physical dipole defect refinement",
+      "passed": true,
+      "value": 0.0006787320503895542,
+      "gate": 0.002
+    },
+    {
+      "name": "frequency384/768: smooth physical dipole defect refinement",
+      "passed": true,
+      "value": 0.00016873548609038216,
+      "gate": 0.002
+    },
+    {
+      "name": "electron/scattering/cell-quadrature: smooth physical dipole defect refinement",
+      "passed": true,
+      "value": 1.4301963361209403e-06,
+      "gate": 0.002
+    },
+    {
+      "name": "Underresolved rapid-oscillation discrepancies retained rather than called accuracy evidence",
+      "passed": true
+    }
+  ],
+  "count": 4,
+  "all_checks_passed": true,
+  "rows": [
+    {
+      "comparison": "frequency192/384",
+      "fixture": "smooth",
+      "relative_defect_discrepancy": 0.0006787320503895542,
+      "accuracy_gate": 0.002,
+      "meets_accuracy_gate": true,
+      "oscillatory_is_stability_probe_not_converged_waveform_claim": false
+    },
+    {
+      "comparison": "frequency192/384",
+      "fixture": "oscillatory",
+      "relative_defect_discrepancy": 1.3007963533387086,
+      "accuracy_gate": 0.002,
+      "meets_accuracy_gate": false,
+      "oscillatory_is_stability_probe_not_converged_waveform_claim": true
+    },
+    {
+      "comparison": "frequency384/768",
+      "fixture": "smooth",
+      "relative_defect_discrepancy": 0.00016873548609038216,
+      "accuracy_gate": 0.002,
+      "meets_accuracy_gate": true,
+      "oscillatory_is_stability_probe_not_converged_waveform_claim": false
+    },
+    {
+      "comparison": "frequency384/768",
+      "fixture": "oscillatory",
+      "relative_defect_discrepancy": 0.33811718135174845,
+      "accuracy_gate": 0.002,
+      "meets_accuracy_gate": false,
+      "oscillatory_is_stability_probe_not_converged_waveform_claim": true
+    },
+    {
+      "comparison": "electron/scattering/cell-quadrature",
+      "fixture": "smooth",
+      "relative_defect_discrepancy": 1.4301963361209403e-06,
+      "accuracy_gate": 0.002,
+      "meets_accuracy_gate": true,
+      "oscillatory_is_stability_probe_not_converged_waveform_claim": false
+    },
+    {
+      "comparison": "electron/scattering/cell-quadrature",
+      "fixture": "oscillatory",
+      "relative_defect_discrepancy": 0.00017903419804739221,
+      "accuracy_gate": 0.002,
+      "meets_accuracy_gate": true,
+      "oscillatory_is_stability_probe_not_converged_waveform_claim": true
+    }
+  ],
+  "both_conserved_bulk_and_relative_spectral_motion_accounted_for": true,
+  "high_frequency_stability_distinct_from_waveform_convergence": true,
+  "state": "complete",
+  "finished_utc": "2026-10-07T10:52:01.236092+00:00",
+  "script_sha256": "51f8ce3ae13801f53b4010fc184e4401c1c97281d1f7c6e8c49da4530e9c3d01",
+  "input_hashes": {
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-finite-shift-kernel-20261007\\compare_galerkin.py": "51f8ce3ae13801f53b4010fc184e4401c1c97281d1f7c6e8c49da4530e9c3d01",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-finite-shift-kernel-20261007\\kernel_common.py": "ab2c6f927b5b7d44be8b7f6db82ca902e54fafded7f82682a178fcc9db3f0a64",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-finite-shift-kernel-20261007\\ACCEPTANCE.md": "bd0a09056380e6895acaae5414469e443f5457315e407d3401021a90610e0b1f",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\conservative-spectral-collision-step-20261007\\results\\stage-integrity.json": "76ba4bc811bcfdb07e98cb2fbef920b361a9dad1c1afd7f791b3aacbf97fb6a4",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-finite-shift-kernel-20261007\\runs\\dipole-192\\operator.npz": "e49e97b65b76d33c8ecf86c1906665ba7c85667456a5766ad7e3e6c71b39d91e",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-finite-shift-kernel-20261007\\runs\\dipole-384\\operator.npz": "0793a25cb03937e458d29d1bc9db0ffaddfa437924b26cf9250c18e96307fdb9",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-finite-shift-kernel-20261007\\runs\\dipole-768\\operator.npz": "3372b33f4d99bb655eb5a9e5ddb2c1bea92769037a3f86495ff2b66caaedda21",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\polarized-finite-shift-kernel-20261007\\runs\\dipole-384-refined\\operator.npz": "5fdbe076f9cc05832ae64f1c0d44d4687e3cdf6c262b5c902bb30b779a815d75"
+  }
+}

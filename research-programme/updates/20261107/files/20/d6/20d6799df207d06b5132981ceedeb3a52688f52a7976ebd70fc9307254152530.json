@@ -1,0 +1,86 @@
+{
+  "stage": 117,
+  "accepted_scope": "Finer2633-node original-domain defect reconstruction with unchanged physical events and boundaries; recomputed paired conditional radiation/gas feedback; three-grid contraction; actual coupled97-variable selected steps solved at50 and70 decimal digits using saved double inputs.",
+  "scientific_checks": 332,
+  "passing_scientific_checks": 292,
+  "expected_failed_by_packet": {
+    "feedback-m20-n5120": [
+      "Response:heavy:gas",
+      "Response:cold:gas"
+    ],
+    "feedback-m40-n5120": [
+      "Response:heavy:gas",
+      "Response:cold:gas"
+    ],
+    "gas-precision-m20": [
+      "heavy-step0678:cast-to-double raw gas column0",
+      "heavy-step0993:cast-to-double raw gas column10",
+      "heavy-step1356:cast-to-double raw gas column1",
+      "heavy-step1356:cast-to-double raw gas column2",
+      "heavy-step1485:cast-to-double raw gas column1",
+      "heavy-step1485:cast-to-double raw gas column2",
+      "cold-step0676:cast-to-double raw gas column0",
+      "cold-step1415:cast-to-double raw gas column6",
+      "cold-step1421:cast-to-double raw gas column1",
+      "cold-step1421:cast-to-double raw gas column2"
+    ],
+    "gas-precision-m40": [
+      "heavy-step1702:cast-to-double raw gas column9",
+      "cold-step1619:cast-to-double raw gas column10"
+    ],
+    "grid-comparison": [
+      "heavy:m40:Final radiation1percent:baseline",
+      "heavy:m40:Final radiation1percent:join1",
+      "heavy:m40:Final radiation1percent:join2",
+      "heavy:m40:Peak gas1percent:join1",
+      "heavy:m40:Peak gas1percent:join2",
+      "heavy:m40:Inner1percent:baseline",
+      "cold:m40:Final radiation1percent:baseline",
+      "cold:m40:Final radiation1percent:join1",
+      "cold:m40:Final radiation1percent:join2",
+      "cold:m40:Peak gas1percent:join1",
+      "cold:m40:Peak gas1percent:join2",
+      "cold:m40:Inner1percent:baseline",
+      "heavy:m20:Final radiation1percent:baseline",
+      "heavy:m20:Final radiation1percent:join1",
+      "heavy:m20:Final radiation1percent:join2",
+      "heavy:m20:Peak gas1percent:join1",
+      "heavy:m20:Peak gas1percent:join2",
+      "heavy:m20:Inner1percent:baseline",
+      "cold:m20:Final radiation1percent:baseline",
+      "cold:m20:Final radiation1percent:join1",
+      "cold:m20:Final radiation1percent:join2",
+      "cold:m20:Peak gas1percent:join1",
+      "cold:m20:Peak gas1percent:join2",
+      "cold:m20:Inner1percent:baseline"
+    ]
+  },
+  "failure_categories": {
+    "grid_one_percent": 24,
+    "raw_gas_full_response": 4,
+    "rounded_back_to_double_raw_gas": 12
+  },
+  "grid_precision_target": 0.01,
+  "raw_gas_gate": 1e-7,
+  "high_precision_equation_gate": 1e-35,
+  "high_precision_agreement_gate": 1e-25,
+  "selected_step_witness_count": 17,
+  "selected_step_branch_cases": 68,
+  "new_frequency_nodes": 2633,
+  "previous_frequency_nodes": [
+    659,
+    1317
+  ],
+  "physical_events_reused": true,
+  "parent_history_rerun": false,
+  "physical_inputs_unchanged": true,
+  "full_high_precision_evolution": false,
+  "preceding_states_and_coefficients_saved_binary64": true,
+  "high_precision_scope": "Assemble and solve the original physical block equations in arbitrary precision, not just residual reevaluation. Compare with the inherited energy-coordinate evolution; differences include its rounded/replaced energy mass row as well as assembly and solution arithmetic.",
+  "raw_failures_retained": true,
+  "prior_failed_flags_not_cleared": true,
+  "thresholds_relaxed": false,
+  "extrapolated_solution_promoted": false,
+  "next_target": "Test one further nested frequency refinement at5265 nodes against2633 to check whether the same1percent target is reached; pair it with a short consecutive high-precision gas/photon evolution seeded from saved preceding states to test accumulation. Keep both backgrounds, baseline and both MTS joins, both windows, fixed source histories and physical events. Preserve inherited time-resolution and window-dependence uncertainties.",
+  "conclusion": "All measured grid differences contract. Final radiation refinement falls to2.62-2.69percent; baseline peak-gas change0.725-0.832percent; MTS peak-gas change2.40-3.52percent. All17 coupled-step witnesses pass50/70-digit equations and agreement. Selected gas state changes are <=3.16e-10 of saved peak response, while12 rounded-back raw residual tests still fail. This isolates an important arithmetic sensitivity without certifying accumulated history error or meeting every1percent grid target."
+}

@@ -1,0 +1,85 @@
+{
+  "stage": 112,
+  "accepted_scope": "Derived conservative conditional matching with stored-moment subtraction, paired source evaluation and response, and isolated transport/profile uncertainty. Quantitative net amplitude is not promoted to continuum physical precision.",
+  "scientific_checks": 250,
+  "passing_scientific_checks": 232,
+  "retained_failed_checks": 18,
+  "expected_failed_by_packet": {
+    "response-fine-q16-m40-n1024": [
+      "gas:heavy",
+      "gas:cold"
+    ],
+    "response-fine-q24-m40-n1024": [
+      "gas:heavy",
+      "gas:cold"
+    ],
+    "response-fine-q32-m20-n1024": [
+      "gas:heavy",
+      "gas:cold"
+    ],
+    "response-fine-q32-m40-n1024": [
+      "gas:heavy",
+      "gas:cold"
+    ],
+    "response-fine-q32-m40-n512": [
+      "gas:heavy",
+      "gas:cold"
+    ],
+    "response-fine-space-transport-n1024": [
+      "gas:heavy",
+      "gas:cold"
+    ],
+    "response-space-fine-transport-n1024": [
+      "gas:heavy",
+      "gas:cold"
+    ],
+    "response-space-q32-m40-n1024": [
+      "gas:heavy",
+      "gas:cold"
+    ],
+    "response-time-q32-m40-n1024": [
+      "gas:heavy",
+      "gas:cold"
+    ]
+  },
+  "original_gas_relative_gate_relaxed": false,
+  "gas_net_rate_precision_upgraded": false,
+  "parent_stage111_failures_retained": true,
+  "authoritative_finite_rule": "response-fine-q32-m40-n1024",
+  "new_parent_history": false,
+  "conditional_response": true,
+  "self_consistent_closure_feedback_iterated": false,
+  "matched_source_formula": "C_ext[q]-K M^-1 m",
+  "stored_moment_derivative_accounted": true,
+  "canonical_mass_projection_preserved": true,
+  "DC_hard_legs_retained": true,
+  "DC_energy_identity_parent_order_only": true,
+  "Compton_extension": "Conservative symmetric leading-Rayleigh-Jeans soft stencil weak form; not a full finite-frequency extension.",
+  "full_finite_frequency_compton_matching_complete": false,
+  "physical_cutoff_fitted": false,
+  "physical_amplitude_fitted": false,
+  "matching_windows_compared": [
+    0.02,
+    0.04
+  ],
+  "lower_matching_interval": [
+    0.00002,
+    0.00004
+  ],
+  "projection_modes_retained": 96,
+  "columns": [
+    "baseline",
+    "join1",
+    "join2"
+  ],
+  "source54_uncertainty_recomputed": false,
+  "source_quadrature_gate_scope": "Compared to the saved primary spectrum norm; not a bound on continuum net-response error.",
+  "spacing_change_over_fine_response_up_to": 13.73,
+  "matching_change_over_fine_response_up_to": 0.693,
+  "net_shift_is_claimable_physical_signal": false,
+  "workbench_modified": false,
+  "github_action": false,
+  "subagents": 0,
+  "next_target": "Remove the compact Compton source's dependence on the inherited log-grid interpolation. Derive and evaluate its conservative weak integral directly at physical Doppler shifts, with photon-number invariance and paired photon/gas energy transfer retained. Compare the continuous-shift source against both saved stencils using the SAME finest replacement profiles and fixed matching windows; then reuse the saved response calculation. Separate finite-Planck/recoil matching error from remaining tail-profile resolution. Do not fit a cutoff, change the parent action, or rerun the full parent histories.",
+  "conclusion": "The stored-moment-correct matched equation is implemented and energy-paired. Finest-rule final full-spectrum norm shifts are0.00227percent baseline and0.00687percent correction. Quadrature/time changes are tiny, but transport/profile spacing and matching dominate the net shift; isolated four-corner controls identify the specific next numerical repair."
+}

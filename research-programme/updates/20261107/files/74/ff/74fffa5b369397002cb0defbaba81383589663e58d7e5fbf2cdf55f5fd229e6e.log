@@ -1,0 +1,20 @@
+{"stage": "reference-reference-fine:restore", "seconds": 27.509133200044744}
+Traceback (most recent call last):
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\derive_annular_position_time_radial_20260929.py", line 263, in <module>
+    main()
+    ~~~~^^
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\derive_annular_position_time_radial_20260929.py", line 132, in main
+    values = engine.sample(probe)
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\annular_position_time_eulerian_20260929.py", line 162, in sample
+    temporal, gradient = self.wave(radius)
+                         ~~~~~~~~~^^^^^^^^
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\annular_position_time_eulerian_20260929.py", line 129, in wave
+    labels = (take(lower + upper, (slice(None), None)) + take(upper - lower, (slice(None), None)) * points) / 2
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\annular_position_time_loads_20260929.py", line 60, in __truediv__
+    return self * self.cast(other)**-1
+                  ~~~~~~~~~~~~~~~~^^~~
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\scripts\annular_position_time_loads_20260929.py", line 54, in __pow__
+    first = power * base**(power - 1)
+                    ~~~~^^~~~~~~~~~~~
+ValueError: Integers to negative integer powers are not allowed.

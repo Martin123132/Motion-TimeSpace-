@@ -1,0 +1,61 @@
+{
+  "state": "complete",
+  "script_sha256": "50a49a5f9840315c5c8a75ff1264ac401342999515c1ef12539e54e0a19c300a",
+  "checks": [
+    {
+      "name": "angular_traceless_requires_equal_radial_and_time_amplitudes",
+      "passed": true
+    },
+    {
+      "name": "radial_angular_constraint",
+      "passed": true
+    },
+    {
+      "name": "tt_equation_from_linearized_ricci",
+      "passed": true
+    },
+    {
+      "name": "scalar_equation_after_metric_constraint",
+      "passed": true
+    },
+    {
+      "name": "common_first_derivative_coefficient",
+      "passed": true
+    },
+    {
+      "name": "remaining_radial_einstein_equation",
+      "passed": true
+    },
+    {
+      "name": "remaining_angular_einstein_constraint",
+      "passed": true
+    },
+    {
+      "name": "angular_constraint_preserved_by_evolution",
+      "passed": true
+    },
+    {
+      "name": "flat_metric_laplace_equation",
+      "passed": true
+    },
+    {
+      "name": "flat_metric_angular_coefficient",
+      "passed": true
+    },
+    {
+      "name": "flat_drive_recovers_previous_tide",
+      "passed": true
+    }
+  ],
+  "exact_check_count": 11,
+  "expressions": {
+    "first_coefficient": "(-2*alpha*radius**2*potential(field(radius)) + metric(radius) + 1)/(radius*metric(radius))",
+    "metric_coefficient": "(8*alpha*frequency**2*radius**2*field(radius)**2*exp(-2*lapse(radius)) - 4*alpha*radius**2*potential(field(radius)) - (2*alpha*radius**2*(frequency**2*field(radius)**2*exp(-2*lapse(radius))/2 + metric(radius)*Derivative(field(radius), radius)**2/2 - potential(field(radius))) - metric(radius) + 1)**2/metric(radius) - 6)/(radius**2*metric(radius))",
+    "field_coefficient": "(4*alpha*metric(radius)*Derivative(field(radius), radius)**2 - frequency**2*exp(-2*lapse(radius)) + Derivative(potential(field(radius)), (field(radius), 2)) + 6/radius**2)/metric(radius)",
+    "drive": "-2*frequency**2*field(radius)*exp(-2*lapse(radius)) + Derivative(potential(field(radius)), field(radius)) - 2*(alpha*radius**2*(frequency**2*field(radius)**2*exp(-2*lapse(radius))/2 + metric(radius)*Derivative(field(radius), radius)**2/2 - potential(field(radius))) - metric(radius)/2 + 1/2)*Derivative(field(radius), radius)/radius",
+    "angular_constraint": "(alpha**2*frequency**4*radius**4*amplitude(radius)*field(radius)**4 + 2*alpha**2*frequency**2*radius**4*amplitude(radius)*field(radius)**2*metric(radius)*exp(2*lapse(radius))*Derivative(field(radius), radius)**2 - 4*alpha**2*frequency**2*radius**4*amplitude(radius)*field(radius)**2*potential(field(radius))*exp(2*lapse(radius)) - 4*alpha**2*frequency**2*radius**3*field(radius)**2*metric(radius)*response(radius)*exp(2*lapse(radius))*Derivative(field(radius), radius) + alpha**2*radius**4*amplitude(radius)*metric(radius)**2*exp(4*lapse(radius))*Derivative(field(radius), radius)**4 - 4*alpha**2*radius**4*amplitude(radius)*metric(radius)*potential(field(radius))*exp(4*lapse(radius))*Derivative(field(radius), radius)**2 + 4*alpha**2*radius**4*amplitude(radius)*potential(field(radius))**2*exp(4*lapse(radius)) - 4*alpha**2*radius**3*metric(radius)**2*response(radius)*exp(4*lapse(radius))*Derivative(field(radius), radius)**3 + 8*alpha**2*radius**3*metric(radius)*potential(field(radius))*response(radius)*exp(4*lapse(radius))*Derivative(field(radius), radius) + alpha*frequency**2*radius**3*field(radius)**2*metric(radius)*exp(2*lapse(radius))*Derivative(amplitude(radius), radius) - 4*alpha*frequency**2*radius**2*amplitude(radius)*field(radius)**2*metric(radius)*exp(2*lapse(radius)) + 2*alpha*frequency**2*radius**2*amplitude(radius)*field(radius)**2*exp(2*lapse(radius)) - 4*alpha*frequency**2*radius**2*field(radius)*metric(radius)*response(radius)*exp(2*lapse(radius)) + alpha*radius**3*metric(radius)**2*exp(4*lapse(radius))*Derivative(amplitude(radius), radius)*Derivative(field(radius), radius)**2 - 2*alpha*radius**3*metric(radius)*potential(field(radius))*exp(4*lapse(radius))*Derivative(amplitude(radius), radius) + 4*alpha*radius**2*amplitude(radius)*metric(radius)*potential(field(radius))*exp(4*lapse(radius)) + 2*alpha*radius**2*amplitude(radius)*metric(radius)*exp(4*lapse(radius))*Derivative(field(radius), radius)**2 - 4*alpha*radius**2*amplitude(radius)*potential(field(radius))*exp(4*lapse(radius)) - 4*alpha*radius**2*metric(radius)**2*exp(4*lapse(radius))*Derivative(field(radius), radius)*Derivative(response(radius), radius) + 4*alpha*radius**2*metric(radius)*response(radius)*exp(4*lapse(radius))*Derivative(potential(field(radius)), field(radius)) - 4*alpha*radius*metric(radius)**2*response(radius)*exp(4*lapse(radius))*Derivative(field(radius), radius) - 4*alpha*radius*metric(radius)*response(radius)*exp(4*lapse(radius))*Derivative(field(radius), radius) - radius*metric(radius)**2*exp(4*lapse(radius))*Derivative(amplitude(radius), radius) + radius*metric(radius)*exp(4*lapse(radius))*Derivative(amplitude(radius), radius) - amplitude(radius)*metric(radius)**2*exp(4*lapse(radius)) + 4*amplitude(radius)*metric(radius)*exp(4*lapse(radius)) + amplitude(radius)*exp(4*lapse(radius)))*exp(-4*lapse(radius))/(4*metric(radius))",
+    "angular_prime": "-4*alpha*response(radius)*Derivative(field(radius), radius) + 2*amplitude(radius)*Derivative(lapse(radius), radius) + Derivative(amplitude(radius), radius)",
+    "angular_traceless_residual": "-3*amplitude(radius)*cos(2*polar)/4 + 3*amplitude(radius)/4 + 3*angular(radius)*sin(2*polar)/(4*tan(polar)) - 3*angular(radius)*cos(2*polar)/4 - 3*angular(radius)/4 + 3*radial(radius)*cos(2*polar)/4 - 3*radial(radius)/4"
+  },
+  "convention": "gtt=-exp(2nu)*(1-HY), grr=(1+HY)/F, angular=r^2*(1+KY); scalar=h+uY; l=2; Einstein Rmunu=2alpha trace-reversed source."
+}

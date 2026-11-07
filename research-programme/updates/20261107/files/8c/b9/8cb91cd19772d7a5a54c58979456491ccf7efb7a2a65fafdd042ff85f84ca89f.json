@@ -1,0 +1,159 @@
+{
+  "stage": 129,
+  "accepted_scope": "Saved-event33-temperature Compton refinement and derived positive reciprocal-pair moment repair;paired640-step prefix replays and explicitly local139-knot source splice.",
+  "scientific_checks": 1180,
+  "passing_scientific_checks": 1111,
+  "retained_failed_checks": 69,
+  "expected_failed_by_packet": {
+    "coefficients": [
+      "Low exact moment:0",
+      "Low exact moment:1",
+      "Low exact moment:2",
+      "Low exact moment:3",
+      "Low exact moment:4",
+      "Low exact moment:5",
+      "Low exact moment:6",
+      "Low exact moment:7",
+      "Low exact moment:8",
+      "Low exact moment:9",
+      "Low exact moment:10",
+      "Low exact moment:11",
+      "Low exact moment:12",
+      "Low exact moment:13",
+      "Low exact moment:14",
+      "Low exact moment:15",
+      "Low exact moment:16",
+      "Low exact moment:17",
+      "Low exact moment:18",
+      "Low exact moment:19",
+      "Low exact moment:20",
+      "Low exact moment:21",
+      "Low exact moment:22",
+      "Low exact moment:23",
+      "Low exact moment:24",
+      "Low exact moment:25",
+      "Low exact moment:26",
+      "Low exact moment:27",
+      "Low exact moment:28",
+      "Low exact moment:29",
+      "Low exact moment:30",
+      "Low exact moment:31",
+      "Low exact moment:32"
+    ],
+    "feedback-cold-m20": [
+      "Response:retabulated:gas",
+      "Response:control-direct:gas",
+      "Response:control-factored:gas",
+      "Response:dense-direct:gas",
+      "Response:dense-factored:gas",
+      "Response:balanced-direct:gas",
+      "Response:balanced-factored:gas"
+    ],
+    "feedback-cold-m40": [
+      "Response:retabulated:gas",
+      "Response:control-direct:gas",
+      "Response:control-factored:gas",
+      "Response:dense-direct:gas",
+      "Sensitivity1percent:dense-direct:gas_late_relative:join1",
+      "Sensitivity1percent:dense-direct:gas_late_relative:join2",
+      "Sensitivity1percent:dense-direct:gas_endpoint_relative:join1",
+      "Sensitivity1percent:dense-direct:gas_endpoint_relative:join2",
+      "Response:dense-factored:gas",
+      "Response:balanced-direct:gas",
+      "Response:balanced-factored:gas"
+    ],
+    "feedback-heavy-m20": [
+      "Response:retabulated:gas",
+      "Response:control-direct:gas",
+      "Response:control-factored:gas",
+      "Response:dense-direct:gas",
+      "Response:dense-factored:gas",
+      "Response:balanced-direct:gas",
+      "Response:balanced-factored:gas"
+    ],
+    "feedback-heavy-m40": [
+      "Response:retabulated:gas",
+      "Response:control-direct:gas",
+      "Response:control-factored:gas",
+      "Response:dense-direct:gas",
+      "Sensitivity1percent:dense-direct:gas_late_relative:join1",
+      "Sensitivity1percent:dense-direct:gas_late_relative:join2",
+      "Sensitivity1percent:dense-direct:gas_endpoint_relative:join1",
+      "Sensitivity1percent:dense-direct:gas_endpoint_relative:join2",
+      "Response:dense-factored:gas",
+      "Response:balanced-direct:gas",
+      "Response:balanced-factored:gas"
+    ]
+  },
+  "failure_categories": {
+    "Low exact moment": 33,
+    "Response": 28,
+    "Sensitivity1percent": 8
+  },
+  "combined_original_response_failures": {
+    "cold:m20": [
+      {
+        "name": "Response:cold:gas",
+        "value": 2.953730651125777e-06,
+        "limit": 1e-07,
+        "passed": false
+      }
+    ],
+    "cold:m40": [
+      {
+        "name": "Response:cold:gas",
+        "value": 1.0669703551373481e-06,
+        "limit": 1e-07,
+        "passed": false
+      }
+    ],
+    "heavy:m20": [
+      {
+        "name": "Response:heavy:gas",
+        "value": 3.814939850560378e-06,
+        "limit": 1e-07,
+        "passed": false
+      }
+    ],
+    "heavy:m40": [
+      {
+        "name": "Response:heavy:gas",
+        "value": 9.009176935688985e-07,
+        "limit": 1e-07,
+        "passed": false
+      }
+    ]
+  },
+  "prior_stage_failed_checks_retained": 12,
+  "maxima": {
+    "dense-direct": {
+      "baseline_endpoint": 0.0020084501394623537,
+      "mts_endpoint": 0.011288490787564415,
+      "radiation": 4.675662436213679e-06
+    },
+    "balanced-direct": {
+      "baseline_endpoint": 5.113537782473013e-05,
+      "mts_endpoint": 0.002313421696294697,
+      "radiation": 1.063787116539724e-06
+    },
+    "balanced-factored": {
+      "baseline_endpoint": 7.380724407432648e-07,
+      "mts_endpoint": 0.001727777243071585,
+      "radiation": 8.641292723629921e-07
+    },
+    "raw_gas_residual": 3.616223227701084e-05,
+    "sparse_solve": 1.5759306003981192e-15,
+    "endpoint_state_baseline": 0.0258640114006418,
+    "endpoint_state_mts": 0.006502753145123553
+  },
+  "conclusion": "The physical source moment and inner eigenvalue satisfy m=2lambda on the saved kernels. A derived positive reciprocal-pair repair removes the measured0.44percent bulk energy deposition bias while retaining positivity and chemical subinvariance. All six prefix replays complete;old controls reproduce saved states bitwise. Denser temperature samples shift the wide MTS gas endpoint by1.08\u20131.13percent,leaving eight unchanged1percent sensitivity flags;the repair itself changes that correction by at most0.2314percent relative to dense-unrepaired evolution. The positive repair is a declared numerical candidate,not a unique collision law;the source-aligned pairing is derived as the next discriminator. Changed endpoint states are saved and must be carried rather than silently reset for a physical full-history prediction.",
+  "next_target": "Compare the source-adjoint-derived positive pairing with the current pair-total-preserving repair before selecting a production discretization. Derive and measure their full weak actions/symbols,not only their matched moments,then run paired first-interval tests if the difference matters. Reuse saved events and restart points. After selecting and testing the operator,carry the altered endpoint state continuously into later intervals for both backgrounds,with explicit finite-boundary flux accounting and joint source/inner checks. Do not treat the current139-knot local splice as a globally self-consistent history.",
+  "independent_validation_required": true,
+  "new_fundamental_collision_law": false,
+  "positive_aggregate_candidate": true,
+  "source_aligned_pairing_derived_not_evaluated": true,
+  "later_state_carried": false,
+  "finite_boundary_flux_certificate": false,
+  "new_high_precision": false,
+  "goal_turn_classification": "progress"
+}

@@ -1,0 +1,38 @@
+{
+  "state": "failed",
+  "checks": [
+    {
+      "name": "failed_setup_only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "observed_running_snapshot",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_captured_digest_reconstructed",
+      "passed": false,
+      "detail": "c514af7a4e7a0a2532cd244338df3d9cf0b2f333e5ecb26dc0120a9f466b2069"
+    }
+  ],
+  "cases": [],
+  "inputs": {
+    "scripts\\archive_annular_recovery_preflight_history_20260930.py": "f9c5d3d200d2a142fd12c76a711869d3549c59629cab2ede8ee22fd0ab88ec6e",
+    "source-intake\\navier-stokes\\20260914\\annular-wave-flux-events-reference-third-attempt02\\status.json": "7e8e9342d4038541745ead1d1d0d6e073640ab790698aece0d744ac101d20bf8",
+    "source-intake\\navier-stokes\\20260914\\annular-wave-flux-events-reference-third-attempt01\\status.json": "5eea13526d0aef43feae8f594ee7219b78a091a30b8243a9b04a38e38fc83141",
+    "source-intake\\navier-stokes\\20260914\\annular-wave-flux-events-reference-third-attempt01\\status-running-at-two-rule-boundary.json": "e25f450426dead9bf02c21f16e1cb54701c927449ccf66df78f877b2afdbdc4c",
+    "source-intake\\navier-stokes\\20260914\\annular-wave-flux-events-reference-third-attempt01.log": "143fa8752746db1ebc4aea79608232592dea8fb5847c27ad071984957847b8be"
+  },
+  "outputs": {
+    "source-intake\\navier-stokes\\20260914\\annular-wave-recovery-preflight-history-attempt01\\executed-archive_annular_recovery_preflight_history_20260930.py": "f9c5d3d200d2a142fd12c76a711869d3549c59629cab2ede8ee22fd0ab88ec6e"
+  },
+  "conditional_spherical_bulk_equations_identified": true,
+  "evolving_reference_continuum_convergence_proven": false,
+  "complete_parent_source_action_derived": false,
+  "full_GR_limit_proven": false,
+  "valid_for_physics_claim": false,
+  "error": "RuntimeError(\"exact_captured_digest_reconstructed: 'c514af7a4e7a0a2532cd244338df3d9cf0b2f333e5ecb26dc0120a9f466b2069'\")",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\archive_annular_recovery_preflight_history_20260930.py\", line 36, in main\n    evidence.check('exact_captured_digest_reconstructed', recovered is not None, expected)\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\annular_reference_continuum_shell_20260914.py\", line 41, in check\n    raise RuntimeError(name+': '+repr(detail))\nRuntimeError: exact_captured_digest_reconstructed: 'c514af7a4e7a0a2532cd244338df3d9cf0b2f333e5ecb26dc0120a9f466b2069'\n"
+}

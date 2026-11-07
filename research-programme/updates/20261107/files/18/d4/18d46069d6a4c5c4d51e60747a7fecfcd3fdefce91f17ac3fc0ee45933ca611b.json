@@ -1,0 +1,70 @@
+{
+  "accepted_scope": "Derived first-order baryon-clock/baryon-rest spectral readout, reconstructible temperature and physical-shape split, qualitative coherent cancellation and globally refined active shapes for both retained parents, plus a sourced soft-double-Compton omission estimate and local energy/entropy exchange.32-to36 wave/band basis comparisons and all eight global-shape3200-to6400 time checks pass0.002. Time accuracy for every individual band is NOT certified: the cold x=1 band remains open.",
+  "all_requested_numerical_gates_closed": false,
+  "open_numerical_gate": "Cold-parent ideal x=1 band:3200-to6400 difference0.0020970558 versus the unchanged0.002 target;70-digit readout gives0.0020973526. No precision claim for this band.",
+  "unchanged_numerical_response_gate": 0.002,
+  "retained_unaccepted_accuracy_trials": {
+    "results/total-response-refinement/status.json": {
+      "reason": "Four16-to24 total-shape checks fail after resolving the cancellation, despite accepted separate responses in the parent. The same raw packet's time/interpolation/event checks passed; no failed decision is changed.",
+      "superseded_by": ["results/coherent36-over32/status.json"]
+    },
+    "results/extended-total-response/status.json": {
+      "reason": "Four24-to28 total-monopole shape comparisons fail, worst0.0039849681. Other active modes and number-free split checks pass. This packet is retained as a refinement trial, not the final accuracy authority.",
+      "superseded_by": ["results/coherent36-over32/status.json"]
+    },
+    "results/coherent32-over28/status.json": {
+      "reason": "Eight28-to32 mode/band checks fail, including worst ideal-band difference0.005787358. The next32-to36 comparison passes the same gates without redefining the bands or physical model.",
+      "superseded_by": ["results/coherent36-over32/status.json"]
+    },
+    "results/final-time36/status.json": {
+      "reason": "One1600-to3200 time check fails: the heavy-parent ideal band at x=1 differs by0.0022193477, above the unchanged0.002 gate. The other19 checks pass. Both parents are refined to6400 steps rather than waiving the near miss.",
+      "superseded_by": [],
+      "unresolved_scope": "The heavy band passes the successor comparison, but the cold band does not. Full two-parent band-time accuracy remains open."
+    },
+    "results/refined-time36/status.json": {
+      "reason": "The cold x=1 band remains just outside the unchanged gate at0.0020970558. All eight global-shape checks and the other11 band checks pass. Higher-precision readout confirms the unresolved discrepancy belongs chiefly to the saved evolution, not final projection arithmetic.",
+      "superseded_by": [],
+      "unresolved_scope": "Implement the derived temperature/shape/gas-slip coordinates and assemble the conserved moment equations directly; recheck this band without loosening the target."
+    }
+  },
+  "required_accepted_packets": [
+    "results/start-guard/status.json",
+    "results/primary-sources/status.json",
+    "results/projection-identities/status.json",
+    "results/projected-waves/status.json",
+    "results/physical-readout/status.json",
+    "results/thermalization-gate/status.json",
+    "results/consistent-basis/status.json",
+    "results/coherent36-over32/status.json",
+    "results/readout-quadrature36/status.json",
+    "results/band-precision-diagnostic/status.json",
+    "results/scaled-variable-identities/status.json",
+    "results/readout-scope/status.json",
+    "banks/basis28/status.json",
+    "banks/basis32/status.json",
+    "banks/basis36/status.json",
+    "waves/heavy28-3200/status.json",
+    "waves/cold28-3200/status.json",
+    "waves/heavy32-3200/status.json",
+    "waves/cold32-3200/status.json",
+    "waves/heavy36-3200/status.json",
+    "waves/cold36-3200/status.json",
+    "waves/heavy36-1600/status.json",
+    "waves/cold36-1600/status.json",
+    "waves/heavy36-6400/status.json",
+    "waves/cold36-6400/status.json"
+  ],
+  "accuracy_boundaries": [
+    "The numerical0.2-percent gate is a per-comparison criterion, not a rigorous accumulated error bar or omitted-physics bound.",
+    "The physical background remains the saved24-function trajectory; higher wave-basis resolution is not a refined background solution.",
+    "Readout transformations were tested independently; the entire metric was not re-evolved in a second gauge.",
+    "The chosen observer and baryon clock define a physical local question, not all observers' spectra or the observer past light cone.",
+    "The finite-k angular monopole is not a homogeneous chemical-potential distortion or an observed sky monopole.",
+    "Ideal bands are normalized comoving-frequency averages, not instrument bandpasses.",
+    "Soft double-Compton optical depths are omission diagnostics. Full emissivity, bremsstrahlung, perturbed sources and visibility still require evolution.",
+    "The current clock is baryon-number based and can survive photon production, but the old photon-number-conservation background projection must not be carried into an emitting model.",
+    "The scalar seed leaves some polarization sectors unexcited; no universal all-mode or nonlinear stability claim follows.",
+    "No new fit, empirical model preference or physical constant derivation is asserted."
+  ],
+  "conclusion": "The physical local readout and globally refined no-emission response establish roughly91-percent cancellation. One individual band's time-accuracy gate remains open and is not waived. Exact scaled-variable identities provide a concrete next implementation route; then incorporate sourced photon production and matched matter/metric exchange toward visibility transfer."
+}

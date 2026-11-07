@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\mts-slow-normal-form-20261107\run_normal.py", line 455, in <module>
+    main()
+    ~~~~^^
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\mts-slow-normal-form-20261107\run_normal.py", line 357, in main
+    write(model_root/(tag+"-normal-check.json"),normal_preflight)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\mts-slow-normal-form-20261107\common.py", line 66, in write
+    json.dump(value, stream, indent=2, allow_nan=False)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ollet\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 181, in dump
+    for chunk in iterable:
+                 ^^^^^^^^
+  File "C:\Users\ollet\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 435, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\ollet\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 409, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\ollet\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 442, in _iterencode
+    o = _default(o)
+  File "C:\Users\ollet\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 182, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bool is not JSON serializable

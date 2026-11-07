@@ -1,0 +1,75 @@
+{
+  "stage": 118,
+  "accepted_scope": "5265-node original-domain reconstruction and paired feedback with all72 frozen grid/refinement checks passing; eight preselected32-step physical photon/gas trajectories at50 and70 digits, with genuinely carried states and matched reset controls. Numerical results conditional on saved rates, source histories and interval seeds.",
+  "scientific_checks": 346,
+  "passing_scientific_checks": 335,
+  "expected_failed_by_packet": {
+    "consecutive-cold-m20-baseline": [
+      "Cast raw gas accumulated:baseline",
+      "Cast raw gas reset:baseline"
+    ],
+    "consecutive-cold-m20-mts": [
+      "Cast raw gas accumulated:join1",
+      "Cast raw gas reset:join1"
+    ],
+    "consecutive-heavy-m20-baseline": [
+      "Cast raw gas reset:baseline"
+    ],
+    "consecutive-heavy-m20-mts": [
+      "Cast raw gas reset:join1",
+      "Cast raw gas accumulated:join2"
+    ],
+    "feedback-m20-n5120": [
+      "Response:heavy:gas",
+      "Response:cold:gas"
+    ],
+    "feedback-m40-n5120": [
+      "Response:heavy:gas",
+      "Response:cold:gas"
+    ]
+  },
+  "failure_categories": {
+    "grid_one_percent": 0,
+    "high_precision_equations": 0,
+    "precision_agreement": 0,
+    "accumulated_gas_stress": 0,
+    "raw_gas_full_response": 4,
+    "cast_raw_gas_segments": 7
+  },
+  "frequency_nodes": [
+    1317,
+    2633,
+    5265
+  ],
+  "grid_target": 0.01,
+  "gas_grid_norm": "max difference over all2049 steps divided by finer full-history peak;not pointwise relative error",
+  "grid_checks": 72,
+  "grid_checks_passed": 72,
+  "precision_digits": [
+    50,
+    70
+  ],
+  "consecutive_segments": 8,
+  "steps_per_segment": 32,
+  "gas_accumulation_tolerance": 0.000001,
+  "gas_accumulation_normalization": "Each column's saved full-history peak response;not the background gas temperature",
+  "maximum_accumulated_gas_change_over_peak": 7.074333622991063e-10,
+  "maximum_accumulation_to_reset_peak_ratio": 3.1069203110421215,
+  "minimum_accumulation_to_reset_peak_ratio": 0.8875261033954965,
+  "raw_gas_gate": 1e-7,
+  "high_precision_equation_gate": 1e-35,
+  "high_precision_agreement_gate": 1e-25,
+  "full_history_high_precision": false,
+  "saved_binary64_physical_coefficients": true,
+  "initial_two_states_only_from_binary64": true,
+  "subsequent_states_carried_in_arbitrary_precision": true,
+  "baseline_and_both_mts_joins": true,
+  "both_backgrounds_and_windows": true,
+  "parent_history_rerun": false,
+  "physical_inputs_unchanged": true,
+  "prior_failures_preserved": true,
+  "extrapolation_promoted": false,
+  "pointwise_or_total_error_below_one_percent_claimed": false,
+  "next_target": "Refine the inner reconstruction time step on the5265-node grid while reusing the event banks, source histories, and paired response; compare the narrow-window late gas endpoint explicitly rather than only peak-normalized differences. Then separate remaining time-discretization uncertainty from matching-window dependence before interpreting the physical correction. No need to increase arithmetic precision solely on these segment results.",
+  "conclusion": "Final-radiation grid changes0.705-0.724percent, baseline peak-gas0.192-0.258percent and MTS peak-gas0.600-0.881percent. All72 grid checks pass. Accumulation versus reset is measurable (peak ratios0.888-3.107) but maximum gas difference is7.08e-10 of saved peak in the tested intervals. Both precisions pass coupled equations and agreement. Four raw full-response and seven cast segment gas flags remain. Narrow-window gas endpoint still changes about1.21percent relative to finer endpoint; window/time errors remain separate."
+}

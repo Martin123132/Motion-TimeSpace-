@@ -1,0 +1,126 @@
+{
+  "state": "complete",
+  "time_utc": "2026-10-05T19:03:19.581913+00:00",
+  "script_sha256": "4e628254108a105b3ac81a34f708deebddb220b4422713901f51dd6625a50e7f",
+  "input_hashes": {
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\near-circular-quadrupole-20261005\\sidebands.py": "b920123ca9accabf71a67ca4203aa1bfe147563345c135766bcf56d053a91456"
+  },
+  "checks": [
+    {
+      "name": "Darwin time Jacobian first variation",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "Darwin azimuth Jacobian first variation",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "coordinate-time phase wobble after inversion",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "no linear energy drift at fixed p",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "no linear angular drift at fixed p",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "polar reduced constant coefficient",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "polar reduced delta-prime coefficient",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "polar linear-velocity coefficient",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "delta-prime has no linear velocity term",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "signed first-sideband Fourier integral -1",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "signed first-sideband Fourier integral 1",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "no linear carrier change",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "higher sideband absent at linear order",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "radial-action susceptibility derivative",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "near-circular damping from action chain rule",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "Kepler quadrupole damping coefficient",
+      "residual": "0",
+      "passed": true
+    }
+  ],
+  "coefficient_arguments": [
+    "r",
+    "M",
+    "E",
+    "h",
+    "m",
+    "omega",
+    "Y"
+  ],
+  "coefficients_order": [
+    "a",
+    "c",
+    "d",
+    "partial_r_a_at_fixed_E_h",
+    "partial_r_c_at_fixed_E_h"
+  ],
+  "coefficients": {
+    "polar": [
+      "-4*pi*Y*(18*E**2*M**2*r**3 + 16*E**2*M*r**4 + 12*E**2*r**5 + 18*M**3*h**2*m**2 - 78*M**3*h**2 + 15*M**2*h**2*m**2*r - 37*M**2*h**2*r - 4*M*h**2*m**2*r**2 + 22*M*h**2*r**2 - 4*h**2*m**2*r**3 + 8*h**2*r**3)/(3*E*r**4*(3*M + 2*r)**2)",
+      "8*pi*E*Y*r/(3*(3*M + 2*r))",
+      "-16*pi*Y*h*m/(3*r*(3*M + 2*r))",
+      "4*pi*Y*(54*E**2*M**3*r**3 + 108*E**2*M**2*r**4 + 28*E**2*M*r**5 + 24*E**2*r**6 + 216*M**4*h**2*m**2 - 936*M**4*h**2 + 351*M**3*h**2*m**2*r - 1269*M**3*h**2*r + 126*M**2*h**2*m**2*r**2 - 238*M**2*h**2*r**2 - 44*M*h**2*m**2*r**3 + 200*M*h**2*r**3 - 24*h**2*m**2*r**4 + 48*h**2*r**4)/(3*E*r**5*(3*M + 2*r)**3)",
+      "8*pi*E*M*Y/(3*M + 2*r)**2"
+    ],
+    "odd": [
+      "-sqrt(30)*sqrt(pi)*h*(-2*M + r)/(3*r**3)",
+      "sqrt(30)*sqrt(pi)*h/(3*r)",
+      "-sqrt(30)*sqrt(pi)*h*omega/(3*(-2*M + r))",
+      "2*sqrt(30)*sqrt(pi)*h*(-3*M + r)/(3*r**4)",
+      "-sqrt(30)*sqrt(pi)*h/(3*r**2)"
+    ]
+  },
+  "phase_wobble": "2*sqrt(p)*(p - 3)*sqrt(1/(p - 6))/(p - 2)",
+  "action_coefficient": "M*p**(3/2)*sqrt(p - 6)/(sqrt(p - 3)*(2*p - 4))",
+  "newtonian_damping": "-608/(15*M**2*p**4)",
+  "domain": "p>6, M>0, stable circular exterior orbit, fixed p expansion"
+}

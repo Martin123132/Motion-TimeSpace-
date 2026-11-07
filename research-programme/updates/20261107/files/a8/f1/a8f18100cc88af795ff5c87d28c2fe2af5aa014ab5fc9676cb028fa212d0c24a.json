@@ -1,0 +1,60 @@
+{
+  "checks": [
+    {
+      "name": "Temperature and shape decomposition is exactly reconstructible",
+      "passed": true
+    },
+    {
+      "name": "Direct small-shape expression equals subtractive definition",
+      "passed": true
+    },
+    {
+      "name": "Scaled shape has the same number-free definition",
+      "passed": true
+    },
+    {
+      "name": "Complement carries no number moment",
+      "passed": true
+    },
+    {
+      "name": "Temperature projector annihilates only its template",
+      "passed": true
+    },
+    {
+      "name": "Projector is idempotent",
+      "passed": true
+    },
+    {
+      "name": "Combined photon-shape and gas-slip transform is invertible",
+      "passed": true
+    },
+    {
+      "name": "Transform determinant is chi squared times the thermal number moment",
+      "passed": true
+    }
+  ],
+  "count": 8,
+  "all_checks_passed": true,
+  "assumptions": [
+    "chi is nonzero; the Planck-only chi=0 control is handled separately",
+    "N q_T is nonzero"
+  ],
+  "determinant": "chi**2*(a + b*n)",
+  "unchanged_physical_degrees_of_freedom": true,
+  "evolution_not_yet_implemented_in_scaled_coordinates": true,
+  "equations": {
+    "split": "X=q_T theta+chi V y; t_gas=theta_0+chi eta",
+    "shape": "S=chi[P_T W-Theta_dist P_T q_1]",
+    "evolution": "M P z_prime=(L P-M P_prime)z; P_prime=0 for fixed q_T and chi"
+  },
+  "scope": "Exact change of variables and stable readout identity, not a new constitutive law or a repaired time-accuracy claim.",
+  "state": "complete",
+  "finished_utc": "2026-10-07T20:04:19.986767+00:00",
+  "script_sha256": "5f5315d01771bc4ff39672c2ebaf4d4cc99e849de1d9d77a08b27e460cee693e",
+  "input_hashes": {
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\observer-frequency-projection-20261007\\derive_scaled_variables.py": "5f5315d01771bc4ff39672c2ebaf4d4cc99e849de1d9d77a08b27e460cee693e",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\observer-frequency-projection-20261007\\observer_common.py": "c9a557cbbdc89e8404e2cc82d686fcc8a5d5dcb43c4d3eefc5854e9952054e7f",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\observer-frequency-projection-20261007\\ACCEPTANCE.md": "e8164f7b277c255ba7b573d28159406231441268925336d73c7b9bdb10f40abf",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\mixed-bath-transport-20261007\\results\\stage-integrity.json": "51efd172b27bf149e3069a3e86eb669aff809e9d7d0e665bc8babd9d7405b3db"
+  }
+}

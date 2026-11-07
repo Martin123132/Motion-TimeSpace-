@@ -1,0 +1,40 @@
+{
+  "accepted_scope": "Frozen, linearized physical polarized collision evolution through l=8 with finite sourced plasma heat and momentum; smooth parent warm-minus-elastic and synthetic-defect refinements on common finite frequency intervals; inherited linear gravity-constraint source interface at fixed density/geometry.",
+  "response_relative_gate": 0.002,
+  "accepted_split_suffixes": [
+    "split-256",
+    "split-384",
+    "split-384-refined",
+    "split-448-band"
+  ],
+  "required_accepted_packets": [
+    "results/angular-blocks/status.json",
+    "results/high-angular-blocks/status.json",
+    "results/continuum-limits/status.json",
+    "results/quadrature-repair/status.json",
+    "results/split-frequency/status.json",
+    "results/split-events/status.json",
+    "results/split-band/status.json",
+    "results/stress-interface/status.json",
+    "results/final-source-interface/status.json"
+  ],
+  "retained_unaccepted_accuracy_trials": {
+    "results/response-refinements/status.json": {
+      "reason": "Original incoming-cell-only quadrature and narrower bands fail the small thermal-response target, and the initial synthetic 96-to-144 intensity refinement fails. The raw packet remains unchanged; it is not production waveform-accuracy evidence.",
+      "superseded_by": [
+        "results/quadrature-repair/status.json",
+        "results/split-frequency/status.json",
+        "results/split-events/status.json",
+        "results/split-band/status.json"
+      ]
+    }
+  },
+  "unclaimed_scopes": [
+    "Uniform accuracy for arbitrary sharp spectral features",
+    "An infinite-domain infrared or ultraviolet error bound",
+    "Nonlinear nonequilibrium plasma thermodynamics",
+    "Full expanding spectral-plus-metric cosmological propagation",
+    "A new observational fit",
+    "A derivation of G, electron mass, or QED coupling from MTS"
+  ]
+}

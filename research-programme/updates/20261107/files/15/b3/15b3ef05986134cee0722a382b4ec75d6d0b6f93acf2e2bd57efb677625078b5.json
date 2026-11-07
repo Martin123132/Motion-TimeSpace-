@@ -1,0 +1,282 @@
+{
+  "state": "candidate_complete",
+  "cold_target": {
+    "speed_limit": 0.1,
+    "efold_span": 0.25,
+    "scale_start": 0.36273334952836184,
+    "scale_end": 0.46575884027469494,
+    "redshift_start": 1.7568460448983636,
+    "redshift_end": 1.1470338585741513,
+    "models": [
+      {
+        "model": "heavy",
+        "all_nodes_cold_scale": 0.36273334952836184,
+        "momentum_mass_ratio": [
+          0.0016353773559403388,
+          0.005608626663563893,
+          0.011217253327124258,
+          0.02037563596631765,
+          0.03645607331316409
+        ],
+        "velocity_map_error": 2.220446049250313e-16
+      },
+      {
+        "model": "cold",
+        "all_nodes_cold_scale": 0.362733349526632,
+        "momentum_mass_ratio": [
+          0.0016353773559403275,
+          0.005608626663563753,
+          0.011217253327125948,
+          0.02037563596635271,
+          0.036456073312990236
+        ],
+        "velocity_map_error": 2.220446049250313e-16
+      }
+    ],
+    "selection": "kinematics only, no GR/Poisson performance inspected"
+  },
+  "reports": [
+    {
+      "model": "heavy",
+      "controls": [
+        {
+          "label": "base",
+          "method": "DOP853",
+          "rtol": 2e-10,
+          "atol": 2e-12,
+          "nfev": 2357,
+          "elapsed_seconds": 2.17416999998386
+        },
+        {
+          "label": "fine",
+          "method": "DOP853",
+          "rtol": 2e-12,
+          "atol": 2e-14,
+          "nfev": 2531,
+          "elapsed_seconds": 2.504465200006962
+        },
+        {
+          "label": "independent",
+          "method": "RK45",
+          "rtol": 2e-11,
+          "atol": 1.9999999999999998e-13,
+          "nfev": 2468,
+          "elapsed_seconds": 2.2460710000013933
+        }
+      ],
+      "comparisons": [
+        {
+          "label": "base",
+          "quantity": "hubble",
+          "error": 3.8425308398613114e-18
+        },
+        {
+          "label": "base",
+          "quantity": "slow_coordinates",
+          "error": 5.440435962729066e-16
+        },
+        {
+          "label": "base",
+          "quantity": "clock",
+          "error": 7.148623235031061e-16
+        },
+        {
+          "label": "base",
+          "quantity": "slow_error_radius",
+          "error": 6.816424980629683e-11
+        },
+        {
+          "label": "base",
+          "quantity": "hubble_error",
+          "error": 7.243626848063832e-16
+        },
+        {
+          "label": "base",
+          "quantity": "clock_error",
+          "error": 3.27259263837004e-08
+        },
+        {
+          "label": "independent",
+          "quantity": "hubble",
+          "error": 7.177847608860931e-14
+        },
+        {
+          "label": "independent",
+          "quantity": "slow_coordinates",
+          "error": 2.275224680261481e-11
+        },
+        {
+          "label": "independent",
+          "quantity": "clock",
+          "error": 7.73302318449485e-13
+        },
+        {
+          "label": "independent",
+          "quantity": "slow_error_radius",
+          "error": 9.329947022173478e-12
+        },
+        {
+          "label": "independent",
+          "quantity": "hubble_error",
+          "error": 3.4824506365936673e-16
+        },
+        {
+          "label": "independent",
+          "quantity": "clock_error",
+          "error": 4.31943675339242e-09
+        }
+      ],
+      "cold_relative_uncertainty": {
+        "hubble": 7.259940689792255e-07,
+        "slow_energy_coordinates": 2.477098487777652e-07,
+        "clock": 1.8464022910821416e-06,
+        "heavy_log_density": 3.18368934896095e-06
+      },
+      "cold_uncertainty_gate_pass": true,
+      "replay": {
+        "points": 24685,
+        "nfev": 41894,
+        "slow_enclosure_relative_excess": 0.0,
+        "hubble_enclosure_relative_excess": -1.1280489350415367e-07,
+        "clock_enclosure_relative_excess": 0.0,
+        "legacy_hubble_relative_difference": 1.8351223936188026e-11,
+        "initial_fields_velocities_clock_preserved": true,
+        "reference_uses_same_repaired_thermal_source": true,
+        "invariant_drift_max": 8.165879924863523e-08,
+        "derived_drift_bound": 1.5593125561279916e-06,
+        "invariant_excess": 0.0
+      },
+      "thermal_source_qualified": true,
+      "phase_resolved_late_history": false,
+      "original_scattering_bank_changed": false
+    },
+    {
+      "model": "cold",
+      "controls": [
+        {
+          "label": "base",
+          "method": "DOP853",
+          "rtol": 2e-10,
+          "atol": 2e-12,
+          "nfev": 2342,
+          "elapsed_seconds": 2.1483285000140313
+        },
+        {
+          "label": "fine",
+          "method": "DOP853",
+          "rtol": 2e-12,
+          "atol": 2e-14,
+          "nfev": 2342,
+          "elapsed_seconds": 2.0079783000110183
+        },
+        {
+          "label": "independent",
+          "method": "RK45",
+          "rtol": 2e-11,
+          "atol": 1.9999999999999998e-13,
+          "nfev": 2462,
+          "elapsed_seconds": 2.1130237999896053
+        }
+      ],
+      "comparisons": [
+        {
+          "label": "base",
+          "quantity": "hubble",
+          "error": 0.0
+        },
+        {
+          "label": "base",
+          "quantity": "slow_coordinates",
+          "error": 0.0
+        },
+        {
+          "label": "base",
+          "quantity": "clock",
+          "error": 0.0
+        },
+        {
+          "label": "base",
+          "quantity": "slow_error_radius",
+          "error": 0.0
+        },
+        {
+          "label": "base",
+          "quantity": "hubble_error",
+          "error": 0.0
+        },
+        {
+          "label": "base",
+          "quantity": "clock_error",
+          "error": 0.0
+        },
+        {
+          "label": "independent",
+          "quantity": "hubble",
+          "error": 7.200133965334367e-14
+        },
+        {
+          "label": "independent",
+          "quantity": "slow_coordinates",
+          "error": 2.293080755911616e-11
+        },
+        {
+          "label": "independent",
+          "quantity": "clock",
+          "error": 7.766979981072427e-13
+        },
+        {
+          "label": "independent",
+          "quantity": "slow_error_radius",
+          "error": 0.0
+        },
+        {
+          "label": "independent",
+          "quantity": "hubble_error",
+          "error": 0.0
+        },
+        {
+          "label": "independent",
+          "quantity": "clock_error",
+          "error": 0.0
+        }
+      ],
+      "cold_relative_uncertainty": {
+        "hubble": 0.0,
+        "slow_energy_coordinates": 0.0,
+        "clock": 0.0,
+        "heavy_log_density": 0.0
+      },
+      "cold_uncertainty_gate_pass": true,
+      "replay": {
+        "points": 5402,
+        "nfev": 26777,
+        "slow_enclosure_relative_excess": 3.919036121086475e-15,
+        "hubble_enclosure_relative_excess": 0.0,
+        "clock_enclosure_relative_excess": 7.750890381655196e-16,
+        "legacy_hubble_relative_difference": 2.0914264152119156e-11,
+        "initial_fields_velocities_clock_preserved": true,
+        "reference_uses_same_repaired_thermal_source": true
+      },
+      "thermal_source_qualified": true,
+      "phase_resolved_late_history": false,
+      "original_scattering_bank_changed": false
+    }
+  ],
+  "handoff_eligible": true,
+  "original_inventory_pass": false,
+  "physical_ode_solves": 8,
+  "source_hashes": {
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-cold-background-extension-20261107\\common.py": "fc411b93ac139fde9ff0e1ca00927c042bca9e5bda6279d3c3e11ef44310cff2",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-cold-background-extension-20261107\\diagnose_density.py": "21e90b03acffb948e5040133ab71675cfbdb2d4707a33ba5c4f2c04f8f2ac21f",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-cold-background-extension-20261107\\extend.py": "4d6bd0a5a53222fd7581f991faaa93f2be1d588ae9166cbad45f2db0b371cd46",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-cold-background-extension-20261107\\inventory.py": "7dae1a7ab6ee4bca72e8a0a4709d9de5b3adb927f3fd42dc7a55e3bf81eb103a",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-cold-background-extension-20261107\\phase_math.py": "470b343dfa5093d42252dcadf90b55fde7f83116b8ee2c640439499b15d9d9cb",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-cold-background-extension-20261107\\PROTOCOL.md": "024b47fce0d7c9c441589f9cc00f937ae0f05e3c07bb51ec91962ece15241b17",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-cold-background-extension-20261107\\qualify_thermal.py": "77f5cac5bd69ab716824fe4a89dee2537161286dd1563dbdb99d03e8d3e31f8b",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-cold-background-extension-20261107\\run_candidate.ps1": "4933325596af0f55c21ac10e4c08f35e26d128334cef5a7bdb14ca294fe55e5b",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-cold-background-extension-20261107\\run_phase.ps1": "0777c825fc8e897dd734e1e54c3f9a6e4948b83b39245a79dfaa424ed994e634",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-cold-background-extension-20261107\\source_adapter.py": "f4f270557a329856a5f43916171eb1e7f9a8c6ac4b9016b9e5cdbd77911dbe32",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-cold-background-extension-20261107\\THERMAL-REPAIR-PROTOCOL.md": "7265f6c02c11f48d986196d7c4f8d3696ed64455ffac946a5718d39d75dfe16c",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\mts-cold-background-extension-20261107\\thermal_candidate.py": "627bdba88d0543fd9466de0a4fee41eeed16f32894a1fb922db9a04ad8e67b3a"
+  }
+}

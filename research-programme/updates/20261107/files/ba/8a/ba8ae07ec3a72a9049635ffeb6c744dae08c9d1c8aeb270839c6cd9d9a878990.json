@@ -1,0 +1,49 @@
+{
+  "accepted_scope": "Derived conservative ideal-plasma/radiation/canonical-field scalar stress in an expanding background, with a Planck-linearized physical finite-shift collision kernel, derived distorted-background redshift/density/boost terms, unprojected metric evolution and resolved paired angular-recoil transfer response for both retained parents. Full mixed polarized nonequilibrium collision evolution remains the next explicitly derived extension.",
+  "unchanged_numerical_response_gate": 0.002,
+  "retained_unaccepted_accuracy_trials": {
+    "banks/stable32-late/status.json": {
+      "reason": "The 32-function rational recurrence failed its pre-existing absolute pointwise re-evaluation gate. It is not used in the accepted production calculations. The accepted 16/24-function representations have independent parent-grid and expanding-response comparisons.",
+      "superseded_by": [
+        "results/compact16-comparison/status.json",
+        "results/compact24-comparison/status.json",
+        "results/expanding-refinements/status.json"
+      ]
+    },
+    "results/temperature-interpolation/status.json": {
+      "reason": "Six degree8 I/E hot-bath small-response probes failed event-order6-to8 refinement, with maximum relative error0.009340700429607742. Other midpoint, frequency and lower-angular checks passed. The successor refines degree8 at every temperature, checks event-order8-to10 and explicitly reruns both parents with that refined block. No tolerance was relaxed.",
+      "superseded_by": [
+        "results/high-degree-refinement/status.json"
+      ]
+    }
+  },
+  "required_accepted_packets": [
+    "results/start-guard/status.json",
+    "results/compact16-comparison/status.json",
+    "results/compact24-comparison/status.json",
+    "results/thermal-identities/status.json",
+    "results/expanding-background/status.json",
+    "results/expanding-refinements/status.json",
+    "results/paired-constraint-response/status.json",
+    "results/mixed-pair-coefficients/status.json",
+    "results/primary-source/status.json",
+    "results/high-degree-refinement/status.json",
+    "banks/high8-16-event8/status.json",
+    "banks/high8-24-event8/status.json",
+    "banks/high8-16-event10/status.json",
+    "paired/heavy24-high8-3200/status.json",
+    "paired/cold24-high8-3200/status.json",
+    "backgrounds/heavy24-3200/status.json",
+    "backgrounds/cold24-3200/status.json"
+  ],
+  "accuracy_boundaries": [
+    "The numerical0.2-percent gate is not a bound on omitted physical processes.",
+    "The 16-to24-function background spectrum comparison is near the numerical gate; the24-function background is the final authority.",
+    "The sampled scalar mixed-pair coefficient maximum is not a uniform operator bound or a propagated error bound.",
+    "The scalar seed does not excite every vector/tensor/B/V polarization channel.",
+    "The initial ultra-fast electron relaxation layer is implicit, not time-resolved.",
+    "The dust and matched-elastic controls serve different purposes; neither replaces the two retained calibrated parent models.",
+    "Early source-code initialization errors had no completed scientific packet; their available logs are retained. No failed completed accuracy packet is deleted."
+  ],
+  "observational_status": "No new likelihood, dataset fit, local-GR pass, or empirical preference is asserted by this stage."
+}

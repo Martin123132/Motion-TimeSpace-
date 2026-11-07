@@ -1,0 +1,272 @@
+{
+  "source_stage": 212,
+  "destination_stage": 213,
+  "physics_rules_changed": false,
+  "changes": [
+    {
+      "file": "operator213.py",
+      "before": "operator212.py",
+      "after": "operator213.py",
+      "count": 1
+    },
+    {
+      "file": "operator213.py",
+      "before": "assess212.py",
+      "after": "assess213.py",
+      "count": 1
+    },
+    {
+      "file": "operator213.py",
+      "before": "history-aware-lower-pair-temperature-test-20261025",
+      "after": "history-aware-upper-outer-temperature-test-20261025",
+      "count": 1
+    },
+    {
+      "file": "operator213.py",
+      "before": "e440aed8f214da154a298828ad8eeaef0ca8e768cd1e4665262d0a91f21b4bd0",
+      "after": "03003e31f54fdd6deb37b9d145ad5593f865100ebf088f03bdeac2d001501fc8",
+      "count": 1
+    },
+    {
+      "file": "operator213.py",
+      "before": "FREQUENCIES=[18.449187113596366,8.305352525943448]",
+      "after": "FREQUENCIES=[19.694647474056552]",
+      "count": 1
+    },
+    {
+      "file": "operator213.py",
+      "before": "parent['nodes_and_four_frequency_qualified']",
+      "after": "parent['nodes_and_six_frequency_qualified']",
+      "count": 1
+    },
+    {
+      "file": "operator213.py",
+      "before": "results/source-sum-4.npz",
+      "after": "results/source-sum-6.npz",
+      "count": 1
+    },
+    {
+      "file": "operator213.py",
+      "before": "stage=212",
+      "after": "stage=213",
+      "count": 1
+    },
+    {
+      "file": "operator213.py",
+      "before": "2026-10-25T10:22:00+00:00",
+      "after": "2026-10-25T14:03:01+00:00",
+      "count": 1
+    },
+    {
+      "file": "operator213.py",
+      "before": "2026-10-25T14:00:00+00:00",
+      "after": "2026-10-25T17:40:00+00:00",
+      "count": 1
+    },
+    {
+      "file": "operator213.py",
+      "before": "progress: Stage211 lower nodes and four-frequency sum qualified",
+      "after": "progress: Stage212 upper/outer nodes and six-frequency sum qualified",
+      "count": 1
+    },
+    {
+      "file": "operator213.py",
+      "before": "ordinal+5",
+      "after": "ordinal+7",
+      "count": 1
+    },
+    {
+      "file": "operator213.py",
+      "before": "216",
+      "after": "108",
+      "count": 3
+    },
+    {
+      "file": "operator213.py",
+      "before": "72",
+      "after": "36",
+      "count": 3
+    },
+    {
+      "file": "operator213.py",
+      "before": "    cold_roots={foundation.prior.leaf_frequency(path):path.parent.parent for path in foundation.prior.LEAVES}",
+      "after": "    cold_paths=(*foundation.prior.LEAVES,foundation.PARENT/'results/neighbour-source.npz')\n    cold_roots={foundation.prior.leaf_frequency(path):path.parent.parent for path in cold_paths}",
+      "count": 1
+    },
+    {
+      "file": "operator213.py",
+      "before": "    panel=parent_config['original_panel']",
+      "after": "    reference_paths=[\n        BRANCH/'history-aware-operator-temperature-test-20261025/results/source-node.npz',\n        BRANCH/'history-aware-neighbour-temperature-test-20261025/results/source-node.npz',\n        BRANCH/'history-aware-lower-pair-temperature-test-20261025/results/source-node-2.npz',\n        BRANCH/'history-aware-lower-pair-temperature-test-20261025/results/source-node-1.npz',\n        PARENT/'results/source-node-5.npz',\n        PARENT/'results/source-node-0.npz']\n    reference_leaves=[]\n    replay={'actual':[],'predicted':[]}\n    for path in reference_paths:\n        assert str(path) in inputs and digest(path)==inputs[str(path)]\n        values=packet(path)\n        frequencies=np.atleast_1d(values['frequencies'] if 'frequencies' in values else values['frequency'])\n        assert frequencies.shape==(1,) and float(values['theta'])==theta\n        assert np.array_equal(values['components'],reference['components'])\n        coefficients=path.parent.parent/'frozen/history-coefficients.npz'\n        assert digest(coefficients)==digest(ROOT/'frozen/history-coefficients.npz')\n        saved.register(inputs,coefficients)\n        reference_leaves.append(dict(path=str(path),sha256=digest(path),frequency=float(frequencies[0]),\n                                     coefficients_path=str(coefficients),coefficients_sha256=digest(coefficients)))\n        for label in replay:\n            replay[label].append((values[label+'_high'],values[label+'_low']))\n    assert [row['frequency'] for row in reference_leaves]==parent_config['coverage']\n    factor=linear.cholesky(original.basis.mass,lower=True)\n    for label,pairs in replay.items():\n        combined=metrics.primitives(pairs)\n        expected=(reference[label+'_high'],reference[label+'_low'])\n        error=metrics.subtract(combined,expected)\n        for name,measure in [('photon',lambda values:metrics.norms(values,factor)),('gas',lambda values:abs(values[...,-1,:]))]:\n            relative=measure(error[0][:2]+error[1][:2])/np.maximum(measure(expected[0][:2]+expected[1][:2]),1e-300)\n            check(rows,label+':six independent leaves replay '+name,relative.max(),1e-10,'identity')\n    panel=parent_config['original_panel']",
+      "count": 1
+    },
+    {
+      "file": "operator213.py",
+      "before": "    check(rows,'original quadrature weight sum',sum(row['seed_weight'] for row in panel)-12,1e-13,'identity')",
+      "after": "    assert sorted(parent_config['coverage']+FREQUENCIES)==[row['frequency'] for row in panel]\n    check(rows,'original quadrature weight sum',sum(row['seed_weight'] for row in panel)-12,1e-13,'identity')",
+      "count": 1
+    },
+    {
+      "file": "operator213.py",
+      "before": "                reference_source_path=str(reference_path),reference_source_sha256=digest(reference_path),",
+      "after": "                reference_source_path=str(reference_path),reference_source_sha256=digest(reference_path),reference_leaves=reference_leaves,",
+      "count": 1
+    },
+    {
+      "file": "assess213.py",
+      "before": "from operator212 import *",
+      "after": "from operator213 import *",
+      "count": 1
+    },
+    {
+      "file": "assess213.py",
+      "before": "ordinal+5",
+      "after": "ordinal+7",
+      "count": 2
+    },
+    {
+      "file": "assess213.py",
+      "before": "six-frequency regroup",
+      "after": "seven-frequency grouped regroup",
+      "count": 1
+    },
+    {
+      "file": "assess213.py",
+      "before": "saved four-node source plus two nodes",
+      "after": "saved six-node source plus final node",
+      "count": 1
+    },
+    {
+      "file": "assess213.py",
+      "before": "stage=212",
+      "after": "stage=213",
+      "count": 1
+    },
+    {
+      "file": "assess213.py",
+      "before": "nodes_and_six_frequency_qualified",
+      "after": "nodes_and_seven_frequency_qualified",
+      "count": 1
+    },
+    {
+      "file": "assess213.py",
+      "before": "anchor_events=216",
+      "after": "anchor_events=108",
+      "count": 1
+    },
+    {
+      "file": "assess213.py",
+      "before": "direct_events=72",
+      "after": "direct_events=36",
+      "count": 1
+    },
+    {
+      "file": "assess213.py",
+      "before": "reused_target_events=144",
+      "after": "reused_target_events=216",
+      "count": 1
+    },
+    {
+      "file": "assess213.py",
+      "before": "anchor_events_complete=216,target_events_complete=72",
+      "after": "anchor_events_complete=108,target_events_complete=36",
+      "count": 1
+    },
+    {
+      "file": "assess213.py",
+      "before": "full_band=False",
+      "after": "full_band=not failed,full_original_8_20_panel_qualified=not failed,all_frequency_bands_qualified=False,uniform_temperature_qualified=False",
+      "count": 1
+    },
+    {
+      "file": "assess213.py",
+      "before": "    failed=[entry for entry in checks if not entry['passed']]",
+      "after": "    individual={'actual':[],'predicted':[]}\n    frequencies=[]\n    for entry in config['reference_leaves']:\n        assert digest(entry['path'])==entry['sha256']\n        values=packet(entry['path'])\n        frequencies.append(entry['frequency'])\n        for label in individual:\n            individual[label].append((values[label+'_high'],values[label+'_low']))\n    for frequency_index,values in nodes.items():\n        frequency=next(row['frequency'] for row in config['target'] if row['frequency_index']==frequency_index)\n        frequencies.append(frequency)\n        for label in individual:\n            individual[label].append(values[label])\n    assert len(frequencies)==7 and sorted(frequencies)==[row['frequency'] for row in config['original_panel']]\n    check(checks,'full seven-node coverage',0,0,'integrity')\n    check(checks,'full original weight sum',sum(row['seed_weight'] for row in config['original_panel'])-12,1e-13,'identity')\n    for label,leaves in individual.items():\n        total=metrics.primitives(leaves)\n        aggregate=cumulative_actual if label=='actual' else cumulative_prediction\n        error=metrics.subtract(total,aggregate)\n        for name,measure in measurements:\n            relative=measure(error[0][:2]+error[1][:2])/np.maximum(measure(aggregate[0][:2]+aggregate[1][:2]),1e-300)\n            check(checks,label+':all seven individual leaves '+name,relative.max(),1e-10,'identity')\n            ratio=sum(measure(pair[0][:2]+pair[1][:2]) for pair in leaves)/np.maximum(measure(aggregate[0][:2]+aggregate[1][:2]),1e-300)\n            cancellation.append(dict(source=label,measure=name,max_factor=float(ratio.max()),grouping='seven individual source leaves'))\n    failed=[entry for entry in checks if not entry['passed']]",
+      "count": 1
+    },
+    {
+      "file": "finish213.py",
+      "before": "from operator212 import *",
+      "after": "from operator213 import *",
+      "count": 1
+    },
+    {
+      "file": "finish213.py",
+      "before": "results/source-sum-6.npz",
+      "after": "results/source-sum-7.npz",
+      "count": 1
+    },
+    {
+      "file": "finish213.py",
+      "before": "100-digit six-node sum",
+      "after": "100-digit seven-node sum",
+      "count": 1
+    },
+    {
+      "file": "finish213.py",
+      "before": "stage=212",
+      "after": "stage=213",
+      "count": 2
+    },
+    {
+      "file": "finish213.py",
+      "before": "nodes_and_six_frequency_qualified",
+      "after": "nodes_and_seven_frequency_qualified",
+      "count": 2
+    },
+    {
+      "file": "finish213.py",
+      "before": "216",
+      "after": "108",
+      "count": 4
+    },
+    {
+      "file": "finish213.py",
+      "before": "72",
+      "after": "36",
+      "count": 4
+    },
+    {
+      "file": "finish213.py",
+      "before": "reused_target_events=144",
+      "after": "reused_target_events=216",
+      "count": 1
+    },
+    {
+      "file": "finish213.py",
+      "before": "decimal_sample_max=max(sample_errors),permission_to_propagate=False,full_band=False)",
+      "after": "decimal_sample_max=max(sample_errors),permission_to_propagate=False,full_band=assessment['full_band'],\n                full_original_8_20_panel_qualified=assessment['full_original_8_20_panel_qualified'],all_frequency_bands_qualified=False,uniform_temperature_qualified=False)",
+      "count": 1
+    },
+    {
+      "file": "finish213.py",
+      "before": "nodes_and_seven_frequency_qualified=validation['qualified'],full_band=False,",
+      "after": "nodes_and_seven_frequency_qualified=validation['qualified'],full_band=validation['full_band'],",
+      "count": 1
+    },
+    {
+      "file": "finish213.py",
+      "before": "          full_band=False,permission_to_propagate=False,parent_seal_path=",
+      "after": "          full_band=validation['full_band'],full_original_8_20_panel_qualified=validation['full_original_8_20_panel_qualified'],\n          all_frequency_bands_qualified=False,uniform_temperature_qualified=False,permission_to_propagate=False,parent_seal_path=",
+      "count": 1
+    },
+    {
+      "file": "run213.ps1",
+      "before": "operator212.py",
+      "after": "operator213.py",
+      "count": 2
+    },
+    {
+      "file": "run213.ps1",
+      "before": "assess212.py",
+      "after": "assess213.py",
+      "count": 1
+    },
+    {
+      "file": "run213.ps1",
+      "before": "{216} else {72}",
+      "after": "{108} else {36}",
+      "count": 1
+    }
+  ]
+}
+

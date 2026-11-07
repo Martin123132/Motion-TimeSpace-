@@ -1,0 +1,490 @@
+{
+  "stage": 228,
+  "state": "complete",
+  "finished_at": "2026-10-26T17:39:15.678260+00:00",
+  "symbolic": {
+    "heat_series": "-15*theta**3/8 + 15*theta**2/8 + 3*theta/2",
+    "capacity_series": "-45*theta**2/8 + 15*theta/4 + 3/2"
+  },
+  "moment_checks": [
+    {
+      "theta": 4.5962015785263326e-05,
+      "energy_over_kBT": 1.5000861748187493,
+      "capacity_over_kB": 1.500172345676753
+    },
+    {
+      "theta": 0.00014534465573404461,
+      "energy_over_kBT": 1.500272481623236,
+      "capacity_over_kB": 1.5005449236434463
+    },
+    {
+      "theta": 0.00045962015785263325,
+      "energy_over_kBT": 1.5008613918033984,
+      "capacity_over_kB": 1.5017223877167516
+    },
+    {
+      "theta": 0.03,
+      "energy_over_kBT": 1.5545919536373212,
+      "capacity_over_kB": 1.607556142776649
+    }
+  ],
+  "models": [
+    {
+      "model": "heavy",
+      "heat": 5.755472902372619e-10,
+      "theta_start": 0.00045962015785263325,
+      "theta_end": 4.596201578526331e-05,
+      "electron_fraction": 0.5182728362073015,
+      "particle_fractions": [
+        0.5182728362073015,
+        0.44518149137809543,
+        0.036545672414603034
+      ],
+      "constants": {
+        "k_B": 1.380649e-23,
+        "m_e": 9.1093837015e-31,
+        "c": 299792458.0,
+        "G": 6.6743e-11,
+        "sigma_thomson": 6.6524587321e-29,
+        "Mpc": 3.085677581e+22,
+        "m_H": 1.673575e-27,
+        "m_He4": 6.646479073e-27
+      },
+      "T0": 2.7255,
+      "YHe": 0.24586402094786372,
+      "leading_D0": 0.00029776080348541475,
+      "exact_initial_D": 0.0002976239820204703,
+      "final_density_correction": 3.254955744086161e-13,
+      "final_pressure_correction": 1.0278627323554977e-13,
+      "initial_density_correction": 1.7129667636150527e-13,
+      "final_photon_energy_correction": 3.083588197066493e-13,
+      "maximum_fractional_heat_capacity_change": 0.0005951111780061579,
+      "maximum_capacity_density": 6.272066727923334e-19,
+      "eos_to_capacity_density_ratio": 518960.63694524317,
+      "prescribed_lag_relative_change": 2.808484214399223e-10,
+      "conditional_ion_extension_relative_change": 0.0004773808817598436,
+      "work_roundoff_density_allowance": 2.120511987161922e-23,
+      "energy_roundoff_density_allowance": 1.2012934043582085e-23,
+      "saved_lag_maximum": 1.0770474474069374e-09,
+      "literal_frozen_photons_continuity_defect_scale": 3.42514625891349e-13
+    },
+    {
+      "model": "cold",
+      "heat": 5.755472902372864e-10,
+      "theta_start": 0.00045962015785263325,
+      "theta_end": 4.596201578526331e-05,
+      "electron_fraction": 0.5182728362073015,
+      "particle_fractions": [
+        0.5182728362073015,
+        0.44518149137809543,
+        0.036545672414603034
+      ],
+      "constants": {
+        "k_B": 1.380649e-23,
+        "m_e": 9.1093837015e-31,
+        "c": 299792458.0,
+        "G": 6.6743e-11,
+        "sigma_thomson": 6.6524587321e-29,
+        "Mpc": 3.085677581e+22,
+        "m_H": 1.673575e-27,
+        "m_He4": 6.646479073e-27
+      },
+      "T0": 2.7255,
+      "YHe": 0.24586402094786372,
+      "leading_D0": 0.00029776080348541475,
+      "exact_initial_D": 0.0002976239820204703,
+      "final_density_correction": 3.2549557440863e-13,
+      "final_pressure_correction": 1.0278627323555416e-13,
+      "initial_density_correction": 1.7129667636151254e-13,
+      "final_photon_energy_correction": 3.083588197066625e-13,
+      "maximum_fractional_heat_capacity_change": 0.0005951111780061579,
+      "maximum_capacity_density": 6.272070177507812e-19,
+      "eos_to_capacity_density_ratio": 518960.351521393,
+      "prescribed_lag_relative_change": 2.8086424249676694e-10,
+      "conditional_ion_extension_relative_change": 0.00047738088175966817,
+      "work_roundoff_density_allowance": 1.91810015431931e-23,
+      "energy_roundoff_density_allowance": 1.2268528384935417e-23,
+      "saved_lag_maximum": 1.0772883856799731e-09,
+      "literal_frozen_photons_continuity_defect_scale": 3.425146258913636e-13
+    }
+  ],
+  "checks": [
+    {
+      "name": "Bessel expansion derives electron heat coefficients",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Leading combined stress conservation",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Initial excess heat retained",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Initial excess photon energy and pressure zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Exact mixture homogeneous first law",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Perturbed temperature equation from particle first law",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Perturbed gas equation recovers Stage75",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Independent integral/Bessel excess heat theta=4.5962015785263326e-05",
+      "value": -1.4072673663526707e-53,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Independent integral/Bessel capacity theta=4.5962015785263326e-05",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Moments32/Bessel excess heat theta=4.5962015785263326e-05",
+      "value": -5.1533524096144754e-11,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Moments32/Bessel heat capacity theta=4.5962015785263326e-05",
+      "value": -4.440892098500626e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Radial order32/48 excess heat theta=4.5962015785263326e-05",
+      "value": -8.245363855383161e-11,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Pressure integration by parts theta=4.5962015785263326e-05",
+      "value": -2.886579864025407e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Actual retained electron measure theta=4.5962015785263326e-05",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Independent integral/Bessel excess heat theta=0.00014534465573404461",
+      "value": 4.145150265614459e-55,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Independent integral/Bessel capacity theta=0.00014534465573404461",
+      "value": 1.5557538194652854e-61,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Moments32/Bessel excess heat theta=0.00014534465573404461",
+      "value": -1.5483053291713078e-11,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Moments32/Bessel heat capacity theta=0.00014534465573404461",
+      "value": -3.3306690738754696e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Radial order32/48 excess heat theta=0.00014534465573404461",
+      "value": -2.6076721333411498e-11,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Pressure integration by parts theta=0.00014534465573404461",
+      "value": -2.9976021664879227e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Actual retained electron measure theta=0.00014534465573404461",
+      "value": -1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Independent integral/Bessel excess heat theta=0.00045962015785263325",
+      "value": -1.993926816941421e-55,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Independent integral/Bessel capacity theta=0.00045962015785263325",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Moments32/Bessel excess heat theta=0.00045962015785263325",
+      "value": -5.1554845088843874e-12,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Moments32/Bessel heat capacity theta=0.00045962015785263325",
+      "value": -3.3306690738754696e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Radial order32/48 excess heat theta=0.00045962015785263325",
+      "value": -8.506549439659239e-12,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Pressure integration by parts theta=0.00045962015785263325",
+      "value": -2.886579864025407e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Actual retained electron measure theta=0.00045962015785263325",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Independent integral/Bessel excess heat theta=0.03",
+      "value": 8.549357821855153e-60,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Independent integral/Bessel capacity theta=0.03",
+      "value": 1.5557538194652854e-61,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Moments32/Bessel excess heat theta=0.03",
+      "value": -7.727965776061598e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Moments32/Bessel heat capacity theta=0.03",
+      "value": -2.220446049250313e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Radial order32/48 excess heat theta=0.03",
+      "value": -1.342225634789646e-13,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Pressure integration by parts theta=0.03",
+      "value": -2.7755575615628914e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Actual retained electron measure theta=0.03",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Independent small-temperature coefficient 15/8",
+      "value": -9.999999994375e-10,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "heavy: full history radial refinement excess energy",
+      "value": 9.537733178310072e-12,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "heavy: capacity positive",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "heavy: pressure positive",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "heavy: asymptotic density against exact electron EOS",
+      "value": 0.00036169586301866173,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy: asymptotic pressure against exact electron EOS",
+      "value": 0.00037924242375343605,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy: original work reconstructed from gas recurrence",
+      "value": 3.6843401456859753e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "heavy: original total energy balance",
+      "value": 2.0872192862952943e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "heavy: capacity recurrence versus linear-history integral",
+      "value": 3.135677038851524e-07,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "heavy: derived completed stress continuity",
+      "value": 1.0,
+      "limit": 1e-10,
+      "passed": false
+    },
+    {
+      "name": "heavy: independent capacity-source integral",
+      "value": 5.819726180611263e-12,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "heavy: initial excess heat in source",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "heavy: initial photon correction zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "cold: full history radial refinement excess energy",
+      "value": 9.537733178310072e-12,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "cold: capacity positive",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "cold: pressure positive",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "cold: asymptotic density against exact electron EOS",
+      "value": 0.00036169586301864633,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold: asymptotic pressure against exact electron EOS",
+      "value": 0.00037924242375329706,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold: original work reconstructed from gas recurrence",
+      "value": 3.332654304615901e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "cold: original total energy balance",
+      "value": 2.1316282072803006e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "cold: capacity recurrence versus linear-history integral",
+      "value": 3.1383398264967506e-07,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "cold: derived completed stress continuity",
+      "value": 1.0,
+      "limit": 1e-10,
+      "passed": false
+    },
+    {
+      "name": "cold: independent capacity-source integral",
+      "value": 5.8195624522053145e-12,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "cold: initial excess heat in source",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "cold: initial photon correction zero",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    }
+  ],
+  "failed": [
+    {
+      "name": "heavy: derived completed stress continuity",
+      "value": 1.0,
+      "limit": 1e-10,
+      "passed": false
+    },
+    {
+      "name": "cold: derived completed stress continuity",
+      "value": 1.0,
+      "limit": 1e-10,
+      "passed": false
+    }
+  ],
+  "qualified": false,
+  "inputs_rehashed": 98,
+  "scope": "Electron-derived EOS and conserved leading thermal source; saved-lag and ion variants are diagnostics"
+}

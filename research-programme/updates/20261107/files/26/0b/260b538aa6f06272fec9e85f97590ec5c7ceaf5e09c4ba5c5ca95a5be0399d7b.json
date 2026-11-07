@@ -1,0 +1,476 @@
+{
+  "state": "complete",
+  "sealed_at_utc": "2026-10-08T05:32:03.380315+00:00",
+  "file_hashes": {
+    "ACCEPTANCE.md": "20566126fc0b5bd0c6af333fedd04d37a5f59b3d3b10e049d7497f1333d367a2",
+    "ACCURACY-REVIEW.json": "1ba354240e021d65fd5e53da52cf0054122812bec4ba1f2c043b029c03f9562e",
+    "DERIVATION.md": "5f1ccd2817f2b28d16345d5f26eaf14707e86309b9ec661b5747b54de279adf7",
+    "RESULTS.md": "fef70191ea1dea016e261c3b526dacfb721b4efbba7c8701597b2681451c6ed8",
+    "RESUME.md": "95866fb4da6ee96ff15d0ab7b0742989e6ef9ba6102faab6137cab37941e82e2",
+    "SOURCES.md": "75c48b86fda87d0ac08702b653c4d7df218ca430ba4805ef8fd79aff51035376",
+    "build_nonlocal_bank.py": "f136db52f1f8e3b803f5dc36a4ba427d08a253bc91b9c45793eb13bce921e174",
+    "compare_nonlocal_histories.py": "adb03b571739838170bacf1bab1cddfaa2735f070dafa56cab0e9a2e6bf415f1",
+    "correct_plasma_scale.py": "2f935571529ed50c1f07f4aa8ef1861cc21944b0af812e11cb6e75ea6730cfc7",
+    "evolve_nonlocal_background.py": "bbe7322e1dfcf29e3ab9384c2afa9e4c0c184162a5c560a55462b2277c197382",
+    "inspect_infrared_state.py": "860640e60aadfec46295a00e34b72eab2ce1fb7ee48367f7906307a3a3d99cdc",
+    "nonlocal_common.py": "51312daa57647a91a9a7c7861c61f1626a0ecaaf43d49887f0624858e0e421b2",
+    "nonlocal_dc.py": "24a584fd47a35888bb3305b0b9a7a4a6d4647752f7a17399368b10db3ea30d9f",
+    "seal_stage.py": "81c80305f389a709491e520a985ce372047f17ec8fa4cb027d024a98e807b06f",
+    "soft_compton_moments.py": "7cff3658b6596ebc4386d298fce719468a6ceeb74900666462dac93bddcee722",
+    "validate_stage.py": "25d1620ff60b5f1b554e7c3175b6773f35bb0d7234dede07824d4ea53a44720d",
+    "verify_gould_limit.py": "e233f78ebcf74f1aa2b5dec3677998de77b8c48a90011692ece84abb6ee626a7",
+    "backgrounds/cold-local-derived-6400/COMPLETE": "5963977da4c2cb333a978aa0daa86f36234831cd8bc416443ca9087268bc8645",
+    "backgrounds/cold-local-derived-6400/history.npz": "b9be712d99315587b6bfa778316cb1026cbceae295851b7ce9d6e6e23a1a7919",
+    "backgrounds/cold-local-derived-6400/status.json": "5b84041fef54620068f1c72ca59e47110bfec0eb83cf2e386dba4d187b970822",
+    "backgrounds/cold-local-leading-3200/COMPLETE": "5963977da4c2cb333a978aa0daa86f36234831cd8bc416443ca9087268bc8645",
+    "backgrounds/cold-local-leading-3200/history.npz": "4194fffc2ba2c64c17feab8a3895781cb598a8db4e11c88afc549c84b6f49dde",
+    "backgrounds/cold-local-leading-3200/status.json": "dac7125413e8308380cd9b4be4015723d564410c8d8508d176acbb799d3ffd74",
+    "backgrounds/cold-local-leading-6400/COMPLETE": "5963977da4c2cb333a978aa0daa86f36234831cd8bc416443ca9087268bc8645",
+    "backgrounds/cold-local-leading-6400/history.npz": "77d5908c95af8a9bb4cd5fa260aade7a58fb560354eadac2ddb5f2729e62922c",
+    "backgrounds/cold-local-leading-6400/status.json": "8f26a6ce5703c306e29db7b863e68a40d4e13f372b119d18b8d685d3d5dec269",
+    "backgrounds/cold-nonlocal-leading-3200/COMPLETE": "5963977da4c2cb333a978aa0daa86f36234831cd8bc416443ca9087268bc8645",
+    "backgrounds/cold-nonlocal-leading-3200/history.npz": "436e38949b943fe35aed5085bc79a5cd9183bf83063661cedfce470d840f3431",
+    "backgrounds/cold-nonlocal-leading-3200/status.json": "6253f01fa686fb8aa6ac0673269ad459e063a25e3a4a906ca976c35e3e8b992d",
+    "backgrounds/cold-nonlocal-leading-6400/COMPLETE": "5963977da4c2cb333a978aa0daa86f36234831cd8bc416443ca9087268bc8645",
+    "backgrounds/cold-nonlocal-leading-6400/history.npz": "269681cb9933fddb82279b16375c0b35d194b876440a992cdce3fb05dd2a193e",
+    "backgrounds/cold-nonlocal-leading-6400/status.json": "9342b02d6644993da1641aa8318f99d5b3152fa562adddac5def20153fce453f",
+    "backgrounds/cold-nonlocal-refined-6400/COMPLETE": "5963977da4c2cb333a978aa0daa86f36234831cd8bc416443ca9087268bc8645",
+    "backgrounds/cold-nonlocal-refined-6400/history.npz": "936649177ed7fc001e94f0ab59cb9e5088548c9a9afd723c32e925ccf7e2f7df",
+    "backgrounds/cold-nonlocal-refined-6400/status.json": "0ea566c1a14de85e7f0d1e3b7d451130c155877e458d3fc37b50424172d878e6",
+    "backgrounds/cold-nonlocal-soft-gaunt-6400/COMPLETE": "5963977da4c2cb333a978aa0daa86f36234831cd8bc416443ca9087268bc8645",
+    "backgrounds/cold-nonlocal-soft-gaunt-6400/history.npz": "b590c7ce9d264b654a9f89957814d17bb87da5ceb86b2285f97d66cb137a8cfc",
+    "backgrounds/cold-nonlocal-soft-gaunt-6400/status.json": "77a7b0953e25e959fc41690776efcbe10f10bfd326c1317a9abfdb45eacdfcea",
+    "backgrounds/heavy-local-derived-6400/COMPLETE": "5963977da4c2cb333a978aa0daa86f36234831cd8bc416443ca9087268bc8645",
+    "backgrounds/heavy-local-derived-6400/history.npz": "6fdbad995dcd0827b25b7a05cd35acd8cbb8bab08060e3993b55b4b84db69bb2",
+    "backgrounds/heavy-local-derived-6400/status.json": "dbf21bf22088ab22f109a71b0fc2843073e1997f2ee0f1dfff61e82b5e21253b",
+    "backgrounds/heavy-local-leading-3200/COMPLETE": "5963977da4c2cb333a978aa0daa86f36234831cd8bc416443ca9087268bc8645",
+    "backgrounds/heavy-local-leading-3200/history.npz": "ace2d623dfc599054abf9556bd15e8b5d4d2164c533d810993ca655b2aadc527",
+    "backgrounds/heavy-local-leading-3200/status.json": "0d0cc52a6b75f596f46132890dce089c6e5ee53f58f55c136defabcf1b2b62c6",
+    "backgrounds/heavy-local-leading-6400/COMPLETE": "5963977da4c2cb333a978aa0daa86f36234831cd8bc416443ca9087268bc8645",
+    "backgrounds/heavy-local-leading-6400/history.npz": "65c482d73e26e32e4945764458d6826f0ba90d08ee00d5d6f2f0f9204cc2874c",
+    "backgrounds/heavy-local-leading-6400/status.json": "c44ba78f0062ff99aaa8892337b1972dca1be6851474de7db67e5779d5eddbc6",
+    "backgrounds/heavy-nonlocal-leading-3200/COMPLETE": "5963977da4c2cb333a978aa0daa86f36234831cd8bc416443ca9087268bc8645",
+    "backgrounds/heavy-nonlocal-leading-3200/history.npz": "73db5d78ef647459662c260fe2ce7e62ae091fa1941363275aca38f2a76cfcb5",
+    "backgrounds/heavy-nonlocal-leading-3200/status.json": "c8dbbb9d2436ec32d0c75c0aee9a2cfca408211876e469ee0f1e69390364a9f9",
+    "backgrounds/heavy-nonlocal-leading-6400/COMPLETE": "5963977da4c2cb333a978aa0daa86f36234831cd8bc416443ca9087268bc8645",
+    "backgrounds/heavy-nonlocal-leading-6400/history.npz": "2071b9d6345cb8286b16ecd37289e80c737299d82f14021bd59c0bc7e5dcf5a9",
+    "backgrounds/heavy-nonlocal-leading-6400/status.json": "c176da44dd34538a5e9fb3b2f4007d23aa66e87878c64f1a70e16481bc784927",
+    "backgrounds/heavy-nonlocal-refined-6400/COMPLETE": "5963977da4c2cb333a978aa0daa86f36234831cd8bc416443ca9087268bc8645",
+    "backgrounds/heavy-nonlocal-refined-6400/history.npz": "fab3c970c94cd5e47e01c29574766fbe76fcebfc2b2db71f3b644cc06bf25fef",
+    "backgrounds/heavy-nonlocal-refined-6400/status.json": "6274b8900a60cdd6908c2c78ee513385718c126eeb1f4e2395d9a5fd679f82b0",
+    "backgrounds/heavy-nonlocal-soft-gaunt-6400/COMPLETE": "5963977da4c2cb333a978aa0daa86f36234831cd8bc416443ca9087268bc8645",
+    "backgrounds/heavy-nonlocal-soft-gaunt-6400/history.npz": "ad51949cc952433a1c875a966e20b5d5efc5e3af628a6c78aa4057fb8efed7b2",
+    "backgrounds/heavy-nonlocal-soft-gaunt-6400/status.json": "2f0d3033cb55ba26dd5d2094cac8e80564b631a9a13fb221209bea8a69aaa1b5",
+    "banks/s450-i96/COMPLETE": "5963977da4c2cb333a978aa0daa86f36234831cd8bc416443ca9087268bc8645",
+    "banks/s450-i96/matrix.npz": "fea09cd0b39a7f1045477398f090bdc63f6d2a0ff9e2cdb287b9e7470dc6ba08",
+    "banks/s450-i96/status.json": "36f9145074ec01d8f0ae87439cb5c312f6c9285866dc7c9248d6b4ffdedb8445",
+    "banks/s700-i160/COMPLETE": "5963977da4c2cb333a978aa0daa86f36234831cd8bc416443ca9087268bc8645",
+    "banks/s700-i160/matrix.npz": "aa58eb3faaba46ab1cdfc1b960be6a0230a2cad7f0c5fc91a1734afe7ac7bdd0",
+    "banks/s700-i160/status.json": "1f92cfac0c965eade082e49b7dab1c7599fc5900c6566f99ecc4e54456dca6c1",
+    "banks/s960-i256/COMPLETE": "5963977da4c2cb333a978aa0daa86f36234831cd8bc416443ca9087268bc8645",
+    "banks/s960-i256/matrix.npz": "9b6c2b38807f523cc91d25a16618613d618126c6cddad6feb6184a7853140b2e",
+    "banks/s960-i256/status.json": "b8f99c26703ebe5589ea70b5e487fa5e3fe5ffa230612653b0acfa80c55ddfbe",
+    "results/exact-amplitude-limit/COMPLETE": "5963977da4c2cb333a978aa0daa86f36234831cd8bc416443ca9087268bc8645",
+    "results/exact-amplitude-limit/status.json": "c5f87d72308847113248b5b5488b659375ac766b4db48265dd0a8b9a49e36dc6",
+    "results/history-comparison/COMPLETE": "5963977da4c2cb333a978aa0daa86f36234831cd8bc416443ca9087268bc8645",
+    "results/history-comparison/status.json": "33dbd498b52c151645efebfaeb792e301e5940e9eace262a0b7aac507322f0e3",
+    "results/infrared-domain/COMPLETE": "5963977da4c2cb333a978aa0daa86f36234831cd8bc416443ca9087268bc8645",
+    "results/infrared-domain/status.json": "428e1b6ccde1b45b72860dae058e38e4cde10d71936ace5c3dd23700277ec42a",
+    "results/infrared-domain-corrected/COMPLETE": "5963977da4c2cb333a978aa0daa86f36234831cd8bc416443ca9087268bc8645",
+    "results/infrared-domain-corrected/status.json": "c078039ebcfd5ed56e6b3947d4ad9fdc04f2838a05ce0cb916ba4ecd7a09b44b",
+    "results/soft-compton-moments/COMPLETE": "5963977da4c2cb333a978aa0daa86f36234831cd8bc416443ca9087268bc8645",
+    "results/soft-compton-moments/status.json": "f3ca56a9a1258348ebec10bfb925e82392e9f762ef61e116fba06daf420a87f6",
+    "results/validation/COMPLETE": "5963977da4c2cb333a978aa0daa86f36234831cd8bc416443ca9087268bc8645",
+    "results/validation/status.json": "48a74950f3b93e393a9f26d93fc808512dd26c4b37434780dc7a6c4062dedbb1"
+  },
+  "parent_seal_sha256": "e0d75383b2291da2b5f38ccf8fc511313aad18442b4001c563d08dc749a4bc3f",
+  "prior_sealed_entries_unchanged": 11058,
+  "parent_chain_edges_verified": 85,
+  "full_checkpoint_payload_rehashed": false,
+  "checkpoint_manifest_sha256": "38f86719b0eb4c5e7fd86171a98af51918369f9daf81584a3c19c3d63222389e",
+  "local_source_documents": [
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\4876-Y5-R2FR-integrated-H-parent-action-saddle-regulator-and-induced-coefficient-matching-to-GN-Lambda-and-R2.md",
+      "sha256": "8798d2de8c48ccd4fcc22d676aa1ae37cb6ac7691a579f9444095a8302832780",
+      "role": "Integrated-H gravitational saddle and retained renormalized normalization"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\4916-Y5-R2FR-covariantization-map-from-microscopic-motion-action-to-integrated-H-parent-and-no-direct-flow-charge-or-primitive-freeze.md",
+      "sha256": "4c20db8f8f75d81bab3c2a6d334cbcefeb2f2c1d66266be0ec412947c705b636",
+      "role": "Local metric map, Hilbert source chain and non-unique covariantization boundary"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\4960-Y5-R2FR-integrated-H-soft-BRST-universal-source-theorem-and-local-GR-Newton-Maxwell-promotion-or-parent-field-content-boundary.md",
+      "sha256": "6cd343d022dde751f86ad82eaf0f61fb5e3616753c228f631c44a45da278a69d",
+      "role": "Declared independent-H/Diff parent and source normalization boundary"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\4873-Y5-R2FR-covariant-open-parent-action-and-connected-covariance-kernel-to-unit-flow-Kubo-coefficients-or-final-EFT-freeze.md",
+      "sha256": "af2c97091477525fb7244e5b2577e4a4c70d863987ebbb39b6c974d978b38b6e"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\4897-Y5-R2FR-cosmology-without-bath-source-metric-only-baseline-and-derived-extension-reentry-gate.md",
+      "sha256": "5cc9a75f954711cb3a320f8b6e2ecc989d6cd1692eb46190f008c70144d52ff4"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\4938-Y5-R2FR-motion-scale-to-Newton-scale-parent-identity-or-explicit-two-scale-theory-gate.md",
+      "sha256": "b30394a62c6a22af5da315b92a2823f44aa34cd914b6bab813136b0926aa0ca4"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\5192-Y5-R2FR-parent-motion-FLRW-branch-memory-separation-and-mass-gap-cosmology-gate.md",
+      "sha256": "e171efb8d498df44b535f6c25517c86a0cd5e8b993a67bfb8a9e3b74301eecc3"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\5194-Y5-R2FR-parent-canonical-scalar-perturbation-growth-and-compressed-CMB-gate.md",
+      "sha256": "1478db5333863753c00371b2e8c5ad8d7dc5250a40dd3a1f870de4e8ad25eb5d"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\5195-Y5-R2FR-matched-joint-CMB-informed-parent-refit-and-physical-sound-horizon-gate.md",
+      "sha256": "217fdc07f94e18a21fe996f7592930f69c21ba16b3fe44b1fd1a2518d9d54737"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\5197-Y5-R2FR-universal-gap-cross-arena-compatibility-and-route-separation-theorem.md",
+      "sha256": "f01f94465168758886800556f345e370910f6913e80f1a4a0c646bbe7abe0c0a"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\5156-Y5-R2FR-FLRW-Hessian-Gaussian-state-single-clock-adiabatic-radiation-transfer-and-patch-collapse-gate.md",
+      "sha256": "fdb5c0406fb7d0e47204a51212b24b5adf19d33644399bc4a1fd2268155b1353"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\4937-Y5-R2FR-gravity-motion-functional-potential-Hessian-and-one-scale-fixed-function-gate.md",
+      "sha256": "2cf1f25d7cf67ec9bb724381919a9ff6e78d5dabe355ec50178157309b29cce5"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\4957-Y5-R2FR-functional-PX-GR-connected-trajectory-and-O2-O4-O5-residual-bound-or-motion-sector-rejection.md",
+      "sha256": "235b2e640428814bbcc3f0af1b2ebef020573314eaae1cb0b793be9122db0cb4"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\4958-Y5-R2FR-six-derivative-essential-X2-X3-quotient-and-invariant-2to4-amplitude-or-rate-route-rejection.md",
+      "sha256": "d08b8a0ab6a5317c77a23accd34dc46c5ad6a0bc5aa73e0767c8e0aa0edd5f1c"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\motion-bath-matching-20261006\\49-real-motion-envelope-and-existing-bath-matching.md",
+      "sha256": "eeab083d0f4646ff936c4e12ebcc44aedb27e2a9a4ce36d76de98fdb2cdaaf90"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\early-adiabatic-matching-20261006\\51-early-adiabatic-onset-and-existing-growth-handoff.md",
+      "sha256": "bb4d035d7860dfadd29c68d1065b7802f9c6f2fd7e3c8c62094656399c01eae2"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\early-adiabatic-matching-20261006\\results\\stage-integrity.json",
+      "sha256": "64b9dced606b4b957c95140a137cf8e633991a3706c6dd05046b3bab27990921"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\early-adiabatic-matching-20261006\\results\\matching\\status.json",
+      "sha256": "fe369a4a67cb03948fc129bdcdd4421f6fe9c09cbfea0ffce7af40ad8cc9c901"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\heavy-interaction-and-condensate-bridge-20261007\\results\\stage-integrity.json",
+      "sha256": "9f135b041162dbb788c955a148df14a95b3056f44269011400d089fe51dd8bc3"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\early-adiabatic-matching-20261006\\early_common.py",
+      "sha256": "d3f0a72ef328e26853331d583484c700c8b0d188f672add364eb6a5c5e14b5bc"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\cosmology-reconnection-20261006\\results\\comparison\\status.json",
+      "sha256": "4ddef64dd7e2d0489ab0eec4aae243512ef765b08d9c1f23bf250a9e2fc76b1d"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\formalization-workbench\\data\\cosmology\\desi_dr2_bao\\desi_gaussian_bao_ALL_GCcomb_mean.txt",
+      "sha256": "9ac154ab583ce759c0f7eef3c978c7c70a6ead2d18774caceadf1a350a640585"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\formalization-workbench\\data\\cosmology\\desi_dr2_bao\\desi_gaussian_bao_ALL_GCcomb_cov.txt",
+      "sha256": "252a143274c8a07c78694c119617d36594f6d7965d00319ca611c6ffb886e509"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\scripts\\Y5_R2FR_5194_parent_scalar_perturbation_growth_CMB_gate.py",
+      "sha256": "f696e14285549efa7435a3e02b01becb73833998adbd37a60ad49fa779db6bb8"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\.venv-score\\Lib\\site-packages\\camb\\cambdll.dll",
+      "sha256": "dacec802377123147f336c37218cdf871b293f1de2b87019c8726b7290082bef"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\.venv-score\\Lib\\site-packages\\camb\\__init__.py",
+      "sha256": "bb7a41157cc6b5f189b9aecff9151514971d656e4f43c997c8744ac3fc4c6ebd"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\.venv-score\\Lib\\site-packages\\camb\\results.py",
+      "sha256": "ad5d362fd48bc3c707df0f1ca866a6503b34f0076e0180f79d7d5fac6cd8ce9e"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\.venv-score\\Lib\\site-packages\\camb\\dark_energy.py",
+      "sha256": "00e95f0ec6661077dd1740a1420cd8f3568a84fd837ddc289130d01a97074058"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\.venv-score\\Lib\\site-packages\\camb\\model.py",
+      "sha256": "e94ac3cab7f9db9c9aec8da08063cb96955f89db9a5b1120a8a06148bd730018"
+    }
+  ],
+  "primary_pdfs": [
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\companion-source-20261004\\sources\\martel-poisson-2005.pdf",
+      "url": "https://arxiv.org/pdf/gr-qc/0502028",
+      "sha256": "6b9ef2af0fb9ebddcd4e46e8a71466e2ea821cd4f43e25f03c7757c1a05056be",
+      "pages": 21,
+      "rendered_pages_one_based": [
+        5,
+        6,
+        9
+      ]
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\companion-source-20261004\\sources\\martel-2004.pdf",
+      "url": "https://arxiv.org/pdf/gr-qc/0311017",
+      "sha256": "f7bc1b51162ee376cf4e8ac460561e3e599615da71c9d531c54407b420a51fbd",
+      "pages": 24,
+      "rendered_pages_one_based": [
+        16,
+        17
+      ]
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\orbital-backreaction-20261004\\sources\\fujita-et-al-2017.pdf",
+      "url": "https://arxiv.org/abs/1612.02504",
+      "role": "Reciprocal conservative Hamiltonian and action first-law cross-check",
+      "sha256": "d4c330099d779091e377bd2a3f6a5b1ee8fdaa92814180690e58900ad390ed25"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\orbital-backreaction-20261004\\sources\\vines-flanagan-hinderer-2011.pdf",
+      "sha256": "825706ae39d7f4722a85e0574e7edc168fd01231c1bdb441568f115b22c6602a",
+      "url": "https://arxiv.org/abs/1101.1673",
+      "role": "Circular tidal action/quadrupole normalization, inherited stage20 comparison"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\survey-window-forward-model-20261007\\sources\\Beutler-McDonald-2021.pdf",
+      "sha256": "118c09173ea091f5954716899a4dcdf3b29a84c4ba48a0b5ee0f7fe248ece358"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\density-weighted-pair-streaming-20261007\\sources\\Scoccimarro-2004-v2.pdf",
+      "sha256": "caa265edb0392b0b7f34ac8eb298e16f0303eefd5d01cf7bfe45ea47c4525e6f"
+    },
+    {
+      "path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\angular-thermal-source-20261007\\sources\\pitrou-1902.09456v2.pdf",
+      "sha256": "aa9d7378c55ae18c47942956a8f12251e8ec1369ccd491c07d4c74fda41c0df0"
+    }
+  ],
+  "source_urls": [
+    "https://arxiv.org/abs/gr-qc/0502028",
+    "https://arxiv.org/pdf/gr-qc/0502028",
+    "https://doi.org/10.1103/PhysRevD.71.104003",
+    "https://arxiv.org/abs/gr-qc/0311017",
+    "https://arxiv.org/pdf/gr-qc/0311017",
+    "https://doi.org/10.1103/PhysRevD.69.044025",
+    "https://journals.aps.org/pr/abstract/10.1103/PhysRev.131.435",
+    "https://journals.aps.org/pr/abstract/10.1103/PhysRev.136.B1224",
+    "https://arxiv.org/abs/gr-qc/0407050",
+    "https://arxiv.org/pdf/gr-qc/0407050",
+    "https://doi.org/10.1103/PhysRevD.70.084044",
+    "https://arxiv.org/abs/1612.02504",
+    "https://arxiv.org/html/1612.02504",
+    "https://doi.org/10.1088/1361-6382/aa7342",
+    "https://arxiv.org/abs/1101.1673",
+    "https://doi.org/10.1103/PhysRevD.83.084051"
+  ],
+  "observational_source_urls": [
+    "https://github.com/PantheonPlusSH0ES/DataRelease",
+    "https://github.com/CobayaSampler/bao_data/blob/master/desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_cov.txt",
+    "https://www.desi.lbl.gov/2025/10/06/desi-dr2-cosmology-chains-and-data-products-released/",
+    "https://raw.githubusercontent.com/CobayaSampler/bao_data/bb0c1c9009dc76d1391300e169e8df38fd1096db/desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_mean.txt",
+    "https://raw.githubusercontent.com/CobayaSampler/bao_data/bb0c1c9009dc76d1391300e169e8df38fd1096db/desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_cov.txt",
+    "https://fbeutler.github.io/hub/deconv_paper.html"
+  ],
+  "original_library_sha256": "dacec802377123147f336c37218cdf871b293f1de2b87019c8726b7290082bef",
+  "native_library_sha256": "a3780fc2390569dee8b6dabef0441ab0efb411be18ea42e1419c1d0aac571ff1",
+  "previous_primary_source_urls": [
+    "https://arxiv.org/abs/astro-ph/9506072",
+    "https://ned.ipac.caltech.edu/level5/March01/Carroll3/Carroll6.html",
+    "https://arxiv.org/abs/gr-qc/9712019",
+    "https://arxiv.org/abs/gr-qc/0103032",
+    "https://arxiv.org/abs/1910.12152",
+    "https://arxiv.org/abs/1104.2933",
+    "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
+    "https://www.physics.nist.gov/cuu/Reference/versioncon.shtml",
+    "https://arxiv.org/abs/0809.3036",
+    "https://arxiv.org/html/0809.3036v2",
+    "https://geant4.web.cern.ch/documentation/dev/prm_html/PhysicsReferenceManual/electromagnetic/gamma_incident/compton/compton.html",
+    "https://arxiv.org/abs/astro-ph/9506072",
+    "https://arxiv.org/abs/gr-qc/0612191",
+    "https://arxiv.org/abs/1803.08939",
+    "https://arxiv.org/abs/0809.3036",
+    "https://arxiv.org/html/0809.3036v2",
+    "https://arxiv.org/abs/astro-ph/9506072",
+    "https://arxiv.org/html/0809.3036v2",
+    "https://arxiv.org/html/1110.0475v2",
+    "https://arxiv.org/abs/1109.6552",
+    "https://arxiv.org/abs/2109.04895",
+    "https://arxiv.org/html/1902.09456v2",
+    "https://arxiv.org/pdf/1902.09456v2",
+    "https://doi.org/10.1016/j.astropartphys.2020.102494",
+    "https://arxiv.org/abs/astro-ph/9910280v3",
+    "https://arxiv.org/html/astro-ph/9910280v3",
+    "https://doi.org/10.1086/317078",
+    "https://geant4.web.cern.ch/documentation/dev/prm_html/PhysicsReferenceManual/electromagnetic/polarized_incident/livermore_polarizedcompton.html",
+    "https://arxiv.org/html/astro-ph/9506072",
+    "https://arxiv.org/html/astro-ph/0108357",
+    "https://doi.org/10.1051/0004-6361:20011198",
+    "https://arxiv.org/html/1304.6929",
+    "https://arxiv.org/html/2602.14963v1",
+    "https://www.physics.nist.gov/cuu/pdf/wallet_2022.pdf",
+    "https://arxiv.org/html/2005.06941v1",
+    "https://arxiv.org/html/2112.06699v1",
+    "https://doi.org/10.1088/1475-7516/2020/10/025",
+    "https://doi.org/10.1093/mnras/stac2137",
+    "https://arxiv.org/html/1109.6552",
+    "https://arxiv.org/html/1407.5048",
+    "https://arxiv.org/html/1502.06788",
+    "https://arxiv.org/html/2005.06941v1",
+    "https://arxiv.org/html/2112.06699v1",
+    "https://data.nublado.org/gauntff/",
+    "https://data.nublado.org/gauntff/gauntff.dat",
+    "https://data.nublado.org/gauntff/gauntff_merged_Z01.dat",
+    "https://data.nublado.org/gauntff/gauntff_merged_Z02.dat",
+    "https://data.nublado.org/gauntff/license.txt",
+    "https://doi.org/10.1088/1475-7516/2020/10/025",
+    "https://doi.org/10.1093/mnras/stac2137",
+    "https://doi.org/10.1093/mnras/stu1438",
+    "https://doi.org/10.1093/mnras/stv404",
+    "https://doi.org/10.1111/j.1365-2966.2011.19786.x",
+    "https://www.nist.gov/pml/special-publication-330/sp-330-section-2",
+    "https://arxiv.org/html/astro-ph/0611172",
+    "https://arxiv.org/html/1109.6552",
+    "https://doi.org/10.1111/j.1365-2966.2011.19786.x",
+    "https://arxiv.org/html/2005.06941v1",
+    "https://doi.org/10.1088/1475-7516/2020/10/025",
+    "https://data.nublado.org/gauntff/",
+    "https://arxiv.org/html/1109.6552",
+    "https://arxiv.org/html/2005.06941v1",
+    "https://arxiv.org/html/astro-ph/0611172",
+    "https://data.nublado.org/gauntff/",
+    "https://doi.org/10.1088/1475-7516/2020/10/025",
+    "https://doi.org/10.1111/j.1365-2966.2011.19786.x",
+    "https://arxiv.org/html/2005.06941v1",
+    "https://arxiv.org/html/2203.05252v1",
+    "https://arxiv.org/html/hep-ph/9308249",
+    "https://arxiv.org/html/hep-ph/9507341",
+    "https://doi.org/10.1016/0375-9474(94)90698-X",
+    "https://doi.org/10.1088/1475-7516/2020/10/025",
+    "https://doi.org/10.1103/PhysRevD.44.3955",
+    "https://arxiv.org/html/2005.06941v1",
+    "https://arxiv.org/html/2102.06718v2",
+    "https://arxiv.org/pdf/2005.06941",
+    "https://authors.library.caltech.edu/records/hpgb4-8p134",
+    "https://authors.library.caltech.edu/records/hpgb4-8p134/files/BROpr52.pdf?download=1",
+    "https://doi.org/10.1088/1475-7516/2020/10/025",
+    "https://doi.org/10.1103/PhysRev.85.231",
+    "https://doi.org/10.1103/PhysRevD.46.3630",
+    "https://doi.org/10.1103/PhysRevLett.126.211801",
+    "https://samirvarma.com/assets/pdf/Finite-temperature-radiative-corrections-to-Compton-scattering.pdf",
+    "https://samirvarma.com/publications/",
+    "https://dlmf.nist.gov/5.9#E15",
+    "https://doi.org/10.1103/PhysRevD.46.3630",
+    "https://samirvarma.com/assets/pdf/Finite-temperature-radiative-corrections-to-Compton-scattering.pdf",
+    "https://samirvarma.com/publications/",
+    "https://arxiv.org/html/2005.06941v1",
+    "https://doi.org/10.1103/PhysRevD.46.3630",
+    "https://samirvarma.com/assets/pdf/Finite-temperature-radiative-corrections-to-Compton-scattering.pdf",
+    "https://dlmf.nist.gov/5.9#E15",
+    "https://arxiv.org/html/2005.06941v1",
+    "https://doi.org/10.1103/PhysRevD.46.3630",
+    "https://samirvarma.com/assets/pdf/Finite-temperature-radiative-corrections-to-Compton-scattering.pdf",
+    "https://dlmf.nist.gov/5.9#E15",
+    "https://arxiv.org/html/2005.06941v1",
+    "https://authors.library.caltech.edu/records/hpgb4-8p134",
+    "https://doi.org/10.1103/PhysRev.85.231",
+    "https://doi.org/10.1103/PhysRevD.46.3630",
+    "https://arxiv.org/html/2005.06941v1",
+    "https://arxiv.org/abs/hep-ph/9607206"
+  ],
+  "new_primary_source_urls": [
+    "https://arxiv.org/html/2005.06941v1",
+    "https://arxiv.org/abs/1109.6552",
+    "https://academic.oup.com/mnras/article/454/4/4182/999273"
+  ],
+  "local_dependencies": {
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\emitting-thermal-background-20261008\\integrated_dc.py": "0c60bbf898ba06b130d6580b99c7c34a01b097d5be12d03ba57d4412af3d5206",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\emitting-thermal-background-20261008\\sourced_emission.py": "b0ef9f60846b51538762d3a31ba9c30ba497a9e14e2d2300277af4a94f14eed4",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\emitting-thermal-background-20261008\\sources\\gauntff_merged_Z01.dat": "d13d222d6c8e747015cdd936627418d7c1a5c736bb5191019c62ce46295e40a6",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\emitting-thermal-background-20261008\\sources\\gauntff_merged_Z02.dat": "c3eaf211736f36907afd39bede52eb875d6ee1303118c42c366312b0237615b2",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\full-history-source-precision-20261007\\results\\production-primary-refit\\status.json": "c509685797049ec19ba8f2258db57ea51410a786defbb7866ecc40b68de2d24e",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\infrared-source-domain-20261008\\ACCURACY-REVIEW.json": "1ba354240e021d65fd5e53da52cf0054122812bec4ba1f2c043b029c03f9562e",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\infrared-source-domain-20261008\\backgrounds\\cold-nonlocal-refined-6400\\history.npz": "936649177ed7fc001e94f0ab59cb9e5088548c9a9afd723c32e925ccf7e2f7df",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\infrared-source-domain-20261008\\backgrounds\\heavy-nonlocal-refined-6400\\history.npz": "fab3c970c94cd5e47e01c29574766fbe76fcebfc2b2db71f3b644cc06bf25fef",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\infrared-source-domain-20261008\\banks\\s960-i256\\matrix.npz": "9b6c2b38807f523cc91d25a16618613d618126c6cddad6feb6184a7853140b2e",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\infrared-source-domain-20261008\\correct_plasma_scale.py": "2f935571529ed50c1f07f4aa8ef1861cc21944b0af812e11cb6e75ea6730cfc7",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\infrared-source-domain-20261008\\DERIVATION.md": "5f1ccd2817f2b28d16345d5f26eaf14707e86309b9ec661b5747b54de279adf7",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\infrared-source-domain-20261008\\nonlocal_dc.py": "24a584fd47a35888bb3305b0b9a7a4a6d4647752f7a17399368b10db3ea30d9f",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\infrared-source-domain-20261008\\results\\exact-amplitude-limit\\status.json": "c5f87d72308847113248b5b5488b659375ac766b4db48265dd0a8b9a49e36dc6",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\infrared-source-domain-20261008\\results\\history-comparison\\status.json": "33dbd498b52c151645efebfaeb792e301e5940e9eace262a0b7aac507322f0e3",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\infrared-source-domain-20261008\\results\\infrared-domain-corrected\\status.json": "c078039ebcfd5ed56e6b3947d4ad9fdc04f2838a05ce0cb916ba4ecd7a09b44b",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\infrared-source-domain-20261008\\results\\soft-compton-moments\\status.json": "f3ca56a9a1258348ebec10bfb925e82392e9f762ef61e116fba06daf420a87f6",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\infrared-source-domain-20261008\\RESULTS.md": "fef70191ea1dea016e261c3b526dacfb721b4efbba7c8701597b2681451c6ed8",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\kinetic-gain-loss-20261008\\backgrounds\\cold-derived-gaunt\\history.npz": "b9be712d99315587b6bfa778316cb1026cbceae295851b7ce9d6e6e23a1a7919",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\kinetic-gain-loss-20261008\\backgrounds\\heavy-derived-gaunt\\history.npz": "6fdbad995dcd0827b25b7a05cd35acd8cbb8bab08060e3993b55b4b84db69bb2",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\kinetic-gain-loss-20261008\\batched_real.py": "5223dad1e52ab8d0ae97336dc35848e37beecb645a769496fd10d614faafb08e",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\kinetic-gain-loss-20261008\\joint_weak_form.py": "bfab7dcb85ab905bf38bfa7d00b9f6b1eeb1b7046593660ae51294d37a569036",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\kinetic-gain-loss-20261008\\results\\derived-gaunt-bank\\gaunt.npz": "8dc6755a7d243b93f91db20cfc211f894a4da4ca53d8a247dea6636273406337",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\matched-weak-redistribution-20261008\\matched_weak.py": "22aedd956cb452c70cef1f3e0cb864beb60d8b28537314b728c54807c7c34c72",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\matched-weak-redistribution-20261008\\results\\stage-integrity.json": "e0d75383b2291da2b5f38ccf8fc511313aad18442b4001c563d08dc749a4bc3f",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\observer-frequency-projection-20261007\\consistent_spectral_basis.py": "fb4cffb2a1d675499072766099c3a3c82358aeb037a1a875c758a5b7a80fb6a5",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\scaled-spectral-evolution-20261007\\sources\\2005.06941v1.html": "7fc79a3f14b2aae17aee6096628fd3cf9603f3664395b7e0bb59eb9bfd5fccb1"
+  },
+  "accepted_scientific_checks": 159,
+  "validation_checks": 27,
+  "checked_result_packets": 23,
+  "compiled_scripts": 11,
+  "retained_failed_checks": 0,
+  "raw_superseded_diagnostics": [
+    {
+      "path": "results/infrared-domain/status.json",
+      "field": "rows[*].plasma_frequency_over_temperature",
+      "reason": "Missing pi, repaired by an independent native-Thomson-radius check.",
+      "replacement": "results/infrared-domain-corrected/status.json",
+      "evolution_affected": false
+    }
+  ],
+  "all_current_acceptance_checks_passed": true,
+  "all_requested_numerical_gates_closed": true,
+  "numerical_gate_scope": "Three-frequency source quadrature, declared leading-order evolutions and refined structural change, derived slope and corrected plasma diagnostic; not the full relativistic finite-temperature operator.",
+  "source_scope": "Derived leading nonlocal Gould DC weak source and hard-spectrum infrared slope,96-mode projection and paired heavy/cold evolution with unchanged controls; exact-amplitude low-energy and soft finite-velocity transport checks.",
+  "previous_goal_turn": "progress",
+  "current_goal_turn": "progress",
+  "latest_physical_source_histories": [
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\infrared-source-domain-20261008\\backgrounds\\heavy-nonlocal-refined-6400\\history.npz",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\infrared-source-domain-20261008\\backgrounds\\cold-nonlocal-refined-6400\\history.npz"
+  ],
+  "physical_source_scope": "Staged leading nonlocal Gould source with retained exact finite-shift Compton and BR; not the complete matched finite-recoil NLO source.",
+  "retained_local_approximation_histories": [
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\kinetic-gain-loss-20261008\\backgrounds\\heavy-derived-gaunt\\history.npz",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\kinetic-gain-loss-20261008\\backgrounds\\cold-derived-gaunt\\history.npz"
+  ],
+  "full_thermal_gas_collision_source": false,
+  "complete_finite_temperature_polarized_operator": false,
+  "physical_photon_number_source_projected_to_zero": false,
+  "actual_nonthermal_infrared_occupation_derived": false,
+  "leading_nonlocal_infrared_source_target_derived": true,
+  "new_background_evolution": true,
+  "new_empirical_fit": false,
+  "perturbed_emission_finite_k_wave_evolution": false,
+  "full_observable_CMB_spectrum": false,
+  "latest_observational_authority": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\full-history-source-precision-20261007\\results\\production-primary-refit\\status.json",
+  "native_library_reused_read_only": true,
+  "newton_G_inherited_not_derived": true,
+  "electron_mass_inherited_not_derived": true,
+  "protected_workbench_recent_modified_file_count": 0,
+  "protected_check_scope": "Modification-time scan since04:59:15UTC8October2026, not a full content-hash baseline.",
+  "maximum_active_compute_workers": 1,
+  "active_workers_at_seal": 0,
+  "library_threads": 1,
+  "github_action": false,
+  "subagents": 0,
+  "global_installation_changed": false,
+  "galaxy_work_modified": false,
+  "conclusion": "Restoring hard photon departures removes an actual local-source closure at leading order and changes both existing number-distortion histories by about0.031%. The derived IR target now depends on the saved hard spectrum and sourced free-free gas response, enabling a dynamical tail completion rather than arbitrary extrapolation."
+}

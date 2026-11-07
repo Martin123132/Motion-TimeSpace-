@@ -1,0 +1,36 @@
+{
+  "stage": 110,
+  "accepted_scope": "Derived exact residual equation of saved fixed-background Galerkin kinetics; symmetric baseline/window rate attribution and saved-history checks.",
+  "scientific_checks": 111,
+  "passing_scientific_checks": 105,
+  "retained_failed_checks": 6,
+  "expected_failed_names": [
+    "gas:heavy:1024",
+    "gas:heavy:512",
+    "gas:heavy:256",
+    "gas:cold:1024",
+    "gas:cold:512",
+    "gas:cold:256"
+  ],
+  "original_gas_relative_gate_relaxed": false,
+  "gas_net_transfer_relative_precision_upgraded": false,
+  "no_new_evolution": true,
+  "no_new_finite_source_events": true,
+  "br_matrices_reconstructed_from_unchanged_tables": true,
+  "full_spectral_modes": 96,
+  "full_projection_domain": [
+    0.00001,
+    60
+  ],
+  "same_baseline_and_correction_checks": true,
+  "baseline_refinement_scope": "3200/6400 matched on s700-i160; separate6400 s700/s960 bank comparison; no3200 s960 history assumed.",
+  "physical_parameters_fitted": false,
+  "empirical_fit": false,
+  "autonomous_residual_decay_valid": false,
+  "infrared_continuation_derived": false,
+  "prior_archive_full_rehash": false,
+  "github_action": false,
+  "subagents": 0,
+  "next_target": "Derive a driven low-frequency turnover approximation from the existing nonlocal DC soft target, Compton transport and BR rates. Use the saved full-spectrum and gas histories to predict the correction's early damping and late regrowth in x=0.001–0.01, with the identical baseline control. Retain the time derivative and hard-photon forcing; compare to the saved finite-band operator rather than fit an infrared cutoff or assume autonomous exponential decay. Reuse the Stage89/90 soft-target and dynamical-tail derivations before adding new machinery.",
+  "conclusion": "Existing collision/emission equations both damp and drive the non-mu/non-y shape. Window residual norm falls overall then regrows; baseline grows. Residual dynamics match saved photon histories; tiny gas-transfer relative precision remains explicitly bounded by saved numerical accuracy."
+}

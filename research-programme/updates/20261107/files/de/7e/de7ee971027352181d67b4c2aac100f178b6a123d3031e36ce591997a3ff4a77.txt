@@ -1,0 +1,11 @@
+{"event": "start_branch", "elapsed_seconds": 0.017200500005856156, "fraction": 0.0}
+{"event": "native_background", "elapsed_seconds": 7.57923989999108, "fraction": 0.0, "switch": 0.0, "table_nodes": 7001}
+Traceback (most recent call last):
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\condensate-origin-20261003\radiation-and-slow-field-transfer-20261007\run_radiation_bridge.py", line 68, in run
+    thermal = native.get_background_redshift_evolution(np.array([2000., 1500., 1100., 800., 100.]), vars=['x_e', 'Tb', 'opacity'])
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\.venv-score\Lib\site-packages\camb\results.py", line 692, in get_background_redshift_evolution
+    return self.get_background_time_evolution(self.conformal_time(z), vars, format)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\ollet\Desktop\Turn an intuitive research programme into a formal field-theoretic framework\Motion-TimeSpace--main\post-checkpoint-work\.venv-score\Lib\site-packages\camb\results.py", line 671, in get_background_time_evolution
+    raise CAMBError(f"Unknown names {unknown}; valid names are {model.background_names}")
+camb.baseconfig.CAMBError: Unknown names {'Tb'}; valid names are ['x_e', 'opacity', 'visibility', 'cs2b', 'T_b', 'dopacity', 'ddopacity', 'dvisibility', 'ddvisibility']

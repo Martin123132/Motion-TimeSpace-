@@ -1,0 +1,27 @@
+{
+  "parameters_and_weight_source": "def parameters_and_weight(theta,node):\n    parameters=weak.source.context(theta*node['frequency'],node['cosine'],np.array(node['velocity']),theta)\n    weight=node['electron_weight']*node['reflection_multiplicity']*node['seed_weight']\n    weight*=node['frequency']**2/math.expm1(node['frequency'])/I3\n    weight*=2*np.pi*node['hard_weight']*parameters['born_differential_over_thomson']\n    return parameters,float(weight)\n",
+  "function_path": "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\curvature-holdouts-20261011\\curvature_source_common.py",
+  "frequencies": [
+    9.550812886403634,
+    11.564929091735618,
+    14.0,
+    16.435070908264382,
+    18.449187113596366
+  ],
+  "seed_weights": [
+    1.6782323489356612,
+    2.2909803030307123,
+    2.5077551020408158,
+    2.2909803030307123,
+    1.6782323489356612
+  ],
+  "packets_already_weighted": true,
+  "combination_coefficients": [
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "full_population_integral": false
+}

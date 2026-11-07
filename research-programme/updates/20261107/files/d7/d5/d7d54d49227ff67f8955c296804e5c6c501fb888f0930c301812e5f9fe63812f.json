@@ -1,0 +1,78 @@
+{
+  "state": "complete",
+  "script_sha256": "e2802faac7018b7d452c0abc1f9f5ae4007e8e8021713f6ebcc4f34f43a2e99e",
+  "source_hashes": {
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\self-gravity-20261003\\results\\derivation\\status.json": "cf486ad7396f90d868da41532dbfa9c44214a61e14a45df4e6404536054c3e89",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\quadrupole-response-20261004\\results\\derivation\\status.json": "89f119af826ecb5060a4e0e9bf341ff416af939e3144ad8d46448f2519e903d9"
+  },
+  "checks": [
+    {
+      "name": "edge_order_1",
+      "passed": true
+    },
+    {
+      "name": "edge_order_2",
+      "passed": true
+    },
+    {
+      "name": "edge_order_3",
+      "passed": true
+    },
+    {
+      "name": "flat_edge_order_3",
+      "passed": true
+    },
+    {
+      "name": "flat_edge_order_4",
+      "passed": true
+    },
+    {
+      "name": "flat_edge_order_5",
+      "passed": true
+    },
+    {
+      "name": "weak_gravity_compact_metric_source",
+      "passed": true
+    },
+    {
+      "name": "weak_response_integration_by_parts",
+      "passed": true
+    },
+    {
+      "name": "weak_direct_term_after_density_substitution",
+      "passed": true
+    },
+    {
+      "name": "exact_schwarzschild_growing_mode",
+      "passed": true
+    },
+    {
+      "name": "exterior_wronskian_transport",
+      "passed": true
+    }
+  ],
+  "exact_check_count": 11,
+  "edge_symbols": [
+    "radius",
+    "compactness",
+    "frequency2",
+    "amplitude",
+    "tide",
+    "tide_prime",
+    "center2",
+    "center3",
+    "center4"
+  ],
+  "background_coefficients_orders_2_to_4": [
+    "(-compactness - 2)/(10*radius*(compactness - 1))",
+    "(9*compactness**2 - 6*compactness - 5*frequency2*radius**2 + 42)/(270*radius**2*(compactness - 1)**2)",
+    "(648*compactness**3 - 2142*compactness**2 + 405*compactness*frequency2*radius**2 + 1806*compactness + 110*frequency2*radius**2 - 2436)/(18900*radius**3*(compactness - 1)**3)"
+  ],
+  "edge_coefficients_orders_3_to_5": [
+    "amplitude*(-4*center2 + 2*compactness/(radius*(1 - compactness)) + 2*(1 + 1/(1 - compactness))/radius)/4 + tide/(8*(1 - compactness)*sqrt(12 - 12*compactness))",
+    "amplitude*(6*center2**2 - 4*center2*compactness/(radius*(1 - compactness)) - 4*center3 + 2*compactness**2/(radius**2*(1 - compactness)**2) + 2*compactness/(radius**2*(1 - compactness)) + 2*compactness/(radius**2*(1 - compactness)**2) - frequency2/(1 - compactness)**2 + 2*(1 + 1/(1 - compactness))/radius**2 + 6/(radius**2*(1 - compactness)))/10 + (amplitude*(-4*center2 + 2*compactness/(radius*(1 - compactness)) + 2*(1 + 1/(1 - compactness))/radius)/4 + tide/(8*(1 - compactness)*sqrt(12 - 12*compactness)))*(-4*center2 + 2*compactness/(radius*(1 - compactness)) + 3*(1 + 1/(1 - compactness))/radius)/10 + (compactness*tide/(2*radius*(1 - compactness)*sqrt(12 - 12*compactness)) + tide*(center2/(2*sqrt(12 - 12*compactness)) + 3*compactness/(radius*(12 - 12*compactness)**(3/2))) - tide_prime/(2*sqrt(12 - 12*compactness)))/(10*(1 - compactness))",
+    "amplitude*(-8*center2**3 + 12*center2*center3 - 4*center2*(compactness**2/(radius**2*(1 - compactness)**2) + compactness/(radius**2*(1 - compactness))) - 4*center4 + 2*compactness**3/(radius**3*(1 - compactness)**3) + 4*compactness**2/(radius**3*(1 - compactness)**2) - 2*compactness*frequency2/(radius*(1 - compactness)**3) + 2*compactness*(3*center2**2 - 2*center3)/(radius*(1 - compactness)) + 2*compactness/(radius**3*(1 - compactness)) + 2*compactness/(radius**3*(1 - compactness)**2) + 2*(compactness**2/(radius**2*(1 - compactness)**2) + compactness/(radius**2*(1 - compactness)))/(radius*(1 - compactness)) + (6*compactness/(radius*(1 - compactness)) + 12/radius)/(radius**2*(1 - compactness)) + 2*(1 + 1/(1 - compactness))/radius**3)/18 + (amplitude*(-4*center2 + 2*compactness/(radius*(1 - compactness)) + 2*(1 + 1/(1 - compactness))/radius)/4 + tide/(8*(1 - compactness)*sqrt(12 - 12*compactness)))*(6*center2**2 - 4*center2*compactness/(radius*(1 - compactness)) - 4*center3 + 2*compactness**2/(radius**2*(1 - compactness)**2) + 2*compactness/(radius**2*(1 - compactness)) + 3*compactness/(radius**2*(1 - compactness)**2) - frequency2/(1 - compactness)**2 + 3*(1 + 1/(1 - compactness))/radius**2 + 6/(radius**2*(1 - compactness)))/18 + (-4*center2 + 2*compactness/(radius*(1 - compactness)) + 4*(1 + 1/(1 - compactness))/radius)*(amplitude*(6*center2**2 - 4*center2*compactness/(radius*(1 - compactness)) - 4*center3 + 2*compactness**2/(radius**2*(1 - compactness)**2) + 2*compactness/(radius**2*(1 - compactness)) + 2*compactness/(radius**2*(1 - compactness)**2) - frequency2/(1 - compactness)**2 + 2*(1 + 1/(1 - compactness))/radius**2 + 6/(radius**2*(1 - compactness)))/10 + (amplitude*(-4*center2 + 2*compactness/(radius*(1 - compactness)) + 2*(1 + 1/(1 - compactness))/radius)/4 + tide/(8*(1 - compactness)*sqrt(12 - 12*compactness)))*(-4*center2 + 2*compactness/(radius*(1 - compactness)) + 3*(1 + 1/(1 - compactness))/radius)/10 + (compactness*tide/(2*radius*(1 - compactness)*sqrt(12 - 12*compactness)) + tide*(center2/(2*sqrt(12 - 12*compactness)) + 3*compactness/(radius*(12 - 12*compactness)**(3/2))) - tide_prime/(2*sqrt(12 - 12*compactness)))/(10*(1 - compactness)))/18 + (compactness*(tide*(center2/(2*sqrt(12 - 12*compactness)) + 3*compactness/(radius*(12 - 12*compactness)**(3/2))) - tide_prime/(2*sqrt(12 - 12*compactness)))/(radius*(1 - compactness)) + tide*(center3/(2*sqrt(12 - 12*compactness)) + 3*compactness*(4*center2 + 2/radius)/(radius*(12 - 12*compactness)**(3/2)) - 2*frequency2/((1 - compactness)*(12 - 12*compactness)**(3/2))) + tide*(compactness**2/(radius**2*(1 - compactness)**2) + compactness/(radius**2*(1 - compactness)))/(2*sqrt(12 - 12*compactness)) - tide_prime*(center2/(2*sqrt(12 - 12*compactness)) + 3*compactness/(radius*(12 - 12*compactness)**(3/2))) + (tide*(compactness**2/(radius**2*(1 - compactness)**2) + 6/(radius**2*(1 - compactness))) - tide_prime*(1 + 1/(1 - compactness))/radius)/(4*sqrt(12 - 12*compactness)))/(18*(1 - compactness))"
+  ],
+  "weak_geometric_lambda_over_alpha": "(2*chi_relax + integral r^6*(18*w^2*h^2+2*hp^2-12*W)dr)/30",
+  "convention": "Growing exterior H coefficient -2; decaying coefficient B; geometric lambda=-B/6; self coupling alpha=4pi G_R v_star^2."
+}

@@ -1,0 +1,127 @@
+{
+  "checks": [
+    {
+      "name": "Static equilibrium annihilates full quadratic angular source",
+      "passed": true,
+      "max_error": 3.469446951953614e-18
+    },
+    {
+      "name": "heavy: quadratic angular convergence",
+      "passed": true,
+      "envelope_error": 4.006781929906619e-06
+    },
+    {
+      "name": "heavy: quadratic source-time refinement",
+      "passed": true,
+      "envelope_error": 0.000132245305461674
+    },
+    {
+      "name": "cold: quadratic angular convergence",
+      "passed": true,
+      "envelope_error": 2.1637277694504957e-06
+    },
+    {
+      "name": "cold: quadratic source-time refinement",
+      "passed": true,
+      "envelope_error": 1.1109172582510662e-05
+    }
+  ],
+  "count": 5,
+  "all_checks_passed": true,
+  "rows": [
+    {
+      "model": "heavy",
+      "quadrature": [
+        24,
+        48
+      ],
+      "time_thin": 1,
+      "nfev": 11681,
+      "seconds": 51.34494410012849
+    },
+    {
+      "model": "heavy",
+      "quadrature": [
+        32,
+        64
+      ],
+      "time_thin": 1,
+      "nfev": 11369,
+      "seconds": 58.92073310003616
+    },
+    {
+      "model": "heavy",
+      "quadrature": [
+        32,
+        64
+      ],
+      "time_thin": 2,
+      "nfev": 8885,
+      "seconds": 56.12232099985704
+    },
+    {
+      "model": "cold",
+      "quadrature": [
+        24,
+        48
+      ],
+      "time_thin": 1,
+      "nfev": 3869,
+      "seconds": 45.47719700005837
+    },
+    {
+      "model": "cold",
+      "quadrature": [
+        32,
+        64
+      ],
+      "time_thin": 1,
+      "nfev": 3821,
+      "seconds": 50.138077000156045
+    },
+    {
+      "model": "cold",
+      "quadrature": [
+        32,
+        64
+      ],
+      "time_thin": 2,
+      "nfev": 3341,
+      "seconds": 49.7999894998502
+    }
+  ],
+  "pair": {
+    "p": [
+      0.1,
+      0,
+      0
+    ],
+    "q": [
+      0,
+      0.1,
+      0
+    ]
+  },
+  "normalization": "symmetric ordered quadratic kernel; energy/stress divided by rho_nu0, covariant current by a*rho_nu0",
+  "computed_component": "retarded quadratic drive plus instantaneous first-metric products",
+  "retained_separate_components": [
+    "retarded linear response to l_ij",
+    "propagated second-order primordial boundary distribution"
+  ],
+  "full_nonlinear_cosmological_solution": false,
+  "no_amplitude_fit": true,
+  "same_operations_on_heavy_and_cold": true,
+  "acceptance_sampling_times": 121,
+  "state": "complete",
+  "finished_utc": "2026-10-07T06:08:35.987608+00:00",
+  "script_sha256": "b0a4f8fef1c087e0f9410abf6c8cf8f4c160df736e1ece359be9f2be50b10453",
+  "input_hashes": {
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\einstein-constraints-and-kinetic-response-20261007\\quadratic_neutrinos.py": "b0a4f8fef1c087e0f9410abf6c8cf8f4c160df736e1ece359be9f2be50b10453",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\einstein-constraints-and-kinetic-response-20261007\\constraint_common.py": "8996b45d7d9f9a1d06873d65ced83f3945706313beb8e930e14e07e919b40874",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\einstein-constraints-and-kinetic-response-20261007\\ACCEPTANCE.md": "405062eb59cd8eb871609a5c5b4377b7f8b5838ab561837d53784385e76b9798",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\finite-wave-canonical-source-20261007\\results\\stage-integrity.json": "dec872a4af35ef731f68cbb44d1f8185d5aa1aab9464e0af79c03fbc753c5527",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\einstein-constraints-and-kinetic-response-20261007\\QUADRATIC-RESPONSE-CONTRACT.md": "6bfe1adb15d2f52818854ec838f5d0c102ec2849a91b7c3d8ab7ab8d09927422",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\einstein-constraints-and-kinetic-response-20261007\\runs\\native\\heavy.npz": "97ee6b5c13fa9ae5275f7abd9d531cc2d4ef4427d711be2b221447c083358d11",
+    "D:\\Users\\ollet\\Desktop\\Turn an intuitive research programme into a formal field-theoretic framework\\Motion-TimeSpace--main\\post-checkpoint-work\\condensate-origin-20261003\\einstein-constraints-and-kinetic-response-20261007\\runs\\native\\cold.npz": "c6a3bfa3d1f2caf3244dfbe47d21a4d568c07ee21c3332e9ab3460735482b102"
+  }
+}
