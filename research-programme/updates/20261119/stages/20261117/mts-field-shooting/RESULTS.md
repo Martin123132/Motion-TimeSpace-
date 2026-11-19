@@ -1,0 +1,37 @@
+# From the original cosmological preparation to the early radiation response
+
+**Decision.** Keep the physical two-field evolution rather than treating the archived field interpolation as dynamics. An early radiation correction is now numerically resolved for both fixed preparations. One archived MTS slow velocity is wrong on its own scale, but it does not drive the resolved radiation change here. The heavy field does. No observational data were fitted, no standard-model sectors replaced, and no previous bank was edited. This measures a difference between two background preparations within each branch, not excess cosmic radiation relative to observations or to the other branch.
+
+## How the discrepancy was found
+
+- From each of two neighbouring archived field/velocity pairs the physical equations predicted all 18 other stored field/velocity knots in each direction for baseline and MTS. Seven per direction lay outside the preceding interpolation study. Primary heavy-field amplitude error ≤2.20e-10 and velocity-relative error ≤3.77e-10; baseline ≤2.97e-16 and ≤1.31e-14. These are numerical holdouts. Heavy field residuals can be 1.8 million archive word widths despite a good physical relative error. Agreement with adjacent knots does not certify their global physical preparation.
+- Shooting instead from the original calibrated state at a≈1e-9 removes the arbitrary neighbouring-knot choice. Two refined conformal-time calculations and two independent log-scale calculations agree on the small expansion correction at the matter event. The MTS relative working budget is 1.34e-8, not the 0.00208 of the first coarser study. Two absolute 78-digit solutions separately checked the finite difference equations in the local shooting experiment. Physical restarts and source normalization were not refitted.
+- At a≈0.000223398 the MTS archive gives slow velocity -1.13589254e-13. Integrating **its own** slow-field force and expansion from the first state, via (a² phi')'=-a⁴m²phi, gives -8.54902702e-14: a 24.7374% difference relative to the archived speed. The independent primordial two-field calculation agrees with the integral to 5.09e-10 relative. The baseline archive agrees with its own integral to 3.15e-13.
+- A fixed-expansion replay using the original slow-equation method and tolerances reproduces the archived MTS velocity at this event to 8.64e-6 relative, while missing the current integral by 32.87% relative to the integral. Its largest sampled heavy phase step was about 101 radians. Resolving the heavy phase alone, or changing only the working precision allowed on the slow velocity, recovers the integral at this event to better than 8e-9. This identifies an under-resolution mechanism in the controlled replay, not a claim about every original solver step.
+
+## What reaches radiation?
+
+For the same fixed original matter perturbations, compare the archived smooth geometry evolved under the original equations with the independently prepared physical background. A finite operator evaluated using the scalar contribution to the gravitational energy scale, rather than a fixed fraction of the scalar amplitude, resolves the tiny baseline difference. The operator is extrapolated to the actual finite displacement, keeps all active rows, and passes literal native synthetic controls (largest scaled residual 4.07e-11). The unchanged relative tolerance is 2e-5. Signed integrals below use the retained single-mode normalization over the first ≈0.009864 conformal Mpc, not a sky-spectrum calibration.
+
+| Smooth geometry comparison | Baseline | MTS |
+|---|---:|---:|
+| Signed radiation correction | -3.11025e-37 | +8.53116e-20 |
+| As fraction of original elastic radiation integral | -8.4440e-27 | +2.57353e-8 |
+| Combined step, amplitude, quadrature and cross-evolution working budget / signed magnitude | 9.28e-7 | 2.25e-7 |
+| Alternate sqrt(6) normalization and independent time solver versus primary scale solver | 31.82% | 2.60e-7 relative |
+| Elapsed time of rate crossing (conformal Mpc) | 0.00169491, + to − | 0.00229112, − to + |
+| Elapsed time of accumulated correction crossing (conformal Mpc) | 0.00255461 | 0.00345942 |
+
+The former MTS crossings near 1.07e-7 and 1.61e-7 Mpc were features of the interpolated reference, not robust physical onset times. The sign here is the **difference** of radiation terms; neither total emitted power nor total energy becomes negative. The initial relative slope follows -2 Delta H(1+v_b/slip) at matched material state and scale. The new crossings were located by evolving saved cell restarts and checking both independent global preparations, step refinements and native operator spans. Binary versus smooth matter-event geometry changes the MTS result by 2.66e-6 relative, but dominates the very small baseline correction and changes its sign. A numerical pass is not initialization independence.
+
+The independent slow and heavy initial changes contribute respectively +1.18e-26 and -2.62319e-10 to the initial MTS conformal-H change. We **also tested the full matter response**, rather than inferring radiation from those numbers: changing only the heavy initial pair reproduces the combined MTS radiation correction to 8.2e-14 relative, inside the numerical budget. The isolated slow-only projection does not converge at its own tiny scale (working budget 0.82). No precise slow-only fraction or nonlinear remainder is claimed. Both zero-difference controls vanish on every saved event boundary. Full scope: 66 main native trials plus six sector trials. See verification.json and sector-verification.json.
+
+## Next physical handoff
+
+The scalar **background** now starts from the actual original cosmological preparation. The corrected **perturbations** still begin at the archived later material state. REGULAR-SEED.md derives the native growing adiabatic scalar seed's 1/105, then its first matter-loading corrections: relative multipliers 1-23 omega tau/70 (field), 1-omega tau/3 (velocity). Nested integration independently verifies the coefficients. At the first background scale (k tau)²≈5.37e-6, comparable with or larger than omega tau; that scale is not yet verified as the native mode-start time. Do not inject a bare matter-only correction at the late event.
+
+**Next:** recover the actual native start and its gauge/mode normalization for k=5; derive the gradient term including the photon/neutrino contribution to the CDM growing mode. Initialize both scalar perturbations and the surrounding matter on the same physical clock, propagate to the current matter checkpoint, and test the same pressure/exchange and radiation budgets before extending the spectrum. No fresh fit, public update, or new galaxy population prescription.
+
+## Reproducibility
+
+METHOD.md, TRANSFER.md, PRIMORDIAL.md, PRECISION.md, SLOW-CURRENT.md, REPLAY.md, OPERATOR.md, AMPLITUDE.md and PARTITION.md give the individual contracts. Frozen forecasts and failed/intermediate controls were kept. The first native wrapper omitted constants required by the inherited constructor; a second required the in-memory science-array view to expose all serialized metadata keys. Neither produced a science trajectory. The final wrapper compares the complete serialized packets to the immutable capture, then separately checks each exposed live array; no physical gate was loosened. These private diagnostics are not substitute release models. The authoritative late physical restart remains mts-carried-defect-budget-20261117/epoch4252.

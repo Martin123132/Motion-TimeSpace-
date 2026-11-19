@@ -6,13 +6,13 @@ This repository is not presented as a completed theory of physics. It is a publi
 
 ## Current Status
 
-**Latest verified-work release: November 7, 2026.** Start with the
-[new status and results](docs/status/STATUS-2026-11-07.md),
-[publication scope](docs/status/PUBLICATION-NOTES-2026-11-07.md), and
-[bounded evidence package](research-programme/updates/20261107/README.md).
-This adds completed work since the September release without replacing the
-earlier framework. The untested relative-phase extension is excluded.
-Large local-only products are explicitly inventoried, not silently truncated.
+**Latest verified-work release: November 19, 2026.** Read the
+[scientific results and limits](docs/status/STATUS-2026-11-19.md) or
+[browse the dated stages, evidence and hash inventories](research-programme/updates/20261119/README.md).
+This update includes the checked relative-phase calculation, a local GR comparison
+from initial data, cosmological tests, and a Galactic force test that the lowest
+driven mode does not pass. The [November 7 release](research-programme/updates/20261107/README.md)
+and earlier framework remain intact.
 
 The following five-layer description records the retained parent framework;
 the November status distinguishes that selected branch from the newer

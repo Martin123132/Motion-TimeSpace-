@@ -1,0 +1,4 @@
+# Before the frequency forecasts: a single-clock round trip
+
+Also form the immediate, coherent echo: the outer geodesic clock reflects the received phase with no waiting time or frequency multiplier in its rest frame. Emit at the inner clock's proper times 0–2.1, reuse the outgoing leg, then trace a new incoming photon from the actual reflection event. Add logarithmic frequency ratios or, independently, differentiate the total round-trip delay. This readout uses one clock at start and finish and requires no external synchronisation. No fits or new field evolutions. Apply the same numerical budget. The outbound prefront zero cannot be imposed on the echoes: a returning photon travels toward the outgoing disturbance and can cross it even if emitted before either clock was disturbed. Compare the causal geometry on the saved world tube rather than defining a threshold as the front.
+

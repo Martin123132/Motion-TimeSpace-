@@ -1,0 +1,11 @@
+# Relative-phase perturbation and metric-coupling derivation
+
+Previous goal turn completed verified progress: cold background, analytic heavy-energy tube and paired numerical qualification. Continue that same action and frozen interval; no restart, new fit, change to bank/grids/tolerances, GitHub or subagent. One numerical worker/thread, below-normal CPU4. Fresh cutoff22:05 UTC2026-11-07. Tonight Music Lab reservation released; actual holds bind. Preserve failed attempts and never relaunch because an observation timed out.
+
+Derive an exact scalar-density/phase-quadrature coordinate directly from the retained normal-frame canonical field equation. Its density and current/pressure readouts must be checked algebraically, including BOTH metric injections Psi and Phi_N. Retain the full canonical pressure: do not insert an averaged dust law. Use the owned scalar background phase only where actually available; never extrapolate it into the new cold interval.
+
+Derive the zero-harmonic operator, explicit first micromotion map and exact remainder, preserving background derivative terms. Show how the remaining metric sources enter the same map, with any source derivative explicitly present rather than assumed slow. Supply the exact GR/Poisson metric rows in these coordinates so future joint averaging cannot silently drop feedback or the existing enthalpy defect.
+
+Use the inherited half/central/double physical wavenumbers unchanged. Qualify coefficient size and inversion over the frozen cold background and independently derived global positive-energy bounds. Distinguish an analytic homogeneous-transfer estimate from a fully coupled cosmological prediction. Check the relative coordinate against the previously native-qualified normal scalar equation, not against a fluid closure. The baseline's CDM limit must be checked using its own background; the scalar coordinate is not defined when scalar density is zero.
+
+The declared gates remain1e-10 algebra and2e-5 numerical. A bound need not pass an intended accuracy target to be useful; if it exceeds it, record that result without changing the tolerance or physical interval. No full late perturbation pass is assumed. Finish with a concrete derived transformation, bounds and a closed-workspace receipt, not just a list of missing inputs.

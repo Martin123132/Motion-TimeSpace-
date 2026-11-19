@@ -1,0 +1,7 @@
+# Conditional question raised by the forward forecast, not by late reference data
+
+The eight self-generated solutions predict negative heavy comoving density at the handoff for three grid modes. The largest k recovers *before* its smaller neighbor. Test whether a finite negative band actually closes, rather than assuming a fixed suppression scale. Use fresh continuous-mode projections at every tested k, never interpolate the archived table of matching amplitudes. The native interface only permits sourced modes; these off-grid modes have no native result to score.
+
+Let N=ln a, x=kτ, h=ℋ/k, u=θ/k, S=δ+3hu and E=8πGa²(ρ+p)/k². From the retained fluid and Einstein equations S_x=C_x−(1+3E/2)u. At a simple crossing S_N=S_x/h. A local coalescence obeys S=0 and S_k=0. For positive S_N and S_kk, the two nearby zeros must approach as k−k_f≈±sqrt[2 S_N (N_f−N)/S_kk]. The total Weyl need not share that zero.
+
+Find the latest positive-going crossing of each sampled trajectory near 0.90–0.985 Mpc⁻¹, maximize that crossing time, verify nonzero derivatives with independent spacings, and test both predicted sides at three decreasing log-time offsets. Compare a finer time step and separate event/transport choices. On the original knots freeze the sign pattern and total matter/Weyl before opening downstream transfers. Seek a dense independently saved reference crossing at k=1; distinguish actual bracketed times from interpolated estimates. A sparse bracket does not experimentally confirm the continuum fold.

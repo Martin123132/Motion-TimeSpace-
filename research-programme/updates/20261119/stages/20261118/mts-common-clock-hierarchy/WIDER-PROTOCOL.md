@@ -1,0 +1,4 @@
+# Prospective extension of the numerical repair
+
+The continuous four-mode test cleared its local stress gates, its full-interval microscopic impulse check and its early-switch endpoint density/current test. Before running the remaining modes, fix the target grid as the entire previously reported 37-node finite band, not just the earlier successes. Compute the 33 missing nodes together with a repeat k=37 anchor; reuse the first four otherwise. Preserve both independent physical matching surfaces. Test the new clock in the matched pressureless and wave response and rolling-cold geometry. Report failed knots and any quadrature errors separately, including near a zero. Compare the independent coarse and fine phase meshes; crossing the time/interface gates will not imply convergence with respect to transverse bandwidth or the thermal model. Historical absorption spectra and rotation velocities are not inputs.
+

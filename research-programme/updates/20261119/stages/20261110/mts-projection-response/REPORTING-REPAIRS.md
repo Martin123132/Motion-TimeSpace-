@@ -1,0 +1,7 @@
+# Reporting failures preserved without changing the mathematics
+
+The original heavy response job completed and saved its coarseT/order8 packet, then failed while printing a NumPy boolean through the standard JSON encoder. `run_response.py` and that failed receipt remain unchanged. `resume_response.py` reconstructs the report from the complete saved packet, converts NumPy scalar report values to Python values and runs ONLY the remaining fundamental responses. The coarse numerical calculation is not repeated. Its function-evaluation count and printed quadrature inverse residual were not saved before the logging failure, so those two report entries remain null rather than being invented.
+
+The first closure-analysis job then hit a display-only abs(list) error while formatting its sensitivity summary. Its numerical packets were not recomputed. `derive_closure_checked.py` repairs that display with an array conversion and uses a distinct receipt. An initial version of this adapter accidentally constructed a cyclic syntax tree and exited before starting any worker/calculation; the list-aliasing error was corrected. No physical code, source bank, gate or numerical result was changed by either display repair.
+
+Use `cold-response-result.json`, `heavy-response-resume-result.json` and `derived-closure.json` as the completed reports. Preserve the failed logging code/receipts. The frozen source hashes and final validation distinguish successful science calculations from these reporting interruptions.

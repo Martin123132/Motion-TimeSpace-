@@ -1,0 +1,10 @@
+# Replay without touching the earlier work
+
+Local Python 3.13, NumPy and SciPy; the existing parent stages and their dependencies must be present as siblings. From this directory, python -B verify_two.py recomputes the scored tables, protected-source hashes, analytic fixtures and offline calendar transfer, and compares the receipt. Existing outputs are never silently replaced by the task writers. For optional online provenance verification, python -B cadence.py check-source reacquires only the pinned 26 TIM text files, verifies their hashes/counts and regenerates the same day/group table **in memory**. It does not fetch fitted residual series or edit the saved calendar.
+
+For a new full replay, make a new sibling stage with these source files and protocol documents, without copying generated packets/receipts. No more than two single-thread workers; check any owner holds. In order:
+1. polar.py (using python -B for every invocation) computes the six launch forecasts. bridge.py freezes their hashes and the operative protocol/calculation files in frozen.json. Inspect the freeze before starting any receiving run.
+2. fall_receiver.py ordinary and fall_receiver.py massive each evolve one original coupled validation grid at a time, capturing both clocks in each trajectory. Do not overwrite a partial packet or restart blindly following an owner hold.
+3. scores.py generates cross-gauge and time-reconstruction tests. timing_budget.py uses those tables. geometric_mass.py tests the non-nodal weak equation on separately archived geometric data; direct scalar channels are comparators only.
+4. cadence.py acquire then cadence.py generates the observational design pilot; for offline replay use verified epta-j1713-observing-days.csv and epta-provenance.json instead. Do not call a cadence projection a data fit.
+5. verify_two.py seal then a separate process running verify_two.py. The frozen forecast is a local ordering/consistency receipt, not an externally timestamped preregistration. The older protected stages were not changed.

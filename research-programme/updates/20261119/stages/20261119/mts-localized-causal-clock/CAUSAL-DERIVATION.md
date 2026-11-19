@@ -1,0 +1,16 @@
+# What travels, what oscillates locally and what gravity measures
+
+On a spherical spatial slice in polar areal coordinates, write ds²=−α²dt²+a²dr²+r²dΩ², f=a⁻², F=αa. The principal part of the retained scalar equation has outgoing characteristic dr/dt=α/a=Ff regardless of the rest mass. In synchronous coordinates ds²=−dτ²+a²dx²+R²dΩ² the corresponding characteristic is dx/dτ=1/a. Both are intersected with the same physical receiver, initially at rest at the specified areal radius. The code compares its proper time, not the coordinate times of two slicings.
+
+The two constrained launches differ only within the annulus. Their canonical momenta are opposite; the scalar energy is even and the scalar radial energy current −f P ∂ᵣh is odd. The mass and spatial metric therefore agree initially, including inside; radial extrinsic curvature Krr=r a³ j follows the momentum constraint and need not agree inside. With equal exterior matter and induced gravitational Cauchy data, the exterior domains of dependence are identical until an outgoing characteristic can reach the receiver, assuming the regular coupled evolution on the tested patch. This argument is local and does not equate changes in a slicing lapse at different coordinate times to physical signals. A smooth compact pulse has no discontinuity that a numerical threshold could identify as an exact front.
+
+For a transparent check, the *flat fixed-background* radial field u=r δh satisfies u_tt−u_rr+μ²u=0 with zero initial displacement and velocity v=r ε g. For these times and radii the backward cone misses the centre. The cone kernel is (1/2) J₀(μ sqrt(t²−(r−ξ)²)) inside |r−ξ|≤t, zero outside: substituting the invariant argument gives Bessel's order-zero equation in the interior; its unit boundary value fixes the initial velocity by the shrinking interval. For μ=0 this is just the integral of v/2. Divide by r to recover the field. Near the first arrival, t=r−b+u₀, b=5.5, a₀=4.5, the leading edge term is
+
+    δh = [b ε/(14 r)] [4/(b−a₀)]⁶ u₀⁷ + O(u₀⁸),     u₀ ↓ 0 from above.
+
+The extra power comes from integration over the newly accessible slice of the support; the Bessel factor is one on the cone. Consequently an effective five-percent time is not a propagation speed. Later the Bessel tail is sensitive to mass. This analytic control is flat, not the coupled curved prediction. The self-consistent models also have different background stress.
+
+For small impulse, reversing the tag cancels the common carrier. The odd scalar stress contains interference terms Π₀δΠ+∂proper h₀ ∂proper δh−μ²h₀δh in the radial pressure, plus perturbations of the metric and observer frame. It is not the squared energy of a standalone pulse. The control's rest energy was replaced by kinetic energy in a *second massless field*; the impulse is still in the first field. This is a specified and falsifiable preparation, not an exclusion of every massless bath, excitation orientation, exterior mass profile or conventional massive source. The model's normalized units do not fix an astronomical occupation.
+
+See CLOCK-FORCE.md for a test using only a freely falling receiver's areal displacement as the target, and ONE-LAUNCH.md for a constrained one-event preparation that matches the *untagged* exterior.
+

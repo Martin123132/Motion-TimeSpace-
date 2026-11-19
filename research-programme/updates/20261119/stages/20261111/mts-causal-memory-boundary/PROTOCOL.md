@@ -1,0 +1,11 @@
+# Nonzero matching-memory transport and missed handover
+
+Authorized 11 November2026: continue from the recovered matching preparation and complete the missed parent/Galaxy exchange. Start01:07UTC, safe check-in by05:07UTC. One numerical worker/thread, CPU4 below-normal, -B,900s guard; no unrelated processes, publication, downloads, new observations, fits or Galaxy edits. Existing coordinator tab is user-owned and stays open.
+
+Science: derive an exact resolved/unresolved evolution with NONZERO initial memory, incorporating time-dependent source maps and current self-gravity before projection. Reuse original k5 preparation, all902 signed weights, matching normalization, masses and2e-5/1e-10 gates. Retain background representation defects. Do not claim that three carrier entries close the other-species dynamics or that finite temporal samples are independent matter species.
+
+First implement and test the initial equation-owned source and memory rates. Distinguish the prepared historical center from the latest available time: a centered finite-width extraction is not a causal point-state at its center. A causal history formulation labels this preparation at its right edge with nonnegative lags; it does not silently move the old matching epoch.
+
+If the initial algebra/source checks pass, test the resolved/unresolved transport on a bounded FROZEN-COEFFICIENT control built from these same original nodes, at two time steps and against independent matrix exponentials. This control freezes background and rest-metric readouts explicitly; it is not a coupled late cosmology run and cannot validate substituting saved future rest sources in one. Keep the full nonzero initial history; include deliberate omission controls. The full coupled causal kernel must retain rest states and background/source-map connection before promotion.
+
+Freeze code, documents, inputs and test horizon before inspecting results. Original matrices/gates and failed earlier bare-moment results remain untouched. No automatic goal resume. Complete one attributed handover only, refresh before every coordinator submission, verify delivery/return rather than treating acknowledgement as completion, and leave both research agents independent.

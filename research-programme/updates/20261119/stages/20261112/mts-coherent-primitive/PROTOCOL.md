@@ -1,0 +1,15 @@
+# Frozen coherent-primitive short-window test
+
+One manual bounded stage; goal paused. Reuse the exact original background/scattering bank,902signed preparation nodes,weights,masses,normalization and nine reporting epochs. No fits,new observations,native reruns,GitHub,communications or changes to other chats. Research writes only this new stage and an additive resume bookmark.
+
+Heavy: evolve each prepared (u,w) together with the previously derived time-dependent background and live heavy scalar self-gravity. Freeze zeta0 and zeta0' from the original coupled constraint, then use zeta(s)=zeta0+s*zeta0' as the primary local rest approximation. Constant zeta is a comparison control, not an assertion that the rest sector is constant. No future state or source value enters these coefficients.
+
+Cold: evolve the native CDM density perturbation with its own live density contribution to the metric, splitting the remaining metric source in exactly the same way. Freeze its own zeta0,zeta0', including native clock and background dilution, and test the same linear/constant-rest alternatives. Do not install a fictitious heavy scalar in the baseline; its dust current/pressure remain zero in the retained frame.
+
+DOP853 uses unchanged rtol1e-10 and normalized atol1e-12, maximum-step subdivisions32/64 over the original short span, with the original nine reporting epochs. Heavy initial norms are the phase-pair amplitude sqrt(u0^2+(w0/omega0)^2), with omega0 times that amplitude for velocity; cold uses abs(delta0), with1 only for an exactly-zero control. These are numerical scales, not adjusted physical parameters.
+
+Read out physical D/Q/P from each propagated pair and exact background before taking the fixed signed sum. Anchor the predicted source increments to the previously retained initial weighted source; record the raw initial recapture discrepancy separately and include it in the working allowance. This is initial-state matching, not a fitted offset or rescaling.
+
+Freeze all trajectories before loading the checked target readouts. Primary:linear rest,64subdivisions. Preserve the32refinement and constant-rest control regardless of outcome. Report raw discrepancies, a numerical-only working allowance, and a stricter allowance additionally containing abs(linear-constant). The latter is an approximation-sensitivity diagnostic, NOT a rigorous bound on neglected rest curvature. Neither a small control difference nor agreement on this exposed trajectory establishes a long-time closure.
+
+Numerical allowance retains the prior reference budget, absolute-weighted32/64 source differences, arithmetic/summation discrepancy and initial recapture error. Require unchanged numerical2e-5/algebra1e-10 gates, clear failed statuses, and no promoted fit or tolerance relaxation. Independently check initial first/second derivatives against the native coupled readout, analytic constant-coefficient controls and output reconstruction. One CPU4,below-normal,single-numerical-thread worker at a time;900s guard. Close all task-owned processes and verify input hashes at completion.

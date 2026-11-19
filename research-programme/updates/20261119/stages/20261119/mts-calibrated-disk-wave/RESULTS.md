@@ -1,0 +1,21 @@
+# Milky Way: one calibrated mass, two force directions
+
+The retained disk-loaded wave can hit the outer Milky Way speed from both earlier preparations without changing the particle pole, force coupling, disk shape or branch. Calibrating only the total wave mass gives **1.7038840 × 10¹¹ solar masses**. The matched NFW comparator needs **1.42792 times** its original halo acceleration. Both give 224.03 km/s at 17.58 kpc by construction. This is an abundance inferred from one radius, not predicted from galaxy formation. The two original, uncalibrated preparations have not been replaced.
+
+| Ordinary source or anchor | Wave RMSE | NFW RMSE |
+|---|---:|---:|
+| Reference | 6.55 | 6.00 |
+| Disk and bulge −10% | 9.48 | 7.62 |
+| Disk and bulge +10% | 4.77 | 5.44 |
+| Outer speed −1.91 km/s | 7.82 | 7.30 |
+| Outer speed +1.91 km/s | 5.67 | 4.87 |
+
+All errors in km/s across **the same 11 non-calibration Cepheid bins**. The foreground checks change both models and are not a selection of the most favorable foreground. Relative ranking is not robust. For the reference model, mean signed residuals are −4.19/−4.41 km/s (wave/NFW); largest absolute misses are 15.02/10.78. At the innermost 6.58 kpc the wave is 15.02 km/s slow. Compared to NFW on the same foreground the wave is 9.86 km/s slower there but 4.32 faster at 13.50 kpc. The differences are reproducible in the refined calculations. The reported statistical-only widths on individual Cepheid points do not explain each model's deviations, even when a shared anchor uncertainty is carried; full covariance/systematics are unavailable. Comparable mean errors are not equivalently good fits at every radius.
+
+**Vertical gravity:** the frozen total predictions at R=8.3 kpc and height 1.5 kpc are **−2103.69 / −2117.38 (km/s)²/kpc**. Both lie within 0.57 quoted widths of each red-clump determination. A difference of 13.68 cannot distinguish models with quoted errors of 619 and 774. Even shifting evaluation R from 8.1 to 8.5 kpc changes total wave Kz from −2208 to −2006; this is sensitivity, not a refit of the observed frame.
+
+**A different tracer without changing either fit:** on all 38 Eilers red-giant bins the speed RMSE is **12.57 / 15.81 km/s**. On the 22 bins inside the Cepheid span it is 9.83 / 8.17; on all 13 beyond the outer anchor it is 17.14 / 24.52. Both are too fast on average in the outer region (+14.68 / +22.13); the largest outer errors are also where some stellar bins have large uncertainties. The wave improves the aggregate older-tracer error, not all radial ranges. The paper's systematic uncertainties and the common Milky Way prevent treating this as independent model selection.
+
+**A stronger physical discriminator than either average:** near R=8.3 kpc the calculated midplane circular-speed slope is **+1.56 / −1.59 km/s/kpc**. It remains positive for the wave and negative for NFW in each predeclared one-at-a-time physical variation; not checked over their full joint nuisance space. This is a weakness of the wave against the declining inner Cepheid curve. Nonzero TGAS noncircular motions prevent a direct significance test against the local stellar streaming slope. For 7–9 kpc and |z|≤1.5 kpc the wave/halo masses from direct density are **4.138 / 3.223 billion solar masses**, although the two models give similar vertical gravity. Including the *same* ordinary component gives **9.394 / 8.478 billion**. The discrepancy is mostly in the force through the radial walls. This is a conditional, falsifiable mass-and-force prediction, not a mass measurement. See `DERIVATION.md`.
+
+**Numerical limits:** both higher-quality comparisons agree with the reference speed/vertical grid at better than 20 ppm (largest 11.8 ppm on vertical force). The coarser grid misses that target: 76.5 ppm speed and 180 ppm vertical. Main radial/vertical force component readout by a second Poisson method agrees within 2×10⁻¹³ relative. The independently evaluated column identity is within 0.47 ppm at 0.01-kpc radial difference spacing. The smaller perturbation check on the implicit calibration tangent is within 1.87 ppm of peak slope; wide physical changes have finite nonlinear corrections, not a relaxed tolerance. Model truncation is far more important than numerical error here. No timing measurements, public upload or free new coupling.

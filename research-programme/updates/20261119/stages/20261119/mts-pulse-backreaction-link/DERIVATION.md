@@ -1,0 +1,24 @@
+# From scalar stress to two freely falling clocks
+
+Use the parent's synchronous spherical gauge: ds²=−dt²+a²dx²+R²dΩ², R=x√C, a=√A. The worldlines x=constant are neutral, freely falling clocks, not the charged dust. Time is their proper time and x is initial areal radius. Compare the same clock labels and initial velocities. Units 4πG=c=m_scalar=1. This is the retained minimal scalar and Einstein–Maxwell matter; the two tiny additional stress contacts are off in this experiment.
+
+**Two distinct expansions.** Write the scalar as h+εu and count its entire stress by a formal factor z; hold its gravitational mass parameter fixed. The signed event-minus-quiet response sought is ∂ε at ε=0. The leading prediction is z∂z∂ε at z=0, evaluated with z=1, not a regression of a coefficient on z=1 simulations. The ordinary material and metric evolve nonlinearly at order zero. Both h and u obey massive Klein–Gordon on this evolving ordinary metric. Write Π=∂t h, S=∂x h/a. Their bilinear stress insertions per unit ε are
+
+    δρ = Π δΠ + S δS + h u,       δp_r = Π δΠ + S δS − h u,
+    δp_t = Π δΠ − S δS − h u,     δj = −Π δS − S δΠ.
+
+If Y=(A−1,C−1,K_r,K_t,m/x³,b,p,Q), the order-zε evolution is V'=DF_ordinary(Y)V+F_scalar. Only the K_r,K_t,m/x³ equations have explicit sources: A(δρ−δp_r+2δp_t), C δp_r and −C(δp_r ∂tR+δj ∂xR/a)/x. Induced baryon, velocity, charge and mass changes propagate through DF; freezing them would not give the linearized Einstein–Maxwell solution. The stored first-order calculation evolves this system rather than sourcing the metric from h² alone.
+
+**The constraint is part of the prediction.** On the time-symmetric slice let F=1−2m/x. The radial mass constraint is m'=x²[b√F+(Q/x²)²/2+(F h'²+h²)/2]. Its first variation at fixed b,Q obeys
+    δm' + x(b/√F+h'²)δm = x²(F h'u'+hu),     δm(0)=0.
+The first-stress version uses F_ordinary and omits h'² in the integrating factor. Set δA=2δm/(x F²), δC=δK_r=δK_t=0. Preparation N leaves u exactly as previously tested. M adds one shell bump v, with coefficient −δm[u](3)/δm[v](3) from the **full quiet launch constraint**, never the clock output. Outside x=3 the difference equation is homogeneous and both preparations keep the same electric charge. Hence matching δm(3) suffices to match ADM mass in the exterior continuation; the mass at x=12 alone is not an ADM mass measurement. At finite ε solve the nonlinear difference constraint for the shell amplitude, not just the first-order projection. M and N are *different scalar preparations*, not the same pulse conditioned after inspecting its clock signal.
+
+**Clock map.** For either radial direction with increasing path length s, dt/ds=a and d ln(ν_rec/ν_emit)/ds=−∂t a=K_r/a. Vary both the metric and the sampling time along the ray. In particular δt'=δa+(∂t a)δt, δL'=δ(K_r/a)+∂t(K_r/a)δt. Reflection happens on the second clock at the perturbed arrival time: the second leg has an extra emission-time derivative. A returned frequency is the product of the two frequency ratios, not the sum of two maxima. We reuse the parent quintic strip interpolation and Runge–Kutta ray integrator, generalized only in the clock labels and emission times. No astrophysical noise model enters.
+
+**Causal exterior control independent of the grid evolution.** Ahead of the disturbance the ordinary exterior has Reissner–Nordström mass M=m+Q²/(2R). A neutral clock falling from rest at areal radius x obeys R̈=−M/R²+Q²/R³. Differentiating this equation at fixed M,Q gives J̈=(2M/R³−3Q²/R⁴)J for J=∂xR, with J(0)=1,J̇(0)=0. Then a=J/√(1−2M/x+Q²/x²). A derivative with respect to the mass at fixed charge predicts the entire *leading*, prefront N clock signal at fixed x. For exact M matching the prefront event-minus-quiet signal is zero by local uniqueness: the exterior initial fields agree. Do not assert a zero signal after the wave enters the link, or replace a moving scalar disturbance by a changed central mass at all times.
+
+**Why dividing by seed amplitude can be misleading.** Expanding the full launch mass as m=m₀+εm₁+ε²m₂, the quadratic coefficient obeys
+
+    m₂' + x(b/√F+h'²)m₂ = x²(Fu'²+u²)/2 − 2x m₁ h'u' − b m₁²/(2F^(3/2)).
+
+Use the same integrating factor as for m₁. For the fixed-number pulse, the first-order integral changes sign within the packet and is exceptionally small; the positive quadratic scalar energy is not similarly cancelled. The seed magnitude where the two mass contributions are equal is |m₁/m₂|, without fitting a clock or a launch. For M, let u include its linear compensator; the required additional shell amplitude at quadratic order is −m₂(3)/δm[v](3). This is why source preparation must distinguish mass matching at first order from actually matching the mass of finite pulses. For the full quiet scalar background the Reissner–Nordström comparison using the mass change at x=12 is an approximation, not an assertion of electrovacuum outside x=5.

@@ -1,0 +1,28 @@
+# A conserved monopole on the retained Newtonian branch
+
+**Conventions.** Inherited pole and weak-field common-metric source; positive quadratic heavy field; no exchange current or empirical disk kernel added. Set s=r/(S λ_C), τ=t/(S² λ_C/c), with S the saved illustrative scale; the potential in these coordinates is the physical Newtonian potential times S²/c². The fixed positive density used to normalize the wave near the origin is 0.1 GeV/cm³. Radial inner products below use s² ds; absorb the common angular factor throughout. The dimensionless enclosed mass is converted by KG/(S MSUN) in the retained solver. Only spherical perturbations are considered.
+
+Write ψ=e^(−iEτ)(u+a+ib), with real u, Lu=0 and L=−∇²/2+Φ₀−E. At first order ȧ=Lb, −ḃ=La+uV. For a=εp cos Ωτ, b=−εq sin Ωτ this gives
+
+    Lq=Ωp,       Lp+uV=Ωq,       (s²d)'=2s²up.
+    δM_wave/ε=s²d cos Ωτ,         δj_wave/ε=(qu'−uq') sin Ωτ = Ωd sin Ωτ.
+
+Integration of uLq and self-adjointness give ⟨u,p⟩=0 for Ω≠0. Gravity redistributes wave mass, not the total number at this order. The conserved number is that of the nonrelativistic wave, not an exact particle charge of the parent real scalar. At a finite reflecting outer wall p=q=0; use regularity at zero and V+sV'=0 at the outer wall in vacuum. Normalize p(0)=1. We varied the boundary from 22 to 42 scale radii.
+
+**Live ordinary matter.** The spherical circular-orbit shell with conserved specific angular momentum has Lagrangian radial displacement εξ cos Ωτ; its perturbed enclosed mass is −εs²ρ_bξ cos Ωτ. Thus V'=d−ρ_bξ and (κ²−Ω²)ξ=−V' inside the occupied region, κ²=u²+ρ_b+Φ₀'/s from the background force gradient and angular momentum. Eliminating V' gives (u²+Φ₀'/s−Ω²)ξ=−d. Use the susceptibility only where matter exists. The rigid branch keeps the same ordinary potential but not the displacement. These circular counterstreams are not a measured baryonic disk. At leading order of the real scalar carrier expansion the pressure sidebands relative to its fast harmonic have coefficients ε(p+q)/u and ε(p−q)/u; the slow density and number flux must change with them. That is why an imposed multiplier on the oscillatory pressure alone is not this solution.
+
+**Energy exchange.** With arbitrary time-dependent real a,b,ξ and self-consistent potential V, the conserved quadratic energy is
+
+    E₂=⟨a,La⟩+⟨b,Lb⟩+½⟨δρ,V⟩
+       +½∫s²ρ_b(ξ̇²+κ²ξ²)ds,    δρ=2ua−(s²ρ_bξ)'/s².
+
+In taking its derivative, the symmetric Poisson Green function converts the gravity term to ⟨δρ̇,V⟩. The wave part cancels 2⟨uȧ,V⟩ and the material work cancels ∫s²ρ_bξ̇ V' ds; the ordinary mass flux vanishes at its surface. Numerically include the field-energy surface term at the outer boundary. Compare turning and velocity quadratures, and check ordinary-shell work on its own scale, not as a residual of the much larger wave energy. Positivity here is evaluated for this mode, not asserted for every perturbation.
+
+**How an independently supplied assembly history excites the mode.** For the isolated tangent let J=⟨q,p⟩, C=⟨q,a⟩/J and B=⟨p,b⟩/J. The projected linear equations in an *additional* externally supplied ordinary potential U_b give Ċ=ΩB and Ḃ=−ΩC−⟨p,uU_b⟩/J. This follows by self-adjointness of L and reciprocity of the perturbed Poisson operator. A spatially constant potential cannot drive C because ⟨p,u⟩=0. For a localized shell rearrangement with zero total added mass, integration by parts gives ⟨p,uU_b⟩=−½∫s²d U_b' ds. The kernel and its normalization are derived; U_b and the state before it are inputs.
+
+For the next test the donor moves to the receiver and back. The cumulative ordinary mass perturbation is μ [H_in(s)−H_out(s)]h(τ), where H is the regularized Beta(3,3) cumulative on [0.5,1.5] or [2,4] respectively; μ is 10⁻⁴ of the illustrative unperturbed wave mass, h=sin²(πτ/T) during [0,T] and zero otherwise. The ordinary radial current is −μ[H_in−H_out]ḣ/s²: mass is conserved locally. A physical positive-density realization begins with at least the displaced mass in the donor; subtract the same untransported donor baseline. Using the isolated kernel gives the leading response as μ→0; donor self-consistency and the external mechanical work have not been solved. This is a specified thought experiment, not observed galaxy formation.
+
+Starting with no *difference* excitation, C̈+Ω²C=Fh with F=−Ω⟨p,uU_peak⟩/J. At the end Ċ/Ω+iC=(F/Ω)e^(iΩT)∫₀ᵀ h(t)e^(−iΩt)dt. The finite duration can excite, rotate, or cancel this mode: at exactly two mode periods the integral vanishes by Fourier orthogonality even though matter moved. This null applies to this projected mode at first order, not every mode or nonlinear response. The next field-level test is frozen in formation-probe-forecast.csv.
+
+**Observable connection.** At a fixed dimensionless phase, spherical homology gives M(R)=C_M η H(s), s∝Rη, η the inverse scale and H=s²Φ_wave'. For an isolated wave, ∂M/∂lnη=D=C_M η(H+s³u²); at fixed normalization the mode adds εM₁ cos Ωτ, M₁=C_M η s²d, with exactly zero total derivative at infinity. Holding the enclosed wave mass at the same 17.58-kpc speed cap requires d lnη/dε=−M₁(anchor)/D(anchor) at peak. Hence the anchored derivative is M₁(R)−D(R)M₁(anchor)/D(anchor). H≥0 and H'≥0 make the anchor mass increasing with inverse scale for each positive snapshot, so the saturating scale is the upper wave envelope under the non-outward-other-force assumption. This compares *different* normalizations at a fixed phase and inner speed. It is not mass creation during the evolution of one halo, nor an orbit model for a Cepheid in a rapidly changing potential.
+

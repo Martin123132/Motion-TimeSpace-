@@ -1,0 +1,14 @@
+# Replaying the private calculation
+
+Use the retained local Python 3.13 with NumPy, SciPy and psutil and the existing matching-stage native source/object/toolchain. No installation or global binary replacement. All workers use one numerical thread; the Python helper solely arranges process-start environment for the Windows Fortran runtime. An initial attempt to set the environment after loading the library stopped before producing a state; it was not used. The compiled control uses a real output event, not a scale threshold inside a numerical step. The modified files are listed as unified diffs for both isolated engines. The local copies of their libraries and wrappers are reproducibility artifacts, not active services.
+
+Run verify.py with Python -B for a read-only integrity/physics check. To regenerate, use a fresh private sibling under the same parent, copy the scripts and protocol documents there, never overlay outputs. In order:
+
+1. build.py and build.py --leading. Both restore a clean compiler workspace. The retained toolchain is on the same drive.
+2. evolve.py takes case (heavy/cold/lcdm), post-event factor (1 or 0), base/fine, optional --stock, --leading, --cutoff 49 or --radial. Run heavy on/off at base and fine, cold on/off at base and on at fine, lcdm on at base, and heavy on at base with --stock. readout.py tests the 99 switch. Separately run heavy 0 fine --leading and cold 0 base --leading; these use the leading law, NOT zero pressure.
+3. reduced.py freeze before the z=49 runs. Its sealed inputs contain only the common seed and smooth background, not future perturbations. Run heavy 1 fine --cutoff 49 and heavy 0 fine --cutoff 49, then reduced.py compare, leading.py, force_balance.py and wave_stress.py. The anchored corrections use the pressureless history by design; only the stand-alone forecast was frozen before the independent native z=49 counterfactual.
+4. radial_source.py generates the exact new early modes and applies the five original pressure checks. Run heavy 1 fine, heavy 0 fine, cold 1 fine, lcdm 1 fine each with --radial, then forest_mapping.py. Rows outside trust have blank results, not zero.
+5. verify.py --seal writes closeout.json only when it does not exist. Later verify.py checks it without modification. No fit, publishing or external service.
+
+Key machine-readable results: scale-test.csv (force/gas amplitude and power, four-epoch worst); green-response.csv; geodesic-and-source.csv; leading-stress.csv; reduced-forecast-test.csv; forest-radial-inputs.csv; forest-bins.csv; band-matrices.csv. Results include sign, normalization and actual bin labels rather than only aggregate comparisons. Native initial-*.bin files contain int32 length then float64 k, conformal time, a and the active solver state in little-endian order. All have corresponding mode indices in result.npz. Raw diagnostic packets, including the full new early radial-event packet, remain local.
+

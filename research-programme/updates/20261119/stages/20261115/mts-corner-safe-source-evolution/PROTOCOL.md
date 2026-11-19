@@ -1,0 +1,13 @@
+# Frozen protocol: propagate the corner-safe external source
+
+One manual private stage. The persistent goal stays paused. No native replay or rebuild, new data, fits, galaxy changes, GitHub or browser handoff. Reuse the sealed corner-safe curvature polynomials and the successful saved quadratic evolution, not the earlier failed diagnostic interpolants.
+
+Primary: evolve the same retained coupled own-field/metric equations, replacing only the external quadratic source continuation by its tested piecewise-curvature integral. Keep all 902 signed preparation nodes, original background/physical grids, nine reporting epochs, normalization, parameters and bank fixed. DOP853 rtol=1e-10, normalized atol=1e-12, maximum step duration/32 and duration/64. Numeric gate2e-5; algebra gate1e-10.
+
+Prepare a stable per-node integral of K(t)-K(t_i), where K=(D_o'',Q_o''). Local clipped-cell primitives avoid subtracting large global antiderivatives. Verify the implementation against the preceding independently implemented cell integrals, saved boundary source values, and synthetic exact controls before evolving. Freeze code and inputs before scoring the exposed native references.
+
+Independently evolve the exact linear difference equation deltaX'=A deltaX+B deltaF, deltaX(0)=0, with deltaF equal to that source remainder. Scale this small diagnostic state using the initial forcing and the already saved curvature envelope, not fitted residuals. This is numerical error-state scaling, not a change to physical preparation normalization. Use the same DOP853 tolerances and32/64 refinement. The separately evolved full-state difference must agree within its propagated numerical/arithmetic allowance; if it is too small to resolve by subtraction, say so.
+
+Score both cases at all eight later reporting epochs, including signed weighted D/Q/P, native boundary state and metric force. At the final epoch compare the resolved difference-equation response with the previously saved absolute source-variation envelope. Keep original target uncertainty, initial recapture, evolution refinement, weighted arithmetic and source-reconstruction working uncertainty separate. The existing response envelope is final-epoch-only; no continuum certificate is inferred from finite source probes.
+
+One numerical worker/thread at a time, CPU4 below-normal, Python -B, 900-second guard and owner holds. Save failures rather than relaxing gates. Close all task-owned work and verify exact identities before reporting. Earlier sealed stages are immutable; only this new directory and an additive current-resume entry may change.

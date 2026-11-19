@@ -1,0 +1,21 @@
+# From a material disturbance to a clock observable
+
+Take the same spherical synchronous clock labels, matter density number per coordinate volume b(e)=b₀+e b₁, and enclosed charge Q(e)=Q₀+e Q₁ in **both** experiments. The conserved matter perturbation is compact and compensated; Q₁ vanishes beyond launch radius 3. The quiet scalar is initially √z h(r) with zero normal derivative in time, independently of e. The empty solution is z=0, the original occupied solution z=1. Let C(e,z) be one frequency ratio minus unity or a proper delay for a specified emission. The finite observable studied is
+
+    X(e,z) = [C(e,z)−C(0,z)] − [C(e,0)−C(0,0)].
+
+This removes the ordinary gravitational effect of the same actuator and the quiet clock offset. It does **not** remove every change of enclosed mass. Nor is it a claim that two otherwise identical real sources, with different occupations, have been observed.
+
+**Constraint.** F=1−2m/r. At e=z=0 write p=∂ₑm, s=∂zm, u=∂ₑ∂zm, W=r b/√F and L a = a′+Wa. Differentiating the retained radial constraint at fixed radius gives
+
+    Lp = r²[√F b₁ + Q Q₁/r⁴],
+    Ls = (r²/2)[h²+F h′²],
+    Lu = −r p h′² − [r b₁/√F + b p/F^(3/2)] s.
+
+All three solutions start at zero at the centre. The last line is the change in scalar binding and in the gravitational response to the material at launch. There is **no** initial perturbation to the scalar profile in any of these three equations. Even a number-compensated material event does not require u to vanish at large finite radius. In particular the mixed initial proper radial length derivative is u/(r F^(3/2))+3ps/(r² F^(5/2)), not the matter-induced scalar energy norm. The exterior comparison uses m(12) plus the usual exterior electric term Q²/24; it is an equivalent monopole diagnostic, not an assertion that the occupied exterior is electrovacuum.
+
+**Propagation.** Linearizing the scalar equation in e is the inhomogeneous Klein–Gordon equation in the preceding stage. The scalar stress in the occupied spacetime now perturbs both the radial and angular metric; a second solve at the same occupation retains its quiet scalar stress, but sets δh and δΠ to zero in forming its variation. This second solve retains the explicit metric dependence of the scalar spatial gradient and all changes in the ordinary matter current. Subtract its clock response from the full response to isolate what changes when the driven scalar is allowed to feed back. Subtract the empty response from the second solve to obtain the loading term. Only their sum is required to be a physical Einstein–matter solution. The split is specified in this common clock slicing; it is not a coordinate-free partition of gravitational energy.
+
+**Dilute prediction at finite e.** Under h→−h, the minimally coupled quadratic stress is unchanged. For small z, evolve the unscaled test scalar Hₑ on the ordinary dynamic metric appropriate to the finite material preparation e. The coefficient ∂zg at zero solves the ordinary linearized Einstein–Maxwell–material equations sourced by T[Hₑ] (and the initial mass constraint s at that e). The variation of the scalar due to this metric correction first contributes to the stress at order z². Transport both the light rays and reflection on this varying geometry, obtaining Kₑ=∂zC(e,0). The parameter-free leading prediction at a specified occupation is z(Kₑ−K₀), including the gravitational effect on the path as well as local clock rates. Test against real finite paired solutions at the specified z. This is not a claim that a dense delay scales exactly as z or that any galaxy selects this occupation.
+
+**Mass-only null.** In the exterior electrovacuum approximation let J(m,Q) be the clock observable and Jₘ its derivative from the archived freely falling radial geodesic solution. With fixed exterior charge, the predicted dilute excess for a finite e from a pure mass change is z[Jₘ(m(e),Q)s(e)−Jₘ(m(0),Q)s(0)]. At the zero-amplitude tangent this is z[Jₘu+Jₘₘps]. The second term reflects a different background material mass; dropping it is not taking the derivative of the same observable. Compare null, clock response and residual in the previously used outer windows: early emission ≤1.7 and late ≥2.8. These windows distinguish a prefront control from later propagation but do not, by themselves, identify scalar radiation.

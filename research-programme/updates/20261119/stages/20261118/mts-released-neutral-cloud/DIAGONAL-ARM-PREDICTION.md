@@ -1,0 +1,10 @@
+# Read out signed deformation without tracking a coordinate frame
+
+Before evaluating a length signal: prepare equal neutral test separations in the local (S ± eφ)/√2 directions at the same launch event, both with zero covariant initial relative velocity. At a specified proper time measure the ratio of their local lengths. An axial shear should change this ratio in first order, even though it changes the mean volume only in second order. This is an infinitesimal freely falling gradiometer, not an extended rigid arm, light travel time or mock observation. Normalize to source spin independently of the emitter study, not to its measured ratio. The spherical starting geometry gives the same unspun length in the two directions. For equatorial launch and signed source amplitude ε, predict
+
+    log(L+/L−) = ε H + O(ε²),
+    H = 4 JT²/(JR²+JT²) ∫₀^τ [Q B_pole/(r ε)] (JR/JT) dτ'.
+
+Off the equator multiply the first-order signal by sinθ. In the integral B_pole/ε is the already emitted field per unit spin evaluated along the unperturbed worldline. In SI replace Q B_pole/r by G Q B_pole/(c²R) and integrate proper seconds. This formula uses the background stretches (observable with other arms) and a magnetic field, not a free transfer coefficient. A spin-reversal null isolates the odd part. The formula is for initially untwisted zero-net-spin material and no initial transverse wave. A source with preexisting exterior rotation has a homogeneous term; a generic quadrupolar emitter requires its own even-parity calculation.
+
+Derivation: if the two first-order off-diagonal entries of the parallel-frame Jacobi matrix per sinθ are x and y, the derivative of the log length ratio is 2(JR x + JT y)/(JR²+JT²). The transported-frame angle cancels between x=JT γ and y=2JT ∫o JR/JT−JR γ. This is invariant under final-frame rotations. Cross-check the magnetic-field integral against the stored separation matrix and reverse arm labels and a final-frame rotation as algebraic controls. Use both saved meshes, both scalar preparations, ordinary and nonradiating controls; score rather than presume convergence of scalar-minus-ordinary differences on their own peaks.

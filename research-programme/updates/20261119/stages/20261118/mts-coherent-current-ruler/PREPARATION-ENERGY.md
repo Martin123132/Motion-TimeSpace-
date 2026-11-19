@@ -1,0 +1,14 @@
+# An independent physical restriction on the remaining source freedom
+The inferred source weights describe material velocities; they are not alternative values of G. On the launch slice the material has no radial motion or axial Maxwell potential. At leading spin order its azimuthal proper momentum per unit mass is ℓ(N) sinθ/r. At fixed material number the *excess proper kinetic energy* relative to rest is one half its square times dN, averaged over angles. The angular average of sin²θ is 2/3. Consequently the normalized energy coefficient is
+    W(v) = (1/3)∫₀ᴹ [ℓ_v(N)/r(N)]² dN = vᵀWv,
+    Wᵢⱼ = (1/3)∫₀⁵ D(r) ℓᵢ(N(r))ℓⱼ(N(r)) dr.
+Here D is the conserved launch-coordinate material density, dN=r²D dr; use N=M I_{r²/25}(3/2,7) from the saved preparation. Equivalently compare the derivative at zero of ∫[√(1+ε²(ℓ sinθ/r)²)−1] dN. This is positive kinetic energy on this slice, not total ADM energy, not a measured budget for any real source, and not a variational principle selecting the least-energy state. Ratios in numerical examples refer to this explicitly defined matter quantity. A known physical L* restores the energy unit c⁴L*/G and ε² multiplies the normalized energy.
+
+Two independent signed measurements restrict the three weights to a line. Write v(t)=u+t n where u=(a,b,0) is the two-current alias, and n=e₃−u. Thus e₃ (the original new profile) occurs at t=1. There is no magnetic readout at either calibration clock for n. No bound on the unmeasured amplitude comes from those two measurements alone; remain in the small-spin regime. An **independent upper limit Wmax**, if available, gives a sharp interval
+    t₀=−uᵀWn/(nᵀWn),  Wmin=uᵀWu−(uᵀWn)²/(nᵀWn),
+    |t−t₀| ≤ sqrt[(Wmax−Wmin)/(nᵀWn)].
+Wmax<Wmin rejects the whole three-shape slice for that observation, rather than forcing a fit. Even an exact energy normally leaves two roots. The minimum is a bound, not an initial-state assumption.
+
+Run the actual null direction n through its own constraints and full dynamics, without adding the two measured fields to its force. Its ruler coefficient Lₙ is the coefficient of t². The two known endpoint calculations then determine the entire line:
+    L(t)=Lᵤ+t(L₃−Lᵤ−Lₙ)+t²Lₙ.
+At each clock take the minimum and maximum of this quadratic on the kinetic interval, testing both ends and any stationary point inside. This gives a field-and-launch-budget-conditioned bound on the *total* directional response for this slice, not just on its electromagnetic term. Freeze the prediction for the midpoint t=1/2 before evolving that separate material current. Include Wmax equal to each endpoint cost as illustrations, clearly marked as source-derived examples, not independent measurements. Arbitrary radial shapes, different scalar preparations, exterior tides, and higher spin orders are not covered. A measured upper bound on kinetic energy would be useful only if obtained without using the late ruler.
