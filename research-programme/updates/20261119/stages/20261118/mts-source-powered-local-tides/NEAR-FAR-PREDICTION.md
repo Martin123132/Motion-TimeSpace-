@@ -1,0 +1,4 @@
+# Freeze: a fixed-radius mass curve is not yet a Bondi mass curve
+
+On the two static charged preparations, write the *potential* A=a(u)+b(u)/R+O(R^-2) at fixed u=t−x(R). The leading l=1 exterior equation gives b'=a; use vanishing waveform in the pre-burst region. Then A_t=a'+a/R+…, A_r|t=−A_t/B−b/R²+… . Integrating the signed mass flux gives δm(R,u)−δM_B(u)=−(2/3)a(u)²/R+O(R^-2) in the transient. This is fixed by the dipole, not a fitted extrapolation. Test on R=7,14,28,56,112,224,448 and 1792 with the same waveform and time origin. Check the sign, the first correction and the approach to the previously sealed Bondi curve on its own peak. Finite R is not obliged to pass the infinity tolerance uncorrected. Use the same 2e-5 gate where claiming a numerically accurate match. Retain results that do not pass.
+

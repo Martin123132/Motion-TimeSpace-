@@ -1,0 +1,9 @@
+# Nested third-cell source refinement; no new physical history
+
+The sealed parent's513MTS and509baseline nodes are embedded as even nodes of1025 and1017 points. Every inherited phase, N, integration coordinate, inverse clock, speed, source packet and source-phase/current control is preserved bitwise. Only odd midpoints are new, evaluated from the same saved phase polynomial and original physical phase equation. The source grids are frozen before native evaluation; distributed odd probes precede four batches.
+
+sample_sources_v2.py differs from the sealed third-cell class only in the read-only history report location: THIRD_CELL/balanced/history-02. controlled_sources_v2.py and the numerical projection class are copied unchanged. No state solve, reset, new background, parameter, action term or physical-grid adjustment is introduced. Original source8/12 endpoint maps remain inherited, not re-evaluated. Baseline and MTS share the same refinement rule and unchanged accuracy gates.
+
+The refined coarse/coarser integrals and conditional Cauchy expressions must reproduce the parent's fine/coarse values bitwise. Numerical control changes are retained separately. The refined third cell is added to the sealed SECOND-CELL two-cell accumulation using the same terminal adjoints and reference normalization; it is never added to an already-three-cell total. All per-cell pass flags and already-accumulated absolute control changes survive.
+
+The active saved-only diagnostic is diagnose_refinement.py. Its source mathematics is unchanged from diagnose_quadrature.py; its decision wording distinguishes a successful refinement from a still-unresolved one instead of assuming another refinement is needed. The unexecuted original diagnostic is retained because the frozen grid recorded its source hash. No diagnostic launches native work or changes pass flags.

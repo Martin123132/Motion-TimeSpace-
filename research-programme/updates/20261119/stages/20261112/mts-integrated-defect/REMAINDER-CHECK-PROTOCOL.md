@@ -1,0 +1,9 @@
+# Direct remainder-variation diagnostic
+
+The primary integrated-defect prediction is frozen and scored. Its source residuals pass, but the predeclared sampled-remainder derivative allowance fails for heavy pressure. Keep that result, its failed control and its prediction unchanged. Do not promote the cubic derivative variants.
+
+This added diagnostic checks variation by integration, without differentiating sampled R. Read out the same equation-owned source curvature through the eight already-saved continuation epochs (original indices1991..2900) from the unchanged original preparation. Verify the first902 rows are bit-identical to the preceding capture and full standard preparation parity passes. These later curvature readouts are reference data for diagnosing the approximation, not new predictive inputs.
+
+Form R=Y''-C_b E_b'-C_v E_v' and integrate its difference from R(node) over each fixed-lag interval. The primary integration representation is a natural cubic through these existing R samples. Separately evaluate PCHIP and piecewise-linear representations on exactly the same samples; integrate their polynomials analytically, in local coordinates, to avoid subtracting nearly equal large antiderivatives. Record signed differences and an absolute-weighted envelope across both alternatives. No interpolation choice is selected from fit performance.
+
+Compare the direct measured variation and this finite representation envelope against the unchanged source gate and residual budget. A passing observed diagnostic is not a certified error bound or an autonomous prediction: it uses the already-exposed coupled reference trajectory. If representation uncertainty exceeds the gate, record that rather than certifying the frozen remainder. Do not edit the prior primary verdict, model, tolerance or existing reference artifacts.

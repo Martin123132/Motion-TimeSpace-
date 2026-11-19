@@ -1,0 +1,10 @@
+# Exact source versions and preserved correction
+
+- `collect_full_metric.py` completed all three wavelength families. Its source, native checks, saved predictions and thermal tables remain unchanged.
+- `full_envelope.py` produced the original `full-01/result.json` envelopes. Those original results are retained but superseded for final interval certification by `full-01/envelope-repair-02.json`.
+- `validate_full_metric.py` failed its much tighter70-digit identity comparison. Its exact source and `validate-01` start/end/logs are retained, not silently overwritten.
+- `diagnose_full_reference.py` isolated the issue: saved native fluid normalization and thermal coefficients differ by floating-point roundoff. Dropping their algebraic contribution from Delta prevented an exact high-precision identity. The first-state difference was -1.2850759902e-24; the physical metric difference was3.6637732719e-31 Mpc. Diagnostic output is not accepted evidence by itself.
+- `full_envelope_v2.py` retains that cold/radiation normalization difference and its derivative. `repair_full_envelopes.py` recalculates only the interval envelope and reuses all qualified native rows, thermal tables and trajectories. No scattering rerun, grid, physics coefficient, fitting choice or tolerance changes.
+- `validate_full_metric_v2.py` is the accepted validator when its result passes. It uses unsimplified momentum rows, a direct coordinate solve, independent70-digit complex differentiation, background fixtures and thermal cubic checks. Shared stress-row formulae are explicitly disclosed and separately qualified against the native implementation.
+- The fixed70-digit arithmetic floor1e-55 in derivative verification is an internal high-precision roundoff check, not a relaxation of ALGEBRA1e-10 or the numerical2e-5 gate. Complex steps1e-30 and1e-35 are cross-checked.
+- `audit/result.json`, `RESULTS.md` and `closeout.json` give the final accepted scope. An instantaneous metric sensitivity envelope is not a completed free-generator or transport budget. All prior source versions remain available.

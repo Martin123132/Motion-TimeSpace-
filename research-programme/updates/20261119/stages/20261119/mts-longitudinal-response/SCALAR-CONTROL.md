@@ -1,0 +1,6 @@
+# Minimal massive control: a signal larger than the stress contacts
+Use the zero-contact equations only. The material Raychaudhuri and massive Klein–Gordon identities at the regular centre are
+    ℓ̈ = ℓ̇²/3+(1−η²)ν+2ḣ²−h²,
+    ḧ = ℓ̇ ḣ−h+D²_rest h.
+At η=1 the ordinary material-plus-electric focusing vanishes; scalar stress is left. Reuse the two scalar-seed wavenumbers 4 and 24 on the very same massive preparation. Hold out the central density readout: predict it from the scalar history and initial density alone. In a second reconstruction use only the time-dependent radial curvature of the scalar in the material rest frame, and propagate both central variables. The spatial curvature is an input in that check, not a solved microscopic state. In neither reconstruction use the observed central density output or fit a transfer factor. Test both η=.8 and the independent exact η=1 control at 160 and 320 cells/unit; keep relative errors on the induced central signals. Also compare two initial-data-only predictions: the leading flat-space ripple (regular j₀, frequency √(1+k²)) and scalar propagation on the independently evolving ordinary Einstein–Maxwell dust geometry followed by scalar stress focusing. Do not treat either approximation as exact on an inhomogeneous gravitating background. No celestial observation is used here.
+

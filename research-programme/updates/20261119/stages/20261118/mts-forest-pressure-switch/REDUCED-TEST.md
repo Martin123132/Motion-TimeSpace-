@@ -1,0 +1,10 @@
+# Additional prediction after the z=99 switch test
+
+Freeze the following extension before comparing a z=49 pressure switch. No calibration coefficients or changes to the domain/precision budgets. Integrate the linear CDM trace, relative baryon density and velocity, and relative heavy density and current; use the retained expansion, absolute density fractions and the existing heavy mass. The leading dispersive stress follows from the first term of the exact small-k/(am) expansion, not a fit. Make two independent sorts of calculation:
+
+- Stand-alone clustered-sector prediction: seed from the single exact z=99 or 49 state, for both pressure-on and dust. Give the reduced solver background expansion/density only; after the seed it has no access to future density, potential, velocity or gas perturbation histories. Freeze its z=49-switch forecast before running the independent full hierarchy with a switch at 49. Test both absolute predictions and the paired contrast.
+- Conditional correction about an existing pressureless evolution: solve for the self-gravitating pressure response using that pressureless evolution only, never importing the pressure-on perturbation history. Separate its accuracy from a stand-alone prediction. Treat radiation/slow-sector response, gas pressure/drag and massive-neutrino perturbations omitted from the reduced source as possible errors. Zero-heavy null must vanish.
+- As a separate control replace only the post-99 exact stress coefficient by its leading dispersive value in the complete Einstein hierarchy. Keep all metric, baryonic and radiation responses active and initial conditions identical. Test both initial history and final gravity; a controlled linear input is not a nonlinear absorption prediction.
+
+Evaluate the same four forest epochs and three physical channels used in the main protocol. Report 2e-5 numerical discrepancies rather than changing tolerance, plus the pre-existing 1% and 5% physical comparison budgets. Preserve all failures; do not promote a model from one successful mode. No scored data or new model selection.
+

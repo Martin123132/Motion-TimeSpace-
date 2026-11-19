@@ -1,0 +1,6 @@
+# Prospective nonzero check of the sufficient norm threshold
+
+After deriving the finite-time bound and evaluating the initial-only thresholds, before evolving this control: keep the complete nonlinear central ordinary source, free phase-zero prepared geometry, radius, clock and comparison tolerance unchanged. Scale the nonzero prepared scalar amplitude to **1/160** of the original (occupation fraction 1/25,600), solely as a mathematical positive control, not a galaxy parameter or observational fit. The full benchmark remains in the record; its global energy certificate is insufficient for the target, even though the directly measured ruler shifts are small.
+
+For regularity class B,V≥0.98, ∫C dt≤0.03, the geometry margins in COMOVING-GR-BOUND.md and T=6.4, the maximum initial H sufficient for both axes to remain within a 2e-5 change in normalized separation is 8.90351e-8 at r₀=2.5 and 8.62858e-7 at r₀=6. Expect this nonzero state to lie below both; determine its actual constrained initial H rather than assuming exact amplitude-square scaling of the metric. Then read its independently integrated trajectories against the same ordinary control. The result does not certify continuum metric bounds from sampled extrema, and does not infer that the parent selects this amplitude.
+

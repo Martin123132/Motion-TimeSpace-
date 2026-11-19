@@ -1,0 +1,3 @@
+Crash recovery at 2026-11-09 16:16 UTC: only common.py, run_stage.ps1 and PLAN.md existed. No numerical attempt receipts or surviving stage workers. The direct-source seal remains authoritative. Original 20:00 UTC cutoff preserved.
+
+Endpoint refinement before sampling: the native dense evaluator chooses the first segment whose right edge is at least N. At an internal left edge, evaluate the right-sided limit at nextafter(left,right); derive quadrature weights for these actual floating nodes over the FULL original segment. No width is dropped and no derivative is overwritten. This avoids feeding the preceding polynomial derivative into the new segment endpoint. Record the one-ULP evaluation displacement explicitly.

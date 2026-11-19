@@ -1,0 +1,13 @@
+# Live predictive memory on the original signed extraction
+
+Previous goal turn: verified progress. The short-window current-state correction passes against native state, sources and actual evolution derivatives. This stage tests that same corrected model on the ORIGINAL902-node extraction, with current rest feedback instead of a prescribed future rest history.
+
+Use native indices1991..2892, original initial native perturbations at1991, and zero initial full memory correction. No new reconstruction of an endpoint from future data. All physical parameters, parent background tables, source coupling, native binary, signed weights and gates2e-5/1e-10 remain unchanged. Use the accepted CheckedLiveMemory implementation, preserving the prior failures and repairs.
+
+Freeze the physical derivative and integration step sizes using the short-window absolute time span, rather than enlarging every step when moving to a longer window. Physical metric steps are the prior span/4096 and span/8192. Independent checker steps are the prior span/768 and span/1024. Verify their adequacy across the full new window before propagation; passing in the former window is not acceptance here. DOP853 rtol1e-10 and initial-only-scaled atol1e-12 remain fixed. Integration maximum steps use the prior span/128 and span/256. Physical output epochs are not changed.
+
+Native setup must reproduce the original full output parity and saved extraction capture before reusing the original phase source interface. Rest fields and their correction evolve from CURRENT states. The original native trajectory is a comparator, not a forcing table. Background coefficients remain the retained native background solution/table, not a newly derived averaged background.
+
+Run separate baseline/MTS streams for the three step/metric configurations in bounded restartable batches of at most256 original intervals. Every batch saves its original output nodes, raw normalized final state, fixed initial normalization, source readouts, actual evolution derivatives, hashes and an end receipt. The next batch requires the previous worker's terminal completed receipt and exact restart matching. Never restart from a failed receipt or overwrite a completed packet. The signed extraction is scored only after full ordered coverage is verified, with duplicate restart endpoints removed and original signed weights unchanged.
+
+One numerical worker/thread, CPU4 below-normal,900-second per-worker deadline and four-hour safe check-in. No GitHub, Galaxy edits, new data downloads, browser, relay, timers, subagents or unrelated process changes. Release native state on every exit; leave no continuing task-owned worker at final closeout. The full goal remains active.

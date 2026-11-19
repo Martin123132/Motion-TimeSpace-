@@ -1,0 +1,12 @@
+# Local verification and replay
+
+Retained Python 3.13 on Windows with NumPy, SciPy and psutil. Run one worker with the -B option. Read-only check: from this directory run `python -B verify.py`. It verifies parent fingerprints, decoded packets, frozen predictions, independent constraints, control failures as well as passes, and recomputes the waveform/curvature scores. No external observational input is required. The existing nonlinear solver and independent optical predictors use different coordinates and input conversions. A held-out radius is a synthetic test of these equations, not a held-out observation.
+
+For a full replay use an empty sibling folder in the same parent, containing the scripts and Markdown only. The writers use exclusive creation. Do not overwrite the live results. In this order, with the same interpreter and libraries:
+1. For each charged-*.npz filename in the supplied receipt run charged.py with the count, eta and scalar amplitude from that name (and scale 1). Run reference.py, response.py, exterior_bound.py.
+2. For each original trace-*.npz entry run flux_trace.py count eta amplitude. Run trace_test.py and source_test.py. Shell energy in the old trace includes the original diagnostic; the repaired comparison reconstructs the correct shell speed from saved histories. Both columns are retained.
+3. Run rn_wave.py first. Check frozen-wave.json against the SHA in RN-WAVE-PREDICTION.md's successor SELF-GRAVITY-PREDICTION.md. Only then run flux_trace.py count eta amplitude held for each held-trace-*.npz entry and run heldout.py.
+4. Run selfgravity.py first; it creates the independent 960/1920/3840 forecasts, then the second forecast receipt. Verify the latter hash against sg_test.py. Run sg_test.py acquire, then sg_test.py score. This tests fresh trajectories for each of the predeclared amplitudes, not a fit. The 3/4 preparation and radius 19.25 were not used to identify the previous miss.
+5. Run turning_clock.py, initial_clock_direct.py, then initial_tangent.py to compare the tiny initial curvature three ways. None changes the frozen prediction or acquires another nonlinear history.
+6. In the original folder the signed closeout is always read-only. A new environment or different floating-point implementation may produce different bytes; compare its scientific tolerances separately and never bypass a mismatch on the signed data. Use the original closeout to verify a byte-identical copy. No GPU, continuation worker or web service is required.
+

@@ -1,0 +1,5 @@
+# EROS-2 selected-source exposure, before outcome comparison
+
+Use Hamadache et al., arXiv:astro-ph/0601510v2 (2006), survey inputs and estimator only. Do not access event light curves or digitize measured depths in the input pass. The historical literature is not formally blind. Preserve the previous compact-lens checkpoint. No recalibration or new smooth-halo microlensing term in either model.
+
+Extract monitored field positions, actual selected-source counts, time denominator, selection cuts, duration and impact convention before any comparison. Distinguish an observation baseline from the denominator used in the efficiency simulation. If field labels are rounded or selected-source locations uncertain, state that and propagate it where possible. Field centers are not CCDs, and all-star catalog counts are not selected clump counts. Separate common compact-foreground predictions from model-dependent dynamical responses. Freeze any model calculations before comparison. No outcome score if a denominator, source-distance selection or spatial mask is not matched.

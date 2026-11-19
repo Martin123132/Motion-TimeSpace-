@@ -1,0 +1,9 @@
+# Baseline identity repair, not a relaxed tolerance
+
+The half-family MTS comparison passed all20 terminal channel gates. The baseline's physical and signed identities also passed, but a relative Cauchy-quadrature check failed on a nominally zero residual: roughly1e-40 in the source and at most7.4e-43 of a physical output. The finite-polynomial product and the original cubic source are mathematically identical in the phase-free baseline, but subtracting their separately rounded evaluations creates a noise signal with no smooth-convergence expectation.
+
+The exact baseline has J=0, a=0 and q=f, hence g=MJ-J_N+f-q=0. Evaluate q through the SAME retained RealForcing call in this branch, before subtraction. This is an exact limit of the derived equations, not a fitted floor, clipped residual or looser gate.
+
+For half, repair_baseline_identity.py verifies every old residual sample equals the independently recomputed source-minus-product rounding difference under ALGEBRA1e-10, evolves the original source for the paired time controls, and reprojects the already solved source-independent adjoints onto the analytically zero g. Adjoint states/terminal maps are reused unchanged; the new projected zero packets are explicitly labelled analytical reprojections, not newly integrated adjoints. The previously failing noise packets and comparison remain historical evidence.
+
+For unstarted balanced/double paths, versioned sampling and slow-response scripts apply the same exact baseline identity from the outset. MTS retains its complete nonzero residual and unchanged mean/source products. Comparison gates and numerical controls remain2e-5 and1e-10; no MTS calculation is rerun as part of this repair. Total baseline physical error is still measured against its original reference and is not declared zero.

@@ -1,0 +1,6 @@
+# A lower-density prediction, not an identification of the source
+
+The physical-unit check exposed a factor of 4.64 million between the test field density and the earlier illustrative 0.1 GeV/cm³ comparator at the inner clock. Do not simply divide a fitted clock waveform by that number. Recompute the leading dilute response about the ordinary charged background, keeping baryon and electric data fixed. Write h=√z H, P=√z P₀. The two preparations are retuned only by the *same exterior energy constraint*, not by clocks. Determine the limiting compact coefficient, then compute the coupled first metric variation. Check direct frequency variation against the derivative of the delay; compare two spatial grids, two imaginary derivative steps and a real quarter-density experiment against the original full-density run. Keep any finite-amplitude approximation miss separate from the usual 2e−5 numerical gate. The illustrative mass, the chosen local density and the spatial shape are fixed assumptions, not external evidence for population or detection. No sky residuals.
+
+In a pure dilute limit the scalar still propagates on the charged curved geometry and the leading changes in metric, travel time and frequency are order z, not order √z. Model time and length are unchanged; changing the field while holding baryons fixed is not scaling the whole universe.
+

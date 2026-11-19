@@ -1,0 +1,11 @@
+# Can a second matter field independently measure the missing metric force?
+
+On the retained exact two-field chart, both canonical perturbations couple to the **same** C′=−z, with coefficients B_i=φ_i′/k fixed by their backgrounds. This follows separately from the two branches of MTS_Evolve, not from a shared fitted forcing coefficient. On the control with zero heavy population there is no heavy measurement.
+
+Hold out the slow perturbations after initialization. Set C′_0 to the accepted switched history minus the linear (or monotone control) interpolation of the original-knot switched-minus-native growth drive. Call u=C′_N−C′_0. Given a field endpoint R and its left neighbor L, the two independent heavy observations are
+
+    m_h = y_h(R) − Φ_h(R,L)y_h(L) − ∫ Φ_h(R,x)e₂ B_h(x) C′_0(x) dx = ∫ K_h(x) u(x) dx .
+
+For the slow observable at 1999, K_s(x)=Φ_s(1999,x)e₂ B_s(x). Regress **kernels**, not observations: the Gram projection of each K_s row onto known heavy kernel functions comes from the equations only. Subtract the projected heavy moments from the predicted switched-minus-native slow discrepancy. Stabilize each pair of heavy coordinates at its own right endpoint; scale its displacement row by interval width before Gram normalization. Compare integration and interpolation refinements, plus a zero-heavy control. Any agreement is a cross-field reconstruction conditional on measured heavy endpoints, not a slow-data-free prediction of the entire model or a new empirical fit.
+
+In addition test identifiability under even stronger information: assume exact CDM density increments as well as the heavy pair and growth values at the knots. For s=(x−L)/(R−L), choose u=s²(1−s)² v. Project the tapered slow kernel orthogonally to the two tapered heavy kernels and the tapered unit (CDM increment) kernel. A nonzero residual explicitly gives a smooth-within-cell source preserving both end values and first derivatives, zero CDM increment and both heavy responses, yet changes the slow endpoint. Reintegrate the constructed witness on a different quadrature. This is a counterexample for the **readout inverse problem**, not two demonstrated solutions of all Einstein–Boltzmann equations. A physical bound would require a bound on the remaining forcing or its equation of motion, not another fit parameter.

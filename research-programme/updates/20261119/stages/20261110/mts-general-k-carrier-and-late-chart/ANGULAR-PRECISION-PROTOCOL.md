@@ -1,0 +1,7 @@
+# Independent angular-mean precision check
+
+The original frozen test completed ten exact symbolic identities and 514 numerical comparisons. Two of the 32 independent angular-mean checks failed the unchanged 1e-10 algebra gate: k=0.2, mu=300 at 64 and128 nodes, with errors4.57687e-10 and4.69530e-10. All other comparisons passed. The original validation.json, failed test receipt, code and frozen inputs remain unchanged.
+
+The mean is obtained by cancellation of much larger oscillatory entries in a primitive coordinate operator. To distinguish an algebraic coefficient error from arithmetic loss, independently reevaluate ALL32 angular means, not only the two failures, with mpmath at60 and90 decimal digits. Keep both64/128 phase grids and the same chosen binary64 parameter values, physical coefficients and1e-10 gate. Differentiate the primitive matrix by complex-step arithmetic (steps1e-30/1e-45) before its inverse/product, rather than evaluating the proposed harmonic expansion as its own reference.
+
+Compare both precision results with the unchanged binary64 analytic mean, compare precisions with each other and compare64/128-node means. Preserve the raw high-precision matrix entries and the original binary64 errors. No new fit, state evolution or native call. If this resolves the discrepancy, the accepted suite will explicitly use the higher-precision means while retaining the original double-precision failure as numerical evidence; it will not relabel that failed run as passed.

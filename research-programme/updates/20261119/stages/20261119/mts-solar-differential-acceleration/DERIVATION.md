@@ -1,0 +1,29 @@
+# Common-metric acceleration from a solar observer
+
+## 1. What the binary clock predicts here
+
+Use the leading weak-field, low-velocity gravitational term in a timing observable, not an absolute acceleration or the location of an unseen center. With the sightline pointing from the solar-system barycenter O to the emitter E, (Ṗ/P)_Gal = n·(g_E−g_O)/c. This follows by differentiating the first-order longitudinal Doppler shift at fixed direction; the moving direction adds the transverse-motion (Shklovskii) term, which is not gravitational. Intrinsic binary evolution, other accelerations, light propagation and higher-order clock terms are not included. We use a simultaneous present-day force snapshot; finite light-time/velocity corrections would matter for precision timing. The ancestry already fixes the force normalization; there is no new timing coupling. One (km/s)²/kpc gives 1.0227×10⁻³ mm/s per Julian year. See [Phillips et al.](https://doi.org/10.1103/PhysRevLett.126.141103) for the observable.
+
+In the [orbit release's frame](https://zenodo.org/records/2661108) O=(−8.1,0,0) kpc; n=(cos b cos l,cos b sin l,sin b). Use E=O+dn for the [authors' v3 binary geometry](https://github.com/thomasdonlon/Empirical_Model_MSP_Spindown_Accels/tree/6cb4e31f6b2e732f5973b024634507c2e4f59988/v3). The reference host origin need not represent the compact cloud's center. Repeat with both points measured relative to that moving center, re-registering the ordinary disk and the smooth reference together. This second choice differs physically from adding a spatially constant acceleration, which cancels identically.
+
+## 2. Use the full field, not the central gradient expansion
+
+For a saved ψ=ψ₀+δψ, Poisson is linear in the density, not the amplitude. Build multipoles of 2 Re(ψ₀*δψ)+|δψ|² with all density angular orders through twice the wave cutoff. Project on the vacuum-matched spherical Bessel basis, multiplying by −1/k². Evaluate the radial derivative and the real solid harmonics' tangential derivatives separately at E and O. The equilibrium monopole is integrated from its own physical mass profile. This gives the frozen equilibrium, its rigid translation to the wave centroid and the actually driven field at the same positions. Their differences define bulk translation and internal shape. They are signed vectors before projection, not fractions obtained by subtracting norms.
+
+Independently, for each density multipole integrate I=∫₀ʳ ds s²(s/r)ˡρ(s)/r and J=∫ᵣ^edge ds s(r/s)ˡρ(s), splitting the panels at every endpoint. The potential is −(I+J)/(2l+1), its radial derivative [(l+1)I−lJ]/[(2l+1)r]. Compute the angular gradient independently with displaced Cartesian sky directions, and difference the two endpoint forces. This bypasses the potential basis and its interpolant. The centered-shell check uses the *finite* observer force of the original problem; the solar-system observer is pointlike here. Disk and bulge are attached only as common readout foregrounds in the frozen-history calculation. A static comparison halo has no live satellite wake.
+
+## 3. Put the ordinary potential into the field equation
+
+For the separate stationary calculation, keep the pole and each supplied total wave mass M fixed. In parent units the stationary energy is
+
+E[ψ]=½∫|∇ψ|²+∫(Φ_cloud+ηΦ_bar)|ψ|²+½∫Φ_self|ψ|²,   ∇²Φ_self=|ψ|²,   ∫|ψ|²=M.
+
+Volume integration here uses the parent's angular-average normalization and radial volume r²dr. Variation gives (−∇²/2+Φ_cloud+ηΦ_bar+Φ_self)ψ=μψ. A constant chemical-potential shift cannot absorb a disk potential that varies within a spherical state's support. η=1 includes the reference disk and bulge in the wave operator; η=0 is the original stationary control. The flattened disk and truncated bulge parameters are fixed from [MWPotential2014](https://docs.galpy.org/en/v1.3.0/reference/potential.html), with normalization contributions 0.60 and 0.05 at 8 kpc and 220 km/s. Its NFW reference supplies the remaining 0.35, but is not inserted alongside the MTS wave. These are imported Galactic sources, not derived MTS parameters.
+
+Minimize at fixed norm in the real, axisymmetric, equatorially even sector. Radial waves use Dirichlet Bessel modes; each Poisson multipole matches an exterior vacuum field. Use hemisphere quadrature to resolve the thin disk about the midplane. Check the projected Euler residual, the scalar virial 2T+W_self−∫ρ x·∇Φ_external, and the normalization. Evaluate v_c²=R∂_RΦ(R,0) with the full aspherical wave source. Exterior cloud and disk/bulge forces are added once. This produces equilibrium candidates, not a proof of a global minimum against every symmetry-breaking disturbance. Disk matter remains prescribed, not live; the old forced history belongs to the old Hamiltonian.
+
+## 4. Derive the response rather than scaling a fitted curve
+
+Write Lδψ=(H−μ)δψ+2ψ∇⁻²(ψδψ). Project perpendicular to ψ to remove the normalization direction. For δlog η at η=1, solve P L P δψ=−P(Φ_bar ψ) with ∫ψδψ=0. For a fractional occupation change, write δψ=ψ/2+u, ∫ψu=0, and solve P L P u=−P L(ψ/2). Find δμ from the remaining parallel equation. The derivative of the gravitational density is 2ψδψ: integrating it at the midplane gives the wave contribution to δv². Include the direct ordinary force only when perturbing the ordinary normalization. At stationarity the derivatives of total energy are ∫ρΦ_bar and μM respectively.
+
+These equations were tested both against independent constrained nonlinear solutions at fractional steps ±1/128 and ±1/256 and against the norm, stationary, and energy identities. A centered Richardson difference cancels the leading step-size term. This is a local derivative in a specified family, not a probability for the parameters, not a fit, and not a proof that occupation is fixed by cosmology.

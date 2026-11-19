@@ -1,0 +1,5 @@
+# Additional direct check of the small gravitational time delay
+The original real ±0.5 and ±0.25 delay comparisons remain in the primary ledger even when they miss. They subtract quantities dominated by the common unperturbed flight. At smaller increments several discrepancies increase rather than decrease.
+
+Keep the same field/grid, clock coordinates, initial velocities, event matching and 2e−5 target. First re-evaluate the signed event/quiet path difference directly on the original real banks by integrating it along the quiet ray, including the retarded reflection. Then use preselected symmetric ±2 and ±4 increments to increase the absolute subtraction signal. Run both signs, both operators, both quiet/event cases without an adjustment based on their answers. These are a numerical conditioning check of the frozen linear derivative, not new physical coefficients. Compare the two wider slopes separately, and also the zero-step fourth-order estimate (4 D(2)−D(4))/3. Record the residual on the small gravitational delay itself.
+

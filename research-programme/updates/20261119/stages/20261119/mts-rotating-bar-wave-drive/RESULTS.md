@@ -1,0 +1,33 @@
+# Does the Milky Way bar prepare the missing galactic wave?
+
+**On the retained ground state, the rotating bar drives an escaping matter wave, not a resonantly occupied bound quadrupole. Its calculated local force is much too small to supply the missing inner polar acceleration.** This result follows from a driven calculation with the old kinetic and gravitational couplings; no wave fraction, bar speed, source strength or duration was fitted to the acceleration.
+
+### The comparison with the sky
+
+At the published central pattern speed, the table includes the instantaneous gravity of the stars, the relaxed axisymmetric background and, for MTS, the coherent response to every stored even bar harmonic m=2 through 32. The reference and the most helpful sampled positive stellar addition are shown. Forces in units of 10⁻¹⁰ m/s² at |z|=1.5 kpc; polar is measured in the previously fixed northern convention. The directions are not arbitrary fitted viewing angles.
+
+| Location and baryons | MTS polar | Static spherical NFW + same stars | Admitted local polar interval |
+|---|---:|---:|---:|
+| 6 kpc, reference | 0.428807 | 0.420081 | 0.573396–0.768992 |
+| 6 kpc, +0.943 billion solar masses | 0.457994 | 0.449031 | 0.573396–0.768992 |
+| 8.3 kpc, reference | 0.255482 | 0.249244 | 0.237523–0.363099 |
+| 8.3 kpc, same addition | 0.261122 | 0.254750 | 0.237523–0.363099 |
+
+At 6 kpc in the positive endpoint the direct stellar **bar alone** supplies 0.0050894 polar; the *induced* wave supplies just 0.00010643. The remaining shortfall is 0.115403. Even the triangle upper bound allowing any phase of the retained harmonics gives 0.462359, below 0.573396. Radial acceleration in this case is −1.69683 for MTS and −2.14823 for static NFW versus [−2.50685,−2.27503]; the spherical control is closer radially but also misses. Both satisfy the solar-radius *polar* control and miss its separate radial band. These local cuts are not a joint likelihood or a new SPARC result. See forces-versus-local-data.csv, including the reflected bar orientation.
+
+### Where the energy goes
+
+At Ω=33.29 km/s/kpc, specific binding is 55,361.15 (km/s)² on the reference background. The leading m=2 drive supplies 133,160.00 (km/s)². The difference is **positive 77,798.85 (km/s)²** at infinity, not the energy of a trapped state. The escape threshold for this transition is Ω≈13.84 km/s/kpc. The sign remains positive at all 26 saved background–speed combinations. The probability bound on direct transitions into all frozen bound states is 7.57×10⁻⁶ or less on the reference even at the slowest speed; it is not a bound on every possible collective response. The fully coupled result was calculated separately.
+
+For the reference m=2 response the outflow is **388,374 solar masses/Gyr**, i.e. 1.79971×10⁻⁶ of this saved wave per Gyr. With self-gravity feedback disabled it is 1.64450×10⁻⁶/Gyr. The other 15 computed harmonics raise the live total only to 1.80009×10⁻⁶/Gyr. All these are model rates in a steady imposed pattern, not measured loss or amounts integrated over the age of the Galaxy.
+
+An independent projection of the second-order mean source on the **original quadrature** gives −4.430717579×10⁻⁷ in dimensionless number units; the outgoing surface current is +4.430717574×10⁻⁷. Their relative mismatch is 1.19×10⁻⁹. This determines the sign and magnitude of secular ground-number transfer even before solving the full second-order density. At 6 kpc the radial sideband number current is 1.3436×10⁻⁷; the angular-momentum current divided by mκ is 1.4232×10⁻⁷. They should *not* be identified inside the source. The projected source, torque including internal gravitational stress, and boundary flux pass separate checks. At leading order the bar must supply both unbinding and asymptotic kinetic energy (about 42% and 58% respectively). A closed, permanently periodic halo with no incoming or replenishing flux cannot support this particular driven solution without losing bound occupation.
+
+### Evidence and limits
+
+- Ordinary gravity: independently integrated Newtonian potential and all force components at four sites; largest extra-bank control discrepancy 1.17×10⁻⁶. Near the inner polar probe the intermediate source bank differed from direct gravity by about 4.6×10⁻⁴ relative; the finer source, not that intermediate bank, is used for the sky totals.
+- Wave numerics: independent free Green solutions of open and closed waves pass to 7.18×10⁻⁹ relative or better; 50 mesh/source comparisons are retained without dropping failures. The summed force and rate on the two full-harmonic cases pass the unchanged 2×10⁻⁵ mesh check. Angular channels 14→18 pass for m=2,4,6,8. A nearly cancelled m=28 radial amplitude fails the raw relative spline-derivative test on both backgrounds; see m28-radial-cancellation.csv for the independent differentiated Poisson integral, not a relaxed threshold. No infinite all-harmonic convergence claim. Not all speeds were swept for every subleading harmonic.
+- On the difficult added-mass endpoint the independent m=28 radial integral at 6 kpc changes by 3.89×10⁻⁵ relative from 240→300 steps per length unit, then by 1.39×10⁻⁵ from 300→360, inside the original tolerance. That last absolute change is 2.13×10⁻²³ acceleration units. This is a refinement test, not an error bound on the full sky measurement. The retained raw failure does not drive the force shortfall.
+- The [OGLE red-clump bar shape (Cao et al.)](https://arxiv.org/abs/1303.6430) is used with the retained **7.354-billion-solar-mass central excess**, removed from the original spherical model. This is not Cao et al.'s inferred total bar mass and is not a direct weighing of the wave. The assumed tracing of gravitating stellar mass by this shape and the retained ground population affect the outcome.
+- [Clarke & Gerhard](https://doi.org/10.1093/mnras/stac603) supply 33.29±1.81 km/s/kpc. The 41±3 near-side statistical estimate from [Sanders et al.](https://arxiv.org/abs/1903.02009) is a sensitivity check, not an independent combined likelihood; including their far-side data shifts their result. [Lim et al.](https://arxiv.org/abs/2305.13358) infer local acceleration from nearby Gaia stars assuming dynamical equilibrium; these data do not give an observed full-ring average.
+- The original outer speed anchor still calibrates the mean mass normalization. No formation-derived local occupation, measured lifetime, or live collisionless NFW wake has been inferred. This calculation tests a specific proposed way of populating the wake. It does not rule out a different galactic preparation, or determine the whole time-averaged second-order force. The next calculation and its conservation controls are in NEXT.md.

@@ -1,0 +1,13 @@
+# Derive a preparation-owned matching state before late evolution
+
+Authorized by Martin: derive matching initial state from saved preparation; only test late evolution if checks pass; compare baseline and MTS without changing tolerances. Started11 November2026 00:38UTC; safe check-in no later04:38UTC. One numerical thread/worker on CPU4 below-normal,900-second worker guards. No GitHub, Galaxy edits, relay, new observations or unrelated process actions.
+
+Use the ORIGINAL k=5 early packet, original a225-w6-d8 projector and matching normalization, not an inverse from two averaged numbers and not D0 or an arbitrarily chosen phase. Recover the phase/stress cross moments and background moments from that saved preparation. A signed time projection is not presumed to be a positive ensemble: test positivity and distinguish a moment representative from the original coherent state.
+
+Keep the original902 selected epochs,29-column design, signed weights, width6/degree8 and saved source normalization. Derive a source-compatible fixed-center moment state with the mass-coefficient correction explicit. Recover its otherwise unconstrained fourth cross moment from the saved b*w history, not from a pressure fit. Test its factorization, exact physical source readout, inherited background weight and projected local equations. Preserve the gauge product corrections rather than silently commuting gauge conversion with averaging.
+
+The prospective state is an effective matching representative, not a new fundamental field or a proven positive physical phase ensemble. Its ordinary local quadratic generator must match the saved projected rate at2e-5 before it can authorize a late forward calculation. Derive and save the residual as coefficient correlations, force correlations, representation defects and the explicit state-map connection. A constant residual inserted by hand is not an evolution law.
+
+Compare cold dust with its own inherited normalization and the same projector, and reconstruct the retained slow scalar in both branches without imposing a heavy-field closure on it. Algebra/source identity gate1e-10; numerical/source reconstruction and rate gate2e-5; original pressure-over-mode gate2e-6 is recorded separately and not substituted for pressure-relative accuracy. No tolerance changes or optimized phase windows.
+
+Freeze inputs/code before examining computed gates. If the matching-rate or background-weight gate fails, do not launch late evolution under a guessed state. Finish with the constructed state and an explicit derived residual, retaining all failures and leaving no worker running.

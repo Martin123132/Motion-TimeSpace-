@@ -1,0 +1,11 @@
+# Local handoff and reproducibility
+
+Run the retained Python 3.13 with -B in this folder. NumPy/SciPy use a single numerical thread. The original mode seal and non-claim assumptions remain authoritative; there are no fits in this stage.
+
+- verify_stage.py checks both levels of forecast receipts, the parent and its sources; rebuilds the excited mode and full spectrum; independently reconstructs signed coordinates from complex snapshots; repeats both energy analyses, material checks, inverse source bounds and all wind catalogue calculations offline. The final seal is create-only.
+- replay.py runs one nominal direct evolution and one fine weak-source reference-balanced evolution again in exclusive temporary sibling folders. Both outputs must be byte-identical to the stored packets. The remaining arms are checked through independent field, energy and source calculations and stored hashes, not asserted to have been byte-replayed.
+- The 15 direct packets cover five space/time combinations × three positive masses. The 18 balanced packets cover six numerical choices × the same masses. Each contains all three durations; the direct solver also contains its matched static arm. Initial-condition correction and historical source hashes are recorded in NUMERICS-REVISION.md. extended.py and balanced_refine.py add only the stated resolutions.
+- Wave frequencies, projections, mass scopes and cutoffs are frozen in the parent and predictions.csv. The primary comparison is linear; numerical single-arm deviations and initial error-budget failures have not been removed. Direct waveform, original error budget, refined coordinate budget, balanced net work and the alternative spectral work have separate tables. No individual row count is a count of independent galaxies.
+- cloud_source.py is an optional acquisition step, not part of replay. VizieR prepends a retrieval timestamp to new responses; the original byte-verified cached table is the source for this stage. CLOUDS.md separates catalogue measurements, prior wind-model inference, and the new conditional response.
+- No external handoff, publication or changes to other projects. Next theoretical target and physical controls are in RESULTS.md.
+

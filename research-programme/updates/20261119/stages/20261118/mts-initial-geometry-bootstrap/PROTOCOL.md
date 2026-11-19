@@ -1,0 +1,8 @@
+# From initial data to metric margins
+
+Parent receipt: 2ec01956932aed50c5e46b069f8362e18b899542d391019258f87a245ab47762, mts-coupled-spherical-tides-20261118. Keep its equations, G, ordinary mass per shell, prepared phase-zero profile, duration (coordinate 6.5, matched proper 6.4), radii 2.5 and 6, tolerance 2e-5, units and full-strength and 1/160 controls. No new fitted or observational input.
+
+First prove bounds on every shell, including the regular centre by a limit, not just two detectors. Use a conservative first-exit box: R/label in [0.98,1.02], normalized radial separation J in [0.95,1.05], polar speed <=0.02, compactness <=0.01; conserved ADM <=0.010 and Euler energy <=0.0008 to be checked, not supplied as measurements. For the scalar use an initial characteristic norm including one radial derivative and propagate it with a trial ceiling 0.001. Close the weighted ordinary density gradient |r rho_r| at 0.003; do not assume any measured later metric derivative or prescribe an occupation. If the inequalities do not improve the box, record this rather than increasing the tolerances. Distinguish the existence/lifespan question from estimates on any classical solution. Compare the resulting sufficient amplitude range to the earlier saved states, whether or not they pass.
+
+Check the opposite implication independently: an arbitrarily small integrated one-derivative energy need not impose arbitrarily small curvature at the very centre. Test analytic constraints for a concentrating sequence; do not confuse this with a failure at the old off-centre probes. Reuse the signed ordinary, small and full histories as controls. No heavy solver, research workers, GitHub or changes to the earlier experiment.
+
