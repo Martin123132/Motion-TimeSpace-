@@ -1,0 +1,5 @@
+# Checking this run
+
+Use Python 3.13 with NumPy and SciPy, numerical libraries limited to one thread, bytecode generation disabled and assertions enabled. Run `py -3.13 -B verify_stage.py` here for read-only verification of the finished stage. The two immutable input stages, their seals, and native solver modules are identified in `response_io.py`. Exact incoming paths and digests are recorded in the method/forecast receipts relative to the post-checkpoint workspace. The compressed state packets are local research data; a documentation-only release will require access to those inputs to rerun the experiment.
+
+The calculation order was: `evolve_response.py`, `visibility.py`, `score_response.py`, `constraint.py`, `launch_rate.py`, `absolute_constraint.py`, `row_work.py`, `three_state.py`, `retarded_gap.py`, then `gap_photons.py`. The receipt for each forecast precedes its readout comparison; the description of each reduction states where supplied coefficients or archived comparators enter. Do not overwrite the sealed run to experiment with different coefficients. No process needs to remain running to use the results.

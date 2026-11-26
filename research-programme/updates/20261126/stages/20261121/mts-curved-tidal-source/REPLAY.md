@@ -1,0 +1,5 @@
+# Reproduce locally without repeating formation
+
+Use the retained Python 3.13 environment and the original directory layout. From this folder run `python -B verify_stage.py` for hash, coverage, and paired detector checks. To repeat the numerical observations, run `python -B time_space_tide.py GRID SIGN` and `python -B radial_sources.py GRID SIGN` with (640,1), (640,-1), and (320,1). Then run `python -B compare_tides.py`, `python -B newton_test.py`, and `python -B metric_witness.py`. Generated tables may be replayed in place; the local writer rejects differing bytes. No long formation trajectory is restarted. Short forward/backward readouts are limited to four steps each and do not overwrite a restart.
+
+The stage needs the local sealed formation and derivative-transfer families plus the earlier local project imports, NumPy, SciPy and SymPy. Output includes both genuinely different hosts and the matched cold branch, not a new observational sample. The public LMC force tables are not an input. No files or workers are required outside those inherited dependencies and this local stage.

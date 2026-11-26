@@ -1,0 +1,30 @@
+> Public reading copy: local links are mapped to released material or marked unavailable. Machine-specific passages, where present, have been omitted. See the inventory for the original digest.
+
+# Follow the mass, then let the retained gravity move actual test stars
+
+**Private · 21 November 2026.** Using FIRE-2 m12i at the retained 590 launch, all **13,959,845** starting stars were recovered by full identity at 591, 2.221147 Myr later. The **1,617** additional endpoint stars all have formation dates in the interval. None was counted as an incoming old star. No MTS force, coupling or occupation was refitted. [Derivation](DERIVATION.md) · [replay](REPLAY.md) · identity (not bundled here).
+
+## What the mass repair really fixes
+
+A weight fixed to each star conserves the mass of the *tagged tracers* to rounding. It does not falsely require real stars to keep their original masses. With the fine map the represented stellar mass is 25.373 billion solar masses. The mass changes of those same surviving stars contribute **−2.218 solar masses/year**. New stars would add +4.395 if assigned the frozen map at their birth endpoint; their **inherited gas weights** have not been determined. Reassigning all surviving stars their *destination* fine weight instead introduces **+131.992 solar masses/year** by itself. That last figure is a failure of the fine-cell reweighting control, **not** a mass loss measured by FIRE or the previous coarse map.
+
+| Source over 590→591 | Net stellar rate (solar masses/year) |
+|---|---:|
+| Retained original regional map, including new stars | +0.700 |
+| Starting cohort, carrying fixed fine tracer masses | effectively 0 |
+| Same cohort, carrying fine labels with measured stellar mass evolution | −2.218 |
+| Fine destination reweighting, including new stars | +134.169 |
+
+Nearly 47% of the tagged stellar mass crosses a coarse group, and 98% crosses a fine cell. Group labels match original group totals but miss 30.64% of the target in **cellwise absolute difference**, not total mass. The fine lift matches every occupied cell and explicitly leaves **0.0955%** of the positive target without donors (37.5 million solar masses). No missing mass was filled. This is an initial gas-plus-star weighting, not a determination of the Milky Way stellar velocity distribution. Mapping (not bundled here) · mass and phase accounting (not bundled here).
+
+**The outstanding source issue is now localized.** On this *right-hand interval* the original transfer is −34.037 solar masses/year: original gas **−34.737**, original stars **+0.700**. This is distinct from the previous three-epoch estimate of −30.852. Replacing the stellar part alone cannot explain or repair the gas part. Genuine stellar mass return and gas-to-star transfer need the matching gas ancestry, not an arbitrary balancing reservoir.
+
+## The radial predictions faced two different tests
+
+**Observed simulation paths.** The launch velocities of the fine-weighted stars predict a virial density contribution of +611.1; following their individual positions gives a finite-interval value of **+814.0** (solar masses kpc²/Myr³). Evaluating in the original cells gives +815.1, while the old fixed-template stellar map gave −488.0. The two narrow mass-window gradient terms are much less stable: their instantaneous predictions of +501.6/−510.4 become **−384.1/+211.3** on the measured finite interval (solar masses/Myr³). This sign reversal means that extrapolating the initial velocity derivative for 2.221 Myr is a failed predictor here, not that material tracking lost mass. Position-versus-cell errors are shown separately. [Frozen prediction vs actual positions](evidence-001.zip) (archive member: `continuous-test.csv`).
+
+**The parent equations.** Keeping the old gas history and present-day occupation fixed, both the reset and inherited waves were actually advanced through 591. Replacing the old stellar increment by that of surviving fine-labelled stars changes the four inherited-minus-reset wave accelerations at (R,z)=(6,1.5) and (8.3,1.5) kpc by **(−0.503,+1.182,−0.384,+0.360) × 10⁻¹⁸ m/s²**, in radial/polar order. The last time refinement changes that vector by 0.44% in norm. This is a *difference of responses*, not the whole gravitational force. The common ordinary-source change itself is much larger: for example **−1.765 × 10⁻¹³ m/s²** in the inner polar component compared with the old stellar increment. The stellar replacement alone does not reverse the two positive radial wave contrasts over this short interval. Ordinary force and source moments (not bundled here) · finest wave comparison (not bundled here).
+
+**Live test stars, not just moment identities.** In a separate calculation we took the same 1,471,955 guard-aperture stars (5.295 billion tagged solar masses) with their original 3-D velocities and integrated their Cartesian orbits in each of the two retained fields. The resulting paired contrasts reproduce the four earlier analytic launch curvatures to **0.0024%** and cubics to **0.19%** at the finer short probe. At 2.221 Myr the inherited-field population contains **+12,454 and +14,611 solar masses more by the two smooth shell weights** than the reset-field population. Total tagged mass is the same: this is a difference in where it moves. Doubling the orbit substeps changes either mass result by less than 0.015 solar masses; refining the force grid at four substeps changes either by less than 0.13. The probe stars are not yet feeding their evolving density back into the metric. Orbit readout (not bundled here) · analytic vs direct derivatives (not bundled here).
+
+**Next:** carry the gas labels across 590→591 and into the 1,617 new stars. Separate persistent gas cells, splits, disappearances, accreted/returned mass and births; report any unresolved ancestry instead of inventing it. Then repeat the same coupled/reset force test with the **combined conservative source**, before interpreting the present stellar-only response as a galaxy prediction. No files were published.

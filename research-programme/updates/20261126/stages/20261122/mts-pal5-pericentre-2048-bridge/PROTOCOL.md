@@ -1,0 +1,5 @@
+# Private 1,024-to-2,048 year bridge
+
+Resume the four own-passage states on the second spatial mesh from their sealed full 1,024-year records at a 32-year time step. Read the matching potential record, site, clock and prior restart verification. Independently halve the time step from the physical release, not from the common 1,024-year restart. Replay the crossed states at their exact dates. Compare a third spatial mesh at matched step and inspect all four signed preparations. No changed orbit, fit, catalogue data, tolerances or wave normalization. The prior cutoff at 62,500 years remains unresolved.
+
+Score the moving-centre density difference, differential stellar velocity, wave-only impulse and forward-minus-reverse tidal work at 1,280, 1,536, 1,792 and 2,048 years. Keep the fixed-site wave term and fixed-wave site term distinct and retain failures of the original 0.5% gate. Check the cubic prediction on each actual star; try to derive the first correction from the initial wave equation and gravitational Green solve rather than fitting a time exponent. A short controlled test is not a new stream fit. At most two single-threaded workers; no public actions.

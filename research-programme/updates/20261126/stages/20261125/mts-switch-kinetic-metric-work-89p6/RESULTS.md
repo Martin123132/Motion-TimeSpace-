@@ -1,0 +1,35 @@
+> Public reading copy: local links are mapped to released material or marked unavailable. Machine-specific passages, where present, have been omitted. See the inventory for the original digest.
+
+# The switch phase predicts kinetic energy; heavy momentum still misses the wave's energy transfer
+
+The preparation-subtracted kinetic term **brings the photon agreement inside the existing 0.5% tolerance on both gravity steps**. The same model does **not** reproduce the microscopic energy transfer on either step. The two findings need to stay together: agreement after transport does not imply agreement at each point of the wave history.
+
+## What went into the prediction
+
+We used the retained homogeneous field and its conformal velocity at the matching scale (−0.0004401223872 and +0.000004566628 in the saved units), the saved mass, and the expansion of the averaged branch. Six one-sided incoming field-table knots locate the switch pair; no post-switch field or fitted phase is used to launch it. Evolving b′=v, v′=−2ℋv−(am)²b predicts 4.861418 kinetic periods over 89.1485038031–89.6 conformal Mpc. The initial-state order check is 0.00000932%; halving the oscillator integration step changes the predicted kinetic factor by less than 7×10⁻¹²% of peak.
+
+In the normalized heavy energy and current equations let K=v²/(ρ₀/a)−1 and g=(3Φ′, k²Ψ). The prepared sources already contain the original product. At fixed background the exact response to a changed metric is K times its departure from the prepared g. We therefore *retain* the calibrated work and add only K̂(g_live−g_prepared), including the response of live gravity to this change. Giving the operator its prepared gravity yields zero extra source, not a second copy of the kinetic work. The perturbation of the pressure law tested in the preceding stage is **not** reused.
+
+The absolute prediction was frozen first. The historical metric used for subtraction was recovered from the companion curves, with its lapse also checked against the separate saved lapse term. That historical metric was itself constructed from the original wave: it is a calibration input, **not** a held-out observation or independent evidence. After subtraction the source increments and transported photon vectors were frozen before comparing with the saved wave. Both branches keep their original initial states, force banks, angular evolution and 77-bin inputs; cold matter has no extra heavy-field term. No parameter was adjusted.
+
+## What passed and what missed
+
+| Primary readout | Coarse gravity | Fine gravity |
+|---|---:|---:|
+| Kinetic factor: RMS error against saved wave | 0.00004486% | 0.00004486% |
+| Gross kinetic work: energy / current RMS errors | 32.9610% / 0.33437% | 32.9609% / 0.33429% |
+| Original → corrected joint photon gap | 0.576351% → **0.089005%** | 0.576362% → **0.089014%** |
+| Corrected photon energy / current gaps | 0.089038% / 0.088888% | 0.089048% / 0.088898% |
+| Momentum / differentiated route sizes (% of launch) | 0.0190193% / 0.0190223% | 0.0190193% / 0.0190223% |
+
+The photon gaps use the original momentum-route signal, not total radiation or observational error. The separate size limit is 0.163% of launch. All 12 combinations of gravity step, source subdivision and photon setting meet both physical gates; all 47 photon numerical checks pass. These settings are numerical controls, not independent observations. On the fine grid the first-cycle and later source increments separately have photon norms 0.10227 and 0.39061 percentage points; vectors, not their norms, add. The change opposes the old gap on both clocks.
+
+**Why the original current-work pass is not a microscopic closure.** At identical imposed changes of gravity, using predicted rather than exact K changes either kinetic-work channel by under 0.000045% RMS. But the wave's *own* changed gravity is not the one predicted by the averaged model. The native replay exactly recovers the saved cycle-boundary states at stored precision. On the fine grid its incremental energy/current work relative to the already very close preparation has RMS 9.01×10⁻²¹ / 2.58×10⁻²⁰ in the retained source units. The prediction errors are 1.78×10⁻¹⁴ / 2.08×10⁻¹⁶. Quoting relative errors on those tiny reference increments alone would exaggerate the scale: the errors are 32.961% / 0.33426% of the respective gross work. Neither incremental channel meets the agreed relative tolerance. The phase covariance is the mean product minus the product of means, evaluated on the same predicted phase intervals for forecast and reference. Neither channel reproduces that covariance to 0.5% on the four complete periods or on the unpadded final 0.861418 period; even the current's good gross RMS hides a missed correlation.
+
+## What the mismatch identifies
+
+After scoring, we decomposed the energy-work error using the momentum equation 3Φ′=3J/(2k²)−3ℋΨ+3Fq. Multiplying each difference by the reference K and adding the separate error in K reconstructs the measured error vector. **Heavy momentum accounts for +99.98374% of the signed energy-work error on both clocks.** This is a projection along that error, not a fraction of energy in the universe. The remaining projected contributions on the fine clock are +0.00028% other momentum, −0.00389% expansion times lapse, +0.01985% supplied Fq, and +0.000019% kinetic-factor error. No correction was selected from this decomposition.
+
+**Next:** reconstruct the phase-dependent heavy momentum in the metric equation from the prepared perturbation at the switch: J_h=k²v δb+J_supplied. The homogeneous velocity v is now checked; it is the perturbation δb (amplitude and phase relative to the background) that must be independently fixed. First determine whether the prepared density and current resolve both quadratures near this velocity turning point without dividing by a near-zero v. If they do, freeze a prediction for J_h−J_h,prepared, and test it directly on the saved wave before asking it to improve photons. Do not insert the measured native momentum or retune a phase from this result. The coupled kinetic response is a candidate, not a replacement production history.
+
+[Protocol](PROTOCOL.md) · [Switch checks](evidence-001.zip) (archive member: `switch-checks.csv`) · Absolute freeze (not bundled here) · Prepared-source freeze (not bundled here) · Photon freeze (not bundled here) · [Wave tests](evidence-001.zip) (archive member: `wave-comparison.csv`) · [Cycle covariance](evidence-001.zip) (archive member: `phase-covariance.csv`) · [Saved-state replay](evidence-001.zip) (archive member: `wave-replay.csv`) · [Photon readouts](evidence-001.zip) (archive member: `photon-score.csv`) · [Launch sizes](evidence-001.zip) (archive member: `launch-sizes.csv`) · [Numerical checks](evidence-001.zip) (archive member: `photon-checks.csv`) · [Energy attribution](evidence-001.zip) (archive member: `energy-error-attribution.csv`). For external context on the distinction between oscillating fields and effective-fluid matching, see [Passaglia & Hu](https://arxiv.org/abs/2201.10238); no external fit or coefficient enters this prediction.

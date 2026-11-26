@@ -1,0 +1,5 @@
+# Read-only replay of the saved formation test
+
+From this directory, run `python -B verify.py` with the existing local numerical Python environment. With the seal present this checks rather than replaces it. Both parent directories named in design.json must remain alongside this one; the local parent solvers also use their retained input banks. No GitHub access or data downloads are required. This verifies archived results without restarting the six full evolutions.
+
+The verifier checks the two parent manifests and their inputs, state receipts for ten clocks per trajectory, unchanged quarter-clock monopoles, the original matched forecasts, and recomputes all 48 signed tidal classifications from the state arrays. Design and negative-prediction hashes identify what was frozen. The per-preparation CSV tables distinguish observations of the numerical state, analytic tests, and conditional predictions. The window files contain the shorter memory/half-step controls, not extra full trajectories. The separate LMC sky-force derivation uses neither these states nor these 20 ppm tidal forecasts.

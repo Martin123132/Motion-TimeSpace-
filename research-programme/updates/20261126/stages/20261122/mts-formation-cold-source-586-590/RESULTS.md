@@ -1,0 +1,46 @@
+> Public reading copy: local links are mapped to released material or marked unavailable. Machine-specific passages, where present, have been omitted. See the inventory for the original digest.
+
+# Which part of the frozen flow survives a measured change to the ordinary source?
+
+Over 88.968349 Myr in the saved FIRE m12i analogue, both archived 586 preparations end closer to their frozen forward state than to their frozen reverse state in every tested source history. **But the reset outer shell's mass rate is not even stable in sign.** Inserting only the particle-counted 589 field changes it from −0.01050 to +0.29710 solar masses/year. No reverse wave was injected in these forward experiments. The comparison is to the fixed pair of opposite-flow targets at 590, not an observation of Galactic flow.
+
+| Ordinary history (same endpoints) | Reset outer shell | Inherited outer shell | Inherited minus reset |
+|---|---:|---:|---:|
+| Straight interpolation | −0.01050 | +0.98276 | +0.99326 |
+| Cold-map changes only, direct angular integral | +0.61110 | +1.60654 | +0.99543 |
+| Counted all-gas and stellar 589 anchor only | +0.29710 | +1.29174 | +0.99464 |
+| Counted 589 + cold-map detail at 587,588, direct integral | +0.29969 | +1.29379 | +0.99410 |
+
+All entries are wave mass accumulation rates (solar masses/year), not gas accretion measurements. On all three spheres the inward rates retain the forward sign, as does the inner shell. An increasing shell mass means more material enters across its outside surface than leaves across its inside surface; it does not require either sphere's current to reverse. All branches, distances, signs and rates are in state-and-current-verdicts.csv (not bundled here) and the underlying direct readouts (not bundled here). Under the counted anchor + direct cold detail, phase-independent distances to forward/reverse are 0.000790/0.006761 (reset), 0.000795/0.004443 (inherited). The integrated variation in total potential supplies at most 62.4% of the action necessary for exact reversal among the original cap-64/96 and anchor variants. This necessary bound was not separately evaluated for the direct quadrature; their endpoints were computed rather than inferred from the bound.
+
+## What the source actually measured
+
+The [prior inverse experiment](../mts-flow-formation-inverse-586/RESULTS.md) used the joint gas-and-stars endpoint fields. Here the 587–589 stellar plus cold-gas **potential maps** supply proposed *departures* from those interpolated endpoints. We do not treat them as all the ordinary matter. For an axisymmetric, reflection-averaged potential in spherical coordinates, group mass follows by integrating Poisson's equation on each ring in radius and in the folded polar cosine. With the average over azimuth taken in the fixed terminal frame, it is
+
+    G M = [r² ∫ ⟨∂r Φ⟩ dμ] at radial faces + ∫ [ (1−μ²)⟨∂μ Φ⟩ ] at conical faces dr.
+
+We transfer these 91 signed mass **changes** with the original group weights onto the same tapered Milky Way source template, use its original degree-64 force operator, and remove only the constant potential from each correction. The [frozen protocol](PROTOCOL.md) preceded scoring. The comparison at 589 comes instead from counting all simulated gas and stars in the same groups (four pieces, two species); 590 independently reproduces the source grouping. Both corrections vanish at 586 and 590. The source between knots is interpolated in physical time. The 589 comparison is independent in construction, not a blind Milky Way observation. The cold potential interpolation, assumed axial symmetry, transferred spatial template and unmeasured all-temperature detail at 587 and 588 remain physical limitations.
+
+At 589 the primary prediction reduces the weighted RMS error from **55.18 to 52.15 (km/s)²**. It has the right spatial pattern (cosine **0.985**) but **1.92 times** the RMS amplitude of the actually counted departure. The higher input harmonic cutoff gives error 53.78. In the subsequent direct surface integral, without truncating the cold input in angular harmonics, the error is **50.53**, cosine **0.984** and amplitude ratio **1.88**. These cosines and amplitudes refer to the ground-state-weighted, constant-removed transferred potential. They are not fitted shape or amplitude parameters. We did not renormalize the proxy. Source scores (not bundled here).
+
+Changing the input angular truncation from 64 to 96 changes the proposed field at 587/588/589 by 3.22%/6.92%/1.70%; do not certify those amplitudes to 0.5%. Computing flux through the group faces directly instead of increasing the truncation resolves the quadrature issue: 24→48 nodes changes each transferred field by under 0.0001%. This numerical check does not remove uncertainty in the input spline or its physical meaning. The rotated analytic monopole/quadrupole gives relative mass error 1.2e−15; no reconstructed total group has negative mass in the direct histories. Direct integration checks (not bundled here).
+
+## The Newtonian prediction that is less sensitive
+
+Use inward acceleration as positive. Gauss's law for a sphere (no assumption of spherical density) gives the spherical mean inward acceleration g(r)=GM(<r)/r². At *fixed* radii the rate of change of the outer acceleration minus the correspondingly scaled inner acceleration is
+
+    J_ab = d/dt [g(b) − (a/b)² g(a)] = G [Ṁ(<b) − Ṁ(<a)] / b².
+
+For the same prescribed ordinary matter at a given time, subtract the two wave preparations. The ordinary contribution cancels identically, including its one-sided derivative if evaluated at an interpolation knot. At 7.30565–8.43445 kpc the resulting outer-shell difference is **0.99326–0.99558 solar masses/year** across the tested histories, or about **6.17×10⁻²⁹ m/s³** in this compensated acceleration rate. Maximum relative source shift is under 0.24%. This is the difference between *two alternative preparations*, not two accelerations independently available for our Galaxy. An individual wave-only acceleration rate is not the total rate a telescope would measure. The differencing identity explains foreground cancellation; it does not guarantee this numerical robustness outside these histories. Newtonian rates at both shells (not bundled here).
+
+## Numerical and replay limits
+
+The original segmented evolutions used 70, 140 and 280 steps. For direct quadrature we also evolved 140 and 280 steps, with an independently scheduled duplicate of the counted-anchor arm. All **84** final time refinements of the nonzero state and current *corrections relative to the matching straight-line control* pass the unchanged **0.5%** criterion (worst 0.0678%). Finest path maximum occupation drift is 4.3e−12; maximum energy minus applied work residual below 4.0e−8 (km/s)². Those checks concern the retained dynamics, not statistical data errors.
+
+One deliberately stricter duplicate-run test **does not pass**: 16 of 20 independent anchor rate readouts differ by more than 1e−9 solar masses/year, up to 6.46e−9. The endpoint states differ by at most 5.61e−14 in phase-independent norm. Evaluating the *same stored state* reproduces the archived rates to 1.8e−15 solar masses/year. Expanding the current difference into the two bilinear cross terms in the mean and difference wavefields explains the duplicate-run difference with at most 4.72e−10 residual. Thus the mismatch is present in the endpoint states, not a changed shell definition; no claim about the precise machine-level cause. It is far too small to account for the 0.308 solar-mass/year sign-changing shift. We retain the failed test, not a relaxed precision threshold. Replay differences (not bundled here) · time convergence (not bundled here) · validation (not bundled here).
+
+## Use in the stream experiment
+
+Retain the exact 590 forward/reverse pair for the Pal 5 counterfactual. The inverse 586 reverse states are mathematically admissible but are not generated by either archived 586 state on the tested ordinary histories. A longer stellar-stream integration must be described accordingly. Do **not** infer a whole-wave sign from the reset outer shell, or silently swap this source intervention into the original frozen-sign forecast. Carry both signs backward over 590→586 on their defined common drive and integrate stars forward through 586→590→600; separate an earlier contribution transported to the same present day from the later-only contribution. Check radial coverage rather than extrapolating the old stream field if trajectories approach pericentre. An additional all-phase count at 587/588 would be useful specifically for improving the physical mass-rate values, not as a requirement for this frozen-input stream comparison.
+
+Local reproduction: use one BLAS thread and Python with bytecode off. In order: sources.py, sources.py actual, propagate.py with factors 1/2/4, direct_groups.py, direct_evolution.py with factors 2/4, flux_replay.py, assess.py. Conflicting sealed files are not overwritten. Input hashes are recorded in freeze.json and actual-source.json. No fit, download, change to earlier physics files or publication. This stage contains the simulated source/field response; the previously saved Pal 5 star trajectories still cover only 22.19 Myr.

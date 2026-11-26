@@ -1,0 +1,12 @@
+# A transport equation for the complete compensated heavy density load
+Use the native gravity variables (not the separate updated probe) and conformal units. Let mu²=(ma)², h_a=a'/a, rho=rho0/a, K=k² and Gc=-1+3(H'-H²)/K. Write the coherent background as b,v, with potential mismatches Rb=b'-v and Rv=v'+2Hv+mu²b. For a common clock and actual Klein–Gordon solution both vanish; here the transported first-order quarter partner uses a slightly different clock, so keep Rv. The driven field evolves F'=W+A, W'=-2HW-(mu²+K)F+B, with A=v(Psi+3Phi)+Qf, B=-mu²b(Psi-3Phi)+Qw. The physical current is rho j=KvF+Qj; m is its retained trailing mean including the inherited offset. The exact compensating variable previously obeyed Y'=Gc(m-j).
+
+Define Z = v W + (mu² b+3Hv) F + rho Y. The complete compensated heavy share in the **numerator** of the density constraint is (Z+Qe+3H Qj/K)/2. Keep 3v²/2 in the denominator, and do not add any of these terms a second time. Differentiate Z. The terms proportional to vW collect into -H vW. The terms proportional to vF, after moving HZ to the left, give K Gc vF. Added to rho Gc(m-j) they become **Gc(rho m-Qj)**: the instantaneous canonical current cancels exactly. Expanding the drives gives
+    Z' + H Z = Gc(rho m-Qj)
+               + 6 mu² b v Phi + 3H v² (Psi+3Phi)
+               + v Qw + (mu² b+3Hv) Qf
+               + (h_a-H)(2mu² bF-rho Y)
+               + Rv (W+3H F) + mu² Rb F.
+The two terms in v mu² b Psi cancel. With matched clocks the source has neither the raw driven-field F,W nor derivatives of fluctuating quadratic stresses. This does not eliminate the need to prepare Z and supply the causal mean current. It is a derived identity of this compensated branch, not a claim that the compensator follows uniquely from a fundamental action.
+
+Test a real change of variables: initialize Z once from the carried state; thereafter evolve the displayed first-order equation instead of the Y equation, and use Z directly in the Hamiltonian numerator. The momentum equation, ordinary matter, all 77 bins, both original gravity routes and the photon normalization are unaltered. Compare reconstructed Y, metric, raw field and pressure with the independent Y-variable run; record numerical sensitivity on both the full and the very small phase scales. This is a representation test, not a new physical coefficient or permission to promote a failed pressure/visibility result.

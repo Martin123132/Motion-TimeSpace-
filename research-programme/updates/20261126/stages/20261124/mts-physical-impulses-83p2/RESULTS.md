@@ -1,0 +1,7 @@
+> Public reading copy: local links are mapped to released material or marked unavailable. Machine-specific passages, where present, have been omitted. See the inventory for the original digest.
+
+# Initial comparison: lapse precision fails at 83.2 Mpc; finer control required
+
+Both preparations and all 77 momenta reached 83.2; the p8 and p16 results are retained as numerical controls, not accepted as a resolved pair. Relative checks pass (108 integral, 36 time-step, 24 trajectory) but the difference of the complex paired lapse centers grows from 0.67749 allowances at 76.8 to 1.39785 at the endpoint and 1.66786 at the largest sampled internal displacement. Current stays within 0.006 allowance. The interval reverses the prior cancellation in both resolutions: the fine endpoint requires 1.93552 times the entering current cancellation and 1.75369 times the entering lapse cancellation at the same fixed 273.33232 pivot. The path is not monotone. These are source-history contributions, not observed CMB changes. [Validation](evidence-001.zip) (archive member: `validation.json`), [extrema](evidence-001.zip) (archive member: `within-block-centers.csv`), [original fixed protocol](PROTOCOL.md).
+
+The gate requires halving the gravity step again from the common saved 57.6 state, through all four blocks, without changing source histories. Compare the p32 and p16 complex targets, including the interior sampled shifts, before accepting 76.8–83.2. Preserve this result unchanged even if a finer comparison passes.

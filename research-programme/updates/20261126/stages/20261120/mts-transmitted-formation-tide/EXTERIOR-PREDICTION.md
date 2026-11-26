@@ -1,0 +1,13 @@
+# Predict the exterior source without importing its measured force
+
+The wide-domain port experiment indicates that the direct exterior gravity and material transmission are different effects. Can the former be predicted from launch data alone? This is a subsequent diagnostic, not a blind test against the entire archive: the overall end errors and the early quartic tests were already seen. Freeze the following construction before comparing its time-dependent shell integrals. Do not use the wide density, potential, force, boundary velocities or the eight Galactic bands to set a coefficient.
+
+Keep first order in the spherical seed times the native quadrupole, outside its initial 36 Mpc collar. In a homogeneous exterior the unforced monopole peculiar speed is U=−u/r². Let M=∫r²ΣC_s(n_s−1)dr be its weighted excess, M′=(ΣC_s)u and u′+ℋu=M/(2a) with M(0)=2a_i μ and u(0)=0. This is a dustlike monopole exterior approximation for the wave branch, not zero gravity. Compare both models and preserve departures from a harmonic monopole.
+
+For each species use its actual native homogeneous reference density D_s and velocity potential V_s. Put B=r⁻²∂ᵣ and let L be the quadrupole Laplacian. To this order e_s′=−Lw_s+u B D_s and w_s′+ℋw_s=−φ+u B V_s+ε_s L e_s. Taking one more time derivative and using D_s′=−LV_s yields
+
+    e_s″+ℋ e_s′ = ΣC_i e_i/(2a) − ε_s L²e_s + M B D_s/(2a) − u(BL+LB)V_s.
+
+The interior harmonic part of φ drops out under L. This is an initial-value source law away from the collar; freely incoming wave packets, nonlinear flow, outgoing dispersive propagation from the collar or a density-bearing exterior initial monopole can invalidate this particular response. No free radial wall is supplied to the prediction.
+
+Integrate the retarded gravity equation first omitting −ε_s L²e_s from the local **response** but retaining the original on/off homogeneous Fourier evolutions. Then source the next correction by applying that operator to the preceding solution, twice again as a convergence control. Spatial derivatives commute with the time-only gravity Green function. Preintegrate L^(2j)B and L^(2j)(BL+LB) acting on each j₂(kr) over each finite shell with weight dr/r; evolve these moments, not a grid with a guessed exterior boundary. At launch, the zeroth and first retarded orders together must recover the separately frozen fourth-order shell law. No truncation result is called exact; compare successive terms independently of the difference from the full nonlinear numerical evolution. Score at fixed epochs through eight units, for the signed absolute source and wave-only difference, for individual outer shells and the complete 36–96 annulus. Report if a successful cold or absolute-force check masks a missed wave difference.

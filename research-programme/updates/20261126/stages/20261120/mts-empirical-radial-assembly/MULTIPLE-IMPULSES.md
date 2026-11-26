@@ -1,0 +1,3 @@
+# Unresolved temporal coherence control
+
+A single rapid change does not test whether different changes can accumulate or cancel. In addition to the five separated tests, apply all five changes rapidly in the same history, over L/v each. Use the fixed fractions 1/4, 1/2 and 3/4 of each measured interval as arrival centers and report all three alternatives for all three preparations. None is inferred from the galaxy samples; these are controls on identifiability, not preferred Galactic histories. Do not scan a phase against the force bands. For a full signed-force follow-through use the central-timing all-interval control and the smooth-inference reference (linear interpolation), not a favourable alternative.

@@ -1,0 +1,8 @@
+# Separating energy conservation from momentum conservation
+
+A pressure-free identity cannot certify energy and current separately: errors in the two may cancel. For each minimally coupled native scalar (the slow field in all four runs and the additional heavy field in the three wave runs), test two equations with independent native stress outputs. In synchronous flat variables let E=delta grho, P=delta gp and J=delta gq of the individual species, X=(E_total/2+k eta_k)/H, and W=v² its *own* background enthalpy. From the scalar stress E=v w+(ma)² b f, P=v w-(ma)² b f, J=k v f and the background and perturbation Klein–Gordon equations one obtains
+
+    E' + H E = -3 H P - k J - W X,
+    J' + 2 H J = k P.
+
+Specifically (ma)²'=2H(ma)²; differentiating v w+(ma)² b f cancels the mass-gradient terms; differentiating k v f gives kP-2HJ. The term W X is the work of the common metric, not a fitted energy transfer. A cold run has no heavy state. Integrate each equation from the native incoming value, using the native P and independent total X, not a pressure reconstructed from these equations. Use exp(integral H) and its square as integrating factors; compare maximum separate residuals against each channel's own maximum change on each mode. Record all modes over 0.5% even for small amplitudes. Repeat cubic/four-point and quintic/six-point quadrature and compare the sum of three *signed* energy contributions to the observed drift. A calculation with W X deleted is an attribution control, not a fit. These are scalar-sector tests in the coupled calculation, distinct from a claim about every ordinary species' pressure.

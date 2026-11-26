@@ -1,0 +1,47 @@
+> Public reading copy: local links are mapped to released material or marked unavailable. Machine-specific passages, where present, have been omitted. See the inventory for the original digest.
+
+# A derived matter-pressure term predicts the changing wave-minus-dust current
+
+**Local result, 20 November 2026.** In the saved q=1024 formation, the massive wave and cold dust move almost the same amount of matter. The small *difference* grows predominantly because the wave phase accelerates under its amplitude gradient. We derived that acceleration from the coupled field equations, fixed its coefficient at launch, and successfully predicted both a local number-rate profile and its time integral on a longer, unused simulation window. There is no new fitting parameter. “Number” here refers to the heavy matter's conserved phase charge, not electric charge. The LMC and galaxy datasets were not re-fit or modified.
+
+## The test that distinguishes the mechanism
+
+All profiles are combined as (wave host − wave zero) − (cold host − cold zero). The reported source errors use the interior radial RMS difference divided by the resolved signed profile's RMS. The longer endpoint was **25⅝ rapid rotations**, versus the earlier 8¼. The saved predictions and their digest (not bundled here) preceded the longer evolutions. They used only the launch and field coefficients, not the future time series. Both signed hosts and both Einstein formulations were tested.
+
+| Prediction at the longer endpoint | Number rate: worst relative error | Accumulated number change: worst relative error |
+|---|---:|---:|
+| Phase and first-order changing geometry/material | 0.0000743% | 0.00754% |
+| Omit the derived amplitude-pressure contribution | 100.10% | 100.06% |
+| Reverse that contribution | 200.20% | 200.12% |
+
+The omission and sign changes are diagnostics of the analytic expansion, **not refits or alternative universes evolved from scratch**. Both measured quantities pass the predeclared 1% explanatory screen with the original coefficient. The shorter window's worst errors were 0.0000245% and 0.0238%. The short integral is exceptionally small: the individual heavy-number rates can be tens of billions of times the signed difference. This is why evaluating a full density accurately did not guarantee an accurate difference. [Frozen test](PHASE-TEST.md) · [original equation scores](evidence-001.zip) (archive member: `forecast-scores-original.csv`) · [ADM scores](evidence-001.zip) (archive member: `forecast-scores-adm.csv`) · ablations (not bundled here).
+
+**What actually changes the phase.** Its nonoscillatory velocity-potential rate contains [L_g a + (exp(−ℓ)Dᵣa)²]/(2μ²), with a=Re log ψ. We separately derived its normal-curvature, kinetic, transformed-velocity and oscillating-carrier companions. In these projections the amplitude term accounts for 0.9999983–0.9999995 of the *changing-phase* signal along its own profile, not of the background gravity. Discarding the oscillatory term alone still passes the 1% screen, so these windows do not independently measure its coefficient. [Exact algebra and Newton limit](DERIVATION.md) · individual contributions (not bundled here).
+
+## Independent Newton check
+
+On this family μ=√q M. Multiplying the amplitude term by q yields a finite mechanical source: Δ√n/(2M²√n). The independent retained Newton solver uses this term in a different form, the finite-element stiffness of r(√n−1). We compared both its compactly averaged potential rate and radial gradient, for both signs and both widths, with no normalization fit.
+
+| q | Maximum difference from independent weak reconstruction, parts per million |
+|---:|---:|
+| 64 | 0.398 |
+| 128 | 0.199 |
+| 1024 | 0.0249 |
+
+This tracks the finite geometry/normal-density correction at these three speeds; it is not a universal convergence theorem. **The unmodified native nodal force readout is less accurate:** its narrowest gradient average differs from the weak reconstruction by up to 0.1681%. Applying the native stencil independently reproduces the native wave-on minus wave-off operation. Holding the formation coefficients fixed and resolving *only the detector weight* reproduces the coarse offset, then reduces its maximum from 0.1681% to 0.00000137% at eight subdivisions. The 0.0249-ppm comparison is specifically to the **weak** calculation, not a claim that all raw nodal forces are that accurate. [Three speeds and both code paths](evidence-001.zip) (archive member: `mechanical-pressure-limit.csv`) · native readout refinement (not bundled here).
+
+The q trend also has a **source-derived first-order coefficient**. Transferring the metric, volume and normal-frequency terms from q=64 or 128 predicts the q=1024 curved-minus-flat pressure correction to within 0.0165% **of that correction**, without using its value to set a parameter. In these windows the largest contribution is the volume factor inside the wave amplitude. [Derivation and detector check](FINITE-Q.md).
+
+## What the arithmetic and controls establish
+
+- Evolving the exact finite host difference across all 20 fields, rather than subtracting large independently evolved results, reduced the short single-step monopole energy error from the previous **30.45%** (132-step reference) to **0.0145%** (new 264-step reference). Replacing wave amplitude by the local number as an active coordinate independently gave **0.0145%**. At the short fine endpoint the two coordinate choices agree on the tiny signed energy to within 0.00121%. Most improvement came from the finite host difference; evolving number directly alone is not the whole repair.
+- On the new clock the three large steps and the 205-, 410- and 820-step runs give **64/64** proper tidal comparisons inside the original 20-ppm criterion, normalized to the independent Newton signal at this time. Maximum clock shift 0.000464 ppm, change of Einstein formulation 0.0343 ppm, and Gauss/Ricci readout split 1.903 ppm. The last is a projected constraint check, not a pointwise bound. The tiny pointwise Hamiltonian and radial momentum defects still vary by order their own magnitudes with refinement. [Tides](evidence-001.zip) (archive member: `extended-tide-gates.csv`) · pointwise and material resolution (not bundled here).
+- The finite-mesh wave source was compared with an independently constructed conservative divergence, the dust mass-shell flux on that same wave state, and the actual cold flux. The signed state term projects to 0.995–1.005 of the measured total at the short test endpoints and launch. The signed radial phase-gradient term contributes almost all that state effect. These are signed projections, not causal percentages. A smooth manufactured profile distinguishes product-rule/discretization error from matter sourcing. [Current decomposition](MONOPOLE-SOURCE.md) · spatial checks (not bundled here).
+- The launch phase conversion matters. Both saved monopole canonical potentials agree byte-for-byte, but storing μp in binary and then differentiating leaves a small residual. Using exact p at launch retains only 4.05–4.39% of the original instantaneous signed-rate RMS. The published-in-this-folder original forecast includes the as-stored launch, explicitly. The separate sensitivity replay leaves the old packets untouched. Phase storage (not bundled here) · [independent sensitivity protocol](CANONICAL-REPLAY.md).
+- No elapsed-time bound for the full q=1024 clock follows from two short windows. In the exact time-dependent phase, a nonconstant B=(S−κ)/μ−μz² adds Im ∫₀ᵗ [B(s)−B(0)](exp(2iμ(t−s))−1)/(2iμ) ds to the frozen-source p. The absolute value is bounded by ∫₀ᵗ |B(s)−B(0)| ds/μ. The bound becomes quantitative only if the time variation and its projection on the detector are themselves controlled.
+
+**Next discriminating step:** carry the canonical launch and the time-dependent phase source onto the original four physical endpoints at q=1024. Check at least one resolved carrier trajectory against the accelerated path on a substantial fraction of the full clock. Compare the full tidal readings, pointwise defects and signed material work with the independent Newton-plus-propagated-stress prediction, retaining zero-host and dust controls. Do this before moving to the long-propagation q=262144 experiment. This continues the same GR-to-Newton question, not a new galaxy law.
+
+**What happened when we actually repaired the launch.** Re-evolving the wave from the canonical monopole phase changed the longer-window accumulated signed number profile by 7.06–7.53% of the as-stored profile; the instantaneous signed rate shifted by 3.54–3.77%. Applying the already identified launch offset to the frozen prediction still predicts the **re-evolved** number change within 0.00840% and its rate within 0.000099%. The amplitude-pressure result therefore survives this perturbation even though the raw numbers do change. This was a diagnostic replay after the primary test, not a separately blinded sky test. The controls compare only the small correction to the full wave-source evaluation as well as checking its exact stored-gradient identity. [Original form](evidence-001.zip) (archive member: `canonical-tests-original.csv`) · [ADM form](evidence-001.zip) (archive member: `canonical-tests-adm.csv`) · [gradient checks](evidence-001.zip) (archive member: `canonical-gradient-controls.csv`).
+
+[Replay and ownership](REPLAY.md). All changes are local and the preceding seals stay intact.

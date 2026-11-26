@@ -1,0 +1,29 @@
+> Public reading copy: local links are mapped to released material or marked unavailable. Machine-specific passages, where present, have been omitted. See the inventory for the original digest.
+
+# 64 conformal Mpc: the sixth interval reinforces the contrast; the physical tail is not certified negligible
+
+23 November 2026 · Private · Longest retained output wave (4,2,1), k = 0.3368801156243423 per comoving Mpc. Started both backgrounds from their sealed 57.6 states. No new matter-source interval beyond 64, fit, publication or phase adjustment.
+
+| Joint MTS-minus-baseline photon energy/current | Visibility-window RMS | Common visibility peak |
+|---|---:|---:|
+| Prior signed sum through 57.6 | 3.8103% | 1.1147% |
+| 57.6–64 alone | 1.5601% | 0.7016% |
+| Signed sum through 64 | **4.5193%** | **1.4810%** |
+| Change (percentage points) | **+0.7090** | **+0.3663** |
+
+These are relative to the fixed original launch contrast, 1.8923589891767267e-12, not to the observed microwave sky. The photon readout covers 750 ≤ z ≤ 1500, with the same cold visibility weight and common scale factors. Only the *particular gravitational source coverage* ends at 64. The new isolated source is slightly larger in window RMS than the fifth interval's 1.4338%. It has positive alignment with the preceding total across the window (+0.2920) and at peak (+0.2933). The six particular intervals taken together have a net RMS of 1.1448% of launch, 13.99% of the sum of their individual RMS magnitudes. The earlier photons and regular drive are additional, so this is not the same quantity as the full 4.5193%.
+
+**Numerical checks.** Both models used gravity step **0.00078125 Mpc** versus **0.0015625** at fixed converged stress. The worst signed change was 0.0793% (potential), compared with 0.4047% on the preceding interval with its coarser pair. The independent signed curvature-derivative check was 0.1745%. Both passed the unchanged 0.5% gate before photon scoring. All 27 transfer and six further propagated material-step comparisons passed; all five matched numerical settings gave increases in both readouts. Both common and all 154 finite-momentum incident restarts were used; restored per-model sums agree exactly with adding the new complex block once. Prior source data and frozen inputs were not revised.
+
+## Can driving after 64 be neglected?
+
+**Not on the evidence currently saved.** We can bound how a future source affects the photons. The estimate also says exactly what still has to be bounded in the matter; it does not assign a value to uncalculated forcing.
+
+- **No hidden transport amplification in the derived energy norm.** For each branch the extra photon energy/current norm cannot exceed the time integral of the weighted metric force. The homogeneous Thomson and baryon terms dissipate or preserve that norm. A second bound uses the lapse and change in potential alone; no forecast of rapid potential derivatives is required. Both bounds passed the twelve known branch/interval backtests.
+- **Comparing the models directly helps.** At common scale factor, a rigorous-form estimate for the nodal tail is the integrated *difference* of their metric drives, plus at most **0.0551** times the integrated baseline drive from differences in their transport media. This is a medium coefficient, not a 5.51% physical correction. On the known sixth interval the analogous paired bound was about **4.15 times tighter** than separately bounding each branch and adding; the measured difference was below both.
+- **The missing piece is the later matter source.** Reconstructed Φ, Ψ and Φ′ at 64 from the saved energies, momenta, shear and quadratic sources in each branch. Their values agree with the independent saved readouts. A sufficient budget for the paired integral combination above, including the conservative scoring-spline gain, is **1.4253e-16** for the window or **4.6711e-17** for the peak (field units), if the stopping rule is a tail smaller than 0.5% of the corresponding retained contrast. Neither budget is established over the full future interval. For perspective, the simpler sufficient uniform branch-force cap for both readouts is 1.09e-19 per Mpc; the actual endpoint norms are 5.93e-13 and 5.00e-13 per Mpc. This rules out that simple uniform-cap certificate, **not** small signed or integrated driving. Full-time regular metric curves and different-mode histories are not the required particular source.
+- **Next step without starting another interval:** seek a full-range bound on the *paired* combinations of total energy and quadratic gravity source, longitudinal momentum, and shear minus its quadratic source in the retained constraints. The amplitude-only estimate can use these without a separate potential-derivative envelope. Keep paired phases in that estimate. If it cannot meet the budget, that is a reason to reconsider source coverage, not to treat cancellation as a stopping rule.
+
+[Derivation, assumptions and backtests](REMAINING-DRIVING.md) · [per-model results](evidence-001.zip) (archive member: `results-p8.csv`) · [six-interval coherence](evidence-001.zip) (archive member: `six-interval-coherence.csv`) · [pre-scoring gate](evidence-001.zip) (archive member: `pre-transport-gate.json`) · [all controls](evidence-001.zip) (archive member: `controls-p8.csv`) · [paired source budgets](evidence-001.zip) (archive member: `tail-source-budgets.csv`) · [paired bound test](evidence-001.zip) (archive member: `paired-tail-backtest.csv`) · [constraint reconstruction](evidence-001.zip) (archive member: `tail-constraint-endpoint.csv`) · [machine-readable tail verdict](evidence-001.zip) (archive member: `tail-verdict.json`).
+
+The accepted restarts are particular-cold-p8.npz, particular-heavy-p8.npz, both common histories and 77 micro endpoints for each. The raw native medium is padded for interpolation only. Run verify64.py with Python 3.13 and bytecode disabled to check the stage and its local seal.

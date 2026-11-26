@@ -1,0 +1,3 @@
+# Secondary peak test
+
+After the saved +1σ results and before the following runs: use exactly +2σ of the same heavy-defined linear Gaussian selector on anchorA in both branches. Double density perturbations and their inherited velocity/phase together; do not change the mean density, coupling, physical mass, aperture, expansion history, radius definition, source band, or stop rule. Repeat at 0.025 and 0.0125 comoving Mpc with 256 and 512 steps per log scale factor respectively, at fixed 24 Mpc outer radius. Compare the first turnaround of the original material mass and the first dust crossing separately. This is a conditional change of environment, not a fit to a galaxy or an estimate of halo abundance.

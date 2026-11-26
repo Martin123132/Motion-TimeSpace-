@@ -1,0 +1,28 @@
+> Public reading copy: local links are mapped to released material or marked unavailable. Machine-specific passages, where present, have been omitted. See the inventory for the original digest.
+
+# Where the momentum contribution to the local tide comes from
+
+20 November 2026 • private • same two cloud signs and proper apertures • no new fit.
+
+**A source-based calculation predicts the positive 29–32 ppm contribution without subtracting two complete gravitational preparations.** It comes chiefly from the angular quadrupole of the wave current, partially cancelled by its radial quadrupole. Current outside the detector matters. Moreover, the wave current itself can be predicted from the prepared number and phase, with a scalar weak-field potential correction; an unknown coupling coefficient is not needed here.
+
+| Cloud | Half-width | Current → tide | Weak-source prediction incl. first correction | Original forward switch | Compensated symmetric unit switch |
+|---|---:|---:|---:|---:|---:|
+| + | 15% | 28.67374 | 28.67374 | 28.94508 | 28.67377 |
+| + | 30% | 29.37463 | 29.37463 | 29.50535 | 29.37430 |
+| − | 15% | 31.38303 | 31.38304 | 31.29399 | 31.38312 |
+| − | 30% | 32.06876 | 32.06876 | 31.91971 | 32.06924 |
+
+These are ppm **of the signed Newtonian secular tidal change**, not ppm of the full background field. They refer only to the *additional wave-normal momentum channel* on the preceding first-return preparation. Digits shown distinguish numerical controls; they are not measurement precision. The exterior quadrupole and homogeneous expansion are fixed to the original supplied environment.
+
+**Location and direction.** Sources strictly below both windows contribute +5.54 to +6.38 ppm. The partition spanning the detectors contributes +14.88 to +16.76. The strictly exterior source from the near exterior gives +8.11 to +9.31; more distant shells contribute about −0.10 to −0.13, and the farthest +0.005. The precise partition widths are in [the frozen protocol](PREDICTION.md). In a separate decomposition the angular quadrupole supplies +45.58 to +46.93 ppm, the radial quadrupole −17.55 to −14.19, and the radial monopole about −0.00013. These two decompositions must not be added together. Both sum back to the complete transfer within 0.000003 ppm. An exterior vector boundary check prevents mistaking a spatially truncated integral for the global constraint solution. All source partitions (not bundled here).
+
+**Independent mathematics.** A radial Green integral using the four longitudinal powers −4, −2, 1, 3 reproduces the finite-element current-to-tide forecast within 0.000001 ppm. Both use the same proper-ruler transfer; this is an independent *momentum response*, not an independent detector or dataset. Gaussian longitudinal sources, a nonzero regular homogeneous wall mode, fixed wave number and a zero added current were tested. In the unhosted preparation the monopole current is at the floating-point floor (peak 4.10 × 10⁻⁴⁴); its relative errors are not evidence of accuracy. [Derivation](DERIVATION.md) · [source-to-tide cross check](evidence-001.zip) (archive member: `source-to-tide-cross-check.csv`).
+
+**Why the old switch was off.** Its forward result missed the direct transfer by 0.089–0.272 ppm. Propagating only the measured error in the initial shear accounts for those four discrepancies to within 0.00018 ppm in a fresh replay. Symmetric, amplified complete preparations approach the predicted slope. At actual unit strength, accumulating the small shear *after* taking its derivative and re-solving the scalar geometry reduces the maximum forward error to 0.00079 ppm. The unchanged 2 × 10⁻⁵ relative gate on this channel is met for **two of four forward** compensated switches and **all four symmetric** ones. All original forward comparisons still fail that strict gate. The distinction is recorded rather than rounding the remaining misses into passes. [Raw-versus-tangent tests](evidence-001.zip) (archive member: `forecast-test.csv`) · diagnosis (not bundled here) · [unit-strength repair](evidence-001.zip) (archive member: `compensated-switch-test.csv`).
+
+**Toward Newton.** The leading number/phase formula, with no solved relativistic normal graph in the source, predicts this channel to about 0.016% (0.0044–0.0049 ppm of the Newton change). The next term is derived from the Poisson potential, the gradient of the wave's frequency shift, the amplitude normalization and the drift. It reduces the discrepancy to **at most 0.0000034 ppm** on these four readouts, comparable to the numerical precision of the channel decompositions. The larger individual correction is −0.0055 to −0.0058 ppm from the metric's contribution to the amplitude gradient, partially offset by the gradient of the frequency shift. The downstream geometry/clock and exterior forcing are still conditional. [Weak-input equations](DERIVATION.md) · [separate and combined corrections](evidence-001.zip) (archive member: `weak-source-test.csv`).
+
+**Next physical test.** Construct a matched inverse-light-speed family, rather than varying only the strength of the added current. At fixed physical particle mass, number/phase initial data, G, proper observation time and ruler, independently specify how the boundary and surrounding stress approach the weak-field regime. Test the source scaling and the *observable* tide scaling separately. In particular, two carrier cycles at the reference point are **not** two cycles at every member of a fixed-proper-duration family. Keep the earlier failed point/constraint comparisons separate from this successful finite-ruler check.
+
+[Reproduction and ownership](REPLAY.md). Nothing here modifies the saved LMC comparison or measures the galactic occupation.

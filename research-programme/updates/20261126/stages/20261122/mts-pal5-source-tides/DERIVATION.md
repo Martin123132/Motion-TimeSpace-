@@ -1,0 +1,17 @@
+# Tidal and curvature comparison: what follows from Newton's kernel
+
+Write a = −grad Φ, T_ij = ∂_j a_i, and let the test point be (R,0,z). In cylindrical orthonormal coordinates T has RR, azimuthal–azimuthal, zz and the symmetric Rz entry. The azimuthal response a_R/R is generally nonzero even though Φ is independent of azimuth. In particular a fit to the radial force cannot determine the tide. The relative acceleration of two nearby freely falling slow particles is T·ξ to first order in their separation.
+
+Outside a source point the Cartesian Green Hessian is G(3 d_i d_j/|d|⁵−δ_ij/|d|³), for d=X−x'. Differentiating the full Newton integral twice also contains the contact term −4πGρ(X)δ_ij/3. Dropping it and integrating only the exterior formula would produce zero trace regardless of the source. Instead subtract a spherical layer of density ρ(X) at the *original Galactic centre*, enclosing the test radius r between radii l and u. Within the layer its exact tensor by the shell theorem is
+
+    T_layer = −4πGρ(X) [(1−l³/r³) I/3 + (l³/r³) r̂ r̂ᵀ].
+
+The residual material density vanishes at X, making its local Hessian kernel integrable for a locally Lipschitz density. The analytic layer restores both trace and shear and is an integration device, not a model component. Moving its interfaces must leave the answer unchanged. At the sites used here there is no transfer jump at the evaluation point. External transfer interfaces are integrated separately.
+
+For a ring of radius s and height z', let L=(R−s)²+(z−z')² and H=(R+s)²+(z−z')². Write I_n=∫ |d|^−n dφ. Standard elliptic integrals (parameter m=1−L/H) give I_1=4K/√H, I_3=4E/(L√H), I_5=4[2(H+L)E−LK]/(3L²H√H). The moments of s(1−cosφ) and its square with weight |d|^−5 are (I_3−L I_5)/(2R) and (I_1−2L I_3+L²I_5)/(4R²). These expressions give all four entries without setting one from Poisson's equation. This trace test alone is nevertheless largely algebraic: the residual kernel is traceless. An independent finite difference of physical first derivatives is therefore essential, especially at the low-density launch.
+
+Under the weak, slow, one-potential metric comparison g_00 ≈ −(1+2Φ/c²), take sign convention such that geodesic deviation is d²ξ^i/dt²=−c² R^i_0j0 ξ^j (x^0=ct). Then R_i0j0=−T_ij/c², its trace is 4πGρ/c² and its trace-free part records the shear of that tidal acceleration. This is a necessary local metric matching target, not a derivation of the MTS matter action from these two sites. Source density and interpolation choices can badly contaminate this test even with a well-behaved potential. A single rescaling of G cannot repair a represented ordinary density with the wrong sign.
+
+For clocks instantaneously at rest in the weak quasistatic metric, the centred second difference of gravitational fractional rate along n is [Φ(X+Ln)+Φ(X−Ln)−2Φ(X)]/c² to this order. Thus it is −L² nᵀTn/c² to leading order, insensitive to a constant potential or a uniform acceleration. The finite-separation quantity can also be computed by integrating the difference of the two accelerations along the line. This concerns the external gravity only; it excludes velocity effects, signal propagation, intrinsic cluster gravity, time-dependent metric corrections and any claim of actual clock data.
+
+For the conditional finite stellar response, the independent surface term is fixed by the mass within the actual stellar aperture, as derived in [the finite-aperture note](FINITE-APERTURE.md). No local tide at one point alone determines the full finite-size response.

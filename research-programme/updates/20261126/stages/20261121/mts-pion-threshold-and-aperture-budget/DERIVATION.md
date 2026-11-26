@@ -1,0 +1,49 @@
+> Public reading copy: local links are mapped to released material or marked unavailable. Machine-specific passages, where present, have been omitted. See the inventory for the original digest.
+
+# From the threshold and the measured apertures to a signed gravity budget
+
+Use the unchanged normalized observable \(D(3,6)=\int k_b(W)dI\), \(k_b=U(bW)-U(2bW)\), \(U(y)=y^2K_2(y)/2\), \(b=3/(\hbar c)\) in GeV⁻¹ for the primary pair. It is a squared-impact-weighted difference of polarization splits, not an ordinary Shapiro delay. Definitions of the index contraction, signed eigenlabels and point exterior are upstream (not bundled here). \(dI/ds=\kappa\beta^3\operatorname{Re}[H A^*]/s^2,\ \kappa=\alpha/(4\pi),\ H=h_c+h_n/2,\ s=W^2,\ a=4m_\pi^2,\ \beta^2=1-a/s\). \(A=(1-.01s)\Omega\) is the retained total-pion spin-two stress. The equal charged/neutral mass is an isospin approximation, including for the threshold and the rate prefactors. The true neutral threshold is lower.
+
+## Threshold without extrapolating a signed curve
+
+Use the retained signed dispersive representation (not bundled here), originally based on [García-Martín & Moussallam](https://arxiv.org/abs/1006.5373) with [Cao et al.](https://arxiv.org/abs/2411.13398v2) stress input. Let \(X(a)=c_H+aL(a)+(a/\pi)\int_a^\infty K(v)/(v-a)\,dv\) with the existing subtraction, crossed resonances and right-cut kernel. Since \(B=(2/15)\beta^2+O(\beta^4)\), \(\Omega(a)\) is real, and \(s^2(s-a)/\beta^2=s^3\), the coefficient is
+\[
+ \lim H/\beta^2=2/15+\Omega(a)a^3 X(a),\qquad
+ \lim\operatorname{Re}(HA^*)/\beta^2=A(a)\lim H/\beta^2 .
+\]
+The Born coefficient is fixed by projection. The remaining finite terms are *derived from the retained hybrid* including its fitted subtraction; they are not low-energy constants determined from MTS alone. The threshold integral has no pole for the retained zero imaginary part before the first resolved phase; the physical D-wave threshold phase would also make it integrable. No division by this phase, digitized modulus slope, or change of a subtraction is needed. The spectral integrand turns on as \(\beta^5\) in \(ds\); one must include this suppression when evaluating the missing strip. The table separates the two cuts, constant and Born contribution, and compares the slope against evaluations at \(\beta^2=10^{-4},10^{-5},10^{-6}\). Eight input variants are sensitivities, not a posterior. The equality of elastic phases is not assumed to hold in nature above the equal-mass four-pion opening \(W=0.5582816\) GeV.
+
+## Signed moment bounded by total rates on a limited aperture
+
+Write the dimensionless equal-helicity amplitude in one charge channel as \(S(W)+5h(W)P_2(z)+R(W,z)\); the charged higher waves in \(R\) are the unchanged Born remainder, and neutral \(R=0\) in the reference. Neither the S wave, D phase nor opposite-helicity intensity is subtracted from the observed budget. The measured total includes both helicities, and the other intensity is nonnegative. Let \(r(W)\) be the old charge-specific rate coefficient in nb, so that the integral of \(r|S+5hP_2+R|^2\) is bounded by the published total. On \(0\le z\le d\), set \(p=P_2-\langle P_2\rangle\), \(V=\int p^2 dz=d^5/5\), \(j=\int p R dz/(5V)\), \(R_\perp=R-\langle R\rangle-5jp\). Completing the angular square, without requiring any common S between the two channels, gives an intensity cost of at least
+\[
+ r\left[25V|h+j|^2+\int |R_\perp|^2 dz\right].
+\]
+For a native energy bin \(J\), an overlap \(E\subseteq J\), and \(w=2\kappa\beta^3 k_b/W^3\), the signed integral for that bin is in the interval with center and radius
+\[
+ -c\int_E w\,\mathrm{Re}(A^*j)\,dW,\qquad
+ c\sqrt{\left[|J|\sigma^{\max}_J-\int_J r\|R_\perp\|^2dW\right]
+             \int_E {w^2|A|^2\over25Vr}\,dW},\quad
+ c=1\ ({+-}),\quad c=1/2\ ({00}).
+\]
+This uses the published bins as mean cross sections over their native W intervals; not point interpolation nor an event-level response unfolding. The neutral 0.50–0.55 bin, for example, spends its *whole* budget even though only 0.54–0.55 is needed in the gap. Positive uncertainty increments form an outer error box; no independence or statistical coverage probability is asserted. Intersect the summed 0.60–0.75 total bounds with the earlier angular bounds, rather than treating these as additional independent observations. Both constraints enclose the same scalar moment. For the four gap bins, explicit complex fields \(h=-j\pm N\,1_E wA/r\), with S removing their aperture average, saturate both signs of each *individual* total constraint. These are sharp controls for this relaxed problem, not globally analytic pion solutions.
+
+**What if the higher waves are different?** The amplitude term actually constrained by aperture projection is \(h+j+\delta j\), where \(\delta j=\int p\,\delta R/(5V)\). Using only the disjoint native total bins from 0.54 through 1.60, spend their full positive rate without subtracting even the tiny orthogonal floor. Suppose that in **each** bin \(\int 25Vr|\delta j|^2 dW\le\epsilon^2 |J|\sigma^{\max}_J\). This is a projected *amplitude* norm, not a limit on the total cross section. Cauchy then expands the summed radius by at most \(\epsilon\) times its full-rate value. At 3/6 fm the zero-leakage lower margin in this weaker test is \(1.36183\times10^{-7}\), total radius \(2.04956\times10^{-6}\) GeV⁻². A reversal within the covered range requires at least one bin to reach a 6.64% projected amplitude fraction; this does **not** show that any bin is below that fraction. It also does not count a different sign of the lower elastic input as higher-wave contamination. As a control, the even polynomial \(z^n/[\int_0^1P_2z^n dz]\) has unit true D projection, since the denominator is \(n/[(n+1)(n+3)]\). For \(n=48\) its apparent projection in the two apertures is tiny. This demonstrates why finite acceptance alone does not guarantee a full-angle D bound. It is not proposed as a crossed-channel QCD amplitude.
+
+## Necessary tail norm, not a tail measurement
+
+For \(W\ge1.60\), the kernel is positive and strictly decreasing at all the retained ray distances. In fact \(k'_x=-x^2[K_1(x)-8K_1(2x)]/2,\ x=bW\); the integral representation gives \(K_1(2x)\le e^{-x}K_1(x)\). Thus a tail acting alone needs mass \(\int dI_- \ge D_{\rm lower}/k_b(1.60)\) in the negative part of the signed spectral measure to erase a positive margin. This applies without requiring the high-energy wave to equal the low-energy reference. It is vacuous when the lower margin is not positive. A lower threshold for some other state must use its own kernel.
+
+**Independent upper-bound interface.** Normalize invariant amplitudes by \(M_{++}=2e^2\sum(2J+1)h_JP_J\) for two pions. The conventional \(16\pi\) partial wave is \(t_J=\alpha h_J/2\); normalize channels to unit incident flux with \(S=1+2i\sqrt{\beta_f/\xi_f}\,t\,\sqrt{\beta_i/\xi_i}\), with \(\xi_\gamma=\xi_n=2,\xi_c=1\). For an exact normalized equal-helicity incoming state, \(|S_{\cdot\gamma}|^2\) summed over orthogonal hadronic outputs is at most one. In a dressed/inclusive electromagnetic formulation that statement must refer to IR-safe states, not individual terms of a perturbative expansion. Cauchy gives \(|H|\le\sqrt3/(\alpha\sqrt\beta)\). The two-pion tail alone consequently obeys \(|D_>|\le\sqrt3/(2\pi)\int k_b\beta^{5/2}|A|dW/W^3\). No numerical continuation of \(A\) above 1.60 was used. This is deliberately a conservative unitarity cap, not an experimental photon amplitude.
+
+For arbitrary orthogonal hadronic intermediate states \(X\), let \(\rho_X(s)=\sum_X\int d\Phi_X|e:T_X|^2\) for one unit spin-two polarization in the rest frame, including identical-particle factors. Take \(e=\mathrm{diag}(-1,-1,2)/\sqrt6\). In the same conventions \(\|M^{J=2}_{++}\|^2\le80\pi\): the phase-space norm of a pure two-body J=2 column is \(40\pi\alpha^2\beta(|h_c|^2+|h_n|^2/2)\), and the transformation to a normalized asymptotic column is isometric for the other final states. For the two-pion stress \(e:T=2|\mathbf p|^2\sqrt{2/3}\,P_2 A\), giving \(\rho_{2\pi}=\beta^5s^2|A|^2/(160\pi)\). Direct projection gives \(\int d\Phi M (e:T)^*=\alpha s\beta^3HA^*/\sqrt6\). The mixed cut therefore multiplies the real inner product by \(\sqrt6/(4\pi s^3)\) in \(ds\); this is also fixed for any other state by the same external tensors and unitarity cut. The resulting bound uses no sign assumption:
+\[
+ |D_X|\le\sqrt{30/\pi}\int_{s_c}^\infty {k_b(\sqrt{s})\sqrt{\rho_X(s)}\over s^3}\,ds .
+\]
+It uses a common, correctly normalized total stress operator and a unitary matter sector. If these conditions fail, this is not a calibration for that sector.
+
+Two alternatives use positive vacuum observables instead of reconstructing a timelike spectral function. With \(\chi_X(Q^2)=\int_{s_c}^\infty\rho_X(s)ds/(s+Q^2)^4\), square Cauchy to obtain \(|D_X|^2\le(30/\pi)\chi_X\int k_b^2(s+Q^2)^4ds/s^6\). Alternatively define the zero-spatial-momentum connected correlator \(C_e(\tau)=\int d^3x\langle O_e(\tau,\mathbf x)O_e(0)\rangle\), \(O_e=e:T\). In this phase-space normalization \(C_{e,X}=(2\pi)^{-1}\int dW\,\rho_X(W^2)e^{-W\tau}\). In the rotationally symmetric vacuum \(C_e=2C_{12,12}\); partial correlators are nonnegative and bounded by the total. For \(0<\tau<2b\),
+\[
+ |D_X|^2\le240\, C_{e,X}(\tau)\int_{W_c}^{\infty}k_b(W)^2 e^{W\tau}\,dW/W^{10}.
+\]
+Use vacuum, matched matter content, total quark-plus-gluon stress and correct normalization. No finite-temperature, pure-glue, single-current, or unnormalized glueball correlator is a replacement. The thresholds in the tables are one-sector reversal tests, not simultaneous exclusion bounds. The low four-pion test remains weak with full-column unitarity; subtracting a modeled positive contribution is not automatically an upper bound on the remaining spectrum.

@@ -1,0 +1,11 @@
+# Reproduce without reopening any fit
+
+Run from this local folder with the retained Python 3.13 and its NumPy/SciPy and inherited local CAMB build. Scripts accept existing outputs only when they match. Use the following in order with Python's -B option:
+
+1. formation_tide.py: reads the two existing radiation-truncation-off transfer packs (not radiation switched off physically); compares the independent homogeneous-background Newtonian evolution and freezes the signed density, shape and current predictions.
+2. current_path.py: integrates the actual native peculiar velocities at 129 logarithmically spaced scale factors between 0.01 and 1/11; uses original mode group maxima, gauge, background and integration tolerance. Existing per-batch velocity packs are reused. On a new copy without these packs it computes them; --save writes missing result tables. It compares independently to the pinned first-step forecasts and native density endpoints. Missing outer modes are not supplied by extrapolation.
+3. principal_axes.py: evaluates analytic conditional variance, eigenvalue orientation average, shape scatter and paired sign probability. tensor_control.py builds the joint covariance from the native transfer kernels on identical phases and tests its consequences by direct sampling and diagonalization; eight independent scrambled sequences, not observations.
+4. prepare_shape.py: builds the actual two conditional regular formation packs and verifies the volume, phase and 12/24/40-Mpc potential split. finite_seed_rate.py: tests the analytic finite-background tangent against weak positive/negative variations of the full angular nonlinear terms. Neither advances a nonlinear host to the present.
+5. verify_stage.py checks the local manifest plus parent inputs. The complete data are already saved; no preview, server, fit or additional native run is needed to read them. Do not replace the sealed parent or local files for a different numerical configuration.
+
+The retained 99 modes span only 0.2925–5 Mpc⁻¹, filtered with the old equal-mass aperture. The reported statistical widths exclude modes outside that screen, measurement error, nonlinear assembly and model error. They do not identify the orientation of any observed Galactic structure or the number of particles bound to it.

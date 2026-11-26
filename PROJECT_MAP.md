@@ -2,6 +2,8 @@
 
 ## Main Public Entry Points
 
+- [November 26 status](docs/status/STATUS-2026-11-26.md) and [dated results and evidence catalogue](research-programme/updates/20261126/README.md) cover the latest release. Use the catalogue links or the Git verifier rather than a large folder preview.
+
 - `README.md` gives the public overview.
 - `CLAIM_CEILING.md` states the current claim boundary.
 - `docs/status/STATUS-2026-09-21.md` gives the current status snapshot.
