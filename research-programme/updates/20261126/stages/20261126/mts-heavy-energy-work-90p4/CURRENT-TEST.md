@@ -1,0 +1,5 @@
+## Independent microscopic current check
+
+The surviving scalar external-current term is −[q_J+3H(q_J′+2Hq_J)/κ]/(2D). Both trajectories currently use the same microscopic source tabulated for the resolved wave. This does not make their constraint contributions equal.
+
+For the native control, reconstruct each of the 782 first-order field/momentum pairs from its saved perturbations and the original gauge transformation; use each leg’s own k², not the output κ. With n the normal momentum, f′=n+vΨ and n′=−2Hn−(k_leg²+M²)f−BΨ+3vΦ′, where Φ′ is independently obtained from the native linear momentum constraint. With the original mixed-mode contraction q_J=−dg(n,f), predict its value and rate before checking the output current table. In particular q_J′+2Hq_J = dg((k_leg²+M²)f,f)+dg(BΨ,f)−3dg(vΦ′,f)−dg(n,n)−dg(n,vΨ). Test the five saved output modes on the full 89.65–90.4 interior, retaining the padded native knots on each side for derivative controls. Record whether the averaged branch even exports the microscopic perturbations required to repeat that calculation; an unavailable wave is not the empty wave. No new forcing is inserted in either trajectory.

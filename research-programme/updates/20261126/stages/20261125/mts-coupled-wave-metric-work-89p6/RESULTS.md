@@ -1,0 +1,28 @@
+> Public reading copy: local links are mapped to released material or marked unavailable. Machine-specific passages, where present, have been omitted. See the inventory for the original digest.
+
+# Predicting the wave–gravity cancellation exposes the density preparation
+
+**The coupled equations predict two large opposing terms, but the trailing-cycle wave density does not predict the small remainder accurately enough.** At the finer gravity step the joint photon discrepancy calculated from this preparation is **1.095634%** of the original small momentum-route signal; the saved comparison is **0.577985%**. The signed-vector error is **95.415% of that discrepancy**. These two percentages use different denominators. Replacing the filtered entry current hardly changes the answer. Replacing only the entry density reproduces the signed total photon discrepancy to **0.000175% of its own size**. That is a diagnostic using saved densities, not an independent prediction of those densities.
+
+| Primary readout | Coarse | Fine |
+|---|---:|---:|
+| Filtered entry: local heavy-plus-metric RMS work error, % of pair | 9.698 | 9.682 |
+| Actual signed pair after scattering, % of original momentum correction | 0.610545 | 0.610555 |
+| Filtered entry: predicted signed pair, same scale | 1.129124 | 1.128698 |
+| Actual signed total after adding ordinary stress and supplied U, same scale | 0.577973 | 0.577985 |
+| Filtered entry: predicted signed total, same scale | 1.096037 | 1.095634 |
+| Filtered entry: signed total photon error, % of actual total | 95.4971 | 95.4149 |
+| Restore only saved current: same error | 95.4986 | 95.4150 |
+| Restore only saved density: same error | 0.000680 | 0.000175 |
+
+**What was tested.** On each original left knot in 89.148503803–89.6 conformal Mpc we independently evolved the native and matched matter variables together with Φ from the momentum equation. Neither branch took Φ at the right from the saved history, inverted the observed total for the metric term, or supplied U to the evolution. Prescribed sources, high moments, background and original left metric/ordinary states were retained. We used the previously frozen phase average of the native heavy energy and current for the primary matched preparation. The four possible preparations were fixed before the test. All source and projected forecasts were sealed before assembling and projecting the reference. This is conditional local evolution on saved histories, not a new end-to-end cosmological run.
+
+**Where it goes wrong.** On the fine step the signed heavy and remaining metric photon contributions individually have norms **99.801%** and **99.197%** on the common scale. The filtered-state calculation predicts **100.322%** and **99.197%**. It gets the metric vector to **0.000239% of its own norm**, but the heavy vector to only **0.5524%**. A small relative error in the large heavy term changes the much smaller sum substantially. Signed subtraction and the ordinary and supplied-U controls are maintained throughout; the numbers in this paragraph are norms, not scalars that should be subtracted. The actual energy/current gap is still above 0.5% on both clocks; the separate 0.163%-of-launch magnitude limit passes.
+
+**Why density matters.** Write δe for filtered minus saved matched energy density perturbation (in the retained normalization) at an original left knot. Change only that initial value, holding current, Φ and ordinary states fixed. The matched equations give δΦ′=0 there: Φ′ depends on current and shear, not on the heavy density at fixed Φ. They also give δe′=−3H c_s² δe and δj′=k² c_s² δe. In the work of the pair, the two pressure terms cancel. The only immediate rate difference is therefore **ρ′δe/2** on the matched side. The signed wave-minus-matched forecast inherits the opposite sign. The changing background weight matters even if the initial gravitational response is zero.
+
+A diagnostic performed **after scoring** used −(ρ_right−ρ_left)δe/2 on each substep, holding the original cell's δe fixed and using the matched right-end gravity weight for photons. It reproduces the density-only control difference to better than 0.000001% locally and after scattering on both saved clocks. This is exact as a left-end derivative, not a finite-time theorem. It uses the measured entry mismatch to explain its effect; it does not fit, predict or correct the mismatch. The two-step, angle, photon-time, gravity-step, linearity and archive controls all pass at the original tolerances.
+
+**Next.** Predict the entry density without using saved matched heavy densities beyond the switch. Start from the retained physical matching condition; evolve the difference between the matched continuity equation and the derivative of the original causal phase average. The latter is obtained from its two phase endpoints, with the early held entry kept intact. Freeze the resulting density history on both clocks before opening the saved density targets, and test its photon effect against the same 0.5% gate. This targets the missing preparation, rather than fitting a cancellation in U.
+
+[Protocol](PROTOCOL.md) · source freeze (not bundled here) · photon freeze (not bundled here) · [local results](evidence-001.zip) (archive member: `local-scores.csv`) · [signed photon results](evidence-001.zip) (archive member: `photon-scores.csv`) · [components](evidence-001.zip) (archive member: `components.csv`) · [density sensitivity test](evidence-001.zip) (archive member: `density-response.csv`) · [numerical controls](evidence-001.zip) (archive member: `numerical-controls.csv`) · [unchanged physical gates](evidence-001.zip) (archive member: `size-gates.csv`).

@@ -1,0 +1,24 @@
+> Public reading copy: local links are mapped to released material or marked unavailable. Machine-specific passages, where present, have been omitted. See the inventory for the original digest.
+
+# Expansion pressure on the prepared amplitude does not repair the photon discrepancy
+
+**Decision: retain the old branch, do not add this term to the production model.** On the finer gravity clock the saved photon gap is 0.57636165% of the original momentum-route signal. Passing requires at least a 0.07636165 percentage-point reduction in the joint norm, as well as passing on energy and current. At the tested resolution the predicted change from this pressure mechanism does not move any of those readouts measurably.
+
+## Prediction and test
+
+The amplitude of a quadratic scalar in an expanding background carries a calculable mean pressure. We derived its leading ratio, −3(dH/dt)/(4m²), at fixed geometry and checked it against the exact phase-ensemble solutions for radiation- and matter-dominated power-law expansion. The two independent quadratures are the Bessel J and Y solutions with equal phase weight; the derivative identity for t^(-nu) J_nu(mt) gives the order-(nu+1) kinetic norm. The six comparisons agree within 0.000147% relative. This checks the homogeneous derivation, not its application to a general perturbation.
+
+The retained model already has the flat-background frequency dispersion. We kept it and its saved pressure on the prepared trajectory, applying only the expansion contribution to departures from that trajectory in the heavy rest density. Its coefficient is 1.895–1.935 × 10⁻⁷ on the tested interval. Pressure drives heavy energy and current with opposite weights that cancel in the instantaneous gravity constraint. Their subsequent evolution, not a direct pressure source for the photons, is what we propagated. The correction starts from zero at the switch. It changes only the averaged heavy branch; the native-wave reference, ordinary comparison baseline, preparation, external forcing and 77-bin inputs are held. The prepared inputs have their previously recorded calibration history, so this is an internal physical test, not new observational evidence.
+
+| Gravity step | Gap before and after (% original signal) | Corrected energy / current (%) | Norm of photon increment (percentage points) |
+|---|---:|---:|---:|
+| Coarse | 0.57635063 | 0.57657174 / 0.57558126 | 7.68 × 10⁻²⁰ |
+| Fine | 0.57636165 | 0.57658244 / 0.57559339 | 5.73 × 10⁻²⁰ |
+
+The separately evolved increment projects weakly opposite the gap on both grids, but the two full vectors differ by **41.68% of the tiny fine increment**. Do not report a converged correction magnitude, direction in the continuum, or an improved fit. In the actual simulated gap the change rounds to zero. For scale, the coarse/fine spread of the *original* joint gap is 1.10 × 10⁻⁵ percentage points. Both calculated increments are also roughly eighteen orders below the required reduction, not just narrowly below threshold. These are two numerical estimates, not a rigorous continuum upper bound.
+
+We froze the four matter sources, then the three photon projections, before scoring against the archived discrepancy. 34/35 complex-vector numerical comparisons pass the fixed 0.5% tolerance; the exception is the relative gravity-step comparison above. The unchanged physical acceptance test fails on both grids. We did not retest the separate absolute launch-size criterion. A follow-up diagnostic split the *same frozen source* at the already fixed first-cycle boundary: fine first-cycle increment 2.09 × 10⁻²² percentage points; later increment 5.74 × 10⁻²⁰. Their sum reproduces the unsplit response. Neither window hides a correction of the required size.
+
+**Next discriminating calculation:** derive the work of the oscillating background kinetic energy against the changing metric. The microscopic energy and current equations contain the products 3(v²/ρ−1)Φ′ and k²(v²/ρ−1)Ψ. An average of those products need not equal the product of their averages. Reconstruct the leading phase from switch data, subtract the part already represented by the prepared sources, and freeze the predicted covariance before opening the native comparison. If the saved averaged state does not fix a necessary phase, identify the required switch observable instead of selecting a phase to match the gap. This is a different mechanism from changing a pressure coefficient.
+
+[Derivation and scope](PROTOCOL.md) · [Exact background controls](evidence-001.zip) (archive member: `bessel-control.csv`) · [Source controls](evidence-001.zip) (archive member: `source-controls.csv`) · Frozen predictions (not bundled here) · [Full-window readouts](evidence-001.zip) (archive member: `photon-score.csv`) · [Numerical controls](evidence-001.zip) (archive member: `numerical-checks.csv`) · First-cycle and later readouts (not bundled here).

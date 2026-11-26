@@ -1,0 +1,22 @@
+> Public reading copy: local links are mapped to released material or marked unavailable. Machine-specific passages, where present, have been omitted. See the inventory for the original digest.
+
+# Does an infalling heavy wave actually occupy its own potential well?
+
+20 November 2026 — conditional spherical formation experiment, distinct from the observational LMC force comparison (not bundled here). No parameters fitted to a galaxy. The common Newton coupling, species, prepared complex field, cold-particle momenta and expansion are inherited. The result is local; it does not revise the public release.
+
+**Yes, on these evolved slices; not as a permanent ground state.** We continued the same positively perturbed (+2σ) patches past their first shell crossings to scale factor 0.925159195. Positive collisionless mass streams pass through one another, with their distinct momenta intact. The heavy wave and each classical stream now feel the potential obtained by varying a single discrete Newtonian interaction energy. Changing the wave and then the dust gives the same mixed response as the opposite order to within 8 parts in 10¹⁰ on the tested folded slice. This fixes the relative gravity coupling in the numerical calculation; the known normalization of gravity remains an input. The matched cold model has no coherent wave: it is tested with particle energies and velocities.
+
+**Instantaneous occupation.** Projecting the *actual complex wave*, rather than its density envelope, onto negative-energy states within 100 proper kpc gives 48.8–79.6% of the mass presently inside, for a scalar vanishing on that sphere. Across the five final heavy discretizations the independent strong-residual witness is at least 45% on that convention. This is below the contemporaneous potential at the aperture edge, not a binding energy to infinity. Both 100/200 kpc and Dirichlet/Neumann results, classical fractions and individual complex amplitudes are saved. The absolute density and the ground-mode share are not stable enough to supply a Galactic occupation.
+
+**Two-time test.** For the matched double-sheet runs, tag the negative population at scale factor 0.65, evolve it through the *same live gravity*, and test again at 0.925159195. The fractions below are of the **initial tagged population**, not of the mass now present.
+
+| Proper comparison radius | Wave inside at endpoint | Wave inside and negative at endpoint | Cold CDM negative at both epochs / initially negative | Cold baryons, same comparison |
+|---|---:|---:|---:|---:|
+| 100 kpc | 39.16% | 19.62% | 58.85% | 54.95% |
+| 200 kpc | 52.86% | 35.89% | 69.98% | 69.53% |
+
+The wave's tagged and complementary amplitudes interfere. Their sum recovers the full negative projection, and the untagged reference trajectory is reproduced. None of these fractions means uninterrupted confinement. In the separate same-start (0.60) wave resolution pair, the 100-kpc negative return changes from 12.67% to 28.52%; 200-kpc return changes from 48.51% to 52.22%. For the other starting-time pair the cold tags begin at 0.40, so those are not equal-time wave/cold differences. Initial wave-tag embedding errors can exceed the inherited 2×10⁻⁵ relative tolerance. This test establishes the distinction between occupying a well and remaining in it, not a converged universal percentage.
+
+**Stress from the state, not a fitted pressure.** The evolved positive-mass sheets give physical velocity dispersion after crossing. The [averaged real scalar stress and curvature source](HILBERT.md) use the signed complex field. A direct real-field cycle check passes on the tested saved slice. Results distinguish an intrinsic tidal source from a propagated clock signal.
+
+**What changes with resolution.** The short 256-step weak-momentum checks have maximum defects 7.15×10⁻⁷ (heavy, including the wave) and less than 1.4×10⁻⁶ (cold) relative to work; the long post-mixing continuum balance does not uniformly pass 2×10⁻⁵. Although positivity and the total mass/flux accounting hold, the final proper radius enclosing the original target wave mass spans about 3–24 kpc. Failure to resolve this radius matters: the spherical result is not a prediction for the inner Milky Way, or a correction to the signed LMC bands. The original cubic-density pilot and lower-order spectrum diagnostics are kept as rejected controls, not silently replaced. Numerical ancestry and file-level verification: [replay](REPLAY.md).

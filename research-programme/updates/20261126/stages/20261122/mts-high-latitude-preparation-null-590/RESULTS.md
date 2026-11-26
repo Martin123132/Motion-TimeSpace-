@@ -1,0 +1,40 @@
+> Public reading copy: local links are mapped to released material or marked unavailable. Machine-specific passages, where present, have been omitted. See the inventory for the original digest.
+
+# GD-1: the pull is too strong, and the problem is present in the starting halo
+
+**Decision.** On both fixed stellar foregrounds the two retained snapshot-590 wave preparations give approximately the right *direction* of gravity at GD-1, but too much inward acceleration. They are much closer to each other than either is to the measured radial force. We traced the excess back to the independently saved stationary starting state and derived how far a genuinely different preparation would have to move. No halo normalization, force coupling, foreground parameter or wave phase was fitted.
+
+### First forecast, then a real stream
+
+Before looking up a new stream result we computed the plane-to-latitude potential difference and tangential force on **104 geometries**, 4–100 kpc and 10–80° *Galactocentric* latitude. The predictions, two numerical resolutions and controls are frozen (not bundled here). Zero of 104 tangential accelerations and zero of 104 quadrupole-removed readouts separate the preparations more than the spread between the two fixed stellar models. For the equal-radius potential one point does, at 4 kpc and 70°. It is a disk-model crossing: at that radius its positive window is 69.06–71.56°, and a relative stellar mass allowance of just 0.00381% within one disk suffices to make the bands touch. Including the original positive source as a third scenario leaves no single-site potential gap. This is not a bound against every future tracer combination or a measured prior on disk mass.
+
+[Nibauer & Bonaca, GD-1, equations 2–4](https://arxiv.org/html/2504.07187v1) infer the three cylindrical acceleration components by differentiating the observed stream track, not by selecting a halo profile. At their most precise quoted point, \(R=11.9,z=7.3\) kpc, we evaluated the unaltered wave directly, without nearest-grid extrapolation. The table uses their mass-equivalent radial proxy \(r^2\partial_r\Phi/G\), in \(10^{11} M_\odot\), and their local force-ratio proxy \(q_\Phi=\sqrt{za_R/(Ra_z)}\).
+
+| At GD-1 | Radial mass equivalent | Local force ratio |
+|---|---:|---:|
+| Stream inference, quoted 68% | **1.41 ± 0.07** | **0.91 ± 0.05** |
+| Stellar Model I alone | 0.669 | 0.840 |
+| Model I + reset / inherited wave | **1.917 / 1.909** | 0.932 / 0.931 |
+| Model I + its published spherical halo instead | **1.362** | 0.915 |
+| Stellar Model II alone | 0.577 | 0.837 |
+| Model II + reset / inherited wave | **1.824 / 1.817** | 0.936 / 0.936 |
+| Model II + its published spherical halo instead | **1.616** | 0.936 |
+| Original positive host + reset / inherited wave | 1.580 / 1.572 | 0.947 / 0.946 |
+
+We reconstructed both [Pouliasis et al. conventional halo controls](https://arxiv.org/html/1611.07979) from the enclosed integral of their equation 7, with **their corresponding stars** each time. I lies inside the quoted radial interval, II does not. Neither a good flattening nor a fitted reduction of the wave mass repairs the model tested. All axisymmetric models predict zero azimuthal acceleration; the paper reports \(+0.2\pm0.1\) km/s/Myr. Its \(a_R,a_z,q_\Phi\) and radial proxy come from the *same* stars; no independent error bars were multiplied together. No inferred density flattening was mistaken for an observed force. We have not propagated the authors' full correlated position/acceleration posterior or established historical non-exposure. This is a comparison to a real published point, not a whole-stream exclusion or a held-out likelihood. Component results (not bundled here) · [marginal comparisons](evidence-001.zip) (archive member: `gd1-marginals.csv`).
+
+### What the wave would have to change
+
+At 13.96 kpc the stored wave provides roughly \(1.24\times10^{11}M_\odot\) of radial-force equivalent. Its deviation from its *true enclosed mass* is only about \(4\text{–}5\times10^7 M_\odot\) in the measured formation endpoints, but we did **not** assume it stays small for other preparations. With stellar models I and II the 280-step alternatives need a decrease of **33.65–43.91 billion** in equivalent solar masses merely to reach the upper edge of GD-1's quoted interval. The original lighter host still needs about 9–10 billion. This is force accounting, not a literal subtraction of that many particles.
+
+Switching the last 88.97 Myr of ordinary history from straight interpolation to the independently counted anchor, cold proxy or combined history moves the force by **+0.092 to +0.223 billion**, not down. All formation force and correction temporal refinements pass 0.5%. The virial from the field equations predicts an inward curvature of the global squared radius under both stellar models; the *true enclosed mass* at the GD-1 radius has positive curvature in both preparations. At launch the reset forward current is moving mass outward there (−1.05 million solar masses/Myr); the inherited forward current moves it inward (+6.19 million/Myr). These are different observables, not a prediction that either rate persists.
+
+**Can small changes outside the few runs we tried do substantially better?** No, within a quantitative neighborhood of either reference wave. We treated the *whole directional radial force* as a quadratic operator, including angular structure and exterior matter. In the norm used by the archived evolution, **any** normalized pure state with phase-angle sine at most 0.002 from its line endpoint can reduce this force by at most **0.559 billion solar-mass equivalent**, at the same occupation and angular bandwidth. The three tested source interventions have sines 0.00079–0.00191. The stellar models require at least **0.0762–0.0919**, not merely another small perturbation. These are dimensionless state displacements, not mass percentages. The [native bound](evidence-001.zip) (archive member: `native-state-angle-bound.csv`) is conservative; no claim that achieving the bound supplies a successful halo. The independently derived continuously normalized bound tells the same story. [Derivation and metric distinction](DERIVATION.md).
+
+The state bound requires mean effective potential fluctuations of **1,677–2,022 (km/s)²** if the change must be produced from the *same* initial state within those 88.97 Myr. The archived counted-anchor history actually supplied **32.8**, including self-gravity: **51–62 times too little**. The ordinary-source oscillation bound is not a bound on arbitrary induced self gravity. Where measured total generator integrals exist we compared those directly, not just external work. Action replay (not bundled here).
+
+### Where to go next
+
+The earlier archive reproduces the two 590 wave arrays **exactly**. The inherited wave began at snapshot 544 in its prescribed stationary ground state; even then it already gave **115.86 billion** solar-mass equivalent at this radius, versus **124.00 billion** at 590. The reset begins at 572 at **121.53 billion**. For comparison, today's two fixed stellar budgets would leave only **81.08–90.35 billion** for the wave at the measured upper endpoint. This last comparison diagnoses the *profile scale*, not an application of a present-day measurement to a past Milky Way. The constant-ground control stays constant. Earlier wave trace (not bundled here).
+
+**Next target:** derive or bound the *pre-544 radial population and incoming mass/phase current*, not another choice of late interpolation or sign. Start from the retained cosmological field-and-momentum packet and the existing assembly/infall calculations; determine which initial amplitudes, currents and boundary conditions they actually transfer into the Galactic radial basis at fixed occupation. Use the GD-1 state-distance and solar radial/vertical constraints as independent rejection tests, not as inputs to choose the seed. If the transfer leaves a free occupation or boundary flux, separate its required magnitude from what the parent actually predicts.

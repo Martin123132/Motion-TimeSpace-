@@ -1,0 +1,15 @@
+> Public reading copy: local links are mapped to released material or marked unavailable. Machine-specific passages, where present, have been omitted. See the inventory for the original digest.
+
+# Reproducing the local measurement
+
+All code runs without network access with the retained Python 3.13 and NumPy, SciPy, SymPy. Start in this directory. Scripts set BLAS/OpenMP to a single numerical thread. No temporary servers, large downloads, agents or persistent jobs. Existing products must match byte-for-byte; they are not overwritten. Do not use optimized Python with assertions disabled. The prior [binary stage](../mts-binary-polarization-rays/RESULTS.md) and all 47 of its sealed files are checked by [base.py](evidence-001.zip) (archive member: `base.py`); parent checkpoint 4946, the scalar source and the two sign conventions are pinned separately. No edits to any sealed archive.
+
+Run in order:
+
+1. `python -B vertices.py` — exact integer/rational source vertices, independent momentum and pure-coordinate/photon-gauge checks, rank and projector freeze.
+2. `python -B charged_scalar.py`, `python -B spinor.py` — independent microscopic determinants; exact beta/simplex moments vs renormalized full integrals at several ε/m. No sampling noise or measured hadron input. `python -B chiral_slope.py` — four-mass stencil algebra and free-source/logarithm injections. `python -B sign_bridge.py` — Euclidean versus Lorentzian static probe, named null polarizations using the archived curvature function in a one-shot read-only invocation.
+3. `python -B lattice.py control`, `python -B lattice.py main`, `python -B lattice.py volume` — real-coordinate finite differences and exact Fourier measurements for discretized scalar. Check both contacts and the independent box variation. Results marked “matched continuum” refer to infinite volume and the same **nonzero** momentum.
+4. `python -B spacing.py freeze`, then `python -B spacing.py test` — two numerical extrapolations based on the frozen coarser files; direct 112⁴ and 128⁴ measurements test the forecasts. No post hoc replacement of the failed quadratic-only forecasts. Four cases failing is a retained result.
+5. `python -B verify.py` — revalidate hashes, completeness, labels, numerical gates, design records, local paths and the existing seal. The initial seal was written with `--seal` **after** the numerical work. [Results](RESULTS.md) · [determinant calculation](LOOPS.md) · [conditional chiral observable](CHIRAL-TEST.md).
+
+External references and scope: the sign/reference source [arXiv:0812.4849](https://arxiv.org/abs/0812.4849) is retained locally via checkpoint 4931. [arXiv:1609.00723](https://arxiv.org/abs/1609.00723) fixes the named mostly-plus optical convention. Curved chiral dynamics is imported physics. [Ji & Jung's numerical photon-structure example](https://arxiv.org/abs/hep-lat/0103007) concerns a quenched forward first moment; it does not match our nonforward metric variation. No results of a Yang–Mills existence or mass-gap construction are imported here.

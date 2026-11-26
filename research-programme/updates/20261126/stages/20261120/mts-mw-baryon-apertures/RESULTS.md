@@ -1,0 +1,43 @@
+# The simulation disk is not a supported description of local ordinary matter
+
+The common-disk LMC experiment remains a useful controlled comparison, but its disk cannot simultaneously describe the measured column of baryons near the Sun and their midplane density. This finding is about the **source of gravity**, before choosing MTS or a dark halo. It does not depend on an inner rotation velocity. The test also yields a new force target that a change of disk normalization alone cannot explain.
+
+## Local census: why normalization is not the fix
+
+For the archive's vertical law, ρ(z)=Σ∞ sech²(z/2h)/(4h). Hence h=Σ∞/(4ρ₀), independent of the disk mass. We subtract the tiny native bulge at R=8.3 kpc before taking this ratio. [McKee, Parravano & Hollenbach, Tables 1–3 and Eq. 46](https://arxiv.org/pdf/1509.05334v1) give Σ∞=47.1±3.4 M☉/pc² and ρ₀=0.084±0.012 M☉/pc³ for ordinary matter. The simulation has **55.58 and 0.03474**. No normalization of its 400-pc-height disk matches both. Even allowing both census values to move independently by twice their printed uncertainties admits only **93–225 pc** for this specific sech² family (central value 140 pc). These are rectangular sensitivity bounds, not a joint statistical rejection. Effective height Σ/(2ρ₀), a common alternative convention, is *twice* the h used here.
+
+The previously retained ordinary source gives **42.42 and 0.08735**: it does considerably better on midplane density, but has a low column and no explicit warm ionized layer. Within ±1.1 kpc the census gives 43.8±3.4; the archive gives 48.90 and the retained source 39.94. No model density is inferred by treating vertical acceleration as a mass sheet.
+
+**Independent profile check.** Integrating the saved [Lian et al. stellar release](https://github.com/lianjianhui/Source-data-for-MW-mass-paper/tree/78ba3c4e8e92a2d3b6e03842e437d6e95df6e9fd) separately north and south, then adding the published gas phases and an explicit brown-dwarf contribution, gives central ordinary columns of **15.07–15.18 inside ±100 pc** and **44.76–44.87 inside ±1.5 kpc**, versus 6.91 and 53.02 for the archive. These narrow ranges are **only** placement sensitivity for the 0.11 M☉/pc² Gum contribution, not measurement errors. Stellar normalization, IMF, gas opacity, conversion factors and spatial variations matter. The retained inputs give 14.81 and 41.06. Lian was used in earlier stages; it is not a new holdout. A different observable, the 100-pc **sphere** used by [Lutsenko et al.](https://arxiv.org/abs/2507.06052), gives the count-split model ~0.041–0.042 M☉/pc³ in stars/remnants, depending on low-mass bookkeeping. The archive puts only ~0.0346 in *all* ordinary matter there, close to the bottom of the stellar-only Kroupa range. The sphere by itself does not exclude the archive; local gas is not spatially uniform and a sphere is not a slab.
+
+**Inner radius.** We extracted nine H I and nine CO-bright H₂ measurements and error bars directly from the vector markers in [Marasco et al., Fig. 11b](https://arxiv.org/pdf/1707.00743v1), not from their smoothed shading. Near 6.01 kpc the helium-corrected neutral column is 9.33 M☉/pc². With the previously mass-calibrated stellar/remnant column 63.89, the subtotal is **73.22**, versus **119.25** in the full archive ordinary column. The unscaled stellar file would give a subtotal of ~97.99 instead; it is not the authors' corrected mass normalization. This is *not* a proof that all missing phases sum to zero. Rounding, 0.2-kpc resolution, radial normalization, CO-dark molecular gas, H II, substellar mass and systematics on kinematic deprojection remain explicit. A common exponential extrapolated from the solar census gives 101.06 at this radius; the solar correction alone does not establish that radial profile. This comparison uses full columns, not the previous 114.14 finite-height archive column.
+
+## What the same parent equations predict
+
+Two input files were frozen before their force comparison. Keep the same native bulge and 3-kpc exponential radial scale. Use the McKee ordinary counts to determine either one effective layer or separate stellar and gas layers (194 and 84 pc). These are inferred input models, not new particle masses, force laws or uniquely measured distributions. Matching two moments does not guarantee the whole vertical profile: inside ±300 pc the split model gives 34.62 against the assembled central census ~29.74–29.85. A more extended tail is visible in the actual profiles.
+
+We re-solved the stationary fixed-number Schrödinger–Poisson equation on both potentials. The original two occupations give **244–245 km/s** at 17.58 kpc instead of 224.03. On each source we separately solved for the occupation implied solely by the old outer speed. For the split source this yields **1.816×10¹¹ M☉**. An NFW control with the previous 16-kpc scale radius receives exactly the same ordinary field and the same outer-speed calibration. On fixed-N comparisons its amplitude is set to the *same resulting* outer speed as that wave. Thus neither model gets an extra inner datum.
+
+| Count-split solar source, 224.03 km/s branch | MTS | Static NFW |
+|---|---:|---:|
+| Original 8 signed force bands inside, stationary | **6/8** | **5/8** |
+| Vertical compression K at 6 kpc (original interval 0.735–0.909) | 0.758 | 0.801 |
+| Northern radial acceleration at 8.3 kpc (allowed −2.200 to −1.959) | −1.919 | −2.000 |
+| Southern radial acceleration at 8.3 kpc (allowed −2.246 to −2.039) | −1.919 | −2.000 |
+
+Both of MTS's misses are now **too little inward radial gravity at 8.3 kpc**, not the two different southern misses seen on the heavy disk. The one-layer census model gives the same band counts. Accelerations are in 10⁻¹⁰ m/s²; K is in that unit per kpc. These are **stationary, pre-satellite** predictions, not new live-LMC scores. Neither direct satellite forces nor previously driven modes have been added to these new states. No inner force set any source parameter, and the two band counts are not a likelihood.
+
+## The sharper test: how fast vertical gravity grows above the disk
+
+[Bienaymé et al.'s RAVE DR4 analysis](https://doi.org/10.1051/0004-6361/201424478) reports |Kz|/(2πG)=68.5±1.0 and 96.9±2.2 at 1 and 2 kpc, respectively. These are **forces expressed in surface-density units**, not mass columns. They are jointly model-inferred from tracers. At their R₀=8.5 kpc convention, the count-split anchored wave gives **62.41 and 78.34**, the paired NFW **62.91 and 79.11**. Evaluating instead at our R₀=8.3 kpc does not rescue the growth with height. The two published marginal intervals permit a difference of 25.2–31.6 if each is allowed its full printed width; covariance is not assumed known. Both anchored models predict only **about 16**, against the central **28.4**. The old fixed occupations on the two count-based sources increase the difference but still fall short and miss the outer-speed anchor.
+
+For a reflection-even, axisymmetric weak field with inward acceleration taken negative, integrating Poisson gives
+
+    |a_z(R,z)|/(2πG) = Σ_b(R,z) + Σ_dark(R,z)
+                       + (1/2πG) ∫₀ᶻ [∂R a_R + a_R/R] dz'.
+
+At 2 kpc the wave's total column is **96.60**, superficially close to 96.9. It is the *wrong observable*. The radial term is −18.26, leaving a predicted force of **78.34**. Integrating the radial derivatives independently reproduces this correction within 0.006 M☉/pc² for the count-split case. From 1 to 2 kpc the wave contributions are **+0.36 ordinary column, +25.96 dark column, −10.38 radial term = +15.94**. For NFW they are +0.36, +20.05 and −4.22 = +16.20.
+
+The counted ordinary tail between those heights is closer to **2.95–3.06** than the simple split model's 0.36. Restoring just that mass while holding the other terms fixed would still leave ~9.8 M☉/pc² of the central contrast unexplained in MTS (~9.5 for NFW). This subtraction is a **necessary combined change of dark column and radial divergence conditional on that ordinary shell**, not a demand for that amount of extra dark mass. A changed ordinary source will itself change radial gravity and the prepared wave. The assumed solar radius, tracer equilibrium, local asymmetry and common calibration affect interpretation; these data are not claimed as a blind independent likelihood.
+
+**Next physical step:** reconstruct the source from the observed vertical profile and measured radial stellar/neutral-gas distribution together, keeping missing gas phases explicit. Freeze it before testing the 1→2-kpc contrast and both radial misses on MTS and NFW. The heavy archive disk stays a simulation control; retuning a source or adding more wave modes to it is not the best next explanation of the Milky Way data.

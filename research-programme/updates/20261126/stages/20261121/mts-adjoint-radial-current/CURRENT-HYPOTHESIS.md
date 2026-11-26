@@ -1,0 +1,9 @@
+# Test a specific radial-current discrepancy at fixed grid
+
+The polar component uses no radial phase derivative in its current. The radial wave current does. In a weak, slowly varying wave, j_r contains +rho * partial_r(phi)/mu; phi_dot=mu Im(zeta), and the leading isotropic stress is -rho Im(zeta). Thus the term in partial_t(r j_r) that cancels the radial gradient in the stress divergence has a definite coefficient and sign. The matter diagnostic takes a cell derivative D_c=I6 G6 before interpolation to faces, whereas the previously frozen metric-source term uses the directly staggered G12. Their symbols disagree near the shortest resolved wavelengths, where cell-centred derivatives vanish even though staggered gradients do not.
+
+Before evaluating this explanation, freeze the proposed leading discrepancy:
+r [ I12_odd (rho D_c Im(zeta)) - (I12 rho) G12 Im(zeta) ]_2 .
+Here rho includes both harmonics of the saved wave's density. Take host minus zero and compare to the existing **signed wave-minus-dust** momentum-balance residual. No dust wave term, tunable prefactor, phase, frequency filter, or changed force prediction. Report sign, magnitude and unscaled discrepancy, including launch and late times and both signs. Failure of the single term to account for the residual is informative. Even exact agreement would identify a discrete mismatch, not prove continuum conservation.
+
+Independently evaluate the full moment and its derivative on faces: interpolate undifferentiated factors before multiplying and use the same G12 on radially differentiated potentials in both current and stress. Retain variations of density, canonical amplitude, normal momentum, angular harmonic, external current and evolving metric. Test strong and weak residuals without altering the stored matter evolution, source or tidal readout. This distinguishes a comparison error from an update that would need new matter evolution.

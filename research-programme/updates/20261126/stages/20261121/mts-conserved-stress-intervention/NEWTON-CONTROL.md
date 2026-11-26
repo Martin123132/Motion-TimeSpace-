@@ -1,0 +1,11 @@
+# Matched scalar-density control (after the positive withdrawal, before testing the other sign)
+
+The original Newtonian forecast was not itself rerun with the MTS/GR diagnostic counter-source. Comparing the no-stress GR curve to that *unchanged* Newtonian curve includes a density-drive difference. Reconstruct this contribution independently rather than attributing it to propagation. This test was added after the positive-host combined forecast passed; it is not a new blind prediction on that host.
+
+Integrate the original density and current conservation for the added trace-free, zero-monopole source, then solve the Newtonian quadrupolar Poisson equation. No TT projection or GR tidal readings enter this calculation. With D=div div π, the flat incremental density is ∫(t−s)D(s)ds. With the original geometric units and radial test W, the scalar tidal functional on D is ∫K D dr with
+
+    K = −W/3 + (6/5) r⁴ ∫_r^∞ W(x)/x⁵ dx + (1/5r)∫_0^r W(x)dx .
+
+Integrate by parts twice on full space using the specified zero exterior continuation for this control; interior jumps, if present, are interpreted distributionally. The raw stress weights for a,c,d are K″−5K′/r+11K/r², 12K′/r−36K/r² and 12K/r², respectively. Check the TT-null, vector-null and nonzero scalar response separately. Compare cut extents 36,72,144 Mpc, report systematic differences. Agreement with the independent tensor-subtraction route tests whether its finite projection boundary matters.
+
+For the expanding comparison the conformal current response obeys (b⁴J)′=−b² div(raw stress), and (b³ε)′=−b³ div J, so its properly scaled energy response is b_final⁻³∫ b⁻¹(u) du ∫ b²(s) D_raw(s)ds. Integrate panel-wise on the saved conformal clock, evaluating all sources with the same *final* proper ruler. This is a freely conserved differential source on the supplied homogeneous background, not a new full Newtonian galaxy or a recalculation of all matter feedback on that background. Compare like with like: the scaled withdrawal of the GR tide minus this independent Poisson response versus the retained TT prediction. Never subtract an estimated term from the measured native GR reading and call the corrected number an observation.

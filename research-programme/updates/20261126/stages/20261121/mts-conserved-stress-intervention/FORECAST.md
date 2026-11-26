@@ -1,0 +1,9 @@
+# Additional prospective prediction: the scalar companion of a stress withdrawal
+
+Before inspecting any altered trajectory's paired tidal reading, freeze this comparison. Removing the full local trace-free spatial stress is not the same as removing its transverse projection. For a flat, initially unperturbed metric with conserved compensating energy and current, write a,c,d for the orthonormal quadrupolar radial, mixed and tangential-tensor coefficients of the supplied stress. With u=a′+3a/r−6c/r, v=c′+3c/r−a/(2r)−2d/r, D=u′+2u/r−6v/r, the radial curvature acceleration kernel at zero delay is
+
+    C = a″+2a′/r−12a/r²+24c/r²−2u′+2D/3 .
+
+For the TT piece it reduces to A″+6A′/r, A the radial TT projection. The difference is the scalar companion; there is no delayed vector term in flat synchronous GR. The instantaneous geodesic tide also contains the unprojected local anisotropic stress. Thus compare native-minus-off not just with the prior TT transit but also with TT + non-TT contact change + the time integral of (C−lap₆ A) weighted by elapsed time since emission. Predict from the *independent* Newtonian mechanical source, not the measured GR tide. External signed stress cancels between native host and zero on a fixed homogeneous background; the curved runs keep its coupling.
+
+Use original signed sources, independent global projection, a fixed coordinate ruler for the strict flat control, both proper windows, q=1024, the archived 32 source panels and no fitted scales. A hybrid retaining the previous expanding TT response and measuring the contact in the moving ruler is an approximation, not the full curved scalar Green function. Report the difference. Score errors in ppm of the original |Newton| and relative to the removed signal when nonzero. Keep sign reversals, numerical resolution, and sector definitions explicit.

@@ -1,0 +1,7 @@
+# Frozen comparison
+
+Primary observable: D(3 fm,6 fm), signed as in the sealed impact-transfer checkpoint. Report regardless of outcome. The previously calculated 2/4 and 4/8 fm rows are scale controls, not replacement endpoints. Keep the charged-pion isospin threshold, gravitational form factor, photon subtraction, apertures, upper angular box and source matching unchanged.
+
+1. Differentiate the retained D-wave representation at threshold, separate Born, subtraction and both cuts. Test against finite differences and its integral in the missing strip. Report matched-model dependence rather than claiming a measured threshold slope.
+2. Compare the signed 0.54–0.60 GeV reconstruction to bounds allowing arbitrary like-helicity D waves and S waves, under the retained higher-wave remainder, using Mark II charged and Crystal Ball neutral totals. Keep full native bin budgets; do not allocate partial budget by fractional width. Repeat this for 0.75–1.60 GeV. Use central and favorable uncertainty boxes separately. Do not assume measurements constrain the complex sign or use a modulus as a signed amplitude.
+3. Retain the earlier lower elastic reference and 0.60–0.75 angular-data bounds. Report (a) reconstructed gap and (b) rate-bounded gap. State any conditional norm needed for omitted energies to reverse the result; distinguish a necessary size from an actual bound on the physical norm. Treat other intermediate states separately. Compute without publication, new fitting or modified prior checkpoints.

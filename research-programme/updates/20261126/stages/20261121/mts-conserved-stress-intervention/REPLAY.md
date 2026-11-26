@@ -1,0 +1,13 @@
+# Local reproducibility
+
+Use the retained local Python 3.13 installation. No download or public repository is needed; this is a private extension of the existing matched-formation solver. The parent and its older source banks must retain their relative locations. Use the short command `python -B verify_campaign.py` for integrity, field identity, source-gain and paired-score checks after completion.
+
+1. `python -B stress_switch.py freeze` locks the intervention and reference. `python -B stress_switch.py GRID SIGN` compares the six algebraic RHS corrections against original-source injection on three authentic states, for both branches and all four selectable non-native modes.
+2. `python -B follow_source.py GRID SIGN FLAG MODE 1024` advances the actual coupled model with archived preparation, saving at intervals of 64 ticks. FLAG 0 is wave, 1 cold. MODE is off or reverse in the measured suite. Full states and matching receipts already present are reused. Source-control tables must already exist. Use at most two separate workers; all numerical libraries are limited to one thread per worker.
+3. `python -B causal_forecast.py` replays the independent Newton matter histories with a read-only capture of their raw stress; old saved projections must match array for array. No changed detector reading is an input. `python -B green_control.py` checks the flat retarded response in an independent Fourier implementation.
+4. `python -B newton_withdrawal.py` integrates the density/current and Poisson response without using a TT projection in the scalar calculation. The projection is replayed solely to check that the same mechanical histories were used. The 36, 72 and 144 Mpc domains are source truncation tests for this control; they do not repair missing exterior matter.
+5. `python -B score_withdrawal.py GRID SIGN MODE 1024` and `python -B paired_control.py GRID SIGN MODE 1024` score the sealed quarter clocks and two apertures. The unchanged +1 values come from the sealed parent; subtraction is always per host, branch and epoch. The write functions reject differing contents on replay.
+
+6. Run `python -B density_witness.py control` and then `python -B density_witness.py GRID SIGN MODE` for each complete pair. This checks the density response without assuming an exterior. Run `python -B endpoint_probe.py 640 1 MODE` for the positive-host off and reversed short-time checks. `python -B maxwell_cross.py` verifies the separate analytic Maxwell source and polarization controls. The final verifier also regenerates the transfer/error budget.
+
+Live counterfactual integrations and immutable state packets are separate from the independent forecast. No past formation, aperture, observation, stress coefficient, release or Git object is overwritten.

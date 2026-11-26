@@ -6,13 +6,16 @@ This repository is not presented as a completed theory of physics. It is a publi
 
 ## Current Status
 
-**Latest verified-work release: November 19, 2026.** Read the
-[scientific results and limits](docs/status/STATUS-2026-11-19.md) or
-[browse the dated stages, evidence and hash inventories](research-programme/updates/20261119/README.md).
-This update includes the checked relative-phase calculation, a local GR comparison
-from initial data, cosmological tests, and a Galactic force test that the lowest
-driven mode does not pass. The [November 7 release](research-programme/updates/20261107/README.md)
-and earlier framework remain intact.
+**Latest verified-work release: November 26, 2026.** Read the
+[results and their limits](docs/status/STATUS-2026-11-26.md) or
+[browse the dated evidence](research-programme/updates/20261126/README.md).
+A fixed Galactic preparation misses a Cepheid force-shape test, and opposite
+flows are hard to distinguish in a Palomar 5 forecast. In cosmology, the
+retained wave passes a first-order gravity check across 782 modes; a second-order
+photon comparison still misses its 0.5% target. The discrepancy is now
+predictable from the supplied forcing in the tested window. The
+[November 19 release](research-programme/updates/20261119/README.md) and the earlier
+framework remain available.
 
 The following five-layer description records the retained parent framework;
 the November status distinguishes that selected branch from the newer

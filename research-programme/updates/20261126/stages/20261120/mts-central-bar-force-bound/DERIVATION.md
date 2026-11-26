@@ -1,0 +1,32 @@
+# A polar-force ceiling without choosing a bar profile
+
+Use the common-metric Newtonian limit on this branch. Let the northern probe be (R,0,z), r²=R²+z², z>0; its positive spherical-polar unit vector is (z,0,−R)/r. This is not the vertical unit vector. Place a source mass dm at (u,v,h), s²=u²+v². Its polar acceleration is
+
+    daθ = (G dm/r) (z u − R h) / [R²+s²−2Ru+(z−h)²]^(3/2).
+
+All tabulated sky accelerations include the saved conversion from (km/s)²/kpc to 10⁻¹⁰ m/s². Replacing h by −h mirrors the mass in the plane. At fixed (u,v), the north-minus-south polar acceleration divided by two equals the north polar acceleration of the reflected-average mass: no reflection symmetry of the *true* source is needed. In this average the term proportional to −Rh is nonpositive: the nearer of the two mirror masses has the larger inverse-cube kernel. Thus u≤0 cannot contribute positively. For an entire arbitrary annulus with s<R,
+
+    daθ,even ≤ G dm z s / [r (R−s)^3].
+
+If a half turn around the vertical axis leaves the source invariant, pair u with −u. For fixed height difference d, (A+d²)^(−3/2)−(B+d²)^(−3/2), A≤B, is maximal at d=0. The difference increases with |u| through A=R²+s²−2R|u|, B=R²+s²+2R|u|. Pairing before bounding gives the smaller ceiling
+
+    daθ,even ≤ (G dm z s/2r) [(R−s)^(−3) − (R+s)^(−3)].
+
+Both right-hand kernels increase in s<R. For piecewise-linear projected central column Σ, dm=2πsΣ(s)ds. Integrate the annular mass exactly and bound its kernel by its value at the right endpoint. In exact_ceiling.py the saved positive column coefficients are represented as exact binary rationals, the square root in the denominator is bounded below, π<355/113, and each positive contribution is rounded upwards to an integer multiple of 10⁻¹⁷. This is a ceiling for the specified columns, not for their observational uncertainty. At 6 kpc it gives 0.06968228 without half-turn symmetry and 0.03099186 with it. No measurement-selected angle, artificial softening or equilibrium assumption is needed. A bar with density extending beyond the central cylinder is not covered by this compact-support theorem; the published E3 shape is separately integrated over its tails.
+
+For the force requirements, subtract all the retained ordinary gravity (the original central sphere contributes zero polar force at these probes) and the separately known direct satellite in the chosen frame. Let N=[n₀,n₁] be the residual north interval and S=[s₀,s₁] the **sign-reflected** south interval. If the unknown has arbitrary odd part, the even projection is restricted to [(n₀+s₀)/2,(n₁+s₁)/2]. Only for an even-only residual can one intersect N and S. Subtracting a certified central ceiling from the more permissive projected lower edge gives a necessary remaining even contribution, independent of the dark model. Subtracting the previously saved dark force as well is a *conditional fixed-dark* diagnostic.
+
+### If the inner disk stars are allowed to move too
+
+For support B≥4 kpc subtract the old contribution of *all* interior stars (spherical central polar zero, plus the old noncentral disk evaluated from its measured height profiles with the Newton ring kernel). Use the full four-population radial mass column, no central/disk split in the reassigned mass. Do not move gas, brown dwarfs or exterior stars. Compute a sharper upper bound by enclosing the mirrored point kernel over cells of (s,t=cos φ,h). Horizontal squared separation is (R−s)²+2Rs(1−t); bound each nonnegative term by its endpoint extrema. For the numerator use its upper endpoint and choose the denominator lower or upper according to its sign. Pair opposite t before maximizing for the half-turn case. Negative t need not be maximized separately without symmetry because its height-even kernel is nonpositive. For h>18 kpc use the positive horizontal bound with the extra squared separation (18−z)². Multiply a cell supremum by the positive annular mass; maximize over height and azimuth but sum over radius. The formal continuum inequalities are analytic; this sharper all-stars evaluation uses ordinary double precision with a numerical margin and two meshes, unlike the rational central certificate. A limiting aligned, in-plane line of masses gives a lower witness on the supremum, **not** the Galaxy or a joint feasible solution. When a ceiling crosses a required value it stops excluding a solution; it does not predict one.
+
+### Bar and wave forward calculations
+
+The full E3 kernel is proportional to K₀([((x/a)²+(y/b)²)²+(z/c)⁴]^(1/4)); G1 is an ellipsoidal Gaussian and E2 an ellipsoidal exponential. The species normalizations sum to the retained central excess. Ray polar coordinates about the probe cancel the inverse-square gravity kernel against the distance-squared volume measure. The E2/G1 cross-check instead integrates the independent homeoidal force; E3 also checks the saved harmonic potential. A separate column-conserving E3 divides its density at each s by its own azimuth-averaged vertical integral and multiplies by the original central column. These are different physical restrictions.
+
+For the primary model, replace the spherical potential in the stationary Hamiltonian by the E3 azimuthal mean. Hold the two starting wave occupations fixed; separately find a third occupation from the original mean outer speed. Recompute the even axisymmetric, fixed-number six-history satellite response on each such state. Outside the mean, for each positive even m≤32 solve the linear coupled equations (dimensionless radial coordinates)
+
+    (H_m−ω)p + B w = −F,    (H_m+ω)n + B w = −F,
+    L_m w = −B†(p+n),       ω=m Ω L_unit/v_unit.
+
+Here H_m includes the new stationary self-potential minus its chemical eigenvalue; F is the complex m harmonic of the physical bar potential multiplying the new ground. p is outgoing, n closed, the multipole w vacuum-matched outside. Add 2 Re[e^(imφ)δa_m] at the observed orientation, never twice the real cosine amplitude. The summed absolute polar amplitudes give an upper envelope for these stored harmonics, not for uncomputed m or a nonlinear history. The mean and signed force readouts, flux/work balance and independent density-to-force Green integrals are distinct checks. Steady open-channel flux is not a perpetual fixed-mass solution at second order; only the linear m≠0 density integrates to zero automatically. No bar–satellite cross term, full live baryon evolution, or alternate formation state is included.

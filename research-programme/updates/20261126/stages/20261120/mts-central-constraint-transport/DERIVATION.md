@@ -1,0 +1,41 @@
+> Public reading copy: local links are mapped to released material or marked unavailable. Machine-specific passages, where present, have been omitted. See the inventory for the original digest.
+
+# What makes two Einstein tide readouts part company?
+
+**Conventions.** Use the same extended 144-Mpc matter preparation (not bundled here), high-redshift background, two independent signs, massive wave or matched dust, q=64 speed-family member, zero-host controls, physical clock and finite proper apertures as the central detector (not bundled here). Each quoted ppm uses the absolute full wave-minus-cold, host-minus-no-host *change* in the independent Newton calculation for that sign, time and aperture. It is not a fraction of the full background curvature or a galaxy observational uncertainty.
+
+### Independently measure, then predict the constraint
+
+Let H=³R+2K²/3−3σ²/2−2E, with E the total energy measured by the normal observer, and Mᵢ=DⱼKʲᵢ−DᵢK−jᵢ. These are constraint **defects**, not new matter. The direct Ricci tensor and the algebraic Gauss elimination give T_G−T_R=H/6. This identity on an off-constraint state cannot say which readout is closer to the physical solution. We compute ³R instead from the radial foliation and energy independently from the two real wave quadratures, dust, shear and surrounding matter. To obtain the difference between epochs, integrate the directional derivative along the segment between launch and the saved increment; evaluate both the aperture weight and its derivative under the change of proper radial distance integrated from the origin. No tidal response on the right. Independent checks: two versus three quadrature nodes on that segment; direct time integration of the actual constraint rate; a compact weak spatial projection of the momentum divergence.
+
+In geodesic normal time the differential transport for standard ADM is Ḣ=2KH−2 div M. The retained formulation uses the on-shell Raychaudhuri trace and the Gauss substitution in its radial shear equation; its off-shell transport is instead Ḣ=(2K/3+σ/2)H−2 div M. Angular current flux and the movement of the proper ruler enter both comparisons. Measure M from the spatial geometry and normal-frame currents; integrate its divergence by parts against the proper window without measuring final H to infer a flux. This uses the same physical history but not the difference of detector readings. The departure of a *separate launch-only* prediction is measured below.
+
+### Which modes propagate from the initially prepared state?
+
+In units of the central spatial metric at leading weak order the ADM subsidiary equations are Ḣ=−2∇·M and Ṁ=−∇H/2. Replacing the trace derivative by its on-shell value subtracts H in K̇; replacing the radial trace-free curvature also subtracts H diag(1,−1/2,−1/2)/6 in the shear derivative. Since M has the trace combination div A−2∇K/3, at leading order these change its time derivative to ∇H/6−div[H diag(1,−1/2,−1/2)]/6. Thus for the retained formulation Ṁ_r=−H/(2r), Ṁ_t=∂θH/(4r). Combining with Ḣ gives, for harmonic ℓ,
+
+    Ḧ_ADM = (∂²r+2∂r/r−ℓ(ℓ+1)/r²) H
+    Ḧ_retained = B H,  B = ∂r/r + [1+ℓ(ℓ+1)/2]/r².
+
+These are local, linear, flat-background subsidiary equations for errors, **not alternative physical propagation laws for gravity**. Omitted curvature/background evolution and matter discretization are tested on actual coupled runs, not asserted absent. For a compact normalized radial window W, the retained prediction expands the H term through t⁴ B²/24 and the initial −2 div M through t³ B/6, with leading terms t² B/2 and t respectively (the constant initial H is subtracted). Transfer derivatives to W, never differentiate an already cancelling measured tidal difference. With radial measure dr the adjoint is B†W=−W′/r+(2+ℓ(ℓ+1)/2)W/r². Test its action on three powers of r. For ADM apply the exact Minkowski wave propagator in this approximation. Write
+     
+    Kₜw(r) = [1/(2r)] ∫ from r−t to r+t s w(s) Pℓ((r²+s²−t²)/(2rs)) ds.
+
+On these apertures r>t. With w=W/r², project H₀ against r²(∂ₜKₜ−1)w, and the launch radial and polar momentum constraints against 2r²∂ᵣKₜw and 2ℓ(ℓ+1)rKₜw. This follows by integration by parts in space. The adjoint sine and cosine are tested separately against spherical Bessel modes, including nonzero angular momentum gradients. For the real preparations the result takes only the constrained initial packet, not the late density, geometry or detector tide. The true moving ruler remains in the measured comparator.
+
+### Change the formulation without changing the on-shell matter theory
+
+On the same initial data, evaluate shear from spatial Ricci (no Gauss elimination) and put back H in K̇. The logarithmic field variable's rest-subtracted normal momentum z contains −K/(2µ). The extra term in ż must therefore be −H/(2µ); otherwise the comparison would change the wave equation even at the same physical normal momentum derivative off shell. The numerical control checks this cancellation and that the other corresponding matter derivatives are unchanged on identical states. An exact dust spacetime tests both curved-space tides. An initially flat, stationary but deliberately off-constraint dust source with monopole and spherical Bessel quadrupole tests both derived Ṁ components and the finite-duration constraint modes; the early retained B prediction in that test is *only* its quadratic Taylor term.
+
+### Distinguish the physical source from the initial elliptic representation
+
+The launch metric is ψ⁴δ. Its scalar curvature is −8ψ⁻⁵ Δψ. With ψ=ψ₀+ψ₂P₂ the angular part is −8ψ₀⁻⁵ Δ₂ψ₂+40ψ₂ψ₀⁻⁶ Δ₀ψ₀. A continuous finite-element field can have jumps in its radial derivative; its second derivative contains the jump times a delta function. Include **both** element integrals and these face terms. The two are much larger than the small residual. Unresolved value jumps from finite-precision interpolation are tracked in the first representation audit. The integrated projection is checked on two quadratures; it is not a pointwise constraint norm.
+
+Let f be the actual parent Hamiltonian source at convergence (−Δψ=f). For each projection separate (i) physical source balance 8ψ⁻⁵f+2K²/3−A:A−2E evaluated using the stored dust/field/graph; (ii) weak Poisson residual −8ψ⁻⁵(Δψ+f), including faces; (iii) the additional error from forming the angular curvature/energy on the detector stencil and transferring it to the aperture. The launch momentum enters separately. The separation is conditional on this prescribed representation and test function. Accumulate signed fields before aperture integration in the source-origin audit to reduce four-way cancellation. Compare 40-digit curvature arithmetic on the same already-sampled initial metric with a separate test replacing the initial spatial curvature by the equation-derived one. These are predictions of the *initial contribution*; that last replacement is not a subsequently evolved solution.
+
+Two independent alternatives to the original absolute scalar finite-element solve are tested. The half-element experiment prolongs the same degree-six formation polynomials, keeps the old formation spline for its Laplacian, and resolves the global coupled normal graph, momentum and Hamiltonian constraints. It is not a new formation simulation. The Green experiment instead keeps the original source elements, packet number/phase, graph equations, mass, expansion, momentum algorithm, and the exterior Robin datum. For each nonlinear update replace *only* the radial inverse by
+
+    ψℓ−δℓ₀ = [ r⁻ˡ⁻¹ ∫₀ʳ sˡ⁺² fℓ(s)ds
+               + rˡ (∫ᵣᴸ s¹⁻ˡ fℓ(s)ds + L¹⁻ˡ gℓ) ] / (2ℓ+1).
+
+Here gℓ is u′+(ℓ+1)u/L for u=ψℓ−δℓ₀ at L. Differentiate the two prefix/suffix terms analytically: their point-source contributions cancel. The same integral supplies the potential and gradient inside the nonlinear iteration and normal graph, including when the quadrupole calls the monopole. Regular central solution; no fitted homogeneous r² term. Polynomial monopole and quadrupole with finite nonzero Robin data check the sign, absolute value and derivative. The time evolution still resamples these data onto its own mesh; the continuum inverse does not make that second operation exact. Never add H/6 as a physical correction to the stress forecast.

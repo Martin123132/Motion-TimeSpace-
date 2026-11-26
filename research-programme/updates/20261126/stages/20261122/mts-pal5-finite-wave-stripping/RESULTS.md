@@ -1,0 +1,25 @@
+> Public reading copy: local links are mapped to released material or marked unavailable. Machine-specific passages, where present, have been omitted. See the inventory for the original digest.
+
+# Can Palomar 5 distinguish the frozen flows?
+
+**Not at the tested precision, for either saved preparation.** This is a comparison of predicted differences with published measurement errors, not a fit to the observed residuals. The usable two-direction orbital interval is **111.158776 Myr**. This covers **5.73%** of the [1.94 Gyr trailing-tip drift estimate](https://arxiv.org/html/astro-ph/0307446), or **2.22%** of the [5 Gyr disruption simulation](https://arxiv.org/abs/1508.06647). Those are different physical reference times, not confidence limits on a single measured stream age. The 425 Myr common and 1.066 Gyr inherited forward formation histories cannot be counted as more matched stream history.
+
+At 22.05 kpc the forward-minus-reverse line-of-sight velocity gradient is +0.0651 km/s/degree for the reset state and −0.0798 for the inherited state; the observational error used is 0.15 in those units. Thus even which sign makes the gradient steeper depends on the preparation. Across all three distances the largest split is 0.645 of that error. A tracer moves by as much as 68.08 pc relative to the other trajectory in 3D, yet no single sky-position bin moves by more than 0.448 of its quoted error. The largest 20-bin model separation is 1.263 under independent errors, falling to 0.168 if a common track tilt is free; the tilt freedom is a sensitivity test, not a measured prior. Do not add these correlated diagnostics as independent evidence.
+
+Allowing release dates to vary by ±10 Myr brackets 68 of 72 individual sky-coordinate or velocity targets with the opposite sign, on both orbit grids. This does not permit a different release date for each coordinate of the same star. If one common change in date is forced on both mock tail launches, at least one of six coordinates keeps 69.6–100% of its same-date signal. These are fractional signal residuals, **not** standard deviations. There is physical separation but not reliable sign recovery. This timing scenario is not a measured distribution of stripping times. Six distance/preparation comparisons (not bundled here) · [signed orbit inputs](../mts-pal5-joined-flow-586-600/RESULTS.md) · [joint date method](../mts-pal5-live-wave-coupling/RESULTS.md).
+
+## New check: what changes the energy of stars just starting to leave?
+
+This is a separate comparison: evolve the wave on corrected ordinary gravity versus the native ordinary gravity, and move the stars under each resulting wave on the **same corrected ordinary gravity**. It is not an extra 32 years appended to the orbital history or a direct measurement of release. We tested three ensembles of 24 trial stars, read the old signed energy predictions only when scoring, and used the same times and 0.5% tolerance for both signs and preparations.
+
+| Initial population | 4, 8, 16 years | 32 years: largest discrepancy from the frozen fourth-power energy law |
+|---|---|---:|
+| Inner | all four states pass at all three times | 0.733% (all four exceed 0.5%) |
+| Middle | all pass | 0.213% (all pass) |
+| Outer | all pass | 0.0824% (all pass) |
+
+All 48 finite-time mean energy changes are negative: the stars are slightly more bound than in the comparison wave. For example the inner reset-forward mean at 32 years is −5.62 × 10⁻²⁷ (km/s)². This is a small difference between model energies, not a measured escape energy. Worst numerical diagnostic over all three ensembles and both energy/work readouts is 0.0251%. Identical-drive and empty-wave controls give zero differential energy.
+
+At 32 years about **93.2% of the inner excess** is in the change of the spatial gradient of the wave force across the stars. A reconstruction from the launch positions agrees with the integrated energy to 0.0133%; the attribution remains 93.0–93.2% across refinements. Holding the explicit ordinary drive constant changes the short-window inner signal by at most 0.00000341%; switching off only the feedback of the *new differential* wave potential inside wave evolution changes it by at most 0.000000324%. Neither is the main source of the 0.73% excess. This does not identify the gradient change as a continuum physical effect rather than inherited spatial representation. [Controls](evidence-001.zip) (archive member: `controls-and-origin.csv`) · decisions (not bundled here) · [method and replay](REPLAY.md).
+
+**Best next observational step:** keep the signs and occupations frozen and use individual tracer distances and proper motions, with their errors, to constrain stream tilt independently. If still indistinguishable, record the sensitivity limit rather than favoring a direction. For the source calculation, the next controlled diagnostic would be to distinguish smooth wave evolution from the native piecewise radial slopes before extending the short release calculation. No longer-age forecast follows from a fourth-power extrapolation.

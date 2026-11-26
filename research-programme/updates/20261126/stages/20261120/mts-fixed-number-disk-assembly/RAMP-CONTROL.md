@@ -1,0 +1,3 @@
+# Independent finite-duration work check
+
+After the sudden test, use a separate monotone angular assembly: s=3u²−2u³, u=clamp(t/2,0,1). Its duration is two saved wave time units; it has not been selected using the sky. Evolve each pure spherical starting state at 32 and 64 steps per unit and save the same fixed output times through t=4. Save source work independently of the energy difference; check the energy–work identity and changed shape. For an observational comparison use only the completed disk (t≥2); data from during assembly are path controls. The all-rates argument, if its matrix tests pass, must not use these test trajectories as proof.

@@ -1,0 +1,31 @@
+> Public reading copy: local links are mapped to released material or marked unavailable. Machine-specific passages, where present, have been omitted. See the inventory for the original digest.
+
+# q=1024 through the full clock: matter pressure transfers; constraint transport fails a finer-grid test
+
+**Local, controlled formation.** The same prepared wave/cold and host/zero sources evolved for 4,096 carrier turns, at four original proper-time endpoints. The full speed label is q=1024, not an observed parameter fit. No input, occupation, galaxy prediction, coupling or tolerance was changed. Primary grid: 160 cells/Mpc; comparisons at 80 and 320 are explicitly separate. The launch endpoint is inherited from the [finite-host stage](../mts-host-secant-evolution/RESULTS.md).
+
+| Prediction or control | Result |
+|---|---|
+| Prospective radial heavy-number change, compared with the new coupled runs | Max RMS discrepancy **0.00775%** of the signed change; local number rate **0.01153%**. Both signs/forms through the full clock. |
+| Evolving amplitude-pressure source, conditional on the sampled geometry | Isolated pressure accounts for the signed phase to within 2.47 × 10⁻⁸ relative RMS and the accumulated number change to within 0.00801%. Not an independent blind fit. |
+| Time-step control | At the positive-host first quarter, 512-step full-equivalent vs four steps per carrier turn differs by 0.0000463% in radial number and at most **0.00310 ppm** in the proper tides. Across full times 128 vs 512 steps differs by at most **0.0677 ppm** in the tides. These are limits on these comparisons, not all fast degrees of freedom. |
+| Full-equation tidal measurements on the primary 512-step grid | **36/64** within the unchanged 20-ppm Newton-plus-evolving-stress band; **8/64** with Newton alone. Frozen transverse stress also gives 36/64. At the final time only **4/16** pass with the evolving stress. Max discrepancy 77.70 ppm; the two readings of the same fields differ by up to 52.72 ppm. |
+| Is the gravitational miss fixable by retuning the predicted tide? | In **9 of 32** paired primary cases the readings are more than 40 ppm apart: no single prediction can meet both 20-ppm limits there. Half their separation is a lower bound on the best possible common error. Cases are related numerical controls, not independent observations. |
+
+### What went wrong, and a constructive result
+
+On the separately doubled mesh the original evolution looks better early, then develops a huge **spurious central quadrupole**. The failure is not a galaxy-wave prediction. The late local field at the detector remains small; it is the **proper distance integrated from the centre**, not simply the field sampled there, that carries the large error. Freezing that distance or selecting only the passing formulation would change the test.
+
+Linearization of the **actual retained** trace-preserving centre equations gives a growing geometric mode with rate **0.748514/h** (h the cell spacing). It predicts the measured final-quarter amplification on the 320-cell/Mpc grid within **0.013%** for both matter branches. The alternative ADM evolution passes all 16 positive-host readings on that grid, but still has a slower constraint-violating centre mode (0.382746/h). Stronger launch precision or more carrier subdivisions is not a substitute for fixing the spatial equations.
+
+There is now both a counterexample and a candidate repair. A compact vacuum launch satisfies the discrete momentum constraints to 9.1 × 10⁻¹⁶ and has zero first-order Hamiltonian constraint, yet the existing discrete Hamiltonian immediately acquires a dimensionless derivative of 2.204. An **independently constructed staggered scalar curvature** enforces the flat identity Ḣ=−2 div M to roundoff on its own witness, reproduces a smooth analytic curvature under refinement, and retains short-wavelength sensitivity. A separate full-RHS perturbation on the actual launch confirms that even a constraint-satisfying perturbation away from the innermost cells can leak out of the constraint surface. These are linear-operator results, not a correction applied to the archived full trajectories. See [derivation, witnesses and limits](ORIGIN-AND-REPAIR.md).
+
+### Matter and work boundaries
+
+The coarse forcing history transferred to the quarter-clock resolved evolution gives relative phase error 3.26 × 10⁻¹⁴ with a changing source (1.08 × 10⁻⁶ frozen), and number-transfer error below 5.0 × 10⁻⁷ by integrating the changing current. Unlike the launch prediction these transfers reuse dynamical information. The accelerated heavy energy monopole agrees with the resolved quarter within 4.63 × 10⁻⁷ relative; local monopole constraint residuals **do not converge relative to their own small sizes** (roughly 100% differences).
+
+The surrounding matter's very small double-difference energy budget is less accurate: on the primary full-clock histories, 55-digit readout gives work plus radial flux vs actual storage defects of **8.27–9.18%** of the net increment; the resolved positive quarter gives **25.63%**. The instantaneous source-vs-native derivative discrepancy is 1.24–1.38% in the tested arrays. These are not fractions of the background energy. The pressure result should not be cited as a measurement of this work or as an all-species energy-conservation proof.
+
+**Next:** derive the companion compatible momentum/spatial-Ricci update and matter flux on the curved background. Test both transport identities on the saved witnesses, retain a propagating physical tensor control, check the centre spectrum, then replay the unchanged proper ruler and both formulations. Do not take the growth as physical, skip to q=262144, or project away the disagreement at readout.
+
+[Predeclared test](PROTOCOL.md) · equations and measurement definitions (not bundled here) · all gravity results (not bundled here) · matter forecasts (not bundled here) · source transport (not bundled here) · pressure decomposition (not bundled here) · work check (not bundled here) · grid and constraint floor (not bundled here) · ruler contributions (not bundled here) · flat identity test (not bundled here) · manufactured and checkerboard controls (not bundled here) · [replay](REPLAY.md).

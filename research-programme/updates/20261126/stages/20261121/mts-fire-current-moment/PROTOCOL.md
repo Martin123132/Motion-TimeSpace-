@@ -1,0 +1,8 @@
+# Private FIRE current test, frozen before particle comparison
+
+Use anchorA, the same two radial weights, wave states, time grids, proper times and tolerances. Preserve every older archive. The right and left neighbors have different spacings; do not call an unweighted average a centered instantaneous derivative.
+
+1. Acquire only public FIRE-2 m12i_res7100 gas/star coordinates and masses at 589,590,591, and velocities at 590. Four pieces per snapshot. Reuse local source conventions and archived checksums where available. Keep only transfer-group sums and a narrow 5.75–9 kpc aperture of particle data for private replay. No dark matter, particle IDs or full dumps. Single acquisition worker, one field at a time, check-in before four hours; partial sealed species packets resumable.
+2. Check the raw snapshot-590 radial-angle current and weak continuity of the **simulation** using independently measured neighbor mass/angle weights. Distinguish physical Hubble flow, peculiar motion, catalog bulk velocity and finite-difference center drift. Keep phase splits. Never equate a simulation current to the Milky Way foreground's current.
+3. Apply the retained *density* transfer map to the actual adjacent group masses and compute the same source-slope contribution as before. Test whether that transfer specifies a current or merely its divergence. Use the measured simulation current only as a labelled comparison or a mathematically defined conditional lift. Test whether data fix the remaining correlation or give a useful bound without inventing a velocity.
+4. Verify weighted kernels, particle units, old mass counts, both time resolutions and limiting cases. Report numerical and source uncertainty separately. No observational fit, publication or remote upload.

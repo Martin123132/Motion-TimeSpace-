@@ -1,0 +1,5 @@
+# Separate formation calculation: safe restart, not a Galactic force result
+
+The original window-8 inputs are unchanged. The window-64 finite and tangent states, retarded-environment overlap checks, frozen transfer comparisons and independent radial response are on disk. The subsequent holdout integration through window 72 and the radial resolution checks both exited successfully. Process completion is not a scientific pass.
+
+Do not rerun these integrations merely to resume. First check the archived states and their lineage. Compare the signed heavy-minus-cold exchanged-current marker trajectories in the four window-72 runs per model against the already frozen, three-aperture crossings in `frozen-crossover.csv` (SHA-256 `0a37e934b8228fee8f03ea9c3f0b519fec9ed316346e03656eb8d2c88b739380`). Quantify error in the elapsed time from window 64, compare the two time resolutions and independent Poisson methods, then verify and seal the stage before promotion. The physical start, methods and tolerance are recorded in `PROTOCOL.md`. These are formation tests, not LMC histories, Galactic occupation estimates or sky-band predictions.

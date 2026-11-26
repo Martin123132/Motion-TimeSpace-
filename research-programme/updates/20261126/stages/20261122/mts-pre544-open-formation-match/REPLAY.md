@@ -1,0 +1,9 @@
+> Public reading copy: local links are mapped to released material or marked unavailable. Machine-specific passages, where present, have been omitted. See the inventory for the original digest.
+
+# Offline replay
+
+Use Python 3.13, NumPy and SciPy. Run the stages separately with python -B, in this directory: compare.py, basin.py, capture.py, independent.py, continuity.py, interface_checks.py, low_modes.py, verify.py. Only a first complete copy needs verify.py --seal. Writers compare existing bytes rather than replacing old results. Scripts use one numerical thread; no network, background services or upstream writes. The independent whole-basin eigensystems and cold shell integration take longer than the other reductions. Source manifests are pinned in inputs.py. Archive naming convention h0.0015625 / 0.003125 / 0.00625 is the comoving donor grid, not the independent physical-basin diagonalization spacing. All five endpoint donors are at the same scale factor; cold controls carry no wave.
+
+The 8× packet stores the common proper edges in kpc, normalized element knot coordinates, the complex coefficients indexed by source filename stem and the outer complex value and slope. Each element shares its last node with the next one's first. Coefficients represent U−(R/B)U(B), in square-root solar masses per square-root kpc; interpolate elementwise through the saved knots, then restore the lift. Their plain vector norm is **not** occupation: integrate |U|² over proper radius. No future time-dependent trace, independent galaxy catalogue selection, or post-544 Galactic trajectory is encoded in the packet.
+
+The physical-basin spectral estimate and compact residual witnesses are distinct. Use the witnessed lower population when the diagnostic only needs to tell whether the required occupation is exceeded. All misses and the 3.02e-5 mass-unit discrepancy remain documented. [Results](RESULTS.md) · equations (not bundled here).

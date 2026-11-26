@@ -1,0 +1,11 @@
+# Read-only replay and regeneration
+
+From this directory run the retained Python 3.13 with `-B verify_centroid.py`. Verification does not launch integrations or change saved data. The corresponding axisymmetric stage has its own read-only verifier, `../mts-lmc-fixed-occupation-axisymmetric-20261119/verify_axis.py`. The dipole builds on, and does not replace, that calculation. The archived source hashes and original sky intervals belong to the earlier stages.
+
+For regeneration, use a fresh sibling copy of the stage code with the same pinned parent directories. Use one numerical thread; the local import sets thread limits before importing NumPy. The C++ library requires the MSVC x64 toolchain: start with build.cmd. Compiler products other than the DLL are not numerical inputs. Python dependencies and wave-ground machinery are inherited from the preceding quadrupole/axisymmetric calculations. Avoid simultaneous writes. Different compiler, SciPy or BLAS versions need numerical, not bytewise, comparison.
+
+1. Run `centroid_source.py check` and `centroid_source.py 192 25 28 16` to compute the full complex incoming source and two centre gradients for all six orbits. Cached packets suffice for everything below.
+2. Run `dipole_operator.py 64 0 1 2 3` and `dipole_operator.py 88 0 1`. Cases 0 and 1 are the reference and added-star grounds; 2 and 3 are their larger-box counterparts.
+3. Run `centroid_run.py CASE 64 16 1 25` for each of the four cases. For 0 and 1 only also use last-four arguments `88 16 1 25`, `64 8 1 25`, `64 16 2 25`, and `64 16 1 15`. Those vary basis, source time, radial sampling and source multipoles separately. The underlying archived orbit, foreground and observing bands stay fixed.
+4. Run `moment_checks.py 0` and `moment_checks.py 1` for the independent two-direction virtual-work tests. Run `assess_centroid.py` once to collect full-vector errors, band changes and a reciprocal ordinary-force readout.
+5. In a new replay directory only, `verify_centroid.py seal` writes the file inventory (after any build scratch is removed); without a flag it checks that inventory. All commands in steps 1–5 are Python scripts unless otherwise specified. Documentation and the self-contained source are included; the binaries and arrays are local-only. No task-owned background process is needed after verification.

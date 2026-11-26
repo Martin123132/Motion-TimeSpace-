@@ -1,0 +1,5 @@
+# A less sharp but numerically resolvable clock test
+
+The directly evolved near-cancelling velocity vector in the fixed-speed comparison changes by 2–4% of its own length with field refinement; some cancellation persists but those tiny components cannot carry a precision claim. The full frozen lag in the live-cluster escape-energy test passes for reset but misses 0.5% for inherited. Do not change either tolerance or call them passes.
+
+For a worst-state bound a near-perfect cancellation is unnecessary: any two admissible opposite states supply an upper bound. Before evaluating this supplementary control, halve the *same already frozen time shifts*, with no optimization or update across grids. Apply them to the physical zero-binding launches with continuing cluster gravity for both preparations. Verify the actual two-component velocities on 4-1/4-2 and 4-2/8-2 with the old 0.005 relative tolerance. If this looser witness fails, keep the independently resolved known-passage ceiling and report the additional timing sensitivity as less precise. Do not try further handpicked fractions or calibrate on observed spectra.

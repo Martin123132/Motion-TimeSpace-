@@ -1,0 +1,5 @@
+# Separating the incoming photons from new gravity work
+
+Use the same scattering, incoming multipoles and visibility weights as the total test. Let G denote the complex two-route gap at visibility, J the same readout driven only during 89.65–90.4 with zero incident perturbation, and I=G-J the transported pre-window contribution. No phase rotation. Because the photon transfer is linear, I must be the same in the original, forcing-only and joined runs at fixed grid and transfer setting. Test this equality as a vector, not a difference of norms.
+
+Report the direction of J along I, the angle between the two complex readouts using the real visibility-weighted inner product, and the perpendicular component. This isolates cancellation from small amplitudes. As a diagnostic bound, if a future source change has visibility norm no greater than the **measured** joined-minus-forcing-only change times some proposed factor, the triangle inequality limits how much it can reduce the current discrepancy. Report the minimum such factor necessary for 0.5%, not a bound on the size of unknown physics. Carry no artificial incoming kick in this test.

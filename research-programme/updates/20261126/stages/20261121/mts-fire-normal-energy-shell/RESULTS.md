@@ -1,0 +1,32 @@
+> Public reading copy: local links are mapped to released material or marked unavailable. Machine-specific passages, where present, have been omitted. See the inventory for the original digest.
+
+# What fixes the two metric forces on the saved Galactic shell?
+
+**Private research · 21 November 2026 · snapshot 600.** The previous calculation determined how the spatial and time metric gradients differ. Here the normal-energy constraint from the same scalar action separates the two gradients in one three-radius combination, without estimating unseen interior mass or fitting an exterior tide. There is also a constructive limit: a change in wave shape too small to matter at leading Newtonian order can cancel the entire first relativistic time-potential correction without changing the total occupation. The next predictive input is how the earlier preparation evolves, not another force coefficient.
+
+### Matched shell, conditional canonical endpoint
+
+All entries are *changes relative to the reset wave*, in m/s², for the angular monopole of the weighted radial forces at 6.185, 7.310 and 8.434 kpc. The middle radius is a computed diagnostic. Use the full independent density integral for the wave's Newtonian metric, fine saved time step (64), radial quadrature 28; same leading ordinary foreground, ordinary densitized energy and stress, zero subleading canonical wave on the endpoint slice. The passive density is what it would source, not the potential it actually evolved in.
+
+| Compensated radial force | Self-gravitating inherited wave | Passive control |
+|---|---:|---:|
+| Newtonian difference | +2.723e−14 | −9.888e−15 |
+| First relativistic spatial correction | −5.016e−20 | +2.063e−20 |
+| First relativistic time correction | +3.530e−20 | −1.218e−20 |
+| Spatial minus time | −8.546e−20 | +3.281e−20 |
+| Spatial/time half-sum | −7.426e−21 | +4.223e−21 |
+
+This is not an absolute acceleration at any of those radii. The fully coupled spatial correction is dominated by the surface term in the geometric product (−4.906e−20). Holding ordinary **proper** rather than densitized energy common adds +1.312e−20 to both fully coupled entries: their half-sum even changes sign. Thus interpreting that half-sum as a lensing result would not be justified. The time and spatial signs individually survive this particular ordinary-source alternative and both saved time steps. The estimated square of the slice rate contributes −4.27e−29 on the last backward ordinary slope (+3.20e−30 with static ordinary endpoint); this bounds neither the unknown matter response nor all higher-order terms.
+
+The proper-volume integral of the canonical heavy kinetic excess is 3,084.18 solar masses in the reset shell and 3,041.38 in the coupled shell, against leading shell masses 2.5863e10 and 2.5706e10 solar masses. The coordinate-volume integral of the proper density *alone* gives a very different result: its additional volume term cancels when the physical measure is included. See energy table (not bundled here) and [derivation](DERIVATION.md).
+
+### Distinguishing numerical error from missing physical information
+
+- Two independently assembled Hamiltonian-constraint formulas agree to 1.1e−12 relative or better on the fine complete wave-density calculation in both arms. The native finite-element metric also recovers the earlier two-edge slip. Increasing radial integration order 16→28 leaves the tabulated signs and digits shown intact. Changing the saved time resolution 32→64 shifts spatial/time values by about 0.10% (coupled) and 0.25–0.28% (passive). Cross-formula agreement does not remove this time-grid sensitivity.
+- An exact number-preserving deformation of the **coupled wave alone** cancels the conditional time correction with a fractional L2 change of 3.1073e−10. The linear single-wave lower threshold is 1.8247e−10. This is well below the native expansion scale, 2.6551e−7. It is a counterexample to unique prediction from the leading wave and its norm, **not** a proposed change to fit the data. The deformation contributes equally to both potentials and therefore leaves the first-order slip unchanged. Counterexamples (not bundled here)
+- A second calculation derives what happens if the canonical correction actually starts at zero. The instantaneous surface-current contribution to the common spatial/time force is +2.340e−21 m/s² per Myr (coupled minus reset), +1.138e−21 (passive minus reset). Native volume evaluation of the same derivative terms is 0.0593% and 0.0944% lower, respectively. The isolated dispersive component differs by up to 0.993% before differencing. Independent element integration accounts for it through internal derivative jumps and the difference between the discrete kinetic operator and the smooth within-element Laplacian. Accounting for that defect verifies consistency on the saved grid; it does not imply continuum convergence at that precision. This is the launch rate of the **state-density contribution**, not the rate of the total metric or a rate to extrapolate backwards. Launch (not bundled here) · [element balance](evidence-001.zip) (archive member: `dispersion-balance.csv`)
+- Independent manufactured cases cover Schwarzschild vacuum, a nonspherical external quadrupole, and distributed gradient matter with a nonzero time-force correction. Adding arbitrary homogeneous inverse-square and linear forces leaves the compensated result unchanged. The 11 exact checks also include two-mode carrier interference and a spacetime Ricci calculation. Manufactured controls (not bundled here) · validation (not bundled here)
+
+**Next controlled experiment:** start the subleading wave on a specified saved slice, hold the same leading history in each corresponding arm, test a short retarded step against the independent launch current, and distinguish which differences enter immediately and which first depend on the unresolved lapse/ordinary matter or earlier preparation. Do not infer the full lapse from three radii. No new observational fit, free coupling, public upload or revision of the Newtonian archive.
+
+**Replay:** from this directory use the same local Python with NumPy, SciPy and SymPy. Run with the -B option, sequentially: constraint.py, state_response.py, dispersion.py, identities.py, controls.py, verify.py. Default runs compare existing output without replacing it. The [frozen protocol](PROTOCOL.md), [full two-constraint derivation](DERIVATION.md), and file hashes (not bundled here) travel with this result.

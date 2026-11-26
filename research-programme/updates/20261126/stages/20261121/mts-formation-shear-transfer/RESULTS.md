@@ -1,0 +1,17 @@
+# Changing the angular shear flux from formation: accept the diagnosis, retain the reference
+
+This is a local common-metric gravity calculation, **separate from the LMC sky-band test**. Starting at the original matched formation preparation, only the radial shear derivative pair was changed (order 12 to 20). Six full trajectories compare wave and cold matter on the two signed fine preparations and a coarser positive control. Same source history, clock, tidal predictions and tolerances; no fitting.
+
+| Preparation | Proper tidal readings inside 20 ppm | Largest deviation (ppm) | Final first-cell momentum mismatch / local current (wave; cold), reference → trial |
+|---|---:|---:|---|
+| Fine positive | 16/16 | 10.32 | 0.92 → 11.39; 0.75 → 28.90 |
+| Fine negative | 16/16 | 13.72 | 0.39 → 13.74; 0.95 → 26.09 |
+| Coarse positive | 5/16 | 39.60 | 0.30 → 6.64; 0.74 → 14.69 |
+
+The matched monopoles reproduce bit for bit at the original quarter-clock snapshots. The aperture scores do not license replacing the reference: the independently differentiated momentum constraint gets worse at the centre. At fixed field the change is confined to the shear acceleration. A more accurate derivative on smooth polynomials can amplify sample errors: the absolute-sum bound of its folded central stencil is 2.91 times larger. The narrower weak Hamiltonian integrals also depend on interpolation. See [derivation and controls](DERIVATION.md).
+
+**A test that could fail.** Before either fine negative-host evolution we froze a prediction for the *change*, not the absolute value, of the two central constraint readings, conditional on the evolved shear displacement and velocity. The difference between the original derivative representations predicts the measured Hamiltonian changes within 16.81 ppm (wave) and 17.64 ppm (cold); the momentum changes within 0.0049 and 0.0038 ppm. All four pass their predeclared 20 ppm criterion. These are internal numerical comparisons, not fresh observations. Earlier times need not meet that endpoint threshold. The late-window memory and half-step controls distinguish propagation of existing discrepancies from newly driven shear; they do not show convergence of the whole clock.
+
+**Physical content.** The flat limiting field reconstructed from the shear is transverse and traceless. It can have *nonzero measurable tidal curvature* while both linear vacuum constraints vanish: the exact polynomial control has central electric curvature proportional to 28 times the seed tensor. On a curved spherical slice the traced spatial curvature response instead measures the difference of tangential and radial Ricci eigenvalues. The saved background curvature is too small for that term alone to explain the measured raw difference for the trial transverse-traceless field. This is not a bound on the full matter and extrinsic-curvature sources. See [flat identities](TENSOR-CHANNEL.md), [curved derivation](CURVED-TT.md), and the [frozen negative-host test](NEGATIVE-PREDICTION.md).
+
+**Decision:** keep the original matched formation solution as the reference, not the globally changed stencil. For the next gravity test derive the time-dependent tensor response with material and extrinsic sources on the actual curved backgrounds; compare an independent trace-free tidal observable as well as the unchanged raw and weak constraints. Do not subtract the central residual or erase a physical tensor mode to make a diagnostic pass.

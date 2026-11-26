@@ -1,0 +1,35 @@
+> Public reading copy: local links are mapped to released material or marked unavailable. Machine-specific passages, where present, have been omitted. See the inventory for the original digest.
+
+# Palomar 5: what the current stream can tell us, and a force check at stripping
+
+**Neither frozen flow direction can be picked from these two mock stellar velocities at current precision.** This is a sensitivity test of the retained branches, not a fit or rejection of either branch using observed velocities. Reset and inherited (“coupled” in the files) were tested separately.
+
+## Coverage and the actual measurement question
+
+- The same 581–600 drive has matched fields in both directions for **222.840516 Myr**. The stars launched at each sign's earlier pericentre have only **125.80–126.28 Myr** to reach the final epoch. These numbers are read back from the actual pericentre dates and segment lengths in [coverage.csv](evidence-001.zip) (archive member: `coverage.csv`).
+- The saved histories cover **17.69% / 11.49%** of the leading/trailing tip drift times reported by [Odenkirchen et al.](https://arxiv.org/html/astro-ph/0307446), or **3.59%** of the nominal **6.2 ± 1.7 Gyr** stream duration inferred by [Chen, Li & Gnedin, Table 1](https://arxiv.org/html/2411.19899v2). Tip drift and stream age are different clocks. Neither paper dates the stripping of these two mock stars. We have not extrapolated sign separation to a gigayear.
+
+| Two-star, cluster-relative velocity test | Reset | Inherited |
+|---|---:|---:|
+| Distance between model velocity pairs, each released at its own pericentre | 0.01608 km/s | 0.01198 km/s |
+| Ideal sign recovery, both stars assigned the best quoted 0.22 km/s error | 51.46% | 51.09% |
+| Alternative common release-date shift of rival sign | +0.164 Myr | −0.130 Myr |
+| Remaining distance between opposite-sign alternatives | 0.01017 km/s | 0.00722 km/s |
+| Upper bound on guaranteed recovery across admissible dates at best precision, rounded upwards | 50.93% | 50.66% |
+| Same-date comparison: per-star error required for 95% correct classification | 0.00489 km/s | 0.00364 km/s |
+
+The velocities are from the saved, moving-cluster, zero-binding launch. **New measurement check**: using all 11,772 ordered assignments of two distinct errors from [Kuzma et al., extended Table 4](https://arxiv.org/abs/2202.04548), the median conditional classification rates are **50.26% / 50.19%** at pericentre and **50.16% / 50.12%** for the two alternative-date pairs. The median here is over **error assignments**, not over a physical stripping-age or stellar population distribution. These are not 11,772 independent experiments. Even the best distinct assignment gives only 51.32% / 50.98% at pericentre. All rates, including common-velocity-offset control (not bundled here). Errors assumed independent Gaussian, equal sign odds, known preparation, no foreground or intrinsic dispersion. The two components are not falsely identified with real catalogue stars. Separate sky/astrometric tests in the [saved comparison](../mts-pal5-paired-release-581-600/RESULTS.md) are not combined into these rates.
+
+## Does ordinary gravity spoil the comparison?
+
+We integrated the positive gas and stellar model directly at the four earlier pericentres, for the cluster and the two stars 60 pc away. The change in the ordinary differential pull is **1.83–4.01%** of the direct own tide across the eight launches, but **4.22–14.62 times** the signed-wave tide difference at the *same* coordinates. Both comparisons use vectors. This is not a new force, a change of coupling, or grounds to subtract that factor from a detection score. Force vectors (not bundled here) · upstream mass replay (not bundled here).
+
+**A useful cancellation follows from the launch geometry.** At escape, stellar energy work is exactly zero for every branch: the star initially moves around the cluster in a direction perpendicular to the tidal pull. The next derivative is nonzero. When comparing directions at identical positions, a common change to ordinary gravity drops out of every linear term. Only its scalar product with the difference of the two wave tides survives in the energy curvature. Direct computation reproduces the identity at all eight launches. Thus correcting the ordinary force changes this **initial signed contrast** by **+1.83% to +4.09%**, retaining its sign everywhere tested. The two directions do not become physically identical; their difference is just small for the proposed observations. [Cancellation test](evidence-001.zip) (archive member: `contrast-q12.csv`) · ordinary-only, static-monopole and live controls (not bundled here) · [derivation](DERIVATION.md).
+
+**The same correction was applied to the initial wave response**, using four matched complex states, not a static halo. The two waves in each source comparison have the same initial density and mass current; changing ordinary gravity first changes the current derivative and density curvature. In each freely falling cluster frame, the fractional density curvature change is positive at all twelve points (**7.32e−6 to 4.92e−5 per Myr²**); the relative current change vanishes at the centre as it must. A direct divergence measurement using forces on neighbouring points independently reproduces this curvature to **0.052%** or better. We also evaluated the change in the stars' initial relative acceleration and jerk, including motion of the cluster and rotation of the radial unit vector. These derivatives apply to a responding wave, without assuming it stays frozen later. Wave response (not bundled here) · neighbourhood check (not bundled here) · position-jet coefficients (not bundled here).
+
+**Scope and next step:** The 126 Myr stellar velocities in the first section use the saved original force representation. No new velocity odds were attributed to the local correction. Use these measured launch derivatives as acceptance tests for a *short*, self-consistent forward replay of the ordinary source, cluster, stars and wave before carrying any correction through the stream. For better observational leverage, an independently constrained distribution of escape states or a longer **paired** history with older tracers matters more than adding digits to these two velocities.
+
+## Reproduce privately
+
+Run in this folder with the retained Python 3.13 and NumPy/SciPy, using -B. Sequence: sites.py; source_at_sites.py 4 8 12; native_at_sites.py; wave_sites.py; launch_response.py; stream_readout.py; neighbour_forces.py 6 10; native_slopes.py; matched_jets.py 6 10; sign_refinement.py; contrast.py; verify.py --seal. Outputs are write-once or must replay identically. At most two single-threaded numerical jobs at a time; no remote workers, fit or publication. [188 checks](evidence-001.zip) (archive member: `checks.csv`) at the original 0.5% tolerance, all passed (largest discrepancy 0.05115%). They test numerical consistency, not the realism of the parent occupation or the selection of stream members.

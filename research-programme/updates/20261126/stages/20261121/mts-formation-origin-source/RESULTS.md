@@ -1,0 +1,36 @@
+> Public reading copy: local links are mapped to released material or marked unavailable. Machine-specific passages, where present, have been omitted. See the inventory for the original digest.
+
+# The spurious central matter term originates in the formation evolution
+
+21 November 2026, local research. [Source and flux derivation](DERIVATION.md) · raw and matched aperture scores (not bundled here) · [independent geometric current](CURRENT-READOUT.md) · remaining pointwise defects (not bundled here).
+
+**Finding.** The linear radial term in the archived quadrupole source is already present in the evolved local matter density, before the q=1024 Einstein preparation. It is not necessary to posit a new wave stress, alter the occupation or fit a coupling to remove it. The old formation scheme generates a linear contribution even on an analytically smooth launch. Evolving from that launch with the regular weak continuity equation greatly improves the actual finite-radius response. The two proper-aperture readings retain their fine-grid agreement with independently evolved Newtonian matter plus propagating stress. A late, local metric-momentum error remains.
+
+## Locating the term rather than guessing its parity
+
+- Rebuilt all six original q=1024 preparation packets from the saved formation. All fields and all Hamiltonian source samples reproduced exactly in the numerical arrays. Independently adding the differentiated number, kinetic, volume, surrounding, normal-graph, conformal and extrinsic terms agrees to 5.91e-16 of peak source or better. Replay (not bundled here)
+- The independently calculated ΣρᵢDᵢ′(0)/4 from the **formation nodes**, before solving for the new metric, predicts each signed source slope to within 3.1e-10 relative. On the positive wave branch the first two material species contribute 77.29% and 22.72%; the massive wave’s direct number contribution is about −0.0044%. In the cold control the massive component supplies about 54.43%. These percentages describe the *spurious linear term in this preparation*, not galaxy mass fractions. Signed source budget (not bundled here)
+- At the analytic launch, the strong divergence evaluated from the incoming spherical modes is O(r²) with a calculable nonzero coefficient. Using the *exact analytic fluxes* at the old lumped nodes still produces 99.983–99.992% of the old slope on the h=.2 formation grid. Sampling the continuum rate itself produces a slope orders of magnitude smaller. The old slope shrinks on refinement; it is not a divergent physical source. [Four mesh tests](evidence-001.zip) (archive member: `first-rate-controls.csv`)
+- The alternative first element is derived from the weak flux equation; **no saved endpoint was smoothed**. At h=.2, old first-node rate errors of 3.45–4.95% fall to 7.30–12.70 ppm of the independently known rate. The recovered central quadratic rate coefficient is within 13.05 ppm. These are launch controls, not observational fits. Rate test (not bundled here)
+- With both signs, both material branches, two native meshes and three checkpoints, independent radial, angular and interface work reconstruct the integrated first-element quadrupole rate within 3.94e-15 of the sum of absolute contributions. Omitting the angular work misses by 30.08–30.16% on that same normalization. The projected spherical rate changes its weighted mass moment by less than 4e-16 of the absolute scale. 72 moment tests (not bundled here)
+
+## Propagating the correction
+
+Both signs were re-evolved for the complete original 1,429 RK steps on the two native formation grids, retaining the same incident waves, host preparation, domain and physical elapsed time. The independent h=.25 and h=.2 runs agree on the **nonzero** signed quadratic Hamiltonian source coefficient to 13.1–21.3 ppm relative to the coarser value (previously 2.51–4.58%). At r=.5/640 the reconstructed signed quartic Ricci coefficient falls by factors of 13.3–31.9 million. This is a coefficient multiplying r⁴ in a tensor, **not** a million-fold change in gravity. The source-profile relative norm change is at most 0.0226% in the first element and 1.8e-11 beyond the first five. The sampled host-only radial Newtonian force changes by at most 2.52e-12 relative. Fine source (not bundled here) · coarse source (not bundled here) · sampled forces (not bundled here)
+
+For this new preparation we independently evolved the Newtonian detector source and the FLRW retarded transverse stress over the same clock, without using either GR tide in the prediction. The control reproduces the earlier Newton-plus-stress forecast to better than 0.001 ppm of its Newtonian scale. The matched forecast moves by at most 0.331 ppm on either aperture. Forecasts (not bundled here)
+
+| q=1024 through 4,096 turns | Inside ±20 ppm | Largest absolute difference |
+|---|---:|---:|
+| 640 cells/Mpc, both signed hosts, two apertures and two curvature readings | 32/32 | 13.72 ppm |
+| 320 cells/Mpc, positive host only | 5/16 | 39.59 ppm |
+
+The comparison is the wave-minus-cold, host-minus-zero change in the proper tide; errors are relative to the matched Newtonian increment. Removing the propagating stress leaves only 9/32 fine readings inside. The coarse case worsened from 7/16 to 5/16 against its matched forecast; Newton alone happens to pass 14/16 there. The two resolutions are **not** interchangeable. These are controlled formation predictions, not independent measurements of the sky.
+
+## What still moves at the centre
+
+On the finer grid, at the quarter clock the independently reconstructed **first-cell** polar momentum defect falls by factors of 182–502. At full time the improvement is only about 4–14 fold: the defect is still 39–95% of that small cell’s material current (formerly 344–1,033%). Relative core and bulk RMS defects are much smaller: 17–39 ppm and 20–24 ppm, respectively. Those RMS values are not bounds on each cell, and the proper-tide tolerance is not a pointwise-current criterion.
+
+The [Cartesian tensor-divergence check](evidence-001.zip) (archive member: `cartesian-divergence-control.csv`) agrees with direct covariant differentiation of explicit curved tensors to 2.31e-12 absolute coefficient error. A regular weak readout (not bundled here) retains an injected nonzero constraint mismatch. In the actual fine runs its final volume-weighted integral within radius .3 is 0.54–1.20 parts per billion of the integrated absolute material current. Within .025 it is 38–89 ppm, but switching from spline quadrature to the original cell midpoints changes it by 445–624 ppm. Do not declare the narrow core converged from a smoothed integral. Weak readouts and quadrature spreads (not bundled here)
+
+**Next:** use the corrected preparations and sealed late restarts to separate time/arithmetic error from a growing angular metric mode: repeat a short late segment with half the step on the same mesh (both branches, paired against the saved trajectory), and perturb regular metric/shear independently of matter to test the angular evolution operator. Require the centre, integrated flux and both original proper-ruler readings together; do not improve a number by erasing an initial constraint. This is distinct from the already-replayed LMC fixed-occupation test (not bundled here); no changes to galaxy files, public releases or observational bands.
